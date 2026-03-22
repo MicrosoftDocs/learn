@@ -16,11 +16,14 @@ Evaluation serves several critical purposes in generative AI application develop
 
 Manual evaluation involves human reviewers assessing model responses. While time-intensive, manual evaluation provides insights automated metrics can't capture.
 
-**Interactive testing** in the playground lets you explore model behavior qualitatively. You enter diverse prompts, observe responses, and note issues like incorrect information, inappropriate tone, or failure to follow instructions. This exploratory testing helps you understand the model's strengths and limitations.
+**Interactive testing** in the playground lets you explore model behavior qualitatively. You enter diverse prompts, observe responses, and note issues like incorrect information, inappropriate tone, or failure to follow instructions. This exploratory testing helps you understand a model's strengths and limitations.
+
+To help optimize your application design, you can test models side by side in the playground, synchronizing system instructions and prompts to compare their responses.
 
 :::image type="content" source="../media/chat-playground.png" alt-text="Screenshot of the chat playground in the Microsoft Foundry portal." lightbox="../media/chat-playground.png":::
 
 **Structured review** involves creating a set of test cases representing your application's use cases. Human evaluators rate responses based on criteria like:
+
 - **Relevance**: Does the response address the question or request?
 - **Informativeness**: Does it provide sufficient detail and useful information?
 - **Engagement**: Is the response interesting and appropriately conversational?
@@ -33,19 +36,21 @@ Evaluators typically use rating scales (such as 1-5) for each criterion. Aggrega
 
 Manual evaluation complements automated approaches by capturing subjective quality aspects like user satisfaction, contextual appropriateness, and brand alignment that metrics alone can't measure.
 
-## AI-assisted evaluation metrics
+## Automated evaluation metrics
 
-AI-assisted evaluation uses advanced AI models to assess your model's outputs automatically. These evaluations scale efficiently and provide consistent, objective measurements.
+Automated evaluation uses standard metrics to assess your model's outputs automatically. These evaluations scale efficiently and provide consistent, objective measurements.
 
-The Microsoft Foundry portal supports several categories of AI-assisted metrics, including:
+The Microsoft Foundry portal supports several categories of evaluation metrics, including:
 
 **Generation quality metrics** evaluate overall response quality:
+
 - **Groundedness**: Determines whether responses are based on provided context rather than speculation. Groundedness Pro offers binary assessment (grounded or not grounded) useful for factual accuracy requirements.
 - **Relevance**: Measures whether responses address the user's question or request appropriately.
 - **Coherence**: Assesses whether responses flow logically and maintain consistent ideas.
 - **Fluency**: Evaluates linguistic correctness and natural language quality.
 
 **Risk and safety metrics** identify potential harmful content:
+
 - **Self-harm content**: Detects responses discussing or encouraging self-harm
 - **Hateful and unfair content**: Identifies bias, discrimination, or hateful statements
 - **Violent content**: Flags responses containing or promoting violence
@@ -77,60 +82,34 @@ NLP metrics work well when you have definitive correct answers or reference text
 
 The Microsoft Foundry portal's **Evaluation** feature lets you run systematic evaluations using test datasets and multiple metrics simultaneously.
 
-### Set up an evaluation
+You can base your evaluation on one of the following:
 
-To create an evaluation:
-
-Navigate to **Evaluation** in the left pane and select **Create**. You can also start evaluations from a model's **Benchmarks** tab by selecting **Try with your own data**, or from model and agent playground pages by selecting **Evaluation** > **Create** or **Metrics** > **Run full evaluation**.
-
-**Choose your evaluation target**:
 - **Model**: Evaluate a deployed model with prompts you specify. The system generates outputs during evaluation.
 - **Agent**: Evaluate an agent's responses with user-defined prompts.
 - **Dataset**: Evaluate pre-generated outputs already present in your test dataset.
 
-**Configure test data**:
-
 When evaluating a model or agent, you need a dataset to provide inputs for assessment. You have three options:
+
 - **Upload new dataset**: Provide a CSV or JSONL file containing test cases from your local storage.
 - **Use existing dataset**: Select from datasets you've previously uploaded to your project.
 - **Generate synthetic dataset**: If you lack test data, the system can generate sample data based on a topic description you provide. You specify the resource to generate data, the number of rows, and a prompt describing the desired data. You can also upload files to improve relevance to your specific task.
 
-For dataset evaluation where outputs are pre-generated, simply select or upload your dataset containing both inputs and model-generated responses.
+For dataset evaluation where outputs are pre-generated, select or upload your dataset containing both inputs and model-generated responses.
 
-**Select evaluation metrics**:
-
-Choose from three categories:
-- **AI quality (AI assisted)**: Groundedness, Relevance, Coherence, Fluency, GPT Similarity
-- **AI quality (NLP)**: F1-score, ROUGE, BLEU, GLEU, METEOR
-- **Risk and safety**: Content harm, Protected material, Indirect attack
-
-For AI-assisted metrics, specify the GPT model to use as evaluator. This should be a capable model like GPT-4, though you can use different models based on your needs and budget.
-
-**Map dataset columns**: The system automatically maps your dataset's columns to the fields required by each metric (query, response, context, ground truth). Review these mappings to ensure accuracy, and reassign fields if needed. For example, groundedness evaluation needs columns for the question, generated answer, and context.
-
-After configuration, review your settings, optionally provide a name for your evaluation, and select **Submit**. The evaluation runs asynchronously, processing each row in your test dataset against the selected metrics.
+After configuring the metrics you want to calculate, the field mappings for the evaluation data, and the system prompt for the model; you can start the evaluation job - which may take some time to run asynchronously, processing each row in your test dataset against the selected metrics.
 
 ### Review evaluation results
 
-When evaluation completes, access results from the **Evaluation** page. The dashboard displays:
+When evaluation completes, the results show aggregate scores for the metrics you selected and details of each test prompt.
 
-**Aggregate scores** for each metric, showing overall performance across your test dataset. AI quality metrics show average scores (1-5 scale typically), while risk and safety metrics show defect rates (percentage of problematic responses).
-
-**Metric dashboards** visualize performance with charts and graphs. These visualizations help you quickly identify areas of strength and concern.
-
-**Per-sample details** let you drill into individual test cases to see specific scores and understand why certain responses scored high or low. This granular view helps you identify patterns in failures or successes.
-
-**Comparison views** when you've run multiple evaluations let you compare performance across model versions, prompt variations, or configuration changes. Select two or more evaluation runs and choose **Compare** to generate side-by-side comparison views. The comparison uses statistical t-testing to provide sensitive and reliable results. You can set a baseline run and view statistical significance with color-coded cells indicating improvements, degradations, or inconclusive changes. Tracking improvements or regressions guides your development decisions.
-
-**Human feedback** is available in the detailed results table where you can select thumbs up or thumbs down icons as you review results. This feature lets you log which instances were approved or flagged as incorrect by human reviewers, particularly useful when automated severity labels might not align with your organization's standards.
-
-Select **Learn more about metrics** within the dashboard for detailed definitions, formulas, and interpretation guidance for each metric.
+:::image type="content" source="../media/evaluate-model.png" alt-text="Screenshot of evaluation results." lightbox="../media/evaluate-model.png":::
 
 ## Explore the evaluator library
 
 The **Evaluator library** provides a centralized location to view and manage all available evaluators. Access it from your project's **Evaluation** page by selecting the **Evaluator library** tab.
 
 In the evaluator library, you can:
+
 - View Microsoft-curated evaluators for quality, safety, and performance
 - Examine evaluator details including name, description, parameters, and associated files
 - Review annotation prompts for quality evaluators to understand how metrics are calculated
@@ -144,14 +123,16 @@ The library supports version management, letting you compare different versions,
 Evaluation results inform your next steps:
 
 When scores are lower than required, consider:
+
 - **Prompt engineering**: Refining instructions and system messages
 - **Different models**: Trying models optimized for your use case
 - **RAG integration**: Adding retrieval capabilities to ground responses in your data
 - **Fine-tuning**: Training the model on your specific domain (if supported)
 
-Each of these steps grow in complexity (and sometimes cost), so take that into consideration when planning improvements.
+Each of these steps can grow in complexity (and sometimes cost), so take that into consideration when planning improvements.
 
 When safety metrics show concerns:
+
 - **Content filters**: Implementing Azure AI Content Safety services
 - **Prompt hardening**: Adding safety instructions to system messages
 - **Output validation**: Checking responses before displaying to users
