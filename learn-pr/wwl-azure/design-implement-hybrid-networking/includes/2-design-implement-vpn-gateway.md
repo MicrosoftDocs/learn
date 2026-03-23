@@ -27,8 +27,7 @@ Creating a virtual network gateway can take some time to complete, so it's vital
 When you create a VPN Gateway, you must select the [gateway SKU](/azure/vpn-gateway/about-gateway-skus). You can select a SKU that satisfies your requirements based on the workload, throughput, feature, and SLAs. 
 
 > [!TIP]
-> The Basic SKU has feature and performance limitations and shouldn't be used in  production environments. 
-
+> The Basic SKU has feature and performance limitations and shouldn't be used in production environments. For new gateways, use availability zone (AZ) SKUs. The following table summarizes the current production SKUs.
 
 ## VPN Gateway types
 
