@@ -7875,3 +7875,8 @@ achievements:
   title: Understand hybrid data platform on SQL Server 2025
   summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure-security.configure-and-manage-azure-key-vault.badge
+  type: badge
+  title: Configure and manage secrets in Azure Key Vault
+  summary: Storing and handling secrets, encryption keys, and certificates directly is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
+  iconUrl: /training/achievements/configure-and-manage-azure-key-vault.svg
