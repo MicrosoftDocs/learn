@@ -65030,6 +65030,11 @@
       "source_path": "learn-pr/azure/create-security-baselines/10-summary.yml",
       "redirect_url": "/azure/key-vault/general/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/secure-your-cloud-apps/index.yml",
+      "redirect_url": "/azure/security",
+      "redirect_document_id": false
     }
   ]
 }
