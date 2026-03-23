@@ -20,7 +20,7 @@ Your company is developing a customer engagement platform that supports multilin
 :::image type="content" source="../media/enable-threat-protection-services.png" alt-text="Diagram illustrating the AI Ready Governance hands‑on exercise for enabling threat protection for AI services.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription level.
 - Familiarity with Microsoft Defender for Cloud
 

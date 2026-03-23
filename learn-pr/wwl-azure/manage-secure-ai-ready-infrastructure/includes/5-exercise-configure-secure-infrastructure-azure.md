@@ -30,7 +30,7 @@ To enable access to Azure Storage, the company configures two types of connectio
 :::image type="content" source="../media/two-connections-across-key-projects.png" alt-text="Diagram shows how to enable access to Azure Storage and configure two types of connections.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
 - **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
 - **Familiarity with Azure Storage authorization**: To learn more, refer to [Prevent Shared Key authorization for an Azure Storage account](https://azure/storage/common/shared-key-authorization-prevent?tabs=portal).
@@ -68,7 +68,7 @@ Your company is building a centralized AI platform on Microsoft Foundry to suppo
 :::image type="content" source="../media/build-centralized-ai-platform-microsoft-foundry.png" alt-text="Diagram shows a company building a centralized AI platform on Microsoft Foundry to support enterprise knowledge management.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
 - **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
 
