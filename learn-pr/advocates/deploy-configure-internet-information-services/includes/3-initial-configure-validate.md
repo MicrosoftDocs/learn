@@ -20,6 +20,7 @@ You can determine which IIS features are installed by looking at the Features Vi
 ## Basic configurations
 
 There are a few basic settings and checks that you should be familiar with before using IIS in a production environment. These include:
+
 - Default documents
 - SSL Settings
 - HTTP Compression
