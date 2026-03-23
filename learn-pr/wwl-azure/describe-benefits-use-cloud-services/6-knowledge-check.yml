@@ -39,3 +39,14 @@ quiz:
     - content: "Scalability"
       isCorrect: false
       explanation: "Scalability is the ability of resources to scale to meet demands."
+  - content: "Which cloud practice most directly supports sustainability by reducing unnecessary resource use?"
+    choices:
+    - content: "Automatically scaling down resources when demand drops"
+      isCorrect: true
+      explanation: "Scaling down when demand decreases helps reduce unused capacity, which can lower both cost and energy consumption."
+    - content: "Deploying every workload as always-on peak capacity"
+      isCorrect: false
+      explanation: "Keeping all workloads at peak capacity increases idle resource use and works against sustainability and cost efficiency."
+    - content: "Using only on-premises hardware"
+      isCorrect: false
+      explanation: "On-premises hardware can be part of a strategy, but this option doesn't directly describe a cloud sustainability optimization practice."
