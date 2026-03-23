@@ -2,10 +2,10 @@
 uid: learn.wwl.responsible-ai-studio
 metadata:
   title: Implement a responsible generative AI solution in Microsoft Foundry
-  description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Foundry portal.
+  description: A practical approach to implementing generative AI responsibly, and exploring guardrails in AI Foundry portal.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/26/2026
+  ms.date: 03/22/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
@@ -23,28 +23,26 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Foundry. Consider completing the [Introduction to Microsoft Foundry](/training/modules/introduction-to-azure-ai-studio) module before starting this one.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: 
+levels:
   - intermediate
-roles: 
+roles:
   - ai-engineer
   - developer
   - solution-architect
   - student
-products: 
+products:
   - microsoft-foundry
-subjects: 
+subjects:
   - artificial-intelligence
 units:
-- learn.wwl.responsible-ai-studio.introduction
-- learn.wwl.responsible-ai-studio.plan-responsible-ai
-- learn.wwl.responsible-ai-studio.identify-harms
-- learn.wwl.responsible-ai-studio.measure-harms
-- learn.wwl.responsible-ai-studio.mitigate-harms
-- learn.wwl.responsible-ai-studio.operate-responsibly
-- learn.wwl.responsible-ai-studio.exercise-content-filters
-- learn.wwl.responsible-ai-studio.knowledge-check
-- learn.wwl.responsible-ai-studio.summary
+  - learn.wwl.responsible-ai-studio.introduction
+  - learn.wwl.responsible-ai-studio.plan-responsible-ai
+  - learn.wwl.responsible-ai-studio.identify-harms
+  - learn.wwl.responsible-ai-studio.measure-harms
+  - learn.wwl.responsible-ai-studio.mitigate-harms
+  - learn.wwl.responsible-ai-studio.operate-responsibly
+  - learn.wwl.responsible-ai-studio.exercise-content-filters
+  - learn.wwl.responsible-ai-studio.knowledge-check
+  - learn.wwl.responsible-ai-studio.summary
 badge:
   uid: learn.wwl.responsible-ai-studio.badge
-
-
