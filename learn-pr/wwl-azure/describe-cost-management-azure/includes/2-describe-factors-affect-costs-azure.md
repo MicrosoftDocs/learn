@@ -2,9 +2,9 @@ The following video provides an introduction to things that can impact your cost
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef760ebd-b3c1-44d8-9628-2b54c45fcbfe]
 
-Azure shifts development costs from the capital expense (CapEx) of building out and maintaining infrastructure and facilities to an operational expense (OpEx) of renting infrastructure as you need it, whether it’s compute, storage, networking, and so on.
+With Azure, you pay for IT resources as you use them instead of purchasing and maintaining your own infrastructure. Whether it's compute, storage, or networking, you rent what you need and release it when you're done. This consumption-based approach means your costs scale with your actual usage.
 
-That OpEx cost can be impacted by many factors. Some of the impacting factors are:
+Many factors affect how much you pay. Some of the factors that affect cost are:
 
  -  Resource type
  -  Consumption
@@ -13,33 +13,33 @@ That OpEx cost can be impacted by many factors. Some of the impacting factors ar
  -  Subscription type
  -  Azure Marketplace
 
+:::image type="content" source="../media/cost-factors-overview.png" alt-text="Diagram showing six factors that affect Azure costs: resource type, consumption, maintenance, geography, subscription type, and Azure Marketplace.":::
+
 ## Resource type
 
-A number of factors influence the cost of Azure resources. The type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs. When you provision an Azure resource, Azure creates metered instances for that resource. The meters track the resources' usage and generate a usage record that is used to calculate your bill.
+A number of factors influence the cost of Azure resources. The type of resources, the settings for the resource, and the Azure region will all have an impact on how much a resource costs. When you provision an Azure resource, Azure tracks how much of each resource you use and charges you based on that usage.
 
 ### Examples
 
-With a storage account, you specify a type such as blob, a performance tier, an access tier, redundancy settings, and a region. Creating the same storage account in different regions may show different costs and changing any of the settings may also impact the price.
-
-:::image type="content" source="../media/blob-storage-768af5f7.png" alt-text="Screenshot of storage blob settings showing hot and cool access tiers.":::
-
+With a storage account, you choose options that affect the price, such as the type of data stored (for example, blob storage for files and images), how fast you need to access it, how many backup copies to keep, and which region to use. Creating the same storage account in different regions may show different costs and changing any of the settings may also impact the price.
 
 With a virtual machine (VM), you may have to consider licensing for the operating system or other software, the processor and number of cores for the VM, the attached storage, and the network interface. Just like with storage, provisioning the same virtual machine in different regions may result in different costs.
 
-:::image type="content" source="../media/virtual-machine-settings-519925fc.png" alt-text="Screenshot of Azure virtual machine settings showing the virtual machine size options.":::
-
-
 ## Consumption
 
-Pay-as-you-go has been a consistent theme throughout, and that’s the cloud payment model where you pay for the resources that you use during a billing cycle. If you use more compute this cycle, you pay more. If you use less in the current cycle, you pay less. It’s a straight forward pricing mechanism that allows for maximum flexibility.
+Pay-as-you-go has been a consistent theme throughout, and that's the cloud payment model where you pay for the resources that you use during a billing cycle. If you use more compute this cycle, you pay more. If you use less in the current cycle, you pay less. It's a straightforward pricing mechanism that allows for maximum flexibility.
 
-However, Azure also offers the ability to commit to using a set amount of cloud resources in advance and receiving discounts on those “reserved” resources. Many services, including databases, compute, and storage all provide the option to commit to a level of use and receive a discount, in some cases up to 72 percent.
+Azure also offers discount options for predictable workloads. With Reservations, you can commit to specific resources for one- or three-year terms to reduce cost. Reservations can apply to services such as virtual machines, databases, and storage.
 
-When you reserve capacity, you’re committing to using and paying for a certain amount of Azure resources during a given period (typically one or three years). With the back-up of pay-as-you-go, if you see a sudden surge in demand that eclipses what you’ve pre-reserved, you just pay for the additional resources in excess of your reservation. This model allows you to recognize significant savings on reliable, consistent workloads while also having the flexibility to rapidly increase your cloud footprint as the need arises.
+If you want flexibility in which compute resources you use, Azure savings plan for compute is another option. Instead of committing to a specific VM type, you commit to an hourly spend amount on eligible compute services for one or three years, and Azure automatically applies the best available price as usage occurs.
+
+If you have workloads that can handle interruptions, such as a batch data processing job, Azure Spot Virtual Machines can help reduce cost further. Spot pricing uses unused Azure capacity at lower prices, but those workloads can be evicted when Azure needs the capacity back.
+
+:::image type="content" source="../media/consumption-pricing-options.png" alt-text="Comparison chart of four Azure pricing options: Pay-As-You-Go, Reservations, Savings Plan, and Spot Pricing, showing commitment, best use case, and savings for each.":::
 
 ## Maintenance
 
-The flexibility of the cloud makes it possible to rapidly adjust resources based on demand. Using resource groups can help keep all of your resources organized. In order to control costs, it’s important to maintain your cloud environment. For example, every time you provision a VM, additional resources such as storage and networking are also provisioned. If you deprovision the VM, those additional resources may not deprovision at the same time, either intentionally or unintentionally. By keeping an eye on your resources and making sure you’re not keeping around resources that are no longer needed, you can help control cloud costs.
+The flexibility of the cloud makes it possible to rapidly adjust resources based on demand. Using resource groups can help keep all of your resources organized. To control costs, it’s important to maintain your cloud environment. For example, every time you provision a VM, additional resources such as storage and networking are also provisioned. If you deprovision the VM, those additional resources may not deprovision at the same time, either intentionally or unintentionally. By keeping an eye on your resources and making sure you’re not keeping around resources that are no longer needed, you can help control cloud costs.
 
 ## Geography
 
@@ -49,7 +49,7 @@ Network traffic is also impacted based on geography. For example, it’s less ex
 
 ### Network Traffic
 
-Billing zones are a factor in determining the cost of some Azure services.
+Billing zones are a factor in determining the cost of some Azure services. Billing zones are different from availability zones; a billing zone is a geographical grouping of Azure regions used specifically for data-transfer pricing.
 
 Bandwidth refers to data moving in and out of Azure datacenters. Some inbound data transfers (data going into Azure datacenters) are free. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on zones.
 
@@ -63,6 +63,7 @@ For example, an Azure free trial subscription provides access to a number of Azu
 
 ## Azure Marketplace
 
-Azure Marketplace lets you purchase Azure-based solutions and services from third-party vendors. This could be a server with software preinstalled and configured, or managed network firewall appliances, or connectors to third-party backup services. When you purchase products through Azure Marketplace, you may pay for not only the Azure services that you’re using, but also the services or expertise of the third-party vendor. Billing structures are set by the vendor.
+Azure Marketplace lets you purchase Azure-based solutions and services from third-party vendors. This could include a preconfigured web server, a virtual machine with specialized software already installed, or a managed backup solution. When you purchase products through Azure Marketplace, you may pay for not only the Azure services that you’re using, but also the services or expertise of the third-party vendor. Billing structures are set by the vendor.
 
 All solutions available in Azure Marketplace are certified and compliant with Azure policies and standards. The certification policies may vary based on the service or solution type and Azure service involved. [Commercial marketplace certification policies](/legal/marketplace/certification-policies) has additional information on Azure Marketplace certifications.
+

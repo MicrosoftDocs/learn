@@ -4,6 +4,16 @@ To get the most out of Azure, you need a way to interact with the Azure environm
  -  Azure PowerShell
  -  Azure Command Line Interface (CLI)
 
+Many teams also use Copilot in Azure to accelerate common operations tasks such as exploring services, understanding configuration options, and drafting commands or scripts.
+
+:::image type="content" source="../media/azure-management-tools.png" alt-text="Diagram showing the five Azure management tools: Azure Portal (graphical), Cloud Shell (environment), Azure PowerShell and Azure CLI (command line), and Copilot in Azure (AI-assisted).":::
+
+## AI-assisted operations with Copilot in Azure
+
+Copilot in Azure is an AI assistant experience that can help administrators work faster by providing contextual guidance in natural language. Depending on your environment, some Copilot workflows can be agent-like, where the assistant helps coordinate multi-step tasks.
+
+At a fundamentals level, treat Copilot as an operational assistant. You should still validate recommendations, confirm permissions, and review deployment changes before applying them in production.
+
 ## What is the Azure portal?
 
 The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface. You can:
@@ -24,7 +34,7 @@ Azure Cloud Shell is a browser-based shell tool that allows you to create, confi
 
 You can access Azure Cloud Shell via the Azure portal by selecting the Cloud Shell icon:
 
-:::image type="content" source="../media/cloud-shell-icon-dbf37a88.png" alt-text="Screenshot of the Azure portal with the Cloud Shell icon emphasized.":::
+:::image type="content" source="../media/cloud-shell-icon.png" alt-text="Screenshot of the Azure portal with the Cloud Shell icon emphasized.":::
 
 
 Azure Cloud Shell has several features that make it a unique offering to support you in managing Azure. Some of those features are:
@@ -42,7 +52,7 @@ Azure PowerShell is a shell with which developers, DevOps, and IT professionals 
 
 Capturing the commands in a script makes the process repeatable and automatable.
 
-In addition to be available via Azure Cloud Shell, you can install and configure Azure PowerShell on Windows, Linux, and Mac platforms.
+In addition to being available via Azure Cloud Shell, you can install and configure Azure PowerShell on Windows, Linux, and Mac platforms.
 
 ## What is the Azure CLI?
 
@@ -51,3 +61,4 @@ The Azure CLI is functionally equivalent to Azure PowerShell, with the primary d
 The Azure CLI provides the same benefits of handling discrete tasks or orchestrating complex operations through code. It’s also installable on Windows, Linux, and Mac platforms, as well as through Azure Cloud Shell.
 
 Due to the similarities in capabilities and access between Azure PowerShell and the Bash based Azure CLI, it mainly comes down to which language you’re most familiar with.
+
