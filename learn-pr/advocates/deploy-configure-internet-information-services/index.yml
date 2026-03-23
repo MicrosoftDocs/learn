@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.deploy-configure-internet-information-services
+uid: learn.devrel.deploy-configure-internet-information-services
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
@@ -26,10 +26,10 @@ roles:
 products:
 - windows-server
 units:
-- learn.deploy-configure-internet-information-services.introduction-internet-information-windows-server
-- learn.deploy-configure-internet-information-services.install-web-server-role
-- learn.deploy-configure-internet-information-services.initial-configure-validate
-- learn.deploy-configure-internet-information-services.knowledge-check
-- learn.deploy-configure-internet-information-services.summary
+- learn.devrel.deploy-configure-internet-information-services.introduction-internet-information-windows-server
+- learn.devrel.deploy-configure-internet-information-services.install-web-server-role
+- learn.devrel.deploy-configure-internet-information-services.initial-configure-validate
+- learn.devrel.deploy-configure-internet-information-services.knowledge-check
+- learn.devrel.deploy-configure-internet-information-services.summary
 badge:
-  uid: learn.deploy-configure-internet-information-services-badge
+  uid: learn.devrel.deploy-configure-internet-information-services-badge
