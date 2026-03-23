@@ -7890,7 +7890,7 @@ achievements:
   title: Manage security operations in Azure
   summary: "Learn how to configure security policies and manage security alerts with the tools and services in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
   iconUrl: /training/achievements/create-security-baselines.svg
-- uid: learn.security.manage-security-operations.trophy
+- uid: learn.security.secure-your-cloud-apps.trophy
   type: trophy
   title: Secure your cloud applications in Azure
   summary: "Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
