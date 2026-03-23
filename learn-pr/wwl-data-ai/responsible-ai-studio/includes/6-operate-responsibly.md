@@ -2,7 +2,7 @@ After you map potential harms, develop a way to measure their presence, and impl
 
 ## Complete prerelease reviews
 
-Before releasing a generative AI solution, identify the various compliance requirements in your organization and industry and ensure the appropriate teams are given the opportunity to review the system and its documentation. Common compliance reviews include:
+Before releasing a generative AI solution, identify the various compliance requirements in your organization and industry and ensure the appropriate teams are provided with the opportunity to review the system and its documentation. Common compliance reviews include:
 
 - Legal
 - Privacy
@@ -18,5 +18,5 @@ A successful release requires some planning and preparation. Consider the follow
 - Create a *rollback plan* that defines the steps to revert the solution to a previous state if an incident occurs.
 - Implement the capability to immediately block harmful system responses when they're discovered.
 - Implement a capability to block specific users, applications, or client IP addresses in the event of system misuse.
-- Implement a way for users to provide feedback and report issues. In particular, enable users to report generated content as "inaccurate", "incomplete", "harmful", "offensive", or otherwise problematic.
+- Implement a way for users to provide feedback and report issues. In particular, enable users to report generated content as *inaccurate*, *incomplete*, *harmful*, *offensive*, or otherwise problematic.
 - Track telemetry data that enables you to determine user satisfaction and identify functional gaps or usability challenges. Telemetry collected should comply with privacy laws and your own organization's policies and commitments to user privacy.
