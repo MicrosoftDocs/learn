@@ -1,40 +1,28 @@
-Authentication is the process of establishing the identity of a person, service, or device. It requires the person, service, or device to provide some type of credential to prove who they are. Authentication is like presenting ID when you’re traveling. It doesn’t confirm that you’re ticketed, it just proves that you're who you say you are. Azure supports multiple authentication methods, including standard passwords, single sign-on (SSO), multifactor authentication (MFA), and passwordless.
-
-For the longest time, security and convenience seemed to be at odds with each other. Thankfully, new authentication solutions provide both security and convenience.
+Authentication establishes the identity of a person, service, or device by requiring credentials. In Azure, common methods include passwords, single sign-on (SSO), multifactor authentication (MFA), and passwordless sign-in. Modern approaches are designed to improve both security and user convenience.
 
 The following diagram shows the security level compared to the convenience. Notice Passwordless authentication is high security and high convenience while passwords on their own are low security but high convenience.
 
-:::image type="content" source="../media/passwordless-convenience-security-30321b4d-18aa7d73.png" alt-text="Four quadrant diagram showing security versus convenience, with Passwords + 2 Factor authentication being high security but low convenience.":::
+:::image type="content" source="../media/authentication-methods-option-auth-spectrum.png" alt-text="Diagram comparing Password Only, Multifactor Authentication, and Passwordless methods across security and convenience. Passwordless scores highest on both scales.":::
 
 
 ## What's single sign-on?
 
-Single sign-on (SSO) enables a user to sign in one time and use that credential to access multiple resources and applications from different providers. For SSO to work, the different applications and providers must trust the initial authenticator.
+Single sign-on (SSO) lets a user sign in once and access multiple trusted applications. SSO reduces password sprawl, which lowers the chance of credential-related incidents and decreases account lockout and reset overhead.
 
-More identities mean more passwords to remember and change. Password policies can vary among applications. As complexity requirements increase, it becomes increasingly difficult for users to remember them. The more passwords a user has to manage, the greater the risk of a credential-related security incident.
-
-Consider the process of managing all those identities. More strain is placed on help desks as they deal with account lockouts and password reset requests. If a user leaves an organization, tracking down all those identities and ensuring they're disabled can be challenging. If an identity is overlooked, this might allow access when it should have been eliminated.
-
-With SSO, you need to remember only one ID and one password. Access across applications is granted to a single identity that's tied to the user, which simplifies the security model. As users change roles or leave an organization, access is tied to a single identity. This change greatly reduces the effort needed to change or disable accounts. Using SSO for accounts makes it easier for users to manage their identities and for IT to manage users.
+From an operations perspective, SSO also simplifies lifecycle management. Access is tied to one identity, making it easier to update or remove access when roles change.
 
 > [!IMPORTANT]
 > Single sign-on is only as secure as the initial authenticator because the subsequent connections are all based on the security of the initial authenticator.
 
 ## What’s multifactor authentication?
 
-Multifactor authentication is the process of prompting a user for an extra form (or factor) of identification during the sign-in process. MFA helps protect against a password compromise in situations where the password was compromised but the second factor wasn't.
+Multifactor authentication (MFA) prompts a user for an extra factor during sign-in, so a compromised password alone isn't enough for access. These factors fall into three categories:
 
-Think about how you sign into websites, email, or online services. After entering your username and password, have you ever needed to enter a code that was sent to your phone? If so, you've used multifactor authentication to sign in.
+ -  **Something the user knows** — a password or challenge question.
+ -  **Something the user has** — a code sent to a mobile phone.
+ -  **Something the user is** — a biometric signal such as a fingerprint or face scan.
 
-Multifactor authentication provides additional security for your identities by requiring two or more elements to fully authenticate. These elements fall into three categories:
-
- -  Something the user knows – this might be a challenge question.
- -  Something the user has – this might be a code that's sent to the user's mobile phone.
- -  Something the user is – this is typically some sort of biometric property, such as a fingerprint or face scan.
-
-Multifactor authentication increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With multifactor authentication enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate.
-
-Compare multifactor authentication with single-factor authentication. Under single-factor authentication, an attacker would need only a username and password to authenticate. Multifactor authentication should be enabled wherever possible because it adds enormous benefits to security.
+With MFA enabled, an attacker who obtains a password still needs the second factor — such as a phone prompt or biometric signal — to complete sign-in.
 
 ### What's Microsoft Entra multifactor authentication?
 
@@ -42,30 +30,31 @@ Microsoft Entra multifactor authentication is a Microsoft service that provides 
 
 ## What’s passwordless authentication?
 
-Features like MFA are a great way to secure your organization, but users often get frustrated with the additional security layer on top of having to remember their passwords. People are more likely to comply when it's easy and convenient to do so. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are, or something you know.
+While MFA adds security, passwords themselves remain a usability and risk challenge. Passwordless methods eliminate the password entirely, replacing it with a trusted device plus a biometric signal or PIN.
 
-Passwordless authentication needs to be set up on a device before it can work. For example, your computer is something you have. Once it’s been registered or enrolled, Azure now knows that it’s associated with you. Now that the computer is known, once you provide something you know or are (such as a PIN or fingerprint), you can be authenticated without using a password.
+After initial registration, the user signs in with a factor they know or are — such as a PIN or fingerprint — instead of typing a password.
 
-Each organization has different needs when it comes to authentication. Microsoft global Azure and Azure Government offer the following three passwordless authentication options that integrate with Microsoft Entra ID:
+Microsoft Entra ID supports three passwordless options:
 
  -  Windows Hello for Business
  -  Microsoft Authenticator app
  -  FIDO2 security keys
 
+:::image type="content" source="../media/authentication-methods-option-passwordless-comparison.png" alt-text="Three-card comparison of Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys showing authentication type, form factor, and best-fit scenario for each.":::
+
 ### Windows Hello for Business
 
-Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing corporate resources on-premises and in the cloud.
+Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing work resources on-premises and in the cloud.
 
-### Microsoft Authenticator App
+### Microsoft Authenticator app
 
-You can also allow your employee's phone to become a passwordless authentication method. You may already be using the Microsoft Authenticator App as a convenient multifactor authentication option in addition to a password. You can also use the Authenticator App as a passwordless option.
+The Microsoft Authenticator app can also serve as a passwordless credential, turning any iOS or Android phone into a strong sign-in factor.
 
-The Authenticator App turns any iOS or Android phone into a strong, passwordless credential. Users can sign-in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm. Refer to Download and install the Microsoft Authenticator app for installation details.
+To sign in, the user receives a notification on their phone, matches a number displayed on screen, and confirms with a biometric signal (touch or face) or PIN. No password is needed.
 
 ### FIDO2 security keys
 
-The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and reduce the use of passwords as a form of authentication. FIDO2 is the latest standard that incorporates the web authentication (WebAuthn) standard.
+FIDO2 is an open standard for passwordless authentication built on the web authentication (WebAuthn) specification. FIDO2 security keys are unphishable hardware devices — typically USB, but also available with Bluetooth or NFC — that handle authentication without a username or password.
 
-FIDO2 security keys are an unphishable standards-based passwordless authentication method that can come in any form factor. Fast Identity Online (FIDO) is an open standard for passwordless authentication. FIDO allows users and organizations to leverage the standard to sign-in to their resources without a username or password by using an external security key or a platform key built into a device.
+Users register a FIDO2 key and then select it at the sign-in screen as their primary authentication method. Because the hardware device handles authentication, there's no password that could be exposed or guessed.
 
-Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC. With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.

@@ -22,7 +22,7 @@ You can quickly change between PowerShell and BASH in the CLI by selecting the *
 > [!TIP]
 > When in PowerShell mode, the command line starts with PS. When in BASH mode, the command line starts with your user name@azure.
 >
-> :::image type="content" source="../media/sandbox-powershell-11569b2c-7a9a0db5.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
+> :::image type="content" source="../media/sandbox-powershell.png" alt-text="Screenshot of the Azure PowerShell CLI at initial launch.":::
 
 ### Use PowerShell in the CLI
 
@@ -40,7 +40,7 @@ If you’re more familiar with BASH, you can use BASH commands instead by shifti
 
 Enter `bash` to switch to the BASH CLI.
 
-:::image type="content" source="../media/sandbox-bash-363cf104-9c91b89d.png" alt-text="Screenshot of the Azure BASH CLI at initial launch.":::
+:::image type="content" source="../media/sandbox-bash.png" alt-text="Screenshot of the Azure BASH CLI at initial launch.":::
 
 > [!TIP]
 > You can tell you're in BASH mode by the username displayed on the command line, your username@azure.
@@ -49,7 +49,7 @@ Again, use the `Get-date` command to get the current date and time.
 
 You received an error because Get-date is a PowerShell specific command.
 
-:::image type="content" source="../media/sandbox-bash-date-8b20e391-afa1b510.png" alt-text="Screenshot of BASH error message get-date command not found.":::
+:::image type="content" source="../media/sandbox-bash-date.png" alt-text="Screenshot of BASH error message get-date command not found.":::
 
 
 Use the `date` command to get the current date and time.
@@ -69,7 +69,7 @@ Decide whether you wish to send telemetry data and enter `YES` or `NO`.
 
 You may have to wait a minute or two to allow the interactive mode to fully initialize. Then, enter the letter “a” and auto-completion should start to work. If auto-completion isn’t working, wait a bit longer and try again.
 
-:::image type="content" source="../media/azure-interactive-mode-c8421a2d-3c3d662b.png" alt-text="Screenshot of interactive mode with autocompletion providing commands that start with A.":::
+:::image type="content" source="../media/azure-interactive-mode.png" alt-text="Screenshot of interactive mode with autocompletion providing commands that start with A.":::
 
 Once initialized, you can use the arrow keys or tab to help complete your commands. Interactive mode is set up specifically for Azure, so you don't need to enter az to start a command. Try the `upgrade` or `version` commands again, but this time without az in front.
 
