@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/23/2026
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-install-web-server-role.md)]

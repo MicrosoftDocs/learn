@@ -14,4 +14,4 @@ These components function as follows:
 1. Within that site, it looks at the URL path to see if it corresponds to an application or virtual directory with distinct settings, then maps the request to a physical folder. 
 1. The request is executed using the application pool associated with that site/application, which loads the necessary modules to handle things like authentication, authorization, serving content or executing application code, and sending the response.
 
-[![A diagram showing IIS architecture functions with incoming requests.](../media/internet-information-services-architecture.png)](../media/internet-informationm-services-architecture.png#lightbox)
+[![A diagram showing IIS architecture functions with incoming requests.](../media/internet-information-services-architecture.png)](../media/internet-information-services-architecture.png#lightbox)
