@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-configure-internet-information-services.initial-configure-validate
+title: Initial configuration and validation
+metadata:
+  title: Initial Configuration and Validation
+  description: In this unit, you perform the initial configuration of your web server and validate that the installation was successful. You learn how to use the IIS Manager console to perform basic configuration tasks, such as creating a new website and configuring its settings.
+  ms.date: 03/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-initial-configure-validate.md)]
