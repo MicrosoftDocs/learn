@@ -6,11 +6,10 @@ metadata:
   description: Describe a practical process for responsible generative AI development.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/26/2026
+  ms.date: 03/22/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-plan-responsible-ai.md)]
-

@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-analyze-recognize-faces
+hidden: true
 metadata:
   title: Detect, analyze, and recognize faces
   description: Detect, analyze, and recognize faces
@@ -25,25 +26,24 @@ prerequisites: |
   - Programming experience.
 iconUrl: /training/achievements/artificial-intelligence-detect-faces.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- azure-computer-vision
-- azure-face
-- microsoft-foundry
+  - azure-computer-vision
+  - azure-face
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.detect-analyze-recognize-faces.introduction
-- learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-service
-- learn.wwl.detect-analyze-recognize-faces.detect-analyze-faces
-- learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
-- learn.wwl.detect-analyze-recognize-faces.understand-considerations-for-face-analysis
-- learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
-- learn.wwl.detect-analyze-recognize-faces.knowledge-check
-- learn.wwl.detect-analyze-recognize-faces.summary
+  - learn.wwl.detect-analyze-recognize-faces.introduction
+  - learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-service
+  - learn.wwl.detect-analyze-recognize-faces.detect-analyze-faces
+  - learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
+  - learn.wwl.detect-analyze-recognize-faces.understand-considerations-for-face-analysis
+  - learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
+  - learn.wwl.detect-analyze-recognize-faces.knowledge-check
+  - learn.wwl.detect-analyze-recognize-faces.summary
 badge:
   uid: learn.wwl.detect-analyze-recognize-faces.badge
-

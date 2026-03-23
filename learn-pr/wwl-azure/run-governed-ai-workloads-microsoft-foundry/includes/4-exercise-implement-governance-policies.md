@@ -49,7 +49,7 @@ Your company plans to develop a global analytics platform that will integrate co
 :::image type="content" source="../media/foundry-resources-scaled-managed.png" alt-text="Diagram summarizing how Microsoft Foundry model deployments use token and request quotas.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Microsoft Foundry model deployment
 
@@ -95,7 +95,7 @@ To prepare for this initiative, the company plans to use Microsoft Foundry to cr
 :::image type="content" source="../media/gateway-management-enforce-token-limits.png" alt-text="Diagram summarizing configuring an AI Gateway backed by Azure API Management to enforce tokens.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create AI Gateway, you should have the Owner or Contributor role assigned at the Azure subscription level.
 - Familiarity with Microsoft API Management
 

@@ -6,9 +6,9 @@ metadata:
   description: Exercise - Optimize generative AI model performance using Microsoft Foundry.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/24/2026
+  ms.date: 03/20/2026
   ms.topic: unit
   ai-usage: ai-assisted
-durationInMinutes: 60
+durationInMinutes: 90
 content: |
   [!include[](includes/6-exercise.md)]

@@ -5,7 +5,7 @@ metadata:
   description: Learn how to migrate Oracle-powered applications by using Azure PaaS database services.
   ms.date: 05/01/2024
   author: Randall-Knapp
-  ms.author: askabadi
+  ms.author: marcobellini
   ms.topic: module
   ms.service: azure
 title: Migrate Oracle-powered applications by using Azure PaaS database services
