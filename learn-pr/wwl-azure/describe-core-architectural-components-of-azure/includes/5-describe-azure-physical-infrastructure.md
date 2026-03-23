@@ -41,7 +41,7 @@ Azure services that support availability zones fall into three categories:
  -  Zone-redundant services: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
  -  Non-regional services: Services are always available from Azure geographies and are resilient to zone-wide outages as well as region-wide outages.
 
-:::image type="content" source="../media/az-service-categories.png" alt-text="Diagram comparing three Azure availability zone service categories: Zonal, Zone-redundant, and Non-regional.":::
+:::image type="content" source="../media/availability-zone-service-categories.png" alt-text="Diagram comparing three Azure availability zone service categories: Zonal, Zone-redundant, and Non-regional.":::
 
 Even with the additional resiliency that availability zones provide, it’s possible that an event could be so large that it impacts multiple availability zones in a single region. To provide even further resilience, Azure has Region Pairs.
 
@@ -52,7 +52,7 @@ Most Azure regions are paired with another region within the same geography (suc
 > [!IMPORTANT]
 > Not all Azure services automatically replicate data or automatically fall back from a failed region to cross-replicate to another enabled region. In these scenarios, recovery and replication must be configured by the customer.
 
-Examples of region pairs in Azure are West US paired with East US and Southeast Asia paired with East Asia. Because the pair of regions are directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy.
+Examples of region pairs in Azure are West US paired with East US and Southeast Asia paired with East Asia. Because the pair of regions is directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy.
 
 :::image type="content" source="../media/region-pairs.png" alt-text="Diagram showing two paired Azure regions within a geography, each containing availability zones, with bidirectional failover replication and region pair advantages.":::
 

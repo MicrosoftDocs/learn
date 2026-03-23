@@ -9,7 +9,7 @@ In Azure, encryption is commonly discussed in two forms:
 
 A strong security posture generally includes both.
 
-:::image type="content" source="../media/encryption-key-mgmt-option-split.png" alt-text="Diagram showing encryption at rest protecting databases, disks, and storage, and encryption in transit protecting data moving between application tiers and users, with Azure Key Vault managing secrets, encryption keys, and certificates for both.":::
+:::image type="content" source="../media/encryption-key-management-option-split.png" alt-text="Diagram showing encryption at rest protecting databases, disks, and storage, and encryption in transit protecting data moving between application tiers and users, with Azure Key Vault managing secrets, encryption keys, and certificates for both.":::
 
 ## Practical example
 
@@ -25,7 +25,7 @@ Azure Key Vault is a service for securely storing and controlling access to:
 
 Using Key Vault helps centralize secret and key management instead of storing sensitive values directly in application code or configuration files.
 
-:::image type="content" source="../media/encryption-key-mgmt-option-hub.png" alt-text="Diagram showing Azure Key Vault as a central hub managing three categories: secrets such as passwords and connection strings, encryption keys for at-rest and in-transit protection, and certificates for TLS and SSL. Benefits include access control, key rotation, and usage auditing.":::
+:::image type="content" source="../media/encryption-key-management-option-hub.png" alt-text="Diagram showing Azure Key Vault as a central hub managing three categories: secrets such as passwords and connection strings, encryption keys for at-rest and in-transit protection, and certificates for TLS and SSL. Benefits include access control, key rotation, and usage auditing.":::
 
 ## Why key management matters
 

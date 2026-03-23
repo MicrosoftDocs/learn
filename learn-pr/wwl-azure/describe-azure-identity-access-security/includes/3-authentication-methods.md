@@ -2,7 +2,7 @@ Authentication establishes the identity of a person, service, or device by requi
 
 The following diagram shows the security level compared to the convenience. Notice Passwordless authentication is high security and high convenience while passwords on their own are low security but high convenience.
 
-:::image type="content" source="../media/authentication-methods-options.png" alt-text="Diagram comparing Password Only, Multifactor Authentication, and Passwordless methods across security and convenience. Passwordless scores highest on both scales.":::
+:::image type="content" source="../media/authentication-methods-option-auth-spectrum.png" alt-text="Diagram comparing Password Only, Multifactor Authentication, and Passwordless methods across security and convenience. Passwordless scores highest on both scales.":::
 
 
 ## What's single sign-on?
