@@ -46,7 +46,7 @@ client.vector_stores.files.upload_and_poll(
 response = client.responses.create(
     model=model_deployment,
     instructions="You are an AI assistant that provides information from HR policy documents.",
-    input="What's the maximum amount I can claim for a tsxi ride?",
+    input="What's the maximum amount I can claim for a taxi ride?",
     tools=[{
         "type": "file_search",
         "vector_store_ids": [vector_store.id]
