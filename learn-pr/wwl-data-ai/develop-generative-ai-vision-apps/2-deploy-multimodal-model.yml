@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-generative-ai-vision-apps.deploy-multimodal-models
-title: Use a vision-capable model the Microsoft Foundry portal
+title: Use a vision-capable model in the Microsoft Foundry portal
 metadata:
-  title: Use a vision-capable model the Microsoft Foundry portal
+  title: Use a vision-capable model in the Microsoft Foundry portal
   description: "Learn how to use a vision-capable model in the Microsoft Foundry portal."
   ms.date: 03/23/2026
   author: gmalc
