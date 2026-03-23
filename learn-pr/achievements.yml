@@ -7893,5 +7893,5 @@ achievements:
 - uid: learn.security.manage-security-operations.trophy
   type: trophy
   title: Secure your cloud applications in Azure
-  summary: Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer).
+  summary: "Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
   iconUrl: /training/achievements/secure-your-cloud-apps.svg
