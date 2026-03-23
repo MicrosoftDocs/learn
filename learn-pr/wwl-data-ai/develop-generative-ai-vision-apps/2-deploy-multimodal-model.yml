@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-generative-ai-vision-apps.deploy-multimodal-models
-title: Deploy a multimodal model
+title: Use a vision-capable model the Microsoft Foundry portal
 metadata:
-  title: Deploy a multimodal model
-  description: "Deploy a multimodal model that can respond to image-based prompts."
-  ms.date: 04/29/2025
+  title: Use a vision-capable model the Microsoft Foundry portal
+  description: "Learn how to use a vision-capable model in the Microsoft Foundry portal."
+  ms.date: 03/23/2026
   author: gmalc
   ms.author: gmalc
   ms.topic: unit
