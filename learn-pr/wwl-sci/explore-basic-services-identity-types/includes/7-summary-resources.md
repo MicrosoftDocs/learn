@@ -1,6 +1,6 @@
 In this module, you learned about Microsoft Entra and the core functionality of Microsoft Entra ID. You explored the different types of identities that Microsoft Entra ID supports, including user, workload, device, and agent identities. You learned how Microsoft Entra Agent ID helps secure AI agents with dedicated identity management. You also learned about hybrid identity, where on-premises identities are synchronized to Microsoft Entra ID using Cloud Sync, and how Microsoft Entra External ID enables collaboration with partners, customers, and other external users.
 
-Now that you've completed this module, you are able to:
+Now that you've completed this module, you're able to:
 
 - Describe Microsoft Entra and the function of Microsoft Entra ID.
 - Describe the types of identities supported by Microsoft Entra ID.
