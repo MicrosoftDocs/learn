@@ -38462,18 +38462,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn.wwl.describe-azure-storage-services.exercise-create-storage-blob",
-      "redirect_url": "/training/modules/describe-azure-storage-services/",
+      "source_path": "learn-pr/wwl-azure/describe-azure-storage-services/5-exercise-create-storage-blob.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-storage-services/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn.wwl.describe-core-architectural-components-of-azure.exercise-explore-learn-sandbox",
-      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "source_path": "learn-pr/wwl-azure/describe-core-architectural-components-of-azure/7-exercise-create-azure-resource.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn.wwl.describe-core-architectural-components-of-azure.exercise-create-azure-resource",
-      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "source_path": "learn-pr/wwl-azure/describe-core-architectural-components-of-azure/4-exercise-explore-learn-sandbox.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
     },
     {
@@ -64974,6 +64974,81 @@
     {
       "source_path": "learn-pr/azure/configure-and-manage-azure-key-vault/6-summary.yml",
       "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-security-operations/index.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-your-cloud-apps/index.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/index.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/1-introduction.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/1a-platform-security-baselines.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/2-create-an-identity-access-management-iam.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/3-create-an-azure-security-center-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/4-create-a-storage-accounts-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/5-create-an-azure-sql-database-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/6-create-a-logging-and-monitoring-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/7-create-a-networking-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/8-create-a-vms-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/9-other-security-considerations-for-a-baseline.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-security-baselines/10-summary.yml",
+      "redirect_url": "/azure/key-vault/general/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/secure-your-cloud-apps/index.yml",
+      "redirect_url": "/azure/security",
       "redirect_document_id": false
     }
   ]
