@@ -1,6 +1,8 @@
 How do you ensure that your resources stay compliant? Can you be alerted if a resource's configuration has changed?
 
-Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with corporate standards.
+Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with your standards.
+
+:::image type="content" source="../media/azure-policy-initiative-hierarchy.png" alt-text="Diagram showing Azure Policy flow from policy grouping through initiative assignment, scope inheritance, and resource evaluation.":::
 
 ## How does Azure Policy define policies?
 
@@ -10,9 +12,15 @@ Azure Policies can be set at each level, enabling you to set policies on a speci
 
 Azure Policy comes with built-in policy and initiative definitions for Storage, Networking, Compute, Security Center, and Monitoring. For example, if you define a policy that allows only a certain size for the virtual machines (VMs) to be used in your environment, that policy is invoked when you create a new VM and whenever you resize existing VMs. Azure Policy also evaluates and monitors all current VMs in your environment, including VMs that were created before the policy was created.
 
-In some cases, Azure Policy can automatically remediate noncompliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with AppName tag and a value of "SpecialOrders," Azure Policy will automatically apply that tag if it is missing. However, you still retain full control of your environment. If you have a specific resource that you don’t want Azure Policy to automatically fix, you can flag that resource as an exception – and the policy won’t automatically fix that resource.
+In some cases, Azure Policy can automatically remediate noncompliant resources and configurations. For example, you can require an `AppName` tag and have Azure Policy add it when missing. You still retain full control of your environment because resources can be marked as exceptions.
 
 Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that pertain to the pre-deployment and post-deployment phases of your applications.
+
+## Policy guardrails for AI-assisted changes
+
+If teams use Copilot recommendations or agent-like automation, Azure Policy still enforces your standards. You can require allowed locations, required tags, approved resource SKUs, and security baseline controls regardless of how a change was proposed.
+
+This helps teams move faster with AI assistance while keeping changes compliant with organizational and regulatory requirements.
 
 ## What are Azure Policy initiatives?
 
@@ -27,3 +35,4 @@ Under this initiative, the following policy definitions are included:
  -  **Monitor missing Endpoint Protection in Security Center** This policy monitors for servers that don't have an installed endpoint protection agent.
 
 In fact, the Enable Monitoring in Azure Security Center initiative contains over 100 separate policy definitions.
+
