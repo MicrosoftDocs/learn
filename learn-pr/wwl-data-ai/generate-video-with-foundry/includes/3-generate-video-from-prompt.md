@@ -20,7 +20,7 @@ Before crafting your prompt, understand the API parameters that control your vid
 
 After deploying the Sora 2 model, you can test it using the Video playground in Microsoft Foundry portal:
 
-![Screenshot of the video playground](../media/video-playground.png)
+![Screenshot of the video playground.](../media/video-playground.png)
 
 1. Navigate to your deployed Sora 2 model in the Foundry portal.
 1. Select the **Playground** tab to access the video generation interface.
