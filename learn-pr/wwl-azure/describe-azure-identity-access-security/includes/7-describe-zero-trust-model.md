@@ -6,7 +6,7 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 
  -  **Verify explicitly** \- Always authenticate and authorize based on all available data points.
  -  **Use least privilege access** \- Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
- -  **Assume breach** \- Minimize blast radius and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses.
+ -  **Assume breach** \- Limit the potential impact and segment access. Verify end-to-end encryption. Use analytics to get visibility, drive threat detection, and improve defenses.
 
 :::image type="content" source="../media/zero-trust-option-principles-triad.png" alt-text="Diagram showing the three Zero Trust guiding principles: Verify explicitly, Use least privilege access, and Assume breach, each with key actions listed.":::
 
