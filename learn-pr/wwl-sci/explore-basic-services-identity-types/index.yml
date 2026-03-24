@@ -33,6 +33,7 @@ subjects:
 - identity-access
 units:
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.introduction
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-microsoft-entra
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-identity-types
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-concept-of-hybrid-identities
