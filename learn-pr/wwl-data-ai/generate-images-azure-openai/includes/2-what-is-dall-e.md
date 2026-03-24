@@ -14,6 +14,6 @@ For example, you might submit the following natural language prompt to an image 
 
 This prompt could result in the generation of graphical output such as the following image:
 
-![A picture of a robot eating spaghetti.](../media/robot-eating-spaghetti.png)
+![An illustration of a robot eating spaghetti.](../media/robot-eating-spaghetti.png)
 
 The images generated are original; they aren't retrieved from a curated image catalog. In other words, the model isn't a search system for *finding* appropriate images - it is an artificial intelligence (AI) model that *generates* new images based on the data on which it was trained.
