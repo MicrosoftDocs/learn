@@ -6,7 +6,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/01/2024
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -27,18 +27,7 @@ quiz:
       explanation: "Correct. A Microsoft 365 group is used for grouping users according to collaboration needs. You can give members of the group access to a shared mailbox, calendar, files SharePoint sites, and more. Because Microsoft 365 groups are intended for collaboration, the default is to allow users to create Microsoft 365 groups, so you don’t need an administrator role."
     - content: "A security group"
       isCorrect: false
-      explanation: "Incorrect. Although a security group is the most common type of group and is used to manage user and device access to shared resources, it is best suited to create a security group for a security policy and requires an administrator role to configure."
-  - content: "An organization has completed a full migration to the cloud and has purchased devices for all its employees. All employees sign in to the device through an organizational account configured in Microsoft Entra ID. Select the option that best describes how these devices are set up in Microsoft Entra ID."
-    choices:
-    - content: "These devices are set up as Microsoft Entra registered."
-      isCorrect: false
-      explanation: "Incorrect. This customer scenario explicitly states that all employees sign in to the device through an organization account and because devices are purchased by the organization, there's no requirement for bring your own device (BYOD). The goal of Microsoft Entra registered devices is to provide users with support for BYOD or mobile device scenarios. Microsoft Entra registered devices register to Microsoft Entra ID without requiring an organizational account to sign in to the device."
-    - content: "These devices are set up as Microsoft Entra joined."
-      isCorrect: true
-      explanation: "Correct. A Microsoft Entra joined device is a device joined to Microsoft Entra ID through an organizational account, which is then used to sign in to the device. Microsoft Entra joined devices are generally owned by the organization."
-    - content: "These devices are set up as Microsoft Entra hybrid joined."
-      isCorrect: false
-      explanation: "Incorrect. This customer scenario has completed a full migration to the cloud and therefore has no on-premises Active Directory. There is no requirement for devices to be Microsoft Entra hybrid joined."
+      explanation: "Incorrect. Although a security group is the most common type of group and is used to manage user and device access to shared resources, it's best suited to create a security group for a security policy and requires an administrator role to configure."
   - content: "A developer wants an application to connect to Azure resources that support Microsoft Entra authentication, without having to manage any credentials and without incurring any extra cost. Which option best describes the identity type of the application?"
     choices:
     - content: "Service principal"
@@ -50,3 +39,36 @@ quiz:
     - content: "Hybrid identity"
       isCorrect: false
       explanation: "Incorrect. A hybrid identity refers to a common user identity for authentication and authorization to all resources, regardless of location."
+  - content: "An organization needs to synchronize identities between its on-premises Active Directory and Microsoft Entra ID. Which synchronization tool does Microsoft recommend for new deployments?"
+    choices:
+    - content: "Microsoft Entra Connect Sync"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra Connect Sync is an earlier on-premises synchronization tool that's being replaced by Cloud Sync. New identity and synchronization features are being developed primarily on the Cloud Sync platform."
+    - content: "Microsoft Entra Cloud Sync"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra Cloud Sync is Microsoft's recommended synchronization tool for hybrid identity. It uses a lightweight cloud provisioning agent, offers simplified deployment, high availability through multiple agents, and support for disconnected multi-forest environments."
+    - content: "Active Directory Federation Services (AD FS)"
+      isCorrect: false
+      explanation: "Incorrect. AD FS is a federation service, not a synchronization tool. Microsoft Entra Cloud Sync is the recommended tool for synchronizing identities between on-premises Active Directory and Microsoft Entra ID."
+  - content: "A company wants to collaborate with a partner organization and give partner employees access to specific applications. Partner employees should authenticate using their own organization's credentials. Which Microsoft Entra External ID feature should the company use?"
+    choices:
+    - content: "B2B collaboration"
+      isCorrect: true
+      explanation: "Correct. External ID B2B collaboration allows your workforce to collaborate with external business partners. You can invite anyone to sign in to your Microsoft Entra organization using their own credentials so they can access the apps and resources you want to share with them."
+    - content: "Customer identity and access management (CIAM)"
+      isCorrect: false
+      explanation: "Incorrect. CIAM is used when an organization or developer creates consumer-facing apps and needs to add authentication and customer identity management. It's not designed for business partner collaboration."
+    - content: "B2B direct connect"
+      isCorrect: false
+      explanation: "Incorrect. B2B direct connect creates a mutual trust relationship between two Microsoft Entra organizations and currently enables only the Teams Connect shared channels feature, not broad application access."
+  - content: "An organization is deploying AI agents that need to securely authenticate and access resources in Microsoft Entra ID. The organization wants to enforce conditional access policies based on agent risk and govern agent lifecycles. Which Microsoft Entra capability should the organization use?"
+    choices:
+    - content: "Microsoft Entra Workload ID"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra Workload ID is designed for software workloads such as applications, service principals, and managed identities. It does not provide the purpose-built agent identity capabilities needed for AI agents."
+    - content: "Managed identities"
+      isCorrect: false
+      explanation: "Incorrect. Managed identities eliminate the need for developers to manage credentials for applications connecting to Azure resources, but are not designed for AI agent identity management, lifecycle governance, or agent-specific conditional access."
+    - content: "Microsoft Entra Agent ID"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra Agent ID extends identity and access management capabilities to AI agents by providing purpose-built agent identities. It enables organizations to enforce conditional access policies based on agent risk and govern agent lifecycles with designated owners and sponsors."

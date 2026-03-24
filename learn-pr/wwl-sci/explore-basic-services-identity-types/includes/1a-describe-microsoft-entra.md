@@ -15,12 +15,12 @@ Microsoft Entra brings together several identity and network access capabilities
 
 The core products in the Microsoft Entra family include:
 
-- **Microsoft Entra ID** — The cloud-based identity and access management service, formerly known as Azure Active Directory (Azure AD). It provides authentication, single sign-on (SSO), and conditional access for users and applications.
-- **Microsoft Entra ID Governance** — Automates identity lifecycle management, access reviews, and entitlement management to ensure the right people have the right access at the right time.
-- **Microsoft Entra External ID** — Enables secure collaboration with external users such as partners, customers, and consumers through customizable sign-up and sign-in experiences.
-- **Microsoft Entra Verified ID** — Enables organizations to issue and verify decentralized identity credentials, letting users control their own identity data.
-- **Microsoft Entra Internet Access** — An identity-centric Secure Web Gateway (SWG) that protects access to internet and SaaS applications.
-- **Microsoft Entra Private Access** — Provides Zero Trust Network Access (ZTNA) to private apps and resources without requiring a traditional VPN.
+- **Microsoft Entra ID**: The cloud-based identity and access management service, formerly known as Azure Active Directory (Azure AD). It provides authentication, single sign-on (SSO), and conditional access for users and applications.
+- **Microsoft Entra ID Governance**: Automates identity lifecycle management, access reviews, and entitlement management to ensure the right people have the right access at the right time.
+- **Microsoft Entra External ID**: Enables secure collaboration with external users such as partners, customers, and consumers through customizable sign-up and sign-in experiences.
+- **Microsoft Entra Verified ID**: Enables organizations to issue and verify decentralized identity credentials, letting users control their own identity data.
+- **Microsoft Entra Internet Access**: An identity-centric Secure Web Gateway (SWG) that protects access to internet and SaaS applications.
+- **Microsoft Entra Private Access**: Provides Zero Trust Network Access (ZTNA) to private apps and resources without requiring a traditional VPN.
 
 ## How Microsoft Entra products work together
 

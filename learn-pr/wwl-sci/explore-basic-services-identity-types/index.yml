@@ -3,18 +3,21 @@ uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-a
 metadata:
   title: Describe the Function and Identity Types of Microsoft Entra ID
   description: "Describe the function and identity types of Microsoft Entra ID"
-  ms.date: 07/30/2025
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
   ms.topic: module
   ms.service: azure-active-directory
 title: Describe the function and identity types of Microsoft Entra ID
-summary: Microsoft Entra ID is Microsoft’s cloud-based identity and access management solution that connects people to their apps, devices, and data. Learn about the functions and identity types supported by Microsoft Entra ID.
+summary: Microsoft Entra ID is Microsoft's cloud-based identity and access management solution that connects people to their apps, devices, and data. Learn about the functions and identity types supported by Microsoft Entra ID, including agent identities for AI, hybrid identity, and external identities.
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe the function of Microsoft Entra ID.
-    - Describe the types of identities Microsoft Entra ID supports.
+    - Describe Microsoft Entra and the function of Microsoft Entra ID.
+    - Describe the types of identities supported by Microsoft Entra ID.
+    - Describe Microsoft Entra Agent ID and its role in securing AI agents.
+    - Describe the concept of hybrid identity.
+    - Describe external identities supported through Microsoft Entra External ID.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -36,6 +39,7 @@ units:
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-microsoft-entra
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-identity-types
+- learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-microsoft-entra-agent-id
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-concept-of-hybrid-identities
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-external-identities
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
