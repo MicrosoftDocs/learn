@@ -8,7 +8,7 @@ With Microsoft Purview, you can stay up-to-date on your data landscape thanks to
 
 Two main solution areas comprise Microsoft Purview: **risk and compliance** and **unified data governance**.
 
-:::image type="content" source="../media/purview-funnel-streams.png" alt-text="Diagram showing Microsoft Purview ingesting raw data from on-premises, multicloud, and SaaS sources through data discovery, classification, and lineage, then outputting governed data to risk and compliance and unified data governance solutions.":::
+:::image type="content" source="../media/purview-funnel-streams.png" alt-text="Diagram showing Microsoft Purview processing data from multiple sources into risk and compliance and unified data governance solutions.":::
 
 
 ## Microsoft Purview risk and compliance solutions

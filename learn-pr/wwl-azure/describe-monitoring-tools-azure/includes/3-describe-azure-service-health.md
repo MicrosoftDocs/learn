@@ -1,6 +1,6 @@
 Azure Service Health helps you stay informed about the health of Azure itself and the specific resources you run. It combines three views that narrow in scope from global down to individual resources.
 
-:::image type="content" source="../media/service-health-scope.png" alt-text="Diagram showing three Azure Service Health views narrowing in scope: Azure Status covers all services and regions, Service Health covers your services and regions, and Resource Health focuses on an individual resource.":::
+:::image type="content" source="../media/service-health-scope.png" alt-text="Diagram showing three Azure Service Health views narrowing in scope: Azure Status, Service Health, and Resource Health.":::
 
 ## Three health views
 

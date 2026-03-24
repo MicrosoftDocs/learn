@@ -6,7 +6,7 @@ To get the most out of Azure, you need a way to interact with the Azure environm
 
 Many teams also use Copilot in Azure to accelerate common operations tasks such as exploring services, understanding configuration options, and drafting commands or scripts.
 
-:::image type="content" source="../media/azure-management-tools.png" alt-text="Diagram showing the five Azure management tools: Azure Portal (graphical), Cloud Shell (environment), Azure PowerShell and Azure CLI (command line), and Copilot in Azure (AI-assisted).":::
+:::image type="content" source="../media/azure-management-tools.png" alt-text="Diagram showing the five Azure management tools: Azure portal, Cloud Shell, Azure PowerShell, Azure CLI, and Copilot in Azure.":::
 
 ## AI-assisted operations with Copilot in Azure
 

@@ -35,7 +35,7 @@ If you want flexibility in which compute resources you use, Azure savings plan f
 
 If you have workloads that can handle interruptions, such as a batch data processing job, Azure Spot Virtual Machines can help reduce cost further. Spot pricing uses unused Azure capacity at lower prices, but those workloads can be evicted when Azure needs the capacity back.
 
-:::image type="content" source="../media/consumption-pricing-options.png" alt-text="Comparison chart of four Azure pricing options: Pay-As-You-Go, Reservations, Savings Plan, and Spot Pricing, showing commitment, best use case, and savings for each.":::
+:::image type="content" source="../media/consumption-pricing-options.png" alt-text="Comparison chart of four Azure pricing options: pay-as-you-go, reservations, savings plan, and spot pricing.":::
 
 ## Maintenance
 
@@ -47,7 +47,7 @@ When you provision most resources in Azure, you need to define a region where th
 
 Network traffic is also impacted based on geography. For example, it’s less expensive to move information within Europe than to move information from Europe to Asia or South America.
 
-### Network Traffic
+### Network traffic
 
 Billing zones are a factor in determining the cost of some Azure services. Billing zones are different from availability zones; a billing zone is a geographical grouping of Azure regions used specifically for data-transfer pricing.
 

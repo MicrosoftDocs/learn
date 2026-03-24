@@ -2,9 +2,9 @@ A resource lock prevents resources from being accidentally deleted or changed.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Resource locks prevent resources from being deleted or updated, depending on the type of lock. Resource locks can be applied to individual resources, resource groups, or even an entire subscription. Resource locks are inherited, meaning that if you place a resource lock on a resource group, all of the resources within the resource group will also have the resource lock applied.
 
-:::image type="content" source="../media/resource-lock-types-inheritance.png" alt-text="Diagram showing the two resource lock types (Delete and ReadOnly) with their allowed and blocked actions, and how locks inherit from a resource group to child resources.":::
+:::image type="content" source="../media/resource-lock-types-inheritance.png" alt-text="Diagram showing the two resource lock types, Delete and ReadOnly, with their actions and inheritance behavior.":::
 
-## Types of Resource Locks
+## Types of resource locks
 
 There are two types of resource locks, one that prevents users from deleting and one that prevents users from changing or deleting a resource.
 

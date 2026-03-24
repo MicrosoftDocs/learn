@@ -2,7 +2,7 @@ How do you ensure that your resources stay compliant? Can you be alerted if a re
 
 Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across your resource configurations so that those configurations stay compliant with your standards.
 
-:::image type="content" source="../media/azure-policy-initiative-hierarchy.png" alt-text="Diagram showing Azure Policy flow: policies grouped into an initiative, assigned to a scope, inherited down the management hierarchy, and evaluated against each resource for compliance.":::
+:::image type="content" source="../media/azure-policy-initiative-hierarchy.png" alt-text="Diagram showing Azure Policy flow from policy grouping through initiative assignment, scope inheritance, and resource evaluation.":::
 
 ## How does Azure Policy define policies?
 

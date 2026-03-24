@@ -2,7 +2,7 @@ As your cloud usage grows, it's increasingly important to stay organized. A good
 
 One way to organize related resources is to place them in their own subscriptions. You can also use resource groups to manage related resources. Resource tags are another way to organize resources. Tags provide extra information, or metadata, about your resources. This metadata is useful for:
 
-:::image type="content" source="../media/resource-tag-use-cases.png" alt-text="Diagram showing six resource tag use cases: resource management, cost management, operations management, security, governance, and workload automation.":::
+:::image type="content" source="../media/resource-tag-use-cases.png" alt-text="Diagram showing six resource tag use cases: resource management, cost management, operations, security, governance, and automation.":::
 
  -  **Resource management** Tags enable you to locate and act on resources that are associated with specific workloads, environments, teams, and owners.
  -  **Cost management and optimization** Tags enable you to group resources so that you can report on costs, allocate internal cost centers, track budgets, and forecast estimated cost.
