@@ -5,7 +5,7 @@ metadata:
   description: Use models in Microsoft Foundry to generate images
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/28/2025
+  ms.date: 03/24/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
@@ -21,25 +21,23 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Foundry. You should also have programming experience.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: 
+levels:
   - intermediate
-roles: 
+roles:
   - ai-engineer
   - developer
-products: 
+products:
   - microsoft-foundry
   - azure-openai
-subjects: 
+subjects:
   - artificial-intelligence
 units:
-- learn.wwl.generate-images-azure-openai.introduction
-- learn.wwl.generate-images-azure-openai.what-is-dall-e
-- learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
-- learn.wwl.generate-images-azure-openai.dall-e-rest-api
-- learn.wwl.generate-images-azure-openai.exercise-use-dall-e
-- learn.wwl.generate-images-azure-openai.knowledge-check
-- learn.wwl.generate-images-azure-openai.summary
+  - learn.wwl.generate-images-azure-openai.introduction
+  - learn.wwl.generate-images-azure-openai.what-is-dall-e
+  - learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
+  - learn.wwl.generate-images-azure-openai.dall-e-rest-api
+  - learn.wwl.generate-images-azure-openai.exercise-use-dall-e
+  - learn.wwl.generate-images-azure-openai.knowledge-check
+  - learn.wwl.generate-images-azure-openai.summary
 badge:
   uid: learn.wwl.generate-images-azure-openai.badge
-
-
