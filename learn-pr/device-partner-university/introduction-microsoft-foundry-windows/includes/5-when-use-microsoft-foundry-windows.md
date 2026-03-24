@@ -7,7 +7,7 @@ Because AI workloads vary across applications, deciding whether to use Microsoft
 
 Evaluating these factors can help developers determine whether Microsoft Foundry on Windows aligns with the needs of a specific scenario.
 
-The sections below walk through common scenarios where Microsoft Foundry on Windows is a good fit. Each scenario highlights a different consideration—such as on-device AI, hybrid architectures, or hardware diversity—to help you decide what makes sense for your application.
+The sections below walk-through common scenarios where Microsoft Foundry on Windows is a good fit. Each scenario highlights a different consideration—such as on-device AI, hybrid architectures, or hardware diversity—to help you decide what makes sense for your application.
 
 ## Use Microsoft Foundry on Windows when on-device AI provides clear advantages
 
@@ -15,7 +15,7 @@ Some AI workloads benefit from running directly on the device instead of relying
 
 Local execution can reduce response time by running inference close to the user and available hardware. This can be important for scenarios that involve real-time interactions, such as image processing, audio analysis, or interactive productivity features.
 
-Running models on the device can also support data handling requirements. When inference occurs locally, application data does not need to be transmitted to external services, which can help address privacy considerations or regulatory constraints.
+Running models on the device can also support data handling requirements. When inference occurs locally, application data doesn't need to be transmitted to external services, which can help address privacy considerations or regulatory constraints.
 
 The following example shows how Foundry Local can support scenarios where sensitive data should remain on the device. In this case, a developer runs an open model locally to process student financial aid requests without relying on cloud inference.
 
@@ -78,7 +78,7 @@ These options allow teams to introduce AI capabilities while maintaining existin
 
 ## Evaluating your scenario
 
-The following questions can help guide this decision.To choose the right deployment decision for the right requirement.
+The following questions can help guide this decision. To choose the right deployment decision for the right requirement.
 
 | Question | Consideration |
 |---------|---------------|

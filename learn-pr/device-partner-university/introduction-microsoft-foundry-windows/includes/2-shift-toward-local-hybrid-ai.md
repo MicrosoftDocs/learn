@@ -18,7 +18,7 @@ Because Windows devices exist across many industries—including healthcare, man
 
 Artificial intelligence is rapidly reshaping how software is developed and how organizations operate. Across industries, businesses are increasingly investing in AI-driven applications to improve efficiency, automate workflows, and uncover new insights from data.
 
-Research indicates that a [large majority of Fortune 500 companies—over 80%—are already using AI in some form](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/),with organizations increasingly investing in AI‑driven applications to improve efficiency and decision‑making. Global economic forecasts also suggest that AI solutions and services could generate trillions of dollars in economic value over the coming years.
+Research indicates that a [large majority of Fortune 500 companies—over 80%—are already using AI in some form](https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/07/24/ai-powered-success-with-1000-stories-of-customer-transformation-and-innovation/), with organizations increasingly investing in AI‑driven applications to improve efficiency and decision‑making. Global economic forecasts also suggest that AI solutions and services could generate trillions of dollars in economic value over the coming years.
 
 Developers are responding to this transformation by building a new generation of intelligent applications. Industry forecasts suggest that hundreds of millions of new applications will be created in the coming years, with a significant portion expected to incorporate AI capabilities.
 
@@ -32,9 +32,9 @@ To support these evolving workloads, developers are increasingly adopting hybrid
 
 :::image type="content" border="true" source="../media/cloud-hybrid-local-ai-diagram.svg" alt-text="Diagram comparing cloud, local, and hybrid AI approaches, showing cloud-based AI for scalability, local AI for offline and low-latency processing, and hybrid AI combining client and cloud capabilities.":::
 
-Cloud AI platforms provide powerful advantages. They offer access to large models, large-scale datasets, and virtually unlimited compute capacity. Cloud infrastructure is ideal for training models, running large-scale workloads, and supporting applications that require massive processing resources.
+Cloud AI platforms provide powerful advantages. They offer access to large models, large-scale datasets, and unlimited compute capacity. Cloud infrastructure is ideal for training models, running large-scale workloads, and supporting applications that require massive processing resources.
 
-However, running AI entirely in the cloud is not always the best approach for every scenario.
+However, running AI entirely in the cloud isn't always the best approach for every scenario.
 
 Running specific AI workloads directly on the device can offer several practical advantages, depending on the application and environment:
 
@@ -78,7 +78,7 @@ Running AI locally can offer several practical advantages, depending on the appl
 | **GPU (Graphics Processing Unit)** | Parallel processing for compute-intensive AI tasks | High performance for image processing, video workloads, and larger model inference |
 | **NPU (Neural Processing Unit)** | Dedicated acceleration for machine learning workloads | Power-efficient AI execution optimized for sustained local inference |
 
-Together, these processors allow Windows devices to run AI workloads across many scenarios—from productivity tools and enterprise software to healthcare applications, security systems, and industrial automation.
+Together, these processors allow Windows devices to run across AI workloads many scenarios—from productivity tools and enterprise software to healthcare applications, security systems, and industrial automation.
 
 > [!NOTE]
 > Not all Windows devices include every type of processor. AI workloads can take advantage of available hardware such as CPU, GPU, or NPU depending on the device configuration and supported capabilities.

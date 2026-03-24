@@ -48,7 +48,7 @@ Using Windows AI APIs is appropriate when an application requires standard AI fu
 
 ## Running open models locally on Windows
 
-When built-in APIs do not meet an application’s requirements, Microsoft Foundry on Windows includes **Foundry Local** to support running open-source AI models on Windows devices.
+When built-in APIs don't meet an application’s requirements, Microsoft Foundry on Windows includes **Foundry Local** to support running open-source AI models on Windows devices.
 
 Foundry Local enables developers to access a curated catalog of open models and run them directly on the device. This allows applications to use models beyond those included with the operating system while remaining integrated with the Windows AI platform. Models made available through Foundry Local are validated for compatibility with Windows and optimized to run across supported hardware.
 
