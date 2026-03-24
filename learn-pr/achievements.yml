@@ -7895,3 +7895,8 @@ achievements:
   title: Secure your cloud applications in Azure
   summary: "Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
   iconUrl: /training/achievements/secure-your-cloud-apps.svg
+- uid: learn.load-balance-web-traffic-with-application-gateway.badge
+  type: badge
+  title: Load balance your web service traffic with Application Gateway
+  summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
+  iconUrl: /training/achievements/load-balance-web-traffic-with-application-gateway.svg
