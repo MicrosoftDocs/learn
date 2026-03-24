@@ -5,7 +5,7 @@ title: What is Azure Kubernetes Service?
 metadata:
   title: What is Azure Kubernetes Service?
   description: What is Azure Kubernetes Service?
-  ms.date: 11/26/2024
+  ms.date: 03/23/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-kubernetes-service.md)]
-

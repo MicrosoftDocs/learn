@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-generated
 title: Describe Azure storage services
 summary: This module introduces you to storage in Azure, including things such as different types of storage and how a distributed infrastructure can make your data more resilient.
 abstract: |
@@ -49,7 +49,6 @@ units:
 - learn.wwl.describe-azure-storage-services.accounts
 - learn.wwl.describe-azure-storage-services.redundancy
 - learn.wwl.describe-azure-storage-services.describe-azure-storage-services
-- learn.wwl.describe-azure-storage-services.exercise-create-storage-blob
 - learn.wwl.describe-azure-storage-services.identify-azure-data-migration-options
 - learn.wwl.describe-azure-storage-services.identify-azure-file-movement-options
 - learn.wwl.describe-azure-storage-services.knowledge-check
