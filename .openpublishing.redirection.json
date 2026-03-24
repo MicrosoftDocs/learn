@@ -38641,6 +38641,16 @@
       "redirect_url": "/training/",
       "redirect_document_id": false
     },
+     {
+      "source_path": "learn-pr/wwl-azure/describe-cost-management-azure/4-exercise-estimate-workload-costs-use-pricing-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/5-exercise-configure-resource-lock.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance/",
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/4-when-to-use-aks-edge-essentials.yml",
       "redirect_url": "/training/",
