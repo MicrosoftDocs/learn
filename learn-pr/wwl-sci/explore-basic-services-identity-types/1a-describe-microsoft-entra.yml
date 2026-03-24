@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-microsoft-entra
+title: Describe Microsoft Entra
+metadata:
+  title: Describe Microsoft Entra
+  description: "Describe Microsoft Entra"
+  ms.date: 03/23/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1a-describe-microsoft-entra.md)]

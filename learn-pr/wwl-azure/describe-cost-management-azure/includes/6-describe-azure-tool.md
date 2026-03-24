@@ -1,15 +1,16 @@
-Microsoft Azure is a global cloud provider, meaning you can provision resources anywhere in the world. You can provision resources rapidly to meet a sudden demand, or to test out a new feature, or on accident. If you accidentally provision new resources, you may not be aware of them until it’s time for your invoice. Cost Management is a service that helps avoid those situations.
+Microsoft Azure is a global cloud provider, meaning you can provision resources anywhere in the world. You can provision resources rapidly to meet a sudden demand, to test out a new feature, or accidentally. If you accidentally provision new resources, you may not be aware of them until it’s time for your invoice. Cost Management is a service that helps avoid those situations.
 
 ## What is Cost Management?
 
 Cost Management provides the ability to quickly check Azure resource costs, create alerts based on resource spend, and create budgets that can be used to automate management of resources.
 
-Cost analysis is a subset of Cost Management that provides a quick visual for your Azure costs. Using cost analysis, you can quickly view the total cost in a variety of different ways, including by billing cycle, region, resource, and so on.
+:::image type="content" source="../media/cost-management-overview.png" alt-text="Diagram showing the three pillars of Cost Management: cost analysis, cost alerts, and budgets.":::
 
-:::image type="content" source="../media/cost-analysis-b52dedab.png" alt-text="Screenshot of initial view of cost analysis in the Azure portal.":::
+Cost analysis is a feature within Cost Management that provides a quick visual for your Azure costs. Using cost analysis, you can quickly view the total cost in a variety of different ways, including by billing cycle, region, resource, and so on.
 
+You use cost analysis to explore and analyze your cloud costs. You can view aggregated costs by subscription, resource group, or service to understand where costs accrue and identify spending trends. You can also see accumulated costs over time to estimate monthly, quarterly, or yearly cost trends against a budget.
 
-You use cost analysis to explore and analyze your organizational costs. You can view aggregated costs by organization to understand where costs are accrued and to identify spending trends. And you can see accumulated costs over time to estimate monthly, quarterly, or even yearly cost trends against a budget.
+Common tasks with Cost Management include spotting a sudden spend increase after a deployment, identifying idle resources in nonproduction subscriptions, and validating whether tagging and budgets are working as expected.
 
 ## Cost alerts
 
@@ -21,9 +22,11 @@ Cost alerts provide a single location to quickly check on all of the different a
 
 ### Budget alerts
 
-Budget alerts notify you when spending, based on usage or cost, reaches or exceeds the amount defined in the alert condition of the budget. Cost Management budgets are created using the Azure portal or the Azure Consumption API.
+Budget alerts notify you when spending reaches or exceeds a threshold you define. You can create budgets in the Azure portal or through the Azure Consumption API.
 
-In the Azure portal, budgets are defined by cost. Budgets are defined by cost or by consumption usage when using the Azure Consumption API. Budget alerts support both cost-based and usage-based budgets. Budget alerts are generated automatically whenever the budget alert conditions are met. You can view all cost alerts in the Azure portal. Whenever an alert is generated, it appears in cost alerts. An alert email is also sent to the people in the alert recipients list of the budget.
+In the Azure portal, budgets are defined by cost. If you use the Azure Consumption API, you can also define budgets by consumption usage. Budget alerts are generated automatically whenever the budget alert conditions are met. You can view all cost alerts in the Azure portal. Whenever an alert is generated, it appears in cost alerts, and an alert email is also sent to the people in the alert recipients list of the budget.
+
+For example, you might set an alert at 80% of a monthly dev/test budget so your team can investigate and right-size resources before costs exceed target.
 
 ### Credit alerts
 
@@ -31,10 +34,11 @@ Credit alerts notify you when your Azure credit monetary commitments are consume
 
 ### Department spending quota alerts
 
-Department spending quota alerts notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the EA portal. Whenever a threshold is met, it generates an email to department owners, and appears in cost alerts. For example, 50 percent or 75 percent of the quota.
+Department spending quota alerts are specific to Enterprise Agreement customers. They notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the EA portal. Whenever a threshold is met, it generates an email to department owners, and appears in cost alerts. For example, 50 percent or 75 percent of the quota.
 
 ## Budgets
 
 A budget is where you set a spending limit for Azure. You can set budgets based on a subscription, resource group, service type, or other criteria. When you set a budget, you will also set a budget alert. When the budget hits the budget alert level, it will trigger a budget alert that shows up in the cost alerts area. If configured, budget alerts will also send an email notification that a budget alert threshold has been triggered.
 
-A more advanced use of budgets enables budget conditions to trigger automation that suspends or otherwise modifies resources once the trigger condition has occurred.
+You can also configure budgets to trigger automation that suspends or modifies resources when a spending threshold is reached. For instance, you can automate shutdown of nonproduction resources when a budget threshold is reached.
+
