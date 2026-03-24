@@ -19,4 +19,4 @@ with open("image.png", "wb") as image_file:
 
 The result is a binary stream containing the requested image:
 
-![A picture of a robot eating a cheeseburger.](../media/robot-eating-cheeseburger.png)
+![An illustration of a robot eating a cheeseburger.](../media/robot-eating-cheeseburger.png)
