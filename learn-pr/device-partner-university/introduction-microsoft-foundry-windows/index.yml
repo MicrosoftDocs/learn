@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-microsoft-foundry-windows
+title: Introduction to Microsoft Foundry on Windows
+metadata:
+  title: Introduction To Microsoft Foundry On Windows
+  description: Learn how Microsoft Foundry on Windows enables developers to build, run, and deploy AI-powered applications locally on Windows devices while supporting hybrid cloud scenarios.
+  ms.date: 03/24/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-intro-to-product
+  ms.service: azure-local
+summary: >
+  Learn how Microsoft Foundry on Windows enables developers to build, run, and deploy AI-powered applications locally on Windows devices while supporting hybrid cloud scenarios.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - azure-local
+units:
+  - learn.dpu.introduction-microsoft-foundry-windows.introduction
+  - learn.dpu.introduction-microsoft-foundry-windows.shift-toward-local-hybrid-ai
+  - learn.dpu.introduction-microsoft-foundry-windows.what-is-microsoft-foundry-windows
+  - learn.dpu.introduction-microsoft-foundry-windows.how-microsoft-foundry-windows-works
+  - learn.dpu.introduction-microsoft-foundry-windows.when-use-microsoft-foundry-windows
+  - learn.dpu.introduction-microsoft-foundry-windows.knowledge-check
+  - learn.dpu.introduction-microsoft-foundry-windows.summary
+badge:
+  uid: learn.dpu.introduction-microsoft-foundry-windows.badge

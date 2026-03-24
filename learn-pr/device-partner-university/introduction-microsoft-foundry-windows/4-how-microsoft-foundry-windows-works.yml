@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-microsoft-foundry-windows.how-microsoft-foundry-windows-works
+title: How Microsoft foundry Windows works
+metadata:
+  title: How Microsoft Foundry Windows Works
+  description: This content is part of the "Introduction to Microsoft Foundry on Windows" module.
+  ms.date: 03/24/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-how-microsoft-foundry-windows-works.md)]
