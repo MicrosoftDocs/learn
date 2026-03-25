@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-microsoft-foundry-windows.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Foundry on Windows" module.
+  ms.date: 03/24/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Microsoft Foundry on Windows?"
+    choices:
+        - content: "To train large-scale AI models exclusively in the cloud"
+          isCorrect: false
+          explanation: "Incorrect. The content states that large-scale model training typically remains a cloud-based workload and is not the primary focus of Microsoft Foundry on Windows."
+        - content: "To provide a unified platform for building AI-powered applications that run locally on Windows and support hybrid scenarios"
+          isCorrect: true
+          explanation: "Correct. The module defines Microsoft Foundry on Windows as a unified AI development platform for local and hybrid AI applications."
+        - content: "To replace Windows operating system AI features"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Foundry on Windows builds on and integrates existing Windows AI capabilities rather than replacing them."
+        - content: "To manage hardware drivers for CPUs, GPUs, and NPUs"
+          isCorrect: false
+          explanation: "Incorrect. While the platform abstracts hardware usage, its purpose is AI development, not hardware driver management."
+  - content: "Which scenario best illustrates a key advantage of running AI workloads locally on a Windows device?"
+    choices:
+        - content: "Training very large models using massive distributed datasets"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that large-scale model training is typically handled in the cloud."
+        - content: "Processing sensitive data without sending it to cloud services"
+          isCorrect: true
+          explanation: "Correct. Local AI execution allows sensitive data to remain on the device, supporting privacy and regulatory requirements."
+        - content: "Scaling AI workloads to unlimited compute capacity"
+          isCorrect: false
+          explanation: "Incorrect. Unlimited scalability is described as a strength of cloud AI, not local execution."
+        - content: "Replacing all cloud-based analytics systems"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes that local AI works alongside cloud AI rather than replacing it."
+  - content: "What role does Windows ML play in Microsoft Foundry on Windows?"
+    choices:
+        - content: "Providing built-in task-based AI features such as OCR and text summarization"
+          isCorrect: false
+          explanation: "Incorrect. This describes the role of Windows AI APIs, not Windows ML."
+        - content: "Enabling local execution of curated open-source models"
+          isCorrect: false
+          explanation: "Incorrect. This is the primary role of Foundry Local."
+        - content: "Serving as a runtime for running custom AI models across diverse Windows hardware"
+          isCorrect: true
+          explanation: "Correct. Windows ML provides a runtime that abstracts hardware differences and supports CPUs, GPUs, and NPUs."
+        - content: "Managing network connectivity for hybrid AI applications"
+          isCorrect: false
+          explanation: "Incorrect. Network connectivity is not described as a function of Windows ML."
+  - content: "Which processors can Windows automatically use to run AI workloads based on device capabilities?"
+    choices:
+        - content: "Only CPUs"
+          isCorrect: false
+          explanation: "Incorrect. While CPUs are supported, the module explains that GPUs and NPUs are also used when available."
+        - content: "Only GPUs and NPUs"
+          isCorrect: false
+          explanation: "Incorrect. CPUs are included as part of the supported hardware for AI workloads."
+        - content: "CPUs, GPUs, and NPUs"
+          isCorrect: true
+          explanation: "Correct. Windows automatically selects from CPUs, GPUs, and NPUs based on the device configuration and workload."
+        - content: "Dedicated cloud accelerators"
+          isCorrect: false
+          explanation: "Incorrect. The content focuses on on-device hardware rather than cloud-specific accelerators."
