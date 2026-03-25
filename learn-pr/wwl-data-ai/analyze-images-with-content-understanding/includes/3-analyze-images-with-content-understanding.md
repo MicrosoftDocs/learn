@@ -97,7 +97,7 @@ try:
 
     # Display results
     result_str = json.dumps(result.as_dict(), indent=2)
-    ret_lines = result_str.splitlines()
+    print (result_str)
 
 except Exception as ex:
     print(f"[Unexpected Error]: {ex}")
