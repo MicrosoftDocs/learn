@@ -19,7 +19,7 @@ Running models on the device can also support data handling requirements. When i
 
 The following example illustrates how developers can explore local AI capabilities by using developer tools before integrating them into an application. In this scenario, a developer uses AI Dev Gallery to try Windows AI APIs locally, evaluating features such as text generation or text recognition without relying on cloud-based inference.
 
-:::image type="content"source="../media/ai-dev-gallery-local-inference-demo.gif" alt-text="Example showing AI Dev Gallery interface showing a developer exploring Windows AI APIs locally on a Windows device,with sample inputs and outputs displayed in a development environment." lightbox="../media/ai-dev-gallery-local-inference-demo.gif":::
+:::image type="content"source="../media/ai-dev-gallery-local-inference-demo.gif" alt-text="Animation showing AI Dev Gallery interface showing a developer exploring Windows AI APIs locally on a Windows device,with sample inputs and outputs displayed in a development environment." lightbox="../media/ai-dev-gallery-local-inference-demo.gif":::
 
 Common scenarios where local AI may be appropriate include:
 
