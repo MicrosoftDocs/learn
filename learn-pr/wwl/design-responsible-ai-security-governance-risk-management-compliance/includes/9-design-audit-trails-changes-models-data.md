@@ -1,12 +1,10 @@
-## Overview
-
 Audit trails are essential for maintaining trust, compliance, and operational integrity across AI-driven systems. Solution architects must design mechanisms that provide full visibility into _who_ made changes, _what_ changes occurred, and _when_ modifications happened across models, data sources, prompts, configuration objects, and agent workflows.
 
 This unit provides patterns for building robust auditing capabilities across Azure AI Foundry, model lifecycles, and data governance processes.
 
 ## Purpose of audit trails in AI systems
 
-### Audit trails help organizations
+Audit trails help organizations:
 
 - Track changes to model versions, parameters, training datasets, and evaluation results.
 
@@ -18,11 +16,11 @@ This unit provides patterns for building robust auditing capabilities across Azu
 
 - Strengthen operational governance by enabling approvals, rollbacks, and lifecycle controls.
 
-- A well-designed audit system is continuous, immutable, and integrated into the AI platform's control plane.
+A well-designed audit system is continuous, immutable, and integrated into the AI platform's control plane.
 
 ## Audit trail requirements for model changes
 
-### Model lifecycle events that must be audited
+Model lifecycle events that must be audited include:
 
 - Registration of new model versions
 
@@ -36,7 +34,7 @@ This unit provides patterns for building robust auditing capabilities across Azu
 
 - Access attempts to model assets, including unauthorized requests
 
-### Recommended architectural attributes
+Recommended architectural attributes include:
 
 - Immutable logs
 
@@ -52,7 +50,7 @@ This unit provides patterns for building robust auditing capabilities across Azu
 
 Grounding data, training data, memory stores, semantic indexes, and application logs are core inputs into generative systems. 
 
-### You must audit
+You must audit:
 
 - Data ingestion events
 
@@ -68,15 +66,15 @@ Grounding data, training data, memory stores, semantic indexes, and application 
 
 - Access attempts and approvals
 
-- Architects must ensure logs capture _metadata_, not _content_, to avoid unnecessary exposure of sensitive information.
+Architects must ensure logs capture _metadata_, not _content_, to avoid unnecessary exposure of sensitive information.
 
 ## Azure AI Foundry control-plane auditing
 
 Azure AI Foundry provides a centralized control plane for model registration, environment configuration, agent deployment, and diagnostic logging.
 
-### Key audit features include
+Key audit features include:
 
-#### Foundry activity logs
+Foundry activity logs:
 
 Track administrative actions across workspaces, registries, and deployments. Logs support export to:
 
@@ -84,9 +82,9 @@ Track administrative actions across workspaces, registries, and deployments. Log
 
 - Log Analytics
 
-- SIEM tools (such as Sentinel)
+- SIEM tools (such as Microsoft Sentinel)
 
-#### Foundry diagnostics and tracing
+Foundry diagnostics and tracing:
 
 Diagnostics provide traceability of execution across:
 
@@ -112,7 +110,7 @@ Tracing allows architects to follow execution paths and debug generative AI beha
 
 - Detection of unusual patterns (loops, excessive token spikes, cascading failures)
 
-### Recommended tracing fields
+Recommended tracing fields include:
 
 - Correlation ID
 
@@ -130,7 +128,7 @@ Tracing allows architects to follow execution paths and debug generative AI beha
 
 ## Designing audit-ready processes
 
-### Governance workflows to include
+Governance workflows to include:
 
 - **Approval workflows** for promoting new model versions
 
@@ -150,7 +148,7 @@ Define retention requirements with Legal, Compliance, and Information Security t
 
 - 12-24 months for regulated workloads
 
-- Indefinite retention for incidentrelated archives
+- Indefinite retention for incident-related archives
 
 ## References
 

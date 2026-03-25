@@ -1,10 +1,8 @@
-## Overview
-
 Responsible AI (RAI) is a foundational requirement for every solution architect designing or assessing AI systems. Reviewing a solution for adherence to Responsible AI principles ensures that systems remain safe, secure, compliant, transparent, and aligned with organizational and regulatory expectations. This unit equips solution architects with a structured, repeatable method to evaluate solutions across governance, risk, design, deployment, and ongoing operations.
 
 ## Learning objectives
 
-- After completing this unit, learners will be able to:
+After completing this unit, learners will be able to:
 
 - Evaluate an AI solution against Microsoft Responsible AI principles.
 
@@ -18,17 +16,17 @@ Responsible AI (RAI) is a foundational requirement for every solution architect 
 
 Microsoft defines six core Responsible AI principles that guide design and governance decisions:
 
-1. **Fairness:** AI systems should treat all groups equitably.
+- **Fairness:** AI systems should treat all groups equitably.
 
-1. **Reliability and Safety:** Systems must function as intended and prevent harm.
+- **Reliability and Safety:** Systems must function as intended and prevent harm.
 
-1. **Privacy and Security:** Protect personal and organizational data through strong controls.
+- **Privacy and Security:** Protect personal and organizational data through strong controls.
 
-1. **Inclusiveness:** AI should empower people of all abilities and backgrounds.
+- **Inclusiveness:** AI should empower people of all abilities and backgrounds.
 
-1. **Transparency:** Solutions should be understandable, with clear disclosures on how AI is used.
+- **Transparency:** Solutions should be understandable, with clear disclosures on how AI is used.
 
-1. **Accountability:** Organizations retain responsibility for decisions made by AI.
+- **Accountability:** Organizations retain responsibility for decisions made by AI.
 
 These principles serve as the lens through which a solution architect evaluates models, agents, workflows, integrations, and user experiences.
 
@@ -102,7 +100,7 @@ The following review model ensures consistency and objectivity when assessing an
 
 ### Responsible AI validation tools
 
-#### Solution architects can leverage Microsoft's RAI toolset to validate solution performance
+#### Solution architects can leverage Microsoft's Responsible AI toolset to validate solution performance
 
 - RAI validation checks for declarative agents
 
@@ -110,7 +108,7 @@ The following review model ensures consistency and objectivity when assessing an
 
 - Practices for documenting model lineage, data provenance, and decisions
 
-- Governance processes for review, approval, and signoff
+- Governance processes for review, approval, and sign-off
 
 ### Operational oversight and governance
 
@@ -126,16 +124,16 @@ Responsible AI is not a one-time review—it requires continuous monitoring.
 
 - Sunset criteria for models no longer meeting safety or compliance requirements
 
-:::image type="content" source="../media/responsible-ai-lifecycle.png" alt-text="Responsible AI lifecycle flow.":::
+:::image type="content" source="../media/responsible-ai-lifecycle.png" alt-text="Diagram that shows the Responsible AI lifecycle flow.":::
 
 ## References
 
-- [Microsoft AI principles and approach](https://www.microsoft.com/en-us/ai/principles-and-approach)
+- [Microsoft AI principles and approach](https://www.microsoft.com/ai/principles-and-approach)
 
 - [Responsible AI overview for Microsoft Security Copilot](/copilot/security/responsible-ai-overview-security-copilot)
 
 - [Responsible AI overview for Dynamics 365](/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview)
 
-- [Microsoft AI tools and practices](https://www.microsoft.com/en-us/ai/tools-practices)
+- [Microsoft AI tools and practices](https://www.microsoft.com/ai/tools-practices)
 
 - [Responsible AI validation for Microsoft 365 Copilot extensibility](/microsoft-365-copilot/extensibility/rai-validation)

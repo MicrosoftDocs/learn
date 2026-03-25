@@ -1,12 +1,10 @@
-## Overview
-
 Validating data residency and movement compliance is a critical responsibility for solution architects designing AI-powered solutions across Microsoft 365, Dynamics 365, and Copilot Studio. Keeping data within approved geographic boundaries ensures that solutions follow regulatory, contractual, and organizational requirements. This unit explains how to evaluate data residency posture, control data movement, and apply data governance policies that align with cloud compliance expectations.
 
 Solution architects must know where data is stored, how it moves across services, and which components participate in inference, logging, processing, or retention. This includes understanding the behavior of generative AI features, how Copilot Studio handles data, and how Microsoft Purview enforces data-handling compliance.
 
 ## Learning objectives
 
-- After completing this unit, learners will be able to:
+After completing this unit, learners will be able to:
 
 - Identify required data residency and sovereignty requirements for AI workloads.
 
@@ -32,7 +30,7 @@ Data residency defines the physical or geographic location where customer data i
 
 - Whether data used by generative AI stays within the designated region.
 
-- How multi-tenant cloud services distribute workloads.
+- How multitenant cloud services distribute workloads.
 
 ### Copilot Studio data residency behavior
 

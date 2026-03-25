@@ -1,5 +1,3 @@
-## Overview
-
 Design a defense in depth approach for autonomous and semi-autonomous agents that operate across Microsoft clouds. You'll translate business and compliance requirements into identity, access, data protection, observability, and threat protection controls. You'll also define how agents authenticate, what they can do, what they can see, and how their behavior is monitored and governed at scale.
 
 ### By the end of this unit, solution architects will be able to
@@ -164,7 +162,7 @@ Design a defense in depth approach for autonomous and semi-autonomous agents tha
 
 - Use environment routing to separate dev/test/prod.
 
-- Require peer review and approver signoff to publish; block publishing if mandatory checks fail.
+- Require peer review and approver sign-off to publish; block publishing if mandatory checks fail.
 
 **Prepare incident response**
 
@@ -212,7 +210,7 @@ Design a defense in depth approach for autonomous and semi-autonomous agents tha
 
 5. Outline the incident response plan for a data leakage event.
 
-**Deliverable:** A onepage architecture decision record (ADR) plus the RBAC matrix.
+**Deliverable:** A one-page architecture decision record (ADR) plus the RBAC matrix.
 
 ## References
 

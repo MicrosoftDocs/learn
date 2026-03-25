@@ -1,5 +1,3 @@
-## Overview
-
 Securing AI models is a core responsibility for solution architects who design, deploy, and operate enterprise-grade AI systems. Model security ensures that every model—whether used in Foundry, Azure AI, or integrated within an agent pipeline—remains protected from threats such as unauthorized access, data leakage, adversarial inputs, and compromised identities.
 
 This unit provides a structured approach to designing model-level security using identity governance, workload hardening, threat protection, access control, and continuous monitoring. Solution architects will learn how to apply security guardrails that span development, deployment, and operations.

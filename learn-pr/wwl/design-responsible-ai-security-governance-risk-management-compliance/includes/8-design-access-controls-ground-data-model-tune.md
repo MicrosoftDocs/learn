@@ -1,5 +1,3 @@
-## Overview
-
 Designing access controls for grounding data and model-tuning workflows is a critical responsibility for solution architects. AI systems depend on trustworthy, policy-aligned grounding data and secure tuning processes to ensure predictable, compliant, and responsible outputs. Effective controls protect sensitive assets, enforce the principle of least privilege, and ensure AI behaviors remain aligned with organizational, legal, and ethical requirements.
 
 This unit provides a structured approach for evaluating and designing access controls around data ingestion, grounding retrieval, model evaluations, and supervised fine-tuning workflows.
@@ -56,13 +54,13 @@ Guardrails protect both users and the system by preventing unsafe or non-complia
 
 - Blocklists for prohibited document types
 
-- Sanitization pipelines removing PII or contractual data
+- Sanitization pipelines removing personal data or contractual data
 
 - Automated reviews validating safety and policy alignment
 
 - Alerting and anomaly detection for unusual data access or tuning patterns
 
-:::image type="content" source="../media/guardrail-enforcement-model.png" alt-text="Guardrail Enforcement Model.":::
+
 
 ## Operational monitoring and compliance enforcement
 

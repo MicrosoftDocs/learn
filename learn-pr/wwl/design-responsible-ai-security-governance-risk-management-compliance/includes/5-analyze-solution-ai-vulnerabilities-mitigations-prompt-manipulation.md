@@ -1,12 +1,10 @@
-## Overview
-
 AI-powered solutions introduce unique vulnerabilities that differ from traditional application risks. Solution architects must be able to identify weak points across models, data flows, identity boundaries, and user interactions, especially those involving natural-language interfaces susceptible to prompt manipulation.
 
 This unit provides a structured framework for analyzing vulnerabilities in AI systems and defining effective mitigations. It equips architects with the skills to evaluate model behavior, detect abnormal agent activity, assess identity and RBAC exposure, and build end-to-end protections that reduce operational and security risks.
 
 ## Learning objectives
 
-- After completing this unit, learners will be able to:
+After completing this unit, learners will be able to:
 
 - Identify common AI-specific vulnerabilities, including prompt manipulation, data leakage, and insecure model behaviors.
 
@@ -22,7 +20,7 @@ This unit provides a structured framework for analyzing vulnerabilities in AI sy
 
 ### Prompt manipulation risks
 
-- Prompt manipulation occurs when a user intentionally or unintentionally attempts to steer an AI model away from intended safe behaviors. Common techniques include:
+Prompt manipulation occurs when a user intentionally or unintentionally attempts to steer an AI model away from intended safe behaviors. Common techniques include:
 
 - Overriding system instructions ("ignore previous instructions…").
 
@@ -82,7 +80,7 @@ Models may respond unpredictably when encountering ambiguous, adversarial, or se
 
 - Input files contain embedded malicious instructions.
 
-**Best practice:** Architect solutions using _data minimization_, _RBAC boundaries_, and _intentbased access_ aligned with user roles.
+**Best practice:** Architect solutions using _data minimization_, _RBAC boundaries_, and _intent-based access_ aligned with user roles.
 
 ### Identity, access, and RBAC gaps
 
@@ -114,7 +112,7 @@ Models may respond unpredictably when encountering ambiguous, adversarial, or se
 
 - Poor auditing and lack of rollback capability.
 
-- Unsecured flows calling third-party endpoints.
+- Unsecured flows calling non-Microsoft endpoints.
 
 #### Architects must ensure
 
