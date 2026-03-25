@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-with-ai-in-azure
 metadata:
   title: Get started with AI in Azure
   description: "This module introduces Azure and its capabilities for building AI solutions. Explore the key features and benefits of using Microsoft Foundry for AI development."
-  ms.date: 02/03/2026
+  ms.date: 03/24/2026
   author: sherzyang
   ms.author: sheryang
   ms.topic: module-concept
@@ -22,7 +22,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-ai-foundry
+- microsoft-foundry
 units:
 - learn.wwl.get-started-with-ai-in-azure.introduction
 - learn.wwl.get-started-with-ai-in-azure.what-is-azure

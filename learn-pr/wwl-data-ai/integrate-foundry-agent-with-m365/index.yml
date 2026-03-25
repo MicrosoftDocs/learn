@@ -29,8 +29,8 @@ roles:
   - developer
   - solution-architect
 products:
-  - azure-ai-foundry
-  - azure-ai-foundry-agent-service
+  - microsoft-foundry
+  - foundry-agent-service
   - microsoft-365-copilot
 subjects:
   - artificial-intelligence

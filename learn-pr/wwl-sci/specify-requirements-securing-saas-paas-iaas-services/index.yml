@@ -3,7 +3,7 @@ uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 metadata:
   title: Specify Requirements for Securing SaaS, PaaS, and IaaS Services
   description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads, containers, and AI workloads."
-  ms.date: 02/06/2026
+  ms.date: 03/12/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -19,6 +19,7 @@ abstract: |
     - Specify security requirements for web workloads
     - Specify security requirements for containers and container orchestration
     - Specify security requirements for AI workloads
+    - Evaluate security for Microsoft Foundry workloads
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
@@ -33,8 +34,7 @@ products:
 - defender-for-cloud
 - defender-for-cloud-apps
 - defender-identity
-- microsoft-sentinel
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
   - security
   - cloud-security
@@ -45,6 +45,7 @@ units:
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-web-workloads
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.specify-security-requirements-containers-container-orchestration
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.evaluate-ai-services-security
+- learn.wwl.specify-requirements-secure-saas-paas-iaas-services.evaluate-foundry-platform-security
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.knowledge-check
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services.summary
 badge:

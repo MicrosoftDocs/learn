@@ -2,8 +2,8 @@
 uid: learn.wwl.get-started-computer-vision
 hidden: true
 metadata:
-  title: (AI-900) Get started with computer vision in Microsoft Foundry
-  description: Azure Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios. Learn how to use the Azure Vision service to analyze images.
+  title: (AI-900) Get started with computer vision in Microsoft Foundry (deprecated)
+  description: "Get started with computer vision in Microsoft Foundry."
   author: wwlpublish
   ms.author: sheryang
   ms.date: 08/28/2025
@@ -12,8 +12,8 @@ metadata:
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
-title: (AI-900) Get started with computer vision in Microsoft Foundry
-summary: Azure Vision service enables software engineers to create intelligent solutions that extract information from images; a common task in many artificial intelligence (AI) scenarios.
+title: (AI-900) Get started with computer vision in Microsoft Foundry (deprecated)
+summary: This module is deprecated, as is the associated Microsoft course [AI-900 (Introduction to AI in Azure)](/training/courses/ai-900t00). This course has been replaced with a new, updated course, [AI-901 (Introduction to AI in Azure)](/training/courses/ai-901t00). The new course provides a more comprehensive and up-to-date introduction to AI concepts and Azure-based AI solutions.
 abstract: Learn how to use the Azure Vision service to analyze images.
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/read-text-computer-vision.svg
@@ -26,8 +26,8 @@ roles:
   - solution-architect
   - student
 products:
-  - ai-services
-  - azure-ai-foundry
+  - foundry-tools
+  - microsoft-foundry
 subjects:
   - classification-analysis
 units:

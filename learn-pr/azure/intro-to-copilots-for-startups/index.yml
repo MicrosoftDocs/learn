@@ -31,7 +31,7 @@ roles:
   - startup-founder
 products:
   - azure-bot-service  
-  - ai-services  
+  - foundry-tools  
   - azure-machine-learning
 units:
   - learn.azure.intro-build-copilots-for-startups.introduction
@@ -43,4 +43,3 @@ units:
   - learn.azure.intro-build-copilots-for-startups.summary
 badge:
   uid: learn.azure.intro-build-copilots-for-startups.badge
-

@@ -33,7 +33,7 @@ prerequisites: |
   -   Knowledge of Azure container services, including Azure Container Registry and Azure Container Apps, would be beneficial.
 
   -   Understanding of networking concepts and Azure Virtual Networks.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-container-apps-module.svg
 levels:
 - intermediate
 roles:

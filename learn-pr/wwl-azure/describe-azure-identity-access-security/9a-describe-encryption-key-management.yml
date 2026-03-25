@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-identity-access-security.describe-encryption-key-management
+title: Describe encryption and key management in Azure
+metadata:
+  title: Describe encryption and key management in Azure
+  description: "Describe encryption and key management in Azure"
+  ms.date: 03/06/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/9a-describe-encryption-key-management.md)]

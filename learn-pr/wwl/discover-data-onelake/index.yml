@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.discover-data-onelake
+metadata:
+  title: Discover and Connect to Data in OneLake
+  description: "Browse and connect to data using Microsoft OneLake's unified storage. Discover data across workspaces with the OneLake catalog, create shortcuts to reference existing data, and explore streaming sources in Real-Time hub."
+  ms.date: 02/19/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Discover and connect to data in OneLake
+summary: "Browse and connect to data using Microsoft OneLake's unified storage. Discover data across workspaces with the OneLake catalog, create shortcuts to reference existing data, and explore streaming sources in Real-Time hub."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe OneLake architecture and capabilities
+    - Browse and connect to data using OneLake catalog
+    - Discover streaming data in Real-Time hub
+prerequisites: |
+  - Understanding of Microsoft Fabric platform and workloads
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+units:
+- learn.wwl.discover-data-onelake.introduction
+- learn.wwl.discover-data-onelake.understand-onelake
+- learn.wwl.discover-data-onelake.browse-connect-onelake
+- learn.wwl.discover-data-onelake.discover-streaming-data
+- learn.wwl.discover-data-onelake.exercise
+- learn.wwl.discover-data-onelake.knowledge-check
+- learn.wwl.discover-data-onelake.summary
+badge:
+  uid: learn.wwl.discover-data-onelake.badge

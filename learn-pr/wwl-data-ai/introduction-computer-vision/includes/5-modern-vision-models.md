@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=610f7e89-2441-4e57-adf8-5bda0d2157bb]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bf61d8cc-a6a9-42d9-8c52-d8d1e35eb090]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -11,7 +11,7 @@
 
 CNNs have been at the core of computer vision solutions for many years. While they're commonly used to solve image classification problems as described previously, they're also the basis for more complex computer vision models. For example, *object detection* models combine CNN feature extraction layers with the identification of *regions of interest* in images to locate multiple classes of object in the same image. Many advances in computer vision over the decades have been driven by improvements in CNN-based models.
 
-However, in another AI discipline - *natural language processing* (NLP), another type of neural network architecture, called a *transformer* has enabled the development of sophisticated models for language. 
+However, in another AI discipline - *natural language processing* (NLP), another type of neural network architecture, called a *transformer* has enabled the development of sophisticated models for language.
 
 ## Semantic modeling for language - Transformers
 
