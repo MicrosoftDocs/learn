@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Grant broad access so the agent can retrieve any data it may need in future tasks"
       isCorrect: false
-      explanation: "Incorrect. Granting broad access increases the risk of data breaches and does not align with the principles of defense-in-depth."
+      explanation: "Incorrect. Granting broad access increases the risk of data breaches and doesn't align with the principles of defense-in-depth."
     - content: "Use layered identity, access, data governance, monitoring, and threat protection controls"
       isCorrect: true
       explanation: "Correct. Defense-in-depth requires multiple layers of security—identity, RBAC, data governance, observability, threat protection, and controlled workflows. It prevents single-point failures and ensures agents remain predictable, safe, and aligned with organizational policies."
     - content: "Allow the agent to self-correct risky behaviors without human oversight"
       isCorrect: false
-      explanation: "Incorrect. Allowing agents to self-correct without oversight introduces risks and does not align with defense-in-depth principles."
+      explanation: "Incorrect. Allowing agents to self-correct without oversight introduces risks and doesn't align with defense-in-depth principles."
     - content: "Disable logging to reduce operational costs"
       isCorrect: false
       explanation: "Incorrect. Disabling logging reduces visibility and monitoring, which are critical components of a defense-in-depth strategy."
@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "Allow unrestricted connector access to improve retrieval accuracy"
       isCorrect: false
-      explanation: "Incorrect. Unrestricted access increases the risk of exposing sensitive information and does not align with secure practices."
+      explanation: "Incorrect. Unrestricted access increases the risk of exposing sensitive information and doesn't align with secure practices."
     - content: "Rely solely on model instructions to avoid returning sensitive content"
       isCorrect: false
       explanation: "Incorrect. Relying solely on model instructions is insufficient to prevent sensitive information exposure."
     - content: "Apply DLP policies, sensitivity labels, and least-privilege boundaries across all data sources"
       isCorrect: true
-      explanation: "Correct. Combining DLP enforcement, sensitivity labeling, and least-privilege access ensures agents can only interact with allowed data and cannot inadvertently expose sensitive, regulated, or high-risk information through prompts, retrieval, or outputs."
+      explanation: "Correct. Combining DLP enforcement, sensitivity labeling, and least-privilege access ensures agents can only interact with allowed data and can't inadvertently expose sensitive, regulated, or high-risk information through prompts, retrieval, or outputs."
     - content: "Store sensitive data in agent prompts so it can reason more accurately"
       isCorrect: false
-      explanation: "Incorrect. Storing sensitive data in prompts increases the risk of exposure and is not a secure practice."
+      explanation: "Incorrect. Storing sensitive data in prompts increases the risk of exposure and isn't a secure practice."
