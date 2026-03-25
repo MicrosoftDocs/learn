@@ -4,10 +4,10 @@ title: Describe Microsoft Entra ID Governance
 metadata:
   title: Describe Microsoft Entra ID Governance
   description: "Describe Microsoft Entra ID Governance"
-  ms.date: 08/02/2024
+  ms.date: 03/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 7
 content: |
-  [!include[](includes/2-describe-identity-governance.md)]
+  [!include[](includes/2-describe-identity-governance.md)]
