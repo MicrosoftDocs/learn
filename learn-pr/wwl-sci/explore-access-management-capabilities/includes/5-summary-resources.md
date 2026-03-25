@@ -1,9 +1,9 @@
 
-In this module, you learned about Conditional Access and how it brings signals together, to make decisions, and enforce organizational policies.
+In this module, you learned about Conditional Access, Microsoft's Zero Trust policy engine that uses signals from identity, device, location, application, and risk to make access decisions and enforce organizational policies. You learned about authentication strengths, which allow administrators to require specific combinations of authentication methods for sensitive resources, and how Conditional Access policies can protect generative AI services.
 
-You learned about Global Secure Access, Microsoft's Security Service Edge solution that combines the identity controls you have with Conditional Access together with network controls to provide advanced protections for your internet-based resources and your private, corporate resources.
+You learned about Global Secure Access, Microsoft's Security Service Edge solution that combines Microsoft Entra Internet Access, Microsoft Entra Internet Access for Microsoft Services, and Microsoft Entra Private Access to provide identity-aware network security controls for internet, Microsoft 365, and private corporate resources.
 
-You also learned about built-in and custom roles in Microsoft Entra ID that provide role-based access control.
+You also learned about built-in and custom roles in Microsoft Entra ID that provide role-based access control, how roles are categorized, and the difference between Microsoft Entra RBAC and Azure RBAC.
 
 Now that you've completed this module, you're able to:
 
@@ -13,14 +13,25 @@ Now that you've completed this module, you're able to:
 
 ## Learn more
 
-For more information about the content covered in this module, see:
+Use the following resources to learn more about the topics covered in this module.
 
-- [Conditional Access](/azure/active-directory/conditional-access/overview)
-- [Security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
-- [Understand Azure Microsoft Entra role concepts](/azure/active-directory/roles/concept-understand-roles)
-- [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview)
+### Conditional Access
+
+- [What is Conditional Access?](/entra/identity/conditional-access/overview)
+- [Building a Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies)
+- [Conditional Access authentication strengths](/entra/identity/authentication/concept-authentication-strengths)
+- [Protect AI with Conditional Access policy](/entra/identity/conditional-access/policy-all-users-copilot-ai-security)
+- [Security defaults in Microsoft Entra ID](/entra/fundamentals/security-defaults)
+
+### Global Secure Access
+
 - [What is Global Secure Access?](/entra/global-secure-access/overview-what-is-global-secure-access)
-- [Learn about Microsoft Entra Internet Access for all apps](/entra/global-secure-access/concept-internet-access)
+- [Learn about Microsoft Entra Internet Access](/entra/global-secure-access/concept-internet-access)
+- [How to enable and manage the Microsoft traffic forwarding profile](/entra/global-secure-access/how-to-manage-microsoft-profile)
 - [Learn about Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
-- [Understand roles in Microsoft Entra ID](/azure/active-directory/roles/concept-understand-roles)
-- [Available roles](/azure/active-directory/roles/permissions-reference)
+
+### Microsoft Entra roles and RBAC
+
+- [Understand roles in Microsoft Entra ID](/entra/identity/role-based-access-control/concept-understand-roles)
+- [Overview of role-based access control in Microsoft Entra ID](/entra/identity/role-based-access-control/custom-overview)
+- [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference)
