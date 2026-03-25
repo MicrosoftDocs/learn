@@ -46,6 +46,7 @@ units:
 - learn.wwl.sql-server-data-virtualization.exercise-connect-azure-sql-database-use-polybase
 - learn.wwl.sql-server-data-virtualization.create-external-table-as-select
 - learn.wwl.sql-server-data-virtualization.exercise-create-external-table-as-select
+- learn.wwl.sql-server-data-virtualization.knowledge-check
 - learn.wwl.sql-server-data-virtualization.summary
 badge:
   uid: learn.wwl.sql-server-data-virtualization.badge
