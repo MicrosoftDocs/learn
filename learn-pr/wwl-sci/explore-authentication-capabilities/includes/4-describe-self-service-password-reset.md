@@ -1,32 +1,73 @@
+Self-service password reset (SSPR) is a feature of Microsoft Entra ID that allows users to change or reset their password, without administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow a prompt to reset it and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application. SSPR also includes robust audit logs available through an API, enabling data to be imported to a security information and event monitoring (SIEM) system.
 
-Self-service password reset (SSPR) is a feature of Microsoft Entra ID that allows users to change or reset their password, without administrator or help desk involvement.  SSPR has several key benefits for organizations and users:
-- SSPR reduces IT support costs by enabling users to reset passwords on their own.
-- SSPR allows users to get back to work faster and be more productive.
-- Administrators can change settings to accommodate new security requirements and roll these changes out to users without disrupting their sign-in.
-- SSPR includes robust audit logs that are available from an API, enabling data to be imported to a Security Incident and Event Monitoring (SIEM) system of choice.
+### How self-service password reset works
 
-If a user's account is locked or they forget or want to change their password, they can follow a prompt to reset it and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
+When a user accesses the SSPR portal, the Microsoft Entra platform performs several checks: it verifies the user's account is valid and SSPR is enabled, confirms the user registered the required authentication methods, and determines where the user's password is managed. If all checks pass, the user is guided through the process to reset or change their password.
 
-To use self-service password reset, users must be:
+To use SSPR, users must be:
 
-- Assigned a Microsoft Entra ID license. Refer to the Learn More section of the summary and resources unit for a link to the Licensing requirements for Microsoft Entra self-service password reset.
+- Assigned a Microsoft Entra ID license.
 - Enabled for SSPR by an administrator.
-- Registered, with the authentication methods they want to use. Two or more authentication methods are recommended in case one is unavailable.
+- Registered with the authentication methods they want to use. Two or more authentication methods are recommended in case one is unavailable.
 
-The following authentication methods are available for SSPR:
+SSPR capabilities vary by license tier. For details on licensing requirements, see [Microsoft Entra pricing](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
-- Mobile app notification
-- Mobile app code
-- Email
-- Mobile phone
-- Office phone
-- Security questions
+### Authentication methods for SSPR
 
-When users register for SSPR, they're prompted to choose the authentication methods to use. If they choose to use security questions, they pick from a set of questions to prompt for, and then provide their own answers. Security questions can only be used during the self-service password reset (SSPR) process to confirm who you are, as a secondary form of authentication. Security questions aren't used as an authentication method during a sign-in event. Administrator accounts can't use security questions as verification method with SSPR.
+When enabled for SSPR, users must register at least one authentication method. Choosing two or more methods is recommended so users have flexibility if one method becomes unavailable. The following authentication methods are available for SSPR:
+
+- Microsoft Authenticator push notifications
+- Software OATH tokens
+- Hardware OATH tokens (preview)
+- Short message service (SMS)
+- Voice call
+- Email OTP
+- Security questions (retiring March 2027)
+
+> [!IMPORTANT]
+> Security questions will be retired for SSPR in March 2027. After that date, users will no longer be able to reset passwords using security questions. Organizations should ensure users are set up with other supported authentication methods before enforcement begins.
+
+Administrators configure how many methods are required to reset or unlock a password—one or two. When Microsoft Authenticator is used as a method and only one method is required, only verification code is available. When two methods are required, users can use notification or verification code alongside other enabled methods.
 
 > [!NOTE]
-> By default, administrator accounts are enabled for self-service password reset and are required to use two authentication methods to reset their password, such as an email address, authenticator app, or a phone number. Administrators don't have the ability to use security questions.
+> By default, administrator accounts are enabled for SSPR and are required to use two authentication methods to reset their password through a strong two-gate policy. Administrators can't use security questions.
 
-When a user resets their password using self-service password reset, it can also be written back to an on-premises Active Directory. Password write-back allows users to use their updated credentials with on-premises devices and applications without a delay.
+### Registration and reconfirmation
 
-To keep users informed about account activity, admins can configure email notifications to be sent when an SSPR event happens. These notifications can cover both regular user accounts and admin accounts. For admin accounts, this notification provides an extra layer of awareness when a privileged administrator account password is reset using SSPR. All global admins would be notified when SSPR is used on an admin account.
+Administrators can require users to register for SSPR when they sign in to any application using modern authentication or a web browser, including Microsoft 365, the Microsoft Entra admin center, and federated or custom applications. Users who haven't registered are prompted at each sign-in until they complete registration.
+
+Administrators can also require users to reconfirm their authentication information after a set period (0 to 730 days), ensuring that registered methods remain current and available when needed.
+
+### Notifications
+
+SSPR can send email notifications to keep users and administrators informed about password events:
+
+- **Users** receive an email when their password is reset, sent to their primary and alternate email addresses stored in Microsoft Entra ID.
+- **Global administrators** receive an email when another administrator resets their password using SSPR, providing extra awareness for privileged account activity.
+
+### On-premises integration and password writeback
+
+In hybrid environments, Microsoft Entra Connect cloud sync can write password changes from Microsoft Entra ID back to an on-premises Active Directory. When password writeback is enabled, users who are federated, using pass-through authentication, or using password hash synchronization can reset their passwords and have the new password written back on-premises without delay.
+
+Administrators can also allow users to unlock their on-premises accounts without resetting their password, separating the unlock and reset operations for greater flexibility.
+
+If a non-Microsoft password filter is in use for on-premises Active Directory, it must be configured to apply during admin-initiated password reset scenarios to work correctly with SSPR. Microsoft Entra password protection for Active Directory Domain Services is supported by default.
+
+### Account recovery
+
+SSPR addresses scenarios where users forget their password but retain access to at least one registered authentication method. However, situations arise where users lose access to all their authentication methods—for example, when a device is lost and backup methods are unavailable. In these total lockout scenarios, SSPR isn't sufficient.
+
+Microsoft Entra ID account recovery addresses these critical scenarios by enabling users to regain access through a comprehensive identity verification process. Unlike SSPR, which relies on preregistered methods, account recovery focuses on re-establishing trust in the user's identity when all authentication methods are unavailable.
+
+The following table compares SSPR and account recovery:
+
+| Aspect | Self-service password reset | Account recovery |
+|---|---|---|
+| Primary use case | User forgot password but has access to registered methods | User lost access to all authentication methods |
+| Authentication requirement | At least one registered method | Identity verification through certified provider |
+| Recovery scope | Password only | Complete authentication method reset |
+| Security level | Relies on preregistered methods | Comprehensive identity proofing |
+
+Account recovery uses Microsoft Entra Verified ID with Face Check, powered by Azure AI services, to provide high-assurance identity verification without exposing sensitive personal data. By removing human judgment from the verification process, it eliminates the social engineering risks inherent in traditional helpdesk-led recovery. Organizations benefit from reduced helpdesk burden, improved user experience during lockout scenarios, and enhanced security posture—particularly for distributed workforces where physical presence for identity verification isn't practical. 
+
+Microsoft Entra Verified ID is covered in more detail in the module, [Describe the identity protection and governance capabilities of Microsoft Entra](/training/modules/describe-identity-protection-governance-capabilities/).
