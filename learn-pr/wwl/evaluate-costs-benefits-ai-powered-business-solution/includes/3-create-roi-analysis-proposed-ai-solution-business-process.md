@@ -1,6 +1,6 @@
 ### Overview
 
-Creating a rigorous ROI analysis is essential for evaluating whether an AI solution will deliver measurable business value. 
+Creating a rigorous ROI analysis is essential for evaluating whether an AI solution delivers measurable business value. 
 
 ### This unit equips solution architects to build a complete ROI analysis using:
 
@@ -20,13 +20,13 @@ Creating a rigorous ROI analysis is essential for evaluating whether an AI solut
 
 - **Define a defensible ROI scope** for an AI solution mapped to a single business process, with clear baselines and guardrails.
 
-- **Quantify time and cost savings** using an agentlevel savings model (perrun and pertool) and translate those savings into financial benefits that align to enterprise KPIs. 
+- **Quantify time and cost savings** using an agent-level savings model (perrun and pertool) and translate savings into financial benefits that align to enterprise KPIs. 
 
 - **Build a complete ROI model** that balances benefits against **total cost of ownership (TCO)** across infrastructure, development/integration, data quality, expertise, and ongoing operations. 
 
-- **Add evidence and ranges** using a simple sensitivity analysis informed by recent field research on knowledgeworker productivity with Copilotstyle tools. 
+- **Add evidence and ranges** using a simple sensitivity analysis informed by recent field research on knowledge worker productivity with Copilot style tools. 
 
-- **Package the analysis for executive review** with a oneslide summary and a clear pilottoscale recommendation.
+- **Package the analysis for executive review** with a one slide summary and a clear pilottoscale recommendation.
 
 ### 1. Frame the ROI scope (what, where, who)
 
@@ -34,7 +34,7 @@ Creating a rigorous ROI analysis is essential for evaluating whether an AI solut
 
 - **Name the process:** e.g., "Tier1 HR case triage," "Invoice exception handling," "Customer email response."
 
-- **Define boundaries:** inscope steps (A→B→C), handoffs, systems touched, and _what will not change_.
+- **Define boundaries:** inscope steps (A→B→C), handoffs, systems touched, and _what won't change_.
 
 - **Baseline period:** typical month or quarter representing steadystate operations.
 
@@ -62,7 +62,7 @@ Use the agent **Savings** capability to estimate and then track time or money sa
 
 - **Savings per tool** (granular estimate when an agent uses multiple tools with different impacts).
 
-Admins can disable moneybased savings; if so, keep tracking _time_ and convert to currency in your ROI workbook. Add or edit the Savings panel on the agent's **Analytics** page to keep the model current. 
+Admins can disable money based savings; if so, keep tracking _time_ and convert to currency in your ROI workbook. Add or edit the Savings panel on the agent's **Analytics** page to keep the model current. 
 
 #### Inputs you'll need
 
@@ -72,9 +72,9 @@ Admins can disable moneybased savings; if so, keep tracking _time_ and convert t
 
 - _Fully loaded labor rate_ (currency/hour) for the role(s) impacted.
 
-- _(Optional)_ Toolspecific time/cost deltas when using the pertool model.
+- _(Optional)_ Tool specific time/cost deltas when using the pertool model.
 
-**Text chart — Savings model (example)**
+**Savings model (example)**
 
 | **Parameter** | **Value** |
 |---|---|
@@ -99,23 +99,23 @@ The calculator stores these estimates and shows trends over time so you can adju
 
 - Show more lines
 
-**Evidence to calibrate your ranges.** Early field studies on Copilotstyle tools show measurable time reductions in common knowledgework (e.g., faster document creation and reduced time spent reading email). Use these as _directional_ anchors when setting optimistic/expected/conservative ranges—always validated against your baseline. 
+**Evidence to calibrate your ranges.** Early field studies on Copilotstyle tools show measurable time reductions in common knowledge work (e.g., faster document creation and reduced time spent reading email). Use these as _directional_ anchors when setting optimistic/expected/conservative ranges—always validated against your baseline. 
 
 ### 5. Model TCO (the five cost drivers)
 
 Build a transparent TCO view so your ROI is durable beyond the pilot:
 
-- **Infrastructure** — compute (CPU/GPU) for inference, storage, network/egress, resiliency/HA.
+- **Infrastructure**: compute (CPU/GPU) for inference, storage, network/egress, resiliency/HA.
 
-- **Development and integration** — agent design, orchestration, connectors/APIs, auth, compliance, testing.
+- **Development and integration**: agent design, orchestration, connectors/APIs, auth, compliance, testing.
 
-- **Data quality and preparation** — cleansing/labeling, grounding/indexing, refresh schedules, drift monitoring.
+- **Data quality and preparation**: cleansing/labeling, grounding/indexing, refresh schedules, drift monitoring.
 
-- **Expertise and staffing** — architects, AI/ML engineers, MLOps, SMEs, change management/training.
+- **Expertise and staffing**: architects, AI/ML engineers, MLOps, SMEs, change management/training.
 
-- **Operations and licensing** — monitoring/telemetry, evaluation/retuning, incident response, consumption or subscription fees. 
+- **Operations and licensing**: monitoring/telemetry, evaluation/retuning, incident response, consumption or subscription fees. 
 
-- **Text visual — TCO matrix**
+- **Text visual: TCO matrix**
 
 Infrastructure   | Compute, storage, network, HA
 
@@ -149,25 +149,25 @@ _Sensitivity bands_<br>Create **optimistic / expected / conservative** cases by 
 
 - Labor rates or mix of roles impacted.
 
-- Quality/rework effects (use errorrate deltas).
+- Quality/rework effects (use error rate deltas).
 
-**Why add ranges?** Stakeholders can see upside and risk. Use the researchanchored directional effects on knowledgework time as justification for your bands while keeping your _own telemetry_ in the driver's seat. 
+**Why add ranges?** Stakeholders can see upside and risk. Use the researchanchored directional effects on knowledge work time as justification for your bands while keeping your _own telemetry_ in the driver's seat. 
 
-### 7. Package the executive oneslide
+### 7. Package the executive one slide
 
-Use a concise summary that decisionmakers can act on:
+Use a concise summary that decision makers can act on:
 
-- **Problem and scope** — where the waste is today.
+- **Problem and scope**: where the waste is today.
 
-- **AI intervention** — what the agent automates/augments.
+- **AI intervention**: what the agent automates/augments.
 
-- **Measured impact** — minutes saved, resolved runs, quality lift (from Analytics). 
+- **Measured impact**: minutes saved, resolved runs, quality lift (from Analytics). 
 
-- **Financials** — annual benefit, TCO, ROI %, payback.
+- **Financials**: annual benefit, TCO, ROI %, payback.
 
-- **Confidence and risks** — sensitivity band and key assumptions.
+- **Confidence and risks**: sensitivity band and key assumptions.
 
-- **Decision** — "Pilot for 8 weeks with success criteria X; scale to Y units on pass."
+- **Decision**: "Pilot for 8 weeks with success criteria X; scale to Y units on pass."
 
 #### Worked example (illustrative)
 
