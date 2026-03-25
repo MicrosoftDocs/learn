@@ -26,8 +26,7 @@ levels:
 roles: 
   - ai-engineer
 products: 
-  - azure-ai-foundry
-  - azure-ai-foundry-sdk
+  - microsoft-foundry
 subjects: 
   - artificial-intelligence
 units:

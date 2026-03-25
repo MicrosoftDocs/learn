@@ -3,7 +3,7 @@ uid: learn.wwl.develop-generative-ai-apps
 metadata:
   title: Develop generative AI apps on Microsoft Foundry
   description: Learn how to develop generative AI apps in Microsoft Foundry. (AI-3016)
-  ms.date: 02/17/2026
+  ms.date: 03/19/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: learning-path
@@ -16,22 +16,22 @@ summary: |
   Generative artificial intelligence (AI) is becoming more accessible through comprehensive development platforms like Microsoft Foundry. Learn how to build generative AI applications that use language models to interact with your users.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- data-scientist
-- ai-engineer
+  - data-scientist
+  - ai-engineer
 products:
-- foundry-tools
-- microsoft-foundry
-- azure-ai-foundry-sdk
+  - foundry-tools
+  - microsoft-foundry
+  - azure-ai-foundry-sdk
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 modules:
-- learn.wwl.prepare-azure-ai-development
-- learn.wwl.model-catalog-evaluate
-- learn.wwl.foundry-sdk
-- learn.wwl.optimize-generative-ai-model-performance
-- learn.wwl.responsible-ai-studio
+  - learn.wwl.prepare-azure-ai-development
+  - learn.wwl.model-catalog-evaluate
+  - learn.wwl.foundry-sdk
+  - learn.wwl.generative-ai-tools
+  - learn.wwl.optimize-generative-ai-model-performance
+  - learn.wwl.responsible-ai-studio
 trophy:
   uid: learn.wwl.develop-generative-ai-apps.trophy
-

@@ -1,4 +1,4 @@
-In this module, you explored the complete workflow for selecting, deploying, and evaluating models from the Microsoft Foundry portal's model catalog. You learned how to make informed decisions about model selection using benchmarks, how to deploy models to endpoints, and how to assess their performance using various evaluation approaches.
+In this module, you explored the complete workflow for selecting, deploying, and evaluating Foundry Models. You learned how to make informed decisions about model selection using benchmarks, how to deploy models to endpoints, and how to assess their performance using various evaluation approaches.
 
 ## Key takeaways
 

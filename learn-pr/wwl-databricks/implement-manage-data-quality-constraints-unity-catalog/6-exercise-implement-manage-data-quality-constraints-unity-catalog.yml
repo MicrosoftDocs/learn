@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-data-quality-constraints-unity-catalog.exercise
+title: Exercise - Implement and Manage Data Quality Constraints with Azure Databricks
+metadata:
+  title: Exercise - Implement and Manage Data Quality Constraints with Azure Databricks
+  description: "Exercise - Implement and Manage Data Quality Constraints with Azure Databricks"
+  ms.date: 02/19/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-implement-manage-data-quality-constraints-unity-catalog.md)]

@@ -4,7 +4,7 @@ title: Describe factors that can affect costs in Azure
 metadata:
   title: Describe factors that can affect costs in Azure
   description: "Describe factors that can affect costs in Azure"
-  ms.date: 09/19/2024
+  ms.date: 03/22/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-describe-factors-affect-costs-azure.md)]
+  [!include[](includes/2-describe-factors-affect-costs-azure.md)]

@@ -10,7 +10,7 @@ import time
 # Create the video generation job
 video = client.videos.create(
     model="sora-2",
-    prompt="A cyclist pedals through a rainy city street at dusk, neon signs reflecting in puddles",
+    prompt="A robot walks through a rainy city street at dusk, neon signs reflecting in puddles",
     size="1280x720",
     seconds="4",
 )

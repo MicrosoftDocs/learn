@@ -4,9 +4,9 @@ Microsoft Foundry provides two SDKs for building AI applications. The Foundry SD
 
 In this module, you learned how to:
 
-- **Use the Foundry SDK** with `AIProjectClient` to access project configuration, connections, tracing, and datasets
-- **Use the OpenAI SDK** for model inference, chat completions, and the Responses API
-- **Generate responses** with the Responses API and manage conversations
+- **Use the Foundry SDK** with the Foundry project endpoint to access project configuration, connections, tracing, and datasets
+- **Use the OpenAI SDK** with the Foundry project and Azure OpenAI endpoints for model inferencing
+- **Generate responses** with the *Responses* and *ChatCompletions* APIs and manage conversations
 
 ## Next steps
 
