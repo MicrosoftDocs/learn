@@ -1,10 +1,10 @@
 ### Overview
 
-Modern AI applications often rely on multiple models—generalpurpose LLMs, small language models (SLMs), finetuned models, and taskspecific models. Azure AI Foundry's Model Router provides a unified endpoint that automatically selects the best model for each request based on routing rules, performance criteria, and business constraints.
+Modern AI applications often rely on multiple models—generalpurpose LLMs, small language models (SLMs), fine tuned models, and taskspecific models. Azure AI Foundry's Model Router provides a unified endpoint that automatically selects the best model for each request based on routing rules, performance criteria, and business constraints.
 
 This unit equips solution architects to design, configure, and operationalize a model router that optimizes cost, latency, accuracy, and reliability across AI workloads.
 
-#### By the end of this unit, learners will be able to:
+#### By the end of this unit, learners are able to:
 
 - Explain the purpose and value of a model router
 
@@ -30,7 +30,7 @@ Azure AI Foundry's model router provides:
 
 #### Intelligent Routing
 
-- Routes requests based on:
+- Route requests based on:
 
 - Task type
 
@@ -66,25 +66,25 @@ Model routing enables organizations to:
 
 #### Improve Performance
 
-- Route lowlatency tasks to faster models
+- Route low latency tasks to faster models
 
 - Use specialized models for domain-specific tasks
 
 #### Increase Reliability
 
-- Failover to backup models
+- Fail over to backup models
 
 - Automatically switch to newer model versions
 
 #### Support Hybrid AI Strategies
 
-- Combine foundation models, finetuned models, and custom models
+- Combine foundation models, fine tuned models, and custom models
 
 - Align with "build, buy, or both" AI transformation strategies
 
 ### Routing Criteria for Selecting the Most Suitable Model
 
-Azure AI Foundry supports rulebased and metadatabased routing. 
+Azure AI Foundry supports rule based and metadatabased routing. 
 
 **Key criteria include:**
 
@@ -104,7 +104,7 @@ Azure AI Foundry supports rulebased and metadatabased routing.
 
 - Simple → SLM
 
-- Moderate → Finetuned model
+- Moderate → fine tuned model
 
 - Complex → LLM
 
@@ -122,7 +122,7 @@ Examples:
 
 - "If task = classification → use SLM"
 
-- "If domain = finance → use finetuned model"
+- "If domain = finance → use fine tuned model"
 
 #### Weighted Routing
 
@@ -146,9 +146,9 @@ Examples:
 
 - Costoptimized
 
-- Performanceoptimized
+- Performance optimized
 
-- Accuracyoptimized
+- Accuracy optimized
 
 - Hybrid
 
@@ -156,13 +156,13 @@ Examples:
 
 - Foundation models
 
-- Finetuned models
+- Fine tuned models
 
 - Custom models
 
 **Step 3 — Configure Routing Rules**
 
-- Rulebased
+- Rule based
 
 - Weighted
 
