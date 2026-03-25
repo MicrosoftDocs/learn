@@ -16,7 +16,7 @@ AI-powered business solutions whether Copilot Studio agents, Microsoft 365 Copil
 
 - Identify ROI categories relevant to AI-powered business solutions
 
-- Evaluate TCO using Microsoft's AI agent coststructure model
+- Evaluate TCO using Microsoft's AI agent cost-structure model
 
 - Use Copilot Studio's ROI analytics to forecast and measure value
 
@@ -24,7 +24,7 @@ AI-powered business solutions whether Copilot Studio agents, Microsoft 365 Copil
 
 - Communicate ROI findings to business and finance stakeholders
 
-### 1. Why ROI Criteria Matter for AI Solutions
+### Why ROI Criteria Matter for AI Solutions
 
 #### AI adoption often fails when organizations:
 
@@ -46,11 +46,11 @@ AI-powered business solutions whether Copilot Studio agents, Microsoft 365 Copil
 
 - Grounded in real usage analytics
 
-### 2. Core ROI Categories for AI-Powered Solutions
+### Core ROI Categories for AI-Powered Solutions
 
 ROI spans **quantitative** and **qualitative** dimensions
 
-#### A. Productivity Gains
+#### Productivity Gains
 
 Examples:
 
@@ -70,7 +70,7 @@ Examples:
 
 - User adoption metrics
 
-#### B. Cost Savings
+#### Cost Savings
 
 ##### Examples:
 
@@ -90,7 +90,7 @@ Examples:
 
 - Aggregate savings over time
 
-#### C. Revenue Impact
+#### Revenue Impact
 
 ##### Examples:
 
@@ -102,7 +102,7 @@ Examples:
 
 - Upsell/crosssell recommendations
 
-#### D. Risk Reduction
+#### Risk Reduction
 
 ##### Examples:
 
@@ -114,7 +114,7 @@ Examples:
 
 - Lower operational risk
 
-#### E. Strategic & Innovation Value
+#### Strategic and Innovation Value
 
 ##### Examples:
 
@@ -124,11 +124,11 @@ Examples:
 
 - Competitive differentiation
 
-### 3. Total Cost of Ownership (TCO) for AI Solutions
+### Total Cost of Ownership (TCO) for AI Solutions
 
 Total cost of ownership (TCO) and return on investment (ROI) sit next to each other in every AI business case, but they answer **very different questions**. When you separate them clearly, your AI evaluations become sharper, more defensible, and far easier to communicate to leadership. TCO includes all costs across the AI lifecycle.
 
-#### A. Development Costs
+#### Development Costs
 
 - Data preparation
 
@@ -138,7 +138,7 @@ Total cost of ownership (TCO) and return on investment (ROI) sit next to each ot
 
 - Integration with business systems
 
-#### B. Deployment Costs
+#### Deployment Costs
 
 - Infrastructure provisioning
 
@@ -148,7 +148,7 @@ Total cost of ownership (TCO) and return on investment (ROI) sit next to each ot
 
 - API usage costs
 
-#### C. Operational Costs
+#### Operational Costs
 
 - Monitoring and evaluation
 
@@ -160,7 +160,7 @@ Total cost of ownership (TCO) and return on investment (ROI) sit next to each ot
 
 - User training and adoption programs
 
-#### D. Change Management Costs
+#### Change Management Costs
 
 - Skilling and enablement
 
@@ -168,17 +168,17 @@ Total cost of ownership (TCO) and return on investment (ROI) sit next to each ot
 
 - Business process redesign
 
-#### E. Decommissioning Costs
+#### Decommissioning Costs
 
 - Retiring outdated models
 
 - Migrating to new architectures
 
-### 4. Using Copilot Studio ROI Analytics
+### Using Copilot Studio ROI Analytics
 
 Copilot Studio's ROI analytics provides:
 
-#### A. Usage Metrics
+#### Usage Metrics
 
 - Total sessions
 
@@ -186,7 +186,7 @@ Copilot Studio's ROI analytics provides:
 
 - Session duration
 
-#### B. Automation Metrics
+#### Automation Metrics
 
 - Completion rate
 
@@ -194,7 +194,7 @@ Copilot Studio's ROI analytics provides:
 
 - Task success rate
 
-#### C. Cost Savings Metrics
+#### Cost Savings Metrics
 
 - Estimated time saved
 
@@ -202,7 +202,7 @@ Copilot Studio's ROI analytics provides:
 
 - Reduction in manual workload
 
-#### D. Quality Metrics
+#### Quality Metrics
 
 - Feedback scores
 
@@ -212,7 +212,7 @@ Copilot Studio's ROI analytics provides:
 
 These metrics help quantify both **productivity gains** and **operational efficiency**.
 
-### 5. ROI Evaluation Framework for AI Solutions
+### ROI Evaluation Framework for AI Solutions
 
 #### Step 1 — Define Business Outcomes
 
@@ -256,7 +256,7 @@ Calculate:
 
 - Net present value (NPV)
 
-- Costbenefit ratio
+- Cost-benefit ratio
 
 - Annualized ROI
 

@@ -1,8 +1,8 @@
 ### Overview
 
-Solution architects make pivotal decisions that determine whether AI capabilities should be **built**, **bought**, or **extended**. This choice affects **cost**, **timetovalue**, **risk**, **scalability**, and the longterm sustainability of the solution.<br>This unit provides a structured decision framework that blends **organizational strategy**, **AI component cost drivers**, and **Copilot extensibility models** to help architects select the right path for each business process.
+Solution architects make pivotal decisions that determine whether AI capabilities should be **built**, **bought**, or **extended**. This choice affects **cost**, **timetovalue**, **risk**, **scalability**, and the long-term sustainability of the solution.<br>This unit provides a structured decision framework that blends **organizational strategy**, **AI component cost drivers**, and **Copilot extensibility models** to help architects select the right path for each business process.
 
-### 1. Strategic Decision Context
+### Strategic Decision Context
 
 Organizations accelerating AI adoption face three primary pathways:
 
@@ -38,9 +38,9 @@ Organizations accelerating AI adoption face three primary pathways:
 
 - Leveraging mature ecosystem capabilities while tailoring agent or Copilot behaviors
 
-- Introducing domainspecific knowledge via plugins, skills, or grounding data
+- Introducing domain-specific knowledge via plugins, skills, or grounding data
 
-### 2. Key Evaluation Factors for Build vs. Buy vs. Extend
+### Key Evaluation Factors for Build vs. Buy vs. Extend
 
 #### 2.1 Business Drivers
 
@@ -54,9 +54,9 @@ Organizations accelerating AI adoption face three primary pathways:
 
 - **Compliance and governance needs**
 
-### 3. Cost Structure Considerations
+### Cost Structure Considerations
 
-Using Microsoft AI agent coststructure guidance, architects must evaluate costs in **five domains**:
+Using Microsoft AI agent cost-structure guidance, architects must evaluate costs in **five domains**:
 
 #### Infrastructure Costs
 
@@ -64,7 +64,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 
 - Scaling and resiliency overhead
 
-#### Development & Integration Costs
+#### Development and Integration Costs
 
 - Agent design, orchestration flows, pipelines
 
@@ -72,7 +72,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 
 - Governance and compliance engineering
 
-#### Data Quality & Preparation Costs
+#### Data Quality and Preparation Costs
 
 - Data cleansing, labeling, validation
 
@@ -80,7 +80,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 
 - Ongoing monitoring for drift
 
-#### Expertise & Resource Costs
+#### Expertise and Resource Costs
 
 - AI engineers, architects, MLOps, SME involvement
 
@@ -104,7 +104,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 | Expertise          | High  | Low | Medium |
 | Operations         | High  | Medium | Medium |
 
-### 4. When to Build
+### When to Build
 
 #### Choose Build when:
 
@@ -124,7 +124,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 
 - Requires continuous maintenance investment
 
-### 5. When to Buy
+### When to Buy
 
 #### Choose Buy when:
 
@@ -144,7 +144,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 
 - Feature gaps for specialized processes
 
-### 6. When to Extend
+### When to Extend
 
 #### Choose Extend when:
 
@@ -172,7 +172,7 @@ Using Microsoft AI agent coststructure guidance, architects must evaluate costs 
 
 - More customization flexibility than Buy
 
-### 7. Decision Framework for Build vs. Buy vs. Extend
+### Decision Framework for Build vs. Buy vs. Extend
 
 #### Step-by-Step Architectural Flow
 

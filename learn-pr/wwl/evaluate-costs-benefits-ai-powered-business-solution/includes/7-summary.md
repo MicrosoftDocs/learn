@@ -2,7 +2,7 @@ This module provides solution architects and business decision-makers with a com
 
 ### Key Takeaways
 
-#### 1. Defining ROI Criteria and Total Cost of Ownership (TCO):
+#### 1. Define ROI Criteria and Total Cost of Ownership (TCO):
 
    - ROI for AI solutions must be assessed across three categories: financial (hard value), strategic/intangible (soft value), and time-based indicators.
 
@@ -16,7 +16,7 @@ This module provides solution architects and business decision-makers with a com
 
    - A balanced ROI model must align with business outcomes, be measurable, and incorporate TCO to avoid overstated benefits.
 
-#### 2. Constructing a Complete ROI Analysis:
+#### 2. Construct a Complete ROI Analysis:
 
    - A robust ROI analysis quantifies the business value created by AI solutions, including automation gains, operational improvements, and strategic impact.
 

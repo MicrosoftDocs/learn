@@ -16,11 +16,11 @@ This unit equips solution architects to design, configure, and operationalize a 
 
 - Evaluate routing performance and optimize model selection
 
-### 1. Understanding the Model Router in Azure AI Foundry
+### Understanding the Model Router in Azure AI Foundry
 
 Azure AI Foundry's model router provides:
 
-#### A. A Single Unified Endpoint
+#### A Single Unified Endpoint
 
 - One endpoint for multiple models
 
@@ -28,7 +28,7 @@ Azure AI Foundry's model router provides:
 
 - Reduces code complexity
 
-#### B. Intelligent Routing
+#### Intelligent Routing
 
 - Routes requests based on:
 
@@ -42,25 +42,7 @@ Azure AI Foundry's model router provides:
 
 - Custom rules
 
-#### C. Dynamic Model Selection
-
-Supports:
-
-- Azure OpenAI models
-
-- Finetuned models
-
-- Custom models
-
-- Multiple versions of the same model
-
-- Specific third-party models (e.g. Grok, DeepSeek, Claude, etc)
-
-- Specific Open-Source & OSS-Aligned Models (e.g. gpt-oss-120b, Llama-4-Maverik)
-
-:::image type="content" source="../media/model-family-chart.png" alt-text="AI Model family table.":::
-
-#### D. Centralized Governance
+#### Centralized Governance
 
 - Versioning
 
@@ -70,7 +52,7 @@ Supports:
 
 - Safety and compliance controls
 
-### 2. Why Model Routing Matters
+### Why Model Routing Matters
 
 Model routing enables organizations to:
 
@@ -86,7 +68,7 @@ Model routing enables organizations to:
 
 - Route lowlatency tasks to faster models
 
-- Use specialized models for domainspecific tasks
+- Use specialized models for domain-specific tasks
 
 #### Increase Reliability
 
@@ -100,13 +82,13 @@ Model routing enables organizations to:
 
 - Align with "build, buy, or both" AI transformation strategies
 
-### 3. Routing Criteria for Selecting the Most Suitable Model
+### Routing Criteria for Selecting the Most Suitable Model
 
 Azure AI Foundry supports rulebased and metadatabased routing. 
 
 **Key criteria include:**
 
-#### A. Task Type
+#### Task Type
 
 - Summarization
 
@@ -118,7 +100,7 @@ Azure AI Foundry supports rulebased and metadatabased routing.
 
 - Conversation
 
-#### B. Complexity
+#### Complexity
 
 - Simple → SLM
 
@@ -126,37 +108,7 @@ Azure AI Foundry supports rulebased and metadatabased routing.
 
 - Complex → LLM
 
-#### C. Cost Sensitivity
-
-- Highvolume tasks → SLM
-
-- Highvalue tasks → LLM
-
-:::image type="content" source="../media/cost-constraint-chart.png" alt-text="AI cost constraint table.":::
-
-#### D. Latency Requirements
-
-- Realtime → SLM
-
-- Batch → LLM
-
-:::image type="content" source="../media/latency-requirement-chart.png" alt-text="AI latency requirements table.":::
-
-#### E. Domain Specificity
-
-- Industryspecific → Finetuned model
-
-- General → Foundation model
-
-:::image type="content" source="../media/domain-need-chart.png" alt-text="AI domain needs table.":::
-
-#### F. Safety & Compliance
-
-- Sensitive workflows → Moderation + domaintuned model
-
-:::image type="content" source="../media/risk-level-chart.png" alt-text="AI risk level table.":::
-
-### 4. Designing Routing Rules
+### Designing Routing Rules
 
 Solution architects should conduct a routing rule design workshop to help identify and create routing rules for a set of business tasks as the rules will likely vary greatly from organization to organization. 
 
@@ -164,7 +116,7 @@ In the workshop, the routing rules identified should be adjusted to reduce cost 
 
 Azure AI Foundry supports:
 
-#### A. Static Rules
+#### Static Rules
 
 Examples:
 
@@ -172,23 +124,23 @@ Examples:
 
 - "If domain = finance → use finetuned model"
 
-#### B. Weighted Routing
+#### Weighted Routing
 
 - Distribute traffic across models
 
 - Useful for A/B testing and gradual rollout
 
-#### C. Fallback Routing
+#### Fallback Routing
 
 - Automatically route to backup model if primary fails
 
-#### D. VersionBased Routing
+#### VersionBased Routing
 
 - Route to latest stable version
 
 - Route specific traffic to experimental versions
 
-### 5. Implementing the Model Router
+### Implementing the Model Router
 
 **Step 1 — Define the Routing Strategy**
 

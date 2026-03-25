@@ -107,19 +107,19 @@ Build a transparent TCO view so your ROI is durable beyond the pilot:
 
 - **Infrastructure** — compute (CPU/GPU) for inference, storage, network/egress, resiliency/HA.
 
-- **Development & integration** — agent design, orchestration, connectors/APIs, auth, compliance, testing.
+- **Development and integration** — agent design, orchestration, connectors/APIs, auth, compliance, testing.
 
-- **Data quality & preparation** — cleansing/labeling, grounding/indexing, refresh schedules, drift monitoring.
+- **Data quality and preparation** — cleansing/labeling, grounding/indexing, refresh schedules, drift monitoring.
 
-- **Expertise & staffing** — architects, AI/ML engineers, MLOps, SMEs, change management/training.
+- **Expertise and staffing** — architects, AI/ML engineers, MLOps, SMEs, change management/training.
 
-- **Operations & licensing** — monitoring/telemetry, evaluation/retuning, incident response, consumption or subscription fees. 
+- **Operations and licensing** — monitoring/telemetry, evaluation/retuning, incident response, consumption or subscription fees. 
 
 - **Text visual — TCO matrix**
 
 Infrastructure   | Compute, storage, network, HA
 
-Dev & Integration| Orchestration, connectors, security testing
+Dev and Integration| Orchestration, connectors, security testing
 
 Data Quality     | Clean/label, ground/index, refresh, drift
 
@@ -157,7 +157,7 @@ _Sensitivity bands_<br>Create **optimistic / expected / conservative** cases by 
 
 Use a concise summary that decisionmakers can act on:
 
-- **Problem & scope** — where the waste is today.
+- **Problem and scope** — where the waste is today.
 
 - **AI intervention** — what the agent automates/augments.
 
@@ -165,7 +165,7 @@ Use a concise summary that decisionmakers can act on:
 
 - **Financials** — annual benefit, TCO, ROI %, payback.
 
-- **Confidence & risks** — sensitivity band and key assumptions.
+- **Confidence and risks** — sensitivity band and key assumptions.
 
 - **Decision** — "Pilot for 8 weeks with success criteria X; scale to Y units on pass."
 
@@ -199,7 +199,7 @@ Business Goal → Pick Process → Baseline → Map AI Levers
 
             → Quantify Benefits → Model TCO
 
-            → ROI & Payback → Sensitivity Bands → Pilot → Scale
+            → ROI and Payback → Sensitivity Bands → Pilot → Scale
 
 **Benefits waterfall (text layout)**
 
