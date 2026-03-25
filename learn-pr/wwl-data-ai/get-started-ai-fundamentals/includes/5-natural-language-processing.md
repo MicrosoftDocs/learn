@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=b0aec446-97a1-4d66-a0ae-a67014e40937]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a38025d0-4c17-454f-9eb8-deb71bbea507]
 
 > [!TIP]
 > [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
@@ -31,4 +31,3 @@ Common uses of NLP technologies for text analysis include:
 - Implementing chatbots that can answer frequently asked questions or orchestrate predictable conversational dialogs that don't require the complexity of generative AI.
 
 ::: zone-end
-

@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=6bddab82-350b-4420-a1f3-741b9741c7b1]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a38025d0-4c17-454f-9eb8-deb71bbea507]
 
 > [!TIP]
 > [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
