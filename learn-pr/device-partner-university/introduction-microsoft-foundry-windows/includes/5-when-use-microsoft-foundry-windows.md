@@ -17,9 +17,9 @@ Local execution can reduce response time by running inference close to the user 
 
 Running models on the device can also support data handling requirements. When inference occurs locally, application data doesn't need to be transmitted to external services, which can help address privacy considerations or regulatory constraints.
 
-The following example shows how Foundry Local can support scenarios where sensitive data should remain on the device. In this case, a developer runs an open model locally to process student financial aid requests without relying on cloud inference.
+The following example illustrates how developers can explore local AI capabilities by using developer tools before integrating them into an application. In this scenario, a developer uses AI Dev Gallery to try Windows AI APIs locally, evaluating features such as text generation or text recognition without relying on cloud-based inference.
 
-:::image type="content" source="../media/foundry-local-financial-aid-demo.gif" alt-text="Example showing a developer running an open model locally with Foundry Local to process sensitive financial aid requests on a Windows device.":::
+:::image type="content"source="../media/ai-dev-gallery-local-inference-demo.gif" alt-text="Example showing AI Dev Gallery interface showing a developer exploring Windows AI APIs locally on a Windows device,with sample inputs and outputs displayed in a development environment." lightbox="../media/ai-dev-gallery-local-inference-demo.gif":::
 
 Common scenarios where local AI may be appropriate include:
 
@@ -45,8 +45,6 @@ Common hybrid patterns include:
 - Privacy-sensitive operations can remain on the device  
 
 Microsoft Foundry on Windows supports hybrid architectures by enabling local execution of built-in models, open-source models, and custom models, while still allowing applications to connect to cloud-based AI services when required.
-
-This model can be useful for organizations that want to introduce AI capabilities incrementally or avoid designing applications that depend entirely on cloud infrastructure.
 
 This model can be useful for organizations that want to introduce AI capabilities incrementally or avoid designing applications that depend entirely on cloud infrastructure.
 

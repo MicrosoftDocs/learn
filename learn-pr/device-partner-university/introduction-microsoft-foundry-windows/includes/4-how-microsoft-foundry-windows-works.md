@@ -2,7 +2,7 @@ Microsoft Foundry on Windows is designed as a layered platform that enables deve
 
 Rather than requiring developers to manage models, runtimes, and hardware acceleration independently, the platform provides a structured stack that simplifies how AI workloads are developed and deployed on Windows devices.
 
-:::image type="content" source="../media/developer-it-laptop.png" alt-text="Developer working on a laptop in a modern workspace, with code and development tools visible on external monitors, illustrating how AI capabilities can be integrated into Windows applications using a layered platform approach.":::
+:::image type="content" source="../media/developer-it-laptop.png" alt-text="A photograph of a Developer working on a laptop in a modern workspace, with code and development tools visible on external monitors, illustrating how AI capabilities can be integrated into Windows applications using a layered platform approach.":::
 
 At a high level, Microsoft Foundry on Windows consists of three primary layers:
 
