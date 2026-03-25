@@ -34,13 +34,13 @@ quiz:
       explanation: "Incorrect. A complete ROI analysis requires more than just financial savings; it must also include Total Cost of Ownership (TCO)."
     - content: "Only labor-hours saved"
       isCorrect: false
-      explanation: "Incorrect. Labor-hours saved is a measurable benefit but does not account for the full ROI analysis, which includes TCO."
+      explanation: "Incorrect. Labor-hours saved is a measurable benefit but doesn't account for the full ROI analysis, which includes TCO."
     - content: "Both measurable benefits and TCO"
       isCorrect: true
       explanation: "Correct. A complete ROI analysis requires both quantifiable benefits (such as time and cost savings) and a full accounting of Total Cost of Ownership (TCO), ensuring the analysis is balanced and enterprise-ready."
     - content: "Only the number of automated tasks"
       isCorrect: false
-      explanation: "Incorrect. The number of automated tasks alone does not provide a complete ROI analysis; TCO and measurable benefits are also required."
+      explanation: "Incorrect. The number of automated tasks alone doesn't provide a complete ROI analysis; TCO and measurable benefits are also required."
   - content: "Which scenario most strongly indicates a Build approach for AI components?"
     choices:
     - content: "Standard HR onboarding workflow"
