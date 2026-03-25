@@ -1,24 +1,23 @@
-Your company plans to deploy your cloud-based video rendering service using Azure Kubernetes Service (AKS) as your cloud-native development platform. Before you can deploy any application, you need to create your AKS cluster.
+Your company plans to deploy a cloud-based video rendering service using Azure Kubernetes Service (AKS) as the cloud-native development platform. Before you can deploy an application, you need to create your AKS cluster.
 
-Let's review a few concepts so that you can deploy a new AKS cluster successfully.
+Let's review some concepts so that you can deploy a new AKS cluster.
 
 ## Kubernetes clusters
 
-Kubernetes is based on clusters. Instead of having a single virtual machine (VM), it uses several machines working as one. These VMs are called nodes. Kubernetes is a cluster-based orchestrator. It provides your application with several benefits, such as availability, monitoring, scaling, and rolling updates.
+Kubernetes is based on clusters. Instead of a single virtual machine (VM), Kubernetes uses several virtual machines that work as one, called nodes. Kubernetes is a cluster-based orchestrator that provides your application with several benefits, like availability, monitoring, scaling, and rolling updates.
 
 ## Cluster nodes
 
-A cluster is node-based. There are two types of nodes in a Kubernetes cluster that provide specific functionality.
+A cluster is node-based and there are two types of nodes in a Kubernetes cluster that provide specific functionality.
 
 - **Control plane nodes**: These nodes host the cluster's control plane aspects and are reserved for services that control the cluster. They're responsible for providing the API you and all the other nodes use to communicate. No workloads are deployed or scheduled on these nodes.
-
 - **Nodes**: These nodes are responsible for executing custom workloads and applications, such as components from your cloud-based video rendering service.
 
 ## Cluster architectures
 
 Use a cluster architecture to conceptualize the number of control planes and nodes you deploy in your Kubernetes cluster.
 
-For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler tries to reschedule all the workloads running on this node onto the remaining nodes in the cluster.
+For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler tries to reschedule that node's workloads onto the remaining nodes in the cluster.
 
 There are two popular cluster architectures for Kubernetes-based deployments.
 
@@ -26,35 +25,37 @@ There are two popular cluster architectures for Kubernetes-based deployments.
 
 :::image type="content" source="../media/2-1-diagram.png" alt-text="A diagram that shows a single control plane and multiple nodes in a cluster configuration.":::
 
-The *single control plane to multiple nodes* per cluster architecture is the most common architectural pattern and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
+The _single control plane to multiple nodes_ per cluster architecture is the most common architectural pattern and is the easiest to deploy, but it doesn't provide high availability to your cluster's core management services.
 
-If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. This problem occurs even if you're the operator, or by any workloads that use Kubernetes' APIs to communicate until, at least, the API server is back online.
+If the control plane node becomes unavailable for any reason, no other interaction can happen with the cluster. This problem occurs even if you're the operator, or by any workloads that use Kubernetes APIs to communicate until, at least, the API server is back online.
 
-Despite being less available than others, this architecture should be enough for most situations. It's less likely that the core management services become unavailable compared to a node going offline. The control plane nodes are subject to fewer modifications than nodes and more resilient.
+Despite being less available than others, this architecture should be enough for most situations. It's less likely that the core management services become unavailable compared to a node going offline. The control plane nodes are subject to fewer modifications than nodes and are more resilient.
 
-If you're dealing with a production scenario, this architecture might not be the best solution.
+For a production scenario, this architecture might not be the best solution.
 
 ## Single control plane and a single node
 
 :::image type="content" source="../media/2-2-single-diagram.png" alt-text="A diagram that depicts a single control plane and single node in a cluster configuration.":::
 
-The *single control plane to single node* architecture is a variant of the previous architecture and is used in development environments. This architecture provides only one node that hosts both the control plane and a worker node. It's useful when testing or experimenting with different Kubernetes concepts. The single control plane and single node architecture limits cluster scaling and makes this architecture unsuitable for production and staging use.
+The _single control plane to single node_ architecture is a variant of the previous architecture and is used in development environments. This architecture provides only one node that hosts both the control plane and a worker node. It's useful when testing or experimenting with different Kubernetes concepts. The single control plane and single node architecture limits cluster scaling and makes this architecture unsuitable for production and staging use.
 
 ## Configure an AKS cluster
+
+A key difference between native Kubernetes and AKS is that with an AKS cluster, the control plane is Microsoft managed for availability. You don't need to configure the control plane when you create a cluster. You only need to configure the nodes to run your workloads.
 
 When you create a new AKS cluster, you have several different items to configure. Each item affects the final configuration of your cluster for compute resource allocation.
 
 These items include:
 
-- Node pools
-- Node count
-- Node VM size
+- Node pools.
+- Node count.
+- Node VM size.
 
 ## Node pools
 
-You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size and OS type (Linux or Windows) for each node in the node pool based on application requirement. To host user application pods, node pool **Mode** should be **User** otherwise **System**.
+You create _node pools_ to group nodes in your AKS cluster. When you create a node pool, you specify the VM size and OS type (Linux or Windows) for each node in the node pool based on application requirement. A node pool with **System Mode** is reserved for critical system services and usually isn't used to run application workloads. To host user application pods, node pool **Mode** should be **User**.
 
-By default, an AKS cluster has a Linux node pool (**System Mode**) whether you create it through the Azure portal or CLI. However, you can configure it to add Windows node pools along with default Linux node pools during the creation wizard in the portal, parameters in CLI, or with ARM templates.
+By default, an AKS cluster has a Linux node pool (**System Mode**) whether you create it through the Azure portal or CLI. You can configure it to add Windows node pools along with default Linux node pools when the cluster is created in the portal, CLI parameters, or Azure Resource Manager templates (ARM templates).
 
 Node pools use Virtual Machine Scale Sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool are always the same size as you specified when you created the node pool.
 
@@ -62,7 +63,7 @@ Node pools use Virtual Machine Scale Sets as the underlying infrastructure to al
 
 ## Node count
 
-The node count is the number of nodes your cluster has in a node pool. Nodes are Azure VMs. You can change their size and count to match your usage pattern.
+The node count is the number of nodes your cluster has in a node pool. Nodes are Azure VMs and you can change their size and count to match your usage pattern.
 
 You can change the node count later in the cluster's configuration panel. It's also a best practice to keep this number as low as possible to avoid unnecessary costs and unused compute power.
 
