@@ -6,7 +6,7 @@ Creating a rigorous ROI analysis is essential for evaluating whether an AI solut
 
 - Productivity and efficiency metrics
 
-- Costsavings calculations
+- Cost savings calculations
 
 - Total cost of ownership (TCO)
 
@@ -20,7 +20,7 @@ Creating a rigorous ROI analysis is essential for evaluating whether an AI solut
 
 - **Define a defensible ROI scope** for an AI solution mapped to a single business process, with clear baselines and guardrails.
 
-- **Quantify time and cost savings** using an agent-level savings model (perrun and pertool) and translate savings into financial benefits that align to enterprise KPIs. 
+- **Quantify time and cost savings** using an agent-level savings model (per-run and per-tool) and translate savings into financial benefits that align to enterprise KPIs. 
 
 - **Build a complete ROI model** that balances benefits against **total cost of ownership (TCO)** across infrastructure, development/integration, data quality, expertise, and ongoing operations. 
 
@@ -54,7 +54,7 @@ Most process gains fall into three buckets:
 
 Support each lever with _observations you can measure_ (e.g., the step the agent automates, the decision it accelerates, or the draft it prepares).
 
-### 3. Quantify savings with the Savings Calculator (perrun and pertool)
+### 3. Quantify savings with the Savings Calculator (per-run and per-tool)
 
 Use the agent **Savings** capability to estimate and then track time or money saved. You can configure:
 
@@ -72,7 +72,7 @@ Admins can disable money based savings; if so, keep tracking _time_ and convert 
 
 - _Fully loaded labor rate_ (currency/hour) for the role(s) impacted.
 
-- _(Optional)_ Tool specific time/cost deltas when using the pertool model.
+- _(Optional)_ Tool specific time/cost deltas when using the per-tool model.
 
 **Savings model (example)**
 
@@ -99,7 +99,7 @@ The calculator stores these estimates and shows trends over time so you can adju
 
 - Show more lines
 
-**Evidence to calibrate your ranges.** Early field studies on Copilotstyle tools show measurable time reductions in common knowledge work (e.g., faster document creation and reduced time spent reading email). Use these as _directional_ anchors when setting optimistic/expected/conservative ranges—always validated against your baseline. 
+**Evidence to calibrate your ranges.** Early field studies on Copilot style tools show measurable time reductions in common knowledge work (e.g., faster document creation and reduced time spent reading email). Use these as _directional_ anchors when setting optimistic/expected/conservative ranges—always validated against your baseline. 
 
 ### 5. Model TCO (the five cost drivers)
 
@@ -151,7 +151,7 @@ _Sensitivity bands_<br>Create **optimistic / expected / conservative** cases by 
 
 - Quality/rework effects (use error rate deltas).
 
-**Why add ranges?** Stakeholders can see upside and risk. Use the researchanchored directional effects on knowledge work time as justification for your bands while keeping your _own telemetry_ in the driver's seat. 
+**Why add ranges?** Stakeholders can see upside and risk. Use the research anchored directional effects on knowledge work time as justification for your bands while keeping your _own telemetry_ in the driver's seat. 
 
 ### 7. Package the executive one slide
 
