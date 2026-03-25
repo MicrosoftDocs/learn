@@ -1,12 +1,12 @@
 ## Overview
 
-Securing AI models is a core responsibility for solution architects who design, deploy, and operate enterprisegrade AI systems. Model security ensures that every model—whether used in Foundry, Azure AI, or integrated within an agent pipeline—remains protected from threats such as unauthorized access, data leakage, adversarial inputs, and compromised identities.
+Securing AI models is a core responsibility for solution architects who design, deploy, and operate enterprise-grade AI systems. Model security ensures that every model—whether used in Foundry, Azure AI, or integrated within an agent pipeline—remains protected from threats such as unauthorized access, data leakage, adversarial inputs, and compromised identities.
 
-This unit provides a structured approach to designing modellevel security using identity governance, workload hardening, threat protection, access control, and continuous monitoring. Solution architects will learn how to apply security guardrails that span development, deployment, and operations.
+This unit provides a structured approach to designing model-level security using identity governance, workload hardening, threat protection, access control, and continuous monitoring. Solution architects will learn how to apply security guardrails that span development, deployment, and operations.
 
-## 1. Secure identities and authentication
+## Secure identities and authentication
 
-Strong model security begins with strong identity foundations. AI models, endpoints, and inference workloads must authenticate using standardized, secretfree mechanisms.
+Strong model security begins with strong identity foundations. AI models, endpoints, and inference workloads must authenticate using standardized, secret-free mechanisms.
 
 ### Use managed identities
 
@@ -22,9 +22,9 @@ Strong model security begins with strong identity foundations. AI models, endpoi
 
 - Grant access based on the model's function, not developer convenience.
 
-- Use **resourcescoped roles** for training, deployment, and inferencing operations.
+- Use **resource-scoped roles** for training, deployment, and inferencing operations.
 
-## 2. Authorization and access boundaries
+## Authorization and access boundaries
 
 Solution architects help define the boundaries around what models can access, process, and output.
 
@@ -38,13 +38,9 @@ Solution architects help define the boundaries around what models can access, pr
 
 - Restrict model modification, retraining, and redeployment rights.
 
-- Require multistep approvals for sensitive model updates.
+- Require multi-step approvals for sensitive model updates.
 
-### Access Boundary Diagram
-
-:::image type="content" source="../media/access-boundary-diagram.png" alt-text="Identity control, model execution, and data boundary.":::
-
-## 3. Protect data used by models
+## Protect data used by models
 
 Models interact with sensitive information through training data, memory stores, logs, and output responses.
 
@@ -66,7 +62,7 @@ Models interact with sensitive information through training data, memory stores,
 
 - Implement filters to block harmful or restricted outputs.
 
-## 4. Harden AI workloads
+## Harden AI workloads
 
 Harden the environment where AI models operate to reduce attack surfaces.
 
@@ -86,7 +82,7 @@ Harden the environment where AI models operate to reduce attack surfaces.
 
 - Automate anomaly detection in model behavior and output patterns.
 
-### Model Hardening Blueprint
+### Model hardening blueprint
 
 | Step | Component | Description / Focus Area  |
 |------|---------|---------|
@@ -96,13 +92,13 @@ Harden the environment where AI models operate to reduce attack surfaces.
 | 4 | Validation Pipeline | Validate models and data to maintain quality and compliance. |
 | 5 | Monitoring and Drift Detection | Continuously monitor model performance and identify data or model drift. |
 
-## 5. Threat detection and response
+## Threat detection and response
 
-Model security is strengthened with continuous threat detection and realtime monitoring.
+Model security is strengthened with continuous threat detection and real-time monitoring.
 
 ### Threat protection
 
-- Enable AIspecific threat detection for prompt injection, unauthorized access attempts, and unusual inference patterns.
+- Enable AI-specific threat detection for prompt injection, unauthorized access attempts, and unusual inference patterns.
 
 - Use automated scanning to identify insecure default settings and misconfigurations.
 
@@ -120,11 +116,11 @@ Model security is strengthened with continuous threat detection and realtime mon
 
 - Establish rollback procedures for restoring prior model versions.
 
-## 6. Governance and lifecycle controls
+## Governance and lifecycle controls
 
 Strong governance ensures models remain secure throughout their lifecycle.
 
-### Policydriven model management
+### Policy-driven model management
 
 - Mandate approval checkpoints for model deployment, retraining, and version promotion.
 
@@ -136,12 +132,8 @@ Strong governance ensures models remain secure throughout their lifecycle.
 
 - Review and retire outdated models that no longer meet security or quality standards.
 
-### Model Governance Lifecycle
-
-:::image type="content" source="../media/model-governance-lifecycle.png" alt-text="Model governance lifecycle.":::
-
 ## References
 
-- [https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/](/training/paths/defender-for-cloud-ai-foundry-protect/)
+- [Protect AI services with Microsoft Defender for Cloud](/training/paths/defender-for-cloud-ai-foundry-protect/)
 
-- [https://learn.microsoft.com/en-us/training/paths/manage-iam-for-ai-workloads-on-azure/?sharingId=6F81B482FD5357F5](/training/paths/manage-iam-for-ai-workloads-on-azure/)
+- [Manage IAM for AI workloads on Azure](/training/paths/manage-iam-for-ai-workloads-on-azure/)

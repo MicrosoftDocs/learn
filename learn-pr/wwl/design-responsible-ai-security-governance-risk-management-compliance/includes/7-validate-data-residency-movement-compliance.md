@@ -1,10 +1,10 @@
 ## Overview
 
-Validating data residency and movement compliance is a critical responsibility for solution architects designing AIpowered solutions across Microsoft 365, Dynamics 365, and Copilot Studio. Keeping data within approved geographic boundaries ensures that solutions follow regulatory, contractual, and organizational requirements. This unit explains how to evaluate data residency posture, control data movement, and apply data governance policies that align with cloud compliance expectations.
+Validating data residency and movement compliance is a critical responsibility for solution architects designing AI-powered solutions across Microsoft 365, Dynamics 365, and Copilot Studio. Keeping data within approved geographic boundaries ensures that solutions follow regulatory, contractual, and organizational requirements. This unit explains how to evaluate data residency posture, control data movement, and apply data governance policies that align with cloud compliance expectations.
 
-Solution architects must know where data is stored, how it moves across services, and which components participate in inference, logging, processing, or retention. This includes understanding the behavior of generative AI features, how Copilot Studio handles data, and how Microsoft Purview enforces datahandling compliance.
+Solution architects must know where data is stored, how it moves across services, and which components participate in inference, logging, processing, or retention. This includes understanding the behavior of generative AI features, how Copilot Studio handles data, and how Microsoft Purview enforces data-handling compliance.
 
-## Learning Objectives
+## Learning objectives
 
 - After completing this unit, learners will be able to:
 
@@ -16,15 +16,15 @@ Solution architects must know where data is stored, how it moves across services
 
 - Apply Purview capabilities to strengthen compliance controls for Microsoft 365 Copilot.
 
-- Recommend architectural controls that ensure compliant endtoend data handling.
+- Recommend architectural controls that ensure compliant end-to-end data handling.
 
-## Key Concepts for Data Residency Compliance
+## Key concepts for data residency compliance
 
-### 1. Understanding Data Residency Boundaries
+### Understanding data residency boundaries
 
 Data residency defines the physical or geographic location where customer data is stored and processed. 
 
-#### AI solutions use multiple services and toolchains, so architects must understand:
+#### AI solutions use multiple services and toolchains, so architects must understand
 
 - Where user prompts, context, and model inputs are processed.
 
@@ -32,13 +32,13 @@ Data residency defines the physical or geographic location where customer data i
 
 - Whether data used by generative AI stays within the designated region.
 
-- How multitenant cloud services distribute workloads.
+- How multi-tenant cloud services distribute workloads.
 
-### 2. Copilot Studio Data Residency Behavior
+### Copilot Studio data residency behavior
 
 Copilot Studio enforces regional boundaries depending on the environment configuration. 
 
-#### Architects should validate:
+#### Architects should validate
 
 - Where prompt data and agent interactions are processed.
 
@@ -46,29 +46,29 @@ Copilot Studio enforces regional boundaries depending on the environment configu
 
 - How data is stored when agents use connectors or custom plugins.
 
-- Whether crossregion interactions occur during inference or orchestration.
+- Whether cross-region interactions occur during inference or orchestration.
 
-### 3. Data Movement Controls for Generative AI
+### Data movement controls for generative AI
 
 Generative AI features may require movement of data for model evaluation, orchestration, or enrichment. 
 
-#### To validate compliance:
+#### To validate compliance
 
 - Determine which components may transmit data outside the region.
 
 - Confirm whether data movement is necessary or optional.
 
-- Review environment settings that allow or restrict crossgeographic model operations.
+- Review environment settings that allow or restrict cross-geographic model operations.
 
-- Apply configuration policies that block crossregion routing for sensitive workloads.
+- Apply configuration policies that block cross-region routing for sensitive workloads.
 
-### 4. Purview Controls for Microsoft 365 Copilot
+### Purview controls for Microsoft 365 Copilot
 
 Microsoft Purview provides governance, labeling, and monitoring necessary to validate compliant data handling. 
 
-#### Solution architects should:
+#### Solution architects should
 
-- Apply sensitivity labels that restrict crosstenant or crossregion transmission.
+- Apply sensitivity labels that restrict cross-tenant or cross-region transmission.
 
 - Use data loss prevention (DLP) rules to prevent sensitive data from being used in AI prompts or outputs.
 
@@ -76,11 +76,11 @@ Microsoft Purview provides governance, labeling, and monitoring necessary to val
 
 - Validate that Copilot interaction logs follow organizational residency rules.
 
-### 5. Designing a Compliant AI Architecture
+### Designing a compliant AI architecture
 
 Strong architectural governance ensures safe and compliant deployment. 
 
-#### Recommended practices include:
+#### Recommended practices include
 
 - Selecting tenant regions that align with regulatory frameworks.
 
@@ -94,10 +94,10 @@ Strong architectural governance ensures safe and compliant deployment.
 
 ## References
 
-- [https://learn.microsoft.com/en-us/training/modules/purview-ai-secure-copilot/](/training/modules/purview-ai-secure-copilot/)
+- [Secure Copilot with Microsoft Purview](/training/modules/purview-ai-secure-copilot/)
 
-- [https://learn.microsoft.com/en-us/microsoft-copilot-studio/geo-data-residency](/microsoft-copilot-studio/geo-data-residency)
+- [Copilot Studio geo data residency](/microsoft-copilot-studio/geo-data-residency)
 
-- [https://learn.microsoft.com/en-us/dynamics365/faqs-copilot-data-security-privacy](/dynamics365/faqs-copilot-data-security-privacy)
+- [Copilot data security and privacy FAQ for Dynamics 365](/dynamics365/faqs-copilot-data-security-privacy)
 
-- [https://learn.microsoft.com/en-us/microsoft-copilot-studio/manage-data-movement-outside-us](/microsoft-copilot-studio/manage-data-movement-outside-us)
+- [Manage data movement outside the US in Copilot Studio](/microsoft-copilot-studio/manage-data-movement-outside-us)

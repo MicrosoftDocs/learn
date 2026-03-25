@@ -1,148 +1,142 @@
 ## Overview
 
-Design a defense in depth approach for autonomous and semiautonomous agents that operate across Microsoft clouds. You'll translate business and compliance requirements into identity, access, data protection, observability, and threatprotection controls. You'll also define how agents authenticate, what they can do, what they can see, and how their behavior is monitored and governed at scale.
+Design a defense in depth approach for autonomous and semi-autonomous agents that operate across Microsoft clouds. You'll translate business and compliance requirements into identity, access, data protection, observability, and threat protection controls. You'll also define how agents authenticate, what they can do, what they can see, and how their behavior is monitored and governed at scale.
 
-### By the end of this unit, solution architects will be able to:
+### By the end of this unit, solution architects will be able to
 
-- Map agent personas to leastprivilege roles and scopes using Azure rolebased access control and managed identities.
+- Map agent personas to least-privilege roles and scopes using Azure role-based access control and managed identities.
 
 - Select secure authentication and authorization patterns for agents, tools, and backend services.
 
 - Apply data governance controls (DLP, sensitivity labels, and data residency) to constrain agent knowledge and outputs.
 
-- Establish organizationwide observability for agent behavior, usage, and cost.
+- Establish organization-wide observability for agent behavior, usage, and cost.
 
-- Integrate AIspecific threat protection, red teaming, and incident response into the agent lifecycle.
+- Integrate AI-specific threat protection, red teaming, and incident response into the agent lifecycle.
 
 - Standardize development and interoperability choices to reduce risk and improve maintainability.
 
 ## Key concepts and decisions
 
-### 1. Identity and access design
+### Identity and access design
 
-**Goal:** Every agent, tool, and pipeline has a firstclass identity, clear ownership, and leastprivilege access.
+**Goal:** Every agent, tool, and pipeline has a first-class identity, clear ownership, and least-privilege access.
 
 **Agent identity** 
 
-Assign a unique cloud identity per agent (prod, preprod, dev) and record ownership, version, and lifecycle metadata.
+- Assign a unique cloud identity per agent (prod, pre-prod, dev) and record ownership, version, and lifecycle metadata.
 
-Prefer **managed identities** for agenttoAzure authentication to remove secrets and simplify rotation.
+- Prefer **managed identities** for agent-to-Azure authentication to remove secrets and simplify rotation.
 
 **Authorization patterns** 
 
-Enforce **least privilege** with narrowly scoped role assignments (subscription/resource group/resource).
+- Enforce **least privilege** with narrowly scoped role assignments (subscription/resource group/resource).
 
-When an agent acts **on behalf of a user**, propagate the user's permissions; when it acts **as itself**, scope a service role with only the actions the agent needs.
+- When an agent acts **on behalf of a user**, propagate the user's permissions; when it acts **as itself**, scope a service role with only the actions the agent needs.
 
 **Separation of duties** 
 
-Distinct roles for Maker, Publisher, Environment Admin, and Security Admin.
+- Distinct roles for Maker, Publisher, Environment Admin, and Security Admin.
 
-Require approvals for publishing to production and for changes to highrisk capabilities (for example, actions that modify data).
+- Require approvals for publishing to production and for changes to high-risk capabilities (for example, actions that modify data).
 
 :::image type="content" source="../media/role-based-access-control.png" alt-text="RBAC design matrix.":::
 
-## 2. Data governance and protection
+## Data governance and protection
 
 **Goal:** Agents use only the right data, in the right places, for the right duration.
 
 **Data boundaries** 
 
-Separate internal vs. public workloads. Keep confidential sources out of publicfacing agents.
+- Separate internal vs. public workloads. Keep confidential sources out of public-facing agents.
 
-Honor **data residency** by selecting compliant regions for knowledge, logs, and memory.
+- Honor **data residency** by selecting compliant regions for knowledge, logs, and memory.
 
 **Data loss prevention and sensitivity** 
 
-Use **DLP policies** to restrict connectors, actions, and data movement.
+- Use **DLP policies** to restrict connectors, actions, and data movement.
 
-Apply **sensitivity labels** to knowledge sources; surface the highest label in responses where supported.
+- Apply **sensitivity labels** to knowledge sources; surface the highest label in responses where supported.
 
 **Retention and minimization** 
 
-Define retention windows for logs, agent memories, and training data. Automate purge/anonymization.
+- Define retention windows for logs, agent memories, and training data. Automate purge/anonymization.
 
 **Transparency** 
 
-Disclose AI involvement and data usage to users and stakeholders. Provide data deletion mechanisms.
+- Disclose AI involvement and data usage to users and stakeholders. Provide data deletion mechanisms.
 
-:::image type="content" source="../media/data-flow-and-residency-map.png" alt-text="Data flow and residency map.":::
-
-## 3. Observability and cost governance
+## Observability and cost governance
 
 **Goal:** Make agent actions auditable and costs predictable.
 
 **Unified logging** 
 
-Centralize telemetry for prompts, tool calls, errors, and safety events in a single workspace.
+- Centralize telemetry for prompts, tool calls, errors, and safety events in a single workspace.
 
-Capture custom business metrics (successful task completion, escalation rates).
+- Capture custom business metrics (successful task completion, escalation rates).
 
 **Inventory and ownership** 
 
-Maintain an authoritative catalog of agents with owner, version, environment, and purpose.
+- Maintain an authoritative catalog of agents with owner, version, environment, and purpose.
 
 **Cost controls** 
 
-Tag resources by agent and cost center. Track token and API consumption.
+- Tag resources by agent and cost center. Track token and API consumption.
 
-Set alerts for spend thresholds and anomalous usage.
+- Set alerts for spend thresholds and anomalous usage.
 
-:::image type="content" source="../media/observability-blueprint.png" alt-text="Observability blueprint.":::
+## Threat protection and assurance
 
-## 4. Threat protection and assurance
-
-**Goal:** Reduce the blast radius of adversarial input and modelspecific risks.
+**Goal:** Reduce the blast radius of adversarial input and model-specific risks.
 
 **AI threat protection** 
 
-Enable protections that detect prompt manipulation, data leakage attempts, and risky outputs.
+- Enable protections that detect prompt manipulation, data leakage attempts, and risky outputs.
 
 **Input/output filtering** 
 
-Sanitize tool inputs, enforce type/size limits, and apply safety moderation to freetext channels.
+- Sanitize tool inputs, enforce type/size limits, and apply safety moderation to free-text channels.
 
 **Adversarial testing** 
 
-Run **red team** evaluations preproduction and after major changes; gate releases on findings closure.
+- Run **red team** evaluations pre-production and after major changes; gate releases on findings closure.
 
 **Incident response** 
 
-Define how to disable an agent quickly, preserve logs, notify stakeholders, and recover safely.
+- Define how to disable an agent quickly, preserve logs, notify stakeholders, and recover safely.
 
-Rehearse drills for critical agents.
+- Rehearse drills for critical agents.
 
-## 5. Development and interoperability standards
+## Development and interoperability standards
 
 **Goal:** Standardize how agents connect to tools, data, and each other.
 
 **Frameworks and SDKs** 
 
-Adopt a standard agent framework with builtin governance hooks and documentation.
+- Adopt a standard agent framework with built-in governance hooks and documentation.
 
 **Protocols** 
 
-Use **Model Context Protocol (MCP)** for structured tool/data access.
+- Use **Model Context Protocol (MCP)** for structured tool/data access.
 
-Use **AgenttoAgent (A2A)** for controlled delegation and context sharing across agents.
+- Use **Agent-to-Agent (A2A)** for controlled delegation and context sharing across agents.
 
 **Environment strategy** 
 
-Provide safe maker spaces via environment routing. Separate dev/test from production.
+- Provide safe maker spaces via environment routing. Separate dev/test from production.
 
 **Change control** 
 
-Version artifacts, enforce approvals, and use automated checks for security posture before publish.
+- Version artifacts, enforce approvals, and use automated checks for security posture before publish.
 
-:::image type="content" source="../media/four-layer-control-model.png" alt-text="Four layer control model.":::
-
-## Implementation guide (step by step)
+## Implementation guide
 
 **Establish identities and access**
 
 - Create managed identities per agent per environment.
 
-- Assign leastprivilege Azure roles to the identities at the narrowest scope.
+- Assign least-privilege Azure roles to the identities at the narrowest scope.
 
 - Define maker/publisher/admin role mappings and access review cadence.
 
@@ -162,7 +156,7 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 **Enable threat protection and testing**
 
-- Turn on AIaware threat protections and content safety checks.
+- Turn on AI-aware threat protections and content safety checks.
 
 - Schedule red team assessments; track findings to closure before production release.
 
@@ -176,11 +170,11 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 - Document disable/rollback steps, comms templates, and evidence preservation.
 
-- Run tabletop exercises for highimpact agents.
+- Run tabletop exercises for high-impact agents.
 
 - Identify proactive alerting for emerging potential threats
 
-## Design checklist (use in reviews)
+## Design checklist
 
 - Agent identities exist for each environment; owners recorded.
 
@@ -194,7 +188,7 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 - Centralized logging, dashboards, and spend alerts in place.
 
-- AIspecific threat protection and output moderation enabled.
+- AI-specific threat protection and output moderation enabled.
 
 - Red team performed; open risks addressed.
 
@@ -202,7 +196,7 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 - Incident response runbook tested.
 
-## Practice (30-45 minutes)
+## Practice
 
 **Scenario:** A customer wants a helpdesk triage agent that reads ticket data, summarizes trends, and updates knowledge articles.
 
@@ -222,10 +216,10 @@ Version artifacts, enforce approvals, and use automated checks for security post
 
 ## References
 
-- [https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization](/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
+- [Governance and security for AI agents across the organization](/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
 
-- [https://learn.microsoft.com/en-us/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance](/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance)
+- [Examine agent approval governance](/training/modules/perform-admin-tasks-microsoft-365-copilot-agents/7-examine-agent-approval-governance)
 
-- [https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance](/microsoft-copilot-studio/security-and-governance)
+- [Security and governance in Microsoft Copilot Studio](/microsoft-copilot-studio/security-and-governance)
 
-- [https://learn.microsoft.com/en-us/training/paths/manage-iam-for-ai-workloads-on-azure/?sharingId=6F81B482FD5357F5](/training/paths/manage-iam-for-ai-workloads-on-azure/)
+- [Manage IAM for AI workloads on Azure](/training/paths/manage-iam-for-ai-workloads-on-azure/)

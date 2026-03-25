@@ -2,7 +2,7 @@
 
 Responsible AI (RAI) is a foundational requirement for every solution architect designing or assessing AI systems. Reviewing a solution for adherence to Responsible AI principles ensures that systems remain safe, secure, compliant, transparent, and aligned with organizational and regulatory expectations. This unit equips solution architects with a structured, repeatable method to evaluate solutions across governance, risk, design, deployment, and ongoing operations.
 
-## Learning Objectives
+## Learning objectives
 
 - After completing this unit, learners will be able to:
 
@@ -12,9 +12,9 @@ Responsible AI (RAI) is a foundational requirement for every solution architect 
 
 - Use structured review techniques to document RAI gaps and recommend corrective actions.
 
-- Facilitate a crossdisciplinary RAI review with engineering, legal, data science, and compliance teams.
+- Facilitate a cross-disciplinary RAI review with engineering, legal, data science, and compliance teams.
 
-## Responsible AI Principles
+## Responsible AI principles
 
 Microsoft defines six core Responsible AI principles that guide design and governance decisions:
 
@@ -32,13 +32,13 @@ Microsoft defines six core Responsible AI principles that guide design and gover
 
 These principles serve as the lens through which a solution architect evaluates models, agents, workflows, integrations, and user experiences.
 
-## Structured Responsible AI Solution Review
+## Structured responsible AI solution review
 
 The following review model ensures consistency and objectivity when assessing an AI solution.
 
-### 1. Solution Purpose and Intended Use
+### Solution purpose and intended use
 
-#### Evaluate whether the solution's intended use aligns with organizational policies and risks:
+#### Evaluate whether the solution's intended use aligns with organizational policies and risks
 
 - Purpose and business justification
 
@@ -48,19 +48,9 @@ The following review model ensures consistency and objectivity when assessing an
 
 - Boundaries and limitations communicated to users
 
-#### Visual: Purpose Assessment Diagram (recommended slide)
+### Data, privacy, and security assessment
 
-A 3column chart showing:
-
-Intended Use
-
-OutofScope Behavior
-
-Required Guardrails
-
-### 2. Data, Privacy, and Security Assessment
-
-#### Validate whether the solution respects data privacy and security expectations:
+#### Validate whether the solution respects data privacy and security expectations
 
 - Sensitivity classification of all data sources
 
@@ -70,13 +60,13 @@ Required Guardrails
 
 - Protection of personal identifiable information
 
-- Isolation of confidential data and use of leastprivilege access
+- Isolation of confidential data and use of least-privilege access
 
-### 3. Model and Agent Behavior Evaluation
+### Model and agent behavior evaluation
 
-#### Solution architects review model behavior using structured evaluation tasks:
+#### Solution architects review model behavior using structured evaluation tasks
 
-- Identify hallucination patterns
+- Identify patterns of incorrect or fabricated information
 
 - Validate instructions and prompt adherence
 
@@ -86,13 +76,9 @@ Required Guardrails
 
 - Ensure the model does not produce harmful or misleading content
 
-#### Behavior Risk Radar
+### Fairness and bias review
 
-:::image type="content" source="../media/behavior-risk-radar.png" alt-text="Behavior Risk Radar.":::
-
-### 4. Fairness and Bias Review
-
-#### Evaluate:
+#### Evaluate
 
 - Potential disparate impact on different user groups
 
@@ -100,11 +86,11 @@ Required Guardrails
 
 - Mitigation strategies for biased or harmful outputs
 
-- Fairness testing using synthetic and realworld scenarios
+- Fairness testing using synthetic and real-world scenarios
 
-### 5. Transparency and User Experience
+### Transparency and user experience
 
-#### Ensure proper disclosure and clarity in the user interface:
+#### Ensure proper disclosure and clarity in the user interface
 
 - AI involvement is clearly communicated
 
@@ -114,9 +100,9 @@ Required Guardrails
 
 - Logging of user feedback for continuous improvement
 
-### 6. Responsible AI Validation Tools
+### Responsible AI validation tools
 
-#### Solution architects can leverage Microsoft's RAI toolset to validate solution performance:
+#### Solution architects can leverage Microsoft's RAI toolset to validate solution performance
 
 - RAI validation checks for declarative agents
 
@@ -126,11 +112,11 @@ Required Guardrails
 
 - Governance processes for review, approval, and signoff
 
-### 7. Operational Oversight and Governance
+### Operational oversight and governance
 
-Responsible AI is not a onetime review—it requires continuous monitoring.
+Responsible AI is not a one-time review—it requires continuous monitoring.
 
-#### Key elements include:
+#### Key elements include
 
 - Incident response plan for AI system failures
 
@@ -140,18 +126,16 @@ Responsible AI is not a onetime review—it requires continuous monitoring.
 
 - Sunset criteria for models no longer meeting safety or compliance requirements
 
-#### Responsible AI Lifecycle Flow
-
-:::image type="content" source="../media/responsible-ai-lifecycle.png" alt-text="Responsible AI Lifecycle Flow":::
+:::image type="content" source="../media/responsible-ai-lifecycle.png" alt-text="Responsible AI lifecycle flow.":::
 
 ## References
 
-- <https://www.microsoft.com/en-us/ai/principles-and-approach>
+- [Microsoft AI principles and approach](https://www.microsoft.com/en-us/ai/principles-and-approach)
 
-- [https://learn.microsoft.com/en-us/copilot/security/responsible-ai-overview-security-copilot](/copilot/security/responsible-ai-overview-security-copilot)
+- [Responsible AI overview for Microsoft Security Copilot](/copilot/security/responsible-ai-overview-security-copilot)
 
-- [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview](/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview)
+- [Responsible AI overview for Dynamics 365](/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview)
 
-- <https://www.microsoft.com/en-us/ai/tools-practices>
+- [Microsoft AI tools and practices](https://www.microsoft.com/en-us/ai/tools-practices)
 
-- [https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/rai-validation](/microsoft-365-copilot/extensibility/rai-validation)
+- [Responsible AI validation for Microsoft 365 Copilot extensibility](/microsoft-365-copilot/extensibility/rai-validation)

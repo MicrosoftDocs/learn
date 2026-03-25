@@ -1,46 +1,42 @@
 ## Overview
 
-Designing access controls for grounding data and modeltuning workflows is a critical responsibility for solution architects. AI systems depend on trustworthy, policyaligned grounding data and secure tuning processes to ensure predictable, compliant, and responsible outputs. Effective controls protect sensitive assets, enforce the principle of least privilege, and ensure AI behaviors remain aligned with organizational, legal, and ethical requirements.
+Designing access controls for grounding data and model-tuning workflows is a critical responsibility for solution architects. AI systems depend on trustworthy, policy-aligned grounding data and secure tuning processes to ensure predictable, compliant, and responsible outputs. Effective controls protect sensitive assets, enforce the principle of least privilege, and ensure AI behaviors remain aligned with organizational, legal, and ethical requirements.
 
-This unit provides a structured approach for evaluating and designing access controls around data ingestion, grounding retrieval, model evaluations, and supervised finetuning workflows.
+This unit provides a structured approach for evaluating and designing access controls around data ingestion, grounding retrieval, model evaluations, and supervised fine-tuning workflows.
 
-## 1. Foundation: Access Control Strategy for Grounding Data
+## Access control strategy for grounding data
 
 Grounding data is the authoritative information used to produce reliable model responses. Access to these data sources must follow a structured authorization model that protects confidentiality and prevents ungoverned data use.
 
-### Key Design Principles
+### Key design principles
 
 - **Least privilege by default:** Allow the minimum necessary access for each role, agent, model, or service.
 
-- **Rolealigned data partitions:** Separate grounding data by function (e.g., customer support, finance, engineering).
+- **Role-aligned data partitions:** Separate grounding data by function (e.g., customer support, finance, engineering).
 
 - **Clear ownership and stewardship:** Assign accountable stakeholders who govern quality and security of each data domain.
 
 - **Auditability:** All access events and data retrieval operations must be logged and reviewable.
 
-### Recommended Architecture
+## Securing grounding data retrieval workflows
 
-:::image type="content" source="../media/recommended-architecture.png" alt-text="Recommended Architecture Diagram.":::
+AI systems retrieve grounding data during search, retrieval-augmented generation (RAG), or context assembly. Each retrieval mechanism must enforce:
 
-## 2. Securing Grounding Data Retrieval Workflows
-
-AI systems retrieve grounding data during search, retrievalaugmented generation (RAG), or context assembly. Each retrieval mechanism must enforce:
-
-- **Connectorlevel authorization:** restricting which data types the model can query
+- **Connector-level authorization:** restricting which data types the model can query
 
 - **Structured query filtering:** preventing models from accessing disallowed fields
 
 - **DLP and sensitivity labeling:** applied across all data stores
 
-- **Regionaligned access rules:** ensuring data residency adherence
+- **Region-aligned access rules:** ensuring data residency adherence
 
 - **Retrieval Access Flow:** Prompt → Policy Check → Search Index → Sanitization Layer → Model Context Injection
 
-## 3. Access Controls for Model Tuning
+## Access controls for model tuning
 
-Modeltuning operations—evaluation, supervised finetuning, or reinforcement learning—require elevated permissions. These processes must be insulated from production operations.
+Model-tuning operations—evaluation, supervised fine-tuning, or reinforcement learning—require elevated permissions. These processes must be insulated from production operations.
 
-### Model Tuning Access Requirements
+### Model tuning access requirements
 
 - Segregated environments for **development, evaluation, and production**
 
@@ -52,15 +48,11 @@ Modeltuning operations—evaluation, supervised finetuning, or reinforcement lea
 
 - Restricted ability to promote new tuned models into production
 
-### Model Tuning Role Matrix
+## Designing guardrails for grounding data and tuning inputs
 
-:::image type="content" source="../media/model-tuning-role-matrix.png" alt-text="Model Tuning Role Matrix.":::
+Guardrails protect both users and the system by preventing unsafe or non-compliant data from influencing model behavior.
 
-## 4. Designing Guardrails for Grounding Data and Tuning Inputs
-
-Guardrails protect both users and the system by preventing unsafe or noncompliant data from influencing model behavior.
-
-### Examples of Guardrails
+### Examples of guardrails
 
 - Blocklists for prohibited document types
 
@@ -70,17 +62,15 @@ Guardrails protect both users and the system by preventing unsafe or noncomplian
 
 - Alerting and anomaly detection for unusual data access or tuning patterns
 
-### Guardrail Enforcement Model
-
 :::image type="content" source="../media/guardrail-enforcement-model.png" alt-text="Guardrail Enforcement Model.":::
 
-## 5. Operational Monitoring and Compliance Enforcement
+## Operational monitoring and compliance enforcement
 
 Continuous monitoring ensures access controls work as intended.
 
-### Operational Controls
+### Operational controls
 
-- Logging for prompt activity, tuning actions, and retrievalbased access
+- Logging for prompt activity, tuning actions, and retrieval-based access
 
 - Periodic reviews of RBAC assignments
 
@@ -90,8 +80,8 @@ Continuous monitoring ensures access controls work as intended.
 
 ## References
 
-- [https://learn.microsoft.com/en-us/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks](/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks)
+- [Put responsible AI frameworks into practice](/training/modules/embrace-responsible-ai-principles-practices/7-put-responsible-ai-frameworks)
 
-- [https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/3-search-data](/training/modules/build-copilot-ai-studio/3-search-data)
+- [Search data for building a copilot in AI Studio](/training/modules/build-copilot-ai-studio/3-search-data)
 
-- [https://learn.microsoft.com/en-us/azure/well-architected/ai/grounding-data-design](/azure/well-architected/ai/grounding-data-design)
+- [Grounding data design for AI workloads](/azure/well-architected/ai/grounding-data-design)

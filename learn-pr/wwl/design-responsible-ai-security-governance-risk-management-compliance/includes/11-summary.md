@@ -10,7 +10,7 @@ Learners also examined vulnerabilities unique to AI—such as prompt manipulatio
 
 By the end of the module, architects gained the skills to design AI solutions that balance innovation with accountability. They can now build and evaluate secure, governed, and compliant agent ecosystems that scale responsibly across diverse cloud environments.
 
-## Key Takeaways
+## Key takeaways
 
 - AI solutions must use identity, RBAC, and managed identities to enforce least‑privilege access for every agent, tool, and model.
 

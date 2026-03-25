@@ -1,12 +1,12 @@
 ## Overview
 
-Audit trails are essential for maintaining trust, compliance, and operational integrity across AIdriven systems. Solution architects must design mechanisms that provide full visibility into _who_ made changes, _what_ changes occurred, and _when_ modifications happened across models, data sources, prompts, configuration objects, and agent workflows.
+Audit trails are essential for maintaining trust, compliance, and operational integrity across AI-driven systems. Solution architects must design mechanisms that provide full visibility into _who_ made changes, _what_ changes occurred, and _when_ modifications happened across models, data sources, prompts, configuration objects, and agent workflows.
 
 This unit provides patterns for building robust auditing capabilities across Azure AI Foundry, model lifecycles, and data governance processes.
 
-## 1. Purpose of audit trails in AI systems
+## Purpose of audit trails in AI systems
 
-### Audit trails help organizations:
+### Audit trails help organizations
 
 - Track changes to model versions, parameters, training datasets, and evaluation results.
 
@@ -18,15 +18,15 @@ This unit provides patterns for building robust auditing capabilities across Azu
 
 - Strengthen operational governance by enabling approvals, rollbacks, and lifecycle controls.
 
-- A welldesigned audit system is continuous, immutable, and integrated into the AI platform's control plane.
+- A well-designed audit system is continuous, immutable, and integrated into the AI platform's control plane.
 
-## 2. Audit trail requirements for model changes
+## Audit trail requirements for model changes
 
 ### Model lifecycle events that must be audited
 
 - Registration of new model versions
 
-- Tuning operations such as finetuning, parameter updates, or evaluation runs
+- Tuning operations such as fine-tuning, parameter updates, or evaluation runs
 
 - Promotion of models between dev/test/prod environments
 
@@ -42,17 +42,17 @@ This unit provides patterns for building robust auditing capabilities across Azu
 
 - Timestamped change records
 
-- Rolebased attribution (linked to identity provider)
+- Role-based attribution (linked to identity provider)
 
-- JSONstructured logs for machine parsing
+- JSON-structured logs for machine parsing
 
 - Separation of duties and approval logging
 
-## 3. Audit trail requirements for data changes
+## Audit trail requirements for data changes
 
 Grounding data, training data, memory stores, semantic indexes, and application logs are core inputs into generative systems. 
 
-### You must audit:
+### You must audit
 
 - Data ingestion events
 
@@ -70,13 +70,13 @@ Grounding data, training data, memory stores, semantic indexes, and application 
 
 - Architects must ensure logs capture _metadata_, not _content_, to avoid unnecessary exposure of sensitive information.
 
-## 4. Azure AI Foundry controlplane auditing
+## Azure AI Foundry control-plane auditing
 
 Azure AI Foundry provides a centralized control plane for model registration, environment configuration, agent deployment, and diagnostic logging.
 
-### Key audit features include:
+### Key audit features include
 
-#### Foundry Activity Logs
+#### Foundry activity logs
 
 Track administrative actions across workspaces, registries, and deployments. Logs support export to:
 
@@ -86,7 +86,7 @@ Track administrative actions across workspaces, registries, and deployments. Log
 
 - SIEM tools (such as Sentinel)
 
-#### Foundry Diagnostics and Tracing
+#### Foundry diagnostics and tracing
 
 Diagnostics provide traceability of execution across:
 
@@ -98,11 +98,11 @@ Diagnostics provide traceability of execution across:
 
 - Failures, latency spikes, or unexpected behavior
 
-## 5. Designing audit pipelines with tracing
+## Designing audit pipelines with tracing
 
 Tracing allows architects to follow execution paths and debug generative AI behaviors. When integrated into audit trails, tracing provides:
 
-- Endtoend visibility of model inference
+- End-to-end visibility of model inference
 
 - Identification of performance bottlenecks
 
@@ -128,7 +128,7 @@ Tracing allows architects to follow execution paths and debug generative AI beha
 
 - Safety evaluation outcomes
 
-## 6. Designing auditready processes
+## Designing audit-ready processes
 
 ### Governance workflows to include
 
@@ -146,7 +146,7 @@ Tracing allows architects to follow execution paths and debug generative AI beha
 
 Define retention requirements with Legal, Compliance, and Information Security teams.<br>Common patterns:
 
-- 90 days for lowrisk workloads
+- 90 days for low-risk workloads
 
 - 12-24 months for regulated workloads
 
@@ -154,8 +154,8 @@ Define retention requirements with Legal, Compliance, and Information Security t
 
 ## References
 
-- [https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/overview?view=foundry](/azure/ai-foundry/control-plane/overview)
+- [Azure AI Foundry control plane overview](/azure/ai-foundry/control-plane/overview)
 
-- [https://learn.microsoft.com/en-us/training/modules/tracing-generative-ai-app/](/training/modules/tracing-generative-ai-app/)
+- [Tracing a generative AI app](/training/modules/tracing-generative-ai-app/)
 
-- [https://learn.microsoft.com/en-us/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics](/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics)
+- [Enable Azure AI Foundry diagnostics](/training/modules/azure-ai-foundry-secure-environment/enable-foundry-diagnostics)
