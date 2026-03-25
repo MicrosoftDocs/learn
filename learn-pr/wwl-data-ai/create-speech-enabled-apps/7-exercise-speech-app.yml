@@ -6,11 +6,10 @@ metadata:
   description: Exercise - Create a speech-enabled app
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/01/2025
+  ms.date: 03/10/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-speech-app.md)]
-

@@ -2,7 +2,7 @@ IoT devices and embedded systems present security challenges that differ from tr
 
 ## Understand the IoT threat landscape
 
-Security requirements for IoT and embedded systems should begin with threat modeling. The STRIDE framework — spoofing, tampering, repudiation, information disclosure, denial of service, and elevation of privilege — provides a structured approach for identifying threats across an IoT architecture.
+Security requirements for IoT and embedded systems should begin with threat modeling. The STRIDE framework—spoofing, tampering, repudiation, information disclosure, denial of service, and elevation of privilege—provides a structured approach for identifying threats across an IoT architecture.
 
 Microsoft's IoT security guidance organizes protection into four areas to scope your requirements:
 
@@ -76,7 +76,7 @@ Require segmentation that isolates IoT devices from enterprise IT resources. Gro
 - Communication patterns and required data flows
 - Trust level and security capabilities of the devices
 
-Use micro-segmentation with next-generation firewalls to enforce policies between IoT device groups and corporate networks. Keep IoT devices on dedicated network segments — separate from endpoints that your workforce accesses, such as workstations or file servers.
+Use micro-segmentation with next-generation firewalls to enforce policies between IoT device groups and corporate networks. Keep IoT devices on dedicated network segments—separate from endpoints that your workforce accesses, such as workstations or file servers.
 
 **Firewall and access controls**
 
@@ -88,7 +88,7 @@ Specify firewall rules that:
 
 **Air-gapped and isolated environments**
 
-Some IoT deployments require complete network isolation — for example, medical device networks, critical infrastructure sensors, or classified environments. For these scenarios, specify:
+Some IoT deployments require complete network isolation—for example, medical device networks, critical infrastructure sensors, or classified environments. For these scenarios, specify:
 
 - Physical separation from enterprise and internet-connected networks
 - Local sensor deployment for threat detection and asset inventory (Defender for IoT supports fully on-premises, air-gapped sensor management)
@@ -101,7 +101,7 @@ Continuous monitoring is essential for detecting threats across IoT environments
 
 **Microsoft Defender for IoT**
 
-Specify Microsoft Defender for IoT as the unified security solution for discovering and protecting IoT and embedded devices. Defender for IoT provides agentless, network-layer monitoring that identifies devices, assesses vulnerabilities, and detects threats — all without installing agents on endpoints. Key capabilities:
+Specify Microsoft Defender for IoT as the unified security solution for discovering and protecting IoT and embedded devices. Defender for IoT provides agentless, network-layer monitoring that identifies devices, assesses vulnerabilities, and detects threats—all without installing agents on endpoints. Key capabilities:
 
 - Continuous asset discovery across your IoT environment
 - Vulnerability management with risk-based mitigation recommendations
@@ -114,7 +114,7 @@ For enterprise IoT devices such as printers, smart TVs, VoIP phones, and confere
 
 **Agentless network monitoring**
 
-For constrained devices that can't support agents, require agentless monitoring through Defender for IoT network sensors. These sensors connect to SPAN ports or network TAPs and use deep packet inspection to monitor traffic passively — no changes to device configurations and no impact on production systems. The next unit covers Defender for IoT deployment models and OT-specific evaluation in detail.
+For constrained devices that can't support agents, require agentless monitoring through Defender for IoT network sensors. These sensors connect to SPAN ports or network TAPs and use deep packet inspection to monitor traffic passively—no changes to device configurations and no impact on production systems. The next unit covers Defender for IoT deployment models and OT-specific evaluation in detail.
 
 **Device health evaluation**
 
@@ -168,3 +168,18 @@ Consider the following factors:
 - **Legacy and brownfield devices**: Many organizations have existing devices designed before current security standards. Compensating controls through network monitoring, gateway-based protection, and device isolation are often necessary.
 - **Supply chain security**: Require verification of device integrity from manufacturing through deployment, following DPS device manufacturer security practices. Specify secure boot, firmware signing, and tamper-evident packaging.
 - **Compliance alignment**: Map requirements to relevant standards including IEC 62443 for industrial automation and NIST SP 800-183 for IoT security.
+
+## Microsoft solutions for IoT and embedded device security
+
+Microsoft provides a set of purpose-built solutions for securing IoT and embedded device environments:
+
+- **Microsoft Defender for IoT**: Agentless, network-layer security platform that provides continuous asset discovery, vulnerability management, and threat detection across IoT and OT environments. Deploys network sensors that use deep packet inspection to monitor device traffic without requiring agents. Integrates with Microsoft Sentinel and Defender XDR for unified SOC operations.
+- **Azure IoT Hub**: Managed cloud service that acts as a central message broker between IoT devices and backend services. Enforces per-device authentication (X.509 certificates, TPM attestation), manages device identities at scale, and supports cloud-to-device commands for security policy enforcement.
+- **Azure IoT Hub Device Provisioning Service (DPS)**: Zero-touch provisioning service that automates secure device registration and assignment to the correct IoT hub. Supports TPM and X.509 attestation for hardware-based identity verification during onboarding.
+- **Azure IoT Edge**: Runtime that extends cloud workloads to gateway devices at the edge. Provides secure module deployment, encrypted communications with IoT Hub, and local processing for constrained downstream devices that can't connect directly to the cloud.
+- **Device Update for IoT Hub**: Managed update service that delivers over-the-air firmware and software updates to IoT devices. Supports staged rollouts, A/B updates, compliance reporting, and rollback to maintain device security throughout the lifecycle.
+- **Azure Sphere**: Integrated hardware, OS, and cloud security platform for microcontroller-based IoT devices. Provides a secured OS with a hardware root of trust, certificate-based authentication, and continuous cloud-delivered security updates. Guardian modules extend protection to legacy devices.
+- **Windows IoT Enterprise**: Operating system for higher-capability fixed-function devices such as kiosks, medical terminals, industrial PCs, and point-of-sale systems. Provides enterprise security features including Secure Boot, BitLocker, Device Guard, and Microsoft Defender for Endpoint support. The Long-Term Servicing Channel (LTSC) delivers extended security updates for devices with fixed configurations.
+- **Azure IoT Central**: SaaS application platform that provides built-in device management, security policies, and role-based access control without requiring custom backend development. Enforces device authentication, manages firmware updates, and supports audit logging for compliance at scale.
+- **Azure IoT Operations**: Edge-native IoT platform built on Arc-enabled Kubernetes for managing industrial IoT assets at the edge. Provides secure data pipelines, unified cloud-based management of edge workloads, and integration with Azure security services for consistent policy enforcement across distributed environments.
+- **Microsoft Sentinel**: Cloud-native SIEM that aggregates and correlates IoT security data from Defender for IoT sensors alongside enterprise security signals. Provides IoT-specific analytics rules, workbooks, and automated playbooks for incident response across the IoT estate.

@@ -3,7 +3,7 @@ uid: learn.wwl.develop-language-solutions-azure-ai
 metadata:
   title: Develop natural language solutions in Azure
   description: Develop natural language solutions in Azure
-  ms.date: 08/28/2025
+  ms.date: 3/16/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: learning-path
@@ -13,29 +13,25 @@ prerequisites: |
   *   Familiarity with Azure and the Azure portal.
   *   Programming experience.
 summary: |
-  Natural language solutions use language models to interpret the semantic meaning of written or spoken language, and in some cases respond based on that meaning. You can use the Language service to build language models for your applications, and explore Microsoft Foundry to use generative models for speech.
+  Natural language solutions use language models to interpret the semantic meaning of written or spoken language, and in some cases respond based on that meaning. You can use Microsoft Foundry to develop AI apps and agents that can analyze text, transcribe and synthesize speech, and translate languages.
 iconUrl: /training/achievements/create-language-solution-azure-cognitive-services.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- ai-services
-- microsoft-foundry
+  - foundry-tools
+  - microsoft-foundry
 subjects:
-- natural-language-processing
+  - natural-language-processing
 modules:
-- learn.wwl.analyze-text-ai-language
-- learn.wwl.create-question-answer-solution-ai-language
-- learn.wwl.build-language-understanding-model
-- learn.wwl.custom-text-classification
-- learn.wwl.custom-name-entity-recognition
-- learn.wwl.translate-text-with-translator-service
-- learn.wwl.create-speech-enabled-apps
-- learn.wwl.translate-speech-speech-service
-- learn.wwl.develop-generative-ai-audio-apps
-- learn.wwl.develop-voice-live-agent
+  - learn.wwl.analyze-text-ai-language
+  - learn.wwl.develop-text-analysis-agent-language-mcp
+  - learn.wwl.develop-generative-ai-audio-apps
+  - learn.wwl.create-speech-enabled-apps
+  - learn.wwl.develop-speech-agent-speech-mcp
+  - learn.wwl.develop-voice-live-agent
+  - learn.wwl.translate-text-speech
 trophy:
   uid: learn.wwl.develop-language-solutions-azure-ai.trophy
-

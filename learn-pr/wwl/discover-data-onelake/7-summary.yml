@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-data-onelake.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of discovering and connecting to data in OneLake"
+  ms.date: 02/19/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

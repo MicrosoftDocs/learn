@@ -1,5 +1,7 @@
 As a security architect, you evaluate whether network designs meet your organization's security requirements and align with industry best practices. Rather than building networks from scratch, you assess existing or proposed architectures to identify gaps, recommend improvements, and ensure alignment with frameworks like Zero Trust.
 
+A structured evaluation follows a consistent approach: document the current network architecture and traffic flows, assess the design against security frameworks and controls, identify gaps prioritized by risk and business impact, and produce actionable recommendations. The sections that follow provide the frameworks and criteria you apply at each stage of evaluation.
+
 ## Evaluate network designs against Zero Trust principles
 
 Zero Trust is the foundational framework for evaluating modern network security designs. Traditional perimeter-based networks assume that all systems inside the boundary can be trusted. This assumption fails when employees access resources from anywhere and attackers who breach the perimeter can move laterally across the network.
@@ -24,10 +26,10 @@ The [Microsoft cloud security benchmark (MCSB) v2](/security/benchmark/azure/ove
 | **NS-4**: Deploy intrusion detection/intrusion prevention systems (IDS/IPS) | Azure Firewall Premium IDPS, host-based EDR |
 | **NS-5**: Deploy DDoS protection | Azure DDoS Protection tiers on internet-facing virtual networks |
 | **NS-6**: Deploy web application firewall | Azure WAF on Application Gateway or Front Door |
-| **NS-7**: Manage network security centrally and effectively | Azure Virtual Network Manager Security Admin Rules, Firewall Manager, flow logs v2, Traffic Analytics |
+| **NS-7**: Manage network security centrally and effectively | Azure Virtual Network Manager Security Admin Rules, Firewall Manager, virtual network flow logs, Traffic Analytics |
 | **NS-8**: Detect and disable insecure services and protocols | Microsoft Sentinel insecure protocol detection |
 | **NS-9**: Connect on-premises or cloud network privately | ExpressRoute, VPN, virtual network peering |
-| **NS-10**: Ensure Domain Name System (DNS) security | Azure Private DNS, Defender for DNS (included in Defender for Servers Plan) |
+| **NS-10**: Ensure Domain Name System (DNS) security | Azure Private DNS, Azure DNS Private Resolver, Defender for DNS (included with Defender for Servers Plan 2) |
 
 Each MCSB v2 control also maps to industry frameworks such as CIS Controls v8.1, NIST SP 800-53 r5, PCI-DSS v4, NIST CSF v2.0, ISO 27001:2022, and SOC 2, helping you align your evaluation to regulatory and compliance requirements. When you evaluate a network design, use these controls as a checklist to identify gaps and prioritize remediation.
 
@@ -52,6 +54,8 @@ A strong network design applies defense-in-depth by layering multiple security c
 - **[Azure Private Link](/azure/private-link/private-link-overview)** to access PaaS services through private endpoints, removing public internet exposure and keeping traffic on the Azure backbone.
 - **[Azure Bastion](/azure/bastion/bastion-overview)** for secure RDP/SSH access without exposing management ports, combined with just-in-time (JIT) VM access to limit when ports are open.
 - **Azure ExpressRoute** for hybrid connectivity that keeps sensitive traffic off the public internet.
+- **Encryption in transit** across all network paths. Verify that TLS 1.2 or later is enforced on all endpoints, evaluate [virtual network encryption](/azure/virtual-network/virtual-network-encryption-overview) for VM-to-VM traffic, and confirm that hybrid connections use MACsec (ExpressRoute Direct) or IPsec (VPN) encryption.
+- **DNS security** controls including Azure Private DNS zones for internal name resolution, Azure DNS Private Resolver for conditional forwarding, and Azure Firewall DNS proxy to prevent DNS exfiltration.
 
 ## Evaluate identity-aware network security with Global Secure Access
 
@@ -77,3 +81,7 @@ A network design is incomplete without continuous visibility. MCSB v2 controls N
 - **Centralized SIEM integration** that sends network logs to Microsoft Sentinel for cross-source correlation and incident detection.
 
 Later units in this module cover posture management and monitoring design in detail.
+
+## Prioritize evaluation findings by risk
+
+After evaluating all areas, prioritize findings based on exposure and impact. Focus first on gaps that affect internet-facing workloads, resources that process sensitive or regulated data, and controls mapped to your compliance requirements. Use Defender for Cloud secure score and attack path analysis to identify which network misconfigurations present the highest exploitable risk, and sequence remediation accordingly.

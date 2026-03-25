@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=08b19b6b-832c-4b15-a30a-7f1fc6f930c6]
+
 Collaborative development in Azure Databricks relies on effective **version control practices**. When multiple team members work on notebooks and code files simultaneously, you need a structured approach to **isolate changes**, **review code**, and **integrate work** without disrupting production workflows.
 
 :::image type="content" source="../media/3-manage-branching-pull-requests-conflicts.png" alt-text="Diagram showing how to manage branching, pull requests and conflicts." border="false" lightbox="../media/3-manage-branching-pull-requests-conflicts.png":::

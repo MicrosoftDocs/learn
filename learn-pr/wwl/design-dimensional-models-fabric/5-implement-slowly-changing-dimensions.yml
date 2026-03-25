@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dimensional-models-fabric.implement-slowly-changing-dimensions
+title: Implement slowly changing dimensions
+metadata:
+  title: Implement Slowly Changing Dimensions
+  description: "Learn patterns for implementing slowly changing dimensions in analytical data stores"
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-implement-slowly-changing-dimensions.md)]

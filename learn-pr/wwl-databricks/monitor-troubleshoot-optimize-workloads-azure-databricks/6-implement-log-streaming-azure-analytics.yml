@@ -4,7 +4,7 @@ title: Implement log streaming with Azure Log Analytics
 metadata:
   title: Implement Log Streaming with Azure Log Analytics
   description: Learn how to implement log streaming from Azure Databricks to Azure Log Analytics for centralized monitoring, querying with KQL, and creating alerts for proactive troubleshooting.
-  ms.date: 12/07/2025
+  ms.date: 03/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

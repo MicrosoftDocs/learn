@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.deploy-configure-internet-information-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 03/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Where is the content root of the Default Web Site on a new IIS installation?
+      choices:
+        - content: C:\wwwroot\
+          isCorrect: false
+          explanation: Incorrect. This path doesn't exist by default; the correct path includes the "inetpub" directory.
+        - content: C:\inetpub\wwwroot\
+          isCorrect: true
+          explanation: Correct! The Default Web Site's content root is C:\inetpub\wwwroot, where the default welcome file iisstart.htm is located.
+        - content: "%SystemDrive%\\Web\\Default Site\\"
+          isCorrect: false
+          explanation: Incorrect. This is not a valid default IIS path.
+        - content: C:\Program Files\IIS\Default\
+          isCorrect: false
+          explanation: Incorrect. IIS doesn't store website content under Program Files.
+    - content: Which of the following is one of the default document file names for IIS?
+      choices:
+        - content: Default.js
+          isCorrect: false
+          explanation: Incorrect. Default.js isn't in the IIS default document list.
+        - content: index.md
+          isCorrect: false
+          explanation: Incorrect. index.md isn't in the IIS default document list.
+        - content: home.aspx
+          isCorrect: false
+          explanation: Incorrect. home.aspx isn't in the default IIS document list.
+        - content: iisstart.htm
+          isCorrect: true
+          explanation: Correct! iisstart.htm is in the IIS default document list.
+    - content: Which firewall port must be open to allow users to access a website on HTTP, and which additional port is needed for HTTPS?
+      choices:
+        - content: Port 80 for HTTP, and port 443 for HTTPS
+          isCorrect: true
+          explanation: Correct! Port 80 is the standard HTTP port; port 443 is the standard HTTPS port. Both must be open for users to access IIS-hosted websites.
+        - content: Port 443 for HTTP, and port 80 for HTTPS
+          isCorrect: false
+          explanation: Incorrect. These are reversed. Port 80 is HTTP, port 443 is HTTPS.
+        - content: Port 25 for HTTP, and port 110 for HTTPS
+          isCorrect: false
+          explanation: Incorrect. Port 25 is SMTP email; port 110 is POP3 email. Neither is used for web hosting.

@@ -39,3 +39,14 @@ quiz:
     - content: "Azure Advisor"
       isCorrect: false
       explanation: "Incorrect. Azure Advisor provides recommendations for cost optimization, not cost estimation."
+  - content: "You have a workload that can tolerate interruptions and should run at the lowest possible compute cost. Which option is typically the best fit?"
+    choices:
+    - content: "Spot Virtual Machines"
+      isCorrect: true
+      explanation: "Correct. Spot Virtual Machines can provide significant discounts for interruptible workloads, with the tradeoff that capacity can be reclaimed by Azure."
+    - content: "Reservations"
+      isCorrect: false
+      explanation: "Incorrect. Reservations are best for stable, predictable usage where you commit to capacity over time."
+    - content: "Pay-as-you-go only"
+      isCorrect: false
+      explanation: "Incorrect. Pay-as-you-go provides flexibility, but it doesn't specifically target the lowest cost for interruptible compute workloads."

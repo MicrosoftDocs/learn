@@ -4,10 +4,10 @@ title: Validate alignment of Conditional Access policies with a Zero Trust strat
 metadata:
   title: Validate alignment of Conditional Access policies with a Zero Trust strategy
   description: "Validate that Conditional Access policies enforce Zero Trust principles of explicit verification, least privilege, and assume breach."
-  ms.date: 01/30/2026
+  ms.date: 03/03/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 13
 content: |
   [!include[](includes/5-align-conditional-access-zero-trust.md)]

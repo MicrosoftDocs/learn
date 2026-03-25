@@ -1,6 +1,6 @@
-Imagine you work for a freight company that uses ships to transport goods across the world. The operations department uses a small system that tracks where all the company's ships are docked. Due to staff increases, your company has decided to move this system to Kubernetes.
+Imagine you work for a freight company that uses ships to transport goods across the world. The operations department uses a small system that tracks where each ship is docked. Due to staff increases, your company decided to move this system to Kubernetes.
 
-The system's application uses Azure Cosmos DB as a database, and it's built through a separated back end. You've been tasked with determining how to manage your database access in this distributed environment and how to deploy a new database to support this critical application.
+The system's application uses Azure Cosmos DB as a database built through a separate back end. You were assigned to determine how to manage your database access in this distributed environment and how to deploy a new database to support this critical application.
 
 ## Learning objectives
 

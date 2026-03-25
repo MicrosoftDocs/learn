@@ -1,108 +1,116 @@
-Microsoft Defender for Cloud provides the tools to evaluate your security posture across hybrid and multicloud environments. This unit covers how Defender for Cloud implements MCSB-based assessment and the key metrics and tools you use to measure and improve your posture.
+Microsoft Defender for Cloud uses secure score as the primary metric for evaluating and tracking your security posture. Understanding how secure score works helps you prioritize remediation, set targets, and demonstrate posture improvement to stakeholders.
 
-## How Defender for Cloud evaluates security posture
+## Microsoft secure scores in context
 
-Defender for Cloud continuously assesses your resources against the Microsoft Cloud Security Benchmark (MCSB) and generates security recommendations when configurations don't meet the benchmark requirements. By default, when you enable Defender for Cloud on an Azure subscription, MCSB is automatically enabled as the baseline security standard. This automated evaluation process:
+Microsoft provides several secure scores across its security portfolio, each measuring posture for a different domain. Before diving into the Defender for Cloud scores used for cloud posture management, it helps to understand where they fit in the broader landscape:
 
-- **Discovers assets** across Azure subscriptions, AWS accounts, and GCP projects
-- **Assesses configurations** against MCSB controls and other enabled security standards
-- **Generates recommendations** with remediation guidance for each identified gap
-- **Calculates a secure score** that quantifies your overall posture
+| Score | Domain | Portal | Primary sources |
+|-------|--------|--------|-----------------|
+| Microsoft Secure Score | Identity, devices, apps, data | Microsoft Defender portal (security.microsoft.com) | Microsoft Entra, Defender for Endpoint, Defender for Cloud Apps, Microsoft 365 services |
+| Cloud Secure Score | Cloud posture (multicloud) | Microsoft Defender portal → Exposure Management → Initiatives | Microsoft Defender for Cloud (Azure, AWS, GCP) |
+| Classic Secure Score | Cloud posture (control-based) | Azure portal → Defender for Cloud | Microsoft Defender for Cloud (MCSB controls) |
+| Exposure Secure Score | Device and endpoint posture | Microsoft Defender portal → Exposure Management | Microsoft Defender for Endpoint |
 
-The following table summarizes the evaluation capabilities available in each CSPM tier:
+For this module's focus on **security posture management in hybrid and multicloud environments**, the relevant scores are the **Cloud Secure Score** and the **Classic Secure Score**—both from Microsoft Defender for Cloud. The broader Microsoft Secure Score covers identity, device, and application posture, which falls outside the scope of cloud infrastructure posture management. However, all these scores are visible in the Microsoft Defender portal's Exposure Management experience, giving security architects a consolidated view across domains.
 
-| Capability | Foundational CSPM | Defender CSPM | Coverage |
-|--|--|--|--|
-| Continuous assessment against MCSB | ✓ | ✓ | Azure, AWS, GCP |
-| Security recommendations | ✓ | ✓ | Azure, AWS, GCP, on-premises |
-| Secure score | ✓ | ✓ | Azure, AWS, GCP, on-premises |
-| Attack path analysis | - | ✓ | Azure, AWS, GCP |
-| Cloud security explorer | - | ✓ | Azure, AWS, GCP |
-| Regulatory compliance assessments | - | ✓ | Azure, AWS, GCP |
-| Security governance | - | ✓ | Azure, AWS, GCP |
-| Agentless VM vulnerability scanning | - | ✓ | Azure, AWS, GCP |
-| Risk prioritization | - | ✓ | Azure, AWS, GCP |
+## Understanding Defender for Cloud secure score models
 
-## Measuring posture with secure score
+Defender for Cloud provides two secure score models, each available in different portals:
 
-Secure score is Defender for Cloud's primary metric for evaluating security posture. Defender for Cloud offers two secure score models depending on where you access the score:
+| Model | Portal | How it calculates |
+|-------|--------|-------------------|
+| Cloud Secure Score | Microsoft Defender portal | Risk-based, factoring in asset criticality, risk level, and exposure |
+| Classic Secure Score | Azure portal | Control-based, using the ratio of remediated recommendations per security control |
 
-| Model | Portal | Calculation approach |
-|-------|--------|---------------------|
-| Cloud Secure Score (risk-based) | Microsoft Defender portal | Incorporates asset risk factors, asset criticality, and recommendation risk levels |
-| Classic Secure Score | Azure portal | Based on security controls and the ratio of remediated recommendations |
+Both models measure your security posture as a percentage from 0 to 100, but they use different calculations and produce different values. When reporting to stakeholders, consistently use one model to avoid confusion.
 
-The Cloud Secure Score ranges from 0 to 100, with 100 indicating an optimal security posture. This model provides more accurate prioritization by factoring in contextual risk.
+:::image type="content" source="../media/cloud-secure-score.png" alt-text="Screenshot of the Cloud Secure Score showing the risk-based score and Defender CSPM plan status." lightbox="../media/cloud-secure-score.png":::
 
-:::image type="content" source="../media/cloud-secure-score.png" alt-text="Screenshot of the Cloud Secure Score and the Defender CSPM plan." lightbox="../media/cloud-secure-score.png":::
+## How Cloud Secure Score works
 
-### How Cloud Secure Score works
+Cloud Secure Score uses a risk-based calculation that provides more actionable prioritization. The score aggregates open recommendations while weighting them by:
 
-The Cloud Secure Score is a risk-based calculation that aggregates open recommendations while factoring in:
+- **Recommendation risk level**: Critical, high, medium, and low severity findings carry different weights. Critical recommendations have the most impact on your score.
+- **Asset risk factors**: Contextual factors such as internet exposure, data sensitivity, and lateral movement potential influence how each finding affects the score.
+- **Asset criticality**: The business importance of each asset determines how much weight its recommendations carry.
 
-- **Recommendation risk level**: Critical, high, medium, and low severity findings are weighted accordingly
-- **Asset risk factors**: Contextual factors such as internet exposure and data sensitivity
-- **Asset criticality**: The importance of each asset to your organization
+This approach means fixing a critical vulnerability on an internet-facing server processing sensitive data improves your score more than fixing a low-severity configuration issue on an isolated test machine. You access the Cloud Secure Score through the Defender portal under **Exposure Management > Initiatives > Cloud Security**.
 
-This risk-based approach helps you prioritize remediation efforts on the issues that pose the greatest threat to your environment. As you remediate recommendations, especially those with higher risk levels, your secure score increases.
+## How Classic Secure Score works
 
-### How Classic Secure Score works
+The classic model in the Azure portal organizes recommendations into security controls, where each control represents a group of related security recommendations addressing a specific risk area.
 
-The classic model groups recommendations into security controls, where each control represents a security risk area. Your control score is calculated based on the ratio of remediated recommendations to total recommendations within that control, multiplied by the control's maximum points. The overall score is the sum of all control scores.
+:::image type="content" source="../media/score-on-recommendations-page.png" alt-text="Screenshot of the Defender for Cloud recommendations page showing the secure score, recommendation status, and resource health." lightbox="../media/score-on-recommendations-page.png":::
+
+Each control has a maximum score value. Your score for a control is calculated based on the ratio of healthy resources to total resources for the recommendations in that control, multiplied by the control's maximum points. The overall secure score is the sum of all control scores.
+
+Key security controls include:
+
+- **Remediate vulnerabilities**: Address vulnerability findings on machines and applications
+- **Enable encryption at rest**: Ensure data is encrypted in storage
+- **Manage access and permissions**: Restrict excessive access rights
+- **Encrypt data in transit**: Enforce transport encryption
+- **Enable endpoint protection**: Deploy anti-malware and EDR solutions
+- **Restrict unauthorized network access**: Secure network configurations
+- **Apply adaptive application control**: Control which applications run on machines
 
 > [!NOTE]
-> The two models have different calculations and produce different score values. When reporting on security posture, be consistent about which model you use.
+> Fixing all recommendations within a single control gives you the maximum score increase for that control. Partially remediating recommendations within a control still improves your score proportionally. Recommendations flagged as Preview don't affect secure score calculations.
 
-### Using secure score for evaluation
+## Accessing secure score across views
 
-Secure score appears in multiple locations within Defender for Cloud:
+Secure score appears in multiple locations, each serving a different evaluation purpose:
 
-- **Overview dashboard**: Shows your current score at a glance
-- **Secure score page**: Breaks down the score by subscription and management group
-- **Recommendations page**: Displays how each recommendation impacts your score
-- **Workbooks**: Provides the "Secure Score Over Time" report for tracking trends
+- **Overview dashboard**: The Defender for Cloud overview shows your current score alongside other key security metrics including active recommendations, security alerts, and resource health.
 
-When evaluating your security posture, use secure score to:
+- **Secure score dedicated page**: Breaks down the score by subscription. Use this view to compare posture across subscriptions and identify which environments need the most attention.
 
-- **Establish a baseline**: Document your initial score when first enabling Defender for Cloud
-- **Track improvement**: Monitor score changes over time to demonstrate posture improvement
-- **Prioritize remediation**: Focus on recommendations with higher risk levels for maximum score impact
-- **Compare across environments**: Compare scores between subscriptions or cloud environments
+- **Management group view**: Toggle the management group view on the secure score page to see scores organized by your Azure management group hierarchy. This helps evaluate posture across organizational units and identify management groups with the weakest security posture.
 
-## Advanced evaluation with Defender CSPM
+# [Overview dashboard](#tab/overview)
+:::image type="content" source="../media/score-on-main-dashboard.png" alt-text="Screenshot of the Defender for Cloud overview page highlighting the secure score section." lightbox="../media/score-on-main-dashboard.png":::
 
-Defender CSPM provides additional tools for deeper security posture evaluation.
+# [Secure score dedicated page](#tab/secure-score-dedicated-page)
+:::image type="content" source="../media/score-on-dedicated-dashboard.png" alt-text="Screenshot of the Defender for Cloud secure score page showing the overall score and per-subscription breakdown." lightbox="../media/score-on-dedicated-dashboard.png":::
 
-### Attack path analysis
+# [Management group view](#tab/management-group-view)
+:::image type="content" source="../media/secure-score-management-groups.png" alt-text="Screenshot of the secure score page with management group grouping enabled, showing scores for management groups and subscriptions." lightbox="../media/secure-score-management-groups.png":::
 
-Attack path analysis uses the cloud security graph to identify exploitable paths that attackers could use to reach high-impact assets. The analysis considers:
+---
 
-- Internet exposure
-- Permissions and access rights
-- Lateral movement possibilities
-- Vulnerabilities on resources along the path
+**Recommendations page**: Shows how each recommendation and control impacts your score, with potential score increases listed alongside each control.
 
-Attack paths are prioritized by risk, helping you focus remediation on the issues that pose the greatest threat to your critical assets.
+:::image type="content" source="../media/defender-for-cloud-recommendations.png" alt-text="Screenshot of the Microsoft Defender for Cloud recommendations page." lightbox="../media/defender-for-cloud-recommendations.png":::
 
-:::image type="content" source="../media/security-map.png" alt-text="Screenshot of a conceptualized graph that shows the complexity of security graphing." lightbox="../media/security-map.png":::
+## Tracking secure score over time
 
-### Cloud security explorer
+Defender for Cloud provides the **Secure Score Over Time** workbook that charts your score trends. This workbook displays weekly score progression for each security control, top recommendations with recent increases in unhealthy resources, and historical trends for identifying positive or negative trajectories.
 
-Cloud security explorer lets you run graph-based queries to proactively identify security risks. You can build custom queries that combine multiple risk factors, such as:
+:::image type="content" source="../media/secure-score-over-time-snip.png" alt-text="Screenshot of the Secure Score Over Time workbook showing control score trends and top recommendations with unhealthy resource counts." lightbox="../media/secure-score-over-time-snip.png":::
 
-- Find all internet-exposed VMs with critical vulnerabilities
-- Identify storage accounts with public access containing sensitive data
-- Discover identities with excessive permissions to critical resources
+Use this workbook to:
 
-This capability enables you to evaluate posture against your organization's specific risk concerns beyond the standard MCSB controls.
+- **Establish baselines**: Document your starting score when first enabling Defender for Cloud
+- **Identify regressions**: Spot score drops from new deployments or configuration changes
+- **Demonstrate progress**: Show score improvement over time to demonstrate security investment effectiveness
+- **Correlate events**: Match score changes with deployment activities or security incidents
 
-## Evaluation across multiple clouds
+For long-term analysis, export secure score data to Log Analytics using continuous export. This enables custom KQL queries, Power BI dashboards, and integration with your broader reporting infrastructure. You can also use the REST API to retrieve scores programmatically for custom reporting.
 
-Defender for Cloud's multicloud connectors enable consistent posture evaluation across Azure, AWS, and GCP. When you connect cloud accounts:
+## Using secure score for posture evaluation
 
-- Resources are discovered and assessed against MCSB
-- Recommendations appear in the unified Defender for Cloud dashboard
-- Secure score incorporates findings from all connected environments
-- Attack paths can span multiple cloud providers
+As a security architect, use secure score strategically to evaluate and drive posture improvement:
 
-This unified evaluation approach lets you compare posture across cloud platforms and identify where to focus security improvements.
+**Set target scores**: Establish target scores for each subscription or management group. Targets create accountability and provide measurable goals for remediation teams.
+
+**Prioritize by impact**: Focus remediation on recommendations with the highest potential score increase. In the classic model, controls with the highest point values offer the biggest gains. In the Cloud Secure Score, critical recommendations on high-value assets provide the greatest benefit.
+
+**Compare across environments**: Use per-subscription scores to compare posture across production, development, and test environments. Different environments may have different target scores reflecting their risk tolerance.
+
+**Report by scope**: Present scores at the management group level for executive reporting and at the subscription level for operational teams. This layered reporting aligns security posture data with organizational accountability.
+
+## Secure score across multicloud
+
+When you connect AWS accounts and GCP projects to Defender for Cloud, resources from these environments contribute to your secure score calculation. Recommendations for AWS and GCP resources appear alongside Azure recommendations, and their remediation improves your overall score. This multicloud integration provides a single score that reflects posture across your entire cloud estate.
+
+With secure score providing the measurement framework, the next step is designing the integrated posture management solution that defines how Defender for Cloud connects across your hybrid and multicloud environments.

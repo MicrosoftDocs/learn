@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Segoe UI, sans-serif" font-size="13">
+  <title>Eventhouse Streaming Architecture</title>
+  <desc>Diagram showing point-of-sale systems streaming inventory events to eventhouse with real-time dashboard powered by KQL queries.</desc>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+    <marker id="arr-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8A4D00"/>
+    </marker>
+    <marker id="arr-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#006464"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FAFAFA" rx="4"/>
+
+  <!-- LEFT: POS Systems -->
+  <text x="75" y="36" text-anchor="middle" font-size="11" font-weight="600" fill="#444">POS SYSTEMS</text>
+
+  <!-- Store POS 1 -->
+  <rect x="16" y="52" width="118" height="44" rx="8" fill="#FFE0B2" stroke="#8A4D00" stroke-width="1"/>
+  <text x="75" y="79" text-anchor="middle" fill="#4E2600" font-size="12">Store POS #1</text>
+
+  <!-- Store POS 2 -->
+  <rect x="16" y="112" width="118" height="44" rx="8" fill="#FFE0B2" stroke="#8A4D00" stroke-width="1"/>
+  <text x="75" y="139" text-anchor="middle" fill="#4E2600" font-size="12">Store POS #2</text>
+
+  <!-- Store POS 3 -->
+  <rect x="16" y="172" width="118" height="44" rx="8" fill="#FFE0B2" stroke="#8A4D00" stroke-width="1"/>
+  <text x="75" y="199" text-anchor="middle" fill="#4E2600" font-size="12">Store POS #3</text>
+
+  <!-- Streaming arrows (zigzag/wavy style) -->
+  <path d="M 134,74 Q 152,64 162,74 Q 172,84 182,74 L 220,74" fill="none" stroke="#8A4D00" stroke-width="2" marker-end="url(#arr-orange)"/>
+  <path d="M 134,134 Q 152,124 162,134 Q 172,144 182,134 L 220,134" fill="none" stroke="#8A4D00" stroke-width="2" marker-end="url(#arr-orange)"/>
+  <path d="M 134,194 Q 152,184 162,194 Q 172,204 182,194 L 220,194" fill="none" stroke="#8A4D00" stroke-width="2" marker-end="url(#arr-orange)"/>
+  <text x="174" y="58" text-anchor="middle" fill="#6B3B00" font-size="9" font-style="italic">streaming</text>
+
+  <!-- CENTER: Eventhouse -->
+  <text x="360" y="30" text-anchor="middle" font-size="12" font-weight="600" fill="#444">EVENTHOUSE</text>
+
+  <!-- Outer container -->
+  <rect x="220" y="40" width="280" height="230" rx="12" fill="#FFF3E0" stroke="#8A4D00" stroke-width="2"/>
+
+  <!-- Band 1: Streaming Ingestion (light bg, dark text: 6.75:1) -->
+  <rect x="232" y="52" width="256" height="56" rx="8" fill="#FFB74D"/>
+  <text x="360" y="80" text-anchor="middle" fill="#3E1F00" font-size="12" font-weight="600">Streaming Ingestion</text>
+  <text x="360" y="96" text-anchor="middle" fill="#4E2600" font-size="10">High-throughput event capture</text>
+
+  <!-- Band 2: Time-Series Storage (darkened to #B85500 for 4.8:1 with white) -->
+  <rect x="232" y="118" width="256" height="56" rx="8" fill="#B85500"/>
+  <text x="360" y="146" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Time-Series Storage</text>
+  <text x="360" y="162" text-anchor="middle" fill="#FFF" font-size="10">Optimized columnar format</text>
+
+  <!-- Band 3: KQL Query Engine (dark red-orange, 8.6:1 with white) -->
+  <rect x="232" y="184" width="256" height="56" rx="8" fill="#BF360C"/>
+  <text x="360" y="212" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">KQL Query Engine</text>
+  <text x="360" y="228" text-anchor="middle" fill="#FFCCBC" font-size="10">Real-time analytical queries</text>
+
+  <!-- TOP RIGHT: Real-Time Dashboard (darkened to #AB5F00 for 4.9:1 with white) -->
+  <line x1="500" y1="96" x2="585" y2="96" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="585" y="62" width="186" height="68" rx="10" fill="#AB5F00"/>
+  <!-- Refresh icon -->
+  <circle cx="618" cy="88" r="10" fill="none" stroke="#FFF" stroke-width="1.5"/>
+  <path d="M 614,80 L 618,78 L 618,84" fill="#FFF"/>
+  <text x="682" y="88" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Real-Time</text>
+  <text x="682" y="104" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Dashboard</text>
+  <text x="678" y="122" text-anchor="middle" fill="#FFF" font-size="10">Auto-refresh (seconds)</text>
+
+  <!-- BOTTOM RIGHT: Lakehouse Archive (darkened teal #006464 for 5.8:1 with white) -->
+  <line x1="400" y1="270" x2="590" y2="320" stroke="#006464" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arr-teal)"/>
+  <text x="490" y="282" text-anchor="middle" fill="#005050" font-size="10" font-weight="600">Event Stream</text>
+
+  <rect x="598" y="296" width="172" height="56" rx="10" fill="#006464"/>
+  <text x="684" y="320" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Lakehouse</text>
+  <text x="684" y="338" text-anchor="middle" fill="#E0F2F1" font-size="11">(Archive)</text>
+
+  <!-- Legend -->
+  <g transform="translate(16, 340)">
+    <path d="M 0,8 Q 8,2 14,8 Q 20,14 26,8" fill="none" stroke="#8A4D00" stroke-width="2"/>
+    <text x="34" y="12" fill="#555" font-size="10">Streaming data</text>
+    <line x1="120" y1="8" x2="150" y2="8" stroke="#555" stroke-width="1.5"/>
+    <text x="158" y="12" fill="#555" font-size="10">Data flow</text>
+    <line x1="220" y1="8" x2="250" y2="8" stroke="#006464" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="258" y="12" fill="#555" font-size="10">Archive / reference</text>
+  </g>
+</svg>
