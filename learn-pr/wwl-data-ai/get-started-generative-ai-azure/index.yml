@@ -2,16 +2,16 @@
 uid: learn.wwl.get-started-generative-ai-azure
 hidden: true
 metadata:
-  title: (AI-900) Get started with generative AI and agents in Microsoft Foundry
-  description: "Learn how you can build generative AI applications and agents in Microsoft Foundry. Understand how to use Microsoft Foundry's extensive model marketplace, playgrounds, and evolving features."
+  title: (AI-900) Get started with generative AI and agents in Microsoft Foundry (deprecated)
+  description: "Get started with generative AI and agents in Microsoft Foundry."
   ms.date: 12/5/2025
   author: wwlpublish
   ms.author: sheryang
   ms.service: azure-ai-foundry
   ms.topic: module
   ai-usage: ai-assisted
-title: (AI-900) Get started with generative AI and agents in Microsoft Foundry
-summary: Learn how you can build generative AI applications and agents in Microsoft Foundry. Understand how to use Microsoft Foundry's extensive model marketplace, playgrounds, and evolving features.
+title: (AI-900) Get started with generative AI and agents in Microsoft Foundry (deprecated)
+summary: This module is deprecated, as is the associated Microsoft course [AI-900 (Introduction to AI in Azure)](/training/courses/ai-900t00). This course has been replaced with a new, updated course, [AI-901 (Introduction to AI in Azure)](/training/courses/ai-901t00). The new course provides a more comprehensive and up-to-date introduction to AI concepts and Azure-based AI solutions.
 abstract: Get started with generative AI and agents in Microsoft Foundry
 prerequisites: Ability to navigate Azure portal
 iconUrl: /training/achievements/fundamentals-azure-ai-services.svg
@@ -24,7 +24,7 @@ roles:
   - solution-architect
   - student
 products:
-  - azure-ai-foundry
+  - microsoft-foundry
 units:
   - learn.wwl.get-started-generative-ai-azure.introduction
   - learn.wwl.get-started-generative-ai-azure.generative-ai

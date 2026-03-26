@@ -6,11 +6,10 @@ metadata:
   description: It's important to plan and prepare for an AI development project.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/26/2026
+  ms.date: 3/16/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-

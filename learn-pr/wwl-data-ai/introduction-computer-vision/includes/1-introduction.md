@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=0705d737-1435-48a3-b375-2b62afce381b]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=095a6dcd-560e-402a-80a6-67671bdfd538]
 
 ::: zone-end
 
@@ -8,7 +8,7 @@
 
 **Computer vision** is one of the core areas of artificial intelligence (AI), and focuses on creating solutions that enable AI applications to process visual information.
 
-Consider these scenarios: 
+Consider these scenarios:
 
 - An autonomous vehicle needs to detect and respond to traffic and pedestrians.
 - A store uses smart checkouts with cameras to determine the products in a customer's basket.

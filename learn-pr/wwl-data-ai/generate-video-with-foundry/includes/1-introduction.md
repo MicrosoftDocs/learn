@@ -1,4 +1,4 @@
-Generative AI models enable you to develop chat-based applications that reason over and respond to input. Often this input takes the form of a text-based prompt, but increasingly multimodal models that can respond to visual input are becoming available.
+Generative AI has expanded beyond text and images to video creation. With Sora 2 in Microsoft Foundry, you can generate realistic and imaginative video scenes from text prompts, reference images, or by remixing existing videos.
 
-In this module, we'll discuss vision-enabled generative AI and explore how you can use Microsoft Foundry to create generative AI solutions that respond to prompts that include a mix of text and image data.
+In this module, you'll learn how to deploy Sora 2, write effective prompts for video generation, and build a Python application that creates videos programmatically using the OpenAI SDK.
 

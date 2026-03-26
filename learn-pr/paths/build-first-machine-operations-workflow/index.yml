@@ -1,22 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-first-machine-operations-workflow
 metadata:
-  title: End-to-end machine learning operations (MLOps) with Azure Machine Learning
-  description: End-to-end machine learning operations (MLOps) with Azure Machine Learning
-  ms.date: 12/01/2025
+  title: Operationalize machine learning models (MLOps)
+  description: Learn the full MLOps lifecycle for machine learning models, from experimentation and pipeline automation to CI/CD, automated testing, and model deployment in production.
+  ms.date: 03/12/2026
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-title: End-to-end machine learning operations (MLOps) with Azure Machine Learning
+title: Operationalize machine learning models (MLOps)
 prerequisites: |
   - Programming experience with Python or R
   - Experience developing and training machine learning models
   - Familiarity with basic Azure Machine Learning concepts
 summary: |
-  Machine learning operations (MLOps) applies DevOps principles to machine learning projects. In this learning path, you'll learn how to implement key concepts like source control, automation, and CI/CD to build an end-to-end MLOps solution.
+  Learn how to operationalize machine learning models using the complete MLOps lifecycle. This learning path covers experimenting and training models with Azure Machine Learning, automating model training with pipelines and hyperparameter tuning, triggering jobs with GitHub Actions, implementing trunk-based development, managing environments, and deploying models to production.
 iconUrl: /training/achievements/build-first-machine-operations-workflow.svg
 levels:
 - intermediate
@@ -29,10 +26,11 @@ subjects:
 - artificial-intelligence
 - machine-learning
 modules:
-- learn.wwl.use-azure-machine-learn-job-for-automation
+- learn.wwl.experiment-azure-machine-learning
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
+- learn.wwl.run-pipelines-azure-machine-learning
 - learn.wwl.trigger-azure-machine-learn-jobs-github-actions
 - learn.wwl.trigger-github-actions-trunk-based-development
-- learn.wwl.work-linting-unit-test-github-actions
 - learn.wwl.work-environments-github-actions
 - learn.wwl.deploy-model-github-actions
 trophy:

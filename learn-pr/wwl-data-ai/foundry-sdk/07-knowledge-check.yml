@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundry-sdk.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of the Microsoft Foundry SDK.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which endpoint offers the broadest support for OpenAI APIs with Foundry Models?
+      choices:
+        - content: The Foundry project endpoint
+          isCorrect: false
+          explanation: Incorrect. The Foundry Project endpoint is used for Foundry-native operations, and OpenAI API support for the Responses API with Foundry direct models.
+        - content: The Azure OpenAI endpoint
+          isCorrect: true
+          explanation: Correct. The Azure OpenAI endpoint provides broad support for OpenAI APIs with Foundry Models.
+        - content: The Foundry Tools endpoint
+          isCorrect: false
+          explanation: Incorrect. Foundry Tools do not provide broad support for OpenAI APIs with Foundry Models.
+    - content: Which package must you install to use the Microsoft Foundry SDK in Python?
+      choices:
+        - content: Package `azure-foundry`
+          isCorrect: false
+          explanation: Incorrect. This package doesn't exist.
+        - content: Package `azure-ai-projects`
+          isCorrect: true
+          explanation: Correct. The `azure-ai-projects` package provides the Microsoft Foundry SDK for Python.
+        - content: Package `microsoft-foundry-sdk`
+          isCorrect: false
+          explanation: Incorrect. This package doesn't exist.
+    - content: Which method do you use to generate responses with the Responses API?
+      choices:
+        - content: client.chat.completions.create()
+          isCorrect: false
+          explanation: Incorrect. This is the older chat completions API method.
+        - content: client.get_response_id()
+          isCorrect: false
+          explanation: Incorrect. This method doesn't generate a response.
+        - content: client.responses.create()
+          isCorrect: true
+          explanation: Correct. The Responses API uses the responses.create() method.

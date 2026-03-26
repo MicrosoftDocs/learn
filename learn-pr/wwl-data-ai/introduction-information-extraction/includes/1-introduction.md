@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=3605f75b-d90c-4e11-a627-1f6632f52547]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7c36d7c4-ee03-43ba-b490-db573428a62e]
 
 ::: zone-end
 
@@ -75,7 +75,6 @@ Some common examples of information extraction scenarios include:
 - **Delivery requirements**: Schedules, locations, and special instructions.
 
 Using AI to extract information can be the foundation of workload automation systems for these scenarios, and many more.
-
 
 ::: zone-end
 

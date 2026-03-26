@@ -43,6 +43,7 @@ units:
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-join-union-intersect-except
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.transform-data-denormalize-pivot-unpivot
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.load-data-merge-insert-append
+  - learn.wwl.cleanse-transform-load-data-into-unity-catalog.exercise
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.knowledge-check
   - learn.wwl.cleanse-transform-load-data-into-unity-catalog.summary
 badge:
