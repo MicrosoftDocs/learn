@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-identity-access-management.design-solution-agent-identities
+title: Design a solution for agent identities using Microsoft Entra Agent ID
+metadata:
+  title: Design a solution for agent identities using Microsoft Entra Agent ID
+  description: "Design an agent identity solution using Microsoft Entra Agent ID."
+  ms.date: 03/03/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 12
+content: |
+  [!include[](includes/3a-design-solution-agent-identities.md)]

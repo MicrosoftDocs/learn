@@ -4,7 +4,7 @@ title: Apply Git version control best practices
 metadata:
   title: Apply Git Version Control Best Practices
   description: Learn how to apply version control best practices using Git folders in Azure Databricks, including cloning repositories, working on branches, committing changes, and keeping your repository organized.
-  ms.date: 12/07/2025
+  ms.date: 03/09/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

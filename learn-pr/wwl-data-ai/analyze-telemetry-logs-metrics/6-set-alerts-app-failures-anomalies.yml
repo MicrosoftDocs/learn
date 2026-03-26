@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-telemetry-logs-metrics.set-alerts-app-failures-anomalies
+title: Set alerts for app failures and anomalies
+metadata:
+  title: Set Alerts for App Failures and Anomalies
+  description: Set alerts for app failures and anomalies
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/6-set-alerts-app-failures-anomalies.md)]

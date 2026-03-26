@@ -16,7 +16,7 @@ abstract: |
   - Describe Azure diagnostic settings and resource logs
   - Leverage Azure SQL Insights to improve performance of Azure SQL database applications
 prerequisites: ''
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-monitor-module.svg
 levels:
 - intermediate
 roles:

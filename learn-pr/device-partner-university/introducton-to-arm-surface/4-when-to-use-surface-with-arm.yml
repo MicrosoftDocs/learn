@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-arm-surface.when-to-use-surface-with-arm
+title: When to use Surface with Arm
+metadata:
+  title: When to Use Surface with Arm
+  description: This content is part of the "Introduction to Arm on Microsoft Surface" module.
+  ms.date: 02/17/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-when-to-use-surface-with-arm.md)]

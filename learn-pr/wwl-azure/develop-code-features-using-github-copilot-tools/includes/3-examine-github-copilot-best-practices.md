@@ -2,7 +2,7 @@ The GitHub Copilot extensions for Visual Studio Code help developers write code 
 
 However, GitHub Copilot is an AI pair programmer, it's not a programmer. To get the most out of the GitHub Copilot tools, you need to follow best practices.
 
-## Choose the right Copilot tool for the job
+## Choose the right GitHub Copilot tool for the job
 
 While GitHub Copilot's code completion features and GitHub Copilot's chat features share some functionality, the two tools are best used in different circumstances.
 
@@ -17,10 +17,10 @@ Alternatively, GitHub Copilot's chat features provide the most value when they'r
 
 - Answer questions about code in natural language.
 - Generate large sections of code, then iterate on that code to meet your needs.
-- Accomplish specific tasks with keywords and skills. GitHub Copilot Chat uses built-in keywords (and skills designed to provide important context) within prompts to accomplish common tasks quickly. Different types of keywords and skills are available in different Copilot Chat platforms.
-- Complete a task as a specific persona. For example, you can tell Copilot Chat that it's a Senior C++ Developer who cares greatly about code quality, readability, and efficiency. After establishing the persona, you can ask GitHub Copilot to review your code.
+- Accomplish specific tasks with keywords and skills. GitHub Copilot Chat uses built-in keywords (and skills designed to provide important context) within prompts to accomplish common tasks quickly. Different types of keywords and skills are available in different GitHub Copilot Chat platforms.
+- Complete a task as a specific persona. For example, you can tell GitHub Copilot Chat that it's a Senior C++ Developer who cares greatly about code quality, readability, and efficiency. After establishing the persona, you can ask GitHub Copilot to review your code.
 
-## Get the most out of Copilot inline suggestions
+## Get the most out of GitHub Copilot inline suggestions
 
 The GitHub Copilot extension presents suggestions automatically to help you code more efficiently. GitHub Copilot provides better suggestions when you follow certain actions and behaviors. You may already be following some of these actions and behaviors, since they also help you and your colleagues understand your code.
 
@@ -30,7 +30,7 @@ GitHub Copilot works best when it has sufficient context to know what you're doi
 
 ### Open files
 
-For code completions, GitHub Copilot looks at the files that are open in your editor to establish context and create appropriate suggestions. Having related files open in Visual Studio Code while using GitHub Copilot helps to define context and lets Copilot see the bigger picture of your project.
+For code completions, GitHub Copilot looks at the files that are open in your editor to establish context and create appropriate suggestions. Having related files open in Visual Studio Code while using GitHub Copilot helps to define context and lets GitHub Copilot see the bigger picture of your project.
 
 ### Top level comment
 
@@ -42,15 +42,15 @@ It's best to manually set the includes or module references you need for your wo
 
 ### Meaningful function names
 
-Just as a method called fetchData() won't mean much to a coworker (or you after several months), fetchData() won't help GitHub Copilot to understand your code. Using meaningful function names helps Copilot to generate suggestions that do what you want.
+Just as a method called fetchData() won't mean much to a coworker (or you after several months), fetchData() won't help GitHub Copilot to understand your code. Using meaningful function names helps GitHub Copilot to generate suggestions that do what you want.
 
 ### Specific and well-scoped function comments
 
-A function name can only be so descriptive without being overly long. Function comments can help fill in details that Copilot might need to know.
+A function name can only be so descriptive without being overly long. Function comments can help fill in details that GitHub Copilot might need to know.
 
-### Prime Copilot with sample code
+### Prime GitHub Copilot with sample code
 
-One trick to get Copilot on the right page, is to copy and paste desirable code samples into an open editor tab. The sample should represent the code that you want GitHub Copilot to emulate. Providing an example can help GitHub Copilot generate suggestions that match the language and tasks you want it to emulate. Once Copilot has helped you create some code that matches your goal, you can delete the sample code. This approach is especially helpful when you need to "train" Copilot. For example, suppose GitHub Copilot defaults to suggesting code snippets that implement an older version of a library. You can insert code into your project that uses the latest version of the library. This helps Copilot to begin suggesting code snippets that use the latest version of the library. Once GitHub Copilot has learned to use the new library version, you can delete the sample code.
+One trick to get GitHub Copilot on the right page, is to copy and paste desirable code samples into an open editor tab. The sample should represent the code that you want GitHub Copilot to emulate. Providing an example can help GitHub Copilot generate suggestions that match the language and tasks you want it to emulate. Once GitHub Copilot has helped you create some code that matches your goal, you can delete the sample code. This approach is especially helpful when you need to "train" GitHub Copilot. For example, suppose GitHub Copilot defaults to suggesting code snippets that implement an older version of a library. You can insert code into your project that uses the latest version of the library. This helps GitHub Copilot to begin suggesting code snippets that use the latest version of the library. Once GitHub Copilot has learned to use the new library version, you can delete the sample code.
 
 ### Be consistent and keep the quality bar high
 
@@ -64,7 +64,7 @@ When you're using GitHub Copilot's chat features, there are several things you c
 
 ### Start general, then get specific
 
-When writing a prompt for GitHub Copilot, first give Copilot a broad description of the goal or scenario. Then list any specific requirements. Consider the following prompts:
+When writing a prompt for GitHub Copilot, first give GitHub Copilot a broad description of the goal or scenario. Then list any specific requirements. Consider the following prompts:
 
 1. Write a function that tells me if a number is prime.
 1. The function should take an integer and return true if the integer is prime.
@@ -76,7 +76,7 @@ Use examples to help GitHub Copilot understand what you want. You can provide ex
 
 ### Break complex tasks into simpler tasks
 
-If you want GitHub Copilot to complete a complex or large task, break the task into multiple simple, small tasks. For example, instead of asking Copilot to generate a word search puzzle, break the process down into smaller tasks, and ask GitHub Copilot to accomplish them one by one:
+If you want GitHub Copilot to complete a complex or large task, break the task into multiple simple, small tasks. For example, instead of asking GitHub Copilot to generate a word search puzzle, break the process down into smaller tasks, and ask GitHub Copilot to accomplish them one by one:
 
 1. Write a function to generate a 10 by 10 grid of letters.
 1. Write a function to find all words in a grid of letters, given a list of valid words.
@@ -93,13 +93,13 @@ If you're using GitHub Copilot Chat in your IDE, open the file(s) or highlight t
 
 ### Use chat participants, slash commands, and chat variables
 
-Chat participants are designed to collect extra context either about a code base or a specific domain or technology. When you specify the appropriate participant, GitHub Copilot Chat can find and provide better information to send to the Copilot backend. For example, use `@workspace` when you ask questions about your open project, or `@vscode` when you ask questions about Visual Studio Code features and APIs.
+Chat participants are designed to collect extra context either about a code base or a specific domain or technology. When you specify the appropriate participant, GitHub Copilot Chat can find and provide better information to send to the GitHub Copilot backend. For example, use `@workspace` when you ask questions about your open project, or `@vscode` when you ask questions about Visual Studio Code features and APIs.
 
-Slash commands help GitHub Copilot Chat to understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
+Slash commands help GitHub Copilot Chat to understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting GitHub Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
 
 Chat participants, such as `@workspace` or `@vscode`, can contribute chat variables that provide domain-specific context. You can reference a chat variable in your chat prompt by using the `#` symbol. You can use chat variables to be more specific about the context of your prompt.
 
-For example, the `#file` chat variable lets you reference specific files from your workspace in your chat prompt. This helps make the answers from GitHub Copilot Chat more relevant to your code by providing context about the file you're working with. You can ask questions like "`Can you suggest improvements to #file:package.json?`" or "`How do I add an extension in #file:devcontainer.json?`". Using the `#file` variable can help you get more targeted and accurate responses from Copilot.
+For example, the `#file` chat variable lets you reference specific files from your workspace in your chat prompt. This helps make the answers from GitHub Copilot Chat more relevant to your code by providing context about the file you're working with. You can ask questions like "`Can you suggest improvements to #file:package.json?`" or "`How do I add an extension in #file:devcontainer.json?`". Using the `#file` variable can help you get more targeted and accurate responses from GitHub Copilot.
 
 ### Experiment and iterate
 
@@ -124,4 +124,4 @@ If you aren't getting the responses that you want when you ask GitHub Copilot fo
 
 ## Summary
 
-GitHub Copilot is a powerful tool that can help you write code faster and with fewer errors. However, to get the most out of GitHub Copilot, you need to follow best practices. By choosing the right Copilot tool for the job, providing context, and following good coding practices, you can optimize your experience with GitHub Copilot.
+GitHub Copilot is a powerful tool that can help you write code faster and with fewer errors. However, to get the most out of GitHub Copilot, you need to follow best practices. By choosing the right GitHub Copilot tool for the job, providing context, and following good coding practices, you can optimize your experience with GitHub Copilot.

@@ -10,6 +10,11 @@ achievements:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   summary: Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
   iconUrl: /training/achievements/analyze-logs-with-kql.svg
+- uid: learn.dpu.learning-zone.badge
+  type: badge
+  title: Getting started with Microsoft Learning Zone
+  summary: This module guides you through downloading Microsoft Learning Zone, generating and editing lessons, assigning activities, and using insights and the Content Gallery to support effective, data-driven teaching.
+  iconUrl: /training/achievements/learning-zone.svg
 - uid: learn.azure.explore-fundamentals-kql.badge
   type: badge
   title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
@@ -7825,8 +7830,73 @@ achievements:
   title: Introduction to Azure Arc
   summary: In this module, you learn how Azure Arc  simplifies governance and management of hybrid environments by delivering a consistent multicloud and on-premises management platform. You learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters that are hosted outside of Azure. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. Finally, you get an idea of how Azure Arc can integrate with other Azure services.
   iconUrl: /training/achievements/intro-to-azure-arc.svg
+- uid: learn.azure-intro-to-logic-apps.badge
+  type: badge 
+  title: Introduction to Azure Logic Apps
+  summary: Get a high-level overview about Azure Logic Apps and the business processes that you can implement and automate.
+  iconUrl: /training/achievements/intro-to-logic-apps.svg
+- uid: learn.build-workflows-with-logic-apps.trophy
+  type: trophy
+  title: Automate business processes with integration workflows in Azure Logic Apps
+  summary: Learn how to automate business processes that work with data flowing through various sources.
+  iconUrl: /training/achievements/build-workflows-with-logic-apps.svg
 - uid: learn.azure-security.identify-threats-with-azure-security-center.badge
   type: badge 
   title: Identify security threats with Microsoft Defender for Cloud
   summary: In this module, you'll discover how to detect and respond to threats with Microsoft Defender for Cloud.
   iconUrl: /training/achievements/identify-threats-with-azure-security-center.svg
+- uid: learn.stage-deploy-app-service-deployment-slots.badge
+  type: badge 
+  title: Stage a web app deployment for testing and rollback by using App Service deployment slots
+  summary: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
+  iconUrl: /training/achievements/stage-deploy-app-service-deployment-slots.svg
+- uid: learn.deploy-a-website-with-azure-app-service.trophy
+  type: trophy 
+  title: Deploy a website to Azure with Azure App Service
+  summary: Web apps in Azure allow you to publish and manage your website easily without having to work with the underlying servers, storage, or network assets. 
+  iconUrl: /training/achievements/deploy-a-website-with-azure-app-service.svg
+- uid: learn.introduction-sql-server-2022-t-sql-enhancements.badge
+  type: badge
+  title: Transform development workflows with T-SQL in SQL Server 2025
+  summary: Learn about the new T-SQL capabilities introduced in SQL Server 2025 that expand data processing, AI integration, and query flexibility.
+  iconUrl: /learn/achievements/sql-server.svg
+- uid: learn.introduction-to-sql-server-2022.badge
+  type: badge
+  title: Get started with SQL Server 2025
+  summary: Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
+  iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
+- uid: learn.azure.cna-orchestrate-containers.badge
+  type: badge
+  title: Orchestrate containers for cloud-native apps with AKS 
+  summary: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service.
+  iconUrl: /training/achievements/cloud-native-apps-orchestrate-containers.svg
+- uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.badge
+  type: badge
+  title: Understand hybrid data platform on SQL Server 2025
+  summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure-security.configure-and-manage-azure-key-vault.badge
+  type: badge
+  title: Configure and manage secrets in Azure Key Vault
+  summary: Storing and handling secrets, encryption keys, and certificates directly is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
+  iconUrl: /training/achievements/configure-and-manage-azure-key-vault.svg
+- uid: learn.azure-security.create-security-baselines.badge
+  type: badge
+  title: Create security baselines
+  summary: In this module, you learn how to create security baselines for your Azure services by ensuring that your settings meet the minimum requirements described in CIS Benchmarks for Azure v. 1.3.0.
+  iconUrl: /training/achievements/create-security-baselines.svg
+- uid: learn.security.manage-security-operations.trophy
+  type: trophy
+  title: Manage security operations in Azure
+  summary: "Learn how to configure security policies and manage security alerts with the tools and services in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/create-security-baselines.svg
+- uid: learn.security.secure-your-cloud-apps.trophy
+  type: trophy
+  title: Secure your cloud applications in Azure
+  summary: "Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/secure-your-cloud-apps.svg
+- uid: learn.load-balance-web-traffic-with-application-gateway.badge
+  type: badge
+  title: Load balance your web service traffic with Application Gateway
+  summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
+  iconUrl: /training/achievements/load-balance-web-traffic-with-application-gateway.svg

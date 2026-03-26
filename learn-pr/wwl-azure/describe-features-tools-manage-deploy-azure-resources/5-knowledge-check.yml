@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/19/2024
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -28,7 +28,7 @@ quiz:
     - content: "Azure Cloud Manager"
       isCorrect: false
       explanation: "Incorrect. Azure Arc is best suited to managing on-premises or multicloud environments."
-  - content: "What two components could you use to implement a “infrastructure as code” deployment?"
+  - content: "What two components could you use to implement an \"infrastructure as code\" deployment?"
     choices:
     - content: "Bicep and ARM Templates"
       isCorrect: true
@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect. Bicep and ARM templates are the best choice for implementing an “infrastructure as code deployment.”"
     - content: "Azure Monitor and Azure Arc"
       isCorrect: false
-      explanation: "Incorrect. Bicep and ARM templates are the best choice for implementing an “infrastructure as code deployment.”"
+      explanation: "Incorrect. Bicep and ARM templates are the best choice for implementing an “infrastructure as code deployment.”"

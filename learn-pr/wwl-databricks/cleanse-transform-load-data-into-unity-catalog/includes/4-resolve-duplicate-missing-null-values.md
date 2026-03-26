@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1f405196-2f6e-48a8-ab3a-16d978af538c]
+
 Data quality issues like duplicate records and null values can compromise your analytics and downstream processes. Whether duplicates arise from concurrent data loads or nulls appear due to incomplete source data, addressing these issues is a core responsibility for data engineers working in Azure Databricks.
 
 In this unit, you learn how to identify and resolve duplicate, missing, and null values using both SQL and PySpark approaches.

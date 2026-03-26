@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9641bd12-f1cf-4ef0-be79-1dd29424da72]
+
 Before you cleanse or transform data, you need to understand what's in your tables. **Profiling data** means examining your datasets to generate summary statistics—counts, averages, value distributions, and null percentages—that reveal the quality and structure of your data. This foundation helps you identify issues like missing values, outliers, and unexpected patterns before they cause problems downstream.
 
 In this unit, you learn how to generate summary statistics using SQL commands and the data profiling feature in Azure Databricks.
@@ -58,7 +60,12 @@ The output shows the table's size in bytes and row count, confirming that profil
 
 ## Use data profiling in Unity Catalog
 
-Beyond SQL commands, Azure Databricks provides a data profiling feature that continuously monitors your tables and tracks statistical trends over time. This approach is particularly useful when you need to detect data drift or monitor data quality on an ongoing basis.
+Beyond SQL commands, Azure Databricks provides **data quality monitoring** in Unity Catalog—an umbrella that covers two distinct capabilities:
+
+- **Anomaly detection** monitors all tables in a schema automatically. It analyzes historical patterns to evaluate each table's freshness (how recently it was updated) and completeness (whether the expected number of rows arrived). You enable it once at the schema level in Catalog Explorer, and Azure Databricks handles the rest using intelligent scanning. Use anomaly detection for broad, automated coverage across all your tables without per-table configuration.
+- **Data profiling** provides deep per-table statistical analysis—tracking distributions, null percentages, drift metrics, and model performance over time. You configure it individually for each table. Use data profiling for your most critical tables where you need detailed historical trends.
+
+For data engineering work focused on cleansing and quality, you'll use both: anomaly detection as an early-warning system across all tables, and data profiling for in-depth monitoring of key tables.
 
 [![Diagram explains how to use data profiling in Unity Catalog.](../media/2-use-data-profiling-in-unity-catalog.png)](../media/2-use-data-profiling-in-unity-catalog.png#lightbox)
 
@@ -80,32 +87,55 @@ To create a profile in Catalog Explorer:
 
 1. Navigate to your table in Catalog Explorer.
 2. Select the **Quality** tab.
-3. Select **Configure** to enable data profiling.
-4. Choose your profile type and configure options like granularity and scheduling.
+3. If anomaly detection is **not** enabled for the schema, select **Enable**. If anomaly detection is already enabled, select **Configure**.
+4. In the **Data Quality Monitoring** dialog, in the **Data profiling** field, select **Configure**.
+5. Choose your profile type and configure options like granularity and scheduling.
 
 The profile generates two metric tables: a profile metrics table with summary statistics and a drift metrics table tracking distribution changes over time.
 
 ### Create a profile using the API
 
-For programmatic access, use the Databricks SDK:
+For programmatic access, use the Databricks SDK. Install or upgrade the SDK to get the current API:
+
+```python
+%pip install "databricks-sdk>=0.68.0"
+```
+
+Then create a snapshot profile for a table:
 
 ```python
 from databricks.sdk import WorkspaceClient
-from databricks.sdk.service.catalog import MonitorSnapshot
+from databricks.sdk.service.dataquality import Monitor, DataProfilingConfig, SnapshotConfig
 
 w = WorkspaceClient()
-w.quality_monitors.create(
-    table_name="main.sales.transactions",
-    assets_dir="/Workspace/Users/user@example.com/monitoring",
-    output_schema_name="main.sales",
-    snapshot=MonitorSnapshot()
+
+# Retrieve the table ID and schema ID required by the API
+table = w.tables.get(full_name="main.sales.transactions")
+schema = w.schemas.get(full_name="main.sales")
+
+w.data_quality.create_monitor(
+    monitor=Monitor(
+        object_type="table",
+        object_id=table.table_id,
+        data_profiling_config=DataProfilingConfig(
+            output_schema_id=schema.schema_id,
+            assets_dir="/Workspace/Users/user@example.com/monitoring",
+            snapshot=SnapshotConfig()
+        )
+    )
 )
 ```
 
 To refresh the profile and update metrics:
 
 ```python
-w.quality_monitors.run_refresh(table_name="main.sales.transactions")
+from databricks.sdk.service.dataquality import Refresh
+
+w.data_quality.create_refresh(
+    object_type="table",
+    object_id=table.table_id,
+    refresh=Refresh(object_type="table", object_id=table.table_id)
+)
 ```
 
 ## Interpret profiling results

@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-secrets-key-vault.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your AI application needs to read secrets from Azure Key Vault at runtime but shouldn't be able to create or delete secrets. Which built-in RBAC role should you assign to the application's managed identity?"
+    choices:
+    - content: "Key Vault Secrets User"
+      isCorrect: true
+      explanation: "Key Vault Secrets User grants read-only access to secret values, which is the appropriate least-privilege role for applications that retrieve but don't manage secrets."
+    - content: "Key Vault Secrets Officer"
+      isCorrect: false
+      explanation: "Key Vault Secrets Officer grants full management permissions including create, update, and delete operations. This exceeds the permissions needed for an application that only reads secrets at runtime."
+    - content: "Key Vault Contributor"
+      isCorrect: false
+      explanation: "Key Vault Contributor is a control plane role that manages the vault resource itself, such as creating or deleting vaults. It doesn't grant access to data plane operations like reading secret values."
+  - content: "You want your application to authenticate with Key Vault using managed identity in production and Azure CLI credentials during local development, without changing code between environments. Which credential class should you use?"
+    choices:
+    - content: "ManagedIdentityCredential"
+      isCorrect: false
+      explanation: "ManagedIdentityCredential only works with managed identities on Azure compute resources. It fails in local development environments where no managed identity is available, so you'd need to change code between environments."
+    - content: "EnvironmentCredential"
+      isCorrect: false
+      explanation: "EnvironmentCredential reads service principal credentials from environment variables. It requires you to set and manage client secret values, which contradicts the goal of credential-free authentication with managed identity."
+    - content: "DefaultAzureCredential"
+      isCorrect: true
+      explanation: "DefaultAzureCredential chains multiple authentication methods in a defined order, automatically using managed identity on Azure compute resources and Azure CLI credentials in local development environments."
+  - content: "You store three versions of a secret named 'cosmosdb-connection-string' in Key Vault. What does calling get_secret('cosmosdb-connection-string') without a version parameter return?"
+    choices:
+    - content: "The first version that was created"
+      isCorrect: false
+      explanation: "Key Vault returns the latest enabled version, not the original version. The first version is only returned if you specify its version identifier explicitly in the get_secret() call."
+    - content: "The latest enabled version of the secret"
+      isCorrect: true
+      explanation: "When no version parameter is specified, get_secret() always returns the most recent enabled version of the secret. This behavior is what enables rotation by simply storing a new version."
+    - content: "All three versions as a list of KeyVaultSecret objects"
+      isCorrect: false
+      explanation: "get_secret() returns a single KeyVaultSecret object for one version. To enumerate all versions, you use the list_properties_of_secret_versions() method instead."
+  - content: "Your AI application connects to a service that supports two active keys simultaneously. You need to rotate the credential without any application downtime. Which rotation strategy should you use?"
+    choices:
+    - content: "Dual-credential rotation"
+      isCorrect: true
+      explanation: "Dual-credential rotation generates a new secondary key, stores it in Key Vault, waits for all application instances to pick up the new value, then regenerates the old key. At least one valid credential always exists, preventing downtime."
+    - content: "Manual rotation with application restart"
+      isCorrect: false
+      explanation: "Manual rotation with a restart creates a downtime window during the restart process. It doesn't take advantage of the two-key model that the target service supports."
+    - content: "Automated rotation with Event Grid only"
+      isCorrect: false
+      explanation: "Event Grid automation triggers rotation based on expiry events but doesn't inherently use the two-key model. Dual-credential rotation is designed for services that support two active keys simultaneously."
+  - content: "Your AI inference service processes 500 requests per second and retrieves an API key from Key Vault for each request. The API key rotates every 90 days. What caching approach best balances performance with security?"
+    choices:
+    - content: "No caching with direct Key Vault calls per request"
+      isCorrect: false
+      explanation: "At 500 requests per second, direct vault calls exceed Key Vault's throttling limit of 4,000 GET transactions per ten-second window, resulting in HTTP 429 responses and degraded performance."
+    - content: "Time-based in-memory cache with a one-hour TTL"
+      isCorrect: true
+      explanation: "A one-hour staleness window is small relative to a ninety-day rotation cycle, eliminates redundant vault calls, and keeps the application well within Key Vault's throttling limits."
+    - content: "Startup preloading with no periodic refresh"
+      isCorrect: false
+      explanation: "Startup preloading without periodic refresh means the application uses the same credential for its entire lifetime. If a rotation occurs while the application is running, it never picks up the new credential. A time-based refresh ensures the application eventually retrieves updated values."

@@ -4,7 +4,7 @@ title: Design a solution for access to SaaS, PaaS, IaaS, hybrid, and multicloud 
 metadata:
   title: Design a solution for access to SaaS, PaaS, IaaS, hybrid, and multicloud resources
   description: "Design access strategies for SaaS, PaaS, IaaS, hybrid, and multicloud resources using identity, networking, and application controls."
-  ms.date: 02/07/2026
+  ms.date: 03/03/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit

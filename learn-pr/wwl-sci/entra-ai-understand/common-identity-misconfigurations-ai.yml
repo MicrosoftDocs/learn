@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-understand.common-identity-misconfigurations-ai
+title: Common identity misconfigurations in AI deployments
+metadata:
+  title: Common identity misconfigurations in AI deployments
+  description: "Common identity misconfigurations in AI deployments."
+  ms.date: 2/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/common-identity-misconfigurations-ai.md)]

@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 05/23/2025
+  ms.date: 3/16/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,39 +15,36 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Which Azure resource provides language and vision services from a single endpoint?"
-    choices:
-    - content: "Azure Language"
-      isCorrect: false
-      explanation: "Incorrect. Azure Language provides only language services."
-    - content: "Azure Vision"
-      isCorrect: false
-      explanation: "Incorrect. Azure Vision provides only vision services."
-    - content: "Foundry Tools"
-      isCorrect: true
-      explanation: "Correct. Foundry Tools provides multiple services from a single endpoint."
-  - content: "You plan to create a simple chat app that uses a generative AI model. What kind of project should you create?"
-    choices:
-    - content: "Microsoft Foundry project."
-      isCorrect: true
-      explanation: "Correct. A Microsoft Foundry project is the best choice for a simple generative AI app."
-    - content: "Azure AI hub based project."
-      isCorrect: false
-      explanation: "Incorrect. An Azure AI hub-based project includes unnecessary services for this scenario."
-    - content: "Azure AI Custom Vision project."
-      isCorrect: false
-      explanation: "Incorrect. An Azure AI Custom Vision project would not help in this scenario."
-  - content: "Which SDK enables you to connect to resources in a project?"
-    choices:
-    - content: "Foundry Tools SDK"
-      isCorrect: false
-      explanation: "Incorrect. Foundry Tools often have their own SDKs, and don't rely on connections in a hub."
-    - content: "Semantic Kernel SDK"
-      isCorrect: false
-      explanation: "Incorrect. The Semantic Kernel SDK is used to build generative AI apps and doesn't rely on connections in a hub."
-    - content: "Microsoft Foundry SDK"
-      isCorrect: true
-      explanation: "Correct. The Microsoft Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
-
-
-
+    - content: "Which web portal should you use to work with assets in a Microsoft Foundry project?"
+      choices:
+        - content: "The Azure portal"
+          isCorrect: false
+          explanation: "Incorrect. The Azure portal provides access to Azure services, but not specifically to Microsoft Foundry project assets."
+        - content: "Microsoft Copilot"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Copilot provides AI-assisted development features, but not specifically for managing Foundry project assets."
+        - content: "The Microsoft Foundry portal"
+          isCorrect: true
+          explanation: "Correct. The Microsoft Foundry portal is the web portal you should use to work with assets in a Microsoft Foundry project."
+    - content: "Which component of Microsoft Foundry provides pre-built services for common AI tasks?"
+      choices:
+        - content: "Foundry Tools"
+          isCorrect: true
+          explanation: "Correct. Foundry Tools provides pre-built services for common AI tasks."
+        - content: "Foundry Models"
+          isCorrect: false
+          explanation: "Incorrect. Foundry Models provides pre-trained models, not pre-built services for common AI tasks."
+        - content: "Foundry IQ"
+          isCorrect: false
+          explanation: "Incorrect. Foundry IQ provides connectivity to knowledge stores, not pre-built services for common AI tasks."
+    - content: "Which extension should you use in Visual Studio Code to work with Foundry projects?"
+      choices:
+        - content: "Python extension for Visual Studio Code"
+          isCorrect: false
+          explanation: "Incorrect. The Python extension for Visual Studio Code provides support for Python development, but not specifically for managing Foundry project assets."
+        - content: "GitHub Copilot"
+          isCorrect: false
+          explanation: "Incorrect. GitHub Copilot provides AI-assisted development features, but not specifically for managing Foundry project assets."
+        - content: "Microsoft Foundry extension for Visual Studio Code"
+          isCorrect: true
+          explanation: "Correct. The Microsoft Foundry extension for Visual Studio Code provides connectivity to assets in a Foundry project."

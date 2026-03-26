@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-arc-enabled-vmware.azure-arc-enabled-vmware-vm-operations
+title: Azure Arc-enabled VMware VM operations
+metadata:
+  title: Azure Arc-Enabled VMware VM Operations
+  description: Learn about Azure Arc-enabled VMware VM operations
+  ms.date: 02/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-azure-arc-enabled-vmware-vm-operations.md)]

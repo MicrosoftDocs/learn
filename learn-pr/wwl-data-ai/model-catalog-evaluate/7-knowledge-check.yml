@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of model selection, deployment, and evaluation concepts.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which model benchmark indicates the model's ability to process prompts and return comprehensive responses quickly?"
+      choices:
+        - content: "Quality index"
+          isCorrect: false
+          explanation: "Incorrect. Quality index evaluates the overall quality of the model's responses, not its speed or efficiency."
+        - content: "Cost"
+          isCorrect: false
+          explanation: "Incorrect. Cost evaluates the expense of using the model, not its speed or efficiency."
+        - content: "Throughput"
+          isCorrect: true
+          explanation: "Correct. Throughput indicates the model's ability to process prompts and return comprehensive responses quickly."
+    - content: "Which deployment type in Microsoft Foundry is best for general use while offering the largest quota?"
+      choices:
+        - content: "Data Zone Batch"
+          isCorrect: false
+          explanation: "Incorrect. Data Zone Batch deployments are designed for batch processing and may not offer the largest quota for general use."
+        - content: "Global Standard"
+          isCorrect: true
+          explanation: "Correct. Global Standard deployments offer the largest quota and are suitable for general use."
+        - content: "Developer"
+          isCorrect: false
+          explanation: "Incorrect. Developer deployments are intended for development and testing of fine-tuned models, not for general use with the largest quota."
+    - content: "Which evaluation metric measures linguistic correctness and natural language quality?"
+      choices:
+        - content: "Fluency"
+          isCorrect: true
+          explanation: "Correct. Fluency evaluates linguistic correctness and natural language quality."
+        - content: "Groundedness"
+          isCorrect: false
+          explanation: "Incorrect. Groundedness determines whether responses are based on provided context rather than speculation or the model's general knowledge."
+        - content: "Relevance"
+          isCorrect: false
+          explanation: "Incorrect. Relevance assesses whether responses are pertinent to the given context or query, not linguistic correctness or natural language quality."

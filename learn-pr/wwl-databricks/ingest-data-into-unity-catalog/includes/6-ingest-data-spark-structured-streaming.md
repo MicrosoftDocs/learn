@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bbf92615-a813-4d38-9237-e2a054db1b84]
+
 Real-time data ingestion allows you to process events as they occur rather than waiting for batch intervals. When your organization needs to capture IoT sensor readings, clickstream data, or financial transactions as they happen, Spark Structured Streaming provides the foundation for continuous data ingestion into your lakehouse.
 
 In this unit, you learn how to configure Structured Streaming jobs that read from streaming sources and write to Unity Catalog tables.

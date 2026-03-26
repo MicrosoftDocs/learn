@@ -241,7 +241,7 @@ Reducing unnecessary data movement is a direct lever for cost savings.
 - **Optimize replication and backup strategies.**
   - Evaluate whether cross-region replication is necessary for all
   workloads.
-  - Use zonal redundancy when regional replication isn't required.
+  - Use zone redundancy when regional replication isn't required.
   - Apply compression and deduplication to reduce replication volume.
 
 ### Data management best practices

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-intelligent-search-with-sql.implement-vector-search-query-patterns
+title: Implement vector search query patterns
+metadata:
+  title: Implement vector search query patterns
+  description: Learn how to implement vector search using VECTOR_NORMALIZE, VECTOR_DISTANCE, VECTORPROPERTY, and VECTOR_SEARCH functions.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/03/2026
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/05-implement-vector-search-query-patterns.md)]

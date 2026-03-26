@@ -2,13 +2,17 @@
 
 You use a Dockerfile to provide build instructions. Azure Container Registry Tasks enables you to reuse any Dockerfile currently in your environment, including multi-staged builds. For this example, you create a new Dockerfile that builds a Node.js application.
 
-1. Open the Cloud Shell editor and create a new file named _Dockerfile_ using the `code` command.
+1. From the Cloud Shell toolbar, select `{}` to open the Cloud Shell editor.
+
+   The editor opens in a new window above the Bash prompt named _Untitled_.
+
+1. On the Bash command line, paste the following command to create a new file in the editor named _Dockerfile_.
 
     ```azurecli
     code Dockerfile
     ```
 
-1. Paste the following Dockerfile contents into the file.
+1. Copy the following Dockerfile contents into the file. Use keyboard shortcut `Ctrl + V` to paste the contents into the editor.
 
     This Dockerfile uses the `node:25-alpine` image as its base image. It then adds the Node.js application files to the image and installs the application dependencies. Finally, it configures the container to serve the application on port 80 via the _EXPOSE_ instruction.
 
@@ -21,7 +25,7 @@ You use a Dockerfile to provide build instructions. Azure Container Registry Tas
     CMD     ["node", "server.js"]
     ```
 
-1. Use `Ctrl + S` to save the file and then `Ctrl + Q` to close the editor.
+1. Use `Ctrl + S` to save the updated _Dockerfile_ and then `Ctrl + Q` to close the editor.
 1. Build the container image from the Dockerfile using the `az acr build` command.
 
     > [!NOTE]

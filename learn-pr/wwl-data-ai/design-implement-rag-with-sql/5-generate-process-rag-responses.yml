@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-rag-with-sql.generate-process-rag-responses
+title: Generate and process RAG responses
+metadata:
+  title: Generate and process RAG responses
+  description: Learn how to call LLM services from SQL and process the responses to complete the RAG pipeline.
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/05-generate-process-rag-responses.md)]

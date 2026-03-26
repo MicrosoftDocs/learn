@@ -22,10 +22,10 @@ For more information about the topics discussed in this module, see:
 - [Delete Document][/rest/api/cosmos-db/delete-a-document]
 - [Query Documents][/rest/api/cosmos-db/query-documents]
 - [HTTP Status Codes for Azure Cosmos DB][/rest/api/cosmos-db/http-status-codes-for-cosmosdb]
-- [Diagnose and troubleshoot Azure Cosmos DB service unavailable exceptions][/azure/cosmos-db/sql/troubleshoot-service-unavailable]
+- [Diagnose and troubleshoot Azure Cosmos DB service unavailable exceptions][/azure/cosmos-db/troubleshoot-service-unavailable]
 - [Azure Cosmos DB for NoSQL SDK connectivity modes][/azure/cosmos-db/sql/sql-sdk-connection-modes]
 - [Diagnose and troubleshoot Azure Cosmos DB .NET SDK request timeout exceptions][/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]
-- [Diagnose and troubleshoot Azure Cosmos DB request rate too large (429) exceptions][/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]
+- [Diagnose and troubleshoot Azure Cosmos DB request rate too large (429) exceptions][/azure/cosmos-db/troubleshoot-request-rate-too-large]
 - [Create alerts for Azure Cosmos DB using Azure Monitor][/azure/cosmos-db/create-alerts]
 - [Security in Azure Cosmos DB - overview][/azure/cosmos-db/database-security]
 - [Azure security baseline for Azure Cosmos DB][/security/benchmark/azure/baselines/cosmos-db-security-baseline]
@@ -41,10 +41,10 @@ For more information about the topics discussed in this module, see:
 [/rest/api/cosmos-db/delete-a-document]: /rest/api/cosmos-db/delete-a-document
 [/rest/api/cosmos-db/query-documents]: /rest/api/cosmos-db/query-documents
 [/rest/api/cosmos-db/http-status-codes-for-cosmosdb]: /rest/api/cosmos-db/http-status-codes-for-cosmosdb
-[/azure/cosmos-db/sql/troubleshoot-service-unavailable]: /azure/cosmos-db/sql/troubleshoot-service-unavailable
+[/azure/cosmos-db/troubleshoot-service-unavailable]: /azure/cosmos-db/troubleshoot-service-unavailable
 [/azure/cosmos-db/sql/sql-sdk-connection-modes]: /azure/cosmos-db/sql/sql-sdk-connection-modes
 [/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout
-[/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]: /azure/cosmos-db/sql/troubleshoot-request-rate-too-large
+[/azure/cosmos-db/troubleshoot-request-rate-too-large]: /azure/cosmos-db/troubleshoot-request-rate-too-large
 [/azure/cosmos-db/create-alerts]: /azure/cosmos-db/create-alerts
 [/azure/cosmos-db/database-security]: /azure/cosmos-db/database-security
 [/security/benchmark/azure/baselines/cosmos-db-security-baseline]: /security/benchmark/azure/baselines/cosmos-db-security-baseline

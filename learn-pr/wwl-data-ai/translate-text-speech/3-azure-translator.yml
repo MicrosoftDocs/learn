@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-speech.azure-translator
+title: Translate text
+metadata:
+  title: Translate text
+  description: Text translation using Azure Translator in Foundry Tools
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 3/13/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-azure-translator.md)]

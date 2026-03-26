@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code.customize-copilot-responses-instruction-files
+title: "Customize GitHub Copilot responses using instruction files"
+metadata:
+  title: "Customize GitHub Copilot Responses using Instruction Files"
+  description: "Customize GitHub Copilot responses using instruction files."
+  ms.date: 02/25/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-customize-copilot-responses-instruction-files.md)]

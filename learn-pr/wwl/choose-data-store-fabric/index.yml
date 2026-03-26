@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.choose-data-store-fabric
+metadata:
+  title: Choose Data Stores in Microsoft Fabric
+  description: "Evaluate lakehouse, warehouse, and eventhouse options in Microsoft Fabric to select the appropriate analytical data store for different business scenarios based on data format, query language, write patterns, and team skills."
+  ms.date: 02/23/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Choose data stores in Microsoft Fabric
+summary: Evaluate lakehouse, warehouse, and eventhouse options to select the appropriate analytical data store for business scenarios in Microsoft Fabric.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe analytical data store options in Microsoft Fabric.
+  - Evaluate lakehouse, warehouse, and eventhouse capabilities.
+  - Choose the appropriate data store for a business scenario.
+prerequisites: |
+  - Understanding of lakehouse, warehouse, and eventhouse concepts in Microsoft Fabric.
+  - Familiarity with data analytics and engineering terminology.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.choose-data-store-fabric.introduction
+- learn.wwl.choose-data-store-fabric.describe-options
+- learn.wwl.choose-data-store-fabric.evaluate-lakehouse
+- learn.wwl.choose-data-store-fabric.evaluate-warehouse
+- learn.wwl.choose-data-store-fabric.evaluate-eventhouse
+- learn.wwl.choose-data-store-fabric.exercise
+- learn.wwl.choose-data-store-fabric.knowledge-check
+- learn.wwl.choose-data-store-fabric.summary
+badge:
+  uid: learn.wwl.choose-data-store-fabric.badge

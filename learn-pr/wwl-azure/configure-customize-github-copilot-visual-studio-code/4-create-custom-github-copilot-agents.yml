@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code.create-custom-github-copilot-agents
+title: "Create custom GitHub Copilot agents in Visual Studio Code"
+metadata:
+  title: "Create Custom GitHub Copilot Agents in Visual Studio Code"
+  description: "Create custom GitHub Copilot agents in Visual Studio Code."
+  ms.date: 02/25/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-create-custom-github-copilot-agents.md)]

@@ -1,21 +1,34 @@
-In this module, we addressed the challenge of optimizing security workflows and automating repetitive tasks for security engineers. We explored how Microsoft Security Copilot and its specialized agents streamline processes like threat analysis, phishing triage, identity management, and conditional access optimization. By using AI-driven tools and seamless integration with Microsoft Defender and Microsoft Entra, we demonstrated how these agents enhance efficiency and decision-making in security operations.
+In this module, you explored how Microsoft Security Copilot agents automate and enhance security workflows across Microsoft's security ecosystem. You learned about the different types of agents, how they're categorized, and their role in streamlining security operations across identity management, threat detection, data protection, and endpoint security.
 
-The techniques learned in this module offer significant advantages including time savings, improved threat detection, and actionable insights tailored to organizational needs. These capabilities empower security engineers to focus on critical tasks while reducing manual effort and minimizing errors. The business impact includes enhanced security posture, better collaboration across IT workflows, and alignment with Zero Trust principles, ensuring robust protection against evolving threats.
+You explored agent identities and permissions, understanding the difference between dedicated agent identities using Microsoft Entra Agent ID and connecting with existing user accounts. You also learned about the role-based access controls that govern what agents can do.
 
-In this module, you learned about the key functionalities of Microsoft Security Copilot agents, including the Conditional Access Optimization Agent, Phishing Triage Agent, and Threat Intelligence Briefing Agent. You explored how these agents automate tasks like phishing classification, threat intelligence reporting, and identity risk mitigation through optimization of conditional access policies. Lastly, you explored how Security Copilot supports building your own agents.
+You then examined Security Copilot agents across multiple Microsoft security products:
+
+- **Microsoft Entra** agents that automate identity and access management tasks, including Conditional Access optimization, access reviews, and identity risk management.
+- **Microsoft Defender** agents that carry out security operations tasks like phishing triage, threat intelligence briefing, threat hunting, and dynamic threat detection.
+- **Microsoft Purview** agents that help triage insider risk management and data loss prevention alerts.
+- **Microsoft Intune** agents that enhance enterprise endpoint security by automating vulnerability remediation, change review, device offboarding, and policy configuration.
+
+Finally, you learned how Security Copilot supports building your own custom agents through multiple development experiences, including natural language, YAML upload, and Model Context Protocol (MCP) tools.
 
 After completing this module, you're able to:
 
 - Describe the role and functionality of Microsoft Security Copilot agents in automating security workflows.
-- Describe the Threat Intelligence Briefing Agent.
-- Describe the Conditional Access Optimization Agent.
-- Describe the Phishing Triage agent.
+- Describe agent identities and permissions in Microsoft Security Copilot.
+- Describe the Threat Intelligence Briefing Agent in the Security Copilot standalone experience.
+- Describe Security Copilot agents in Microsoft Entra, Microsoft Defender, Microsoft Purview, and Microsoft Intune.
 - Describe how Security Copilot supports building your own agents.
 
-More Reading:  
-- [Microsoft Security Copilot agents](/copilot/security/agents-security-copilot)
+Learn more:
+
 - [Microsoft Security Copilot agents overview](/copilot/security/agents-overview)
-- [Microsoft Security Copilot Agents in Microsoft Defender](/defender-xdr/security-copilot-agents-defender)  
-- [Microsoft Security Copilot Phishing Triage Agent in Microsoft Defender](/defender-xdr/phishing-triage-agent)  
+- [Microsoft Security Copilot agents](/copilot/security/agents-security-copilot)
+- [Manage Security Copilot agents](/copilot/security/agents-manage)
+- [What are agent identities?](/entra/agent-id/identity-platform/what-is-agent-id)
+- [Understand authentication in Microsoft Security Copilot](/copilot/security/authentication)
 - [Microsoft Security Copilot agents in Microsoft Entra](/entra/fundamentals/agents)
-- [Microsoft Entra Conditional Access optimization agent](/entra/identity/conditional-access/agent-optimization)
+- [Microsoft Security Copilot agents in Microsoft Defender](/defender-xdr/security-copilot-agents-defender)
+- [Microsoft Security Copilot agents in Microsoft Purview](/purview/copilot-in-purview-agents)
+- [Microsoft Security Copilot agents in Microsoft Intune](/intune/agents/agents-overview)
+- [Build your own agents in Security Copilot](/copilot/security/developer/build-agent-natural-language)
+- [Microsoft Security Copilot agent development overview](/copilot/security/developer/custom-agent-overview)

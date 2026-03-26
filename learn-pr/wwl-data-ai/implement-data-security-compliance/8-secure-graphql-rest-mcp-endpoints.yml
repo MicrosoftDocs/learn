@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.secure-graphql-rest-mcp-endpoints
+title: Secure data API endpoints
+metadata:
+  title: Secure data API endpoints
+  description: Learn how to secure GraphQL, REST, and Model Context Protocol (MCP) endpoints that expose database data to applications and AI agents.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/8-secure-graphql-rest-mcp-endpoints.md)]

@@ -27,7 +27,7 @@ levels:
 roles:
 - administrator
 products:
-- ai-services
+- foundry-tools
 - azure
 subjects:
 - infrastructure

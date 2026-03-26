@@ -5,7 +5,7 @@ metadata:
   description: Learn how to start building agents with Microsoft Agent Framework
   author: buzahid
   ms.author: buzahid
-  ms.date: 09/26/2025
+  ms.date: 02/24/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
@@ -28,8 +28,8 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-ai-foundry
-  - azure-ai-foundry-agent-service
+  - microsoft-foundry
+  - foundry-agent-service
 subjects: 
   - artificial-intelligence
 units:

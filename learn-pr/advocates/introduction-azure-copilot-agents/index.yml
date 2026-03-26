@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.introduction-azure-copilot-agents
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 02/13/2026
+  ms.update-cycle: 180-days
+  title: Introduction to Azure Copilot Agents
+  description: In this module, you get an overview of each of the agents available in Azure Copilot and how you can use them to perform common Azure operations tasks more efficiently.
+  ms.topic: module
+  ms.service: azure
+  ms.collection: ce-advocates-ai-copilot
+title: Introduction to Azure Copilot agents
+summary: |
+  Azure Copilot is an AI-driven cloud assistant that helps you perform operations tasks in Azure. Azure Copilot includes six specialized agents, which assist you with managing and maintaining your Azure workloads. 
+  In this module, you get an overview of each of the agents available in Azure Copilot and how you can use them to perform common Azure operations tasks more efficiently.
+abstract: | 
+  By completing this module, you learn about the functionality of the following Azure Copilot agents:
+  -	Deployment agent
+  -	Migration agent
+  -	Observability agent
+  -	Optimization agent
+  -	Resiliency agent
+  -	Troubleshooting agent
+prerequisites:   |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  -	Microsoft Azure and cloud services
+  - Azure operations tasks and best practices
+  -	AI concepts
+  - Architecture concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-azure-copilot-agents.deployment-agent
+- learn.introduction-azure-copilot-agents.migration-agent
+- learn.introduction-azure-copilot-agents.observability-agent
+- learn.introduction-azure-copilot-agents.optimization-agent
+- learn.introduction-azure-copilot-agents.resiliency-agent
+- learn.introduction-azure-copilot-agents.troubleshooting-agent
+- learn.introduction-azure-copilot-agents.knowledge-check
+- learn.introduction-azure-copilot-agents.summary
+badge:
+  uid: learn.introduction-azure-copilot-agents-badge

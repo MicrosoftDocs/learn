@@ -28,7 +28,7 @@ roles:
 - solution-architect 
 - support-engineer
 products:
-- ai-services
+- foundry-tools
 - azure-machine-learning
 modules:
 - learn.restrict-azure-machine-learning-network-traffic

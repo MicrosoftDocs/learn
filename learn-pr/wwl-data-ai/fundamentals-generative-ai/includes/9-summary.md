@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=d4576e9f-45bb-4e50-8e89-06d8f76cfd04]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6bc8375a-ed2e-4e03-b4ee-85ada5544fd7]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -15,7 +15,7 @@ Generative AI is a rapidly developing field of AI that supports new language gen
 
 > [!TIP]
 > For more information about some of the concepts discussed in this module, take a look at the following links:
-> 
+>
 > - [What are large language models (LLMs)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-are-large-language-models-llms?azure-portal=true)
 > - [What is retrieval-augmented generation (RAG)?](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-retrieval-augmented-generation-rag?azure-portal=true)
 > - [Agent Factory: The new era of agentic AI—common use cases and design patterns](https://azure.microsoft.com/blog/agent-factory-the-new-era-of-agentic-ai-common-use-cases-and-design-patterns?azure-portal=true)

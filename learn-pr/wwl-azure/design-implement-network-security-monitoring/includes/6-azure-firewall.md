@@ -6,13 +6,22 @@
 
 ## When to use Azure Firewall 
 
-Azure Firewall has three [SKUs](/azure/firewall/choose-firewall-sku): Azure Firewall Basic, Azure Firewall Standard, and Azure Firewall Premium. All versions can help you in these scenarios. 
+Azure Firewall has three [SKUs](/azure/firewall/choose-firewall-sku): Azure Firewall Basic, Azure Firewall Standard, and Azure Firewall Premium. 
 
 - You want to protect your network against infiltration.
 - You want to protect your network against user error.
 - Your business includes e-commerce or credit card payments.
 - You want to configure spoke-to-spoke connectivity.
 - You want to monitor incoming and outgoing traffic.
+
+### How to choose the SKU
+
+- **Basic**: Up to 250 Mbps; SMB environments; has threat intelligence in alert mode only.
+- **Standard**: Up to 30 Gbps; enterprise environments; L3–L7 filtering, DNS proxy, web categories, and threat intelligence.
+- **Premium**: Up to 100 Gbps; regulated/sensitive environments (healthcare, payment); adds TLS inspection, IDPS, full URL filtering, and PCI DSS compliance.
+
+
+
 
 ## What are Azure Firewall rules?
 

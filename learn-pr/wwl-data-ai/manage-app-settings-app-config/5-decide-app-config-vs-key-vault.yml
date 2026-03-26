@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-settings-app-config.decide-app-config-vs-key-vault
+title: Decide what to store in App Configuration vs Key Vault
+metadata:
+  title: Decide What to Store in App Configuration vs Key Vault
+  description: Decide what to store in App Configuration vs Key Vault
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-decide-app-config-vs-key-vault.md)]

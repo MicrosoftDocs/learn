@@ -28,5 +28,5 @@ Module 1 Demos
 
 Module 1 Labs 
 
-- Lab 1.1: [Navigate finance and operations apps](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M01_Lab1_Navigate_finance_and_operations_apps.md)
-- Lab 1.2: [Excel integration](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M01_Lab2_Excel_integration.md)
+- Lab 1.1: Navigate finance and operations apps
+- Lab 1.2: Excel integration

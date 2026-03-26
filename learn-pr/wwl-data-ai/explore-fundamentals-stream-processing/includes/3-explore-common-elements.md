@@ -17,7 +17,7 @@ Microsoft supports multiple technologies that you can use to implement real-time
 
 - **Azure Stream Analytics**: A platform-as-a-service (PaaS) solution you can use to define *streaming jobs* that ingest data from a streaming source, apply a perpetual query, and write the results to an output.
 - **Spark Structured Streaming**: An open-source library that enables you to develop complex streaming solutions on Apache Spark based services, including **Microsoft Fabric** and **Azure Databricks**.
-- **Microsoft Fabric**: A high-performance database and analytics platform that includes Data Engineering, Data Factory, Data Science, Real-Time Analytics, Data Warehouse, and Databases.
+- **Microsoft Fabric**: A high-performance database and analytics platform that includes Data Engineering, Data Factory, Data Science, Real-Time Intelligence, Data Warehouse, and Databases.
 
 ### *Sources* for stream processing
 

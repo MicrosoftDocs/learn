@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.introduction-github-app-modernization
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 02/17/2026
+  title: Introduction to GitHub Copilot App Modernization
+  description: This module introduces the capabilities of GitHub Copilot app modernization, explains how it differs from general GitHub Copilot usage, walks through its key features and workflows, and provides best practices for AI-assisted application modernization.
+  ms.topic: module
+  ms.service: azure
+  ms.collection: ce-advocates-ai-copilot
+title: Introduction to GitHub Copilot app modernization
+summary: GitHub Copilot app modernization is a specialized GitHub Copilot agent that helps you upgrade Java and .NET projects to newer versions, and migrate Java, .NET, and Python applications to Azure. Unlike general-purpose Copilot code suggestions, this product provides structured, end-to-end workflows, from assessment and planning through code transformation, build validation, and deployment.
+abstract: |
+  After completing this module, you will be able to:
+  -	Describe GitHub Copilot app modernization and its capabilities. 
+  -	Identify GitHub Copilot app modernization supported languages, frameworks, and platforms. 
+  -	Understand the GitHub Copilot app modernization workflow. 
+  -	Work with GitHub Copilot app modernization predefined and custom tasks. 
+  -	Understand how to refactor and upgrade legacy code with the GitHub Copilot app modernization agent.
+  -	Understand how the modernization agent handles framework upgrades and Azure migration. 
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  -	Microsoft Azure and cloud services
+  -	AI concepts
+  - Architecture concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-github-app-modernization.introduction-code-modernization
+- learn.introduction-github-app-modernization.github-copilot-app-modernization
+- learn.introduction-github-app-modernization.modernization-workflow-works
+- learn.introduction-github-app-modernization.refactor-legacy-code-modernization-agent
+- learn.introduction-github-app-modernization.modernize-architecture-frameworks
+- learn.introduction-github-app-modernization.app-modernization-case-study
+- learn.introduction-github-app-modernization.considerations-ai-assisted-modernization
+- learn.introduction-github-app-modernization.knowledge-check
+- learn.introduction-github-app-modernization.summary
+badge:
+  uid: learn.introduction-github-app-modernization-badge

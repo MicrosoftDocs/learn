@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-app-settings-app-config
+metadata:
+  title: Manage Application Settings with Azure App Configuration
+  description: Learn how to use Azure App Configuration to store, organize, and retrieve application settings and feature flags in AI solutions on Azure, while securely referencing secrets stored in Azure Key Vault.
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-app-configuration
+title: Manage application settings with Azure App Configuration
+summary: |
+  Learn how to use Azure App Configuration to centralize application settings for AI solutions on Azure. This module covers connecting from Python application code with managed identity, organizing settings with labels and feature flags, referencing Key Vault secrets, and deciding which settings belong in each service.
+abstract: |
+  After completing this module, you'll be able to:
+    - Connect to Azure App Configuration from application code and retrieve settings using the Python provider library with managed identity authentication.
+    - Organize configuration settings with labels and implement feature flags to control feature availability without redeployment.
+    - Reference Azure Key Vault secrets from App Configuration to unify configuration and secret access in a single retrieval path.
+    - Decide which settings belong in App Configuration and which belong in Key Vault based on sensitivity, structure, and access patterns.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-app-configuration
+subjects:
+- application-management
+units:
+- learn.wwl.manage-app-settings-app-config.introduction
+- learn.wwl.manage-app-settings-app-config.connect-app-configuration
+- learn.wwl.manage-app-settings-app-config.organize-labels-feature-flags
+- learn.wwl.manage-app-settings-app-config.reference-key-vault-secrets
+- learn.wwl.manage-app-settings-app-config.decide-app-config-vs-key-vault
+- learn.wwl.manage-app-settings-app-config.exercise-retrieve-settings
+- learn.wwl.manage-app-settings-app-config.knowledge-check
+- learn.wwl.manage-app-settings-app-config.summary
+badge:
+  uid: learn.wwl.manage-app-settings-app-config.badge

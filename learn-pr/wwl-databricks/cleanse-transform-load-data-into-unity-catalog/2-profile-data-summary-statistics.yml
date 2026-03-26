@@ -4,7 +4,7 @@ title: Profile data
 metadata:
   title: Profile Data
   description: Learn how to profile data to generate summary statistics and assess data distributions in Azure Databricks using SQL commands and the data profiling feature.
-  ms.date: 12/07/2025
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

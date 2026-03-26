@@ -46,7 +46,7 @@ NtdsUtil.exe is a command-line executable file that you can use to perform datab
 
 ## What is restartable AD DS?
 
-In most scenarios that require Active Directory management, you should restart the domain controller in DSRM. Windows Server enables administrators to stop and start AD DS just like any other service—without restarting a domain controller—to perform some management tasks quickly. This feature is called restartable AD DS. Restartable AD DS reduces the required time to perform certain operations. For example, you can stop AD DS so that you can apply updates to a domain controller.
+In some scenarios that require Active Directory management, you need to restart the domain controller in DSRM. Windows Server enables administrators to stop and start AD DS just like any other service—without restarting a domain controller—to perform some management tasks quickly. This feature is called restartable AD DS. Restartable AD DS reduces the required time to perform certain operations. For example, you can stop AD DS so that you can apply updates to a domain controller.
 
 You can use the following methods to restart AD DS:
 

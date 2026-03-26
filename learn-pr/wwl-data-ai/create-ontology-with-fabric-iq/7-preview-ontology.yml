@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.preview-ontology
+title: Preview the ontology
+metadata:
+  title: Preview the ontology
+  description: "Verify ontology by viewing entity instances, relationship graphs, and property charts"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-preview-ontology.md)]

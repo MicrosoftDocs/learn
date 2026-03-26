@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-speech-agent-speech-mcp.connect-use-speech-mcp
+title: Connect and use the Speech MCP server with an agent
+metadata:
+  title: Connect and use the Speech MCP server with an agent
+  description: Learn how to connect the Azure Speech MCP server to an agent in Microsoft Foundry and build a client application.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-connect-use-speech-mcp.md)]

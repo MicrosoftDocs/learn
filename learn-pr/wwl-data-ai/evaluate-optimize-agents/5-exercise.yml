@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-optimize-agents.exercise
+metadata:
+  title: Exercise - Evaluate and compare AI agent versions
+  description: Hands-on exercise to evaluate two prompt versions of the Trail Guide Agent and create a Version Comparison Decision Document using structured quality criteria and cost analysis.
+  ms.date: 02/17/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Exercise - Evaluate and compare AI agent versions
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-computer-vision-in-azure.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 03/24/2026
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-with-speech-in-azure
+metadata:
+  title: Get started with speech in Azure
+  description: "Learn how to use Azure Speech in Foundry Tools to recognize and synthesize speech."
+  ms.date: 02/13/2026
+  ms.update-cycle: 180-days
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.service: azure-ai-speech
+  ai-usage: ai-assisted
+title: Get started with speech in Azure
+summary: Learn how to recognize and synthesize speech using Azure Speech in Foundry Tools.
+abstract: |
+  In this module you will:
+  - Learn to use Azure Speech's speech-to-text API for speech recognition
+  - Learn to use Azure Speech's text-to-speech API for speech synthesis
+  - Learn to use Azure Speech's Voice Live capabilities 
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- student
+products:
+- foundry-tools
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+- natural-language-processing
+units:
+- learn.wwl.get-started-with-speech-in-azure.introduction
+- learn.wwl.get-started-with-speech-in-azure.speech-recognition
+- learn.wwl.get-started-with-speech-in-azure.speech-synthesis
+- learn.wwl.get-started-with-speech-in-azure.voice-live
+- learn.wwl.get-started-with-speech-in-azure.exercise
+- learn.wwl.get-started-with-speech-in-azure.knowledge-check
+- learn.wwl.get-started-with-speech-in-azure.summary
+badge:
+  uid: learn.wwl.get-started-with-speech-in-azure.badge

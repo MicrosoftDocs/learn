@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-programmability-objects.create-views
+title: Create views
+metadata:
+  title: Create views
+  description: "Learn how to create views in SQL Server to simplify queries, enhance security, and present data effectively."
+  ms.date: 01/22/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-create-views.md)]

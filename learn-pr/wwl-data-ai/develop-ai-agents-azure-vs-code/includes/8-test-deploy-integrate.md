@@ -91,9 +91,10 @@ Deployed agents appear in your project's resource list with active status indica
 VS Code deployment integrates with your development workflow:
 
 1. Open your agent in the Agent Designer
-1. Select **Create on Microsoft Foundry** (for new agents) or **Update on Microsoft Foundry** (for changes)
+1. Select **Update on Microsoft Foundry** to push your configuration changes
+1. For hosted agents, use the **Deploy Hosted Agents** option in the Tools section
 1. Wait for deployment confirmation
-1. Refresh the Azure Resources view to see the deployed agent
+1. Refresh the Resources view to see the updated agent
 
 This streamlined process keeps you in your development environment, eliminating context switches during deployment.
 
@@ -119,60 +120,15 @@ To generate integration code:
 
 1. Select your deployed agent in the Azure Resources view (VS Code)
 1. Select **Open Code File** from the available actions
-1. Choose your programming language from the dropdown
+1. The extension presents structured options:
+   - **Choose your preferred SDK** - Select the SDK framework for your integration
+   - **Choose your language** - Select your programming language (Python, JavaScript, C#, etc.)
+   - **Choose your authentication method** - Select how your application authenticates (managed identity, service principal, interactive, etc.)
 1. The extension generates sample code showing how to:
    - Authenticate with Microsoft Foundry
    - Connect to your specific agent
    - Send messages using the Responses API
    - Process agent responses
-
-### Sample integration code structure
-
-Generated code typically includes:
-
-**Authentication setup** - Code for authenticating with Azure using service principals, managed identities, or interactive credentials.
-
-**Client initialization** - Creating and configuring the Microsoft Foundry client with your project details.
-
-**Message handling** - Sending messages using the Responses API and managing conversation state.
-
-**Response handling** - Processing agent responses, including handling tool calls and error conditions.
-
-Here's a simplified example of Python integration code using the Responses API:
-
-```python
-from azure.ai.projects import AIProjectClient
-from azure.identity import DefaultAzureCredential
-
-# Initialize client
-credential = DefaultAzureCredential()
-project_client = AIProjectClient(
-    credential=credential,
-    subscription_id="your-subscription-id",
-    resource_group_name="your-resource-group",
-    project_name="your-project-name"
-)
-
-# Get agent
-agent = project_client.agents.get_agent("your-agent-id")
-
-# Send message using Responses API
-response = project_client.agents.create_response(
-    agent_id=agent.id,
-    messages=[{
-        "role": "user",
-        "content": "Hello, I need help scheduling an appointment"
-    }]
-)
-
-# Process response
-if response.status == "completed":
-    for message in response.messages:
-        if message.role == "assistant":
-            print(message.content)
-```
-
-This code provides a starting point you can adapt to your specific requirements.
 
 ## Production integration patterns
 

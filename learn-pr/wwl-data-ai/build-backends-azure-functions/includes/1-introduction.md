@@ -1,0 +1,14 @@
+AI solutions require lightweight, event-driven compute to handle tasks such as serving inference requests, processing data pipelines, and integrating with external services. This module guides you through building serverless AI backends with Azure Functions to create responsive, cost-efficient, and secure endpoints that scale automatically with demand.
+
+Imagine you're a developer at a company building an intelligent document processing pipeline. The system receives documents through an API, extracts text using an Azure AI service, classifies the content, and stores the results in a database. The current architecture runs on dedicated virtual machines that sit idle most of the day but struggle to keep up during peak upload windows. Operational costs are climbing because the VMs run around the clock, and the team spends significant effort maintaining the infrastructure. Your manager asks you to move the processing logic to a serverless architecture that scales with actual demand and charges only for execution time. You need an HTTP endpoint that accepts document uploads, a queue-based processor that handles classification asynchronously, and output bindings that write results to storage. Each component must securely access Azure AI services and databases without embedding credentials in code. The client expects the new system to handle bursts of several hundred concurrent requests while keeping average response latency under 500 milliseconds. You choose Azure Functions because it provides event-driven triggers, built-in bindings to Azure services, and flexible hosting plans that let you balance cold start latency against cost. Building this solution requires understanding how Functions scales, how to develop and debug locally, and how to properly manage secrets and identity.
+
+After completing this module, you'll be able to:
+
+- Evaluate cold start, scaling, and instance memory trade-offs when choosing between Flex Consumption and Premium hosting for AI workloads.
+- Set up a local development environment for Azure Functions using Core Tools, emulators, and an IDE.
+- Create triggers and bindings that implement common AI integration patterns such as HTTP inference endpoints and queue-based batch processors.
+- Configure secrets management and application settings using Key Vault references and Azure App Configuration.
+- Apply managed identity and function-level authorization to secure access between Functions and other Azure resources.
+
+> [!NOTE]
+> All code examples in this module are based on the most recent version of the Azure Functions libraries at the time of writing. The libraries are updated often and the recommendation is to visit the [Azure Functions Python developer guide](/azure/azure-functions/functions-reference-python) for the most up-to-date information.

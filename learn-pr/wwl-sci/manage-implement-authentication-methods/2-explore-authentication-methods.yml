@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-implement-authentication-methods.explore-authentication-methods
+title: Explore Microsoft Entra ID authentication methods
+metadata:
+  title: Explore Microsoft Entra ID Authentication Methods
+  description: Explore the spectrum of Microsoft Entra ID authentication methods, from password-based to passwordless, and understand authentication strength and security hierarchy.
+  ms.date: 03/04/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-authentication-methods.md)]
+  
