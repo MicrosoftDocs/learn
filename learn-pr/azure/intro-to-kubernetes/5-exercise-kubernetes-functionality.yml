@@ -5,7 +5,7 @@ title: Exercise - Explore the functionality of a Kubernetes cluster
 metadata:
   title: Exercise - Explore the functionality of a Kubernetes cluster
   description: An exercise that explores the functionality of a Kubernetes cluster
-  ms.date: 11/13/2024
+  ms.date: 03/20/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
@@ -14,4 +14,3 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-kubernetes-functionality.md)]
-

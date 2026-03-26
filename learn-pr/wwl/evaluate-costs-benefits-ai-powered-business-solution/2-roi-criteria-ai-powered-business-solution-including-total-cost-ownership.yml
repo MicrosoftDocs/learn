@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.roi-criteria-ai-powered-business-solution-including-total-cost-ownership
+title: "Evaluate ROI criteria for AI-powered solutions"
+metadata:
+  title: "Evaluate ROI Criteria for AI-Powered Solutions"
+  description: "Learn to evaluate ROI criteria, including TCO, for AI-powered solutions. Use structured frameworks and analytics to quantify business value."
+  ms.date: 02/13/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-roi-criteria-ai-powered-business-solution-including-total-cost-ownership.md)]

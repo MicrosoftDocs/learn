@@ -2,32 +2,28 @@ Your company is experiencing increased demand for its video rendering service be
 
 You created an AKS cluster and deployed your web application to the Kubernetes cluster. When you deployed the web app, you used the Kubernetes declarative paradigm to describe what you wanted to create. This way, you can keep the app's version history and make future deployments easily reproducible.
 
-Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to re-create your environment with each new deployment and configure more services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
+Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to recreate your environment with each new deployment and configure more services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
 
 ## Clean up resources
 
 In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
 
-1. Open the Azure portal.
 
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
+1. Delete the _rg-contoso-video_ resource group and resources that you created for this module.
 
-1. Select **Resource groups**.
+    ```azurecli-interactive
+    az group delete --name rg-contoso-video --yes --no-wait
+    ```
 
-1. Find the **rg-contoso-video** resource group, or the resource group name you used, and select it.
+   When the resource group is deleted, the **MC_rg-contoso-video_aks-contoso-video_eastus** resource group that contains the cluster's resources is also deleted.
 
-1. On the **Overview** tab of the resource group, select **Delete resource group**.
+1. Remove the deleted cluster's context using the `kubectl config delete-context <clusterName>` command.
 
-1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
-
-1. Run the `kubectl config delete-context` command to remove your deleted clusters context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
-
-    ```bash
+    ```azurecli-interactive
     kubectl config delete-context aks-contoso-video
     ```
 
-    If successful, the command returns the following example output.
+    If the command is successful, it returns the following example output:
 
     ```output
     deleted context aks-contoso-video from /home/user/.kube/config
@@ -47,5 +43,6 @@ To learn more about Azure Kubernetes Service, see the following articles:
 - [AKS HTTPS ingress controller docs](/azure/aks/ingress-tls)
 - [Kubernetes ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 - [Kubernetes documentation](https://kubernetes.io/docs/home/)
+- [Kubernetes deployments documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 - [Kubernetes service types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
 - [Azure Kubernetes Service (AKS) Production Baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)

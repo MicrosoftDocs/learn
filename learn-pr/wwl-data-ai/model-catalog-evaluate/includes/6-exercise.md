@@ -5,4 +5,4 @@ Now, it's your chance to explore how to select, deploy, test, and evaluate langu
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2352752&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2354118&azure-portal=true)

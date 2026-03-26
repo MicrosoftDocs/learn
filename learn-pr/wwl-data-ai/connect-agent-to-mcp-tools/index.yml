@@ -30,8 +30,7 @@ roles:
   - student
 products:
   - microsoft-foundry
-  - azure-ai-foundry-agent-service
-  - azure-ai-foundry-sdk
+  - foundry-agent-service 
 subjects: 
   - artificial-intelligence
 units:

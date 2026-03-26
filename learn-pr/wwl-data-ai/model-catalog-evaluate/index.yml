@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.model-catalog-evaluate
 metadata:
-  title: Select, deploy, and evaluate models from the catalog in Microsoft Foundry portal
+  title: Select, deploy, and evaluate Microsoft Foundry models
   description: Explore how to select appropriate models from the model catalog using benchmarks, deploy them to endpoints, and evaluate their performance using manual and automated approaches in Microsoft Foundry portal.
-  ms.date: 02/13/2026
+  ms.date: 03/21/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.service: azure-ai-foundry
   ms.custom: ai-learning-hub
-title: Select, deploy, and evaluate models from the catalog in Microsoft Foundry portal
+title: Select, deploy, and evaluate Microsoft Foundry models
 summary: Explore how to select appropriate models from the model catalog using benchmarks, deploy them to endpoints, and evaluate their performance using manual and automated approaches in Microsoft Foundry portal.
 abstract: |
   By the end of this module, you'll be able to:
@@ -28,20 +28,20 @@ roles:
   - data-scientist
   - ai-engineer
 products:
-  - azure-ai-foundry
+  - microsoft-foundry
 subjects:
   - cloud-computing
   - artificial-intelligence
   - machine-learning
   - natural-language-processing
 units:
-- learn.wwl.model-catalog-evaluate.introduction
-- learn.wwl.model-catalog-evaluate.explore-model-catalog
-- learn.wwl.model-catalog-evaluate.select-models-benchmarks
-- learn.wwl.model-catalog-evaluate.deploy-models
-- learn.wwl.model-catalog-evaluate.evaluate-performance
-- learn.wwl.model-catalog-evaluate.exercise
-- learn.wwl.model-catalog-evaluate.knowledge-check
-- learn.wwl.model-catalog-evaluate.summary
+  - learn.wwl.model-catalog-evaluate.introduction
+  - learn.wwl.model-catalog-evaluate.explore-model-catalog
+  - learn.wwl.model-catalog-evaluate.select-models-benchmarks
+  - learn.wwl.model-catalog-evaluate.deploy-models
+  - learn.wwl.model-catalog-evaluate.evaluate-performance
+  - learn.wwl.model-catalog-evaluate.exercise
+  - learn.wwl.model-catalog-evaluate.knowledge-check
+  - learn.wwl.model-catalog-evaluate.summary
 badge:
   uid: learn.wwl.model-catalog-evaluate.badge

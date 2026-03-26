@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of implementing and configuring Privileged Identity Management (PIM) across Microsoft Entra roles, Azure resource roles, PIM for Groups, and AI workloads."
+  ms.date: 03/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

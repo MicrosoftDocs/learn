@@ -21,7 +21,7 @@ roles:
 - administrator
 products:
 - azure
-- ai-services 
+- foundry-tools 
 subjects:
 - artificial-intelligence
 - infrastructure

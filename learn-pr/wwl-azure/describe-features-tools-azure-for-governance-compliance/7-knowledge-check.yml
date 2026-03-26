@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/11/2024
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -22,9 +22,9 @@ quiz:
     - content: "Azure Policy"
       isCorrect: true
       explanation: "Correct. Azure policy lets you create policies and initiatives (groups of policies) that prevent non-compliant resource from being created."
-    - content: "Azure Purview"
+    - content: "Microsoft Purview"
       isCorrect: false
-      explanation: "Incorrect. Azure Purview helps you manage your data estate, but won't prevent an out-of-policy resource creation."
+      explanation: "Incorrect. Microsoft Purview helps you manage your data estate, but won't prevent an out-of-policy resource creation."
     - content: "Azure Resource Monitor"
       isCorrect: false
       explanation: "Incorrect. Azure Policy is the best way to ensure that resource are created based on a set policy or group of policies."

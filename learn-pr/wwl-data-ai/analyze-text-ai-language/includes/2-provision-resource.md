@@ -12,7 +12,7 @@ Azure Language in Foundry Tools is designed to help you extract information from
 
 To use Azure Language in Foundry Tools to analyze text, you must provision a Microsoft Foundry resource in your Azure subscription.
 
-After you have provisioned a Foundry resource in your Azure subscription, you can use its **endpoint** to call the Azure Language APIs from your code, authenticating requests by either providing the **key** associated with your resource or by using and Microsoft Entra ID identity. You can call the Azure Language APIs by submitting requests in JSON format to the REST interface, or by using any of the available programming language-specific SDKs.
+After you have provisioned a Foundry resource in your Azure subscription, you can use its **endpoint** to call the Azure Language APIs from your code, authenticating requests by either providing the **key** associated with your resource or by using a Microsoft Entra ID identity. You can call the Azure Language APIs by submitting requests in JSON format to the REST interface, or by using any of the available programming language-specific SDKs.
 
 > [!NOTE]
 > The code examples in this module are based in Python, using the [Python SDK for Azure Language in Foundry Tools](https://pypi.org/project/azure-ai-textanalytics/). SDKs for other common languages (such as Microsoft C#, JavaScript, and others) follow a similar pattern.

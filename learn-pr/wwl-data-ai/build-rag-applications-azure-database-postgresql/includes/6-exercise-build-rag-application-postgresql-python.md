@@ -2,7 +2,7 @@ In this exercise, you build a simple RAG (Retrieval-Augmented Generation) applic
 
 > [!Note]
 >
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free) and be approved for Azure OpenAI access. If you need Azure OpenAI access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access) page.
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and be approved for Azure OpenAI access. If you need Azure OpenAI access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access) page.
 
 Launch the exercise and follow the instructions.
 

@@ -2,7 +2,7 @@ In this exercise, you investigate slow queries in Azure SQL Database using execu
 
 > [!NOTE]
 >
-> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free).
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

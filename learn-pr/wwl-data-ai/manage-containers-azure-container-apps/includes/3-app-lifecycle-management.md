@@ -61,6 +61,6 @@ az containerapp revision list \
 
 Use these links to review how lifecycle actions fit into the broader Container Apps operational model. They're also useful when you build runbooks and want a single place to confirm current CLI syntax.
 
-- [Azure Container Apps manage applications](/azure/container-apps/manage)
+- [Azure Container Apps manage applications](/azure/container-apps/overview)
 - [Azure Container Apps revisions](/azure/container-apps/revisions)
 - [Azure CLI: az containerapp](/cli/azure/containerapp)

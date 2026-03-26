@@ -3,12 +3,11 @@ uid: learn.wwl.develop-generative-ai-vision-apps.develop-visual-chat-apps
 title: Develop a vision-based chat app
 metadata:
   title: Develop a vision-based chat app
-  description: "Use Microsoft Foundry, Azure AI Model Inference, and Azure OpenAI SDKs to develop a vision-based chat app."
-  ms.date: 04/29/2025
+  description: "Use Microsoft Foundry and OpenAI APIs to develop a vision-based chat app."
+  ms.date: 03/23/2026
   author: gmalc
   ms.author: gmalc
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-develop-visual-chat-app.md)]
-

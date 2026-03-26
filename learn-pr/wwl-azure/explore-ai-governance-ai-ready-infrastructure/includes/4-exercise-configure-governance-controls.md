@@ -38,7 +38,7 @@ At the same time, the organization applies built-in policy definitions to Azure 
 
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create and assign policies, you should have the Owner or Resource Policy Contributor role assigned at the Azure subscription level.
 - Familiarity with Azure Policy
 
@@ -62,7 +62,7 @@ Additionally, since some scenarios involve exploring how individuals might attem
 
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Azure AI Content Safety
 
@@ -91,7 +91,7 @@ Because the platform is designed to evaluate how users may attempt to manipulate
 
 ### Prerequisites
 
-* **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+* **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 * **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 * Familiarity with guardrails and controls in Microsoft Foundry
 
@@ -115,7 +115,7 @@ Additionally, since some scenarios involve exploring how individuals might attem
 
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Azure AI Content Safety
 
@@ -145,7 +145,7 @@ Your company is building an AI-powered training and simulation platform using Mi
 :::image type="content" source="../media/configure-agent-level-guardrails.png" alt-text="Diagram showing how an organization configures agent-level guardrails with lower severity thresholds.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with guardrails and controls in Microsoft Foundry
 
