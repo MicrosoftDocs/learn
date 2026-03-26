@@ -4,4 +4,4 @@ Java is a strategic language of choice on Azure. We support Java developers on m
 
 Microsoft has a high interest in supporting Java and Java on Azure. Did you know that Microsoft is an official contributor to OpenJDK?
 
-Microsoft uses Java in many of its products, like LinkedIn, Yammer, Minecraft, and Surface Duo.
+Microsoft uses Java in many of its products, like LinkedIn, Viva Engage, Minecraft, and Surface Duo.
