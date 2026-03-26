@@ -72,9 +72,9 @@ Architects must ensure logs capture _metadata_, not _content_, to avoid unnecess
 
 Azure AI Foundry provides a centralized control plane for model registration, environment configuration, agent deployment, and diagnostic logging.
 
-Key audit features include:
+### Key audit features include
 
-Foundry activity logs:
+#### Foundry activity logs
 
 Track administrative actions across workspaces, registries, and deployments. Logs support export to:
 
@@ -84,9 +84,9 @@ Track administrative actions across workspaces, registries, and deployments. Log
 
 - SIEM tools (such as Microsoft Sentinel)
 
-Foundry diagnostics and tracing:
+### Foundry diagnostics and tracing
 
-Diagnostics provide traceability of execution across:
+#### Diagnostics provide traceability of execution across
 
 - Model calls
 
@@ -98,7 +98,7 @@ Diagnostics provide traceability of execution across:
 
 ## Designing audit pipelines with tracing
 
-Tracing allows architects to follow execution paths and debug generative AI behaviors. When integrated into audit trails, tracing provides:
+### Tracing allows architects to follow execution paths and debug generative AI behaviors. When integrated into audit trails, tracing provides
 
 - End-to-end visibility of model inference
 
@@ -110,7 +110,7 @@ Tracing allows architects to follow execution paths and debug generative AI beha
 
 - Detection of unusual patterns (loops, excessive token spikes, cascading failures)
 
-Recommended tracing fields include:
+### Recommended tracing fields include
 
 - Correlation ID
 
@@ -128,7 +128,7 @@ Recommended tracing fields include:
 
 ## Designing audit-ready processes
 
-Governance workflows to include:
+### Governance workflows to include
 
 - **Approval workflows** for promoting new model versions
 
@@ -142,7 +142,7 @@ Governance workflows to include:
 
 ### Retention policies
 
-Define retention requirements with Legal, Compliance, and Information Security teams.<br>Common patterns:
+#### Define retention requirements with Legal, Compliance, and Information Security teams.<br>Common patterns
 
 - 90 days for low-risk workloads
 

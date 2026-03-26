@@ -52,7 +52,7 @@ Guardrails protect both users and the system by preventing unsafe or non-complia
 
 ### Examples of guardrails
 
-- Blocklists for prohibited document types
+- Block lists for prohibited document types
 
 - Sanitization pipelines removing personal data or contractual data
 

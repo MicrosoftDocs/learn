@@ -108,7 +108,7 @@ The following review model ensures consistency and objectivity when assessing an
 
 - Practices for documenting model lineage, data provenance, and decisions
 
-- Governance processes for review, approval, and sign-off
+- Governance processes for review, approval, and sign off
 
 ### Operational oversight and governance
 
