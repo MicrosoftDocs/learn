@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.analyze-whether-build-buy-extend-ai-components-business-solutions
+title: "Analyze whether to build, buy, or extend AI components"
+metadata:
+  title: "Analyze Whether to Build, Buy, or Extend AI Components"
+  description: "Learn how to evaluate whether to build, buy, or extend AI components for business solutions using strategic frameworks and cost analysis."
+  ms.date: 02/13/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-analyze-whether-build-buy-extend-ai-components-business-solutions.md)]
