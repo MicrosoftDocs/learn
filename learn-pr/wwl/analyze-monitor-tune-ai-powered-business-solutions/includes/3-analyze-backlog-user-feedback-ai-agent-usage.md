@@ -8,43 +8,43 @@ Solution architects play a critical role in translating insights from telemetry,
 
 ### A backlog in AI and agent operations typically contains:
 
-Enhancement requests
+* Enhancement requests
 
-Feature gaps
+* Feature gaps
 
-Recurrent issues or failure modes
+* Recurrent issues or failure modes
 
-Userreported friction
+* Userreported friction
 
-Operational risks
+* Operational risks
 
-Governance or policy misalignment concerns
+* Governance or policy misalignment concerns
 
 ### User feedback may originate from:
 
-Conversation transcripts
+* Conversation transcripts
 
-Agent usage analytics
+* Agent usage analytics
 
-Support tickets
+* Support tickets
 
-Internal surveys
+* Internal surveys
 
-Inapp rating prompts
+* Inapp rating prompts
 
-Observability dashboards
+* Observability dashboards
 
 ### Effective backlog analysis helps solution architects:
 
-Prioritize improvements based on impact
+* Prioritize improvements based on impact
 
-Classify themes and detect emerging patterns
+* Classify themes and detect emerging patterns
 
-Understand user sentiment and expectations
+* Understand user sentiment and expectations
 
-Validate whether agent behavior aligns to business intent
+* Validate whether agent behavior aligns to business intent
 
-Identify opportunities for automation and process redesign
+* Identify opportunities for automation and process redesign
 
 ## 2. Framework for Backlog Analysis
 
@@ -54,17 +54,17 @@ Use a structured, repeatable model to elevate analysis to a solutionarchitecture
 
 #### Organize items into categories such as:
 
-**Accuracy and Reasoning**: Incorrect, missing, or lowconfidence responses
+* **Accuracy and Reasoning**: Incorrect, missing, or lowconfidence responses
 
-**Knowledge Issues**: Outdated content, insufficient grounding sources
+* **Knowledge Issues**: Outdated content, insufficient grounding sources
 
-**Performance**: Slow response times, timeouts, high latency
+* **Performance**: Slow response times, timeouts, high latency
 
-**User Experience**: Confusing prompts, unclear flows, poor guidance
+* **User Experience**: Confusing prompts, unclear flows, poor guidance
 
-**Integration Issues**: API failures, connector limits, data access problems
+* **Integration Issues**: API failures, connector limits, data access problems
 
-**Governance and Compliance**: Guardrail triggers, DLP conflicts, restricted actions
+* **Governance and Compliance**: Guardrail triggers, DLP conflicts, restricted actions
 
 #### Backlog Categorization Table
 
@@ -87,15 +87,15 @@ Use a matrix to classify items based on business impact and required effort.
 
 #### Solution architects should analyze:
 
-Frequency of similar feedback (volume signals)
+* Frequency of similar feedback (volume signals)
 
-Severity of user-reported issues
+* Severity of user-reported issues
 
-Sentiment indicators in transcripts
+* Sentiment indicators in transcripts
 
-Missed expectations versus business workflows
+* Missed expectations versus business workflows
 
-Suggestions for improving agent guidance
+* Suggestions for improving agent guidance
 
 #### User Feedback Funnel
 
@@ -106,49 +106,49 @@ Suggestions for improving agent guidance
 
 ### Conversation transcripts reveal:
 
-Where the agent misunderstood intent
+* Where the agent misunderstood intent
 
-Where users abandoned a flow
+* Where users abandoned a flow
 
-Incorrect reasoning steps
+* Incorrect reasoning steps
 
-Missing knowledge content
+* Missing knowledge content
 
-Workflows requiring human intervention
+* Workflows requiring human intervention
 
 ### Solution architects should:
 
-Extract common failure paths
+* Extract common failure paths
 
-Map transcript patterns to root causes
+* Map transcript patterns to root causes
 
-Identify training or knowledge updates needed
+* Identify training or knowledge updates needed
 
-Recommend guardrail adjustments or action limits
+* Recommend guardrail adjustments or action limits
 
-Agent Improvement Plan
+* Agent Improvement Plan
 
 ## 4. Monitoring Agent Usage and Behavior
 
-Monitoring ensures agents operate as intended and scale properly.
+* Monitoring ensures agents operate as intended and scale properly.
 
 ### Key items for architects to monitor:
 
-Usage trends and adoption
+* Usage trends and adoption
 
-Peak usage periods
+* Peak usage periods
 
-Most triggered intents
+* Most triggered intents
 
-High-failure prompts
+* High-failure prompts
 
-Actions invoked per session
+* Actions invoked per session
 
-Guardrail intervention events
+* Guardrail intervention events
 
-Data access denials
+* Data access denials
 
-Performance and latency
+* Performance and latency
 
 ### Agent Health Summary Table
 
