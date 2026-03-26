@@ -70,7 +70,9 @@ Models may respond unpredictably when encountering ambiguous, adversarial, or se
 
 ### Data exposure vulnerabilities
 
-#### AI systems often have access to sensitive data sources. Vulnerabilities appear when
+#### AI systems often have access to sensitive data sources. 
+
+Vulnerabilities appear when:
 
 - Prompts indirectly expose sensitive information.
 
