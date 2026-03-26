@@ -6,7 +6,7 @@ The Foundry portal streamlines agent creation through an intuitive interface:
 
 1. **Navigate to Microsoft Foundry** at https://ai.azure.com and sign in with your Azure credentials
 1. **Select your project** from the list of available projects, or create a new one
-1. **Navigate to Agents** in the left navigation menu
+1. **Select Build > Agents** in the left navigation menu
 1. **Select Create** to start building a new agent
 1. **Enter agent details**:
    - **Name**: Provide a descriptive name for your agent
@@ -29,15 +29,13 @@ To test your agent, select the Playground tab and start a conversation. The play
 
 ## Adding basic tools
 
-Before deployment, you can enhance your agent with basic capabilities:
+Before deployment, you can enhance your agent with tools from the tool catalog in the **Tools** section of the agent configuration (also accessible via **Build > Tools** in the portal). The catalog organizes tools into three categories:
 
-**Code Interpreter** - Enables the agent to write and execute Python code for calculations, data analysis, and problem-solving.
+- **Configured** - Built-in tools ready to use immediately, such as Code Interpreter and File Search
+- **Catalog** - Additional tools you can add, including Bing Web Search, Azure AI Search, SharePoint, and more
+- **Custom** - Your own tools added through OpenAPI specifications or MCP servers
 
-**File Search** - Allows the agent to search through uploaded documents to answer questions.
-
-**Bing Search** - Connects your agent to real-time internet information.
-
-You add these tools through the Tools section in the agent configuration. Tool capabilities are explored in detail in the *Extend agent capabilities* unit later in this module.
+Tool capabilities and configuration are explored in detail in the *Extend agent capabilities* unit later in this module.
 
 ## Deploying your agent
 

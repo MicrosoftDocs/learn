@@ -6,12 +6,10 @@ metadata:
   description: Hands-on exercise to use an image generation model in Microsoft Foundry.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/08/2025
+  ms.date: 03/24/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-use-dall-e.md)]
-
-

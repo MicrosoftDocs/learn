@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cleanse-transform-load-data-into-unity-catalog.exercise
+title: Exercise - Cleanse, Transform, and Load Data into Unity Catalog
+metadata:
+  title: Exercise - Cleanse, Transform, and Load Data into Unity Catalog
+  description: "Exercise - Cleanse, Transform, and Load Data into Unity Catalog"
+  ms.date: 02/17/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/9-exercise-cleanse-transform-load-data-into-unity-catalog.md)]

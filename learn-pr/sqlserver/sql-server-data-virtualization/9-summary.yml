@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-server-data-virtualization.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of what was learned in this data virtualization and PolyBase module."
+  ms.date: 02/26/2026
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

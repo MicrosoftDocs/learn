@@ -1,12 +1,9 @@
 
-In this module, you learned how to use Azure Language to:
+In this module, you learned how to use Azure Language in Foundry Tools to:
 
 - Detect language from text.
 - Analyze text sentiment.
 - Extract key phrases, entities, and linked entities.
 
-To learn more about Azure Language and some of the concepts covered in this module, you can explore the following documentation pages:
-
-- [Azure Language documentation](/azure/ai-services/language-service/)
-- [Build a conversational language understanding model](/training/modules/build-language-understanding-model/)
-- [Create a custom named entity extraction solution](/training/modules/custom-name-entity-recognition/)
+> [!TIP]
+> To learn more about Azure Language in Foundry Tools and some of the concepts covered in this module, refer to the **[Azure Language in Foundry Tools documentation](/azure/ai-services/language-service?azure-portal=true)**.

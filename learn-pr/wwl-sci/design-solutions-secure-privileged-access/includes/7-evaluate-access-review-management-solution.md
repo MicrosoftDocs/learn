@@ -39,11 +39,9 @@ Here are some scenarios you might want to consider:
 
 Review administrators define the duration of every review stage and therefore, how much time reviewers in their stage have to record their decisions. Each stage can be configured to have its own duration, to cater for availability and expectation of reviewers.
 
-:::image type="content" source="../media/using-multi-stage-reviews.png" alt-text="Screenshot of using multi-stage reviews." lightbox="../media/using-multi-stage-reviews.png":::
-
 Each review stage stays open for reviewers to add decisions for the length of the duration. Review administrators can stop a running stage and automatically progress the overall review to the next review stage on the reviewer overview page, by selecting **Stop current stage**.
 
-## Application of results 
+## Application of results
 
 Microsoft Entra access reviews can apply decisions about access to a resource by removing no longer needed users from the resource. Decisions are always applied at the end of the review period or when a review administrator manually ends the review. Automatic application of results is defined by the review administrator with the **Auto apply results to resource** setting or manually through the **Apply results** button in the review overview page.
 

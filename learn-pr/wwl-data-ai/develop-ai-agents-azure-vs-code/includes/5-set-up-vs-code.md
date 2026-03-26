@@ -4,7 +4,9 @@ Setting up Visual Studio Code for AI agent development brings enterprise-grade c
 
 The Microsoft Foundry for Visual Studio Code extension provides direct access to Microsoft Foundry Agent Service capabilities. This extension creates an integrated experience for agent development that combines visual design tools with code-based configuration.
 
-![Screenshot of an agent details in the Microsoft Foundry VS Code extension.](../media/vs-code-agent.png)
+The extension organizes its features into three sections: **Resources** (for managing deployed models, declarative agents, hosted agents, connections, and vector stores), **Tools** (for accessing the model catalog, playgrounds, and deployment features), and **Help and Feedback**.
+
+![Screenshot of the Microsoft Foundry VS Code extension interface showing the Resources, Tools, and Help and Feedback sections.](../media/vs-code-agent.png)
 
 ## Installing and configuring the extension
 
@@ -14,7 +16,7 @@ Setting up the Microsoft Foundry extension takes just a few minutes and requires
 
 1. Open Visual Studio Code on your machine
 1. Select **Extensions** from the left pane, or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> (Windows/Linux) or <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> (Mac)
-1. Search for **Microsoft Foundry** in the marketplace search box
+1. Search for **Foundry** in the marketplace search box
 1. Select the **Microsoft Foundry** extension from the results
 1. Select **Install** to add the extension to VS Code
 1. Wait for installation to complete (status appears in the Extensions panel)
@@ -23,20 +25,20 @@ After installation, the Microsoft Foundry icon appears in the VS Code activity b
 
 ### Connecting to Azure
 
-Before creating agents, connect the extension to your Azure account and project:
+Before working with agents, connect the extension to your Azure account and project:
 
-1. Select the **Microsoft Foundry** icon in the VS Code activity bar
-1. Select **Sign in to Azure** when prompted
-1. Complete authentication in your browser
-1. Return to VS Code after successful authentication
-1. Select your **Azure subscription** from the dropdown
-1. Choose your **Microsoft Foundry project** or create a new one
+1. Select the **Azure** icon in the VS Code activity bar
+1. In the **Azure Resources** pane, sign in to your Azure account if prompted
+1. Expand your **Azure subscription** in the resource tree
+1. Expand the **Foundry** section to see your projects
+1. Right-click your **Microsoft Foundry project**
+1. Select **Open in Foundry Extension**
 
-The extension now displays your project resources, including existing agents, model deployments, and other assets.
+The extension now displays your project resources in the Microsoft Foundry panel, including existing agents, model deployments, connections, and vector stores.
 
 ## Preparing for agent development
 
-Before creating your first agent in VS Code, ensure you have the necessary resources deployed.
+Before working with agents in VS Code, ensure you have the necessary resources deployed.
 
 ### Deploying a model
 
@@ -52,24 +54,13 @@ Agents require deployed AI models to function. If you don't have a model deploym
    - **Capacity settings**: Configure throughput based on your needs
 1. Select **Deploy** and wait for deployment to complete
 
-The deployed model becomes available in dropdown menus when you create or configure agents.
+The deployed model becomes available in dropdown menus when you configure agents.
 
-## Creating your first agent in VS Code
+## Working with agents in VS Code
 
-With the extension configured and a model deployed, you're ready to create an agent.
+Agents are often created in the Foundry portal (as described in the previous unit) and then managed and configured in VS Code through the extension. Once you've created an agent in the portal, it appears automatically in the extension's **Resources** section.
 
-### Agent creation process
-
-1. In the **Microsoft Foundry** extension, navigate to the **Resources** section
-1. Find the **Agents** subsection
-1. Select the **+** (plus) icon next to Agents
-1. The extension opens two views:
-   - **Agent Designer**: A visual interface for configuration
-   - **YAML file**: The agent's configuration in code format
-
-![Screenshot of creating a new agent in the Microsoft Foundry VS Code extension.](../media/vs-code-create-new-agent.png)
-
-Both views remain synchronized; changes in one automatically update the other. This dual approach lets you work with whichever format feels more natural for your current task.
+Changes to agents in VS Code can be saved directly to Foundry, so you can work with your agent across platforms.
 
 ## Managing multiple agents
 

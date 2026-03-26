@@ -15,15 +15,15 @@ To enable AI-assisted work, you need appropriate access levels in both Azure Dev
 
 ### Azure DevOps
 
-- [ ] Permission to view and edit work items.
-- [ ] Permission to manage project settings (if you set up the connection).
-- [ ] Visibility into backlog, boards, and sprint views.
+- Permission to view and edit work items.
+- Permission to manage project settings (if you set up the connection).
+- Visibility into backlog, boards, and sprint views.
 
 ### GitHub
 
-- [ ] Permission to install or approve the Azure Boards app scope as needed.
-- [ ] Permission to create branches and pull requests.
-- [ ] Permission to view agent activity and review comments.
+- Permission to install or approve the Azure Boards app scope as needed.
+- Permission to create branches and pull requests.
+- Permission to view agent activity and review comments.
 
 ## Environment quality gates
 

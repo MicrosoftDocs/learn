@@ -10,7 +10,7 @@ The Microsoft Fabric real-time hub acts as a centralized catalog for your organi
 
 To explore data with Real-Time Intelligence, initially choose a data stream from your organization or connected external/internal sources and then you can utilize Real-Time Intelligence’s tools for data exploration and to visualize data patterns, anomalies, and forecasting quantities.
 
-Real-Time dashboards simplify data comprehension, accessible to all via visual tools, Natural Language, and Copilot. You can then turn the insights into actions by setting up Reflex alerts to react in real-time.
+Real-Time dashboards simplify data comprehension, accessible to all via visual tools, Natural Language, and Copilot. You can then turn the insights into actions by setting up Activator alerts to react in real-time.
 
 > [!NOTE]
 > To learn more about the capabilities of Microsoft Fabric Real-Time Intelligence, see the [Real-Time Intelligence documentation in Microsoft Fabric](/fabric/real-time-intelligence/).

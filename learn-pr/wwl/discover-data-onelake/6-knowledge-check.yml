@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-data-onelake.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for discovering and connecting to data in OneLake"
+  ms.date: 02/19/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary benefit of OneLake being a tenant-wide data lake?"
+    choices:
+    - content: "It automatically backs up data to multiple regions."
+      isCorrect: false
+      explanation: "Incorrect. OneLake's primary benefit is providing a single copy of data shared across all workloads, eliminating data silos and reducing duplication."
+    - content: "All Fabric workloads read from and write to the same storage location, eliminating data silos."
+      isCorrect: true
+      explanation: "Correct. OneLake provides a single copy of data that all workloads share, reducing duplication and ensuring everyone sees the same updated data."
+    - content: "It requires separate configuration for each workspace."
+      isCorrect: false
+      explanation: "Incorrect. OneLake is automatically available in every Fabric environment with no separate setup required."
+  - content: "An analytics engineer needs read-only access to tables in a lakehouse managed by another team. Which approach provides T-SQL query access without copying data?"
+    choices:
+    - content: "Create a shortcut to the lakehouse tables."
+      isCorrect: false
+      explanation: "Incorrect. While shortcuts allow access without copying, they don't provide T-SQL query capabilities. The SQL analytics endpoint provides read-only T-SQL access."
+    - content: "Use the lakehouse's SQL analytics endpoint."
+      isCorrect: true
+      explanation: "Correct. The SQL analytics endpoint provides read-only T-SQL access to lakehouse tables, making it ideal for querying data without modification."
+    - content: "Copy the tables to a new lakehouse."
+      isCorrect: false
+      explanation: "Incorrect. Copying data creates duplication and doesn't provide the requested read-only T-SQL access pattern."
+  - content: "Where would an analytics engineer discover eventstreams and streaming data sources in Microsoft Fabric?"
+    choices:
+    - content: "OneLake catalog"
+      isCorrect: false
+      explanation: "Incorrect. The OneLake catalog shows batch data in lakehouses and warehouses. Real-Time hub is the centralized catalog for streaming data."
+    - content: "Real-Time hub"
+      isCorrect: true
+      explanation: "Correct. Real-Time hub is the centralized discovery experience for all eventstreams and streaming data across Microsoft Fabric."
+    - content: "Data Factory pipelines"
+      isCorrect: false
+      explanation: "Incorrect. Pipelines orchestrate batch data movement. Real-Time hub provides discovery of streaming eventstreams."
+  - content: "What is the purpose of shortcuts in OneLake?"
+    choices:
+    - content: "To compress data and reduce storage costs."
+      isCorrect: false
+      explanation: "Incorrect. Shortcuts reference data in other locations without physically copying it, enabling cross-workspace collaboration."
+    - content: "To reference data from other workspaces or external locations without copying it."
+      isCorrect: true
+      explanation: "Correct. Shortcuts let you reference data in other OneLake locations, Azure Data Lake Storage, or Amazon S3 without creating duplicate copies."
+    - content: "To automatically synchronize data between lakehouses."
+      isCorrect: false
+      explanation: "Incorrect. Shortcuts don't synchronize data. They provide a reference to data that remains in its original location."
+  - content: "How does well-cataloged data in OneLake support AI capabilities in Microsoft Fabric?"
+    choices:
+    - content: "It automatically trains machine learning models."
+      isCorrect: false
+      explanation: "Incorrect. While OneLake supports AI workflows, well-cataloged data helps Copilot and Fabric IQ find and understand data to provide relevant insights."
+    - content: "Copilot and Fabric IQ use the same catalog to search and locate relevant data for queries."
+      isCorrect: true
+      explanation: "Correct. Copilot and Fabric IQ agents search the OneLake catalog to find data. Clear names, descriptions, and metadata help AI provide more accurate results."
+    - content: "It prevents unauthorized access to AI features."
+      isCorrect: false
+      explanation: "Incorrect. Access controls and security features prevent unauthorized access. Cataloged data helps AI tools find and understand available data."

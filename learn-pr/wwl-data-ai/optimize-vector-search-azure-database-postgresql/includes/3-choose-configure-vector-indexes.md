@@ -97,5 +97,5 @@ Check index size and usage statistics to monitor index health. Query `pg_stat_us
 ## Additional resources
 
 - [pgvector indexing documentation](https://github.com/pgvector/pgvector#indexing)
-- [Indexing best practices for Azure Database for PostgreSQL](/azure/postgresql/flexible-server/how-to-optimize-performance-indexes)
+- [Indexing best practices for Azure Database for PostgreSQL](/azure/postgresql/monitor/concepts-autonomous-tuning)
 - [HNSW algorithm paper](https://arxiv.org/abs/1603.09320)

@@ -30,7 +30,7 @@ roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/me
   - student
   - data-scientist
 products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  - azure-cognitive-search
+  - foundry-tools
 subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
 units:
@@ -43,4 +43,4 @@ units:
 
 badge:
   uid: learn.use-semantic-search.badge
-
+
