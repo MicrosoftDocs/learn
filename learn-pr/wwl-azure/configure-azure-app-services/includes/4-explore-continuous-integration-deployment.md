@@ -10,7 +10,7 @@ When you create your web app with App Service, you can choose continuous or manu
 
 **Continuous deployment (CI/CD)** is a process used to push out new features and bug fixes in a fast and repetitive pattern with minimal impact on end users. Azure supports automated deployment directly from several sources:
 
-   - **GitHub**: Azure supports automated deployment directly from GitHub. Azure supports automated deployment directly from GitHub using two build providers. When you connect your GitHub repository to Azure, you can choose between **[GitHub Actions]( /azure/developer/github/github-actions)** (default) and **[App Service Build Service](azure/app-service/deploy-continuous-deployment?tabs=others#enable-continuous-deployment)**. 
+   - **GitHub**: Azure supports automated deployment directly from GitHub. Azure supports automated deployment directly from GitHub using two build providers. When you connect your GitHub repository to Azure, you can choose between **[GitHub Actions]( /azure/developer/github/github-actions)** (default) and **[App Service Build Service](/azure/app-service/deploy-continuous-deployment?tabs=others#enable-continuous-deployment)**. 
 
    - **Bitbucket**: With its similarities to GitHub, you can configure an automated deployment with Bitbucket.
 
