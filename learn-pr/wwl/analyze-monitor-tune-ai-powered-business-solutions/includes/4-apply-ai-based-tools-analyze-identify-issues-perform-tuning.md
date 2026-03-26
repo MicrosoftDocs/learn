@@ -10,15 +10,15 @@ AI based agents operate in dynamic business environments. Their performance depe
 
 ### Key Analysis Domains
 
-**Operational Health** - Latency, errors, processing delays, throttling.
+* **Operational Health** - Latency, errors, processing delays, throttling.
 
-**Quality of Reasoning** - Accuracy, relevance, and usefulness of answers.
+* **Quality of Reasoning** - Accuracy, relevance, and usefulness of answers.
 
-**Knowledge Coverage** - Completeness and freshness of grounding content.
+* **Knowledge Coverage** - Completeness and freshness of grounding content.
 
-**User Experience** - Misunderstood queries, abandoned tasks, friction points.
+* **User Experience** - Misunderstood queries, abandoned tasks, friction points.
 
-**Governance & Compliance Signals** - Guardrail triggers, blocked actions, security violations.
+* **Governance & Compliance Signals** - Guardrail triggers, blocked actions, security violations.
 
 ## 2. AI Diagnostic Workflow
 
@@ -31,15 +31,15 @@ A structured workflow ensures consistency and helps isolate root causes faster.
 
 ### Common Root Cause Categories
 
-**Model or Prompt Issues** - Misinterpretation or insufficient context.
+* **Model or Prompt Issues** - Misinterpretation or insufficient context.
 
-**Knowledge Gaps** - Missing organizational content or outdated files.
+* **Knowledge Gaps** - Missing organizational content or outdated files.
 
-**Integration Failures** - Connector constraints, API limits, data access rules.
+* **Integration Failures** - Connector constraints, API limits, data access rules.
 
-**Configuration Issues** - Incorrect environment variables, feature toggles, or role settings.
+* **Configuration Issues** - Incorrect environment variables, feature toggles, or role settings.
 
-**Governance Interference** - DLP blocking, sensitivity labels, restricted actions.
+* **Governance Interference** - DLP blocking, sensitivity labels, restricted actions.
 
 ## 3. Using AI Based Tools to Analyze Agent Behavior
 
@@ -49,25 +49,25 @@ Solution architects rely on structured telemetry to uncover insights.
 
 Look for:
 
-Repeated failure patterns.
+* Repeated failure patterns.
 
-Highvolume queries with low satisfaction.
+* Highvolume queries with low satisfaction.
 
-Tasks requiring human intervention.
+* Tasks requiring human intervention.
 
-Spikes in guardrail enforcement.
+* Spikes in guardrail enforcement.
 
 ### 3.2 User Feedback and Transcript Analysis
 
 Conversation logs reveal:
 
-Misaligned intent detection.
+* Misaligned intent detection.
 
-Ineffective responses.
+* Ineffective responses.
 
-Repetitive misunderstandings.
+* Repetitive misunderstandings.
 
-Opportunities for workflow redesign.
+* Opportunities for workflow redesign.
 
 #### Transcript Review Framework
 
@@ -102,35 +102,35 @@ Tuning spans multiple layers of the agent architecture.
 
 ### 5.1 Knowledge Tuning
 
-Add or update knowledge files to fill content gaps.
+* Add or update knowledge files to fill content gaps.
 
-Remove outdated or irrelevant information.
+* Remove outdated or irrelevant information.
 
-Refine knowledge structure for clarity and retrieval.
+* Refine knowledge structure for clarity and retrieval.
 
 ### 5.2 Behavioral Tuning
 
-Adjust orchestrations or agent steps.
+* Adjust orchestrations or agent steps.
 
-Add clarifying instructions to reinforce expected behaviors.
+* Add clarifying instructions to reinforce expected behaviors.
 
-Introduce fallback strategies for ambiguous queries.
+* Introduce fallback strategies for ambiguous queries.
 
 ### 5.3 Performance Tuning
 
-Optimize connectors and external data calls.
+* Optimize connectors and external data calls.
 
-Reduce unnecessary steps in workflows.
+* Reduce unnecessary steps in workflows.
 
-Address slowprocessing logic or oversized payloads.
+* Address slowprocessing logic or oversized payloads.
 
 ### 5.4 GovernanceAligned Tuning
 
-Review DLP, sensitivity labels, and access rules.
+* Review DLP, sensitivity labels, and access rules.
 
-Align agent capabilities with enterprise compliance requirements.
+* Align agent capabilities with enterprise compliance requirements.
 
-Ensure logging and auditing remain intact after changes.
+* Ensure logging and auditing remain intact after changes.
 
 ### AI Issue Mapping Chart
 
