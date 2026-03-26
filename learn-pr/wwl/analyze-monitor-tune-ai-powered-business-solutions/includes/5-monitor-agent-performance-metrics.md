@@ -10,17 +10,17 @@ Solution architects are responsible for ensuring that agents perform reliably at
 
 #### Effective monitoring ensures:
 
-Agents behave predictably in production.
+* Agents behave predictably in production.
 
-Performance degradation is detected early.
+* Performance degradation is detected early.
 
-Quality of reasoning, grounding content, and actions remain consistent.
+* Quality of reasoning, grounding content, and actions remain consistent.
 
-Usage insights inform iteration, adoption strategy, and capability refinement.
+* Usage insights inform iteration, adoption strategy, and capability refinement.
 
-Governance and compliance requirements are continuously met.
+* Governance and compliance requirements are continuously met.
 
-Monitoring focuses on **metrics**, **logs**, **telemetry**, and **user behavior signals** to help architects make informed decisions.
+* Monitoring focuses on **metrics**, **logs**, **telemetry**, and **user behavior signals** to help architects make informed decisions.
 
 ## 2. Core Metrics for AI Agent Performance
 
@@ -28,29 +28,29 @@ Solution architects should define and track a baseline set of performance indica
 
 ### 2.1 Operational Metrics
 
-**Latency** - Time taken to process agent requests.
+* **Latency** - Time taken to process agent requests.
 
-**Throughput** - Volume of completed runs over a period.
+* **Throughput** - Volume of completed runs over a period.
 
-**Error Rate** - Proportion of failed or incomplete tasks.
+* **Error Rate** - Proportion of failed or incomplete tasks.
 
-**Resource Utilization** - Compute, memory, and token consumption.
+* **Resource Utilization** - Compute, memory, and token consumption.
 
 ### 2.2 Quality and Reasoning Metrics
 
-**Response Accuracy** - Alignment with expected or validated outputs.
+* **Response Accuracy** - Alignment with expected or validated outputs.
 
-**Knowledge Coverage** - Ability to surface correct domain content.
+* **Knowledge Coverage** - Ability to surface correct domain content.
 
-**Action Effectiveness** - Completion of multistep tasks as intended.
+* **Action Effectiveness** - Completion of multistep tasks as intended.
 
 ### 2.3 UserCentered Metrics
 
-**Satisfaction Indicators** - User feedback trends and sentiment.
+* **Satisfaction Indicators** - User feedback trends and sentiment.
 
-**Abandonment Rate** - Dropoff during agent workflows.
+* **Abandonment Rate** - Dropoff during agent workflows.
 
-**Task Completion Rate** - Whether users achieve intended outcomes.
+* **Task Completion Rate** - Whether users achieve intended outcomes.
 
 ## 3. Tools and Processes Used to Monitor AI Agents
 
@@ -70,39 +70,39 @@ Solution architects can design monitoring patterns using platform observability 
 
 #### Operational Telemetry
 
-System logs
+* System logs
 
-Execution traces
+* Execution traces
 
-Trigger based run logs
+* Trigger based run logs
 
-Exception events
+* Exception events
 
-Performance counters
+* Performance counters
 
 #### Behavioral Telemetry
 
-User interaction logs
+* User interaction logs
 
-Conversation transcripts
+* Conversation transcripts
 
-Intent recognition patterns
+* Intent recognition patterns
 
-Feature usage signals
+* Feature usage signals
 
 #### Analytics Dashboards
 
 ##### Provide trend views for:
 
-Top user tasks
+* Top user tasks
 
-Success/failure distribution
+* Success/failure distribution
 
-Conversation or run volumes
+* Conversation or run volumes
 
-Peak usage intervals
+* Peak usage intervals
 
-Quality indicators
+* Quality indicators
 
 ## 4. Monitoring Model Performance for Generative AI
 
@@ -110,27 +110,27 @@ Even when agent logic is stable, model-driven behavior can shift over time. Arch
 
 ### Model Drift
 
-Shifts in response patterns
+* Shifts in response patterns
 
-Declining accuracy in recurring tasks
+* Declining accuracy in recurring tasks
 
-Increased hallucination or off topic responses
+* Increased hallucination or off topic responses
 
 ### Token Consumption
 
-Costtoperformance ratio
+* Costtoperformance ratio
 
-Efficiency of prompting patterns
+* Efficiency of prompting patterns
 
-Thick vs. thin prompt behavior
+* Thick vs. thin prompt behavior
 
 ### Reliability Indicators
 
-Sudden increases in latency
+* Sudden increases in latency
 
-Changes in model selection effectiveness
+* Changes in model selection effectiveness
 
-Errors related to external dependencies
+* Errors related to external dependencies
 
 ## 5. Diagnosing Issues and Applying Tuning
 
@@ -146,15 +146,15 @@ Errors related to external dependencies
 
 ### 5.2 Tuning Techniques
 
-Refine agent instructions, prompts, and behavior patterns.
+* Refine agent instructions, prompts, and behavior patterns.
 
-Update or reorganize knowledge assets.
+* Update or reorganize knowledge assets.
 
-Adjust action sequences to reduce bottlenecks.
+* Adjust action sequences to reduce bottlenecks.
 
-Reconfigure environment or connector settings.
+* Reconfigure environment or connector settings.
 
-Apply versioning and rollback strategies for safety.
+* Apply versioning and rollback strategies for safety.
 
 ## 6. Architecture
 
