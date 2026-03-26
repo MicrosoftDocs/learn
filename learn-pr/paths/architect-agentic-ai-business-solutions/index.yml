@@ -34,6 +34,8 @@ subjects:
 modules:
 - learn.wwl.introduction-agentic-ai-business-solution-architecture
 - learn.wwl.analyze-requirements-ai-powered-business-solutions
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution
 - learn.wwl.manage-testing-ai-powered-business-solutions
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance
 trophy:
   uid: learn.wwl.architect-agentic-ai-business-solutions.trophy
