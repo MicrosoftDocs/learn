@@ -69,7 +69,7 @@ The key components of Deployment Workbench include:
      -  **Apply Operating System**.
      -  **Windows Update**. Connects to a WSUS server and updates the machine.
 
-The role of MDT isn't to manage your Windows upgrades. Its primary focus is building and rebuilding your devices with a specific set of configurations. To manage upgrades and begin the journey to Windows as a Service (WaaS), you should look for tools that exist in the modern managed toolset, such as Microsoft Endpoint Manager or Windows Update for Business (WuFB).
+The role of MDT isn't to manage your Windows upgrades. Its primary focus is building and rebuilding your devices with a specific set of configurations. To manage upgrades and begin the journey to Windows as a Service (WaaS), you should look for tools that exist in the modern managed toolset, such as Microsoft Intune or Windows Update for Business (WuFB).
 
 MDT can function as a standalone product. It can also integrate with Configuration Manager, although that subject is outside the scope of this training. That being said, it's important to remember that for an on-premises delivery of Windows, a combination of MDT and Configuration Manager provides a 'best of breed' solution. MDT creates the golden image, and Configuration Manager manages the delivery and evolution of the device after it's delivered to the end user.
 
