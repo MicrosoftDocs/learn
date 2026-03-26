@@ -2,7 +2,7 @@ Beyond basic site creation and bindings, IIS provides a rich set of per-site and
 
 ## Custom Error Pages
 
-By default, IIS returns a generic HTTP error page when a client encounters a 4xx or 5xx status code. Customizing error pages improves the user experience and prevents accidental disclosure of internal diagnostic details.
+By default, IIS returns a generic HTTP error page when a client encounters a `4xx` or `5xx` status code. Customizing error pages improves the user experience and prevents accidental disclosure of internal diagnostic details.
 
 IIS supports two types of error responses:
 

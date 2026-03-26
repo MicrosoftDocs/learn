@@ -42,7 +42,7 @@ To add a new site in IIS manager:
 1. Leave Start Website immediately checked unless you want to configure the site before it begins serving requests.
 1. Select OK.
 
-You can create a site with the `New-Website` cmdlet, which will be installed with the web server role management tools. For example, to create a site named Contoso with the path D:\contoso on port 80 that uses the fully qualified domain name www.contoso.com and has a new application pool named Contoso, run the command:
+You can create a site with the `New-Website` cmdlet, which will be installed with the web server role management tools. For example, to create a site named Contoso with the path `D:\contoso` on port 80 that uses the fully qualified domain name www.contoso.com and has a new application pool named Contoso, run the command:
 
 ```powershell
 New-Website -Name "Contoso" `
@@ -62,14 +62,14 @@ Get-Website -Name "Contoso"
 
 When creating a website, configure the directory that hosts the content directory and ensure appropriate NTFS permissions are set. Remember that NTFS permissions are often inherited. Best practice is to use a separate volume for website content rather than storing it on the system volume. Using a separate volume for the website allows you to separate the content from operating system files, it also makes it simpler to back up and restore. You might repartition free space on your existing volume to implement this configuration.
 
-The worker process runs under the application pool identity. For example, a pool named Contoso runs as IIS AppPool\Contoso. Application pool identities are:
+The worker process runs under the application pool identity. For example, a pool named Contoso runs as `IIS AppPool\Contoso`. Application pool identities are:
 
 - Local only
 - Noninteractive
 - Automatically managed
 - Not usable for logon
 
-You should grant the application pool identity Read and Execute access to the content folder:
+You should grant the application pool identity `Read and Execute` access to the content folder:
 
 ```powershell
 $acl = Get-Acl "D:\contoso"
@@ -86,7 +86,7 @@ Granting permissions directly to that identity ensures:
 - Other application pools on the same server can't read or execute the content
 - You avoid using broad identities like Everyone, Users, or IIS_IUSRS
 
-Granting Read and Execute adheres to the principle of least privilege as IIS only needs read access to serve static content and load assemblies, and execute is require for binaries such as ASP.NET and native modules. You shouldn't assign the Write privilege as this will limit attacks such as:
+Granting `Read and Execute` adheres to the principle of least privilege as IIS only needs read access to serve static content and load assemblies, and execute is require for binaries such as ASP.NET and native modules. You shouldn't assign the Write privilege as this will limit attacks such as:
 
 - Web shell uploads
 - Defacement attacks

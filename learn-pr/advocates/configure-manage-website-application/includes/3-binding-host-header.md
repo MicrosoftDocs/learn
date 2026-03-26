@@ -4,9 +4,9 @@ IIS uses a combination of IP address, TCP port, and host name (host header) to r
 
 When a request arrives at the server, IIS evaluates three binding components in order:
 
-1. IP address: Does this request target an IP address assigned to this site? An asterisk (\*) means any unassigned IP.
-1. Port: Does the request arrive on the port configured for this site?
-1. Host name (host header): Does the HTTP Host header value in the request match the host name configured for this binding?
+1. **IP address:** Does this request target an IP address assigned to this site? An asterisk (\*) means any unassigned IP.
+1. **Port:** Does the request arrive on the port configured for this site?
+1. **Host name (host header):** Does the HTTP Host header value in the request match the host name configured for this binding?
 
 A binding is the combination of these three values. Each site must have at least one binding. Bindings must be unique across all sites, IIS can't start two sites that share the same IP, port, and host name.
 
@@ -16,7 +16,7 @@ The table lists strategies for handing bindings:
 |---|---|---|
 | **Unique ports** | Each site listens on a different port (for example, 80, 8080, 8081) | Development and testing environments |
 | **Multiple IP addresses** | Each site is bound to a different IP on the server's NIC | Older hosting configurations |
-| **Host headers (recommended)** | All sites share IP and port; DNS differentiates them via the Host header | Production: www.site1.com and www.site2.com on port 80/443 |
+| **Host headers (recommended)** | All sites share IP and port; DNS differentiates them via the Host header | Production: `www.site1.com` and `www.site2.com` on port 80/443 |
 
 > [!TIP]
 > Host headers are the standard approach in production because they don't require additional IP addresses or nonstandard ports. Ensure DNS A records are properly configured for each host name before starting sites.
@@ -30,7 +30,7 @@ To add and edit site bindings in IIS Manager, perform the following steps:
    - Type: Select http or https.
    - IP address: Select All Unassigned or a specific IP.
    - Port: Enter 80 (for HTTP) or 443 (for HTTPS).
-   - Host name: Enter the FQDN, for example www.contoso.com. Required when sharing a port with other sites.
+   - Host name: Enter the FQDN, for example `www.contoso.com`. Required when sharing a port with other sites.
    - For HTTPS bindings: select the certificate from the drop-down.
 1. Select OK, then Close.
 
@@ -86,8 +86,6 @@ New-WebBinding -Name "Contoso2" `
                -IPAddress "*" `
                -SslFlags 1
 ```
-
-Here's a drop-in section you can use to address HTTP Strict Transport Security (HSTS), along with guidance on where to place it in the existing document:
 
 ## Enforcing HTTPS with HTTP Strict Transport Security (HSTS)
 

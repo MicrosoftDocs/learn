@@ -121,9 +121,9 @@ To configure a custom identity in IIS Manager, perform the following steps:
 1. Select the application pool, then select Advanced Settings in the Actions pane.
 1. Under Process Model, select the Identity field, then select the ellipsis (...) button.
 1. In the Application Pool Identity dialog, select Custom account and select Set.
-1. Enter the domain account credentials (for example, CONTOSO\svc-webapp), then select OK.
+1. Enter the domain account credentials (for example, `CONTOSO\svc-webapp`), then select OK.
 
-You use the `Set-ItemProperty` cmdlet to configure a Custom Identity with PowerShell. For example, to set the identity to contoso\svc-webapp, run the following command:
+You use the `Set-ItemProperty` cmdlet to configure a Custom Identity with PowerShell. For example, to set the identity to `CONTOSO\svc-webapp`, run the following command:
 
 ```powershell
 $poolName = "Contoso-AppPool"
@@ -141,7 +141,7 @@ Set-ItemProperty "IIS:\AppPools\$poolName" processModel.identityType 3
 
 ## Managing application pool state
 
-You can use the WebAppPool PowerShell cmdlets to manage application pool states. 
+You can use the WebAppPool PowerShell cmdlets to manage application pool states.
 
 ```powershell
 Stop-WebAppPool    -Name "Contoso-AppPool"   # Stop
