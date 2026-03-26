@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.website-application-virtual-directory.advanced-site-configuration
+title: Advanced site configuration
+metadata:
+  title: Advanced Site Configuration
+  description: Learn about advanced site configuration options in Internet Information Services (IIS) on Windows Server, including how to configure custom error pages, MIME types, compression, and request filtering to optimize website performance, security, and user experience.
+  ms.date: 03/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-advanced-site-configuration.md)]

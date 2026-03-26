@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.devrel.website-application-virtual-directory
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 03/26/2026
+  title: Configure Internet Information Services Websites and Applications
+  description: Learn to configure Internet Information Services (IIS) websites and applications on Windows Server.
+  ms.topic: module
+  ms.service: windows-server
+title: Configure Internet Information Services websites and applications
+summary: In this module, you'll learn how to understand, create and configure websites, web applications, and virtual directories in IIS on Windows Server. You'll explore how application pools isolate and manage worker processes, configure site bindings to host multiple websites on a single server, and apply advanced site settings including custom error pages, MIME types, compression, and request filtering.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and configure websites, web applications, and virtual directories in IIS Manager and with PowerShell.
+  - Configure and manage application pools to provide process isolation for web applications.
+  - Create and manage IIS site bindings, including host headers and Server Name Indication (SNI) for multiple HTTPS sites.
+  - Configure advanced site settings including custom error pages, MIME types, HTTP compression, and request filtering.
+prerequisites:  |
+  -	Basic understanding of Windows Server and its roles and features
+  -	Familiarity with web servers and their purpose
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+units:
+- learn.devrel.website-application-virtual-directory.website-application-virtual-directory
+- learn.devrel.website-application-virtual-directory.application-pool-worker-process
+- learn.devrel.website-application-virtual-directory.binding-host-header
+- learn.devrel.website-application-virtual-directory.advanced-site-configuration
+- learn.devrel.website-application-virtual-directory.knowledge-check
+- learn.devrel.website-application-virtual-directory.summary
+badge:
+  uid: learn.devrel.website-application-virtual-directory-badge
