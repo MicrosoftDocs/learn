@@ -4,7 +4,7 @@ title: Load data with merge, insert, and append
 metadata:
   title: Load Data With Merge, Insert, and Append
   description: Learn how to load data into Delta tables in Azure Databricks using INSERT, INSERT OVERWRITE, and MERGE operations for append, replace, and upsert scenarios.
-  ms.date: 02/17/2026
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
