@@ -1,8 +1,8 @@
-Here, you can decide whether Azure Kubernetes Service (AKS) is the right choice for you.
+You can decide whether Azure Kubernetes Service (AKS) is the right choice for you.
 
-You can either approach your decision from a *green fields* or a *lift-and-shift* project point of view. A green fields project allows you to evaluate AKS based on default features. A lift-and-shift project forces you to look at which features are best suited to support your migration.
+You can either approach your decision from a _green field_ project or a _lift-and-shift_ project point of view. A green field project allows you to evaluate AKS based on default features. A lift-and-shift project forces you to look at which features are best suited to support your migration.
 
-Earlier, you learned about AKS support for DevOps capabilities through Azure. Here, we list out Azure resources you should consider to enhance your AKS Kubernetes offering. These features each represent compelling factors for why customers choose AKS.
+Earlier, you learned about AKS support for DevOps capabilities through Azure. The following table lists Azure resources you should consider to enhance your AKS cluster. These features each represent compelling factors for why customers choose AKS.
 
 | Service | Consideration |
 | --- | --- |
@@ -12,7 +12,7 @@ Earlier, you learned about AKS support for DevOps capabilities through Azure. He
 | **Cluster node upgrades** | Do you want to reduce the number of cluster-management tasks? AKS manages Kubernetes software upgrades and the process of cordoning off nodes and draining them to minimize disruption to running applications. Once done, these nodes are upgraded one at a time. |
 | **GPU enabled nodes** | Do you have compute-intensive or graphic-intensive workloads? AKS supports GPU-enabled node pools. |
 | **Storage volume support** | Is your application stateful, and does it require persisted storage? AKS supports both static and dynamic storage volumes. Pods can attach and reattach to these storage volumes as they're created or rescheduled on different nodes. |
-| **Virtual network support** | Do you need pod-to-pod network communication or access to on-premises networks from your AKS cluster? An AKS cluster can be deployed into an existing virtual network with ease. |
+| **Virtual network support** | Do you need pod-to-pod network communication or access to on-premises networks from your AKS cluster? An AKS cluster can be deployed into an existing virtual network. |
 | **Ingress with HTTP application-routing support** | Do you need to make your deployed applications publicly available? The HTTP application-routing add-on makes it easy to access AKS cluster deployed applications. |
 | **Docker image support** | Do you already use Docker images for your containers? AKS supports the Docker file image format by default. |
 | **Private container registry** | Do you need a private container registry? AKS integrates with Azure Container Registry (ACR). You aren't limited to ACR; you can use other container repositories, whether public or private. |

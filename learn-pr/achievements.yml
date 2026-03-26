@@ -7880,3 +7880,23 @@ achievements:
   title: Configure and manage secrets in Azure Key Vault
   summary: Storing and handling secrets, encryption keys, and certificates directly is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
   iconUrl: /training/achievements/configure-and-manage-azure-key-vault.svg
+- uid: learn.azure-security.create-security-baselines.badge
+  type: badge
+  title: Create security baselines
+  summary: In this module, you learn how to create security baselines for your Azure services by ensuring that your settings meet the minimum requirements described in CIS Benchmarks for Azure v. 1.3.0.
+  iconUrl: /training/achievements/create-security-baselines.svg
+- uid: learn.security.manage-security-operations.trophy
+  type: trophy
+  title: Manage security operations in Azure
+  summary: "Learn how to configure security policies and manage security alerts with the tools and services in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/create-security-baselines.svg
+- uid: learn.security.secure-your-cloud-apps.trophy
+  type: trophy
+  title: Secure your cloud applications in Azure
+  summary: "Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/secure-your-cloud-apps.svg
+- uid: learn.load-balance-web-traffic-with-application-gateway.badge
+  type: badge
+  title: Load balance your web service traffic with Application Gateway
+  summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
+  iconUrl: /training/achievements/load-balance-web-traffic-with-application-gateway.svg

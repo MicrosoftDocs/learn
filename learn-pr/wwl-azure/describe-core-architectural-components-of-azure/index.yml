@@ -11,9 +11,9 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-generated
 title: Describe the core architectural components of Azure
-summary: This module explains the basic infrastructure components of Microsoft Azure. You'll learn about the physical infrastructure, how resources are managed, and have a chance to create an Azure resource.
+summary: This module explains the basic infrastructure components of Microsoft Azure. You'll learn about the physical infrastructure and how resources are managed.
 abstract: |
   Upon completion of this module, you'll be able to:
 
@@ -49,10 +49,8 @@ units:
 - learn.wwl.describe-core-architectural-components-of-azure.introduction
 - learn.wwl.describe-core-architectural-components-of-azure.what-microsoft-azure
 - learn.wwl.describe-core-architectural-components-of-azure.get-started-azure-accounts
-- learn.wwl.describe-core-architectural-components-of-azure.exercise-explore-learn-sandbox
 - learn.wwl.describe-core-architectural-components-of-azure.describe-azure-physical-infrastructure
 - learn.wwl.describe-core-architectural-components-of-azure.describe-azure-management-infrastructure
-- learn.wwl.describe-core-architectural-components-of-azure.exercise-create-azure-resource
 - learn.wwl.describe-core-architectural-components-of-azure.knowledge-check
 - learn.wwl.describe-core-architectural-components-of-azure.summary
 badge:
