@@ -28,49 +28,49 @@ Solution architects should recommend the processes for monitoring AI Agents acro
 
 ### 2.1 Establish a Monitoring Operating Model
 
-A strong operational model ensures consistency, ownership, and accountability.
+*A strong operational model ensures consistency, ownership, and accountability.
 
 #### Key components:
 
-Defined roles (Ops team, product owners, data engineers, architects)
+*Defined roles (Ops team, product owners, data engineers, architects)
 
-Process workflows for incident response
+*Process workflows for incident response
 
-Standardized metric definitions (creating a baseline with trends)
+*Standardized metric definitions (creating a baseline with trends)
 
-Log review cadence (daily/weekly/monthly)
+*Log review cadence (daily/weekly/monthly)
 
-Change management and version tracking
+*Change management and version tracking
 
-Documentation of expected agent behaviors and constraints
+*Documentation of expected agent behaviors and constraints
 
 ### 2.2 Configure Guardrails and Threshold Alerts
 
-Set thresholds for latency, exception volume, and unusual activity.
+*Set thresholds for latency, exception volume, and unusual activity.
 
-Create automated alerts for guardrail triggers or tool invocation failures.
+*Create automated alerts for guardrail triggers or tool invocation failures.
 
-Monitor for unexpected spikes in prompts indicating potential misuse.
+*Monitor for unexpected spikes in prompts indicating potential misuse.
 
 ### 2.3 Conduct Regular Quality Evaluations
 
-Humanintheloop spot checks
+*Humanintheloop spot checks
 
-Scenariobased evaluations
+*Scenariobased evaluations
 
-Review lowconfidence outputs
+*Review lowconfidence outputs
 
-Validate alignment with business rules or compliance requirements
+*Validate alignment with business rules or compliance requirements
 
 ### 2.4 Continuously Improve Based on Insights
 
-Analyze logs and telemetry to find failure patterns.
+*Analyze logs and telemetry to find failure patterns.
 
-Identify training needs for users.
+*Identify training needs for users.
 
-Recommend prompt engineering improvements.
+*Recommend prompt engineering improvements.
 
-Propose workflow adjustments or retraining of custom models (if applicable).
+*Propose workflow adjustments or retraining of custom models (if applicable).
 
 ## 3. Recommended Tools for Monitoring AI Agents
 
@@ -80,85 +80,85 @@ Solution architects should recommend the toolset that covers **observability**, 
 
 #### Azure Monitor provides:
 
-Application and agent telemetry
+*Application and agent telemetry
 
-Dashboards for real-time metrics
+*Dashboards for real-time* metrics
 
-Alert rules for anomalies
+*Alert rules for anomalies
 
-Integration with Log Analytics Workspaces
+*Integration with Log Analytics Workspaces
 
 #### Use cases:
 
-Monitor agent workflows built with Power Platform or custom services.
+*Monitor agent workflows built with Power Platform or custom services.
 
-Track errors, latency, throughput, connector failures.
+*Track errors, latency, throughput, connector failures.
 
-Build KQL-based queries for deep diagnostics.
+*Build KQL-based queries for deep diagnostics.
 
 ### 3.2 Microsoft 365 Admin Analytics (Usage & Adoption Trends)
 
 #### Useful for:
 
-Understanding agent usage volume
+*Understanding agent usage volume
 
-Tracking adoption and engagement
+*Tracking adoption and engagement
 
-Identifying departments with low usage or operational barriers
+*Identifying departments with low usage or operational barriers
 
-Measuring improvements week-over-week
+*Measuring improvements week-over-week
 
 ### 3.3 Copilot & Agent Analytics Dashboards
 
 #### When available in an organization's tenant, Copilot analytics can provide:
 
-Agent invocation frequency
+*Agent invocation frequency
 
-Task completion trends
+*Task completion trends
 
-Common user queries
+*Common user queries
 
-Productivity pattern insights
+*Productivity pattern insights
 
-Error or guardrail-trigger events
+*Error or guardrail-trigger events
 
 ### 3.4 Power Platform Admin Center (Environment-Level Monitoring)
 
 #### Provides:
 
-Environment health
+*Environment health
 
-Connector usage and limits
+*Connector usage and limits
 
-Flow telemetry (for agents using workflows)
+*Flow telemetry (for agents using workflows)
 
-DLP rule impact visibility
+*DLP rule impact visibility
 
 ### 3.5 Foundry or Organizational Observability Platforms
 
 #### Enterprises may adopt centralized observability platforms (example: Foundry-like solutions, if present in the environment) to unify:
 
-Multisystem logs
+*Multisystem logs
 
-Event traces
+*Event traces
 
-Cross-environment dashboards
+*Cross-environment dashboards
 
-AI model execution insights
+*AI model execution insights
 
-These platforms reduce fragmentation and provide a single-pane-of-glass view for complex agent ecosystems.
+*These platforms reduce fragmentation and provide a single-pane-of-glass view for complex agent ecosystems.
 
 ### 3.6 Custom Dashboards for Enterprise AI Agents
 
 #### Solution architects often design:
 
-KPI dashboards in Power BI
+*KPI dashboards in Power BI
 
-Heatmaps of usage
+*Heatmaps of usage
 
-Drift detection visualizations
+*Drift detection visualizations
 
-Compliance trend reports
+*Compliance trend reports
 
 #### Example: Agent Health Summary
 
@@ -175,15 +175,15 @@ Compliance trend reports
 
 #### Best Practices
 
-Always centralize logs.
+*Always centralize logs.
 
-Standardize naming conventions.
+*Standardize naming conventions.
 
-Define clear SLAs for agent responsiveness.
+*Define clear SLAs for agent responsiveness.
 
-Automate alerting for critical business workflows.
+*Automate alerting for critical business workflows.
 
-Integrate monitoring outputs into monthly operational reviews.
+*Integrate monitoring outputs into monthly operational reviews.
 
 ## References
 
