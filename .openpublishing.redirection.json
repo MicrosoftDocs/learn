@@ -65109,6 +65109,46 @@
       "source_path": "learn-pr/azure/load-balance-web-traffic-with-application-gateway/7-summary.yml",
       "redirect_url": "/azure/application-gateway/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/index.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/1-introduction.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/2-what-is-key-vault.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/3-creating-vaults-storing-secrets.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/4-authentication-with-managed-identities-for-azure-resources.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/5-access-secrets-from-web-app.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/6-configure-deploy-run-azure.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/7-summary.yml",
+      "redirect_url": "/azure/security/",
+      "redirect_document_id": false
     }
   ]
 }
