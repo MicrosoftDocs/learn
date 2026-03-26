@@ -38,7 +38,7 @@ Design a defense in depth approach for autonomous and semi-autonomous agents tha
 
 - Require approvals for publishing to production and for changes to high-risk capabilities (for example, actions that modify data).
 
-:::image type="content" source="../media/role-based-access-control.png" alt-text="RBAC design matrix.":::
+:::image type="content" source="../media/role-based-access-control.png" alt-text="Diagram illustrating an RBAC design matrix that maps roles to permissions and access levels across system resources.":::
 
 ## Data governance and protection
 
@@ -160,9 +160,9 @@ Design a defense in depth approach for autonomous and semi-autonomous agents tha
 
 **Govern environments and releases**
 
-- Use environment routing to separate dev/test/prod.
+- Use environment routing to separate development, testing and production.
 
-- Require peer review and approver sign-off to publish; block publishing if mandatory checks fail.
+- Require peer review and approver sign off to publish; block publishing if mandatory checks fail.
 
 **Prepare incident response**
 
