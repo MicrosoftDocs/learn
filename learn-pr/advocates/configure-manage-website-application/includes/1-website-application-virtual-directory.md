@@ -4,9 +4,9 @@ IIS organizes web content through a hierarchy of sites, applications, and virtua
 
 IIS structures web content in a three-tier hierarchy:
 
-1. **Website (Site).** The top-level container. Each site has at least one binding (IP address, port, and optional host name) that identifies incoming requests. A site maps to a physical root directory on disk.
-1. **Web Application.** A child container within a site. Applications have their own application pool assignment and can have separate configuration settings from the parent site. Use applications when you need isolated configuration, a different .NET runtime, or a dedicated worker process identity for a portion of a site.
-1. **Virtual Directory.** A pointer from a URL path to a physical directory on disk (which may be on a different volume or UNC path). Virtual directories don't have their own application pool and inherit the parent application's settings.
+- **Website (Site).** The top-level container. Each site has at least one binding (IP address, port, and optional host name) that identifies incoming requests. A site maps to a physical root directory on disk.
+- **Web Application.** A child container within a site. Applications have their own application pool assignment and can have separate configuration settings from the parent site. Use applications when you need isolated configuration, a different .NET runtime, or a dedicated worker process identity for a portion of a site.
+- **Virtual Directory.** A pointer from a URL path to a physical directory on disk (which may be on a different volume or UNC path). Virtual directories don't have their own application pool and inherit the parent application's settings.
 
 > [!NOTE]
 > This hierarchy is stored in the central IIS configuration file, ApplicationHost.config, located at %windir%\system32\inetsrv\config\.
@@ -37,7 +37,7 @@ To add a new site in IIS manager:
    - Port: Enter 80 (or another port if 80 is already in use and you're hosting multiple sites on the same IP address but differentiating based on port).
    - Host name: Enter the FQDN for this site, for example www.contoso.com. Host names are required when multiple sites share port 80 or 443 on the same IP address. The sites are differentiated by IIS using the HTTP host header value in each incoming request.
 
-   ![Screenshot showing the Add Website dialog box](../media/add-website.png)
+   ![Screenshot showing the Add Website dialog box.](../media/add-website.png)
 
 1. Leave Start Website immediately checked unless you want to configure the site before it begins serving requests.
 1. Select OK.
@@ -86,7 +86,7 @@ Granting permissions directly to that identity ensures:
 - Other application pools on the same server can't read or execute the content
 - You avoid using broad identities like Everyone, Users, or IIS_IUSRS
 
-Granting `Read and Execute` adheres to the principle of least privilege as IIS only needs read access to serve static content and load assemblies, and execute is require for binaries such as ASP.NET and native modules. You shouldn't assign the Write privilege as this will limit attacks such as:
+Granting `Read and Execute` adheres to the principle of least privilege as IIS only needs read access to serve static content and load assemblies, and execute is required for binaries such as ASP.NET and native modules. You shouldn't assign the Write privilege as this will limit attacks such as:
 
 - Web shell uploads
 - Defacement attacks
@@ -96,7 +96,7 @@ Granting `Read and Execute` adheres to the principle of least privilege as IIS o
 
 To add a Web Application within a Site
 
-1. In the Connections pane, expand Sites, then select on the Contoso site.
+1. In the Connections pane, expand Sites, then select the Contoso site.
 1. Right-click the site and select Add Application.
 1. In the Add Application dialog, configure:
    - Alias: The URL path segment, for example demoapp (accessible at www.contoso.com/demoapp).
@@ -104,7 +104,7 @@ To add a Web Application within a Site
    - Physical path: Enter the path to the application's files, for example d:\demoapp.
 1. Select OK.
 
-![Screenshot showing the Add Application dialog box](../media/add-application.png)
+![Screenshot showing the Add Application dialog box.](../media/add-application.png)
 
 You can accomplish this with the following PowerShell command:
 
@@ -125,7 +125,7 @@ To add a virtual directory within a site using IIS Manager, perform the followin
    - Physical path: Enter the directory path, for example D:\shared\downloads.
 1. Select OK.
 
-To add a virtual directory using PowerShell, perform the following steps:
+You can add a virtual directory using the PowerShell `New-WebVirtualDirectory` cmdlet. For example, to add a new virtual directory named `downloads` to the `Contoso` site, run the command:
 
 ```powershell
 New-WebVirtualDirectory -Site "Contoso" `

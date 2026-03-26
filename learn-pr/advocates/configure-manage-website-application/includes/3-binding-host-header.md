@@ -36,7 +36,7 @@ To add and edit site bindings in IIS Manager, perform the following steps:
 
 To edit an existing binding: select it in the list and select Edit. To remove a binding: select it and select Remove. Removing the only binding makes the site inaccessible.
 
-You managing bindings in PowerShell with the `WebBinding` cmdlets. For example:
+You manage bindings in PowerShell with the `WebBinding` cmdlets. For example:
 
 ```powershell
 # Add an HTTP binding with a host header
@@ -75,7 +75,7 @@ To enable SNI in IIS Manager:
 > [!NOTE]
 > Every HTTPS site sharing the same IP and port 443 must have SNI enabled. If even one site on that IP/port doesn't use SNI, it conflicts with the others.
 
-To enabling SNI with PowerShell, use the `WebBinding` cmdlets. For example:
+To enable SNI with PowerShell, use the `WebBinding` cmdlets. For example:
 
 ```powershell
 # SslFlags: 0 = no SNI, 1 = SNI, 2 = central certificate store

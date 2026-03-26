@@ -21,7 +21,7 @@ To create an application pool using IIS Manager, perform the following steps:
    - Managed pipeline mode: Select Integrated.
 1. Select OK.
 
-![Screenshot of the Add Application Pool dialog box](../media/application-pool.png)
+![Screenshot of the Add Application Pool dialog box.](../media/application-pool.png)
 
 To edit an existing pool, double-click it or select it and select Basic Settings in the Actions pane.
 
@@ -50,7 +50,7 @@ To configure application pool recycling in IIS Manager, perform the following st
    - Memory-based recycling: Set virtual memory and private memory limits (in KB) to trigger recycling if the worker process exceeds those thresholds.
 1. Select Next to configure recycling event log settings, then select Finish.
 
-![Screenshot of the Recycling Conditions dialog box](../media/recycle-condition.png)
+![Screenshot of the Recycling Conditions dialog box.](../media/recycle-condition.png)
 
 You use the `Set-ItemProperty` cmdlet to configure application pool recycling using PowerShell. For example, to configure a regular interval, run the following command:
 

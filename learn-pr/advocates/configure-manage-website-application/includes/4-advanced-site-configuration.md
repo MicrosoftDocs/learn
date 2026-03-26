@@ -1,6 +1,6 @@
 Beyond basic site creation and bindings, IIS provides a rich set of per-site and per-application configuration options that affect how content is served and how errors are handled. In this unit, you configure custom HTTP error pages, implement URL redirection, manage MIME types, enable HTTP compression, and configure request filtering to block unwanted or potentially harmful traffic.
 
-## Custom Error Pages
+## Custom error pages
 
 By default, IIS returns a generic HTTP error page when a client encounters a `4xx` or `5xx` status code. Customizing error pages improves the user experience and prevents accidental disclosure of internal diagnostic details.
 
@@ -31,7 +31,7 @@ Set-WebConfiguration `
   }
 ```
 
-## MIME Types
+## MIME types
 
 MIME types tell clients (browsers) how to interpret the content being served. If a file extension isn't registered in IIS, IIS returns a `404.3` error instead of serving the file, even if the file exists on disk.
 
@@ -57,7 +57,7 @@ Add-WebConfigurationProperty -PSPath "IIS:\Sites\Contoso" `
     -Value @{ fileExtension = ".avif"; mimeType = "image/avif" }
 ```
 
-## HTTP Compression
+## HTTP compression
 
 HTTP compression reduces response size, improving page load times and reducing bandwidth consumption. IIS supports two compression types:
 
@@ -89,7 +89,7 @@ Set-WebConfigurationProperty `
     -PSPath "IIS:\" -Name "doDynamicCompression" -Value $true
 ```
 
-## Request Filtering
+## Request filtering
 
 Request filtering is a built-in IIS security module that inspects incoming requests and blocks those that match defined rules. It's installed by default and runs early in the request pipeline, before most application code executes.
 
@@ -137,7 +137,7 @@ Add-WebConfigurationProperty -PSPath $sitePath `
 > [!NOTE]
 > Overly aggressive request filtering can cause legitimate requests to fail. Test filtering rules in a staging environment before deploying to production. Review IIS logs for `404.x` and `400` errors that may indicate blocked legitimate traffic.
 
-## Using the Built-In HTTP Redirect Feature
+## Using the built-In HTTP redirect feature
 
 For simple whole-site redirects, IIS includes a built-in HTTP Redirect feature that doesn't require the URL Rewrite module:
 
