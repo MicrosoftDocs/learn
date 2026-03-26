@@ -18,7 +18,7 @@ After adding tables, you enhance their discoverability by editing metadata. Sele
 
 You can also **hide columns** that don't serve business users. Technical columns like surrogate keys, internal identifiers, or audit timestamps often confuse both users and AI. Select the columns you want to hide and choose **Hide selected columns** from the **Actions** menu. This keeps Genie focused on columns that matter for business analysis.
 
-## Define data relationships and value sampling
+## Define data relationships and prompt matching
 
 With metadata in place, you help Genie understand how your tables connect and what values they contain. These configurations allow Genie to write accurate **JOIN statements** and match user questions to specific data values.
 
@@ -26,9 +26,9 @@ Unity Catalog can store **foreign key relationships** between tables, and Genie 
 
 For a sales pipeline dataset, you define a join between an `opportunity` table and an `accounts` table. Select both tables, enter the join condition `opportunity.accountid = accounts.id`, and specify the relationship type as **Many to one** because multiple opportunities can belong to a single account. This teaches Genie how to combine these tables when users ask questions like "show me opportunities by account region."
 
-**Value sampling** complements relationship definitions by giving Genie visibility into your actual data. When enabled, Genie collects example values from columns, helping it match user prompts to real values in your tables. If a user asks about "opportunities in California" but your data uses state codes like "CA," value sampling allows Genie to make that connection. The system automatically samples values when you add tables, but you can control which columns participate.
+**Prompt matching** complements relationship definitions by giving Genie visibility into your actual data. When enabled, Genie collects representative values from columns, helping it match user prompts to real values in your tables. If a user asks about "opportunities in California" but your data uses state codes like "CA," prompt matching allows Genie to make that connection. Two components control how matching works: **format assistance** provides representative values for all eligible columns so Genie understands data types and formatting patterns, while **entity matching** curates distinct value lists for categorical columns. The system automatically enables prompt matching when you add tables, but you can manage which columns participate.
 
-**Value dictionaries** extend sampling for categorical columns that contain a limited set of distinct values. Status codes, product categories, and region names work well with value dictionaries. Genie can store up to **1,024 distinct values** per column across **120 columns** in your space. To enable a value dictionary for a column, select the pencil icon next to the column name, expand **Advanced settings**, and turn on **Build value dictionary**. As your data changes over time, refresh sample values to keep the knowledge store current.
+**Entity matching** is most useful for categorical columns where users are likely to reference specific entries—such as states, product categories, and region names. Genie can store up to **1,024 distinct values** per column across **120 columns** in your space. To enable entity matching for a column, select the pencil icon next to the column name, expand **Advanced settings**, and turn on **Entity matching**. As your data changes over time, refresh prompt matching data to keep the knowledge store current.
 
 ## Add SQL instructions and examples
 
@@ -51,11 +51,11 @@ WHERE
 GROUP BY accounts.region;
 ```
 
-Genie can either use example queries directly or learn from them to answer similar questions. When you add **parameters** to example queries using the syntax `:parameter_name`, Genie substitutes user-provided values at runtime. These responses are marked as **Trusted** to give users confidence in the results.
+Genie can either use example queries directly or learn from them to answer similar questions. When you add **parameters** to example queries using the syntax `:parameter_name`, Genie substitutes user-provided values at runtime. Parameterized example queries that match the user's exact question are marked as **Trusted** to give users confidence in the results. Non-parameterized example queries are used as context to guide Genie in generating similar SQL, but aren't marked as Trusted.
 
 The **Text** tab holds general instructions that apply globally across all questions. Use this sparingly for context that doesn't fit into other formats. Examples include explaining that your fiscal year starts in February or that all timestamps should be converted to a specific timezone. Too many general instructions can dilute their effectiveness, so focus on essential business rules that Genie can't infer from your data.
 
-You can add up to **100 instructions** total across all types. Each example SQL query counts as one instruction, each SQL function counts as one, and the entire general instructions text block counts as one. This limit encourages you to prioritize quality over quantity.
+You can add up to **100 instructions** total across SQL queries, SQL functions, and the general text instructions block. Each example SQL query counts as one, each SQL function counts as one, and the entire general instructions text block counts as one. SQL expressions have a separate limit of **200** and do not count toward the 100-instruction total. These limits encourage you to prioritize quality over quantity.
 
 ## Apply iterative refinement
 
@@ -69,4 +69,4 @@ When you find incorrect responses, use the **Show generated code** option to exa
 
 Encourage business users to provide feedback through the built-in response rating mechanism. When users mark responses as correct or incorrect, you can review their feedback in the **Monitoring** tab and adjust instructions accordingly. This collaborative refinement ensures your Genie space evolves to meet real business needs rather than assumptions about how users might ask questions.
 
-As you iterate, watch for patterns in failed queries. If Genie consistently uses the wrong table or column, review your metadata and descriptions. If it can't match user language to data values, check that value sampling is enabled for relevant columns. If joins are incorrect, verify your relationship definitions. Each refinement makes the knowledge store more accurate and the space more valuable to users.
+As you iterate, watch for patterns in failed queries. If Genie consistently uses the wrong table or column, review your metadata and descriptions. If it can't match user language to data values, check that prompt matching is enabled for relevant columns. If joins are incorrect, verify your relationship definitions. Each refinement makes the knowledge store more accurate and the space more valuable to users.
