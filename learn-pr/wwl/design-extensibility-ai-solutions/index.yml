@@ -23,24 +23,20 @@ prerequisites: |
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
-roles:
-- devops-engineer
-- technology-manager
-- solution-architect
-- service-adoption-specialist
-- support-engineer
-products:
-- microsoft-365-copilot
-- azure
-- microsoft-365-copilot-chat
-- m365-agents
-- m365-agents-sdk
-subjects:
-- data-integration
-- artificial-intelligence
-- generative-ai
-- machine-learning
-- data-management
+roles: 
+- solution-architect 
+products: 
+- microsoft-365-copilot 
+- microsoft-365-copilot-chat 
+- power-platform 
+- microsoft-copilot-studio 
+- dynamics-365 
+subjects: 
+- generative-ai 
+- data-analytics 
+- data-management 
+- data-engineering 
+- data-integration 
 units:
 - learn.wwl.design-extensibility-ai-solutions.introduction
 - learn.wwl.design-extensibility-ai-solutions.design-ai-solutions-custom-models-microsoft-foundry
