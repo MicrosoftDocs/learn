@@ -19,7 +19,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- ai-services
+- foundry-tools
 - microsoft-foundry
 subjects:
 - artificial-intelligence

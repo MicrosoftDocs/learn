@@ -10,7 +10,7 @@ Replication includes the blob content, metadata properties, and versions. The fo
 
 There are several considerations to keep in mind when planning your configuration for blob object replication.
 
-- Object replication requires that blob versioning is enabled on both the source and destination accounts. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
+- Object replication requires that [Blob versioning](/azure/storage/blobs/versioning-overview) is enabled on both the source and destination accounts. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
 
 - Object replication doesn't support blob snapshots. Any snapshots on a blob in the source account aren't replicated to the destination account.
 
@@ -32,7 +32,4 @@ There are many benefits to using blob object replication. Consider the following
 
 - **Consider costs benefits**. Manage your configuration and optimize your storage policies. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
 
-### Consider versioning when using object replication
-
-You can enable [Blob versioning](/azure/storage/blobs/versioning-overview) to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
 

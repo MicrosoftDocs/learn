@@ -14,7 +14,7 @@ To deploy and manage your drone-tracking solution into new customer regions, you
 
 ## Uninstall MicroK8s
 
-To recover space on your development machine, you can remove everything you've deployed so far, even the VM. Keep in mind that this procedure is optional.
+To recover space on your development machine, you can remove everything you deployed so far, even the virtual machine (VM). Keep in mind that this procedure is optional.
 
 1. To remove the add-ons from the cluster, run the `microk8s.disable` command, and specify the add-ons to remove:
 
@@ -53,7 +53,7 @@ If you want to remove the Multipass VM manager from your machine, there are a fe
 
 To learn more about Kubernetes, running Kubernetes on Azure, and related tools, visit the following sites and articles:
 
-- [Kubernetes](https://kubernetes.io?azure-portal=true)
-- [Azure Kubernetes Service](https://azure.microsoft.com/products/kubernetes-service/?azure-portal=true)
-- [MicroK8s](https://microk8s.io?azure-portal=true)
-- [Multipass GitHub repository](https://github.com/canonical/multipass/releases?azure-portal=true)
+- [Kubernetes](https://kubernetes.io)
+- [Azure Kubernetes Service](https://azure.microsoft.com/products/kubernetes-service/)
+- [MicroK8s](https://microk8s.io)
+- [Multipass GitHub repository](https://github.com/canonical/multipass/releases)

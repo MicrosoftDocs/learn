@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-data-store-fabric.exercise
+title: "Case study - Choose data stores for an integrated analytics solution"
+metadata:
+  title: "Case Study - Choose Data Stores for an Integrated Analytics Solution"
+  description: "Explore how lakehouse, warehouse, eventhouse, and other data stores work together in a complete Fabric architecture through a real-world retail scenario."
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise.md)]

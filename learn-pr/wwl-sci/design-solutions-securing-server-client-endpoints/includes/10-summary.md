@@ -38,9 +38,20 @@ Use the following resources to explore endpoint security topics in greater depth
 
 ### Secure remote access
 
-- [Azure Bastion documentation](/azure/bastion/)
+- [Azure Bastion overview](/azure/bastion/bastion-overview)
+- [Azure Bastion design architecture](/azure/bastion/design-architecture)
+- [Azure Bastion SKU comparison](/azure/bastion/bastion-sku-comparison)
+- [Secure your Azure Bastion deployment](/azure/bastion/secure-bastion)
+- [Just-in-time machine access overview](/azure/defender-for-cloud/just-in-time-access-overview)
+- [Enable just-in-time access](/azure/defender-for-cloud/enable-just-in-time-access)
+- [About Point-to-Site VPN](/azure/vpn-gateway/point-to-site-about)
+- [Secure your VPN Gateway deployment](/azure/vpn-gateway/secure-vpn-gateway)
+- [What is Azure VPN Gateway?](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+- [What is Global Secure Access?](/entra/global-secure-access/overview-what-is-global-secure-access)
+- [Learn about Microsoft Entra Private Access](/entra/global-secure-access/concept-private-access)
+- [What is Conditional Access?](/entra/identity/conditional-access/overview)
+- [Azure network security overview - Secure remote access](/azure/security/fundamentals/network-overview)
 - [Plan for virtual machine remote access - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-virtual-machine-remote-access)
-- [Just-in-time VM access - Microsoft Defender for Cloud](/azure/defender-for-cloud/just-in-time-access-usage)
 
 ### Local administrator password management
 

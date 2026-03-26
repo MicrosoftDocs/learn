@@ -25,7 +25,7 @@ You use containerized instances to quickly deploy into new customer regions and 
 
 ## Learning objectives
 
-In this module, you'll learn:
+In this module, you learn:
 
 - How Kubernetes supports container orchestration.
 - The differences between control planes and nodes.

@@ -7865,8 +7865,43 @@ achievements:
   title: Get started with SQL Server 2025
   summary: Learn about SQL Server 2025's major capabilities including AI features, analytics improvements, developer tools, and performance optimization.
   iconUrl: /training/achievements/sqlserver/introduction-to-sql-server-2025.svg
+- uid: learn.azure.cna-orchestrate-containers.badge
+  type: badge
+  title: Orchestrate containers for cloud-native apps with AKS 
+  summary: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service.
+  iconUrl: /training/achievements/cloud-native-apps-orchestrate-containers.svg
 - uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.badge
   type: badge
   title: Understand hybrid data platform on SQL Server 2025
   summary: Learn about the cloud connected capabilities of SQL Server 2025 for hybrid data platforms.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure-security.configure-and-manage-azure-key-vault.badge
+  type: badge
+  title: Configure and manage secrets in Azure Key Vault
+  summary: Storing and handling secrets, encryption keys, and certificates directly is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
+  iconUrl: /training/achievements/configure-and-manage-azure-key-vault.svg
+- uid: learn.azure-security.create-security-baselines.badge
+  type: badge
+  title: Create security baselines
+  summary: In this module, you learn how to create security baselines for your Azure services by ensuring that your settings meet the minimum requirements described in CIS Benchmarks for Azure v. 1.3.0.
+  iconUrl: /training/achievements/create-security-baselines.svg
+- uid: learn.security.manage-security-operations.trophy
+  type: trophy
+  title: Manage security operations in Azure
+  summary: "Learn how to configure security policies and manage security alerts with the tools and services in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/create-security-baselines.svg
+- uid: learn.security.secure-your-cloud-apps.trophy
+  type: trophy
+  title: Secure your cloud applications in Azure
+  summary: "Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/certifications/azure-security-engineer)."
+  iconUrl: /training/achievements/secure-your-cloud-apps.svg
+- uid: learn.load-balance-web-traffic-with-application-gateway.badge
+  type: badge
+  title: Load balance your web service traffic with Application Gateway
+  summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
+  iconUrl: /training/achievements/load-balance-web-traffic-with-application-gateway.svg
+- uid: learn.manage-secrets-with-azure-key-vault.badge
+  type: badge
+  title: Manage secrets in your server apps with Azure Key Vault
+  summary: Your application requires service passwords, connection strings, and other secret configuration values to do its job. Storing and handling secret values is risky, and every usage introduces the possibility of leakage. Azure Key Vault, in combination with managed identities for Azure resources, enables your Azure web app to access secret configuration values easily and securely. It does so without needing to store any secrets in your source control or configuration.
+  iconUrl: /training/achievements/manage-secrets-with-azure-key-vault.svg
