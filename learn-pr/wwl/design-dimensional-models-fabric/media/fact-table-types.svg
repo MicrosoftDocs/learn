@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" font-family="Segoe UI, sans-serif">
+  <!-- transparent background -->
+
+  <!-- ===== TABLE 1: Transaction Fact ===== -->
+  <rect x="15" y="15" width="260" height="290" rx="8" fill="#f5f5f5" stroke="#cccccc" stroke-width="1.5"/>
+  <rect x="15" y="15" width="260" height="34" rx="8" fill="#0099BC"/>
+  <rect x="15" y="36" width="260" height="13" fill="#0099BC"/>
+  <text x="145" y="40" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Transaction Fact</text>
+
+  <!-- Column headers -->
+  <rect x="25" y="58" width="240" height="22" rx="3" fill="#e0e0e0"/>
+  <text x="40" y="73" fill="#333333" font-size="10" font-weight="bold">Date</text>
+  <text x="95" y="73" fill="#333333" font-size="10" font-weight="bold">Product</text>
+  <text x="170" y="73" fill="#333333" font-size="10" font-weight="bold">Qty</text>
+  <text x="215" y="73" fill="#333333" font-size="10" font-weight="bold">Revenue</text>
+
+  <!-- Rows -->
+  <text x="40" y="100" fill="#555555" font-size="10">Jan 15</text>
+  <text x="95" y="100" fill="#555555" font-size="10">Widget A</text>
+  <text x="175" y="100" fill="#555555" font-size="10">3</text>
+  <text x="220" y="100" fill="#555555" font-size="10">$45.00</text>
+  <line x1="30" y1="107" x2="260" y2="107" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="40" y="123" fill="#555555" font-size="10">Jan 15</text>
+  <text x="95" y="123" fill="#555555" font-size="10">Widget B</text>
+  <text x="175" y="123" fill="#555555" font-size="10">1</text>
+  <text x="220" y="123" fill="#555555" font-size="10">$22.50</text>
+  <line x1="30" y1="130" x2="260" y2="130" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="40" y="146" fill="#555555" font-size="10">Jan 16</text>
+  <text x="95" y="146" fill="#555555" font-size="10">Widget A</text>
+  <text x="175" y="146" fill="#555555" font-size="10">5</text>
+  <text x="220" y="146" fill="#555555" font-size="10">$75.00</text>
+  <line x1="30" y1="153" x2="260" y2="153" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="40" y="169" fill="#555555" font-size="10">Jan 16</text>
+  <text x="95" y="169" fill="#555555" font-size="10">Widget C</text>
+  <text x="175" y="169" fill="#555555" font-size="10">2</text>
+  <text x="220" y="169" fill="#555555" font-size="10">$31.00</text>
+
+  <!-- Grain label -->
+  <circle cx="145" cy="220" r="5" fill="#0099BC"/>
+  <text x="145" y="250" text-anchor="middle" fill="#0099BC" font-size="11" font-weight="bold">One row per event</text>
+
+  <!-- ===== TABLE 2: Periodic Snapshot ===== -->
+  <rect x="300" y="15" width="250" height="290" rx="8" fill="#f5f5f5" stroke="#cccccc" stroke-width="1.5"/>
+  <rect x="300" y="15" width="250" height="34" rx="8" fill="#8661C5"/>
+  <rect x="300" y="36" width="250" height="13" fill="#8661C5"/>
+  <text x="425" y="40" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Periodic Snapshot</text>
+
+  <!-- Column headers -->
+  <rect x="310" y="58" width="230" height="22" rx="3" fill="#e0e0e0"/>
+  <text x="325" y="73" fill="#333333" font-size="10" font-weight="bold">Date</text>
+  <text x="380" y="73" fill="#333333" font-size="10" font-weight="bold">Product</text>
+  <text x="470" y="73" fill="#333333" font-size="10" font-weight="bold">StockLevel</text>
+
+  <!-- Rows -->
+  <text x="325" y="100" fill="#555555" font-size="10">Jan 15</text>
+  <text x="380" y="100" fill="#555555" font-size="10">Widget A</text>
+  <text x="485" y="100" fill="#555555" font-size="10">142</text>
+  <line x1="315" y1="107" x2="535" y2="107" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="325" y="123" fill="#555555" font-size="10">Jan 15</text>
+  <text x="380" y="123" fill="#555555" font-size="10">Widget B</text>
+  <text x="485" y="123" fill="#555555" font-size="10">87</text>
+  <line x1="315" y1="130" x2="535" y2="130" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="325" y="146" fill="#555555" font-size="10">Jan 16</text>
+  <text x="380" y="146" fill="#555555" font-size="10">Widget A</text>
+  <text x="485" y="146" fill="#555555" font-size="10">139</text>
+  <line x1="315" y1="153" x2="535" y2="153" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="325" y="169" fill="#555555" font-size="10">Jan 16</text>
+  <text x="380" y="169" fill="#555555" font-size="10">Widget B</text>
+  <text x="485" y="169" fill="#555555" font-size="10">86</text>
+
+  <!-- Grain label -->
+  <circle cx="425" cy="218" r="7" fill="none" stroke="#8661C5" stroke-width="1.5"/>
+  <line x1="425" y1="214" x2="425" y2="218" stroke="#8661C5" stroke-width="1.5"/>
+  <line x1="425" y1="218" x2="429" y2="218" stroke="#8661C5" stroke-width="1.5"/>
+  <text x="425" y="250" text-anchor="middle" fill="#8661C5" font-size="11" font-weight="bold">One row per interval</text>
+
+  <!-- ===== TABLE 3: Accumulating Snapshot ===== -->
+  <rect x="575" y="15" width="270" height="290" rx="8" fill="#f5f5f5" stroke="#cccccc" stroke-width="1.5"/>
+  <rect x="575" y="15" width="270" height="34" rx="8" fill="#D83B01"/>
+  <rect x="575" y="36" width="270" height="13" fill="#D83B01"/>
+  <text x="710" y="40" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Accumulating Snapshot</text>
+
+  <!-- Column headers -->
+  <rect x="585" y="58" width="250" height="22" rx="3" fill="#e0e0e0"/>
+  <text x="598" y="73" fill="#333333" font-size="9" font-weight="bold">Order</text>
+  <text x="642" y="73" fill="#333333" font-size="9" font-weight="bold">Ordered</text>
+  <text x="695" y="73" fill="#333333" font-size="9" font-weight="bold">Shipped</text>
+  <text x="755" y="73" fill="#333333" font-size="9" font-weight="bold">Delivered</text>
+
+  <!-- Rows -->
+  <text x="600" y="100" fill="#555555" font-size="10">1001</text>
+  <text x="642" y="100" fill="#555555" font-size="10">Jan 10</text>
+  <text x="695" y="100" fill="#555555" font-size="10">Jan 12</text>
+  <text x="755" y="100" fill="#555555" font-size="10">Jan 15</text>
+  <line x1="590" y1="107" x2="830" y2="107" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="600" y="123" fill="#555555" font-size="10">1002</text>
+  <text x="642" y="123" fill="#555555" font-size="10">Jan 12</text>
+  <text x="695" y="123" fill="#555555" font-size="10">Jan 14</text>
+  <text x="755" y="123" fill="#999999" font-size="10" font-style="italic">NULL</text>
+  <line x1="590" y1="130" x2="830" y2="130" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="600" y="146" fill="#555555" font-size="10">1003</text>
+  <text x="642" y="146" fill="#555555" font-size="10">Jan 14</text>
+  <text x="695" y="146" fill="#999999" font-size="10" font-style="italic">NULL</text>
+  <text x="755" y="146" fill="#999999" font-size="10" font-style="italic">NULL</text>
+
+  <!-- Grain label -->
+  <rect x="675" y="210" width="70" height="9" rx="4" fill="#e8e8e8"/>
+  <rect x="675" y="210" width="44" height="9" rx="4" fill="#D83B01"/>
+  <text x="710" y="245" text-anchor="middle" fill="#D83B01" font-size="11" font-weight="bold">Row updates over time</text>
+</svg>

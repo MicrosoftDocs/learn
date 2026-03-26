@@ -18,7 +18,7 @@ A sensitivity label can apply any combination of:
 
 - **Encryption** that restricts who can access the content and what usage rights they have (view, edit, copy, print, forward).
 - **Content markings** such as headers, footers, and watermarks that provide visual indicators of sensitivity.
-- **Access restrictions** that prevent specific actions like forwarding emails or copying content.
+- **Container protection** that controls privacy settings, external sharing, and guest access for Microsoft 365 Groups, Teams sites, and SharePoint sites.
 
 **Label policies** control which labels are available to which users, set default labels for new content, and determine whether users must justify downgrading or removing a label. You can scope policies to specific groups or departments.
 
@@ -39,6 +39,7 @@ DLP policies can target the following locations:
 | **Microsoft Teams** | Chat messages and channel messages |
 | **Windows and macOS endpoints** | Files on user devices, including copy to USB, upload to cloud, and print actions |
 | **Non-Microsoft cloud apps** | Content in third-party SaaS apps connected through Defender for Cloud Apps |
+| **Fabric and Power BI** | Items in Fabric and Power BI workspaces |
 | **On-premises repositories** | Files in on-premises file shares and SharePoint Server |
 
 Each DLP policy defines conditions based on sensitive information types, sensitivity labels, or trainable classifiers, and specifies actions such as blocking, auditing, or notifying users with policy tips. You can configure rules with different severity levels to distinguish between low-volume accidental sharing and high-volume potential exfiltration.
@@ -59,13 +60,20 @@ Information Barriers restrict two-way communication and collaboration between sp
 
 When Information Barrier policies are active, restricted users can't find, chat with, call, or share files with each other. The restrictions apply across Teams channels, SharePoint sites, and OneDrive sharing. Policies are defined by segmenting users based on Microsoft Entra attributes such as department, role, or location, and then creating policies that block or allow communication between segments.
 
-## Evaluate Data Security Posture Management
+## Evaluate Data Security Posture Management (preview)
 
-Data Security Posture Management (DSPM) unifies visibility across Microsoft Purview solutions by organizing data security activities around specific objectives. Rather than managing individual solutions separately, DSPM presents guided workflows that group related actions from information protection, DLP, Insider Risk Management, and eDiscovery.
+Data Security Posture Management (DSPM) unifies visibility across Microsoft Purview solutions by organizing data security activities around specific objectives. Rather than managing individual solutions separately, DSPM presents guided workflows that group related actions from information protection, DLP, Insider Risk Management, and Data Security Investigations.
 
-DSPM continuously scans your environment to identify where sensitive data resides, who can access it, and whether protection policies cover it. Key objectives include preventing oversharing, preventing exfiltration to risky locations, and discovering unprotected sensitive data. Each objective provides metrics, recommended actions, and one-click policies to accelerate remediation.
+DSPM continuously scans your environment to answer four fundamental questions:
 
-The DSPM dashboard answers four fundamental data security questions: What data do you have? Where is it stored? Who can access it? How is it protected?
+- What data do you have?
+- Where is it stored?
+- Who can access it?
+- How is it protected?
+
+Security objectives include preventing oversharing, preventing exfiltration to risky locations, discovering unprotected sensitive data, and preventing data exposure in Microsoft 365 Copilot and agent interactions. Each objective provides metrics, recommended actions, and one-click policies to accelerate remediation.
+
+DSPM natively includes AI observability, which tracks AI app and agent activity, identifies sensitive data referenced in AI interactions, and surfaces oversharing risks specific to generative AI workloads. This capability provides the data security foundation that the AI-specific controls covered in the next unit build on.
 
 ## Design considerations for security architects
 
@@ -77,6 +85,7 @@ When you evaluate Microsoft Purview data security solutions, consider the follow
 - **Reserve DKE for specific use cases.** DKE excludes content from Microsoft 365 service processing. Evaluate the trade-offs carefully and use DKE only when regulatory requirements demand customer-only decryption control.
 - **Implement Information Barriers early in regulated environments.** Barrier policies affect collaboration across Teams, SharePoint, and OneDrive. Plan user segmentation during the design phase to avoid disruptions after deployment.
 - **Use DSPM as your operational dashboard.** DSPM consolidates insights from multiple Purview solutions into objective-based workflows. Use it to track posture metrics, prioritize remediation, and report progress against data security goals.
+- **Leverage Adaptive Protection to connect risk signals with enforcement.** Adaptive Protection integrates Insider Risk Management risk levels with DLP policies and Conditional Access, dynamically adjusting enforcement based on user behavior.
 
 In the next unit, you evaluate how these Purview capabilities extend specifically to protect AI interactions in Microsoft 365 Copilot.
 

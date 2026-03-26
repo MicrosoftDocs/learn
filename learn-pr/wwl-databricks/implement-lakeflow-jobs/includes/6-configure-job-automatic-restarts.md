@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=91d506e1-dd6c-4e49-a970-4b80060c2089]
+
 When a production job fails at 3 AM, **automatic restarts** can mean the difference between a quick recovery and hours of downtime. Network blips, temporary resource constraints, and **transient service interruptions** happen regularly in distributed systems. Configuring your jobs to handle these failures automatically reduces manual intervention and keeps your data pipelines running reliably.
 
 In this unit, you learn how to configure automatic restarts and retry policies for Lakeflow Jobs in Azure Databricks.

@@ -1,4 +1,6 @@
-Now that you understand the different storage options within Azure, it’s important to also understand how to get your data and information into Azure. Azure supports both real-time migration of infrastructure, applications, and data using Azure Migrate as well as asynchronous migration of data using Azure Data Box.
+Now that you understand the different storage options within Azure, it's important to also understand how to get your data into Azure. Azure supports both real-time migration of infrastructure, applications, and data using Azure Migrate as well as asynchronous migration of data using Azure Data Box.
+
+:::image type="content" source="../media/data-migration-options.png" alt-text="Diagram comparing two Azure data migration approaches: Azure Migrate for online real-time migration and Azure Data Box for physical offline bulk data transfer.":::
 
 ## Azure Migrate
 
@@ -10,14 +12,7 @@ Azure Migrate is a service that helps you migrate from an on-premises environmen
 
 ### Integrated tools
 
-In addition to working with tools from ISVs, the Azure Migrate hub also includes the following tools to help with migration:
-
- -  **Azure Migrate: Discovery and assessment**. Discover and assess on-premises servers running on VMware, Hyper-V, and physical servers in preparation for migration to Azure.
- -  **Azure Migrate: Server Migration**. Migrate VMware VMs, Hyper-V VMs, physical servers, other virtualized servers, and public cloud VMs to Azure.
- -  **Data Migration Assistant**. Data Migration Assistant is a stand-alone tool to assess SQL Servers. It helps pinpoint potential problems blocking migration. It identifies unsupported features, new features that can benefit you after migration, and the right path for database migration.
- -  **Azure Database Migration Service**. Migrate on-premises databases to Azure VMs running SQL Server, Azure SQL Database, or SQL Managed Instances.
- -  **Azure App Service migration assistant**. Azure App Service migration assistant is a standalone tool to assess on-premises websites for migration to Azure App Service. Use Migration Assistant to migrate .NET and PHP web apps to Azure.
- -  **Azure Data Box**. Use Azure Data Box products to move large amounts of offline data to Azure.
+In addition to working with tools from ISVs, the Azure Migrate hub includes integrated options for discovery and assessment, server migration, database migration, and web app migration.
 
 ## Azure Data Box
 
@@ -27,21 +22,13 @@ You can order the Data Box device via the Azure portal to import or export data 
 
 ### Use cases
 
-Data Box is ideally suited to transfer data sizes larger than 40 TBs in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers.
+Data Box is ideally suited for moving very large data sets (often tens of terabytes or more) when network bandwidth is limited.
 
-Here are the various scenarios where Data Box can be used to import data to Azure.
+Common Data Box scenarios include:
 
- -  Onetime migration - when a large amount of on-premises data is moved to Azure.
- -  Moving a media library from offline tapes into Azure to create an online media library.
- -  Migrating your VM farm, SQL server, and applications to Azure.
- -  Moving historical data to Azure for in-depth analysis and reporting using HDInsight.
- -  Initial bulk transfer - when an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network.
- -  Periodic uploads - when large amount of data is generated periodically and needs to be moved to Azure.
-
-Here are the various scenarios where Data Box can be used to export data from Azure.
-
- -  Disaster recovery - when a copy of the data from Azure is restored to an on-premises network. In a typical disaster recovery scenario, a large amount of Azure data is exported to a Data Box. Microsoft then ships this Data Box, and the data is restored on your premises in a short time.
- -  Security requirements - when you need to be able to export data out of Azure due to government or security requirements.
- -  Migrate back to on-premises or to another cloud service provider - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
+ -  One-time bulk migration of on-premises data to Azure.
+ -  Periodic large data uploads where online transfer is too slow.
+ -  Exporting large data sets from Azure for recovery or regulatory needs.
 
 Once the data from your import order is uploaded to Azure, the disks on the device are wiped clean in accordance with NIST 800-88r1 standards. For an export order, the disks are erased once the device reaches the Azure datacenter.
+

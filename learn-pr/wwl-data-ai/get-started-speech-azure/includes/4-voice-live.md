@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=ffb00c55-06ce-472b-b247-e7863f1f70f1]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fad13f28-0737-44cc-8e17-d56d54279ba2]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -46,12 +46,13 @@ Azure speech-to-speech solutions utilize:
 - **Agents or application logic** which makes decisions on responses.
 - **Foundry Tools or MCP servers** which can expose speech as callable tools so agents don’t manage SDKs or APIs directly.
 
->[!NOTE]
-> The **Azure Speech in Foundry Tools MCP server** exposes speech-to-text and text-to-speech as callable tools, allowing AI agents to work with spoken language without directly managing Azure Speech APIs. The Azure Speech MCP server makes it easier to build voice‑enabled AI agents that can listen, think, and speak.
-
-You can explore *VoiceLive* in a playground in Foundry portal. The Foundry playground includes some preconfigured voice samples that you can try out, or you can create a new solution of your own. When you create a solution, importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. You can configure many settings in the playground. For example, you can enable proactive engagement, so the agent can initiate conversations. 
+You can explore *Voice Live* in a playground in Foundry portal. The Foundry playground includes some preconfigured voice samples that you can try out, or you can create a new solution of your own. When you create a solution, importantly, you need to choose a generative AI model for your agent to use. Azure Speech Voice Live uses the generative AI model *alongside* its own acoustic models to have a live conversation with the user. You can configure many settings in the playground. For example, you can enable proactive engagement, so the agent can initiate conversations. 
 
 :::image type="content" source="../media/voice-live-playground.png" alt-text="Screenshot of voice live in the Foundry playground." lightbox="../media/voice-live-playground.png":::
+
+You can also enable **Voice mode** for a Microsoft Foundry agent in the playground, which integrates Azure Speech Voice Live into the agent definition. This approach means that speech configuration is encapsulated in the agent itself, reducing the client code required to use it.
+
+:::image type="content" source="../media/voice-live-agent.png" alt-text="Screenshot of a voice-enabled agent." lightbox="../media/voice-live-agent.png":::
 
 ## Using Voice Live in an application
 
@@ -66,14 +67,14 @@ pip install azure-ai-voicelive
 >[!NOTE]
 > You also need to install `pyaudio`, `python-dotenv`, and `azure-identity` in order to run your Voice Live application.
 
-You can find sample code for a speech-to-speech application in the Foundry playground. The sample code handles all of the logic needed to initiate the session, connect to audio devices like mics and speakers, process the incoming and outgoing streams of audio, handle interruptions, and so on. The sample code is a good starting point for building your own application.
+You can find sample code for a speech-to-speech application in the Foundry portal. The sample code handles all of the logic needed to initiate the session, connect to audio devices like mics and speakers, process the incoming and outgoing streams of audio, handle interruptions, and so on. The sample code is a good starting point for building your own application.
 
 :::image type="content" source="../media/voice-live-playground-code.png" alt-text="Screenshot of voice live in the Foundry playground sample code." lightbox="../media/voice-live-playground-code.png":::
 
-You can take the sample code into your own code editor and install the proper packages. When you run the application, a real‑time voice assistant streams your microphone audio to Azure VoiceLive, receives the assistant’s spoken audio response back, and plays it through your speakers. 
+You can take the sample code into your own code editor and install the proper packages. When you run the application, a real‑time voice assistant streams your microphone audio to Azure Voice Live, receives the assistant’s spoken audio response back, and plays it through your speakers. 
 
 ![Screenshot of the result of the VoiceLive Python script.](../media/voice-live-result.png)
 
-VoiceLive in Azure Speech offers an effective way to build speech-capable conversational agents that engage naturally with users. Next, try out Azure Speech - Voice Live in Foundry yourself.
+Voice Live in Azure Speech offers an effective way to build speech-capable conversational agents that engage naturally with users. Next, try out Azure Speech - Voice Live in Foundry yourself.
 
 ::: zone-end

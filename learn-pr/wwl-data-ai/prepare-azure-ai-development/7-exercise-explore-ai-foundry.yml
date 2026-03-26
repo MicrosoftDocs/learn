@@ -6,12 +6,10 @@ metadata:
   description: Explore the Microsoft Foundry portal for AI development on the Azure cloud platform.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 02/26/2026
+  ms.date: 3/16/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-explore-ai-foundry.md)]
-
-

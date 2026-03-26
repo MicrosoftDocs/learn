@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.explain-privileged-just-in-time-access
+title: Why Privileged Identity Management and just-in-time access matter
+metadata:
+  title: Why Privileged Identity Management and Just-in-Time Access Matter
+  description: "Understand why standing privilege is a security risk and how just-in-time access through PIM addresses that risk."
+  ms.date: 03/17/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explain-privileged-just-in-time-access.md)]

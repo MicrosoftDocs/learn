@@ -28,8 +28,8 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-ai-foundry
-  - azure-ai-foundry-agent-service
+  - microsoft-foundry
+  - foundry-agent-service
 subjects: 
   - artificial-intelligence
 units:
