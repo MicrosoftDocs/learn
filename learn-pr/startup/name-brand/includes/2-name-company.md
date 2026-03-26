@@ -17,7 +17,7 @@ Let's go through each of these attributes and discuss why they're important.
 
 A simple name is one that has as few characters and syllables as possible. The shorter the name, the easier it is for people to remember, say, and type.
 
-As a guide, you should aim to have no more than three syllables and no more than 10 characters in your company name. Examples are Uber, Canva, Viva Engage, GitHub, Bing, Xero, Slack, and Stripe.
+As a guide, you should aim to have no more than three syllables and no more than 10 characters in your company name. Examples are Uber, Canva, Yammer, GitHub, Bing, Xero, Slack, and Stripe.
 
 ## Memorable
 

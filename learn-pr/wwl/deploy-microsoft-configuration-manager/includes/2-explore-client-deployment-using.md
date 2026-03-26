@@ -2,14 +2,14 @@
 
 For many organizations, Configuration Manager has been at the center of their deployment strategy. Configuration Manager capabilities provide a one-stop shop not only for OS deployments but also application management and device health.
 
-Starting in version 1910, Configuration Manager is now part of Microsoft Intune. Microsoft Intune is a suite of tools that work together to unlock many of the scenarios and challenges that enterprises face in today’s world. These tools bring about a modern mindset and approach to situations that have always existed or ones that are ever evolving, such as working from home and remote management.
+Starting in version 1910, Configuration Manager is now part of the Microsoft Intune family of products. The Microsoft Intune family is a suite of tools that work together to unlock many of the scenarios and challenges that enterprises face in today’s world. These tools bring about a modern mindset and approach to situations that have always existed or ones that are ever evolving, such as working from home and remote management.
 
 This unit examines how you can use Configuration Manager to support a Windows deployment. It also explores how Configuration Manager, along with co-management, helps to build the foundation on your journey towards modern management.
 
-The following Microsoft management solutions are all now part of Microsoft Intune:
+The following Microsoft management solutions are all now part of the Microsoft Intune family:
 
  -  Configuration Manager
- -  Microsoft Intune
+ -  Intune
  -  Endpoint Analytics
  -  Windows Autopilot
  -  Other features in the Device Management Admin console
