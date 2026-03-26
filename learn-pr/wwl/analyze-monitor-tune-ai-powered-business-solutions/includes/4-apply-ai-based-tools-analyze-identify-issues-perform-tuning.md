@@ -24,7 +24,7 @@ AI based agents operate in dynamic business environments. Their performance depe
 
 A structured workflow ensures consistency and helps isolate root causes faster.
 
-### Tuning Workflow (Text Diagram)
+### Tuning Workflow
 
 :::image type="content" source="../media/tuning-workflow.png" alt-text="Tuning workflow":::
 
@@ -85,7 +85,7 @@ Opportunities for workflow redesign.
 
 A performance scorecard helps measure overall capability.
 
-### Performance Scorecard (TextBased Table)
+### Performance Scorecard
 
 | **Metric Category** | **Target Behavior** |
 |---|---|
@@ -132,7 +132,7 @@ Align agent capabilities with enterprise compliance requirements.
 
 Ensure logging and auditing remain intact after changes.
 
-### AI Issue Mapping Chart (TextBased)
+### AI Issue Mapping Chart
 
 | Issue Theme | Potential Cause | Required Tuning |
 | --- | --- | --- |
