@@ -10,35 +10,35 @@ Telemetry provides data about how the system behaves in real time. It is essenti
 
 #### Operational Telemetry
 
-Latency and throughput
+* Latency and throughput
 
-Error rates and failure modes
+* Error rates and failure modes
 
-Resource consumption and throttling
+* Resource consumption and throttling
 
 #### ModelLevel Telemetry
 
-Token usage and cost patterns
+* Token usage and cost patterns
 
-Response consistency
+* Response consistency
 
-Drift indicators and degradation trends
+* Drift indicators and degradation trends
 
 #### Behavioral Telemetry
 
-User satisfaction and completion rates
+* User satisfaction and completion rates
 
-Prompt patterns and abandonment rates
+* Prompt patterns and abandonment rates
 
-Model alignment to intended tasks
+* Model alignment to intended tasks
 
 #### Governance and Compliance Signals
 
-Guardrail interventions
+* Guardrail interventions
 
-Blocked actions or restricted data access
+* Blocked actions or restricted data access
 
-Policy or sensitivity label conflicts
+* Policy or sensitivity label conflicts
 
 ## 2. Performance Signals and Interpretation
 
@@ -46,11 +46,11 @@ Solution architects should focus on **patterns**, not isolated events.
 
 ### Performance Indicators
 
-**Increased latency**<br>Indicates heavy workloads, inefficient prompt structures, or connector delays.
+* **Increased latency**<br>Indicates heavy workloads, inefficient prompt structures, or connector delays.
 
-**Spikes in error rates**<br>Often point to broken integrations, incorrect environment configuration, or model instability.
+* **Spikes in error rates**<br>Often point to broken integrations, incorrect environment configuration, or model instability.
 
-**High token usage**<br>Suggests verbose outputs, unclear prompts, or an overly complex workflow.
+* **High token usage**<br>Suggests verbose outputs, unclear prompts, or an overly complex workflow.
 
 ### Performance Signal Map 
 
@@ -68,13 +68,13 @@ Model tuning focuses on improving the quality and reliability of responses.
 
 ### 3.1 Tuning Opportunities
 
-**Prompt Refinement**<br>Improving instructions, constraints, and expectations for predictable results.
+* **Prompt Refinement**<br>Improving instructions, constraints, and expectations for predictable results.
 
-**Knowledge Updates**<br>Adding, removing, or restructuring knowledge sources for better grounding.
+* **Knowledge Updates**<br>Adding, removing, or restructuring knowledge sources for better grounding.
 
-**Behavioral Adjustments**<br>Introducing fallback logic, clarifying actions, or refining orchestration flow.
+* **Behavioral Adjustments**<br>Introducing fallback logic, clarifying actions, or refining orchestration flow.
 
-**Cost Optimization**<br>Reducing unnecessary token usage and optimizing invocation structure.
+* **Cost Optimization**<br>Reducing unnecessary token usage and optimizing invocation structure.
 
 ## 4. TelemetryDriven Diagnosis Workflow
 
@@ -82,17 +82,17 @@ A consistent workflow helps isolate issues quickly.
 
 ### StepbyStep Diagnostic Flow
 
-**Monitor Key Metrics**<br>Gather baseline information across latency, throughput, quality, and satisfaction.
+* **Monitor Key Metrics**<br>Gather baseline information across latency, throughput, quality, and satisfaction.
 
-**Identify Anomalies**<br>Look for deviations from expected patterns.
+* **Identify Anomalies**<br>Look for deviations from expected patterns.
 
-**Correlate Related Signals**<br>Combine user behavior, failures, and performance metrics.
+* **Correlate Related Signals**<br>Combine user behavior, failures, and performance metrics.
 
-**Determine Root Cause**<br>Validate if the issue is modelbased, integrationbased, or promptbased.
+* **Determine Root Cause**<br>Validate if the issue is modelbased, integrationbased, or promptbased.
 
-**Apply Targeted Tuning**<br>Update prompts, improve workloads, adjust knowledge, or change configuration.
+* **Apply Targeted Tuning**<br>Update prompts, improve workloads, adjust knowledge, or change configuration.
 
-**Validate Improvements**<br>Compare beforeandafter telemetry patterns to ensure successful tuning.
+* **Validate Improvements**<br>Compare beforeandafter telemetry patterns to ensure successful tuning.
 
 ## 5. Architecture Flow of Telemetry Analysis
 
@@ -103,15 +103,15 @@ A consistent workflow helps isolate issues quickly.
 
 Solution architects should define clear KPIs aligned to business goals:
 
-**Responsiveness**<br>Median response time within acceptable limits.
+* **Responsiveness**<br>Median response time within acceptable limits.
 
-**Accuracy & Relevance**<br>Model outputs aligned to task expectations.
+* **Accuracy & Relevance**<br>Model outputs aligned to task expectations.
 
-**Reliability**<br>Low failure rate across workflows.
+* **Reliability**<br>Low failure rate across workflows.
 
-**CostEffectiveness**<br>Balanced token usage and model selection.
+* **CostEffectiveness**<br>Balanced token usage and model selection.
 
-**User Outcome Completion**<br>Ability for users to complete tasks without manual intervention.
+* **User Outcome Completion**<br>Ability for users to complete tasks without manual intervention.
 
 ## References
 
