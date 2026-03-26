@@ -130,7 +130,7 @@ Use a matrix to classify items based on business impact and required effort.
 
 ## 4. Monitoring Agent Usage and Behavior
 
-* Monitoring ensures agents operate as intended and scale properly.
+Monitoring ensures agents operate as intended and scale properly.
 
 ### Key items for architects to monitor:
 
@@ -164,44 +164,43 @@ Solution architects drive improvement cycles by:
 
 ### 5.1 Designing a FeedbacktoImprovement Pipeline
 
-Consolidate backlog and user feedback
+* Consolidate backlog and user feedback
 
-Align items to enterprise strategy
+* Align items to enterprise strategy
 
-Define measurable outcomes
+* Define measurable outcomes
 
-Create improvement releases and deploy updates
+* Create improvement releases and deploy updates
 
-Validate improvements postrelease
+* Validate improvements postrelease
 
-Monitor drift and regression
+* Monitor drift and regression
 
 ### 5.2 Embedding Continuous Improvement
 
-Refresh knowledge sources regularly
+* Refresh knowledge sources regularly
 
-Standardize prompts and flows
+* Standardize prompts and flows
 
-Improve orchestration logic
+* Improve orchestration logic
 
-Update integration touchpoints
+* Update integration touchpoints
 
-Implement new guardrails based on risk patterns
+* Implement new guardrails based on risk patterns
 
 ### 5.3 Reporting and Stakeholder Communication
 
 #### Communicate:
 
-Top backlog themes
+* Top backlog themes
 
-Improvement plans
+* Improvement plans
 
-Usage insights and performance changes
+* Usage insights and performance changes
 
-Risks or compliance issues
+* Risks or compliance issues
 
-Expected outcomes
-
+* Expected outcomes
 
 ## References
 
