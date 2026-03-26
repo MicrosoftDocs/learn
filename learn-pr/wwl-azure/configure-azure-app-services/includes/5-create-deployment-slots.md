@@ -8,7 +8,7 @@ Let's take a closer look at the characteristics of deployment slots.
 
 - Deployment slots are live apps that have their own hostnames.
 
-- Deployment slots are available in the Standard, Premium, and Isolated App Service pricing tiers. Your app needs to be running in one of these tiers to use deployment slots.
+- Deployment slots are available in the Standard, Premium, and Isolated v2 App Service pricing tiers. Your app needs to be running in one of these tiers to use deployment slots.
 
 - The Standard, Premium, and Isolated tiers offer different numbers of deployment slots.
 
@@ -26,4 +26,4 @@ There are several advantages to using deployment slots with your App Service app
 
 - **Consider restoring to last known good site**. After a swap, the slot with the previously staged app now has the previous production app. If the changes swapped into the production slot aren't as you expected, you can perform the same swap immediately to return to your "last known good site."
 
-- **Consider Auto swap**. Auto swap streamlines Azure Pipeline scenarios where you want to deploy your app continuously with zero cold starts and zero downtime for app customers. When Auto swap is enabled from a slot into production, every time you push your code changes to that slot, App Service automatically swaps the app into production after it's warmed up in the source slot. Auto swap isn't currently supported for Web Apps on Linux.
+- **Consider Auto swap**. Auto swap streamlines Azure Pipeline scenarios where you want to deploy your app continuously with zero cold starts and zero downtime for app customers. When Auto swap is enabled from a slot into production, every time you push your code changes to that slot, App Service automatically swaps the app into production after it's warmed up in the source slot. 
