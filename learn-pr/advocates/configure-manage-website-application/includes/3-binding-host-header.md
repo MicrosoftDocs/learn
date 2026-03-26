@@ -36,7 +36,7 @@ To add and edit site bindings in IIS Manager, perform the following steps:
 
 To edit an existing binding: select it in the list and select Edit. To remove a binding: select it and select Remove. Removing the only binding makes the site inaccessible.
 
-You manage bindings in PowerShell with the `WebBinding` cmdlets. For example:
+Manage bindings in PowerShell with the `WebBinding` cmdlets. For example:
 
 ```powershell
 # Add an HTTP binding with a host header

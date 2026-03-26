@@ -4,9 +4,9 @@ IIS organizes web content through a hierarchy of sites, applications, and virtua
 
 IIS structures web content in a three-tier hierarchy:
 
-- **Website (Site).** The top-level container. Each site has at least one binding (IP address, port, and optional host name) that identifies incoming requests. A site maps to a physical root directory on disk.
-- **Web Application.** A child container within a site. Applications have their own application pool assignment and can have separate configuration settings from the parent site. Use applications when you need isolated configuration, a different .NET runtime, or a dedicated worker process identity for a portion of a site.
-- **Virtual Directory.** A pointer from a URL path to a physical directory on disk (which may be on a different volume or UNC path). Virtual directories don't have their own application pool and inherit the parent application's settings.
+- **Website (Site):** The top-level container. Each site has at least one binding (IP address, port, and optional host name) that identifies incoming requests. A site maps to a physical root directory on disk.
+- **Web Application:** A child container within a site. Applications have their own application pool assignment and can have separate configuration settings from the parent site. Use applications when you need isolated configuration, a different .NET runtime, or a dedicated worker process identity for a portion of a site.
+- **Virtual Directory:** A pointer from a URL path to a physical directory on disk (which may be on a different volume or UNC path). Virtual directories don't have their own application pool and inherit the parent application's settings.
 
 > [!NOTE]
 > This hierarchy is stored in the central IIS configuration file, ApplicationHost.config, located at %windir%\system32\inetsrv\config\.
