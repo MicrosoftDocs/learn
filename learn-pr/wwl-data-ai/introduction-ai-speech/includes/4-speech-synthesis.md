@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=b60e004a-3ffc-4535-9fde-e217fcf802d4]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9d2402fd-5bf4-49d3-a497-468afcd4300a]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -13,7 +13,7 @@ Speech synthesis—also called text-to-speech (TTS)—converts written text into
 
 Speech synthesis systems process text through four distinct stages. Each stage transforms the input incrementally, building toward a final audio waveform that sounds natural and intelligible.
 
-## Text normalization: Standardize the text 
+## Text normalization: Standardize the text
 
 Text normalization prepares raw text for pronunciation by expanding abbreviations, numbers, and symbols into spoken forms.
 
@@ -85,7 +85,7 @@ Prosody has a significant effect on how spoken text is interpreted. For example,
 
 Modern speech synthesis systems use transformer neural networks to predict prosody. Transformers excel at understanding context across entire sentences, not just adjacent words.
 
-#### The prosody generation process:
+#### The prosody generation process
 
 1. **Input encoding**: The transformer receives the phoneme sequence with linguistic features (punctuation, part of speech, sentence structure)
 2. **Contextual analysis**: Self-attention mechanisms identify relationships between words (for example, which noun a pronoun references, where sentence boundaries fall)
@@ -94,7 +94,7 @@ Modern speech synthesis systems use transformer neural networks to predict proso
 
 Transformers predict prosody by learning from thousands of hours of recorded speech paired with transcripts. The model discovers patterns: questions rise in pitch at the end, commas signal brief pauses, emphasized words lengthen slightly, and sentence-final words often drop in pitch.
 
-#### Factors influencing prosody choices:
+#### Factors influencing prosody choices
 
 - **Syntax**: Clause boundaries indicate where to pause
 - **Semantics**: Important concepts receive emphasis
@@ -115,7 +115,7 @@ Speech synthesis generates the final audio waveform based on the phoneme sequenc
 
 Modern systems use neural vocoders—deep learning models that generate audio samples directly. Popular vocoder architectures include WaveNet, WaveGlow, and HiFi-GAN.
 
-#### The synthesis process:
+#### The synthesis process
 
 1. **Acoustic feature generation**: An acoustic model (often a transformer) converts phonemes and prosody targets into mel-spectrograms—visual representations of sound frequencies over time
 2. **Vocoding**: The neural vocoder converts mel-spectrograms into raw audio waveforms (sequences of amplitude values at 16,000-48,000 samples per second)

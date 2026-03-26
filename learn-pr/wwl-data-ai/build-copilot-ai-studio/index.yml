@@ -28,8 +28,7 @@ roles:
   - data-scientist
   - ai-engineer
 products: 
-  - microsoft-foundry
-  - azure-cognitive-search
+  - microsoft-foundry  
 subjects: 
   - artificial-intelligence
   - machine-learning

@@ -6,12 +6,10 @@ metadata:
   description: Use the Images playground in Microsoft Foundry portal to explore image generation models.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/08/2025
+  ms.date: 03/24/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/3-dall-e-in-openai-studio.md)]
-
-

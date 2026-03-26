@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generative-ai-tools.web-search
+title: Use the web_search tool
+metadata:
+  title: Use the web_search tool
+  description: Use the web_search tool to retrieve real-time information from the internet.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 03/19/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-web-search.md)]

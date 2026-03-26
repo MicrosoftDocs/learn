@@ -30,7 +30,6 @@ subjects:
 - cloud-security
 modules:
 - learn.azure-well-architected-security
-- learn.azure-security.create-security-baselines
 - learn.plan-your-linux-environment-in-azure
 - learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure

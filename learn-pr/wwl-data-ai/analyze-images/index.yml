@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-images
+hidden: true
 metadata:
   title: Analyze images
   description: Analyze images
@@ -24,23 +25,22 @@ prerequisites: |
   - Programming experience.
 iconUrl: /training/achievements/computer-vision-analyze-images.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- foundry-tools
-- azure-computer-vision
-- azure-ai-foundry
+  - foundry-tools
+  - azure-computer-vision
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.analyze-images.introduction
-- learn.wwl.analyze-images.provision-computer-vision-resource
-- learn.wwl.analyze-images.analyze-image
-- learn.wwl.analyze-images.exercise-computer-vision
-- learn.wwl.analyze-images.knowledge-check
-- learn.wwl.analyze-images.summary
+  - learn.wwl.analyze-images.introduction
+  - learn.wwl.analyze-images.provision-computer-vision-resource
+  - learn.wwl.analyze-images.analyze-image
+  - learn.wwl.analyze-images.exercise-computer-vision
+  - learn.wwl.analyze-images.knowledge-check
+  - learn.wwl.analyze-images.summary
 badge:
   uid: learn.wwl.analyze-images.badge
-

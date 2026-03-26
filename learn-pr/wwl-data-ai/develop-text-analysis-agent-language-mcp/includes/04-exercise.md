@@ -7,4 +7,4 @@ In this exercise, you create an AI agent in Microsoft Foundry, connect it to the
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2326052&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2356518&azure-portal=true)

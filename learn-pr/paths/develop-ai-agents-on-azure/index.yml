@@ -21,8 +21,8 @@ roles:
   - ai-engineer
 products:
   - foundry-tools
-  - azure-ai-foundry
-  - foundry-agent-service
+  - microsoft-foundry
+  - azure-ai-foundry-agent-service
   - azure-ai-foundry-sdk
 subjects:
   - artificial-intelligence

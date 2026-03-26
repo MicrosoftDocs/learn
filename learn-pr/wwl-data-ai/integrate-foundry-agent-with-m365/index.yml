@@ -29,7 +29,7 @@ roles:
   - developer
   - solution-architect
 products:
-  - azure-ai-foundry
+  - microsoft-foundry
   - foundry-agent-service
   - microsoft-365-copilot
 subjects:
