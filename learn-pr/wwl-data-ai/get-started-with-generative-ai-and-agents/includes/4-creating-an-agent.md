@@ -128,7 +128,10 @@ print(f"Response output: {response.output_text}")
 
 ### Publishing an agent
 
-**Publishing** an agent changes it from a saved development asset to a managed Azure resource with a stable endpoint. A published agent can be shared without exposing the Foundry project or source code. You can publish an agent through the Foundry portal. 
+**Publishing** an agent changes it from a saved development asset to a managed Azure resource with a dedicated endpoint. A published agent can be shared without exposing the Foundry project or source code. You can publish an agent through the Foundry portal. 
+
+>[!NOTE]
+>You don't need to publish an agent in order to use its endpoint. However, when you don't publish, you're essentially using the agent as a development asset inside your Foundry project. That is great for iteration, but not ideal for distribution, governance, or stable integrations.
 
 ![Screenshot of publishing agent in the Foundry portal.](../media/publish-agent.png)
 ![Screenshot of agent after it is published in the Foundry portal with the endpoint information.](../media/agent-published.png)
