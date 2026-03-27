@@ -8,7 +8,7 @@ By the end of this unit, learners will be able to:
 
 Explain how Computer Use works in Copilot Studio
 
-Identify business scenarios suitable for UIbased automation
+Identify business scenarios suitable for UI-based automation
 
 Design agent behaviors that safely interact with apps and websites
 
@@ -16,9 +16,9 @@ Configure Computer Use actions and constraints
 
 Evaluate reliability, governance, and user experience considerations
 
-## 1. Understanding Computer Use in Copilot Studio
+## Understanding Computer Use in Copilot Studio
 
-### Computer Use allows agents to:
+### Computer Use allows agents to
 
 Control the mouse and keyboard
 
@@ -26,7 +26,7 @@ Navigate websites and desktop apps
 
 Read onscreen text and UI elements
 
-Perform multistep tasks
+Perform multi-step tasks
 
 Automate repetitive or structured workflows
 
@@ -36,25 +36,25 @@ Click, type, scroll, and navigate
 
 Extract text from the screen
 
-Follow multistep UI sequences
+Follow multi-step UI sequences
 
 Use reasoning to determine next actions
 
 Execute tasks across multiple apps
 
-### How It Works
+### How it works
 
 The agent receives a user request
 
 It analyzes the UI using vision and reasoning
 
-It generates a stepbystep plan
+It generates a step-by-step plan
 
 It performs actions through the Computer Use channel
 
 It validates results and reports back to the user
 
-## 2. Identify Scenarios Suitable for Computer Use Automation
+## Identify scenarios suitable for Computer Use automation
 
 Computer Use is ideal when:
 
@@ -68,7 +68,7 @@ Vendor portals
 
 Desktoponly applications
 
-### B. Tasks are repetitive and UIdriven
+### B. Tasks are repetitive and UI-driven
 
 Examples:
 
@@ -96,7 +96,7 @@ Identifying the correct button on a dynamic page
 
 Navigating menus that change based on context
 
-## 3. Designing Agents for Computer Use
+## Designing agents for Computer Use
 
 ### A. Define the Task Clearly
 
@@ -104,13 +104,13 @@ Agents perform best when the task is:
 
 Specific
 
-Goaloriented
+Goal-oriented
 
 Structured
 
 Example: "Log into the vendor portal, download the latest invoice, and save it to SharePoint."
 
-### B. Provide Context and Constraints
+### B. Provide context and constraints
 
 Agents need guardrails such as:
 
@@ -122,7 +122,7 @@ What actions are prohibited
 
 Time limits or retry limits
 
-**C. Break Tasks into Steps**
+**C. Break tasks into steps**
 
 Even though the agent can reason, designing a clear workflow improves reliability.
 
@@ -148,7 +148,7 @@ Validate results after each step
 
 Handle errors gracefully
 
-## 4. Configuring Computer Use in Copilot Studio
+## Configuring Computer Use in Copilot Studio
 
 ### A. Enable Computer Use
 
@@ -190,15 +190,15 @@ Validate UI navigation
 
 Debug failures
 
-## 5. Governance, Safety, and Reliability Considerations
+## Governance, safety, and reliability considerations
 
-### A. Security & Access Control
+### A. Security & access control
 
 Limit which apps the agent can access
 
 Avoid sensitive data entry unless necessary
 
-Use leastprivilege principles
+Use least-privilege principles
 
 ### B. Responsible AI
 
@@ -216,9 +216,9 @@ Build monitoring and fallback plans
 
 Use Computer Use only when APIs are unavailable
 
-## 6. Professional Visuals (TextBased)
+## Professional visuals (text-based)
 
-### Visual 1 — Computer Use Architecture
+### Visual 1 — Computer Use architecture
 
 User Request ↓ Agent Reasoning ↓ Computer Use Actions ↓ UI Interaction ↓ Validation & Response 
 
@@ -226,7 +226,7 @@ User Request ↓ Agent Reasoning ↓ Computer Use Actions ↓ UI Interaction ↓
 
 No API Available | UI-Driven Tasks | Multi-App Workflows | Human-Like Reasoning Needed 
 
-### Visual 3 — Agent Design Framework
+### Visual 3 — Agent design framework
 
 Define Task → Add Context → Break Steps → Add Guardrails → Test → Refine 
 

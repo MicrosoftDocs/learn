@@ -1,6 +1,6 @@
 ## Overview
 
-This unit provides solution architects with expertlevel guidance for designing extensible, enterprisegrade agents in Microsoft Copilot Studio. You will learn how to structure agent capabilities, integrate external logic, apply custom instructions, and use procode extensibility options—ensuring agents can scale across business scenarios, product lines, and organizational boundaries.
+This unit provides solution architects with expert-level guidance for designing extensible, enterprise-grade agents in Microsoft Copilot Studio. You will learn how to structure agent capabilities, integrate external logic, apply custom instructions, and use pro-code extensibility options—ensuring agents can scale across business scenarios, product lines, and organizational boundaries.
 
 Microsoft Copilot Studio extensibility focuses on enabling organizations to:
 
@@ -10,19 +10,19 @@ Integrate enterprise systems through connectors, APIs, or actions.
 
 Modify and version agent instructions using prompt modification techniques.
 
-Extend agents with developmentgrade customization using Visual Studio Code.
+Extend agents with development-grade customization using Visual Studio Code.
 
-Support governance, safety, and lifecycle controls to maintain highquality agent outputs.
+Support governance, safety, and lifecycle controls to maintain high-quality agent outputs.
 
 ## Core extensibility concepts
 
 Agent extensibility allows organizations to tailor how agents reason, act, and interact with enterprise systems. Extensibility can be implemented at four layers:
 
-### 1. Instructionlevel extensibility
+### Instruction-level extensibility
 
-Instructionlevel extensibility defines the behavior, tone, boundaries, and reasoning authority of an agent.
+Instruction-level extensibility defines the behavior, tone, boundaries, and reasoning authority of an agent.
 
-#### Solution architects refine the agent's:
+#### Solution architects refine the agent's
 
 **Purpose** (why the agent exists).
 
@@ -34,29 +34,29 @@ Instructionlevel extensibility defines the behavior, tone, boundaries, and reaso
 
 **Prompt modification** features help add custom rules and behaviors without rebuilding the entire agent.
 
-### 2. Skill and capability extensibility
+### Skill and capability extensibility
 
-Skills define what an agent can _do_. Extending an agent's skills allows it to perform domainspecific operations.
+Skills define what an agent can _do_. Extending an agent's skills allows it to perform domain-specific operations.
 
-#### Common extensibility patterns:
+#### Common extensibility patterns
 
 Add retrieval skills using enterprise content sources.
 
-Add actionoriented skills using Power Platform connectors or custom APIs.
+Add action-oriented skills using Power Platform connectors or custom APIs.
 
-Add multistep workflows for structured tasks.
+Add multi-step workflows for structured tasks.
 
-Add domain knowledge to improve accuracy and reduce hallucinations.
+Add domain knowledge to improve accuracy and reduce incorrect information.
 
 Solution architects should create modular, reusable skills to prevent duplication across agents.
 
-### 3. Integration extensibility
+### Integration extensibility
 
-Enterprisegrade agents must interact with systems of record across the business.
+Enterprise-grade agents must interact with systems of record across the business.
 
-#### Integration extensibility enables an agent to:
+#### Integration extensibility enables an agent to
 
-Retrieve data from Dynamics 365, Microsoft 365, custom databases, or lineofbusiness applications.
+Retrieve data from Dynamics 365, Microsoft 365, custom databases, or line-of-business applications.
 
 Execute actions through Power Automate flows.
 
@@ -64,19 +64,19 @@ Interact with external APIs for specialized industry functions.
 
 Publish events or commands to other applications.
 
-#### When designing integrations, architects must consider:
+#### When designing integrations, architects must consider
 
-Data governance and leastprivilege access.
+Data governance and least-privilege access.
 
 Standardizing commands and interactions.
 
 Mapping business entities consistently across systems.
 
-### 4. Procode agent extensibility in Visual Studio Code
+### Pro-code agent extensibility in Visual Studio Code
 
 #### For advanced scenarios, agents can be developed or extended using Visual Studio Code.
 
-Procode extensibility supports:
+Pro-code extensibility supports:
 
 Creating custom agent logic and reusable agent components.
 
@@ -86,13 +86,15 @@ Implementing custom data transformations and orchestration logic.
 
 Source control integration for quality, testing, and lifecycle management.
 
-This model is ideal for organizations needing highcomplexity agent behaviors, deep integration patterns, or custom orchestration.
+This model is ideal for organizations needing high-complexity agent behaviors, deep integration patterns, or custom orchestration.
 
 ## Architectural patterns for extensible agents
 
 ### Pattern 1: Modular agent architecture
 
-#### A modular agent is structured using interchangeable components (instructions, skills, integrations, and tools).<br>Benefits include:
+#### A modular agent is structured using interchangeable components (instructions, skills, integrations, and tools).
+
+Benefits include:
 
 Faster updates and versioning.
 
@@ -102,7 +104,7 @@ Better isolation for compliance and secure design.
 
 #### Pattern 2: Multiagent collaboration pattern
 
-In complex environments, one agent shouldn't do everything.<br>Architects create multiple specialized agents that collaborate through defined protocols.
+In complex environments, one agent should not do everything. Architects create multiple specialized agents that collaborate through defined protocols.
 
 Examples:
 
@@ -112,13 +114,13 @@ A "workflow agent" executes system tasks.
 
 A "communication agent" drafts and formats content.
 
-#### Pattern 3: Domaincontext pattern
+#### Pattern 3: Domain-context pattern
 
 The agent adapts its reasoning based on the system, environment, or domain it is working within.
 
-A domaincontext pattern defines:
+A domain-context pattern defines:
 
-Domainspecific terminology.
+Domain-specific terminology.
 
 Business rules and constraints.
 
@@ -126,7 +128,7 @@ Access policies and boundaries.
 
 Expected outcomes for each domain area.
 
-### Architecting agent solutions: Principles and patterns
+### Architecting agent solutions: principles and patterns
 
 Microsoft has developed the Architecting agent solutions content that provides framework which provides essential principles and patterns for building secure, reliable agents. 
 
@@ -142,7 +144,7 @@ Microsoft has developed the Architecting agent solutions content that provides f
 
 **Aligns standards** by standardizing terminology and evaluation criteria for Copilot and agent solutions organization-wide.
 
-#### This framework covers:
+#### This framework covers
 
 - [Fit for purpose](/microsoft-copilot-studio/guidance/architecture/determine-fit-for-purpose)
 - [Operability](/microsoft-copilot-studio/guidance/architecture/determine-operability)
@@ -152,9 +154,9 @@ This framework does not cover content already addressed by established standards
 
 For more information see the following principles and patterns for architecting agent solutions: [https://learn.microsoft.com/microsoft-copilot-studio/guidance/architecture/](/microsoft-copilot-studio/guidance/architecture/) 
 
-## Professional visuals (textbased for Word)
+## Professional visuals (text-based for Word)
 
-### Visual A — Extensibility Layers Model
+### Visual A — Extensibility layers model
 
 +---------------------------------------+
 
@@ -174,7 +176,7 @@ For more information see the following principles and patterns for architecting 
 
 +---------------------------------------+
 
-### Visual B — Modular Agent Architecture
+### Visual B — Modular agent architecture
 
 Agent Core Instruction Set
 
@@ -194,7 +196,7 @@ Agent Core Instruction Set
 
         +-- Pro-Code Extensions (VS Code)
 
-### Visual C — Agent Interaction Flow
+### Visual C — Agent interaction flow
 
 User Request
 

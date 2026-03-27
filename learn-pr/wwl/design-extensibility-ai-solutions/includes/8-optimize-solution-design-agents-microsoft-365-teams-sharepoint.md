@@ -1,6 +1,6 @@
 ## Overview
 
-Microsoft 365 now supports SharePoint and Teamsintegrated agents built through Copilot Studio. These agents can retrieve content from SharePoint, automate sitelevel tasks, answer organizational questions, and participate in Teams conversations. Optimizing solution design requires understanding how these agents work, how they use Microsoft 365 data, and how to architect them for reliability, governance, and business value.
+Microsoft 365 now supports SharePoint and Teams-integrated agents built through Copilot Studio. These agents can retrieve content from SharePoint, automate site-level tasks, answer organizational questions, and participate in Teams conversations. Optimizing solution design requires understanding how these agents work, how they use Microsoft 365 data, and how to architect them for reliability, governance, and business value.
 
 This unit equips solution architects to design, deploy, and optimize Microsoft 365 agents that operate across Teams and SharePoint environments.
 
@@ -14,9 +14,9 @@ Optimize agent behavior using Microsoft 365 grounding and permissions
 
 Apply governance and lifecycle management best practices
 
-Evaluate solution patterns for enterprisegrade Teams and SharePoint automation
+Evaluate solution patterns for enterprise-grade Teams and SharePoint automation
 
-## 1. Understanding Microsoft 365 Agents in Teams and SharePoint
+## Understanding Microsoft 365 agents in Teams and SharePoint
 
 Microsoft 365 agents built in Copilot Studio can:
 
@@ -32,13 +32,13 @@ Provide contextual answers using Microsoft 365 data
 
 Retrieve content from sites, lists, and libraries
 
-Answer sitespecific questions
+Answer site-specific questions
 
 Support site owners with content management tasks
 
 Provide contextual help based on site structure
 
-### C. Use Microsoft 365 Grounding
+### C. Use Microsoft 365 grounding
 
 Agents automatically:
 
@@ -50,7 +50,7 @@ Provide grounded answers based on enterprise content
 
 This ensures accuracy, security, and compliance.
 
-## 2. Designing SharePointIntegrated Agents
+## Designing SharePoint-integrated agents
 
 Based on the SharePoint agent creation guidance, solution architects should design agents that:
 
@@ -70,7 +70,7 @@ Policies and procedures
 
 Wiki content
 
-### B. Support SiteLevel Scenarios
+### B. Support site-level scenarios
 
 Examples:
 
@@ -92,7 +92,7 @@ Uses that site's content as its primary grounding source
 
 Adapts responses to the site's structure
 
-### D. Provide Authoring and Management Assistance
+### D. Provide authoring and management assistance
 
 Agents can help site owners:
 
@@ -104,7 +104,7 @@ Improve accessibility
 
 Recommend site organization improvements
 
-## 3. Designing TeamsIntegrated Agents
+## Designing Teams-integrated agents
 
 Teams agents support:
 
@@ -116,7 +116,7 @@ Provide summaries, insights, and recommendations
 
 Trigger workflows based on user messages
 
-### B. MultiUser Collaboration
+### B. Multi-user collaboration
 
 Agents can:
 
@@ -136,7 +136,7 @@ Examples:
 
 "Find the latest project document in SharePoint."
 
-## 4. Optimizing Solution Design Across Microsoft 365
+## Optimizing solution design across Microsoft 365
 
 To optimize solution design, architects should focus on:
 
@@ -144,13 +144,13 @@ To optimize solution design, architects should focus on:
 
 Use SharePoint sites as primary knowledge sources
 
-Use Microsoft Graph for crosstenant retrieval
+Use Microsoft Graph for cross-tenant retrieval
 
-Ensure content is wellstructured and tagged
+Ensure content is well-structured and tagged
 
 ### B. Permissions & Security
 
-#### Agents inherit user permissions:
+#### Agents inherit user permissions
 
 They cannot access content the user cannot
 
@@ -160,7 +160,7 @@ They require proper app registration and consent
 
 ### C. Prompt & Behavior Design
 
-#### Agents should:
+#### Agents should
 
 Provide concise, contextual answers
 
@@ -178,7 +178,7 @@ Periodic content review for SharePoint grounding
 
 Alignment with AI CoE governance
 
-## 5. Solution Patterns for Microsoft 365 Agents
+## Solution patterns for Microsoft 365 agents
 
 ### Pattern 1 — SharePoint Knowledge Assistant
 
@@ -222,7 +222,7 @@ Suggest improvements
 
 Draft pages and content
 
-## 6. Professional Visuals (TextBased)
+## Professional visuals (text-based)
 
 ### Visual 1 — Microsoft 365 Agent Architecture
 

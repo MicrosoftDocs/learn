@@ -1,10 +1,10 @@
-### Design Extensibility of AI Solutions — Summary and Key Takeaways
+### Design extensibility of AI solutions — Summary and key takeaways
 
 Module 6 introduces solution architects to the principles and best practices for designing extensible AI solutions in enterprise environments, specifically leveraging Microsoft platforms. The module covers the use of custom models with Microsoft Foundry, agent design and operationalization in Microsoft 365 Copilot, extensibility strategies in Copilot Studio, and advanced integration using the Model Context Protocol (MCP). It emphasizes the importance of scalability, security, compliance, and adaptability in architecting AI systems that address unique organizational needs.
 
-### Key Takeaways:
+### Key takeaways
 
-#### 1. Custom Models in Microsoft Foundry
+#### Custom models in Microsoft Foundry
 
    - Custom models are essential for scenarios requiring domain-specific reasoning, compliance, data sovereignty, unique workflows, and cost optimization.
 
@@ -14,7 +14,7 @@ Module 6 introduces solution architects to the principles and best practices for
 
    - Operationalizing custom models requires robust monitoring, governance, versioning, and deployment automation.
 
-#### 2. Designing Agents in Microsoft 365 Copilot
+#### Designing agents in Microsoft 365 Copilot
 
    - Copilot agents are modular, instruction-driven components that automate tasks, retrieve information, and collaborate within Microsoft 365 apps.
 
@@ -24,7 +24,7 @@ Module 6 introduces solution architects to the principles and best practices for
 
    - Lifecycle management includes monitoring agent quality, updating instructions, enforcing access control, and versioning.
 
-#### 3. Agent Extensibility in Copilot Studio
+#### Agent extensibility in Copilot Studio
 
    - Extensibility is implemented at four layers: instruction-level, skills/capabilities, integration, and pro-code customization via Visual Studio Code.
 
@@ -32,10 +32,10 @@ Module 6 introduces solution architects to the principles and best practices for
 
    - Multi-agent collaboration and domain-context patterns allow agents to specialize and adapt to different business environments.
 
-#### 4. Model Context Protocol (MCP) in Copilot Studio
+#### Model Context Protocol (MCP) in Copilot Studio
 
    - MCP provides a standardized contract for agents to retrieve and interpret structured business context, ensuring consistent reasoning and compliance.
 
    - MCP is particularly valuable for Dynamics 365 Finance & Operations scenarios, enabling agents to access business entities, workflows, and domain models.
 
-   - MCP-enabled agents improve accuracy, reduce hallucinations, enhance auditability, and
+   - MCP-enabled agents improve accuracy, reduce incorrect information, enhance auditability, and

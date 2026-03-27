@@ -2,11 +2,11 @@
 
 This unit provides solution architects with expert guidance for designing agent behaviors in Copilot Studio. It explores how agents interpret instructions, reason through tasks, respond in natural language, and operate in voice mode through interactive voice response (IVR). You will learn how to configure behavioral controls, apply deep reasoning models for complex scenarios, and design conversational patterns that improve accuracy, trust, and user satisfaction across enterprise workloads.
 
-Copilot Studio offers a flexible architecture that enables agents to use domain knowledge, grounded instructions, actions, and tools to accomplish tasks. By understanding the behavioral layers—such as prompt design, reasoning depth, conversational flow, and voice interaction—you can create consistent, responsible, and highperforming agents that scale across Microsoft 365, Dynamics 365, and lineofbusiness applications.
+Copilot Studio offers a flexible architecture that enables agents to use domain knowledge, grounded instructions, actions, and tools to accomplish tasks. By understanding the behavioral layers—such as prompt design, reasoning depth, conversational flow, and voice interaction—you can create consistent, responsible, and high-performing agents that scale across Microsoft 365, Dynamics 365, and line-of-business applications.
 
-## Designing Agent Behaviors
+## Designing agent behaviors
 
-### 1. Behavior Foundations
+### Behavior foundations
 
 #### Agent behavior is shaped by four main components:
 
@@ -18,7 +18,7 @@ Copilot Studio offers a flexible architecture that enables agents to use domain 
 
 **Policies and Constraints** - Ensure adherence to compliance, privacy boundaries, and responsible AI principles.
 
-Architects ensure these elements form a consistent behavioral framework that avoids hallucination, enforces policy boundaries, and maintains predictable outputs.
+Architects ensure these elements form a consistent behavioral framework that avoids incorrect information, enforces policy boundaries, and maintains predictable outputs.
 
 #### Behavior Design Principles
 
@@ -30,11 +30,11 @@ Define escalation patterns.
 
 Apply formatting rules for responses.
 
-Include business logic constraints and errorhandling expectations.
+Include business logic constraints and error-handling expectations.
 
-**Reasoning Models and Deep Reasoning**
+**Reasoning models and deep reasoning**
 
-## 2. Standard vs. Deep Reasoning
+## Standard vs. deep reasoning
 
 Copilot Studio supports multiple reasoning modes:
 
@@ -50,13 +50,13 @@ Simple calculations
 
 Basic workflow assistance
 
-This mode provides fast responses and lower compute usage, suitable for highvolume use cases.
+This mode provides fast responses and lower compute usage, suitable for high-volume use cases.
 
 ### Deep Reasoning (Preview)
 
 Used for:
 
-Multistep tasks
+**Multi-step tasks**
 
 Complex business rules
 
@@ -66,7 +66,7 @@ Structured decision trees
 
 Scenario planning
 
-Evaluating constraints and tradeoffs
+Evaluating constraints and trade-offs
 
 Deep reasoning allows agents to think through problems in structured steps, validate assumptions, and generate more accurate responses in areas such as finance, compliance, engineering, operations, and analytics.
 
@@ -74,9 +74,9 @@ Deep reasoning allows agents to think through problems in structured steps, vali
 
 Use deep reasoning when your solution requires:
 
-Highprecision logic
+High-precision logic
 
-Multistage evaluation
+Multi-stage evaluation
 
 Recommendations based on historical data
 
@@ -84,21 +84,21 @@ Tasks requiring constraints and validation logic
 
 Advanced problem decomposition
 
-**Designing Instruction Sets for Strong Reasoning**
+**Designing instruction sets for strong reasoning**
 
-## 3. Instruction Layer Patterns
+## Instruction layer patterns
 
 ### Agents rely heavily on their instruction layer to deliver predictable results. Solution architects must design instructions that are:
 
-**Taskspecific** - What the agent must accomplish.
+**Task-specific** - What the agent must accomplish.
 
-**Rolealigned** - Defines who the agent is acting as.
+**Role-aligned** - Defines who the agent is acting as.
 
-**Contextaware** - Includes business goals, policies, and constraints.
+**Context-aware** - Includes business goals, policies, and constraints.
 
 **Structured** - Defines required output format.
 
-**Guardrailcontrolled** - Prevents unwanted or unsafe behaviors.
+**Guardrail-controlled** - Prevents unwanted or unsafe behaviors.
 
 ### Recommended Instruction Structure
 
@@ -116,11 +116,11 @@ Advanced problem decomposition
 
 **Escalation conditions** - When human involvement is required
 
-**Voice Mode and Interactive Voice Response (IVR)**
+**Voice mode and interactive voice response (IVR)**
 
-## 4. Designing Agents for Voice Interactions
+## Designing agents for voice interactions
 
-Copilot Studio allows agents to support **voicebased interactions**, enabling handsfree workflows and natural communication channels.
+Copilot Studio allows agents to support **voice-based interactions**, enabling hands-free workflows and natural communication channels.
 
 ### Voice Mode Use Cases
 
@@ -140,7 +140,7 @@ HR or IT selfservice
 
 Use short, clear phrasing
 
-Avoid long multisentence responses
+Avoid long multi-sentence responses
 
 Provide confirmation steps
 
@@ -160,11 +160,11 @@ Agent executes the action
 
 Agent provides concise spoken output
 
-Because voice relies on realtime interaction, architects should design behavior models that prioritize responsiveness, fallback handling, and userfriendly error messages.
+Because voice relies on real-time interaction, architects should design behavior models that prioritize responsiveness, fallback handling, and user-friendly error messages.
 
-**Architectural Model for Agent Behaviors**
+**Architectural model for agent behaviors**
 
-## 5. TextBased Visual: Agent Behavior Architecture
+## Text-based visual: Agent behavior architecture
 
 ### Visual A — Agent Behavior Stack
 
@@ -198,11 +198,11 @@ Because voice relies on realtime interaction, architects should design behavior 
 
 +------------------------------------------------------+
 
-**Design Patterns for HighQuality Agent Behavior**
+**Design patterns for high-quality agent behavior**
 
-## 6. Key Behavior Patterns
+## Key behavior patterns
 
-### Pattern 1 — StepByStep Reasoning
+### Pattern 1 — Step-by-step reasoning
 
 Break tasks into steps to improve accuracy.
 
