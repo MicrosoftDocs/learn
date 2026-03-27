@@ -54,6 +54,10 @@ For `/generate-sql`, `/question`, and optionally `/fix`, include additional info
 - `/question what types of security are supported for this warehouse?`
 - `/fix using CTAS instead of ALTER TABLE`
 
+## Conversation context and history
+
+The Copilot chat pane retains context across prompts within the same session. This means follow-up messages can reference earlier queries — for example, you can generate a query with one prompt and then refine it with a follow-up like `/fix using CTAS instead of ALTER TABLE` without repeating the full context. This multi-turn interaction improves Copilot's response accuracy and makes iterative query development faster.
+
 ## Summary
 
 The Copilot chat pane in Fabric's Data Warehouse can generate SQL queries, help fix errors, and support learning about data warehousing. By using natural language and the available commands, you can perform common tasks from one interface.
