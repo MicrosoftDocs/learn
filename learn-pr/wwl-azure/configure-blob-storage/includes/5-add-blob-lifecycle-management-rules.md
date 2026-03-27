@@ -1,6 +1,6 @@
 Every data set has a unique lifecycle. Early in the lifecycle, users tend to access some of the data in the set, but not all of the data. As the data set ages, access to all of the data in the set tends to dramatically reduce. Some data set stays idle in the cloud and is rarely accessed. Some data expires within a few days or months after creation. Other data is actively read and modified throughout the data set lifetime.
 
-Azure Blob Storage supports [lifecycle management](/azure/storage/blobs/lifecycle-management-policy-configure) for data sets. It offers a rich rule-based policy for GPv2 and Blob Storage accounts. You can use lifecycle policy rules to transition your data to the appropriate access tiers, and set expiration times for the end of a data set's lifecycle.
+Azure Blob Storage supports [lifecycle management](/azure/storage/blobs/lifecycle-management-policy-configure) for data sets. It offers a rich rule-based policy for GPv2 accounts and Premium block blob accounts. Legacy Blob Storage accounts are also supported, but GPv2 is recommended for new deployments. You can use lifecycle policy rules to transition your data to the appropriate access tiers, and set expiration times for the end of a data set's lifecycle.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=ce48b339-bc3a-412a-bf97-fb8581084431]
 
@@ -8,9 +8,11 @@ Azure Blob Storage supports [lifecycle management](/azure/storage/blobs/lifecycl
 
 You can use Azure Blob Storage lifecycle management policy rules to accomplish several tasks.
 
-- Transition blobs to a cooler storage tier (Hot to Cool, Hot to Archive, Cool to Archive) to optimize for performance and cost.
+- Transition blobs to a cooler storage tier (Hot to Cool, Hot to Cold, Hot to Archive, Cool to Cold, Cool to Archive, Cold to Archive) to optimize for performance and cost.
 
 - Delete current versions of a blob, previous versions of a blob, or blob snapshots at the end of their lifecycles.
+
+- Automatically transition blobs from Cool back to Hot when accessed. This setting optimizes for unpredictable access patterns without early deletion charges.
 
 - Apply rules to an entire storage account, to select containers, or to a subset of blobs using name prefixes or blob index tags as filters.
 

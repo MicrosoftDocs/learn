@@ -11,7 +11,7 @@ Think of the process as a cycle of **prompt → output → validation → refine
 > [!div class="mx-imgBorder"]
 > [![Diagram showing the process as a cycle.](../media/prompt-cycle.png)](../media/prompt-cycle.png#lightbox)
 
-**Data ingestion** is the starting point. Without data, there is nothing to transform. You might begin by generating sample records to experiment with transformations. Currently Copilot can generate sample tables, but initiating ingestion directly from an external data source through a prompt is not yet supported. Here's an example prompt:
+**Data ingestion** is the starting point. Without data, there is nothing to transform. You might begin by generating sample records to experiment with transformations. Copilot can generate sample tables directly, and as a Preview capability, Copilot in the **Get Data** wizard now also supports ingesting recently used tables using natural language — you can describe filters and transformations before loading the data. Here's an example prompt for generating sample data:
 
 ```copilot-prompt
 Create a new query with 50 patient records including patient-id, age, gender, and satisfaction-score.
@@ -65,9 +65,15 @@ The VisitDateTime field didn’t parse correctly—recreate it using the format 
 
 Copilot not only executes transformations; it also explains the underlying Mashup (M) code. This transparency builds confidence by showing what happens under the hood, offers a gradual path to learn query syntax while still working in natural language, and promotes reflection as you compare your intent with the logic it generates.
 
-```copilot-prompt
-Describe this query
-```
+There are two levels of explanation available:
+
+- **Explain this query**: Get a plain-language description of the full query, including all applied steps. Trigger this from the Copilot pane or by right-clicking a query in the Queries pane and selecting **Describe**.
+
+  ```copilot-prompt
+  Describe this query
+  ```
+
+- **Explain this step**: Get an explanation for a single transformation step. Right-click any step in the **Applied Steps** list and select **Explain**. This is particularly useful when you want to understand one transformation in isolation rather than parsing the entire M expression at once.
 
 ## Best practices for working with Copilot for Dataflow Gen2
 
