@@ -7,7 +7,9 @@ Next, make sure you have a warehouse created in your Fabric workspace. In this l
 
 ## How to use Copilot code completion
 
-Start typing your query in the SQL editor, and Copilot provides real-time suggestions as dimmed ghost text. You can accept a suggestion by pressing `Tab` or dismiss it by continuing to type. If you prefer to accept only part of a suggestion, use the `Ctrl+Right` shortcut (`Cmd+Right` on macOS) to accept the next word. Copilot also offers alternative suggestions for the same input, which you can preview by hovering over the suggestion and selecting the best fit.
+Before you start, verify that the **Show Copilot completions** setting is enabled. In your warehouse **Settings**, select the **Copilot** pane and confirm the option is turned on. You can also check the status bar at the bottom of the query editor — it shows whether completions are active at a glance.
+
+With completions enabled, start typing your query in the SQL editor, and Copilot provides real-time suggestions as dimmed ghost text. You can accept a suggestion by pressing `Tab` or dismiss it by continuing to type. If you prefer to accept only part of a suggestion, use the `Ctrl+Right` shortcut (`Cmd+Right` on macOS) to accept the next word. Copilot also offers alternative suggestions for the same input, which you can preview by hovering over the suggestion and selecting the best fit.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Fabric Data Warehouse Query Editor with Copilot Code completion.](../media/code-completion.png)](../media/code-completion.png#lightbox)
