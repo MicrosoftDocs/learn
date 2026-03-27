@@ -12,59 +12,6 @@ Microsoft 365 agents are task oriented AI assistants that operate inside the Mic
 
 **Design principle:** Treat an agent like a product, not a prompt—ship with a backlog, guardrails, and metrics.
 
-## Architecture at a glance
-
-
-[User/Role]
-
-│
-
-▼
-
-[Entry point]
-
-(Microsoft 365 app, Copilot Chat, Teams)
-
-│
-
-▼
-
-[Orchestrator]
-
-— Plans steps, selects tools, maintains context —
-
-│ │ │
-
-│ │ │
-
-▼ ▼ ▼
-
-[Grounding data] [Tools/Skills] [Policies/Controls]
-
-(SharePoint, (Graph, Power (Identity, DLP,
-
-OneDrive, email, Automate, sensitivity labels,
-
-Meetings, wikis) Connectors) audit, approvals)
-
-│
-
-▼
-
-[Action & Output]
-
-(Document edits, workflows triggered, status updates)
-
-│
-
-▼
-
-[Review & Telemetry]
-
-(Human-in-the-loop, logs, KPIs, cost)
-
-Show more lines
-
 ## Readiness checklist (for solution architects)
 
 Use this preflight list before proposing or green-lighting an agent:
