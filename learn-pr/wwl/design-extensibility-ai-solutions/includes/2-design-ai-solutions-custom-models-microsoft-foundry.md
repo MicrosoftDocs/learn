@@ -53,13 +53,13 @@ Integration with Azure Kubernetes Service and Foundry runtime environments
 
 Solution architects should follow a structured, repeatable design approach to ensure models align with business objectives.
 
-### Step 1 — Define the business objectives
+### Step 1 Define the business objectives
 
 Identify measurable outcomes (accuracy goals, time-saved targets, cost-efficiency goals).
 
 Map objectives to use cases where custom models outperform standard copilots.
 
-### Step 2 — Assess data requirements
+### Step 2 Assess data requirements
 
 Evaluate available proprietary datasets.
 
@@ -67,7 +67,7 @@ Identify gaps in labeling, quality, diversity, or structure.
 
 Ensure governance policies allow data to be used in model training.
 
-### Step 3 — Select the custom model path
+### Step 3 Select the custom model path
 
 #### Typical options include
 
@@ -77,7 +77,7 @@ Ensure governance policies allow data to be used in model training.
 
 **Hybrid architectures**<br>Combining custom models with prebuilt copilots for augmented reasoning.
 
-### Step 4 — Integration with enterprise systems
+### Step 4 Integration with enterprise systems
 
 #### Custom models should integrate with
 
@@ -91,7 +91,7 @@ Azure AI Search and data stores
 
 Business process automation pipelines
 
-### Step 5 — Validation and evaluation
+### Step 5 Validation and evaluation
 
 #### Establish a rigorous testing plan
 
@@ -117,11 +117,7 @@ Modern AI systems require robust operational frameworks, especially with custom 
 
 **Deployment Automation (MLOps/GenAIOps)**<br>Automate validations, approval workflows, and environment-specific deployments.
 
-## Professional visuals (text-based)
-
-These visuals can be directly converted into diagrams for Word or PowerPoint.
-
-### Visual A — Custom model decision matrix
+### Custom model decision matrix
 
 Decision Factor             | Standard Copilot | Custom Model (Foundry)
 
@@ -138,34 +134,6 @@ Data confidentiality         | Medium           | Full control
 Workflow complexity          | Low/Medium       | High
 
 Inference cost optimization  | Moderate         | High (small language models)
-
-### Visual B — Custom model development lifecycle
-
-Business Goal → Data Collection → Data Preparation →
-
-Model Selection → Training/Fine-Tuning → Evaluation →
-
-Deployment → Monitoring & Optimization
-
-### Visual C — AI solution architecture (Foundry)
-
-User Request
-
-    ↓
-
-Foundry Agent Orchestration
-
-    ↓
-
-Custom Model Inference Engine
-
-    ↓
-
-Enterprise Data Connectors & Tools
-
-    ↓
-
-Business Outcome Returned to Application
 
 ## References
 

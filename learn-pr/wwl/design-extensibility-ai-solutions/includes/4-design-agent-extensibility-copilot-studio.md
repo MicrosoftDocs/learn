@@ -26,7 +26,7 @@ Instruction-level extensibility defines the behavior, tone, boundaries, and reas
 
 **Purpose** (why the agent exists).
 
-**Role and constraints** (what it is allowed and not allowed to do).
+**Role and constraints** (what it's allowed and not allowed to do).
 
 **Action patterns** (preferred workflows and decision points).
 
@@ -104,7 +104,7 @@ Better isolation for compliance and secure design.
 
 #### Pattern 2: Multiagent collaboration pattern
 
-In complex environments, one agent should not do everything. Architects create multiple specialized agents that collaborate through defined protocols.
+In complex environments, one agent shouldn't do everything. Architects create multiple specialized agents that collaborate through defined protocols.
 
 Examples:
 
@@ -116,7 +116,7 @@ A "communication agent" drafts and formats content.
 
 #### Pattern 3: Domain-context pattern
 
-The agent adapts its reasoning based on the system, environment, or domain it is working within.
+The agent adapts its reasoning based on the system, environment, or domain it's working within.
 
 A domain-context pattern defines:
 
@@ -150,75 +150,9 @@ Microsoft has developed the Architecting agent solutions content that provides f
 - [Operability](/microsoft-copilot-studio/guidance/architecture/determine-operability)
 - [Trust, traceability, and transparency](/microsoft-copilot-studio/guidance/architecture/determine-trust)
 
-This framework does not cover content already addressed by established standards such as [Azure Well-Architected Framework](/azure/well-architected/), [Power Platform Well-Architected](/power-platform/well-architected), [National Institute of Standards and Technology (NIST)](https://www.nist.gov/cyberframework), or other recognized security frameworks. 
+This framework doesn't cover content already addressed by established standards such as [Azure Well-Architected Framework](/azure/well-architected/), [Power Platform Well-Architected](/power-platform/well-architected), [National Institute of Standards and Technology (NIST)](https://www.nist.gov/cyberframework), or other recognized security frameworks. 
 
 For more information see the following principles and patterns for architecting agent solutions: [https://learn.microsoft.com/microsoft-copilot-studio/guidance/architecture/](/microsoft-copilot-studio/guidance/architecture/) 
-
-## Professional visuals (text-based for Word)
-
-### Visual A — Extensibility layers model
-
-+---------------------------------------+
-
-|      Instruction-Level Extensibility  |
-
-+---------------------------------------+
-
-|        Skills & Capability Layer      |
-
-+---------------------------------------+
-
-|         Integration Extensibility     |
-
-+---------------------------------------+
-
-|  Pro-Code Extensibility (VS Code)     |
-
-+---------------------------------------+
-
-### Visual B — Modular agent architecture
-
-Agent Core Instruction Set
-
-        |
-
-        +-- Skills Library
-
-        |
-
-        +-- Integration Connectors
-
-        |
-
-        +-- Domain Knowledge Packs
-
-        |
-
-        +-- Pro-Code Extensions (VS Code)
-
-### Visual C — Agent interaction flow
-
-User Request
-
-   ↓
-
-Agent Instruction Engine
-
-   ↓
-
-Skill / Tool Selection
-
-   ↓
-
-Integration or Knowledge Retrieval
-
-   ↓
-
-Response Generation + Controls
-
-   ↓
-
-Return to User
 
 ## References
 

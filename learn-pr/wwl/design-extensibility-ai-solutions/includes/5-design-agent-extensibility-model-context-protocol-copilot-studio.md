@@ -28,15 +28,15 @@ Agents must be designed with modular, layered instructions:
 
 #### Core components
 
-_Purpose statement_ — Clarifies primary function
+_Purpose statement_ Clarifies primary function
 
-_Role definition_ — Sets tone and perspective
+_Role definition_ Sets tone and perspective
 
-_Behavior rules_ — Compliance, safety, and guardrails
+_Behavior rules_ Compliance, safety, and guardrails
 
-_Context consumption logic_ — How MCP data is used
+_Context consumption logic_ How MCP data is used
 
-_Action boundaries_ — Defines approved capabilities
+_Action boundaries_ Defines approved capabilities
 
 ### 2.2 Context extensibility using MCP
 
@@ -62,7 +62,7 @@ Generate explanations aligned with business rules
 
 ## Integration patterns for MCP-enabled agents
 
-### Pattern A — Context-driven reasoning
+### Pattern A Context-driven reasoning
 
 Agents retrieve real-time MCP context to ensure responses reflect authoritative business rules.
 
@@ -74,11 +74,11 @@ Finance workflows
 
 Procurement and vendor mgmt scenarios
 
-### Pattern B — Workflow-integrated agents
+### Pattern B Workflow-integrated agents
 
 Agents augment workflows by using MCP to drive approvals, escalate exceptions, and summarize status.
 
-### Pattern C — Multi-agent collaboration via MCP
+### Pattern C Multi-agent collaboration via MCP
 
 Use MCP to standardize data each agent can reference, improving cross-domain collaboration (e.g., HR + Finance + Supply Chain AI processes).
 
@@ -95,68 +95,6 @@ Logging of agent decisions for auditability
 Agent instructions must enforce responsible AI behavior
 
 Business and IT ownership established through an AI CoE model
-
-## Professional visuals (text-based for Word copying)
-
-### Visual 1 — MCP Context Architecture
-
-Copilot Studio Agent
-
-       │
-
-       ▼
-
-Model Context Protocol Layer
-
-       │
-
-       ▼
-
-Dynamics 365 F&O Context Models
-
-(Entity Metadata · Business Rules · Taxonomies)
-
-       │
-
-       ▼
-
-Enterprise Data & Applications
-
-**Visual 2 — Extensibility Layer Model**
-
-[Instruction Layer]
-
-     ↓
-
-[Behavior & Guardrails]
-
-     ↓
-
-[Context Layer — MCP]
-
-     ↓
-
-[Integration Layer — Actions & Connectors]
-
-**Visual 3 — Agent Workflow with MCP**
-
-User Prompt
-
-   ↓
-
-Agent Instruction Engine
-
-   ↓
-
-MCP Context Retrieval
-
-   ↓
-
-Reasoning + Business Rule Alignment
-
-   ↓
-
-Action / Response Generation
 
 ## References
 

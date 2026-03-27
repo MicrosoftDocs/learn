@@ -86,7 +86,7 @@ Examples:
 
 When installed on a SharePoint site, the agent:
 
-Knows which site it is on
+Knows which site it's on
 
 Uses that site's content as its primary grounding source
 
@@ -180,7 +180,7 @@ Alignment with AI CoE governance
 
 ## Solution patterns for Microsoft 365 agents
 
-### Pattern 1 — SharePoint Knowledge Assistant
+### Pattern 1 SharePoint Knowledge Assistant
 
 #### Purpose:
 
@@ -190,7 +190,7 @@ Help users find documents
 
 Provide summaries and insights
 
-### Pattern 2 — Teams Project Assistant
+### Pattern 2 Teams Project Assistant
 
 #### Purpose:
 
@@ -202,7 +202,7 @@ Retrieve documents from SharePoint
 
 Automate task creation
 
-### Pattern 3 — Organizational Policy Assistant
+### Pattern 3 Organizational Policy Assistant
 
 #### Purpose:
 
@@ -212,7 +212,7 @@ Provide grounded answers
 
 Ensure compliance and accuracy
 
-### Pattern 4 — Site Owner Support Agent
+### Pattern 4 Site Owner Support Agent
 
 #### Purpose:
 
@@ -221,20 +221,6 @@ Help maintain SharePoint sites
 Suggest improvements
 
 Draft pages and content
-
-## Professional visuals (text-based)
-
-### Visual 1 — Microsoft 365 Agent Architecture
-
-User Request ↓ Teams or SharePoint Interface ↓ Copilot Studio Agent ↓ Microsoft Graph + SharePoint Content ↓ Grounded Response 
-
-### Visual 2 — SharePoint Agent Context Model
-
-Site Context → Site Content → Metadata → Permissions → Agent Response 
-
-### Visual 3 — Optimization Framework
-
-Grounding Strategy → Permissions → Prompt Design → Governance → Monitoring 
 
 ## References
 
