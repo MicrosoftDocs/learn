@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="Segoe UI, sans-serif" font-size="13">
+  <title>Contoso Complete Architecture</title>
+  <desc>Complete architecture showing lakehouse, warehouse, eventhouse, and ML lakehouse integrated through OneLake.</desc>
+
+  <!-- Background -->
+  <rect width="900" height="620" fill="#FAFAFA" rx="4"/>
+
+  <!-- TOP TIER: Data Sources -->
+  <text x="450" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#333">DATA SOURCES</text>
+
+  <!-- Azure SQL DB -->
+  <rect x="90" y="42" width="160" height="48" rx="8" fill="#E0E0E0" stroke="#999" stroke-width="1"/>
+  <text x="170" y="63" text-anchor="middle" fill="#333" font-size="12" font-weight="600">Azure SQL DB</text>
+  <text x="170" y="80" text-anchor="middle" fill="#0078D4" font-size="10" font-weight="600">Mirror</text>
+
+  <!-- Cosmos DB -->
+  <rect x="370" y="42" width="160" height="48" rx="8" fill="#E0E0E0" stroke="#999" stroke-width="1"/>
+  <text x="450" y="63" text-anchor="middle" fill="#333" font-size="12" font-weight="600">Cosmos DB</text>
+  <text x="450" y="80" text-anchor="middle" fill="#0078D4" font-size="10" font-weight="600">Change Feed</text>
+
+  <!-- POS Systems -->
+  <rect x="650" y="42" width="160" height="48" rx="8" fill="#E0E0E0" stroke="#999" stroke-width="1"/>
+  <text x="730" y="63" text-anchor="middle" fill="#333" font-size="12" font-weight="600">POS Systems</text>
+  <text x="730" y="80" text-anchor="middle" fill="#D97A00" font-size="10" font-weight="600">Streaming</text>
+
+  <!-- Dataflow: Sources → OneLake -->
+  <line x1="170" y1="96" x2="170" y2="155" stroke="#555" stroke-width="1.5"/>
+  <polyline points="165,149 170,156 175,149" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="450" y1="96" x2="450" y2="155" stroke="#555" stroke-width="1.5"/>
+  <polyline points="445,149 450,156 455,149" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="730" y1="96" x2="730" y2="155" stroke="#555" stroke-width="1.5"/>
+  <polyline points="725,149 730,156 735,149" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- MIDDLE TIER: OneLake Band (2x2 grid) -->
+  <rect x="30" y="160" width="840" height="280" rx="14" fill="#E3F2FD" stroke="#0078D4" stroke-width="2"/>
+  <text x="450" y="182" text-anchor="middle" font-size="14" font-weight="700" fill="#0078D4">OneLake</text>
+
+  <!-- === ROW 1: Engineering Lakehouse + Warehouse === -->
+
+  <!-- Engineering Lakehouse (teal) — x=160, w=200, center=260 -->
+  <rect x="160" y="195" width="200" height="80" rx="10" fill="#008080"/>
+  <text x="260" y="220" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">Engineering Lakehouse</text>
+  <text x="260" y="239" text-anchor="middle" fill="#B2DFDB" font-size="10">Ingest &amp; curate 5 TB/day</text>
+
+  <!-- Warehouse (purple) — x=540, w=200, center=640 -->
+  <rect x="540" y="195" width="200" height="80" rx="10" fill="#6B2FA0"/>
+  <text x="640" y="225" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">Warehouse</text>
+  <text x="640" y="244" text-anchor="middle" fill="#D8C0F0" font-size="10">Star schema &amp; T-SQL</text>
+  <text x="640" y="259" text-anchor="middle" fill="#D8C0F0" font-size="10">analytics</text>
+
+  <!-- Cross-DB Query: Engineering Lakehouse → Warehouse -->
+  <line x1="366" y1="235" x2="534" y2="235" stroke="#6B2FA0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polyline points="528,230 535,235 528,240" fill="none" stroke="#6B2FA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="450" y="228" text-anchor="middle" fill="#6B2FA0" font-size="8" font-weight="600">Cross-DB Query</text>
+
+  <!-- === ROW 2: Eventhouse + ML Lakehouse (80px gap between rows) === -->
+
+  <!-- Eventhouse (orange) — x=160, w=200, center=260 -->
+  <rect x="160" y="335" width="200" height="80" rx="10" fill="#D97A00"/>
+  <text x="260" y="365" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">Eventhouse</text>
+  <text x="260" y="384" text-anchor="middle" fill="#FFE0B2" font-size="10">Real-time POS events</text>
+  <text x="260" y="399" text-anchor="middle" fill="#FFE0B2" font-size="10">&amp; KQL queries</text>
+
+  <!-- ML Lakehouse (green) — x=540, w=200, center=640 -->
+  <rect x="540" y="335" width="200" height="80" rx="10" fill="#107C10"/>
+  <text x="640" y="358" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">ML Lakehouse</text>
+  <text x="640" y="377" text-anchor="middle" fill="#A5D6A7" font-size="10">Churn prediction &amp;</text>
+  <text x="640" y="392" text-anchor="middle" fill="#A5D6A7" font-size="10">recommendations</text>
+  <text x="640" y="407" text-anchor="middle" fill="#A5D6A7" font-size="9" font-style="italic">Shortcuts from Lakehouse, Warehouse</text>
+
+  <!-- Eventstream: Eventhouse → Engineering Lakehouse (straight vertical up) -->
+  <line x1="260" y1="329" x2="260" y2="281" stroke="#0078D4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polyline points="255,287 260,280 265,287" fill="none" stroke="#0078D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="270" y="308" text-anchor="start" fill="#0078D4" font-size="8" font-weight="600">Eventstream</text>
+
+  <!-- Shortcut: Warehouse → ML Lakehouse (straight vertical down) -->
+  <line x1="640" y1="281" x2="640" y2="329" stroke="#0078D4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polyline points="635,323 640,330 645,323" fill="none" stroke="#0078D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="630" y="308" text-anchor="end" fill="#0078D4" font-size="8" font-weight="600">Shortcut</text>
+
+  <!-- Shortcut: Engineering Lakehouse → ML Lakehouse (diagonal) -->
+  <line x1="340" y1="281" x2="556" y2="329" stroke="#0078D4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <!-- Rotated V-chevron matching the diagonal angle (~12.5°) -->
+  <polyline points="546,332 556,329 548,322" fill="none" stroke="#0078D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="448" y="298" text-anchor="middle" fill="#0078D4" font-size="8" font-weight="600">Shortcut</text>
+
+  <!-- BOTTOM TIER: Consumption -->
+  <text x="450" y="462" text-anchor="middle" font-size="13" font-weight="700" fill="#333">CONSUMPTION</text>
+
+  <!-- Power BI (Direct Lake) -->
+  <rect x="100" y="476" width="260" height="60" rx="10" fill="#F2C811" stroke="#D4A800" stroke-width="1"/>
+  <text x="230" y="504" text-anchor="middle" fill="#333" font-size="13" font-weight="600">Power BI (Direct Lake)</text>
+  <text x="230" y="522" text-anchor="middle" fill="#555" font-size="11">Executive dashboards &amp; reports</text>
+
+  <!-- Dataflow to Power BI -->
+  <line x1="230" y1="446" x2="230" y2="470" stroke="#555" stroke-width="1.5"/>
+  <polyline points="225,464 230,471 235,464" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Real-Time Dashboards (KQL) -->
+  <rect x="530" y="476" width="280" height="60" rx="10" fill="#AB5F00"/>
+  <circle cx="560" cy="506" r="10" fill="none" stroke="#FFF" stroke-width="1.5"/>
+  <path d="M 556,498 L 560,496 L 560,502" fill="#FFF"/>
+  <text x="680" y="504" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">Real-Time Dashboards</text>
+  <text x="680" y="522" text-anchor="middle" fill="#FFF" font-size="11">KQL-powered live monitoring</text>
+
+  <!-- Dataflow to Real-Time Dashboards -->
+  <line x1="670" y1="446" x2="670" y2="470" stroke="#555" stroke-width="1.5"/>
+  <polyline points="665,464 670,471 675,464" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Legend -->
+  <g transform="translate(30, 590)">
+    <line x1="0" y1="8" x2="22" y2="8" stroke="#555" stroke-width="1.5"/>
+    <polyline points="18,4 24,8 18,12" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="32" y="12" fill="#555" font-size="10">Dataflow</text>
+    <line x1="100" y1="8" x2="130" y2="8" stroke="#0078D4" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="138" y="12" fill="#555" font-size="10">Shortcut / Cross-DB Query</text>
+    <rect x="280" y="2" width="12" height="12" rx="2" fill="#008080"/>
+    <text x="298" y="12" fill="#555" font-size="10">Lakehouse</text>
+    <rect x="360" y="2" width="12" height="12" rx="2" fill="#6B2FA0"/>
+    <text x="378" y="12" fill="#555" font-size="10">Warehouse</text>
+    <rect x="450" y="2" width="12" height="12" rx="2" fill="#D97A00"/>
+    <text x="468" y="12" fill="#555" font-size="10">Eventhouse</text>
+    <rect x="540" y="2" width="12" height="12" rx="2" fill="#107C10"/>
+    <text x="558" y="12" fill="#555" font-size="10">ML Lakehouse</text>
+  </g>
+</svg>

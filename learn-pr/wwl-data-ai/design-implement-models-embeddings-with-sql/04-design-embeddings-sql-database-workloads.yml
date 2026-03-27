@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-models-embeddings-with-sql.design-embeddings-sql-database-workloads
+title: Design embeddings for SQL database workloads
+metadata:
+  title: Design embeddings for SQL database workloads
+  description: Design embeddings by selecting meaningful data, controlling input size, and defining chunking strategies.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/02/2026
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/04-design-embeddings-sql-database-workloads.md)]

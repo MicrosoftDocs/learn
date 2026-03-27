@@ -102,9 +102,6 @@ CALL dev_catalog.etl_schema.refresh_customer_summary(DATE '2024-01-15', :rows);
 
 Procedures support **IN** parameters for inputs, **OUT** parameters for outputs, and **INOUT** parameters that serve both purposes. The `SQL SECURITY INVOKER` clause specifies that the procedure runs with the permissions of the user calling it, ensuring proper access control.
 
-> [!NOTE]
-> The `CREATE PROCEDURE` and `CALL` statements are currently in preview.
-
 ## Modify catalog ownership and properties
 
 As your data organization evolves, you need to transfer ownership of catalogs or modify their properties. The `ALTER CATALOG` statement provides these capabilities, letting you change catalog owners, apply tags for metadata management, or enable predictive optimization.

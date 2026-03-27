@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instrument-app-opentelemetry.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "What standard does OpenTelemetry use to propagate trace context across service boundaries?"
+    choices:
+    - content: "OpenTracing B3 headers"
+      isCorrect: false
+      explanation: "B3 is a multiple-header propagation format from the Zipkin project, not the default standard used by OpenTelemetry."
+    - content: "W3C TraceContext using `traceparent` headers"
+      isCorrect: true
+      explanation: "OpenTelemetry uses the W3C TraceContext standard to propagate context through HTTP headers. The `traceparent` header carries the trace ID, parent span ID, and trace flags so receiving services can join the same distributed trace."
+    - content: "OpenCensus binary propagation"
+      isCorrect: false
+      explanation: "OpenCensus used a binary encoding format for propagating trace context, not an HTTP header standard. OpenTelemetry was formed from the merger of OpenCensus and OpenTracing, and it adopted the W3C TraceContext standard specifically to provide a vendor-neutral, interoperable HTTP header format."
+  - content: "When you configure the Azure Monitor connection string in a production environment, which approach is recommended?"
+    choices:
+    - content: "Embed it directly in source code using the code-based configuration option."
+      isCorrect: false
+      explanation: "Embedding credentials in source code is the least secure approach. Source code can be committed to version control or exposed in compiled binaries, making it unsuitable for production secrets."
+    - content: "Store it in a `config.py` settings file that is deployed alongside the application code."
+      isCorrect: false
+      explanation: "A Python settings file can be committed to version control and is deployed alongside application code, which risks exposing the connection string. Environment variables keep sensitive configuration out of source code and configuration files."
+    - content: "Set the `APPLICATIONINSIGHTS_CONNECTION_STRING` environment variable."
+      isCorrect: true
+      explanation: "The environment variable approach keeps credentials out of source code and configuration files, makes it easy to change per environment without code changes, and aligns with the principle of storing configuration separately from application code."
+  - content: "When using `tracer.start_as_current_span()` in Python and an unhandled exception propagates out of the `with` block, what does the OpenTelemetry SDK do automatically?"
+    choices:
+    - content: "Records the exception on the span and sets the span status to error."
+      isCorrect: true
+      explanation: "The Python SDK automatically catches exceptions that propagate out of a `start_as_current_span` context manager, records the exception details, and sets the span status to `StatusCode.ERROR`. This provides automatic error capture without requiring explicit exception handling code."
+    - content: "Suppresses the exception and marks the span as successful to avoid false alerts."
+      isCorrect: false
+      explanation: "The SDK doesn't suppress exceptions. Unhandled exceptions continue to propagate after being recorded on the span. Suppressing errors would hide failures from the calling code and make debugging harder."
+    - content: "Leaves the span status as unset and doesn't record any exception details."
+      isCorrect: false
+      explanation: "Leaving the span status unset would make a failed operation appear successful in Application Insights. The SDK specifically records the exception and sets the error status to ensure failures are visible in trace data without requiring manual error handling in every span."
+  - content: "A Python AI application creates a span using `tracer.start_as_current_span(\"CallLlmApi\", kind=SpanKind.CLIENT)`. In which Application Insights table does this span appear?"
+    choices:
+    - content: "`requests`"
+      isCorrect: false
+      explanation: "The `requests` table contains server spans (`SpanKind.SERVER`) and consumer spans (`SpanKind.CONSUMER`). Client spans don't appear in the `requests` table."
+    - content: "`traces`"
+      isCorrect: false
+      explanation: "The `traces` table contains log records emitted through Python's `logging` module or the OpenTelemetry logging API, not span data from custom tracers."
+    - content: "`dependencies`"
+      isCorrect: true
+      explanation: "Application Insights maps client spans (`SpanKind.CLIENT`), along with internal and producer spans, to the `dependencies` table. These represent outgoing calls from the service to external resources or APIs, such as calls to an LLM endpoint or embedding service."
+  - content: "Which field in Application Insights telemetry tables corresponds to the OpenTelemetry trace ID and enables correlation of all telemetry items in a distributed trace?"
+    choices:
+    - content: "`cloud_RoleName`"
+      isCorrect: false
+      explanation: "`cloud_RoleName` identifies the service that generated the telemetry, corresponding to the `service.name` resource attribute. It groups telemetry by service, not by trace."
+    - content: "`operation_Id`"
+      isCorrect: true
+      explanation: "The `operation_Id` field corresponds to the OpenTelemetry trace ID. It appears in the `requests`, `dependencies`, `traces`, and `exceptions` tables and links all telemetry items belonging to the same distributed trace together."
+    - content: "`id`"
+      isCorrect: false
+      explanation: "The `id` field corresponds to the span ID, which uniquely identifies a single span. It doesn't link all spans in a trace together the way `operation_Id` does."

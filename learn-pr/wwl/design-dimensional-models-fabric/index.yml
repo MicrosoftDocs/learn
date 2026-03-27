@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.design-dimensional-models-fabric
+metadata:
+  title: Design Dimensional Models for Analytics in Microsoft Fabric
+  description: "Learn dimensional schema types, fact and dimension table design, and slowly changing dimension patterns for analytics workloads in Microsoft Fabric."
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Design dimensional models for analytics in Microsoft Fabric
+summary: "Learn dimensional schema types, fact and dimension table design, and slowly changing dimension patterns for analytics workloads in Microsoft Fabric."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe dimensional schema types for analytics
+    - Design fact tables for business processes
+    - Design dimension tables for descriptive attributes
+    - Implement slowly changing dimension patterns
+prerequisites: |
+  - Understanding of relational database concepts and analytical data stores
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+subjects:
+  - data-modeling
+units:
+- learn.wwl.design-dimensional-models-fabric.introduction
+- learn.wwl.design-dimensional-models-fabric.describe-schema-types
+- learn.wwl.design-dimensional-models-fabric.design-fact-tables
+- learn.wwl.design-dimensional-models-fabric.design-dimension-tables
+- learn.wwl.design-dimensional-models-fabric.implement-slowly-changing-dimensions
+- learn.wwl.design-dimensional-models-fabric.exercise
+- learn.wwl.design-dimensional-models-fabric.knowledge-check
+- learn.wwl.design-dimensional-models-fabric.summary
+badge:
+  uid: learn.wwl.design-dimensional-models-fabric.badge

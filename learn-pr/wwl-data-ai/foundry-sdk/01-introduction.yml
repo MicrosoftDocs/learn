@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundry-sdk.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to the Microsoft Foundry SDK.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/01-introduction.md)]

@@ -1,80 +1,69 @@
-Microsoft Entra agents are designed to automate repetitive tasks, enhance security operations, and integrate seamlessly into existing workflows. For Security Operations Analysts, these agents can significantly reduce manual workloads, allowing teams to focus on strategic initiatives and complex problem-solving.
+Microsoft Entra agents can automate many identity and access management operations in your organization to help reduce manual workloads. These agents work seamlessly with Microsoft Security Copilot to automate repetitive tasks, provide suggestions, and help administrators focus on higher-value strategic work.
 
-The Conditional Access optimization agent, a Security Copilot Agent embedded in Microsoft Entra, ensures all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft's learnings. The agent provides the following functionality:
+Microsoft Entra agents analyze your identity environment, apply best practices, and take automated actions to improve your identity and access security posture and operational efficiency. They integrate directly with Microsoft Entra services, using your organization’s identity data and configuration to provide contextual, actionable insights.
 
-- Evaluates policies requiring multifactor authentication (MFA)
-- Enforces device based controls (device compliance, app protection policies, and Domain Joined Devices)
-- Blocks legacy authentication and device code flow.
+> [!NOTE]
+> The list of Security Copilot agents in Microsoft Entra is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Entra. Fo more information, refer to training that relates to Microsoft Entra.
 
-### Information about the agent and prerequisites
+### What are Microsoft Entra agents?
 
-The Conditional Access Optimization Agent, which is available in Microsoft Entra as part of the Copilot embedded experience, is characterized as follows:
+Microsoft Entra agents are AI-powered tools that operate in your organization’s identity environment to automate and optimize identity and access management tasks. The agents are grounded in the concepts and tasks for a specific product area, like Conditional Access. These agents can:
 
-- **Trigger**: The agent runs every 24 hours but can also run manually.
-- **Permissions**: The agent reviews your policy configuration but acts only with your approval of the suggestions.
-- **Identity**: The agent runs in the context of the administrator who configured the agent.
-- **Products**: You must have Microsoft Entra Conditional Access (at least Microsoft Entra ID P1). Device-based controls in Conditional Access require Microsoft Intune licenses. You must also have Security Copilot available and provisioned with security compute units (SCU). On average, each agent run consumes less than one SCU. 
-- **Plugins**: The Microsoft Entra is mandatory.
-- **Role-based access**: You must be assigned the Security Administrator or Global Administrator role during the preview. These roles also have access to Security Copilot by default.
+- **Automate routine tasks** - Handle time-consuming, repetitive identity and access management operations.
+- **Provide suggestions** - Analyze your environment and suggest improvements based on Microsoft best practices and Zero Trust principles.
+- **Operate autonomously** - Run on schedules or triggers to continuously monitor and optimize your identity infrastructure.
+- **Integrate seamlessly** - Work within your organization’s existing Microsoft Entra workflows.
+- **Learn and adapt** - Improve suggestions over time, based on your environment and feedback.
 
-### Getting started
+Each agent analyzes your current environment within the boundaries of its capabilities. If the agent identifies a gap, opportunity, or potential issue, it can take action on your behalf. Each agent provides the context, reasoning, and activity history for how it came up with the suggestion. Administrators can configure the agent to run automatically or trigger the agent to run manually.
 
-Follow these steps to configure and run the Conditional Access optimization agent:
+Because each agent performs a specific set of tasks, it needs a specific set of configurations to operate within the boundaries of that task. The administrator also needs certain Microsoft Entra roles to set up and manage the agent. Key configuration elements include:
 
-1. Go to agents - Sign in to the Microsoft Entra admin portal with at least a Security Administrator role, and from the Microsoft Entra home page, select **Go to agents** from the agent notification card.
-1. Available agents - The Security Copilot agents page, shows tiles for the available agents. The page currently only shows the Conditional Access Optimization Agent, but more agents are coming soon.
-1. Start Agent - In the Conditional Access Optimization Agent tile, select **View details**. If you have not previously run the agent, you'll see the option to **Start agent** to begin the agent's first run.
-1. Overview page - If you have previously run the agent, selecting view details, brings you to the Overview page. The Overview page shows you see most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.
-1. Policy details - Selecting a suggestion takes you to the policy details page where you can view the agent summary, user impact, policy details, make edits, and more.
-   1. Newly created policies are created in report-only mode. As a best practice, organizations should exclude their break-glass accounts from policy to avoid being locked out due to misconfiguration.
-   1. After administrators evaluate the policy settings using policy impact or report-only mode, they can move the Enable policy toggle from Report-only to On. Policies created by the agent are tagged with Conditional Access Optimization Agent in the Conditional Access policies pane.
+- **Agent identity**: A unique agent identity is created when the agent is turned on.
+- **Roles**: Specific Microsoft Entra built-in roles are needed to turn on, view, and interact with the agent. Not all roles can perform the same tasks with an agent.
+- **Permissions**: The agent identity is granted specific read and write permissions needed to perform its tasks. These permissions can’t be changed or removed.
 
-# [Go to agents](#tab/go-to-agents)
-:::image type="content" source="../media/conditional-access-agent-home-page.png" lightbox="../media/conditional-access-agent-home-page.png" alt-text="Screenshot of the Microsoft Entra home page that includes the agent notification tile.":::
+### Available Microsoft Entra agents
 
-# [Available agents](#tab/available-agents)
-:::image type="content" source="../media/conditional-access-agent-tile.png" lightbox="../media/conditional-access-agent-tile.png" alt-text="Screenshot of the Security Copilot agents page showing that lists available agents.":::
+The following agents are currently available for Microsoft Entra. Due to the fast pace at which these agents are released and updated, each agent might have features at various stages of availability.
 
-# [Start agent](#tab/start-agent)
-:::image type="content" source="../media/conditional-access-agent-view-details.png" lightbox="../media/conditional-access-agent-view-details.png" alt-text="Screenshot showing the Conditional Access Optimization Agent details page. From here, you can select start if you haven't previously run the agent.":::
+#### Conditional Access Optimization Agent
 
-# [Overview page](#tab/overview-page)
-:::image type="content" source="../media/conditional-access-agent-overview-page-v2.png" lightbox="../media/conditional-access-agent-overview-page-v2.png" alt-text="Screenshot showing the Conditional Access Optimization Agent overview page showing the most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.":::
+The [Conditional Access Optimization Agent](/entra/security-copilot/conditional-access-agent-optimization) ensures comprehensive user protection by analyzing your Conditional Access policies and recommending improvements. The agent evaluates your current policy configuration against Microsoft best practices and Zero Trust principles.
 
-# [Policy details](#tab/policy-details)
-:::image type="content" source="../media/conditional-access-agent-policy-details-page.png" lightbox="../media/conditional-access-agent-policy-details-page.png" alt-text="Screenshot showing the Conditional Access Optimization Agent policy details page.":::
+| Attribute | Description |
+|-----------|-------------|
+| **Identity** | A unique agent identity for authorization is created when the agent is turned on. The agent uses this identity to scan your tenant’s Conditional Access policies and configurations for gaps, overlap, and misconfigurations. |
+| **Licenses** | Microsoft Entra ID P1. |
+| **Plugins** | Microsoft Entra (mandatory). |
+| **Products** | Microsoft Entra Conditional Access. |
+| **Role-based access** | Security Administrator to configure the agent. Conditional Access Administrator to use the agent. |
+| **Trigger** | Runs every 24 hours or triggered manually. |
 
----
+#### Access Review Agent
 
-#### Settings
+The [Access Review Agent](/entra/id-governance/access-review-agent) with Microsoft Entra ID Governance empowers reviewers to make fast and accurate access decisions. It delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
 
-The agent is configured to run every 24 hours based on when it's initially configured. Toggling Trigger to off under the settings page of the agent and back on at a specific time reconfigures the agent to run at that time.
+| Attribute | Description |
+|-----------|-------------|
+| **Identity** | A unique agent identity for authorization is created when the agent is turned on. The agent uses this identity to scan your tenant for active access reviews, gather insights, and save its recommendations. Final decisions, submitted through the Microsoft Teams conversation, use the reviewer’s identity. |
+| **Licenses** | Microsoft Entra ID Governance or Microsoft Entra Suite. |
+| **Plugins** | Microsoft Entra (mandatory). |
+| **Products** | ID Governance Access Reviews. |
+| **Role-based access** | Both Identity Governance Administrator and Lifecycle Workflows Administrator are required to configure and use the agent. |
+| **Trigger** | Runs every 24 hours or triggered manually. |
 
-Use the checkboxes under Objects to specify what the agent should monitor when making policy recommendations. By default the agent looks for both new users and applications in your tenant over the previous 24 hour period.
+#### Identity Risk Management Agent (preview)
 
-The agent runs under the Identity and permissions of the user who enabled the agent in your tenant. Because of this requirement, you should avoid using an account that requires elevation like those that use Privileged Identity Management (PIM) for just-in-time elevation.
+The [Identity Risk Management Agent](/entra/id-protection/identity-risk-management-agent-get-started) in Microsoft Entra ID Protection helps administrators investigate potential risks, learn about potential effects, and take decisive action to protect their organization's critical assets.
 
-You can tailor policy to your needs using the optional Custom Instructions field. This allows you to provide a prompt to the agent as part of its execution. For example: "The user "Break Glass" should be excluded from policies created." When you save the custom instruction prompt Security Copilot will attempt to interpret and the results appear in the settings page.
+| Attribute | Description |
+|-----------|-------------|
+| **Identity** | Uses Microsoft Entra Agent ID for authorization. |
+| **Licenses** | Microsoft Entra Agent ID. |
+| **Plugins** | Microsoft Entra (mandatory). |
+| **Products** | Security Copilot and Microsoft Entra ID Protection. |
+| **Role-based access** | Security Administrator. |
+| **Trigger** | Runs every 24 hours, triggered manually, or continuous monitoring. |
 
-:::image type="content" source="../media/conditional-access-agent-settings-page.png" lightbox="../media/conditional-access-agent-settings-page.png" alt-text="Screenshot showing the Conditional Access Optimization Agent settings page.":::
-
-#### Feedback
-
-Use the Give Microsoft feedback button at the top of the agent window to provide feedback to Microsoft about the agent.
-
-Feedback ensures the agent continues to deliver high-quality, actionable insights tailored to your organization’s needs.
-
-#### Remove agent
-
-If you no longer wish to use the Conditional Access optimization agent, you can remove it using the Remove agent button at the top of the agent window.
-
-### Limitations
-
-While the Conditional Access optimization agent offers significant benefits, during the public preview it has some limitations:
-
-- During the preview, avoid using an account to set up the agent that requires role activation with Privileged Identity Management. Using an account that doesn't have standing permissions might cause authentication failures for the agent.
-- Once agents are started, they can't be stopped or paused. It might take a few minutes to run.
-- For policy consolidation, each agent run only looks at four similar policy pairs
-- The agent currently runs as the user who enables it.
-- In preview, you should only run the agent from the Microsoft Entra admin center.
 

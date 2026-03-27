@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b131aee6-923e-455a-afae-1be0692b5801]
+
 Reshaping data structure is a key part of building effective analytics solutions. **Denormalization**, **pivoting**, and **unpivoting** are transformation techniques that help you reorganize data between normalized and aggregated formats—each serving different analytical and modeling needs.
 
 In this unit, you learn how to flatten normalized tables for faster queries, rotate rows into columns for cross-tabular analysis, and reverse that process when you need to normalize wide datasets.
@@ -166,10 +168,10 @@ SELECT *
 FROM regional_targets
 UNPIVOT (
   target_amount FOR month IN (
-    jan AS 'January',
-    feb AS 'February',
-    mar AS 'March',
-    apr AS 'April'
+    jan AS `January`,
+    feb AS `February`,
+    mar AS `March`,
+    apr AS `April`
   )
 );
 ```

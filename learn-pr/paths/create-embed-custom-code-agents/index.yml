@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-embed-custom-code-agents
+metadata:
+  title: Develop Agents and Applications using Agentic Programming Tools
+  description: Learn how to develop applications using agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop or update apps using the GitHub Spec Kit, and how to create AI-enabled apps with embedded agents using the GitHub Copilot SDK.
+  ms.date: 03/05/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Develop agents and applications using agentic programming tools
+prerequisites: |
+  -   An active subscription for GitHub Copilot is required for either a personal GitHub account or a GitHub account managed by an organization or enterprise.
+  -   One or more years of code development experience is recommended.
+  -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
+summary: |
+  Learn how to develop applications using agentic programming tools and techniques. This training covers how to configure custom agents in the development environment, how to develop or update apps using the GitHub Spec Kit, and how to create AI-enabled apps with embedded agents using the GitHub Copilot SDK.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- app-development
+- productivity
+modules:
+- learn.wwl.configure-customize-github-copilot-visual-studio-code
+- learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro
+- learn.spec-driven-development-github-spec-kit-microsoft-internal
+- learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk
+trophy:
+  uid: learn.wwl.create-embed-custom-code-agents.trophy

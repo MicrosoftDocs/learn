@@ -12,9 +12,11 @@ After planning is complete, you can create the new AD DS forest by using new dom
 
 To support a phased migration that allows users to access resources in the source and destination, you must configure a forest trust. This allows users in the source forest to access resources migrated to the target forest. It also allows users migrated to the target forest to access resources in the source forest.
 
-After a user is migrated to the target forest, the sIDHistory attribute is used to maintain access to resources in the source forest. The sIDHistory attribute on the migrated user is updated to include the security identifier (SID) of the source user. This allows the migrated user to access resources in the source forest to which the source user had been assigned access. Populating sIDHistory allows the new migrated user to impersonate the source user for security purposes.
+After a user is migrated to the target forest, the sIDHistory attribute is used to maintain access to resources in the source forest. The sIDHistory attribute on the migrated user is updated to include the security identifier (SID) of the source user. This allows the migrated user to access resources in the source forest to which the source user had been assigned access. Populating sIDHistory adds the source user's SID to the migrated user's security token, allowing the migrated user to retain access to resources previously granted to the source user.
 
-To use sIDHistory, you must disable SID filtering on the forest trust. SID filtering removes SIDs from the local domain that weren't issued by a domain controller in the local AD DS forest.
+To use sIDHistory, you must disable SID filtering on the forest trust. SID filtering is a security feature that removes SIDs from an incoming user's authentication token that don't originate from the trusted forest. Because the sIDHistory SIDs originate from the source forest but are carried in the migrated user's token from the target forest, SID filtering would strip them and prevent access to source forest resources.
 
 Password synchronization is another important part of migrating. To simplify the migration process for users, you should migrate passwords along with the user accounts.
 
+> [!NOTE]
+> Many organizations choose to engage a Microsoft Partner or third-party vendor to assist with complex forest migrations. These engagements can provide specialized expertise and tooling to help ensure a successful migration with minimal disruption to business operations.

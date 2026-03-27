@@ -24,8 +24,6 @@ Data analysts may query Azure SQL databases directly to create reports, though i
 ![Screen of an Azure Database for MariaDB, MySQL, and PostreSQL logos.](../media/azure-database.png) Azure includes managed services for popular open-source relational database systems, including:
 
 - **Azure Database for MySQL** - a simple-to-use open-source database management system that is commonly used in *Linux*, *Apache*, *MySQL*, and *PHP* (LAMP) stack apps.
-- **Azure Database for MariaDB** - a newer database management system, created by the original developers of MySQL. The database engine has since been rewritten and optimized to improve performance. MariaDB offers compatibility with Oracle Database (another popular commercial database management system).
-
 - **Azure Database for PostgreSQL** - a hybrid relational-object database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own non-relational properties.
 
 As with Azure SQL database systems, open-source relational databases are managed by database administrators to support transactional applications, and provide a data source for data engineers building pipelines for analytical solutions and data analysts creating reports.
@@ -58,8 +56,9 @@ Azure Data Factory is used by data engineers to build *extract*, *transform*, an
 - Data lakehouse analytics
 - Data warehouse analytics
 - Data Science and machine learning
-- Realtime analytics
+- Real-Time Intelligence
 - Data visualization
+- Databases (SQL database and Cosmos DB in Fabric)
 - Data governance and management
 - AI-powered insights
 

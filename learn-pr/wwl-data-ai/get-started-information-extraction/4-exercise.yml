@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-information-extraction.exercise
+title: Exercise - Get started with Content Understanding in Microsoft Foundry
+metadata:
+  title: Exercise - Get started with Content Understanding in Microsoft Foundry
+  description: Use Microsoft Foundry to extract information from content.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 02/21/2026
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/4-exercise.md)]
+

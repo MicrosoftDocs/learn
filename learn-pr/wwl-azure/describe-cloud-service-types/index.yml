@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-generated
 title: Describe cloud service types
 summary: This module covers the different cloud service types and shares some of the use cases and benefits aligned with each service type.
 abstract: |

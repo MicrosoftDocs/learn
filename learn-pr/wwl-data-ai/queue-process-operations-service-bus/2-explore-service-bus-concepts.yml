@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.queue-process-operations-service-bus.explore-service-bus-concepts
+title: Explore Azure Service Bus concepts and messaging in AI architectures
+metadata:
+  title: Explore Azure Service Bus Concepts and Messaging in AI Architectures
+  description: Explore Azure Service Bus concepts and messaging in AI architectures
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-explore-service-bus-concepts.md)]

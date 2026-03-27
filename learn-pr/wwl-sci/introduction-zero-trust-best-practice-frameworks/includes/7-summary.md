@@ -2,7 +2,7 @@ In this module, you learned about the concept of Zero Trust and the best practic
 
 You explored how best practices help you avoid common security antipatterns, and how cybersecurity architects integrate these practices into architecture, policy, and organizational processes. You learned that Zero Trust is a security strategy built on three guiding principles: verify explicitly, use least privilege access, and assume breach. These principles are applied across six technology pillars—identities, endpoints, data, applications, infrastructure, and network—tied together by visibility, automation, and orchestration.
 
-You also examined four key frameworks: the Cloud Adoption Framework (CAF) for guiding cloud adoption, the Azure Well-Architected Framework (WAF) for improving workload quality, the Microsoft Cybersecurity Reference Architectures (MCRA) for end-to-end security architecture, and the Microsoft cloud security benchmark (MCSB) for prescriptive security controls. You learned how the Zero Trust adoption framework provides a phased, business-driven approach to implementing Zero Trust, and how the Rapid Modernization Plan (RaMP) helps you prioritize quick wins.
+You also examined four key frameworks: the Cloud Adoption Framework (CAF) for guiding cloud adoption, the Azure Well-Architected Framework (WAF) for improving workload quality, the Microsoft Cybersecurity Reference Architectures (MCRA) for end-to-end security architecture, and the Microsoft cloud security benchmark (MCSB) for prescriptive security controls. You learned how the Zero Trust adoption framework provides a phased, business-driven approach to implementing Zero Trust.
 
 Finally, you explored how these frameworks relate to each other. They operate at different levels—from strategy and architecture to workload design and specific controls—and are designed to work together as a comprehensive system.
 
@@ -13,7 +13,7 @@ In this module, you learned how to:
 - Describe common security antipatterns and the role of best practices for cybersecurity architects.
 - Describe the concept of Zero Trust and its guiding principles.
 - Describe the purpose and scope of CAF, WAF, MCRA, and MCSB.
-- Describe the Zero Trust adoption framework and the approach to rapid modernization.
+- Describe the Zero Trust adoption framework.
 - Describe how the different best practice frameworks relate to each other.
 
 ## Learn more

@@ -20,3 +20,7 @@ Module 4: Post migration activities and troubleshooting guide
 - [Azure DevOps to GitHub migration guide](https://docs.github.com/en/enterprise-cloud@latest/migrations)
 - [GitHub Enterprise Importer documentation](https://docs.github.com/en/migrations/using-github-enterprise-importer)
 - [GitHub Well-Architected Framework](https://wellarchitected.github.com/)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

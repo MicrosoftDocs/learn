@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code.examine-benefits-customize-github-copilot
+title: "Examine the benefits of customizing GitHub Copilot"
+metadata:
+  title: "Examine the Benefits of Customizing GitHub Copilot"
+  description: "Examine the benefits of customizing GitHub Copilot."
+  ms.date: 02/25/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-examine-benefits-customize-github-copilot.md)]

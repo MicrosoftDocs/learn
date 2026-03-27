@@ -2,8 +2,8 @@
 uid: learn.wwl.operationalize-gen-ai-apps
 metadata:
   title: Operationalize generative AI applications (GenAIOps)
-  description: Learn how to develop, evaluate, optimize, and deploy generative AI applications (GenAIOps)
-  ms.date: 08/06/2025
+  description: Learn the full GenAIOps lifecycle for generative AI applications, from planning and prompt management to evaluation, automated testing, monitoring, and tracing in production.
+  ms.date: 02/23/2026
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
@@ -13,23 +13,28 @@ title: Operationalize generative AI applications (GenAIOps)
 prerequisites: |
   Before starting this learning path, you should be familiar with fundamental generative AI concepts and services in Azure. Consider completing the [Microsoft Azure AI Fundamentals: Generative AI](/training/paths/introduction-generative-ai/?azure-portal=true) learning path first.
 summary: |
-  To effectively scale generative Artificial Intelligence (AI) applications, you need to manage, deploy, and maintain GenAI apps to ensure their performance, reliability, and continuous improvement in real-world applications.
+  Learn how to operationalize generative AI applications using the complete GenAIOps lifecycle. This learning path covers planning and preparing GenAIOps solutions, managing prompts for agents with version control, evaluating and optimizing agents through structured experiments, automating evaluations with Microsoft Foundry and GitHub Actions, monitoring application performance and costs, and implementing distributed tracing to debug complex AI workflows.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 - ai-engineer
+- devops-engineer
 products:
-- ai-services
+- foundry-tools
+- microsoft-foundry
+- github
 subjects:
 - artificial-intelligence
 - machine-learning
 - natural-language-processing
+- devops
 modules:
 - learn.wwl.plan-prepare-genaiops
 - learn.wwl.prompt-versioning-genaiops
-- learn.evaluate-generative-ai-apps
+- learn.wwl.evaluate-optimize-agents
+- learn.wwl.automated-evaluation-genaiops
 - learn.wwl.monitor-generative-ai-app
 - learn.wwl.tracing-generative-ai-app
 trophy:

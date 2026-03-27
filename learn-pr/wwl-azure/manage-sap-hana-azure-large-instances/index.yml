@@ -4,8 +4,8 @@ metadata:
   title: Manage SAP HANA on Azure (Large Instances)
   description: This module explores methods to connect to, and manage, SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 12/08/2021
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.service: sap-on-azure
 title: Manage SAP HANA on Azure (Large Instances)
@@ -43,4 +43,4 @@ units:
 - learn.wwl.manage-sap-hana-azure-large-instances.summary
 badge:
   uid: learn.wwl.manage-sap-hana-azure-large-instances.badge
-
+

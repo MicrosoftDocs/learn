@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.explore-privileged-access-groups
+title: Scaling with PIM for Groups
+metadata:
+  title: Scaling with PIM for Groups
+  description: "Analyze when to use group-based just-in-time access over direct role assignments, and understand how PIM for Groups enforces access policy uniformly at scale."
+  ms.date: 03/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-explore-privileged-access-groups.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.exercise-integrate-ai-agent-github-copilot-sdk
+title: "Exercise - Integrate AI agents into apps using GitHub Copilot SDK"
+metadata:
+  title: "Exercise - Integrate AI Agents into Apps Using GitHub Copilot SDK"
+  description: "Exercise - Integrate AI agents into apps using GitHub Copilot SDK."
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/8-exercise-integrate-ai-agent-github-copilot-sdk.md)]

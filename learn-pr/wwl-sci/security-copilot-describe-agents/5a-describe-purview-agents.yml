@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.describe-purview-agents
+title: Describe the Security Copilot agents in Microsoft Purview
+metadata:
+  title: Describe the Security Copilot agents in Microsoft Purview
+  description: Describe the Security Copilot agents in Microsoft Purview.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 02/15/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/5a-describe-purview-agents.md)]

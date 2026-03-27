@@ -4,7 +4,7 @@ title: Choose column data types
 metadata:
   title: Choose Column Data Types
   description: Learn how to select appropriate column data types in Azure Databricks to ensure data quality, optimize storage, and improve query performance.
-  ms.date: 12/07/2025
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

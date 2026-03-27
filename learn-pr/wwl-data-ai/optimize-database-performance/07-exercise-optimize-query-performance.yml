@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-database-performance.exercise-optimize-query-performance
+title: "Exercise: Optimize query performance"
+metadata:
+  title: "Exercise: Optimize query performance"
+  description: Use execution plans, DMVs, and Query Store to identify and resolve performance issues in Azure SQL Database.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/07/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 45
+content: |
+  [!include[](includes/07-exercise-optimize-query-performance.md)]

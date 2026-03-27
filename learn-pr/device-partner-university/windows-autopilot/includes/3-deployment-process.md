@@ -10,13 +10,11 @@ To complete the registration, you need to:
 
 - Associate the device with an Azure tenant ID.
 
-### Customer-led registration
+### Registration methods
 
-If you're a partner, you can perform these steps on an end user's behalf using the [registration authorization process](/autopilot/registration-auth). If you're an end user, you can choose to register devices themselves by collecting the hardware identity from new or existing devices and uploading it manually.
+If you're a partner, you can perform these steps on an end user's behalf using the [registration authorization process](/autopilot/registration-auth). If you're an end user, you can choose to register devices yourself by collecting the hardware identity from new or existing devices and uploading it manually.
 
 If the devices meet [certain requirements](/autopilot/automatic-registration#requirements), they can also be configured for automatic registration with Windows Autopilot.
-
-### Registration methods
 
 To learn about the different methods used to register devices with Windows Autopilot, select from the following articles on Microsoft Docs:
 
@@ -30,7 +28,7 @@ To learn about the different methods used to register devices with Windows Autop
 
 ### Upload the hardware hash
 
-To identify a device with Windows Autopilot, the device's unique hardware hash must be captured and uploaded to the Windows Autopilot deployment service.
+To identify a device for use with Windows Autopilot, the device's unique hardware hash must be captured and uploaded to the Windows Autopilot deployment service.
 
 If you're an end user and you want to do this yourself, it's possible to identify a device with a [harvesting process](/autopilot/add-devices#collect-the-hardware-hash) that collects the device's hardware hash from within a running Windows installation.
 
@@ -54,7 +52,7 @@ The Windows Autopilot deployment service matches a device even if moderate chang
 
 - Details about when the ID was generated
 
-- Many other attributes that can be used to uniquely identify the device
+- Other attributes that contribute to uniquely identifying a device
 
 For more information about device IDs, check out the [device guidelines](/autopilot/autopilot-device-guidelines) and [add devices to a customer account](/partner-center/customers/autopilot) pages.
 
@@ -68,21 +66,17 @@ Let’s say you have a device that you don’t want to go through Windows Autopi
 
 ### Verify registration success
 
-You can verify if a device has successfully registered with the Windows Autopilot deployment service. Registered devices appear in the Intune admin center under one of the following paths:
+You can verify if a device has successfully registered with the Windows Autopilot deployment service. Registered devices appear in the Intune admin center under the following path:
 
 *Devices → Windows → Enrollment → (Windows Autopilot) Devices* or *Devices → Enrollment → Windows → (Windows Autopilot) Devices*
 
 ### Intune is NOT Autopilot
 
-Windows Autopilot devices aren't the same as Microsoft Intune devices listed under:
+Windows Autopilot registered devices aren't the same as Microsoft Intune managed devices listed under:
 
-*Devices > Windows | Windows devices* 
+*Devices > Windows | Windows devices*
 
-Windows Autopilot devices are added to the list of Windows devices only when both of these requirements are met:
-
-- The Windows Autopilot registration process is successful.
-
-- The device has gone through Out-Of-Box Experience provisioning and a licensed user has signed in on the device.
+Windows Autopilot registration is an assignment of a device to an Intune tenant with the intent to manage it with that tenant once provisioning is complete. Intune enrollment is actual active control and management of the device.
 
 ![A photograph of a young man working at a desk in an office on a laptop.](../media/working.png)
 
@@ -90,18 +84,21 @@ Windows Autopilot devices are added to the list of Windows devices only when bot
 
 That’s it! The device is now ready.
 
-When you power on your device, all you need to do is:
+When you power on your device, all the user needs to do is:
 
 - Connect the device to the internet.
 - Answer some quick setup questions.
 
-Windows Autopilot handles the rest by installing all the preconfigured apps and settings via the cloud.
+Windows Autopilot handles the rest by installing the preconfigured apps and settings via the cloud.
 
 ### Enrollment Status Page
 
-When a user signs into a device for the first time, the Enrollment Status Page (ESP) displays the device's configuration progress.
+When a user signs into a device for the first time during Windows Autopilot provisioning, the Enrollment Status Page (ESP) displays configuration progress.
 
 The ESP makes sure the device is in the expected state before the end user can access the desktop for the first time. It tracks the installation of applications, security policies, certificates, and network connections.
+
+> [!IMPORTANT]
+> The ESP is not used for the newer Windows Autopilot device preparation.
 
 [ESP and ESP profiles](/autopilot/enrollment-status)
 

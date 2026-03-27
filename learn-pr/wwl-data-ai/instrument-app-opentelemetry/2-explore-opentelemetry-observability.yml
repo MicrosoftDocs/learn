@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instrument-app-opentelemetry.explore-opentelemetry-observability
+title: Explore OpenTelemetry and its role in observability
+metadata:
+  title: Explore OpenTelemetry and Its Role in Observability
+  description: Explore OpenTelemetry and its role in observability
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-opentelemetry-observability.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-microsoft-365.design-configurations-operational-practices-microsoft-365
-title: Evaluate device management solutions that include Microsoft Intune
+title: Evaluate how Microsoft Intune protects and manages endpoints
 metadata:
-  title: Evaluate Device Management Solutions That Include Microsoft Intune
+  title: Evaluate How Microsoft Intune Protects and Manages Endpoints
   description: "Evaluate how Microsoft Intune addresses device management requirements, including MDM, MAM, endpoint security policies, compliance policies, and Conditional Access integration."
   ms.date: 02/09/2026
   author: ceperezb

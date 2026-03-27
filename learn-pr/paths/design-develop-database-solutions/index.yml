@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-develop-database-solutions
+metadata:
+  title: Design and develop database solutions
+  description: Learn to design and implement database objects, programmability objects, advanced T-SQL code, and AI-assisted tools for SQL Server, Azure SQL, and Microsoft Fabric.
+  ms.date: 02/27/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: learning-path
+title: Design and develop database solutions
+prerequisites: |
+  Before starting this learning path, you should have experience writing T-SQL queries, a basic understanding of database concepts such as tables, joins, and transactions, and familiarity with SQL Server, Azure SQL Database, or SQL databases in Microsoft Fabric.
+summary: |
+  Build database solutions across SQL Server, Azure SQL, and Microsoft Fabric. You learn to create well-structured database objects and indexes. You encapsulate business logic with stored procedures and functions. You write advanced T-SQL using techniques such as Common Table Expressions (CTE), window functions, and error handling. You also accelerate your development workflow with AI-assisted tools including GitHub Copilot and Fabric Copilot.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+- database-administrator
+- solution-architect
+products:
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- data-engineering
+modules:
+- learn.wwl.design-implement-database-objects
+- learn.wwl.implement-programmability-objects
+- learn.write-advanced-sql-code
+- learn.design-implement-sql-solutions-ai-assisted-tools
+trophy:
+  uid: learn.wwl.design-develop-database-solutions.badge

@@ -1,15 +1,15 @@
-As we've learned, Docker has several features for us to use. Here, we'll look at the benefits that Docker provides to our development and operations teams. We'll also look at a few scenarios where Docker might not be the best choice.
+As we learned, Docker has several features for us to use. In this unit, we look at the benefits that Docker provides to our development and operations teams. We also look at a few scenarios where Docker might not be the best choice.
 
-These aspects will help you decide if Docker is a good fit for your containerization strategy.
+These aspects help you decide if Docker is a good fit for your containerization strategy.
 
-Recall from earlier that there are a number of challenges our team faces as they develop and publish our order-tracking portal. They're looking for a solution to:
+Recall from earlier that there are many challenges our team faces as they develop and publish our order-tracking portal. They're looking for a solution to:
 
 - Manage our hosting environments with ease.
 - Guarantee continuity in how we deliver our software.
 - Ensure we make efficient use of server hardware.
 - Allow for the portability of our applications.
 
-Docker is a solution to these challenges. Let's have a look at all the benefits we've covered so far.
+Docker is a solution to these challenges. Let's have a look at all the benefits we covered so far.
 
 ## Docker benefits
 
@@ -21,7 +21,7 @@ Containers run without using a virtual machine (VM). As we learned, the containe
 
 :::image type="content" source="../media/5-efficient-use-hardware.svg" alt-text="Diagram contrasting VM resource use versus Docker resource use.":::
 
-Compared to a VM, we can see that a VM requires an OS installed to provide kernel functions to the running applications inside the VM. Keep in mind that the VM OS also requires disk space, memory, and CPU time. By removing the VM and the additional OS requirement, we can free resources on the host and use it for running other containers.
+Compared to a VM, we can see that a VM requires an OS installed to provide kernel functions to the running applications inside the VM. Keep in mind that the VM OS also requires disk space, memory, and CPU time. By removing the VM and the other OS requirement, we can free resources on the host and use it for running other containers.
 
 ### Container isolation
 
@@ -31,13 +31,13 @@ Let's compare this feature to using VMs.
 
 :::image type="content" source="../media/5-multiple-app-isolation.svg" alt-text="Diagram that shows a physical host running multiple VMs.":::
 
-Assume we have a physical host running two VMs. We have three applications that we want to run isolated from each other. We decide to deploy the first app onto VM1 and the second onto VM2 to separate the two apps from each other. If we now choose to install the third application, we'll need to install another VM to continue this pattern.
+Assume we have a physical host running two VMs. We have three applications that we want to run isolated from each other. We decide to deploy the first app onto VM1 and the second onto VM2 to separate the two apps from each other. If we now choose to install the third application, we need to install another VM to continue this pattern.
 
 ### Application portability
 
 Containers run almost everywhere: desktops, physical servers, VMs, and in the cloud. This runtime compatibility makes it easy to move containerized applications among different environments.
 
-Because containers are lightweight, they don't suffer from slow startup or shutdown times like VMs. This aspect makes redeployment and other deploy scenarios—such as scaling up or down—smooth and fast.
+Because containers are lightweight, they don't suffer from slow startup or shutdown times like VMs. This aspect makes redeployment and other deploy scenarios, like scaling up or scaling down, smooth and fast.
 
 ### Application delivery
 
@@ -61,13 +61,13 @@ For example, Azure container instances allow you to focus on designing and build
 
 ## When not to use Docker containers
 
-Docker containers provide many benefits, but keep in mind that containers may not fit all of your requirements. There are a few aspects to keep in mind.
+Docker containers provide many benefits, but keep in mind that containers might not fit all of your requirements. There are a few aspects to keep in mind.
 
 ### Security and virtualization
 
 Containers provide a level of isolation. However, containers share a single host OS kernel, which can be a single point of attack.
 
-Windows hosts provide an additional isolation model on which a purpose-built VM can be used to isolate the container at the hypervisor level. This mode is called Hyper-V isolation mode, and adds another layer of security between containers and container host.
+Windows hosts provide an extra isolation model on which a purpose-built VM can be used to isolate the container at the hypervisor level. This mode is called Hyper-V isolation mode, and adds another layer of security between containers and container host.
 
 We also need to take into account aspects such as storage and networks to make sure that we consider all security aspects. For example, all containers use the bridge network by default and can access each other via IP address.
 

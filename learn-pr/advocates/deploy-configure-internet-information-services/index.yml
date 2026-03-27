@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.devrel.deploy-configure-internet-information-services
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 03/23/2026
+  title: Deploy and Configure Internet Information Services
+  description: Learn to deploy and configure Internet Information Services on Windows Server.
+  ms.topic: module
+  ms.service: windows-server
+title: Deploy and configure Internet Information Services
+summary: Internet Information Services (IIS) is Windows Server and Client's built-in web server role for hosting websites and web applications. By completing this module, you'll have a solid foundation for configuring, administering, and validating an IIS installation on the latest Windows Server.
+abstract: |
+  In this module you learn:
+  -	The architectural components of IIS
+  -	How to install IIS on Windows Server
+  -	How to configure IIS to host websites
+prerequisites: |
+  -	Basic understanding of Windows Server and its roles and features
+  -	Familiarity with web servers and their purpose
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- windows-server
+units:
+- learn.devrel.deploy-configure-internet-information-services.introduction-internet-information-windows-server
+- learn.devrel.deploy-configure-internet-information-services.install-web-server-role
+- learn.devrel.deploy-configure-internet-information-services.initial-configure-validate
+- learn.devrel.deploy-configure-internet-information-services.knowledge-check
+- learn.devrel.deploy-configure-internet-information-services.summary
+badge:
+  uid: learn.devrel.deploy-configure-internet-information-services-badge

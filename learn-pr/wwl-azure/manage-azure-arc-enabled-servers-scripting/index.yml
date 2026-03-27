@@ -22,7 +22,7 @@ abstract: |
 
   -   Connect machines at scale by running PowerShell scripts with Configuration Manager
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-arc-module.svg
 levels:
 - intermediate
 roles:

@@ -4,7 +4,7 @@ title: Transform data with joins and set operators
 metadata:
   title: Transform Data With Joins and Set Operators
   description: Learn how to transform data in Azure Databricks using join, union, intersect, and except operators to combine and compare datasets.
-  ms.date: 12/07/2025
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -1,4 +1,4 @@
-Next, we’ll go over steps to set up Intune as your mobile device management (MDM) solution. Keep in mind that while some steps are essential, others may be optional based on your specific needs.
+Next, we’ll go over steps to set up Intune as your mobile device management (MDM) solution. Keep in mind that while some steps are essential, others might be optional based on your specific needs.
 
 Check out the [supported configurations](/mem/intune/fundamentals/supported-devices-browsers) and networking requirements for Intune before beginning the setup process.
 
@@ -32,7 +32,7 @@ Before you can configure, assign, protect, or monitor apps, you must [add them t
 
 ## 6. Set up profiles to manage settings
 
-[Create configuration profiles to manage device settings](/mem/intune/configuration/device-profiles). These profiles allow you to preconfigure settings for email, VPN, Wi-Fi, and device features. Additionally, they can impose restrictions to enhance security for devices and the data they access. For example, you can manage device behavior by blocking features like Bluetooth® or controlling where data is stored on the device.
+[Create configuration profiles to manage device settings](/mem/intune/configuration/device-profiles). These profiles allow you to preconfigure settings for email, VPN, Wi-Fi, and device features. Additionally, they can impose restrictions to enhance security for devices and the data they access. For example, you can manage device behavior by configuring settings such as Taskbar and Start Menu layout, enforcing power settings, enabling OneDrive Known Folder Move, or setting up Windows Backup for Organizations.
 
 ## 7. Customizing the user experience
 

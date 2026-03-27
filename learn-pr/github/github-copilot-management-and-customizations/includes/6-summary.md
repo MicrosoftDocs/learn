@@ -14,6 +14,6 @@ With this knowledge, you can select the right fit for your organization's needs.
 - [How to responsibly adopt GitHub Copilot with the GitHub Copilot Trust Center](https://github.blog/news-insights/policy-news-and-insights/how-to-responsibly-adopt-github-copilot-with-the-github-copilot-trust-center/)
 - [Excluding content from GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot#checking-settings-changes-in-your-ide)
 
-## Update requests
+## Provide feedback
 
-If you have content feedback or suggested changes for this Microsoft Learn module, go to the [GitHub page for submitting an update request](https://github.com/githubpartners/microsoft-learn/issues/new/choose). GitHub maintains this content, and a team member will triage the request. Thank you for taking the time to improve our content!
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

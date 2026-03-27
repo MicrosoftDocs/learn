@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-copilot-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge
+  ms.date: 02/13/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "Which Azure Copilot agent can enable backups and zone redundancy for virtual machine workloads?"
+      choices:
+        - content: "Observability agent."
+          isCorrect: false
+          explanation: "The Observability agent focuses on monitoring and diagnostics, not on configuring backups or redundancy."
+        - content: "Resiliency agent."
+          isCorrect: true
+          explanation: "The Resiliency agent is responsible for ensuring high availability and disaster recovery, including enabling backups and zone redundancy for VM workloads."
+        - content: "Optimization agent."
+          isCorrect: false
+          explanation: "The Optimization agent focuses on cost and performance improvements, not on configuring backup or redundancy settings."
+    - content: "What is the primary role of the Azure Copilot Deployment agent?"
+      choices:
+        - content: "To monitor system health and detect anomalies in Azure workloads."
+          isCorrect: false
+          explanation: "Monitoring and anomaly detection are handled by the Observability agent."
+        - content: "To design and deploy Azure infrastructure using best practices and automation."
+          isCorrect: true
+          explanation: "The Deployment agent helps design, configure, and deploy Azure infrastructure using best practices, including generating Infrastructure-as-Code templates."
+        - content: "To troubleshoot and fix issues with Azure workloads."
+          isCorrect: false
+          explanation: "Troubleshooting and fixing issues is the responsibility of the Troubleshooting agent."
+    - content: "How does the Observability agent help incident response within Azure environments?"
+      choices:
+        - content: "By automatically investigating alerts and correlating telemetry data to identify root causes."
+          isCorrect: true
+          explanation: "The Observability agent uses AI to analyze metrics, logs, and traces to detect anomalies and suggest root causes, significantly reducing time to resolution."
+        - content: "By migrating workloads from on-premises to Azure."
+          isCorrect: false
+          explanation: "Migration tasks are handled by the Migration agent, not the Observability agent."
+        - content: "By resizing underutilized resources to reduce costs."
+          isCorrect: false
+          explanation: "The Optimization agent is responsible for identifying and addressing cost inefficiencies, not the Observability agent."

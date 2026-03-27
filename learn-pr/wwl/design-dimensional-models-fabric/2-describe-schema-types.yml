@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dimensional-models-fabric.describe-schema-types
+title: Describe dimensional schema types
+metadata:
+  title: Describe Dimensional Schema Types
+  description: "Learn about star and snowflake schema types for analytics workloads"
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-describe-schema-types.md)]

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent
+metadata:
+  title: Optimize Azure reliability by using Azure SRE Agent
+  description: "Learn how to apply SRE (Site Reliability Engineering) principles and use Azure SRE Agent to improve incident response, reduce operational toil, and govern remediation workflows."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Optimize Azure reliability by using Azure SRE Agent
+summary: This module introduces SRE (Site Reliability Engineering) fundamentals in Azure, explains Azure SRE Agent architecture and deployment, and shows how to apply governed agentic operations to reduce MTTR and improve reliability outcomes.
+abstract: |
+  By the end of this module, you're able to:
+  - Explain core SRE (Site Reliability Engineering) principles and their relevance in Azure cloud operations.
+  - Describe how Azure SRE Agent supports incident triage, diagnosis, and remediation workflows.
+  - Understand architecture, setup requirements, and practical adoption patterns.
+  - Evaluate common use cases and apply governance controls for safe execution.
+prerequisites: |
+  - Basic familiarity with Azure resources and resource groups.
+  - Basic understanding of cloud monitoring and incident response concepts.
+  - Experience using the Azure portal.
+iconUrl: /learn/achievements/azure-devops/capture-feedback-monitoring.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - devops-engineer
+  - support-engineer
+products:
+  - azure
+  - azure-app-service
+  - azure-monitor
+subjects:
+  - cloud-computing
+  - devops
+units:
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.introduction
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.sre-azure-context
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.what-why-sre-agent
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.architecture
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.setup-deployment
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.use-cases
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.governance
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.exercise.sre.agent
+  - learn.wwl.optimize-azure-reliability-using-sre-agent.summary
+badge:
+  uid: learn.wwl.optimize-azure-reliability-using-sre-agent.badge
