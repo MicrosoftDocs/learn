@@ -8,6 +8,9 @@ Copilot in Power BI enables users to ask natural language questions and receive 
 - Access to Copilot in Power BI
 - Required permissions for the relevant Fabric data agents and Power BI items
 
+> [!NOTE]
+> When using the Copilot search experience (where Copilot automatically scans and suggests data agents), the **Standalone Copilot experience** must be enabled in Power BI tenant settings (**Tenant settings** > **Copilot** > **Standalone Copilot experience**).
+
 ## Ways to Use Fabric data agents in Copilot
 
 There are two ways you can use Fabric data agents with Power BI. Either, you use Copilot search to find and invoke a Fabric data agent, or, if you already know which data agent to use, you can manually add that data agent to the Copilot session.
@@ -36,7 +39,7 @@ When you interact with a Fabric data agent through Copilot in Power BI, the foll
 
 2. **Send the query:** The question is sent to the selected Fabric data agent.
 
-3. **Answer retrieval:** The data agent identifies the most relevant data source (such as a lakehouse, warehouse, semantic model, or KQL database) and queries it. Data security protocols like Row-Level Security (RLS) and Column-Level Security (CLS) are enforced based on your permissions.
+3. **Answer retrieval:** The data agent identifies the most relevant data source (such as a lakehouse, warehouse, semantic model, KQL database, ontology, or Azure AI Search index) and queries it. Data security protocols like Row-Level Security (RLS) and Column-Level Security (CLS) are enforced based on your permissions.
 
 4. **Response delivery:** The Fabric data agent sends the answer back to Copilot.
 

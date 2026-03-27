@@ -13,8 +13,19 @@ The integration also reduces the steps required to **connect AI agents to enterp
 Before you begin, make sure that:
 
 - You have created and **published** a Fabric data agent endpoint.
-- Developers and end users in Microsoft Foundry have at least the Azure AI User **RBAC role** assigned.
-- Developers and end users have at least **read access** to both the Fabric data agent and its underlying data sources.
+- Developers and end users in Microsoft Foundry have at least the **Azure AI User** RBAC role assigned.
+- Developers and end users have at least **read access** to the Fabric data agent.
+- Developers and end users have the minimum permission on each underlying data source:
+
+  | Data source | Minimum permission |
+  |---|---|
+  | Power BI semantic model | **Build** (includes Read). Read alone isn't sufficient because the agent generates model queries that require Build. |
+  | Lakehouse | Read on the lakehouse item |
+  | Warehouse | Read (SELECT on relevant tables) |
+  | KQL database | Reader role on the database |
+
+> [!IMPORTANT]
+> This integration uses **identity passthrough** (On-Behalf-Of). The agent runs queries using the signed-in user's identity. Service principal authentication isn't supported for the Fabric data agent.
 
 ## How to integrate Microsoft Foundry with Fabric Data Agents?
 
