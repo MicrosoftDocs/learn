@@ -4,11 +4,11 @@ GitHub Copilot allows you to select a model, and available models vary based on 
 
 GitHub Copilot makes database development more accessible and improves productivity for both new and experienced developers. Whether you're writing queries, troubleshooting issues with your code, or optimizing performance, GitHub Copilot helps you focus on solving business problems rather than remembering syntax.
 
-## Use GitHub Copilot in SSMS
+## Understand GitHub Copilot in SQL Server Management Studio
 
 [GitHub Copilot in SSMS](/ssms/github-copilot/overview?azure-portal=true) brings AI-powered code completion, generation, and chat to your database development workflow. GitHub Copilot helps you write T-SQL faster by suggesting code as you type, generating entire queries from natural language comments, and providing a chat experience where you can ask questions about your database and get help with SQL issues.
 
-### Understand GitHub Copilot capabilities
+### Explore GitHub Copilot capabilities
 
 GitHub Copilot provides several features for SQL Server development:
 
@@ -16,13 +16,12 @@ GitHub Copilot provides several features for SQL Server development:
 - **Natural language to code:** Write comments describing your intent, get working queries
 - **Multi-line suggestions:** Generate entire query blocks, procedures, or functions
 - **Context aware:** Understands the schema of the database to which you're connected
-- **Custom instructions:** Define a custom instruction file and coding style preferences
 
 GitHub Copilot also offers these features via its chat:
 
 - **Schema-aware suggestions:** Knows your exact table structures, columns, and data types
 - **Query optimization:** Analyzes queries and suggests performance improvements
-- **Natural language queries:** Converts questions into T-SQL based on your actual database
+- **Natural language queries:** Converts questions into T-SQL based on the database to which you're connected
 - **Explain queries:** Describes what existing queries do in plain language
 - **Fix errors:** Provides context-aware suggestions when queries fail
 - **Index recommendations:** Suggests indexes based on the missing index suggestions in the DMVs or in a query plan
