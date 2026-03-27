@@ -1,6 +1,6 @@
 ## Overview
 
-Microsoft 365 agents are taskoriented AI assistants that operate inside the Microsoft 365 ecosystem to **retrieve**, **reason**, and **act**—coordinating steps across apps and data to achieve an outcome. Unlike adhoc prompts, welldesigned agents have:
+Microsoft 365 agents are task oriented AI assistants that operate inside the Microsoft 365 ecosystem to **retrieve**, **reason**, and **act**—coordinating steps across apps and data to achieve an outcome. Unlike adhoc prompts, well designed agents have:
 
 **A defined mission and scope** (goal, boundaries, and success criteria)
 
@@ -45,7 +45,7 @@ Microsoft 365 agents are taskoriented AI assistants that operate inside the Micr
 
 OneDrive, email, Automate, sensitivity labels,
 
-meetings, wikis) Connectors) audit, approvals)
+Meetings, wikis) Connectors) audit, approvals)
 
 │
 
@@ -67,7 +67,7 @@ Show more lines
 
 ## Readiness checklist (for solution architects)
 
-Use this pre-flight list before proposing or green-lighting an agent:
+Use this preflight list before proposing or green-lighting an agent:
 
 * **Business value**: Clear owner, target users, measurable outcome, and definition of done.
 
@@ -87,7 +87,7 @@ Use this pre-flight list before proposing or green-lighting an agent:
 
 ## Agent design framework (five steps)
 
-The following 5 steps should be followed when designing the agents:
+The following five steps should be followed when designing the agents:
 
 * **Frame the job to be done**<br>Describe the recurring outcome the business needs, not the tool steps.
 
@@ -101,7 +101,7 @@ The following 5 steps should be followed when designing the agents:
 
 ## Agent Management Essentials
 
-When proposing any agents, its critical to cover all the key aspects for agents. This can be found in the Microsoft documentation for Agent Management Essentials.
+When proposing any agents,  it's critical to cover all the key aspects for agents. This information can be found in the Microsoft documentation for Agent Management Essentials.
 
 * [Prerequisites](/copilot/microsoft-365/agent-essentials/agent-prerequisites) - Understand licensing requirements, admin permissions, and access controls.
 
@@ -119,11 +119,11 @@ In addition to the Agent Management Essentials components, any agent must includ
 
 ## Catalog of Proposed Microsoft 365 Agents (Ready to Pilot)
 
-Below are a list of agents that are ready to pilot for organizations that can be used for business scenarios. Before considering any custom agents, any out of the box pilots should be assessed to determine if they will adequately meet the requirements. 
+The following list includes agents that are ready to pilot for organizations and can be used in business scenarios. Before considering any custom agents, out-of-the-box pilots should be assessed to determine whether they'll adequately meet the requirements. 
 
 ## 1. Executive Briefing Pack Generator
 
-Automatically assemble an executiveready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
+Automatically assemble an executive ready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
 
 ### Entry Point
 
@@ -181,7 +181,7 @@ Provide consolidated insights from project portfolios, highlighting risks, block
 
 ## 3. Content Localization Workpack Builder
 
-Prepare regionspecific content localization packages, including terminology locks, cultural notes, and source files.
+Prepare region specific content localization packages, including terminology locks, cultural notes, and source files.
 
 Entry Point:
 
@@ -227,8 +227,8 @@ Automatically detect and mask sensitive information before content is shared wit
 ### Guardrails
 
 - Strict nonwriteback unless user confirms
-- Audit trail required for all redactions
-- Cannot override applied sensitivity labels
+- Audit trails required for all redactions
+- Can't override applied sensitivity labels
 
 ### KPIs
 
@@ -261,9 +261,9 @@ Review ILT or digital learning modules for objective alignment, inclusive langua
 
 * Outputs tracked via change tracking
 
-* Cannot remove or rewrite mandatory compliance text
+* Can't remove or rewrite mandatory compliance text
 
-* Flags instead of autocorrects major issues
+* Flags major issues instead of autocorrecting them.
 
 ### KPIs
 
@@ -277,7 +277,7 @@ Review ILT or digital learning modules for objective alignment, inclusive langua
 
 ## 6. Adoption Scenario and Lab Designer
 
-Generate rolebased exercises, handson labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
+Generate role-based exercises, handson labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
 
 ### Entry Point<br>
 
@@ -339,7 +339,7 @@ Compile neutral, structured research briefs from internal notes, approved knowle
 
 * Controversial topics require human review
 
-* Cannot generate conclusions without supporting data
+* Can't generate conclusions without supporting data
 
 * KPIs
 
@@ -353,7 +353,7 @@ Compile neutral, structured research briefs from internal notes, approved knowle
 
 ## 8. TelemetrytoInsights Report Generator
 
-Transform Copilot adoption telemetry into monthly, slideready insights and visual summaries for business reviews.
+Transform Copilot adoption telemetry into monthly, slide ready insights and visual summaries for business reviews.
 
 ### Entry Point
 
@@ -375,7 +375,7 @@ Transform Copilot adoption telemetry into monthly, slideready insights and visua
 
 * Must use anonymized datasets only
 
-* No userlevel behavioral insights
+* No user level behavioral insights
 
 * Visuals require human approval before distribution
 
@@ -383,7 +383,7 @@ Transform Copilot adoption telemetry into monthly, slideready insights and visua
 
 * Time saved producing monthly insights deck
 
-* Decisionmaking latency reduced
+* Decision making latency reduced
 
 * Number of insights adopted by stakeholders
 
@@ -393,19 +393,20 @@ Transform Copilot adoption telemetry into monthly, slideready insights and visua
 
 A RACI matrix is a project tool for assigning responsibilities for tasks, milestones, and project decisions to roles on the project.  
 
-The below RACI chart should be included in any proposal for implementing a Microsoft 365 agent. Depending on the project, the capacities may include additional or consolidated roles. But the below should operate as a baseline in which other RACI charts can be created. 
+The RACI chart should be included in any proposal for implementing a Microsoft 365 agent.
+Depending on the project, the capacities may include other or consolidated roles. However, this RACI chart should serve as a baseline for creating other RACI charts.But the below should operate as a baseline in which other RACI charts can be created. 
 
-* **Responsible (R):** Those who perform the work to complete the task.
+* **Responsible (R):** The individuals who perform the work to complete the task.
 
-* **Accountable (A):** The one ultimately answerable for the correct completion of the task, ensuring it is done. There must be only one accountable stakeholder per task.
+* **Accountable (A):** The one ultimately answerable for the correct completion of the task, ensuring it's done. There must be only one accountable stakeholder per task.
 
 * **Consulted (C):** Subject matter experts or stakeholders whose opinions are sought, with two-way communication
 
-* **Informed (I):** Those who are kept up-to-date on progress, typically after the task is completed, with one-way communication. 
+* **Informed (I):** The stakeholders who are kept up-to-date on progress, typically after the task is completed, through one-way communication. 
 
 | **Capability** | **Architect** | **Product owner** | **Security/compliance** | **Support/ops** |
 |---|---|---|---|---|
-| **Usecase triage** | R | A | C | C |
+| **Use case triage** | R | A | C | C |
 | **Data scoping & labels** | C | A | R | C |
 | **Tool/connector setup** | R | C | C | A |
 | **Guardrails & reviews** | C | A | R | C |
@@ -418,7 +419,7 @@ Copy to Excel and chart "Owner effort by phase" as a stacked bar for a quick vis
 
 | **Dimension** | **Metric** | **Target (pilot)** |
 |---|---|---|
-| **Adoption** | Weekly active users of proposed agent(s) | ≥ 30% of target cohort |
+| **Adoption** | Weekly active users of proposed agents | ≥ 30% of target cohort |
 | **Quality** | Human acceptance rate of first output | ≥ 70% |
 | **Speed** | Median time saved per task | ≥ 25% |
 | **Safety** | Policy violations per 1,000 runs | ≤ 1 |
@@ -430,15 +431,15 @@ Copy to Excel and chart "Owner effort by phase" as a stacked bar for a quick vis
 
 * "If the agent did nothing else, what **single win** would justify its existence?"
 
-* "Which **data you already trust** would most improve the agent's firstrun quality?"
+* "Which **data you already trust** would most improve the agent's first run quality?"
 
 ## References
 
-**Manage Microsoft 365 Copilot scenarios** — adminreadiness and control areas to consider when planning enterprise agents.<br>[https://learn.microsoft.com/microsoft-365-copilot/manage-copilot-scenarios](/copilot/microsoft-365/microsoft-365-copilot-page)
+**Manage Microsoft 365 Copilot scenarios** —admin readiness and control areas to consider when planning enterprise agents.<br>[https://learn.microsoft.com/microsoft-365-copilot/manage-copilot-scenarios](/copilot/microsoft-365/microsoft-365-copilot-page)
 
-**Microsoft 365 Copilot hub** — orientation to Copilot options, Copilot Chat, and agents with adoption resources.<br>[https://learn.microsoft.com/microsoft-365-copilot/](/copilot/microsoft-365/)
+**Microsoft 365 Copilot hub** —orientation to Copilot options, Copilot Chat, and agents with adoption resources.<br>[https://learn.microsoft.com/microsoft-365-copilot/](/copilot/microsoft-365/)
 
-**Understand the foundations of generative AI for business leaders** — executivelevel grounding on value, model basics, and responsible adoption.<br>[https://learn.microsoft.com/training/modules/understand-foundations-generative-ai-business-leaders/](/training/modules/understand-foundations-generative-ai-business-leaders/)
+**Understand the foundations of generative AI for business leaders** — executive level grounding on value, model basics, and responsible adoption.<br>[https://learn.microsoft.com/training/modules/understand-foundations-generative-ai-business-leaders/](/training/modules/understand-foundations-generative-ai-business-leaders/)
 
 [Microsoft 365 Copilot Agent Management Essentials | Microsoft Learn](/copilot/microsoft-365/agent-essentials/agent-essentials-overview)
 
