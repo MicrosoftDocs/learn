@@ -4,69 +4,69 @@ Dynamics 365 Finance & Operations now supports **Copilot client plugins**, enabl
 
 This unit equips learners to design interoperable agent experiences that combine:
 
-F&O system data
+* F&O system data
 
-External knowledge sources
+* External knowledge sources
 
-Custom business logic
+* Custom business logic
 
-Pluginbased actions
+* Pluginbased actions
 
-Secure, governed access patterns
+* Secure, governed access patterns
 
 The goal is to help organizations create richer, more accurate, and more contextaware AI experiences inside F&O agent chats.
 
 By the end of this unit, learners will be able to:
 
-Explain how Copilot client plugins extend Finance & Operations agent chats
+* Explain how Copilot client plugins extend Finance & Operations agent chats
 
-Identify additional knowledge sources appropriate for F&O agents
+* Identify additional knowledge sources appropriate for F&O agents
 
-Design interoperability patterns between F&O data, plugins, and external content
+* Design interoperability patterns between F&O data, plugins, and external content
 
-Configure agent behaviors that use multiple knowledge sources responsibly
+* Configure agent behaviors that use multiple knowledge sources responsibly
 
-Apply governance, security, and lifecycle best practices
+* Apply governance, security, and lifecycle best practices
 
 ## 1. Understanding F&O Agent Interoperability
 
 ### The F&O Copilot agent is designed to:
 
-Answer questions using system data
+* Answer questions using system data
 
-Execute actions through plugins
+* Execute actions through plugins
 
-Retrieve information from external knowledge sources
+* Retrieve information from external knowledge sources
 
-Provide contextual, grounded responses
+* Provide contextual, grounded responses
 
 ### How Interoperability Works
 
-User asks a question in F&O Copilot
+* User asks a question in F&O Copilot
 
-Agent determines intent
+* Agent determines intent
 
-Agent selects the appropriate knowledge source
+* Agent selects the appropriate knowledge source
 
-F&O data
+* F&O data
 
-Plugin action
+* Plugin action
 
-External knowledge base
+* External knowledge base
 
-Agent synthesizes a grounded response
+* Agent synthesizes a grounded response
 
-Agent optionally performs an action (e.g., create a record)
+* Agent optionally performs an action (e.g., create a record)
 
 ### Why Interoperability Matters
 
-Many business processes span multiple systems
+* Many business processes span multiple systems
 
-F&O data alone may not answer all questions
+* F&O data alone may not answer all questions
 
-Plugins allow the agent to "reach out" to other systems
+* Plugins allow the agent to "reach out" to other systems
 
-External knowledge sources enrich reasoning and context
+* External knowledge sources enrich reasoning and context
 
 ## 2. Additional Knowledge Sources for F&O Agents
 
@@ -76,35 +76,35 @@ Solution architects can extend the agent with:
 
 Examples:
 
-SharePoint libraries
+* SharePoint libraries
 
-Policy documents
+* Policy documents
 
-Vendor portals
+* Vendor portals
 
-Product catalogs
+* Product catalogs
 
-Standard operating procedures
+* Standard operating procedures
 
 ### B. LineofBusiness Systems
 
 Using plugins or APIs:
 
-CRM
+* CRM
 
-HR systems
+* HR systems
 
-Procurement portals
+* Procurement portals
 
-Manufacturing execution systems
+* Manufacturing execution systems
 
 ### C. Custom Datastores
 
-Azure SQL
+* Azure SQL
 
-Dataverse tables
+* Dataverse tables
 
-Azure Cognitive Search indexes
+* Azure Cognitive Search indexes
 
 ### D. DomainSpecific Content
 
@@ -122,33 +122,33 @@ These sources help the agent answer questions that F&O alone cannot.
 
 ### Plugins allow the agent to:
 
-Retrieve data
+* Retrieve data
 
-Perform actions
+* Perform actions
 
-Trigger workflows
+* Trigger workflows
 
-Integrate with external systems
+* Integrate with external systems
 
 ### Plugin Capabilities
 
-Define custom actions
+* Define custom actions
 
-Provide structured responses
+* Provide structured responses
 
-Enforce business logic
+* Enforce business logic
 
-Support multistep workflows
+* Support multistep workflows
 
 ### Plugin Design Considerations
 
-What data or action is missing from F&O
+* What data or action is missing from F&O
 
-What external system must be accessed
+* What external system must be accessed
 
-What business logic must be enforced
+* What business logic must be enforced
 
-What constraints or validations are required
+* What constraints or validations are required
 
 ## 4. Designing Interoperable Agent Experiences
 
@@ -166,13 +166,13 @@ Example:
 
 Plugins can:
 
-Fetch external data
+* Fetch external data
 
-Validate business rules
+* Validate business rules
 
-Trigger workflows
+* Trigger workflows
 
-Write back to F&O
+* Write back to F&O
 
 ### C. Combine Knowledge Sources in a Single Response
 
@@ -182,51 +182,37 @@ Example:
 
 ### D. Ensure Grounding and Accuracy
 
-Use authoritative sources
+* Use authoritative sources
 
-Avoid hallucinations
+* Avoid hallucinations
 
-Validate external data before use
+* Validate external data before use
 
 ## 5. Governance, Security, and Lifecycle Considerations
 
 ### A. Permissions
 
-Plugins must respect F&O security roles
+* Plugins must respect F&O security roles
 
-External knowledge sources must enforce access control
+* External knowledge sources must enforce access control
 
-Agents must not expose sensitive data
+* Agents must not expose sensitive data
 
 ### B. Responsible AI
 
-Provide transparent explanations
+* Provide transparent explanations
 
-Avoid unsupported assumptions
+* Avoid unsupported assumptions
 
-Log plugin actions
+* Log plugin actions
 
 ### C. Monitoring & Maintenance
 
-Track plugin usage
+* Track plugin usage
 
-Update knowledge sources regularly
+* Update knowledge sources regularly
 
-Review agent responses for accuracy
-
-## 6. Professional Visuals (TextBased)
-
-### Visual 1 — Interoperability Architecture
-
-User Request ↓ F&O Copilot Agent ↓ Intent Detection ↓ Knowledge Source Selection ├── F&O Data ├── Plugin Action └── External Knowledge Source ↓ Grounded Response + Optional Action 
-
-### Visual 2 — Plugin Interoperability Model
-
-F&O Agent → Plugin → External System → Plugin → Agent → User 
-
-### Visual 3 — Knowledge Source Decision Matrix
-
-F&O Data | External Knowledge | Plugin Action | Combined Response 
+* Review agent responses for accuracy
 
 ## References
 

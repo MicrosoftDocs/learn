@@ -12,19 +12,19 @@ Sidecar Copilot appears alongside the Finance and Supply Chain apps and supports
 
 #### Common sidecar capabilities include:
 
-**Generative help and guidance**: Explain features, processes, and actions in the app.
+* **Generative help and guidance**: Explain features, processes, and actions in the app.
 
-**Workflow summaries**: Summarize journal history, approvals, or operational status.
+* **Workflow summaries**: Summarize journal history, approvals, or operational status.
 
-**Chat with finance and operations data**: Support natural language queries against business data models.
+* **Chat with finance and operations data**: Support natural language queries against business data models.
 
 #### Architectural considerations
 
-Optimize prompts with businessdomain vocabulary.
+* Optimize prompts with businessdomain vocabulary.
 
-Apply rolebased access so users only retrieve data appropriate to their permissions.
+* Apply rolebased access so users only retrieve data appropriate to their permissions.
 
-Orchestrate crossmodule queries using standardized entity metadata.
+* Orchestrate crossmodule queries using standardized entity metadata.
 
 ## 2. Embedded
 
@@ -32,29 +32,29 @@ Embedded AI brings Copilot capabilities directly inside workspace pages or opera
 
 ### Examples include:
 
-**Purchase order change analysis**
+* **Purchase order change analysis**
 
-**Customer collections summaries**
+* **Customer collections summaries**
 
-**Demand planning insights**
+* **Demand planning insights**
 
-**Supplier communication drafting**
+* **Supplier communication drafting**
 
 ### Benefits
 
-Enhances user efficiency where work is performed.
+* Enhances user efficiency where work is performed.
 
-Surfaces recommended actions inside operational workflows.
+* Surfaces recommended actions inside operational workflows.
 
-Reduces navigation overhead and manual analysis.
+* Reduces navigation overhead and manual analysis.
 
 ### Architectural implications
 
-Ensure embedded AI uses authoritative data entities.
+* Ensure embedded AI uses authoritative data entities.
 
-Validate that embedded capabilities align with business rules.
+* Validate that embedded capabilities align with business rules.
 
-Update extensions to handle model changes introduced by AI workflows.
+* Update extensions to handle model changes introduced by AI workflows.
 
 ## 3. Outside (External Orchestration with Copilot)
 
@@ -62,147 +62,78 @@ External agents interact with Finance and Supply Chain data beyond the applicati
 
 ### Examples:
 
-Crossapplication automations.
+* Crossapplication automations.
 
-Rolespecific AI copilots in Teams.
+* Rolespecific AI copilots in Teams.
 
-Workflow routing and automated notifications.
+* Workflow routing and automated notifications.
 
 ### Design guidelines
 
-Use Dataverse or custom APIs for consistent and governed data access.
+* Use Dataverse or custom APIs for consistent and governed data access.
 
-Ensure all AI orchestration scenarios follow organizational data residency and privacy rules.
+* Ensure all AI orchestration scenarios follow organizational data residency and privacy rules.
 
-Validate that actions triggered externally match security and approval constraints in Dynamics.
+* Validate that actions triggered externally match security and approval constraints in Dynamics.
 
 ### Key AI Capabilities in Finance and Supply Chain
 
 #### Finance-Specific AI Capabilities
 
-Collections coordinator summaries
+* Collections coordinator summaries
 
-Customer page summaries
+* Customer page summaries
 
-Statement posting summaries
+* Statement posting summaries
 
-Opportunity and risk analysis
+* Opportunity and risk analysis
 
 #### Supply Chain Capabilities
 
-AI-augmented demand planning
+* AI-augmented demand planning
 
-Warehouse workload insights
+* Warehouse workload insights
 
-Supplier communication agent
+* Supplier communication agent
 
-Change review for confirmed purchase orders
+* Change review for confirmed purchase orders
 
 #### CrossApp Capabilities
 
-Generative help
+* Generative help
 
-Enhanced feedback loops
+* Enhanced feedback loops
 
-Natural language data assistance
+* Natural language data assistance
 
 #### Extending Copilot for Finance and Supply Chain
 
 Solution architects can extend Copilot experiences using:
 
-**Custom scripts and extensions** through the developer framework.
+* **Custom scripts and extensions** through the developer framework.
 
-**Prompt-defined behaviors** within sidecar experiences.
+* **Prompt-defined behaviors** within sidecar experiences.
 
-**Custom data sources**, such as external knowledge or structured business content.
+* **Custom data sources**, such as external knowledge or structured business content.
 
-**Business event triggers** connected to Power Automate or Azure Functions.
+* **Business event triggers** connected to Power Automate or Azure Functions.
 
-**Custom actions** that Copilot can call as part of a guided workflow.
+* **Custom actions** that Copilot can call as part of a guided workflow.
 
 #### Best practices
 
-Keep extensions modular and compliant with solution boundaries.
+* Keep extensions modular and compliant with solution boundaries.
 
-Apply Responsible AI guidelines to all prompts and custom instructions.
+* Apply Responsible AI guidelines to all prompts and custom instructions.
 
-Align Copilot extensions with existing workflows to avoid duplication and inconsistencies.
+* Align Copilot extensions with existing workflows to avoid duplication and inconsistencies.
 
-Copilot sidecar experiences need to understand the context in which the user is working in. for that reason, application context with Copilot is available to embed in the flow of the business process. The integration will include three types of context: For more information, see the following: [Use application context with Copilot - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-application-context)
+* Copilot sidecar experiences need to understand the context in which the user is working in. for that reason, application context with Copilot is available to embed in the flow of the business process. The integration will include three types of context: For more information, see the following: [Use application context with Copilot - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-application-context)
 
-The creation of client plugins, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. For more information see the following: [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins](/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins) 
+* The creation of client plugins, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. For more information see the following: [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins](/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins) 
 
-Plugins must be created using the Copilot in Finance and Operation chatbot with an X++ method created in the application. For more information, see the following: [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture) 
+* Plugins must be created using the Copilot in Finance and Operation chatbot with an X++ method created in the application. For more information, see the following: [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture) 
 
-## Professional Visuals (TextBased)
-
-### Visual 1 - AI Orchestration Architecture
-
-User Interaction
-
-     |
-
-     |-- Sidecar Copilot (Chat, data Q&A, guided actions)
-
-     |-- Embedded Copilot (Workspace insights, inline guidance)
-
-     |-- External Copilot (Teams, automated flows)
-
-     |
-
-AI Services Layer
-
-     |-- Reasoning models
-
-     |-- Data access functions
-
-     |-- Action execution
-
-     |
-
-Dynamics 365 Finance & Supply Chain Data
-
-     |-- Finance entities
-
-     |-- Supply chain entities
-
-     |-- Dataverse + Extensions
-
-## Visual 2 - AI Capability Integration Flow
-
-User Prompt
-
-    ↓
-
-Intent Understanding
-
-    ↓
-
-Data Retrieval (Finance, SCM, Dataverse)
-
-    ↓
-
-AI Reasoning + Domain Logic
-
-    ↓
-
-Recommended Action / Insight
-
-    ↓
-
-User Approval → System Execution
-
-**Visual 3 - Copilot Extension Design Pattern**
-
-Instruction Set → Domain Context → Data Binding
-
-        ↓                  ↓               ↓
-
-   Reasoning Model ←→ Custom Actions ←→ Business Events
-
-        ↓
-
-   Delivered AI Output
 
 ## References
 

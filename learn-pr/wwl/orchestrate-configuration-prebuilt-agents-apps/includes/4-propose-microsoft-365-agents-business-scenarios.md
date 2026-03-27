@@ -14,7 +14,6 @@ Microsoft 365 agents are taskoriented AI assistants that operate inside the Micr
 
 ## Architecture at a glance
 
-Plain Text
 
 [User/Role]
 
@@ -70,51 +69,51 @@ Show more lines
 
 Use this pre-flight list before proposing or green-lighting an agent:
 
-**Business value**: Clear owner, target users, measurable outcome, and definition of done.
+* **Business value**: Clear owner, target users, measurable outcome, and definition of done.
 
-**Identity & access**: Runs-as model documented (user, app, service), least-privilege confirmed.
+* **Identity & access**: Runs-as model documented (user, app, service), least-privilege confirmed.
 
-**Data scope**: Grounding corpus enumerated, sensitivity labeled, and access patterns validated.
+* **Data scope**: Grounding corpus enumerated, sensitivity labeled, and access patterns validated.
 
-**Actions & tools**: Required tools/connectors identified; failure paths and human approval points defined.
+* **Actions & tools**: Required tools/connectors identified; failure paths and human approval points defined.
 
-**Security & compliance**: DLP, eDiscovery/auditability, and reviewability designed; logging plan in place.
+* **Security & compliance**: DLP, eDiscovery/auditability, and reviewability designed; logging plan in place.
 
-**Change control**: Versioning, rollout rings, rollback, and sunset criteria defined.
+* **Change control**: Versioning, rollout rings, rollback, and sunset criteria defined.
 
-**Measurement**: Telemetry for adoption, quality, latency, cost, and business KPIs instrumented.
+* **Measurement**: Telemetry for adoption, quality, latency, cost, and business KPIs instrumented.
 
-**Support**: Ownership, incident runbook, ethics review, and communications/adoption plan established.
+* **Support**: Ownership, incident runbook, ethics review, and communications/adoption plan established.
 
 ## Agent design framework (five steps)
 
-The following 5 steps should be followed when designing the agents. 
+The following 5 steps should be followed when designing the agents:
 
-**Frame the job to be done**<br>Describe the recurring outcome the business needs, not the tool steps.
+* **Frame the job to be done**<br>Describe the recurring outcome the business needs, not the tool steps.
 
-**Map inputs, knowledge, and actions**<br>Enumerate sources (files, sites, email, meeting notes), tools (connectors, flows), and required write operations.
+* **Map inputs, knowledge, and actions**<br>Enumerate sources (files, sites, email, meeting notes), tools (connectors, flows), and required write operations.
 
-**Define guardrails**<br>Who can invoke it? On what data? When does it ask for approval? How are actions logged and reversed?
+* **Define guardrails**<br>Who can invoke it? On what data? When does it ask for approval? How are actions logged and reversed?
 
-**Prototype the critical path**<br>Start with a narrow "happy path" endtoend slice; test on real artifacts and iterate on prompt patterns.
+* **Prototype the critical path**<br>Start with a narrow "happy path" endtoend slice; test on real artifacts and iterate on prompt patterns.
 
-**Operationalize**<br>Add telemetry, quality checks, and cost controls. Move from pilot to production with rollout rings and training.
+* **Operationalize**<br>Add telemetry, quality checks, and cost controls. Move from pilot to production with rollout rings and training.
 
 ## Agent Management Essentials
 
 When proposing any agents, its critical to cover all the key aspects for agents. This can be found in the Microsoft documentation for Agent Management Essentials.
 
-[Prerequisites](/copilot/microsoft-365/agent-essentials/agent-prerequisites) - Understand licensing requirements, admin permissions, and access controls.
+* [Prerequisites](/copilot/microsoft-365/agent-essentials/agent-prerequisites) - Understand licensing requirements, admin permissions, and access controls.
 
-[Blueprint](/copilot/microsoft-365/agent-essentials/m365-agents-blueprint) - Understand how to enable Microsoft 365 Copilot at scale.
+* [Blueprint](/copilot/microsoft-365/agent-essentials/m365-agents-blueprint) - Understand how to enable Microsoft 365 Copilot at scale.
 
-[Checklist](/copilot/microsoft-365/agent-essentials/m365-agents-checklist) - Understand how to successfully implement and deploy Copilot agent governance.
+* [Checklist](/copilot/microsoft-365/agent-essentials/m365-agents-checklist) - Understand how to successfully implement and deploy Copilot agent governance.
 
-[Visual Guide](/copilot/microsoft-365/agent-essentials/m365-agents-visual-map) - Follow the guided management paths and links to better understand Copilot agents.
+* [Visual Guide](/copilot/microsoft-365/agent-essentials/m365-agents-visual-map) - Follow the guided management paths and links to better understand Copilot agents.
 
-[Admin Guide](/copilot/microsoft-365/agent-essentials/m365-agents-admin-guide) - Understand where to start when working with Microsoft 365 Copilot agents.
+* [Admin Guide](/copilot/microsoft-365/agent-essentials/m365-agents-admin-guide) - Understand where to start when working with Microsoft 365 Copilot agents.
 
-[FAQ](/copilot/microsoft-365/agent-essentials/m365-agents-faq) - Answers to common questions about Microsoft 365 Copilot agents.
+* [FAQ](/copilot/microsoft-365/agent-essentials/m365-agents-faq) - Answers to common questions about Microsoft 365 Copilot agents.
 
 In addition to the Agent Management Essentials components, any agent must include considerations for long term and licensing costs. Identifying all associated costs are critical to setting expectations for the agents. For more information, see [https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 
 
@@ -124,7 +123,7 @@ Below are a list of agents that are ready to pilot for organizations that can be
 
 ## 1. Executive Briefing Pack Generator
 
-Purpose<br>Automatically assemble an executiveready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
+Automatically assemble an executiveready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
 
 ### Entry Point
 
@@ -153,7 +152,7 @@ Purpose<br>Automatically assemble an executiveready briefing pack using the late
 
 ## 2. Portfolio Risk Insights Analyzer
 
-Purpose<br>Provide consolidated insights from project portfolios, highlighting risks, blockers, dependencies, and resource pressures.
+Provide consolidated insights from project portfolios, highlighting risks, blockers, dependencies, and resource pressures.
 
 ### Entry Point
 
@@ -182,9 +181,9 @@ Purpose<br>Provide consolidated insights from project portfolios, highlighting r
 
 ## 3. Content Localization Workpack Builder
 
-Purpose<br>Prepare regionspecific content localization packages, including terminology locks, cultural notes, and source files.
+Prepare regionspecific content localization packages, including terminology locks, cultural notes, and source files.
 
-Entry Point
+Entry Point:
 
 - Copilot in Word 
 - Power Automate for handoff workflows
@@ -211,7 +210,7 @@ Entry Point
 
 ## 4. ComplianceAware Content Redactor
 
-Purpose<br>Automatically detect and mask sensitive information before content is shared with training repositories or external reviewers.
+Automatically detect and mask sensitive information before content is shared with training repositories or external reviewers.
 
 ### Entry Point
 
@@ -240,139 +239,155 @@ Purpose<br>Automatically detect and mask sensitive information before content is
 
 ## 5. Alignment and Quality Checker
 
-Purpose<br>Review ILT or digital learning modules for objective alignment, inclusive language, terminology consistency, and required rubric standards.
+Review ILT or digital learning modules for objective alignment, inclusive language, terminology consistency, and required rubric standards.
 
-Entry Point<br>Copilot in Word • Microsoft 365 Chat
+### Entry Point
 
-Inputs / Tools
+* Copilot in Word 
 
-Course modules
+* Microsoft 365 Chat
 
-Style guide snippets
+* Inputs / Tools
 
-Approved glossary
+* Course modules
 
-Quality rubric
+* Style guide snippets
 
-Guardrails
+* Approved glossary
 
-Outputs tracked via change tracking
+* Quality rubric
 
-Cannot remove or rewrite mandatory compliance text
+* Guardrails
 
-Flags instead of autocorrects major issues
+* Outputs tracked via change tracking
+
+* Cannot remove or rewrite mandatory compliance text
+
+* Flags instead of autocorrects major issues
 
 ### KPIs
 
-Reduction in manual QA review hours
+* Reduction in manual QA review hours
 
-Defects found per module
+* Defects found per module
 
-Instructor satisfaction with alignment improvements
+* Instructor satisfaction with alignment improvements
 
-Time saved across multimodule reviews
+* Time saved across multimodule reviews
 
 ## 6. Adoption Scenario and Lab Designer
 
-Purpose<br>Generate rolebased exercises, handson labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
+Generate rolebased exercises, handson labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
 
-Entry Point<br>Microsoft Teams • Copilot in Word and PowerPoint
+### Entry Point<br>
 
-Inputs / Tools
+* Microsoft Teams 
 
-Departmental use cases
+* Copilot in Word and PowerPoint
 
-Copilot usage telemetry (anonymized)
+* Inputs / Tools
 
-Prompt gallery patterns
+* Departmental use cases
 
-Existing training materials
+* Copilot usage telemetry (anonymized)
 
-Guardrails
+* Prompt gallery patterns
 
-All telemetry must be anonymous and aggregate
+* Existing training materials
 
-No direct publishing without instructor review
+* Guardrails
 
-Human signoff for scenario realism and feasibility
+* All telemetry must be anonymous and aggregate
 
-KPIs
+* No direct publishing without instructor review
 
-Time to create new department-ready scenarios
+* Human signoff for scenario realism and feasibility
 
-Repeat usage rates from learners
+* KPIs
 
-Time to first "aha" moment
+* Time to create new department-ready scenarios
 
-Completion rates of adoption scenarios
+* Repeat usage rates from learners
+
+* Time to first "aha" moment
+
+* Completion rates of adoption scenarios
 
 ## 7. Research Synthesis and Brief Creator
 
-Purpose<br>Compile neutral, structured research briefs from internal notes, approved knowledge sources, and allowed public content.
+Compile neutral, structured research briefs from internal notes, approved knowledge sources, and allowed public content.
 
-Entry Point<br>Copilot Chat • Word research view
+### Entry Point
 
-Inputs / Tools
+* Copilot Chat
 
-Curated reading lists
+* Word research view
 
-Internal wikis
+* Inputs / Tools
 
-Topic outlines
+* Curated reading lists
 
-Reviewer guidance
+* Internal wikis
 
-Guardrails
+* Topic outlines
 
-Must include a summary section that highlights uncertainty
+* Reviewer guidance
 
-Controversial topics require human review
+* Guardrails
 
-Cannot generate conclusions without supporting data
+* Must include a summary section that highlights uncertainty
 
-KPIs
+* Controversial topics require human review
 
-Synthesis time per topic
+* Cannot generate conclusions without supporting data
 
-Reviewer acceptance rate
+* KPIs
 
-Completeness of coverage of required angles
+* Synthesis time per topic
 
-Reduction in manual research hours
+* Reviewer acceptance rate
+
+* Completeness of coverage of required angles
+
+* Reduction in manual research hours
 
 ## 8. TelemetrytoInsights Report Generator
 
-Purpose<br>Transform Copilot adoption telemetry into monthly, slideready insights and visual summaries for business reviews.
+Transform Copilot adoption telemetry into monthly, slideready insights and visual summaries for business reviews.
 
-Entry Point<br>Copilot in Excel • Copilot in PowerPoint
+### Entry Point
 
-Inputs / Tools
+* Copilot in Excel
 
-Usage logs (aggregate only)
+* Copilot in PowerPoint
 
-Quality metrics
+* Inputs / Tools
 
-Feedback surveys
+* Usage logs (aggregate only)
 
-Cost data
+* Quality metrics
 
-Guardrails
+* Feedback surveys
 
-Must use anonymized datasets only
+* Cost data
 
-No userlevel behavioral insights
+* Guardrails
 
-Visuals require human approval before distribution
+* Must use anonymized datasets only
 
-KPIs
+* No userlevel behavioral insights
 
-Time saved producing monthly insights deck
+* Visuals require human approval before distribution
 
-Decisionmaking latency reduced
+* KPIs
 
-Number of insights adopted by stakeholders
+* Time saved producing monthly insights deck
 
-Improvement in clarity and visual quality metrics
+* Decisionmaking latency reduced
+
+* Number of insights adopted by stakeholders
+
+* Improvement in clarity and visual quality metrics
 
 ## Operating model: who does what (RACI example)
 
@@ -380,13 +395,13 @@ A RACI matrix is a project tool for assigning responsibilities for tasks, milest
 
 The below RACI chart should be included in any proposal for implementing a Microsoft 365 agent. Depending on the project, the capacities may include additional or consolidated roles. But the below should operate as a baseline in which other RACI charts can be created. 
 
-**Responsible (R):** Those who perform the work to complete the task.
+* **Responsible (R):** Those who perform the work to complete the task.
 
-**Accountable (A):** The one ultimately answerable for the correct completion of the task, ensuring it is done. There must be only one accountable stakeholder per task.
+* **Accountable (A):** The one ultimately answerable for the correct completion of the task, ensuring it is done. There must be only one accountable stakeholder per task.
 
-**Consulted (C):** Subject matter experts or stakeholders whose opinions are sought, with two-way communication
+* **Consulted (C):** Subject matter experts or stakeholders whose opinions are sought, with two-way communication
 
-**Informed (I):** Those who are kept up-to-date on progress, typically after the task is completed, with one-way communication. 
+* **Informed (I):** Those who are kept up-to-date on progress, typically after the task is completed, with one-way communication. 
 
 | **Capability** | **Architect** | **Product owner** | **Security/compliance** | **Support/ops** |
 |---|---|---|---|---|
@@ -411,11 +426,11 @@ Copy to Excel and chart "Owner effort by phase" as a stacked bar for a quick vis
 
 ## Instructor prompts (use in class)
 
-"Where would **humanintheloop** checkpoints most reduce risk without blocking flow?"
+* "Where would **humanintheloop** checkpoints most reduce risk without blocking flow?"
 
-"If the agent did nothing else, what **single win** would justify its existence?"
+* "If the agent did nothing else, what **single win** would justify its existence?"
 
-"Which **data you already trust** would most improve the agent's firstrun quality?"
+* "Which **data you already trust** would most improve the agent's firstrun quality?"
 
 ## References
 

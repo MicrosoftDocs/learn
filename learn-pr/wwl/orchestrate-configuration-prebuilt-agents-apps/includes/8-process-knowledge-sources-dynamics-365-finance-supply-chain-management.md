@@ -10,41 +10,13 @@ You will learn how knowledge sources feed Copilot behaviors, how content must be
 
 Dynamics 365 uses Copilot capabilities to surface inapp help based on curated knowledge sources. These sources combine:
 
-Product documentation
+* Product documentation
 
-Custom organizational knowledge
+* Custom organizational knowledge
 
-Knowledge articles, process guides, structured files, and operational documents
+* Knowledge articles, process guides, structured files, and operational documents
 
-Generative responses (when enabled)
-
-### Visual: Knowledge Flow Architecture (TextBased Diagram)
-
-User Question
-
-      │
-
-      ▼
-
-Copilot (Generative Help Engine)
-
-      │
-
-      ├── Custom Knowledge Sources (Files, URLs, KB content)
-
-      │
-
-      ├── Product Documentation (Default)
-
-      │
-
-      └── General Knowledge (Optional, Controlled)
-
-      │
-
-      ▼
-
-Generated InApp Help Response
+* Generative responses (when enabled)
 
 ## 2. Knowledge Source Types to Recommend
 
@@ -52,21 +24,21 @@ Solution architects must identify which knowledge sources are appropriate and su
 
 ### Supported Examples
 
-PDF, RTF, and Word files containing validated business processes
+* PDF, RTF, and Word files containing validated business processes
 
-Knowledge articles related to Finance or Supply Chain workflows
+* Knowledge articles related to Finance or Supply Chain workflows
 
-Task guides describing system steps
+* Task guides describing system steps
 
-Policy documents directly connected to operational tasks
+* Policy documents directly connected to operational tasks
 
 ### Not Recommended or Unsupported
 
-Dataverse virtual entities published from Finance & Operations
+* Dataverse virtual entities published from Finance & Operations
 
-Content unrelated to product usage (can contaminate help results)
+* Content unrelated to product usage (can contaminate help results)
 
-Content containing sensitive, unclassified data
+* Content containing sensitive, unclassified data
 
 ## 3. Recommended EndtoEnd Process for Adding Knowledge Sources
 
@@ -74,81 +46,59 @@ Content containing sensitive, unclassified data
 
 Before ingestion:
 
-Validate accuracy and alignment to business processes.
+* Validate accuracy and alignment to business processes.
 
-Ensure the content is strictly connected to Finance or Supply Chain tasks.
+* Ensure the content is strictly connected to Finance or Supply Chain tasks.
 
-Apply consistent terminology and style (Microsoft style).
+* Apply consistent terminology and style (Microsoft style).
 
-Apply required sensitivity labels.
-
-#### Visual: Knowledge Preparation Checklist
-
-[✓] Relevant  
-
-[✓] Current  
-
-[✓] Secure  
-
-[✓] Labelled  
-
-[✓] Written in Microsoft style  
-
-[✓] Roleappropriate  
+* Apply required sensitivity labels.
 
 ### Step 2: Ingest Knowledge Through Copilot Studio
 
-Open Copilot Studio and select the environment associated with Finance or Supply Chain Management.
+* Open Copilot Studio and select the environment associated with Finance or Supply Chain Management.
 
-Navigate to **Agents**, then open the agent for the application.
+* Navigate to **Agents**, then open the agent for the application.
 
-Select the **Knowledge** tab and choose **Add knowledge**.
+* Select the **Knowledge** tab and choose **Add knowledge**.
 
-Upload the prepared files.
+* Upload the prepared files.
 
-Monitor processing status until the knowledge source shows **Ready**.
+* Monitor processing status until the knowledge source shows **Ready**.
 
 ### Step 3: Test Knowledge Behavior
 
 #### Testing is essential for solution architects:
 
-Perform scenariobased questioning.
+* Perform scenariobased questioning.
 
-Validate that responses reflect the intended source content.
+* Validate that responses reflect the intended source content.
 
-Confirm that unrelated knowledge does not influence the results.
+* Confirm that unrelated knowledge does not influence the results.
 
-Adjust content and reprocess as needed.
-
-#### Visual: Testing Flow (Text Diagram)
-
-Add Knowledge → Wait for Ready → Test with Sample Questions → Validate Intent Accuracy → Approve or Iterate
+* Adjust content and reprocess as needed.
 
 ### Step 4: Publish Knowledge to Production
 
 #### After successful testing:
 
-Select **Publish** to make the new help content available to end users.
+* Select **Publish** to make the new help content available to end users.
 
-Close open Copilot sessions and reopen to ensure refreshed knowledge is active.
+* Close open Copilot sessions and reopen to ensure refreshed knowledge is active.
 
-Review initial user feedback during early usage.
+* Review initial user feedback during early usage.
 
 ### Step 5: Govern and Maintain Knowledge
 
 #### Solution architects define ongoing governance:
 
-Version control: update or retire outdated content.
+* Version control: update or retire outdated content.
 
-Security: maintain labeling and DLP compliance.
+* Security: maintain labeling and DLP compliance.
 
-Review cadence: quarterly or aligned to app updates.
+* Review cadence: quarterly or aligned to app updates.
 
-Testing: validate after each Dynamics 365 release wave.
-
-#### Visual: Governance Lifecycle
-
-Create → Validate → Publish → Monitor → Iterate → Retire/Replace
+* Testing: validate after each Dynamics 365 release wave.
 
 ## 4. Enabling or Restricting General Knowledge
 
@@ -156,15 +106,15 @@ Solution architects decide whether to enable general knowledge (LLMbased, extern
 
 ### Enable only when:
 
-Business scenarios benefit from expanded natural language explanations.
+* Business scenarios benefit from expanded natural language explanations.
 
-Risks are assessed and mitigated.
+* Risks are assessed and mitigated.
 
 ### Restrict when:
 
-Precision is critical for regulatory or financial workflows.
+* Precision is critical for regulatory or financial workflows.
 
-Only controlled, validated knowledge should influence help responses.
+* Only controlled, validated knowledge should influence help responses.
 
 ## 5. Solution Architect Recommendations Framework
 
@@ -172,15 +122,15 @@ Use this structure when advising customers:
 
 ### Recommendation Areas
 
-**Knowledge scope**: Define what is allowed and prohibited.
+* **Knowledge scope**: Define what is allowed and prohibited.
 
-**Data governance**: Ensure labeling, role access, and content classification.
+* **Data governance**: Ensure labeling, role access, and content classification.
 
-**Operational workflows**: Ensure content owners maintain accuracy.
+* **Operational workflows**: Ensure content owners maintain accuracy.
 
-**Risk mitigation**: Address generative AI reliability and guardrails.
+* **Risk mitigation**: Address generative AI reliability and guardrails.
 
-**Success metrics**: Content usage, reduced support calls, improved task completion.
+* **Success metrics**: Content usage, reduced support calls, improved task completion.
 
 ## References
 

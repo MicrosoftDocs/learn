@@ -6,65 +6,15 @@ The unit emphasizes an architecturefirst approach—aligning data sources, roleb
 
 ## 1. Architecture Foundations for Copilot in Sales and Service
 
-### 1.1 Core Architecture Components
+### 1.1 Copilot Behaviors in Sales and Service
 
-Microsoft 365 Copilot for Sales and Service orchestrates intelligence across several interconnected layers:
+* Retrieves relevant customer or case context from emails, CRM records, meetings, and documents.
 
-### Visual Architecture
+* Summarizes interactions to accelerate seller and agent workflows.
 
-[Microsoft 365 Apps] — Outlook | Teams | Word
+* Generates responses, proposals, or resolution steps based on grounding data.
 
-        │
-
-        ▼
-
-[Copilot Orchestrator]
-
-        │
-
-        ▼
-
-[Connected Business Systems]
-
-   Dynamics 365 Sales / Customer Service
-
-   CRM / Case Management Systems
-
-        │
-
-        ▼
-
-[Grounding Data Sources]
-
-   Emails, meetings, documents, knowledge articles,
-
-   opportunities, accounts, cases, transcripts
-
-        │
-
-        ▼
-
-[Power Platform Extensibility]
-
-   Power Automate | Connectors | AI Builder models
-
-        │
-
-        ▼
-
-[Security, Compliance, Governance]
-
-   Role-based access | DLP | Sensitivity labels
-
-### 1.2 Copilot Behaviors in Sales and Service
-
-Retrieves relevant customer or case context from emails, CRM records, meetings, and documents.
-
-Summarizes interactions to accelerate seller and agent workflows.
-
-Generates responses, proposals, or resolution steps based on grounding data.
-
-Executes multi-step workflows using orchestrated actions through Power Platform.
+* Executes multi-step workflows using orchestrated actions through Power Platform.
 
 ## 2. Configuring Microsoft 365 Copilot for Sales
 
@@ -72,33 +22,33 @@ Executes multi-step workflows using orchestrated actions through Power Platform.
 
 #### Solution architects must validate:
 
-CRM data sources are connected and synchronized (Dynamics 365 Sales or third-party CRM).
+* CRM data sources are connected and synchronized (Dynamics 365 Sales or third-party CRM).
 
-Opportunity, account, contact, and activity fields are complete and standardized.
+* Opportunity, account, contact, and activity fields are complete and standardized.
 
-Sales documents stored in OneDrive or SharePoint maintain proper sensitivity labeling.
+* Sales documents stored in OneDrive or SharePoint maintain proper sensitivity labeling.
 
-Seller roles have proper visibility controls to prevent unauthorized data exposure.
+* Seller roles have proper visibility controls to prevent unauthorized data exposure.
 
 ### 2.2 Configuration Workflow
 
-Enable Copilot for Sales within Microsoft 365 and Dynamics 365 environments.
+* Enable Copilot for Sales within Microsoft 365 and Dynamics 365 environments.
 
-Connect CRM to Microsoft 365 apps using approved connectors.
+* Connect CRM to Microsoft 365 apps using approved connectors.
 
-Map opportunity, account, and activity fields to ensure Copilot grounding consistency.
+* Map opportunity, account, and activity fields to ensure Copilot grounding consistency.
 
-Define permissions using least-privilege principles.
+* Define permissions using least-privilege principles.
 
-Configure content sources for: 
+* Configure content sources for: 
 
-Email summarization
+* Email summarization
 
-Opportunity review
+* Opportunity review
 
-Proposal drafting
+* Proposal drafting
 
-Meeting preparation
+* Meeting preparation
 
 ### 2.3 Sales Workflow Acceleration
 
@@ -112,27 +62,27 @@ Proposal Drafting → Seller Review → Customer Engagement
 
 #### Copilot for Service enhances case resolution by grounding on:
 
-Case forms, customer records, interaction transcripts
+* Case forms, customer records, interaction transcripts
 
-Knowledge articles and troubleshooting steps
+* Knowledge articles and troubleshooting steps
 
-SLA targets and escalation paths
+* SLA targets and escalation paths
 
-Agent notes and historical interactions
+* Agent notes and historical interactions
 
 ### 3.2 Configuration Workflow
 
-Connect the case management engine (Dynamics 365 Customer Service or equivalent).
+* Connect the case management engine (Dynamics 365 Customer Service or equivalent).
 
-Validate knowledge article repositories for structure, quality, and labeling consistency.
+* Validate knowledge article repositories for structure, quality, and labeling consistency.
 
-Enable Copilot actions for summarization, knowledge lookup, and guided resolution.
+* Enable Copilot actions for summarization, knowledge lookup, and guided resolution.
 
-Integrate Power Automate flows to automate escalation, case routing, or approvals.
+* Integrate Power Automate flows to automate escalation, case routing, or approvals.
 
-Establish role-based access to ensure only authorized agents can perform sensitive actions.
+* Establish role-based access to ensure only authorized agents can perform sensitive actions.
 
-### 3.3 Case Resolution Loop (Visual)
+### 3.3 Case Resolution Loop 
 
 Case Intake → Copilot Summary → Knowledge Retrieval →
 
@@ -142,71 +92,71 @@ Suggested Actions → Agent Review → Resolution Logged
 
 ### 4.1 AI Builder Use Cases
 
-Classify case types automatically.
+* Classify case types automatically.
 
-Extract structured information from emails or attachments.
+* Extract structured information from emails or attachments.
 
-Predict lead quality or customer sentiment.
+* Predict lead quality or customer sentiment.
 
-Support multi-step reasoning workflows across systems.
+* Support multi-step reasoning workflows across systems.
 
 ### 4.2 Connectors and Automation Patterns
 
-Architects should consider:
+* Architects should consider:
 
-Standard CRM connectors for opportunity/case updates.
+* Standard CRM connectors for opportunity/case updates.
 
-Cross-system automation for approvals, notifications, escalations.
+* Cross-system automation for approvals, notifications, escalations.
 
-Pre- and post-processing flows for Copilotgenerated content.
+* Pre- and post-processing flows for Copilotgenerated content.
 
 ## 5. Governance and Guardrails
 
 ### 5.1 Security and Compliance Requirements
 
-Apply sensitivity labels to all customer-facing documents.
+* Apply sensitivity labels to all customer-facing documents.
 
-Use DLP policies to prevent data leakage outside the tenant.
+* Use DLP policies to prevent data leakage outside the tenant.
 
-Maintain clear audit trails for all Copilotgenerated actions.
+* Maintain clear audit trails for all Copilotgenerated actions.
 
-Ensure data residency and retention policies align with enterprise compliance.
+* Ensure data residency and retention policies align with enterprise compliance.
 
 ### 5.2 Operational Guardrails
 
-Human review required before sending externally generated content.
+* Human review required before sending externally generated content.
 
-Restricted actions for high-risk data categories.
+* Restricted actions for high-risk data categories.
 
-Versioning, rollback, and lifecycle management for automations.
+* Versioning, rollback, and lifecycle management for automations.
 
-Telemetry monitoring for adoption, data drift, and misuse.
+* Telemetry monitoring for adoption, data drift, and misuse.
 
 ## 6. Success Metrics and KPIs
 
 ### Sales KPIs
 
-Reduction in email and meeting preparation time.
+* Reduction in email and meeting preparation time.
 
-Increased speed from lead to opportunity qualification.
+* Increased speed from lead to opportunity qualification.
 
-Higher proposal quality consistency.
+* Higher proposal quality consistency.
 
 ### Service KPIs
 
-Reduced case handle time and resolution cycles.
+* Reduced case handle time and resolution cycles.
 
-Increased first-contact resolution rate.
+* Increased first-contact resolution rate.
 
-Improved knowledge article accuracy and retrieval speed.
+* Improved knowledge article accuracy and retrieval speed.
 
 ### Operational KPIs
 
-Adoption rate across seller and agent roles.
+* Adoption rate across seller and agent roles.
 
-Accuracy of Copilot responses based on grounding data.
+* Accuracy of Copilot responses based on grounding data.
 
-Lower manual rework on AI-generated content.
+* Lower manual rework on AI-generated content.
 
 ## References
 
