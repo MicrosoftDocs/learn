@@ -4,15 +4,11 @@ This unit provides solution architects with expert-level guidance for designing 
 
 Microsoft Copilot Studio extensibility focuses on enabling organizations to:
 
-Add custom logic and behaviors.
-
-Integrate enterprise systems through connectors, APIs, or actions.
-
-Modify and version agent instructions using prompt modification techniques.
-
-Extend agents with development-grade customization using Visual Studio Code.
-
-Support governance, safety, and lifecycle controls to maintain high-quality agent outputs.
+- Add custom logic and behaviors.
+- Integrate enterprise systems through connectors, APIs, or actions.
+- Modify and version agent instructions by using prompt modification techniques.
+- Extend agents with development-grade customization by using Visual Studio Code.
+- Support governance, safety, and lifecycle controls to maintain high-quality agent outputs.
 
 ## Core extensibility concepts
 
@@ -24,15 +20,12 @@ Instruction-level extensibility defines the behavior, tone, boundaries, and reas
 
 #### Solution architects refine the agent's
 
-**Purpose** (why the agent exists).
+- Purpose, which explains why the agent exists.
+- Role and constraints, which define what it is allowed and not allowed to do.
+- Action patterns, which describe preferred workflows and decision points.
+- Escalation rules, which define when to refer tasks to humans or other systems.
 
-**Role and constraints** (what it's allowed and not allowed to do).
-
-**Action patterns** (preferred workflows and decision points).
-
-**Escalation rules** (when to refer tasks to humans or other systems).
-
-**Prompt modification** features help add custom rules and behaviors without rebuilding the entire agent.
+Prompt modification features help add custom rules and behaviors without rebuilding the entire agent.
 
 ### Skill and capability extensibility
 
@@ -40,13 +33,10 @@ Skills define what an agent can _do_. Extending an agent's skills allows it to p
 
 #### Common extensibility patterns
 
-Add retrieval skills using enterprise content sources.
-
-Add action-oriented skills using Power Platform connectors or custom APIs.
-
-Add multi-step workflows for structured tasks.
-
-Add domain knowledge to improve accuracy and reduce incorrect information.
+- Add retrieval skills by using enterprise content sources.
+- Add action-oriented skills by using Power Platform connectors or custom APIs.
+- Add multi-step workflows for structured tasks.
+- Add domain knowledge to improve accuracy and reduce incorrect information.
 
 Solution architects should create modular, reusable skills to prevent duplication across agents.
 
@@ -56,93 +46,74 @@ Enterprise-grade agents must interact with systems of record across the business
 
 #### Integration extensibility enables an agent to
 
-Retrieve data from Dynamics 365, Microsoft 365, custom databases, or line-of-business applications.
-
-Execute actions through Power Automate flows.
-
-Interact with external APIs for specialized industry functions.
-
-Publish events or commands to other applications.
+- Retrieve data from Dynamics 365, Microsoft 365, custom databases, or line-of-business applications.
+- Execute actions through Power Automate flows.
+- Interact with external APIs for specialized industry functions.
+- Publish events or commands to other applications.
 
 #### When designing integrations, architects must consider
 
-Data governance and least-privilege access.
-
-Standardizing commands and interactions.
-
-Mapping business entities consistently across systems.
+- Data governance and least-privilege access.
+- Standardizing commands and interactions.
+- Mapping business entities consistently across systems.
 
 ### Pro-code agent extensibility in Visual Studio Code
 
-#### For advanced scenarios, agents can be developed or extended using Visual Studio Code.
+For advanced scenarios, agents can be developed or extended by using Visual Studio Code.
 
 Pro-code extensibility supports:
 
-Creating custom agent logic and reusable agent components.
-
-Writing codebased tools and actions.
-
-Implementing custom data transformations and orchestration logic.
-
-Source control integration for quality, testing, and lifecycle management.
+- Creating custom agent logic and reusable agent components.
+- Writing code-based tools and actions.
+- Implementing custom data transformations and orchestration logic.
+- Integrating with source control for quality, testing, and lifecycle management.
 
 This model is ideal for organizations needing high-complexity agent behaviors, deep integration patterns, or custom orchestration.
 
 ## Architectural patterns for extensible agents
 
-### Pattern 1: Modular agent architecture
+### Pattern 1. Modular agent architecture
 
-#### A modular agent is structured using interchangeable components (instructions, skills, integrations, and tools).
+A modular agent is structured by using interchangeable components such as instructions, skills, integrations, and tools.
 
 Benefits include:
 
-Faster updates and versioning.
+- Faster updates and versioning.
+- Ability to reuse modules across multiple agents.
+- Better isolation for compliance and secure design.
 
-Ability to reuse modules across multiple agents.
-
-Better isolation for compliance and secure design.
-
-#### Pattern 2: Multiagent collaboration pattern
+### Pattern 2. Multiagent collaboration pattern
 
 In complex environments, one agent shouldn't do everything. Architects create multiple specialized agents that collaborate through defined protocols.
 
 Examples:
 
-A "research agent" retrieves data.
+- A research agent retrieves data.
+- A workflow agent executes system tasks.
+- A communication agent drafts and formats content.
 
-A "workflow agent" executes system tasks.
-
-A "communication agent" drafts and formats content.
-
-#### Pattern 3: Domain-context pattern
+### Pattern 3. Domain-context pattern
 
 The agent adapts its reasoning based on the system, environment, or domain it's working within.
 
 A domain-context pattern defines:
 
-Domain-specific terminology.
-
-Business rules and constraints.
-
-Access policies and boundaries.
-
-Expected outcomes for each domain area.
+- Domain-specific terminology.
+- Business rules and constraints.
+- Access policies and boundaries.
+- Expected outcomes for each domain area.
 
 ### Architecting agent solutions: principles and patterns
 
-Microsoft has developed the Architecting agent solutions content that provides framework which provides essential principles and patterns for building secure, reliable agents. 
+Microsoft has developed the Architecting agent solutions content, which provides essential principles and patterns for building secure, reliable agents.
 
 #### The framework
 
-**Demonstrates leadership** by establishing industry standards for agent architecture, reinforcing Microsoft's leadership in responsible AI.
-
-**Provides recommended guidance** for developing agents for Copilot, reducing confusion.
-
-**Ensures quality and trust** by prioritizing reliability, traceability, and responsible AI for secure, auditable solutions.
-
-**Enables scale** by empowering developers to build solutions that align to industry and Microsoft prescribed best practices, without the need for technical support from Microsoft.
-
-**Aligns standards** by standardizing terminology and evaluation criteria for Copilot and agent solutions organization-wide.
+- Demonstrates leadership by establishing industry standards for agent architecture and reinforcing Microsoft's leadership in responsible AI.
+- Provides recommended guidance for developing agents for Copilot and reducing confusion.
+- Ensures quality and trust by prioritizing reliability, traceability, and responsible AI for secure, auditable solutions.
+- Enables scale by empowering developers to build solutions that align with industry and Microsoft-prescribed best practices without requiring technical support from Microsoft.
+- Aligns standards by standardizing terminology and evaluation criteria for Copilot and agent solutions across the organization.
 
 #### This framework covers
 
@@ -150,9 +121,9 @@ Microsoft has developed the Architecting agent solutions content that provides f
 - [Operability](/microsoft-copilot-studio/guidance/architecture/determine-operability)
 - [Trust, traceability, and transparency](/microsoft-copilot-studio/guidance/architecture/determine-trust)
 
-This framework doesn't cover content already addressed by established standards such as [Azure Well-Architected Framework](/azure/well-architected/), [Power Platform Well-Architected](/power-platform/well-architected), [National Institute of Standards and Technology (NIST)](https://www.nist.gov/cyberframework), or other recognized security frameworks. 
+This framework doesn't cover content already addressed by established standards such as [Azure Well-Architected Framework](/azure/well-architected/), [Power Platform Well-Architected](/power-platform/well-architected), [National Institute of Standards and Technology (NIST)](https://www.nist.gov/cyberframework), or other recognized security frameworks.
 
-For more information see the following principles and patterns for architecting agent solutions: [https://learn.microsoft.com/microsoft-copilot-studio/guidance/architecture/](/microsoft-copilot-studio/guidance/architecture/) 
+For more information, see the following principles and patterns for architecting agent solutions: [https://learn.microsoft.com/microsoft-copilot-studio/guidance/architecture/](/microsoft-copilot-studio/guidance/architecture/)
 
 ## References
 

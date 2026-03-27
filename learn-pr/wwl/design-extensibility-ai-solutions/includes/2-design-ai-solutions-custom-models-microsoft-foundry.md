@@ -17,15 +17,25 @@ Solution architects determine when custom AI models are needed by evaluating bus
 
 ### Appropriate scenarios
 
-**Domain-specific language and reasoning**<br>Industries such as legal, healthcare, engineering, finance, and manufacturing require AI models that understand specialized terminology and follow domain-specific logic.
+#### Domain-specific language and reasoning
 
-**High-impact decision processes**<br>Custom models are used when accuracy directly affects compliance, financial outcomes, or operational safety.
+Industries such as legal, healthcare, engineering, finance, and manufacturing require AI models that understand specialized terminology and follow domain-specific logic.
 
-**Data sovereignty and governance mandates**<br>Custom models enable organizations to determine exactly how data is processed, stored, evaluated, and monitored.
+#### High-impact decision processes
 
-**Unique workflows or personalization requirements**<br>Pre-built copilots may not support custom interaction patterns, long-running processes, or proprietary toolchains.
+Custom models are used when accuracy directly affects compliance, financial outcomes, or operational safety.
 
-**Cost optimization for high-volume inference**<br>Small, specialized custom models can provide performance and cost advantages over large foundation models.
+#### Data sovereignty and governance mandates
+
+Custom models enable organizations to determine exactly how data is processed, stored, evaluated, and monitored.
+
+#### Unique workflows or personalization requirements
+
+Pre-built copilots may not support custom interaction patterns, long-running processes, or proprietary toolchains.
+
+#### Cost optimization for high-volume inference
+
+Small, specialized custom models can provide performance and cost advantages over large foundation models.
 
 ## Understanding architecture foundations in Microsoft Foundry
 
@@ -33,107 +43,110 @@ Microsoft Foundry provides an end-to-end platform for custom model development, 
 
 ### Key architectural elements
 
-**Model Catalog**<br>Offers base models that can be fine-tuned or enhanced using enterprise data and specialized tasks.
+#### Model catalog
 
-**Training and Fine-tuning Pipelines**<br>Help orchestrate data ingestion, labeling, evaluation, and iterative improvements at scale.
+Offers base models that can be fine-tuned or enhanced using enterprise data and specialized tasks.
 
-**Agent and Tooling Integration**<br>Custom models can be embedded into Foundry agents and orchestrations to support multi-step reasoning and automated workflows.
+#### Training and fine-tuning pipelines
 
-**Responsible AI Controls**<br>Includes content filtering, safety evaluation, transparency artifacts, policy enforcement, and auditability.
+Help orchestrate data ingestion, labeling, evaluation, and iterative improvements at scale.
 
-**Deployment Topologies**
+#### Agent and tooling integration
 
-Hosted secure environments
+Custom models can be embedded into Foundry agents and orchestrations to support multi-step reasoning and automated workflows.
 
-Private networking deployments
+#### Responsible AI controls
 
-Integration with Azure Kubernetes Service and Foundry runtime environments
+Includes content filtering, safety evaluation, transparency artifacts, policy enforcement, and auditability.
+
+#### Deployment topologies
+
+- Hosted secure environments.
+- Private networking deployments.
+- Integration with Azure Kubernetes Service and Foundry runtime environments.
 
 ## Designing AI solutions with custom models
 
 Solution architects should follow a structured, repeatable design approach to ensure models align with business objectives.
 
-### Step 1 Define the business objectives
+### Step 1. Define the business objectives
 
-Identify measurable outcomes (accuracy goals, time-saved targets, cost-efficiency goals).
+- Identify measurable outcomes, such as accuracy goals, time-saved targets, and cost-efficiency goals.
+- Map objectives to use cases where custom models outperform standard copilots.
 
-Map objectives to use cases where custom models outperform standard copilots.
+### Step 2. Assess data requirements
 
-### Step 2 Assess data requirements
+- Evaluate available proprietary datasets.
+- Identify gaps in labeling, quality, diversity, or structure.
+- Ensure governance policies allow data to be used in model training.
 
-Evaluate available proprietary datasets.
+### Step 3. Select the custom model path
 
-Identify gaps in labeling, quality, diversity, or structure.
+Typical options include:
 
-Ensure governance policies allow data to be used in model training.
+#### Fine-tuning foundation models
 
-### Step 3 Select the custom model path
+Adjust behavior using domain datasets without full retraining.
 
-#### Typical options include
+#### Training domain-built small models
 
-**Fine-tuning foundation models**<br>Adjust behavior using domain datasets without full retraining.
+Useful for lightweight tasks requiring speed and edge compatibility.
 
-**Training domain-built small models**<br>Useful for lightweight tasks requiring speed and edge compatibility.
+#### Hybrid architectures
 
-**Hybrid architectures**<br>Combining custom models with prebuilt copilots for augmented reasoning.
+Combine custom models with prebuilt copilots for augmented reasoning.
 
-### Step 4 Integration with enterprise systems
+### Step 4. Integrate with enterprise systems
 
-#### Custom models should integrate with
+Custom models should integrate with:
 
-Dynamics 365 applications
+- Dynamics 365 applications.
+- Azure Functions and Logic Apps.
+- Foundry agent workflows.
+- Azure AI Search and data stores.
+- Business process automation pipelines.
 
-Azure Functions and Logic Apps
+### Step 5. Validate and evaluate
 
-Foundry agent workflows
+Establish a rigorous testing plan that includes:
 
-Azure AI Search and data stores
-
-Business process automation pipelines
-
-### Step 5 Validation and evaluation
-
-#### Establish a rigorous testing plan
-
-Scenario-based evaluations
-
-Safety and bias analysis
-
-Stress, latency, and scaling tests
-
-ROI measurement and business validation
+- Scenario-based evaluations.
+- Safety and bias analysis.
+- Stress, latency, and scaling tests.
+- ROI measurement and business validation.
 
 ## Operationalizing custom models in Foundry
 
-Modern AI systems require robust operational frameworks, especially with custom AI models. Foundry has tools to help support these custom AI models for long term feasibility. 
+Modern AI systems require robust operational frameworks, especially for custom AI models. Foundry has tools to support these models for long-term feasibility.
 
 ### Key operational components
 
-**Model Monitoring and Observability**<br>Track drift, performance degradation, user friction areas, latency, and unexpected model outputs.
+#### Model monitoring and observability
 
-**Governance and Compliance Controls**<br>Ensure every deployment meets enterprise privacy, security, and regulatory requirements.
+Track drift, performance degradation, user friction areas, latency, and unexpected model outputs.
 
-**Versioning and Lifecycle Management**<br>Maintain clear model version trails, update pipelines, and rollback strategies.
+#### Governance and compliance controls
 
-**Deployment Automation (MLOps/GenAIOps)**<br>Automate validations, approval workflows, and environment-specific deployments.
+Ensure every deployment meets enterprise privacy, security, and regulatory requirements.
+
+#### Versioning and lifecycle management
+
+Maintain clear model version trails, update pipelines, and rollback strategies.
+
+#### Deployment automation (MLOps/GenAIOps)
+
+Automate validations, approval workflows, and environment-specific deployments.
 
 ### Custom model decision matrix
 
-Decision Factor             | Standard Copilot | Custom Model (Foundry)
-
------------------------------------------------------------------------
-
-Domain specificity needed    | Low              | High
-
-Compliance restrictions      | Moderate         | High
-
-Performance requirements     | Medium           | High
-
-Data confidentiality         | Medium           | Full control
-
-Workflow complexity          | Low/Medium       | High
-
-Inference cost optimization  | Moderate         | High (small language models)
+| Decision factor | Standard Copilot | Custom model (Foundry) |
+| --- | --- | --- |
+| Domain specificity needed | Low | High |
+| Compliance restrictions | Moderate | High |
+| Performance requirements | Medium | High |
+| Data confidentiality | Medium | Full control |
+| Workflow complexity | Low/Medium | High |
+| Inference cost optimization | Moderate | High (small language models) |
 
 ## References
 
