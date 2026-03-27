@@ -1,4 +1,4 @@
-**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it.  You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
+**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Create a new user in Microsoft Entra ID
 
@@ -40,19 +40,17 @@ You can skip creating this user if you created the same user in the earlier modu
 
 ## Assign a license to a group
 
-1. In the **All groups** list, select **Marketing**.
-2. In the Marketing window, under **Manage**, select **Licenses**.
-3. Notices that no licenses are currently assigned to this group.
-4. Open a new tab in your browser.
-5. Go to the Microsoft 365 admin center at [http://admin.microsoft.com](https://admin.microsoft.com).
-6. Select **Billing** from the menu on the left.
-7. Select **Licenses**.
-8. From the list of licenses you have available, select one.
-9. Next you select **Groups** from the list near the top of the screen.<br>
-10. On the Groups page, select + **Assign license**.<br>
-11. Search for and select the **Marketing** group we created earlier.
-12. Select the **Assign** button at the bottom of the dialog.
-13. You should get a message that licenses were successfully assigned.
+License assignment to groups is managed through the Microsoft 365 admin center.
+
+1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
+2. Select **Billing** from the menu on the left.
+3. Select **Licenses**.
+4. From the list of licenses you have available, select one.
+5. Select **Groups** from the list near the top of the screen.
+6. On the Groups page, select **+ Assign license**.
+7. Search for and select the **Marketing** group you created earlier.
+8. Select the **Assign** button at the bottom of the dialog.
+9. You should get a message that licenses were successfully assigned.
 
 ## Restore or remove a recently deleted user with Microsoft Entra ID
 

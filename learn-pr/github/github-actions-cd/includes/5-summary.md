@@ -29,3 +29,7 @@ Here are some links to more information on the topics discussed in this module.
 - [Artifacts REST API](https://docs.github.com/rest/actions?apiVersion=2022-11-28#artifacts)
 - [Adding a workflow status badge](https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge)
 - [Environments](https://docs.github.com/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

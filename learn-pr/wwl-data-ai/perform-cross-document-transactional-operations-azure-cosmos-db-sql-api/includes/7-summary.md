@@ -9,5 +9,5 @@ Now that you completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Transactional batch operations in Azure Cosmos DB using the SDK](/azure/cosmos-db/nosql/transactional-batch)
+- [Transactional batch operations in Azure Cosmos DB using the SDK](/azure/cosmos-db/transactional-batch)
 - [Transactions and optimistic concurrency control](/azure/cosmos-db/nosql/database-transactions-optimistic-concurrency)

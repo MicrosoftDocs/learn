@@ -9,7 +9,7 @@ metadata:
   description: This unit explains what service lifetimes are in an ASP.NET Core app.
   ms.date: 11/7/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 5
 content: |

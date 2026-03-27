@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundry-sdk.responses-api
+title: Generate responses with the Responses API
+metadata:
+  title: Generate responses with the Responses API in the Foundry SDK
+  description: Learn to use the Responses API to generate AI responses in applications.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-responses-api.md)]

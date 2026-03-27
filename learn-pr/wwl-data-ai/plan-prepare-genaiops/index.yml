@@ -28,7 +28,7 @@ roles:
   - ai-engineer
 products: 
   - azure
-  - ai-services
+  - foundry-tools
 subjects: 
   - cloud-computing
   - artificial-intelligence

@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.integrate-sql-solutions-azure-services
+metadata:
+  title: Integrate SQL solutions with Azure services
+  description: Learn how to use Data API Builder to create REST and GraphQL APIs for SQL databases, deploy to Azure, configure monitoring, and implement event-driven patterns for change handling.
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ai-usage: ai-generated
+title: Integrate SQL solutions with Azure services
+summary: >-
+  Create REST and GraphQL APIs for SQL databases using Data API Builder, deploy to Azure hosting services, and implement monitoring and event-driven change patterns.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Create configuration files for Data API Builder with database connections and runtime settings
+    - Define entities for REST and GraphQL with field mappings, caching, and relationships
+    - Configure REST and GraphQL endpoints with custom paths and operations
+    - Expose database views, stored procedures, and GraphQL relationships
+    - Explore deployment options for Data API Builder, including Azure Container Apps, App Service, and Static Web Apps
+    - Set up Azure Monitor configurations with Application Insights and Log Analytics
+    - Handle database changes using Change Data Capture, Azure Functions, and Change Event Streaming
+prerequisites: |
+  - Experience with SQL Server, Azure SQL Database, or SQL databases in Microsoft Fabric
+  - Familiarity with T-SQL for creating tables, views, and stored procedures
+  - Basic understanding of REST APIs and JSON
+  - Access to an Azure subscription for deployment exercises
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - database-administrator
+products:
+  - azure-sql-database
+  - sql-server
+units:
+  - learn.wwl.integrate-sql-solutions-azure-services.introduction
+  - learn.wwl.integrate-sql-solutions-azure-services.create-configuration-files-data-api-builder
+  - learn.wwl.integrate-sql-solutions-azure-services.define-entities-rest-graphql
+  - learn.wwl.integrate-sql-solutions-azure-services.expose-database-objects-stored-procedures-views
+  - learn.wwl.integrate-sql-solutions-azure-services.deploy-data-api-builder-azure-services
+  - learn.wwl.integrate-sql-solutions-azure-services.recommend-azure-monitor-configurations
+  - learn.wwl.integrate-sql-solutions-azure-services.handle-changes-event-driven-patterns
+  - learn.wwl.integrate-sql-solutions-azure-services.exercise-data-api-builder
+  - learn.wwl.integrate-sql-solutions-azure-services.knowledge-check
+  - learn.wwl.integrate-sql-solutions-azure-services.summary
+badge:
+  uid: learn.wwl.integrate-sql-solutions-azure-services.badge

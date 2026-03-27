@@ -10,7 +10,7 @@ metadata:
   description: This unit is an exercise that demonstrates how to register and consume services in an ASP.NET Core app.
   ms.date: 11/7/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 10
 content: |

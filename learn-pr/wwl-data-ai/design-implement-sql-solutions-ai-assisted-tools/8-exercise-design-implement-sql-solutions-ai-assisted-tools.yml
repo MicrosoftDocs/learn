@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.exercise-design-implement-sql-solutions-ai-assisted-tools
+title: Exercise - Configure AI-assisted tools for database development
+metadata:
+  title: Exercise - Configure AI-assisted tools for database development
+  description: Hands-on exercise to create custom GitHub Copilot instruction files and configure MCP server connections in Visual Studio Code.
+  ms.date: 02/03/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-design-implement-sql-solutions-ai-assisted-tools.md)]

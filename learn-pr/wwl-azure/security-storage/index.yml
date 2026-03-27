@@ -24,7 +24,7 @@ abstract: |
 
   -   Strengthen data security with soft delete, backups, versioning, immutable storage, BYOK, and double encryption.
 prerequisites: '-   None'
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-module.svg
 levels:
 - intermediate
 roles:

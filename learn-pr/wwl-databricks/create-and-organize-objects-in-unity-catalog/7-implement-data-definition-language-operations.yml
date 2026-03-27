@@ -4,7 +4,7 @@ title: Implement DDL operations
 metadata:
   title: Implement DDL operations
   description: Learn how to implement Data Definition Language (DDL) operations in Unity Catalog to create functions, procedures, and modify catalogs and tables.
-  ms.date: 01/30/2026
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

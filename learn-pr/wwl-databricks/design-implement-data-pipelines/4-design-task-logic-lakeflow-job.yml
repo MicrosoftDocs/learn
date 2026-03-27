@@ -4,7 +4,7 @@ title: Design Lakeflow job logic
 metadata:
   title: Design Lakeflow Job Logic
   description: Learn how to design task logic for Lakeflow Jobs in Azure Databricks, including task dependencies, execution patterns, conditional logic, and parameter configuration.
-  ms.date: 12/07/2025
+  ms.date: 03/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

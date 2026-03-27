@@ -1,31 +1,26 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=277ddb64-b658-4338-8e59-4d78b7ece007]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f1bffd16-9605-4826-ab76-f750057a74e3]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
 
 ::: zone-end
 
 ::: zone pivot="text"
 
-A Foundry resource and project is sufficient for using Azure Language in Foundry portal, but you will need an additional *Language resource* to use the Azure Language SDK. You can create a Language resource in the Azure portal, or programmatically in a command line interface (CLI).  
-
-:::image type="content" source="../media/azure-portal-create-resource.png" alt-text="Screenshot of the Azure portal with the marketplace open to the Language resource." lightbox="../media/azure-portal-create-resource.png":::
-
-When you create a Language resource, Azure creates an *endpoint* for Azure Language. The endpoint is the address to a specific cloud service or model. We can find the Language service endpoint and key in the Azure portal. 
-
-:::image type="content" source="../media/azure-portal-credentials.png" alt-text="Screenshot of a Language resource in the Azure portal with the key and endpoint page open." lightbox="../media/azure-portal-credentials.png":::
-
-When you run your application code, your application sends a request, or call, to the endpoint. The call can be sent using the REST API or SDK. The service returns a response, such as key phrases detected, in a format known as JSON. 
+The **Azure Language SDK** is a client library that makes it easy for developers to add natural language processing (NLP) features—such as sentiment analysis, entity recognition, key phrase extraction, language detection, and text summarization—to their applications without having to call REST APIs directly. You would use the SDK when writing applications in *Python*, *JavaScript*, *C#*, or *Java*.
 
 >[!NOTE]
->You can review foundational material on applications and using endpoints in: [Get started with AI in Azure](/training/modules/get-started-with-ai-in-azure/5-endpoints?pivots=text?azure-portal=true).
+>An *API* (Application Programming Interface) is a set of rules and endpoints that allows one software application to communicate with and use the functionality or data of another application. A client library is a set of ready made code that developers can use in their application to easily talk to a service or API. You can review foundational material on applications and using endpoints in: [Get started with AI in Azure](/training/modules/get-started-with-ai-in-azure/5-endpoints?pivots=text?azure-portal=true). 
 
-The **Azure Language SDK** is a set of programming libraries that let your application talk to Azure’s Language Services. You would use the SDK when writing applications in **Python**, **JavaScript**, **C#**, or **Java**.
+![Screenshot of the Foundry portal home page with the key and endpoint location visible.](../media/endpoint-key-example.png)
+
+To use the Azure Language SDK, you need to have a *Foundry resource*. When you create a Foundry resource, Azure creates an *endpoint*. You can find your resource endpoint and key in the *new* Foundry portal's home page. When you run your application code, your application sends a request, or call, to the endpoint. The call can be sent using the REST API or SDK. The service returns a response, such as key phrases detected, in a format known as JSON. 
 
 ## Use the Azure Language Python SDK 
 
-Let's see how you can use the Azure Language Python SDK to build an application that analyzes a document. 
-
-To use the Azure Language Python SDK, you need to have compatible version of Python and the Azure Language Python SDK installed. 
+Let's see how you can use the Azure Language Python SDK to build an application that analyzes a document. To use the Azure Language Python SDK, you need to have compatible version of Python and the Azure Language Python SDK installed. 
 
 Application code is written in *code editors*, such as Visual Studio Code. A code editor’s *terminal* is a built‑in command‑line window inside the editor where you can run commands without leaving your development environment.  
 
@@ -48,7 +43,7 @@ from azure.core.credentials import AzureKeyCredential
 
 :::image type="content" source="../media/python-sdk-client-example.png" alt-text="Screenshot of Visual Studio Code with a Python file open with a focus on the client object created." lightbox="../media/python-sdk-client-example.png":::
 
-Then we use our Language resource endpoint and key to create an authenticated **client object**, the tool your code uses to communicate with a service. The client object knows the service's endpoint, carries credentials (like keys or tokens), exposes methods (for example: `analyze_sentiment()`), and handles sending requests and receiving responses under the hood.
+Then we use our Foundry resource endpoint and key to create an authenticated **client object**, the tool your code uses to communicate with a service. The client object knows the service's endpoint, carries credentials (like keys or tokens), exposes methods (for example: `analyze_sentiment()`), and handles sending requests and receiving responses under the hood.
 
 We use the client's methods to call Azure Language functions. For example, we can extract key phrases with `client.extract_key_phrases()`, recognize entities with the function `client.recognize_entities()`, and analyze sentiment with `client.analyze_sentiment()`. To generate a summary, we need to use an asynchronous technique to begin the summarization task and retrieve the results. 
 
@@ -69,8 +64,8 @@ from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
 
 # Create a client 
-endpoint = os.environ["AZURE_LANGUAGE_ENDPOINT"]
-key = os.environ["AZURE_LANGUAGE_KEY"]
+endpoint = os.environ["FOUNDRY_ENDPOINT"]
+key = os.environ["FOUNDRY_KEY"]
 
 client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 ```

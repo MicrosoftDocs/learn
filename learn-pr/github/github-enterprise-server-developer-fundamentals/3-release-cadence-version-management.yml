@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-enterprise-server-developer-fundamentals.release-cadence-version-management
+title: Release cadence and version awareness
+metadata:
+  title: Release Cadence and Version Awareness
+  description: This content is a part of the GitHub Enterprise Server Fundamentals for Developers module.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 02/16/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-release-cadence-version-management.md)]

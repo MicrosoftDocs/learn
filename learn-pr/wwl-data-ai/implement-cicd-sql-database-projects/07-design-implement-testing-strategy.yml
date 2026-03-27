@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-sql-database-projects.design-implement-testing-strategy
+title: Design and implement a testing strategy
+metadata:
+  title: Design and implement a testing strategy
+  description: Design and implement a database testing strategy with SQL Server unit tests, integration tests, and CI/CD pipeline integration.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/14/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/07-design-implement-testing-strategy.md)]

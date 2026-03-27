@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.refactor-legacy-code-modernization-agent
+title: Refactoring legacy code with the modernization agent
+metadata:
+  title: Refactoring Legacy Code with the Modernization Agent
+  description: Learn how to use the modernization agent in GitHub Copilot to refactor legacy code.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-refactor-legacy-code-modernization-agent.md)]

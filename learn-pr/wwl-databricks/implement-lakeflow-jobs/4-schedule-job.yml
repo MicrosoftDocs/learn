@@ -4,7 +4,7 @@ title: Schedule a job
 metadata:
   title: Schedule a Job
   description: Learn how to schedule Lakeflow Jobs in Azure Databricks using simple intervals or advanced cron expressions to automate your data pipelines.
-  ms.date: 01/15/2026
+  ms.date: 03/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

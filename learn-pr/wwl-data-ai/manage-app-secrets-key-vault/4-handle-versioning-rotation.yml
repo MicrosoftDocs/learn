@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-secrets-key-vault.handle-versioning-rotation
+title: Handle secret versioning and rotation
+metadata:
+  title: Handle Secret Versioning and Rotation
+  description: Handle secret versioning and rotation
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-handle-versioning-rotation.md)]

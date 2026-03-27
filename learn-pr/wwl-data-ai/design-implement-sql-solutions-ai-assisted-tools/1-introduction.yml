@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-sql-solutions-ai-assisted-tools.introduction
+title: Introduction
+metadata:
+  title: Introduction to AI-assisted SQL development tools
+  description: Learn how GitHub Copilot and Fabric Copilot can accelerate database development on Microsoft SQL platforms including SQL Server, Azure SQL, and Microsoft Fabric.
+  ms.date: 02/02/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

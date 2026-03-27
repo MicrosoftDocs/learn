@@ -23,17 +23,17 @@ quiz:
     - content: "Entity detection"
       isCorrect: false
       explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure Language to perform sentiment analysis on a sentence. The confidence scores 0.04 positive, 0.36 neutral, and 0.60 negative are returned. What do these confidence scores indicate about the sentence sentiment?"
+  - content: "You use Azure Language to perform sentiment analysis on a sentence. The sentiment scores returned are: 0.04 positive, 0.36 neutral, and 0.60 negative. What do these scores indicate about the sentence sentiment?"
     choices:
     - content: "The document is positive."
       isCorrect: false
-      explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
+      explanation: "Incorrect. The sentiment is most likely the type with the highest sentiment score."
     - content: "The document is neutral."
       isCorrect: false
-      explanation: "Incorrect. The sentiment is most likely the type with the highest confidence score."
+      explanation: "Incorrect. The sentiment is most likely the type with the highest sentiment score."
     - content: "The document is negative."
       isCorrect: true
-      explanation: "Correct. The sentiment is most likely the type with the highest confidence score, in this case 0.60 negative."
+      explanation: "Correct. The sentiment is most likely the type with the highest sentiment score, in this case 0.60 negative."
   - content: "What is the purpose of the client object in the Azure Language SDK?"
     choices:
     - content: "It stores the application's user interface settings."

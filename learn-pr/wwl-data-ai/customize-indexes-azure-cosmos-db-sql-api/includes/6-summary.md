@@ -9,7 +9,7 @@ Now that you have completed this module, you can:
 For more information about the topics discussed in this module, see:
 
 - [Indexing policies in Azure Cosmos DB][/azure/cosmos-db/index-policy]
-- [Manage indexing policies in Azure Cosmos DB][/azure/cosmos-db/sql/how-to-manage-indexing-policy]
+- [Manage indexing policies in Azure Cosmos DB][/azure/cosmos-db/how-to-manage-indexing-policy]
 
 [/azure/cosmos-db/index-policy]: /azure/cosmos-db/index-policy
-[/azure/cosmos-db/sql/how-to-manage-indexing-policy]: /azure/cosmos-db/sql/how-to-manage-indexing-policy
+[/azure/cosmos-db/how-to-manage-indexing-policy]: /azure/cosmos-db/how-to-manage-indexing-policy

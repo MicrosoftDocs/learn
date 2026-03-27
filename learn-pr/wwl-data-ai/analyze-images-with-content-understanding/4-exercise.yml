@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-with-content-understanding.exercise
+title: Exercise - Analyze images with Content Understanding
+metadata:
+  title: Exercise - Analyze images with Content Understanding
+  description: "Get practical experience with analyzing images using Azure Content Understanding."
+  ms.date: 03/04/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise.md)]

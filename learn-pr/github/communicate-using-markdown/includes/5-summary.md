@@ -17,3 +17,8 @@ Here are some links to more information on the topics we discussed in this modul
 - [Writing on GitHub](https://help.github.com/github/writing-on-github?azure-portal=true)
 - [GitHub Markdown emojis](https://gist.github.com/rxaviers/7360908?azure-portal=true)
 - [Autolinked references and URLs](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls?azure-portal=true)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!
+

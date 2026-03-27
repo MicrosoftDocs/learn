@@ -4,7 +4,7 @@ title: Transform data with denormalization and pivots
 metadata:
   title: Transform Data With Denormalization and Pivots
   description: Learn how to denormalize data for faster queries, pivot rows into columns for cross-tabular analysis, and unpivot columns into rows in Azure Databricks.
-  ms.date: 02/17/2026
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

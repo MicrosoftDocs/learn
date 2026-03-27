@@ -4,7 +4,7 @@ title: Manage data quality with pipeline expectations
 metadata:
   title: Manage Data Quality with Pipeline Expectations
   description: Learn how to use pipeline expectations in Lakeflow Spark Declarative Pipelines to define and enforce data quality rules for streaming tables and materialized views.
-  ms.date: 12/07/2025
+  ms.date: 02/19/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -4,64 +4,40 @@ Sentiment analysis is used to evaluate how positive or negative a text document 
 - Evaluating a movie, book, or product by quantifying sentiment based on reviews.
 - Prioritizing customer service responses to correspondence received through email or social media messaging.
 
-When using Azure Language to evaluate sentiment, the response includes overall document sentiment and individual sentence sentiment for each document submitted to the service.
+When using Azure Language to evaluate sentiment, the response includes overall document sentiment and individual sentence sentiment for each document in the input.
 
-For example, you could submit a single document for sentiment analysis like this:
+```python
+# Example text to analyze
+documents = ["My favorite lyric. 'What a wonderful world!'",
+             "These lyrics are so sad. " \
+             "'Only the lonely know the heartaches I've been through." \
+             "Only the lonely Know I cry and cry for you.'"]
 
-```JSON
-{
-  "kind": "SentimentAnalysis",
-  "parameters": {
-    "modelVersion": "latest"
-  },
-  "analysisInput": {
-    "documents": [
-      {
-        "id": "1",
-        "language": "en",
-        "text": "Good morning!"
-      }
-    ]
-  }
-}
+# Analyze sentiment
+response = client.analyze_sentiment(documents=documents)
+for doc in response:
+    print(f"Document: {doc.id}: {doc.sentiment} ({doc.confidence_scores})")
+    for sentence in doc.sentences:
+        print(f"\tSentence: {sentence.text}")
+        print(f"\t\tSentiment: {sentence.sentiment} ({sentence.confidence_scores})")
 
 ```
 
-The response from the service might look like this:
+The response for this input might look something like this:
 
-```JSON
-{
-  "kind": "SentimentAnalysisResults",
-  "results": {
-    "documents": [
-      {
-        "id": "1",
-        "sentiment": "positive",
-        "confidenceScores": {
-          "positive": 0.89,
-          "neutral": 0.1,
-          "negative": 0.01
-        },
-        "sentences": [
-          {
-            "sentiment": "positive",
-            "confidenceScores": {
-              "positive": 0.89,
-              "neutral": 0.1,
-              "negative": 0.01
-            },
-            "offset": 0,
-            "length": 13,
-            "text": "Good morning!"
-          }
-        ],
-        "warnings": []
-      }
-    ],
-    "errors": [],
-    "modelVersion": "2022-11-01"
-  }
-}
+```output
+Document: 0: positive ({'positive': 0.99, 'neutral': 0.0, 'negative': 0.0})
+        Sentence: My favorite lyric. 
+                Sentiment: positive ({'positive': 1.0, 'neutral': 0.0, 'negative': 0.0})
+        Sentence: 'What a wonderful world!'
+                Sentiment: positive ({'positive': 0.99, 'neutral': 0.01, 'negative': 0.0})
+Document: 1: negative ({'positive': 0.01, 'neutral': 0.08, 'negative': 0.9})
+        Sentence: These lyrics are so sad.
+                Sentiment: negative ({'positive': 0.0, 'neutral': 0.0, 'negative': 1.0})
+        Sentence: 'Only the lonely know the heartaches I've been through.
+                Sentiment: negative ({'positive': 0.01, 'neutral': 0.1, 'negative': 0.89})
+        Sentence: Only the lonely Know I cry and cry for you.'
+                Sentiment: negative ({'positive': 0.04, 'neutral': 0.15, 'negative': 0.81})
 ```
 
 Sentence sentiment is based on confidence scores for **positive**, **negative**, and **neutral** classification values between 0 and 1.

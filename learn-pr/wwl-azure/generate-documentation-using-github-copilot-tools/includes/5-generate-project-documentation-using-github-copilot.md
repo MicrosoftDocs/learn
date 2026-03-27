@@ -2,10 +2,10 @@ Project documentation describes the purpose, goals, and requirements of a projec
 
 GitHub Copilot's Chat view is an ideal tool for generating project documentation, because it can analyze the entire project structure and provide high-level overviews of the project. The Chat view can also be used to generate specific types of documentation, such as README files, API references, and other project-related documents.
 
-You can use each of the Chat view modes (Ask, Edit, or Agent) to generate project documentation. Each mode has its own strengths and weaknesses. Project specifications and other constraints affect which mode should be used.
+You can use each of the Chat view modes (Ask, Agent, or Plan) to generate project documentation. Each mode has its own strengths and weaknesses. Project specifications and other constraints affect which mode should be used.
 
 > [!IMPORTANT]
-> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Chat view in agent mode, each prompt you enter counts as one premium request, multiplied by the model's multiplier. GitHub Copilot may take several follow-up actions to complete your task, but these follow-up actions don't count toward your premium request usage. Only the prompts you enter are billed. The total premium requests used depends on how many prompts you enter and the model selected.
 
 ## Establish project documentation requirements
 
@@ -28,11 +28,11 @@ For example, the README.md could include the following sections:
 
 GitHub Copilot Chat can help you generate project documentation that meets the specific needs of your project and its stakeholders.
 
-## Use the ask mode to generate project documentation
+## Use the Ask agent mode to generate project documentation
 
-The ask mode can be used to analyze a workspace and then generate documentation.
+The Ask agent mode can be used to analyze a workspace and then generate documentation.
 
-Use the following process to generate project documentation using the ask mode:
+Use the following process to generate project documentation using the Ask agent mode:
 
 1. Identify the documentation requirements and supporting resources.
 
@@ -40,16 +40,16 @@ Use the following process to generate project documentation using the ask mode:
 
     - Identify the resources required to generate the documentation. Your code workspace could be the only required resource. However, you may need to add context to the chat for sections like "Contributing", "Credits", and "Contact".
 
-1. Open the Chat view and start a new chat session using the ask mode.
+1. Open the Chat view and start a new chat session using the Ask agent mode.
 
 1. Add context to the chat session.
 
-    - You can add context to the chat session by dragging and dropping files from Visual Studio Code's EXPLORER view into the Chat view. You can also use the **Add Context** button.
-    - You can open external files in the code editor to include resources that aren't part of the workspace and use them to provide more context. For example, you can open markdown files that contain contributor guidelines or contact information and then use the **Add Context** button to add them to the Chat view context.
+    - You can add context to the chat session by dragging and dropping files from Visual Studio Code's EXPLORER view into the Chat view. You can also use the **Attach Context** button (paperclip icon).
+    - You can open external files in the code editor to include resources that aren't part of the workspace and use them to provide more context. For example, you can open markdown files that contain contributor guidelines or contact information and then use the **Attach Context** button to add them to the Chat view context.
 
 1. Enter a series of prompts that investigate your documentation requirements.
 
-    You can use the ask mode to analyze the workspace and build a chat session history that supports your documentation requirements. Describing your goals can help establish context for the chat session. Asking questions that address your requirements helps GitHub Copilot identify the information needed to generate the documentation.
+    You can use the Ask agent mode to analyze the workspace and build a chat session history that supports your documentation requirements. Describing your goals can help establish context for the chat session. Asking questions that address your requirements helps GitHub Copilot identify the information needed to generate the documentation.
 
     Refresh the added context as needed.
 
@@ -63,35 +63,35 @@ Use the following process to generate project documentation using the ask mode:
 
     For example, create a README.md file at the root of the workspace, and the insert the suggested content into the file.
 
-    You can use the ask mode to suggest updates for specific sections of your project after creating the document, or use other GitHub Copilot tools to help with updates.
+    You can use the Ask agent mode to suggest updates for specific sections of your project after creating the document, or use other GitHub Copilot tools to help with updates.
 
-## Use the edit mode to generate project documentation
+## Use the Plan mode to generate project documentation
 
-Edit mode is best for making changes to specific files in the project. The edit mode can be used to generate project documentation by adding context files to the chat and then creating or updating documentation files.
+Plan mode is best for creating a detailed implementation plan before generating project documentation. The Plan mode analyzes the codebase, identifies documentation requirements, and produces a step-by-step plan. Once the plan is approved, you can hand it off to agent mode for execution.
 
-Use the following process to generate project documentation, such as README.md file, using the edit mode:
+Use the following process to generate project documentation, such as a README.md file, using the Plan mode:
 
 1. Identify the documentation requirements and supporting resources.
 
-1. Open the Chat view and start a new chat session using the edit mode.
+1. Open the Chat view and start a new chat session using the Plan mode.
 
-1. Add context to the chat session.
+1. Enter a prompt that describes your documentation task.
 
-    Chat participants aren't available in edit mode, so you can't specify `@workspace` as part of your prompt. However, you can add context to the chat session using `#codebase` and by dragging and dropping files or folders from Visual Studio Code's EXPLORER view into the Chat view. Use Visual Studio Code to open external files, such markdown files that contain contributor guidelines, and then use the **Add Context** button to add them to the chat context.
+    For example: "I need to create a README file and supporting documentation for this project. The README should include: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License."
 
-1. Enter a prompt to create the intended project documentation.
+1. Review the implementation plan.
 
-    For example: "I need to create a README file that can be used for the GitHub repository. The file should be formatted as markdown. Create a README.md file in the root workspace folder. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License."
+    After a few moments, the Plan agent outputs a plan in the Chat view. The plan provides a high-level summary and a breakdown of steps, including any open questions for clarification. You can iterate multiple times to clarify requirements, adjust scope, or answer questions.
 
-1. Review the README.md file created using edit mode, and then save or discard the file.
+1. Once the plan is complete, select **Start Implementation** to hand off the plan to agent mode, or select **Open in Editor** to save the plan as a Markdown file for later use.
 
-    You can update the file using prompts to correct or enhance specific sections if necessary.
+    When you select **Start Implementation**, GitHub Copilot switches to agent mode and begins implementing the documentation based on the approved plan. Review the generated documentation files and accept or discard the changes.
 
 ## Use the agent mode to generate project documentation
 
 Agent mode is best for generating project documentation that requires an in-depth understanding of the project. Agent mode analyzes the entire project structure before it generates project documentation. By gathering information from multiple files and folders, agent mode can describe complex relationships and include links between documents.
 
-Use the following process to generate project documentation, such as README.md file, using the edit mode:
+Use the following process to generate project documentation, such as README.md file, using the agent mode:
 
 1. Identify the documentation requirements and supporting resources.
 
@@ -99,7 +99,7 @@ Use the following process to generate project documentation, such as README.md f
 
 1. Add context to the chat session.
 
-    Chat participants aren't available in agent mode, so you can't specify `@workspace` as part of your prompt. However, you can add context to the chat session using `#codebase` and by adding workspace files and folders to the chat context. External files can be opened in Visual Studio Code and then added to the chat context using the **Add Context** button.
+    Chat participants aren't available in agent mode, so you can't specify `@workspace` as part of your prompt. However, you can add context to the chat session using `#codebase` and by adding workspace files and folders to the chat context. External files can be opened in Visual Studio Code and then added to the chat context using the **Attach Context** button.
 
 1. Enter a prompt to create the intended project documentation.
 
@@ -137,4 +137,4 @@ Agent mode is ideal for project-wide, multi-file, and context-aware documentatio
 
 ## Summary
 
-GitHub Copilot can help you generate project documentation that meets the specific needs of your project and its stakeholders. The Chat view can be used to generate project documentation in three different modes: Ask, Edit, and Agent. Each mode has its own strengths and weaknesses, and the best mode to use depends on the specific task at hand. The ask mode is best for asking questions about your codebase or technology concepts. The edit mode is best for making changes to specific files in the project. The agent mode is best for generating project documentation that requires a more in-depth understanding of the project.
+GitHub Copilot can help you generate project documentation that meets the specific needs of your project and its stakeholders. The Chat view can be used to generate project documentation in three different modes: Ask, Agent, and Plan. Each mode has its own strengths and weaknesses, and the best mode to use depends on the specific task at hand. The Ask agent mode is best for asking questions about your codebase or technology concepts. The Agent mode is best for generating project documentation that requires an in-depth understanding of the project. The Plan mode is best for creating a detailed implementation plan before generating documentation, which can then be handed off to Agent mode for execution.

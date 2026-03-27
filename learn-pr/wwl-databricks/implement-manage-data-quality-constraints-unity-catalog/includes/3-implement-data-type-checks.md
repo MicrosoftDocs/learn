@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9a912c64-3831-409b-a8b7-23d67acec030]
+
 Every column in your dataset has an expected data type, and when incoming data doesn't match that expectation, problems cascade downstream. A string value where an integer belongs can break calculations, corrupt aggregations, or cause pipeline failures. Data type checks ensure that each field contains values of the correct type before they enter your tables.
 
 In this unit, you learn how to implement data type checks using schema enforcement, explicit type casting, and validation constraints in Azure Databricks.
@@ -75,9 +77,11 @@ For example, you can validate that a string column contains only numeric charact
 ```sql
 CREATE TABLE orders (
     order_id INT,
-    order_total STRING,
-    CONSTRAINT valid_order_total CHECK (order_total REGEXP '^[0-9]+(\\.[0-9]+)?$')
+    order_total STRING
 );
+
+ALTER TABLE orders
+ADD CONSTRAINT valid_order_total CHECK (order_total REGEXP '^[0-9]+(\\.[0-9]+)?$')
 ```
 
 This constraint ensures the `order_total` column contains values that look like valid numbers, catching malformed data before it enters the table.

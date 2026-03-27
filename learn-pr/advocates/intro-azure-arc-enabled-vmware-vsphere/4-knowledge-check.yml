@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-arc-enabled-vmware.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge of Azure Arc-enabled VMware vSphere
+  ms.date: 02/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "What's the minimum role on the resource group that contains the resource pool, cluster, host, datastore, and virtual network resources required for VM Provisioning?"
+      choices:
+        - content: "Azure Arc VMware Private Cloud User."
+          isCorrect: true
+          explanation: "The minimum role requirement is Azure Arc VMware Private Cloud User."
+        - content: "Azure Arc VMware Administrator."
+          isCorrect: false
+          explanation: "The minimum role requirement is Azure Arc VMware Private Cloud User."
+        - content: "Azure Arc VMware Private Clouds Onboarding."
+          isCorrect: false
+          explanation: "The minimum role requirement is Azure Arc VMware Private Cloud User."
+
+    - content: "In order to connect an on-premises VMware vCenter Server to Azure as part of an Azure Arc-enabled VMware vSphere deployment, which of the following steps is required?"
+      choices:
+        - content: "Deploy the Azure Arc resource bridge virtual appliance in the vCenter environment, which acts as a bridge and projects vCenter resources into Azure for management."
+          isCorrect: true
+          explanation: "This is the fundamental step that establishes integration between vCenter and Azure."
+        - content: "Install the Azure Connected Machine agent on the vCenter Server and all VMs, thereby automatically registering them with Azure Arc."
+          isCorrect: false
+          explanation: "The Connected Machine agent (used for Arc-enabled servers) by itself can't integrate the vCenter infrastructure – Azure Arc-enabled VMware vSphere requires the resource bridge appliance to interface with vCenter at the management plane level."
+        - content: "Register the vCenter Server as a custom location in Azure Arc to enable management of vSphere resources through Azure."
+          isCorrect: false
+          explanation: "Custom locations in Azure Arc are used after deploying the resource bridge and Kubernetes clusters, not as a direct method of integrating vCenter."
+
+    - content: "When onboarding on-premises VMware VMs into Azure Arc-enabled VMware vSphere and planning to deploy Azure extensions to these machines, which of the following role assignments should you assign to an administrator who needs to enable extensions on connected VMs?"
+      choices:
+        - content: "Assign the user the Reader role."
+          isCorrect: false
+          explanation: "The Reader role doesn't allow write operations, which are necessary to manage extensions."
+        - content: "Assign the user the Azure Connected Machine Resource Administrator role."
+          isCorrect: true
+          explanation: "Assigning the user the Azure Connected Machine Resource Administrator role on the Arc-connected machine resources allows deployment and management of extensions."
+        - content: "Assign the user the Virtual Machine Contributor role at the subscription level."
+          isCorrect: false
+          explanation: "Virtual Machine Contributor applies to Azure-native VMs, not Arc-connected resources."

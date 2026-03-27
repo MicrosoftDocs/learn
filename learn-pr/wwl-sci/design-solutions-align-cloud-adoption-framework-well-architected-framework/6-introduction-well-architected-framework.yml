@@ -4,10 +4,10 @@ title: Understand the Well-Architected Framework
 metadata:
   title: Understand the Well-Architected Framework
   description: "Understand the Well-Architected Framework."
-  ms.date: 01/24/2026
+  ms.date: 02/26/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/6-introduction-well-architected-framework.md)]

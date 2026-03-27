@@ -2,7 +2,7 @@ Modern AI solutions often rely on multiple agents working together to analyze in
 
 Foundry includes a visual workflow builder that lets you design and test these systems without writing extensive code. Using the canvas, you can define how agents are invoked, how data moves between steps, and how decisions are made based on agent outputs. You can also observe execution paths and inspect intermediate results to understand how your workflow behaves at runtime.
 
-Suppose you're a developer responsible for automating customer support workflows at a growing SaaS company. Your team receives a steady stream of support tickets ranging from billing disputes to API errors and simple how-to questions. Manually reviewing each request doesn't scale, but fully automating responses isn't always safe. Workflows allow you to combine AI agents, conditional logic, and human-in-the-loop escalation. By using agent-driven workflows, you can triage multiple support requests efficiently and at scale while maintaining reliability and control.
+Suppose you're a developer responsible for automating customer support workflows at a growing SaaS company. Your team receives a steady stream of support tickets ranging from billing disputes to API errors and simple how-to questions. Manually reviewing each request doesn't scale, but fully automating responses isn't always safe. Workflows allow you to combine multiple AI agents, conditional logic, and human-in-the-loop escalation. By using agent-driven workflows, you can triage multiple support requests efficiently and at scale while maintaining reliability and control.
 
 ## After completing this module, you'll be able to:
 

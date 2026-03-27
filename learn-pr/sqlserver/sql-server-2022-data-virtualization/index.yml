@@ -3,7 +3,7 @@ uid: learn.sql-server-2022-data-virtualization
 metadata:
   title: Introduction to SQL Server 2025 Data Virtualization
   description: Learn about data virtualization, how to use Polybase to access and query external data, and enhanced Polybase features in SQL Server 2025.
-  ms.date: 07/24/2025
+  ms.date: 03/20/2026
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: module

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.apply-governance-security
+title: Apply governance and security for AI-assisted workflows
+metadata:
+  title: Apply governance and security for AI-assisted workflows
+  description: "Apply governance and security for AI-assisted workflows"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-apply-governance-security.md)]

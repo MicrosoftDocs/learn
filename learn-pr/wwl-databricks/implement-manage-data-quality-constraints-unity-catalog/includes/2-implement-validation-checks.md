@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=18f27350-8c3e-41ce-aa74-80fe7ddb2ec8]
+
 Data pipelines often encounter records with missing values, duplicate identifiers, or values that fall outside acceptable ranges. Without validation checks in place, these data quality issues propagate downstream, causing incorrect analytics, failed reports, and unreliable business decisions. Validation checks catch these problems at the point of data ingestion, ensuring that only quality data flows through your pipeline.
 
 In this unit, you learn how to implement validation checks for nullability, data cardinality, and range checking using Lakeflow Spark Declarative Pipelines expectations and Delta Lake table constraints.

@@ -39,7 +39,6 @@ units:
   - learn.github.manage-github-actions-enterprise.manage-runners
   - learn.github.manage-github-actions-enterprise.configure-self-hosted-runners
   - learn.github.manage-github-actions-enterprise.manage-encrypted-secrets
-  - learn.github.manage-github-actions-enterprise.exercise
   - learn.github.manage-github-actions-enterprise.knowledge-check
   - learn.github.manage-github-actions-enterprise.summary
 iconUrl: /training/achievements/github/manage-github-actions-enterprise.svg

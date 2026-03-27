@@ -4,10 +4,10 @@ title: Secure privileged access
 metadata:
   title: Secure privileged access
   description: "Learn about securing privileged access using Zero Trust principles, the Microsoft Cloud Security Benchmark, and AI considerations for the SC-100 Microsoft Cybersecurity Architect certification."
-  ms.date: 01/28/2026
+  ms.date: 03/04/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 9
 content: |
   [!include[](includes/1-introduction-privileged-access.md)]

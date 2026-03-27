@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: "Knowledge check for designing and implementing database objects"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You need to create a table to store user profile data that changes over time. You want to maintain a full history of changes without creating a separate history table manually. Which table type should you implement?"
+    choices:
+    - content: "In-memory optimized table"
+      isCorrect: false
+      explanation: "Incorrect. In-memory optimized tables are designed for high-performance scenarios, not for automatic change tracking. Use a temporal table instead."
+    - content: "Temporal table"
+      isCorrect: true
+      explanation: "Correct. Temporal tables automatically maintain full history of changes without requiring manual history table management."
+    - content: "Graph table"
+      isCorrect: false
+      explanation: "Incorrect. Graph tables are designed for storing hierarchical and relationship data, not for tracking changes over time."
+    - content: "External table"
+      isCorrect: false
+      explanation: "Incorrect. External tables reference data stored outside the database."
+  - content: "You need to design a table that will store product information. The ProductID must uniquely identify each row, and the Category must not allow null values. Which constraints should you implement?"
+    choices:
+    - content: "PRIMARY KEY on ProductID and DEFAULT on Category"
+      isCorrect: false
+      explanation: "Incorrect. A DEFAULT constraint provides a default value, not a NOT NULL restriction. Use a NOT NULL constraint instead."
+    - content: "UNIQUE constraint on ProductID and CHECK constraint on Category"
+      isCorrect: false
+      explanation: "Incorrect. ProductID should have a PRIMARY KEY constraint for uniqueness and to serve as the table identifier."
+    - content: "PRIMARY KEY on ProductID and NOT NULL on Category"
+      isCorrect: true
+      explanation: "Correct. PRIMARY KEY ensures uniqueness of ProductID, and NOT NULL ensures Category always has a value."
+    - content: "FOREIGN KEY on ProductID and UNIQUE constraint on Category"
+      isCorrect: false
+      explanation: "Incorrect. FOREIGN KEY is used to reference another table, not for the primary identifier."
+  - content: "You have a large sales table with millions of rows. You want to improve query performance and maintenance by splitting the table data based on date ranges. Which feature should you implement?"
+    choices:
+    - content: "Clustered index"
+      isCorrect: false
+      explanation: "Incorrect. While a clustered index can improve query performance, it doesn't split data physically. Use partitioning instead."
+    - content: "JSON columns"
+      isCorrect: false
+      explanation: "Incorrect. JSON columns are for storing semi-structured data, not for physically splitting table data."
+    - content: "Table partitioning"
+      isCorrect: true
+      explanation: "Correct. Partitioning allows you to split large tables into smaller, manageable pieces based on specified ranges."
+    - content: "In-memory optimization"
+      isCorrect: false
+      explanation: "Incorrect. In-memory optimization improves performance but doesn't physically split data."
