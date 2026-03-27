@@ -43,14 +43,14 @@ subjects:
 - data-integration
 units:
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.introduction
-- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.summary
-- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-ai-features-dynamics-365-apps-finance-supply-chain
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.design-ai-solutions-dynamics-365-apps-customer-experience-service
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.propose-microsoft-365-agents-business-scenarios
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-configuration-microsoft-365-copilot-sales-service
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.propose-microsoft-power-platform-ai-features-ai-hub
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.design-interoperability-finance-operations-agent-chats-sources
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.process-knowledge-sources-dynamics-365-finance-supply-chain-management
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-ai-features-dynamics-365-apps-finance-supply-chain
 - learn.wwl.orchestrate-configuration-prebuilt-agents-apps.knowledge-check
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.summary
 badge:
   uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.badge
