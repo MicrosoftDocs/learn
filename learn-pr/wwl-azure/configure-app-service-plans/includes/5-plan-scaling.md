@@ -57,6 +57,6 @@ In addition to rule-based autoscale, Azure App Service offers Automatic scaling 
 
 - **Use rule-based Autoscale.** You need custom scaling logic, want to scale based on multiple metrics, or need schedule-based scaling.
   
-- **Use Automatic scaling when.** You want less management, can't predict load patterns, or need fast response to traffic changes without rule configuration.
+- **Use Automatic scaling.** You want less management, can't predict load patterns, or need fast response to traffic changes without rule configuration.
 
 
