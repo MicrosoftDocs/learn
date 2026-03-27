@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.design-ai-solutions-custom-models-microsoft-foundry
+title: "Design AI solutions with custom models in Microsoft Foundry"
+metadata:
+  title: "Design AI Solutions with Custom Models in Microsoft Foundry"
+  description: "Learn to design enterprise-grade AI solutions using custom models in Microsoft Foundry. Explore architecture, integration, and operationalization."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-design-ai-solutions-custom-models-microsoft-foundry.md)]
