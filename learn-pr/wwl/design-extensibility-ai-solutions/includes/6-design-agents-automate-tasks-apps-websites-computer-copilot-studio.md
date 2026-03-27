@@ -216,20 +216,6 @@ Build monitoring and fallback plans
 
 Use Computer Use only when APIs are unavailable
 
-## Professional visuals (text-based)
-
-### Visual 1 — Computer Use architecture
-
-User Request ↓ Agent Reasoning ↓ Computer Use Actions ↓ UI Interaction ↓ Validation & Response 
-
-### Visual 2 — When to Use Computer Use
-
-No API Available | UI-Driven Tasks | Multi-App Workflows | Human-Like Reasoning Needed 
-
-### Visual 3 — Agent design framework
-
-Define Task → Add Context → Break Steps → Add Guardrails → Test → Refine 
-
 ## References
 
 [https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use](/microsoft-copilot-studio/computer-use) 

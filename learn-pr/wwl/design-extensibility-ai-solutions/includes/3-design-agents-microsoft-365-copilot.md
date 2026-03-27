@@ -172,48 +172,6 @@ Will the agent support frontline or knowledge workers?
 
 What latency, safety, or reliability constraints apply?
 
-## Professional visuals (text-based for Word)
-
-### Visual 1 - Agent architecture model
-
-User Action 
-
-    ↓
-
-Microsoft 365 Application (Teams, Outlook, Loop)
-
-    ↓
-
-Copilot Agent Instructions & Policies
-
-    ↓
-
-Tools & Connectors (Graph, SharePoint, APIs)
-
-    ↓
-
-Business Logic Execution
-
-    ↓
-
-Response Back to User
-
-### Visual 2 - Collaborative agent workflow
-
-Primary Agent (Intent Detection)
-
-      ↓ determines task
-
-SubAgent A (Data Gathering)    SubAgent B (Draft Generation)
-
-      ↓                                 ↓
-
-     Combined Output → Human Review → Publish/Act
-
-### Visual 3 - Agent governance lifecycle
-
-Design → Build → Test → Deploy → Monitor → Improve
-
 ## References
 
 [https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-page?view=o365-worldwide](/copilot/microsoft-365/microsoft-365-copilot-page)

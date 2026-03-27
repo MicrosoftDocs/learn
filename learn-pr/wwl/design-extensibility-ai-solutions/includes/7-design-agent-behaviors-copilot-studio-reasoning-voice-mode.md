@@ -162,66 +162,6 @@ Agent provides concise spoken output
 
 Because voice relies on real-time interaction, architects should design behavior models that prioritize responsiveness, fallback handling, and user-friendly error messages.
 
-**Architectural model for agent behaviors**
-
-## Text-based visual: Agent behavior architecture
-
-### Visual A — Agent Behavior Stack
-
-+------------------------------------------------------+
-
-| User Interaction Layer (Text, Voice, UI Controls)    |
-
-+------------------------------------------------------+
-
-| Dialogue Management & Conversation Flow              |
-
-+------------------------------------------------------+
-
-| Reasoning Engine (Standard or Deep Reasoning)        |
-
-+------------------------------------------------------+
-
-| Instruction Layer (Rules, Roles, Tone, Guardrails)   |
-
-+------------------------------------------------------+
-
-| Knowledge & Data Access (SharePoint, Dataverse, etc.)|
-
-+------------------------------------------------------+
-
-| Tools and Actions (APIs, Connectors, Automations)    |
-
-+------------------------------------------------------+
-
-| Governance & Safety (Policies, Filters, Logging)     |
-
-+------------------------------------------------------+
-
-**Design patterns for high-quality agent behavior**
-
-## Key behavior patterns
-
-### Pattern 1 — Step-by-step reasoning
-
-Break tasks into steps to improve accuracy.
-
-### Pattern 2 — Validation Prompting
-
-Ask the agent to verify assumptions or confirm missing context.
-
-### Pattern 3 — Context Reuse
-
-Carry summaries and reasoning from earlier messages in the same session.
-
-### Pattern 4 — Intent Routing
-
-Identify user purpose and route to knowledge, actions, or workflows.
-
-### Pattern 5 — Behavioral Guardrails
-
-Prevent overreach by defining what the agent must never do.
-
 ## References
 
 [https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agents/agent-behaviors](/microsoft-copilot-studio/guidance/agents/agent-behaviors)
