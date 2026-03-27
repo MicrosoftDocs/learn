@@ -55,4 +55,24 @@ As an example, consider the following prompt:
 Summarize this pipeline, turning the technical configuration into a conceptual narrative.
 ```
 
-Copilot supports the **how** of building a pipeline: it scaffolds connections, ingestion, and transformation activities using natural language. It also supports the **why**: encouraging you to validate, configure, and reflect on each stage, building both confidence and transferable data engineering skills.
+## Troubleshoot with the error message assistant
+
+When a pipeline run fails, Copilot can analyze the error and suggest actionable remediation steps in plain language. This removes the need to parse raw error logs manually and helps you resolve issues in context. As an example:
+
+```copilot-prompt
+Why did this pipeline fail?
+```
+
+Copilot explains the cause of the failure and recommends specific steps to fix it — bridging the gap between a technical error and a meaningful resolution.
+
+## Build pipeline expressions
+
+Pipelines often require dynamic expressions for things like constructing file paths, formatting dates, or conditional logic. Copilot integrates with the **Expression Builder** to generate and explain these expressions using natural language.
+
+```copilot-prompt
+Create an expression that builds a dynamic output file path using today's date in yyyy-MM-dd format.
+```
+
+Beyond generation, you can also ask Copilot to explain what an existing expression does — helping you learn the expression language incrementally without leaving the pipeline editor.
+
+Copilot supports the **how** of building a pipeline: it scaffolds connections, ingestion, transformation activities, error troubleshooting, and expressions using natural language. It also supports the **why**: encouraging you to validate, configure, and reflect on each stage, building both confidence and transferable data engineering skills.
