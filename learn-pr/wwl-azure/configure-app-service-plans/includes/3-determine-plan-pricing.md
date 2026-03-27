@@ -20,13 +20,13 @@ The pricing tiers are grouped into three categories:
 
 Here's a sample of different [plan details](/azure/app-service/overview-hosting-plans). 
 
-| Feature | Free F1 | Basic B1 | Standard S1 | Premium P1V3 | 
-| --- | --- | --- | --- | --- | 
-| Usage | Development, Testing | Development, Testing | Production workloads | Enhanced scale, performance | 
-| Staging slots | N/A | N/A | 5 | 20 |
-| Auto scale | N/A | Manual | Rules | Rules, Elastic |
-| Scale instances | N/A | 3 | 10 | 30 |
-| Daily backups | N/A | N/A | 10 | 50 |
+| Feature | Free F1 | Basic B1 | Standard S1 | Premium P1V3 | Isolated V2 |
+| --- | --- | --- | --- | --- | --- |
+| Usage | Development, Testing | Development, Testing | Production workloads | Enhanced scale, performance | Network-isolated workloads |
+| Staging slots | N/A | N/A | 5 | 20 | 20 |
+| Auto scale | N/A | Manual | Rules | Rules, Elastic | Rules |
+| Scale instances | N/A | 3 | 10 | 30 | 200 |
+| Daily backups | N/A | N/A | 10 | 50 | 50 |
 
 ### Free and Shared
 
