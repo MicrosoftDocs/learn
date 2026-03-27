@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.design-agents-automate-tasks-apps-websites-computer-copilot-studio
+title: "Design agents to automate tasks in apps and websites with Computer Use in Copilot Studio"
+metadata:
+  title: "Design Agents to Automate Tasks in Apps"
+  description: "Learn how to design agents in Copilot Studio to automate tasks in apps and websites using Computer Use. Explore scenarios, configurations, and best practices."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-design-agents-automate-tasks-apps-websites-computer-copilot-studio.md)]
