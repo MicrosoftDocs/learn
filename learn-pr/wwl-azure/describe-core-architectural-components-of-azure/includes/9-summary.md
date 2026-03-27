@@ -11,3 +11,14 @@ You should now be able to:
  -  Describe subscriptions.
  -  Describe management groups.
  -  Describe the hierarchy of resource groups, subscriptions, and management groups.
+
+## Explore with Copilot
+
+> [!TIP]
+> Try one of these prompts in Copilot Chat:
+>
+> - "Build a concept map that connects regions, Availability Zones, datacenters, resources, resource groups, subscriptions, and management groups."
+> - "Design a subscription and management-group structure for an organization with multiple departments and compliance boundaries."
+> - "Explain region pairs and sovereign regions, then recommend a resiliency approach for a workload with strict data residency requirements."
+
+

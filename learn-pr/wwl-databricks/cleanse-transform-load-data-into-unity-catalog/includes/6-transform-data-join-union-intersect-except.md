@@ -1,3 +1,5 @@
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5a350154-5d22-4f45-9b63-be6d577ccf3f]
+
 Data engineering workflows often require combining information from multiple datasets. **Joins** combine tables horizontally by matching rows on related columns, while **set operators** combine tables vertically by appending, intersecting, or excluding rows. Understanding when to use each approach helps you build efficient transformation pipelines.
 
 In this unit, you learn how to join tables based on relationships and apply set operators to combine datasets with matching schemas.

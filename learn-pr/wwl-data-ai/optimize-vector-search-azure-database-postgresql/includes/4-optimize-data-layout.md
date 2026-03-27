@@ -165,6 +165,6 @@ Partitioning adds complexity. Queries that span many partitions might be slower 
 
 ## Additional resources
 
-- [Table partitioning in PostgreSQL](/azure/postgresql/flexible-server/concepts-table-partitioning)
+- [Table partitioning in PostgreSQL](https://www.postgresql.org/docs/current/ddl-partitioning.html)
 - [JSONB indexing strategies](https://www.postgresql.org/docs/current/datatype-json.html#JSON-INDEXING)
-- [Index types in PostgreSQL](/azure/postgresql/flexible-server/how-to-optimize-performance-indexes)
+- [Index types in PostgreSQL](https://www.postgresql.org/docs/current/indexes-types.html)

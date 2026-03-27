@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-boards-using-github-copilot
+metadata:
+  title: Manage Azure Boards by using GitHub Copilot integration
+  description: "Manage Azure Boards by using GitHub Copilot integration"
+  ms.date: 02/25/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Manage Azure Boards by using GitHub Copilot integration
+summary: This module explains how to connect Azure Boards and GitHub, prepare high-quality work items, and use GitHub Copilot capabilities to accelerate delivery while preserving governance and traceability in Azure DevOps.
+abstract: |
+  By the end of this module, you're able to:
+
+  - Describe the Azure Boards and GitHub Copilot integration model
+  - Configure the connection between Azure Boards and GitHub repositories
+  - Prepare work items so GitHub Copilot can act on clear requirements
+  - Delegate and supervise work through pull requests with human review
+  - Apply governance, security, and adoption practices for AI-assisted planning
+prerequisites: |
+  - Familiarity with Azure DevOps Boards basics
+  - Familiarity with GitHub repositories and pull requests
+  - Access to an Azure DevOps project and a GitHub repository
+iconUrl: /training/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - technology-manager
+products:
+  - azure
+  - azure-boards
+  - azure-devops
+  - github
+units:
+  - learn.wwl.manage-azure-boards-using-github-copilot.introduction
+  - learn.wwl.manage-azure-boards-using-github-copilot.integration-overview
+  - learn.wwl.manage-azure-boards-using-github-copilot.prepare-environment-permissions
+  - learn.wwl.manage-azure-boards-using-github-copilot.connect-azure-boards-github
+  - learn.wwl.manage-azure-boards-using-github-copilot.analyze-work-items-copilot-chat
+  - learn.wwl.manage-azure-boards-using-github-copilot.refine-work-items-for-agent-delegation
+  - learn.wwl.manage-azure-boards-using-github-copilot.delegate-single-work-item
+  - learn.wwl.manage-azure-boards-using-github-copilot.steer-review-copilot-pull-requests
+  - learn.wwl.manage-azure-boards-using-github-copilot.coordinate-multiple-work-items
+  - learn.wwl.manage-azure-boards-using-github-copilot.maintain-traceability-boards
+  - learn.wwl.manage-azure-boards-using-github-copilot.apply-governance-security
+  - learn.wwl.manage-azure-boards-using-github-copilot.drive-adoption-improvement
+  - learn.wwl.manage-azure-boards-using-github-copilot.ai-assisted-work-item-management-in-azure-boards
+  - learn.wwl.manage-azure-boards-using-github-copilot.knowledge-check
+  - learn.wwl.manage-azure-boards-using-github-copilot.summary
+badge:
+  uid: learn.wwl.manage-azure-boards-using-github-copilot.badge

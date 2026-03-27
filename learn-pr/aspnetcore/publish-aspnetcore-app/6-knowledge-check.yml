@@ -6,7 +6,7 @@ metadata:
   description: This content is part of the "Publish an ASP.NET Core app" module.
   ms.date: 09/11/2024
   author: CamSoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5

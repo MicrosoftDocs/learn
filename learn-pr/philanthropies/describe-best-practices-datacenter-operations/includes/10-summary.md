@@ -16,7 +16,6 @@ The module also discussed key performance indicators (KPIs) used to track datace
 - [Enconnex: Data Center Performance Metrics: Understanding the KPIs](https://blog.enconnex.com/data-center-performance-metrics-kpis-examples)
 - [Breachsense: 18 Data Security Metrics & KPIs You Need To Track](https://www.breachsense.com/blog/data-security-metrics/)
 - [Acceliot: Data Center Monitoring: Everything You Need to Know](https://acceliot.com/data-center-monitoring-everything-you-need-to-know/)
-- [GlobalTechCIO: The Importance of Monitoring and Performance Management in Data Center Operations](https://globaltechcio.com/case-study/the-importance-of-monitoring-and-performance-management-in-data-center-operations/)
 - [Dgtl Infra: Data Center Monitoring: A Comprehensive Guide](https://dgtlinfra.com/data-center-monitoring/)
 - [ManageEngine: Data Center Infrastructure Management (DCIM): A Comprehensive Overview](https://www.manageengine.com/it-operations-management/data-center-infrastructure-management.html)
 - [Coresite: Understanding Data Center Customer and Provider Responsibilities](https://www.coresite.com/blog/understanding-data-center-customer-and-provider-responsibilities)

@@ -4,7 +4,7 @@ title: Ingest data with Lakeflow Connect
 metadata:
   title: Ingest Data With Lakeflow Connect
   description: Learn how to ingest data from external sources into Azure Databricks using Lakeflow Connect managed connectors, including configuring pipelines, change data capture, and SCD types.
-  ms.date: 12/07/2025
+  ms.date: 02/16/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

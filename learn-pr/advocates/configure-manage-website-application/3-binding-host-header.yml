@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.website-application-virtual-directory.binding-host-header
+title: Bindings and host headers
+metadata:
+  title: Bindings and Host Headers
+  description: Learn about site bindings and host headers in Internet Information Services (IIS) on Windows Server, including how to configure site bindings to host multiple websites on a single server using host headers and Server Name Indication (SNI) for HTTPS sites, and how to manage and troubleshoot common binding issues for optimal website accessibility and performance.
+  ms.date: 03/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-binding-host-header.md)]

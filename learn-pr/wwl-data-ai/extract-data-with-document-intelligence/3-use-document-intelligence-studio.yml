@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-data-with-document-intelligence.use-document-intelligence-studio
+title: Use the Document Intelligence Studio
+metadata:
+  title: Use the Document Intelligence Studio
+  description: Learn how to use the Document Intelligence Studio to analyze, test, and build document processing solutions.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-use-document-intelligence-studio.md)]

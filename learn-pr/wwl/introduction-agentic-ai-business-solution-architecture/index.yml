@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-agentic-ai-business-solution-architecture
+metadata:
+  title: "Introduction to Agentic AI Business Solutions"
+  description: "Learn how to align AI solutions with business goals, scale AI adoption, and use Microsoft AI technologies for enterprise success."
+  ms.date: 02/02/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.service: copilot-studio
+title: "Introduction to agentic AI business solutions"
+summary: Learn to align AI solutions with business goals and scale AI adoption using Microsoft technologies.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain the architect's role in driving AI adoption and transformation.
+  - Identify key responsibilities of an AI architect in business contexts.
+  - Understand how architects align AI solutions with organizational goals.
+  - Apply best practices for scaling AI across enterprise environments.
+  - Identify core Microsoft AI services and tools.
+  - Explore Microsoft Copilot solutions and their business value.
+  - Understand how generative AI unlocks productivity in enterprise environments.
+  - Identify OOB Microsoft AI agent resources available for business solutions.
+prerequisites: |
+  - Basic understanding of AI concepts.
+  - Familiarity with enterprise IT environments.
+  - Awareness of business strategy and organizational goals.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.introduction
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.architect-role-ai-transformation-businesses
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.microsoft-ai-technologies-overview
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.microsoft-ai-technologies-business-solutions
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.identify-out-of-box-microsoft-ai-agent-resources
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.identify-out-of-box-microsoft-ai-agents
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.knowledge-check
+- learn.wwl.introduction-agentic-ai-business-solution-architecture.summary
+badge:
+  uid: learn.wwl.introduction-agentic-ai-business-solution-architecture.badge

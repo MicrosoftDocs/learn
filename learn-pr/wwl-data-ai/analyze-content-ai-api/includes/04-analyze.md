@@ -1,38 +1,83 @@
-To analyze the contents of a file, you can use the Azure Content Understanding REST API to submit it to the endpoint using a `POST` request. You can specify the content as a URL (for a file hosted in an Internet-accessible location) or as the binary contents of the file (for example, a .pdf document, a .png image, an .mp3 audio file, or an .mp4 video file). The request header must include the API key, and the endpoint address for the **analyze** request includes the analyzer to be used.
+To analyze the contents of a file, you can use the Azure Content Understanding API to submit it to the endpoint. You can specify the content as a URL (for a file hosted in an Internet-accessible location) or upload binary file data directly (for example, a .pdf document, a .png image, an .mp3 audio file, or an .mp4 video file). The analysis request includes the analyzer to be used.
 
-As with the request to create an analyzer, the **analyze** request starts an asynchronous operation. The `POST` request returns a unique operation ID, which you can then use in a `GET` request to check the status of the  analysis operation.
+Analysis is an asynchronous operation. After submitting the request, you receive an operation ID that you can use to check the status and retrieve the results when the operation is complete.
 
 For example, suppose you want to use the business card analyzer discussed previously to extract the name and email address from the following scanned business card image:
 
 ![Photograph of a business card for John Smith.](../media/business-card.png)
 
-The following Python code submits a request for analysis, and then polls the service until the operation is complete and the results are returned.
+## Using the Python SDK
+
+The Python SDK for Content Understanding (`azure-ai-contentunderstanding`) provides a `ContentUnderstandingClient` class that simplifies interaction with the service. The SDK handles authentication, request formatting, and automatic polling for asynchronous operations.
+
+The following Python code uses the SDK to submit a business card for analysis and retrieve the results:
+
+```python
+from azure.ai.contentunderstanding import ContentUnderstandingClient
+from azure.ai.contentunderstanding.models import AnalysisInput
+from azure.core.credentials import AzureKeyCredential
+
+# Authenticate the client
+endpoint = "<YOUR_ENDPOINT>"
+credential = AzureKeyCredential("<YOUR_API_KEY>")
+client = ContentUnderstandingClient(endpoint=endpoint, credential=credential)
+
+# Analyze the business card using the custom analyzer
+analyzer_name = "business_card_analyser"
+poller = client.begin_analyze(
+    analyzer_id=analyzer_name,
+    inputs=[AnalysisInput(url="https://host.com/business-card.png")]
+)
+
+# Wait for the operation to complete and get the results
+result = poller.result()
+
+# Extract field values from the results
+content = result.contents[0]
+if content.fields:
+    for field_name, field_data in content.fields.items():
+        if field_data.type == "string":
+            print(f"{field_name}: {field_data.value}")
+```
+
+> [!TIP]
+> The SDK's `begin_analyze` method returns a poller object. Calling `.result()` on the poller automatically handles polling until the operation completes, so you don't need to write your own polling loop.
+
+## Using the REST API
+
+You can also submit analysis requests directly by using the REST API. Your client application submits HTTP calls to the Content Understanding endpoint for your Microsoft Foundry resource, passing an API key in the header.
+
+The following Python code submits a request for analysis using a URL, and then polls the service until the operation is complete and the results are returned.
 
 ```python
 import json
 import requests
 
-# Read the image data
-with open("business-card.png", "rb") as file:
-        image_data = file.read()
-    
-## Use a POST request to submit the image data to the analyzer
+## Use a POST request to submit the file URL to the analyzer
 analyzer_name = "business_card_analyser"
 
 headers = {
         "Ocp-Apim-Subscription-Key": "<YOUR_API_KEY>",
-        "Content-Type": "application/octet-stream"}
+        "Content-Type": "application/json"}
 
-url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}:analyze?api-version=2025-05-01-preview"
+url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzers/{analyzer_name}:analyze?api-version=2025-11-01"
 
-response = requests.post(url, headers=headers, data=image_data)
+request_body = {
+    "inputs": [
+        {
+            "url": "https://host.com/business-card.png"
+        }
+    ]
+}
+
+response = requests.post(url, headers=headers, json=request_body)
 
 # Get the response and extract the ID assigned to the analysis operation
 response_json = response.json()
 id_value = response_json.get("id")
 
 # Use a GET request to check the status of the analysis operation
-result_url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzerResults/{id_value}?api-version=2025-05-01-preview"
+result_url = f"{<YOUR_ENDPOINT>}/contentunderstanding/analyzerResults/{id_value}?api-version=2025-11-01"
 
 result_response = requests.get(result_url, headers=headers)
 
@@ -49,9 +94,12 @@ if status == "Succeeded":
 
 ```
 
+> [!NOTE]
+> You can specify a URL for the content file location as shown here. To submit binary file data directly, use the `analyzeBinary` operation instead.
+
 ## Processing analysis results
 
-The results in the response JSON depend on:
+The results depend on:
 
 - The kind of content the analyzer is designed to analyze (for example, document, video, image, or audio).
 - The schema for the analyzer.
@@ -62,7 +110,23 @@ For example, the response from the *document*-based business card analyzer when 
 - The extracted fields
 - The optical character recognition (OCR) layout of the document, including locations of lines of text, individual words, and paragraphs on each page.
 
-Here's the complete JSON response for the business card analysis:
+### Using the Python SDK
+
+When using the SDK, the `AnalysisResult` object provides typed access to the results. The `contents` property contains a list of content objects, each with fields, markdown, and metadata. The following code shows how to extract string field values:
+
+```python
+# (continued from previous SDK code example)
+
+content = result.contents[0]
+if content.fields:
+    for field_name, field_data in content.fields.items():
+        if field_data.type == "string":
+            print(f"{field_name}: {field_data.value}")
+```
+
+### Using the REST API
+
+When using the REST API, the response is a JSON payload that your application must parse. Here's the complete JSON response for the business card analysis:
 
 ```json
 {
@@ -70,7 +134,7 @@ Here's the complete JSON response for the business card analysis:
     "status": "Succeeded",
     "result": {
         "analyzerId": "biz_card_analyser_2",
-        "apiVersion": "2025-05-01-preview",
+        "apiVersion": "2025-11-01",
         "createdAt": "2025-05-16T03:51:46Z",
         "warnings": [],
         "contents": [
@@ -203,7 +267,7 @@ Here's the complete JSON response for the business card analysis:
 }
 ```
 
-Your application must typically parse the JSON to retrieve field values. For example, the following python code extracts all of the *string* values:
+Your application must typically parse the JSON to retrieve field values. For example, the following Python code extracts all of the *string* values:
 
 ```python
 # (continued from previous code example)

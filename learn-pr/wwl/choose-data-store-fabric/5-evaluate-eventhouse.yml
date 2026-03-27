@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-data-store-fabric.evaluate-eventhouse
+title: Evaluate eventhouse capabilities
+metadata:
+  title: Evaluate Eventhouse Capabilities
+  description: "Evaluate when to choose an eventhouse in Microsoft Fabric. Understand streaming ingestion, KQL analytics, time-series optimization, and ideal use cases for IoT telemetry and real-time monitoring."
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-evaluate-eventhouse.md)]
+quiz:
+  title: "Check your understanding"
+  questions:
+  - content: "A reporting team needs to analyze sales data that's updated once per day in batch. They build star schema dimensional models and write complex T-SQL queries with multi-table joins. Is eventhouse the right choice?"
+    choices:
+    - content: "Yes, eventhouse is ideal for this scenario"
+      isCorrect: false
+      explanation: "Incorrect. Eventhouse is optimized for streaming time-series data with KQL, not batch dimensional modeling with T-SQL joins."
+    - content: "No, choose a different store"
+      isCorrect: true
+      explanation: "Correct. Warehouse is the right choice for batch-updated dimensional models with T-SQL analytics and BI reporting."
+  - content: "A team collects application log data continuously but only analyzes it weekly to identify trends and errors. They're comfortable learning KQL if it provides benefits. Is eventhouse the right choice?"
+    choices:
+    - content: "Yes, eventhouse is ideal for this scenario"
+      isCorrect: true
+      explanation: "Correct. Even though analysis is weekly, continuous log ingestion and log data's time-series nature make eventhouse a strong fit. KQL's text parsing and pattern matching work well for log analysis."
+    - content: "No, choose a different store"
+      isCorrect: false
+      explanation: "Incorrect. Continuous log ingestion with time-series characteristics aligns with eventhouse strengths, even if analysis happens weekly rather than real-time."

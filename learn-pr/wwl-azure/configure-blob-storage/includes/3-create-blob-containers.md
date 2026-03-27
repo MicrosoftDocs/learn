@@ -31,6 +31,8 @@ In the Azure portal, you configure settings to create a container for an Azure s
    - **Blob**: Allow anonymous public read access for the blobs only.
    - **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
 
+> [!IMPORTANT]
+> The Blob and Container access levels have no effect unless the storage account's **Allow Blob anonymous access** setting is enabled. When disabled, all containers remain private regardless of their individual access level settings. Microsoft recommends keeping anonymous access disabled at the account level unless serving public content scenarios.
 
 
 

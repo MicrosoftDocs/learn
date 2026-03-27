@@ -17,13 +17,13 @@ quiz:
   questions:
     - content: "Which of the following choices is a keyword to make one job wait for another job to complete?"
       choices:
-        - content: "on."
+        - content: "<code>on</code>"
           isCorrect: false
           explanation: "Incorrect. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
-        - content: "needs."
+        - content: "<code>needs</code>"
           isCorrect: true
           explanation: "Correct. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
-        - content: "uses."
+        - content: "<code>uses</code>"
           isCorrect: false
           explanation: "Incorrect. Jobs run in parallel by default, but you can define dependencies between the jobs using needs."
     - content: "Which of the following choices isn't a level that self-hosted runners can be added within an enterprise?"

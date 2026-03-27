@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-solutions-azure-services.define-entities-rest-graphql
+title: Define entities for REST and GraphQL
+metadata:
+  title: Define entities for REST and GraphQL
+  description: Learn how to define and configure entities in Data API Builder including field mappings, caching, pagination, filtering, and relationships.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-define-entities-rest-graphql.md)]

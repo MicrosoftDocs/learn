@@ -36,6 +36,3 @@ In addition, Copilot must be enabled by your Fabric administrators at the level 
 
 > [!NOTE]
 > Copilot isn't available on trial SKUs, as it requires access to the Azure OpenAI Service that powers the AI capabilities.
-
-> [!IMPORTANT]
-> Many Copilot features in Fabric are currently in (public) preview. For a detailed list, check out [Release status of AI and Copilot experiences in Fabric](/fabric/fundamentals/copilot-ai-feature-state)

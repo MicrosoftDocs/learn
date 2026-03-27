@@ -27,7 +27,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-ai-foundry
+- microsoft-foundry
 - azure-monitor
 - microsoft-copilot-studio
 modules:

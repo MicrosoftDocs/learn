@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-generated
 title: Describe Azure identity, access, and security
 summary: This module covers some of the authorization and authentication methods available with Azure.
 abstract: |
@@ -30,6 +30,8 @@ abstract: |
   -   Describe the concept of Zero Trust
 
   -   Describe the purpose of the defense in depth model
+
+  -   Describe encryption concepts and key management options in Azure
 
   -   Describe the purpose of Microsoft Defender for Cloud
 prerequisites: '-   Basic familiarity with IT terms and concepts'
@@ -52,6 +54,7 @@ units:
 - learn.wwl.describe-azure-identity-access-security.role-based-access-control
 - learn.wwl.describe-azure-identity-access-security.describe-zero-trust-model
 - learn.wwl.describe-azure-identity-access-security.describe-defense-depth
+- learn.wwl.describe-azure-identity-access-security.describe-encryption-key-management
 - learn.wwl.describe-azure-identity-access-security.describe-microsoft-defender-for-cloud
 - learn.wwl.describe-azure-identity-access-security.knowledge-check
 - learn.wwl.describe-azure-identity-access-security.summary

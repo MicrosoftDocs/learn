@@ -17,6 +17,8 @@ Fabric is designed to provide high performance by allowing operations to access 
 
 Since Copilot is a background job, each Copilot request (~6.67 CU minute job) consumes only one CU minute of each hour of a capacity. For a customer on F64 who has 64 * 24 CU Hours (1,536) in a day, and each Copilot job consumes (6.67 CU mins / 60 mins) = 0.11 CU Hours, customers can run over 13,824 requests before they exhaust the capacity. However, once the capacity is exhausted, all operations will shut down.
 
+When a capacity sustains high usage over time, it can enter a state of CU debt called *carryforward*. Because Copilot is smoothed as a background operation across a 24-hour window, heavy Copilot usage can accumulate carryforward even when individual requests seem modest. Once carryforward builds up sufficiently, background jobs—including all Copilot requests—are rejected until the capacity recovers. Monitoring carryforward trends early in the **Fabric Capacity Metrics app Item History** page helps you act before disruption occurs.
+
 Administrators can use the **Fabric Capacity Metrics app** to monitor Copilot usage, providing insights into capacity consumption and helping manage resources effectively.
 
 > [!div class="mx-imgBorder"]

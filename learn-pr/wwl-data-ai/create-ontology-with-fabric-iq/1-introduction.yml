@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to creating ontologies with Fabric IQ using manual or semantic model approaches"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

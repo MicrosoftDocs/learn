@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.design-implement-rag-with-sql
+metadata:
+  title: Design and implement RAG with SQL
+  description: Learn how to implement Retrieval Augmented Generation (RAG) patterns using Azure SQL Database. Identify RAG use cases, prepare database context for Large Language Model (LLM) processing, construct augmented prompts, and process model responses.
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-assisted
+title: Design and implement RAG with SQL
+summary: This module teaches you how to implement Retrieval Augmented Generation (RAG) using Azure SQL Database. You learn to identify appropriate RAG scenarios, prepare SQL results as LLM context, construct augmented prompts, and process model responses.
+abstract: |
+  By the end of this module, you're able to:
+  - Identify use cases for RAG in SQL-based applications
+  - Convert structured database data to JSON for LLM processing
+  - Create prompts that combine instructions with retrieved database context
+  - Send retrieval results to an LLM and extract responses
+prerequisites: |
+  - Experience with SQL Server or Azure SQL Database
+  - Understanding of basic T-SQL queries
+  - Familiarity with JSON data format
+  - Completion of the "Design and implement intelligent search with SQL" module
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - database-administrator
+  - developer
+  - data-engineer
+products:
+  - azure-sql-database
+  - sql-server
+subjects:
+  - databases
+  - artificial-intelligence
+units:
+  - learn.wwl.design-implement-rag-with-sql.introduction
+  - learn.wwl.design-implement-rag-with-sql.identify-rag-use-cases-architecture
+  - learn.wwl.design-implement-rag-with-sql.prepare-retrieval-context-augmentation
+  - learn.wwl.design-implement-rag-with-sql.augment-prompts-database-context
+  - learn.wwl.design-implement-rag-with-sql.generate-process-rag-responses
+  - learn.wwl.design-implement-rag-with-sql.exercise-implement-rag-solution
+  - learn.wwl.design-implement-rag-with-sql.knowledge-check
+  - learn.wwl.design-implement-rag-with-sql.summary
+badge:
+  uid: learn.wwl.design-implement-rag-with-sql.badge

@@ -1,0 +1,179 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the key distinction between AI agents and traditional chatbots?"
+    choices:
+    - content: "AI agents can only respond to specific user queries with prescripted answers."
+      isCorrect: false
+      explanation: "Incorrect. Responding to specific queries with prescripted answers describes chatbot behavior, not AI agent behavior."
+    - content: "Chatbots follow predetermined conversational paths, while agents dynamically plan and execute multi-step workflows to achieve an outcome."
+      isCorrect: true
+      explanation: "Correct. AI agents go beyond scripted responses by using AI-driven reasoning to plan, execute, and adapt their actions across multiple steps to accomplish a goal."
+    - content: "AI agents require step-by-step human guidance for each action they take."
+      isCorrect: false
+      explanation: "Incorrect. AI agents operate with a degree of independence and can make decisions, use tools, and adapt autonomously without step-by-step human guidance."
+  - content: "Which capability enables AI agents to interact with external systems like databases and REST APIs?"
+    choices:
+    - content: "Reasoning and planning."
+      isCorrect: false
+      explanation: "Incorrect. Reasoning and planning enable the agent to interpret requests and decide what actions to take, but this capability alone doesn't provide interaction with external systems."
+    - content: "Memory and context."
+      isCorrect: false
+      explanation: "Incorrect. Memory and context help the agent maintain coherence across multiple interactions, but they don't provide the mechanism for interacting with external systems."
+    - content: "Tool use."
+      isCorrect: true
+      explanation: "Correct. Tools give agents the ability to call external functions, APIs, or commands, enabling them to interact with real systems like databases and REST APIs."
+  - content: "What communication architecture does the GitHub Copilot SDK use to interact with the Copilot CLI?"
+    choices:
+    - content: "The SDK communicates with a cloud-hosted API using REST over HTTPS."
+      isCorrect: false
+      explanation: "Incorrect. The SDK communicates with a local CLI process, not a cloud-hosted API."
+    - content: "The SDK sends JSON-RPC messages to the Copilot CLI running in server mode as a local process."
+      isCorrect: true
+      explanation: "Correct. The SDK architecture follows the flow: Application → SDK Client → (JSON-RPC) → Copilot CLI (server mode), with the CLI running as a local process."
+    - content: "The SDK embeds the AI model directly and runs inference locally without any external process."
+      isCorrect: false
+      explanation: "Incorrect. The SDK relies on the Copilot CLI running in server mode and communicates with it through JSON-RPC, rather than embedding a model directly."
+  - content: "What is the purpose of the SDK's infinite sessions feature?"
+    choices:
+    - content: "To allow an unlimited number of concurrent users to share a single session."
+      isCorrect: false
+      explanation: "Incorrect. The infinite sessions feature is about managing context within a single session, not about handling multiple concurrent users."
+    - content: "To automatically compact context when the context window approaches its limit, preventing token overflow errors."
+      isCorrect: true
+      explanation: "Correct. The infinite sessions feature automatically compacts older context when the context window nears its limit, preserving essential information while preventing token overflow errors."
+    - content: "To enable the agent to register an unlimited number of tools within a session."
+      isCorrect: false
+      explanation: "Incorrect. The infinite sessions feature manages conversation history length, not the number of tools registered with a session."
+  - content: "How are tools defined in the GitHub Copilot SDK for .NET?"
+    choices:
+    - content: "Using XML configuration files that map tool names to API endpoints."
+      isCorrect: false
+      explanation: "Incorrect. The .NET SDK defines tools programmatically in code, not through XML configuration files."
+    - content: "Using `AIFunctionFactory.Create` from the `Microsoft.Extensions.AI` package with a lambda function, tool name, and description."
+      isCorrect: true
+      explanation: "Correct. Each `AIFunctionFactory.Create` call takes a lambda function with `[Description]` attributes on parameters, a tool name, and a description that helps the model understand when to call it."
+    - content: "Using decorator attributes on controller classes that automatically expose methods as tools."
+      isCorrect: false
+      explanation: "Incorrect. Tools are defined explicitly using `AIFunctionFactory.Create`, not through decorator attributes on controller classes."
+  - content: "What are the five core architectural components that every AI agent system requires?"
+    choices:
+    - content: "Input handler, output formatter, cache, scheduler, and logger."
+      isCorrect: false
+      explanation: "Incorrect. While these items are common software components, they don't represent the specific architectural building blocks of an AI agent system."
+    - content: "AI reasoning engine, tools, planner and controller, memory and context, and policies and guardrails."
+      isCorrect: true
+      explanation: "Correct. These components form the architectural blueprint that every agent system shares, from the large language model (LLM) that reasons to the guardrails that ensure safe operation."
+    - content: "Database, API gateway, message queue, load balancer, and monitoring service."
+      isCorrect: false
+      explanation: "Incorrect. These items are infrastructure components for distributed systems, not the core building blocks of an AI agent architecture."
+  - content: "What does the `OnPreToolUse` session hook return to control whether a tool call proceeds?"
+    choices:
+    - content: "A boolean value indicating true to proceed or false to cancel."
+      isCorrect: false
+      explanation: "Incorrect. The hook uses a more granular control mechanism than a simple boolean."
+    - content: "A `PermissionDecision` value of `Allow`, `Deny`, or `Ask`."
+      isCorrect: true
+      explanation: "Correct. The `PermissionDecision` value provides three options: `Allow` to proceed, `Deny` to block the call, or `Ask` to prompt the user for confirmation before the tool executes."
+    - content: "An HTTP status code such as 200 for success or 403 for forbidden."
+      isCorrect: false
+      explanation: "Incorrect. The SDK uses its own `PermissionDecision` enum for tool call control, not HTTP status codes."
+  - content: "Which three design areas should a developer focus on when building an agent with the Copilot SDK?"
+    choices:
+    - content: "Speed, cost, and scalability."
+      isCorrect: false
+      explanation: "Incorrect. While these areas are important operational considerations, they aren't the primary design areas for agent configuration."
+    - content: "Context, tools, and policies."
+      isCorrect: true
+      explanation: "Correct. Context defines what information the agent needs, tools define what actions it can take, and policies define what rules it must follow."
+    - content: "UI design, database schema, and network architecture."
+      isCorrect: false
+      explanation: "Incorrect. These areas relate to general application design rather than the specific design decisions for an AI agent built with the Copilot SDK."
+  - content: "What event type signals that the agent finished processing a request, including all tool calls?"
+    choices:
+    - content: "`AssistantMessageEvent`."
+      isCorrect: false
+      explanation: "Incorrect. `AssistantMessageEvent` contains a portion of the agent's response text, but it doesn't indicate that all processing is complete."
+    - content: "`ToolExecutionCompleteEvent`."
+      isCorrect: false
+      explanation: "Incorrect. `ToolExecutionCompleteEvent` signals that a specific tool call finished, but the agent might still need to process more tool calls or generate more responses."
+    - content: "`SessionIdleEvent`."
+      isCorrect: true
+      explanation: "Correct. `SessionIdleEvent` signals that the agent finished all processing for the current request, including any tool calls, and the response is complete."
+  - content: "What does the `SystemMessageMode.Replace` setting do in a session configuration?"
+    choices:
+    - content: "It replaces the AI model assigned to the session with a different model."
+      isCorrect: false
+      explanation: "Incorrect. The `SystemMessageMode` controls system prompt behavior, not model selection. Model selection is handled by the `Model` property."
+    - content: "It replaces the default system message with a custom system prompt."
+      isCorrect: true
+      explanation: "Correct. Setting the mode to `Replace` ensures the custom system prompt entirely replaces the default system message, giving the developer full control over the agent's role and behavior definition."
+    - content: "It replaces all existing tool definitions with a new set of tools."
+      isCorrect: false
+      explanation: "Incorrect. `SystemMessageMode` affects only the system prompt configuration, not tool definitions."
+  - content: "Which event type should a developer subscribe to when streaming the agent's response token by token in a chat UI?"
+    choices:
+    - content: "`AssistantMessageEvent`."
+      isCorrect: false
+      explanation: "Incorrect. `AssistantMessageEvent` provides the complete response, not incremental tokens. It's used for nonstreaming scenarios."
+    - content: "`AssistantMessageDeltaEvent`."
+      isCorrect: true
+      explanation: "Correct. `AssistantMessageDeltaEvent` provides incremental text fragments through the `DeltaContent` property, which the developer can render in real time for a responsive chat experience."
+    - content: "`SessionIdleEvent`."
+      isCorrect: false
+      explanation: "Incorrect. `SessionIdleEvent` signals that processing is complete, but it doesn't provide response content for streaming."
+  - content: "What pattern gives a customer-facing agent access to product information and FAQs beyond the AI model's training data?"
+    choices:
+    - content: "Fine-tuning the AI model with the company's proprietary data."
+      isCorrect: false
+      explanation: "Incorrect. While fine-tuning can be useful, the recommended pattern for grounding agents in current documentation uses a different approach."
+    - content: "Retrieval-Augmented Generation (RAG) using a knowledge base search tool."
+      isCorrect: true
+      explanation: "Correct. RAG grounds the agent's answers in the developer's actual documentation by providing a search tool like `search_knowledge_base(query)` that queries the developer's FAQ system or documentation."
+    - content: "Increasing the model's context window size to include all company documents."
+      isCorrect: false
+      explanation: "Incorrect. Context window limits make it impractical to include all company documents, and RAG provides a more efficient and maintainable approach."
+  - content: "Why should back-office agents use tools for mathematical operations rather than relying on the AI model?"
+    choices:
+    - content: "Tools are faster than the AI model at performing complex calculations."
+      isCorrect: false
+      explanation: "Incorrect. While tools can be faster, speed isn't the primary reason for using tools for math operations."
+    - content: "Tools produce reliable results, while the AI model might introduce arithmetic errors."
+      isCorrect: true
+      explanation: "Correct. In enterprise processes where accuracy is critical, using tools like `calculate_tax(amount, rate)` for mathematical operations ensures deterministic, reliable results."
+    - content: "Tools don't count toward the session's token usage limit."
+      isCorrect: false
+      explanation: "Incorrect. The primary reason is reliability and accuracy, not token usage considerations."
+  - content: "What approach should be used when a back-office agent is triggered by monitoring alerts or webhooks?"
+    choices:
+    - content: "Process all alerts in a single shared session for efficiency."
+      isCorrect: false
+      explanation: "Incorrect. Using a shared session risks carry-over confusion between unrelated operations."
+    - content: "Queue all alerts and process them in a daily batch job."
+      isCorrect: false
+      explanation: "Incorrect. Delayed processing defeats the purpose of event-driven automation, especially for time-sensitive alerts like system incidents."
+    - content: "Process each event in an independent session to prevent context mixing between unrelated operations."
+      isCorrect: true
+      explanation: "Correct. Stateless execution with independent sessions for each event prevents context from one operation interfering with another, ensuring reliable processing."
+  - content: "What iterative workflow does an AI agent follow when processing a request?"
+    choices:
+    - content: "Research, implement, test, deploy, and monitor."
+      isCorrect: false
+      explanation: "Incorrect. These steps describe a software development lifecycle, not an AI agent's processing workflow."
+    - content: "Receive input, reason and plan, act, observe, and iterate or respond."
+      isCorrect: true
+      explanation: "Correct. This cycle repeats until the agent's goal is met: receive the user's input, reason about what to do, take an action like calling a tool, observe the result, and either iterate for more steps or produce a final response."
+    - content: "Parse request, validate data, execute query, format output, and return response."
+      isCorrect: false
+      explanation: "Incorrect. These steps describe a traditional request-response pipeline, not the adaptive, iterative workflow that AI agents use."

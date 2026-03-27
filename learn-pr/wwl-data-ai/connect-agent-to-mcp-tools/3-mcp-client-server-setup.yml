@@ -4,7 +4,7 @@ title: Integrate agent tools using an MCP server and client
 metadata:
   title: Integrate Agent Tools Using an MCP Server and Client
   description: "Learn how to expose Model Context Protocol (MCP) tools through a server and register them to an Azure AI Agent."
-  ms.date: 06/13/2025
+  ms.date: 2/18/2026
   author: buzahid
   ms.author: buzahid
   ms.topic: unit

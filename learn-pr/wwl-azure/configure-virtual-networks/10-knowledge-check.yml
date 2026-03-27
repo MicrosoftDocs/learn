@@ -43,14 +43,3 @@ quiz:
     - content: "Virtual machines running production workloads."
       isCorrect: false
       explanation: "Incorrect. Public IP addresses shouldn't be assigned to private virtual machines."
-  - content: "When does a dynamic IP address change?"
-    choices:
-    - content: "In Azure, when a virtual machine is stopped and then restarted."
-      isCorrect: true
-      explanation: "Correct. The dynamic IP address changes."
-    - content: "In the guest OS, when a virtual machine is rebooted or stopped."
-      isCorrect: false
-      explanation: "Incorrect. The dynamic IP address doesn't change."
-    - content: "Each time the virtual machine is accessed."
-      isCorrect: false
-      explanation: "Incorrect. The dynamic IP address doesn't change."

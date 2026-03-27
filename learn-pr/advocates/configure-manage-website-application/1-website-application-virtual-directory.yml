@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.website-application-virtual-directory.website-application-virtual-directory
+title: Websites, applications, and virtual directories
+metadata:
+  title: Websites, Applications, and Virtual Directories
+  description: Understand the concepts of websites, applications, and virtual directories in Internet Information Services (IIS) on Windows Server, and learn how to create and configure them to host web content effectively.
+  ms.date: 03/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/1-website-application-virtual-directory.md)]

@@ -24,7 +24,7 @@ abstract: |
 
   -   Implement disk encryption methods like ADE and encryption at host, and manage API access securely in Azure API Management.
 prerequisites: '-   None'
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-module.svg
 levels:
 - intermediate
 roles:

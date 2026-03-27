@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-foundry-agent-with-m365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of integrating Microsoft Foundry agents with Microsoft 365.
+  ms.date: 02/17/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What Azure resource does the Foundry portal automatically create when you publish an agent to Microsoft Teams?
+    choices:
+    - content: Azure Functions
+      isCorrect: false
+      explanation: Incorrect. Azure Functions is used for serverless compute but isn't automatically created during agent publishing.
+    - content: Azure Bot Service
+      isCorrect: true
+      explanation: Correct. The publishing process automatically creates an Azure Bot Service resource that routes messages between Microsoft Teams and your Foundry agent.
+    - content: Azure Cosmos DB
+      isCorrect: false
+      explanation: Incorrect. Cosmos DB is a database service and isn't automatically created during agent publishing.
+    - content: Azure Logic Apps
+      isCorrect: false
+      explanation: Incorrect. Logic Apps is a workflow automation service and isn't automatically created during agent publishing.
+  - content: What is the main difference between shared scope and organization scope when publishing an agent?
+    choices:
+    - content: Shared scope requires more Azure resources
+      isCorrect: false
+      explanation: Incorrect. Both scopes use the same Azure resources.
+    - content: Organization scope requires admin approval before the agent is available to all users
+      isCorrect: true
+      explanation: Correct. Organization scope requires an administrator to approve the agent in the Microsoft 365 admin center before it becomes available organization-wide.
+    - content: Shared scope only works in the Foundry playground
+      isCorrect: false
+      explanation: Incorrect. Shared scope publishes the agent to Teams, not just the Foundry playground.
+    - content: Organization scope provides better agent performance
+      isCorrect: false
+      explanation: Incorrect. The publish scope doesn't affect agent performance.
+  - content: What happens to tool permissions when you publish an agent from Foundry to Teams?
+    choices:
+    - content: Permissions are automatically transferred to the published agent
+      isCorrect: false
+      explanation: Incorrect. Permissions aren't automatically transferred when publishing.
+    - content: Tools are disabled after publishing
+      isCorrect: false
+      explanation: Incorrect. Tools can work after publishing, but permissions need to be reassigned.
+    - content: The published agent gets a new identity and needs permissions reassigned
+      isCorrect: true
+      explanation: Correct. The published agent uses its own distinct identity, so any RBAC permissions for Azure resources must be assigned to this new identity.
+    - content: Permissions only work in organization scope
+      isCorrect: false
+      explanation: Incorrect. Permission requirements are the same regardless of publish scope.
+  - content: What is Microsoft Work IQ?
+    choices:
+    - content: A machine learning model for workplace analytics
+      isCorrect: false
+      explanation: Incorrect. Work IQ is a CLI and MCP server, not a machine learning model.
+    - content: A CLI and MCP server that connects AI agents to Microsoft 365 data
+      isCorrect: true
+      explanation: Correct. Work IQ is a command-line interface and Model Context Protocol server that enables AI agents to access Microsoft 365 data like emails, meetings, and documents.
+    - content: A replacement for Microsoft Teams
+      isCorrect: false
+      explanation: Incorrect. Work IQ complements Microsoft 365 services, it doesn't replace them.
+    - content: A Visual Studio Code extension for building agents
+      isCorrect: false
+      explanation: Incorrect. Work IQ is a CLI/MCP server. The Microsoft 365 Agents Toolkit is a VS Code extension.
+  - content: When should you consider using the Microsoft 365 Agents Toolkit instead of direct publishing from Foundry?
+    choices:
+    - content: For all production deployments
+      isCorrect: false
+      explanation: Incorrect. Direct publishing is suitable for most production scenarios.
+    - content: When you need custom SSO, middleware logic, or multi-environment deployment
+      isCorrect: true
+      explanation: Correct. The Agents Toolkit is valuable for complex scenarios requiring custom single sign-on, middleware processing, or sophisticated deployment pipelines.
+    - content: When publishing to shared scope
+      isCorrect: false
+      explanation: Incorrect. Both shared and organization scope work with direct publishing.
+    - content: When your agent doesn't use any tools
+      isCorrect: false
+      explanation: Incorrect. The choice between approaches doesn't depend on whether tools are configured.

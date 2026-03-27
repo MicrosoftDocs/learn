@@ -9,3 +9,7 @@ Here are some links to more information on CodeQL:
 - [Upload an analysis as SARIF data](https://docs.github.com/en/rest/reference/code-scanning#upload-an-analysis-as-sarif-data)
 - [Managing code scanning alerts for your repository](https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/managing-code-scanning-alerts-for-your-repository)
 - [Defining the alert severities that cause a check failure for a pull request](https://docs.github.com/en/code-security/secure-coding/configuring-code-scanning#defining-the-alert-severities-that-cause-a-check-failure-for-a-pull-request)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -32,3 +32,7 @@ Now that you've completed this module, you can:
 - [GitHub Copilot Trust Center](https://copilot.github.trust.page/)
 - [GitHub Blog: "GitHub Copilot: Meet the new coding agent"](https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/)
 - [Model Context Protocol (MCP) overview](https://modelcontextprotocol.io/)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

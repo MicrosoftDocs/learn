@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-telemetry-logs-metrics.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your AI application uses Application Insights with sampling enabled. You need to query the exceptions table to get an accurate count of total exceptions over the last 24 hours. Which KQL aggregation approach produces accurate results when sampling is active?"
+    choices:
+    - content: "`sum(itemCount)`"
+      isCorrect: true
+      explanation: "When sampling is active, each sampled record's `itemCount` reflects how many actual events that record represents. Summing `itemCount` produces totals that reflect actual application behavior rather than just the count of sampled records."
+    - content: "`count()`"
+      isCorrect: false
+      explanation: "With sampling active, `count()` returns only the count of sampled records, which under represents the true exception volume. The `count()` function doesn't account for the events that each sampled record represents."
+    - content: "`dcount(type)`"
+      isCorrect: false
+      explanation: "The `dcount()` function counts distinct values of a column. Using `dcount(type)` returns the number of unique exception types, not the total number of exceptions that occurred."
+  - content: "A developer needs to trace the full chain of events from a single user request as it flows through four services in a document processing pipeline. Which Application Insights column links all telemetry items from that single distributed request?"
+    choices:
+    - content: "`cloud_RoleName`"
+      isCorrect: false
+      explanation: "The `cloud_RoleName` column identifies which service generated the telemetry item. It doesn't link items from the same request across services."
+    - content: "`operation_Id`"
+      isCorrect: true
+      explanation: "The `operation_Id` column is shared across all telemetry items that belong to a single distributed trace, making it possible to correlate requests, dependencies, exceptions, and traces from the same user request as it flows through multiple services."
+    - content: "`customDimensions`"
+      isCorrect: false
+      explanation: "The `customDimensions` column contains a dynamic property bag of custom key-value pairs that developers add to enrich telemetry. It doesn't provide built-in correlation across services for distributed tracing."
+  - content: "During an incident, a team member confirms elevated error rates on a dashboard and needs to investigate the root cause by dynamically filtering telemetry by service, time window, and error type. Which Azure Monitor tool is designed for this interactive investigation?"
+    choices:
+    - content: "Azure dashboards"
+      isCorrect: false
+      explanation: "Dashboards provide at-a-glance operational awareness with static tiles that refresh on a schedule. They aren't designed for interactive filtering and drill-down investigation during incidents."
+    - content: "Azure Monitor metric alerts"
+      isCorrect: false
+      explanation: "Metric alerts detect threshold violations and trigger notifications. They're a detection mechanism, not an investigation tool for exploring telemetry interactively."
+    - content: "Azure Monitor Workbooks"
+      isCorrect: true
+      explanation: "Workbooks provide an interactive canvas with parameters, conditional visibility, and linked grids that let users adjust filters and drill into specific data points. This interactivity makes workbooks the right choice for troubleshooting and root cause analysis."
+  - content: "A developer creates a log search alert with a KQL query that counts failed requests per service and returns rows only for services exceeding ten failures. The threshold is set to greater than zero table rows. What behavior does this configuration produce?"
+    choices:
+    - content: "The alert fires whenever any service has more than 10 failures in the evaluation window."
+      isCorrect: true
+      explanation: "The query returns rows only for services that exceed 10 failures. Setting the threshold to greater than zero table rows means the alert fires if the query returns any rows, indicating at least one service crossed the failure threshold in the evaluation window."
+    - content: "The alert fires once for each individual failed request detected in the evaluation window."
+      isCorrect: false
+      explanation: "The query aggregates failures by service using `summarize`, so individual failed requests aren't counted as separate alert triggers. The alert evaluates whether the query returns any rows, not the number of individual failures."
+    - content: "The alert fires only when all monitored services have more than 10 failures simultaneously."
+      isCorrect: false
+      explanation: "The alert fires when the query returns any rows. Even a single service exceeding 10 failures produces a returned row, which triggers the alert. There's no requirement for all services to exceed the threshold."
+  - content: "A developer monitors an AI pipeline where average response times remain within acceptable limits, but users report occasional slow responses. Which KQL function reveals the response time experienced by the slowest five percent of requests?"
+    choices:
+    - content: "`avg()`"
+      isCorrect: false
+      explanation: "The `avg()` function calculates the mean response time across all requests. A few slow requests has minimal impact on the average, so `avg()` masks the outlier behavior that users experience."
+    - content: "`percentile(duration, 95)`"
+      isCorrect: true
+      explanation: "The `percentile()` function with a 95th percentile argument returns the response time below which 95 percent of requests fall. This reveals the experience of the slowest five percent of requests, capturing the outlier latency that average values hide."
+    - content: "`max(duration)`"
+      isCorrect: false
+      explanation: "The `max()` function returns only the single slowest response time. While it shows the absolute worst case, it doesn't characterize the experience of a percentile of requests and can be heavily influenced by a single extreme outlier."

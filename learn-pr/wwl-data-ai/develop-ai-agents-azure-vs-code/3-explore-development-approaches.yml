@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.explore-development-approaches
+title: Explore development approaches
+metadata:
+  title: Explore Development Approaches
+  description: Compare Azure portal and Visual Studio Code development approaches for building AI agents.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-explore-development-approaches.md)]

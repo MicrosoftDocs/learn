@@ -5,7 +5,7 @@ metadata:
   description: "Learn how to publish an ASP.NET Core app for deployment to a web server or cloud service."
   ms.date: 8/28/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: module
   ms.service: aspnet-core
 title: Publish an ASP.NET Core app

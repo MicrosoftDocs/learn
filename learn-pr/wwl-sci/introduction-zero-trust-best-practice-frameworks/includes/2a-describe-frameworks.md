@@ -1,6 +1,6 @@
 Microsoft provides several best practice frameworks that cybersecurity architects use to design and evaluate security across the organization. Each framework serves a different purpose and audience. Understanding the scope and intent of each framework helps you choose the right guidance for a given situation.
 
-## Cloud Adoption Framework
+## Microsoft Cloud Adoption Framework
 
 The Microsoft Cloud Adoption Framework (CAF) is a structured roadmap that helps organizations successfully adopt Azure and integrate it into their existing IT environments. CAF provides best practices and guidance throughout the entire cloud adoption lifecycle.
 

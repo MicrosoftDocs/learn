@@ -4,13 +4,11 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: design solutions for securing an organization's data."
-  ms.date: 3/14/2023
+  ms.date: 03/10/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-  content_well_notification: 
-    - AI-contribution
-  ai-usage: ai-assisted
+  ai-usage: ai-generated
   module_assessment: true
 durationInMinutes: 3
 ###########################################################################
@@ -43,7 +41,7 @@ quiz:
           explanation: Data encryption does not reduce the cost of storing data, but it is essential to secure data against unauthorized access.
         - content: To improve the performance of applications that use data.
           isCorrect: false
-          explanation: Data encryption does not improve the performance of applications that use data, but it can have a small impact on performance due to the additional overhead of encryption and decryption.
+          explanation: Data encryption does not improve the performance of applications that use data, but it can have a small impact on performance due to the extra overhead of encryption and decryption.
     - content: What are the benefits of using Azure Key Vault for data encryption in Azure?
       choices:
         - content: It provides a centralized key management solution.
@@ -79,10 +77,10 @@ quiz:
           explanation: Microsoft Defender for Azure SQL can detect and block SQL injection attacks, which are a common type of attack that exploits vulnerabilities in SQL code to gain unauthorized access to databases.
         - content: Network bandwidth throttling attacks
           isCorrect: false
-          explanation: Network bandwidth throttling attacks are not specifically related to SQL Server security and are not within the scope of Microsoft Defender for Azure SQL.
+          explanation: Network bandwidth throttling attacks are not related to SQL Server security and are not within the scope of Microsoft Defender for Azure SQL.
         - content: Distributed denial of service (DDoS) attacks
           isCorrect: false
-          explanation: While DDoS attacks can be a threat to any cloud-based service, they are not specifically related to SQL Server security and are not within the scope of Microsoft Defender for Azure SQL.
+          explanation: While DDoS attacks can be a threat to any cloud-based service, they are not related to SQL Server security and are not within the scope of Microsoft Defender for Azure SQL.
         - content: Physical server theft
           isCorrect: false
           explanation: Microsoft Defender for Azure SQL is a cloud based technology that does offer physical security.

@@ -4,8 +4,8 @@ metadata:
   title: Examine SAP HANA on Azure (Large Instances) sample architecture
   description: This module examines SAP HANA on Azure (Large Instances) sample architecture and workflow. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads.
   ms.date: 07/07/2022
-  author: wwlpublish
-  ms.author: eric
+  author: bradjoseph
+  ms.author: bradj
   ms.topic: module
   ms.service: sap-on-azure
 title: Examine SAP HANA on Azure (Large Instances) sample architecture
@@ -40,4 +40,4 @@ units:
 - learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.summary
 badge:
   uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.badge
-
+

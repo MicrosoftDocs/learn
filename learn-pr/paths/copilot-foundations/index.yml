@@ -20,16 +20,13 @@ roles:
 - data-scientist
 - ai-engineer
 products:
-- ai-services
+- foundry-tools
 subjects:
 - artificial-intelligence
 - machine-learning
 - natural-language-processing
 modules:
-- learn.wwl.fundamentals-generative-ai
 - learn-bizapps.power-virtual-agent-bots
-- learn.wwl.prepare-azure-ai-development
-- learn.wwl.build-copilot-ai-studio
 trophy:
   uid: learn.wwl.copilot-foundations.trophy
 

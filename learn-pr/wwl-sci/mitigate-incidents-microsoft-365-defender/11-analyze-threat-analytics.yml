@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.mitigate-incidents-microsoft-365-defender.analyze-threat-analytics
-title: Analyze threat analytics
+title: Analyze threat analytics with the Security Copilot Threat Intelligence Briefing Agent
 metadata:
-  title: Analyze threat analytics
-  description: "Analyze threat analytics"
-  ms.date: 01/24/2024
-  author: wwlpublish
+  title: Analyze threat analytics with the Security Copilot Threat Intelligence Briefing Agent
+  description: "Use the Security Copilot Threat Intelligence Briefing Agent to analyze threat analytics"
+  ms.date: 03/12/2026
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/11-analyze-threat-analytics.md)]

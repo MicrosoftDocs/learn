@@ -3,9 +3,9 @@ uid: learn.wwl.analyze-content-ai
 metadata:
   title: Create a multimodal analysis solution with Azure Content Understanding 
   description: Use Azure Content Understanding for multimodal content analysis and information extraction.
-  author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/28/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
@@ -17,11 +17,11 @@ abstract: |
   After completing this module, you will be able to:
   - Describe capabilities of Azure Content Understanding.
   - Use Azure Content Understanding to build a content analyzer.
-  - Consume a Content Understanding analyzer by using the REST API.
+  - Consume a Content Understanding analyzer by using the API.
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
-  - Have some familiarity with REST APIs.
+  - Have some familiarity with APIs.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -29,8 +29,8 @@ roles:
 - ai-engineer
 - developer
 products:
-- ai-services
-- azure-ai-foundry
+- foundry-tools
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 units:

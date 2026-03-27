@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-speech-in-azure.speech-recognition
+title: Speech recognition
+metadata:
+  title: Speech recognition
+  description: "Speech recognition"
+  ms.date: 03/24/2026
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-speech-recognition.md)]
