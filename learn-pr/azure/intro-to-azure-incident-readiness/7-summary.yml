@@ -6,8 +6,8 @@ metadata:
   description: Summary
   ms.date: 6/25/2023
   author: rmcmurray
-  ms.author: robmcm
+  ms.author: keall
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]
