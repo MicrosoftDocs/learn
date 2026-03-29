@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions
 metadata:
-  title: Guided project - Build a simple website endpoint with Azure Functions
+  title: 'Guided Project: Build a simple website endpoint with Azure Functions'
   description: "Create and test an HTTP-triggered Azure Function as a lightweight website endpoint."
   ms.date: 03/16/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Build a simple website endpoint with Azure Functions
+title: 'Guided Project: Build a simple website endpoint with Azure Functions'
 summary: |
   This guided project introduces serverless hosting by creating a function endpoint and validating responses.
 
