@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided Project: Set spending limits for a pilot environment (Budgets and Policy)
+title: Guided project - Set spending limits for a pilot environment (Budgets and Policy)
 summary: |
   This guided project helps you reduce spend risk by implementing cost guardrails in Azure.
 
