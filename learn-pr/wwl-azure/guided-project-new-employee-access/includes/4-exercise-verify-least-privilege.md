@@ -69,14 +69,14 @@ Create a TAP for Alex. This one-time passcode lets Alex sign in to the portal wi
 5.  Select **+ Add authentication method**.
 6.  For **Choose method**, select **Temporary Access Pass**.
 7.  Leave the defaults (1 hour lifetime, one-time use) and select **Add**.
-8.  Copy the **Temporary Access Pass** code that appears and save it — this is the only time you can see it.
+8.  Copy the **Temporary Access Pass** code that appears and save it—this is the only time you can see it.
 
 > [!NOTE]
 > **Validation step:** Confirm the TAP code is generated and saved. You need it for the next task.
 
 ## Task 5: Sign in as Alex and test permissions
 
-Sign in as Alex to experience the Reader role firsthand. This is the strongest validation — you see exactly what Alex can and cannot do in the portal.
+Sign in as Alex to experience the Reader role firsthand. This is the strongest validation—you see exactly what Alex can and cannot do in the portal.
 
 1.  Open a new **InPrivate** (Edge) or **Incognito** (Chrome) browser window.
 2.  Go to [https://portal.azure.com](https://portal.azure.com).
@@ -85,7 +85,7 @@ Sign in as Alex to experience the Reader role firsthand. This is the strongest v
 5.  Paste the **Temporary Access Pass** code and select **Sign in**.
 6.  When prompted to update your password, create a new password and select **Sign in**.
 6.  After signing in, search for **Resource groups** in the portal search bar and select **Resource groups**.
-7.  Select **rg-gp-access-model** from the list. Confirm you can view the resource group and its resources — this proves read access works.
+7.  Select **rg-gp-access-model** from the list. Confirm you can view the resource group and its resources—this proves read access works.
 8.  In the portal search bar, search for **Storage accounts** and select **Storage accounts**.
 9.  Select **+ Create**.
 10. On the **Basics** tab, select **rg-gp-access-model** as the resource group.
@@ -95,7 +95,7 @@ Sign in as Alex to experience the Reader role firsthand. This is the strongest v
 14. For **Performance**, select **Standard**.
 15. For **Redundancy**, select **Locally-redundant storage (LRS)**.
 16. Select **Review + create**.
-16. Confirm the creation fails with a permissions error — Alex has Reader access only and cannot create resources.
+16. Confirm the creation fails with a permissions error—Alex has Reader access only and cannot create resources.
 13. Close the InPrivate/Incognito window and return to your main browser session.
 
 > [!NOTE]

@@ -4,7 +4,7 @@ This guided project consists of the following exercises:
  - **Assign RBAC role at scope**
  - Verify least-privilege model
 
-In this exercise, you assign the Reader role to your security group at the resource group scope. This single assignment gives every member of the group permission to view resources — demonstrating how group-based RBAC simplifies access management.
+In this exercise, you assign the Reader role to your security group at the resource group scope. This single assignment gives every member of the group permission to view resources—demonstrating how group-based RBAC simplifies access management.
 
 This exercise includes the following tasks:
 
@@ -14,7 +14,7 @@ This exercise includes the following tasks:
 
 ## Task 1: Assign Reader role to the group
 
-Grant the Reader role to your security group at the resource group scope. This gives all members of the group permission to view resources but not to create, modify, or delete them — implementing the principle of least privilege.
+Grant the Reader role to your security group at the resource group scope. This gives all members of the group permission to view resources but not to create, modify, or delete them—implementing the principle of least privilege.
 
 1.  In the portal search bar, search for **Resource groups** and select **Resource groups**.
 2.  Select **rg-gp-access-model** from the list.

@@ -47,7 +47,7 @@ Create a storage account inside the resource group. This resource provides a sco
 
 ## Task 3: Create the security group
 
-Set up a security group that serves as a container for your new user. Using groups makes permission management scalable — you assign permissions once to a group, then add or remove users as needed.
+Set up a security group that serves as a container for your new user. Using groups makes permission management scalable—you assign permissions once to a group, then add or remove users as needed.
 
 1.  In the portal search bar, search for **Microsoft Entra ID** and select **Microsoft Entra ID**.
 2.  In the left menu under **Manage**, select **Groups**.
@@ -61,7 +61,7 @@ Set up a security group that serves as a container for your new user. Using grou
 > **Validation step:** Verify the **gp-rg-readers** security group now exists in your tenant.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 4: Create the user account
 
@@ -70,7 +70,7 @@ Create a new identity in Entra ID for the team member. This user account will be
 1.  In the portal search bar, search for **Microsoft Entra ID** and select **Microsoft Entra ID**.
 2.  In the left menu under **Manage**, select **Users**.
 3.  Select **New user** and then select **Create new user**.
-4.  For **User principal name**, enter a unique name (for example, **alexgp**). This is the sign-in name the user would use to access Azure (combined with your tenant domain, it becomes something like **alexgp@yourtenant.onmicrosoft.com**). Record this value — you need it for later validation.
+4.  For **User principal name**, enter a unique name (for example, **alexgp**). This is the sign-in name the user would use to access Azure (combined with your tenant domain, it becomes something like **alexgp@yourtenant.onmicrosoft.com**). Record this value—you need it for later validation.
 5.  For **Display name**, enter **Alex Guided Project**.
 6.  Select **Review + create** and then select **Create**.
 7.  The Users list may not refresh automatically. Select **Refresh** to confirm the new user appears in the list.
