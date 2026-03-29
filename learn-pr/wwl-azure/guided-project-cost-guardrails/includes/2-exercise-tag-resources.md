@@ -4,7 +4,7 @@ This guided project consists of the following exercises:
  - Create budget and alerts
  - Assign and test Azure Policy
 
-In this exercise, you create a resource group and storage account, then apply organizational tags to both. Tags are the foundation of cost governance — they let you categorize resources by team, environment, or project so you can track spending accurately.
+In this exercise, you create a resource group and storage account, then apply organizational tags to both. Tags are the foundation of cost governance—they let you categorize resources by team, environment, or project so you can track spending accurately.
 
 This exercise includes the following tasks:
 
@@ -63,7 +63,7 @@ Apply organizational tags to your resource group. Tags are key-value pairs that 
 > **Validation step:** Confirm the resource group displays both tags (**environment: pilot** and **owner: it-team**).
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 4: Tag the storage account
 

@@ -1,6 +1,6 @@
 This guided project focuses on setting up cost guardrails using resource tags, budgets, and Azure Policy.
 
-Azure provides several tools to help you control cloud spending. Tags let you categorize resources for cost reporting. Budgets send alerts when spending approaches a threshold. Azure Policy enforces organizational rules — like restricting which regions resources can be deployed to — automatically.
+Azure provides several tools to help you control cloud spending. Tags let you categorize resources for cost reporting. Budgets send alerts when spending approaches a threshold. Azure Policy enforces organizational rules—like restricting which regions resources can be deployed to—automatically.
 
 ## Scenario
 

@@ -40,7 +40,7 @@ Test that the policy prevents resource creation in disallowed regions. This vali
 4.  For **Storage account name**, enter a temporary name (for example, **stgppolicytest** followed by your initials).
 5.  For **Region**, select a region that is **not** the allowed location you configured in the policy.
 6.  Select **Review + create**.
-7.  Confirm the creation is denied with a policy error message. Note the error — it references the **Allowed locations** policy by name.
+7.  Confirm the creation is denied with a policy error message. Note the error—it references the **Allowed locations** policy by name.
 8.  Select **Previous** to return to the **Basics** tab.
 9.  Change the **Region** to the allowed location.
 10. Select **Review + create** again.
@@ -58,7 +58,7 @@ Check the policy compliance dashboard to see how Azure tracks compliance across 
 2.  In the left menu, select **Compliance**.
 3.  Find the **Allowed locations** policy assignment in the compliance list.
 4.  Select it to view the compliance details, including the number of compliant and noncompliant resources.
-5.  Note the compliance state — resources created in the allowed region should show as compliant.
+5.  Note the compliance state—resources created in the allowed region should show as compliant.
 
 > [!NOTE]
 > **Validation step:** Confirm the Compliance dashboard shows the policy enforcement status with compliant resources in the allowed region.
