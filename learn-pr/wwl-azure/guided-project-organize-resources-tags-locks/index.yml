@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-organize-resources-tags-locks
+metadata:
+  title: Guided project - Organize and protect resources with tags and locks
+  description: "Apply resource tags for organization and resource locks to prevent accidental changes."
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: Guided project - Organize and protect resources with tags and locks
+summary: |
+  This guided project helps you organize Azure resources with tags and protect them from accidental deletion with locks.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Create resources and apply tags for organization and cost tracking
+
+  -   Apply a delete lock to prevent accidental resource removal
+
+  -   Test that the lock blocks deletion and then remove the lock
+
+  -   Clean up all resources to avoid charges
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-resource-manager
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-organize-resources-tags-locks.introduction
+- learn.wwl.guided-project-organize-resources-tags-locks.exercise-create-resources-apply-tags
+- learn.wwl.guided-project-organize-resources-tags-locks.exercise-apply-resource-locks
+- learn.wwl.guided-project-organize-resources-tags-locks.exercise-test-lock-enforcement
+- learn.wwl.guided-project-organize-resources-tags-locks.validate-success
+- learn.wwl.guided-project-organize-resources-tags-locks.clean-up-resources
+- learn.wwl.guided-project-organize-resources-tags-locks.summary
+badge:
+  uid: learn.wwl.guided-project-organize-resources-tags-locks.badge
