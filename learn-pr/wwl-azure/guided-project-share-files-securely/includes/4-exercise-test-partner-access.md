@@ -6,7 +6,7 @@ This guided project consists of the following exercises:
  - Revoke partner access
  - Configure lifecycle management
 
-In this exercise, you test both sides of the access model — first confirming that direct access is blocked, then verifying that the SAS URL grants access to the file. This demonstrates the security boundary between public access and token-based access.
+In this exercise, you test both sides of the access model—first confirming that direct access is blocked, then verifying that the SAS URL grants access to the file. This demonstrates the security boundary between public access and token-based access.
 
 This exercise includes the following tasks:
 
@@ -39,7 +39,7 @@ Now verify that the policy-based SAS token grants access to the same file that w
 1.  In the same incognito window, paste the SAS URL into the address bar and press **Enter**.
 2.  Confirm the file content displays in the browser. Because this is a text file, the browser renders it directly instead of downloading it.
 3.  Note that you are not signed in but still have access due to the SAS token.
-4.  Keep this incognito window open — you'll use it again in the next exercise.
+4.  Keep this incognito window open—you'll use it again in the next exercise.
 
 > [!NOTE]
 > **Validation step:** Confirm the SAS URL displays the file content from the same unauthenticated incognito session that was just denied direct access.

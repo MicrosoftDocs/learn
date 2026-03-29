@@ -6,7 +6,7 @@ This guided project consists of the following exercises:
  - Revoke partner access
  - Configure lifecycle management
 
-In this exercise, you create a stored access policy on the container and generate a SAS URL from it. The stored access policy acts as a control point — if you need to revoke access later, you can delete the policy instead of tracking down individual tokens.
+In this exercise, you create a stored access policy on the container and generate a SAS URL from it. The stored access policy acts as a control point—if you need to revoke access later, you can delete the policy instead of tracking down individual tokens.
 
 This exercise includes the following tasks:
 
@@ -15,7 +15,7 @@ This exercise includes the following tasks:
 
 **Outcome:** A stored access policy on the container and a SAS URL generated from that policy.
 
-Instead of generating a one-off SAS token with its own permissions and expiry, you'll create a **stored access policy** first. A stored access policy defines the rules (permissions and expiry) at the container level. Any SAS token generated from that policy inherits those rules — and if you delete the policy later, every SAS token linked to it is instantly revoked. This is the enterprise approach to SAS management.
+Instead of generating a one-off SAS token with its own permissions and expiry, you'll create a **stored access policy** first. A stored access policy defines the rules (permissions and expiry) at the container level. Any SAS token generated from that policy inherits those rules—and if you delete the policy later, every SAS token linked to it is instantly revoked. This is the enterprise approach to SAS management.
 
 ## Task 1: Create a stored access policy
 
@@ -55,7 +55,7 @@ Now generate a SAS token that inherits its rules from the policy you just create
 9.  Copy the **Blob SAS URL** and save it securely. You'll use this URL in the next exercise.
 
 > [!NOTE]
-> Notice that the **Permissions** and **Expiry** fields are grayed out — they're controlled by the policy, not set individually. This is the key advantage: all tokens share the same rules, and revoking the policy revokes them all.
+> Notice that the **Permissions** and **Expiry** fields are grayed out—they're controlled by the policy, not set individually. This is the key advantage: all tokens share the same rules, and revoking the policy revokes them all.
 
 > [!NOTE]
 > **Validation step:** Confirm the SAS URL is generated and the permissions came from the stored access policy.

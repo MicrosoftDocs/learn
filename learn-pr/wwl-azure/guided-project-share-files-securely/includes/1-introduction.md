@@ -1,10 +1,10 @@
 This guided project focuses on sharing files securely using Azure Blob Storage, shared access signatures (SAS), and lifecycle management.
 
-A shared access signature (SAS) is a token that grants temporary, scoped access to a blob or container without sharing your storage account keys. When you generate a SAS from a stored access policy, the policy acts as a central control point — you can revoke all linked tokens instantly by deleting the policy.
+A shared access signature (SAS) is a token that grants temporary, scoped access to a blob or container without sharing your storage account keys. When you generate a SAS from a stored access policy, the policy acts as a central control point—you can revoke all linked tokens instantly by deleting the policy.
 
 ## Scenario
 
-Your internal finance team needs to share monthly reports with an external partner for a short review window. You upload the report to a private container, set up a stored access policy, generate a SAS link from that policy, and then test both sides of the access model — confirming the partner can access the file with the SAS while anonymous access stays blocked. When the review is complete, you revoke access by deleting the policy and configure a lifecycle rule to automatically clean up shared files.
+Your internal finance team needs to share monthly reports with an external partner for a short review window. You upload the report to a private container, set up a stored access policy, generate a SAS link from that policy, and then test both sides of the access model—confirming the partner can access the file with the SAS while anonymous access stays blocked. When the review is complete, you revoke access by deleting the policy and configure a lifecycle rule to automatically clean up shared files.
 
 - Exercise 1 - Create a storage account, private container, and upload a file.
 - Exercise 2 - Create a stored access policy and generate a SAS link.

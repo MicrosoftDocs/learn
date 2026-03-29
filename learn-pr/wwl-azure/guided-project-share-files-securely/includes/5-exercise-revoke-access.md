@@ -6,7 +6,7 @@ This guided project consists of the following exercises:
  - **Revoke partner access**
  - Configure lifecycle management
 
-In this exercise, you revoke the partner's access by deleting the stored access policy. This instantly invalidates all SAS tokens generated from the policy — even those that haven't expired yet. You then confirm the file itself is still safely stored.
+In this exercise, you revoke the partner's access by deleting the stored access policy. This instantly invalidates all SAS tokens generated from the policy—even those that haven't expired yet. You then confirm the file itself is still safely stored.
 
 This exercise includes the following tasks:
 
@@ -17,7 +17,7 @@ This exercise includes the following tasks:
 
 **Outcome:** Deleting the stored access policy instantly revokes all SAS tokens generated from it.
 
-The partner has finished reviewing the file. Instead of waiting for the SAS token to expire on its own, you'll revoke access immediately by deleting the stored access policy. Every SAS token linked to that policy stops working the moment the policy is deleted — even if the token's expiry time hasn't passed yet.
+The partner has finished reviewing the file. Instead of waiting for the SAS token to expire on its own, you'll revoke access immediately by deleting the stored access policy. Every SAS token linked to that policy stops working the moment the policy is deleted—even if the token's expiry time hasn't passed yet.
 
 ## Task 1: Confirm SAS still works
 
@@ -51,7 +51,7 @@ Remove the policy to instantly revoke all SAS tokens that were generated from it
 
 ## Task 3: Verify access is revoked
 
-Test the same SAS URL to confirm it no longer works — even though the token's expiry time hasn't passed.
+Test the same SAS URL to confirm it no longer works—even though the token's expiry time hasn't passed.
 
 1.  Return to the incognito window.
 2.  Refresh the SAS URL.
@@ -62,7 +62,7 @@ Test the same SAS URL to confirm it no longer works — even though the token's 
 
 ## Task 4: Confirm the file still exists
 
-Verify that revoking SAS access only removed the external pathway — the file itself is untouched.
+Verify that revoking SAS access only removed the external pathway—the file itself is untouched.
 
 1.  Return to the Azure portal in your main browser window.
 2.  Navigate to the **partner-drop** container.
@@ -70,6 +70,6 @@ Verify that revoking SAS access only removed the external pathway — the file i
 4.  Close the incognito window.
 
 > [!NOTE]
-> **Validation step:** The file remains in the container. Revoking SAS access doesn't delete data — it only removes the access pathway.
+> **Validation step:** The file remains in the container. Revoking SAS access doesn't delete data—it only removes the access pathway.
 
 > [!NOTE]

@@ -53,7 +53,7 @@ Set up the foundation for blob storage. The storage account holds your blob cont
 > **Validation step:** Verify the storage account is deployed. Confirm the storage account name and region match your configuration.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 3: Create the private container
 
