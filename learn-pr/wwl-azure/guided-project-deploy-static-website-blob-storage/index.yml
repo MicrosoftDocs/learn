@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-deploy-static-website-blob-storage
 metadata:
-  title: Guided project - Deploy a static website with Azure Blob Storage
+  title: 'Guided Project: Deploy a static website with Azure Blob Storage'
   description: "Host a public website directly from Azure Blob Storage without managing servers."
   ms.date: 03/25/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Deploy a static website with Azure Blob Storage
+title: 'Guided Project: Deploy a static website with Azure Blob Storage'
 summary: |
   This guided project walks through hosting a static website using Azure Blob Storage and updating its content.
 
