@@ -4,7 +4,7 @@ Azure Blob Storage can serve HTML, CSS, and image files directly to browsers wit
 
 ## Scenario
 
-Your marketing team needs to publish a product landing page quickly without provisioning virtual machines or web servers. The team wants to upload content, verify it's live, push an update, and confirm the change — all through the Azure portal.
+Your marketing team needs to publish a product landing page quickly without provisioning virtual machines or web servers. The team wants to upload content, verify it's live, push an update, and confirm the change—all through the Azure portal.
 
 - Exercise 1 - Create a storage account and enable static website hosting.
 - Exercise 2 - Upload HTML content and verify the live site.

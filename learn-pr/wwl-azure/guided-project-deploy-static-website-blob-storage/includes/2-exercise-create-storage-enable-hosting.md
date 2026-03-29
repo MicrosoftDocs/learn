@@ -4,7 +4,7 @@ This guided project consists of the following exercises:
  - Upload and verify site content
  - Update the site content
 
-In this exercise, you create a resource group, set up a storage account, and turn on the static website hosting feature. By the end, you have a public URL ready to serve web content — even though you haven't uploaded any files yet.
+In this exercise, you create a resource group, set up a storage account, and turn on the static website hosting feature. By the end, you have a public URL ready to serve web content—even though you haven't uploaded any files yet.
 
 This exercise includes the following tasks:
 
@@ -58,6 +58,6 @@ Turn on the built-in static website feature. This creates a special container na
 > **Validation step:** Confirm that static website hosting shows **Enabled**, and that a Primary endpoint URL is displayed.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 > [!NOTE]
