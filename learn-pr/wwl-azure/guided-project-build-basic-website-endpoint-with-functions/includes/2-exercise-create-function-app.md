@@ -48,7 +48,7 @@ Set up the Function App with serverless hosting. The Flex Consumption plan ensur
 > **Validation step:** Verify you selected all required settings before deployment: resource group, runtime stack (Node.js), region, and Flex Consumption hosting plan.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 3: Verify the deployment
 

@@ -4,7 +4,7 @@ Azure Functions is a serverless compute service that lets you run code in respon
 
 ## Scenario
 
-Your team needs a lightweight endpoint for a contact page without maintaining servers. You create a Function App, deploy an HTTP-triggered function using Cloud Shell, and then test, secure, and monitor the endpoint — all in one session.
+Your team needs a lightweight endpoint for a contact page without maintaining servers. You create a Function App, deploy an HTTP-triggered function using Cloud Shell, and then test, secure, and monitor the endpoint—all in one session.
 
 - Exercise 1 - Create a Function App with the serverless Flex Consumption plan.
 - Exercise 2 - Deploy an HTTP-trigger function from Cloud Shell.

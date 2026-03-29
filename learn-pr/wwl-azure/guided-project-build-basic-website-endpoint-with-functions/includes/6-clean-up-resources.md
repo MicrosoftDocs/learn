@@ -27,7 +27,7 @@ When you enabled Application Insights, Azure created a Log Analytics workspace i
     - If the resource group contains other resources, delete only the Log Analytics workspace that matches your noted name. Select the workspace, select **Delete**, and confirm.
 
 > [!WARNING]
-> Do not delete a Log Analytics workspace used by other services in your subscription — doing so would break monitoring for those services.
+> Do not delete a Log Analytics workspace used by other services in your subscription—doing so would break monitoring for those services.
 
 ### Clean up Cloud Shell files
 

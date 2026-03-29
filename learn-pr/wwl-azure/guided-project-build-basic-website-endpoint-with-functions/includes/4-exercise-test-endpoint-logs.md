@@ -43,13 +43,13 @@ Confirm the deployed function appears in the Azure portal alongside the Function
 
 ## Task 3: Enable Application Insights
 
-When you created the Function App, you skipped past the Monitoring tab and accepted the defaults. Now that you want to track invocations, you need to enable Application Insights. This is a common pattern in Azure — you can add monitoring after the fact without recreating your resources.
+When you created the Function App, you skipped past the Monitoring tab and accepted the defaults. Now that you want to track invocations, you need to enable Application Insights. This is a common pattern in Azure—you can add monitoring after the fact without recreating your resources.
 
 1.  Select **GetStatus** from the function list.
 2.  In the top menu, select **Invocations**.
 3.  The page displays a message that Application Insights is not configured. Select the **Configure Application Insights** button.
 4.  On the Application Insights configuration page, select **Turn on Application Insights**.
-5.  Before selecting **Apply**, note the **Log Analytics Workspace** name and location shown on the page. Write down the last four characters of the workspace name and the location — you need this information during cleanup.
+5.  Before selecting **Apply**, note the **Log Analytics Workspace** name and location shown on the page. Write down the last four characters of the workspace name and the location—you need this information during cleanup.
 6.  Select **Apply**. When the **Apply monitoring settings** dialog appears noting the site will be restarted, select **Yes**. Wait for the configuration to complete.
 7.  Refresh the portal page (press **F5**) so the portal picks up the new Application Insights configuration.
 
