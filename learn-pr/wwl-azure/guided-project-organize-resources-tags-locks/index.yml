@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-organize-resources-tags-locks
 metadata:
-  title: Guided project - Organize and protect resources with tags and locks
+  title: 'Guided Project: Organize and protect resources with tags and locks'
   description: "Apply resource tags for organization and resource locks to prevent accidental changes."
   ms.date: 03/25/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Organize and protect resources with tags and locks
+title: 'Guided Project: Organize and protect resources with tags and locks'
 summary: |
   This guided project helps you organize Azure resources with tags and protect them from accidental deletion with locks.
 
