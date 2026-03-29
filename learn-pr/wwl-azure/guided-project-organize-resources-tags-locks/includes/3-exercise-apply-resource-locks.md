@@ -4,7 +4,7 @@ This guided project consists of the following exercises:
  - **Apply resource locks**
  - Test lock enforcement
 
-In this exercise, you apply two types of locks — a delete lock on the storage account and a read-only lock on the resource group. Locks add a layer of protection that prevents accidental changes or deletions, even by users who have full permissions.
+In this exercise, you apply two types of locks—a delete lock on the storage account and a read-only lock on the resource group. Locks add a layer of protection that prevents accidental changes or deletions, even by users who have full permissions.
 
 This exercise includes the following tasks:
 
@@ -44,8 +44,9 @@ Add a read-only lock at the resource group level. A read-only lock prevents any 
 7.  Select **OK**.
 8.  Confirm the lock appears in the locks list. 
 
-> [!NOTE]
-> You should also see the **prevent-delete** lock listed here with a scope of the storage account — resource group locks inherit and display locks from child resources.
+> [!NOTE] You should also see the **prevent-delete** lock listed here with a scope of the storage account—resource group locks inherit and display locks from child resources.
 
 > [!NOTE]
 > **Validation step:** Confirm the resource group Locks pane shows both the **read-only-rg** lock and the **prevent-delete** lock (scoped to the storage account).
+
+> [!NOTE]

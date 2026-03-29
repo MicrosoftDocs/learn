@@ -62,7 +62,7 @@ Apply organizational tags to the resource group. Tags are key-value pairs that h
 > **Validation step:** Verify the resource group displays both tags (**department: development** and **environment: test**) before proceeding.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 4: Tag the storage account
 

@@ -53,7 +53,7 @@ Remove both locks to restore normal operations. In a real environment, you would
 3.  In the left menu, under **Settings**, select **Locks**.
 4.  On the **read-only-rg** lock line item, select **Delete**. Confirm the deletion.
 5.  On the **prevent-delete** lock line item (scoped to the storage account), select **Delete**. Confirm the deletion.
-6.  Confirm the Locks pane is now empty — no locks remain on the resource group or its child resources.
+6.  Confirm the Locks pane is now empty—no locks remain on the resource group or its child resources.
 
 > [!NOTE]
 > **Validation step:** Confirm the Locks pane on both the resource group and storage account is empty.
