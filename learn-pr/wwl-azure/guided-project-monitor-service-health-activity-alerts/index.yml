@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-monitor-service-health-activity-alerts
+metadata:
+  title: Guided project - Monitor Azure with Service Health and Activity Log alerts
+  description: "Set up proactive monitoring with Service Health alerts and Activity Log alerts without paid compute resources."
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: Guided project - Monitor Azure with Service Health and Activity Log alerts
+summary: |
+  This guided project helps you build a starter monitoring baseline using free Azure alerting services.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Create an action group with email notifications
+
+  -   Create a Service Health alert for platform incidents and maintenance
+
+  -   Create an Activity Log alert for resource deletion events
+
+  -   Clean up all resources to avoid charges
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-monitor
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.introduction
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.exercise-create-action-group
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.exercise-create-service-health-alert
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.exercise-create-activity-log-alert
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.validate-success
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.clean-up-resources
+- learn.wwl.guided-project-monitor-service-health-activity-alerts.summary
+badge:
+  uid: learn.wwl.guided-project-monitor-service-health-activity-alerts.badge
