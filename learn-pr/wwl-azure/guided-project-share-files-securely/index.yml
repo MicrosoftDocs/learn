@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-share-files-securely
 metadata:
-  title: Guided project - Share files securely
+  title: 'Guided Project: Share files securely'
   description: "Use Azure Storage, stored access policies, and SAS to share files securely with time-limited access."
   ms.date: 03/16/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Share files securely
+title: 'Guided Project: Share files securely'
 summary: |
   This guided project teaches secure, temporary file sharing by using blob storage, stored access policies, and SAS tokens.
 
