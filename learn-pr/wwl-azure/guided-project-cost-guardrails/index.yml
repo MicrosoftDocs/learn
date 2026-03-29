@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-cost-guardrails
 metadata:
-  title: Guided project - Set spending limits for a pilot environment (Budgets and Policy)
+  title: 'Guided Project: Set up cost guardrails in Azure'
   description: "Apply basic cost governance with tags, budget alerts, and policy constraints."
   ms.date: 03/16/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Set spending limits for a pilot environment (Budgets and Policy)
+title: 'Guided Project: Set up cost guardrails in Azure'
 summary: |
   This guided project helps you reduce spend risk by implementing cost guardrails in Azure.
 
