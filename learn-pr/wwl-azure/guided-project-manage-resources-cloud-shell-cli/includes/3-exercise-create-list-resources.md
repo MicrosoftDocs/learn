@@ -17,7 +17,7 @@ This exercise includes the following tasks:
 
 ## Task 1: Create a resource group
 
-Create a resource group using a single CLI command. In the portal this takes multiple clicks across several screens — from the CLI, it takes one line.
+Create a resource group using a single CLI command. In the portal this takes multiple clicks across several screens—from the CLI, it takes one line.
 
 1.  In Cloud Shell, run the following command (replace **eastus** with your chosen region):
 
@@ -41,7 +41,7 @@ Create a resource group using a single CLI command. In the portal this takes mul
 
 Create a storage account inside the resource group. The CLI requires the same parameters you would fill in through the portal, but expressed as command-line flags.
 
-1.  Run the following command (replace **stgpclidemo** with a unique name — lowercase letters and numbers only, 3-24 characters):
+1.  Run the following command (replace **stgpclidemo** with a unique name—lowercase letters and numbers only, 3-24 characters):
 
     ```bash
     az storage account create \

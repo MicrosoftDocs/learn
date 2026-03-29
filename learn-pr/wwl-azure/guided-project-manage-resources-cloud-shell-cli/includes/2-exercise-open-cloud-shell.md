@@ -35,7 +35,7 @@ Open Cloud Shell from the Azure portal. Cloud Shell is a browser-based terminal 
 > **Validation step:** Confirm Cloud Shell is running in Bash mode with a command prompt visible.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 2: Verify your account and subscription
 

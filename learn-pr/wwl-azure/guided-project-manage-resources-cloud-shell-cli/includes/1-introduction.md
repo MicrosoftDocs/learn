@@ -4,7 +4,7 @@ Azure Cloud Shell is a browser-based terminal built into the Azure portal. It co
 
 ## Scenario
 
-Your IT administrator needs to create and manage Azure resources efficiently without navigating through multiple portal screens. You open Cloud Shell, create a resource group and storage accounts from the command line, apply tags, query resources with built-in filters, and delete everything when you're done — demonstrating the full resource lifecycle from the CLI.
+Your IT administrator needs to create and manage Azure resources efficiently without navigating through multiple portal screens. You open Cloud Shell, create a resource group and storage accounts from the command line, apply tags, query resources with built-in filters, and delete everything when you're done—demonstrating the full resource lifecycle from the CLI.
 
 - Exercise 1 - Open Cloud Shell and explore the environment.
 - Exercise 2 - Create and list resources with CLI commands.
