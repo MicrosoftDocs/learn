@@ -32,7 +32,6 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
 subjects:
 - cloud-computing
 units:
