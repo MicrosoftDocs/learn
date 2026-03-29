@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-monitor-service-health-activity-alerts
 metadata:
-  title: Guided project - Monitor Azure with Service Health and Activity Log alerts
+  title: 'Guided Project: Monitor Azure with Service Health and Activity Log alerts'
   description: "Set up proactive monitoring with Service Health alerts and Activity Log alerts without paid compute resources."
   ms.date: 03/25/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Monitor Azure with Service Health and Activity Log alerts
+title: 'Guided Project: Monitor Azure with Service Health and Activity Log alerts'
 summary: |
   This guided project helps you build a starter monitoring baseline using free Azure alerting services.
 
