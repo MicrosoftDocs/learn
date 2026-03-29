@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-new-employee-access
 metadata:
-  title: Guided project - Set up new employee access (Entra ID and RBAC)
+  title: 'Guided Project: Set up new employee access (Entra ID and RBAC)'
   description: "Configure a basic identity and RBAC onboarding flow for a new team member."
   ms.date: 03/16/2026
   author: wwlpublish
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: Guided project - Set up new employee access (Entra ID and RBAC)
+title: 'Guided Project: Set up new employee access (Entra ID and RBAC)'
 summary: |
   This guided project helps you implement least-privilege access for a new user.
 
