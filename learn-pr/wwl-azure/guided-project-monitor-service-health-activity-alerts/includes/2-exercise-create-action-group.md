@@ -4,7 +4,7 @@ This guided project consists of the following exercises:
  - Create a Service Health alert
  - Create an Activity Log alert
 
-In this exercise, you create an action group with email notification and send a test message to verify delivery. Action groups are the notification backbone for Azure alerts — you set them up once and reuse them across multiple alert rules.
+In this exercise, you create an action group with email notification and send a test message to verify delivery. Action groups are the notification backbone for Azure alerts—you set them up once and reuse them across multiple alert rules.
 
 This exercise includes the following tasks:
 
@@ -50,7 +50,7 @@ Create an action group that defines who gets notified and how. Action groups are
 > **Validation step:** Confirm the **ag-gp-ops-email** action group is created with email notification configured.
 
 > [!NOTE]
-> Each exercise includes validation steps like this one. Track your results as you go — you'll review them all in the validation unit at the end of this module.
+> Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
 
 ## Task 3: Test the action group
 
@@ -62,7 +62,7 @@ Send a test notification to verify the action group delivers email successfully.
 4.  Make sure the **ops-team-email** notification is checked.
 5.  Select **Test**.
 6.  Wait for the test results to appear. Confirm the **Status** column shows **Success**.
-7.  Check your email inbox for the test notification from Azure. Open the email and review its content — this is the same format you would receive during a real incident.
+7.  Check your email inbox for the test notification from Azure. Open the email and review its content—this is the same format you would receive during a real incident.
 
 > [!NOTE]
 > **Validation step:** Confirm the test notification status shows **Success** and you received the email notification.

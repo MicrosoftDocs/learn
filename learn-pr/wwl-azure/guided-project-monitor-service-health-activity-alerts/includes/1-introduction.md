@@ -1,6 +1,6 @@
 This guided project focuses on monitoring Azure using Service Health alerts, Activity Log alerts, and action groups.
 
-Azure Monitor provides several alert types that notify you about issues without requiring paid compute resources. Service Health alerts watch for platform-level incidents and planned maintenance. Activity Log alerts fire when management operations — like resource deletion — occur. Action groups define who gets notified and how.
+Azure Monitor provides several alert types that notify you about issues without requiring paid compute resources. Service Health alerts watch for platform-level incidents and planned maintenance. Activity Log alerts fire when management operations—like resource deletion—occur. Action groups define who gets notified and how.
 
 ## Scenario
 
