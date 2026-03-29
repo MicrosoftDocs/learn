@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions
+metadata:
+  title: Guided project - Build a simple website endpoint with Azure Functions
+  description: "Create and test an HTTP-triggered Azure Function as a lightweight website endpoint."
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: Guided project - Build a simple website endpoint with Azure Functions
+summary: |
+  This guided project introduces serverless hosting by creating a function endpoint and validating responses.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Create a Function App in a consumption plan
+
+  -   Create an HTTP-triggered function from a portal template
+
+  -   Test endpoint behavior and execution logs
+
+  -   Clean up all resources to avoid charges
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-functions
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.introduction
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-create-function-app
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-create-http-trigger-function
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-test-endpoint-logs
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.validate-success
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.clean-up-resources
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.summary
+badge:
+  uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions.badge

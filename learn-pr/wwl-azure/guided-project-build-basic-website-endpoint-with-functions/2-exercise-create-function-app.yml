@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-create-function-app
+title: Exercise - Create the Function App
+metadata:
+  title: Exercise - Create the Function App
+  description: "Exercise - Create the Function App"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-create-function-app.md)]
