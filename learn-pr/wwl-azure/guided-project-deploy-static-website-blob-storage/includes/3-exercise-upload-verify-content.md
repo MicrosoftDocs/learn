@@ -86,5 +86,3 @@ Open the public endpoint in a browser to confirm your website is live, and then 
 
 > [!NOTE]
 > **Validation step:** The landing page displays **Version 1 - Landing Page**, and browsing to a nonexistent path shows your custom **404 - Page Not Found** page.
-
-> [!NOTE]

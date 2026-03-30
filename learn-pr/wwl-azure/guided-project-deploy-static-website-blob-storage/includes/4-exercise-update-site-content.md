@@ -70,5 +70,3 @@ Examine the properties of your uploaded files to understand how Azure stores the
 
 > [!NOTE]
 > **Validation step:** Both blobs show **Content type** of **text/html** and **Access tier** of **Hot**.
-
-> [!NOTE]

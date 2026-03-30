@@ -1,5 +1,3 @@
-## Validate success
-
 Review the validation steps you completed during the exercises. Confirm that each item below is true before moving on.
 
 -   [ ] Storage account is created with static website hosting **Enabled** and a Primary endpoint URL is displayed.

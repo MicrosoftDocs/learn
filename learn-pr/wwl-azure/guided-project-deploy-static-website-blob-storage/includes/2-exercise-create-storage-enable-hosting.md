@@ -59,5 +59,3 @@ Turn on the built-in static website feature. This creates a special container na
 
 > [!NOTE]
 > Each exercise includes validation steps like this one. Track your results as you go—you'll review them all in the validation unit at the end of this module.
-
-> [!NOTE]
