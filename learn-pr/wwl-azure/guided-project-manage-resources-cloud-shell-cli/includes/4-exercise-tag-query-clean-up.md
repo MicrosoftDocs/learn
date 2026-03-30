@@ -150,4 +150,3 @@ Clean up all resources with a single command. Deleting a resource group removes 
 > [!NOTE]
 > **Validation step:** Confirm the resource group deletion is complete ("not found" error confirms removal).
 
-> [!NOTE]
