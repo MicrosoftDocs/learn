@@ -15,11 +15,6 @@ In this module, you learn how to:
 
 The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/credentials/certifications/resources/study-guides/az-104). The module concepts are covered in:
 
-Implement and manage storage (15–20%).
-
-- Configure Azure Files and Azure Blob Storage
-   - Create and configure a files share in Azure storage.
-   - Configure snapshots and soft delete for Azure Files.
 
 ## Prerequisites
 
