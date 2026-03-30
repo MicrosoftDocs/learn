@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli
+metadata:
+  title: 'Guided Project: Manage Azure resources with Cloud Shell and the Azure CLI'
+  description: "Create, query, tag, and clean up Azure resources using Cloud Shell and Azure CLI commands."
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: 'Guided project: Manage Azure resources with Cloud Shell and the Azure CLI'
+summary: |
+  This guided project introduces Cloud Shell and the Azure CLI as tools for creating and managing Azure resources from the command line.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Open Cloud Shell and navigate the Bash environment
+
+  -   Create and list Azure resources using CLI commands
+
+  -   Tag and query resources with filters and output formatting
+
+  -   Clean up all resources to avoid charges
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-cloud-shell
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.introduction
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-open-cloud-shell
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-create-list-resources
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-tag-query-clean-up
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.validate-success
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.clean-up-resources
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.knowledge-check
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.summary
+badge:
+  uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli.badge
