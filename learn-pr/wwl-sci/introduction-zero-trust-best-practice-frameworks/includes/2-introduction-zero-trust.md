@@ -6,6 +6,10 @@ Zero Trust is a security strategy. It isn't a product or a service, but an appro
 
 Zero Trust is designed to adapt to the complexities of the modern environment. It protects user accounts, devices, applications, and data wherever they're located. A Zero Trust approach should extend throughout your entire organization and serve as an integrated security philosophy and end-to-end strategy.
 
+The video that follows describes what Zero Trust is and describes the three guiding principles and the technology pillars.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5881f412-3b50-43dc-9d03-794d4348603b]
+
 ## Three guiding principles
 
 Zero Trust is based on three principles:
@@ -16,7 +20,7 @@ Zero Trust is based on three principles:
 
 ![Diagram showing the three Zero Trust principles: verify explicitly, use least privilege access, and assume breach.](../media/zero-trust-principles.png)
 
-## Six technology pillars
+## Technology pillars
 
 You implement Zero Trust controls and technologies across six foundational elements. Each element is a source of signal, a control plane for enforcement, and a critical resource to be defended.
 
@@ -29,8 +33,8 @@ You implement Zero Trust controls and technologies across six foundational eleme
 | **Infrastructure** | Infrastructure—whether on-premises servers, cloud-based VMs, containers, or microservices—represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior. |
 | **Network** | All data is ultimately accessed over network infrastructure. Networking controls can provide critical visibility and help prevent attackers from moving laterally. Segment networks, deploy real-time threat protection, end-to-end encryption, monitoring, and analytics. |
 
-![Diagram of the six Zero Trust technology pillars with visibility, automation, and orchestration at the center.](../media/diagram-zero-trust-security-elements.png)
+Beyond these six pillars, **visibility, automation, and orchestration** ties them together, and represents the seventh pillar of Zero Trust. With each pillar generating its own signals and alerts, you need an integrated capability to manage the resulting influx of data, better defend against threats, and validate trust in each transaction.
 
-Beyond these six pillars, **visibility, automation, and orchestration** ties them together. With each pillar generating its own signals and alerts, you need an integrated capability to manage the resulting influx of data, better defend against threats, and validate trust in each transaction.
+![Diagram of the six Zero Trust technology pillars with visibility, automation, and orchestration at the center.](../media/diagram-zero-trust-security-elements.png)
 
 Different organizational requirements, existing technology implementations, and security stages all affect how you plan and implement a Zero Trust security model. These principles are usually applied through a series of modernization initiatives or technology-pillar deployment guidance.
