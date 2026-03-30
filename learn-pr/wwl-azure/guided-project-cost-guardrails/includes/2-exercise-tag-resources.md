@@ -78,5 +78,3 @@ Apply the same tags to your test resource. Resource-level tags ensure consistent
 
 > [!NOTE]
 > **Validation step:** Confirm the storage account also displays both tags, matching the resource group.
-
-> [!NOTE]

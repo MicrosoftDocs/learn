@@ -62,5 +62,3 @@ Check the policy compliance dashboard to see how Azure tracks compliance across 
 
 > [!NOTE]
 > **Validation step:** Confirm the Compliance dashboard shows the policy enforcement status with compliant resources in the allowed region.
-
-> [!NOTE]

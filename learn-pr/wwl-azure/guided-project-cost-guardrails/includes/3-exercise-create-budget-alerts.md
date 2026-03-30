@@ -45,5 +45,3 @@ Set up your budget parameters including amount, reset period, and alert threshol
 
 > [!NOTE]
 > **Validation step:** Confirm the **gp-pilot-budget** appears in the budgets list with two alert thresholds (80% and 100%).
-
-> [!NOTE]

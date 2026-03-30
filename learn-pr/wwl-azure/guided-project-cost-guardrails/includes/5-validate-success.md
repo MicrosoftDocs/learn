@@ -1,5 +1,3 @@
-## Validate success
-
 Review the validation steps you completed during the exercises. Confirm that each item below is true before moving on.
 
 -   [ ] The resource group displays both tags (**environment: pilot** and **owner: it-team**).

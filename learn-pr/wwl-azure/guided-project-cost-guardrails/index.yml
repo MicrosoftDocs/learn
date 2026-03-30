@@ -42,6 +42,7 @@ units:
 - learn.wwl.guided-project-cost-guardrails.exercise-assign-test-policy
 - learn.wwl.guided-project-cost-guardrails.validate-success
 - learn.wwl.guided-project-cost-guardrails.clean-up-resources
+- learn.wwl.guided-project-cost-guardrails.knowledge-check
 - learn.wwl.guided-project-cost-guardrails.summary
 badge:
   uid: learn.wwl.guided-project-cost-guardrails.badge
