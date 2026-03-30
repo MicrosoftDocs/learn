@@ -7910,3 +7910,8 @@ achievements:
   title: Optimize spend and performance with Azure AI Foundry Provisioned Throughput reservations
   summary: This module introduces the benefits, use cases, and implementation steps to deploy and purchase provisioned throughput units and reservations for Azure AI Foundry.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.teach-az-204-developing-solution-microsoft-azure-academic-programs.badge
+  type: badge
+  title: Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs
+  summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
+  iconUrl: /training/achievements/teach-azure-204-develop-solution-microsoft-azure-academic-programs.svg
