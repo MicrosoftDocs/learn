@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: 'Guided Project: Monitor Azure with Service Health and Activity Log alerts'
+title: 'Guided project: Monitor Azure with Service Health and Activity Log alerts'
 summary: |
   This guided project helps you build a starter monitoring baseline using free Azure alerting services.
 
