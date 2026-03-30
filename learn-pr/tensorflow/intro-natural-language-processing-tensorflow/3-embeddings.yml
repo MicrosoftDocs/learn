@@ -6,9 +6,8 @@ metadata:
   description: Embeddings are a way to represent words using some vector representation that has nice semantic properties. We discuss different embeddings, and how using embeddings can improve classification accuracy.
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 03/29/2026
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 15
-sandbox: true
-notebook: notebooks/3-embeddings.ipynb
+content: |
+  [!include[](includes/3-embeddings.md)]
