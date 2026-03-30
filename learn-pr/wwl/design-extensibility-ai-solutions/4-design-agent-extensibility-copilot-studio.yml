@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.design-agent-extensibility-copilot-studio
+title: "Design extensible agents in Microsoft Copilot Studio"
+metadata:
+  title: "Design Extensible Agents in Microsoft Copilot Studio"
+  description: "Learn to design extensible agents in Microsoft Copilot Studio. Explore instruction, skill, integration, and pro-code extensibility for enterprise solutions."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-design-agent-extensibility-copilot-studio.md)]

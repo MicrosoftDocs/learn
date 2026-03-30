@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.authenticate-validate-tools
+title: Authenticate and validate tools
+metadata:
+  title: Authenticate And Validate Tools
+  description: "Authenticate and validate tools"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-authenticate-validate-tools.md)]

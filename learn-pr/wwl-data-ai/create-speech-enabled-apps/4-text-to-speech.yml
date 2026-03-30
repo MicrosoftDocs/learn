@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-speech-enabled-apps.text-to-speech
-title: Use the text to speech API
+title: Use the Text to Speech API
 metadata:
-  title: Use the text to speech API
-  description: Use the text to speech API
+  title: Use the Text to Speech API
+  description: Use the Text to Speech API
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/01/2025
+  ms.date: 03/10/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,3 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-text-to-speech.md)]
-

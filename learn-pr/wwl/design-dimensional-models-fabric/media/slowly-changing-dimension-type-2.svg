@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" font-family="Segoe UI, sans-serif">
+  <!-- transparent background -->
+
+  <!-- ===== BEFORE SECTION ===== -->
+  <text x="390" y="25" text-anchor="middle" fill="#333333" font-size="14" font-weight="bold">BEFORE</text>
+
+  <!-- Before table -->
+  <rect x="40" y="38" width="700" height="80" rx="6" fill="#f5f5f5" stroke="#cccccc" stroke-width="1.5"/>
+
+  <!-- Header row -->
+  <rect x="40" y="38" width="700" height="30" rx="6" fill="#005a9e"/>
+  <rect x="40" y="55" width="700" height="13" fill="#005a9e"/>
+  <text x="72" y="58" fill="#ffffff" font-size="11" font-weight="bold">SK</text>
+  <text x="122" y="58" fill="#ffffff" font-size="11" font-weight="bold">CustomerID</text>
+  <text x="228" y="58" fill="#ffffff" font-size="11" font-weight="bold">Name</text>
+  <text x="340" y="58" fill="#ffffff" font-size="11" font-weight="bold">Region</text>
+  <text x="430" y="58" fill="#ffffff" font-size="11" font-weight="bold">StartDate</text>
+  <text x="548" y="58" fill="#ffffff" font-size="11" font-weight="bold">EndDate</text>
+  <text x="658" y="58" fill="#ffffff" font-size="11" font-weight="bold">IsCurrent</text>
+
+  <!-- Data row -->
+  <text x="72" y="95" fill="#333333" font-size="12">101</text>
+  <text x="122" y="95" fill="#333333" font-size="12">C-200</text>
+  <text x="228" y="95" fill="#333333" font-size="12">Ana Silva</text>
+  <text x="340" y="95" fill="#333333" font-size="12">East</text>
+  <text x="430" y="95" fill="#333333" font-size="12">2024-01-01</text>
+  <text x="548" y="95" fill="#333333" font-size="12">9999-12-31</text>
+  <rect x="650" y="80" width="60" height="22" rx="4" fill="#107C10"/>
+  <text x="680" y="95" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">TRUE</text>
+
+  <!-- ===== ARROW ===== -->
+  <line x1="390" y1="130" x2="390" y2="185" stroke="#333333" stroke-width="1.5"/>
+  <polygon points="382,185 390,198 398,185" fill="#333333"/>
+
+  <!-- ===== AFTER SECTION ===== -->
+  <text x="390" y="222" text-anchor="middle" fill="#333333" font-size="14" font-weight="bold">AFTER</text>
+
+  <!-- After table -->
+  <rect x="40" y="235" width="700" height="112" rx="6" fill="#f5f5f5" stroke="#cccccc" stroke-width="1.5"/>
+
+  <!-- Header row -->
+  <rect x="40" y="235" width="700" height="30" rx="6" fill="#005a9e"/>
+  <rect x="40" y="252" width="700" height="13" fill="#005a9e"/>
+  <text x="72" y="255" fill="#ffffff" font-size="11" font-weight="bold">SK</text>
+  <text x="122" y="255" fill="#ffffff" font-size="11" font-weight="bold">CustomerID</text>
+  <text x="228" y="255" fill="#ffffff" font-size="11" font-weight="bold">Name</text>
+  <text x="340" y="255" fill="#ffffff" font-size="11" font-weight="bold">Region</text>
+  <text x="430" y="255" fill="#ffffff" font-size="11" font-weight="bold">StartDate</text>
+  <text x="548" y="255" fill="#ffffff" font-size="11" font-weight="bold">EndDate</text>
+  <text x="658" y="255" fill="#ffffff" font-size="11" font-weight="bold">IsCurrent</text>
+
+  <!-- Row 1: Expired -->
+  <text x="72" y="292" fill="#888888" font-size="12">101</text>
+  <text x="122" y="292" fill="#888888" font-size="12">C-200</text>
+  <text x="228" y="292" fill="#888888" font-size="12">Ana Silva</text>
+  <text x="340" y="292" fill="#888888" font-size="12">East</text>
+  <text x="430" y="292" fill="#888888" font-size="12">2024-01-01</text>
+  <!-- Changed EndDate - high contrast highlight -->
+  <rect x="538" y="276" width="98" height="22" rx="3" fill="#0078D4" fill-opacity="0.12" stroke="#0078D4" stroke-width="1.2"/>
+  <text x="548" y="292" fill="#004578" font-size="12" font-weight="bold">2025-03-14</text>
+  <!-- Changed IsCurrent -->
+  <rect x="650" y="276" width="60" height="22" rx="4" fill="#D13438"/>
+  <text x="680" y="292" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">FALSE</text>
+
+  <line x1="55" y1="305" x2="725" y2="305" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Row 2: New version - highlighted row -->
+  <rect x="42" y="310" width="696" height="28" rx="0" fill="#D1E8FF" stroke="#0078D4" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- New SK -->
+  <rect x="62" y="314" width="35" height="20" rx="3" fill="#0078D4" fill-opacity="0.12" stroke="#0078D4" stroke-width="1.2"/>
+  <text x="68" y="329" fill="#004578" font-size="12" font-weight="bold">102</text>
+  <text x="122" y="329" fill="#333333" font-size="12">C-200</text>
+  <text x="228" y="329" fill="#333333" font-size="12">Ana Silva</text>
+  <!-- Changed Region -->
+  <rect x="330" y="314" width="52" height="20" rx="3" fill="#0078D4" fill-opacity="0.12" stroke="#0078D4" stroke-width="1.2"/>
+  <text x="340" y="329" fill="#004578" font-size="12" font-weight="bold">West</text>
+  <!-- New StartDate -->
+  <rect x="420" y="314" width="98" height="20" rx="3" fill="#0078D4" fill-opacity="0.12" stroke="#0078D4" stroke-width="1.2"/>
+  <text x="430" y="329" fill="#004578" font-size="12" font-weight="bold">2025-03-15</text>
+  <text x="548" y="329" fill="#333333" font-size="12">9999-12-31</text>
+  <rect x="650" y="314" width="60" height="20" rx="4" fill="#107C10"/>
+  <text x="680" y="329" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">TRUE</text>
+
+  <!-- Legend -->
+  <rect x="220" y="370" width="190" height="30" rx="5" fill="#f5f5f5" stroke="#cccccc" stroke-width="1"/>
+  <rect x="232" y="378" width="14" height="14" rx="2" fill="#0078D4" fill-opacity="0.12" stroke="#0078D4" stroke-width="1.2"/>
+  <text x="252" y="390" fill="#333333" font-size="11">= changed value</text>
+
+  <rect x="370" y="370" width="170" height="30" rx="5" fill="#f5f5f5" stroke="#cccccc" stroke-width="1"/>
+  <rect x="382" y="378" width="40" height="14" rx="2" fill="#D1E8FF" stroke="#0078D4" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="430" y="390" fill="#333333" font-size="11">= new row</text>
+</svg>

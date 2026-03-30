@@ -17,7 +17,7 @@ abstract: |
   - Trigger actions using Activator in Microsoft Fabric
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-fabric-module.svg
 levels:
   - beginner
 roles:

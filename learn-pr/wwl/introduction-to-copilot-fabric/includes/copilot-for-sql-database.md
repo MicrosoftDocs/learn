@@ -15,6 +15,12 @@ Here's an example of how you can interact with Copilot in the Fabric SQL Databas
 > [!div class="mx-imgBorder"]
 > [![Screenshot of copilot in SQL Database.](../media/copilot-sql-database.png)](../media/copilot-sql-database.png#lightbox)
 
+## Copilot in external SQL tools
+
+Copilot for SQL database is also available when you connect to a Fabric SQL database from SQL Server Management Studio (SSMS) or the MSSQL extension for Visual Studio Code. These integrations provide inline T-SQL completions and chat-based code generation grounded to the connected database—so you can use Copilot directly in the tools you already work with.
+
+When using these external clients, Copilot supports **Ask mode** for read-only query exploration and **Agent mode** for multistep workflows. Any action that modifies data in Agent mode requires your explicit approval before it's executed.
+
 ## Benefits
 
 Using Copilot for SQL Database can support database workflows. Key areas where it can help:

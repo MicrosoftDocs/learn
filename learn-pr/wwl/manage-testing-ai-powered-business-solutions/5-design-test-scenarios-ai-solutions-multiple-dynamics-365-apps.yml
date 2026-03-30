@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-testing-ai-powered-business-solutions.design-test-scenarios-ai-solutions-multiple-dynamics-365-apps
+title: "Design end-to-end test scenarios for AI solutions using multiple Dynamics 365 apps"
+metadata:
+  title: "Design End-to-End Test Scenarios for AI Solutions"
+  description: "Learn how to design end-to-end test scenarios for AI solutions that integrate multiple Dynamics 365 apps, ensuring seamless workflows and accurate outputs."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-design-test-scenarios-ai-solutions-multiple-dynamics-365-apps.md)]

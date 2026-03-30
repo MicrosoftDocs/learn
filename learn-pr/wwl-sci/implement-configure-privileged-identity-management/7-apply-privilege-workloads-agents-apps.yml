@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.apply-privilege-workloads-agents-apps
+title: Applying JIT access to AI workloads, agents, and applications
+metadata:
+  title: Applying JIT Access to AI Workloads, Agents, and Applications
+  description: "Evaluate how Just-in-Time access protects AI workloads and learn the architectural boundary between PIM-governed human access and RBAC-governed workload identities."
+  ms.date: 03/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-apply-privilege-workloads-agents-apps.md)]

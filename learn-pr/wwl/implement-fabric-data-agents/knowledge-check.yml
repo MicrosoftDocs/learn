@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 08/18/2025
+  ms.date: 03/27/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -53,9 +53,9 @@ quiz:
       explanation: "Incorrect. Example queries don't affect data source access."
   - content: "When integrating Microsoft Foundry with Microsoft Fabric Data Agents, what is required for secure data access?"
     choices:
-    - content: "Users must have the Azure AI User RBAC role and read access to the agent and its data sources."
+    - content: "Users must have the Azure AI User RBAC role, read access to the data agent, and appropriate source-level permissions—including Build permission for Power BI semantic models."
       isCorrect: true
-      explanation: "Correct. These permissions are required for secure access."
+      explanation: "Correct. The Azure AI User RBAC role is required in Foundry. Each underlying source also requires minimum permissions—notably, Power BI semantic models require Build permission, not Read alone."
     - content: "Users only need access to the Azure portal."
       isCorrect: false
       explanation: "Incorrect. More specific permissions are required."

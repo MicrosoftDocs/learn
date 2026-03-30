@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Azure Container Registry knowledge check.
-  ms.date: 12/23/2025
+  ms.date: 03/19/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
@@ -50,7 +50,7 @@ quiz:
       explanation: "The goal is to place the registries close to the execution locations, not near the development team."
     - content: "Place a container registry in each region where images are run."
       isCorrect: true
-      explanation: "Placing a registry in each region that runs the images ensures network-close registry access everywhere it's needed."
+      explanation: "Place a registry in each region that runs the images ensures network-close registry access where images are needed."
     - content: "Place a container registry in every Azure region."
       isCorrect: false
       explanation: "This increases costs and doesn't improve performance."

@@ -30,7 +30,7 @@ prerequisites: |
   -   Experience using Azure Virtual Networks would be beneficial.
 
   -   Experience using Azure DevOps and Azure Pipelines for application deployment would be beneficial.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-container-apps-module.svg
 levels:
 - intermediate
 roles:
@@ -52,4 +52,4 @@ units:
 - learn.wwl.deploy-manage-container-app-using-azure-container-apps.knowledge-check
 - learn.wwl.deploy-manage-container-app-using-azure-container-apps.summary
 badge:
-  uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.badge
+  uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.badge

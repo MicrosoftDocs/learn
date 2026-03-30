@@ -10,7 +10,7 @@ Microsoft 365 stores user and group data across several services. When you add a
 - **OneDrive sites** (files owned by the user)
 - **SharePoint sites** (including Teams channel files)
 - **Teams messages** (captured in Exchange mailboxes)
-- **Yammer messages** (if Yammer is enabled)
+- **Viva Engage messages** (if Viva Engage is enabled)
 - **Public folders**
 
 Unified groups can include several containers depending on how they're used. A Microsoft Team, for example, might include a group mailbox and multiple SharePoint sites for standard and private channels.

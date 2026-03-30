@@ -1,4 +1,4 @@
-In this module, you learned about the Azure storage services. You learned about the Azure Storage Account and how they relate to different storage services. You were introduced to storage blobs and redundancy options, and ways to migrate and move your data both into and within Azure.
+In this module, you learned about Azure storage services. You learned about Azure storage accounts and how they relate to different storage services. You explored storage blobs, redundancy options, and ways to migrate and move your data both into and within Azure.
 
 ## Learning objectives
 
@@ -17,3 +17,14 @@ The following resources provide more information on topics in this module or rel
 
  -  [Store data in Azure](/learn/paths/store-data-in-azure/) is a Microsoft Learn course that covers more information about storing data in Azure.
  -  [Microsoft Certified: Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/) is an entire certification, with associated training that dives deeper into data fundamentals on Azure.
+
+## Explore with Copilot
+
+> [!TIP]
+> Try one of these prompts in Copilot Chat:
+>
+> - "Map four workload patterns to the right Azure storage service and justify each choice for performance, durability, and access requirements."
+> - "Compare LRS, ZRS, GRS, and GZRS for a business-critical workload and recommend one option based on RPO, availability, and budget constraints."
+> - "Create a migration checklist that uses Azure Migrate, Data Box, AzCopy, Storage Explorer, or File Sync where each tool fits best."
+
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.deploy-configure-internet-information-services.introduction-internet-information-windows-server
+title: Introduction to Internet Information Services on Windows Server
+metadata:
+  title: Introduction to Internet Information Services on Windows Server
+  description: In this unit, you'll be introduced to Internet Information Services (IIS) on Windows Server. You learn about the architecture of IIS, its components, and the benefits of using IIS as a web server for hosting websites and web applications.
+  ms.date: 03/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction-internet-information-windows-server.md)]

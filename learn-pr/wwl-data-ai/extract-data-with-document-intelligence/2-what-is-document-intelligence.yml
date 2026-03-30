@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-data-with-document-intelligence.what-is-document-intelligence
+title: What is Azure Document Intelligence?
+metadata:
+  title: What is Azure Document Intelligence?
+  description: Learn about the capabilities, components, and access options of Azure Document Intelligence.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-document-intelligence.md)]

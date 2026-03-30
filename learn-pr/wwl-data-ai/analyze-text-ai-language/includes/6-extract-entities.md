@@ -14,65 +14,32 @@ Named Entity Recognition identifies entities that are mentioned in the text. Ent
 
 Input for entity recognition is similar to input for other Azure Language API functions:
 
-```JSON
-{
-  "kind": "EntityRecognition",
-  "parameters": {
-    "modelVersion": "latest"
-  },
-  "analysisInput": {
-    "documents": [
-      {
-        "id": "1",
-        "language": "en",
-        "text": "Joe went to London on Saturday"
-      }
-    ]
-  }
-}
+```python
+# Example text to analyze
+documents = ["Microsoft was founded on April 4, 1975 by Bill Gates and Paul Allen in Albuquerque, New Mexico.",
+             "Satya Nadella became CEO of Microsoft on February 4, 2014."]
+
+# Extract named entities
+response = client.recognize_entities(documents=documents)
+for doc in response:
+    print(f"Entities in document {doc.id}:")
+    for entity in doc.entities:
+        print(f" - {entity.text} ({entity.category})")
 ```
 
 The response includes a list of categorized entities found in each document:
 
-```JSON
-{
-    "kind": "EntityRecognitionResults",
-     "results": {
-          "documents":[
-              {
-                  "entities":[
-                  {
-                    "text":"Joe",
-                    "category":"Person",
-                    "offset":0,
-                    "length":3,
-                    "confidenceScore":0.62
-                  },
-                  {
-                    "text":"London",
-                    "category":"Location",
-                    "subcategory":"GPE",
-                    "offset":12,
-                    "length":6,
-                    "confidenceScore":0.88
-                  },
-                  {
-                    "text":"Saturday",
-                    "category":"DateTime",
-                    "subcategory":"Date",
-                    "offset":22,
-                    "length":8,
-                    "confidenceScore":0.8
-                  }
-                ],
-                "id":"1",
-                "warnings":[]
-              }
-          ],
-          "errors":[],
-          "modelVersion":"2021-01-15"
-    }
-}
+```output
+Entities in document 0:
+ - Microsoft (Organization)
+ - April 4, 1975 (DateTime)
+ - Bill Gates (Person)
+ - Paul Allen (Person)
+ - Albuquerque (Location)
+ - New Mexico (Location)
+Entities in document 1:
+ - Satya Nadella (Person)
+ - CEO (PersonType)
+ - Microsoft (Organization)
+ - February 4, 2014. (DateTime)
 ```
-
-To learn more about entities see the [Build a conversational language understanding model](/training/modules/build-language-understanding-model/) module.

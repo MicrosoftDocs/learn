@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-sql-server.deploy-feature-difference
+title: Deployment options, licensing, and feature differences
+metadata:
+  title: Deployment options, licensing, and feature differences
+  description: "Explore SQL Server 2025's deployment options, including enhanced containerization, cloud-native features, editions, licensing, and the new preview feature capability"
+  ms.date: 10/06/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-deploy-feature-difference.md)]

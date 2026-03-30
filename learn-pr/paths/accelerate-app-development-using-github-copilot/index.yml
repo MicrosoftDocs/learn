@@ -2,8 +2,8 @@
 uid: learn.wwl.accelerate-app-development-using-github-copilot
 metadata:
   title: Get Started with AI-Assisted Development
-  description: Learn how to accelerate app development by using GitHub Copilot Chat in a Visual Studio Code environment. AZ-2007
-  ms.date: 02/12/2026
+  description: Learn how to use GitHub Copilot in a Visual Studio Code environment. This training covers code analysis, inline and project documentation, app development, unit testing, code refactoring, and provides an introduction to vibe coding. AZ-2007
+  ms.date: 03/05/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: learning-path
@@ -13,7 +13,7 @@ prerequisites: |
   -   One or more years of code development experience is recommended.
   -   Some experience developing C# applications in Visual Studio Code with the C# Dev Kit extension is recommended.
 summary: |
-  Learn how to accelerate app development by using GitHub Copilot Chat in a Visual Studio Code environment.
+  Learn how to use GitHub Copilot in a Visual Studio Code environment. This training covers code analysis, inline and project documentation, app development, unit testing, code refactoring, and provides an introduction to vibe coding.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
@@ -30,5 +30,6 @@ modules:
 - learn.wwl.develop-code-features-using-github-copilot-tools
 - learn.wwl.develop-unit-tests-using-github-copilot-tools
 - learn.wwl.implement-code-improvements-using-github-copilot-tools
+- learn.wwl.introduction-vibe-coding
 trophy:
   uid: learn.wwl.accelerate-app-development-using-github-copilot.trophy

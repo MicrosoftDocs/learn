@@ -6,7 +6,7 @@ metadata:
   description: Use Azure to extract information from audio and video.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 02/21/2026
+  ms.date: 03/24/2026
   ms.topic: unit
   zone_pivot_groups: video-or-text
 durationInMinutes: 4

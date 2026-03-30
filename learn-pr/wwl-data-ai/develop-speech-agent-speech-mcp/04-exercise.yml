@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-speech-agent-speech-mcp.exercise
+title: Exercise - Use Azure Speech in an agent
+metadata:
+  title: Exercise - Use Azure Speech in an agent
+  description: Use the Azure Speech MCP server to create an AI agent that performs speech-to-text and text-to-speech tasks.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 30
+content: |
+  [!include[](includes/04-exercise.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Get started with generating videos in Microsoft Foundry."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

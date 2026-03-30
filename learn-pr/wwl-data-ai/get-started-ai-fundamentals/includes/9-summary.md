@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=ba24beec-3ffb-4884-8903-b256a3f4650e]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5db7e302-2559-4676-bdc3-8edca612154b]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -22,7 +22,7 @@ Hopefully, this module gave you an insight into some of the core capabilities of
 
 > [!TIP]
 > Now that you have foundational understanding of AI, consider reviewing the following resources.
-> 
+>
 > - To try Microsoft Copilot for yourself, go to [https://copilot.microsoft.com](https://copilot.microsoft.com).
 > - To learn more about Microsoft AI solutions, see the [Microsoft AI page](https://www.microsoft.com/ai).
 > - To learn more about Microsoft's approach to responsible AI, see the [Microsoft responsible AI page](https://www.microsoft.com/ai/responsible-ai).

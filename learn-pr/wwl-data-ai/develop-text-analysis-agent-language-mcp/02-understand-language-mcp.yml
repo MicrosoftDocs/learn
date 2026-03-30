@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-text-analysis-agent-language-mcp.understand-language-mcp
+title: Understand the Azure Language MCP server
+metadata:
+  title: Understand the Azure Language MCP server
+  description: Learn about the Model Context Protocol and the text analysis capabilities exposed by the Azure Language MCP server.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/02-understand-language-mcp.md)]

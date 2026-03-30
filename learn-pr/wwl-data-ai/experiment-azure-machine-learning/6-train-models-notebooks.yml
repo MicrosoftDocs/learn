@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.experiment-azure-machine-learning.train-models-notebooks
+title: Train and track models in notebooks
+metadata:
+  title: Train and track models in notebooks
+  description: Learn how to train and track models in Jupyter notebooks using MLflow in Azure Machine Learning.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 03/11/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: devx-track-python
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-train-models-notebooks.md)]

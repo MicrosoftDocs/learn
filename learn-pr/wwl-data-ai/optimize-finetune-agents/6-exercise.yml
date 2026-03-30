@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.exercise
+title: Exercise - Optimize fine-tuning a base model
+metadata:
+  title: Exercise - Optimize fine-tuning a base model
+  description: Practice optimizing fine-tuning by designing an optimization strategy, configuring hyperparameters, and iterating on results using a simulated notebook environment.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 60
+content: |
+  [!include[](includes/6-exercise.md)]
+
+

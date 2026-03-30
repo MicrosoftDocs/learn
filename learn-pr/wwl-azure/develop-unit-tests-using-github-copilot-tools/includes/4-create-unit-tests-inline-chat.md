@@ -20,7 +20,7 @@ To create unit tests using Inline Chat, follow these steps:
 
     You can make adjustments, such as changing the test names, modifying or removing test cases, or adding additional assertions.
 
-    The generated tests are displayed in the code editor. Copilot generates test code in an existing test file, or creates a new test file if one doesn't exist.
+    The generated tests are displayed in the code editor. GitHub Copilot generates test code in an existing test file, or creates a new test file if one doesn't exist.
 
 1. Select **Accept** or **Close** to accept or discard the suggested unit tests.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-office-applications.enable-copilot-in-microsoft-365-apps
+title: Enabling Copilot in Microsoft 365 apps
+metadata:
+  title: Enabling Copilot in Microsoft 365 Apps
+  description: This content is part of the "Work smarter with Copilot across your Microsoft 365 apps" module.
+  ms.date: 03/02/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-enable-copilot-in-microsoft-365-apps.md)]

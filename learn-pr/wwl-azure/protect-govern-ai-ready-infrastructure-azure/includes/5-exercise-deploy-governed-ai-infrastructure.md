@@ -12,7 +12,7 @@ Your company configures custom policies in Microsoft Foundry to disable global d
 :::image type="content" source="../media/control-model-deployment-custom-policy.png" alt-text="Diagram showing that Azure AI Foundry and Azure OpenAI support custom policies to control available deployment options.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create and assign policies, you should have the Owner or Resource Policy Contributor role assigned at the Azure subscription level.
 - Familiarity with Azure Policy
 
@@ -39,7 +39,7 @@ Your company is building an enterprise-grade AI platform using Microsoft Foundry
 :::image type="content" source="../media/disable-shared-key-access-authorize.png" alt-text="Diagram illustrating an enterprise AI platform built on Microsoft Foundry where multiple teams run AI workloads.":::
 
 ## Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Azure Storage authorization
 - Familiarity with Azure Role-Based Access Control (RBAC)

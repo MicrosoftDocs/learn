@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-your-kernel
+hidden: true
 metadata:
   title: Build your kernel
   description: "Learn how the semantic kernel SDK connects native code to large language models to create smart applications."
@@ -9,7 +10,7 @@ metadata:
   ms.topic: module
   ms.collection: N/A
   ms.custom:
-  - N/A
+    - N/A
   ms.service: semantic-kernel
   ms.devlang: csharp
   ai-usage: human-only
@@ -31,20 +32,20 @@ prerequisites: |
   -   Access to Azure OpenAI services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- developer
+  - developer
 products:
-- dotnet
-- vs-code
-- azure-openai
+  - dotnet
+  - vs-code
+  - azure-openai
 units:
-- learn.wwl.build-your-kernel.introduction
-- learn.wwl.build-your-kernel.what-semantic-kernel
-- learn.wwl.build-your-kernel.why-use-semantic-kernel
-- learn.wwl.build-your-kernel.how-build-your-kernel
-- learn.wwl.build-your-kernel.exercise-build-kernel-object
-- learn.wwl.build-your-kernel.knowledge-check
-- learn.wwl.build-your-kernel.summary
+  - learn.wwl.build-your-kernel.introduction
+  - learn.wwl.build-your-kernel.what-semantic-kernel
+  - learn.wwl.build-your-kernel.why-use-semantic-kernel
+  - learn.wwl.build-your-kernel.how-build-your-kernel
+  - learn.wwl.build-your-kernel.exercise-build-kernel-object
+  - learn.wwl.build-your-kernel.knowledge-check
+  - learn.wwl.build-your-kernel.summary
 badge:
   uid: learn.wwl.build-your-kernel.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.design-agent-behaviors-copilot-studio-reasoning-voice-mode
+title: "Design agent behaviors in Copilot Studio"
+metadata:
+  title: "Design Agent Behaviors in Copilot Studio"
+  description: "Learn to design agent behaviors in Copilot Studio, including reasoning models, voice mode, and behavioral controls for enterprise solutions."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-design-agent-behaviors-copilot-studio-reasoning-voice-mode.md)]

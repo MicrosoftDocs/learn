@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-organization-data.specify-priorities-mitigating-threats-data
+title: Specify priorities for mitigating threats to data
+metadata:
+  title: Specify priorities for mitigating threats to data
+  description: "SC-100 preparatory unit on the topic: Specify priorities for mitigating threats to data."
+  ms.date: 03/10/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 11
+content: |
+  [!include[](includes/2a-specify-priorities-mitigating-threats-data.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-microsoft-365.evaluate-data-security-compliance-copilot
-title:  Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services
+title: Evaluate how data security and compliance controls protect organizational data used by Microsoft 365 Copilot
 metadata:
-  title:  Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services
+  title: Evaluate How Data Security and Compliance Controls Protect Organizational Data Used by Microsoft 365 Copilot
   description: "Evaluate data security and compliance controls for Microsoft 365 Copilot, including sensitivity labels, DLP, Insider Risk Management, auditing, eDiscovery, retention, and DSPM for AI."
   ms.date: 02/09/2026
   author: ceperezb

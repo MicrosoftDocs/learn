@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-data-store-fabric.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Test your understanding of choosing data stores in Microsoft Fabric, including decision criteria for lakehouse, warehouse, and eventhouse."
+  ms.date: 02/23/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which analytical data store in Microsoft Fabric provides full multi-table ACID transaction support through T-SQL?"
+    choices:
+    - content: "Lakehouse"
+      isCorrect: false
+      explanation: "Incorrect. The lakehouse supports single-table ACID transactions through Delta Lake, but it doesn't support multi-table transactions through T-SQL. The lakehouse's SQL analytics endpoint is read-only."
+    - content: "Warehouse"
+      isCorrect: true
+      explanation: "Correct. The warehouse provides full multi-table ACID transaction support through T-SQL, including INSERT, UPDATE, DELETE, and MERGE operations across multiple tables."
+    - content: "Eventhouse"
+      isCorrect: false
+      explanation: "Incorrect. The eventhouse is optimized for append-only streaming ingestion and doesn't support transactional UPDATE or DELETE operations."
+  - content: "A data science team needs to explore a mix of structured transaction data and semi-structured web logs using Python notebooks. Which data store is the best fit?"
+    choices:
+    - content: "Lakehouse"
+      isCorrect: true
+      explanation: "Correct. The lakehouse supports both structured and semi-structured data, and provides native Apache Spark access through Python notebooks for data exploration and machine learning."
+    - content: "Warehouse"
+      isCorrect: false
+      explanation: "Incorrect. The warehouse is designed for structured data and T-SQL development. It doesn't provide Spark notebook access for Python-based data exploration."
+    - content: "Eventhouse"
+      isCorrect: false
+      explanation: "Incorrect. The eventhouse is optimized for time-series and streaming data with KQL as the primary query language. It isn't designed for mixed-format data exploration with Python notebooks."
+  - content: "What is the primary query language used by the eventhouse for time-series analytics?"
+    choices:
+    - content: "T-SQL"
+      isCorrect: false
+      explanation: "Incorrect. While the eventhouse supports a subset of T-SQL, KQL (Kusto Query Language) is the primary query language designed specifically for time-series analysis with built-in operators for aggregations, anomaly detection, and pattern matching."
+    - content: "Spark SQL"
+      isCorrect: false
+      explanation: "Incorrect. Spark SQL is the query language used in lakehouse notebooks. The eventhouse uses KQL as its primary query language."
+    - content: "KQL (Kusto Query Language)"
+      isCorrect: true
+      explanation: "Correct. KQL is the primary query language for the eventhouse, purpose-built for time-series analysis with operators for time-window aggregations, anomaly detection, and pattern matching."
+  - content: "An organization needs to build a star schema with dimension tables that require frequent updates. Which data store best supports this requirement?"
+    choices:
+    - content: "Warehouse"
+      isCorrect: true
+      explanation: "Correct. The warehouse provides full T-SQL DML support including UPDATE, DELETE, and MERGE operations with multi-table ACID transactions, which is essential for maintaining slowly changing dimensions in a star schema."
+    - content: "Lakehouse"
+      isCorrect: false
+      explanation: "Incorrect. While the lakehouse supports single-table transactions through Delta Lake, it doesn't provide the full T-SQL DML surface (UPDATE, DELETE, MERGE) through T-SQL. The SQL analytics endpoint is read-only."
+    - content: "Eventhouse"
+      isCorrect: false
+      explanation: "Incorrect. The eventhouse is designed for append-optimized time-series data, not for relational dimensional models that require frequent row-level updates."
+  - content: "Which feature allows data in one Fabric data store to be accessed from another store without copying or moving the data?"
+    choices:
+    - content: "Cross-database queries and shortcuts"
+      isCorrect: true
+      explanation: "Correct. Shortcuts let you reference data in one store from another without duplication, and cross-database queries in the warehouse let you join data from multiple warehouses and lakehouse SQL analytics endpoints using three-part naming."
+    - content: "Data pipelines"
+      isCorrect: false
+      explanation: "Incorrect. Data pipelines move or copy data between sources and destinations. Shortcuts and cross-database queries provide access to data in place without copying it."
+    - content: "Streaming ingestion"
+      isCorrect: false
+      explanation: "Incorrect. Streaming ingestion is a method for loading real-time data into an eventhouse. It doesn't provide cross-store data access without copying."

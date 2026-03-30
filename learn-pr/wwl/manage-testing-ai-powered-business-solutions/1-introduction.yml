@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-testing-ai-powered-business-solutions.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Learn essential practices to validate and maintain the quality of AI-powered business solutions with structured testing and governance."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

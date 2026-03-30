@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  module_assessment: true
+  ai_generated_module_assessment: false
+  description: "Check your knowledge of creating ontologies with Fabric IQ"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main advantage of generating an ontology from a Power BI semantic model compared to building manually?"
+    choices:
+    - content: "It creates relationship data bindings automatically"
+      isCorrect: false
+      explanation: "Incorrect. While semantic model generation creates relationship type definitions, you still need to configure relationship data bindings manually for both approaches."
+    - content: "It automatically creates entity types, properties, keys, and entity data bindings from existing model structure"
+      isCorrect: true
+      explanation: "Correct. Generating from a semantic model automates the creation of entity types (from tables), properties (from columns), keys, and entity data bindings, saving significant setup time compared to manual creation."
+    - content: "It allows you to use business-friendly names from the start"
+      isCorrect: false
+      explanation: "Incorrect. Generated entity types often have technical names and require renaming to business vocabulary. Manual creation lets you use business-friendly names from the start."
+  - content: "What must you configure for an entity type before you can bind it to data sources?"
+    choices:
+    - content: "Relationship types connecting it to other entities"
+      isCorrect: false
+      explanation: "Incorrect. While relationships are important, you can bind entity types to data before configuring relationships. The required component is the entity type key."
+    - content: "An entity type key using one or more string or integer properties"
+      isCorrect: true
+      explanation: "Correct. Every entity type needs a key that uniquely identifies each instance. The key must use string or integer properties and is required before binding the entity type to data sources."
+    - content: "At least one time series property"
+      isCorrect: false
+      explanation: "Incorrect. Time series properties are optional. Many entity types use only static properties. The required component is the entity type key."
+  - content: "How does a time series binding differ from a static binding?"
+    choices:
+    - content: "Time series bindings connect to eventhouse streams with a timestamp column, while static bindings connect to lakehouse tables"
+      isCorrect: true
+      explanation: "Correct. Static bindings connect entity properties to lakehouse tables containing data that changes infrequently. Time series bindings connect to eventhouse streams containing continuously arriving observations, requiring a timestamp column to order the measurements."
+    - content: "Time series bindings can be added before static bindings"
+      isCorrect: false
+      explanation: "Incorrect. Time series bindings require an existing static binding first because they need the key property from the static binding to link streaming measurements back to entity instances."
+    - content: "Time series bindings don't require a key property"
+      isCorrect: false
+      explanation: "Incorrect. Time series bindings require a linking key property from the static binding to connect each measurement back to the correct entity instance."
+  - content: "What information do you need to configure a relationship data binding?"
+    choices:
+    - content: "The source table containing identifying information for both entity types and the columns that match each entity type's key"
+      isCorrect: true
+      explanation: "Correct. Relationship configuration requires selecting a source table where each row contains values identifying both the source and target entity instances, and mapping columns to the keys of both entity types."
+    - content: "Only the source entity type and target entity type"
+      isCorrect: false
+      explanation: "Incorrect. While you define source and target entity types when creating the relationship type, you also need to specify the source table and map columns to both entity type keys to make the relationship queryable."
+    - content: "The primary key and foreign key columns from your database schema"
+      isCorrect: false
+      explanation: "Incorrect. Ontology uses entity type keys and linking tables rather than database-specific primary and foreign key terminology. You need the source table and columns that reference both entity types."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.deploy-video-model
+title: Deploy a video generating model
+metadata:
+  title: Deploy a video generating model
+  description: "Deploy a video generating model that can create videos from text prompts."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-deploy-video-model.md)]

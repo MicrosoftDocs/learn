@@ -21,14 +21,16 @@ Fabric data agents can reason over multiple data sources, including:
 - Power BI semantic models.
 - Eventhouse KQL Databases.
 - Lakehouses and Warehouses.
+- Ontologies (for semantic, business-term-aligned queries).
+- Azure AI Search indexes (preview, via a connected Microsoft Foundry index, enabling reasoning over unstructured content).
 
 The Fabric data agent can only access data that you provide, with up to five data sources. For example, a configured Fabric data agent could include a mix of two Power BI semantic models, one lakehouse, and one KQL database. Within those data sources, you can select the relevant tables. 
 
 > [!IMPORTANT]
 > 
-> The Fabric data agent works best with 25 or fewer tables selected across all data sources. 
+> The Fabric data agent works best with 25 or fewer tables selected across all data sources.
 > 
-> You can't use the Fabric data agent to access unstructured data resources like .pdf, .docx, or .txt files.
+> The Fabric data agent doesn't directly access unstructured files (such as .pdf, .docx, or .txt) as native data sources. To reason over unstructured content, connect an Azure AI Search index built in Microsoft Foundry as an additional source (preview).
 
 ## Integration inside and outside of Fabric
 

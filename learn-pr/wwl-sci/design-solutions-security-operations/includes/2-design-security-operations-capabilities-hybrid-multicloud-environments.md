@@ -70,18 +70,18 @@ Microsoft Defender for Cloud provides continuous security monitoring across Azur
 - **Auto-provisioning of monitoring agents** automates deployment of the Azure Arc agent and Azure Monitor agent to AWS EC2 and GCP VM instances, enabling consistent security telemetry collection
 - **Security alerts integration** with Azure Monitor and Microsoft Sentinel for centralized alert management, correlation, and response across hybrid environments
 
-### Monitoring AI workloads
+### Monitoring AI workloads across your environment
 
-Organizations deploying generative AI applications require specialized monitoring. **Microsoft Defender for AI Services** provides real-time threat detection for AI workloads:
+Organizations with hybrid and multicloud environments increasingly deploy Azure AI services alongside their distributed infrastructure. **Microsoft Defender for AI Services** extends threat protection to these workloads, with alerts flowing into the same centralized Defender XDR portal used for hybrid and multicloud monitoring:
 
 | Capability | Description |
 |------------|-------------|
-| **Prompt injection detection** | Identifies attempts to manipulate AI models through malicious prompts |
-| **Jailbreak monitoring** | Detects attempts to bypass AI safety controls |
-| **Data leakage alerts** | Monitors for sensitive data exposure through AI responses |
-| **Credential theft detection** | Identifies attempts to extract credentials or secrets through AI interactions |
+| **Jailbreak and prompt injection detection** | Identifies attempts to bypass AI safety controls or manipulate models, including ASCII smuggling techniques |
+| **Credential theft detection** | Detects attempts to extract credentials or secrets through AI model interactions |
+| **Sensitive data exposure monitoring** | Alerts when AI responses contain sensitive data outside expected patterns |
+| **Wallet attack detection** | Identifies excessive resource consumption attempts designed to cause financial damage |
 
-Defender for AI Services integrates with the Defender XDR portal, allowing security teams to correlate AI workload alerts with other security incidents. When designing monitoring for environments with Azure OpenAI or Azure AI Model Inference services, include these AI-specific threat detection capabilities in your security operations architecture.
+Defender for AI Services monitors Azure OpenAI and Azure AI Model Inference services, integrating with the Defender XDR portal so security teams can correlate AI workload alerts with infrastructure alerts from hybrid and multicloud resources. When designing unified monitoring, include AI-specific threat detection as part of the broader security operations architecture.
 
 ### Centralized monitoring visibility in the Defender portal
 

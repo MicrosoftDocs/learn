@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-higher-education.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Empowering higher education with Copilot+ PCs, Windows 11 Pro, and Microsoft 365" module.
+  ms.date: 03/17/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why do higher education institutions implement a modern device strategy according to the module?"
+    choices:
+        - content: "To focus more on educational outcomes rather than managing tools"
+          isCorrect: true
+          explanation: "Correct. The module explains that a modern device strategy allows institutions to focus more on educational outcomes instead of worrying about the tools being used."
+        - content: "To remove the need for campus IT departments"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes simplifying IT, not eliminating IT roles."
+        - content: "To standardize all teaching methods across institutions"
+          isCorrect: false
+          explanation: "Incorrect. The content highlights flexibility and adaptability for different users and workflows."
+        - content: "To eliminate the use of cloud-based services"
+          isCorrect: false
+          explanation: "Incorrect. The module repeatedly references cloud-based services like Microsoft 365."
+  - content: "What role does the Neural Processing Unit (NPU) play in Copilot+ PCs for higher education users?"
+    choices:
+        - content: "It accelerates on-device AI workloads such as summarizing and handwriting recognition"
+          isCorrect: true
+          explanation: "Correct. The module states that the NPU accelerates AI workloads, supporting responsive handwriting recognition and Copilot actions like summarizing and rewriting."
+        - content: "It manages institutional licensing and compliance"
+          isCorrect: false
+          explanation: "Incorrect. Licensing and compliance are discussed separately and aren't functions of the NPU."
+        - content: "It replaces the need for cloud-based AI services"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that Copilot+ PCs enable AI both in the cloud and on the device."
+        - content: "It functions primarily as a graphics processor"
+          isCorrect: false
+          explanation: "Incorrect. Graphics processing is handled by CPU and GPU, not the NPU."
+  - content: "What is a key limitation when converting handwritten notes to text in OneNote?"
+    choices:
+        - content: "The feature is only available in the OneNote desktop app"
+          isCorrect: true
+          explanation: "Correct. The module clearly states that handwriting-to-text conversion is only available in the OneNote desktop app."
+        - content: "The feature requires a Copilot subscription"
+          isCorrect: false
+          explanation: "Incorrect. The limitation described relates to the app version, not licensing."
+        - content: "The feature only works with typed notes"
+          isCorrect: false
+          explanation: "Incorrect. The feature is specifically designed for handwritten notes."
+        - content: "The feature is exclusive to OneNote for the web"
+          isCorrect: false
+          explanation: "Incorrect. The module explicitly says the feature isn't available in OneNote for the web."
+  - content: "How does Copilot in OneNote help students organize and understand their notes?"
+    choices:
+        - content: "By generating summaries, task lists, and rewritten content"
+          isCorrect: true
+          explanation: "Correct. The module lists these capabilities as ways Copilot helps students understand, create, and recall information."
+        - content: "By automatically grading assignments"
+          isCorrect: false
+          explanation: "Incorrect. Grading functionality isn't described in the module."
+        - content: "By converting notes into audio recordings"
+          isCorrect: false
+          explanation: "Incorrect. The module focuses on text, handwriting, and AI-assisted organization."
+        - content: "By limiting the amount of content stored in notebooks"
+          isCorrect: false
+          explanation: "Incorrect. No such limitation is described."
+  - content: "What is one primary benefit of Microsoft Intune for higher education administrators?"
+    choices:
+        - content: "Managing devices and enforcing compliance at scale"
+          isCorrect: true
+          explanation: "Correct. The module explains that Microsoft Intune helps administrators manage devices, deploy policies, and maintain compliance across the institution."
+        - content: "Providing student note-taking tools"
+          isCorrect: false
+          explanation: "Incorrect. Note-taking tools are provided through OneNote and Copilot, not Intune."
+        - content: "Replacing Windows security features"
+          isCorrect: false
+          explanation: "Incorrect. Intune integrates with Windows security features rather than replacing them."
+        - content: "Eliminating the need for endpoint protection"
+          isCorrect: false
+          explanation: "Incorrect. The module describes integration with tools like Microsoft Defender for Endpoint."

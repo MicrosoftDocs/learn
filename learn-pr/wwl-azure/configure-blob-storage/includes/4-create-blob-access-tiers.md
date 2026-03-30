@@ -8,7 +8,7 @@ Let's examine characteristics of the blob access tiers.
 
 #### Hot tier
 
-The Hot tier is optimized for frequent reads and writes of objects in the Azure storage account. A good usage case is data that is actively being processed. An online tier optimized for storing data that is accessed or modified frequently. The hot tier has the highest storage costs, but the lowest access costs.
+The Hot tier is optimized for frequent reads and writes of objects in the Azure storage account. A good usage case is data that is actively being processed. The hot tier has the highest storage costs, but the lowest access costs.
 
 #### Cool tier
 
@@ -22,7 +22,7 @@ The Cold tier is also optimized for storing large amounts of infrequently access
 
 The Archive tier is an offline tier that's optimized for data that can tolerate several hours of retrieval latency. Data must remain in the Archive tier for at least 180 days or be subject to an early deletion charge. Data for the Archive tier includes secondary backups, original raw data, and legally required compliance information. This tier is the most cost-effective option for storing data. Accessing data is more expensive in the Archive tier than accessing data in the other tiers. 
 
-An archive tier doesn't allow you to read or modify the content of a blob directly. However, you do have access to its metadata, including index tags. To access the blob's content, you can assign it to the hot, cool, or cold tier to trigger the process referred to as rehydration.
+To access the blob's content, you can rehydrate it to the hot, cool, or cold tier using two methods: **Copy Blob** (recommended - creates a new blob in an online tier) or **Set Blob Tier** (changes tier in place). Both methods support Standard priority (up to 15 hours) or High priority (within 1 hour for objects under 10 GB, at higher cost). Use High priority for urgent data retrieval in disaster recovery scenarios.
 
 ### Compare access tiers
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-networking-services.domain-name-system
+title: Describe Azure DNS
+metadata:
+  title: Describe Azure DNS
+  description: "Describe Azure DNS"
+  ms.date: 09/20/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-domain-name-system.md)]

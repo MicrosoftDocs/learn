@@ -53,33 +53,3 @@ When designing a solution for assigning and delegating privileged roles, apply t
 | **Emergency access** | Maintain break-glass accounts with permanent Global Administrator access, protected with unique credentials and physical security tokens. |
 
 For more information, see [Best practices for Microsoft Entra roles](/entra/identity/role-based-access-control/best-practices).
-
-## Evolution from the legacy AD tier model
-
-The enterprise access model supersedes and replaces the legacy tier model that was focused on containing unauthorized escalation of privilege in an on-premises Windows Server Active Directory environment.
-
-:::image type="content" source="../media/legacy-tier-model.png" alt-text="Diagram showing the legacy AD tier model." lightbox="../media/legacy-tier-model.png":::
-
-The enterprise access model incorporates these elements as well as full access management requirements of a modern enterprise that spans on-premises, multiple clouds, internal or external user access, and more.
-
-:::image type="content" source="../media/legacy-tier-model-comparison-new-v2.png" alt-text="Diagram showing the complete enterprise access model from old tiers." lightbox="../media/legacy-tier-model-comparison-new-v2.png":::
-
-### Tier 0 scope expansion
-
-Tier 0 expands to become the control plane and addresses all aspects of access control, including networking where it is the only/best access control option, such as legacy OT options
-
-### Tier 1 splits
-
-To increase clarity and actionability, what was tier 1 is now split into the following areas:
-
-- **Management plane** – for enterprise-wide IT management functions
-- **Data/Workload plane** – for per-workload management, which is sometimes performed by IT personnel and sometimes by business units
-
-This split ensures focus for protecting business critical systems and administrative roles that have high intrinsic business value, but limited technical control. Additionally, this split better accommodates developers and DevOps models vs. focusing too heavily on classic infrastructure roles.
-
-### Tier 2 splits
-
-To ensure coverage for application access and the various partner and customer models, Tier 2 was split into the following areas:
-
-- **User access** – which includes all B2B, B2C, and public access scenarios
-- **App access** – to accommodate API access pathways and resulting attack surface

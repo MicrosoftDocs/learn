@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.governance
+title: Trust, safety, and governance
+metadata:
+  title: Trust, safety, and governance
+  description: "Establish governance foundations for agentic operations including identity management, audit logging, and responsible AI."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-governance.md)]

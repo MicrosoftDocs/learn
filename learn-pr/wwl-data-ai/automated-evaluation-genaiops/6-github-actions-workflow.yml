@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automated-evaluation-genaiops.github-actions-workflow
+title: Integrate evaluations into GitHub Actions
+metadata:
+  title: Integrate evaluations into GitHub Actions
+  description: "Learn how to automate Python evaluation scripts in GitHub Actions workflows triggered by pull requests"
+  ms.date: 02/22/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-github-actions-workflow.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-data-onelake.browse-connect-onelake
+title: Browse and connect to data in OneLake
+metadata:
+  title: Browse and Connect to Data in OneLake
+  description: Learn to find data items using the OneLake catalog, connect to lakehouse and warehouse tables using shortcuts, and work with semantic models for reporting.
+  ms.date: 02/19/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-browse-connect-onelake.md)]

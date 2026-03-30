@@ -3,7 +3,8 @@ Copilot for Fabric Data Engineering assists with writing code in notebooks. It w
 There are multiple ways to interact with Copilot for Fabric Data Engineering, including:
 
 - **Magic commands** are special commands that you can use in your notebook cells to perform specific tasks. They start with a double percent sign (`%%`) or a single percent sign (`%`).
-- **Copilot chat panel**: You can ask Copilot for help in plain English, and it generates code for you based on your request.
+- **Copilot chat pane**: You can ask Copilot for help in plain English, and it generates code for you based on your request. This is best for multi-step workflows, building logic across cells, and reviewing generated code with diff view.
+- **In-cell Copilot**: You can interact with Copilot directly above any individual code cell using a text box and slash commands. This is best for focused, single-cell actions like fixing errors or explaining logic.
 
 ## Magic commands
 
@@ -19,7 +20,22 @@ Chat commands are special commands you can use in your Microsoft Fabric notebook
 | `%describe` | Provides summaries and descriptions of loaded dataframes. |
 | `%%add_comments` | Add comments to your code. |
 
-In addition, there are also several commands allowing you to fix errors, configure privacy settings, and manage dataframes. Check out the article [Overview of chat-magics in Microsoft Fabric notebooks](/fabric/data-engineering/copilot-notebooks-chat-magics) for more information.
+In addition, there are also several commands allowing you to fix errors, configure privacy settings, and manage dataframes. See [Use the Copilot chat pane in Microsoft Fabric notebooks](/fabric/data-engineering/copilot-notebooks-chat-pane) for more information.
+
+## In-cell Copilot
+
+In-cell Copilot lets you interact with Copilot directly above any code cell, without leaving your editing context. Select the **Copilot** button that appears above a code cell to open a text box where you can type a request or use a slash command.
+
+The available slash commands are:
+
+| Command | Description |
+| ------- | ----------- |
+| `/explain` | Provides a plain-language explanation of the cell's code logic. |
+| `/fix` | Identifies errors in the cell and suggests corrections. |
+| `/comments` | Automatically adds code comments to document logic and data changes. |
+| `/optimize` | Suggests improvements for performance and efficiency. |
+
+Use in-cell Copilot when you want to refine a specific cell — for example, understanding what a transformation does, fixing a syntax error, or documenting code before sharing the notebook. For multi-step workflows or cross-cell tasks, switch to the Copilot chat pane instead.
 
 ## Example
 

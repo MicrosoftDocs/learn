@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-speech.speech-translation
+title: Translate speech
+metadata:
+  title: Translate speech
+  description: Speech translation using Azure Speech in Foundry Tools
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 3/13/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-speech-translation.md)]

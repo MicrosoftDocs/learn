@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-into-unity-catalog.exercise
+title: Exercise - Ingest Data into Unity Catalog
+metadata:
+  title: Exercise - Ingest Data into Unity Catalog
+  description: "Exercise - Ingest Data into Unity Catalog"
+  ms.date: 02/16/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/9-exercise-ingest-data-into-unity-catalog.md)]

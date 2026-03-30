@@ -6,7 +6,7 @@ metadata:
   description: "ASP.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-enabled, Internet-connected apps."
   ms.date: 11/01/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: unit
 durationInMinutes: 1
 content: |

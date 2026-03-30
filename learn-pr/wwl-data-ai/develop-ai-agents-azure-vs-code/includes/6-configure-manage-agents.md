@@ -1,4 +1,7 @@
-Once you create an agent in Visual Studio Code, the real work begins — configuring its behavior, instructions, and properties to match your requirements. The Microsoft Foundry extension provides comprehensive configuration options through both visual interfaces and direct file editing, giving you flexibility in how you work.
+Once you have a declarative agent (created in the Foundry portal or through the SDK), the real work begins — configuring its behavior, instructions, and properties to match your requirements. The Microsoft Foundry VS Code extension provides comprehensive configuration options through both the visual Agent Designer and direct YAML file editing, giving you flexibility in how you work.
+
+> [!NOTE]
+> The configuration workflow described in this unit applies to **declarative prompt-based agents**. Hosted agents are configured through code, and workflow agents use a different YAML schema for multi-agent orchestration.
 
 ## Configuring agent properties
 
@@ -30,7 +33,7 @@ These settings appear in both the Designer interface and the YAML file, remainin
 
 ## Understanding the agent YAML structure
 
-The YAML file contains all your agent's configuration in a structured, readable format. Understanding this structure helps you make precise changes and work efficiently when the visual interface isn't the best fit.
+The YAML file contains all your declarative agent's configuration in a structured, readable format. Understanding this structure helps you make precise changes and work efficiently when the visual interface isn't the best fit.
 
 ### Complete YAML example
 
@@ -73,130 +76,17 @@ tools: []
 
 The YAML structure divides naturally into sections: metadata, model configuration, instructions, and tools. This organization makes it easy to locate and modify specific settings.
 
-## Writing effective agent instructions
+### Benefits of YAML configuration
 
-Agent instructions are the most critical configuration element. They define how your agent understands its role, makes decisions, and responds to users. Well-crafted instructions lead to consistent, reliable agent behavior.
+Direct YAML editing provides several advantages:
 
-### Best practices for instruction design
+- **Version control** - Track changes in Git alongside your application code
+- **Bulk updates** - Make multiple changes simultaneously with confidence
+- **Templates** - Create reusable agent templates for consistent configurations
+- **Code review** - Include agent configurations in your standard code review processes
+- **Automation** - Build scripts that generate or modify agent configurations programmatically
 
-When writing system instructions:
-
-**Be specific and clear** - Define exactly what the agent should do and how it should behave. Ambiguity in instructions leads to unpredictable behavior. Instead of "Help users with appointments," write "Assist healthcare staff in scheduling patient appointments by finding available time slots and confirming booking details."
-
-**Provide context** - Explain the agent's role and operating environment. Context helps the agent understand the broader situation and make better decisions. For example: "You work in a busy healthcare facility where staff need quick, accurate appointment information."
-
-**Set boundaries** - Clearly define what the agent should and shouldn't do. Boundaries prevent the agent from attempting tasks outside its scope or capabilities. Include statements like "Never access patient medical records" or "Don't provide medical advice."
-
-**Include examples** - Show the agent examples of desired interactions when helpful. Examples demonstrate the level of detail, tone, and format you expect in responses.
-
-**Define personality** - Establish the tone and style of responses. Should the agent be formal or casual? Technical or accessible? Professional but warm, or strictly business-focused?
-
-**Specify escalation paths** - Tell the agent what to do when it encounters situations it can't handle. For example: "If staff ask about complex billing disputes, acknowledge the question and suggest they contact the billing department directly."
-
-### Instruction examples for different scenarios
-
-**Technical support agent:**
-
-```text
-You're a technical support agent helping users troubleshoot software issues.
-
-Your approach:
-- Start by asking clarifying questions to understand the problem
-- Guide users through systematic troubleshooting steps
-- Explain technical concepts in simple terms
-- Document solutions that work for future reference
-
-When users report issues:
-- Ask about error messages, recent changes, and affected features
-- Suggest basic troubleshooting before advanced solutions
-- If the issue requires escalation, gather all relevant details first
-
-Keep responses clear and actionable. Use a patient, supportive tone; users may be frustrated when technical issues disrupt their work.
-```
-
-**Sales support agent:**
-
-```text
-You're a sales support agent helping the sales team research leads and prepare for meetings.
-
-Your tasks:
-- Research company information when given a company name or domain
-- Summarize key facts relevant to potential sales opportunities
-- Identify recent news or events that might be conversation starters
-- Suggest relevant talking points based on the company's industry and size
-
-When researching companies:
-- Focus on publicly available information
-- Highlight information relevant to our product offerings
-- Note any recent executive changes, funding rounds, or expansion news
-- Keep summaries concise, sales teams need quick insights
-
-Maintain a professional tone focused on actionable intelligence that helps close deals.
-```
-
-## Deploying agents from Visual Studio Code
-
-Once you're satisfied with your agent's configuration, deploy it to Microsoft Foundry to make it available for production use.
-
-### Deployment process
-
-To deploy your agent:
-
-1. Open your agent in the Agent Designer
-1. Verify all configuration is correct
-1. Select **Create on Microsoft Foundry** (button in the bottom-left of the Designer)
-1. Wait for deployment to complete — status updates appear in VS Code notifications
-1. After successful deployment, refresh the Azure Resources view
-1. Your deployed agent appears under the Agents subsection
-
-The deployment process uploads your agent configuration to Microsoft Foundry, making it accessible through APIs and other applications.
-
-### Updating deployed agents
-
-When you need to modify a deployed agent:
-
-1. Select the deployed agent in the Azure Resources view
-1. The Agent Designer opens showing current configuration
-1. Make your changes in either the Designer or YAML file
-1. Select **Update on Microsoft Foundry** to deploy the changes
-1. Wait for the update to complete
-
-Updates replace the existing configuration with your new version. The agent ID remains the same, so existing integrations continue working with the updated behavior.
-
-## Managing deployed agents
-
-After deployment, the extension provides several management capabilities:
-
-### Viewing agent details
-
-Select a deployed agent to see its configuration, deployment status, and available actions. The Agent Preferences page shows:
-- Current configuration and instructions
-- Model deployment being used
-- Tools and capabilities enabled
-- Deployment timestamp and status
-
-### Generating integration code
-
-The extension can generate sample code for integrating agents into applications:
-
-1. Select a deployed agent in the Azure Resources view
-1. Select **Open Code File** from the available actions
-1. Choose your programming language (Python, C#, JavaScript, etc.)
-1. The extension generates code showing how to connect to and use the agent
-
-This generated code includes authentication, connection setup, and example interactions, accelerating integration into your applications.
-
-### Testing deployed agents
-
-The integrated playground lets you test deployed agents:
-
-1. Select a deployed agent
-1. Select **Open Playground**
-1. The playground opens in VS Code
-1. Start a conversation to test the agent's behavior
-1. Verify responses match your expectations
-
-The playground uses the deployed agent configuration, ensuring your tests reflect production behavior.
+The extension validates YAML syntax in real-time, highlighting errors and providing suggestions as you type.
 
 ## Best practices for agent configuration
 
@@ -214,4 +104,4 @@ As you build more complex agents, these practices help maintain quality and reli
 
 **Keep instructions focused** - Each agent should have a clear, specific purpose. Agents trying to do too many things perform inconsistently.
 
-Configuring and managing agents in Visual Studio Code provides powerful capabilities for creating sophisticated automation. The combination of visual design tools, direct YAML editing, and integrated testing enables rapid development while maintaining the precision needed for production deployments. With these configuration techniques, you can build agents that reliably meet your specific requirements.
+Configuring agents in Visual Studio Code provides powerful capabilities for creating sophisticated automation. The combination of visual design tools and direct YAML editing enables rapid development while maintaining the precision needed for production deployments.

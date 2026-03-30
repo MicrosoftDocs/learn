@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.extract-insights-visual-data-azure
+metadata:
+  title: Extract insights from visual data on Azure
+  description: Use generative AI vision and Content Understanding in Azure to extract insights from visual data.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: learning-path
+title: Extract insights from visual data on Azure
+summary: |
+  Use generative AI, computer vision, and Content Understanding capabilities in Azure to extract insights from visual data, supporting scenarios like:
+  - Image analysis
+  - Image and video generation
+  - Content Understanding and enrichment
+  - Visual search and classification
+  - Digital asset management (DAM)
+  - Multimodal AI solutions
+prerequisites: |
+  Before starting this learning path, you should already have:
+  - Familiarity with Azure and Microsoft Foundry.
+  - Programming experience.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+  - developer
+subjects:
+  - artificial-intelligence
+products:
+  - foundry-tools
+  - microsoft-foundry
+  - azure-cognitive-search
+modules:
+  - learn.wwl.develop-generative-ai-vision-apps
+  - learn.wwl.generate-images-azure-openai
+  - learn.wwl.generate-video-with-foundry
+  - learn.wwl.analyze-images-with-content-understanding
+  - learn.wwl.analyze-content-ai
+  - learn.wwl.analyze-content-ai-api
+  - learn.wwl.extract-data-with-document-intelligence
+  - learn.wwl.ai-knowledge-mining
+trophy:
+  uid: learn.extract-insights-visual-data-azure.trophy

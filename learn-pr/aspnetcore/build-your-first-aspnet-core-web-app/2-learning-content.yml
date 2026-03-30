@@ -6,7 +6,7 @@ metadata:
   description: Review available ASP.NET Core project templates that can get you productive quickly.
   ms.date: 9/9/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: unit
 
 durationInMinutes: 2

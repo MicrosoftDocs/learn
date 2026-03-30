@@ -1,4 +1,4 @@
-It's time to out what you've learned into practice!
+It's time to put what you've learned into practice!
 
 In this exercise, you use Azure AI Search to extract and enrich information from documents into a searchable index and a knowledge store.
 

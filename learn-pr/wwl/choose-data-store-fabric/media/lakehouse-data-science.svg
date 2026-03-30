@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Segoe UI, sans-serif" font-size="13">
+  <title>Data Science Lakehouse Architecture</title>
+  <desc>Diagram showing data science lakehouse with shortcuts to engineering lakehouse and warehouse, plus Spark notebooks for ML training.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FAFAFA" rx="4"/>
+
+  <!-- TOP LEFT: Engineering Lakehouse (centered on band 1 midpoint y=97) -->
+  <rect x="20" y="67" width="178" height="60" rx="10" fill="#008080"/>
+  <text x="109" y="92" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Engineering Lakehouse</text>
+  <text x="109" y="110" text-anchor="middle" fill="#E0F2F1" font-size="11">Curated Delta tables</text>
+
+  <!-- Dashed arrow: Engineering Lakehouse → Center (horizontal) -->
+  <line x1="198" y1="97" x2="280" y2="97" stroke="#888" stroke-width="2" stroke-dasharray="8,4"/>
+  <polyline points="274,92 281,97 274,102" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="239" y="90" text-anchor="middle" fill="#666" font-size="10" font-weight="600">Shortcut</text>
+
+  <!-- MIDDLE LEFT: External APIs (centered on band 2 midpoint y=179) -->
+  <rect x="20" y="157" width="148" height="44" rx="8" fill="#E0E0E0" stroke="#999" stroke-width="1"/>
+  <text x="94" y="184" text-anchor="middle" fill="#333" font-size="12">External APIs</text>
+
+  <!-- Solid arrow: External APIs → Center (horizontal) -->
+  <line x1="168" y1="179" x2="280" y2="179" stroke="#555" stroke-width="1.5"/>
+  <polyline points="274,174 281,179 274,184" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- BOTTOM LEFT: Warehouse (centered on band 3 midpoint y=261) -->
+  <rect x="20" y="231" width="178" height="60" rx="10" fill="#6B2FA0"/>
+  <text x="109" y="256" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Warehouse</text>
+  <text x="109" y="274" text-anchor="middle" fill="#D8C0F0" font-size="11">Star schema tables</text>
+
+  <!-- Dashed arrow: Warehouse → Center (horizontal) -->
+  <line x1="198" y1="261" x2="280" y2="261" stroke="#888" stroke-width="2" stroke-dasharray="8,4"/>
+  <polyline points="274,256 281,261 274,266" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="239" y="254" text-anchor="middle" fill="#666" font-size="10" font-weight="600">Shortcut</text>
+
+  <!-- CENTER: Data Science Lakehouse -->
+  <text x="420" y="36" text-anchor="middle" font-size="12" font-weight="600" fill="#444">DATA SCIENCE LAKEHOUSE</text>
+
+  <!-- Outer container -->
+  <rect x="286" y="48" width="268" height="290" rx="12" fill="#E8F5E9" stroke="#107C10" stroke-width="2"/>
+
+  <!-- Band 1: Feature Engineering -->
+  <rect x="298" y="62" width="244" height="70" rx="8" fill="#A5D6A7"/>
+  <text x="420" y="90" text-anchor="middle" fill="#1B5E20" font-size="13" font-weight="600">Feature Engineering</text>
+  <text x="420" y="110" text-anchor="middle" fill="#2E7D32" font-size="11">Data preparation &amp; feature extraction</text>
+
+  <!-- Band 2: Spark MLlib Training -->
+  <rect x="298" y="144" width="244" height="70" rx="8" fill="#4CAF50"/>
+  <text x="420" y="174" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">Spark MLlib Training</text>
+  <text x="420" y="194" text-anchor="middle" fill="#E8F5E9" font-size="11">Model fitting &amp; evaluation</text>
+
+  <!-- Band 3: Models and Feature Store -->
+  <rect x="298" y="226" width="244" height="70" rx="8" fill="#2E7D32"/>
+  <text x="420" y="254" text-anchor="middle" fill="#FFF" font-size="13" font-weight="600">Models &amp; Feature Store</text>
+  <text x="420" y="274" text-anchor="middle" fill="#A5D6A7" font-size="11">Registered models &amp; reusable features</text>
+
+  <!-- RIGHT OUTPUTS -->
+
+  <!-- Arrow: Center → Power BI (horizontal) -->
+  <line x1="554" y1="190" x2="612" y2="190" stroke="#555" stroke-width="1.5"/>
+  <polyline points="606,185 613,190 606,195" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Power BI (SQL Endpoint) -->
+  <rect x="618" y="162" width="160" height="56" rx="10" fill="#F2C811" stroke="#D4A800" stroke-width="1"/>
+  <text x="698" y="188" text-anchor="middle" fill="#333" font-size="12" font-weight="600">Power BI</text>
+  <text x="698" y="204" text-anchor="middle" fill="#555" font-size="10">(SQL Endpoint)</text>
+
+  <!-- Arrow: Center → Production Scoring (horizontal) -->
+  <line x1="554" y1="291" x2="612" y2="291" stroke="#555" stroke-width="1.5"/>
+  <polyline points="606,286 613,291 606,296" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Production Scoring -->
+  <rect x="618" y="266" width="160" height="50" rx="10" fill="#107C10"/>
+  <text x="698" y="288" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Production Scoring</text>
+  <text x="698" y="305" text-anchor="middle" fill="#A5D6A7" font-size="10">Batch &amp; real-time inference</text>
+
+  <!-- Legend -->
+  <g transform="translate(590, 340)">
+    <line x1="0" y1="8" x2="28" y2="8" stroke="#555" stroke-width="1.5"/>
+    <text x="34" y="12" fill="#555" font-size="10">Dataflow</text>
+    <line x1="0" y1="26" x2="28" y2="26" stroke="#888" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="34" y="30" fill="#555" font-size="10">Shortcut</text>
+    <rect x="0" y="38" width="10" height="10" rx="2" fill="#008080"/>
+    <text x="34" y="48" fill="#555" font-size="10">Lakehouse</text>
+    <rect x="88" y="38" width="10" height="10" rx="2" fill="#6B2FA0"/>
+    <text x="104" y="48" fill="#555" font-size="10">Warehouse</text>
+  </g>
+</svg>

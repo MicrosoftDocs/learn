@@ -109,7 +109,7 @@ For more information about the required ports for SAP HANA, see [SAP Note \#2388
 
 ## Create a Pacemaker cluster
 
-Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-pacemaker) to create a basic Pacemaker cluster for this HANA server. You can use the same Pacemaker cluster for SAP HANA and SAP NetWeaver (A)SCS.
+Follow the steps in [Setting up Pacemaker on SUSE Linux Enterprise Server in Azure](/azure/virtual-machines/workloads/sap/high-availability-guide-suse-pacemaker) to create a basic Pacemaker cluster for this HANA server. You can use the same Pacemaker cluster for SAP HANA and SAP NetWeaver (A)SCS.
 
 ## Install SAP HANA
 
@@ -218,7 +218,7 @@ Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](
 4. **\[A\]** Install the SAP HANA high availability packages
 
     ```bash
-    sudo zypper install SAPHanaSR
+    sudo zypper install SAPHanaSR-angi
     ```
 
 5. **\[A\]** Run the hdblcm program from the HANA installation media. Enter the following values at the prompt:
@@ -358,39 +358,37 @@ Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](
 
 2. Next, create the HANA resources.
 
-   > [!NOTE]
-   > This article contains references to the term *slave*, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
-
    ```bash
-    # Replace the bold string with your instance number, HANA system ID, and the front-end IP address of the Azure load balancer.
+    # Replace the values with your instance number, HANA system ID, and the front-end IP address of the Azure load balancer.
     
-    sudo crm configure primitive rsc_SAPHana_HN1_HDB03 ocf:suse:SAPHana \
-    operations \$id="rsc_sap_HN1_HDB03-operations" \
+    sudo crm configure primitive rsc_SAPHanaController_HN1_HDB03 ocf:suse:SAPHanaController \
     op start interval="0" timeout="3600" \
     op stop interval="0" timeout="3600" \
     op promote interval="0" timeout="3600" \
-    op monitor interval="60" role="Master" timeout="700" \
-    op monitor interval="61" role="Slave" timeout="700" \
+    op demote interval="0" timeout="320" \
+    op monitor interval="60" role="Promoted" timeout="700" \
+    op monitor interval="61" role="Unpromoted" timeout="700" \
     params SID="HN1" InstanceNumber="03" PREFER_SITE_TAKEOVER="true" \
-    DUPLICATE_PRIMARY_TIMEOUT="7200" AUTOMATED_REGISTER="false"
-    sudo crm configure ms msl_SAPHana_HN1_HDB03 rsc_SAPHana_HN1_HDB03 \
-    meta is-managed="true" notify="true" clone-max="2" clone-node-max="1" \
-    target-role="Started" interleave="true"
+    DUPLICATE_PRIMARY_TIMEOUT="7200" AUTOMATED_REGISTER="false" \
+    meta priority=100
+    sudo crm configure clone msl_SAPHanaController_HN1_HDB03 rsc_SAPHanaController_HN1_HDB03 \
+    meta clone-node-max="1" interleave="true" promotable="true"
     sudo crm configure primitive rsc_ip_HN1_HDB03 ocf:heartbeat:IPaddr2 \
-    meta target-role="Started" is-managed="true" \
-    operations \$id="rsc_ip_HN1_HDB03-operations" \
+    meta target-role="Started" \
+    op start timeout=60s on-fail=fence \
     op monitor interval="10s" timeout="20s" \
     params ip="10.0.0.13"
-    sudo crm configure primitive rsc_nc_HN1_HDB03 anything \
-    params binfile="/usr/bin/nc" cmdline_options="-l -k 62503" \
-    op monitor timeout=20s interval=10 depth=0
+    sudo crm configure primitive rsc_nc_HN1_HDB03 azure-lb port=62503 \
+    op monitor timeout=20s interval=10 \
+    meta resource-stickiness=0
     sudo crm configure group g_ip_HN1_HDB03 rsc_ip_HN1_HDB03 rsc_nc_HN1_HDB03
     sudo crm configure colocation col_saphana_ip_HN1_HDB03 4000: g_ip_HN1_HDB03:Started \
-    msl_SAPHana_HN1_HDB03:Master
+    msl_SAPHanaController_HN1_HDB03:Promoted
     sudo crm configure order ord_SAPHana_HN1_HDB03 Optional: cln_SAPHanaTopology_HN1_HDB03 \
-    msl_SAPHana_HN1_HDB03
+    msl_SAPHanaController_HN1_HDB03
     # Clean up the HANA resources. The HANA resources might have failed because of a known issue.
-    sudo crm resource cleanup rsc_SAPHana_HN1_HDB03
+    sudo crm resource cleanup rsc_SAPHanaController_HN1_HDB03
+    sudo crm configure property priority-fencing-delay=30
     sudo crm configure property maintenance-mode=false
     sudo crm configure rsc_defaults resource-stickiness=1000
     sudo crm configure rsc_defaults migration-threshold=5000
@@ -408,9 +406,9 @@ Follow the steps in [Setting up Pacemaker on Red Hat Enterprise Linux in Azure](
     # rsc_st_azure (stonith:fence_azure_arm): Started hn1-db-1
     # Clone Set: cln_SAPHanaTopology_HN1_HDB03 [rsc_SAPHanaTopology_HN1_HDB03]
     # Started: [ hn1-db-0 hn1-db-1 ]
-    # Master/Slave Set: msl_SAPHana_HN1_HDB03 [rsc_SAPHana_HN1_HDB03]
-    # Masters: [ hn1-db-0 ]
-    # Slaves: [ hn1-db-1 ]
+    # Promotable Set: msl_SAPHanaController_HN1_HDB03 [rsc_SAPHanaController_HN1_HDB03]
+    # Promoted: [ hn1-db-0 ]
+    # Unpromoted: [ hn1-db-1 ]
     # Resource Group: g_ip_HN1_HDB03
     # rsc_ip_HN1_HDB03 (ocf::heartbeat:IPaddr2): Started hn1-db-0
     # rsc_nc_HN1_HDB03 (ocf::heartbeat:anything): Started hn1-db-0
@@ -434,17 +432,16 @@ For more conceptual details about HANA HSR within one region and across differen
 1. Test the migration. Before you start the test, make sure that Pacemaker doesn't have any failed action (via crm\_mon -r), there are no unexpected location constraints (for example leftovers of a migration test) and that HANA is sync state, for example with 'SAPHanaSR-showAttr':
 
    ```bash
-    aspx-csharp
     SAPHanaSR-showAttr
     ```
 
-     - You can migrate the SAP HANA master node by executing the following command:
+     - You can migrate the SAP HANA primary node by executing the following command:
 
    ```bash
-    crm resource migrate msl_SAPHana_HN1_HDB03 hn1-db-1
+    crm resource migrate msl_SAPHanaController_HN1_HDB03 hn1-db-1
     ```
 
-     - If you set AUTOMATED\_REGISTER="false", this sequence of commands should migrate the SAP HANA master node and the group that contains the virtual IP address to hn1-db-1. Once the migration is done, the crm\_mon -r output looks like this:
+     - If you set AUTOMATED\_REGISTER="false", this sequence of commands should migrate the SAP HANA primary node and the group that contains the virtual IP address to hn1-db-1. Once the migration is done, the crm\_mon -r output looks like this:
 
    ```bash
     Online: [ hn1-db-0 hn1-db-1 ]
@@ -457,9 +454,9 @@ For more conceptual details about HANA HSR within one region and across differen
     
     Started: [ hn1-db-0 hn1-db-1 ]
     
-    Master/Slave Set: msl_SAPHana_HN1_HDB03 [rsc_SAPHana_HN1_HDB03]
+    Promotable Set: msl_SAPHanaController_HN1_HDB03 [rsc_SAPHanaController_HN1_HDB03]
     
-    Masters: [ hn1-db-1 ]
+    Promoted: [ hn1-db-1 ]
     
     Stopped: [ hn1-db-0 ]
     
@@ -472,7 +469,7 @@ For more conceptual details about HANA HSR within one region and across differen
     Failed Actions:
     
     
-    * rsc_SAPHana_HN1_HDB03_start_0 on hn1-db-0 'not running' (7): call=84, status=complete, exitreason='none',
+    * rsc_SAPHanaController_HN1_HDB03_start_0 on hn1-db-0 'not running' (7): call=84, status=complete, exitreason='none',
     
     last-rc-change='Mon Aug 13 11:31:37 2018', queued=0ms, exec=2095ms
     ```
@@ -496,13 +493,13 @@ For more conceptual details about HANA HSR within one region and across differen
     
     exit
     
-    hn1-db-0:~ # crm resource unmigrate msl_SAPHana_HN1_HDB03
+    hn1-db-0:~ # crm resource unmigrate msl_SAPHanaController_HN1_HDB03
     ```
 
      - You also need to clean up the state of the secondary node resource:
 
    ```bash
-    hn1-db-0:~ # crm resource cleanup msl_SAPHana_HN1_HDB03 hn1-
+    hn1-db-0:~ # crm resource cleanup msl_SAPHanaController_HN1_HDB03 hn1-
     
     db-0
     ```
@@ -521,11 +518,11 @@ For more conceptual details about HANA HSR within one region and across differen
     
     Started: [ hn1-db-0 hn1-db-1 ]
     
-    Master/Slave Set: msl_SAPHana_HN1_HDB03 [rsc_SAPHana_HN1_HDB03]
+    Promotable Set: msl_SAPHanaController_HN1_HDB03 [rsc_SAPHanaController_HN1_HDB03]
     
-    Masters: [ hn1-db-1 ]
+    Promoted: [ hn1-db-1 ]
     
-    Slaves: [ hn1-db-0 ]
+    Unpromoted: [ hn1-db-0 ]
     
     Resource Group: g_ip_HN1_HDB03
     
@@ -558,7 +555,7 @@ For more conceptual details about HANA HSR within one region and across differen
     
     exit
     
-    crm resource cleanup msl_SAPHana_HN1_HDB03 hn1-db-0
+    crm resource cleanup msl_SAPHanaController_HN1_HDB03 hn1-db-0
     ```
 
 3. Test SBD fencing
@@ -600,7 +597,7 @@ For more conceptual details about HANA HSR within one region and across differen
     >
     > When configuring a fencing device, it's recommended to configure [`pcmk_delay_max`](https://www.suse.com/support/kb/doc/?id=000019110) property. So, in the event of split-brain scenario, the cluster introduces a random delay up to the `pcmk_delay_max` value, to the fencing action on each node. The node with the shortest delay will be selected for fencing.
     >
-    > Additionally, to ensure that the node running the HANA master takes priority and wins the fence race in a split brain scenario, it's recommended to set  [`priority-fencing-delay`](https://documentation.suse.com/sle-ha/15-SP3/single-html/SLE-HA-administration/#pro-ha-storage-protect-fencing) property in the cluster configuration. By enabling priority-fencing-delay property, the cluster can introduce an additional delay in the fencing action specifically on the node hosting HANA master resource, allowing the node to win the fence race.
+    > Additionally, to ensure that the node running the HANA primary takes priority and wins the fence race in a split brain scenario, it's recommended to set  [`priority-fencing-delay`](https://documentation.suse.com/sle-ha/15-SP3/single-html/SLE-HA-administration/#pro-ha-storage-protect-fencing) property in the cluster configuration. By enabling priority-fencing-delay property, the cluster can introduce an additional delay in the fencing action specifically on the node hosting HANA primary resource, allowing the node to win the fence race.
     
      After the failover, you can start the service again. If you set AUTOMATED\_REGISTER="false", the SAP HANA resource on the hn1-db-0 node fails to start as secondary. In this case, configure the HANA instance as secondary by executing this command:
     
@@ -619,7 +616,7 @@ For more conceptual details about HANA HSR within one region and across differen
     
     exit
     
-    crm resource cleanup msl_SAPHana_HN1_HDB03 hn1-db-0
+    crm resource cleanup msl_SAPHanaController_HN1_HDB03 hn1-db-0
     ```
 
 ## SUSE tests

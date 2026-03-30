@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=8576cbbe-fdeb-4eeb-9271-1d2c97293b44]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=01fc2e04-540b-4f2a-a8d5-ddadd911cdfa]
 
 ::: zone-end
 
@@ -14,4 +14,3 @@ However, there's no wizardry involved in generative AI – just the application 
 
 > [!NOTE]
 > We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
-

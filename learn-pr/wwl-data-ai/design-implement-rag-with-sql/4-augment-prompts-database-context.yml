@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-rag-with-sql.augment-prompts-database-context
+title: Augment prompts with database context
+metadata:
+  title: Augment prompts with database context
+  description: Learn how to construct effective prompts that combine instructions with retrieved database context.
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/04-augment-prompts-database-context.md)]

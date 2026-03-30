@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-models-embeddings-with-sql.understand-evaluate-models-sql-database-workloads
+title: Understand and evaluate models for SQL database workloads
+metadata:
+  title: Understand and evaluate models for SQL database workloads
+  description: Evaluate AI models for Azure SQL Database based on capabilities, performance, and deployment needs.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/02/2026
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/02-understand-evaluate-models-sql-database-workloads.md)]

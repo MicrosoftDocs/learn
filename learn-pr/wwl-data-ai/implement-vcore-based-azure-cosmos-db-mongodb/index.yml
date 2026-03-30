@@ -8,7 +8,7 @@ metadata:
   ms.author: calopez
   ms.topic: module
   ms.service: azure-cosmos-db
-  ms.subservice: mongodb-vcore
+  ms.subservice: mongodb
   ai-usage: human-only
 title: Implement vCore-based Azure Cosmos DB for MongoDB
 summary: Explore vCore-based Azure Cosmos DB for MongoDB, covering everything from basic concepts to initial setup. Understand the cost and scalability aspects, and how this service integrates with Azure for application development.
@@ -33,4 +33,4 @@ units:
 - learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.knowledge-check
 - learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.summary
 badge:
-  uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.badge
+  uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.badge

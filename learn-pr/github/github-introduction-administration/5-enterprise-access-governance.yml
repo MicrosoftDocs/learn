@@ -5,8 +5,8 @@ metadata:
   title: Managing enterprise access, permissions, and governance
   description: Learn how to structure organizations, manage permissions, enforce policies, and automate access control at scale using GitHub Enterprise.
   ms.date: 04/15/2025
-  author: rmcmurray
-  ms.author: robmcm
+  author: lucie-docs
+  ms.author: aastewar
   ms.topic: unit
 durationInMinutes: 9
 content: |

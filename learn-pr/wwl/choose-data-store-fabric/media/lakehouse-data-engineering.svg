@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Segoe UI, sans-serif" font-size="13">
+  <title>Lakehouse Data Engineering Architecture</title>
+  <desc>Architecture showing data sources flowing into lakehouse with raw files zone, Spark notebook transformations, and curated Delta tables.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FAFAFA" rx="4"/>
+
+  <!-- === LEFT: Data Sources === -->
+  <text x="70" y="30" text-anchor="middle" font-size="12" font-weight="600" fill="#444">DATA SOURCES</text>
+
+  <!-- CSV Files -->
+  <rect x="16" y="54" width="108" height="40" rx="8" fill="#E8E8E8" stroke="#999" stroke-width="1"/>
+  <text x="70" y="79" text-anchor="middle" fill="#333" font-size="12">CSV Files</text>
+
+  <!-- JSON APIs -->
+  <rect x="16" y="114" width="108" height="40" rx="8" fill="#E8E8E8" stroke="#999" stroke-width="1"/>
+  <text x="70" y="139" text-anchor="middle" fill="#333" font-size="12">JSON APIs</text>
+
+  <!-- Parquet Files -->
+  <rect x="16" y="174" width="108" height="40" rx="8" fill="#E8E8E8" stroke="#999" stroke-width="1"/>
+  <text x="70" y="199" text-anchor="middle" fill="#333" font-size="12">Parquet Files</text>
+
+  <!-- Mirrored SQL DB -->
+  <rect x="16" y="234" width="108" height="40" rx="8" fill="#E8E8E8" stroke="#999" stroke-width="1"/>
+  <text x="70" y="259" text-anchor="middle" fill="#333" font-size="12">Mirrored SQL DB</text>
+
+  <!-- Arrows: sources → lakehouse (horizontal) -->
+  <line x1="124" y1="74" x2="239" y2="74" stroke="#555" stroke-width="1.5"/>
+  <polyline points="233,69 240,74 233,79" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="124" y1="134" x2="239" y2="134" stroke="#555" stroke-width="1.5"/>
+  <polyline points="233,129 240,134 233,139" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="124" y1="194" x2="239" y2="194" stroke="#555" stroke-width="1.5"/>
+  <polyline points="233,189 240,194 233,199" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="124" y1="254" x2="239" y2="254" stroke="#555" stroke-width="1.5"/>
+  <polyline points="233,249 240,254 233,259" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- === CENTER: Lakehouse === -->
+  <text x="375" y="30" text-anchor="middle" font-size="12" font-weight="600" fill="#444">LAKEHOUSE</text>
+
+  <!-- Outer lakehouse container -->
+  <rect x="245" y="44" width="260" height="230" rx="12" fill="#E0F0F0" stroke="#008080" stroke-width="2"/>
+
+  <!-- Band 1: Files Section (Raw) -->
+  <rect x="257" y="56" width="236" height="56" rx="8" fill="#B2DFDB"/>
+  <text x="375" y="79" text-anchor="middle" fill="#004D40" font-size="12" font-weight="600">Files Section</text>
+  <text x="375" y="99" text-anchor="middle" fill="#00796B" font-size="11">(Raw Data)</text>
+
+  <!-- Band 2: Spark Notebooks (Transform) -->
+  <rect x="257" y="124" width="236" height="56" rx="8" fill="#4DB6AC"/>
+  <text x="375" y="148" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Spark Notebooks</text>
+  <text x="375" y="166" text-anchor="middle" fill="#E0F2F1" font-size="11">(Transform)</text>
+
+  <!-- Band 3: Delta Tables (Curated) -->
+  <rect x="257" y="192" width="236" height="56" rx="8" fill="#00796B"/>
+  <text x="375" y="216" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Delta Tables</text>
+  <text x="375" y="234" text-anchor="middle" fill="#B2DFDB" font-size="11">(Curated)</text>
+
+  <!-- Arrow: Delta Tables → SQL Analytics Endpoint -->
+  <line x1="505" y1="217" x2="550" y2="217" stroke="#555" stroke-width="1.5"/>
+  <polyline points="544,212 551,217 544,222" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- === RIGHT: SQL Analytics Endpoint === -->
+  <rect x="556" y="192" width="200" height="50" rx="10" fill="#0078D4"/>
+  <text x="656" y="214" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">SQL Analytics Endpoint</text>
+  <text x="656" y="230" text-anchor="middle" fill="#DCEEFB" font-size="10">Read-only SQL access</text>
+
+  <!-- Arrow: SQL Endpoint → Power BI -->
+  <line x1="656" y1="248" x2="656" y2="292" stroke="#555" stroke-width="1.5"/>
+  <polyline points="651,286 656,293 661,286" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Power BI (Direct Lake) -->
+  <rect x="556" y="298" width="200" height="50" rx="10" fill="#F2C811" stroke="#D4A800" stroke-width="1"/>
+  <text x="656" y="320" text-anchor="middle" fill="#333" font-size="12" font-weight="600">Power BI</text>
+  <text x="656" y="336" text-anchor="middle" fill="#555" font-size="11">(Direct Lake)</text>
+
+  <!-- Flow label -->
+  <text x="400" y="380" text-anchor="middle" fill="#888" font-size="11" font-style="italic">DataOps process: Sources → Ingest → Transform → Curate → Serve</text>
+</svg>

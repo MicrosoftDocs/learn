@@ -32,6 +32,9 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 
 [Azure private endpoint](/azure/private-link/private-endpoint-overview) is the key technology behind private link. Private endpoint is a network interface that enables a private and secure connection between your virtual network and an Azure service. In other words, private endpoint is the network interface that replaces the resource's public endpoint.
 
+
+
+
 Private Link provides secure access to Azure services. Private Link achieves that security by replacing a resource's public endpoint with a private network interface. Private Endpoint uses the private IP address for services into the virtual network.
 
 :::image type="content" source="../media/private-link-71e02d03.png" alt-text="Diagram showing private endpoint and private link zone.":::
@@ -42,3 +45,7 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 Private Endpoints grant network access to specific resources behind a given service providing granular segmentation. Traffic can reach the service resource from on premises without using public endpoints.
 
 A service endpoint remains a publicly routable IP address. A private endpoint is a private IP in the address space of the virtual network where the private endpoint is configured.
+
+
+> [!NOTE]
+> When public internet access is required for PaaS services, [Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) provides a logical security boundary with controlled inbound and outbound access rules. Network Security Perimeter is generally available in all Azure public regions and complements Private Link.

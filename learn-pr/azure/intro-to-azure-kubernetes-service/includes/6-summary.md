@@ -8,6 +8,6 @@ We also learned how AKS makes use of familiar concepts such as:
 
 You were looking for a container orchestration platform to quickly deploy your fleet management solution into new customer regions. AKS allows you to manage your hosted Kubernetes environment and makes it simple to develop, deploy, and manage containerized applications in Azure.
 
-You don't need to manage any of the clusters infrastructures, and you only pay for what you use. It streamlines the installation process and takes care of most of the underlying cluster-management tasks.
+You don't need to manage the cluster infrastructure, and you only pay for what you use. It streamlines the installation process and takes care of most of the underlying cluster-management tasks.
 
 Finally, AKS is part of Azure, and you can integrate it with other Azure services to extend your product or exchange data with other services.

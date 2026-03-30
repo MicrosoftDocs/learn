@@ -1,4 +1,4 @@
-You can now use Microsoft Intune to manage Windows 10 or Windows 11 Enterprise multi-session remote desktops in the Microsoft Endpoint Manager admin center just as you can manage a shared Windows 10 or Windows 11 client device. When managing such virtual machines (VMs), you'll be able to use both device-based and user configuration.
+You can now use Microsoft Intune to manage Windows 10 or Windows 11 Enterprise multi-session remote desktops in the Microsoft Intune admin center just as you can manage a shared Windows 10 or Windows 11 client device. When managing such virtual machines (VMs), you'll be able to use both device-based and user configuration.
 
 Windows 10 or Windows 11 Enterprise multi-session is a Remote Desktop Session Host exclusive to Azure Virtual Desktop on Azure.
 
@@ -38,7 +38,7 @@ Windows 10 or Windows 11 Enterprise multi-session VMs are treated as a separate 
 
 ## Create the configuration profile
 
-To configure configuration policies for Windows 10 or Windows 11 Enterprise multi-session VMs, you'll need to use the [Settings catalog](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/configuration/settings-catalog.md) in the Microsoft Endpoint Manager admin center.
+To configure configuration policies for Windows 10 or Windows 11 Enterprise multi-session VMs, you'll need to use the [Settings catalog](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/configuration/settings-catalog.md) in the Microsoft Intune admin center.
 
 The existing device configuration profile templates aren't supported for Windows 10 or Windows 11 Enterprise multi-session VMs, except for the following templates:
 
@@ -51,7 +51,7 @@ Microsoft Intune won't deliver unsupported templates to multi-session devices, a
 
 To configure policies
 
-1.  Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Devices,** select **Windows**, select **Configuration profiles**, and select **Create Profile**.
+1.  Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and choose **Devices,** select **Windows**, select **Configuration profiles**, and select **Create Profile**.
 2.  For **Platform**, select **Windows 10 and later**.
 3.  For **Profile type**, select **Settings catalog**, or when deploy settings by using a Template, select **Templates** and then the name of the supported Template.
 4.  Select **Create**.

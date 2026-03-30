@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-database-performance.preserve-data-integrity-isolation-levels
+title: Preserve data integrity with transaction isolation levels and concurrency controls
+metadata:
+  title: Preserve data integrity with transaction isolation levels and concurrency controls
+  description: Choose transaction isolation levels and concurrency controls that balance data consistency with throughput in Azure SQL Database.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/07/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/03-preserve-data-integrity-isolation-levels.md)]

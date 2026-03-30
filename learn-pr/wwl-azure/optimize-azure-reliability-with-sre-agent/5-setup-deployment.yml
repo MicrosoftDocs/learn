@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.setup-deployment
+title: Setup and deployment requirements
+metadata:
+  title: Setup and deployment requirements
+  description: "Learn the prerequisites, deployment steps, repository connection, and identity configuration for Azure SRE Agent."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-setup-deployment.md)]

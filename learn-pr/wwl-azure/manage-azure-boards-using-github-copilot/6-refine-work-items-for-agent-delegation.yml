@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.refine-work-items-for-agent-delegation
+title: Refine work items for AI-assisted delegation
+metadata:
+  title: Refine work items for AI-assisted delegation
+  description: "Refine work items for AI-assisted delegation"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-refine-work-items-for-agent-delegation.md)]

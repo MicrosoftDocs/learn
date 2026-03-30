@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: graememalcolm
-  ms.author: gmalc
-  ms.date: 05/16/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -21,7 +21,7 @@ quiz:
       explanation: "Correct. An indexer is run to extract data and populate an index."
     - content: "Projection"
       isCorrect: false
-      explanation: "Incorrect.A projection is used to store extracted data in a knowledge store."
+      explanation: "Incorrect. A projection is used to store extracted data in a knowledge store."
     - content: "Query"
       isCorrect: false
       explanation: "Incorrect. A query is used to search an index."
@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Azure Functions can be used to implement custom skills, but isn't required for built-in skills."
     - content: "Foundry Tools"
       isCorrect: true
-      explanation: "Correct. A Foundry Tools resource is required to support built-in skills."
+      explanation: "Correct. A Foundry resource is required to support built-in skills."
     - content: "Azure Cosmos DB"
       isCorrect: false
       explanation: "Incorrect. Azure Cosmos DB could be a data source fo Azure AI Search, but it isn't required for built-in skills."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-video-with-foundry.generate-video-from-prompt
+title: Generate video from a prompt
+metadata:
+  title: Generate video from a prompt
+  description: "Generate videos from text prompts with Sora 2 in Microsoft Foundry."
+  ms.date: 03/02/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-generate-video-from-prompt.md)]
+

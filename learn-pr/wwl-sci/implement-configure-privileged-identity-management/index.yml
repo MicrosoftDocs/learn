@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-configure-privileged-identity-management
+metadata:
+  title: Implement and Configure Privileged Identity Management (PIM)
+  description: "Implement Just-in-Time privileged access using Privileged Identity Management (PIM) to reduce standing privilege across Microsoft Entra roles, Azure resources, and group-based access used by AI workloads and applications."
+  ms.date: 03/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: entra-id  
+  ai-usage: ai-assisted
+title: Implement and configure Privileged Identity Management (PIM)
+summary: Implement Just-in-Time privileged access using Privileged Identity Management (PIM) to reduce standing privilege across Microsoft Entra roles, Azure resources, and group-based access for cloud and AI environments.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain why privileged identity management and just-in-time access are critical to a zero-trust security strategy
+  - Describe the core capabilities and assignment types in Privileged Identity Management (PIM)
+  - Implement just-in-time access for Microsoft Entra roles using PIM
+  - Implement just-in-time access for Azure resource roles using PIM
+  - Scale just-in-time group access using PIM for Groups
+  - Apply just-in-time access patterns to AI workloads, agents, and applications
+  - Apply design principles and best practices for just-in-time privileged access
+prerequisites: |
+  - Familiarity with Microsoft Entra ID concepts, including users, groups, and directory roles
+  - Understanding of Azure role-based access control (RBAC), including role assignments and the Azure scope hierarchy (management group, subscription, resource group, resource)
+  - Basic experience navigating the Azure portal and the Microsoft Entra admin center
+  - Familiarity with Zero Trust security principles, including least privilege and assume breach
+  - Awareness of Microsoft Entra ID P2 or Microsoft Entra ID Governance licensing requirements
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+- advanced
+roles:
+- security-engineer
+products:
+- entra
+- entra-id
+subjects:
+- identity-access
+- security
+units:
+- learn.wwl.implement-configure-privileged-identity-management.introduction
+- learn.wwl.implement-configure-privileged-identity-management.explain-privileged-just-in-time-access
+- learn.wwl.implement-configure-privileged-identity-management.explore-privileged-identity-features
+- learn.wwl.implement-configure-privileged-identity-management.implement-just-in-time-entra-roles
+- learn.wwl.implement-configure-privileged-identity-management.implement-just-in-time-azure-roles-resources
+- learn.wwl.implement-configure-privileged-identity-management.explore-privileged-access-groups
+- learn.wwl.implement-configure-privileged-identity-management.apply-privilege-workloads-agents-apps
+- learn.wwl.implement-configure-privileged-identity-management.review-design-patterns
+- learn.wwl.implement-configure-privileged-identity-management.knowledge-check
+- learn.wwl.implement-configure-privileged-identity-management.summary
+badge:
+  uid: learn.wwl.implement-configure-privileged-identity-management.badge

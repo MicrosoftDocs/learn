@@ -6,7 +6,7 @@ A defense-in-depth strategy uses a series of mechanisms to slow the advance of a
 
 You can visualize defense-in-depth as a set of layers, with the data to be secured at the center and all the other layers functioning to protect that central data layer.
 
-:::image type="content" source="../media/defense-depth-486afc12-71a03f12.png" alt-text="A diagram showing the defense in depth layers. From the center: data, application, compute, network, perimeter, identity & access, physical security.":::
+:::image type="content" source="../media/defense-depth-option-layer-stack.png" alt-text="Diagram showing seven defense-in-depth layers from Physical Security (outermost) to Data (innermost), each with its role and key actions listed.":::
 
 
 Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. This approach removes reliance on any single layer of protection. It slows down an attack and provides alert information that security teams can act upon, either automatically or manually.
@@ -19,7 +19,7 @@ Here's a brief overview of the role of each layer:
  -  The network layer limits communication between resources through segmentation and access controls.
  -  The compute layer secures access to virtual machines.
  -  The application layer helps ensure that applications are secure and free of security vulnerabilities.
- -  The data layer controls access to business and customer data that you need to protect.
+ -  The data layer controls access to operational and customer data that you need to protect.
 
 These layers provide a guideline for you to help make security configuration decisions in all of the layers of your applications.
 
@@ -77,12 +77,14 @@ Integrating security into the application development lifecycle helps reduce the
 At this layer, it's important to:
 
  -  Ensure that applications are secure and free of vulnerabilities.
- -  Store sensitive application secrets in a secure storage medium.
+ -  Store sensitive application secrets in a secure storage medium, such as Azure Key Vault.
  -  Make security a design requirement for all application development.
 
 ### Data
 
 Those who store and control access to data are responsible for ensuring that it's properly secured. Often, regulatory requirements dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
+
+At this layer, it's also important to protect data with encryption at rest and encryption in transit. Azure services provide encryption capabilities, and Azure Key Vault can help secure and manage the keys and secrets used by your applications.
 
 In almost all cases, attackers are after data:
 
@@ -90,3 +92,4 @@ In almost all cases, attackers are after data:
  -  Stored on disk inside virtual machines.
  -  Stored in software as a service (SaaS) applications, such as Office 365.
  -  Managed through cloud storage.
+

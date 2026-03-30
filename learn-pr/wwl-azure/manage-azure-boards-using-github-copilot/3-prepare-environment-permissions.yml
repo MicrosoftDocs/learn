@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.prepare-environment-permissions
+title: Prepare environments, permissions, and prerequisites
+metadata:
+  title: Prepare environments, permissions, and prerequisites
+  description: "Prepare environments, permissions, and prerequisites"
+  ms.date: 02/25/2026
+  author: wwlpublish 
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-prepare-environment-permissions.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-rag-with-sql.prepare-retrieval-context-augmentation
+title: Prepare retrieval context for augmentation
+metadata:
+  title: Prepare retrieval context for augmentation
+  description: Learn how to shape SQL query results into JSON context suitable for LLM processing.
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-prepare-retrieval-context-augmentation.md)]

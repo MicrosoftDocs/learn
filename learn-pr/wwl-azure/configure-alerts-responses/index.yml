@@ -17,7 +17,7 @@ abstract: |
   - Configure alert processing rules to modify triggered alerts
   - Describe how Change Analysis provides insight into changes made to Azure resources
 prerequisites: ''
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-monitor-module.svg
 levels:
 - intermediate
 roles:
@@ -34,6 +34,7 @@ units:
 - learn.wwl.configure-alerts-responses.summary
 badge:
   uid: learn.wwl.configure-alerts-responses.badge
+
 
 
 

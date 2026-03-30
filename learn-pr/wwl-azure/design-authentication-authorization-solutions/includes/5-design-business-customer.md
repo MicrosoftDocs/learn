@@ -48,9 +48,5 @@ Now that you have some basic knowledge about the Microsoft Entra identity soluti
 | **Work with identity providers** | External users collaborate by using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook. | Consumer users with local app accounts (any email address or user name), various supported social identities, and users with corporate and government-issued identities access the apps. |
 | **Customize UI and support branding** | You expect to use customized UI branding for the host or inviting organization (Tailwind Traders). | You want the branding to be fully customizable per app or organization and not specific to Tailwind Traders. |
 
-## WoodGrove Groceries tutorial
-
-We prepared a tutorial to help you in the decision making process for choosing a Microsoft Entra identity solution. [WoodGrove Groceries](https://woodgrovedemo.com/?azure-portal=true) is a live web app created by Microsoft to demonstrate several Azure AD B2C features. 
-
-> [!IMPORTANT]
-> After you complete the WoodGrove Groceries tutorial, take a moment to decide if Azure B2B or Azure B2C would be required by your own organization. Write down a few thoughts on how these options would be used.
+> [!TIP]
+> Take a moment to decide if business-to-business or business-to-customer solutions are needed by your organization. Write down a few thoughts on how these options would be used.

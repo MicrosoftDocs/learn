@@ -34,7 +34,7 @@ products:
 - azure-ai-foundry-sdk
 - azure-openai
 - azure-sdks
-- azure-ai-foundry
+- microsoft-foundry
 subjects:
 - security
 - cloud-security

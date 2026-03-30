@@ -12,7 +12,7 @@ prerequisites: |
   None
 summary: |
   Learn how to protect your Azure compute resources, storage accounts, and databases. You implement encryption, configure access controls, and apply security best practices to safeguard your data.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/azure-learning-path.svg
 levels:
 - intermediate
 roles:

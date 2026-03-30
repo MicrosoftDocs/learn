@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-microsoft-entra-agent-id
+title: Describe Microsoft Entra Agent ID
+metadata:
+  title: Describe Microsoft Entra Agent ID
+  description: "Describe Microsoft Entra Agent ID"
+  ms.date: 03/23/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3a-describe-microsoft-entra-agent-id.md)]

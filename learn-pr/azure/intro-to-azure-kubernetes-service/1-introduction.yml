@@ -5,7 +5,7 @@ title: Introduction
 metadata:
   title: Introduction to Azure Kubernetes Service
   description: Introduction
-  ms.date: 11/26/2024
+  ms.date: 03/23/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-

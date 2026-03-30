@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-models-embeddings-with-sql.generate-maintain-embeddings-sql-database-workloads
+title: Generate and maintain embeddings for SQL database workloads
+metadata:
+  title: Generate and maintain embeddings for SQL database workloads
+  description: Generate embeddings with built-in SQL AI functions and maintain alignment with changing source data.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 02/02/2026
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/05-generate-maintain-embeddings-sql-database-workloads.md)]

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" font-family="Segoe UI, sans-serif">
+  <!-- Center: Fact_Sales -->
+  <rect x="290" y="150" width="200" height="80" rx="8" fill="#0078D4"/>
+  <text x="390" y="198" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">Fact_Sales</text>
+
+  <!-- === PRODUCT branch (top left, normalized) === -->
+  <rect x="190" y="20" width="150" height="55" rx="8" fill="#0099BC"/>
+  <text x="265" y="53" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Dim_Product</text>
+
+  <rect x="20" y="20" width="150" height="55" rx="8" fill="#40B4CC"/>
+  <text x="95" y="48" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">Dim_Subcategory</text>
+
+  <rect x="20" y="95" width="150" height="55" rx="8" fill="#7ECBDB"/>
+  <text x="95" y="128" text-anchor="middle" fill="#1a1a1a" font-size="12" font-weight="bold">Dim_Category</text>
+
+  <!-- Line: Dim_Product → Fact_Sales -->
+  <line x1="310" y1="75" x2="350" y2="150" stroke="#555555" stroke-width="1.5"/>
+  <!-- Line: Dim_Subcategory → Dim_Product -->
+  <line x1="170" y1="47" x2="190" y2="47" stroke="#555555" stroke-width="1.5"/>
+  <!-- Line: Dim_Category → Dim_Subcategory -->
+  <line x1="95" y1="95" x2="95" y2="75" stroke="#555555" stroke-width="1.5"/>
+
+  <!-- === CUSTOMER branch (top right, normalized) === -->
+  <rect x="510" y="35" width="150" height="55" rx="8" fill="#0099BC"/>
+  <text x="585" y="68" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Dim_Customer</text>
+
+  <rect x="680" y="35" width="90" height="55" rx="8" fill="#40B4CC"/>
+  <text x="725" y="68" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">Dim_Geo</text>
+
+  <!-- Line: Dim_Customer → Fact_Sales -->
+  <line x1="540" y1="90" x2="455" y2="150" stroke="#555555" stroke-width="1.5"/>
+  <!-- Line: Dim_Geo → Dim_Customer -->
+  <line x1="680" y1="62" x2="660" y2="62" stroke="#555555" stroke-width="1.5"/>
+
+  <!-- === Dim_Date (bottom left, flat) === -->
+  <rect x="190" y="320" width="150" height="55" rx="8" fill="#0099BC"/>
+  <text x="265" y="353" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Dim_Date</text>
+
+  <line x1="310" y1="320" x2="350" y2="230" stroke="#555555" stroke-width="1.5"/>
+
+  <!-- === Dim_Store (bottom right, flat) === -->
+  <rect x="440" y="320" width="150" height="55" rx="8" fill="#0099BC"/>
+  <text x="515" y="353" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Dim_Store</text>
+
+  <line x1="475" y1="320" x2="435" y2="230" stroke="#555555" stroke-width="1.5"/>
+</svg>

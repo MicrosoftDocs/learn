@@ -178,7 +178,7 @@ Identify potential security threats through monitoring and alerting:
 
 ### Transport and data encryption for Cosmos DB
 
-- **Enforce TLS 1.3**: Secure data in transit with the latest cryptographic protocols, ensuring stronger encryption and improved performance. For more information, see [Minimum TLS enforcement](/azure/cosmos-db/self-serve-minimum-tls-enforcement).
+- **Use TLS 1.3 where supported**: Cosmos DB supports TLS 1.3 and recommends it for stronger encryption and improved performance. The minimum enforceable version at the account level is currently TLS 1.2. For more information, see [Minimum TLS enforcement](/azure/cosmos-db/self-serve-minimum-tls-enforcement).
 - **Encrypt data at rest**: Data stored in Azure Cosmos DB is automatically and seamlessly encrypted with keys managed by Microsoft (service-managed keys). For greater control, use [customer-managed keys](/azure/cosmos-db/how-to-setup-customer-managed-keys) stored in Azure Key Vault.
 - **Use Always Encrypted**: Ensure sensitive data is encrypted on the client side before being sent to Azure Cosmos DB, providing an extra layer of security.
 

@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Troubleshoot Active Directory
   description: "Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues."
-  ms.date: 01/23/2026
+  ms.date: 03/11/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module

@@ -2,11 +2,11 @@ Refactoring code is the process of restructuring existing code without changing 
 
 ## GitHub Copilot best practices
 
-GitHub Copilot is a powerful tool that can help you to refactor and improve your code. However, to get the best results, you should follow some best practices when using Copilot.
+GitHub Copilot is a powerful tool that can help you to refactor and improve your code. However, to get the best results, you should follow some best practices when using GitHub Copilot.
 
 ### Improve responses with better prompts
 
-You can enhance the quality of Copilot's responses by writing more effective prompts. A well-crafted prompt can help Copilot understand your requirements better and generate more relevant code suggestions. 
+You can enhance the quality of GitHub Copilot's responses by writing more effective prompts. A well-crafted prompt can help GitHub Copilot understand your requirements better and generate more relevant code suggestions.
 
 The following guidelines can help you to write better prompts:
 
@@ -24,7 +24,7 @@ The following guidelines can help you to write better prompts:
 
 - Break down complex tasks into simpler tasks.
 
-    Instead of asking Copilot to "Generate a meal planner app", break your prompts down into smaller tasks.
+    Instead of asking GitHub Copilot to "Generate a meal planner app", break your prompts down into smaller tasks.
 
     For example:
 
@@ -62,15 +62,15 @@ The following guidelines can help you to write better prompts:
 
 - Keep chat history relevant.
 
-    Copilot uses history of the conversation to provide context. Remove past questions and responses from the history if they're not relevant. Or, start a new session if you want to change the context.
+    GitHub Copilot uses the history of the conversation to provide context. Remove past questions and responses from the history if they're not relevant. Or, start a new session if you want to change the context.
 
 ### Provide the right context and tools
 
 Enrich your prompts with relevant context to get more accurate and relevant responses in chat. With the right tools, you can boost your developer productivity.
 
-- In agent mode, select the tools button to configure the tools you want to use or explicitly add them to your prompt.
+- In the Agent, select the tools button to configure the tools you want to use or explicitly add them to your prompt.
 
-- Use `#codebase` to let Copilot find the right files automatically by performing a code search.
+- Use `#codebase` to let GitHub Copilot find the right files automatically by performing a code search.
 
 - Use the `#fetch` tool to fetch content from a web page or use `#githubRepo` to perform a code search on a GitHub repository.
 
@@ -81,7 +81,7 @@ Enrich your prompts with relevant context to get more accurate and relevant resp
 - Add problems, test failures, or terminal output to your chat prompt for scenario-specific context.
 
 > [!NOTE]
-> When you use agent mode, Copilot autonomously finds the relevant files and context for you.
+> When you use the Agent, GitHub Copilot autonomously finds the relevant files and context for you.
 
 ## Common code refactoring scenarios
 
@@ -96,7 +96,7 @@ GitHub Copilot can help you to quickly refactor code in many ways. The following
 
 ### Use GitHub Copilot to optimize inefficient code
 
-Copilot can help you to optimize code. For example, you can optimize your code to make the code run more quickly.
+GitHub Copilot can help you to optimize code. For example, you can optimize your code to make the code run more quickly.
 
 Consider the following bash script:
 
@@ -154,7 +154,7 @@ console.log(`Total: ${totalSales}`);
 
 ### Use GitHub Copilot to make code more concise
 
-If code is unnecessarily verbose it can be difficult to read and maintain. Copilot can suggest a more concise version of selected code.
+If code is unnecessarily verbose it can be difficult to read and maintain. GitHub Copilot can suggest a more concise version of selected code.
 
 The following Python code outputs the area of a rectangle and a circle, but the code could be written more concisely:
 
@@ -198,7 +198,7 @@ print(f"Area of circle: {calculate_area_of_circle(circle_radius)}")
 
 Large methods or functions that perform multiple operations are likely to offer fewer opportunities for reuse than smaller, simpler functions that are focused on performing a particular operation. They may also be more difficult to understand and debug.
 
-Copilot can help you to split up complex blocks of code into smaller units that are more suitable for reuse.
+GitHub Copilot can help you to split up complex blocks of code into smaller units that are more suitable for reuse.
 
 The following Python code is a very simple example, but it shows the principle of splitting up a single function into two functions that perform particular operations.
 
@@ -224,7 +224,7 @@ price = "  1.50  "
 process_data(item, price)
 ```
 
-You can use Copilot to refactor the code to create functions for cleansing data, printing data, and processing data.
+You can use GitHub Copilot to refactor the code to create functions for cleansing data, printing data, and processing data.
 
 ```python
 import pandas as pd
@@ -307,7 +307,7 @@ function listRepos(o, p) {
 }
 ```
 
-If your coding standards require you to use the arrow notation for functions, and descriptive names for parameters, you can use Copilot to help you make these changes.
+If your coding standards require you to use the arrow notation for functions, and descriptive names for parameters, you can use GitHub Copilot to help you make these changes.
 
 ```javascript
 const listRepositories = (organization, perPage) => {
@@ -319,4 +319,4 @@ const listRepositories = (organization, perPage) => {
 
 ## Summary
 
-GitHub Copilot can help you to refactor code in various ways. You can use the Chat view or Inline Chat to ask Copilot to optimize inefficient code, clean up repeated code, make code more concise, split up complex units of code, rewrite conditional code for better readability, and reformat code to use a different structure.
+GitHub Copilot can help you to refactor code in various ways. You can use the Chat view or Inline Chat to ask GitHub Copilot to optimize inefficient code, clean up repeated code, make code more concise, split up complex units of code, rewrite conditional code for better readability, and reformat code to use a different structure.

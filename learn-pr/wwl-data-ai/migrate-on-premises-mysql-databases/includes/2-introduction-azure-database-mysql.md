@@ -58,36 +58,36 @@ Data-in Replication uses the native replication functionality of MySQL to replic
 #### Considerations for Data-in Replication
 
 Here are some factors to consider for Data-in Replication:
-* The master and replica servers must be the same version—and at least version 5.6.
-* The master and replica should use the InnoDB engine.
+* The source and replica servers must be the same version—and at least version 5.6.
+* The source and replica should use the InnoDB engine.
 * Every table must have a primary key.
 * The Azure Database for MySQL server must have a **General Purpose** or **Memory Optimized** pricing tier.
-* You should have the rights to create users and configure binary logging on the master server.
-* The **mysql system database** is not replicated. Accounts and permissions are not replicated from the master server to the replica, and should be created manually.
+* You should have the rights to create users and configure binary logging on the source server.
+* The **mysql system database** is not replicated. Accounts and permissions are not replicated from the source server to the replica, and should be created manually.
 
 #### Steps to configure Data-in Replication
 
 There's a number of steps to configure Data-in Replication:
 * Create an Azure Database for MySQL Server to be used as a host for the replica, and create any necessary user accounts and privileges.
-* Configure replication on the master server.
-* Dump and restore the master server.
+* Configure replication on the source server.
+* Dump and restore the source server.
 * Use Data-in Replication stored procedures to configure the target server.
 
 See [How to configure Azure Database for MySQL Data-in Replication](/azure/mysql/howto-data-in-replication) for more information.
 
 ### Read replicas
 
-Read replicas use native MySQL replication technology to create asynchronous replica instances of Azure Database for MySQL servers. The replica servers are read-only and there can be up to five replicas for each master. For each read replica, the monthly cost is billed based on the vCores and storage it uses.
+Read replicas use native MySQL replication technology to create asynchronous replica instances of Azure Database for MySQL servers. The replica servers are read-only and there can be up to five replicas for each source server. For each read replica, the monthly cost is billed based on the vCores and storage it uses.
 
 #### Uses for read replicas
 
 **Reporting servers**
 
-By creating a read-only replica of the master server, you direct all reporting, BI, and analytical workloads to the replica. This removes the workload from the master server and reduces conflicts while the master server runs its write-intensive workloads.
+By creating a read-only replica of the source server, you direct all reporting, BI, and analytical workloads to the replica. This removes the workload from the source server and reduces conflicts while the source server runs its write-intensive workloads.
 
 **Bringing data close to users**
 
-You create cross-region replicas to bring data close to users and improve their read speeds. Cross-region replicas can be in a universal replica region or the paired region of the master server. The available regions are listed when you create a replica server.
+You create cross-region replicas to bring data close to users and improve their read speeds. Cross-region replicas can be in a universal replica region or the paired region of the source server. The available regions are listed when you create a replica server.
 
 ![Image showing replica regions](../media/2-cross-region-replica.png)
 

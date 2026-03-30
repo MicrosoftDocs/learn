@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-testing-ai-powered-business-solutions.build-strategy-creating-test-cases-using-copilot
+title: "Build a strategy for creating test cases using Copilot"
+metadata:
+  title: "Build a Strategy for Creating Test Cases Using Copilot"
+  description: "Learn to build a scalable strategy for creating high-quality test cases using Copilot. Strengthen reliability, coverage, and consistency in AI solutions."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-build-strategy-creating-test-cases-using-copilot.md)]

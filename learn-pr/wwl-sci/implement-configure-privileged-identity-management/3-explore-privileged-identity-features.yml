@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.explore-privileged-identity-features
+title: Core capabilities of Privileged Identity Management (PIM)
+metadata:
+  title: Core Capabilities of Privileged Identity Management (PIM)
+  description: "Explore the core capabilities of PIM including eligible assignments, time-bound access, approval workflows, and audit history."
+  ms.date: 03/17/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-explore-privileged-identity-features.md)]

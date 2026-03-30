@@ -1,9 +1,9 @@
-Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
+Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or virtual machines (VM), or use a cloud-based solution such as Azure Kubernetes Service (AKS).
 
-Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. In this exercise, you learn how to configure and install a *MicroK8s* environment that's easy to set up and tear down. Then, you deploy a Kubernetes service and scale it out to multiple instances to host a website.
+Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. In this exercise, you learn how to configure and install a _MicroK8s_ environment that's easy to set up and tear down. Then, you deploy a Kubernetes service and scale it out to multiple instances to host a website.
 
 > [!NOTE]
-> This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
+> This exercise is optional and includes steps that show how to delete and uninstall the software and resources you use in the exercise.
 
 Keep in mind that there are other options, such as MiniKube and Kubernetes support in Docker, to do the same.
 

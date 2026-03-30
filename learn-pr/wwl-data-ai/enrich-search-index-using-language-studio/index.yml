@@ -30,7 +30,7 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-search
+- foundry-tools
 subjects:
 - artificial-intelligence
 units:

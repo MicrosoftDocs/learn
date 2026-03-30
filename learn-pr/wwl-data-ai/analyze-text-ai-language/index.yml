@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-ai-language
 metadata:
-  title: Analyze text with Azure Language
-  description: Analyze text with Azure Language
+  title: Analyze text with Azure Language in Foundry Tools
+  description: Use Azure Language in Foundry Tools to built text analysis solutions.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/28/2025
-  ms.service: azure-ai-language
+  ms.date: 03/10/2026
   ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
-title: Analyze text with Azure Language
-summary: The Azure Language service enables you to create intelligent apps and services that extract semantic information from text.
+title: Analyze text with Azure Language in Foundry Tools
+summary: Azure Language in Foundry Tools enables you to create intelligent apps and services that extract semantic information from text.
 abstract: |
-  In this module, you'll learn how to use the Azure Language service to:
+  In this module, you'll learn how to use Azure Language in Foundry Tools to:
   - Detect language from text
   - Analyze text sentiment
   - Extract key phrases, entities, and linked entities
@@ -24,26 +24,24 @@ prerequisites: |
   - Programming experience.
 iconUrl: /training/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- ai-services
-- azure-ai-foundry
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.analyze-text-ai-language.introduction
-- learn.wwl.analyze-text-ai-language.provision-resource
-- learn.wwl.analyze-text-ai-language.detect-language
-- learn.wwl.analyze-text-ai-language.extract-key-phrases
-- learn.wwl.analyze-text-ai-language.analyze-sentiment
-- learn.wwl.analyze-text-ai-language.extract-entitites
-- learn.wwl.analyze-text-ai-language.extract-linked-entitites
-- learn.wwl.analyze-text-ai-language.exercise
-- learn.wwl.analyze-text-ai-language.knowledge-check
-- learn.wwl.analyze-text-ai-language.summary
+  - learn.wwl.analyze-text-ai-language.introduction
+  - learn.wwl.analyze-text-ai-language.provision-resource
+  - learn.wwl.analyze-text-ai-language.detect-language
+  - learn.wwl.analyze-text-ai-language.extract-key-phrases
+  - learn.wwl.analyze-text-ai-language.analyze-sentiment
+  - learn.wwl.analyze-text-ai-language.extract-entitites
+  - learn.wwl.analyze-text-ai-language.extract-linked-entitites
+  - learn.wwl.analyze-text-ai-language.exercise
+  - learn.wwl.analyze-text-ai-language.knowledge-check
+  - learn.wwl.analyze-text-ai-language.summary
 badge:
   uid: learn.wwl.analyze-text-ai-language.badge
-

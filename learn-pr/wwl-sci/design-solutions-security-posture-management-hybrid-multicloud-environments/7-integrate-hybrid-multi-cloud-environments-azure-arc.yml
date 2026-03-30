@@ -4,10 +4,10 @@ title: Design a solution for integrating hybrid and multicloud environments by u
 metadata:
   title: Design a solution for integrating hybrid and multicloud environments by using Azure Arc
   description: "SC-100 preparatory unit on the topic: Design a solution for integrating hybrid and multicloud environments by using Azure Arc."
-  ms.date: 02/05/2026
+  ms.date: 03/12/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/7-integrate-hybrid-multi-cloud-environments-azure-arc.md)]

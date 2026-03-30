@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.develop-speech-apps
+title: Synthesize speech
+metadata:
+  title: Synthesize speech
+  description: "Use a generative AI model in Microsoft Foundry to synthesize speech."
+  ms.date: 03/11/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3b-develop-speech-app.md)]

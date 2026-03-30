@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.select-finetune-method
+title: Select the appropriate fine-tuning method
+metadata:
+  title: Select the appropriate fine-tuning method
+  description: Learn how to compare fine-tuning methods including supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and direct preference optimization (DPO), and select approaches based on quality requirements, data availability, and cost constraints.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-select-finetune-method.md)]
+

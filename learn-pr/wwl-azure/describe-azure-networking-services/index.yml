@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.describe-azure-networking-services
+metadata:
+  title: Describe Azure Networking Services
+  description: "Introduction to core Azure networking services, including virtual networks, VPN Gateway, ExpressRoute, and Azure DNS."
+  ms.date: 03/06/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: ai-generated
+title: Describe Azure networking services
+summary: This module introduces Azure networking capabilities for secure communication between Azure resources, on-premises environments, and internet-connected clients.
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Describe Azure virtual networking, including subnets and endpoints
+
+  -   Describe connectivity options with Azure VPN Gateway
+
+  -   Describe when to use Azure ExpressRoute
+
+  -   Describe Azure DNS capabilities
+
+  -   Describe basic network access controls for Azure resources
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-azure-compute-networking-services.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+- networking
+units:
+- learn.wwl.describe-azure-networking-services.introduction
+- learn.wwl.describe-azure-networking-services.virtual-network
+- learn.wwl.describe-azure-networking-services.virtual-private-networks
+- learn.wwl.describe-azure-networking-services.expressroute
+- learn.wwl.describe-azure-networking-services.domain-name-system
+- learn.wwl.describe-azure-networking-services.knowledge-check
+- learn.wwl.describe-azure-networking-services.summary
+badge:
+  uid: learn.wwl.describe-azure-networking-services.badge

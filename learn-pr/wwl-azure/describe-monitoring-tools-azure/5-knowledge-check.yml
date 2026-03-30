@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/19/2024
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit
@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect. Resource Health would let you know if any of your resources are down. Service health will let you know if resources are down in regions where you’re deployed, but won’t give you details on your specific resources."
     - content: "Resource Health"
       isCorrect: true
-      explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources."
+      explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources."

@@ -2,11 +2,12 @@ In this module, you learned how security architects specify security requirement
 
 You learned how to:
 
-- Specify security baselines for SaaS, PaaS, and IaaS services using the shared responsibility model.
-- Specify security requirements for IoT workloads including device identity, network segmentation, and monitoring.
-- Specify security requirements for web workloads covering authentication, network protection, and application security.
-- Specify security requirements for containers and container orchestration including cluster security, image integrity, and runtime protection.
-- Evaluate security controls for AI services using MCSB v2 AI-specific controls and the AI shared responsibility model.
+- Specify security baselines for SaaS, PaaS, and IaaS services
+- Specify security requirements for IoT workloads
+- Specify security requirements for web workloads
+- Specify security requirements for containers and container orchestration
+- Specify security requirements for AI workloads
+- Evaluate security for Microsoft Foundry workloads
 
 ## Learn more
 
@@ -40,7 +41,7 @@ Use these resources to deepen your understanding of the topics covered in this m
 ### AI services security
 
 - [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline)
-- [Azure AI Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline)
+- [Microsoft Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline)
 - [Azure AI Content Safety](/azure/ai-services/content-safety/overview)
 - [Threat protection for AI workloads](/azure/defender-for-cloud/ai-threat-protection)
 - [AI shared responsibility model](/azure/security/fundamentals/shared-responsibility-ai)

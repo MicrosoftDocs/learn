@@ -4,7 +4,7 @@ title: Troubleshoot Spark jobs and notebooks
 metadata:
   title: Troubleshoot Spark Jobs and Notebooks
   description: Learn how to troubleshoot and repair Apache Spark jobs and notebooks in Azure Databricks, including diagnosing performance issues, resolving resource bottlenecks, and restarting clusters.
-  ms.date: 12/07/2025
+  ms.date: 03/10/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

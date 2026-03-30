@@ -5,7 +5,7 @@ metadata:
   description: In this module, you'll learn about .NET web development with ASP.NET Core, including what it is and when to use it.
   ms.date: 11/01/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: module-intro-to-product # Please don't edit, used for our analytics
   ms.service: dotnet
 ###########################################################################

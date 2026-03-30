@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which scenario most strongly indicates the need for a custom model in Microsoft Foundry?"
+    choices:
+    - content: "Drafting standard email responses"
+      isCorrect: false
+      explanation: "Incorrect. Standard email responses do not require domain-specific language or reasoning."
+    - content: "Retrieving HR policy documents from SharePoint"
+      isCorrect: false
+      explanation: "Incorrect. Retrieving HR policy documents is a straightforward task that does not require a custom model."
+    - content: "Supporting domain-specific engineering calculations requiring high accuracy"
+      isCorrect: true
+      explanation: "Correct. Custom models in Microsoft Foundry are appropriate when domain-specific language and reasoning are required, such as in engineering, legal, healthcare, or finance. These scenarios demand high accuracy and specialized logic that standard models cannot provide."
+    - content: "Translating common business phrases"
+      isCorrect: false
+      explanation: "Incorrect. Translating common business phrases can be handled by standard models without requiring customization."
+  - content: "Which principle is most important when designing agents for Microsoft 365 Copilot?"
+    choices:
+    - content: "Adding as many capabilities as possible"
+      isCorrect: false
+      explanation: "Incorrect. Adding excessive capabilities can lead to complexity and unintended actions."
+    - content: "Ensuring the agent has clear intent, guardrails, and scoped permissions"
+      isCorrect: true
+      explanation: "Correct. The most important principle is to ensure that agents have clear intent, guardrails, and scoped permissions. This approach aligns agent design with business goals, enforces security and compliance, and prevents unintended actions, as emphasized in the source material."
+    - content: "Designing agents without considering data boundaries"
+      isCorrect: false
+      explanation: "Incorrect. Ignoring data boundaries can lead to security and compliance risks."
+    - content: "Removing all user review steps"
+      isCorrect: false
+      explanation: "Incorrect. User review steps are essential for ensuring accuracy and compliance."
+  - content: "Which design approach best improves long-term extensibility for enterprise-grade Copilot Studio agents?"
+    choices:
+    - content: "Hard-coding all logic inside a single instruction block"
+      isCorrect: false
+      explanation: "Incorrect. Hard-coding logic reduces flexibility and makes updates difficult."
+    - content: "Using modular skills, integrations, and reusable instruction components"
+      isCorrect: true
+      explanation: "Correct. Long-term extensibility is best achieved by using modular skills, integrations, and reusable instruction components. This modular architecture allows for faster updates, reuse across agents, and better isolation for compliance and secure design, as stated in the sources."
+    - content: "Avoiding custom actions or external connectors"
+      isCorrect: false
+      explanation: "Incorrect. Avoiding custom actions or external connectors limits the functionality and adaptability of agents."
+    - content: "Relying only on pro-code development in Visual Studio Code"
+      isCorrect: false
+      explanation: "Incorrect. Relying solely on pro-code development limits accessibility and scalability."
+  - content: "Which scenario most clearly requires MCP-based extensibility in Copilot Studio?"
+    choices:
+    - content: "Writing casual emails for end users"
+      isCorrect: false
+      explanation: "Incorrect. Writing casual emails does not require MCP-based extensibility."
+    - content: "Pulling structured financial context to support a ledger reconciliation assistant"
+      isCorrect: true
+      explanation: "Correct. MCP-based extensibility is essential when agents must retrieve structured financial context, such as supporting a ledger reconciliation assistant. MCP provides authoritative business semantics and ensures compliance and accuracy in finance workflows, as described in the unit materials."
+    - content: "Generating brainstorming ideas"
+      isCorrect: false
+      explanation: "Incorrect. Generating brainstorming ideas does not require MCP-based extensibility."
+    - content: "Translating messages between languages"
+      isCorrect: false
+      explanation: "Incorrect. Translating messages between languages can be handled by standard models without requiring MCP-based extensibility."

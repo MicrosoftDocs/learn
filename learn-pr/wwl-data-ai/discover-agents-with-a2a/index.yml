@@ -28,7 +28,7 @@ roles:
   - solution-architect
   - student
 products:
-  - ai-services
+  - foundry-tools
 subjects: 
   - artificial-intelligence
 units:

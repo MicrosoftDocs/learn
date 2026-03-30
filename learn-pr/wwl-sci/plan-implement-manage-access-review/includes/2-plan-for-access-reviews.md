@@ -1,24 +1,25 @@
 ## What is an access review?
 
-An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access Reviews help users ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Finally, the access review is performed in Microsoft Entra ID Governance. A Microsoft Entra ID Premium P2 license is required.
+An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access reviews help ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Access reviews are a feature of Microsoft Entra ID Governance and require a **Microsoft Entra ID Governance** or **Microsoft Entra Suite** subscription. Some capabilities work with a Microsoft Entra ID P2 subscription.
 
 Consider your organizational needs to determine the strategy for deploying access reviews in your environment.
 
 ## Engage the right stakeholders
 
-When technology projects fail, they typically do so due to mismatched expectations, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that project roles are clear. For access reviews, you'll likely include representatives from the following teams within your organization:
+When technology projects fail, they typically do so due to mismatched expectations, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that project roles are clear. For access reviews, include representatives from the following teams within your organization:
 
-- **IT administration** manages your IT infrastructure and administers your cloud investments and Software as a Service (SaaS) apps.
-- **Development teams** build and maintain applications for your organization
-- **Business units** manage projects and own applications.
-- **Corporate governance** ensures that the organization is following internal policy and complying with regulations.
+- **IT administration** manages your IT infrastructure and administers your cloud investments and software as a service (SaaS) apps. This team reviews privileged access to infrastructure and apps, schedules access reviews on exception-list groups, and ensures that programmatic access through service principals is governed.
+- **Security teams** ensure the plan meets the organization's security requirements and enforce Zero Trust. This team reduces risk, enforces least-privilege access, and uses tools to maintain a centralized view of who has access to what.
+- **Development teams** build and maintain applications for your organization. This team controls who can access components in SaaS, PaaS, and IaaS resources and manages groups used for internal application development.
+- **Business units** manage projects and own applications. This team reviews and approves or denies access to groups and applications for internal and external users.
+- **Corporate governance** ensures that the organization follows internal policy and complies with regulations.
     
    > [!NOTE]
    > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality is lost and too many or too few people have access.
 
 ## What is Microsoft Entra ID Governance?
 
-Microsoft Entra Identity Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides you with capabilities to ensure that the right people have the right access to the right resources. These and related Microsoft Entra ID and Enterprise Mobility + Security features allows you to mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
+Microsoft Entra ID Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides capabilities to ensure that the right people have the right access to the right resources, and helps you mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
 
 Identity Governance gives organizations the ability to complete tasks across employees, business partners and vendors, and across services and applications both on-premises and in clouds. Specifically, it's intended to help organizations address these four key questions:
 
@@ -48,6 +49,7 @@ Typical targets for review include:
 - Group membership (synchronized to Microsoft Entra ID, or created in Microsoft Entra ID or Microsoft 365, including Microsoft Teams).
 - Access Package that groups resources (groups, apps, and sites) into a single package to manage access.
 - Microsoft Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
+- Custom data resources (preview)—access rights managed through external resource types connected to Microsoft Entra ID Governance.
 
 ### Who creates and manages access reviews?
 
@@ -91,7 +93,7 @@ When the administrator creates an Access Review, administrators can choose one o
 
 ### Components of an access review
 
-Before implementing your access reviews, you should plan the types of reviews relevant to your organization. To do so, you'll need to make business decisions about what you want to review and the actions to take based on those reviews.
+Before implementing your access reviews, you should plan the types of reviews relevant to your organization. To do so, you need to make business decisions about what you want to review and the actions to take based on those reviews.
 
 To create an access review policy, you must have the following information.
 
@@ -114,7 +116,7 @@ To create an access review policy, you must have the following information.
 | Review frequency    | Monthly                                                                                                                                    |
 | Who performs review | Dynamics business group program managers                                                                                                   |
 | Notification        | Email 24 hours prior to review to alias Dynamics-Pms                                                                                       |
-|                     | Include encouraging custom message to reviewers to secure their buy-in                                                                     |
+|                     | Ensure reviewer buy-in and completion by including custom message to reviewers                                                                     |
 | Timeline            | 48 hours from notification                                                                                                                 |
 | Automatic actions   | Remove access from any account that has no interactive sign-in within 90 days by removing the user from the security group dynamics-access |
 |                     | *Perform actions if not reviewed within timeline*                                                                                          |
@@ -133,7 +135,7 @@ Besides Access Packages, reviewing group membership is the most effective way of
 
 A single group can be granted access to all appropriate resources. You can assign the group access to individual resources, or to an Access Package that groups applications and other resources. With this method, you can review access to the group rather than an individual’s access to each application.
 
-Group membership is reviewed by:
+Group membership reviewed by:
 
 - Administrators
 - Group owners
@@ -193,7 +195,7 @@ Access reviews allow reviewers to attest whether users still need to be in a rol
 
 ## Deploy access reviews
 
-After you've prepared a strategy and a plan to review access for resources integrated with Microsoft Entra ID, deploy and manage reviews by using the resources listed.
+After you prepare a strategy and a plan to review access for resources integrated with Microsoft Entra ID, deploy and manage reviews by using the resources listed.
 
 ### Review access packages
 
@@ -249,7 +251,7 @@ For more advanced queries and analysis of access reviews, and to track changes a
 
 ## Plan communications
 
-Communication is critical to the success of any new business process. Proactively communicate to users how and when their experience will change and how to gain support if they experience issues.
+Communication is critical to the success of any new business process. Proactively communicate to users how and when their experience changes and how to gain support if they experience issues.
 
 **Communicate changes in accountability**: Access Reviews support shifting responsibility of reviewing and acting on continued access to business owners. Decoupling access decisions from IT drives more accurate access decisions. This is a cultural change in resource owners' accountability and responsibility. Proactively communicate this change and ensure resource owners are trained and able to use the insights to make good decisions.
 
@@ -269,18 +271,13 @@ Upon selecting Start review, reviewers are directed to the MyAccess portal for g
 
 ## How many licenses must you have?
 
-Your directory needs at least as many Microsoft Entra ID Premium P2 licenses as the number of employees performing the following tasks:
+A Microsoft Entra ID Premium P2 license is required for each member or guest user who:
 
-- Member users who are assigned as reviewers
-- Member users who perform a self-review
-- Member users as group owners who perform an access review
-- Member users as application owners who perform an access review
+- Is assigned as a reviewer
+- Performs a self-review
+- Is a group owner performing an access review
+- Is an application owner performing an access review
 
-For guest users, licensing needs depend on the licensing model you’re using. However, the guest users’ activities are considered Microsoft Entra ID Premium P2 usage:
-
-- Guest users who are assigned as reviewers
-- Guest users who perform a self-review
-- Guest users as group owners who perform an access review
-- Guest users as application owners who perform an access review
+Licenses aren't required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply review decisions.
 
 Microsoft Entra ID Premium P2 licenses aren't required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.

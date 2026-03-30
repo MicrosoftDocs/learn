@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-data-store-fabric.describe-options
+title: Describe analytical data store options
+metadata:
+  title: Describe Analytical Data Store Options
+  description: "Compare the three primary analytical data stores in Microsoft Fabric: lakehouse, warehouse, and eventhouse. Understand decision factors including data format, query language, and write patterns."
+  ms.date: 02/23/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-describe-options.md)]

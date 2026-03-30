@@ -17,7 +17,7 @@ Your company plans to build a centralized AI platform on Microsoft Foundry to su
 :::image type="content" source="../media/build-centralized-ai-platform-microsoft-foundry.png" alt-text="Diagram shows a company building a centralized AI platform on Microsoft Foundry to support enterprise knowledge management.":::
 
 ## Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
 - **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
 
@@ -47,7 +47,7 @@ Your company is building a centralized AI platform on Microsoft Foundry to suppo
 :::image type="content" source="../media/build-centralized-ai-knowledge-management-microsoft-foundry.png" alt-text="Diagram shows a company is building a centralized AI platform on Microsoft Foundry to support broad knowledge management.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
 - **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
 

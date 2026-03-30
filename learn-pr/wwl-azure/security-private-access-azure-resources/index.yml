@@ -22,7 +22,7 @@ abstract: |
 
   -   Configure network security for App Service Environment and Azure SQL Managed Instance to safeguard web applications and databases.
 prerequisites: '-   None'
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-module.svg
 levels:
 - intermediate
 roles:

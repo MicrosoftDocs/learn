@@ -10,4 +10,4 @@ The knowledge base can be created from existing sources, including:
 - Built-in *chit chat* question and answer pairs that encapsulate common conversational exchanges.
 
 > [!NOTE]
-> The question answering capability of Azure Language is a newer version of the **QnA Service**, which still exists as a standalone service. To learn how to migrate a QnA Maker knowledge base to Azure Language, see the [migration guide](/azure/ai-services/language-service/question-answering/how-to/migrate-qnamaker).
+> The question answering capability of Azure Language is a newer version of the **QnA Service**, which still exists as a standalone service. To learn how to migrate a QnA Maker knowledge base to Azure Language, see the [migration guide](/azure/ai-services/language-service/reference/migrate#how-do-i-migrate-to-azure-language-if-im-using-qna-maker).

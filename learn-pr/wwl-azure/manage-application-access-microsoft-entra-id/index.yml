@@ -25,7 +25,7 @@ abstract: |
 
   -   Manage app registration consent and use service principals and managed identities for automated management and enhanced security.
 prerequisites: '-   None'
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/entra-module.svg
 levels:
 - intermediate
 roles:

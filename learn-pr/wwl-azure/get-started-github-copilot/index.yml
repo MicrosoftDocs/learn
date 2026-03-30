@@ -3,8 +3,8 @@ uid: learn.wwl.get-started-github-copilot
 metadata:
   title: Get Started with GitHub Copilot
   description: "This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code."
-  ms.date: 06/02/2025
-  author: wwlpublish
+  ms.date: 03/03/2026
+  author: chrishowd
   ms.author: cahowd
   ms.topic: module-intro-to-product
   ms.collection: N/A

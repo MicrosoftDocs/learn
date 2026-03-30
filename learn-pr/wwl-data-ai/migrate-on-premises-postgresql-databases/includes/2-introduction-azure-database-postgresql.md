@@ -77,22 +77,22 @@ Finally, you can create *local* tables. A local table isn't sharded, but is stor
 
 Read-only replicas are useful for handling read-intensive workloads. Client connections can be spread across replicas, easing the burden on a single instance of the service. If your clients are located in different regions of the world, you use cross-region replication to position data close to each set of clients, and reduce latency.
 
-You can also use replicas as part of a contingency plan for disaster recovery. If the master server becomes unavailable, you might still be able to connect to a replica.
+You can also use replicas as part of a contingency plan for disaster recovery. If the primary server becomes unavailable, you might still be able to connect to a replica.
 
 > [!NOTE]
-> If the master is lost or deleted, all read-only replicas become read-write servers instead. However, these servers will be independent of each other, so any changes made to the data in one server will not be copied to the remaining servers.
+> If the primary is lost or deleted, all read-only replicas become read-write servers instead. However, these servers will be independent of each other, so any changes made to the data in one server will not be copied to the remaining servers.
 
 ### Establishing a replica
 
-A read-only replica contains a copy of the databases held in the original server—referred to as the *master*. You use the Azure portal or the CLI to create a replica of a master.
+A read-only replica contains a copy of the databases held in the original server—referred to as the *primary*. You use the Azure portal or the CLI to create a replica of a primary.
 
 [![Image showing the Replication page for the Azure Database for PostgreSQL service](../media/3-configure-replication.png)](../media/3-configure-replication.png#lightbox)
 
-When you create a read-only replica, Azure creates a new instance of the Azure Database for PostgreSQL service, and then copies the databases from the master server to the new server. The replica runs in read-only mode. Any attempt to modify data will fail. 
+When you create a read-only replica, Azure creates a new instance of the Azure Database for PostgreSQL service, and then copies the databases from the primary server to the new server. The replica runs in read-only mode. Any attempt to modify data will fail. 
 
 ### Replica lag
 
-Replication is not synchronous, and any changes made to data in the master server might take some time to appear in the replicas. Client applications that connect to replicas must be able to cope with this level of eventual consistency. Azure Monitor enables you to track the time lag in replication by using the **Max Lag Across Replicas** and **Replica Lag** metrics.
+Replication is not synchronous, and any changes made to data in the primary server might take some time to appear in the replicas. Client applications that connect to replicas must be able to cope with this level of eventual consistency. Azure Monitor enables you to track the time lag in replication by using the **Max Lag Across Replicas** and **Replica Lag** metrics.
 
 ## Management and monitoring
 

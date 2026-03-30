@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn why model selection and evaluation are essential for building effective generative AI applications.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

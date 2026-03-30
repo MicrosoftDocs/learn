@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-ai-speech.exercise-speech
-title: Exercise - Explore an AI speech scenario
+title: Exercise - Explore AI speech
 metadata:
-  title: Exercise - Explore an AI speech scenario
-  description: Explore an AI speech scenario.
+  title: Exercise - Explore AI speech
+  description: Explore AI speech recognition and synthesis.
   author: GraemeMalcolm
   ms.author: gmalc
-  ms.date: 10/27/2025
+  ms.date: 02/27/2026
   ms.topic: unit
 durationInMinutes: 15
 content: |

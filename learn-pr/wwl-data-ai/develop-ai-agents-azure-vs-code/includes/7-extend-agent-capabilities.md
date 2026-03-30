@@ -16,59 +16,48 @@ This seamless integration means you can add powerful capabilities to agents with
 
 ## Built-in tools overview
 
-Microsoft Foundry provides several production-ready tools that you can add to agents without additional configuration. These tools handle common scenarios and integrate directly with the platform.
+Microsoft Foundry provides a **tool catalog** that organizes available tools into three categories: **Configured** (ready-to-use built-in tools), **Catalog** (additional tools you can add from a registry including MCP servers), and **Custom** (your own tools via OpenAPI specifications or custom implementations). You can access the tool catalog through **Build > Tools** in the portal or through the VS Code extension.
+
+The following are some of the most commonly used tools.
 
 ### Code Interpreter
 
-Code Interpreter enables agents to write and execute Python code in a secure, sandboxed environment. This tool is invaluable when agents need to perform calculations, analyze data, or solve problems programmatically.
-
-**Common use cases:**
-- Mathematical calculations and formula evaluation
-- Data analysis and statistical computations
-- Chart and graph generation
-- File processing and transformation
-- Complex problem-solving requiring computation
-
-For example, if a user asks an agent to "calculate the compound interest on a $10,000 investment at 5% annual rate over 10 years," the agent can write and execute Python code to compute the exact result rather than estimating.
+Code Interpreter enables agents to write and execute Python code in a secure, sandboxed environment. Use it for mathematical calculations, data analysis, chart generation, file processing, and complex problem-solving. For example, if a user asks an agent to "calculate the compound interest on a $10,000 investment at 5% annual rate over 10 years," the agent writes and executes Python code to compute the exact result.
 
 ### File Search
 
-File Search provides retrieval-augmented generation (RAG) by allowing agents to search through documents you've uploaded. The tool indexes your documents and retrieves relevant information when needed, grounding agent responses in your specific knowledge base.
+File Search provides retrieval-augmented generation (RAG) by allowing agents to search through documents you've uploaded. The tool indexes your documents in a **vector store** and retrieves relevant information when needed, grounding agent responses in your specific knowledge base.
 
-**Common use cases:**
-- Searching product documentation
-- Finding relevant policy information
-- Retrieving specific data from reports
-- Answering questions based on internal documentation
-- Providing accurate citations from source materials
+File Search supports PDF, Word (.docx), plain text (.txt), Markdown (.md), and other formats. When you add File Search to an agent, you create or select a vector store, upload documents, and the system automatically indexes them for semantic search.
 
-File Search supports various file formats including PDF, Word documents, text files, and more. When you add File Search to an agent, you can upload documents to a vector store that the agent can query.
+### Bing Web Search
 
-### Grounding with Bing Search
+Bing Web Search connects your agent to real-time internet information, enabling access to current events, trending topics, and information beyond training data. It includes automatic citation generation, so agents can reference their sources.
 
-Bing Search connects your agent to real-time internet information. This tool enables agents to access current events, trending topics, and information beyond their training data cutoff.
+### Azure AI Search
 
-**Common use cases:**
-- Researching current events
-- Finding latest product information
-- Accessing real-time data like weather or stock prices
-- Gathering information about recent developments
-- Providing citations and sources for web content
+Azure AI Search provides advanced knowledge retrieval from your existing search indexes. Unlike File Search (which works with documents uploaded directly to the agent), Azure AI Search connects to enterprise-scale indexed data sources for structured and unstructured search scenarios.
 
-Bing Search includes automatic citation generation, so agents can reference their sources when providing information from the web.
+### OpenAPI tools
 
-### OpenAPI specified tools
+OpenAPI tools allow agents to interact with external APIs defined by OpenAPI 3.0 specifications, connecting your agents to web services and enterprise systems. You provide the specification, and Microsoft Foundry handles parameter mapping and response parsing.
 
-OpenAPI tools allow agents to interact with external APIs defined by OpenAPI 3.0 specifications. This capability connects your agents to vast ecosystems of web services and enterprise systems.
+### Additional built-in tools
 
-**Common use cases:**
-- Calling internal business APIs
-- Integrating with SaaS platforms
-- Accessing database information through APIs
-- Triggering workflows in external systems
-- Retrieving real-time data from services
+The tool catalog includes many more tools for specialized scenarios:
 
-You provide the OpenAPI specification, and Microsoft Foundry handles the integration, including parameter mapping and response parsing.
+| Tool | Description |
+|------|-------------|
+| **Browser Automation** | Interact with web pages, fill forms, and extract content |
+| **Computer Use** | Interact with desktop applications |
+| **Image Generation** | Create images based on text descriptions |
+| **SharePoint** | Access SharePoint content and document libraries |
+| **Microsoft Fabric** | Connect to Fabric data agents for data analytics |
+| **Deep Research** | Perform in-depth research across multiple sources |
+| **Agent-to-Agent** | Delegate tasks to other agents |
+| **Custom Code Interpreter** | Customizable code execution for specialized environments |
+
+The tool catalog continues to expand. Check the Foundry portal for the latest available tools.
 
 ## Adding tools in Visual Studio Code
 
@@ -86,7 +75,7 @@ To add tools through the Agent Designer:
 1. Configure tool-specific settings if required
 1. Save your changes
 
-![Screenshot of agent tools in the Microsoft Foundry VS Code extension.](../media/vs-code-agent-tools.png)
+![Screenshot of the tool catalog interface in the Microsoft Foundry VS Code extension.](../media/vs-code-tools.png)
 
 When you add certain tools, the extension prompts you to configure related assets. For example, adding File Search lets you create or select a vector store for document indexing.
 
@@ -120,7 +109,15 @@ The tools array lists each enabled tool with its configuration. Some tools requi
 
 ## Model Context Protocol (MCP) servers
 
-Model Context Protocol (MCP) provides a standardized way to add custom tools to agents. MCP servers offer reusable tool interfaces that work consistently across different agent implementations.
+Model Context Protocol (MCP) provides a standardized way to add custom tools to agents. MCP servers are available through the **Catalog** section of the tool catalog and offer reusable tool interfaces that work consistently across different agent implementations.
+
+### Types of MCP servers
+
+The Foundry tool catalog supports three types of MCP servers:
+
+- **Remote MCP servers** - Hosted externally and accessed over the network. These are the most common type for production scenarios.
+- **Local MCP servers** - Run on your local machine during development. Useful for testing custom tools before deploying.
+- **Custom MCP servers** - Your own MCP server implementations tailored to specific needs.
 
 ### Benefits of MCP servers
 
@@ -146,92 +143,17 @@ The Microsoft Foundry extension supports MCP server integration:
 
 MCP servers extend your agent's capabilities with specialized functions while maintaining a consistent development experience.
 
-## Configuring File Search with vector stores
-
-File Search requires a vector store to index and retrieve document content. Vector stores organize your documents for efficient semantic search.
-
-### Creating vector stores
-
-To use File Search:
-
-1. Add the File Search tool to your agent
-1. Create a new vector store or select an existing one
-1. Upload documents to the vector store through the extension
-1. The system automatically indexes documents for retrieval
-1. Your agent can now search uploaded documents during conversations
-
-The extension handles vector store management, making it straightforward to maintain your agent's knowledge base.
-
-### Supported document formats
-
-File Search supports various formats:
-- PDF documents
-- Microsoft Word files (.docx)
-- Plain text files (.txt)
-- Markdown files (.md)
-- And more
-
-When uploading documents, the system extracts text content and creates searchable embeddings, enabling semantic search across your knowledge base.
-
 ## Tool configuration best practices
 
-Effective tool management ensures reliable agent performance and optimal user experiences:
+Effective tool management ensures reliable agent performance:
 
-### Selection guidelines
+- **Start with built-in tools** before building custom solutions. Built-in tools are tested, maintained, and optimized for the platform.
+- **Match tools to requirements** - List what your agent needs to do and select tools accordingly. Don't add tools without clear purposes, as each tool adds latency.
+- **Provide clear instructions** - Tell your agent when and how to use each tool (for example, "Use Code Interpreter for any mathematical calculations") and when *not* to use them.
+- **Keep knowledge bases current** - When using File Search, update documents regularly. Outdated information leads to incorrect responses.
+- **Test tool behavior** thoroughly using the integrated playground. Send messages that should trigger tool usage, verify correct invocation, and test error scenarios.
 
-**Identify required capabilities** - Start by listing what your agent needs to do. Match capabilities to available tools rather than adding tools without clear purposes.
-
-**Start with built-in tools** - Use platform-provided tools before building custom solutions. Built-in tools are tested, maintained, and optimized for the platform.
-
-**Consider performance** - Each tool adds latency to agent responses. Use tools when their value justifies the performance impact.
-
-**Test thoroughly** - Verify tool behavior across various scenarios. Test edge cases, error conditions, and performance under load.
-
-### Configuration tips
-
-**Provide clear instructions** - Tell your agent when and how to use each tool. Instructions like "Use Code Interpreter for any mathematical calculations" help agents make appropriate tool choices.
-
-**Set appropriate boundaries** - Define when agents should *not* use certain tools. For example, "Don't use Bing Search for internal company information."
-
-**Monitor usage** - Track which tools agents use and how often. Usage patterns reveal optimization opportunities and potential issues.
-
-**Update knowledge bases regularly** - When using File Search, keep documents current. Outdated information leads to incorrect agent responses.
-
-## Combining multiple tools
-
-Agents can use multiple tools to handle complex scenarios. The agent intelligently determines which tools to invoke based on the user's request and available capabilities.
-
-### Multi-tool scenarios
-
-**Research and analysis agent:**
-- Uses Bing Search to gather current information
-- Uses Code Interpreter to analyze data and generate visualizations
-- Uses File Search to reference company documentation
-
-**Customer service agent:**
-- Uses File Search to find policy information
-- Uses OpenAPI tools to check order status in business systems
-- Uses Code Interpreter to calculate refund amounts
-
-**Technical support agent:**
-- Uses File Search to access troubleshooting guides
-- Uses OpenAPI tools to check system status
-- Uses Code Interpreter to analyze log files
-
-The agent orchestrates tool usage automatically, creating seamless experiences where complex workflows happen behind the scenes.
-
-## Testing tools in the playground
-
-After adding tools to your agent, test them in the integrated playground:
-
-1. Open the playground for your agent
-1. Send messages that should trigger tool usage
-1. Observe which tools the agent invokes
-1. Verify the agent incorporates tool results correctly
-1. Test error scenarios where tools might fail
-1. Iterate on instructions based on testing results
-
-The playground shows you when tools are invoked, helping you understand the agent's decision-making process and identify issues before production deployment.
+Agents can use multiple tools together to handle complex scenarios. For example, a research agent might use Bing Web Search to gather current information, Code Interpreter to analyze data, and File Search to reference internal documentation — all orchestrated automatically based on the user's request.
 
 Extending agent capabilities with tools transforms simple chat interfaces into powerful automation systems. By combining built-in tools with custom integrations and MCP servers, you can create agents that seamlessly interact with your data, systems, and services while maintaining enterprise-grade security and reliability.
 

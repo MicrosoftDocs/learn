@@ -1,147 +1,73 @@
-After discovering and classifying your data, the next priority is implementing protection mechanisms that mitigate threats. This unit focuses on evaluating encryption solutions for data at rest and in transit, specifying priorities for threat mitigation, and understanding key management with Azure Key Vault.
+After discovering, classifying, and prioritizing threats to your data, the next step is evaluating the encryption solutions that protect it. This unit focuses on choosing the right key management approach, selecting an Azure Key Vault tier, and understanding how infrastructure encryption adds a second layer of defense.
 
-## Specifying priorities for mitigating threats to data
+## Evaluate key management approaches
 
-The MCSB and WAF Security pillar provide guidance for prioritizing data protection measures. Consider these threats and corresponding mitigations:
+Azure encrypts all data at rest by default using AES-256 and encrypts all data in transit between datacenters automatically. The architecture relies on [envelope encryption](/azure/security/fundamentals/encryption-atrest): a **data encryption key (DEK)** encrypts each block of data, and a **key encryption key (KEK)** stored in Azure Key Vault encrypts the DEK.
 
-### Threat prioritization framework
+As a security architect, the core decision is who controls the KEK—Microsoft through **platform-managed keys (PMK)**, or your organization through **customer-managed keys (CMK)**:
 
-| Priority | Threat | Mitigation approach |
-|----------|--------|---------------------|
-| **Critical** | Unauthorized access to sensitive data | Encryption, access controls, authentication |
-| **High** | Data exfiltration | DLP policies, network controls, monitoring |
-| **High** | Man-in-the-middle attacks | TLS 1.2+, certificate management |
-| **Medium** | Accidental exposure | Classification, labeling, policy enforcement |
-| **Medium** | Key compromise | HSM protection, key rotation, separation of duties |
+| Key type | KEK control | Key rotation | Overhead | Crypto-erasure | Typical use case |
+|---|---|---|---|---|---|
+| **PMK** | Microsoft generates, stores, rotates | Automatic (every two years) | None | Not available | General workloads with default encryption |
+| **CMK** | Customer controls via Key Vault or Managed HSM | Customer-configured; supports [auto-rotation](/azure/key-vault/keys/how-to-configure-key-rotation) | Higher—key lifecycle management required | Disable KEK to erase all wrapped data | Regulated data, sovereignty, crypto-erase |
 
-### Defense in depth for data protection
+PMK is the right default for most workloads. CMK adds control at the cost of operational complexity—choose it when regulations demand it or when you need the ability to cryptographically erase data by disabling the key.
 
-The CAF Secure methodology recommends implementing layered controls:
+### Bring Your Own Key (BYOK)
 
-- **Encryption layer**: Protect data confidentiality through encryption at rest and in transit
-- **Access control layer**: Limit who can access data through identity and authorization
-- **Network layer**: Isolate data through private endpoints and network segmentation
-- **Monitoring layer**: Detect anomalies and threats through logging and alerting
+Organizations that generate keys in their own on-premises HSMs can [import them into Key Vault](/azure/key-vault/keys/byok-specification) to maximize key lifetime and portability while still using Azure services for encryption. BYOK is the recommended approach when compliance requires that keys originate outside of Azure.
 
-## MCSB controls for data protection
+## Evaluating Azure Key Vault tiers
 
-### DP-3: Encrypt sensitive data in transit
+Azure offers three key management options. The right choice depends on your compliance requirements, isolation needs, and budget. The table below compares them across several dimensions—here's a brief primer on the key concepts:
 
-Data in transit requires protection against interception and tampering:
+- **FIPS validation level** determines the security assurance of the cryptographic module. FIPS 140-2 Level 1 validates that an approved algorithm is used but imposes no physical security requirements—keys are processed in software. FIPS 140-3 Level 3 requires tamper-evident and tamper-resistant HSM hardware with identity-based authentication. Key material cannot be extracted even with physical access to the device.
+- **HSM tenancy** describes whether the hardware security module protecting your keys is shared across customers (multitenant), dedicated exclusively to your organization (single-tenant), or not applicable because keys are software-backed.
+- **Key types** refer to the cryptographic algorithms available. RSA keys use large integer factoring and are widely supported; common sizes are 2,048 bits, 3,072 bits, and 4,096 bits. Elliptic Curve (EC) keys provide equivalent security at shorter key lengths—for example, a 256-bit EC key is comparable in strength to a 3072-bit RSA key. Managed HSM also supports symmetric (AES) keys for workloads that need them.
 
-- **Enforce TLS 1.2 or higher** for all network communications
-- **Disable legacy protocols** including SSL 3.0, TLS 1.0, and TLS 1.1
-- **Use strong cipher suites** that provide forward secrecy
-- **Implement certificate validation** to prevent man-in-the-middle attacks
-
-The WAF recommends treating all data as sensitive when in transit—don't rely on network isolation alone.
-
-### DP-4: Enable data at rest encryption by default
-
-Azure provides encryption at rest by default for most services:
-
-- **Platform-managed keys (PMK)**: Microsoft manages encryption keys automatically
-- **Service-side encryption (SSE)**: Data encrypted before storage, decrypted on retrieval
-- **AES-256 encryption**: Industry-standard algorithm used across Azure services
-
-### DP-5: Use customer-managed keys when required
-
-For regulatory compliance or additional control, implement customer-managed keys (CMK):
-
-| Consideration | Platform-managed keys | Customer-managed keys |
-|---------------|----------------------|----------------------|
-| **Key control** | Microsoft | Customer |
-| **Key rotation** | Automatic | Customer responsibility |
-| **Compliance** | Standard | Enhanced for regulated industries |
-| **Complexity** | Low | Higher operational overhead |
-| **Use case** | General workloads | Regulated data, sovereignty requirements |
-
-### DP-6: Use a secure key management process
-
-Key management requires:
-
-- **Centralized key storage**: Use Azure Key Vault rather than storing keys in code or configuration
-- **Least privilege access**: Grant key access only to identities that require it
-- **Key rotation policies**: Rotate keys according to compliance requirements
-- **Audit logging**: Track all key access and operations
-
-## Encryption design considerations
-
-### Data at rest encryption
-
-When designing encryption at rest:
-
-- **Identify encryption requirements** based on data classification and compliance needs
-- **Choose encryption scope** at account, container, or object level
-- **Determine key management approach** between platform-managed and customer-managed
-- **Enable infrastructure encryption** for double encryption when required
-
-#### Double encryption
-
-For highly sensitive workloads, implement [double encryption](/azure/security/fundamentals/double-encryption):
-
-- **Service-level encryption**: First layer using the service's encryption capability
-- **Infrastructure encryption**: Second layer at the storage infrastructure level
-- **Different keys**: Each layer uses independent keys and algorithms
-
-### Data in transit encryption
-
-Design considerations for data in transit:
-
-- **Enforce HTTPS** for all web traffic and API calls
-- **Configure minimum TLS version** to 1.2 across all services
-- **Use private connectivity** through Private Link where possible
-- **Encrypt within virtual networks** using VPN or ExpressRoute with encryption
-
-## Azure Key Vault for key management
-
-[Azure Key Vault](/azure/key-vault/general/overview) provides centralized secrets, key, and certificate management:
-
-### Key Vault capabilities
-
-- **Key management**: Create, import, and control cryptographic keys
-- **Secret management**: Securely store and control access to tokens, passwords, and API keys
-- **Certificate management**: Provision, manage, and deploy SSL/TLS certificates
-- **HSM protection**: Store keys in FIPS 140-2 Level 2 or Level 3 validated HSMs
+| Tier | FIPS validation | HSM tenancy | Key types | BYOK | Best for |
+|---|---|---|---|---|---|
+| **Key Vault Standard** | [FIPS 140-2 Level 1](/azure/key-vault/keys/about-keys#compliance) (software-backed) | N/A | RSA, EC (software) | No | Dev/test, secrets, certificates |
+| **Key Vault Premium** | [FIPS 140-3 Level 3](/azure/key-vault/keys/about-keys#compliance) (shared HSM) | Multitenant | RSA, EC (software and HSM) | Yes | Production CMK workloads |
+| **Managed HSM** | [FIPS 140-3 Level 3](/azure/key-vault/keys/about-keys#compliance) (single-tenant HSM) | Single-tenant with dedicated [security domain](/azure/key-vault/managed-hsm/security-domain) | RSA, EC, symmetric (HSM only) | Yes | Highest regulatory bar, crypto-isolation |
 
 ### Key Vault design recommendations
 
 | Recommendation | Rationale |
-|----------------|-----------|
+|---|---|
 | **Use separate vaults** for different environments | Isolate production keys from development |
 | **Enable soft delete and purge protection** | Prevent accidental or malicious key deletion |
-| **Use managed identities** for access | Eliminate credential management |
-| **Implement RBAC** over access policies | Provide finer-grained access control |
-| **Enable logging** to Azure Monitor | Track all key operations |
+| **Use managed identities** for vault access | Eliminate credential management |
+| **Implement RBAC** over access policies | Finer-grained access control with audit trail |
+| **Enable logging** to Azure Monitor | Track all key, secret, and certificate operations |
+| **Use Private Link** for vault network access | Minimize vault exposure to public internet |
 
-### Infrastructure encryption
+### Certificate management
 
-For workloads requiring the highest protection:
+Key Vault also handles TLS/SSL certificate lifecycle—provisioning, renewal, and revocation. Automated rotation with partner CAs (DigiCert, GlobalSign) reduces the risk of expired certificates causing outages. This aligns with MCSB control DP-7 (Use a secure certificate management process).
 
-- **Azure Storage infrastructure encryption**: Double encryption at the infrastructure layer
-- **Azure SQL TDE with CMK**: Customer-managed keys for transparent data encryption
-- **Azure Disk Encryption**: BitLocker (Windows) or dm-crypt (Linux) for VM disks
+## Infrastructure encryption
 
-## Microsoft solutions for data protection
+Infrastructure encryption adds a second, independent layer of encryption that is transparent to your application. Azure provides this for both data at rest and data in transit.
 
-### Microsoft Purview Data Loss Prevention
+### Double encryption for data at rest
 
-[Microsoft Purview DLP](/purview/dlp-learn-about-dlp) prevents sensitive data from leaving your organization:
+For highly sensitive workloads, enable [double encryption](/azure/security/fundamentals/double-encryption):
 
-- **Policy-based protection**: Define rules based on sensitive information types
-- **Endpoint DLP**: Protect data on Windows and macOS devices
-- **Cloud DLP**: Protect data in Microsoft 365 services
-- **Integration with labels**: Use sensitivity labels to trigger DLP policies
+- **Service-level encryption**—the first layer, using the service's normal encryption (PMK or CMK)
+- **Infrastructure encryption**—a second layer at the storage infrastructure level using a separate platform-managed key
 
-### Azure Information Protection
+Each layer uses independent keys. Services that support infrastructure encryption include Azure Storage, Azure SQL Database, and Azure Managed Disks. Enable it at resource creation when required; it can't be added later.
 
-Labels applied through classification can trigger protection:
+### Encryption for data in transit
 
-- **Encryption**: Automatically encrypt documents based on labels
-- **Access restrictions**: Limit who can open or modify protected content
-- **Watermarking**: Apply visual markings to indicate sensitivity
-- **Expiration**: Set time limits on document access
+Azure provides two layers of transit encryption:
 
-## Bringing it together
+- **TLS 1.2 or later**—the application-layer protocol for all connections to Azure services. Configure the minimum TLS version on your resources and disable legacy protocols (SSL 3.0, TLS 1.0, TLS 1.1). Connections use [Perfect Forward Secrecy](/azure/security/fundamentals/encryption-overview) with RSA 2048-bit or ECC 256-bit key exchanges.
+- **MACsec (IEEE 802.1AE)**—a data-link layer encryption applied automatically to all Azure traffic moving between datacenters, whether within a region or between regions. This prevents physical interception attacks on network hardware and requires no customer configuration.
 
-Effective data protection requires a defense-in-depth approach that combines encryption, access controls, network isolation, and monitoring. Encrypt all data by default—both at rest and in transit—using TLS 1.2 or higher and AES-256 encryption. Centralize key management in Azure Key Vault, using HSM protection for the most sensitive workloads and implementing key rotation policies based on compliance requirements. Classification labels should trigger protection actions through DLP policies and Azure Information Protection, ensuring that sensitivity levels drive the appropriate encryption choices and access restrictions throughout your environment.
+For site-to-site traffic between on-premises networks and Azure VNets, use IPsec VPN gateways or ExpressRoute with MACsec to extend encryption beyond the Azure backbone.
+
+## Summary
+
+Choose PMK for most workloads and reserve CMK for regulated scenarios that demand Customer Key control or cryptographic erasure. Select a Key Vault tier based on the FIPS validation level and HSM tenancy your compliance posture requires. Layer infrastructure encryption on top of service-level encryption for the most sensitive data, and rely on Azure's automatic MACsec and enforced TLS 1.2 to protect data in transit without extra configuration.

@@ -1,4 +1,6 @@
-In addition to large scale migration using services like Azure Migrate and Azure Data Box, Azure also has tools designed to help you move or interact with individual files or small file groups. Among those tools are AzCopy, Azure Storage Explorer, and Azure File Sync.
+In addition to large-scale migration using services like Azure Migrate and Azure Data Box, Azure also has tools designed to help you move or interact with individual files or small file groups. Among those tools are AzCopy, Azure Storage Explorer, and Azure File Sync.
+
+:::image type="content" source="../media/file-movement-tools.png" alt-text="Diagram comparing three Azure file movement tools: AzCopy for command-line scripted tasks, Storage Explorer for visual GUI management, and Azure File Sync for bi-directional hybrid sync.":::
 
 ## AzCopy
 
@@ -21,3 +23,4 @@ With Azure File Sync, you can:
  -  Have as many caches as you need across the world.
  -  Replace a failed local server by installing Azure File Sync on a new server in the same datacenter.
  -  Configure cloud tiering so the most frequently accessed files are replicated locally, while infrequently accessed files are kept in the cloud until requested.
+

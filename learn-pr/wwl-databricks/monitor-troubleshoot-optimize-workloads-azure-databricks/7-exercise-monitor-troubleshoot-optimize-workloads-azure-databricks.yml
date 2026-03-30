@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks.exercise
+title: Exercise - Monitor, Troubleshoot and Optimize Workloads in Azure Databricks
+metadata:
+  title: Exercise - Monitor, Troubleshoot and Optimize Workloads in Azure Databricks
+  description: "Exercise - Monitor, Troubleshoot and Optimize Workloads in Azure Databricks"
+  ms.date: 03/17/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-monitor-troubleshoot-optimize-workloads-azure-databricks.md)]

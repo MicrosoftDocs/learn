@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-generative-ai-audio-apps.deploy-multimodal-models
-title: Deploy a multimodal model
+title: Choose a speech-capable model
 metadata:
-  title: Deploy a multimodal model
-  description: "Deploy a multimodal model that can respond to audio-based prompts."
-  ms.date: 05/6/2025
-  author: buzahid
-  ms.author: buzahid
+  title: Choose a speech-capable model
+  description: "Choose a speech-capable model for your application requirements."
+  ms.date: 03/11/2026
+  author: graememalcolm
+  ms.author: gmalc
   ms.topic: unit
 durationInMinutes: 3
 content: |

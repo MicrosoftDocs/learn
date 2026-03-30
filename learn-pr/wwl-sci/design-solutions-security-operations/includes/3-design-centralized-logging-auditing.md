@@ -153,6 +153,20 @@ Microsoft Purview Audit provides an integrated auditing solution for Microsoft 3
 
 Audit (Premium) provides access to intelligent insight events critical for breach investigations—such as identifying exactly which email items an attacker accessed. Custom retention policies can target specific workloads, activities, or users.
 
+### Auditing AI and Copilot interactions
+
+Microsoft Purview Audit automatically captures user interactions with Copilot and AI applications as part of Audit (Standard). Architects should account for three categories of AI audit data, each with different coverage and billing implications:
+
+| Category | Scope | Billing model |
+|----------|-------|---------------|
+| **Microsoft Copilot interactions** | Microsoft 365 Copilot, Security Copilot, Copilot in Fabric, and other Microsoft copilots | Included in Audit (Standard) |
+| **Connected AI apps** | Enterprise AI applications registered through Microsoft Entra or deployed in your organization | Pay-as-you-go |
+| **Third-party AI apps** | External AI services (such as ChatGPT) accessed through browsers | Pay-as-you-go |
+
+AI audit records capture security-relevant properties beyond traditional audit events—including sensitivity labels on resources accessed by AI, jailbreak detection flags on prompts, agent identity metadata, and model transparency details. These records feed into **Data Security Posture Management (DSPM) for AI** in Microsoft Purview, which provides activity explorer views, data risk assessments, and one-click policies for detecting risky AI usage and unethical behavior.
+
+From an architect perspective, factor AI audit volume into retention planning—organizations with broad Copilot adoption generate significant additional audit data. Audit (Premium) retention is particularly relevant for AI regulatory compliance requirements (such as EU AI Act obligations) that demand longer investigation windows.
+
 ### Integration with Microsoft Sentinel
 
 For centralized logging architectures, integrate Microsoft Purview audit logs with Microsoft Sentinel to correlate user activities with infrastructure security events and maintain long-term retention through the data lake tier.

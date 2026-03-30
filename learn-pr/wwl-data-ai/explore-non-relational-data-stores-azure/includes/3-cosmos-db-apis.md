@@ -1,4 +1,4 @@
-Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both  relational and non-relational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including PostgreSQL, MongoDB, and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who work with the data store.
+Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both relational and non-relational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including MongoDB and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who work with the data store.
 
 ## Azure Cosmos DB for NoSQL
 
@@ -44,29 +44,6 @@ The results of this query consist of JSON documents, similar to this:
    "price": 2.99
 }
 ```
-
-## Azure Cosmos DB for PostgreSQL
-
-Azure Cosmos DB for PostgreSQL is the distributed PostgreSQL option in Azure. Azure Cosmos DB for PostgreSQL is a native PostgreSQL, globally distributed relational database that automatically shards data to help you build highly scalable apps. You can start building apps on a single node server group, the same way you would with PostgreSQL anywhere else. As your app's scalability and performance requirements grow, you can seamlessly scale to multiple nodes by transparently distributing your tables. PostgreSQL is a relational database management system (RDBMS) in which you define relational tables of data, for example you might define a table of products like this:
-
-| ProductID | ProductName | Price |
-| --- | --- | --- | --- |
-| 123 | Hammer | 2.99 |
-| 162 | Screwdriver | 3.49 |
-
-You could then query this table to retrieve the name and price of a specific product using SQL like this:
-
-```sql
-SELECT ProductName, Price 
-FROM Products
-WHERE ProductID = 123;
-```
-
-The results of this query would contain a row for product 123, like this:
-
-| ProductName | Price |
-| --- | --- |
-| Hammer | 2.99 |
 
 ## Azure Cosmos DB for Table
 

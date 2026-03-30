@@ -27,7 +27,7 @@ roles:
 - developer
 products:
 - azure-database-postgresql
-- ai-services
+- foundry-tools
 subjects:
 - artificial-intelligence
 - databases

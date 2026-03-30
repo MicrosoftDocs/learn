@@ -1,44 +1,48 @@
-Azure AD is part of the platform as a service (PaaS) offering and operates as a Microsoft-managed directory service in the cloud. It's not a part of the core infrastructure that customers own and manage, nor is it an IaaS offering. While this implies that you have less control over its implementation, it also means that you don't have to dedicate resources to its deployment or maintenance. With Azure AD, you also have access to a set of features that are not natively available in AD DS, such as support for multifactor authentication, identity protection, and self-service password reset.
+Microsoft Entra ID is part of the platform as a service (PaaS) offering and operates as a Microsoft-managed directory service in the cloud. It's not a part of the core infrastructure that customers own and manage, nor is it an IaaS offering. While this implies that you have less control over its implementation, it also means that you don't have to dedicate resources to its deployment or maintenance. With Microsoft Entra ID, you also have access to a set of features that are not natively available in AD DS, such as support for multifactor authentication, identity protection, and self-service password reset.
 
 ## What are the AD DS integration options?
 
-Small organizations that don't have an on-premises directory such as AD DS can fully rely on Azure AD as an authentication and authorization service. However, the number of these organizations is still quite small, so most companies search for a way to integrate on-premises AD DS with Azure AD. Microsoft offers cloud-scale identity and access management via Azure AD, which provides several options for integrating AD DS with Azure. These options are described in the following table.
+Small organizations that don't have an on-premises directory such as AD DS can fully rely on Microsoft Entra ID as an authentication and authorization service. However, the number of these organizations is still quite small, so most companies search for a way to integrate on-premises AD DS with Microsoft Entra ID. Microsoft offers cloud-scale identity and access management via Microsoft Entra ID, which provides several options for integrating AD DS with Microsoft Entra ID. These options are described in the following table.
 
 | Options| Description|
 | :--- | :--- |
 | Extending on-premises AD DS to Azure| With this option, you host VMs in Azure that you then promote to be domain controllers in your on-premises AD DS.|
-| Synchronizing on-premises AD DS with Azure AD| Directory synchronization propagates user, group, and contact information to Azure AD and keeps that information synchronized. In this scenario, users will utilize different passwords to access cloud and on-premises resources, and the authentication processes are separate.|
-| Synchronizing AD DS with Azure AD by using password hash synchronization| In this approach, on-premises AD DS synchronizes objects with Azure AD, but also sends password hashes for user objects to Azure AD. With this option, users can access Azure AD–aware applications and resources by providing the same password as their current on-premises sign-in. For end users, this approach provides the same sign-in experience.|
-| Implementing SSO between on-premises AD DS and Azure AD| This option supports the largest range of integration features, and it allows a user to sign in to Azure after authenticating via the on-premises AD DS. The technology that provides this functionality is called federation, which you can implement by using Active Directory Federation Services (AD FS). AD FS relies on a set of federation servers and proxies, which take the form of the Web Application Proxy server role service. As an alternative to deploying AD FS, you can also use pass-through authentication technology, which provides almost the same results as AD FS. However, it does not use a Web Application Proxy and requires a less complex infrastructure than AD FS.|
+| Synchronizing on-premises AD DS with Microsoft Entra ID| Directory synchronization propagates user, group, and contact information to Microsoft Entra ID and keeps that information synchronized. Authentication remains separate unless you also enable password hash synchronization, pass-through authentication, or federation.|
+| Synchronizing AD DS with Microsoft Entra ID by using password hash synchronization| In this approach, on-premises AD DS synchronizes objects with Microsoft Entra ID, but also sends password hashes for user objects to Microsoft Entra ID. With this option, users can access Microsoft Entra ID-aware applications and resources by providing the same password as their current on-premises sign-in. For end users, this approach provides the same sign-in experience.|
+| Implementing SSO between on-premises AD DS and Microsoft Entra ID| This option supports the largest range of integration features, and it allows users to access cloud resources after authenticating via on-premises AD DS. The technology that provides this functionality is called federation, which you can implement by using Active Directory Federation Services (AD FS). AD FS relies on a set of federation servers and proxies, which take the form of the Web Application Proxy server role service. As an alternative to deploying AD FS, you can also use pass-through authentication technology, which provides almost the same results as AD FS. However, it does not use a Web Application Proxy and requires a less complex infrastructure than AD FS.|
 
 > [!NOTE]
-> The Azure AD directory is not an extension of an on-premises directory. Rather, it's a copy that contains the same objects and identities. Changes made to these items on-premises are copied to Azure AD, but changes made in Azure AD are not replicated back to the on-premises domain.
+> The Microsoft Entra ID directory is not an extension of an on-premises directory. Rather, it's a copy that contains the same objects and identities. Changes made to these items on-premises are copied to Microsoft Entra ID. Changes made in Microsoft Entra ID are generally not replicated back to the on-premises domain unless you enable specific writeback features.
 
-## What is Azure AD Connect?
+## What is Microsoft Entra Connect?
 
-Directory synchronization enables synchronization between on-premises AD DS and Azure AD for users, groups, and contacts. In its simplest form, you install a Directory synchronization component on a server in your on-premises domain. You then provide an account with Domain Admin and Enterprise Admin access to on-premises AD DS, and another account with administrator access to Azure AD, and let it run.
+Directory synchronization enables synchronization between on-premises AD DS and Microsoft Entra ID for users, groups, and contacts. In its simplest form, you install a Directory synchronization component on a server in your on-premises domain. You then provide an account with Domain Admin and Enterprise Admin access to on-premises AD DS, and another account with administrator access to Microsoft Entra ID, and let it run.
 
-You can use Azure Active Directory Connect (Azure AD Connect) to perform synchronization between on-premises AD DS and Azure AD. Azure AD Connect is a wizard-based tool designed to enable connectivity between an on-premises identity infrastructure and Azure. Using the wizard, you can choose your topology and requirements and then the wizard deploys and configures all the required components for you.
+You can use Microsoft Entra Connect (formerly Azure AD Connect) to perform synchronization between on-premises AD DS and Microsoft Entra ID. Microsoft Entra Connect is a wizard-based tool designed to enable connectivity between an on-premises identity infrastructure and Azure. Using the wizard, you can choose your topology and requirements and then the wizard deploys and configures all the required components for you.
 
-When you run Azure AD Connect, the following occurs:
+When you run Microsoft Entra Connect, the following occurs:
 
-- New users, groups, and contact objects in on-premises AD DS are added to Azure AD.
+- New users, groups, and contact objects in on-premises AD DS are added to Microsoft Entra ID.
 
-- Attributes of existing users, groups, or contact objects that are modified in on-premises AD DS are modified in Azure AD. However, not all on-premises AD DS attributes are synchronized to Azure AD. You can configure a set of attributes that synchronize to Azure AD by using Synchronization Manager component of Azure AD Connect.
+- Attributes of existing users, groups, or contact objects that are modified in on-premises AD DS are modified in Microsoft Entra ID. However, not all on-premises AD DS attributes are synchronized to Microsoft Entra ID. You can configure a set of attributes that synchronize to Microsoft Entra ID by using Synchronization Manager component of Microsoft Entra Connect.
 
-- Existing users, groups, and contact objects that are deleted from the on-premises AD DS are deleted from Azure AD.
+- Existing users, groups, and contact objects that are deleted from the on-premises AD DS are deleted from Microsoft Entra ID.
 
-- Existing user objects that are disabled on-premises are disabled in Azure.
+- Existing user objects that are disabled on-premises are disabled in Microsoft Entra ID.
 
 > [!WARNING]
 > However, licenses are not automatically assigned or unassigned.
 
-Azure AD requires that you have a single source of authority for every object. Therefore, it's important to understand that in an Azure AD Connect scenario, when you're running Active Directory synchronization you're mastering objects from within your on-premises AD DS.
+Microsoft Entra ID requires that you have a single source of authority for every object. In a Microsoft Entra Connect scenario, synchronized identities are typically mastered from on-premises AD DS.
 
 > [!IMPORTANT]
-> After the first synchronization cycle is complete, the source of authority is transferred from the cloud to the on-premises AD DS. 
+> Source of authority is determined per object during matching and provisioning (for example, hard-match or soft-match). It's not transferred by a single one-time event after the first synchronization cycle.
 
-All subsequent changes to cloud objects (except for licensing) are mastered from the on-premises AD DS tools. The corresponding cloud objects are read-only, and Azure AD administrators cannot edit cloud objects if the source of authority is on-premises AD DS, unless you implement some of the technologies that allow writeback.
+All subsequent changes to synchronized objects are mastered from on-premises AD DS tools. If an incoming on-premises object is matched to an existing cloud object, on-premises values overwrite corresponding cloud attribute values. If password hash synchronization is enabled, the cloud password hash is also overwritten by the on-premises password hash.
+
+To avoid data loss or account access issues, validate matching attributes (`userPrincipalName`, primary `proxyAddresses`, and source anchor), clean up duplicate identities, and communicate sign-in changes to users before enabling synchronization for existing cloud accounts.
+
+For synchronized identities, most cloud attributes are read-only in Microsoft Entra ID. Some data can flow back to on-premises AD DS only when you explicitly configure supported writeback features.
 
 ## Prepare to synchronize
 
@@ -69,15 +73,15 @@ For distinguished names that contain format and duplicate errors, IdFix might no
 
 For errors such as format issues, you can make changes to specific attributes object-by-object by using either ADSIEdit or Advanced Mode in Active Directory Users and Computers. However, to make attribute changes to multiple objects, `ADModify.NET` is a better tool. This is because the batch mode operation provided by `ADModify.NET` is particularly useful for making changes to attributes such as UPNs across OUs or domains.
 
-## Troubleshoot issues with Azure AD Connect sync
+## Troubleshoot issues with Microsoft Entra Connect Sync
 
-If you experience problems synchronizing objects to Azure AD, consider running the troubleshooting task in the Azure AD Connect wizard. To run the wizard, use the following procedure:
+If you experience problems synchronizing objects to Microsoft Entra ID, consider running the troubleshooting task in the Microsoft Entra Connect wizard. To run the wizard, use the following procedure:
 
-1. On your Azure AD Connect server, open an elevated Windows PowerShell command prompt.
+1. On your Microsoft Entra Connect server, open an elevated Windows PowerShell command prompt.
 
 1. Run either the `Set-ExecutionPolicy RemoteSigned` or `Set-ExecutionPolicy Unrestricted` command.
 
-1. Start the **Azure AD Connect** wizard.
+1. Start the **Microsoft Entra Connect** wizard.
 
 1. Select Configure, select **Troubleshoot**, and then select **Next**.
 
@@ -101,19 +105,19 @@ You can select a number of options. These are:
 
 - Configure AD DS Connector Account Permissions
 
-- Test Azure Active Directory Connectivity
+- Test Microsoft Entra ID Connectivity
 
 - Test Active Directory Connectivity
 
-Use the guidance in the following document to interpret the output and resolve any discovered issues: [Troubleshoot object synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/tshoot-connect-objectsync).
+Use the guidance in the following document to interpret the output and resolve any discovered issues: [Troubleshoot object synchronization with Microsoft Entra Connect Sync](/entra/identity/hybrid/connect/tshoot-connect-objectsync).
 
-## Monitor Azure AD Connect
+## Monitor Microsoft Entra Connect
 
-If you subscribe to a premium version of Azure AD, you can use the Azure AD Connect Health tool to identify problems with synchronization. To access this tool, in the Azure Active Directory admin center:
+If you use Microsoft Entra ID P1 or P2 licensing, you can use the Microsoft Entra Connect Health tool to identify problems with synchronization. To access this tool, in the Microsoft Entra admin center:
 
-1. On the **Azure Active Directory** tab, select **Azure AD Connect**.
+1. On the **Entra ID** tab, select **Microsoft Entra Connect**.
 
-1. In the details pane, select the **Azure AD Connect Health** link.
+1. In the details pane, select the **Microsoft Entra Connect Health** link.
 
 1. As displayed in the following screenshot, from this page, you can review a number of items and launch several tools, including:
 
@@ -121,28 +125,28 @@ If you subscribe to a premium version of Azure AD, you can use the Azure AD Conn
 
   - Sync services. Displays the current synchronization status. In the screenshot, it displays as Unhealthy.
 
-![A screenshot of the Sync services page in the Azure AD Connect Health tool. Unhealthy status is returned.](../media/sync-services.png)
+![A screenshot of the Sync services page in the Microsoft Entra Connect Health tool. Unhealthy status is returned.](../media/sync-services.png)
 
 > [!TIP]
 > You can drill down into specific items to learn more. 
 
-## Review Azure AD sign-in logs
+## Review Microsoft Entra ID sign-in logs
 
-If your users experience problems when they attempt to sign-in to Azure AD, then you can review available logs. There are a number of monitoring and logging options you can enable and review in Azure AD. These are accessible in the **Monitoring** section of the Azure Active Directory admin center. The following table describes some of the available options.
+If your users experience problems when they attempt to sign in to Microsoft Entra ID, then you can review available logs. There are a number of monitoring and logging options you can enable and review in Microsoft Entra ID. These are accessible in the **Monitoring** section of the Microsoft Entra admin center. The following table describes some of the available options.
 
 | Monitoring option| Description|
 | :--- | :--- |
 | Sign-ins| Enables you to review sign-in logs to help identify and resolve authentication issues. You can review the recent sign-ins (the default time period is the last 24 hours). You can also filter the returned results using a number of factors to help you locate specific sign-ins.|
 | Audit logs| Lists recent activities performed in your tenant, such as updating policies, or performing user management.|
 | Provisioning logs| Lists details about activities performed by the provisioning service, such as the creation of a group in ServiceNow or a user imported from Workday.|
-| Logs| Requires that you’ve first configured Log Analytics integration. Once enabled and configured, you can use Azure Monitor logs to query data to find particular events, analyze trends, and perform correlation across various data sources. With the integration of Azure AD activity logs in Azure Monitor logs, you can compare your Azure AD sign-in logs against security logs published by Azure Security Center. You can troubleshoot performance bottlenecks on your application’s sign-in page by correlating application performance data from Azure Application Insights.|
-| Usage & insights| Provides a link to the Azure AD application activity page. You can review Azure AD application activity, AD FS application activity, and Authentication methods activity. The Azure AD application activity page displays information in a per-app list. For example, you can scroll down the returned list of sign-ins to review those for Microsoft Teams.|
+| Logs| Requires that you’ve first configured Log Analytics integration. Once enabled and configured, you can use Azure Monitor logs to query data to find particular events, analyze trends, and perform correlation across various data sources. With the integration of Microsoft Entra ID activity logs in Azure Monitor logs, you can compare your Microsoft Entra ID sign-in logs against security logs published by Microsoft Defender for Cloud. You can troubleshoot performance bottlenecks on your application’s sign-in page by correlating application performance data from Azure Application Insights.|
+| Usage & insights| Provides a link to the Microsoft Entra application activity page. You can review Microsoft Entra application activity, AD FS application activity, and Authentication methods activity. The Microsoft Entra application activity page displays information in a per-app list. For example, you can scroll down the returned list of sign-ins to review those for Microsoft Teams.|
 
 To access sign-in logs, use the following procedure:
 
-1. Open the **Azure Active Directory admin center**.
+1. Open the **Microsoft Entra admin center**.
 
-1. Select the **Azure Active Directory** tab, and then select **Sign-in logs**.
+1. Select the **Entra ID** tab, and then select **Sign-in logs**.
 
 1. In the details pane, select the date you're interested in. For example, select **Last 1 month**.
 
@@ -150,13 +154,13 @@ To access sign-in logs, use the following procedure:
 
 1. Review and analyze the returned results, as displayed in the following screenshot.
 
-![A screenshot of the sign-in logs in the Azure Active Directory admin center. The displayed log includes a number of Failure attempts.](../media/sign-in-logs.png)
+![A screenshot of the sign-in logs in the Microsoft Entra admin center. The displayed log includes a number of failure attempts.](../media/sign-in-logs.png)
 
-You can also review sign-in logs in Azure AD using Sign-in Diagnostic. Use the following procedure:
+You can also review sign-in logs in Microsoft Entra ID by using Sign-in Diagnostic. Use the following procedure:
 
-1. Open the **Azure Active Directory admin center**.
+1. Open the **Microsoft Entra admin center**.
 
-1. Select the **Azure Active Directory** tab, and then select **Diagnose and solve problems**.
+1. Select the **Entra ID** tab, and then select **Diagnose and solve problems**.
 
 1. In the details pane, select **Troubleshoot** beneath the **Sign-in Diagnostic** heading.
 

@@ -10,7 +10,7 @@ To generate unit tests for a file, follow these steps:
 
 1. Open the file that contains the code you want to test.
 
-1. Right-click inside the code editor, select **Copilot**, and then select **Generate Tests**.
+1. Right-click inside the code editor, select **Generate Code**, and then select **Generate Tests**.
 
 1. GitHub Copilot analyzes the code and generates unit tests for all functions and methods in the file.
 
@@ -44,7 +44,7 @@ To generate unit tests for a selection of code, follow these steps:
 
 1. Select the code block that you want to test.
 
-1. Right-click the selected code, select **Copilot**, and then select **Generate Tests**.
+1. Right-click the selected code, select **Generate Code**, and then select **Generate Tests**.
 
 1. GitHub Copilot analyzes the selected code and generates unit tests for the selected function or method.
 

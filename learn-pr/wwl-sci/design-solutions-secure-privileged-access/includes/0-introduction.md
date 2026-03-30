@@ -7,7 +7,6 @@ Your organization is modernizing its security architecture to align with Zero Tr
 - Administrative accounts with standing privileges that are rarely used
 - Inconsistent governance across cloud and on-premises identity systems
 - Limited visibility into who has access to critical resources and why
-- Legacy Active Directory configurations that haven't been updated in years
 
 You've been asked to design a comprehensive privileged access security strategy that addresses these gaps while enabling administrators to perform their duties efficiently.
 
@@ -18,4 +17,3 @@ In this module, you learn how to:
 - Apply the Enterprise Access Model to design tiered privileged access strategies.
 - Evaluate and design identity governance solutions that minimize standing privileges.
 - Design secure access pathways for administrative tasks, including privileged workstations and remote access.
-- Assess Active Directory Domain Services environments for resilience against common attacks.
