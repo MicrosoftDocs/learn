@@ -89,5 +89,3 @@ Complete the group membership by adding the new user. This establishes the conne
 
 > [!NOTE]
 > **Validation step:** Confirm the user is now a member of **gp-rg-readers**. Any RBAC permissions assigned to this group will apply to all members.
-
-> [!NOTE]

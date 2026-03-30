@@ -41,6 +41,7 @@ units:
 - learn.wwl.guided-project-new-employee-access.exercise-verify-least-privilege
 - learn.wwl.guided-project-new-employee-access.validate-success
 - learn.wwl.guided-project-new-employee-access.clean-up-resources
+- learn.wwl.guided-project-new-employee-access.knowledge-check
 - learn.wwl.guided-project-new-employee-access.summary
 badge:
   uid: learn.wwl.guided-project-new-employee-access.badge

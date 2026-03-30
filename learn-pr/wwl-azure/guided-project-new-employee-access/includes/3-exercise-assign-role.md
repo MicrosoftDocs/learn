@@ -32,5 +32,3 @@ Grant the Reader role to your security group at the resource group scope. This g
 
 > [!NOTE]
 > **Validation step:** Confirm the Reader role is assigned to **gp-rg-readers** at the resource group scope. Select the **Role assignments** tab on the **Access control (IAM)** page to verify.
-
-> [!NOTE]
