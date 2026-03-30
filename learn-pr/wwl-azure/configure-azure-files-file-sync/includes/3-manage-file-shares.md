@@ -36,7 +36,8 @@ If you need SMB access, make sure to create your file share inside a storage acc
 
 :::image type="content" source="../media/configure-classic-files.png" alt-text="Screenshot of creating a file share showing access tier choices.":::
 
-When connecting over SMB, don’t forget that traffic uses port 445. Many ISPs block port 445 outbound, which is the most common connectivity issue when mounting Azure file shares from on-premises environments.Azure provides ready to use scripts for Windows and Linux to help you connect quickly.
+> [!NOTE]
+> When connecting over SMB, don’t forget that traffic uses port 445. Many ISPs block port 445 outbound, which is the most common connectivity issue when mounting Azure file shares from on-premises environments. 
 
 > [!Important]
 > [File shares (preview)](/azure/storage/files/create-file-share) are now generally available that don't require an Azure storage account. This option provides simplified management for scenarios where you only need file shares without other storage services. 
