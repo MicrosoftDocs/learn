@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-test-endpoint-logs
+title: Exercise - Test endpoint and review logs
+metadata:
+  title: Exercise - Test endpoint and review logs
+  description: "Exercise - Test endpoint and review logs"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-test-endpoint-logs.md)]

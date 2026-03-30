@@ -34,7 +34,7 @@ Azure Container Apps doesn't provide direct access to the underlying Kubernetes 
 
 #### Compare container management solutions
 
-Azure Container Instances (ACI) can be managed in several ways. Azure Container Apps (ACA) is one way, and Azure Kubernetes Service (AKS) is another. Here’s a comparison table for when to use ACA and AKS. 
+Azure offers several container platforms for different scenarios. Azure Container Instances (ACI) is best for isolated, short-lived tasks. Azure Container Apps (ACA) serves serverless microservices. Azure Kubernetes Service (AKS) provides full Kubernetes control for complex orchestration needs. 
 
 | Feature | Azure Container Apps (ACA) | Azure Kubernetes Service (AKS) |
 | --- | --- | --- |
@@ -43,4 +43,3 @@ Azure Container Instances (ACI) can be managed in several ways. Azure Container 
 | Management | ACA builds upon AKS and offers a simplified PaaS experience for running containers. | AKS provides a more granular control over the Kubernetes environment, suitable for teams with Kubernetes expertise. |
 | Scalability | ACA supports both HTTP-based autoscaling and event-driven scaling, making it ideal for applications that need to respond quickly to changes in demand. | AKS offers horizontal pod autoscaling and cluster autoscaling, providing robust scalability options for containerized applications. |
 | Use Cases | ACA is designed for microservices and serverless applications that benefit from rapid scaling and simplified management. | AKS is best for complex, long-running applications. These applications require full Kubernetes features and tight integration with other Azure services. |
-| Integration | ACA integrates with Azure Logic Apps, Functions, and Event Grid for event-driven architectures. | AKS provides features like Azure Policy for Kubernetes, Azure Monitor for containers, and Azure Defender for Kubernetes for comprehensive security and governance. |

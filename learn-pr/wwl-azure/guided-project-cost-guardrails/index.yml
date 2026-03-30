@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-cost-guardrails
+metadata:
+  title: 'Guided Project: Set up cost guardrails in Azure'
+  description: "Apply basic cost governance with tags, budget alerts, and policy constraints."
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: 'Guided project: Set up cost guardrails in Azure'
+summary: |
+  This guided project helps you reduce spend risk by implementing cost guardrails in Azure.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Apply consistent resource tags for cost tracking
+
+  -   Create budget alerts for early spend visibility
+
+  -   Assign and test a policy control for resource compliance
+
+  -   Clean up resources and governance artifacts after validation
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-cost-management
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-cost-guardrails.introduction
+- learn.wwl.guided-project-cost-guardrails.exercise-tag-resources
+- learn.wwl.guided-project-cost-guardrails.exercise-create-budget-alerts
+- learn.wwl.guided-project-cost-guardrails.exercise-assign-test-policy
+- learn.wwl.guided-project-cost-guardrails.validate-success
+- learn.wwl.guided-project-cost-guardrails.clean-up-resources
+- learn.wwl.guided-project-cost-guardrails.knowledge-check
+- learn.wwl.guided-project-cost-guardrails.summary
+badge:
+  uid: learn.wwl.guided-project-cost-guardrails.badge
