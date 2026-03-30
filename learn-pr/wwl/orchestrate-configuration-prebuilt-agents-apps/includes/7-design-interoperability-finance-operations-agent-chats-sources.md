@@ -28,9 +28,9 @@ By the end of this unit, learners will be able to:
 
 * Apply governance, security, and lifecycle best practices
 
-## 1. Understanding F&O Agent Interoperability
+## Understanding F&O Agent Interoperability
 
-### The F&O Copilot agent is designed to:
+### The F&O Copilot agent is designed to
 
 * Answer questions using system data
 
@@ -68,13 +68,13 @@ By the end of this unit, learners will be able to:
 
 * External knowledge sources enrich reasoning and context
 
-## 2. Additional Knowledge Sources for F&O Agents
+## Additional Knowledge Sources for F&O Agents
 
 Solution architects can extend the agent with:
 
 ### A. External Knowledge Bases
 
-Examples:
+Examples
 
 * SharePoint libraries
 
@@ -88,7 +88,7 @@ Examples:
 
 ### B. LineofBusiness Systems
 
-Using plugins or APIs:
+Using plugins or APIs
 
 * CRM
 
@@ -118,9 +118,9 @@ Pricing guidelines
 
 These sources help the agent answer questions that F&O alone cannot.
 
-## 3. Designing Copilot Client Plugins for Interoperability
+## Designing Copilot Client Plugins for Interoperability
 
-### Plugins allow the agent to:
+### Plugins allow the agent to
 
 * Retrieve data
 
@@ -150,11 +150,11 @@ These sources help the agent answer questions that F&O alone cannot.
 
 * What constraints or validations are required
 
-## 4. Designing Interoperable Agent Experiences
+## Designing Interoperable Agent Experiences
 
 ### A. Map Business Questions to Knowledge Sources
 
-Example:
+Example
 
 "What is the current vendor credit limit?"<br>→ F&O data
 
@@ -176,7 +176,7 @@ Plugins can:
 
 ### C. Combine Knowledge Sources in a Single Response
 
-Example:
+Example
 
 "Your vendor is approved in F&O, and their latest compliance certificate (SharePoint) expires in 30 days."
 
@@ -188,7 +188,7 @@ Example:
 
 * Validate external data before use
 
-## 5. Governance, Security, and Lifecycle Considerations
+## Governance, Security, and Lifecycle Considerations
 
 ### A. Permissions
 
@@ -216,4 +216,4 @@ Example:
 
 ## References
 
-[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-client-plugins](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-client-plugins)
+[https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-client-plugins](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-client-plugins)

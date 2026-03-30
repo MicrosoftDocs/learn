@@ -62,13 +62,13 @@ When proposing any agents,  it's critical to cover all the key aspects for agent
 
 * [FAQ](/copilot/microsoft-365/agent-essentials/m365-agents-faq) - Answers to common questions about Microsoft 365 Copilot agents.
 
-In addition to the Agent Management Essentials components, any agent must include considerations for long term and licensing costs. Identifying all associated costs are critical to setting expectations for the agents. For more information, see [https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 
+In addition to the Agent Management Essentials components, any agent must include considerations for long term and licensing costs. Identifying all associated costs are critical to setting expectations for the agents. For more information, see [https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 
 
 ## Catalog of Proposed Microsoft 365 Agents (Ready to Pilot)
 
 The following list includes agents that are ready to pilot for organizations and can be used in business scenarios. Before considering any custom agents, out-of-the-box pilots should be assessed to determine whether they'll adequately meet the requirements. 
 
-## 1. Executive Briefing Pack Generator
+## Executive Briefing Pack Generator
 
 Automatically assemble an executive ready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
 
@@ -97,7 +97,7 @@ Automatically assemble an executive ready briefing pack using the latest organiz
 - Leadership satisfaction with clarity and readiness
 - Alignment score to required messaging standards
 
-## 2. Portfolio Risk Insights Analyzer
+## Portfolio Risk Insights Analyzer
 
 Provide consolidated insights from project portfolios, highlighting risks, blockers, dependencies, and resource pressures.
 
@@ -126,11 +126,11 @@ Provide consolidated insights from project portfolios, highlighting risks, block
 - Improvement in early identification of blockers
 - Percentage of insights actionable by leadership
 
-## 3. Content Localization Workpack Builder
+## Content Localization Workpack Builder
 
 Prepare region specific content localization packages, including terminology locks, cultural notes, and source files.
 
-Entry Point:
+Entry Point
 
 - Copilot in Word 
 - Power Automate for handoff workflows
@@ -155,7 +155,7 @@ Entry Point:
 - Quality consistency across regions
 - Backlog burndown for localization tickets
 
-## 4. ComplianceAware Content Redactor
+## ComplianceAware Content Redactor
 
 Automatically detect and mask sensitive information before content is shared with training repositories or external reviewers.
 
@@ -184,7 +184,7 @@ Automatically detect and mask sensitive information before content is shared wit
 - Reviewer effort time reduction
 - Compliance team trust score
 
-## 5. Alignment and Quality Checker
+## Alignment and Quality Checker
 
 Review ILT or digital learning modules for objective alignment, inclusive language, terminology consistency, and required rubric standards.
 
@@ -222,7 +222,7 @@ Review ILT or digital learning modules for objective alignment, inclusive langua
 
 * Time saved across multimodule reviews
 
-## 6. Adoption Scenario and Lab Designer
+## Adoption Scenario and Lab Designer
 
 Generate role-based exercises, handson labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
 
@@ -260,7 +260,7 @@ Generate role-based exercises, handson labs, and scenario walkthroughs for busin
 
 * Completion rates of adoption scenarios
 
-## 7. Research Synthesis and Brief Creator
+## Research Synthesis and Brief Creator
 
 Compile neutral, structured research briefs from internal notes, approved knowledge sources, and allowed public content.
 
@@ -390,4 +390,4 @@ Copy to Excel and chart "Owner effort by phase" as a stacked bar for a quick vis
 
 [Microsoft 365 Copilot Agent Management Essentials | Microsoft Learn](/copilot/microsoft-365/agent-essentials/agent-essentials-overview)
 
-[https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 
+[https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 

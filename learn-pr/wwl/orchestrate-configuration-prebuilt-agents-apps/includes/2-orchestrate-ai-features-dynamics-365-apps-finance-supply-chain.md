@@ -6,11 +6,11 @@ Solution architects must design AI orchestration patterns that ensure data gover
 
 ## AI Experience Models in Dynamics 365 Finance and Supply Chain
 
-### 1. Sidecar
+### Sidecar
 
 Sidecar Copilot appears alongside the Finance and Supply Chain apps and supports natural language chat. Users can ask questions, request insights, or invoke actions.
 
-#### Common sidecar capabilities include:
+#### Common sidecar capabilities include
 
 * **Generative help and guidance**: Explain features, processes, and actions in the app.
 
@@ -26,11 +26,11 @@ Sidecar Copilot appears alongside the Finance and Supply Chain apps and supports
 
 * Orchestrate crossmodule queries using standardized entity metadata.
 
-## 2. Embedded
+## Embedded
 
 Embedded AI brings Copilot capabilities directly inside workspace pages or operational views, enabling contextual, inapp intelligence.
 
-### Examples include:
+### Examples include
 
 * **Purchase order change analysis**
 
@@ -56,11 +56,11 @@ Embedded AI brings Copilot capabilities directly inside workspace pages or opera
 
 * Update extensions to handle model changes introduced by AI workflows.
 
-## 3. Outside (External Orchestration with Copilot)
+## Outside (External Orchestration with Copilot)
 
 External agents interact with Finance and Supply Chain data beyond the application UI and help orchestrate across different apps and tasks. 
 
-### Examples:
+### Examples
 
 * Crossapplication automations.
 
@@ -130,19 +130,19 @@ Solution architects can extend Copilot experiences using:
 
 * Copilot sidecar experiences need to understand the context in which the user is working in. for that reason, application context with Copilot is available to embed in the flow of the business process. The integration will include three types of context: For more information, see the following: [Use application context with Copilot - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-application-context)
 
-* The creation of client plugins, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. For more information see the following: [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins](/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins) 
+* The creation of client plugins, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. For more information see the following: [https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins](/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-create-client-plugins) 
 
-* Plugins must be created using the Copilot in Finance and Operation chatbot with an X++ method created in the application. For more information, see the following: [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture) 
+* Plugins must be created using the Copilot in Finance and Operation chatbot with an X++ method created in the application. For more information, see the following: [https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture) 
 
 
 ## References
 
-[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-for-finance-operations](/dynamics365/fin-ops-core/fin-ops/copilot/copilot-for-finance-operations)
+[https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/copilot/copilot-for-finance-operations](/dynamics365/fin-ops-core/fin-ops/copilot/copilot-for-finance-operations)
 
-[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot](/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot)
+[https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot](/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot)
 
 [Create client plugins for Copilot in finance and operations apps - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-client-plugins)
 
-[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture) 
+[https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-architecture) 
 
 [Use application context with Copilot - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/dev-itpro/copilot/copilot-application-context)

@@ -4,9 +4,9 @@ This unit equips **solution architects** with the expertise to identify, evaluat
 
 You will learn how to map Power Platform AI features to business outcomes, integrate them within secure environments, and architect extensible solutions that support automation, content generation, predictions, and natural language interaction across business applications.
 
-## 1. Understanding Power Platform AI Capabilities
+## Understanding Power Platform AI Capabilities
 
-### 1.1 Key AI Components
+### Key AI Components
 
 **AI experiences in Power Platform** provide intelligence across apps, flows, pages, and copilots.<br>Core components include:
 
@@ -18,9 +18,9 @@ You will learn how to map Power Platform AI features to business outcomes, integ
 
 **Copilot Studio**<br>Lowcode conversational agent creation with extensibility into Microsoft 365 and external systems.
 
-## 2. The AI Hub: Orchestration for Enterprise AI
+## The AI Hub Orchestration for Enterprise AI
 
-### 2.1 Purpose of the AI Hub
+### Purpose of the AI Hub
 
 The AI hub is a unified workspace for organizations to:
 
@@ -32,7 +32,7 @@ The AI hub is a unified workspace for organizations to:
 
 * Provide guided paths for building AIdriven apps and flows
 
-## 3. AI Builder: Extending Intelligence Across the Platform
+## AI Builder Extending Intelligence Across the Platform
 
 AI Builder enables solution architects to incorporate intelligence into solutions using:
 
@@ -78,9 +78,9 @@ Solution architects must plan:
 
 * Retraining and retirement triggers
 
-## 4. Copilot and Generative AI in Power Platform
+## Copilot and Generative AI in Power Platform
 
-### 4.1 Copilot in Power Apps
+### Copilot in Power Apps
 
 * Generate app screens from natural language
 
@@ -90,7 +90,7 @@ Solution architects must plan:
 
 * Automate UI modernization
 
-### 4.2 Copilot in Power Automate
+### Copilot in Power Automate
 
 * Generate flows based on business intent
 
@@ -100,7 +100,7 @@ Solution architects must plan:
 
 * Provide explanations of complex workflows
 
-### 4.3 Copilot in Power Pages
+### Copilot in Power Pages
 
 * Build site pages with natural language
 
@@ -108,7 +108,7 @@ Solution architects must plan:
 
 * Provide conversational editing and content refinement
 
-### 4.4 Copilot Studio
+### Copilot Studio
 
 * Build custom copilots with multiturn reasoning
 
@@ -118,11 +118,11 @@ Solution architects must plan:
 
 * Apply enterprise security, DLP, and audit policies
 
-## 5. Solution Architect Responsibilities
+## Solution Architect Responsibilities
 
 Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
-### 5.1 Governance & Security
+### Governance & Security
 
 * Implement environment strategy
 
@@ -132,7 +132,7 @@ Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
 * Validate connector usage
 
-### 5.2 Data Strategy
+### Data Strategy
 
 * Determine data sources and quality
 
@@ -142,7 +142,7 @@ Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
 * Establish data refresh and retention patterns
 
-### 5.3 Extensibility & Integration
+### Extensibility & Integration
 
 * Use Power Platform connectors
 
@@ -152,7 +152,7 @@ Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
 * Connect AI Builder insights across apps and flows
 
-### 5.4 Monitoring & Optimization
+### Monitoring & Optimization
 
 * Track model performance
 
@@ -162,9 +162,9 @@ Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
 * Implement iterative improvements
 
-## 6. Charts
+## Charts
 
-### 6.1 Feature Selection Matrix
+### Feature Selection Matrix
 
 | **Scenario Type** | **Copilot** | **AI Builder** | **AI Hub** | **Copilot Studio** |
 |---|---|---|---|---|
@@ -176,6 +176,6 @@ Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
 ## References
 
-[https://learn.microsoft.com/en-us/power-platform/copilot](/power-platform/copilot)
+[https://learn.microsoft.com/power-platform/copilot](/power-platform/copilot)
 
-[https://learn.microsoft.com/en-us/ai-builder/overview](/ai-builder/overview)
+[https://learn.microsoft.com/ai-builder/overview](/ai-builder/overview)

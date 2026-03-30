@@ -4,9 +4,9 @@ This unit equips solution architects with the knowledge and framework required t
 
 The unit emphasizes an architecturefirst approach—aligning data sources, rolebased access controls, Power Platform extensibility, and Dynamics 365 ecosystem integration—to ensure Copilot delivers reliable, secure, and measurable business outcomes.
 
-## 1. Architecture Foundations for Copilot in Sales and Service
+## Architecture Foundations for Copilot in Sales and Service
 
-### 1.1 Copilot Behaviors in Sales and Service
+### Copilot Behaviors in Sales and Service
 
 * Retrieves relevant customer or case context from emails, CRM records, meetings, and documents.
 
@@ -16,11 +16,11 @@ The unit emphasizes an architecturefirst approach—aligning data sources, roleb
 
 * Executes multi-step workflows using orchestrated actions through Power Platform.
 
-## 2. Configuring Microsoft 365 Copilot for Sales
+## Configuring Microsoft 365 Copilot for Sales
 
-### 2.1 Data and System Prerequisites
+### Data and System Prerequisites
 
-#### Solution architects must validate:
+#### Solution architects must validate
 
 * CRM data sources are connected and synchronized (Dynamics 365 Sales or third-party CRM).
 
@@ -30,7 +30,7 @@ The unit emphasizes an architecturefirst approach—aligning data sources, roleb
 
 * Seller roles have proper visibility controls to prevent unauthorized data exposure.
 
-### 2.2 Configuration Workflow
+### Configuration Workflow
 
 * Enable Copilot for Sales within Microsoft 365 and Dynamics 365 environments.
 
@@ -50,17 +50,17 @@ The unit emphasizes an architecturefirst approach—aligning data sources, roleb
 
 * Meeting preparation
 
-### 2.3 Sales Workflow Acceleration
+### Sales Workflow Acceleration
 
 Inbound Email → Copilot Summary → CRM Opportunity Update →
 
 Proposal Drafting → Seller Review → Customer Engagement
 
-## 3. Configuring Microsoft 365 Copilot for Service
+## Configuring Microsoft 365 Copilot for Service
 
-### 3.1 Service Data Requirements
+### Service Data Requirements
 
-#### Copilot for Service enhances case resolution by grounding on:
+#### Copilot for Service enhances case resolution by grounding on
 
 * Case forms, customer records, interaction transcripts
 
@@ -70,7 +70,7 @@ Proposal Drafting → Seller Review → Customer Engagement
 
 * Agent notes and historical interactions
 
-### 3.2 Configuration Workflow
+### Configuration Workflow
 
 * Connect the case management engine (Dynamics 365 Customer Service or equivalent).
 
@@ -82,15 +82,15 @@ Proposal Drafting → Seller Review → Customer Engagement
 
 * Establish role-based access to ensure only authorized agents can perform sensitive actions.
 
-### 3.3 Case Resolution Loop 
+### Case Resolution Loop 
 
 Case Intake → Copilot Summary → Knowledge Retrieval →
 
 Suggested Actions → Agent Review → Resolution Logged
 
-## 4. Power Platform and AI Builder Integration
+## Power Platform and AI Builder Integration
 
-### 4.1 AI Builder Use Cases
+### AI Builder Use Cases
 
 * Classify case types automatically.
 
@@ -100,9 +100,9 @@ Suggested Actions → Agent Review → Resolution Logged
 
 * Support multi-step reasoning workflows across systems.
 
-### 4.2 Connectors and Automation Patterns
+### Connectors and Automation Patterns
 
-* Architects should consider:
+* Architects should consider
 
 * Standard CRM connectors for opportunity/case updates.
 
@@ -110,9 +110,9 @@ Suggested Actions → Agent Review → Resolution Logged
 
 * Pre- and post-processing flows for Copilotgenerated content.
 
-## 5. Governance and Guardrails
+## Governance and Guardrails
 
-### 5.1 Security and Compliance Requirements
+### Security and Compliance Requirements
 
 * Apply sensitivity labels to all customer-facing documents.
 
@@ -122,7 +122,7 @@ Suggested Actions → Agent Review → Resolution Logged
 
 * Ensure data residency and retention policies align with enterprise compliance.
 
-### 5.2 Operational Guardrails
+### Operational Guardrails
 
 * Human review required before sending externally generated content.
 
@@ -132,7 +132,7 @@ Suggested Actions → Agent Review → Resolution Logged
 
 * Telemetry monitoring for adoption, data drift, and misuse.
 
-## 6. Success Metrics and KPIs
+## Success Metrics and KPIs
 
 ### Sales KPIs
 

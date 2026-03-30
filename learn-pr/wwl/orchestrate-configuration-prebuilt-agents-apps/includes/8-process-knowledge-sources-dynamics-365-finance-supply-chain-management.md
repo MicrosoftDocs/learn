@@ -6,7 +6,7 @@ The goal is to ensure that help and guidance is enriched with accurate, secure, 
 
 You will learn how knowledge sources feed Copilot behaviors, how content must be prepared and validated, and how to orchestrate the full lifecycle—from content ingestion to publication.
 
-## 1. Architectural Context: How Knowledge Powers InApp Help
+## Architectural Context How Knowledge Powers InApp Help
 
 Dynamics 365 uses Copilot capabilities to surface inapp help based on curated knowledge sources. These sources combine:
 
@@ -18,7 +18,7 @@ Dynamics 365 uses Copilot capabilities to surface inapp help based on curated kn
 
 * Generative responses (when enabled)
 
-## 2. Knowledge Source Types to Recommend
+## Knowledge Source Types to Recommend
 
 Solution architects must identify which knowledge sources are appropriate and supportable:
 
@@ -40,9 +40,9 @@ Solution architects must identify which knowledge sources are appropriate and su
 
 * Content containing sensitive, unclassified data
 
-## 3. Recommended EndtoEnd Process for Adding Knowledge Sources
+## Recommended EndtoEnd Process for Adding Knowledge Sources
 
-### Step 1: Prepare the Knowledge
+### Step 1 Prepare the Knowledge
 
 Before ingestion:
 
@@ -54,7 +54,7 @@ Before ingestion:
 
 * Apply required sensitivity labels.
 
-### Step 2: Ingest Knowledge Through Copilot Studio
+### Step 2 Ingest Knowledge Through Copilot Studio
 
 * Open Copilot Studio and select the environment associated with Finance or Supply Chain Management.
 
@@ -66,9 +66,9 @@ Before ingestion:
 
 * Monitor processing status until the knowledge source shows **Ready**.
 
-### Step 3: Test Knowledge Behavior
+### Step 3 Test Knowledge Behavior
 
-#### Testing is essential for solution architects:
+#### Testing is essential for solution architects
 
 * Perform scenariobased questioning.
 
@@ -78,9 +78,9 @@ Before ingestion:
 
 * Adjust content and reprocess as needed.
 
-### Step 4: Publish Knowledge to Production
+### Step 4 Publish Knowledge to Production
 
-#### After successful testing:
+#### After successful testing
 
 * Select **Publish** to make the new help content available to end users.
 
@@ -88,9 +88,9 @@ Before ingestion:
 
 * Review initial user feedback during early usage.
 
-### Step 5: Govern and Maintain Knowledge
+### Step 5 Govern and Maintain Knowledge
 
-#### Solution architects define ongoing governance:
+#### Solution architects define ongoing governance
 
 * Version control: update or retire outdated content.
 
@@ -100,23 +100,23 @@ Before ingestion:
 
 * Testing: validate after each Dynamics 365 release wave.
 
-## 4. Enabling or Restricting General Knowledge
+## Enabling or Restricting General Knowledge
 
 Solution architects decide whether to enable general knowledge (LLMbased, external):
 
-### Enable only when:
+### Enable only when
 
 * Business scenarios benefit from expanded natural language explanations.
 
 * Risks are assessed and mitigated.
 
-### Restrict when:
+### Restrict when
 
 * Precision is critical for regulatory or financial workflows.
 
 * Only controlled, validated knowledge should influence help responses.
 
-## 5. Solution Architect Recommendations Framework
+## Solution Architect Recommendations Framework
 
 Use this structure when advising customers:
 
@@ -134,4 +134,4 @@ Use this structure when advising customers:
 
 ## References
 
-[Generative help and guidance with Copilot - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help)<br>[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help](/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help)
+[Generative help and guidance with Copilot - Finance & Operations | Dynamics 365 | Microsoft Learn](/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help)<br>[https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help](/dynamics365/fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help)
