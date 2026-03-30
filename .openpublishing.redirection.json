@@ -65196,11 +65196,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "",
-      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
