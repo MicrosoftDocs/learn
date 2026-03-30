@@ -13,6 +13,7 @@ There are a few ways to extend the capabilities of your peering for resources an
 | **Hub and spoke network** | When you deploy a hub-and-spoke network, the hub virtual network can host infrastructure components like a network virtual appliance (NVA) or Azure VPN gateway. All the spoke virtual networks can then peer with the hub virtual network. Traffic can flow through NVAs or VPN gateways in the hub virtual network. |
 | **User-defined route (UDR)** | Virtual network peering enables the next hop in a [user-defined route](/azure/virtual-network/virtual-networks-udr-overview#user-defined) to be the IP address of a virtual machine in the peered virtual network, or a VPN gateway. |
 | **Service chaining** | [Service chaining](/azure/virtual-network/virtual-network-peering-overview#service-chaining) is used to direct traffic from one virtual network to a virtual appliance or gateway. To enable service chaining, configure UDRs that point to virtual machines in peered virtual networks as the next hop IP address. UDRs could also point to virtual network gateways to enable service chaining. |
+| Azure Virtual Network Manager | Centrally manages hub-and-spoke or mesh peering topologies at scale. Automates peering creation without manual per-VNet configuration. |
 
 
 The following diagram shows a hub and spoke virtual network with an NVA and VPN gateway. The hub and spoke network is accessible to other virtual networks via user-defined routes and service chaining.
