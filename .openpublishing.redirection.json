@@ -65194,6 +65194,106 @@
       "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/summary.yml",
       "redirect_url": "/azure/foundry/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/10-explore-best-practices-for-module-7.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/11-explore-best-practices-for-module-8.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/12-explore-best-practices-for-module-9.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/13-explore-best-practices-for-module-10.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/14-explore-best-practices-for-module-11.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/15-explore-best-practices-for-module-12.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/16-bring-together.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/17-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/18-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/2-objective-domains.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/3-learn-module-best-practices.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/4-explore-best-practices-for-module-1.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/5-explore-best-practices-for-module-2.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/6-explore-best-practices-for-module-3.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/7-explore-best-practices-for-module-4.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/8-explore-best-practices-for-module-5.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/9-explore-best-practices-for-module-6.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
+      "redirect_document_id": false
+    }                                          
   ]
 }
