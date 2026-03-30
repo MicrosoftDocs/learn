@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-new-employee-access.exercise-create-user-group
+title: Exercise - Create user and group
+metadata:
+  title: Exercise - Create user and group
+  description: "Exercise - Create user and group"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-create-user-group.md)]

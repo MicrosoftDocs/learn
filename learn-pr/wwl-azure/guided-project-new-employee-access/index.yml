@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-new-employee-access
+metadata:
+  title: 'Guided Project: Set up new employee access (Entra ID and RBAC)'
+  description: "Configure a basic identity and RBAC onboarding flow for a new team member."
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: 'Guided Project: Set up new employee access (Entra ID and RBAC)'
+summary: |
+  This guided project helps you implement least-privilege access for a new user.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Create a user and security group in Microsoft Entra ID
+
+  -   Assign group-based Azure RBAC at resource group scope
+
+  -   Validate expected access at the correct scope
+
+  -   Clean up users, roles, and resources to avoid leftovers
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-new-employee-access.introduction
+- learn.wwl.guided-project-new-employee-access.exercise-create-user-group
+- learn.wwl.guided-project-new-employee-access.exercise-assign-role
+- learn.wwl.guided-project-new-employee-access.exercise-verify-least-privilege
+- learn.wwl.guided-project-new-employee-access.validate-success
+- learn.wwl.guided-project-new-employee-access.clean-up-resources
+- learn.wwl.guided-project-new-employee-access.knowledge-check
+- learn.wwl.guided-project-new-employee-access.summary
+badge:
+  uid: learn.wwl.guided-project-new-employee-access.badge
