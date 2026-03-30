@@ -90,5 +90,3 @@ Add your file to the container. Once uploaded, only users with explicit permissi
 
 > [!NOTE]
 > **Validation step:** Confirm **monthly-report.txt** is uploaded and visible in the **partner-drop** container.
-
-> [!NOTE]

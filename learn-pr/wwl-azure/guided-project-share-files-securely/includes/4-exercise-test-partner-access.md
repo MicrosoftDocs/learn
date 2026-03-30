@@ -43,5 +43,3 @@ Now verify that the policy-based SAS token grants access to the same file that w
 
 > [!NOTE]
 > **Validation step:** Confirm the SAS URL displays the file content from the same unauthenticated incognito session that was just denied direct access.
-
-> [!NOTE]

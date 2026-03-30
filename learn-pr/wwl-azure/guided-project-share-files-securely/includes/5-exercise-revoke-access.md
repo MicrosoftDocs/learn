@@ -71,5 +71,3 @@ Verify that revoking SAS access only removed the external pathway—the file its
 
 > [!NOTE]
 > **Validation step:** The file remains in the container. Revoking SAS access doesn't delete data—it only removes the access pathway.
-
-> [!NOTE]

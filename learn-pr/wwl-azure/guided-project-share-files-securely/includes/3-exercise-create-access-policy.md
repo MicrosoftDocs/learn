@@ -59,5 +59,3 @@ Now generate a SAS token that inherits its rules from the policy you just create
 
 > [!NOTE]
 > **Validation step:** Confirm the SAS URL is generated and the permissions came from the stored access policy.
-
-> [!NOTE]

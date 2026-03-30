@@ -48,6 +48,7 @@ units:
 - learn.wwl.guided-project-share-files-securely.exercise-lifecycle-management
 - learn.wwl.guided-project-share-files-securely.validate-success
 - learn.wwl.guided-project-share-files-securely.clean-up-resources
+- learn.wwl.guided-project-share-files-securely.knowledge-check
 - learn.wwl.guided-project-share-files-securely.summary
 badge:
   uid: learn.wwl.guided-project-share-files-securely.badge

@@ -1,5 +1,3 @@
-## Validate success
-
 Review the validation steps you completed during the exercises. Confirm that each item below is true before moving on.
 
 -   [ ] The storage account is deployed and the **partner-drop** container is created with **Private** access level.

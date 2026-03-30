@@ -59,5 +59,3 @@ Verify the rule details to make sure it targets the right container and action.
 
 > [!NOTE]
 > **Validation step:** Confirm the rule targets the **partner-drop/** prefix with a 30-day delete action.
-
-> [!NOTE]
