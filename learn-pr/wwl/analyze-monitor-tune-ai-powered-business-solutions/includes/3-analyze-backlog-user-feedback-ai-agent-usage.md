@@ -4,9 +4,9 @@ This unit teaches solution architects how to evaluate, interpret, and act on bac
 
 Solution architects play a critical role in translating insights from telemetry, backlog queues, and conversation transcripts into architectural decisions, iterative improvements, and governance recommendations. This unit provides a repeatable framework for analyzing data and driving continuous improvement cycles for AIpowered agents.
 
-## 1. Understanding AI Backlogs and User Feedback Loops
+## Understanding AI Backlogs and User Feedback Loops
 
-### A backlog in AI and agent operations typically contains:
+### A backlog in AI and agent operations typically contains
 
 * Enhancement requests
 
@@ -20,7 +20,7 @@ Solution architects play a critical role in translating insights from telemetry,
 
 * Governance or policy misalignment concerns
 
-### User feedback may originate from:
+### User feedback may originate from
 
 * Conversation transcripts
 
@@ -34,7 +34,7 @@ Solution architects play a critical role in translating insights from telemetry,
 
 * Observability dashboards
 
-### Effective backlog analysis helps solution architects:
+### Effective backlog analysis helps solution architects
 
 * Prioritize improvements based on impact
 
@@ -46,13 +46,13 @@ Solution architects play a critical role in translating insights from telemetry,
 
 * Identify opportunities for automation and process redesign
 
-## 2. Framework for Backlog Analysis
+## Framework for Backlog Analysis
 
 Use a structured, repeatable model to elevate analysis to a solutionarchitecture level.
 
-### 2.1 Categorize the Backlog by Domain
+### Categorize the Backlog by Domain
 
-#### Organize items into categories such as:
+#### Organize items into categories such as
 
 * **Accuracy and Reasoning**: Incorrect, missing, or lowconfidence responses
 
@@ -77,15 +77,15 @@ Use a structured, repeatable model to elevate analysis to a solutionarchitecture
 | Integration | API failures; broken actions |
 | Governance | Data access blocked; DLP alerts |
 
-### 2.2 Prioritize by Impact and Effort
+### Prioritize by Impact and Effort
 
 Use a matrix to classify items based on business impact and required effort.
 
 :::image type="content" source="../media/impact-effort-prioritization-matrix.png" alt-text="Impact effort prioritization matrix":::
 
-### 2.3 Leverage User Feedback Signals
+### Leverage User Feedback Signals
 
-#### Solution architects should analyze:
+#### Solution architects should analyze
 
 * Frequency of similar feedback (volume signals)
 
@@ -102,9 +102,9 @@ Use a matrix to classify items based on business impact and required effort.
 :::image type="content" source="../media/user-feedback-funnel.png" alt-text="User feedback funnel":::
 
 
-## 3. Using Conversation Transcripts to Identify Patterns
+## Using Conversation Transcripts to Identify Patterns
 
-### Conversation transcripts reveal:
+### Conversation transcripts reveal
 
 * Where the agent misunderstood intent
 
@@ -116,7 +116,7 @@ Use a matrix to classify items based on business impact and required effort.
 
 * Workflows requiring human intervention
 
-### Solution architects should:
+### Solution architects should
 
 * Extract common failure paths
 
@@ -128,11 +128,11 @@ Use a matrix to classify items based on business impact and required effort.
 
 * Agent Improvement Plan
 
-## 4. Monitoring Agent Usage and Behavior
+## Monitoring Agent Usage and Behavior
 
 Monitoring ensures agents operate as intended and scale properly.
 
-### Key items for architects to monitor:
+### Key items for architects to monitor
 
 * Usage trends and adoption
 
@@ -158,11 +158,11 @@ Monitoring ensures agents operate as intended and scale properly.
 | Supply Chain Helper | 91% | 2.8 sec | 14 |
 | Analytics Coach | 88% | 3.2 sec | 21 |
 
-## 5. Closing the Loop: Turning Insights into Action
+## Closing the Loop Turning Insights into Action
 
 Solution architects drive improvement cycles by:
 
-### 5.1 Designing a FeedbacktoImprovement Pipeline
+### Designing a FeedbacktoImprovement Pipeline
 
 * Consolidate backlog and user feedback
 
@@ -176,7 +176,7 @@ Solution architects drive improvement cycles by:
 
 * Monitor drift and regression
 
-### 5.2 Embedding Continuous Improvement
+### Embedding Continuous Improvement
 
 * Refresh knowledge sources regularly
 
@@ -188,9 +188,9 @@ Solution architects drive improvement cycles by:
 
 * Implement new guardrails based on risk patterns
 
-### 5.3 Reporting and Stakeholder Communication
+### Reporting and Stakeholder Communication
 
-#### Communicate:
+#### Communicate
 
 * Top backlog themes
 
@@ -204,7 +204,7 @@ Solution architects drive improvement cycles by:
 
 ## References
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-agent-inventory](/microsoft-copilot-studio/guidance/kit-agent-inventory)
+[https://learn.microsoft.com/microsoft-copilot-studio/guidance/kit-agent-inventory](/microsoft-copilot-studio/guidance/kit-agent-inventory)
 
 [https://learn.microsoft.com/power-platform/admin/analytics-copilot](/power-platform/admin/analytics-copilot)
 

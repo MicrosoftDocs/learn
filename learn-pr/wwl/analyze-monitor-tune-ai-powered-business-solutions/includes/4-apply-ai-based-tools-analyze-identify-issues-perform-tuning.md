@@ -4,7 +4,7 @@ This unit equips solution architects with the knowledge and methods required to 
 
 <br>You will explore a systematic approach that includes telemetry interpretation, audit analysis, agent performance evaluation, and continuous optimization cycles.<br>By the end of this unit, you will understand the design components of a repeatable, highconfidence tuning process that aligns with enterprise governance standards.
 
-## 1. Understanding AI Analysis and Tuning
+## Understanding AI Analysis and Tuning
 
 AI based agents operate in dynamic business environments. Their performance depends on model quality, data condition, workflow orchestration, and user behavior patterns. Effective tuning requires visibility into all layers of the agent's operation.
 
@@ -20,14 +20,9 @@ AI based agents operate in dynamic business environments. Their performance depe
 
 * **Governance & Compliance Signals** - Guardrail triggers, blocked actions, security violations.
 
-## 2. AI Diagnostic Workflow
+## AI Diagnostic Workflow
 
 A structured workflow ensures consistency and helps isolate root causes faster.
-
-### Tuning Workflow
-
-:::image type="content" source="../media/tuning-workflow.png" alt-text="Tuning workflow":::
-
 
 ### Common Root Cause Categories
 
@@ -41,11 +36,11 @@ A structured workflow ensures consistency and helps isolate root causes faster.
 
 * **Governance Interference** - DLP blocking, sensitivity labels, restricted actions.
 
-## 3. Using AI Based Tools to Analyze Agent Behavior
+## Using AI Based Tools to Analyze Agent Behavior
 
 Solution architects rely on structured telemetry to uncover insights.
 
-### 3.1 Telemetry Deep Dive
+### Telemetry Deep Dive
 
 Look for:
 
@@ -57,7 +52,7 @@ Look for:
 
 * Spikes in guardrail enforcement.
 
-### 3.2 User Feedback and Transcript Analysis
+### User Feedback and Transcript Analysis
 
 Conversation logs reveal:
 
@@ -81,7 +76,7 @@ Conversation logs reveal:
 
 5. Propose knowledge, behavior, or workflow improvements
 
-## 4. Agent Performance Metrics
+## Agent Performance Metrics
 
 A performance scorecard helps measure overall capability.
 
@@ -96,11 +91,11 @@ A performance scorecard helps measure overall capability.
 | **Guardrail Compliance** | No unauthorized actions |
 | **User Satisfaction** | Positive feedback with fewer retries |
 
-## 5. Tuning Strategies for Solution Architects
+## Tuning Strategies for Solution Architects
 
 Tuning spans multiple layers of the agent architecture.
 
-### 5.1 Knowledge Tuning
+### Knowledge Tuning
 
 * Add or update knowledge files to fill content gaps.
 
@@ -108,7 +103,7 @@ Tuning spans multiple layers of the agent architecture.
 
 * Refine knowledge structure for clarity and retrieval.
 
-### 5.2 Behavioral Tuning
+### Behavioral Tuning
 
 * Adjust orchestrations or agent steps.
 
@@ -116,7 +111,7 @@ Tuning spans multiple layers of the agent architecture.
 
 * Introduce fallback strategies for ambiguous queries.
 
-### 5.3 Performance Tuning
+### Performance Tuning
 
 * Optimize connectors and external data calls.
 
@@ -124,7 +119,7 @@ Tuning spans multiple layers of the agent architecture.
 
 * Address slowprocessing logic or oversized payloads.
 
-### 5.4 GovernanceAligned Tuning
+### GovernanceAligned Tuning
 
 * Review DLP, sensitivity labels, and access rules.
 
@@ -144,9 +139,9 @@ Tuning spans multiple layers of the agent architecture.
 
 ## References
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-logging-copilot-studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
+[https://learn.microsoft.com/microsoft-copilot-studio/admin-logging-copilot-studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-improve-agent-health](/microsoft-copilot-studio/analytics-improve-agent-health)
+[https://learn.microsoft.com/microsoft-copilot-studio/analytics-improve-agent-health](/microsoft-copilot-studio/analytics-improve-agent-health)
 
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview](/microsoft-copilot-studio/analytics-overview)
+[https://learn.microsoft.com/microsoft-copilot-studio/analytics-overview](/microsoft-copilot-studio/analytics-overview)

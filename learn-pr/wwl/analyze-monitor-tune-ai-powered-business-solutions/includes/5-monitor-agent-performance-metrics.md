@@ -4,11 +4,11 @@ This unit teaches solution architects how to design and implement a performance 
 
 Solution architects are responsible for ensuring that agents perform reliably at scale, align with business outcomes, and meet governance expectations. This unit provides a repeatable monitoring framework that supports high confidence deployment, optimization, and lifecycle management.
 
-## 1. Foundations of Agent Performance Monitoring
+## Foundations of Agent Performance Monitoring
 
-### 1.1 Why Monitoring Matters
+### Why Monitoring Matters
 
-#### Effective monitoring ensures:
+#### Effective monitoring ensures
 
 * Agents behave predictably in production.
 
@@ -22,11 +22,11 @@ Solution architects are responsible for ensuring that agents perform reliably at
 
 * Monitoring focuses on **metrics**, **logs**, **telemetry**, and **user behavior signals** to help architects make informed decisions.
 
-## 2. Core Metrics for AI Agent Performance
+## Core Metrics for AI Agent Performance
 
 Solution architects should define and track a baseline set of performance indicators across operational, behavioral, and qualitative dimensions.
 
-### 2.1 Operational Metrics
+### Operational Metrics
 
 * **Latency** - Time taken to process agent requests.
 
@@ -36,7 +36,7 @@ Solution architects should define and track a baseline set of performance indica
 
 * **Resource Utilization** - Compute, memory, and token consumption.
 
-### 2.2 Quality and Reasoning Metrics
+### Quality and Reasoning Metrics
 
 * **Response Accuracy** - Alignment with expected or validated outputs.
 
@@ -44,7 +44,7 @@ Solution architects should define and track a baseline set of performance indica
 
 * **Action Effectiveness** - Completion of multistep tasks as intended.
 
-### 2.3 UserCentered Metrics
+### UserCentered Metrics
 
 * **Satisfaction Indicators** - User feedback trends and sentiment.
 
@@ -52,9 +52,9 @@ Solution architects should define and track a baseline set of performance indica
 
 * **Task Completion Rate** - Whether users achieve intended outcomes.
 
-## 3. Tools and Processes Used to Monitor AI Agents
+## Tools and Processes Used to Monitor AI Agents
 
-### There are several Microsoft tools to achieve the below objectives, specifically:
+### There are several Microsoft tools to achieve the below objectives, specifically
 
 - Azure Monitor
 - Microsoft 365 Admin Analytics
@@ -64,7 +64,7 @@ Solution architects should define and track a baseline set of performance indica
 
 Every organization has a different tool set and not everything is Microsoft specific. So architects need to analyze the below components regardless of the platform toolsets in an organization. 
 
-### 3.1 Observability Tools (General)
+### Observability Tools (General)
 
 Solution architects can design monitoring patterns using platform observability services such as:
 
@@ -92,7 +92,7 @@ Solution architects can design monitoring patterns using platform observability 
 
 #### Analytics Dashboards
 
-##### Provide trend views for:
+##### Provide trend views for
 
 * Top user tasks
 
@@ -104,7 +104,7 @@ Solution architects can design monitoring patterns using platform observability 
 
 * Quality indicators
 
-## 4. Monitoring Model Performance for Generative AI
+## Monitoring Model Performance for Generative AI
 
 Even when agent logic is stable, model-driven behavior can shift over time. Architects should monitor:
 
@@ -132,9 +132,9 @@ Even when agent logic is stable, model-driven behavior can shift over time. Arch
 
 * Errors related to external dependencies
 
-## 5. Diagnosing Issues and Applying Tuning
+## Diagnosing Issues and Applying Tuning
 
-### 5.1 Common Issue Categories
+### Common Issue Categories
 
 | **Issue Type** | **Possible Causes** | **Tuning Strategy** |
 |---|---|---|
@@ -144,7 +144,7 @@ Even when agent logic is stable, model-driven behavior can shift over time. Arch
 | **High abandonment** | Confusing steps or unclear guidance | Improve UX flow and prompt clarity |
 | **Guardrail violations** | Policy mismatch or missing rules | Adjust DLP, sensitivity labels, allowed actions |
 
-### 5.2 Tuning Techniques
+### Tuning Techniques
 
 * Refine agent instructions, prompts, and behavior patterns.
 
@@ -156,61 +156,11 @@ Even when agent logic is stable, model-driven behavior can shift over time. Arch
 
 * Apply versioning and rollback strategies for safety.
 
-## 6. Architecture
-
-### AI Agent Performance Pipeline 
-
-User Input
-
-   ↓
-
-Agent Processing
-
-   ↓
-
-Telemetry Collection
-
-   ↓
-
-Analytics & Dashboards
-
-   ↓
-
-Architect Review & Diagnosis
-
-   ↓
-
-Tuning & Optimization
-
-   ↓
-
-Redeploy Updated Agent
-
-   ↓
-
-Continuous Monitoring Loop
-
-**Performance Metrics Radar (Text Visualization)**
-
-           Accuracy ●────────────● Latency
-
-                    \          /
-
-                     \        /
-
-           Coverage ● \      / ● Throughput
-
-                       \    /
-
-                        \  /
-
-                   Satisfaction
-
 ## References
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-overview](/microsoft-copilot-studio/analytics-overview)
+[https://learn.microsoft.com/microsoft-copilot-studio/analytics-overview](/microsoft-copilot-studio/analytics-overview)
 
-[https://learn.microsoft.com/en-us/training/modules/monitor-generative-ai-app/](/training/modules/monitor-generative-ai-app/)
+[https://learn.microsoft.com/training/modules/monitor-generative-ai-app/](/training/modules/monitor-generative-ai-app/)
 
 
-[https://learn.microsoft.com/en-us/training/modules/monitor-azure-machine-learning/](/training/modules/monitor-azure-machine-learning/)
+[https://learn.microsoft.com/training/modules/monitor-azure-machine-learning/](/training/modules/monitor-azure-machine-learning/)

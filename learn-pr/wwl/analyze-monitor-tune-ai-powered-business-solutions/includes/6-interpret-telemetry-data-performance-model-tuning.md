@@ -2,7 +2,7 @@
 
 This unit equips solution architects to analyze telemetry from AI systems—such as generative models, orchestration layers, and agent pipelines—to diagnose performance issues, identify optimization opportunities, and drive continuous tuning. You will learn how to interpret operational, behavioral, and modellevel signals to guide technical and business decisions.
 
-## 1. Foundations of Telemetry Interpretation
+## Foundations of Telemetry Interpretation
 
 Telemetry provides data about how the system behaves in real time. It is essential to ensure reliability, efficiency, and model quality across production environments.
 
@@ -40,7 +40,7 @@ Telemetry provides data about how the system behaves in real time. It is essenti
 
 * Policy or sensitivity label conflicts
 
-## 2. Performance Signals and Interpretation
+## Performance Signals and Interpretation
 
 Solution architects should focus on **patterns**, not isolated events.
 
@@ -62,11 +62,11 @@ Solution architects should focus on **patterns**, not isolated events.
 | Quality Drop | Model drift, missing context | Update knowledge sources |
 | Guardrail Triggers | Policy conflict | Adjust governance rules |
 
-## 3. Model Tuning Guidance
+## Model Tuning Guidance
 
 Model tuning focuses on improving the quality and reliability of responses.
 
-### 3.1 Tuning Opportunities
+### Tuning Opportunities
 
 * **Prompt Refinement**<br>Improving instructions, constraints, and expectations for predictable results.
 
@@ -76,7 +76,7 @@ Model tuning focuses on improving the quality and reliability of responses.
 
 * **Cost Optimization**<br>Reducing unnecessary token usage and optimizing invocation structure.
 
-## 4. TelemetryDriven Diagnosis Workflow
+## TelemetryDriven Diagnosis Workflow
 
 A consistent workflow helps isolate issues quickly.
 
@@ -94,12 +94,12 @@ A consistent workflow helps isolate issues quickly.
 
 * **Validate Improvements**<br>Compare beforeandafter telemetry patterns to ensure successful tuning.
 
-## 5. Architecture Flow of Telemetry Analysis
+## Architecture Flow of Telemetry Analysis
 
 :::image type="content" source="../media/architecture-flow-telemetry-analysis.png" alt-text="Architecture Flow of Telemetry Analysis":::
 
 
-## 6. Performance KPIs for AI Systems
+## Performance KPIs for AI Systems
 
 Solution architects should define clear KPIs aligned to business goals:
 
@@ -115,10 +115,10 @@ Solution architects should define clear KPIs aligned to business goals:
 
 ## References
 
-[https://learn.microsoft.com/en-us/training/modules/monitor-generative-ai-app/6-informed-decisions](/training/modules/monitor-generative-ai-app/6-informed-decisions)
+[https://learn.microsoft.com/training/modules/monitor-generative-ai-app/6-informed-decisions](/training/modules/monitor-generative-ai-app/6-informed-decisions)
 
-[https://learn.microsoft.com/en-us/training/modules/monitor-azure-machine-learning/](/training/modules/monitor-azure-machine-learning/)
+[https://learn.microsoft.com/training/modules/monitor-azure-machine-learning/](/training/modules/monitor-azure-machine-learning/)
 
-[https://learn.microsoft.com/en-us/training/modules/evaluate-models-azure-ai-studio/](/training/modules/evaluate-models-azure-ai-studio/)
+[https://learn.microsoft.com/training/modules/evaluate-models-azure-ai-studio/](/training/modules/evaluate-models-azure-ai-studio/)
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/microsoft-copilot-fine-tune-model?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fagent-framework%2Fbread%2Ftoc.json&view=o365-worldwide](/microsoft-copilot-studio/microsoft-copilot-fine-tune-model)
+[https://learn.microsoft.com/microsoft-copilot-studio/microsoft-copilot-fine-tune-model?toc=%2Fcopilot%2Fmicrosoft-365%2Ftoc.json&bc=%2Fcopilot%2Fmicrosoft-365%2Fagent-framework%2Fbread%2Ftoc.json&view=o365-worldwide](/microsoft-copilot-studio/microsoft-copilot-fine-tune-model)
