@@ -42,7 +42,7 @@ While VNet peering provides many benefits, there are important constraints to un
 
 | Requirements/Limitations | Description |
 | --- | --- |
-| Non-overlapping address spaces |	Peered virtual networks must have non-overlapping IP address spaces. Peering creation will fail if address ranges overlap. |
+| Nonoverlapping address spaces |	Peered virtual networks must have non-overlapping IP address spaces. Peering creation fails if address ranges overlap. |
 | Address space modification restrictions	| If you want to change a VNet's address range, you need to delete the peering first, update the address space, and then set up the peering again. |
 | Basic Load Balancer limitations| Resources in one VNet can’t communicate with Basic Internal Load Balancer IPs in VNets peered across regions. Use the Standard Load Balancer for cross-region connections. |
 | DNS resolution boundaries |Azure's built-in name resolution does not work across peered VNets. Configure Azure Private DNS zones or custom DNS servers for cross-VNet name resolution. |
