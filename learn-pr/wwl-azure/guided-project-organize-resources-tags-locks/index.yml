@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: 'Guided Project: Organize and protect resources with tags and locks'
+title: 'Guided project: Organize and protect resources with tags and locks'
 summary: |
   This guided project helps you organize Azure resources with tags and protect them from accidental deletion with locks.
 
