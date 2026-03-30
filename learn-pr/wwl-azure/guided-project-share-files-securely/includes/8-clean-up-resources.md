@@ -21,4 +21,4 @@ Deleting the resource group removes the storage account, the **partner-drop** co
 
 ## Verify cleanup
 
-1.  In the portal search bar, search for **Resource groups** and confirm **rg-gp-file-exchange** no longer appears in the list.
+In the portal search bar, search for **Resource groups** and confirm **rg-gp-file-exchange** no longer appears in the list.
