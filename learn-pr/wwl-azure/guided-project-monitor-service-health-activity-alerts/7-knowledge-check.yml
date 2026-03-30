@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-monitor-service-health-activity-alerts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of an action group in Azure Monitor?"
+    choices:
+    - content: "To define which metrics are collected from resources."
+      isCorrect: false
+      explanation: "Metrics collection is configured through diagnostic settings, not action groups."
+    - content: "To define who gets notified and how when an alert fires."
+      isCorrect: true
+      explanation: "An action group specifies notification targets such as email addresses, SMS numbers, or webhook endpoints that are triggered when an alert fires."
+    - content: "To group related alert rules into a single dashboard."
+      isCorrect: false
+      explanation: "Action groups define notification actions, not dashboard layouts or alert groupings."
+  - content: "What type of alert monitors Azure platform incidents and planned maintenance?"
+    choices:
+    - content: "Activity Log alert"
+      isCorrect: false
+      explanation: "Activity Log alerts monitor management operations on your resources, not platform-wide incidents."
+    - content: "Metric alert"
+      isCorrect: false
+      explanation: "Metric alerts monitor resource performance metrics like CPU or memory, not platform health events."
+    - content: "Service Health alert"
+      isCorrect: true
+      explanation: "Service Health alerts notify you about Azure platform incidents, planned maintenance, and health advisories that may affect your resources."
+  - content: "What type of event does an Activity Log alert detect?"
+    choices:
+    - content: "Changes in resource performance metrics."
+      isCorrect: false
+      explanation: "Performance metrics are monitored by metric alerts, not Activity Log alerts."
+    - content: "Management operations such as resource creation or deletion."
+      isCorrect: true
+      explanation: "Activity Log alerts fire when specific management operations occur, such as deleting a resource group or modifying a resource."
+    - content: "User sign-in attempts to the Azure portal."
+      isCorrect: false
+      explanation: "Sign-in events are tracked in Microsoft Entra sign-in logs, not the Azure Activity Log."

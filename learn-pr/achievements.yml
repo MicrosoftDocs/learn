@@ -7905,3 +7905,8 @@ achievements:
   title: Manage secrets in your server apps with Azure Key Vault
   summary: Your application requires service passwords, connection strings, and other secret configuration values to do its job. Storing and handling secret values is risky, and every usage introduces the possibility of leakage. Azure Key Vault, in combination with managed identities for Azure resources, enables your Azure web app to access secret configuration values easily and securely. It does so without needing to store any secrets in your source control or configuration.
   iconUrl: /training/achievements/manage-secrets-with-azure-key-vault.svg
+- uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.badge
+  type: badge
+  title: Optimize spend and performance with Azure AI Foundry Provisioned Throughput reservations
+  summary: This module introduces the benefits, use cases, and implementation steps to deploy and purchase provisioned throughput units and reservations for Azure AI Foundry.
+  iconUrl: /training/achievements/generic-badge.svg
