@@ -1,10 +1,12 @@
 ## Overview
 
-This unit provides solution architects with a complete framework for designing an Application Lifecycle Management (ALM) process for AI capabilities integrated into Dynamics 365 customer experience and service applications. Because AI models, Copilot behaviors, data pipelines, and automation workflows evolve continuously, architects must apply disciplined ALM practices that ensure reliability, compliance, governance, repeatability, and safe iterative innovation.
+This unit provides solution architects with a complete framework for designing an Application Lifecycle Management (ALM) process for AI capabilities integrated into Dynamics 365 customer experience and service applications. AI models, Copilot behaviors, data pipelines, and automation workflows evolve continuously.
+Architects must apply disciplined application lifecycle management (ALM) practices to ensure reliability, compliance, governance, and repeatable innovation.
 
-This unit covers environment strategies, AI asset versioning, orchestration of multiapp dependencies, data governance considerations, deployment patterns, and continuous operational monitoring across the AI solution lifecycle.
+This unit covers environment strategies and AI asset versioning.
+It also explains deployment patterns, data governance, and operational monitoring across the AI solution lifecycle.
 
-## Foundations of ALM for AI in Dynamics 365 Customer Service and Customer Engagement (CRM( workloads
+## Foundations of ALM for AI in Dynamics 365 Customer Service and Customer Engagement (CRM(workloads
 
 AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagement require an expanded ALM lens compared to traditional application components.
 
@@ -20,7 +22,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Ensure compliance, responsible AI behavior, and auditability
 
-* Enable continuous improvement with telemetrydriven tuning
+* Enable continuous improvement with telemetry driven tuning
 
 ### AI assets to include in ALM
 
@@ -46,13 +48,13 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * _Test/Validation (TEST)_<br>Validate AI behavior using realistic datasets.<br>Run regression tests for prompts, summarization consistency, case resolution suggestions, and classification accuracy.
 
-* _PreProduction (UAT/PREPROD)_<br>Validate business acceptance, performance, safety, and compliance.<br>Test integration with live-like customer service queues, interactions, and knowledge entities.
+* _Pre-Production (UAT/PREPROD)_<br>Validate business acceptance, performance, safety, and compliance.<br>Test integration with live-like customer service queues, interactions, and knowledge entities.
 
 * _Production (PROD)_<br>Serve validated AI features with controlled deployment and continuous monitoring.
 
 ## ALM Workflow for AI Components
 
-### Step 1 — Define AI Use Cases and Data Boundaries
+### Step 1—Define AI Use Cases and Data Boundaries
 
 * Identify business goals (case summarization, sentiment detection, routing prediction, agent assistance, classification).
 
@@ -60,7 +62,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Document customer data flows, sensitivity labels, and compliance constraints.
 
-### Step 2 — Prepare Data and Knowledge Assets
+### Step 2—Prepare Data and Knowledge Assets
 
 * Validate data quality for customer interactions, cases, knowledge articles, emails, chats, and CRM records.
 
@@ -68,23 +70,23 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Align knowledge sources with Dynamics 365 Customer Service knowledge base entities.
 
-### Step 3 — Develop and Configure AI Logic
+### Step 3—Develop and Configure AI Logic
 
-* Build prompts for summarization, classification, reply suggestions, or nextbest actions.
+* Build prompts for summarization, classification, reply suggestions, or next best actions.
 
 * Configure Copilot behaviors, action rules, context definitions, and conversation boosters.
 
 * Set up environment variables for connectors, endpoints, and knowledge indices.
 
-### Step 4 — Package and Version AI Assets
+### Step 4—Package and Version AI Assets
 
 * Manage agents, prompts, flows, and data contracts inside solution files.
 
-* Use versioncontrolled repositories to track changes.
+* Use version controlled repositories to track changes.
 
 * Mark releases with semantic versioning (e.g., v1.3.2).
 
-### Step 5 — Validate Behavior Across Environments
+### Step 5—Validate Behavior Across Environments
 
 * Evaluate completeness, factual accuracy, tone, and compliance.
 
@@ -94,7 +96,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Run safety tests for hallucination, bias, and unauthorized data exposure.
 
-### Step 6 — Deploy to Production
+### Step 6—Deploy to Production
 
 * Export managed solution packages.
 
@@ -104,7 +106,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Validate initial postdeployment performance.
 
-### Step 7 — Monitor, Tune, and Iterate
+### Step 7—Monitor, Tune, and Iterate
 
 * Observe telemetry signals such as: 
 
@@ -126,9 +128,9 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 ### Responsible AI controls
 
-* Ensure prompts cannot trigger disclosure of sensitive customer information.
+* Ensure prompts can't trigger disclosure of sensitive customer information.
 
-* Enforce leastprivilege data access for AI features.
+* Enforce least privilege data access for AI features.
 
 * Apply data loss prevention (DLP) policies and sensitivity labels across environments.
 
@@ -138,7 +140,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Track prompt versions, decision logs, mapping changes, and agent updates.
 
-* Establish CAB (Change Advisory Board) reviews for highrisk AI releases.
+* Establish CAB (Change Advisory Board) reviews for high-risk AI releases.
 
 ### Data residency
 
@@ -152,11 +154,11 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 [ ] Knowledge sources aligned and tested
 
-[ ] Prompts regressiontested
+[ ] Prompts regression tested
 
 [ ] Safety and compliance verified
 
-[ ] Environment variables configured
+[ ] Environment variables are configured
 
 [ ] Deployment pipeline successful
 

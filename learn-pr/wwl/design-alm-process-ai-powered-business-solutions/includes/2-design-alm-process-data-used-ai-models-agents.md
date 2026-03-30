@@ -167,19 +167,18 @@ Rerun eval suites nightly/weekly against **golden sets**; store timeseries for a
 
 ### Go/NoGo before production
 
-- Data contract approved; asset tagged and discoverable.
-- Sensitivity labels/DLP rules applied; connectors approved.
-- Lineage graph current; dataset snapshot **immutable** and versioned.
-- Evaluation thresholds met; safety risks mitigated.
-- Residency decision recorded; cross-region toggle reviewed.
-- Dashboards, budgets, alerts, and rollback validated in PreProd.
+[ ]  Data contract approved; asset tagged and discoverable.
+[ ]  Sensitivity labels/DLP rules applied; connectors approved.
+[ ]  Lineage graph current; dataset snapshot **immutable** and versioned.
+[ ]  Evaluation thresholds met; safety risks mitigated.
+[ ]  Residency decision recorded; cross-region toggle reviewed.
+[ ]  Dashboards, budgets, alerts, and rollback validated in PreProd.
 
 ### Retirement
 
-- Consumers notified; cutover plan executed.
-- Snapshots archived/deleted per retention; access revoked.
-- Audit and lineage preserved; catalog updated.
-
+[ ]  Consumers notified; cutover plan executed.
+[ ]  Snapshots archived/deleted per retention; access revoked.
+[ ]  Audit and lineage preserved; catalog updated.
 
 ## References
 
