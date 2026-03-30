@@ -65150,5 +65150,15 @@
       "redirect_url": "/azure/security/",
       "redirect_document_id": false
     }
+        {
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/notebooks/2-represent-text-as-tensors.ipynb",
+      "redirect_url": "/azure/machine-learning/",
+      "redirect_document_id": false
+    },
+        {
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/notebooks/3-embeddings.ipynb",
+      "redirect_url": "/azure/machine-learning",
+      "redirect_document_id": false
+    }
   ]
 }

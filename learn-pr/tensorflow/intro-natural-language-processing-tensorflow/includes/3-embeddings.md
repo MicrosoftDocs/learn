@@ -176,7 +176,7 @@ To do that, we need to pretrain our embedding model on a large collection of tex
 
 CBoW is faster, and while skip-gram is slower, it does a better job of representing infrequent words.
 
-![Diagram showing both CBoW and Skip-Gram algorithms to convert words to vectors.](../media/example-algorithms-converting-words-vectors.png)
+![Diagram showing both CBoW and Skip-Gram algorithms to convert words to vectors.](../media/example-algorithms-converting-words-vectors.svg)
 
 To experiment with the Word2Vec embedding pretrained on Google News dataset, we can use the **gensim** library. Below we find the words most similar to 'neural'.
 
