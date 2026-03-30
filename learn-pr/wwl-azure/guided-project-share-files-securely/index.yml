@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: 'Guided Project: Share files securely'
+title: 'Guided project: Share files securely'
 summary: |
   This guided project teaches secure, temporary file sharing by using blob storage, stored access policies, and SAS tokens.
 
