@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=2e6bb99b-40d5-40ac-a70f-f2f83e151fe5]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f136b9de-7fa3-4689-886f-1de8c221914a]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -60,14 +60,16 @@ Here's the resulting image:
 
 ![Diagram of a color image.](../media/color-square.png)
 
-The purple squares are represented by the combination: 
+The purple squares are represented by the combination:
+
 ```
 Red: 150 
 Green: 0 
 Blue: 255 
 ```
 
-The yellow squares in the center are represented by the combination: 
+The yellow squares in the center are represented by the combination:
+
 ```
 Red: 255
 Green: 255

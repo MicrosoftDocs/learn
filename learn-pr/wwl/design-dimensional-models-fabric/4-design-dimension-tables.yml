@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dimensional-models-fabric.design-dimension-tables
+title: Design dimension tables
+metadata:
+  title: Design Dimension Tables
+  description: "Learn how to design dimension tables for descriptive attributes in a dimensional model"
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-design-dimension-tables.md)]

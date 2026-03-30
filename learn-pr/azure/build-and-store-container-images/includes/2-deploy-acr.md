@@ -36,7 +36,7 @@
 
 1. Define an environment variable, _ACR_NAME_, to hold your container registry name using the following command. Replace `<your-unique-acr-name>` with your container registry name.
 
-   The container registry name must be unique within Azure and contain 5-50 alphanumeric characters. For more information, see [Define your naming convention](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming).
+   The container registry name must be unique within Azure and contain 5-50 alphanumeric characters, lowercase, and no hyphens. For example, _learndemoregistry20260320_. For more information, see [Define your naming convention](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming).
 
     ```azurecli
     ACR_NAME=<your-unique-acr-name>

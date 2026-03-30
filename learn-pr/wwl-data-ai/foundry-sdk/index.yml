@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.foundry-sdk
+metadata:
+  title: Develop a generative AI chat app with Microsoft Foundry
+  description: Use Microsoft Foundry to develop generative AI chat applications with projects and the Responses API.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2026
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-generated
+  ms.collection:
+    - wwl-ai-copilot
+title: Develop a generative AI chat app with Microsoft Foundry
+summary: Use Microsoft Foundry to develop generative AI chat applications with projects and the Responses API.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the process for creating a generative AI chat application with Microsoft Foundry.
+  - Use the Chat playground to explore models and generate code samples.
+  - Choose an endpoint, authentication method, and client SDK for your app development.
+  - Use the Responses API to generate AI responses in applications.
+  - Use the ChatCompletions API to generate AI responses in applications.
+prerequisites: |
+  Before starting this module, you should:
+  - Be familiar with Azure services and the Azure portal.
+  - Be familiar with generative AI concepts and use cases.
+  - Have experience with Python or another programming language.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+  - developer
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.foundry-sdk.introduction
+  - learn.wwl.foundry-sdk.chat-playground
+  - learn.wwl.foundry-sdk.microsoft-foundry-sdk
+  - learn.wwl.foundry-sdk.responses-api
+  - learn.wwl.foundry-sdk.openai-api
+  - learn.wwl.foundry-sdk.exercise
+  - learn.wwl.foundry-sdk.knowledge-check
+  - learn.wwl.foundry-sdk.summary
+badge:
+  uid: learn.wwl.foundry-sdk.badge

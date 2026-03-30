@@ -24,7 +24,7 @@ abstract: |
 
   -   Describe the relationship between application objects and service principals
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/entra-module.svg
 levels:
 - intermediate
 roles:

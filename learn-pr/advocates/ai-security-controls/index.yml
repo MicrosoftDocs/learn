@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.ai-security-controls
 metadata:
-  ms.author: sayoung
-  author: sarah-yo
-  ms.date: 07/24/2024
+  ms.author: ceperezb
+  author: ceperezb
+  ms.date: 03/06/2026
   ms.update-cycle: 180-days
   title: AI Security Controls
   description: Security controls that you can implement in AI systems to increase the security posture of AI environments

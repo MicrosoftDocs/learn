@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  author: wwlpublish
-  ms.author: gmalc
-  ms.date: 05/15/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Microsoft Visual Studio."
       isCorrect: false
-      explanation: "Incorrect. While you could use the REST API from Visual Studio to create a Content Understanding analyzer, it isn't the best tool for creating a project."
+      explanation: "Incorrect. While you could use the API from Visual Studio to create a Content Understanding analyzer, it isn't the best tool for creating a project."
     - content: "Azure Machine Learning studio."
       isCorrect: false
       explanation: "Incorrect. Azure Machine Learning studio isn't a tool for working with Content Understanding projects."
-    - content: "Microsoft Foundry portal."
+    - content: "Content Understanding Studio."
       isCorrect: true
-      explanation: "Correct. Microsoft Foundry portal provides a visual interface for creating Content Understanding projects."
+      explanation: "Correct. Content Understanding Studio provides a visual interface for creating Content Understanding projects and building custom analyzers."
   - content: "What should you define for the information you want to extract from content?"
     choices:
     - content: "A schema."

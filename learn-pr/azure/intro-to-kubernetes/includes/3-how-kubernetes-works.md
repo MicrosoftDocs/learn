@@ -1,10 +1,10 @@
-A successfully configured Kubernetes installation depends on a solid understanding of the Kubernetes system architecture. Here, you look at all the components that make up a Kubernetes installation.
+A successfully configured Kubernetes installation depends on a solid understanding of the Kubernetes system architecture. In this unit, you look at the components that make up a Kubernetes installation.
 
 ## What is a computer cluster?
 
 A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster handle the same kinds of tasks. For example, they'll all host websites, APIs, or run compute-intensive work.
 
-A cluster uses centralized software that's responsible for scheduling and controlling these tasks. The computers in a cluster that run the tasks are called *nodes*, and the computers that run the scheduling software are called control *planes*.
+A cluster uses centralized software that's responsible for scheduling and controlling these tasks. The computers in a cluster that run the tasks are called _nodes_, and the computers that run the scheduling software are called control _planes_.
 
 :::image type="content" source="../media/3-diagram-cluster.svg" alt-text="Diagram of a computer cluster that shows how a task is distributed via the control plane to three nodes and the interaction between the nodes." border="false":::
 
@@ -18,7 +18,7 @@ A Kubernetes cluster contains at least one main plane and one or more nodes. Bot
 
 You can also run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data-processing service in the drone-tracking app is written as a .NET 4.5 app that uses specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
 
-Now, let's look at both the control planes and worker nodes and the software that runs on each in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
+Now, let's look at both the control planes and worker nodes and the software that runs on each in more detail. Understanding the role of each component and where each component runs in the cluster helps you when you install Kubernetes.
 
 ### Kubernetes control plane
 
@@ -49,7 +49,7 @@ The following services make up a Kubernetes cluster's control plane:
 
 ### What is the API server?
 
-You can think of the API server as the front end to your Kubernetes cluster's control plane. All the communication between the components in Kubernetes is done through this API.
+You can think of the API server as the front end to your Kubernetes cluster's control plane. All of the communication between the components in Kubernetes is done through this API.
 
 For example, as a user, you use a command-line app called `kubectl` that allows you to run commands against your Kubernetes cluster's API server. The component that provides this API is called `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
 
@@ -68,7 +68,7 @@ In a production Kubernetes cluster, the official Kubernetes guidance is to have 
 
 ### What is the scheduler?
 
-The scheduler is the component that's responsible for the assignment of workloads across all nodes. The scheduler monitors the cluster for newly created containers and assigns them to nodes.
+The scheduler is the component that's responsible for the workload assignment across all nodes. The scheduler monitors the cluster for newly created containers and assigns them to nodes.
 
 ### What is the controller manager?
 
@@ -98,21 +98,21 @@ The following services run on the Kubernetes node:
 
 ### What is the kubelet?
 
-The kubelet is the agent that runs on each node in the cluster and monitors work requests from the API server. It makes sure that the requested unit of work is running and healthy.
+The `kubelet` is the agent that runs on each node in the cluster and monitors work requests from the API server. It makes sure that the requested unit of work is running and healthy.
 
-The kubelet monitors the nodes and makes sure that the containers scheduled on each node run as expected. The kubelet manages only containers that Kubernetes creates. It isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
+The `kubelet` monitors the nodes and makes sure that the containers scheduled on each node run as expected. The kubelet manages only containers that Kubernetes creates. It isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
 
 ### What is kube-proxy?
 
-The kube-proxy component is responsible for local cluster networking and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
+The `kube-proxy` component is responsible for local cluster networking and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using `iptables` and IP Virtual Server (IPVS).
 
-This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on CoreDNS is recommended and installed by default.
+This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on `CoreDNS` is recommended and installed by default.
 
 ### What is the container runtime?
 
-The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, containerd, rkt, CRI-O, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that enables the kubelet to communicate with the available container runtime.
+The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, `containerd`, `rkt`, CRI-O, and `frakti`. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that enables the `kubelet` to communicate with the available container runtime.
 
-The default container runtime in AKS is containerd, an industry-standard container runtime.
+The default container runtime in AKS is `containerd`, an industry-standard container runtime.
 
 ## Interact with a Kubernetes cluster
 
@@ -122,7 +122,7 @@ Kubernetes provides a command-line tool called `kubectl` to manage your cluster.
 
 - **Cluster** configuration specifies a cluster name, certificate information, and the service API endpoint associated with the cluster. This definition allows you to connect from a single workstation to multiple clusters.
 - **User** configuration specifies the users and their permission levels when they're accessing the configured clusters.
-- **Context** configuration groups clusters and users by using a friendly name. For example, you might have a "dev-cluster" and a "prod-cluster" to identify your development and production clusters.
+- **Context** configuration groups clusters and users by using a friendly name. For example, you might have a _dev-cluster_ and a _prod-cluster_ to identify your development and production clusters.
 
 You can configure `kubectl` to connect to multiple clusters by providing the correct context as part of the command-line syntax.
 

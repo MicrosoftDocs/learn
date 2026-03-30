@@ -3,15 +3,15 @@ Conditional Access is a tool that Microsoft Entra ID uses to allow (or deny) acc
 Conditional Access helps IT administrators:
 
  -  Empower users to be productive wherever and whenever.
- -  Protect the organization's assets.
+ -  Protect critical assets.
 
-Conditional Access also provides a more granular multifactor authentication experience for users. For example, a user might not be challenged for second authentication factor if they're at a known location. However, they might be challenged for a second authentication factor if their sign-in signals are unusual or they're at an unexpected location.
+Conditional Access also provides a more granular multifactor authentication experience for users. For example, a user might not be challenged for a second authentication factor if they're at a known location. However, they might be challenged for a second authentication factor if their sign-in signals are unusual or they're at an unexpected location.
 
 During sign-in, Conditional Access collects signals from the user, makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for a multifactor authentication response.
 
 The following diagram illustrates this flow:
 
-:::image type="content" source="../media/conditional-access-9bd268b8-757297cb.png" alt-text="Diagram showing the conditional access flow of a signal leading to a decision, leading to enforcement.":::
+:::image type="content" source="../media/conditional-access-option-signal-decision-flow.png" alt-text="Diagram showing the conditional access pipeline: signals such as user role, location, and device are evaluated, then enforced as allow, require MFA, or block.":::
 
 
 Here, the signal might be the user's location, the user's device, or the application that the user is trying to access.
@@ -24,7 +24,14 @@ Enforcement is the action that carries out the decision. For example, the action
 
 Conditional Access is useful when you need to:
 
- -  Require multifactor authentication (MFA) to access an application depending on the requester’s role, location, or network. For example, you could require MFA for administrators but not regular users or for people connecting from outside your corporate network.
+ -  Require multifactor authentication (MFA) to access an application depending on the requester’s role, location, or network. For example, you could require MFA for administrators, or for people connecting from outside trusted network locations.
  -  Require access to services only through approved client applications. For example, you could limit which email applications are able to connect to your email service.
  -  Require users to access your application only from managed devices. A managed device is a device that meets your standards for security and compliance.
  -  Block access from untrusted sources, such as access from unknown or unexpected locations.
+
+The following diagram shows how these common scenarios map signals to enforcement actions:
+
+:::image type="content" source="../media/conditional-access-option-use-case-scenarios.png" alt-text="Diagram showing four conditional access scenarios: MFA for privileged roles, approved client apps only, require managed devices, and block untrusted sources, each with their signals and enforcement actions.":::
+
+Common IT tasks include requiring MFA for privileged roles, restricting access to sensitive apps from unmanaged devices, and blocking risky sign-ins from unexpected locations.
+

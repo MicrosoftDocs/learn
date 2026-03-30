@@ -2,7 +2,7 @@
 uid: learn.wwl.govern-ai-ready-infrastructure
 metadata:
   title: Govern AI-ready Infrastructure
-  description: This course teaches how to govern AI‑ready infrastructure with Microsoft Foundry by enforcing policies, secure access, managing costs, regulating model behavior, and monitor compliance through practical, real‑world governance scenarios.
+  description: This course teaches how to govern AI-ready infrastructure with Microsoft Foundry by enforcing policies, secure access, managing costs, regulating model behavior, and monitor compliance through practical, real-world governance scenarios.
   ms.date: 02/11/2026
   author: wwlpublish
   ms.author: bradj
@@ -14,7 +14,7 @@ prerequisites: |
   - Experience using the Azure portal or Azure CLI to deploy and configure resources.
   - Basic knowledge of identity, access, and security concepts in Azure, such as RBAC and Microsoft Entra ID.
 summary: |
-  This course teaches how to govern AI‑ready infrastructure with Microsoft Foundry by enforcing policies, secure access, managing costs, regulating model behavior, and monitor compliance through practical, real‑world governance scenarios.
+  This course teaches how to govern AI-ready infrastructure with Microsoft Foundry by enforcing policies, secure access, managing costs, regulating model behavior, and monitor compliance through practical, real-world governance scenarios.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
@@ -22,7 +22,7 @@ roles:
 - administrator
 products:
 - azure
-- azure-ai-foundry 
+- microsoft-foundry 
 subjects:
 - cloud-computing
 - infrastructure

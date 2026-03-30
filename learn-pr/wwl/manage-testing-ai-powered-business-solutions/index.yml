@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.manage-testing-ai-powered-business-solutions
+metadata:
+  title: "Manage Testing AI-Powered Business Solutions"
+  description: "Learn to validate and maintain AI-powered business solutions with structured testing frameworks, metrics, and governance for enterprise reliability."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+title: "Manage testing AI-powered business solutions"
+summary: Learn to validate and maintain AI-powered business solutions with structured testing frameworks, metrics, and governance.
+abstract: |
+  After completing this module, you'll be able to:
+  - Design structured testing processes for AI agents, custom models, and multi-application scenarios.
+  - Define measurable validation criteria for performance, safety, and compliance.
+  - Implement scalable testing strategies using Copilot for consistency and coverage.
+  - Ensure AI solutions align with enterprise goals and remain trustworthy throughout their lifecycle.
+prerequisites: |
+  - Familiarity with AI concepts and business applications.
+  - Experience in solution architecture or enterprise system design.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.manage-testing-ai-powered-business-solutions.introduction
+- learn.wwl.manage-testing-ai-powered-business-solutions.recommend-process-metrics-test-agents
+- learn.wwl.manage-testing-ai-powered-business-solutions.create-validation-criteria-custom-ai-models
+- learn.wwl.manage-testing-ai-powered-business-solutions.validate-effective-copilot-prompt-best-practices
+- learn.wwl.manage-testing-ai-powered-business-solutions.design-test-scenarios-ai-solutions-multiple-dynamics-365-apps
+- learn.wwl.manage-testing-ai-powered-business-solutions.build-strategy-creating-test-cases-using-copilot
+- learn.wwl.manage-testing-ai-powered-business-solutions.knowledge-check
+- learn.wwl.manage-testing-ai-powered-business-solutions.summary
+badge:
+  uid: learn.wwl.manage-testing-ai-powered-business-solutions.badge

@@ -18,7 +18,7 @@ levels:
 roles:
 - data-scientist
 products:
-- ai-services
+- foundry-tools
 - azure-machine-learning
 subjects:
 - machine-learning

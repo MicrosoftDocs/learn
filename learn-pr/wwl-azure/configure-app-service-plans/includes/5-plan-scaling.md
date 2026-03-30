@@ -33,9 +33,30 @@ There are several considerations to keep in mind when you configure autoscale fo
 - **Adequate scale margin**. Make sure your maximum and minimum instance count values are different, and set an adequate margin between the two values. You can automatically scale between the minimum and maximum by using rules you create.
 
 - **Scale rule combinations**. Always use a scale-out and scale-in rule combination that performs an increase and decrease. If you don't set a scale-out rule, your application might fail, or performance might degrade under increased loads. If you don't set a scale-in rule, you can experience unnecessary and extensive costs when the load decreases.
-
+  
 - **Metric statistics**. Carefully choose the appropriate statistic for your diagnostic metrics, including Average, Minimum, Maximum, and Total.
-
+ 
 - **Default instance count**. Always select a safe default instance count. The default instance count is important because autoscale scales your service to the count you specify when metrics aren't available.
 
 - **Notifications**. Always configure autoscale notifications. It's important to maintain awareness of how your application is performing as the load changes.
+
+
+### Things to consider when configuring automatic scaling
+
+In addition to rule-based autoscale, Azure App Service offers Automatic scaling (also called Elastic scaling) for PremiumV2 and PremiumV3 tiers. This is a separate scaling feature that works differently from the autoscale rules.
+
+- **HTTP traffic-based.** Automatic scaling responds directly to incoming HTTP requests without requiring you to configure scaling rules.
+ 
+- **Platform-managed.** Azure automatically manages the scaling decisions based on traffic patterns, eliminating the need for rule configuration.
+ 
+- **Always-ready instances.** Maintains warmed instances to handle traffic spikes immediately.
+ 
+- **Tier availability.** Available only on PremiumV2 and PremiumV3  tiers.
+ 
+### Choose between Autoscale and Automatic scaling
+
+- **Use rule-based Autoscale.** You need custom scaling logic, want to scale based on multiple metrics, or need schedule-based scaling.
+  
+- **Use Automatic scaling.** You want less management, can't predict load patterns, or need fast response to traffic changes without rule configuration.
+
+

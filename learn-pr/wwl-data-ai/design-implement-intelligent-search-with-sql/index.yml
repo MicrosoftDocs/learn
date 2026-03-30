@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.design-implement-intelligent-search-with-sql
+metadata:
+  title: Design and implement intelligent search with SQL
+  description: Implement intelligent search capabilities in SQL Server and Azure SQL by combining traditional full-text search with semantic vector search. Learn to choose search approaches, prepare SQL for vector search, and implement vector, hybrid, and ranking-based search patterns.
+  ms.date: 02/03/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-assisted
+title: Design and implement intelligent search with SQL
+summary: Implement intelligent search capabilities in SQL Server and Azure SQL by combining traditional full-text search with semantic vector search. Establish a mental model for different search approaches, prepare SQL for vector-based search, and implement vector, hybrid, and ranking-based search patterns with performance considerations.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Choose between full-text, semantic vector, and hybrid search approaches.
+  *   Implement full-text search for keyword-based queries.
+  *   Design for vector data including vector data type, indexes, and size.
+  *   Evaluate vector index types and metrics, and choose between ANN and ENN.
+  *   Implement vector search using vector-related functions.
+  *   Implement hybrid search and Reciprocal Rank Fusion (RRF).
+  *   Evaluate performance of vector and hybrid search.
+prerequisites: |
+  *   Basic understanding of SQL and Transact-SQL.
+  *   Familiarity with Azure SQL Database or SQL Server.
+  *   Understanding of embeddings and vector concepts.
+iconUrl: /training/achievements/generic-database.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+products:
+- azure
+- azure-sql-database
+- sql-server
+subjects:
+- databases
+- artificial-intelligence
+- cloud-computing
+units:
+- learn.wwl.design-implement-intelligent-search-with-sql.introduction
+- learn.wwl.design-implement-intelligent-search-with-sql.choose-intelligent-search-approach
+- learn.wwl.design-implement-intelligent-search-with-sql.implement-full-text-search
+- learn.wwl.design-implement-intelligent-search-with-sql.prepare-sql-vector-search
+- learn.wwl.design-implement-intelligent-search-with-sql.implement-vector-search-query-patterns
+- learn.wwl.design-implement-intelligent-search-with-sql.implement-hybrid-search-ranking
+- learn.wwl.design-implement-intelligent-search-with-sql.exercise-implement-intelligent-search
+- learn.wwl.design-implement-intelligent-search-with-sql.knowledge-check
+- learn.wwl.design-implement-intelligent-search-with-sql.summary
+badge:
+  uid: learn.wwl.design-implement-intelligent-search-with-sql.badge

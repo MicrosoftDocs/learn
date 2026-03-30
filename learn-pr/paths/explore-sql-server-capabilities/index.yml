@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-sql-server-capabilities
+metadata:
+  title: Explore SQL Server 2025 capabilities
+  description: Explore SQL Server 2025 capabilities
+  ms.date: 11/10/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: learning-path
+title: Explore SQL Server 2025 capabilities
+prerequisites: |
+  - Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability.
+  - Fundamental knowledge of T-SQL language.
+  - Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS).
+  - Basic understanding of AI and machine learning concepts.
+  - Familiarity with hybrid cloud architectures.
+summary: |
+  Learn about SQL Server 2025 enhancements, including:
+  - AI-powered capabilities with vector search and embeddings.
+  - Hybrid data platform with cloud and on-premises integration.
+  - Data virtualization and PolyBase improvements with S3-compatible object storage.
+  - T-SQL enhancements for modern development workflows.
+  - Enhanced security, analytics, and performance features.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- database-administrator
+- data-engineer
+- developer
+products:
+- sql-server
+modules:
+- learn.wwl.introduction-to-sql-server
+- learn-wwl.build-ai-solutions-sql-server
+- learn.wwl.understand-hybrid-data-platform-sql-server
+- learn.wwl.sql-server-data-virtualization
+- learn.wwl.introduction-sql-server-t-sql-enhancements
+trophy:
+  uid: learn.wwl.explore-sql-server-capabilities.trophy

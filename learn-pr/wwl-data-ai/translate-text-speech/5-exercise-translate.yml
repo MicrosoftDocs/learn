@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-speech.exercise-translate
+title: Exercise - Translate text and speech
+metadata:
+  title: Exercise - Translate text and speech
+  description: Exercise for text and speech translation using Azure Translator and Azure Speech in Foundry Tools
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 3/13/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-translate.md)]

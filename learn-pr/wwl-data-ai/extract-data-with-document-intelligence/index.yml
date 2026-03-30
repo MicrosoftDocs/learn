@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.extract-data-with-document-intelligence
+metadata:
+  title: Extract data with Azure Document Intelligence
+  description: Azure Document Intelligence uses OCR and deep learning to extract text, key-value pairs, tables, and structured data from documents. Learn how to use prebuilt models, train custom models, and build document processing solutions.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
+  ms.service: azure-ai-document-intelligence
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.collection:
+    - wwl-ai-copilot
+title: Extract data with Azure Document Intelligence
+summary: Azure Document Intelligence uses OCR and deep learning models to extract text, key-value pairs, tables, and structured data from forms and documents. Learn how to use prebuilt and custom models to automate document processing.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the capabilities and components of Azure Document Intelligence.
+  - Use the Document Intelligence Studio to explore and test models.
+  - Use prebuilt models to extract data from common document types.
+  - Train and use custom models for industry-specific forms.
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - Programming experience with C# or Python.
+iconUrl: /training/achievements/extract-data-with-document-intelligence.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- foundry-tools
+- document-intelligence
+- microsoft-foundry
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.extract-data-with-document-intelligence.introduction
+- learn.wwl.extract-data-with-document-intelligence.what-is-document-intelligence
+- learn.wwl.extract-data-with-document-intelligence.use-document-intelligence-studio
+- learn.wwl.extract-data-with-document-intelligence.use-prebuilt-models
+- learn.wwl.extract-data-with-document-intelligence.train-custom-models
+- learn.wwl.extract-data-with-document-intelligence.exercise
+- learn.wwl.extract-data-with-document-intelligence.knowledge-check
+- learn.wwl.extract-data-with-document-intelligence.summary
+badge:
+  uid: learn.wwl.extract-data-with-document-intelligence.badge

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Segoe UI, sans-serif">
+  <!-- Center: Fact_Sales -->
+  <rect x="200" y="150" width="200" height="80" rx="8" fill="#0078D4"/>
+  <text x="300" y="198" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">Fact_Sales</text>
+
+  <!-- Top: Dim_Product -->
+  <rect x="200" y="20" width="200" height="60" rx="8" fill="#0099BC"/>
+  <text x="300" y="57" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Product</text>
+
+  <!-- Right: Dim_Customer -->
+  <rect x="440" y="150" width="150" height="60" rx="8" fill="#0099BC"/>
+  <text x="515" y="187" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Customer</text>
+
+  <!-- Bottom: Dim_Date -->
+  <rect x="200" y="310" width="200" height="60" rx="8" fill="#0099BC"/>
+  <text x="300" y="347" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Date</text>
+
+  <!-- Left: Dim_Store -->
+  <rect x="10" y="150" width="150" height="60" rx="8" fill="#0099BC"/>
+  <text x="85" y="187" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Store</text>
+
+  <!-- Lines (no cardinality markers) -->
+  <line x1="300" y1="80" x2="300" y2="150" stroke="#555555" stroke-width="1.5"/>
+  <line x1="440" y1="180" x2="400" y2="180" stroke="#555555" stroke-width="1.5"/>
+  <line x1="300" y1="310" x2="300" y2="230" stroke="#555555" stroke-width="1.5"/>
+  <line x1="160" y1="180" x2="200" y2="180" stroke="#555555" stroke-width="1.5"/>
+</svg>

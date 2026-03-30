@@ -1,6 +1,6 @@
 Before you can write queries and explore the meteorological data, you need to connect to a database that holds this data.
 
-To complete the exercises in this module, you need an Azure account. If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+To complete the exercises in this module, you need an Azure account. If you don't have an Azure account, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Connect to the data
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-generative-ai-model-performance.fine-tune-model
+title: Fine-tune a model for consistent behavior
+metadata:
+  title: Fine-tune a model for consistent behavior
+  description: Learn when and how to fine-tune a language model to maximize behavioral consistency, including supervised fine-tuning, reinforcement fine-tuning, and Direct Preference Optimization.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/24/2026
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-fine-tune-model.md)]

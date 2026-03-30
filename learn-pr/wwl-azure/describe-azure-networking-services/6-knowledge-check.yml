@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-networking-services.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 03/06/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  module_assessment: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure networking feature lets you divide a virtual network into smaller logical segments?"
+    choices:
+    - content: "Subnets"
+      isCorrect: true
+      explanation: "Subnets segment an Azure virtual network into smaller address ranges that you can use to organize and secure resources."
+    - content: "Availability sets"
+      isCorrect: false
+      explanation: "Availability sets are used with virtual machines for resiliency, not for virtual network segmentation."
+    - content: "Resource locks"
+      isCorrect: false
+      explanation: "Resource locks protect resources from deletion or modification, but they don't segment network address space."
+  - content: "If a company needs private, predictable connectivity between an on-premises datacenter and Azure, which service is the best fit?"
+    choices:
+    - content: "Azure ExpressRoute"
+      isCorrect: true
+      explanation: "ExpressRoute provides private connectivity to Azure without sending traffic over the public internet."
+    - content: "Azure Front Door"
+      isCorrect: false
+      explanation: "Azure Front Door is an application delivery and acceleration service, not a private on-premises connectivity service."
+    - content: "Azure Load Balancer"
+      isCorrect: false
+      explanation: "Azure Load Balancer distributes traffic within Azure workloads, but it doesn't provide dedicated private connectivity from on-premises sites."
+  - content: "Which VPN gateway type is recommended in Azure for connections between virtual networks and for multisite scenarios?"
+    choices:
+    - content: "Route-based VPN gateway"
+      isCorrect: true
+      explanation: "Route-based VPN gateways are the preferred option for virtual network-to-virtual network and multisite configurations."
+    - content: "Policy-based VPN gateway"
+      isCorrect: false
+      explanation: "Policy-based gateways support specific scenarios, but route-based gateways are preferred for broader Azure connectivity patterns."
+    - content: "Point-based VPN gateway"
+      isCorrect: false
+      explanation: "Point-based VPN gateway isn't an Azure gateway type."
+  - content: "What is a primary benefit of Azure DNS?"
+    choices:
+    - content: "You can manage DNS records using Azure credentials and tools"
+      isCorrect: true
+      explanation: "Azure DNS integrates with Azure Resource Manager, so you manage DNS records with the same credentials, APIs, and tools used for other Azure resources."
+    - content: "It provides a built-in domain registrar for all domains"
+      isCorrect: false
+      explanation: "Azure DNS hosts and manages DNS records, but it doesn't replace all domain registration services."
+    - content: "It removes the need for all network security controls"
+      isCorrect: false
+      explanation: "Azure DNS helps with name resolution and DNS management, but network security controls are still required."

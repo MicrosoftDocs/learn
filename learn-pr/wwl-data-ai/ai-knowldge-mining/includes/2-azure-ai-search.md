@@ -10,7 +10,7 @@ Azure AI Search indexes contain insights extracted from your data; which can inc
 
 ![Diagram of Azure AI Search supporting multiple applications.](../media/ai-search.png)
 
-Azure AI search has many applications, including:
+Azure AI Search has many applications, including:
 
 - Implementing an *enterprise search* solution to help employees or customers find information in websites or applications.
 - Supporting *retrieval augmented generation* (RAG) in generative AI applications by using vector-based indexes for prompt grounding data.

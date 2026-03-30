@@ -24,4 +24,4 @@ Expand your infrastructure monitoring capabilities by exploring these advanced a
 - [Azure Monitor Workbooks documentation](/azure/azure-monitor/visualize/workbooks-overview) - Create custom interactive reports combining metrics, logs, and visualizations
 - [Advanced KQL query techniques](/azure/data-explorer/kusto/query/tutorials/learn-common-operators) - Learn time-series functions, join operations, and optimization strategies
 - [Azure Automation with Azure Monitor](/azure/automation/automation-create-alert-triggered-runbook) - Configure automated remediation responses triggered by alert rules
-- [Monitor and optimize Azure resources learning path](/training/paths/monitor-optimize-azure-resources/) - Comprehensive learning path covering monitoring, cost optimization, and performance tuning
+- [Monitor and optimize Azure resources learning path](/training/paths/az-104-monitor-backup-resources/) - Comprehensive learning path covering monitoring, cost optimization, and performance tuning

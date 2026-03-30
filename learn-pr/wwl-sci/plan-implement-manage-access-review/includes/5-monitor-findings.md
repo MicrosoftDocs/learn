@@ -2,7 +2,7 @@ Microsoft Entra ID simplifies how enterprises manage access to groups and applic
 
 ## Perform access review using My Apps
 
-You can start the Access Review process from the notification email or by going directly to the site.
+You can start the access review process from the notification email or by going directly to the site.
 
 1.  **Email**:
     
@@ -12,13 +12,12 @@ You can start the Access Review process from the notification email or by going 
 3.  **If you don't have the email**, you can find your pending access reviews by following these steps:
     
     
-    1.  Sign in to the My Apps portal at [https://myapps.microsoft.com](https://myapps.microsoft.com/).
-    2.  In the upper-right corner of the page, select the user next to your name and default organization. If more than one organization is listed, select the organization that requested an access review.
-    3.  Select the **Access reviews** tile to see a list of pending access reviews.
+    1.  Sign in to the My Access portal at [https://myaccess.microsoft.com](https://myaccess.microsoft.com/).
+    2.  Select **Access reviews** from the left menu to see a list of pending access reviews assigned to you.
         
         > [!IMPORTANT]
-        > If the Access reviews tile isn't visible, there are no access reviews to perform for that organization and no action is needed at this time.
-    4.  Select the **Begin review** link for the access review you want to perform.
+        > If no access reviews appear, there are no access reviews to perform for that organization and no action is needed at this time.
+    3.  Select the name of the access review you want to perform.
 
 Once you open the access review, you see the names of users who need to have their access reviewed.
 
@@ -32,9 +31,9 @@ There are two ways that you can approve or deny access:
 1.  Review the list of users and decide whether to approve or deny their continued access.
     
     
-    - To approve or deny access for a single user, select the row to open a window to specify the action to take.
-    - To approve or deny access for multiple users, add check marks next to the users and then select the **Review X user(s)** button to open a window to specify the action to take.
-2.  Select **Approve** or **Deny**.
+    - To approve or deny access for a single user, select the circle next to their name.
+    - To approve or deny access for multiple users, select the circles next to each user.
+2.  Select **Approve** or **Deny** on the bar.
     
     > [!NOTE]
     > If you're unsure, you can select "Don't know" and the user gets to keep their access and your choice is recorded in the audit logs.
@@ -50,7 +49,12 @@ There are two ways that you can approve or deny access:
 
 ### Approve or deny access based on recommendations
 
-To make access reviews easier and faster for you, we also provide recommendations that you can accept with a single acceptance. The recommendations are generated based on the user's sign-in activity.
+To make access reviews easier and faster for you, we also provide recommendations that you can accept with a single selection. The system generates recommendations using two methods:
 
-1.  In the blue bar at the bottom of the page, select **Accept recommendations**. You see a summary of the recommended actions.
-2.  Select **OK** to accept the recommendations.
+- **No sign-in within 30 days**: Users who haven't signed in during the past 30 days are recommended for denial. The user's last sign-in date displays alongside the recommendation.
+- **Peer outlier**: If a user doesn't have the same access as their peers, the system recommends denial based on the user's average distance in the organization's reporting structure.
+
+To accept recommendations:
+
+1.  Select one or more users, then select **Accept recommendations** on the bar. Or, to accept recommendations for all unreviewed users, make sure no users are selected and then select **Accept recommendations** on the top bar.
+2.  Select **Submit** to confirm.

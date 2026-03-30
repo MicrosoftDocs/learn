@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=b485720c-8027-4124-920c-323597115a8d]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bd45cea3-e10d-4aba-ae8d-db759299a446]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!

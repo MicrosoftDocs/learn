@@ -4,7 +4,7 @@ title: Resolve duplicates and nulls
 metadata:
   title: Resolve Duplicates and Nulls
   description: Learn how to identify and resolve duplicate records and handle null or missing values in Azure Databricks using SQL and PySpark approaches.
-  ms.date: 02/17/2026
+  ms.date: 03/26/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

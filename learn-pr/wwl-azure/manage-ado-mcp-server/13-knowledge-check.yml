@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 8
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "After installing and configuring the Azure DevOps MCP Server in Visual Studio Code, what is the best first step to validate setup safely?"
+    choices:
+    - content: "Run a read-only query that confirms organization and project context before approving broader actions."
+      isCorrect: true
+      explanation: "Correct. A scoped read-only validation confirms identity, connectivity, and context with minimal risk."
+    - content: "Immediately execute a batch update on work items to verify write permissions."
+      isCorrect: false
+      explanation: "Incorrect. Starting with high-impact write operations increases risk before trust and context are validated."
+    - content: "Approve all prompts for the session to reduce setup friction."
+      isCorrect: false
+      explanation: "Incorrect. Broad approvals should come only after confidence is established through deliberate validation."
+  - content: "Which prompt approach most improves reliability when creating and linking work items through MCP?"
+    choices:
+    - content: "Use explicit project, work item type, and relationship intent so the payload scope is unambiguous."
+      isCorrect: true
+      explanation: "Correct. Clear targets and relationship intent reduce ambiguity and produce safer, more actionable results."
+    - content: "Use short generic prompts and rely on MCP to infer the rest from prior chat context."
+      isCorrect: false
+      explanation: "Incorrect. Overly generic prompts often lead to scope drift and extra correction cycles."
+    - content: "Avoid linking work items until after the sprint ends to reduce prompt complexity."
+      isCorrect: false
+      explanation: "Incorrect. Delayed linking weakens traceability during active planning and delivery."
+  - content: "When managing pull requests with MCP, what reflects strong governance-aligned practice?"
+    choices:
+    - content: "Use MCP to assemble context and draft focused comments, while keeping final approval with required human reviewers and branch policies."
+      isCorrect: true
+      explanation: "Correct. MCP accelerates review preparation, but policy and accountable human approval still govern merge decisions."
+    - content: "Auto-approve pull requests when MCP summaries indicate low risk."
+      isCorrect: false
+      explanation: "Incorrect. Summaries assist review, but they do not replace required policy checks and human judgment."
+    - content: "Skip linked work-item validation if the PR title appears complete."
+      isCorrect: false
+      explanation: "Incorrect. Traceability checks are essential for quality and auditability."
+  - content: "During release-day pipeline monitoring, which action best supports fast and reliable incident response?"
+    choices:
+    - content: "Anchor follow-up queries to the build ID, track stage status, and escalate to targeted log inspection when failures appear."
+      isCorrect: true
+      explanation: "Correct. Build ID anchoring and focused escalation create a clean path from detection to diagnosis."
+    - content: "Monitor by pipeline display name only and rerun immediately on any failure."
+      isCorrect: false
+      explanation: "Incorrect. Name-only tracking can cause ambiguity, and immediate reruns without diagnosis can hide root causes."
+    - content: "Wait until all pipelines complete before checking failures to avoid interruptions."
+      isCorrect: false
+      explanation: "Incorrect. Delayed triage increases delivery risk and slows coordinated response."

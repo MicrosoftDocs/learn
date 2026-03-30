@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-models-embeddings-with-sql.create-manage-external-model-sql
+title: Create and manage external models in SQL
+metadata:
+  title: Create and manage external models in SQL
+  description: Create and manage external models that reference AI endpoints directly from Transact-SQL.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/02/2026
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/03-create-manage-external-model-sql.md)]

@@ -1,32 +1,32 @@
-Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploys applications. We'll also briefly describe some of the challenges our teams face.
+Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploys applications. We also describe some of the challenges our teams face.
 
 The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software and an operations team responsible for deploying these applications. The operations team is also responsible for managing the application-hosting infrastructure.
 
-For example, assume we're developing an order-tracking portal for our company's various outlets to use. Several environments host our applications during the app's development and publishing process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
+For example, assume we're developing an order-tracking portal for our company's various outlets to use. Several environments host our applications during the app's development and publishing process. To begin, the development team develops and tests the software in a development environment. Next, the software is deployed to a quality assurance (QA) environment, followed by preproduction, and then a final production environment.
 
-There are several challenges that we'll need to consider in the preceding scenario:
+The software development process has several challenges that we need to consider:
 
 - **Managing hosting environments**
 
-    The different environments all require both software and hardware management. We have to ensure that both the installed software and configured hardware in each is the same. We also need to configure aspects such as network access, data storage, and security per environment in a consistent and easily reproducible manner.
+    The different environments all require both software and hardware management. We must ensure that both the installed software and configured hardware in each is the same. We also need to configure aspects like network access, data storage, and security per environment in a consistent and easily reproducible manner.
 
 - **Continuity in software delivery**
 
-    Deploying applications to our environments must happen consistently. Each deployment package must include all system packages, binaries, libraries, configuration files, and other items that ensure a fully functional application. We also need to make sure that all of these dependencies match software versions and architecture.
+    Deploying applications to our environments must be consistent. Each deployment package must include all system packages, binaries, libraries, configuration files, and other items that ensure a fully functional application. We also need to make sure that all of these dependencies match software versions and architecture.
 
 - **Efficient hardware use**
 
-    Each deployed application must execute in such a way that it's isolated from other applications running on the same hardware. We aim to run more than one application per server to make the best use of resources without compromising each other.
+    Each deployed application must be isolated from other applications that run on the same hardware. We want to run more than one application per server to make the best use of resources without compromising each other.
 
 - **Application portability**
 
     There are several reasons why application portability is essential. A hosting environment might fail, or we might need to scale out our application. In both instances, the potential result is redeploying our software to a new environment. We want to move software from one host to another, even if the underlying infrastructure is different. Such a move needs to happen as fast as possible to reduce downtime for our customers.
 
-Before we look at the Docker features that help solve these challenges, we'll discuss a few concepts and look at a brief overview of the Docker architecture.
+Before we look at the Docker features that help solve these challenges, we discuss a few concepts and look at a brief overview of the Docker architecture.
 
 ## What is a container?
 
-A container is a loosely isolated environment that allows us to build and run software packages. These software packages include the code and all dependencies to run applications quickly and reliably on any computing environment. We call these packages _container images_.
+A container is an isolated environment that allows us to build and run software packages. These software packages include the code and all dependencies to run applications on any computing environment. We call these packages _container images_.
 
 The container image becomes the unit we use to distribute our applications.
 
@@ -49,7 +49,7 @@ The Docker Engine consists of several components configured as a client-server i
 :::image type="complex" source="../media/2-docker-architecture.svg" alt-text="Diagram showing a high-level overview of the Docker architecture.":::
    The diagram shows a square that represents Docker Hub with container images and a separate square that represents a Docker Host. An arrow shows communication between the Docker Hub and Docker Host.
 
-   The Docker Host contains two objects. One represents the Docker Engine, and the second the running docker containers. The Docker Host object contains four objects. These are the Docker Server, the Docker REST API, the Docker Client, and stored container images.
+   The Docker Host contains two objects. One represents the Docker Engine, and the second is the Docker containers. The Docker Host object contains four objects. The objects are the Docker Server, the Docker REST API, the Docker Client, and stored container images.
 
    Some arrows show communication between the Docker Server, the REST API, and the Docker Client. These arrows indicate how the user communicates with the Docker Server via the REST API.
 
@@ -66,7 +66,7 @@ The Docker server is a daemon named `dockerd`. The `dockerd` daemon responds to 
 
 #### Docker objects
 
-There are several objects that you'll create and configure to support your container deployments. These include networks, storage volumes, plugins, and other service objects. We won't cover all of these objects here, but it's good to keep in mind that these objects are items that we can create and deploy as needed.
+There are several objects that you create and configure to support your container deployments. These objects include networks, storage volumes, plugins, and other service objects. This module doesn't mention all of these objects, but it's good to keep in mind that these objects are items that we can create and deploy as needed.
 
 ### Docker Hub
 

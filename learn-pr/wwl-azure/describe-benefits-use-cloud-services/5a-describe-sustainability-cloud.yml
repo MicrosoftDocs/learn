@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-benefits-use-cloud-services.sustainability-cloud
+title: Describe sustainability considerations in the cloud
+metadata:
+  title: Describe sustainability considerations in the cloud
+  description: "Describe sustainability considerations in the cloud"
+  ms.date: 03/06/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/5a-describe-sustainability-cloud.md)]

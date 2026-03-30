@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 350" font-family="Segoe UI, sans-serif">
+  <!-- Dim_Date (top center) -->
+  <rect x="225" y="15" width="200" height="55" rx="8" fill="#0099BC"/>
+  <text x="325" y="49" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Date</text>
+
+  <!-- Fact_Sales (left) -->
+  <rect x="70" y="140" width="180" height="65" rx="8" fill="#0078D4"/>
+  <text x="160" y="179" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Fact_Sales</text>
+
+  <!-- Fact_Inventory (right) -->
+  <rect x="400" y="140" width="180" height="65" rx="8" fill="#0078D4"/>
+  <text x="490" y="179" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Fact_Inventory</text>
+
+  <!-- Dim_Product (bottom center) -->
+  <rect x="225" y="280" width="200" height="55" rx="8" fill="#0099BC"/>
+  <text x="325" y="314" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Product</text>
+
+  <!-- Dim_Customer (bottom left) -->
+  <rect x="10" y="280" width="160" height="55" rx="8" fill="#0099BC"/>
+  <text x="90" y="314" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Customer</text>
+
+  <!-- Dim_Store (bottom right) -->
+  <rect x="480" y="280" width="160" height="55" rx="8" fill="#0099BC"/>
+  <text x="560" y="314" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Dim_Store</text>
+
+  <!-- Lines -->
+  <!-- Dim_Date → Fact_Sales -->
+  <line x1="285" y1="70" x2="200" y2="140" stroke="#555555" stroke-width="1.5"/>
+  <!-- Dim_Date → Fact_Inventory -->
+  <line x1="365" y1="70" x2="450" y2="140" stroke="#555555" stroke-width="1.5"/>
+  <!-- Dim_Product → Fact_Sales -->
+  <line x1="285" y1="280" x2="200" y2="205" stroke="#555555" stroke-width="1.5"/>
+  <!-- Dim_Product → Fact_Inventory -->
+  <line x1="365" y1="280" x2="450" y2="205" stroke="#555555" stroke-width="1.5"/>
+  <!-- Dim_Customer → Fact_Sales -->
+  <line x1="110" y1="280" x2="140" y2="205" stroke="#555555" stroke-width="1.5"/>
+  <!-- Dim_Store → Fact_Inventory -->
+  <line x1="540" y1="280" x2="510" y2="205" stroke="#555555" stroke-width="1.5"/>
+</svg>

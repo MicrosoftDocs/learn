@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-data-onelake.discover-streaming-data
+title: Discover streaming data in Real-Time hub
+metadata:
+  title: Discover Streaming Data in Real-Time Hub
+  description: Learn how to use the Real-Time hub to discover eventstreams and streaming data sources, navigate different categories of real-time data, and connect streaming data to lakehouses or KQL databases.
+  ms.date: 02/19/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-discover-streaming-data.md)]

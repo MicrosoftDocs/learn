@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-database-performance.recommend-database-configurations
+title: Recommend database configurations
+metadata:
+  title: Recommend database configurations
+  description: Evaluate Azure SQL Database resource models, service tiers, and compute tiers to match workload requirements.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/07/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/02-recommend-database-configurations.md)]

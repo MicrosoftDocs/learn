@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.specify-requirements-secure-saas-paas-iaas-services.evaluate-foundry-platform-security
+title: Evaluate security for Microsoft Foundry workloads
+metadata:
+  title: Evaluate security for Microsoft Foundry workloads
+  description: "SC-100 preparatory unit on the topic: Evaluate security for Microsoft Foundry workloads from the perspective of the security architect."
+  ms.date: 03/12/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/6a-evaluate-foundry-platform-security.md)]

@@ -4,7 +4,7 @@ title: Create pipeline with notebook
 metadata:
   title: Create Pipeline with Notebook
   description: Learn how to create data pipelines using notebooks in Azure Databricks with task dependencies and precedence constraints in Lakeflow Jobs.
-  ms.date: 12/07/2025
+  ms.date: 03/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -39,7 +39,7 @@ Consider what happens when a new data scientist joins your fraud detection team.
 
 ## More resources
 
-- [Plan your Microsoft Foundry Hub architecture](/azure/ai-foundry/concepts/hubs-projects) - Architectural guidance for hub and project design patterns
+- [Plan your Microsoft Foundry Hub architecture](/azure/foundry-classic/concepts/ai-resources) - Architectural guidance for hub and project design patterns
 - [Configure managed identities for Azure AI services](/azure/ai-services/authentication) - Step-by-step guide for passwordless authentication
 
 

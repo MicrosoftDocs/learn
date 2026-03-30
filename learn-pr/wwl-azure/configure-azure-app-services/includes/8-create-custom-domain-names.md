@@ -38,5 +38,6 @@ There are three steps to create a custom domain name.
 1. **Enable the custom domain**. After you have your domain and create your DNS record, use the Azure portal to validate your custom domain and add it to your web app. Be sure to test your domain before publishing.
 
 > [!Important]
-> To [map a custom DNS name to your app](/azure/app-service/app-service-web-tutorial-custom-domain), you need a paid tier of an App Service plan for your app.
+> App Service offers free managed TLS certificates. Certificates auto-renew 30 days before expiry. In the Azure portal, go to **Custom domains** → **Add binding** → **App Service Managed Certificate**. 
+
 

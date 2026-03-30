@@ -1,8 +1,10 @@
 As organizations deploy AI-powered applications, security architects must evaluate whether proposed solutions adequately protect data, models, and infrastructure. Azure AI services introduce security considerations beyond traditional workloads, requiring evaluation of identity controls, network isolation, content safety mechanisms, and threat protection capabilities.
 
-The Microsoft Cloud Security Benchmark v2 introduces a dedicated Artificial Intelligence Security domain with seven controls addressing AI platform security, application security, and monitoring. Use these controls as evaluation criteria alongside traditional security domains.
+The Microsoft Cloud Security Benchmark v2 (preview) introduces a dedicated Artificial Intelligence Security domain with seven controls addressing AI platform security, application security, and monitoring. Use these controls as evaluation criteria alongside traditional security domains.
 
 ## Understand AI shared responsibility
+
+Earlier in this module, the AI shared responsibility model was introduced to help define security baseline boundaries across SaaS, PaaS, and IaaS AI deployment types. Here, the same model serves as an evaluation framework—helping you assess whether a proposed AI solution implements adequate security controls for the layers your organization is responsible for.
 
 The AI shared responsibility model extends traditional cloud responsibilities across three AI-specific layers that determine what security controls you must evaluate versus what Microsoft provides.
 
@@ -12,19 +14,21 @@ The AI shared responsibility model extends traditional cloud responsibilities ac
 
 **AI Usage layer** addresses how end users interact with AI systems. Organizations must establish acceptable use policies, monitor for policy violations, and implement controls that prevent misuse while maintaining productivity.
 
-Responsibility allocation varies by deployment model. SaaS AI solutions like Microsoft 365 Copilot place more responsibility with Microsoft, who manages model lifecycle and base safety configurations. PaaS AI solutions like Azure OpenAI shift responsibility to customers for model selection, fine-tuning security, and comprehensive prompt protection. Understanding this division helps security architects focus evaluation efforts on controls within organizational responsibility.
+Responsibility allocation varies by deployment model. SaaS AI solutions like Microsoft 365 Copilot place more responsibility with Microsoft, who manages model lifecycle and base safety configurations. PaaS AI solutions like Azure OpenAI shift responsibility to customers for model selection, fine-tuning security, and comprehensive prompt protection.
 
 :::image type="content" source="../media/ai-shared-responsibility-v2.png" lightbox="../media/ai-shared-responsibility-v2.png" alt-text="Diagram showing the AI shared responsibility model.":::
 
 ## Evaluate identity and access controls
 
-Strong identity management forms the foundation of AI services security. When evaluating solutions, assess whether the architecture implements appropriate authentication and authorization mechanisms.
+When evaluating solutions, assess whether the architecture implements appropriate authentication and authorization mechanisms.
 
-Evaluate whether the solution uses Microsoft Entra ID for authentication rather than API keys. Microsoft Entra ID integration enables conditional access policies, multifactor authentication, and centralized identity governance. API keys should be disabled where possible, as they cannot support fine-grained access control or audit trails at the user level.
+Evaluate whether the solution uses Microsoft Entra ID for authentication rather than API keys. Microsoft Entra ID enables conditional access policies, multifactor authentication, and centralized identity governance. API keys should be disabled where possible, as they can't support fine-grained access control or user-level audit trails.
 
 Assess role-based access control configurations for least privilege. The **Cognitive Services OpenAI User** role provides inference-only access, while **Cognitive Services OpenAI Contributor** enables model deployment and management. Evaluate whether the proposed role assignments align with the principle of least privilege for each identity type.
 
-For service-to-service authentication, verify that solutions use managed identities rather than stored credentials. Managed identities eliminate credential management overhead and reduce the risk of credential exposure. Evaluate whether system-assigned or user-assigned managed identities are appropriate for the workload's lifecycle requirements.
+For service-to-service authentication, verify that solutions use managed identities rather than stored credentials. Managed identities eliminate credential management overhead and reduce credential exposure risk.
+
+For AI agent deployments, assess whether the solution uses Microsoft Entra Agent ID for agent identity management. Agent ID provides a unified directory of agent identities created across Microsoft Copilot Studio and Microsoft Foundry, enabling lifecycle management and scoped, short-lived token-based access.
 
 ## Evaluate network security architecture
 
@@ -32,9 +36,9 @@ Network isolation prevents unauthorized access to AI services and protects data 
 
 Assess whether the solution uses private endpoints to eliminate public internet exposure for AI services. Private endpoints route traffic through Azure Private Link, keeping communications within the Azure backbone network. Verify that private DNS zones are configured correctly for name resolution.
 
-For Azure AI Foundry deployments, evaluate the managed virtual network configuration. The three isolation modes—Public, Private with Internet Outbound, and Private with Approved Outbound—offer different security postures. Evaluate whether the chosen mode aligns with organizational security requirements and data classification.
+For AI platforms that provide managed virtual networks, evaluate whether the chosen isolation mode aligns with organizational security requirements and data classification. Platform-specific network isolation configurations, such as those for Microsoft Foundry, are covered in the next unit.
 
-Review network security group configurations for any virtual network integrations. Verify that inbound and outbound rules restrict traffic to necessary communications only. Assess whether Azure Firewall or other network filtering provides additional protection for internet-bound traffic.
+Review network security group rules to verify traffic are restricted to necessary communications. Assess whether Azure Firewall provides additional filtering for internet-bound traffic.
 
 ## Evaluate content safety controls
 
@@ -46,7 +50,7 @@ Assess Prompt Shields configuration for detecting prompt injection attacks. Prom
 
 ### Content filtering evaluation
 
-Review content filter configurations for harmful content categories (hate speech, sexual content, violence, self-harm). Evaluate whether severity thresholds align with risk tolerance. Verify protected material detection is enabled to prevent output of copyrighted text or code from public repositories.
+Review content filter configurations for harmful content categories. Evaluate whether severity thresholds align with risk tolerance. Verify protected material detection is enabled to prevent output of copyrighted text or code from public repositories.
 
 ### Output validation evaluation
 
@@ -56,7 +60,7 @@ For applications using AI agents, assess Task Adherence API implementation. This
 
 ### Safety meta-prompts evaluation (MCSB AI-3)
 
-Evaluate system message configurations that establish model behavior boundaries. Safety meta-prompts should define the model's role explicitly and include instructions to reject malicious inputs. Assess whether meta-prompts instruct models to prioritize system instructions over user inputs to counter prompt injection attempts.
+Evaluate system message configurations that establish model behavior boundaries. Safety meta-prompts should define the model's role explicitly and include instructions to reject malicious inputs. Assess whether meta-prompts instruct models to prioritize system instructions over user inputs to counter prompt injection attempts. Verify that spotlighting techniques are applied to isolate and label untrusted data within prompts, reducing the risk of indirect prompt injection through grounding documents or retrieval results.
 
 ## Evaluate AI application security controls
 
@@ -64,7 +68,7 @@ Beyond content filtering, AI applications require security controls specific to 
 
 ### Model governance evaluation (MCSB AI-1)
 
-Assess whether the solution implements formal model approval processes. Only models that have been verified through trusted processes should deploy to production. Evaluate model provenance tracking to ensure organizations can identify the source and modification history of deployed models. Unverified models may contain backdoors, poisoned training data, or supply chain compromises.
+Assess whether the solution implements formal model approval processes enforced through Azure Policy. The built-in policy **Cognitive Services Deployments should only use approved Registry Models** restricts which models can be deployed by matching model asset IDs. Additionally, evaluate whether local API key authentication is disabled via policy, requiring Microsoft Entra ID authentication. Evaluate model provenance tracking to ensure organizations can identify the source and modification history of deployed models. Unverified models may contain backdoors, poisoned training data, or supply chain compromises.
 
 ### Agent function privileges (MCSB AI-4)
 
@@ -80,7 +84,9 @@ Microsoft Defender for Cloud provides AI-specific security posture management an
 
 ### AI security posture management
 
-Assess whether Defender Cloud Security Posture Management (CSPM) is enabled for AI workload discovery. Defender CSPM automatically discovers AI workloads across Azure OpenAI Service, Azure AI Foundry, Azure Machine Learning, and multicloud environments including Amazon Bedrock and Google Vertex AI.
+Assess whether Defender Cloud Security Posture Management (CSPM) is enabled for AI workload discovery. Defender CSPM automatically discovers AI workloads across Azure OpenAI Service, Microsoft Foundry, Azure Machine Learning, and multicloud environments including Amazon Bedrock and Google Vertex AI. Discovery includes an AI Bill of Materials (AI BOM) that inventories models, SDKs, and dependencies, and scans container images and IaC configurations for AI library vulnerabilities.
+
+For visibility into SaaS AI usage, evaluate whether Microsoft Defender for Cloud Apps is deployed to discover and govern AI applications. The catalog includes more than a thousand generative AI apps with risk assessments, enabling security teams to sanction or block applications and create policies to detect newly adopted AI apps across the organization.
 
 Evaluate whether the solution addresses security recommendations from Defender for Cloud. Recommendations cover identity configuration, data security, and internet exposure risks specific to AI workloads. Review attack path analysis findings that identify scenarios where training or grounding data might be exposed to threats.
 
@@ -97,37 +103,43 @@ Evaluate alert integration with security operations. Verify that AI security ale
 
 ### Continuous AI red teaming (MCSB AI-7)
 
-Assess whether the organization performs continuous adversarial testing of AI systems. AI red teaming uses tools like PyRIT (Python Risk Identification Tool) and the Azure AI Red Teaming Agent to simulate attacks including prompt injection, jailbreaking, and data poisoning. Evaluate whether red teaming is integrated into CI/CD pipelines for predeployment validation and whether test scenarios align with MITRE ATLAS tactics for AI-specific threats.
+Assess whether the organization performs AI-specific threat modeling using frameworks like MITRE ATLAS and the OWASP Top 10 for LLM Applications to supplement STRIDE for AI-unique risks such as model poisoning and prompt injection. Continuous adversarial testing should use tools like PyRIT (Python Risk Identification Tool) and the Azure AI Red Teaming Agent to simulate attacks including prompt injection, jailbreaking, and data poisoning. Evaluate whether red teaming is integrated into CI/CD pipelines for predeployment validation.
 
 ## Evaluate data protection and availability
 
 Assess encryption configurations for data at rest, verifying customer-managed keys where compliance requires key management control. Evaluate data residency configurations to ensure AI services and connected resources (search indexes, storage accounts) meet data sovereignty requirements.
 
+Evaluate Microsoft Purview Data Security Posture Management (preview) to gain insights into AI activity, apply policies protecting data in prompts, and assess oversharing risks. Extend sensitivity labels and DLP policies to AI prompts. Assess whether Insider Risk Management with the Risky AI usage policy template is enabled to detect risk activities related to AI interactions.
+
 For fine-tuned models, verify data lifecycle policies ensure training data deletion after fine-tuning completes unless retention is required.
 
-Evaluate availability controls including quota monitoring and alerting, rate limiting at API Management, and Azure DDoS Protection for internet-facing deployments.
+Evaluate availability controls including quota monitoring and alerting, Azure DDoS Protection for internet-facing deployments, and Azure API Management as a centralized AI gateway for rate limiting, prompt schema validation, and consistent security policy enforcement across AI endpoints.
+
+### Diagnostic logging and audit trails
+
+Verify that diagnostic settings are enabled for AI services, routing audit, request/response, and metrics categories to Log Analytics. For Microsoft 365 Copilot, assess whether Purview Audit captures user interactions. Platform-specific diagnostic categories are covered in the next unit for Microsoft Foundry deployments. Comprehensive audit trails are essential for incident investigation and compliance.
 
 ## Key evaluation criteria summary
 
-When evaluating Azure AI services security, verify the solution addresses MCSB v2 AI-specific controls:
+When evaluating AI workload security, verify the solution addresses MCSB v2 AI-specific controls:
 
 | MCSB Control | Key evaluation points |
 | ------------ | --------------------- |
-| **AI-1: Approved models** | Model provenance, supply chain verification, formal approval processes |
+| **AI-1: Approved models** | Model provenance, supply chain verification, Azure Policy enforcement, formal approval processes |
 | **AI-2: Content filtering** | Multi-layered filtering for inputs, processing, and outputs |
 | **AI-3: Safety meta-prompts** | System instructions that resist prompt injection, explicit behavior boundaries |
 | **AI-4: Agent privileges** | Least privilege for plugins/functions, capability manifests, sandboxed execution |
 | **AI-5: Human-in-the-loop** | Human approval for critical actions, programmatic enforcement |
 | **AI-6: Monitoring** | Defender for AI, jailbreak detection, data exfiltration monitoring |
-| **AI-7: Red teaming** | Continuous adversarial testing, PyRIT integration, MITRE ATLAS alignment |
+| **AI-7: Red teaming** | Continuous adversarial testing, PyRIT integration, MITRE ATLAS + OWASP Top 10 for LLM alignment |
 
 Additionally evaluate traditional security controls:
 
 | Area | Key evaluation points |
 | ---- | --------------------- |
-| **Identity** | Microsoft Entra ID authentication, managed identities, least privilege RBAC |
+| **Identity** | Microsoft Entra ID authentication, managed identities, Microsoft Entra Agent ID, least privilege RBAC |
 | **Network** | Private endpoints, managed virtual network isolation, NSG configurations |
-| **Data protection** | Customer-managed keys, data residency compliance, data lifecycle policies |
-| **Availability** | Quota monitoring, rate limiting, DDoS protection |
+| **Data protection** | Customer-managed keys, Purview Data Security Posture Management, sensitivity labels, data residency compliance, diagnostic logging |
+| **Availability** | Quota monitoring, API Management gateway, DDoS protection |
 
 This evaluation framework ensures AI solutions meet both AI-specific and traditional security requirements.

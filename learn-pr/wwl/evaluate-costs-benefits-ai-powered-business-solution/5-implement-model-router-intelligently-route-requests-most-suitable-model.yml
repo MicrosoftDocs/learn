@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.implement-model-router-intelligently-route-requests-most-suitable-model
+title: "Implement a model router to intelligently route requests to the most suitable model"
+metadata:
+  title: "Implement a Model Router to Intelligently Route Requests"
+  description: "Learn how to design and configure a model router in Azure AI Foundry to optimize cost, latency, accuracy, and reliability across AI workloads."
+  ms.date: 02/13/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-implement-model-router-intelligently-route-requests-most-suitable-model.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.implement-just-in-time-azure-roles-resources
+title: Implement just-in-time access for Azure roles and resources
+metadata:
+  title: Implement Just-in-Time Access for Azure Roles and Resources
+  description: "Learn how to configure just-in-time access for Azure subscription and resource roles using Privileged Identity Management."
+  ms.date: 03/17/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-implement-just-in-time-azure-roles-resources.md)]

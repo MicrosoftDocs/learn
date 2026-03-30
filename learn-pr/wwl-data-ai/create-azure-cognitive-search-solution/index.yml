@@ -28,7 +28,7 @@ roles:
 - developer
 - solution-architect
 products:
-- azure-cognitive-search
+- foundry-tools
 subjects:
 - artificial-intelligence
 units:
@@ -44,4 +44,4 @@ units:
 - learn.wwl.create-azure-cognitive-search-solution.summary
 badge:
   uid: learn.wwl.create-azure-cognitive-search-solution.badge
-
+

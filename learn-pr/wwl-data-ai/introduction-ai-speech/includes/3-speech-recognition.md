@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=973358fc-8fdc-436b-805e-08e191c5ea07]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=63db8e82-7925-4c28-b9ba-1eed1843198c]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -11,7 +11,7 @@
 
 Speech recognition, also called speech-to-text, enables applications to convert spoken language into written text. The journey from sound wave to text involves six coordinated stages: capturing audio, preparing features, modeling acoustic patterns, applying language rules, decoding the most likely words, and refining the final output.
 
-## Audio capture: Convert analog audio to digital 
+## Audio capture: Convert analog audio to digital
 
 Speech recognition begins when a microphone converts sound waves into a digital signal. The system samples the analog audio thousands of times per second—typically 16,000 samples per second (16 kHz) for speech applications—and stores each measurement as a numeric value.
 
@@ -34,7 +34,7 @@ Raw audio samples contain too much information for efficient pattern recognition
 
 MFCC is the most common feature extraction technique in speech recognition. It mimics how the human ear perceives sound by emphasizing frequencies where speech energy concentrates and compressing less important ranges.
 
-#### How MFCC works:
+#### How MFCC works
 
 1. **Divide audio into frames:** Split the signal into overlapping 20–30 millisecond windows.
 2. **Apply Fourier transform:** Convert each frame from time domain to frequency domain, revealing which pitches are present.
@@ -61,7 +61,7 @@ Acoustic models learn the relationship between audio features and **phonemes**�
 
 Modern acoustic models use **transformer architectures**, a type of deep learning network that excels at sequence tasks. The transformer processes the MFCC feature vectors and predicts which phoneme is most likely at each moment in time.
 
-Transformer models achieve effective phoneme prediction through: 
+Transformer models achieve effective phoneme prediction through:
 
 - **Attention mechanism:** The model examines surrounding frames to resolve ambiguity. For example, the phoneme /t/ sounds different at the start of "top" versus the end of "bat."
 - **Parallel processing:** Unlike older recurrent models, transformers analyze multiple frames simultaneously, improving speed and accuracy.
@@ -84,7 +84,7 @@ Phoneme predictions alone don't guarantee accurate transcription. The acoustic m
 
 Decoding algorithms search through millions of possible word sequences to find the transcription that best matches both acoustic and language model predictions. This stage balances two competing goals: staying faithful to the audio signal while producing readable, grammatically correct text.
 
-### Beam search decoding:
+### Beam search decoding
 
 The most common technique, *beam search*, maintains a shortlist (the "beam") of top-scoring partial transcriptions as it processes each audio frame. At every step, it extends each hypothesis with the next most likely word, prunes low-scoring paths, and keeps only the best candidates.
 
@@ -97,7 +97,7 @@ For a three-second utterance, the decoder might evaluate thousands of hypotheses
 
 The decoder produces raw text that often requires cleanup before presentation. Post-processing applies formatting rules and corrections to improve readability and accuracy.
 
-### Common post-processing tasks:
+### Common post-processing tasks
 
 - **Capitalization:** Convert "hello my name is sam" to "Hello my name is Sam."
 - **Punctuation restoration:** Add periods, commas, and question marks based on prosody and grammar.

@@ -29,8 +29,8 @@ roles:
 subjects:
 - artificial-intelligence
 products:
-- ai-services
-- azure-ai-foundry
+- foundry-tools
+- microsoft-foundry
 - azure-cognitive-search
 modules:
 - learn.wwl.analyze-content-ai

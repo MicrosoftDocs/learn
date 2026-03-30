@@ -31,7 +31,7 @@ Your company is building a global analytics platform that integrates conversatio
 :::image type="content" source="../media/update-policies-configured-deployment-provider.png" alt-text="Diagram that illustrates how update policies are configured per deployment and by model.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Microsoft Foundry model deployment
 
@@ -56,7 +56,7 @@ Your company is building a global analytics platform that integrates conversatio
 :::image type="content" source="../media/financial-forecast-models-strict-reproducibility.png" alt-text="Diagram that illustrates how company can configure appropriate update policies for a deployment.":::
 
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Microsoft Foundry model deployment
 
@@ -102,7 +102,7 @@ Your company is developing a global analytics platform that integrates conversat
 
 :::image type="content" source="../media/global-analytics-platform-conversational-agents.png" alt-text="Diagram that illustrates how to use a global analytics platform to integrates conversational agents.":::
 ### Prerequisites
-- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+- **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn/) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription or the target resource group level.
 - Familiarity with Microsoft Foundry model deployment 
 

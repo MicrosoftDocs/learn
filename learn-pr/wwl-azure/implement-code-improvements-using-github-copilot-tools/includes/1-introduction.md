@@ -8,15 +8,15 @@ The topics covered in this module include:
 - Using GitHub Copilot's quick fix options.
 - Code refactoring with GitHub Copilot best practices.
 - Refactor code with GitHub Copilot inline chat.
-- Refactoring code with GitHub Copilot ask, edit, and agent modes.
+- Refactoring code with GitHub Copilot Chat view agents.
 - Exploring GitHub Copilot code review features.
 - Refactor C# Code with GitHub Copilot.
 
 After completing this module, you’ll be able to:
 
-- Use GitHub Copilot's Chat view modes to analyze, edit, and execute tasks effectively.
+- Use GitHub Copilot's Chat view agents to analyze, plan, and execute tasks effectively.
 - Apply quick fix options to resolve coding issues, test failures, and terminal errors using tools like Fix smart actions and Inline Chat.
-- Refactor code to improve readability, reduce complexity, and enhance maintainability by leveraging Copilot's contextual tools and best practices.
+- Refactor code to improve readability, reduce complexity, and enhance maintainability by leveraging GitHub Copilot's contextual tools and best practices.
 - Conduct code reviews using GitHub Copilot's review selection and review changes features to ensure quality, reliability, and security.
 - Complete a hands-on exercise to refactor and optimize a C# application using GitHub Copilot.
 

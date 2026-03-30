@@ -18,9 +18,10 @@ Understanding these capabilities helps you design a compliance monitoring archit
 
 ## Designing your compliance assessment strategy
 
-When you enable Defender for Cloud, the Microsoft cloud security benchmark (MCSB) v2 is automatically assigned as the default security initiative. MCSB v2 organizes security controls into 12 domains—including Network Security, Identity Management, Data Protection, and the new Artificial Intelligence Security domain—that Defender for Cloud evaluates automatically against your resources. This benchmark maps to common compliance frameworks including NIST SP 800-53, PCI-DSS, CIS Controls, and ISO 27001, providing a foundation for your compliance assessment.
+<!-- Source: https://learn.microsoft.com/azure/defender-for-cloud/concept-regulatory-compliance -->
+When you enable Defender for Cloud, the Microsoft cloud security benchmark (MCSB) is automatically assigned as the default security initiative. MCSB organizes security controls into domains—including Network Security, Identity Management, and Data Protection—that Defender for Cloud evaluates against your resources. This benchmark maps to common compliance frameworks including NIST SP 800-53, PCI-DSS, CIS Controls, and ISO 27001, providing a foundation for your compliance assessment. MCSB v2 is also available in preview and introduces an Artificial Intelligence Security domain.
 
-Because MCSB v2 is applied by default, you get immediate visibility into your security posture without additional configuration. As you address recommendations, your compliance percentage improves across all mapped frameworks simultaneously.
+Because MCSB is applied by default, you get immediate visibility into your security posture without additional configuration. As you address recommendations, your compliance percentage improves across all mapped frameworks simultaneously.
 
 ### Selecting additional regulatory standards
 
@@ -36,10 +37,12 @@ Add standards to your subscriptions based on which regulations apply to specific
 
 Each standard contains controls, and each control maps to one or more security assessments. Defender for Cloud evaluates your resources against these assessments and reports:
 
-- **Automated assessments** - Defender for Cloud continuously evaluates resource configurations and reports compliance status automatically
+<!-- Source: https://learn.microsoft.com/azure/defender-for-cloud/regulatory-compliance-dashboard -->
+- **Automated assessments** - Defender for Cloud periodically evaluates resource configurations (approximately every 12 hours) and reports compliance status automatically
 - **Manual assessments** - Some controls require evidence that can't be automated, such as documented procedures or attestations
+- **Shared responsibility assessments** - Assessments where compliance depends on actions by both you and Microsoft (compatible with Azure only)
 
-Design processes to address both assessment types. Automated assessments provide real-time visibility, while manual assessments require periodic review and documentation.
+Design processes to address all three assessment types. Automated assessments provide periodic visibility into configuration compliance, while manual and shared responsibility assessments require planned review and documentation cycles.
 
 ## Multicloud compliance evaluation
 

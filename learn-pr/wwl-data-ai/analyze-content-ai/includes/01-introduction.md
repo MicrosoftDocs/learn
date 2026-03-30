@@ -5,6 +5,3 @@ Azure Content Understanding is a multimodal service that simplifies the creation
 ![Diagram of Azure Content Understanding extracting information from documents, audio files, videos, and images.](../media/content-understanding.png)
 
 In this module, you'll explore the capabilities of Azure Content Understanding, and learn how to use it to build custom analyzers.
-
-> [!NOTE]
-> Azure Content Understanding is currently in public preview. Details described in this module are subject to change.

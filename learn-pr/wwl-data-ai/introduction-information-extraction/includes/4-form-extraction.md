@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=3ac1e2df-d9a9-4ce5-a538-82f73e70b4f2]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0985adbb-8a99-4993-92db-d14a5430a9f6]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -65,9 +65,9 @@ Training approaches for field detection machine learning models include:
 - **Self-supervised learning**: Pre-trained on large document corpora to understand layout patterns.
 - **Multi-modal learning**: Combines text, visual, and positional features.
 - **Advanced model architectures**, such as:
-    - **Graph Neural Networks (GNNs)** that model spatial relationships between text elements as graph connections.
-    - **Attention mechanisms** that focus on relevant document regions when predicting field values.
-    - **Sequence-to-sequence models** that transform unstructured text sequences into structured field assignments.
+  - **Graph Neural Networks (GNNs)** that model spatial relationships between text elements as graph connections.
+  - **Attention mechanisms** that focus on relevant document regions when predicting field values.
+  - **Sequence-to-sequence models** that transform unstructured text sequences into structured field assignments.
 
 #### Generative AI for schema-based extraction
 
@@ -86,14 +86,14 @@ After candidate values are identified, they must be mapped to specific schema fi
 In many cases, data fields in a document or form are discrete values that can be mapped to keys - for example, the vendor name, date, and total amount in a receipt or invoice. Common techniques used for key-value pairing include:
 
 - **Proximity analysis**:
-    - **Spatial clustering**: Group nearby text elements using distance algorithms.
-    - **Reading order analysis**: Follow natural text flow to associate labels with values.
-    - **Geometric relationships**: Use alignment, indentation, and positioning patterns.
+  - **Spatial clustering**: Group nearby text elements using distance algorithms.
+  - **Reading order analysis**: Follow natural text flow to associate labels with values.
+  - **Geometric relationships**: Use alignment, indentation, and positioning patterns.
 
 - **Linguistic pattern recognition**:
-    - **Named entity recognition (NER)**: Identify specific entity types (dates, amounts, names).
-    - **Part-of-speech tagging**: Understand grammatical relationships between labels and values.
-    - **Dependency parsing**: Analyze syntactic relationships in text.
+  - **Named entity recognition (NER)**: Identify specific entity types (dates, amounts, names).
+  - **Part-of-speech tagging**: Understand grammatical relationships between labels and values.
+  - **Dependency parsing**: Analyze syntactic relationships in text.
 
 #### Table and structured content processing
 
@@ -129,33 +129,33 @@ Raw extracted values are generally transformed into consistent formats (for exam
 Examples of format standardization that can be implemented include:
 
 - **Date normalization**:
-    - **Format detection**: Identify various date formats (MM/DD/YYYY, DD-MM-YYYY, etc.).
-    - **Parsing algorithms**: Convert to standardized ISO formats.
-    - **Ambiguity resolution**: Handle cases where date format is unclear.
+  - **Format detection**: Identify various date formats (MM/DD/YYYY, DD-MM-YYYY, etc.).
+  - **Parsing algorithms**: Convert to standardized ISO formats.
+  - **Ambiguity resolution**: Handle cases where date format is unclear.
 
 - **Currency and numeric processing**:
-    - **Symbol recognition**: Handle different currency symbols and thousand separators.
-    - **Decimal normalization**: Standardize decimal point representation across locales.
-    - **Unit conversion**: Convert between different measurement units as needed.
+  - **Symbol recognition**: Handle different currency symbols and thousand separators.
+  - **Decimal normalization**: Standardize decimal point representation across locales.
+  - **Unit conversion**: Convert between different measurement units as needed.
 
 - **Text standardization**:
-    - **Case normalization**: Apply consistent capitalization rules.
-    - **Encoding standardization**: Handle different character encodings and special characters.
-    - **Abbreviation expansion**: Convert common abbreviations to full forms.
+  - **Case normalization**: Apply consistent capitalization rules.
+  - **Encoding standardization**: Handle different character encodings and special characters.
+  - **Abbreviation expansion**: Convert common abbreviations to full forms.
 
 #### Data Validation and Quality Assurance
 
 As well as formatting the extracted fields, the standardization process enables further validation of the values that have been extracted through techniques like:
 
 - **Rule-based validation**:
-    - **Format checking**: Verify extracted values match expected patterns (phone numbers, email addresses).
-    - **Range validation**: Ensure numeric values fall within reasonable bounds.
-    - **Required field checking**: Confirm all mandatory fields are present.
+  - **Format checking**: Verify extracted values match expected patterns (phone numbers, email addresses).
+  - **Range validation**: Ensure numeric values fall within reasonable bounds.
+  - **Required field checking**: Confirm all mandatory fields are present.
 
 - **Statistical validation**:
-    - **Outlier detection**: Identify unusually high or low values that might indicate extraction errors.
-    - **Distribution analysis**: Compare extracted values against historical patterns.
-    - **Cross-document validation**: Check consistency across related documents.
+  - **Outlier detection**: Identify unusually high or low values that might indicate extraction errors.
+  - **Distribution analysis**: Compare extracted values against historical patterns.
+  - **Cross-document validation**: Check consistency across related documents.
 
 ### Stage 5: Integration with business processes and systems
 

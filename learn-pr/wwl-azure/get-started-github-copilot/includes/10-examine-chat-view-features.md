@@ -6,15 +6,15 @@ The Chat view interface includes three sections: a toolbar near the top, a displ
 
 To open the Chat view, you can select the **Toggle Chat** button (Copilot icon), or use the **Ctrl+Alt+I** keyboard shortcut.
 
-## Select the Chat mode
+## Select an agent
 
-The Chat view provides the following modes:
+The Chat view provides the following built-in agents:
 
-- **Ask**: Use the ask mode to ask questions about your codebase or technology concepts. You can use the ask mode explain code, suggest revisions or fixes, or provide information related to the codebase.
-- **Edit**: Use the edit mode to make edits across multiple files in your codebase. You can use edit mode to refactor code, add comments, or make other changes to your code.
-- **Agent**: Use the agent mode to start an agentic coding workflow. You can use agent mode to run commands, execute code, or perform other tasks in your workspace.
+- **Agent**: Use the Agent to start an agentic coding workflow. You can use the Agent to autonomously edit code, run commands, and perform tasks in your workspace.
+- **Plan**: Use the Plan agent to create a structured, step-by-step implementation plan for a task. The Plan agent analyzes your request, breaks it down into discrete steps, and produces a detailed plan that can be handed off to the Agent for implementation.
+- **Ask**: Use the Ask agent to ask questions about your codebase or technology concepts. You can use the Ask agent to explain code, suggest revisions or fixes, or provide information related to the codebase.
 
-To switch modes, open the **Set Mode** menu at the bottom of the Chat view, and then select **Ask**, **Edit**, or **Agent**.
+To switch agents, open the agent picker at the bottom of the Chat view, and then select **Agent**, **Plan**, or **Ask**.
 
 > [!IMPORTANT]
 > When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total number of premium requests used is based on the complexity of the task, the number of steps involved, and the model selected.
@@ -46,13 +46,13 @@ When you select the **Add Context** button, a menu appears that allows you to se
 - Tools: This option allows you to add tools, for example the #fetch tool, to the chat prompt. You can select one or more tools to add as context.
 - Recent Files (list of files you have recently opened in Visual Studio Code).
 
-## Use **Ask** mode
+## Use **Ask**
 
-The ask mode is optimized for asking questions about your code projects, coding topics, and general technology concepts. Ask mode is useful when you need to gain an understanding of a codebase, brainstorm ideas, or get help with coding tasks. When you enter a prompt, the AI pair programmer responds with natural language descriptions, code snippets, and other relevant information to help you with your coding tasks. Responses are displayed in the Chat view.
+The Ask agent is optimized for asking questions about your code projects, coding topics, and general technology concepts. The Ask agent is useful when you need to gain an understanding of a codebase, brainstorm ideas, or get help with coding tasks. When you enter a prompt, the AI pair programmer responds with natural language descriptions, code snippets, and other relevant information to help you with your coding tasks. Responses are displayed in the Chat view.
 
-### Manage the ask mode's code suggestions
+### Manage the Ask agent's code suggestions
 
-When the chat response contains code blocks, you can apply them individually to the corresponding file in your workspace. Copilot performs a smart apply and inserts the changes in the right location within the file.
+When the chat response contains code blocks, you can apply them individually to the corresponding file in your workspace. GitHub Copilot performs a smart apply and inserts the changes in the right location within the file.
 
 To apply a code block to your codebase, hover over the code block and select the **Apply in Editor** button. Copilot tries to apply the proposed changes to your existing code.
 
@@ -66,29 +66,25 @@ If a code block contains a shell command, you can run it directly in the integra
 
 ![Screenshot of a Copilot Chat code block with Insert into Terminal option visible.](../media/copilot-chat-view-run-in-terminal.png)
 
-## Use **Edit** mode
+## Use **Plan**
 
-The edit mode is optimized for making code update suggestions in your workspace. Edit mode is useful when you need to refactor code, add comments, or make other changes to your code. When you enter a prompt, the AI pair programmer responds with suggested code updates applied directly in the editor, where you can review them in-place, with the full context of the surrounding code. The response includes a description in the Chat view and can include edits across multiple files in your project.
+The Plan agent is optimized for creating structured, step-by-step implementation plans for complex tasks. The Plan agent is useful when you want to break down a large task into discrete steps before making changes. When you enter a prompt, the Plan agent analyzes your request, evaluates the codebase, and produces a detailed implementation plan with individual steps.
 
-![Screenshot of Copilot Chat in edit mode showing two updated files.](../media/github-copilot-edit-mode-updated-files.png)
-
-A detailed description of the suggested updates is displayed in the Chat view, along with a list of the updated files. The Chat view provides the option to keep all updates, **Keep**, or undo all updates, **Undo**.
-
-The updated files are opened in the editor with changes clearly highlighted. You can scroll through the suggested updates using up and down arrows, and make the decision to **Keep** or **Undo** individual updates. You can also make any other modifications as needed before accepting updates.
+Once the plan is generated, the Chat view displays the structured plan with a list of steps. You can review the plan, provide feedback, and refine the steps before proceeding. When you're satisfied with the plan, you can hand it off to the Agent for implementation.
 
 ### Revert edits
 
-After completing a series of code updates, you may decide that you need to roll back some of the changes. For example, you may want to use a different implementation strategy, or Copilot may have gone down the wrong path when generating edits.
+After completing a series of code updates, you may decide that you need to roll back some of the changes. For example, you may want to use a different implementation strategy, or GitHub Copilot may have gone down the wrong path when generating edits.
 
 You can use the **Undo Last Edit** control in the Chat view title bar to revert the last edits and return to the state before sending the last request. After you perform an undo of the last edit, you can redo those edits again by using the **Redo Last Edit** control in the Chat view title bar.
 
 ![Screenshot of the chat view showing the undo and redo last edit controls.](../media/github-copilot-chat-view-undo-redo-edits.png)
 
-## Use **Agent** mode
+## Use **Agent**
 
-The agent mode allows you to specify a high-level task, and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase. Agent mode uses a combination of code editing and tool invocation to accomplish the task you specified. As it processes your request, it monitors the outcome of edits and tools, and iterates to resolve any issues that arise. Code updates are made directly in the editor as iterations are processed. Task progress is monitored and updates are displayed in the Chat view.
+The Agent allows you to specify a high-level task, and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase. The Agent uses a combination of code editing and tool invocation to accomplish the task you specified. As it processes your request, it monitors the outcome of edits and tools, and iterates to resolve any issues that arise. Code updates are made directly in the editor as iterations are processed. Task progress is monitored and updates are displayed in the Chat view.
 
-Agent mode uses tools to accomplish specialized tasks while processing a user request. For example, listing the files in a directory, editing a file in your workspace, running a terminal command, or getting the output from the terminal
+The Agent uses tools to accomplish specialized tasks while processing a user request. For example, listing the files in a directory, editing a file in your workspace, running a terminal command, or getting the output from the terminal.
 
 ### Confirm tool invocations and terminal commands
 
@@ -100,4 +96,4 @@ Use the **Continue** button's dropdown options to automatically confirm the spec
 
 ## Summary
 
-The Chat view in Visual Studio Code is used to manage chat conversations between you and the AI pair programmer. The Chat view interface includes three sections: a toolbar near the top, a display area in the center, and an input and control menu at the bottom. The Chat view provides three modes: Ask, Edit, and Agent. You can add context to your chat session by specifying context within your prompts, using chat variables, or using the **Add Context** button. The ask mode is optimized for asking questions about your code projects, coding topics, and general technology concepts. The edit mode is optimized for making code update suggestions in your workspace. The agent mode allows you to specify a high-level task and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase.
+The Chat view in Visual Studio Code is used to manage chat conversations between you and the AI pair programmer. The Chat view interface includes three sections: a toolbar near the top, a display area in the center, and an input and control menu at the bottom. The Chat view provides three built-in agents: Agent, Plan, and Ask. You can add context to your chat session by specifying context within your prompts, using chat variables, or using the **Add Context** button. The Ask agent is optimized for asking questions about your code projects, coding topics, and general technology concepts. The Plan agent is optimized for creating structured, step-by-step implementation plans for complex tasks. The Agent allows you to specify a high-level task and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase.

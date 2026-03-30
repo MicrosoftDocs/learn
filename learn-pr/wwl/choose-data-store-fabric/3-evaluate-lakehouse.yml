@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-data-store-fabric.evaluate-lakehouse
+title: Evaluate lakehouse capabilities
+metadata:
+  title: Evaluate Lakehouse Capabilities
+  description: "Evaluate when to choose a lakehouse in Microsoft Fabric. Understand lakehouse architecture, dual Spark and SQL access, schema flexibility, and ideal use cases for data engineering and data science."
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-evaluate-lakehouse.md)]
+quiz:
+  title: "Check your understanding"
+  questions:
+  - content: "A data science team needs to process 50 TB of mixed structured CSV files and semi-structured JSON web logs using Python notebooks for exploratory analysis and ML model training. Is lakehouse the right choice?"
+    choices:
+    - content: "Yes, lakehouse is ideal for this scenario"
+      isCorrect: true
+      explanation: "Correct. Mixed data formats (CSV and JSON), Python/Spark notebooks for processing, exploratory analysis with evolving schema, and big data scale (50 TB) are all core lakehouse strengths."
+    - content: "No, choose a different store"
+      isCorrect: false
+      explanation: "Incorrect. Lakehouse is purpose-built for exactly this type of data engineering and data science workload."
+  - content: "A finance team needs to build a star schema where dimension tables require daily UPDATE operations via T-SQL to maintain slowly changing dimensions. Is lakehouse the right choice?"
+    choices:
+    - content: "Yes, lakehouse is ideal for this scenario"
+      isCorrect: false
+      explanation: "Incorrect. While lakehouse has a SQL analytics endpoint, it's read-only. You cannot execute UPDATE, DELETE, or MERGE statements via T-SQL against the lakehouse."
+    - content: "No, choose a different store"
+      isCorrect: true
+      explanation: "Correct. The warehouse provides full T-SQL DML support including UPDATE, DELETE, and MERGE operations for maintaining dimensional models with transactional consistency."

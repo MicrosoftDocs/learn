@@ -4,10 +4,11 @@ title: Exercise - Create a Microsoft Fabric lakehouse
 metadata:
   title: Exercise - Create a Microsoft Fabric lakehouse
   description: "Exercise - Create a Microsoft Fabric lakehouse"
-  ms.date: 03/19/2025
+  ms.date: 03/04/2026
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
+  ai-usage: ai-assisted
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-lakehouse.md)]

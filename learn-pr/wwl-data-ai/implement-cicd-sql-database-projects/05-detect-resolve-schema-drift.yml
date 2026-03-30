@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-sql-database-projects.detect-resolve-schema-drift
+title: Detect and resolve schema drift
+metadata:
+  title: Detect and resolve schema drift
+  description: Detect schema drift with schema comparison tools and SqlPackage, and resolve differences between database and project.
+  author: calopez
+  ms.author: calopez
+  ms.date: 07/14/2025
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/05-detect-resolve-schema-drift.md)]

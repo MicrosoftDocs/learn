@@ -1,12 +1,10 @@
-In addition to Azure SQL services, Azure data services are available for other popular relational database systems, including MySQL, MariaDB, and PostgreSQL. The primary reason for these services is to enable organizations that use them in on-premises apps to move to Azure quickly, without making significant changes to their applications.
+In addition to Azure SQL services, Azure data services are available for other popular relational database systems, including MySQL and PostgreSQL. The primary reason for these services is to enable organizations that use them in on-premises apps to move to Azure quickly, without making significant changes to their applications.
 
-## What are MySQL, MariaDB, and PostgreSQL?
+## What are MySQL and PostgreSQL?
 
-MySQL, MariaDB, and PostgreSQL are relational database management systems that are tailored for different specializations.
+MySQL and PostgreSQL are relational database management systems that are tailored for different specializations.
 
 MySQL started life as a simple-to-use open-source database management system. It's the leading open source relational database for *Linux, Apache, MySQL, and PHP* (LAMP) stack apps. It's available in several editions; Community, Standard, and Enterprise. The Community edition is available free-of-charge, and has historically been popular as a database management system for web applications, running under Linux. Versions are also available for Windows. Standard edition offers higher performance, and uses a different technology for storing data. Enterprise edition provides a comprehensive set of tools and features, including enhanced security, availability, and scalability. The Standard and Enterprise editions are the versions most frequently used by commercial organizations, although these versions of the software aren't free.
-
-MariaDB is a newer database management system, created by the original developers of MySQL. The database engine has since been rewritten and optimized to improve performance. One notable feature of MariaDB is its built-in support for temporal data. A table can hold several versions of data, enabling an application to query the data as it appeared at some point in the past.
 
 PostgreSQL is a hybrid relational-object database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own non-relational properties. The database management system is extensible; you can add code modules to the database, which can be run by queries. Another key feature is the ability to store and manipulate geometric data, such as lines, circles, and polygons.
 
@@ -39,22 +37,9 @@ The system uses pay-as-you-go pricing so you only pay for what you use.
 
 Azure Database for MySQL servers provides monitoring functionality to add alerts, and to view metrics and logs.
 
-## Azure Database for MariaDB
+### Azure Database for MySQL Flexible Server
 
-![Screenshot of an Azure Database for MariaDB logo.](../media/mariadb-logo.png)Azure Database for MariaDB is an implementation of the MariaDB database management system adapted to run in Azure. It's based on the MariaDB Community Edition.
-
-The database is fully managed and controlled by Azure. Once you've provisioned the service and transferred your data, the system requires almost no more administration.
-
-### Benefits of Azure Database for MariaDB
-
-Azure Database for MariaDB delivers:
-
-- Built-in high availability with no additional cost.
-- Predictable performance, using inclusive pay-as-you-go pricing.
-- Scaling as needed within seconds.
-- Secured protection of sensitive data at rest and in motion.
-- Automatic backups and point-in-time-restore for up to 35 days.
-- Enterprise-grade security and compliance.
+The flexible-server deployment option is a fully managed database service designed to provide more granular control and flexibility over database management functions and configuration settings. It provides cost optimization controls and is the recommended deployment option for new workloads.
 
 ## Azure Database for PostgreSQL
 

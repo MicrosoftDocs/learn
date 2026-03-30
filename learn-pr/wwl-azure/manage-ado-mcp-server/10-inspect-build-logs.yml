@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.inspect-build-logs
+title: Inspect build logs
+metadata:
+  title: Inspect Build Logs
+  description: "Inspect build logs"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-inspect-build-logs.md)]

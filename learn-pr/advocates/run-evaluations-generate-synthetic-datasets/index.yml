@@ -39,7 +39,7 @@ roles:
 products:
 - azure
 - azure-sdks
-- ai-services
+- foundry-tools
 units:
 - learn.run-evaluations-generate-synthetic-datasets.introduction
 - learn.run-evaluations-generate-synthetic-datasets.prepare

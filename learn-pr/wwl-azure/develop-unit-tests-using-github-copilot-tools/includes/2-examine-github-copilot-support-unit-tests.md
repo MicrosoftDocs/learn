@@ -7,17 +7,17 @@ GitHub Copilot Chat uses your code's context and semantics to suggest assertions
 
 ## GitHub Copilot support for unit testing
 
-Copilot can help with the following testing tasks:
+GitHub Copilot can help with the following testing tasks:
 
 - Set up testing frameworks: get help configuring the right testing framework and VS Code extensions for your project and language.
 - Generate test code: create unit tests, integration tests, and end-to-end tests that cover your application code.
 - Handle edge cases: generate comprehensive test suites to cover edge cases and error conditions.
 - Fix failing tests: receive suggestions for fixing test failures.
-- Maintain consistency: personalize Copilot to generate tests that follow your project's coding practices.
+- Maintain consistency: personalize GitHub Copilot to generate tests that follow your project's coding practices.
 
 ### Set up your testing framework
 
-To accelerate your testing workflow, Copilot can help set up the testing framework and VS Code extensions for your project. Copilot suggests appropriate testing frameworks based on your project type.
+To accelerate your testing workflow, GitHub Copilot can help set up the testing framework and VS Code extensions for your project. GitHub Copilot suggests appropriate testing frameworks based on your project type.
 
 1. Open the Chat view.
 
@@ -31,20 +31,20 @@ GitHub Copilot can help you write tests for your application code by generating 
 
 You can generate unit tests using the following GitHub Copilot tools:
 
-- **Chat view**: Use the Chat view generate unit tests for a project, class, or method using Ask, Edit, or Agent mode.
+- **Chat view**: Use the Chat view to generate unit tests for a project, class, or method using the Ask, Plan, or Agent.
 - **Inline Chat**: Use Inline Chat to generate unit tests for selected classes or methods.
 - **Smart actions**: Use the Generate Tests smart action to generate unit tests for selected code without writing a prompt.
 - **Code line completions**: Use code line completions to suggest addition unit tests for an existing test case.
 
 ### Fix failing tests
 
-Copilot integrates with the Test Explorer in Visual Studio Code and can help with fixing failing tests.
+GitHub Copilot integrates with the Test Explorer in Visual Studio Code and can help with fixing failing tests.
 
 1. In the Test Explorer, hover over a failing test.
 
 1. Select the **Fix Test Failure** button (sparkle icon)
 
-1. Review and apply Copilot's suggested fix.
+1. Review and apply GitHub Copilot's suggested fix.
 
 Alternatively, you can:
 
@@ -52,14 +52,14 @@ Alternatively, you can:
 
 1. Enter the `/fixTestFailure` slash command.
 
-1. Follow Copilot's suggestions to fix the test
+1. Follow GitHub Copilot's suggestions to fix the test
 
 > [!TIP]
-> Agent mode monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
+> When using GitHub Copilot in Agent mode, the agent monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
 
 ### Maintain consistency
 
-If your organization has specific testing requirements, you can customize how Copilot generates tests to ensure they meet your standards. You can personalize how Copilot generates tests by providing custom instructions. For example:
+If your organization has specific testing requirements, you can customize how GitHub Copilot generates tests to ensure they meet your standards. You can personalize how GitHub Copilot generates tests by providing custom instructions. For example:
 
 - Specify preferred testing frameworks
 - Define naming conventions for tests
@@ -171,19 +171,19 @@ This process creates a new project and configures the test runner for the select
 
 ### Generate unit test cases using GitHub Copilot Chat
 
-GitHub Copilot Chat can be used to help you write unit test cases for your test framework. Copilot Chat recognizes your test framework and coding style and generates matching code snippets. You can use Copilot Chat to complete the following tasks:
+GitHub Copilot Chat can be used to help you write unit test cases for your test framework. GitHub Copilot Chat recognizes your test framework and coding style and generates matching code snippets. You can use GitHub Copilot Chat to complete the following tasks:
 
-- Write unit test cases for your test framework based on the code open in the editor or the code snippet you highlight in the editor. Copilot identifies your test framework and coding style and generates matching code snippets.
+- Write unit test cases for your test framework based on the code open in the editor or the code snippet you highlight in the editor. GitHub Copilot identifies your test framework and coding style and generates matching code snippets.
 
-- Identify and write test cases for edge cases and boundary conditions that might be difficult to identify manually. For instance, Copilot can suggest test cases for error handling, null values, or unexpected input types.
+- Identify and write test cases for edge cases and boundary conditions that might be difficult to identify manually. For instance, GitHub Copilot can suggest test cases for error handling, null values, or unexpected input types.
 
 - Suggest assertions that ensure the function is working correctly, based on the code's context and semantics. For example, generate assertions to ensure that function input parameters are valid.
 
-Consider the following scenarios when asking Copilot Chat to generate unit test cases:
+Consider the following scenarios when asking GitHub Copilot Chat to generate unit test cases:
 
-- If a single method is visible in full in the editor, you could ask Copilot Chat to generate a unit test for the method by typing `Write a unit test for the method in the #editor`.
+- If a single method is visible in full in the editor, you could ask GitHub Copilot Chat to generate a unit test for the method by typing `Write a unit test for the method in the #editor`.
 
-- If there are multiple methods visible or the intended method extends beyond what's visible in the editor, select the code you want to generate a unit test for, then ask Copilot: `#selection write a unit test for this code`.
+- If there are multiple methods visible or the intended method extends beyond what's visible in the editor, select the code you want to generate a unit test for, then ask GitHub Copilot: `#selection write a unit test for the selected code`.
 
 ### Run and manage unit tests in Visual Studio Code
 

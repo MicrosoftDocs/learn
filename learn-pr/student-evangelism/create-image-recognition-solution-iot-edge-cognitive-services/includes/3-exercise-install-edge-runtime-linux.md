@@ -1,5 +1,5 @@
 Before you start, you'll need the following:
-- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free ](https://azure.microsoft.com/free ). If you are a student, then sign up for an [Azure for Students](https://signup.azure.com/studentverification?offerType=1&correlationId=3FCCAE4642E76FB009E6A1A1437E6E88) account.
+- A Microsoft Azure subscription. If you don't already have one, you can sign up for a [free trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). If you are a student, then sign up for an [Azure for Students](https://signup.azure.com/studentverification?offerType=1&correlationId=3FCCAE4642E76FB009E6A1A1437E6E88) account.
 
 ## Create cloud resources
 

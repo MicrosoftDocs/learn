@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=be5a9ba4-3aed-4bce-8893-9353a9daa02b]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6a4eace6-0c54-489e-80b6-1a88c38c52a8]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -36,4 +36,3 @@ The training process repeats over multiple *epochs* until an optimal set of weig
 > CNN architectures usually include multiple convolutional filter layers and additional layers to reduce the size of feature maps, constrain the extracted values, and otherwise manipulate the feature values. These layers have been omitted in this simplified example to focus on the key concept, which is that filters are used to extract numeric features from images, which are then used in a neural network to predict image labels.
 
 ::: zone-end
-

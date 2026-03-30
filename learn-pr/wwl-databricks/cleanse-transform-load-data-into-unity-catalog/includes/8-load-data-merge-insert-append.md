@@ -85,6 +85,35 @@ df_refreshed.write.mode("overwrite").saveAsTable("sales.daily_summary")
 df_january.write.mode("overwrite").partitionBy("report_month").saveAsTable("sales.monthly_report")
 ```
 
+> [!IMPORTANT]
+> Overwriting specific partitions by setting `partitionOverwriteMode=dynamic` is a legacy approach that only works on classic compute—it doesn't work on Databricks SQL warehouses or serverless compute. For new pipelines, use `REPLACE USING` instead.
+
+### Dynamically replace partitions with REPLACE USING
+
+`REPLACE USING` is the recommended approach for dynamic partition overwrites. It works across all compute types—including Databricks SQL warehouses and serverless compute—and doesn't require Spark session configuration.
+
+```sql
+-- Replace only the partitions touched by the incoming data
+INSERT INTO sales.monthly_report
+  REPLACE USING (report_month)
+  SELECT region, product_category, SUM(amount) AS revenue, report_month
+  FROM staging.corrected_transactions
+  GROUP BY region, product_category, report_month;
+```
+
+The `REPLACE USING` clause atomically deletes rows in `sales.monthly_report` that match incoming rows on `report_month`, then inserts the new rows. Partitions not represented in the source query are left untouched.
+
+When you need more flexible matching—such as replacing rows based on a custom condition or treating NULL values as equal—use `REPLACE ON` instead:
+
+```sql
+-- Replace rows matching a user-defined condition across source and target
+INSERT INTO sales.transactions
+  REPLACE ON (target.transaction_id = source.transaction_id)
+  SELECT * FROM staging.corrected_transactions AS source;
+```
+
+`REPLACE ON` requires Databricks Runtime 17.1 and above. Use `REPLACE WHERE` (covered earlier) when you need condition-based replacement without a source table reference.
+
 ## Merge data for upsert operations
 
 Real-world data pipelines often need to update existing records while inserting new ones. The MERGE statement handles this pattern—commonly called an "upsert"—by matching source rows to target rows and applying different actions based on whether a match exists.
@@ -172,7 +201,9 @@ Your choice of loading operation depends on the relationship between source and 
 | New records only | INSERT INTO / append | Daily logs, event streams, incremental extracts |
 | Full refresh | INSERT OVERWRITE | Lookup tables, aggregations, failed batch reprocessing |
 | Mixed updates and inserts | MERGE | CDC feeds, dimension tables, data synchronization |
-| Selective replacement | REPLACE WHERE | Correcting specific date ranges or partitions |
+| Selective replacement by predicate | REPLACE WHERE | Correcting specific date ranges or logical conditions |
+| Dynamic partition replacement (all compute types) | REPLACE USING | Recommended for partition overwrites on SQL warehouses and serverless |
+| Custom-condition row replacement | REPLACE ON | Partition overwrites with NULL-equality or cross-column conditions |
 
 > [!IMPORTANT]
 > MERGE operations require a unique match between source and target rows. If multiple source rows match the same target row, the operation fails. Deduplicate your source data before merging.

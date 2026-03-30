@@ -16,7 +16,7 @@ abstract: |
     - Write your first query with KQL.
     - Use KQL to explore data by using the most common operators.
 prerequisites: | 
-  - An Azure subscription; you can create a [free Azure account](https://azure.microsoft.com/free/)
+  - An Azure subscription; you can create a [free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Familiarity with database structures like tables, columns, and rows
 iconUrl: /training/achievements/write-first-query-kusto-query-language.svg
 levels:

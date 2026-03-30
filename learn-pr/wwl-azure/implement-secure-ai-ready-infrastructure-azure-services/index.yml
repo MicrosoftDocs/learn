@@ -33,7 +33,7 @@ products:
 - azure
 - azure-openai
 - azure-container-registry
-- azure-ai-foundry
+- microsoft-foundry
 - azure-machine-learning
 subjects:
 - security

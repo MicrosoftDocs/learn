@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-speech-agent-speech-mcp.understand-speech-mcp
+title: Understand the Azure Speech MCP server
+metadata:
+  title: Understand the Azure Speech MCP server
+  description: Learn about the Model Context Protocol and the speech capabilities exposed by the Azure Speech MCP server.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 7
+content: |
+  [!include[](includes/02-understand-speech-mcp.md)]

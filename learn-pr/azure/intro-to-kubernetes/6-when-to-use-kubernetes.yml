@@ -5,7 +5,7 @@ title: When to use Kubernetes
 metadata:
   title: When to use Kubernetes
   description: When to use Kubernetes
-  ms.date: 11/13/2024
+  ms.date: 03/20/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
@@ -13,4 +13,3 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-when-to-use-kubernetes.md)]
-

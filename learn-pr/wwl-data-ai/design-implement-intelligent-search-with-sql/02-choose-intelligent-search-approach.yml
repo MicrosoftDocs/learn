@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-intelligent-search-with-sql.choose-intelligent-search-approach
+title: Choose an intelligent search approach
+metadata:
+  title: Choose an intelligent search approach
+  description: Learn how to choose between full-text, semantic vector, and hybrid search approaches for your SQL workloads.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/03/2026
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/02-choose-intelligent-search-approach.md)]

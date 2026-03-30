@@ -30,7 +30,6 @@ subjects:
 - cloud-security
 modules:
 - learn.wwl.microsoft-defender-cloud-threat-protection
-- learn.azure-security.configure-and-manage-azure-key-vault
 - introduction-azure-firewall
 - learn.wwl.create-configure-log-analytics-workspace
 trophy:

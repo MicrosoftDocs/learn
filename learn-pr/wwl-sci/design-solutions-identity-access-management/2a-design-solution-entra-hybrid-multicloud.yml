@@ -4,7 +4,7 @@ title: Design a solution for Microsoft Entra ID, including hybrid and multicloud
 metadata:
   title: Design a solution for Microsoft Entra ID, including hybrid and multicloud environments
   description: "Design a Microsoft Entra ID solution for hybrid and multicloud environments, including directory synchronization, authentication methods, and multicloud federation."
-  ms.date: 02/07/2026
+  ms.date: 03/03/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit

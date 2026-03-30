@@ -16,17 +16,17 @@ The Chat view provides a managed environment for conversations between you and t
 
 By default, the Chat view is located in the Secondary Side Bar on the right side of the Visual Studio Code window.
 
-The Chat View supports three modes: **Ask**, **Edit**, and **Agent**.
+The Chat View supports three built-in agents: **Ask**, **Plan**, and **Agent**. You can select an agent from the agent picker in the Chat view.
 
-### Use ask mode to generate code
+### Use the Ask agent to generate code
 
-The ask mode is designed to help you analyze your code and investigate the options for new features before suggesting code implementations. In ask mode, GitHub Copilot acts as a conversational assistant that can provide answers to your questions and help you with coding problems or new features.
+The Ask agent is designed to help you analyze your code and investigate the options for new features before suggesting code implementations. When using the Ask agent, GitHub Copilot acts as a conversational assistant that can provide answers to your questions and help you with coding problems or new features.
 
-1. Open the Chat view in ask mode.
+1. Open the Chat view and select **Ask** from the agent picker.
 
 1. Add context to the chat.
 
-    The ask mode supports chat participants, slash command, and chat variables. You can add the `@workspace` chat participant or `#codebase` to the chat to provide context along with files or folders.
+    The Ask agent supports chat participants, slash commands, and chat variables. You can add the `@workspace` chat participant or `#codebase` to the chat to provide context along with files or folders.
 
 1. Ask questions that help you evaluate the new feature that you want to implement.
 
@@ -54,48 +54,50 @@ The ask mode is designed to help you analyze your code and investigate the optio
     - **Insert**: Inserts the code suggestion at the current cursor position in the editor.
     - **Copy**: Copies the code suggestion to the clipboard.
 
-    ![Screenshot showing Chat view in ask mode suggesting a code update.](../media/chat-view-ask-mode-create-may-2025.png)
+    ![Screenshot showing the Chat view with the Ask agent suggesting a code update.](../media/chat-view-ask-mode-create-may-2025.png)
 
 1. Continue to iterate and refine the new feature with more prompts if needed.
 
-### Use edit mode to generate code
+### Use the Plan agent to plan before coding
 
-The edit mode is designed to help you create or update code. In edit mode, GitHub Copilot acts as a code editor that can help you develop code quickly and accurately.
+The Plan agent is designed to help you research and plan a task before writing any code. When you use the Plan agent, GitHub Copilot analyzes your codebase, asks clarifying questions, and creates a structured, step-by-step implementation plan. Once the plan is finalized, you can hand it off to an implementation agent.
 
-1. Open the Chat view in edit mode.
+1. Open the Chat view and select **Plan** from the agent picker.
 
 1. Add context to the chat.
 
-    The edit mode doesn't support chat participants. Specify workspace context using `#codebase` and by adding files to the chat.
+    The Plan agent uses read-only tools and codebase analysis to research your task. You can add files and folders to the chat to provide additional context.
 
-1. Construct a prompt that describes the code feature that you want to implement.
+1. Construct a prompt that describes the task you want to plan.
 
-    Your prompt should include a description of the code feature you want to implement. For example:
+    Your prompt should include a description of the feature or task you want to implement. For example:
 
     ```plaintext
 
-    #codebase Add a login page. Let users log in with email and password.
+    Implement a user authentication system with OAuth2 and JWT.
 
     ```
 
-1. Review the suggested edits in the code editor.
+1. Answer any clarifying questions that the Plan agent asks.
 
-1. Accept or discard the suggested edits.
+    The Plan agent researches your task and may ask questions to resolve ambiguities before drafting a plan.
 
-    You can navigate through the edits using the up and down arrows. You can Keep (accept) or Undo (discard) the suggested edits individually using the popup menu that appears over each edit. You can also accept or reject all of the edits at once using the **Keep** and **Undo** buttons at the bottom of the editor tab (or Chat view).
+1. Review the proposed plan.
 
-    If you accept the suggested edits, GitHub Copilot updates the code in your editor.
+    The Plan agent provides a high-level summary, a breakdown of implementation steps, verification criteria, and documented decisions. You can iterate on the plan by providing feedback.
 
-    ![Screenshot showing Chat view in edit mode suggesting a new login form.](../media/chat-view-edit-mode-create-code-may-2025.png)
+1. Once the plan is finalized, use the buttons to start implementation or to open the plan in the editor for further review.
 
-### Use agent mode to generate code
+    You can choose to implement the plan in the same chat session, or start a background or cloud agent session to work on the implementation autonomously.
 
-In agent mode, GitHub Copilot acts as an autonomous agent that can take actions on your behalf. You can ask GitHub Copilot to perform specific tasks, and it generates code based on your requests.
+### Use the Agent to generate code
+
+When you use GitHub Copilot in Agent mode, GitHub Copilot acts as an autonomous agent that can take actions on your behalf. You can ask GitHub Copilot to perform specific tasks, and it generates code based on your requests.
 
 > [!IMPORTANT]
-> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions GitHub Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
 
-1. Open the Chat view in agent mode.
+1. Open the Chat view and select **Agent** from the agent picker.
 
 1. Construct a prompt that describes the task you want GitHub Copilot to perform.
 
@@ -105,15 +107,15 @@ In agent mode, GitHub Copilot acts as an autonomous agent that can take actions 
     - Add social media sharing functionality
     - Replace current auth with OAuth
 
-1. Agent mode might invoke multiple tools to accomplish different tasks. Optionally, select the Tools icon to configure which tools can be used for responding to your request.
+1. The Agent might invoke multiple tools to accomplish different tasks. Optionally, select the Tools icon to configure which tools can be used for responding to your request.
 
 1. Confirm tool invocations and terminal commands.
 
-    Before Copilot runs a terminal command or a tool that isn't built in, it requests confirmation to continue. Copilot requests confirmation because tools might run locally on your machine and perform actions that modify files or data.
+    Before GitHub Copilot runs a terminal command or a tool that isn't built in, it requests confirmation to continue. GitHub Copilot requests confirmation because tools might run locally on your machine and perform actions that modify files or data.
 
-1. Copilot detects issues and problems in code edits and terminal commands and will iterate and perform actions to resolve them.
+1. GitHub Copilot detects issues and problems in code edits and terminal commands and will iterate and perform actions to resolve them.
 
-1. As Copilot processes your request, it streams the suggested code edits directly in the editor.
+1. As GitHub Copilot processes your request, it streams the suggested code edits directly in the editor.
 
 1. Review the suggested edits and accept or discard the suggested edits.
 
@@ -125,7 +127,7 @@ Inline chat session can be used to analyze and generate code. The inline chat in
 
 1. Open a file in the editor.
 
-1. Open an inline chat session by using the **Ctrl+I** keyboard shortcut or selecting **Editor Inline Chat** from the Copilot menu.
+1. Open an inline chat session by using the **Ctrl+I** keyboard shortcut or selecting **Open Inline Chat** from the Chat menu in the title bar.
 
     The inline chat session opens at your cursor position in the editor.
 
@@ -141,9 +143,9 @@ Inline chat session can be used to analyze and generate code. The inline chat in
     Update selection to include an option for the `CommonActions.SearchBooks` action. Use the letter "b" and the message "to check for book availability".
     ```
 
-1. Code update suggestions are displayed in the editor.
+1. Code update suggestions are displayed as a diff in the editor.
 
-1. Review the suggested code updates, and then select **Accept** to implement the suggestion or **Close** to discard the updates.
+1. Review the suggested code updates, and then accept or discard the changes.
 
     ![Screenshot showing an inline chat session updating code.](../media/inline-chat-code-suggestion-may-2025.png)
 

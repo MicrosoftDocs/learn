@@ -36,16 +36,7 @@ Some main features of object storage compared to a traditional file system are:
 
 You can also use S3-compatible object storage for backup and restore scenarios by using the BACKUP TO URL command. For more information, see [SQL Server backup and restore with S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
 
-Amazon Web Services (AWS) established the S3 standard framework, and major storage providers like Cloudian, Dell, MinIO, and PureStorage now offer S3-compatible object storage solutions. If a solution offers compatibility with S3 REST APIs, it's compatible with SQL Server 2025.
-
-For more information about object storage benefits, installation, and testing, see the following storage partner documentation. For more object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
-
-- [Cloudian](https://cloudian.com/sql) HyperStore
-- [Dell](https://www.dell.com/support/product-details/product/isilon-onefs) Isildon OneFS
-- [Dell](https://github.com/EMCECS/ECS-CommunityEdition) ECS Community Edition
-- [Hitachi](https://www.hitachivantara.com/en-us/pdf/architecture-guide/hitachi-solution-for-databases-microsoft-sql-server-datacenter-using-ha820-g2-server-hitachi-vsp-one-block.pdf) Hitachi Content Platform (HCP)
-- [MinIO](https://min.io/solutions/sqlserver) Multi-Cloud Object Storage
-- [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) Pure FlashBlade.
+The S3 standard framework is widely adopted, and many major storage providers now offer S3-compatible object storage solutions. If a solution offers compatibility with S3 REST APIs, it's compatible with SQL Server 2025. For a list of supported object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
 
 Some object storage partners offer the ability to run their solution as software capable of virtualizing your current storage. You can install and try these solutions on your own machine or virtual machine (VM).
 

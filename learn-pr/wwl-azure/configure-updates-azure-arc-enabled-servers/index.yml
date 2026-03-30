@@ -24,7 +24,7 @@ abstract: |
 
   -   Associate a VM with a schedule.&nbsp;
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-arc-module.svg
 levels:
 - intermediate
 roles:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.configure-updates-azure-arc-enabled-servers.knowledge-check
 - learn.wwl.configure-updates-azure-arc-enabled-servers.summary
 badge:
-  uid: learn.wwl.configure-updates-azure-arc-enabled-servers.badge
+  uid: learn.wwl.configure-updates-azure-arc-enabled-servers.badge

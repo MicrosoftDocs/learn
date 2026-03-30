@@ -25,6 +25,7 @@ Application security requirements generally fall into these categories. For each
 | Isolate APIs from public internet | API Management with virtual network integration (internal mode), private endpoints |
 | Rate limit API calls to prevent abuse | Azure API Management policies, Azure Front Door rate limiting |
 | Block traffic from unauthorized geographies | Azure WAF geo-filtering, Azure Front Door rules |
+| Protect against volumetric and protocol DDoS attacks | Azure DDoS Protection (complements WAF layer 7 protection for origin IP addresses on virtual networks) |
 
 ### Data protection
 
@@ -40,7 +41,8 @@ Application security requirements generally fall into these categories. For each
 | Requirement | Azure technologies |
 |---|---|
 | Static code analysis for vulnerabilities | GitHub CodeQL, Microsoft Security DevOps Extension for static application security testing (SAST) |
-| Dynamic application testing in runtime | Dynamic application security testing (DAST) in staging environments, Microsoft Defender for Containers |
+| Dynamic application testing | Dynamic application security testing (DAST) tools in staging environments |
+| Container runtime protection and vulnerability scanning | Microsoft Defender for Containers (runtime threat detection, image vulnerability assessment, supply chain protection) |
 | Software supply chain security | GitHub Dependabot, Azure Artifacts, software bill of materials (SBOM) generation |
 | Secret scanning and push protection | GitHub Advanced Security secret scanning |
 | Infrastructure-as-code security validation | Checkov, Terrascan, Template Analyzer via Security DevOps Extension |
@@ -50,7 +52,7 @@ Application security requirements generally fall into these categories. For each
 
 | Requirement | Azure technologies |
 |---|---|
-| Application-layer threat detection | Microsoft Defender for App Service, Defender for Containers, Defender for APIs |
+| Application-layer threat detection | Microsoft Defender for App Service, Defender for Containers, Defender for APIs, Defender for Key Vault |
 | Security posture assessment and scoring | Microsoft Defender for Cloud with cloud security posture management (CSPM), Secure Score |
 | Attack path identification | Defender CSPM attack path analysis |
 | DevOps security monitoring | Azure DevOps Audit Streaming to Microsoft Sentinel |
@@ -88,7 +90,7 @@ An internal API platform serving other line-of-business applications focuses on 
 
 A Kubernetes-hosted microservices architecture requires supply chain and runtime security:
 
-- Azure Container Registry with vulnerability scanning and quarantine
+- Azure Container Registry with vulnerability scanning and quarantine (preview)
 - Microsoft Defender for Containers for runtime protection
 - Workload identity federation for pod-to-Azure-resource authentication
 - Network policies for inter-service segmentation

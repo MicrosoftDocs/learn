@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.connect-ontology-to-data
+title: Connect an ontology to data
+metadata:
+  title: Connect an Ontology to Data
+  description: "Learn how to bind entity types to lakehouse tables and eventhouse streams using static and time series data bindings"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-connect-ontology-to-data.md)]

@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dimensional-models-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for designing dimensional models"
+  ms.date: 02/24/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which schema type is recommended for most analytics workloads in Microsoft Fabric?"
+    choices:
+    - content: "Snowflake schema"
+      isCorrect: false
+      explanation: "Incorrect. A snowflake schema normalizes dimension tables, which adds joins and complexity. It's appropriate when a dimension is extremely large, but star schema is recommended for most analytics workloads."
+    - content: "Star schema"
+      isCorrect: true
+      explanation: "Correct. Star schema is the recommended approach. It delivers fewer joins for better query performance, an intuitive structure that maps to business concepts, and a foundation for Power BI semantic models."
+    - content: "Normalized schema"
+      isCorrect: false
+      explanation: "Incorrect. A normalized schema is optimized for transactional workloads that minimize data redundancy. For analytics, a star schema with denormalized dimensions provides better query performance and usability."
+  - content: "What is the most important design decision when creating a fact table?"
+    choices:
+    - content: "Choosing the naming convention for the table"
+      isCorrect: false
+      explanation: "Incorrect. Naming conventions like the f_ or Fact_ prefix are useful for identification, but they don't affect the structural design of the table. Defining the grain is the most important decision."
+    - content: "Selecting which measures to include"
+      isCorrect: false
+      explanation: "Incorrect. Selecting measures is important, but it depends on a prior decision. The grain determines which measures and dimension keys belong in the table."
+    - content: "Defining the grain"
+      isCorrect: true
+      explanation: "Correct. The grain specifies what one row in the fact table represents. It determines which dimension keys and measures belong in the table and should be defined before other design decisions."
+  - content: "Why are surrogate keys recommended for dimension tables?"
+    choices:
+    - content: "They store meaningful business values that users can interpret"
+      isCorrect: false
+      explanation: "Incorrect. Surrogate keys are system-generated and typically don't carry business meaning. Their purpose is to insulate the data warehouse from source system changes and support historical tracking."
+    - content: "They insulate the data warehouse from source system changes and support historical tracking"
+      isCorrect: true
+      explanation: "Correct. Surrogate keys consolidate data from multiple sources, replace multi-column keys with a single column, and enable slowly changing dimension type 2 tracking with multiple versions of the same entity."
+    - content: "They eliminate the need for natural keys in the dimension"
+      isCorrect: false
+      explanation: "Incorrect. Natural keys are still included in dimension tables to link back to source systems during ETL processes. Surrogate keys supplement natural keys rather than replacing them."
+  - content: "An organization needs to analyze sales by the region a salesperson was assigned to at the time of each sale. Which SCD type should the organization use for the region attribute?"
+    choices:
+    - content: "Type 1, which overwrites the current value"
+      isCorrect: false
+      explanation: "Incorrect. Type 1 overwrites the existing value with no history retained. If a salesperson changes regions, all their past sales would appear under the new region, which doesn't meet the requirement for historical accuracy."
+    - content: "Type 2, which adds a new version row"
+      isCorrect: true
+      explanation: "Correct. Type 2 inserts a new row for each change, maintaining full history with effective dates. Each version of the salesperson has its own surrogate key, so historical facts link to the correct region at the time of each sale."
+    - content: "Type 3, which adds a column for the previous value"
+      isCorrect: false
+      explanation: "Incorrect. Type 3 stores only the current and previous values. If the salesperson changes regions multiple times, intermediate assignments are lost. Type 2 provides the full history needed for this scenario."
+  - content: "A periodic snapshot fact table records end-of-day inventory levels. Which measure type best describes the inventory balance?"
+    choices:
+    - content: "Additive"
+      isCorrect: false
+      explanation: "Incorrect. An additive measure can be summed across all dimensions. An inventory balance can be summed across products on a given day, but summing balances across multiple days produces a meaningless total."
+    - content: "Semi-additive"
+      isCorrect: true
+      explanation: "Correct. Semi-additive measures can be summed across some dimensions but not all. An inventory balance can be summed across products or locations, but not across time periods, because each snapshot represents a point-in-time state."
+    - content: "Non-additive"
+      isCorrect: false
+      explanation: "Incorrect. Non-additive measures can't be summed across any dimension. An inventory balance can be summed across products and locations on a given day, which makes it semi-additive rather than non-additive."

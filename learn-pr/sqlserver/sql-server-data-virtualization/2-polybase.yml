@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-server-data-virtualization.polybase
+title: Introduction to PolyBase
+metadata:
+  title: Introduction to PolyBase
+  description: "Learn about PolyBase and the evolution of PolyBase from SQL Server 2016 to SQL Server 2025."
+  ms.date: 02/26/2026
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-polybase.md)]

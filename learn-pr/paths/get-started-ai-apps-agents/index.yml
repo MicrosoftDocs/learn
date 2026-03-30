@@ -27,7 +27,7 @@ roles:
 subjects:
 - artificial-intelligence
 products:
-- azure-ai-foundry
+- microsoft-foundry
 modules:
 - learn.wwl.get-started-with-ai-in-azure
 - learn.wwl.get-started-with-generative-ai-and-agents

@@ -32,7 +32,7 @@ prerequisites: |
   -   The ability to develop C# console apps that implement business logic using iteration statements, selection statements, and custom methods.
 
   -   The ability to perform basic C# code debugging and exception handling in a Visual Studio Code environment.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/visual-studio-module.svg
 levels:
 - beginner
 roles:

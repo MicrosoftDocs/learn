@@ -19,7 +19,7 @@ Module 2 Tips and Tricks
 
 - Describe Azure AD roles and custom roles
 - Explain the use of external identity providers
-- Clarify Azure AD connect
+- Clarify Microsoft Entra Connect
 - Explain how to implement PHS, PTA, and SSO
 - Focus on proper maintenance!
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automated-evaluation-genaiops.why-automated-evaluations
+title: Understand why automated evaluations matter
+metadata:
+  title: Understand why automated evaluations matter
+  description: "Understand the trade-offs between human and automated evaluation, and learn how human-in-the-loop approaches combine both strategically"
+  ms.date: 02/22/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-why-automated-evaluations.md)]

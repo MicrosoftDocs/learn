@@ -2,7 +2,7 @@ Evaluating security posture for productivity and collaboration workloads require
 
 ## Evaluate posture with Microsoft Secure Score
 
-[Microsoft Secure Score](/defender-xdr/microsoft-secure-score) is a numerical measurement of your organization's security posture, available in the [Microsoft Defender portal](https://security.microsoft.com/securescore). A higher score indicates that more recommended security actions are implemented. Secure Score helps your organization:
+Microsoft Secure Score is a numerical measurement of your organization's security posture, available in the Microsoft Defender portal. A higher score indicates that more recommended security actions are implemented. Secure Score helps your organization:
 
 - **Report** on the current state of security posture across productivity workloads.
 - **Improve** posture by providing discoverability, visibility, guidance, and control.
@@ -32,7 +32,7 @@ Secure Score also covers non-Microsoft SaaS applications connected through Defen
 Recommended actions are organized into four groups that align to the core dimensions of your productivity workload security:
 
 - **Identity**: Microsoft Entra accounts and roles, including multifactor authentication, Conditional Access policies, and privileged role management.
-- **Device**: Microsoft Defender for Endpoint recommendations, covered under [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices), including vulnerability management and endpoint configuration.
+- **Device**: Microsoft Defender for Endpoint recommendations, including vulnerability management and endpoint configuration.
 - **Apps**: Email and cloud app security, including Exchange Online protection policies and Defender for Cloud Apps configurations.
 - **Data**: Microsoft Purview Information Protection recommendations, covering data classification, sensitivity labels, and data loss prevention policies.
 
@@ -67,7 +67,7 @@ The highest ranked actions should be prioritized first. For actions that have hi
 
 ## Extend posture evaluation with Microsoft Security Exposure Management
 
-[Microsoft Security Exposure Management](/security-exposure-management/microsoft-security-exposure-management) builds on Secure Score by providing a unified view of security posture across your entire digital estate, including endpoints, cloud resources, and external attack surfaces. While Secure Score acts as an industry baseline and benchmark, Security Exposure Management adds deeper contextual analysis for designing holistic protection strategies for productivity workloads.
+Microsoft Security Exposure Management builds on Secure Score by providing a unified view of security posture across your entire digital estate, including endpoints, cloud resources, and external attack surfaces. While Secure Score acts as an industry baseline and benchmark, Security Exposure Management adds deeper contextual analysis for designing holistic protection strategies for productivity workloads.
 
 Key capabilities that complement Secure Score include:
 
@@ -83,7 +83,7 @@ Key capabilities that complement Secure Score include:
 
 ### Vulnerability management integration
 
-[Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) now resides within Security Exposure Management, providing a unified vulnerability management experience across your digital estate. This integration delivers several benefits for evaluating collaboration workload posture:
+Microsoft Defender Vulnerability Management now resides within Security Exposure Management, providing a unified vulnerability management experience across your digital estate. This integration delivers several benefits for evaluating collaboration workload posture:
 
 - **Unified vulnerability view**: Organizations with both Defender for Cloud and Defender for Endpoint licenses can see all vulnerabilities affecting their devices and cloud resources in a single view.
 - **Risk-based prioritization**: Cloud vulnerabilities are prioritized by risk in the Defender portal, helping you focus on the most impactful issues across your productivity workloads.
@@ -91,7 +91,7 @@ Key capabilities that complement Secure Score include:
 
 ### Data connectors
 
-Security Exposure Management supports [data connectors](/security-exposure-management/overview-data-connectors) that integrate with external security solutions and data sources. These connectors consolidate security data from non-Microsoft tools—such as ServiceNow CMDB for asset management, and Tenable, Qualys, and Rapid7 for vulnerability assessment—into a single unified view. Connectors for Wiz and Palo Alto Prisma extend coverage to non-Microsoft cloud security platforms.
+Security Exposure Management supports data connectors that integrate with external security solutions and data sources. These connectors consolidate security data from non-Microsoft tools—such as ServiceNow CMDB for asset management, and Tenable, Qualys, and Rapid7 for vulnerability assessment—into a single unified view. Connectors for Wiz and Palo Alto Prisma extend coverage to non-Microsoft cloud security platforms.
 
 Data collected through these connectors is normalized within the enterprise exposure graph, enriching your device inventory, mapping relationships between external assets and existing infrastructure, and revealing new attack paths. For a security architect evaluating productivity workloads, connectors provide a complete picture of posture across both Microsoft and non-Microsoft security tools.
 
@@ -110,15 +110,15 @@ When you evaluate and design security posture for productivity and collaboration
 
 ## Evaluate AI readiness as a posture dimension
 
-As organizations adopt generative AI tools, security posture evaluation must extend to AI-specific risks. [Data Security Posture Management (DSPM)](/purview/data-security-posture-management-learn-about) in Microsoft Purview provides AI-focused posture metrics that complement Secure Score and Security Exposure Management. DSPM tracks objectives related to data exposure prevention, oversharing risk, and policy coverage. These capabilities are covered in detail in the unit on evaluating data security controls for Microsoft 365 Copilot.
+As organizations adopt generative AI tools, security posture evaluation must extend to AI-specific risks. Data Security Posture Management (DSPM) in Microsoft Purview provides AI-focused posture metrics that complement Secure Score and Security Exposure Management. DSPM tracks objectives related to data exposure prevention, oversharing risk, and policy coverage. These capabilities are covered in detail in the unit on evaluating data security controls for Microsoft 365 Copilot.
 
 From a posture evaluation perspective, the **AI observability** dashboard in DSPM is especially relevant. It inventories all active AI apps and agents across your organization, highlights high-risk agents, and reports sensitive interactions. This gives you visibility into how AI tools interact with organizational data, which feeds directly into the posture metrics you track alongside Secure Score and Security Exposure Management.
 
-The [Microsoft Security Dashboard for AI](https://ai.security.microsoft.com) provides a complementary executive-level view. It aggregates AI risk signals from Microsoft Entra, Microsoft Defender, and Microsoft Purview into a single dashboard, covering identity governance for AI apps, threat protection for AI workloads, data classification of AI-accessible content, and compliance posture against AI regulations. For security architects, this dashboard provides a starting point for assessing whether existing security controls adequately cover the AI attack surface.
+The Microsoft Security Dashboard for AI provides a complementary executive-level view. It aggregates AI risk signals from Microsoft Entra, Microsoft Defender, and Microsoft Purview into a single dashboard, covering identity governance for AI apps, threat protection for AI workloads, data classification of AI-accessible content, and compliance posture against AI regulations. For security architects, this dashboard provides a starting point for assessing whether existing security controls adequately cover the AI attack surface.
 
 ## Align with Microsoft cloud security benchmark v2
 
-The [Microsoft cloud security benchmark v2 (MCSBv2)](/security/benchmark/azure/overview) provides a framework of security controls that validates your posture evaluation approach against Microsoft-recommended best practices. The **Posture and Vulnerability Management (PV)** domain maps directly to the capabilities covered in this unit:
+The Microsoft cloud security benchmark v2 (MCSBv2) provides a framework of security controls that validates your posture evaluation approach against Microsoft-recommended best practices. The **Posture and Vulnerability Management (PV)** domain maps directly to the capabilities covered in this unit:
 
 | MCSBv2 control | Secure Score / MSEM alignment |
 |---|---|

@@ -1,7 +1,7 @@
 In this exercise, we'll introduce using *Azure Database Migration Services* (***DMS***) to migrate to an Azure Cosmos DB for MongoDB account. 
 
 > [!NOTE]
-> To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at ***https://azure.microsoft.com/free***. You cannot use a Microsoft Learn sandbox subscription for this exercise..
+> To complete this exercise, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at ***https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn***. You cannot use a Microsoft Learn sandbox subscription for this exercise..
 
 ## Prerequisites for this exercise
 
@@ -32,7 +32,7 @@ Let's prepare our environment to move the backup to the Azure Storage account. I
 
 ### Download the GitHub repository using Visual Studio
 
-Let's put Visual studio Code to some good use, first, we need to clone the lab repo.
+Let's put Visual Studio Code to some good use, first, we need to clone the lab repo.
 
 1. Once Visual Studio Code has been installed on your client, let's go ahead and open it.
 1. Press ***Ctrl***+***Shift***+***P*** to *Show All Commands*.
@@ -47,9 +47,9 @@ Let's put Visual studio Code to some good use, first, we need to clone the lab r
     1. Once it has completed downloading the repository it will ask ***Would you like to open the clone repository?***, select the **Open** button.
 
         > [!NOTE]
-        > If you did not selected the ***Open*** button, select ***File*** -> ***Open folder*** and select the folder where you cloned the repo to open it.
+        > If you did not select the ***Open*** button, select ***File*** -> ***Open folder*** and select the folder where you cloned the repo to open it.
 
-    1. If a dialog pops-up asking if you trust the authors, just check the checkbox, and select ***Yes, I trust the authors***.
+    1. If a dialog pops up asking if you trust the authors, just check the checkbox, and select ***Yes, I trust the authors***.
     1. You can close any other pop-ups that might have appeared on the lower right hand side.
     1. You can close the ***Get Started*** tab if it's opened.
 
@@ -266,7 +266,7 @@ Now we should have everything we need to define the migration details of our pro
     > [![Screenshot showing the new migration project target tab.](../media/6-migration-project-target-tab.png)](../media/6-migration-project-target-tab.png#lightbox)
 
     > [!NOTE]
-    > While in this exercise we are migrating to an Azure Comos DB account, the subsequent steps would have been very similar if you had chosen the **Standard mode** or the **Connection String mode** to connect directly to a MongoDB server.
+    > While in this exercise we are migrating to an Azure Cosmos DB account, the subsequent steps would have been very similar if you had chosen the **Standard mode** or the **Connection String mode** to connect directly to a MongoDB server.
 
 1. Select the **Next: Database Settings >>** button.
 

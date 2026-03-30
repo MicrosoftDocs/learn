@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Segoe UI, sans-serif" font-size="13">
+  <title>Warehouse Star Schema Architecture</title>
+  <desc>Diagram showing warehouse star schema with fact and dimension tables, connected to Power BI through Direct Lake.</desc>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FAFAFA" rx="4"/>
+
+  <!-- LEFT: Lakehouse Source -->
+  <rect x="20" y="155" width="148" height="56" rx="10" fill="#008080"/>
+  <text x="94" y="178" text-anchor="middle" fill="#FFF" font-size="12" font-weight="600">Lakehouse</text>
+  <text x="94" y="196" text-anchor="middle" fill="#E0F2F1" font-size="11">Delta Tables</text>
+
+  <!-- Dashed arrow: Lakehouse → Star Schema (horizontal) -->
+  <line x1="168" y1="183" x2="244" y2="183" stroke="#008080" stroke-width="2" stroke-dasharray="8,4"/>
+  <polyline points="238,178 245,183 238,188" fill="none" stroke="#008080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="206" y="175" text-anchor="middle" fill="#006060" font-size="9" font-weight="600">Cross-DB Query</text>
+
+  <!-- CENTER: Star Schema -->
+  <!-- Schema background area -->
+  <rect x="250" y="24" width="296" height="352" rx="14" fill="#F3EDF9" stroke="#D1B8E8" stroke-width="1"/>
+
+  <!-- Large header to draw the eye -->
+  <text x="398" y="58" text-anchor="middle" font-size="18" font-weight="700" fill="#6B2FA0">STAR SCHEMA</text>
+  <line x1="304" y1="66" x2="492" y2="66" stroke="#D1B8E8" stroke-width="1"/>
+
+  <!-- Fact table (center of star) -->
+  <rect x="350" y="162" width="96" height="44" rx="8" fill="#6B2FA0"/>
+  <text x="398" y="181" text-anchor="middle" fill="#FFF" font-size="12" font-weight="700">Fact_Sales</text>
+  <text x="398" y="197" text-anchor="middle" fill="#D8C0F0" font-size="9">Transactions</text>
+
+  <!-- Dim_Product (top, centered above fact) -->
+  <rect x="352" y="86" width="92" height="36" rx="8" fill="#8B5FC7"/>
+  <text x="398" y="109" text-anchor="middle" fill="#FFF" font-size="11" font-weight="600">Dim_Product</text>
+  <!-- Connector: top dim to fact -->
+  <line x1="398" y1="122" x2="398" y2="162" stroke="#6B2FA0" stroke-width="1.5"/>
+
+  <!-- Dim_Store (right, fits within star schema boundary) -->
+  <rect x="462" y="166" width="78" height="36" rx="8" fill="#8B5FC7"/>
+  <text x="501" y="189" text-anchor="middle" fill="#FFF" font-size="11" font-weight="600">Dim_Store</text>
+  <!-- Connector: right dim to fact -->
+  <line x1="446" y1="184" x2="462" y2="184" stroke="#6B2FA0" stroke-width="1.5"/>
+
+  <!-- Dim_Customer (bottom, centered below fact) -->
+  <rect x="340" y="246" width="116" height="36" rx="8" fill="#8B5FC7"/>
+  <text x="398" y="269" text-anchor="middle" fill="#FFF" font-size="11" font-weight="600">Dim_Customer</text>
+  <!-- Connector: bottom dim to fact -->
+  <line x1="398" y1="206" x2="398" y2="246" stroke="#6B2FA0" stroke-width="1.5"/>
+
+  <!-- Dim_Time (left, clear gap from fact) -->
+  <rect x="258" y="166" width="72" height="36" rx="8" fill="#8B5FC7"/>
+  <text x="294" y="189" text-anchor="middle" fill="#FFF" font-size="11" font-weight="600">Dim_Time</text>
+  <!-- Connector: left dim to fact -->
+  <line x1="330" y1="184" x2="350" y2="184" stroke="#6B2FA0" stroke-width="1.5"/>
+
+  <!-- RIGHT: Power BI Semantic Model -->
+  <rect x="618" y="147" width="162" height="72" rx="10" fill="#F2C811" stroke="#D4A800" stroke-width="1"/>
+  <text x="699" y="175" text-anchor="middle" fill="#333" font-size="12" font-weight="600">Power BI</text>
+  <text x="699" y="191" text-anchor="middle" fill="#555" font-size="11">Semantic Model</text>
+  <text x="699" y="207" text-anchor="middle" fill="#555" font-size="10">(Direct Lake)</text>
+
+  <!-- Arrow: Star Schema → Power BI (horizontal) -->
+  <line x1="546" y1="183" x2="612" y2="183" stroke="#555" stroke-width="1.5"/>
+  <polyline points="606,178 613,183 606,188" fill="none" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="579" y="176" text-anchor="middle" fill="#555" font-size="9" font-weight="600">Direct Lake</text>
+
+  <!-- Legend -->
+  <g transform="translate(560, 330)">
+    <line x1="0" y1="8" x2="30" y2="8" stroke="#555" stroke-width="1.5"/>
+    <text x="36" y="12" fill="#555" font-size="10">Dataflow</text>
+    <line x1="0" y1="26" x2="30" y2="26" stroke="#008080" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="36" y="30" fill="#555" font-size="10">Cross-DB Query</text>
+    <rect x="0" y="38" width="12" height="12" rx="2" fill="#6B2FA0"/>
+    <text x="36" y="48" fill="#555" font-size="10">Warehouse tables</text>
+    <rect x="0" y="54" width="12" height="12" rx="2" fill="#008080"/>
+    <text x="36" y="64" fill="#555" font-size="10">Lakehouse elements</text>
+  </g>
+</svg>

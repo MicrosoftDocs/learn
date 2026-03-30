@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.use-cases
+title: Use cases from the field
+metadata:
+  title: Use cases from the field
+  description: "Explore practical scenarios where Azure SRE Agent delivers measurable operational value."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-use-cases.md)]

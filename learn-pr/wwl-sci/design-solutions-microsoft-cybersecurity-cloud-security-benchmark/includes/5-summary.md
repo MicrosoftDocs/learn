@@ -25,7 +25,7 @@ In this module, you learned how to:
 - [Microsoft Cybersecurity Reference Architectures - Security documentation](/security/adoption/mcra)
 - [Overview of the Microsoft Cloud Security Benchmark](/security/benchmark/azure/overview)
 - [MCSB v2 AI Security Controls](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security)
-- [Security for AI](/security/ai/)
+- [Security for AI](/security/security-for-ai/)
 - [What is Zero Trust?](/security/zero-trust/zero-trust-overview)
 - [Zero Trust adoption framework overview](/security/zero-trust/adopt/zero-trust-adoption-overview)
 - [Rapidly modernize your security posture](/security/zero-trust/adopt/rapidly-modernize-security-posture)

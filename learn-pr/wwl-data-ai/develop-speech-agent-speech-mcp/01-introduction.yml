@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-speech-agent-speech-mcp.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to developing a speech agent with the Azure Speech MCP server.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 2
+content: |
+  [!include[](includes/01-introduction.md)]

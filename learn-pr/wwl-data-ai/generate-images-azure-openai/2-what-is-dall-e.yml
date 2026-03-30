@@ -6,11 +6,10 @@ metadata:
   description: Explore what image-generation models are.
   author: ivorb
   ms.author: berryivor
-  ms.date: 05/08/2025
+  ms.date: 03/24/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-dall-e.md)]
-

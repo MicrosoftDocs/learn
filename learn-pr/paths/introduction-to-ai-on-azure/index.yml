@@ -1,43 +1,43 @@
 ### YamlMime:LearningPath
 uid: learn.introduction-ai-azure
+hidden: true
 metadata:
-  title: "Introduction to AI in Azure"
-  description: This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions, focusing on Microsoft Foundry. 
+  title: Introduction to AI in Azure (deprecated)
+  description: This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions, focusing on Microsoft Foundry.
   brand: azure
   ms.date: 12/11/2025
   author: sherzyang
   ms.author: sheryang
   ms.topic: learning-path
-title: "Introduction to AI in Azure"
+title: Introduction to AI in Azure (deprecated)
 summary: |
-  This course introduces core concepts related to artificial intelligence (AI), and the services in Microsoft Azure that can be used to create AI solutions. 
-prerequisites: Familiarity with Azure and the Azure portal.
+  This learning path is deprecated, as is the associated Microsoft course [AI-900 (Introduction to AI in Azure)](/training/courses/ai-900t00). This course has been replaced with a new, updated course, [AI-901 (Introduction to AI in Azure)](/training/courses/ai-901t00). The new course provides a more comprehensive and up-to-date introduction to AI concepts and Azure-based AI solutions.
 iconUrl: /training/achievements/document-intelligence-knowledge-mining.svg
 levels:
   - beginner
-roles: 
+roles:
   - ai-engineer
   - developer
   - solution-architect
   - student
-products: 
-  - azure-ai-foundry
-subjects: 
+products:
+  - microsoft-foundry
+subjects:
   - artificial-intelligence
 modules:
-- learn.wwl.get-started-ai-fundamentals
-- learn.wwl.get-started-ai-in-foundry
-- learn.wwl.fundamentals-machine-learning
-- learn.wwl.design-machine-learning-model-training-solution
-- learn.wwl.fundamentals-generative-ai
-- learn.wwl.get-started-generative-ai-azure
-- learn.wwl.introduction-language
-- learn.wwl.get-started-language-azure
-- learn.wwl.introduction-ai-speech
-- learn.wwl.recognize-synthesize-speech
-- learn.wwl.introduction-computer-vision
-- learn.wwl.get-started-computer-vision
-- learn.wwl.introduction-information-extraction
-- learn.wwl.ai-information-extraction
+  - learn.wwl.get-started-ai-fundamentals
+  - learn.wwl.get-started-ai-in-foundry
+  - learn.wwl.fundamentals-machine-learning
+  - learn.wwl.design-machine-learning-model-training-solution
+  - learn.wwl.fundamentals-generative-ai
+  - learn.wwl.get-started-generative-ai-azure
+  - learn.wwl.introduction-language
+  - learn.wwl.get-started-language-azure
+  - learn.wwl.introduction-ai-speech
+  - learn.wwl.recognize-synthesize-speech
+  - learn.wwl.introduction-computer-vision
+  - learn.wwl.get-started-computer-vision
+  - learn.wwl.introduction-information-extraction
+  - learn.wwl.ai-information-extraction
 trophy:
   uid: learn.introduction-ai-azure.trophy

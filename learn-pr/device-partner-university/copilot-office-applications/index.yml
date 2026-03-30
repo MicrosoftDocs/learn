@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.dpu.copilot-office-applications
+title: Work smarter with Copilot across your Microsoft 365 apps
+metadata:
+  title: Work Smarter with Copilot Across Your Microsoft 365 Apps
+  description: "In this module, you'll learn how to use Microsoft 365 Copilot in Word, PowerPoint, Excel, Outlook, and OneNote to work smarter and more efficiently."
+  ms.date: 03/02/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: microsoft-365
+summary: >
+  Learn how to use Microsoft 365 Copilot in Word, PowerPoint, Excel, Outlook, and OneNote to work smarter and more efficiently.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Enable Microsoft 365 Copilot in your apps to start using its powerful features.
+  - Use Copilot in Word to generate, summarize, and edit documents with ease.
+  - Leverage Copilot in PowerPoint to create engaging presentations quickly.
+  - Utilize Copilot in Excel to analyze data, create visualizations, and automate tasks.
+  - Apply Copilot in Outlook to manage your email and calendar more effectively.
+  - Take advantage of Copilot in OneNote to organize your notes and boost your productivity.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/copilot-office-applications-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365
+units:
+  - learn.dpu.copilot-office-applications.introduction
+  - learn.dpu.copilot-office-applications.enable-copilot-in-microsoft-365-apps
+  - learn.dpu.copilot-office-applications.copilot-in-word
+  - learn.dpu.copilot-office-applications.copilot-in-powerpoint
+  - learn.dpu.copilot-office-applications.copilot-in-excel
+  - learn.dpu.copilot-office-applications.copilot-in-outlook
+  - learn.dpu.copilot-office-applications.copilot-in-onenote
+  - learn.dpu.copilot-office-applications.knowledge-check
+  - learn.dpu.copilot-office-applications.summary
+badge:
+  uid: learn.dpu.copilot-office-applications.badge

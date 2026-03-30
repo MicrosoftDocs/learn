@@ -4,7 +4,7 @@ title: Configure job triggers
 metadata:
   title: Configure Job Triggers
   description: Learn how to configure job triggers in Lakeflow Jobs including table update triggers, file arrival triggers, and continuous triggers for automated data pipeline execution.
-  ms.date: 12/07/2025
+  ms.date: 03/05/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

@@ -11,4 +11,4 @@ The Microsoft Fabric Capacity Metrics app is an app that an administrator can in
 By using the Fabric Capacity Metrics app, you can observe capacity utilization trends to determine what processes are consuming CUs in your Fabric environment and whether any *throttling* is occurring (which indicates that your processes require more capacity than is available within the constraints of your purchased capacity license). With this information, you can optimize your capacity license for your needs.
 
 > [!TIP]
-> For more information about Microsoft Fabric Capacity Metrics app, refer to **[Billing and utilization reporting in Synapse Data Warehouse](/fabric/data-warehouse/usage-reporting)** in the Microsoft Fabric documentation.
+> For more information about Microsoft Fabric Capacity Metrics app, refer to **[Billing and utilization reporting in Data Warehouse](/fabric/data-warehouse/usage-reporting)** in the Microsoft Fabric documentation.

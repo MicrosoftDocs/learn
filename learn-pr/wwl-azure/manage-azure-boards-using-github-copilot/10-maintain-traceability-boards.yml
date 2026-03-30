@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.maintain-traceability-boards
+title: Maintain end-to-end traceability in Azure Boards
+metadata:
+  title: Maintain end-to-end traceability in Azure Boards
+  description: "Maintain end-to-end traceability in Azure Boards"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-maintain-traceability-boards.md)]

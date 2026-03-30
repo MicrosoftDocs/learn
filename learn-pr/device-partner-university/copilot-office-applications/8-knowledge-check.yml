@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-office-applications.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Work smarter with Copilot across your Microsoft 365 apps" module.
+  ms.date: 03/02/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is one primary benefit of having Copilot built directly into Microsoft 365 apps like Word, Excel, and PowerPoint?"
+    choices:
+        - content: "It helps users optimize their workflow by turning data into insights and summarizing text"
+          isCorrect: true
+          explanation: ""
+        - content: "It replaces the need for Microsoft 365 subscriptions"
+          isCorrect: false
+          explanation: ""
+        - content: "It automatically publishes documents to the web"
+          isCorrect: false
+          explanation: ""
+        - content: "It works only as a standalone chat application"
+          isCorrect: false
+          explanation: ""
+  - content: "What must you confirm first if the Copilot button doesn't appear in a Microsoft 365 app?"
+    choices:
+        - content: "That you're signed in with an account that has a Copilot license"
+          isCorrect: true
+          explanation: ""
+        - content: "That your internet connection is turned off"
+          isCorrect: false
+          explanation: ""
+        - content: "That the document is saved as a PDF"
+          isCorrect: false
+          explanation: ""
+        - content: "That third-party add-ins are disabled"
+          isCorrect: false
+          explanation: ""
+  - content: "Which action allows Copilot in Word to rewrite selected text?"
+    choices:
+        - content: "Selecting the Copilot icon next to the text and choosing Auto Rewrite"
+          isCorrect: true
+          explanation: ""
+        - content: "Using the Save As command from the File menu"
+          isCorrect: false
+          explanation: ""
+        - content: "Turning on Track Changes"
+          isCorrect: false
+          explanation: ""
+        - content: "Switching the document to Read Mode"
+          isCorrect: false
+          explanation: ""
+  - content: "What is Agent Mode in Excel primarily designed to help with?"
+    choices:
+        - content: "Complex, multi-step tasks like reshaping data or building reports"
+          isCorrect: true
+          explanation: ""
+        - content: "Simple formatting changes like font size adjustments"
+          isCorrect: false
+          explanation: ""
+        - content: "Sending spreadsheets through email automatically"
+          isCorrect: false
+          explanation: ""
+        - content: "Replacing formulas with static values"
+          isCorrect: false
+          explanation: ""
+  - content: "What can Copilot in OneNote generate to help users work with their notes?"
+    choices:
+        - content: "Summaries, task lists, and rewritten notes"
+          isCorrect: true
+          explanation: ""
+        - content: "Only handwritten drawings"
+          isCorrect: false
+          explanation: ""
+        - content: "Automatic calendar invitations"
+          isCorrect: false
+          explanation: ""
+        - content: "System-level backup files"
+          isCorrect: false
+          explanation: ""

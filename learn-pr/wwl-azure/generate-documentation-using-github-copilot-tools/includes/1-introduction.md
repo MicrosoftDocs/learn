@@ -14,7 +14,7 @@ After completing this module, you’ll be able to:
 
 - Describe how GitHub Copilot uses natural language processing and machine learning to interpret user prompts and provide relevant responses.
 - Use GitHub Copilot to brainstorm new apps or features, explore coding tools and techniques, evaluate issues and potential fixes, and explain complex or unfamiliar code.
-- Generate project documentation using GitHub Copilot's Ask, Edit, and Agent modes.
+- Generate project documentation using GitHub Copilot's Ask, Agent, and Plan modes.
 - Generate inline code documentation using GitHub Copilot's Chat view, Inline chat, and Smart actions.
 - Complete a lab exercise that involves using GitHub Copilot to analyze and document a codebase.
 

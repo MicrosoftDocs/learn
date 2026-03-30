@@ -4,7 +4,7 @@ title: CREATE EXTERNAL TABLE AS SELECT (CETAS)
 metadata:
   title: CREATE EXTERNAL TABLE AS SELECT (CETAS)
   description: "Learn about the use cases for CETAS, its structure, and how to enable it in SQL Server 2025."
-  ms.date: 07/24/2025
+  ms.date: 03/20/2026
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: unit

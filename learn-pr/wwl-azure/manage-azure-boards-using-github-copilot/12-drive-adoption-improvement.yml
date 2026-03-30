@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.drive-adoption-improvement
+title: Drive adoption and continuous improvement
+metadata:
+  title: Drive adoption and continuous improvement
+  description: "Drive adoption and continuous improvement"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/12-drive-adoption-improvement.md)]

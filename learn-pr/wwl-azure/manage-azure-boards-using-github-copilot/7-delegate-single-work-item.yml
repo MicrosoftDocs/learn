@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.delegate-single-work-item
+title: Delegate a single work item with GitHub Copilot
+metadata:
+  title: Delegate a single work item with GitHub Copilot
+  description: "Delegate a single work item with GitHub Copilot"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-delegate-single-work-item.md)]

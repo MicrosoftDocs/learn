@@ -1,8 +1,12 @@
-GitHub Copilot provides autocomplete-style suggestions as you enter code. You receive autocomplete-style suggestions when you perform the following actions:
+GitHub Copilot provides autocomplete-style suggestions as you enter code. In addition to standard autocomplete suggestions, GitHub Copilot also provides next edit suggestions (NES), which predict the location of the next edit you're likely to make and suggest a completion for it.
+
+You receive autocomplete-style suggestions when you perform the following actions:
 
 - Enter a partial or complete code line in the editor.
 - Enter a partial or complete code comment in the editor.
 - Enter a blank code line in the editor.
+
+Next edit suggestions appear automatically as you edit code. They predict what change you're likely to make next based on your recent edits and are displayed with a special indicator showing the suggested edit location.
 
 ## Generate an autocomplete suggestion
 
@@ -51,7 +55,7 @@ When you hover the mouse pointer over a suggested autocompletion, you're present
 The default interface for managing suggestions includes the following options:
 
 - Accept the suggestion (in full) by selecting **Accept**. You can also accept the suggestion by pressing the Tab key.
-- Partially accept the suggestion by selecting **Accept Word**. You can also partially accept a suggestion by pressing the `Ctrl` + `>` keys.
+- Partially accept the suggestion by selecting **Accept Word**. You can also partially accept a suggestion by pressing the `Ctrl` + `→` (right arrow) keys.
 - View alternate suggestions by selecting **`>`** or **`<`**. You can also view the alternative suggestions by pressing the `Alt` + `]` or `Alt` + `[` keys.
 
 Selecting the **Accept Word** option accepts the next word in a suggestion. This is useful when you want to accept part of the suggestion and then continue typing your own code. For example, you can accept the first word of the `isPrime` method suggestion.
@@ -60,15 +64,18 @@ Selecting the **Accept Word** option accepts the next word in a suggestion. This
 
 Continue selecting **Accept Word** until you've accepted as much of the suggestion as you want.
 
-Selecting the ellipsis (...) icon to the right of the Accept Word button provides options for **Accept Line**, **Always Showing Toolbar**, and **Open Completions Panel**.
+Selecting the ellipsis (...) icon to the right of the Accept Word button provides additional options, such as **Always Show Toolbar** and **Open Completions Panel**.
 
-![Screenshot showing the additional "Accept Line" and "Always Showing Toolbar" options for autocomplete suggestions.](../media/autocomplete-accept-options-2.png)
+![Screenshot showing the additional toolbar options for autocomplete suggestions.](../media/autocomplete-accept-options-2.png)
 
-Selecting the **Accept Line** option accepts an entire line of the suggestion. Selecting the **Always Show Toolbar** option ensures that the toolbar remains visible when using hot keys to managing autocomplete suggestions. Selecting the **Open Completions Panel** option opens the GitHub Copilot Completions tab. Viewing multiple suggestions using the GitHub Copilot Completions tab is covered at the end of this unit.
+Selecting the **Always Show Toolbar** option ensures that the toolbar remains visible when using keyboard shortcuts to manage autocomplete suggestions. Selecting the **Open Completions Panel** option opens the GitHub Copilot Completions Panel. Viewing multiple suggestions using the GitHub Copilot Completions Panel is covered at the end of this unit.
+
+> [!NOTE]
+> To accept an entire line of a suggestion, you need to configure a custom keyboard shortcut for the `editor.action.inlineSuggest.acceptNextLine` command. This option is not available by default in the toolbar.
 
 ## Generate code suggestions from comments
 
-In addition to suggesting an autocompletion based on code, GitHub Copilot can use code comments to suggest code snippets. Use natural language phrases to describe the code you want to create. This enables Copilot to propose autocomplete suggestions that meet specific requirements. For example, you could specify the type of algorithm you want to use in a calculation, or which methods and properties you want to add to a class.
+In addition to suggesting an autocompletion based on code, GitHub Copilot can use code comments to suggest code snippets. Use natural language phrases to describe the code you want to create. This enables GitHub Copilot to propose autocomplete suggestions that meet specific requirements. For example, you could specify the type of algorithm you want to use in a calculation, or which methods and properties you want to add to a class.
 
 Let's return to the prime number example. At this point, you have the following code:
 
@@ -100,7 +107,7 @@ If you enter a new code line after the code snippet is complete, GitHub Copilot 
 
 ![Screenshot showing GitHub Copilot suggesting a method call.](../media/autocomplete-comment-code-7.png)
 
-## View multiple suggestions using the GitHub Copilot Suggestions tab
+## View multiple suggestions using the GitHub Copilot Completions Panel
 
 If you aren't satisfied with the initial autocomplete suggestions, GitHub Copilot can open a new tab in the editor with more options. You can review the larger list of suggestions to find a better match, and then select it.
 
@@ -108,16 +115,16 @@ To demonstrate this feature, let's go back to an earlier stage in the prime numb
 
 Suppose you still need to create the `isPrime` method. When you enter a blank line below the `addPrimeNumbersInNumericList` method, GitHub Copilot suggests an `isPrime` method for you. This is the same process that you used earlier. However, let's suppose that you're not satisfied with the suggestions that GitHub Copilot offers and would like to see more options.
 
-To open the GitHub Copilot Suggestions tab and view other suggestions, press the `Ctrl` + `Enter` keys. You can also open the More Actions menu and select **Open Completions Panel**.
+To open the GitHub Copilot Completions Panel and view other suggestions, press the `Ctrl` + `Enter` keys. You can also open the More Actions menu and select **Open Completions Panel**.
 
 ![Screenshot showing the GitHub Copilot Suggestions tab.](../media/autocomplete-view-multiple-options-1.png)
 
-The GitHub Copilot Suggestions tab displays up to 10 other suggestions. Review the suggestions to find the one that best fits your needs.
+The GitHub Copilot Completions Panel displays up to 10 other suggestions. Review the suggestions to find the one that best fits your needs.
 
-To accept a suggestion, select the `Accept selection` label below the suggestion. For example, select the `Accept suggestion 1` label below the first suggestion.
+To accept a suggestion, select the **Accept suggestion NUMBER** label below the suggestion. For example, select the **Accept suggestion 1** label below the first suggestion.
 
 To reject all suggestions, close the tab.
 
 ## Summary
 
-Autocomplete suggestions help you write code more efficiently and accurately. GitHub Copilot provides autocomplete suggestions as you enter code. You can generate an autocomplete suggestion by entering a partial or complete code line, a partial or complete code comment, or a blank code line. You can accept a suggestion by pressing the Tab key, or dismiss the suggestions by pressing the Esc key. You can manage suggestions using the toolbar that appears when you hover over a suggestion. The toolbar enables you to review alternate suggestions, accept a suggestion, accept one word of a suggestion, or open the GitHub Copilot Completions tab to view more suggestions.
+Autocomplete suggestions and next edit suggestions help you write code more efficiently and accurately. GitHub Copilot provides autocomplete suggestions as you enter code, and next edit suggestions that predict your next likely edit. You can generate an autocomplete suggestion by entering a partial or complete code line, a partial or complete code comment, or a blank code line. You can accept a suggestion by pressing the Tab key, or dismiss the suggestions by pressing the Esc key. You can manage suggestions using the toolbar that appears when you hover over a suggestion. The toolbar enables you to review alternate suggestions, accept a suggestion, accept one word of a suggestion, or open the GitHub Copilot Completions Panel to view more suggestions.

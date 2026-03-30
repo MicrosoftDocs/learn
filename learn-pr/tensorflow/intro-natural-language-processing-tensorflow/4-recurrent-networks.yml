@@ -6,9 +6,8 @@ metadata:
   description: While traditional fully connected networks don't allow us to capture word order, RNN is a mechanism that can capture patterns in sequences. We show how to use RNN for text classification, and discuss different RNN architectures, such as LSTM and GRU.
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 03/29/2026
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 15
-sandbox: true
-notebook: notebooks/4-recurrent-networks.ipynb
+content: |
+  [!include[](includes/4-recurrent-networks.md)]

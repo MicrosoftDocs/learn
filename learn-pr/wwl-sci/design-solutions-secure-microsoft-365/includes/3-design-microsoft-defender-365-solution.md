@@ -1,10 +1,8 @@
 As a security architect, you need to evaluate how Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps protect your organization's productivity and collaboration workloads. These solutions address different but complementary attack surfaces: Defender for Office 365 focuses on email and collaboration-based threats, while Defender for Cloud Apps extends protection to SaaS applications. Both integrate into Microsoft Defender XDR (Extended Detection and Response), providing correlated signals and unified incident management across the full kill chain.
 
-:::image type="content" source="../media/defender-xdr-integration.png" lightbox="../media/defender-xdr-integration.png" alt-text="An image that shows how Microsoft's XDR solution seamlessly integrates with Microsoft Sentinel in the Microsoft Defender portal.":::
+## Evaluate how Microsoft Defender for Office 365 protects collaboration workloads
 
-## Evaluate Microsoft Defender for Office 365
-
-[Microsoft Defender for Office 365](/defender-office-365/mdo-about) protects your organization against sophisticated threats in email and collaboration tools, including phishing, zero-day malware, and business email compromise (BEC). It's available in two plans that build on the built-in security features included with all cloud mailboxes.
+Microsoft Defender for Office 365 protects your organization against sophisticated threats in email and collaboration tools, including phishing, zero-day malware, and business email compromise (BEC). It's available in two plans that build on Exchange Online Protection (EOP), which provides built-in anti-malware, anti-spam, anti-spoofing, and zero-hour auto purge (ZAP) for all cloud mailboxes.
 
 ### Plan 1: Prevention and detection
 
@@ -34,9 +32,9 @@ When you evaluate Defender for Office 365 for your organization, consider the fo
 - **Preset security policies**: Use preset security policies as a baseline configuration. These follow Microsoft-recommended defaults and simplify initial deployment. Customize policies as your organization's threat landscape evolves.
 - **XDR integration**: Defender for Office 365 feeds alerts and signals into Microsoft Defender XDR, correlating email-based threats with endpoint, identity, and cloud app signals. This cross-domain correlation is essential for detecting multi-stage attacks.
 
-## Evaluate Microsoft Defender for Cloud Apps
+## Evaluate how Microsoft Defender for Cloud Apps protects SaaS applications
 
-[Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) is a cloud access security broker (CASB) that delivers full protection for SaaS applications. It provides visibility into cloud app usage, enforces real-time access controls, and protects sensitive data stored in cloud services.
+Microsoft Defender for Cloud Apps is a cloud access security broker (CASB) that delivers full protection for SaaS applications. It provides visibility into cloud app usage, enforces real-time access controls, and protects sensitive data stored in cloud services.
 
 ### Core capabilities
 
@@ -52,15 +50,13 @@ Defender for Cloud Apps addresses four key areas:
 
 ### Conditional Access App Control
 
-[Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad) uses a reverse proxy architecture integrated with Microsoft Entra Conditional Access to monitor and control user sessions in real time. Access and session policies enable granular controls, including:
+Conditional Access App Control uses a reverse proxy architecture integrated with Microsoft Entra Conditional Access to monitor and control user sessions in real time. Access and session policies enable granular controls, including:
 
 - Blocking downloads of sensitive documents on unmanaged devices.
 - Requiring reauthentication when sensitive actions occur during a session.
 - Protecting downloaded files by applying encryption and sensitivity labels.
 - Preventing uploads of unlabeled files that contain sensitive content.
 - Blocking uploads of potentially malicious files by scanning against Microsoft Threat Intelligence.
-- Monitoring user sessions for compliance and logging activities for investigation.
-
 For a security architect, Conditional Access App Control is a critical capability that bridges identity-based access decisions with real-time data protection. It extends Zero Trust principles into SaaS application sessions.
 
 ### Continuous threat protection through Microsoft Defender XDR
@@ -79,15 +75,14 @@ When you evaluate Defender for Cloud Apps, consider the following:
 
 ## Evaluate AI-specific threat protection
 
-Defender for Cloud Apps plays a central role in discovering and governing generative AI applications across your organization. The cloud app catalog includes a **Generative AI** category covering more than a thousand AI apps, including ChatGPT, Google Gemini, and other large language model tools. Each app receives a risk score based on more than 90 risk factors spanning security, compliance, and legal criteria.
+Defender for Cloud Apps plays a central role in discovering and governing generative AI applications across your organization. The cloud app catalog includes a **Generative AI** category covering more than a thousand AI apps, each scored against the same 90+ risk factors used for all cataloged applications.
 
 For security architects, the key design decisions around AI app governance include:
 
-- **Shadow AI discovery**: Deploy cloud discovery to identify which generative AI apps employees use. Filter on the Generative AI category to see usage patterns, user counts, and traffic volumes for each app.
+- **Shadow AI discovery**: Deploy cloud discovery to identify which generative AI apps employees use. Filter on the Generative AI category to see usage patterns, user counts, and traffic volumes. Create app discovery policies to trigger alerts when new AI apps appear in your environment.
 - **App sanctioning and blocking**: Based on risk scores and compliance requirements, sanction approved AI apps and unsanction those that don't meet your security standards. Unsanctioned apps are automatically blocked on devices onboarded to Defender for Endpoint.
-- **Discovery policies for new AI apps**: Create app discovery policies that trigger alerts when new Generative AI apps appear in your environment. This ensures continuous monitoring as new AI tools enter the market.
-- **Session controls for AI apps**: Apply [Conditional Access App Control](/defender-cloud-apps/proxy-intro-aad) session policies to sanctioned AI apps to monitor and restrict how data flows between your organization and these services.
+- **Session controls for AI apps**: Apply Conditional Access App Control session policies to sanctioned AI apps to monitor and restrict data flows between your organization and AI services.
 
-Defender for Cloud Apps also provides dedicated threat detections for [Microsoft 365 Copilot](/defender-cloud-apps/release-notes#new-threat-detections-for-microsoft-copilot-for-microsoft-365). Security teams receive alerts when users interact with Copilot under suspicious conditions, such as access from risky IP addresses. These signals integrate with Microsoft Defender XDR incidents, giving your security operations team visibility into AI-related threats alongside traditional attack patterns.
+Defender for Cloud Apps also provides threat detections for Microsoft 365 Copilot, alerting security teams when users interact with Copilot under suspicious conditions such as access from risky IP addresses. These signals integrate into Defender XDR incidents, providing visibility into AI-related threats alongside traditional attack patterns.
 
 

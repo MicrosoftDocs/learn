@@ -8,7 +8,7 @@ Copilot for Microsoft Fabric is an AI-based assistant embedded within Microsoft 
 
 ## Data teams and Microsoft Copilot for Microsoft Fabric
 
-Copilot and other generative AI features in preview bring new ways to transform and analyze data, generate insights, and create visualizations and reports in Microsoft Fabric and Power BI. These capabilities are designed to empower all data practitioners, including:
+Copilot brings new ways to transform and analyze data, generate insights, and create visualizations and reports in Microsoft Fabric and Power BI. Core Copilot experiences for Power BI—including the report Copilot pane, narrative visuals, and report summarization—are generally available. Copilot experiences across other Fabric workloads, such as Data Factory, Data Engineering, Data Science, Data Warehouse, and Real-Time Intelligence, remain in preview and aren't intended for production use. These capabilities are designed to empower all data practitioners, including:
 
 **Data engineers** can ingest, transform, and load large amounts of data into OneLake and present it in whichever data store makes most sense. Data loading patterns are simplified by using natural language to articulate your requirements for creating data integration solutions using Dataflow Gen2.
 

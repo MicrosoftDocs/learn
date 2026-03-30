@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.classify-images
+hidden: true
 metadata:
   title: Classify images
   description: Classify images
@@ -24,23 +25,22 @@ prerequisites: |
   - Programming experience.
 iconUrl: /training/achievements/images-classify.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- ai-services
-- azure-custom-vision
+  - foundry-tools
+  - azure-custom-vision
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.classify-images.introduction
-- learn.wwl.classify-images.provision-azure-resources-for-custom-vision
-- learn.wwl.classify-images.understand-image-classification
-- learn.wwl.classify-images.use-trained-image-classifier
-- learn.wwl.classify-images.exercise-custom-vision
-- learn.wwl.classify-images.knowledge-check
-- learn.wwl.classify-images.summary
+  - learn.wwl.classify-images.introduction
+  - learn.wwl.classify-images.provision-azure-resources-for-custom-vision
+  - learn.wwl.classify-images.understand-image-classification
+  - learn.wwl.classify-images.use-trained-image-classifier
+  - learn.wwl.classify-images.exercise-custom-vision
+  - learn.wwl.classify-images.knowledge-check
+  - learn.wwl.classify-images.summary
 badge:
   uid: learn.wwl.classify-images.badge
-

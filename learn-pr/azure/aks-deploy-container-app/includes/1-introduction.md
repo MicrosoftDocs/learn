@@ -2,7 +2,7 @@ Imagine you work for a growing video editing company that provides a cloud-based
 
 You identified Azure Kubernetes Service (AKS) as a business solution for deployment. AKS meets the requirements that allow you to deploy your app and handle the company's increased growth. You want to understand how to deploy your app to an AKS cluster and allow customers access to the app's services.
 
-In this module, deploy Kubernetes workloads declaratively to an AKS cluster by using manifest files. You can then create different deployment manifest files to deploy and expose your application to your users.
+In this module, you deploy Kubernetes workloads declaratively to an AKS cluster by using manifest files. You can then create different deployment manifest files to deploy and expose your application to your users.
 
 ## Learning objectives
 
@@ -24,4 +24,3 @@ All exercises use [Azure Cloud Shell](/azure/cloud-shell/overview), which alread
 
 - [Azure CLI](/azure/aks/kubernetes-walkthrough)
 - [Kubectl](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)
-

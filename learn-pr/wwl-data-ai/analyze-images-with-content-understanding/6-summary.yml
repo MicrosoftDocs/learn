@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-with-content-understanding.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you've learned about analyzing images with Azure Content Understanding."
+  ms.date: 03/04/2026
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

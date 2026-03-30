@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-data-with-document-intelligence.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check for extracting data with Azure Document Intelligence.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You need to extract text and table structure from a set of documents that have varying formats. You don't need to identify specific labeled fields. Which Document Intelligence model should you use?"
+    choices:
+    - content: "The read model."
+      isCorrect: false
+      explanation: "Incorrect. The read model extracts text and languages but doesn't extract tables or structural information."
+    - content: "The layout model."
+      isCorrect: true
+      explanation: "Correct. The layout model extracts text, tables, selection marks, and document structure information, making it ideal for documents with varying formats where you need structural data."
+    - content: "The invoice model."
+      isCorrect: false
+      explanation: "Incorrect. The invoice model is a prebuilt model designed specifically for invoices, not general documents with varying formats."
+  - content: "You're building a custom model in Azure Document Intelligence. What training artifacts are required when training with the REST API?"
+    choices:
+    - content: "Only the sample form documents in a blob container."
+      isCorrect: false
+      explanation: "Incorrect. In addition to sample forms, you need JSON files that describe the fields, labels, and OCR data for each form."
+    - content: "Sample forms along with ocr.json, labels.json, and fields.json files in a blob container."
+      isCorrect: true
+      explanation: "Correct. You need an ocr.json file for each sample form, a labels.json file for each form mapping fields to locations, and a single fields.json file describing the fields to extract."
+    - content: "A minimum of 100 labeled forms and a trained classifier."
+      isCorrect: false
+      explanation: "Incorrect. You can train a custom model with as few as five to six sample forms. A classifier is optional and separate from the extraction model."
+  - content: "A company processes both invoices and receipts. They want a single endpoint that routes each document to the correct extraction model. What should they use?"
+    choices:
+    - content: "A custom neural model."
+      isCorrect: false
+      explanation: "Incorrect. A custom neural model extracts data from one type of document. It doesn't automatically route between different document types."
+    - content: "A prebuilt read model."
+      isCorrect: false
+      explanation: "Incorrect. The read model extracts text but doesn't classify documents or extract domain-specific fields."
+    - content: "A composed model or a custom classifier paired with extraction models."
+      isCorrect: true
+      explanation: "Correct. A composed model combines multiple custom models into a single endpoint and classifies each document to the appropriate component model. Alternatively, a custom classifier can identify the document type before routing to the correct extraction model."
+

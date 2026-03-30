@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-secure-organization-data
 metadata:
   title: Design Solutions for Securing an Organization's Data
   description: "You learn about designing solutions that secure an organization's data using capabilities like Microsoft Purview, Defender for SQL, Defender for Storage."
-  ms.date: 01/26/2026
+  ms.date: 03/10/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -40,6 +40,7 @@ units:
 - learn.wwl.design-solutions-secure-organization-data.introduction
 - learn.wwl.design-solutions-secure-organization-data.introduction-data-security
 - learn.wwl.design-solutions-secure-organization-data.design-solution-data-discovery-classification-microsoft-purview
+- learn.wwl.design-solutions-secure-organization-data.specify-priorities-mitigating-threats-data
 - learn.wwl.design-solutions-secure-organization-data.design-solution-data-protection
 - learn.wwl.design-solutions-secure-organization-data.design-data-security-azure-workloads
 - learn.wwl.design-solutions-secure-organization-data.design-security-data-ai-workloads

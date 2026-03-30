@@ -27,7 +27,7 @@ roles:
 - developer
 - solution-architect
 products:
-- azure-cognitive-search
+- foundry-tools
 units:
 - learn.wwl.create-azure-ai-custom-skill.introduction
 - learn.wwl.create-azure-ai-custom-skill.define-custom-skill-schema
@@ -38,4 +38,4 @@ units:
 - learn.wwl.create-azure-ai-custom-skill.knowledge-check
 - learn.wwl.create-azure-ai-custom-skill.summary
 badge:
-  uid: learn.wwl.create-azure-ai-custom-skill.badge
+  uid: learn.wwl.create-azure-ai-custom-skill.badge

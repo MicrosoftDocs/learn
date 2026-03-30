@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Discover foundational concepts and best practices for designing scalable, secure, and customizable AI solutions using Microsoft platforms."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

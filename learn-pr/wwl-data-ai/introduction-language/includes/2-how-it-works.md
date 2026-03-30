@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=74a44e51-3a04-4a19-8b33-40ee0672c782]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c8aa9eee-6d20-42ee-b78f-9a1fc58d6171]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -13,13 +13,13 @@ The first step in analyzing a body of text (referred to as a *corpus*) is to bre
 
 For example, consider this phrase from a famous US presidential speech: `"We choose to go to the moon"`. The phrase can be broken down into the following tokens, with numeric identifiers:
 
-1. `We` 
+1. `We`
 2. `choose`
 3. `to`
 4. `go`
-3. `to`
-5. `the`
-6. `moon`
+5. `to`
+6. `the`
+7. `moon`
 
 Notice that `"to"` (token number 3) is used twice in the corpus. The phrase `"We choose to go to the moon"` can be represented by the tokens.
 
