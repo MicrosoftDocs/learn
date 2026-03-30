@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: 'Guided Project: Manage Azure resources with Cloud Shell and the Azure CLI'
+title: 'Guided project: Manage Azure resources with Cloud Shell and the Azure CLI'
 summary: |
   This guided project introduces Cloud Shell and the Azure CLI as tools for creating and managing Azure resources from the command line.
 
