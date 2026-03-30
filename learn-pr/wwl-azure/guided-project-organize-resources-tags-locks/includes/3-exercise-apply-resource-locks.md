@@ -49,5 +49,3 @@ Add a read-only lock at the resource group level. A read-only lock prevents any 
 
 > [!NOTE]
 > **Validation step:** Confirm the resource group Locks pane shows both the **read-only-rg** lock and the **prevent-delete** lock (scoped to the storage account).
-
-> [!NOTE]

@@ -116,5 +116,3 @@ Use tags to filter the resource list and see only the resources that belong to a
 
 > [!NOTE]
 > **Validation step:** Confirm filtering by **department** tag shows only the correct storage account for each department value.
-
-> [!NOTE]

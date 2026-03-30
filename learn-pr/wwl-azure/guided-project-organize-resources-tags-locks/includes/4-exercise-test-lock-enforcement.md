@@ -71,5 +71,3 @@ Verify that removing the locks allows previously blocked operations to succeed. 
 
 > [!NOTE]
 > **Validation step:** Verify the **lock-test** tag was saved successfully, proving that removing the read-only lock restored write permissions.
-
-> [!NOTE]

@@ -1,11 +1,9 @@
-## Clean up resources
-
 Complete these steps to avoid ongoing charges from the resources you created in this project.
 
 > [!WARNING]
 > Resource deletion is permanent. Verify that you're deleting only resources created for this guided project before you proceed.
 
-### Verify locks are removed
+## Verify locks are removed
 
 Resource locks block deletion. Confirm all locks are removed before you delete the resource group.
 
@@ -15,7 +13,7 @@ Resource locks block deletion. Confirm all locks are removed before you delete t
 4.  If any locks remain, select each lock and select **Delete** to remove it.
 5.  Open each storage account, select **Locks** in the left menu, and confirm no locks remain.
 
-### Delete the resource group
+## Delete the resource group
 
 Deleting the resource group removes both storage accounts and all tags automatically.
 
@@ -26,7 +24,7 @@ Deleting the resource group removes both storage accounts and all tags automatic
 4.  In the confirmation dialog that appears, select **Delete** again to confirm.
 5.  Wait for the notification that confirms the resource group is deleted.
 
-### Verify cleanup
+## Verify cleanup
 
 1.  In the portal search bar, search for **Resource groups** and confirm **rg-gp-tags-locks** no longer appears in the list.
 2.  In the portal search bar, search for **Storage accounts** and confirm neither **stgptagslock** nor **stgptagsops** appears in the list.

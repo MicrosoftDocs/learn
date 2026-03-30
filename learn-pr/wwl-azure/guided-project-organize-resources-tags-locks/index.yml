@@ -42,6 +42,7 @@ units:
 - learn.wwl.guided-project-organize-resources-tags-locks.exercise-test-lock-enforcement
 - learn.wwl.guided-project-organize-resources-tags-locks.validate-success
 - learn.wwl.guided-project-organize-resources-tags-locks.clean-up-resources
+- learn.wwl.guided-project-organize-resources-tags-locks.knowledge-check
 - learn.wwl.guided-project-organize-resources-tags-locks.summary
 badge:
   uid: learn.wwl.guided-project-organize-resources-tags-locks.badge
