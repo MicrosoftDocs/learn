@@ -1,6 +1,19 @@
 [Azure File Sync](/azure/storage/file-sync/file-sync-introduction) enables you to cache several Azure Files shares on an on-premises Windows Server or cloud virtual machine. You can use Azure File Sync to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. 
 
+Azure File Sync consists of five main components that work together to synchronize files between on-premises Windows Servers and Azure file shares.
+
 :::image type="content" source="../media/file-sync-1d3fd2e7.png" alt-text="Illustration that depicts how Azure File Sync can be used to cache an organization's file shares in Azure Files." border="false":::
+
+- The **Storage Sync Service** is the primary Azure resource responsible for managing file synchronization. It can support up to 100 sync groups, operates within a single Azure region, and allows for up to 99 registered Windows Servers.
+  
+- The **sync group** establishes the synchronization setup, containing one cloud endpoint (Azure file share) and up to 50 server endpoints. Server endpoints are specific NTFS paths on registered Windows Servers, but cannot be on the system volume, and cloud tiering is not supported there.
+  
+- The **cloud endpoint** is an Azure file share that participates in the sync group. Only one cloud endpoint is allowed per sync group.
+  
+- The **server endpoint** is a path on a registered Windows Server that syncs with the cloud endpoint. The server endpoint must be an NTFS-formatted volume, and can’t be a system volume.
+  
+- The **Azure File Sync Agent** is installed on each Windows Server. The agent is a background Windows service for sync operations and management tasks. 
+
 
 ### Things to know about Azure File Sync
 
@@ -12,18 +25,7 @@ Let's take a look at the characteristics of Azure File Sync.
 
 - Azure File Sync supports as many caches as you need around the world.
 
-#### Cloud tiering
-
-Cloud tiering is an optional feature of Azure File Sync. Frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings.
-
-- When a file is tiered, Azure File Sync replaces the file locally with a pointer. A pointer is commonly referred to as a _reparse point_. The parse point represents a URL to the file in Azure Files.
-
-- When a user opens a tiered file, Azure File Sync seamlessly recalls the file data from Azure Files without the user needing to know that the file is stored in Azure.
-
-- Cloud tiering files have greyed icons with an offline `O` file attribute to let the user know when the file is only in Azure.
-
-> [!TIP]
-> Use the **Ask Learn** icon (top right) to learn more about *File Sync and cloud tiering*. 
+- There is a maximum of 100 sync groups per Storage Sync Service, and 50 server endpoints per sync group.
 
 ### Things to consider when using Azure File Sync
 
