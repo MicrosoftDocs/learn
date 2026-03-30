@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: 'Guided Project: Deploy a static website with Azure Blob Storage'
+title: 'Guided project: Deploy a static website with Azure Blob Storage'
 summary: |
   This guided project walks through hosting a static website using Azure Blob Storage and updating its content.
 
