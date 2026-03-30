@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-guided-project
   ms.service: azure
   ai-usage: ai-generated
-title: 'Guided Project: Set up cost guardrails in Azure'
+title: 'Guided project: Set up cost guardrails in Azure'
 summary: |
   This guided project helps you reduce spend risk by implementing cost guardrails in Azure.
 
