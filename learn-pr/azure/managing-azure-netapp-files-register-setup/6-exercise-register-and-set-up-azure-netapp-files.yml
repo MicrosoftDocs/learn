@@ -9,6 +9,5 @@ metadata:
   ms.author: rmishras
   ms.topic: unit
 durationInMinutes: 20
-interactive: azureportal
 content: |
   [!include[](includes/6-exercise-register-and-set-up-azure-netapp-files.md)]
