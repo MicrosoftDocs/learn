@@ -65149,6 +65149,51 @@
       "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/7-summary.yml",
       "redirect_url": "/azure/security/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/index.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/introduction.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/azure-ai-foundry-overview.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/understand-azure-ai-foundry-deployment-models.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/choose-purchase-azure-ai-foundry-provisioned-reservation.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/manage-monitor-provisioned-reservations.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/knowledge-check.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/summary.yml",
+      "redirect_url": "/azure/foundry/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -6,9 +6,8 @@ metadata:
   description: Introduction to natural language processing with TensorFlow
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 03/29/2026
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
