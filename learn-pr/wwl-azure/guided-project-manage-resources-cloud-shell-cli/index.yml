@@ -42,6 +42,7 @@ units:
 - learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-tag-query-clean-up
 - learn.wwl.guided-project-manage-resources-cloud-shell-cli.validate-success
 - learn.wwl.guided-project-manage-resources-cloud-shell-cli.clean-up-resources
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli.knowledge-check
 - learn.wwl.guided-project-manage-resources-cloud-shell-cli.summary
 badge:
   uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli.badge

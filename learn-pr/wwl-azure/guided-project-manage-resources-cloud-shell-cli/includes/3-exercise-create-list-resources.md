@@ -117,5 +117,3 @@ Use CLI commands to list the resources you created and format the output. This d
 
 > [!TIP]
 > The **--output** flag controls the format. Try **table**, **json**, **jsonc** (colorized JSON), **tsv**, and **yaml** to see the differences.
-
-> [!NOTE]

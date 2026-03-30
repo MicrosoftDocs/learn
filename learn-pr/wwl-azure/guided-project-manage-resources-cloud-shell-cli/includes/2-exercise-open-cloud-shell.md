@@ -105,5 +105,3 @@ Before creating resources, check which Azure regions are available to your subsc
 
 > [!TIP]
 > You can resize the Cloud Shell pane by dragging its top edge. A larger pane makes it easier to read command output.
-
-> [!NOTE]
