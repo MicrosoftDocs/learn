@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.managing-azure-netapp-files-register-setup
+metadata:
+  title: Register and Set Up Azure NetApp Files
+  description: Register Azure NetApp Files for your subscription and configure the core networking and account prerequisites needed before creating production volumes.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: rmishras
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Register and Set Up Azure NetApp Files
+summary: Register Azure NetApp Files for your subscription and configure the core networking and account prerequisites needed before creating production volumes.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Register the Microsoft.NetApp resource provider.
+  - Create an Azure NetApp Files account.
+  - Delegate a subnet for Azure NetApp Files volumes.
+  - Request Azure NetApp Files region access when needed.
+prerequisites: |
+  - An active Azure subscription.
+  - Basic familiarity with Azure portal navigation.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+units:
+  - learn.managing-azure-netapp-files-register-setup.1-introduction
+  - learn.managing-azure-netapp-files-register-setup.2-register-resource-provider
+  - learn.managing-azure-netapp-files-register-setup.3-create-netapp-account
+  - learn.managing-azure-netapp-files-register-setup.4-delegate-subnet
+  - learn.managing-azure-netapp-files-register-setup.5-request-region-access
+  - learn.managing-azure-netapp-files-register-setup.6-exercise-register-and-set-up-azure-netapp-files
+  - learn.managing-azure-netapp-files-register-setup.7-knowledge-check
+  - learn.managing-azure-netapp-files-register-setup.8-summary
+badge:
+  uid: learn.managing-azure-netapp-files-register-setup.badge

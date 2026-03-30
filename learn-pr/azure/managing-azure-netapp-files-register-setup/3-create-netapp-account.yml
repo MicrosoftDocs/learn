@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.managing-azure-netapp-files-register-setup.3-create-netapp-account
+title: Create a NetApp Account
+metadata:
+  title: Create a NetApp Account
+  description: Learn how to create a NetApp account in Azure NetApp Files.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: rmishras
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-create-netapp-account.md)]

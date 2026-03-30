@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-register-setup.7-knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check your knowledge.
+  ms.date: 03/25/2026
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which requirement must be in place before you can register and use Azure NetApp Files in a subscription?
+    choices:
+    - content: An Azure subscription.
+      isCorrect: true
+      explanation: Correct. Azure NetApp Files is enabled and managed within an Azure subscription.
+    - content: A Microsoft 365 subscription.
+      isCorrect: false
+      explanation: Incorrect. Microsoft 365 isn't required to register Azure NetApp Files.
+    - content: An Azure Logic Apps subscription.
+      isCorrect: false
+      explanation: Incorrect. Logic Apps isn't a prerequisite for Azure NetApp Files registration.
+  - content: Why do you delegate a subnet to Azure NetApp Files?
+    choices:
+    - content: To automatically scale storage capacity based on demand.
+      isCorrect: false
+      explanation: Incorrect. Delegation controls networking access, not storage auto scaling.
+    - content: To provide secure access control by restricting traffic to the assigned subnet.
+      isCorrect: true
+      explanation: Correct. Delegation enables Azure NetApp Files to use that subnet and helps isolate traffic.
+    - content: To integrate Azure NetApp Files with Azure Active Directory authentication.
+      isCorrect: false
+      explanation: Incorrect. Subnet delegation is a networking requirement, not an identity integration feature.
+  - content: Which support request setting should you choose when requesting access to a new Azure NetApp Files region?
+    choices:
+    - content: Quota type set to Region Access.
+      isCorrect: true
+      explanation: Correct. Region access is requested through a quota request using Quota type Region Access.
+    - content: Issue type set to Billing.
+      isCorrect: false
+      explanation: Incorrect. Region access is requested under Service and subscription limits (quotas), not Billing.
+    - content: Quota type set to VM cores.
+      isCorrect: false
+      explanation: Incorrect. VM core quota is unrelated to Azure NetApp Files region access.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.managing-azure-netapp-files-register-setup.2-register-resource-provider
+title: Register for Azure Resource Provider
+metadata:
+  title: Register for Azure Resource Provider
+  description: Learn how to register the Microsoft.NetApp resource provider for your Azure subscription.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: rmishras
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-register-resource-provider.md)]

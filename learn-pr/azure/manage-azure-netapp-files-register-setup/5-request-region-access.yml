@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-register-setup.5-request-region-access
+title: Request region access for Azure NetApp Files
+metadata:
+  title: Request region access for Azure NetApp Files
+  description: Submit a support request for Azure NetApp Files region access.
+  ms.date: 03/25/2026
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-request-region-access.md)]
