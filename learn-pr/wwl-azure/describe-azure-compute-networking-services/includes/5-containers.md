@@ -22,7 +22,7 @@ Azure Container Apps are similar in many ways to a container instance. They let 
 
 Azure Kubernetes Service (AKS) is a container orchestration service. An orchestration service manages the lifecycle of containers. When you're deploying a fleet of containers, AKS can make fleet management simpler and more efficient.
 
-:::image type="content" source="../media/containers-azure-container-services.svg" alt-text="Diagram showing Azure containers arranged from faster start on the left to deeper orchestration on the right.":::
+:::image type="content" source="../media/containers-azure-container-services.png" alt-text="Diagram showing Azure containers arranged from faster start on the left to deeper orchestration on the right.":::
 
 ### Use containers in your solutions
 

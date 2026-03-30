@@ -2,7 +2,7 @@ If you need to host your application on Azure, you might initially turn to a vir
 
 There are other hosting options that you can use with Azure, including Azure App Service.
 
-:::image type="content" source="../media/application-hosting-spectrum.svg" alt-text="Hosting spectrum from VMs with more control, to containers, to App Service with less operational effort.":::
+:::image type="content" source="../media/application-hosting-spectrum.png" alt-text="Hosting spectrum from VMs with more control, to containers, to App Service with less operational effort.":::
 
 ## Azure App Service
 

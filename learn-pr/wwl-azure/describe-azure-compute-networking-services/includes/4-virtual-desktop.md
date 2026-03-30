@@ -12,7 +12,7 @@ Use Azure Virtual Desktop when a team needs centralized desktop and app access a
 
 If you need a full desktop experience for many users with centralized management, Azure Virtual Desktop is often easier to operate than building separate VM-based desktop environments for each user group.
 
-:::image type="content" source="../media/virtual-desktop-access-flow.svg" alt-text="Diagram showing users connecting through Microsoft Entra ID to a host pool.":::
+:::image type="content" source="../media/virtual-desktop-access-flow.png" alt-text="Diagram showing users connecting through Microsoft Entra ID to a host pool.":::
 
 ## Key points
 

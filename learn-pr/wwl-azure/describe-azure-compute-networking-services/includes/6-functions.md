@@ -1,6 +1,6 @@
 Azure Functions is an event-driven, serverless compute option that doesn’t require maintaining virtual machines or containers. If you build an app using VMs or containers, those resources have to be “running” in order for your app to function. With Azure Functions, an event wakes the function, alleviating the need to keep resources provisioned when there are no events.
 
-:::image type="content" source="../media/functions-trigger-to-output.svg" alt-text="Diagram showing event triggers activating the function runtime, which routes results to outputs like APIs, storage, and events.":::
+:::image type="content" source="../media/functions-trigger-to-output.png" alt-text="Diagram showing event triggers activating the function runtime, which routes results to outputs like APIs, storage, and events.":::
 
 ## Serverless computing in Azure
 
@@ -14,7 +14,7 @@ Functions scale automatically based on demand, so they may be a good choice when
 
 Azure Functions runs your code when it's triggered and automatically deallocates resources when the function finishes. In this model, Azure charges you only for the CPU time used while your function runs.
 
-:::image type="content" source="../media/functions-serverless-economics.svg" alt-text="Serverless runs scale with events and bill only while running.":::
+:::image type="content" source="../media/functions-serverless-economics.png" alt-text="Serverless runs scale with events and bill only while running.":::
 
 Functions can be either stateless or stateful. When they're stateless (the default), they behave as if they restart every time they respond to an event. When they're stateful (called Durable Functions), the runtime passes a context through the function to track prior activity.
 

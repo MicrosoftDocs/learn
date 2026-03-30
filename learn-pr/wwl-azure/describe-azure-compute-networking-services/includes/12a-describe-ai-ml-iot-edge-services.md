@@ -26,13 +26,13 @@ Azure IoT services help you connect, monitor, and manage devices.
 
 This flow commonly starts with devices sending telemetry through IoT Hub, then uses cloud analytics to generate insights and model updates that IoT Edge runtime applies near the devices. IoT Central can simplify solution management for these connected-device scenarios.
 
-:::image type="content" source="../media/ai-ml-iot-edge-telemetry-path.svg" alt-text="Diagram showing devices sending telemetry through IoT Hub to cloud analytics and IoT Edge runtime for local processing.":::
+:::image type="content" source="../media/ai-ml-iot-edge-telemetry-path.png" alt-text="Diagram showing devices sending telemetry through IoT Hub to cloud analytics and IoT Edge runtime for local processing.":::
 
 ## Choosing the right option
 
 At a fundamentals level, use this decision pattern:
 
-:::image type="content" source="../media/ai-ml-iot-edge-decision-triad.svg" alt-text="Decision triad: AI services, Azure ML, and IoT services.":::
+:::image type="content" source="../media/ai-ml-iot-edge-decision-triad.png" alt-text="Decision triad: AI services, Azure ML, and IoT services.":::
 
  -  Use Azure AI services when you need prebuilt AI features exposed through APIs.
  -  Use Azure Machine Learning when you need custom model development and management.

@@ -30,7 +30,7 @@ When you provision a VM, you choose resources such as:
 
 Azure VM sizes are grouped into families so you can quickly choose a size based on your workload needs.
 
-:::image type="content" source="../media/virtual-machines-size-families-row.svg" alt-text="Diagram depicting Azure VM families.":::
+:::image type="content" source="../media/virtual-machines-size-families-row.png" alt-text="Diagram depicting Azure VM families.":::
 
 The following table highlights common use cases for the Azure VM families.
 
@@ -46,7 +46,7 @@ The following table highlights common use cases for the Azure VM families.
 
 Each VM also has options that you can customize based on your needs. You can adjust the number of virtual CPUs (vCPUs), the amount of RAM, and the storage disk configuration.
 
-:::image type="content" source="../media/virtual-machines-sizing-dimensions.svg" alt-text="Key VM sizing dimensions: vCPU, RAM, Disk, Network, Premium SSD support, and hardware generation.":::
+:::image type="content" source="../media/virtual-machines-sizing-dimensions.png" alt-text="Key VM sizing dimensions: vCPU, RAM, Disk, Network, Premium SSD support, and hardware generation.":::
 
 Some of the adjustments you can make are:
 
@@ -59,7 +59,7 @@ Some of the adjustments you can make are:
 
 VM names also carry useful sizing information. The base name indicates the family (or purpose), the number of vCPUs, and the hardware generation. It may also indicate features such as premium storage support.
 
-:::image type="content" source="../media/virtual-machines-name-decode.svg" alt-text="Breakdown of Standard_D2s_v5 showing D as family, 2 as vCPU count, s as premium disk support, and v5 as hardware generation.":::
+:::image type="content" source="../media/virtual-machines-name-decode.png" alt-text="Breakdown of Standard_D2s_v5 showing D as family, 2 as vCPU count, s as premium disk support, and v5 as hardware generation.":::
 
  -  `D`: the VM family (general purpose in this case)
  -  `2`: the number of vCPUs in this size
