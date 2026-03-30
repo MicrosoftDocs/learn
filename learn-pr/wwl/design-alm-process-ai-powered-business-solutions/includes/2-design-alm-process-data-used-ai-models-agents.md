@@ -16,9 +16,9 @@ Operationalize **quality, lineage, and drift** checks with go/nogo criteria and 
 
 Establish a **RACI** and change workflows for datasets, knowledge sources, and evaluation telemetry.
 
-## 1) ALM foundations for AI data
+## ALM foundations for AI data
 
-### 1.1 Scope the "data" in AI ALM
+### Scope the "data" in AI ALM
 
 #### Treat the following as versioned, promotable ALM artifacts:
 
@@ -34,87 +34,87 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 **Run telemetry** (latency, token/cost, success/failure, safety events) and **feedback**.
 
-### 1.2 Environment strategy
+### Environment strategy
 
 #### Create separate data planes per environment—Dev → Test → PreProd → Prod—with:
 
-**Leastprivilege access**; no crossenv shared identity.
+* **Leastprivilege access**; no crossenv shared identity.
 
-**Redgold datasets** pattern: _red_ (mutable, experimental) vs. _gold_ (frozen, promoted).
+* **Redgold datasets** pattern: _red_ (mutable, experimental) vs. _gold_ (frozen, promoted).
 
-**Promotion gates** that require evidence: quality reports, bias checks, lineage, and security signoff.
+* **Promotion gates** that require evidence: quality reports, bias checks, lineage, and security signoff.
 
-**Professional visual — Environment & data flow (text diagram)**<br>Dev (Red data → feature builds) → Test (Repro runs, eval sets) → PreProd (Gold candidates) → Prod (Gold only)<br>Controls at each hop: validation → approval → immutable snapshot → catalog update
+* **Professional visual — Environment & data flow (text diagram)**<br>Dev (Red data → feature builds) → Test (Repro runs, eval sets) → PreProd (Gold candidates) → Prod (Gold only)<br>Controls at each hop: validation → approval → immutable snapshot → catalog update
 
-## 2) The AI data ALM process (endtoend)
+## The AI data ALM process (endtoend)
 
 ### Phase A — Plan & Catalog
 
-Identify business scenarios and **data contracts** (purpose, fields, retention, owners).
+* Identify business scenarios and **data contracts** (purpose, fields, retention, owners).
 
-Classify sensitivity; apply **sensitivity labels** and register assets in your catalog.
+* Classify sensitivity; apply **sensitivity labels** and register assets in your catalog.
 
-Define **KPIs** and **risk posture** (PII handling, export boundaries, audit scope).
+* Define **KPIs** and **risk posture** (PII handling, export boundaries, audit scope).
 
-**Gate A → B:** Data contract approved; assets discoverable with owners and tags.
+* **Gate A → B:** Data contract approved; assets discoverable with owners and tags.
 
 ### Phase B — Ingest & Prepare
 
-Profile and remediate quality (missingness, outliers, imbalance).
+* Profile and remediate quality (missingness, outliers, imbalance).
 
-Generate **lineage**; stamp **schema versions** and **hashes** for each snapshot.
+* Generate **lineage**; stamp **schema versions** and **hashes** for each snapshot.
 
-Produce **curated** datasets and **feature/embedding** sets with deterministic pipelines.
+* Produce **curated** datasets and **feature/embedding** sets with deterministic pipelines.
 
-**Gate B → C:** Quality and lineage reports; signed reproducibility log.
+* **Gate B → C:** Quality and lineage reports; signed reproducibility log.
 
 ### Phase C — Develop & Evaluate
 
-Train/iterate using Dev/Test data; **never** train on production knowledge.
+* Train/iterate using Dev/Test data; **never** train on production knowledge.
 
-Run **eval suites** (accuracy, safety, robustness, cost) on golden sets.
+* Run **eval suites** (accuracy, safety, robustness, cost) on golden sets.
 
-Store **model/data cards** with dataset references and context limits.
+* Store **model/data cards** with dataset references and context limits.
 
-**Gate C → D:** Evaluation thresholds met; risk & safety findings addressed.
+* **Gate C → D:** Evaluation thresholds met; risk & safety findings addressed.
 
 ### Phase D — Stage & Approve
 
-Perform **privacy, security, and compliance** reviews (DLP, RAI, export controls).
+* Perform **privacy, security, and compliance** reviews (DLP, RAI, export controls).
 
-Execute **canary runs** using masked/representative Prodlike data.
+* Execute **canary runs** using masked/representative Prodlike data.
 
-_Canary testing is a low-risk deployment strategy that acts as a form of "production regression testing" by releasing new code to a small, isolated subset of users or servers to identify issues before a full rollout._
+* _Canary testing is a low-risk deployment strategy that acts as a form of "production regression testing" by releasing new code to a small, isolated subset of users or servers to identify issues before a full rollout._
 
-Freeze **gold datasets** and sign **immutability attestations**.
+* Freeze **gold datasets** and sign **immutability attestations**.
 
-**Gate D → E:** CAB approval; deployment runbooks and rollback plans ready.
+* **Gate D → E:** CAB approval; deployment runbooks and rollback plans ready.
 
 ### Phase E — Deploy & Serve
 
-Promote gold corpora and indexes; **semantic indexing** or retrieval stores refreshed.
+* Promote gold corpora and indexes; **semantic indexing** or retrieval stores refreshed.
 
-Enforce **region/residency** settings and connector allow/deny lists.
+* Enforce **region/residency** settings and connector allow/deny lists.
 
-Register release in **data catalog** and publish **consumer contracts**.
+* Register release in **data catalog** and publish **consumer contracts**.
 
 ### Phase F — Operate & Monitor
 
-Track **latency, cost/token, success rate, safety violations, data access denials**.
+* Track **latency, cost/token, success rate, safety violations, data access denials**.
 
-Detect **data drift** vs. baselines; trigger **safeguard actions** (circuit breakers, HITL).
+* Detect **data drift** vs. baselines; trigger **safeguard actions** (circuit breakers, HITL).
 
-Run scheduled **reevaluation** with golden sets; file backlog items with trace IDs.
+* Run scheduled **reevaluation** with golden sets; file backlog items with trace IDs.
 
 ### Phase G — Evolve & Retire
 
-Rotate or retrain on updated gold sets; **retest** before promote.
+* Rotate or retrain on updated gold sets; **retest** before promote.
 
-Apply **retention & deletion** policies for expired snapshots and transcripts.
+* Apply **retention & deletion** policies for expired snapshots and transcripts.
 
-Preserve **audit trails** and lineage for compliance.
+* Preserve **audit trails** and lineage for compliance.
 
-## 3) Controls & checks (what to verify at each promotion gate)
+## Controls & checks (what to verify at each promotion gate)
 
 ### Text table — ALM gate checks
 
@@ -126,7 +126,7 @@ Preserve **audit trails** and lineage for compliance.
 | **D→E** | Compliance & residency | Do region rules and DLP policies permit use? | Residency mapping; DLP rules; approval memo |
 | **E→F** | Runtime readiness | Can we monitor, roll back, and cap costs? | Dashboards; alarms; rollback plan; budget guard |
 
-## 4) Region, residency, and crossborder movement
+## Region, residency, and crossborder movement
 
 Document **where** prompts/outputs may be processed for Copilot and Power Platform features, and when **crossregion capacity** is required.
 
@@ -136,7 +136,7 @@ Align **mailbox region** (for activity data) and environment geo with your polic
 
 Professional visual — Residency decision tree (text)<br>Inregion capacity available? → Yes: keep local.<br>No: Is overflow allowed for this workload tier? → If yes, enable crossregion under admin control; else block feature or defer.
 
-## 5) Roles and RACI
+## Roles and RACI
 
 ## Text RACI — data used in AI models and agents
 
@@ -155,7 +155,7 @@ The below RACI chart is a representative sample for an organization. It is up to
 
 **Legend:** A = Accountable, R = Responsible, C = Consulted, I = Informed
 
-## 6) Operational telemetry and drift
+## Operational telemetry and drift
 
 Maintain **baseline metrics** per release: latency p95, success %, token/€ per task, safety flags/M runs.
 
@@ -163,41 +163,29 @@ Compare live to baseline; if drift exceeds thresholds, **autoopen an incident**,
 
 Rerun eval suites nightly/weekly against **golden sets**; store timeseries for audit.
 
-## 7) Checklists you can paste into your runbooks
+## Checklists you can paste into your runbooks
 
 ### Go/NoGo before production
 
-<`input` type="checkbox" disabled> Data contract approved; asset tagged and discoverable.
-
-<`input` type="checkbox" disabled> Sensitivity labels/DLP rules applied; connectors approved.
-
-<`input` type="checkbox" disabled> Lineage graph current; dataset snapshot **immutable** and versioned.
-
-<`input` type="checkbox" disabled> Evaluation thresholds met; safety risks mitigated.
-
-<`input` type="checkbox" disabled> Residency decision recorded; crossregion toggle reviewed.
-
-<`input` type="checkbox" disabled> Dashboards, budgets, alerts, and rollback validated in PreProd.
+- Data contract approved; asset tagged and discoverable.
+- Sensitivity labels/DLP rules applied; connectors approved.
+- Lineage graph current; dataset snapshot **immutable** and versioned.
+- Evaluation thresholds met; safety risks mitigated.
+- Residency decision recorded; cross-region toggle reviewed.
+- Dashboards, budgets, alerts, and rollback validated in PreProd.
 
 ### Retirement
 
-<`input` type="checkbox" disabled> Consumers notified; cutover plan executed.
+- Consumers notified; cutover plan executed.
+- Snapshots archived/deleted per retention; access revoked.
+- Audit and lineage preserved; catalog updated.
 
-<`input` type="checkbox" disabled> Snapshots archived/deleted per retention; access revoked.
-
-<`input` type="checkbox" disabled> Audit and lineage preserved; catalog updated.
-
-## 8) Professional visuals you can reuse (textbased)
-
-AI Data ALM lifecycle (condensed)<br>Plan → Ingest/Prepare → Develop/Evaluate → Stage/Approve → Deploy/Serve → Operate/Monitor → Evolve/Retire
-
-Data flow with controls<br>Source systems → Curated store (labels/lineage) → Feature/embedding build (versioned) → Indexes/knowledge → Agents/Models (policies) → Telemetry & feedback → Backlog & retrain loop
 
 ## References
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/manage-activity-data-m365](/microsoft-copilot-studio/manage-activity-data-m365)
+[https://learn.microsoft.com/microsoft-copilot-studio/manage-activity-data-m365](/microsoft-copilot-studio/manage-activity-data-m365)
 
-[https://learn.microsoft.com/en-us/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-m365-for-copilots-and-generative-ai-features](/power-platform/admin/geographical-availability-copilot)
+[https://learn.microsoft.com/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-m365-for-copilots-and-generative-ai-features](/power-platform/admin/geographical-availability-copilot)
 
 <https://dialzara.com/blog/ai-data-lifecycle-management-complete-guide-2024>
 

@@ -2,47 +2,47 @@
 
 This unit teaches solution architects how to design a complete Application Lifecycle Management (ALM) process for AI components used in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.<br>AI capabilities in these applications—such as predictions, anomaly detection, document understanding, knowledge retrieval, and Copilotdriven assistance—require controlled ALM practices to ensure data quality, compliance, security, and operational reliability.
 
-### A robust ALM process helps teams:
+### A robust ALM process helps teams
 
-Maintain consistent and reliable AI behavior across environments.
+* Maintain consistent and reliable AI behavior across environments.
 
-Protect financial and supply chain data according to organizational governance.
+* Protect financial and supply chain data according to organizational governance.
 
-Manage model versions, prompts, data dependencies, and automations predictably.
+* Manage model versions, prompts, data dependencies, and automations predictably.
 
-Enable continuous improvement while minimizing operational risk.
+* Enable continuous improvement while minimizing operational risk.
 
-## 1. ALM Foundations for AI in Dynamics 365 Finance and Supply Chain
+## ALM Foundations for AI in Dynamics 365 Finance and Supply Chain
 
 AI features in these workloads operate across ERP data, process automation, and modeldriven decision logic. Designing ALM requires a layered approach combining:
 
 ### AI Assets to Govern
 
-**AI models** (prediction, scoring, classification, anomaly detection)
+* **AI models** (prediction, scoring, classification, anomaly detection)
 
-**Prompts and instructions** for Copilot assistance
+* **Prompts and instructions** for Copilot assistance
 
-**Feature engineering pipelines**
+* **Feature engineering pipelines**
 
-**Knowledge sources** (documents, tasks guides, structured data entities)
+* **Knowledge sources** (documents, tasks guides, structured data entities)
 
-**Automations and orchestration flows**
+* **Automations and orchestration flows**
 
-**Integration components** (Connectors, Dataverse virtual entities, APIs)
+* **Integration components** (Connectors, Dataverse virtual entities, APIs)
 
 ### Core ALM Principles
 
-Enforce **environment separation** (Dev → Test → Prod).
+* Enforce **environment separation** (Dev → Test → Prod).
 
-Use **version control** for models, data schemas, and AI configuration.
+* Use **version control** for models, data schemas, and AI configuration.
 
-Assign **roles and responsibilities** for approvals and review cycles.
+* Assign **roles and responsibilities** for approvals and review cycles.
 
-Maintain **repeatable deployment patterns** through managed solutions or deployment pipelines.
+* Maintain **repeatable deployment patterns** through managed solutions or deployment pipelines.
 
-Support **endtoend traceability** across model development, tuning, deployment, and retirement.
+* Support **endtoend traceability** across model development, tuning, deployment, and retirement.
 
-## 2. Environment Strategy
+## Environment Strategy
 
 ### Environment Purposes
 
@@ -54,61 +54,61 @@ Support **endtoend traceability** across model development, tuning, deployment, 
 
 ### Key Requirements
 
-No direct edits in production.
+* No direct edits in production.
 
-Use environment variables for endpoints, model names, and connection strings.
+* Use environment variables for endpoints, model names, and connection strings.
 
-Maintain separate data sources, including synthetic datasets for safe Test operations.
+* Maintain separate data sources, including synthetic datasets for safe Test operations.
 
-## 3. AI Development and Data Preparation
+## AI Development and Data Preparation
 
-### 3.1 Data Contract for Finance and Supply Chain AI
+### Data Contract for Finance and Supply Chain AI
 
 Define:
 
-Financial and operational entities required by the AI model.
+* Financial and operational entities required by the AI model.
 
-Valid ranges, constraints, and business rules.
+* Valid ranges, constraints, and business rules.
 
-Sensitivity labels for financial and personally identifiable data.
+* Sensitivity labels for financial and personally identifiable data.
 
-Schema version identifiers to align data pipelines with ALM promotion gates.
+* Schema version identifiers to align data pipelines with ALM promotion gates.
 
-### 3.2 Preparing Training and Evaluation Data
+### Preparing Training and Evaluation Data
 
-Build **curated datasets** for training (DEV).
+* Build **curated datasets** for training (DEV).
 
-Build **gold datasets** for evaluation (TEST).
+* Build **gold datasets** for evaluation (TEST).
 
-Keep datasets versioned and immutable once promoted.
+* Keep datasets versioned and immutable once promoted.
 
-Document data sources, transformations, and assumptions.
+* Document data sources, transformations, and assumptions.
 
-## 4. Model Development and Configuration
+## Model Development and Configuration
 
 ### AI Model Work Products
 
-Model architecture
+* Model architecture
 
-Hyperparameters
+* Hyperparameters
 
-_Hyperparameters are external configuration settings, such as learning rate, batch size, or network layers, that define a machine learning model's structure and behavior before training begin_
+* _Hyperparameters are external configuration settings, such as learning rate, batch size, or network layers, that define a machine learning model's structure and behavior before training begin_
 
-Training configuration
+* Training configuration
 
-Performance metrics
+* Performance metrics
 
-Business constraints and output expectations
+* Business constraints and output expectations
 
 ### Prompts and Copilot Configuration
 
-Prompts must reflect ERP terminology, policies, roles, and business context.
+* Prompts must reflect ERP terminology, policies, roles, and business context.
 
-Align terminology with Finance and Supply Chain metadata (e.g., vendor, ledger, work order, production order).
+* Align terminology with Finance and Supply Chain metadata (e.g., vendor, ledger, work order, production order).
 
-Validate prompt behavior through scenariobased testing.
+* Validate prompt behavior through scenariobased testing.
 
-## 5. ALM Promotion Gates
+## ALM Promotion Gates
 
 A structured process ensures only validated models move forward.
 
@@ -116,118 +116,82 @@ A structured process ensures only validated models move forward.
 
 Criteria:
 
-Data profiling complete and approved.
+* Data profiling complete and approved.
 
-Training and prompt logic documented.
+* Training and prompt logic documented.
 
-Initial quality and safety evaluations passed.
+* Initial quality and safety evaluations passed.
 
 ### Gate 2 — TEST → PROD
 
 Criteria:
 
-Model evaluation thresholds met (accuracy, relevancy, stability).
+* Model evaluation thresholds met (accuracy, relevancy, stability).
 
-No bias or unsafe output in validation scenarios.
+* No bias or unsafe output in validation scenarios.
 
-Performance verified under ERP workload constraints.
+* Performance verified under ERP workload constraints.
 
-Security, compliance, and data residency reviews completed.
+* Security, compliance, and data residency reviews completed.
 
-Deployment package approved by architecture and governance teams.
+* Deployment package approved by architecture and governance teams.
 
-## 6. Deployment and Release Management
+## Deployment and Release Management
 
 ### Deployment Packaging
 
-Package AI models, prompts, knowledge assets, and automation flows into versioned releases.
+* Package AI models, prompts, knowledge assets, and automation flows into versioned releases.
 
-Use managed solutions or automated pipelines to ensure predictable deployments.
+* Use managed solutions or automated pipelines to ensure predictable deployments.
 
 ### Release Readiness Checklist
 
-Finalized model and prompt versions
+* Finalized model and prompt versions
 
-Configuration of environment variables
+* Configuration of environment variables
 
-Synthetic and real evaluation results documented
+* Synthetic and real evaluation results documented
 
-Backout and rollback plans
+* Backout and rollback plans
 
-Monitoring dashboards activated
+* Monitoring dashboards activated
 
-## 7. Monitoring, Risk Controls, and Continuous Improvement
+## Monitoring, Risk Controls, and Continuous Improvement
 
 ### Operational Monitoring
 
-Latency, success rates, and exception rates
+* Latency, success rates, and exception rates
 
-Prediction drift (accuracy changes over time)
+* Prediction drift (accuracy changes over time)
 
-Data drift (input patterns deviate from training data)
+* Data drift (input patterns deviate from training data)
 
-User feedback and Copilot satisfaction indicators
+* User feedback and Copilot satisfaction indicators
 
 ### Risk & Compliance Controls
 
-Data residency requirements for financial data
+* Data residency requirements for financial data
 
-Sensitivity labelling enforcement
+* Sensitivity labelling enforcement
 
-DLP rules for AI actions
+* DLP rules for AI actions
 
-Guardrails for businesscritical processes (e.g., posting journals, approving purchase orders)
+* Guardrails for businesscritical processes (e.g., posting journals, approving purchase orders)
 
 ### Continuous Improvement Loop
 
-Capture telemetry.
+* Capture telemetry.
 
-Identify drift or inefficiencies.
+* Identify drift or inefficiencies.
 
-Retrain or refine prompts/models.
+* Retrain or refine prompts/models.
 
-Reevaluate using Test environment.
+* Reevaluate using Test environment.* 
 
-Promote upgraded versions through ALM gates.
-
-## 8. Professional Visuals
-
-### AI ALM Lifecycle Diagram (TextBased Visual)
-
-PLAN → PREPARE DATA → BUILD → EVALUATE → APPROVE → DEPLOY → MONITOR → IMPROVE
-
-           |                |              |                |
-
-       Data Contracts   Model Training   Testing Gates   Drift Analysis
-
-### AI Architecture & Environment Flow
-
-[DEV]
-
-  |— Model training
-
-  |— Prompt iteration
-
-  |— Data prep
-
-       ↓
-
-[TEST]
-
-  |— Evaluation metrics
-
-  |— Safety & compliance checks
-
-       ↓
-
-[PROD]
-
-  |— Stable AI behavior
-
-  |— Monitoring & optimization
+* Promote upgraded versions through ALM gates.
 
 ## References
 
-[https://learn.microsoft.com/en-us/training/modules/describe-microsoft-power-platform-administration-governance/6-describe-application-lifecycle-management-power-platform](/training/modules/describe-microsoft-power-platform-administration-governance/6-describe-application-lifecycle-management-power-platform)
+[https://learn.microsoft.com/training/modules/describe-microsoft-power-platform-administration-governance/6-describe-application-lifecycle-management-power-platform](/training/modules/describe-microsoft-power-platform-administration-governance/6-describe-application-lifecycle-management-power-platform)
 
-<br>[https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation](/dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation)
+<br>[https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation](/dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation)

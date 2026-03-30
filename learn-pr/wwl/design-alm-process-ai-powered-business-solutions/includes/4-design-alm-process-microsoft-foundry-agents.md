@@ -4,198 +4,156 @@ This unit equips solution architects with the knowledge to design a complete App
 
 Solution architects must implement ALM processes that standardize agent creation, maintain configuration discipline, control data and model behavior, and integrate operational governance to ensure longterm reliability, compliance, and performance.
 
-## 1. ALM Foundations for Microsoft Foundry Agents
+## ALM foundations for Microsoft Foundry agents
 
-### The ALM strategy for Microsoft Foundry agents encompasses:
+### The ALM strategy for Microsoft Foundry agents encompasses
 
-**Environment separation** (Dev → Test → Production)
+* **Environment separation** (Dev → Test → Production)
 
-**Versioned agent configurations**
+* **Versioned agent configurations**
 
-**Controlled promotion gates**
+* **Controlled promotion gates**
 
-**Governance for connectors, secrets, and data access**
+* **Governance for connectors, secrets, and data access**
 
-**Repeatable deployment pipelines**
+* **Repeatable deployment pipelines**
 
-**Monitoring and operations governance**
+* **Monitoring and operations governance**
 
-**Lifecycle retirement processes**
+* **Lifecycle retirement processes**
 
 The Foundry control plane enables centralized oversight of agent definitions, security context, data sources, and runtime behavior across multiple environments.
 
-## 2. Environment Strategy
+## Environment strategy
 
 A multienvironment model is essential for isolating agent development from production workloads.
 
 ### Recommended environment tiers
 
-**Development (Dev):**<br>Agent design, experimentation, prompt testing, connector configuration, and integration prototypes.
+* **Development (Dev):**<br>Agent design, experimentation, prompt testing, connector configuration, and integration prototypes.
 
-**Test (QA/UAT):**<br>Regression testing, scenario validation, integration logic, behavior evaluation, action safety checks.
+* **Test (QA/UAT):**<br>Regression testing, scenario validation, integration logic, behavior evaluation, action safety checks.
 
-**Production (Prod):**<br>Fully validated, versioned agents that serve end users at scale with monitoring enabled.
+* **Production (Prod):**<br>Fully validated, versioned agents that serve end users at scale with monitoring enabled.
 
-### Visual: Environment Tier Diagram (TextBased)
-
-[ Dev ]
-
-   └─ Unmanaged changes
-
-   └─ Rapid iteration
-
-        ↓ Promotion Gate 1
-
-[ Test ]
-
-   └─ Regression tests
-
-   └─ Behavioral evaluation
-
-   └─ Safety + compliance checks
-
-        ↓ Promotion Gate 2
-
-[ Production ]
-
-   └─ Managed deployment
-
-   └─ Monitoring + auditing
-
-   └─ Controlled updates
-
-## 3. Agent Component ALM
+## Agent component ALM
 
 Microsoft Foundry agents consist of modular components that must be governed and versioned.
 
-**Key ALMmanaged components**
+* **Key ALMmanaged components**
 
-**Agent logic and orchestration**
+* **Agent logic and orchestration**
 
-**Prompts and behavioral rules**
+* **Prompts and behavioral rules**
 
-**Action handlers and workflows**
+* **Action handlers and workflows**
 
-**Data and grounding configurations**
+* **Data and grounding configurations**
 
-**Security and permission mappings**
+* **Security and permission mappings**
 
-**Connectors and external integrations**
+* **Connectors and external integrations**
 
-**Policies and safety controls**
+* **Policies and safety controls**
 
-**Versioning principles**
+* **Versioning principles**
 
-Treat each agent as a **versioned artifact**.
+* Treat each agent as a **versioned artifact**.
 
-Maintain **immutable releases** for production.
+* Maintain **immutable releases** for production.
 
-Document changes with **changelogs and descriptions**.
+* Document changes with **changelogs and descriptions**.
 
-Promote only versioned bundles across environments.
+* Promote only versioned bundles across environments.
 
-## 4. Promotion Gates and Governance
+## Promotion gates and governance
 
 Promotion gates ensure agents are safe, compliant, and reliable before reaching production.
 
-### Promotion Gate 1: Dev → Test
+### Promotion gate 1 Dev → Test
 
-Functional validation of core behaviors
+* Functional validation of core behaviors
 
-Initial safety and guardrail checks
+* Initial safety and guardrail checks
 
-Verification of data source mappings
+* Verification of data source mappings
 
-Action and connector configuration review
+* Action and connector configuration review
 
-Code or prompt quality review
+* Code or prompt quality review
 
-### Promotion Gate 2: Test → Prod
+### Promotion gate 2 Test → Prod
 
-Regression test completion
+* Regression test completion
 
-Data access and policy compliance approval
+* Data access and policy compliance approval
 
-Performance and cost assessment
+* Performance and cost assessment
 
-Human validation of agent reasoning
+* Human validation of agent reasoning
 
-Documentation of version, dependencies, and risk analysis
+* Documentation of version, dependencies, and risk analysis
 
-### Visual: Gate Requirements Matrix
-
-Gate        Functional   Compliance   Safety   Performance   Documentation
-
-Dev→Test        ✓            △          △          △              ✓
-
-Test→Prod       ✓            ✓          ✓          ✓              ✓
-
-(✓ Required, △ Recommended)
-
-## 5. Data, Security, and Residency Controls
+## Data, security, and residency controls
 
 Foundry agents rely on data retrieved from controlled environments. ALM must enforce:
 
-**Data residency requirements**
+* **Data residency requirements**
 
-**Usage of approved data sources**
+* **Usage of approved data sources**
 
-**Rolebased access controls (RBAC)**
+* **Rolebased access controls (RBAC)**
 
-**Separation of production secrets from development artifacts**
+* **Separation of production secrets from development artifacts**
 
-**Policy enforcement for connectors and external calls**
+* **Policy enforcement for connectors and external calls**
 
-**Use of secure identity management for agent actions**
+* **Use of secure identity management for agent actions**
 
 A centralized governance strategy ensures consistency and reduces operational risk.
 
-## 6. Deployment and Release Management
+## Deployment and release management
 
-### Foundry supports controlled deployments through:
+### Foundry supports controlled deployments through
 
-**Solution packaging**
+* **Solution packaging**
 
-**Automated or manual deployment pipelines**
+* **Automated or manual deployment pipelines**
 
-**Configuration as code (where applicable)**
+* **Configuration as code (where applicable)**
 
-### Architects should implement:
+### Architects should implement
 
-Deployment automation
+* Deployment automation
 
-Version rollback procedures
+* Version rollback procedures
 
-Release calendars and change freezes
+* Release calendars and change freezes
 
-Productionready validation templates
+* Productionready validation templates
 
-### Visual: Release Pipeline Overview
+## Monitoring, feedback, and continuous improvement
 
-Authoring → Packaging → Validation → Deployment → Monitoring → Optimization
+### Ongoing operations must include
 
-## 7. Monitoring, Feedback, and Continuous Improvement
+* Runtime telemetry analysis
 
-### Ongoing operations must include:
+* Safety and guardrail event review
 
-Runtime telemetry analysis
+* Error and failure investigations
 
-Safety and guardrail event review
+* Reasoning quality assessments
 
-Error and failure investigations
+* Action execution auditing
 
-Reasoning quality assessments
+* User feedback loops
 
-Action execution auditing
+* Cost and performance optimization
 
-User feedback loops
-
-Cost and performance optimization
-
-These insights feed the enhancement cycle for future versions.
+* These insights feed the enhancement cycle for future versions.
 
 ## References
 
-[https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/how-to-manage-agents?view=foundry](/azure/ai-foundry/control-plane/how-to-manage-agents)
+[https://learn.microsoft.com/azure/ai-foundry/control-plane/how-to-manage-agents?view=foundry](/azure/ai-foundry/control-plane/how-to-manage-agents)
 
-[https://learn.microsoft.com/en-us/azure/ai-foundry/control-plane/overview?view=foundry](/azure/ai-foundry/control-plane/overview)
+[https://learn.microsoft.com/azure/ai-foundry/control-plane/overview?view=foundry](/azure/ai-foundry/control-plane/overview)
