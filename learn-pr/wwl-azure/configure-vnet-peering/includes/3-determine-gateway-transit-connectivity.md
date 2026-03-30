@@ -8,7 +8,9 @@ Consider a scenario where three virtual networks in the same region are connecte
 
 :::image type="content" source="../media/gateway-transit-173a51a0.png" alt-text="Diagram of a regional virtual network peering. One network allows VPN gateway transit and uses a remote VPN gateway to access resources in a hub virtual network." border="false":::
 
-The Azure portal provides four key settings when configuring virtual network peering:
+The Azure portal provides four key settings when configuring virtual network peering.
+
+:::image type="content" source="../media/peering-settings.png" alt-text="Screenshot of the peering options in the portal." border="false":::
 
 - **Traffic to remote virtual network**. Controls whether traffic flows from this VNet to the remote VNet.
   
@@ -18,7 +20,7 @@ The Azure portal provides four key settings when configuring virtual network pee
   
 - **Remote virtual network gateway or Route Server**. Enables this VNet to use the remote VNet's VPN Gateway or Route Server.
   
-:::image type="content" source="../media/peering-settings.png" alt-text="Screenshot of the peering options in the portal." border="false":::
+
 
 ### Things to know about Azure VPN Gateway
 
