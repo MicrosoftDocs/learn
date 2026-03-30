@@ -46,5 +46,3 @@ Configure an alert that watches for service incidents and planned maintenance ev
 
 > [!NOTE]
 > **Validation step:** Confirm the **ar-gp-service-health** alert rule is created and enabled.
-
-> [!NOTE]

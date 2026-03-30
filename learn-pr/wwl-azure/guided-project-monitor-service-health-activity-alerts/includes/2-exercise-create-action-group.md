@@ -66,5 +66,3 @@ Send a test notification to verify the action group delivers email successfully.
 
 > [!NOTE]
 > **Validation step:** Confirm the test notification status shows **Success** and you received the email notification.
-
-> [!NOTE]

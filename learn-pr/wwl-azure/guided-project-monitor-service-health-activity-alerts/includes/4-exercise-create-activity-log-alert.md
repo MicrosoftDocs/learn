@@ -67,5 +67,3 @@ Examine the alert rules you created to understand how Azure displays their confi
 
 > [!NOTE]
 > **Validation step:** Confirm both alert rules are enabled, with correct conditions and action groups attached.
-
-> [!NOTE]
