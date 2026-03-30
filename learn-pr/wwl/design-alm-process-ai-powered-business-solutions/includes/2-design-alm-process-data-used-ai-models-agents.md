@@ -1,20 +1,20 @@
 ## Overview
 
-This expert unit equips solution architects to design an application lifecycle management (ALM) process for **all data that powers AI models and agents**. You'll define data-centric stages, controls, roles, and promotion gates that keep datasets, prompts, knowledge sources, and telemetry **governed, reproducible, and compliant** from inception through retirement. The approach integrates enterprise data governance, regional data movement considerations, and operational monitoring so that AI solutions scale safely across environments.
+This expert unit equips solution architects to design an application lifecycle management (ALM) process for **all data that powers AI models and agents**. You define data-centric stages, controls, roles, and promotion gates that keep datasets, prompts, knowledge sources, and telemetry **governed, reproducible, and compliant** from inception through retirement. The approach integrates enterprise data governance, regional data movement considerations, and operational monitoring so that AI solutions scale safely across environments.
 
 ## Learning objectives
 
-By the end of this unit, learners will be able to:
+By the end of this unit, learners are be able to:
 
-Map the **AI data lifecycle** to ALM stages and define artifacts, owners, and promotion gates.
+* Map the **AI data lifecycle** to ALM stages and define artifacts, owners, and promotion gates.
 
-Design **environment strategies** (Dev/Test/PreProd/Prod) that isolate data and enforce guardrails.
+* Design **environment strategies** (Dev/Test/PreProd/Prod) that isolate data and enforce guardrails.
 
-Specify **data residency and movement** policies for Copilot and agent features.
+* Specify **data residency and movement** policies for Copilot and agent features.
 
-Operationalize **quality, lineage, and drift** checks with go/nogo criteria and rollback plans.
+* Operationalize **quality, lineage, and drift** checks with go/nogo criteria and rollback plans.
 
-Establish a **RACI** and change workflows for datasets, knowledge sources, and evaluation telemetry.
+* Establish a **RACI** and change workflows for datasets, knowledge sources, and evaluation telemetry.
 
 ## ALM foundations for AI data
 
@@ -22,7 +22,7 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 #### Treat the following as versioned, promotable ALM artifacts:
 
-**Training & finetuning datasets** (raw, curated, feature/embedding sets).
+**Training & fine-tuning datasets** (raw, curated, feature/embedding sets).
 
 **Evaluation/Testing datasets** and "golden" sets for regression testing.
 
@@ -36,19 +36,19 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 ### Environment strategy
 
-#### Create separate data planes per environment—Dev → Test → PreProd → Prod—with:
+#### Create separate data planes per environment—Dev → Test → Pre-Prod → Prod—with:
 
-* **Leastprivilege access**; no crossenv shared identity.
+* **Least privilege access**; no crossing shared identity.
 
-* **Redgold datasets** pattern: _red_ (mutable, experimental) vs. _gold_ (frozen, promoted).
+* **Red gold datasets** pattern: _red_ (mutable, experimental) vs. _gold_ (frozen, promoted).
 
 * **Promotion gates** that require evidence: quality reports, bias checks, lineage, and security signoff.
 
-* **Professional visual — Environment & data flow (text diagram)**<br>Dev (Red data → feature builds) → Test (Repro runs, eval sets) → PreProd (Gold candidates) → Prod (Gold only)<br>Controls at each hop: validation → approval → immutable snapshot → catalog update
+* **Professional visual—Environment & data flow (text diagram)**<br>Dev (Red data → feature builds) → Test (Repro runs, evaluation sets) → Pre-Prod (Gold candidates) → Prod (Gold only)<br>Controls at each hop: validation → approval → immutable snapshot → catalog update
 
 ## The AI data ALM process (endtoend)
 
-### Phase A — Plan & Catalog
+### Phase A—Plan & Catalog
 
 * Identify business scenarios and **data contracts** (purpose, fields, retention, owners).
 
@@ -58,7 +58,7 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 * **Gate A → B:** Data contract approved; assets discoverable with owners and tags.
 
-### Phase B — Ingest & Prepare
+### Phase B—Ingest & Prepare
 
 * Profile and remediate quality (missingness, outliers, imbalance).
 
@@ -68,29 +68,30 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 * **Gate B → C:** Quality and lineage reports; signed reproducibility log.
 
-### Phase C — Develop & Evaluate
+### Phase C—Develop & Evaluate
 
 * Train/iterate using Dev/Test data; **never** train on production knowledge.
 
-* Run **eval suites** (accuracy, safety, robustness, cost) on golden sets.
+* Run **evaluation suites** (accuracy, safety, robustness, cost) on golden sets.
 
 * Store **model/data cards** with dataset references and context limits.
 
 * **Gate C → D:** Evaluation thresholds met; risk & safety findings addressed.
 
-### Phase D — Stage & Approve
+### Phase D—Stage & Approve
 
 * Perform **privacy, security, and compliance** reviews (DLP, RAI, export controls).
 
-* Execute **canary runs** using masked/representative Prodlike data.
+* Execute **canary runs** using masked/representative Prod like data.
 
-* _Canary testing is a low-risk deployment strategy that acts as a form of "production regression testing" by releasing new code to a small, isolated subset of users or servers to identify issues before a full rollout._
+* _Canary testing is a low-risk deployment strategy.
+It releases new code to a small, isolated subset of users or servers to identify issues before a full rollout._
 
 * Freeze **gold datasets** and sign **immutability attestations**.
 
 * **Gate D → E:** CAB approval; deployment runbooks and rollback plans ready.
 
-### Phase E — Deploy & Serve
+### Phase E—Deploy & Serve
 
 * Promote gold corpora and indexes; **semantic indexing** or retrieval stores refreshed.
 
@@ -98,15 +99,15 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 * Register release in **data catalog** and publish **consumer contracts**.
 
-### Phase F — Operate & Monitor
+### Phase F—Operate & Monitor
 
 * Track **latency, cost/token, success rate, safety violations, data access denials**.
 
 * Detect **data drift** vs. baselines; trigger **safeguard actions** (circuit breakers, HITL).
 
-* Run scheduled **reevaluation** with golden sets; file backlog items with trace IDs.
+* Run scheduled **re-evaluation** with golden sets; file backlog items with trace IDs.
 
-### Phase G — Evolve & Retire
+### Phase G—Evolve & Retire
 
 * Rotate or retrain on updated gold sets; **retest** before promote.
 
@@ -116,31 +117,31 @@ Establish a **RACI** and change workflows for datasets, knowledge sources, and e
 
 ## Controls & checks (what to verify at each promotion gate)
 
-### Text table — ALM gate checks
+### Text table—ALM gate checks
 
 | **Gate** | **Control area** | **Questions to answer** | **Evidence required** |
 |---|---|---|---|
 | **A→B** | Catalog & ownership | Is the owner accountable? Is sensitivity labeled? | Data contract; catalog record; label policy proof |
-| **B→C** | Data quality & lineage | Is data profiled, balanced, deidentified where needed? | Profiling report; lineage graph; version IDs |
-| **C→D** | Evaluation & safety | Do evals meet thresholds? Any bias or unsafe patterns? | Metrics pack; safety report; model/data card |
+| **B→C** | Data quality & lineage | Is data profiled, balanced, de-identified where needed? | Profiling report; lineage graph; version IDs |
+| **C→D** | Evaluation & safety | Do evaluations meet thresholds? Any bias or unsafe patterns? | Metrics pack; safety report; model/data card |
 | **D→E** | Compliance & residency | Do region rules and DLP policies permit use? | Residency mapping; DLP rules; approval memo |
 | **E→F** | Runtime readiness | Can we monitor, roll back, and cap costs? | Dashboards; alarms; rollback plan; budget guard |
 
-## Region, residency, and crossborder movement
+## Region, residency, and cross-border movement
 
-Document **where** prompts/outputs may be processed for Copilot and Power Platform features, and when **crossregion capacity** is required.
+Document **where** prompts/outputs may be processed for Copilot and Power Platform features, and when **cross region capacity** is required.
 
 In regulated scenarios, set the default to **inregion** and require explicit approval to enable **overflow processing**.
 
 Align **mailbox region** (for activity data) and environment geo with your policy; define exceptions and purge schedules.
 
-Professional visual — Residency decision tree (text)<br>Inregion capacity available? → Yes: keep local.<br>No: Is overflow allowed for this workload tier? → If yes, enable crossregion under admin control; else block feature or defer.
+Professional visual—Residency decision tree (text)<br>Inregion capacity available? → Yes: keep local.<br>No: Is overflow allowed for this workload tier? → If yes, enable cross region under admin control; else block feature or defer.
 
 ## Roles and RACI
 
-## Text RACI — data used in AI models and agents
+## Text RACI—data used in AI models and agents
 
-The below RACI chart is a representative sample for an organization. It is up to the architect on the project to validate and adjust the roles and responsibilities as appropriate for the implementation.
+The below RACI chart is a representative sample for an organization. It's up to the architect on the project to validate and adjust the roles and responsibilities as appropriate for the implementation.
 
 | **Activity** | **Data Owner** | **AI Architect** | **Security/Compliance** | **Platform Admin** | **Product Owner** |
 |---|---|---|---|---|---|
@@ -161,7 +162,7 @@ Maintain **baseline metrics** per release: latency p95, success %, token/€ per
 
 Compare live to baseline; if drift exceeds thresholds, **autoopen an incident**, route to data owner, and pause affected actions.
 
-Rerun eval suites nightly/weekly against **golden sets**; store timeseries for audit.
+Rerun evaluation suites nightly/weekly against **golden sets**; store time series for audit.
 
 ## Checklists you can paste into your runbooks
 
@@ -171,12 +172,12 @@ Rerun eval suites nightly/weekly against **golden sets**; store timeseries for a
 [ ]  Sensitivity labels/DLP rules applied; connectors approved.
 [ ]  Lineage graph current; dataset snapshot **immutable** and versioned.
 [ ]  Evaluation thresholds met; safety risks mitigated.
-[ ]  Residency decision recorded; cross-region toggle reviewed.
-[ ]  Dashboards, budgets, alerts, and rollback validated in PreProd.
+[ ]  Residency decision recorded; cross-regions toggle reviewed.
+[ ]  Dashboards, budgets, alerts, and rollback validated in Pre-Prod.
 
 ### Retirement
 
-[ ]  Consumers notified; cutover plan executed.
+[ ]  Consumers notified; cutover plans executed.
 [ ]  Snapshots archived/deleted per retention; access revoked.
 [ ]  Audit and lineage preserved; catalog updated.
 
