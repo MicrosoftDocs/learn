@@ -1,5 +1,3 @@
-## Validate success
-
 Review the validation steps you completed during the exercises. Confirm that each item below is true before moving on.
 
 -   [ ] Function App is deployed and the Overview page shows **Running** status.

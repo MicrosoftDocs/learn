@@ -1,11 +1,9 @@
-## Clean up resources
-
 Complete these steps to avoid ongoing charges from the resources you created in this project.
 
 > [!WARNING]
 > Resource deletion is permanent. Verify that you're deleting only resources created for this guided project before you proceed.
 
-### Delete the resource group
+## Delete the resource group
 
 Deleting the resource group removes the Function App, its backing storage account, and the Application Insights resource.
 
@@ -16,7 +14,7 @@ Deleting the resource group removes the Function App, its backing storage accoun
 5.  In the confirmation dialog that appears, select **Delete** again to confirm.
 6.  Wait for the notification that confirms the resource group is deleted.
 
-### Delete the Application Insights resource group
+## Delete the Application Insights resource group
 
 When you enabled Application Insights, Azure created a Log Analytics workspace in a separate resource group named **DefaultResourceGroup-{region}** (for example, **DefaultResourceGroup-canadaeast**).
 
@@ -29,7 +27,7 @@ When you enabled Application Insights, Azure created a Log Analytics workspace i
 > [!WARNING]
 > Do not delete a Log Analytics workspace used by other services in your subscription—doing so would break monitoring for those services.
 
-### Clean up Cloud Shell files
+## Clean up Cloud Shell files
 
 The function project folder you created in Cloud Shell persists across sessions in a storage account. Remove it to avoid leaving unnecessary files behind.
 
@@ -40,7 +38,7 @@ The function project folder you created in Cloud Shell persists across sessions 
     cd ~ && rm -rf func-gp-endpoint
     ```
 
-### Verify cleanup
+## Verify cleanup
 
 1.  In the portal search bar, search for **Resource groups** and confirm **rg-gp-functions-endpoint** no longer appears in the list.
 2.  Confirm no additional resource groups created for this project remain in the list.

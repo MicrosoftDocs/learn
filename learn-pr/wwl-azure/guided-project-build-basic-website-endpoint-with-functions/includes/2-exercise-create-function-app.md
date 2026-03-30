@@ -59,5 +59,3 @@ Confirm that your Function App deployed successfully and is running.
 
 > [!NOTE]
 > **Validation step:** Confirm the Function App Overview page shows **Running** status and note the resource URL.
-
-> [!NOTE]

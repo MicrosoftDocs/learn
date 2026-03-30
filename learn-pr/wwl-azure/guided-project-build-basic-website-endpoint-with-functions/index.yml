@@ -42,6 +42,7 @@ units:
 - learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-test-endpoint-logs
 - learn.wwl.guided-project-build-basic-website-endpoint-with-functions.validate-success
 - learn.wwl.guided-project-build-basic-website-endpoint-with-functions.clean-up-resources
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions.knowledge-check
 - learn.wwl.guided-project-build-basic-website-endpoint-with-functions.summary
 badge:
   uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions.badge

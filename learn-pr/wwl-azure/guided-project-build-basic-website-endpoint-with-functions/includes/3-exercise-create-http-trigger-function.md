@@ -93,5 +93,3 @@ Publish the function project to the Function App you created in the previous exe
 
 > [!NOTE]
 > **Validation step:** Confirm the deployment output shows the **GetStatus** function with an Invoke url.
-
-> [!NOTE]

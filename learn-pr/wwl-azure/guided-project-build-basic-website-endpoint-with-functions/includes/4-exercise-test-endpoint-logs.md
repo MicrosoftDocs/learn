@@ -130,5 +130,3 @@ Check Application Insights for records of your function invocations. The time sp
 
 > [!TIP]
 > If invocation logs don't appear immediately, wait up to five minutes and select **Refresh**. Application Insights can take time to process new data.
-
-> [!NOTE]
