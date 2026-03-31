@@ -30,6 +30,7 @@ subjects:
 modules:
 - learn.wwl.describe-core-architectural-components-of-azure
 - learn.wwl.describe-azure-compute-networking-services
+- learn.wwl.describe-azure-networking-services
 - learn.wwl.describe-azure-storage-services
 - learn.wwl.describe-azure-identity-access-security
 trophy:

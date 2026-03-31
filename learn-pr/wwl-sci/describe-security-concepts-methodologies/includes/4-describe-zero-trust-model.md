@@ -7,7 +7,7 @@ In practice, this means that we no longer assume that a password is sufficient t
 
 This video introduces the Zero Trust methodology: 
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9a3985a3-8d64-46fd-9404-32c74d402a5d]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5881f412-3b50-43dc-9d03-794d4348603b]
 
 ## Zero Trust guiding principles
 

@@ -17,7 +17,7 @@ Let's review the characteristics of security rules in network security groups.
    | Source | Any, IP Addresses, My IP address, Service Tag, or Application security group |
    | Source port ranges | Specify the ports on which the rule allows or denies traffic |
    | Destination | Any, IP Addresses, Service Tag,  or Application security group |
-   | Protocol | Restrict the rule to the Transmission Control Protocol (TCP), User Datagram Protocol (UDP), or Internet Control Message Protocol (ICMP). The default is for the rule to apply to all protocols (Any). |
+   | Protocol | Restrict the rule to Transmission Control Protocol (TCP), User Datagram Protocol (UDP), Internet Control Message Protocol (ICMP), Encapsulating Security Payload (ESP), or Authentication Header (AH). ESP and AH protocols are only available via JSON templates and PowerShell. The default is for the rule to apply to all protocols (Any). |
    | Action | Allow or Deny |
    | Priority | A value between 100 and 4,096 that's unique for all security rules within the NSG |
 

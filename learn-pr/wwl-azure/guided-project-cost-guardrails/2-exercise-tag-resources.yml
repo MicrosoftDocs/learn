@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-cost-guardrails.exercise-tag-resources
+title: Exercise - Apply cost-tracking tags
+metadata:
+  title: Exercise - Apply cost-tracking tags
+  description: "Exercise - Apply cost-tracking tags"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-tag-resources.md)]

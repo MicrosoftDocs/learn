@@ -4,23 +4,22 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge
-  ms.date: 07/07/2021
+  ms.date: 03/29/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
   module_assessment: true
 durationInMinutes: 5
 quiz:
   questions:
-    - content: "Suppose your text corpus contains 80,000 different words. Which of the below would you complete reducing the dimensionality of the input vector to neural classifier?"
+    - content: "Suppose your text corpus contains 80,000 different words. Which of the following would help reduce the dimensionality of the input vector to a neural classifier?"
       choices:
         - content: "Randomly select 10% of the words and ignore the rest."
           isCorrect: false
           explanation: "It's definitely not a good idea, especially because you risk omitting semantically important words"
         - content: "Use convolutional layer before fully connected classifier layer"
           isCorrect: false
-          explanation: "Convolutional layers don't reduce the dimensionality of input vectors"
+          explanation: "Convolutional layers extract spatial features from an already-encoded input, but they don't reduce the vocabulary dimension itself. An embedding layer is the standard approach to map sparse high-dimensional word representations into dense low-dimensional vectors."
         - content: "Use embedding layer before fully connected classifier layer"
           isCorrect: true
           explanation: "This is correct"
@@ -45,32 +44,41 @@ quiz:
       choices:
         - content: "A network is applied for each input element and output from the previous application is passed to the next one"
           isCorrect: true
-          explanation: "This is correct."
+          explanation: "This is correct. The same network weights are applied at each time step, and the hidden state from the previous step is passed as input to the next, creating a recurrence."
         - content: "It's trained by a recurrent process"
           isCorrect: false
-          explanation: "Recurrent neural network is trained in the same manner as any other neural network"
-        - content: "It consists of layers which include other subnetworks"
+          explanation: "Recurrent neural networks are trained using backpropagation through time, but that is the training algorithm, not the reason they're called recurrent."
+        - content: "It consists of layers, which include other subnetworks"
           isCorrect: false
-          explanation: "While you can consider recurrent block to be a combination of two linear layers, it has nothing to do with recurrence"
+          explanation: "While you can consider a recurrent block to be a combination of two linear layers, nesting subnetworks has nothing to do with recurrence."
+        - content: "The network processes the entire input multiple times in repeated passes"
+          isCorrect: false
+          explanation: "An RNN processes the input sequence once, stepping through it one token at a time. The recurrence refers to passing state between steps, not revisiting the entire input."
     - content: "What is the main idea behind LSTM network architecture?"
       choices:
         - content: "Fixed number of LSTM blocks for the whole dataset"
           isCorrect: false
-          explanation: "Number of LSTM blocks depend on the sequence length in the minibatch"
+          explanation: "The number of LSTM blocks depends on the sequence length in the minibatch, not on the dataset as a whole."
         - content: "It contains many layers of recurrent neural networks"
           isCorrect: false
-          explanation: "LSTM can consist of one or more levels"
-        - content: "Explicit state management with forgetting and state triggering"
+          explanation: "An LSTM can consist of one or more layers. The defining feature of an LSTM is its gating mechanism, not the number of layers."
+        - content: "LSTMs use gating mechanisms (forget, input, and output gates) that explicitly control which information is retained or discarded across time steps"
           isCorrect: true
-          explanation: "In LSTM, each block receives and outputs a state, which is manipulated upon inside the block depending on input and previous state."
-    - content: "What is the main idea of attention?"
+          explanation: "Correct. LSTM gates solve the vanishing gradient problem found in simple RNNs by allowing the network to selectively retain or discard information in its cell state across many time steps."
+        - content: "LSTMs use a larger hidden state vector than simple RNNs"
+          isCorrect: false
+          explanation: "The hidden state size is a hyperparameter that can be set to any value for both simple RNNs and LSTMs. The key innovation of LSTMs is the gating mechanism, not the size of the hidden state."
+    - content: "What is the main advantage of using TF-IDF representation over a simple bag-of-words representation?"
       choices:
-        - content: "Attention assigns a weight coefficient to each word in the vocabulary to show how important it's"
+        - content: "TF-IDF captures the order of words in a sentence"
           isCorrect: false
-          explanation: "Not correct. Attention works inside each sentence, and reflects relative importance between words."
-        - content: "Attention is a network layer that uses attention matrix to see how much input states from each step affect the final result."
+          explanation: "Neither bag-of-words nor TF-IDF captures word order. Both represent documents as unordered collections of word weights."
+        - content: "TF-IDF gives higher weight to words that are more important for distinguishing documents, by down-weighting common words"
           isCorrect: true
-          explanation: "Correct. By looking at attention matrix we can visually estimate which words play more important role in different parts of the sentence."
-        - content: "Attention builds global correlation matrix between all words in vocabulary, showing their cooccurrence"
+          explanation: "Correct. TF-IDF reduces the weight of frequently occurring words (like 'the' and 'a') and increases the weight of words that are distinctive to specific documents."
+        - content: "TF-IDF uses neural networks to learn word importance"
           isCorrect: false
-          explanation: "This isn't correct, attention computer relative importance of words inside each sentence."
+          explanation: "TF-IDF is a purely statistical method based on term frequency and document frequency. It doesn't involve any neural network training."
+        - content: "TF-IDF produces lower-dimensional vectors than bag-of-words"
+          isCorrect: false
+          explanation: "TF-IDF vectors have the same dimensionality as bag-of-words vectors (one element per vocabulary term). The difference is that TF-IDF assigns floating-point weights instead of simple counts."

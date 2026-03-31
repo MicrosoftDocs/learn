@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-security-agents
+title: "Design security agents for Microsoft clouds"
+metadata:
+  title: "Design Security Agents for Microsoft Clouds"
+  description: "Learn to design secure autonomous agents for Microsoft clouds, ensuring compliance, governance, and threat protection at scale."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-design-security-agents.md)]
