@@ -3,7 +3,7 @@ uid: learn.wwl.azure-fundamentals-describe-azure-architecture-services
 metadata:
   title: 'Introduction to Cloud Infrastructure: Describe Azure Architecture and Services'
   description: 'Architecture and services component of the Introduction to Cloud Infrastructure training'
-  ms.date: 01/09/2026
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path
@@ -11,8 +11,8 @@ title: 'Introduction to Cloud Infrastructure: Describe Azure architecture and se
 prerequisites: |
   * Basic familiarity with IT terms and concepts
 summary: |
-  New to the cloud? Introduction to Cloud Infrastructure is a three-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals.
-  This is the second learning path in the series, **Introduction to Cloud Infrastructure: Describe Azure architecture and services**. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) and [**Part 3: Describe Azure management and governance**](/training/paths/describe-azure-management-governance/).
+  New to the cloud? Introduction to Cloud Infrastructure is a four-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free. Complete all of the learning paths in the series if you are preparing for Exam AZ-900: Microsoft Azure Fundamentals.
+  This is the second learning path in the series, **Introduction to Cloud Infrastructure: Describe Azure architecture and services**. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/), [**Part 3: Describe Azure management and governance**](/training/paths/describe-azure-management-governance/), and [**Part 4: Apply Azure skills in guided projects**](/training/paths/introduction-cloud-infrastructure-apply-azure-skills-guided-projects/).
 iconUrl: /training/achievements/azure-fundamentals-describe-azure-architecture-services.svg
 levels:
 - beginner
