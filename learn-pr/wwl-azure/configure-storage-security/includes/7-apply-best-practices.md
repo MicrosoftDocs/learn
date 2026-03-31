@@ -4,7 +4,7 @@
 
 ### What are the benefits of Storage insights?
 
-- **Detailed Metrics and Logs**. Azure Storage Insights offers detailed metrics, logs, and diagnostic information that enhance visibility into storage operations. This helps in monitoring key performance indicators (KPIs) such as latency, throughput, capacity utilization, and transactions.
+- **Detailed Metrics and Logs**. Azure Storage Insights offers detailed metrics, logs, and diagnostic information that enhance visibility into storage operations. Insights helps in monitoring key performance indicators (KPIs) such as latency, throughput, capacity utilization, and transactions.
 
 - **Enhanced Security and Compliance**. By using Azure Storage Insights, you can ensure enhanced security and compliance. It provides actionable insights and alerts that help in swiftly identifying and resolving security issues.
 
@@ -32,5 +32,5 @@ While Storage Insights provides passive monitoring and historical analysis, Micr
   
 -	**Activity-based threat detection**. Monitors for unusual access patterns, suspicious download volumes, and hash reputation analysis.
   
-Microsoft Defender for Storage complements Storage Insights by providing active threat detection rather than just reactive monitoring and historical reporting.
+Microsoft Defender for Storage complements Storage Insights by providing active threat detection rather than reactive monitoring and historical reporting.
 
