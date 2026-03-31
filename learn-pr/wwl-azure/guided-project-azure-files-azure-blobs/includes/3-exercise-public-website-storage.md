@@ -12,4 +12,10 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
+> [!CAUTION]
+> Enabling anonymous public access is demonstrated here for learning purposes only. Microsoft recommends keeping anonymous access disabled. Instead use shared access signatures or Azure CDN with authenticated origin access for secure public content delivery.
+
+
+
+
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261879)
