@@ -6,7 +6,7 @@ metadata:
   title: Configure Azure Storage Security
   description: "Learn how to configure common Azure Storage security features like storage access signatures."
   ms.date: 03/23/2026
-  author: cynthist
+  author: wwlpublish
   ms.author: cynthist
   ms.topic: module
   ms.collection: N/A
