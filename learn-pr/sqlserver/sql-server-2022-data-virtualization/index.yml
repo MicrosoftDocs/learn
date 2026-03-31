@@ -39,6 +39,5 @@ products:
 subjects:
   - databases
 units:
-- learn.sql-server-2025-data-virtualization.summary
 badge:
   uid: learn.sql-server-2025-data-virtualization.badge
