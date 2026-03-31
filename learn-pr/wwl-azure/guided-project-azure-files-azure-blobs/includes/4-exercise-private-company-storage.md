@@ -6,9 +6,16 @@ The company needs storage for their offices and departments. This content is pri
 | --- | --- |
 | :::image type="content" source="../media/task-3.png" alt-text="Diagram with one storage account and two blob containers." border="true"::: | <ul><li>Create a storage account.<li>Create a storage container with restricted access.</li><li>Configure a shared access signature for partners.</li><li>Back up the public website storage.<li>Implement lifecycle management to move content to the cool tier.</li></ul>|
 
+> [!Important]
+> This exercise uses a service SAS for simplicity, but Microsoft recommends user delegation SAS backed by Microsoft Entra ID for production scenarios.
+
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
+
+
+
+
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2262131)
