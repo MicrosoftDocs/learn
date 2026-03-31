@@ -18,7 +18,7 @@ Let's review some characteristics of availability sets.
 
 - You can build availability sets by using the Azure portal, Azure Resource Manager (ARM) templates, scripting, or API tools.
 
-- Microsoft provides robust [Service Level Agreements (SLAs)](/support/legal/sla) for Azure virtual machines and availability sets. 
+
 
 > [!NOTE]
 > Adding your virtual machines to an availability set doesn't protect your applications from operating system or application-specific failures. You need to explore other disaster recovery and backup techniques to provide application-level protection.
