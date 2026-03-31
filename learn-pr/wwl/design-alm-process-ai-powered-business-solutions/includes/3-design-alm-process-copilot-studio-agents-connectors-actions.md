@@ -176,17 +176,12 @@ Monitoring dashboards for agent behavior
 
 ### Professional Visual - Governance Checklist
 
-[✓] DLP Policies Applied  
-
-[✓] Security Review Completed  
-
-[✓] Knowledge Sources Verified  
-
-[✓] Data Residency Confirmed  
-
-[✓] Risk & Safety Assessment Passed  
-
-[✓] Monitoring Enabled  
+- [✓] DLP Policies Applied
+- [✓] Security Review Completed
+- [✓] Knowledge Sources Verified
+- [✓] Data Residency Confirmed
+- [✓] Risk & Safety Assessment Passed
+- [✓] Monitoring Enabled
 
 ## 8. Monitoring and Continuous Improvement
 

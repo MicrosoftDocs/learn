@@ -70,7 +70,7 @@ Validate accuracy, relevance, reliability, and failure handling.
 
 Evaluate cost (token usage, compute cost), latency, throughput.
 
-Check for safety: toxicity, hallucinations, policy violations.
+Check for safety: toxicity, incorrect information, policy violations.
 
 Produce a **Model Card** containing metrics, constraints, and recommended usage boundaries.
 

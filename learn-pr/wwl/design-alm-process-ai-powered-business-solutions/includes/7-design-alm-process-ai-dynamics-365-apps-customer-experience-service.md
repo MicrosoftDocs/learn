@@ -94,7 +94,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Test with real case data (anonymized).
 
-* Run safety tests for hallucination, bias, and unauthorized data exposure.
+* Run safety tests for incorrect information, bias, and unauthorized data exposure.
 
 ### Step 6—Deploy to Production
 
