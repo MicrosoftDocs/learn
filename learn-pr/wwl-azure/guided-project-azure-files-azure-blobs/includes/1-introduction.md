@@ -18,7 +18,7 @@ The module is divided into five exercises, each covering a specific storage scen
 By the end of this module, you gain hands-on experience in creating and configuring Azure Files and Azure Blob Storage for different storage scenarios. You can apply this knowledge to your own projects and provide secure and efficient storage solutions.
 
 > [!NOTE]
-> This is a guided project module where you complete an end-to-end project by following step-by-step instructions. 
+> A guided project where you complete an end-to-end project by following step-by-step instructions. 
 
 ## Skilling areas
 
