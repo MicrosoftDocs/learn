@@ -65327,6 +65327,11 @@
       "source_path": "learn-pr/paths/explore-sql-server-2022-capabilities/index.md",
       "redirect_url": "/training/paths/explore-sql-server-capabilities/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/index.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
     }
   ]
 }
