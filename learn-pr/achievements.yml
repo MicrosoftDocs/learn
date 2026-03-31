@@ -7931,3 +7931,8 @@ achievements:
   
     - Enhanced security, analytics, and performance features
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.sql-server-2025-data-virtualization.badge
+  type: badge
+  title: Introduction to SQL Server 2025 data virtualization
+  summary: Learn about data virtualization, enhanced Polybase features in SQL Server 2025, and how to use Polybase to access and query external data.
+  iconUrl: /learn/achievements/generic-badge.svg
