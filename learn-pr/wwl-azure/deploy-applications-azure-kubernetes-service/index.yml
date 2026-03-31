@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-applications-azure-kubernetes-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy applications to Azure Kubernetes Service
   description: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
   ms.date: 03/04/2024
@@ -20,7 +18,7 @@ abstract: |
   -   Validate the effect of Azure Policy
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
 roles:

@@ -6,7 +6,7 @@ This exercise shows you how to create a virtual network by using the Azure porta
 
 
 > [!NOTE]
-> To complete this exercise you'll need an [Azure Subscripton](https://azure.microsoft.com/free/).
+> To complete this exercise you'll need an [Azure Subscripton](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Sign in to Azure
 

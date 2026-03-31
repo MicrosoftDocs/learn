@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-elastic-azure-virtual-machines.exercise-deploy
 title: Exercise - Deploy Elastic on Azure virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy Elastic on Azure virtual machines
   description: "This unit is an exercise that guides a user through detailed steps for deploying Elastic on Azure virtual machines."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-deploy.md)]
-
+

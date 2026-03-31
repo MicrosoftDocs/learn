@@ -1,33 +1,44 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agent-on-azure
+hidden: true
 metadata:
-  title: Develop AI agents on Azure
-  description: Learn how to develop AI agents on Azure using the Azure AI Agent Service and Semantic Kernel Agent Framework. 
-  ms.date: 02/24/2025
+  title: Develop AI Agents on Azure (deprecated)
+  description: Learn how to develop AI agents on Azure using the Microsoft Foundry Agent Service and Semantic Kernel Agent Framework. AI-3026
+  ms.date: 03/30/2026
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
-title: Develop AI agents on Azure
+title: Develop AI agents on Azure (deprecated)
 prerequisites: |
-  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with AI applications and agents on Azure](/training/paths/get-started-ai-apps-agents) learning path first.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more functional and accessible, and AI agents are a key component of this evolution. This learning path will help you understand the AI agents, including when to use them and how to build them, using Azure AI Agent Service and Semantic Kernel Agent Framework. By the end of this learning path, you will have the skills needed to develop AI agents on Azure.
+  This learning path is deprecated and being maintained to support existing learners. For the latest training on AI agent development, see the replacement [Develop AI agents on Azure](/training/paths/develop-ai-agents-azure/) learning path.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
+  - ai-engineer
 products:
-- ai-services
+  - foundry-tools
+  - microsoft-foundry
+  - azure-ai-foundry-agent-service
+  - azure-ai-foundry-sdk
 subjects:
-- artificial-intelligence
-- machine-learning
-- natural-language-processing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
 modules:
-- learn.wwl.ai-agent-fundamentals
-- learn.wwl.develop-ai-agent-azure
-- learn.wwl.build-agent-with-custom-tools
-- learn.wwl.orchestrate-sk-multi-agent-solution
+  - learn.wwl.ai-agent-fundamentals
+  - learn.wwl.develop-ai-agent-azure
+  - learn.wwl.develop-ai-agents-vs-code
+  - learn.wwl.build-agent-with-custom-tools
+  - learn.wwl.develop-multi-agent-azure-ai-foundry
+  - learn.wwl.connect-agent-to-mcp-tools
+  - learn.wwl.develop-ai-agent-with-semantic-kernel
+  - learn.wwl.orchestrate-sk-multi-agent-solution
+  - learn.wwl.discover-agents-with-a2a
+  - learn.wwl.build-agent-workflows-microsoft-foundry
+  - learn.wwl.introduction-foundry-iq
 trophy:
   uid: learn.wwl.develop-ai-agent-on-azure.trophy

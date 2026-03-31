@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-containers-azure-container-apps.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "A developer wants to configure a container app that processes messages from an Azure Service Bus queue and scales to zero replicas when no messages are present. Which scaling configuration meets this requirement?"
+    choices:
+    - content: "Set `--min-replicas 0` with an HTTP scale rule"
+      isCorrect: false
+      explanation: "HTTP scale rules monitor HTTP request concurrency, not Service Bus queue depth. To scale based on queue messages, you need a custom Service Bus scale rule."
+    - content: "Set `--min-replicas 0` with a CPU scale rule"
+      isCorrect: false
+      explanation: "CPU scale rules can't scale to zero because the platform requires at least one running replica to measure CPU utilization. CPU-based scaling always maintains a minimum of one replica."
+    - content: "Set `--min-replicas 0` with an azure-servicebus scale rule"
+      isCorrect: true
+      explanation: "The azure-servicebus scale rule monitors queue depth and supports scale-to-zero. When no messages are in the queue, the application can scale to zero replicas. New messages trigger automatic scale-up."
+  - content: "A development team wants to ensure their container app has five replicas ready before the morning traffic spike at 8 AM, while still allowing scale-to-zero overnight. Which scaling approach meets this requirement?"
+    choices:
+    - content: "Configure a cron scale rule combined with an HTTP scale rule"
+      isCorrect: true
+      explanation: "Cron scaling activates during specified time windows and requests a fixed number of replicas. Combined with HTTP scaling, the cron rule establishes baseline capacity before expected peak hours while HTTP scaling handles variations. Outside the cron window, the app can scale to zero when no traffic arrives."
+    - content: "Set minimum replicas to five with an HTTP scale rule"
+      isCorrect: false
+      explanation: "Setting minimum replicas to five prevents scale-to-zero entirely. The application would maintain five replicas always, including overnight when no traffic arrives, increasing costs unnecessarily."
+    - content: "Configure a CPU scale rule with a low utilization threshold"
+      isCorrect: false
+      explanation: "CPU scale rules can't scale to zero because the platform requires at least one running replica to measure utilization. Additionally, CPU scaling reacts to current load rather than anticipating future demand based on time schedules."
+  - content: "A team is deploying a new version of their container app and wants to send 10% of traffic to the new version for validation before full rollout. What must they configure?"
+    choices:
+    - content: "Enable multiple revision mode and configure traffic splitting with revision weights"
+      isCorrect: true
+      explanation: "Multiple revision mode allows multiple revisions to be active simultaneously. Traffic splitting with revision weights distributes traffic by percentage, enabling canary deployments where a small percentage of traffic goes to the new version for validation."
+    - content: "Use single revision mode with zero-downtime deployment"
+      isCorrect: false
+      explanation: "Single revision mode only allows one active revision at a time. Zero-downtime deployment shifts all traffic to the new revision once it's ready, without the ability to split traffic between versions."
+    - content: "Configure a cron scale rule to schedule traffic shifts"
+      isCorrect: false
+      explanation: "Cron scale rules control replica count based on time schedules, not traffic distribution. Traffic splitting requires multiple revision mode and explicit traffic weight configuration."
+  - content: "When configuring KEDA scale rules for Azure services, which authentication method is recommended for production workloads?"
+    choices:
+    - content: "Connection strings stored as container app secrets"
+      isCorrect: false
+      explanation: "While connection strings work for authentication, they require manual secret management and rotation. Managed identity provides a more secure approach for production by eliminating the need to store and rotate credentials."
+    - content: "Managed identity with `--scale-rule-identity`"
+      isCorrect: true
+      explanation: "Managed identity authentication eliminates the need to store connection strings as secrets. The scaler authenticates directly using the identity, reducing security risks, and simplifying credential management for production deployments."
+    - content: "Anonymous access without authentication"
+      isCorrect: false
+      explanation: "Azure services like Service Bus, Event Hubs, and Storage require authentication. Anonymous access isn't supported for these services and would prevent the scaler from accessing the event source."

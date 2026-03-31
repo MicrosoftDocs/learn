@@ -13,6 +13,6 @@ Once everything is configured, you need to configure backup policies. Backup pol
 Launch the exercise and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this exercise you'll need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this exercise you'll need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2276777)

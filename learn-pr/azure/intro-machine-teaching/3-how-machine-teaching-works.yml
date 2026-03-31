@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-machine-teaching.how
 title: How Machine Teaching works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Machine Teaching works
   description: We explain how Machine Teaching works.
   ms.date: 10/17/2022
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-how-machine-teaching-works.md)] 
+  [!include[](includes/3-how-machine-teaching-works.md)] 

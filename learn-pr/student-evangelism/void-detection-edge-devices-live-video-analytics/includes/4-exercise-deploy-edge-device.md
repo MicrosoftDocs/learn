@@ -1,4 +1,4 @@
-You'll perform the following steps in Azure Cloud Shell. Before you start, you need an Azure account for this learning module. If you don't have an Azure account, then create a free account. If you are a student, then sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students/) (no credit card required). Otherwise, sign up for a free [Azure account](https://azure.microsoft.com/free/).
+You'll perform the following steps in Azure Cloud Shell. Before you start, you need an Azure account for this learning module. If you don't have an Azure account, then create a free account. If you are a student, then sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students/?cid=msft_learn) (no credit card required). Otherwise, sign up for a free [Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 From your web browser, navigate to https://portal.azure.com and sign in.
 

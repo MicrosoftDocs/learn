@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.examine-github-spec-kit
+title: Examine GitHub Spec Kit workflows and optional commands
+metadata:
+  title: Examine GitHub Spec Kit Workflows and Optional Commands
+  description: "Examine GitHub Spec Kit workflows and optional commands."
+  ms.date: 1/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-github-spec-kit.md)]

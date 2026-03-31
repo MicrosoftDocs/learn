@@ -1,14 +1,12 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-kubernetes-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Kubernetes Service
   description: Get acquainted with the Azure Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   manager: rayoflores
-  ms.date: 11/26/2024
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/23/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: module-intro-to-product
   ms.service: azure-kubernetes-service
 title: Introduction to Azure Kubernetes Service
@@ -22,9 +20,9 @@ prerequisites: |
 iconUrl: /training/achievements/intro-to-azure-kubernetes-service.svg
 badge:
   uid: learn.intro-to-azure-kubernetes-service.badge
-levels: 
+levels:
 - beginner
-roles: 
+roles:
 - developer
 - administrator
 - solution-architect
@@ -41,4 +39,3 @@ units:
 - learn.intro-to-azure-kubernetes-service.when-to-use-azure-kubernetes-service
 - learn.intro-to-azure-kubernetes-service.knowledge-check
 - learn.intro-to-azure-kubernetes-service.summary
-

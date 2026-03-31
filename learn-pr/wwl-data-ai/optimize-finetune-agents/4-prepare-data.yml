@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-finetune-agents.prepare-data
+title: Prepare training data for fine-tuning
+metadata:
+  title: Prepare training data for fine-tuning
+  description: Learn how to validate data formats for SFT, DPO, and RFT fine-tuning methods, apply data quality principles, and follow a systematic workflow to create or generate high-quality training datasets.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/25/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-prepare-data.md)]
+
+

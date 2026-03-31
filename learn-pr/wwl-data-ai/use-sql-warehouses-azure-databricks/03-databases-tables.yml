@@ -2,13 +2,11 @@
 uid: learn.wwl.use-sql-warehouses-azure-databricks.create-databases-tables
 title: Create databases and tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create databases and tables
   description: "Create databases and tables"
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false

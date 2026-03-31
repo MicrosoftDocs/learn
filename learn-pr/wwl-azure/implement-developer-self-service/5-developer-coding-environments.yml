@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-developer-self-service.developer-coding-environments
 title: Developer Coding Environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Developer Coding Environments
   description: "Developer Coding Environments"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-developer-coding-environments.md)]
+  [!include[](includes/5-developer-coding-environments.md)]

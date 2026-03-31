@@ -37,3 +37,4 @@ When deploying a hybrid SQL solution, all core infrastructure, such as Active Di
 :::image type="content" source="../media/module-22-plan-implement-final-12.png" alt-text="A connection diagram depicting an ExpressRoute connection to Azure.":::
 
 The ExpressRoute connections tend to be more costly, but they provide the best security and lowest latency as all communication flows over a direct secured channel independent of the public internet. However, common drawbacks for this solution include overall cost and the inability to apply ExpressRoute between cloud providers in a multicloud solution.
+

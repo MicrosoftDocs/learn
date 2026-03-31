@@ -3,9 +3,9 @@ uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm
 metadata:
   title: Implement scale and high availability with Windows Server VM
   description: "Learn how to implement scaling for virtual machine scale sets and load-balanced VMs. Also learn how to implement Azure Site Recovery."
-  ms.date: 12/24/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement scale and high availability with Windows Server VM

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+  module_assessment: true
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your data science team complains that Microsoft Foundry policies block their Azure OpenAI deployments for experimentation, slowing innovation. They request that you disable all governance policies for development subscriptions. Your compliance officer insists that data residency policies must apply everywhere. What approach balances these competing requirements?"
+    choices:
+    - content: "Assign regional restriction policies in deny mode to all subscriptions to meet compliance requirements, but configure tagging and SKU policies in audit mode for development subscriptions so teams receive visibility without deployment blocking"
+      isCorrect: true
+      explanation: "The first option correctly applies different enforcement modes based on policy criticality. Regional restrictions in deny mode satisfy non-negotiable compliance requirements, while audit mode for other policies in development provides visibility and learning opportunities without blocking experimentation. The second option creates compliance risk by allowing violations that require costly remediation, and the third option unnecessarily restricts innovation when audit mode would achieve governance objectives for noncritical policies in development environments."
+    - content: "Disable all policies in development subscriptions to maximize innovation velocity, then rely on monthly compliance reviews to identify and remediate any data residency violations that occurred"
+      isCorrect: false
+      explanation: "The second option creates compliance risk by allowing violations that require costly remediation."
+    - content: "Apply all policies identically across development and production subscriptions using deny mode to ensure consistent governance, accepting that development velocity may decrease to maintain compliance"
+      isCorrect: false
+      explanation: "The third option unnecessarily restricts innovation when audit mode would achieve governance objectives for noncritical policies in development environments."
+  - content: "During a compliance audit, you discover that several Azure OpenAI deployments in your production subscription lack the required CostCenter tag, even though you assigned a tagging policy months ago. When you check Microsoft Foundry, the policy shows Active status with deny enforcement mode. What is the most likely cause of this compliance gap?"
+    choices:
+    - content: "The tagging policy was assigned after the noncompliant resources were deployed, so existing resources weren't affected by the policy and only new deployments are evaluated"
+      isCorrect: true
+      explanation: "The first option identifies the correct behavior: Azure Policy evaluates resources only at deployment time, so policies assigned after resource creation don't retroactively enforce compliance on existing resources. Organizations must run remediation tasks or manually update existing resources to achieve compliance."
+    - content: "The policy enforcement mode was incorrectly set to audit instead of deny when it was assigned, allowing noncompliant deployments to proceed with warning logs"
+      isCorrect: false
+      explanation: "The second option is unlikely if the current policy status shows deny mode."
+    - content: "Microsoft Foundry policy evaluation experienced a service outage during the deployment window, temporarily bypassing policy checks for those specific resources"
+      isCorrect: false
+      explanation: "The third option represents a rare event that wouldn't affect multiple deployments over time without generating service health alerts."
+  - content: "Your finance team reports that AI infrastructure costs exceeded the approved $20,000 monthly budget by 45% last quarter, despite budget alerts configured in Microsoft Foundry. Investigation reveals that teams received alert notifications but continued deploying resources because alerts don't prevent deployments. How should you strengthen cost governance while maintaining operational flexibility?"
+    choices:
+    - content: "Implement Azure Policy definitions that deny creation of premium AI service SKUs (GPT-4, high-throughput instances) in all subscriptions, forcing teams to use cost-effective alternatives unless they request exceptions through a documented approval process"
+      isCorrect: true
+      explanation: "The first option provides proactive cost control through policy enforcement while maintaining a documented exception process for legitimate premium SKU needs. This approach prevents unplanned spending at deployment time rather than reacting after costs accumulate."
+    - content: "Configure spending limits at the subscription level that automatically suspend all deployments when the budget threshold is reached, preventing any resource creation until the next billing period"
+      isCorrect: false
+      explanation: "The second option creates operational risk by suspending all deployments, potentially blocking critical production updates when budget limits are reached."
+    - content: "Transition budget alerts from notification-only mode to automated response mode that scales down or stops existing AI resources when spending reaches 90% of the monthly limit, preserving budget while maintaining deployed services"
+      isCorrect: false
+      explanation: "The third option addresses existing resources but doesn't prevent new high-cost deployments, and automatically stopping production AI services could cause service disruptions."
+

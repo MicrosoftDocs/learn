@@ -1,4 +1,4 @@
-You can create custom prompts in Microsoft Copilot for Security to access specific information about your Intune data. Be clear and specific with your prompts, including details like device IDs, app names, or policy names for better results. For example, use prompts like “According to Intune, how many devices were enrolled this week?” or “Tell me about Intune devices for [user name].” Experiment with different variations to see what works best, and save effective prompts in a promptbook for future use. This section lists some ideas and examples.
+You can create custom prompts in Microsoft Security Copilot to access specific information about your Intune data. Be clear and specific with your prompts, including details like device IDs, app names, or policy names for better results. For example, use prompts like “According to Intune, how many devices were enrolled this week?” or “Tell me about Intune devices for [user name].” Experiment with different variations to see what works best, and save effective prompts in a promptbook for future use. This section lists some ideas and examples.
 
 ### Before you begin
 
@@ -13,8 +13,8 @@ You can create custom prompts in Microsoft Copilot for Security to access specif
 
   You can also save your prompts in a promptbook for future use. For more information, go to:
 
-  - [Prompting in Microsoft Copilot for Security](/security-copilot/prompting-security-copilot)
-  - [Using promptbooks in Microsoft Copilot for Security](/security-copilot/using-promptbooks)
+  - [Prompting in Microsoft Security Copilot](/security-copilot/prompting-security-copilot)
+  - [Using promptbooks in Microsoft Security Copilot](/security-copilot/using-promptbooks)
 
 ### General information about your Intune data
 

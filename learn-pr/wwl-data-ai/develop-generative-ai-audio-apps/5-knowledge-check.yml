@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on speech-capable generative AI."
+  ms.date: 03/11/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+    - content: "Which model can you use to generate text from speech?"
+      choices:
+        - content: "gpt-4o-mini"
+          isCorrect: false
+          explanation: "Incorrect."
+        - content: "gpt-4o-mini-tts"
+          isCorrect: false
+          explanation: Incorrect."
+        - content: "gpt-4o-mini-transcribe"
+          isCorrect: true
+          explanation: "Correct."
+    - content: "Which model can you use to synthesize speech from text?"
+      choices:
+        - content: "gpt-4o-mini"
+          isCorrect: false
+          explanation: "Incorrect."
+        - content: "gpt-4o-mini-tts"
+          isCorrect: true
+          explanation: "Correct."
+        - content: "gpt-4o-mini-transcribe"
+          isCorrect: false
+          explanation: "Incorrect."

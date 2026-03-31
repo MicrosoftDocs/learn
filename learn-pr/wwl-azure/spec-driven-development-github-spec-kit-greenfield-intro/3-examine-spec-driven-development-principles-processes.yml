@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-spec-driven-development-principles-processes
+title: "Examine spec-driven development principles and processes"
+metadata:
+  title: "Examine Spec-Driven Development Principles and Processes"
+  description: "Examine spec-driven development principles and processes."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-examine-spec-driven-development-principles-processes.md)]

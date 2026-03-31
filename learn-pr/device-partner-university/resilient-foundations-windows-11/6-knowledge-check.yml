@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.resilient-foundations-windows-11.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Resilient foundations with Windows 11 Pro" module.
+  ms.date: 01/26/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does Windows 11 Pro support operational efficiency for modern businesses according to the module?"
+    choices:
+        - content: "By prioritizing consumer personalization features over business controls"
+          isCorrect: false
+          explanation: ""
+        - content: "By enabling efficient onboarding, enforcing security policies, and improving productivity through performance and reliability"
+          isCorrect: true
+          explanation: ""
+        - content: "By eliminating the need for IT management tools"
+          isCorrect: false
+          explanation: ""
+        - content: "By limiting configuration options to reduce user choice"
+          isCorrect: false
+          explanation: ""
+  - content: "Which processor in Copilot+ PCs is purpose-built for high-speed AI inference tasks such as image recognition?"
+    choices:
+        - content: "CPU"
+          isCorrect: false
+          explanation: ""
+        - content: "GPU"
+          isCorrect: false
+          explanation: ""
+        - content: "NPU"
+          isCorrect: true
+          explanation: ""
+        - content: "TPM"
+          isCorrect: false
+          explanation: ""
+  - content: "What is a primary benefit of Hotpatch updates in Windows 11 Pro?"
+    choices:
+        - content: "They completely replace standard cumulative updates"
+          isCorrect: false
+          explanation: ""
+        - content: "They install updates without requiring device restarts"
+          isCorrect: true
+          explanation: ""
+        - content: "They require changes to existing update ring configurations"
+          isCorrect: false
+          explanation: ""
+        - content: "They are only available for unmanaged devices"
+          isCorrect: false
+          explanation: ""
+  - content: "Which Secure Future Initiative principle ensures security protections are enabled automatically and are not optional?"
+    choices:
+        - content: "Secure operations"
+          isCorrect: false
+          explanation: ""
+        - content: "Secure by design"
+          isCorrect: false
+          explanation: ""
+        - content: "Secure by default"
+          isCorrect: true
+          explanation: ""
+        - content: "Secure recovery"
+          isCorrect: false
+          explanation: ""

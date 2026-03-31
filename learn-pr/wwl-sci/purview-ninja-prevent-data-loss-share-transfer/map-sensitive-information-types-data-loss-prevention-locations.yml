@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-prevent-data-loss-share-transfer.map-sensitive-information-types-data-loss-prevention-locations
+title: Map SITs and labels to DLP-supported locations
+metadata:
+  title: Map SITs and Labels to DLP-Supported Locations
+  description: "Map SITs and labels to DLP-supported locations."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/map-sensitive-information-types-data-loss-prevention-locations.md)]

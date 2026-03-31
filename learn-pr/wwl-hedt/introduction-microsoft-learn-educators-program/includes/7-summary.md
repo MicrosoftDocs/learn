@@ -8,8 +8,4 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)
 
-- [University of Lincoln customer story](https://aka.ms/LincolnCS) 
-
-- [University of Lanarkshire customer story](https://aka.ms/lanarkshireCS)
-
 - [Students with Microsoft Azure certifications attract recruiters](https://aka.ms/MSLEBlogHK) 

@@ -4,4 +4,4 @@ In this module, you learned about the broad topic of Group Policy in Active Dire
 
 Use these resources to discover more:
 
- -  [Group Policy Settings Reference Guide](https://www.microsoft.com/download/details.aspx?id=25250)
+- [Group Policy Settings Reference Guide](https://www.microsoft.com/download/details.aspx?id=25250)

@@ -2,13 +2,12 @@
 uid: learn.tensorflow.intro-computer-vision.train-dense-neural-networks
 title: Training a dense neural network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Training a dense neural network
   description: Learn how to classify images using one-layer dense neural network
-  author: shwars
-  ms.author: chnoring
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.date: 07/07/2021
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -26,32 +25,32 @@ quiz:
       explanation: "Dense layer always expects its input to be a flat vector"
     - content: "1024"
       isCorrect: false
-      explanation: "The dimension of input tensor should correspond to the number of available inputs, eg. 32*32*3"
+      explanation: "The dimension of input tensor should correspond to the number of available inputs, for example, 32*32*3"
     - content: "3072"
       isCorrect: true
-      explanation: "Correct, input tensor is just flattened into one vector"
+      explanation: "Correct, input tensor is flattened into one vector"
   - content: "Our dataset contains images of size 32x32x3. What should we do in order to train `Dense` neural network on those images?"
     choices:
     - content: "Use `Flatten` layer as the first layer of the network to reshape the images"
       isCorrect: false
-      explanation: "This is not the only solution"
+      explanation: "This isn't the only solution"
     - content: "Change the shape of the training dataset elements to be vectors of length 3072, and use a network of only one `Dense` layer"
       isCorrect: false
-      explanation: "This is not the only solution"
-    - content: "Any of the above solutions will work"
+      explanation: "This isn't the only solution"
+    - content: "Any of the above solutions work"
       isCorrect: true
       explanation: "Correct, both of those solutions are valid."
   - content: "We want to monitor the accuracy of the model on validation dataset during training. What do we need to do?"
     choices:
     - content: "Specify `metrics=['acc']` in a call to `model.compile`"
       isCorrect: false
-      explanation: "This is not all"
+      explanation: "This isn't all"
     - content: "Specify `metrics=['acc']` in a call to `model.fit`"
       isCorrect: false
       explanation: "Metrics are specified during model compilation phase"
     - content: "Provide validation dataset using `validation_data` parameter in `model.fit`"
       isCorrect: false
-      explanation: "This is not all"
+      explanation: "This isn't all"
     - content: "Options (a) and (c)"
       isCorrect: true
       explanation: "Correct, you need to make sure that metric is specified and validation dataset is provided"

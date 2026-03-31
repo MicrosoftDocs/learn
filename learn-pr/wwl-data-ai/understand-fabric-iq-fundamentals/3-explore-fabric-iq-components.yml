@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-fabric-iq-fundamentals.explore-fabric-iq-components
+title: Explore Microsoft Fabric IQ components
+metadata:
+  title: Explore Microsoft Fabric IQ Components
+  description: Learn about the components that make up the Fabric IQ ecosystem, including ontology items, data agents, Graph in Microsoft Fabric, and Power BI semantic models.
+  ms.date: 02/09/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explore-fabric-iq-components.md)]

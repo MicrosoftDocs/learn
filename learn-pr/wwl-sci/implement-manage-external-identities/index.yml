@@ -3,9 +3,9 @@ uid: learn.wwl.implement-manage-external-identities
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Implement and manage external identities
+  title: Implement and Manage External Identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
-  ms.date: 12/18/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module

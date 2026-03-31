@@ -1,6 +1,9 @@
 The following steps guide you on how to create roles in the Microsoft Defender portal. It assumes that you have already created Microsoft Entra user groups.
 
-1. Access the Microsoft Defender portal using an account with a Security administrator or Global administrator role assigned.
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+1. Access the Microsoft Defender portal using an account the Security administrator role assigned.
 1. In the navigation pane, select **Settings** then select **Endpoints**. Under the **Permissions** category, select **Roles**.
 1. Select the **Turn on roles** button.
 1. Select **+ Add item**.
@@ -8,7 +11,6 @@ The following steps guide you on how to create roles in the Microsoft Defender p
 1. Select **Next** to assign the role to a Microsoft Entra Security group.
 1. Use the filter to select the Microsoft Entra group that you would like to add this role to.
 1. Select **Save**.
-
 
 > [!IMPORTANT]
 > After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.
@@ -39,7 +41,7 @@ The permission options:
 
 - Manage security settings in Security Center - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 
-- Manage endpoint security settings in Microsoft Endpoint Manager - Full access to the "Endpoint Security" area in Microsoft Endpoint Manager, Intune "Endpoint Security Manager" role permissions, configure endpoint security and compliance features including Microsoft Defender for Endpoint onboarding, and the ability to view the "Configuration Management" page in Security Center
+- Manage endpoint security settings in Microsoft Intune - Full access to the "Endpoint Security" area in Microsoft Intune, Intune "Endpoint Security Manager" role permissions, configure endpoint security and compliance features including Microsoft Defender for Endpoint onboarding, and the ability to view the "Configuration Management" page in Security Center
 
 - Live response capabilities
 

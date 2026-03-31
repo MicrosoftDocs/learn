@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-arc-enabled-vmware.configure-arc-enabled-vmware
+title: Configure Arc-enabled VMware vSphere
+metadata:
+  title: Configure Arc-Enabled VMware vSphere
+  description: Configure Azure Arc-enabled VMware vSphere
+  ms.date: 02/15/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 17
+content: |
+  [!include[](includes/2-configure-arc-enabled-vmware.md)]

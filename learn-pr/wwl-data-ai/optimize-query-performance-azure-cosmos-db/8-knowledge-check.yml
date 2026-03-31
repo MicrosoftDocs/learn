@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "A developer needs to optimize a query that filters documents by documentType and sorts results by uploadDate in descending order. Which index configuration best supports this query pattern?"
+    choices:
+    - content: "Create a composite index with documentType (ascending) followed by uploadDate (descending)"
+      isCorrect: true
+      explanation: "A composite index with the filter property first and the sort property second supports queries that filter on one property and sort by another. Including documentType in the ORDER BY clause allows the query to use this single composite index efficiently."
+    - content: "Create separate range indexes on documentType and uploadDate"
+      isCorrect: false
+      explanation: "Separate range indexes support filtering on each property individually, but queries that combine filtering with multi-property sorting require composite indexes. Range indexes alone can't optimize the combined filter and sort pattern."
+    - content: "Create a composite index with uploadDate (descending) followed by documentType (ascending)"
+      isCorrect: false
+      explanation: "The order of properties in a composite index matters. For filter-then-sort queries, the filter property should appear first in the composite index definition. Reversing the order doesn't optimize this query pattern."
+  - content: "An AI application stores 500,000 embeddings per partition and needs to perform fast similarity searches with acceptable accuracy trade-offs. Which vector index type is most appropriate?"
+    choices:
+    - content: "flat"
+      isCorrect: false
+      explanation: "The flat index performs brute-force search with 100 percent accuracy but is limited to 505 dimensions and becomes slow and expensive for large datasets. It's best suited for small datasets under 1,000 vectors or scenarios where filters significantly reduce the search space."
+    - content: "diskANN"
+      isCorrect: true
+      explanation: "DiskANN is recommended for large datasets with more than 50,000 vectors per partition. It provides the lowest latency and RU cost while maintaining high accuracy. This index type is designed for production AI applications at scale."
+    - content: "quantizedFlat"
+      isCorrect: false
+      explanation: "The quantizedFlat index is designed for medium datasets of roughly 1,000 to 50,000 vectors per partition. While it balances performance and accuracy, diskANN provides better performance for datasets with 500,000 vectors."
+  - content: "A team discovers that embedding arrays are consuming significant storage space. The embeddings are used only for vector similarity searches. How should they modify the indexing policy to reduce storage costs?"
+    choices:
+    - content: "Set indexingMode to none to disable all indexing on the container"
+      isCorrect: false
+      explanation: "Disabling indexing entirely prevents any query from using indexes, including metadata filters. This forces all queries to perform full scans and eliminates vector search capability. The goal is to exclude only the embedding arrays from range indexes."
+    - content: "Change the embedding data type from float32 to float16 in the range index"
+      isCorrect: false
+      explanation: "Range indexes don't differentiate by data type in this way. The data type for vector storage is specified in the vector policy, not the range index. To reduce storage, exclude embeddings from range indexes entirely while keeping the vector index."
+    - content: "Exclude the embedding path from includedPaths and add a vector index for the embedding property"
+      isCorrect: true
+      explanation: "Embedding arrays don't benefit from range indexes. They're used only with vector indexes for similarity searches. Excluding the embedding path from range indexing while maintaining a vector index reduces storage costs substantially without affecting vector search capability."
+  - content: "A document search application queries by category and date range, but users report that recently uploaded documents don't appear in search results. The account uses eventual consistency by default. What change would ensure users see their own uploads immediately?"
+    choices:
+    - content: "Change the default consistency to strong consistency for all operations"
+      isCorrect: false
+      explanation: "While strong consistency ensures reads return the latest writes, it consumes twice the RUs of session consistency and adds latency. Session consistency provides the read-your-writes guarantee needed for this scenario at lower cost."
+    - content: "Use session consistency and pass session tokens from write operations to subsequent reads"
+      isCorrect: true
+      explanation: "Session consistency provides a read-your-writes guarantee within a client session. When the application passes the session token from the upload operation to subsequent queries, users are guaranteed to see their uploaded documents in search results."
+    - content: "Increase the container's provisioned throughput to speed up replication"
+      isCorrect: false
+      explanation: "Provisioned throughput affects operation capacity, not replication speed or consistency behavior. The issue is that eventual consistency doesn't guarantee users see their own writes. Changing the consistency level is the correct solution."
+  - content: "Query metrics show that a frequently executed query has low index utilization and high retrieved-to-output document ratios. What does this indicate and how should the developer respond?"
+    choices:
+    - content: "The query is performing scans instead of using indexes efficiently. Analyze the query to identify which properties need indexes and add appropriate range or composite indexes."
+      isCorrect: true
+      explanation: "Low index utilization means the query isn't using available indexes effectively, causing it to scan and retrieve more documents than necessary. Analyzing the query's filter and sort properties reveals which indexes would improve performance."
+    - content: "The container has too many indexes. Remove indexes to reduce query overhead and improve index utilization metrics."
+      isCorrect: false
+      explanation: "Low index utilization indicates missing indexes, not excess indexes. Removing indexes would worsen query performance. The solution is to add indexes that match the query's filter and sort patterns."
+    - content: "The query is returning too many results. Add a TOP clause to limit results and improve the retrieved-to-output ratio."
+      isCorrect: false
+      explanation: "While limiting results is good practice, a high retrieved-to-output ratio indicates the database retrieves many documents that don't match query criteria. This happens when queries can't use indexes for filtering effectively. Adding appropriate indexes is the correct solution."

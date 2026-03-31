@@ -6,7 +6,7 @@ With a configurable restart policy, you can specify that your containers are sto
 
 When you create a container group in Azure Container Instances, you can specify one of three restart policy settings.
 
-Restart policy | Description 
+Restart policy | Description
 - | -
 `Always` | Containers in the container group are always restarted. This is the **default** setting applied when no restart policy is specified at container creation.
 `Never` | Containers in the container group are never restarted. The containers run at most once.
@@ -26,4 +26,4 @@ az container create \
 
 ## Run to completion
 
-Azure Container Instances starts the container, and then stops it when its application, or script,  exits. When Azure Container Instances stops a container whose restart policy is `Never` or `OnFailure`, the container's status is set to **Terminated**.
+Azure Container Instances starts the container, and then stops it when its application, or script, exits. When Azure Container Instances stops a container whose restart policy is `Never` or `OnFailure`, the container's status is set to **Terminated**.

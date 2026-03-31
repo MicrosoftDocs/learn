@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-security-unity-catalog.implement-row-filtering-column-masking
+title: Implement Row Filtering and Column Masking
+metadata:
+  title: Implement Row Filtering and Column Masking
+  description: "Implement Row Filtering and Column Masking"
+  ms.date: 10/03/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-implement-row-filtering-column-masking.md)]

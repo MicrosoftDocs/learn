@@ -22,7 +22,7 @@ There are many ways that Azure can help grow your business, and every company wi
 
 **Example**: [Watch this video to learn how Central Logic and the U.S. state of Arizona used Azure to build a responsive hospital triage system in record time](https://www.youtube.com/watch?v=ytihDQVB_uM).
 
-**Example**: Read about how [German insurance company Munich Re](https://customers.microsoft.com/story/836291-munich-re-insurance-azure-cosmos-db) used Azure to build new services that greatly sped up the company’s ability to receive claims from physicians (from 7 days to 2) and manage those claims (from 200 days to 100). In addition, Munich Re has been able to offer new products, such as a paperless digital survey and a service that empowers insurers to easily share information.
+**Example**: Read about how German insurance company Munich Re used Azure to build new services that greatly sped up the company’s ability to receive claims from physicians (from 7 days to 2) and manage those claims (from 200 days to 100). In addition, Munich Re has been able to offer new products, such as a paperless digital survey and a service that empowers insurers to easily share information.
 
 ## Innovation in the Cloud
 

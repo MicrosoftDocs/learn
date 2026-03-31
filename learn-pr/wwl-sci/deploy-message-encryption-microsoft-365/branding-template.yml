@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-message-encryption-microsoft-365.branding-template
+title: Customize encrypted email branding with Microsoft Purview
+metadata:
+  title: Customize encrypted email branding with Microsoft Purview
+  description: "Customize encrypted email branding with Microsoft Purview."
+  ms.date: 04/30/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/branding-template.md)]

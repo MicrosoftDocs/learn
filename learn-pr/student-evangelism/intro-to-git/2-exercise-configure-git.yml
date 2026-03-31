@@ -10,7 +10,5 @@ metadata:
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/2-exercise-configure-git.md)]

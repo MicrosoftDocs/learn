@@ -1,8 +1,8 @@
-While the default translation model used by Azure AI Translator is effective for general translation, you may need to develop a translation solution for businesses or industries in that have specific vocabularies of terms that require custom translation.
+While the default translation model used by Azure Translator is effective for general translation, you may need to develop a translation solution for businesses or industries in that have specific vocabularies of terms that require custom translation.
 
 To solve this problem, you can create a custom model that maps your own sets of source and target terms for translation. To create a custom model, use the Custom Translator portal to:
 
-1. [Create a workspace](/azure/ai-services/translator/custom-translator/quickstart) linked to your Azure AI Translator resource.
+1. [Create a workspace](/azure/ai-services/translator/custom-translator/quickstart) linked to your Azure Translator resource.
 1. [Create a project](/azure/ai-services/translator/custom-translator/quickstart).
 1. [Upload training data files](/azure/ai-services/translator/custom-translator/quickstart) and [train a model](/azure/ai-services/translator/custom-translator/quickstart).
 1. [Test your model](/azure/ai-services/translator/custom-translator/quickstart) and [publish your model](/azure/ai-services/translator/custom-translator/quickstart).
@@ -10,7 +10,7 @@ To solve this problem, you can create a custom model that maps your own sets of 
 
 :::image type="content" source="../media/custom-translator-new-small.png" alt-text="Screenshot showing the Custom Translator portal." lightbox="../media/custom-translator-new.png":::
 
-Your custom model is assigned a unique **category Id** (highlighted in the screenshot), which you can specify in **translate** calls to your Azure AI Translator resource by using the **category** parameter, causing translation to be performed by your custom model instead of the default model.
+Your custom model is assigned a unique **category Id** (highlighted in the screenshot), which you can specify in **translate** calls to your Azure Translator resource by using the **category** parameter, causing translation to be performed by your custom model instead of the default model.
 
 ## How to call the API
 

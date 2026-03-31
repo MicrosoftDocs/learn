@@ -12,6 +12,5 @@ This module described how to:
 
 ## Next step
 
-The following learning path provides more extensive details about each methodology. Use this comprehensive guide to help you confidently adopt the cloud:
-
-[Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/training/paths/cloud-adoption-framework/)
+- [Cloud Adoption Framework](/azure/cloud-adoption-framework/overview)
+- [AI adoption](/azure/cloud-adoption-framework/scenarios/ai/)

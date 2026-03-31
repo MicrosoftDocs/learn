@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.query-data
+title: Query data
+metadata:
+  title: Query Data
+  description: Query data
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-query-data.md)]

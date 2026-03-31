@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-higher-education.keep-students-organized
+title: Keep students organized
+metadata:
+  title: Keep Students Organized
+  description: This content is part of the "Empower Higher Education With Microsoft Surface" module.
+  ms.date: 02/02/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-keep-students-organized.md)]

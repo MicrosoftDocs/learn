@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.connect-to-postgresql
+title: Connect to PostgreSQL
+metadata:
+  title: Connect to PostgreSQL
+  description: Connect to PostgreSQL
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-connect-to-postgresql.md)]

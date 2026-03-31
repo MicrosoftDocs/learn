@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.discover-microsoft-ai-leaders-manufacturing
 metadata:
-  title: Discover Microsoft AI for leaders in manufacturing
+  title: Discover AI for leaders in manufacturing
   description: In this learning path, manufacturing business leaders will find all the knowledge and resources to adopt AI in their organizations. It discusses available resources, strategy, responsible practices, and manufacturing use cases.
   ms.date: 12/06/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
-title: Discover Microsoft AI for leaders in manufacturing
+title: Discover AI for leaders in manufacturing
 prerequisites: |
   * Basic understanding of manufacturing concepts.
 summary: |
@@ -16,8 +16,8 @@ iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
+- business-leader
 - business-owner
-- business-user
 products:
 - industry-solutions
 - azure-openai

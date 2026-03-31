@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-solutions-azure-services.handle-changes-event-driven-patterns
+title: Handle changes with event-driven patterns
+metadata:
+  title: Handle changes with event-driven patterns
+  description: Learn how to handle database changes using Change Data Capture, Change Tracking, Azure Functions SQL triggers, and Change Event Streaming.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-handle-changes-event-driven-patterns.md)]

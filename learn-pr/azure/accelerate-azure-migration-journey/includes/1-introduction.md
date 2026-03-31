@@ -10,7 +10,7 @@ Your role is to evaluate the following:
 
 - Benefits of moving to Azure.
 - Migration and modernization drivers for Tailwind Traders.
-- Phases of the cloud journey,
+- Phases of the cloud journey.
 - Common migration and modernization projects for Tailwind Traders to complete.
 - Tools available to plan and implement the migration and modernization.
 - Programs that provide expert advice to Tailwind Traders.

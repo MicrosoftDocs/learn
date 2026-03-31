@@ -1,51 +1,50 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.collaborate-pull-requests-azure-repos.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 12/12/2024
-  author: wwlpublish
+  title: Module assessment
+  description: "Advanced knowledge validation for enterprise pull request implementation strategies"
+  ms.date: 09/09/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-    - content: "Which of the following statements best describe a pull request?"
+    - content: "In an enterprise environment with strict compliance requirements, which combination of branch policies would best ensure comprehensive governance while maintaining development velocity?"
       choices:
-        - content: "Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+        - content: "Minimum reviewers (2), automatic reviewer assignment, comment resolution enforcement, work item linkage, and build validation with security scanning integration."
           isCorrect: true
-          explanation: "Correct. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-        - content: "Pull requests are used to publish new changes from feature branches into production branches and update the environments with the latest code version."
+          explanation: "Correct. This combination provides comprehensive governance covering quality, compliance, security, and traceability without creating unnecessary bottlenecks in the development process."
+        - content: "Minimum reviewers (5), manual reviewer assignment only, optional comment resolution, and basic build validation."
           isCorrect: false
-          explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-        - content: "Pull request creates reports from the latest branch updates and generates remediation summary for resolving issues during development."
+          explanation: "Incorrect. While this provides review coverage, requiring 5 reviewers creates unnecessary bottlenecks, and optional comment resolution compromises governance requirements."
+        - content: "Automatic merging after build success, minimal reviewer requirements, and basic policy enforcement."
           isCorrect: false
-          explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-    - content: What is the primary purpose of pull requests in a GitHub repository?
+          explanation: "Incorrect. This approach lacks the comprehensive governance controls required for enterprise compliance and security requirements."
+    - content: "When implementing pull request workflows for distributed teams across multiple time zones, which strategy best balances collaboration effectiveness with development velocity?"
       choices:
-        - content: "To propose changes, facilitate code review, and merge changes into the main branch after review."
+        - content: "Configure automatic reviewer assignment based on code areas and expertise, implement asynchronous review processes with clear SLAs, and establish escalation paths for critical changes."
           isCorrect: true
-          explanation: "Correct. Pull requests are used to propose changes, allow for code review and discussion, and then merge the approved changes into the main branch."
-        - content: "To delete unwanted branches from the repository"
+          explanation: "Correct. This approach optimizes reviewer expertise utilization while accommodating distributed team collaboration and maintaining clear processes for urgent situations."
+        - content: "Require all team members to review every pull request regardless of expertise area."
           isCorrect: false
-          explanation: "Incorrect. Pull requests do not serve the purpose of deleting branches, they are used for proposing changes and facilitating review."
-        - content: "To directly merge changes into the main branch without review."
+          explanation: "Incorrect. This creates review bottlenecks and doesn't optimize expertise utilization across distributed teams."
+        - content: "Limit pull request creation to specific time windows when all team members are available."
           isCorrect: false
-          explanation: "Incorrect. Pull requests are not used to directly merge changes without review, they are used to propose changes and facilitate review before merging."
-    - content: "What is the purpose of branch policies in a development process?"
+          explanation: "Incorrect. This significantly constrains development velocity and doesn't leverage the benefits of distributed development."
+    - content: "For a financial services organization requiring comprehensive audit trails and regulatory compliance, which pull request integration strategy provides the most comprehensive governance framework?"
       choices:
-        - content: "To enforce code quality and change-management standards before changes can be accepted to the main branch."
+        - content: "Integrate pull requests with work item tracking for requirement traceability, implement automated security and compliance scanning, enforce comment resolution, and maintain comprehensive approval audit logs."
           isCorrect: true
-          explanation: "Correct. Branch policies are used to enforce code quality checks and change-management standards before changes can be accepted to the main branch."
-        - content: "To bypass code review process for faster code integration."
+          explanation: "Correct. This comprehensive approach provides full traceability from requirements through deployment, automated compliance validation, and complete audit capabilities required for financial industry regulations."
+        - content: "Basic pull request approval with manual documentation of compliance requirements."
           isCorrect: false
-          explanation: "Incorrect. Branch policies enforce a code review process to maintain code quality and standards."
-        - content: "To allow developers to push changes directly to the main branch."
+          explanation: "Incorrect. Manual processes don't provide the systematic compliance framework and comprehensive audit trails required for financial industry regulations."
+        - content: "Automated merging based on successful builds with post-merge compliance documentation."
           isCorrect: false
-          explanation: "Incorrect. Branch policies are designed to prevent direct changes to the main branch, ensuring code quality and change-management standards."
+          explanation: "Incorrect. Post-merge compliance validation doesn't provide the preventive controls and comprehensive governance required for financial services compliance."

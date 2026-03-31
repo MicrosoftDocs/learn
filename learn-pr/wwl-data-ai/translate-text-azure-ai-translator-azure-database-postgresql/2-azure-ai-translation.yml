@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.azure-ai-translation
-title: Explore the Azure AI Translator Service
+title: Explore the Azure Translator Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Explore the Azure AI Translator Service
-  description: Explore the Azure AI Translator Service
+  title: Explore the Azure Translator Service
+  description: Explore the Azure Translator Service
   author: wwlpublish
   ms.author: calopez
   ms.date: 11/24/2024

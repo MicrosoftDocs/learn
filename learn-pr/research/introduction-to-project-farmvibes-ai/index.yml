@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.research.introduction-to-project-farmvibes-ai
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to project FarmVibes.AI
   description: This module provides an introduction to project FarmVibes.AI, a comprehensive tool for enhancing agricultural practices and decision-making in farming. Explore the fundamental components of FarmVibes.AI, including soil analysis capabilities, crop health monitoring systems, and advanced data analytics. Learn how FarmVibes.AI addresses agricultural challenges and integrates these components to assist in sustainable farming and environmental conservation.
   ms.collection: TBD
@@ -39,4 +37,4 @@ units:
 - learn.research.introduction-to-project-farmvibes-ai.summary
 badge:
   uid: learn.research.introduction-to-project-farmvibes-ai.badge
-
+

@@ -3,9 +3,9 @@ uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms
 metadata:
   title: Automate the configuration of Windows Server IaaS Virtual Machines
   description: "Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
-  ms.date: 12/24/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Automate the configuration of Windows Server IaaS Virtual Machines

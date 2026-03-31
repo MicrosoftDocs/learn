@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-for-governance.explore-lineage
+metadata:
+  title: Explore lineage
+  description: "Use Unity Catalog's automatic lineage tracking to analyze data flow impact and plan safe changes to tables and views."
+  ms.date: 10/21/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+title: Explore lineage
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explore-lineage.md)]

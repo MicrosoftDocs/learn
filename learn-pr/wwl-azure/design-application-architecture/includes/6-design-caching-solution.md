@@ -2,7 +2,6 @@ _Caching_ is a common technique that aims to improve the performance and scalabi
 
 Caching is most effective when a client instance repeatedly reads the same data, especially when the following conditions apply to the original data store:
 - The original data store remains relatively static.
-- It's slow compared to the speed of the cache.
 - It's subject to a high level of contention.
 - It's far away, and network latency can result in slow access to the store.
 
@@ -26,11 +25,10 @@ Let's review the characteristics of the service:
 
 #### How Azure Cache for Redis works
 
-Azure Cache for Redis is hosted on Azure, and usable by any application within or outside of Azure. The following illustration shows how Azure Cache for Redis works in applications.
+Azure Cache for Redis is hosted on Azure, and usable by any application within or outside of Azure. As indicated in the following graphic, Azure Cache for Redis can help improve performance in apps that interface with many database solutions, including Azure SQL Database, Azure Cosmos DB, and Azure Database for MySQL.
 
 :::image type="content" source="../media/azure-cache-for-redis.png" alt-text="Illustration that shows a typical use case for Azure Cache for Redis." border="false":::
 
-Application instance A has a cache with a snapshot of the data at time `X`. It retrieves data at time `X` and caches it in-memory. Application instance B has a cache with a snapshot of the data at time `Y`. It retrieves data at time `Y` and caches it in-memory. Information in the SQL database changes between time `X` and time `Y`.
 
 ### Things to consider when using Azure Cache for Redis
 

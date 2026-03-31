@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-information-extraction.form-extraction
+title: Field extraction and mapping
+metadata:
+  title: Field extraction and mapping
+  description: "Understand how extracted text is semantically mapped to data fields."
+  ms.date: 11/18/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-form-extraction.md)]

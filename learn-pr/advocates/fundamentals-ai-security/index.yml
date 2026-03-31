@@ -1,9 +1,10 @@
 ### YamlMime:Module
 uid: learn.fundamentals-of-ai-security
 metadata:
-  ms.author: sayoung
-  author: sarah-yo
-  ms.date: 07/17/2024
+  ms.author: ceperezb
+  author: ceperezb
+  ms.date: 03/06/2026
+  ms.update-cycle: 180-days
   title: Fundamentals of AI security 
   description: Fundamental concepts of AI security
   ms.topic: module

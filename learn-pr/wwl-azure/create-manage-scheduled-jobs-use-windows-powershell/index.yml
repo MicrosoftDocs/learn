@@ -3,9 +3,9 @@ uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell
 metadata:
   title: Create and manage scheduled jobs using Windows PowerShell
   description: "Create and manage scheduled jobs using Windows PowerShell"
-  ms.date: 04/22/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A

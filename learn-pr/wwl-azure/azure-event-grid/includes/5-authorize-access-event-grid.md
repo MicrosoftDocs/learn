@@ -17,11 +17,12 @@ The Event Grid Contributor role allows you to create and manage Event Grid resou
 
 ## Permissions for event subscriptions
 
-If you're using an event handler that isn't a WebHook (such as an event hub or queue storage), you need write access to that resource. This permissions check prevents an unauthorized user from sending events to your resource.
+If you're using an event handler that isn't a WebHook (such as an event hub or queue storage), you must have the **Microsoft.EventGrid/EventSubscriptions/Write** permission on the resource that is the event source. You need this permission because you're writing a new subscription at the scope of the resource. This permissions check prevents an unauthorized user from sending events to your resource.
 
-You must have the **Microsoft.EventGrid/EventSubscriptions/Write** permission on the resource that is the event source. You need this permission because you're writing a new subscription at the scope of the resource. The required resource differs based on whether you're subscribing to a system topic or custom topic. Both types are described in this section.
+The required resource differs based on whether you're subscribing to a system topic or custom topic. Both types are described in this section.
 
 | Topic Type | Description |
 |--|--|
 | System topics | Need permission to write a new event subscription at the scope of the resource publishing the event. The format of the resource is: `/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}` |
-| Custom topics | Need permission to write a new event subscription at the scope of the event grid topic. The format of the resource is: `/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.EventGrid/topics/{topic-name}` |
+| Custom topics | Need permission to write a new event subscription at the scope of the Event Grid topic. The format of the resource is: `/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.EventGrid/topics/{topic-name}` |
+

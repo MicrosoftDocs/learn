@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-understand.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check. 
+  ms.date: 02/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An identity can deploy and delete AI resources but can't submit prompts to a model endpoint. Which boundary is limiting its access?"
+    choices:
+    - content: "Conditional Access policy enforcement"
+      isCorrect: false
+      explanation: "Incorrect: Conditional Access controls sign-in conditions, not management versus runtime permissions."
+    - content: "Management plane access"
+      isCorrect: false
+      explanation: "Incorrect: Management plane access governs configuration actions such as deploying or deleting resources."
+    - content: "Data plane access"
+      isCorrect: true
+      explanation: "Correct: Submitting prompts to a model endpoint is a data plane operation governed by runtime permissions."
+
+  - content: "A web application running outside Azure calls an AI endpoint using a client secret without user interaction. Which identity type is being used?"
+    choices:
+    - content: "An application identity such as a service principal"
+      isCorrect: true
+      explanation: "Correct: Non-interactive authentication from an application uses an application identity."
+    - content: "A human identity"
+      isCorrect: false
+      explanation: "Incorrect: Human identities require interactive sign-in."
+    - content: "A delegated user session"
+      isCorrect: false
+      explanation: "Incorrect: Delegated sessions involve user interaction."
+
+  - content: "A service principal is assigned Contributor at the subscription level to simplify deployment. What is the primary risk introduced by this decision?"
+    choices:
+    - content: "Management and data plane operations become merged."
+      isCorrect: false
+      explanation: "Incorrect: Management and data plane operations remain distinct even if scope is broad."
+    - content: "The blast radius of a compromise extends across all resources in the subscription."
+      isCorrect: true
+      explanation: "Correct: Subscription-level scope expands the impact of misuse or compromise."
+    - content: "The application might fail to authenticate."
+      isCorrect: false
+      explanation: "Incorrect: Broad scope doesn't prevent authentication."
+
+  - content: "Why is it important to distinguish between management plane and data plane access when securing AI workloads?"
+    choices:
+    - content: "Because data plane access always requires broader permissions."
+      isCorrect: false
+      explanation: "Incorrect: Data plane access can be tightly scoped."
+    - content: "Because both planes use different authentication protocols."
+      isCorrect: false
+      explanation: "Incorrect: Both planes rely on Microsoft Entra ID for authentication."
+    - content: "Because configuration actions and runtime model usage introduce different categories of risk."
+      isCorrect: true
+      explanation: "Correct: Management and data plane permissions control different types of actions and risk."
+
+  - content: "An organization enforces strong authentication but assigns broad role scope across environments. What issue remains?"
+    choices:
+    - content: "Conditional Access policies automatically fail."
+      isCorrect: false
+      explanation: "Incorrect: Conditional Access enforcement is separate from role scope design."
+    - content: "Authorization boundaries are weakened despite strong authentication."
+      isCorrect: true
+      explanation: "Correct: Strong authentication doesn't compensate for excessive permissions or scope."
+    - content: "Authentication tokens can't be validated."
+      isCorrect: false
+      explanation: "Incorrect: Token validation isn't affected by scope decisions."

@@ -1,4 +1,4 @@
-In today's rapidly evolving digital environment, managing organizational data efficiently and securely is crucial. Microsoft Purview Data Lifecycle and Microsoft Purview Records Management solutions enable businesses to govern their data throughout its lifecycle. These solutions help organizations establish clear policies for data retention and deletion, which are vital for compliance with regulatory requirements. By implementing retention labels and retention policies, Microsoft Purview ensures that data is managed consistently and appropriately across the organization. This consistent management helps minimize risks associated with data breaches, ensures compliance with legal standards, and reduces unnecessary data storage. Understanding and effectively using these tools is key to ensuring data is available when needed and securely deleted when it's not.
+In today's digital environment, managing organizational data efficiently and securely is essential. Microsoft Purview Data Lifecycle Management and Records Management help organizations control how long data is retained and when it's deleted. These tools support compliance, reduce risk, and strengthen governance. By using retention policies and retention labels, organizations can apply consistent settings across Microsoft 365 to keep data as long as needed and remove it when it's no longer useful or required.
 
 ## Understand retention policies and retention labels
 
@@ -33,16 +33,6 @@ Effective data lifecycle and records management are crucial for several reasons:
 - **Risk mitigation**: Proper retention and disposal of data help reduce the risk of data breaches and litigation. By deleting data that's no longer needed, organizations can minimize their exposure to potential security threats and legal actions.
 - **Operational efficiency**: Managing data lifecycle effectively ensures that users work only with current and relevant content, improving productivity and decision-making. Old and obsolete data can be a burden, both in terms of storage costs and the efficiency of data retrieval.
 
-## Key concepts and terminology
-
-As you begin to apply retention policies and labels within Microsoft Purview, it's important to understand several fundamental concepts that govern how these tools operate:
-
-- **Retention period**: Retention periods define how long data should be kept before it can be deleted. They can be set in days, months, years, or to be kept indefinitely, depending on organizational needs and compliance requirements.
-- **Auto-apply**: Automatically assigns retention labels to content based on conditions like content type or sensitive information, enhancing consistency and management efficiency.
-- **File plans**: File plans are detailed inventories of the record categories or types that an organization creates or receives, along with the associated business functions, retention periods, and other metadata. In Microsoft Purview, file plans help manage and organize retention labels more effectively, allowing for bulk actions and easier oversight.
-- **Event-based retention**: Initiates a retention period based on specific events such as contract expiration or employee termination, aligning with regulatory needs that require event-triggered data preservation.
-- **Adaptive and static scopes**: Adaptive scopes dynamically apply policies based on ongoing conditions or changes in your environment, while static scopes apply policies to fixed locations or data sets, providing flexibility in policy application depending on organizational dynamics.
-
 ## How retention settings work
 
 Retention settings can be configured to for these outcomes:
@@ -53,4 +43,14 @@ Retention settings can be configured to for these outcomes:
 
 When content is subject to retention settings, it remains in its original location. Users can continue to work with their documents or emails as usual. However, if the content is edited or deleted, a copy is automatically retained in a secure location such as the Preservation Hold library in SharePoint or the Recoverable Items folder in Exchange.
 
-By understanding and utilizing retention policies and labels, organizations can create a robust framework for data lifecycle management that meets compliance requirements and supports business objective.
+## Key concepts and terminology
+
+As you begin to apply retention policies and labels within Microsoft Purview, it's important to understand several fundamental concepts that govern how these tools operate:
+
+- **Retention period**: Retention periods define how long data should be kept before it can be deleted. They can be set in days, months, years, or to be kept indefinitely, depending on organizational needs and compliance requirements.
+- **Auto-apply**: Automatically assigns retention labels to content based on conditions like content type or sensitive information, enhancing consistency and management efficiency.
+- **File plans**: File plans are detailed inventories of the record categories or types that an organization creates or receives, along with the associated business functions, retention periods, and other metadata. In Microsoft Purview, file plans help manage and organize retention labels more effectively, allowing for bulk actions and easier oversight.
+- **Event-based retention**: Initiates a retention period based on specific events such as contract expiration or employee termination, aligning with regulatory needs that require event-triggered data preservation.
+- **Adaptive and static scopes**: Adaptive scopes dynamically apply policies based on ongoing conditions or changes in your environment, while static scopes apply policies to fixed locations or data sets, providing flexibility in policy application depending on organizational dynamics.
+
+Retention policies and labels give organizations the control needed to manage data lifecycles in line with compliance requirements and operational priorities.

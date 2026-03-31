@@ -7,7 +7,7 @@ You'll enable remote employees for Microsoft Authenticator and start a registrat
 When you're finished, you'll be ready to validate the user experience. You'll create a Microsoft Entra account for testing and add the account to the remote employees group. Then, you'll sign in and perform MFA. After MFA completes, you'll set up Microsoft Authenticator as the default sign-in method.
 
 > [!NOTE]
-> Completing the exercises in this module is optional, but if you want to follow along, you'll need your own Azure subscription. If you don't already have one, you can [sign up for a free subscription](https://azure.microsoft.com/free/). Make sure you clean up any resources or organizations you create to avoid charges.
+> Completing the exercises in this module is optional, but if you want to follow along, you'll need your own Azure subscription. If you don't already have one, you can [sign up for a free subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). Make sure you clean up any resources or organizations you create to avoid charges.
 
 ## Verify remote employees are enabled for Microsoft Authenticator
 

@@ -128,9 +128,9 @@ In this task, you'll run your application from the Integrated Terminal and verif
     void PlanSchoolVisit(string schoolName, int groups = 6) 
     {
         RandomizeAnimals(); 
-        string[,] group1 = AssignGroup(groups);
+        string[,] group = AssignGroup(groups);
         Console.WriteLine(schoolName);
-        PrintGroup(group1);
+        PrintGroup(group);
     }
 
     void RandomizeAnimals() 

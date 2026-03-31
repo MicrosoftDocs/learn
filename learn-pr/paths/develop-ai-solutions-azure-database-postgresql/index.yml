@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.develop-ai-solutions-azure-database-postgresql
+metadata:
+  title: Develop AI Solutions with Azure Database for PostgreSQL
+  description: Learn how to develop AI solutions using Azure Database for PostgreSQL, including vector search with pgvector for RAG pipelines and semantic retrieval.
+  ms.date: 02/01/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Develop AI solutions with Azure Database for PostgreSQL
+prerequisites: |
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with relational databases and SQL fundamentals.
+  - Understanding of machine learning concepts including embeddings and similarity search.
+summary: |
+  This learning path guides you through developing AI solutions using Azure Database for PostgreSQL. You start by building a data foundation with schema design, efficient SQL queries, and secure Python integration using Microsoft Entra authentication.
+
+  You then implement vector search using the pgvector extension to store embeddings, execute similarity searches with different distance metrics, and build retrieval patterns that integrate with RAG pipelines for semantic search and recommendations.
+
+  Finally, you optimize vector search performance by tuning PostgreSQL and pgvector configuration, selecting appropriate vector indexes, designing efficient data layouts, scaling for high-volume workloads, and implementing connection pooling for AI applications.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+- artificial-intelligence
+modules:
+- learn.wwl.build-query-azure-database-postgresql
+- learn.wwl.implement-vector-search-azure-database-postgresql
+- learn.wwl.optimize-vector-search-azure-database-postgresql
+trophy:
+  uid: learn.wwl.develop-ai-solutions-azure-database-postgresql.trophy

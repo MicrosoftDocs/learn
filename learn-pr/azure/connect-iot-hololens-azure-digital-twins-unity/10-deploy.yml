@@ -2,8 +2,6 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.deploy
 title: Exercise - Deploy to HoloLens 2, test, and uninstall
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy to HoloLens 2, test, and uninstall
   description: Get step-by-step instructions on deploying, testing, and uninstalling your project on a HoloLens 2 device.
   ms.date: 09/10/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/10-deploy.md)]
+  [!include[](includes/10-deploy.md)]

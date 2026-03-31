@@ -3,9 +3,9 @@ uid: learn.wwl.manage-exchange-online-use-windows-powershell
 metadata:
   title: Manage Exchange Online by using Windows PowerShell
   description: "This module covers managing mailboxes, resources, and admin roles in Exchange Online with PowerShell."
-  ms.date: 03/20/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A

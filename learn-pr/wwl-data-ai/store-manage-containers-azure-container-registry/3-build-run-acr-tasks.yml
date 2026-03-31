@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-manage-containers-azure-container-registry.build-run-acr-tasks
+title: Build and run images with ACR Tasks
+metadata:
+  title: Build and Run Images with ACR Tasks
+  description: Build and run images with ACR Tasks
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-build-run-acr-tasks.md)]

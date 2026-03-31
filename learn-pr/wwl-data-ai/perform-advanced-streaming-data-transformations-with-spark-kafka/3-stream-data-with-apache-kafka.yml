@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.stream-data-with-apache-kafka
 title: Stream data with Apache Kafka
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Stream data with Apache Kafka
   description: "Stream data with Apache Kafka"
   ms.date: 04/07/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-stream-data-with-apache-kafka.md)]
+  [!include[](includes/3-stream-data-with-apache-kafka.md)]

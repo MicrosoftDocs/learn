@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-service-health
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure Service Health 
   description: Introduction to Azure Service Health and how to get information from Azure Platform health.             # Copy your 'evaluate' Learning Objective here (see below)
@@ -55,4 +53,4 @@ units:
 
 badge:
   uid: learn.intro-to-azure-service-health.badge
-
+

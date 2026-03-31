@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.considerations-migrating-nosql-cosmos-db
 title: Considerations for migrating NoSQL databases to Cosmos DB
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Considerations for migrating NoSQL databases to Cosmos DB
   description: "Considerations for migrating NoSQL databases to Cosmos DB"
   ms.date: 03/26/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 21
 content: |
-  [!include[](includes/4-considerations-migrate-nosql.md)]
+  [!include[](includes/4-considerations-migrate-nosql.md)]

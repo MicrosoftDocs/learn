@@ -4,16 +4,12 @@ By using holograms, you learned how digital content can be made, placed, and int
 
 ## Next steps
 
-The journey isn't over yet. Consider following up on these industry-based use cases for HoloLens:
-
-- [Manufacturing](https://www.microsoft.com/hololens/industry-manufacturing)
-- [Healthcare](https://www.microsoft.com/hololens/industry-healthcare)
-- [Education](https://www.microsoft.com/hololens/industry-education)
+The journey isn't over yet. Consider following up on [mixed-reality case studies](/windows/mixed-reality/discover/case-studies-overview).
 
 ## Further reading
 
-- Learn more about [HoloLens](https://www.microsoft.com/hololens).
-- Learn more about [Windows mixed reality immersive headsets](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+- Learn more about [HoloLens](/hololens/).
+- Learn more about [Windows mixed reality immersive headsets](/windows/mixed-reality/enthusiast-guide/).
 - Explore the [mixed reality developer documentation](/windows/mixed-reality/?utm_source=developermscom).
 - Get started on your mixed reality [design journey](/windows/mixed-reality/design/design).
 - Get started on your mixed reality [development journey](/windows/mixed-reality/develop/development?tabs=unity).
@@ -21,4 +17,4 @@ The journey isn't over yet. Consider following up on these industry-based use ca
 - Explore [Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services).
 - Get started with [Dynamics 365 features](/dynamics365/mixed-reality).
 - Read [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321).
-- Learn more about [Microsoft Mesh](https://aka.ms/meshdocs).
+- Learn more about [Microsoft Mesh](/mesh/).

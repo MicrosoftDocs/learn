@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-secure-ai-ready-infrastructure.implement-keyless-authentication-microsoft
+title: "Implement keyless authentication with Microsoft Entra ID managed identities"
+metadata:
+  title: "Implement keyless authentication with Microsoft Entra ID managed identities"
+  description: "Implement keyless authentication with Microsoft Entra ID Managed Identities."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-implement-keyless-authentication-microsoft.md)]

@@ -52,7 +52,7 @@ The [bcp utility](/sql/relational-databases/import-export/import-and-export-bulk
 
 Understanding the schema and data types of the table is essential for using the bcp command effectively, unless a pre-existing format file is available.
 
-## Azure Data Factory	
+## Azure Data Factory
 
 You can use [Azure Data Factory](/azure/data-factory/quickstart-get-started) for data migration rather than entire database migration. Azure Data Factory can migrate and transform data from source SQL Server databases. It's commonly used for merging data from multiple sources into Azure SQL Managed Instance, especially for business intelligence workloads. However, it can also be used to move data from or to SQL Server running on Azure Virtual Machine. To do so, data movement pipelines are created in Azure Data Factory to transfer data from the source to the destination. 
 

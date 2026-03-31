@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-create-detections-perform-investigations-azure-sentinel
 metadata:
-  title: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
-  description: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
-  ms.date: 07/05/2022
-  author: wwlpublish
+  title: 'Create detections and perform investigations using Microsoft Sentinel'
+  description: 'Create detections and perform investigations using Microsoft Sentinel'
+  ms.date: 04/18/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Create detections and perform investigations using Microsoft Sentinel'
+title: 'Create detections and perform investigations using Microsoft Sentinel'
 prerequisites: |
   - Understand how to use KQL in Microsoft Sentinel like you could learn from learning path SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
   - Understand how data is connected to Microsoft Sentinel like you could learn from learning path SC-200: Connect logs to Microsoft Sentinel
@@ -21,6 +21,7 @@ roles:
 products:
 - azure
 - microsoft-sentinel
+- microsoft-defender
 subjects:
 - threat-protection
 modules:

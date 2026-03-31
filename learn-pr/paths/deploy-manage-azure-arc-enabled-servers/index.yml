@@ -23,7 +23,6 @@ roles:
 products:
 - azure
 modules:
-- learn.azure.intro-to-arc-for-servers
 - learn.azure.plan-deploy-azure-arc-enabled-servers
 - learn.azure.govern-azure-arc-enabled-servers
 - learn.wwl.configure-updates-azure-arc-enabled-servers

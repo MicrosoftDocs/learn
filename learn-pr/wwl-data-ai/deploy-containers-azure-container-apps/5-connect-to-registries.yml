@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-container-apps.connect-to-registries
+title: Configure image pull authentication for private registries
+metadata:
+  title: Configure Image Pull Authentication for Private Registries
+  description: Configure image pull authentication for private registries
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-connect-to-registries.md)]

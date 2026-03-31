@@ -1,0 +1,3 @@
+Windows 10 End of Support marks a critical moment for organizations to modernize their device environments. Upgrading to Windows 11 Pro and Surface for Business devices ensures continued protection, simplified management, and a platform designed for the future of hybrid and AI-driven work.
+
+With built-in chip-to-cloud security, streamlined deployment through Intune and Autopilot, and performance optimized for Microsoft 365 and Copilot experiences, Surface, and Windows 11 Pro help IT teams stay ahead of evolving security and productivity demands—keeping users connected, protected, and productive wherever work happens.

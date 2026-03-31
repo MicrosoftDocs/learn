@@ -17,10 +17,10 @@ Here are some links to more information on the topics we discussed in this modul
 - [Enabling automatic access to GitHub.com actions using GitHub Connect](https://docs.github.com/enterprise-server@2.22/admin/github-actions/enabling-automatic-access-to-githubcom-actions-using-github-connect)
 - [Enforcing policies for GitHub Actions in your enterprise](https://docs.github.com/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise)
 - [Manually syncing actions from GitHub.com](https://docs.github.com/enterprise-server@2.22/admin/github-actions/manually-syncing-actions-from-githubcom)
-- [Sharing workflows, secrets, and runners with your organization](https://docs.github.com/actions/administering-github-actions/sharing-workflows-secrets-and-runners-with-your-organization)
+- [Sharing workflows, secrets, and runners with your organization](https://docs.github.com/en/actions/how-tos/reuse-automations/share-with-your-organization)
 - [Using secrets in GitHub Actions](https://docs.github.com/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
 - [Metadata syntax for GitHub Actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions#inputs)
-- [Using GitHub-hosted runners](https://docs.github.com/actions/using-github-hosted-runners/using-github-hosted-runners)
+- [Using GitHub-hosted runners](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners)
 - [About self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/about-self-hosted-runners)
 - [Managing access to self-hosted runners using groups](https://docs.github.com/actions/hosting-your-own-runners/managing-access-to-self-hosted-runners-using-groups)
 - [Using self-hosted runners in a workflow](https://docs.github.com/actions/hosting-your-own-runners/using-self-hosted-runners-in-a-workflow)
@@ -28,3 +28,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Using a proxy server with self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/using-a-proxy-server-with-self-hosted-runners)
 - [Using GitHub Actions with an IP allowlist](https://docs.github.com/organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization#using-github-actions-with-an-ip-allow-list)
 - [Monitoring and troubleshooting self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/managing-self-hosted-runners/monitoring-and-troubleshooting-self-hosted-runners)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

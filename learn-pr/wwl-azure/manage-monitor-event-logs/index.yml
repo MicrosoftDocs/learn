@@ -3,9 +3,9 @@ uid: learn.wwl.manage-monitor-event-logs
 metadata:
   title: Manage and monitor Windows Server event logs
   description: "Learn how Event Viewer provides a convenient and accessible location for you to observe events that occur. Access event information quickly and conveniently. Learn how to interpret the data in the event log."
-  ms.date: 01/01/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Manage and monitor Windows Server event logs

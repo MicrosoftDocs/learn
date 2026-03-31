@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-remote-management.consider-of-azure-virtual-machines
 title: Consider remote management of Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consider remote management of Azure Virtual Machines
   description: "Consider remote management of Azure Virtual Machines."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-consider-remote-management-azure-virtual-machines.md)]
+  [!include[](includes/2-consider-remote-management-azure-virtual-machines.md)]

@@ -2,8 +2,6 @@
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 07/10/2024
@@ -48,4 +46,4 @@ quiz:
     - content: "You can write your code as an Azure function that is invoked by a trigger and call the Cognitive Service into the function."
       isCorrect: true
       explanation: "This gives the flexibility for you to interact with your Cognitive Service API."
-
+

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.build-agent-azure-portal
+title: Build your first agent in Microsoft Foundry
+metadata:
+  title: Build Your First Agent in Microsoft Foundry
+  description: Learn how to create and configure AI agents using the Azure portal.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-build-agent-azure-portal.md)]

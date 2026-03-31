@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 05/12/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a key reason to configure an Azure Network Connection (ANC) instead of using Microsoft-hosted networking?"
+    choices:
+    - content: "To reduce Dev Box creation time"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "To allow access to internal, on-premises resources"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "To automatically scale disk storage"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "What tool can platform engineers use to automate Dev Box deployment with infrastructure as code?"
+    choices:
+    - content: "Bicep templates"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Microsoft Teams"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Windows Admin Center"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "What is required to allow Dev Boxes to join an on-premises Active Directory domain?"
+    choices:
+    - content: "Native Microsoft Entra ID Join"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Hybrid Microsoft Entra ID Join"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Microsoft-hosted Network Only"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "During pilot deployment, what should platform teams configure to ensure toolsets are available on Dev Boxes?"
+    choices:
+    - content: "Set up scripts from a Catalog"
+      isCorrect: true
+      explanation: "Correct"
+    - content: "Windows Server Group Policies"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "External SaaS automation"
+      isCorrect: false
+      explanation: "Incorrect"
+  - content: "Which Microsoft service is used to manage compliance and security settings for Dev Boxes once they're provisioned?"
+    choices:
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "GitHub Copilot"
+      isCorrect: false
+      explanation: "Incorrect"
+    - content: "Microsoft Intune"
+      isCorrect: true
+      explanation: "Correct"

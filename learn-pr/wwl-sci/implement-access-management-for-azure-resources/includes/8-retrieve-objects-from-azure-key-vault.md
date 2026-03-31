@@ -4,24 +4,24 @@ Azure Key Vault is a secure tool for storing secrets, keys, and certificate. Onc
 
 To add a secret to the vault, follow the steps:
 
-1.  Navigate to your new key vault in the Azure portal
-2.  On the Key Vault settings pages, select **Secrets**.
-3.  Select on **Generate/Import**.
-4.  On the Create a secret screen choose the following values:
+1. Navigate to your new key vault in the Azure portal
+2. On the Key Vault settings pages, select **Secrets**.
+3. Select on **Generate/Import**.
+4. On the Create a secret screen choose the following values:
     
-    | **Setting**    | **Value to enter**    |
-    | -------------- | --------------------- |
-    | Upload options | Manual                |
-    | Name           | mySC300keyvaultSecret |
-    | Value          | This is my secret     |
-5.  Select **Create**.
+   | **Setting**    | **Value to enter**    |
+   | -------------- | --------------------- |
+   | Upload options | Manual                |
+   | Name           | mySC300keyvaultSecret |
+   | Value          | This is my secret     |
+
+5. Select **Create**.
 
 ### Retrieve a secret using the Azure portal
 
 This process is simple. Open your key vault, then open the secret you created. Select the **Show secret value** button.
 
-:::image type="content" source="../media/key-vault-view-secret-9b36f3cf-292a8d6c.png" alt-text="Screenshot of the Azure Key Vault, with a secret open and the show secret value selected. You can read or copy the value in plain text.":::
-
+:::image type="content" source="../media/key-vault-view-secret.png" alt-text="Screenshot of the Azure Key Vault, with a secret open and the show secret value selected. You can read or copy the value in plain text.":::
 
 ### Retrieve a secret using CLI or PowerShell
 

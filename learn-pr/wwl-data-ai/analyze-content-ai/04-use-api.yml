@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-content-ai.use-api
-title: Use the Content Understanding REST API
+title: Use the Content Understanding API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Use the Content Understanding REST API
-  description: Use the REST API to create a client application for an analyzer.
-  author: wwlpublish
-  ms.author: gmalc
-  ms.date: 01/13/2025
+  title: Use the Content Understanding API
+  description: Use the API to create a client application for an analyzer.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

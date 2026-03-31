@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-computer-vision.generate-images
+title: Image generation
+metadata:
+  title: Image generation
+  description: Understand image generation techniques
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 10/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
+durationInMinutes: 2
+content: |
+  [!include[](includes/5a-generate-images.md)]

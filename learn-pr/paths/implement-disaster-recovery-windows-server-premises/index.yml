@@ -3,9 +3,9 @@ uid: learn.wwl.implement-disaster-recovery-windows-server-premises
 metadata:
   title: Implement disaster recovery in Windows Server on-premises and hybrid environments
   description: Implement disaster recovery in Windows Server on-premises and hybrid environments
-  ms.date: 03/14/2022
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Implement disaster recovery in Windows Server on-premises and hybrid environments
 prerequisites: |
@@ -36,7 +36,6 @@ modules:
 - learn.wwl.implement-hyper-v-replica
 - learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
-- learn.protect-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
 trophy:
   uid: learn.wwl.implement-disaster-recovery-windows-server-premises.trophy

@@ -1,4 +1,4 @@
-The [SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension?azure-portal=true) is a developer tool that can be installed in both Azure Data Studio and Visual Studio Code. This extension is designed to facilitate the development and management of SQL databases in a project-based environment. It's compatible with several SQL platforms, including SQL Server, Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse SQL.
+The [SQL Database Projects extension](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true) is a developer tool that can be installed in Visual Studio Code. This extension is designed to facilitate the development and management of SQL databases in a project-based environment. It's compatible with several SQL platforms, including SQL Server, Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse SQL.
 
 Database schemas can be created or changed, and the changes are saved in a *.dacpac* file format. You can publish the SQL Database project either using the SQL Database Projects extension or by publishing the *.dacpac* with the command line interface [SqlPackage](/sql/tools/sqlpackage/sqlpackage-publish?azure-portal=true).
 
@@ -6,23 +6,11 @@ With the SQL Database Projects extension you can either create a new empty proje
 
 ## Install the Database Projects extension
 
-The SQL Database Project extension can be installed in both Azure Data Studio and Visual Studio Code.
-
-### Install the Database Projects in Visual Studio Code
-
 The SQL Database Projects extension is installed as part of the [mssql extension](/sql/tools/visual-studio-code/sql-server-develop-use-vscode?azure-portal=true). The mssql extension for Visual Studio Code enables you to connect to a SQL Server, query databases with T-SQL, and view the results.
 
 :::image type="content" source="../media/3-sql-database-projects-extension.png" alt-text="Screenshot showing the SQL Database Projects extension installed.":::
 
 It's a prerequisite that you have the latest [.NET SDK](https://dotnet.microsoft.com/download/dotnet?azure-portal=true) installed. If not, you'll be prompted to install it. 
-
-### Install the Database Projects in Azure Data Studio
-
-Installing the Database Projects extension in Azure Data Studio follows a similar process to installing it in Visual Studio Code.
-
-1. In Azure Data Studio, select either the **Extensions** icon or **View** -> **Extensions** to open the *Extensions manager*.
-1. Search for **SQL Database Projects**.
-1. Select **Install**.
 
 ## Import and modify a schema
 
@@ -80,21 +68,3 @@ To deploy the changes to your Azure SQL Database after modifying your database s
 1. Refresh the database view to verify that the schema modifications have been made.
 
 :::image type="content" source="../media/3-publish-database.png" alt-text="Screenshot showing how to publish to an existing Azure SQL logical server.":::
-
-## Azure Data Studio
-
-The features for database projects in [Azure Data Studio](/azure-data-studio/download-azure-data-studio?azure-portal=true) are consistent with the features in other environments, such as Visual Studio Code. However, the user interface in Azure Data Studio is different, offering a unique layout and navigation experience. Despite these differences, you can still perform all the same tasks, such as creating, managing, and deploying database projects, with the same level of efficiency and effectiveness.
-
-### Create a database project
-
-To create a database project in Azure Data Studio, follow these steps.
-
-1. In Azure Data Studio, select **Database projects** and then **Create new**.
-1. Select **Azure SQL Database**, and enter a name for your project.
-1. In **Location**, browse to a folder on your local machine where the project is saved.
-1. Keep the selection for **SDK-style project (Preview)**.
-1. Select **Create** to create the project. When prompted, select **Yes** if you trust the authors of the files in this folder.
-
-Now that you created a SQL project, you can edit a table in the table designer. After making your changes, you can build and publish the project using a process similar to the process in Visual Studio Code.
-
-For more information about working with SQL Database Projects in Azure Data Studio, see [Getting started with the SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension-getting-started?azure-portal=true).

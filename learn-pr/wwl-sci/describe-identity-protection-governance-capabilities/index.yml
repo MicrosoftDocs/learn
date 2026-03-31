@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Describe the identity protection and governance capabilities of Microsoft Entra
+  title: Describe the Identity Protection and Governance Capabilities of Microsoft Entra
   description: "Describe the identity protection and governance capabilities of Microsoft Entra."
-  ms.date: 08/02/2024
+  ms.date: 03/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
@@ -18,6 +16,8 @@ abstract: |
   - Describe the capabilities of Microsoft Entra ID Governance.
   - Describe Privileged Identity Management.
   - Describe the capabilities of Microsoft Entra ID Protection.
+  - Describe Microsoft Entra Verified ID.
+  - Describe Microsoft Entra integration with Microsoft Security Copilot.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -39,7 +39,6 @@ units:
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entitlement-management-terms-use
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-privileged-identity-management
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-azure
-- learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-permissions-management
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-verified-id
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entra-integration-in-copilot
 - learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.knowledge-check

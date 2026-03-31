@@ -3,9 +3,9 @@ uid: learn.wwl.audit-security-of-windows-server-iaas-vms
 metadata:
   title: Audit the security of Windows Server IaaS Virtual Machines
   description: "Learn about Microsoft Defender for Cloud and how to onboard Windows Server computers to the Microsoft Defender for Cloud Service. Also learn about Microsoft Sentinel, security information and event management (SIEM), and security orchestration, automation, and response (SOAR)."
-  ms.date: 12/20/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Audit the security of Windows Server IaaS Virtual Machines

@@ -1,99 +1,154 @@
+Data discovery and classification is the foundational step in any data security strategy. Before you can protect sensitive data, you must first know where it exists, what type of data it is, and how sensitive it is. This unit focuses on the design considerations and framework controls you should evaluate when architecting data discovery and classification solutions.
 
-## Purview discovery and classification features
+## Design considerations for data discovery and classification
 
-Microsoft Purview's solutions in the governance portal provide a unified data governance service that helps you manage your on-premises, multicloud, and software-as-a-service (SaaS) data. The Microsoft Purview governance portal allows you to:
+When evaluating solutions for data discovery and classification, consider these key factors aligned with the MCSB control DP-1 (Discover, classify, and label sensitive data):
 
--   Create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage.
--   Enable data curators and security administrators to manage and keep your data estate secure.
--   Empower data consumers to find valuable, trustworthy data.
+### Data estate visibility
 
-[![Diagram that shows Microsoft Purview's high-level architecture.](../media/high-level-overview-large.png)](../media/high-level-overview-large.png#lightbox)
+Your organization likely has data spread across multiple locations:
 
-### Data Map
+- **Cloud services**: Azure Storage, Azure SQL, Microsoft 365, and third-party SaaS applications
+- **On-premises systems**: File servers, databases, and legacy applications
+- **Hybrid environments**: Data that moves between cloud and on-premises
 
-Microsoft Purview automates data discovery by providing data scanning and classification for assets across your data estate. Metadata and descriptions of discovered data assets are integrated into a holistic map of your data estate. Microsoft Purview Data Map provides the foundation for data discovery and data governance. Microsoft Purview Data Map is a cloud native PaaS service that captures metadata about enterprise data present in analytics and operation systems on-premises and cloud. Microsoft Purview Data Map is automatically kept up to date with built-in automated scanning and classification system. Business users can configure and use the data map through an intuitive UI and developers can programmatically interact with the Data Map using open-source Apache Atlas 2.2 APIs. Microsoft Purview Data Map powers the Microsoft Purview Data Catalog, the Microsoft Purview Data Estate Insights and the Microsoft Purview Data Policy as unified experiences within the [Microsoft Purview governance portal](https://web.purview.azure.com/resource/).
+A comprehensive discovery solution must provide visibility across this entire estate. The CAF emphasizes that you can't govern what you can't see, making automated discovery essential for organizations adopting cloud services.
 
-For more information, see our [introduction to Data Map](/azure/purview/concept-elastic-data-map).
+### Classification taxonomy design
 
-Atop the Data Map, there are purpose-built apps that create environments for data discovery, access management, and insights about your data landscape.
+Classification taxonomy is a hierarchical depiction of data categorization. There isn't a universal standard for classification—it's driven by your organization's motivation for protecting data. Taxonomy might capture compliance requirements, promised features for workload users, or other criteria driven by business needs.
 
-|App  |Description  |
-|----------|-----------|
-|Data Catalog  | Finds trusted data sources by browsing and searching your data assets. The data catalog aligns your assets with friendly business terms and data classification to identify data sources.      |
-|Data Estate Insights | Gives you an overview of your data estate to help you discover what kinds of data you have and where it is. |
-|Data Sharing | Allows you to securely share data internally or cross organizations with business partners and customers. |
-|Data Policy | A set of central, cloud-based experiences that help you provision access to data securely and at scale. |
-|||
+As a workload owner, rely on your organization to provide a well-defined taxonomy. All workload roles must have a shared understanding of the structure, nomenclature, and definition of the sensitivity levels. Don't define your own classification system that conflicts with organizational standards.
 
-### Data Catalog app
+Your classification scheme should:
 
-With the Microsoft Purview Data Catalog, business and technical users can quickly and easily find relevant data using a search experience with filters based on lenses such as glossary terms, classifications, sensitivity labels and more. For subject matter experts, data stewards and officers, the Microsoft Purview Data Catalog provides data curation features such as business glossary management and the ability to automate tagging of data assets with glossary terms. Data consumers and producers can also visually trace the lineage of data assets: for example, starting from operational systems on-premises, through movement, transformation & enrichment with various data storage and processing systems in the cloud, to consumption in an analytics system like Power BI. For more information, see our [introduction to search using Data Catalog](/azure/purview/how-to-search-catalog).
+- **Align with business requirements**: Classifications should reflect how your organization thinks about data sensitivity
+- **Support regulatory compliance**: Include classifications that map to HIPAA, PCI-DSS, and other relevant regulations
+- **Enable automation**: Design classifications that can be applied automatically based on content patterns
+- **Scale across the organization**: Use consistent classifications that work for all business units
 
-### Data Estate Insights app
+The WAF Security pillar recommends defining data classifications that enable risk-based controls. Example classification labels cover sensitivity levels, information types, and compliance scope:
 
-With the Microsoft Purview Data Estate Insights, the chief data officers and other governance stakeholders can get a bird’s eye view of their data estate and can gain actionable insights into the governance gaps that can be resolved from the experience itself.
+| Category | Example labels |
+|----------|----------------|
+| **Sensitivity levels** | Public, General, Confidential, Highly Confidential, Secret |
+| **Information types** | Financial, Credit Card, Credentials, Health fields, Intellectual Property, Personal data |
+| **Compliance scope** | HIPAA, PCI, CCPA, SOX |
 
-For more information, see our [introduction to Data Estate Insights](/azure/purview/concept-insights).
+### Defining classification scope
 
-### Data Sharing app
+Be granular and explicit when defining what's in scope for classification. The WAF Security pillar emphasizes that classification should extend beyond primary data stores to related components:
 
-Microsoft Purview Data Sharing enables organizations to securely share data both within your organization or cross organizations with business partners and customers. You can share or receive data with just a few clicks. Data providers can centrally manage and monitor data sharing relationships, and revoke sharing at any time. Data consumers can access received data with their own analytics tools and turn data into insights.
+- **Data store granularity**: Classify at the table level or even column level for tabular systems
+- **Backup systems**: Has your highly sensitive data store's backup been classified?
+- **Caching layers**: If you're caching user-sensitive data, is the cache in scope?
+- **Analytical data stores**: How is aggregated or derived data classified?
+- **Preproduction environments**: Do you need to classify data in development and test systems?
 
-For more information, see our [introduction to Data Sharing](/azure/purview/concept-data-share).
+Start with these questions to define your scope:
 
-### Data Policy app
+- What's the origin of data and information type?
+- What's the expected restriction based on access (public, regulatory, internal use)?
+- What's the data footprint—where is it stored and how long should it be retained?
+- Which architecture components interact with the data?
+- How does data move through the system?
+- What information is expected in audit reports?
 
-Microsoft Purview Data Policy is a set of central, cloud-based experiences that help you manage access to data sources and datasets securely and at scale.
+### Designing architecture based on classification labels
 
--   Manage access to data sources from a single-pane of glass, cloud-based experience
--   Enables at-scale access provisioning
--   Introduces a new data-plane permission model that is external to data sources
--   It is seamlessly integrated with Microsoft Purview Data Map and Catalog:
-    -   Search for data assets and grant access only to what is required via fine-grained policies.
-    -   Path to support SaaS, on-premises, and multicloud data sources.
-    -   Path to create policies that leverage any metadata associated to the data objects.
--   Based on role definitions that are simple and abstracted (for example: Read, Modify)
+Classification should influence your architectural decisions. The WAF Security pillar identifies key areas where classification drives design:
 
-## Defense in depth in Microsoft Purview
+**Segmentation strategy**: Classification labels influence traffic isolation boundaries. Critical flows might require end-to-end TLS, while other traffic can use different encryption standards.
 
-![Screenshot that shows defense in depth in Microsoft Purview.](../media/security-defense-in-depth.png)
+**Encryption choices**: Sensitivity levels affect encryption decisions:
+- Highly sensitive data might require double encryption
+- Different secrets might require varied levels of protection (HSM vs. standard secret stores)
+- Compliance labels dictate protection standards (for example, PCI-DSS mandates FIPS 140-2 Level 3, requiring HSMs)
 
-Before applying these recommendations to your environment, you should consult your security team as some may not be applicable to your security requirements.
+**Data in use protection**: For the most sensitive classifications, consider confidential computing to protect data during processing.
 
-### Network security
+**Classification persistence**: Classification information should move with the data as it transitions through the system. Data labeled as confidential should be treated as confidential by all components that interact with it—including removing or obfuscating personal data from application logs.
 
-Microsoft Purview is a Platform as a Service (PaaS) solution in Azure. You can enable the following network security capabilities for your Microsoft Purview accounts:
+**Reporting and masking**: Classification impacts how data is exposed in reports. Based on information type labels, you might need to apply data masking algorithms for obfuscation. Define which roles should have visibility into raw data versus masked data.
 
--   Enable [end-to-end network isolation](/azure/purview/catalog-private-link-end-to-end) using Private Link Service.
--   Use [Microsoft Purview Firewall](/azure/purview/catalog-private-link-end-to-end#firewalls-to-restrict-public-access) to disable Public access.
--   Deploy [Network Security Group (NSG) rules](/azure/purview/concept-best-practices-security#use-network-security-groups) for subnets where Azure data sources private endpoints, Microsoft Purview private endpoints and self-hosted runtime VMs are deployed.
--   Implement Microsoft Purview with private endpoints managed by a Network Virtual Appliance, such as [Azure Firewall](/azure/firewall/overview) for network inspection and network filtering.
+### Sensitive information type detection
 
-### Access management
+When evaluating discovery solutions, consider support for:
 
-Identity and Access Management provides the basis of a large percentage of security assurance. It enables access based on identity authentication and authorization controls in cloud services. These controls protect data and resources and decide which requests should be permitted.
+- **Built-in sensitive information types**: Pre-configured patterns for common data like credit card numbers, social security numbers, and passport numbers
+- **Custom sensitive information types**: Organization-specific patterns for employee IDs, project codes, or proprietary data formats
+- **Trainable classifiers**: Machine learning models that identify sensitive content based on examples rather than patterns
+- **Exact data match**: Matching against your actual sensitive data values for high-precision detection
 
-Related to roles and access management in Microsoft Purview, you can apply the following security best practices:
+### Labeling strategy
 
--   Define roles and responsibilities to manage Microsoft Purview in control plane and data plane:
-    -   Define roles and tasks required to deploy and manage Microsoft Purview inside an Azure subscription.
-    -   Define roles and task needed to perform data management and governance using Microsoft Purview.
--   Assign roles to Microsoft Entra groups instead of assigning roles to individual users.
--   Use Azure [Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) to map user access to Microsoft Entra groups using Access Packages.
--   Enforce multi-factor authentication for Microsoft Purview users, especially, for users with privileged roles such as collection admins, data source admins or data curators.
+Design your labeling approach to address:
 
-### Threat protection and preventing data exfiltration
+- **Manual labeling**: Users apply labels based on their knowledge of content sensitivity
+- **Automatic labeling**: Labels applied automatically when content matches sensitive information types
+- **Recommended labeling**: System suggests labels that users can accept or override
+- **Default labeling**: Baseline labels applied when no other label is appropriate
 
-Microsoft Purview provides rich insights into the sensitivity of your data, which makes it valuable to security teams using Microsoft Defender for Cloud to manage the organization's security posture and protect against threats to their workloads. Data resources remain a popular target for malicious actors, making it crucial for security teams to identify, prioritize, and secure sensitive data resources across their cloud environments. To address this challenge, we're announcing the integration between Microsoft Defender for Cloud and Microsoft Purview in public preview.
+The MCRA emphasizes that labels should persist with data as it moves across your environment, enabling consistent protection regardless of location.
 
-### Information protection
+## MCSB controls for data discovery and classification
 
-#### Secure metadata extraction and storage
+### DP-1: Discover, classify, and label sensitive data
 
-Microsoft Purview is a data governance solution in cloud. You can register and scan different data sources from various data systems from your on-premises, Azure, or multicloud environments into Microsoft Purview. While data source is registered and scanned in Microsoft Purview, the actual data and data sources stay in their original locations, only metadata is extracted from data sources and stored in Microsoft Purview Data Map, which means you don't need to move data out of the region or their original location to extract the metadata into Microsoft Purview.
+This control requires organizations to:
 
-When a Microsoft Purview account is deployed, in addition, a managed resource group is also deployed in your Azure subscription. A managed Azure Storage Account is deployed inside this resource group. The managed storage account is used to ingest metadata from data sources during the scan. Since these resources are consumed by the Microsoft Purview they can't be accessed by any other users or principals, except the Microsoft Purview account. This is because an Azure role-based access control (RBAC) deny assignment is added automatically for all principals to this resource group at the time of Microsoft Purview account deployment, preventing any CRUD operations on these resources if they aren't initiated from Microsoft Purview.
+- **Establish a data classification scheme** that defines sensitivity levels and handling requirements
+- **Implement automated discovery** to find sensitive data across cloud and on-premises environments
+- **Apply sensitivity labels** that persist with data and enable downstream protection
+- **Maintain data inventories** that track where sensitive data resides
 
-#### Information protection and encryption
+### DP-2: Monitor anomalies and threats targeting sensitive data
 
-Azure offers many mechanisms for keeping data private in rest and as it moves from one location to another. For Microsoft Purview, data is encrypted at rest using Microsoft-managed keys and when data is in transit, using Transport Layer Security (TLS) v1.2 or greater.
+Effective classification enables threat monitoring by:
+
+- Identifying when sensitive data is accessed from unusual locations
+- Detecting potential data exfiltration attempts
+- Alerting on bulk access to classified data
+- Tracking sharing of sensitive documents outside the organization
+
+## Microsoft solutions for data discovery and classification
+
+Microsoft provides integrated capabilities to address these requirements:
+
+### Microsoft Purview Information Protection
+
+[Microsoft Purview Information Protection](/purview/information-protection) provides:
+
+- **Sensitive information types**: Over 300 built-in types covering global regulations and common data patterns
+- **Trainable classifiers**: Machine learning models for content like contracts, resumes, and source code
+- **Sensitivity labels**: Labels that apply protection and persist across Microsoft 365 and beyond
+- **Auto-labeling policies**: Rules that automatically apply labels based on content analysis
+
+### Microsoft Purview Data Map
+
+[Microsoft Purview Data Map](/purview/concept-elastic-data-map) extends discovery beyond Microsoft 365:
+
+- **Multi-cloud scanning**: Discover and classify data in Azure, AWS, and GCP
+- **On-premises scanning**: Scan file shares, SQL servers, and SAP environments
+- **Data lineage**: Track how sensitive data flows through your organization
+- **Glossary integration**: Map technical assets to business terms
+
+### Microsoft Defender for Cloud
+
+For Azure workloads, [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) provides:
+
+- **Data-aware security posture**: Identify databases and storage accounts containing sensitive data
+- **Risk prioritization**: Focus remediation on resources with the most sensitive data
+- **Integration with Purview**: Leverage Purview classifications in security assessments
+
+### Azure SQL Data Discovery & Classification
+
+[Data Discovery & Classification](/azure/azure-sql/database/data-discovery-and-classification-overview) for Azure SQL provides:
+
+- **Column-level classification**: Identify and label sensitive columns in databases
+- **Built-in recommendations**: Suggested classifications based on column names and data patterns
+- **Microsoft Purview integration**: Sync classifications with your enterprise labeling strategy
+
+## Bringing it together
+
+Effective data discovery and classification requires a unified organizational taxonomy applied consistently across your data estate. Start by defining what you need to protect and why, then be explicit about scope—extending classification to backups, caches, and analytical stores. Prioritize automated discovery with tools like Microsoft Purview, but validate results through manual verification. Classification provides value when it triggers protection actions, so design your architecture so that labels influence encryption choices, access controls, and segmentation. Build classification maintenance into operations, because stale metadata leads to compliance issues and erroneous risk assessments.

@@ -1,8 +1,8 @@
-The current hard-coded pizzas in the app need to be replaced with a database. You can use the Microsoft Entity Framework to add connections to data sources. In this app, we'll use a SQLite database to store the pizzas.
+The current hard-coded pizzas in the app need to be replaced with a database. You can use the Microsoft Entity Framework to add connections to data sources. In this app, we use a SQLite database to store the pizzas.
 
-In this exercise, you'll add packages to support database functionality, connect classes to a back-end database, and add a helper class to preload data for the company's pizzas.
+In this exercise, you add packages to support database functionality, connect classes to a back-end database, and add a helper class to preload data for the company's pizzas.
 
-## Add packages to support database access
+## Add packages that support database access
 
 1. Stop the app if it's still running.
 1. In Visual Studio Code, select **Terminal** > **New Terminal**.
@@ -15,26 +15,26 @@ In this exercise, you'll add packages to support database functionality, connect
 1. Run these commands to add the **Microsoft.EntityFrameworkCore**, **Microsoft.EntityFrameworkCore.Sqlite**, and **System.Net.Http.Json** packages:
 
     ```powershell
-    dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8
-    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0.8
-    dotnet add package System.Net.Http.Json --version 6.0.0
+    dotnet add package Microsoft.EntityFrameworkCore --version 9.0.0
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 9.0.0
+    dotnet add package System.Net.Http.Json --version 9.0.0
     ```
-    
+
     These commands add package references to your BlazingPizza.csproj file:
 
     ```xml
       <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.8" />
-        <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-*" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0-*" />
+        <PackageReference Include="System.Net.Http.Json" Version="9.0.0-*" />
       </ItemGroup>
     ```
 
 ## Add a database context
 
 1. In Visual Studio Code, create a new folder in the *BlazingPizza* folder. Name it *Data*.
-1. Create a new file in the *Data* folder. Name it *PizzaStoreContext.cs*.
-1. Enter this code for the class:
+1. In the *Data* folder, create a new file named *PizzaStoreContext.cs*.
+1. In the new file, enter this code for the class:
 
     ```csharp
     using Microsoft.EntityFrameworkCore;
@@ -53,7 +53,7 @@ In this exercise, you'll add packages to support database functionality, connect
 
     This class creates a database context we can use to register a database service. The context also allows us to have a controller that accesses the database.
 
-1. Save your changes.
+1. Save your changes with <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 
 ## Add a controller
 
@@ -199,7 +199,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
     This change creates a database scope with the `PizzaStoreContext`. If there isn't a database already created, it calls the `SeedData` static class to create one.
 
-1. At the moment, the app doesn't work because we haven't initialized the `PizzaStoreContext`. In the `Add Services to the container` section higher in the *Program.cs* file, add this code under the current services (the lines that start `builder.Services.`):
+1. At the moment, the app doesn't work because the `PizzaStoreContext` isn't initialized yet. In the *Program.cs* file, add this code under the current services (the lines that start `builder.Services.`):
 
     ```csharp
       builder.Services.AddHttpClient();
@@ -224,7 +224,7 @@ We can now replace the hard-coded pizza in the **Index.razor** page.
     ```
 
     > [!NOTE]
-    > This code has replaced `OnInitialized()` with `OnInitializedAsync()`. Specials are now going to be returned as JSON from the app asynchronously.
+    > This code replaces `OnInitialized()` with `OnInitializedAsync()`. Specials are now going to be returned as JSON from the app asynchronously.
 
 1. There are some errors that you need to fix. Add these `@inject` statements under the `@page` directive:
 
@@ -239,7 +239,7 @@ We can now replace the hard-coded pizza in the **Index.razor** page.
 
 1. Remember that the app should be creating JSON at `(http://localhost:5000/specials)`. Go to that URL.
 
-   The app doesn't know how to route this request. You'll learn about routing in the module on Blazor routing. Let's fix the error now.
+   The app doesn't know how to route this request. You learn about routing in the module on Blazor routing. Let's fix the error now.
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd>, or select **Stop Debugging**.
 1. In the file explorer, select **Program.cs**.
 1. Around the middle of the file, after the lines that start `app.`, add this endpoint:

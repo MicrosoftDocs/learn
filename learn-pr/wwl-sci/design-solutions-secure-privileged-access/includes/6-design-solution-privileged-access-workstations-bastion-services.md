@@ -1,76 +1,84 @@
-This unit looks at design considerations for privileged access workstations and bastion services.
+As a security architect, you need to design solutions that protect the devices and pathways used for privileged access. A compromised administrative workstation can undermine every other security control in your environment. This unit covers design considerations for Privileged Access Workstations (PAW) and secure remote access solutions.
 
-## Privileged access workstations
+## Design principles for privileged access devices
 
-The article provides an overview of security controls to provide a secure workstation for sensitive users throughout its lifecycle. 
+When designing privileged access device strategies, apply these principles:
 
-![Diagram that shows a workflow to acquire and deploy a secure workstation.](../media/secure-workstation-deployment-flow.png)
+**Isolate privileged activities**: Separate administrative tasks from standard productivity activities like email and web browsing. These common attack vectors shouldn't exist on devices used for sensitive operations.
 
-This solution relies on core security capabilities in the Windows 10 operating system, Microsoft Defender for Endpoint, Microsoft Entra ID, and Microsoft Intune.
+**Establish hardware trust**: Base your security on hardware-rooted trust using Trusted Platform Module (TPM), Secure Boot, and device attestation. Software-only protections can be bypassed by sophisticated attackers.
 
-### Who benefits from a secure workstation?
+**Layer protections progressively**: Not all administrative tasks require the same protection level. Design device tiers that match security controls to the sensitivity of the tasks performed.
 
-All users and operators benefit from using a secure workstation. An attacker who compromises a PC or device can impersonate or steal credentials/tokens for all accounts that use it, undermining many or all other security assurances. If administrator or sensitive accounts are compromised, it allows attackers to escalate privileges and increase the access they have in your organization. Often, escalating dramatically to domain, global, or enterprise administrator privileges.
+**Assume compromise of standard devices**: Treat non-hardened devices as potentially compromised. Design your architecture so that attackers who compromise a standard workstation can't pivot to privileged systems.
 
-### Device Security Controls
+## Privileged Access Workstation architecture
 
-The successful deployment of a secure workstation requires it to be part of an end to end approach including devices, accounts, intermediaries, and security policies applied to your application interfaces. All elements of the stack must be addressed for a complete privileged access security strategy.
+A [Privileged Access Workstation (PAW)](/security/privileged-access-workstations/privileged-access-devices) is a hardened workstation configured specifically for sensitive administrative tasks. PAWs protect high-value accounts by providing a trusted device isolated from common attack vectors.
 
-This table summarizes the security controls for different device levels:
+When designing your PAW strategy, consider three device security profiles that progressively increase protection. The table that follows provides recommended guidance, for some security controls, across those profiles:
 
-| Profile | Enterprise | Specialized | Privileged |
-| :---: | :---: | :---: |:---: |
-| Microsoft Endpoint Manager (MEM) managed | Yes | Yes | Yes | 
-| Deny BYOD Device enrollment | No | Yes | Yes |
-| MEM security baseline applied | Yes | Yes | Yes |
+| Security control | Enterprise | Specialized | Privileged |
+|------------------|:----------:|:-----------:|:----------:|
+| Intune managed | Yes | Yes | Yes |
+| Deny BYOD enrollment | No | Yes | Yes |
+| Security baseline applied | Yes | Yes | Yes |
 | Microsoft Defender for Endpoint | Yes | Yes | Yes |
-| Join personal device via Autopilot | Yes | Yes | No |
-| URLs restricted to approved list | Allow Most | Allow Most | Deny Default |
-| Removal of admin rights |  | Yes | Yes |
-| Application execution control (AppLocker)|  | Audit -> Enforced | Yes |
-| Applications installed only by MEM | | Yes | Yes |
+| Local admin rights removed | No | Yes | Yes |
+| Application control (AppLocker/WDAC) | No | Audit | Enforced |
+| Applications installed only by IT | No | Yes | Yes |
+| Web browsing restricted | Allow most | Allow most | Deny default |
 
-At all levels, Intune policies enforce good security maintenance hygiene for security updates. As the device security level increases, the attack surface is reduced while preserving as much user productivity as possible. Enterprise and specialized level devices allow productivity applications and general web browsing, but privileged access workstations don't. Enterprise users may install their own applications, but specialized users may not (and aren't local administrators of their workstations). 
+**Enterprise devices** provide baseline security for general users. **Specialized devices** remove local admin rights and restrict application installation for roles handling sensitive data. **Privileged Access Workstations** implement the strictest controls—blocking email, web browsing, and all non-essential applications—for administrators of critical systems.
 
-#### Hardware root of trust
+> [!IMPORTANT]
+> PAW users require separate accounts and often separate devices for productivity tasks. While this adds operational overhead, it's essential for protecting accounts that could compromise your entire environment.
 
-Essential to a secured workstation is a supply chain solution where you use a trusted workstation called the *root of trust*. Technology that must be considered in the selection of the root of trust hardware should include the following technologies included in modern laptops: 
+### Design decisions for PAW deployment
 
-* [Trusted Platform Module (TPM) 2.0](/windows-hardware/design/device-experiences/oem-tpm)
-* [BitLocker Drive Encryption](/windows-hardware/design/device-experiences/oem-bitlocker)
-* [UEFI Secure Boot](/windows-hardware/design/device-experiences/oem-secure-boot)
-* [Drivers and Firmware Distributed through Windows Update](/windows-hardware/drivers/dashboard/understanding-windows-update-automatic-and-optional-rules-for-driver-distribution)
-* [Virtualization and HVCI Enabled](/windows-hardware/design/device-experiences/oem-vbs)
-* [Drivers and Apps HVCI-Ready](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard)
-* [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-biometric-requirements)
-* [DMA I/O Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
-* [System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
-* [Modern Standby](/windows-hardware/design/device-experiences/modern-standby)
+When architecting your PAW solution, evaluate these options:
 
-For this solution, root of trust is deployed using [Windows Autopilot](/mem/autopilot/windows-autopilot) technology with hardware that meets the modern technical requirements. To secure a workstation, Autopilot lets you use Microsoft OEM-optimized Windows 10 devices. These devices come in a known good state from the manufacturer. Instead of reimaging a potentially insecure device, Autopilot can transform a Windows 10 device into a “business-ready” state. It applies settings and policies, installs apps, and changes the edition of Windows 10.
+| Decision | Options | Considerations |
+|----------|---------|----------------|
+| **Physical vs. virtual** | Dedicated hardware or Azure Virtual Desktop | Physical provides stronger isolation; virtual offers centralized management |
+| **Scope** | All admins or tiered by role criticality | Start with Tier 0 (identity/domain admins), expand based on risk |
+| **Provisioning** | Windows Autopilot or manual build | Autopilot ensures consistent, trusted device state from OEM |
+| **Application delivery** | Intune or Configuration Manager | Cloud-native management simplifies policy enforcement |
 
-![Diagram that shows secure workstation levels.](../media/supply-chain.png)
+## Design for secure remote access
 
-### Device roles and profiles
+Remote privileged access requires protecting the communication channel and the endpoint. Design your remote access solution using these Zero Trust principles:
 
-This guidance shows how to harden Windows 10 and reduce the risks associated with device or user compromise. To take advantage of the modern hardware technology and root of trust device, the solution uses [Device Health Attestation](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643). This capability is present to ensure the attackers can't be persistent during the early boot of a device. It does so by using policy and technology to help manage security features and risks.
+**Verify explicitly**: Require phishing-resistant authentication (FIDO2 security keys or certificate-based authentication) for all remote privileged sessions. Validate device health and compliance before granting access. Use Conditional Access to evaluate risk signals continuously.
 
-![Diagram that shows secure workstation profiles.](../media/secure-workstation-levels.png)
+**Use least privilege**: Grant remote access only to specific resources needed for the administrative task. Implement time-limited sessions that automatically terminate. Require just-in-time activation through PIM rather than standing remote access permissions.
 
-* **Enterprise Device** –  The first managed role is good for home users, small business users, general developers, and enterprises where organizations want to raise the minimum security bar. This profile permits users to run any applications and browse any website, but an anti-malware and endpoint detection and response (EDR) solution like [Microsoft Defender for Endpoint](/windows/security/threat-protection/) is required. A policy-based approach to increase the security posture is taken. It provides a secure means to work with customer data while also using productivity tools like email and web browsing. Audit policies and Intune allow you to monitor an Enterprise workstation for user behavior and profile usage. 
+**Assume breach**: Segment networks so that compromised remote sessions can't pivot to other resources. Monitor all remote session activity and alert on anomalies. Record privileged sessions for forensic analysis.
 
-The enterprise security profile in the privileged access deployment guidance uses JSON files to configure the profile with Windows 10 and the provided JSON files.
+The following Microsoft solutions help you implement these principles.
 
-* **Specialized Device** – This managed role represents a significant step-up from enterprise usage by removing the ability to self-administer the workstation and limiting which applications may run to only the applications installed by an authorized administrator (in the program files and preapproved applications in the user profile location. Removing the ability to install applications may affect productivity if implemented incorrectly. So, ensure that you have provided access to Microsoft store applications or corporate managed applications that can be rapidly installed to meet users needs.
+### Azure Bastion for Azure resources
 
-  * The Specialized security user demands a more controlled environment while still being able to do activities such as email and web browsing in a simple-to-use experience. These users expect features such as cookies, favorites, and other shortcuts to work. But, they don't require the ability to modify or debug their device operating system, install drivers, or do similar tasks.
+[Azure Bastion](/azure/bastion/bastion-overview) provides secure RDP and SSH connectivity to Azure virtual machines without exposing public IP addresses. When designing Bastion deployments:
 
-The specialized security profile in the privileged access deployment guidance uses JSON files to configure the profile with Windows 10 and the provided JSON files. 
+- **Select the Standard SKU** for production workloads—it supports native client connections, custom ports, and session recording
+- **Deploy zone-redundant** configurations for availability requirements
+- **Enable session recording** to maintain audit trails of privileged sessions
+- **Integrate with PIM** to require just-in-time role activation before granting remote access
+- **Restrict source IPs** using Network Security Groups on the Bastion subnet
 
-* **Privileged Access Workstation (PAW)** – The highest security configuration designed for sensitive roles that would have a significant or material impact on the organization if their account was compromised. The PAW configuration includes security controls and policies that restrict local administrative access. It includes productivity tools that minimize the attack surface to only what is required for performing sensitive job tasks. 
-This configuration makes the PAW device difficult for attackers to compromise because it blocks the most common vector for phishing attacks: email and web browsing. 
-To provide productivity to these users, separate accounts and workstations must be provided for productivity applications and web browsing. While inconvenient, this control is necessary to protect users whose account could inflict damage to most or all resources in the organization.
+### Virtual desktop for privileged access
 
-  * A Privileged workstation provides a hardened workstation that has clear application control and application guard. The workstation uses credential guard, device guard, app guard, and exploit guard to protect the host from malicious behavior. All local disks are encrypted with BitLocker and web traffic is restricted to a limit set of permitted destinations (Deny all).
+For organizations requiring centralized management, Azure Virtual Desktop or Windows 365 can host privileged access sessions:
 
-The privileged security profile in the privileged access deployment guidance uses JSON files to configure the profile with Windows 10 and the provided JSON files.
+- Create **dedicated host pools** for privileged users separate from general workforce pools
+- Configure **single-session hosts** for privileged access to prevent session isolation issues
+- Apply **Conditional Access policies** requiring compliant PAW devices and specific network locations
+- Implement **session timeouts** appropriate to the security level
+
+> [!TIP]
+> Combine virtual desktop solutions with physical PAWs for defense in depth. Users connect from a hardened PAW to a managed virtual desktop, providing two layers of isolation from potentially compromised environments.
+
+## Integrating privileged access components
+
+The components covered in this unit work together to create layered protection. Hardened endpoints (PAWs) ensure administrators work from trusted devices. Secure connectivity solutions (Azure Bastion, virtual desktops) protect the communication channel to target resources. Continuous verification through Conditional Access and PIM validates identity, device health, and authorization at every step. When you design your privileged access architecture, consider how these layers reinforce each other—a weakness in any single layer shouldn't compromise the entire system.

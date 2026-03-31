@@ -6,6 +6,7 @@ metadata:
   author: yoosunee
   ms.author: andreapark
   ms.date: 01/29/2024
+  ms.update-cycle: 180-days
   ms.topic: learning-path
   ms.collection:
     - philanthropies-ai-copilot
@@ -23,7 +24,7 @@ roles:
 - data-engineer
 - school-leader
 products:
-- ai-services
+- foundry-tools
 - azure-machine-learning
 - azure-machine-learning-designer
 - m365-apps

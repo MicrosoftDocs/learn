@@ -1,0 +1,5 @@
+In this module, you explored how Windows Server 2025 helps IT professionals modernize infrastructure and prepare for the future. You learned how security and resiliency features—like secured-core server, rebootless updates, and advanced identity protection—create a stronger foundation against evolving threats. 
+
+You saw how hybrid capabilities extend cloud innovation on-premises through Azure Arc, backup and recovery, and unified monitoring tools. You also discovered how performance enhancements such as GPU partitioning, scalable compute, and software-defined datacenter features support today’s demanding workloads. Finally, you looked ahead to future innovation, from modern app development and advanced analytics to flexible licensing options. Together, these capabilities give organizations the tools to stay secure, agile, and competitive in a world where hybrid cloud and AI are reshaping what’s possible.
+
+Which of these areas—security, hybrid management, performance, or future innovation—would have the biggest impact if you applied it in your organization today?

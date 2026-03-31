@@ -3,7 +3,7 @@ Azure Key Vault provides secure storage and management of sensitive data, such a
 In this lab, learn how you can integrate Azure Key Vault with Azure Pipelines.
 
 > [!NOTE]
-> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free). You will also need to [validate your lab environment](https://aka.ms/mslearn-implement-security-through-pipeline-validate-lab-environment) to complete this lab.
+> To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). You will also need to [validate your lab environment](https://aka.ms/mslearn-implement-security-through-pipeline-validate-lab-environment) to complete this lab.
 
 Launch the exercise and follow the instructions.
 

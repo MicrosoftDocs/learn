@@ -1,25 +1,23 @@
-A quality gate is the best way to enforce a quality policy in your organization. It's there to answer one question: can I deliver my application to production or not?
+Quality gates enforce organizational quality policies and determine production readiness through automated validation criteria.
 
-A quality gate is located before a stage that is dependent on the outcome of a previous stage. A quality gate was typically something that a QA department monitored in the past.
+Quality gates are positioned before stages that depend on previous stage outcomes. Traditional quality assurance departments monitored these gates manually using documentation and guidelines to verify software quality standards before progression.
 
-They had several documents or guidelines, and they verified if the software was of a good enough quality to move on to the next stage.
+Continuous Delivery identifies manual processes as potential bottlenecks requiring automation.
 
-When we think about Continuous Delivery, all manual processes are a potential bottleneck.
+Quality gates must evolve from manual validation to automated pipeline checks that maintain quality standards without human intervention.
 
-We need to reconsider the notion of quality gates and see how we can automate these checks as part of our release pipeline.
+Automated release gates validate organizational policies and enable seamless pipeline progression based on predefined criteria.
 
-By using automatic approval with a release gate, you can automate the approval and validate your company's policy before moving on.
+Common quality gate implementations include:
 
-Many quality gates can be considered.
+- Zero new blocker issues
+- Code coverage exceeding 80% on new code
+- No license violations detected
+- No dependency vulnerabilities identified
+- Technical debt metrics maintained or improved
+- Performance benchmarks preserved post-release
+- Compliance validations:
+  - Work item linkage verification
+  - Segregation of duties validation (different committer and releaser)
 
- -  No new blocker issues.
- -  Code coverage on new code greater than 80%.
- -  No license violations.
- -  No vulnerabilities in dependencies.
- -  No further technical debt was introduced.
- -  Is the performance not affected after a new release?
- -  Compliance checks
-     -  Are there work items linked to the release?
-     -  Is the release started by someone else as the one who commits the code?
-
-Defining quality gates improves the release process, and you should always consider adding them.
+Quality gate implementation enhances release reliability and should be integrated into all deployment pipelines.

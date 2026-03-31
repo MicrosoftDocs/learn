@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-onpremises-workloads-migration-azure.choose-your-migration-approach
 title: Choose your migration approach
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose your migration approach
   description: "Choose your migration approach"
   ms.date: 09/25/2020
@@ -38,4 +36,4 @@ quiz:
       explanation: "All three are features of agentless migration."
     - content: "Systems continue to run during migration, providing dependency information between on-premises VMs, but increase overhead of keeping agents updated."
       isCorrect: false
-      explanation: "All three describe features of agent-based, not agentless migration."
+      explanation: "All three describe features of agent-based, not agentless migration."

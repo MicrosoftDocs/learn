@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-understand-performance-issues-related-to-tables
 title: Exercise - Understand performance issues related to tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Understand performance issues related to tables
   description: "Exercise - Understand performance issues related to tables"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-exercise-understand-performance-issues-related-to-tables.md)]
+  [!include[](includes/3-exercise-understand-performance-issues-related-to-tables.md)]

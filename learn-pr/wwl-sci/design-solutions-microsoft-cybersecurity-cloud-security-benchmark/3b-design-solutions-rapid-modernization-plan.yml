@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-rapid-modernization-plan
+title: Design solutions that align with the Zero Trust adoption framework
+metadata:
+  title: Design solutions that align with the Zero Trust adoption framework
+  description: "SC-100 preparatory content on topic: Design solutions that align with the Zero Trust adoption framework."
+  ms.date: 02/24/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3b-design-solutions-rapid-modernization-plan.md)]

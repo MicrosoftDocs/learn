@@ -6,7 +6,7 @@ Mitigation of potential harms in a generative AI solution involves a layered app
 
 1. **Model**
 1. **Safety System**
-1. **Metaprompt and grounding**
+1. **System message and grounding**
 1. **User experience**
 
 ## 1: The *model* layer
@@ -15,20 +15,20 @@ The model layer consists of one or more generative AI models at the heart of you
 
 Mitigations you can apply at the model layer include:
 
-- Selecting a model that is appropriate for the intended solution use. For example, while GPT-4 may be a powerful and versatile model, in a solution that is required only to classify small, specific text inputs, a simpler model might provide the required functionality with lower risk of harmful content generation.
+- Selecting a model that's appropriate for the intended solution use. For example, while GPT-4 may be a powerful and versatile model, in a solution that is required only to classify small, specific text inputs, a simpler model might provide the required functionality with lower risk of harmful content generation.
 - *Fine-tuning* a foundational model with your own training data so that the responses it generates are more likely to be relevant and scoped to your solution scenario.
 
 ## 2: The *safety system* layer
 
-The safety system layer includes platform-level configurations and capabilities that help mitigate harm. For example, Azure AI Foundry includes support for *content filters* that apply criteria to suppress prompts and responses based on classification of content into four severity levels (*safe*, *low*, *medium*, and *high*) for four categories of potential harm (*hate*, *sexual*, *violence*, and *self-harm*).
+The safety system layer includes platform-level configurations and capabilities that help mitigate harm. For example, Microsoft Foundry includes support for *guardrails* that apply criteria to suppress prompts and responses based on *content filters* that classify content into four severity levels (*safe*, *low*, *medium*, and *high*) for five categories of potential harm (*hate and fairness*, *sexual*, *violence*, *self-harm*, and *task-adherence*).
 
-Other safety system layer mitigations can include abuse detection algorithms to determine if the solution is being systematically abused (for example through high volumes of automated requests from a bot) and alert notifications that enable a fast response to potential system abuse or harmful behavior.
+Other safety system layer mitigations in Foundry guardrails include *prompt shields* that use abuse detection algorithms to determine if the solution is being systematically abused (for example by a user attempting to subvert the system prompt).
 
-## 3: The *metaprompt and grounding* layer
+## 3: The *system message and grounding* layer
 
-The metaprompt and grounding layer focuses on the construction of prompts that are submitted to the model. Harm mitigation techniques that you can apply at this layer include:
+This layer focuses on the construction of prompts that are submitted to the model. Harm mitigation techniques that you can apply at this layer include:
 
-- Specifying *metaprompts* or system inputs that define behavioral parameters for the model.
+- Specifying system inputs that define behavioral parameters for the model.
 - Applying prompt engineering to add grounding data to input prompts, maximizing the likelihood of a relevant, nonharmful output.
 - Using a *retrieval augmented generation* (RAG) approach to retrieve contextual data from trusted data sources and include it in prompts.
 

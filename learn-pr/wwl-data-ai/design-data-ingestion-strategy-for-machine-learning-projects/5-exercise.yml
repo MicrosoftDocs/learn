@@ -2,13 +2,11 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.exercise
 title: 'Exercise: Design a data ingestion strategy'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Exercise: Design a data ingestion strategy"
   description: "Exercise: Design a data ingestion strategy"
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/20/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

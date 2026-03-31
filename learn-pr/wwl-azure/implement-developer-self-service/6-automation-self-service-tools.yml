@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-developer-self-service.automation-self-service-tools
 title: Automation and Self-Service Tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Automation and Self-Service Tools
   description: "Automation and Self-Service Tools"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-automation-self-service-tools.md)]
+  [!include[](includes/6-automation-self-service-tools.md)]

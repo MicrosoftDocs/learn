@@ -8,9 +8,13 @@ Your list of design and feature goals is:
 
 You decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+[!INCLUDE[](../../../includes/azure-optional-exercise-create-resource-group-note.md)]
+
 ## Create a storage account using Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 1. On the resource menu, or from the **Home** page, select **Storage accounts**. The **Storage accounts** pane appears.
 
@@ -21,8 +25,8 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
     | Setting | Value |
     | ---- | ---- |
     | **Project details**| |
-    | Subscription | Concierge Subscription |
-    | Resource group | <rgn>[sandbox resource group name]</rgn> from the dropdown list. |
+    | Subscription | Choose your subscription. |
+    | Resource group | Choose your resource group name from the dropdown list. |
     | **Instance details**| |
     | Storage account name | Enter a unique name. This name is used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. |
     | Region | Select a location near to you from the dropdown list. |

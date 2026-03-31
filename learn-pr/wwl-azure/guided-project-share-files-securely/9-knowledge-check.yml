@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-share-files-securely.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can you instantly revoke all SAS tokens generated from a stored access policy?"
+    choices:
+    - content: "Regenerate the storage account access keys."
+      isCorrect: false
+      explanation: "Regenerating access keys revokes all SAS tokens on the account, not just the ones from a specific policy. This is a broader action than needed."
+    - content: "Delete the stored access policy."
+      isCorrect: true
+      explanation: "Deleting the stored access policy immediately invalidates all SAS tokens that reference it, providing targeted revocation."
+    - content: "Set the SAS token expiry to a past date."
+      isCorrect: false
+      explanation: "You cannot modify an already-issued SAS token. The token is a signed URL that cannot be changed after generation."
+  - content: "What determines the permissions and expiry of a policy-based SAS token?"
+    choices:
+    - content: "The storage account access tier"
+      isCorrect: false
+      explanation: "The access tier controls storage costs and retrieval speed, not SAS token permissions."
+    - content: "The stored access policy"
+      isCorrect: true
+      explanation: "A stored access policy defines the permissions, start time, and expiry for all SAS tokens generated from it."
+    - content: "The container's public access level"
+      isCorrect: false
+      explanation: "The public access level controls anonymous access. SAS permissions are controlled by the policy or the SAS parameters."
+  - content: "What does a lifecycle management rule do for blob storage?"
+    choices:
+    - content: "Moves blobs between storage accounts automatically."
+      isCorrect: false
+      explanation: "Lifecycle management rules operate within a single storage account. They do not move blobs between accounts."
+    - content: "Backs up blobs to a secondary region."
+      isCorrect: false
+      explanation: "Geo-redundant storage handles regional replication, not lifecycle management rules."
+    - content: "Automatically deletes or moves blobs based on age or conditions."
+      isCorrect: true
+      explanation: "Lifecycle management rules can automatically delete, move to cool storage, or move to archive storage based on the age of the blob."

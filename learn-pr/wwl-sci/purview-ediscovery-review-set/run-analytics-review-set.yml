@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-review-set.run-analytics-review-set
+title: Run analytics on review sets
+metadata:
+  title: Run analytics on review sets
+  description: "Run analytics on review sets."
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/run-analytics-review-set.md)]

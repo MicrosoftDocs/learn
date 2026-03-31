@@ -5,8 +5,8 @@ metadata:
   title: Use commands in a viewmodel
   description: "Use commands to trigger app logic in the viewmodel."
   ms.date: 01/08/2025
-  author: adegeo
-  ms.author: adegeo
+  author: jamesmontemagno
+  ms.author: masoucou
   ms.topic: unit
   
 durationInMinutes: 5

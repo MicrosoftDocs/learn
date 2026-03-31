@@ -6,15 +6,15 @@ You can use the **Get-Command** cmdlet with the *-Noun* parameter to review a li
 
 | **Verb** | **Description**                                              |
 | -------- | ------------------------------------------------------------ |
-| New      | Creates a new item or item property.                        |
-| Set      | Sets the value of an item or item property.                   |
-| Get      | Displays properties of an item or child item, or value of an item property. |
-| Clear    | Clears the value of an item or item property.                 |
-| Copy     | Copies an item or item property from one location to another. |
-| Move     | Moves an item or item property from one location to another. |
-| Remove   | Deletes an item or item property.                             |
-| Rename   | Renames an item or item property.                             |
-| Invoke   | Performs the default action that's associated with an item.  |
+| :::no-loc text="New":::      | Creates a new item or item property.                        |
+| :::no-loc text="Set":::      | Sets the value of an item or item property.                   |
+| :::no-loc text="Get":::      | Displays properties of an item or child item, or value of an item property. |
+| :::no-loc text="Clear":::    | Clears the value of an item or item property.                 |
+| :::no-loc text="Copy":::     | Copies an item or item property from one location to another. |
+| :::no-loc text="Move":::     | Moves an item or item property from one location to another. |
+| :::no-loc text="Remove":::   | Deletes an item or item property.                             |
+| :::no-loc text="Rename":::   | Renames an item or item property.                             |
+| :::no-loc text="Invoke":::   | Performs the default action that's associated with an item.  |
 
 The items in the various PowerShell drives behave differently. Although these commands work in all PowerShell drives, how the verbs act on the items in each PowerShell drive might vary. Additionally, other commands might work with those items. The other topics in this module describe how to work with specific PowerShell drives.
 
@@ -37,6 +37,6 @@ In addition to the commands for working with PowerShell drive items and item pro
 | **Pop-Location**  | Changes the current location to the location at the top of a location stack. |
 
 > [!NOTE]
-> The **Push-Location** and **Pop-Location** cmdlets are the equivalent of the **pushd** and **popd** commands in the Windows Commamd Prompt (**cmd.exe**) console. In PowerShell, **pushd** and **popd** are aliases for those cmdlets.
+> The **Push-Location** and **Pop-Location** cmdlets are the equivalent of the **pushd** and **popd** commands in the Windows Command Prompt (**cmd.exe**) console. In PowerShell, **pushd** and **popd** are aliases for those cmdlets.
 
 > **Additional reading:** For more information about location stacks, refer to [Push-Location](https://aka.ms/idat4p).

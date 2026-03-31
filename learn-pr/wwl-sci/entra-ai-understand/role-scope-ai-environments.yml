@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-understand.role-scope-ai-environments
+title: Role assignments and scope in AI environments
+metadata:
+  title: Role assignments and scope in AI environments
+  description: "Role assignments and scope in AI environments."
+  ms.date: 2/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/role-scope-ai-environments.md)]

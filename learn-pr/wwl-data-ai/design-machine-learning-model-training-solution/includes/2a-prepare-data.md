@@ -19,16 +19,6 @@ First, you need to identify your data source and its current data format.
 
 Then, you need to decide what data you need to train your model, and in what format you want that data to be served to the model.
 
-## Choose how to serve data
-
-To access data when training machine learning models, you want to serve the data by storing it in a cloud data service. By storing data *separately from your compute*, you minimize costs and are more flexible. It’s a best practice to store your data in one tool, which is separate from another tool you use to train your models.
-
-Which tool or service is best to store your data depends on the data you have and the service you use for model training. Some commonly used options on Azure are:
-
-- **Azure Blob Storage**: Cheapest option for storing data as unstructured data. Ideal for storing files like images, text, and JSON. Often also used to store data as CSV files, as data scientists prefer working with CSV files.
-- **Azure Data Lake Storage** (Gen 2): A more advanced version of the Azure Blob Storage. Also stores files like CSV files and images as unstructured data. A data lake also implements a hierarchical namespace, which means it’s easier to give someone access to a specific file or folder. Storage capacity is virtually limitless so ideal for storing large data.
-- **Azure SQL Database**: Stores data as structured data. Data is read as a table and schema is defined when a table in the database is created. Ideal for data that doesn’t change over time.
-
 ## Design a data ingestion solution
 
 In general, it’s a best practice to extract data from its source before analyzing it. Whether you’re using the data for data engineering, data analysis, or data science, you want to extract the data from its source, transform it, and load it into a serving layer. Such a process is also referred to as **Extract**, **Transform**, and **Load** (**ETL**) or **Extract**, **Load**, and **Transform** (**ELT**). The serving layer makes your data available for the service you use for further data processing like training machine learning models.
@@ -55,3 +45,5 @@ For example, to create a dataset you can use to train the forecasting model, you
 1. Extract data measurements as JSON objects from the IoT devices.
 1. Convert the JSON objects to a table.
 1. Transform the data to get the temperature per machine per minute.
+
+Next, let's explore the services we can use to train machine learning models.

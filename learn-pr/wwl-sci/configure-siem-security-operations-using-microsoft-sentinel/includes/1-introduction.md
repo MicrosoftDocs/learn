@@ -8,3 +8,4 @@ After completing this module, you'll be able to:
 - Deploy Microsoft Sentinel Content Hub solutions and data connectors
 - Configure Microsoft Sentinel Data Collection rules, NRT Analytic rule and Automation
 - Perform a simulated attack to validate Analytic and Automation rules
+- Connect Microsoft Sentinel to Microsoft Defender XDR.

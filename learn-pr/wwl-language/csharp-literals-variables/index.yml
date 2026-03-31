@@ -3,7 +3,7 @@ uid: learn.languages.csharp-literals-variables
 metadata:
   title: Store and retrieve data using literal and variable values in C#
   description: "Use data in your applications by creating literal values and variable values of different data types."
-  ms.date: 01/17/2025
+  ms.date: 11/10/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module

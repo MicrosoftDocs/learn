@@ -1,8 +1,8 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You chose Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
+Your company is looking at ways to deploy your cloud-based video rendering service. You chose Azure Kubernetes Service (AKS) as your cloud-native development platform. After the cluster is configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
 
 Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
-Assume you're using an Azure virtual machine (VM) as your target platform. The first step is to prepare the server software to host the application. You will:
+Assume you're using an Azure virtual machine (VM) as your target platform. The first step is to prepare the server software to host the application. You do the following tasks:
 
 - Install the operating system.
 - Make sure to update the OS to the latest security and software patches.
@@ -14,8 +14,6 @@ Repeat this process for each new VM when you decide to scale the website out to 
 An alternative approach is to run the website on a container-based platform like Azure Container Instances. You don't need to worry about the underlying server technology, but you have to configure and manage several containers to use this strategy manually.
 
 Kubernetes and AKS help you orchestrate containers. The Kubernetes container orchestration features make it easy to manage workloads on the cluster. You deploy workloads by using containers built from container images to run your applications within an AKS cluster.
-
-Here you can explore how to create workloads in your AKS cluster.
 
 ## What is a container registry?
 
@@ -31,7 +29,7 @@ Kubernetes only allows you to deploy images hosted in a container registry. Crea
 
 ## What is a Kubernetes pod?
 
-A Kubernetes *pod* groups containers and applications into a logical structure. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
+A Kubernetes _pod_ groups containers and applications into a logical structure. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
 
 For example, if you wanted to search all workloads related to the `contoso-website`, you'd query the cluster for pods with the label `app` and the value `contoso-website`.
 
@@ -70,7 +68,7 @@ The `apiVersion` key defines the API server endpoint that manages the object you
 
 The `kind` key defines the workload this deployment creates.
 
-Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources *must* have a name. This name goes inside the `metadata` key.
+Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources _must_ have a name. This name goes inside the `metadata` key.
 
 ```yaml
 apiVersion: apps/v1
@@ -95,7 +93,7 @@ spec:
 # ...
 ```
 
-From this point on, all files have different structures based on what kind of resource you're telling Kubernetes to create.
+From this point on, all files have different structures based on what kind of resource you want to create.
 
 ## Apply a deployment file
 

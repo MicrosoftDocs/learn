@@ -1,0 +1,3 @@
+A user triggered an anomalous sign-in alert, and you needed to investigate whether it represented a legitimate security threat. In this module, you learned how to use Microsoft Security Copilot to summarize alerts, gather related activity, analyze patterns, and document your findings with recommended next steps.
+
+Without Copilot, investigating alerts can be time-consuming and labor-intensive, requiring manual review of logs and activity across multiple sources. By using Security Copilot, you can streamline investigations, act more quickly and confidently, and produce structured, actionable reports. This not only saves time but also improves consistency and accuracy in responding to potential security threats.

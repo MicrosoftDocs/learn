@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.examine-spec-driven-development-workflow-phases
+title: "Examine spec-driven development workflow phases"
+metadata:
+  title: "Examine Spec-Driven Development Workflow Phases"
+  description: "Examine spec-driven development workflow phases."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-examine-spec-driven-development-workflow-phases.md)]

@@ -3,7 +3,7 @@ In this exercise, you create an alert from your activity log data, and then you 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and alerts.
 >
-> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 
 ## Create an alert from your activity log data
 

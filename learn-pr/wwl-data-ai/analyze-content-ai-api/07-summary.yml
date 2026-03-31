@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai-api.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Reflect on what you've learned about developing an Azure Content Understanding client application.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/11/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/07-summary.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.mongodb-api-indexes
 title: Azure Cosmos DB for MongoDB indexes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Cosmos DB for MongoDB indexes
   description: "Azure Cosmos DB for MongoDB indexes"
   ms.date: 12/28/2022
@@ -19,4 +17,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-azure-cosmos-db-mongodb-indexes.md)]
-
+

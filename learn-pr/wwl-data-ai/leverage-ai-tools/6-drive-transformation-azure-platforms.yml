@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.6-drive-transformation-azure-platforms
+title: "Drive transformation with Azure cloud and AI platforms"
+metadata:
+  title: "Drive Transformation with Azure Cloud and AI Platforms"
+  description: "Learn how Azure platforms unify data, modernize IT infrastructure, and deliver AI-powered applications to accelerate transformation securely."
+  ms.date: 11/03/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-drive-transformation-azure-platforms.md)]

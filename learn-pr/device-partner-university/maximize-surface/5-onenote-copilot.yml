@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-microsoft-365.onenote-copilot
+title: Collaborating in OneNote and Microsoft Teams on Surface
+metadata:
+  title: Collaborating in OneNote and Microsoft Teams on Surface
+  description: This content is part of the "Maximize Microsoft 365 with Surface for Business" module.
+  ms.date: 12/05/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-onenote-copilot.md)]

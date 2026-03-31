@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.exercise
+title: Exercise - Select, deploy, and evaluate models
+metadata:
+  title: Exercise - Select, deploy, and evaluate models
+  description: Practice selecting, deploying, and evaluating models in Microsoft Foundry portal.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise.md)]

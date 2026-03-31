@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-network-traffic-flow-with-routes.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 12/02/2024
@@ -13,4 +11,4 @@ title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

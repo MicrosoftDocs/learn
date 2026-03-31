@@ -1,25 +1,25 @@
-After you've deployed your web app or website to any server, you can set up tests to monitor its availability and responsiveness.
+Post-deployment availability monitoring ensures continuous application accessibility and performance validation through automated testing mechanisms.
 
-It's helpful to check if your application is still running and gives a healthy response.
+Application health verification requires systematic monitoring to detect service degradation, connection failures, and performance anomalies.
 
-Some applications have specific Health endpoints that an automated process can check. The Health endpoint can be an HTTP status or a complex computation that uses and consumes crucial parts of your application.
+Health endpoints provide standardized interfaces for automated monitoring systems. These endpoints range from simple HTTP status responses to comprehensive system validation that exercises critical application components.
 
-For example, you can create a Health endpoint that queries the database. This way, you can check that your application is still accessible, but also the database connection is verified.
+Database connectivity validation through health endpoints enables simultaneous verification of application accessibility and backend system integration, providing comprehensive system health assessment.
 
-You can create your framework to create availability tests (ping test) or use a platform that can do it for you.
+Availability testing implementation offers two approaches: custom framework development for ping tests or leveraging managed platform services for comprehensive monitoring.
 
-Azure has the functionality to develop Availability tests. You can use these tests in the pipeline and as release gates.
+Azure Application Insights provides native availability testing capabilities that integrate seamlessly with deployment pipelines and release gate configurations.
 
-In Azure, you can set up availability tests for any HTTP or HTTPS endpoint accessible from the public internet.
+Azure availability tests support any publicly accessible HTTP or HTTPS endpoint without requiring application modifications or instrumentation code.
 
-You don't have to add anything to the website you're testing. It doesn't even have to be your site: you could try a REST API service you depend on.
+External service dependency monitoring enables validation of third-party REST APIs and services critical to application functionality, extending availability coverage beyond internal systems.
 
-There are two types of availability tests:
+Azure availability testing supports two distinct test types:
 
- -  URL ping test: a simple test that you can create in the Azure portal. You can check the URL and check the response and status code of the response.
- -  Multi-step web test: Several HTTP calls that are executed in sequence.
+- **URL ping test:** Simple endpoint validation through Azure portal configuration, verifying URL accessibility and HTTP response status codes.
+- **Multi-step web test:** Complex scenario validation executing sequential HTTP requests to simulate user workflows and business processes.
 
 For more information, see also:
 
- -  [Creating an Application Insights Web Test and Alert Programmatically](https://azure.microsoft.com/blog/creating-a-web-test-alert-programmatically-with-application-insights/).
- -  [Monitor the availability of any website](/azure/application-insights/app-insights-monitor-web-app-availability).
+- [Creating an Application Insights Web Test and Alert Programmatically](https://azure.microsoft.com/blog/creating-a-web-test-alert-programmatically-with-application-insights/).
+- [Monitor the availability of any website](/azure/application-insights/app-insights-monitor-web-app-availability).

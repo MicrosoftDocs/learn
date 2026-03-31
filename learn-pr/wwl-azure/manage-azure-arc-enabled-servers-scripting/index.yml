@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-arc-enabled-servers-scripting
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Azure Arc-enabled servers by using scripting
   description: "This module covers the topic of enabling Azure Arc for Windows or Linux machines in your environment. Enabling Arc-enabled servers is done either manually or by using an automated method with a provided template script."
   ms.date: 02/14/2025
@@ -24,7 +22,7 @@ abstract: |
 
   -   Connect machines at scale by running PowerShell scripts with Configuration Manager
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-arc-module.svg
 levels:
 - intermediate
 roles:

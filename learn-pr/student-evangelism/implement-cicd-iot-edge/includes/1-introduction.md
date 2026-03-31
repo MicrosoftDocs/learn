@@ -1,6 +1,6 @@
-In this module, you'll implement a solution for smoke testing using a CI/CD (continuous integration and continuous delivery) strategy using Azure Pipelines and Azure Monitor Application Insights. The solution is designed to create a smoke test by incorporating code from developers and running it on virtual Azure IoT Edge devices in an automated manner.
+In this module, you implement a solution for smoke testing using a CI/CD (continuous integration and continuous delivery) strategy with Azure Pipelines and Azure Monitor Application Insights. The solution is designed to create a smoke test by incorporating code from developers and running it on virtual Azure IoT Edge devices in an automated manner.
 
-Suppose you work as an engineer who's responsible for deploying production software to IoT Edge devices. Your job involves creating the final software code release of your product. Your IoT solution has expanded considerably. Previously, you had a small number of devices of the same type located in the same geography. Now, you're deploying to thousands of different IoT devices spread across a wider geography. Your product has also evolved. The company has expanded, and your software release now includes code from a larger number of developers. To build this release pipeline, you must integrate code from various members of the development team.
+Imagine you are an engineer responsible for deploying production software to IoT Edge devices. Your job is to create the final software code release of your product. Your IoT solution has expanded considerably. Previously, you had a small number of devices of the same type located in the same geography. Now, you're deploying to thousands of different IoT devices spread across a wider geography. Your product has also evolved. The company has expanded, and your software release now includes code from a larger number of developers. To build this release pipeline, you must integrate code from various members of the development team.
 
 Because it's expensive to deploy to diverse physical IoT devices, your team has tasked you with creating a process for smoke testing the solution. Smoke testing checks the core functionality of a program. A successful smoke test ensures that the program is ready for further testing. By using a smoke test for IoT devices, you can create a baseline for the core functionality. If the smoke test for the solution on IoT devices fails, your team can concentrate on fixing the identified issues. This avoids expensive rework with more sophisticated tests, optimizing the time for your developer and the test teams.
 
@@ -12,7 +12,7 @@ By the end of this module, you'll be able to create a smoke test for virtual IoT
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
 - Create a pipeline that deploys a smoke test using virtual IoT Edge devices
 

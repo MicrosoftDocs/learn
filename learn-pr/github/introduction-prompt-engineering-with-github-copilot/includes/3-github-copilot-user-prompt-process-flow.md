@@ -2,8 +2,6 @@ In this unit, we'll break down how GitHub Copilot turns your prompts into smart,
 
 ## Inbound flow:
 
-
-
 :::image type="content" source="../media/3-github-copilot-inbound-flow.png" alt-text="Illustration of GitHub Copilot inbound flow.":::
 
 Let's walk through all the steps Copilot takes to process a user's prompt into a code suggestion.

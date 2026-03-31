@@ -6,10 +6,10 @@ A partial list of the fully managed databases available on Azure includes:
 
 - [Azure Database for PostgreSQL](https://azure.microsoft.com/products/postgresql)
 
-- [Azure Database for MySQL](https://azure.microsoft.com/free/mysql/)
+- [Azure Database for MySQL](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 
 - [Azure Cosmos DB](https://azure.microsoft.com/products/cosmos-db)
 
-- [Azure Cache for Redis](https://azure.microsoft.com/products/cache/)
+- [Azure Managed Redis](https://azure.microsoft.com/products/managed-redis/)
 
 You can find a complete, up-to-date list of fully managed databases in the [Types of Databases on Azure](https://azure.microsoft.com/products/category/databases/) article.

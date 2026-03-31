@@ -2,13 +2,11 @@
 uid: learn.wwl.introduction-data-engineering-azure.what-data-engineering
 title: What is data engineering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: What is data engineering
+  title: What is Data Engineering
   description: "What is data engineering"
-  ms.date: 02/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 08/21/2025
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 durationInMinutes: 5
 content: |

@@ -2,13 +2,11 @@
 uid: learn.wwl.work-compute-resources-azure-machine-learning.exercise
 title: Exercise - Work with compute resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Work with compute resources
   description: Explore how to work with compute targets in Azure Machine Learning through hands-on exercises.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

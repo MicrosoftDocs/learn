@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.ai-information-extraction
+hidden: true
+metadata:
+  title: (AI-900) Get started with AI-powered information extraction in Microsoft Foundry (deprecated)
+  description: "Get started with AI-powered information extraction in Microsoft Foundry."
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 08/28/2025
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+title: (AI-900) Get started with AI-powered information extraction in Microsoft Foundry (deprecated)
+summary: This module is deprecated, as is the associated Microsoft course [AI-900 (Introduction to AI in Azure)](/training/courses/ai-900t00). This course has been replaced with a new, updated course, [AI-901 (Introduction to AI in Azure)](/training/courses/ai-901t00). The new course provides a more comprehensive and up-to-date introduction to AI concepts and Azure-based AI solutions.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify Foundry Tools for information extraction
+  - Describe Azure Vision information extraction capabilities
+  - Describe Azure Content Understanding information extraction capabilities
+  - Describe Azure Document Intelligence information extraction capabilities
+  - Describe Azure AI Search information extraction capabilities
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure
+  - Some knowledge of AI concepts
+iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+products:
+  - foundry-tools
+  - azure-cognitive-search
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.ai-information-extraction.introduction
+  - learn.wwl.ai-information-extraction.azure-ai-services
+  - learn.wwl.ai-information-extraction.azure-ai-vision
+  - learn.wwl.ai-information-extraction.content-understanding
+  - learn.wwl.ai-information-extraction.document-intelligence
+  - learn.wwl.ai-information-extraction.ai-search
+  - learn.wwl.ai-information-extraction.exercise
+  - learn.wwl.ai-information-extraction.knowledge-check
+  - learn.wwl.ai-information-extraction.summary
+# This is the badge for the module.
+badge:
+  uid: learn.wwl.ai-information-extraction.badge

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.design-implement-models-embeddings-with-sql
+metadata:
+  title: Design and implement models and embeddings with SQL
+  description: Integrate AI models with Azure SQL Database using external models, the vector data type, and built-in AI functions. Design embedding strategies, generate embeddings from text, and implement maintenance patterns.
+  ms.date: 02/02/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-assisted
+title: Design and implement models and embeddings with SQL
+summary: Integrate AI models with Azure SQL Database using external models and built-in AI functions. Design effective embedding strategies and implement maintenance patterns to keep embeddings aligned with source data.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Evaluate AI models for SQL database workloads based on capabilities and performance requirements.
+  *   Create and manage external models to reference AI endpoints from Transact-SQL.
+  *   Design embeddings with appropriate chunking strategies.
+  *   Generate and store embeddings using built-in SQL AI functions.
+  *   Choose maintenance approaches to keep embeddings aligned with source data.
+prerequisites: |
+  *   Basic understanding of SQL and Transact-SQL.
+  *   Familiarity with Azure SQL Database or Fabric SQL database.
+  *   Azure subscription with access to Azure OpenAI.
+iconUrl: /training/achievements/generic-database.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+products:
+- azure
+- azure-sql-database
+subjects:
+- databases
+- artificial-intelligence
+- cloud-computing
+units:
+- learn.wwl.design-implement-models-embeddings-with-sql.introduction
+- learn.wwl.design-implement-models-embeddings-with-sql.understand-evaluate-models-sql-database-workloads
+- learn.wwl.design-implement-models-embeddings-with-sql.create-manage-external-model-sql
+- learn.wwl.design-implement-models-embeddings-with-sql.design-embeddings-sql-database-workloads
+- learn.wwl.design-implement-models-embeddings-with-sql.generate-maintain-embeddings-sql-database-workloads
+- learn.wwl.design-implement-models-embeddings-with-sql.exercise-generate-update-embeddings-sql
+- learn.wwl.design-implement-models-embeddings-with-sql.knowledge-check
+- learn.wwl.design-implement-models-embeddings-with-sql.summary
+badge:
+  uid: learn.wwl.design-implement-models-embeddings-with-sql.badge

@@ -4,7 +4,7 @@ title: Exercise - Implement RAG with LangChain and Azure Cosmos DB for NoSQL Vec
 metadata:
   title: Exercise - Implement RAG with LangChain and Azure Cosmos DB for NoSQL Vector Search
   description: "Exercise - Implement RAG with LangChain and Azure Cosmos DB for NoSQL Vector Search."
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

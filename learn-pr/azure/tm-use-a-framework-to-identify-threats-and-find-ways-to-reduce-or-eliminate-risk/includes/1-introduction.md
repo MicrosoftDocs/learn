@@ -19,7 +19,7 @@ Using the framework, you're able to answer questions like:
 - How do I know someone can't change data in transit, in use, or at rest?
 - Can every action be tied to an identity?
 - How do I know someone can't see data in transit, in use, or at rest?
-- Are there areas in the system where resource is limited?
+- Are there areas in the system where resources are limited?
 - How do I know someone is allowed to take this action?
 
 In this module, you learn about each threat category and its corresponding security controls.

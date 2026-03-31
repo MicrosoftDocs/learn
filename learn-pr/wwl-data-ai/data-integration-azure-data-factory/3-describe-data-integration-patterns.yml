@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-data-azure-data-factory.describe-data-integration-patterns
 title: Describe data integration patterns
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe data integration patterns
   description: "Describe data integration patterns"
   ms.date: 06/05/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-describe-data-integration-patterns.md)]
+  [!include[](includes/3-describe-data-integration-patterns.md)]

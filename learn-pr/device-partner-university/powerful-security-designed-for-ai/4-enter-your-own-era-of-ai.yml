@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.powerful-security-ai.enter-your-own-era-of-ai
+title: Enter your own era of AI
+metadata:
+  title: Enter Your Own Era Of AI
+  description: This content is part of the "Powerful security designed for AI" module.
+  ms.date: 08/05/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-enter-your-own-era-of-ai.md)]

@@ -1,30 +1,33 @@
-The **Microsoft cloud security benchmark** (**MCSB**) provides prescriptive best practices and recommendations to help improve the **security of workloads**, **data**, and **services** **on Azure** and **your multicloud environment**. This benchmark focuses on cloud-centric control areas with input from a set of holistic Microsoft and industry security guidance that includes:<br>
+The **Microsoft Cloud Security Benchmark** (**MCSB**) provides prescriptive best practices and recommendations to help improve the **security of workloads**, **data**, and **services** **on Azure** and **your multicloud environment**. This benchmark focuses on cloud-centric control areas with input from a set of holistic Microsoft and industry security guidance that includes:
 
- -  **Cloud Adoption Framework**: Guidance on security, including strategy, roles and responsibilities, Azure Top 10 Security Best Practices, and reference implementation.
- -  **Azure Well-Architected Framework**: Guidance on securing your workloads on Azure.
- -  **The Chief Information Security Officer (CISO) Workshop**: Program guidance and reference strategies to accelerate security modernization using Zero Trust principles.
- -  **Other industry and cloud service providers security best practice standards and framework**: Examples include the Amazon Web Services (**AWS**) Well-Architected Framework, Center for Internet Security (**CIS**) Controls, National Institute of Standards and Technology (**NIST**), and Payment Card Industry Data Security Standard (**PCI-DSS**).
+- **Cloud Adoption Framework**: Guidance on security, including strategy, roles and responsibilities, Azure Top 10 Security Best Practices, and reference implementation.
+- **Azure Well-Architected Framework**: Guidance on securing your workloads on Azure.
+- **The Chief Information Security Officer (CISO) Workshop**: Program guidance and reference strategies to accelerate security modernization using Zero Trust principles.
+- **Other industry and cloud service providers security best practice standards and framework**: Examples include the Amazon Web Services (**AWS**) Well-Architected Framework, Center for Internet Security (**CIS**) Controls, National Institute of Standards and Technology (**NIST**), and Payment Card Industry Data Security Standard (**PCI-DSS**).
 
-Microsoft cloud security benchmark is the successor of **Azure Security Benchmark (ASB)**, which was rebranded in October 2022.
+Microsoft Cloud Security Benchmark is the successor of **Azure Security Benchmark (ASB)**, which was rebranded in October 2022.
+
+> [!NOTE]
+> **MCSB v2** is now available in preview (November 2025) with expanded risk and threat-based guidance, more Azure Policy measurements, and new controls for securing AI workloads.
 
 ## Multicloud security framework and Automated control monitoring
 
-**Comprehensive multicloud security framework**: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring and assessment across the different cloud environments (often for different compliance standards). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the Azure Security Benchmark to Microsoft cloud security benchmark to help you quickly work with different clouds by:
+**Comprehensive multicloud security framework**: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This requires security teams to repeat the same implementation, monitoring, and assessment across the different cloud environments (often for different compliance standards). Repeat configurations create unnecessary overhead, cost, and effort. To address this concern, Microsoft Cloud Security Benchmark helps quickly work with different clouds by:
 
- -  Providing a single control framework to easily meet the security controls across clouds
- -  Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
- -  Staying aligned with Industry Standards (e.g., CIS, NIST, PCI)
+- Providing a single control framework to easily meet the security controls across clouds
+- Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
+- Staying aligned with Industry Standards (for example, CIS, NIST, PCI)
 
 **Automated control monitoring for AWS in Microsoft Defender for Cloud**: You can use Microsoft Defender for Cloud Regulatory Compliance Dashboard to monitor your AWS environment against MCSB just like how you monitor your Azure environment. We developed approximately 180 AWS checks for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
 **Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
 
 :::image type="content" source="../media/mcsb-compliance-control-ns-network-security-expanded-example-f95d4dba.jpg" alt-text="Screenshot showing an example of the Microsoft Defender for Cloud Regulatory compliance dashboard.":::
-<br>
 
-**A refresh of the existing Azure guidance and security principles: We also refreshed some of the existing Azure security guidance and security principles during this update so you can stay current with the latest Azure features and capabilities.**<br>
+ > [!NOTE]
+ > Microsoft also refreshed some of the existing Azure security guidance and security principles during this update so you can stay current with the latest Azure features and capabilities.
 
-**Controls**
+### Controls
 
 | **Control Domains**                       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

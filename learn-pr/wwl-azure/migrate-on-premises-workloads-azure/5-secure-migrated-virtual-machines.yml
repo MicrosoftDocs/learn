@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.secure-migrated-vms
 title: Secure migrated virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure migrated virtual machines
   description: "Secure migrated virtual machines"
   ms.date: 05/17/2021
@@ -38,4 +36,4 @@ quiz:
       explanation: "Correct. All three are features of Azure Disk Encryption."
     - content: "IaaS VM data secured during VM startup, Multi-Factor Authentication, Integration with Azure Key Vault"
       isCorrect: false
-      explanation: "Multi-Factor Authentication isn't a feature of Azure Disk Encryption."
+      explanation: "Multi-Factor Authentication isn't a feature of Azure Disk Encryption."

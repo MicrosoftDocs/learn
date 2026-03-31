@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-app-settings-app-config.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/17/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "A developer loads App Configuration settings with two `SettingSelector` entries: one for the null label and one for the `Production` label. The key `Pipeline:BatchSize` exists with both labels. Which value does the application use?"
+    choices:
+    - content: "The value from the null label because null labels always take priority as defaults."
+      isCorrect: false
+      explanation: "Null-labeled keys serve as defaults, but they don't take priority. When multiple `SettingSelector` entries match the same key, the last selector in the list overrides earlier ones. The `Production` label selector appears second, so its value overrides the null-labeled default."
+    - content: "The value from the `Production` label because it's loaded second and overrides the null-labeled value for the same key."
+      isCorrect: true
+      explanation: "The provider applies `SettingSelector` entries in order. Later selectors override earlier ones for matching keys. Since the `Production` label selector appears after the null label selector, its value for `Pipeline:BatchSize` takes priority. This stacking behavior is the foundation for environment-specific overrides."
+    - content: "The provider raises an error because the same key can't exist with multiple labels in a single load operation."
+      isCorrect: false
+      explanation: "The provider supports loading the same key with different labels through multiple `SettingSelector` entries. This is the intended composition pattern for layering environment-specific overrides on top of default values. No error is raised."
+  - content: "What does Azure App Configuration store when you create a Key Vault reference for a secret?"
+    choices:
+    - content: "An encrypted copy of the secret value from Key Vault."
+      isCorrect: false
+      explanation: "App Configuration doesn't store a copy of the secret value, encrypted or otherwise. Storing copies would create synchronization challenges and defeat the purpose of centralizing secrets in Key Vault. App Configuration stores only the reference metadata that points to the secret's location."
+    - content: "A shared access signature (SAS) token that grants temporary access to the secret in Key Vault."
+      isCorrect: false
+      explanation: "Key Vault references don't use SAS tokens. The reference contains the URI to the secret in Key Vault, and the application authenticates to Key Vault separately using its own credentials (typically a managed identity) to resolve the actual secret value at runtime."
+    - content: "A URI that points to the secret in Azure Key Vault, along with reference metadata and a specific content type."
+      isCorrect: true
+      explanation: "A Key Vault reference stores the vault URI, secret name, and optional version with a content type of `application/vnd.microsoft.appconfig.keyvaultref+json;charset=utf-8`. The provider recognizes this content type and resolves the actual secret value from Key Vault automatically. App Configuration never stores the secret value itself."
+  - content: "A developer building an AI document processing pipeline needs to store the Azure OpenAI model deployment name (`gpt-4o`). Where should this setting be stored?"
+    choices:
+    - content: "Azure Key Vault because all Azure OpenAI-related settings should be stored together with the API key for organizational consistency."
+      isCorrect: false
+      explanation: "Grouping settings by service rather than by sensitivity is an anti-pattern. A model deployment name doesn't grant access to any resource and doesn't require Key Vault's audit logging, rotation, or HSM-backed encryption. Placing it in Key Vault wastes security capabilities on a nonsensitive value and can't benefit from App Configuration features like labels and feature flags."
+    - content: "Azure App Configuration as a regular key-value pair because the deployment name is nonsensitive and doesn't grant access to any resource."
+      isCorrect: true
+      explanation: "Model deployment names control application behavior but don't grant access to resources. They're nonsensitive settings that belong in App Configuration, where they benefit from labels for environment differentiation, feature flags, and dynamic refresh. Only values that grant access, like API keys, belong in Key Vault."
+    - content: "Azure App Configuration as a Key Vault reference because the setting is related to a service that also has secrets."
+      isCorrect: false
+      explanation: "Key Vault references are for values stored in Key Vault. A model deployment name is nonsensitive and doesn't need to be stored in Key Vault in the first place. Creating a Key Vault reference for a nonsensitive value adds unnecessary complexity and Key Vault API overhead without any security benefit."
+  - content: "Which two Azure RBAC role assignments does an application's managed identity need to resolve Key Vault references from App Configuration?"
+    choices:
+    - content: "App Configuration Data Reader on the App Configuration store and Key Vault Secrets User on the Key Vault."
+      isCorrect: true
+      explanation: "The application needs App Configuration Data Reader to retrieve settings and references from the store, and Key Vault Secrets User to read the secret values that references point to. These two roles follow the principle of least privilege by granting read-only access to both services."
+    - content: "App Configuration Data Owner on the App Configuration store and Key Vault Administrator on the Key Vault."
+      isCorrect: false
+      explanation: "These roles grant far more permissions than the application needs. Data Owner allows creating and modifying settings, and Key Vault Administrator provides full management access including deletion. Applications should use the minimum permissions required: Data Reader for App Configuration and Secrets User for Key Vault."
+    - content: "Key Vault Secrets User on both the App Configuration store and the Key Vault."
+      isCorrect: false
+      explanation: "Key Vault Secrets User is a Key Vault role and can't be assigned on an App Configuration store. App Configuration uses its own set of RBAC roles. The application needs App Configuration Data Reader for the App Configuration store and Key Vault Secrets User for the Key Vault."
+  - content: "A developer enables dynamic configuration refresh with a sentinel key and a 60-second refresh interval. What must happen for the application to pick up configuration changes from the store?"
+    choices:
+    - content: "The provider automatically pushes updated values to the application whenever any key changes in the store."
+      isCorrect: false
+      explanation: "The provider uses a pull-based model, not push-based. It doesn't receive push notifications from the store. The application must explicitly call the `refresh()` method, and the provider checks for changes only if the configured refresh interval has elapsed since the last check."
+    - content: "The application must restart to load the latest configuration because the provider caches all values at the initial `load()` call."
+      isCorrect: false
+      explanation: "Dynamic refresh eliminates the need for application restarts. The provider's `refresh()` method checks whether watched keys changed and reloads configuration if changes are detected. This is one of the key benefits of using a sentinel key pattern with the provider."
+    - content: "The application must call the `refresh()` method on the configuration object, and the sentinel key must have changed since the last refresh check."
+      isCorrect: true
+      explanation: "Dynamic refresh requires two conditions: the application calls `refresh()` explicitly (typically in a request handler or loop), and the sentinel key was updated to signal that new configuration values are available. If the refresh interval hasn't elapsed, the `refresh()` call returns immediately without contacting the store."

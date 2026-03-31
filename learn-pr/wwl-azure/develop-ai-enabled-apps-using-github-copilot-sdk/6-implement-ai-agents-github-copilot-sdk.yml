@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.implement-ai-agents-github-copilot-sdk
+title: "Implement AI agents using GitHub Copilot SDK"
+metadata:
+  title: "Implement AI Agents Using GitHub Copilot SDK"
+  description: "Implement AI agents using GitHub Copilot SDK."
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-implement-ai-agents-github-copilot-sdk.md)]

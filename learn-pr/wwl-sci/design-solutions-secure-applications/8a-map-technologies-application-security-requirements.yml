@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-secure-applications.map-technologies-application-security-requirements
+title: Map technologies to application security requirements
+metadata:
+  title: Map technologies to application security requirements
+  description: "SC-100 preparatory unit on this topic: map technologies to application security requirements."
+  ms.date: 02/10/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/8a-map-technologies-application-security-requirements.md)]

@@ -2,8 +2,6 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel
 title: Threat intelligence for Azure Arc-enabled servers with Microsoft Sentinel
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Threat intelligence for Azure Arc-enabled servers with Microsoft Sentinel
   description: Learn how Microsoft Sentinel delivers threat intelligence for Azure Arc-enabled servers.
   ms.date: 04/24/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel.md)]
-
+

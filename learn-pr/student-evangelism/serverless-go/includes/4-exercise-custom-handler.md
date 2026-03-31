@@ -36,7 +36,7 @@ The next series of steps is about creating an app that can respond to an HTTP tr
 
    import (
     "fmt"
-    "io/ioutil"
+    "io"
     "log"
     "net/http"
     "os"
@@ -60,7 +60,7 @@ The next series of steps is about creating an app that can respond to an HTTP tr
    }
    ```
 
-   The `main()` function is invoked by itself. The first line of the code states how it will read from the `FUNCTIONS_CUSTOM_HANDLER_PORT` environment variable:
+   The `main()` function is invoked by itself. The first line of the code states how it reads from the `FUNCTIONS_CUSTOM_HANDLER_PORT` environment variable:
 
    ```go
    customHandlerPort, exists := os.LookupEnv("FUNCTIONS_CUSTOMHANDLER_PORT")
@@ -86,7 +86,7 @@ The next series of steps is about creating an app that can respond to an HTTP tr
    log.Fatal(http.ListenAndServe(":"+customHandlerPort, mux))
    ```
   
-1. Let's add the remaining code. First, localize the following line and uncomment it:
+1. Let's add the remaining code. First, locate the following line and uncomment it:
 
    ```go
    // mux.HandleFunc("/api/hello", helloHandler)
@@ -100,7 +100,7 @@ The next series of steps is about creating an app that can respond to an HTTP tr
      if r.Method == "GET" {
        w.Write([]byte("hello world"))
      } else {
-       body, _ := ioutil.ReadAll(r.Body)
+       body, _ := io.ReadAll(r.Body)
        w.Write(body)
      }
    }
@@ -120,7 +120,7 @@ You're done authoring the code at this point, but you need to do some configurat
 
    This step creates an executable file that's called *server* on macOS and Linux, or *server.exe* on a Windows OS.
 
-1. Open the _host.json_ file and find the `defaultExecutablePath` element inside the `customHandler` one. Specify `./server` on macOS and Linux, or `.\server.exe` on a Windows OS.
+1. Open the _host.json_ file and find the `defaultExecutablePath` element inside the `customHandler` one. Specify `./server` on macOS and Linux, or `.\\server.exe` on a Windows OS.
 1. Under the `customHandler` element, add the `enableForwardingHttpRequest` element and give it the value `true`. Your `customHandler` element should now look like this:
 
    ```json

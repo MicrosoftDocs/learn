@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-message-encryption-microsoft-365.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/30/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why did Fabrikam need to confirm that Azure Rights Management was enabled before using Microsoft Purview Message Encryption?"
+    choices:
+    - content: "Because Microsoft Purview Message Encryption requires Azure Rights Management to apply encryption and access controls"
+      isCorrect: true
+      explanation: "Correct. Azure RMS provides the encryption and policy enforcement used by message encryption."
+    - content: "Because encryption depends on BitLocker being activated first"
+      isCorrect: false
+      explanation: "BitLocker is unrelated to email encryption and secures data at rest, not in transit."
+    - content: "Because Azure Rights Management is only required when encrypting attachments"
+      isCorrect: false
+      explanation: "Azure RMS is required for encrypting email messages themselves, not just attachments."
+
+  - content: "Which feature allows Fabrikam to set a seven-day expiration for external recipients?"
+    choices:
+    - content: "Applying a sensitivity label with a time limit"
+      isCorrect: false
+      explanation: "Expiration based on time isn't currently supported with sensitivity labels for email."
+    - content: "Using a retention policy in Microsoft Purview"
+      isCorrect: false
+      explanation: "Retention policies affect data lifecycle, not email access duration through encryption."
+    - content: "Using the ExternalMailExpiryInDays parameter in a branding template"
+      isCorrect: true
+      explanation: "Correct. This setting controls how long a recipient can access the message through the encrypted message portal."
+
+  - content: "Fabrikam applied a custom branding template in their mail flow rule. What is the purpose of this template?"
+    choices:
+    - content: "It allows them to enforce Microsoft Defender for Office policies"
+      isCorrect: false
+      explanation: "Branding templates aren't related to Defender for Office. They modify the look of encrypted messages."
+    - content: "It customizes the secure portal with their logo and disclaimer"
+      isCorrect: true
+      explanation: "Correct. Branding templates change the appearance of encrypted messages for external recipients."
+    - content: "It blocks unauthorized users from replying to encrypted emails"
+      isCorrect: false
+      explanation: "Reply permissions depend on the template type, but branding alone doesn't block replies."
+
+  - content: "Fabrikam created a mail flow rule that encrypts emails based on subject line keywords. Which method did they use to apply encryption?"
+    choices:
+    - content: "Applied a sensitivity label through Microsoft Purview Data Loss Prevention"
+      isCorrect: false
+      explanation: "Sensitivity labels are one way to encrypt email, but the scenario used a mail flow rule."
+    - content: "Used Microsoft Defender to quarantine emails for inspection"
+      isCorrect: false
+      explanation: "Quarantine features aren't related to applying encryption through mail flow rules."
+    - content: "Configured a mail flow rule with an encryption template"
+      isCorrect: true
+      explanation: "Correct. The rule applies encryption dynamically based on message content."
+
+
+  - content: "How can Fabrikam confirm that external legal partners have opened encrypted messages?"
+    choices:
+    - content: "By reviewing sign-in logs in Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Sign-in logs don't provide message-level access tracking."
+    - content: "By using the Encrypted message portal activities in Microsoft Purview Audit"
+      isCorrect: true
+      explanation: "Correct. Purview Audit tracks access events for encrypted messages viewed in the portal."
+    - content: "By exporting Exchange Online mail flow logs"
+      isCorrect: false
+      explanation: "Mail flow logs show routing but don't confirm whether messages were read."

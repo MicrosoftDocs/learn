@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.scale-configure-cluster
 title: Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster
   description: "Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster."
   ms.date: 11/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-scale-configure-cluster.md)]
+  [!include[](includes/2-scale-configure-cluster.md)]

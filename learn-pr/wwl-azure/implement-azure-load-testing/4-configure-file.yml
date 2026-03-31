@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-load-testing.configure-file
 title: Create a load test YAML configuration file
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a load test YAML configuration file
   description: "Load test website home page"
   ms.date: 02/04/2025

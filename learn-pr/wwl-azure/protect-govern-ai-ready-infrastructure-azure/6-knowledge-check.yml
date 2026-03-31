@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your healthcare organization is deploying Azure OpenAI to summarize patient medical records. HIPAA regulations require that all patient data remains within the United States and uses customer-managed encryption keys. Which combination of Azure Policy definitions should you assign to enforce these requirements?"
+    choices:
+    - content: "Assign **Allowed locations** policy restricting deployments to US regions and 'Cognitive Services should use customer-managed key for encryption' policy with Deny effect at the subscription scope containing healthcare workloads"
+      isCorrect: true
+      explanation: "The first option correctly addresses both HIPAA requirements through Azure Policy enforcement: the Allowed locations policy prevents deployments outside authorized US regions, satisfying data residency requirements, while the customer-managed encryption policy ensures patient data is encrypted with keys the organization controls rather than Microsoft-managed keys. Assigning at subscription scope provides comprehensive coverage while allowing specific resource group exceptions if needed."
+    - content: "Assign **Audit usage of custom RBAC roles** policy and 'Diagnostic logs in Azure AI services should be enabled' policy at the resource group scope to monitor compliance through manual review"
+      isCorrect: false
+      explanation: "The second option only provides audit capabilities without preventive enforcement, relying on manual detection after violations occur rather than blocking noncompliant configurations proactively."
+    - content: "Assign 'Require tag on resources' policy mandating 'compliance:HIPAA' tag and 'Allowed resource types' policy limiting deployments to Azure OpenAI Standard tier only at the management group scope"
+      isCorrect: false
+      explanation: "The third option focuses on resource tagging and type restrictions but doesn't directly enforce geographic restrictions or encryption requirements that HIPAA mandates, making it insufficient for healthcare compliance despite supporting general governance practices."
+  - content: "Your data science team needs to deploy Azure OpenAI models for internal research on customer sentiment analysis. The team should be able to create resources and configure models but must not access production customer data or modify deployed production models. Which RBAC role assignment strategy implements least-privilege access for this scenario?"
+    choices:
+    - content: "Assign Cognitive Services Contributor role at the development resource group scope and Cognitive Services User role at the production resource group scope, with separate resource groups isolating development and production environments"
+      isCorrect: true
+      explanation: "The first option implements least-privilege access by granting different permission levels based on environment sensitivity: Cognitive Services Contributor in development allows the team to create and configure resources for research, while Cognitive Services User in production provides read-only access for viewing configurations and consuming endpoints without modification capabilities. Separate resource groups create clear security boundaries that RBAC can enforce, preventing accidental or intentional cross-environment changes."
+    - content: "Assign Owner role at the subscription scope to enable full development flexibility and rely on Azure Policy to prevent unauthorized production changes through approval workflows"
+      isCorrect: false
+      explanation: "The second option violates least-privilege principles by granting Owner role, which includes permissions to modify access controls, delete resources, and change billing settings far beyond what the research scenario requires."
+    - content: "Create a custom role with wildcard permissions for all Cognitive Services operations and assign it at the resource group scope, then configure conditional access policies requiring manager approval for production resource access"
+      isCorrect: false
+      explanation: "The third option wildcard permissions eliminate granular control and still grant excessive access, while conditional access policies alone can't enforce resource-level permission restrictions—they control authentication and access conditions but don't replace RBAC for authorization decisions."

@@ -21,7 +21,6 @@ Here are the main takeaways for the module.
 
 ## Learn more with online training
 
-+ [Improve incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure/). Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
 + [Monitor your Azure virtual machines with Azure Monitor](/training/modules/monitor-azure-vm-using-diagnostic-data/). Monitor your Azure VMs by using Azure Monitor to collect and analyze VM host and client metrics and logs.
 + [Provisioning a Linux virtual machine in Microsoft Azure](/training/modules/provision-linux-virtual-machine-in-azure/). Azure allows you to use several common provisioning tools to deploy Linux virtual machines (VMs), to include Terraform, Bicep, the Azure portal, and the Azure CLI. In this module, you learn how to deploy a Linux virtual machine using each of these methods.
 + [Add and size disks in Azure virtual machines](/training/modules/add-and-size-disks-in-azure-virtual-machines/). Understand and create the different types of disk storage available to Azure virtual machines (VMs). This task includes adding a data disk and resizing a data disk. 

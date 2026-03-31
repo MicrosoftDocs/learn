@@ -5,7 +5,7 @@ The cloud-native approach allows you to build cloud-based applications where you
 
 Additionally, cloud-native apps are modular in nature. You choose the cloud services and technologies, and loosely couple them together as shown in the diagram. Cloud-native apps often employ another pattern, called **Microservices.** Notice how each service has its own technology stack, independent of what other services use, meaning you choose the technologies that suit each individual service, rather than a one-size-fits-all solution.
 
-With Cloud Native, we're using many pre-built types of services or services with pre-built infrastructure. So we can use scaling from Kubernetes or Azure Function Apps, and geo-redundant data storage from Cosmos DB or Hyperscale for PostgreSQL.
+With Cloud Native, we're using many prebuilt types of services or services with prebuilt infrastructure. So we can use scaling from Kubernetes or Azure Function Apps, and geo-redundant data storage from Cosmos DB or Hyperscale for PostgreSQL.
 
 :::column-end:::
 :::column:::
@@ -24,9 +24,9 @@ Further, with different components loosely coupled together to create an applica
 :::row:::
 :::column span="3":::
 
-Most cloud-native services support a wide range of technologies. Kubernetes supports multiple client OSs and any tech stack, such as .NET, Node, Ruby, and Java. There are vast options for databases that can be connected using any major programming language.
+Most cloud-native services support a wide range of technologies. Kubernetes supports multiple client operating systems (OSs) and any tech stack, such as .NET, Node, Ruby, and Java. There are vast options for databases that can be connected using any major programming language.
 
-You can connect a backend to your relational database of choice for one service, while also using a NoSQL database and a pre-built analytics service when it’s a better fit for another service. You can do it all quickly and simply, within the same overall cloud application.
+You can connect a backend to your relational database of choice for one service, while also using a NoSQL database and a prebuilt analytics service when it’s a better fit for another service. You can do it all quickly and simply, within the same overall cloud application.
 
 :::column-end:::
 :::column:::

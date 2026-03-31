@@ -4,15 +4,15 @@ In this module, you learn how to implement token customizations and implement an
 
 In this module, you'll:
 
- -  Implement token customizations
- -  Implement and configure consent settings
- -  Integrate on-premises apps by using Microsoft Entra application proxy
- -  Integrate custom SaaS apps for SSO
- -  Implement application user provisioning
- -  Create and manage application collections
- -  Monitor and audit access to Microsoft Entra ID integrated enterprise applications
+- Implement token customizations
+- Implement and configure consent settings
+- Integrate on-premises apps by using Microsoft Entra application proxy
+- Integrate custom SaaS apps for SSO
+- Implement application user provisioning
+- Create and manage application collections
+- Monitor and audit access to Microsoft Entra ID integrated enterprise applications
 
 ## Prerequisites
 
- -  Management of users and administrators in Microsoft Entra ID
- -  Experience with setting up conditional access
+- Management of users and administrators in Microsoft Entra ID
+- Experience with setting up conditional access

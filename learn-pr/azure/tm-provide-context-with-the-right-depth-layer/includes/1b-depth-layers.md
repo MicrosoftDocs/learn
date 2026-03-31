@@ -4,8 +4,8 @@ Every system should have a high-level overview of how it works. Most should have
 
 Examples include:
 
-- A process parsing highly sensitive data
-- Third-party authentication systems
+- A process parsing highly sensitive data.
+- Third-party authentication systems.
 
 At a high level, there are four depth layers used in threat modeling:
 

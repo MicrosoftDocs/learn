@@ -19,6 +19,9 @@ abstract:  |
 prerequisites: |
   - Basic understanding of Azure Virtual Machines
   - Remote Desktop client
+
+  [!INCLUDE [](../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 iconUrl: /training/achievements/create-windows-virtual-machine-in-azure.svg
 levels:
 - beginner

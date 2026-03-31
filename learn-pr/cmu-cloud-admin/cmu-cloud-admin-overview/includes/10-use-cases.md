@@ -90,9 +90,7 @@ The explosion in ML and AI research, investment, advances, and applications in r
 
 5. _PhocusWire (2019). *How Expedia is using deep learning to improve the hotel booking process*. <https://www.phocuswire.com/Expedia-Partner-Solutions-machine-learning>_
 
-6. _Microsoft (2019). *BP explores Azure AI to boost safety, increase efficiency, and drive business success*. <https://customers.microsoft.com/story/bp-mining-oil-gas-azure-machine-learning>_
-
-7. _Google. *iGenius: Creating crystal, the first virtual digital marketing advisor*. <https://cloud.google.com/customers/igenius/>_
+6. _Google. *iGenius: Creating crystal, the first virtual digital marketing advisor*. <https://cloud.google.com/customers/igenius/>_
 
 [^1]: <https://news.microsoft.com/en-au/features/azures-platform-service-pepperoni-pizza-dominos/>  "Microsoft (2017). *Azure's Platform as a Service is the pepperoni on the pizza for Domino's*."
 
@@ -102,6 +100,4 @@ The explosion in ML and AI research, investment, advances, and applications in r
 
 [^5]: <https://www.phocuswire.com/Expedia-Partner-Solutions-machine-learning>  "PhocusWire (2019). *How Expedia is using deep learning to improve the hotel booking process*."
 
-[^6]: <https://customers.microsoft.com/story/bp-mining-oil-gas-azure-machine-learning>  "Microsoft (2019). *BP explores Azure AI to boost safety, increase efficiency, and drive business success*."
-
-[^7]: <https://cloud.google.com/customers/igenius/>  "Google. *iGenius: Creating crystal, the first virtual digital marketing advisor*."
+[^6]: <https://cloud.google.com/customers/igenius/>  "Google. *iGenius: Creating crystal, the first virtual digital marketing advisor*."

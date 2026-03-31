@@ -3,9 +3,9 @@ uid: learn.wwl.understand-windows-server-iaas-vm-cost-management
 metadata:
   title: Understand Windows Server IaaS Virtual Machine cost management
   description: "Use the Pricing calculator to assess likely costs, use Azure Advisor to monitor actual costs for Azure resources, implement Spot VMs and Azure Reservations, and describe benefits of Azure Hybrid licensing."
-  ms.date: 01/01/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Understand Windows Server IaaS Virtual Machine cost management

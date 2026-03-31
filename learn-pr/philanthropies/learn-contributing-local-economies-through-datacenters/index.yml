@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters
+
+metadata:
+  title: Learn about contributing to local economies through datacenters
+  description: In this module, you'll explore the vital role datacenters play in shaping local economies and communities. More than just hubs of technology, datacenters serve as engines of opportunity, driving investment, innovation, and long-term prosperity. You'll learn how these digital infrastructure sites contribute to job creation, enhance local services, and foster economic growth. Additionally, this module examines how datacenters collaborate with local organizations through education, workforce training, and corporate social responsibility (CSR) initiatives. By the end of this module, you'll have a deeper understanding of the transformative impact datacenters have on the regions they serve.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Learn about contributing to local economies through datacenters
+summary: This module explores the vital role datacenters (DCs) play in shaping local economies and communities. More than just hubs of technology, datacenters serve as engines of opportunity, driving investment, innovation, and long-term prosperity. Economic impact -  Learn how datacenters contribute to job creation, enhance local services, and foster economic growth. Community engagement - Examine how datacenters work with local communities to support philanthropic and education efforts. Long-term benefits - Understand the lasting effects of datacenters on regional development and infrastructure. By the end of this module, you'll have a deeper understanding of the transformative impact datacenters have on the regions they serve.
+
+abstract: |
+  - Understand the economic and local contributions of datacenters, including job creation and infrastructure development.
+  - Learn about community philanthropy and partnerships.
+  - Examine community engagement throughout the datacenter lifecycle.
+  - Explore the roles and responsibilities of the people involved in datacenter design, delivery, and operations.
+prerequisites: |
+  - Understanding of economic and social development principles.
+products:
+  - azure
+  - azure-cloud-services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.introduction
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.economic-infrastructure-contributions
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.community-engagement-throughout-datacenter-lifecycle
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.community-philanthropy-partnerships
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.advance-community-infrastructure
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.career-opportunities-datacenter-industry
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.plan-acquisition-jobs
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.cloud-infrastructure-solutions-services
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.construction-jobs
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.operations-jobs
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.security-jobs
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.business-support-strategy-jobs
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.check
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters.summary
+badge:
+  uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.badge

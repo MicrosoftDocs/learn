@@ -1,6 +1,6 @@
 Azure ExpressRoute meets Adatum’s needs for the following reasons. ExpressRoute: 
 
-- Provides a low-latency connection to resources in the Azure cloud. On-premises clients at Adatum can use IaaS VMs that perform video-processing tasks without concerns around variable latency.  
+- Provides a low-latency connection to resources in the Azure cloud. On-premises clients at Adatum can use IaaS virtual machines that perform video-processing tasks without concerns around variable latency.  
 - Provides a high-bandwidth connection to resources in the Azure cloud. The high bandwidth that Azure ExpressRoute provides, can assist Adatum with workloads such as transferring video files to Azure File Shares. These transfers might take noticeably longer if Adatum continued to use its existing site-to-site VPN connections.
 - Provides guaranteed availability to resources in the Azure cloud. Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections. This guarantee means that if Adatum adopts ExpressRoute, connectivity disruptions that occur when sending traffic over the public internet don't affect day-to-day operations.
 - Provides secure connection to Azure resources. Adatum clients, such as those that use drone imagery when establishing minerals claims, prefer their data be transferred using private connections rather than VPN connections over the internet.

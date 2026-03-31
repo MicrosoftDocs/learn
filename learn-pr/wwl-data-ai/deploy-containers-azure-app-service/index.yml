@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-containers-azure-app-service
+metadata:
+  title: Deploy Containers to Azure App Service
+  description: Learn how to deploy and manage containerized applications on Azure App Service by configuring container sources, runtime settings, application configuration, and diagnostics.
+  ms.date: 01/12/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-app-service
+title: Deploy containers to Azure App Service
+summary: Deploy and manage containerized applications on Azure App Service by configuring container sources, runtime settings, application configuration, and diagnostics.
+abstract: |
+  After completing this module, you'll be able to:
+    - Deploy custom containers to Azure App Service from container registries.
+    - Configure container runtime behavior including startup commands, port settings, and persistent storage.
+    - Configure application settings and connection strings in App Service.
+    - Observe and troubleshoot containerized applications using App Service diagnostic tools.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Experience building and running containers.
+  - Basic understanding of Azure services and the Azure portal.
+  - Familiarity with command-line tools including Azure CLI.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-app-service
+- azure-container-registry
+subjects:
+- containers
+units:
+- learn.wwl.deploy-containers-azure-app-service.introduction
+- learn.wwl.deploy-containers-azure-app-service.deploy-containers
+- learn.wwl.deploy-containers-azure-app-service.configure-runtime
+- learn.wwl.deploy-containers-azure-app-service.configure-settings
+- learn.wwl.deploy-containers-azure-app-service.observe-troubleshoot
+- learn.wwl.deploy-containers-azure-app-service.exercise
+- learn.wwl.deploy-containers-azure-app-service.module-assessment
+- learn.wwl.deploy-containers-azure-app-service.summary
+badge:
+  uid: learn.wwl.deploy-containers-azure-app-service.badge

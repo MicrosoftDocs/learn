@@ -2,8 +2,6 @@
 uid: learn.oxford.object-detection-lva-edge-device.exercise-install-vision-edge-solution
 title: Exercise - Install Vision Edge Solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Install Vision Edge Solution
   description: In this section, we help learner to install Vision Edge Solution.
   ms.date: 07/20/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "You set the media graph to the live video analytics module that parses frames from the camera and sends them to the Inference Module"
     - content: "Predict module"
       isCorrect: false
-      explanation: "It runs the custom vision trained model or user-provided model and return the results"
+      explanation: "It runs the custom vision trained model or user-provided model and return the results"

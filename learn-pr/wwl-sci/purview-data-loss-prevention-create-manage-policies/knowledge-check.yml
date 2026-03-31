@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-create-manage-policies.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check. 
+  ms.date: 01/27/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "A security team is planning a new data loss prevention (DLP) policy to address accidental external sharing. Some team members want to immediately block sharing, while others want visibility first. What should guide the initial policy decision?"
+      choices:
+      - content: "The availability of blocking actions for the selected locations."
+        isCorrect: false
+        explanation: "Incorrect: Available actions matter later, but they shouldn't drive the initial intent of the policy."
+      - content: "Clarity about the specific risk scenario the policy is meant to address."
+        isCorrect: true
+        explanation: "Correct: Clear policy intent ensures detection, scope, and actions align with the risk being reduced."
+      - content: "How quickly the policy can be deployed across all locations."
+        isCorrect: false
+        explanation: "Incorrect: Speed of deployment shouldn't override understanding the role the policy plays in reducing risk."
+
+    - content: "An organization needs a DLP policy to address a well-known compliance scenario quickly. The policy might need refinement later as workflows are better understood. How should the team start?"
+      choices:
+      - content: "Create a fully custom policy to avoid rework later."
+        isCorrect: false
+        explanation: "Incorrect: Custom policies offer flexibility, but templates can be appropriate for known, common scenarios."
+      - content: "Delay policy creation until all workflows are fully documented."
+        isCorrect: false
+        explanation: "Incorrect: Waiting for perfect information delays protection unnecessarily."
+      - content: "Start with a template-based policy and plan to refine it if needed."
+        isCorrect: true
+        explanation: "Correct: Templates are useful for common scenarios and can provide a starting point that evolves over time."
+
+    - content: "A DLP policy is triggering frequently but many alerts represent acceptable business activity. What detection adjustment is most likely to reduce noise?"
+      choices:
+      - content: "Add contextual conditions such as action type or destination."
+        isCorrect: true
+        explanation: "Correct: Adding context helps focus detection on scenarios that actually represent risk."
+      - content: "Remove content-based detection entirely."
+        isCorrect: false
+        explanation: "Incorrect: Content signals are often necessary and shouldn't be removed without understanding their role."
+      - content: "Increase enforcement actions to discourage users."
+        isCorrect: false
+        explanation: "Incorrect: Stronger enforcement doesn't address inaccurate detection and can increase disruption."
+
+    - content: "A policy applies to all users and locations and is difficult to validate because results are noisy and inconsistent. What scoping approach would improve validation?"
+      choices:
+      - content: "Apply the policy only after enforcement is enabled."
+        isCorrect: false
+        explanation: "Incorrect: Enforcement increases disruption but doesn't improve understanding of policy behavior."
+      - content: "Start with a narrower scope focused on higher-risk locations or user groups."
+        isCorrect: true
+        explanation: "Correct: Narrower scope makes behavior easier to interpret and refine before expanding coverage."
+      - content: "Keep the broad scope but lower alert thresholds."
+        isCorrect: false
+        explanation: "Incorrect: Threshold changes don't address underlying scoping issues."
+
+    - content: "After running a DLP policy in simulation mode, results show frequent triggers during normal workflows. What is the most appropriate next step?"
+      choices:
+      - content: "Enable enforcement immediately to reduce risk exposure."
+        isCorrect: false
+        explanation: "Incorrect: Enforcing before refinement risks disrupting legitimate work."
+      - content: "Delete the policy and restart with a new design."
+        isCorrect: false
+        explanation: "Incorrect: Simulation results are meant to inform refinement, not restart efforts."
+      - content: "Adjust detection, scope, or actions based on observed behavior, then revalidate."
+        isCorrect: true
+        explanation: "Correct: Simulation is a feedback loop used to tune policy behavior before enforcement."

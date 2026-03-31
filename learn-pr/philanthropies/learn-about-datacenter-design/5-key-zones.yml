@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-about-datacenter-design.key-zones
+title: Key zones on the datacenter floor plan
+metadata:
+  title: Key Zones on the Datacenter Floor Plan
+  description: This content is a part of the "Learn about datacenter design, architecture, and infrastructure management" module.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+ [!include[](includes/5-key-zones.md)]

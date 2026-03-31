@@ -28,8 +28,6 @@ The first thing to think about isn't your virtual machines at all - it's the net
 
 Some developers don't give much thought about the name for a virtual machine. However, the **virtual machine name** defines a manageable **Azure resource**, and the value isn't easy to change. Choose machine names that are meaningful and consistent, so you can easily identify what each virtual machine does. 
 
-Consider how to name the first development web server for Tailwind Traders in the US South Central location. In this scenario, you might use the machine name `devusc-webvirtual machine01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
-
 #### Virtual machine location
 
 Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic regions like West US, North Europe, Southeast Asia, and so on. The datacenters provide redundancy and availability.
@@ -78,3 +76,6 @@ Azure provides various operating system images that you can install into the vir
 #### Business application
 
 Try the [Azure Virtual Machines selector tool](https://azure.microsoft.com/pricing/vm-selector/) to find other sizes that best fit your workload.
+
+> [!TIP]
+> Learn more about virtual machines with the [Introduction to Azure virtual machines](/training/modules/intro-to-azure-virtual-machines/) module.

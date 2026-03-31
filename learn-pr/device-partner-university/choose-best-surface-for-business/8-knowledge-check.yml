@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-best-surface-business.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Choose the best Microsoft Surface for your business" module.
+  ms.date: 12/01/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which Surface for Business device is the best fit for a traveling commercial sales team that prioritizes portability above all else?"
+    choices:
+        - content: "Surface Pro 12-inch for Business"
+          isCorrect: true
+          explanation: "Correct. It is the lightest device (1.5 lbs), offers 2-in-1 flexibility, and is recommended for frequent travelers needing maximum portability."
+        - content: "Surface Laptop 13-inch for Business"
+          isCorrect: false
+          explanation: "Incorrect. While portable, it is heavier (2.7 lbs) and lacks the hybrid flexibility and pen support of the Pro 12-inch."
+        - content: "Surface Pro for Business"
+          isCorrect: false
+          explanation: "Incorrect. Although it’s also a 2-in-1, it is larger and heavier than the Pro 12-inch, making it less ideal for frequent travelers."
+        - content: "Surface Laptop for Business"
+          isCorrect: false
+          explanation: "Incorrect. This device is heavier and designed more for performance and AI experiences than for maximum portability."
+  - content: "A manager needs a device that can switch between tablet and laptop modes, supports pen input, and offers a vivid, adaptable display. Which device best meets these needs?"
+    choices:
+        - content: "Surface Laptop 13-inch for Business"
+          isCorrect: false
+          explanation: "Incorrect. This is a traditional clamshell laptop and does not support tablet mode or pen input."
+        - content: "Surface Pro for Business"
+          isCorrect: true
+          explanation: "Correct. This device is a 2-in-1 with detachable keyboard, supports pen input, and offers a vivid 13” PixelSense Flow display with advanced features."
+        - content: "Surface Laptop for Business"
+          isCorrect: false
+          explanation: "Incorrect. While it has a high-quality display, it does not support tablet mode or pen input."
+        - content: "Surface Pro 12-inch for Business"
+          isCorrect: false
+          explanation: "Incorrect. While it is a 2-in-1 and supports pen input, its display is smaller and less advanced compared to the Surface Pro for Business."
+  - content: "Which device is recommended for users who need the longest battery life for working in locations without reliable access to power?"
+    choices:
+        - content: "Surface Pro 12-inch for Business"
+          isCorrect: false
+          explanation: "Incorrect. Good for portability, but battery life is shorter than the Laptop 13-inch."
+        - content: "Surface Laptop 13-inch for Business"
+          isCorrect: true
+          explanation: "Correct. Offers the longest battery life (up to 23 hours local video playback, 16 hours web usage), ideal for users needing all-day power."
+        - content: "Surface Pro for Business"
+          isCorrect: false
+          explanation: "Incorrect. Lower battery longevity compared to Laptop 13-inch."
+        - content: "Surface Laptop for Business"
+          isCorrect: false
+          explanation: "Incorrect. Good battery life, but slightly less than Laptop 13-inch and heavier."
+  - content: "Which of the following is a key decision criterion when selecting a Surface for Business device, according to the module?"
+    choices:
+        - content: "Color options"
+          isCorrect: false
+          explanation: "Incorrect. Not listed as a decision criterion in the module."
+        - content: "Portability"
+          isCorrect: true
+          explanation: "Correct. Portability is highlighted as a key criterion, especially for mobile professionals."
+        - content: "Brand popularity"
+          isCorrect: false
+          explanation: "Incorrect. Not mentioned as a decision criterion."
+        - content: "Accessory price"
+          isCorrect: false
+          explanation: "Incorrect. Not identified as a main criterion in the module."
+  - content: "Which Surface for Business device is most suitable for users who need the best performance and advanced AI experiences for demanding workloads?"
+    choices:
+        - content: "Surface Pro 12-inch for Business"
+          isCorrect: false
+          explanation: "Incorrect. This device is optimized for portability, not for high-end performance or advanced AI workloads."
+        - content: "Surface Laptop 13-inch for Business"
+          isCorrect: false
+          explanation: "Incorrect. While it offers good battery life and AI features, its processor is less powerful than the options available in Surface Laptop for Business."
+        - content: "Surface Laptop for Business"
+          isCorrect: true
+          explanation: "Correct. This device offers the highest performance with multiple processor options, advanced AI acceleration, and enterprise-grade security, making it ideal for demanding workloads."
+        - content: "Surface Pro for Business"
+          isCorrect: false
+          explanation: "Incorrect. While powerful and flexible, it is less suited for sustained heavy workloads compared to the Surface Laptop for Business."

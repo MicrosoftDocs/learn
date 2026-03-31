@@ -3,9 +3,9 @@ uid: learn.wwl.implement-windows-server-data-deduplication
 metadata:
   title: Implement Windows Server Data Deduplication
   description: "Implement Windows Server Data Deduplication"
-  ms.date: 01/01/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Implement Windows Server Data Deduplication

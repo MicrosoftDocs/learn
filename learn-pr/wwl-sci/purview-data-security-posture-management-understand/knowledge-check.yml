@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-understand.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check. 
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Why does data security posture management (DSPM) focus on posture rather than individual alerts or policy results?"
+    choices:
+    - content: "Because posture replaces the need for investigations and enforcement tools."
+      isCorrect: false
+      explanation: "Incorrect: DSPM does not replace investigations or enforcement tools. It helps decide when to use them."
+    - content: "Because alerts and policy results are unreliable in large environments."
+      isCorrect: false
+      explanation: "Incorrect: Alerts and policy results are reliable, but they represent individual signals rather than overall exposure."
+    - content: "Because posture provides a view of data risk and protection across the environment over time."
+      isCorrect: true
+      explanation: "Correct: DSPM focuses on posture to understand patterns, trends, and exposure rather than isolated events."
+
+  - content: "How does DSPM evaluate data security posture in dynamic environments?"
+    choices:
+    - content: "By continuously assessing signals to reflect current conditions and changes over time."
+      isCorrect: true
+      explanation: "Correct: DSPM continuously evaluates posture so risk reflects how data is actually being used and exposed."
+    - content: "By assigning a single compliance score based on configured policies."
+      isCorrect: false
+      explanation: "Incorrect: Posture is a composite view of risk and protection, not a single score."
+    - content: "By running periodic scans and validating results at fixed intervals."
+      isCorrect: false
+      explanation: "Incorrect: DSPM does not rely on point-in-time scans alone."
+
+  - content: "What role do data security objectives play in data security posture management?"
+    choices:
+    - content: "They organize risk into outcome-driven workflows that connect assessment, action, and validation."
+      isCorrect: true
+      explanation: "Correct: Objectives group signals, recommendations, and progress around specific risk outcomes."
+    - content: "They replace the need to work directly in DLP, Audit, or Insider Risk Management."
+      isCorrect: false
+      explanation: "Incorrect: Objectives change how tools are navigated, not whether they are used."
+    - content: "They list configuration tasks that must be completed for compliance."
+      isCorrect: false
+      explanation: "Incorrect: Objectives are not checklists or static configuration lists."
+
+  - content: "How does AI contribute to data security posture management?"
+    choices:
+    - content: "By acting as a separate decision-making layer outside of DSPM objectives."
+      isCorrect: false
+      explanation: "Incorrect: AI operates within DSPM posture and objectives, not alongside them."
+    - content: "By assisting with analysis, prioritization, and interpretation of posture signals."
+      isCorrect: true
+      explanation: "Correct: AI supports understanding and insight while control and actions remain with people and policies."
+    - content: "By automatically enforcing policies and taking corrective actions."
+      isCorrect: false
+      explanation: "Incorrect: AI in DSPM does not perform autonomous enforcement."
+
+  - content: "Which statement best describes how DSPM fits with tools like DLP, Insider Risk Management, Audit, and investigations?"
+    choices:
+    - content: "DSPM is only used after incidents are confirmed through investigations."
+      isCorrect: false
+      explanation: "Incorrect: DSPM is designed to guide action before incidents occur, not only after."
+    - content: "DSPM replaces these tools by consolidating enforcement and investigation in one place."
+      isCorrect: false
+      explanation: "Incorrect: DSPM does not replace enforcement or investigation tools."
+    - content: "DSPM helps decide where and when to apply these tools based on data risk and exposure."
+      isCorrect: true
+      explanation: "Correct: DSPM provides context and prioritization so follow-up actions are intentional."

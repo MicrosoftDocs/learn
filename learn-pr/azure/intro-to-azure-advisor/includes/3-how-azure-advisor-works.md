@@ -29,22 +29,22 @@ You can download a summary of Advisor's recommendations in a CSV or PDF format. 
 
 ## Receive alerts based on recommendations
 
-When Advisor detects a new recommendation, it's stored in the Azure activity log. You can then set up alerts for the stored events. Select **Alerts** from the **Monitoring** option on the menu and choose **New Advisor Alert**.
+When Advisor detects a new recommendation, it stores it in the Azure activity log. You can then set up alerts for the stored events. Select **Alerts** from the **Monitoring** option on the menu and choose **New Advisor Alert**.
 
 :::image type="content" source="../media/3-advisor-alert.png" alt-text="Screenshot showing the Alerts option in the main menu and the option to create a new advisor alert." lightbox="../media/3-advisor-alert.png":::
 
-You need to define a scope by selecting a subscription and, optionally, a resource group. 
+You need to define a scope by selecting a subscription and, optionally, a resource group.
 
-Alerts are driven by conditions. Here you have two mutually exclusive options:
+Conditions are what drives Alerts. Here you have two mutually exclusive options:
 
-* **Category and impact level**: In this option, you can choose between the categories of *Cost*, *Performance*, *Reliability*, and *Operational excellence*, with an impact level of (*High*, *Medium*, or *Low*). Both of these are optional configurations.
-* **Recommendation Type**: If you select recommendation type, you can choose the most appropriate option for your needs from the dropdown list. 
+- **Category and impact level**: In this option, you can choose between the categories of *Cost*, *Security*, *Performance*, *Reliability*, and *Operational excellence*, with an impact level of (*High*, *Medium*, or *Low*). Both of these configurations are optional.
+- **Recommendation Type**: If you select recommendation type, you can choose the most appropriate option for your needs from the dropdown list.
 
 :::image type="content" source="../media/3-create-alerts-scope-condition.png" alt-text="Screenshot showing the scope and condition sections of the dialog for creating an Advisor alert." lightbox="../media/3-create-alerts-scope-condition.png":::
 
-You can also configure action groups. An action group is a collection of notification preferences defined by the *owner* of an Azure subscription. Azure Monitor, Azure Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
+You can also configure action groups. An action group is a collection of notification preferences defined by the *owner* of an Azure subscription. Azure Monitor, Azure Service Health, and Azure Advisor use action groups to notify users that an alert was triggered.
 
-Finally, you can also specify some important details such as an alert rule name and an optional description. You can also choose whether the alert is enabled or not when you create it, and specify a resource group where the alert will be saved.
+Finally, you can specify some important details such as an alert rule name and an optional description. Also, you can choose whether the alert is enabled when you create it, and specify a resource group where the alert is saved.
 
 :::image type="content" source="../media/3-create-alerts-action-groups.png" alt-text="Screenshot showing the action groups and alert details sections of the dialog for creating an Advisor alert." lightbox="../media/3-create-alerts-action-groups.png":::
 
@@ -58,9 +58,9 @@ You can configure e-mail reports in the **Recommendation digests** option, under
 
 Choose a subscription and select the frequency, recommendation category, and language options for your first digest.
 
-* **Frequency**: Choose from *Weekly*, *Bi-weekly*, and *Monthly*.
-* **Recommendation** category: Choose all or some of the categories *Reliability*, *Security*, *Performance*, *Operational excellence*, and *Cost*.
-* **Language**: Choose your preferred language from the dropdown list.
+- **Frequency**: Choose from *Weekly*, *Bi-weekly*, and *Monthly*.
+- **Recommendation** category: Choose all or some of the categories *Reliability*, *Security*, *Performance*, *Operational excellence*, and *Cost*.
+- **Language**: Choose your preferred language from the dropdown list.
 
 You can associate the digest with an existing action group, or create a new one, and give the digest a name. You can disable a recommendation digest if you want to pause the summaries.
 
@@ -74,15 +74,15 @@ Let's explore the recommendation types in a little more detail.
 
 Azure Advisor helps you to identify idle and underutilized resources. You can get cost recommendations from the **Cost** tab on the Advisor dashboard. As an example, consider usage surrounding virtual machines. Advisor can make recommendations such as:
 
-* Shutdown of a virtual machine (VM) if it's not being utilized. Advisor can make this recommendation if: 
-  * Network utilization is less than 2% over a seven-day period.
-  * P95th of the maximum value of CPU utilization summed across all cores is less than 3%.
-  * P100 of average CPU in last three days summed over all cores is less than or equal to 2%.
-* Resize the VM to save resource utilization. Advisor will recommend a resize if:
-  * The current load doesn't go above 80% utilization for non user-facing workloads.
-  * The current load doesn't go above 40% utilization for user-facing workloads.
+- Shutdown of a virtual machine (VM) if it's not being utilized. Advisor can make this recommendation if: 
+  - Network utilization is less than 2% over a seven-day period.
+  - P95th of the maximum value of CPU utilization summed across all cores is less than 3%.
+  - P100 of average CPU in last three days summed over all cores is less than or equal to 2%.
+- Resize a VM to save on resource utilization. Advisor recommends a resize if:
+  - The current load doesn't go above 80% utilization for non user-facing workloads.
+  - The current load doesn't go above 40% utilization for user-facing workloads.
 
-The estimated cost savings will be displayed for the recommended actions, to help you make a decision.
+The estimated cost savings are displayed for the recommended actions, to help you make a decision.
 
 ### Security recommendations
 
@@ -94,25 +94,25 @@ Security recommendations are integrated with Microsoft Defender for Cloud. You c
 
 Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the **Reliability** tab of the Advisor dashboard. Reliability checks include:
 
-* Version of Check Point network virtual appliance image.
-* Application gateway fault tolerance.
-* Virtual machines with no backup enabled.
-* Subscriptions without Azure Service Health alerts configured.
-* Traffic Manager profiles with only one endpoint.
-* See the full list in the [reliability guide](/azure/advisor/advisor-high-availability-recommendations)
+- Version of Check Point network virtual appliance image.
+- Application gateway fault tolerance.
+- Virtual machines with no backup enabled.
+- Subscriptions that don't have Azure Service Health alerts configured.
+- Traffic Manager profiles with only one endpoint.
+- The full list is available in the [reliability guide](/azure/advisor/advisor-high-availability-recommendations).
 
 ### Operational excellence recommendations
 
 Operational excellence recommendations can be found on the **Operational excellence** tab of the Advisor dashboard. Operational excellence recommendations can help you with:
 
-* Process and workflow efficiency.
-* Resource manageability.
-* Deployment best practices.
+- Process and workflow efficiency.
+- Resource manageability.
+- Deployment best practices.
 
 :::image type="content" source="../media/3-advisor-operational-excellence.png" alt-text="Screenshot showing operational excellence recommendations for a subscription, with impact rated high, medium, or low." lightbox="../media/3-advisor-operational-excellence.png":::
 
 ### Performance recommendations
 
-The performance recommendations, on the **Performance** tab, can help you improve the speed and responsiveness of your business-critical applications. 
+The performance recommendations, on the **Performance** tab, can help you improve the speed and responsiveness of your business-critical applications.
 
-Many of these recommendations are concerned with Traffic Manager performance, database performance for SQL Database, app service performance and reliability, and managed disk I/O throttling. The full list is available on the [performance efficiency recommendation page](/azure/advisor/advisor-performance-recommendations).
+Many of these recommendations are concerned with Traffic Manager performance. Also, database performance for SQL Database, app service performance and reliability, and managed disk I/O throttling. The full list is available on the [performance efficiency recommendation page](/azure/advisor/advisor-performance-recommendations).

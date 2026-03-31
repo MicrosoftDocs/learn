@@ -1,75 +1,83 @@
-## Deploying Zero Trust for Microsoft 365
+As a security architect, you need to evaluate how Microsoft Intune addresses your organization's device management requirements. Intune is a cloud-based endpoint management solution that manages user access to organizational resources, simplifies app and device management across mobile devices, desktops, and virtual endpoints, and supports the Zero Trust security model through compliance and reporting features.
 
-Microsoft 365 is built intentionally with many security and information protection capabilities to help you build Zero Trust into your environment. Many of the capabilities can be extended to protect access to other SaaS apps your organization uses and the data within these apps.
+## Evaluate Intune device management capabilities
 
-This illustration represents the work of deploying Zero Trust capabilities. This work is broken into units of work that can be configured together, starting from the bottom and working to the top to ensure that prerequisite work is complete.
+[Microsoft Intune](/intune/intune-service/fundamentals/what-is-intune) provides two primary management approaches that you can use independently or together, depending on your organization's requirements.
 
-![Diagram showing the Microsoft 365 Zero Trust deployment stack.](../media/microsoft-365-zero-trust-deployment-stack.png)
+### Mobile device management (MDM)
 
-In this illustration:
+MDM gives you full control over enrolled devices. When devices enroll in Intune, they receive policies that configure settings, enforce security requirements, and manage features. MDM is appropriate for organization-owned devices where you need to control passwords, VPN configurations, threat protection settings, and certificate deployment.
 
--   Zero Trust begins with a foundation of identity and device protection.
--   Threat protection capabilities are built on top of this foundation to provide real-time monitoring and remediation of security threats.
--   Information protection and governance provide sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
+Intune MDM supports multiple platforms, including Windows, macOS, iOS/iPadOS, Android, and Linux. Each platform has specific enrollment methods and configuration capabilities. For Windows devices, [Windows Autopilot](/autopilot/overview) automates device provisioning and preconfiguration, simplifying the deployment lifecycle from initial setup through end of life.
 
-This article assumes you have already configured cloud identity. If you need guidance for this objective, see [**Deploy your identity infrastructure for Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
+### Mobile application management (MAM)
 
-## Step 1: Configure Zero Trust identity and device access protection — starting-point policies
+MAM protects organizational data at the application level without requiring full device enrollment. This approach is ideal for bring-your-own-device (BYOD) scenarios where users access corporate resources from personal devices. [App protection policies](/intune/intune-service/apps/app-protection-policy) enforce rules that control how data is accessed and shared within managed apps. For example, you can prevent users from copying corporate data into personal apps, require a PIN to open work applications, or block saving corporate files to personal storage.
 
-The first step is to build your Zero Trust foundation by configuring identity and device access protection.
+MAM works independently of any MDM solution. You can apply app protection policies to devices enrolled in Intune, enrolled in a non-Microsoft MDM, or not enrolled in any management solution. For enrolled devices, combining MDM with MAM provides both device-level and app-level protection.
 
-:::image type="content" source="../media/microsoft-365-zero-trust-architecture-step-1b.png" alt-text="Diagram showing the process to configure Zero Trust identity and device access protection." lightbox="../media/microsoft-365-zero-trust-architecture-step-1b.png":::
+### App protection policy framework
 
-Go to [**_Zero Trust identity and device access protection_**](/microsoft-365/security/office-365-security/microsoft-365-policies-configurations?view=o365-worldwide) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
+Intune organizes app protection policies into three levels that align to increasing security requirements:
 
-Device enrollment for policies that require managed devices. See [Step 2. Manage endpoints with Intune](/microsoft-365/security/microsoft-365-zero-trust?view=o365-worldwide#step-2-manage-endpoints-with-intune) to enroll devices.
+- **Level 1 (Enterprise basic)**: Minimum data protection recommended for all enterprise devices.
+- **Level 2 (Enterprise enhanced)**: Recommended for devices that access sensitive or confidential information. Some controls might affect user experience.
+- **Level 3 (Enterprise high)**: Recommended for devices used by high-risk users or in environments with highly sensitive data, where unauthorized disclosure causes material loss.
 
-Start by implementing the starting-point tier. These policies do not require enrolling devices into management.
+## Evaluate endpoint security policies
 
-:::image type="content" source="../media/identity-access-starting-point-tier.png" alt-text="Diagram showing the Zero Trust identity and device access policies — starting-point tier." lightbox="../media/identity-access-starting-point-tier.png":::
+Intune provides [endpoint security policies](/intune/intune-service/protect/endpoint-security-policy) that focus specifically on device security. These policies are separate from device configuration profiles and compliance policies, providing a dedicated surface for security-focused management.
 
-## Step 2: Manage endpoints with Intune
+The following endpoint security policy types are available:
 
-Next, enroll your devices into management and begin protecting these with more sophisticated controls.
+| Policy type | Purpose |
+|---|---|
+| **Antivirus** | Configures and manages Microsoft Defender Antivirus settings across Windows, macOS, and Linux |
+| **Disk encryption** | Manages BitLocker (Windows) and FileVault (macOS) for data-at-rest protection |
+| **Firewall** | Configures built-in firewall rules and network access controls |
+| **Endpoint detection and response** | Onboards devices to Microsoft Defender for Endpoint and configures advanced threat detection |
+| **Attack surface reduction** | Reduces attack vectors through rules that target behaviors used by malware, device control policies, and exploit protection |
+| **Account protection** | Protects user identities through Windows Hello for Business, credential guard, and Local Administrator Password Solution (LAPS) |
+| **App Control for Business** | Controls which applications can run on Windows devices using Windows Defender Application Control (WDAC) |
 
-:::image type="content" source="../media/microsoft-365-zero-trust-architecture-step-2.png" alt-text="Diagram showing the Manage endpoints with Intune element." lightbox="../media/microsoft-365-zero-trust-architecture-step-2.png":::
+For organizations that use Microsoft Defender for Endpoint, Intune supports [security settings management](/intune/intune-service/protect/mde-security-integration) that extends endpoint security policies to devices onboarded to Defender but not enrolled in Intune. This capability provides consistent security controls across enrolled and unenrolled devices.
 
-Go to [**_Manage devices with Intune_**](/microsoft-365/solutions/manage-devices-with-intune-overview?view=o365-worldwide) for prescriptive guidance to accomplish this.
+## Evaluate compliance and Conditional Access integration
 
-## Step 3: Add Zero Trust identity and device access protection — Enterprise policies
+[Device compliance policies](/intune/intune-service/protect/device-compliance-get-started) define the rules and conditions that devices must meet to be considered compliant. Common compliance rules include minimum OS version requirements, password complexity, maximum device threat level (when integrated with a Mobile Threat Defense partner), and encryption status.
 
-With devices enrolled into management, you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
+Compliance policies become most effective when integrated with [Microsoft Entra Conditional Access](/intune/intune-service/protect/conditional-access). This integration creates a Zero Trust access control mechanism:
 
-:::image type="content" source="../media/microsoft-365-zero-trust-architecture-enterprise-policies.png" alt-text="Diagram showing the Zero Trust identity and access policies with device management." lightbox="../media/microsoft-365-zero-trust-architecture-enterprise-policies.png":::
+1. Intune evaluates device compliance against your defined policies.
+2. The compliance status is reported to Microsoft Entra ID.
+3. Conditional Access policies use the compliance status to grant or block access to organizational resources.
 
-Return to [**_Common identity and device access policies_**](/microsoft-365/security/office-365-security/identity-access-policies?view=o365-worldwide) and add the policies in the Enterprise tier.
+You can implement device-based Conditional Access that requires devices to be marked as compliant before accessing Microsoft 365 services, SaaS applications, or on-premises resources. For apps where device enrollment isn't feasible, app-based Conditional Access works with Intune app protection policies to ensure only managed apps can access corporate data.
 
-:::image type="content" source="../media/identity-access-enterprise-tier.png" alt-text="Diagram showing the Zero Trust identity and access policies — Enterprise (recommended) tier." lightbox="../media/identity-access-enterprise-tier.png":::
+### Actions for noncompliance
 
-## Step 4: Evaluate, pilot, and deploy Microsoft Defender XDR
+Compliance policies support configurable [actions for noncompliance](/intune/intune-service/protect/actions-for-noncompliance) that execute in a time-ordered sequence. These actions include sending notifications to the user, remotely locking the device, marking the device as noncompliant (which triggers Conditional Access enforcement), and retiring noncompliant devices with removal of corporate data.
 
-Microsoft Defender XDR is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment, including endpoint, email, applications, and identities.
+## Design considerations for Intune
 
-:::image type="content" source="../media/microsoft-365-zero-trust-architecture-defender.png" alt-text="Diagram showing the process of adding Microsoft Defender XDR to the Zero Trust architecture." lightbox="../media/microsoft-365-zero-trust-architecture-defender.png":::
+When you evaluate Intune for your organization, consider the following:
 
-Go to [**_Evaluate and pilot Microsoft Defender XDR_**](/microsoft-365/security/defender/eval-overview?view=o365-worldwide) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
+- **Enrollment strategy**: Determine which devices require full MDM enrollment and which scenarios suit MAM-only protection. Organization-owned devices typically benefit from MDM, while BYOD scenarios often work best with MAM or MAM combined with lightweight enrollment.
+- **Security baselines**: Use [Intune security baselines](/intune/intune-service/protect/security-baselines) as a starting point for device configuration. Baselines provide Microsoft-recommended security settings for Windows and other platforms, reducing the effort needed to establish a secure configuration.
+- **Endpoint security layering**: Layer endpoint security policies with compliance policies and Conditional Access to create defense in depth. Each layer addresses a different aspect of device security.
+- **Mobile Threat Defense integration**: Integrate a [Mobile Threat Defense partner](/intune/intune-service/protect/mobile-threat-defense) to add device threat level as a compliance signal. This extends compliance evaluation beyond configuration checks to include active threat detection.
+- **Platform coverage**: Assess the platforms in your environment and verify that Intune supports the enrollment methods, configuration profiles, and security policies required for each. Not all policy types are available on all platforms.
 
-See the guidance to read about the architecture requirements for each component of Microsoft Defender XDR.
+## Align with Microsoft cloud security benchmark v2
 
-## Step 5: Protect and govern sensitive data
+The [Microsoft cloud security benchmark v2 (MCSBv2)](/security/benchmark/azure/overview) provides a framework of security controls that you can use to validate your Intune design against Microsoft-recommended best practices. The **Endpoint Security (ES)** domain includes three controls, all rated "Must have," that map directly to Intune capabilities:
 
-Implement Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels.
+| MCSBv2 control | Intune alignment |
+|---|---|
+| **ES-1: Use Endpoint Detection and Response (EDR)** | Endpoint detection and response policies onboard devices to Microsoft Defender for Endpoint and integrate with Microsoft Defender XDR for cross-signal correlation. Security settings management extends EDR policies to devices not enrolled in Intune. |
+| **ES-2: Use modern anti-malware software** | Antivirus policies manage Microsoft Defender Antivirus with behavioral analytics and cloud-delivered protection. Attack surface reduction rules, exploit protection, and controlled folder access address advanced threat techniques. |
+| **ES-3: Ensure anti-malware software and signatures are updated** | Defender Update controls policies automate signature and engine updates. Compliance policies and Conditional Access enforce access restrictions for devices with outdated protection. |
 
-Microsoft Purview Information Protection capabilities are included with Microsoft Purview and give you the tools to know your data, protect your data, and prevent data loss.
+Beyond endpoint security, Intune also supports controls in other MCSBv2 domains. Compliance policies integrated with Conditional Access align with **Identity Management (IM)** controls for device-based access enforcement. App protection policies and disk encryption align with **Data Protection (DP)** controls for protecting data at rest and in transit. Device inventory and configuration management capabilities support **Asset Management (AM)** controls for maintaining security visibility across your endpoint estate.
 
-:::image type="content" source="../media/microsoft-365-zero-trust-architecture-info-protect.png" alt-text="Diagram showing the Information protection capabilities protecting data through policy enforcement." lightbox="../media/microsoft-365-zero-trust-architecture-info-protect.png":::
 
-While this work is represented at the top of the deployment stack illustrated earlier in this article, you can begin this work anytime.
-
-Microsoft Purview Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
-
-:::image type="content" source="../media/purview-information-protection-solution-overview.png" alt-text="Diagram showing Microsoft Purview Information Protection." lightbox="../media/purview-information-protection-solution-overview.png":::
-
-For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Purview Information Protection solution_**](/microsoft-365/compliance/information-protection-solution?view=o365-worldwide).
-
-If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [**_Deploy information protection for data privacy regulations with Microsoft 365_**](/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide).

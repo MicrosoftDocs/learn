@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-namespaces
 title: Namespaces for Azure Kubernetes Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Namespaces for Azure Kubernetes Service
   description: "Namespaces for Azure Kubernetes Service"
   ms.date: 02/14/2025

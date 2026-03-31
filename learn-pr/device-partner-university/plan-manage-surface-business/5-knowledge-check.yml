@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.plan-manage-surface-business.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Plan and manage Surface for Business deployments" module.
+  ms.date: 11/25/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the main purpose of the Surface Management Portal?"
+    choices:
+        - content: "To design Surface hardware components"
+          isCorrect: false
+          explanation: "Incorrect. The portal doesn't handle hardware design."
+        - content: "To simplify Surface device lifecycle management"
+          isCorrect: true
+          explanation: "Correct. It centralizes enrollment, policy application, and monitoring."
+        - content: "To replace Microsoft Teams for collaboration"
+          isCorrect: false
+          explanation: "Incorrect. It supports Teams but doesn't replace it."
+        - content: "To provide free Microsoft Intune subscriptions"
+          isCorrect: false
+          explanation: "Incorrect. Intune is required but not provided for free by the portal."
+  - content: "Which prerequisite is required to access the Surface Management Portal?"
+    choices:
+        - content: "A Surface Slim Pen accessory"
+          isCorrect: false
+          explanation: "Incorrect. Accessories are optional, not a prerequisite."
+        - content: "A Microsoft Teams license"
+          isCorrect: false
+          explanation: "Incorrect. Teams is preconfigured but not required for portal access."
+        - content: "A Microsoft Intune subscription"
+          isCorrect: true
+          explanation: "Correct. Intune is mandatory to unlock portal access."
+        - content: "A Windows Autopilot profile"
+          isCorrect: false
+          explanation: "Incorrect. Autopilot helps enrollment but isn't the main prerequisite."
+  - content: "What AI feature on Surface devices improves video calls?"
+    choices:
+        - content: "Windows Studio Effects"
+          isCorrect: true
+          explanation: "Correct. It uses AI to enhance video call quality."
+        - content: "BitLocker encryption"
+          isCorrect: false
+          explanation: "Incorrect. It secures data, not video calls."
+        - content: "Microsoft Whiteboard"
+          isCorrect: false
+          explanation: "Incorrect. It supports collaboration, not video enhancement."
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: "Incorrect. It provides accessibility, not video enhancement."
+  - content: "Why should deployment goals be defined before rolling out Surface devices?"
+    choices:
+        - content: "To reduce hardware costs"
+          isCorrect: false
+          explanation: "Incorrect. Goals focus on collaboration, not cost reduction."
+        - content: "To avoid using Microsoft Intune"
+          isCorrect: false
+          explanation: "Incorrect. Intune is required for management."
+        - content: "To eliminate the need for accessories"
+          isCorrect: false
+          explanation: "Incorrect. Accessories are optional and unrelated to goals."
+        - content: "To align devices with collaboration needs"
+          isCorrect: true
+          explanation: "Correct. Goals ensure devices support real teamwork."
+  - content: "Which method can enroll Surface devices into Intune?"
+    choices:
+        - content: "Installing Microsoft Teams"
+          isCorrect: false
+          explanation: "Incorrect. Teams is a collaboration tool, not an enrollment method."
+        - content: "Purchasing Copilot+ PCs"
+          isCorrect: false
+          explanation: "Incorrect. Device type doesn't enroll them automatically."
+        - content: "Using Windows Autopilot"
+          isCorrect: true
+          explanation: "Correct. Autopilot is one of the supported enrollment methods."
+        - content: "Configuring Live Captions"
+          isCorrect: false
+          explanation: "Incorrect. This is a feature, not an enrollment process."

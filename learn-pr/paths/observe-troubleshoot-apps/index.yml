@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.observe-troubleshoot-apps
+metadata:
+  title: Observe and Troubleshoot Apps on Azure
+  description: Learn how to instrument distributed applications with OpenTelemetry and analyze telemetry data with Azure Monitor to observe and troubleshoot AI solutions on Azure.
+  ms.date: 02/20/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Observe and troubleshoot apps on Azure
+prerequisites: |
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with distributed application architectures.
+summary: |
+  This learning path teaches you how to gain end-to-end observability into distributed AI applications on Azure. You start by instrumenting applications with OpenTelemetry to capture distributed traces, create custom spans, and export telemetry to Azure Monitor Application Insights. You then analyze the collected telemetry by writing KQL queries, exploring error patterns and performance trends, building dashboards and workbooks for operational visibility, and configuring alerts to detect failures and anomalies.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-monitor
+subjects:
+- artificial-intelligence
+- app-development
+modules:
+- learn.wwl.instrument-app-opentelemetry
+- learn.wwl.analyze-telemetry-logs-metrics
+trophy:
+  uid: learn.wwl.observe-troubleshoot-apps.trophy

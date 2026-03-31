@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-for-governance.implement-isolation-methods
+title: "Implement isolation methods"
+metadata:
+  title: "Implement isolation methods"
+  description: "Configure Unity Catalog isolation boundaries using administrative roles, workspace-to-catalog binding, and Azure storage separation."
+  ms.date: 10/21/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-implement-isolation-methods.md)]

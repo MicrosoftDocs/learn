@@ -20,7 +20,7 @@ Azure Backup stores backed-up data in vaults: Recovery Services vaults and Backu
 
 ### Supported backup types
 
-Azure Backup supports full backups and incremental backups. Your initial backup is a full backup. The incremental backup is used by DPM/MABS use the incremental backup for disk backups, and used in all backups to Azure. As the name suggests, incremental backups only focus on the blocks of data that changed since the previous backup.
+Azure Backup supports full backups and incremental backups. Your initial backup is a full backup. DPM/MABS use the incremental backup for disk backups, and all backups to Azure also use incremental backups. As the name suggests, incremental backups only focus on the blocks of data that changed since the previous backup.
 
 Azure Backup also supports SQL Server backup types. The following table outlines the support for SQL Server type backups:
 

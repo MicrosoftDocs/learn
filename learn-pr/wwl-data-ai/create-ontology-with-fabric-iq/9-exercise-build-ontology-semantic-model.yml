@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.exercise-build-ontology-semantic-model
+title: Exercise - Generate an ontology from a Power BI semantic model
+metadata:
+  title: Exercise - Generate an Ontology from a Power BI Semantic Model
+  description: "Hands-on practice generating an ontology automatically from a Power BI semantic model"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 40
+content: |
+  [!include[](includes/9-exercise-build-ontology-semantic-model.md)]

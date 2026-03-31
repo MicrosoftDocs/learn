@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-text-analysis-agent-language-mcp.exercise
+title: Exercise - Develop a text analysis agent
+metadata:
+  title: Exercise - Develop a text analysis agent
+  description: Use the Azure Language MCP server to create an AI agent that performs text analysis tasks.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 30
+content: |
+  [!include[](includes/04-exercise.md)]

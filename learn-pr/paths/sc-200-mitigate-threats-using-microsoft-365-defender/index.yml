@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender
 metadata:
-  title: 'SC-200: Mitigate threats using Microsoft Defender XDR'
-  description: 'SC-200: Mitigate threats using Microsoft Defender XDR'
-  ms.date: 10/22/2024
-  author: wwlpublish
+  title: 'Mitigate threats using Microsoft Defender XDR'
+  description: 'Mitigate threats using Microsoft Defender XDR'
+  ms.date: 11/26/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Mitigate threats using Microsoft Defender XDR'
+title: 'Mitigate threats using Microsoft Defender XDR'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
   - Basic understanding of Microsoft Defender XDR

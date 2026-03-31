@@ -12,7 +12,7 @@ You can collect and act on the same monitoring data from Azure virtual machines 
 
 Virtual machines in Azure generate [logs](/azure/azure-monitor/platform/data-platform-logs) and [metrics](/azure/azure-monitor/platform/data-platform-metrics) as shown in the following diagram.
 
-:::image type="content" source="../media/azure-monitor-for-azure-virtual-desktop-image-c1a9c700.png" alt-text="Overview of Azure Monitor for Windows Virtual Machines.":::
+:::image type="content" source="../media/azure-monitor-for-azure-virtual-desktop-image-c1a9c700.png" alt-text="Screenshot of overview of Azure Monitor for Windows Virtual Machines.":::
 
 
 ## Virtual machine host
@@ -79,3 +79,4 @@ To enable all features of Azure Monitor for monitoring a virtual machine, you ne
     Metrics explorer for guest.Metrics alerts for guest.
   :::column-end:::
 :::row-end:::
+

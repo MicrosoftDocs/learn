@@ -5,7 +5,7 @@ Hypertext Markup Language, or HTML, is the core language used to create a web pa
 
 ## Introducing Tags and Elements
 
-If you've ever had to format text like make it bold or enlarge the font, you may not have thought about what goes on "behind the scenes."
+When you format text like make it bold or enlarge the font, you don't always think about what goes on "behind the scenes."
 
 When you experience text on a web page, the browser does the work to format it using code. HTML code is behind what is displayed. The code tells the browser what to do to make the text appear the way it does.
 
@@ -18,9 +18,9 @@ A tag and any content between the open and close is called an **element**
 - This is an element: `<strong> Make me bold </strong>`
 
 > [!IMPORTANT] 
-> You will often hear developers use the terms tag and element interchangeably. While they do technically mean different things, in most conversation, the slight difference in meaning isn't important.
+> You often hear developers use the terms tag and element interchangeably. While they do technically mean different things, in most conversation, the slight difference in meaning isn't important.
 
-Headers are common elements that are numbered one through six, with one being the top of the hierarchy and six being the lowest. These are written as `h1` through `h6`. If you want to add a top-level heading to a page to display the word **Resume**, you could use:
+Headers are common elements that are numbered one through six, with one being the top of the hierarchy and six being the lowest. Headers are written as `h1` through `h6`. If you want to add a top-level heading to a page to display the word **Resume**, you could use:
 
 ```html
 <h1>Resume</h1>
@@ -32,4 +32,4 @@ The following video demonstrates how HTML gets transformed by browsers into form
 
 ## Learning How to Use Tags
 
-There are many tags available for programmers to use. Knowing which ones are available and how they're used is called **syntax**. At this point, we won't get bogged down in the details. What's important is that you understand what a tag is and how it's used to make up an element.
+There are many tags available for programmers to use. Knowing which ones are available and how they're used is called **syntax**. At this point, we avoid being bogged down in the details. What's important is that you understand what a tag is and how it's used to make up an element.

@@ -2,8 +2,8 @@
 uid: learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-platform-metrics
 title: Azure Monitor platform metrics
 metadata:
-  title: Azure Monitor platform metrics
-  description: Discover how to use Azure Monitor platform metrics to monitor Azure Machine Learning resources
+  title: Azure Monitor Platform Metrics
+  description: Discover how to use Azure Monitor platform metrics to monitor Azure Machine Learning resources.
   ms.date: 03/15/2025
   author: Orin-Thomas
   ms.author: viniap

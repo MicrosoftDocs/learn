@@ -2,8 +2,6 @@
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.explain-apache-spark-snalytics
 title: Explain Apache Spark in Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explain Apache Spark in Azure Synapse Analytics
   description: "Explain Apache Spark in Azure Synapse Analytics"
   ms.date: 06/23/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-explain-apache-spark-snalytics.md)]
+  [!include[](includes/5-explain-apache-spark-snalytics.md)]

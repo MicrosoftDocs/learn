@@ -1,5 +1,9 @@
 Azure Backup provides [operational backup for Azure blobs](/azure/backup/blob-backup-overview), which is a local backup solution for Azure Blob Storage. In this backup method, your backup data is stored in your source Azure storage account rather than being transferred to an Azure Backup storage vault. 
 
+In this video, the instructor discusses blob soft delete and versioning.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2e6903f1-bae6-493b-a9b3-138d15dc0215]
+
 ### Things to know about Azure Blob Storage backup and recovery
 
 Here are some of the prominent features available for backup and recovery of Azure Blob Storages.

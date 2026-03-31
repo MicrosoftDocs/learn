@@ -3,7 +3,7 @@ In this exercise, you create an Azure OpenAI deployment. Creating a deployment o
 > [!NOTE]
 > To complete this exercise, you need the following:
 >
-> - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
+> - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 > - Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
 > - An Azure OpenAI resource. If you haven't created this yet, refer to the previous exercise before moving on.
 

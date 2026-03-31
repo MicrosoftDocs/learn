@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.identify-migration-tool-options
 title: Identify migration tool options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify migration tool options
   description: "Identify migration tool options."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-identify-migration-tool-options.md)]
+  [!include[](includes/3-identify-migration-tool-options.md)]

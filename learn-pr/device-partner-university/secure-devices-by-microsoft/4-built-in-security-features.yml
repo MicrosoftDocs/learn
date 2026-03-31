@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.secured-devices-by-microsoft.built-in-security-features
+title: Built-in security features
+metadata:
+  title: Built-In Security Features
+  description: This content is part of the "Secure at every layer with Microsoft Surface" module.
+  ms.date: 02/03/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-built-in-security-features.md)]

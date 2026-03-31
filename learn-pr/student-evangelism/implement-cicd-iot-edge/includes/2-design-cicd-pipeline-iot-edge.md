@@ -1,20 +1,20 @@
-An automated CI/CD strategy addresses two main problems.
+An automated CI/CD strategy addresses two main problems:
 
-- Creating a smoke-testing strategy for Azure IoT Edge devices.
-- Integrate code from several developers as an automated process through a DevOps (continuous integration and continuous delivery) strategy.
+- Creating a smoke-testing strategy for Azure IoT Edge devices
+- Integrating code from several developers as an automated process through a DevOps (continuous integration and continuous delivery) strategy
 
-In this unit, we'll plan the sequence of steps needed to implement a solution to this problem statement.
+In this unit, you plan the sequence of steps needed to implement a solution to this problem statement.
 
 ## Benefits of a testing strategy
 
 Designing an automated smoke-testing strategy provides many benefits.
 
-- Deploying to virtual IoT devices is cheaper than deploying to physical IoT devices.
+- Deploying to virtual IoT devices costs less than deploying to physical IoT devices.
 - A successful smoke test ensures that the program is ready for further testing.
 - Automated smoke testing avoids expensive rework for more sophisticated tests.
-- Optimizing the time for your developer and the test teams.
+- Optimizes time for developers and test teams.
 
-To implement this solution, you'll create a smoke test as a subset of your main functionality. The test should be self-scoring, automated, and able to run on virtual IoT devices. Also, the test should incorporate the principles of DevOps (continuous integration and continuous delivery) for IoT Edge devices.
+To implement this solution, create a smoke test as a subset of the main functionality. The test must be self-scoring, automated, and capable of running on virtual IoT devices. The test must also incorporate the principles of DevOps, such as continuous integration and continuous delivery, for IoT Edge devices.
 
 ## Testing solution components
 
@@ -26,7 +26,7 @@ You'll use the following components in the overall design:
 
 - **Azure IoT Hub:** Service that enables us to connect, monitor, and manage IoT devices securely.
 
-- **Azure Pipelines:** A service that automates your builds and deployments.
+- **Azure Pipelines:** A service that automates builds and deployments.
 
 ## Test script requirements
 

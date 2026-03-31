@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.exercise-create-configure-container-app-azure-container-apps
 title: Exercise - Create and configure a container app in Azure Container Apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create and configure a container app in Azure Container Apps
   description: "Exercise - Create and configure a container app in Azure Container Apps"
   ms.date: 10/31/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 25
 content: |
-  [!include[](includes/4-exercise-create-configure-container-app-azure-container-apps.md)]
+  [!include[](includes/4-exercise-create-configure-container-app-azure-container-apps.md)]

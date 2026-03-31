@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.adopt-ai-agent-best-practice.cloud-adoption-framework
+title: Cloud Adoption Framework
+metadata:
+  title: Cloud Adoption Framework
+  description: Understand the Microsoft Cloud Adoption Framework for Azure provides best practices.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-cloud-adoption-framework.md)]

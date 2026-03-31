@@ -1,4 +1,11 @@
-Azure offers several compute services. _Compute_ refers to the hosting model for the computing resources that your applications run on. 
+Azure offers several compute services. _Compute_ refers to the hosting model for the computing resources that your applications run on. Azure provides a decision [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) with high-level guidance for how to select the appropriate Azure compute service for your scenario. 
+
+> [!NOTE]
+> The following diagram only shows the Azure services described in this module. 
+
+The output from this decision flowchart is a **starting point** for your planning. You need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
+
+:::image type="content" source="../media/compute-flowchart.png" alt-text="Diagram that shows considerations and options for Azure compute solutions." border="false":::
 
 ### Things to know about Azure compute services
 
@@ -53,19 +60,13 @@ The [hosting option](/azure/security/fundamentals/shared-responsibility) of your
 
 :::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram that highlights the developer and cloud provider responsibilities for infrastructure and platform services." border="false":::
 
-- **[Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/overview/what-is-iaas/)** lets you create individual virtual machines along with the associated networking and storage components. Then you deploy the software and applications you want onto those virtual machines. This model is the closest to a traditional on-premises environment, except that Microsoft manages the infrastructure. You still manage the individual virtual machines. Azure Virtual Machines offers IaaS hosting.
+- **[Software-as-a-Service (SaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas)** delivers software applications over the internet, on a subscription basis. Users can access these applications via a web browser without needing to manage the underlying infrastructure or application software. Microsoft 365 is an example of a SaaS solution, providing cloud-based productivity tools like Word, Excel, Outlook, and Teams.
 
-- **Platform-as-a-Service (PaaS)** provides a managed hosting environment, where you can deploy your application without needing to manage virtual machines or networking resources. Azure compute services that offer PaaS hosting include Azure Batch, App Service, Container Instances, and Azure Kubernetes Service.
+- **[Platform-as-a-Service (PaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-paas)** provides a managed hosting environment where developers can build, deploy, and manage applications without worrying about the underlying infrastructure. Azure handles the infrastructure, maintenance, and scalability, allowing developers to focus on writing code. Examples of Azure PaaS offerings include Azure App Services, Azure Functions, and Azure SQL Database.
 
-- **Function-as-a-Service (FaaS)** goes further in removing the need to worry about the hosting environment. In a FaaS model, you deploy your code, and the service automatically runs it. Azure Functions and Logic Apps offer FaaS hosting.
+- **[Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/overview/what-is-iaas/)** provides virtualized computing resources over the internet. It allows users to rent virtual machines, storage, and networking resources on-demand, without the need for physical hardware. Azure Virtual Machines is a prime example of an IaaS offering, where users can deploy and manage VMs inside an Azure virtual network.
 
-### Azure compute service decision flowchart 
+- **On-premises hosting** involves deploying and managing applications on local servers within an organization's own data center. This option provides the highest level of control over the infrastructure but requires significant investment in hardware, maintenance, and IT staff. Azure also supports hybrid cloud solutions, allowing integration between on-premises infrastructure and Azure services.
 
-Azure provides a decision [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) with high-level guidance for how to select the appropriate Azure compute service for your scenario. 
-
-> [!NOTE]
-> The following diagram has been edited to show only the Azure services described in this module. 
-
-The output from this decision flowchart is a **starting point** for your planning. You need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
-
-:::image type="content" source="../media/compute-flowchart.png" alt-text="Diagram that shows considerations and options for Azure compute solutions." border="false":::
+> [!TIP]
+> You can extend your study of Azure AI-ready compute solutions with the [Describe Azure compute and networking services](/training/modules/describe-azure-compute-networking-services/) module.

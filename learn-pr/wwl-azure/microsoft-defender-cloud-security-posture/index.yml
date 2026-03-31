@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-defender-cloud-security-posture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage security posture by using Microsoft Defender for Cloud
   description: "This module focuses on equipping administrators with the knowledge and skills needed to manage and enhance the security posture of their cloud environment using Microsoft Defender for Cloud, ensuring proactive identification and remediation of security risks."
   ms.date: 02/10/2025
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: module-intro-to-product
   ms.collection: N/A
   ms.custom:
@@ -27,7 +25,7 @@ abstract: |
 
   -   Connect hybrid and multicloud environments to Microsoft Defender for Cloud for centralized security management, and monitor external assets to safeguard against external threats.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-defender-module.svg
 levels:
 - intermediate
 roles:

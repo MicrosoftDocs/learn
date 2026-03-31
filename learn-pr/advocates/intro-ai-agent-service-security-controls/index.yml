@@ -4,6 +4,7 @@ metadata:
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 03/21/2025
+  ms.update-cycle: 180-days
   title: Introduction to AI Agent Service Security Controls
   description: An overview of Azure AI Agent Service security controls.
   ms.topic: module

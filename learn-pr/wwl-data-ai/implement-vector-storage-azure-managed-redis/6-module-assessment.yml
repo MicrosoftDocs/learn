@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-storage-azure-managed-redis.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 11/23/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which distance metric should you use for text embeddings?"
+    choices:
+    - content: "COSINE"
+      isCorrect: true
+      explanation: "COSINE distance measures the angle between vectors and is the standard metric for text embeddings regardless of the model source."
+    - content: "L2 (Euclidean)"
+      isCorrect: false
+      explanation: "L2 distance is better suited for image embeddings and spatial data where both magnitude and direction matter."
+    - content: "IP (Inner Product)"
+      isCorrect: false
+      explanation: "Inner Product is only used for pre-normalized embeddings or specialized models that require it."
+  - content: "When should you choose HNSW indexing over FLAT indexing for vector search?"
+    choices:
+    - content: "When you have large datasets (over 10,000 vectors) and need fast queries with acceptable 95-99% accuracy"
+      isCorrect: true
+      explanation: "HNSW provides approximate nearest neighbor search that's faster than FLAT on large datasets, with only a small accuracy tradeoff."
+    - content: "When you need perfect 100% accuracy for all queries"
+      isCorrect: false
+      explanation: "FLAT indexing provides exact search with 100% accuracy. HNSW is approximate and might not find the absolute best matches."
+    - content: "When you have fewer than 1,000 vectors to index"
+      isCorrect: false
+      explanation: "For small datasets under 10,000 vectors, FLAT indexing is simpler and provides perfect accuracy without significant performance penalty."
+  - content: "Which data type should you use for vector storage in most AI applications?"
+    choices:
+    - content: "FLOAT32"
+      isCorrect: true
+      explanation: "FLOAT32 balances precision with memory efficiency and works with all major embedding models, making it the standard choice."
+    - content: "FLOAT64"
+      isCorrect: false
+      explanation: "FLOAT64 uses twice the memory of FLOAT32 but provides no meaningful accuracy improvement for AI embeddings."
+    - content: "INT32"
+      isCorrect: false
+      explanation: "Integer types can't represent the floating-point values in AI model embeddings."
+  - content: "When should you use Redis Hash instead of JSON for storing vectors?"
+    choices:
+    - content: "When you have flat data models and need maximum memory efficiency and query performance"
+      isCorrect: true
+      explanation: "Hash stores vectors as binary blobs with minimal overhead, providing the best performance and memory usage for simple, flat data."
+    - content: "When your data has nested structures or multiple vectors per document"
+      isCorrect: false
+      explanation: "JSON is better for nested structures and complex data. Hash only supports flat field-value pairs."
+    - content: "When you need JSON query capabilities"
+      isCorrect: false
+      explanation: "If you need JSON query capabilities, you should use the JSON data structure, not Hash."
+  - content: "What does the EF_RUNTIME parameter control in HNSW queries?"
+    choices:
+    - content: "The tradeoff between query speed and accuracy by controlling how many graph nodes are examined"
+      isCorrect: true
+      explanation: "Higher EF_RUNTIME values improve accuracy by exploring more of the graph, but slow down queries. Lower values are faster but less accurate."
+    - content: "The maximum number of results returned by the query"
+      isCorrect: false
+      explanation: "The K parameter in the KNN query controls the number of results, not EF_RUNTIME."
+    - content: "The distance metric used for similarity calculations"
+      isCorrect: false
+      explanation: "The distance metric is set when creating the index, not at query time with EF_RUNTIME."

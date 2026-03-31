@@ -34,14 +34,14 @@ When creating or editing an alert, specify the following configurations:
 
 - **SCOPE:** Select the subscription and (optionally) the resource group for which you want to receive an alert.
 - **CONDITION:** Choose a specific category, impact level, or recommendation type for the alert.
-- **ACTION GROUPS:** Select an existing action group or create a new one to define the list of notifications that are sent when an alert is triggered, such as through email or SMS.
+- **ACTION GROUPS:** Select an existing action group or create a new one. Action Groups help define the list of notifications that are sent through email or SMS when an alert is triggered.
 - **ALERT DETAILS:** Provide a name and description for the alert. You can also choose to have the alert enabled or disabled when you save your changes.
 
 That's it! Once you configure and save the alert, you're notified whenever a new recommendation that matches those settings is available.
 
 ## Recommendation digests
 
-Another useful tool in managing your Advisor recommendations is through recommendation digests. This feature lets you configure periodic notifications that summarize all your active recommendations across different categories. Similar to Advisor alerts, you can choose how you want to be notified, such as through email, SMS or action groups.
+Another useful tool in managing your Advisor recommendations is through recommendation digests. This feature lets you configure periodic notifications that summarize all your active recommendations across different categories. Similar to Advisor alerts, you can choose how you want to be notified, such as through email, SMS, or action groups.
 
 ### How do I set up a recommendation digest?
 
@@ -60,7 +60,7 @@ Specify similar configurations as you did for Advisor Alerts:
 
 :::image type="content" source="../media/azure-advisor-recommendation-digest.png" alt-text="Screenshot showing the Add and Advisor recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest.png":::
 
-After you configured and saved the recommendation digest, you'll receive your notification as often as you indicated. The recommendation digest provides a summary of all your active recommendations across the different categories you specified.
+After you configure and save the recommendation digest, your notifications are received as often as you indicated. The recommendation digest provides a summary of all your active recommendations across the different categories you specified.
 
 ## Export Advisor reports
 

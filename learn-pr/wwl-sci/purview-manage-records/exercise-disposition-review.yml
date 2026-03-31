@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-manage-records.exercise-disposition-review
+title: Exercise - Configure disposition review for contract retention
+metadata:
+  title: Exercise - Configure disposition review for contract retention
+  description: "Exercise - Configure disposition review for contract retention."
+  ms.date: 07/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/exercise-disposition-review.md)]

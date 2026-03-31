@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.queue-process-operations-service-bus.structure-messages-ai-workloads
+title: Structure messages for AI workloads
+metadata:
+  title: Structure Messages for AI Workloads
+  description: Structure messages for AI workloads
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-structure-messages-ai-workloads.md)]

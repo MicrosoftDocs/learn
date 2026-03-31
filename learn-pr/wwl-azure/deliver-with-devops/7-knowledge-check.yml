@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deliver-with-devops.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/06/2024
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -59,4 +58,4 @@ quiz:
         - content: "To store and reuse data across steps in a workflow."
           isCorrect: false
           explanation: "Incorrect. This is the purpose of a variable in a GitHub Actions workflow."
-
+

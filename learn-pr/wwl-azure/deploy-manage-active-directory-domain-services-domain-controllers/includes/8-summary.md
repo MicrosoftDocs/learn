@@ -4,7 +4,7 @@ In this module, you learned about the components and functions of Active Directo
 
 You can learn more by reviewing the following documents.
 
- -  [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview?azure-portal=true).
- -  [Create a two-way forest trust in Microsoft Entra Domain Services with an on-premises domain](/azure/active-directory-domain-services/tutorial-create-forest-trust?azure-portal=true).
- -  [AD DS Deployment](/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
- -  [Planning Operations Master Role Placement](/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)
+- [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview?azure-portal=true).
+- [Create a two-way forest trust in Microsoft Entra Domain Services with an on-premises domain](/azure/active-directory-domain-services/tutorial-create-forest-trust?azure-portal=true).
+- [AD DS Deployment](/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
+- [Planning Operations Master Role Placement](/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)

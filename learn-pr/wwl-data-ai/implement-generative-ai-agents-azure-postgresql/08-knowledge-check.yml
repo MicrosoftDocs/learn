@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 10/24/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What are the two core capabilities that Azure Database for PostgreSQL provides for agentic architectures?
+    choices:
+    - content: Data encryption and backup
+      isCorrect: false
+      explanation: Incorrect. While important for database management, these features aren't the core capabilities for agentic architectures.
+    - content: Information retrieval and agent memory
+      isCorrect: true
+      explanation: Correct. PostgreSQL supports both information retrieval through pgvector and agent memory for maintaining context across workflows.
+    - content: User authentication and authorization
+      isCorrect: false
+      explanation: Incorrect. These options are security features, not the primary capabilities for supporting AI agents.
+  - content: Which framework is specifically designed for complex workflows and multi-agent coordination with branching logic?
+    choices:
+    - content: LangGraph
+      isCorrect: true
+      explanation: Correct. LangGraph is designed for multi-agent workflows with branching logic and memory.
+    - content: Semantic Kernel
+      isCorrect: false
+      explanation: Incorrect. Semantic Kernel emphasizes modularity and enterprise tool integration, not specifically multi-agent workflows.
+    - content: Autogen
+      isCorrect: false
+      explanation: Incorrect. While Autogen supports agent collaboration, LangGraph is specifically designed for complex workflow orchestration.
+  - content: In an agentic architecture, where does Model Context Protocol (MCP) fit?
+    choices:
+    - content: The architecture fits between the user interface and the database.
+      isCorrect: false
+      explanation: Incorrect. MCP operates at a different layer in the architecture.
+    - content: The architecture fits between the database and storage systems.
+      isCorrect: false
+      explanation: Incorrect. MCP isn't focused on data layer integration.
+    - content: The architecture fits between the orchestration layer and the tool layer.
+      isCorrect: true
+      explanation: Correct. MCP sits between orchestration frameworks and tools, enabling agents to dynamically access external capabilities.

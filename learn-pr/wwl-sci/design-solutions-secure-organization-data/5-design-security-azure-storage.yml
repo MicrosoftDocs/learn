@@ -4,10 +4,11 @@ title: Design security for Azure Storage
 metadata:
   title: Design security for Azure Storage
   description: "SC-100 preparatory unit on the topic: design security for Azure Storage."
-  ms.date: 3/15/2023
+  ms.date: 03/10/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+  ai-usage: ai-generated
+durationInMinutes: 7
 content: |
   [!include[](includes/5-design-security-azure-storage.md)]

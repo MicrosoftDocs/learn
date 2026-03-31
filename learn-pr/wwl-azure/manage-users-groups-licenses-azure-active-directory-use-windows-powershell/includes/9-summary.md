@@ -11,7 +11,7 @@ In this module you've learned how to use PowerShell to manage users, groups, and
 
 To learn more, go through the following documents:
 
-- [Get started with the Microsoft Graph PowerShell SDK​](https://aka.ms/get-started-with-the-Microsoft-Graph-PowerShell-SDK)
+- [Get started with the Microsoft Graph PowerShell SDK​](/powershell/microsoftgraph/get-started)
 - [Overview of Azure Cloud Shell​](https://aka.ms/overview-of-azure-cloud-shell-2)
 - [Compare groups​](https://aka.ms/compare-groups)
 

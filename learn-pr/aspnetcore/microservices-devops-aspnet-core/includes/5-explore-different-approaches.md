@@ -29,8 +29,8 @@ If you have more complex CD/CD workflows, Azure Pipelines can be scaled to suppo
 
 After reviewing the differences, you decide to change your app to use Azure Pipelines.
 
-1. Go to your forked repository, on the **:::no-loc text="Actions":::** tab.
-1. Select the **:::no-loc text="Build and deploy an app to AKS":::** workflow on the left.
+1. Go to your forked repository on the **:::no-loc text="Actions":::** tab.
+1. Select the **:::no-loc text="Build and deploy an app to AKS":::** workflow.
 1. Select the more options menu in the top right.
 
     :::image type="content" source="../media/5-disable-workflow.png" alt-text="A screenshot showing the Disabled workflow menu option for a GitHub Action workflow.":::

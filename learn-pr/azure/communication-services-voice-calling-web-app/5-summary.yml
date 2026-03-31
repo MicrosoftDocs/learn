@@ -2,14 +2,12 @@
 uid: learn.communication-services-voice-calling-webapp.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: A summary of what we learned in this module and some links to the next steps for learning.
   ms.date: 07/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: sloanster
+  ms.author: micahvivion
   ms.topic: unit
 durationInMinutes: 1
 content: |

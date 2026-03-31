@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.insider-risk-cases
+title: Manage and take action on insider risk cases
+metadata:
+  title: Manage and take action on insider risk cases
+  description: "Manage and take action on insider risk cases."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/insider-risk-cases.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-secure-ai-ready-infrastructure-azure-services.understand-microsoft-foundry-security-architecture
+title: "Understand Microsoft Foundry security architecture"
+metadata:
+  title: "Understand Microsoft Foundry Security Architecture"
+  description: "Learn how Microsoft Foundry Hubs enforce centralized security governance, ensuring consistency across AI projects while maintaining team autonomy."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-understand-microsoft-foundry-security-architecture.md)]

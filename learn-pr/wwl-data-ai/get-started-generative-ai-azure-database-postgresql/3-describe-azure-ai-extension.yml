@@ -2,13 +2,11 @@
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.describe-azure-ai-extension
 title: Describe the Azure AI extension
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the Azure AI extension
   description: Describe the Azure AI extension
   author: wwlpublish
   ms.author: calopez
-  ms.date: 11/24/2024
+  ms.date: 10/05/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-copilot-agents.migration-agent
+title: Migration agent
+metadata:
+  title: Migration Agent
+  description: Understand how to use the Migration Agent to automate and streamline your Azure resource migrations, ensuring consistency and efficiency in your operations tasks.
+  ms.date: 02/13/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-migration-agent.md)]

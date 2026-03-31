@@ -8,7 +8,7 @@ ms.service: azure-digital-twins
 
 ## Set up hands-on session
 
-For a hands-on experience with Azure Digital Twins, this unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/free).
+For a hands-on experience with Azure Digital Twins, this unit provides Azure CLI commands that you can run with an Azure subscription. If you don't have an Azure subscription already, [create one for free now](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 In another browser window, navigate to the [Azure Cloud Shell](https://ms.portal.azure.com/#cloudshell/). The commands in this module are written for the Cloud Shell's bash environment, which may be selected already by default.
 

@@ -4,9 +4,13 @@ In this unit, you'll create a service endpoint and use network rules to restrict
 
 :::image type="content" source="../media/5-exercise-task.svg" alt-text="Diagram of exercise scenario service endpoint and rules.":::
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Add rules to the network security group
 
 Here, you'll ensure that communications with Azure Storage pass through the service endpoint. You'll add outbound rules to allow access to the Storage service, but deny all other internet traffic.
+
+1. Open the [Azure Cloud Shell](https://shell.azure.com/).
 
 1. To create an outbound rule to allow access to Storage, run the following command in Cloud Shell:
 

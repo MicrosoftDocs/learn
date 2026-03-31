@@ -1,0 +1,3 @@
+In this module, learners explored the core functions of Microsoft Entra ID for managing identities and access in organizational environments. Practical guidance was provided for addressing security challenges and implementing effective identity solutions.
+
+Entra ID centralizes identity and access management across cloud and hybrid environments, strengthens security through multifactor and passwordless authentication, and enables risk-based conditional access to protect organizational resources. It also provides tools for configuring users, devices, and groups, and supports ongoing monitoring of security posture with secure score.

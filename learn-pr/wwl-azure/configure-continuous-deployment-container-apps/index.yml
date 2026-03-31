@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-continuous-deployment-container-apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure continuous deployment for container apps
   description: This module explores deployment options for containerized apps and delves into the features of Azure DevOps and Azure Pipelines. It guides users in setting up automated pipelines for container apps, covering agent pool configuration and secret variables management.
   ms.date: 02/29/2024
@@ -27,7 +25,7 @@ prerequisites: |
   -   Knowledge of Azure container services, including Azure Container Registry and Azure Container Apps, would be beneficial.
   -   Understanding of continuous integration and continuous deployment (CI/CD) concepts.
   -   Experience with Azure DevOps or other CI/CD tools.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-container-apps-module.svg
 levels:
 - intermediate
 roles:

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.develop-generative-ai-audio-apps
+metadata:
+  title: Develop a speech-capable generative AI application
+  description: A voice carries meaning beyond words. Learn how to use models that transcribe and synthesize speech.
+  ms.date: 03/11/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: azure-ai-foundry
+title: Develop a speech-capable generative AI application
+summary: A voice carries meaning beyond words. Learn how to use models that transacribe and synthesize speech.
+abstract: |
+  After completing this module, you'll be able to:
+  - Deploy speech-capable generative AI models in Microsoft Foundry.
+  - Use a generative AI model to transcribe speech.
+  - Use a generative AI model to synthesize speech.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Microsoft Foundry.
+  - Programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - ai-engineer
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.develop-generative-ai-audio-apps.introduction
+  - learn.wwl.develop-generative-ai-audio-apps.deploy-multimodal-models
+  - learn.wwl.develop-generative-ai-audio-apps.develop-audio-chat-apps
+  - learn.wwl.develop-generative-ai-audio-apps.develop-speech-apps
+  - learn.wwl.develop-generative-ai-audio-apps.exercise
+  - learn.wwl.develop-generative-ai-audio-apps.knowledge-check
+  - learn.wwl.develop-generative-ai-audio-apps.summary
+badge:
+  uid: learn.wwl.develop-generative-ai-audio-apps.badge

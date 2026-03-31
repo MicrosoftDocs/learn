@@ -2,8 +2,6 @@
 uid: learn.wwl.discover-devops.introduction
 title: 'Introduction'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Introduction'
   description: "DevOps is a concept that aims to address the challenges associated with traditional application lifecycle."
   ms.date: 02/05/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

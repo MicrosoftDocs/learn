@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement backup and restore for Azure Cosmos DB for NoSQL
   description: "Learn how to use the two backup models Azure Cosmos DB provides."
   ms.date: 02/27/2024
@@ -41,4 +39,4 @@ units:
 - learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.badge

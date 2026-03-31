@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-generative-ai-and-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit provides a knowledge check on Microsoft Foundry's generative AI models and agents."
+  ms.date: 1/28/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What best describes Foundry's model catalog?"
+    choices:
+    - content: "A catalog consisting of only Microsoft-exclusive foundation models"
+      isCorrect: false
+      explanation: "Foundry's model catalog includes models from many sources, not only Microsoft. It contains Microsoft‑hosted models as well as models from partners, open‑source communities, and third‑party providers."
+    - content: "A central hub to discover, filter, compare, and test many generative AI models from multiple providers"
+      isCorrect: true
+      explanation: "Foundry's model catalog is described as a central hub where you can browse, filter, compare, and evaluate a wide variety of generative AI models."
+    - content: "A tool that replaces the need for an Azure subscription"
+      isCorrect: false
+      explanation: "An Azure subscription is required to access and use Foundry. Foundry projects, deployments, model usage, and governance features are all tied to Azure resources and billing."
+  - content: "Which statement best describes a foundation model in Microsoft Foundry"
+    choices:
+    - content: "A small, task‑specific model that must be fine‑tuned before it can perform any useful function"
+      isCorrect: false
+      explanation: "This describes small or domain‑specific models, not foundation models."
+    - content: "A benchmarking tool used to compare different model families"
+      isCorrect: false
+      explanation: "Benchmarks and leaderboards compare models, but they are not foundation models themselves."
+    - content: "A large, pretrained model that provides general capabilities and can be used immediately or customized"
+      isCorrect: true
+      explanation: "Foundation models are large, pretrained models that offer broad language, reasoning, or multimodal abilities out of the box. They can be deployed immediately or fine‑tuned."
+  - content: "In the Foundry portal, what is the primary benefit of using the Model Playground before writing code?"
+    choices:
+    - content: "It lets you test prompts, compare models, and capture working settings that you can reuse in code."
+      isCorrect: true
+      explanation: " The Playground is described as the easiest way to interact with a deployed model and a bridge to code: you can try prompts, compare models, tune key parameters (temperature, max output tokens, system instructions), and then reuse those same values in your client application."
+    - content: "It deploys the model for you and removes the need to use an API."
+      isCorrect: false
+      explanation: "The Playground helps you interact with a deployed model and experiment with prompts and settings, but it doesn’t eliminate the need for an API in an application. When you move to a real app, you still call the deployed model through an endpoint (for example, via the OpenAI-compatible Responses API)."
+    - content: "It replaces system instructions by automatically generating the best system prompt for every scenario."
+      isCorrect: false
+      explanation: "System instructions (system prompts) are something you define to set behavior, tone, and guardrails for the assistant. The Playground allows you to configure and test system instructions, but it doesn’t replace them or guarantee an optimal one for every use case."
+  - content: "What is the primary outcome of publishing an agent in Microsoft Foundry?"
+    choices:
+    - content: "It converts the agent into a managed Azure resource with a stable endpoint that you can share and integrate without exposing your Foundry project or source code."
+      isCorrect: true
+      explanation: "Publishing promotes an agent from a saved development asset to a managed Azure resource with a stable endpoint. "
+    - content: "It automatically reduces costs by making the agent free to run, regardless of model tokens, tools, or connected data services."
+      isCorrect: false
+      explanation: "While the agent itself is described as “free,” real costs come from what it uses—model tokens, tools invoked, storage, connected data services, and deployment configuration. Publishing does not eliminate those costs."
+    - content: "It replaces the need for the Project API by allowing the agent to be called only through the Foundry portal UI."
+      isCorrect: false
+      explanation: "After publishing, you can integrate the agent anywhere by calling it from a client application using the Foundry Projects SDK and the Project API. Publishing expands integration options rather than limiting them to the portal."
+  - content: "In the Python example, which line is responsible for calling the published agent (rather than calling a model deployment directly) when generating a response?"
+    choices:
+    - content: "`agent = project_client.agents.get(agent_name=myAgent)`"
+      isCorrect: false
+      explanation: "This line retrieves metadata for an existing agent (like its name). It does not execute the agent or generate a response."
+    - content: "`openai_client = project_client.get_openai_client()`"
+      isCorrect: false
+      explanation: "This line only creates the client that can send requests. It sets up the capability to call the Responses API, but does not invoke the agent by itself."
+    - content: "`response = openai_client.responses.create(input=[{'role': 'user', 'content': 'Tell me what you can help with.''}], extra_body={'agent': {'name': agent.name, 'type': 'agent_reference'}},)`"
+      isCorrect: true
+      explanation: "This is the actual request that produces output. The key detail is the extra_body field with 'type': 'agent_reference', which tells the API to route the request to the agent (by referencing it), rather than treating it as a normal model-only call."

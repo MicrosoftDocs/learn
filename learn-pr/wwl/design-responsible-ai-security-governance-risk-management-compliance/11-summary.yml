@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how to design secure, governed, and compliant AI systems that balance innovation with accountability across diverse cloud environments."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary.md)]

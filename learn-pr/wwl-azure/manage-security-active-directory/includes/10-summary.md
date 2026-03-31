@@ -4,9 +4,9 @@ In this module, you learned about the importance of configuring user rights and 
 
 Use these resources to discover more:
 
- -  [Implementing Least Privilege Administrative Models](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)
- -  [User Rights Assignment](/windows/security/threat-protection/security-policy-settings/user-rights-assignment)
- -  [Manage protected users](/windows-server/identity/ad-ds/plan/security-best-practices/appendix-c--protected-accounts-and-groups-in-active-directory)
- -  [Configure authentication policies silos](/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)
- -  [Configure account security](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
- -  [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage)
+- [Implementing Least Privilege Administrative Models](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)
+- [User Rights Assignment](/windows/security/threat-protection/security-policy-settings/user-rights-assignment)
+- [Manage protected users](/windows-server/identity/ad-ds/plan/security-best-practices/appendix-c--protected-accounts-and-groups-in-active-directory)
+- [Configure authentication policies silos](/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)
+- [Configure account security](/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
+- [Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage)

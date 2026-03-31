@@ -2,13 +2,11 @@
 uid: learn.wwl.run-training-script-command-job-azure-machine-learning.run-script-command-job
 title: Run a script as a command job
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run a script as a command job
   description: Learn how to run a script as a command job in Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 10/27/2023
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

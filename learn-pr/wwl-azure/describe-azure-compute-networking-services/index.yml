@@ -1,35 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-compute-networking-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Describe Azure compute and networking services
-  description: "Introduction to Azure compute services (virtual machines, Azure Virtual Desktop, Azure Functions) and networking services (virtual networks, ExpressRoute, DNS, etc.)."
-  ms.date: 09/20/2024
+  title: Describe Azure Compute Services
+  description: "Introduction to Azure compute services (virtual machines, containers, Azure Functions), application hosting options, and AI/ML and IoT/Edge service categories."
+  ms.date: 02/03/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.collection: N/A
   ms.custom:
   - N/A
-  ms.service: azure-architecture-center
-  ai-usage: human-only
-title: Describe Azure compute and networking services
-summary: This module focuses on some of the computer services and networking services available within Azure.
+  ms.service: azure
+  ai-usage: ai-generated
+title: Describe Azure compute services
+summary: This module focuses on core Azure compute services and when to use each option.
 abstract: |
   Upon completion of this module, you'll be able to:
 
   -   Compare compute types, including container instances, virtual machines, and functions
 
-  -   Describe virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, availability sets, Azure Virtual Desktop
+  -   Describe virtual machine (VM) options, including VMs, Virtual Machine Scale Sets, and availability sets
 
   -   Describe resources required for virtual machines
 
   -   Describe application hosting options, including Azure Web Apps, containers, and virtual machines
 
-  -   Describe virtual networking, including the purpose of Azure Virtual Networks, Azure virtual subnets, peering, Azure DNS, VPN Gateway, and ExpressRoute
-
-  -   Define public and private endpoints
+  -   Describe AI, machine learning, and IoT/Edge service categories in Azure
 prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-azure-compute-networking-services.svg
 levels:
@@ -43,21 +39,15 @@ products:
 - azure
 subjects:
 - cloud-computing
-- networking
 - virtual-machine
 units:
 - learn.wwl.describe-azure-compute-networking-services.introduction
 - learn.wwl.describe-azure-compute-networking-services.virtual-machines
-- learn.wwl.describe-azure-compute-networking-services.exercise-create-azure-virtual-machine
 - learn.wwl.describe-azure-compute-networking-services.virtual-desktop
 - learn.wwl.describe-azure-compute-networking-services.containers
 - learn.wwl.describe-azure-compute-networking-services.functions
+- learn.wwl.describe-azure-compute-networking-services.describe-ai-ml-iot-edge-services
 - learn.wwl.describe-azure-compute-networking-services.describe-application-hosting-options
-- learn.wwl.describe-azure-compute-networking-services.virtual-network
-- learn.wwl.describe-azure-compute-networking-services.exercise-configure-network-access
-- learn.wwl.describe-azure-compute-networking-services.virtual-private-networks
-- learn.wwl.describe-azure-compute-networking-services.expressroute
-- learn.wwl.describe-azure-compute-networking-services.domain-name-system
 - learn.wwl.describe-azure-compute-networking-services.knowledge-check
 - learn.wwl.describe-azure-compute-networking-services.summary
 badge:
