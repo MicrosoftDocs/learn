@@ -34,4 +34,4 @@ If you have several network security groups and aren't sure which security rules
 :::image type="content" source="../media/effective-security-rules-d93ab464.png" alt-text="Screenshot of the Networking page in the Azure portal showing the Effective security rules link highlighted.":::
 
 > [!NOTE]
-> [Network Watcher](/azure/network-watcher/effective-security-rules-overview) provides a consolidated view of your infrastructure rules.  
+> [Network Watcher](/azure/network-watcher/effective-security-rules-overview) provides a consolidated view of your infrastructure rules, including both NSG rules and Azure Virtual Network Manager security admin rules. The IP flow verify feature evaluates traffic against both NSG rules and any security admin rules that may be in effect.  
