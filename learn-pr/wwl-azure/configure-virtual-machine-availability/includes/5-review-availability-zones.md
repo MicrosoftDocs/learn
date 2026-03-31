@@ -26,5 +26,8 @@ Azure services that support availability zones are divided into two categories.
 | **Zonal services** | Azure _zonal_ services pin each resource to a specific zone. | - Azure Virtual Machines <br> - Azure managed disks <br> - Standard IP addresses |
 | **Zone-redundant services** | For Azure services that are zone-redundant, the platform replicates automatically across all zones. | - Azure Storage that's zone-redundant <br> - Azure SQL Database |
 
+> [!Note]
+> > Note: Standard IP addresses can be configured as zone-redundant (recommended for high availability), zonal (pinned to a specific zone), or non-zonal (regional) depending on your deployment choice.
+
 > [!Tip]
 > To achieve comprehensive business continuity on Azure, build your application architecture with a combination of availability zones and Azure [regional pairs](/azure/virtual-machines/regions#region-pairs).
