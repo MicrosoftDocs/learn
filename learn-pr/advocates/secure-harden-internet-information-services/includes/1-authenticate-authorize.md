@@ -239,7 +239,7 @@ Set-WebConfigurationProperty -PSPath "IIS:\Sites\MySite" `
 
 ## Application pool identities and permissions
 
-Application pools run under a security context (identity). Following the principle of least privilege, each application pool should run under an account that has only the permissions it requires. The default and recommended setting is ApplicationPoolIdentity. This special account is created automatically for each application pool, named IIS AppPool\\<AppPoolName>. It runs with limited privileges and requires no password management. The default application pool identity has the following benefits:
+Application pools run under a security context (identity). Following the principle of least privilege, each application pool should run under an account that has only the permissions it requires. The default and recommended setting is ApplicationPoolIdentity. This special account is created automatically for each application pool, named `IIS AppPool\\<AppPoolName>`. It runs with limited privileges and requires no password management. The default application pool identity has the following benefits:
 
 - Automatically managed by IIS (no password to maintain)
 - Each pool gets a unique identity for isolation
@@ -254,8 +254,6 @@ IIS supports the following identity types for application pools:
 | LocalService | A built-in low-privilege account. | Not recommended. Doesn't provide per-pool isolation. |
 | LocalSystem | A highly privileged built-in account with broad access to the system. | **Never use for web applications.** Violates the principle of least privilege. |
 | Custom account | A specific Windows or domain user account. | Use only when an application requires specific credentials, such as accessing a remote SQL Server with Windows authentication. |
-
-ApplicationPoolIdentity is the default and recommended option. It creates a virtual account named `IIS AppPool\<PoolName>` for each pool, ensuring one application can't access another pool's resources.
 
 To verify an application pool uses ApplicationPoolIdentity, perform the following steps:
 
