@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.secure-harden-internet-information-services.server-website-harden
+title: Server and website hardening
+metadata:
+  title: Server and Website Hardening
+  description: Understand how to harden your server and website in Internet Information Services (IIS) to enhance security and protect against potential vulnerabilities and attacks. 
+  ms.date: 03/31/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/2-server-website-harden.md)]

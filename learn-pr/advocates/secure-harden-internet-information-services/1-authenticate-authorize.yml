@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.secure-harden-internet-information-services.authenticate-authorize
+title: Authentication and authorization
+metadata:
+  title: Authentication and Authorization
+  description: Learn how to implement authentication and authorization in Internet Information Services (IIS) to control access to your web applications and resources. 
+  ms.date: 03/31/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/1-authenticate-authorize.md)]
