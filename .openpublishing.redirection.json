@@ -65342,6 +65342,11 @@
       "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/5-exercise-connect-azure-sql-database-use-polybase.md",
       "redirect_url": "/training/modules/sql-server-data-virtualization",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/7-exercise-create-external-table-as-select.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
     }
   ]
 }
