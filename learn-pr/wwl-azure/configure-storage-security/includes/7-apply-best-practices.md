@@ -4,7 +4,7 @@
 
 ### What are the benefits of Storage insights?
 
-- **Detailed Metrics and Logs**. Azure Storage Insights offers detailed metrics, logs, and diagnostic information that enhance visibility into storage operations. This helps in monitoring key performance indicators (KPIs) such as latency, throughput, capacity utilization, and transactions.
+- **Detailed Metrics and Logs**. Azure Storage Insights offers detailed metrics, logs, and diagnostic information that enhance visibility into storage operations. Insights helps in monitoring key performance indicators (KPIs) such as latency, throughput, capacity utilization, and transactions.
 
 - **Enhanced Security and Compliance**. By using Azure Storage Insights, you can ensure enhanced security and compliance. It provides actionable insights and alerts that help in swiftly identifying and resolving security issues.
 
@@ -12,11 +12,25 @@
 
 - **Unified View**. It delivers a unified view of your Azure Storage services' performance, capacity, and availability, which is crucial for maintaining the security and efficiency of your storage accounts.
 
-### Security uses for Storage Insights
+### When to use Storage Insights
 
 - **Real-Time Monitoring**. Azure Storage Insights enables real-time monitoring of storage accounts, allowing you to track usage trends, monitor performance, and set up alerts for any anomalies.
 
 - **Security Auditing**. It aids in security auditing by providing comprehensive monitoring and detailed logs, which are essential for ensuring compliance and identifying any security issues.
 
 - **Health Analysis and Optimization**. The tool helps in health analysis and optimization of storage accounts, ensuring security and optimal performance. 
+
+### When to use Microsoft Defender for Storage
+
+While Storage Insights provides passive monitoring and historical analysis, Microsoft Defender for Storage offers proactive threat detection for active security threats.
+
+**Key capabilities**
+
+- **Malware scanning**. Automatically scans blob uploads for malware and viruses.
+  
+-	**Sensitive data threat detection**. Identifies when personally identifiable information (PII) or credentials are stored inappropriately.
+  
+-	**Activity-based threat detection**. Monitors for unusual access patterns, suspicious download volumes, and hash reputation analysis.
+  
+Microsoft Defender for Storage complements Storage Insights by providing active threat detection rather than reactive monitoring and historical reporting.
 
