@@ -1,8 +1,8 @@
 ##  Overview
 
-This unit equips solution architects with the knowledge and framework required to orchestrate, configure, and operationalize Microsoft 365 Copilot for Sales and Microsoft 365 Copilot for Service. You will explore architectural foundations, data readiness requirements, configuration steps, governance guardrails, and realworld workflow orchestration patterns that elevate frontline seller and service agent productivity.
+This unit equips solution architects with the knowledge and framework required to orchestrate, configure, and operationalize Microsoft 365 Copilot for Sales and Microsoft 365 Copilot for Service. You will explore architectural foundations, data readiness requirements, configuration steps, governance guardrails, and real-world workflow orchestration patterns that elevate frontline seller and service agent productivity.
 
-The unit emphasizes an architecturefirst approach—aligning data sources, rolebased access controls, Power Platform extensibility, and Dynamics 365 ecosystem integration—to ensure Copilot delivers reliable, secure, and measurable business outcomes.
+The unit emphasizes an architecture-first approach—aligning data sources, role-based access controls, Power Platform extensibility, and Dynamics 365 ecosystem integration—to ensure Copilot delivers reliable, secure, and measurable business outcomes.
 
 ## Architecture Foundations for Copilot in Sales and Service
 
@@ -108,7 +108,7 @@ Suggested Actions → Agent Review → Resolution Logged
 
 * Cross-system automation for approvals, notifications, escalations.
 
-* Pre- and post-processing flows for Copilotgenerated content.
+* Pre- and post-processing flows for Copilot-generated content.
 
 ## Governance and Guardrails
 
@@ -118,7 +118,7 @@ Suggested Actions → Agent Review → Resolution Logged
 
 * Use DLP policies to prevent data leakage outside the tenant.
 
-* Maintain clear audit trails for all Copilotgenerated actions.
+* Maintain clear audit trails for all Copilot-generated actions.
 
 * Ensure data residency and retention policies align with enterprise compliance.
 

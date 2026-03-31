@@ -1,10 +1,10 @@
 ## Overview
 
-This unit equips solution architects with expert guidance to design, orchestrate, and scale AIpowered experiences within Dynamics 365 Customer Service and Contact Center. You will learn how to integrate Copilot capabilities, automate service workflows, augment agent productivity, and ensure AI is aligned with customer experience (CX) objectives, governance requirements, and enterprise architecture.
+This unit equips solution architects with expert guidance to design, orchestrate, and scale AI-powered experiences within Dynamics 365 Customer Service and Contact Center. You will learn how to integrate Copilot capabilities, automate service workflows, augment agent productivity, and ensure AI is aligned with customer experience (CX) objectives, governance requirements, and enterprise architecture.
 
 ### This unit focuses on
 
-* Designing serviceoriented AI patterns in Dynamics 365.
+* Designing service-oriented AI patterns in Dynamics 365.
 
 * Using conversational, embedded, and automated AI features to enhance case management, triage, and customer interaction quality.
 
@@ -52,7 +52,7 @@ Copilot provides real-time AI assistance that helps customer service representat
 
 ### Conversational Copilot (Sidecar Model)
 
-A chat based experience that:
+A chat-based experience that:
 
 * Understands agent questions about cases, customers, and policies.
 
@@ -76,7 +76,7 @@ These appear within workspaces such as:
 
 Examples include
 
-* AIdriven case routing
+* AI-driven case routing
 
 * Automatic sentiment tagging
 
@@ -100,7 +100,7 @@ Key design considerations
 
 ## Orchestration Models for Customer Service AI
 
-### Casecentric orchestration
+### Case-centric orchestration
 
 AI anchors around the customer case:
 
@@ -110,7 +110,7 @@ Suggests next actions.
 
 Generates resolution summaries.
 
-### Interactioncentric automation
+### Interaction-centric automation
 
 AI analyzes:
 
@@ -120,7 +120,7 @@ Knowledge article links.
 
 Relevant troubleshooting procedures.
 
-### Multisystem orchestration
+### Multi-system orchestration
 
 AI workflows may require:
 
@@ -130,7 +130,7 @@ Customer Service + Finance (billing / refunds)
 
 Customer Service + Power Automate for escalations
 
-Architects align AI agents with crossdepartmental processes.
+Architects align AI agents with cross-departmental processes.
 
 ## Designing Extensible AI Features
 

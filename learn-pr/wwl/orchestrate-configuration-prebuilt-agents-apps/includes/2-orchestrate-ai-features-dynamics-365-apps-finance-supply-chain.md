@@ -20,15 +20,15 @@ Sidecar Copilot appears alongside the Finance and Supply Chain apps and supports
 
 #### Architectural considerations
 
-* Optimize prompts with businessdomain vocabulary.
+* Optimize prompts with business-domain vocabulary.
 
-* Apply rolebased access so users only retrieve data appropriate to their permissions.
+* Apply role-based access so users only retrieve data appropriate to their permissions.
 
-* Orchestrate crossmodule queries using standardized entity metadata.
+* Orchestrate cross-module queries using standardized entity metadata.
 
 ## Embedded
 
-Embedded AI brings Copilot capabilities directly inside workspace pages or operational views, enabling contextual, inapp intelligence.
+Embedded AI brings Copilot capabilities directly inside workspace pages or operational views, enabling contextual, in-app intelligence.
 
 ### Examples include
 
@@ -62,9 +62,9 @@ External agents interact with Finance and Supply Chain data beyond the applicati
 
 ### Examples
 
-* Crossapplication automations.
+* Cross-application automations.
 
-* Rolespecific AI copilots in Teams.
+* Role-specific AI copilots in Teams.
 
 * Workflow routing and automated notifications.
 
@@ -98,7 +98,7 @@ External agents interact with Finance and Supply Chain data beyond the applicati
 
 * Change review for confirmed purchase orders
 
-#### CrossApp Capabilities
+#### Cross-App Capabilities
 
 * Generative help
 

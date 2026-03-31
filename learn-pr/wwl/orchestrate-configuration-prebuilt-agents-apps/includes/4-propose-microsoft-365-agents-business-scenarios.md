@@ -1,6 +1,6 @@
 ## Overview
 
-Microsoft 365 agents are task oriented AI assistants that operate inside the Microsoft 365 ecosystem to **retrieve**, **reason**, and **act**—coordinating steps across apps and data to achieve an outcome. Unlike adhoc prompts, well designed agents have:
+Microsoft 365 agents are task-oriented AI assistants that operate inside the Microsoft 365 ecosystem to **retrieve**, **reason**, and **act**—coordinating steps across apps and data to achieve an outcome. Unlike ad-hoc prompts, well-designed agents have:
 
 **A defined mission and scope** (goal, boundaries, and success criteria)
 
@@ -42,7 +42,7 @@ The following five steps should be followed when designing the agents:
 
 * **Define guardrails**<br>Who can invoke it? On what data? When does it ask for approval? How are actions logged and reversed?
 
-* **Prototype the critical path**<br>Start with a narrow "happy path" endtoend slice; test on real artifacts and iterate on prompt patterns.
+* **Prototype the critical path**<br>Start with a narrow "happy path" end-to-end slice; test on real artifacts and iterate on prompt patterns.
 
 * **Operationalize**<br>Add telemetry, quality checks, and cost controls. Move from pilot to production with rollout rings and training.
 
@@ -62,7 +62,7 @@ When proposing any agents,  it's critical to cover all the key aspects for agent
 
 * [FAQ](/copilot/microsoft-365/agent-essentials/m365-agents-faq) - Answers to common questions about Microsoft 365 Copilot agents.
 
-In addition to the Agent Management Essentials components, any agent must include considerations for long term and licensing costs. Identifying all associated costs are critical to setting expectations for the agents. For more information, see [https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 
+In addition to the Agent Management Essentials components, any agent must include considerations for long-term and licensing costs. Identifying all associated costs are critical to setting expectations for the agents. For more information, see [https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-licensing](/copilot/microsoft-365/microsoft-365-copilot-licensing) 
 
 ## Catalog of Proposed Microsoft 365 Agents (Ready to Pilot)
 
@@ -70,7 +70,7 @@ The following list includes agents that are ready to pilot for organizations and
 
 ## Executive Briefing Pack Generator
 
-Automatically assemble an executive ready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
+Automatically assemble an executive-ready briefing pack using the latest organizational updates, program metrics, and strategic highlights.
 
 ### Entry Point
 
@@ -128,7 +128,7 @@ Provide consolidated insights from project portfolios, highlighting risks, block
 
 ## Content Localization Workpack Builder
 
-Prepare region specific content localization packages, including terminology locks, cultural notes, and source files.
+Prepare region-specific content localization packages, including terminology locks, cultural notes, and source files.
 
 Entry Point
 
@@ -155,7 +155,7 @@ Entry Point
 - Quality consistency across regions
 - Backlog burndown for localization tickets
 
-## ComplianceAware Content Redactor
+## Compliance-Aware Content Redactor
 
 Automatically detect and mask sensitive information before content is shared with training repositories or external reviewers.
 
@@ -173,7 +173,7 @@ Automatically detect and mask sensitive information before content is shared wit
 
 ### Guardrails
 
-- Strict nonwriteback unless user confirms
+- Strict non-writeback unless user confirms
 - Audit trails required for all redactions
 - Can't override applied sensitivity labels
 
@@ -220,11 +220,11 @@ Review ILT or digital learning modules for objective alignment, inclusive langua
 
 * Instructor satisfaction with alignment improvements
 
-* Time saved across multimodule reviews
+* Time saved across multi-module reviews
 
 ## Adoption Scenario and Lab Designer
 
-Generate role-based exercises, handson labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
+Generate role-based exercises, hands-on labs, and scenario walkthroughs for business units adopting Microsoft 365 Copilot.
 
 ### Entry Point<br>
 
@@ -298,9 +298,9 @@ Compile neutral, structured research briefs from internal notes, approved knowle
 
 * Reduction in manual research hours
 
-## 8. TelemetrytoInsights Report Generator
+## 8. Telemetry-to-Insights Report Generator
 
-Transform Copilot adoption telemetry into monthly, slide ready insights and visual summaries for business reviews.
+Transform Copilot adoption telemetry into monthly, slide-ready insights and visual summaries for business reviews.
 
 ### Entry Point
 
@@ -322,7 +322,7 @@ Transform Copilot adoption telemetry into monthly, slide ready insights and visu
 
 * Must use anonymized datasets only
 
-* No user level behavioral insights
+* No user-level behavioral insights
 
 * Visuals require human approval before distribution
 
@@ -330,7 +330,7 @@ Transform Copilot adoption telemetry into monthly, slide ready insights and visu
 
 * Time saved producing monthly insights deck
 
-* Decision making latency reduced
+* Decision-making latency reduced
 
 * Number of insights adopted by stakeholders
 
@@ -374,11 +374,11 @@ Copy to Excel and chart "Owner effort by phase" as a stacked bar for a quick vis
 
 ## Instructor prompts (use in class)
 
-* "Where would **humanintheloop** checkpoints most reduce risk without blocking flow?"
+* "Where would **human-in-the-loop** checkpoints most reduce risk without blocking flow?"
 
 * "If the agent did nothing else, what **single win** would justify its existence?"
 
-* "Which **data you already trust** would most improve the agent's first run quality?"
+* "Which **data you already trust** would most improve the agent's first-run quality?"
 
 ## References
 
@@ -386,7 +386,7 @@ Copy to Excel and chart "Owner effort by phase" as a stacked bar for a quick vis
 
 **Microsoft 365 Copilot hub** —orientation to Copilot options, Copilot Chat, and agents with adoption resources.<br>[https://learn.microsoft.com/microsoft-365-copilot/](/copilot/microsoft-365/)
 
-**Understand the foundations of generative AI for business leaders** — executive level grounding on value, model basics, and responsible adoption.<br>[https://learn.microsoft.com/training/modules/understand-foundations-generative-ai-business-leaders/](/training/modules/understand-foundations-generative-ai-business-leaders/)
+**Understand the foundations of generative AI for business leaders** — executive-level grounding on value, model basics, and responsible adoption.<br>[https://learn.microsoft.com/training/modules/understand-foundations-generative-ai-business-leaders/](/training/modules/understand-foundations-generative-ai-business-leaders/)
 
 [Microsoft 365 Copilot Agent Management Essentials | Microsoft Learn](/copilot/microsoft-365/agent-essentials/agent-essentials-overview)
 

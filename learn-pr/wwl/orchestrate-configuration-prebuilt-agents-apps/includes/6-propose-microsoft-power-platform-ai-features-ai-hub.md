@@ -1,6 +1,6 @@
 ## Overview
 
-This unit equips **solution architects** with the expertise to identify, evaluate, and propose Microsoft Power Platform AI capabilities—including the **AI hub**, **Copilot experiences**, and **AI Builder**—as part of enterprisegrade, scalable AI solution designs.
+This unit equips **solution architects** with the expertise to identify, evaluate, and propose Microsoft Power Platform AI capabilities—including the **AI hub**, **Copilot experiences**, and **AI Builder**—as part of enterprise-grade, scalable AI solution designs.
 
 You will learn how to map Power Platform AI features to business outcomes, integrate them within secure environments, and architect extensible solutions that support automation, content generation, predictions, and natural language interaction across business applications.
 
@@ -12,11 +12,11 @@ You will learn how to map Power Platform AI features to business outcomes, integ
 
 **AI Hub**<br>The central experience for managing, discovering, and orchestrating AI within Power Platform—connecting models, copilots, and automation.
 
-**Copilot in Power Platform**<br>Naturallanguage-driven creation of apps, flows, tables, controls, and logic.
+**Copilot in Power Platform**<br>Natural-language-driven creation of apps, flows, tables, controls, and logic.
 
 **AI Builder**<br>A collection of prebuilt and customizable AI models for classification, prediction, extraction, detection, translation, and document understanding.
 
-**Copilot Studio**<br>Lowcode conversational agent creation with extensibility into Microsoft 365 and external systems.
+**Copilot Studio**<br>Low-code conversational agent creation with extensibility into Microsoft 365 and external systems.
 
 ## The AI Hub Orchestration for Enterprise AI
 
@@ -30,7 +30,7 @@ The AI hub is a unified workspace for organizations to:
 
 * Promote consistent, secure, monitored use of AI at scale
 
-* Provide guided paths for building AIdriven apps and flows
+* Provide guided paths for building AI-driven apps and flows
 
 ## AI Builder Extending Intelligence Across the Platform
 
@@ -38,7 +38,7 @@ AI Builder enables solution architects to incorporate intelligence into solution
 
 ### Prebuilt Models
 
-Useful for rapid prototyping or highvolume automation, including:
+Useful for rapid prototyping or high-volume automation, including:
 
 * Document processing
 
@@ -56,7 +56,7 @@ Useful for rapid prototyping or highvolume automation, including:
 
 ### Custom Models
 
-Configured with organizationspecific data for:
+Configured with organization-specific data for:
 
 * Prediction (e.g., churn, lead scoring)
 
@@ -110,7 +110,7 @@ Solution architects must plan:
 
 ### Copilot Studio
 
-* Build custom copilots with multiturn reasoning
+* Build custom copilots with multi-turn reasoning
 
 * Integrate external data sources, APIs, and connectors
 
@@ -120,7 +120,7 @@ Solution architects must plan:
 
 ## Solution Architect Responsibilities
 
-Solution architects must ensure AI solutions meet enterprisegrade requirements:
+Solution architects must ensure AI solutions meet enterprise-grade requirements:
 
 ### Governance & Security
 
@@ -128,7 +128,7 @@ Solution architects must ensure AI solutions meet enterprisegrade requirements:
 
 * Apply sensitivity labels and DLP rules
 
-* Define rolebased access
+* Define role-based access
 
 * Validate connector usage
 

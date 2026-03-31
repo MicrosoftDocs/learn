@@ -1,14 +1,14 @@
 ## Overview
 
-This unit equips solution architects with a detailed, structured process for designing, governing, and recommending how organizations add knowledge sources to inapp help and guidance for Dynamics 365 Finance or Dynamics 365 Supply Chain Management apps.<br>
+This unit equips solution architects with a detailed, structured process for designing, governing, and recommending how organizations add knowledge sources to in-app help and guidance for Dynamics 365 Finance or Dynamics 365 Supply Chain Management apps.<br>
 
-The goal is to ensure that help and guidance is enriched with accurate, secure, roleappropriate knowledge to improve user productivity, reduce support load, and enhance task completion confidence.
+The goal is to ensure that help and guidance is enriched with accurate, secure, role-appropriate knowledge to improve user productivity, reduce support load, and enhance task completion confidence.
 
 You will learn how knowledge sources feed Copilot behaviors, how content must be prepared and validated, and how to orchestrate the full lifecycle—from content ingestion to publication.
 
-## Architectural Context How Knowledge Powers InApp Help
+## Architectural Context How Knowledge Powers In-App Help
 
-Dynamics 365 uses Copilot capabilities to surface inapp help based on curated knowledge sources. These sources combine:
+Dynamics 365 uses Copilot capabilities to surface in-app help based on curated knowledge sources. These sources combine:
 
 * Product documentation
 
@@ -40,7 +40,7 @@ Solution architects must identify which knowledge sources are appropriate and su
 
 * Content containing sensitive, unclassified data
 
-## Recommended EndtoEnd Process for Adding Knowledge Sources
+## Recommended End-to-End Process for Adding Knowledge Sources
 
 ### Step 1 Prepare the Knowledge
 
@@ -70,7 +70,7 @@ Before ingestion:
 
 #### Testing is essential for solution architects
 
-* Perform scenariobased questioning.
+* Perform scenario-based questioning.
 
 * Validate that responses reflect the intended source content.
 
@@ -102,7 +102,7 @@ Before ingestion:
 
 ## Enabling or Restricting General Knowledge
 
-Solution architects decide whether to enable general knowledge (LLMbased, external):
+Solution architects decide whether to enable general knowledge (LLM-based, external):
 
 ### Enable only when
 

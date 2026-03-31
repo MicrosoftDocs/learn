@@ -1,6 +1,6 @@
 ## Overview
 
-Dynamics 365 Finance & Operations now supports **Copilot client plugins**, enabling solution architects to extend the builtin F&O agent with **additional knowledge sources**, **custom actions**, and **domainspecific logic**.
+Dynamics 365 Finance & Operations now supports **Copilot client plugins**, enabling solution architects to extend the built-in F&O agent with **additional knowledge sources**, **custom actions**, and **domain-specific logic**.
 
 This unit equips learners to design interoperable agent experiences that combine:
 
@@ -10,11 +10,11 @@ This unit equips learners to design interoperable agent experiences that combine
 
 * Custom business logic
 
-* Pluginbased actions
+* Plugin-based actions
 
 * Secure, governed access patterns
 
-The goal is to help organizations create richer, more accurate, and more contextaware AI experiences inside F&O agent chats.
+The goal is to help organizations create richer, more accurate, and more context-aware AI experiences inside F&O agent chats.
 
 By the end of this unit, learners will be able to:
 
@@ -86,7 +86,7 @@ Examples
 
 * Standard operating procedures
 
-### B. LineofBusiness Systems
+### B. Line-of-Business Systems
 
 Using plugins or APIs
 
@@ -106,7 +106,7 @@ Using plugins or APIs
 
 * Azure Cognitive Search indexes
 
-### D. DomainSpecific Content
+### D. Domain-Specific Content
 
 Compliance rules
 
@@ -138,7 +138,7 @@ These sources help the agent answer questions that F&O alone cannot.
 
 * Enforce business logic
 
-* Support multistep workflows
+* Support multi-step workflows
 
 ### Plugin Design Considerations
 
