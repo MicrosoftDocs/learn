@@ -65327,6 +65327,51 @@
       "source_path": "learn-pr/paths/explore-sql-server-2022-capabilities/index.md",
       "redirect_url": "/training/paths/explore-sql-server-capabilities/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/index.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/6-create-external-table-as-select.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/5-exercise-connect-azure-sql-database-use-polybase.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/7-exercise-create-external-table-as-select.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/4-exercise-query-parquet-file.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/1-introduction.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/2-polybase.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/3-polybase-credentials-data-sources.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/8-summary.md",
+      "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
     }
   ]
 }
