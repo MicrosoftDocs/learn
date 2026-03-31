@@ -14,7 +14,3 @@ In this module, you learned how to:
 - Read more about [Virtual Network routing](/azure/virtual-network/virtual-networks-udr-overview).
 - Read more about [Azure DNS](/azure/dns/dns-overview).
 
-## Learn more with online training
-
-- [Configure Azure Virtual Networks](/training/modules/configure-virtual-networks/9-simulation-create-networks?ns-enrollment-type=learningpath&ns-enrollment-id=learn.az-104-manage-virtual-networks)
-- [Configure Network Security Groups](/training/modules/configure-network-security-groups/7-simulation-create-network-groups)
