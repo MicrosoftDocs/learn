@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.devrel.secure-harden-internet-information-services
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 03/31/2026
+  title: Secure and Harden Internet Information Services
+  description: Learn how to secure and harden Internet Information Services (IIS) to protect your web applications and data from potential threats. This module covers best practices for authentication, authorization, server and website hardening, certificate configuration, and more.
+  ms.topic: module
+  ms.service: windows-server
+title: Secure and harden Internet Information Services
+summary: This module covers how to implement security best practices for Internet Information Services (IIS) and web applications on Windows Server. It covers configuring authentication, authorization, and other settings that protect the server and websites.
+abstract: |
+  After completing this module, you'll be able to:
+  - Configure IIS authentication modes
+  - Implement IIS authorization rules to control access to web content
+  - Harden an IIS server by removing unused features, disabling directory browsing, and isolating sites
+  - Configure request filtering to block malicious request patterns before they reach web applications
+  - Install and bind SSL/TLS certificates to configure HTTPS
+  - Enforce TLS 1.2 and TLS 1.3 while disabling deprecated protocols and weak cipher suites
+prerequisites: |
+  - Basic understanding of Windows Server and its roles and features
+  - Familiarity with web servers and their purpose
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows-server
+units:
+- learn.devrel.secure-harden-internet-information-services.introduction
+- learn.devrel.secure-harden-internet-information-services.authenticate-authorize
+- learn.devrel.secure-harden-internet-information-services.server-website-harden
+- learn.devrel.secure-harden-internet-information-services.certificate-configuration
+- learn.devrel.secure-harden-internet-information-services.knowledge-check
+- learn.devrel.secure-harden-internet-information-services.summary
+badge:
+  uid: learn.devrel.secure-harden-internet-information-services-badge
