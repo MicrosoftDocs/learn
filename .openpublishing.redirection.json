@@ -65289,6 +65289,11 @@
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }                                          
+    },
+    {
+      "source_path": "learn-pr/paths/explore-sql-server-2022-capabilities/index.md",
+      "redirect_url": "/training/paths/explore-sql-server-capabilities/",
+      "redirect_document_id": false
+    }
   ]
 }
