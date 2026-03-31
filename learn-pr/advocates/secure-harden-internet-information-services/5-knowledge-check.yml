@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 quiz:
-  title: Knowledge check
+  title: Check your knowledge
   questions:
   - content: "Your organization has an intranet web application hosted on IIS that should be accessible only to domain-joined users using their Windows credentials, with no credential prompt appearing. Which IIS authentication method should you configure?"
     choices:

@@ -29,9 +29,10 @@ roles:
 products:
 - windows-server
 units:
+- learn.devrel.secure-harden-internet-information-services.introduction
 - learn.devrel.secure-harden-internet-information-services.authenticate-authorize
 - learn.devrel.secure-harden-internet-information-services.server-website-harden
-- learn.devrel.secure-harden-internet-information-services.certificate-config
+- learn.devrel.secure-harden-internet-information-services.certificate-configuration
 - learn.devrel.secure-harden-internet-information-services.knowledge-check
 - learn.devrel.secure-harden-internet-information-services.summary
 badge:

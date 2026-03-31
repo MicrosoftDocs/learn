@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.devrel.secure-harden-internet-information-services.certificate-config
+uid: learn.devrel.secure-harden-internet-information-services.certificate-configuration
 title: HTTPS and TLS configuration
 metadata:
   title: HTTPS and TLS Configuration
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 24
 content: |
-  [!include[](includes/3-certificate-config.md)]
+  [!include[](includes/4-certificate-configuration.md)]

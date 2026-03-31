@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.secure-harden-internet-information-services.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to securing and hardening Internet Information Services (IIS) on Windows Server.
+  ms.date: 03/31/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

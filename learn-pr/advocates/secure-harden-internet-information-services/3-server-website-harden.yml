@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 18
 content: |
-  [!include[](includes/2-server-website-harden.md)]
+  [!include[](includes/3-server-website-harden.md)]

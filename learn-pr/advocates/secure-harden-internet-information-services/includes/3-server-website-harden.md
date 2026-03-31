@@ -13,7 +13,7 @@ To review installed IIS role services, perform the following steps:
 
 The table lists roles that may not be necessary on your web server deployment.
 
-| **Role Service** | **When to Remove** |
+| **Role Service** | **When to remove** |
 |---|---|
 | WebDAV Publishing | Remove unless applications explicitly require WebDAV. |
 | FTP Server | Remove if no FTP sites are hosted. |

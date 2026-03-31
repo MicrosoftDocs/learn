@@ -2,7 +2,7 @@ Unencrypted HTTP communication can be intercepted, read, or modified by anyone o
 
 The following table lists common certificate types:
 
-| **Type** | **Description** | **Use Case** |
+| **Type** | **Description** | **Use case** |
 |---|---|---|
 | Domain Validation (DV) | Verifies domain ownership only | General-purpose public websites |
 | Organization Validation (OV) | Verifies domain and organization identity | Business websites |
