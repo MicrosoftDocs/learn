@@ -26,8 +26,8 @@ Because the public key can be freely shared, asymmetric encryption solves the ke
 
 Asymmetric encryption also enables *digital signatures*, which verify both the authenticity and integrity of data. When a sender signs data with their private key, anyone with the sender's public key can verify that:
 
-1. The data came from the expected sender (authenticity).
-2. The data wasn't modified after it was signed (integrity).
+- The data came from the expected sender (authenticity).
+- The data wasn't modified after it was signed (integrity).
 
 Digital signatures are used to verify software downloads, authenticate email messages, and secure electronic documents and transactions.
 
