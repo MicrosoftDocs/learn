@@ -8,28 +8,24 @@ For resources hosted outside of Azure, such as on-premises applications, you can
 
 For scenarios where shared access signatures (SAS) are used, Microsoft recommends using a user delegation SAS. A user delegation SAS is secured with Microsoft Entra credentials instead of the account key. To learn about shared access signatures, see [Grant limited access to data with shared access signatures](/azure/storage/common/storage-sas-overview). For an example of how to create and use a user delegation SAS with .NET, see [Create a user delegation SAS for a blob with .NET](/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet).
 
-## Overview of Microsoft Entra ID for blobs<br>
+## Overview of Microsoft Entra ID for blobs
 
 When a security principal (a user, group, or application) attempts to access a blob resource, the request must be authorized, unless it's a blob available for anonymous access. With Microsoft Entra ID, access to a resource is a two-step process:
 
-1.  First, the security principal's identity is authenticated and an OAuth 2.0 token is returned.
+- **Authentication**: The security principal's identity is authenticated and an OAuth 2.0 token is returned. The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to access blob data.
 
- -  The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to access blob data.
-
-2.  Next, the token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource.
-
- -  Next, the token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource.
+- **Authorization**: The token is passed as part of a request to the Blob service and used by the service to authorize access to the specified resource based on the permissions granted to the security principal.
 
 ### Use a Microsoft Entra account with portal, PowerShell, or Azure CLI
 
 To learn about how to access data in the Azure portal with a Microsoft Entra account, see [Data access from the Azure portal](/azure/storage/blobs/authorize-access-azure-active-directory#data-access-from-the-azure-portal). To learn how to call Azure PowerShell or Azure CLI commands with a Microsoft Entra account, see [Data access from PowerShell or Azure CLI](/azure/storage/blobs/authorize-access-azure-active-directory#data-access-from-powershell-or-azure-cli).
 
-### Use Microsoft Entra ID to authorize access in application code<br>
+### Use Microsoft Entra ID to authorize access in application code
 
 To authorize access to Azure Storage with Microsoft Entra ID, you can use one of the following client libraries to acquire an OAuth 2.0 token:
 
- -  The Azure Identity client library is recommended for most development scenarios.
- -  The [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) may be suitable for certain advanced scenarios.
+- The Azure Identity client library is recommended for most development scenarios.
+- The [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) may be suitable for certain advanced scenarios.
 
 #### Azure Identity client library
 
@@ -50,7 +46,7 @@ The following table points to additional information for authorizing access to d
 | Auth from on-premises apps               | [Authenticate to Azure resources from .NET apps hosted on-premises](/dotnet/azure/sdk/authentication-on-premises-apps)                                             | N/A                                                                                                                                 | [Authenticate on-premises JavaScript apps to Azure resources](/azure/developer/javascript/sdk/authentication/on-premises-apps)                                       | [Authenticate to Azure resources from Python apps hosted on-premises](/azure/developer/python/sdk/authentication-on-premises-apps)                                             | N/A                                                                                                                                                           |
 | Identity client library overview         | [Azure Identity client library for .NET](/dotnet/api/overview/azure/identity-readme)                                                                               | [Azure Identity client library for Java](/java/api/overview/azure/identity-readme)                       | [Azure Identity client library for JavaScript](/javascript/api/overview/azure/identity-readme)                                                                       | [Azure Identity client library for Python](/python/api/overview/azure/identity-readme)                                                                                         | [Azure Identity client library for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity)                                                   |
 
-### Microsoft Authentication Library (MSAL)<br>
+### Microsoft Authentication Library (MSAL)
 
 While Microsoft recommends using the Azure Identity client library when possible, the MSAL library may be appropriate to use in certain advanced scenarios. For more information, see [Learn about MSAL](/azure/active-directory/develop/msal-overview).
 
@@ -60,15 +56,15 @@ When you provide a resource ID that is specific to a single storage account and 
 
 | **Cloud**            | **Resource ID**                                     |
 | -------------------- | --------------------------------------------------- |
-| Azure Global         | `example: account-name.blob.core.windows.net`       |
-| Azure Government     | `example: account-name.blob.core.usgovcloudapi.net` |
-| Azure China 21Vianet | `example: account-name.blob.core.chinacloudapi.cn`  |
+| Azure Global         | `https://<account-name>.blob.core.windows.net`       |
+| Azure Government     | `https://<account-name>.blob.core.usgovcloudapi.net` |
+| Azure China 21Vianet | `https://<account-name>.blob.core.chinacloudapi.cn`  |
 
 You can also provide a resource ID that applies to any storage account, as shown in the following table. This resource ID is the same for all public and sovereign clouds, and is used to acquire a token for authorizing requests to any storage account.
 
 | **Cloud**                                                    | **Resource ID**              |
 | ------------------------------------------------------------ | ---------------------------- |
-| Azure Global<br>Azure Government<br>Azure China 21Vianet<br> | `example: storage.azure.com` |
+| Azure Global<br>Azure Government<br>Azure China 21Vianet | `https://storage.azure.com` |
 
 ## Assign Azure roles for access rights
 
@@ -82,24 +78,24 @@ When you create an Azure Storage account, you are not automatically assigned per
 
 ## Resource scope
 
-Before you assign an Azure RBAC role to a security principal, determine the scope of access that the security principal should have. Best practices dictate that it's always best to grant only the narrowest possible scope. Azure RBAC roles defined at a broader scope are inherited by the resources beneath them.
+Before you assign an Azure RBAC role to a security principal, determine the scope of access that the security principal should have. Always grant only the narrowest possible scope necessary for the security principal to perform their tasks. This follows the principle of least privilege and minimizes security risks. Azure RBAC roles defined at a broader scope are inherited by the resources beneath them.
 
-You can scope access to Azure blob resources at the following levels, beginning with the narrowest scope:
+You can scope access to Azure blob resources at the following levels, beginning with the narrowest (most restrictive) scope:
 
- -  An individual container. At this scope, a role assignment applies to all of the blobs in the container, and to the container properties and metadata.
- -  The storage account. At this scope, a role assignment applies to all containers and their blobs.
- -  The resource group. At this scope, a role assignment applies to all of the containers in all of the storage accounts in the resource group.
- -  The subscription. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in the subscription.
- -  A management group. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
+- An individual container. At this scope, a role assignment applies to all of the blobs in the container, and to the container properties and metadata.
+- The storage account. At this scope, a role assignment applies to all containers and their blobs.
+- The resource group. At this scope, a role assignment applies to all of the containers in all of the storage accounts in the resource group.
+- The subscription. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in the subscription.
+- A management group. At this scope, a role assignment applies to all of the containers in all of the storage accounts in all of the resource groups in all of the subscriptions in the management group.
 
 ## Azure built-in roles for blobs
 
 Azure RBAC provides several built-in roles for authorizing access to blob data using Microsoft Entra ID and OAuth. Some examples of roles that provide permissions to data resources in Azure Storage include:
 
- -  [Storage Blob Data Owner](/azure/role-based-access-control/built-in-roles#storage-blob-data-owner): Use to set ownership and manage POSIX access control for Azure Data Lake Storage Gen2. For more information, see [Access control in Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-access-control).
- -  [Storage Blob Data Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor): Use to grant read/write/delete permissions to Blob storage resources.
- -  [Storage Blob Data Reader](/azure/role-based-access-control/built-in-roles#storage-blob-data-reader): Use to grant read-only permissions to Blob storage resources.
- -  [Storage Blob Delegator](/azure/role-based-access-control/built-in-roles#storage-blob-delegator): Get a user delegation key to use to create a shared access signature that is signed with Microsoft Entra credentials for a container or blob.
+- **[Storage Blob Data Owner](/azure/role-based-access-control/built-in-roles#storage-blob-data-owner)**: Provides full access to blob containers and data, including the ability to set ownership and manage POSIX access control for Azure Data Lake Storage Gen2. Use this role when users need complete control over blob resources. For more information, see [Access control in Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-access-control).
+- **[Storage Blob Data Contributor](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)**: Grants read, write, and delete permissions to Blob storage resources. This is the appropriate role for users who need to modify blob data but don't require ownership or ACL management capabilities.
+- **[Storage Blob Data Reader](/azure/role-based-access-control/built-in-roles#storage-blob-data-reader)**: Grants read-only permissions to Blob storage resources. Use this role for users or applications that only need to view or download blob data without modification rights.
+- **[Storage Blob Delegator](/azure/role-based-access-control/built-in-roles#storage-blob-delegator)**: Allows obtaining a user delegation key to create a shared access signature signed with Microsoft Entra credentials. This role is useful for scenarios where you need to delegate limited access to blob resources without sharing account keys.
 
 To learn how to assign an Azure built-in role to a security principal, see [Assign an Azure role for access to blob data](/azure/storage/blobs/assign-azure-role-data-access). To learn how to list Azure RBAC roles and their permissions, see [List Azure role definitions](/azure/role-based-access-control/role-definitions-list).
 
@@ -115,15 +111,15 @@ Azure role assignments may take up to 30 minutes to propagate.
 
 For details on the permissions required to call specific Blob service operations, see [Permissions for calling data operations](/rest/api/storageservices/authorize-with-azure-active-directory#permissions-for-calling-data-operations).
 
-## Access data with a Microsoft Entra account<br>
+## Access data with a Microsoft Entra account
 
-Access to blob data via the Azure portal, PowerShell, or Azure CLI can be authorized either by using the user's Microsoft Entra account or by using the account access keys (Shared Key authoti
+Access to blob data via the Azure portal, PowerShell, or Azure CLI can be authorized either by using the user's Microsoft Entra account or by using the account access keys (Shared Key authorization).
 
-Authorization with Shared Key is not recommended as it may be less secure. For optimal security, disable authorization via Shared Key for your storage account, as described in [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
+**Security recommendations**:
 
-Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. Otherwise, the token-based authentication classes available in the Azure SDK should always be preferred when authenticating to Azure resources.
-
-Microsoft recommends that clients use either Microsoft Entra ID or a shared access signature (SAS) to authorize access to data in Azure Storage. For more information, see [Authorize operations for data access](/azure/storage/common/authorize-data-access?toc=/azure/storage/blobs/toc.json&bc=/azure/storage/blobs/breadcrumb/toc.json).
+- **Avoid Shared Key authorization**: Authorization with Shared Key is not recommended as it provides full access to the storage account and doesn't support advanced security features like conditional access or multifactor authentication. For optimal security, disable authorization via Shared Key for your storage account, as described in [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
+- **Limit access key usage**: Use of access keys and connection strings should be limited to initial proof of concept apps or development prototypes that don't access production or sensitive data. For production workloads, always use token-based authentication classes available in the Azure SDK.
+- **Prefer Microsoft Entra ID**: Microsoft recommends that clients use Microsoft Entra ID for the most secure authorization method. When direct user access delegation is required, use a user delegation SAS secured with Microsoft Entra credentials rather than an account SAS. For more information, see [Authorize operations for data access](/azure/storage/common/authorize-data-access?toc=/azure/storage/blobs/toc.json&bc=/azure/storage/blobs/breadcrumb/toc.json).
 
 ## Data access from the Azure portal
 
@@ -142,3 +138,16 @@ Azure CLI and PowerShell support signing in with Microsoft Entra credentials. Af
 ## Feature support
 
 Support for this feature might be impacted by enabling Data Lake Storage Gen2, Network File System (NFS) 3.0 protocol, or the SSH File Transfer Protocol (SFTP).
+
+## Best practices for authorizing blob access
+
+When implementing Microsoft Entra ID authorization for blob storage, follow these security best practices:
+
+- **Use managed identities**: For applications running in Azure (VMs, App Service, Functions, AKS), always use managed identities instead of service principals with stored credentials.
+- **Implement least privilege**: Assign the most restrictive role that meets requirements. Use **Storage Blob Data Reader** for read-only scenarios rather than more permissive roles.
+- **Scope assignments appropriately**: Apply role assignments at the container level when possible rather than at the storage account or subscription level.
+- **Leverage Azure ABAC**: Use attribute-based access control (ABAC) conditions for fine-grained access control when you need to restrict access based on resource attributes like container name, blob path, or tags.
+- **Disable Shared Key authorization**: Once you've migrated to Microsoft Entra ID authentication, disable Shared Key authorization at the storage account level to prevent unauthorized access via account keys.
+- **Use user delegation SAS**: When you need to provide temporary access, prefer user delegation SAS over account SAS or service SAS, as they're secured with Microsoft Entra credentials.
+- **Monitor access**: Enable diagnostic logging and review Azure Monitor logs regularly to track who is accessing your blob data and identify any suspicious activity.
+- **Apply conditional access**: Use Microsoft Entra Conditional Access policies to enforce additional security requirements such as multifactor authentication, device compliance, or location-based access controls.

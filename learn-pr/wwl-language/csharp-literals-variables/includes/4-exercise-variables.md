@@ -9,7 +9,9 @@ In this exercise, you'll declare a variable, assign it a value, retrieve its val
 
 ### Create your first variable
 
-1. Select all of the code in the .NET Editor, and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
+First, let's clear the code you wrote previously and create a variable.
+
+1. Select all of the code in the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), and press <kbd>Delete</kbd> or <kbd>Backspace</kbd> to delete it.
 
 1. Enter the following code in the code editor:
 
@@ -37,7 +39,7 @@ It's important to notice that assignment happens from right to left. In other wo
 1. Now, run the code. You'll see the following error in the output console:
 
     ```Output
-    (2,1): error CS0131: The left-hand side of an assignment must be a variable, property or indexer
+    CS0131: The left-hand side of an assignment must be a variable, property or indexer
     ```
 
 ### Improperly assign a value of the incorrect data type to the variable
@@ -54,7 +56,7 @@ You learned that C# was designed to enforce types. When you're working with vari
 1. Now, run the code. You'll see the following error in the output console:
 
     ```Output
-    (2,9): error CS0029: Cannot implicitly convert type 'string' to 'int'
+    CS0029: Cannot implicitly convert type 'string' to 'int'
     ```
 
 The error message hints at what the C# compiler tries to do behind the scenes. It tried to "implicitly convert" the string "Bob" to be an int value; however, that is impossible. Even so, C# tried to do the conversion but fails since there's no numeric equivalent for the word "Bob".
@@ -124,7 +126,7 @@ You must *set* a variable to a value before you can *get* the value from the var
 1. Now, run the code. You'll see the following result in the output console:
 
     ```Output
-    (2,19): error CS0165: Use of unassigned local variable 'firstName'
+    CS0165: Use of unassigned local variable 'firstName'
     ```
 
 To avoid the possibility of an unassigned local variable, it is recommended that you set the value as soon as possible after you declare it.

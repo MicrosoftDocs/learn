@@ -9,7 +9,7 @@ metadata:
   description: This unit explains what dependency injection is and how it works in an ASP.NET Core app.
   ms.date: 11/7/2024
   author: camsoper
-  ms.author: casoper
+  ms.author: daroth
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 10

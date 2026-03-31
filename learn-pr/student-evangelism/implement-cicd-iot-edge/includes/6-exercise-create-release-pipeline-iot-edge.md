@@ -1,8 +1,8 @@
 ## Create a new release pipeline
 
-Deployments to devices need to be done under tight control in production environments. To achieve this, you'll create a release pipeline that deploys to QA devices and smoke tests the edge runtime in a containerized device. This is accomplished by running an instance of [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container), which is configured as a QA device. Then, you'll probe the IoT hub to ensure that the QA device receives the desired deployment configuration, and is able to successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh).
+Deployments to devices must be tightly controlled in production environments. To achieve this, you create a release pipeline that deploys to QA devices and smoke tests the edge runtime in a containerized device. This process uses an instance of [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container), configured as a QA device. Then, you probe the IoT hub to ensure that the QA device receives the desired deployment configuration and successfully runs all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh).
 
-1. To begin creating a release pipeline, in the left menu pane, select **Pipelines**, and then select **Releases**. Select **New pipeline**. The **Select a template** pane appears. To create a new pipeline with an empty job, select **Empty job**, and then select **Save**. In the **Save** dialog, select a **Folder** from the dropdown, and enter any **Comment**. Select **OK**.
+1. To create a release pipeline, in the left menu pane, select **Pipelines**, then **Releases**, and then **New pipeline**. In the **Select a template** pane, select **Empty job**, and then select **Save**. In the **Save** dialog, select a **Folder** from the dropdown, enter a **Comment**, and select **OK**.
 
 1. From the left menu pane, select **Releases**. In the middle menu pane, select the **New** dropdown, and then select **Import release pipeline**. Download the [release-pipeline.json](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/release-pipeline.json) file located in the root of this repository and import it. The import should finish successfully as follows.
 
@@ -10,7 +10,7 @@ Deployments to devices need to be done under tight control in production environ
 
     You'll need to fix a few things before you can successfully run the release pipeline, specifically Azure subscription endpoints, agent pools, variable settings, and artifact source.
 
-1. From the **Tasks** dropdown, select **Create Deployment**. Provide the appropriate Azure subscription and Azure Container Registry name for the **Azure IoT Edge - Push module images** task.
+1. From the **Tasks** dropdown, select **Create Deployment**. Enter the appropriate Azure subscription and Azure Container Registry name for the **Azure IoT Edge - Push module images** task.
 
    ![The illustration shows issues in the deployment task.](../media/task-settings.png)
 
@@ -52,7 +52,7 @@ Deployments to devices need to be done under tight control in production environ
        az ad sp create-for-rbac --name <name> --role Contributor --scopes /subscriptions/<subscriptionid>
        ```
 
-    5. You should see output similar to the following.
+    5. The output is similar to the following.
 
        ```
        {
@@ -64,11 +64,11 @@ Deployments to devices need to be done under tight control in production environ
        }
        ```
 
-    6. Make note of the `name`, `password`, and `tenant` values, as these values will be used for `spAppURl`, `spPassword`, and `tenant` respectively.
+    6. Note the `name`, `password`, and `tenant` values, as they are used for `spAppURl`, `spPassword`, and `tenant` respectively.
 
     7. Provide all parameters as required in **Variables**.
 
-1. Now, go back to **Pipeline**, and add an artifact.
+1. Go to **Pipeline**, and add an artifact.
 
     ![The illustration shows how to add an artifact.](../media/add-artifact.png)
 

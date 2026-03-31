@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-databricks-architecture.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which component in Azure Databricks handles job scheduling and cluster management?"
+    choices:
+    - content: "The compute plane"
+      isCorrect: false
+      explanation: "Incorrect. The compute plane is where data processing happens, not where orchestration and scheduling occur."
+    - content: "The control plane"
+      isCorrect: true
+      explanation: "Correct. The control plane includes backend services that handle orchestration, job scheduling, and cluster management."
+    - content: "The workspace storage account"
+      isCorrect: false
+      explanation: "Incorrect. The workspace storage account stores workspace system data and catalogs, not orchestration components."
+  - content: "What is the relationship between storage credentials and external locations in Unity Catalog?"
+    choices:
+    - content: "Each external location requires a unique storage credential"
+      isCorrect: false
+      explanation: "Incorrect. Multiple external locations can reference the same storage credential if they access storage in the same security boundary."
+    - content: "Storage credentials provide authentication while external locations specify the cloud storage path"
+      isCorrect: true
+      explanation: "Correct. Storage credentials encapsulate authentication mechanisms, and external locations combine these credentials with specific cloud storage paths."
+    - content: "External locations and storage credentials are the same Unity Catalog object"
+      isCorrect: false
+      explanation: "Incorrect. Storage credentials and external locations are separate Unity Catalog objects with different purposes."
+  - content: "How does Unity Catalog determine where to store data for a managed table when no schema-level storage location is defined?"
+    choices:
+    - content: "It creates a new storage account in your Azure subscription"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog follows a resolution hierarchy that checks catalog-level and metastore-level storage locations."
+    - content: "It checks the catalog-level storage location, then falls back to the metastore-level location"
+      isCorrect: true
+      explanation: "Correct. Unity Catalog follows a hierarchy: schema level first, then catalog level, and finally metastore level as the fallback."
+    - content: "It stores the data in the workspace storage account"
+      isCorrect: false
+      explanation: "Incorrect. Managed tables use Unity Catalog managed storage locations, not the workspace storage account."
+  - content: "Which statement about default storage in Azure Databricks is accurate?"
+    choices:
+    - content: "Classic compute clusters can access catalogs stored in default storage"
+      isCorrect: false
+      explanation: "Incorrect. All access to default storage requires serverless compute. Classic compute cannot read from or write to catalogs on default storage."
+    - content: "Default storage is available in both serverless and traditional workspaces"
+      isCorrect: false
+      explanation: "Incorrect. Default storage is exclusively available in serverless workspaces and requires serverless compute for access."
+    - content: "Default storage is fully managed by Azure Databricks and requires no external storage configuration"
+      isCorrect: true
+      explanation: "Correct. Default storage is a fully managed platform that provides immediate storage without requiring cloud storage accounts or credentials."
+  - content: "What happens to the underlying data files when a managed table in Unity Catalog is dropped?"
+    choices:
+    - content: "The data files are immediately deleted from cloud storage"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog marks the files for deletion after eight days, not immediately."
+    - content: "The data files are marked for deletion after eight days"
+      isCorrect: true
+      explanation: "Correct. When you drop a managed table, Unity Catalog automatically marks the underlying data files for deletion after eight days."
+    - content: "The data files remain in cloud storage and must be manually deleted"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog manages the lifecycle of managed table data, including automatic cleanup."

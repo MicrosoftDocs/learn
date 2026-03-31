@@ -218,14 +218,6 @@ public class HowToIndexInitializer
 You use the required keyword to force callers to set the value of a property or field using an object initializer. Required properties don't need to be set as constructor parameters. The compiler ensures all callers initialize those values.
 
 ```csharp
-
-public class Person
-{
-    public string FirstName { get; set; } = string.Empty;
-    public required string LastName { get; set; }
-
-}
-
 // The `FirstName` property is optional and has a default value of an empty string.        
 // The `LastName` property is required and must be initialized during object creation.
 // You can create a new instance of the Person class using both properties.
@@ -247,9 +239,16 @@ Console.WriteLine($"Hello, {friend2.FirstName} {friend2.LastName}!");
 
 // Output:
 // Hello, Lisa Yeh!
-// Hello, Sandy Yeh!
 // Hello,  Yeh!
-// Hello,  Chen!
+// Hello, Sandy Chen!
+
+public class Person
+{
+    public string FirstName { get; set; } = string.Empty;
+    public required string LastName { get; set; }
+
+}
+
 ```
 
 It's a typical practice to guarantee that your object is properly initialized, especially when you have multiple fields or properties to manage and don't want to include them all in the constructor.

@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-intune.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Device management with Microsoft Intune" module.
+  ms.date: 09/03/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does Intune perform Mobile App Management (MAM) on Windows devices?"
+    choices:
+        - content: "Using Microsoft Edge"
+          isCorrect: true
+          explanation: "Correct. As of now, Microsoft Edge is the only app on Windows that supports Intune's MAM capabilities."
+        - content: "Through the Windows Store"
+          isCorrect: false
+          explanation: "Incorrect. The Windows Store itself doesn't support MAM. On Windows, MAM is only supported via Microsoft Edge."
+        - content: "Via Microsoft Teams"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Teams doesn't support MAM on Windows; only Microsoft Edge supports it for now."
+        - content: "By installing a non-Microsoft app"
+          isCorrect: false
+          explanation: "Incorrect. Intune doesn't use non-Microsoft apps for MAM on Windows. MAM is currently supported only through Microsoft Edge."
+  - content: "What is a key benefit of using App Protection Policies (APP) in Microsoft Intune?"
+    choices:
+        - content: "They require all devices to be enrolled in Intune"
+          isCorrect: false
+          explanation: "Incorrect. APP can be applied without requiring devices to be enrolled in Intune."
+        - content: "They allow selective wiping of corporate data from managed apps"
+          isCorrect: true
+          explanation: "Correct. APP enables selective wiping of corporate data from managed apps, especially useful if a device is lost or an employee leaves."
+        - content: "They provide unlimited admin rights to all users"
+          isCorrect: false
+          explanation: "Incorrect. APP is focused on data protection, not user privileges."
+        - content: "They only work on company-owned devices"
+          isCorrect: false
+          explanation: "Incorrect. APP can protect data on both managed (company-owned) and unmanaged (personal) devices."
+  - content: "Which step is required before you can assign an app to a group in Intune?"
+    choices:
+        - content: "Add the app to Intune"
+          isCorrect: true
+          explanation: "Correct. You must add the app to Intune before you can assign it to a group."
+        - content: "Enroll all devices in the company"
+          isCorrect: false
+          explanation: "Incorrect. While device enrollment is important, it isn't required before assigning an app to a group."
+        - content: "Configure a VPN gateway"
+          isCorrect: false
+          explanation: "Incorrect. Configuring a VPN gateway isn't a prerequisite for app assignment."
+        - content: "Set up a public kiosk"
+          isCorrect: false
+          explanation: "Incorrect. Setting up a public kiosk is unrelated to assigning apps to groups."
+  - content: "What is a feature included in Microsoft Intune Suite but not in the core Intune plan?"
+    choices:
+        - content: "Remote Help"
+          isCorrect: true
+          explanation: "Correct. Remote Help is an advanced feature included in Intune Suite, not in the core Intune plan."
+        - content: "Device enrollment"
+          isCorrect: false
+          explanation: "Incorrect. Device enrollment is a core feature of Intune."
+        - content: "App assignment"
+          isCorrect: false
+          explanation: "Incorrect. App assignment is available in the core Intune plan."
+        - content: "Conditional Access"
+          isCorrect: false
+          explanation: "Incorrect. Conditional Access is a core Intune feature."
+  - content: "Which operating systems are supported for device enrollment in Microsoft Intune?"
+    choices:
+        - content: "Android, macOS, iOS, Windows"
+          isCorrect: true
+          explanation: "Correct. Intune supports device enrollment for Android, macOS, iOS, and Windows."
+        - content: "Linux, Chrome OS, Android, Windows"
+          isCorrect: false
+          explanation: "Incorrect. Linux and Chrome OS aren't listed as supported operating systems in the provided content."
+        - content: "iOS, Linux, Windows, BlackBerry"
+          isCorrect: false
+          explanation: "Incorrect. Linux and BlackBerry aren't supported according to the content."
+        - content: "Windows only"
+          isCorrect: false
+          explanation: "Incorrect. Intune supports multiple operating systems, not just Windows."
+

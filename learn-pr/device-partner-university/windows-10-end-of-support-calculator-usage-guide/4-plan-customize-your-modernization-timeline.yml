@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-10-end-of-support-calculator-usage-guide.plan-customize-your-modernization-timeline
+title: Plan and customize your modernization timeline
+metadata:
+  title: Plan And Customize Your Modernization Timeline
+  description: This content is part of the "Windows 10 EOS Calculator usage guide" module.
+  ms.date: 10/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-plan-customize-your-modernization-timeline.md)]

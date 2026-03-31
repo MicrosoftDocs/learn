@@ -18,7 +18,7 @@ abstract: |
     - Update the sensor from learning to operational mode when alerts accurately represent the network activity
 prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level
-  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner
+  - Access to an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) as a Security Admin, Contributor, or Owner
   - A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Access to an installed sensor that's receiving network traffic
 iconUrl: /learn/achievements/defender-for-iot/defender-iot-fine-tune-deployment.svg

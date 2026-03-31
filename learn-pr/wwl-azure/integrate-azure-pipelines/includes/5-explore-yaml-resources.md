@@ -34,7 +34,7 @@ resources:
       branches:
         include:
 
-        - master
+        - main
         - releases/*
         exclude:
 
@@ -75,8 +75,8 @@ resources:
 
 Let the system know about the repository if:
 
- -  If your pipeline has templates in another repository.
- -  If you want to use multi-repo checkout with a repository that requires a service connection.
+- If your pipeline has templates in another repository.
+- If you want to use multi-repo checkout with a repository that requires a service connection.
 
 The repository keyword lets you specify an external repository.
 

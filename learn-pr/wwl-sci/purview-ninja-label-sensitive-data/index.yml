@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ninja-label-sensitive-data
+metadata:
+  title: Classify and Protect Sensitive Data with Sensitivity Labels
+  description: "Classify and protect sensitive data with sensitivity labels."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: module
+  ms.service: purview
+  ai-usage: human-only
+  hidden: true
+title: Classify and protect sensitive data with sensitivity labels
+summary: Labeling sensitive data ensures that confidential information is consistently classified and protected according to organizational policies, regardless of where it's stored or with whom it's shared. This is important because it helps prevent unauthorized access, supports regulatory compliance, and maintains data security during routine operations and collaborative activities.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create and publish sensitivity labels to classify and protect data across Microsoft 365.
+  - Assign and scope labels to specific users or departments using label policies.
+  - Automate labeling for files and emails with client-side and service-side options.
+  - Apply container-level labels to enforce site and group protections, including default labels and sharing controls.
+prerequisites: |
+  - Have basic knowledge of data protection and compliance
+  - Are familiar with Microsoft Purview Information Protection and information systems
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-ninja-label-sensitive-data.introduction
+- learn.wwl.purview-ninja-label-sensitive-data.create-publish-sensitivity-label
+- learn.wwl.purview-ninja-label-sensitive-data.automate-sensitivity-label
+- learn.wwl.purview-ninja-label-sensitive-data.container-label
+- learn.wwl.purview-ninja-label-sensitive-data.knowledge-check
+- learn.wwl.purview-ninja-label-sensitive-data.summary
+badge:
+  uid: learn.wwl.purview-ninja-label-sensitive-data.badge

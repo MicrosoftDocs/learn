@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.exercise-manage-mongodb-cluster
 title: 'Exercise: Manage a vCore-based Azure Cosmos DB form MongoDB cluster'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Manage a vCore-based Azure Cosmos DB form MongoDB cluster'
   description: "Exercise: Manage a vCore-based Azure Cosmos DB form MongoDB cluster."
   ms.date: 11/24/2024
@@ -15,4 +13,4 @@ azureSandbox: false
 labId: 163230
 labModal: true
 content: |
-  [!include[](includes/6-exercise-manage-mongodb-cluster.md)]
+  [!include[](includes/6-exercise-manage-mongodb-cluster.md)]

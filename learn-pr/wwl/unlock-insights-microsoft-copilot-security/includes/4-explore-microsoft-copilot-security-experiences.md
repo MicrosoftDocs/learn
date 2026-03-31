@@ -1,13 +1,13 @@
-Microsoft Copilot for Security provides both an immersive standalone experience and intuitive embedded experiences within other Microsoft security products, enhancing your security operations.
+Microsoft Security Copilot provides both an immersive standalone experience and intuitive embedded experiences within other Microsoft security products, enhancing your security operations.
 
 ### Standalone experience
-Access Copilot for Security directly at [securitycopilot.microsoft.com](https://securitycopilot.microsoft.com) for a comprehensive, independent experience. This platform allows security professionals to apply the full capabilities of Copilot for Security in one place.
+Access Security Copilot directly at [securitycopilot.microsoft.com](https://securitycopilot.microsoft.com) for a comprehensive, independent experience. This platform allows security professionals to apply the full capabilities of Security Copilot in one place.
 
 ### Embedded experience
-Utilize Copilot for Security within other Microsoft security products to gain context-specific functionalities seamlessly integrated into your existing workflows. For example, within Microsoft Defender XDR, you can access features like incident summarization or script analysis directly.
+Utilize Security Copilot within other Microsoft security products to gain context-specific functionalities seamlessly integrated into your existing workflows. For example, within Microsoft Defender XDR, you can access features like incident summarization or script analysis directly.
 
 > [!NOTE]
-> For detailed guidance on specific embedded experiences, refer to the documentation library of the corresponding service. For instance, if using Copilot for Security within Microsoft Defender XDR, the relevant guidance can be found in the Microsoft Defender XDR documentation.
+> For detailed guidance on specific embedded experiences, refer to the documentation library of the corresponding service. For instance, if using Security Copilot within Microsoft Defender XDR, the relevant guidance can be found in the Microsoft Defender XDR documentation.
 
 ### Available Embedded Experiences
 
@@ -38,16 +38,16 @@ Utilize Copilot for Security within other Microsoft security products to gain co
 
 ### Plugins and Integrations
 
-Copilot for Security extends its capabilities through plugins from Microsoft and third-party security products. These plugins bring extra context from event logs, alerts, incidents, and policies. Integrations with services like ServiceNow enhance the functionality and contextual awareness of Copilot for Security, making it a versatile tool in your security arsenal.
+Security Copilot extends its capabilities through plugins from Microsoft and third-party security products. These plugins bring extra context from event logs, alerts, incidents, and policies. Integrations with services like ServiceNow enhance the functionality and contextual awareness of Security Copilot, making it a versatile tool in your security arsenal.
 
 ### Operational Workflow
 
-1. **User Prompts:** Security products send user prompts to Copilot for Security.
-2. **Preprocessing:** Copilot for Security refines these prompts using plugins before forwarding them to the language model.
+1. **User Prompts:** Security products send user prompts to Security Copilot.
+2. **Preprocessing:** Security Copilot refines these prompts using plugins before forwarding them to the language model.
 3. **Response Generation:** The language model generates responses, which are then enhanced with contextual information through plugins.
 4. **Response Delivery:** Users receive and review the refined responses.
-5. **Iterative Processing:** Copilot for Security continuously processes and orchestrates these services to deliver relevant, actionable insights based on your organizational data.
+5. **Iterative Processing:** Security Copilot continuously processes and orchestrates these services to deliver relevant, actionable insights based on your organizational data.
 
-By using these capabilities, Microsoft Copilot for Security significantly enhances the efficiency and effectiveness of security professionals, ensuring robust protection against evolving threats.
+By using these capabilities, Microsoft Security Copilot significantly enhances the efficiency and effectiveness of security professionals, ensuring robust protection against evolving threats.
 
-For more detailed guidance, visit the [Microsoft Copilot for Security documentation](/copilot/security/experiences-security-copilot).
+For more detailed guidance, visit the [Microsoft Security Copilot documentation](/copilot/security/experiences-security-copilot).

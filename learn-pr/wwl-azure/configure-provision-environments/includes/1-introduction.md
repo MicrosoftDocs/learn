@@ -1,17 +1,17 @@
-This module details target environment provisioning, service connections creation process, and test infrastructure setup. Learn how to configure functional test automation and run availability tests.
+This module covers target environment provisioning, service connection configuration, and test infrastructure setup. Learn to configure functional test automation and implement availability testing strategies.
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After completing this module, you'll be able to:
 
- -  Provision and configure target environment.
- -  Deploy to an environment securely using a service connection.
- -  Configure functional test automation and run availability tests.
- -  Setup test infrastructure.
+- Provision and configure target environments for deployment workflows.
+- Deploy securely to environments using service connections.
+- Configure functional test automation and implement availability testing.
+- Set up comprehensive test infrastructure for quality assurance.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
- -  You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see: [Create an Organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization).
+- Understanding of DevOps concepts and principles.
+- Familiarity with version control principles is helpful but not required.
+- Experience in software delivery organizations is beneficial.
+- Azure DevOps Organization and Team Project are required for exercises. See: [Create an Organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization).

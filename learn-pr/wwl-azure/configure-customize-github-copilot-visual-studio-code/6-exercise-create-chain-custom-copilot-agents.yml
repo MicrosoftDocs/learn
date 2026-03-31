@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-customize-github-copilot-visual-studio-code.exercise-create-chain-custom-copilot-agents
+title: "Exercise - Create and chain custom GitHub Copilot agents for a C# project"
+metadata:
+  title: "Exercise - Create and Chain Custom GitHub Copilot Agents for a C# Project"
+  description: "Exercise - Create and chain custom GitHub Copilot agents for a C# project."
+  ms.date: 02/25/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/6-exercise-create-chain-custom-copilot-agents.md)]

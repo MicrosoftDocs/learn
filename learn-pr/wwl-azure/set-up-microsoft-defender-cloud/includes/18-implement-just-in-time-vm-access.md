@@ -9,12 +9,12 @@ To use Just-in-Time VM access, you must enable Microsoft Defender for Cloud.
 :::image type="content" source="../media/msft-defender-for-cloud-enabled-1-a0eba624.jpg" alt-text="Screenshot of Azure Defender features.":::
 
 
-After you enable Defender, you can view which virtual machines have JIT configured. Enable JIT on any virtual machine that is not Healthy.
+After you enable Defender, you can view which virtual machines have JIT configured. Enable JIT on any virtual machine that isn't Healthy.
 
 :::image type="content" source="../media/just-in-time-vm-access-enable-jit-on-2-vms-4e70e72c.jpg" alt-text="Screenshot of the recommended virtual machines page.":::
 
 
-For each virtual machine, you are recommended specific ports and access.
+For each virtual machine, you're recommended specific ports and access.
 
 :::image type="content" source="../media/just-in-time-vm-access-port-configuration-3-40b02837.jpg" alt-text="Screenshot of port recommendations.":::
 

@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.wwl.architect-agentic-ai-business-solutions
+metadata:
+  title: "Architect AI Solutions For Business Productivity"
+  description: "Learn how to design AI-powered business solutions using agents, generative AI, and Microsoft Copilot to enhance productivity and efficiency."
+  ms.date: 02/20/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: learning-path
+title: "Architect AI solutions for business productivity"
+summary: |
+  Discover how to design and implement AI-powered business solutions using agents, generative AI, and Microsoft Copilot. Gain the skills to analyze requirements and create innovative solutions that enhance productivity and efficiency.
+prerequisites: |
+  - Basic understanding of AI concepts
+  - Familiarity with business process analysis
+  - Knowledge of Microsoft tools and platforms
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+modules:
+- learn.wwl.introduction-agentic-ai-business-solution-architecture
+- learn.wwl.analyze-requirements-ai-powered-business-solutions
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution
+- learn.wwl.manage-testing-ai-powered-business-solutions
+- learn.wwl.design-extensibility-ai-solutions
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance
+trophy:
+  uid: learn.wwl.architect-agentic-ai-business-solutions.trophy

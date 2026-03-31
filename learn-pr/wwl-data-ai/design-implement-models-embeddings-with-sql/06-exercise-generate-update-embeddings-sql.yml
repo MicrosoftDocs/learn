@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-models-embeddings-with-sql.exercise-generate-update-embeddings-sql
+title: Exercise - Generate and update embeddings in Azure SQL Database
+metadata:
+  title: Exercise - Generate and update embeddings in Azure SQL Database
+  description: Practice creating external models, generating embeddings, and performing vector search in Azure SQL Database.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 02/02/2026
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/06-exercise-generate-update-embeddings-sql.md)]

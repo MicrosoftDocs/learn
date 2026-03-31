@@ -6,9 +6,9 @@ In this exercise, you create a **MainLayout** component. You see how you can use
 
 ## Add a MainLayout component
 
-1. In Visual Studio Code, on the menu, select **File** > **New Text File**.
-1. Select ASP.NET Razor as the language.
-1. Create a layout component, and copy the navigation HTML from any page.
+1. In Visual Studio Code, on the menu, select **File** > **New File**.
+1. Name the file **MainLayout.razor**. Make sure you save the file in the **Shared** directory.
+1. In the new file, create a layout component and copy the navigation HTML from any page.
 
     ```razor
     @inherits LayoutComponentBase
@@ -45,7 +45,6 @@ In this exercise, you create a **MainLayout** component. You see how you can use
     This layout uses some of the markup in **_Host.cshtml**, so we need to remove it from there.
 
 1. Save your changes by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd>.
-1. For the filename, use **MainLayout.razor**. Make sure you save the file in the **Shared** directory.
 1. In the file explorer, expand **Pages**. Then select **_Host.cshtml**.
 1. Change the elements surrounding the Blazor app component from this code:
 

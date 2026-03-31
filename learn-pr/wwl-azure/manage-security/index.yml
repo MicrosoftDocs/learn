@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage security for Azure Virtual Desktop
   description: "The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop on local machines. You’ll learn the critical actions for keeping your users safe."
   ms.date: 08/07/2024
@@ -51,4 +49,4 @@ units:
 - learn.wwl.manage-security.knowledge-check
 - learn.wwl.manage-security.summary
 badge:
-  uid: learn.wwl.manage-security.badge
+  uid: learn.wwl.manage-security.badge

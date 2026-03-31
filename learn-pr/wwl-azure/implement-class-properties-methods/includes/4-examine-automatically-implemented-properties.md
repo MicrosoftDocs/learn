@@ -118,7 +118,7 @@ public class Person
 
 ```
 
-This implementation works because the `FirstName` and `LastName` properties are readonly. People can change their name. Updating the `FirstName` and `LastName` properties to allow `set` accessors requires you to invalidate any cached value for `fullName`. You modify the `set` accessors of the `FirstName` and `LastName` property so the `fullNam`e field is calculated again:
+This implementation works because the `FirstName` and `LastName` properties are readonly. People can change their name. Updating the `FirstName` and `LastName` properties to allow `set` accessors requires you to invalidate any cached value for `fullName`. You modify the `set` accessors of the `FirstName` and `LastName` property so the `fullName` field is calculated again:
 
 ```csharp
 

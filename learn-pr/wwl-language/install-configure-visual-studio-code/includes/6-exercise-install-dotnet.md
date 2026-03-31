@@ -22,18 +22,18 @@ Use the following steps to complete this section of the exercise:
 
     If a version of .NET is installed, you should see a response message listing the version number similar to the following:
 
-    `8.0.100`
+    `10.0.100`
 
 1. Close the Terminal panel.
 
-## Install the .NET 8 SDK
+## Install the .NET SDK
 
-Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 and 7 are also supported, .NET 8 includes improvements that you may find helpful.
+Having one of the latest supported versions of the .NET SDK installed is recommended. Although .NET 8 and 9 are also supported, .NET 10 (long term support) includes the latest improvements and features.
 
-Visual Studio Code and the C# Dev Kit help you to install the .NET SDK.
+Visual Studio Code and the C# Dev Kit helps you to install the .NET SDK.
 
 > [!NOTE]
-> The C# training series that's available on Microsoft Learn uses .NET 8. Ensure that you have .NET 8 installed if you plan on completing this training.
+> The C# training series that's available on Microsoft Learn was developed using .NET 10, and is compatible with .NET 10 and later versions. Ensure that you have .NET 10 installed if you plan on completing this training.
 
 Use the following steps to complete this section of the exercise:
 
@@ -41,7 +41,7 @@ Use the following steps to complete this section of the exercise:
 
 1. At the Command Palette prompt, type **.NET: Install** and then select **.NET: Install New .NET SDK**.
 
-1. Under **Latest**, ensure that **.NET 8** is selected, and then select **Install**.
+1. Under **Latest**, ensure that **.NET 10** is selected, and then select **Install**.
 
 1. Wait for the .NET SDK to download and install.
 
@@ -59,17 +59,17 @@ Use the following steps to complete this section of the exercise:
 
 1. Close the Welcome page, and then open a Terminal panel.
 
-    To open a Terminal panel, on the Terminal menu, select **New Terminal**.
+    To open the Terminal panel, on the Terminal menu, select **New Terminal**.
 
 1. At the Terminal command prompt, type: `dotnet --version` and then press the Enter key.
 
     You need to open a new command prompt window after installing the .NET SDK to ensure that it's detected.
 
-1. Verify that a .NET 8 version number is listed.
+1. Verify that the .NET SDK is installed.
 
-    The version number displayed should be similar to: `8.0.300`
+    If you installed the .NET 10 SDK, the version number will begin with `10.`, for example: `10.0.100`.
 
-    You may see a more recent version number, that's okay. The version number will begin with `8.` if you installed the .NET 8 SDK.
+    You may see a more recent version number, that's okay.
 
 1. Close the Terminal panel.
 

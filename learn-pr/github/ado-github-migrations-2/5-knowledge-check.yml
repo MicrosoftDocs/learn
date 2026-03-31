@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.github.azure-devops-to-github-enterprise-migrations-part-ii-assessment-setup.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned about Azure DevOps source environment assessment and GitHub Enterprise Cloud target environment setup.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 10/17/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which command generates comprehensive Azure DevOps inventory CSV files for migration planning?"
+    choices:
+    - content: "`gh ado2gh migrate-repo`"
+      isCorrect: false
+      explanation: "Incorrect. This command is used for actual repository migration, not inventory generation."
+    - content: "`gh ado2gh inventory-report`"
+      isCorrect: true
+      explanation: "Correct! This command generates detailed CSV files containing organizations, team projects, repositories, and pipelines information."
+    - content: "`gh ado2gh generate-script`"
+      isCorrect: false
+      explanation: "Incorrect. This command generates migration scripts, not inventory reports."
+    - content: "`gh ado2gh integrate-boards`"
+      isCorrect: false
+      explanation: "Incorrect. This command configures Azure Boards integration, not inventory assessment."
+  - content: "Which GitHub Enterprise Cloud environment types require SCIM provisioning for identity management?"
+    choices:
+    - content: "GitHub Enterprise Cloud Standard only"
+      isCorrect: false
+      explanation: "Incorrect. Standard environments use SSO overlay but don't require SCIM provisioning."
+    - content: "Enterprise Managed Users (EMU) and Data Residency environments"
+      isCorrect: true
+      explanation: "Correct! Both EMU and Data Residency environments require SCIM provisioning for centralized identity management."
+    - content: "Any organization with SAML SSO enabled"
+      isCorrect: false
+      explanation: "Incorrect. SAML SSO and SCIM provisioning are separate capabilities with different requirements."
+    - content: "Only Data Residency environments"
+      isCorrect: false
+      explanation: "Incorrect. Both EMU and Data Residency environments require SCIM, not just Data Residency."
+  - content: "What is the recommended default repository visibility setting for newly migrated repositories?"
+    choices:
+    - content: "Public"
+      isCorrect: false
+      explanation: "Incorrect. Public visibility exposes repositories outside the organization, which isn't desired for enterprise migrations."
+    - content: "Internal"
+      isCorrect: false
+      explanation: "Incorrect. While Internal visibility is good for shared libraries, Private is safer as the default for migrated repositories."
+    - content: "Private"
+      isCorrect: true
+      explanation: "Correct! Private visibility is the safest default, allowing you to selectively open access as needed rather than accidentally exposing sensitive code."
+    - content: "Fork-only"
+      isCorrect: false
+      explanation: "Incorrect. Fork-only isn't a standard repository visibility setting in GitHub."
+  - content: "What does the Azure Boards 'integrate-boards' command provide that 'configure-autolink' doesn't?"
+    choices:
+    - content: "GitHub repository autolinks to Azure DevOps work items"
+      isCorrect: false
+      explanation: "Incorrect. Both commands can create autolinks, but integrate-boards provides extra capabilities."
+    - content: "Azure DevOps service connection and bidirectional work item linking"
+      isCorrect: true
+      explanation: "Correct! The integrate-boards command creates service connections and enables full bidirectional linking and synchronization between GitHub and Azure Boards."
+    - content: "Release notes migration from Azure DevOps"
+      isCorrect: false
+      explanation: "Incorrect. Neither command handles release notes migration."
+    - content: "Wiki content synchronization"
+      isCorrect: false
+      explanation: "Incorrect. These commands focus on work item linking, not wiki content."

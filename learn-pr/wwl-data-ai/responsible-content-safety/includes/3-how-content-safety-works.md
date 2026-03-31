@@ -1,14 +1,14 @@
-Azure AI Content Safety works with text and images, and AI-generated content.
+Foundry Content Safety works with text and images, and AI-generated content.
 
-Content Safety vision capabilities are powered by Microsoft's Florence foundation model, which has been trained with billions of text-image pairs. Text analysis uses natural language processing techniques, giving a better understanding of nuance and context. Azure AI Content Safety is multilingual and can detect harmful content in both short form and long form. It's currently available in English, German, Spanish, French, Portuguese, Italian, and Chinese.
+Content Safety vision capabilities are powered by Microsoft's Florence foundation model, which has been trained with billions of text-image pairs. Text analysis uses natural language processing techniques, giving a better understanding of nuance and context. Foundry Content Safety is multilingual and can detect harmful content in both short form and long form. It's currently available in English, German, Spanish, French, Portuguese, Italian, and Chinese.
 
-Azure AI Content Safety classifies content into four categories:
+Foundry Content Safety classifies content into four categories:
 
-![Diagram of the four categories Azure AI Content Safety classifies content into.](../media/four-perspectives.jpg)
+![Diagram of the four categories Foundry Content Safety classifies content into.](../media/four-perspectives.jpg)
 
 A severity level for each category is used to determine whether content should be blocked, sent to a moderator, or auto approved.
 
-Azure AI Content Safety features include:
+Foundry Content Safety features include:
 
 ## Safeguarding text content
 
@@ -34,17 +34,17 @@ Azure AI Content Safety features include:
 
 ## Limitations
 
-Azure AI Content Safety uses AI algorithms, and so may not always detect inappropriate language. And on occasions it might block acceptable language because it relies on algorithms and machine learning to detect problematic language.
+Foundry Content Safety uses AI algorithms, and so may not always detect inappropriate language. And on occasions it might block acceptable language because it relies on algorithms and machine learning to detect problematic language.
 
-Azure AI Content Safety should be tested and evaluated on real data before being deployed. And once deployed, you should continue to monitor the system to see how accurately it's performing.
+Foundry Content Safety should be tested and evaluated on real data before being deployed. And once deployed, you should continue to monitor the system to see how accurately it's performing.
 
 ## Evaluating accuracy
 
-When evaluating how accurately Azure AI Content Safety is for your situation, compare its performance against four criteria:
+When evaluating how accurately Foundry Content Safety is for your situation, compare its performance against four criteria:
 
 - **True positive** - correct identification of harmful content.
 - **False positive** - incorrect identification of harmful content.
 - **True negative** - correct identification of harmless content.
 - **False negative** - harmful content isn't identified.
 
-Azure AI Content Safety works best to support human moderators who can resolve cases of incorrect identification. When people add content to a site, they don't expect posts to be removed without reason. Communicating with users about why content is removed or flagged as inappropriate helps everyone to understand what is permissible and what isn't.
+Foundry Content Safety works best to support human moderators who can resolve cases of incorrect identification. When people add content to a site, they don't expect posts to be removed without reason. Communicating with users about why content is removed or flagged as inappropriate helps everyone to understand what is permissible and what isn't.

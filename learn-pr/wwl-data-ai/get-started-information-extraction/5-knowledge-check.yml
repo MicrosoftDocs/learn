@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-information-extraction.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 02/21/2026
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the key advantage of using Azure Content Understanding over basic Optical Character Recognition (OCR)?"
+    choices:
+    - content: "Azure Content Understanding extracts text faster by skipping image preprocessing."
+      isCorrect: false
+      explanation: "Azure Content Understanding doesn't skip preprocessing; it actually combines OCR with other AI techniques like natural language understanding and multimodal models."
+    - content: "Azure Content Understanding understands document structure and maps extracted data to a defined schema."
+      isCorrect: true
+      explanation: "Azure Content Understanding goes beyond basic OCR by using schema‑based extraction, allowing it to identify fields (such as invoice number or total) and map values even when labels vary or are missing."
+    - content: "Azure Content Understanding extracts structured data, while OCR extracts the relationship between words in text."
+      isCorrect: false
+      explanation: "OCR doesn't extract the relationship between words; it simply converts images of text into machine‑readable text."
+  - content: "What is the primary role of an analyzer in Azure Content Understanding?"
+    choices:
+    - content: "It defines how content is processed and what structured data is returned."
+      isCorrect: true
+      explanation: "Analyzers are the core components that define how content is processed, including extraction settings, schemas, and model deployments."
+    - content: "It stores extracted data in a database."
+      isCorrect: false
+      explanation: "Analyzers don't store data; they only define extraction and processing behavior"
+    - content: "It converts JSON output into human‑readable text."
+      isCorrect: false
+      explanation: "Analyzers generate structured output (such as JSON), not human‑readable conversions."
+  - content: "When you use the Azure Content Understanding Python SDK, what happens after you submit content for analysis?"
+    choices:
+    - content: "The results are returned immediately in the same request."
+      isCorrect: false
+      explanation: "Results aren't returned immediately during asynchronous analysis."
+    - content: "The analyzer retrains itself on the submitted content."
+      isCorrect: false
+      explanation: "Analyzers are predefined or custom‑configured and reused; they aren't retrained per request"
+    - content: "You must poll a URL until the analysis job completes."
+      isCorrect: true
+      explanation: "Content analysis is handled as a long‑running asynchronous operation. After submitting content, you poll the Operation-Location (or use the SDK poller) until the job completes and returns results."
+
+

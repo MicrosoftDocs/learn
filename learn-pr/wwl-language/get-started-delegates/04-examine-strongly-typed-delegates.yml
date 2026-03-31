@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-delegates.examine-strongly-typed-delegates
+title: Examine strongly typed delegates
+metadata:
+  title: Examine strongly typed delegates
+  description: "Examine strongly typed delegates."
+  ms.date: 04/22/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/04-examine-strongly-typed-delegates.md)]

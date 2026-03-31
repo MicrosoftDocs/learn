@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db.understand-indexes-cosmos-db
+title: Understand indexes in Azure Cosmos DB
+metadata:
+  title: Understand Indexes in Azure Cosmos DB
+  description: Understand indexes in Azure Cosmos DB
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-indexes-cosmos-db.md)]

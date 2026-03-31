@@ -28,7 +28,7 @@ This module consists of five lessons:
 
 - Consider using real-word examples  
 
-  - Consider using Microsoft [customer stories](https://aka.ms/customerstories) 
+  - Consider using Microsoft [customer stories](https://azure.microsoft.com/resources/customer-stories/) 
 
 - Consider presenting the labs as demonstrations  
 

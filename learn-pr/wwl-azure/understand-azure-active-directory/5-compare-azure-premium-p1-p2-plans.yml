@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-azure-active-directory.compare-azure-premium-p1-p2-plans
 title: Compare Microsoft Entra ID P1 and P2 plans
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Compare Microsoft Entra ID P1 and P2 plans
   description: "Compare Microsoft Entra ID P1 and P2 plans"
   ms.date: 05/12/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-compare-azure-premium-p1-p2-plans.md)]
-
+

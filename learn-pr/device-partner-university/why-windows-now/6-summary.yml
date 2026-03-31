@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.why-windows-now.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Why Windows 11 Pro, why now" module.
+  ms.date: 07/28/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

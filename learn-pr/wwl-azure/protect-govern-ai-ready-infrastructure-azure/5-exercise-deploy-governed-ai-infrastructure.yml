@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-govern-ai-ready-infrastructure-azure.exercise-deploy-governed-ai-infrastructure
+title: "Exercise: Configure regional data residency and identity-based access controls"
+metadata:
+  title: "Exercise: Configure Regional Data Residency and Identity‑Based Access Controls"
+  description: "Exercise: Configure Regional Data Residency and Identity‑Based Access Controls."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-deploy-governed-ai-infrastructure.md)]

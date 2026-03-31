@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hyperparameters-azure-databricks.hyperopt
+title: Optimize hyperparameters with Optuna
+metadata:
+  title: Optimize hyperparameters with Optuna
+  description: Learn how wo optimize hyperparameters with Optuna
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 8/4/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand.md)]
+

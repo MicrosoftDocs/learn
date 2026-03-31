@@ -4,10 +4,10 @@ title: Exercise - Investigate an incident
 metadata:
   title: Exercise - Investigate an incident
   description: Follow these steps to create an analytics rule and use it to investigate an incident in Microsoft Sentinel.
-  ms.date: 05/22/2023
-  author: wwlpublish
+  ms.date: 04/18/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 35
 content: |
   [!include[](includes/6-exercise-investigate-incident.md)]

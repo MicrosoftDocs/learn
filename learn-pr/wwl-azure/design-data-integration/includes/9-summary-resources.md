@@ -27,7 +27,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 - Use [data integration at scale with Azure Data Factory](/training/paths/data-integration-scale-azure-data-factory).
 - Discover [Azure database and analytics services](/training/modules/azure-database-fundamentals).
 - Review [concepts of data analytics](/training/modules/explore-concepts-of-data-analytics).
-- Review an [introduction to Azure Data Factory](/training/modules/intro-to-azure-data-factory).
 - Work with [data streams by using Azure Stream Analytics](/training/modules/introduction-to-data-streaming).
 
 ## Learn more with optional hands-on exercises

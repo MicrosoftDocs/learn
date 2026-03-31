@@ -15,3 +15,4 @@ By the end of this module, you'll be able to:
  -  Describe Windows Defender Credential Guard.
  -  Block Windows NTLM authentication.
  -  Locate problematic accounts.
+

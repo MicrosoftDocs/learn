@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-ai-governance-ai-ready-infrastructure.configure-governance-policy-workloads
+title: "Configure governance policies for AI workloads"
+metadata:
+  title: "Configure Governance Policies for AI Workloads"
+  description: "Learn how to configure governance policies for AI workloads, ensuring compliance, cost control, and operational efficiency with Microsoft Foundry."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-configure-governance-policy-workloads.md)]
+

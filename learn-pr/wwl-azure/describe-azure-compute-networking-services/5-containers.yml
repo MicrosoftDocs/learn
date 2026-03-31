@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.containers
 title: Describe Azure containers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure containers
   description: "Describe Azure containers"
   ms.date: 09/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-containers.md)]
+  [!include[](includes/5-containers.md)]

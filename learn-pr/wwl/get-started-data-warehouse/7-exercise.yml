@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-warehouse.exercise
-title: Exercise - Analyze data in a data warehouse
+title: Exercise - Create and query a warehouse
 metadata:
-  title: Exercise - Analyze data in a data warehouse
-  description: "Exercise - Analyze data in a data warehouse"
-  ms.date: 01/10/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  title: Exercise - Create and Query a Warehouse
+  description: "Exercise - Create and query a warehouse"
+  ms.date: 03/04/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
 durationInMinutes: 30
 content: |

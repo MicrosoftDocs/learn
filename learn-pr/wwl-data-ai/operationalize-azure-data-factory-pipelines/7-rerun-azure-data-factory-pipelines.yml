@@ -2,8 +2,6 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.re-run-azure-data-factory-pipelines
 title: Rerun Azure Data Factory pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Rerun Azure Data Factory pipelines
   description: "Rerun Azure Data Factory pipelines"
   ms.date: 05/16/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-rerun-azure-data-factory-pipelines.md)]
+  [!include[](includes/7-rerun-azure-data-factory-pipelines.md)]

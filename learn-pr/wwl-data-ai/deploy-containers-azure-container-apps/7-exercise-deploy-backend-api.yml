@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-container-apps.exercise-deploy-backend-api
+title: Exercise - Deploy a containerized backend API to Container Apps
+metadata:
+  title: Exercise - Deploy a Containerized Backend API to Container Apps
+  description: Exercise - Deploy a containerized backend API to Container Apps
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-deploy-backend-api.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.queue-process-operations-service-bus.exercise-process-messages
+title: Exercise - Process messages with Azure Service Bus
+metadata:
+  title: Exercise - Process Messages with Azure Service Bus
+  description: Exercise - Process messages with Azure Service Bus
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-process-messages.md)]

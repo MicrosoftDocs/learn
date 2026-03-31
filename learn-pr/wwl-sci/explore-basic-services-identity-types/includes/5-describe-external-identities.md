@@ -38,3 +38,7 @@ If you’re an organization or a developer creating consumer apps, use External 
 Microsoft Entra External ID includes Microsoft's customer identity and access management (CIAM) solution that includes features like self-service registration, personalized sign-in experiences including single sign-on (SSO) with social and enterprise identities, and customer account management. Because these CIAM capabilities are built into Microsoft Entra ID, you also benefit from platform features like enhanced security, compliance, and scalability.
 
 :::image type="content" source="../media/overview-ciam.png" alt-text="Diagram showing a representation of External ID in an external tenant.":::
+
+### B2B direct connect
+
+In addition to B2B collaboration, External ID supports B2B direct connect, which creates a mutual trust relationship between two Microsoft Entra organizations. B2B direct connect currently enables the Teams Connect shared channels feature, allowing users from external organizations to seamlessly collaborate for chat, calls, and file sharing. Unlike B2B collaboration users, B2B direct connect users aren't added as guests in your directory; instead, they access shared resources directly from their home tenant.

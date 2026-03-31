@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-security-compliance.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: Knowledge check for implementing data security and compliance in SQL databases.
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "A financial services company needs to protect credit card numbers stored in an Azure SQL Database. The application must be able to perform equality searches on the encrypted column, but database administrators should not be able to view the plaintext values. Which encryption approach should you recommend?"
+    choices:
+    - content: "Transparent Data Encryption (TDE)"
+      isCorrect: false
+      explanation: "Incorrect. TDE encrypts data at rest but doesn't protect data from users with database access. Administrators with SELECT permissions can still view plaintext values."
+    - content: "Always Encrypted with deterministic encryption"
+      isCorrect: true
+      explanation: "Correct. Always Encrypted keeps encryption keys outside the database engine, preventing even administrators from viewing plaintext. Deterministic encryption allows equality comparisons needed for searches."
+    - content: "Column-level encryption with symmetric keys"
+      isCorrect: false
+      explanation: "Incorrect. Column-level encryption stores keys within the database. Users with appropriate permissions to the symmetric key can decrypt the data, including administrators."
+    - content: "Always Encrypted with randomized encryption"
+      isCorrect: false
+      explanation: "Incorrect. While Always Encrypted with randomized encryption protects data from administrators, randomized encryption doesn't support equality searches or use in WHERE clauses."
+  - content: "A retail company wants support staff to verify customer phone numbers by seeing only the last four digits. The actual phone numbers must remain unchanged in the database for billing system integration. Which security feature should you implement?"
+    choices:
+    - content: "Row-Level Security with a filter predicate"
+      isCorrect: false
+      explanation: "Incorrect. Row-Level Security filters which rows users can see, not which parts of column values. Support staff would either see the entire row or no row at all."
+    - content: "A view that truncates phone numbers"
+      isCorrect: false
+      explanation: "Incorrect. While a view could display truncated numbers, this approach requires managing permissions on both the view and base table. It also doesn't prevent direct table access if permissions allow."
+    - content: "Dynamic Data Masking with partial masking"
+      isCorrect: true
+      explanation: "Correct. Dynamic Data Masking with partial masking reveals only specified portions of the data (like the last 4 digits) while keeping the actual data unchanged. Users without UNMASK permission see the masked values."
+    - content: "Always Encrypted with deterministic encryption"
+      isCorrect: false
+      explanation: "Incorrect. Always Encrypted completely encrypts values and doesn't support partial visibility. The billing system would also need the encryption keys to read the data."
+  - content: "A multitenant SaaS application stores data for multiple customers in the same database tables. Each table includes a TenantID column. You need to ensure users can only query rows belonging to their own tenant, even if they write SELECT statements directly. Which implementation approach should you use?"
+    choices:
+    - content: "Create separate views for each tenant and grant SELECT only on views"
+      isCorrect: false
+      explanation: "Incorrect. Creating views per tenant doesn't scale well and requires view management for each new tenant. Users could still access base tables if they have permissions."
+    - content: "Create a security policy with a filter predicate that checks TenantID against session context"
+      isCorrect: true
+      explanation: "Correct. Row-Level Security with a filter predicate automatically restricts query results based on the TenantID. The session context stores the authenticated tenant, and all queries are filtered transparently."
+    - content: "Implement Dynamic Data Masking on the TenantID column"
+      isCorrect: false
+      explanation: "Incorrect. Dynamic Data Masking hides column values but doesn't filter rows. Users would still see all rows but with masked TenantID values, which doesn't provide data isolation."
+    - content: "Use object-level permissions to deny SELECT on rows with other TenantIDs"
+      isCorrect: false
+      explanation: "Incorrect. Object-level permissions apply to entire objects (tables, views), not to individual rows. You cannot grant or deny permissions at the row level using standard permissions."
+  - content: "A development team needs to deploy an Azure App Service that connects to Azure SQL Database. The security policy requires eliminating stored credentials from application configuration. What authentication method should the team implement?"
+    choices:
+    - content: "SQL authentication with credentials stored in Azure Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. While Key Vault protects credentials, this approach still involves credential management. Credentials must be rotated, and any compromise requires secret rotation."
+    - content: "Microsoft Entra authentication with a service principal and client secret"
+      isCorrect: false
+      explanation: "Incorrect. Service principals with client secrets still require credential management. The client secret must be stored, rotated, and protected."
+    - content: "System-assigned managed identity with Microsoft Entra authentication"
+      isCorrect: true
+      explanation: "Correct. Managed identity eliminates credentials entirely. Azure manages the identity lifecycle, and the App Service authenticates to Azure SQL without any stored secrets."
+    - content: "Contained database user with a complex password"
+      isCorrect: false
+      explanation: "Incorrect. Contained users with passwords still require credential management. The password must be stored in configuration and rotated periodically."
+  - content: "An organization needs to track all data modifications to a sensitive table for compliance purposes. The audit logs must be retained for seven years and protected from deletion by database administrators. For Azure SQL Database, which auditing configuration meets these requirements?"
+    choices:
+    - content: "Database audit specification writing to the Windows Application log"
+      isCorrect: false
+      explanation: "Incorrect. Windows Application log is only available for on-premises SQL Server, not Azure SQL Database. Additionally, local logs don't provide the required protection from administrator deletion."
+    - content: "Azure SQL auditing to Blob Storage with immutable storage policy"
+      isCorrect: true
+      explanation: "Correct. Azure SQL auditing to Blob Storage with an immutable storage policy prevents log deletion even by administrators. Lifecycle management policies can ensure seven-year retention."
+    - content: "Extended Events session capturing data modifications"
+      isCorrect: false
+      explanation: "Incorrect. While Extended Events can capture modifications, the session data doesn't provide built-in protection against deletion. Extended Events also requires more complex setup for long-term retention."
+    - content: "SQL Server Audit writing to a file share"
+      isCorrect: false
+      explanation: "Incorrect. File-based auditing isn't available for Azure SQL Database. This option applies only to on-premises SQL Server and doesn't provide immutable storage guarantees."

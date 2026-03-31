@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: learning-path
-  adobe-target: true
 title: Deploy containers by using Azure Kubernetes Service (AKS)
 prerequisites: |
   * Experience using the Azure portal to create resources.
@@ -34,4 +33,4 @@ modules:
 - learn.wwl.configure-scaling-azure-kubernetes-service
 - learn.wwl.project-deploy-applications-azure-kubernetes-service
 trophy:
-  uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service.trophy
+  uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service.trophy

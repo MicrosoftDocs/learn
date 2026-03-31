@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.dpu.windows-server-2025-accreditation-2025
+title: Windows Server 2025 Accreditation 2025
+metadata:
+  title: Windows Server 2025 Accreditation 2025
+  description: This Learning Path introduces Windows Server 2025, including its key features and integration with Azure. You'll explore core concepts and capabilities to help you understand how Windows Server fits into modern IT environments.
+  ms.date: 09/10/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: learning-path
+  ms.custom: CS110724
+summary: >
+  Explore Windows Server 2025 through modules that introduce its key features and integration with Azure services. Discover how Windows Server supports modern infrastructure needs and cloud-connected scenarios. This Learning Path provides foundational insights to help you understand its role in today’s IT environments.
+prerequisites: None
+iconUrl: /training/achievements/windows-server-2025-accreditation-2025.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-server
+modules:
+  - learn.dpu.introduction-to-windows-server-2025
+  - learn.dpu.windows-server-2025-features-explained
+  - learn.dpu.azure-integrations-and-benefits-in-windows-server-2025
+trophy:
+  uid: learn.dpu.windows-server-2025-accreditation-2025.trophy

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-linkedin-profile-with-copilot-ace-your-interview.optimize-skills-endorsements-on-linkedin
+title: Optimize skills & endorsements on LinkedIn
+metadata:
+  title: Optimize Skills & Endorsements on LinkedIn
+  description: Optimize your skills and endorsements on LinkedIn to enhance your professional profile
+  ms.date: 05/09/2025
+  author: andrewbettany
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-optimize-skills-endorsements-on-linkedin.md)]

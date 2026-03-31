@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-email-efficiently.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is one key benefit of using Copilot Chat in Microsoft Outlook?"
+    choices:
+        - content: "It automatically deletes old emails."
+          isCorrect: false
+          explanation: "Incorrect. Copilot Chat does not delete emails automatically."
+        - content: "It summarizes long email threads and highlights action items."
+          isCorrect: true
+          explanation: "Correct. Copilot Chat can summarize threads and highlight important tasks."
+        - content: "It blocks spam emails from unknown senders."
+          isCorrect: false
+          explanation: "Incorrect. Spam filtering is not a feature of Copilot Chat."
+        - content: "It schedules meetings without user input."
+          isCorrect: false
+          explanation: "Incorrect. Copilot Chat can help identify meetings but does not schedule them automatically."
+  - content: "What should you always do after Copilot Chat drafts a reply for you?"
+    choices:
+        - content: "Send the draft immediately without changes."
+          isCorrect: false
+          explanation: "Incorrect. You should always review and personalize the draft."
+        - content: "Verify details and edit the draft for clarity and tone."
+          isCorrect: true
+          explanation: "Correct. It's important to check accuracy and ensure the message fits your audience."
+        - content: "Delete the draft and write your own message."
+          isCorrect: false
+          explanation: "Incorrect. The draft is meant to be a starting point, not discarded."
+        - content: "Ignore the draft and reply manually."
+          isCorrect: false
+          explanation: "Incorrect. Using the draft saves time and helps maintain professionalism."
+  - content: "How can Copilot Chat help you organize your inbox in Outlook?"
+    choices:
+        - content: "By creating and confirming rules based on your instructions."
+          isCorrect: true
+          explanation: "Correct. Copilot Chat can set up rules to organize emails as you describe."
+        - content: "By deleting all unread emails."
+          isCorrect: false
+          explanation: "Incorrect. Copilot Chat does not delete emails automatically."
+        - content: "By archiving emails automatically every week."
+          isCorrect: false
+          explanation: "Incorrect. Automatic weekly archiving is not a Copilot Chat feature."
+        - content: "By merging all emails into a single thread."
+          isCorrect: false
+          explanation: "Incorrect. Copilot Chat does not merge emails."
+  - content: "What is a best practice when using Copilot Chat to summarize email threads?"
+    choices:
+        - content: "Forward the summary without reviewing it."
+          isCorrect: false
+          explanation: "Incorrect. You should always review summaries before sharing."
+        - content: "Verify critical details like dates and assignments before acting."
+          isCorrect: true
+          explanation: "Correct. Confirming details ensures accuracy and prevents mistakes."
+        - content: "Rely only on the summary and ignore the original emails."
+          isCorrect: false
+          explanation: "Incorrect. The summary is a tool, but original emails may contain important context."
+        - content: "Summarize only the first message in the thread."
+          isCorrect: false
+          explanation: "Incorrect. Summarizing the entire thread provides a complete overview."
+  - content: "What is required to use Copilot Chat in Outlook to interact with your entire inbox and calendar?"
+    choices:
+        - content: "A Microsoft 365 Copilot add-on license."
+          isCorrect: true
+          explanation: "Correct. This license enables full inbox and calendar interaction with Copilot Chat."
+        - content: "An external email account."
+          isCorrect: false
+          explanation: "Incorrect. The feature depends on the license, not the type of email account."
+        - content: "A mobile device."
+          isCorrect: false
+          explanation: "Incorrect. Device type is not the requirement for this feature."
+        - content: "A shared mailbox."
+          isCorrect: false
+          explanation: "Incorrect. A shared mailbox is not required for full Copilot Chat functionality."
+

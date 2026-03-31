@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-optimize-deploy-database-solutions
+metadata:
+  title: Secure, optimize, and deploy database solutions
+  description: Learn to protect data with encryption and access controls, tune query performance, implement CI/CD pipelines for database projects, and integrate SQL solutions with Azure services.
+  ms.date: 02/27/2026
+  author: calopez
+  ms.author: calopez
+  ms.topic: learning-path
+title: Secure, optimize, and deploy database solutions
+prerequisites: |
+  Before starting this learning path, you should have:
+  - Experience writing T-SQL queries.
+  - Familiarity with SQL Server or Azure SQL Database.
+  - Basic understanding of security concepts like authentication and authorization.
+  - Experience with Git version control and CI/CD concepts.
+summary: |
+  Take your database solutions from development to production. You learn to protect sensitive data with encryption, masking, and row-level security. You tune query performance using execution plans, Query Store, and dynamic management views. You automate deployments with CI/CD pipelines using SQL Database Projects. Finally, you expose your databases through REST and GraphQL APIs with Data API Builder.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+- database-administrator
+products:
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- devops
+- security
+modules:
+- learn.implement-data-security-compliance
+- learn.wwl.optimize-database-performance
+- learn.wwl.implement-cicd-sql-database-projects
+- learn.integrate-sql-solutions-azure-services
+trophy:
+  uid: learn.wwl.secure-optimize-deploy-database-solutions.badge

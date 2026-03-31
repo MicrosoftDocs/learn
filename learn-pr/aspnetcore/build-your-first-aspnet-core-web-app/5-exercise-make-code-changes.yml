@@ -6,7 +6,7 @@ metadata:
   description: Make code changes during local development.
   ms.date: 9/9/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: unit
   zone_pivot_groups: vscode-shell
 durationInMinutes: 2

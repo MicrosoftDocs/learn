@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-copilot-studio
+title: Understand integration with Copilot Studio
+metadata:
+  title: Understand Integration with Copilot Studio
+  description: Learn how Azure Databricks integrates with Microsoft Copilot Studio through knowledge sources and Genie spaces, enabling conversational AI agents to access governed lakehouse data for intelligent business insights.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-integration-databricks-copilot-studio.md)]

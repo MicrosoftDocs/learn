@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-cloud-services-tutorials-mrtk.12-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Three multiple-choice questions
   ms.date: 01/11/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: Choose the best response for each question. 
 quiz:

@@ -40,7 +40,7 @@ To define a policy setting:
 GPOs store Group Policy settings. In a new GPO, every policy setting defaults to Not Configured. When you enable or disable a policy setting, Windows Server makes a change to the configuration of users and computers to which the GPO is applied.
 
 > [!NOTE]
-> When you return a setting to its Not Configured value, you return it to its default value.
+> Even GPOs that are **Not Configured** have a default state. If you change a GPO, and then return the GPO to a **Not Configured** value, it does not reset all of the resources to the default state. The GPO will revert to its default state. However, any devices or resources already impacted by this GPO aren't reverted by simply setting the GPO to **Not Configured**. 
 
 To create a new GPO in a domain:
 

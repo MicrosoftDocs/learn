@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-governance-controls-ai-ready-workloads.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 6
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your data science team trained an Azure Machine Learning model using a dataset that Purview classified as **Internal Use Only**. After deployment, Purview's automated classification detects that the source dataset now contains customer email addresses, upgrading the classification to **Confidential - personal data**. What governance action should you take first?"
+    choices:
+    - content: "Review lineage in Purview to identify all models trained from this dataset, verify that deployed endpoints use private network access, and flag models for security review to confirm access controls match the upgraded sensitivity level."
+      isCorrect: true
+      explanation: "Purview lineage identifies affected models so you can validate that existing security controls (private endpoints, access policies) match the elevated sensitivity. Security review confirms whether current protections suffice or require enhancement before taking disruptive action."
+    - content: "Immediately delete all models trained from this dataset and redeploy them after removing personal data from the training data, as any model exposure represents a compliance violation requiring immediate remediation."
+      isCorrect: false
+      explanation: "Immediate deletion disrupts production without assessing actual risk—existing controls mayovide adequate protection for the upgraded classification. Downgrading classification ignores the discovered personal data and creates compliance risk by misrepresenting the data's true sensitivity level."
+    - content: "Change the Purview classification back to **Internal Use Only** since the model was trained before the personal data was discovered, maintaining the original classification to avoid disrupting production services."
+      isCorrect: false
+      explanation: "Immediate deletion disrupts production without assessing actual risk—existing controls mayovide adequate protection for the upgraded classification. Downgrading classification ignores the discovered personal data and creates compliance risk by misrepresenting the data's true sensitivity level."
+  - content: "You need to deploy an Azure Policy that enforces encryption with customer-managed keys for all Azure Machine Learning workspaces. Development teams report this requirement slows their experimentation because provisioning Key Vault and keys adds 15-20 minutes to workspace setup. Which policy enforcement strategy balances governance requirements with developer productivity?"
+    choices:
+    - content: "Assign the policy with DeployIfNotExists effect at the management group level, configuring automatic Key Vault and key provisioning so encryption is enforced transparently without manual developer configuration steps."
+      isCorrect: false
+      explanation: "DeployIfNotExists with automatic Key Vault provisioning still adds 15-20 minutes regardless of automation, and may create cost concerns with numerous test Key Vaults. Exemptions eliminate protection during development when data leaks often occur through experiment artifacts, creating unnecessary risk that staged enforcement avoids."
+    - content: "Assign the policy with Audit effect to development subscriptions and Deny effect to production subscriptions, allowing developers to experiment freely while enforcing strict encryption controls before production deployment."
+      isCorrect: true
+      explanation: "Different policy effects for different environments balance security with productivity—Audit provides visibility in development without blocking work, while Deny enforces compliance in production where customer data risk is highest."
+    - content: "Create a policy exemption for all development workspaces to eliminate the encryption requirement during experimentation, then require manual security review and encryption enablement before promoting workspaces to production."
+      isCorrect: false
+      explanation: "DeployIfNotExists with automatic Key Vault provisioning still adds 15-20 minutes regardless of automation, and may create cost concerns with numerous test Key Vaults. Exemptions eliminate protection during development when data leaks often occur through experiment artifacts, creating unnecessary risk that staged enforcement avoids."
+  - content: "Your compliance team asks for a report showing which customer records influenced predictions made by your fraud detection model during August 2024. You need to provide this audit trail within 48 hours. Which Microsoft Purview capability enables you to meet this requirement efficiently?"
+    choices:
+    - content: "Use Purview's data lineage viewer to trace the model's inference endpoint back through registered model versions to the specific training dataset version used during August retraining, then query that dataset's lineage to identify source customer records."
+      isCorrect: true
+      explanation: "Purview lineage automatically captures version-specific relationships between inference endpoints, models, training datasets, and source records, letting you trace backwards from predictions to input data within minutes rather than days."
+    - content: "Generate a Purview Data Catalog export showing all assets classified as **Confidential - Customer Data** and manually filter by creation dates in August, assuming these represent the records used for model training that month."
+      isCorrect: false
+      explanation: "Catalog exports show asset inventory but not data flow relationships, requiring manual correlation that takes days and introduces human error. Audit logs capture execution events but not data lineage—knowing a training job ran doesn't reveal which specific records it consumed without querying lineage metadata."
+    - content: "Configure Purview audit logs to track all Azure Machine Learning training job executions during August, then contact data scientists to manually document which customer records they included in training datasets for that period."
+      isCorrect: false
+      explanation: "Catalog exports show asset inventory but not data flow relationships, requiring manual correlation that takes days and introduces human error. Audit logs capture execution events but not data lineage—knowing a training job ran doesn't reveal which specific records it consumed without querying lineage metadata."

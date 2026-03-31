@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-manage-records.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction."
+  ms.date: 06/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

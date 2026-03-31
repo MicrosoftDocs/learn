@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.evaluate-security-strategy
+title: Evaluate a security strategy
+metadata:
+  title: Evaluate a security strategy
+  description: "Learn how to evaluate your security posture using the Microsoft Cloud Security Benchmark and WAF security design review checklist, then design a security strategy from your findings."
+  ms.date: 02/26/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 13
+content: |
+  [!include[](includes/7a-evaluate-security-strategy.md)]

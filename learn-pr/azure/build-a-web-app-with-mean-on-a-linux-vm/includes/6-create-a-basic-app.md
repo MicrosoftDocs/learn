@@ -2,6 +2,8 @@ So far, you have MongoDB and Node.js installed on your Ubuntu virtual machine (V
 
 A great way to learn is by example. The web application you build implements a basic book database. The web application lets you list information about books, add new books, and delete existing books.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 The web application you see here demonstrates many concepts that apply to most MEAN stack web applications. Based on your needs and interests, you can explore the features you need to build your own MEAN stack applications.
 
 Here's what the Books web application looks like.
@@ -368,7 +370,7 @@ Before you proceed, make sure you have your VM's IP address handy. If you don't 
 ```azurecli
 ipaddress=$(az vm show \
   --name MeanStack \
-  --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+  --resource-group "myResourceGroupName" \
   --show-details \
   --query [publicIps] \
   --output tsv)

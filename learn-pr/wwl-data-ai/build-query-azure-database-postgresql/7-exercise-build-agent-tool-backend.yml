@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-database-postgresql.exercise-build-agent-tool-backend
+title: "Exercise - Build an agent tool backend on Azure Database for PostgreSQL"
+metadata:
+  title: "Exercise - Build an Agent Tool Backend on Azure Database for PostgreSQL"
+  description: "Exercise - Build an agent tool backend on Azure Database for PostgreSQL"
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-build-agent-tool-backend.md)]

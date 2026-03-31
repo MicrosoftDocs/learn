@@ -1,6 +1,6 @@
-For our exercise, we briefly leave behind the example of the human resources app. Instead we work with an application that lists movies. The app already has a couple of pages and viewmodels that have some basic bindings. The two pages are a list page and a detail page. We modify the selection logic so that the `ListView` and the detail page use the same viewmodel property.
+For our exercise, we briefly leave behind the example of the human resources app. Instead we work with an application that lists movies. The app already has a couple of pages and viewmodels that have some basic bindings. The two pages are a list page and a detail page. We modify the selection logic so that the `CollectionView` and the detail page use the same viewmodel property.
 
-[!include[](../../../includes/dotnet9-sdk-version.md)]
+[!include[](../../../includes/dotnet10-sdk-version.md)]
 
 ## Open the starter solution
 
@@ -16,7 +16,7 @@ There's a `MovieListViewModel` that serves dual duty as the app's overall viewmo
 
 ## Add selection support
 
-The `MoviesListPage` is the first page shown when the app runs. The `ListView` on the page is bound to the collection of `MovieViewModel` instances provided by the overall viewmodel, `MovieListViewModel`. When you select on one of the movies in the view, the `ItemTapped` event navigates to the `MovieDetailPage`, passing the `BindingContext` of the item, which is a movie, to the constructor of the view. The `MovieDetailPage` sets the viewmodel that was passed as the `BindingContext` of the page.
+The `MoviesListPage` is the first page shown when the app runs. The `CollectionView` on the page is bound to the collection of `MovieViewModel` instances provided by the overall viewmodel, `MovieListViewModel`. When you select on one of the movies in the view, the `SelectionChanged` event navigates to the `MovieDetailPage`, passing the `BindingContext` of the item, which is a movie, to the constructor of the view. The `MovieDetailPage` sets the viewmodel that was passed as the `BindingContext` of the page.
 
 Instead, let's update the app to have the `MovieDetailPage` read the selected movie from the overall app's viewmodel.
 
@@ -34,21 +34,31 @@ Instead, let's update the app to have the `MovieDetailPage` read the selected mo
     ```
 
 1. Next, open the *Views\\MoviesListPage.xaml* file.
-1. Locate the `ListView` element, and add the `SelectedItem` attribute:
+1. Locate the `CollectionView` element, and add the `SelectedItem` attribute. Also ensure `SelectionMode` is set to `Single`:
 
     ```xaml
-    <ListView ItemsSource="{Binding Movies}" SelectedItem="{Binding SelectedMovie, Mode=OneWayToSource}" Margin ... >
+    <CollectionView ItemsSource="{Binding Movies}" 
+                    SelectedItem="{Binding SelectedMovie, Mode=OneWayToSource}" 
+                    Margin="10" 
+                    SelectionMode="Single"
+                    SelectionChanged="CollectionView_SelectionChanged">
     ```
 
     This attribute binds the selected item of the list to the new property in the viewmodel.
 
 1. Open the code-behind file for the view, *Views\\MoviesListPage.xaml.cs*.
-1. Replace the `ListView_ItemTapped` event handler code with the following code:
+1. Locate the `CollectionView_SelectionChanged` event handler. Replace it with the following code:
 
     ```csharp
-    private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+    private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
+        if (e.CurrentSelection.Count == 0)
+            return;
+
         await Navigation.PushAsync(new Views.MovieDetailPage());
+
+        // Deselect
+        ((CollectionView)sender).SelectedItem = null;
     }
     ```
 

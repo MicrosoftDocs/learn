@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-enabled-apps-using-github-copilot-sdk.what-github-copilot-sdk
+title: "What is the GitHub Copilot SDK?"
+metadata:
+  title: "What is the GitHub Copilot SDK?"
+  description: "What is the GitHub Copilot SDK?"
+  ms.date: 02/13/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-what-github-copilot-sdk.md)]

@@ -1,8 +1,8 @@
-Azure VMware Solution delivers an in-depth VMware environment as a service. Azure VMware Solution deploys on dedicated, bare-metal infrastructure in Azure. After you deploy it, you gain access to common native VMware tools:
+Azure VMware Solution delivers an in-depth VMware environment as a service. Azure VMware Solution deploys on dedicated hardware in Azure. After you deploy it, you gain access to common native VMware tools:
 
 | Product | What does the product do? |
 | :------ | :------------------------ |
-| ESXi | Bare-metal servers with virtualization software. |
+| ESXi | Hypervisor with virtualization software. |
 | vCenter Server | Advanced server management software that centralizes the vSphere ESXi environment. |
 | vSAN | Software-defined storage solution embedded in ESXi. |
 | NSX | Software-defined networking and security solution that extends across datacenters, clouds, and application frameworks.

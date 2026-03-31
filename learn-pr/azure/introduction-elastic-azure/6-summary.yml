@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-elastic-azure.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Review what you have learned in this module.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

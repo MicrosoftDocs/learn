@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-data-protection.cross-zone
 title: Cross-zone replication in Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Cross-zone replication in Azure NetApp Files
   description: Learn about the underlying infrastructure to deploy cross-zone replication.  
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-cross-zone.md)]
+  [!include[](includes/5-cross-zone.md)]

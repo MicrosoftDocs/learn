@@ -36,9 +36,7 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn-sqlserver.introduction-sql-server-linux
 - learn.wwl.introduction-open-source-database-migration-azure
-- learn.optimize-operations-with-automanage
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 trophy:
   uid: learn.azure-common-linux-server-configurations.trophy

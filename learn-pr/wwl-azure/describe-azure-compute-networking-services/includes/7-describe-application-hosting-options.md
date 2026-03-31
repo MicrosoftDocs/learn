@@ -8,7 +8,7 @@ App Service enables you to build and host web apps, background jobs, mobile back
 
 Azure App Service is a robust hosting option that you can use to host your apps in Azure. Azure App Service lets you focus on building and maintaining your app, and Azure focuses on keeping the environment up and running.
 
-Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It supports multiple languages, including .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. It also supports both Windows and Linux environments.
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. Azure App Service supports multiple technologies, including programming languages like Java, PHP, Python, and JavaScript (via Node.js), as well as frameworks such as .NET and .NET Core. Azure App Service supports both Windows and Linux environments.
 
 ### Types of app services
 

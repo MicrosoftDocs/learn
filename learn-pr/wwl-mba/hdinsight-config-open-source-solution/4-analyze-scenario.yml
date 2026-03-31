@@ -2,8 +2,6 @@
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.4-analyze-scenario-map-it-hdinsight-configuration-option
 title: Analyze a scenario and map it to a HDInsight configuration option.
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze a scenario and map it to a HDInsight configuration option.
   description: "Analyze a scenario and map it to a HDInsight configuration option."
   ms.date: 04/06/2024
@@ -61,4 +59,4 @@ quiz:
       explanation: "The correct answer is Azure Data Lake Gen2 as it's the recommended storage platform for Spark and Hadoop, and being the default choice for HBase. Azure Data Lake Gen1 isn't recommended."
     - content: "Azure Data Lake Gen2"
       isCorrect: true
-      explanation: "The correct answer is Azure Data Lake Gen2 as it's the recommended storage platform for Spark and Hadoop, and being the default choice for HBase."
+      explanation: "The correct answer is Azure Data Lake Gen2 as it's the recommended storage platform for Spark and Hadoop, and being the default choice for HBase."

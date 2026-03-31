@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-foundry-iq.summary
+metadata:
+  title: Summary
+  description: Summary of key takeaways for each learning objective - RAG fundamentals, Foundry IQ architecture, search approaches, data governance, and implementation steps.
+  ms.date: 01/15/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

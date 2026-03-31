@@ -2,8 +2,6 @@
 uid: learn.wwl.operate-with-devops.explore-operational-excellence
 title: 'Explore operational excellence'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Explore operational excellence'
   description: "This unit explores operational excellence in the context of DevOps, covering core aspects and principles."
   ms.date: 02/06/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-explore-operational-excellence.md)]
+  [!include[](includes/2-explore-operational-excellence.md)]

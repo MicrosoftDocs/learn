@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.synchronize-data
+title: Move data to SQL Managed Instance
+metadata:
+  title: Move data to SQL Managed Instance
+  description: "Learn how to move data to SQL Managed Instance."
+  ms.date: 01/19/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-synchronize-data.md)]

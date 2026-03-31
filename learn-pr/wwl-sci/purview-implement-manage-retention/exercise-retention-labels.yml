@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.exercise-retention-labels
+title: Exercise - Configure retention labels for financial and HR content
+metadata:
+  title: Exercise - Configure retention labels for financial and HR content
+  description: "Exercise - Configure retention labels for financial and HR content."
+  ms.date: 07/02/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/exercise-retention-labels.md)]

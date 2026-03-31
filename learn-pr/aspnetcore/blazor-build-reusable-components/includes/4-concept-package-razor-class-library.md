@@ -1,12 +1,12 @@
-A task you'll often perform is packaging libraries for reuse by other developers. NuGet packaging makes it trivial for any developer anywhere to acquire and properly configure all the .NET references for their applications. 
+A task that you often need to perform is packaging libraries for reuse by other developers. NuGet packaging makes it trivial for any developer anywhere to acquire and properly configure all the .NET references for their applications.
 
-In the preceding unit, you built your modal dialog component and used it in your own application. Now you'll want to reuse it in other applications. 
+In the preceding unit, you built your modal dialog component and used it in your own application. Now you want to reuse it in other applications. 
 
-In this unit, you'll learn the steps necessary to configure a Razor class library as a NuGet package. You'll also learn how to package the library for distribution by using a package-repository service, such as NuGet.org, or GitHub repositories.
+In this unit, you learn the steps necessary to configure a Razor class library as a NuGet package. You also learn how to package the library for distribution by using a package-repository service, such as NuGet.org, or GitHub repositories.
 
 ## Configure a Razor class library for NuGet packaging
 
-The .NET ecosystem makes it easy to define the properties that are necessary for other developers to identify and use your components. You can define all these properties in the project file (*\*.csproj*) of your Razor class library so that they travel with the library and are updated appropriately when your library is updated. 
+The .NET ecosystem makes it easy to define the properties that are necessary for other developers to identify and use your components. You can define all these properties in the project file (*\*.csproj*) of your Razor class library so they travel with the library. The properties are then updated appropriately when your library is updated.
 
 You can configure fields that identify your package in the **Visual Studio Project Properties - Package** dialog, or you can create entries directly in the *\*.csproj* file yourself.
 
@@ -23,7 +23,7 @@ Some of these fields have default values, and it might look funny to publish a p
 
 In the preceding unit, you learned that the static content of a Razor class library is available at `_content/[PACKAGE_ID]/`, and now you see where the `PackageId` value is configured.
 
-A sample project file with these values configured might look like the following:
+A sample project file with these values configured might look like the following example:
 
 ```xml
 <PropertyGroup>
@@ -34,7 +34,7 @@ A sample project file with these values configured might look like the following
 </PropertyGroup>
 ```
 
-When you're building the project, you can also configure it to generate a NuGet package either by selecting the **Generate NuGet Package on Build** option in the Visual Studio **Project Properties** dialog or by adding a `GeneratePackageOnBuild` entry next to the other package fields, as shown here:
+When you're building the project, you can also configure it to generate a NuGet package either by selecting the option to **Generate NuGet Package on Build** in the Visual Studio **Project Properties** dialog or by adding a `GeneratePackageOnBuild` entry next to the other package fields, as shown here:
 
 ```xml
 <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -52,7 +52,7 @@ For a full list of properties, check the Microsoft documentation on the [MSBuild
 
 ## Package the library
 
-After you've written the library configuration into the *\*.csproj* file, you can generate the NuGet package either in Visual Studio, by right-clicking the project and selecting the **Pack** command, or in the project folder, by running the following command:
+After you write the library configuration into the *\*.csproj* file, you can generate the NuGet package either in Visual Studio, by right-clicking the project and selecting the **Pack** command, or in the project folder, by running the following command:
 
 ```dotnetcli
 dotnet pack

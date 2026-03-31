@@ -4,11 +4,13 @@ metadata:
   ms.author: sayoung
   author: sarah-yo
   ms.date: 01/09/2025
+  ms.update-cycle: 180-days
   title: Introduction to using Managed Identity to authenticate to Azure OpenAI with .NET
   description: How to implement role based access control and managed identity authentication to Azure OpenAI with .NET.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
-  ms.service: azure-ai-openai
+  ms.service: azure-ai-foundry
+  ms.subservice: azure-ai-foundry-openai
 title: Introduction to using Managed Identity to authenticate to Azure OpenAI with .NET
 summary: Learn how to use managed identity to authenticate to Azure OpenAI in .NET applications
 abstract: |

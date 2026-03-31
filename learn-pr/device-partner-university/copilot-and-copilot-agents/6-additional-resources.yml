@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-and-copilot-agents.additional-resources
+title: More resources
+metadata:
+  title: More Resources
+  description: This content offers supplementary resources for learners who want to further explore Microsoft 365 Copilot and Copilot agents. 
+  ms.date: 06/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-additional-resources.md)]

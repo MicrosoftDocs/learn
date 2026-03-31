@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-user-experience-settings.configure-universal-print
 title: Configure Universal Print
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Universal Print
   description: "Configure Universal Print"
   ms.date: 08/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-configure-universal-print.md)]
+  [!include[](includes/5-configure-universal-print.md)]

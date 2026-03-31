@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-educators.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Microsoft Education for K-12 educators" module.
+  ms.date: 07/17/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key benefit of using Reading Coach for educators?"
+    choices:
+        - content: "It replaces the need for classroom instruction."
+          isCorrect: false
+          explanation: "Incorrect. Reading Coach supports instruction but doesn't replace it."
+        - content: "It allows students to practice reading independently with personalized feedback."
+          isCorrect: true
+          explanation: "Correct. Reading Coach provides individualized reading practice and real-time feedback."
+        - content: "It automatically grades math assignments."
+          isCorrect: false
+          explanation: "Incorrect. This feature is part of Math Progress, not Reading Coach."
+        - content: "It blocks distracting websites during reading time."
+          isCorrect: false
+          explanation: "Incorrect. Reading Coach focuses on reading fluency, not content filtering."
+  - content: "Which Microsoft tool helps students build emotional vocabulary and express feelings?"
+    choices:
+        - content: "Speaker Coach"
+          isCorrect: false
+          explanation: "Incorrect. Speaker Coach focuses on improving public speaking skills."
+        - content: "Reflect"
+          isCorrect: true
+          explanation: "Correct. Reflect helps students build emotional vocabulary and express feelings safely."
+        - content: "Search Coach"
+          isCorrect: false
+          explanation: "Incorrect. Search Coach is designed to improve information literacy."
+        - content: "Math Progress"
+          isCorrect: false
+          explanation: "Incorrect. Math Progress is used for math assignments and insights."
+  - content: "What is a primary function of Education Insights Premium?"
+    choices:
+        - content: "Creating Minecraft lessons"
+          isCorrect: false
+          explanation: "Incorrect. This is a feature of Lesson Crafter in Minecraft Education."
+        - content: "Providing real-time pronunciation feedback"
+          isCorrect: false
+          explanation: "Incorrect. This is a feature of Reading Coach."
+        - content: "Aggregating student progress and well-being data"
+          isCorrect: true
+          explanation: "Correct. Education Insights Premium provides comprehensive data to educators."
+        - content: "Blocking inappropriate content"
+          isCorrect: false
+          explanation: "Incorrect. This isn't a function of Education Insights Premium."
+  - content: "How does Math Progress support educators?"
+    choices:
+        - content: "By offering emotional check-ins for students"
+          isCorrect: false
+          explanation: "Incorrect. This is a feature of Reflect."
+        - content: "By generating reading comprehension questions"
+          isCorrect: false
+          explanation: "Incorrect. This is a feature of Reading Progress."
+        - content: "By providing insights into student math performance and common misconceptions"
+          isCorrect: true
+          explanation: "Correct. Math Progress helps educators identify trends and address learning gaps."
+        - content: "By helping students improve their public speaking"
+          isCorrect: false
+          explanation: "Incorrect. This is a feature of Speaker Coach and Speaker Progress."
+  - content: "What is one way Microsoft 365 Copilot Chat assists educators?"
+    choices:
+        - content: "By grading student essays automatically"
+          isCorrect: false
+          explanation: "Incorrect. This isn't a listed feature of Copilot Chat."
+        - content: "By creating immersive Minecraft worlds"
+          isCorrect: false
+          explanation: "Incorrect. Minecraft Education and Lesson Crafter handle this."
+        - content: "By helping draft communications to guardians"
+          isCorrect: true
+          explanation: "Correct. Copilot Chat can assist with newsletters, reports, and invitations."
+        - content: "By blocking social media during class"
+          isCorrect: false
+          explanation: "Incorrect. Copilot Chat doesn't manage content filtering."
+

@@ -1,4 +1,4 @@
-The first stage in a responsible generative AI process is to identify the potential harms that could affect your planned solution. There are four steps in this stage, as shown here:
+The first stage in a responsible generative AI process is to map the potential harms that could affect your planned solution. There are four steps in this stage, as shown here:
 
 ![Diagram showing steps to identify, prioritize, test, and share potential harms.](../media/identify-harms.png)
 
@@ -17,7 +17,7 @@ The potential harms that are relevant to your generative AI solution depend on m
 
 To fully understand the known limitations and behavior of the services and models in your solution, consult the available documentation. For example, the Azure OpenAI Service includes a [transparency note](/legal/cognitive-services/openai/transparency-note); which you can use to understand specific considerations related to the service and the models it includes. Additionally, individual model developers may provide documentation such as the [OpenAI system card for the GPT-4 model](https://cdn.openai.com/papers/gpt-4-system-card.pdf).
 
-Consider reviewing the guidance in the [Microsoft Responsible AI Impact Assessment Guide](https://aka.ms/RAIImpactAssessmentGuidePDF) and using the associated [Responsible AI Impact Assessment template](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE5cmFk) to document potential harms.
+Consider reviewing the guidance in the [Microsoft Responsible AI Impact Assessment Guide](https://msblogs.thesourcemediaassets.com/sites/5/2022/06/Microsoft-RAI-Impact-Assessment-Guide.pdf) and using the associated [Responsible AI Impact Assessment template](https://msblogs.thesourcemediaassets.com/sites/5/2022/06/Microsoft-RAI-Impact-Assessment-Template.pdf) to document potential harms.
 
 Review the [information and guidelines](/azure/ai-services/responsible-use-of-ai-overview) for the resources you use to help identify potential harms.
 

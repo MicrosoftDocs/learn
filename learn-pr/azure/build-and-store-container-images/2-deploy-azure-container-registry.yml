@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-acr
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy an Azure container registry
   description: Deploy an Azure container registry
-  ms.date: 01/07/2025
-  author: tejaswikolli
-  ms.author: tejaswikolli
+  ms.date: 03/19/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 title: Exercise - Deploy an Azure container registry
 durationInMinutes: 5
@@ -21,4 +19,3 @@ content: |
 #     resource:
 #       type: "Microsoft.ContainerRegistry/registries"
 #   hint: "Run the `az acr create` command as shown to create your container registry."
-

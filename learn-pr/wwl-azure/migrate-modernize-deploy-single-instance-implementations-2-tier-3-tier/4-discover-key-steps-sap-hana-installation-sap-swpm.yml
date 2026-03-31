@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.discover-key-steps-sap-hana-installation-sap-swpm
 title: Discover key steps for SAP HANA installation using SAP SWPM
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discover key steps for SAP HANA installation using SAP SWPM
   description: "Discover key steps for SAP HANA installation using SAP SWPM"
   ms.date: 01/09/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-discover-key-steps-sap-hana-installation-sap-swpm.md)]
+  [!include[](includes/4-discover-key-steps-sap-hana-installation-sap-swpm.md)]

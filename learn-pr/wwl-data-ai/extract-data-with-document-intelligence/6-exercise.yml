@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-data-with-document-intelligence.exercise
+title: Exercise - Analyze documents with Document Intelligence
+metadata:
+  title: Exercise - Analyze documents with Document Intelligence
+  description: Practice using Azure Document Intelligence to analyze documents with prebuilt models.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

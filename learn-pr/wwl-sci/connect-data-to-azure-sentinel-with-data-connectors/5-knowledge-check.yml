@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/21/2022
-  author: wwlpublish
+  ms.date: 06/11/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -31,21 +32,21 @@ quiz:
     choices:
     - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect.  The Azure Active Directory provides parsed data."
+      explanation: "Incorrect. The Entra ID Logs provide parsed data."
     - content: "Syslog"
       isCorrect: true
-      explanation: "Correct.  The data is stored in the SyslogMessage"
+      explanation: "Correct. The data is stored in the SyslogMessage"
     - content: "CEF"
       isCorrect: false
-      explanation: "Incorrect.  The CEF connector provides parsed data."
+      explanation: "Incorrect. The CEF connector provides parsed data."
   - content: "The vendor-provided connectors primarily use which of the following?"
     choices:
     - content: "Azure Activity Connector"
       isCorrect: false
-      explanation: "Incorrect.  Vendors don't use the Azure Activity connector."
+      explanation: "Incorrect. Vendors don't use the Azure Activity connector."
     - content: "Security Events Connector"
       isCorrect: false
-      explanation: "Incorrect.  The Security Events connector is for sending Windows event logs."
+      explanation: "Incorrect. The Security Events connector is for sending Windows event logs."
     - content: "CEF Connector"
       isCorrect: true
-      explanation: "Correct.  Most Vendor-provided connectors use the CEF connector."
+      explanation: "Correct. Most Vendor-provided connectors use the CEF connector."

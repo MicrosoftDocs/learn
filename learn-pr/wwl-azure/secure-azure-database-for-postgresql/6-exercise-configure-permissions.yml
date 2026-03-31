@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-azure-database-for-postgresql.exercise-configure-permissions
 title: 'Exercise: Configure permissions in Azure Database for PostgreSQL'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Configure permissions in Azure Database for PostgreSQL'
   description: "Exercise: Configure permissions in Azure Database for PostgreSQL."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 25
 content: |
-  [!include[](includes/6-exercise-configure-permissions.md)]
+  [!include[](includes/6-exercise-configure-permissions.md)]

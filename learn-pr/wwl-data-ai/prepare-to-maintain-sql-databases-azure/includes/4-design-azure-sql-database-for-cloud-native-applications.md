@@ -152,3 +152,4 @@ Moreover, SQL Database in Microsoft Fabric supports a wide range of use cases, f
 
 The **Databases** workload in Fabric is designed to address many aspects of operational SQL databases, enabling data engineers, analysts, and data scientists to work together to create and query data that is optimized for their specific needs.
 
+

@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-essentials.limits
 title: Azure NetApp Files limits
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Azure NetApp Files limits
   description: Understand how to work with resource limits in Azure NetApp Files.    
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-limits.md)]
+  [!include[](includes/3-limits.md)]

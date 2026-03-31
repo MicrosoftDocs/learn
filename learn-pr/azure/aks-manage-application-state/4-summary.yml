@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-manage-application-state.4-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 01/04/2024
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/23/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
   ms.custom:
     - build-2023
@@ -17,4 +15,3 @@ title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/4-summary.md)]
-

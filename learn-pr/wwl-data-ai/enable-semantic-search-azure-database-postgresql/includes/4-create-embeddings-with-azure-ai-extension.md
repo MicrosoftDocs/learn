@@ -26,7 +26,7 @@ SELECT azure_ai.set_setting('azure_openai.endpoint', '{your-endpoint-url}');
 SELECT azure_ai.set_setting('azure_openai.subscription_key', '{your-api-key}}');
 ```
 
-Once `azure_ai` and Azure OpenAI are configured, fetching and storing embeddings is a simple matter of calling a function in the SQL query. Assuming a table `listings` with a `description` column and a `listing_vector` column, you can generate and store the embedding for all listings with the following query. Replace `{your-deployment-name}` with the **Deployment name** from the Azure OpenAI Studio for the model you created.
+Once `azure_ai` and Azure OpenAI are configured, fetching, and storing embeddings is a simple matter of calling a function in the SQL query. Assuming a table `listings` with a `description` column and a `listing_vector` column, you can generate and store the embedding for all listings with the following query. Replace `{your-deployment-name}` with the **Deployment name** from the Azure OpenAI Studio for the model you created.
 
 ```sql
 UPDATE listings
@@ -61,3 +61,4 @@ The `<=>` operator calculates the *cosine distance* between the two vectors, the
 The `::vector` operator converts the generated embeddings to PostgreSQL vector arrays.
 
 The query returns the top three listing IDs and descriptions, ranked from less to more different (more to less similar).
+

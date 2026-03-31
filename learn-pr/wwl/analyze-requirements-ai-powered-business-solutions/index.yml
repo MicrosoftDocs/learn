@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-requirements-ai-powered-business-solutions
+metadata:
+  title: "Analyze Requirements for AI-Powered Business Solutions"
+  description: "Learn to analyze, design, and implement AI-powered business solutions using agents, generative AI, and Microsoft Copilot for productivity."
+  ms.date: 02/04/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: github-copilot-for-azure
+  ai-usage: ai-assisted
+title: "Analyze requirements for AI-powered business solutions"
+summary: Learn to analyze, design, and implement AI-powered business solutions using agents, generative AI, and Microsoft Copilot for productivity.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain how AI agents support task automation, data analytics, and decision-making.
+  - Describe the role of Microsoft Copilot and generative AI in enhancing productivity.
+  - Assess scenarios where AI agents add measurable value to enterprise environments.
+  - Evaluate grounding data quality across accuracy, relevance, timeliness, cleanliness, and availability.
+  - Organize business solution data for AI readiness and scalable consumption.
+prerequisites: |
+  - Basic understanding of AI concepts and business processes.
+  - Familiarity with Microsoft 365 tools and enterprise data management.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.introduction
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.assess-use-agents-task-automation-data-analytics-decision-making
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.review-data-grounding-accuracy-relevance-timeliness-cleanliness-availability
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.organize-business-solution-data-available-other-ai-systems
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.knowledge-check
+- learn.wwl.analyze-requirements-ai-powered-business-solutions.summary
+badge:
+  uid: learn.wwl.analyze-requirements-ai-powered-business-solutions.badge

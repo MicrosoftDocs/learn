@@ -14,3 +14,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Publishing a package](https://docs.github.com/packages/learn-github-packages/publishing-a-package)
 - [Using GitHub Packages with your project's ecosystem](https://docs.github.com/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem)
 - [Pushing and pulling Docker images](https://docs.github.com/packages/guides/pushing-and-pulling-docker-images)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

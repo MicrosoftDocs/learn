@@ -10,6 +10,8 @@ There are a few things we'd need to configure to support this scenario:
 
 Many of these are typical administrative tasks we won't actually cover here, and we don't have software to install. Instead, we'll walk through the steps and show you how you *could* install custom or third-party software using Remote Desktop. Let's start by getting the connection information.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Connect to the VM with Remote Desktop Protocol
 
 To connect to an Azure VM with an RDP client, you'll need:
@@ -24,7 +26,7 @@ You can enter this information into the RDP client, or download a preconfigured 
 
 ### Download the RDP file
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **Home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM. You can:
+1. In the [Azure portal](https://portal.azure.com/), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **Home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM. You can:
 
     - Determine whether the VM is running
     - Stop or restart it
@@ -72,7 +74,11 @@ Because we aren't going to actually configure that here, just close Server Manag
 
 We have two approaches we can use to install software. First, this VM is connected to the internet. If the software you need has a downloadable installer, you can open a web browser in the RDP session, download the software, and install it. Second, if your software is custom, like our custom service, you can copy it from your local machine over to the VM to install it. Let's look at this latter approach.
 
-1. Open File Explorer. In the sidebar, select **This PC**. You should see several drives:
+1. Open File Explorer.
+
+1. In the sidebar, select **This PC**.
+
+1. You should see several drives:
 
     - Windows (C:) drive representing the OS
     - Temporary Storage (D:) drive
@@ -101,3 +107,4 @@ Any additional drives you create from scratch will need to be initialized and fo
 1. Go ahead and close the RDP client to disconnect from the VM. The server will continue to run.
 
 RDP allows you to work with the Azure VM just like a local computer. With Desktop UI access, you can administer this VM as you would any Windows computer; installing software, configuring roles, adjusting features and other common tasks. However, it's a manual process. If you always need to install some software, you might consider automating the process using scripting.
+

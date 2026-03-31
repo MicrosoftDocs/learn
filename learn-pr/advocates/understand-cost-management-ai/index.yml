@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.cloud-cost-management-concepts
+metadata:
+  ms.author: socuff
+  author: scuffy
+  ms.date: 08/20/2025
+  ms.update-cycle: 180-days
+  title: Introduction to Cost Management for AI Workloads
+  description: Learn about cloud cost management principles, how AI architecture design decisions impact cost, and how different AI services incur charges.
+  ms.topic: module
+  ms.service: artificial-intelligence
+  ms.collection: ce-advocates-ai-copilot
+title:  Introduction to cost management for AI workloads
+summary: By completing this module, you'll learn about cloud cost management principles, how those principles apply to AI workloads, how AI architecture design decisions impact cost, and how different AI services incur charges.
+abstract: |
+    Organizations must adopt cost management strategies to optimize their AI investments while maintaining performance, scalability, and business value. If you already have cloud cost management processes in place, you need to understand how to incorporate AI workloads. 
+    In this module you'll learn:
+    - Cloud cost management concepts that form the basis for how organizations operate cloud environments.
+    - FinOps principles for managing AI expenses efficiently.
+    - AI service pricing structures and how usage is recorded with billing meters, that ultimately show up on your invoice. 
+    - AI application architectures and all of the components we need to include when we're thinking about AI workloads.  
+    - Infrastructure considerations that impact cost.
+prerequisites:   |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  -	Microsoft Azure and cloud services
+  -	AI concepts
+  - Architecture concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cloud-cost-management-concepts.cloud-cost-management-concepts
+- learn.cloud-cost-management-concepts.finops-ai
+- learn.cloud-cost-management-concepts.describe-ai-service-pricing-structures
+- learn.cloud-cost-management-concepts.understanding-ai-application-architectures
+- learn.cloud-cost-management-concepts.understanding-infrastructure-cost-considerations
+- learn.cloud-cost-management-concepts.knowledge-check
+- learn.cloud-cost-management-concepts.summary
+badge:
+  uid: learn.cloud-cost-management-concepts-badge

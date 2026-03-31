@@ -1,4 +1,4 @@
-Onboarding your GCP account into Microsoft Defender for Cloud, integrates GCP Security Command and Defender for Cloud. Defender for Cloud thus provides visibility and protection across both of these cloud environments to provide:
+Onboarding your workloads in Google Cloud Platform (GCP) account into Microsoft Defender for Cloud, integrates GCP Security Command and Defender for Cloud. Defender for Cloud thus provides visibility and protection across both of these cloud environments to provide:
 
 - Detection of security misconfigurations
 
@@ -10,94 +10,93 @@ Onboarding your GCP account into Microsoft Defender for Cloud, integrates GCP Se
 
 In the screenshot below, you can see GCP projects displayed in Defender for Cloud's overview dashboard.
 
-:::image type="content" source="../media/gcp-account-overview.png" alt-text="Screenshot of the G C P project overview settings.":::
+:::image type="content" source="../media/gcp-account-in-overview.png" alt-text="Screenshot of the G C P project overview settings." lightbox="../media/gcp-account-in-overview.png":::
 
-## Follow the steps below to create your GCP cloud connector.
+## Prerequisites
 
-### Set up GCP Security Command Center with Security Health Analytics
+- A Microsoft Azure subscription. If you don't have an Azure subscription, you can [sign up for a free one](https://azure.microsoft.com/pricing/free-trial/).
 
-For all the GCP projects in your organization, you must also:
+- Microsoft Defender for Cloud  set up on your Azure subscription.
 
-- Set up GCP Security Command Center using these instructions from the GCP documentation.
+- Access to a GCP project.
 
-- Enable Security Health Analytics using these instructions from the GCP documentation.
+- Contributor level permission for the relevant Azure subscription.
 
-- Verify that there's data flowing to the Security Command Center.
+- If CIEM is enabled as part of Defender for CSPM the user enabling the connector will also need Security Admin role and Application.ReadWrite.All permission for your tenant.
 
-The instructions for connecting your GCP environment for security configuration follow Google's recommendations for consuming security configuration recommendations. The integration uses Google Security Command Center and will consume more resources that might impact your billing.
+You can learn more about Defender for Cloud pricing on [the pricing page](https://azure.microsoft.com/pricing/details/defender-for-cloud/).
 
-When you first enable Security Health Analytics, it might take several hours for data to be available.
+When you're connecting GCP projects to specific Azure subscriptions, consider the [Google Cloud resource hierarchy](https://cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy#resource-hierarchy-detail) and these guidelines:
 
-### Enable GCP Security Command Center API
+- You can connect your GCP projects to Microsoft Defender for Cloud at the *project* level.
+- You can connect multiple projects to one Azure subscription.
+- You can connect multiple projects to multiple Azure subscriptions.
 
-1. From Google's Cloud Console API Library, select the project you want to connect to Azure Security Center.
+## Follow the steps below to connect your GCP project
 
-1. In the API Library, find and select **Security Command Center API**.
+There are four parts to the onboarding process that take place when you create the security connection between your GCP project and Microsoft Defender for Cloud.
 
-1. On the API's page, select **ENABLE**.
+### Project details
 
-### Create a dedicated service account for the security configuration integration
+In the first section, you need to add the basic properties of the connection between your GCP project and Defender for Cloud.
 
-1. In the GCP Console, select the project you want to connect to Security Center.
+:::image type="content" source="../media/single-project-details.png" alt-text="Screenshot of the organization details page of the GCP project onboarding process." lightbox="../media/single-project-details.png":::
 
-1. In the Navigation menu, Under IAM & admin options, select **Service accounts**.
+Here you name your connector, select a subscription and resource group, which is used to create an ARM template resource that is called security connector. The security connector represents a configuration resource that holds the projects settings.
 
-1. Select **CREATE SERVICE ACCOUNT**.
+You also select a location and add the organization ID for your project.
 
-1. Enter an account name, and select **Create**.
+You can also set an interval to scan the GCP environment every 4, 6, 12, or 24 hours.
 
-1. Specify the Role as Security Center Admin Viewer, and select **Continue**.
+When you onboard an organization, you can also choose to exclude project numbers and folder IDs.
 
-1. The Grant users access to this service account section is optional. Select **Done**.
+### Select plans for your project
 
-1. Copy the Email value of the created service account, and save it for later use.
+After entering your organization's details, you'll then be able to select which plans to enable.
 
-1. In the Navigation menu, Under IAM & admin options, select **IAM**
+:::image type="content" source="../media/select-plans-gcp-project.png" alt-text="Screenshot of the available plans you can enable for your GCP project." lightbox="../media/select-plans-gcp-project.png":::
 
-1. Switch to organization level.
+From here, you can decide which resources you want to protect based on the security value you want to receive.
 
-1. Select **ADD**.
+### Configure access for your project
 
-1. In the New members field, paste the Email value you copied earlier.
+Once you selected the plans, you want to enable and the resources you want to protect you have to configure access between Defender for Cloud and your GCP project.
 
-1. Specify the Role as **Security Center Admin Viewer** and then select **Save**.
+:::image type="content" source="../media/add-gcp-project-configure-access.png" alt-text="Screenshot that shows deployment options and instructions for configuring access.":::
 
-### Create a private key for the dedicated service account
+In this step, you can find the GCloud script that needs to be run on the GCP project that is going to onboarded. The GCloud script is generated based on the plans you selected to onboard.
 
-Switch to project level.
+The GCloud script creates all of the required resources on your GCP environment so that Defender for Cloud can operate and provide the following security values:
 
-1. In the Navigation menu, Under IAM & admin options, select **Service accounts**.
+- Workload identity pool
+- Workload identity provider (per plan)
+- Service accounts
+- Project level policy bindings (service account has access only to the specific project)
 
-1. Open the dedicated service account and select **Edit**.
+### Review and generate the connector for your project
 
-1. In the Keys section, select **ADD KEY** and then **Create new key**.
+The final step for onboarding is to review all of your selections and to create the connector.
 
-1. In the Create private key screen, select **JSON**, and then select **CREATE**.
+:::image type="content" source="../media/review-and-generate.png" alt-text="Screenshot of the review and generate screen with all of your selections listed." lightbox="../media/review-and-generate.png":::
 
-1. Save this JSON file for later use.
+> [!NOTE]
+> The following APIs must be enabled in order to discover your GCP resources and allow the authentication process to occur:
+>
+> - `iam.googleapis.com`
+> - `sts.googleapis.com`
+> - `cloudresourcemanager.googleapis.com`
+> - `iamcredentials.googleapis.com`
+> - `compute.googleapis.com`
+> If you don't enable these APIs at this time, you can enable them during the onboarding process by running the GCloud script.
 
-### Connect GCP to Defender for Cloud
+After you create the connector, a scan starts on your GCP environment. New recommendations appear in Defender for Cloud after up to 6 hours. If you enabled autoprovisioning, Azure Arc and any enabled extensions are installed automatically for each newly detected resource.
 
-1. From Defender for Cloud's menu, select **Cloud connectors**.
+## Connect your GCP organization
 
-1. Select **add GCP account**.
+Similar to onboarding a single project, When onboarding a GCP organization, Defender for Cloud creates a security connector for each project under the organization (unless specific projects were excluded). For more information about connecting your GCP organization, see the [GCP organization onboarding documentation](/azure/defender-for-cloud/quickstart-onboard-gcp#connect-your-gcp-organization).
 
-1. On the onboarding page, do the following and then select Next.
+## Optional: Configure selected plans
 
-1. Validate the chosen subscription.
+By default, all plans are **On**. You can turn off plans that you don't need.
 
-1. In the Display name field, enter a display name for the connector.
-
-1. In the Organization ID field, enter your organization's ID.
-
-1. In the Private key file box, browse to the JSON file you downloaded in the previous step. Create a private key for the dedicated service account.
-
-### Confirmation
-
-When the connector is successfully created and GCP Security Command Center has been configured properly:
-
-- The GCP CIS standard will be shown in the Defender for Cloud's regulatory compliance dashboard.
-
-- Security recommendations for your GCP resources will appear in the Security Center portal and the regulatory compliance dashboard 5-10 minutes after onboard completes:
-
-:::image type="content" source="../media/gcp-resources-recommendations.png" alt-text="Screenshot of the G C P resources in recommendations":::
+:::image type="content" source="../media/toggle-plans-to-on.png" alt-text="Screenshot that shows toggles turned on for all plans." lightbox="../media/toggle-plans-to-on.png":::

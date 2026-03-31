@@ -1,0 +1,102 @@
+### YamlMime:ModuleUnit
+uid: learn.simplify-complex-conditionals-github-copilot-agent.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Module assessment"
+  ms.date: 10/16/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the primary problem with deeply nested conditional statements?"
+    choices:
+    - content: "They execute slower than simple conditionals."
+      isCorrect: false
+      explanation: "Incorrect. While performance can be affected, the primary issue is readability and maintainability, not execution speed."
+    - content: "They reduce code readability and increase cognitive load, making the code harder to understand and maintain."
+      isCorrect: true
+      explanation: "Correct. Deep nesting creates an 'arrowhead' pattern that obscures the code's intent and requires developers to hold multiple conditions in mind simultaneously."
+    - content: "They use more memory than flattened conditional logic."
+      isCorrect: false
+      explanation: "Incorrect. Memory usage is not the primary concern with nested conditionals; the main issue is code complexity and maintainability."
+  - content: "Which metric is commonly used to measure the complexity of conditional logic in code?"
+    choices:
+    - content: "Lines of code (LOC)."
+      isCorrect: false
+      explanation: "Incorrect. While LOC can indicate size, it doesn't measure the complexity of decision paths in conditional logic."
+    - content: "Cyclomatic complexity."
+      isCorrect: true
+      explanation: "Correct. Cyclomatic complexity measures the number of independent paths through code, and higher complexity correlates with increased bug rates and testing challenges."
+    - content: "Function count."
+      isCorrect: false
+      explanation: "Incorrect. The number of functions doesn't directly measure the complexity of conditional logic within those functions."
+  - content: "What is the primary benefit of using guard clauses in conditional logic?"
+    choices:
+    - content: "They eliminate the need for any conditional statements."
+      isCorrect: false
+      explanation: "Incorrect. Guard clauses are themselves conditional statements that handle edge cases early."
+    - content: "They flatten nesting by handling exceptional conditions early and allowing the main logic to focus on the 'happy path.'"
+      isCorrect: true
+      explanation: "Correct. Guard clauses use early returns to handle exceptional cases first, reducing indentation levels and making the main logic more prominent and readable."
+    - content: "They improve performance by skipping unnecessary checks."
+      isCorrect: false
+      explanation: "Incorrect. While guard clauses can provide some performance benefits, their primary purpose is improving code readability and structure."
+  - content: "What is the key difference between GitHub Copilot's Ask mode and Agent mode?"
+    choices:
+    - content: "Ask mode works with C# while Agent mode works with JavaScript."
+      isCorrect: false
+      explanation: "Incorrect. Both modes work with multiple programming languages including C#, JavaScript, and others."
+    - content: "Ask mode provides explanations and suggestions without directly modifying code, while Agent mode can actually edit files and make changes."
+      isCorrect: true
+      explanation: "Correct. Ask mode is conversational and advisory, helping you understand and plan refactoring, while Agent mode can execute changes directly in your codebase."
+    - content: "Ask mode is free while Agent mode requires a paid subscription."
+      isCorrect: false
+      explanation: "Incorrect. Both modes are part of GitHub Copilot and have the same subscription requirements."
+  - content: "When using GitHub Copilot's Ask mode to analyze complex conditionals, what should you do first?"
+    choices:
+    - content: "Immediately ask for refactoring suggestions without context."
+      isCorrect: false
+      explanation: "Incorrect. Providing context and understanding the current code is essential before asking for refactoring suggestions."
+    - content: "Select the relevant code and ask Copilot to explain what the method or function is doing."
+      isCorrect: true
+      explanation: "Correct. Starting with an explanation helps ensure both you and the AI understand the current logic before planning any changes."
+    - content: "Delete the complex code and start over with a completely new approach."
+      isCorrect: false
+      explanation: "Incorrect. Understanding and refactoring existing code is often more practical than starting from scratch, especially when the logic is working correctly."
+  - content: "What should you do before using GitHub Copilot's Agent mode to refactor complex conditionals?"
+    choices:
+    - content: "Create a backup or ensure you're using version control to track changes."
+      isCorrect: true
+      explanation: "Correct. Since Agent mode can modify your actual codebase, it's crucial to have a way to revert changes if something goes wrong."
+    - content: "Disable all other extensions in your IDE."
+      isCorrect: false
+      explanation: "Incorrect. Other extensions don't typically interfere with Copilot Agent mode functionality."
+    - content: "Manually delete all existing conditional statements first."
+      isCorrect: false
+      explanation: "Incorrect. Agent mode should work with your existing code; manual deletion could break functionality unnecessarily."
+  - content: "Which refactoring technique is most effective for replacing long chains of if-else statements that check a single variable against multiple values?"
+    choices:
+    - content: "Adding more comments to explain each condition."
+      isCorrect: false
+      explanation: "Incorrect. While comments can help, they don't simplify the structural complexity of the conditional logic."
+    - content: "Using switch statements or pattern matching to create a cleaner declarative structure."
+      isCorrect: true
+      explanation: "Correct. Switch statements and pattern matching are designed specifically for handling multiple conditions against a single variable, making the code more readable and maintainable."
+    - content: "Converting all conditions to nested ternary operators."
+      isCorrect: false
+      explanation: "Incorrect. Nested ternary operators can actually make code less readable and more complex than if-else chains."
+  - content: "What is the main advantage of extracting complex conditional logic into separate helper methods?"
+    choices:
+    - content: "It eliminates the need for any conditional statements."
+      isCorrect: false
+      explanation: "Incorrect. Extracting logic into methods doesn't eliminate conditionals; it organizes them better."
+    - content: "It improves code readability by giving meaningful names to complex conditions and reduces the cognitive load of the main method."
+      isCorrect: true
+      explanation: "Correct. Helper methods with descriptive names make the main logic easier to follow and allow complex conditions to be understood at a higher level of abstraction."
+    - content: "It automatically optimizes the code for better performance."
+      isCorrect: false
+      explanation: "Incorrect. While method extraction can sometimes provide minor performance benefits, the primary advantage is improved code organization and readability."

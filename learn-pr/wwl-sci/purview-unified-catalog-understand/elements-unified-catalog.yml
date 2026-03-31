@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-unified-catalog-understand.elements-unified-catalog
+title: Essential elements of Microsoft Purview Unified Catalog
+metadata:
+  title: Essential Elements of Microsoft Purview Unified Catalog
+  description: "Essential elements of Microsoft Purview Unified Catalog."
+  ms.date: 09/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/elements-unified-catalog.md)]

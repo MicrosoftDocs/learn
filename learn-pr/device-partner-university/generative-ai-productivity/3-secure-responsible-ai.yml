@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.generative-ai-productivity.secure-responsible-ai
+title: Secure and responsible AI
+metadata:
+  title: Secure And Responsible AI
+  description: This content is part of the "Unlock productivity with generative AI" module.
+  ms.date: 10/24/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-secure-responsible-ai.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.cloud-native-myths.summary
+title: Summary
+metadata:
+  title: Summary
+  description: 'This content is part of the "Windows 11 and cloud-native concepts: myths, realities, and best practices" module.'
+  ms.date: 10/29/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

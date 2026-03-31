@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks.exercise
+title: Exercise - Implement Development Lifecycle Processes in Azure Databricks
+metadata:
+  title: Exercise - Implement Development Lifecycle Processes in Azure Databricks
+  description: "Exercise - Implement Development Lifecycle Processes in Azure Databricks"
+  ms.date: 03/09/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-implement-development-lifecycle-processes-in-azure-databricks.md)]

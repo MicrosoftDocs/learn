@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.implement-programmability-objects
+metadata:
+  title: Implement programmability objects with SQL
+  description: "Learn how to implement views, stored procedures, functions, and triggers in SQL Server to encapsulate logic, improve code reusability, and enforce business rules."
+  ms.date: 01/22/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ai-usage: ai-generated
+title: Implement programmability objects with SQL
+summary: Learn how to create and use views, stored procedures, scalar functions, table-valued functions, and triggers to build maintainable, secure, and efficient database solutions.
+abstract: |
+  In this module, you'll:
+  - Create views to simplify data access and provide security boundaries.
+  - Build stored procedures to encapsulate complex business logic and data modifications.
+  - Develop scalar functions to return single calculated values.
+  - Implement table-valued functions to return result sets for use in queries.
+  - Configure triggers to automatically respond to data modifications or database events.
+  - Choose the right programmability object based on specific requirements.
+prerequisites: |
+  - Experience with SQL Server database development and T-SQL programming.
+  - Understanding of basic database concepts like tables, joins, and transactions.
+  - Familiarity with SQL Server Management Studio or Azure Data Studio.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- database-administrator
+- developer
+- solution-architect
+products:
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- data-engineering
+- cloud-computing
+- app-development
+units:
+- learn.wwl.implement-programmability-objects.introduction
+- learn.wwl.implement-programmability-objects.create-views
+- learn.wwl.implement-programmability-objects.create-stored-procedures
+- learn.wwl.implement-programmability-objects.create-scalar-functions
+- learn.wwl.implement-programmability-objects.create-table-valued-functions
+- learn.wwl.implement-programmability-objects.create-triggers
+- learn.wwl.implement-programmability-objects.choosing-when-to-use-each-programmability-object
+- learn.wwl.implement-programmability-objects.exercise-implement-programmability-objects
+- learn.wwl.implement-programmability-objects.knowledge-check
+- learn.wwl.implement-programmability-objects.summary
+badge:
+  uid: learn.wwl.implement-programmability-objects.badge

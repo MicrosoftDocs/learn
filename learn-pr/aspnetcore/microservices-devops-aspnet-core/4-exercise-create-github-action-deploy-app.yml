@@ -3,7 +3,7 @@ uid: learn.microservices-devops-aspnet-core.exercise-create-github-action-deploy
 metadata:
   title: Exercise - Create a GitHub action to deploy to AKS
   description: Implement and test a GitHub action to build and deploy a Docker image to Azure Container Registry.
-  ms.date: 10/13/2023
+  ms.date: 07/14/2025
   author: scottaddie
   ms.author: scaddie
   ms.manager: markl

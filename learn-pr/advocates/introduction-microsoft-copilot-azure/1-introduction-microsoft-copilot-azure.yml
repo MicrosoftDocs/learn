@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-microsoft-copilot-azure.introduction-microsoft-copilot-azure
+title: Introduction to Azure Copilot
+metadata:
+  title: Introduction to Azure Copilot
+  description: Understand the capabilities of Azure Copilot.
+  ms.date: 07/03/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction-microsoft-copilot-azure.md)]

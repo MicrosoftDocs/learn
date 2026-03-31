@@ -1,45 +1,54 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-implement-security-validate-code-basescompliance
 metadata:
-  title: 'AZ-400: Implement security and validate code bases for compliance'
-  description: 'AZ-400: Implement security and validate code bases for compliance'
-  ms.date: 05/06/2024
-  author: wwlpublish
+  title: "AZ-400: Implement security and validate code bases for compliance"
+  description: "AZ-400: Implement security and validate code bases for compliance - Learn DevSecOps practices, secure pipeline implementation, open-source software security, software composition analysis, and comprehensive security monitoring with Microsoft Defender for Cloud, Azure Policy, and GitHub Advanced Security."
+  ms.date: 10/22/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-title: 'AZ-400: Implement security and validate code bases for compliance'
+  ai-usage: ai-assisted
+title: "AZ-400: Implement security and validate code bases for compliance"
 prerequisites: |
-  None
+  - Understanding of Azure DevOps pipelines and GitHub Actions workflows.
+  - Familiarity with software development lifecycle and version control systems.
+  - Basic knowledge of cloud computing concepts and Azure services.
+  - Understanding of application security fundamentals.
 summary: |
-  This learning path explores an infrastructure and configuration strategy and appropriate toolset for a release pipeline and application infrastructure. It explains compliance and security implementation in your application infrastructure.
+  This comprehensive learning path explores implementing security throughout the software development lifecycle using DevSecOps practices. Learn to secure CI/CD pipelines with secrets management and authentication controls, implement open-source software security with license compliance and vulnerability scanning, perform software composition analysis with dependency management and automated remediation, and establish comprehensive security monitoring and governance with Microsoft Defender for Cloud, Azure Policy, resource locks, Microsoft Defender for Identity, and GitHub Advanced Security integration. Master the tools and techniques required to build, secure, and maintain compliant application infrastructure across development and production environments.
 iconUrl: /learn/achievements/implement-security-and-validate-code-bases-for-compliance.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - ai-engineer
+  - data-engineer
+  - developer
+  - devops-engineer
+  - platform-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - startup-founder
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 subjects:
-- compliance
+  - devops
+  - compliance
 modules:
-- learn.wwl.introduction-to-secure-devops
-- learn.wwl.implement-open-source-software-azure
-- learn.wwl.software-composition-analysis
-- learn.wwl.security-monitoring-and-governance
+  - learn.wwl.introduction-to-secure-devops
+  - learn.wwl.implement-open-source-software-azure
+  - learn.wwl.software-composition-analysis
+  - learn.wwl.security-monitoring-and-governance
 trophy:
   uid: learn.wwl.az-400-implement-security-validate-code-bases-compliance.trophy

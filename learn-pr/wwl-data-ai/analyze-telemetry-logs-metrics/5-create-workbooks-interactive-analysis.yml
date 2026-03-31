@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-telemetry-logs-metrics.create-workbooks-interactive-analysis
+title: Create workbooks for interactive analysis
+metadata:
+  title: Create Workbooks for Interactive Analysis
+  description: Create workbooks for interactive analysis
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-create-workbooks-interactive-analysis.md)]

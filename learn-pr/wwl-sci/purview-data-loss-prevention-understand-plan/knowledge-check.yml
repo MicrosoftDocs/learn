@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-understand-plan.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check. 
+  ms.date: 01/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "An organization wants to reduce data loss during everyday collaboration without assuming malicious intent. Which situation best reflects the type of data loss scenarios data loss prevention (DLP) is most often used to address?"
+    choices:
+    - content: "A user intentionally stealing data for personal gain."
+      isCorrect: false
+      explanation: "Incorrect: DLP applies controls based on policy conditions, but it isn't designed to determine user intent or stop deliberate theft on its own."
+    - content: "Sensitive information being shared accidentally during normal work."
+      isCorrect: true
+      explanation: "Correct: Most data loss occurs accidentally during legitimate work, and DLP helps reduce risk in these common, non-malicious scenarios."
+    - content: "Unauthorized access caused by a misconfigured network firewall."
+      isCorrect: false
+      explanation: "Incorrect: Firewall misconfigurations are access control issues, not data usage scenarios DLP is intended to address."
+
+  - content: "When DLP evaluates whether an action puts data at risk, which combination of signals is most important?"
+    choices:
+    - content: "The sensitivity of the data, the context of the action, and what is being done with the data."
+      isCorrect: true
+      explanation: "Correct: DLP decisions are based on content, context, and action evaluated together."
+    - content: "Where the data is stored and how long it has existed."
+      isCorrect: false
+      explanation: "Incorrect: Storage location and age alone don't determine risk."
+    - content: "The user's department and license level."
+      isCorrect: false
+      explanation: "Incorrect: Organizational details don't directly determine DLP enforcement decisions."
+
+  - content: "Why should planning DLP policies be treated as a design exercise rather than a configuration task?"
+    choices:
+    - content: "Because DLP policies require custom scripting before they can be enforced."
+      isCorrect: false
+      explanation: "Incorrect: DLP planning isn't about scripting or technical complexity."
+    - content: "Because planning focuses on risk, scope, and how policies affect real work."
+      isCorrect: true
+      explanation: "Correct: Effective DLP planning requires intentional decisions about scope and behavior."
+    - content: "Because policies behave the same way across all locations."
+      isCorrect: false
+      explanation: "Incorrect: Enforcement can differ by location, which makes design decisions important."
+
+  - content: "An organization wants to understand how a DLP policy would behave without interrupting users. What approach best supports this goal?"
+    choices:
+    - content: "Enable the policy with blocking actions for a small pilot group."
+      isCorrect: false
+      explanation: "Incorrect: Blocking actions can still disrupt work, even for a pilot group."
+    - content: "Apply the policy only to low-risk data types."
+      isCorrect: false
+      explanation: "Incorrect: Limiting data types doesn't validate how the policy behaves overall."
+    - content: "Run the policy in simulation mode and review the results."
+      isCorrect: true
+      explanation: "Correct: Simulation mode evaluates policy behavior without enforcing actions."
+
+  - content: "When should advanced DLP controls be considered?"
+    choices:
+    - content: "When basic DLP controls clearly fail to protect any sensitive data."
+      isCorrect: false
+      explanation: "Incorrect: Advanced controls don't replace basic DLP functionality."
+    - content: "When adding behavioral context clearly improves enforcement decisions."
+      isCorrect: true
+      explanation: "Correct: Advanced controls are appropriate when added context improves enforcement accuracy in more complex scenarios."
+    - content: "When an organization wants to enable every available DLP feature."
+      isCorrect: false
+      explanation: "Incorrect: Enabling more controls doesn't automatically improve outcomes."

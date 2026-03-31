@@ -1,4 +1,3 @@
-
 Microsoft provides a great deal of options for deploying SQL Server to Azure. Migrating on-premises databases to Azure SQL Server on Virtual Machine offers portability, while Azure SQL Database and Azure SQL Managed Instance provide scalability and flexibility.
 
 Now that you've reviewed this module, you should be able to:
@@ -9,3 +8,4 @@ Now that you've reviewed this module, you should be able to:
 
 > [!NOTE]
 > If you're ready to get started with Azure SQL Database, [try Azure SQL Database free of charge](/azure/azure-sql/database/free-offer) for the life of your subscription.
+

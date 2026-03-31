@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-governance-manageability.resource-manager
 title: Explore Azure Resource Manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Resource Manager
   description: "Create, update, and delete resources in your Azure subscription, with Azure Resource Manager."
   ms.date: 08/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-explore-azure-resource-manager.md)]
+  [!include[](includes/2-explore-azure-resource-manager.md)]

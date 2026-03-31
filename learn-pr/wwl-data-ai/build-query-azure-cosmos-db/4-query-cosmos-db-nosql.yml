@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-cosmos-db.query-cosmos-db-nosql
+title: Query Azure Cosmos DB for NoSQL
+metadata:
+  title: Query Azure Cosmos DB for NoSQL
+  description: Query Azure Cosmos DB for NoSQL
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-query-cosmos-db-nosql.md)]

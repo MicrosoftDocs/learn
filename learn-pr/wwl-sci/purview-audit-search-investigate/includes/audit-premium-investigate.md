@@ -1,47 +1,35 @@
-Microsoft Purview Audit (Premium) offers advanced features that enable detailed investigations of user activities within Microsoft 365 services. This version is useful for forensic analysis, helping organizations in-depth reviews of security incidents and irregular access patterns.
-
-Following the discovery of unusual activities in the electronic health records (EHR) at our network of healthcare facilities, the IT compliance team is now turning to Audit (Premium). Their goal is to conduct thorough investigations to ensure all access to patient data is scrutinized and to identify any potential breaches.
-
-Here you learn to:
-
-- Apply Audit (Premium) features for detailed investigations.
-- Log and analyze email access with MailItemsAccessed.
-- Interpret and manage large volumes of audit data.
-- Conduct forensic analysis to uncover potential breaches.
-- Document findings to meet compliance and assist in response strategies.
+Microsoft Purview Audit (Premium) offers advanced features for conducting detailed investigations of user activities within Microsoft 365 services. These capabilities support forensic analysis, help identify irregular access patterns, and provide the detail needed to respond to incidents effectively.
 
 ## Audit (Premium) overview
 
-Microsoft Purview Audit (Premium) enhances the capabilities of Audit (Standard) by adding advanced features tailored for deeper and more extensive auditing requirements. These enhancements include:
+Audit (Premium) builds on Audit (Standard) by adding capabilities that make investigations more thorough and efficient, including:
 
-- **Extended data retention**: Offers default retention for up to one year for services like Microsoft Entra ID, Exchange, OneDrive, and SharePoint. For extended retention periods up to 10 years, an additional add-on license is required.
-- **Customizable retention policies**: Allows you to set custom audit log retention times based on the service, specific activities, or user actions. This flexibility helps meet specific compliance and investigative needs.
-- **Increased API bandwidth**: Audit (Premium) users benefit from higher bandwidth access to the Office 365 Management Activity API, allowing for quicker and more efficient data retrieval.
-- **Intelligent insights**: Delivers detailed views of user activities, helping you spot potential breaches and understand user behavior in services like Exchange Online and SharePoint Online.
+- **Extended data retention**: Default one-year retention for Microsoft Entra ID, Exchange, OneDrive, and SharePoint audit records; up to 10 years with the appropriate add-on license.
+- **Customizable retention policies**: Retain audit records for specific services, activities, or users for defined periods.
+- **Increased API bandwidth**: More capacity for retrieving data through the Office 365 Management Activity API.
+- **Intelligent insights**: Detailed visibility into certain activities, like labeled mail item access and user search behavior in Exchange Online and SharePoint Online.
 
-Audit (Premium) enhances security with its advanced features, making it easier for organizations to handle incidents quickly. Next, we show how to use Audit (Premium) to look into compromised accounts, using its detailed logs and analysis tools to address security threats.
+## Investigate compromised accounts with MailItemsAccessed
 
-## Investigate compromised accounts with Microsoft Purview Audit (Premium)
-
-**MailItemsAccessed** is an auditing action in Microsoft Purview Audit (Premium) designed to provide detailed records of how and when email items are accessed. This functionality is crucial for organizations to manage sensitive communications securely and effectively.
+**MailItemsAccessed** provides detailed records of how and when emails are accessed, making it a critical event type for investigations involving sensitive communications.
 
 ### Understand sync and bind access
 
-- **Sync access**: Often occurs when users download emails via desktop clients like Outlook. Instead of recording each email separately, Audit (Premium) logs one event for all the emails downloaded during the session, simplifying log management.
-- **Bind access**: Occurs when a user actively reads or interacts with an individual email. Audit (Premium) captures each interaction, including details like the email’s unique identifier, the InternetMessageId, ensuring precise tracking of data access.
+- **Sync access**: Logs a single event when multiple emails are downloaded during a session, like when using Outlook.
+- **Bind access**: Logs each time an individual email is opened or interacted with.
 
 ### Manage audit log volume
 
-Exchange Online uses throttling to manage the volume of MailItemsAccessed logs. If a mailbox logs over 1,000 MailItemsAccessed events in 24 hours, logging for that mailbox is paused for the rest of the day to maintain performance. Here's a few things to keep in mind about throttling:
+To maintain performance, Exchange Online throttles MailItemsAccessed logging if a mailbox logs more than 1,000 bind events in 24 hours. Throttling:
 
-- Throttling affects less than 1% of mailboxes.
-- It only pauses logging for MailItemsAccessed, not other activities.
-- Only bind operations are throttled; sync activities aren't affected.
-- Missing logs due to throttling could indicate unrecorded access during that time.
+- Affects less than 1% of mailboxes
+- Only pauses logging for MailItemsAccessed events, not other activities
+- Applies to bind operations only; sync activities are unaffected
+- Might result in gaps where bind events weren't recorded
 
 ### Scenario: Investigate using MailItemsAccessed in a healthcare setting
 
-In response to observed unusual access patterns to electronic health records (EHR) at a network of healthcare facilities, the compliance team uses Microsoft Purview Audit (Premium) to thoroughly investigate and ensure compliance with health data protection laws. Here's how they proceed:
+In response to unusual access patterns to electronic health records (EHR) at a network of healthcare facilities, the compliance team is using Microsoft Purview Audit (Premium) to investigate the activity in detail. They want to confirm whether the access was authorized and ensure compliance with health data protection laws. Here's how they proceed:
 
 1. **Setup and data collection**:
 
@@ -62,7 +50,7 @@ In response to observed unusual access patterns to electronic health records (EH
 
 1. **Analyze sync and bind activities**:
 
-   - Investigate the extent of data access, focusing on whether entire folders containing sensitive patient information were downloaded (sync) or specific sensitive emails were opened (bind).
+   - Investigate the extent of data access. Focus on whether entire folders containing sensitive patient information were downloaded (sync) or whether specific sensitive emails were opened (bind).
    - **Sync activity check**:
 
    ```powershell
@@ -103,15 +91,4 @@ This filtering ensures that the logs remain manageable and meaningful by reducin
 
 ### Contextual analysis of audit records
 
-Distinguishing between legitimate user activities and potential security breaches requires understanding the context of each access. Audit (Premium) allows you to analyze access patterns and contexts deeply. For instance, by comparing session IDs and IP addresses across audit records, you can differentiate between typical user behavior and potential unauthorized access. This is crucial for identifying security incidents where an attacker might access the mailbox concurrently with the legitimate user.
-
-Here's how you can use contextual data to track and understand access patterns:
-
-- **Identify and compare access contexts**: Look for variations in the properties like _ClientInfoString_ and _SessionId_ among audit records to identify unusual access patterns.
-- **Analyze detailed properties**: Properties like _ClientIPAddress_ and _InternetMessageId_ provide specific details about each access instance, helping in forensic analysis.
-
-By integrating this information into your investigations, you can enhance the accuracy of your security assessments and ensure that your responses to incidents are informed and effective.
-
-## Knowledge check
-
-Choose the best response for the question below.
+To distinguish legitimate activity from possible breaches, the compliance team reviews contextual data such as IP addresses, session IDs, and message identifiers. This allows them to confirm whether access fits established patterns or indicates an incident requiring further action.

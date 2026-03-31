@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.simplify-complex-conditionals-github-copilot-agent.review-impact-complex-conditionals
+title: Review the impact of complex conditionals
+metadata:
+  title: Review the Impact of Complex Conditionals
+  description: "Review the impact of complex conditionals."
+  ms.date: 10/16/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-review-impact-complex-conditionals.md)]

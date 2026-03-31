@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-app-modernization.github-copilot-app-modernization
+title: GitHub Copilot app modernization
+metadata:
+  title: GitHub Copilot App Modernization
+  description: Learn how GitHub Copilot can assist in app modernization efforts, including refactoring legacy code and modernizing architecture and frameworks.
+  ms.date: 02/17/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-github-copilot-app-modernization.md)]

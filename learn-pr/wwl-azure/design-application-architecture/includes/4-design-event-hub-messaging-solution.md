@@ -2,7 +2,9 @@ Certain applications produce a massive number of events from almost as many sour
 
 Suppose you're designing the architecture for a Tailwind Traders home security monitoring application. Each security system has a dozen or more cameras sensors. Before the house can be deemed secure, the sensors and cameras are connected to a test harness and put through their paces. Additionally, cached video camera footage data is streamed when the security system is connected to the datacenter monitoring headquarters.
 
-For this architecture, you might choose a messaging solution that uses _event hubs_. Event hubs can receive and process millions of events per second. Data sent to an event hub can be transformed in real time and stored for later analysis. 
+For this architecture, you might choose a messaging solution that uses _event hubs_. Event hubs can receive and process millions of events per second. Data sent to an event hub can be transformed in real time and stored for later analysis. This on-demand video from the Developer course provides a nice overview of Event Hubs.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4cf29c37-5ebd-4eb8-8b15-23b9ecdae040]
 
 ### Things to know about Azure Event Hubs
 
@@ -55,3 +57,6 @@ As you plan for how Azure Event Hubs can be a part of your messaging solution, c
 - **Consider message failures**. Remember Azure Event Hubs doesn't handle messages that aren't processed as expected. Suppose a message consumer malfunctions because of data format. Event Hubs won't detect this issue. The message remains until its `time-to-live` setting expires.
 
 - **Consider data stream access**. Event Hubs adds received events to the end of its data stream, and the events are ordered according to the time they're received. Event consumers can seek along the data stream by using time offsets.
+
+> [!TIP]
+> Learn more with the [Explore Azure Event Hubs](/training/modules/azure-event-hubs/) module. 

@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-data-share.share-schedule-data-sharing
 title: Share and schedule data sharing using Azure Data Share
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Share and schedule data sharing using Azure Data Share
   description: "Share and schedule data sharing using Azure Data Share"
   ms.date: 01/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-share-schedule-data-share.md)]
+  [!include[](includes/5-share-schedule-data-share.md)]

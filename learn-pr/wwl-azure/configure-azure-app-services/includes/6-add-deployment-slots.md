@@ -1,8 +1,6 @@
 Deployment slots are configured in the Azure portal. You can swap your app content and configuration elements between deployment slots, including the production slot.
 
-### How to use deployment slots in Azure App Service
-
-> [!VIDEO https://www.youtube.com/embed/5rR5C4Z5dU4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b8909968-03b3-47da-ac69-63bee05b8a6c]
 
 ### Things to know about creating deployment slots
 

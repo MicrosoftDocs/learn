@@ -2,8 +2,6 @@
 uid: learn.control-and-organize-with-resource-manager.4-use-policies-to-enforce-standards
 title: Use policies to enforce standards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use policies to enforce standards
   description: In this unit, we'll discuss how to use policies to enforce standards.
   ms.date: 10/29/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-policies-to-enforce-standards.md)]
-
+

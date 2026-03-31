@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-best-windows-upgrade-end-of-support.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Choose the best Windows upgrade path after Windows 10 end of support" module.
+  ms.date: 12/18/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When did Windows 10 reach its end of support?"
+    choices:
+        - content: "October 14, 2025"
+          isCorrect: true
+          explanation: "Correct. This is the official end-of-support date."
+        - content: "September 30, 2025"
+          isCorrect: false
+          explanation: "Incorrect. End of support occurred later."
+        - content: "November 1, 2025"
+          isCorrect: false
+          explanation: "Incorrect. This date isn't mentioned in the module."
+        - content: "December 31, 2025"
+          isCorrect: false
+          explanation: "Incorrect. End of support was earlier in October."
+  - content: "Which upgrade path is recommended for long-term security and compliance?"
+    choices:
+        - content: "Windows 365 Cloud PC"
+          isCorrect: false
+          explanation: "Incorrect. Useful for remote work but may require another compliance validation."
+        - content: "Windows 10 ESU"
+          isCorrect: false
+          explanation: "Incorrect. Offers temporary security updates only, not a long-term solution."
+        - content: "Windows 11 on new devices"
+          isCorrect: true
+          explanation: "Correct. Provides hardware-backed security and full support for compliance."
+        - content: "Continue using Windows 10 without updates"
+          isCorrect: false
+          explanation: "Incorrect. Leaves devices unsupported and vulnerable."
+  - content: "What hardware feature is required for Windows 11?"
+    choices:
+        - content: "TPM 1.2"
+          isCorrect: false
+          explanation: "Incorrect. Windows 11 requires TPM 2.0."
+        - content: "TPM 2.0"
+          isCorrect: true
+          explanation: "Correct. This is a mandatory hardware-based security feature."
+        - content: "Secure BIOS"
+          isCorrect: false
+          explanation: "Incorrect. Secure Boot is required, not Secure BIOS."
+        - content: "Virtual TPM only"
+          isCorrect: false
+          explanation: "Incorrect. Physical TPM 2.0 is required for compliance."
+  - content: "What does Windows 10 ESU provide after end of support?"
+    choices:
+        - content: "New features and updates"
+          isCorrect: false
+          explanation: "Incorrect. ESU doesn't include new features."
+        - content: "Full technical support"
+          isCorrect: false
+          explanation: "Incorrect. Support is limited to ESU-related issues."
+        - content: "Free compliance audits"
+          isCorrect: false
+          explanation: "Incorrect. Compliance audits aren't part of ESU."
+        - content: "Critical security updates only"
+          isCorrect: true
+          explanation: "Correct. ESU delivers security updates without feature enhancements."
+  - content: "Which option offers predictable per-user monthly pricing?"
+    choices:
+        - content: "Windows 11 on new devices"
+          isCorrect: false
+          explanation: "Incorrect. Requires upfront hardware investment."
+        - content: "Windows 10 ESU"
+          isCorrect: false
+          explanation: "Incorrect. Subscription cost increases annually."
+        - content: "Windows 365 Cloud PC"
+          isCorrect: true
+          explanation: "Correct. Uses predictable per-user monthly pricing."
+        - content: "Windows Virtual Desktop"
+          isCorrect: false
+          explanation: "Incorrect. Not mentioned as an option in this module."

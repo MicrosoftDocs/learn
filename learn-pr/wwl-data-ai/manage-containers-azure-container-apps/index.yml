@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.manage-containers-azure-container-apps
+metadata:
+  title: Manage Containers in Azure Container Apps
+  description: Manage container apps across the day-two lifecycle. Update images, manage revisions, diagnose failing deployments, tune resources and scaling, and troubleshoot with logs and health probes.
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-container-apps
+title: Manage containers in Azure Container Apps
+summary: Manage container apps across the day-two lifecycle. Update images, manage revisions, diagnose failing deployments, tune resources and scaling, and troubleshoot with logs and health probes.
+abstract: |
+  After completing this module, you'll be able to:
+    - Update container images and manage revisions safely during development and release cycles.
+    - Perform app lifecycle operations and diagnose failing revisions.
+    - Monitor logs and troubleshoot common revision and runtime issues.
+    - Configure health probes and troubleshoot probe failures.
+    - Optimize container resources and scaling settings to balance cost and performance.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with Docker and container concepts.
+  - Familiarity with command-line tools including Azure CLI.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-container-apps
+subjects:
+- containers
+units:
+- learn.wwl.manage-containers-azure-container-apps.introduction
+- learn.wwl.manage-containers-azure-container-apps.update-images-manage-revisions
+- learn.wwl.manage-containers-azure-container-apps.app-lifecycle-management
+- learn.wwl.manage-containers-azure-container-apps.monitor-logs-troubleshoot
+- learn.wwl.manage-containers-azure-container-apps.health-probes
+- learn.wwl.manage-containers-azure-container-apps.optimize-container-settings
+- learn.wwl.manage-containers-azure-container-apps.exercise-diagnose-fix-failing-deployment
+- learn.wwl.manage-containers-azure-container-apps.module-assessment
+- learn.wwl.manage-containers-azure-container-apps.summary
+badge:
+  uid: learn.wwl.manage-containers-azure-container-apps.badge

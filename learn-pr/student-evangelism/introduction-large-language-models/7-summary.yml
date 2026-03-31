@@ -2,8 +2,6 @@
 uid: learn.introduction-large-language-models.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summarize your learning.
   ms.date: 11/30/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

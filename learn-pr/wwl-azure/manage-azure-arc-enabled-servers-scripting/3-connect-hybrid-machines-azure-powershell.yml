@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-hybrid-machines-azure-powershell
 title: Connect hybrid machines to Azure by using PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect hybrid machines to Azure by using PowerShell
   description: "Connect hybrid machines to Azure by using PowerShell"
   ms.date: 02/14/2025

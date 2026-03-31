@@ -1,0 +1,11 @@
+In this exercise, you'll explore a Foundry project and use a Foundry endpoint.
+
+If you have an Azure subscription, you can use [Microsoft Foundry](https://ai.azure.com?azure-portal=true). 
+
+> [!NOTE]
+> If you don't already have one, you can [sign up for an Azure subscription](), which includes free credits for the first 30 days.
+
+Launch the exercise and follow the instructions.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2345150&azure-portal=true)
+

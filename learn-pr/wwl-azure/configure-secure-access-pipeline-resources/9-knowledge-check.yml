@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-secure-access-pipeline-resources.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check."
   ms.date: 1/25/2023
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 4
 content: |
 quiz:
@@ -46,4 +45,4 @@ quiz:
       explanation: "Incorrect. The Secure File's purpose isn't to store encrypted pipeline artifacts."
     - content: "To securely store and manage configuration and secret data."
       isCorrect: true
-      explanation: "Correct. To securely store and manage configuration and secret data, such as certificates, private keys, and access tokens."
+      explanation: "Correct. To securely store and manage configuration and secret data, such as certificates, private keys, and access tokens."

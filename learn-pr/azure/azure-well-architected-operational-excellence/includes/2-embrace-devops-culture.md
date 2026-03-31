@@ -1,79 +1,86 @@
-| :::image type="icon" source="../media/goal.svg"::: Empower development and operations teams to continuously improve their system design and processes by working together with a mindset of collaboration, shared responsibility, and ownership. |
+| :::image type="icon" source="../media/goal.svg"::: Help development and operations teams work better together by encouraging collaboration, shared responsibility, and ownership, so they can keep improving how their systems and processes run. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-DevOps is a community of practice where diversity of perspective and skills drives toward one mission. Teams must foster a collaborative environment of shared knowledge instead of siloed learning. Use shared functions to strive to overcome resource constraints.
+DevOps is all about bringing together people that have different skills and perspectives to work toward a shared goal. Instead of keeping knowledge siloed, teams should create a space where everyone learns from each other. Sharing tools and responsibilities can also help stretch limited resources further.
 
-A good DevOps culture thrives on shared responsibility. Development and operations teams should align their goals and priorities with the expectations of their customers and keep business focus in mind. The development team should involve the operations team in the feedback loop so the improvements are driven upstream and other teams benefit equally. Conversely, operations teams are responsible for making the development team successful in their business outcomes by sharing resources and feedback that are relevant to the workload.
+A strong DevOps culture thrives on shared responsibility. Development and operations teams should be on the same page about goals and priorities, and always keep the customer in mind. Development teams should involve the operations team in the feedback loop so other teams can also benefit from improvements. And in return, operations teams should support development teams by sharing helpful insights and resources that make it easier to reach business goals.
 
-At the same time, DevOps practices apply clear lines of ownership and accountability to each team. Regardless of where the application runs, the workload team is responsible for that application.
+DevOps helps make everyday operations smoother and less stressful. To get the most out of DevOps, teams should use technology to streamline their processes and create a culture where open communication is the norm.
 
-DevOps optimizes operational tasks so that they're effective but not burdensome. To reap the full benefit of DevOps, the culture should optimize processes through technology and have processes for people in the organization to promote transparent communication.
+DevOps makes it clear who's responsible for what. No matter where the app runs, the workload team is responsible for its performance and reliability.
 
 **Example scenario**
 
-Contoso's Human Resources (HR) department is kicking off a project to develop a new line-of-business (LOB) app for their department's internal use. The app is currently in the planning phase, no design or implementation work has begun yet.
+Contoso's human resources (HR) department is kicking off a project to develop a new line-of-business (LOB) app for their department's internal use. The app is currently in the planning phase. No design or implementation work has started yet.
 
 ## Collaborate efficiently
 
-**Use common systems and tools that promote a collaborative environment for communication and tracking progress.**
+**Use common systems and tools so that everyone can easily communicate and track progress.**
 
-Common tools and processes enable transparent communication. Both development and operations teams benefit from situational awareness across various environments, common support issues, and overall challenges and wins.
+Common tools and processes help everyone stay in the loop. Both development and operations teams can see what occurs across various environments, including what's working, what's not, and what needs attention.
 
-Teams will already be familiar with existing escalation paths if there's an incident.
+If an incident occurs, teams already know about the existing escalation paths.
 
-A shared backlog makes priorities, such as working on new features or fixing bugs, clear.
+A shared backlog clearly lays out the next task, such as working on new features or fixing bugs.
 
 *Contoso's challenge*
 
-- Contoso has three technical teams that will be involved in the development and maintenance of the new app:  development, test, and operations. Currently, there are no standard communication and project tracking tools that are consistently used across those teams.
-- Historically, each team has been able to select their tools of choice. Some use Slack, while others use Microsoft Teams for internal messaging. Some use Azure DevOps (ADO) and others use Excel to track tasks, and each team uses a different document repository from the rest to share knowledge and incident response procedures. 
-- In past projects, the overall technical organization has struggled with communications and collaboration due to the disparate tools being used. Going forward, Contoso HR would like to improve productivity and avoid situations that could slow down the project, like those encountered previously.
+- Contoso has three technical teams, development, test, and operations teams, to development and maintain the new app. Right now, they all use different tools to communicate and track work.
+
+- Historically, each team has selected their tools of choice. For internal messaging, some teams use Slack or Microsoft Teams. To track tasks, some teams use Azure DevOps or Excel. Each team uses a different document repository to share knowledge and incident response procedures. 
+- In past projects, the overall technical organization had a tough time communicating and working together because everyone was using different tools. Moving forward, Contoso HR wants to boost productivity and avoid the kinds of slowdowns that they've seen before.
 
 *Applying the approach and outcomes*
 
-- Leads from the technical teams met with the project sponsors to choose the standard tools that will be used going forward. The group chose ADO to manage their backlog, code repository, and deployment pipeline. They also chose Microsoft Teams for communications and collaboration. 
-- Using a common set of tools allows the development, operations, and test teams to stay informed and in-synch about the status of the various environments, common project issues, and team achievements. Moreover, teams can access information about established escalation paths in case of incidents from a single well-known location.
-- A shared backlog also helps to uniformly plan and stay aligned on priorities, such as developing new features or fixing bugs. 
+- Technical leads got together with the project sponsors to choose the standard tools that will be used going forward. The group chose Azure DevOps to manage their backlog, code repository, and deployment pipeline. They chose Teams for communications and collaboration.
+
+- When everyone uses the same tools, it's easier for the development, operations, and test teams to stay on the same page about what's happening, like environment status, project problems, and team achievements. Plus, if something goes wrong, everyone knows exactly where to go to find the escalation steps.
+- A shared backlog makes it easier for everyone to plan together and stay focused on what matters most, whether that's building new features or fixing bugs.
 
 ## Embrace continuous improvement
 
-**Build a continuous learning and experimentation mindset throughout the development cycle. Support knowledge sharing across teams and maintain documentation for reuse. And, conduct blameless analysis and debrief post-release and/or post-incident reviews.**
+**Encourage a mindset of continuous learning and experimentation throughout the development cycle. Make it easy for teams to share knowledge and keep documentation handy for future use. And when something goes wrong, hold a blameless review to understand what happened and how to improve.**
 
-Through experimentation mechanisms, such as A/B testing and developing proofs of concept, you can encourage innovation while keeping costs low.
+Trying experiments, like A/B testing or building proofs of concept, is a great way to spark new ideas without spending a lot.
 
-Share knowledge through collaboration that makes the team proficient in design approaches, tooling, and processes.
+Share knowledge through collaboration to help the team get better at design approaches, tooling, and processes.
 
-Doing retrospectives after a project helps identify areas for improvement and celebrate success.
+And after a project wraps up, doing a quick retrospective helps spot ways to improve and gives the team a chance to celebrate success.
 
 *Contoso's challenge*
 
-- To further facilitate information sharing and to foster a culture of collaboration and transparency, the team would like to have a centralized and easily accessible source of truth for the project documentation. Among other things, this would be helpful if a new developer joins the team and needs to quickly get up to speed with the project.
-- Of particular interest for Contoso HR is a desire to make sure learnings from incidents that affect the availability of the application are captured and shared across the entire technical organization to help with future incidents and prevent recurrence as much as possible.
-- To avoid repeating past mistakes designing the user experience of the application, the team also wants to use a more agile approach that would allow them to take real user feedback into consideration.
+- The team wants to make it easier to share information and work together by keeping all project documents in one easy-to-find place. So if a new developer joins the team, they can get up to speed quickly.
+
+- Contoso HR also wants to make sure that when something goes wrong and affects the app's availability, the lessons learned are shared across the whole technical organization to help prevent it from happening again.
+
+- To avoid past mistakes with the app's user experience, the team wants to take a more agile approach. They want to get real feedback from users and adjust as they go.
 
 *Applying the approach and outcomes*
 
-- The team builds a knowledge sharing wiki in ADO where all design specs will be posted along with all active operational procedures, incident response plans, and retrospective outcomes.
-- Doing blameless retrospectives after incidents and every development iteration and documenting the learnings in the wiki is helping the project team to identify areas for improvement and celebrate success.
-- The team has embraced an exploratory approach to the user experience design for the new application, leveraging A/B testing to find the best user experience out of several variants proposed by the UX consultants, taking user feedback into consideration to make data-driven decisions. 
+- The team sets up a wiki in Azure DevOps to keep everything in one place, including design specs, operational procedures, incident response plans, and retrospective outcomes.
+
+- After each incident or development cycle, they do a blameless retrospective and add what they learned to the wiki. It's been a great way to find areas to improve and reflect on the progress that they've made.
+- For the new app's user experience, the team is taking an exploratory approach. They're using A/B testing to try out different ideas from the UX consultants and using real user feedback to make smart, data-driven choices.
 
 ## Codify development and operations procedures
 
-**Set standards for all development and operational procedures and review and validate them at a regular cadence. These procedures include routine tasks, out-of-band processes, emergency drills and situations, choice of tooling, monitoring procedures, skilling plans, and even communication with stakeholders and customer disclosures. Be intentional and explicit about your decisions.**
+**Set clear standards for how development and operations should be done, and check in on them regularly to make sure they still make sense. These procedure should include everyday tasks, emergency plans, tool choices, monitoring, training, and even communication with stakeholders and customers. Be clear and intentional about the decisions you make.**
 
-Standards add predictability to operations and make processes and practices scalable. Validating standards is a great way to draw points of improvement.
+Clear standards make things run more smoothly and help the team scale. Reviewing them regularly is a great way to figure out what could be better.
 
-Be prepared for emergency and recovery situations by conducting regular drills.
+Run regular emergency drills so the team's ready for emergencies and recovery.
 
-Execute with precision and enable governance to prevent anomalies that lead to risks.
+Focus on doing things right and having good checks in place to catch problems early and avoid risks.
 
 *Contoso's challenge*
 
-- One of the challenges that has affected the productivity and output quality of the development team in the past is a lack of standardization and consistency in the codebase. For instance, the absence of uniformity in naming conventions or the use of common software patterns makes it difficult for team members to understand each other's code, and that has affected efficiency.
-- Also, without a properly documented common approach for operations, the operations staff may use different methods to achieve the same goal, leading to inefficiency and confusion.
-- Motivated by the success they have had implementing other DevOps improvements, Contoso HR has decided to tackle this issue as part of the next development cycle.
+- One thing that's slowed the development team down in the past is not having consistent standards in the codebase. Without shared naming conventions or common patterns, it's harder for team members to understand each other's code, which hurts productivity.
+
+- If operations doesn't have a clear, documented way of doing things, people end up using different methods to get the same job done, which can lead to confusion and inefficiency.
+- After seeing good results from other DevOps improvements, Contoso HR is ready to tackle these problems next in the upcoming development cycle.
 
 *Applying the approach and outcomes*
 
-- The development team gets together during the development cycle to agree on a set of development standards to implement. They will document the choices made and will start enforcing them during code reviews and through tooling. They are looking at topics like: Code Formatting and naming conventions, error handling, version control, and security practices. The team plans to pay close attention to the quality metrics and reports being generated in ADO to quantify the impact these changes will have on quality and productivity, so they can prove the value of these kinds of DevOps improvements to their management team.
-- Likewise, the operations team dedicates time during the same period to extend their existing documentation of routine management and troubleshooting practices and publish it in the wiki. Moving forward, the wiki will serve as a single source of truth, saving time and energy that would otherwise be spent searching for information.
+- During the development cycle, the team gets together to agree on a set of coding standards. They write down their decisions and start using them in code reviews and tools. They're focusing on things like formatting, naming, error handling, version control, and security. They plan to pay close attention to quality metrics and reports in Azure DevOps to see how these changes affect productivity and code quality. They can show the value of these DevOps improvements to leadership.
+
+- The operations team is also using this time to update and expand their documentation about how they handle day-to-day tasks and troubleshooting. They're putting everything in the team wiki so it's easy to find and everyone's working from the same place. This practice should save time and reduce confusion going forward.

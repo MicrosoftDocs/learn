@@ -2,8 +2,6 @@
 uid: learn.wwl.review-azure-powershell-module.review-benefits-of-azure-powershell-module
 title: Review the benefits of the Azure PowerShell module
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review the benefits of the Azure PowerShell module
   description: "Review the benefits of the Azure PowerShell module"
   ms.date: 03/22/2024
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/3-review-benefits-of-azure-powershell-module.md)]
-
+

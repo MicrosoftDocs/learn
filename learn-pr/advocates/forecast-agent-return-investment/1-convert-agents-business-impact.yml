@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.forcast-agent-return-investment.convert-agents-business-impact
+title: Converting AI agents' business impact into financial outcomes
+metadata:
+  title: Converting AI Agents' Business Impact into Financial Outcomes
+  description: Understand how to translate the operational benefits of AI agents into quantifiable financial metrics. 
+  ms.date: 8/11/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-convert-agents-business-impact.md)]

@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-operator-nexus.resource-providers-for-operator-nexus
 title: Resource providers for Operator Nexus
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Resource providers for Operator Nexus
   description: Resource providers for Operator Nexus
   ms.date: 05/05/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-resource-providers-for-operator-nexus.md)]
+  [!include[](includes/6-resource-providers-for-operator-nexus.md)]

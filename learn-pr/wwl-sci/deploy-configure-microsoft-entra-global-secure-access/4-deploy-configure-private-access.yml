@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom: sfi-ga-nochange
 durationInMinutes: 8
 content: |
   [!include[](includes/4-deploy-configure-private-access.md)]

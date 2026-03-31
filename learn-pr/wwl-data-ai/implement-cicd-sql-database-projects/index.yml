@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-cicd-sql-database-projects
+metadata:
+  title: Implement CI/CD by using SQL Database Projects
+  description: Implement CI/CD for SQL Database Projects with source control, branching, schema drift detection, automated pipelines, and testing strategies using GitHub Actions and Azure DevOps.
+  ms.date: 07/14/2025
+  author: calopez
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-generated
+title: Implement CI/CD by using SQL Database Projects
+summary: Implement CI/CD for SQL Database Projects with source control, branching, schema drift detection, automated pipelines, and testing strategies using GitHub Actions and Azure DevOps.
+abstract: |
+  By the end of this module, you're able to:
+  *   Create, build, and validate database models by using SQL Database Projects, including SDK-style.
+  *   Configure source control for SQL Database Projects and manage reference data with predeployment and post-deployment scripts.
+  *   Manage branching, pull requests, and conflict resolution for database code.
+  *   Detect schema drift by using schema comparison tools and SqlPackage.
+  *   Implement CI/CD pipelines with GitHub Actions and Azure DevOps, including secrets management and deployment controls.
+  *   Design and implement a testing strategy with unit tests and integration tests.
+prerequisites: |
+  *   Basic understanding of SQL and Transact-SQL.
+  *   Familiarity with Azure SQL Database or SQL Server.
+  *   Experience with Git version control concepts such as commits, branches, and pull requests.
+  *   Basic understanding of CI/CD concepts and YAML pipeline syntax.
+iconUrl: /training/achievements/generic-database.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+- developer
+- data-engineer
+products:
+- azure
+- azure-sql-database
+- sql-server
+subjects:
+- databases
+- devops
+units:
+- learn.wwl.implement-cicd-sql-database-projects.introduction
+- learn.wwl.implement-cicd-sql-database-projects.create-build-validate-sql-database-projects
+- learn.wwl.implement-cicd-sql-database-projects.configure-source-control-manage-reference-data
+- learn.wwl.implement-cicd-sql-database-projects.manage-branching-pull-requests-conflict-resolution
+- learn.wwl.implement-cicd-sql-database-projects.detect-resolve-schema-drift
+- learn.wwl.implement-cicd-sql-database-projects.implement-cicd-pipelines
+- learn.wwl.implement-cicd-sql-database-projects.design-implement-testing-strategy
+- learn.wwl.implement-cicd-sql-database-projects.exercise-implement-cicd-sql-database-projects
+- learn.wwl.implement-cicd-sql-database-projects.knowledge-check
+- learn.wwl.implement-cicd-sql-database-projects.summary
+badge:
+  uid: learn.wwl.implement-cicd-sql-database-projects.badge

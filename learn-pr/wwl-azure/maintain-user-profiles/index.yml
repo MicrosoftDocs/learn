@@ -3,26 +3,37 @@ uid: learn.wwl.maintain-user-profiles
 metadata:
   title: Maintain user profiles
   description: "Students learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices."
-  ms.date: 05/24/2023
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: windows
+  ai-usage: human-only
 title: Maintain user profiles
 summary: Students learn about the benefits of various Windows user profiles, how to manage them, and how to facilitate profile data synchronization across multiple devices.
 abstract: |
   After completing this module, you will be able to:
-  *   Explain the various user profile types that exist in Windows.
-  *   Describe how a user profile works.
-  *   Configure user profiles to conserve space.
-  *   Explain how to deploy and configure Folder Redirection.
-  *   Explain Enterprise State Roaming.
-  *   Configure Enterprise State Roaming for Azure AD devices.
+
+  -   Explain the various user profile types that exist in Windows.
+
+  -   Describe how a user profile works.
+
+  -   Configure user profiles to conserve space.
+
+  -   Explain how to deploy and configure Folder Redirection.
+
+  -   Explain Enterprise State Roaming.
+
+  -   Configure Enterprise State Roaming for Azure AD devices.
 prerequisites: |
-  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
-  *   Strong understanding of computer networking, client security, and application concepts.
-  *   Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+
+  -   Strong understanding of computer networking, client security, and application concepts.
+
+  -   Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/maintain-user-profiles.svg
 levels:
 - intermediate
 roles:

@@ -3,28 +3,27 @@ Microsoft Security Copilot is accessible within Microsoft Purview data security 
 In this exercise, you explore the Copilot summarization capabilities available in each of these solutions. You start by verifying that the Microsoft Purview plugin is enabled.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this message occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page might not be enabled and text-based inputs that fall outside of the specified script might not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this message occurs, select OK and continue the exercise steps.  
 >
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you might find that the user interface still reflects the original name.
+>
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard. You have the Copilot owner role and you have specific role permissions required for access to each of the afore mentioned Microsoft Purview solutions.
+For this exercise, you're logged in as Avery Howard. You have the Copilot owner role and the specific role permissions required to access each of the Microsoft Purview solutions used in this exercise.
 
-You'll work with specific Microsoft Purview solutions, using the new Microsoft Purview portal, and access the embedded Copilot capabilities of those solutions.
+You work with specific Microsoft Purview solutions, using the new Microsoft Purview portal, and access the embedded Copilot capabilities of those solutions.
 
 This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
-
 #### Task: Enable the Microsoft Purview plugin
 
 In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true)**.
 
 1. From the Microsoft Security Copilot landing page, select the **Sources icon** ![sources icon](../media/sources-icon.png) in the prompt bar.
     1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
@@ -32,144 +31,148 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
     1. Select the **Information icon** ![screenshot of information icon](../media/information-icon.png). Note the instructions then close the plugins page by selecting the **X** on the top-right corner of the manage sources window.
 
 1. Select the **Home menu** ![screenshot of the home menu icon](../media/home-menu-icon.png), often referred to as the hamburger icon.
-    1. Select **Owner settings**.
+    1. Select **Plugin settings**.
     1. Enable the toggle switch next to **Allow Security Copilot to access data from your Microsoft 365 services**.
     1. Return to the Copilot home page, by selecting **Microsoft Security Copilot** on the top-left of the page next to the home menu (hamburger) icon.
 
 1. Now that Copilot is enabled to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
     1. From the prompt bar, select the **Sources icon**.
-    1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
+    1. From the manage sources window, under the Microsoft plugins, select **Show 13 more**.
     1. Enable the toggle switch next to Microsoft Purview to enable the plugin.
     1. Close the manage sources window by selecting the **X**.
 
-#### Task: Gain comprehensive summary of Insider Risk Management alerts
+#### Task: Investigate risky activity using Security Copilot
 
 For this and all subsequent tasks, you explore the Copilot functionality embedded in Microsoft Purview.
 
-In this task, you explore the value Copilot provides in summarizing an Insider Risk Management alert. You start by first reviewing an alert, without Security Copilot. It can be challenging to know where to start your investigation when risky activities are detected over a long period of time. Then, you see how Copilot can address this same task with the click of a button.
+In this task, you investigate an alert related to potential data exfiltration. You begin by reviewing the alert manually to identify key risk indicators, then use **Security Copilot** to accelerate your investigation. In particular, you look for file activity related to **EmployeeInfo_EDM.csv**, which contains sensitive employee information and was involved in exfiltration events.
 
-Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user should have previously been assigned an appropriate role.
+Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user must be assigned an appropriate role.
 
-1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=3&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
-    1. Select the box where it says **"This is a public preview. I agree to the terms of data flow disclosure, the preview section of the Product Terms, and Privacy Statements."**
-    1. Select **Try now**.
-    1. You can close the Explore all solutions pop-up by selecting the **X**. Alternatively, you can select Next to go through the information. If you go through all six information windows, you'll need to scroll-up to get back to the top of the page, when you're done.
+1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
-1. From the Microsoft Purview portal, select **Insider Risk Management**.
+1. In the Microsoft Purview portal, **Solutions** > **Insider Risk Management** > **Alerts**.
 
-1. Select **Alerts**.
+1. Select the first alert on the list with alert ID **ad18a3a1**.
 
-1. Select the first alert on the list, alert ID: **86e52569**.
-    1. This alert is associated with the policy, 'Potential data theft - Employee Departure.' Under User details, you can gain more context on why the user was identified as a high impact user by selecting **View all details**. Review the user details then select the **X** to close the User details window.
-    1. The current page shows **All risk factors**. If you scroll down, there are even more details to consume.
-    1. Select the **Activity explorer** tab, to quickly review a timeline of potentially risky activity and filter for specific risk activities associated with the alert. Select, the first activity on the list, labeled **Files accessed on SPO**. Review the information provided then select **X** to close the window.
-    1. Select the **User activity tab**. Here you view a scatter plot, over a one month, three months, or six months timeline; alongside details of each event.
+1. Review the alert:
+   1. Check the alert name, associated policy, severity, and risk score. Review when the alert was triggered and why.
+   1. Select **View all details** to view the user profile, including group membership and priority status. Then close the panel.
+   1. In the **All risk factors** tab, look at exfiltration activity, sequence activity, priority content, and sensitive info types.
+   1. Select the **Activity explorer** tab and examine key events around the alert date.
+   1. Use the **User activity** tab to review patterns in user behavior across a broader time range.
 
-1. With Security Copilot, you can gain a comprehensive summary of an alert – in the single click of a button! From the top of the alert page, select **Summarize**.
-    1. This comprehensive summary provides key details, including alert severity, user details like their HR offboarding event and much more! 
-    1. These summaries help accelerate investigations by helping you quickly gain context into user intent and timing of risky activities, enabling you to tailor your investigation with specific dates in mind and quickly pinpoint sensitive files at risk.
+1. Use **Security Copilot** to guide deeper review:
+   1. From the alert page, select **Summarize** to generate a quick summary of the alert and the user's recent behavior.
+   1. In the Copilot pane, select the predefined prompt **Summarize user's last 30 days of activity**.
+   1. When the summary loads, review the response, then select **View activity** to open the full user activity view.
+   1. In the left pane, select **Unusual activities**.
+   1. Expand the first sequence activity listed for **February 25, 2025**.
+   1. Select the **2 events** link to view the actions included in that sequence.
+   1. Find the entry for **EmployeeInfo_EDM.csv**. Expand the details and review the associated actions for this file.
 
-1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
+#### Task: Review data loss prevention policy insights using Security Copilot
 
-#### Task: Gain comprehensive summary of Data Loss Prevention alerts.
+For this task, you explore how Security Copilot can help identify strengths and gaps in your Data Loss Prevention (DLP) policy coverage.
 
-In this task, you explore the value Copilot provides in summarizing a Data loss prevention alert. As in the previous task, you start by first reviewing an alert, without Security Copilot. You then discover how Copilot can address this same task with the click of a button.
+In large environments, it can be difficult to quickly assess whether existing policies provide the necessary coverage across locations, data types, and organizational boundaries. Security Copilot can surface insights and help you focus your attention where it matters most.
 
-Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Data Loss Prevention solution, users should have previously been assigned an appropriate role.
+1. In the Microsoft Purview portal, go to **Solutions** > **Data Loss Prevention** > **Policies**.
 
-1. Select **Data loss prevention**, then select **Alerts**
+1. Scroll through the list of DLP policies to get a sense of how many policies exist and how they're named. These might represent different locations, classifications, or business units.
 
-1. Investigating DLP alerts can be overwhelming due to the large number of sources to analyze, including apps, cloud services, email, endpoints and chat, and the varying rules and conditions of a policy.
+1. Select **Copilot** > **Get insights on existing policies**.
 
-1. Select the first alert from the list, labeled, **DLP policy match for document cardholder transaction Log.xlsx in OneDrive**.
-    1. A side panel opens listing some details of this alert, including the alert status, severity, the DLP policy match, location, and user involved. From the bottom of the page, select **View details**. This opens a new browser tab.
-    1. Select the **Events** tab. For the selected event, you can view event details, impacted entities and more.
-    1. Select the **Classifiers** tab. Under classifiers, you can view the specific sensitive information types or trainable classifiers that were matched.
-    1. You can also select File Activity. There's much information to analyze.
-    1. Close this browser tab, but be sure to keep the 'Alerts|Microsoft Purview' tab open.
+1. When the Security Copilot pane opens, review the **General insights** shown by default.
 
-1. Now view the information that Copilot can generate with the click of a button.
-    1. From the Alerts|Microsoft Purview tab, which is showing the side panel with information about the alert, select **Summarize with Copilot**.
-    1. This comprehensive summary provides key details, including policy rules, source, files involved and more. Additionally, the summary pulls the user risk levels from Insider Risk Management, providing integrated insights across data security solutions. These summaries provide you with a better starting point for further investigation.
+1. Explore each insights category:
+    1. Select **Insights by location**, then choose **Exchange**. Review the insights displayed.
+    1. Repeat this process for **Endpoint**.
+    1. Select **Insights by Administrative units** and review the results.
+    1. Select **Insights by Classification of data** and review the results.
 
-1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
+1. At the bottom of the Copilot pane, select the predefined prompt **What types of sensitive information are we protecting with these DLP policies?** and review the results.
 
-#### Task: Gain contextual summary of Communication Compliance policy matches
+1. In the Copilot pane, select the predefined prompt **Does this DLP policy apply to all users in my organization?** and review the results.
 
-In this task, you explore the capability of Copilot in Microsoft Purview Communication Compliance. Reviewing communication violations can be time-consuming, especially when reviewing lengthy content like meeting transcripts, email attachments, Teams attachments, or extensive text. Copilot can address this, and more, with the click of a button.
+1. In the Copilot input field, type **Are there any gaps based on the policies I currently have created?** and review the answer provided.
 
-Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Communication Compliance solution, users should have previously been assigned an appropriate role.
+Use these insights to understand how your current DLP policies are distributed and whether they align with your organization's data protection needs. Review the results to identify any opportunities to improve coverage.
 
-1. From the New Microsoft Purview portal, select **View all solutions**, then select **Communication Compliance**, listed under Risk & Compliance.
+#### Task: Investigate data loss prevention alerts using Security Copilot
 
-1. Select **Policies**.
+In this task, you use Security Copilot to investigate a DLP alert and examine user activity and sensitive information involved in the alert. You explore different views available in the alert pane and use predefined Copilot prompts to guide your investigation.
 
-1. Select **Regulatory compliance** policy to identify potential regulatory compliance violations.
+1. In the Microsoft Purview portal, go to **Solutions** > **Data Loss Prevention** > **Alerts**.
 
-1. From the list of violations triggered by the policy, select the Teams communication with the subject **Happy new year valued customers!** to expand the list. Select the first item from the expanded view.
+1. Scroll through the alert list and select the alert for **DLP policy match for document 'POS-Leavers_0325.xlsx' on a device**.
+1. When the alert opens:
+    1. Review the tabs for **Details**, **Events**, and **User activity summary**.
 
-1. Communication Compliance is able to pinpoint the timestamps when a potential violation has occurred and highlight conditions matched, but there's still a good bit of text to read through.
-    1. With Security Copilot, you can gain a comprehensive summary of an alert in the single click of a button! Select **Summarize**.
-    1. You can also ask follow-up questions. Use copy/paste to enter **Does this violation indicate unauthorized disclosure?**
+1. On the **Details** tab:
+    1. Review the alert details.
+    1. At the bottom of the tab, select **Summarize** > **Summarize alert**.
+    1. Review the generated summary in the Copilot pane.
 
-1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
+1. In the Copilot pane, select the prompt **What activity was performed on the data in this alert?** and review the response.
 
-#### Task: Gain contextual summary of evidence collected in eDiscovery review sets (Preview)
+1. Next, select the prompt **Describe the sensitive info, file labels, or data triggering this alert** and review the results.
 
-In this task, you explore the capability of Copilot to Microsoft Purview to gain a contextual summary of evidence collected in an eDiscovery review set. 
+1. Back on the **Details** tab:
+    1. Select **Summarize** > **Summarize user activity** to generate a summary of related user actions.
 
-Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside counsel to manually go through each document to determine the relevancy to the case. Copilot can significantly reduce that burden by generating summaries of conversations in a variety of languages and the documents that may be included as attachments.
+1. In the Copilot pane:
+    1. Select **Show key actions performed by the user in the last 10 days**.
+    1. Review the user activity for broader context.
 
-Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview eDiscovery solution, users should have previously been assigned an appropriate role.
+1. Go to the **Events** tab and view the file that triggered the alert.
 
-1. From the New Microsoft Purview portal, select **View all solutions**, then select **eDiscovery**, listed under Risk & Compliance.
+1. Go to the **User activity summary** tab:
+    1. Scroll through to view any related insider risk activities.
 
-1. For this simulation, you're taken directly to the page for cases. From the cases page, select **Contoso stock manipulation**, then select the tab **Review sets**.
+Use this information to build a clearer picture of what triggered the alert, how sensitive data was handled, and whether user behavior suggests further review is needed.
 
-1. From the review sets page, open the review set listed **RS - Stock manipulation Teams conversation + cloud attachments**
-    1. From the bottom of the Overview page, select **Open review set**.
-    1. Using the filter, filter for Teams conversations:
-        1. Filter - **File class**.
-        1. Select an operator - **Equals any of**.
-        1. Select Any -  **Conversation**.
-    1. From the results, select the first item on the list **#1**.
-        1. Information about the conversation appears in the window to the right. **Scroll** to view the source history. There's quite a bit of text included in this teams conversation. It can be time-consuming to sift through the information.
-        1. With Security Copilot, you can gain a comprehensive summary of the conversation in the review set – in the single click of a button! Select **Summarize**. Copilot also provides prompt suggestions and the prompt bar for you to enter your own prompts in furtherance of the investigation. This helps you save time and conduct investigations more efficiently!
+#### Task: Investigate eDiscovery cases and build a query using Security Copilot
 
-1. Refer back to the list of Teams conversations. This time, select the second item on the list select item **#2** .
-    1. The subject is displayed in a non-English language. This is common challenge with multi-national corporation whose employees speak various languages. The window with the source conversations shows a conversation history with non-English language. Select **Summarize** to view a summary in English, which is my default language for Copilot.
-    1. Within Microsoft Teams, you can send cloud attachments, which are links to documents. Expand item #2 by selecting the **>**. The first subitem is a Word document. Select the document then select **Summarize** to have Copilot generate a summary
+In this task, you explore how Security Copilot supports case investigation and query creation in Microsoft Purview eDiscovery. You start by reviewing a case summary, then create a custom search to locate files labeled as confidential and shared externally.
 
-1. From the left navigation panel, select **Home** to return the Microsoft Purview portal. You'll return to this page in the next task.
+In this scenario, you're assisting with a case investigating the possible exposure of confidential data. Multiple searches are already added to the case as part of an initial review. Your role is to use Security Copilot to help summarize case details, analyze activity, and build a more targeted search.
 
-#### Task: Create Keyword Query Language (KeyQL) queries using natural language to search in eDiscovery (Premium)
+1. In the Microsoft Purview portal, go to **Solutions** > **eDiscovery** > **Cases**.
 
-In this task, you explore the capability of Copilot in Microsoft Purview eDiscovery (Premium) to create Keyword Query Language (KeyQL) queries using natural language. Users provide a prompt in natural language and Copilot generates a query in KeyQL language, making your search iterations faster and more accurate. This feature also enables analysts, at all levels, to conduct advanced investigations using KeyQL.
+1. On the **Cases** page, select **Sensitive Information Discovery**.
 
-Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview eDiscovery solution, users should have previously been assigned an appropriate role.
+1. At the top of the case page, select **Summarize this case**.
 
-1. From the New Microsoft Purview portal, select **View all solutions**, then select **eDiscovery**, listed under Risk & Compliance.
+1. The Security Copilot pane opens with a summary of the case. Review the generated content.
 
-1. For this simulation, you're taken directly to the page for cases.
-1. Select **Fabrikam vs Contoso**.
-1. Select **Create a search**.
-    1. Enter a search name.
-    1. Enter a description.
-    1. Select **Create**.
-1. Add a data source
-    1. Select **Add data sources**.
-    1. In the search bar, enter **Sales**.
-    1. From the search results, select **Sales**.
-    1. From the bottom of the page, select **Save**.
-1. Now use Copilot draft a query in natural language. Select **Draft a query with Copilot**.
-    1. From the box labeled natural language prompt, select **View prompts**. This is a great starting point. You could look at suggested prompts to determine how to craft a natural language query for suggested prompts. For example, Find all emails containing the words budget and finance and have attachments.
-    1. For this example, however, you know what you are looking for. You’ve been told that you need to find all conversations related to a recent acquisition. Use copy/paste to enter **Find all conversations that contain the keywords; acquisition, stock, Bitdefender, Frostvision, offshore**.
-    1. When you enter your natural language prompt, you can have Copilot refine the query to ensure a more accurate query output. Select **Refine** then **Accept**.
-    1. Select **Generate KeyQL**. Security Copilot refines the prompt and then in a simple click, can generate the query within seconds!  
-    1. The purpose of this exercise is to show how easily Copilot can generate the code for a query using natural language. In your production environment, to run the generated query copy the KeyQL code into the run box and select run.
+1. In the Copilot pane, select the predefined prompts:
+   1. **How many hold policies in this case have errors?**
+   1. **Which hold policies in this case have errors?**
 
-#### Review
+1. Based on the case summary and current findings, you're asked to search for confidential files that might be shared externally. To begin this part of the investigation, select the **Create a search** button.
 
-With Copilot in Microsoft Purview, data security and compliance admins can use the power of AI to assess risk exposure more quickly than is otherwise possible, directly from within Microsoft Purview solutions.
+1. Name the search **Confidential data search**, then select **Create**.
 
-In this exercise, you explored the powerful functionality of Copilot to aid in your compliance investigations with DLP, Insider Risk Management, Communication Compliance, and eDiscovery.
+1. On the **Search** page, under the query input, select **Draft a query with Copilot**.
+
+1. Explore the available options in the Copilot promptbook:
+   1. Select **View prompts**, then select **Find all emails containing the words budget and finance and have attachments.** Select **Generate KeyQL** to view how the query is built.
+   1. Repeat this process for prompt **Search all chats in the month of January 2020 that contain the word 'financial year'**.
+   1. Repeat this process for prompt **Search for files of type .docx that contain the words confidential and budget**.
+
+1. In the query input box, type **Search for files marked as confidential that were shared with external users.**
+
+1. Select **Generate KeyQL** to convert the prompt into a query.
+
+Once your query is generated, you can continue the investigation by reviewing the search results. Identify files that match your criteria and determine whether they need to be added to a review set or exported for further examination.
+
+This task shows how Security Copilot can support your investigative process by summarizing key details and offering relevant prompts. It also helps construct searches that reflect the scope of the case.
+
+### Review
+
+In this exercise, you used Security Copilot to support investigations in Microsoft Purview. You reviewed insider risk alerts, explored DLP policies and alerts, and worked with an eDiscovery case.
+
+Each task showed how Copilot can help summarize information, identify patterns, and guide the next steps. You used built-in prompts and natural language input to focus your investigation and gather relevant context.
+
+These actions reflect how Copilot can assist with common tasks across data security and compliance workflows.

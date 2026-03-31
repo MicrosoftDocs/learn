@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-revocation
 title: Manage certificate revocation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage certificate revocation
   description: "Manage certificate revocation"
   ms.date: 06/11/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "That's incorrect. The Policy Module settings allow you to assign a policy module, however, not to specify the location where a CRL should be published."
     - content: "Configure the Storage settings of the CA."
       isCorrect: false
-      explanation: "That's incorrect. The Storage settings designate the location where the CA stores configuration data."
+      explanation: "That's incorrect. The Storage settings designate the location where the CA stores configuration data."

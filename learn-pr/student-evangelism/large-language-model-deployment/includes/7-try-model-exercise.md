@@ -5,7 +5,7 @@ You might be familiar with applications like ChatGPT that use *natural language 
 > [!NOTE]
 > To complete this exercise, you need the following:
 >
-> - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services).
+> - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 > - Access to Azure OpenAI in the desired Azure subscription. Currently, access to this service is granted only through applications. Apply for access to Azure OpenAI by completing this form: [https://aka.ms/oai/access](https://aka.ms/oai/access).
 > - An Azure OpenAI resource with a model deployed. For more information about model deployment, see [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource).
 >

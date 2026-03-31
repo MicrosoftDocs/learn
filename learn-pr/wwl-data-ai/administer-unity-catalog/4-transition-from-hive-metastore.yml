@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-for-governance.transition-from-hive-metastore
+metadata:
+  title: Transition from the Hive Metastore
+  description: "Enable Unity Catalog coexistence with Hive metastore and migrate tables using SQL commands or the upgrade wizard."
+  ms.date: 10/21/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+title: Transition from the Hive Metastore
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-transition-from-hive-metastore.md)]

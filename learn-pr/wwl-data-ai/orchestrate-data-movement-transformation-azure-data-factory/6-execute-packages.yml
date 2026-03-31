@@ -2,8 +2,6 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.executing-packages
 title: Execute data factory packages
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Execute data factory packages
   description: "Execute data factory packages"
   ms.date: 04/19/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-execute-packages.md)]
+  [!include[](includes/6-execute-packages.md)]

@@ -127,7 +127,7 @@ In this task, you'll create a method that adjusts scheduled times to a different
     ```c#
     for (int i = 0; i < times.Length; i++) 
     {
-        int newTime = ((times[i] + diff)) % 2400;
+        int newTime = (times[i] + diff) % 2400;
         Console.WriteLine($"{times[i]} -> {newTime}");
     }
     ```

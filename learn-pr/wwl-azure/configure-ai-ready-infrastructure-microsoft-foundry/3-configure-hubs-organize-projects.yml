@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.configure-hubs-organize-projects
+title: "Configure hubs and organize projects"
+metadata:
+  title: "Configure Hubs and Organize Projects"
+  description: "Learn how to configure hubs, organize projects, and enforce governance using Azure Policy for scalable AI infrastructure management."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-configure-hubs-organize-projects.md)]

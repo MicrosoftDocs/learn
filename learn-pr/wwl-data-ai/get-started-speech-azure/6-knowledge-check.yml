@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-speech-in-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 02/13/2026
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "Why would a developer use the Azure Speech‑to‑Text SDK instead of only using the Foundry playground?"
+    choices:
+    - content: "The SDK replaces the need for Azure Speech models."
+      isCorrect: false
+      explanation: "The SDK does not replace Azure Speech models—it acts as a bridge between application code and the Azure Speech service."
+    - content: "The SDK is required to upload audio files to the Foundry portal."
+      isCorrect: false
+      explanation: "The Foundry playground already allows uploading or recording audio without writing code."
+    - content: "The SDK allows speech recognition to be added directly into application code."
+      isCorrect: true
+      explanation: "The Speech‑to‑Text SDK is designed for use in applications, handling tasks like audio streaming, authentication, and receiving transcription results in code."
+  - content: "What does the Azure Text‑to‑Speech SDK handle for developers?"
+    choices:
+    - content: "Only selecting the voice and writing audio files manually"
+      isCorrect: false
+      explanation: "The SDK does more than voice selection—it manages the full process of sending text and receiving audio."
+    - content: "Authentication, network communication, and audio generation"
+      isCorrect: true
+      explanation: "The Text‑to‑Speech SDK handles authentication, network communication, audio formatting, and playback, allowing developers to focus on application logic."
+    - content: "Storing synthesized audio permanently in Azure Storage"
+      isCorrect: false
+      explanation: "The SDK can play or save audio, but it does not automatically store audio permanently in Azure Storage."
+  - content: "What role does the Voice Live Python SDK (azure-ai-voicelive) play in a voice‑enabled agent?"
+    choices:
+    - content: " It stores audio recordings permanently in Azure Storage"
+      isCorrect: false
+      explanation: "The SDK focuses on real‑time interaction, not long‑term audio storage."
+    - content: "It replaces the need for microphones and speakers on the user’s device"
+      isCorrect: false
+      explanation: "The SDK still relies on the user’s audio hardware, such as microphones and speakers."
+    - content: "It opens a real‑time connection, streams audio, and handles spoken responses and interruptions"
+      isCorrect: true
+      explanation: "The Voice Live SDK opens a WebSocket session, streams microphone audio to the service, receives spoken responses, and supports interruptions for natural conversations."

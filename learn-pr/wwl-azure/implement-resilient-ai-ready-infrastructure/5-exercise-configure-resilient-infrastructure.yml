@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-resilient-ai-ready-infrastructure.exercise-configure-resilient-infrastructure
+title: "Configure resilient infrastructure"
+metadata:
+  title: "Configure Resilient Infrastructure"
+  description: "Configure Resilient Infrastructure."
+  ms.date: 02/03/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-configure-resilient-infrastructure.md)]

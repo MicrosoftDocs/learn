@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-intelligent-search-with-sql.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you learned about designing and implementing intelligent search for Azure SQL.
+  author: calopez
+  ms.author: calopez
+  ms.date: 02/03/2026
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/09-summary.md)]

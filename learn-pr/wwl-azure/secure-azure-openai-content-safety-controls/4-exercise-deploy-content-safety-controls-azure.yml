@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-openai-content-safety-controls.exercise-deploy-content-safety-controls-azure-
+title: "Deploy content safety controls in Azure"
+metadata:
+  title: "Deploy Content Safety Controls in Azure"
+  description: "Learn how to deploy content safety controls in Azure to create custom block lists for precise moderation tailored to your business needs."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 18
+content: |
+  [!include[](includes/4-exercise-deploy-content-safety-controls-azure.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-database-objects.design-implement-indexes
+title: Optimize with indexes
+metadata:
+  title: Optimize with indexes
+  description: "Learn how to design and implement rowstore and columnstore indexes for optimal query performance"
+  ms.date: 02/24/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-implement-indexes.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-assess-mitigate-risks.adaptive-protection-ai
+title: "Case study: Use Adaptive Protection to respond to AI-related risk"
+metadata:
+  title: "Case study: Use Adaptive Protection to respond to AI-related risk"
+  description: "Case study: Use Adaptive Protection to respond to AI-related risk"
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/adaptive-protection-ai.md)]

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.secured-devices-by-microsoft.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Secure at every layer with Microsoft Surface" module.
+  ms.date: 02/03/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Microsoft’s Zero Trust philosophy assume about trust in security?"
+    choices:
+        - content: "All internal devices are trusted by default"
+          isCorrect: false
+          explanation: "Incorrect. The Zero Trust philosophy explicitly states that no trust is assumed, even for internal devices."
+        - content: "Trust is assumed until a threat is detected"
+          isCorrect: false
+          explanation: "Incorrect. Zero Trust requires continuous verification rather than assuming trust until something goes wrong."
+        - content: "No trust is assumed and everything must be verified"
+          isCorrect: true
+          explanation: "Correct. The document explains that Zero Trust means verifying everything across devices, cloud, and every security layer."
+        - content: "Only cloud services require verification"
+          isCorrect: false
+          explanation: "Incorrect. Zero Trust applies across cloud, identity, applications, operating systems, and hardware."
+  - content: "Which layers are included in Microsoft’s Zero Trust security model as described in the module?"
+    choices:
+        - content: "Cloud, identity, and privacy, application, operating system, hardware"
+          isCorrect: true
+          explanation: "Correct. These layers are explicitly listed as part of Microsoft’s Zero Trust security approach."
+        - content: "Network, storage, application, firmware, cloud"
+          isCorrect: false
+          explanation: "Incorrect. Network and storage aren't listed as Zero Trust layers in the document."
+        - content: "Identity, networking, power management, storage, firmware"
+          isCorrect: false
+          explanation: "Incorrect. Power management and storage aren't included in the Zero Trust layers described."
+        - content: "Cloud, application, desktop software, peripherals, networking"
+          isCorrect: false
+          explanation: "Incorrect. Desktop software, peripherals, and networking aren't identified as Zero Trust layers in the content."
+  - content: "What is the role of Surface UEFI on Surface devices?"
+    choices:
+        - content: "It replaces Windows and manages user applications"
+          isCorrect: false
+          explanation: "Incorrect. Surface UEFI doesn't replace Windows or manage applications."
+        - content: "It acts as a small operating system that controls and protects firmware"
+          isCorrect: true
+          explanation: "Correct. The document explains that UEFI functions like a small operating system to help secure firmware."
+        - content: "It encrypts user files stored on the device"
+          isCorrect: false
+          explanation: "Incorrect. File encryption is handled by features like BitLocker, not UEFI."
+        - content: "It provides biometric authentication for users"
+          isCorrect: false
+          explanation: "Incorrect. Biometric authentication is provided by Windows Hello for Business."
+  - content: "What is one key benefit of using Rust in Surface device firmware?"
+    choices:
+        - content: "It improves graphical performance of devices"
+          isCorrect: false
+          explanation: "Incorrect. Rust is discussed in the context of memory safety and security, not graphics."
+        - content: "It prevents memory errors and reduces security risks"
+          isCorrect: true
+          explanation: "Correct. The document states that Rust helps prevent memory errors that can lead to security vulnerabilities."
+        - content: "It enables faster Wi-Fi connectivity"
+          isCorrect: false
+          explanation: "Incorrect. Wi-Fi performance improvements are covered under Wi-Fi 7, not Rust."
+        - content: "It replaces the need for firmware updates"
+          isCorrect: false
+          explanation: "Incorrect. Firmware updates are still required and delivered through Windows Update."
+  - content: "What is a primary function of Surface Enterprise Management Mode (SEMM)?"
+    choices:
+        - content: "Managing user passwords and authentication methods"
+          isCorrect: false
+          explanation: "Incorrect. Password and authentication management is handled by tools like Windows Hello for Business."
+        - content: "Centrally setting and locking UEFI firmware settings"
+          isCorrect: true
+          explanation: "Correct. SEMM allows IT administrators to centrally configure and lock UEFI settings across Surface devices."
+        - content: "Encrypting data stored on removable drives"
+          isCorrect: false
+          explanation: "Incorrect. Drive encryption is handled by BitLocker and BitLocker to Go."
+        - content: "Monitoring network traffic across Surface devices"
+          isCorrect: false
+          explanation: "Incorrect. Network traffic monitoring isn't described as a function of SEMM."

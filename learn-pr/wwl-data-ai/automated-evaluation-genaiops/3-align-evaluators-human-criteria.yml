@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automated-evaluation-genaiops.align-evaluators-human-criteria
+title: Align evaluators with human criteria
+metadata:
+  title: Align evaluators with human criteria
+  description: "Follow a workflow to select evaluators, run shadow rating, monitor alignment, and refine with custom evaluators"
+  ms.date: 02/22/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-align-evaluators-human-criteria.md)]

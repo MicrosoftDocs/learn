@@ -12,8 +12,8 @@ Extractive summarization is accomplished using the `summarize_extractive()` func
 | disable_service_logs | `boolean` | false | Flag indicating whether to turn off service logs. |
 | timeout_ms | `integer` | NULL | Timeout in milliseconds after which the operation is stopped. |
 | throw_on_error | `boolean` | true | Flag indicating whether the function should, on error, throw an exception resulting in a rollback of the wrapping transaction. |
-| max_attempts | `integer` | 1 | Number of times to retry the call to Azure AI Services in the event of a failure. |
-| retry_delay_ms | `integer` | 1000 | Amount of time, in milliseconds, to wait before attempting to retry calling the Azure AI Services endpoint. |
+| max_attempts | `integer` | 1 | Number of times to retry the call to Foundry Tools in the event of a failure. |
+| retry_delay_ms | `integer` | 1000 | Amount of time, in milliseconds, to wait before attempting to retry calling the Foundry Tools endpoint. |
 
 Each function returns an array of extracted sentences and a rank score for each one, using the `azure_cognitive.sentence` composite type, as shown in the table below:
 
@@ -29,7 +29,7 @@ The `azure_cognitive.sentence` is a composite type containing the text of an ext
 
 ## Generate extractive summaries for property descriptions
 
-As a developer for Margie's Travel, you want to evaluate the extractive summarization technique accessible via the `azure_ai` extension and Azure AI Services and evaluate the ability of the method to generate concise, natural language summaries of lengthy property descriptions, such as this description from the first listing in the database:
+As a developer for Margie's Travel, you want to evaluate the extractive summarization technique accessible via the `azure_ai` extension and Foundry Tools and evaluate the ability of the method to generate concise, natural language summaries of lengthy property descriptions, such as this description from the first listing in the database:
 
 _"Make yourself at home in this charming one-bedroom apartment, centrally located on the west side of Queen Anne Hill. This elegantly decorated, private apartment (bottom unit of a duplex) has an open floor plan, bamboo floors, a fully equipped kitchen, a TV, DVD player, basic cable, and a cozy bedroom with a queen-size bed. The unit sleeps up to four (two in the bedroom and two on the comfortable fold-out couch, linens included) and includes free Wi-Fi and laundry. The apartment opens onto a private deck, complete with its own barbecue, overlooking a garden and a forest of black bamboo. The Apartment is perfectly located just one block from the bus lines where you can catch a bus and be downtown Seattle in 15 minutes or historic Ballard in 10. A quick five-minute walk brings you to a natural grocery store and coffee shops. Or just take a fifteen-minute walk to the top of Queen Anne Hill where you find various eclectic stores, bars, and restaurants."_
 

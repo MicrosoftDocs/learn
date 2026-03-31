@@ -1,0 +1,7 @@
+In this module, you learned how to create vector indexes and query embeddings for similarity search. You also learned how to include defining index schemas with vector fields, ingest vectors as byte-encoded arrays, and execute KNN queries with metadata filters. You also explored choosing vector types and indexing strategies, including selecting FLOAT32 for memory efficiency, choosing distance metrics that match your embedding model (COSINE for text, L2 for images), and deciding between FLAT indexing for exact search and HNSW for approximate search on large datasets. Additionally, you learned how to select optimal Redis data structures, including using Hash for flat, memory-efficient storage and JSON for nested or complex data structures. Finally, you reviewed practical considerations for balancing accuracy, performance, and memory usage when implementing vector search in production AI systems.
+
+## Additional resources
+
+- [RediSearch Vector Similarity Documentation](https://redis.io/docs/latest/develop/interact/search-and-query/query/vector-search/) - Official guide to vector indexing and search
+- [Redis Vector Database Overview](https://redis.io/docs/latest/develop/get-started/vector-database/) - Getting started with Redis as a vector database
+- [Azure Managed Redis Documentation](/azure/azure-cache-for-redis/managed-redis/managed-redis-overview) - Service features and capabilities

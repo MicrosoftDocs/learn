@@ -79,17 +79,17 @@ In the previous examples, the consequence of requesting the URI `http://www.cont
 }
 ```
 
-In this example, if the user requests `http://www.contoso.com/favoritepizza/margherita`, there's no match with the preceding component. As a result, the request is routed elsewhere. If the user requests `http://www.contoso.com/favoritepizza/12`, there's a route match and the component displays the message *Your favorite pizza size is: 12 inches*. A specific type for the route parameter like this one is called a *route constraint*. You can use these other types in a constraint:
+In this example, if the user requests `http://www.contoso.com/favoritepizza/margherita`, there's no match with the preceding component. As a result, the request is routed elsewhere. If the user requests `http://www.contoso.com/favoritepizza/12`, there's a route match and the component displays the message *Your favorite pizza size is: 12 inches*. A specific type provided for the route parameter like this is called a, *route constraint*. You can use these other types in a constraint:
 
 | Constraint | Example | Example matches |
 | --- | --- | --- |
-| bool | {vegan:bool} | `http://www.contoso.com/pizzas/true` |
-| datetime | {birthdate:datetime} | `http://www.contoso.com/customers/1995-12-12` |
-| decimal | {maxprice:decimal} | `http://www.contoso.com/pizzas/15.00` |
-| double | {weight:double} | `http://www.contoso.com/pizzas/1.234` |
-| float | {weight:float} | `http://www.contoso.com/pizzas/1.564` |
-| guid | {pizza id:guid} | `http://www.contoso.com/pizzas/CD2C1638-1638-72D5-1638-DEADBEEF1638` |
-| long | {totals ales:long} | `http://www.contoso.com/pizzas/568192454` |
+| bool | `{vegan:bool}` | `http://www.contoso.com/pizzas/true` |
+| datetime | `{birthdate:datetime}` | `http://www.contoso.com/customers/1995-12-12` |
+| decimal | `{maxprice:decimal}` | `http://www.contoso.com/pizzas/15.00` |
+| double | `{weight:double}` | `http://www.contoso.com/pizzas/1.234` |
+| float | `{weight:float}` | `http://www.contoso.com/pizzas/1.564` |
+| guid | `{pizza id:guid}` | `http://www.contoso.com/pizzas/CD2C1638-1638-72D5-1638-DEADBEEF1638` |
+| long | `{totals ales:long}` | `http://www.contoso.com/pizzas/568192454` |
 
 ## Set a catch-all route parameter
 

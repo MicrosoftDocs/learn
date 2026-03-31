@@ -1,15 +1,21 @@
-This module detailed Azure Pipelines anatomy and structure, templates, YAML resources, and how to use multiple repositories in your pipeline. Also, it explored communication to deploy using Azure Pipelines to target servers.
+Throughout this module, you explored advanced Azure Pipelines concepts including pipeline anatomy, structure, templates, YAML resources, and multi-repository workflows. You also learned about communication patterns and deployment strategies for delivering applications using Azure Pipelines.
 
-You learned how to describe the benefits and usage of:
+## Key concepts covered
 
- -  Describe advanced Azure Pipelines anatomy and structure.
- -  Detail templates and YAML resources.
- -  Implement and use multiple repositories.
- -  Explore communication to deploy using Azure Pipelines.
+You now understand how to:
 
-## Learn more
+- Analyze and implement advanced Azure Pipelines structure and components
+- Create reusable pipeline templates and manage YAML resources effectively
+- Design and implement multi-repository workflows for complex projects
+- Establish reliable communication patterns for deployment scenarios
 
- -  [Azure Pipelines New User Guide - Key concepts - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/get-started/key-pipelines-concepts).
- -  [Azure Pipelines YAML pipeline editor guide - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/get-started/yaml-pipeline-editor).
- -  [Check out multiple repositories in your pipeline - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/repos/multi-repo-checkout).
- -  [Azure Pipelines Agents - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/agents/agents).
+## Next steps
+
+Continue your Azure Pipelines journey by exploring these advanced topics:
+
+- [Azure Pipelines Key Concepts - Azure Pipelines | Microsoft Learn](/azure/devops/pipelines/get-started/key-pipelines-concepts)
+- [YAML Pipeline Editor Guide - Azure Pipelines | Microsoft Learn](/azure/devops/pipelines/get-started/yaml-pipeline-editor)
+- [Multi-Repository Checkout - Azure Pipelines | Microsoft Learn](/azure/devops/pipelines/repos/multi-repo-checkout)
+- [Azure Pipelines Agents - Azure Pipelines | Microsoft Learn](/azure/devops/pipelines/agents/agents)
+
+Consider exploring pipeline security, advanced deployment patterns, and integration with Azure services to further enhance your CI/CD capabilities.

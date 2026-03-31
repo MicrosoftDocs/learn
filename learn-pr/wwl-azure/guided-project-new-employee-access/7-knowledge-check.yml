@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-new-employee-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the benefit of assigning RBAC roles to a group instead of individual users?"
+    choices:
+    - content: "Groups automatically inherit permissions from the subscription."
+      isCorrect: false
+      explanation: "Groups do not automatically inherit permissions. Roles must be explicitly assigned."
+    - content: "It simplifies access management when users join or leave the team."
+      isCorrect: true
+      explanation: "When you assign a role to a group, new members automatically get the role and removed members automatically lose it."
+    - content: "Groups can hold more permissions than individual users."
+      isCorrect: false
+      explanation: "The same roles and permissions are available for both users and groups."
+  - content: "What RBAC role provides view-only access to Azure resources without allowing changes?"
+    choices:
+    - content: "Contributor"
+      isCorrect: false
+      explanation: "The Contributor role allows creating and managing resources, not just viewing them."
+    - content: "Owner"
+      isCorrect: false
+      explanation: "The Owner role grants full access including the ability to assign roles to others."
+    - content: "Reader"
+      isCorrect: true
+      explanation: "The Reader role grants view-only access. Users can see resources but cannot create, modify, or delete them."
+  - content: "At what scope level was the RBAC role assigned in this guided project?"
+    choices:
+    - content: "Subscription"
+      isCorrect: false
+      explanation: "The role was scoped more narrowly than the entire subscription to follow least-privilege principles."
+    - content: "Resource group"
+      isCorrect: true
+      explanation: "The Reader role was assigned at the resource group level, limiting access to only the resources in that group."
+    - content: "Individual resource"
+      isCorrect: false
+      explanation: "While you can scope roles to individual resources, this project scoped the role at the resource group level."

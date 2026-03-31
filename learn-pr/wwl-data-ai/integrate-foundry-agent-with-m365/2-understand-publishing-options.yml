@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-foundry-agent-with-m365.understand-publishing-options
+title: Understand Foundry agent publishing options
+metadata:
+  title: Understand Foundry agent publishing options
+  description: Learn about the different channels and approaches for publishing Microsoft Foundry agents, including Microsoft 365, web applications, APIs, and third-party platforms.
+  ms.date: 02/17/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-publishing-options.md)]

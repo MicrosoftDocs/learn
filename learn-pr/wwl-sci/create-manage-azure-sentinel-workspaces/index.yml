@@ -3,8 +3,8 @@ uid: learn.wwl.create-manage-azure-sentinel-workspaces
 metadata:
   title: Create and manage Microsoft Sentinel workspaces
   description: "Create and manage Microsoft Sentinel workspaces"
-  ms.date: 03/14/2025
-  author: wwlpublish
+  ms.date: 12/02/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
@@ -13,17 +13,17 @@ summary: Learn about the architecture of Microsoft Sentinel workspaces to ensure
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe Microsoft Sentinel workspace architecture
-  - Install Microsoft Sentinel workspace
-  - Manage a Microsoft Sentinel workspace
+  - Onboard a Microsoft Sentinel workspace to Microsoft Defender
+  - Manage a Microsoft Sentinel workspace in Microsoft Defender
 prerequisites: |
-  Basic experience with Azure services
+  Basic experience with Microsoft Defender and Azure services
 iconUrl: /training/achievements/create-and-manage-azure-sentinel-workspaces.svg
 levels:
 - intermediate
 roles:
 - security-operations-analyst
 products:
-- azure
+- microsoft-defender 
 - microsoft-sentinel
 - azure-log-analytics
 subjects:

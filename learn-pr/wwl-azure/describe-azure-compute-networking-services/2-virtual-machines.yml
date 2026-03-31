@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-machines
 title: Describe Azure virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure virtual machines
   description: "Describe Azure virtual machines"
   ms.date: 09/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-virtual-machines.md)]
+  [!include[](includes/2-virtual-machines.md)]

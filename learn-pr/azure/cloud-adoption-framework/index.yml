@@ -33,7 +33,8 @@ units:
 - learn.azure.cloud-adoption-framework.plan
 - learn.azure.cloud-adoption-framework.ready
 - learn.azure.cloud-adoption-framework.migrate
-- learn.azure.cloud-adoption-framework.innovate
+- learn.azure.cloud-adoption-framework.modernize
+- learn.azure.cloud-adoption-framework.cloud-native
 - learn.azure.cloud-adoption-framework.govern
 - learn.azure.cloud-adoption-framework.manage
 - learn.azure.cloud-adoption-framework.secure

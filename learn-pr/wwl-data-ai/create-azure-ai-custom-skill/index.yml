@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-ai-custom-skill
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure AI custom skill
   description: "Learn how to define and implement a custom skill in Azure AI Search."
   ms.date: 10/23/2024
@@ -29,7 +27,7 @@ roles:
 - developer
 - solution-architect
 products:
-- azure-cognitive-search
+- foundry-tools
 units:
 - learn.wwl.create-azure-ai-custom-skill.introduction
 - learn.wwl.create-azure-ai-custom-skill.define-custom-skill-schema

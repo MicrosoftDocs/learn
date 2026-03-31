@@ -3,7 +3,7 @@ uid: learn.owasp-top-10-for-dotnet-developers
 metadata:
   title: "Guide to Secure .NET Development with OWASP Top 10"          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate security risks that come with insecure application development patterns and practices"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 05/31/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 06/18/2025             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: obrocki      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: dawidobrocki           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module
@@ -14,7 +14,7 @@ title: "Guide to Secure .NET Development with OWASP Top 10"
 summary: "Discover the most common software vulnerabilities according to OWASP and different techniques of writing more secure code. Prevent from security bugs creeping into your codebase following security best practices."
 
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Describe what OWASP Top 10 is.
     - Identify potential security vulnerabilities in your software.
     - Always validate user input in your applications.

@@ -39,7 +39,7 @@ Scaling in Azure Database for MySQL involves adjusting the computing resources a
     - **Compute scaling**: This refers to changing the compute tier of your MySQL flexible server. Azure offers several compute tiers, each designed to cater to different types of workloads:
         - *Burstable*: Suitable for environments with intermittent bursts of CPU usage that don't require continuous full CPU performance.
         - *General Purpose*: Designed for a wide range of applications, providing a balance of compute, memory, and I/O resources.
-        - *Business Critical*: Offers the highest performance for databases, with more powerful CPUs and faster I/O, suitable for high-transaction, low-latency workloads.
+        - *Memory-Optimized*: Offers the highest performance for databases, with more powerful CPUs and faster I/O, suitable for high-transaction, low-latency workloads.
     - **Memory and CPU allocation**: Depending on your selected tier, you can scale the number of vCores and the amount of RAM available to your database, which directly impacts the ability to handle larger or more complex queries and allows for a greater number of concurrent connections.
 2. **Horizontal scaling**
     - Azure Database for MySQL can scale horizontally by adding read replicas to distribute read traffic across multiple servers, improving read performance while keeping the primary server available for writes. Horizontal scaling allows your database to handle more query load, increasing application responsiveness.

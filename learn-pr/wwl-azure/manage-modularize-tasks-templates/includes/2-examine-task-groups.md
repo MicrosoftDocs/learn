@@ -1,12 +1,10 @@
-A task group allows you to encapsulate a sequence of tasks, already defined in a build or a release pipeline, into a single reusable task that can be added to a build or release pipeline, just like any other task.
+Task groups provide task sequence encapsulation, enabling the transformation of multiple pipeline tasks into single, reusable components for build and release pipeline integration.
 
-You can choose to extract the parameters from the encapsulated tasks as configuration variables and abstract the rest of the task information.
+Parameter extraction from encapsulated tasks enables configuration variable abstraction, separating task logic from environment-specific values while maintaining task functionality.
 
-Task groups are a way to standardize and centrally manage deployment steps for all your applications.
+Task groups establish standardized deployment workflows and centralized management capabilities across application portfolios, ensuring consistent deployment patterns and operational procedures.
 
-When you include a task group in your definitions and then make a change centrally to the task group, the change is automatically reflected in all the definitions that use the task group.
-
-There's no need to change each one individually.
+Centralized task group modifications propagate automatically across all consuming pipeline definitions, eliminating individual pipeline maintenance overhead and ensuring consistent updates across the organization.
 
 For more information, see [Task groups for builds and releases](/azure/devops/pipelines/library/task-groups).
 

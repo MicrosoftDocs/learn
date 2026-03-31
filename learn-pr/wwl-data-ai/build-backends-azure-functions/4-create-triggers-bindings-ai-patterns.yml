@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-backends-azure-functions.create-triggers-bindings-ai-patterns
+title: Create triggers and bindings for AI integration patterns
+metadata:
+  title: Create Triggers and Bindings for AI Integration Patterns
+  description: Create triggers and bindings for AI integration patterns
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 16
+content: |
+  [!include[](includes/4-create-triggers-bindings-ai-patterns.md)]

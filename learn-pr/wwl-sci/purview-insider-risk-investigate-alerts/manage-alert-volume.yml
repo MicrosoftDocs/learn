@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.manage-alert-volume
+title: Manage alert volume in insider risk management
+metadata:
+  title: Manage alert volume in insider risk management
+  description: "Manage alert volume in insider risk management."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/manage-alert-volume.md)]

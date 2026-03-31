@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.explore-internet-search-beyond.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 01/14/2025
   author: v-downesmary
   ms.author: anruss
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 7
 quiz:
   title: Knowledge check

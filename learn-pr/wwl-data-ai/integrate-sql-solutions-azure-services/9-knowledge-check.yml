@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-solutions-azure-services.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: Knowledge check for integrating SQL solutions with Azure services using Data API Builder
+  ms.date: 02/05/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  module_assessment: false
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You're creating a Data API Builder configuration and need to store the database connection string securely without hardcoding it. Which approach should you use?"
+    choices:
+    - content: "Store the connection string directly in the dab-config.json file for easy access"
+      isCorrect: false
+      explanation: "Incorrect. Storing connection strings directly in configuration files exposes credentials in source control and is a security risk."
+    - content: "Use the @env() syntax to reference an environment variable containing the connection string"
+      isCorrect: true
+      explanation: "Correct. The @env() syntax allows you to reference environment variables, keeping sensitive credentials out of configuration files and source control."
+    - content: "Create a separate credentials.json file and import it into the configuration"
+      isCorrect: false
+      explanation: "Incorrect. Data API Builder doesn't support importing separate credential files. Environment variable references are the recommended approach."
+    - content: "Encrypt the connection string using Base64 encoding before adding it to the configuration"
+      isCorrect: false
+      explanation: "Incorrect. Base64 encoding isn't encryption and provides no security. Environment variable references with proper secret management are the correct approach."
+  - content: "A development team wants to ensure their Data API Builder entity only allows clients to retrieve data, not modify it. Which permission configuration achieves this?"
+    choices:
+    - content: "Configure permissions with only the 'read' action for the appropriate roles"
+      isCorrect: true
+      explanation: "Correct. Setting permissions to only include the 'read' action restricts the entity to read-only operations, preventing create, update, and delete actions."
+    - content: "Set the source type to 'view' which automatically prevents all write operations"
+      isCorrect: false
+      explanation: "Incorrect. While views are often read-only, the source type alone doesn't control permissions. You must explicitly configure permissions to restrict actions."
+    - content: "Disable REST and only enable GraphQL with operation set to 'mutation'"
+      isCorrect: false
+      explanation: "Incorrect. Setting operation to 'mutation' indicates write operations, which is the opposite of read-only. Use 'query' for read operations and configure permissions appropriately."
+    - content: "Use the 'anonymous' role which only supports read operations by default"
+      isCorrect: false
+      explanation: "Incorrect. The 'anonymous' role doesn't have default permissions. You must explicitly define which actions each role can perform."
+  - content: "Your organization is deploying Data API Builder to production and needs to use managed identity for database authentication. Which Azure hosting option supports this requirement while also providing automatic scaling based on request volume?"
+    choices:
+    - content: "Azure Virtual Machines with autoscale sets"
+      isCorrect: false
+      explanation: "Incorrect. While VMs support managed identity, they require manual configuration and don't provide the same level of managed scaling as container-based services."
+    - content: "Azure Container Apps with system-assigned managed identity"
+      isCorrect: true
+      explanation: "Correct. Azure Container Apps supports managed identity for secure database authentication and provides automatic scaling from zero based on HTTP request volume."
+    - content: "Azure Functions consumption plan"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Functions supports managed identity and scaling, Data API Builder runs as a container or standalone process, not as a Functions app."
+    - content: "Azure Static Web Apps database connections"
+      isCorrect: false
+      explanation: "Incorrect. While Static Web Apps has built-in DAB integration, it has limitations compared to standalone deployments and can't support all managed identity scenarios."
+  - content: "You need to monitor your Data API Builder deployment and create alerts when the 95th percentile response time exceeds 2 seconds. Which Azure service and query approach should you use?"
+    choices:
+    - content: "Azure Monitor metrics with a threshold alert on average response time"
+      isCorrect: false
+      explanation: "Incorrect. Average response time doesn't capture the 95th percentile. You need log-based queries in Application Insights to calculate percentile metrics."
+    - content: "Application Insights with a Kusto query using the percentile() function on request duration"
+      isCorrect: true
+      explanation: "Correct. Application Insights captures request telemetry, and Kusto queries with percentile(duration, 95) let you create alerts based on the 95th percentile latency."
+    - content: "Log Analytics with container CPU metrics"
+      isCorrect: false
+      explanation: "Incorrect. CPU metrics don't measure response time. You need Application Insights request telemetry to track API response durations."
+    - content: "Azure Monitor health probes configured with a 2-second timeout"
+      isCorrect: false
+      explanation: "Incorrect. Health probes check availability, not response time distribution. You need Application Insights analytics for percentile-based monitoring."

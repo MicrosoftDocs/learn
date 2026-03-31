@@ -2,8 +2,9 @@ Let's wrap the vector embedding logic and API calls in a function. In this exerc
 
 > [!Note] 
 >
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free), and you need to be approved for Azure OpenAI access. If you need Azure OpenAI access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access) page.
+> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn), and you need to be approved for Azure OpenAI access. If you need Azure OpenAI access, apply at the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access) page.
 
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2269704&clcid=0x409)
+

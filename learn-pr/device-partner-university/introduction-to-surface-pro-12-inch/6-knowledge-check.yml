@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-pro-12-inch.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Surface Pro 12-inch" module.
+  ms.date: 11/06/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which hardware feature of the Microsoft Surface Pro 12-inch enables on-device AI experiences such as document summarization and multilingual translation?"
+    choices:
+        - content: "12 inch PixelSense Display"
+          isCorrect: false
+          explanation: "Incorrect. The PixelSense Display provides touch input and high-quality visuals, but does not enable AI experiences."
+        - content: "Qualcomm Snapdragon X Plus (8-core) processor with NPU"
+          isCorrect: true
+          explanation: "Correct. The Snapdragon X Plus processor, paired with the Neural Processing Unit (NPU), enables on-device AI experiences by supporting more than 40 local AI models."
+        - content: "Surface Slim Pen storage slot"
+          isCorrect: false
+          explanation: "Incorrect. The Slim Pen storage slot is for storing the pen, not for AI processing."
+        - content: "Surface Thunderbolt 4 dock"
+          isCorrect: false
+          explanation: "Incorrect. The Thunderbolt 4 dock is for connecting accessories, not for running AI models."
+  - content: "What is the main function of the Click to Do feature on the Surface Pro 12-inch?"
+    choices:
+        - content: "It automatically summarizes all emails"
+          isCorrect: false
+          explanation: "Incorrect. While Click to Do can summarize selected text, it does not automatically summarize all emails."
+        - content: "It identifies text and images on your screen and provides actionable options"
+          isCorrect: true
+          explanation: "Correct. Click to Do analyzes text and images on the screen and offers contextual actions, all processed locally on the device."
+        - content: "It manages device firmware updates"
+          isCorrect: false
+          explanation: "Incorrect. Firmware updates are managed through other tools, not Click to Do."
+        - content: "It enables biometric sign-in using facial recognition"
+          isCorrect: false
+          explanation: "Incorrect. Biometric sign-in is handled by Windows Hello, not Click to Do."
+  - content: "Which security feature allows IT administrators to remotely disable hardware components on the Surface Pro 12-inch?"
+    choices:
+        - content: "Microsoft Pluton"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Pluton is a security processor for hardware-based root of trust, not for disabling hardware."
+        - content: "Device Firmware Configuration Interface (DFCI)"
+          isCorrect: true
+          explanation: "Correct. DFCI enables IT admins to remotely disable hardware components, such as cameras or USB ports, for security purposes."
+        - content: "Windows Autopilot"
+          isCorrect: false
+          explanation: "Incorrect. Windows Autopilot is for device deployment and lifecycle management."
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker is for drive encryption, not hardware management."
+  - content: "What is the recommended first step when setting up the Surface Pro 12-inch for the first time?"
+    choices:
+        - content: "Connect the Surface Slim Pen"
+          isCorrect: false
+          explanation: "Incorrect. Connecting the Slim Pen is optional and not the first step."
+        - content: "Plug in the device and run through the initial setup"
+          isCorrect: true
+          explanation: "Correct. It’s recommended to plug in the device and complete the initial setup process when first booting up."
+        - content: "Install the Surface app"
+          isCorrect: false
+          explanation: "Incorrect. Installing the Surface app is for accessory management, not initial setup."
+        - content: "Update the keyboard firmware"
+          isCorrect: false
+          explanation: "Incorrect. Updating keyboard firmware is important but not the first setup step."
+  - content: "Which user group is Surface Pro 12-inch especially recommended for, according to the module?"
+    choices:
+        - content: "Graphic designers only"
+          isCorrect: false
+          explanation: "Incorrect. While graphic designers may benefit, the module specifically highlights other groups."
+        - content: "Frontline workers and higher education users"
+          isCorrect: true
+          explanation: "Correct. The module emphasizes that Surface Pro 12-inch is ideal for frontline workers and those in higher education."
+        - content: "Gamers"
+          isCorrect: false
+          explanation: "Incorrect. Gamers are not the primary audience mentioned."
+        - content: "Video editors"
+          isCorrect: false
+          explanation: "Incorrect. Video editors are not specifically highlighted as the main user group."

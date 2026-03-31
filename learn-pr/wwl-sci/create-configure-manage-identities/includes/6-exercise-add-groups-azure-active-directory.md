@@ -1,10 +1,10 @@
-**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it.  You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/free).
+**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription at [Try Microsoft Azure for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Create a Microsoft 365 group in Microsoft Entra ID
 
-1. Browse to the Microsoft Entra admin center - Identity page in the [Microsoft Entra admin center](https://entra.microsoft.com).
-2. In the left navigation, under select **Groups**.
-3. In the Groups blade, on the menu, select **New group**.
+1. Browse to the [Microsoft Entra admin center](https://entra.microsoft.com).
+2. In the left navigation, under **Identity**, select **Groups**.
+3. In the Groups page, on the menu, select **New group**.
 4. Create a group using the following information:
     
    | **Setting**     | **Value**                                                |

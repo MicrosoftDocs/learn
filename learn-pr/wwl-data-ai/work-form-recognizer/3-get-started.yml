@@ -2,13 +2,11 @@
 uid: learn.wwl.work-with-form-recognizer.get-started
 title: Get started with Azure Document Intelligence
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with Azure Document Intelligence
   description: Get started with Azure Document Intelligence
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/18/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

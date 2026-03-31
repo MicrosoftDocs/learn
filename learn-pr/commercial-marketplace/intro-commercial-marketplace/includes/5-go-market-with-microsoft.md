@@ -2,7 +2,7 @@ By participating in the commercial marketplace, you can unlock various benefits 
 
 ## Marketplace Rewards
 
-Once you publish your offer in the commercial marketplace, you gain access to the Microsoft Marketplace Rewards' sales, technical, and marketing benefits. The range of benefits you receive as a publisher is differentiated by your offer's listing option.
+Once you publish your offer in the commercial marketplace, you gain access to the Microsoft Marketplace Rewards' sales, technical, and marketing benefits. The listing option you select for your offer, determines the range of benefits you receive as a publisher.
 
 When you opt for a **Contact me** listing for your solution in the Microsoft commercial marketplace, the Marketplace Rewards team initiates contact to offer advice on how to enhance the visibility of your solution.
 
@@ -13,8 +13,8 @@ When you engage customers by offering a **Free trial** listing, enabling deploym
 As your commercial marketplace offers hit certain revenue milestones, you're eligible for higher tiers of Marketplace Rewards benefits. Your revenue milestones can be met when customers buy your solutions through Microsoft AppSource, Azure Marketplace, Microsoft's extensive network of resellers, and the various in-product experiences. It's essential to have an active **Transact** offer in the commercial marketplace for you to attain these revenue levels.
 
 The Marketplace Rewards program is designed to support your business development with the commercial marketplace. Microsoft initiates activities aimed at boosting awareness to help secure your first customers, and progressing to more advanced sales and technical benefits as you sell more. All partners who maintain active offers in the commercial marketplace can access these benefits.
-To learn more about the benefits available through this commercial marketplace program, see the resources section at the end of this learn module.
+To learn more about the benefits available through this commercial marketplace program, see the resources section at the end of this module.
 
 ## Summary
 
-The information you've gathered about commercial marketplace programs now provides a complete set of insights required for you to make a final recommendation to the executive team. Now you're ready to consolidate and present your accumulated knowledge in the upcoming presentation.
+The information you gathered here about commercial marketplace programs now provides a complete set of insights required for you to make a final recommendation to the executive team. Now you're ready to consolidate and present your accumulated knowledge in the upcoming presentation.

@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.case-study-apps-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Test your knowledge on the key highlights of the interactive case study."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb 
+  ms.topic: unit 
+  ai_generated_module_assessment: false 
+durationInMinutes: 3 
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  questions:
+    - content: "Which solution best mitigates the risk of long-lived credentials stored in Kubernetes secrets?"
+      choices:
+        - content: "Use workload identities to issue short-lived tokens tied to pod identities."
+          isCorrect: true
+          explanation: Workload identities eliminate static credentials and reduce runtime exposure by using dynamic, short-lived tokens.
+        - content: "Encrypt Kubernetes secrets at rest using cloud key management services."
+          isCorrect: false
+          explanation: Encryption at rest improves storage security but doesn't eliminate static credentials or runtime exposure.
+        - content: "Store secrets in configuration files with restricted access."
+          isCorrect: false
+          explanation: Configuration files can be accessed by anyone with file system permissions, increasing the risk of exposure.
+
+    - content: "What is a key benefit of using Azure Arc in a multicloud Kubernetes environment?"
+      choices:
+        - content: "Enables consistent policy enforcement across AKS and EKS clusters."
+          isCorrect: true
+          explanation: Azure Arc extends governance and policy controls across cloud boundaries, supporting unified security management.
+        - content: "Automatically encrypts all data in transit between clusters."
+          isCorrect: false
+          explanation: Azure Arc doesn't handle encryption of data in transit; it focuses on governance and policy extension.
+        - content: "Replaces the need for cloud-native monitoring tools."
+          isCorrect: false
+          explanation: Azure Arc complements but doesn't replace native monitoring tools; it integrates governance across platforms.
+
+    - content: "Which threat vector is most associated with insecure CI/CD pipelines?"
+      choices:
+        - content: "Injection of malicious code during automated deployments."
+          isCorrect: true
+          explanation: Insecure CI/CD pipelines can be exploited to inject malicious code, leading to widespread compromise.
+        - content: "Unauthorized access to encrypted database columns."
+          isCorrect: false
+          explanation: This is more related to database misconfigurations than CI/CD pipeline vulnerabilities.
+        - content: "Excessive use of role-based access control (RBAC)."
+          isCorrect: false
+          explanation: Excessive RBAC permissions are a separate issue; CI/CD threats focus on deployment and automation risks.
+
+    - content: "What is the primary advantage of using Always Encrypted in Azure SQL?"
+      choices:
+        - content: "Protects data in use by keeping encryption keys outside the database."
+          isCorrect: true
+          explanation: Always Encrypted ensures that sensitive data remains encrypted during use and that keys are securely managed in Azure Key Vault.
+        - content: "Filters query results based on user roles."
+          isCorrect: false
+          explanation: This describes Row-Level Security, not Always Encrypted.
+        - content: "Redacts sensitive data in query results."
+          isCorrect: false
+          explanation: This isn't a feature of Always Encrypted; it focuses on encryption rather than data redaction.
+

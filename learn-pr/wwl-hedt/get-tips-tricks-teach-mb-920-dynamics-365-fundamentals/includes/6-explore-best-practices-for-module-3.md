@@ -27,5 +27,5 @@ Module 3 Demos
 
 Module 3 Labs 
 
-- Lab 3.1: [Create a new product](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M03_Lab1_Create_a_new_product.md)
-- Lab 3.2: [Create a production order](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M03_Lab3_Create_a_production_order.md)
+- Lab 3.1: Create a new product
+- Lab 3.2: Create a production order

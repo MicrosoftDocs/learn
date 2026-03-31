@@ -2,8 +2,6 @@
 uid: learn.wwl.examine-sap-netweaver-anydb.examine-sample-functional-workflow
 title: Examine a sample functional workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine a sample functional workflow
   description: "Examine a sample functional workflow for SAP NetWeaver with AnyDB on Azure Virtual Machines."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-examine-sample-functional-workflow.md)]
+  [!include[](includes/4-examine-sample-functional-workflow.md)]

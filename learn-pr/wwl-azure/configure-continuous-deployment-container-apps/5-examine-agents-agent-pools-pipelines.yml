@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-continuous-deployment-container-apps.examine-agents-agent-pools-pipelines
 title: Examine agents and agent pools for pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine agents and agent pools for pipelines
   description: "Examine agents and agent pools for pipelines"
   ms.date: 02/29/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-examine-agents-agent-pools-pipelines.md)]
+  [!include[](includes/5-examine-agents-agent-pools-pipelines.md)]

@@ -4,6 +4,7 @@ title: Manage Windows 10 using PowerShell
 metadata:
   title: Manage Windows 10 using PowerShell
   description: "Manage Windows 10 using PowerShell"
+  no-loc: [Get-ComputerInfo, Get-Service, Get-EventLog, Get-Process, Stop-Service, Stop-Process, Stop-Computer, Clear-EventLog, Clear-RecycleBin, Restart-Computer, Restart-Service]
   ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj

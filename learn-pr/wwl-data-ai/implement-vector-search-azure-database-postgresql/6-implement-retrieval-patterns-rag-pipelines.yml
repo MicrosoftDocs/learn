@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.implement-retrieval-patterns-rag-pipelines
+title: Implement retrieval patterns for RAG pipelines
+metadata:
+  title: Implement Retrieval Patterns for RAG Pipelines
+  description: Implement retrieval patterns for RAG pipelines
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-implement-retrieval-patterns-rag-pipelines.md)]

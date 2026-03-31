@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-security-copilot.investigate-data-loss-prevention-alerts-security-copilot
+title: Investigate DLP alerts with Security Copilot
+metadata:
+  title: Investigate DLP Alerts with Security Copilot
+  description: "Investigate DLP alerts with Security Copilot."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/investigate-data-loss-prevention-alerts-security-copilot.md)]

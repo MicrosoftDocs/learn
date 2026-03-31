@@ -3,15 +3,12 @@ uid: learn.intro-to-docker-containers.6-summary
 title: Summary
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 10/09/2024
-  author: rayoef
-  ms.author: rayoflores
+  ms.date: 03/20/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-

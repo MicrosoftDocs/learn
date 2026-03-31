@@ -34,7 +34,7 @@ An analytic query has three phases that are executed in this order:
 
 **Filtering** (sometimes known as slicing) narrows down on a subset of the model data. Filter values aren’t visible in the query result. Most analytic queries apply filters because it’s common to filter by a time period, and usually other attributes. Filtering happens in different ways. In a Power BI report, you can set filters at report, page, or visual level. Report layouts often include slicer visuals to filter visuals on the report page. When the model enforces row-level security (RLS), it applies filters to model tables to restrict access to specific data. Measures, which summarize model data, can also apply filters.
 
-**Grouping** (sometimes known as dicing) divides query result into groups. Each group is also a filter, but unlike the filtering phase, filter values are visible in the query result. For example, grouping by customer filters each group by customer.
+**Grouping** (sometimes known as dicing) divides query result into groups. Each group is also a filter, but unlike the filtering phase, group values are visible in the query result. For example, grouping by customer filters each group by customer.
 
 **Summarization** produces a single value result. Typically, a report visual summarizes a numeric field by using an aggregate function. Aggregate functions include sum, count, minimum, maximum, and others. You can achieve simple summarization by aggregating a column, or you can achieve complex summarization by creating a measure using a DAX formula.
 

@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-prebuilt-form-recognizer-models.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 09/04/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -40,7 +39,7 @@ quiz:
     - content: "Confidence indicators."
       isCorrect: false
       explanation: "Incorrect. Confidence indicators show how reliable an extracted value is."
-  - content: "You submit a Word document to the Azure AI Document Intelligence general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error?"
+  - content: "You submit a Word document to the Azure Document Intelligence general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error?"
     choices:
     - content: "Change from the free tier to the standard tier."
       isCorrect: false
@@ -50,5 +49,5 @@ quiz:
       explanation: "Incorrect. It's possible but not necessary to submit multipage documents one page at a time. This change would not resolve the error."
     - content: "Convert the document to PDF format."
       isCorrect: true
-      explanation: "Correct. Word documents are not supported by Azure AI Document Intelligence but PDF documents are supported. Azure AI Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents."
+      explanation: "Correct. Word documents are not supported by Azure Document Intelligence but PDF documents are supported. Azure Document Intelligence is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents."
 

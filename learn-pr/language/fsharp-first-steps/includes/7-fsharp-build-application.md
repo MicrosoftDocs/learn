@@ -1,4 +1,4 @@
-At this point, you've used the REPL and maybe even created an *fsx* script file. Now you're at the point where your application has grown so you need to include more files, and the ability to package and distribute your application. To do so, you need to create a project. The .NET SDK provides various project templates to help you get started building all types of applications.
+At this point, you used the Read-Evaluate-Print-Loop (REPL) and maybe even created a *fsx* script file. Now you're at the point where your application is growing and you need to include more files. You also want the ability to package and distribute your application. To do so, you need to create a project. The .NET SDK provides various project templates to help you get started building all types of applications.
 
 ## What are .NET Templates?
 
@@ -10,11 +10,11 @@ When you install the .NET SDK, you receive over a dozen built-in templates for c
 - ASP.NET Core web apps
 - Configuration files
 
-F# has support for various templates, everything from testing and web to class libraries. For a full list of supported projects, run `dotnet new -l` at the console.
+F# has support for various templates, everything from testing and web projects to class libraries. For a full list of supported projects, run `dotnet new -l` at the console.
 
 ## Create an application using templates
 
-To create a new application, use the `dotnet new` .NET CLI command. For example, if you want to create an F# console application, you'd use the following command.
+To create a new application, use the `dotnet new` .NET CLI command. For example, if you want to create an F# console application, you use the following command.
 
 ```fsharp
 dotnet new console --language F# -o MyFSharpApp
@@ -31,9 +31,12 @@ After a few seconds, a directory called *MyFSharpApp* appears with the code for 
 There are two files in the *MyFSharpApp* directory:
 
 - **Program.fs** - The entrypoint for your application.
-- **MyFSharpApp.fsproj** - MSBuild project file that contains build information and instructions. MSBuild is a platform for building applications that provides an XML schema for a project file that controls how the build platform processes and builds software.
+- **MyFSharpApp.fsproj** - The MSBuild project file that contains build information and instructions. MSBuild is a platform for building applications that provides an XML schema for a project file that controls how the build platform processes and builds software.
 
-The *Program.fs* file contains the following code:
+> [!NOTE]
+> If your console template was created with a more recent version of .NET, it might generate code with an *implicit* entry point that calls the `printfn` function by default.
+
+In the following example, the *Program.fs* file contains code with an *explicit* entry point.
 
 ```fsharp
 // Learn more about F# at https://learn.microsoft.com/dotnet/fsharp
@@ -59,7 +62,7 @@ The `main` function is the entry point of the application. It uses the `from` fu
 
 ## Build an application
 
-Now that you've created a console application, it's time to build it using the `dotnet build` command. The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension. Depending on the project type and settings, other files might be included, such as:
+Now that your console application is created, it's time to build it using the `dotnet build` command. The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension. Depending on the project type and settings, other files might be included, such as:
 
 - An executable that you can use to run the application, if the project type is an executable targeting .NET Core 3.0 or later.
 - Symbol files used for debugging with a *.pdb* extension.

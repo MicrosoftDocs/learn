@@ -5,11 +5,11 @@ To use the Language Understanding service to develop a NLP solution, you'll need
 
 ## Build your model
 
-For features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Azure AI Language service what to look for.
+For features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Azure Language service what to look for.
 
-First, you'll need to create your Azure AI Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true). Then:
+First, you'll need to create your Azure Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true). Then:
 
-1. Search for **Azure AI services**.
+1. Search for **Foundry Tools**.
 1. Find and select **Language Service**.
 1. Select **Create** under the **Language Service**.
 1. Fill out the necessary details, choosing the region closest to you geographically (for best performance) and giving it a unique name.
@@ -34,7 +34,7 @@ For example, if you want to deploy a model for a conversational language underst
 
 #### Authentication
 
-For each call to your Azure AI Language resource, you authenticate the request by providing the following header.
+For each call to your Azure Language resource, you authenticate the request by providing the following header.
 
 |Key|Value|
 |--|--|
@@ -50,7 +50,7 @@ Submit a **POST** request to the following endpoint.
 
 |Placeholder  |Value  | Example |
 |---------|---------|---------|
-|`{ENDPOINT}`     | The endpoint of your Azure AI Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
+|`{ENDPOINT}`     | The endpoint of your Azure Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
 |`{PROJECT-NAME}`     | The name for your project. This value is case-sensitive   | `myProject` |
 |`{DEPLOYMENT-NAME}`     | The name for your deployment. This value is case-sensitive   | `staging` |
 |`{API-VERSION}`     | The version of the API you're calling | `2022-05-01` |
@@ -177,7 +177,7 @@ result = client.analyze_conversation(
 To query your model using REST, create a **POST** request to the appropriate URL with the appropriate body specified. For built in features such as language detection or sentiment analysis, you'll query the `analyze-text` endpoint.
 
 > [!TIP]
-> Remember each request needs to be authenticated with your Azure AI Language resource key in the `Ocp-Apim-Subscription-Key` header
+> Remember each request needs to be authenticated with your Azure Language resource key in the `Ocp-Apim-Subscription-Key` header
 
 ```rest
 {ENDPOINT}/language/:analyze-text?api-version={API-VERSION}
@@ -300,4 +300,4 @@ For other models like conversational language understanding, a sample response t
 
 The SDKs for both Python and C# return JSON that is very similar to the REST response.
 
-For full documentation on features, including examples and how-to guides, see the [Azure AI Language documentation](/azure/ai-services/language-service/?azure-portal=true) documentation pages.
+For full documentation on features, including examples and how-to guides, see the [Azure Language documentation](/azure/ai-services/language-service/?azure-portal=true) documentation pages.

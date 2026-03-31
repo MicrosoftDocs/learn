@@ -3,9 +3,9 @@ uid: learn.wwl.configure-manage-hyper-v-virtual-machines
 metadata:
   title: Configure and manage Hyper-V virtual machines
   description: "Configure and manage Hyper-V virtual machines"
-  ms.date: 03/19/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
   ms.subservice: hyper-v

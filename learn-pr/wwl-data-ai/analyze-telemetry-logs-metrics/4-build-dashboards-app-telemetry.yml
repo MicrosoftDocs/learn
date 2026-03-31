@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-telemetry-logs-metrics.build-dashboards-app-telemetry
+title: Build dashboards for app telemetry
+metadata:
+  title: Build Dashboards for App Telemetry
+  description: Build dashboards for app telemetry
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-build-dashboards-app-telemetry.md)]

@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.query-data-warehouse-microsoft-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/27/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 11/7/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 8
 quiz:
   questions:
@@ -35,13 +36,13 @@ quiz:
       explanation: Incorrect. Indexing does not clean data. It is a technique used to speed up data retrieval times.
   - content: What is the purpose of a fact table in a data warehouse?
     choices:
-    - content: To store raw data.
-      isCorrect: false
-      explanation: Incorrect. Raw data is typically cleaned and transformed before being stored in a fact table.
-    - content: To store the results of calculations.
+    - content: To store measurable, quantitative data about a business.
       isCorrect: true
-      explanation: Correct. A fact table typically contains the results of calculations, along with foreign keys to dimension tables.
-    - content: To store metadata about the data warehouse.
+      explanation: Correct. Fact tables store measurable, quantitative data, such as sales amounts or order quantities.
+    - content: To store descriptive attributes related to data.
+      isCorrect: false
+      explanation: Incorrect. Descriptive attributes are stored in dimension tables, not fact tables.
+    - content: To store metadata about the data warehouse schema.
       isCorrect: false
       explanation: Incorrect. Metadata about the data warehouse is typically stored separately, not in a fact table.
 

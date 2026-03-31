@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Reflect on what you've learned about speech-capable generative AI models."
+  ms.date: 03/11/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

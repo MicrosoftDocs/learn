@@ -2,9 +2,11 @@
 uid: learn.wwl.design-data-integration.design-strategy-for-hot-warm-cold-data-path
 title: Design strategies for hot, warm, and cold data paths
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design strategies for hot, warm, and cold data paths
   description: "Design strategies for hot, warm, and cold data paths"
-  ms.date: 12/11/2024
+  ms.date: 06/10/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

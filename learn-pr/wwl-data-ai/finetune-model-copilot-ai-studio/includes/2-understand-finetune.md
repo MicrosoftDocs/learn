@@ -1,6 +1,19 @@
-Before you start fine-tuning a model, you need to have a clear understanding of what fine-tuning is and when you should use it.
+Fine-tuning a language model gives you greater control over how your model behaves, helping you achieve consistent responses in a specific style, format, and tone. Here you learn when to use fine-tuning and you explore five key fine-tuning techniques:
 
-When you want to develop a chat application with Azure AI Foundry, you can use prompt flow to create a chat application that is integrated with a language model to generate responses. To improve the quality of the responses the model generates, you can try various strategies. The easiest strategy is to apply **prompt engineering**. You can change the way you format your question, but you can also update the **system message** that is sent along with the prompt to the language model.
+Starting with the most basic approach:
+- Supervised fine-tuning for training with labeled examples
+
+And four more advanced techniques:
+- Function calling fine-tuning for structured output and API integration
+- Vision fine-tuning for image understanding tasks
+- Reinforcement fine-tuning for reward-based learning
+- Direct preference optimization for alignment using preference pairs
+
+Let's start by comparing fine-tuning to other optimization techniques for models and agents.
+
+## Understand when to use fine-tuning
+
+When you want to develop a chat application with Microsoft Foundry, you can use prompt flow to create a chat application that is integrated with a language model to generate responses. To improve the quality of the responses the model generates, you can try various strategies. The easiest strategy is to apply **prompt engineering**. You can change the way you format your question, but you can also update the **system message** that is sent along with the prompt to the language model.
 
 Prompt engineering is a quick and easy way to improve *how the model acts*, and *what the model needs to know*. When you want to improve the quality of the model even further, there are two common techniques that are used:
 
@@ -16,3 +29,67 @@ How the model needs to act mostly relates to the style, format, and tone of the 
 Within prompt engineering, a technique used to *"force"* the model to generate output in a specific format, is to provide the model with various examples of what the desired output might look like, also known as **one-shot** (one example) or **few-shot** (few examples). Still, it can happen that your model doesn't always generate the output in the style and format you specified.
 
 To maximize the **consistency of the model's behavior**, you can **fine-tune a base model** with your own training data.
+
+## Explore fine-tuning techniques
+
+Microsoft Foundry supports multiple fine-tuning techniques, each designed for different use cases and model capabilities:
+
+### Apply supervised fine-tuning
+
+**Supervised fine-tuning** is the most basic and common approach where you train a base model on labeled example data. You provide the model with example conversations that demonstrate the desired behavior, including system messages, user prompts, and assistant responses. This technique is ideal for teaching the model specific formats, styles, tones, or domain-specific behaviors.
+
+Supervised fine-tuning is supported for models like GPT-4, GPT-4o, GPT-3.5-Turbo, and many other foundation models in the model catalog. This is the recommended starting point for most fine-tuning scenarios.
+
+### Implement reinforcement fine-tuning
+
+**Reinforcement fine-tuning (RFT)** is an advanced technique that improves reasoning models by training them through a reward-based process, rather than relying only on labeled data. Instead of providing example responses, you provide prompts and a grader that scores the quality of the model's outputs. The model learns to generate better responses by maximizing the reward signal.
+
+RFT is especially useful for:
+
+- Complex reasoning and problem-solving tasks
+- Scenarios where labeled examples are limited
+- Cases where you want the model to develop sophisticated reasoning strategies
+
+RFT is supported for advanced reasoning models like o4-mini and gpt-5. When using RFT, you need to define a grader (such as text comparison, model-based, or custom code graders) that evaluates the model's outputs during training.
+
+### Align with direct preference optimization
+
+**Direct preference optimization (DPO)** is an advanced alignment technique that adjusts model weights based on human preferences. Instead of providing single example responses, you provide pairs of responses - one preferred and one nonpreferred - for each prompt. The model learns to generate outputs more similar to the preferred examples.
+
+DPO is especially useful when:
+
+- There's no clear-cut correct answer
+- Subjective elements like tone, style, or content preferences are important  
+- You have preference data from user logs, A/B tests, or manual annotations
+- You want a computationally lighter alternative to reinforcement learning from human feedback (RLHF)
+
+DPO is supported for models like gpt-4o, gpt-4.1, and gpt-4.1-mini. You can use DPO with base models or with models already fine-tuned using supervised fine-tuning.
+
+### Fine-tune for function calling
+
+**Function calling fine-tuning** is an advanced technique that trains models to reliably call external functions or APIs with structured arguments. You provide training examples that demonstrate how the model should respond to user requests by calling specific functions with the correct parameters. This technique teaches the model when and how to use tools, improving its ability to generate structured output and integrate with external systems.
+
+Function calling fine-tuning is especially useful for:
+
+- Building agents that need to interact with APIs or databases
+- Ensuring consistent JSON schema adherence
+- Teaching domain-specific function usage patterns
+- Reducing errors in parameter extraction and function selection
+
+Function calling fine-tuning is supported for models like GPT-4o and GPT-4o-mini. You can combine this with supervised fine-tuning to teach both conversational behavior and function calling capabilities.
+
+### Fine-tune for vision tasks
+
+**Vision fine-tuning** is an advanced technique that enhances models' ability to understand and reason about images. You provide training examples that pair images with text prompts and expected responses, teaching the model to recognize specific visual patterns, objects, or concepts relevant to your domain. This technique is ideal for specialized computer vision applications where general-purpose vision models need domain-specific understanding.
+
+Vision fine-tuning is especially useful for:
+
+- Medical imaging analysis with specialized terminology
+- Industrial quality control and defect detection
+- Document understanding with custom layouts or formats
+- Domain-specific image classification and captioning
+
+Vision fine-tuning is supported for multimodal models like GPT-4o. You can fine-tune both the vision and language understanding capabilities together to create models tailored to your specific visual tasks.
+
+Now that you understand the options, let's explore what to consider when preparing your data for fine-tuning workloads.
+

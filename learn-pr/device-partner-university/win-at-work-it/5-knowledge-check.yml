@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "This content is part of the Windows at work: Elevate IT teams with Windows 11 Pro module."
+  ms.date: 10/20/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is an anomalous sign-in alert?"
+    choices:
+        - content: "An alert indicating a user has signed in from a familiar device."
+          isCorrect: false
+          explanation: "Incorrect. Familiar device logins are considered normal activity."
+        - content: "An alert triggered when a user’s sign-in activity deviates from normal behavior, such as impossible travel or unusual locations."
+          isCorrect: true
+          explanation: "Correct. Anomalous sign-in alerts flag unusual or suspicious sign-in activity."
+        - content: "A system notification about software updates."
+          isCorrect: false
+          explanation: "Incorrect. This is unrelated to sign-in activity."
+        - content: "A reminder to change passwords regularly."
+          isCorrect: false
+          explanation: "Incorrect. Password reminders aren't considered anomalous alerts."
+  - content: "Which of the following steps are part of investigating an anomalous sign-in alert?"
+    choices:
+        - content: "Review alert details, collect related activity, correlate patterns, document findings, recommend actions"
+          isCorrect: true
+          explanation: "Correct. These are the core steps for investigating sign-in alerts."
+        - content: "Delete user accounts immediately"
+          isCorrect: false
+          explanation: "Incorrect. Immediate deletion isn't part of standard investigation procedures."
+        - content: "Ignore alerts that appear during nonbusiness hours"
+          isCorrect: false
+          explanation: "Incorrect. Alerts must be investigated regardless of timing."
+        - content: "Only monitor future activity without reviewing past logs"
+          isCorrect: false
+          explanation: "Incorrect. Reviewing past activity is essential to determine anomalies."
+  - content: "How does Microsoft Security Copilot assist IT administrators?"
+    choices:
+        - content: "Automatically disables user accounts"
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't take automatic blocking actions."
+        - content: "Summarizes alerts, correlates sign-in activity, and drafts investigation reports"
+          isCorrect: true
+          explanation: "Correct. These are the main ways Copilot helps administrators."
+        - content: "Removes all anomalous sign-ins from logs"
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't modify log data."
+        - content: "Generates passwords for users"
+          isCorrect: false
+          explanation: "Incorrect. Password generation is unrelated to investigating alerts."
+  - content: "What defines an impossible travel alert?"
+    choices:
+        - content: "When a user logs in from a single location repeatedly"
+          isCorrect: false
+          explanation: "Incorrect. Repeated logins from one location are normal behavior."
+        - content: "When a user account signs in from two geographically distant locations within a time frame that makes travel impossible"
+          isCorrect: true
+          explanation: "Correct. This is the definition of an impossible travel alert."
+        - content: "When a user forgets their password multiple times"
+          isCorrect: false
+          explanation: "Incorrect. Password issues are unrelated to sign-in anomalies."
+        - content: "When an alert is triggered outside business hours"
+          isCorrect: false
+          explanation: "Incorrect. Timing alone doesn't define impossible travel."
+  - content: "Why is documenting findings important in an investigation?"
+    choices:
+        - content: "It helps ensure consistent analysis and provides a record for escalation or reporting."
+          isCorrect: true
+          explanation: "Correct. Documentation ensures investigations are clear, repeatable, and actionable."
+        - content: "It replaces the need for further monitoring."
+          isCorrect: false
+          explanation: "Incorrect. Documentation complements ongoing monitoring but doesn't replace it."
+        - content: "It's only necessary for audits."
+          isCorrect: false
+          explanation: "Incorrect. While useful for audits, documenting findings is critical for real-time decision-making."
+        - content: "It allows you to skip alert investigation in the future."
+          isCorrect: false
+          explanation: "Incorrect. Documentation doesn't eliminate the need for future investigations."

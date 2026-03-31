@@ -2,8 +2,6 @@
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 9/5/2023
@@ -24,4 +22,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
-
+

@@ -1,20 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
   ms.custom:
     - build-2023
     - build-2023-dataai
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

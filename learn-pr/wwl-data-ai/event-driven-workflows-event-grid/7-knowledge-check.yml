@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.event-driven-workflows-event-grid.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 02/13/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "You're building an AI content moderation application. You need to emit events when your inference service completes a classification. What type of Event Grid topic should you use to publish these events?"
+    choices:
+    - content: "A custom topic"
+      isCorrect: true
+      explanation: "Custom topics are user-defined endpoints where your applications post events. Since the inference service is your application code (not an Azure service), you create a custom topic to publish application-level events like inference completion."
+    - content: "A system topic"
+      isCorrect: false
+      explanation: "System topics are created automatically for Azure service events such as Blob Storage or Key Vault. Only the Azure service itself can publish to system topics. Your application code can't publish directly to system topics."
+    - content: "An Event Hubs topic"
+      isCorrect: false
+      explanation: "Event Hubs is a separate Azure service for streaming data ingestion. While Event Grid can deliver events to Event Hubs as a handler, Event Hubs doesn't provide the topic functionality that Event Grid custom topics offer for event routing."
+
+  - content: "You're designing custom events for an AI pipeline and want to enable subscribers to filter events based on which pipeline stage produced them. Which CloudEvents attribute is best suited for path-based filtering with prefix and suffix matches?"
+    choices:
+    - content: "The `subject` attribute"
+      isCorrect: true
+      explanation: "The subject attribute provides a path for filtering. You can set it to a hierarchical value like `/pipelines/embeddings/batch-42` and use `subjectBeginsWith` or `subjectEndsWith` filters on subscriptions to route events based on pipeline stage or other path components."
+    - content: "The `type` attribute"
+      isCorrect: false
+      explanation: "The type attribute categorizes the event (such as `com.contoso.ai.InferenceCompleted`) and enables event type filtering with exact matches. It doesn't support prefix or suffix filtering like the subject attribute does."
+    - content: "The `source` attribute"
+      isCorrect: false
+      explanation: "The source attribute identifies the originating system or component but doesn't support the prefix and suffix filtering that subject filtering provides. Source is combined with type to uniquely identify the event context, not for path-based routing."
+
+  - content: "Your AI handler endpoint occasionally experiences cold-start latency that exceeds 30 seconds. You want to ensure events are still delivered successfully after the handler warms up. What should you do?"
+    choices:
+    - content: "Rely on Event Grid's automatic retry mechanism with exponential backoff"
+      isCorrect: true
+      explanation: "Event Grid automatically retries failed deliveries using exponential backoff when an endpoint doesn't respond within 30 seconds or returns a transient error. The retry schedule starts at 10 seconds and scales up to 24 hours, giving your handler time to recover from cold starts."
+    - content: "Configure a dead-letter destination to capture timed-out events"
+      isCorrect: false
+      explanation: "Dead-lettering captures events that can't be delivered after all retry attempts are exhausted. For cold-start transient failures, Event Grid's automatic retries handle the situation without needing dead-lettering. Dead-lettering is for events that permanently fail delivery."
+    - content: "Set the event time-to-live to 30 seconds to match the timeout"
+      isCorrect: false
+      explanation: "Setting TTL to 30 seconds would cause events to be dropped or dead-lettered very quickly, before retries have a chance to succeed. For transient issues like cold starts, you want a longer TTL so events can be retried over time."
+
+  - content: "You need to route AI moderation events to different handlers based on whether the content was flagged for review. The flagged status is stored in the `data.status` field of the event payload. Which filtering approach should you use?"
+    choices:
+    - content: "Advanced filtering with the `StringIn` operator on `data.status`"
+      isCorrect: true
+      explanation: "Advanced filters match on values within the event body using operators like `StringIn`, `NumberGreaterThan`, and `BoolEquals`. You can create a subscription with `--advanced-filter data.status StringIn flagged` to receive only events where the status field equals 'flagged'."
+    - content: "Event type filtering with `--included-event-types`"
+      isCorrect: false
+      explanation: "Event type filtering matches on the event's type attribute, not on data payload fields. If all moderation events use the same event type regardless of flagged status, type filtering can't distinguish between flagged and non-flagged content."
+    - content: "Subject filtering with `--subject-begins-with`"
+      isCorrect: false
+      explanation: "Subject filtering matches on the subject attribute using prefix or suffix patterns, not on fields within the event data payload. To filter based on a value inside the data object, you need advanced filtering."
+
+  - content: "You're deploying an AI inference service to Azure Functions and need to publish events to an Event Grid custom topic. What authentication approach should you use for production workloads?"
+    choices:
+    - content: "Microsoft Entra ID with a managed identity assigned to the function app"
+      isCorrect: true
+      explanation: "Microsoft Entra ID authentication is recommended for production because it eliminates the need to manage and rotate shared secrets. You assign a managed identity to the function app and grant it the Event Grid Data Sender role on the custom topic."
+    - content: "Access key authentication using the `aeg-sas-key` header"
+      isCorrect: false
+      explanation: "Access key authentication works but requires managing and rotating shared secrets. For production AI applications, Microsoft Entra ID with managed identity provides better security without key management overhead."
+    - content: "Store the access key in the function app's application settings"
+      isCorrect: false
+      explanation: "While storing access keys in application settings is better than hardcoding them, it still requires key rotation and management. Microsoft Entra ID with managed identity avoids these operational concerns entirely."

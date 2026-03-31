@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-budgeting-method.put-your-budgeting-skills-into-action
+title: Put your budgeting skills into action
+metadata:
+  title: Put your budgeting skills into action
+  description: This content is a part of the Apply a budgeting method to manage money effectively.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-put-your-budgeting-skills-into-action.md)]

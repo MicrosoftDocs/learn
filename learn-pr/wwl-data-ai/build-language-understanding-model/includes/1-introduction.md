@@ -12,13 +12,13 @@ In this design pattern:
 1. A language model is used to determine semantic meaning (the user's *intent*).
 1. The app performs an appropriate action.
 
-**Azure AI Language** enables developers to build apps based on language models that can be trained with a relatively small number of samples to discern a user's intended meaning.
+**Azure Language** enables developers to build apps based on language models that can be trained with a relatively small number of samples to discern a user's intended meaning.
 
-In this module, you'll learn how to use the service to create a natural language understanding app using Azure AI Language.
+In this module, you'll learn how to use the service to create a natural language understanding app using Azure Language.
 
 After completing this module, you’ll be able to:
 
-- Provision an Azure AI Language resource.
+- Provision an Azure Language resource.
 - Define intents, entities, and utterances.
 - Use patterns to differentiate similar utterances.
 - Use pre-built entity components.
