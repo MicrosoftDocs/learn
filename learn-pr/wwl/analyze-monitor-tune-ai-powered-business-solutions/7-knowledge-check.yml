@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which of the following is a key component when establishing a monitoring operating model for AI agents?"
+    choices:
+    - content: "Ignoring agent guardrail triggers"
+      isCorrect: false
+      explanation: "Incorrect. Ignoring guardrail triggers can compromise agent reliability and compliance."
+    - content: "Standardizing metric definitions and log review cadence"
+      isCorrect: true
+      explanation: "Correct. Establishing a monitoring operating model requires clear and consistent processes, including standardized metric definitions and a regular log review cadence. This ensures accountability, consistency, and the ability to detect and respond to issues effectively."
+    - content: "Disabling all alerts to reduce noise"
+      isCorrect: false
+      explanation: "Incorrect. Disabling alerts can prevent the detection of critical issues and compromise agent reliability."
+    - content: "Allowing unrestricted agent configuration"
+      isCorrect: false
+      explanation: "Incorrect. Allowing unrestricted configuration can lead to inconsistencies and potential compliance issues."
+  - content: "When analyzing backlog items for AI and agent usage, what is the best first step?"
+    choices:
+    - content: "Immediately redesign agent prompts"
+      isCorrect: false
+      explanation: "Incorrect. Immediate redesign does not provide the necessary insight for targeted improvement."
+    - content: "Categorize backlog items into meaningful domains"
+      isCorrect: true
+      explanation: "Correct. The first step in effective backlog analysis is to categorize items into meaningful domains such as accuracy, knowledge, performance, user experience, integration, and governance. This structured approach helps solution architects prioritize improvements, detect patterns, and address root causes systematically."
+    - content: "Archive past feedback to avoid noise"
+      isCorrect: false
+      explanation: "Incorrect. Archiving feedback can result in the loss of valuable insights needed for improvement."
+    - content: "Disable the agent until issues are fixed"
+      isCorrect: false
+      explanation: "Incorrect. Disabling the agent does not address the root causes or provide insights for improvement."
+  - content: "Which metric best indicates whether users are achieving the intended outcome of an agent workflow?"
+    choices:
+    - content: "Token usage"
+      isCorrect: false
+      explanation: "Incorrect. Token usage is an operational metric and does not directly indicate user success in achieving intended outcomes."
+    - content: "Task completion rate"
+      isCorrect: true
+      explanation: "Correct. Task completion rate directly measures whether users are able to successfully complete the workflows for which the agent was designed. It reflects both the agent's effectiveness and the user's satisfaction with the process."
+    - content: "Connector quota"
+      isCorrect: false
+      explanation: "Incorrect. Connector quota is an operational metric and does not directly indicate user success in achieving intended outcomes."
+    - content: "Storage utilization"
+      isCorrect: false
+      explanation: "Incorrect. Storage utilization is an operational metric and does not directly indicate user success in achieving intended outcomes."
