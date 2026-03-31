@@ -44,7 +44,6 @@ units:
 - learn.sql-server-2025-data-virtualization.polybase-credentials-data-sources
 - learn.sql-server-2025-data-virtualization.exercise-query-parquet-file
 - learn.sql-server-2025-data-virtualization.exercise-connect-azure-sql-database-use-polybase
-- learn.sql-server-2025-data-virtualization.create-external-table-as-select
 - learn.sql-server-2025-data-virtualization.exercise-create-external-table-as-select
 - learn.sql-server-2025-data-virtualization.summary
 badge:
