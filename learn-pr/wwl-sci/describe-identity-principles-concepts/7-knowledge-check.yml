@@ -4,12 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/23/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -48,3 +48,25 @@ quiz:
     - content: "Enabling federated services."
       isCorrect: false
       explanation: "Incorrect. Authentication doesn't enable federated services."
+  - content: "Why is identity described as the new security perimeter?"
+    choices:
+    - content: "Because users can only access resources from within the corporate network."
+      isCorrect: false
+      explanation: "Incorrect. Users now access resources from many locations outside the corporate network, which is why the network perimeter alone is no longer sufficient."
+    - content: "Because verifying who or what is requesting access—regardless of network location—has become the primary way organizations control access to resources."
+      isCorrect: true
+      explanation: "Correct. As work happens from anywhere on any device, identity verification has replaced the network perimeter as the central security boundary."
+    - content: "Because firewalls and VPNs have been replaced entirely by biometric authentication."
+      isCorrect: false
+      explanation: "Incorrect. While strong authentication is important, the concept of identity as the security perimeter reflects a broader shift in how access decisions are made—not the replacement of all network controls."
+  - content: "An organization needs to manage identities for employees who use both on-premises applications and cloud-based SaaS services. Which solution is designed to support both scenarios?"
+    choices:
+    - content: "Active Directory Domain Services (AD DS)"
+      isCorrect: false
+      explanation: "Incorrect. AD DS was designed for on-premises networks and doesn't natively support cloud-based SaaS applications or modern authentication protocols."
+    - content: "A domain controller (DC)"
+      isCorrect: false
+      explanation: "Incorrect. A domain controller is a server that runs AD DS. It doesn't natively support cloud-based SaaS services or modern authentication."
+    - content: "Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID is a cloud-based identity and access management service that supports both cloud and on-premises scenarios, including hybrid identity configurations where identities are synchronized between AD DS and the cloud."
