@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Storage Security
   description: "Learn how to configure common Azure Storage security features like storage access signatures."
-  ms.date: 02/24/2026
-  author: wwlpublish
+  ms.date: 03/23/2026
+  author: cynthist
   ms.author: cynthist
   ms.topic: module
   ms.collection: N/A
