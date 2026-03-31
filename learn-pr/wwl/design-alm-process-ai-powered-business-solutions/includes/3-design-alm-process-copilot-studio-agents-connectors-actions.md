@@ -1,6 +1,6 @@
 ## Overview
 
-This unit guides solution architects through designing an Application Lifecycle Management (ALM) process tailored for **Copilot Studio agents, connectors, and custom actions**. A welldefined ALM strategy ensures that Copilotbased solutions are **consistent, secure, governed, versioncontrolled, and ready for enterprise scale** across development, testing, and production environments.
+This unit guides solution architects through designing an Application Lifecycle Management (ALM) process tailored for **Copilot Studio agents, connectors, and custom actions**. A well-defined ALM strategy ensures that Copilot-based solutions are **consistent, secure, governed, version-controlled, and ready for enterprise scale** across development, testing, and production environments.
 
 Architects learn how to structure solution components into managed lifecycles, establish promotion and approval workflows, manage data and environment boundaries, and integrate development tooling—enabling a predictable, repeatable process that aligns with enterprise governance.
 
@@ -44,7 +44,7 @@ Sustainable lifecycle for updates and deprecations
 
 No direct editing in production
 
-Enforce rolebased access at each tier
+Enforce role-based access at each tier
 
 Managed solutions only in Test and Prod
 
@@ -76,7 +76,7 @@ Build actions and prompts
 
 Add knowledge sources in Dev only
 
-Test agent workflows with edgecase prompts
+Test agent workflows with edge-case prompts
 
 ### 3.2 Testing Stage
 
@@ -84,7 +84,7 @@ Validate reasoning quality and output patterns
 
 Ensure grounding is reliable and compliant
 
-Evaluate eventtriggered actions
+Evaluate event-triggered actions
 
 Run regression tests on all agent topics
 
@@ -148,7 +148,7 @@ Use Visual Studio Code for Copilot connector development where applicable
 
 ### Adopt release cadence
 
-Monthly or sprintbased release cycles
+Monthly or sprint-based release cycles
 
 Emergency patch process for critical fixes
 
@@ -164,11 +164,11 @@ ALM must align with enterprise governance rules:
 
 DLP policy enforcement
 
-Environmentspecific connector rules
+Environment-specific connector rules
 
 Data residency restrictions
 
-Enterpriseapproved knowledge sources
+Enterprise-approved knowledge sources
 
 Review gate for safety, quality, and ethical risk
 

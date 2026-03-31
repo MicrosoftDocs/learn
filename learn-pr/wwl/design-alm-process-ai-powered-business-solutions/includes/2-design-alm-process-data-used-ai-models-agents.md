@@ -12,7 +12,7 @@ By the end of this unit, learners are be able to:
 
 * Specify **data residency and movement** policies for Copilot and agent features.
 
-* Operationalize **quality, lineage, and drift** checks with go/nogo criteria and rollback plans.
+* Operationalize **quality, lineage, and drift** checks with go/no-go criteria and rollback plans.
 
 * Establish a **RACI** and change workflows for datasets, knowledge sources, and evaluation telemetry.
 
@@ -46,7 +46,7 @@ By the end of this unit, learners are be able to:
 
 * **Professional visual—Environment & data flow (text diagram)**<br>Dev (Red data → feature builds) → Test (Repro runs, evaluation sets) → Pre-Prod (Gold candidates) → Prod (Gold only)<br>Controls at each hop: validation → approval → immutable snapshot → catalog update
 
-## The AI data ALM process (endtoend)
+## The AI data ALM process (end-to-end)
 
 ### Phase A—Plan & Catalog
 
@@ -82,7 +82,7 @@ By the end of this unit, learners are be able to:
 
 * Perform **privacy, security, and compliance** reviews (DLP, RAI, export controls).
 
-* Execute **canary runs** using masked/representative Prod like data.
+* Execute **canary runs** using masked/representative Prod-like data.
 
 * _Canary testing is a low-risk deployment strategy.
 It releases new code to a small, isolated subset of users or servers to identify issues before a full rollout._
@@ -129,13 +129,13 @@ It releases new code to a small, isolated subset of users or servers to identify
 
 ## Region, residency, and cross-border movement
 
-Document **where** prompts/outputs may be processed for Copilot and Power Platform features, and when **cross region capacity** is required.
+Document **where** prompts/outputs may be processed for Copilot and Power Platform features, and when **cross-region capacity** is required.
 
-In regulated scenarios, set the default to **inregion** and require explicit approval to enable **overflow processing**.
+In regulated scenarios, set the default to **in-region** and require explicit approval to enable **overflow processing**.
 
 Align **mailbox region** (for activity data) and environment geo with your policy; define exceptions and purge schedules.
 
-Professional visual—Residency decision tree (text)<br>Inregion capacity available? → Yes: keep local.<br>No: Is overflow allowed for this workload tier? → If yes, enable cross region under admin control; else block feature or defer.
+Professional visual—Residency decision tree (text)<br>In-region capacity available? → Yes: keep local.<br>No: Is overflow allowed for this workload tier? → If yes, enable cross-region under admin control; else block feature or defer.
 
 ## Roles and RACI
 
@@ -160,7 +160,7 @@ The below RACI chart is a representative sample for an organization. It's up to 
 
 Maintain **baseline metrics** per release: latency p95, success %, token/€ per task, safety flags/M runs.
 
-Compare live to baseline; if drift exceeds thresholds, **autoopen an incident**, route to data owner, and pause affected actions.
+Compare live to baseline; if drift exceeds thresholds, **auto-open an incident**, route to data owner, and pause affected actions.
 
 Rerun evaluation suites nightly/weekly against **golden sets**; store time series for audit.
 

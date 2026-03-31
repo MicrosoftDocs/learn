@@ -1,8 +1,8 @@
 ## Overview
 
-This unit equips solution architects with the knowledge to design a complete Application Lifecycle Management (ALM) process for **Microsoft Foundry agents**. Foundry introduces a structured, enterprisegrade model for creating, governing, deploying, and maintaining agents across environments. A robust ALM approach ensures controlled development, quality assurance, predictable deployment, and secure runtime operations.
+This unit equips solution architects with the knowledge to design a complete Application Lifecycle Management (ALM) process for **Microsoft Foundry agents**. Foundry introduces a structured, enterprise-grade model for creating, governing, deploying, and maintaining agents across environments. A robust ALM approach ensures controlled development, quality assurance, predictable deployment, and secure runtime operations.
 
-Solution architects must implement ALM processes that standardize agent creation, maintain configuration discipline, control data and model behavior, and integrate operational governance to ensure longterm reliability, compliance, and performance.
+Solution architects must implement ALM processes that standardize agent creation, maintain configuration discipline, control data and model behavior, and integrate operational governance to ensure long-term reliability, compliance, and performance.
 
 ## ALM foundations for Microsoft Foundry agents
 
@@ -26,7 +26,7 @@ The Foundry control plane enables centralized oversight of agent definitions, se
 
 ## Environment strategy
 
-A multienvironment model is essential for isolating agent development from production workloads.
+A multi-environment model is essential for isolating agent development from production workloads.
 
 ### Recommended environment tiers
 
@@ -40,7 +40,7 @@ A multienvironment model is essential for isolating agent development from produ
 
 Microsoft Foundry agents consist of modular components that must be governed and versioned.
 
-* **Key ALMmanaged components**
+* **Key ALM-managed components**
 
 * **Agent logic and orchestration**
 
@@ -102,7 +102,7 @@ Foundry agents rely on data retrieved from controlled environments. ALM must enf
 
 * **Usage of approved data sources**
 
-* **Rolebased access controls (RBAC)**
+* **Role-based access controls (RBAC)**
 
 * **Separation of production secrets from development artifacts**
 
@@ -130,7 +130,7 @@ A centralized governance strategy ensures consistency and reduces operational ri
 
 * Release calendars and change freezes
 
-* Productionready validation templates
+* Production-ready validation templates
 
 ## Monitoring, feedback, and continuous improvement
 

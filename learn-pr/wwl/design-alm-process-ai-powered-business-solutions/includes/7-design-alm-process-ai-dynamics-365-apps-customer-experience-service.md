@@ -18,11 +18,11 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Provide safe deployment paths with rollback capability
 
-* Support multiapp orchestration (Customer Service, Sales Insights, Customer Insights, Field Service)
+* Support multi-app orchestration (Customer Service, Sales Insights, Customer Insights, Field Service)
 
 * Ensure compliance, responsible AI behavior, and auditability
 
-* Enable continuous improvement with telemetry driven tuning
+* Enable continuous improvement with telemetry-driven tuning
 
 ### AI assets to include in ALM
 
@@ -72,7 +72,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 ### Step 3—Develop and Configure AI Logic
 
-* Build prompts for summarization, classification, reply suggestions, or next best actions.
+* Build prompts for summarization, classification, reply suggestions, or next-best actions.
 
 * Configure Copilot behaviors, action rules, context definitions, and conversation boosters.
 
@@ -82,7 +82,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Manage agents, prompts, flows, and data contracts inside solution files.
 
-* Use version controlled repositories to track changes.
+* Use version-controlled repositories to track changes.
 
 * Mark releases with semantic versioning (e.g., v1.3.2).
 
@@ -90,7 +90,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Evaluate completeness, factual accuracy, tone, and compliance.
 
-* Run multiturn conversation scenarios to detect logic flaws.
+* Run multi-turn conversation scenarios to detect logic flaws.
 
 * Test with real case data (anonymized).
 
@@ -104,7 +104,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Deploy to PROD using approved release pipelines (Azure DevOps or GitHub Actions).
 
-* Validate initial postdeployment performance.
+* Validate initial post-deployment performance.
 
 ### Step 7—Monitor, Tune, and Iterate
 
@@ -130,7 +130,7 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 * Ensure prompts can't trigger disclosure of sensitive customer information.
 
-* Enforce least privilege data access for AI features.
+* Enforce least-privilege data access for AI features.
 
 * Apply data loss prevention (DLP) policies and sensitivity labels across environments.
 

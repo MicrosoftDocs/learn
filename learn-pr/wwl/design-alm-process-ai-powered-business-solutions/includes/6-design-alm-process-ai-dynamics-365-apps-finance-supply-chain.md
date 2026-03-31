@@ -1,6 +1,6 @@
 ## Overview
 
-This unit teaches solution architects how to design a complete Application Lifecycle Management (ALM) process for AI components used in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.<br>AI capabilities in these applications—such as predictions, anomaly detection, document understanding, knowledge retrieval, and Copilotdriven assistance—require controlled ALM practices to ensure data quality, compliance, security, and operational reliability.
+This unit teaches solution architects how to design a complete Application Lifecycle Management (ALM) process for AI components used in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.<br>AI capabilities in these applications—such as predictions, anomaly detection, document understanding, knowledge retrieval, and Copilot-driven assistance—require controlled ALM practices to ensure data quality, compliance, security, and operational reliability.
 
 ### A robust ALM process helps teams
 
@@ -14,7 +14,7 @@ This unit teaches solution architects how to design a complete Application Lifec
 
 ## ALM Foundations for AI in Dynamics 365 Finance and Supply Chain
 
-AI features in these workloads operate across ERP data, process automation, and modeldriven decision logic. Designing ALM requires a layered approach combining:
+AI features in these workloads operate across ERP data, process automation, and model-driven decision logic. Designing ALM requires a layered approach combining:
 
 ### AI Assets to Govern
 
@@ -40,7 +40,7 @@ AI features in these workloads operate across ERP data, process automation, and 
 
 * Maintain **repeatable deployment patterns** through managed solutions or deployment pipelines.
 
-* Support **endtoend traceability** across model development, tuning, deployment, and retirement.
+* Support **end-to-end traceability** across model development, tuning, deployment, and retirement.
 
 ## Environment Strategy
 
@@ -49,7 +49,7 @@ AI features in these workloads operate across ERP data, process automation, and 
 | **Environment** | **Purpose** |
 |---|---|
 | **DEV** | Build and iterate AI models, prompts, orchestration logic, and integrations. |
-| **TEST** | Validate with safe, anonymized productionlike data. Perform regression checks. |
+| **TEST** | Validate with safe, anonymized production-like data. Perform regression checks. |
 | **PROD** | Execute approved AI capabilities in live financial and supply chain workloads. |
 
 ### Key Requirements
@@ -106,7 +106,7 @@ Define:
 
 * Align terminology with Finance and Supply Chain metadata (e.g., vendor, ledger, work order, production order).
 
-* Validate prompt behavior through scenariobased testing.
+* Validate prompt behavior through scenario-based testing.
 
 ## ALM Promotion Gates
 
@@ -176,7 +176,7 @@ Criteria:
 
 * DLP rules for AI actions
 
-* Guardrails for businesscritical processes (e.g., posting journals, approving purchase orders)
+* Guardrails for business-critical processes (e.g., posting journals, approving purchase orders)
 
 ### Continuous Improvement Loop
 

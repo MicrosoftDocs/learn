@@ -1,8 +1,8 @@
 ## Overview
 
-This unit provides solution architects with a structured, enterprisegrade Application Lifecycle Management (ALM) process for custom AI models. It outlines how to manage model creation, evaluation, deployment, governance, and retirement across environments. The goal is to ensure that custom AI models remain reliable, compliant, traceable, and adaptable to changes in business data, requirements, and AI technologies.
+This unit provides solution architects with a structured, enterprise-grade Application Lifecycle Management (ALM) process for custom AI models. It outlines how to manage model creation, evaluation, deployment, governance, and retirement across environments. The goal is to ensure that custom AI models remain reliable, compliant, traceable, and adaptable to changes in business data, requirements, and AI technologies.
 
-Custom AI models introduce unique ALM challenges such as data drift, model drift, regulatory alignment, and highimpact deployment risks. This unit provides architects with an actionable framework for governing model evolution from ideation through retirement.
+Custom AI models introduce unique ALM challenges such as data drift, model drift, regulatory alignment, and high-impact deployment risks. This unit provides architects with an actionable framework for governing model evolution from ideation through retirement.
 
 ## 1. ALM Foundations for Custom AI Models
 
@@ -10,7 +10,7 @@ Custom AI models introduce unique ALM challenges such as data drift, model drift
 
 **Consistency**: Every model follows documented development, testing, validation, and deployment steps.
 
-**Compliance**: Sensitive data, PII, and industryspecific requirements are protected and governed across model iterations.
+**Compliance**: Sensitive data, PII, and industry-specific requirements are protected and governed across model iterations.
 
 **Repeatability**: Models can be retrained and redeployed predictably, with clear version histories and evaluation criteria.
 
@@ -18,7 +18,7 @@ Custom AI models introduce unique ALM challenges such as data drift, model drift
 
 ## 2. Environment Strategy for Model Development
 
-Establishing a multienvironment design prevents configuration drift and ensures safe promotions.
+Establishing a multi-environment design prevents configuration drift and ensures safe promotions.
 
 ### Recommended Environments
 
@@ -154,11 +154,11 @@ Transparent audit trails for every deployment.
 
 ### Effective monitoring requires:
 
-**Realtime KPIs**: accuracy, latency, cost, throughput, task success.
+**Real-time KPIs**: accuracy, latency, cost, throughput, task success.
 
 **Drift detection**: changes in input data distribution or output quality.
 
-**Safety monitoring**: inappropriate or policyviolating outputs.
+**Safety monitoring**: inappropriate or policy-violating outputs.
 
 **User behavior analysis**: reduction in reprompts, consistent satisfaction trends.
 
