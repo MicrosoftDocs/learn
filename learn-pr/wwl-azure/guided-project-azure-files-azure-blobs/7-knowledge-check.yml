@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. Data redundancy protects from planned and unplanned events."
     - content: "Lifecycle management"
       isCorrect: true
-      explanation: "Correct. A time-based immutable storage policy rule can set conditions and move data between storage tiers."
+      explanation: "Correct. Lifecycle management policies define rules with conditions based on age, last modified time, or last access time. Actions include transitioning blobs to cooler storage tiers or deleting them to optimize costs as data ages."
   - content: "Your company uses an Azure storage account for storing large numbers of video and audio files. The company wants the ability to revoke access to the files and to change the period for which users can access the files. What should you do?"
     choices:
     - content: "Provide a shared access signature (SAS)"
@@ -60,4 +60,4 @@ quiz:
       explanation: "Incorrect. This method isn't recommended because the application owner or developer must rotate the certificate."
     - content: "Managed identities"
       isCorrect: true
-      explanation: "Correct. The benefit of this approach is that Azure automatically rotates the identity."
+      explanation: "Correct. The benefit of this approach is that Azure automatically rotates the identity."

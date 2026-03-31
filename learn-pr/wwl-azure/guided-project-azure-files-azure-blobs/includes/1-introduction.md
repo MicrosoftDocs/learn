@@ -18,7 +18,7 @@ The module is divided into five exercises, each covering a specific storage scen
 By the end of this module, you gain hands-on experience in creating and configuring Azure Files and Azure Blob Storage for different storage scenarios. You can apply this knowledge to your own projects and provide secure and efficient storage solutions.
 
 > [!NOTE]
-> This is a guided project module where you complete an end-to-end project by following step-by-step instructions. 
+> A guided project is where you complete an end-to-end project by following step-by-step instructions. 
 
 ## Skilling areas
 
@@ -26,8 +26,8 @@ You use the Azure documentation to [review your storage options](/azure/cloud-ad
 
 | Skilling area | Skilling task |
 | --- | --- | 
-| **Create and configure a storage account** | <ul><li> Configure the storage account tier, including hot and cool. </li><li> Configure redundancy settings, including zone-redundant and geo-redundant storage.</li><li> Configure secure transfer and TLS version. </li><li> Configure storage replication. </li></ul> |
-| **Create and configure blob storage** |<ul><li> Create a Blob Storage container. </li><li>  Configure the access level for blob storage.</li><li> Configure the blob storage tiers. </li><li> Configure lifecycle management. </li><li>  Configure data protection for blob storage. </li></ul> |
+| **Create and configure a storage account** | <ul><li> Configure the storage account tier, including hot, cool, and cold. </li><li> Configure redundancy settings, including zone-redundant and geo-redundant storage.</li><li> Configure secure transfer and TLS version. </li><li> Configure storage replication. </li></ul> |
+| **Create and configure blob storage** |<ul><li> Create a Blob Storage container. </li><li>  Configure the access level for blob storage. Understand the security implications of enabling anonymous public access.</li><li> Configure the blob storage tiers. </li><li> Configure lifecycle management, including transitioning data to the cool, cold, or archive tier based on age or access patterns. </li><li>  Configure data protection for blob storage. </li></ul> |
 | **Create and configure Azure Files** | <ul><li>  Create an Azure Files share, including directories. </li><li> Configure performance tiers, like standard and premium. </li><li> Configure data protection for Azure Files, such as snapshots. </li></ul>  |
 | **Configure encryption for storage** | <ul><li> Configure encryption for data at rest, including Microsoft managed keys and customer managed keys. </li><li>  Configure encryption for data in transit. </li></ul> |
 | **Configure networking​ for storage** | <ul><li> Create and configure private endpoints. </li><li>  Create and configure service endpoints. </li><li> Configure Azure Storage firewalls and virtual networks. </li></ul>|
