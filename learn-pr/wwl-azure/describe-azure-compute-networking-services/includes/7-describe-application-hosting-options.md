@@ -2,17 +2,17 @@ If you need to host your application on Azure, you might initially turn to a vir
 
 There are other hosting options that you can use with Azure, including Azure App Service.
 
+:::image type="content" source="../media/application-hosting-spectrum.png" alt-text="Diagram showing hosting spectrum from VMs with more control, to containers, to App Service with less operational effort.":::
+
 ## Azure App Service
 
-App Service enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability. App Service supports Windows and Linux. It enables automated deployments from GitHub, Azure DevOps, or any Git repo to support a continuous deployment model.
+App Service lets you build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability. App Service supports Windows and Linux and supports automated deployments from GitHub, Azure DevOps, or any Git repo for continuous deployment.
 
-Azure App Service is a robust hosting option that you can use to host your apps in Azure. Azure App Service lets you focus on building and maintaining your app, and Azure focuses on keeping the environment up and running.
-
-Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. Azure App Service supports multiple technologies, including programming languages like Java, PHP, Python, and JavaScript (via Node.js), as well as frameworks such as .NET and .NET Core. Azure App Service supports both Windows and Linux environments.
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It lets you focus on building and maintaining your app while Azure keeps the environment up and running. App Service supports multiple languages and frameworks, including .NET, .NET Core, Java, PHP, Python, and Node.js.
 
 ### Types of app services
 
-With App Service, you can host most common app service styles like:
+With App Service, you can host most common app styles:
 
  -  Web apps
  -  API apps
@@ -34,7 +34,7 @@ App Service includes full support for hosting web apps by using ASP.NET, ASP.NET
 
 ### API apps
 
-Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. You get full Swagger support and the ability to package and publish your API in Azure Marketplace. The produced apps can be consumed from any HTTP- or HTTPS-based client.
+Much like hosting a website, you can build REST-based web APIs by using your choice of language and framework. App Service provides full Swagger support and the ability to package and publish your API in Azure Marketplace. The published APIs can be consumed from any HTTP- or HTTPS-based client.
 
 ### WebJobs
 
@@ -49,4 +49,5 @@ Use the Mobile Apps feature of App Service to quickly build a back end for iOS a
  -  Send push notifications.
  -  Execute custom back-end logic in C\# or Node.js.
 
-On the mobile app side, there's SDK support for native iOS and Android, Xamarin, and React native apps.
+On the mobile app side, there's SDK support for native iOS and Android, Xamarin, and React Native apps.
+

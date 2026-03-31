@@ -38920,6 +38920,39 @@
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
+     {
+      "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/10-virtual-private-networks.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
+      "redirect_document_id": false
+    },
+
+ {
+      "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/11-expressroute.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
+      "redirect_document_id": false
+    },
+
+ {
+      "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/12-domain-name-system.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
+      "redirect_document_id": false
+    },
+
+ {
+      "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/3-exercise-create-azure-virtual-machine.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
+      "redirect_document_id": false
+    },
+ {
+      "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/8-virtual-network.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
+      "redirect_document_id": false
+    },
+ {
+      "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/9-exercise-configure-network-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
+      "redirect_document_id": false
+    },    
     {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/2-prepare.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
@@ -65289,6 +65322,11 @@
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }                                          
+    },
+    {
+      "source_path": "learn-pr/paths/explore-sql-server-2022-capabilities/index.md",
+      "redirect_url": "/training/paths/explore-sql-server-capabilities/",
+      "redirect_document_id": false
+    }
   ]
 }
