@@ -1,6 +1,6 @@
 ## Scenario
 
-Your organization requires centralized network security for the application virtual network. As the application usage increases, more granular application-level filtering and advanced threat protection are needed. All subnet traffic is routed through the firewall.Also, the application needs continuous updates from Azure Pipelines. You identify these requirements.
+Your organization requires centralized network security for the application virtual network. As the application usage increases, more granular application-level filtering and advanced threat protection are needed. All subnet traffic is routed through the firewall. You identify these requirements.
 
 + Azure Firewall is required for security in the app-vnet. 
 + A firewall policy should be configured to help manage access to the application. 
@@ -24,7 +24,7 @@ This lab uses the Standard SKU, which supports both network and application rule
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> To complete this lab you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
+> To complete this lab, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261961)
 
