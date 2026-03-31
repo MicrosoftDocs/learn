@@ -6,6 +6,7 @@ Your organization requires centralized network security for the application virt
 + A firewall policy **application rule** is required. This rule allows the application access to Azure DevOps so the application code can be updated. 
 + A firewall policy **network rule** is required. This rule allows DNS resolution. 
 
+This lab uses the Standard SKU, which supports both network and application rule collections. Azure Firewall has three SKUs: Basic (for SMB environments, alert-mode threat intelligence only), Standard (enterprise-grade with application rules), and Premium (advanced threat protection). 
 ## Skilling Tasks
 
 + Create an Azure Firewall.
