@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which of the following best describes the primary benefit of orchestrating Copilot AI features across Dynamics 365 Finance and Supply Chain modules?"
+    choices:
+    - content: "Automating only single-step data entry tasks"
+      isCorrect: false
+      explanation: "Incorrect. This option doesn't capture the broader benefits of orchestrating AI features across modules."
+    - content: "Enabling cohesive, compliant, and scalable AI-enabled business processes"
+      isCorrect: true
+      explanation: "Correct. This module explains how Copilot AI features can be orchestrated to support AI-enabled business processes. These processes are designed to be cohesive, compliant, and scalable across finance and supply chain scenarios."
+    - content: "Creating static dashboards for reporting"
+      isCorrect: false
+      explanation: "Incorrect. Static dashboards aren't the primary benefit of orchestrating Copilot AI features."
+    - content: "Allowing users to edit personal preferences"
+      isCorrect: false
+      explanation: "Incorrect. Editing personal preferences isn't related to the primary benefit of orchestrating AI features."
+  - content: "In Dynamics 365 Customer Service, which scenario benefits most from orchestrated AI features?"
+    choices:
+    - content: "Exporting customer lists for marketing"
+      isCorrect: false
+      explanation: "Incorrect. Exporting customer lists is a simpler task that doesn't require orchestrated AI features."
+    - content: "Handling multi-step case resolutions involving knowledge lookup and escalation"
+      isCorrect: true
+      explanation: "Correct. The module highlights that orchestrated AI features are most beneficial in complex, multi-step customer service workflows—such as resolving cases that require knowledge lookup and escalation—because AI can automate, recommend, and summarize actions across steps and systems."
+    - content: "Updating product catalog descriptions"
+      isCorrect: false
+      explanation: "Incorrect. Updating product catalog descriptions isn't a scenario that benefits most from orchestrated AI features."
+    - content: "Downloading user manuals"
+      isCorrect: false
+      explanation: "Incorrect. Downloading user manuals is a simple task that doesn't require orchestrated AI features."
+  - content: "Which statement best reflects a production-ready Microsoft 365 agent?"
+    choices:
+    - content: "It can answer questions on any corporate topic"
+      isCorrect: false
+      explanation: "Incorrect. A production-ready agent isn't designed to answer questions on any corporate topic but is focused on a defined mission."
+    - content: "It has a defined mission, the minimum tools to act, guardrails for reviewability, and telemetry for outcomes"
+      isCorrect: true
+      explanation: "Correct. According to the module, a production-ready agent has a clearly defined mission, the right tools, and operational guardrails. These elements help ensure business value, safety, and measurable impact."
+    - content: "It uses the largest possible model to maximize quality"
+      isCorrect: false
+      explanation: "Incorrect. Using the largest possible model isn't a requirement for a production-ready agent."
+    - content: "It prompts for every action to ensure control"
+      isCorrect: false
+      explanation: "Incorrect. Prompting for every action isn't a characteristic of a production-ready agent."
+  - content: "When solution architects extend Copilot experiences in Dynamics 365 Finance and Supply Chain, which best practice should they follow?"
+    choices:
+    - content: "Hard-code all extensions to specific workflows"
+      isCorrect: false
+      explanation: "Incorrect. Hard-coding extensions to specific workflows isn't a recommended best practice."
+    - content: "Keep extensions modular and compliant with solution boundaries"
+      isCorrect: true
+      explanation: "Correct. The module instructs architects to keep Copilot extensions modular and compliant with solution boundaries, ensuring responsible AI usage and consistency with business processes."
+    - content: "Allow Copilot to access all data without restrictions"
+      isCorrect: false
+      explanation: "Incorrect. Allowing unrestricted data access isn't a best practice and could lead to compliance issues."
+    - content: "Avoid aligning extensions with existing workflows"
+      isCorrect: false
+      explanation: "Incorrect. Extensions should align with existing workflows to ensure consistency and effectiveness."

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/05/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Microsoft Defender for Cloud covers three pillars of cloud security.  Which pillar provides visibility to help you understand your current security situation and provides hardening recommendations?"
+  - content: "Microsoft Defender for Cloud covers three pillars of cloud security. Which pillar provides visibility to help you understand your current security situation and provides hardening recommendations?"
     choices:
     - content: "Cloud security posture management (CSPM)"
       isCorrect: true
       explanation: "Correct. The CSPM pillar of Microsoft Defender for Cloud provides visibility and to help you understand your current security situation and provides hardening recommendations."
     - content: "Cloud workload protection (CWP)"
       isCorrect: false
-      explanation: "Incorrect.  Although CWP is an important pillar of cloud security for Microsoft Defender for Cloud, it's focused on detecting and resolving threats for resources, workload, and services.  It works with the CSPM pillar."
+      explanation: "Incorrect. Although CWP is an important pillar of cloud security for Microsoft Defender for Cloud, it's focused on detecting and resolving threats for resources, workload, and services. It works with the CSPM pillar."
     - content: "Microsoft Cloud security benchmark"
       isCorrect: false
       explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment."
@@ -31,7 +31,7 @@ quiz:
     - content: "Secure score and recommendations functionality that are part of the CSPM pillar of Microsoft Defender for Cloud."
       isCorrect: false
       explanation: "Incorrect. Secure score and recommendations functionality doesn't include vulnerability scanning."
-    - content: "The enhanced functionality that is provided through the Microsoft Defender plans and is part of the CWP pillar of Microsoft Defender for Cloud."
+    - content: "The enhanced functionality that is provided through the Microsoft Defender plans and is part of the cloud workload protection platform (CWPP) pillar of Microsoft Defender for Cloud."
       isCorrect: true
       explanation: "Correct. Microsoft Defender plans provide enhanced security features for your workloads, including vulnerability scanning."
     - content: "Security Benchmarks"
@@ -55,7 +55,18 @@ quiz:
       explanation: "Correct. The Defender for DevOps console allows you to manage your connected DevOps environments and provides your security teams with a high level overview of discovered issues that may exist within them."
     - content: "Secure score"
       isCorrect: false
-      explanation: "Incorrect.  Although secure score in Microsoft Defender for Cloud provides single score so that you can tell, at a glance, your current security situation, it does not provide specific visibility to your DevOps environments. ."
+      explanation: "Incorrect. Although secure score in Microsoft Defender for Cloud provides single score so that you can tell, at a glance, your current security situation, it doesn't provide specific visibility to your DevOps environments."
     - content: "The Microsoft cloud security benchmark (MCSB)"
       isCorrect: false
-      explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment."
+      explanation: "Incorrect. The Microsoft cloud security benchmark (MCSB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure and your multicloud environment."
+  - content: "An organization wants to understand what generative AI applications and models are running in their cloud environment and whether they're securely configured. Which capability in Microsoft Defender for Cloud addresses this need?"
+    choices:
+    - content: "AI security posture management (AI SPM)"
+      isCorrect: true
+      explanation: "Correct. AI SPM maintains an AI Bill of Materials (AI BOM) that catalogs your organization's generative AI workloads and assesses their security posture, surfacing recommendations and attack path analysis specific to AI."
+    - content: "AI threat protection"
+      isCorrect: false
+      explanation: "Incorrect. AI threat protection detects active threats targeting generative AI workloads in real time, such as prompt injection attacks and data leakage. Discovering and assessing the security posture of AI workloads is the role of AI security posture management (AI SPM)."
+    - content: "Cloud security explorer"
+      isCorrect: false
+      explanation: "Incorrect. The cloud security explorer lets security teams run graph-based queries to investigate security risks across cloud resources. It is not specifically focused on discovering and assessing the security posture of AI workloads."

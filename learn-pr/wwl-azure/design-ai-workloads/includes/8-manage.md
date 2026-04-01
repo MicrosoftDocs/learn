@@ -1,4 +1,4 @@
-Managing AI operations is about keeping your AI work consistent and reliable. Create an [AI Center of Excellence](/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence) to guide strategy, choose the right framework (MLOps or GenAIOps), and standardize SDKs and APIs. Use sandboxes for safe experimentation and simplify tuning with tools like [Copilot Tuning.](/copilot/microsoft-365/copilot-tuning-overview) 
+Managing AI operations is about keeping your AI work consistent and reliable. Create an [AI Center of Excellence](/azure/cloud-adoption-framework/scenarios/ai/center-of-excellence) to guide strategy, choose the right framework (MLOps or GenAIOps), and standardize SDKs and APIs. Use sandboxes for safe experimentation and simplify tuning with tools like [Copilot Tuning](/copilot/microsoft-365/copilot-tuning-overview) (early access preview).  
 
 > [!TIP]
 > To learn more, consider the [Introduction to AI Center of Excellence](/training/modules/intro-ai-center-excellence/) training module.
@@ -8,7 +8,7 @@ Managing AI operations is about keeping your AI work consistent and reliable. Cr
 
 ### AI deployment 
 
-Use the deployment model that fits how your org works, usually one Foundry instance per business unit, with separate projects for each use case. Deploy in the correct Azure regions for performance and compliance. Monitor resources with Azure Monitor and manage configurations and costs through the [Foundry Management Center](/azure/ai-foundry/control-plane/how-to-manage-compliance-security). Use API Management when multiple apps are deployed.
+Use the deployment model that fits how your org works, usually one Foundry instance per business unit, with separate projects for each use case. Deploy in the correct Azure regions for performance and compliance. Monitor resources with Azure Monitor and manage configurations and costs through the [Foundry Control Plane](/azure/ai-foundry/control-plane/how-to-manage-compliance-security). Use API Management when multiple apps are deployed.
 
 ### AI models 
 
