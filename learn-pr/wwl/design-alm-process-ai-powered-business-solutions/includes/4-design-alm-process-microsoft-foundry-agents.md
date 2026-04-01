@@ -110,7 +110,7 @@ Foundry agents rely on data retrieved from controlled environments. ALM must enf
 
 * **Use of secure identity management for agent actions**
 
-A centralized governance strategy ensures consistency and reduces operational risk.
+* A centralized governance strategy ensures consistency and reduces operational risk.
 
 ## Deployment and release management
 

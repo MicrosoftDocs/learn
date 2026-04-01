@@ -22,17 +22,17 @@ By the end of this unit, learners are be able to:
 
 #### Treat the following as versioned, promotable ALM artifacts:
 
-**Training & fine-tuning datasets** (raw, curated, feature/embedding sets).
+* **Training & fine-tuning datasets** (raw, curated, feature/embedding sets).
 
-**Evaluation/Testing datasets** and "golden" sets for regression testing.
+* **Evaluation/Testing datasets** and "golden" sets for regression testing.
 
-**Grounding knowledge** (SharePoint/OneDrive corpora, Dataverse tables, wikis, KBs).
+* **Grounding knowledge** (SharePoint/OneDrive corpora, Dataverse tables, wikis, KBs).
 
-**Prompt assets** (system prompts, prompt actions, templates).
+* **Prompt assets** (system prompts, prompt actions, templates).
 
-**Policies & guardrails** (DLP, sensitivity labels, allowed connectors, action limits).
+* **Policies & guardrails** (DLP, sensitivity labels, allowed connectors, action limits).
 
-**Run telemetry** (latency, token/cost, success/failure, safety events) and **feedback**.
+* **Run telemetry** (latency, token/cost, success/failure, safety events) and **feedback**.
 
 ### Environment strategy
 
@@ -158,28 +158,28 @@ The below RACI chart is a representative sample for an organization. It's up to 
 
 ## Operational telemetry and drift
 
-Maintain **baseline metrics** per release: latency p95, success %, token/€ per task, safety flags/M runs.
+* Maintain **baseline metrics** per release: latency p95, success %, token/€ per task, safety flags/M runs.
 
-Compare live to baseline; if drift exceeds thresholds, **auto-open an incident**, route to data owner, and pause affected actions.
+* Compare live to baseline; if drift exceeds thresholds, **auto-open an incident**, route to data owner, and pause affected actions.
 
-Rerun evaluation suites nightly/weekly against **golden sets**; store time series for audit.
+* Rerun evaluation suites nightly/weekly against **golden sets**; store time series for audit.
 
 ## Checklists you can paste into your runbooks
 
 ### Go/NoGo before production
 
-[ ]  Data contract approved; asset tagged and discoverable.
-[ ]  Sensitivity labels/DLP rules applied; connectors approved.
-[ ]  Lineage graph current; dataset snapshot **immutable** and versioned.
-[ ]  Evaluation thresholds met; safety risks mitigated.
-[ ]  Residency decision recorded; cross-regions toggle reviewed.
-[ ]  Dashboards, budgets, alerts, and rollback validated in Pre-Prod.
+* [ ]  Data contract approved; asset tagged and discoverable.
+* [ ]  Sensitivity labels/DLP rules applied; connectors approved.
+* [ ]  Lineage graph current; dataset snapshot **immutable** and versioned.
+* [ ]  Evaluation thresholds met; safety risks mitigated.
+* [ ]  Residency decision recorded; cross-regions toggle reviewed.
+* [ ]  Dashboards, budgets, alerts, and rollback validated in Pre-Prod.
 
 ### Retirement
 
-[ ]  Consumers notified; cutover plans executed.
-[ ]  Snapshots archived/deleted per retention; access revoked.
-[ ]  Audit and lineage preserved; catalog updated.
+* [ ]  Consumers notified; cutover plans executed.
+* [ ]  Snapshots archived/deleted per retention; access revoked.
+* [ ]  Audit and lineage preserved; catalog updated.
 
 ## References
 

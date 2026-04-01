@@ -6,7 +6,7 @@ Architects must apply disciplined application lifecycle management (ALM) practic
 This unit covers environment strategies and AI asset versioning.
 It also explains deployment patterns, data governance, and operational monitoring across the AI solution lifecycle.
 
-## Foundations of ALM for AI in Dynamics 365 Customer Service and Customer Engagement (CRM(workloads
+## Foundations of ALM for AI in Dynamics 365 Customer Service and Customer Engagement (CRM) workloads
 
 AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagement require an expanded ALM lens compared to traditional application components.
 
@@ -150,19 +150,19 @@ AI capabilities embedded in Dynamics 365 Customer Service and Customer Engagemen
 
 ### AI Release Readiness Checklist
 
-[ ] Data quality validated
+* [ ] Data quality validated
 
-[ ] Knowledge sources aligned and tested
+* [ ] Knowledge sources aligned and tested
 
-[ ] Prompts regression tested
+* [ ] Prompts regression tested
 
-[ ] Safety and compliance verified
+* [ ] Safety and compliance verified
 
-[ ] Environment variables are configured
+* [ ] Environment variables are configured
 
-[ ] Deployment pipeline successful
+* [ ] Deployment pipeline successful
 
-[ ] Monitoring dashboards ready
+* [ ] Monitoring dashboards ready
 
 ## References
 

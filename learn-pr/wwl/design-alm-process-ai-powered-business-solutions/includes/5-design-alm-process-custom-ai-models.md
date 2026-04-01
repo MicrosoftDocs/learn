@@ -8,13 +8,13 @@ Custom AI models introduce unique ALM challenges such as data drift, model drift
 
 ### A strong ALM process ensures:
 
-**Consistency**: Every model follows documented development, testing, validation, and deployment steps.
+* **Consistency**: Every model follows documented development, testing, validation, and deployment steps.
 
-**Compliance**: Sensitive data, PII, and industry-specific requirements are protected and governed across model iterations.
+* **Compliance**: Sensitive data, PII, and industry-specific requirements are protected and governed across model iterations.
 
-**Repeatability**: Models can be retrained and redeployed predictably, with clear version histories and evaluation criteria.
+* **Repeatability**: Models can be retrained and redeployed predictably, with clear version histories and evaluation criteria.
 
-**Operational Readiness**: Runtime monitoring, governance logs, and rollback plans ensure business resilience.
+* **Operational Readiness**: Runtime monitoring, governance logs, and rollback plans ensure business resilience.
 
 ## 2. Environment Strategy for Model Development
 
@@ -22,11 +22,11 @@ Establishing a multi-environment design prevents configuration drift and ensures
 
 ### Recommended Environments
 
-**Development (Dev)**<br>Experimentation, prompt/model variant testing, data preprocessing pipelines.
+* **Development (Dev)**<br>Experimentation, prompt/model variant testing, data preprocessing pipelines.
 
-**Test (UAT/QA)**<br>Evaluation datasets, error/edgecase testing, stress tests, failover validation.
+* **Test (UAT/QA)**<br>Evaluation datasets, error/edge-case testing, stress tests, failover validation.
 
-**Production (Prod)**<br>Stable, approved model versions with monitoring and rollback controls.
+* **Production (Prod)**<br>Stable, approved model versions with monitoring and rollback controls.
 
 ### Professional Visual (Text Diagram)
 
@@ -42,63 +42,63 @@ The lifecycle includes the following stages:
 
 ### 1. Plan & Design
 
-Define business use case, success criteria, constraints.
+* Define business use case, success criteria, constraints.
 
-Identify necessary data sources, governance rules, and privacy boundaries.
+* Identify necessary data sources, governance rules, and privacy boundaries.
 
-Document intended model behavior, limitations, failure paths.
+* Document intended model behavior, limitations, failure paths.
 
 ### 2. Data Preparation
 
-Build data contracts and schema standards.
+*  Build data contracts and schema standards.
 
-Establish curated datasets and "golden" evaluation datasets.
+*  Establish curated datasets and "golden" evaluation datasets.
 
-Use versioned data pipelines to prevent drift and ensure reproducibility.
+*  Use versioned data pipelines to prevent drift and ensure reproducibility.
 
 ### 3. Model Development
 
-Build, finetune, or incorporate "bring your own model" (BYOM) components.
+*  Build, fine-tune, or incorporate "bring your own model" (BYOM) components.
 
-Apply responsible AI requirements such as fairness, clarity, consistency, and safe response patterns.
+* Apply responsible AI requirements such as fairness, clarity, consistency, and safe response patterns.
 
-Maintain metadata: hyperparameters, training data versions, environment configuration snapshots.
+* Maintain metadata: hyperparameters, training data versions, environment configuration snapshots.
 
 ### 4. Evaluation & Approval
 
-Validate accuracy, relevance, reliability, and failure handling.
+* Validate accuracy, relevance, reliability, and failure handling.
 
-Evaluate cost (token usage, compute cost), latency, throughput.
+* Evaluate cost (token usage, compute cost), latency, throughput.
 
-Check for safety: toxicity, incorrect information, policy violations.
+* Check for safety: toxicity, incorrect information, policy violations.
 
-Produce a **Model Card** containing metrics, constraints, and recommended usage boundaries.
+* Produce a **Model Card** containing metrics, constraints, and recommended usage boundaries.
 
 ### 5. Deployment
 
-Promote model via managed deployment artifacts.
+* Promote model via managed deployment artifacts.
 
-Apply model registries with version locking and rollback paths.
+* Apply model registries with version locking and rollback paths.
 
-Enforce access control, encryption, and runtime audit logging.
+* Enforce access control, encryption, and runtime audit logging.
 
 ### 6. Monitor & Optimize
 
-Track telemetry: latency, error frequency, safety blocks, user satisfaction signals.
+* Track telemetry: latency, error frequency, safety blocks, user satisfaction signals.
 
-Detect model drift (output deviates from expected performance).
+* Detect model drift (output deviates from expected performance).
 
-Trigger retraining cycles with updated data.
+* Trigger retraining cycles with updated data.
 
 ### 7. Retirement
 
 When model no longer meets accuracy, safety, cost, or business expectations: 
 
-Decommission version.
+* Decommission version.
 
-Archive data, artifacts, evaluation logs.
+* Archive data, artifacts, evaluation logs.
 
-Document transition plan to the next model version.
+* Document transition plan to the next model version.
 
 ## 4. Promotion Gates for Enterprise Readiness
 
@@ -106,61 +106,61 @@ Promotion gates ensure only compliant, validated models move forward.
 
 ### Gate 1 (Dev → Test)
 
-Training data meets quality standards.
+* Training data meets quality standards.
 
-Safety and bias testing passed.
+* Safety and bias testing passed.
 
-Documentation created.
+* Documentation created.
 
 ### Gate 2 (Test → Prod)
 
-Performance exceeds baseline.
+* Performance exceeds baseline.
 
-Cost and latency within acceptable range.
+* Cost and latency within acceptable range.
 
-Security and compliance approvals granted.
+* Security and compliance approvals granted.
 
-Rollback plan confirmed.
+* Rollback plan confirmed.
 
 ### Text Visual: Gate Checklist
 
-□ Data quality validated
+* Data quality validated
 
-□ Evaluation metrics achieved
+* Evaluation metrics achieved
 
-□ Safety checks completed
+* Safety checks completed
 
-□ Model Card produced
+* Model Card produced
 
-□ Governance approvals obtained
+* Governance approvals obtained
 
-□ Rollback plan documented
+* Rollback plan documented
 
 ## 5. Governance and Compliance Requirements
 
 ### Solution architects must ensure:
 
-Enforced data residency and region boundaries.
+* Enforced data residency and region boundaries.
 
-Sensitivity labeling for training and evaluation datasets.
+* Sensitivity labeling for training and evaluation datasets.
 
-Clear policy for allowable external models/data sources.
+* Clear policy for allowable external models/data sources.
 
-Guardrails for prompts, grounding data, and action policies.
+* Guardrails for prompts, grounding data, and action policies.
 
-Transparent audit trails for every deployment.
+* Transparent audit trails for every deployment.
 
 ## 6. Monitoring and Drift Management
 
 ### Effective monitoring requires:
 
-**Real-time KPIs**: accuracy, latency, cost, throughput, task success.
+* **Real-time KPIs**: accuracy, latency, cost, throughput, task success.
 
-**Drift detection**: changes in input data distribution or output quality.
+* **Drift detection**: changes in input data distribution or output quality.
 
-**Safety monitoring**: inappropriate or policy-violating outputs.
+* **Safety monitoring**: inappropriate or policy-violating outputs.
 
-**User behavior analysis**: reduction in reprompts, consistent satisfaction trends.
+* **User behavior analysis**: reduction in reprompts, consistent satisfaction trends.
 
 ### Professional Visual (Text Radar Chart)
 
@@ -176,22 +176,22 @@ Consistency   ●●●●○
 
 ## 7. Architect Responsibilities Checklist
 
-Define model development standards.
+* Define model development standards.
 
-Govern access, secrets, connectors, and data boundaries.
+* Govern access, secrets, connectors, and data boundaries.
 
-Maintain ALM documentation: Model Cards, Data Contracts, Risk Assessments.
+* Maintain ALM documentation: Model Cards, Data Contracts, Risk Assessments.
 
-Establish monitoring dashboards, retraining triggers, and failure escalation flows.
+* Establish monitoring dashboards, retraining triggers, and failure escalation flows.
 
-Collaborate with security, compliance, and data teams.
+* Collaborate with security, compliance, and data teams.
 
 ## References
 
-[https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/manage-foundation-models-lifecycle](/azure/architecture/ai-ml/guide/manage-foundation-models-lifecycle)
+[https://learn.microsoft.com/azure/architecture/ai-ml/guide/manage-foundation-models-lifecycle](/azure/architecture/ai-ml/guide/manage-foundation-models-lifecycle)
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts](/microsoft-copilot-studio/bring-your-own-model-prompts)
+[https://learn.microsoft.com/microsoft-copilot-studio/bring-your-own-model-prompts](/microsoft-copilot-studio/bring-your-own-model-prompts)
 
 <https://trusted-ai-playbook.cio.com/streamline-ai-agent-development-and-deployment/a-5-step-playbook-to-tackle-alm-for-ai-agents-and-apps/>
 
-[https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/model-lifecycle-retirement?view=foundry-classic](/azure/ai-foundry/concepts/model-lifecycle-retirement)
+[https://learn.microsoft.com/azure/ai-foundry/concepts/model-lifecycle-retirement?view=foundry-classic](/azure/ai-foundry/concepts/model-lifecycle-retirement)
