@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-microsoft-foundry-agents
+title: "Design ALM processes for Microsoft Foundry agents"
+metadata:
+  title: "Design ALM Processes for Microsoft Foundry Agents"
+  description: "Learn how to design robust ALM processes for Microsoft Foundry agents, ensuring governance, deployment, and operational reliability."
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-alm-process-microsoft-foundry-agents.md)]
