@@ -341,7 +341,7 @@ Transform Copilot adoption telemetry into monthly, slide-ready insights and visu
 A RACI matrix is a project tool for assigning responsibilities for tasks, milestones, and project decisions to roles on the project.  
 
 The RACI chart should be included in any proposal for implementing a Microsoft 365 agent.
-Depending on the project, the capacities may include other or consolidated roles. However, this RACI chart should serve as a baseline for creating other RACI charts.But the below should operate as a baseline in which other RACI charts can be created. 
+Depending on the project, the capacities may include other or consolidated roles. However, this RACI chart should serve as a baseline for creating other RACI charts. But the below should operate as a baseline in which other RACI charts can be created. 
 
 * **Responsible (R):** The individuals who perform the work to complete the task.
 

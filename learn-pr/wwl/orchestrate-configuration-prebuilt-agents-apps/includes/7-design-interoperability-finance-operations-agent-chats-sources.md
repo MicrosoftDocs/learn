@@ -184,7 +184,7 @@ Example
 
 * Use authoritative sources
 
-* Avoid hallucinations
+* Avoid inaccurate outputs
 
 * Validate external data before use
 
