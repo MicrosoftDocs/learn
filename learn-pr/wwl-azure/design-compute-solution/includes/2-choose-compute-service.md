@@ -66,7 +66,7 @@ The [hosting option](/azure/security/fundamentals/shared-responsibility) of your
 
 - **[Platform-as-a-Service (PaaS)](/azure/architecture/guide/design-principles/managed-services)** provides a managed hosting environment where developers can build, deploy, and manage applications without worrying about the underlying infrastructure. Azure handles the infrastructure, maintenance, and scalability, allowing developers to focus on writing code. Examples of Azure PaaS offerings include Azure App Services, Azure Functions, and Azure SQL Database.
 
-- **[Infrastructure-as-a-Service (IaaS)](/resources/cloud-computing-dictionary/what-is-iaas)** provides virtualized computing resources over the internet. It allows users to rent virtual machines, storage, and networking resources on-demand, without the need for physical hardware. Azure Virtual Machines is a prime example of an IaaS offering, where users can deploy and manage VMs inside an Azure virtual network.
+- **Infrastructure-as-a-Service (IaaS)** provides virtualized computing resources over the internet. It allows users to rent virtual machines, storage, and networking resources on-demand, without the need for physical hardware. Azure Virtual Machines is a prime example of an IaaS offering, where users can deploy and manage VMs inside an Azure virtual network.
 
 - **On-premises hosting** involves deploying and managing applications on local servers within an organization's own data center. This option provides the highest level of control over the infrastructure but requires significant investment in hardware, maintenance, and IT staff. Azure also supports hybrid cloud solutions, allowing integration between on-premises infrastructure and Azure services.
 
