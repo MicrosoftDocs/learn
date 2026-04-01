@@ -5,7 +5,7 @@ You interact with the modernization agent differently depending on your IDE:
 - **Visual Studio Code (Java).** Open the app modernization extension sidebar. Select predefined or custom tasks from the task list. The agent executes in the Copilot Agent chat window, showing progress and requesting confirmation at key steps.
 - **Visual Studio (.NET).** Right-click a project in Solution Explorer and select "Modernize," or open the Copilot Chat window and type _@modernize_ followed by your request. The agent runs a three-stage workflow (assessment, planning, execution), writing Markdown files under _.github/upgrades_ for review.
 - **Copilot CLI.** Run natural-language prompts in the terminal, such as "Upgrade this project to JDK 21 and Spring Boot 3.2" or "Migrate this application from S3 to Azure Blob Storage."
-- **Copilot Coding Agent.** Delegate modernization tasks via GitHub issues or pull requests. The agent executes in the cloud, working independently like a human developer.
+- **Copilot Cloud Agent .** Delegate modernization tasks via GitHub issues or pull requests. The agent executes in the cloud, working independently like a human developer.
 
 The modernization stages are as follows:
 
