@@ -28,7 +28,7 @@ You're ready to finalize your governance strategy for Tailwind Traders. Consider
  
 - **Consider creating landing zones through code**. Implement landing zones that are pre-provisioned through code. As your situation changes, you should expect to refactor the code. Use an iterative approach that maximizes learning opportunities and minimizes time to business success. You can minimize refactoring by having a central IT team to review both short term and long-term scenarios.  
 
-- **Consider using the [Azure landing zone accelerator](/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerator)**. Use the accelerator to provide a full implementation of the conceptual architecture, along with opinionated configurations for key components like management groups and policies. 
+- **Consider using the [Azure landing zone accelerator](/azure/cloud-adoption-framework/ready/landing-zone/implementation-options)**. Use the accelerator to provide a full implementation of the conceptual architecture, along with opinionated configurations for key components like management groups and policies. 
 
 - **Consider focusing on your applications**. Focus on application-centric migrations and development rather than pure infrastructure lift-and-shift migrations, such as moving virtual machines. 
 
