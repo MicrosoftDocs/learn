@@ -14,7 +14,7 @@ The Azure Kubernetes Service (AKS) environment is enabled with many features, su
 
 - AKS has three cluster management pricing tiers: Free, Standard, and Premium. The Free tier has no control plane charge but no SLA guarantee, suitable for dev/test. The Standard tier includes an hourly control plane charge with an uptime SLA, recommended for production. The Premium tier adds 24-month Long Term Support. All tiers require you to pay separately for agent node virtual machines.
 
-- When you create the cluster, you can use Azure Resource Manager (ARM) templates to automate cluster creation. With ARM templates, you specify features like as advanced networking, Microsoft Entra ID integration, and monitoring. 
+- When you create the cluster, you can use Azure Resource Manager (ARM) templates or Bicep files. With these infrastructure-as-code options, you specify features such as advanced networking, Microsoft Entra ID integration, and monitoring.
 
 - AKS gives you the benefits of open-source Kubernetes. You don't have the complexity or operational overhead of running your own custom Kubernetes cluster.
 
