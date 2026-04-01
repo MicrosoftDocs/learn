@@ -26,9 +26,9 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Read about [Azure Functions](/azure/azure-functions/functions-overview).
 
-- Read about [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/).
+- Read about [Azure Logic Apps](/azure/logic-apps/logic-apps-overview).
 
-- Discover [what is Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/).
+- Discover [what is Kubernetes](/azure/aks/what-is-aks).
 
 - Read about the [Azure Kubernetes Service](/azure/aks/intro-kubernetes).
 
