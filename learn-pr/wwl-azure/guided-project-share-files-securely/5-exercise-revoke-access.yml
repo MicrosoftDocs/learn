@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-share-files-securely.exercise-revoke-access
+title: Exercise - Revoke partner access
+metadata:
+  title: Exercise - Revoke partner access
+  description: "Exercise - Revoke partner access"
+  ms.date: 03/28/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-revoke-access.md)]

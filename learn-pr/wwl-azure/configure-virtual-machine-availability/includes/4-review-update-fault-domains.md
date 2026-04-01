@@ -8,9 +8,10 @@ An update domain is a group of nodes that are upgraded together during the proce
 
 - During planned maintenance, only one update domain is rebooted at a time.
 
-- By default, there are five (non-user-configurable) update domains.
+- You can specify between 1 and 20 update domains when creating an availability set.  If you don't specify a value, Azure defaults to five update domains.
+  
+- The update domain count is immutable after creation; to change it, you must delete and recreate the availability set.
 
-- You can configure up to 20 update domains.
 
 ### Things to know about fault domains
 

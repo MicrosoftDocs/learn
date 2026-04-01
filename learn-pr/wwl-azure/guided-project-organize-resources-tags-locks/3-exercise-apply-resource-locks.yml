@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-organize-resources-tags-locks.exercise-apply-resource-locks
+title: Exercise - Apply resource locks
+metadata:
+  title: Exercise - Apply resource locks
+  description: "Exercise - Apply resource locks"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-exercise-apply-resource-locks.md)]

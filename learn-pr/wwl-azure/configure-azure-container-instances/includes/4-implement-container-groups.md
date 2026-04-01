@@ -10,11 +10,13 @@ Let's review some of details about container groups for Azure Container Instance
 
 - Azure Container Instances allocates resources to a multi-container group by adding together the resource requests of all containers in the group. Resources can include items such as CPUs, memory, and GPUs.
 
-- There are two common ways to deploy a multi-container group: Azure Resource Manager (ARM) templates and YAML files.
+- There are three common ways to deploy a multi-container group.
   
-  - **ARM template**. An ARM template is recommended for deploying other Azure service resources when you deploy your container instances, such as an Azure Files file share.
+  - **Azure Resource Manager template**. JSON-based infrastructure as code, ideal when deploying alongside other Azure resources.
+
+  - **Bicep**. Microsoft's recommended infrastructure as code language, more concise than Azure Resource Manager templates. Bicep includes full IntelliSense support.
   
-  - **YAML file**. Due to the concise nature of the YAML format, a YAML file is recommended when your deployment includes only container instances.
+  - **YAML files**. Container-focused format, ideal for deployments that include only container instances.
 
 - Container groups can share an external-facing IP address, one or more ports on the IP address, and a DNS label with an FQDN.
    

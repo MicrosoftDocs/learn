@@ -7910,3 +7910,29 @@ achievements:
   title: Optimize spend and performance with Azure AI Foundry Provisioned Throughput reservations
   summary: This module introduces the benefits, use cases, and implementation steps to deploy and purchase provisioned throughput units and reservations for Azure AI Foundry.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.teach-az-204-developing-solution-microsoft-azure-academic-programs.badge
+  type: badge
+  title: Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs
+  summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
+  iconUrl: /training/achievements/teach-azure-204-develop-solution-microsoft-azure-academic-programs.svg
+- uid: learn.wwl.explore-sql-server-2022-capabilities.trophy
+  type: trophy
+  title: Explore SQL Server 2025 capabilities
+  summary: >-
+    Learn about SQL Server 2025 enhancements, including:
+  
+    - AI-powered capabilities with vector search and embeddings
+  
+    - Hybrid data platform with cloud and on-premises integration
+  
+    - Data virtualization and PolyBase improvements with S3-compatible object storage
+  
+    - T-SQL enhancements for modern development workflows
+  
+    - Enhanced security, analytics, and performance features
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.sql-server-2025-data-virtualization.badge
+  type: badge
+  title: Introduction to SQL Server 2025 data virtualization
+  summary: Learn about data virtualization, enhanced Polybase features in SQL Server 2025, and how to use Polybase to access and query external data.
+  iconUrl: /learn/achievements/generic-badge.svg

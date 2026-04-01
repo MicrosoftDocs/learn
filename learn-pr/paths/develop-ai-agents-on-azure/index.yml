@@ -2,18 +2,18 @@
 uid: learn.wwl.develop-ai-agent-on-azure
 hidden: true
 metadata:
-  title: Develop AI Agents on Azure
+  title: Develop AI Agents on Azure (deprecated)
   description: Learn how to develop AI agents on Azure using the Microsoft Foundry Agent Service and Semantic Kernel Agent Framework. AI-3026
-  ms.date: 01/16/2026
+  ms.date: 03/30/2026
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
-title: Develop AI agents on Azure
+title: Develop AI agents on Azure (deprecated)
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with AI applications and agents on Azure](/training/paths/get-started-ai-apps-agents) learning path first.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more functional and accessible, and AI agents are a key component of this evolution. This learning path will help you understand the AI agents, including when to use them and how to build them, using Microsoft Foundry Agent Service and Microsoft Agent Framework. By the end of this learning path, you will have the skills needed to develop AI agents on Azure.
+  This learning path is deprecated and being maintained to support existing learners. For the latest training on AI agent development, see the replacement [Develop AI agents on Azure](/training/paths/develop-ai-agents-azure/) learning path.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate

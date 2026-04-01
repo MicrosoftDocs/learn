@@ -26,7 +26,7 @@ Let's review some of the [benefits of using Azure Container Instances](/azure/co
 
 - **Public IP connectivity and DNS names**. Containers can be directly exposed to the internet with an IP address and FQDN (fully qualified domain name).
 
-- **Custom sizes**. Container nodes can be scaled dynamically to match actual resource demands for an application.
+- **Custom sizes**. You specify CPU cores (from 0.1 to 4 vCPU) and memory (from 0.1 to 16 GB) for each container at deployment time. Resource allocation is fixed for the lifetime of the container group.
 
 - **Persistent storage**. Containers support direct mounting of Azure Files file shares.
 
@@ -34,4 +34,4 @@ Let's review some of the [benefits of using Azure Container Instances](/azure/co
 
 - **Coscheduled groups**. Container Instances supports scheduling of multi-container groups that share host machine resources.
 
-- **Virtual network deployment**. Container Instances can be deployed into an Azure virtual network.
+- **Virtual network deployment**. Linux container groups can be deployed into an Azure virtual network for private communication with other Azure resources. Virtual network deployed containers receive no public IP address and communicate only within the virtual network or peered networks.
