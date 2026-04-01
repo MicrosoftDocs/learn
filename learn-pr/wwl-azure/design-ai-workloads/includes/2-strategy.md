@@ -8,7 +8,7 @@ SaaS offerings are turnkey AI solutions like Microsoft 365 Copilot, Copilot Stud
 
 SaaS offerings require minimal setup and are ideal for organizations seeking rapid productivity gains and role-specific AI features.
 
-- [Microsoft Copilot](/azure/copilot/overview) is a free web-grounded chat application. Copilot Pro provides better performance, capacity, and access to Copilot in certain Microsoft 365 apps.
+- Microsoft Copilot is a free web-grounded chat application. Copilot Pro provides better performance, capacity, and access to Copilot in certain Microsoft 365 apps.
 
 - [Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-overview) provides web-grounded chat and in-app AI assistance across Microsoft 365 applications, integrating with your Microsoft Graph data.
 
@@ -22,9 +22,9 @@ Platform services include Microsoft Foundry, Azure OpenAI, Azure Machine Learnin
 
 PaaS solutions are suited for teams that need more control over their AI workflows and want to apply prebuilt APIs or custom models.
 
-- [Microsoft Foundry](/azure/ai-foundry/what-is-azure-ai-foundry) is a unified Azure platform-as-a-service offering for enterprise AI operations, model builders, and application development. This foundation combines production-grade infrastructure with friendly interfaces, enabling developers to focus on building applications rather than managing infrastructure.
+- [Microsoft Foundry](/azure/ai-foundry/what-is-foundry) is a unified Azure platform-as-a-service offering for enterprise AI operations, model builders, and application development. This foundation combines production-grade infrastructure with friendly interfaces, enabling developers to focus on building applications rather than managing infrastructure.
 
-- [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) is a unified Azure platform-as-a-service offering for enterprise AI operations, model builders, and application development. This foundation combines production-grade infrastructure with friendly interfaces, enabling developers to focus on building applications rather than managing infrastructure.
+- [Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-machine-learning) is a cloud service that accelerates and manages the machine learning project lifecycle. ML professionals, data scientists, and engineers use it in their daily workflows to train and deploy models and manage machine learning operations. Use Azure ML when you need open-source framework support for custom model development.
 
 - [Azure OpenAI](/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure) provides access to generative AI models including a family of large and small neural network language models. Models operate within a scalable and securable cloud service on Azure.
 
@@ -41,4 +41,4 @@ Azure infrastructure services give you the most control when your AI workload ha
 For example, a healthcare organization might deploy its workloads on Azure virtual machines. Using Azure IaaS gives the team complete control over the software, hardware, and data on those machines. While IaaS offers maximum flexibility and control, it also comes with higher operational effort and requires deeper AI and infrastructure expertise.
 
 > [!TIP]
-> Take a moment to review the [AI product decision tree](/azure/cloud-adoption-framework/scenarios/ai/strategy#microsoft-ai-decision-tree). Which AI products best align with your organization’s goals?
+> Take a moment to review the [AI product decision tree](/azure/cloud-adoption-framework/scenarios/ai/strategy#microsoft-ai-decision-tree). Which AI products best align with your organization’s goals? If your strategy includes agentic workloads, review the [AI agent decision tree](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy#ai-agent-decision-tree) for guidance on choosing between SaaS agents, Copilot Studio, and Microsoft Foundry.
