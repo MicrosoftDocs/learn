@@ -1,4 +1,4 @@
-[Kubernetes](/azure/aks/) is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform provides the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both _container management_ and _container orchestration_. 
+Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform provides the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both _container management_ and _container orchestration_. 
 
 :::image type="content" source="../media/container-scaling.png" alt-text="Diagram that shows how container orchestration dynamically or automatically scales container instances." border="false":::
 
