@@ -8,8 +8,8 @@ The **Backups** page lists all the automatic and custom backups for your app and
 
 Examine the following details about the Backup and Restore feature. Think about how you can implement this feature for your App Service apps.
 
-- To use the Backup and Restore feature, you need the Standard or Premium tier App Service plan for your app or site.
-
+- Back up and restore is supported in the Basic, Standard, Premium, and Isolated tiers. For the Basic tier, you can only back up and restore the production slot.
+  
 - You need an Azure storage account and container in the same subscription as the app to back up.
 
 - Azure App Service can back up the following information to the Azure storage account and container you configured for your app:
