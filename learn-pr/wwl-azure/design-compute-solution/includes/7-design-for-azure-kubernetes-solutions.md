@@ -30,7 +30,7 @@ There are several factors to consider when deciding whether Azure Kubernetes Ser
 | **Cluster node upgrades** | _Do you want to reduce the number of cluster management tasks?_ | AKS manages Kubernetes software upgrades and the process of cordoning off nodes and draining them. |
 | **Storage volume support** | _Does your application require persisted storage?_ | AKS supports both static and dynamic storage volumes. Pods can attach and reattach to these storage volumes as they're created or rescheduled on different nodes. |
 | **Virtual network support** | _Do you need pod-to-pod network communication or access to on-premises networks from your AKS cluster?_ | An AKS cluster can be deployed into an existing virtual network with ease. |
-| **Ingress with HTTP application routing support** | _Do you need to make your deployed applications publicly available?_ | The HTTP application routing add-on makes it easy to access AKS cluster deployed applications. |
+| **Application routing and ingress** | _Do you need to make your deployed applications publicly available?_ | AKS supports application routing through the application routing add-on. AKS is transitioning to the Kubernetes Gateway API as the long-term standard for ingress. |
 | **Docker image support** | _Do you already use Docker images for your containers?_ | By default, AKS supports the Docker file image format. |
 | **Private container registry** | _Do you need a private container registry?_ | AKS integrates with Azure Container Registry (ACR). You aren't limited to ACR though, you can use other container repositories, public, or private. |
 
