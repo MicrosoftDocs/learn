@@ -3,15 +3,15 @@ A firewall is a security device, either hardware, software, or a combination of 
 
 Azure Firewall is a managed, cloud-based network security service that provides threat protection for your cloud workloads and resources running in Azure.
 
-You can deploy Azure Firewall on any virtual network but the best approach is to use it on a centralized virtual network. All your other virtual and on-premises networks will then route through it. The advantage of this model is the ability to centrally exert control of network traffic for all your VNets across different subscriptions.
+You can deploy Azure Firewall on any virtual network, but the best approach is to use it on a centralized virtual network. All your other virtual and on-premises networks route through it. The advantage of this model is the ability to centrally control network traffic for all your VNets across different subscriptions.
 
-:::image type="content" source="../media/2-azure-firewall.png" alt-text="Diagram showing how Azure Firewall is running on a centralized virtual network can protect both cloud-based VNets and your on-premises network.":::
+:::image type="content" source="../media/2-azure-firewall.png" alt-text="Diagram showing how Azure Firewall running on a centralized virtual network can protect both cloud-based VNets and your on-premises network." lightbox="../media/2-azure-firewall.png":::
 
 With Azure Firewall, you can scale up the usage to accommodate changing network traffic flows, so you don't need to budget for peak traffic. Network traffic is subjected to the configured firewall rules when you route it to the firewall as the subnet default gateway.
 
 ### Key features of Azure Firewall
 
-The list that follows provides a brief description of some of the basic capabilities of Azure Firewall.
+The list that follows provides a brief description of some of the basic capabilities of Azure Firewall.+
 
 - **Stateful Firewall**: Azure Firewall is a stateful firewall, meaning it can keep track of the state of active connections and make decisions based on the context of the traffic.
 
@@ -25,9 +25,23 @@ The list that follows provides a brief description of some of the basic capabili
 
 - **Logging and Monitoring**: Azure Firewall provides logging and monitoring capabilities to help you keep track of firewall activity and diagnose issues. Logs can be sent to Azure Monitor, Log Analytics, or Event Hubs for further analysis.
 
-- **Integration with Azure Services**: It integrates seamlessly with other Azure services, such as Azure Virtual Networks, Azure Policy, and Azure Security Center, providing a cohesive security solution for your cloud infrastructure.
+- **Integration with Azure services**: Azure Firewall integrates with other Azure services, such as Azure Virtual Networks, Azure Policy, and Microsoft Defender for Cloud, providing a cohesive security solution for your cloud infrastructure.
 
-Azure Firewall is offered in three SKUs: Standard, Premium, and Basic. Detailed information of the features included for each of the available SKUs (standard, premium, and basic) is provided in the Learn more section in the summary and resources unit.
+Azure Firewall is offered in three tiers: Basic, Standard, and Premium. Each tier is designed for different organizational needs and security requirements.
+
+## Azure Firewall tiers
+
+- **Azure Firewall Basic**: Designed for small and medium-sized businesses (SMBs). It provides essential threat protection at an affordable price. Azure Firewall Basic supports Threat Intelligence in alert mode only and uses a fixed-scale unit with two virtual machine backend instances. It's recommended for environments with an estimated throughput of 250 Mbps.
+
+- **Azure Firewall Standard**: Provides layer 3 through layer 7 filtering and threat intelligence feeds directly from Microsoft Cyber Security. It alerts you to and blocks traffic to or from known malicious IP addresses and domains, updating in real time to protect against new and emerging threats. This is the most commonly used tier for production enterprise environments.
+
+- **Azure Firewall Premium**: Provides advanced capabilities, including signature-based intrusion detection and prevention system (IDPS) for rapid attack detection. IDPS identifies specific patterns—such as byte sequences in network traffic or known malicious instruction sequences used by malware. With over 67,000 signatures in more than 50 categories, updated in real time, Azure Firewall Premium protects against new and emerging exploits such as malware, phishing, coin mining, and Trojan attacks. Premium is designed for highly sensitive and regulated environments.
+
+## Azure Firewall Manager
+
+Azure Firewall Manager provides a central place to manage Azure Firewalls across multiple subscriptions. Rather than managing each firewall individually, Firewall Manager lets you define a common set of network and application rules in firewall policies and apply those policies to all firewalls across your organization's tenant. This is particularly useful for organizations with complex, distributed network environments spanning multiple Azure subscriptions or regions.
+
+Firewall Manager supports firewalls deployed in both virtual networks and Virtual WAN (Secure Virtual Hub) environments.
 
 #### Integration with Security Copilot
 
