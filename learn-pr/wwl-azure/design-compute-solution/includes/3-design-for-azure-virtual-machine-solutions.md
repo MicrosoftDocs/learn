@@ -57,7 +57,7 @@ The best way to determine the appropriate machine size is to consider the type o
 
 A subscription is billed two separate costs for every virtual machine: _compute_ and _storage_. By separating these costs, you can scale them independently and only pay for what you need.
 
-- **Compute costs**: Compute expenses are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, you're charged for only 55 minutes of usage. You're not charged for compute capacity if you stop and deallocate the virtual machine. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the virtual machine size and operating system you select.
+- **Compute costs**: Compute expenses are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, you're charged for only 55 minutes of usage. You're not charged for compute capacity if you stop and deallocate the virtual machine. The hourly price varies based on the virtual machine size and operating system you select.
 
 - **Storage costs**: You're charged separately for the Azure Storage the virtual machine uses. The status of the virtual machine has no relation to the Azure Storage charges that are incurred. You're always charged for any Azure Storage used by the disks. 
 

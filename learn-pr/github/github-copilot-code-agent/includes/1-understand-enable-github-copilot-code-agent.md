@@ -2,24 +2,24 @@ This unit explains what the agent is, how it differs from traditional AI coding 
 
 By the end of this unit, you'll be able to:
 
-- Explain what the GitHub Copilot coding agent is, who can use it, and where it's available.
+- Explain what the GitHub Copilot Cloud Agent  is, who can use it, and where it's available.
 - Describe the tasks it can perform and how to delegate work.
 - Distinguish it from IDE-only assistants and Copilot's "agent mode."
 - Enable the agent at the organization or repository level.
 - Understand how GitHub Actions minutes and Premium Request Units (PRUs) are used and manage them effectively.
 
-What is GitHub Copilot coding agent, who can use it and where it's available.
+### What is GitHub Copilot Cloud Agent , who can use it and where it's available.
 
-GitHub Copilot coding agent is an autonomous development assistant that runs inside GitHub itself. Rather than pairing with you only in your IDE, the agent acts like a background teammate. You give it a clearly scoped task-such as a bug fix, an incremental feature, or documentation update-and it creates a branch, writes commits, opens a draft pull request, updates the PR description with status, and then requests your review.
+GitHub Copilot Cloud Agent is an autonomous development assistant that runs inside GitHub itself. Rather than pairing with you only in your IDE, the agent acts like a background teammate. You give it a clearly scoped task—such as a bug fix, an incremental feature, or documentation update—and it creates a branch, explores the codebase, generates an implementation plan, and drafts code while keeping you in control of when and whether to open a pull request.
 
 ### Availability and plans
 
 - **Plans:** Available on Copilot Pro, Copilot Pro+, Copilot Business, Copilot Enterprise.
 - **Repositories:** Works in all GitHub-hosted repositories except those owned by managed user accounts or where the agent is explicitly disabled.
 
-### What the Copilot coding agent does
+### What the Copilot Cloud Agent  does
 
-Copilot coding agent can take on a wide range of development tasks:
+Copilot Cloud Agent  can take on a wide range of development tasks:
 
 - Fix bugs and regressions.
 - Implement incremental new features.
@@ -30,7 +30,7 @@ Copilot coding agent can take on a wide range of development tasks:
 You can delegate work to the agent in two primary ways:
 
 - **Assign an issue** to Copilot - on GitHub.com, GitHub Mobile, or via API/CLI.
-- **Ask Copilot to create a pull request** - from the Agents panel on GitHub, Copilot Chat, your IDE or other agentic tool with MCP support, or Raycast on macOS.
+- **Ask Copilot to make code changes** - from the Agents panel on GitHub, Copilot Chat, your IDE or other agentic tool with MCP support, or Raycast on macOS.
 
 When the agent finishes, it requests your review. You can mention @copilot in a pull-request comment to ask it to iterate on its work.
 
@@ -38,23 +38,23 @@ When the agent finishes, it requests your review. You can mention @copilot in a 
 
 Traditional AI assistants in IDEs help you write code locally but leave manual steps to you: creating branches, pushing commits, writing PR descriptions, and iterating. Those decisions happen in a private session and aren't visible to your team.
 
-With Copilot coding agent:
+With Copilot Cloud Agent :
 
 - All work happens as commits on GitHub.
-- The agent automates branch creation, commit messages, PR opening, and PR descriptions.
+- The agent automates branch creation, commit messages, and code drafting, while letting you decide if and when to open a PR.
 - Work is visible in session logs and PR history for traceability.
 - You steer via PR review comments rather than synchronous local sessions.
 
 This creates transparency and collaboration opportunities-your teammates can see each step and jump in as needed.
 
-### Coding agent vs. "Agent Mode" in IDEs
+### Cloud agent vs. "Agent Mode" in IDEs
 
-It's important to distinguish the GitHub Copilot coding agent (covered in this module) from the agent mode feature in Visual Studio and Visual Studio Code:
+It's important to distinguish the GitHub Copilot Cloud Agent  (covered in this module) from the agent mode feature in Visual Studio and Visual Studio Code:
 
-- **Coding agent:** Runs autonomously in a GitHub Actions-powered environment to complete development tasks you assign through issues or Copilot Chat. It creates pull requests with results.
+- **Cloud agent:** Runs autonomously in a GitHub Actions-powered environment to complete development tasks you assign through issues or Copilot Chat.
 - **Agent mode (Copilot Edits):** Performs autonomous local edits directly in your IDE session.
 
-### Enabling the Copilot coding agent
+### Enabling the Copilot Cloud Agent 
 
 Before assigning tasks to Copilot, ensure the agent is enabled:
 
@@ -63,7 +63,7 @@ Before assigning tasks to Copilot, ensure the agent is enabled:
 
 **Usage Costs: GitHub Actions + PRUs**
 
-Copilot coding agent uses two main resources:
+Copilot Cloud Agent  uses two main resources:
 
 - **GitHub Actions minutes** for the ephemeral build/test environment where the agent works.
 - **Copilot Premium Requests (PRUs)** to power advanced model reasoning.

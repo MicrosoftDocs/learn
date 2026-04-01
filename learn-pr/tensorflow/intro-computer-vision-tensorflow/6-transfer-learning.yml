@@ -2,23 +2,21 @@
 uid: learn.tensorflow.intro-computer-vision.transfer-learning
 title: Pretrained models and transfer learning
 metadata:
-  title: Pretrained models and transfer learning
+  title: Pretrained Models and Transfer Learning
   description: Learn how to use models pretrained on large datasets, and how to train our own models using them.
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 04/01/2026
   ms.update-cycle: 180-days
   ms.topic: unit
-  ms.collection:
-    - ce-advocates-ai-copilot
-  ms.custom: team=nextgen
+  ms.collection: ce-advocates-ai-copilot
 durationInMinutes: 10
-sandbox: true
-notebook: notebooks/6-transfer-learning.ipynb
+content: |
+  [!include[](includes/6-transfer-learning.md)]
 quiz:
   title: Check your knowledge
   questions:
-    - content: "For transfer learning, we're using a VGG-16 network pretrained on 1000 classes. What is the number of classes we can have in our network?"
+    - content: "For transfer learning, we're using a VGG-16 network pretrained on 1,000 classes. What is the number of classes we can have in our network?"
       choices:
         - content: "Any"
           isCorrect: true
