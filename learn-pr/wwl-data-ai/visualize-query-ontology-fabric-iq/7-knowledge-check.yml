@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-query-ontology-fabric-iq.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  module_assessment: true
+  ai_generated_module_assessment: true
+  description: Check your knowledge of visualizing and querying ontology data with Microsoft Fabric IQ.
+  ms.date: 03/30/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A data analyst opens the entity type overview for the Patient entity type and notices the entity instances table shows fewer rows than the source lakehouse table. What is the most likely cause?"
+    choices:
+    - content: "The entity type has too many properties configured."
+      isCorrect: false
+      explanation: "Incorrect. The number of properties doesn't affect how many instances are loaded. The entity type key and binding configuration determine instance count."
+    - content: "The entity type key doesn't correctly match a unique column in the source table."
+      isCorrect: true
+      explanation: "Correct. The key configuration determines how the system identifies and loads entity instances from the source data. A mismatched or missing key prevents instances from loading correctly."
+    - content: "The relationship graph tile hasn't been expanded yet."
+      isCorrect: false
+      explanation: "Incorrect. The relationship graph tile is separate from the entity instances table and doesn't affect how instances are loaded."
+  - content: "In the relationship graph, a Room node shows no edges connecting it to any Patient nodes, even though the source lakehouse table shows patients assigned to that room. What does this indicate?"
+    choices:
+    - content: "The Patient entity type has too many active filters applied."
+      isCorrect: false
+      explanation: "Incorrect. Filters narrow query results but don't affect whether relationship edges exist in the graph structure."
+    - content: "The Room entity type needs to be refreshed separately from the Patient entity type."
+      isCorrect: false
+      explanation: "Incorrect. Refresh applies to the graph model as a whole, not to individual entity types separately."
+    - content: "The relationship binding isn't finding matching records based on the configured entity type keys."
+      isCorrect: true
+      explanation: "Correct. Edges only appear in the graph when the relationship binding matches keys between entity instances. If source data exists but edges don't appear, the relationship binding configuration may not be matching records correctly."
+  - content: "You want to query the ontology for patients assigned to rooms in the Cardiology department. Which combination of Query builder controls do you need?"
+    choices:
+    - content: "Add a filter for DepartmentName = Cardiology and ensure Department, Room, and Patient nodes are enabled in the Components pane."
+      isCorrect: true
+      explanation: "Correct. A filter on the Department entity type narrows results to Cardiology, while enabling the appropriate node and edge types in the Components pane controls what appears in the graph results."
+    - content: "Remove all components except Patient nodes and run the default query."
+      isCorrect: false
+      explanation: "Incorrect. Removing Department and Room components from the query would exclude the entity types needed to trace the connection path from Cardiology to patients. All three node types are required."
+    - content: "Switch to Table view and add a filter for each entity type separately."
+      isCorrect: false
+      explanation: "Incorrect. The view type (Diagram, Card, Table) only changes how results are displayed, not which entities are returned. Switching views doesn't affect query filtering."
+  - content: "A clinical analyst adds three new patients to the Lamna Healthcare lakehouse. She then opens the ontology and doesn't see the new patients in the entity instances table. What should she do?"
+    choices:
+    - content: "Modify the Patient entity type's property definitions to pick up the new records."
+      isCorrect: false
+      explanation: "Incorrect. Changing property definitions triggers a schema refresh but doesn't help here—new data rows aren't detected automatically, only structural changes to the ontology are."
+    - content: "Open the Query builder and clear the active filters."
+      isCorrect: false
+      explanation: "Incorrect. Clearing Query builder filters doesn't affect the entity instances table, which reflects the last ingested data regardless of any filters applied in the graph view."
+    - content: "Manually refresh the graph model from the workspace to re-ingest the updated source data."
+      isCorrect: true
+      explanation: "Correct. When data changes in an upstream lakehouse or eventhouse, the graph model doesn't update automatically. Manually triggering a refresh (or waiting for a scheduled refresh) re-ingests the updated source data and makes the new patient records visible."

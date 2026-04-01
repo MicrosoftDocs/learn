@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.visualize-query-ontology-fabric-iq
+metadata:
+  title: Visualize and Query Ontology Data with Microsoft Fabric IQ
+  description: Learn how to explore entity instances, visualize entity connections in the relationship graph, query ontology data using the Query builder with filters and components, and refresh the graph model when upstream data sources change.
+  ms.date: 03/30/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Visualize and query ontology data with Microsoft Fabric IQ
+summary: After building and binding your ontology in Fabric IQ, explore entity instances, visualize business concept connections in the relationship graph, and query across multiple data sources using the Query builder—without writing SQL joins.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explore entity instances to see how bound data populates your ontology
+  - Expand the relationship graph to visualize entity connections
+  - Query ontology data using the Query builder with filters and components
+  - Refresh the graph model when upstream data sources change
+prerequisites: |
+  Before starting this module, you should have:
+  - Completed the "Create an ontology (preview) with Fabric IQ" module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
+  - Familiarity with Microsoft Fabric workspaces and navigation
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.visualize-query-ontology-fabric-iq.introduction
+- learn.wwl.visualize-query-ontology-fabric-iq.explore-ontology
+- learn.wwl.visualize-query-ontology-fabric-iq.visualize-relationships
+- learn.wwl.visualize-query-ontology-fabric-iq.query-ontology-query-builder
+- learn.wwl.visualize-query-ontology-fabric-iq.refresh-graph-model
+- learn.wwl.visualize-query-ontology-fabric-iq.exercise-query-ontology
+- learn.wwl.visualize-query-ontology-fabric-iq.knowledge-check
+- learn.wwl.visualize-query-ontology-fabric-iq.summary
+badge:
+  uid: learn.wwl.visualize-query-ontology-fabric-iq.badge

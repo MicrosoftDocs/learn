@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-query-ontology-fabric-iq.exercise-query-ontology
+title: Exercise - Query ontology across data sources
+metadata:
+  title: Exercise - Query Ontology Across Data Sources
+  description: Practice using the Query builder in Microsoft Fabric IQ to answer a business question by adding filters, selecting components, and interpreting graph query results.
+  ms.date: 03/30/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-query-ontology.md)]
