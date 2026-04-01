@@ -14,7 +14,7 @@ x_test = x_test.astype(np.float32) / 255.0
 
 A basic **neural network** consists of many **layers**. The simplest network would include just one fully connected layer, which is called **Dense** layer, with 784 inputs (one input for each pixel of the input image) and 10 outputs (one output for each class). It's called dense because it contains all possible connections between 784 inputs and 10 outputs, giving 7,840 connection weights plus 10 bias terms for a total of 7,850 trainable parameters.
 
-![A diagram showing dense neural network structure](../media/dense-one-layer-network.png)
+![A diagram showing dense neural network structure.](../media/dense-one-layer-network.png)
 
 However, our input data comes in the form of 28×28 matrices, while a network input needs to be a one-dimensional vector of length 784. Thus, the first layer of the network would be a `Flatten` layer that converts 28×28 pixels into a vector.
 
