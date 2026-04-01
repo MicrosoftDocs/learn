@@ -4,10 +4,10 @@ title: Exercise - Back up virtual machines
 metadata:
   title: Exercise - Back up virtual machines
   description: "Exercise - Back up Linux virtual machines"
-  ms.date: 07/30/2024
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise-backup-virtual-machines.md)]
+  [!include[](includes/5-exercise-backup-virtual-machines.md)]
