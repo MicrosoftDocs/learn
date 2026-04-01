@@ -1,4 +1,4 @@
-[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps) is another type of serverless compute solution that offers a cloud-based platform for creating and running automated _workflows_. Workflows are step-by-step processes that integrate your applications, data, services, and systems. With Azure Logic Apps, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. 
+[Azure Logic Apps](/azure/logic-apps/logic-apps-overview) is another type of serverless compute solution that offers a cloud-based platform for creating and running automated _workflows_. Workflows are step-by-step processes that integrate your applications, data, services, and systems. With Azure Logic Apps, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. 
 
 ### Things to know about Azure Logic Apps
 
