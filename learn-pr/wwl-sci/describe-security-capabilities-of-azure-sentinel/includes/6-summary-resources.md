@@ -16,15 +16,15 @@ The following resources provide additional information on the topics covered in 
 
 ### Describe threat detection and mitigation capabilities in Microsoft Sentinel
 
-- [About Microsoft Sentinel content and solutions](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-solutions)
-- [Microsoft Sentinel in the Microsoft Defender portal](https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal)
-- [Connect Microsoft Sentinel to Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/microsoft-sentinel-onboard)
-- [Threat detection in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/detect-threats-built-in)
-- [Advanced multistage attack detection (Fusion) in Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/fusion)
-- [What are unified security operations in the Microsoft Defender portal?](https://learn.microsoft.com/en-us/unified-secops-platform/overview-unified-security)
+- [About Microsoft Sentinel content and solutions](/azure/sentinel/sentinel-solutions)
+- [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
+- [Connect Microsoft Sentinel to Microsoft Defender XDR](/defender-xdr/microsoft-sentinel-onboard)
+- [Threat detection in Microsoft Sentinel](/azure/sentinel/detect-threats-built-in)
+- [Advanced multistage attack detection (Fusion) in Microsoft Sentinel](/azure/sentinel/fusion)
+- [What are unified security operations in the Microsoft Defender portal?](/unified-secops-platform/overview-unified-security)
 
 ### Describe Microsoft Security Copilot and its integration with Microsoft Sentinel
 
-- [What is Microsoft Security Copilot?](https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot)
-- [Security Copilot with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/sentinel-security-copilot)
-- [Copilot in Microsoft Defender](https://learn.microsoft.com/en-us/defender-xdr/security-copilot-in-microsoft-365-defender)
+- [What is Microsoft Security Copilot?](/copilot/security/microsoft-security-copilot)
+- [Security Copilot with Microsoft Sentinel](/azure/sentinel/sentinel-security-copilot)
+- [Copilot in Microsoft Defender](/defender-xdr/security-copilot-in-microsoft-365-defender)

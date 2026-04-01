@@ -55,7 +55,7 @@ Microsoft Sentinel maps detection coverage to the **MITRE ATT&CK® framework**, 
 The **Content hub** is your centralized location to discover and deploy packaged solutions. Each solution bundles multiple content types—data connectors, workbooks, analytics rules, hunting queries, and playbooks—into a single deployment for a complete end-to-end scenario.
 
 # [MITRE ATT&ACK framework](#tab/mitre)
-:::image type="content" source="../media/mitre-in-defender-v3.png" lightbox="../media/mitre-in-defender-v3.png" alt-text="Screen capture of the MITRE ATT&ACK framework integration with Microsoft Sentinel in the Microsoft Defender portal.":::
+:::image type="content" source="../media/framework-in-defender-v3.png" lightbox="../media/framework-in-defender-v3.png" alt-text="Screen capture of the MITRE ATT&ACK framework integration with Microsoft Sentinel in the Microsoft Defender portal.":::
 
 # [Content hub](#tab/content-hub)
 :::image type="content" source="../media/content-hub.png" lightbox="../media/content-hub.png" alt-text="Screen capture of the Microsoft Sentinel content hub showing packaged solutions with analytics rules, workbooks, and playbooks.":::
