@@ -36,12 +36,6 @@ Let's look at some scenarios for using Azure App Service. As you review these op
 
 - **Consider WebJobs**. Use the App Service [WebJobs](/azure/app-service/webjobs-create) feature to run a program or script. Program examples include Java, PHP, Python, or Node.js. Script examples include cmd, bat, PowerShell, or Bash. WebJobs are scheduled or run with a trigger. WebJobs are often used to run background tasks as part of your application logic.
 
-- **Consider Mobile apps**. Exercise the Mobile Apps feature of Azure App Service to quickly build a backend for iOS and Android apps. On the mobile app side, App Service provides SDK support for native iOS and Android, Xamarin, and React native apps. With just a few steps in the Azure portal, you can:
-   - Store mobile app data in a cloud-based SQL database.
-   - Authenticate customers against common social providers, such as MSA, Google, X, and Facebook.
-   - Send push notifications.
-   - Execute custom back-end logic in C# or Node.js.
-
 - **Consider continuous deployment**. Choose the Standard App Service Plan tier or better to enable continuous deployment of your code. Deploy your app to a staging slot and validate your app with test runs. When the app is ready for release, swap your staging and production slots. The swap operation warms up the necessary worker instances to match your production scale, which eliminates downtime.
 
 - **Consider authentication and authorization**. Take advantage of the built-in authentication capabilities in Azure App Service. You don't need any language, SDK, security expertise, or even any code to use the functionality in your web app or API. You can integrate with multiple sign-in providers, such as Microsoft Entra ID, Facebook, Google, and X. Azure Functions offers the same built-in authentication features that are available in App Service.

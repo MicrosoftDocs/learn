@@ -1,4 +1,4 @@
-GitHub Copilot coding agent runs inside a secure, ephemeral GitHub Actions environment. With a few configuration steps you can preseed this environment to improve reliability and speed, extend the agent's capabilities with external tools through the Model Context Protocol (MCP), and apply best practices to test and validate the agent's output before merging.
+GitHub Copilot Cloud Agent  runs inside a secure, ephemeral GitHub Actions environment. With a few configuration steps you can preseed this environment to improve reliability and speed, extend the agent's capabilities with external tools through the Model Context Protocol (MCP), and apply best practices to test and validate the agent's output before merging.
 
 By the end of this unit, you will be able to:
 
@@ -75,7 +75,7 @@ Default internet access is limited to reduce exfiltration risk. You can customiz
 
 MCP is an open standard for connecting LLMs to tools and data. The agent can use **tools** provided by local or remote MCP servers to expand its capabilities.
 
-Note: Copilot coding agent supports MCP tools only (not resources or prompts). Remote MCP servers that require OAuth aren't supported.
+Note: Copilot Cloud Agent  supports MCP tools only (not resources or prompts). Remote MCP servers that require OAuth aren't supported.
 
 **Default MCP servers**
 
@@ -84,7 +84,7 @@ Note: Copilot coding agent supports MCP tools only (not resources or prompts). R
 
 **Repository configuration** 
 
-Admins can declare MCP servers via a JSON configuration in the repo. Once configured, the agent autonomously uses the available tools-no per-use approval prompts. See Extending GitHub Copilot coding agent with MCP.
+Admins can declare MCP servers via a JSON configuration in the repo. Once configured, the agent autonomously uses the available tools-no per-use approval prompts. See Extending GitHub Copilot Cloud Agent  with MCP.
 
 **Best practices**
 

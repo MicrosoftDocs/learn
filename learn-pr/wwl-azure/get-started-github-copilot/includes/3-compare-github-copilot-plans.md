@@ -12,7 +12,7 @@ GitHub offers several plans for GitHub Copilot, depending on your needs and whet
 
 - **GitHub Copilot Pro+** offers the highest level of access for individual developers. In addition to everything in GitHub Copilot Pro, this plan includes a larger allowance of premium requests and full access to all available models in GitHub Copilot Chat. Ideal for AI power users who want access to the most advanced capabilities.
 
-- **GitHub Copilot Business** is for organizations on GitHub Free or GitHub Team plan, or enterprises on GitHub Enterprise Cloud. This plan includes GitHub Copilot coding agent and enables centralized management and GitHub Copilot policy control for organization members.
+- **GitHub Copilot Business** is for organizations on GitHub Free or GitHub Team plan, or enterprises on GitHub Enterprise Cloud. This plan includes GitHub Copilot Cloud Agent  and enables centralized management and GitHub Copilot policy control for organization members.
 
 - **GitHub Copilot Enterprise** is for enterprises using GitHub Enterprise Cloud. It includes all the features of GitHub Copilot Business, plus additional enterprise-grade capabilities. Enterprise owners can assign either GitHub Copilot Enterprise or GitHub Copilot Business to individual organizations.
 
@@ -31,7 +31,7 @@ The tables below show the features available in each GitHub Copilot plan.
 
 | Feature                     | GitHub Copilot Free | GitHub Copilot Pro                          | GitHub Copilot Pro+                        | GitHub Copilot Business                  | GitHub Copilot Enterprise                |
 |-----------------------------|--------------|---------------------------------------|-------------------------------------|------------------------------------|------------------------------------|
-| GitHub Copilot coding agent        | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot Cloud Agent         | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Agent mode                  | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | GitHub Copilot code review  | Only "Review selection" in Visual Studio Code | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Model Context Protocol (MCP) | &#10003;    | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
