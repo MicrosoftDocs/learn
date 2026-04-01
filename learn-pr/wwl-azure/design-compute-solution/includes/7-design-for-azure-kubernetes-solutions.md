@@ -1,4 +1,4 @@
-[Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/) is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform provides the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both _container management_ and _container orchestration_. 
+[Kubernetes](/azure/aks/) is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform provides the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both _container management_ and _container orchestration_. 
 
 :::image type="content" source="../media/container-scaling.png" alt-text="Diagram that shows how container orchestration dynamically or automatically scales container instances." border="false":::
 
@@ -33,11 +33,6 @@ There are several factors to consider when deciding whether Azure Kubernetes Ser
 | **Application routing and ingress** | _Do you need to make your deployed applications publicly available?_ | AKS supports application routing through the application routing add-on. AKS is transitioning to the Kubernetes Gateway API as the long-term standard for ingress. |
 | **Docker image support** | _Do you already use Docker images for your containers?_ | By default, AKS supports the Docker file image format. |
 | **Private container registry** | _Do you need a private container registry?_ | AKS integrates with Azure Container Registry (ACR). You aren't limited to ACR though, you can use other container repositories, public, or private. |
-
-#### Business application
-
-Take a few minutes to read about how [Mercedes-Benz R&D is using Azure Kubernetes Service](https://customers.microsoft.com/story/784791-mercedes-benz-r-and-d-creates-container-driven-cars-powered-by-microsoft-azure).
-
 
 > [!TIP]
 > Learn more about Kubernetes in the [Introduction to Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/) module. 
