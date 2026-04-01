@@ -45,6 +45,8 @@ There are several points to consider when deciding whether Azure Logic Apps is t
 
 - **Consider other options**. Know when _not_ to use Azure Logic Apps. There are cases where Logic Apps might not be the best option. Logic Apps isn't an ideal solution for real-time requirements, complex business rules, or if you're using nonstandard services.
 
+- **Consider Logic Apps hosting models**. **Consumption plan**: multi-tenant, pay-per-execution, and one workflow per resource. The consumption plan is best for occasional workloads. **Standard plan**: single-tenant, virtual network integration, multiple workflows per app, and dedicated compute resources. The standard plan is best for enterprise integration or compliance-sensitive workloads.
+  
 #### Business application
 
 This flowchart shows a detailed decision tree for when to use Azure Logic Apps.
