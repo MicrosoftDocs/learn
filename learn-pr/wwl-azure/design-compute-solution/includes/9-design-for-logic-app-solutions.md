@@ -8,7 +8,7 @@ Let's review some characteristics of Azure Logic Apps and scenarios for using th
 
 - Azure Logic Apps is a component of [Azure Integration Services](https://azure.microsoft.com/product-categories/integration/). Logic Apps simplifies the way you connect legacy, modern, and cutting-edge systems across cloud, on-premises, and hybrid environments.
 
-- With Logic Apps, you can schedule and send email notifications by using Office 365 when a specific event happens, such as a new file uploaded.
+- With Logic Apps, you can schedule and send email notifications by using Microsoft 365 when a specific event happens, such as a new file uploaded.
 
 - Use Logic Apps to route and process customer orders across on-premises systems and cloud services.
 
