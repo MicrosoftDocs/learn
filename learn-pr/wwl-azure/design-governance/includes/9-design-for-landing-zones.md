@@ -18,7 +18,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 - A landing zone can be scoped to support application migrations and development to scale across the organization's full IT portfolio.
 
-- The Azure landing zone accelerator can be deployed into the same Microsoft Entra tenant for an existing Azure architecture. The accelerator is an Azure-portal-based deployment.
+- The Azure landing zone IaC accelerator is the recommended way to deploy and manage landing zones. It uses Bicep or Terraform via Azure Verified Modules (AVMs) to automate deployment. A portal-based accelerator is also available for organizations without IaC expertise.
 
 ### Things to consider when using Azure landing zones
 
