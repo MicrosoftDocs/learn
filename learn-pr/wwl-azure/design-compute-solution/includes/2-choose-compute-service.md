@@ -21,7 +21,9 @@ Let's take a quick look at the Azure compute services we review in this module.
 
 - **Azure Logic Apps**: Configure this cloud-based _platform_ to create and run automated workflows similar to capabilities in Azure Functions.
 
-- **Azure Container Instances**: Run containers in Azure in a fast and simple manner without creating virtual machines or relying on a higher-level service.
+- **Azure Container Instances (ACI)**: Run containers in Azure in a fast and simple manner without creating virtual machines or relying on a higher-level service.
+
+- **Azure Container Apps (ACA)**: Run containerized applications on a fully managed serverless platform without managing Kubernetes infrastructure. Supports scale-to-zero, Dapr integration, jobs, and revision-based traffic management.
 
 - **Azure Kubernetes Service (AKS)**: Run containerized applications with this managed Kubernetes service.
 
