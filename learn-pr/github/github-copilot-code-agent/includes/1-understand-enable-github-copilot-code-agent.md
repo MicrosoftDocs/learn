@@ -8,7 +8,7 @@ By the end of this unit, you'll be able to:
 - Enable the agent at the organization or repository level.
 - Understand how GitHub Actions minutes and Premium Request Units (PRUs) are used and manage them effectively.
 
-What is GitHub Copilot Cloud Agent , who can use it and where it's available.
+### What is GitHub Copilot Cloud Agent , who can use it and where it's available.
 
 GitHub Copilot Cloud Agent is an autonomous development assistant that runs inside GitHub itself. Rather than pairing with you only in your IDE, the agent acts like a background teammate. You give it a clearly scoped task—such as a bug fix, an incremental feature, or documentation update—and it creates a branch, explores the codebase, generates an implementation plan, and drafts code while keeping you in control of when and whether to open a pull request.
 
@@ -30,7 +30,7 @@ Copilot Cloud Agent  can take on a wide range of development tasks:
 You can delegate work to the agent in two primary ways:
 
 - **Assign an issue** to Copilot - on GitHub.com, GitHub Mobile, or via API/CLI.
-- **Ask Copilot to create a pull request** - from the Agents panel on GitHub, Copilot Chat, your IDE or other agentic tool with MCP support, or Raycast on macOS.
+- **Ask Copilot to make code changes** - from the Agents panel on GitHub, Copilot Chat, your IDE or other agentic tool with MCP support, or Raycast on macOS.
 
 When the agent finishes, it requests your review. You can mention @copilot in a pull-request comment to ask it to iterate on its work.
 
