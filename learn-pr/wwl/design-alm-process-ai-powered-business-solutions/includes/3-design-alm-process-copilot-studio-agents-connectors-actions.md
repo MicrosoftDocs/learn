@@ -4,7 +4,7 @@ This unit guides solution architects through designing an Application Lifecycle 
 
 Architects learn how to structure solution components into managed lifecycles, establish promotion and approval workflows, manage data and environment boundaries, and integrate development tooling—enabling a predictable, repeatable process that aligns with enterprise governance.
 
-## 1. ALM Foundations for Copilot Studio
+## ALM Foundations for Copilot Studio
 
 Copilot Studio solutions typically include:
 
@@ -30,7 +30,7 @@ A mature ALM process ensures:
 
 * Sustainable lifecycle for updates and deprecations
 
-## 2. Recommended Environment Strategy
+## Recommended Environment Strategy
 
 ### Establish at least three core environments:
 
@@ -64,11 +64,11 @@ A mature ALM process ensures:
 
      Iterate & Author      Test, Approve, QA       Support & Monitor
 
-## 3. ALM for Agents
+## ALM for Agents
 
 Agents should move through lifecycle stages with predictable governance:
 
-### 3.1 Development Stage
+### Development Stage
 
 * Draft agent scope, intents, and behaviors
 
@@ -78,7 +78,7 @@ Agents should move through lifecycle stages with predictable governance:
 
 * Test agent workflows with edge-case prompts
 
-### 3.2 Testing Stage
+### Testing Stage
 
 * Validate reasoning quality and output patterns
 
@@ -88,7 +88,7 @@ Agents should move through lifecycle stages with predictable governance:
 
 * Run regression tests on all agent topics
 
-### 3.3 Production Stage
+### Production Stage
 
 * Deploy via managed solutions
 
@@ -98,7 +98,7 @@ Agents should move through lifecycle stages with predictable governance:
 
 * Document change history
 
-## 4. ALM for Connectors
+## ALM for Connectors
 
 Connectors enable Copilot to interact with systems.
 
@@ -118,7 +118,7 @@ Connectors enable Copilot to interact with systems.
 
  Author → Validate Auth → Apply DLP → Approve Security → Publish to Prod
 
-## 5. ALM for Actions
+## ALM for Actions
 
 Actions represent executable steps triggered by agents.
 
@@ -134,17 +134,17 @@ Actions represent executable steps triggered by agents.
 
 * **Monitor** - Track success/failure rates and performance metrics
 
-## 6. Version Control and Release Management
+## Version Control and Release Management
 
 To maintain consistency and avoid configuration drift:
 
 ### Use source control
 
-Export solution packages and store them in source repositories
+* Export solution packages and store them in source repositories
 
-Track configuration changes for agents, connectors, and actions through a strong change management process.
+* Track configuration changes for agents, connectors, and actions through a strong change management process.
 
-Use Visual Studio Code for Copilot connector development where applicable
+* Use Visual Studio Code for Copilot connector development where applicable
 
 ### Adopt release cadence
 
@@ -156,7 +156,7 @@ Use Visual Studio Code for Copilot connector development where applicable
 
 * Change management plan for users
 
-## 7. Governance and Compliance Controls
+## Governance and Compliance Controls
 
 ALM must align with enterprise governance rules:
 
@@ -183,7 +183,7 @@ ALM must align with enterprise governance rules:
 * [✓] Risk & Safety Assessment Passed
 * [✓] Monitoring Enabled
 
-## 8. Monitoring and Continuous Improvement
+## Monitoring and Continuous Improvement
 
 ### Monitoring signals include:
 

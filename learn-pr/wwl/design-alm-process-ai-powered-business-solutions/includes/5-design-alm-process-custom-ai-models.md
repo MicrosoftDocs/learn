@@ -4,7 +4,7 @@ This unit provides solution architects with a structured, enterprise-grade Appli
 
 Custom AI models introduce unique ALM challenges such as data drift, model drift, regulatory alignment, and high-impact deployment risks. This unit provides architects with an actionable framework for governing model evolution from ideation through retirement.
 
-## 1. ALM Foundations for Custom AI Models
+## ALM Foundations for Custom AI Models
 
 ### A strong ALM process ensures:
 
@@ -16,7 +16,7 @@ Custom AI models introduce unique ALM challenges such as data drift, model drift
 
 * **Operational Readiness**: Runtime monitoring, governance logs, and rollback plans ensure business resilience.
 
-## 2. Environment Strategy for Model Development
+## Environment Strategy for Model Development
 
 Establishing a multi-environment design prevents configuration drift and ensures safe promotions.
 
@@ -36,11 +36,11 @@ Establishing a multi-environment design prevents configuration drift and ensures
 
 → [Production]
 
-## 3. ALM Lifecycle for Custom AI Models
+## ALM Lifecycle for Custom AI Models
 
 The lifecycle includes the following stages:
 
-### 1. Plan & Design
+### Plan & Design
 
 * Define business use case, success criteria, constraints.
 
@@ -48,23 +48,23 @@ The lifecycle includes the following stages:
 
 * Document intended model behavior, limitations, failure paths.
 
-### 2. Data Preparation
+### Data Preparation
 
-*  Build data contracts and schema standards.
+* Build data contracts and schema standards.
 
-*  Establish curated datasets and "golden" evaluation datasets.
+* Establish curated datasets and "golden" evaluation datasets.
 
-*  Use versioned data pipelines to prevent drift and ensure reproducibility.
+* Use versioned data pipelines to prevent drift and ensure reproducibility.
 
-### 3. Model Development
+### Model Development
 
-*  Build, fine-tune, or incorporate "bring your own model" (BYOM) components.
+* Build, fine-tune, or incorporate "bring your own model" (BYOM) components.
 
 * Apply responsible AI requirements such as fairness, clarity, consistency, and safe response patterns.
 
 * Maintain metadata: hyperparameters, training data versions, environment configuration snapshots.
 
-### 4. Evaluation & Approval
+### Evaluation & Approval
 
 * Validate accuracy, relevance, reliability, and failure handling.
 
@@ -74,7 +74,7 @@ The lifecycle includes the following stages:
 
 * Produce a **Model Card** containing metrics, constraints, and recommended usage boundaries.
 
-### 5. Deployment
+### Deployment
 
 * Promote model via managed deployment artifacts.
 
@@ -82,7 +82,7 @@ The lifecycle includes the following stages:
 
 * Enforce access control, encryption, and runtime audit logging.
 
-### 6. Monitor & Optimize
+### Monitor & Optimize
 
 * Track telemetry: latency, error frequency, safety blocks, user satisfaction signals.
 
@@ -90,7 +90,7 @@ The lifecycle includes the following stages:
 
 * Trigger retraining cycles with updated data.
 
-### 7. Retirement
+### Retirement
 
 When model no longer meets accuracy, safety, cost, or business expectations: 
 
@@ -100,7 +100,7 @@ When model no longer meets accuracy, safety, cost, or business expectations:
 
 * Document transition plan to the next model version.
 
-## 4. Promotion Gates for Enterprise Readiness
+## Promotion Gates for Enterprise Readiness
 
 Promotion gates ensure only compliant, validated models move forward.
 
@@ -124,19 +124,19 @@ Promotion gates ensure only compliant, validated models move forward.
 
 ### Text Visual: Gate Checklist
 
-* Data quality validated
+* [] Data quality validated
 
-* Evaluation metrics achieved
+* [] Evaluation metrics achieved
 
-* Safety checks completed
+* [] Safety checks completed
 
-* Model Card produced
+* [] Model Card produced
 
-* Governance approvals obtained
+* [] Governance approvals obtained
 
-* Rollback plan documented
+* [] Rollback plan documented
 
-## 5. Governance and Compliance Requirements
+## Governance and Compliance Requirements
 
 ### Solution architects must ensure:
 
@@ -150,7 +150,7 @@ Promotion gates ensure only compliant, validated models move forward.
 
 * Transparent audit trails for every deployment.
 
-## 6. Monitoring and Drift Management
+## Monitoring and Drift Management
 
 ### Effective monitoring requires:
 
@@ -174,7 +174,7 @@ Cost          ●●●○○
 
 Consistency   ●●●●○
 
-## 7. Architect Responsibilities Checklist
+## Architect Responsibilities Checklist
 
 * Define model development standards.
 
