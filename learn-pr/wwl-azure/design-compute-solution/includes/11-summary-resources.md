@@ -48,7 +48,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Complete the [Explore Azure Functions](/training/modules/explore-azure-functions/) module.
 
-- Complete the [introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/) module.
+- Complete the [Introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/) module.
 
 
 
