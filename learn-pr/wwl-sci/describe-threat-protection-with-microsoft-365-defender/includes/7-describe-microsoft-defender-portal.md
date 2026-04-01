@@ -65,7 +65,7 @@ Using data connectors you can connect data sources for a richer, more centralize
 
 The investigation and response tab includes access to incidents and alerts, hunting, actions & submissions, and a partner catalog.
 
-:::image type="content" source="../media/investigation-response-v2.png" alt-text="A screenshot of the Microsoft Defender portal showing the selections available for investigation and response. They are incidents and alerts, hunting, actions and submissions, and partner catalog.":::
+:::image type="content" source="../media/investigation-response-v2.png" alt-text="A screenshot of the Microsoft Defender portal showing the selections available for investigation and response. They're incidents and alerts, hunting, actions and submissions, and partner catalog.":::
 
 #### Incidents and alerts
 
@@ -79,7 +79,7 @@ Within an incident, you analyze the alerts that affect your network, understand 
 - All the automated investigations triggered by the alerts in the incident.
 - All the supported evidence and response.
 
-If your organization is onboarded Microsoft to Security Copilot you can also view an incident summary, guided responses, and more.
+If your organization is onboarded to Microsoft Security Copilot you can also view an incident summary, guided responses, and more.
 
 # [Incidents](#tab/incidents)
 :::image type="content" source="../media/incidents.png" lightbox="../media/incidents.png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
