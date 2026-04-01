@@ -12,7 +12,7 @@ The following resources provide additional information on the topics covered in 
 
 ### Define the concepts of SIEM and SOAR
 
-- [What is Microsoft Sentinel?](https://learn.microsoft.com/en-us/azure/sentinel/overview)
+- [What is Microsoft Sentinel?](/azure/sentinel/overview)
 
 ### Describe threat detection and mitigation capabilities in Microsoft Sentinel
 
