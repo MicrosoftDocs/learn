@@ -41,4 +41,4 @@ Azure infrastructure services give you the most control when your AI workload ha
 For example, a healthcare organization might deploy its workloads on Azure virtual machines. Using Azure IaaS gives the team complete control over the software, hardware, and data on those machines. While IaaS offers maximum flexibility and control, it also comes with higher operational effort and requires deeper AI and infrastructure expertise.
 
 > [!TIP]
-> Take a moment to review the [AI product decision tree](/azure/cloud-adoption-framework/scenarios/ai/strategy#microsoft-ai-decision-tree). Which AI products best align with your organization’s goals?
+> Take a moment to review the [AI product decision tree](/azure/cloud-adoption-framework/scenarios/ai/strategy#microsoft-ai-decision-tree). Which AI products best align with your organization’s goals? If your strategy includes agentic workloads, review the [AI agent decision tree](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy#ai-agent-decision-tree) for guidance on choosing between SaaS agents, Copilot Studio, and Microsoft Foundry.
