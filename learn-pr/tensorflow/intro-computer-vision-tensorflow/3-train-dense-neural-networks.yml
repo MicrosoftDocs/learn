@@ -2,19 +2,17 @@
 uid: learn.tensorflow.intro-computer-vision.train-dense-neural-networks
 title: Training a dense neural network
 metadata:
-  title: Training a dense neural network
+  title: Training a Dense Neural Network
   description: Learn how to classify images using one-layer dense neural network
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 04/01/2026
   ms.update-cycle: 180-days
   ms.topic: unit
-  ms.collection:
-    - ce-advocates-ai-copilot
-  ms.custom: team=nextgen
+  ms.collection: ce-advocates-ai-copilot
 durationInMinutes: 10
-sandbox: true
-notebook: notebooks/3-train-dense-neural-networks.ipynb
+content: |
+  [!include[](includes/3-train-dense-neural-networks.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -42,19 +40,19 @@ quiz:
       explanation: "Correct, both of those solutions are valid."
   - content: "We want to monitor the accuracy of the model on validation dataset during training. What do we need to do?"
     choices:
-    - content: "Specify `metrics=['acc']` in a call to `model.compile`"
+    - content: "Specify `metrics=['accuracy']` in a call to `model.compile`"
       isCorrect: false
       explanation: "This isn't all"
-    - content: "Specify `metrics=['acc']` in a call to `model.fit`"
+    - content: "Specify `metrics=['accuracy']` in a call to `model.fit`"
       isCorrect: false
       explanation: "Metrics are specified during model compilation phase"
     - content: "Provide validation dataset using `validation_data` parameter in `model.fit`"
       isCorrect: false
       explanation: "This isn't all"
-    - content: "Options (a) and (c)"
+    - content: "Specify `metrics=['accuracy']` in a call to `model.compile`, and provide validation dataset using `validation_data` parameter in `model.fit`"
       isCorrect: true
-      explanation: "Correct, you need to make sure that metric is specified and validation dataset is provided"
-    - content: "Options (b) and (c)"
+      explanation: "Correct, you need to make sure that metric is specified during compilation and validation dataset is provided during fitting"
+    - content: "Specify `metrics=['accuracy']` in a call to `model.fit`, and provide validation dataset using `validation_data` parameter in `model.fit`"
       isCorrect: false
-      explanation: "Metrics are specified during model compilation phase"
+      explanation: "Metrics are specified during model compilation phase, not in the fit call"
 
