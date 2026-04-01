@@ -124,17 +124,17 @@ Promotion gates ensure only compliant, validated models move forward.
 
 ### Text Visual: Gate Checklist
 
-* [] Data quality validated
+* [ ] Data quality validated
 
-* [] Evaluation metrics achieved
+* [ ] Evaluation metrics achieved
 
-* [] Safety checks completed
+* [ ] Safety checks completed
 
-* [] Model Card produced
+* [ ] Model Card produced
 
-* [] Governance approvals obtained
+* [ ] Governance approvals obtained
 
-* [] Rollback plan documented
+* [ ] Rollback plan documented
 
 ## Governance and Compliance Requirements
 
@@ -164,15 +164,15 @@ Promotion gates ensure only compliant, validated models move forward.
 
 ### Professional Visual (Text Radar Chart)
 
-Accuracy     ●●●●○  
+* Accuracy     ●●●●○  
 
-Latency      ●●●○○  
+* Latency      ●●●○○  
 
-Safety        ●●●●●  
+* Safety        ●●●●●  
 
-Cost          ●●●○○  
+* Cost          ●●●○○  
 
-Consistency   ●●●●○
+* Consistency   ●●●●○
 
 ## Architect Responsibilities Checklist
 
