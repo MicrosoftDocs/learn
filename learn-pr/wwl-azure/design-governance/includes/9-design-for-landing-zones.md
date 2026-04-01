@@ -12,6 +12,8 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
    :::image type="content" source="../media/landing-zones.png" alt-text="Diagram of a management group and subscription organization that uses landing zones." border="false":::
 
+- An Azure landing zone consists of a platform landing zone and one or more application landing zones. The platform landing zone hosts shared services (identity, connectivity, and management subscriptions) managed by a central team. Application landing zones host individual workloads or applications across development, test, and production environments.
+
 - Azure policies are associated with landing zones to ensure continued compliance with the organization platform.
 
 - Landing zones are pre-provisioned through code. 
