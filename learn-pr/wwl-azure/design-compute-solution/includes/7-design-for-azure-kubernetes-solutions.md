@@ -8,11 +8,11 @@ Container management is the process of organizing, adding, removing, or updating
 
 ### Things to know about Azure Kubernetes Service
 
-The Azure Kubernetes Service environment is enabled with many features, such as automated updates, self-healing, and easy scaling. Review the following characteristics that make AKS an appealing compute option to build new workloads and support lift and shift migrations.   
+The Azure Kubernetes Service (AKS) environment is enabled with many features, such as automated updates, self-healing, and easy scaling. Review the following characteristics that make AKS an appealing compute option to build new workloads and support lift and shift migrations.   
 
 :::image type="content" source="../media/select-azure-kubernetes-service.png" alt-text="Flowchart that shows the decision tree for selecting Azure Kubernetes Service to build new workloads and to support lift and shift migrations." border="false":::
 
-- Azure manages the Kubernetes cluster for free. You manage the agent nodes in the cluster and only pay for the virtual machines on which your nodes run.
+- AKS has three cluster management pricing tiers: Free, Standard, and Premium. The Free tier has no control plane charge but no SLA guarantee, suitable for dev/test. The Standard tier includes an hourly control plane charge with an uptime SLA, recommended for production. The Premium tier adds 24-month Long Term Support. All tiers require you to pay separately for agent node virtual machines.
 
 - When you create the cluster, you can use Azure Resource Manager (ARM) templates to automate cluster creation. With ARM templates, you specify features like as advanced networking, Microsoft Entra ID integration, and monitoring. 
 
