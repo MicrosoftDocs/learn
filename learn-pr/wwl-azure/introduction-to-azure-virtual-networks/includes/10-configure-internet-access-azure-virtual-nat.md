@@ -1,18 +1,18 @@
 
-Globally, IPv4 address ranges are in short supply, and can be an expensive way to grant access to Internet resources. [Azure Network Address Translation (NAT)](/azure/nat-gateway/nat-overview) lets internal resources on a private network to share routable IPv4 addresses. Rather than purchasing an IPv4 address for each resource that requires internet access, you can use a NAT service to map outgoing requests from internal resources to an external IP address.
+[Azure NAT Gateway](/azure/nat-gateway/nat-overview) is a fully managed Network Address Translation (NAT) service that provides secure, scalable outbound connectivity from a subnet to the internet. NAT Gateway is the recommended method for outbound connectivity in Azure. 
 
-### NAT gateway SKUs
+### NAT Gateway SKUs
 
 Azure NAT gateway is available in two SKUs.
 
-| Feature	 |Standard	 |StandardV2 |
+| Feature	 | Standard	 | StandardV2 |
 | --- | --- | --- |
 | Availability zone	 | Zonal (single zone) |	Zone-redundant (all zones) |
 | IPv6 support |	No |	Yes |
 | Maximum throughput |	50 Gbps |	100 Gbps |
 | Flow logs	 | No |	Yes |
 
-### NAT gateway usage scenario
+### NAT Gateway usage scenario
 
 The following diagram shows outbound traffic flow from Subnet 1 through the NAT gateway to be mapped to a Public IP address or a Public IP prefix.
 
@@ -22,7 +22,7 @@ After NAT is configured, all UDP and TCP outbound flows from any virtual machine
 
 NAT scales automatically to support dynamic workloads. NAT can support up to 16 public IP addresses. By using port network address translation (PNAT or PAT), NAT provides up to 64,000 concurrent flows for UDP and TCP. 
 
-### Considerations for NAT gateway
+### Considerations for NAT Gateway
 
 - Standard NAT gateway supports IPv4 only.
 - StandardV2 NAT gateway supports both IPv4 and IPv6 public IP addresses and prefixes.
