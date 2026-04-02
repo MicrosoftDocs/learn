@@ -31,7 +31,7 @@ With Security Exposure Management you can discover and monitor assets, get rich 
 :::image type="content" source="../media/initiatives.png" lightbox="../media/initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
 
 # [Secure score](#tab/secure-score)
-:::image type="content" source="../media/secure-score.png" lightbox="../media/secure-score.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
+:::image type="content" source="../media/exposure-management-secure-score.png" lightbox="../media/secure-score.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
 
 # [Data connectors](#tab/data-connectors)
 :::image type="content" source="../media/data-connectors.png" lightbox="../media/data-connectors.png" alt-text="A screenshot of the data-connectors page in Exposure Management.":::
