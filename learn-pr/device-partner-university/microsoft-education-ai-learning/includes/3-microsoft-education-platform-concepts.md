@@ -91,7 +91,7 @@ AI capabilities can:
 - Assist educators with summarizing information, organizing materials, and drafting content
 - Help students explore ideas, ask questions, and analyze information
 
-AI can reduce time spent on repetitive tasks while supporting deeper engagement with learning materials. However, adopting AI in education requires [responsible governance](/azure/machine-learning/concept-responsible-ai?view=azureml-api-2). to maintain academic integrity and transparency.
+AI can reduce time spent on repetitive tasks while supporting deeper engagement with learning materials. However, adopting AI in education requires [responsible governance](https://www.microsoft.com/ai/responsible-ai?). to maintain academic integrity and transparency.
 
 Educators remain responsible for reviewing and refining AI-generated content to ensure it aligns with instructional goals.
 
