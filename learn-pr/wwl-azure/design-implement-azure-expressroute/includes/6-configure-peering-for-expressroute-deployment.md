@@ -18,11 +18,11 @@ This comparison table compares Private peering with Microsoft peering.
 
 | Feature                     | ExpressRoute Private Peering                  | ExpressRoute Microsoft Peering                |
 |-----------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Purpose**                 | Connects directly to Azure virtual networks   | Connects to Microsoft services like Office 365, Dynamics 365, and Azure PaaS services |
+| **Purpose**                 | Connects directly to Azure virtual networks   | Connects to Microsoft services like Microsoft 365, Dynamics 365, and Azure PaaS services |
 | **Traffic Type**            | Private IP traffic                            | Public IP traffic                             |
 | **Access**                  | Direct access to Azure VMs and services within virtual networks | Access to Microsoft SaaS services and Azure PaaS services |
 | **Security**                | Traffic stays on private network, not exposed to the internet | Traffic is routed over public IPs but through a private connection |
-| **Use Cases**               | Enterprise applications, databases, and other workloads requiring secure, high-performance connectivity | Access to Microsoft services like Office 365, Dynamics 365, and Azure PaaS services |
+| **Use Cases**               | Enterprise applications, databases, and other workloads requiring secure, high-performance connectivity | Access to Microsoft services like Microsoft 365, Dynamics 365, and Azure PaaS services |
 | **Network Isolation**       | Provides network isolation from the public internet | Doesn't provide network isolation from the public internet, but ensures traffic doesn't traverse the public internet |
 | **Bandwidth Options**       | Offers scalable bandwidth options             | Offers scalable bandwidth options             |
 
