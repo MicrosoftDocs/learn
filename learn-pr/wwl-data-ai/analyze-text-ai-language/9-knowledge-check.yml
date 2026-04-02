@@ -6,35 +6,35 @@ metadata:
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/10/2026
+  ms.date: 04/02/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
   module_assessment: true
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 quiz:
   questions:
-    - content: "How should you create an application that monitors the comments on your company's web site and flags any negative posts?"
+    - content: "How should you create an application that analyzes news articles and extracts key people, places, and dates that are mentioned for indexing?"
       choices:
-        - content: "Use Azure Language in Foundry Tools to extract key phrases."
+        - content: "Use a generative AI model with a custom function tool that matches strings using a regular expression."
           isCorrect: false
-          explanation: "Incorrect. Key phrases might help understand what the customer is posting about, but they don't indicate positive or negative feedback."
-        - content: "Use Azure Language in Foundry Tools to perform sentiment analysis of the comments."
+          explanation: "Incorrect. While using a regular expression can help identify patterns in text, it is not the most effective way to extract key entities from news articles."
+        - content: "Use Azure Language in Foundry Tools to extract PII entities."
+          isCorrect: false
+          explanation: "Incorrect. PII entities help identify sensitive information. The task in this case is not to redact personal information, but to find named entities."
+        - content: "Use Azure Language in Foundry Tools to extract named entities."
           isCorrect: true
-          explanation: "Correct. Sentiment analysis helps you determine if text is negative or positive."
-        - content: "Use Azure Language in Foundry Tools to extract named entities from the comments."
-          isCorrect: false
-          explanation: "Incorrect. Named entities might help understand what the customer is posting about, but they don't indicate positive or negative feedback."
-    - content: 'You are analyzing text that contains the word "Paris". How might you determine if this word refers to the French city or the character in Homer''s "The Iliad"?'
+          explanation: "Correct. Named entities help identify key people, places, and dates mentioned in the text."
+    - content: "You want to publish extracts from customer testimonials on a web site. You need to remove personal details from the text before publishing it. What should you do?"
       choices:
-        - content: "Use Azure Language in Foundry Tools to extract key phrases."
-          isCorrect: false
-          explanation: "Incorrect. Key phrases are terms that indicate the main themes of the text, not specific entities that are mentioned."
-        - content: "Use Azure Language in Foundry Tools to detect the language of the text."
-          isCorrect: false
-          explanation: 'Incorrect. The language text is written in doesn''t help identify which "Paris" is being referenced.'
-        - content: "Use Azure Language in Foundry Tools to extract linked entities."
+        - content: "Use Azure Language in Foundry Tools to find and redact PII entities."
           isCorrect: true
-          explanation: "Correct. Linked entities enable you to disambiguate common entities of the same name."
+          explanation: "Correct. PII entities help identify and remove personal details from the text before publishing."
+        - content: "Use Azure Language in Foundry Tools to detect the language and publish only the testimonials in English."
+          isCorrect: false
+          explanation: "Incorrect. The language text is written in doesn't  help redact personal details."
+        - content: "Use a gpt-4.1 model to create new AI-generated customer reviews."
+          isCorrect: false
+          explanation: "Incorrect. Creating new AI-generated reviews does not address the need to remove personal details from existing testimonials."
