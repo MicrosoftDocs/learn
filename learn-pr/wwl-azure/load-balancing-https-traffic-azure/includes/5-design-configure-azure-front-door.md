@@ -15,12 +15,12 @@
 - Benefit from enhanced traffic analytics.
 - Custom WAF rules for basic protection against known attack patterns.
 
-**Azure Front Door Premium** is security optimized and provides additional features. 
+**Azure Front Door Premium** is security optimized and provides other features. 
 
 - BOT protection.
 - Private Link support.
 - Integration with Microsoft Threat Intelligence and security analytics.
-- Microsoft-managed WAF rule sets that auto-update against OWASP top-10 and emerging threats.
+- Microsoft-managed WAF rule sets that autoupdate against OWASP top-10 and emerging threats.
 
 ## Azure Front Door usage cases
 
