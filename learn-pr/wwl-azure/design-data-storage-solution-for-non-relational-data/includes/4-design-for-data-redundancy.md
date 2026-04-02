@@ -55,9 +55,14 @@ You review the different options for implementing replication. Data redundancy i
 
 - **Consider zone-redundant storage**. Choose ZRS for excellent performance, low latency, and resiliency for your data if it becomes temporarily unavailable. Keep in mind that ZRS by itself might not protect your data against a regional disaster where multiple zones are permanently affected.
 
+
 - **Consider secondary regions**. For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If your storage account is copied to a secondary region, then your data is durable even if a complete regional outage or a disaster in which the primary region isn't recoverable.
 
 - **Consider read access requirements**. Identify Tailwind Traders applications that require read access to the replicated data in the secondary region, if the primary region becomes unavailable for any reason. Configure your storage account with read access to the secondary region. Your applications can seamlessly shift to reading data from the secondary region if the primary region becomes unavailable.
+
+
+> [!Note]
+> The Archive access tier for Blob Storage isn't supported for ZRS, GZRS, or RA-GZRS accounts. If your storage account contains archived blobs, you must rehydrate them to an online tier before converting to zone-redundant storage.
 
 > [!TIP]
 > Continue your learning with the [Describe Azure storage services](/training/modules/describe-azure-storage-services/) training module. 
