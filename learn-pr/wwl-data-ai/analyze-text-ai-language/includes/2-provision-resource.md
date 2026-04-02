@@ -6,6 +6,9 @@ Azure Language in Foundry Tools is designed to help you extract information from
 
     :::image type="content" source="../media/text-analytics-resource.png" alt-text="Diagram showing an Azure Language resource performing language detection, named entity recognition, and PII extraction.":::
 
+> [!NOTE]
+> Azure Language also provides functionality for sentiment analysis, summarization, key phrase extraction, and other common language-related tasks. These deprecated capabilities are provided to support existing applications.
+
 ## Using a Microsoft Foundry resource for text analysis
 
 To use Azure Language in Foundry Tools to analyze text, you must provision a Microsoft Foundry resource in your Azure subscription.
