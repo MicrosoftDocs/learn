@@ -12,7 +12,7 @@ These challenges help explain why many institutions are investing in **modern in
 
 ## Understanding the technology shift in education
 
-:::image type="content" source="../media/learners-working-together-on-laptop.png" alt-text="A group of learners working together around a laptop during a collaborative digital learning activity.":::
+:::image type="content" source="../media/learners-working-together-on-laptop.png" alt-text="A photograph of a group of learners working together around a laptop during a collaborative digital learning activity.":::
 
 Learning now happens across **campuses, homes, and digital spaces**, and technology plays a critical role in enabling these experiences.
 
@@ -38,7 +38,7 @@ Modernization helps institutions:
 - Provide data-informed insights into student progress  
 
 **Example:**  
-A university managing thousands of devices may adopt modern device management tools to **automate updates, enforce security policies, and troubleshoot devices remotely**, reducing IT overhead and improving system reliability.
+A university managing thousands of devices may adopt modern device management tools to **automate updates, enforce security policies, and troubleshoot devices remotely**, reducing IT overhead, and improving system reliability.
 
 ## Why modernization matters for everyone
 
@@ -50,7 +50,7 @@ Modernized infrastructure benefits multiple roles across an institution:
 - **Administrators** gain better visibility into system health and technology investments.
 
 > [!TIP]  
-> Modernization does not require replacing every system at once. Many institutions take a gradual approach—improving reliability, simplifying management, and aligning technology investments with teaching and learning needs.
+> Modernization doesn't require replacing every system at once. Many institutions take a gradual approach—improving reliability, simplifying management, and aligning technology investments with teaching and learning needs.
 
 ## Protecting educational environments
 

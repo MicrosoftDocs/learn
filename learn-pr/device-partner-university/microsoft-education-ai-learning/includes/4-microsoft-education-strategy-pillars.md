@@ -1,4 +1,4 @@
-Technology platforms alone do not define how institutions modernize their environments. Successful digital transformation in education requires a clear strategy that connects technology capabilities with learning outcomes, security needs, and institutional priorities.
+Technology platforms alone don't define how institutions modernize their environments. Successful digital transformation in education requires a clear strategy that connects technology capabilities with learning outcomes, security needs, and institutional priorities.
 
 To help institutions align these elements, Microsoft organizes its education approach around a set of guiding pillars. These pillars describe how different areas of technology—such as infrastructure, security, and learning tools—work together to support modern education environments.
 
@@ -43,7 +43,7 @@ This approach strengthens institutional security while providing students with v
 
 ## Modernize infrastructure
 
-:::image type="content" source="../media/students-learning-with-laptops.png" alt-text="Students using laptops in a classroom to participate in a technology-supported learning environment.":::
+:::image type="content" source="../media/students-learning-with-laptops.png" alt-text="A photograph of students using laptops in a classroom to participate in a technology-supported learning environment.":::
 
 Modern infrastructure allows institutions to support digital learning environments while reducing operational complexity. Updating devices, migrating services to the cloud, and simplifying management tools helps institutions maintain reliable systems that adapt to evolving educational needs.
 

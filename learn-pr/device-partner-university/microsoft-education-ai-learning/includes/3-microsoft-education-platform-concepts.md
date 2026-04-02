@@ -6,7 +6,7 @@ Microsoft technologies are designed to connect these capabilities into a **cohes
 
 ## How Microsoft technologies support education environments
 
-:::image type="content" source="../media/educators-using-digital-tools.png" alt-text="Educators working together using a laptop as part of a modern digital learning workflow.":::
+:::image type="content" source="../media/educators-using-digital-tools.png" alt-text="A photograph of educators working together using a laptop as part of a modern digital learning workflow.":::
 
 Educational institutions depend on several core technology capabilities, including devices, collaboration tools, identity systems, and cloud infrastructure. When these operate independently, environments can become fragmented, creating inconsistent user experiences and increasing operational complexity for IT teams.
 
@@ -42,7 +42,7 @@ When these capabilities work together, institutions can apply consistent protect
 
 ## Scenario: Identity protection
 
-An education organization implements multi-factor authentication for administrative systems. When a login attempt occurs from an unusual location or device, the system requires additional verification before granting access.
+An education organization implement multifactor authentication for administrative systems. When a sign-in attempt occurs from an unusual location or device, the system requires additional verification before granting access.
 
 This layered approach ensures that only authorized users can access sensitive systems while allowing legitimate users to continue working securely.
 
