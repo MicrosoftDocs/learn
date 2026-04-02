@@ -26,7 +26,6 @@ products:
 - azure-devops
 - azure-boards
 - github
-- sre-agent
 subjects:
 - devops
 modules:
