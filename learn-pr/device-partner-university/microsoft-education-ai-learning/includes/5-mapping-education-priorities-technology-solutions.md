@@ -6,7 +6,7 @@ Understanding these considerations helps institutions evaluate platforms more ef
 
 ## Viewing technology priorities across roles
 
-:::image type="content" source="../media/educator-guiding-students-with-technology.png" alt-text="An educator explaining a concept to students while using technology to support hands-on learning.":::
+:::image type="content" source="../media/educator-guiding-students-with-technology.png" alt-text="A photograph of an educator explaining a concept to students while using technology to support hands-on learning.":::
 
 Although institutions share common goals, those priorities are often experienced differently depending on role.
 
