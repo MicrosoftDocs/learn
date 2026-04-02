@@ -10,10 +10,10 @@ Microsoft’s education strategy is built on four strategic pillars. These pilla
 
 The four pillars are:
 
-1. **Secure every institution**
-2. **Modernize infrastructure**
-3. **Empower student and educator success**
-4. **Accelerate innovation and AI adoption**
+- **Secure every institution**
+- **Modernize infrastructure**
+- **Empower student and educator success**
+- **Accelerate innovation and AI adoption**
 
 The following table summarizes how each pillar supports institutions and the roles that benefit most.
 
