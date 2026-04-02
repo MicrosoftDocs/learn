@@ -2,71 +2,73 @@
 
 Organizations need to know their data to identify important information across the estate and ensure that data is handled in line with compliance requirements. Admins can enable their organization to know its data through data classification and explorer capabilities available in the Microsoft Purview portal.
 
-### Sensitive information types
+## Sensitive information types
 
-Sensitive information types (SIT) are pattern-based classifiers. They have set patterns that can be used to identify them. For example, an identification number in a country/region may be based on a specific pattern, like this:
+Sensitive information types (SITs) are pattern-based classifiers that detect sensitive information—like social security numbers, credit card numbers, or bank account numbers—to identify sensitive items in your environment.
 
-*123-456-789-ABC*
+Every SIT is defined by a set of components that work together to determine when a match is detected:
 
-Microsoft Purview includes many built-in sensitive information types based on patterns that are defined by a regular expression (regex) or a function.
+- **Primary element**: The main element the SIT looks for. It can be a regular expression (with or without a checksum validation), a keyword list, a keyword dictionary, or a function.
+- **Supporting elements**: Corroborating evidence that increases confidence in a match. For example, finding the keyword "Social Security Number" near a nine-digit number increases confidence that the number is genuinely a social security number, not just a random string of digits.
+- **Confidence level**: Reflects how much supporting evidence is detected alongside the primary element. The three confidence levels—low, medium, and high—determine how aggressively a SIT flags potential matches. A high confidence level returns fewer false positives but might miss more true matches.
+- **Proximity**: Specifies how close a supporting element must be to the primary element, measured in the number of characters between them.
 
-Examples include:
+Microsoft Purview includes many built-in sensitive information types based on these patterns, covering common scenarios across finance, health care, government, and more. Examples include:
 
 - Credit card numbers
 - Passport or identification numbers
 - Bank account numbers
 - Health service numbers
 
-Refer to [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions) for a listing of available built-in sensitive information types.
+Microsoft Purview supports four categories of sensitive information types:
 
-Data classification in Microsoft Purview also supports the ability to create custom sensitive information types to address organization-specific requirements. For example, an organization may need to create sensitive information types to represent employee IDs or project numbers.
+- **Built-in sensitive information types**: Microsoft creates and maintains these SITs, and they appear in the Purview portal by default. You can't edit them directly, but you can copy them as a template to create custom variations.
+- **Named entity sensitive information types**: These SITs detect person names, physical addresses, and medical terms and conditions. They come in two forms: *unbundled* (narrow focus, such as addresses for a single country or region) and *bundled* (broad detection of all possible matches in a class, such as all physical addresses worldwide).
+- **Custom sensitive information types**: When the built-in SITs don't meet your needs, you can create your own using regular expressions, keywords, and keyword dictionaries. For example, an organization might create a custom SIT to represent employee IDs or project codes.
+- **Exact data match (EDM) sensitive information types**: EDM-based classification lets you create custom sensitive information types that reference exact values from a database of sensitive information. In the Purview portal, these are referred to as **EDM classifiers**. EDM classification is useful for highly specific data like employee IDs, patient record numbers, or proprietary product codes.
 
-Also supported is exact data match (EDM) classification. EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. In the Microsoft Purview portal sensitive information types are referred to as **EDM classifiers**.
+Sensitive information types are used across many Microsoft Purview solutions, including data loss prevention (DLP) policies, sensitivity labels, retention labels, insider risk management, communication compliance, auto-labeling policies, and Microsoft Priva.
 
-Sensitive information types can be used with sensitivity labels, retention labels, and across many Microsoft Purview and Microsoft Priva Solutions.
+## Trainable classifiers
 
-### Trainable classifiers
+Trainable classifiers use artificial intelligence (AI) and machine learning (ML) to intelligently classify your data. This method is most useful for classifying data that's unique to an organization—like specific kinds of contracts, invoices, or customer records—where pattern matching alone isn't sufficient. Rather than identifying elements in an item through pattern matching, a trainable classifier learns how to identify content based on what it *is*.
 
-Trainable classifiers use artificial intelligence and machine learning to intelligently classify your data. They're most useful classifying data unique to an organization like specific kinds of contracts, invoices, or customer records. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching).
-Two types of classifier are available:
+Two types of trainable classifiers are available:
 
-- **Pre-trained classifiers** - Microsoft has created and pretrained many classifiers that you can start using without training them. These classifiers appear with the status of **Ready to use**. Microsoft Purview comes with five pretrained classifiers that detect and classify things like resumes, source code, harassment, profanity, and threat (relates to committing violence or doing physical harm).
+- **Pre-trained classifiers**: Microsoft has created and pretrained many classifiers that you can start using without any additional training. These classifiers appear with the status of **Ready to use**. Microsoft Purview includes pretrained classifiers across a wide range of categories, including behavioral signals (such as harassment, profanity, and threat), financial documents, HR content (such as resumes), legal content, and more.
 
-- **Custom trainable classifiers** - Microsoft supports the ability to create and train custom classifiers. They're most useful when classifying data unique to an organization, like specific kinds of contracts, invoices, or customer records.
+- **Custom trainable classifiers**: You can create and train your own classifiers when pretrained options don't meet your needs. Creation begins with *seeding*—providing a set of samples that are definitely in the category you want to classify, and another set that are definitely not. Microsoft Purview uses these samples to build a prediction model for the classifier. You then verify the results, sorting true positives, true negatives, false positives, and false negatives to improve the accuracy of the model. After the accuracy score of the model has stabilized, you can publish the classifier. Published classifiers sort through items in locations like SharePoint Online, Exchange, and OneDrive.
 
-To get a custom trainable classifier to accurately identify an item as being in a particular category of content, it must first be presented with many samples of the type of content in the category. This feeding of positive samples is known as seeding and is used to create a prediction model for the classifier.
-
-The model gets tested to determine if the classifier can correctly distinguish between items that match the category and items that don't. The result of each prediction is manually verified, which serves as input to improve the accuracy of the prediction model.
-
-After the accuracy score of the model has stabilized, the classifier can be published.
-Trainable classifiers can then sort through items in locations like SharePoint Online, Exchange, and OneDrive, and classify the content.
+Trainable classifiers can be used as conditions for auto-labeling with sensitivity labels, retention label policies, communication compliance policies, and data loss prevention policies.
 
 > [!NOTE]
-> At this time, classifiers only work with items that aren't encrypted.
+> Classifiers only work with items that aren't encrypted.
 
-### Understand and explore the data
+## Understand and explore the data
 
-Data classification can involve large numbers of documents and emails. To help administrators derive insights and understanding, the Explorers node under Information Protection in the Microsoft Purview portal provides tools such as the activity explorer and content explorer that provide details at a glance, including:
+Data classification can involve large numbers of documents and emails. To help administrators derive insights and understanding, the **Explorers** section under Information Protection in the Microsoft Purview portal provides two tools for reviewing classified content at a glance.
 
-- The number of items classified as sensitive information and which classifications they are.
-- Details on the locations of data based on sensitivity.
-- Summary of actions that users are taking on sensitive content across the organization.
+### Content explorer
 
-Administrators can also use the information gained from these tools to guide their actions.
+Content explorer provides a current snapshot of the items in your organization that have a sensitivity label, a retention label, or have been classified as a sensitive information type. Administrators with the appropriate role permissions can drill down to access and review the scanned source content stored in locations like Exchange, SharePoint, and OneDrive. Content explorer helps admins understand:
 
-- ***Content explorer***: Content explorer provides a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization. It enables administrators with the appropriate role permissions to further drill down into items by allowing them to access and review the scanned source content that's stored in different kinds of locations, such as Exchange, SharePoint, and OneDrive.
+- The number of items classified as sensitive information and which classification types apply.
+- Where sensitive data is stored, by location and label.
+- How sensitive content is distributed across the organization.
 
-  Access to content explorer is highly restricted because it makes it possible to read the contents of scanned files. A user that requires access to content explorer must have an account in one or more of the content explorer roles groups.
+Access to content explorer is highly restricted because it makes it possible to read the contents of scanned files. A user who requires access must be assigned one of the designated content explorer role groups.
 
-- ***Activity explorer***: Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. It makes it possible to monitor what's being done with labeled content across the organization. Admins gain visibility into document-level activities like label changes and downgrades (such as when someone changes a label from confidential to public), or when files are copied to removable media or a network share.
+### Activity explorer
 
-  Admins use the filters to see all the details for a specific label, including file types, users, and activities. Activity explorer helps you understand what's being done with labeled content over time. Admins use activity explorer to evaluate if controls already in place are effective.
+Activity explorer provides visibility into what content has been discovered and labeled, and what actions users are taking on that content. It lets you monitor document-level activities like label changes and label downgrades (for example, when a user changes a label from *Confidential* to *Public*), file copies to removable media or network shares, and other sensitive content interactions across the organization.
+
+Admins use the filters to see all the details for a specific label, including file types, users, and activities. Activity explorer also receives signals from endpoint data loss prevention, providing visibility into activities on Windows and macOS devices—like printing sensitive documents or copying files to a USB drive. Admins use activity explorer to evaluate whether controls already in place are effective, and to identify areas where additional protection policy may be needed.
 
 # [Activity explorer](#tab/activity-explorer)
-:::image type="content" source="../media/activity-explorer.png" lightbox="../media/activity-explorer.png" alt-text="A screenshot of the activity explorer page in the Microsoft Purview portal.":::
+:::image type="content" source="../media/activity-explorer.png" lightbox="../media/activity-explorer.png" alt-text="A screenshot of the activity explorer page in the Microsoft Purview portal, showing labeled items and user activity trends over time.":::
 
 # [Content explorer](#tab/content-explorer)
-:::image type="content" source="../media/content-explorer.png" lightbox="../media/content-explorer.png" alt-text="A screenshot of the content explorer page in the Microsoft Purview portal.":::
+:::image type="content" source="../media/content-explorer.png" lightbox="../media/content-explorer.png" alt-text="A screenshot of the content explorer page in the Microsoft Purview portal, showing classified items organized by label and location.":::
 
 ---
 

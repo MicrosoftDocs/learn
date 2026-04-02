@@ -5,9 +5,10 @@ In Microsoft Purview, you implement data loss prevention (DLP) by defining and a
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
 - Office applications such as Word, Excel, and PowerPoint
 - Windows 10, Windows 11, and macOS (three latest released versions) endpoints
-- Cloud apps
+- Non-Microsoft cloud apps
 - On-premises file shares and on-premises SharePoint
-- Power BI
+- Microsoft Fabric and Power BI workspaces
+- Microsoft Edge for Business (for inline web traffic to unmanaged cloud apps)
 
 DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
@@ -18,10 +19,10 @@ DLP policies are how you monitor the activities that users take on sensitive ite
 - Show a pop-up policy tip to the user that warns them that they might be trying to share a sensitive item inappropriately.
 - Block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification.
 - Block the sharing without the override option.
-- For data at rest, sensitive items can be locked and moved to a secure quarantine location,
+- For data at rest, sensitive items can be locked and moved to a secure quarantine location.
 - For Teams chat, the sensitive information isn't displayed.
 
-All DLP monitored activities are recorded to the Microsoft 365 Audit log by default and routed to Activity explorer. When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the DLP alert management dashboard.
+All DLP monitored activities are recorded to the Microsoft 365 Audit log by default and routed to Activity explorer. When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the DLP alert management dashboard. DLP alerts are also routed to the Microsoft Defender portal, where they're automatically combined into incidents that provide a comprehensive view of potential policy violations.
 
 ### DLP Policy information
 
@@ -66,17 +67,19 @@ The user can then find out more about why their message was blocked by selecting
 
 DLP policies applied to Microsoft 365 services, including Microsoft Teams, can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.
 
-### Integration with Microsoft Security Copilot
+## Integration with Microsoft Security Copilot
 
 Microsoft Purview Data Loss Prevention supports integration with Microsoft Security Copilot, through the standalone and embedded experiences.
 
-To experience this Copilot capability, organizations must be onboarded to Copilot, enable Copilot to access data from Microsoft 365 services, and users must have the appropriate role permissions,
+To experience this Copilot capability, organizations must be onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and users must have the appropriate role permissions.
 
 The Microsoft Purview capabilities, that you can view in the standalone experience by selecting the prompt icon and selecting all capabilities, are built-in prompts that you can use but you can also enter your own prompts based on the capabilities supported.
 
 :::image type="content" source="../media/purview-capabilities.png" lightbox="../media/purview-capabilities.png" alt-text="Screen capture of the Microsoft Purview capabilities available Microsoft Security Copilot.":::
 
-In the embedded experience, Copilot in Microsoft Purview Data Loss Prevention supports alert summarization. To access Copilot from within Microsoft Purview Data Loss Prevention, navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed. You select Summarize to have Copilot generate the alert summary.
+In the embedded experience, Microsoft Purview Data Loss Prevention supports both alert summarization and the Alert Triage Agent. The Alert Triage Agent is an AI-powered agent that autonomously evaluates DLP alerts based on content risk, exfiltration risk, and policy risk, then categorizes and prioritizes them in a managed alert queue — helping analysts focus on the most critical alerts and reduce noise from lower-risk activities. The Alert Triage Agent requires Microsoft Security Copilot onboarding and is available in the DLP alerts queue.
+
+To access alert summarization from within Microsoft Purview Data Loss Prevention, navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed. You select Summarize to have Copilot generate the alert summary.
 
 # [Alert](#tab/alert)
 :::image type="content" source="../media/copilot-alert.png" lightbox="../media/copilot-alert.png" alt-text="Screen capture of a data loss prevention alert page that shows the option to summarize the alert.":::

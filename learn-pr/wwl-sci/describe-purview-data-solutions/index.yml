@@ -3,7 +3,7 @@ uid: learn.describe-purview-data-solutions
 metadata:
   title: Describe the Data Security Solutions of Microsoft Purview
   description: "Describe the data security solutions of Microsoft Purview."
-  ms.date: 07/30/2025
+  ms.date: 04/01/2026
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
@@ -13,9 +13,11 @@ title: Describe the data security solutions of Microsoft Purview
 summary: "Describe the data security solutions of Microsoft Purview."
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe how Microsoft Purview Information Protection helps organizations discover, classify, and protect sensitive information.
-  - Describe how Microsoft Purview Data Loss Prevention helps organizations prevent their users from inappropriately sharing sensitive data with people who shouldn't have it.
+  - Describe the data classification capabilities of Microsoft Purview Information Protection, including sensitive information types, trainable classifiers, and the benefits of Content explorer and Activity explorer.
+  - Describe sensitivity labels and sensitivity label policies in Microsoft Purview.
+  - Describe how Microsoft Purview Data Loss Prevention helps organizations prevent the inappropriate sharing of sensitive data.
   - Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
+  - Describe how adaptive protection in Microsoft Purview dynamically applies data protection controls based on insider risk levels.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
