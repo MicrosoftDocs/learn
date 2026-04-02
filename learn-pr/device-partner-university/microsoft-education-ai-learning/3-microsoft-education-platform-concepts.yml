@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-education-ai-learning.microsoft-education-platform-concepts
+title: Microsoft Education platform concepts
+metadata:
+  title: Microsoft Education Platform Concepts
+  description: This content is part of the "Microsoft Education technology and AI learning concepts" module.
+  ms.date: 04/02/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-microsoft-education-platform-concepts.md)]
+
