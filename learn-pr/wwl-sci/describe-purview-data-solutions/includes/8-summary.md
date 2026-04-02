@@ -40,3 +40,8 @@ The following resources provide more information on the topics covered in this m
 
 - [Help dynamically mitigate risks with adaptive protection](/purview/insider-risk-management-adaptive-protection)
 - [Learn about Adaptive Protection in Data Loss Prevention](/purview/dlp-adaptive-protection-learn)
+
+### Describe Data Security Posture Management in Microsoft Purview
+
+- [Learn about Data Security Posture Management](/purview/data-security-posture-management-learn-about)
+- [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview)

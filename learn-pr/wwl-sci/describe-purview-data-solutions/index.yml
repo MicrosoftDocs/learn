@@ -18,6 +18,7 @@ abstract: |
   - Describe how Microsoft Purview Data Loss Prevention helps organizations prevent the inappropriate sharing of sensitive data.
   - Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
   - Describe how adaptive protection in Microsoft Purview dynamically applies data protection controls based on insider risk levels.
+  - Describe how Data Security Posture Management in Microsoft Purview provides unified visibility into data risks across Microsoft and non-Microsoft environments.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -40,6 +41,7 @@ units:
 - learn.describe-purview-data-solutions.describe-data-loss-prevention
 - learn.describe-purview-data-solutions.describe-insider-risk-management
 - learn.describe-purview-data-solutions.describe-adaptive-protection
+- learn.describe-purview-data-solutions.describe-data-security-posture-management
 - learn.describe-purview-data-solutions.knowledge-check
 - learn.describe-purview-data-solutions.summary
 badge:

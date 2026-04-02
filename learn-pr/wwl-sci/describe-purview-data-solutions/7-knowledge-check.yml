@@ -51,18 +51,6 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Device availability and reliability are infrastructure concerns handled outside of insider risk management. Insider risk management focuses on detecting and responding to risky or malicious activities by people within the organization."
 
-  - content: "An organization has a DLP policy that detects sensitive financial information. A user attempts to share a sensitive spreadsheet via Microsoft Teams. What action can the DLP policy take?"
-    choices:
-    - content: "Automatically delete the file from the user's OneDrive."
-      isCorrect: false
-      explanation: "Incorrect. DLP doesn't automatically delete files. Instead, DLP can block the sharing, show the user a policy tip explaining why the action was prevented, and optionally allow the user to override the block with a justification."
-    - content: "Show the user a policy tip and block the sharing."
-      isCorrect: true
-      explanation: "Correct. DLP policies can display a policy tip that warns the user their action may violate policy, and can block the sharing of the sensitive item in Teams."
-    - content: "Move the file to a quarantine location and notify the user's manager."
-      isCorrect: false
-      explanation: "Incorrect. Moving content to a quarantine location is a protective action that applies to data at rest, not to active sharing in Teams chat. For Teams chat, DLP can block the sharing and show a policy tip to the user."
-
   - content: "An organization wants its DLP controls to automatically tighten for users identified as high-risk by Insider Risk Management, without requiring admins to manually update policies. Which capability should the organization configure?"
     choices:
     - content: "Sensitivity label policies."
@@ -74,3 +62,15 @@ quiz:
     - content: "Trainable classifiers."
       isCorrect: false
       explanation: "Incorrect. Trainable classifiers are used to identify types of content for classification. They don't adjust DLP controls based on insider risk. Adaptive protection is the feature that connects insider risk levels to DLP and other protective controls."
+
+  - content: "An organization needs a unified view of its sensitive data risks across Microsoft 365, Azure, and third-party platforms like Google Cloud Platform. The organization also wants to monitor how AI apps interact with sensitive data. Which Microsoft Purview solution provides this capability?"
+    choices:
+    - content: "Content explorer."
+      isCorrect: false
+      explanation: "Incorrect. Content explorer provides a snapshot of classified items in your organization, but it doesn't provide unified posture management across Microsoft and non-Microsoft environments or AI observability. Data Security Posture Management provides those capabilities."
+    - content: "Data Security Posture Management."
+      isCorrect: true
+      explanation: "Correct. Data Security Posture Management provides unified visibility into data risks across Microsoft 365, Azure, Fabric, and third-party SaaS platforms. It includes AI observability dashboards that monitor how AI apps and agents interact with sensitive data."
+    - content: "Insider Risk Management."
+      isCorrect: false
+      explanation: "Incorrect. Insider Risk Management focuses on detecting, investigating, and acting on risky activities by users within the organization. Data Security Posture Management is the solution that provides a unified view of data risks across your entire digital estate, including AI interactions."

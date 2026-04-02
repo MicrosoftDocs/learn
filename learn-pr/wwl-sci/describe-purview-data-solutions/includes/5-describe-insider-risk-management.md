@@ -49,6 +49,10 @@ Insider risk management addresses these common scenarios:
 - **Risky user behavior**: Employment stressor events—such as poor performance reviews or demotions—can trigger risky behavior. Policies use HR data connectors to bring affected users into scope and score related risk indicators.
 - **Forensic evidence**: Insider risk management supports visual evidence capturing for online and offline devices, giving investigators screen captures to better assess and respond to potentially risky activities.
 
+### Insider risk management and AI interactions
+
+As AI tools become part of everyday work, new risks emerge from inappropriate or unauthorized AI usage. Insider Risk Management includes a **Risky AI usage** policy template that detects activities such as prompt injection attacks, accessing protected materials, and sending sensitive data to AI services outside organizational controls. Insights from these signals are integrated into Microsoft Defender XDR, providing a comprehensive view of AI-related risks alongside other insider threats.
+
 ### Integration with Microsoft Security Copilot
 
 Microsoft Purview Insider Risk Management supports integration with Microsoft Security Copilot, through the standalone and embedded experiences.

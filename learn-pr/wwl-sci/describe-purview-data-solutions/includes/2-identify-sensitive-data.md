@@ -44,6 +44,12 @@ Trainable classifiers can be used as conditions for auto-labeling with sensitivi
 > [!NOTE]
 > Classifiers only work with items that aren't encrypted.
 
+## Data classification and AI interactions
+
+Data classification plays an important role in securing AI interactions. Sensitive information types and trainable classifiers can identify sensitive data in user prompts and responses when users interact with AI apps like Microsoft 365 Copilot. For example, if a user pastes credit card numbers or health records into an AI prompt, the same SITs that protect those items in email and documents can detect them in the AI interaction.
+
+The resulting classification information surfaces in Microsoft Purview reports and in Activity explorer within Data Security Posture Management (DSPM), where admins can review AI-related activities alongside traditional data classification insights. This visibility helps organizations understand how sensitive data flows through AI interactions and whether additional protection policies are needed.
+
 ## Understand and explore the data
 
 Data classification can involve large numbers of documents and emails. To help administrators derive insights and understanding, the **Explorers** section under Information Protection in the Microsoft Purview portal provides two tools for reviewing classified content at a glance.

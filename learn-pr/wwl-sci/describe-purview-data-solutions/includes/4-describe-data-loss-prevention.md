@@ -67,6 +67,12 @@ The user can then find out more about why their message was blocked by selecting
 
 DLP policies applied to Microsoft 365 services, including Microsoft Teams, can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.
 
+### Data loss prevention and AI interactions
+
+DLP capabilities extend to AI interactions to help prevent sensitive data from being shared through generative AI apps. Windows devices onboarded to Microsoft Purview can be configured with endpoint DLP policies that warn or block users from sharing sensitive information with third-party generative AI sites accessed through a browser. For example, a DLP policy can prevent a user from pasting credit card numbers into ChatGPT, or display a warning that the user can override with a justification.
+
+This protection helps organizations adopt AI tools while maintaining control over sensitive data. DLP policies for AI interactions work alongside the existing DLP capabilities for email, documents, and chat—providing a consistent layer of data protection across all the ways users work with sensitive information.
+
 ## Integration with Microsoft Security Copilot
 
 Microsoft Purview Data Loss Prevention supports integration with Microsoft Security Copilot, through the standalone and embedded experiences.
