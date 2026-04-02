@@ -34,11 +34,11 @@ Think about what data disk types are needed for Tailwind Traders. Consider your 
 
    - **Premium SSD storage**: Azure Premium SSD-managed disks provide high throughput and IOPS with low latency. These disks offer a slightly less performance compared to Ultra Disk Storage. Premium SSD storage is available in all regions.
 
-   - **Premium SSD v2 storage**: Azure Premium SSD v2 managed disks offer higher performance than Premium SSDs and are generally less costly. You can independently tune capacity, IOPS, and throughput at any time without downtime. Premium SSD v2 is recommended for most general purpose workloads, including databases and gaming applications. Premium SSD v2 isn't available in all regions.
+   - **Premium SSD v2 storage**: Azure Premium SSD v2 managed disks offer higher performance than Premium SSDs and are less costly. You can independently tune capacity, IOPS, and throughput at any time without downtime. Premium SSD v2 is recommended for most general purpose workloads, including databases and gaming applications. Premium SSD v2 isn't available in all regions.
   
    - **Standard SSD**: Azure Standard SSD-managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage. You can attach Standard SSD disks to any VM.
 
-   - **Standard HDD**: In Azure Standard HDD-managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). LYou can use Standard HDD disks for data disks on any VM. Note that Standard HDD support for OS disks is being retired on September 8, 2028.
+   - **Standard HDD**: In Azure Standard HDD-managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). You can use Standard HDD disks for data disks on any VM. Standard HDD support for OS disks is being retired on September 8, 2028.
 
 - **Consider data caching**. Improve performance with disk caching. Azure Virtual Machines [disk caching](/azure/virtual-machines/premium-storage-performance#disk-caching) optimizes read and write access to the virtual hard disk (VHD) files. The VHDs are attached to Azure Virtual Machines. For OS disks, the default cache setting is `ReadWrite`, and for data disks, the default is `ReadOnly`.
 
