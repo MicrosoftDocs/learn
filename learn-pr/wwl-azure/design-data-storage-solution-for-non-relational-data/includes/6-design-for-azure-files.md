@@ -28,7 +28,7 @@ Azure file shares can be used in two ways. You can directly mount serverless Azu
 
 Because Azure Files stores files in a storage account, you can [choose your performance level](/azure/storage/files/storage-files-scale-targets). Performance metrics differ between standard and premium storage account levels. Premium accounts offer lower latency and higher IOPS and bandwidth.
 
-Standard performance accounts use HDD to store data. With HDD, the costs are lower but so is the performance. SSD arrays back the premium storage account's performance, which comes with higher costs. Currently, premium accounts can only use file storage accounts with ZRS storage in a limited number of regions.
+Standard performance accounts use HDD to store data. With HDD, the costs are lower but so is the performance. SSD arrays back the premium storage account's performance, which comes with higher costs. SSD file shares support LRS and ZRS redundancy. Geo-redundant options (GRS and GZRS) are only available for HDD file shares.
 
 #### Determine your storage tier
 
@@ -42,6 +42,16 @@ Azure Files offers four tiers of storage. These tiers allow you to tailor your f
 
 - **Cool access tier**: Cost-efficient storage optimized for online archive storage scenarios. Offered on storage hardware using HDDs.
 
+#### Choose your billing model
+
+Azure Files supports three billing models that affect how storage costs are calculated.
+
+-	**Provisioned v2 (recommended)**. Allows you to independently set the storage capacity, IOPS, and throughput for your file share. Available for both SSD and HDD file shares. Provisioned v2 is recommended for new deployments.
+  
+-	**Pay-as-you-go**. Charges are based on actual usage for transactions and storage. Available for HDD file shares only. Useful for workloads with unpredictable access patterns.
+  
+-	**Provisioned v1 (legacy)**. Storage, IOPS, and throughput scale together in a fixed ratio. Available for SSD file shares only.
+
 ### Things to consider when choosing your implementation
 
 [Your decision about which technology](/azure/storage/common/nfs-comparison) to implement depends on your business use cases, the protocols required for your files, and your performance goals. We review considerations for using Azure Blob Storage and Azure Files. Another option is to use [Azure NetApp Files](/azure/azure-netapp-files/), which is a fully managed, highly available, enterprise-grade NAS service. Azure NetApp Files can handle the most demanding, high-performance, low-latency workloads. You can migrate workloads that are deemed "unmigratable."
@@ -54,6 +64,8 @@ The following table compares features and uses cases for these three implementat
 | **Use cases** | Large scale analytical data, Throughput sensitive high-performance computing, Backup and archive, Autonomous driving, Media rendering, or Genomic sequencing | Shared files, Databases, Home directories, Traditional applications, ERP, CMS, NAS migrations that don't require advanced management, Custom applications that require scale-out file storage | On-premises enterprise NAS migration that requires rich management capabilities, Latency sensitive workloads like SAP HANA, Latency-sensitive, or IOPS intensive high performance compute, Workloads that require simultaneous multi-protocol access |
 | **Available protocols** | - NFS 3.0 <br> - REST <br> - Data Lake Storage Gen2 | - SMB <br> - NFS 4.1 <br> - REST | - NFS 3.0 and 4.1 <br> - SMB |
 | **Performance (per volume)** | Up to 20,000 IOPS. Up to 15 GiB/s throughput. | Up to 100,000 IOPS. Up to 10 GiB/s throughput | Up to 460,000 IOPS. Up to 4.5 GiB/s throughput for regular volumes. Up to 10 GiB/s throughput for large volumes. |
+
+
 
 > [!TIP]
 > Learn more about file based workloads in the [Introduction to Azure NetApp Files](/training/modules/introduction-to-azure-netapp-files/) training module. 
