@@ -28,6 +28,13 @@ To find out more about any of the topics covered in this module, visit these lin
 ### Describe Microsoft Defender for Identity
 - [Microsoft Defender for Identity overview](/defender-for-identity/what-is)
 
+### Describe Microsoft Security Exposure Management
+- [What is Microsoft Security Exposure Management?](/security-exposure-management/microsoft-security-exposure-management)
+- [Overview of attack surface management](/security-exposure-management/cross-workload-attack-surfaces)
+- [Overview of critical asset management](/security-exposure-management/critical-asset-management)
+- [Overview of attack paths](/security-exposure-management/work-attack-paths-overview)
+- [Overview - Exposure insights](/security-exposure-management/exposure-insights-overview)
+
 ### Describe Microsoft Defender Vulnerability Management
 - [What is Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management)
 

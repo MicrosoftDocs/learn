@@ -13,6 +13,7 @@ The Microsoft Defender XDR suite includes the following integrated solutions:
 - **Microsoft Defender for Identity** - Uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **Microsoft Defender for Cloud Apps** - Delivers full protection for software as a service (SaaS) applications. Defender for Cloud Apps is a cloud access security broker (CASB) that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 - **Microsoft Defender Threat Intelligence (Defender TI)** - Aggregates and enriches critical threat information to help security analysts with triage, incident response, threat hunting, and vulnerability management workflows.
+- **Microsoft Security Exposure Management** - Provides a unified view of security posture across the organization by aggregating signals from the Defender XDR suite, Microsoft Defender for Cloud, Microsoft Entra ID, and non-Microsoft tools. It maps the entire attack surface, identifies critical assets, generates attack paths that show how an attacker could chain weaknesses to reach high-value targets, and tracks exposure risk through security initiatives and secure scores. Security Exposure Management is covered in detail in a later unit of this module.
 
 ## Cross-product capabilities
 

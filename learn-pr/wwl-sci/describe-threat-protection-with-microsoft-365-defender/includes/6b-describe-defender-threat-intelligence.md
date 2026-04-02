@@ -26,7 +26,7 @@ Intel profiles are Microsoft's curated repository of knowledge on tracked threat
 
 ### Intel explorer
 
-The Intel explorer is where analysts can scan new featured articles and search by keyword, indicator, or CVE ID to begin intelligence gathering, triage, incident response, and hunting. 
+The Intel explorer is where analysts can scan new featured articles and search by keyword, indicator, or Common Vulnerabilities and Exposures (CVE) ID to begin intelligence gathering, triage, incident response, and hunting. 
 
 Defender TI articles are narratives that provide insight into threat actors, tooling, attacks, and vulnerabilities. Each article links to actionable content and key indicators of compromise (IOCs) to help analysts take action. Defender TI also supports CVE ID searches, which return **vulnerability articles** that include a description of the CVE, affected components, tailored mitigation guidance, deep and dark web chatter references, and a Defender TI priority score that reflects which vulnerabilities should be remediated first based on exploitability, recency, and linkage to malware.
 

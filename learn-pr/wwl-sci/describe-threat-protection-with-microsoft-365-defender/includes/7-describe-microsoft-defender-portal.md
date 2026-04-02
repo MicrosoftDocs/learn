@@ -7,7 +7,7 @@ To access the portal, you must be assigned an appropriate role such as Global Re
 
 The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
-:::image type="content" source="../media/defender-portal.png" lightbox="../media/defender-portal.png" alt-text="A screenshot of the Microsoft Defender portal home page.":::
+:::image type="content" source="../media/defender-xdr-portal-home.png" lightbox="../media/defender-xdr-portal-home.png" alt-text="A screenshot of the Microsoft Defender portal home page.":::
 
 The Microsoft Defender portal home page shows many of the common cards that security teams need. The composition of cards and data depends on the user role. Because the Microsoft Defender portal uses role-based access control, different roles see cards that are more meaningful to their day-to-day jobs.
 
@@ -21,45 +21,27 @@ Microsoft Security Exposure Management is a security solution that provides a un
 
 With Security Exposure Management you can discover and monitor assets, get rich security insights, investigate specific risk areas with security initiatives, and track metrics across the organization to improve security posture.
 
+For more information, see to the unit "Describe Microsoft Security Exposure Management."
+
+# [Exposure management](#tab/exposure-management)
+:::image type="content" source="../media/exposure-management-menu.png" lightbox="../media/exposure-management-menu.png" alt-text="A screenshot of the Microsoft Defender portal left navigation pane, showing Exposure management.":::
+
 # [Overview](#tab/overview)
-:::image type="content" source="../media/exposure-management.png" lightbox="../media/exposure-management.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
+:::image type="content" source="../media/exposure-management-attack-surface-dashboard.png" lightbox="../media/exposure-management-attack-surface-dashboard.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
 
 # [Attack surface](#tab/attack-surface)
-:::image type="content" source="../media/attack-path.png" lightbox="../media/attack-path.png" alt-text="A screenshot of an attack path under Exposure Management.":::
+:::image type="content" source="../media/exposure-management-attack-path-with-map.png" lightbox="../media/exposure-management-attack-path-with-map.png" alt-text="A screenshot of an attack path under Exposure Management.":::
 
 # [Insights](#tab/insights)
-:::image type="content" source="../media/initiatives.png" lightbox="../media/initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
+:::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-managementinitiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
 
 # [Secure score](#tab/secure-score)
-:::image type="content" source="../media/exposure-management-secure-score.png" lightbox="../media/secure-score.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
+:::image type="content" source="../media/exposure-management-secure-score-v2.png" lightbox="../media/exposure-management-secure-score-v2.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
 
 # [Data connectors](#tab/data-connectors)
 :::image type="content" source="../media/data-connectors.png" lightbox="../media/data-connectors.png" alt-text="A screenshot of the data-connectors page in Exposure Management.":::
 
 ---
-
-#### Attack surface
-
-Security Exposure Management automatically generates attack paths based on the data collected across assets and workloads. It simulates attack scenarios, and identifies vulnerabilities and weaknesses that an attacker could exploit.
-
-#### Security insights
-
-Exposure insights in Microsoft Security Exposure Management continuously aggregate security posture data and insights across workloads and resources, into a single pipeline.
-
-- Initiatives provide a simple way to assess security readiness for a specific security area or workload, and to constantly track and measure exposure risk for that area or workload over time.
-- Metrics in Microsoft Security Exposure Management measure security exposure for a specific scope of assets or resources within a security initiative.
-- Recommendations help you to understand the compliance state for a specific security initiative.
-- Events help you to monitor initiative changes.
-
-#### Secure score
-
-Microsoft Secure Score, one of the tools in the Microsoft Defender portal, is a representation of a company's security posture. The higher the score, the better your protection. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
-
-Secure Score provides a breakdown of the score, the improvement actions that can boost the organization's score, and how well the organization's Secure Score compares to other similar organizations.
-
-#### Data connectors
-
-Using data connectors you can connect data sources for a richer, more centralized exposure management experience.
 
 ### Investigation & response
 
