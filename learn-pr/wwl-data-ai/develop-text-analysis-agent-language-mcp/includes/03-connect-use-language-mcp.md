@@ -39,7 +39,7 @@ The agent now has access to all the text analysis tools exposed by the Azure Lan
 After connecting the Language MCP tool, update the agent's instructions to direct it to use the tool:
 
 ```
-You are an AI agent that assists users by helping them analyze and summarize text. Use the Azure Language tool to perform text analysis tasks.
+You are an AI agent that assists users by helping them analyze text. Use the Azure Language tool to perform text analysis tasks.
 ```
 
 This instruction helps the agent understand that it should use the connected tool when processing text analysis requests.
@@ -50,7 +50,7 @@ The agent playground in the Foundry portal provides an interactive environment f
 
 When you send a prompt that requires text analysis, the agent:
 
-1. Identifies the tasks needed (for example, summarization and entity recognition).
+1. Identifies the tasks needed (for example, language detection and entity recognition).
 1. Calls the appropriate Azure Language MCP tool(s).
 1. Returns a combined response.
 
@@ -84,7 +84,7 @@ response = openai_client.responses.create(
 print(response.output_text)
 ```
 
-The agent processes the prompt, calls the appropriate MCP tools, and returns the result in `output_text`. You can also inspect the full response JSON (using `response.model_dump_json()`) to see which tools the agent called — for example, `extract_named_entities_from_text` or `detect_sentiment_from_text` — along with the arguments and results for each tool call.
+The agent processes the prompt, calls the appropriate MCP tools, and returns the result in `output_text`. You can also inspect the full response JSON (using `response.model_dump_json()`) to see which tools the agent called — for example, `extract_named_entities_from_text` or `detect_language_from_text` — along with the arguments and results for each tool call.
 
 ### Connect the MCP server in code
 
@@ -108,6 +108,6 @@ When a user's prompt involves multiple text analysis tasks, the agent can call m
 
 > "Tell me what entities and dates are mentioned in this review, and whether it is positive or negative."
 
-This prompt requires both entity recognition and sentiment analysis. The agent identifies both tasks, calls the appropriate tools (`extract_named_entities_from_text` and `detect_sentiment_from_text`), and combines the results into a single response.
+This prompt requires both entity recognition and sentiment analysis. The agent identifies both tasks, calls the appropriate tools (`extract_named_entities_from_text` and `detect_language_from_text`), and combines the results into a single response.
 
 Each tool call goes through the MCP server independently, and the agent synthesizes the outputs into a coherent answer for the user.
