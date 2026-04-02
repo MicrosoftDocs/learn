@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for Describe the Data Security solutions of Microsoft Purview."
-  ms.date: 8/22/2024
+  ms.date: 04/01/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -43,10 +43,34 @@ quiz:
     choices:
     - content: "To identify and protect against risks like an employee sharing confidential information."
       isCorrect: true
-      explanation: "Correct. Use risk management to help protect your organization against these risks."
+      explanation: "Correct. Insider risk management helps organizations detect, investigate, and act on risky activities such as an employee sharing confidential data, data theft by departing users, or unintentional data leaks."
     - content: "To identify and protect against malicious software across your network, such as ransomware."
       isCorrect: false
-      explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
+      explanation: "Incorrect. Defending against malicious software like ransomware is the role of endpoint security tools such as Microsoft Defender for Endpoint. Insider risk management focuses on identifying and responding to risks from within the organization, such as an employee sharing confidential information."
     - content: "To identify and protect against devices shutting down at critical moments."
       isCorrect: false
-      explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
+      explanation: "Incorrect. Device availability and reliability are infrastructure concerns handled outside of insider risk management. Insider risk management focuses on detecting and responding to risky or malicious activities by people within the organization."
+
+  - content: "An organization wants its DLP controls to automatically tighten for users identified as high-risk by Insider Risk Management, without requiring admins to manually update policies. Which capability should the organization configure?"
+    choices:
+    - content: "Sensitivity label policies."
+      isCorrect: false
+      explanation: "Incorrect. Sensitivity label policies control which users can see and apply sensitivity labels. They don't automatically adjust DLP controls based on insider risk levels. Adaptive protection is the feature that dynamically connects insider risk levels to DLP policies."
+    - content: "Adaptive protection."
+      isCorrect: true
+      explanation: "Correct. Adaptive protection dynamically assigns DLP policies, data lifecycle management policies, and Conditional Access policies to users based on their current insider risk level—automatically tightening controls for high-risk users and relaxing them when risk decreases."
+    - content: "Trainable classifiers."
+      isCorrect: false
+      explanation: "Incorrect. Trainable classifiers are used to identify types of content for classification. They don't adjust DLP controls based on insider risk. Adaptive protection is the feature that connects insider risk levels to DLP and other protective controls."
+
+  - content: "An organization needs a unified view of its sensitive data risks across Microsoft 365, Azure, and third-party platforms like Google Cloud Platform. The organization also wants to monitor how AI apps interact with sensitive data. Which Microsoft Purview solution provides this capability?"
+    choices:
+    - content: "Content explorer."
+      isCorrect: false
+      explanation: "Incorrect. Content explorer provides a snapshot of classified items in your organization, but it doesn't provide unified posture management across Microsoft and non-Microsoft environments or AI observability. Data Security Posture Management provides those capabilities."
+    - content: "Data Security Posture Management."
+      isCorrect: true
+      explanation: "Correct. Data Security Posture Management provides unified visibility into data risks across Microsoft 365, Azure, Fabric, and third-party SaaS platforms. It includes AI observability dashboards that monitor how AI apps and agents interact with sensitive data."
+    - content: "Insider Risk Management."
+      isCorrect: false
+      explanation: "Incorrect. Insider Risk Management focuses on detecting, investigating, and acting on risky activities by users within the organization. Data Security Posture Management is the solution that provides a unified view of data risks across your entire digital estate, including AI interactions."
