@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.devrel.administer-internet-information-services
+metadata:
+  title: Administer Internet Information Services
+  description: This learning path aims to explain learners how to administer Internet Information Services (IIS) on Windows Server. IIS is a flexible, secure, and manageable Web server for hosting anything on the Web. It's used to host websites, services, and applications on the Internet or intranet. In this learning path, you learn how to install, configure, and manage IIS to host web applications and services.
+  brand: windows-server
+  ms.date: 04/01/2026
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: learning-path
+title: Administer Internet Information Services
+summary: |
+  This learning path aims to explain learners how to administer Internet Information Services (IIS) on Windows Server. IIS is a flexible, secure, and manageable Web server for hosting anything on the Web. It's used to host websites, services, and applications on the Internet or intranet. In this learning path, you learn how to install, configure, and manage IIS to host web applications and services. You learn how to harden the security of an IIS deployment, backup configuration, sites, and applications, and enable detailed monitoring and logging.
+prerequisites: None
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- windows-server
+modules:
+- learn.devrel.deploy-configure-internet-information-services
+- learn.devrel.website-application-virtual-directory
+- learn.devrel.secure-harden-internet-information-services
+trophy:
+  uid: learn.devrel.administer-internet-information-services.trophy
