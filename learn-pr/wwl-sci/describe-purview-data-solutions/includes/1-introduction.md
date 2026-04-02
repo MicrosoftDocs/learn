@@ -1,9 +1,12 @@
-Microsoft Purview is a comprehensive set of integrated data security, data governance, and data compliance solutions. These solutions can help organizations secure and govern their entire data estate, while helping them meet their compliance requirements. This module focuses on Microsoft Purview data security solutions.
+Microsoft Purview is a comprehensive set of integrated data security, data governance, and data compliance solutions that help organizations secure and govern their entire data estate while meeting compliance requirements. This module focuses on Microsoft Purview data security solutions.
 
-In today's digital landscape, data security is paramount for organizations to protect sensitive information and maintain trust with their customers. Microsoft Purview offers a comprehensive approach to data security by integrating information protection, data loss prevention, and insider risk management to enable an organization to secure data across its lifecycle, wherever it lives.
+Microsoft Purview helps organizations protect sensitive data through information protection, data loss prevention, and insider risk management—working together to secure data across its lifecycle, wherever it lives. Adaptive protection brings these solutions together by automatically applying the right level of controls based on each user's current risk level. Data Security Posture Management provides a unified view of your organization's data security landscape across Microsoft and non-Microsoft environments, including visibility into AI interactions.
 
 After completing this module, you're able to:
 
-- Describe how Microsoft Purview Information Protection helps organizations discover, classify, and protect sensitive information.
-- Describe how Microsoft Purview Data Loss Prevention helps organizations prevent their users from inappropriately sharing sensitive data with people who shouldn't have it.
+- Describe the data classification capabilities of Microsoft Purview Information Protection, including sensitive information types, trainable classifiers, and the benefits of Content explorer and Activity explorer.
+- Describe sensitivity labels and sensitivity label policies in Microsoft Purview.
+- Describe how Microsoft Purview Data Loss Prevention helps organizations prevent the inappropriate sharing of sensitive data.
 - Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
+- Describe how adaptive protection in Microsoft Purview dynamically applies data protection controls based on insider risk levels.
+- Describe how Data Security Posture Management in Microsoft Purview provides unified visibility into data risks across Microsoft and non-Microsoft environments.
