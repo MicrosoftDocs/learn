@@ -42,7 +42,7 @@ When these capabilities work together, institutions can apply consistent protect
 
 ## Scenario: Identity protection
 
-An education organization implement multifactor authentication for administrative systems. When a sign-in attempt occurs from an unusual location or device, the system requires additional verification before granting access.
+An education organization implements multifactor authentication for administrative systems. When a sign-in attempt occurs from an unusual location or device, the system requires additional verification before granting access.
 
 This layered approach ensures that only authorized users can access sensitive systems while allowing legitimate users to continue working securely.
 
