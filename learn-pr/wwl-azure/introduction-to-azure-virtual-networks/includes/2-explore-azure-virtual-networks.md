@@ -15,7 +15,7 @@ Azure VNets enable resources in Azure to securely communicate with each other, t
 - **Communication between Azure resources.** There are four key mechanisms through which Azure resource can communicate: VNets, VNet service endpoints, VNet private endpoints and VNet peering. 
 - **Communication between on-premises resources.** You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, and Azure ExpressRoute.
 - **Filtering network traffic.** You can filter network traffic between subnets using any combination of network security groups and network virtual appliances.  
-- **Routing network traffic.** Azure routes traffic between subnets, connected virtual networks, and on-premises networks.. You can implement route tables or border gateway protocol (BGP) routes to override the default routes Azure creates.
+- **Routing network traffic.** Azure routes traffic between subnets, connected virtual networks, and on-premises networks. You can implement route tables or border gateway protocol (BGP) routes to override the default routes Azure creates.
 
 ## Design considerations for Azure Virtual Networks
 
