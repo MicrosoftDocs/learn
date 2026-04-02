@@ -37,9 +37,6 @@ This diagram shows a user request processed by Azure Front Door.
 
 ## Other things to know
 
-- **Routing algorithm**. The Azure Front Door routing algorithm first matches based on HTTP protocol, then frontend host, then the Path.
-    -  HTTP Protocols (HTTP/HTTPS)
-    -  Hosts (for example, www.foo.com, \*.bar.com)
-    -  Paths (for example, /*, /users/*, /file.gif)
+- **Routing algorithm**. The Azure Front Door routing algorithm first matches based on HTTP protocol, then frontend host, and then Path. The Standard and Premium tiers also support a Rules Engine that uses regular expressions and server variables for complex routing conditions.
 - **Response codes**. Azure Front Door response codes help clients understand the purpose of the redirect. You can set the protocol used for redirection. The most common use case of the redirect feature is to set HTTP to HTTPS redirection.
 - **Health probes**. Front Door periodically sends a synthetic HTTP/HTTPS request to each of your configured backends. Front Door then uses these responses from the probe to determine the "best" backend resources to route your client requests.
