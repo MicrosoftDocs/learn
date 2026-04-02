@@ -11,7 +11,7 @@ metadata:
 title: Administer Internet Information Services
 summary: |
   This learning path aims to explain learners how to administer Internet Information Services (IIS) on Windows Server. IIS is a flexible, secure, and manageable Web server for hosting anything on the Web. It's used to host websites, services, and applications on the Internet or intranet. In this learning path, you learn how to install, configure, and manage IIS to host web applications and services. You learn how to harden the security of an IIS deployment, backup configuration, sites, and applications, and enable detailed monitoring and logging.
-prerequisites: None
+prerequisites: Basic understanding of Windows Server and web hosting concepts.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
