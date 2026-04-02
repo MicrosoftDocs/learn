@@ -1,18 +1,18 @@
 Azure offers many disk solutions. In this module, we examine how to work with data disks by using Azure managed disks.
 
-Data disks are used by virtual machines to store data like database files, website static content, or custom application code. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
+Data disks are used by virtual machines to store data like database files, website static content, or custom application code. The number of data disks you can add depends on the virtual machine size. 
 
 > [!Tip]
 > Microsoft recommends always using [Azure managed disks](/azure/virtual-machines/managed-disks-overview). You specify the disk size, the disk type, and provision the disk. Azure handles the remaining operations. 
 
 ### Things to know about managed disks
 
-Azure offers several types of managed disks. The following table shows a [comparison of four data disk types](/azure/virtual-machines/disks-types#disk-type-comparison). 
+Azure offers several types of managed disks. The following table shows a [comparison of data disk types](/azure/virtual-machines/disks-types#disk-type-comparison). 
 
-| Comparison | Ultra-disk | Premium SSD | Standard SSD | Standard HDD |
-| --- | --- | --- | --- | --- |
-| **Disk type** | SSD | SSD | SSD | HDD |
-| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, development, and testing | Backup, Noncritical, Infrequent access |
+| Comparison | Ultra-disk | Premium SSD v2 | Premium SSD | Standard SSD | Standard HDD |
+| --- | --- | --- | --- | --- | ---|
+| **Disk type** | SSD | SSD | SSD | SSD | HDD |
+| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, development, and testing | Backup, Noncritical, Infrequent access |
 
 #### Choose an encryption option
 
@@ -34,12 +34,14 @@ Think about what data disk types are needed for Tailwind Traders. Consider your 
 
    - **Premium SSD storage**: Azure Premium SSD-managed disks provide high throughput and IOPS with low latency. These disks offer a slightly less performance compared to Ultra Disk Storage. Premium SSD storage is available in all regions.
 
+   - **Premium SSD v2 storage**: Azure Premium SSD v2 managed disks offer higher performance than Premium SSDs and are less costly. You can independently tune capacity, IOPS, and throughput at any time without downtime. Premium SSD v2 is recommended for most general purpose workloads, including databases and gaming applications. Premium SSD v2 isn't available in all regions.
+  
    - **Standard SSD**: Azure Standard SSD-managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage. You can attach Standard SSD disks to any VM.
 
-   - **Standard HDD**: In Azure Standard HDD-managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Like Standard SSD disks, you can use Standard HDD disks for any VM.
+   - **Standard HDD**: In Azure Standard HDD-managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). You can use Standard HDD disks for data disks on any VM. Standard HDD support for OS disks is being retired on September 8, 2028.
 
 - **Consider data caching**. Improve performance with disk caching. Azure Virtual Machines [disk caching](/azure/virtual-machines/premium-storage-performance#disk-caching) optimizes read and write access to the virtual hard disk (VHD) files. The VHDs are attached to Azure Virtual Machines. For OS disks, the default cache setting is `ReadWrite`, and for data disks, the default is `ReadOnly`.
 
-   > [!Warning]
-   > Disk caching isn't supported for disks 4 TiB and larger. When multiple disks are attached to your Virtual Machine, each disk smaller than 4 TiB supports caching. Changing the cache setting of an Azure disk, detaches and reattaches the target disk. When it's the OS disk, the VM is restarted. 
+> [!Warning]
+> Disk caching isn't supported for disks 4 TiB and larger. When multiple disks are attached to your Virtual Machine, each disk smaller than 4 TiB supports caching. Changing the cache setting of an Azure disk, detaches and reattaches the target disk. When it's the OS disk, the VM is restarted. 
 

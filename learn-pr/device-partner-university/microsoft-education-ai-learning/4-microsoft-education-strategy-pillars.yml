@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-education-ai-learning.microsoft-education-strategy-pillars
+title: Microsoft education strategy pillars
+metadata:
+  title: Microsoft Education Strategy Pillars
+  description: This content is part of the "Microsoft Education technology and AI learning concepts" module.
+  ms.date: 04/02/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-microsoft-education-strategy-pillars.md)]
