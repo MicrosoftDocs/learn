@@ -1,6 +1,5 @@
 ### YamlMime:Module
 uid: learn.wwl.generative-ai-tools
-hidden: true
 metadata:
   title: Develop generative AI apps that use tools
   description: Tools enable models to perform tasks and interact with external systems, enabling them to extend their capabilities beyond basic chat interactions.
