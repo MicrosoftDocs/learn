@@ -16,9 +16,9 @@ Threat analytics helps you understand how emerging threats impact your organizat
 
 The threat analytics dashboard surfaces the reports most relevant to your organization in three categories:
 
-- **Latest threats—the most recently published or updated threat reports, along with the number of active and resolved alerts.
-- **High-impact threats—threats with the highest number of active and resolved alerts in your organization.
-- **Highest exposure—threats to which your organization has the highest exposure, calculated based on the severity of associated vulnerabilities and the number of devices in your organization that could be exploited.
+- **Latest threats**—the most recently published or updated threat reports, along with the number of active and resolved alerts.
+- **High-impact threats**—threats with the highest number of active and resolved alerts in your organization.
+- **Highest exposure**—threats to which your organization has the highest exposure, calculated based on the severity of associated vulnerabilities and the number of devices in your organization that could be exploited.
 
 ### Intel profiles
 
@@ -60,8 +60,8 @@ Microsoft Security Copilot integrates with Defender TI. With the Defender TI plu
 
 Copilot includes two built-in promptbooks for Defender TI:
 
-- **Vulnerability impact assessment—generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
-- **Threat actor profile—generates a report profiling a known threat actor group, including suggestions to defend against their common tools and tactics.
+- **Vulnerability impact assessment**—generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
+- **Threat actor profile**—generates a report profiling a known threat actor group, including suggestions to defend against their common tools and tactics.
 
 Copilot is also embedded directly in the Threat intelligence section of the Microsoft Defender portal. On any of the following pages, you can use available prompts or enter your own:
 
