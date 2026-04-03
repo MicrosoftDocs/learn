@@ -8,10 +8,10 @@ Not all agentic actions carry the same operational weight. A useful way to class
 
 | Autonomy level | Agent behavior | Human role | Examples |
 |---|---|---|---|
-| **Inform** | Generates findings or recommendations without taking action | Review and decide to act | Summarize PR changes; list work items matching a query; explain a build failure |
-| **Suggest** | Proposes a specific action with justification | Approve or modify before execution | Propose a Bicep change; suggest a pipeline fix; recommend alert threshold adjustments |
-| **Execute on approval** | Prepares execution plan and waits for explicit confirmation | Review plan and authorize each step | Create a work item; update a variable group; generate and apply IaC changes to a non-production environment |
-| **Execute autonomously** | Takes action through the full sequence without per-step confirmation | Define scope, monitor outcomes, receive summary | Assign and triage incoming bug reports; run read-only API queries; generate unit tests for new functions |
+| **Inform** | Generates findings or recommendations without taking action | Review and decide to act | Summarize PR changes, list work items matching a query, and explain a build failure |
+| **Suggest** | Proposes a specific action with justification | Approve or modify before execution | Propose a Bicep change, suggest a pipeline fix, and recommend alert threshold adjustments |
+| **Execute on approval** | Prepares execution plan and waits for explicit confirmation | Review plan and authorize each step | Create a work item, update a variable group, and generate and apply IaC changes to a non-production environment |
+| **Execute autonomously** | Takes action through the full sequence without per-step confirmation | Define scope, monitor outcomes, and receive summary | Assign and triage incoming bug reports, run read-only API queries, and generate unit tests for new functions |
 
 Most of your day-to-day agentic operations will sit at **Inform** and **Suggest** for the first months. That's not a limitation — it's appropriate calibration while you build confidence in agent behavior and develop the observability instrumentation to audit what agents do.
 
@@ -40,7 +40,7 @@ Human control points are the specific moments in a workflow where agent executio
 
 For DevOps engineers on Azure, several operations require hard human control points:
 
-- **Production environment deployments** — any agent-initiated resource change in a production subscription must transit an approval gate. This isn't a maturity question; it's a change management and compliance requirement in most regulated environments.
+- **Production environment deployments** — any agent-initiated resource change in a production subscription must transit an approval gate. This isn't a maturity question. It's a change management and compliance requirement in most regulated environments.
 - **Secret and credential operations** — agent actions that read from or write to Azure Key Vault should require explicit approval and create an audit log entry. Even read access to secrets should be scoped tightly.
 - **Pipeline configuration changes** — modifications to pipeline YAML, variable groups, or service connections in production branches must follow your existing branch protection and PR review policies. Agents should not bypass these controls.
 - **Security group and RBAC modifications** — role assignment changes and network security group rule additions must be human-authorized regardless of the principal making the change.
@@ -52,7 +52,7 @@ These aren't arbitrary restrictions. They map to the areas where audit regulator
 
 When agents invoke tools — Azure CLI, ADO REST APIs, Bicep deployments — they authenticate with an identity. That identity must follow least-privilege: the minimum permissions needed to complete the authorized scope of the agent's work.
 
-For GitHub Copilot agent mode and coding agents, the tool invocations execute in the context of your local or codespace session. Scope is bounded naturally by your own access. For platform-managed agents like Azure Copilot agents, review the managed identity or service principal they use and audit its RBAC role assignments regularly.
+For GitHub Copilot agent mode, tool invocations execute in the context of your local or codespace session, where scope is bounded naturally by your own access. For the cloud-based GitHub Copilot coding agent, execution happens in a GitHub Actions sandbox environment using a managed identity with federated credentials — not in your local session. Review the role assignments granted to that managed identity and treat them with the same scrutiny you apply to any service principal used in your deployment workflows. For platform-managed agents like Azure Copilot agents, review the managed identity or service principal they use and audit its RBAC role assignments regularly.
 
 For MCP-based extensions — where you explicitly give a Copilot session access to Azure CLI tools or ADO project APIs — define exactly which tools you expose and ensure the underlying service connection has read-only scope unless write access is specifically required for the task.
 
