@@ -26,15 +26,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/05-exercise-explore-databricks.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/06-exercise-explore-databricks"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/06-exercise-explore-databricks"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/06-knowledge-check.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/07-knowledge-check"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/07-knowledge-check"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/07-summary.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/08-summary"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/08-summary"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/add-basic-conversational-intelligence/1-introduce-language-understanding-intelligent-service.md",
@@ -1418,35 +1418,35 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/1-introduction.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/2-explain.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/3-create-workspace-cluster.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/4-understand-notebooks.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/5-exercise-work-notebooks.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/6-knowledge-check.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/7-summary.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/index.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/1-introduction.md",
@@ -2695,19 +2695,19 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/2-understand.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/3-provision-workspaces-clusters.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/4-work-notebooks.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/5-exercise.md",
@@ -2715,15 +2715,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
