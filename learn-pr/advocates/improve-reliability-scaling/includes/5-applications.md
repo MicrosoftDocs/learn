@@ -63,7 +63,7 @@ Another way to improve the performance of your application is to implement an in
 
 Now you know that performance doesn't equal scalability exactly, but by improving the performance of your application, you can reduce the load on other resources. This improvement means you may not have to scale as soon.
 
-Azure Cache for Redis is a managed Redis offering. Redis can be used for many patterns and use cases. For your product service in this scenario, you would likely implement the cache-aside pattern. In this pattern, you load items from the database into the cache as needed, making your application more performant, and reducing the load on the database.
+Azure Managed Redis is a managed Redis offering. Redis can be used for many patterns and use cases. For your product service in this scenario, you would likely implement the cache-aside pattern. In this pattern, you load items from the database into the cache as needed, making your application more performant, and reducing the load on the database.
 
 Redis can also be used as a messaging queue for caching web content or for user session caching. This type of caching may be more suitable for other services in the system such as the shopping cart service, where you could store shopping cart data per session in Redis instead of using a cookie.
 
