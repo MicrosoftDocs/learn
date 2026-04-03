@@ -15,7 +15,7 @@ You can use Ask to get help with coding tasks, understand tricky concepts, and i
 
 1. Add context to the chat.
 
-    Ask supports chat participants, slash commands, and chat variables. You can add the `@workspace` chat participant or `#codebase` to the chat to provide context along with files or folders.
+    Ask supports chat participants, slash commands, and chat variables. You can add the `#codebase` chat participant or `#codebase` to the chat to provide context along with files or folders.
 
 1. Ask questions that help you understand the code that you want to refactor and the changes you want to make.
 
@@ -26,7 +26,7 @@ You can use Ask to get help with coding tasks, understand tricky concepts, and i
     Your prompt should include a description of the code feature you want to implement. For example:
 
     ```plaintext
-    @workspace I need to refactor the `EnumHelper` class and remove any code that uses reflection. Use static dictionaries to supply enum description attributes. Use a separate dictionary for each enum. The dictionaries should use values from the `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, and `MembershipRenewalStatus.cs` files. Explain how to update the EnumHelper class using dictionaries and show me the updated code.
+    #codebase I need to refactor the `EnumHelper` class and remove any code that uses reflection. Use static dictionaries to supply enum description attributes. Use a separate dictionary for each enum. The dictionaries should use values from the `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, and `MembershipRenewalStatus.cs` files. Explain how to update the EnumHelper class using dictionaries and show me the updated code.
     ```
 
 1. Review the suggested code in the Chat view.

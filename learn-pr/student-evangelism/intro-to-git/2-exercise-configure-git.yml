@@ -9,6 +9,6 @@ metadata:
   ms.author: aastewar
   ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 5
+durationInMinutes: 45
 content: |
   [!include[](includes/2-exercise-configure-git.md)]

@@ -93,11 +93,11 @@ If you're using GitHub Copilot Chat in your IDE, open the file(s) or highlight t
 
 ### Use chat participants, slash commands, and chat variables
 
-Chat participants are designed to collect extra context either about a code base or a specific domain or technology. When you specify the appropriate participant, GitHub Copilot Chat can find and provide better information to send to the GitHub Copilot backend. For example, use `@workspace` when you ask questions about your open project, or `@vscode` when you ask questions about Visual Studio Code features and APIs.
+Chat participants are designed to collect extra context either about a code base or a specific domain or technology. When you specify the appropriate participant, GitHub Copilot Chat can find and provide better information to send to the GitHub Copilot backend. For example, use `@vscode` when you ask questions about Visual Studio Code features and APIs.
 
 Slash commands help GitHub Copilot Chat to understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting GitHub Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
 
-Chat participants, such as `@workspace` or `@vscode`, can contribute chat variables that provide domain-specific context. You can reference a chat variable in your chat prompt by using the `#` symbol. You can use chat variables to be more specific about the context of your prompt.
+Chat participants, such as `@terminal` or `@vscode`, can contribute chat variables that provide domain-specific context. You can reference a chat variable in your chat prompt by using the `#` symbol. You can use chat variables to be more specific about the context of your prompt.
 
 For example, the `#file` chat variable lets you reference specific files from your workspace in your chat prompt. This helps make the answers from GitHub Copilot Chat more relevant to your code by providing context about the file you're working with. You can ask questions like "`Can you suggest improvements to #file:package.json?`" or "`How do I add an extension in #file:devcontainer.json?`". Using the `#file` variable can help you get more targeted and accurate responses from GitHub Copilot.
 

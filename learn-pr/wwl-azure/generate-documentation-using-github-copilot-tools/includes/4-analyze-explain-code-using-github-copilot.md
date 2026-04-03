@@ -17,8 +17,8 @@ You can use the Chat view in Ask agent mode for a wide range of topics. For exam
 
 - Ask questions about coding and technology concepts ("`What is a linked list?`", "`top 10 popular web frameworks`")
 - Brainstorm ideas on how to best solve a coding problem ("`How to add auth to my project?`")
-- Explain a block of code ("`@workspace /explain`", "`What does this code do?`")
-- Propose code fixes ("`@workspace /fix`", "`This method gives a FileNotFoundException`")
+- Explain a block of code ("`#codebase /explain`", "`What does this code do?`")
+- Propose code fixes ("`#codebase /fix`", "`This method gives a FileNotFoundException`")
 - Ask about VS Code settings ("`@vscode how do I disable the minimap?`")
 
 ![Screenshot showing the Chat view asking about the Singleton pattern.](../media/explain-chat-view-workspace-explain-singleton-pattern.png)
