@@ -5,9 +5,9 @@ In this module, you learned about the Azure Load Balancer and Azure Traffic Mana
 - Azure offers two non-HTTP(S) load balancing solutions: Azure Load Balancer and Azure Traffic Manager.
 - Azure Load Balancers can distribute workloads globally or regionally.
 - Azure Load Balancers can be public (external) or internal (private).
-- Azure Load Balancer has two SKUs: Basic and Standard.
+- Azure Load Balancer has two SKUs: Standard and Gateway.
 - Azure Traffic Manager is a DNS-based network traffic load balancer.
-- Azure Traffic Manager supports different traffic-routing methods. These methods include performance, weighted, priority, and geographic. 
+- Azure Traffic Manager supports different traffic-routing methods. These methods include performance, weighted, priority, geographic, multivalue, and subnet. 
 
 ### Learn more with Copilot
 
