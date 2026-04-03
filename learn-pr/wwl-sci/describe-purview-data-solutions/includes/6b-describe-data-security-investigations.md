@@ -31,10 +31,10 @@ Data Security Investigations supports several situations that security teams reg
 
 Data Security Investigations connects with the security tools your organization might already use, so you can move from an alert to an investigation without starting from scratch. Rather than switching between separate tools and manually copying information, the integrations let signals flow directly into investigations.
 
-- **Insider Risk Management—When an Insider Risk Management case surfaces a potential data leak, investigators can pass that case directly to Data Security Investigations for deeper content analysis. This closes the gap between detecting a risky behavior and understanding what data was exposed.
-- **Microsoft Defender XDR—From the Microsoft Defender portal, you can open a Data Security Investigations investigation to get deeper insight into the data and users connected to a security alert. This helps your security operations team go beyond the alert itself to understand the data impact.
-- **Data Security Posture Management—When DSPM identifies a potential exfiltration event, you can route that finding to Data Security Investigations. The investigation is automatically scoped to the recently exfiltrated data so your team can quickly assess what was exposed.
-- **Unified audit log—You can query the audit log for user activities—like file downloads or sensitivity label changes—and pull that content into your investigation. Every action taken within Data Security Investigations is also recorded in the audit log, creating a clear record for compliance and legal purposes.
+- **Insider Risk Management**—When an Insider Risk Management case surfaces a potential data leak, investigators can pass that case directly to Data Security Investigations for deeper content analysis. This closes the gap between detecting a risky behavior and understanding what data was exposed.
+- **Microsoft Defender XDR**—From the Microsoft Defender portal, you can open a Data Security Investigations investigation to get deeper insight into the data and users connected to a security alert. This helps your security operations team go beyond the alert itself to understand the data impact.
+- **Data Security Posture Management**—When DSPM identifies a potential exfiltration event, you can route that finding to Data Security Investigations. The investigation is automatically scoped to the recently exfiltrated data so your team can quickly assess what was exposed.
+- **Unified audit log**—You can query the audit log for user activities—like file downloads or sensitivity label changes—and pull that content into your investigation. Every action taken within Data Security Investigations is also recorded in the audit log, creating a clear record for compliance and legal purposes.
 
 ## Taking action
 
