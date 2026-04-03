@@ -16,7 +16,7 @@ GitHub Copilot provides better outcomes when your prompts are more specific. If 
 
 For example, you could use GitHub Copilot to provide you with the SQL code to create a table that included columns for first name, last name, date of birth, favorite movie, and pet name by issuing the following prompt:
 
-_@workspace Please provide me with the SQL code to create a table that included columns for first name, last name, date of birth, favorite movie and pet name_
+_Please provide me with the SQL code to create a table that included columns for first name, last name, date of birth, favorite movie and pet name_
 
 ![A screenshot a GitHub Copilot prompt related to the creation of a table in SQL.](../media/create-table.svg)
 
@@ -24,7 +24,7 @@ _@workspace Please provide me with the SQL code to create a table that included 
 
 For example, if you opened a codespace were presented with an application that included SQL code, you could query GitHub Copilot with the following prompt to understand more about the project in the following manner:
 
-_@workspace Please briefly explain the structure of this project.
+_Please briefly explain the structure of this project.
 What should I do to run it?_
 
 ![A screenshot showing GitHub Copilot's response to a query about project structure.](../media/project-structure.svg)

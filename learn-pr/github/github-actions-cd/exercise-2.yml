@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-artifacts.exercise-2
+title: Exercise - Work with workflow artifacts in GitHub Actions
+metadata:
+  title: Exercise - Work with workflow artifacts in GitHub Actions
+  description: Validate your knowledge on uploading, managing, and reusing workflow artifacts across jobs and workflows in GitHub Actions.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 04/03/2026
+  ms.topic: unit
+durationInMinutes: 60
+content: |
+  [!include[](includes/exercise-2.md)]

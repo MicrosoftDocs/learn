@@ -93,7 +93,7 @@ Help Copilot understand your project structure and intentions by managing your d
 
 - Open relevant files and close unrelated ones.
 - Highlight specific code sections you want Copilot to reference.
-- Use chat participants like `@workspace` in Visual Studio Code or `@project` in JetBrains IDEs.
+- Use chat participants like `@vscode` in Visual Studio Code or `@project` in JetBrains IDEs.
 
 **In Copilot Chat**:
 

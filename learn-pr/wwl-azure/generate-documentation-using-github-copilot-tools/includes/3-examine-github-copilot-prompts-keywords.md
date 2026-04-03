@@ -28,7 +28,6 @@ GitHub Copilot Chat provides better responses when it understands the context th
 
 Currently, GitHub Copilot Chat supports the following built-in chat participants:
 
-- `@workspace`: The `@workspace` participant can help answer questions about the code in your workspace or suggest ways to refactor or improve your code.
 - `@vscode`: The `@vscode` participant knows about commands and features in the Visual Studio Code editor itself, and can help you use them.
 - `@terminal`: The `@terminal` participant can help with the integrated terminal shell and its contents.
 - `@github`: The `@github` participant can help get answers grounded in web search, code search, and your enterprise's knowledge bases.
@@ -39,7 +38,7 @@ You can prefix your prompt with a specific chat participant to help GitHub Copil
 
 Slash commands help GitHub Copilot Chat understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting GitHub Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
 
-Chat participants are often bundled with slash commands. The slash command is a concise way to explain your intent to the chat participant. The `/explain` slash command is often bundled with the `@workspace` chat participant. The combination of a chat participant and a slash command is a powerful way to clarify your intent.
+Chat participants are often bundled with slash commands. The slash command is a concise way to explain your intent to the chat participant. The `/explain` slash command is often bundled with the `#codebase` chat participant. The combination of a chat participant and a slash command is a powerful way to clarify your intent.
 
 For example, consider the following sample prompt:
 
@@ -50,7 +49,7 @@ Create a new workspace that uses Node.js, the Express framework, the Pug templat
 GitHub Copilot may interpret this prompt as a request for new code project created using the specified technologies, but it's easier for GitHub Copilot to understand the following prompt that uses keywords:
 
 ```plaintext
-@workspace /new Node.js Express Pug TypeScript
+/new Node.js Express Pug TypeScript
 ```
 
 If you enter the second prompt, GitHub Copilot proposes the following directory structure. The file list can be used to preview the proposed files, and the **Create Workspace** button can be used to generate the files in a new folder.
@@ -68,14 +67,14 @@ Examples of built-in slash commands:
 - `/new`: Scaffold code for a new workspace. Only the chat prompt is used as context.
 - `/newNotebook`: Create a new Jupyter Notebook. Only the chat prompt is used as context.
 
-Examples using chat participants combined with slash commands:
+Examples using chat participnt and variables combined with slash commands:
 
-- `@workspace /explain`: Generate an explanation of the full workspace.
-- `@workspace /fix` (or `/fix`): Propose a fix for the problems in the selected code.
-- `@workspace /tests` (or `/tests`): Generate unit tests for the selected code.
+- `#codebase /explain`: Generate an explanation of the full workspace.
+- `#codebase /fix` (or `/fix`): Propose a fix for the problems in the selected code.
+- `#codebase /tests` (or `/tests`): Generate unit tests for the selected code.
 - `@vscode /api` (or `/api`): Ask about Visual Studio Code extension development.
-- `@workspace /new` (or `/new`): Scaffold code for a new workspace.
-- `@workspace /newNotebook` (or `/newNotebook`): Create a new Jupyter Notebook.
+- `#codebase /new` (or `/new`): Scaffold code for a new workspace.
+- `#codebase /newNotebook` (or `/newNotebook`): Create a new Jupyter Notebook.
 
 ### Chat variables
 
@@ -83,7 +82,7 @@ Chat variables are used to specify context. You can reference a chat variable in
 
 By using a chat variable, you can be more specific about the context that you include in your chat prompt. For example, the prompt "which sorting algorithm is used in `#selection`" focuses the chat request on the selected code snippet.
 
-Chat participants, such as @workspace or @vscode, can contribute chat variables that provide domain-specific context.
+Chat participants, such as @vscode, can contribute chat variables that provide domain-specific context.
 
 Examples of built-in chat variables are:
 
@@ -94,19 +93,7 @@ Examples of built-in chat variables are:
 - `#terminalSelection`: the active terminal's selection.
 - `#terminalLastCommand`: the active terminal's last run command.
 
-### What's the difference between `@workspace` and `#codebase`?
-
-Conceptually, both `@workspace` and `#codebase` enable you to ask questions about your entire codebase. However, there are some differences in how you can use them:
-
-About the `@workspace` keyword:
-
-- The `@workspace` keyword is a chat participant that's dedicated to answering questions about your codebase.
-- The `@workspace` keyword takes control of the user prompt and uses the codebase to provide an answer.
-- The `@workspace` keyword can't invoke other tools.
-- The `@workspace` keyword can only be used when you're using the Ask agent mode.
-- Example: "`@workspace how can I validate a date?`"
-
-About the `#codebase` keyword:
+### What's the `#codebase`?
 
 - The `#codebase` keyword is a tool that performs a codebase search based on the user prompt and adds the relevant code as context to the chat prompt.
 - When you use the `#codebase` keyword, the language model remains in control and can combine `#codebase` with other tools for editing scenarios.

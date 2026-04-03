@@ -49,17 +49,25 @@ Providing GitHub Copilot Chat with prompts or questions that include a clear sco
 
 You can use chat participants, slash commands, and chat variables to clarify the context of your prompts.
 
-- Chat participants, such as `@workspace` or `@terminal`, help GitHub Copilot Chat understand the context of your question.
+- Chat participants, such as `@terminal`, help GitHub Copilot Chat understand the context of your question.
 - Slash commands, such as `/explain` or `/new`, help GitHub Copilot Chat understand the intent or purpose of your question.
 - Chat variables, such as `#file` or `#editor`, help Copilot Chat focus on something specific when considering the larger context of your question.
 
 Using these specialized descriptors helps GitHub Copilot Chat generate more accurate and useful responses.
 
-You can combine chat participants with slash commands to perform specific actions. For example, you could scaffold a new C# console application by using the following prompt: `@workspace /new console application in C#`. This prompt includes a chat participant (`@workspace`) and a slash command (`/new`) to help GitHub Copilot Chat perform the intended task.
+You can use slash commands to perform specific actions in Copilot Chat. For example, you could scaffold a new C# console application by using the following prompt:
 
-![Screenshot showing the Chat used to scaffold a console app.](../media/chat-view-scaffold-new-workspace.png)
+```text
+/new console application in C#
+```
+This prompt uses a slash command (/new) to help GitHub Copilot Chat perform the intended task.
 
-GitHub Copilot can scaffold more complex workspaces. For example, the following prompt creates the workspace for a Node.js application that uses the Express framework, the Pug template engine, and TypeScript: `@workspace /new Node.js Express Pug TypeScript`.
+GitHub Copilot can scaffold more complex projects. For example, the following prompt creates a workspace for a Node.js application that uses the Express framework, the Pug template engine, and TypeScript:
+
+```text
+/new Node.js Express Pug TypeScript
+```
+
 
 ### Generate code with GitHub Copilot Chat using the Chat view
 
