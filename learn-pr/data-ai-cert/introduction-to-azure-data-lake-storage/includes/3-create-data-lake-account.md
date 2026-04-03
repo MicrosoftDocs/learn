@@ -6,4 +6,4 @@ To enable Azure Data Lake Storage Gen2 in an Azure Storage account, you can sele
 
 Alternatively, if you already have an Azure Storage account and want to enable the Azure data Lake Storage Gen2 capability, you can use the **Data Lake Gen2 upgrade** wizard in the Azure portal page for your storage account resource.
 
-![Screenshot of Advanced Settings for Creating Storage Account.](../media/3-data-lake-upgrade.png)
+![Screenshot of upgrading a Storage Account to Data Lake Gen2.](../media/3-data-lake-upgrade.png)

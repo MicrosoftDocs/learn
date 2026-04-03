@@ -11,7 +11,7 @@ metadata:
 title: Introduction to data engineering on Azure
 summary: Microsoft Azure provides a comprehensive platform for data engineering; but what is data engineering? Complete this module to find out.
 abstract: |
-  In this module you will learn how to:
+  In this module you'll learn how to:
   - Identify common data engineering tasks
   - Describe common data engineering concepts
   - Identify Azure services for data engineering
