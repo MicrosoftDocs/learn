@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.map-devops-work-agentic-opportunities
+title: Map day-to-day DevOps work to agentic opportunities
+metadata:
+  title: Map day-to-day DevOps work to agentic opportunities
+  description: "Map DevOps lifecycle phases to high-value agentic support opportunities using a priority framework based on frequency, context breadth, and decision reversibility."
+  ms.date: 04/03/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-map-devops-work-agentic-opportunities.md)]

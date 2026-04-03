@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check for Introduction to agentic DevOps using Microsoft tools on Azure."
+  ms.date: 04/03/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: true
+  ai-usage: ai-generated
+durationInMinutes: 5
+quiz:
+  title: ""
+  questions:
+  - content: "Which property distinguishes an agentic AI capability from traditional DevOps automation?"
+    choices:
+    - content: "It executes a deterministic script without requiring human input."
+      isCorrect: false
+      explanation: "Deterministic, scripted execution is the defining characteristic of traditional automation, not agentic capabilities."
+    - content: "It observes intermediate results and adapts its plan to reach a defined goal."
+      isCorrect: true
+      explanation: "The observe-reason-act loop — combined with goal orientation and tool invocation — is what distinguishes agents from scripted automation."
+    - content: "It can only suggest actions without executing them."
+      isCorrect: false
+      explanation: "Agentic capabilities span a full autonomy spectrum; many can execute actions, not only suggest them."
+  - content: "A DevOps engineer wants to use agentic capabilities to assign incoming bugs to the correct team and area path automatically. Which autonomy level is most appropriate for this task?"
+    choices:
+    - content: "Suggest only, because any modification to work items requires human authorization."
+      isCorrect: false
+      explanation: "Work item assignment is fully reversible with no blast radius outside Boards, making autonomous execution appropriate."
+    - content: "Execute autonomously, because the task is high-frequency, reversible, and has no meaningful blast radius."
+      isCorrect: true
+      explanation: "Reversible operations with low blast radius and high frequency are suitable for autonomous execution, and work item assignment meets all three criteria."
+    - content: "Inform only, because agents should never interact with project management data."
+      isCorrect: false
+      explanation: "Inform is unnecessarily restrictive for this task. Agents can interact with Boards data; the question is how much autonomy is appropriate."
+  - content: "Which of the following DevOps operations must always retain a mandatory human authorization step regardless of agent maturity?"
+    choices:
+    - content: "Generating a pull request description for an infrastructure change."
+      isCorrect: false
+      explanation: "PR description generation is informational. No state is changed until a human opens the PR."
+    - content: "Creating RBAC role assignments in a production Azure subscription."
+      isCorrect: true
+      explanation: "RBAC changes in production have low reversibility and compliance implications that require documented human authorization."
+    - content: "Summarizing the previous week's pipeline failure history."
+      isCorrect: false
+      explanation: "This is a read-only, Inform-level operation that carries no blast radius or reversibility risk."
+  - content: "A platform team is designing their agentic DevOps deployment. They want to allow agents to generate and validate Bicep templates but require human review before applying changes to non-production environments. Which autonomy level does this describe?"
+    choices:
+    - content: "Inform"
+      isCorrect: false
+      explanation: "Inform produces findings only. This scenario includes an execution phase after human review, which goes beyond Inform."
+    - content: "Execute autonomously"
+      isCorrect: false
+      explanation: "Execute autonomously means no per-step confirmation is required. This scenario explicitly requires human review before execution."
+    - content: "Execute on approval"
+      isCorrect: true
+      explanation: "Execute on approval means the agent prepares the execution plan and waits for explicit human confirmation before proceeding — matching this scenario exactly."
+  - content: "What is the primary reason to implement audit logging for agent-initiated Azure resource operations from the start of an agentic DevOps pilot?"
+    choices:
+    - content: "To prevent agents from making any changes to Azure resources during the pilot period."
+      isCorrect: false
+      explanation: "Audit logging records actions; it doesn't block them. Preventing changes is handled by authorization scoping and approval gates."
+    - content: "To create the compliance baseline and feedback mechanism needed to responsibly expand agent autonomy over time."
+      isCorrect: true
+      explanation: "Audit logs serve two purposes: they satisfy compliance requirements and they provide the evidence that builds confidence for expanding autonomy as agent behavior is validated."
+    - content: "To ensure that all agent actions are reviewed by a security team before they take effect."
+      isCorrect: false
+      explanation: "Pre-flight review is handled by approval gates, not audit logs. Audit logs record what happened, enabling post-hoc review and incident investigation."

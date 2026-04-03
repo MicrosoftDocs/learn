@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.define-agentic-devops-microsoft-environments
+title: Define agentic DevOps for Microsoft environments
+metadata:
+  title: Define agentic DevOps for Microsoft environments
+  description: "Define the agentic operating model, distinguish it from traditional automation, and understand the Microsoft platform spectrum of agentic capabilities."
+  ms.date: 04/03/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-define-agentic-devops-microsoft-environments.md)]

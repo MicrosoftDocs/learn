@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure
+metadata:
+  title: Introduction to Agentic DevOps Using Microsoft Tools on Azure
+  description: "Describe the agentic DevOps model for Microsoft DevOps Engineers, identify high-value opportunities in daily DevOps work, and define safe operating boundaries for agentic actions on Azure."
+  ms.date: 04/03/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure-devops
+  ai-usage: ai-generated
+title: Introduction to agentic DevOps using Microsoft tools on Azure
+summary: Describe where agentic approaches improve DevOps outcomes in Azure environments. Evaluate role-aligned use cases, autonomy boundaries, and human-in-the-loop patterns across Microsoft DevOps toolchains.
+abstract: |
+  After completing this module, you'll be able to:
+
+  - Define agentic DevOps in a Microsoft and Azure context.
+  - Identify high-value DevOps tasks that benefit from agentic support.
+  - Distinguish assistant, semi-autonomous, and autonomous operating modes.
+  - Explain human oversight requirements for production-facing operations.
+prerequisites: |
+  - Experience designing and managing CI/CD pipelines in Azure Pipelines or GitHub Actions
+  - Familiarity with Infrastructure as Code using Bicep or similar tooling
+  - Working knowledge of Azure resource governance, monitoring, and incident response
+  - Familiarity with GitHub Copilot in Visual Studio Code
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- devops-engineer
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- devops
+- artificial-intelligence
+units:
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.introduction
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.define-agentic-devops-microsoft-environments
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.map-devops-work-agentic-opportunities
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.set-autonomy-boundaries-human-control
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.exercise-classify-devops-backlog
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.knowledge-check
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure.summary
+badge:
+  uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.badge

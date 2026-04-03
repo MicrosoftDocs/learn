@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.set-autonomy-boundaries-human-control
+title: Set autonomy boundaries and human control points
+metadata:
+  title: Set autonomy boundaries and human control points
+  description: "Define the four-level autonomy spectrum for agentic actions, classify DevOps operations by reversibility and blast radius, and establish mandatory human control points for production-facing operations."
+  ms.date: 04/03/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-set-autonomy-boundaries-human-control.md)]
