@@ -57,7 +57,7 @@ Security Exposure Management provides several types of initiatives:
 - **Threat analytics initiatives** assess threat risk based on up-to-date research from Microsoft security researchers, focusing on real-world threat actors and attack vectors.
 - **Zero Trust initiative** assesses risk associated with Zero Trust compliance, aligned with Microsoft's Zero Trust adoption framework.
 
-:::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-management-initiatives.png" alt-text="A screenshot of a selected attack path and the corresponding map for that attack path.":::
+:::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-management-initiatives.png" alt-text="A screenshot of the initiatives page.":::
 
 ### Metrics and recommendations
 
