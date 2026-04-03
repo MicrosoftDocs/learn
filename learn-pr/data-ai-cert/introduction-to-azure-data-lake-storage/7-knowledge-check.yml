@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Global replication doesn't enable Azure Data Lake Storage Gen2 containers."
     - content: "Data encryption"
       isCorrect: false
-      explanation: "Incorrect. data encryption doesn't enable Azure Data Lake Storage Gen2 containers."
+      explanation: "Incorrect. Data encryption doesn't enable Azure Data Lake Storage Gen2 containers."
     - content: "Hierarchical namespace"
       isCorrect: true
       explanation: "Correct. To enable Azure Data Lake Storage Gen2 containers, you must turn on the Hierarchical namespace option."
