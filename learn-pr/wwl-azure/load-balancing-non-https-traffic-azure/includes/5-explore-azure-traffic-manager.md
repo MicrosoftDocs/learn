@@ -1,5 +1,5 @@
 
-[Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness. The most important point to understand is that Traffic Manager works at the DNS level which is at the Application layer (Layer-7).
+[Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness. The most important point to understand is that Traffic Manager works at the DNS level, which is at the Application layer (Layer-7).
 
 This video reviews Traffic Manager features and how the service works. 
 
