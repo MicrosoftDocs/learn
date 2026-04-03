@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.visualize-query-ontology-fabric-iq
+uid: learn.wwl.visualize-ontology-fabric-iq
 metadata:
   title: Visualize Ontology Data with Microsoft Fabric IQ
   description: Learn how to explore entity instances, visualize entity connections in the relationship graph, and filter ontology data using the Query builder with filters and components to explore your connected data.
@@ -30,12 +30,12 @@ products:
 subjects:
 - data-analytics
 units:
-- learn.wwl.visualize-query-ontology-fabric-iq.introduction
-- learn.wwl.visualize-query-ontology-fabric-iq.explore-ontology
-- learn.wwl.visualize-query-ontology-fabric-iq.visualize-relationships
-- learn.wwl.visualize-query-ontology-fabric-iq.query-ontology-query-builder
-- learn.wwl.visualize-query-ontology-fabric-iq.exercise-query-ontology
-- learn.wwl.visualize-query-ontology-fabric-iq.knowledge-check
-- learn.wwl.visualize-query-ontology-fabric-iq.summary
+- learn.wwl.visualize-ontology-fabric-iq.introduction
+- learn.wwl.visualize-ontology-fabric-iq.explore-ontology
+- learn.wwl.visualize-ontology-fabric-iq.visualize-relationships
+- learn.wwl.visualize-ontology-fabric-iq.query-ontology-query-builder
+- learn.wwl.visualize-ontology-fabric-iq.exercise-visualize-ontology
+- learn.wwl.visualize-ontology-fabric-iq.knowledge-check
+- learn.wwl.visualize-ontology-fabric-iq.summary
 badge:
-  uid: learn.wwl.visualize-query-ontology-fabric-iq.badge
+  uid: learn.wwl.visualize-ontology-fabric-iq.badge
