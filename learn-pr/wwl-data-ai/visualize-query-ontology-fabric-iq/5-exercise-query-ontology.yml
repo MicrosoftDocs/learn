@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-exercise-query-ontology.md)]
+  [!include[](includes/5-exercise-query-ontology.md)]

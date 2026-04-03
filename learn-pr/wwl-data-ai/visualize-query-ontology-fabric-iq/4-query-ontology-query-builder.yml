@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.visualize-query-ontology-fabric-iq.query-ontology-query-builder
-title: Query ontology data with the Query builder
+title: Filter and explore with the Query builder
 metadata:
-  title: Query Ontology Data with the Query Builder
-  description: Learn how to use the Query builder in Microsoft Fabric IQ to add filters, control components, run cross-source queries, and interpret results in Diagram, Card, and Table view.
+  title: Filter and Explore with the Query Builder
+  description: Learn how to use the Query builder in Microsoft Fabric IQ to add filters, control components, explore cross-source data, and interpret results in Diagram, Card, and Table view.
   ms.date: 03/30/2026
   author: theresa-i
   ms.author: theresai

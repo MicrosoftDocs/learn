@@ -1,5 +1,38 @@
 The ontology you built in the previous module now contains populated data. Each entity type definition has become a collection of entity instances—real records from your lakehouse tables and eventhouse streams. Exploring how those instances appear is the first step in getting value from your ontology.
 
+## Understand the graph structure: nodes and edges
+
+Your ontology is a graph database—a data structure built from two fundamental elements: **nodes** and **edges**.
+
+### Nodes represent entities
+
+A **node** is an entity instance in your graph. When you defined the Patient entity type and bound it to your lakehouse table, each row in that table became a node in the graph. Patient ID 12345 is a node. The Cardiology department is a node. Room 301 is a node.
+
+Nodes have:
+- **Labels** (the entity type, like Patient or Department)
+- **Properties** (attributes like fullName, departmentName, or roomNumber)
+- **A unique identity** (the key property value that distinguishes this instance from all others)
+
+In graph terminology, your "entity instances table" is showing you a list of nodes of one type.
+
+### Edges represent relationships
+
+An **edge** (also called a relationship) is the connection between two nodes. When you defined the "assigned_to" relationship between Patient and Room, you created the potential for edges. When Patient 12345 checks into Room 301, that specific connection becomes an edge in the graph.
+
+Edges have:
+- **A direction** (Patient → Room, not Room → Patient)
+- **A type** (assigned_to, located_in, monitors)
+- **Source and target nodes** (the two instances being connected)
+- Optionally, **properties** (like admissionDate or transferReason)
+
+The "relationship graph" you see in the overview is a visual representation of nodes and edges: entity instances appear as circles (nodes), and the lines connecting them are the relationships (edges).
+
+### Why this matters
+
+Traditional relational databases answer questions by joining tables. Graph databases answer questions by traversing edges between nodes. When you ask "Which patients are in Cardiology?", the graph query starts at the Cardiology node, follows "has" edges to Room nodes, then follows "assigned_to" edges to Patient nodes. No joins. No foreign key lookups. Just following the connections that already exist.
+
+This graph structure is what makes your ontology powerful—and it's what you're about to explore.
+
 ## Open the entity type overview
 
 The entity type overview is your starting point for exploring any entity type's instances and connections. To open it, select an entity type in the **Entity Types** pane—for example, **Department**—and then select **Entity type overview** from the ribbon.
