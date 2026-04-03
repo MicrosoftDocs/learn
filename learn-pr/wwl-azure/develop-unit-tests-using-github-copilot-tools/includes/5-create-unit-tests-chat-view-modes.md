@@ -21,11 +21,11 @@ To create unit tests using the Ask agent, follow these steps:
 
     - You can add context to the chat session by dragging and dropping files from Visual Studio Code's EXPLORER view into the Chat view. You can also use the **Add Context** button.
     - You can open external files in the code editor to include resources that aren't part of the workspace and use them to provide specific context. For example, you can open markdown files that contain contributor guidelines or contact information and then use the **Add Context** button to add them to the Chat view context.
-    - You can use the `@workspace` chat variable to specify the workspace as part of your prompt. The workspace context is useful when you want to create tests for multiple functions or methods in a file, or when you want to create tests for an entire file.
+    - You can use Copilot Chat with your project context to guide prompts and generate more relevant suggestions. This is especially useful when creating tests for multiple functions or methods in a file, or when generating tests for an entire file.
 
 1. Enter a prompt that asks for unit tests for the code in the file.
 
-    - For example: "`@workspace /explain I need to create unit tests for the code in this file. The tests should be written in Python and use the unittest framework.`"
+    - For example: "`I need to create unit tests for the code in this file. The tests should be written in Python and use the unittest framework. Please generate the tests and explain how they work.`"
 
 1. Review the suggested unit tests, and refine the results using updated prompts if necessary.
 

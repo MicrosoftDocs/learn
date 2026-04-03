@@ -62,13 +62,13 @@ This risk assessment helps you prioritize remediation and communicate urgency to
 
 ### Understanding the context
 
-Analyze how the secret is used to ensure remediation preserves functionality. Use `@workspace` to search across files.
+Analyze how the secret is used to ensure remediation preserves functionality. Use `#codebase` to search across files.
 
 The following prompts help explore usage context:
 
 - "How is the selected API key used in the application?"
 - "What functions or classes depend on the selected database connection string?"
-- "`@workspace` Find all code paths that reference this credential."
+- "`#codebase` Find all code paths that reference this credential."
 - "What breaks if I remove this hard-coded secret?"
 
 GitHub Copilot analyzes the workspace and identifies:
@@ -110,9 +110,9 @@ Identify similar problems elsewhere using workspace-wide analysis.
 
 The following prompts help identify similar problems elsewhere in the workspace:
 
-- "`@workspace` Search for other hard-coded API keys or connection strings."
+- "`#codebase` Search for other hard-coded API keys or connection strings."
 - "Are there other credentials in configuration files that need remediation?"
-- "`@workspace` Find files that contain patterns similar to the selected secret."
+- "`#codebase` Find files that contain patterns similar to the selected secret."
 - "What other security concerns exist in files that handle external service integration?"
 
 GitHub Copilot searches the workspace and identifies:
