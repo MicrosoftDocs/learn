@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 08/21/2025
+  ms.date: 04/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -14,9 +14,9 @@ quiz:
   questions:
   - content: "Which type of Azure Stream Analytics output should you use to support real-time visualizations in Microsoft Power BI?"
     choices:
-    - content: "Azure Synapse Analytics"
+    - content: "Azure Blob storage"
       isCorrect: false
-      explanation: "Incorrect. An Azure Synapse Analytics output writes data to a table in an Azure Synapse Analytics dedicated SQL pool."
+      explanation: "Incorrect. An Azure Blob storage output writes data to files in Azure storage and doesn't support real-time streaming visualizations in Power BI."
     - content: "Azure Event Hubs"
       isCorrect: false
       explanation: "Incorrect. An Azure Event Hubs output writes data to an event hub for downstream processing."
@@ -28,7 +28,7 @@ quiz:
     - content: "Create only the workspace. The dataset and table will be created automatically."
       isCorrect: true
       explanation: "Correct. The dataset and table will be created dynamically by the output."
-    - content: "Create the workspace and dataset. The table will be created automatically."
+    - content: "Create the workspace and dataset. The table is created automatically."
       isCorrect: false
       explanation: "Incorrect. The dataset and table will be created dynamically by the output."
     - content: "Create the workspace, dataset, and table before creating the output."
@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: "Create a report from the dataset."
       isCorrect: false
-      explanation: "incorrect. A visualization in a report does not update dynamically."
+      explanation: "Incorrect. A visualization in a report doesn't update dynamically."
     - content: "Create a dashboard with a tile based on the streaming dataset."
       isCorrect: true
       explanation: "Correct. A dashboard with a tile based on a streaming dataset updates dynamically as new data arrives."
     - content: "Export the streaming dataset to Excel and create a report from the Excel workbook."
       isCorrect: false
-      explanation: "Incorrect. A report based on an Excel workbook does not update dynamically."
+      explanation: "Incorrect. A report based on an Excel workbook doesn't update dynamically."
