@@ -6,7 +6,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check for Describe risk and compliance and data governance solutions."
-  ms.date: 8/23/2024
+  ms.date: 04/02/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -21,9 +21,9 @@ quiz:
 
   - content: An organization needs to retain audit records for a longer period of time and gain access to high-value intelligent insights. Which auditing solution should they use?
     choices:
-    - content: Microsoft 365 Management Activity API
+    - content: Office 365 Management Activity API
       isCorrect: false
-      explanation: Incorrect. The Microsoft 365 Management Activity API is a method to retrieve audit logs, not an auditing solution.
+      explanation: Incorrect. The Office 365 Management Activity API is a method to retrieve audit logs, not an auditing solution.
     - content: Audit (Standard)
       isCorrect: false
       explanation: Incorrect. Audit (Standard) does not provide longer retention of audit records or high-value intelligent insights.
@@ -45,9 +45,9 @@ quiz:
 
   - content: An organization wants to ensure that its employees are adhering to corporate policies in their day-to-day business communications. They want to detect any potential concerns of offensive language or harassment. Which Microsoft tool can they use to scan user communications across the organization?
     choices:
-    - content: Microsoft Copilot for Microsoft 365
+    - content: Microsoft 365 Copilot
       isCorrect: false
-      explanation: Incorrect. Microsoft Copilot for Microsoft 365 is a tool for managing Microsoft 365 services, not for scanning and detecting communication policy violations.
+      explanation: Incorrect. Microsoft 365 Copilot is an AI assistant that helps with productivity tasks, not for scanning and detecting communication policy violations.
     - content: Microsoft Purview Communication Compliance
       isCorrect: true
       explanation: Correct. Microsoft Purview Communication Compliance is an insider risk solution that helps detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within an organization.
