@@ -67,7 +67,7 @@ Examples of built-in slash commands:
 - `/new`: Scaffold code for a new workspace. Only the chat prompt is used as context.
 - `/newNotebook`: Create a new Jupyter Notebook. Only the chat prompt is used as context.
 
-Examples using chat participnt and variables combined with slash commands:
+Examples using chat participant and variables combined with slash commands:
 
 - `#codebase /explain`: Generate an explanation of the full workspace.
 - `#codebase /fix` (or `/fix`): Propose a fix for the problems in the selected code.
