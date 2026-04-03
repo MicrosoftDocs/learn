@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 08/21/2025
+  ms.date: 04/03/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -22,10 +22,10 @@ quiz:
     - content: "Data is collected in a temporary store, and all records are processed together as a batch."
       isCorrect: false
       explanation: "Incorrect. Collecting and processing data periodically as a batch is referred to as batch processing."
-    - content: "Data that is incomplete or contains errors is redirected to separate storage for correction by a human operator."
+    - content: "Data that's incomplete or contains errors is redirected to separate storage for correction by a human operator."
       isCorrect: false
       explanation: "Incorrect. When incomplete or erroneous data is often logged, but isn't usually analyzed as a stream."
-  - content: "You need to process a stream of sensor data, aggregating values over one minute windows and storing the results in a data lake. Which service should you use?"
+  - content: "You need to process a stream of sensor data, aggregating values over one-minute windows and storing the results in a data lake. Which service should you use?"
     choices:
     - content: "Azure SQL Database"
       isCorrect: false
@@ -36,14 +36,14 @@ quiz:
     - content: "Azure Stream Analytics"
       isCorrect: true
       explanation: "Correct. Azure Stream Analytics is a stream processing engine."
-  - content: "You want to aggregate event data by contiguous, fixed-length, non-overlapping temporal intervals. What kind of window should you use?"
+  - content: "You want to aggregate event data by contiguous, fixed-length, nonoverlapping temporal intervals. What kind of window should you use?"
     choices:
     - content: "Sliding"
       isCorrect: false
-      explanation: "Incorrect. Sliding windows are not contiguous."
+      explanation: "Incorrect. Sliding windows aren't contiguous."
     - content: "Session"
       isCorrect: false
       explanation: "Incorrect. Session windows only include concurrent events."
     - content: "Tumbling"
       isCorrect: true
-      explanation: "Correct. Tumbling windows define contiguous, fixed-length, non-overlapping windows."
+      explanation: "Correct. Tumbling windows define contiguous, fixed-length, nonoverlapping windows."
