@@ -64825,6 +64825,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/01-introduction.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/01-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/02-azure-databricks.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/02-azure-databricks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/03-workloads.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/03-workloads",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/04-key-concepts.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/04-key-concepts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/05-data-governance-using-unity-catalog-and-microsoft-purview.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/05-data-governance-using-unity-catalog-and-microsoft-purview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/06-exercise-explore-databricks.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/06-exercise-explore-databricks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/07-knowledge-check.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/07-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/08-summary.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/08-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/index.yml",
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "learn-pr/sqlserver/understand-hybrid-data-platform-sql-server-2022/index.md",
       "redirect_url": "/training/modules/understand-hybrid-data-platform-sql-server/",
       "redirect_document_id": false
@@ -65149,42 +65194,6 @@
       "source_path": "learn-pr/azure/manage-secrets-with-azure-key-vault/7-summary.yml",
       "redirect_url": "/azure/security/",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/01-introduction.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/01-introduction"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/02-azure-databricks.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/02-azure-databricks"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/03-workloads.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/03-workloads"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/04-key-concepts.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/04-key-concepts"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/05-data-governance-using-unity-catalog-and-microsoft-purview.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/05-data-governance-using-unity-catalog-and-microsoft-purview"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/06-exercise-explore-databricks.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/06-exercise-explore-databricks"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/07-knowledge-check.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/07-knowledge-check"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/08-summary.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/08-summary"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/index.yml",
-      "redirect_url": "/training/wwl-databricks/explore-azure-databricks"
     }
   ]
 }
