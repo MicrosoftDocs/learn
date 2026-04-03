@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-security-exposure-management
+title: Describe Microsoft Security Exposure Management
+metadata:
+  title: Describe Microsoft Security Exposure Management
+  description: "Describe Microsoft Security Exposure Management"
+  ms.date: 04/01/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/6c-describe-security-exposure-management.md)]
