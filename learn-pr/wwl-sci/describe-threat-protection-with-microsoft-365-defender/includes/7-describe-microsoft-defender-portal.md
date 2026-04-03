@@ -33,7 +33,7 @@ For more information, see to the unit "Describe Microsoft Security Exposure Mana
 :::image type="content" source="../media/exposure-management-attack-path-with-map.png" lightbox="../media/exposure-management-attack-path-with-map.png" alt-text="A screenshot of an attack path under Exposure Management.":::
 
 # [Insights](#tab/insights)
-:::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-managementinitiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
+:::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-management-initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
 
 # [Secure score](#tab/secure-score)
 :::image type="content" source="../media/exposure-management-secure-score-v2.png" lightbox="../media/exposure-management-secure-score-v2.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
