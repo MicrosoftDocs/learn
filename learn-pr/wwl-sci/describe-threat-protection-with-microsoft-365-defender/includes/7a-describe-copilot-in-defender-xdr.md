@@ -149,3 +149,17 @@ As an analyst using Microsoft Defender XDR, you're likely to spend a good amount
 For content generated through the embedded experience you can easily transition to the standalone experience. To move to the standalone experience, select the ellipses within the generated content window then choose Open in Security Copilot.
 
 :::image type="content" source="../media/switch-to-standalone-experience.png" lightbox="../media/switch-to-standalone-experience.png" alt-text="Screen capture showing the option to open in Security Copilot, which is available by selecting the ellipses in the AI generated content window.":::
+
+## AI agents in Microsoft Defender XDR
+
+Microsoft Security Copilot also enables autonomous AI agents that operate within Microsoft Defender XDR to handle specific, repetitive security tasks. AI agents can work independently, take actions, provide transparent explanations of their decisions, and continuously learn from analyst feedback. Two agents are available directly in the Microsoft Defender portal.
+
+### Phishing Triage Agent
+
+The **Phishing Triage Agent** helps security operations analysts triage and classify user-submitted phishing reports. When a user reports a suspicious email, the agent automatically reviews the submission to determine whether it represents a genuine phishing attack or a false positive. The agent provides a clear rationale for its verdict in natural language, and it continuously improves its accuracy based on feedback from analysts. This automation reduces the manual effort of reviewing high volumes of reported emails while keeping analysts in control of final decisions.
+
+The Phishing Triage Agent requires Microsoft Defender for Office 365 Plan 2 and Microsoft Security Copilot.
+
+### Threat Intelligence Briefing Agent
+
+The **Threat Intelligence Briefing Agent** provides security operations teams with regular, customized threat intelligence briefings. The agent autonomously gathers and synthesizes relevant threat intelligence data from various sources in Microsoft Defender Threat Intelligence and delivers concise, actionable insights to help analysts stay informed about emerging threats. Rather than requiring analysts to manually review threat reports across multiple consoles, the agent surfaces the threat intelligence most relevant to your organization on an ongoing basis.

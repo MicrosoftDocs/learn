@@ -65,7 +65,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path_from_root": "/learn-pr/paths/analyze-monitoring-data-with-kql/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
@@ -92,7 +92,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/explore-fundamentals-kql/5-exercise.yml",
-       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/5-exercise-visualize-data-render-operator.yml",
-       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
     },
     {
@@ -172,7 +172,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/10-knowledge-check.yml",
-       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
+      "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
     },
     {
@@ -207,12 +207,12 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/5-knowledge-check.yml",
-       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
       "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/describe-cost-management-azure/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.yml",
-       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure",
       "redirect_document_id": false
     },
     {
@@ -260,7 +260,6 @@
       "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-java-spring-cosmosdb",
       "redirect_document_id": false
     },
-
     {
       "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/3-cloud-connected.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
@@ -290,7 +289,7 @@
       "source_path_from_root": "/learn-pr/sqlserver/introduction-to-sql-server-2022/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/explore-sql-server-2022-capabilities",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/migrate-sql-workloads-azure-managed-instances/3-use-log-replay.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-managed-instances"
@@ -356,7 +355,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/5-exercise-write-code-that-uses-service-bus-queues.yml",
-       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
       "redirect_document_id": false
     },
     {
@@ -366,7 +365,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/implement-message-workflows-with-service-bus/7-exercise-write-code-that-uses-service-bus-topics.yml",
-       "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
+      "redirect_url": "https://learn.microsoft.com/training/paths/architect-messaging-serverless",
       "redirect_document_id": false
     },
     {
@@ -446,7 +445,7 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/intro-to-azure-monitor/5-knowledge-check.yml",
-       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-azure-vm-using-diagnostic-data",
       "redirect_document_id": false
     },
     {
@@ -14763,16 +14762,15 @@
       "redirect_url": "/training/modules/github-introduction-administration/knowledge-check",
       "redirect_document_id": true
     },
-        {
+    {
       "source_path_from_root": "/learn-pr/github/manage-github-actions-enterprise/includes/exercise.md",
       "redirect_url": "/training/modules/manage-github-actions-enterprise/knowledge-check"
     },
-    
     {
       "source_path_from_root": "/learn-pr/github/manage-github-actions-enterprise/exercise.yml",
       "redirect_url": "/training/modules/manage-github-actions-enterprise/knowledge-check"
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/github/github-actions-ci/2b-github-actions-essential-features.yml",
       "redirect_url": "/training/modules/github-actions-ci/github-actions-essential-features",
       "redirect_document_id": true
@@ -38650,7 +38648,7 @@
       "redirect_url": "/training/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/describe-cost-management-azure/4-exercise-estimate-workload-costs-use-pricing-calculator.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cost-management-azure/",
       "redirect_document_id": false
@@ -38920,39 +38918,36 @@
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/10-virtual-private-networks.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
       "redirect_document_id": false
     },
-
- {
+    {
       "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/11-expressroute.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
       "redirect_document_id": false
     },
-
- {
+    {
       "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/12-domain-name-system.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
       "redirect_document_id": false
     },
-
- {
+    {
       "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/3-exercise-create-azure-virtual-machine.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
       "redirect_document_id": false
     },
- {
+    {
       "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/8-virtual-network.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
       "redirect_document_id": false
     },
- {
+    {
       "source_path": "learn-pr/wwl-azure/describe-azure-compute-networking-services/9-exercise-configure-network-access.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-azure-networking-services/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/2-prepare.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
@@ -49942,102 +49937,102 @@
       "source_path": "learn-pr/wwl-language/csharp-evaluate-boolean-expressions/7-solution-2.md",
       "redirect_url": "/training/modules/csharp-evaluate-boolean-expressions/7-review-solution-boolean-expressions-challenge",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/2-networking.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/3-group-exercise.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/4-building-trust.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/5-day-exercise.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/6-asking-questions.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/7-continual-learning.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-growth/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/2-prepare.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/3-exercise-practice-code.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/4-check-preparation.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/5-tech-interview.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/6-exercise-practice-questions.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/7-interview.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/8-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
-  {
+    },
+    {
       "source_path": "learn-pr/student-evangelism/career-interview/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-  },
+    },
     {
       "source_path": "learn-pr/wwl-language/csharp-switch-case/3-challenge.md",
       "redirect_url": "/training/modules/csharp-switch-case/3-exercise-challenge-switch-statements",
@@ -50069,469 +50064,469 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/create-azure-ad-workbook.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/create-azure-ad-workbook.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
-    {   
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+    {
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/2-what-is-mirror.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/2-what-is-mirror.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/3-what-is-coach.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/3-what-is-coach.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/4-exercise-mirror-coach-support-learning.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/4-exercise-mirror-coach-support-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/5-play-role-mirror-coach.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/5-play-role-mirror-coach.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/6-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/7-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/communicate-strategically-mirror-coach/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/2-what-is-effective-communication.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/2-what-is-effective-communication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/3-role-active-listening-teamwork.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/3-role-active-listening-teamwork.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/4-exercise-reflect-experiences.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/4-exercise-reflect-experiences.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/5-ground-rules-effective-communication.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/5-ground-rules-effective-communication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/6-practice-active-listening-strategies.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/6-practice-active-listening-strategies.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/7-exercise-reflect-active-listening-techniques.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/7-exercise-reflect-active-listening-techniques.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/8-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/9-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/practice-active-listening/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/practice-active-listening/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/2-what-is-cognitive-flexibility.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/2-what-is-cognitive-flexibility.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/3-recognize-importance-adapt-to-change.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/3-recognize-importance-adapt-to-change.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/4-expand-outlook.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/4-expand-outlook.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/5-use-feedback.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/5-use-feedback.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/6-pivot-persist-challenging-situations.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/6-pivot-persist-challenging-situations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/7-exercise-cognitive-flexibility.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/7-exercise-cognitive-flexibility.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/8-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/9-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/grow-cognitive-flexibility/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/2-what-is-self-regulation.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/2-what-is-self-regulation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/3-exercise-approach-challenges.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/3-exercise-approach-challenges.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/4-use-self-regulated-learning-work-through-challenges.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/4-use-self-regulated-learning-work-through-challenges.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/5-exercise-self-regulated-learning.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/5-exercise-self-regulated-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/6-goal-orientation-component-self-regulation.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/6-goal-orientation-component-self-regulation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/7-exercise-reflect-on-use-self-regulated-learning.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/7-exercise-reflect-on-use-self-regulated-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/8-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/9-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/self-regulation-work-strategically/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/2-concept-emotional-intelligence-technology.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/2-concept-emotional-intelligence-technology.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/3-exercise-reflect-feelings.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/3-exercise-reflect-feelings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/4-identify-emotions.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/4-identify-emotions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/5-exercise-assess-improve-emotional-intelligence.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/5-exercise-assess-improve-emotional-intelligence.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/6-manage-emotions-technical-environment.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/6-manage-emotions-technical-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/7-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/8-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/exercise-your-emotional-intelligence/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/2-characteristics-components-effective-feedback.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/2-characteristics-components-effective-feedback.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/3-wise-feedback-technical-environments.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/3-wise-feedback-technical-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/4-provide-receive-wise-feedback.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/4-provide-receive-wise-feedback.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/5-tips-effective-feedback.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/5-tips-effective-feedback.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/6-exchange-effective-feedback.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/6-exchange-effective-feedback.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/7-exercise-reflect-effective-feedback.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/7-exercise-reflect-effective-feedback.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/8-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/give-receive-effective-feedback/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/2-explore-concept-self-efficacy.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/2-explore-concept-self-efficacy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/3-differentiate-self-efficacy-self-confidence.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/3-differentiate-self-efficacy-self-confidence.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/4-exercise-differentiate.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/4-exercise-differentiate.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/5-examine-impact-self-efficacy.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/5-examine-impact-self-efficacy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/6-exercise-examine.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/6-exercise-examine.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/7-evaluate-factors-self-efficacy-impact.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/7-evaluate-factors-self-efficacy-impact.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/8-strategies-improve-self-efficacy-technology.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/8-strategies-improve-self-efficacy-technology.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/9-exercise-reflect-self-efficacy.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/9-exercise-reflect-self-efficacy.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/10-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/11-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/enhance-self-efficacy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/2-examine-recognize-belonging.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/2-examine-recognize-belonging.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/3-exercise-belongingness.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/3-exercise-belongingness.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/4-why-belonging-matters-tech.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/4-why-belonging-matters-tech.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/5-identify-challenges-tech-environments.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/5-identify-challenges-tech-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/6-exercise-challenges.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/6-exercise-challenges.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/7-microaggressions-microaffirmations.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/7-microaggressions-microaffirmations.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/8-exercise-interactions-cultivate-belonging.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/8-exercise-interactions-cultivate-belonging.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/9-build-inclusive-environments.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/9-build-inclusive-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/10-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/11-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/cultivate-culture-belongingness/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/paths/tech-resilience/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/paths/tech-resilience/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/2-describe-fixed-and-growth-mindsets.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/2-describe-fixed-and-growth-mindsets.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/3-exercise-reflect-mindset.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/3-exercise-reflect-mindset.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/4-differentiate-fixed-and-growth-mindsets.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/4-differentiate-fixed-and-growth-mindsets.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/5-exercise-mindset.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/5-exercise-mindset.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/6-strategies-change-mindset.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/6-strategies-change-mindset.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/7-exercise-change-mindset.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/7-exercise-change-mindset.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/8-reflect-connection-mindset-outcomes.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/8-reflect-connection-mindset-outcomes.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/9-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/10-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/develop-growth-mindset/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/develop-growth-mindset/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/introduction-azure-synapse-analytics/5-knowledge-check.yml",
@@ -51309,84 +51304,84 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/index.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/index.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/azure-openai-service-overview.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/azure-ai-foundry-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/azure-openai-service-overview.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/azure-ai-foundry-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/choose-purchase-azure-openai-service-provisioned-reservation.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/choose-purchase-azure-ai-foundry-provisioned-reservation",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/choose-purchase-azure-openai-service-provisioned-reservation.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/choose-purchase-azure-ai-foundry-provisioned-reservation",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/estimate-request-deploy-provisioned-throughput-units",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/introduction.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/introduction",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/introduction.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/introduction",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/knowledge-check.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/knowledge-check",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/knowledge-check.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/knowledge-check",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/manage-monitor-provisioned-reservations.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/manage-monitor-provisioned-reservations",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/manage-monitor-provisioned-reservations.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/manage-monitor-provisioned-reservations",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/summary.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/summary",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/summary.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/summary",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/understand-azure-openai-deployment-models.yml",
-        "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/understand-azure-ai-foundry-deployment-models",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/optimize-spend-performance-azure-openai-service-provisioned-reservations/understand-azure-openai-deployment-models.yml",
+      "redirect_url": "/training/modules/optimize-spend-and-performance-with-azure-ai-foundry-provisioned-reservations/understand-azure-ai-foundry-deployment-models",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-create-azure-ad-workbook.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-create-azure-ad-workbook.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-integrate-logs-with-log-analytics.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-integrate-logs-with-log-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-use-logs-get-status-information.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-use-logs-get-status-information.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-write-kql-queries.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/exercise-write-kql-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/integrate-logs-with-log-analytics.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/integrate-logs-with-log-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/monitor-authentication-methods/knowledge-check.yml",
@@ -52464,109 +52459,109 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/use-apis-discover-museum-art/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/paths/start-career-in-tech/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/paths/start-career-in-tech/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/use-logs-get-status-information.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/monitor-authentication-methods/use-logs-get-status-information.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/monitor-authentication-methods/write-kql-queries.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false 
+      "source_path": "learn-pr/azure/monitor-authentication-methods/write-kql-queries.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/index.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/9-summary.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/9-summary.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/7-add-visualizations-chart-grid.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/7-add-visualizations-chart-grid.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/5-add-visualization-for-query-results.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/5-add-visualization-for-query-results.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/4-supported-data-sources.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/4-supported-data-sources.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/3-create-new-azure-workbook.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/3-create-new-azure-workbook.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
-        "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/visualize-data-workbooks/2-azure-workbooks-overview.md",
+      "redirect_url": "/azure/azure-monitor/visualize/workbooks-overview",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/2-networking.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/2-networking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/3-exercise-attend-events.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/3-exercise-attend-events.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/4-resume-writing.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/4-resume-writing.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/5-resume-building.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/5-resume-building.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/6-exercise-resume-building.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/6-exercise-resume-building.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/7-knowledge-check.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/8-summary.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/student-evangelism/career-get-noticed/index.yml",
-        "redirect_url": "https://learn.microsoft.com/training/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/student-evangelism/career-get-noticed/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/analyze-logs-with-kql/index.yml",
@@ -52847,7 +52842,7 @@
       "source_path": "learn-pr/wwl-data-ai/read-text-computer-vision/6-summary.md",
       "redirect_url": "/training/modules/get-started-computer-vision-azure/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/introduction-to-azure-api-management/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/",
@@ -52937,7 +52932,7 @@
       "source_path": "learn-pr/paths/introduction-generative-ai/index.md",
       "redirect_url": "/training/paths/introduction-to-ai-on-azure/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/aspnetcore/aspnet-core-signalr-polling-fix/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/signalr?view=aspnetcore-9.0&tabs=visual-studio",
@@ -56527,7 +56522,7 @@
       "source_path": "learn-pr/azure/optimize-performance-and-costs-using-azure-disk-storage/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/batch/",
@@ -58783,7 +58778,8 @@
       "redirect_url": "https://learn.microsoft.com/azure/messaging-services/",
       "redirect_document_id": false
     },
-    { "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
+    {
+      "source_path": "learn-pr/azure/deploy-manage-azure-arc-enabled-sql-managed-instance/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/data/create-sql-managed-instance",
       "redirect_document_id": false
     },
@@ -59596,7 +59592,7 @@
       "source_path": "learn-pr/azure/deploy-azure-private-5g-core/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
       "redirect_document_id": false
-        },
+    },
     {
       "source_path": "learn-pr/azure/monitor-azure-private-5g-core-service/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-5g-core/private-5g-core-overview",
@@ -59997,7 +59993,7 @@
       "redirect_url": "/training/modules/design-data-storage-solution-for-relational-data/10-summary-resources",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/design-data-storage-solution-for-relational-data/8-design-for-azure-sql-edge.md",
       "redirect_url": "/training/modules/design-data-storage-solution-for-relational-data/",
       "redirect_document_id": false
@@ -60938,84 +60934,84 @@
       "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/1-introduction.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/2-what-is-azure-remote-rendering.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/2-what-is-azure-remote-rendering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/3-how-azure-remote-rendering-works.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/3-how-azure-remote-rendering-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/4-when-to-use-azure-remote-rendering.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/4-when-to-use-azure-remote-rendering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/5-knowledge-check.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/6-summary.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/index.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-remote-rendering/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/1-introduction.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/2-what-is-azure-remote-rendering.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/2-what-is-azure-remote-rendering.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/3-exercise-create-an-azure-remote-rendering-resource.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/3-exercise-create-an-azure-remote-rendering-resource.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/4-managing-a-session-and-rendering-models.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/4-managing-a-session-and-rendering-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/5-exercise-render-a-model-in-unity.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/5-exercise-render-a-model-in-unity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/6-knowledge-check.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/7-summary.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/index.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/azure/render-model-azure-remote-rendering-unity/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/paths/get-started-with-azure-remote-rendering/index.yml",
-    "redirect_url": "https://learn.microsoft.com/training/browse/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/paths/get-started-with-azure-remote-rendering/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/2a-ai-foundations.yml",
@@ -61181,7 +61177,7 @@
       "source_path_from_root": "/learn-pr/azure/introduction-to-classical-machine-learning/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
-        },
+    },
     {
       "source_path_from_root": "/learn-pr/azure/introduction-to-data-for-machine-learning/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
@@ -61281,7 +61277,7 @@
       "source_path_from_root": "/learn-pr/azure/understand-regression-machine-learning/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
       "redirect_document_id": false
-        },
+    },
     {
       "source_path_from_root": "/learn-pr/azure/test-machine-learning-models/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/create-machine-learn-models/",
@@ -62546,7 +62542,7 @@
       "source_path": "learn-pr/paths/deploy-applications-with-azure-devops/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
-    } ,   
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
@@ -62561,77 +62557,77 @@
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/2-design-the-pipeline.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/3-set-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/4-promote-dev.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/5-promote-test.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/6-promote-staging.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/7-clean-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/create-multi-stage-pipeline/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/create-multistage-pipeline",
       "redirect_document_id": false
-    },               
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    },     
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/2-what-is-functional-testing.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/3-set-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/4-plan-ui-tests.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/5-write-ui-tests.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/6-run-ui-tests.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/7-clean-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-devops/run-functional-tests-azure-pipelines/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
@@ -62671,7 +62667,7 @@
       "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/6-clean-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure-devops/run-non-functional-tests-azure-pipelines/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-glossary?view=azure-devops",
@@ -62711,7 +62707,7 @@
       "source_path": "learn-pr/azure-devops/manage-release-cadence/6-clean-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure-devops/manage-release-cadence/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops",
@@ -62781,7 +62777,7 @@
       "source_path": "learn-pr/azure-devops/deploy-docker/5-clean-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure-devops/deploy-docker/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops&tabs=java%2Cyaml",
@@ -62827,7 +62823,7 @@
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
-    {      
+    {
       "source_path": "learn-pr/azure/choose-storage-approach-in-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-account-overview",
       "redirect_document_id": false
@@ -62907,7 +62903,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-srp-overview",
       "redirect_document_id": false
     },
-    {                                                                                  
+    {
       "source_path": "learn-pr/azure/build-app-with-scale-sets/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
       "redirect_document_id": false
@@ -62957,17 +62953,17 @@
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machine-scale-sets/flexible-virtual-machine-scale-sets-cli",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/paths/bicep-azure-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
-      "redirect_document_id": false      
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/powershell/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
-    {   
+    {
       "source_path": "learn-pr/powershell/connect-commands/index.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/04-pipelines",
       "redirect_document_id": false
@@ -63106,7 +63102,7 @@
       "source_path": "learn-pr/powershell/script-with-powershell/11-summary.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/01-getting-started",
       "redirect_document_id": false
-    },                                                  
+    },
     {
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
@@ -63116,7 +63112,7 @@
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/2-understand-object-storage-solutions.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
       "redirect_document_id": false
-    },                                                       
+    },
     {
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/3-access-data-azure-blob-storage-rest-protocol.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
@@ -63145,12 +63141,12 @@
     {
       "source_path": "learn-pr/azure/access-data-azure-blob-storage-multiple-protocols/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/data-lake-storage-multi-protocol-access",
-      "redirect_document_id": false         
-    },                                              
+      "redirect_document_id": false
+    },
     {
       "source_path": "learn-pr/paths/manage-resources-in-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
-      "redirect_document_id": false      
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/index.yml",
@@ -63161,7 +63157,7 @@
       "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/2-create-an-api-gateway.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
@@ -63181,7 +63177,7 @@
       "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/5-exercise-import-and-publish-an-api.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure/publish-manage-apis-with-azure-api-management/6-call-an-api-with-a-subscription-key.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/api-management/import-and-publish",
@@ -63201,7 +63197,7 @@
       "source_path": "learn-pr/azure-devops/implement-code-workflow/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure-devops/implement-code-workflow/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
@@ -63221,7 +63217,7 @@
       "source_path": "learn-pr/azure-devops/implement-code-workflow/4-create-pull-request.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure-devops/implement-code-workflow/5-push-a-change.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
@@ -63241,7 +63237,7 @@
       "source_path": "learn-pr/azure-devops/implement-code-workflow/8-require-reviewer.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure-devops/implement-code-workflow/9-clean-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/code-with-git?toc=%2fazure%2fdevops%2fget-started%2ftoc.json&view=azure-devops",
@@ -63261,7 +63257,7 @@
       "source_path": "learn-pr/azure-devops/manage-build-dependencies/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure-devops/manage-build-dependencies/2-plan-build-dependencies-for-your-pipeline.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
@@ -63276,7 +63272,7 @@
       "source_path": "learn-pr/azure-devops/manage-build-dependencies/3-set-up-environment.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure-devops/manage-build-dependencies/4-create-feed.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
@@ -63291,7 +63287,7 @@
       "source_path": "learn-pr/azure-devops/manage-build-dependencies/6-consume-package.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
       "redirect_document_id": false
-    },   
+    },
     {
       "source_path": "learn-pr/azure-devops/manage-build-dependencies/7-push-a-change.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/start-using-azure-artifacts",
@@ -63312,7 +63308,7 @@
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
-    {                                                                                                              
+    {
       "source_path": "learn-pr/paths/create-serverless-applications/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
@@ -63397,7 +63393,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/networking/monitoring-management/",
       "redirect_document_id": false
     },
-    {                                                                                      
+    {
       "source_path": "learn-pr/azure/build-first-bicep-deployment-pipeline-using-azure-pipelines/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/create-first-pipeline",
       "redirect_document_id": false
@@ -63557,7 +63553,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/devops/pipelines/test/test-glossary",
       "redirect_document_id": false
     },
-    {                                                                                                  
+    {
       "source_path": "learn-pr/powershell/introduction-to-powershell/index.yml",
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/overview",
       "redirect_document_id": false
@@ -63637,7 +63633,7 @@
       "redirect_url": "https://learn.microsoft.com/powershell/scripting/learn/ps101/02-help-system",
       "redirect_document_id": false
     },
-    {                                                                                                              
+    {
       "source_path": "learn-pr/azure/align-requirements-in-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
       "redirect_document_id": false
@@ -63651,7 +63647,7 @@
       "source_path": "learn-pr/azure/align-requirements-in-azure/2-public-private-hybrid.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
       "redirect_document_id": false
-    },            
+    },
     {
       "source_path": "learn-pr/azure/align-requirements-in-azure/3-service-models.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-cloud-service-types/",
@@ -63711,7 +63707,7 @@
       "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/5-create-resource-interactively.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/azure/automate-azure-tasks-with-powershell/6-exercise-create-resource-interactively.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/intro/azure-developer-create-resources#azure-powershell",
@@ -63782,7 +63778,7 @@
       "redirect_url": "https://learn.microsoft.com/cli/azure/get-started-with-azure-cli",
       "redirect_document_id": false
     },
-    {             
+    {
       "source_path": "learn-pr/azure/create-serverless-logic-with-azure-functions/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-create-function-app-portal",
       "redirect_document_id": false
@@ -63852,7 +63848,7 @@
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
-    {                                                                                       
+    {
       "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/developer/intro/azure-developer-overview",
       "redirect_document_id": false
@@ -63901,7 +63897,7 @@
       "source_path": "learn-pr/azure/app-service-scale-up-scale-out/4-scale-up-a-web-app.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/app-service-scale-up-scale-out/5-exercise-scale-up-a-web-app.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-scale-up",
@@ -63921,12 +63917,12 @@
       "source_path": "learn-pr/azure-networking/introduction-azure-private-link/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-private-link/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-private-link/2-what-is-azure-private-link.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
@@ -63941,17 +63937,17 @@
       "source_path": "learn-pr/azure-networking/introduction-azure-private-link/4-when-to-use-azure-private-link.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-private-link/5-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-private-link/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/private-link/private-link-overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
@@ -63961,17 +63957,17 @@
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/2-what-is-azure-virtual-wan.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/3-how-azure-virtual-wan-works.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/4-when-to-use-azure-virtual-wan.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
@@ -63981,17 +63977,17 @@
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/5-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-wan/virtual-wan-about",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
@@ -64001,17 +63997,17 @@
       "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/2-what-is-azure-web-application-firewall.yml",
       "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/3-how-azure-web-application-firewall-works.yml",
       "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/4-when-to-use-azure-web-application-firewall.yml",
       "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/5-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/web-application-firewall/overview",
@@ -64031,7 +64027,7 @@
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/2-what-infrastructure-code.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
@@ -64046,12 +64042,12 @@
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/4-what-bicep.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/5-how-bicep-works.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/6-when-use-bicep.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
@@ -64061,12 +64057,12 @@
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/7-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/introduction-to-infrastructure-as-code-using-bicep/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/index.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
@@ -64076,12 +64072,12 @@
       "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/2-create-use-bicep-modules.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/3-add-parameters-outputs-modules.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
@@ -64091,7 +64087,7 @@
       "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/4-exercise-create-use-module.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/create-composable-bicep-files-using-modules/5-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
@@ -64102,7 +64098,7 @@
       "redirect_url": "https://learn.microsoft.com/shows/learn-live/iac-and-bicep/",
       "redirect_document_id": false
     },
-    {                                                                                    
+    {
       "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
       "redirect_document_id": false
@@ -64131,7 +64127,7 @@
       "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/5-manage-remote-sessions.yml",
       "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/connect-vm-with-azure-bastion/6-exercise-enable-diagnostic-logs-monitor-sessions.yml",
       "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
@@ -64147,7 +64143,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/bastion/vm-about",
       "redirect_document_id": false
     },
-    {                                                                       
+    {
       "source_path": "learn-pr/azure/connect-on-premises-network-with-vpn-gateway/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/vpn-gateway/tutorial-create-gateway-portal",
       "redirect_document_id": false
@@ -64282,7 +64278,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal",
       "redirect_document_id": false
     },
-    {                                                                                         
+    {
       "source_path": "learn-pr/aspnetcore/blazor-build-rich-interactive-components/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-10.0",
       "redirect_document_id": false
@@ -64331,7 +64327,7 @@
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
@@ -64346,7 +64342,7 @@
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/3-create-use-azure-shared-disks.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/4-identify-benefits-limitations-azure-shared-disks.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
@@ -64356,12 +64352,12 @@
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/5-exercise-deploy-clustered-vms-azure-shared-disks.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/6-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/run-clustered-applications-azure-shared-disks/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/virtual-machines/disks-shared",
@@ -64371,12 +64367,12 @@
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/2-run-aci.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
@@ -64386,12 +64382,12 @@
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/3-restart-policies.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/4-use-environment-variables.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/5-use-data-volumes.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
@@ -64401,12 +64397,12 @@
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/6-troubleshoot-aci.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/7-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/azure/run-docker-with-azure-container-instances/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/container-instances/container-instances-quickstart",
@@ -64462,7 +64458,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/azure-resource-manager/templates/overview",
       "redirect_document_id": false
     },
-    {                                                
+    {
       "source_path": "learn-pr/azure/intro-to-azure-front-door/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/frontdoor/front-door-overview",
       "redirect_document_id": false
@@ -64537,7 +64533,7 @@
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
     },
-    {    
+    {
       "source_path": "learn-pr/azure/introduction-to-azure-files/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/files/storage-files-introduction",
       "redirect_document_id": false
@@ -64612,7 +64608,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/logic-apps/logic-apps-overview",
       "redirect_document_id": false
     },
-    {                                                                    
+    {
       "source_path": "learn-pr/azure/intro-to-azure-arc/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-arc/overview",
       "redirect_document_id": false
@@ -64702,62 +64698,62 @@
       "redirect_url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/wwl-data-ai/get-started-with-generative-ai-and-agents/5-using-an-agent.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/4-creating-an-agent",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/paths/deploy-a-website-with-azure-app-service/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
-    },  
-    { 
+    },
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/2-create-deployment-slots.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/3-exercise-create-deployment-slots.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/4-deploy-a-web-app-by-swapping-deployment-slots.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
     },
-    { 
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/5-exercise-deploy-a-web-app-by-using-deployment-slots.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
-    },  
-    { 
+    },
+    {
       "source_path": "learn-pr/azure/stage-deploy-app-service-deployment-slots/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots?tabs=portal",
       "redirect_document_id": false
-    },                    
-    { 
+    },
+    {
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/5-explore-active-directory-migration-tool.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
-    },    
-    { 
+    },
+    {
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/6-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
     },
-        { 
+    {
       "source_path": "learn-pr/wwl-azure/active-directory-domain-services-migration/7-summary-resources.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/paths/migrate-servers-workloads-premises-hybrid-environments?tabs=portal",
       "redirect_document_id": false
@@ -65232,32 +65228,32 @@
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/10-explore-best-practices-for-module-7.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/11-explore-best-practices-for-module-8.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/12-explore-best-practices-for-module-9.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/13-explore-best-practices-for-module-10.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/14-explore-best-practices-for-module-11.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/15-explore-best-practices-for-module-12.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
@@ -65272,32 +65268,32 @@
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/17-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/18-summary.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/2-objective-domains.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/3-learn-module-best-practices.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/4-explore-best-practices-for-module-1.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/5-explore-best-practices-for-module-2.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/6-explore-best-practices-for-module-3.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
@@ -65307,12 +65303,12 @@
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/7-explore-best-practices-for-module-4.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/8-explore-best-practices-for-module-5.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
       "redirect_document_id": false
-    }, 
+    },
     {
       "source_path": "learn-pr/wwl-azure/teach-azure-204-develop-solution-microsoft-azure-academic-programs/9-explore-best-practices-for-module-6.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/educator-center/",
@@ -65371,6 +65367,21 @@
     {
       "source_path": "learn-pr/sqlserver/sql-server-2022-data-virtualization/8-summary.md",
       "redirect_url": "/training/modules/sql-server-data-virtualization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-ai-language/4-extract-key-phrases.yml",
+      "redirect_url": "/azure/ai-services/language-service/key-phrase-extraction/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-ai-language/5-analyze-sentiment.yml",
+      "redirect_url": "/azure/ai-services/language-service/sentiment-opinion-mining/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-text-ai-language/7-extract-linked-entities.yml",
+      "redirect_url": "/azure/ai-services/language-service/entity-linking/overview",
       "redirect_document_id": false
     }
   ]

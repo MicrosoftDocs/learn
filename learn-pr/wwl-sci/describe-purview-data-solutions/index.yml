@@ -3,7 +3,7 @@ uid: learn.describe-purview-data-solutions
 metadata:
   title: Describe the Data Security Solutions of Microsoft Purview
   description: "Describe the data security solutions of Microsoft Purview."
-  ms.date: 07/30/2025
+  ms.date: 04/03/2026
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
@@ -13,9 +13,11 @@ title: Describe the data security solutions of Microsoft Purview
 summary: "Describe the data security solutions of Microsoft Purview."
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe how Microsoft Purview Information Protection helps organizations discover, classify, and protect sensitive information.
-  - Describe how Microsoft Purview Data Loss Prevention helps organizations prevent their users from inappropriately sharing sensitive data with people who shouldn't have it.
-  - Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
+  - Describe the data classification and sensitivity labeling capabilities of Microsoft Purview Information Protection.
+  - Describe how Microsoft Purview Data Loss Prevention prevents the inappropriate sharing of sensitive data.
+  - Describe how Microsoft Purview Insider Risk Management and adaptive protection help minimize internal risks.
+  - Describe how Data Security Posture Management provides unified visibility into data risks.
+  - Describe how Microsoft Purview Data Security Investigations helps organizations investigate data security incidents.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -38,6 +40,8 @@ units:
 - learn.describe-purview-data-solutions.describe-data-loss-prevention
 - learn.describe-purview-data-solutions.describe-insider-risk-management
 - learn.describe-purview-data-solutions.describe-adaptive-protection
+- learn.describe-purview-data-solutions.describe-data-security-posture-management
+- learn.describe-purview-data-solutions.describe-data-security-investigations
 - learn.describe-purview-data-solutions.knowledge-check
 - learn.describe-purview-data-solutions.summary
 badge:

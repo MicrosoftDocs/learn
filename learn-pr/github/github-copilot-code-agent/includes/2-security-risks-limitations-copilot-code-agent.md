@@ -1,14 +1,14 @@
-The GitHub Copilot coding agent is designed from the ground up with security and governance in mind. While it unlocks new ways of delegating work to an autonomous agent, it operates inside your organization's existing guardrails and adds its own protections. This unit explains how the agent enforces your security policies, highlights the risks and mitigations you should be aware of, and sets expectations about its current limitations.
+The GitHub Copilot Cloud Agent  is designed from the ground up with security and governance in mind. While it unlocks new ways of delegating work to an autonomous agent, it operates inside your organization's existing guardrails and adds its own protections. This unit explains how the agent enforces your security policies, highlights the risks and mitigations you should be aware of, and sets expectations about its current limitations.
 
 By the end of this unit, you will be able to:
 
-- Describe the security model and built-in protections of the Copilot coding agent.
+- Describe the security model and built-in protections of the Copilot Cloud Agent .
 - Identify the main risks associated with using the agent and the mitigations GitHub applies.
 - Recognize the known limitations of the agent's workflow and compatibility to plan your usage accordingly.
 
 ### Security model and built-in protections
 
-Security is foundational to the Copilot coding agent. It respects your existing controls and applies its own guardrails to keep your workflows safe:
+Security is foundational to the Copilot Cloud Agent . It respects your existing controls and applies its own guardrails to keep your workflows safe:
 
 - **Subject to governance** - Organization and enterprise settings govern availability; all your security policies continue to apply to the agent.
 - **Restricted environment** - The agent runs inside a sandbox on GitHub Actions with firewalled internet access and read-only access to your repository.
@@ -19,7 +19,7 @@ Security is foundational to the Copilot coding agent. It respects your existing 
 
 ### Risks and mitigations
 
-Although the Copilot coding agent is built with security in mind, there are still risks you should plan for. GitHub applies mitigations to reduce them:
+Although the Copilot Cloud Agent  is built with security in mind, there are still risks you should plan for. GitHub applies mitigations to reduce them:
 
 - **Risk: Agent pushes code**
 

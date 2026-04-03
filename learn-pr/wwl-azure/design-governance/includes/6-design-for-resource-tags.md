@@ -1,4 +1,4 @@
-[Resource tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) are another way to organize resources. Tags provide extra information, or metadata, about your resources. 
+[Resource tags](/azure/azure-resource-manager/management/tag-resources) are another way to organize resources. Tags provide extra information, or metadata, about your resources. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=670885a7-e1ed-43af-b32e-6052dbd6e7a4]
 

@@ -1,54 +1,44 @@
 
-Threat intelligence analysts struggle with balancing a breadth of threat intelligence ingestion with the analysis of which threat intelligence poses the biggest threats to their organization and/or industry. Similarly, vulnerability intelligence analysts battle correlating their asset inventory with Common Vulnerabilities and Exposures (CVE) information to prioritize the investigation and remediation of the most critical vulnerabilities associated with their organization.
+> [!NOTE]
+> The standalone Microsoft Defender Threat Intelligence (Defender TI) product is being retired on August 1, 2026. Its capabilities are converging into Microsoft Defender XDR and Microsoft Sentinel, where threat intelligence features are accessible directly through the Microsoft Defender portal. Existing Defender TI customers have full access to their current experience until retirement.
 
-Microsoft Defender Threat Intelligence addresses these challenges by aggregating and enriching critical data sources and displaying them in an innovative, easy-to-use interface. Analysts can then correlate indicators of compromise (IOCs) with related articles, actor profiles, and vulnerabilities. Defender TI also lets analysts collaborate with fellow Defender TI-licensed users within their tenant on investigations.
+Microsoft Defender Threat Intelligence (Defender TI) is a threat analysis and intelligence platform designed to help security analysts streamline triage, incident response, threat hunting, vulnerability management, and threat infrastructure analysis workflows.
 
-Microsoft Defender Threat Intelligence functionality includes:
+Security analysts typically spend significant time collecting and correlating data from multiple, disconnected sources—DNS records, WHOIS information, malware databases, and more—before they can make an informed assessment about a suspicious IP address, domain, or host. Defender TI addresses this by aggregating and enriching these critical data sources into a single, unified interface, allowing analysts to focus on deriving insights rather than gathering raw data.
 
-- Threat analytics
-- Intel Profiles
-- Intel Explorer
-- Projects
+Defenders TI capabilities are accessible through the **Threat intelligence** node in the Microsoft Defender portal.
 
-#### Threat analytics
+## Threat intelligence capabilities
 
-Threat analytics helps you, as an analyst, understand how emerging threats impact your organization's environment.
+### Threat analytics
 
-Threat analytics reports provide an analysis of a tracked threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place. You can filter and search on reports, but Defender TI also provides a dashboard. 
+Threat analytics helps you understand how emerging threats impact your organization's environment. Threat analytics reports provide an analysis of a tracked threat and extensive guidance on how to defend against it. Each report also incorporates data from your own network, indicating whether the threat is active and whether you have applicable protections in place.
 
-The threat analytics dashboard highlights the reports that are most relevant to your organization. It summarizes the threats into three categories:
+The threat analytics dashboard surfaces the reports most relevant to your organization in three categories:
 
-- Latest threats - Lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
-- High-impact threats - Lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
-- Highest exposure - Lists threats to which your org has the highest exposure. Your exposure level to a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.
+- **Latest threats**—the most recently published or updated threat reports, along with the number of active and resolved alerts.
+- **High-impact threats**—threats with the highest number of active and resolved alerts in your organization.
+- **Highest exposure**—threats to which your organization has the highest exposure, calculated based on the severity of associated vulnerabilities and the number of devices in your organization that could be exploited.
 
-Each report provides an overview, an analyst report, related incidents, impacted assets, endpoints exposure, and recommended actions.
+### Intel profiles
 
-#### Intel profiles
+Intel profiles are Microsoft's curated repository of knowledge on tracked threat actors, malicious tools, and vulnerabilities. This content is continuously updated by Microsoft's Threat Intelligence experts to provide relevant, actionable threat context that analysts can use to understand who might be targeting them and how.
 
-Intel profiles are a definitive source of Microsoft's shareable knowledge on tracked threat actors, malicious tools, and vulnerabilities. This content is curated and continuously updated by Microsoft's Threat Intelligence experts to provide relevant and actionable threat context.
+### Intel explorer
 
-#### Intel explorer
+The Intel explorer is where analysts can scan new featured articles and search by keyword, indicator, or Common Vulnerabilities and Exposures (CVE) ID to begin intelligence gathering, triage, incident response, and hunting. 
 
-The intel explorer is where analysts can quickly scan new featured articles and perform a keyword, indicator, or CVE ID search to begin their intelligence gathering, triage, incident response, and hunting efforts.
+Defender TI articles are narratives that provide insight into threat actors, tooling, attacks, and vulnerabilities. Each article links to actionable content and key indicators of compromise (IOCs) to help analysts take action. Defender TI also supports CVE ID searches, which return **vulnerability articles** that include a description of the CVE, affected components, tailored mitigation guidance, deep and dark web chatter references, and a Defender TI priority score that reflects which vulnerabilities should be remediated first based on exploitability, recency, and linkage to malware.
 
-Microsoft Defender Threat Intelligence articles are narratives that provide insight into threat actors, tooling, attacks, and vulnerabilities. The articles summarize different threats and also link to actionable content and key IOCs to help users take action.
+### Projects
 
-Defender TI offers CVE-ID searches to help users identify critical information about the CVE. CVE-ID searches result in Vulnerability Articles.
+Defender TI lets you create projects to organize indicators of interest and indicators of compromise (IOCs) from an investigation. A project contains a listing of all associated artifacts and a detailed history that retains names, descriptions, collaborators, and monitoring profiles.
 
-#### Intel Projects
+## Defender TI in the Microsoft Defender portal
 
-Microsoft Defender Threat Intelligence (Defender TI) lets you create projects to organize indicators of interest and indicators of compromise (IOCs) from an investigation. Projects contain a listing of all associated artifacts and a detailed history that retains the names, descriptions, collaborators, and monitoring profiles.
-
-### Microsoft Defender Threat Intelligence in the Microsoft Defender portal
-
-Microsoft Defender TI is experienced through the Microsoft Defender portal.
-
-The Threat intelligence node on the navigation panel of the Microsoft Defender portal is where you can find the Microsoft Defender Threat Intelligence functionality.
+Threat intelligence capabilities are accessed through the **Threat intelligence** node on the navigation panel of the Microsoft Defender portal.
 
 :::image type="content" source="../media/threat-intelligence.png" alt-text="A screenshot of the selectable options for threat intelligence on the left navigation panel of the Microsoft Defender portal.":::
-
-To view a screen capture from each of the categories, select the tab from the image that follows. In each case, there's a side panel that shows the embedded Microsoft Security Copilot capability.
 
 # [Threat analytics](#tab/threat-analytics)
 :::image type="content" source="../media/threat-analytics.png" lightbox="../media/threat-analytics.png" alt-text="A screenshot of the threat analytics dashboard.":::
@@ -64,26 +54,25 @@ To view a screen capture from each of the categories, select the tab from the im
 
 ---
 
-### Microsoft Security Copilot integration with Microsoft Threat Intelligence
+## Microsoft Security Copilot integration
 
-Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
+Microsoft Security Copilot integrates with Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use prompts and promptbooks to investigate incidents, enrich threat hunting workflows with threat intelligence, or gain deeper knowledge of the global threat landscape.
 
-Microsoft Defender Threat Intelligence capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported. The image that follows shows only a subset of the capabilities supported.
+Copilot includes two built-in promptbooks for Defender TI:
 
-:::image type="content" source="../media/copilot-capabilities.png" lightbox="../media/copilot-capabilities.png" alt-text="Screen capture of the Defender TI system capabilities that can be run in the standalone experience.":::
+- **Vulnerability impact assessment**—generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
+- **Threat actor profile**—generates a report profiling a known threat actor group, including suggestions to defend against their common tools and tactics.
 
-Copilot also includes a builtin promptbook that deliver information from Defender TI, including:
-
-- Vulnerability impact assessment - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
-- Threat actor profile - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
-
-Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Security Copilot's capability to look up threat intelligence in the following pages of the Microsoft Defender portal:
+Copilot is also embedded directly in the Threat intelligence section of the Microsoft Defender portal. On any of the following pages, you can use available prompts or enter your own:
 
 - Threat analytics
 - Intel profiles
 - Intel explorer
 - Intel projects
 
-For each of these pages, you can use one of the available prompts or you can enter your own prompt.
-
 :::image type="content" source="../media/copilot-threat-intelligence.png" lightbox="../media/copilot-threat-intelligence.png" alt-text="Screen capture of the Copilot prompts embedded in Defender TI in the Microsoft Defender portal.":::
+
+### Threat Intelligence Briefing Agent
+
+Security Copilot also includes the **Threat Intelligence Briefing Agent**, an autonomous AI agent that provides security operations teams with regular, customized threat intelligence briefings. The agent autonomously gathers and synthesizes relevant threat intelligence data from various sources and delivers concise, actionable insights to help analysts stay informed about emerging threats and trends. Rather than requiring analysts to manually review threat reports across multiple sources, the Threat Intelligence Briefing Agent surfaces the information most relevant to your organization on an ongoing basis.
+

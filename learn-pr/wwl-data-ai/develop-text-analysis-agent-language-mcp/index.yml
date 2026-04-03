@@ -2,7 +2,7 @@
 uid: learn.wwl.develop-text-analysis-agent-language-mcp
 metadata:
   title: Develop a Text Analysis Agent with the Azure Language MCP Server
-  description: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like entity recognition, sentiment analysis, and summarization.
+  description: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like language detection, entity recognition, and personal information redaction.
   ms.date: 03/13/2026
   author: ivorb
   ms.author: berryivor
@@ -10,7 +10,7 @@ metadata:
   ms.service: azure-ai-language
   ai-usage: ai-generated
 title: Develop a text analysis agent with the Azure Language MCP server
-summary: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like entity recognition, sentiment analysis, and summarization.
+summary: Learn how to build an AI agent that uses the Azure Language MCP server to perform text analysis tasks like language detection, entity recognition, and personal information redaction.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the Azure Language MCP server and the text analysis capabilities it exposes.
@@ -24,22 +24,22 @@ prerequisites: |
   - Have some familiarity with Python programming.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- developer
+  - ai-engineer
+  - developer
 products:
-- language-service
-- microsoft-foundry
-- foundry-agent-service
+  - language-service
+  - microsoft-foundry
+  - foundry-agent-service
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 units:
-- learn.wwl.develop-text-analysis-agent-language-mcp.introduction
-- learn.wwl.develop-text-analysis-agent-language-mcp.understand-language-mcp
-- learn.wwl.develop-text-analysis-agent-language-mcp.connect-use-language-mcp
-- learn.wwl.develop-text-analysis-agent-language-mcp.exercise
-- learn.wwl.develop-text-analysis-agent-language-mcp.knowledge-check
-- learn.wwl.develop-text-analysis-agent-language-mcp.summary
+  - learn.wwl.develop-text-analysis-agent-language-mcp.introduction
+  - learn.wwl.develop-text-analysis-agent-language-mcp.understand-language-mcp
+  - learn.wwl.develop-text-analysis-agent-language-mcp.connect-use-language-mcp
+  - learn.wwl.develop-text-analysis-agent-language-mcp.exercise
+  - learn.wwl.develop-text-analysis-agent-language-mcp.knowledge-check
+  - learn.wwl.develop-text-analysis-agent-language-mcp.summary
 badge:
   uid: learn.wwl.develop-text-analysis-agent-language-mcp.badge
