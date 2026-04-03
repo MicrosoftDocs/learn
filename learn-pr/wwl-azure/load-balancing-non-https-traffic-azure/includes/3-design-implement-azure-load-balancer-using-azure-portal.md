@@ -1,6 +1,6 @@
 
 
-**Azure Load Balancer** operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Azure Load Balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances. These flows are according to configured load-balancing rules and health probes. The backend pool instances can be Azure Virtual Machines or instances in a virtual machine scale set.
+[**Azure Load Balancer**](/azure/load-balancer/load-balancer-overview) operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Azure Load Balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances. These flows are according to configured load-balancing rules and health probes. The backend pool instances can be Azure Virtual Machines or instances in a virtual machine scale set.
 
 This video reviews how to select a load balancer type.  
 
@@ -43,21 +43,19 @@ Load Balancers can also use a "no-zone" frontend. In these scenarios, a public l
 
 ## Selecting an Azure load balancer SKU
 
-There are several [load balancer SKUs](/azure/load-balancer/skus): Basic, Standard, and Gateway. These SKUs differ in terms of their scenario scope and scale, features, and cost. The [Gateway Load Balancer SKU](/azure/load-balancer/gateway-overview) is for high performance and high availability scenarios with Network Virtual Appliances (NVAs). This table compares the Standard and Basic Load Balancer.
+There are two [load balancer SKUs](/azure/load-balancer/skus): Standard, and Gateway. These SKUs differ in terms of their scenario scope and scale, features, and cost. 
 
 > [!IMPORTANT]
-> On September 30, 2025, Basic Load Balancer will be retired. 
+> On September 30, 2025, the Basic Load Balancer was retired. The Basic Load Balancer is no longer available for new deployments. Existing Basic Load Balancer resources should be [upgraded to Standard Load Balancer](/azure/load-balancer/load-balancer-basic-upgrade-guidance). 
 
-| **Features** | **Standard Load Balancer** | **Basic Load Balancer** |
+| **Features** | **Standard Load Balancer** | **Gateway Load Balancer** |
 | --- | ---  | ---|
-| Backend pool size | Supports up to 1,000 instances. | Supports up to 300 instances. |
-|  Backend pool endpoints |Any virtual machines or virtual machine scale sets in a single virtual network. | Virtual machines in a single availability set or virtual machine scale set. |
-| Health probes | TCP, HTTP, HTTPS | TCP, HTTP |
-| Health probe down behavior | TCP connections stay alive on an instance probe down and on all probes down. | TCP connections stay alive on an instance probe down. All TCP connections end when all probes are down. |
-| Availability Zones | Zone-redundant and zonal frontends for inbound and outbound traffic. | Not available. |
-| Diagnostics | Azure Monitor multi-dimensional metrics. | [Azure Monitor logs](/azure/load-balancer/load-balancer-monitor-log) |
-| Secure by default | Closed to inbound flows unless allowed by a network security group. Internal traffic from the virtual network to the internal load balancer is allowed.  | Open by default. Network security group optional. |
-| Multiple front ends | Inbound and outbound | Inbound only |
+| Primary use case | General-purpose load balancing for web applications and services | High performance and high availability scenarios with Network Virtual Appliances (NVAs) |
+| Backend pool size | Supports up to 1,000 instances | Supports up to 1,000 instances |
+| Backend pool endpoints | Any virtual machines or virtual machine scale sets in a single virtual network. | Network Virtual Appliances (NVAs) in a single virtual network  |
+| Traffic inspection | No built-in traffic inspection | Enables transparent traffic inspection and filtering through NVAs |
+| Cross-region connectivity | Regional load balancing | Regional load balancing with NVA integration |
+
 
 
 > [!TIP]
