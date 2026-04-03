@@ -38,9 +38,9 @@ quiz:
     - content: "Azure Bicep"
       isCorrect: false
       explanation: "Incorrect. Azure Bicep is a template language that's used to declaratively deploy Azure resources."
-    - content: "Azure Automation"
+    - content: "Azure Update Manager"
       isCorrect: true
-      explanation: "Correct. Azure Automation gives you complete control of update management."
+      explanation: "Correct. Azure Update Manager provides scheduled update deployments and maintenance windows for operating system updates across hybrid environments."
   - content: "How should the events be handled in the game?"
     choices:
     - content: "Azure Event Hubs"
