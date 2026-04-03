@@ -2,7 +2,7 @@ Azure Stream Analytics is a service for complex event processing and analysis of
 
 - Ingest data from an *input*, such as an Azure event hub, Azure IoT Hub, or Azure Storage blob container.
 - Process the data by using a *query* to select, project, and aggregate data values.
-- Write the results to an *output*, such as Azure Data Lake Gen 2, Azure SQL Database, Azure Synapse Analytics, Azure Functions, Azure event hub, Microsoft Power BI, or others.
+- Write the results to an *output*, such as Azure Data Lake Storage Gen2, Azure SQL Database, Azure Cosmos DB, Azure Functions, Azure Event Hubs, Microsoft Power BI, or others.
 
 ![Diagram that shows a Stream Analytics job with inputs, a query, and outputs](../media/stream-analytics.png)
 
@@ -14,7 +14,7 @@ Stream Analytics guarantees *exactly once* event processing and *at-least-once* 
 
 The easiest way to use Azure Stream Analytics is to create a Stream Analytics *job* in an Azure subscription, configure its input(s) and output(s), and define the query that the job will use to process the data. The query is expressed using structured query language (SQL) syntax, and can incorporate static reference data from multiple data sources to supply lookup values that can be combined with the streaming data ingested from an input.
 
-If your stream process requirements are complex or resource-intensive, you can create a Stream Analysis *cluster*, which uses the same underlying processing engine as a Stream Analytics job, but in a dedicated tenant (so your processing is not affected by other customers) and with configurable scalability that enables you to define the right balance of throughput and cost for your specific scenario.
+If your stream process requirements are complex or resource-intensive, you can create a Stream Analysis *cluster*, which uses the same underlying processing engine as a Stream Analytics job, but in a dedicated tenant (so your processing isn't affected by other customers) and with configurable scalability that enables you to define the right balance of throughput and cost for your specific scenario.
 
 ## Inputs
 
@@ -24,16 +24,18 @@ Azure Stream Analytics can ingest data from the following kinds of input:
 - Azure IoT Hub
 - Azure Blob storage
 - Azure Data Lake Storage Gen2
+- Apache Kafka
 
 Inputs are generally used to reference a source of streaming data, which is processed as new event records are added. Additionally, you can define *reference* inputs that are used to ingest static data to augment the real-time event stream data. For example, you could ingest a stream of real-time weather observation data that includes a unique ID for each weather station, and augment that data with a static reference input that matches the weather station ID to a more meaningful name.
 
 ## Outputs
 
-Outputs are destinations to which the results of stream processing are sent. Azure Stream Analytics supports a wide range of outputs, which can be used to:
+Outputs are destinations to which the results of stream processing are sent. Azure Stream Analytics supports a wide range of output sinks, which can be used to:
 
-- Persist the results of stream processing for further analysis; for example by loading them into a data lake or data warehouse.
-- Display a real-time visualization of the data stream; for example by appending data to a dataset in Microsoft Power BI.
-- Generate filtered or summarized events for downstream processing; for example by writing the results of stream processing to an event hub.
+- Persist results for further analysis; for example, by writing to Azure Data Lake Storage Gen2, Azure SQL Database, or Azure Cosmos DB.
+- Analyze log and telemetry data at scale; for example, by sending results to Azure Data Explorer.
+- Display a real-time visualization of the data stream; for example, by appending data to a dataset in Microsoft Power BI.
+- Generate filtered or summarized events for downstream processing; for example, by writing results to Azure Event Hubs.
 
 ## Queries
 
@@ -49,3 +51,9 @@ WHERE temperature < 0
 A field named **EventProcessedUtcTime** is automatically created to define the time when the event is processed by your Azure Stream Analytics query. You can use this field to determine the timestamp of the event, or you can explicitly specify another DateTime field by using the *TIMESTAMP BY* clause, as shown in this example. Depending on the input from which the streaming data is read, one or more potential timestamp fields may be created automatically; for example, when using an *Event Hubs* input, a field named **EventQueuedUtcTime** is generated to record the time when the event was received in the event hub queue.
 
 The field used as a timestamp is important when aggregating data over temporal windows, which is discussed next.
+
+## No-code editor
+
+If you prefer to build your stream processing job without writing SQL, Azure Stream Analytics includes a no-code editor. You can access it from the Azure Stream Analytics portal or the Azure Event Hubs portal. The no-code editor provides a drag-and-drop canvas where you connect input sources, add transformations (including windowing and aggregations), and configure outputs—without writing any code.
+
+You can use the no-code editor to prototype quickly, and then optionally view or customize the generated SQL query for more advanced scenarios.
