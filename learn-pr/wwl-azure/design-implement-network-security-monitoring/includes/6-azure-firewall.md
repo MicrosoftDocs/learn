@@ -29,7 +29,7 @@ All SKUs support availability zone deployment for zone-redundant high availabili
 
 ## What are Azure Firewall rules?
 
- An Azure Firewall denies all traffic by default, until rules are manually configured to allow traffic. Rules are organized inside Rule Collections which are contained in Rule Collection Groups. In the Azure Firewall, you can configure NAT rules, network rules, and applications rules.
+ An Azure Firewall denies all traffic by default, until rules are manually configured to allow traffic. Rules are organized inside Rule Collections that are contained in Rule Collection Groups. In the Azure Firewall, you can configure NAT rules, network rules, and applications rules.
 
 | Rule type	| Description |
 | --- | --- |
