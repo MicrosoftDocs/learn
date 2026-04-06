@@ -35,4 +35,11 @@ In your planning for Azure Backup and vault storage, consider the following poin
 
 - **Consider redundancy**. Specify how data in your vault is replicated for redundancy.
    - Use locally redundant storage (LRS) to protect against failure in a datacenter. LRS replicates data to a storage scale unit.
-   - Use geo-redundant storage (GRS) to protect against region-wide outages. GRS replicates your data to a secondary region. 
+   - Use zone-redundant storage (ZRS) to replicate data across availability zones in the same region, combining resilience to zone failures with data residency.
+   - Use geo-redundant storage (GRS) to protect against region-wide outages. GRS replicates your data to a secondary region.
+
+- **Consider ransomware protection**. Protect against ransomware by making your backup vault immutable, so recovery points can't be deleted before their set expiry. You can also choose to make this immutability permanent.
+  
+- **Consider multi-user authorization**. Require approval from another user for important backup actions by using Resource Guard. This adds extra security and helps prevent insider threats.
+  
+- **Consider centralized management**. Use Resiliency in Azure to manage backups and disaster recovery across all vaults, subscriptions, and regions. Get a unified view of security, protection, and alerts.
