@@ -2,7 +2,7 @@
 
 ## Azure Network Watcher
 
-[Azure Network Watcher](/azure/network-watcher/network-watcher-overview) is a regional service that enables you to monitor and diagnose network conditions. Network diagnostic and visualization tools help you understand, diagnose, and gain insights to your network in Azure. Network Watcher is designed to monitor and repair the network health of IaaS products which includes virtual machines, virtual networks, Application Gateways, and Load Balancers.
+[Azure Network Watcher](/azure/network-watcher/network-watcher-overview) is a regional service that enables you to monitor and diagnose network conditions. Network diagnostic and visualization tools help you understand, diagnose, and gain insights to your network in Azure. Network Watcher is designed to monitor and repair the network health of IaaS products that includes virtual machines, virtual networks, Application Gateways, and Load Balancers.
 
 ## Azure Network Watcher (video)
 
@@ -17,7 +17,8 @@
 
 ### Monitoring tools
 
-- **Network Topology** generates a visualization of the entire network for understanding network configuration.
+- **Network topology** gives you an interactive map of your network across subscriptions, resource groups, and locations. You can click on resources to view traffic and connectivity details and use diagnostic tools within the map.
+  
 - **Connection monitor** provides end-to-end connection monitoring for Azure and hybrid endpoints.
 
 ### Diagnostic tools
@@ -32,11 +33,18 @@
 
 - **Packet Capture** lets you remotely create packet capture sessions to record all network traffic to and from a virtual machine (VM) or a virtual machine scale set.
 
+- **NSG diagnostics** detects traffic filtering issues at a virtual machine, virtual machine scale set, or application gateway level. Checks if a packet is allowed or denied to or from an IP address, IP prefix, or service tag. Identifies which security rule allowed or denied the traffic.
+
 - **VPN troubleshoot** enables you to troubleshoot virtual network gateways and their connections.
 
 ### Traffic tools
 
-- **Flow logs** allows you to log information about your Azure IP traffic and stores the data in Azure storage. You can log IP traffic flowing through a network security group or Azure virtual network.
+- **Flow logs** allows you to log information about your Azure IP traffic.
+
+  -	**VNet flow logs (recommended)**: Enable logging at the virtual network level. Capture all supported workloads in the VNet without needing multi-level configuration. Also, record Azure Virtual Network Manager security admin rule decisions and traffic encryption status.
+    
+  -	**NSG flow logs**: Retiring September 30, 2027. No new NSG flow logs can be created after June 30, 2025. Existing deployments should [migrate to VNet flow logs](/azure/network-watcher/nsg-flow-logs-migrate).
+
 
 - **Traffic analytics** provides rich visualizations of flow logs data.
 
