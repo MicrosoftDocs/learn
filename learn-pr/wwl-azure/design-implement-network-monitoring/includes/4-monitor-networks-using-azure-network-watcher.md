@@ -33,6 +33,8 @@
 
 - **Packet Capture** lets you remotely create packet capture sessions to record all network traffic to and from a virtual machine (VM) or a virtual machine scale set.
 
+- **NSG diagnostics** detects traffic filtering issues at a virtual machine, virtual machine scale set, or application gateway level. Checks if a packet is allowed or denied to or from an IP address, IP prefix, or service tag. Identifies which security rule allowed or denied the traffic.
+
 - **VPN troubleshoot** enables you to troubleshoot virtual network gateways and their connections.
 
 ### Traffic tools
