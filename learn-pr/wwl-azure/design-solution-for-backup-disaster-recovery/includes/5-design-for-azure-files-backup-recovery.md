@@ -29,7 +29,7 @@ Let's review some of the characteristics regarding backup and recovery of Azure 
 
 You can protect Azure file shares using two backup approaches: **vaulted backup** and **snapshot backup**. Microsoft recommends vaulted backup for comprehensive protection against data loss, including protection from ransomware attacks and rogue administrator deletion.
 
-- **Vaulted backup** stores backup data in a Backup vault (offsite copy), supports retention up to 10 years, and provides protection against storage account deletion and ransomware. This is the recommended approach for comprehensive data protection.
+- **Vaulted backup** stores backup data in a Backup vault (offsite copy), supports retention up to 10 years, and provides protection against storage account deletion and ransomware. Vaulted backup is the recommended approach for comprehensive data protection.
 - **Snapshot backup** creates snapshots that are stored locally within the storage account and managed via Recovery Services vault metadata. While faster for restore operations, snapshot backups cannot protect against storage account-level deletion or ransomware targeting the storage account. The following diagram shows how automatic snapshot backups can be restored:
 
 
