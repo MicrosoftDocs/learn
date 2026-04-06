@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design a solution for backup and disaster recovery
   description: "You learn how to select appropriate backup solutions for Azure workloads. You also learn how to select appropriate disaster recovery options for these workloads.&nbsp;"
-  ms.date: 01/26/2026
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design a solution for backup and disaster recovery
 summary: Learn how to select appropriate backup solutions and disaster recovery solutions for Azure workloads.
 abstract: |
