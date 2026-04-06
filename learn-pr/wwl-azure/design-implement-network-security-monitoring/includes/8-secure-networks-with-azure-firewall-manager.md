@@ -14,15 +14,22 @@ Firewall Manager can provide security management for secured virtual hubs and hu
 
 - **Hub Virtual Network**. A standard Azure virtual network that you create and manage. When you associate firewall policies with this type of hub, you're creating a hub virtual network. This architecture's underlying resource is a virtual network.
 
-### Azure Firewall Manager features
+### Azure Firewall Manager capabilities
 
-If your organization has multiple Azure Firewall instances, you benefit from centralizing these configurations. Firewall Manager enables you to:
+Azure Firewall Manager provides six key capability areas:
 
-- Span multiple Azure subscriptions.
+-	**Central deployment and configuration**. Manage Azure Firewall deployment and policies across multiple subscriptions and regions.
+-	
+-	**Hierarchical policies**.  Create global policies authored by central IT with locally authored overrides.
+-	
+-	**Security partner provider integration**.  Route Internet-bound VNet and branch traffic through Zscaler, Check Point, or iboss while Azure Firewall handles private traffic in the same hub.
+-	
+-	**Centralized route management**.  Automatically route spoke traffic to secured hubs without manually configuring user-defined routes.
+-	
+-	**DDoS protection plan management**.  Associate virtual networks with a DDoS plan directly from Firewall Manager.
+-	
+-	**WAF policy management**.  Centrally create, view, and associate WAF policies to Front Door and Application Gateway across subscriptions.
 
-- Span different Azure regions.
-
-- Implement hub and spoke architectures to provide for traffic governance and protection.
 
 ### Azure Firewall Manager decision criteria
 
