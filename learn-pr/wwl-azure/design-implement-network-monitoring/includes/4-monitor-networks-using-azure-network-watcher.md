@@ -18,6 +18,7 @@
 ### Monitoring tools
 
 - **Network Topology** generates a visualization of the entire network for understanding network configuration.
+  
 - **Connection monitor** provides end-to-end connection monitoring for Azure and hybrid endpoints.
 
 ### Diagnostic tools
@@ -36,7 +37,12 @@
 
 ### Traffic tools
 
-- **Flow logs** allows you to log information about your Azure IP traffic and stores the data in Azure storage. You can log IP traffic flowing through a network security group or Azure virtual network.
+- **Flow logs** allows you to log information about your Azure IP traffic.
+
+  -	**VNet flow logs (recommended)**: Enable logging at the virtual network level. Capture all supported workloads in the VNet without needing multi-level configuration. Also, record Azure Virtual Network Manager security admin rule decisions and traffic encryption status.
+    
+  -	**NSG flow logs**: Retiring September 30, 2027. No new NSG flow logs can be created after June 30, 2025. Existing deployments should [migrate to VNet flow logs](/azure/network-watcher/nsg-flow-logs-migrate).
+
 
 - **Traffic analytics** provides rich visualizations of flow logs data.
 
