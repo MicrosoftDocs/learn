@@ -27,15 +27,19 @@ Let's review some of the characteristics regarding backup and recovery of Azure 
 
 #### Automated file share backups
 
-You can automate and manage your Azure file shares snapshots. Automating snapshot backups with Azure Backup is the recommended approach. The following diagram shows how automatic backups of file shares can be restored from a Recovery Services vault.
+You can protect Azure file shares using two backup approaches: **vaulted backup** and **snapshot backup**. Microsoft recommends vaulted backup for comprehensive protection against data loss, including protection from ransomware attacks and rogue administrator deletion.
+
+- **Vaulted backup** stores backup data in a Backup vault (offsite copy), supports retention up to 10 years, and provides protection against storage account deletion and ransomware. This is the recommended approach for comprehensive data protection.
+- **Snapshot backup** creates snapshots that are stored locally within the storage account and managed via Recovery Services vault metadata. While faster for restore operations, snapshot backups cannot protect against storage account-level deletion or ransomware targeting the storage account. The following diagram shows how automatic snapshot backups can be restored:
+
 
 :::image type="content" source="../media/file-share-automated.png" alt-text="Diagram that shows how Azure file shares snapshots are restored from a Recovery Services vault in Azure Backup." border="false":::
 
-- Azure Backup keeps the metadata about the snapshot backup in the Recovery Services vault, but no data is transferred. This method provides you with a fast backup solution that has built-in backup and reporting. 
+1. Azure Backup keeps the metadata about the snapshot backup in the Recovery Services vault, but no data is transferred. This method provides you with a fast backup solution that has built-in backup and reporting. 
 
-- When Azure Backup is enabled on the file share, the soft delete feature is also enabled. 
+1. When Azure Backup is enabled on the file share, the soft delete feature is also enabled. 
 
-- You can configure snapshot backups for daily, weekly, monthly, or yearly retention.
+1. You can configure snapshot backups for daily, weekly, monthly, or yearly retention.
 
 ### Things to consider when using file share backups
 
@@ -44,6 +48,8 @@ Take a moment to review some considerations for creating and recovering from fil
 - **Consider instant restore.** Azure file share backup uses file share snapshots. You can select just the files you want to restore instantly.
 
 - **Consider alerts and reporting**. You can configure alerts for backup and restore failures and use the reporting solution provided by Azure Backup. These reports provide insights on file share backups.
+
+- **Consider backup approach choice**. Choose vaulted backup for comprehensive protection including ransomware resilience and long-term retention up to 10 years. Choose snapshot backup when you need faster restore times for short-term scenarios and have other protection measures for the storage account itself.
 
 - **Consider self-service restore**. Azure Backup uses server endpoint Windows Volume Shadow Copy Service (VSS) snapshots. You might consider giving advanced users the ability to restore files themselves. 
 
