@@ -25,7 +25,7 @@ abstract: |
 
   -   Configure and use Traffic Analytics
 
-  -   Configure NSG flow logs
+  -   Configure VNet flow logs
 
   -   Enable and configure diagnostic logging
 
