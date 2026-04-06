@@ -40,6 +40,6 @@ In your planning for Azure Backup and vault storage, consider the following poin
 
 - **Consider ransomware protection**. Protect against ransomware by making your backup vault immutable, so recovery points can't be deleted before their set expiry. You can also choose to make this immutability permanent.
   
-- **Consider multi-user authorization**. Require approval from another user for important backup actions by using Resource Guard. This adds extra security and helps prevent insider threats.
+- **Consider multi-user authorization**. Require approval from another user for important backup actions by using Resource Guard. Multi-user authorization adds extra security and helps prevent insider threats.
   
 - **Consider centralized management**. Use Resiliency in Azure to manage backups and disaster recovery across all vaults, subscriptions, and regions. Get a unified view of security, protection, and alerts.
