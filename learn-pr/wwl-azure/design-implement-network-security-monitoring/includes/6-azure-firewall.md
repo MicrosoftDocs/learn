@@ -16,9 +16,13 @@ Azure Firewall has three [SKUs](/azure/firewall/choose-firewall-sku): Azure Fire
 
 ### How to choose the SKU
 
-- **Basic**: Up to 250 Mbps; SMB environments; has threat intelligence in alert mode only.
-- **Standard**: Up to 30 Gbps; enterprise environments; L3–L7 filtering, DNS proxy, web categories, and threat intelligence.
-- **Premium**: Up to 100 Gbps; regulated/sensitive environments (healthcare, payment); adds TLS inspection, IDPS, full URL filtering, and PCI DSS compliance.
+All SKUs support availability zone deployment for zone-redundant high availability. All SKUs include policy analytics for tracking rule usage over time and managing redundant or conflicting rules.
+
+- **Basic SKU**: Up to 250 Mbps; SMB environments; has threat intelligence in alert mode only.
+  
+- **Standard SKU**: Up to 30 Gbps; enterprise environments; L3–L7 filtering, DNS proxy, web categories, and threat intelligence.
+  
+- **Premium SKU**: Up to 100 Gbps; regulated/sensitive environments (healthcare, payment); adds TLS inspection, IDPS, full URL filtering, and PCI DSS compliance.
 
 
 
