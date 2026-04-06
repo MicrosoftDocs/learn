@@ -17,7 +17,7 @@
 
 ### Monitoring tools
 
-- **Network Topology** gives you an interactive map of your network across subscriptions, resource groups, and locations. You can click on resources to view traffic and connectivity details and use diagnostic tools within the map.
+- **Network topology** gives you an interactive map of your network across subscriptions, resource groups, and locations. You can click on resources to view traffic and connectivity details and use diagnostic tools within the map.
   
 - **Connection monitor** provides end-to-end connection monitoring for Azure and hybrid endpoints.
 
