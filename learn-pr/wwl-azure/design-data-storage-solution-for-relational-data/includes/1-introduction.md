@@ -24,7 +24,7 @@ In this module, you learn how to:
 
 - Design protection for data at rest, data in transmission, and data in use.
 
-- Design for Azure Cosmos DB and Cosmos DB Table API. 
+- Design for Azure Cosmos DB and Azure Cosmos DB for Table. 
 
 ### Skills measured
 
