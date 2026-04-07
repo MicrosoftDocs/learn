@@ -41,7 +41,7 @@ Let's explore a business scenario for Azure SQL Database. AccuWeather has been a
 
 Consider how Azure SQL Database can be included in your relational data storage plan for Tailwind Traders:
 
-- **Consider the free offer for development and testing**: Azure SQL Database provides a free offer for the lifetime of your subscription—up to 10 General Purpose single databases, each with 100,000 vCore seconds of compute per month. This is useful for prototyping, development, and non-production environments without incurring compute costs.
+- **Consider the free offer for development and testing**: Azure SQL Database provides a free offer for the lifetime of your subscription—up to 10 General Purpose single databases, each with 100,000 vCore seconds of compute per month. The free offer is useful for prototyping, development, and nonproduction environments.
 
 - **Consider vCore pricing**. (Microsoft recommended) Select compute and storage resources independently for multiple SQL databases or an elastic database pool. Use Azure Hybrid Benefit for SQL Server or reserved capacity (pay in advance) to save money. You control the compute and storage resources that you create and pay for. 
 
