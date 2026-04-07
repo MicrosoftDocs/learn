@@ -49,7 +49,7 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 
 
 
-Azure Private Endpoint provides private access to an Azure service by assigning it a private IP address from your virtual network, so traffic stays entirely on the Microsoft network and the service can be accessed without using the public internet. 
+Azure Private Endpoint lets you connect to an Azure service using a private IP address from your own virtual network. This process ensures all traffic on Microsoft's network and means you don't need the public internet to access the service.
 
 In contrast, Service Endpoints secure access to an Azure service’s public endpoint by allowing traffic from specific VNets or subnets, but the service itself still uses a public IP.
 
