@@ -9,7 +9,7 @@ After you set up your Azure AD B2C tenant, you must register your app. You use u
 ### Things to know about Azure AD B2C
 
 > [!IMPORTANT]
-> Azure AD B2C is no longer available for new customers as of May 1, 2025 and is supported until at least May 2030. For all new projects use Microsoft Entra External ID.
+> Azure AD B2C is no longer available for new customers as of May 1, 2025 and is supported until at least May 2030. For all new projects, use Microsoft Entra External ID.
 
 You review the B2B features of Microsoft Entra ID and consider how they might be implemented in an identity solution for Tailwind Traders. Let's look at the customer features offered by Azure AD B2C.
 
