@@ -54,7 +54,7 @@ The following table compares storage solution criteria for using Azure Data Fact
 | Compare                                    | Azure Data Factory                                           | Azure Synapse Analytics                                      |
 | ------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Data sharing**                           | Data can be shared across different data factories           | Not supported                                                |
-| **Solution templates**                     | Solution templates are provided with the Azure Data Factory template gallery | Solution templates are provided in the Synapse Workspace Knowledge center |
+| **Solution templates**                     | Solution templates are provided with the Azure Data Factory template gallery | Solution templates are provided in the Synapse Workspace Knowledge Center |
 | **Integration runtime cross region flows** | Cross region data flows are supported                        | Not supported                                                |
 | **Monitor data**                           | Data monitoring is integrated with Azure Monitor             | Diagnostic logs are available in Azure Monitor               |
 | **Monitor Spark Jobs for data flow**       | Not supported                                                | Spark Jobs can be monitored for data flow by using Synapse Spark pools |
