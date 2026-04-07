@@ -32,19 +32,28 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 
 [Azure private endpoint](/azure/private-link/private-endpoint-overview) is the key technology behind private link. Private endpoint is a network interface that enables a private and secure connection between your virtual network and an Azure service. In other words, private endpoint is the network interface that replaces the resource's public endpoint.
 
-
-
-
 Private Link provides secure access to Azure services. Private Link achieves that security by replacing a resource's public endpoint with a private network interface. Private Endpoint uses the private IP address for services into the virtual network.
 
 :::image type="content" source="../media/private-link-71e02d03.png" alt-text="Diagram showing private endpoint and private link zone.":::
 
+[Network policies](/azure/private-link/disable-private-endpoint-network-policy/) are disabled by default for private endpoint subnets. You can selectively enable support for:
+
+- **Network Security Groups (NSG)**: Control inbound traffic to the private endpoint from specific sources.
+
+- **User Defined Routes (UDR)**: Override the default /32 route to redirect traffic through an NVA or firewall.
+
+- **Application Security Groups (ASG)**: Group private endpoints for policy application.
+
 
 ## How is Azure Private Endpoint different from a service endpoint?
 
-Private Endpoints grant network access to specific resources behind a given service providing granular segmentation. Traffic can reach the service resource from on premises without using public endpoints.
 
-A service endpoint remains a publicly routable IP address. A private endpoint is a private IP in the address space of the virtual network where the private endpoint is configured.
+
+Azure Private Endpoint provides private access to an Azure service by assigning it a private IP address from your virtual network, so traffic stays entirely on the Microsoft network and the service can be accessed without using the public internet. 
+
+In contrast, Service Endpoints secure access to an Azure service’s public endpoint by allowing traffic from specific VNets or subnets, but the service itself still uses a public IP.
+
+Private Endpoints offer full isolation and higher security, while Service Endpoints are easier to set up but provide less isolation.
 
 
 > [!NOTE]
