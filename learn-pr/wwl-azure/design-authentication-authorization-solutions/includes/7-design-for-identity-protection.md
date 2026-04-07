@@ -1,10 +1,10 @@
-[Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) is a tool that allows organizations to accomplish three key tasks:
+[Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection) helps organizations detect, investigate, and remediate identity-based risks. 
 
 - [Automate the detection and remediation of identity-based risks](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 
 - [Investigate risks](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) by using data in the Azure portal.
 
-- [Export risk detection data](/azure/sentinel/connect-azure-ad-identity-protection) to other tools.
+- [Export risk detection data](/azure/sentinel/connect-azure-ad-identity-protection) with Microsoft Sentinel data connector.
 
 The signals that are generated and fed into Identity Protection can be exported to other tools. You learned how the Conditional Access tool can make decisions based on your organization's policies. By using Identity Protection, you can pass this information to a security information and event management (SIEM) tool for more investigation. 
 
@@ -34,9 +34,14 @@ As the CTO of Tailwind Traders, you'd like to know how Identity Protection can b
 
    - **Atypical travel**: Two sign-ins from the same user that originate from a geographically distant location. Given past behavior, at least one of the locations might also be atypical for the user.
 
-   - **Malware-linked IP address**: An infected IP address sign-in known to actively communicate with a bot server.
+   - **Malicious IP address**: Sign-in from an IP with high failure rates due to invalid credentials or known bad IP reputation.
 
    - **Password spray**: A password spray attack where a bad actor tries to defeat lockout and detection by attempting sign-in with different user names and the same password.
+
+   - **Anomalous token**: Abnormal token characteristics, such as unusual lifetime or token played from an unfamiliar location.
+
+   - **Verified threat actor IP**: Sign-in from an IP associated with known nation-state or cybercriminal threat actors.
+
 
 ### Things to consider when using Identity Protection
 
