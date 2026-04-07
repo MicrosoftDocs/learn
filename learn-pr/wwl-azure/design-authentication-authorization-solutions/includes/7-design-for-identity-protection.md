@@ -22,13 +22,13 @@ As the CTO of Tailwind Traders, you'd like to know how Identity Protection can b
 
    :::image type="content" source="../media/risk-detections.png" alt-text="Diagram that shows risky users, risky sign-ins, and risk detections." border="false":::
 
-- [**User risk**](/azure/active-directory/identity-protection/concept-identity-protection-risks) represents the probability that a given identity or account is compromised. An example is when a user's valid credentials are leaked. User risks are calculated offline by using Microsoft's internal and external threat intelligence sources. Here are some user risks that can be identified:
+- **User risk** represents the probability that a given identity or account is compromised. An example is when a user's valid credentials are leaked. User risks are calculated offline by using Microsoft's internal and external threat intelligence sources. Here are some user risks that can be identified:
 
    - **Leaked credentials**: Microsoft checks for leaked credentials from the dark web, paste sites, or other sources. These leaked credentials are checked against Microsoft Entra users' current valid credentials for valid matches.
 
    - **Microsoft Entra threat intelligence**: This risk detection type indicates user activity that's unusual for the given user or is consistent with known attack patterns.
 
-- [**Sign-in risk**](/azure/active-directory/identity-protection/concept-identity-protection-risks) represents the probability that a given sign-in (authentication request) isn't authorized by the identity owner. Sign-in risk can be calculated in real time or offline. Here are some sign-in risks that can be identified:
+- **Sign-in risk** represents the probability that a given sign-in (authentication request) isn't authorized by the identity owner. Sign-in risk can be calculated in real time or offline. Here are some [sign-in risks](/azure/active-directory/identity-protection/concept-identity-protection-risks) that can be identified:
 
    - **Anonymous IP address**: A sign-in attempt from an anonymous IP address like a Tor browser or an anonymized VPN.
 
@@ -36,7 +36,7 @@ As the CTO of Tailwind Traders, you'd like to know how Identity Protection can b
 
    - **Malicious IP address**: Sign-in from an IP with high failure rates due to invalid credentials or known bad IP reputation.
 
-   - **Password spray**: A password spray attack where a bad actor tries to defeat lockout and detection by attempting sign-in with different user names and the same password.
+   - **Password spray**: A password spray attack is where multiple identities are attacked using common passwords in a unified brute force manner. 
 
    - **Anomalous token**: Abnormal token characteristics, such as unusual lifetime or token played from an unfamiliar location.
 
@@ -54,3 +54,5 @@ Tailwind Traders decides to implement Identity Protection into their security so
 - **Consider investigating risks in the Azure portal**. Investigate Tailwind Traders risk events in the Azure portal and identify any weak areas in your security implementation. Download the risk events in .CSV format and view the output in the Security section of Microsoft Entra ID. Use the Microsoft Graph API integrations to aggregate your data with other sources.
 
 - **Consider exporting your risk detection data**. Export the risk detection data for Tailwind Traders by using the Microsoft Sentinel data connector for Identity Protection.
+
+- **Consider unified risk signals**: ID Protection can now ingest signals from Microsoft Defender alongside native detections to calculate a unified Identity Risk Score.
