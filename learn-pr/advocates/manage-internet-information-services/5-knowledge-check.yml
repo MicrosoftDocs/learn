@@ -1,0 +1,112 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.administer-internet-information-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of IIS administration concepts with this knowledge check.
+  ms.date: 04/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 1
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "You need to manage IIS on a Windows Server 2025 Server Core installation from your desktop computer. What must you configure on the server first?"
+    choices:
+    - content: "Enable Remote Desktop on the Server Core server"
+      isCorrect: false
+      explanation: "Remote Desktop provides general server access but isn't required for remote IIS management. The Web Management Service (WMSVC) provides dedicated IIS remote management over TCP port 8172 without needing a Remote Desktop session."
+    - content: "Install and start the Web Management Service (WMSVC) on the server"
+      isCorrect: true
+      explanation: "WMSVC (installed via the IIS Management Service role service) enables remote IIS Manager connections over TCP port 8172. It's the standard mechanism for managing IIS on Server Core and doesn't require a local GUI or Remote Desktop access."
+    - content: "Upgrade the server from Server Core to the full Desktop Experience installation"
+      isCorrect: false
+      explanation: "Upgrading to Desktop Experience is unnecessary. Server Core is a supported deployment option for IIS, and the Web Management Service (WMSVC) enables full remote IIS administration without a local GUI."
+    - content: "Configure RPC over HTTP for IIS Manager"
+      isCorrect: false
+      explanation: "IIS Manager doesn't use RPC over HTTP for remote connections. Remote IIS management uses the Web Management Service (WMSVC), which communicates over HTTPS on TCP port 8172."
+  - content: "You want to grant a developer named devuser the ability to manage only the MarketingSite in IIS, without granting them any Windows administrator rights or visibility into other sites. Which two features must you use together?"
+    choices:
+    - content: "IIS Manager Users and IIS Manager Permissions"
+      isCorrect: true
+      explanation: "IIS Manager Users are an IIS-only credential (not a Windows account). IIS Manager Permissions on the target site grants that credential access to that site only. The developer connects via WMSVC and sees only the delegated site—no Windows admin rights are required."
+    - content: "Windows Authorization rules and NTFS permissions"
+      isCorrect: false
+      explanation: "Windows Authorization rules and NTFS permissions control file system access, not IIS Manager connectivity. They can't scope IIS Manager visibility to a single site or create IIS-only management credentials."
+    - content: "Application Pool Identities and delegation"
+      isCorrect: false
+      explanation: "Application Pool Identities control the security context under which worker processes run. They don't provide a mechanism to grant a developer site-level management access through IIS Manager."
+    - content: "WMSVC and Windows Authentication"
+      isCorrect: false
+      explanation: "While WMSVC is needed for remote connections, Windows Authentication alone would require the developer to have a Windows account with appropriate permissions—potentially granting broader access than intended. IIS Manager Users provide an IIS-only credential scoped to specific sites."
+  - content: "You need to create a backup of IIS configuration before a major change. Which AppCmd command is correct?"
+    choices:
+    - content: "`appcmd create backup \"Pre-Change\"`"
+      isCorrect: false
+      explanation: "The `create` verb isn't a valid AppCmd command. The correct syntax uses the `add` verb: `appcmd add backup \"Pre-Change\"`."
+    - content: "`appcmd add backup \"Pre-Change\"`"
+      isCorrect: true
+      explanation: "`appcmd add backup` creates a snapshot of the IIS configuration files (applicationHost.config, redirection.config, and administration.config) in the inetsrv\\backup directory. You can restore it later with `appcmd restore backup \"Pre-Change\"`."
+    - content: "`appcmd export config /dest:\"Pre-Change\"`"
+      isCorrect: false
+      explanation: "The `export` verb with a `/dest` parameter isn't valid AppCmd syntax. Configuration backups are created with `appcmd add backup \"Pre-Change\"`."
+    - content: "`appcmd save backup \"Pre-Change\"`"
+      isCorrect: false
+      explanation: "The `save` verb isn't a valid AppCmd command for creating backups. The correct syntax is `appcmd add backup \"Pre-Change\"`."
+  - content: "In what scenario should you use `iisreset` rather than recycling individual application pools?"
+    choices:
+    - content: "Whenever a website returns a 500 error"
+      isCorrect: false
+      explanation: "A 500 error typically indicates an application-level problem. Recycling the specific application pool with `Restart-WebAppPool` is the appropriate lower-impact action. `iisreset` drops all active connections across every site on the server."
+    - content: "As the first troubleshooting step for any IIS problem"
+      isCorrect: false
+      explanation: "`iisreset` stops and restarts all IIS services, dropping every active connection on the server. It should be a last resort, not a first step. Start with recycling the affected application pool or reviewing event logs."
+    - content: "When IIS configuration files were modified outside IIS Manager, or when IIS services themselves are unresponsive"
+      isCorrect: true
+      explanation: "`iisreset` stops and restarts all IIS services, which is necessary when the IIS service layer itself is in an unexpected state or after out-of-band changes to configuration files. For most issues, recycling individual application pools with `Restart-WebAppPool` is the correct, lower-impact approach."
+    - content: "Every time new web content is deployed to a site"
+      isCorrect: false
+      explanation: "Content deployments typically don't require restarting IIS services. If an application pool recycle is needed after deployment, use `Restart-WebAppPool` to target only the affected pool without disrupting other sites."
+  - content: "What does the command `Get-ChildItem IIS:\\AppPools` return?"
+    choices:
+    - content: "A list of all active HTTP requests on the server"
+      isCorrect: false
+      explanation: "Active HTTP requests aren't exposed under IIS:\\AppPools. To list active requests, use `appcmd list requests` from the command line."
+    - content: "A list of all application pools on the local IIS server"
+      isCorrect: true
+      explanation: "The IIS:\\ provider from the WebAdministration module exposes IIS as a navigable drive. `Get-ChildItem IIS:\\AppPools` lists all application pools, analogous to listing files with `Get-ChildItem C:\\`. Use `IIS:\\Sites` to list websites."
+    - content: "The configuration properties of the Default App Pool"
+      isCorrect: false
+      explanation: "`Get-ChildItem` lists the children of a path, not the properties of a single item. To view properties of a specific application pool, use `Get-Item IIS:\\AppPools\\DefaultAppPool | Select-Object *`."
+    - content: "A list of all websites on the local IIS server"
+      isCorrect: false
+      explanation: "Websites are listed under `IIS:\\Sites`, not `IIS:\\AppPools`. `Get-ChildItem IIS:\\AppPools` returns application pools. Use `Get-ChildItem IIS:\\Sites` to list websites."
+  - content: "An IIS log entry shows an HTTP status of 503. What does this indicate and what is the most likely cause?"
+    choices:
+    - content: "A 404 Not Found error; the requested file is missing"
+      isCorrect: false
+      explanation: "HTTP 404 and HTTP 503 are different status codes. A 404 means the requested resource wasn't found. A 503 indicates that the server can't handle the request, typically because the application pool is stopped or its request queue is full."
+    - content: "A 401 Unauthorized error; authentication failed"
+      isCorrect: false
+      explanation: "HTTP 401 and HTTP 503 are different status codes. A 401 means the client failed to authenticate. A 503 indicates that the service is unavailable, typically due to a stopped application pool or rapid-fail protection."
+    - content: "Service Unavailable; the application pool is stopped or has exceeded its request queue limit"
+      isCorrect: true
+      explanation: "HTTP 503 means IIS can't route the request to a worker process—typically because the application pool is stopped, has entered rapid-fail protection, or its request queue is full. Check the application pool state in IIS Manager and review the System event log (source: WAS) for failure details."
+    - content: "A network timeout; the client disconnected before the server responded"
+      isCorrect: false
+      explanation: "A client disconnect wouldn't produce a 503 status code in IIS logs. HTTP 503 Service Unavailable indicates a server-side issue where IIS can't route the request to a worker process."
+  - content: "You want to list all currently executing HTTP requests on the server from the command line. Which AppCmd command is correct?"
+    choices:
+    - content: "`appcmd list site /state:Started`"
+      isCorrect: false
+      explanation: "This command lists sites that are in the Started state, not active HTTP requests. To list in-flight requests, use `appcmd list requests`."
+    - content: "`appcmd list requests`"
+      isCorrect: true
+      explanation: "`appcmd list requests` displays all in-flight HTTP requests with the URL, client IP, elapsed time, and current pipeline stage. This is the primary command-line tool for diagnosing hung or slow requests in production."
+    - content: "`appcmd list wp /state:Running`"
+      isCorrect: false
+      explanation: "This command lists running worker processes, not individual HTTP requests. Worker processes host application pools. To see the actual HTTP requests being processed, use `appcmd list requests`."
+    - content: "`appcmd list requests /all`"
+      isCorrect: false
+      explanation: "The `/all` parameter isn't a valid option for `appcmd list requests`. The correct command is `appcmd list requests`, which lists all currently executing HTTP requests without additional flags."
