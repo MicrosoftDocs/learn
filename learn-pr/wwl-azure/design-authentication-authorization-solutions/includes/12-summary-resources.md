@@ -16,7 +16,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Read about [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/).
 
-- Research business-to-customer solutions with [Azure AD B2C](/azure/active-directory-b2c/overview).
+- Research business-to-customer solutions with [Microsoft Entra External ID](/entra/external-id/customers/overview-customers-ciam).
 
 - Get more information about [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview).
 
