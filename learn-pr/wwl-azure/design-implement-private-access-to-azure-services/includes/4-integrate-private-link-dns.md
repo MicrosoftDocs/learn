@@ -19,9 +19,15 @@ The following diagram shows a typical [high-level architecture](/azure/architect
 In the previous diagram, it's important to highlight: 
 
 1. All Azure virtual networks use the DNS private resolver that is hosted in the hub virtual network.
+ 
 1. On-premises DNS servers have conditional forwarders configured for each private endpoint public DNS zone, pointing to the DNS private resolver hosted in the hub virtual network.
-1. The DNS private resolver hosted in the hub virtual network uses the Azure-provided DNS (168.63.129.16) as a forwarder. IP address 168.63.129.16 is a virtual public IP address that facilitates a communication channel to Azure platform resources. 
-1. The hub virtual network must be linked to the Private DNS zone names for Azure services, such as privatelink.blob.core.windows.net, as shown in the diagram.
+ 
+1. The DNS private resolver hosted in the hub virtual network uses the Azure-provided DNS (168.63.129.16) as a forwarder. IP address 168.63.129.16 is a virtual public IP address that facilitates a communication channel to Azure platform resources.
+
+1. The hub virtual network must be linked to the Private DNS zone names for Azure services, such as privatelink.blob.core.windows.net.
+
+> [!Note]
+> A DNS zone group is automatically created when integrating a private endpoint with a private DNS zone. The group links the endpoint to DNS zones and manages DNS records automatically. This automation reduces manual work and prevents configuration drift.
 
 ### What is Azure DNS Private Resolver
 
