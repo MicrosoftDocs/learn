@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.administer-internet-information-services.scripting-automation
+title: Scripting automation
+metadata:
+  title: Scripting automation
+  description: How to automate IIS management tasks using PowerShell and AppCmd.
+  ms.date: 04/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-scripting-automation.md)]

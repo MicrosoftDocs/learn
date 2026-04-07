@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.administer-internet-information-services.monitoring
+title: Monitoring
+metadata:
+  title: Monitoring
+  description: How to monitor IIS performance and health using built-in tools and best practices.
+  ms.date: 04/03/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-monitoring.md)]
