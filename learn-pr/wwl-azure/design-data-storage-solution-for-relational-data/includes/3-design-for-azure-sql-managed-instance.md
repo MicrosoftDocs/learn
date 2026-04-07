@@ -32,5 +32,3 @@ Consider how Azure SQL Managed Instance can be included in your relational data 
 
 - **Consider upgrading to Next-gen General Purpose for more capacity**: This tier supports up to 500 databases per instance, 32 TB of storage, and lets you scale resources independently. This capacity is provided at the same cost as General Purpose.
 
-> [!Tip]
-> Learn more with self-paced training, [Plan and implement security for Azure SQL Database and Azure SQL Managed Instance](/training/modules/security-azure-sql-database-azure-sql-managed-instance/).
