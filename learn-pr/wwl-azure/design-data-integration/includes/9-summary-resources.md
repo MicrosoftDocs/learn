@@ -12,9 +12,9 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with Azure documentation
 
-- Read about [Azure Data Factory](/products/data-factory/).
-- Read about [Azure Databricks](/products/databricks/).
-- Read about [Azure Data Lake](/solutions/data-lake/).
+- Read about [Azure Data Factory](/azure/data-factory/).
+- Read about [Azure Databricks](/azure/databricks/).
+- Read about [Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction).
 - Examine the [Azure Synapse SQL architecture](/azure/synapse-analytics/sql/overview-architecture).
 
 ## Learn more with self-paced training
