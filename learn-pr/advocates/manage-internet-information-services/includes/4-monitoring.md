@@ -173,7 +173,7 @@ Alternatives to using IISReset include:
 
 | Scenario | Preferred command |
 | --- | --- |
-| A single app pool is misbehaving | Restart-WebAppPool -Name "<ApplicationPool>" |
+| A single app pool is misbehaving | Restart-WebAppPool -Name "<WebAppPool>" |
 | A single site needs restarting | Stop-Website then Start-Website |
 | Restart only the web service | Restart-Service W3SVC |
 
