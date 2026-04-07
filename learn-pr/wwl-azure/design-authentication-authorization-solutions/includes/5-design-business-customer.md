@@ -8,6 +8,9 @@ After you set up your Azure AD B2C tenant, you must register your app. You use u
 
 ### Things to know about Azure AD B2C
 
+> [!IMPORTANT]
+> Azure AD B2C is no longer available for new customers as of May 1, 2025 and is supported until at least May 2030. For all new projects, use Microsoft Entra External ID.
+
 You review the B2B features of Microsoft Entra ID and consider how they might be implemented in an identity solution for Tailwind Traders. Let's look at the customer features offered by Azure AD B2C.
 
 - Azure AD B2C provides secure authentication for your customers by using their preferred identity providers.
@@ -38,7 +41,7 @@ Tailwind Traders wants to investigate how to implement identity management for u
 
 Now that you have some basic knowledge about the Microsoft Entra identity solutions, let's compare the options for Tailwind Traders.
 
-| <!-- Blank --> | Microsoft Entra B2B (business-to-business) | Azure AD B2C (business-to-customer) |
+| <!-- Blank --> | Microsoft Entra B2B (business-to-business) | Microsoft Entra External ID / Azure AD B2C (legacy) |
 | --- | --- | --- |
 | **Define your focus** | Tailwind Traders wants to collaborate with business partners from external organizations like suppliers, partners, and vendors. You support users as guest users in your directory, and they might or might not use IT. | Tailwind Traders wants to engage with customers of their products. You manage users in a separate Microsoft Entra directory / tenant. |
 | **Identify your users** | Your users represent a Tailwind Traders partner company, or be employees of Tailwind Traders. | Your users are customers of Tailwind Traders who represent themselves. |
