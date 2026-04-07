@@ -14,7 +14,7 @@ By the end of this unit, learners will be able to:
 
 Generative pages allow app makers to **describe a requirement in natural language**, and Power Apps automatically creates a page layout, data experiences, and UI structure. This accelerates solution development by removing repetitive scaffolding steps.
 
-**How It Works**
+**How it works**
 
 Maker enters natural language prompt: *"Create a customer overview page showing recent orders, open cases, and a satisfaction score."*
 
@@ -40,7 +40,7 @@ Even though generative pages reduce design time, many enterprise apps require de
 
 - **Security aware data pipelines aware data pipelines**
 
-- **Why Use Code-first with Generative Pages?**
+- **Why use code-first with generative pages?**
 
 | **Need** | **Code-first BenefitFirst Benefit** |
 |---|---|
@@ -54,7 +54,7 @@ Even though generative pages reduce design time, many enterprise apps require de
 
 An **agent feed** introduces an AI-powered layer that provides real-time insight and recommendations inside apps.
 
-**Agent Feed Capabilities**
+**Agent feed capabilities**
 
 - Summaries of records or processes.
 
@@ -62,11 +62,11 @@ An **agent feed** introduces an AI-powered layer that provides real-time insight
 
 - Notifications when anomalies are detected.
 
-- Contextual insights based on model driven app data-driven app data.
+- Contextual insights based on model driven app data.
 
 - Guided steps and automation triggers.
 
-**How an Agent Feed Works**
+**How an agent feed works**
 
 The agent monitors app context, user actions, and records.
 
@@ -98,6 +98,6 @@ Together, they create intelligent, fast to build, enterprise-ready apps.
 
 Use these links for more detail and hands on practice:
 
-- **Introducing the new Power Apps generative experiences**<https://www.microsoft.com/power-platform/blog/power-apps/introducing-the-new-power-apps-generative-power-meets-enterprise-grade-trust/>.
+- **Introducing the new Power Apps generative experiences** <https://www.microsoft.com/power-platform/blog/power-apps/introducing-the-new-power-apps-generative-power-meets-enterprise-grade-trust/>.
 
-- **Generative Pages FAQ (GitHub)**<https://github.com/MicrosoftDocs/powerapps-docs/blob/main/powerapps-docs/maker/common/faq-generative-pages-model-driven.md>.
+- **Generative Pages FAQ (GitHub)** <https://github.com/MicrosoftDocs/powerapps-docs/blob/main/powerapps-docs/maker/common/faq-generative-pages-model-driven.md>.

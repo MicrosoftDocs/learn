@@ -1,4 +1,4 @@
-## Unit Overview
+## Unit overview
 
 Prompt actions in Copilot Studio allow creators to define how an agent should _respond_, _reason_, and _take action_ based on user input. The Prompt Coach template helps teams build high-quality prompts that follow guidance, constraints, and best practices for conversational design. This unit teaches how to design effective prompt actions that produce reliable, grounded, and consistent agent responses.
 
@@ -42,7 +42,7 @@ The Prompt Coach template (from Copilot Studio) helps authors:
 
 - Align output with organizational standards (tone, terminology, safety).
 
-#### Core Prompt Coach Structure
+#### Core Prompt Coach structure
 
 | **Section** | **Purpose** |
 |---|---|
@@ -54,15 +54,15 @@ The Prompt Coach template (from Copilot Studio) helps authors:
 
 ### 2.2 Principles for effective prompt actions
 
-**Focus on Task Clarity**
+**Focus on task clarity**
 
-State what the agent must do in direct language.
+- State what the agent must do in direct language.
 
-Avoid ambiguity.
+- Avoid ambiguity.
 
-Use imperative verbs ("Summarize…", "Rewrite…", "Extract…")
+- Use imperative verbs ("Summarize…", "Rewrite…", "Extract…")
 
-**Use Organizational Tone and Language**
+**Use organizational tone and language**
 
 Follow Microsoft Writing Style:
 
@@ -74,7 +74,7 @@ Follow Microsoft Writing Style:
 
 - Include only what the user needs.
 
-**Control Output**
+**Control output**
 
 Use constraints to keep output predictable:
 
@@ -133,4 +133,4 @@ Prompt actions operate alongside:
 
 ## 6. References
 
-[Agent template prompt coach](/microsoft-365-copilot/extensibility/agent-template-prompt-coach).
+[Agent template prompt coach](/microsoft-365-copilot/extensibility/agent-template-prompt-coach)

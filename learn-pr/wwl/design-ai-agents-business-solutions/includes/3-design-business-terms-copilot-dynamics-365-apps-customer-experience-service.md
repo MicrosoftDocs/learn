@@ -126,14 +126,14 @@ Summary Structure Options.
   - Ideal for organizations with strict documentation standards or regulated industries.
   - Improves consistency across agents and reduces variability in note-taking.
 
-Configuring Business Terms Copilot Emphasizes.
+Configuring business terms Copilot emphasizes
 
 - Mapping key fields (Issue Type, Product Line, Service Tier).
 - Ensuring option sets use clear, standardized terminology.
 - Prioritizing fields that reflect how the organization classifies cases.
 - Removing outdated or unused terms that could confuse Copilot.
 
-Customizing Phrasing for Next Steps and Outcomes.
+Customizing phrasing for next steps and outcomes
 
 - Defining preferred phrasing for next steps.
 - Aligning language with internal SLAs or compliance requirements.
@@ -144,20 +144,20 @@ Customizing Phrasing for Next Steps and Outcomes.
 
 To create a unified and consistent agent experience, Copilot outputs can be surfaced across various forms and dashboards in Dynamics 365 Customer Service. This ensures that AI-generated insights are visible at the right moment in the workflow.
 
-Custom Case Forms.
+Custom case forms
 
 - Add Copilot summary fields directly to custom case forms.
 - Display conversation summaries, case summaries, or recommended next steps alongside standard case data.
 - Useful for organizations that have heavily customized case layouts or industry-specific fields.
 - Ensures agents see AI insights without switching screens.
 
-Agent Dashboards.
+Agent dashboards
 
 - Surface Copilot summaries in dashboards used for triage, queue management, or supervisor oversight.
 - Provide quick visibility into recent customer interactions, key issues across cases, and trends in customer sentiment or topics.
 - Helps supervisors quickly assess case quality and agent workload.
 
-Role-Specific Service Forms.
+Role-specific service forms
 
 - Tailor Copilot outputs based on role: Tier 1 agents, escalation teams, supervisors.
 - Ensures each role sees the level of detail appropriate for their responsibilities.
@@ -190,6 +190,6 @@ Role-Specific Service Forms.
 
 ## 6. References
 
-Configure Copilot in Dynamics 365 Customer Service - Microsoft Learn[Configure Copilot](/training/modules/configure-copilot/).
+Configure Copilot in Dynamics 365 Customer Service - Microsoft Learn [Configure Copilot](/training/modules/configure-copilot/).
 
 [Business processes glossary](/dynamics365/guidance/business-processes/glossary).

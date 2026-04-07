@@ -72,7 +72,7 @@ For low-code scenarios, **AI Builder grounded prompts** let you generate respons
 
 ## 5. Operational considerations
 
-**Cost and performance:** Index capability flags increase storage; prefer minimum viable schema and cap top K + token budgets. K + token budgets.
+**Cost and performance:** Index capability flags increase storage; prefer minimum viable schema and cap top K + token budgets.
 
 **Security and compliance:** Preserve labels and access controls from source to index; design for "right to be forgotten.".
 

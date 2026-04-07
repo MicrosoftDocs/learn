@@ -27,7 +27,7 @@ To ensure Copilot delivers relevant, consistent, and trustworthy outputs, organi
 
 Customization allows organizations to tune Copilot's behavior in four key areas:
 
-**A. Business Terms and Domain Language**
+**A. Business terms and domain language**
 
 You can define or adjust:
 
@@ -43,7 +43,7 @@ You can define or adjust:
 
 This ensures Copilot uses language that's both accurate and aligned with your service culture.
 
-**B. Prompt and Output Customization**
+**B. Prompt and output customization**
 
 Copilot prompts shape how the AI generates:
 
@@ -67,7 +67,7 @@ Examples of customizable prompt elements:
 
 - Sensitive terms to avoid
 
-**C. Data Scope and Field Configuration**
+**C. Data scope and field configuration**
 
 Copilot's insights depend on the data fields and entities administrators choose to include. You can configure:
 
@@ -83,7 +83,7 @@ Copilot's insights depend on the data fields and entities administrators choose 
 
 This helps ensure the AI uses **relevant, approved, and up-to-date** customer and case information.
 
-**D. Surface Integration Within Dynamics 365**
+**D. Surface integration within Dynamics 365**
 
 Copilot output can be surfaced in:
 

@@ -8,7 +8,9 @@ By the end of this unit, learners will be able to:
 
 ## 1. Introduction
 
-AI-enabled apps help organizations streamline tasks, reduce manual data entry, and provide intelligent guidance directly inside user workflows. With **Power Apps Copilot**, makers can refine app logic, modify data tables, generate screens, and build business logic using natural language. AI components may include:
+AI-enabled apps help organizations streamline tasks, reduce manual data entry, and provide intelligent guidance directly inside user workflows. With **Power Apps Copilot**, makers can refine app logic, modify data tables, generate screens, and build business logic using natural language. 
+
+AI components may include:
 
 - AI-assisted data creation.
 
@@ -26,7 +28,9 @@ This unit guides you through designing a business process and identifying where 
 
 ### 2.1 Copilot in Power Apps Studio
 
-Copilot allows makers to update app logic and data by describing changes in natural language. This improves design time and app quality by reducing manual configuration. Examples include:
+Copilot allows makers to update app logic and data by describing changes in natural language. This improves design time and app quality by reducing manual configuration. 
+
+Examples include:
 
 - Adding new fields to a Dataverse table.
 
@@ -56,7 +60,7 @@ Plans help you structure business processes before app building. Copilot interpr
 
 Use a structured method to determine where AI enhances the process.
 
-**Step 1: Map the Current Workflow**
+**Step 1: Map the current workflow**
 
 Identify:
 
@@ -70,7 +74,7 @@ Identify:
 
 - Error-prone steps.
 
-**Step 2: Identify AI Opportunities**
+**Step 2: Identify AI opportunities**
 
 AI is most valuable when:
 
@@ -92,7 +96,7 @@ Examples:
 
 - Guiding users through form entry using Copilot prompts.
 
-**Step 3: Design the Copilot Interactions**
+**Step 3: Design the Copilot interactions**
 
 Decide how Copilot will participate:
 
@@ -106,7 +110,7 @@ Decide how Copilot will participate:
 
 - Error checking or validation recommendations.
 
-**Step 4: Integrate Copilot Features in Power Apps Studio**
+**Step 4: Integrate Copilot features in Power Apps Studio**
 
 Copilot can:
 
@@ -120,7 +124,7 @@ Copilot can:
 
 - Support ongoing iteration through conversational changes.
 
-**Step 5: Validate Security and Governance**
+**Step 5: Validate security and governance**
 
 Consider:
 
@@ -148,6 +152,6 @@ Consider:
 
 Use the following links as source material for deeper learning:
 
-- **Edit your app with Copilot in Power Apps Studio (preview)**[/power-apps/maker/canvas-apps/copilot-edit-app](/power-apps/maker/canvas-apps/copilot-edit-app).
+- **Edit your app with Copilot in Power Apps Studio (preview)** [/power-apps/maker/canvas-apps/copilot-edit-app](/power-apps/maker/canvas-apps/copilot-edit-app).
 
-- **Use plans to create a business solution with Copilot**[/power-apps/maker/canvas-apps/copilot-business-plans](/power-apps/maker/canvas-apps/copilot-business-plans).
+- **Use plans to create a business solution with Copilot** [/power-apps/maker/canvas-apps/copilot-business-plans](/power-apps/maker/canvas-apps/copilot-business-plans).

@@ -47,7 +47,7 @@ Use generative orchestration when:
 
 ## 2. Decision framework for choosing the right approach
 
-**Chart: When to Use NLU, CLU, or Generative Orchestration**
+**Chart: When to use NLU, CLU, or generative orchestration**
 
 | **Requirement Type** | **Standard NLU** | **Azure CLU** | **Generative AI Orchestration** |
 |---|---|---|---|
@@ -62,7 +62,7 @@ Use generative orchestration when:
 
 ## 3. Applying the right technology for business scenarios
 
-**Use Standard NLU when:**
+**Use standard NLU when:**
 
 - A call center bot recognizes fixed phrases ("Reset password," "Check balance").
 
@@ -78,7 +78,7 @@ Use generative orchestration when:
 
 - You expect continuous retraining and monitoring of accuracy metrics.
 
-**Use Generative AI Orchestration when:**
+**Use generative AI orchestration when:**
 
 - A sales assistant summarizes CRM records and generates emails.
 
@@ -100,6 +100,6 @@ Evaluate cost and performance: generative orchestration is more powerful but mor
 
 ## 8. References
 
-NLU fine-tuned language intelligence for smarter conversations<https://www.microsoft.com/dynamics-365/blog/it-professional/2025/07/14/nlu-fine-tuned-language-intelligence-for-smarter-conversations>.
+NLU fine-tuned language intelligence for smarter conversations <https://www.microsoft.com/dynamics-365/blog/it-professional/2025/07/14/nlu-fine-tuned-language-intelligence-for-smarter-conversations>.
 
-Generative orchestration topic triggers in Copilot Studio<https://www.digitalbricks.ai/blog-posts/understanding-generative-orchestration-topic-triggers-in-copilot-studio>.
+Generative orchestration topic triggers in Copilot Studio <https://www.digitalbricks.ai/blog-posts/understanding-generative-orchestration-topic-triggers-in-copilot-studio>.

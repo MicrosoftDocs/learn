@@ -12,15 +12,15 @@ Azure AI Foundry provides a **catalog of tools** that agents can use to perform 
 
 When designing an AI agent, selecting the correct tool is essential. The goal is to choose tools that:
 
-- **Meet the requirement with minimal complexity**
+- **Meet the requirement with minimal complexity.**
 
-- **Ensure security and compliance**
+- **Ensure security and compliance.**
 
-- **Leverage existing enterprise systems**
+- **Leverage existing enterprise systems.**
 
-- **Reduce integration overhead**
+- **Reduce integration overhead.**
 
-- **Support accurate, grounded outputs**
+- **Support accurate, grounded outputs.**
 
 ## 2. Categories of Foundry tools
 
@@ -170,4 +170,4 @@ Below are examples of how to map business requirements to the correct Foundry to
 
 Propose tools for Azure AI Foundry agents tool catalog[Azure AI Foundry tool catalog](/azure/ai-foundry/agents/concepts/tool-catalog).
 
-Azure AI Foundry Tools<https://azure.microsoft.com/products/ai-foundry/tools/>.
+Azure AI Foundry Tools <https://azure.microsoft.com/products/ai-foundry/tools/>.

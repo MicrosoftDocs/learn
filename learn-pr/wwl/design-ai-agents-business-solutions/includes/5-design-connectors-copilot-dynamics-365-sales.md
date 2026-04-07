@@ -69,7 +69,8 @@ When setting up authentication:
 
 - The connector and backend depend on **two app registrations** for secure token exchange.
 
-**Important:**To enable automated authentication (OBO tokens) for plugins, set:**Enable onbehalfoflogin = true****behalfof login = true**.
+> [!IMPORTANT]
+> **To enable automated authentication (OBO tokens) for plugins, set: **Enable onbehalfoflogin = true**.
 
 ## 5. Publishing connector actions in Copilot Studio
 
@@ -85,11 +86,9 @@ After creating your connector:
 
 **Actions determine what operations Copilot can perform** with the connector (ex: retrieving insight from external sources).
 
-**Important operational notes:**
-
-- Actions may take up to **7 days** to appear in the Sales experience.
-
-- Users can sign out/in to accelerate ingestion.
+> [!IMPORTANT]
+> - Actions may take up to **7 days** to appear in the Sales experience.
+> - Users can sign out/in to accelerate ingestion.
 
 ## 6. Governance, compliance & certification
 

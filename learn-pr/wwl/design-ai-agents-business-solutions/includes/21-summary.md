@@ -2,25 +2,25 @@
 
 This module introduces foundational concepts and practical strategies for designing AI-powered agents tailored to business needs, with a focus on Microsoft Dynamics 365 and Copilot. It emphasizes the importance of Responsible AI and provides best practices for configuring business terms, customizing Copilot, designing connectors, and integrating agents with Dynamics 365 Contact Center channels.
 
-## Key Takeaways
+## Key takeaways
 
-### 1. Responsible AI Principles
+### 1. Responsible AI principles
 
-**Core Tenets**: Fairness, Reliability & Safety, Privacy & Security, Inclusiveness, Transparency, Accountability.
+- **Core Tenets**: Fairness, Reliability & Safety, Privacy & Security, Inclusiveness, Transparency, Accountability.
 
-**Application**: Responsible AI must be integrated throughout design, development, deployment, and operations to ensure safety, trustworthiness, and alignment with organizational values.
+- **Application**: Responsible AI must be integrated throughout design, development, deployment, and operations to ensure safety, trustworthiness, and alignment with organizational values.
 
-**Governance**: Human oversight, risk management, and ethical compliance are essential. Product teams must validate, monitor, and document AI systems, maintaining transparency and accountability.
+- **Governance**: Human oversight, risk management, and ethical compliance are essential. Product teams must validate, monitor, and document AI systems, maintaining transparency and accountability.
 
-### 2. Business Terms for Copilot in Dynamics 365
+### 2. Business terms for Copilot in Dynamics 365
 
-**Definition**: Business terms are standardized organizational vocabulary stored in Dataverse fields, option sets, and metadata.
+- **Definition**: Business terms are standardized organizational vocabulary stored in Dataverse fields, option sets, and metadata.
 
-**Role**: They ensure Copilot produces accurate, consistent summaries and recommendations, reflecting internal processes, tone, and compliance.
+- **Role**: They ensure Copilot produces accurate, consistent summaries and recommendations, reflecting internal processes, tone, and compliance.
 
-**Configuration**: Administrators must enable Copilot features, select relevant fields for summaries, exclude outdated terms, and customize phrasing for next steps and outcomes.
+- **Configuration**: Administrators must enable Copilot features, select relevant fields for summaries, exclude outdated terms, and customize phrasing for next steps and outcomes.
 
-**Best Practices**: Use consistent terminology, avoid unclear abbreviations, align terms with CRM fields, and regularly review and update business vocabulary.
+- **Best Practices**: Use consistent terminology, avoid unclear abbreviations, align terms with CRM fields, and regularly review and update business vocabulary.
 
 ### 3. Customizing Copilot in Dynamics 365
 
@@ -38,8 +38,8 @@ Customization Areas:
 
 - **Best Practices**: Start with agent workflows, maintain consistent terms, review outputs, update prompts, and ensure human validation.
 
-### 4. Designing Custom Connectors for Copilot
+### 4. Designing custom connectors for Copilot
 
-**Purpose**: Custom connectors bridge external APIs/business systems with Dynamics 365 Sales, enabling richer insights and automation.
+- **Purpose**: Custom connectors bridge external APIs/business systems with Dynamics 365 Sales, enabling richer insights and automation.
 
-**Creation Process**: Build connectors in environments with Dynamics 365.
+- **Creation Process**: Build connectors in environments with Dynamics 365.

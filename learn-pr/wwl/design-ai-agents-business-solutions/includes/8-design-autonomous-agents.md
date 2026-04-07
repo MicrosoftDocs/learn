@@ -22,7 +22,9 @@ In Copilot Studio, autonomous agents:
 
 ## 2. Core components of an autonomous agent
 
-Copilot Studio provides a structured architecture for designing autonomous agents. Key components include:
+Copilot Studio provides a structured architecture for designing autonomous agents. 
+
+Key components include:
 
 **Goals**
 
@@ -36,7 +38,7 @@ Events that cause the agent to start, such as user input, system changes, or sch
 
 Detailed business rules that guide agent behavior ("If the customer is VIP, escalate the ticket immediately").
 
-**Knowledge Sources**
+**Knowledge sources**
 
 Documents, SharePoint libraries, Dataverse tables, and enterprise content the agent uses to ground responses.
 
@@ -48,7 +50,7 @@ Executable operations the agent performs, such as calling APIs, creating records
 
 Building an autonomous agent follows a structured workflow:
 
-**Step 1 - Identify Use Case & Expected Outcome**
+**Step 1 - Identify use case & expected outcome**
 
 Examples include:
 
@@ -58,7 +60,7 @@ Examples include:
 
 - Creating customer service tickets.
 
-**Step 2 - Build Your Agent**
+**Step 2 - Build your agent**
 
 Copilot Studio provides a step-by-step builder:
 
@@ -72,7 +74,7 @@ Copilot Studio provides a step-by-step builder:
 
 - Connect actions via Power Automate, connectors, or Dataverse.
 
-**Step 3 - Test & Refine**
+**Step 3 - Test & refine**
 
 Testing includes:
 
@@ -113,4 +115,4 @@ Monitor agent performance and refine based on user feedback.
 
 ## 6. References
 
-[[Build an A...soft Learn | External]](/training/modules/autonomous-agent/).
+[[Build an autonomous agent in Copilot Studio]](/training/modules/autonomous-agent/).

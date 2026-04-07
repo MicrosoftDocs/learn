@@ -56,7 +56,7 @@ Examples:
 
 - Secure connectors and API calls.
 
-**Pillar 3: Operational Excellence**
+**Pillar 3: Operational excellence**
 
 Improve application reliability through observability, monitoring, and automated governance.
 
@@ -68,7 +68,7 @@ Examples:
 
 - Proactive alerts for performance changes.
 
-**Pillar 4: Performance Efficiency**
+**Pillar 4: Performance efficiency**
 
 Ensure workloads adjust to evolving demands with responsive and scalable architectures.
 
@@ -80,7 +80,7 @@ Examples:
 
 - Right-sizing flows and action concurrency.
 
-**Pillar 5: Experience Optimization**
+**Pillar 5: Experience optimization**
 
 Deliver meaningful experiences that help users achieve successful outcomes.
 
@@ -118,5 +118,11 @@ Azure WAF focuses on optimizing cloud workloads around **Reliability, Security, 
 
 ## 5. References
 
-These are the exact links provided for this unit:[[How to use...soft Learn | Learn.Microsoft.com]](/power-platform/well-architected/what-is-power-well-architected), [[Power Plat...soft Learn | Learn.Microsoft.com]](/power-platform/well-architected/), [[How to use...soft Learn | Learn.Microsoft.com]](/azure/well-architected/what-is-well-architected-framework).
+These are the exact links provided for this unit: 
+
+[What is Power Platform Well-Architected? | Learn.Microsoft.com](/power-platform/well-architected/what-is-power-well-architected), 
+
+[ Power Platform Well-Architected | Learn.Microsoft.com](/power-platform/well-architected/), 
+
+[What is the Azure Well-Architected Framework? | Learn.Microsoft.com](/azure/well-architected/what-is-well-architected-framework).
 

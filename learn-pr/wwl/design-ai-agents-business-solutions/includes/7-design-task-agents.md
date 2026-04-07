@@ -28,7 +28,7 @@ Designing effective task agents requires understanding the architecture that dri
 
 Task agents in Microsoft Copilot Studio use a modular architecture. Each component contributes to the agent's ability to act, reason, and integrate into business processes.
 
-**Chart: Agent Architecture Components and Their Purpose**
+**Chart: Agent architecture components and their purpose**
 
 | **Component** | **Purpose** |
 |---|---|
@@ -43,7 +43,9 @@ Task agents in Microsoft Copilot Studio use a modular architecture. Each compone
 
 ### 3.1 Define the agent's purpose
 
-Start with a clear business objective. Examples:
+Start with a clear business objective. 
+
+Examples:
 
 - Automate order entry.
 
@@ -183,10 +185,3 @@ Limit action permissions to lowest necessary scope.
 Implement monitoring and logging.
 
 Test with real scenarios and edge cases.
-
-## 5. References
-
-Source content provided by user:
-
-*Agent architecture components* — Microsoft Copilot Studio | Microsoft Learn (Your attached link could not be retrieved, so the above content is written from safe internal knowledge).
-

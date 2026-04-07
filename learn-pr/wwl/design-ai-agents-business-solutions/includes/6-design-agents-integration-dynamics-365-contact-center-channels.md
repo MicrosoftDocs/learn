@@ -8,7 +8,7 @@ By the end of this unit, learners  will be able to:
 
 ## 1. Introduction
 
-Dynamics 365 Contact Center provides a unified, intelligent platform for customer engagement across **voice, chat, messaging, and digital channels**.AI agents integrated into Contact Center help organizations:
+Dynamics 365 Contact Center provides a unified, intelligent platform for customer engagement across **voice, chat, messaging, and digital channels**. AI agents integrated into Contact Center help organizations:
 
 - Deliver fast, accurate responses.
 
@@ -101,11 +101,11 @@ Copilot should be enabled per environment and per user role, ensuring correct pe
 
 When creating AI agents for Contact Center integration:
 
-**A. Ensure Omnichannel Awareness**
+**A. Ensure omnichannel awareness**
 
 Agents should understand the customer's channel and adapt communication style and capabilities accordingly.
 
-**B. Align With Workstreams**
+**B. Align with workstreams**
 
 Associate agent behaviors to appropriate workstreams:
 
@@ -115,7 +115,7 @@ Associate agent behaviors to appropriate workstreams:
 
 - Persistent chat workstream.
 
-**C. Use Guardrails**
+**C. Use guardrails**
 
 Implement constraints:
 
@@ -125,7 +125,7 @@ Implement constraints:
 
 - Follow escalation rules.
 
-**D. Maintain Data Security**
+**D. Maintain data security**
 
 Expose only required context attributes to maintain:
 

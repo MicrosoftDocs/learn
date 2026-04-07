@@ -1,4 +1,4 @@
-## Unit Overview
+## Unit overview
 
 This unit introduces how to design intelligent agents and agent flows within **Microsoft Copilot Studio**, using natural language, visual design, and automation best practices. Agent flows extend an agent's capabilities by enabling it to **automate repetitive tasks**, **connect systems**, and **trigger business logic**.
 
@@ -81,7 +81,7 @@ Every agent flow includes:
 
 Agent flows can be built in two ways:
 
-**Method A: Natural Language Prompting**
+**Method A: Natural language prompting**
 
 - Makers describe what they want, e.g.,
 
@@ -89,7 +89,7 @@ Agent flows can be built in two ways:
 
 - Copilot generates the workflow automatically.
 
-**Method B: Visual Designer**
+**Method B: Visual designer**
 
 The flow can be refined using a node-based visual canvas for full control over logic and branching.
 
@@ -145,9 +145,9 @@ Keep flows modular - one flow per major task or automation.
 
 ## 6. References
 
-[Use agent flows](/training/modules/use-agent-flows/).
+[Use agent flows](/training/modules/use-agent-flows/)
 
-[Copilot Studio](/copilot-studio).
+[Copilot Studio](/copilot-studio)
 
 
 

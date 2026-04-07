@@ -28,7 +28,7 @@ Success criteria must be:
 
 - Feasible with available data and systems
 
-**Core Success Criteria Categories**
+**Core success criteria categories**
 
 | **Category** | **Description** | **Example Success Indicators** |
 |---|---|---|
@@ -43,47 +43,47 @@ Success criteria must be:
 
 Adoption goals ensure the organization is ready for AI and its benefits are realized at scale.
 
-**Key Adoption Areas**
+### Key adoption areas
 
-### 1. Organizational readiness
+#### A. Organizational readiness
 
-Leadership alignment.
+- Leadership alignment.
 
-AI literacy.
+- AI literacy.
 
-Change enablement programs.
+- Change enablement programs.
 
-Updated roles and workflows.
+- Updated roles and workflows.
 
-### 2. Data readiness
+#### B. Data readiness
 
-Data quality.
+- Data quality.
 
-Data availability.
+- Data availability.
 
-Governance and responsible AI compliance.
+- Governance and responsible AI compliance.
 
-### 3. Technical readiness
+#### C. Technical readiness
 
-Infrastructure for AI workloads.
+- Infrastructure for AI workloads.
 
-Integration with business systems.
+- Integration with business systems.
 
-Monitoring and lifecycle management.
+- Monitoring and lifecycle management.
 
-### 4. User adoption
+#### D. User adoption
 
-Clear value demonstration.
+- Clear value demonstration.
 
-Training and onboarding.
+- Training and onboarding.
 
-Feedback loops for continuous improvement.
+- Feedback loops for continuous improvement.
 
 ## 4. AI adoption planning (based on Cloud Adoption Framework)
 
 The **Cloud Adoption Framework's AI Adoption Plan** emphasizes four pillars:
 
-### A. Establish Business Outcomes
+### A. Establish business outcomes
 
 Define "northstar" objectives linked to strategic goals:
 
@@ -95,11 +95,11 @@ Define "northstar" objectives linked to strategic goals:
 
 - Accelerate decision making.
 
-### B. Identify Measurable AI Scenarios
+### B. Identify measurable AI scenarios
 
 Select scenarios with high feasibility and high business impact.
 
-**Examples:**
+Examples:
 
 - Automating summarization of customer inquiries.
 
@@ -107,7 +107,7 @@ Select scenarios with high feasibility and high business impact.
 
 - Generating tailored customer communications.
 
-### C. Assess AI Feasibility
+### C. Assess AI feasibility
 
 Evaluate:
 
@@ -119,7 +119,7 @@ Evaluate:
 
 - Model appropriateness (predictive, generative, classification, etc.).
 
-### D. Establish Program Governance
+### D. Establish program governance
 
 Governance ensures AI adoption is controlled, ethical, secure, and repeatable.
 
@@ -145,4 +145,4 @@ Governance includes:
 
 ## 10. References
 
-Use the following content links to explore the source material:[/azure/cloud-adoption-framework/scenarios/ai/plan](/azure/cloud-adoption-framework/scenarios/ai/plan)<https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/scenarios/ai/plan.md>.
+Use the following content links to explore the source material: [/azure/cloud-adoption-framework/scenarios/ai/plan](/azure/cloud-adoption-framework/scenarios/ai/plan)
