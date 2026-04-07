@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.devrel.administer-internet-information-services
+uid: learn.devrel.manage-internet-information-services
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
@@ -30,11 +30,11 @@ roles:
 products:
 - windows-server
 units:
-- learn.devrel.administer-internet-information-services.introduction
-- learn.devrel.administer-internet-information-services.remote-administration
-- learn.devrel.administer-internet-information-services.scripting-automation
-- learn.devrel.administer-internet-information-services.monitor
-- learn.devrel.administer-internet-information-services.knowledge-check
-- learn.devrel.administer-internet-information-services.summary
+- learn.devrel.manage-internet-information-services.introduction
+- learn.devrel.manage-internet-information-services.remote-administration
+- learn.devrel.manage-internet-information-services.scripting-automation
+- learn.devrel.manage-internet-information-services.monitor
+- learn.devrel.manage-internet-information-services.knowledge-check
+- learn.devrel.manage-internet-information-services.summary
 badge:
-  uid: learn.devrel.administer-internet-information-services-badge
+  uid: learn.devrel.manage-internet-information-services-badge
