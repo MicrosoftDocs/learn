@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.devrel.administer-internet-information-services.monitoring
+uid: learn.devrel.administer-internet-information-services.monitor
 title: Monitoring
 metadata:
   title: Monitoring
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-monitoring.md)]
+  [!include[](includes/4-monitor.md)]

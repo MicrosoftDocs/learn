@@ -19,7 +19,7 @@ To starting, stop, and browsing sites:
 
 - Select **Start** to bring a stopped site online.
 - Select **Stop** to take a running site offline.
-- Select **Browse *:80 (http)** to open the site in a browser directly from IIS Manager.
+- Select **Browse** ***:80 (http)** to open the site in a browser directly from IIS Manager.
 
 The site's status icon changes from a green play arrow (running) to a red square (stopped).
 
@@ -107,10 +107,10 @@ Once the Web Management Service is installed, you need to enable remote connecti
 1. In the Features View, double-click **Management Service** (Management section).
 1. In the Management Service page:
 
-- Check **Enable remote connections**.
-- Set **IP Address** (All Unassigned or a specific IP).
-- Confirm **Port** is **8172**.
-- Under **SSL certificate**, select the certificate to secure the management channel. A self-signed certificate is acceptable for internal use, but a CA-issued certificate avoids trust warnings.
+    - Check **Enable remote connections**.
+    - Set **IP Address** (All Unassigned or a specific IP).
+    - Confirm **Port** is **8172**.
+    - Under **SSL certificate**, select the certificate to secure the management channel. A self-signed certificate is acceptable for internal use, but a CA-issued certificate avoids trust warnings.
 
 1. Select **Apply** in the Actions pane.
 1. Select **Start** to start the WMSVC service.

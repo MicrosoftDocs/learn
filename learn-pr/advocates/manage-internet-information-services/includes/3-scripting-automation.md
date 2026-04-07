@@ -60,7 +60,7 @@ Remove-Website   -Name "ContosoSite"
 Remove-WebAppPool -Name "ContosoPool"
 ```
 
-You can configuring site settings with Set-ItemProperty and Set-WebConfigurationProperty. For example to change a site's path, disable directory browsing, and add a default document entry, run the following code:
+You can configure site settings with Set-ItemProperty and Set-WebConfigurationProperty. For example to change a site's path, disable directory browsing, and add a default document entry, run the following code:
 
 ```powershell
 # Change a site's root physical path
@@ -170,7 +170,7 @@ appcmd <command> <object-type> [options]
 
 Common object types include: site, app, vdir, apppool, config, backup, request, wp
 
-The following code bloch has a list of AppCmd command examples:
+The following code block has a list of AppCmd command examples:
 
 ```cmd
 REM List all sites and their states

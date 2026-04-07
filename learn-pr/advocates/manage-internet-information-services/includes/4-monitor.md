@@ -42,9 +42,9 @@ To configure IIS logging, perform the following steps:
 1. Double-click **Logging** in the Features View.
 1. Set:
 
-- **Format:** W3C (recommended)
-- **Directory:** Path for log files
-- **Log File Rollover:** Period (Daily recommended) or maximum file size
+    - **Format:** W3C (recommended)
+    - **Directory:** Path for log files
+    - **Log File Rollover:** Period (Daily recommended) or maximum file size
 
 1. Select **Select Fields** to choose which W3C fields to log.
 1. Select **Apply** in the Actions pane.
@@ -173,7 +173,7 @@ Alternatives to using IISReset include:
 
 | Scenario | Preferred command |
 | --- | --- |
-| A single app pool is misbehaving | Restart-WebAppPool -Name "<WebAppPoolName>" |
+| A single app pool is misbehaving | Restart-WebAppPool -Name "WebAppDescriptor" |
 | A single site needs restarting | Stop-Website then Start-Website |
 | Restart only the web service | Restart-Service W3SVC |
 
@@ -243,7 +243,7 @@ Write-Host "  No WAS errors found." -ForegroundColor Green
 
 For IIS servers where downtime isn't acceptable, consider the following architectural patterns:
 
-- **Windows Network Load Balancing (NLB):** Distributes incoming HTTP/HTTPS requests across multiple IIS servers. All nodes must run identical IIS configurations and serve identical web content. You can also use a third party load balancer rather than relying on Windows NLB.
+- **Windows Network Load Balancing (NLB):** Distributes incoming HTTP/HTTPS requests across multiple IIS servers. All nodes must run identical IIS configurations and serve identical web content. You can also use load balancers made by organizations other than Microsoft rather than relying on Windows NLB.
 - **IIS Shared Configuration:** Stores applicationHost.config on a shared network path (UNC path) so all nodes in a web farm read from a single authoritative configuration. Changes made on one server are immediately effective on all nodes.
 
 To implement the shared configuration, use the following script to copy the relevant config files to a location accessible to each node:
