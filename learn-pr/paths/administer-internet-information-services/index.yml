@@ -22,6 +22,7 @@ products:
 modules:
 - learn.devrel.deploy-configure-internet-information-services
 - learn.devrel.website-application-virtual-directory
+- learn.devrel.manage-internet-information-services
 - learn.devrel.secure-harden-internet-information-services
 trophy:
   uid: learn.devrel.administer-internet-information-services.trophy

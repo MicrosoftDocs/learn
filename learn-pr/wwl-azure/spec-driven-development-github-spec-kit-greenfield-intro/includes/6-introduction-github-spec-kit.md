@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=058fcbad-7d91-4991-80bc-1b8d102e97c1]
+
+::: zone-end
+
+::: zone pivot="text"
+
 GitHub Spec Kit is an open-source toolkit developed by GitHub to facilitate spec-driven development. It's designed to integrate with AI coding assistants like GitHub Copilot and orchestrate the SDD workflow through structured commands, templates, and persistent artifacts.
 
 Think of GitHub Spec Kit as a copilot for your copilot - it guides the AI through a structured process, ensuring consistent, high-quality output at each phase of development.
@@ -119,3 +127,8 @@ GitHub Spec Kit empowers you to accomplish in minutes what might otherwise take 
 ## Summary
 
 GitHub Spec Kit is an open-source toolkit that operationalizes spec-driven development by providing a structured workflow, persistent artifacts, and AI integration. It guides you through the SDD phases of Specify, Plan, Tasks, and Implement using commands and templates, enabling efficient, consistent, and high-quality software development. With multi-agent support and enterprise readiness, GitHub Spec Kit empowers teams to apply AI effectively while maintaining control over project requirements and design principles.
+
+::: zone-end
+
+> [!NOTE]
+> See the **Text and images** tab for more details!

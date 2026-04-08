@@ -26,28 +26,26 @@ As you develop your monitoring plan, consider these characteristics of Azure Mon
    - The highest tiers are for your application itself.
    - The lower tiers are components of the Azure platform.
 
-For more information about data locations and data access, see [Monitoring data locations in Azure](/azure/azure-monitor/monitor-reference).
-
 ### Things to consider when using Azure Monitor
 
 You reviewed how Azure Monitor uses Logs and Metrics. Now consider how to implement these features in your monitoring solution for Tailwind Traders.
 
-- **Consider data sources and data access**. Identify what Tailwind Traders resources to monitor. Azure Monitor collects data automatically from a range of components, and the data is accessed in various ways:
+- **Consider data sources and data access**. Azure Monitor collects data using Data Collection Rules (DCRs), which define what data to collect, how to filter and transform it, and where to send it. DCRs are created centrally and assigned to resources via data collection rule associations. The following data types are collected through DCRs by the Azure Monitor Agent (AMA):
 
    - **Windows events**. Information sent to the Windows event logging system, including sysmon events.	
 
    - **Performance counters**. Numerical values measuring performance of different aspects of operating system and workloads.	
 
-   - **Syslog**. Information sent to the Linux event logging system.	
-
-   - **Text Log**. Information sent to a text log file on a local disk.	
-
-   - **JSON log**. Information sent to a JSON log file on a local disk.	
-
+   - **Syslog**. Information sent to the Linux event logging system.
+ 
    - **IIS logs**. Internet Information Service (IIS) logs from the local disk of Windows machines.
 
-- **Consider queries on Logs data**. Write log queries to analyze your collected data for Tailwind Traders. For more information about log queries, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
+   - **Custom logs (text and JSON)**. Information sent to text or JSON log files on a local disk, collected via AMA with a custom table schema defined in the DCR.
 
-- **Consider alerts based on Logs and Metrics data**. Set up alert rules based on Logs data to be proactively notified about system issues. Use Metrics data to identify when critical Tailwind Traders issues occur, such as values that exceed defined limits. 
+- **Consider queries on Logs data**. Write log queries using Kusto Query Language (KQL) to analyze your collected data. KQL supports filtering, aggregation, joins, and time-series analysis.  For more information about log queries, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 
-- **Consider Metrics Explorer to analyze metrics interactively**. Define metrics to monitor about your Tailwind Traders resources, such as peak usage rates, access information, workloads, or incident scenarios. Use the Metrics Explorer to investigate the collected data. For more information about log queries, see [Advanced features of Metrics Explorer](/azure/azure-monitor/essentials/metrics-charts).
+- **Consider alerts based on Logs and Metrics data**. Set up alert rules based on Logs and Metrics data to be proactively notified about system issues. Use Azure Monitor's Recommended Alert Rules feature to enable best-practice alerts for your resources without manual rule authoring. Organize notifications using Action Groups. Use Alert Processing Rules to route, suppress, or modify alerts at scale. 
+
+- **Consider Data Collection Rules for all agent-based data**. Create DCRs in Azure Monitor and assign them to your VMs and hybrid machines using resource associations. Use Azure Policy to enforce DCR assignment at scale. Read more about [Data Collection Rules in Azure Monitor](/azure/azure-monitor/data-collection/data-collection-rule-overview).
+
+- **Consider Metrics Explorer to analyze metrics interactively**. Define metrics to monitor about your Tailwind Traders resources, such as peak usage rates, access information, workloads, or incident scenarios. Use the [Metrics Explorer](/azure/azure-monitor/metrics/analyze-metrics) to investigate the collected data. 
