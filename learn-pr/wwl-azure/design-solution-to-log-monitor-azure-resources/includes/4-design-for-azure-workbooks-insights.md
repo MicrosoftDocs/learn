@@ -12,14 +12,7 @@ Tailwind Traders would like to use Azure Workbooks in its monitoring strategy. T
 
 - You can analyze performance logs from virtual machines to identify high CPU or low memory instances and display the results as a grid in an interactive report.
 
-- Workbooks are currently compatible with the following data sources:
-   - [Logs](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Metrics](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Alerts](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Azure Resource Health](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Azure Data Explorer](/azure/azure-monitor/visualize/workbooks-data-sources)
+- Workbooks can extract data from many data sources. Read more on the [Azure Workbooks data sources](/azure/azure-monitor/visualize/workbooks-data-sources) page. 
 
 ### Azure insights and Workbooks
 
