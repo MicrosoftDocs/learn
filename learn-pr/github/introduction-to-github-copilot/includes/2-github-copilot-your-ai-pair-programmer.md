@@ -60,9 +60,9 @@ Copilot Spaces provide a dedicated place to collaborate with AI on a project. In
 
 Spaces offer a context‑rich environment where Copilot retains knowledge of your repository and workflow.
 
-### Copilot coding agent
+### Copilot Cloud Agent 
 
-The Copilot coding agent acts as an autonomous AI assistant. It performs multi-step coding tasks based on your instructions. You can ask it to:
+The Copilot Cloud Agent  acts as an autonomous AI assistant. It performs multi-step coding tasks based on your instructions. You can ask it to:
 
 - Generate multiple related files
 - Implement a feature set

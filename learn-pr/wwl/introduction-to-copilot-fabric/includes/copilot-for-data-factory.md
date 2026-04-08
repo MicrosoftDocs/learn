@@ -8,6 +8,8 @@ When it comes to **Data transformation**, defining the right steps to filter, ag
 
 Understanding complex queries is another common pain point. With **Code explanation**, Copilot breaks down the generated Mashup code, explaining the logic and purpose behind each transformation step. This feature helps you build confidence in your dataflows, learn best practices, and work smarter by focusing on your data goals rather than technical details.
 
+Copilot also supports **AI-Powered Prompt Transform**, which lets you enrich data during transformation using natural language—for example, translating a column or classifying sentiment—without writing code or building machine learning models. Additionally, Copilot is available in the **Modern Get Data** experience, where you can describe the data source you want to connect to and what to load, all in plain language.
+
 By using these Copilot features, you can address common obstacles in data preparation and transformation when working with Dataflow Gen2.
 
 Here's an example of how you can interact with Copilot in the Dataflow Gen2 editor: 

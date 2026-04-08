@@ -88,7 +88,10 @@ A common way you can evaluate is to start in Foundry's model catalog, choose a m
 
 There are various ways to score a model in Foundry portal, including *Natural Language Processing (NLP) metrics* and *AI‑assisted quality metrics*. Examples of classic *NLP quality metrics* are: accuracy, precision, recall, and F1. Examples of *AI‑assisted metrics* include groundedness, relevance, coherence and fluency, and GPT similarity. Choose AI-assisted metrics for qualitative scoring beyond traditional metrics. 
 
-Safety evaluators can be used help ensure responsible AI output. They scan for harmful or unsafe content, bias and unfairness, violence, self‑harm, or protected‑class harms. Foundry's Evaluator Library offers reusable evaluators for quality scoring, safety scanning, and more.
+In Foundry, **evaluators** are components used to measure the quality, safety, and effectiveness of AI model or agent outputs. For example, safety evaluators can be used help ensure responsible AI output. They scan for harmful or unsafe content, bias and unfairness, violence, self‑harm, or protected‑class harms. Foundry's Evaluator Library offers reusable evaluators for quality scoring, safety scanning, and more.
+
+>[!NOTE]
+>On their own, Foundry's evaluators detect, scan, and score issues but do not actively resolve them.  
 
 ## Deploy models in Foundry 
 
@@ -103,7 +106,7 @@ Deployment parameters that you can customize in Foundry include:
 > [!NOTE]
 > A **token** is the smallest unit of text or data that a generative AI model can process. Models break input into tokens—such as words, subwords, characters, or punctuation—so they can understand and generate language efficiently.
 
-When you deploy a model, you can assign it a *Tokens Per Minute* (TPM) allocation. TPM determines the speed and scale the model can process inputs and the rate‑limit boundaries such as requests per minute (RPM).
+When you deploy a model, you can assign it a *Tokens Per Minute* (TPM) allocation. TPM determines the speed and scale the model can process inputs and the rate‑limit boundaries such as requests per minute (RPM). When you assign a higher TPM allocation to a model deployment, you're increasing its capacity to handle token traffic per minute. Lower TPM reduces how fast your deployment is allowed to consume tokens across requests.
 
 Limits differ by model family, for example:
 - High‑end reasoning models (for example: DeepSeek R1, Grok, large Llama versions) may have high TPM ceilings.

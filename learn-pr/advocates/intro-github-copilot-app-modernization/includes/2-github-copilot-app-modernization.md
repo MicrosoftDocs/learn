@@ -7,7 +7,7 @@ GitHub Copilot app modernization has the following capabilities:
 - **Build validation and CVE scanning.** Automatically builds the project after transformations and resolves compilation errors. Scans for Common Vulnerabilities and Exposures (CVEs) and applies security fixes. Migrates existing unit tests and generates new ones to validate modernization outcomes.
 - **Containerization and deployment.** Generates Dockerfiles for containerization and Infrastructure as Code files for Azure deployment. Sets up CI/CD pipelines and addresses deployment errors automatically.
 - **Predefined task library.** These tasks cover common migration scenarios including updating application code from password-based authentication to managed identities and migrating an application's data tier from on-premises or legacy databases to Azure SQL or Azure PostgreSQL.
-- **Model Context Protocol (MCP) server.** GitHub Copilot app modernization uses an MCP server to deliver its specialized migration tools to the IDE. The MCP server is the underlying mechanism through which the agent executes code transformations, assessment tasks, and predefined migration patterns. When you open a Java project for the first time or upgrade the extension, you need to select Refresh to establish a connection with the MCP server and update the available tools in the chat agent. Because the MCP server follows the open Model Context Protocol standard, it can also be used outside the IDE extension. For example you can also use it with Copilot CLI, the Copilot coding agent, or other MCP-compatible clients. 
+- **Model Context Protocol (MCP) server.** GitHub Copilot app modernization uses an MCP server to deliver its specialized migration tools to the IDE. The MCP server is the underlying mechanism through which the agent executes code transformations, assessment tasks, and predefined migration patterns. When you open a Java project for the first time or upgrade the extension, you need to select Refresh to establish a connection with the MCP server and update the available tools in the chat agent. Because the MCP server follows the open Model Context Protocol standard, it can also be used outside the IDE extension. For example you can also use it with Copilot CLI, the Copilot Cloud Agent , or other MCP-compatible clients. 
 
 The GitHub Copilot app modernization agent supports Java upgrades and Azure migration for Java backend applications listed in the table:
 
@@ -38,7 +38,7 @@ GitHub Copilot app modernization has the following IDE and platform requirements
 | **Java** | Visual Studio Code (with app modernization extension); IntelliJ IDEA | Windows, macOS |
 | **.NET** | Visual Studio 2026 (or VS 2022 v17.14.17+); also Visual Studio Code via extension | Windows only (Visual Studio) |
 | **Any** | Copilot CLI (terminal-based, with Node.js 22+ and npm 10+) | Any platform supporting Copilot CLI |
-| **Any** | Copilot Coding Agent (via GitHub issues/PRs, runs in the cloud) | Any platform |
+| **Any** | Copilot Cloud Agent  (via GitHub issues/PRs, runs in the cloud) | Any platform |
 
 GitHub Copilot app modernization is a feature of GitHub Copilot. App modernization tasks consume premium requests, with each subscription plan offering a monthly allowance. 
 

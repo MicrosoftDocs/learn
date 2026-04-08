@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.design-extensibility-ai-solutions
+metadata:
+  title: "Design Extensibility of AI Solutions"
+  description: "Learn to design scalable, secure, and customizable AI solutions using Microsoft platforms. Explore extensibility strategies for enterprise AI."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+title: "Design extensibility of AI solutions"
+summary: Learn to design scalable, secure, and customizable AI solutions using Microsoft platforms.
+abstract: |
+  After completing this module, you will be able to:
+  - Design scalable and secure AI solutions using Microsoft platforms.
+  - Leverage custom models in Microsoft Foundry.
+  - Design and operationalize agents in Microsoft 365 Copilot.
+  - Extend agent capabilities using Copilot Studio and Model Context Protocol (MCP).
+  - Apply governance and lifecycle management for AI solutions.
+prerequisites: |
+  - Familiarity with AI concepts and enterprise architecture.
+  - Basic understanding of Microsoft 365 and Dynamics 365 platforms.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles: 
+- solution-architect 
+products: 
+- microsoft-365-copilot 
+- microsoft-365-copilot-chat 
+- power-platform 
+- microsoft-copilot-studio 
+- dynamics-365 
+subjects: 
+- generative-ai 
+- data-analytics 
+- data-management 
+- data-engineering 
+- data-integration 
+units:
+- learn.wwl.design-extensibility-ai-solutions.introduction
+- learn.wwl.design-extensibility-ai-solutions.design-ai-solutions-custom-models-microsoft-foundry
+- learn.wwl.design-extensibility-ai-solutions.design-agents-microsoft-365-copilot
+- learn.wwl.design-extensibility-ai-solutions.design-agent-extensibility-copilot-studio
+- learn.wwl.design-extensibility-ai-solutions.design-agent-extensibility-model-context-protocol-copilot-studio
+- learn.wwl.design-extensibility-ai-solutions.design-agents-automate-tasks-apps-websites-computer-copilot-studio
+- learn.wwl.design-extensibility-ai-solutions.design-agent-behaviors-copilot-studio-reasoning-voice-mode
+- learn.wwl.design-extensibility-ai-solutions.optimize-solution-design-agents-microsoft-365-teams-sharepoint
+- learn.wwl.design-extensibility-ai-solutions.knowledge-check
+- learn.wwl.design-extensibility-ai-solutions.summary
+badge:
+  uid: learn.wwl.design-extensibility-ai-solutions.badge

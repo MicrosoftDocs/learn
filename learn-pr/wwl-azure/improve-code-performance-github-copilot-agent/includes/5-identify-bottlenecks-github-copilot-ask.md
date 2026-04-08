@@ -178,7 +178,7 @@ Use GitHub Copilot Ask to complement your own analysis and use your own judgment
 - If GitHub Copilot misses a suspected issue, try asking about the code in a different way. You should also ensure that required code is added to the chat context. For example, you might need to add helper functions or related classes to the chat.
 
 > [!NOTE]
-> GitHub Copilot doesn't have context beyond what you provide. Ensure that relevant code is open in the editor or added to the chat context. If performance issues are spread across the codebase, you can specify `@workspace` or `@codebase` at the start of your prompt to specify a maximum context.
+> GitHub Copilot doesn't have context beyond what you provide. Ensure that relevant code is open in the editor or added to the chat context. If performance issues are spread across the codebase, you can specify `#codebase` at the start of your prompt to specify a maximum context.
 
 ## Key benefits of using Ask mode to identify bottlenecks
 

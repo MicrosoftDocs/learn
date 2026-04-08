@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.design-interoperability-finance-operations-agent-chats-sources
+title: "Design interoperable agent experiences for Finance and Operations"
+metadata:
+  title: "Design Interoperable Agent Experiences for Finance and Operations"
+  description: "Learn to design interoperable agent experiences in Dynamics 365 Finance and Operations using plugins, external knowledge sources, and secure patterns."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-design-interoperability-finance-operations-agent-chats-sources.md)]

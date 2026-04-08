@@ -2,7 +2,7 @@ Governing AI is about making sure your organization uses AI safely, responsibly,
 
 ### Apply AI principles
 
-Begin by assessing risks across your organization. Microsoft recommends evaluating risks through [Responsible AI principles](https://www.microsoft.com/ai/principles-and-approach). These principles include accountability, fairness, reliability, privacy, inclusiveness, and transparency.
+Begin by assessing risks across your organization. Microsoft recommends evaluating risks through [Responsible AI principles](https://www.microsoft.com/ai/principles-and-approach). These principles include accountability, fairness, reliability and safety, privacy and security, inclusiveness, and transparency.
 
 :::image type="content" source="../media/principles.png" alt-text="Diagram of the basic artificial intelligence principles.":::
 

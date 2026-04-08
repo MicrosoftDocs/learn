@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-share-files-securely.exercise-create-access-policy
+title: Exercise - Create an access policy and generate a SAS link
+metadata:
+  title: Exercise - Create an access policy and generate a SAS link
+  description: "Exercise - Create an access policy and generate a SAS link"
+  ms.date: 03/28/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-create-access-policy.md)]

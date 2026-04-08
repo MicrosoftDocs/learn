@@ -12,21 +12,14 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with Azure documentation
 
-- Read about [governance in the Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/govern).
+- Build a [cloud governance team](/azure/cloud-adoption-framework/govern/build-cloud-governance-team).
 - Organize resources with [management groups in Azure Governance](/azure/governance/management-groups/overview).
-- Organize and manage [Azure subscriptions with Microsoft Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/azure-best-practices/organize-subscriptions).
-- Plan [how to name resources and tags with Microsoft Cloud Adoption Framework](/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json).
+- Plan [how to name resources and tags with Microsoft Cloud Adoption Framework](/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management).
 - Review [recommended policies for Azure services from Azure Policy](/azure/governance/policy/concepts/recommended-policies).
 
 ## Learn more with self-paced training
 
-- Build a [cloud governance strategy on Azure](/learn/modules/build-cloud-governance-strategy-azure).
-- Describe [core Azure architectural components](/learn/modules/azure-architecture-fundamentals).
-- Explore [Microsoft Cloud Adoption Framework for Azure](/learn/modules/microsoft-cloud-adoption-framework-for-azure).
-- Secure your [Azure resources with Azure RBAC](/learn/modules/secure-azure-resources-with-rbac).
-- Learn about [enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure](/learn/modules/enterprise-scale-introduction).
-- Choose the best [Azure landing zone to support your requirements for cloud operations](/learn/modules/cloud-adoption-framework-ready).
+- Learn more about the [Cloud Adoption Framework](/training/modules/cloud-adoption-framework/). 
+- Secure your [Azure resources with Azure RBAC](/training/modules/secure-azure-resources-with-rbac/).
+- Learn about [AI landing zones in the Microsoft Cloud Adoption Framework for Azure](/training/modules/intro-ai-landing-zones/).
 
-## Learn more with optional practical exercises
-
-- Learn how to configure [list access by using Azure RBAC and the Azure portal](/learn/modules/secure-azure-resources-with-rbac/4-list-access?source=learn).

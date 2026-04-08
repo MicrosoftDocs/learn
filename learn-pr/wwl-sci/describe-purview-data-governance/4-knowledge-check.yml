@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for the module, Describe the data governance capabilities of Microsoft Purview."
-  ms.date: 9/19/2024
+  ms.date: 04/03/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -16,11 +16,11 @@ content: |
 quiz:
   questions:
 
-  - content: "Which feature of Microsoft Purview Data Catalog is used to provide critical business context to your data assets and also apply policies that determine how your data should be managed, governed, and made discoverable for users"
+  - content: "Which feature of Microsoft Purview Unified Catalog is used to provide critical business context to your data assets and also apply policies that determine how your data should be managed, governed, and made discoverable for users?"
     choices:
     - content: "Glossary terms"
       isCorrect: true
-      explanation: Correct. Glossary terms provide critical business context to your data assets and also apply policies that determine how your data should be managed, governed, and made discoverable for use."
+      explanation: "Correct. Glossary terms provide critical business context to your data assets and also apply policies that determine how your data should be managed, governed, and made discoverable for use."
     - content: "Data products"
       isCorrect: false
       explanation: "Incorrect. The data product feature provides context for the assets that are included within it, and provides a use case for data consumers. The data products feature doesn't apply policies."
@@ -28,14 +28,38 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. OKRs in Microsoft Purview are trackable business objectives tied to governance domains and data products to emphasize the value of business data."
 
-  - content: "Which data governance concept is about organizing, annotating, and publishing your data so that it's safely accessible, reuseable, and protected."
+  - content: "Which data governance concept is about organizing, annotating, and publishing your data so that it's safely accessible, reusable, and protected?"
     choices:
     - content: "Data curation"
       isCorrect: true
-      explanation: "Correct. Data curation is about organizing, annotating, and publishing your data so that it's safely accessible, reuseable, and protected."
+      explanation: "Correct. Data curation is about organizing, annotating, and publishing your data so that it's safely accessible, reusable, and protected."
     - content: "Data access"
       isCorrect: false
-      explanation: "Data access is about quickly providing the right access and enforcing the right use to balance safety and innovation."
+      explanation: "Incorrect. Data access is about quickly providing the right access and enforcing the right use to balance safety and innovation."
     - content: "Data health"
       isCorrect: false
-      explanation: "Data health is about ensuring data quality standards are maintained across your estate, and having an active data lifecycle keeping your data fresh and secure."
+      explanation: "Incorrect. Data health is about ensuring data quality standards are maintained across your estate, and having an active data lifecycle keeping your data fresh and secure."
+
+  - content: "What is the primary purpose of Microsoft Purview Data Map?"
+    choices:
+    - content: "To capture metadata about data across hybrid, on-premises, and multicloud environments"
+      isCorrect: true
+      explanation: "Correct. Data Map provides the foundation for data discovery and governance by capturing metadata about data present in analytics, SaaS, and operational systems across hybrid, on-premises, and multicloud environments."
+    - content: "To create data products and glossary terms for data consumers"
+      isCorrect: false
+      explanation: "Incorrect. Data products and glossary terms are features of Microsoft Purview Unified Catalog, not Data Map."
+    - content: "To manage user access policies for data assets"
+      isCorrect: false
+      explanation: "Incorrect. Access policies are managed through Microsoft Purview Unified Catalog. Data Map focuses on scanning and capturing metadata."
+
+  - content: "How do Microsoft Purview Data Map and Unified Catalog work together?"
+    choices:
+    - content: "Data Map scans and captures metadata, while Unified Catalog curates and governs the data using that metadata"
+      isCorrect: true
+      explanation: "Correct. Data Map provides the foundation by scanning data sources and capturing metadata. Unified Catalog builds on that metadata to provide tools for curation, governance, and access management."
+    - content: "Unified Catalog scans data sources, and Data Map organizes the results into governance domains"
+      isCorrect: false
+      explanation: "Incorrect. Data Map handles scanning and metadata capture. Unified Catalog uses that metadata for governance activities like organizing into governance domains."
+    - content: "Data Map and Unified Catalog are independent tools that don't share data"
+      isCorrect: false
+      explanation: "Incorrect. Data Map and Unified Catalog are designed to work together. Unified Catalog depends on the metadata that Data Map captures through scanning."

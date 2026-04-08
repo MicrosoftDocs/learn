@@ -5,13 +5,17 @@ Azure offers several networking services to help protect your network resources.
 
 ### Azure DDoS Protection (distributed denial of service protection)
 
-[Azure DDoS Protection](/azure/ddos-protection/manage-ddos-protection) provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your application and resources deployed in your virtual networks. Additionally, customers who use Azure DDoS Protection have access to DDoS Rapid Response support to engage DDoS experts during an active attack.
+[Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview) provides countermeasures against the most sophisticated DDoS threats with [two tiers](/azure/ddos-protection/ddos-protection-sku-comparison#tiers).
+
+- **DDoS Network Protection**: VNet-level protection plan covering multiple resources, includes DDoS Rapid Response support and cost protection guarantees
+- **DDoS IP Protection**: Pay-per-protected-IP model, no protection plan required, suitable for individual workloads.
 
 #### Business scenarios
 
 - Implement always-on traffic monitoring, adaptive tuning, and mitigation scale.
 - Access multi-layered protection, including attack analytics, metrics, and alerting.
-- Receive support from the DDoS rapid response team.
+- Network protection with centralized management and Rapid Response support.
+-	IP protection for individual workloads or cost-sensitive architectures.
 
 ### Azure Private Link
 
@@ -25,7 +29,11 @@ Azure offers several networking services to help protect your network resources.
 
 ### Azure Firewall
 
-Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. Azure Firewall uses a static public IP address for your virtual network resources, which allows outside firewalls to identify traffic originating from your virtual network. Azure Firewall provides inbound protection for non-HTTP/S protocols (such as RDP, SSH, and FTP), outbound network-level protection for all ports and protocols, and application-level protection for outbound HTTP/S.
+[Azure Firewall](/azure/firewall/overview) is a managed, cloud-based network security service available in three tiers:
+- **Basic**: Limited features, alert-only threat intelligence (not recommended for production).
+- **Standard**: Full stateful firewall, FQDN filtering, threat intelligence, log analytics.
+- **Premium**: Adds TLS inspection, IDPS with 67,000+ signatures, URL filtering, web categories, scales to 100 Gbps, PCI DSS compliance.
+
 
 #### Business scenarios
 
@@ -45,7 +53,7 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 - React faster to security threats by centrally patching known vulnerabilities instead of securing individual web apps.
 - Deploy Web Application Firewall with Application Gateway, Front Door, and Content Delivery Network.
 
-### Azure virtual network security groups
+### Azure network security groups
 
 You can filter network traffic to and from Azure resources in an Azure virtual network with [Azure network security group (NSGs)](/azure/virtual-network/network-security-groups-overview). You can use a network virtual appliance (NVA) such as Azure Firewall or firewalls from other vendors.
 

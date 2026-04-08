@@ -1,95 +1,81 @@
-Effective management of an organization’s network security perimeter requires the right combination of tools and systems. Microsoft Sentinel is a scalable, cloud-native SIEM/SOAR solution that delivers intelligent security analytics and threat intelligence across the enterprise. It provides a single solution for cyberthreat detection, investigation, response, and proactive hunting, with a bird's-eye view across your enterprise.
+Microsoft Sentinel is a scalable, cloud-native security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution. It delivers AI-powered security analytics and threat intelligence across multicloud and multiplatform environments, providing a single solution for threat detection, investigation, proactive hunting, and response.
 
-:::image type="content" source="../media/3-four-aspects-azure-sentinel.png" alt-text="Diagram showing the four aspects of Microsoft Sentinel: collect, detect, investigate, and respond.":::
+Microsoft Sentinel has evolved beyond a traditional SIEM. Today it serves both as a SIEM and as a security platform—providing an AI-ready, data-first foundation that transforms telemetry into actionable security insights while keeping your security team in command.
 
-This diagram depicts the end-to-end functionality of Microsoft Sentinel.
+## Microsoft Sentinel as a SIEM
 
-- **Collect** data at cloud scale across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds.
-- **Detect** previously uncovered threats and minimize false positives using analytics and unparalleled threat intelligence.
-- **Investigate** threats with artificial intelligence (AI) and hunt suspicious activities at scale, tapping into decades of cybersecurity work at Microsoft.
-- **Respond** to incidents rapidly with built-in orchestration and automation of common security tasks.
+As a SIEM, Microsoft Sentinel gives your security team a unified view of threats across the entire enterprise. It collects and correlates signals from all users, devices, applications, and infrastructure—whether on-premises, in Azure, or in other cloud environments like Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
-Microsoft Sentinel helps enable end-to-end security operations, in a modern Security Operations Center (SOC). 
+Microsoft Sentinel supports end-to-end security operations across four interconnected areas:
 
-#### Collect data at scale
+- **Collect** security data at cloud scale from across your entire digital estate using 350+ built-in data connectors for Microsoft services, non-Microsoft platforms, and custom sources. Data normalization translates diverse formats into a uniform view, making it easier to correlate events across sources.
+- **Detect** previously undetected threats and minimize false positives using analytics rules and AI-powered detections. Rules run regularly to query collected data, generate alerts when suspicious activity is found, and group related alerts into *incidents*—case files your team can assign and investigate.
+- **Investigate** threats using AI-assisted tools and proactive threat hunting to understand the full scope of an attack and find its root cause.
+- **Respond** to incidents rapidly with built-in orchestration and automation that limits the impact of threats without requiring manual intervention.
 
-Collect data across all users, devices, applications, and infrastructure, both on-premises and in multiple clouds. The following are key capabilities in Microsoft Sentinel for data collection.
+Microsoft Sentinel is available in the Microsoft Defender portal, which is the recommended access point and provides a unified security operations experience.
 
-- ***Out of the box data connectors*** - Many connectors are packaged with SIEM solutions for Microsoft Sentinel and provide real-time integration. These connectors include Microsoft sources and Azure sources like Microsoft Entra ID, Azure Activity, Azure Storage, and more.
+:::image type="content" source="../media/sentinel-in-defender.png" lightbox="../media/sentinel-in-defender.png" alt-text="Screen capture of Microsoft Sentinel in the Microsoft Defender portal.":::
 
-  Out of the box connectors are also available for the broader security and applications ecosystems for non-Microsoft solutions. You can also use common event format, Syslog, or REST-API to connect your data sources with Microsoft Sentinel.
+> [!NOTE]
+> The Azure portal experience for Microsoft Sentinel will be retired on March 31, 2027. Microsoft Sentinel will be available only in the Microsoft Defender portal after that date.
 
-- ***Custom connectors*** - Microsoft Sentinel supports ingesting data from some sources without a dedicated connector. If you're unable to connect your data source to Microsoft Sentinel using an existing solution, you can create your own data source connector.
+## Microsoft Sentinel as a platform
 
-- ***Data normalization*** - Microsoft Sentinel ingests data from many sources. Working with and correlating between different types of data during an investigation and hunting can be challenging. Microsoft Sentinel supports the Advanced Security Information Model (ASIM), that sits between these diverse sources and the user, to facilitate uniform, normalized views.
+Beyond its SIEM capabilities, Microsoft Sentinel provides an extensible security platform built on three core components that support advanced analytics, AI-driven operations, and developer extensibility.
 
-#### Detect threats
+### Microsoft Sentinel data lake
 
-Detect previously undetected threats, and minimize false positives using Microsoft's analytics and unparalleled threat intelligence. The following are key capabilities in Microsoft Sentinel for threat detection.
+The Microsoft Sentinel data lake is a fully managed, cloud-native data lake purpose-built for security operations. It's the central, unified repository for all security data ingested into Microsoft Sentinel. Key capabilities include:
 
-- ***Analytics*** - Microsoft Sentinel uses analytics to group alerts into incidents. Use the out of the box analytic rules as-is, or as a starting point to build your own rules. Microsoft Sentinel also provides rules to map your network behavior and then look for anomalies across your resources.
+- **Unified storage**: Centralizes logs from Microsoft 365, Microsoft Defender, Azure, Microsoft Entra ID, Microsoft Purview, Microsoft Intune, and over 350 connectors including AWS and GCP—eliminating data silos.
+- **Multi-modal analytics**: Query security data using Kusto Query Language (KQL), graph analytics, and AI-powered notebooks—all on a single copy of open-format data.
+- **Cost-efficient retention**: Stores large volumes of security data at scale. Long-term retention enables investigations into persistent threats and the creation of behavioral baselines using months of historical data.
 
-- ***MITRE ATT&CK coverage*** - Microsoft Sentinel analyzes ingested data, not only to detect threats and help you investigate, but also to visualize the nature and coverage of your organization's security status based on the tactics and techniques from the MITRE ATT&CK® framework, a global database of adversary tactics and techniques.
+### Microsoft Sentinel graph
 
-- ***Threat intelligence*** - You can integrate numerous sources of threat intelligence into Microsoft Sentinel to detect malicious activity in your environment and provide context to security investigators for informed response decisions.
+Microsoft Sentinel graph models and analyzes complex relationships across assets, identities, activities, and threat intelligence. Rather than searching isolated tables of data, security teams can reason over interconnected data to understand how threats move through an environment. For example, the graph can help you identify which paths an attacker could take from a compromised identity to a critical asset.
 
-- ***Watchlists*** - You can correlate data from a data source you provide, a watchlist, with the events in your Microsoft Sentinel environment. For example, you might create a watchlist with a list of high-value assets, terminated employees, or service accounts in your environment. Use watchlists in your search, detection rules, threat hunting, and response playbooks.
+### Microsoft Sentinel MCP server
 
-- ***Workbooks*** - You can create interactive visual reports by using workbooks. After you connect data sources to Microsoft Sentinel, you can monitor the data using the Microsoft Sentinel integration with Azure Monitor Workbooks. Microsoft Sentinel comes with built-in workbook templates that allow you to quickly gain insights across your data. You can also create your own custom workbooks.
+The Microsoft Sentinel model context protocol (MCP) server provides a hosted interface that lets security teams—and AI agents—interact with Microsoft Sentinel data using natural language. It removes the need for schema knowledge or custom coding, which makes AI-driven security operations more accessible and helps security teams build customized automation faster.
 
-#### Investigate threats
+## Threat detection capabilities
 
-Investigate threats with artificial intelligence, and hunt for suspicious activities at scale, tapping into years of cyber security work at Microsoft. The following are key capabilities in Microsoft Sentinel for threat investigation.
+Microsoft Sentinel uses **analytics rules** to detect threats. These rules query collected data on a regular basis and generate alerts when suspicious activity is found. Related alerts are automatically grouped into **incidents**—case files your security team can assign and investigate.
 
-- ***Incidents*** - Incidents are your case files that contain an aggregation of all the relevant evidence for specific investigations. Each incident is created (or added to) based on pieces of evidence (alerts) that were either generated by analytics rules or imported from third-party security products that produce their own alerts. The incident details page provides information and investigation tools to help you to understand the scope and find the root cause of a potential security threat.
+Detection in Microsoft Sentinel spans three broad approaches:
 
-- ***Hunts*** - Microsoft Sentinel's powerful hunting search-and-query tools, based on the MITRE framework, enable you to proactively hunt for security threats across your organization’s data sources, before an alert is triggered. After you discover which hunting query provides high-value insights into possible attacks, you can also create custom detection rules based on your query, and surface those insights as alerts to your security incident responders.
+- **Rule-based detection**: Rules match patterns in your data against known threat signatures and defined conditions. Prebuilt rule templates, designed by Microsoft security experts, are available through the **Content hub** so your team doesn't have to build detection logic from scratch.
+- **AI and machine learning detection**: Microsoft Sentinel uses machine learning to establish behavioral baselines and flag unusual deviations. It also uses a correlation engine called **Fusion** that automatically links low-severity signals from multiple sources into high-confidence, actionable incidents—helping surface advanced multistage attacks that individual rules might miss.
+- **Threat intelligence matching**: Microsoft Sentinel integrates threat intelligence feeds that identify known malicious IP addresses, domains, and URLs. Ingested data is automatically matched against these indicators to detect activity associated with known threat actors.
 
-- ***Notebooks*** - Microsoft Sentinel supports Jupyter notebooks in Azure Machine Learning workspaces. Jupyter notebooks are an open-source web application that allows users to create and share documents containing live code, equations, visualizations, and narrative text.
+Microsoft Sentinel maps detection coverage to the **MITRE ATT&CK® framework**, a global knowledge base of adversary tactics and techniques. This lets you visualize which attack techniques your current rules cover and identify gaps in your defenses.
 
-  Use notebooks in Microsoft Sentinel to extend the scope of what you can do with Microsoft Sentinel data. For example:
-    - Perform analytics that aren't built in to Microsoft Sentinel, such as some Python machine learning features.
-   - Create data visualizations that aren't built in to Microsoft Sentinel, such as custom timelines and process trees.
-   - Integrate data sources outside of Microsoft Sentinel, such as an on-premises data set.
+The **Content hub** is your centralized location to discover and deploy packaged solutions. Each solution bundles multiple content types—data connectors, workbooks, analytics rules, hunting queries, and playbooks—into a single deployment for a complete end-to-end scenario.
 
-#### Respond to incidents rapidly
+# [MITRE ATT&ACK framework](#tab/mitre)
+:::image type="content" source="../media/framework-in-defender-v3.png" lightbox="../media/framework-in-defender-v3.png" alt-text="Screen capture of the MITRE ATT&ACK framework integration with Microsoft Sentinel in the Microsoft Defender portal.":::
 
-With Microsoft Sentinel, you can automate your common tasks and simplify security orchestration with playbooks that integrate with Azure services and your existing tools, to respond to incidents more rapidly.
-
-The following are key capabilities in Microsoft Sentinel for threat response.
-
-- ***Automation rules*** - Centrally manage the automation of incident handling in Microsoft Sentinel by defining and coordinating a small set of rules that cover different scenarios.
-
-- ***Playbooks*** - Automate and orchestrate your threat response by using playbooks, which are a collection of remediation actions. Run a playbook on-demand or automatically in response to specific alerts or incidents, when triggered by an automation rule.
-
-  Playbooks in Microsoft Sentinel are based on workflows built in Azure Logic Apps. For example, if you use the ServiceNow ticketing system, use Azure Logic Apps to automate your workflows and open a ticket in ServiceNow each time a particular alert or incident is generated.
-
-### Enable out of the box security content
-
-Microsoft Sentinel content refers to Security Information and Event Management (SIEM) solution components that enable customers to ingest data, monitor, alert, hunt, investigate, respond, and connect with different products, platforms, and services. The content in Microsoft Sentinel can include content types, such as: data connectors, workbooks, analytics rules, hunting queries, notebooks, watchlists, and playbooks.
-
-Microsoft Sentinel offers these content types as solutions and standalone items. Solutions are packages of Microsoft Sentinel content or Microsoft Sentinel API integrations, which fulfill an end-to-end product, domain, or industry vertical scenario in Microsoft Sentinel. Both solutions and standalone items are discoverable and managed from the Content hub.
-
-The Microsoft Sentinel Content hub is your centralized location to discover and manage out-of-the-box (built-in) packaged solutions. Microsoft Sentinel solutions are packages of Microsoft Sentinel content or Microsoft Sentinel API integrations that provide single-step deployment and enablement. Content hub solutions, which fulfill an end-to-end product, domain, or industry vertical scenario in Microsoft Sentinel. An example of a domain specific, built-in, is the Microsoft Purview Insider Risk Management that includes a data connector, workbook, analytics rules, hunting queries, and playbook.
-
-:::image type="content" source="../media/content-hub.png" lightbox="../media/content-hub.png" alt-text="Screen capture of the Microsoft Sentinel content hub.":::
-
-### Microsoft Sentinel in the Microsoft Defender portal
-
-Microsoft Sentinel is a security service that is enabled through the Azure portal. Once the Microsoft Sentinel service is enabled, you can access it through the Azure portal or from within the Microsoft unified security operations platform in the Microsoft Defender portal.
-
-The Microsoft unified security operations platform in the Microsoft Defender portal brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender.
-
-When you onboard Microsoft Sentinel to the Defender portal, you unify capabilities with Microsoft Defender XDR like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster.
-
-# [Azure portal](#tab/azure-portal)
-
-:::image type="content" source="../media/sentinel-in-azure.png" lightbox="../media/sentinel-in-azure.png" alt-text="Screen capture of Microsoft Sentinel in the Azure portal.":::
-
-# [Defender portal](#tab/defender-portal)
-
-:::image type="content" source="../media/sentinel-in-defender.png" lightbox="../media/sentinel-in-defender.png" alt-text="Screen capture of Microsoft Sentinel in the Defender XDR portal.":::
+# [Content hub](#tab/content-hub)
+:::image type="content" source="../media/content-hub.png" lightbox="../media/content-hub.png" alt-text="Screen capture of the Microsoft Sentinel content hub showing packaged solutions with analytics rules, workbooks, and playbooks.":::
 
 ---
 
-Detailed information on the Microsoft Sentinel experience in the Microsoft Defender portal and how to onboard are available in the summary and resources section of this module.
+## Threat investigation and hunting
+
+When an analytics rule detects a threat, Microsoft Sentinel aggregates related alerts into **incidents**. An incident is a case file that brings together all relevant evidence—alerts, affected entities, timelines, and context—in one place. Your team can assign, triage, and investigate incidents directly in the Microsoft Defender portal.
+
+:::image type="content" source="../media/unified-incidents.png" lightbox="../media/unified-incidents.png" alt-text="Screen capture of the unified incidents queue in the Microsoft Defender portal showing Microsoft Sentinel and Defender XDR incidents together.":::
+
+For proactive threat detection, Microsoft Sentinel supports **threat hunting**. Rather than waiting for an alert, your security team can run hunting queries across your data to search for suspicious activity that hasn't triggered a rule yet. When a hunting query surfaces a significant finding, you can promote it into a custom analytics rule so it generates alerts automatically in the future.
+
+## Threat response and mitigation
+
+Microsoft Sentinel automates common response tasks so your team can act quickly and consistently.
+
+**Automation rules** let you centrally manage how incidents are handled. You define conditions—such as incident severity, source, or entity type—and specify actions like assigning the incident to an analyst, adding tasks, changing its status, or triggering a playbook.
+
+**Playbooks** are automated workflows built on Azure Logic Apps. They execute a sequence of remediation actions in response to a triggered automation rule. For example, when an incident involving a compromised account is created, a playbook can automatically disable the account, open a ticket in your IT service management system, and notify the security team—all before an analyst even opens the incident. Playbooks can also run on demand, giving analysts a one-click response option for common scenarios.
+
+Together, automation rules and playbooks reduce the time between threat detection and mitigation, and free your security team to focus on complex investigations that require human judgment.

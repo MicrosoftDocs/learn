@@ -6,12 +6,10 @@ metadata:
   description: Introduction
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 04/01/2026
   ms.update-cycle: 180-days
   ms.topic: unit
-  ms.collection:
-    - ce-advocates-ai-copilot
-  ms.custom: team=nextgen
+  ms.collection: ce-advocates-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

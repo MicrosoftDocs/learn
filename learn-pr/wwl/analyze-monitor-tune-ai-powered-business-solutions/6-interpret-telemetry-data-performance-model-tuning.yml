@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.interpret-telemetry-data-performance-model-tuning
+title: "Interpret telemetry data to tune AI performance"
+metadata:
+  title: "Interpret Telemetry Data to Tune AI Performance"
+  description: "Learn to analyze telemetry data from AI systems to diagnose issues, optimize performance, and guide continuous tuning for better outcomes."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-interpret-telemetry-data-performance-model-tuning.md)]

@@ -1,15 +1,22 @@
-Another type of virtual machine is the Azure Virtual Desktop. Azure Virtual Desktop is a desktop and application virtualization service that runs on the cloud. It enables you to use a cloud-hosted version of Windows from any location. Azure Virtual Desktop works across devices and operating systems, and works with apps that you can use to access remote desktops or most modern browsers.
+Azure Virtual Desktop is a desktop and application virtualization service in Azure. It lets users securely access Windows desktops and apps from many device types and locations.
+
+At a fundamentals level, Azure Virtual Desktop is a managed option for remote desktop access where desktops and apps stay in the cloud instead of on local devices.
 
 The following video gives you an overview of Azure Virtual Desktop:
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=04978efb-d8e5-4352-bcb4-45399a988a69]
 
-## Enhance security
+## When to use Azure Virtual Desktop
 
-Azure Virtual Desktop provides centralized security management for users' desktops with Microsoft Entra ID. You can enable multifactor authentication to secure user sign-ins. You can also secure access to data by assigning granular role-based access controls (RBACs) to users.
+Use Azure Virtual Desktop when a team needs centralized desktop and app access across distributed users, contractors, or hybrid workers. For example, a support team can use standardized cloud-hosted desktops so each shift has the same tools, access policies, and security controls.
 
-With Azure Virtual Desktop, the data and apps are separated from the local hardware. The actual desktop and apps are running in the cloud, meaning the risk of confidential data being left on a personal device is reduced. Additionally, user sessions are isolated in both single and multi-session environments.
+If you need a full desktop experience for many users with centralized management, Azure Virtual Desktop is often easier to operate than building separate VM-based desktop environments for each user group.
 
-## Multi-session Windows 10 or Windows 11 deployment
+:::image type="content" source="../media/virtual-desktop-access-flow.png" alt-text="Diagram showing users connecting through Microsoft Entra ID to a host pool.":::
 
-Azure Virtual Desktop lets you use Windows 10 or Windows 11 Enterprise multi-session, the only Windows client-based operating system that enables multiple concurrent users on a single VM. Azure Virtual Desktop also provides a more consistent experience with broader application support compared to Windows Server-based operating systems.
+## Key points
+
+ -  It centralizes desktop and app delivery in Azure and integrates with Microsoft Entra ID for identity and access controls.
+ -  It helps reduce data exposure on local devices because apps and data can remain in Azure-hosted sessions.
+ -  It supports single-session and multi-session Windows experiences, depending on user and workload needs.
+

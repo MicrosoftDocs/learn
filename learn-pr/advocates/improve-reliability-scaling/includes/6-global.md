@@ -1,4 +1,4 @@
-In the previous unit, we described scaling compute, and making it more available in the process. We also suggested adding an Azure Cache for Redis to improve performance, and scaling out Azure SQL databases via sharding.
+In the previous unit, we described scaling compute, and making it more available in the process. We also suggested adding Azure Managed Redis to improve performance, and scaling out Azure SQL databases via sharding.
 
 The next step, as your business grows, might be to go global. However, there are some things you need to think about before trying to implement a fully global architecture.
 

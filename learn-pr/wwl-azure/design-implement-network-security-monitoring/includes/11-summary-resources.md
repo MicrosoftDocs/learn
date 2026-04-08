@@ -12,7 +12,7 @@ In this module, you explored a range of network security features.
 
 - Azure Firewall Manager provides centralized configuration and management across multiple Azure Firewall instances. Azure Firewall Manager lets you create one or more firewall policies and rapidly apply them to multiple firewalls. Firewall Manager can provide security management for secured virtual hubs and hub virtual networks. 
 
-- Web Application Firewall provides centralized protection of your web applications from common exploits and vulnerabilities. There are two WAF policy modes: Detection and Prevention. WAF works with the Application Gateway, Azure Front Door Service, and the Azure CDN Service.
+- Web Application Firewall provides centralized protection of your web applications from common exploits and vulnerabilities. There are two WAF policy modes: Detection and Prevention. WAF works with the Application Gateway and Azure Front Door.
 
 ## Learn more with Copilot
 
