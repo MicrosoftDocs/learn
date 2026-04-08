@@ -28,21 +28,7 @@ In this module, you learn how to:
 
 ## Skills measured 
 
-The content in the module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
-
-Design infrastructure solutions
-
-- Design migrations
-
-    - Evaluate a migration solution that uses the Microsoft Cloud Adoption Framework for Azure.
-
-    - Evaluate on-premises servers, data, and applications for migration.
-
-    - Recommend a solution for migrating workloads to infrastructure as a service (IaaS) and platform as a service (PaaS).
-
-    - Recommend a solution for migrating databases.
-
-    - Recommend a solution for migrating unstructured data.
+The content in the module helps you prepare for [Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions](/credentials/certifications/exams/az-305/). 
 
 ## Prerequisites
 
