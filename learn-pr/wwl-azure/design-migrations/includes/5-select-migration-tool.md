@@ -17,7 +17,7 @@ Azure Migrate includes the following components to support the migration process
 - **Assessment and migration features for different workloads**: Azure Migrate hub supports several different workloads for migration:
    - Servers: On-premises servers are assessed and migrated to Azure virtual machines. Migration is available for both Linux and Windows servers. 
    - Databases: On-premises databases are assessed and migrated to Azure SQL Database or to an Azure SQL Managed Instance.
-   - Web applications: On-premises web applications are assessed and migrated to Azure App Service by using Azure App Service Migration Assistant.
+   - Web applications: On-premises web applications are assessed and migrated by using Azure App Service Migration Assistant.
    - Virtual desktops: On-premises virtual desktop infrastructure (VDI) is assessed and migrated to Azure Virtual Desktop.
    - Data: Large volumes of data are migrated to Azure by using Azure Data Box products.
 
@@ -25,12 +25,11 @@ Azure Migrate includes the following components to support the migration process
 
    | Tool | Usage |
    | --- | --- |
-   | Azure Migrate: Discovery and assessment: Server Assessment | Discover and assess servers including SQL and web apps |
-   | Azure Migrate: Server Migration | Migrate servers |
+   | Azure Migrate: Discovery and assessment | Discover and assess servers including SQL and web apps |
+   | Azure Migrate: Migration and modernization | Migrate servers |
    | App Service Migration Assistant  | Migrate .NET web apps from Windows OS to App Service |
    | SQL Server Data Migration Assistant (DMA) | Assess SQL Server databases for migration to Azure SQL Database, Azure SQL Managed Instance, or Azure virtual machines running SQL Server |
    | Azure Database Migration Service | Migrate on-premises databases to Azure virtual machines running SQL Server, Azure SQL Database, or SQL Managed Instances |
-   | Web app migration assistant | Assess on-premises web apps and migrate them to Azure |
    | Azure Data Box | Migrate offline data |
 
 ## Azure Resource Mover
