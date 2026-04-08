@@ -43,7 +43,7 @@ After you receive your storage device, you can quickly set it up by using the lo
 
 Azure Data Box includes the following components:
 
-- **Data Box device**: A physical device that provides primary storage, manages communication with cloud storage, and helps to ensure the security and confidentiality of all data stored on the device. The Data Box device has a usable storage capacity of 80 TB.
+- **Data Box device**: A physical device that provides primary storage, manages communication with cloud storage, and helps to ensure the security and confidentiality of all data stored on the device. Azure Data Box devices come in two configurations: 120 TB usable capacity (for transfers of 40–480 TB) and 525 TB usable capacity (for transfers up to 525 TB)."
 
 - **Data Box service**: An extension of the Azure portal that lets you manage a Data Box device by using a web interface that you can access from different geographical locations. Use the Data Box service to perform daily administration of your Data Box device. The service tasks include how to create and manage orders, view, and manage alerts, and manage shares.
 
@@ -54,7 +54,7 @@ Azure Data Box includes the following components:
 
 ### Things to consider when using Azure Data Box
 
-Data Box is ideally suited for transferring data sizes larger than 40 TBs. The service is especially useful in scenarios with limited internet connectivity. You could consider using Data Box in the following situations.
+Data Box is ideally suited for transferring data sizes larger than 40 TB or more. The service is especially useful in scenarios with limited internet connectivity. You could consider using Data Box in the following situations.
 
 | Scenario | Description |
 | --- | --- |
