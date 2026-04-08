@@ -1,5 +1,9 @@
 Securing access to digital resources requires two distinct but related processes: confirming who is requesting access, and then deciding what that person, device, or application is allowed to do. These two processes—*authentication* and *authorization*—are fundamental to identity and access management. Understanding the difference between them is essential because every access decision in a modern organization depends on both.
 
+Watch the video that follows to learn about authentication and authorization.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3ceacb32-c38e-4847-ae1f-ce44865f65e9]
+
 ## Authentication
 
 *Authentication* is the process of proving that you are who you say you are. Every time you sign in to an application, unlock your phone, or access a company system, authentication is happening. The system challenges you to provide proof of your identity, and then verifies that proof before deciding whether to allow access. Authentication answers the question: *Who are you?*
@@ -8,9 +12,9 @@ Authentication requires *credentials*—evidence that verifies your identity. A 
 
 Authentication methods are built on three categories of proof, called *authentication factors*:
 
-- **Something you know** — a password, PIN, or security question
-- **Something you have** — a mobile device, hardware security key, or smart card
-- **Something you are** — a biometric characteristic like a fingerprint or facial scan
+- **Something you know—a password, PIN, or security question
+- **Something you have—a mobile device, hardware security key, or smart card
+- **Something you are—a biometric characteristic like a fingerprint or facial scan
 
 Using only one factor—such as a password alone—is called *single-factor authentication*. Single-factor authentication is common but vulnerable. If that single factor is compromised—a password stolen through phishing, for example—an attacker has everything they need to impersonate the user.
 
