@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=fbce6121-62bd-4e19-aeda-a6ff8aab9196]
+
+::: zone-end
+
+::: zone pivot="text"
+
 In traditional software development, we often treat code as the ultimate source of truth. Specifications serve code - they're the scaffolding we build and then discard once the "real work" of coding begins. We write Product Requirements Documents (PRDs) to guide development, create design docs to inform implementation, and draw diagrams to visualize architecture. But these documents are always subordinate to the code itself. As code moves forward, specs rarely keep pace.
 
 With the rise of powerful AI coding assistants like GitHub Copilot, this code-first approach evolved into what we now call "vibe coding." Unfortunately, the vibe coding approach often involves submitting a high-level prompt that returns a chunk of code that "looks right" but might miss the intent or have errors. It can be fast, but sometimes it's misaligned. Each chat session operates in isolation, lacking awareness of previous decisions or overall project requirements.
@@ -47,3 +55,8 @@ For enterprise teams especially, SDD addresses persistent pain points: miscommun
 ## Summary
 
 Spec-driven development represents a fundamental shift in how we build software. By making specifications the primary artifact that drives code generation, SDD eliminates the gap between intent and implementation. This approach uses AI capabilities to automate the mechanical translation from precise specs to working systems, enabling teams to maintain velocity amid complexity and change. As software development continues to evolve, embracing spec-driven development is crucial for teams aiming to deliver high-quality products efficiently.
+
+::: zone-end
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
