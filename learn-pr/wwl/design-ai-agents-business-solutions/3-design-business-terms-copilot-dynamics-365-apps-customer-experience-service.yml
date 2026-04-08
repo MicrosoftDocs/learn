@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-business-terms-copilot-dynamics-365-apps-customer-experience-service
+title: "Design business terms for Copilot in Dynamics 365 Customer Service"
+metadata:
+  title: "Design Business Terms for Copilot in Dynamics 365"
+  description: "Learn how to define and configure business terms in Dynamics 365 Copilot to improve conversation summaries, case outcomes, and agent experiences."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-design-business-terms-copilot-dynamics-365-apps-customer-experience-service.md)]
