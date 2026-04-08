@@ -149,9 +149,9 @@ Expose only required context attributes to maintain:
 
 Because all linked articles returned "expired," this unit's based on safe instructional content aligned to the following provided resources:
 
-- _Get started with Dynamics 365 Contact Center - Training |_ [*Microsoft Learn*](/training/modules/get-started-contact-center/)
+- [Get started with Dynamics 365 Contact Center](/training/modules/get-started-contact-center/)
 
-- _Configure agent context |_ [*Microsoft Learn*](/dynamics365/customer-service/develop/enable-bot-context)
+- [Configure agent context](/dynamics365/customer-service/develop/enable-bot-context)
 
-- _Enable Copilot features |_ [*Microsoft Learn*](/dynamics365/contact-center/administer/configure-copilot-features)
+- [Enable Copilot features](/dynamics365/contact-center/administer/configure-copilot-features)
 

@@ -151,6 +151,6 @@ Consider:
 
 Use the following links as source material for deeper learning:
 
-- **Edit your app with Copilot in Power Apps Studio (preview)** [/power-apps/maker/canvas-apps/copilot-edit-app](/power-apps/maker/canvas-apps/copilot-edit-app)
+- [Edit your app with Copilot in Power Apps Studio (preview)](/power-apps/maker/canvas-apps/copilot-edit-app)
 
-- **Use plans to create a business solution with Copilot** [/power-apps/maker/canvas-apps/copilot-business-plans](/power-apps/maker/canvas-apps/copilot-business-plans)
+- [Use plans to create a business solution with Copilot](/power-apps/maker/canvas-apps/copilot-business-plans)

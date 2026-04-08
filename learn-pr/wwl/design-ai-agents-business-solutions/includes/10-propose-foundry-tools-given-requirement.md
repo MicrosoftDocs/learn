@@ -166,8 +166,6 @@ Below are examples of how to map business requirements to the correct Foundry to
 
 ## References
 
-(Use these for learner follow-up)
-
 - [Azure AI Foundry tool catalog](/azure/ai-foundry/agents/concepts/tool-catalog)
 
-- Azure AI Foundry Tools <https://azure.microsoft.com/products/ai-foundry/tools/>
+- [Azure AI Foundry Tools](https://azure.microsoft.com/products/ai-foundry/tools/)

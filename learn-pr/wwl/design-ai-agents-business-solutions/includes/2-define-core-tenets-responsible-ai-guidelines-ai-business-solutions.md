@@ -76,5 +76,4 @@ AI business solutions—such as Copilot experiences, autonomous agents, and anal
 
 ## References
 
-- Microsoft Responsible AI Principles and Approach
-  https://www.microsoft.com/ai/principles-and-approach
+- [Microsoft Responsible AI Principles and Approach](https://www.microsoft.com/ai/principles-and-approach)

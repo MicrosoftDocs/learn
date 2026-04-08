@@ -77,12 +77,12 @@ For low-code scenarios, **AI Builder grounded prompts** let you generate respons
 
 ## References
 
-**Ground AI using trusted data** — _Build effective generative AI solutions in your organization_ (module). [Microsoft Learn](/training/modules/build-effective-generative-ai-solutions-organization/)
+- [Build effective generative AI solutions in your organization](/training/modules/build-effective-generative-ai-solutions-organization/)
 
-**Ground language models / RAG with your data** — _Develop a RAG-based solution with your own data using Microsoft Foundry_ (module). [Microsoft Learn](/training/modules/build-copilot-ai-studio/)
+- [Develop a RAG-based solution with your own data using Microsoft Foundry](/training/modules/build-copilot-ai-studio/)
 
-**Grounding Data Design for AI Workloads on Azure** — Azure Well-Architected Framework. [Microsoft Learn](/azure/well-architected/ai/grounding-data-design)
+- [Grounding Data Design for AI Workloads on Azure](/azure/well-architected/ai/grounding-data-design)
 
-**Create AI Builder grounded prompts with Dataverse data** — (module). [Microsoft Learn](/training/modules/ai-builder-grounded-prompts/)
+- [Create AI Builder grounded prompts with Dataverse data](/training/modules/ai-builder-grounded-prompts/)
 
-**(Community perspective, optional)** _Microsoft Foundry IQ and Agent 365: Enterprise Grounding, Governance, and Model Routing_. [Windows Forum](https://windowsforum.com/threads/microsoft-foundry-iq-and-agent-365-enterprise-grounding-governance-and-model-routing.390257/)
+- [Microsoft Foundry IQ and Agent 365: Enterprise Grounding, Governance, and Model Routing](https://windowsforum.com/threads/microsoft-foundry-iq-and-agent-365-enterprise-grounding-governance-and-model-routing.390257/)

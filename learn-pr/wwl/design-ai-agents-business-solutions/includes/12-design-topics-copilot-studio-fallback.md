@@ -135,8 +135,8 @@ Fallback shouldn't replace strong intent recognition. Ensure topics cover the mo
 
 ## References
 
-[Authoring system fallback topic](/microsoft-copilot-studio/authoring-system-fallback-topic)
+- [Authoring system fallback topic](/microsoft-copilot-studio/authoring-system-fallback-topic)
 
-[Topics overview](/microsoft-copilot-studio/guidance/topics-overview)
+- [Topics overview](/microsoft-copilot-studio/guidance/topics-overview)
 
-[Manage Power Virtual Agents topics](/training/modules/manage-power-virtual-agents-topics/)
+- [Manage topics in Microsoft Copilot Studio](/training/modules/manage-power-virtual-agents-topics/)

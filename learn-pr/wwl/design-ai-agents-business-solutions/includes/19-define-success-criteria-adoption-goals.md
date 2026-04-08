@@ -146,4 +146,5 @@ Governance includes:
 
 ## References
 
-- Use the following content links to explore the source material: [/azure/cloud-adoption-framework/scenarios/ai/plan](/azure/cloud-adoption-framework/scenarios/ai/plan)
+Use the following content link to explore the source material:
+- [Plan for AI adoption](/azure/cloud-adoption-framework/scenarios/ai/plan)

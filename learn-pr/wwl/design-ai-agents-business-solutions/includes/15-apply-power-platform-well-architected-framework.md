@@ -120,9 +120,9 @@ Azure WAF focuses on optimizing cloud workloads around **Reliability, Security, 
 
 These are the exact links provided for this unit: 
 
-- [What is Power Platform Well-Architected? | Learn.Microsoft.com](/power-platform/well-architected/what-is-power-well-architected)
+- [What is Power Platform Well-Architected](/power-platform/well-architected/what-is-power-well-architected)
 
-- [Power Platform Well-Architected | Learn.Microsoft.com](/power-platform/well-architected/)
+- [Power Platform Well-Architected](/power-platform/well-architected/)
 
-- [What is the Azure Well-Architected Framework? | Learn.Microsoft.com](/azure/well-architected/what-is-well-architected-framework)
+- [What is the Azure Well-Architected Framework?](/azure/well-architected/what-is-well-architected-framework)
 

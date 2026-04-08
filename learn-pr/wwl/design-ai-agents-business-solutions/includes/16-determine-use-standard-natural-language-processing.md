@@ -100,6 +100,6 @@ Use generative orchestration when:
 
 ## References
 
-- NLU fine-tuned language intelligence for smarter conversations <https://www.microsoft.com/dynamics-365/blog/it-professional/2025/07/14/nlu-fine-tuned-language-intelligence-for-smarter-conversations>.
+- [NLU fine-tuned language intelligence for smarter conversations](https://www.microsoft.com/dynamics-365/blog/it-professional/2025/07/14/nlu-fine-tuned-language-intelligence-for-smarter-conversations)
 
-- Generative orchestration topic triggers in Copilot Studio <https://www.digitalbricks.ai/blog-posts/understanding-generative-orchestration-topic-triggers-in-copilot-studio>.
+- [Generative orchestration topic triggers in Copilot Studio](https://www.digitalbricks.ai/blog-posts/understanding-generative-orchestration-topic-triggers-in-copilot-studio)

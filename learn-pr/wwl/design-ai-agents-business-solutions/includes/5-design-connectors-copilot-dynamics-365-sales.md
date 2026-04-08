@@ -119,4 +119,4 @@ To make the connector available organization-wide, certify the connector and the
 
 ## References
 
-- Create a custom connector and connector action (preview) | [Microsoft Learn](/microsoft-sales-copilot/custom-connector-action)
+- [Create a custom connector and connector action (preview)](/microsoft-sales-copilot/custom-connector-action)

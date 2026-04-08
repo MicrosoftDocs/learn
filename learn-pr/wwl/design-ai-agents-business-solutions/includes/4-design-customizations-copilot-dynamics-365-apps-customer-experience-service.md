@@ -126,4 +126,4 @@ Integration ensures agents receive AI assistance where they need it most—witho
 
 Content for this unit's based on:
 
-- Customize Copilot in Dynamics 365 Sales | [Microsoft Learn](/dynamics365/sales/extend-copilot-chat)
+- [Customize Copilot in Dynamics 365 Sales](/dynamics365/sales/extend-copilot-chat)

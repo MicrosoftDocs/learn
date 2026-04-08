@@ -190,6 +190,6 @@ Role-specific service forms
 
 ## References
 
-- Configure Copilot in Dynamics 365 Customer Service - Microsoft Learn [Configure Copilot](/training/modules/configure-copilot/)
+- [Configure Copilot in Dynamics 365 Customer Service](/training/modules/configure-copilot/)
 
 - [Business processes glossary](/dynamics365/guidance/business-processes/glossary)

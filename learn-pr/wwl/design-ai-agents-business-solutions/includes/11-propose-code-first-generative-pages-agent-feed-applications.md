@@ -48,7 +48,7 @@ Even though generative pages reduce design time, many enterprise apps require de
 | Complex business rules | Implement logic not expressible through prompts alone |
 | Highly customized UI | Add PCF components, advanced layouts |
 | Cross-system integration | Build connectors, plugins, service calls |
-| Performance optimization | Finetune load patterns, caching, batching |
+| Performance optimization | Fine-tune load patterns, caching, batching |
 | Compliance and governance | Embed rules, validations, safe compute patterns |
 
 ## The role of an agent feed in apps
@@ -99,6 +99,6 @@ Together, they create intelligent, fast to build, enterprise-ready apps.
 
 Use these links for more detail and hands on practice:
 
-- **Introducing the new Power Apps generative experiences** <https://www.microsoft.com/power-platform/blog/power-apps/introducing-the-new-power-apps-generative-power-meets-enterprise-grade-trust/>
+- [Introducing the new Power Apps generative experiences](https://www.microsoft.com/power-platform/blog/power-apps/introducing-the-new-power-apps-generative-power-meets-enterprise-grade-trust/)
 
-- **Generative Pages FAQ (GitHub)** <https://github.com/MicrosoftDocs/powerapps-docs/blob/main/powerapps-docs/maker/common/faq-generative-pages-model-driven.md>
+- [Generative Pages FAQ (GitHub)](https://github.com/MicrosoftDocs/powerapps-docs/blob/main/powerapps-docs/maker/common/faq-generative-pages-model-driven.md)

@@ -115,4 +115,4 @@ Testing includes:
 
 ## References
 
-- [[Build an autonomous agent in Copilot Studio]](/training/modules/autonomous-agent/)
+- [Build an autonomous agent in Copilot Studio](/training/modules/autonomous-agent/)
