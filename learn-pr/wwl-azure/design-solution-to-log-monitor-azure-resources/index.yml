@@ -36,7 +36,6 @@ roles:
 products:
 - azure
 - azure-data-explorer
-- azure-log-analytics
 - azure-monitor
 subjects:
 - architecture
