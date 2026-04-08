@@ -8,6 +8,7 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 6
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
 content: |
   [!include[](includes/3-examine-spec-driven-development-principles-processes.md)]

@@ -8,6 +8,7 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 10
+  zone_pivot_groups: video-or-text
+durationInMinutes: 3
 content: |
   [!include[](includes/4-compare-spec-driven-development-other-methodologies.md)]
