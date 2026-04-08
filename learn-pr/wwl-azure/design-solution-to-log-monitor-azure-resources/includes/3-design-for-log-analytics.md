@@ -50,4 +50,4 @@ As you consider your options for implementing Azure Monitor Logs workspaces and 
 
 :::image type="content" source="../media/workspace-design-expanded.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
 
-All resources, monitoring solutions, and insights — including workspace-based Application Insights and VM insights — store their collected data directly in the IT organization's centralized Log Analytics workspace. Log data from supporting infrastructure and apps maintained by different teams is also directed to the centralized workspace.
+All resources, monitoring solutions, and insights — including workspace-based Application Insights and VM Insights — store their collected data directly in the IT organization's centralized Log Analytics workspace. Log data from supporting infrastructure and apps maintained by different teams is also directed to the centralized workspace.
