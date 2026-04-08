@@ -1,11 +1,11 @@
-## Learning objectives
+﻿## Learning objectives
 
 By the end of this unit, learners will be able to:
-- Identify key customization capabilities of Copilot in Dynamics 365 apps that enhance customer experience and service workflows.
-- Configure and adapt Copilot behavior—prompts, terminology, business data, and surface areas—to align with organizational support processes.
-- Evaluate how customizing Copilot improves service quality, agent efficiency, and customer outcomes.
+- Identify key customization capabilities of Copilot in Dynamics 365 apps that enhance customer experience and service workflows
+- Configure and adapt Copilot behavior—prompts, terminology, business data, and surface areas to align with organizational support processes
+- Evaluate how customizing Copilot improves service quality, agent efficiency, and customer outcomes
 
-## 1. Introduction
+## Introduction
 
 Copilot in Dynamics 365 brings AI-powered assistance into customer-facing and service operations. Customization ensures Copilot reflects your organization's vocabulary, service processes, data, and tone.
 
@@ -13,29 +13,29 @@ In Dynamics 365 Sales and Customer Service, Copilot helps:
 
 - Generate responses and summaries
 
-- Extract insights from customer records.
+- Extract insights from customer records
 
 - Suggest next actions
 
-- Assist agents during service interactions.
+- Assist agents during service interactions
 
-- Produce customized emails and follow-ups.
+- Produce customized emails and follow-ups
 
 To ensure Copilot delivers relevant, consistent, and trustworthy outputs, organizations must customize it to match their customer experience model.
 
-## 2. What customization enables
+## What customization enables
 
-Customization allows organizations to tune Copilot's behavior in four key areas:
+Customization allows organizations to tune Copilot's behavior in **four key areas**:
 
-**A. Business terms and domain language**
+### Business terms and domain language
 
 You can define or adjust:
 
 - Product and service names
 
-- Case categories and resolution types.
+- Case categories and resolution types
 
-- SLA tiers or internal service levels.
+- SLA tiers or internal service levels
 
 - Organizational roles and terminology
 
@@ -43,7 +43,7 @@ You can define or adjust:
 
 This ensures Copilot uses language that's both accurate and aligned with your service culture.
 
-**B. Prompt and output customization**
+### Prompt and output customization
 
 Copilot prompts shape how the AI generates:
 
@@ -61,19 +61,19 @@ Examples of customizable prompt elements:
 
 - Tone (professional, concise, empathetic)
 
-- Structure (bullet points, summary + next steps).
+- Structure (bullet points, summary + next steps)
 
-- Required fields Copilot must use.
+- Required fields Copilot must use
 
 - Sensitive terms to avoid
 
-**C. Data scope and field configuration**
+### Data scope and field configuration
 
 Copilot's insights depend on the data fields and entities administrators choose to include. You can configure:
 
-- Case fields included in summarization.
+- Case fields included in summarization
 
-- CRM entities Copilot can reference.
+- CRM entities Copilot can reference
 
 - Knowledge article sources
 
@@ -83,7 +83,7 @@ Copilot's insights depend on the data fields and entities administrators choose 
 
 This helps ensure the AI uses **relevant, approved, and up-to-date** customer and case information.
 
-**D. Surface integration within Dynamics 365**
+### Surface integration within Dynamics 365
 
 Copilot output can be surfaced in:
 
@@ -99,7 +99,7 @@ Copilot output can be surfaced in:
 
 Integration ensures agents receive AI assistance where they need it most—without interruption to their workflow.
 
-## 3. Chart: Customization areas and their impact
+## Chart: Customization areas and their impact
 
 | **Customization Area** | **Purpose** | **Impact on Customer Experience** |
 |---|---|---|
@@ -108,23 +108,22 @@ Integration ensures agents receive AI assistance where they need it most—witho
 | **Data Scope** | Defines what Copilot can reference | Produces relevant, context-aware insights |
 | **Surface Integration** | Determines where Copilot appears | Improves agent efficiency and reduces context switching |
 
-## 4. Best practices for customizing Copilot
+## Best practices for customizing Copilot
 
-**Start with agent workflows**—customize features that reduce friction in real scenarios.
+- **Start with agent workflows** - customize features that reduce friction in real scenarios.
 
-**Keep business terms consistent** across teams and departments.
+- **Keep business terms consistent** - across teams and departments.
 
-**Review Copilot outputs regularly** for tone, accuracy, and alignment with brand standards.
+- **Review Copilot outputs regularly** - for tone, accuracy, and alignment with brand standards.
 
-**Limit data scope** to necessary fields for better precision and reduced noise.
+- **Limit data scope** - to necessary fields for better precision and reduced noise.
 
-**Update prompts** as customer experience strategies evolve.
+- **Update prompts** - as customer experience strategies evolve.
 
-**Enable human oversight**—agents should always validate AI-generated content.
+- **Enable human oversight** - agents should always validate AI-generated content.
 
-## 5. References
+## References
 
 Content for this unit's based on:
 
-**Customize Copilot in Dynamics 365 Sales |** [**Microsoft Learn**](/dynamics365/sales/extend-copilot-chat).
-
+- Customize Copilot in Dynamics 365 Sales | [Microsoft Learn](/dynamics365/sales/extend-copilot-chat)

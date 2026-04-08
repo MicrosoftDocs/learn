@@ -1,142 +1,142 @@
-## Learning objectives
+﻿## Learning objectives
 
 By the end of this unit, learners will be able to:
-- Design a business process that incorporates AI-powered components into a Power Apps canvas app.
-- Identify where Copilot and AI capabilities fit within workflows, screens, and user interactions.
-- Apply Power Apps Copilot features to generate app logic, modify data structures, and create user-centric experiences using natural language.
-- Integrate AI assistance responsibly and securely following Microsoft guidelines.
+- Design a business process that incorporates AI-powered components into a Power Apps canvas app
+- Identify where Copilot and AI capabilities fit within workflows, screens, and user interactions
+- Apply Power Apps Copilot features to generate app logic, modify data structures, and create user-centric experiences using natural language
+- Integrate AI assistance responsibly and securely following Microsoft guidelines
 
-## 1. Introduction
+## Introduction
 
 AI-enabled apps help organizations streamline tasks, reduce manual data entry, and provide intelligent guidance directly inside user workflows. With **Power Apps Copilot**, makers can refine app logic, modify data tables, generate screens, and build business logic using natural language. 
 
 AI components may include:
 
-- AI-assisted data creation.
+- AI-assisted data creation
 
-- Copilot-driven field and screen generation.
+- Copilot-driven field and screen generation
 
-- AI-powered workflows.
+- AI-powered workflows
 
-- Embedded Copilot assistants inside apps.
+- Embedded Copilot assistants inside apps
 
-- Natural language search or help panels.
+- Natural language search or help panels
 
 This unit guides you through designing a business process and identifying where AI should be embedded to improve efficiency, quality, and user experience.
 
-## 2. Understand how Copilot supports business processes
+## Understand how Copilot supports business processes
 
-### 2.1 Copilot in Power Apps Studio
+### Copilot in Power Apps Studio
 
 Copilot allows makers to update app logic and data by describing changes in natural language. This improves design time and app quality by reducing manual configuration. 
 
 Examples include:
 
-- Adding new fields to a Dataverse table.
+- Adding new fields to a Dataverse table
 
-- Updating validation logic.
+- Updating validation logic
 
-- Generating screens from data.
+- Generating screens from data
 
-- Modifying relationships or business rules.
+- Modifying relationships or business rules
 
-- Creating new app experiences using conversational input.
+- Creating new app experiences using conversational input
 
-### 2.2 Copilot-driven business solutions and plans
+### Copilot-driven business solutions and plans
 
 Plans help you structure business processes before app building. Copilot interprets these plans and proposes best-fit app constructs such as:
 
-- Screens.
+- Screens
 
-- Entities.
+- Entities
 
-- Workflows.
+- Workflows
 
-- Data operations.
+- Data operations
 
-- App templates.
+- App templates
 
-## 3. Designing the business process with AI components
+## Designing the business process with AI components
 
 Use a structured method to determine where AI enhances the process.
 
-**Step 1: Map the current workflow**
+### Step 1: Map the current workflow
 
 Identify:
 
-- Actors (users, teams).
+- Actors (users, teams)
 
-- Inputs (forms, documents, data).
+- Inputs (forms, documents, data)
 
-- Typical decisions.
+- Typical decisions
 
-- Tasks requiring automation.
+- Tasks requiring automation
 
-- Error-prone steps.
+- Error-prone steps
 
-**Step 2: Identify AI opportunities**
+### Step 2: Identify AI opportunities
 
 AI is most valuable when:
 
-- Users perform repetitive updates.
+- Users perform repetitive updates
 
-- Data must be interpreted or summarized.
+- Data must be interpreted or summarized
 
-- Users need guidance or recommendations.
+- Users need guidance or recommendations
 
-- Natural language input accelerates workflows.
+- Natural language input accelerates workflows
 
-- Automation can replace multi-step manual processes.
+- Automation can replace multi-step manual processes
 
 Examples:
 
-- "Draft customer summary" using AI-generated text.
+- "Draft customer summary" using AI-generated text
 
-- Automatically creating records from uploaded files.
+- Automatically creating records from uploaded files
 
-- Guiding users through form entry using Copilot prompts.
+- Guiding users through form entry using Copilot prompts
 
-**Step 3: Design the Copilot interactions**
+### Step 3: Design the Copilot interactions
 
 Decide how Copilot will participate:
 
-- Chat-style assistant panel inside canvas app.
+- Chat-style assistant panel inside canvas app
 
-- Embedded suggestion bars.
+- Embedded suggestion bars
 
-- Auto-generated text or summaries.
+- Auto-generated text or summaries
 
-- Creation of new records using natural language.
+- Creation of new records using natural language
 
-- Error checking or validation recommendations.
+- Error checking or validation recommendations
 
-**Step 4: Integrate Copilot features in Power Apps Studio**
+### Step 4: Integrate Copilot features in Power Apps Studio
 
 Copilot can:
 
-- Generate screens from data.
+- Generate screens from data
 
-- Propose schema updates when your process changes.
+- Propose schema updates when your process changes
 
-- Build data tables based on natural language requirements.
+- Build data tables based on natural language requirements
 
-- Suggest queries or formulas.
+- Suggest queries or formulas
 
-- Support ongoing iteration through conversational changes.
+- Support ongoing iteration through conversational changes
 
-**Step 5: Validate security and governance**
+### Step 5: Validate security and governance
 
 Consider:
 
-- What data the AI can access.
+- What data the AI can access
 
-- What actions Copilot is permitted to perform.
+- What actions Copilot is permitted to perform
 
-- Data loss prevention (DLP) boundaries.
+- Data loss prevention (DLP) boundaries
 
-- Compliance with internal governance.
+- Compliance with internal governance
 
-## 4. Chart: Where to place AI in a business process
+## Chart: Where to place AI in a business process
 
 | **Business Process Step** | **AI Component to Add** | **Purpose** |
 |---|---|---|
@@ -147,11 +147,10 @@ Consider:
 | **Data Updates** | Natural language edit | Less manual configuration |
 | **Workflow Automation** | AI-initiated actions | Less repetition, fewer errors |
 
-
-## 5. References
+## References
 
 Use the following links as source material for deeper learning:
 
-- **Edit your app with Copilot in Power Apps Studio (preview)** [/power-apps/maker/canvas-apps/copilot-edit-app](/power-apps/maker/canvas-apps/copilot-edit-app).
+- **Edit your app with Copilot in Power Apps Studio (preview)** [/power-apps/maker/canvas-apps/copilot-edit-app](/power-apps/maker/canvas-apps/copilot-edit-app)
 
-- **Use plans to create a business solution with Copilot** [/power-apps/maker/canvas-apps/copilot-business-plans](/power-apps/maker/canvas-apps/copilot-business-plans).
+- **Use plans to create a business solution with Copilot** [/power-apps/maker/canvas-apps/copilot-business-plans](/power-apps/maker/canvas-apps/copilot-business-plans)

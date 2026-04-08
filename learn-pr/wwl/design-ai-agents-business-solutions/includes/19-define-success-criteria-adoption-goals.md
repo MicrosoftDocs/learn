@@ -1,12 +1,13 @@
-## Learning objectives
+﻿## Learning objectives
 
 By the end of this unit, learners will be able to:
-- Define success criteria for AI business solutions using measurable, outcome-driven metrics.
-- Establish adoption goals that align with organizational strategy and Cloud Adoption Framework guidance.
-- Apply structured planning practices to ensure responsible, scalable, and value-generating AI adoption.
-- Communicate success indicators to business and technical stakeholders.
 
-## 1. Introduction
+- Define success criteria for AI business solutions using measurable, outcome-driven metrics
+- Establish adoption goals that align with organizational strategy and Cloud Adoption Framework guidance
+- Apply structured planning practices to ensure responsible, scalable, and value-generating AI adoption
+- Communicate success indicators to business and technical stakeholders
+
+## Introduction
 
 Defining success criteria and adoption goals is foundational for any AI business solution. Without clarity about _what success looks like_, organizations risk deploying AI that does not achieve business outcomes, fails to gain user adoption, or introduces operational risk.
 
@@ -14,7 +15,7 @@ The **Cloud Adoption Framework for AI** emphasizes aligning AI initiatives to bu
 
 Success criteria guide **what outcomes** the AI solution should deliver. Adoption goals guide **how the organization will embrace and scale** those outcomes.
 
-## 2. Success criteria for AI business solutions
+## Success criteria for AI business solutions
 
 Success criteria must be:
 
@@ -28,112 +29,112 @@ Success criteria must be:
 
 - Feasible with available data and systems
 
-**Core success criteria categories**
+### Core success criteria categories
 
 | **Category** | **Description** | **Example Success Indicators** |
 |---|---|---|
 | **Business Value** | Quantifiable organizational benefit | Reduction in processing time by 40% |
 | **Operational Efficiency** | Improvement in workflows and automation | 30% fewer manual tasks in workflow |
 | **User Experience** | Enhanced productivity or satisfaction | 20% faster task completion |
-| **Quality & Accuracy** | Higher precision in decision makingmaking | AI recommendation accuracy ≥ 85% |
+| **Quality & Accuracy** | Higher precision in decision making | AI recommendation accuracy ≥ 85% |
 | **Risk & Compliance** | Responsible AI practices applied | 100% of outputs audited for governance |
 | **Scalability** | Ability to support future growth | AI handles 10k requests/day |
 
-## 3. Adoption goals for AI business solutions
+## Adoption goals for AI business solutions
 
 Adoption goals ensure the organization is ready for AI and its benefits are realized at scale.
 
 ### Key adoption areas
 
-#### A. Organizational readiness
+#### Organizational readiness
 
-- Leadership alignment.
+- Leadership alignment
 
-- AI literacy.
+- AI literacy
 
-- Change enablement programs.
+- Change enablement programs
 
-- Updated roles and workflows.
+- Updated roles and workflows
 
-#### B. Data readiness
+#### Data readiness
 
-- Data quality.
+- Data quality
 
-- Data availability.
+- Data availability
 
-- Governance and responsible AI compliance.
+- Governance and responsible AI compliance
 
-#### C. Technical readiness
+#### Technical readiness
 
-- Infrastructure for AI workloads.
+- Infrastructure for AI workloads
 
-- Integration with business systems.
+- Integration with business systems
 
-- Monitoring and lifecycle management.
+- Monitoring and lifecycle management
 
-#### D. User adoption
+#### User adoption
 
-- Clear value demonstration.
+- Clear value demonstration
 
-- Training and onboarding.
+- Training and onboarding
 
-- Feedback loops for continuous improvement.
+- Feedback loops for continuous improvement
 
-## 4. AI adoption planning (based on Cloud Adoption Framework)
+## AI adoption planning (based on Cloud Adoption Framework)
 
 The **Cloud Adoption Framework's AI Adoption Plan** emphasizes four pillars:
 
-### A. Establish business outcomes
+### Establish business outcomes
 
 Define "northstar" objectives linked to strategic goals:
 
-- Improve customer satisfaction.
+- Improve customer satisfaction
 
-- Reduce operating cost.
+- Reduce operating cost
 
-- Increase revenue or productivity.
+- Increase revenue or productivity
 
-- Accelerate decision making.
+- Accelerate decision making
 
-### B. Identify measurable AI scenarios
+### Identify measurable AI scenarios
 
 Select scenarios with high feasibility and high business impact.
 
 Examples:
 
-- Automating summarization of customer inquiries.
+- Automating summarization of customer inquiries
 
-- Predicting demand changes.
+- Predicting demand changes
 
-- Generating tailored customer communications.
+- Generating tailored customer communications
 
-### C. Assess AI feasibility
+### Assess AI feasibility
 
 Evaluate:
 
-- Data quality.
+- Data quality
 
-- Security requirements.
+- Security requirements
 
-- Skill readiness.
+- Skill readiness
 
-- Model appropriateness (predictive, generative, classification, etc.).
+- Model appropriateness (predictive, generative, classification, etc.)
 
-### D. Establish program governance
+### Establish program governance
 
 Governance ensures AI adoption is controlled, ethical, secure, and repeatable.
 
 Governance includes:
 
-- Responsible AI standards.
+- Responsible AI standards
 
-- Lifecycle management.
+- Lifecycle management
 
-- Metrics and monitoring.
+- Metrics and monitoring
 
-- Data protection guidelines.
+- Data protection guidelines
 
-## 9. Chart: Aligning success criteria to AI adoption goals
+## Chart: Aligning success criteria to AI adoption goals
 
 | **Success Criterion** | **Corresponding Adoption Goal** | **Example Action** |
 |---|---|---|
@@ -143,6 +144,6 @@ Governance includes:
 | **Compliance** | Enhance governance | Responsible AI reviews |
 
 
-## 10. References
+## References
 
-Use the following content links to explore the source material: [/azure/cloud-adoption-framework/scenarios/ai/plan](/azure/cloud-adoption-framework/scenarios/ai/plan)
+- Use the following content links to explore the source material: [/azure/cloud-adoption-framework/scenarios/ai/plan](/azure/cloud-adoption-framework/scenarios/ai/plan)

@@ -1,106 +1,106 @@
-## Learning objectives
+﻿## Learning objectives
 
 By the end of this unit, learners will be able to:
-- Identify the categories of Azure AI Foundry tools available for agent development and orchestration.
-- Match business or technical requirements to the correct tool in the Foundry tool catalog.
-- Recommend appropriate Foundry tools for building, grounding, extending, or operationalizing AI agents.
-- Evaluate constraints such as data access, API type, compute needs, and integration patterns.
+- Identify the categories of Azure AI Foundry tools available for agent development and orchestration
+- Match business or technical requirements to the correct tool in the Foundry tool catalog
+- Recommend appropriate Foundry tools for building, grounding, extending, or operationalizing AI agents
+- Evaluate constraints such as data access, API type, compute needs, and integration patterns
 
-## 1. Introduction
+## Introduction
 
 Azure AI Foundry provides a **catalog of tools** that agents can use to perform tasks such as retrieving data, calling APIs, grounding responses, orchestrating workflows, and triggering actions across applications.
 
 When designing an AI agent, selecting the correct tool is essential. The goal is to choose tools that:
 
-- **Meet the requirement with minimal complexity.**
+- **Meet the requirement with minimal complexity**
 
-- **Ensure security and compliance.**
+- **Ensure security and compliance**
 
-- **Leverage existing enterprise systems.**
+- **Leverage existing enterprise systems**
 
-- **Reduce integration overhead.**
+- **Reduce integration overhead**
 
-- **Support accurate, grounded outputs.**
+- **Support accurate, grounded outputs**
 
-## 2. Categories of Foundry tools
+## Categories of Foundry tools
 
 _Based on Azure AI Foundry tool catalog organization_.
 
 Azure AI Foundry tools fall into several functional categories commonly used when designing AI agents.
 
-### 2.1 Retrieval and grounding tools
+### Retrieval and grounding tools
 
-Used when the agent must **access enterprise knowledge** or **retrieve relevant documents**.Typical capabilities include:
+Used when the agent must **access enterprise knowledge** or **retrieve relevant documents**. Typical capabilities include:
 
-- Vector search.
+- Vector search
 
-- Hybrid (keyword + semantic) search.
+- Hybrid (keyword + semantic) search
 
-- Indexing structured or unstructured sources.
+- Indexing structured or unstructured sources
 
-- Querying enterprise knowledge bases.
+- Querying enterprise knowledge bases
 
-### 2.2 Data and application connectors
+### Data and application connectors
 
 Used when the agent must interact with business applications or databases:
 
-- CRM systems.
+- CRM systems
 
-- ERP or financial systems.
+- ERP or financial systems
 
-- Line-of-business appsofbusiness apps.
+- Line-of-business apps
 
-- SQL databases or Cosmos DB.
+- SQL databases or Cosmos DB
 
-- REST or Graph API endpoints.
+- REST or Graph API endpoints
 
-### 2.3 Workflow and action tools
+### Workflow and action tools
 
 Used to trigger **automated business actions**, such as:
 
-- Creating records.
+- Creating records
 
-- Updating cases.
+- Updating cases
 
-- Sending notifications.
+- Sending notifications
 
-- Triggering Power Automate flows.
+- Triggering Power Automate flows
 
-- Calling custom API operations.
+- Calling custom API operations
 
-### 2.4 Reasoning, planning, and execution tools
+### Reasoning, planning, and execution tools
 
 Used when the agent must:
 
-- Evaluate conditions.
+- Evaluate conditions
 
-- Break tasks into steps.
+- Break tasks into steps
 
-- Select the right action.
+- Select the right action
 
-- Handle branching logic.
+- Handle branching logic
 
-### 2.5 Specialized tools
+### Specialized tools
 
-Used for purpose specific capabilities:specific capabilities:
+Used for purpose-specific capabilities:
 
-- Document summarization.
+- Document summarization
 
-- Classification.
+- Classification
 
-- Custom ML model execution.
+- Custom ML model execution
 
-- Safe completion and validation toolscompletion and validation tools.
+- Safe completion and validation tools
 
-## 3. Proposing tools for requirements
+## Proposing tools for requirements
 
 Below are examples of how to map business requirements to the correct Foundry tools.
 
-### 3.1 Requirement type: Retrieve policies, guidelines, or knowledge
+### Requirement type: Retrieve policies, guidelines, or knowledge
 
 **Recommended Tools:**
 
-- **Retrieval tools** (vector search).
+- **Retrieval tools** (vector search)
 
 - **Hybrid search connectors**
 
@@ -108,17 +108,17 @@ Below are examples of how to map business requirements to the correct Foundry to
 
 **Why:** These tools ground an agent in enterprise knowledge while respecting security controls.
 
-### 3.2 Requirement type: Integrate with business systems (CRM, ERP, HR)
+### Requirement type: Integrate with business systems (CRM, ERP, HR)
 
 **Recommended Tools:**
 
-- **Native application connectors** (Dynamics, SAP, ServiceNow, custom APIs).
+- **Native application connectors** (Dynamics, SAP, ServiceNow, custom APIs)
 
 - **Custom REST/Graph API connectors**
 
 **Why:** Allow agents to read/write data in enterprise-approved systems.
 
-### 3.3 Requirement type: Execute multistep workflows
+### Requirement type: Execute multistep workflows
 
 **Recommended Tools:**
 
@@ -128,33 +128,33 @@ Below are examples of how to map business requirements to the correct Foundry to
 
 - **Custom action tools**
 
-**Why:** These tools let agents trigger actions reliably and repeatably.
+**Why:** These tools let agents trigger actions reliably and repeatedly.
 
-### 3.4 Requirement type: Analyze or transform data
+### Requirement type: Analyze or transform data
 
 **Recommended Tools:**
 
-- **Azure Functions** (lightweight compute tasks).
+- **Azure Functions** (lightweight compute tasks)
 
-- **ML model tools** (classification, extraction, scoring).
+- **ML model tools** (classification, extraction, scoring)
 
-- **Data transformation connectors**.
+- **Data transformation connectors**
 
 **Why:** They enable structured, controlled processing before returning results.
 
-### 3.5 Requirement type: Build advanced reasoning or task decomposition
+### Requirement type: Build advanced reasoning or task decomposition
 
 **Recommended Tools:**
 
 - **Planner / Reasoning tools**
 
-- **LLM based decision toolsbased decision tools**
+- **LLM-based decision tools**
 
 - **Context evaluators**
 
 **Why:** These tools help agents choose the right next step safely.
 
-## 4. Chart: Mapping requirements to Foundry tools
+## Chart: Mapping requirements to Foundry tools
 
 | **Requirement Type** | **Recommended Tool Category** | **Examples** |
 |---|---|---|
@@ -164,10 +164,10 @@ Below are examples of how to map business requirements to the correct Foundry to
 | Data processing | Compute Tools | Azure Functions, ML Tools |
 | Decision and planning | Reasoning Tools | Planner, rule evaluators |
 
-## 5. References
+## References
 
-(Use these for learner follow-up).
+(Use these for learner follow-up)
 
-Propose tools for Azure AI Foundry agents tool catalog[Azure AI Foundry tool catalog](/azure/ai-foundry/agents/concepts/tool-catalog).
+- [Azure AI Foundry tool catalog](/azure/ai-foundry/agents/concepts/tool-catalog)
 
-Azure AI Foundry Tools <https://azure.microsoft.com/products/ai-foundry/tools/>.
+- Azure AI Foundry Tools <https://azure.microsoft.com/products/ai-foundry/tools/>

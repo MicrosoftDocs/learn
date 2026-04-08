@@ -1,65 +1,65 @@
-## Learning objectives
+﻿## Learning objectives
 
 By the end of this unit, learners will be able to:
-- Design prompt-driven conversational agents using Copilot Studio topics, NLU boosting, system topics, conditions, and triggers.
-- Apply generative answering, conditional branching, and event-driven logic to build adaptive, context-aware agent responses.
-- Select and configure the appropriate mechanism — NLU Boost node, system topic, condition logic, or trigger — to produce reliable, grounded interactions.
+- Design prompt-driven conversational agents using Copilot Studio topics, NLU boosting, system topics, conditions, and triggers
+- Apply generative answering, conditional branching, and event-driven logic to build adaptive, context-aware agent responses
+- Select and configure the appropriate mechanism — NLU Boost node, system topic, condition logic, or trigger — to produce reliable, grounded interactions
 
-## 1. Overview of prompt and response agents
+## Overview of prompt and response agents
 
 Prompt and response agents in **Microsoft Copilot Studio** combine **natural language understanding (NLU)**, **topic-based logic**, and **event-driven behavior** to generate accurate answers and perform actions.
 
 Agents process:
 
-- **User prompts** → Identify intent.
+- **User prompts** → Identify intent
 
-- **Knowledge sources / topics** → Retrieve content.
+- **Knowledge sources / topics** → Retrieve content
 
-- **Conditions** → Shape the dialog flow.
+- **Conditions** → Shape the dialog flow
 
-- **Triggers** → Start actions from events instead of user queries.
+- **Triggers** → Start actions from events instead of user queries
 
 This modular architecture ensures flexibility and predictable results.
 
-## 2. NLU Boost & generative answers
+## NLU Boost & generative answers
 
-### 2.1 NLU Boost: Expanding understanding with generative answers
+### NLU Boost: Expanding understanding with generative answers
 
 The **Generative Answers (NLU Boost) node** allows agents to answer questions using content from internal or external knowledge sources.
 
 Agents can retrieve from:
 
-- Public websites.
+- Public websites
 
-- Dataverse documents.
+- Dataverse documents
 
-- SharePoint.
+- SharePoint
 
-- Enterprise connectors.
+- Enterprise connectors
 
-- Custom data flows.
+- Custom data flows
 
 If an agent **cannot match a topic**, it uses **generative answers as fallback** to respond based on available content.
 
-### 2.2 Customizing the response
+### Customizing the response
 
 Agents can store generated responses in variables, surface them on Adaptive Cards, and apply custom formatting before sending output to the user.
 
-## 3. Using system topics for core responses
+## Using system topics for core responses
 
 System topics are built-in capabilities that provide ready-made responses for common situations such as:
 
-- Greeting.
+- Greeting
 
-- Escalation.
+- Escalation
 
-- Fallback.
+- Fallback
 
-- End of conversation.
+- End of conversation
 
-- Multiple topics matched (disambiguation).
+- Multiple topics matched (disambiguation)
 
-- Error handling.
+- Error handling
 
 System topics provide core conversation scaffolding and trigger automatically based on user messages or events.
 
@@ -67,78 +67,77 @@ System topics provide core conversation scaffolding and trigger automatically ba
 
 They ensure:
 
-- Consistency.
+- Consistency
 
-- Predictable behavior.
+- Predictable behavior
 
-- Standardized user experiences.
+- Standardized user experiences
 
-- This allows designers to focus on advanced topics while relying on tested defaults.
+- This allows designers to focus on advanced topics while relying on tested defaults
 
-## 4. Designing conditional responses (condition nodes)
+## Designing conditional responses (condition nodes)
 
 Use **conditions** to shape dialog flow based on variables, values, and logic.
 
 Condition nodes allow branching using:
 
-- Comparisons.
+- Comparisons
 
-- Variables.
+- Variables
 
-- Operators (equals, greater than, blank, etc.).
+- Operators (equals, greater than, blank, etc.)
 
-- AND / OR logic.
+- AND / OR logic
 
-- Multiple branches (if, elseif, else).
+- Multiple branches (if, elseif, else)
 
 Conditions enable agents to adapt responses based on:
 
-- Customer type (VIP vs standard).
+- Customer type (VIP vs standard)
 
-- Form input.
+- Form input
 
-- Conversation context.
+- Conversation context
 
-- Previous user messages.
+- Previous user messages
 
-- Conditions also support **Power Fx formulas** when advanced logic is needed.
+- Conditions also support **Power Fx formulas** when advanced logic is needed
 
-## 5. Using event triggers for autonomous actions
+## Using event triggers for autonomous actions
 
-Event triggers enable agents to act **without waiting for a user prompt**:
+Event triggers enable agents to act **without waiting for a user prompt**.
 
 Examples include:
 
-- A file uploaded.
+- A file uploaded
 
-- A task completed.
+- A task completed
 
-- A Dataverse row added.
+- A Dataverse row added
 
-- A scheduled recurrence.
+- A scheduled recurrence
 
 Triggers send payloads to agents that include:
 
-- Data.
+- Data
 
-- Instructions.
+- Instructions
 
-- Execution context.
+- Execution context
 
 Triggers support fully autonomous agent workflows, such as:
 
-- Sending a summary.
+- Sending a summary
 
-- Starting a topic.
+- Starting a topic
 
-- Calling an action via connectors.
+- Calling an action via connectors
 
-- Updating records.
+- Updating records
 
-- Triggers must be explicitly authorized and may impact billing consumption.
+- Triggers must be explicitly authorized and may impact billing consumption
 
-
-## 6. Chart: When to use each mechanism
+## Chart: When to use each mechanism
 
 | **Mechanism** | **Use When** |
 |---|---|
@@ -147,14 +146,14 @@ Triggers support fully autonomous agent workflows, such as:
 | Condition Nodes | Branching dialog based on values or variables |
 | Event Triggers | Agent must react to events rather than user queries |
 
-## 7. References
+## References
 
 Use these links to access all source content for this unit:
 
-- [NLU boost node](/microsoft-copilot-studio/nlu-boost-node).
+- [NLU boost node](/microsoft-copilot-studio/nlu-boost-node)
 
-- [Authoring system topics](/microsoft-copilot-studio/authoring-system-topics).
+- [Authoring system topics](/microsoft-copilot-studio/authoring-system-topics)
 
-- [Authoring using conditions](/microsoft-copilot-studio/authoring-using-conditions).
+- [Authoring using conditions](/microsoft-copilot-studio/authoring-using-conditions)
 
-- [Authoring triggers about](/microsoft-copilot-studio/authoring-triggers-about).
+- [Authoring triggers about](/microsoft-copilot-studio/authoring-triggers-about)
