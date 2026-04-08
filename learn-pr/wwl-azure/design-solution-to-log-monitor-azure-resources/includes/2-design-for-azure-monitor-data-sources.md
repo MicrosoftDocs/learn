@@ -42,7 +42,7 @@ You reviewed how Azure Monitor uses Logs and Metrics. Now consider how to implem
 
    - **Custom logs (text and JSON)**. Information sent to text or JSON log files on a local disk, collected via AMA with a custom table schema defined in the DCR.
 
-- **Consider queries on Logs data**. Write log queries to analyze your collected data for Tailwind Traders. For more information about log queries, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
+- **Consider queries on Logs data**. Write log queries using Kusto Query Language (KQL) to analyze your collected data. KQL supports filtering, aggregation, joins, and time-series analysis.  For more information about log queries, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 
 - **Consider alerts based on Logs and Metrics data**. Set up alert rules based on Logs and Metrics data to be proactively notified about system issues. Use Azure Monitor's Recommended Alert Rules feature to enable best-practice alerts for your resources without manual rule authoring. Organize notifications using Action Groups. Use Alert Processing Rules to route, suppress, or modify alerts at scale. 
 
