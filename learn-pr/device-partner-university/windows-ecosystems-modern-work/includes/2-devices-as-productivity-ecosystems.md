@@ -6,7 +6,7 @@ Understanding devices as part of these larger systems helps organizations evalua
 
 A productivity ecosystem is the collection of services, tools, and capabilities that work together to support how people create, collaborate, and stay secure. While devices are essential, the ecosystem determines how effectively people can perform their jobs.
 
-:::image type="content" source="../media/device-security-layers.png" alt-text="A render of a device showing layered capabilities across hardware, operating system, applications, identity, privacy, and cloud services.":::
+:::image type="content" source="../media/device-security-layers.png" alt-text="Illustration of a device showing layered capabilities across hardware, operating system, applications, identity, privacy, and cloud services.":::
 
 A typical ecosystem includes:
 
