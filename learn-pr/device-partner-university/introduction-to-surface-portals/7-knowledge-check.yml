@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-portals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Surface Management and Support Portals" module.
+  ms.date: 04/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which condition must be met to access the Surface Management Portal?"
+    choices:
+        - content: "The device must have an active Microsoft 365 subscription"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that a Microsoft 365 subscription alone doesn't provide access to the Surface Management Portal."
+        - content: "At least one Surface device must be enrolled in Microsoft Intune"
+          isCorrect: true
+          explanation: "Correct. The module states that Surface Management Portal is available only when at least one Surface device is enrolled through Microsoft Intune."
+        - content: "The device must be registered in the Microsoft 365 admin center"
+          isCorrect: false
+          explanation: "Incorrect. Registering a device in the Microsoft 365 admin center isn't listed as a requirement for accessing Surface Management Portal."
+        - content: "A support request must already exist for the device"
+          isCorrect: false
+          explanation: "Incorrect. Accessing Surface Management Portal doesn't depend on having an existing support request."
+  - content: "Which portal allows administrators to create service requests for Surface devices that aren't enrolled in Intune?"
+    choices:
+        - content: "Surface Management Portal"
+          isCorrect: false
+          explanation: "Incorrect. The module states that Surface Management Portal is designed for Intune-enrolled Surface devices."
+        - content: "Microsoft Intune Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. While Surface Management Portal is accessed through it, the Intune Admin Center doesn't handle service requests for devices not enrolled in Intune."
+        - content: "Surface Support Portal"
+          isCorrect: true
+          explanation: "Correct. The module explains that Surface Support Portal supports service and repair requests even when devices aren't enrolled in Intune."
+        - content: "Microsoft Intune Company Portal"
+          isCorrect: false
+          explanation: "Incorrect. The Company Portal isn't described as a tool for submitting Surface service or support requests."
+  - content: "Where is the Surface Support Portal accessed?"
+    choices:
+        - content: "Microsoft Intune Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. The module specifies this admin center is used to access Surface Management Portal."
+        - content: "Microsoft 365 admin center"
+          isCorrect: true
+          explanation: "Correct. The module explicitly states that Surface Support Portal is accessed through the Microsoft 365 admin center."
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. Windows Admin Center isn't mentioned as a way to access Surface Support Portal."
+        - content: "Azure portal"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't describe Azure portal as an access point for Surface support or management."
+  - content: "Which task should an IT administrator start in Surface Management Portal?"
+    choices:
+        - content: "Tracking the shipping status of a repair request"
+          isCorrect: false
+          explanation: "Incorrect. The module associates tracking shipping and service status with Surface Support Portal."
+        - content: "Downloading shipping labels for a replacement device"
+          isCorrect: false
+          explanation: "Incorrect. Shipping labels and repair logistics are described as Surface Support Portal tasks."
+        - content: "Reviewing the health of an Intune-enrolled Surface device"
+          isCorrect: true
+          explanation: "Correct. The module states that reviewing device health and compliance for Intune-enrolled devices is a key use case for Surface Management Portal."
+        - content: "Submitting a repair request for a device not enrolled in Intune"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that service requests for non-Intune devices start in Surface Support Portal."
+  - content: "Which portal is the primary hub for tracking Surface service requests end-to-end?"
+    choices:
+        - content: "Surface Management Portal"
+          isCorrect: false
+          explanation: "Incorrect. The module focuses this portal on device management and insights rather than full service request tracking."
+        - content: "Microsoft Intune Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. While it hosts Surface Management Portal, it isn't described as the hub for tracking service requests."
+        - content: "Surface Support Portal"
+          isCorrect: true
+          explanation: "Correct. The module describes Surface Support Portal as providing end-to-end visibility into service and support requests, including status, shipping, and repair history."
+        - content: "Microsoft Defender portal"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Defender portal isn't mentioned as part of Surface service or repair workflows."
