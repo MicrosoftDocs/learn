@@ -43,8 +43,8 @@ units:
   - learn.dpu.security-management-education.security-foundation
   - learn.dpu.security-management-education.deep-dive
   - learn.dpu.security-management-education.manage-devices
-  - learn.dpu.security-management-education.customer-scenario-hed
-  - learn.dpu.security-management-education.customer-scenario-k12
+  - learn.dpu.security-management-education.customer-scenario-higher-education
+  - learn.dpu.security-management-education.customer-scenario-kindergarten-12
   - learn.dpu.security-management-education.knowledge-check
   - learn.dpu.security-management-education.summary
 badge:
