@@ -106,7 +106,7 @@ Your training program should teach users:
 
 ### How AI interprets prompts
 
-- AI does not infer intent
+- AI doesn't infer intent
 
 - Clarity and specificity matter
 

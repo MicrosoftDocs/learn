@@ -1,6 +1,6 @@
 ## Unit overview
 
-This unit equips solution architects with expert-level skills to analyze, map, and design high-value business use cases for **prebuilt Microsoft 365 Copilot agents**. Prebuilt agents accelerate productivity by streamlining routine tasks, enabling fast information retrieval, and providing structured guidance across business processes. Prebuilt agents deliver value quickly because they do not require custom development, yet remain customizable through organizational knowledge and configured behaviors.
+This unit equips solution architects with expert-level skills to analyze, map, and design high-value business use cases for **prebuilt Microsoft 365 Copilot agents**. Prebuilt agents accelerate productivity by streamlining routine tasks, enabling fast information retrieval, and providing structured guidance across business processes. Prebuilt agents deliver value quickly because they don't require custom development, yet remain customizable through organizational knowledge and configured behaviors.
 
 This unit synthesizes foundational principles of AI agents, core use case patterns, and applied scenario mapping techniques used by architects to translate business needs into effective agent-powered solutions.
 

@@ -2,7 +2,7 @@
 
 This unit equips solution architects with the expert-level skills needed to determine when organizations should invest in building **custom AI models**, instead of relying on prebuilt or catalog models available through platforms such as **Microsoft 365 Copilot**, **Microsoft Foundry**, or **Azure OpenAI model catalog**.
 
-You'll evaluate business, technical, operational, and cost-efficiency drivers required to justify custom model development.
+You evaluate business, technical, operational, and cost-efficiency drivers required to justify custom model development.
 
 ## Understanding the decision landscape
 
@@ -10,11 +10,11 @@ Choosing whether to build a custom model is a strategic decision with major impl
 
 In general, organizations should create custom AI models only when:
 
-- The business problem cannot be solved accurately with existing pre-trained or fine-tuned model
+- The business problem can't be solved accurately with existing pretrained or fine-tuned model
 
 - **Domain specificity**, **sensitive workflows**, or **high-impact decisioning** demands deeper customization
 
-- **Model behavior must be highly predictable or governed**, and prebuilt models cannot meet compliance thresholds
+- **Model behavior must be highly predictable or governed**, and prebuilt models can't meet compliance thresholds
 
 - **ROI modeling** confirms long-term efficiency gains that outweigh higher upfront engineering cost
 
@@ -34,11 +34,11 @@ Prebuilt or catalog models fit well when:
 
 - The agent interacts primarily with **enterprise knowledge sources**, not highly specialized reasoning tasks
 
-- The domain data is **not complex** or does not require deep contextual understanding
+- The domain data is **not complex** or doesn't require deep contextual understanding
 
 - **Time-to-value** is a priority
 
-- Teams want **low-cost**, low-risk deployment
+- A team wants **low-cost**, low-risk deployment
 
 ### Examples
 
@@ -60,7 +60,7 @@ A custom model is recommended in the following situations.
 
 ### Domain-specific intelligence is required
 
-If the system must understand organization-specific language, terminology, processes, or industry technical vocabulary, a pre-trained model may lack the accuracy needed.
+If the system must understand organization-specific language, terminology, processes, or industry technical vocabulary, a pretrained model may lack the accuracy needed.
 
 #### Indicators
 
@@ -134,7 +134,7 @@ Custom models are cost-effective when:
 
 - Performance gains will directly translate to revenue lift or efficiency gain
 
-This aligns with Azure training on **cost-efficiency decision-making**.
+This data aligns with Azure training on **cost-efficiency decision-making**.
 
 ### Multi-agent systems requiring custom reasoning
 
@@ -168,7 +168,7 @@ Custom model development requires:
 
 - Access to skilled data scientists and MLOps engineers
 
-If these requirements are not yet met, extending Microsoft 365 Copilot is often the better starting point.
+If these requirements aren't yet met, extending Microsoft 365 Copilot is often the better starting point.
 
 ## Architecture decision framework (text-based visual)
 

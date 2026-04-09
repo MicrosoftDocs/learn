@@ -16,7 +16,7 @@ By the end of this unit, learners will be able to:
 
 ## Understanding prompt engineering in business solutions
 
-Prompt engineering is the deliberate design of instructions that guide AI models to produce reliable outputs. Because AI systems do not understand intent, they rely entirely on the clarity, structure, and context provided in a prompt.
+Prompt engineering is the deliberate design of instructions that guide AI models to produce reliable outputs. Because AI systems don't understand intent, they rely entirely on the clarity, structure, and context provided in a prompt.
 
 In business environments, effective prompt engineering ensures:
 

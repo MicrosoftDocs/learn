@@ -27,35 +27,35 @@ By the end of this unit, learners will be able to:
 
 Design multi-agent systems by **assigning the right platform to each role**:
 
-- **Microsoft 365 Copilot (SaaS)** — Domain agents embedded in Microsoft 365 experiences (for example, summarization, drafting, scheduling) or . Use to **activate immediate value** where capabilities fit the task, accepting limited customization. 
+- **Microsoft 365 Copilot (SaaS)**—Domain agents embedded in Microsoft 365 experiences (for example, summarization, drafting, scheduling) or . Use to **activate immediate value** where capabilities fit the task, accepting limited customization. 
 
-- **Copilot Studio (low-code SaaS)** — Rapidly build **task and retrieval** agents with prebuilt connectors and guardrails; ideal for business-led processes, moderate customization, and quick iteration. 
+- **Copilot Studio (low-code SaaS)**—Rapidly build **task and retrieval** agents with prebuilt connectors and guardrails; ideal for business-led processes, moderate customization, and quick iteration. 
 
-- **Microsoft Foundry (pro-code)** — Build **connected agents** and sophisticated **multi-agent** workflows with deeper control over orchestration, tools, and runtime; best for strategic, high-integration scenarios
+- **Microsoft Foundry (pro-code)**—Build **connected agents** and sophisticated **multi-agent** workflows with deeper control over orchestration, tools, and runtime; best for strategic, high-integration scenarios
 
-- **Design guidance:** Start with SaaS agents where they meet functional requirements; introduce **Copilot Studio** for tailored workflows; escalate to **Foundry** for complex orchestration, custom tools, and code-first agents
+- **Design guidance:**—Start with SaaS agents where they meet functional requirements; introduce **Copilot Studio** for tailored workflows; escalate to **Foundry** for complex orchestration, custom tools, and code-first agents
 
 ## Orchestration patterns with the Microsoft Agent Framework
 
 When agents collaborate, adopt **explicit orchestration** rather than ad hoc chaining. The **Microsoft Agent Framework SDK** provides patterns you can mix and match: 
 
-**Sequential orchestration** — Deterministic pipeline for staged tasks (plan → enrich → verify → act). For more information, see [Sequential orchestration](/agent-framework/user-guide/workflows/orchestrations/sequential?pivots=programming-language-csharp).
+**Sequential orchestration**—Deterministic pipeline for staged tasks (plan → enrich → verify → act). For more information, see [Sequential orchestration](/agent-framework/user-guide/workflows/orchestrations/sequential?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/input-flow-chart.png" alt-text="Diagram of sequential orchestration showing a deterministic pipeline where tasks flow from one agent to the next in order.":::
 
-**Concurrent orchestration** — Parallel agents tackle independent subtasks; aggregate and reconcile results. For more information, see [Concurrent orchestration](/agent-framework/user-guide/workflows/orchestrations/concurrent?pivots=programming-language-csharp).
+**Concurrent orchestration**—Parallel agents tackle independent subtasks; aggregate and reconcile results. For more information, see [Concurrent orchestration](/agent-framework/user-guide/workflows/orchestrations/concurrent?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/concurrent-orchestration.png" alt-text="Diagram of concurrent orchestration showing parallel agents handling independent subtasks simultaneously before aggregating results.":::
 
-**Group chat orchestration** — A mediated conversation where agents contribute proposals and a moderator agent arbitrates. For more information, see [Group chat orchestration](/agent-framework/user-guide/workflows/orchestrations/group-chat?pivots=programming-language-csharp).
+**Group chat orchestration**—A mediated conversation where agents contribute proposals and a moderator agent arbitrates. For more information, see [Group chat orchestration](/agent-framework/user-guide/workflows/orchestrations/group-chat?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/group-chat-orchestration.png" alt-text="Diagram of group chat orchestration showing multiple agents contributing proposals in a mediated conversation with a moderator agent.":::
 
-**Handoff orchestration** — Transfer context and control to a specialist agent (or a human) when a threshold or rule triggers escalation. For more information, see [Handoff orchestration](/agent-framework/user-guide/workflows/orchestrations/handoff?pivots=programming-language-csharp).
+**Handoff orchestration**—Transfer context and control to a specialist agent (or a human) when a threshold or rule triggers escalation. For more information, see [Handoff orchestration](/agent-framework/user-guide/workflows/orchestrations/handoff?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/handoff-orchestration.png" alt-text="Diagram of handoff orchestration showing context and control transferring from one agent to a specialist agent or human when an escalation threshold is reached.":::
 
-**Magentic orchestration** — Pattern for dynamic specialization where a "magnet" pulls in the right expert agents at runtime. For more information, see [Magentic orchestration](/agent-framework/user-guide/workflows/orchestrations/magentic?pivots=programming-language-csharp).
+**Magentic orchestration**—Pattern for dynamic specialization where a "magnet" pulls in the right expert agents at runtime. For more information, see [Magentic orchestration](/agent-framework/user-guide/workflows/orchestrations/magentic?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/magnetic-orchestration.png" alt-text="Diagram of Magentic orchestration showing a central orchestrator dynamically pulling in specialized expert agents at runtime based on task requirements.":::
 
@@ -99,7 +99,7 @@ A robust multi-agent solution in **Foundry** follows these steps:
 |---|---|---|---|
 | **Domain assistant (productivity)** | Microsoft 365 Copilot | Immediate value inflow of work | Handoff / group chat |
 | **Business workflow agent** | Copilot Studio | Rapid iteration, connectors, guardrails | Sequential / handoff |
-| **Integration/orchestration agent** | Foundry | Pro-code tools, complex flows, custom evals | Concurrent / sequential / Magentic |
+| **Integration/orchestration agent** | Foundry | Pro-code tools, complex flows, custom evaluations | Concurrent / sequential / Magentic |
 
 ## Security, governance, and operability considerations
 
@@ -115,7 +115,7 @@ A robust multi-agent solution in **Foundry** follows these steps:
 
 - Instrument **handoff latency, tool failure rate, and decision quality**; log messages and artifacts for audits.
 
-### Rollback & human-in-the-loop
+### Roll back & human-in-the-loop
 
 - Gate high-risk actions with approvals; design "break-glass" paths.
 

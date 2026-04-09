@@ -36,7 +36,7 @@ Extensions typically include:
 
 Build custom agents when:
 
-- You need specialized workflows that Copilot cannot handle
+- You need specialized workflows that Copilot can't handle
 
 - Your scenario requires custom reasoning patterns, multi-step logic, or orchestration
 

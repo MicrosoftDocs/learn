@@ -136,7 +136,7 @@ These personas collectively ensure that AI workloads are secure, high-performing
 
 ## Additional roles and considerations
 
-The above list of roles are not comprehensive and will vary greatly from organization to organization. The roles may be specialized and further broken out or consolidated depending on the size of an organization or project. It's highly recommended to conduct activities such as a role-mapping workshop, gap analysis exercise, and a RACI building activity to turn the list of roles into a practical and sustainable framework for the organizations. 
+The above list of roles aren't comprehensive and will vary greatly from organization to organization. The roles may be specialized and further broken out or consolidated depending on the size of an organization or project. It's highly recommended to conduct activities such as a role-mapping workshop, gap analysis exercise, and a RACI building activity to turn the list of roles into a practical and sustainable framework for the organizations. 
 
 Additional roles not listed may be discovered such as the below for example:
 

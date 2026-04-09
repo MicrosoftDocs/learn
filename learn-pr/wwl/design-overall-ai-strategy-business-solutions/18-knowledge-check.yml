@@ -18,13 +18,13 @@ quiz:
     choices:
     - content: "Start connecting every line-of-business system to a new agent"
       isCorrect: false
-      explanation: "Incorrect. This step does not address governance and security, which are critical to avoiding agent sprawl and security drift."
+      explanation: "Incorrect. This step doesn't address governance and security, which are critical to avoiding agent sprawl and security drift."
     - content: "Define and enforce agent governance (roles, policies, development process) across teams"
       isCorrect: true
       explanation: "Correct. According to the module, CAF foundations should transition directly into governance and security for agents, with clear policies and process gates. This step ensures that agent development is controlled and aligned with organizational standards, reducing risks such as sprawl and security gaps."
-    - content: "Purchase additional GPU capacity"
+    - content: "Purchase more GPU capacity"
       isCorrect: false
-      explanation: "Incorrect. While GPU capacity may be important for agent performance, it does not address governance or security concerns."
+      explanation: "Incorrect. While GPU capacity may be important for agent performance, it doesn't address governance or security concerns."
     - content: "Skip to production and monitor later"
       isCorrect: false
       explanation: "Incorrect. Skipping governance and security steps increases the risk of agent sprawl and security drift."
@@ -32,27 +32,27 @@ quiz:
     choices:
     - content: "The availability of GPU clusters"
       isCorrect: false
-      explanation: "Incorrect. GPU availability is not the primary consideration when deciding between SaaS and custom agents."
+      explanation: "Incorrect. GPU availability isn't the primary consideration when deciding between SaaS and custom agents."
     - content: "Whether a SaaS agent meets functional requirements"
       isCorrect: true
       explanation: "Correct. The source material emphasizes a 'SaaS agent first' principle, where architects should begin by determining if a SaaS agent meets the functional requirements. If it does, it should be adopted to maximize value and minimize unnecessary customization efforts."
     - content: "The number of developers on the project"
       isCorrect: false
-      explanation: "Incorrect. The number of developers is not the primary factor in deciding between SaaS and custom agents."
+      explanation: "Incorrect. The number of developers isn't the primary factor in deciding between SaaS and custom agents."
     - content: "The preferred programming language"
       isCorrect: false
-      explanation: "Incorrect. Programming language preference is not the primary consideration when choosing between SaaS and custom agents."
+      explanation: "Incorrect. Programming language preference isn't the primary consideration when choosing between SaaS and custom agents."
   - content: "You're designing a solution that must handle confidential finance data and public product data, with different teams owning each and separate release cycles. Which architecture is most appropriate to start with?"
     choices:
     - content: "Single agent with broad permissions"
       isCorrect: false
-      explanation: "Incorrect. A single agent with broad permissions does not enforce separation of concerns or align with governance requirements."
+      explanation: "Incorrect. A single agent with broad permissions doesn't enforce separation of concerns or align with governance requirements."
     - content: "Multi-agent with isolated permissions and explicit interfaces"
       isCorrect: true
-      explanation: "Correct. The module advises that when solutions cross security or compliance boundaries and involve distinct team ownership, a modular multi-agent design with isolated permissions and explicit interfaces is preferred. This approach enforces separation of concerns and aligns with governance requirements."
+      explanation: "Correct. The module advises that when solutions cross security or compliance boundaries and involve distinct team ownership, a modular multi-agent design with isolated permissions (and explicit interfaces) is preferred. This approach enforces separation of concerns and aligns with governance requirements."
     - content: "Single agent using persona switching"
       isCorrect: false
-      explanation: "Incorrect. Persona switching does not provide the necessary separation of permissions and governance for handling confidential and public data."
+      explanation: "Incorrect. Persona switching doesn't provide the necessary separation of permissions and governance for handling confidential and public data."
     - content: "Single agent with larger context windows"
       isCorrect: false
-      explanation: "Incorrect. Larger context windows do not address the need for isolated permissions and explicit interfaces."
+      explanation: "Incorrect. Larger context windows don't address the need for isolated permissions and explicit interfaces."
