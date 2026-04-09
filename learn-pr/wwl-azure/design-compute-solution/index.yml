@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design an Azure compute solution
 summary: Azure Architects design and recommend Azure compute solutions.
 abstract: |
