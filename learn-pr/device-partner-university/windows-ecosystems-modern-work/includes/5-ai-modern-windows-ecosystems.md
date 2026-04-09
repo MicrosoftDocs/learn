@@ -11,9 +11,9 @@ Examples of AI integration include:
 - Intelligent recommendations in Windows Search and system settings  
 - Language, meeting, and summarization features through Microsoft 365 Copilot  
 - Real-time audio and video improvements such as background noise reduction and eye-contact correction  
-- AI-assisted creativity tools such as Cocreator in Paint or layout suggestions in PowerPoint  
+- AI-assisted creativity tools such as Cocreator in Paint or lay out suggestions in PowerPoint  
 
-Because these capabilities are integrated across the OS and productivity stack, employees benefit from AI with minimal disruption to familiar workflows. This helps drive adoption and ensures AI enhances productivity without introducing additional complexity.
+Because these capabilities are integrated across the OS and productivity stack, employees benefit from AI with minimal disruption to familiar workflows. This helps drive adoption and ensures AI enhances productivity without introducing extra complexity.
 
 ## Hybrid AI in the Windows ecosystem
 
@@ -31,7 +31,7 @@ On-device AI can enhance features such as live captions, background effects, and
 
 ## Cloud-based AI
 
-Cloud-based AI enables more advanced capabilities by leveraging large-scale models and organizational context. Windows ecosystems integrate cloud AI through Microsoft 365 and Azure services.
+Cloud-based AI enables more advanced capabilities by applying large-scale models and organizational context. Windows ecosystems integrate cloud AI through Microsoft 365 and Azure services.
 
 Cloud-based AI supports:
 
@@ -43,7 +43,7 @@ This flexibility allows organizations to adopt AI capabilities based on their op
 
 Some organizations also use development platforms such as [Microsoft Foundry on Windows](/windows/ai/overview) to build and deploy AI models across cloud and local environments. These approaches support hybrid AI scenarios, where models run in the cloud for scale and on devices for responsiveness, privacy, and efficiency.
 
-:::image type="content" source="../media/hybrid-ai-windows-ecosystem.svg" alt-text="Diagram showing hybrid AI across cloud AI, hybrid AI, and on-device AI within Windows ecosystems.":::
+:::image type="content" source="../media/hybrid-ai-windows-ecosystem.svg" alt-text="Diagram showing hybrid AI across cloud AI, hybrid AI, and on-device AI within Windows ecosystems." lightbox="../media/hybrid-ai-windows-ecosystem.svg":::
 
 ### Hybrid AI capabilities
 
@@ -75,7 +75,7 @@ This integrated approach helps organizations adopt AI across workflows without r
 
 ## Long-term platform value
 
-AI adoption is not a one-time decision. Organizations benefit from platforms that can evolve alongside new AI capabilities. Windows ecosystems align AI development across hardware, the operating system, Microsoft 365, and cloud services.
+AI adoption isn't a one-time decision. Organizations benefit from platforms that can evolve alongside new AI capabilities. Windows ecosystems align AI development across hardware, the operating system, Microsoft 365, and cloud services.
 
 This alignment enables:
 
@@ -90,7 +90,7 @@ By integrating AI into the broader platform ecosystem, organizations can adopt n
 
 AI capabilities are most effective when integrated into existing workflows and governed through familiar management and security tools. Windows ecosystems support this approach by combining device-level intelligence, cloud-based AI, and enterprise governance into a unified platform.
 
-By integrating AI across the operating system, hardware, and cloud services, organizations can adopt new capabilities without introducing additional complexity or disrupting existing workflows.
+By integrating AI across the operating system, hardware, and cloud services, organizations can adopt new capabilities without introducing more complexity or disrupting existing workflows.
 
 ## What this means for modern organizations
 

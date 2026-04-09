@@ -56,7 +56,7 @@ Here's how Windows ecosystem design translates to practice:
 
 - **Broad hardware choice:** Organizations can select devices based on roles, performance needs, budget, and durability  
 - **Identity at the platform level:** Microsoft Entra ID integrates deeply into authentication, conditional access, and security posture  
-- **Integrated management:** Intune and Autopilot provide consistent, cloud-ready provisioning across diverse hardware fleets  
+- **Integrated management:** Intune and Autopilot provides consistent, cloud-ready provisioning across diverse hardware fleets  
 - **Enterprise security model:** Hardware-rooted protections, OS safeguards, and Defender intelligence work together as a unified threat posture  
 - **Ecosystem-wide AI:** Windows supports hybrid AI with local NPUs and cloud AI through Microsoft 365 Copilot and Windows experiences  
 
@@ -73,7 +73,7 @@ to
 
 | Evaluation area            | Why it matters                           | Windows ecosystem alignment                       |
 | -------------------------- | ---------------------------------------- | ------------------------------------------------- |
-| **Identity integration**   | Core to secure access and governance     | Entra ID deeply integrated at OS and cloud layers |
+| **Identity integration**   | Core to secure access and governance     | Microsoft Entra ID deeply integrated at OS and cloud layers |
 | **App compatibility**      | Minimizes disruption and workflow gaps   | Extensive backward and forward compatibility      |
 | **Management consistency** | Ensures predictable IT operations        | Microsoft Intune + Windows Autopilot unify device lifecycle         |
 | **Security posture**       | Protects data, users, and infrastructure | Hardware-rooted, OS-level, and cloud protection   |
@@ -107,4 +107,4 @@ Understanding platforms through an ecosystem lens helps organizations move beyon
 > [!TIP]
 > An ecosystem-based evaluation helps surface platform strengths that aren’t visible when comparing devices in isolation.
 
-Now that you understand how productivity ecosystems shape platform decisions, the next unit explores how flexibility, integration, and workflow support directly influence the way teams collaborate — and why these factors often become key drivers in choosing a platform.
+Now that you understand how productivity ecosystems shape platform decisions, the next unit explores how flexibility, integration, and workflow support directly influence the way teams collaborate—and why these factors often become key drivers in choosing a platform.
