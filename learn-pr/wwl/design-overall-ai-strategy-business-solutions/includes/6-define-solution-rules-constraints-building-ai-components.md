@@ -48,7 +48,7 @@ Foundry supports **pro-code, high-complexity AI applications** and multi-agent s
 
 - Requires explicit governance for tools, models, and memory
 
-- Supports hosted agents, declarative agents, and tooldriven architectures
+- Supports hosted agents, declarative agents, and tool-driven architectures
 
 - Increased responsibility for model selection, risk mitigation, and evaluation
 
@@ -90,7 +90,7 @@ Foundry Tools include model catalogs, tool APIs, agent orchestration frameworks,
 
 ### Data access rules
 
-Solution architects must define explicit guardrails around data to avoid overexposure or unintended model hallucination.
+Solution architects must define explicit guardrails around data to avoid overexposure or unintended incorrect information from the model.
 
 #### Rules
 
@@ -108,7 +108,7 @@ Solution architects must define explicit guardrails around data to avoid overexp
 
 - Define memory policy (ephemeral vs. persistent)
 
-- Restrict crossdomain data access (HR, Finance, Legal)
+- Restrict cross-domain data access (HR, Finance, Legal)
 
 #### Compliance and regulatory constraints
 
@@ -140,7 +140,7 @@ Define what an agent is _allowed_ and _not allowed_ to do.
 
 - Mandate use of bias and safety evaluation pipelines
 
-- Apply strict instructions for citing sources, representing facts, and avoiding hallucination
+- Apply strict instructions for citing sources, representing facts, and avoiding incorrect information
 
 - Require human-in-the-loop checkpoints for high-impact actions
 
@@ -152,7 +152,7 @@ Define what an agent is _allowed_ and _not allowed_ to do.
 
 - Foundry: Requires architected deployment environment (VNet, private endpoints, region constraints)
 
-Microsoft 365 Copilot: Operates inside Microsoft 365 tenant boundary; operates within the company tenant.
+- Microsoft 365 Copilot: Operates inside Microsoft 365 tenant boundary; operates within the company tenant.
 
 - Ensure separation of development, testing, and production with dedicated configurations
 
@@ -184,20 +184,8 @@ Solution architects must define a **single set of rules**, then apply them diffe
 | **Risk Level** | Low-medium | Medium-high |
 | **Evaluation** | Built-in safety | Requires evaluation pipelines |
 
-### Solution constraint pyramid
-
-**Top:** Behavioral rules
-
-**Middle:** Data and tool constraints
-
-**Base:** Environment, governance, and operational guardrails
-
-### Multi-platform governance flow
-
-User Request → Copilot Studio Agent → Escalation Rules → Foundry Orchestrated Agents → Verification Pipeline → Output
-
 ## References
 
-- Integrating Azure AI Foundry with Copilot Studio — a strategic and technical overview. [https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/integrating-azure-ai-foundry-with-copilot-studio-a-strategic-and-technical-overv/4457370](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/integrating-azure-ai-foundry-with-copilot-studio-a-strategic-and-technical-overv/4457370)
+- [Integrating Azure AI Foundry with Copilot Studio — a strategic and technical overview](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/integrating-azure-ai-foundry-with-copilot-studio-a-strategic-and-technical-overv/4457370)
 
-- Microsoft Copilot Studio vs. Microsoft Foundry — building AI agents and apps. [https://techcommunity.microsoft.com/blog/microsoft-security-blog/microsoft-copilot-studio-vs-microsoft-foundry-building-ai-agents-and-apps/4483160](https://techcommunity.microsoft.com/blog/microsoft-security-blog/microsoft-copilot-studio-vs-microsoft-foundry-building-ai-agents-and-apps/4483160)
+- [Microsoft Copilot Studio vs. Microsoft Foundry — building AI agents and apps](https://techcommunity.microsoft.com/blog/microsoft-security-blog/microsoft-copilot-studio-vs-microsoft-foundry-building-ai-agents-and-apps/4483160)

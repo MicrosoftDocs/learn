@@ -88,7 +88,7 @@ Custom modeling is justified when evaluation metrics show significant accuracy g
 
 - Persistent low precision/recall
 
-- High hallucination risk
+- High risk of incorrect information
 
 - High business cost of wrong answers
 
@@ -187,6 +187,6 @@ If these requirements are not yet met, extending Microsoft 365 Copilot is often 
 
 ## References
 
-- Maximize cost efficiency in AI agent development. [/training/modules/maximize-cost-efficiency-ai-agent-development/](/training/modules/maximize-cost-efficiency-ai-agent-development/)
+- [Maximize cost efficiency in AI agent development](/training/modules/maximize-cost-efficiency-ai-agent-development/)
 
-- Explore models in Azure AI Studio. [/training/modules/explore-models-azure-ai-studio/](/training/modules/explore-models-azure-ai-studio/)
+- [Explore models in Azure AI Studio](/training/modules/explore-models-azure-ai-studio/)

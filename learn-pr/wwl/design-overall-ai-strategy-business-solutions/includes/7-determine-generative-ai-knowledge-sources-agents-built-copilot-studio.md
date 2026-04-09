@@ -42,7 +42,7 @@ Below is a table comparing generative orchestration vs classic orchestration:
 | **Asking users for input** | The agent can automatically generate questions to prompt users for any missing information required to fill inputs for topics and tools. | You must use question nodes in topics to author messages prompting the user for any required information. |
 | **Responding to a user** | The agent automatically generates a response, using the available information from topics, tools, other agents, and knowledge that it used. | You must use message nodes in topics to author messages responding to the user (or call a tool from a topic). |
 
-**For more information, see** [**/microsoft-copilot-studio/advanced-generative-actions**](/microsoft-copilot-studio/advanced-generative-actions) 
+For more information, see [advanced generative actions in Copilot Studio](/microsoft-copilot-studio/advanced-generative-actions) 
 
 ## Knowledge sources in Copilot Studio
 
@@ -186,12 +186,12 @@ Solution architects determine the optimal combination of generative AI and knowl
 
 ## References
 
-- Build your first agent in Microsoft 365 Copilot using Copilot Studio — custom knowledge. [/training/modules/build-your-first-agent-microsoft-365-copilot-use-copilot-studio/4-custom-knowledge](/training/modules/build-your-first-agent-microsoft-365-copilot-use-copilot-studio/4-custom-knowledge)
+- [Build your first agent in Microsoft 365 Copilot using Copilot Studio — custom knowledge](/training/modules/build-your-first-agent-microsoft-365-copilot-use-copilot-studio/4-custom-knowledge)
 
-- Copilot Studio knowledge overview. [/microsoft-copilot-studio/knowledge-copilot-studio](/microsoft-copilot-studio/knowledge-copilot-studio)
+- [Copilot Studio knowledge overview](/microsoft-copilot-studio/knowledge-copilot-studio)
 
-- Copilot Studio — unstructured data knowledge sources. [/microsoft-copilot-studio/knowledge-unstructured-data](/microsoft-copilot-studio/knowledge-unstructured-data)
+- [Copilot Studio — unstructured data knowledge sources](/microsoft-copilot-studio/knowledge-unstructured-data)
 
-- Copilot Studio — Azure AI Search knowledge sources. [/microsoft-copilot-studio/knowledge-azure-ai-search](/microsoft-copilot-studio/knowledge-azure-ai-search)
+- [Copilot Studio — Azure AI Search knowledge sources](/microsoft-copilot-studio/knowledge-azure-ai-search)
 
-- Copilot Studio — generative answers with Azure OpenAI. [/microsoft-copilot-studio/nlu-generative-answers-azure-openai](/microsoft-copilot-studio/nlu-generative-answers-azure-openai)
+- [Copilot Studio — generative answers with Azure OpenAI](/microsoft-copilot-studio/nlu-generative-answers-azure-openai)

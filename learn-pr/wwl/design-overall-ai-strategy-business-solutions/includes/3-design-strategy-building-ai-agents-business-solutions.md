@@ -12,7 +12,7 @@ Microsoft's Cloud Adoption Framework describes a technology planning approach th
 
 In Dynamics 365, copilots and domain-specific agents already deliver guided actions, summarization, automated updates, and customer service support. These built-in agents provide a benchmark for understanding functional requirements before building custom solutions.
 
-For more information, see [/azure/cloud-adoption-framework/ai-agents/](/azure/cloud-adoption-framework/ai-agents/)
+For more information, see [AI agent adoption - Cloud Adoption Framework](/azure/cloud-adoption-framework/ai-agents/)
 
 ## Core principles for designing an AI agent strategy
 
@@ -68,7 +68,7 @@ If yes, use it. If no, determine whether low-code or pro-code custom agents are 
 
 ### Custom agent platform choices
 
-#### Copilot Studio (Low-code / SaaS)
+#### Copilot Studio (low-code / SaaS)
 
 Best for:
 
@@ -88,7 +88,7 @@ Best for:
 
 - Built-in responsible AI features
 
-#### Microsoft Foundry (Pro-code / PaaS)
+#### Microsoft Foundry (pro-code / PaaS)
 
 Best for:
 
@@ -108,7 +108,7 @@ Foundry provides:
 
 - Support for Activity Protocol and agent-to-agent interactions
 
-#### GPUs & Containers (Pro-code / IaaS)
+#### GPUs & containers (pro-code / IaaS)
 
 Use when:
 
@@ -162,7 +162,7 @@ Choosing the right hosting and security model depends on:
 
 ## Professional visuals and recommended charts
 
-For the detailed AI Agent decision tree, see the following for more information [/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
+For the detailed AI Agent decision tree, see the following for more information [technology solutions plan strategy - Cloud Adoption Framework](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
 
 ### Agent architecture comparison chart
 
@@ -173,7 +173,7 @@ For the detailed AI Agent decision tree, see the following for more information 
 | **Microsoft Copilot Studio** | Low/no-code (SaaS) | Retrieval, Task, Autonomous | Process transformation. Enables fast development with minimal coding and SaaS security. |
 | **GPUs and containers** | Pro-code (PaaS or IaaS) | Retrieval, Task, Autonomous | Compliance-sensitive or highly customized (custom model configurations, private networking, strict isolation) workloads with full control of the entire technology stack. |
 
-[/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
+[Technology solutions plan strategy - Cloud Adoption Framework](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
 
 ## Summary
 
@@ -181,6 +181,6 @@ A strategic design approach ensures that AI agents enhance business operations w
 
 ## References
 
-- Technology Plan for AI Agents across your organization - Cloud Adoption Framework. [/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
+- [Technology Plan for AI Agents across your organization - Cloud Adoption Framework](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
 
-- Copilot and generative AI in Dynamics 365. [/dynamics365/copilot/](/dynamics365/copilot/)
+- [Copilot and generative AI in Dynamics 365](/dynamics365/copilot/)

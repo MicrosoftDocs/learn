@@ -35,6 +35,6 @@ You'll be introduced to a unified process map that links CAF's strategic and ope
 
 You'll learn how to design operating models that align with enterprise landing zones, data estates, and security frameworks.
 
-**Azure enterprise landing zones** are pre-configured, secure, and scalable multi-account cloud environments designed to provide a foundational setup for deploying workloads. For more information, see [/azure/cloud-adoption-framework/ready/landing-zone/](/azure/cloud-adoption-framework/ready/landing-zone/)
+**Azure enterprise landing zones** are pre-configured, secure, and scalable multi-account cloud environments designed to provide a foundational setup for deploying workloads. For more information, see [Azure enterprise landing zones](/azure/cloud-adoption-framework/ready/landing-zone/)
 
 **Azure data estates** are the comprehensive, integrated ecosystem of an organization's data assets, spanning on-premises, cloud, and hybrid environments, managed, secured, and analyzed using Microsoft Azure tools.

@@ -20,7 +20,7 @@ Prompt engineering is the deliberate design of instructions that guide AI models
 
 In business environments, effective prompt engineering ensures:
 
-- **Accuracy** of content and reduced hallucinations
+- **Accuracy** of content and reduced incorrect information
 
 - **Consistency** of responses across teams and workflows
 
@@ -152,13 +152,10 @@ Asking the model to show steps or reasoning improves correctness in:
 
 Large tasks should be decomposed into smaller interactions:
 
-- Step 1: Extract
-
-- Step 2: Analyze
-
-- Step 3: Recommend
-
-- Step 4: Summarize
+1. Extract
+1. Analyze
+1. Recommend
+1. Summarize
 
 Improves quality and reduces model error propagation.
 
@@ -208,7 +205,7 @@ Avoid the following when creating prompts as best practices:
 
 - Prompts that accidentally leak sensitive data
 
-- Prompts that cause hallucinations
+- Prompts that cause incorrect information
 
 ## Visual aids (text-based charts)
 
@@ -230,15 +227,15 @@ Avoid the following when creating prompts as best practices:
 | **Level 1 - Basic** | Simple questions; no structure |
 | **Level 2 - Guided** | Clear intent + basic constraints |
 | **Level 3 - Structured** | Full pattern (instruction + context + output) |
-| **Level 4 - Optimized** | Fewshot examples, formatting rules |
+| **Level 4 - Optimized** | Few-shot examples, formatting rules |
 | **Level 5 - Enterprise** | Reusable templates, version control, governed library |
 
 ## References
 
-- Prompt engineering concepts. [/concepts/prompt-engineering](/concepts/prompt-engineering)
+- [Prompt engineering concepts](/concepts/prompt-engineering)
 
-- Generative AI prompt engineering labs. [/training/collections/generative-ai-prompt-engineering-labs/](/training/collections/generative-ai-prompt-engineering-labs/)
+- [Generative AI prompt engineering labs](/training/collections/generative-ai-prompt-engineering-labs/)
 
-- Copilot Studio prompt tool. [/microsoft-copilot-studio/prompt-tool](/microsoft-copilot-studio/prompt-tool)
+- [Copilot Studio prompt tool](/microsoft-copilot-studio/prompt-tool)
 
-- Effective prompts for generative AI. [/training/modules/effective-prompts-generative-ai](/training/modules/effective-prompts-generative-ai)
+- [Effective prompts for generative AI](/training/modules/effective-prompts-generative-ai)

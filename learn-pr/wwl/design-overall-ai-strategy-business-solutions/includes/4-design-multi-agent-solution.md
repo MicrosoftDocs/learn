@@ -39,23 +39,23 @@ Design multi-agent systems by **assigning the right platform to each role**:
 
 When agents collaborate, adopt **explicit orchestration** rather than ad hoc chaining. The **Microsoft Agent Framework SDK** provides patterns you can mix and match: 
 
-**Sequential orchestration** — Deterministic pipeline for staged tasks (plan → enrich → verify → act). For more information, see [Sequential orchestration](/agent-framework/user-guide/workflows/orchestrations/sequential?pivots=programming-language-csharp)
+**Sequential orchestration** — Deterministic pipeline for staged tasks (plan → enrich → verify → act). For more information, see [Sequential orchestration](/agent-framework/user-guide/workflows/orchestrations/sequential?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/input-flow-chart.png" alt-text="Diagram of sequential orchestration showing a deterministic pipeline where tasks flow from one agent to the next in order.":::
 
-**Concurrent orchestration** — Parallel agents tackle independent subtasks; aggregate and reconcile results. For more information, see [Concurrent orchestration](/agent-framework/user-guide/workflows/orchestrations/concurrent?pivots=programming-language-csharp)
+**Concurrent orchestration** — Parallel agents tackle independent subtasks; aggregate and reconcile results. For more information, see [Concurrent orchestration](/agent-framework/user-guide/workflows/orchestrations/concurrent?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/concurrent-orchestration.png" alt-text="Diagram of concurrent orchestration showing parallel agents handling independent subtasks simultaneously before aggregating results.":::
 
-**Group chat orchestration** — A mediated conversation where agents contribute proposals and a moderator agent arbitrates. For more information, see [Group chat orchestration](/agent-framework/user-guide/workflows/orchestrations/group-chat?pivots=programming-language-csharp)
+**Group chat orchestration** — A mediated conversation where agents contribute proposals and a moderator agent arbitrates. For more information, see [Group chat orchestration](/agent-framework/user-guide/workflows/orchestrations/group-chat?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/group-chat-orchestration.png" alt-text="Diagram of group chat orchestration showing multiple agents contributing proposals in a mediated conversation with a moderator agent.":::
 
-**Handoff orchestration** — Transfer context and control to a specialist agent (or a human) when a threshold or rule triggers escalation. For more information, see [Handoff orchestration](/agent-framework/user-guide/workflows/orchestrations/handoff?pivots=programming-language-csharp)
+**Handoff orchestration** — Transfer context and control to a specialist agent (or a human) when a threshold or rule triggers escalation. For more information, see [Handoff orchestration](/agent-framework/user-guide/workflows/orchestrations/handoff?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/handoff-orchestration.png" alt-text="Diagram of handoff orchestration showing context and control transferring from one agent to a specialist agent or human when an escalation threshold is reached.":::
 
-**Magentic orchestration** — Pattern for dynamic specialization where a "magnet" pulls in the right expert agents at runtime. For more information, see [Magentic orchestration](/agent-framework/user-guide/workflows/orchestrations/magentic?pivots=programming-language-csharp)
+**Magentic orchestration** — Pattern for dynamic specialization where a "magnet" pulls in the right expert agents at runtime. For more information, see [Magentic orchestration](/agent-framework/user-guide/workflows/orchestrations/magentic?pivots=programming-language-csharp).
 
 :::image type="content" source="../media/magnetic-orchestration.png" alt-text="Diagram of Magentic orchestration showing a central orchestrator dynamically pulling in specialized expert agents at runtime based on task requirements.":::
 
@@ -93,11 +93,7 @@ A robust multi-agent solution in **Foundry** follows these steps:
 
 ## Reference architecture
 
-### Visual A — Multi-agent decision tree
-
-Start: _Candidate use case_ → "Does an existing SaaS agent meet requirements?" → **Yes:** use Microsoft 365 Copilot/other SaaS agent; **No:** "Is low-code sufficient?" → **Yes:** Copilot Studio agent; **No:** Foundry connected agents. Include "single-agent test first" offramp. 
-
-### Visual B — Platform-role mapping
+### Platform-role mapping
 
 | **Role** | **Best-fit platform** | **Why** | **Typical orchestration** |
 |---|---|---|---|
@@ -109,19 +105,19 @@ Start: _Candidate use case_ → "Does an existing SaaS agent meet requirements?"
 
 ### Least-privilege per agent
 
-Scope credentials, connectors, and actions narrowly to the agent's remit. Multi-agent separation can **reduce blast radius** by design.
+- Scope credentials, connectors, and actions narrowly to the agent's remit. Multi-agent separation can **reduce blast radius** by design.
 
 ### Context hygiene
 
-Keep handoff payloads minimal (IDs over raw content) to manage cost and exposure.
+- Keep handoff payloads minimal (IDs over raw content) to manage cost and exposure.
 
 ### Observability
 
-Instrument **handoff latency, tool failure rate, and decision quality**; log messages and artifacts for audits.
+- Instrument **handoff latency, tool failure rate, and decision quality**; log messages and artifacts for audits.
 
 ### Rollback & human-in-the-loop
 
-Gate high-risk actions with approvals; design "break-glass" paths.
+- Gate high-risk actions with approvals; design "break-glass" paths.
 
 ## Summary
 
@@ -133,10 +129,10 @@ Gate high-risk actions with approvals; design "break-glass" paths.
 
 ## References
 
-- Multi-agent reference architecture (GitHub). [https://github.com/microsoft/multi-agent-reference-architecture](https://github.com/microsoft/multi-agent-reference-architecture)
+- [Multi-agent reference architecture (GitHub)](https://github.com/microsoft/multi-agent-reference-architecture)
 
-- Orchestrate a semantic kernel multi-agent solution. [/training/modules/orchestrate-semantic-kernel-multi-agent-solution/](/training/modules/orchestrate-semantic-kernel-multi-agent-solution/)
+- [Orchestrate a semantic kernel multi-agent solution](/training/modules/orchestrate-semantic-kernel-multi-agent-solution/)
 
-- Single agent vs. multiple agents (Cloud Adoption Framework). [/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents](/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents)
+- [Single agent vs. multiple agents (Cloud Adoption Framework)](/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents)
 
-- Microsoft AI Decision Framework — evaluation criteria. [https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/evaluation-criteria.html](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/evaluation-criteria.html)
+- [Microsoft AI Decision Framework — evaluation criteria](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/evaluation-criteria.html)

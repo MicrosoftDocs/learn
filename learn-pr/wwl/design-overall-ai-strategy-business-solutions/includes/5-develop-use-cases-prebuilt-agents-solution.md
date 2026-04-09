@@ -69,7 +69,7 @@ Agents can research topics using defined boundaries for gathering additional  so
 
 Prebuilt agents simplify repetitive communication, meeting preparation, and follow-up tasks to improve employee throughput and reduce noise.
 
-[/azure/cloud-adoption-framework/ai-agents/responsible-ai-across-organization](/azure/cloud-adoption-framework/ai-agents/responsible-ai-across-organization)
+[Responsible AI across the organization - Cloud Adoption Framework](/azure/cloud-adoption-framework/ai-agents/responsible-ai-across-organization)
 
 ## Mapping business processes to prebuilt agent capabilities
 
@@ -138,10 +138,10 @@ Expected Outcome: Reduced confusion, faster planning, fewer support inquiries.
 
 ## References
 
-- Introduction to developing AI agents. [/training/modules/introduction-develop-ai-agents](/training/modules/introduction-develop-ai-agents)
+- [Introduction to developing AI agents](/training/modules/introduction-develop-ai-agents)
 
-- Enhance productivity with prebuilt agents. [/training/paths/enhance-productivity-prebuilt-agents](/training/paths/enhance-productivity-prebuilt-agents)
+- [Enhance productivity with prebuilt agents](/training/paths/enhance-productivity-prebuilt-agents)
 
-- Microsoft Copilot scenarios. [https://copilotscenarios.microsoft.com](https://copilotscenarios.microsoft.com)
+- [Microsoft Copilot scenarios](https://copilotscenarios.microsoft.com)
 
-- Agent Academy — using prebuilt agents. [https://microsoft.github.io/agent-academy/recruit/05-using-prebuilt-agents/](https://microsoft.github.io/agent-academy/recruit/05-using-prebuilt-agents/)
+- [Agent Academy — using prebuilt agents](https://microsoft.github.io/agent-academy/recruit/05-using-prebuilt-agents/)

@@ -70,7 +70,7 @@ These principles form the foundation of every prompt in the library.
 
 Microsoft recommends structured patterns that improve predictability and accuracy.
 
-### Pattern 1 — Instruction + Context + Output
+### Pattern 1 — Instruction + context + output
 
 **Instruction:** What the model must do
 
@@ -210,6 +210,6 @@ Prompts should be:
 
 ## References
 
-- Write effective prompts for Microsoft Copilot. [/azure/copilot/write-effective-prompts](/azure/copilot/write-effective-prompts)
+- [Write effective prompts for Microsoft Copilot](/azure/copilot/write-effective-prompts)
 
-- Microsoft Copilot example prompts. [/azure/copilot/example-prompts](/azure/copilot/example-prompts)
+- [Microsoft Copilot example prompts](/azure/copilot/example-prompts)

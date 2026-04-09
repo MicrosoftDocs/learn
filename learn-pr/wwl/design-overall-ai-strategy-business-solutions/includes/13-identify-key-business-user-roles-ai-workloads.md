@@ -36,7 +36,7 @@ Coordinates AI strategy, ensures governance, and orchestrates organizational ali
 
 - Develop enterprise AI maturity and workflow standards
 
-A lack of an Center of Excellence lead can lead to organizational impacts such as a lack of technological oversight, failure to adhere to a unified architectural strategy, or a breakdown in one or more of the key AI Responsibility pillars such as transparency. 
+A lack of a Center of Excellence lead can lead to organizational impacts such as a lack of technological oversight, failure to adhere to a unified architectural strategy, or a breakdown in one or more of the key AI Responsibility pillars such as transparency.
 
 ### Product owner for AI workloads
 
@@ -68,7 +68,7 @@ Provides domain expertise required for model grounding, evaluation, and performa
 
 - Identify operational pain points suitable for AI augmentation
 
-A lack of qualified business domain specialists can lead to a failure for AI workloads to perform reliably and to specification through issues such as hallucinations risks.
+A lack of qualified business domain specialists can lead to a failure for AI workloads to perform reliably and to specification through issues such as incorrect information risks.
 
 ### Data owner / data steward
 
@@ -166,8 +166,8 @@ Additional roles not listed may be discovered such as the below for example:
 
 ## References
 
-- Scale AI — organize for AI success. [/training/modules/scale-ai/3-organize-ai-success](/training/modules/scale-ai/3-organize-ai-success)
+- [Scale AI — organize for AI success](/training/modules/scale-ai/3-organize-ai-success)
 
-- Scale AI transformation with Azure Essentials — AI Center of Excellence guidance. [https://azure.microsoft.com/blog/scale-ai-transformation-with-azure-essentials-ai-center-of-excellence-guidance/](https://azure.microsoft.com/blog/scale-ai-transformation-with-azure-essentials-ai-center-of-excellence-guidance/)
+- [Scale AI transformation with Azure Essentials — AI Center of Excellence guidance](https://azure.microsoft.com/blog/scale-ai-transformation-with-azure-essentials-ai-center-of-excellence-guidance/)
 
-- Introduction to AI Center of Excellence — determining organizational roles and responsibilities. [/training/modules/intro-ai-center-excellence/4-determining-organizational-roles-responsibilities](/training/modules/intro-ai-center-excellence/4-determining-organizational-roles-responsibilities)
+- [Introduction to AI Center of Excellence — determining organizational roles and responsibilities](/training/modules/intro-ai-center-excellence/4-determining-organizational-roles-responsibilities)

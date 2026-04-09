@@ -14,7 +14,7 @@ Customized SLMs allow organizations to:
 
 - Enable offline or near-edge operation for compliance or performance
 
-SLMs have the advantage with specific factors such as cost, latency, and control. But it's a common misconception that they're always safer than LLMs and always reduce hallucinations. It's important as an architect to determine when an SLM will make more sense than a large model and considerations such as risks of over-using SLMs in an organization. 
+SLMs have the advantage with specific factors such as cost, latency, and control. But it's a common misconception that they're always safer than LLMs and always reduce incorrect information. It's important as an architect to determine when an SLM will make more sense than a large model and considerations such as risks of over-using SLMs in an organization. 
 
 ## Understanding customized small language models
 
@@ -24,7 +24,7 @@ Customized SLMs can be built by:
 
 - **Behavior tuning** - Controlling style, reasoning depth, safety behavior, or operational constraints
 
-- **Task optimization** - Specializing the model for retrieval, classification, summarization, planning, or tooluse patterns
+- **Task optimization** - Specializing the model for retrieval, classification, summarization, planning, or tool-use patterns
 
 SLMs provide value because they deliver high performance while maintaining small memory footprints and low latency. They excel where **large models are too costly or unnecessary**, such as focused customer workflows, decision-support tasks, or embedded product AI features. 
 
@@ -44,7 +44,7 @@ Examples:
 
 - Manufacturing troubleshooting playbooks
 
-SLMs minimize hallucinations by constraining model behavior around enterprisevalidated data.
+SLMs minimize incorrect information by constraining model behavior around enterprise-validated data.
 
 ### Operationally constrained environments
 
@@ -58,7 +58,7 @@ When latency, cost, or compute footprint matters:
 
 - Scenarios with intermittent or restricted connectivity
 
-SLMs reduce memory footprint significantly and ensure inference remains costpredictable.
+SLMs reduce memory footprint significantly and ensure inference remains cost-predictable.
 
 ### Enterprise security & safety requirements
 
@@ -112,7 +112,7 @@ It's important to keep common pitfalls and risks in mind when identifying whethe
 
 - Underestimating data curation and evaluation effort
 
-- Treating SLMs as a silver bullet for hallucinations
+- Treating SLMs as a silver bullet for incorrect information
 
 - Using SLMs for broad, creative reasoning tasks better suited to LLMs
 
@@ -178,8 +178,8 @@ When evaluating an SLM, architects can measure its success through specific metr
 
 **References (URLs you provided)**
 
-- <https://arxiv.org/pdf/2405.20347>
+- [Small Language Models for Application Interactions: A Case Study](https://arxiv.org/pdf/2405.20347)
 
-- <https://mljourney.com/small-language-model-use-cases-applications-in-2025-and-beyond/>
+- [Small language model use cases and applications in 2025 and beyond](https://mljourney.com/small-language-model-use-cases-applications-in-2025-and-beyond/)
 
-- <https://azure.microsoft.com/blog/introducing-phi-3-redefining-whats-possible-with-slms/>
+- [Introducing Phi-3 — redefining what's possible with SLMs](https://azure.microsoft.com/blog/introducing-phi-3-redefining-whats-possible-with-slms/)

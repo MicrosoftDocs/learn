@@ -56,11 +56,9 @@ Microsoft's AI CoE guidance emphasizes that regulatory alignment is a foundation
 
 ## Regulatory domains solution architects must evaluate
 
-### A. Data protection & privacy regulations
+### Data protection & privacy regulations
 
 Examples include:
-
-- GDPR (EU)
 
 - CCPA/CPRA (California)
 
@@ -82,7 +80,7 @@ Key considerations:
 
 - Cross-border data transfer
 
-### B. AI-specific regulations
+### AI-specific regulations
 
 Many regions are introducing AI-focused laws.
 
@@ -108,7 +106,7 @@ Key considerations:
 
 - Safety and misuse prevention
 
-### C. Industry-specific regulations
+### Industry-specific regulations
 
 Depending on the workload:
 
@@ -130,7 +128,7 @@ Key considerations:
 
 - Access controls
 
-### D. Local jurisdiction requirements
+### Local jurisdiction requirements
 
 Cities, states, and provinces may impose:
 
@@ -146,7 +144,7 @@ Cities, states, and provinces may impose:
 
 Based on Microsoft's AI CoE guidance, the CoE must:
 
-#### A. Establish governance frameworks
+#### Establish governance frameworks
 
 - Define enterprise AI standards
 
@@ -154,7 +152,7 @@ Based on Microsoft's AI CoE guidance, the CoE must:
 
 - Create risk assessment workflows
 
-#### B. Evaluate AI workloads for regulatory impact
+#### Evaluate AI workloads for regulatory impact
 
 - Classify risk level
 
@@ -164,7 +162,7 @@ Based on Microsoft's AI CoE guidance, the CoE must:
 
 - Validate model evaluation requirements
 
-#### C. Enable cross-functional collaboration
+#### Enable cross-functional collaboration
 
 - Legal
 
@@ -176,7 +174,7 @@ Based on Microsoft's AI CoE guidance, the CoE must:
 
 - Business domain teams
 
-#### D. Provide templates and tools
+#### Provide templates and tools
 
 - Regulatory checklists
 
@@ -264,22 +262,12 @@ The AI CoE should maintain:
 
 - Approval workflows
 
-## Professional visuals (text-based)
-
-### Visual 1 — Regulatory evaluation flow
-
-Identify Jurisdictions ↓ Identify Regulations ↓ Classify AI Risk ↓ Assess Data Requirements ↓ Evaluate AI Obligations ↓ Map to Microsoft Controls ↓ Document & Approve 
-
-### Visual 2 — AI CoE compliance responsibilities
-
-Governance Standards Risk Assessment Data Protection Model Evaluation Responsible AI Audit & Monitoring 
-
 ## References
 
-- Implementing AI data residency and sovereignty strategies on Microsoft Azure. [https://just4cloud.com/implementing-ai-data-residency-and-sovereignty-strategies-on-microsoft-azure/](https://just4cloud.com/implementing-ai-data-residency-and-sovereignty-strategies-on-microsoft-azure/)
+- [Implementing AI data residency and sovereignty strategies on Microsoft Azure](https://just4cloud.com/implementing-ai-data-residency-and-sovereignty-strategies-on-microsoft-azure/)
 
-- Security for AI — governance. [/security/security-for-ai/govern](/security/security-for-ai/govern)
+- [Security for AI — governance](/security/security-for-ai/govern)
 
-- Know your boundaries — navigating data sovereignty and residency in Microsoft 365. [https://www.cloudessentials.com/blog/know-your-boundaries-navigating-data-sovereignty-and-residency-in-microsoft-365/](https://www.cloudessentials.com/blog/know-your-boundaries-navigating-data-sovereignty-and-residency-in-microsoft-365/)
+- [Know your boundaries — navigating data sovereignty and residency in Microsoft 365](https://www.cloudessentials.com/blog/know-your-boundaries-navigating-data-sovereignty-and-residency-in-microsoft-365/)
 
-- Data residency and compliance in the Microsoft Cloud — Microsoft 365 governance guide. [https://dellenny.com/data-residency-and-compliance-in-the-microsoft-cloud-microsoft-365-governance-guide/](https://dellenny.com/data-residency-and-compliance-in-the-microsoft-cloud-microsoft-365-governance-guide/)
+- [Data residency and compliance in the Microsoft Cloud — Microsoft 365 governance guide](https://dellenny.com/data-residency-and-compliance-in-the-microsoft-cloud-microsoft-365-governance-guide/)

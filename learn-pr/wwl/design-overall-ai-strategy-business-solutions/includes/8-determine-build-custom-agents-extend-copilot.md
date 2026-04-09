@@ -126,34 +126,6 @@ Extend Copilot when:
 
 ## Decision framework summary
 
-### Decision tree (text representation)
-
-Start
-
-│
-
-├── Is the scenario primarily Microsoft 365 productivity based?
-
-│       ├── Yes → Extend Microsoft 365 Copilot
-
-│       └── No → Continue
-
-│
-
-├── Does the scenario require multi-step or multi-system logic?
-
-│       ├── Yes → Build Custom Agent
-
-│       └── No → Continue
-
-│
-
-├── Does the agent need enterprise system integrations beyond plugins?
-
-│       ├── Yes → Build Custom Agent
-
-│       └── Extend Copilot with knowledge + simple actions
-
 ### Platform capability comparison matrix
 
 | **Attribute** | **Copilot Extension** | **Custom Agent** |
@@ -171,7 +143,7 @@ Start
 
 - The primary user interaction occurs in Word, Excel, Teams, or Outlook
 
-- You want seamless integration with existing M365 activities
+- You want seamless integration with existing Microsoft 365 activities
 
 - Productivity acceleration is the main objective
 
@@ -203,6 +175,6 @@ Custom agents excel in scenarios involving:
 
 ## References
 
-- Introduction to Copilot declarative agents — when to use declarative agents. [/training/modules/copilot-declarative-agent-intro/4-when-to-use-declarative-agents](/training/modules/copilot-declarative-agent-intro/4-when-to-use-declarative-agents)
+- [Introduction to Copilot declarative agents — when to use declarative agents](/training/modules/copilot-declarative-agent-intro/4-when-to-use-declarative-agents)
 
-- Microsoft AI Decision Framework — evaluation criteria. [https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/evaluation-criteria.html](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/evaluation-criteria.html)
+- [Microsoft AI Decision Framework — evaluation criteria](https://microsoft.github.io/Microsoft-AI-Decision-Framework/docs/evaluation-criteria.html)

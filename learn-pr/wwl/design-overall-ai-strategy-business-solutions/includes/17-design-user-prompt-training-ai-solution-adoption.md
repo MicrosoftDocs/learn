@@ -112,7 +112,7 @@ Your training program should teach users:
 
 - Context improves accuracy
 
-- Constraints reduce hallucinations
+- Constraints reduce incorrect information
 
 ### Prompt patterns users should learn
 
@@ -238,8 +238,8 @@ Examples:
 
 ## References
 
-- Empower educators to explore the potential of AI — AI tools and accessibility. [/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility)
+- [Empower educators to explore the potential of AI — AI tools and accessibility](/training/modules/empower-educators-explore-potential-artificial-intelligence/ai-tools-educators-accessibility)
 
-- Leverage AI tools — drive transformation with Azure platforms. [/training/modules/leverage-ai-tools/6-drive-transformation-azure-platforms](/training/modules/leverage-ai-tools/6-drive-transformation-azure-platforms)
+- [Leverage AI tools — drive transformation with Azure platforms](/training/modules/leverage-ai-tools/6-drive-transformation-azure-platforms)
 
-- Create business value with AI — AI governance. [/training/modules/create-business-value/6-ai-governance](/training/modules/create-business-value/6-ai-governance)
+- [Create business value with AI — AI governance](/training/modules/create-business-value/6-ai-governance)

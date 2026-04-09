@@ -11,13 +11,13 @@ By the end of this unit, learners will be able to:
 
 **Why unify?** CAF gives you the end-to-end adoption backbone for AI solutions on Azure; the Agent Adoption guidance layers in the **specific operating model** for planning, governing, building, and operating **AI agents** across the enterprise. Aligning these frameworks reduces risk, prevents "agent sprawl," and accelerates value realization. 
 
-CAF AI adoption (left rail) defines **foundations and operational guardrails**. [[Baseline M...soft Learn | Learn.Microsoft.com]](/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-landing-zone)
+CAF AI adoption (left rail) defines [foundations and operational guardrails](/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-landing-zone).
 
-Agent lifecycle (right rail) defines **how teams plan, govern, build, and operate agents**. [[learn.microsoft.com]](/azure/cloud-adoption-framework/scenarios/ai/)
+Agent lifecycle (right rail) defines [how teams plan, govern, build, and operate agents](/azure/cloud-adoption-framework/scenarios/ai/).
 
 ### Phase-by-phase guidance and deliverables
 
-#### A. AI Strategy (CAF) ⇄ Plan Agents (Agent lifecycle)
+#### A. AI strategy (CAF) ⇄ Plan agents (agent lifecycle)
 
 ##### Goals
 
@@ -43,7 +43,7 @@ Agent lifecycle (right rail) defines **how teams plan, govern, build, and operat
 
 - Build the **business plan for agents** and rank candidate agent use cases by impact/feasibility
 
-#### B. AI Plan (CAF) ⇄ Plan Agents (continued)
+#### B. AI plan (CAF) ⇄ Plan agents (continued)
 
 ##### Goals
 
@@ -63,7 +63,7 @@ Agent lifecycle (right rail) defines **how teams plan, govern, build, and operat
 
 - Assess skills; acquire skills; access AI resources; prioritize use cases; create PoCs; implement Responsible AI
 
-#### C. AI Ready (CAF) ⇄ Govern & Secure Agents (foundation)
+#### C. AI ready (CAF) ⇄ Govern & secure agents (foundation)
 
 ##### Goals
 
@@ -87,7 +87,7 @@ Agent lifecycle (right rail) defines **how teams plan, govern, build, and operat
 
 - Establish AI governance, networking, reliability, and foundation; choose architectures and design areas
 
-#### D. Govern AI + Secure AI (CAF) ⇄ Govern & Secure Agents (enforcement)
+#### D. Govern AI + secure AI (CAF) ⇄ Govern & secure agents (enforcement)
 
 ##### Goals
 
@@ -107,7 +107,7 @@ Agent lifecycle (right rail) defines **how teams plan, govern, build, and operat
 
 - AI/agent policy set, risk register, and **security controls** for data, models, and endpoints
 
-#### E. Build Agents (Agent lifecycle) ⇄ AI Ready→Adopt (execution on Azure)
+#### E. Build agents (agent lifecycle) ⇄ AI ready→adopt (execution on Azure)
 
 ##### Goals
 
@@ -123,7 +123,7 @@ Agent lifecycle (right rail) defines **how teams plan, govern, build, and operat
 
 - Standard agent templates, evaluation gates, environment strategy, and **CI/CD with policy guardrails**
 
-#### F. Manage AI (CAF) ⇄ Operate Agents (run, monitor, improve)
+#### F. Manage AI (CAF) ⇄ Operate agents (run, monitor, improve)
 
 ##### Goals
 
@@ -164,7 +164,7 @@ _A = Accountable, R = Responsible, C = Consulted_
 
 ## Actionable checklists
 
-### Strategy & Planning
+### Strategy & planning
 
 - Use case inventory with quantified outcomes and success metrics
 
@@ -172,19 +172,19 @@ _A = Accountable, R = Responsible, C = Consulted_
 
 - Skills assessment and upskilling plan (architects, data, security)
 
-### Ready & Foundations
+### Ready & foundations
 
 - Landing zone(s) with management groups for **external vs. internal** workloads; baseline policies applied
 
 - Data foundation for agents (authoritative sources, access model, lineage)
 
-### Govern & Secure
+### Govern & secure
 
 - Document AI and agent policies; define approvals, change control, and evaluation criteria
 
 - Implement platform security for models, data, keys, and endpoints; maintain a complete AI asset inventory
 
-### Build & Operate
+### Build & operate
 
 - Standardized agent build process, templates, and CI/CD; adopt reference architectures for PaaS AI
 
@@ -192,30 +192,30 @@ _A = Accountable, R = Responsible, C = Consulted_
 
 ## References
 
-- AI adoption - Cloud Adoption Framework (overview and checklists). [/azure/cloud-adoption-framework/scenarios/ai/](/azure/cloud-adoption-framework/scenarios/ai/)
+- [AI adoption - Cloud Adoption Framework (overview and checklists)](/azure/cloud-adoption-framework/scenarios/ai/)
 
-- Create your AI strategy. [/azure/cloud-adoption-framework/scenarios/ai/strategy](/azure/cloud-adoption-framework/scenarios/ai/strategy)
+- [Create your AI strategy](/azure/cloud-adoption-framework/scenarios/ai/strategy)
 
-- Plan for AI adoption. [/azure/cloud-adoption-framework/scenarios/ai/plan](/azure/cloud-adoption-framework/scenarios/ai/plan)
+- [Plan for AI adoption](/azure/cloud-adoption-framework/scenarios/ai/plan)
 
-- AI Ready (resource organization, connectivity, governance boundaries). [/azure/cloud-adoption-framework/scenarios/ai/ready](/azure/cloud-adoption-framework/scenarios/ai/ready)
+- [AI Ready (resource organization, connectivity, governance boundaries)](/azure/cloud-adoption-framework/scenarios/ai/ready)
 
-- Secure AI (security process, asset protection, threat detection). [/azure/cloud-adoption-framework/scenarios/ai/secure](/azure/cloud-adoption-framework/scenarios/ai/secure)
+- [Secure AI (security process, asset protection, threat detection)](/azure/cloud-adoption-framework/scenarios/ai/secure)
 
-- Manage AI (deployment authority, monitoring, cost, operations). [/azure/cloud-adoption-framework/scenarios/ai/manage](/azure/cloud-adoption-framework/scenarios/ai/manage)
+- [Manage AI (deployment authority, monitoring, cost, operations)](/azure/cloud-adoption-framework/scenarios/ai/manage)
 
-- Azure landing zone design areas (reference architecture for scale). [/azure/cloud-adoption-framework/ready/landing-zone/](/azure/cloud-adoption-framework/ready/landing-zone/)
+- [Azure landing zone design areas (reference architecture for scale)](/azure/cloud-adoption-framework/ready/landing-zone/)
 
-- Get AI architecture guidance for PaaS (reference patterns). [/azure/cloud-adoption-framework/scenarios/ai/platform/architectures](/azure/cloud-adoption-framework/scenarios/ai/platform/architectures)
+- [Get AI architecture guidance for PaaS (reference patterns)](/azure/cloud-adoption-framework/scenarios/ai/platform/architectures)
 
-- AI Agent Adoption Guidance for Organizations (plan, govern & secure, build, operate). [/azure/cloud-adoption-framework/ai-agents/](/azure/cloud-adoption-framework/ai-agents/)
+- [AI Agent Adoption Guidance for Organizations (plan, govern & secure, build, operate)](/azure/cloud-adoption-framework/ai-agents/)
 
-- Technology plan for AI agents (SaaS vs. custom). [/azure/cloud-adoption-framework/ai-agents/plan/technology-plan](/azure/cloud-adoption-framework/ai-agents/plan/technology-plan)
+- [Technology plan for AI agents (SaaS vs. custom)](/azure/cloud-adoption-framework/ai-agents/plan/technology-plan)
 
-- Data architecture for AI agents. [/azure/cloud-adoption-framework/ai-agents/plan/data-architecture](/azure/cloud-adoption-framework/ai-agents/plan/data-architecture)
+- [Data architecture for AI agents](/azure/cloud-adoption-framework/ai-agents/plan/data-architecture)
 
-- Governance & security for AI agents [/azure/cloud-adoption-framework/ai-agents/govern/governance-and-security](/azure/cloud-adoption-framework/ai-agents/govern/governance-and-security)
+- [Governance & security for AI agents](/azure/cloud-adoption-framework/ai-agents/govern/governance-and-security)
 
-- Manage AI agents (operate) [/azure/cloud-adoption-framework/ai-agents/operate/manage](/azure/cloud-adoption-framework/ai-agents/operate/manage) 
+- [Manage AI agents (operate)](/azure/cloud-adoption-framework/ai-agents/operate/manage) 
 
-- CAF AI adoption (GitHub source) <https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/scenarios/ai/index.md>
+- [CAF AI adoption (GitHub source)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/scenarios/ai/index.md)

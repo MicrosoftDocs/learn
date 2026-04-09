@@ -102,13 +102,13 @@ Intent-driven architectures allow AI to determine the user's goal and route the 
 
 ### Core principles
 
-**Intent parsing**: Determine if the ask belongs to Sales, Service, or another workload
+- **Intent parsing**: Determine if the ask belongs to Sales, Service, or another workload.
 
-**Context routing**: Map the intent to the correct app and entity
+- **Context routing**: Map the intent to the correct app and entity.
 
-**Adaptive actions**: Use business rules to adjust next steps dynamically
+- **Adaptive actions**: Use business rules to adjust next steps dynamically.
 
-**Event-based triggers**: Use Dataverse events while minimizing point-to-point integrations
+- **Event-based triggers**: Use Dataverse events while minimizing point-to-point integrations.
 
 ### Architectural benefits
 
@@ -154,6 +154,6 @@ Intent-driven architectures allow AI to determine the user's goal and route the 
 
 ## References
 
-- Bridging AI and Dynamics — a scalable architecture for intent-driven applications. [https://dev.to/deep_sharma/bridging-ai-and-dynamics-a-scalable-architecture-for-intent-driven-applications-30jp](https://dev.to/deep_sharma/bridging-ai-and-dynamics-a-scalable-architecture-for-intent-driven-applications-30jp)
+- [Bridging AI and Dynamics — a scalable architecture for intent-driven applications](https://dev.to/deep_sharma/bridging-ai-and-dynamics-a-scalable-architecture-for-intent-driven-applications-30jp)
 
-- Dynamics 365 Customer Service — enable customers to create multisession apps (2025 wave 1). [/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/enable-customers-create-multisession-apps](/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/enable-customers-create-multisession-apps)
+- [Dynamics 365 Customer Service — enable customers to create multisession apps (2025 wave 1)](/dynamics365/release-plan/2025wave1/service/dynamics365-customer-service/enable-customers-create-multisession-apps)
