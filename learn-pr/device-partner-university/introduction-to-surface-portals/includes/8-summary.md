@@ -1,0 +1,5 @@
+In this module, you learned how Surface Management Portal and Surface Support Portal help organizations manage and support Surface devices at scale by integrating into the tools IT administrators already use. Both portals provide centralized access to warranty information, support requests, and service workflows—reducing complexity and improving operational efficiency.
+
+You explored how Surface Management Portal is used for management-led scenarios involving Intune-enrolled Surface devices, such as monitoring device health, viewing Surface-specific insights, and initiating service actions as part of ongoing device management. You also learned that Surface Support Portal is designed for service and support-focused tasks, including creating and tracking repair, replacement, and support requests—especially for devices that aren't enrolled in Intune.
+
+Finally, you learned how to choose the correct portal based on your scenario, helping ensure faster issue resolution, and more effective Surface device support.
