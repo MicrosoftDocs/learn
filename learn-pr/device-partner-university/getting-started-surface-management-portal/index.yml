@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.getting-started-surface-management-portal
+title: Getting started with Surface Management Portal
+metadata:
+  title: Getting started with Surface Management Portal
+  description: 'In this module, learn how to get started with Surface Management Portal, including prerequisites for access, required roles and permissions, and how to verify access to the portal for managing your Surface devices effectively.'
+  ms.date: 04/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  This module provides an introduction to Surface Management Portal, covering prerequisites, required roles and permissions, and steps to verify access for effective device management.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Understand the prerequisites for accessing Surface Management Portal.
+  - Identify the required roles and permissions needed for access.
+  - Verify access to Surface Management Portal to manage your Surface devices effectively.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/getting-started-surface-management-portal-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.getting-started-surface-management-portal.introduction
+  - learn.dpu.getting-started-surface-management-portal.access-the-microsoft-intune-admin-center
+  - learn.dpu.getting-started-surface-management-portal.verify-prerequisites-surface-management-portal-access
+  - learn.dpu.getting-started-surface-management-portal.assign-required-roles-surface-management-portal
+  - learn.dpu.getting-started-surface-management-portal.verify-surface-management-portal-access
+  - learn.dpu.getting-started-surface-management-portal.knowledge-check
+  - learn.dpu.getting-started-surface-management-portal.summary
+badge:
+  uid: learn.dpu.getting-started-surface-management-portal.badge
