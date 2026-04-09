@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-customizations-copilot-dynamics-365-apps-customer-experience-service
+title: "Design customizations for Copilot in Dynamics 365 apps"
+metadata:
+  title: "Design Customizations for Copilot in Dynamics 365 Apps"
+  description: "Learn how to customize Copilot in Dynamics 365 apps to enhance customer experience, improve workflows, and align AI outputs with business needs."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-customizations-copilot-dynamics-365-apps-customer-experience-service.md)]

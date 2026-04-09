@@ -5,7 +5,7 @@ metadata:
   description: "Module on the use of Azure Cosmos DB as part of a migration solution."
   ms.date: 03/26/2024
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: module
   ms.custom:
   - N/A
@@ -46,4 +46,4 @@ units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.knowlege-check
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.summary
 badge:
-  uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.badge
+  uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.badge

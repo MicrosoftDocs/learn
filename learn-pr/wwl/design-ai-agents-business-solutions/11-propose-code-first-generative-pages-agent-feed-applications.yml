@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.propose-code-first-generative-pages-agent-feed-applications
+title: "Propose code first generative pages and agent feed applications"
+metadata:
+  title: "Propose Code First Generative Pages and Agent Feed Applications"
+  description: "Learn how to use generative pages and agent feeds in Power Apps to create intelligent, adaptive business applications with code-first enhancements."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 12
+content: |
+  [!include[](includes/11-propose-code-first-generative-pages-agent-feed-applications.md)]
