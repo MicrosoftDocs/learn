@@ -8,7 +8,7 @@ Effective collaboration depends on an ecosystem that connects people, content, a
 
 Windows integrates with Microsoft 365 applications such as Teams, Outlook, SharePoint, and OneDrive, enabling workers to collaborate across departments, devices, and locations without disrupting workflows.
 
-:::image type="content" source="../media/windows-productivity-ecosystem.svg" alt-text="Diagram showing Windows ecosystem collaboration across Teams, OneDrive, SharePoint, Outlook, and Windows multitasking features.":::
+:::image type="content" source="../media/windows-productivity-ecosystem.svg" alt-text="Diagram showing Windows ecosystem collaboration across Teams, OneDrive, SharePoint, Outlook, and Windows multitasking features." lightbox="../media/windows-productivity-ecosystem.svg":::
 
 Key collaboration strengths in Windows ecosystems include:
 
@@ -20,7 +20,7 @@ Key collaboration strengths in Windows ecosystems include:
 These capabilities support hybrid work environments where teams may be distributed geographically or functionally.
 
 > [!NOTE]
-> Microsoft 365 features require an appropriate Microsoft 365 subscription and tenant. To learn more, see [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide).
+> Microsoft 365 features require an appropriate Microsoft 365 subscription and tenant. To learn more, see [Microsoft 365 for enterprise overview](/microsoft-365/enterprise/microsoft-365-overview).
 
 ## Multitasking and workflow flexibility
 
