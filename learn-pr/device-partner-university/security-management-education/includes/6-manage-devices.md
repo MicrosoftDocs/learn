@@ -10,7 +10,7 @@ With Microsoft Intune for Education, devices can be grouped by role, class, depa
 
 **Example:** An IT admin needs to ensure that all student laptops have the approved Microsoft 365 apps, learning resources, and security policies applied. Using Microsoft Intune for Education, the admin pushes the apps and settings remotely, verifies compliance reports, and quickly remediates any device that is out of date or misconfigured—without needing to physically access each laptop.
 
-![A photo of a school IT administrator remotely managing devices from a laptop at his desk.](../../security-management-education/media/it-admin.png)
+![A photo of a school IT administrator remotely managing devices from a laptop at his desk.](../../security-management-education/media/tech-admin.png)
 
 ## Windows Autopilot
 

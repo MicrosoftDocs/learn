@@ -16,7 +16,7 @@ Reflecting on these questions helps you think critically about how modern device
 
 Now, let’s see how one of the largest school districts in the United States tackled a similar challenge.
 
-![A photo of students working on laptops in a NYC Public School classroom.](../../security-management-education/media/nyc-schools.png)
+![A photo of students working on laptops in a NYC Public School classroom.](../../security-management-education/media/school.png)
 
 ## Customer scenario: NYC Public Schools (K–12)
 

@@ -20,7 +20,7 @@ Reflecting on these questions helps you consider how modern security solutions c
 
 Now, let’s look at a real-world example of a higher education institution that faced a similar challenge.
 
-![An aerial photo of the Oregon State University campus.](../../security-management-education/media/OSU.png)
+![An aerial photo of the Oregon State University campus.](../../security-management-education/media/university.png)
 
 ## Customer scenario: Oregon State University (Higher Education)
 

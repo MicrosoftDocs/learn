@@ -24,7 +24,7 @@ Its endpoint detection and response capabilities enable institutions to monitor 
 
 **Example:** Microsoft Defender for Endpoint detects unusual file access activity on a student’s laptop and automatically quarantines the suspicious process. The IT admin reviews the alert in the Defender portal, confirms the activity was contained, and verifies that no other devices were affected.
 
-![A photo of a college student working on a laptop in a cafe.](../../security-management-education/media/cafe.png)
+![A photo of a college student working on a laptop in a cafe.](../../security-management-education/media/student-lounge.png)
 
 ## Microsoft Entra ID
 
