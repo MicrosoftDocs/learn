@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-management-portal.assign-required-roles-surface-management-portal
+title: Assign required roles for Surface Management Portal
+metadata:
+  title: Assign Required Roles For Surface Management Portal
+  description: This content is part of the "Getting started with Surface Management Portal" module.
+  ms.date: 04/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-assign-required-roles-surface-management-portal.md)]
