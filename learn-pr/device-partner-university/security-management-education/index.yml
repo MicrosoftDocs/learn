@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.dpu.security-management-education
+title: Microsoft security and management solutions in education
+metadata:
+  title: Microsoft Security And Management Solutions In Education
+  description: This module introduces how education institutions can strengthen security and modernize device management using Microsoft’s integrated security and management solutions. It explains how concepts like Zero Trust, chip‑to‑cloud protection, and tools such as Microsoft Sentinel, Defender, Intune, Entra ID, Security Copilot, Purview, and Priva work together to create safer, more efficient learning environments.
+  ms.date: 03/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-education
+summary: >
+  This module explores how education institutions can strengthen security and modernize device management by using Microsoft’s integrated security and management solutions.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe key security and device management challenges in K-12 and higher education.
+  - Explain how Microsoft’s integrated solutions help create safer learning environments.
+  - Identify the roles of Microsoft Sentinel, Defender, Intune for Education, Entra ID, Security Copilot, Purview, and Priva.
+  - Understand how Zero Trust and chip-to-cloud security principles apply to education scenarios.
+  - Recognize how institutions like Oregon State University and NYC Public Schools strengthen security and simplify management at scale.
+  - Apply a high-level problem-solving approach to determine how Microsoft solutions can be implemented effectively in education scenarios.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - higher-ed-educator
+  - student
+  - technology-manager
+  - school-leader
+  - security-operations-analyst
+  - k-12-educator
+  - administrator
+  - business-owner
+products:
+  - m365-education
+units:
+  - learn.dpu.security-management-education.introduction
+  - learn.dpu.security-management-education.security-landscape
+  - learn.dpu.security-management-education.key-challenges
+  - learn.dpu.security-management-education.security-foundation
+  - learn.dpu.security-management-education.deep-dive
+  - learn.dpu.security-management-education.manage-devices
+  - learn.dpu.security-management-education.customer-scenario-hed
+  - learn.dpu.security-management-education.customer-scenario-k12
+  - learn.dpu.security-management-education.knowledge-check
+  - learn.dpu.security-management-education.summary
+badge:
+  uid: learn.dpu.security-management-education.badge

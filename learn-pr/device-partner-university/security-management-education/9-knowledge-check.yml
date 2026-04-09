@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-management-education.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Microsoft security and management solutions in education" module.
+  ms.date: 03/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the core principle of the Zero Trust security model?"
+    choices:
+        - content: "All users inside the network perimeter are trusted by default"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that Zero Trust assumes no implicit trust, even within the network perimeter."
+        - content: "No user or device is implicitly trusted without verification"
+          isCorrect: true
+          explanation: "Correct. Zero Trust requires explicit verification of every access request based on multiple signals."
+        - content: "Security controls are only applied to external users"
+          isCorrect: false
+          explanation: "Incorrect. Zero Trust applies to all users and devices, regardless of location."
+        - content: "Access decisions are based solely on network location"
+          isCorrect: false
+          explanation: "Incorrect. The model evaluates identity, device health, behavior, location, and risk signals—not just location."
+  - content: "Which Microsoft solution is described as a cloud-native SIEM that collects and correlates signals across an educational institution?"
+    choices:
+        - content: "Microsoft Defender for Endpoint"
+          isCorrect: false
+          explanation: "Incorrect. Defender for Endpoint focuses on endpoint protection and detection, not SIEM capabilities."
+        - content: "Microsoft Sentinel"
+          isCorrect: true
+          explanation: "Correct. The module identifies Sentinel as a cloud-native SIEM that correlates logs and signals to detect threats."
+        - content: "Microsoft Intune for Education"
+          isCorrect: false
+          explanation: "Incorrect. Intune for Education is used for device management and policy enforcement."
+        - content: "Microsoft Purview"
+          isCorrect: false
+          explanation: "Incorrect. Purview focuses on data governance, classification, and compliance."
+  - content: "What primary benefit do Microsoft Intune for Education and Windows Autopilot provide when used together?"
+    choices:
+        - content: "Manual imaging and on-site device configuration"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that Autopilot eliminates the need for manual imaging."
+        - content: "Centralized identity authentication across networks"
+          isCorrect: false
+          explanation: "Incorrect. Identity authentication is primarily handled by Microsoft Entra ID."
+        - content: "Zero-touch device deployment and ongoing compliance"
+          isCorrect: true
+          explanation: "Correct. Together, Intune for Education and Autopilot enable automated deployment, configuration, and lifecycle compliance."
+        - content: "Advanced threat hunting across cloud applications"
+          isCorrect: false
+          explanation: "Incorrect. Threat hunting is addressed by solutions like Microsoft Sentinel and Defender."
+  - content: "How did Oregon State University benefit after implementing Microsoft Sentinel and related security solutions?"
+    choices:
+        - content: "Reduced device deployment time by eliminating custom images"
+          isCorrect: false
+          explanation: "Incorrect. This benefit is associated with Windows Autopilot and device provisioning scenarios."
+        - content: "Improved student internet access through LTE-enabled devices"
+          isCorrect: false
+          explanation: "Incorrect. LTE-enabled access was highlighted in the NYC Public Schools K–12 scenario."
+        - content: "Reduced incident detection time from weeks to minutes"
+          isCorrect: true
+          explanation: "Correct. The module states this was a key outcome of OSU’s security modernization."
+        - content: "Shifted all security responsibilities to third-party vendors"
+          isCorrect: false
+          explanation: "Incorrect. OSU strengthened internal security operations using Microsoft’s integrated tools."
+

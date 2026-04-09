@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-management-education.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Microsoft security and management solutions in education" module.
+  ms.date: 03/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]
