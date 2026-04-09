@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-ecosystems-modern-work.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Windows ecosystems for modern work: The Windows advantage" module.
+  ms.date: 04/08/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does a 'productivity ecosystem' include in a modern Windows environment?"
+    choices:
+        - content: "The device hardware, operating system, and default browser"
+          isCorrect: false
+          explanation: ""
+        - content: "The operating system and one productivity app"
+          isCorrect: false
+          explanation: ""
+        - content: "Devices, the OS, apps, cloud services, identity, security, and AI"
+          isCorrect: true
+          explanation: ""
+        - content: "Any combination of apps a user installs on their device"
+          isCorrect: false
+          explanation: ""
+  - content: "Why do organizations evaluate ecosystems instead of comparing device specs alone?"
+    choices:
+        - content: "Because hardware no longer influences work"
+          isCorrect: false
+          explanation: ""
+        - content: "Because ecosystems determine how well tools (including devices), identity, and security work together"
+          isCorrect: true
+          explanation: ""
+        - content: "Because ecosystems cost more and appear more modern"
+          isCorrect: false
+          explanation: ""
+        - content: "Because it removes the need for IT management"
+          isCorrect: false
+          explanation: ""
+  - content: "How do Windows ecosystems support collaboration across teams?"
+    choices:
+        - content: "By requiring all team members to use the same device model"
+          isCorrect: false
+          explanation: ""
+        - content: "Through standalone desktop apps that sync manually"
+          isCorrect: false
+          explanation: ""
+        - content: "Through integration with Microsoft 365 apps like Teams, Outlook, and OneDrive"
+          isCorrect: true
+          explanation: ""
+        - content: "By routing all collaboration through email only"
+          isCorrect: false
+          explanation: ""
+  - content: "Which Windows capability helps IT manage devices at scale?"
+    choices:
+        - content: "Manual device imaging on every new laptop"
+          isCorrect: false
+          explanation: ""
+        - content: "Local-only configuration tools"
+          isCorrect: false
+          explanation: ""
+        - content: "Windows Autopilot combined with Microsoft Intune"
+          isCorrect: true
+          explanation: ""
+        - content: "Hardware-specific vendor portals only"
+          isCorrect: false
+          explanation: ""
+  - content: "How does hybrid AI in Windows ecosystems support modern work?"
+    choices:
+        - content: "By running all AI processing exclusively in the cloud"
+          isCorrect: false
+          explanation: ""
+        - content: "By using both on-device AI (for speed and privacy) and cloud AI (for advanced intelligence)"
+          isCorrect: true
+          explanation: ""
+        - content: "By requiring dedicated AI hardware for every user"
+          isCorrect: false
+          explanation: ""
+        - content: "By limiting AI to a single productivity tool"
+          isCorrect: false
+          explanation: ""

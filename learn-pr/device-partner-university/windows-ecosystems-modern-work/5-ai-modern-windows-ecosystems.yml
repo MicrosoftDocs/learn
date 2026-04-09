@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-ecosystems-modern-work.ai-modern-windows-ecosystems
+title: AI capabilities in modern Windows ecosystems
+metadata:
+  title: AI Capabilities In Modern Windows Ecosystems
+  description: 'This content is part of the "Windows ecosystems for modern work: The Windows advantage" module.'
+  ms.date: 04/08/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-ai-modern-windows-ecosystems.md)]
+
