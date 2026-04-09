@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-configure-workload-identities.identify-setup-risks-ai-workload-identities
+title: Identify setup risks for AI workload identities
+metadata:
+  title: Identify Setup Risks for AI Workload Identities
+  description: "Identify the credential, permission, and governance risks that make AI workload identity setup insecure."
+  ms.date: 04/08/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/identify-setup-risks-ai-workload-identities.md)]

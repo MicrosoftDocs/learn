@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.entra-ai-configure-workload-identities
+metadata:
+  title: Set Up AI Workload Identities in Microsoft Entra
+  description: "Configure credentials, permissions, and agent identity setup for AI workload identities in Microsoft Entra."
+  ms.date: 04/08/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: entra-id
+  ai-usage: ai-assisted
+title: Set up AI workload identities in Microsoft Entra
+summary: Configure credentials and least-privilege access for AI workload identities, then create agent identities from blueprints with the right permissions and accountability in Microsoft Entra.
+abstract: |
+  After completing this module, you will be able to:
+  - Recognize the setup choices that create security risk for AI workload identities.
+  - Select and configure the appropriate credential pattern for an AI workload identity based on where the workload runs.
+  - Apply least-privilege access by right-sizing Azure RBAC, Microsoft Graph permissions, and app roles.
+  - Explain how agent identity blueprints govern creation, credentials, and token exchange for agent identities.
+  - Assign owners, sponsors, and managers to establish accountability for agent identities.
+prerequisites: |
+  - Working knowledge of Microsoft Entra ID service principals, app registrations, and managed identities.
+  - Familiarity with Azure RBAC role assignments and Microsoft Graph application permissions.
+  - Basic understanding of workload identity federation concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.entra-ai-configure-workload-identities.introduction
+- learn.wwl.entra-ai-configure-workload-identities.identify-setup-risks-ai-workload-identities
+- learn.wwl.entra-ai-configure-workload-identities.configure-credentials-permissions-ai-workload-identities
+- learn.wwl.entra-ai-configure-workload-identities.map-agent-identity-blueprints-agent-identity-configuration
+- learn.wwl.entra-ai-configure-workload-identities.create-agent-identities-blueprints-exchange-tokens
+- learn.wwl.entra-ai-configure-workload-identities.establish-accountability-agent-identities
+- learn.wwl.entra-ai-configure-workload-identities.knowledge-check
+- learn.wwl.entra-ai-configure-workload-identities.summary
+badge:
+  uid: learn.wwl.entra-ai-configure-workload-identities.badge

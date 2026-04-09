@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-configure-workload-identities.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 04/08/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator is configuring authentication for an AI workload running on Azure App Service. Which credential choice best reduces credential management overhead?"
+    choices:
+    - content: "A client secret stored in application settings"
+      isCorrect: false
+      explanation: "That is incorrect. Client secrets increase rotation and exposure risk, and they are not the preferred option for Azure-hosted workloads."
+    - content: "A managed identity used directly by the Azure-hosted workload"
+      isCorrect: true
+      explanation: "That is correct. Managed identities remove the need to manage secrets or certificates for Azure-hosted workloads."
+    - content: "A shared certificate reused across unrelated workloads"
+      isCorrect: false
+      explanation: "That is incorrect. Reusing certificates across workloads weakens isolation and creates unnecessary management risk."
+  - content: "A workload runs outside Azure and needs app-only access to Microsoft Graph. Which approach avoids storing secrets while meeting the authentication requirement?"
+    choices:
+    - content: "Assign the workload a system-assigned managed identity in Microsoft Entra ID without any trust configuration"
+      isCorrect: false
+      explanation: "That is incorrect. A workload outside Azure cannot use an Azure-managed identity without a configured trust relationship."
+    - content: "Use delegated user permissions so the workload can avoid app permissions"
+      isCorrect: false
+      explanation: "That is incorrect. The scenario requires app-only access, so delegated user permissions do not fit the requirement."
+    - content: "Configure workload identity federation so the application trusts an external token or managed identity token"
+      isCorrect: true
+      explanation: "That is correct. Workload identity federation lets the application trust an external token instead of storing a secret, which fits workloads that run outside Azure or use an app registration."
+  - content: "What is the primary role of an agent identity blueprint in Microsoft Entra Agent ID?"
+    choices:
+    - content: "It acts as the reusable governing template that holds shared configuration and credentials for agent identities"
+      isCorrect: true
+      explanation: "That is correct. The blueprint is the governing template from which agent identities are created and authenticated."
+    - content: "It replaces the need for sponsors, owners, and managers on agent identities"
+      isCorrect: false
+      explanation: "That is incorrect. Administrative relationships still need to be assigned to maintain accountability."
+    - content: "It converts every agent identity into a multitenant application by default"
+      isCorrect: false
+      explanation: "That is incorrect. Blueprints govern agent identities, but they do not automatically make every scenario multitenant."
+  - content: "Which administrative relationship provides business accountability for an agent identity without technical configuration privileges?"
+    choices:
+    - content: "Owner"
+      isCorrect: false
+      explanation: "That is incorrect. Owners handle technical administration such as configuration and credential management."
+    - content: "Sponsor"
+      isCorrect: true
+      explanation: "That is correct. Sponsors are accountable for the agent's purpose, lifecycle, and access decisions without needing technical admin access."
+    - content: "Manager"
+      isCorrect: false
+      explanation: "That is incorrect. Managers are relevant for agent user account relationships, not overall business accountability."
+  - content: "An agent identity needs to read secrets from Azure Key Vault. Which permission model should be used to grant access?"
+    choices:
+    - content: "Azure RBAC role assignment scoped to the Key Vault"
+      isCorrect: true
+      explanation: "That is correct. Access to Azure resources such as Key Vault is granted through Azure RBAC roles scoped to the required resource."
+    - content: "Microsoft Graph application permissions"
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Graph permissions are used for directory or Microsoft 365 operations, not Azure resource access."
+    - content: "App roles assigned on the blueprint"
+      isCorrect: false
+      explanation: "That is incorrect. App roles apply to custom APIs, not Azure resource access."
