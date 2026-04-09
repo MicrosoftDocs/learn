@@ -49,7 +49,7 @@ Templates cover scenarios such as:
 
 To use a template, find it at the bottom of the Cloud Security Explorer page and select **Open query**. The template pre-populates the query builder with filters and conditions, which you can modify before selecting **Search**.
 
-When AWS or GCP cloud connectors are active and Defender CSPM is enabled on those accounts, the same explorer interface supports multi-cloud queries. Organizations with hybrid cloud architectures can extend these hunting practices across all connected cloud platforms.
+When AWS or GCP cloud connectors are active and Defender CSPM is enabled on those accounts, the same explorer interface supports multicloud queries. Organizations with hybrid cloud architectures can extend these hunting practices across all connected cloud platforms.
 
 ## Share and export query results
 
