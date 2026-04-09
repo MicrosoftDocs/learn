@@ -5,7 +5,7 @@ metadata:
   description: "Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools."
   ms.date: 11/09/2022
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: GraemeMalcolm
   ms.topic: module-standard-task-based
   ms.service: azure-database-mysql
 title: Understand concurrency in MySQL
@@ -37,4 +37,4 @@ units:
 - learn.wwl.understand-concurrency-mysql.knowledge-check
 - learn.wwl.understand-concurrency-mysql.summary
 badge:
-  uid: learn.wwl.understand-concurrency-mysql.badge
+  uid: learn.wwl.understand-concurrency-mysql.badge

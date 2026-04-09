@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.propose-foundry-tools-given-requirement
+title: "Propose Foundry tools given a requirement"
+metadata:
+  title: "Propose Foundry Tools Given a Requirement"
+  description: "Learn to propose Azure AI Foundry tools based on business requirements, ensuring security, compliance, and integration with enterprise systems."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-propose-foundry-tools-given-requirement.md)]

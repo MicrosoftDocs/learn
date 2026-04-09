@@ -5,7 +5,7 @@ metadata:
   description: "Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL."
   ms.date: 10/10/2022
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: GraemeMalcolm
   ms.topic: module-standard-task-based
   ms.service: azure-database-mysql
 title: Explore MySQL Architecture
@@ -37,4 +37,4 @@ units:
 - learn.wwl.explore-mysql-architecture.knowledge-check
 - learn.wwl.explore-mysql-architecture.summary
 badge:
-  uid: learn.wwl.explore-mysql-architecture.badge
+  uid: learn.wwl.explore-mysql-architecture.badge
