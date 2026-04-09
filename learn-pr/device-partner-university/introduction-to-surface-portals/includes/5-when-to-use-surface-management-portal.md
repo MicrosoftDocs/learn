@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/when-to-use-surface-management.png" alt-text="Photo of an IT employee using a deployed Surface device.":::
+:::image type="content" border="true" source="../media/surface-laptop-desk.png" alt-text="Photograph of a Surface laptop on a desk.":::
 
 Here are the typical scenarios where utilizing Surface Management Portal applies:
 

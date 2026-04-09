@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-field-deployment.jpeg" alt-text="Photograph of Surface devices being deployed in a field environment.":::
+:::image type="content" border="true" source="../media/when-to-use-portals.png" alt-text="Photograph of Surface devices being used in various scenarios.":::
 
 Surface portals provide IT administrators with a centralized solution to manage and monitor Surface devices at scale, with insights and visibility into work environments. With Surface portals, you can do the following:
 

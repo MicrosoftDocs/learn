@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/when-to-use-surface-support.png" alt-text="Photo of an IT employee using a Surface device for support tasks.":::
+:::image type="content" border="true" source="../media/surface-pro-laptop-family.png" alt-text="Photograph of a Surface Pro and Surface Laptop.":::
 
 These are the typical scenarios for utilizing Surface Support Portal:
 
