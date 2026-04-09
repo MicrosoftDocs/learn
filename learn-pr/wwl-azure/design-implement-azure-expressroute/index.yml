@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-expressroute
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design and implement Azure ExpressRoute
 summary: You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath.
 abstract: |

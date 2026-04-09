@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=013e3314-ad82-4e87-a65f-b4ef5bea6b92]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Understanding how spec-driven development (SDD) relates to other software development methodologies helps you see where it fits in your existing practices. Rather than replacing what you already know, SDD can complement and enhance established approaches, especially when you're using AI-assisted development tools.
 
 ## Methodology comparison overview
@@ -112,3 +120,8 @@ The key is recognizing SDD as a tool in your toolkit, not a silver bullet for ev
 ## Summary
 
 Spec-driven development offers a structured, adaptable approach that complements and enhances existing methodologies. When you focus on clear specifications, living artifacts, and AI collaboration, SDD provides a reliable framework for building high-quality software in complex scenarios. Understanding when and how to apply SDD alongside other methodologies allows you to use its strengths effectively while maintaining flexibility in your development practices.
+
+::: zone-end
+
+> [!NOTE]
+> See the **Text and images** tab for more details!

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.apply-power-platform-well-architected-framework
+title: "Apply the Microsoft Power Platform Well-Architected Framework to intelligent application workloads"
+metadata:
+  title: "Apply the Power Platform Well-Architected Framework"
+  description: "Learn to apply the five pillars of the Microsoft Power Platform Well-Architected Framework when designing intelligent application workloads with Power Apps and Copilot."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 12
+content: |
+  [!include[](includes/15-apply-power-platform-well-architected-framework.md)]

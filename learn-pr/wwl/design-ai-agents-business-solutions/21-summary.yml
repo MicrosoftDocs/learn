@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.summary
+title: "Summarize AI agent design for business solutions"
+metadata:
+  title: "Summarize AI Agent Design for Business Solutions"
+  description: "Learn foundational concepts and strategies for designing AI-powered agents tailored to business needs using Dynamics 365 and Copilot."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+  [!include[](includes/21-summary.md)]
