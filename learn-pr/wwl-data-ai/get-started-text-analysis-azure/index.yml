@@ -14,7 +14,7 @@ metadata:
   ms.service: azure-ai-language
   ai-usage: ai-assisted
 title: Get started with text analysis in Azure
-summary: Learn how to use both general-purpose AI models and Azure Language in Foundry Tools, then build a Python client app that analyzes text.
+summary: Learn how to use both general-purpose AI models and Azure Language in Foundry Tools, then build a lightweight Python client application that analyzes text.
 abstract: Learn how to use Microsoft Foundry capabilities for text analysis
 prerequisites: Ability to navigate the Azure portal and basic knowledge of Python programming
 iconUrl: /learn/achievements/generic-badge.svg
