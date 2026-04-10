@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-configure-workload-identities.prepare-blueprint-configuration
+title: Prepare blueprint configuration before agent identity creation
+metadata:
+  title: Prepare blueprint configuration before agent identity creation
+  description: "Map blueprint concepts to the configuration decisions required for agent identities."
+  ms.date: 04/08/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/prepare-blueprint-configuration.md)]
