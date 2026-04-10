@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.introduction
-title: Introduction
+title: Introduction to agentic DevOps for Microsoft environments
 metadata:
-  title: Introduction
+  title: Introduction to agentic DevOps for Microsoft environments
   description: "Overview of agentic DevOps and what this module covers for Microsoft DevOps Engineers on Azure."
   ms.date: 04/03/2026
   author: petender
