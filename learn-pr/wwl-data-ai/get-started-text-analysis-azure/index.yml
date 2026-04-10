@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-with-text-analysis-in-azure
 metadata:
   title: Get started with text analysis in Azure
   description: "Get started with text analysis in Azure"
-  ms.date: 03/24/2026
+  ms.date: 04/10/2026
   ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: sheryang
@@ -14,9 +14,9 @@ metadata:
   ms.service: azure-ai-language
   ai-usage: ai-assisted
 title: Get started with text analysis in Azure
-summary: Explore Azure Language's text analysis features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
-abstract: Learn how to use Azure Language for text analysis
-prerequisites: Ability to navigate the Azure portal
+summary: Learn how to use both general-purpose AI models and Azure Language in Foundry Tools, then build a Python client app that analyzes text.
+abstract: Learn how to use Microsoft Foundry capabilities for text analysis
+prerequisites: Ability to navigate the Azure portal and basic knowledge of Python programming
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
