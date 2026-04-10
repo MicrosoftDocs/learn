@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.evaluate-regional-local-ai-data-regulation-compliance-requirements
+title: "Evaluate regional and local AI data regulation compliance requirements"
+metadata:
+  title: "Evaluate Regional and Local AI Data Regulation Compliance Requirements"
+  description: "Learn to evaluate regional and local AI data regulation compliance requirements, map them to Microsoft controls, and ensure AI governance readiness."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/14-evaluate-regional-local-ai-data-regulation-compliance-requirements.md)]
