@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.determine-custom-ai-models-created
+title: "Determine when custom AI models should be created"
+metadata:
+  title: "Determine when custom AI models should be created"
+  description: "Learn how to determine when to build custom AI models versus using prebuilt catalog models, including business, technical, and cost-efficiency drivers."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-determine-custom-ai-models-created.md)]
