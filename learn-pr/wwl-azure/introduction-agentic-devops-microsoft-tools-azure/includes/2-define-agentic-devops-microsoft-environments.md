@@ -8,15 +8,15 @@ An agent, in the AI sense, is a system that perceives its environment, reasons a
 
 Three properties distinguish agentic capabilities from traditional automation and from simple AI chatbots:
 
-- **Goal orientation** — the agent works toward an objective, not a fixed sequence of commands.
-- **Tool invocation** — the agent calls external tools, APIs, or services to gather information and take actions.
-- **Observe-reason-act loops** — the agent evaluates intermediate results and adjusts its plan accordingly.
+- **Goal orientation** - the agent works toward an objective, not a fixed sequence of commands.
+- **Tool invocation** - the agent calls external tools, APIs, or services to gather information and take actions.
+- **Observe-reason-act loops** - the agent evaluates intermediate results and adjusts its plan accordingly.
 
-Traditional DevOps automation has goal orientation (pipelines have a target state) and sometimes tool invocation, but it doesn't have the adaptive reasoning loop. A Bash script doesn't observe that its first command failed and then choose a different strategy. An agent does.
+Traditional DevOps automation has goal orientation (pipelines have a target state) and sometimes tool invocation, but it doesn't have the **adaptive reasoning loop**. A Bash script doesn't observe that its first command failed to then choose a different strategy. An agent does.
 
 ## Place agentic DevOps on the Microsoft platform spectrum
 
-Microsoft has been building incremental agentic capabilities across its toolchain for several years. The progression is clearest in GitHub Copilot, which moved from a code completion tool to a chat assistant, then to agent mode, and now to a cloud-based coding agent that can take assigned tasks, open pull requests, and iterate on feedback without staying in your editor.
+Microsoft has been building incremental agentic capabilities across its toolchain for several years. The progression is clearest in GitHub Copilot, which moved from a code completion tool to a chat assistant. Then evolved into agent mode, and now is a cloud-based coding agent that can take assigned tasks, open pull requests, and iterate on feedback without staying in your editor.
 
 A similar progression appears across the platform:
 
@@ -29,7 +29,7 @@ A similar progression appears across the platform:
 | Azure DevOps AI capabilities | AI-assisted work item summaries, pull request descriptions, pipeline authoring suggestions, and Boards content generation — integrated into daily workflow surfaces. |
 | MCP-enabled tooling | Extensions to any of the above through the Model Context Protocol. Gives agents access to additional tools (Azure CLI, ADO project context, Bicep analyzer) scoped by you. |
 
-Rather than treating these as separate products to learn in isolation, think of them as different points on an autonomy spectrum. A Copilot suggestion is you driving with AI navigation. Agent mode is AI driving while you supervise. A platform-managed agent is AI driving on a closed course while you watch the dashcam.
+Rather than treating these as separate products to learn in isolation, think of them as different points on an autonomy spectrum. Based on your experience level, you might use them isolated at first, to then evolve into a combined set of tools. 
 
 ## Distinguish agentic capabilities from your existing automation
 
@@ -41,7 +41,7 @@ The key distinction is *breadth of context* and *adaptive decision-making*. Your
 - Select from a set of available tools to gather what it needs, rather than having tool selection hard-coded.
 - Respond to intermediate results — for example, discovering mid-task that a resource name conflicts with an existing deployment and choosing an alternative automatically.
 
-This isn't a replacement for your automation. It's a different layer of the operating model — one that handles the *judgment-intensive, context-switching, multi-source* work that your pipelines were never designed to absorb.
+This isn't a replacement for your automation. It's a different layer of the operating model. One that handles the *judgment-intensive, context-switching, multi-source* work that your pipelines were never designed to absorb.
 
 ## Define agentic DevOps as an operating model
 
@@ -49,7 +49,7 @@ Agentic DevOps is the application of agent-based AI capabilities to DevOps workf
 
 The goal isn't to remove DevOps engineers from the loop. It's to change **what** they're in the loop for. Instead of manually triaging a failing build by searching through five different log views, you describe the failure to an agent, which synthesizes the logs, cross-references similar past failures, and surfaces the probable root cause with supporting evidence. You still make the fix decision. You just spend less time on the search.
 
-This distinction — AI doing the information-intensive groundwork, humans making the consequential decision — is the foundation of every concept in the rest of this module.
+This distinction of AI doing the information-intensive groundwork, and humans making the consequential decision, is the foundation of every concept in the rest of this module.
 
 > [!NOTE]
 > The capabilities described in this module represent the Microsoft platform. Specific feature availability may vary by plan, region, and product release cycle. Always verify capability status in official Microsoft documentation before designing production workflows.

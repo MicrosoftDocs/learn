@@ -1,6 +1,10 @@
-Identifying high-value agentic opportunities is the easier half of the problem. The harder half is deciding exactly how much autonomy to grant for each one — and building the guardrails that keep your production environment safe when agents operate within it.
+Identifying high-value agentic opportunities is the easier half of the problem. The harder half is deciding exactly how much autonomy to grant for each one. And also building the guardrails that keep your production environment safe when agents operate within it.
 
-The engineers who get this wrong tend to fall into one of two failure modes: they lock down agents so tightly that the only value delivered is autocomplete-level suggestions, or they extend autonomous execution to actions whose blast radius they haven't carefully analyzed. Both failures undermine adoption and erode trust. The goal is a calibrated model that matches autonomy level to reversibility, blast radius, and regulatory context.
+The engineers who get this wrong tend to fall into one of two failure modes: 
+- they lock down agents so tightly that the only value delivered is autocomplete-level suggestions, 
+- or they extend autonomous execution to actions whose blast radius they haven't carefully analyzed. 
+
+Both failures undermine adoption and erode trust. The goal is a calibrated model that matches autonomy level to reversibility, blast radius, and regulatory context.
 
 ## Understand the autonomy spectrum
 
@@ -13,7 +17,7 @@ Not all agentic actions carry the same operational weight. A useful way to class
 | **Execute on approval** | Prepares execution plan and waits for explicit confirmation | Review plan and authorize each step | Create a work item, update a variable group, and generate and apply IaC changes to a non-production environment |
 | **Execute autonomously** | Takes action through the full sequence without per-step confirmation | Define scope, monitor outcomes, and receive summary | Assign and triage incoming bug reports, run read-only API queries, and generate unit tests for new functions |
 
-Most of your day-to-day agentic operations will sit at **Inform** and **Suggest** for the first months. That's not a limitation — it's appropriate calibration while you build confidence in agent behavior and develop the observability instrumentation to audit what agents do.
+Most of your day-to-day agentic operations will sit at **Inform** and **Suggest** for the first months. That's not a technical or adoption limitation. It allows your team to build up confidence and trust in agent behavior and develop the observability instrumentation to audit what agents do.
 
 ## Classify actions by reversibility and blast radius
 
@@ -46,11 +50,11 @@ For DevOps engineers on Azure, several operations require hard human control poi
 - **Security group and RBAC modifications** — role assignment changes and network security group rule additions must be human-authorized regardless of the principal making the change.
 - **Policy exception creation** — agents should never autonomously create Azure Policy exemptions or exclusions, even temporarily.
 
-These aren't arbitrary restrictions. They map to the areas where audit regulators, security teams, and incident post-mortems consistently find the highest risk. Keeping humans in the loop at these points doesn't slow down your deployment frequency — it keeps the agentic layer from becoming a liability.
+These aren't arbitrary restrictions. They map to the areas where audit regulators, security teams, and incident post-mortems consistently find the highest risk. Keeping humans in the loop at these points doesn't slow down your deployment frequency but rather keeps the agentic layer from becoming a liability.
 
 ## Apply least-privilege principles to agent identities
 
-When agents invoke tools — Azure CLI, ADO REST APIs, Bicep deployments — they authenticate with an identity. That identity must follow least-privilege: the minimum permissions needed to complete the authorized scope of the agent's work.
+When agents invoke tools — Azure CLI, ADO REST APIs, Bicep or Terraform deployments — they authenticate with an identity. That identity must follow least-privilege: the minimum permissions needed to complete the authorized scope of the agent's work.
 
 For GitHub Copilot agent mode, tool invocations execute in the context of your local or codespace session, where scope is bounded naturally by your own access. For the cloud-based GitHub Copilot coding agent, execution happens in a GitHub Actions sandbox environment using a managed identity with federated credentials — not in your local session. Review the role assignments granted to that managed identity and treat them with the same scrutiny you apply to any service principal used in your deployment workflows. For platform-managed agents like Azure Copilot agents, review the managed identity or service principal they use and audit its RBAC role assignments regularly.
 
@@ -60,9 +64,9 @@ For MCP-based extensions — where you explicitly give a Copilot session access 
 
 Every agentic action that writes, modifies, or invokes infrastructure should produce an auditable trail. For most Microsoft tool integrations, this means:
 
-- Azure Monitor activity logs for all Azure resource operations initiated by agent-backed managed identities.
-- Azure DevOps audit logs for work item creation, pipeline modifications, and access token activity.
-- GitHub audit logs for coding agent pull requests and repository interactions.
+- **Azure Monitor** activity logs for all Azure resource operations initiated by agent-backed managed identities.
+- **Azure DevOps audit logs** for work item creation, pipeline modifications, and access token activity.
+- **GitHub audit logs** for coding agent pull requests and repository interactions.
 
 Treat agent-initiated changes the same way you treat service principal-initiated changes: they should be visible in your existing SIEM and reviewable during incident post-mortems.
 
