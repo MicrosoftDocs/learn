@@ -150,7 +150,7 @@ Language detection returns the following result:
 
 In the Foundry portal, you can test Azure Language's language detection feature in the chat Playground.
 
-:::image type="content" source="../media/language-detection.png" alt-text="Screenshot of the chat playground's language detection capability." lightbox="../media/text-04.png":::
+:::image type="content" source="../media/language-detection.png" alt-text="Screenshot of the chat playground's language detection capability." lightbox="../media/language-detection.png":::
 
 #### Personally identifiable information detection
 
@@ -170,7 +170,7 @@ PII detection identifies the following entities:
 
 In the Foundry portal, you can test Azure Language's PII detection feature in the Language Playground.
 
-:::image type="content" source="../media/pii-redaction.png" alt-text="Screenshot of the Language playground's PII detection capability." lightbox="../media/text-05.png":::
+:::image type="content" source="../media/pii-redaction.png" alt-text="Screenshot of the Language playground's PII detection capability." lightbox="../media/pii-redaction.png":::
 
 Next, learn how to create a client application with text analysis capabilities using both the OpenAI responses API and the Azure Language SDK.
 
