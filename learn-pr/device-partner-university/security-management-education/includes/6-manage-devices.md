@@ -27,5 +27,3 @@ Windows Autopilot enrolls devices into Microsoft Intune for Education, applies p
 By combining Microsoft Intune for Education and Windows Autopilot, institutions ensure every device starts with a secure baseline and remains compliant throughout its lifecycle, supporting equitable access, consistent security enforcement, and efficient operations.
 
 **Example:** An IT admin prepares 500 new laptops for a school district. Instead of manually imaging each device, the admin configures Windows Autopilot profiles in Microsoft Intune for Education. When the laptops arrive at students’ homes, they automatically apply the correct settings, install required apps, join the school network, and enforce security policies—ready for use on day one without the admin touching a single device.
-
-By combining Microsoft Intune for Education and Windows Autopilot, institutions ensure that every device begins with a secure baseline and remains compliant throughout its lifecycle. This unified approach supports equitable access, consistent security enforcement, and efficient operations.
