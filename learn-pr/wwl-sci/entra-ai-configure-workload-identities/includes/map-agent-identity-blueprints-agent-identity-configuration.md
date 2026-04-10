@@ -44,11 +44,7 @@ How the agent operates determines which configuration decisions you make on the 
 - In **unattended (autonomous)** scenarios, the blueprint acquires tokens using client credentials flow so the agent can act under its own authority. No user context is involved.
 - In **attended (interactive)** scenarios, the front end acquires a user token and the agent backend exchanges it using on-behalf-of flow. The agent acts with both the agent identity and the user's delegated permissions.
 
-The operating pattern affects:
-
-- Whether you need to expose a scope on the blueprint. Attended scenarios require a scope so the front end can request a token.
-- Whether an agent user account is necessary.
-- How the token exchange flow works in practice.
+The operating pattern affects which authentication properties the blueprint needs, whether an agent user account is necessary, and how the token exchange flow works in practice. Attended scenarios require additional authentication properties on the blueprint beyond the client credential. The next unit covers that configuration.
 
 ## Prepare for creation
 
