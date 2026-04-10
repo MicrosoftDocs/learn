@@ -4,11 +4,11 @@ You've now defined that layer precisely, mapped where it delivers value across t
 
 ## Key concepts from this module
 
-- An agent is distinguished from automation by goal orientation, tool invocation, and adaptive observe-reason-act loops. These properties let agents handle multi-source, multi-step tasks that require context synthesis rather than scripted execution.
-- The Microsoft platform provides agentic capabilities across a spectrum: from GitHub Copilot suggestions and agent mode, to Azure Copilot's specialized operational agents, to Azure DevOps AI features embedded directly in daily workflow surfaces.
-- The DevOps phases most amenable to early agentic adoption are plan/track work, code review, pipeline failure triage, and operational observability — tasks that are high-frequency, information-intensive, and produce reversible or read-only outcomes.
-- Autonomy levels should be matched to reversibility and blast radius. Low reversibility and high blast radius operations — production deployments, credential operations, RBAC changes, policy exceptions — require human authorization regardless of agent maturity.
-- Observability and audit logging for agent-initiated actions are required from day one, not added later. They form the compliance baseline and the feedback mechanism for responsibly expanding autonomy over time.
+- **Agents vs. automation**: Agents are goal-oriented, invoke tools dynamically, and adapt through observe-reason-act loops. This lets them handle complex, multi-step tasks requiring context synthesis instead of scripted steps.
+- **Microsoft's agentic spectrum**: GitHub Copilot, Azure Copilot agents, Azure DevOps AI, and MCP extensibility provide agentic capabilities across different surfaces.
+- **High-value DevOps phases**: Plan/track, code review, pipeline triage, and observability are best suited for early adoption—they're frequent, information-rich, and low-risk.
+- **Autonomy matching**: Tie autonomy levels to reversibility and blast radius. High-risk operations (deployments, credentials, role assigments, policy changes) always require human approval.
+- **Observability from day one**: Log and audit all agent actions. This ensures compliance and provides feedback for safely increasing autonomy over time.
 
 ## Next steps
 

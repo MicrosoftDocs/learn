@@ -1,8 +1,9 @@
 Identifying high-value agentic opportunities is the easier half of the problem. The harder half is deciding exactly how much autonomy to grant for each one. And also building the guardrails that keep your production environment safe when agents operate within it.
 
-The engineers who get this wrong tend to fall into one of two failure modes: 
-- they lock down agents so tightly that the only value delivered is autocomplete-level suggestions, 
-- or they extend autonomous execution to actions whose blast radius they haven't carefully analyzed. 
+The engineers who get this concept wrong tend to fall into one of two failure modes:
+
+- **locked-down agents**: agents are locked so tightly, that the only value delivered is autocomplete-level suggestions. 
+- **autonomous execution**: agents run actions autonomously, without carefully analyzing impact.
 
 Both failures undermine adoption and erode trust. The goal is a calibrated model that matches autonomy level to reversibility, blast radius, and regulatory context.
 
@@ -17,7 +18,7 @@ Not all agentic actions carry the same operational weight. A useful way to class
 | **Execute on approval** | Prepares execution plan and waits for explicit confirmation | Review plan and authorize each step | Create a work item, update a variable group, and generate and apply IaC changes to a non-production environment |
 | **Execute autonomously** | Takes action through the full sequence without per-step confirmation | Define scope, monitor outcomes, and receive summary | Assign and triage incoming bug reports, run read-only API queries, and generate unit tests for new functions |
 
-Most of your day-to-day agentic operations will sit at **Inform** and **Suggest** for the first months. That's not a technical or adoption limitation. It allows your team to build up confidence and trust in agent behavior and develop the observability instrumentation to audit what agents do.
+Most of your day-to-day agentic operations will sit at **Inform** and **Suggest** for the first months. This approach is not a technical or adoption limitation. It allows your team to build up confidence and trust in agent behavior and develop the observability instrumentation to audit what agents do.
 
 ## Classify actions by reversibility and blast radius
 
@@ -36,7 +37,7 @@ Combine these dimensions and you get a quick classification model:
 | Low | Low | Execute on approval |
 | Low | Medium or High | Suggest only — human executes |
 
-**Never grant autonomous execution** to actions that combine low reversibility with any meaningful blast radius. Production deployments, secret or credential operations, network security group modifications, role assignment changes, and policy exceptions all fall in this quadrant regardless of how well-tested your agent instructions are.
+**Never grant autonomous execution** to actions that combine low reversibility with any meaningful blast radius. Several examples fall in this quadrant, such as production deployments, and how you handle secret or credential operations. Or think of network security group modifications or role assignment changes. Regardless of how well-tested your agent instructions are, keep human oversight as guardrail for these.
 
 ## Define human control points for production-facing operations
 
