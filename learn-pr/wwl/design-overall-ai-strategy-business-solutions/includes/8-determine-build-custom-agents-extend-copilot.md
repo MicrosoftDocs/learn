@@ -75,12 +75,12 @@ Below are critical criteria solution architects should consider when selecting a
 
 Choose custom agents when:
 
-- Data must be processed across systems outside Microsoft 365
+- Data must be processed across systems outside Microsoft 365.
 - You need strict grounding control and advanced vector search behavior.
 
 Extend Copilot when:
 
-- Data lives primarily in Microsoft 365
+- Data lives primarily in Microsoft 365.
 
 - You require secure use of existing document graphs, semantic index, or organizational knowledge.
 
@@ -88,9 +88,9 @@ Extend Copilot when:
 
 Select custom agents if:
 
-- You need to call specialized internal systems
+- You need to call specialized internal systems.
 
-- Actions require advanced logic, branching, or multi-step processes
+- Actions require advanced logic, branching, or multi-step processes.
 
 - The environment must run independently from user interactions.
 
@@ -120,7 +120,7 @@ Choose custom agents when:
 
 Extend Copilot when:
 
-- The team needs a low-code approach
+- The team needs a low-code approach.
 
 - Rapid enablement outweighs customization needs.
 
@@ -141,25 +141,25 @@ Extend Copilot when:
 
 ### Choose to extend Microsoft 365 Copilot when
 
-- The primary user interaction occurs in Word, Excel, Teams, or Outlook
+- The primary user interaction occurs in Word, Excel, Teams, or Outlook.
 
-- You want seamless integration with existing Microsoft 365 activities
+- You want seamless integration with existing Microsoft 365 activities.
 
-- Productivity acceleration is the main objective
+- Productivity acceleration is the main objective.
 
-- Minimal engineering investment is required
+- Minimal engineering investment is required.
 
 - The solution must inherit Microsoft's Responsible AI compliance.
 
 ### Choose to build custom agents when
 
-- Business rules require modeling complex domain logic
+- Business rules require modeling complex domain logic.
 
-- You need orchestration across tools, APIs, or other agents
+- You need orchestration across tools, APIs, or other agents.
 
-- Autonomy, continuous workflows, or system-wide triggers are important
+- Autonomy, continuous workflows, or system-wide triggers are important.
 
-- Integration with external enterprise systems is mandatory
+- Integration with external enterprise systems is mandatory.
 
 - You must design specialized behaviors or multi-agent collaboration.
 
