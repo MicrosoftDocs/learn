@@ -14,8 +14,8 @@ The most important setup discipline is to treat successful authentication as onl
 
 ## Resources
 
-- [Managed identities for Azure resources](https://learn.microsoft.com/entra/identity/managed-identities-azure-resources/overview?azure-portal=true)
-- [Workload identity federation concepts](https://learn.microsoft.com/entra/workload-id/workload-identity-federation?azure-portal=true)
-- [Create an agent identity blueprint](https://learn.microsoft.com/entra/agent-id/identity-platform/create-blueprint?azure-portal=true)
-- [Create agent identities in agent identity platform](https://learn.microsoft.com/entra/agent-id/identity-platform/create-delete-agent-identities?azure-portal=true)
-- [Administrative relationships in Microsoft Entra Agent ID](https://learn.microsoft.com/entra/agent-id/identity-platform/agent-owners-sponsors-managers?azure-portal=true)
+- [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview?azure-portal=true)
+- [Workload identity federation concepts](/entra/workload-id/workload-identity-federation?azure-portal=true)
+- [Create an agent identity blueprint](/entra/agent-id/identity-platform/create-blueprint?azure-portal=true)
+- [Create agent identities in agent identity platform](/entra/agent-id/identity-platform/create-delete-agent-identities?azure-portal=true)
+- [Administrative relationships in Microsoft Entra Agent ID](/entra/agent-id/identity-platform/agent-owners-sponsors-managers?azure-portal=true)
