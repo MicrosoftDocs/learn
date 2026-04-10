@@ -13,5 +13,3 @@ CWPP plans transform Defender for Cloud from a compliance and posture tool into 
 - [Protect your databases with Defender for Databases](/azure/defender-for-cloud/tutorial-enable-databases-plan)
 - [About Microsoft Defender for APIs](/azure/defender-for-cloud/defender-for-apis-introduction)
 - [AI threat protection in Defender for Cloud](/azure/defender-for-cloud/ai-threat-protection)
-
-**Ready to practice?** Try the [hands-on lab for this module](../labs/lab-enable-configure-workload-protection-plans.md) to apply what you learned in a live Azure environment.
