@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.design-overall-ai-strategy-business-solutions
+metadata:
+  title: "Design Overall AI Strategy for Business Solutions"
+  description: "Learn to design an enterprise AI strategy using Azure's Cloud Adoption Framework. Align AI agent lifecycle with business goals for operational excellence."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: microsoft-365-copilot
+title: "Design overall AI strategy for business solutions"
+summary: Learn to design an enterprise AI strategy using Azure's Cloud Adoption Framework, aligning AI agent lifecycle with business goals for operational excellence.
+abstract: |
+  After completing this module, you'll be able to:
+  - Map CAF's AI adoption phases to the AI agent lifecycle.
+  - Design an enterprise-ready operating model for AI agents.
+  - Select and apply Microsoft platforms for AI solutions.
+  - Utilize checklists to transition AI workloads from proof of concept to production.
+prerequisites: |
+  - Familiarity with Azure Cloud Adoption Framework.
+  - Basic understanding of AI agent lifecycle and governance.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.design-overall-ai-strategy-business-solutions.introduction
+- learn.wwl.design-overall-ai-strategy-business-solutions.implement-ai-adoption-process-cloud-adoption-framework-azure
+- learn.wwl.design-overall-ai-strategy-business-solutions.design-strategy-building-ai-agents-business-solutions
+- learn.wwl.design-overall-ai-strategy-business-solutions.design-multi-agent-solution
+- learn.wwl.design-overall-ai-strategy-business-solutions.develop-use-cases-prebuilt-agents-solution
+- learn.wwl.design-overall-ai-strategy-business-solutions.define-solution-rules-constraints-building-ai-components
+- learn.wwl.design-overall-ai-strategy-business-solutions.determine-generative-ai-knowledge-sources-agents-built-copilot-studio
+- learn.wwl.design-overall-ai-strategy-business-solutions.determine-build-custom-agents-extend-copilot
+- learn.wwl.design-overall-ai-strategy-business-solutions.determine-custom-ai-models-created
+- learn.wwl.design-overall-ai-strategy-business-solutions.provide-guidelines-creating-prompt-library
+- learn.wwl.design-overall-ai-strategy-business-solutions.develop-use-cases-customized-small-language-models-solution
+- learn.wwl.design-overall-ai-strategy-business-solutions.provide-prompt-engineering-guidelines-techniques
+- learn.wwl.design-overall-ai-strategy-business-solutions.identify-key-business-user-roles-ai-workloads
+- learn.wwl.design-overall-ai-strategy-business-solutions.evaluate-regional-local-ai-data-regulation-compliance-requirements
+- learn.wwl.design-overall-ai-strategy-business-solutions.include-elements-microsoft-ai-center-excellence
+- learn.wwl.design-overall-ai-strategy-business-solutions.design-ai-solutions-use-multiple-dynamics-365-apps
+- learn.wwl.design-overall-ai-strategy-business-solutions.design-user-prompt-training-ai-solution-adoption
+- learn.wwl.design-overall-ai-strategy-business-solutions.knowledge-check
+- learn.wwl.design-overall-ai-strategy-business-solutions.summary
+badge:
+  uid: learn.wwl.design-overall-ai-strategy-business-solutions.badge
