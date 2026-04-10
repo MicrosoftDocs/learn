@@ -8,21 +8,82 @@ metadata:
   author: hhreyes21
   ms.author: v-homerreyes
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which description best reflects the concept of student success in modern K–12 education as defined in the module?"
-    choices:
-        - content: "Academic achievement measured primarily by test scores"
+    - content: "Which description best reflects how this module defines student success in modern K-12 education?"
+      choices:
+        - content: "Academic mastery alone, measured primarily through standardized testing"
           isCorrect: false
-          explanation: ""
-        - content: "Preparation for standardized assessments and graduation requirements"
-          isCorrect: false
-          explanation: ""
-        - content: "A multidimensional outcome including academics, wellbeing, digital literacy, and future readiness"
+          explanation: "Incorrect. The module explains that student success includes more than academic outcomes."
+        - content: "A multidimensional concept including academics, wellbeing, digital literacy, and future readiness"
           isCorrect: true
-          explanation: ""
-        - content: "Short-term engagement driven by classroom technology use"
+          explanation: "Correct. The module defines student success as including academic mastery, social-emotional wellbeing, digital literacy, and readiness for future learning or careers."
+        - content: "Student engagement driven mainly by classroom technology adoption"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Technology supports student success but does not define it on its own."
+        - content: "Short-term performance improvements tied to curriculum changes"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes broader, long-term outcomes rather than short-term performance alone."
+ 
+    - content: "What institutional priority is most directly addressed by technologies that simplify lesson planning, reduce administrative tasks, and support differentiated instruction?"
+      choices:
+        - content: "Secure and simplified IT ecosystems"
+          isCorrect: false
+          explanation: "Incorrect. This priority focuses on device management, security, and infrastructure."
+        - content: "Student success and wellbeing"
+          isCorrect: false
+          explanation: "Incorrect. While these tools benefit students, they are primarily designed to support educators."
+        - content: "Instructional innovation and educator empowerment"
+          isCorrect: true
+          explanation: "Correct. The module explains that these technologies help educators reduce workload and teach more effectively."
+        - content: "Data driven, insight informed decision making"
+          isCorrect: false
+          explanation: "Incorrect. This priority relates to leadership decisions enabled by analytics."
+ 
+    - content: "According to the module, why is data integration important for K-12 institutions?"
+      choices:
+        - content: "It eliminates the need for student information systems and LMS platforms"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that these systems still exist but are more valuable when integrated."
+        - content: "It allows leaders to access insights that would be difficult to obtain from disconnected systems"
+          isCorrect: true
+          explanation: "Correct. The module highlights how integration enables insights across attendance, engagement, and achievement data."
+        - content: "It guarantees accurate predictions about student performance"
+          isCorrect: false
+          explanation: "Incorrect. The module avoids claiming guaranteed outcomes."
+        - content: "It replaces the need for professional judgment in decision making"
+          isCorrect: false
+          explanation: "Incorrect. Integrated data supports informed decisions but does not replace professional judgment."
+ 
+    - content: "How do AI-powered tools support educators according to the module?"
+      choices:
+        - content: "By fully automating teaching and assessment tasks"
+          isCorrect: false
+          explanation: "Incorrect. The module presents AI as assisting educators, not replacing them."
+        - content: "By assisting with lesson creation, differentiation, and feedback while reducing repetitive work"
+          isCorrect: true
+          explanation: "Correct. The module explains that AI helps with drafting lessons, differentiating content, and generating feedback."
+        - content: "By replacing curriculum standards with AI-generated content"
+          isCorrect: false
+          explanation: "Incorrect. AI tools are described as helping align content to standards, not replacing them."
+        - content: "By limiting instructional flexibility to predefined templates"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes flexibility and creativity enabled by AI tools."
+ 
+    - content: "Which outcome is identified as a potential institutional benefit of secure and simplified IT ecosystems?"
+      choices:
+        - content: "Increased manual configuration for IT teams"
+          isCorrect: false
+          explanation: "Incorrect. The module states that simplified IT reduces manual work."
+        - content: "Greater classroom downtime due to technical issues"
+          isCorrect: false
+          explanation: "Incorrect. Secure and simplified IT is described as reducing classroom interruptions."
+        - content: "More consistent student experiences across locations"
+          isCorrect: true
+          explanation: "Correct. The module identifies consistent experiences across physical locations as a key benefit."
+        - content: "Reduced need for security policies"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes consistent enforcement of security policies."
+ 

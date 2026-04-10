@@ -5,8 +5,8 @@ metadata:
   title: AI‑enhanced K‑12 Institutional Concepts
   description: In this module, you will learn how AI-powered solutions help decision makers create better learning experiences for students.
   ms.date: 04/09/2026
-  author: connorsheridan-9681
-  ms.author: #PLACEHOLDER
+  author: hhreyes21
+  ms.author: v-homerreyes
   ms.topic: module
   ms.service: microsoft-365-education
 summary: >
@@ -23,7 +23,7 @@ abstract: |
 
 prerequisites: |
   - None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/k-12-ai-education.svg
 ratingEnabled: false
 levels:
   - beginner
