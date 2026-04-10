@@ -17,7 +17,7 @@ Review the following characteristics of the SQL Database deployment option:
 
 - It's a highly scalable, intelligent, relational database service built for the cloud with the industry's highest availability.
 
-- SQL Database is the only deployment option that supports scenarios that require large databases (currently up to 100 TB) or autoscaling for unpredictable workloads (serverless).
+- SQL Database is the only deployment option that supports scenarios that require large databases (currently up to 128 TB) or autoscaling for unpredictable workloads (serverless).
 
 - You can create a **SQL Database elastic database pool**, where all databases in the pool share the same set of compute and storage resources. Each database can use the resources it needs, within the limits you set, depending on current load.
 
@@ -29,7 +29,7 @@ Review the following characteristics of the SQL Database deployment option:
 
    - **DTU**: A DTU (Database Transaction Unit) is a combined measure of compute, storage, and I/O resources. The DTU option is an easy, preconfigured purchase option.
 
-   - **Serverless**: A compute tier for single databases in SQL Database. The serverless model automatically scales compute, based on workload demand, and bills only for the amount of compute used. 
+   - **Serverless**: Available for General Purpose and Hyperscale databases, serverless automatically scales compute and charges for what you use. Hyperscale serverless also supports large storage.
 
 #### Business scenario
 
@@ -40,6 +40,8 @@ Let's explore a business scenario for Azure SQL Database. AccuWeather has been a
 ### Things to consider when using Azure SQL Database 
 
 Consider how Azure SQL Database can be included in your relational data storage plan for Tailwind Traders:
+
+- **Consider the free offer for development and testing**: Azure SQL Database provides a free offer for the lifetime of your subscription—up to 10 General Purpose single databases, each with 100,000 vCore seconds of compute per month. The free offer is useful for prototyping, development, and nonproduction environments.
 
 - **Consider vCore pricing**. (Microsoft recommended) Select compute and storage resources independently for multiple SQL databases or an elastic database pool. Use Azure Hybrid Benefit for SQL Server or reserved capacity (pay in advance) to save money. You control the compute and storage resources that you create and pay for. 
 

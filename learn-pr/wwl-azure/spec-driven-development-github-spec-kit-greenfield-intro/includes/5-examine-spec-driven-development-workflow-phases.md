@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3b505e76-1885-4287-945d-fccda6499882]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Each phase of the Spec-Driven Development (SDD) workflow plays a crucial role in transforming ideas into working software. Developers who understand the purpose, content, and output of each phase can apply SDD effectively to their own projects.
 
 > [!NOTE]
@@ -157,3 +165,8 @@ Writing all these artifacts by hand might sound laborious, but AI tools like Git
 ## Summary
 
 The four phases of spec-driven development - Specify, Plan, Tasks, and Implement - provide a structured workflow that transforms ideas into working software. Each phase produces artifacts that guide the next step, ensuring alignment between requirements and implementation. The living nature of these artifacts allows for continuous adaptation, while the systematic checkpoints maintain quality and coherence throughout the process.
+
+::: zone-end
+
+> [!NOTE]
+> See the **Text and images** tab for more details!

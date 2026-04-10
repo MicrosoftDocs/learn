@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.devrel.manage-internet-information-services
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 04/03/2026
+  title: Manage Internet Information Services
+  description: Learn how to manage Internet Information Services (IIS) using IIS Manager, PowerShell, and command-line tools. 
+  ms.topic: module
+  ms.service: windows-server
+title: Manage Internet Information Services
+summary: |
+  Managing IIS in production goes well beyond initial setup. As an IT Operations professional, you need to confidently administer IIS day-to-day, whether that means connecting to a headless Server Core installation, scripting bulk configuration changes, watching worker processes for signs of trouble, or running a quick health check before a deployment. In this module you'll use IIS Manager both locally and remotely, automate repetitive tasks with PowerShell and AppCmd, and build a routine monitoring practice that keeps your IIS environment running reliably.
+abstract: |
+  By the end of this module you'll be able to:
+  - Navigate IIS Manager and use it to manage sites, application pools, and server configuration
+  - Install and configure the Web Management Service (WMSVC) to enable remote IIS administration
+  - Delegate limited IIS access to developers using IIS Manager Users and IIS Manager Permissions
+  - Use the WebAdministration PowerShell module to create, configure, and manage IIS objects
+  - Use AppCmd.exe for command-line administration and configuration backup/restore
+  - Monitor worker processes and active requests using IIS Manager and PowerShell
+  - Configure IIS logging and analyze log data to identify errors and traffic patterns
+  - Perform routine administrative tasks including application pool lifecycle management and IISReset
+prerequisites: Familiarity with Windows PowerShell syntax and Windows Server administration concepts.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- windows-server
+units:
+- learn.devrel.manage-internet-information-services.introduction
+- learn.devrel.manage-internet-information-services.remote-administration
+- learn.devrel.manage-internet-information-services.scripting-automation
+- learn.devrel.manage-internet-information-services.monitor
+- learn.devrel.manage-internet-information-services.knowledge-check
+- learn.devrel.manage-internet-information-services.summary
+badge:
+  uid: learn.devrel.manage-internet-information-services-badge

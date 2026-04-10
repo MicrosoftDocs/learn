@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.determine-build-custom-agents-extend-copilot
+title: "Determine when to build custom agents or extend Microsoft 365 Copilot"
+metadata:
+  title: "Determine when to build custom agents or extend Microsoft 365 Copilot"
+  description: "Learn how to evaluate when to build custom AI agents versus extending Microsoft 365 Copilot, including architectural criteria, capability boundaries, and decision frameworks."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-determine-build-custom-agents-extend-copilot.md)]

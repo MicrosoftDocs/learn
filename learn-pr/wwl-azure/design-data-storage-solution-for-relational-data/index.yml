@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design a Data Storage Solution for Relational Data
   description: "Azure Architects design and recommend relational data storage solutions."
-  ms.date: 01/26/2026
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design a data storage solution for relational data
 summary: Azure Architect's design and recommend relational data storage solutions.
 abstract: |
@@ -31,8 +31,6 @@ abstract: |
 
   -   Design protection for data at rest, data in transmission, and data in use.
 
-  -   Design for Azure SQL Edge.
-
   -   Design for Azure Cosmos DB.
 
   -   Design for Azure Table Storage.
@@ -48,7 +46,6 @@ roles:
 products:
 - azure-cosmos-db
 - azure-sql-database
-- azure-sql-edge
 - azure-sql-managed-instance
 - azure-sql-virtual-machines
 - azure-sqlserver-vm

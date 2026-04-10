@@ -1,0 +1,64 @@
+### YamlMime:Module
+uid: learn.wwl.design-ai-agents-business-solutions
+metadata:
+  title: "Design AI agents for business solutions"
+  description: "Learn to design AI agents tailored to business needs using Dynamics 365 and Copilot. Explore Responsible AI, custom connectors, and integration strategies."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: azure-ai-foundry
+  ai-usage: ai-assisted
+title: "Design AI agents for business solutions"
+summary: Learn to design AI agents tailored to business needs using Dynamics 365 and Copilot.
+abstract: |
+  After completing this module, you will be able to:
+  - Apply Responsible AI principles to AI agent design.
+  - Configure business terms and customize Copilot in Dynamics 365.
+  - Design custom connectors and integrate AI agents with Dynamics 365 Contact Center.
+  - Build task-focused and autonomous agents using Copilot Studio.
+  - Implement prompt-driven conversational agents with adaptive responses.
+prerequisites: |
+  - Familiarity with Dynamics 365 and AI concepts.
+  - Basic understanding of Power Platform and Dataverse.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.design-ai-agents-business-solutions.introduction
+- learn.wwl.design-ai-agents-business-solutions.define-core-tenets-responsible-ai-guidelines-ai-business-solutions
+- learn.wwl.design-ai-agents-business-solutions.design-business-terms-copilot-dynamics-365-apps-customer-experience-service
+- learn.wwl.design-ai-agents-business-solutions.design-customizations-copilot-dynamics-365-apps-customer-experience-service
+- learn.wwl.design-ai-agents-business-solutions.design-connectors-copilot-dynamics-365-sales
+- learn.wwl.design-ai-agents-business-solutions.design-agents-integration-dynamics-365-contact-center-channels
+- learn.wwl.design-ai-agents-business-solutions.design-task-agents
+- learn.wwl.design-ai-agents-business-solutions.design-autonomous-agents
+- learn.wwl.design-ai-agents-business-solutions.design-prompt-response-agents
+- learn.wwl.design-ai-agents-business-solutions.propose-foundry-tools-given-requirement
+- learn.wwl.design-ai-agents-business-solutions.propose-code-first-generative-pages-agent-feed-applications
+- learn.wwl.design-ai-agents-business-solutions.design-topics-copilot-studio-fallback
+- learn.wwl.design-ai-agents-business-solutions.design-data-processing-ai-models-ground
+- learn.wwl.design-ai-agents-business-solutions.design-business-process-include-ai-components-power-apps-canvas-app
+- learn.wwl.design-ai-agents-business-solutions.apply-power-platform-well-architected-framework
+- learn.wwl.design-ai-agents-business-solutions.determine-use-standard-natural-language-processing
+- learn.wwl.design-ai-agents-business-solutions.design-agent-flows-copilot-studio
+- learn.wwl.design-ai-agents-business-solutions.design-prompt-actions-copilot-studio
+- learn.wwl.design-ai-agents-business-solutions.define-success-criteria-adoption-goals
+- learn.wwl.design-ai-agents-business-solutions.knowledge-check
+- learn.wwl.design-ai-agents-business-solutions.summary
+badge:
+  uid: learn.wwl.design-ai-agents-business-solutions.badge

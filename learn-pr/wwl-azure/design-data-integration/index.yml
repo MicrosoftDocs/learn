@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design Data Integration
   description: "Azure Architects design and recommend data integration solutions."
-  ms.date: 01/26/2026
+  ms.date: 03/23/2026
   ms.update-cycle: 180-days
   author: wwlpublish
   ms.author: cynthist
@@ -14,7 +14,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-synapse-analytics
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design data integration
 summary: Azure Architects design and recommend data integration solutions.
 abstract: |

@@ -12,14 +12,7 @@ Tailwind Traders would like to use Azure Workbooks in its monitoring strategy. T
 
 - You can analyze performance logs from virtual machines to identify high CPU or low memory instances and display the results as a grid in an interactive report.
 
-- Workbooks are currently compatible with the following data sources:
-   - [Logs](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Metrics](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Azure Resource Graph](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Alerts](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Workload Health](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Azure Resource Health](/azure/azure-monitor/visualize/workbooks-data-sources)
-   - [Azure Data Explorer](/azure/azure-monitor/visualize/workbooks-data-sources)
+- Workbooks can extract data from many data sources. Read more on the [Azure Workbooks data sources](/azure/azure-monitor/visualize/workbooks-data-sources) page. 
 
 ### Azure insights and Workbooks
 
@@ -40,8 +33,8 @@ Azure insights can help you identify performance issues in the Tailwind Traders 
    | Insight | Description |
    | --- | --- |
    | [Application Insights](/azure/azure-monitor/app/app-insights-overview)| Monitor your live web application on any platform by using this extensible Application Performance Management (APM) service that's available in Azure Monitor. |
-   | [Container insights](/azure/azure-monitor/containers/container-insights-overview)| Check the performance of container workloads deployed to either Azure Container Instances or managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS). |
-   | [Networks insights](/azure/azure-monitor/insights/network-insights-overview)| Obtain comprehensive information on the health and metrics for all your network resources. Use the advanced search capability to identify resource dependencies. Searching by your website name to locate resources that host your website. |
+   | [Container Insights](/azure/azure-monitor/containers/container-insights-overview)| Check the performance of container workloads deployed to either Azure Container Instances or managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS). |
+   | [Network Insights](/azure/azure-monitor/insights/network-insights-overview)| Obtain comprehensive information on the health and metrics for all your network resources. Use the advanced search capability to identify resource dependencies. Searching by your website name to locate resources that host your website. |
    | [Resource group insights](/azure/azure-monitor/insights/resource-group-insights)| Triage and diagnose any problems your individual resources encounter, while offering context as to the health and performance of the resource group as a whole. |
    | [Virtual machine insights](/azure/azure-monitor/vm/vminsights-overview)| Monitor your Azure Virtual Machines, Virtual Machine Scale Sets, and other virtual machines. Analyze the performance and health of your Windows and Linux Virtual Machines, and monitor their processes and dependencies on other resources and external processes. |   
    | [Azure Cosmos DB insights](/azure/azure-monitor/insights/cosmosdb-insights-overview)| Get information on the overall performance, failures, capacity, and operational health of all your Azure Cosmos DB resources in a unified interactive experience. |  
