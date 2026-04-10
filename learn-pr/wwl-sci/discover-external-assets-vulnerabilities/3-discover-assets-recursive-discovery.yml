@@ -2,7 +2,7 @@
 uid: learn.wwl.discover-external-assets-vulnerabilities.discover-assets-recursive-discovery
 metadata:
   title: Discover assets using recursive discovery
-  description: Learn how EASM's recursive discovery engine uses seeds to find unknown internet-facing assets, and how to configure discovery groups and manage your attack surface inventory.
+  description: Learn how Microsoft Defender External Attack Surface Management (EASM)'s recursive discovery engine uses seeds to find unknown internet-facing assets.
   ms.date: 04/07/2026
   author: r-c-stewart
   ms.author: roberts

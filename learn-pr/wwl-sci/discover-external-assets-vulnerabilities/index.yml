@@ -10,10 +10,10 @@ metadata:
   ms.service: defender-for-cloud
   ai-usage: ai-assisted
 title: Discover unprotected assets and vulnerabilities by using Microsoft Defender External Attack Surface Management
-summary: In this module, you use Microsoft Defender External Attack Surface Management (EASM) to discover and secure your external attack surface. You learn how EASM's outside-in discovery complements inside-out CSPM and MDVM, use recursive discovery to find unknown internet-facing assets across your organization, analyze dashboards to prioritize vulnerabilities and security hygiene risks, and integrate EASM findings with Defender CSPM for attack path analysis.
+summary: In this module, you use Microsoft Defender External Attack Surface Management (EASM) to discover and secure your external attack surface. You learn how Microsoft Defender External Attack Surface Management (EASM) outside-in discovery complements other Defender tools. EASM uses recursive discovery to find unknown internet-facing assets across your organization, analyze dashboards to prioritize vulnerabilities and security hygiene risks, and integrate EASM findings with Defender CSPM for attack path analysis.
 abstract: |
-  After completing this module, you will be able to:
-    - Explore EASM features and capabilities, including asset types, asset states, and how its outside-in scanning scope differs from Defender CSPM and MDVM
+  After completing this module, you'll be able to:
+    - Explore EASM features and capabilities, including asset types, asset states, and how outside-in scanning differs from other Defender tools
     - Configure asset discovery using seeds to identify unknown internet-facing infrastructure and asset connections
     - Use EASM dashboards to prioritize vulnerabilities and security hygiene risks across your attack surface
     - Integrate EASM findings with Defender CSPM to analyze attack paths starting from internet-exposed resources
