@@ -1,4 +1,4 @@
-After you understand the blueprint model, the next step is to create the blueprint, configure credentials, and create agent identities.
+Creating agent identities requires creating the blueprint first, configuring its credentials, and then instantiating identities from it.
 
 > [!IMPORTANT]
 > Microsoft Entra Agent ID is in preview. Verify current documentation before using these steps in production.
@@ -20,10 +20,10 @@ To create the blueprint:
 
 1. Confirm that the environment meets the prerequisites for Microsoft Entra Agent ID, including licensing, Frontier availability, and required roles.
 1. Connect a client that has the required Microsoft Graph permissions for blueprint creation.
-1. Create the agent identity blueprint object.
+1. Create the agent identity blueprint by using Microsoft Graph or supported Microsoft Entra PowerShell cmdlets.
 1. Assign at least one sponsor during creation. Without a sponsor, access review decisions for the agent identity have no designated business owner.
 1. Assign an owner so credential rotation, configuration updates, and incident response have a responsible party.
-1. Record the blueprint app ID because you need it in later steps.
+1. Record the blueprint app ID because later credential configuration, blueprint principal creation, and token requests depend on that identifier.
 
 ## Configure credentials for the blueprint
 
@@ -35,20 +35,25 @@ To configure the credential:
 
 1. Choose the credential type that matches where the supporting service runs.
 1. If the service runs on Azure and can use a managed identity, add that managed identity as a federated identity credential on the blueprint.
-1. If federation isn't available, add a certificate credential.
+1. If federation isn't available, add a certificate credential on the blueprint.
 1. Use a client secret only for limited development or test scenarios.
 1. Validate that the blueprint can request a token before you create agent identities. If the blueprint can't acquire a token, every agent identity created from it fails to authenticate.
 
-If the agent needs to receive incoming requests from users or other agents, also configure the identifier URI and OAuth scope on the blueprint.
+If the agent needs to receive incoming requests from users or other agents, the blueprint requires more configuration beyond the client credential. Attended scenarios, where the agent acts interactively on behalf of a user, need an identifier URI, an OAuth scope, a redirect URI, and consent settings on the blueprint. These are required because the front end acquires a user token that the agent backend exchanges through the on-behalf-of flow.
+
+Unattended scenarios where the agent acts autonomously use only the client credential configured in the previous steps.
+
+In both patterns, the blueprint credential is the authentication foundation for the first token in the exchange sequence.
 
 ## Create the agent identity and use token exchange
 
 After the blueprint is ready, create the agent identity.
 
-1. Request a token for the blueprint by using the configured credential.
-1. Call the Microsoft Graph endpoint to create the agent identity and bind the required sponsor information.
-1. Record the created agent identity so you can assign permissions and validate sign-in activity.
-1. Use the blueprint token to request a token for the agent identity.
+1. Request a token for the blueprint by using the configured credential. This confirms that the blueprint can authenticate before you depend on it for agent operations.
+1. Create the agent identity from the blueprint by using Microsoft Graph or supported Microsoft Entra PowerShell cmdlets, and bind the required sponsor information during creation.
+1. If the scenario requires an explicit blueprint principal, create that principal after the blueprint exists and before you rely on tenant-side operations that require the blueprint's service principal representation.
+1. Record the created agent identity ID so you can assign downstream permissions and validate sign-in activity separately from the blueprint.
+1. Use the blueprint token to request a token for the agent identity. The agent identity doesn't authenticate with its own stored credential, so if the blueprint can't acquire a token, the agent identity can't either.
 1. Use the resulting token when the agent accesses downstream resources.
 
 The diagram shows how the blueprint authenticates first and then exchanges a token for the agent identity.
@@ -67,7 +72,3 @@ After creation, assign only the permissions the agent needs for its scenario. De
 - Directory roles where the scenario genuinely requires them.
 
 Don't assign broad permissions at the blueprint stage just to avoid later configuration effort. The agent identity should receive only the access required for the specific agent instance.
-
-## Know where to stop
-
-This module stays focused on identity infrastructure setup. It doesn't cover building the agent, writing agent code, or operational administration of Agent 365. The goal is to leave setup with a functioning blueprint, a created agent identity, and a working token exchange path.
