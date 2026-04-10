@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-external-assets-vulnerabilities.integrate-external-attack-surface-defender-cloud
+metadata:
+  title: Integrate EASM insights with Defender for Cloud
+  description: Connect EASM's outside-in discovery data with Defender CSPM to perform attack path analysis starting from internet-exposed resources and run Cloud Security Explorer queries that correlate external exposure with internal security findings.
+  ms.date: 04/07/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Integrate EASM insights with Defender for Cloud
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-integrate-external-attack-surface-defender-cloud.md)]
