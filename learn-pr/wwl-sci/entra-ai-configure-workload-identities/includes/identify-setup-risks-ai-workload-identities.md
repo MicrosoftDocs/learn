@@ -1,6 +1,6 @@
 AI workload identity setup is where early decisions can create long-term security problems. Choosing weak credentials, granting broad access, or creating agent identities without accountability makes the infrastructure harder to govern and easier to abuse.
 
-## Recognize where setup mistakes create risk
+## Recognize where set-up mistakes create risk
 
 Three setup decisions drive most downstream risk:
 
