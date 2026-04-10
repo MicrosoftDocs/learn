@@ -2,10 +2,10 @@
 
 By the end of this unit, learners will be able to:
 
-- Apply a decision framework to choose **single-agent vs. multi-agent** architectures and justify the tradeoffs in security, scale, latency, cost, and operability
-- Select the **right platform** for each agent role—**Microsoft 365 Copilot (SaaS)**, **Copilot Studio (low-code SaaS)**, or **Microsoft Foundry (pro-code PaaS/IaaS)**—and define clear boundaries and contracts between agents
-- Orchestrate collaborating agents using proven **orchestration patterns** (sequential, concurrent, group chat, handoff, and Magentic) and implement them with the **Microsoft Agent Framework SDK**
-- Design a **connected agents** solution that assigns specialized roles and tools to each agent and validates the design through iterative prototyping
+- Apply a decision framework to choose **single-agent vs. multi-agent** architectures and justify the tradeoffs in security, scale, latency, cost, and operability.
+- Select the **right platform** for each agent role—**Microsoft 365 Copilot (SaaS)**, **Copilot Studio (low-code SaaS)**, or **Microsoft Foundry (pro-code PaaS/IaaS)**—and define clear boundaries and contracts between agents.
+- Orchestrate collaborating agents using proven **orchestration patterns** (sequential, concurrent, group chat, handoff, and Magentic) and implement them with the **Microsoft Agent Framework SDK**.
+- Design a **connected agents** solution that assigns specialized roles and tools to each agent and validates the design through iterative prototyping.
 
 ## When to use multi-agent and when not to
 
@@ -13,13 +13,13 @@ By the end of this unit, learners will be able to:
 
 **Choose multi-agent first when at least one of these is true**:
 
-- You must **cross security or compliance boundaries** (for example, strict data classifications or separation of duties)
+- You must **cross security or compliance boundaries** (for example, strict data classifications or separation of duties).
 
-- Multiple teams own distinct knowledge, data, or release cycles that benefit from **decoupled agents**
+- Multiple teams own distinct knowledge, data, or release cycles that benefit from **decoupled agents**.
 
-- The roadmap clearly demands **future expansion** across 3-5+ functions—modularity avoids later refactors
+- The roadmap clearly demands **future expansion** across 3-5+ functions—modularity avoids later refactors.
 
-- The business requirements dictate a series of actions occur with multiple dependencies across two or more workstreams
+- The business requirements dictate a series of actions occur with multiple dependencies across two or more workstreams.
 
 **Otherwise, validate with a single agent** before adding orchestration. Many "multi-agent" needs can be met with **persona switching**, improved retrieval, policy controls, or a larger context window. 
 
@@ -65,15 +65,15 @@ When agents collaborate, adopt **explicit orchestration** rather than ad hoc cha
 
 A robust multi-agent solution in **Foundry** follows these steps: 
 
-- **Define the main agent** (mission, guardrails, success metrics) and its **tooling** (retrieval sources, actions, evaluators)
+- **Define the main agent** (mission, guardrails, success metrics) and its **tooling** (retrieval sources, actions, evaluators).
 
-- **Identify connected agents** by role (for example, _Planner_, _Researcher_, _Reviewer_, _Actuator_), each with a minimal instruction set, scoped permissions, and well-defined inputs/outputs
+- **Identify connected agents** by role (for example, _Planner_, _Researcher_, _Reviewer_, _Actuator_), each with a minimal instruction set, scoped permissions, and well-defined inputs/outputs.
 
-- **Model collaboration**: choose orchestration patterns (above), define interface contracts, and design state handoffs (IDs, evidence, citations)
+- **Model collaboration**: choose orchestration patterns (above), define interface contracts, and design state handoffs (IDs, evidence, citations).
 
-- **Prototype quickly**: build a **connected agents** sample, run scenario tests, and measure latency, cost, accuracy, and alignment
+- **Prototype quickly**: build a **connected agents** sample, run scenario tests, and measure latency, cost, accuracy, and alignment.
 
-- **Iterate**: prune redundant agents, consolidate roles when evidence shows a single agent suffices, and strengthen evaluation gates
+- **Iterate**: prune redundant agents, consolidate roles when evidence shows a single agent suffices, and strengthen evaluation gates.
 
 ### Evaluation checkpoints
 
@@ -87,9 +87,9 @@ A robust multi-agent solution in **Foundry** follows these steps:
 
 - Are **observability hooks** (spans, events, metrics) in place at every handoff?
 
-- Does the main agent use natural language to route tasks, eliminating the need for hardcoded logic
+- Does the main agent use natural language to route tasks, eliminating the need for hardcoded logic?
 
-- Are the agents configured using a no-code interface in the Foundry portal or programmatically via the Python SDK
+- Are the agents configured using a no-code interface in the Foundry portal or programmatically via the Python SDK?
 
 ## Reference architecture
 
@@ -121,11 +121,11 @@ A robust multi-agent solution in **Foundry** follows these steps:
 
 ## Summary
 
-- Prefer **single-agent** for bounded domains and speed; adopt **multi-agent** when **security boundaries**, **team structures**, or **roadmap growth** require modularity
+- Prefer **single-agent** for bounded domains and speed; adopt **multi-agent** when **security boundaries**, **team structures**, or **roadmap growth** require modularity.
 
-- Use **Microsoft 365 Copilot** for inflow value, **Copilot Studio** for rapid business workflows, and **Foundry** for **connected, pro-code** orchestration
+- Use **Microsoft 365 Copilot** for inflow value, **Copilot Studio** for rapid business workflows, and **Foundry** for **connected, pro-code** orchestration.
 
-- Implement explicit **orchestration patterns** with the **Microsoft Agent Framework SDK** for reliability and transparency
+- Implement explicit **orchestration patterns** with the **Microsoft Agent Framework SDK** for reliability and transparency.
 
 ## References
 

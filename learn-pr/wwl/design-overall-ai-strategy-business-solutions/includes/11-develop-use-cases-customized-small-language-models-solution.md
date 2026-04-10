@@ -6,13 +6,13 @@ Recent advances in SLMs such as **Phi3** demonstrate performance previously asso
 
 Customized SLMs allow organizations to:
 
-- Improve accuracy on domain-specific tasks
+- Improve accuracy on domain-specific tasks.
 
-- Embed specialized reasoning safely within enterprise environments
+- Embed specialized reasoning safely within enterprise environments.
 
-- Reduce cost vs. large model fine-tuning
+- Reduce cost vs. large model fine-tuning.
 
-- Enable offline or near-edge operation for compliance or performance
+- Enable offline or near-edge operation for compliance or performance.
 
 SLMs have the advantage with specific factors such as cost, latency, and control. But it's a common misconception that they're always safer than LLMs and always reduce incorrect information. It's important as an architect to determine when an SLM will make more sense than a large model and considerations such as risks of over-using SLMs in an organization. 
 
@@ -50,13 +50,13 @@ SLMs minimize incorrect information by constraining model behavior around enterp
 
 When latency, cost, or compute footprint matters:
 
-- Mobile, IoT, or edge devices
+- Mobile, IoT, or edge devices.
 
-- High-volume inference environments
+- High-volume inference environments.
 
-- Real-time analytics or decision systems
+- Real-time analytics or decision systems.
 
-- Scenarios with intermittent or restricted connectivity
+- Scenarios with intermittent or restricted connectivity.
 
 SLMs reduce memory footprint significantly and ensure inference remains cost-predictable.
 
@@ -94,11 +94,11 @@ SLMs can be tuned to reflect organizational structured knowledge patterns.
 
 SLMs can serve as orchestrators or planners when:
 
-- Low-cost chain-of-thought reasoning is required
+- Low-cost chain-of-thought reasoning is required.
 
-- Multi-agent architectures rely on distributed reasoning
+- Multi-agent architectures rely on distributed reasoning.
 
-- Workflow routing requires domain logic
+- Workflow routing requires domain logic.
 
 SLMs with tuned reasoning outperform larger general-purpose models in specialized environments.
 
@@ -142,11 +142,11 @@ It's important to keep common pitfalls and risks in mind when identifying whethe
 
 ### Data requirements
 
-- High-quality curated datasets
+- High-quality curated datasets.
 
-- Domain-specific terminology and structured examples
+- Domain-specific terminology and structured examples.
 
-- Clean and labeled text corpora
+- Clean and labeled text corpora.
 
 ### Safety & governance requirements
 
@@ -176,7 +176,7 @@ When evaluating an SLM, architects can measure its success through specific metr
 
 - Drift or degradation over time
 
-**References (URLs you provided)**
+**References**
 
 - [Small Language Models for Application Interactions: A Case Study](https://arxiv.org/pdf/2405.20347)
 

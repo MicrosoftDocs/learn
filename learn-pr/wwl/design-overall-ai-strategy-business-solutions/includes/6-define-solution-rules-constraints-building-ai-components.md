@@ -6,11 +6,11 @@ This unit guides solution architects through defining **solution rules and archi
 
 By the end of this unit, learners will be able to:
 
-- Identify how platform differences influence architectural constraints
-- Define required guardrails for data, actions, and tool access
-- Decide how to establish solution-level rules for responsible behavior
-- Decide how to define environment, networking, and operational constraints
-- Decide how to create a unified rule framework across Copilot Studio and Foundry
+- Identify how platform differences influence architectural constraints.
+- Define required guardrails for data, actions, and tool access.
+- Decide how to establish solution-level rules for responsible behavior.
+- Decide how to define environment, networking, and operational constraints.
+- Decide how to create a unified rule framework across Copilot Studio and Foundry.
 
 ## Architectural foundations and platform roles
 
@@ -32,13 +32,13 @@ Copilot Studio provides a **low-code environment** for building task and retriev
 
 #### Solution rules
 
-- Use Copilot Studio for **workflow-bounded**, **task-driven**, or **information retrieval** scenarios
+- Use Copilot Studio for **workflow-bounded**, **task-driven**, or **information retrieval** scenarios.
 
-- Apply strict **connector scoping** to control data exposure
+- Apply strict **connector scoping** to control data exposure.
 
-- Define **task boundaries** that prevent the agent from making high-impact decisions
+- Define **task boundaries** that prevent the agent from making high-impact decisions.
 
-- Ensure prompt instructions reflect organizational policies
+- Ensure prompt instructions reflect organizational policies.
 
 ### Microsoft Foundry
 
@@ -56,13 +56,13 @@ Foundry supports **pro-code, high-complexity AI applications** and multi-agent s
 
 #### Solution rules
 
-- Use Foundry for **complex reasoning**, **multi-agent orchestration**, or **custom tool integration**
+- Use Foundry for **complex reasoning**, **multi-agent orchestration**, or **custom tool integration**.
 
-- Define strict **action boundaries** for tools that modify systems or trigger workflows
+- Define strict **action boundaries** for tools that modify systems or trigger workflows.
 
-- Apply **evaluation pipelines** to audit safety, correctness, and drift
+- Apply **evaluation pipelines** to audit safety, correctness, and drift.
 
-- Use **role separation** so each agent has scoped permissions
+- Use **role separation** so each agent has scoped permissions.
 
 ### Foundry tools
 
@@ -70,21 +70,21 @@ Foundry Tools include model catalogs, tool APIs, agent orchestration frameworks,
 
 #### Key constraints
 
-- Developers must manage memory lifetime, context, and data sensitivity
+- Developers must manage memory lifetime, context, and data sensitivity.
 
-- Agents can call external tools, making permissioning critical
+- Agents can call external tools, making permissioning critical.
 
-- Orchestration complexity increases with multi-agent designs
+- Orchestration complexity increases with multi-agent designs.
 
 #### Solution rules
 
-- Implement **least-privilege** permissions for each tool
+- Implement **least-privilege** permissions for each tool.
 
-- Use evaluation tools to test **failure cases** and **undesirable behavior**
+- Use evaluation tools to test **failure cases** and **undesirable behavior**.
 
-- Define **clear escalation rules** for when an agent must defer to humans
+- Define **clear escalation rules** for when an agent must defer to humans.
 
-- Document all tool integrations with security and auditing considerations
+- Document all tool integrations with security and auditing considerations.
 
 ## Data constraints and governance boundaries
 
@@ -94,29 +94,29 @@ Solution architects must define explicit guardrails around data to avoid overexp
 
 #### Rules
 
-- Provide agents **only the data they require**
+- Provide agents **only the data they require**.
 
-- Mask sensitive fields where retrieval is needed but full data is unnecessary
+- Mask sensitive fields where retrieval is needed but full data is unnecessary.
 
-- Limit grounding sources to curated, authoritative datasets
+- Limit grounding sources to curated, authoritative datasets.
 
-- For generative tasks, enforce constraints on what content agents can produce
+- For generative tasks, enforce constraints on what content agents can produce.
 
 #### Data movement and storage constraints
 
-- Prevent persistent storage of messages unless compliance requires it
+- Prevent persistent storage of messages unless compliance requires it.
 
-- Define memory policy (ephemeral vs. persistent)
+- Define memory policy (ephemeral vs. persistent).
 
-- Restrict cross-domain data access (HR, Finance, Legal)
+- Restrict cross-domain data access (HR, Finance, Legal).
 
 #### Compliance and regulatory constraints
 
-- Agents must conform to organizational regulatory obligations
+- Agents must conform to organizational regulatory obligations.
 
-- High-risk tasks (financial approvals, legal drafting, health decisions) require human review
+- High-risk tasks (financial approvals, legal drafting, health decisions) require human review.
 
-- Enable mandatory auditing for tool invocation
+- Enable mandatory auditing for tool invocation.
 
 ## Behavioral rules and responsible AI constraints
 
@@ -132,45 +132,45 @@ Define what an agent is _allowed_ and _not allowed_ to do.
   - "Agent may not decide"
   - "Agent may not execute financial transactions"
 
-- Include disallowed behaviors aligned to security, privacy, and safety policies
+- Include disallowed behaviors aligned to security, privacy, and safety policies.
 
-- Use structured instructions to prevent unsafe improvisation
+- Use structured instructions to prevent unsafe improvisation.
 
 #### Responsible AI (RAI) controls
 
-- Mandate use of bias and safety evaluation pipelines
+- Mandate use of bias and safety evaluation pipelines.
 
-- Apply strict instructions for citing sources, representing facts, and avoiding incorrect information
+- Apply strict instructions for citing sources, representing facts, and avoiding incorrect information.
 
-- Require human-in-the-loop checkpoints for high-impact actions
+- Require human-in-the-loop checkpoints for high-impact actions.
 
 ## Environment, deployment, and networking constraints
 
 ### Environment rules
 
-- Copilot Studio: Operates inside Microsoft 365 tenant boundary; isolated per environment
+- Copilot Studio: Operates inside Microsoft 365 tenant boundary; isolated per environment.
 
-- Foundry: Requires architected deployment environment (VNet, private endpoints, region constraints)
+- Foundry: Requires architected deployment environment (VNet, private endpoints, region constraints).
 
 - Microsoft 365 Copilot: Operates inside Microsoft 365 tenant boundary; operates within the company tenant.
 
-- Ensure separation of development, testing, and production with dedicated configurations
+- Ensure separation of development, testing, and production with dedicated configurations.
 
 ### Networking constraints
 
-- For Foundry: use private networking for confidential workloads
+- For Foundry: use private networking for confidential workloads.
 
-- Restrict external tool calls to allow domains
+- Restrict external tool calls to allow domains.
 
-- Require API isolation for sensitive system integrations
+- Require API isolation for sensitive system integrations.
 
 ### Operational constraints
 
-- Establish SLOs for reliability, latency, and throughput
+- Establish SLOs for reliability, latency, and throughput.
 
-- Require agent health monitoring and incident response plans
+- Require agent health monitoring and incident response plans.
 
-- Mandate rollback and failsafe procedures
+- Mandate rollback and failsafe procedures.
 
 ## Unified rule framework across platforms
 

@@ -76,13 +76,13 @@ Below are critical criteria solution architects should consider when selecting a
 Choose custom agents when:
 
 - Data must be processed across systems outside Microsoft 365
-- You need strict grounding control and advanced vector search behavior
+- You need strict grounding control and advanced vector search behavior.
 
 Extend Copilot when:
 
 - Data lives primarily in Microsoft 365
 
-- You require secure use of existing document graphs, semantic index, or organizational knowledge
+- You require secure use of existing document graphs, semantic index, or organizational knowledge.
 
 ### Action and tooling requirements
 
@@ -92,11 +92,11 @@ Select custom agents if:
 
 - Actions require advanced logic, branching, or multi-step processes
 
-- The environment must run independently from user interactions
+- The environment must run independently from user interactions.
 
 Extend Copilot if:
 
-- Actions relate to calendar, email, file management, or standard workflows
+- Actions relate to calendar, email, file management, or standard workflows.
 
 ### Governance and compliance
 
@@ -116,13 +116,13 @@ Copilot provides:
 
 Choose custom agents when:
 
-- Development teams have strong expertise in Azure AI, agent orchestration, and system architecture
+- Development teams have strong expertise in Azure AI, agent orchestration, and system architecture.
 
 Extend Copilot when:
 
 - The team needs a low-code approach
 
-- Rapid enablement outweighs customization needs
+- Rapid enablement outweighs customization needs.
 
 ## Decision framework summary
 
@@ -149,7 +149,7 @@ Extend Copilot when:
 
 - Minimal engineering investment is required
 
-- The solution must inherit Microsoft's Responsible AI compliance
+- The solution must inherit Microsoft's Responsible AI compliance.
 
 ### Choose to build custom agents when
 
@@ -161,7 +161,7 @@ Extend Copilot when:
 
 - Integration with external enterprise systems is mandatory
 
-- You must design specialized behaviors or multi-agent collaboration
+- You must design specialized behaviors or multi-agent collaboration.
 
 Custom agents excel in scenarios involving:
 
