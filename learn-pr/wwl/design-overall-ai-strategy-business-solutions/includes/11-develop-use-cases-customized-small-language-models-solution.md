@@ -176,7 +176,7 @@ When evaluating an SLM, architects can measure its success through specific metr
 
 - Drift or degradation over time
 
-**References**
+## References
 
 - [Small Language Models for Application Interactions: A Case Study](https://arxiv.org/pdf/2405.20347)
 
