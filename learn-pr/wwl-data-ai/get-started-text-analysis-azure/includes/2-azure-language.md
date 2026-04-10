@@ -12,7 +12,7 @@
 **Microsoft Foundry** is the platform for building AI apps and agents on Azure. Foundry portal offers two approaches to text analysis: general-purpose AI models that handle a broad range of tasks through natural language prompts, and purpose-built language tools that return structured, deterministic results for specific tasks.
 
 >[!NOTE]
-> Foundry has a web-based portal where you can build, test, and deploy AI applications. The portal has two user interfaces [UIs] — a *classic* UI and a *new* UI — the **new** Foundry portal. This content describes capabilities in the *new* Foundry portal.
+> Foundry has a web-based portal where you can build, test, and deploy AI applications. The portal has two user interfaces (UIs) — a *classic* UI and a *new* UI — the **new** Foundry portal. This content describes capabilities in the *new* Foundry portal.
 
 To get started with text analysis in the *new* Foundry portal, you need to create a *Foundry resource* and *Foundry project*.
 
@@ -150,7 +150,7 @@ Language detection returns the following result:
 
 In the Foundry portal, you can test Azure Language's language detection feature in the chat Playground.
 
-:::image type="content" source="../media/text-04.png" alt-text="Screenshot of the chat playground's language detection capability." lightbox="../media/text-04.png":::
+:::image type="content" source="../media/language-detection.png" alt-text="Screenshot of the chat playground's language detection capability." lightbox="../media/text-04.png":::
 
 #### Personally identifiable information detection
 
@@ -170,7 +170,7 @@ PII detection identifies the following entities:
 
 In the Foundry portal, you can test Azure Language's PII detection feature in the Language Playground.
 
-:::image type="content" source="../media/text-05.png" alt-text="Screenshot of the Language playground's PII detection capability." lightbox="../media/text-05.png":::
+:::image type="content" source="../media/pii-redaction.png" alt-text="Screenshot of the Language playground's PII detection capability." lightbox="../media/text-05.png":::
 
 Next, learn how to create a client application with text analysis capabilities using both the OpenAI responses API and the Azure Language SDK.
 
