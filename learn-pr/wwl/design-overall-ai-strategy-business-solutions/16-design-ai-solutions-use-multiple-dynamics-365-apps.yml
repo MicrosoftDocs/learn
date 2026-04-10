@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.design-ai-solutions-use-multiple-dynamics-365-apps
+title: "Design AI solutions using multiple Dynamics 365 apps"
+metadata:
+  title: "Design AI Solutions Using Multiple Dynamics 365 Apps"
+  description: "Learn to design AI solutions across Dynamics 365 apps, ensuring scalability, compliance, and seamless workflows for modern business processes."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/16-design-ai-solutions-use-multiple-dynamics-365-apps.md)]
