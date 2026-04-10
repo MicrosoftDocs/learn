@@ -1,18 +1,18 @@
-Mature DevOps practice is built on the discipline of knowing which layer of your stack handles which class of problem. Agentic capabilities represent a new layer. It is not a replacement for your pipelines, scripts, or runbooks. Rather, it becomes a reasoning layer overtop of them that handles the context-intensive, judgment-requiring work your automation was never designed to absorb.
+Mature DevOps practice is built on the discipline of knowing which layer of your stack handles which class of problem. Agentic capabilities represent a new layer. It isn't a replacement for your pipelines, scripts, or runbooks. Rather, it becomes a reasoning layer overtop of them that handles the context-intensive, judgment-requiring work your automation was never designed to absorb.
 
 You learned how to define that layer. You mapped out where agentic AI delivers value across the DevOps lifecycle. Last, you established the autonomy boundaries that make it safe to deploy in production-grade Azure environments.
 
 ## Key concepts from this module
 
-- **Agents vs. automation**: Agents are goal-oriented, invoke tools dynamically, and adapt through observe-reason-act loops. This lets them handle complex, multi-step tasks requiring context synthesis instead of scripted steps.
+- **Agents vs. automation**: Agents are goal-oriented, invoke tools dynamically, and adapt through observe-reason-act loops. This approach lets them handle complex, multi-step tasks requiring context synthesis instead of scripted steps.
 - **Microsoft's agentic spectrum**: GitHub Copilot, Azure Copilot agents, Azure DevOps AI, and MCP extensibility provide agentic capabilities across different surfaces.
 - **High-value DevOps phases**: Plan/track, code review, pipeline triage, and observability are best suited for early adoption—they're frequent, information-rich, and low-risk.
-- **Autonomy matching**: Tie autonomy levels to reversibility and blast radius. High-risk operations (deployments, credentials, role assigments, policy changes) always require human approval.
-- **Observability from day one**: Log and audit all agent actions. This ensures compliance and provides feedback for safely increasing autonomy over time.
+- **Autonomy matching**: Tie autonomy levels to reversibility and blast radius. High-risk operations (deployments, credentials, role assignments, policy changes) always require human approval.
+- **Observability from day one**: Log and audit all agent actions, to ensure compliance and to provide feedback for safely increasing autonomy over time.
 
 ## Next steps
 
-This module established the foundation. The next module in this learning path applies this foundation directly: you'll compare all four Microsoft agentic solution families — GitHub Copilot, Azure Copilot agents, Azure DevOps AI capabilities, and MCP-enabled extensibility — against concrete DevOps task profiles and build a selection framework for your team's environment.
+This module only established the foundation. The next modules in this learning path apply this foundation directly  against concrete DevOps task profiles and build a selection framework for your team's environment.
 
 ## Learn more
 
@@ -20,4 +20,4 @@ This module established the foundation. The next module in this learning path ap
 - [GitHub Copilot documentation](https://docs.github.com/copilot)
 - [Introduction to Azure Copilot agents](https://learn.microsoft.com/training/modules/introduction-azure-copilot-agents/)
 - [Azure DevOps product documentation](https://learn.microsoft.com/azure/devops/?view=azure-devops)
-- [Azure Well-Architected Framework — Operational Excellence](https://learn.microsoft.com/azure/well-architected/operational-excellence/)
+- [Azure Well-Architected Framework—Operational Excellence](https://learn.microsoft.com/azure/well-architected/operational-excellence/)

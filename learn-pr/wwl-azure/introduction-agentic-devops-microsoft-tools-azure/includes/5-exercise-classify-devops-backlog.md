@@ -10,9 +10,9 @@ You're evaluating which tasks to pilot with agentic capabilities in the next qua
 
 Review each task in the backlog below and assign:
 
-1. **Agentic opportunity?** — Yes or No
-2. **Autonomy level** — Inform, Suggest, Execute on approval, or Execute autonomously
-3. **Justification** — One to two sentences citing reversibility, blast radius, or compliance constraint
+- **Agentic opportunity?**: Yes or No
+- **Autonomy level**: Inform, Suggest, Execute on approval, or Execute autonomously
+- **Justification**: One to two sentences citing reversibility, blast radius, or compliance constraint
 
 | # | Task description | Frequency |
 |---|---|---|

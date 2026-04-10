@@ -63,9 +63,9 @@ For platform engineering teams, the optimization agent is particularly useful: i
 
 With opportunities across the entire DevOps lifecycle, you need a way to decide where to start. Apply three filters:
 
-1. **Frequency** — how often does this task occur? Daily tasks yield more accumulated time savings than monthly ones.
-2. **Context breadth** — how many sources does this task require you to consult? Tasks that require you to hold context from five places simultaneously are prime agents candidates.
-3. **Decision reversibility** — how easily can you undo the outcome? Tasks with reversible, low-blast-radius outcomes are better first-deployment candidates than high-stakes production operations.
+- **Frequency**: how often does this task occur? Daily tasks yield more accumulated time savings than monthly ones.
+- **Context breadth**: how many sources does this task require you to consult? Tasks that require you to hold context from five places simultaneously are prime agents candidates.
+- **Decision reversibility**: how easily can you undo the outcome? Tasks with reversible, low-blast-radius outcomes are better first-deployment candidates than high-stakes production operations.
 
 Pipeline failure triage scores high on all three. Production deployment authorization scores low on reversibility and should remain human-primary regardless of how mature your agentic practices become.
 

@@ -2,8 +2,8 @@ Identifying high-value agentic opportunities is the easier half of the problem. 
 
 The engineers who get this concept wrong tend to fall into one of two failure modes:
 
-- **locked-down agents**: agents are locked so tightly, that the only value delivered is autocomplete-level suggestions. 
-- **autonomous execution**: agents run actions autonomously, without carefully analyzing impact.
+- **locked-down agents**: Agents are locked so tightly, that the only value delivered is autocomplete-level suggestions. 
+- **autonomous execution**: Agents run actions autonomously, without carefully analyzing impact.
 
 Both failures undermine adoption and erode trust. The goal is a calibrated model that matches autonomy level to reversibility, blast radius, and regulatory context.
 
