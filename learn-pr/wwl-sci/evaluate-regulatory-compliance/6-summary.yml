@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-regulatory-compliance.summary
+metadata:
+  title: Summary
+  description: Summary of evaluating regulatory compliance in Microsoft Defender for Cloud.
+  ms.date: 03/30/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]
