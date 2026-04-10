@@ -1,6 +1,6 @@
-Mature DevOps practice is built on the discipline of knowing which layer of your stack handles which class of problem. Agentic capabilities represent a new layer — not a replacement for your pipelines, scripts, or runbooks, but a reasoning layer overtop of them that handles the context-intensive, judgment-requiring work your automation was never designed to absorb.
+Mature DevOps practice is built on the discipline of knowing which layer of your stack handles which class of problem. Agentic capabilities represent a new layer. It is not a replacement for your pipelines, scripts, or runbooks. Rather, it becomes a reasoning layer overtop of them that handles the context-intensive, judgment-requiring work your automation was never designed to absorb.
 
-You've now defined that layer precisely, mapped where it delivers value across the DevOps lifecycle, and established the autonomy boundaries that make it safe to deploy in production-grade Azure environments.
+You learned how to define that layer. You mapped out where agentic AI delivers value across the DevOps lifecycle. Last, you established the autonomy boundaries that make it safe to deploy in production-grade Azure environments.
 
 ## Key concepts from this module
 

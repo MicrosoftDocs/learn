@@ -37,7 +37,7 @@ Combine these dimensions and you get a quick classification model:
 | Low | Low | Execute on approval |
 | Low | Medium or High | Suggest only — human executes |
 
-**Never grant autonomous execution** to actions that combine low reversibility with any meaningful blast radius. Several examples fall in this quadrant, such as production deployments, and how you handle secret or credential operations. Or think of network security group modifications or role assignment changes. Regardless of how well-tested your agent instructions are, keep human oversight as guardrail for these.
+**Never grant autonomous execution** to actions that combine low reversibility with any meaningful blast radius. Several examples fall in this quadrant, such as production deployments, and how you handle secret or credential operations. Or think of network security group modifications or role assignment changes. Regardless of how well-tested your agent instructions are, keep human oversight (*human-in-the-loop*)as guardrail.
 
 ## Define human control points for production-facing operations
 
@@ -45,21 +45,21 @@ Human control points are the specific moments in a workflow where agent executio
 
 For DevOps engineers on Azure, several operations require hard human control points:
 
-- **Production environment deployments** — any agent-initiated resource change in a production subscription must transit an approval gate. This isn't a maturity question. It's a change management and compliance requirement in most regulated environments.
+- **Production environment deployments** — any agent-initiated resource change in a production subscription must transit an approval gate. It's a change management and compliance requirement in most regulated environments.
 - **Secret and credential operations** — agent actions that read from or write to Azure Key Vault should require explicit approval and create an audit log entry. Even read access to secrets should be scoped tightly.
 - **Pipeline configuration changes** — modifications to pipeline YAML, variable groups, or service connections in production branches must follow your existing branch protection and PR review policies. Agents should not bypass these controls.
 - **Security group and RBAC modifications** — role assignment changes and network security group rule additions must be human-authorized regardless of the principal making the change.
 - **Policy exception creation** — agents should never autonomously create Azure Policy exemptions or exclusions, even temporarily.
 
-These aren't arbitrary restrictions. They map to the areas where audit regulators, security teams, and incident post-mortems consistently find the highest risk. Keeping humans in the loop at these points doesn't slow down your deployment frequency but rather keeps the agentic layer from becoming a liability.
+These points aren't arbitrary restrictions. They map to the areas where audit regulators, security teams, and incident post-mortems consistently find the highest risk. Keeping humans in the loop at these points doesn't slow down your deployment frequency but rather keeps the agentic layer from becoming a liability.
 
 ## Apply least-privilege principles to agent identities
 
 When agents invoke tools — Azure CLI, ADO REST APIs, Bicep or Terraform deployments — they authenticate with an identity. That identity must follow least-privilege: the minimum permissions needed to complete the authorized scope of the agent's work.
 
-For GitHub Copilot agent mode, tool invocations execute in the context of your local or codespace session, where scope is bounded naturally by your own access. For the cloud-based GitHub Copilot coding agent, execution happens in a GitHub Actions sandbox environment using a managed identity with federated credentials — not in your local session. Review the role assignments granted to that managed identity and treat them with the same scrutiny you apply to any service principal used in your deployment workflows. For platform-managed agents like Azure Copilot agents, review the managed identity or service principal they use and audit its RBAC role assignments regularly.
+For GitHub Copilot agent mode, tool invocations execute in the context of your local or codespace session, using the user's own access. For the cloud-based GitHub Copilot coding agent, execution happens in a GitHub Actions sandbox environment using a managed identity with federated credentials — not in your local session. Review the role assignments granted to that managed identity and treat them with the same scrutiny you apply to any service principal used in your deployment workflows. For platform-managed agents like Azure Copilot agents, review the managed identity or service principal they use and audit its role assignments regularly.
 
-For MCP-based extensions — where you explicitly give a Copilot session access to Azure CLI tools or ADO project APIs — define exactly which tools you expose and ensure the underlying service connection has read-only scope unless write access is specifically required for the task.
+For MCP-based extensions — where you explicitly give a Copilot session access to Azure CLI tools or ADO project APIs — define exactly which tools you expose. Also ensure the underlying service connection has read-only scope unless explicit write access is required for the task.
 
 ## Build agent observability into your operating model from the start
 
@@ -69,7 +69,7 @@ Every agentic action that writes, modifies, or invokes infrastructure should pro
 - **Azure DevOps audit logs** for work item creation, pipeline modifications, and access token activity.
 - **GitHub audit logs** for coding agent pull requests and repository interactions.
 
-Treat agent-initiated changes the same way you treat service principal-initiated changes: they should be visible in your existing SIEM and reviewable during incident post-mortems.
+Treat agent-initiated changes the same way you treat service principal-initiated changes: they should be visible in your existing security monitoring solution and reviewable during incident post-mortems.
 
 When you build in observability from the start, you create the feedback loop that lets you responsibly expand autonomy over time — moving from Suggest to Execute on approval to Execute autonomously as your confidence in outcome quality grows and your audit evidence accumulates.
 
