@@ -37,7 +37,7 @@ Three assessment states indicate compliance status for each control:
 
 The following diagram shows how these states appear when you drill into a single control. ISO 27001 control A.9.1 breaks into two subcontrols, each with its own assessment state and the specific Defender for Cloud assessments that drive it.
 
-:::image type="content" source="../media/compliance-subcontrol-drilldown.png" alt-text="Diagram showing ISO 27001 control A.9.1 broken into subcontrols A.9.1.1 and A.9.1.2, each with a Pass or Fail status and the specific Defender for Cloud assessments that determine that status." lightbox="../media/compliance-subcontrol-drilldown.png":::
+:::image type="content" source="../media/compliance-subcontrol-drill-down.png" alt-text="Diagram showing ISO 27001 control A.9.1 broken into subcontrols A.9.1.1 and A.9.1.2, each with a Pass or Fail status and the specific Defender for Cloud assessments that determine that status." lightbox="../media/compliance-subcontrol-drill-down.png":::
 
 The third state—greyed out controls—often causes confusion during initial compliance reviews. These controls represent requirements Defender for Cloud can't automate, not missing security coverage. Grayed-out controls typically fall into three categories: procedural or process controls (like security awareness training requirements), platform responsibilities under the shared responsibility model (physical datacenter security), or controls with no implemented automated assessment yet. For Contoso Healthcare, ISO 27001 includes many process-oriented controls that require manual attestation rather than automated validation.
 
