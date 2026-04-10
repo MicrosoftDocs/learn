@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.design-user-prompt-training-ai-solution-adoption
+title: "Design user prompt training for AI solution adoption"
+metadata:
+  title: "Design User Prompt Training for AI Solution Adoption"
+  description: "Learn to design user-centric training programs that build AI literacy, prompt fluency, and responsible usage habits for successful AI adoption."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/17-design-user-prompt-training-ai-solution-adoption.md)]
