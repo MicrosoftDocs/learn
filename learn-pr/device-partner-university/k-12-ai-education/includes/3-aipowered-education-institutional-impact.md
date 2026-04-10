@@ -4,7 +4,7 @@ As a new tool in the hands of instructors, students, and administrators, AI is a
 
 ## AI for educators
 
-Educators spend a lot of time designing lessons, creating instructional materials, writing rubrics, and preparing assessments. [Teach in the Microsoft 365 Copilot app](https://support.microsoft.com/en-us/topic/teach-in-the-microsoft-365-copilot-app-c4b05fdd-527f-4f85-9775-afb0781a9178) can help teachers prepare high quality instruction in less time, as its AI-powered tools assist in creating lesson plans and drafting materials like quizzes and rubrics.
+Educators spend a lot of time designing lessons, creating instructional materials, writing rubrics, and preparing assessments. [Teach in the Microsoft 365 Copilot app](https://support.microsoft.com/topic/teach-in-the-microsoft-365-copilot-app-c4b05fdd-527f-4f85-9775-afb0781a9178) can help teachers prepare high quality instruction in less time, as its AI-powered tools assist in creating lesson plans and drafting materials like quizzes and rubrics.
 
 Rather than spending hours reviewing educational standards documentation and lessons in progress, Copilot can help teachers build drafts that are aligned to learning requirements and objectives. Teachers can also request differentiated versions of a single piece of content and instructional strategies for how to deliver them.
 
@@ -24,7 +24,7 @@ These tools also give students the chance to build confidence through varied, in
 
 Administrators align people, processes, and resources to support student success. To do that, they need the right information—and speedy ways to access and process it.
 
-With AI‑powered tools like [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi/?msockid=3d47d28702de62fa2c3dc47903d66338), administrators can synthesize insights across instruction, attendance, engagement, and more. Instead of manually piecing together information from multiple systems, leaders can get assistance from AI to identify trends and opportunities for targeted interventions. That way, potential issues can be addressed before they become agenda items at the next educational authority meeting.
+With AI‑powered tools like [Power BI](https://www.microsoft.com/power-platform/products/power-bi/), administrators can synthesize insights across instruction, attendance, engagement, and more. Instead of manually piecing together information from multiple systems, leaders can get assistance from AI to identify trends and opportunities for targeted interventions. That way, potential issues can be addressed before they become agenda items at the next educational authority meeting.
 
 AI also helps admins cut through time-consuming work to focus on outcomes. They can request quick scenario breakdowns, comparisons across schools, or even summaries of compliance documentation, reclaiming time to focus on strategic initiatives rather than administrative overhead. AI can even help leaders understand how new instructional tools are used across classrooms, so they can ensure they're being used for everyone's benefit.
 

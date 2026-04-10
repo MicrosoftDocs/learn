@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/technology-lab.jpeg" alt-text="Photograph of two junior high school students in a computer lab.":::
+:::image type="content" border="true" source="../media/technology-lab.jpeg" alt-text="A photograph of two junior high school students in a computer lab.":::
 
 Teachers know instructional success is only possible when students feel safe and supported. The same is true for the systems that those teachers and students work within. Here's how secure, simplified IT creates a solid foundation for teaching and learning.
 
