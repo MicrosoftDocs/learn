@@ -22,7 +22,6 @@ roles:
 products:
   - foundry-tools
   - microsoft-foundry
-  - azure-ai-foundry-agent-service
   - azure-ai-foundry-sdk
 subjects:
   - artificial-intelligence
