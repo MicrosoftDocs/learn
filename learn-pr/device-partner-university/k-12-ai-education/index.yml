@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.dpu.k-12-ai-education
+title: AI‑enhanced K‑12 institutional concepts
+metadata:
+  title: AI‑enhanced K‑12 Institutional Concepts
+  description: In this module, you will learn how AI-powered solutions help decision makers create better learning experiences for students.
+  ms.date: 04/09/2026
+  author: connorsheridan-9681
+  ms.author: #PLACEHOLDER
+  ms.topic: module
+  ms.service: microsoft-365-education
+summary: >
+  Explore how modern K–12 institutions navigate systemic challenges by aligning technology, data, and AI-powered tools with core institutional priorities. Learn how schools can enhance student success, empower educators, make insight-informed decisions, and modernize securely through integrated digital ecosystems.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe major institutional challenges facing modern K-12 environments and explain why these challenges require coordinated, system level approaches.
+  - Summarize core institutional priorities for education and explain how they influence modernization strategies. 
+  - Describe how AI powered educational tools support instructional quality, educator efficiency, and personalized student learning. 
+  - Explain the role of integrated data, analytics, and LMS ecosystems in enabling insight-informed decisions and improving visibility into learning and operations. 
+  - Identify the foundational concepts behind secure by default and simplified IT management in K 12—and explain why these approaches are essential for digital learning environments.
+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+  - k-12-educator
+  - school-leader
+products:
+  - m365-education
+units:
+  - learn.dpu.k-12-ai-education.introduction
+  - learn.dpu.k-12-ai-education.institutional-priorities-modern-k12-education
+  - learn.dpu.k-12-ai-education.aipowered-education-institutional-impact
+  - learn.dpu.k-12-ai-education.data-insights-lms-ecosystem-integration
+  - learn.dpu.k-12-ai-education.security-simplified-it-infrastructure-k12
+  - learn.dpu.k-12-ai-education.exercise-connecting-institutional-needs-solutions
+  - learn.dpu.k-12-ai-education.knowledge-check
+  - learn.dpu.k-12-ai-education.summary
+badge:
+  uid: learn.dpu.k-12-ai-education.badge

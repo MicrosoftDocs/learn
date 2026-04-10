@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-ai-education.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "AI‑enhanced K‑12 institutional concepts" module.
+  ms.date: 04/09/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 1
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which description best reflects the concept of student success in modern K–12 education as defined in the module?"
+    choices:
+        - content: "Academic achievement measured primarily by test scores"
+          isCorrect: false
+          explanation: ""
+        - content: "Preparation for standardized assessments and graduation requirements"
+          isCorrect: false
+          explanation: ""
+        - content: "A multidimensional outcome including academics, wellbeing, digital literacy, and future readiness"
+          isCorrect: true
+          explanation: ""
+        - content: "Short-term engagement driven by classroom technology use"
+          isCorrect: false
+          explanation: ""
