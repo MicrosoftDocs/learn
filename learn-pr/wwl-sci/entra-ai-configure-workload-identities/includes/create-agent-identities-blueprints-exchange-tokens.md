@@ -39,7 +39,7 @@ To configure the credential:
 1. Use a client secret only for limited development or test scenarios.
 1. Validate that the blueprint can request a token before you create agent identities. If the blueprint can't acquire a token, every agent identity created from it fails to authenticate.
 
-If the agent needs to receive incoming requests from users or other agents, the blueprint requires more configuration beyond the client credential. Attended scenarios, where the agent acts interactively on behalf of a user, need an identifier URI, an OAuth scope, a redirect URI, and consent settings on the blueprint. These are required because the front end acquires a user token that the agent backend exchanges through the on-behalf-of flow.
+If the agent needs to receive incoming requests from users or other agents, the blueprint requires more configuration beyond the client credential. Attended scenarios, where the agent acts interactively on behalf of a user, need an identifier URI, an OAuth scope, a redirect URI, and consent settings on the blueprint. These settings allow the front end to request a user token that the agent backend later exchanges through the on-behalf-of flow after the blueprint authenticates.
 
 Unattended scenarios where the agent acts autonomously use only the client credential configured in the previous steps.
 
