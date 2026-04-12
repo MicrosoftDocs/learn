@@ -4,7 +4,7 @@ title: "Improve your reliability with modern operations practices: An introducti
 metadata:
   title: "Improve your reliability with modern operations practices: An introduction"
   description: Discover a map for navigating reliability challenges and sustainably achieving the appropriate level of reliability in your systems, services, and products.
-  ms.date: 05/19/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: module
@@ -31,11 +31,11 @@ prerequisites: None
 subjects:
 - site-reliability-engineering
 units:
-- learn.improve-reliability-introduction.1-introduction
-- learn.improve-reliability-introduction.2-rationale
-- learn.improve-reliability-introduction.3-modern-operations
-- learn.improve-reliability-introduction.4-dickerson-hierarchy
-- learn.improve-reliability-introduction.5-summary
+- learn.improve-reliability-introduction.introduction
+- learn.improve-reliability-introduction.rationale
+- learn.improve-reliability-introduction.modern-operations
+- learn.improve-reliability-introduction.dickerson-hierarchy
+- learn.improve-reliability-introduction.summary
 
 badge:
   uid: learn.improve-reliability-introduction.badge
