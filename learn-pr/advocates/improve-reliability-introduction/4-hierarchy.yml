@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-introduction.4-dickerson-hierarchy
+uid: learn.improve-reliability-introduction.dickerson-hierarchy
 title: The Dickerson hierarchy of reliability
 metadata:
   title: The Dickerson hierarchy of reliability
   description: The Dickerson hierarchy of reliability.
-  ms.date: 05/19/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
