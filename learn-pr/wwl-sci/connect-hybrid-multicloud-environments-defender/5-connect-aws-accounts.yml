@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-hybrid-multicloud-environments-defender.connect-aws-accounts
+metadata:
+  title: Connect AWS accounts to Defender for Cloud
+  description: Connect AWS accounts to Microsoft Defender for Cloud using the native cloud connector, configure Defender plans, deploy the CloudFormation template, and validate connector health.
+  ms.date: 04/01/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Connect AWS accounts to Defender for Cloud
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-connect-aws-accounts.md)]

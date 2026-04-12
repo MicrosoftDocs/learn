@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-hybrid-multicloud-environments-defender.plan-connector-strategy
+metadata:
+  title: Plan a connector strategy for hybrid and multi-cloud environments
+  description: Plan connector scope, scan interval, permission model, and deployment path for on-premises, AWS, and GCP environments in Microsoft Defender for Cloud.
+  ms.date: 04/01/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Plan a connector strategy for hybrid and multi-cloud environments
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-plan-connector-strategy.md)]

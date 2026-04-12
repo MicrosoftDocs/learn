@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.connect-hybrid-multicloud-environments-defender
+metadata:
+  title: Connect Hybrid and multicloud Environments to Microsoft Defender for Cloud
+  description: "Connect on-premises servers, AWS accounts, and GCP projects to Microsoft Defender for Cloud to extend unified security coverage across a hybrid and multicloud estate. Learn how federated authentication secures connector access, plan connector strategy, and configure native connectors for AWS and GCP."
+  ms.date: 04/01/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Connect hybrid and multicloud environments to Microsoft Defender for Cloud
+summary: In this module, you connect on-premises servers, AWS accounts, and GCP projects to Microsoft Defender for Cloud to extend unified security coverage across your entire hybrid and multicloud estate. You learn how federated authentication secures connector access without storing long-lived credentials. Then you plan the right connector scope for each environment type, and configure native connectors for AWS and GCP. The module covers both CSPM (agentless) and CWPP (Azure Arc–enabled) coverage extension, and closes by verifying that unified posture and workload protection is active across all connected environments.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain the multicloud connectivity model in Defender for Cloud, including how federated authentication works for AWS and GCP connectors
+    - Plan a connector strategy for hybrid and multicloud environments, including scope, scan interval, and required permissions per environment type
+    - Connect on-premises machines to Defender for Cloud using Azure Arc-enabled servers
+    - Connect AWS accounts to Defender for Cloud using the native cloud connector and CloudFormation template
+    - Connect GCP projects to Defender for Cloud using the native cloud connector and GCloud deployment script
+    - Verify multicloud connectivity health and confirm CSPM and CWPP coverage surfaces across connected environments
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a basic level
+  - Understanding of Azure resource types and Azure role-based access control (RBAC)
+  - Knowledge of cloud IAM concepts including service accounts, roles, and trust relationships across Azure, AWS, and GCP
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.connect-hybrid-multicloud-environments-defender.introduction
+- learn.wwl.connect-hybrid-multicloud-environments-defender.explore-multicloud-connectivity-model
+- learn.wwl.connect-hybrid-multicloud-environments-defender.plan-connector-strategy
+- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-on-premises-azure-arc
+- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-aws-accounts
+- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-gcp-projects
+- learn.wwl.connect-hybrid-multicloud-environments-defender.verify-multicloud-coverage
+- learn.wwl.connect-hybrid-multicloud-environments-defender.knowledge-check
+- learn.wwl.connect-hybrid-multicloud-environments-defender.summary
+badge:
+  uid: learn.wwl.connect-hybrid-multicloud-environments-defender.badge
