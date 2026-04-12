@@ -19,7 +19,7 @@ Confirm these prerequisites:
 
 ## Create the GCP connector
 
-:::image type="content" source="../media/gcp-connector.png" alt-text="Screenshot of the Environment Settings Add environment menu in Microsoft Defender for Cloud with Google Cloud Platform highlighted as an option.":::
+:::image type="content" source="../media/google-connector.png" alt-text="Screenshot of the Environment Settings Add environment menu in Microsoft Defender for Cloud with Google Cloud Platform highlighted as an option.":::
 
 1. In the Azure portal, open **Microsoft Defender for Cloud** and select **Environment settings**.
 2. Select **Add environment** > **Google Cloud Platform**.
@@ -50,7 +50,7 @@ Available CWPP plans for GCP:
 | Defender for Containers | GKE clusters | No |
 | Defender for Databases | Cloud SQL instances | No |
 
-:::image type="content" source="../media/gcp-select-plans.png" alt-text="Screenshot of the Select plans tab for a GCP connector showing available Defender plan options.":::
+:::image type="content" source="../media/google-select-plans.png" alt-text="Screenshot of the Select plans tab for a GCP connector showing available Defender plan options.":::
 
 For Contoso's GCP environment, enable Defender for Servers to extend CWPP coverage to GCP Compute Engine VMs. The GCloud script generated includes Compute Engine management permissions and Google Cloud OS Config API access needed for Arc autoprovisioning.
 
@@ -65,7 +65,7 @@ For Contoso's GCP environment, enable Defender for Servers to extend CWPP covera
 > [!NOTE]
 > If this GCP connector already uses **Least privilege access** and you want to enable AI Security Posture Management (AI SPM) for AI workload visibility—including Google Vertex AI—the existing service account bindings don't include the required permissions. Rerun the updated GCloud script to add them.
 
-:::image type="content" source="../media/add-gcp-project-configure-access.png" alt-text="Screenshot of the Configure access tab for the GCP connector showing the GCloud script.":::
+:::image type="content" source="../media/add-google-project-configure-access.png" alt-text="Screenshot of the Configure access tab for the GCP connector showing the GCloud script.":::
 
 ## Run the GCloud script
 

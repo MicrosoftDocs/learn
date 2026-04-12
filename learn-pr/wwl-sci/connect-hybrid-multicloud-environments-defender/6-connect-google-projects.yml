@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.connect-hybrid-multicloud-environments-defender.connect-gcp-projects
+uid: learn.wwl.connect-hybrid-multicloud-environments-defender.connect-google-projects
 metadata:
   title: Connect GCP projects to Defender for Cloud
   description: Connect GCP projects and organizations to Microsoft Defender for Cloud using the native cloud connector, configure Defender plans, run the GCloud deployment script, and validate connector health.
@@ -11,4 +11,4 @@ metadata:
 title: Connect GCP projects to Defender for Cloud
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-connect-gcp-projects.md)]
+  [!include[](includes/6-connect-google-projects.md)]

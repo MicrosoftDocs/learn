@@ -39,8 +39,8 @@ units:
 - learn.wwl.connect-hybrid-multicloud-environments-defender.explore-multicloud-connectivity-model
 - learn.wwl.connect-hybrid-multicloud-environments-defender.plan-connector-strategy
 - learn.wwl.connect-hybrid-multicloud-environments-defender.connect-on-premises-azure-arc
-- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-aws-accounts
-- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-gcp-projects
+- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-amazon-accounts
+- learn.wwl.connect-hybrid-multicloud-environments-defender.connect-google-projects
 - learn.wwl.connect-hybrid-multicloud-environments-defender.verify-multicloud-coverage
 - learn.wwl.connect-hybrid-multicloud-environments-defender.knowledge-check
 - learn.wwl.connect-hybrid-multicloud-environments-defender.summary

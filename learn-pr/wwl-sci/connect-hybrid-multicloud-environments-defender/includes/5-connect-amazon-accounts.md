@@ -16,7 +16,7 @@ If your AWS account is already connected to **Microsoft Sentinel**, review the M
 
 ## Create the AWS connector
 
-:::image type="content" source="../media/add-aws-account-environment-settings.png" alt-text="Screenshot of the Environment Settings page in Microsoft Defender for Cloud showing the Add environment button with Amazon Web Services as an option.":::
+:::image type="content" source="../media/add-amazon-account-environment-settings.png" alt-text="Screenshot of the Environment Settings page in Microsoft Defender for Cloud showing the Add environment button with Amazon Web Services as an option.":::
 
 1. In the Azure portal, open **Microsoft Defender for Cloud** and select **Environment settings** from the left menu.
 2. Select **Add environment** > **Amazon Web Services**.
@@ -60,8 +60,6 @@ On the **Configure access** tab:
 1. Select **Default access** or **Least privilege access**. For production environments, select **Least privilege access** to follow the principle of least privilege.
 2. Select the deployment method: **AWS CloudFormation** or **Terraform**. For most environments, CloudFormation is the standard path.
 3. Select **Download** to get the CloudFormation template. The template file is customized to the plans you selected.
-
-:::image type="content" source="../media/add-aws-account-configure-access.png" alt-text="Screenshot of the Configure access tab in the AWS connector wizard showing the CloudFormation template download option.":::
 
 ## Deploy the CloudFormation template
 
