@@ -38,7 +38,7 @@ The authentication flow works as follows. Defender for Cloud requests a token fr
 
 AWS performs audience, signature, thumbprint, and role-level checks before issuing credentials, ensuring only the specific Microsoft-managed application can assume the connector role.
 
-:::image type="content" source="../media/amazon-auth-sequence.png" alt-text="Sequence diagram of the AWS federated auth flow: Defender for Cloud exchanges a Microsoft Entra token with AWS STS for temporary credentials, then calls AWS APIs. No credentials are stored.":::
+:::image type="content" source="../media/amazon-authentication-sequence.png" alt-text="Sequence diagram of the AWS federated auth flow: Defender for Cloud exchanges a Microsoft Entra token with AWS STS for temporary credentials, then calls AWS APIs. No credentials are stored.":::
 
 This architecture means that even if an attacker gained access to the Azure environment, there are no stored AWS credentials to exfiltrate. The trust is used by the specific Microsoft-managed application, during a valid authentication transaction.
 

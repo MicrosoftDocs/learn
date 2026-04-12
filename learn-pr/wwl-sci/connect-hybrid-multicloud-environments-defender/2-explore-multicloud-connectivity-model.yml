@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-hybrid-multicloud-environments-defender.explore-multicloud-connectivity-model
 metadata:
-  title: Explore the Defender for Cloud multi-cloud connectivity model
-  description: Learn how CSPM and CWPP coverage layers work, what federated authentication means for AWS and GCP connectors, and what becomes available after connecting each environment type.
+  title: Explore the Defender for Cloud multicloud connectivity model
+  description: Learn how Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) coverage layers work. Explore what federated authentication means for AWS and GCP connectors, and what becomes available after connecting each environment type.
   ms.date: 04/01/2026
   author: r-c-stewart
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-generated
-title: Explore the Defender for Cloud multi-cloud connectivity model
+title: Explore the Defender for Cloud multicloud connectivity model
 durationInMinutes: 8
 content: |
   [!include[](includes/2-explore-multicloud-connectivity-model.md)]
