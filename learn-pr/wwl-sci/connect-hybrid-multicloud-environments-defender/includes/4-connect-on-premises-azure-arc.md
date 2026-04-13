@@ -13,7 +13,7 @@ An Arc-enabled server running Windows Server or Linux:
 
 The Azure Connected Machine agent sends heartbeats, configuration data, and security signals to Azure. For production environments with strict network controls, the agent supports proxy configuration and private endpoint communication through Azure Arc private link scope. For required endpoints and TLS inspection guidance, see the NOTE at the end of this unit.
 
-:::image type="content" source="../media/arc-defender-integration.png" alt-text="Diagram showing the Azure Connected Machine agent connecting an on-premises server to Defender for Cloud.":::
+:::image type="content" source="../media/arc-defender-integration.png" alt-text="Diagram showing the Azure Connected Machine agent connecting an on-premises server to Defender for Cloud." lightbox="../media/arc-defender-integration.png":::
 
 ## Choose a deployment path
 
