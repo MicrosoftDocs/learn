@@ -13,7 +13,7 @@ summary: >
   This module explores how Copilot+ PCs, Windows 11 Pro, and Microsoft 365 can transform higher education by enhancing student organization, improving educator workflows, and securing device deployment for administrators.
 
 abstract: |
-  By the end of this module, you're able to:
+  By the end of this module, you are able to:
   - Understand how Copilot+ PCs, Windows 11 Pro, and Microsoft 365 can empower higher education institutions.
   - Adapt to modern educational realities by leveraging technology to enhance learning experiences.
   - Keep students organized with tools and features designed to streamline their academic journey.
@@ -22,7 +22,7 @@ abstract: |
 
 prerequisites: |
   - None
-iconUrl: /training/achievements/microsoft-higher-education-badge.svg
+iconUrl: /training/achievements/microsoft-higher-education.svg
 ratingEnabled: false
 levels:
   - beginner
