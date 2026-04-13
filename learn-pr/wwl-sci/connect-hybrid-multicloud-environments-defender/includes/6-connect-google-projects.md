@@ -19,7 +19,7 @@ Confirm these prerequisites:
 
 ## Create the GCP connector
 
-:::image type="content" source="../media/google-connector.png" alt-text="Screenshot of the Environment Settings Add environment menu in Microsoft Defender for Cloud with Google Cloud Platform highlighted as an option.":::
+:::image type="content" source="../media/google-connector.png" alt-text="Screenshot of the Environment Settings Add environment menu in Microsoft Defender for Cloud with Google Cloud Platform highlighted as an option." lightbox="../media/google-connector.png":::
 
 1. In the Azure portal, open **Microsoft Defender for Cloud** and select **Environment settings**.
 2. Select **Add environment** > **Google Cloud Platform**.
@@ -50,7 +50,7 @@ Available CWPP plans for GCP:
 | Defender for Containers | GKE clusters | No |
 | Defender for Databases | Cloud SQL instances | No |
 
-:::image type="content" source="../media/google-select-plans.png" alt-text="Screenshot of the Select plans tab for a GCP connector showing available Defender plan options.":::
+:::image type="content" source="../media/google-select-plans.png" alt-text="Screenshot of the Select plans tab for a GCP connector showing available Defender plan options." lightbox="../media/google-select-plans.png":::
 
 For Contoso's GCP environment, enable Defender for Servers to extend CWPP coverage to GCP Compute Engine VMs. The GCloud script generated includes Compute Engine management permissions and Google Cloud OS Config API access needed for Arc autoprovisioning.
 
