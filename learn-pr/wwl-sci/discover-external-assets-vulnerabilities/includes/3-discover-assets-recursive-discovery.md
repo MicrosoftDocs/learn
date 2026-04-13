@@ -55,7 +55,7 @@ Every asset receives a **state** that defines its relationship to your organizat
 |-------|-------------|
 | **Approved inventory** | Confirmed as owned by your organization; actively monitored and included in dashboard charts |
 | **Candidate** | Has a connection to your seeds but needs manual review to confirm ownership |
-| **Dependency** | Owned by a external but directly supports your approved assets (for example, a CDN or hosting provider) |
+| **Dependency** | Owned by an external but directly supports your approved assets (for example, a CDN or hosting provider) |
 | **Monitor only** | Relevant to your attack surface but not directly controlled—used for franchises or related entities |
 | **Requires investigation** | Low-confidence connection; flagged for manual review to determine how it should be categorized |
 
