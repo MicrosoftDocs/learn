@@ -2,7 +2,7 @@
 uid: learn.wwl.discover-external-assets-vulnerabilities.explore-external-attack-surface-capabilities
 metadata:
   title: Explore External Attack Surface Management (EASM) features and capabilities
-  description: Explore how Microsoft Defender EASM is deployed as an Azure resource, what assets it discovers, and how it's outside-in scanning scope differs from other Defender tools.
+  description: Explore how Microsoft Defender EASM is deployed as an Azure resource, what assets it discovers, and how its outside-in scanning scope differs from other Defender tools.
   ms.date: 04/07/2026
   author: r-c-stewart
   ms.author: roberts
