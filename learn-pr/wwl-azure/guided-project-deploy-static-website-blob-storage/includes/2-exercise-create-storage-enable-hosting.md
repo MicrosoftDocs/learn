@@ -18,5 +18,4 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
-[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/Deploy-a-static-website-with-Azure-Blob-Storage/Instructions/Labs/2-exercise-create-storage-enable-hosting.html)
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/Deploy-a-static-website-with-Azure-Blob-Storage/Instructions/Labs/2-exercise-create-storage-enable-hosting.html)

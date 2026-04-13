@@ -9,5 +9,4 @@ Congratulations — you've completed the exercises in this project. In this fina
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/Deploy-a-static-website-with-Azure-Blob-Storage/Instructions/Labs/6-clean-up-resources.html)
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/Deploy-a-static-website-with-Azure-Blob-Storage/Instructions/Labs/6-clean-up-resources.html)
