@@ -1,6 +1,6 @@
 With a clear picture of how Defender for Cloud covers multicloud environments, you're ready to plan a connector strategy. Before you create any connectors, make three key decisions for each cloud environment: the scope of each connector, the scan interval, and the permission model. These decisions affect operational overhead, coverage completeness, API call volume, and audit trail quality.
 
-:::image type="content" source="../media/connector-scope-decision.png" alt-text="Decision tree for selecting organization-level or account-level connector scope.":::
+:::image type="content" source="../media/connector-scope-decision.png" alt-text="Decision tree for selecting organization-level or account-level connector scope." lightbox="../media/connector-scope-decision.png":::
 
 ## Plan your AWS connector
 
