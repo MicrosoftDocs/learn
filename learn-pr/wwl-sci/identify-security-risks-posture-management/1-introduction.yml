@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-security-risks-posture-management.introduction
+metadata:
+  title: Introduction
+  description: Introduction to identifying security risks using Cloud Security Posture Management in Microsoft Defender for Cloud.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

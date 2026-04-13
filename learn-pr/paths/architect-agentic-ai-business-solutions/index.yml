@@ -34,6 +34,7 @@ subjects:
 modules:
 - learn.wwl.introduction-agentic-ai-business-solution-architecture
 - learn.wwl.analyze-requirements-ai-powered-business-solutions
+- learn.wwl.design-overall-ai-strategy-business-solutions
 - learn.wwl.evaluate-costs-benefits-ai-powered-business-solution
 - learn.wwl.design-ai-agents-business-solutions
 - learn.wwl.design-extensibility-ai-solutions

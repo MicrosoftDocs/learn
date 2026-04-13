@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-security-risks-posture-management.identify-attack-paths-choke-points
+metadata:
+  title: Identify attack paths and choke points
+  description: Use attack path analysis in Microsoft Defender for Cloud to locate externally exploitable attack chains, identify choke points, investigate nodes with MITRE ATT&CK context, and understand how attack paths extend to AI workloads.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Identify attack paths and choke points
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-identify-attack-paths-choke-points.md)]
