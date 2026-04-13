@@ -91,7 +91,7 @@ With the AWS and GCP connector models in mind, a few decisions apply across both
 
 **On-premises machines require a different path.** Unlike EC2 and Compute Engine VMs, on-premises servers have no autoprovisioning capability. You must manually deploy the Azure Connected Machine agent on each server—either one at a time using the portal-generated onboarding script. Or you can deploy at scale using a service principal with your organization's management tooling such as Group Policy, Ansible, or Microsoft Configuration Manager. This manual deployment step applies regardless of how many machines you have, so factor the deployment effort into your planning timeline before onboarding large on-premises estates.
 
-:::image type="content" source="../media/arc-provisioning-paths.png" alt-text="Diagram comparing Azure Arc provisioning paths: EC2 and Compute Engine VMs use autoprovisioning; on-premises servers require manual agent deployment.":::
+:::image type="content" source="../media/arc-provisioning-paths.png" alt-text="Diagram comparing Azure Arc provisioning paths: EC2 and Compute Engine VMs use autoprovisioning; on-premises servers require manual agent deployment." lightbox="../media/arc-provisioning-paths.png":::
 
 **Prioritize by attack surface risk.** Before creating connectors, identify which environments carry the greatest unmonitored risk. Internet-facing EC2 instances, production databases on RDS, GKE clusters running multitenant applications, and storage buckets holding sensitive data are common high-risk starting points. Start with connectors for those environments to get recommendations and secure score contribution as quickly as possible.
 
