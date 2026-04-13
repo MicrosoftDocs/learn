@@ -192,4 +192,3 @@ query = """
 
 - [VectorDistance function reference](/azure/cosmos-db/nosql/query/vectordistance)
 - [Vector search in Azure Cosmos DB for NoSQL](/azure/cosmos-db/nosql/vector-search)
-- [Query items in Azure Cosmos DB for NoSQL using Python](/azure/cosmos-db/nosql/how-to-python-query-items)
