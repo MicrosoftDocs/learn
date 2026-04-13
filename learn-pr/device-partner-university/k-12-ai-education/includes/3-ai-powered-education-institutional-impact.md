@@ -1,5 +1,3 @@
-:::image type="content" border="true" source="../media/remote-teacher.jpeg" alt-text="Photo of a teacher live streaming a lecture on a smartphone.":::
-
 As a new tool in the hands of instructors, students, and administrators, AI is already reshaping education. Here's how AI-powered Microsoft Education solutions can enhance instructional quality and create more personalized learning experiences.
 
 ## AI for educators

@@ -1,5 +1,3 @@
-:::image type="content" border="true" source="../media/meeting-presentation.jpeg" alt-text="Photograph of a meeting with a woman standing and presenting to two seated colleagues.":::
-
 Institutional change requires more than individual tools. It requires an ecosystem that connects learning, data, and operational systems so leaders can make informed decisions and better support educators. Let's explore how data integration and insight generation can serve as foundational practices for K-12 education.
 
 ## Why data integration matters

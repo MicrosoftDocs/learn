@@ -1,5 +1,3 @@
-:::image type="content" border="true" source="../media/school-student.jpeg" alt-text=" A portrait of a happy student in a school classroom wearing earphones.":::
-
 To steer K-12 institutions through times of disruption, their decision makers must be familiar with the strategic priorities that drive both day-to-day operations and long term vision. These priorities guide technology adoption, curriculum design, professional development, budgeting, and risk management.
 
 ## 1. Student success and wellbeing
