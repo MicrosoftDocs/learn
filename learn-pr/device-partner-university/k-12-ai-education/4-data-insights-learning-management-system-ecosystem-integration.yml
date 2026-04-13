@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.k-12-ai-education.data-insights-lms-ecosystem-integration
+uid: learn.dpu.k-12-ai-education.data-insights-learning-management-system-ecosystem-integration
 title: Data, insights, and LMS ecosystem integration
 metadata:
   title: Data, Insights, And LMS Ecosystem Integration
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-data-insights-lms-ecosystem-integration.md)]
+  [!include[](includes/4-data-insights-learning-management-system-ecosystem-integration.md)]
