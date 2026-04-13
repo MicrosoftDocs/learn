@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/support-portal-role-assignments.png" alt-text="Photograph of user interacting with a Surface device.":::
+:::image type="content" border="true" source="../media/support-portal-role-assignment.png" alt-text="Photograph of user interacting with a Surface device.":::
 
 To perform service and support actions in Surface Support Portal, the correct roles need to be assigned in the Microsoft 365 Admin Center. To assign roles:
 
