@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-configure-workload-protection-plans.explore-workload-protection-plan-catalog
+metadata:
+  title: Understand the Defender for Cloud CWPP plan catalog
+  description: Explore the Cloud Workload Protection Platform plans available in Microsoft Defender for Cloud and learn what workloads each plan protects.
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Understand the Defender for Cloud CWPP plan catalog
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-workload-protection-plan-catalog.md)]

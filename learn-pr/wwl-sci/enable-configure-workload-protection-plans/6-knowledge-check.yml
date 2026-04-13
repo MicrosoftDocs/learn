@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-configure-workload-protection-plans.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of enabling and configuring workload protection plans in Microsoft Defender for Cloud.
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your organization deploys Azure OpenAI Service and Azure AI Model Inference service to power a customer-facing assistant. Which Defender for Cloud plan provides real-time threat protection against prompt injection and jailbreak attacks targeting these AI applications?"
+    choices:
+    - content: "Defender Cloud Security Posture Management (CSPM)"
+      isCorrect: false
+      explanation: "Incorrect. Defender CSPM provides posture management, attack path analysis, and risk prioritization—not runtime threat detection for AI workloads. Enabling Defender CSPM improves your AI security posture but doesn't generate real-time alerts for prompt injection or jailbreak attempts."
+    - content: "Defender for AI Services"
+      isCorrect: true
+      explanation: "Correct. Defender for AI Services provides real-time threat protection for Azure OpenAI Service and Azure AI Model Inference service deployments. It detects threats specific to AI systems, including prompt injection attacks, jailbreak attempts, and sensitive data anomalies in model responses."
+    - content: "Defender for App Service"
+      isCorrect: false
+      explanation: "Incorrect. Defender for App Service protects web applications and APIs hosted on the Azure App Service platform. It detects web application threats such as suspicious command execution and dangling DNS entries, but it doesn't provide protection for Azure OpenAI or Azure AI Foundry workloads."
+    - content: "Defender for Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Resource Manager monitors Azure management plane operations for suspicious activity such as lateral movement via Azure Resource Manager calls and cryptomining. It doesn't provide threat detection for AI workloads running on Azure OpenAI or Azure AI Foundry."
+  - content: "You enable Defender for Storage on a subscription containing five Azure Blob Storage accounts. Which statement correctly describes the protection layers and their costs?"
+    choices:
+    - content: "Activity monitoring starts automatically for all storage accounts when the plan is enabled; malware scanning is a configurable add-on charged per gigabyte of data scanned."
+      isCorrect: true
+      explanation: "Correct. Activity monitoring is included as part of the Defender for Storage plan and starts automatically without extra configuration. Malware scanning is an optional add-on that you enable separately and is billed per gigabyte of uploaded data scanned, with a configurable monthly cap."
+    - content: "Activity monitoring requires you to enable diagnostic logs on each storage account before threat detection begins."
+      isCorrect: false
+      explanation: "Incorrect. One of the key benefits of Defender for Storage is that activity monitoring analyzes data and control plane data without requiring diagnostic logs to be enabled. Protection begins automatically when the plan is turned on."
+    - content: "Malware scanning is included at no extra cost as part of the base Defender for Storage plan."
+      isCorrect: false
+      explanation: "Incorrect. Malware scanning is a configurable add-on for Defender for Storage that is charged per gigabyte of uploaded data scanned. Malware scanning isn't included in the base plan cost. Activity monitoring and sensitive data threat detection are included, but malware scanning requires extra budget consideration."
+    - content: "Sensitive data threat detection requires a separate Defender CSPM plan to be enabled on the subscription."
+      isCorrect: false
+      explanation: "Incorrect. Sensitive data threat detection is a configurable feature within the Defender for Storage plan itself and doesn't require Defender CSPM. You can enable or disable it within the Defender for Storage plan settings at no extra cost."
+  - content: "Contoso Financial Services needs to enable just-in-time (JIT) VM access and file integrity monitoring on a group of production servers to meet their internal security policy. Which Defender for Servers plan provides both of these features?"
+    choices:
+    - content: "Plan 1 (P1)"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers Plan 1 provides Microsoft Defender for Endpoint integration, core vulnerability assessment, and security alerts. Just-in-time VM access and file integrity monitoring are exclusive to Plan 2."
+    - content: "Plan 2 (P2)"
+      isCorrect: true
+      explanation: "Correct. Defender for Servers Plan 2 includes all Plan 1 capabilities plus just-in-time VM access, file integrity monitoring, network map, agentless scanning, and 500-MB free daily data ingestion per server. Both features required by Contoso are exclusive to Plan 2."
+    - content: "Either Plan 1 or Plan 2—both plans include just-in-time VM access and file integrity monitoring."
+      isCorrect: false
+      explanation: "Incorrect. Just-in-time VM access and file integrity monitoring are only available in Defender for Servers Plan 2. Plan 1 provides foundational endpoint detection and vulnerability management but doesn't include these advanced server protection features."
+    - content: "Foundational CSPM—these features are part of posture management and don't require a CWPP plan."
+      isCorrect: false
+      explanation: "Incorrect. Just-in-time VM access and file integrity monitoring are workload protection features provided by Defender for Servers Plan 2, not posture management features. Foundational CSPM provides recommendations and secure score but doesn't include runtime workload protection capabilities."
+  - content: "After enabling Defender plans across 14 subscriptions in a management group, your CISO asks for a consolidated report showing exactly which protection plans are active for each subscription. Which Defender for Cloud capability provides this view?"
+    choices:
+    - content: "Regulatory compliance dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The regulatory compliance dashboard shows your organization's compliance posture against assigned security standards and frameworks. It doesn't provide a consolidated view of which Defender plans are enabled across subscriptions."
+    - content: "Cloud Security Explorer"
+      isCorrect: false
+      explanation: "Incorrect. Cloud Security Explorer is a graph-based query tool for proactively hunting security risks across your environment. It's used to build custom queries about resource configurations and exposures, not to audit which protection plans are enabled."
+    - content: "Coverage workbook"
+      isCorrect: true
+      explanation: "Correct. The Coverage workbook in Defender for Cloud shows which plans are enabled across all subscriptions and resources in a consolidated view. It's the purpose-built audit tool for understanding your Defender plan coverage, accessible through Defender for Cloud > Workbooks > Coverage."
+    - content: "Microsoft Defender XDR incidents dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Defender XDR incidents dashboard aggregates security incidents and alerts from across the Defender product family. It shows active threats and incidents but doesn't provide a view of which Defender for Cloud plans are enabled across subscriptions."
+  - content: "You want to protect a specific virtual machine with Defender for Servers Plan 2 without enabling Plan 2 for the entire subscription. Which statement accurately describes this option?"
+    choices:
+    - content: "Plan 2 can be enabled at the resource level for individual virtual machines in the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers Plan 2 can't be enabled at the resource level. To use Plan 2, you must enable it at the subscription level. You can then disable Plan 2 for specific resources if needed, but you can't enable it only for individual machines."
+    - content: "Plan 2 must be enabled at the subscription level; you can then disable it for specific resources to exclude them from protection."
+      isCorrect: true
+      explanation: "Correct. Defender for Servers Plan 2 is a subscription-level plan and can't be enabled for individual resources. The correct approach is to enable Plan 2 at the subscription level, which protects all qualifying resources, and then use resource-level overrides to disable the plan for specific machines that don't need Plan 2 protection."
+    - content: "Plan 2 can be enabled at the resource level using the Azure REST API, even if it can't be enabled through the portal."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers Plan 2 can't be enabled at the resource level through either the portal or the REST API. Only Plan 1 supports resource-level enablement. Plan 2 is a subscription-level plan with the option to disable specific resources."
+    - content: "Both Plan 1 and Plan 2 support full enable and disable operations at the individual resource level."
+      isCorrect: false
+      explanation: "Incorrect. Only Plan 1 supports being fully enabled or disabled at the resource level. Plan 2 can only be disabled at the resource level—it can't be enabled on individual resources. Plan 2 enablement requires a subscription-level configuration."
