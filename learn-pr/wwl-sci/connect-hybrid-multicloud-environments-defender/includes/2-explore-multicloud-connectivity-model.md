@@ -12,7 +12,7 @@ The Security Posture Management plan that enables CSPM can't be turned off in a 
 
 Once a machine is Arc-enabled, it appears in Defender for Cloud's inventory alongside native Azure VMs. Any Defender plan enabled on the Azure subscription extends coverage to that machine. This two-step model—connector for posture, Arc for protection—is the foundation of how Defender for Cloud treats non-Azure workloads.
 
-:::image type="content" source="../media/coverage-layers.png" alt-text="Diagram showing two coverage paths from Defender for Cloud: an agentless CSPM path via cloud APIs, and a CWPP path requiring the Azure Arc Connected Machine agent on virtual machines.":::
+:::image type="content" source="../media/coverage-layers.png" alt-text="Diagram showing two coverage paths from Defender for Cloud: an agentless CSPM path via cloud APIs, and a CWPP path requiring the Azure Arc Connected Machine agent on virtual machines." lightbox="../media/coverage-layers.png":::
 
 ## Review capabilities available after connecting
 
@@ -38,7 +38,7 @@ The authentication flow works as follows. Defender for Cloud requests a token fr
 
 AWS performs audience, signature, thumbprint, and role-level checks before issuing credentials, ensuring only the specific Microsoft-managed application can assume the connector role.
 
-:::image type="content" source="../media/amazon-authentication-sequence.png" alt-text="Sequence diagram of the AWS federated auth flow: Defender for Cloud exchanges a Microsoft Entra token with AWS STS for temporary credentials, then calls AWS APIs. No credentials are stored.":::
+:::image type="content" source="../media/amazon-authentication-sequence.png" alt-text="Sequence diagram of the AWS federated auth flow: Defender for Cloud exchanges a Microsoft Entra token with AWS STS for temporary credentials, then calls AWS APIs. No credentials are stored." lightbox="../media/amazon-authentication-sequence.png":::
 
 This architecture means that even if an attacker gained access to the Azure environment, there are no stored AWS credentials to exfiltrate. The trust is used by the specific Microsoft-managed application, during a valid authentication transaction.
 
