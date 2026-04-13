@@ -39,10 +39,10 @@ products:
   - m365-education
 units:
   - learn.dpu.k-12-ai-education.introduction
-  - learn.dpu.k-12-ai-education.institutional-priorities-modern-k12-education
+  - learn.dpu.k-12-ai-education.institutional-priorities-modern-k-12-education
   - learn.dpu.k-12-ai-education.ai-powered-education-institutional-impact
   - learn.dpu.k-12-ai-education.data-insights-learning-management-system-ecosystem-integration
-  - learn.dpu.k-12-ai-education.security-simplified-it-infrastructure-k12
+  - learn.dpu.k-12-ai-education.security-simplified-it-infrastructure-k-12
   - learn.dpu.k-12-ai-education.exercise-connect-institutional-needs-solutions
   - learn.dpu.k-12-ai-education.knowledge-check
   - learn.dpu.k-12-ai-education.summary
