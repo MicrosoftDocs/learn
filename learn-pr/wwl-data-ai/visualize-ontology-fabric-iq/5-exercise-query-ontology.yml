@@ -3,8 +3,8 @@ uid: learn.wwl.visualize-ontology-fabric-iq.exercise-visualize-ontology
 title: Exercise - Visualize ontology data with Microsoft Fabric IQ
 metadata:
   title: Exercise - Visualize Ontology Data with Microsoft Fabric IQ
-  description: Practice visualizing entity instances, exploring relationship graphs, and filtering data to answer business questions using the Fabric IQ ontology preview experience.
-  ms.date: 03/30/2026
+  description: Practice visualizing entity instances, exploring relationship graphs, and seeing data through property charts and visualizations in Microsoft Fabric IQ.
+  ms.date: 04/13/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

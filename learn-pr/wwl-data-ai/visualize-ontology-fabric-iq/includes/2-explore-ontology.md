@@ -1,68 +1,54 @@
-The ontology you built in the previous module now contains populated data. Each entity type definition has become a collection of entity instances—real records from your lakehouse tables and eventhouse streams. Exploring how those instances appear is the first step in getting value from your ontology.
+The ontology preview experience lets you explore your ontology data—the real records from your lakehouse and eventhouse bound to your entity types. In this unit, you'll learn how to navigate that experience: viewing entity instances and drilling into individual records to see how your graph connects.
 
 ## Understand the graph structure: nodes and edges
 
-Your ontology is a graph database—a data structure built from two fundamental elements: **nodes** and **edges**.
+Your ontology is a graph database—a data structure built from two fundamental elements: **nodes** and **edges**. In the graph view below, each colored circle is a node (a real record—a patient, a room, or a department), and each labeled arrow connecting them is an edge (a relationship like `admittedTo` or `inDepartment`).
+
+:::image type="content" source="../media/room-instance-graph.png" alt-text="Screenshot of the Fabric IQ Graph view for Rooms showing a query schema at the top with Patients admittedTo Rooms inDepartment Departments, and below it a live populated graph with colored dots representing individual patient, room, and department nodes connected by admittedTo and inDepartment edges, with Department Node and Edge annotations in red.":::
 
 ### Nodes represent entities
 
-A **node** is an entity instance in your graph. When you defined the Patient entity type and bound it to your lakehouse table, each row in that table became a node in the graph. Patient ID 12345 is a node. The Cardiology department is a node. Room 301 is a node.
+A **node** is a single real record represented as a point in the graph. Each entity instance—a room, a department, a patient—is a node. Room ICU-301 is a node. The Intensive Care Unit department is a node. A patient admitted to that room is a node.
 
 Nodes have:
 - **Labels** (the entity type, like Patient or Department)
 - **Properties** (attributes like fullName, departmentName, or roomNumber)
 - **A unique identity** (the key property value that distinguishes this instance from all others)
 
-In graph terminology, your "entity instances table" is showing you a list of nodes of one type.
-
 ### Edges represent relationships
 
-An **edge** (also called a relationship) is the connection between two nodes. When you defined the "assigned_to" relationship between Patient and Room, you created the potential for edges. When Patient 12345 checks into Room 301, that specific connection becomes an edge in the graph.
+An **edge** (also called a relationship) is the connection between two nodes. The `admittedTo` relationship between Patient and Room creates edges. When a patient is admitted to Room SUR-202, that specific connection becomes an edge in the graph.
 
 Edges have:
 - **A direction** (Patient → Room, not Room → Patient)
-- **A type** (assigned_to, located_in, monitors)
+- **A type** (assignedToPatient, admittedTo, inDepartment)
 - **Source and target nodes** (the two instances being connected)
 - Optionally, **properties** (like admissionDate or transferReason)
 
-The "relationship graph" you see in the overview is a visual representation of nodes and edges: entity instances appear as circles (nodes), and the lines connecting them are the relationships (edges).
-
-### Why this matters
-
-Traditional relational databases answer questions by joining tables. Graph databases answer questions by traversing edges between nodes. When you ask "Which patients are in Cardiology?", the graph query starts at the Cardiology node, follows "has" edges to Room nodes, then follows "assigned_to" edges to Patient nodes. No joins. No foreign key lookups. Just following the connections that already exist.
-
-This graph structure is what makes your ontology powerful—and it's what you're about to explore.
+Those named connections are what make graph exploration powerful. To answer "Which patients are in the Intensive Care Unit?", the graph starts at the ICU department node, follows `inDepartment` edges to find the rooms in that department, then follows `admittedTo` edges to find the patients in those rooms—no complex queries required.
 
 ## Open the entity type overview
 
-The entity type overview is your starting point for exploring any entity type's instances and connections. To open it, select an entity type in the **Entity Types** pane—for example, **Department**—and then select **Entity type overview** from the ribbon.
+The entity type overview is your starting point for exploring any entity type's instances and connections. To open it, select an entity type in the **Entity Types** pane—for example, **Rooms**—and then select **Entity type overview** from the ribbon.
 
-The overview page shows three sections: the relationship graph tile, property charts, and entity instances table for the Department entity type. If you previewed the ontology at the end of the previous module, you recognize this experience. With fully bound data, the entity instances table now shows the actual departments from your lakehouse: Cardiology, ICU, Surgical, and Emergency.
+The overview page shows three sections: the relationship graph tile, property charts, and entity instances table for the Rooms entity type. The entity instances table shows 10 room instances from the Lamna Healthcare dataset, spanning three room types: Critical Care, Emergency, and Post-Op.
 
-:::image type="content" source="../media/department-overview.png" alt-text="Screenshot of the Department entity type overview showing the relationship graph tile, property charts, and entity instances table with Cardiology, ICU, Surgical, and Emergency departments.":::
+:::image type="content" source="../media/room-overview.png" alt-text="Screenshot of the Rooms entity type overview showing the relationship graph tile with Patients admittedTo Rooms inDepartment Departments, property charts for RoomNumber, DepartmentId, and RoomType, and an entity instances table listing 10 rooms including ICU-301, SUR-202, and ER-102.":::
 
-The entity instances table reflects the records in your bound data source. Each row is one department from the Departments table in your lakehouse. The columns correspond to the properties you defined: DepartmentId, DepartmentName, Floor, and HospitalId.
+The relationship graph tile shows Rooms at the center of two connections: Patients link to Rooms via the `admittedTo` edge, and Rooms link to Departments via the `inDepartment` edge.
 
-## Verify data population
-
-The instances table confirms your data binding is working. As you explore, check a few things:
-
-- **Row count matches expectations**: The Lamna Healthcare dataset has five departments. Five rows means the binding is pulling the full table.
-- **Property values look correct**: DepartmentName values should be recognizable business terms, not technical column names or raw IDs.
-- **Key values are present**: HospitalId links each department to its parent hospital. Missing or inconsistent values here may affect how the Hospital–Department relationship populates.
-
-If the table is empty, the most common cause is a mismatch between the entity type key and the actual values in the source table. Return to the data binding configuration and verify the key property maps to the correct source column.
+The entity instances table reflects the records in the bound data source. Each row is one room from the Rooms table. The columns correspond to the properties defined on the Rooms entity type: RoomId, RoomNumber, DepartmentId, and RoomType.
 
 ## Explore an entity instance
 
 The entity instances table is a gateway to individual records. Select any row to open the instance view for that specific instance.
 
-The instance view shows all property values for that record—the actual data from your lakehouse. For the Cardiology department, you see DepartmentId: 3, DepartmentName: Cardiology, Floor: 2, and HospitalId: 1.
+The instance view shows all property values for that record—the actual data from your lakehouse. For room SUR-202, you see RoomId: 8, RoomNumber: SUR-202, DepartmentId: 3, and RoomType: Post-Op.
 
-Below the properties, the instance view displays a scoped relationship graph: a view of this department's actual connections to other entities in the ontology. You see which hospital it belongs to—the Hospital instance with HospitalId 1—and which rooms are part of this department—the Room instances with DepartmentId 3.
+Below the properties, the relationship graph tile shows how this entity type connects to others in the ontology: Patients link to Rooms via `admittedTo`, and Rooms link to Departments via `inDepartment`. The property charts reflect data across all room instances.
 
-:::image type="content" source="../media/department-instance.png" alt-text="Screenshot of the Cardiology department instance view showing property values and a scoped relationship graph with connections to the parent Hospital instance and three Room instances.":::
+:::image type="content" source="../media/room-instance.png" alt-text="Screenshot of the Rooms instance view for Room 8 (SUR-202) with instance properties RoomId 8, RoomNumber SUR-202, DepartmentId 3, RoomType Post-Op highlighted in a red box at the top, and below it a relationship graph tile showing Patients admittedTo Rooms inDepartment Departments, plus RoomNumber and RoomType property charts.":::
 
-This instance graph is the ontology in action. The relationship configuration you defined—Department located in Hospital, Department has Room—now shows actual connections between real records, not just concept definitions. The Cardiology department isn't an abstract definition; it's a connected node in your organization's data graph.
+The instance properties panel at the top is the key difference from the entity type overview: it shows the specific values for this one record, not aggregates across all rooms.
 
 With instance-level exploration covered, you're ready to expand the relationship graph to see all entity instances and their connections together.

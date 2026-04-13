@@ -2,15 +2,15 @@
 uid: learn.wwl.visualize-ontology-fabric-iq
 metadata:
   title: Visualize Ontology Data with Microsoft Fabric IQ
-  description: Learn how to explore entity instances, visualize entity connections in the relationship graph, and filter ontology data using the Query builder with filters and components to explore your connected data.
-  ms.date: 03/30/2026
+  description: Learn how to explore entity instances, visualize entity connections in the relationship graph, and filter ontology data using the Query builder with filters and components in Microsoft Fabric IQ.
+  ms.date: 04/13/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.service: fabric
   ai-usage: ai-generated
 title: Visualize ontology data with Microsoft Fabric IQ
-summary: After building and binding your ontology in Fabric IQ, explore entity instances, visualize business concept connections in the relationship graph, and filter across multiple data sources using the Query builder—without writing SQL joins.
+summary: Explore entity instances, visualize business concept connections in the relationship graph, and filter across multiple data sources using the Query builder in Microsoft Fabric IQ—without writing SQL joins.
 abstract: |
   By the end of this module, you'll be able to:
   - Explore entity instances to see how bound data populates your ontology
@@ -18,11 +18,11 @@ abstract: |
   - Filter and explore ontology data using the Query builder with filters and components
 prerequisites: |
   Before starting this module, you should have:
-  - Completed the "Create an ontology (preview) with Fabric IQ" module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
+  - Completed the "Create an ontology with Fabric IQ" module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
   - Familiarity with Microsoft Fabric workspaces and navigation
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+- beginner
 roles:
 - data-analyst
 products:

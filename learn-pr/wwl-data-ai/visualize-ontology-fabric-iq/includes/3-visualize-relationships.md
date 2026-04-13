@@ -1,33 +1,29 @@
-Seeing entity instances in a table confirms your bindings are working. Seeing how those instances connect across your business domain is where the ontology becomes genuinely useful—it replaces multi-table queries with visual traversal through named relationships.
+In the previous unit, you explored entity instances in the ontology preview experience. In this unit, you expand the relationship graph to see how those instances connect, run a query to load real data into the graph, and explore the results interactively.
 
 ## Expand the relationship graph
 
-From any entity type overview page, select **Expand** on the relationship graph tile. The full graph view opens in Graph in Microsoft Fabric.
+From the entity type overview page, select **Expand** on the relationship graph tile to open the full graph view in Graph in Microsoft Fabric.
 
-:::image type="content" source="../media/relationship-graph-expand.png" alt-text="Screenshot of the relationship graph tile with the Expand button highlighted on the Department entity type overview page.":::
+:::image type="content" source="../media/expand-graph.png" alt-text="Screenshot of the Rooms entity type overview page showing the relationship graph tile with the Expand button highlighted in a red box in the upper-right corner of the tile.":::
 
-The graph view initially shows entity type nodes—representations of your entity types and the relationship types connecting them. No instance data has loaded yet.
+The full graph view opens showing the entity type schema: Patients connected to Rooms via `admittedTo`, and Rooms connected to Departments via `inDepartment`. This is the structure of the ontology—no instance data has loaded yet.
 
 ## Run the default query
 
-To see actual entity instances in the graph, select **Run query** from the Query builder ribbon. The default query retrieves the current entity type and all entities one relationship hop away.
+To load actual instance data into the graph, select **Run query** from the ribbon. The default query retrieves the selected entity type and all entities one relationship hop away.
 
-:::image type="content" source="../media/relationship-graph-instances.png" alt-text="Screenshot of the relationship graph after running the default query, showing department instances including Cardiology and ICU connected to room instances by labeled relationship edges.":::
+:::image type="content" source="../media/default-query.png" alt-text="Screenshot of the Rooms graph view with the Run query button highlighted in a red box in the ribbon, and below the query schema, a populated graph showing individual patient, room, and department nodes connected by admittedTo and inDepartment edges.":::
 
-After the query runs, type nodes become clusters of real instances. Starting from the Department entity type, each department appears as a labeled node: Cardiology, ICU, Surgical, and Emergency. Connected Room instances appear as separate nodes, with edges showing which rooms belong to each department—Room 201, Room 202, and Room 203 connecting to the Cardiology node; Room 301 and Room 302 connecting to ICU.
-
-These are the relationships you configured—Department has Room—now displaying actual connections between real data records. The edges aren't constructed at query time with JOINs; they're the relationship bindings you defined, materialized as first-class graph connections.
+After the query runs, the lower panel populates with real instance nodes: individual room records (purple), the patients admitted to those rooms (teal), and the departments those rooms belong to (orange). Each labeled arrow between them is a live edge—an actual connection from the data, not a constructed join.
 
 ## Select nodes to view details
 
-The graph is interactive. Select any node to view its property values in a side panel. Selecting the Cardiology department node shows DepartmentId: 3, DepartmentName: Cardiology, Floor: 2, and HospitalId: 1. Selecting a Room node shows its RoomNumber, RoomType, and Capacity values.
+The graph is interactive. Select any node to view its property values. Selecting a room node surfaces its RoomNumber, DepartmentId, and RoomType. Selecting a department node shows the department's name and ID. Selecting a patient node shows admission details.
 
-This node-level inspection helps you verify both data quality and relationship configuration. If a department node shows no connected rooms when you expect some, check the relationship binding—the source column for the Department key in the relationship's source table may not be matching correctly.
+This lets you explore both the data and the relationships at a glance—following connections the same way a clinical operations manager would think about them: which rooms are in the Intensive Care Unit, and which patients are in those rooms.
 
-## Navigate connected business concepts
+## Navigate connected data
 
-The graph view that opens from the Department entity type shows one hop: departments connected to rooms. The full Lamna Healthcare ontology spans more hops. Rooms connect to Patients (via the Room has Patient relationship). Patients connect to VitalSignEquipment (via the VitalSignEquipment monitors Patient relationship).
+The graph opened from the Rooms entity type shows Rooms at the center, with Patients and Departments one hop away. The Lamna Healthcare ontology extends further: Patients connect to VitalSignEquipment via the `assignedToPatient` relationship. Following the full path from Department → Room → Patient → VitalSignEquipment answers "Which monitors are active for patients in the ICU?"—by following named edges, not writing joins.
 
-Following the path Department → Room → Patient answers "Which patients are currently in Cardiology?" without writing a single JOIN. Following the extension to VitalSignEquipment answers "Which monitors are active for Cardiology patients?" The graph traverses the named relationships you built—doing the relational work implicitly.
-
-In the next unit, you use the Query builder to add filters and select specific components so you can ask those targeted questions directly, rather than visually exploring every connected node in the graph.
+In the next unit, you use the Query builder to add filters and control which entity types and relationship types appear, so you can target specific questions directly.
