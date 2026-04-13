@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=f1bffd16-9605-4826-ab76-f750057a74e3]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=cdc95eee-079d-4efe-b393-63357073f895]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -9,20 +9,99 @@
 
 ::: zone pivot="text"
 
-The **Azure Language SDK** is a client library that makes it easy for developers to add natural language processing (NLP) features—such as sentiment analysis, entity recognition, key phrase extraction, language detection, and text summarization—to their applications without having to call REST APIs directly. You would use the SDK when writing applications in *Python*, *JavaScript*, *C#*, or *Java*.
+A **client application** is a program you write that connects to a service or model and uses its capabilities. Your code sends requests to the service and receives results back automatically — making it possible to process large volumes of text or integrate AI analysis into a workflow.
+
+To connect to an AI service, your application uses an **API** (Application Programming Interface). An API is a set of rules that defines how two pieces of software communicate. A client library is a set of ready made code that developers can use in their application to easily talk to a service or API. You can review foundational material on applications and using endpoints in: [Get started with AI in Azure](/training/modules/get-started-with-ai-in-azure/5-endpoints?pivots=text?azure-portal=true). 
+
+## Using general-purpose AI models for text analysis
+
+Start with a Microsoft Foundry resource and create an Foundry project within your resource. In the *new* Foundry portal, you can browse the model catalog and deploy a general-purpose model. 
+
+You can build a client application that interacts with Microsoft Foundry Models using the **Azure OpenAI API**. The OpenAI API lets your code `talk` to a deployed model by sending requests to an *endpoint*, along with an *API key* to prove you're authorized.
+
+The **Responses API** is the modern, unified API within Azure OpenAI for interacting with language models. It is designed to handle complete AI interactions, not just text generation.
+
+You can use the *responses API* to send natural language prompts to a deployed language model. It's useful when you need flexible, conversational-style analysis that doesn't require a fixed structured output.
+
+#### Using the OpenAI Python library 
+
+The *OpenAI Python library* is an official Python software development kit (SDK) that lets developers build Python applications that interact with OpenAI models and services through code instead of raw HTTP requests.
+
+To use the OpenAI Python library, you need to work within a code editor. Application code is written in *code editors*, such as Visual Studio Code. A code editor’s *terminal* is a built‑in command‑line window inside the editor where you can run commands without leaving your development environment.  
+
+#### 1. Install the necessary packages 
+The OpenAI Python library can be installed in the Visual Studio Code *terminal* using: 
+
+```bash
+pip install openai
+```
+#### 2. Create a configuration file 
+Next, you can create a configuration file (type `.env`) to store your environment variables, such as your endpoint, key, and model deployment name. 
+
+Consider the following variables: 
+
+```
+AZURE_OPENAI_ENDPOINT=https://<your-resource>.openai.azure.com/openai/v1/
+MODEL_DEPLOYMENT_NAME=gpt-4.1-mini
+API_KEY=<your-foundry-key>
+```
+
+Notice how the endpoint variable contains the name of your Foundry resource and `openai.azure.com/openai/v1`. Your API key is your Foundry project key. 
+
+The model deployment name is the name *you give* the model when you deploy it. For example, when you deploy the *gpt-4.1* model, you may name it *gpt-demo-model*. The deployment name is *gpt-demo-model*. However, if you do not customize the model name, the deployment name will match the model name, as is the case in the snippet above. 
+
+#### 3. Create a file containing your application logic 
+
+Take a look at the following application code sample: 
+
+```python
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+
+# Load environment variables from .env file
+load_dotenv()
+endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+api_key = os.getenv("API_KEY")
+deployment_name = os.getenv("MODEL_DEPLOYMENT_NAME")
+
+# Create the client object
+client = OpenAI(
+    base_url=endpoint,
+    api_key=api_key
+)
+
+# Make a request using the client
+message = client.responses.create(
+    model=deployment_name,
+    input="",
+)
+
+# Print the results
+print(f"Sentiment: {message.output[0]}")
+```
 
 >[!NOTE]
->An *API* (Application Programming Interface) is a set of rules and endpoints that allows one software application to communicate with and use the functionality or data of another application. A client library is a set of ready made code that developers can use in their application to easily talk to a service or API. You can review foundational material on applications and using endpoints in: [Get started with AI in Azure](/training/modules/get-started-with-ai-in-azure/5-endpoints?pivots=text?azure-portal=true). 
+>**Loading environment variables**: In this sample, `dotenv` (`load_dotenv()`) reads your `.env` file and loads those values into your app's environment. The `os` package then retrieves each value by name with `os.getenv()`, such as `os.getenv("AZURE_OPENAI_ENDPOINT")`.
+>
+>Each key in `.env` must match the name in your code exactly. For example, if your file uses `API_KEY`, your code must also request `API_KEY`. Keep variable names consistent to avoid missing values at runtime.
 
-![Screenshot of the Foundry portal home page with the key and endpoint location visible.](../media/endpoint-key-example.png)
+We use our Foundry resource endpoint and key to create an authenticated **client object**. The `OpenAI` class is defined by the SDK and acts as a blueprint for connecting to the OpenAI API. An authenticated client object in Python is a service specific object that can securely make authorized API calls without your code manually managing tokens or secrets.
 
-To use the Azure Language SDK, you need to have a *Foundry resource*. When you create a Foundry resource, Azure creates an *endpoint*. You can find your resource endpoint and key in the *new* Foundry portal's home page. When you run your application code, your application sends a request, or call, to the endpoint. The call can be sent using the REST API or SDK. The service returns a response, such as key phrases detected, in a format known as JSON. 
+>[!NOTE]
+>In Python, a **class** is a blueprint that defines a type of thing — what data it holds and what actions it can perform. An **object** is a specific instance created from that blueprint. For example, a `Car` class might define that every car has a color and can `drive()` or `stop()`. When you create a specific car — say, a red one — that's an object.
 
-## Use the Azure Language Python SDK 
+Once you create a **client object** — configured with your endpoint and key — you can call **methods** on it to interact with the model. For example, you can use the `responses` *method* to send a prompt to a specific model deployment.
 
-Let's see how you can use the Azure Language Python SDK to build an application that analyzes a document. To use the Azure Language Python SDK, you need to have compatible version of Python and the Azure Language Python SDK installed. 
+We can display the results of the analysis by running the application code in the terminal with the command `python <file_name>.py`.
 
-Application code is written in *code editors*, such as Visual Studio Code. A code editor’s *terminal* is a built‑in command‑line window inside the editor where you can run commands without leaving your development environment.  
+The OpenAI API is straightforward to use, but results can vary between calls because the model generates text probabilistically. In practice, this means two calls with the same prompt can return slightly different wording or formatting. When your app needs consistent, structured values, such as a language code, confidence score, or redacted text, the Azure Language SDK is a better choice.
+
+## Using the Azure Language SDK 
+
+The **Azure Language SDK** is a client library for Azure Language in Foundry Tools. The SDK makes it easy for developers to add NLP features, such as language detection and redacting personally identifiable information (PII), to their applications. You can use the SDK when writing applications in *Python*, *JavaScript*, *C#*, or *Java*.
+
+Let's see how you can use the Azure Language Python SDK to build an application that analyzes text. To use the Azure Language Python SDK, you need to have a *Foundry resource*. Then you need to install a compatible version of Python and the Azure Language Python SDK.  
 
 The Python SDK can be installed in the Visual Studio Code *terminal* using: 
 
@@ -30,108 +109,64 @@ The Python SDK can be installed in the Visual Studio Code *terminal* using:
 pip install azure-ai-textanalytics
 ```
 
-In the code editor, we can create one text file, and one Python file which contains application code. 
+Consider the following configuration file sample: 
 
-![Screenshot of Visual Studio Code with a text file open.](../media/python-sdk-document-example.png)
-
-At the start of the application code, import the SDK. 
-
-```python
-from azure.ai.textanalytics import TextAnalyticsClient
-from azure.core.credentials import AzureKeyCredential
+```python 
+AZURE_LANGUAGE_ENDPOINT=https://<your-resource>.cognitiveservices.azure.com/
+API_KEY=<your-foundry-key>
 ```
 
-:::image type="content" source="../media/python-sdk-client-example.png" alt-text="Screenshot of Visual Studio Code with a Python file open with a focus on the client object created." lightbox="../media/python-sdk-client-example.png":::
-
-Then we use our Foundry resource endpoint and key to create an authenticated **client object**, the tool your code uses to communicate with a service. The client object knows the service's endpoint, carries credentials (like keys or tokens), exposes methods (for example: `analyze_sentiment()`), and handles sending requests and receiving responses under the hood.
-
-We use the client's methods to call Azure Language functions. For example, we can extract key phrases with `client.extract_key_phrases()`, recognize entities with the function `client.recognize_entities()`, and analyze sentiment with `client.analyze_sentiment()`. To generate a summary, we need to use an asynchronous technique to begin the summarization task and retrieve the results. 
-
-:::image type="content" source="../media/python-sdk-text-analysis-example.png" alt-text="Screenshot of Visual Studio Code with a Python file open with a focus on the text analysis functions." lightbox="../media/python-sdk-text-analysis-example.png":::
-
-We can display the results of the analysis by running the application code in the terminal with the command `python <file_name>.py`. When we run the app, it uses Azure Language in our Foundry resource to perform each of the tasks. 
-
-:::image type="content" source="../media/python-sdk-results.png" alt-text="Screenshot of Visual Studio Code with the terminal open with a focus on the results." lightbox="../media/python-sdk-results.png":::
-
-## Examples of code to use with the Azure Language Python SDK 
-
-Take a look at examples of code that can be used with the Azure Python SDK for the same text analysis tasks found in the previous unit. Regardless of the text analysis feature used, a client is needed to call the feature.      
+Consider the following application code sample: 
 
 ```python
 # Import packages
 import os
+from dotenv import load_dotenv
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
 
-# Create a client 
-endpoint = os.environ["FOUNDRY_ENDPOINT"]
-key = os.environ["FOUNDRY_KEY"]
+# Load environment variables from .env file
+load_dotenv()
+endpoint = os.getenv("AZURE_LANGUAGE_ENDPOINT")
+key = os.getenv("API_KEY")
 
+# Create the client
 client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(key))
+
+# Make a request using the client for language detection
+text = "¡Hola! Me llamo Josefina y vivo en Madrid, España."
+result = client.detect_language([text])[0]
+
 ```
 
-#### Key phrase extraction 
+We use the client's *methods* to call **Azure Language functions**, such as `detect_language` and `recognize_pii_entities`.  
+
+**Language detection**: The `detect_language()` method takes a list of text strings and returns the detected language, its ISO 639-1 code, and a confidence score between 0 and 1.
 
 ```python
-text = "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
+text = "¡Hola! Me llamo Josefina y vivo en Madrid, España."
+result = client.detect_language([text])[0]
 
-result = client.extract_key_phrases([text])[0]
-
-print("Key phrases:")
-for phrase in result.key_phrases:
-    print("-", phrase)
+# Print the results
+print(f"Language      : {result.primary_language.name}")
+print(f"ISO code      : {result.primary_language.iso6391_name}")
+print(f"Confidence    : {result.primary_language.confidence_score:.2f}")
 ```
 
-#### Entity extraction 
+**PII detection**: The `recognize_pii_entities()` method identifies personal details in text and returns both the redacted version of the text and a list of the entities it found, including each entity's category and confidence score.
 
 ```python
-text = "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
+text = "Maria Garcia called from 020 7946 0958 and asked to send documents to 42 Market Road, London, UK, SW1A 1AA."
 
-result = client.recognize_entities([text])[0]
+result = client.recognize_pii_entities([text])[0]
 
+# Print the results
+print("Redacted text:", result.redacted_text)
+print("\nEntities found:")
 for entity in result.entities:
-    print(f"{entity.text} | category={entity.category} | confidence={entity.confidence_score}")
+    print(f"  {entity.text} | category={entity.category} | confidence={entity.confidence_score}")
 ```
 
-#### Sentiment analysis
-
-```python
-text = "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
-
-result = client.analyze_sentiment([text])[0]
-
-print("Sentiment:", result.sentiment)
-print("Confidence scores:", result.confidence_scores)
-```
-
-#### Summarization
-
-In the Python SDK, **extractive summarization** is done as a long‑running action. 
-
-```python
-from azure.ai.textanalytics import ExtractiveSummaryAction
-
-text = (
-    "I had a fantastic meal at the diner in Seattle on Saturday. The mushroom risotto was perfectly prepared, and really tasty. Our waiter, Pete, was friendly and efficient; and gave us a great recommendation for a dessert (strawberry cheesecake). I'd definitely recommend this place for a casual dinner."
-)
-
-poller = client.begin_analyze_actions(
-    documents=[text],
-    actions=[ExtractiveSummaryAction(max_sentence_count=2)]
-)
-
-# Wait for the operation to finish and print the summary sentences
-for doc_actions in poller.result():
-    extractive_results = doc_actions[0]  # first (and only) document
-    for action_result in extractive_results:
-        if action_result.is_error:
-            print("Error:", action_result.code, action_result.message)
-        else:
-            print("Summary sentences:")
-            for sentence in action_result.sentences:
-                print("-", sentence.text)
-```
-
-With Foundry and the Azure Language SDK, you can write code for AI applications that process natural language text and generate insight from your documents. Next, let's take a look at how to include Azure Language capabilities in AI agents.  
+With the OpenAI API and the Azure Language SDK, you can write code for AI applications that process natural language and generate insight from your text. Next, let's take a look at how to include Azure Language capabilities in AI agents.  
 
 ::: zone-end
