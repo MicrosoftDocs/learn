@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=d48bd645-61dd-47cb-9a17-9f7f093a528d]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=31189f3e-0545-43f3-9362-a9936f904967]
 
 ::: zone-end
 
@@ -22,7 +22,7 @@ Consider some of these applications of text analysis:
 
 - **Legal Document Summarization**: Law firms manage lengthy case files, court rulings, and agreements. Text analysis techniques can help summarize complex legal texts, highlight important clauses, and classify documents by topic, enabling attorneys to work more efficiently and make informed decisions faster.
 
-Next, let's explore language capabilities on Azure. In particular, we’ll focus on **Azure language in Microsoft Foundry tools**, a pre-trained service that can handle multiple text analysis tasks. 
+Next, let's explore text analysis capabilities in Microsoft Foundry. 
 
 ::: zone-end
 

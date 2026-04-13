@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-introduction.3-modern-operations
+uid: learn.improve-reliability-introduction.modern-operations
 title: Modern operations
 metadata:
   title: Modern operations
   description: "What are the modern operations practices of site reliability engineering (SRE) and DevOps and why they can help us with reliability challenges."
-  ms.date: 05/19/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
