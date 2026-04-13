@@ -11,11 +11,14 @@ In this unit, you look at how these considerations can affect your capacity plan
 
 There's a tendency to see cloud computing as an unlimited resource. In comparison to traditional server/datacenter models, the capacity of the cloud appears to be infinite. The cloud does offer a whole new level of scale. However, like everything else, it does have some limits. Capacity planning involves understanding when you’re going to reach those service limits.
 
-When looking at your system and its architecture, you need to understand the limits for the cloud services you're using. For example, by default, you can have a maximum of 200 VMs per VM availability set in Azure. This limit may seem like more than enough VMs if you’re just getting started. However, when you reach that limit, you aren’t able to provision any more VMs, which could potentially result in an outage.
+When looking at your system and its architecture, you need to understand the limits for the cloud services you're using. For example, by default, you can have a maximum of 1000 VMs per VM availability set in Azure. This limit may seem like more than enough VMs if you’re just getting started. However, when you reach that limit, you aren’t able to provision any more VMs, which could potentially result in an outage.
 
-Likewise, by default, you can have 250 storage accounts per subscription, per region. These limits are both examples of soft limits that can be increased. But some services have maximum limits, which you can find at the following link.
+> [!NOTE]
+> For new deployments, consider using Availability Zones or Flexible Virtual Machine Scale Sets instead of availability sets. Availability Zones provide higher resilience by distributing VMs across physically separate datacenters within a region.
 
-[Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits?WT.mc_id=msignitethetour2019-slides-ops50)
+Likewise, by default, you can have 250 storage accounts per subscription, per region (this limit can be increased via a support request). These limits are both examples of soft limits that can be increased. But some services have maximum limits, which you can find at the following link.
+
+[Azure subscription and service limits, quotas, and constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 These limits and quotas are something to be aware of and monitor. Let’s look at ways to do that.
 
@@ -27,23 +30,23 @@ You can see the service quotas and where you are in relation to those limits in 
 
 ### Via code
 
-You can use the `Usage - List` endpoint for any Azure service to get the current resource usage information, and the limits for compute resources under the subscription, as shown in this truncated example.
+You can use the `Usage - List` endpoint for any Azure service to get the current resource usage information, and the limits for compute resources under the subscription, as shown in this truncated example. Check the [Azure REST API reference](/rest/api/compute/usage/list) for the latest stable API version.
 
-```html
-GET https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/usages?api-version=2023-03-01
+```http
+GET https://management.azure.com/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/{location}/usages?api-version=2024-07-01
 { 
-    "currentValue": 124,
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Network/locations/westeurope/usages/VirtualNetworks",
-    "limit": 1000, 
+    "currentValue": 12,
+    "id": "/subscriptions/{subscriptionId}/providers/Microsoft.Compute/locations/westeurope/usages/virtualMachines",
+    "limit": 25000, 
     "name": { 
-        "localizedValue": "Virtual Networks",
-        "value": "VirtualNetworks" 
+        "localizedValue": "Virtual Machines",
+        "value": "virtualMachines" 
     }, 
     "unit": "Count" 
 }
 ```
 
-You can see that the current number of Azure Virtual Networks (VNets) being used is 124 against a limit of 1000. Increasing a limit requires a support request, so ensure that you know ahead of time when you might come close to the threshold.
+You can see that the current number of virtual machines being used is 12 against a limit of 25,000. Some limits can be increased via a support request, so ensure that you know ahead of time when you might come close to a threshold.
 
 ## Cost limitations
 
@@ -61,13 +64,13 @@ Sometimes, directing more resources can resolve an issue, but that costs money. 
 
 You can potentially save money and time by finding the bugs first, before scaling out resources. Some examples of this approach include:
 
-- If you have a badly designed database with hot partitions, such as using only one partition on a huge noSQL database, it's slow no matter how much you scale.
+- If you have a badly designed database with hot partitions, such as using only one partition on a huge NoSQL database, it's slow no matter how much you scale.
 - If you have inefficient database queries, make them more performant before you throw more resources at the database. Sometimes, just adding the right index to a database based on common queries can drop your costs 100x.
 - If your timeouts are set incorrectly, your database connections can get saturated due to retries from inconsistent timeouts between server and database. In that case, you need to fix the settings before scaling the database.
 - If the developer’s code is inefficient, can you write more efficient code to address the problem? Perhaps the code doesn't free memory when it could, so you have been using larger memory VMs when that isn't necessary. Fixes like that can provide significant cost savings.
 
 ## Dependencies
 
-The changes that are needed to address some of the issues described in this module often have dependencies on the developers of your application. Some of the solutions and best practices recommended here, require collaboration between you and those developers to make it happen.
+The changes that are needed to address some of the issues described in this module often have dependencies on the developers of your application. Some of the solutions and best practices recommended here require collaboration between you and those developers to make it happen.
 
 You may not be able to implement all of these recommendations entirely by yourself. However, if you understand the cloud system and its capabilities and characteristics, you can become a driver for change in improving your systems and their scalability and reliability.
