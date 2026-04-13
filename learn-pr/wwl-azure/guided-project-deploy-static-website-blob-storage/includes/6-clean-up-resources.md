@@ -1,20 +1,12 @@
-Complete these steps to avoid ongoing charges from the resources you created in this project.
+This guided project consists of the following exercises:
 
-> [!WARNING]
-> Resource deletion is permanent. Verify that you're deleting only resources created for this guided project before you proceed.
+- Exercise 1: Create storage account and enable hosting
+- Exercise 2: Upload and verify site content
+- Exercise 3: Update the site content
+- **Clean up resources**
 
-## Delete the resource group
+Congratulations — you've completed the exercises in this project. In this final step, you remove all the resources you created. It's important to clean up to avoid unexpected charges in your Azure subscription.
 
-Deleting the resource group removes all resources inside it, including the storage account and the **$web** container.
+Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
-1.  In the portal search bar, search for **Resource groups** and select **Resource groups**.
-2.  Select **rg-gp-static-website** from the list.
-3.  Select **Delete resource group** from the top menu bar.
-4.  In the confirmation field, type **rg-gp-static-website** and select **Delete**.
-5.  In the confirmation dialog that appears, select **Delete** again to confirm.
-6.  Wait for the notification that confirms the resource group is deleted.
-
-## Verify cleanup
-
-1.  In the portal search bar, search for **Resource groups** and confirm **rg-gp-static-website** no longer appears in the list.
-2.  Try browsing to the static website Primary endpoint URL you saved earlier. Confirm it no longer resolves.
+[:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::](https://microsoftlearning.github.io/Deploy-a-static-website-with-Azure-Blob-Storage/Instructions/Labs/6-clean-up-resources.html)
