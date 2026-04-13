@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-regulatory-compliance.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of evaluating regulatory compliance using Microsoft Defender for Cloud.
+  ms.date: 03/30/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso Healthcare's security engineer needs to access the regulatory compliance dashboard to review control gaps. The engineer has the Security Reader role assigned on the subscription. What access does this role provide to the compliance dashboard?"
+    choices:
+    - content: "Full access—Security Reader can view all compliance data and control details."
+      isCorrect: false
+      explanation: "Incorrect. The Security Reader role doesn't provide access to policy compliance data in the regulatory compliance dashboard. To view compliance data, the Reader role on the subscription is required at minimum."
+    - content: "Partial access—Security Reader can view the dashboard but not remediation steps."
+      isCorrect: false
+      explanation: "Incorrect. The Security Reader role doesn't grant access to the compliance dashboard data at all. The Reader role on the subscription is the minimum required for viewing compliance data."
+    - content: "No access—the Reader role on the subscription is required to view compliance data."
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud documentation states that the Reader role for the subscription has access to policy compliance data, but the Security Reader role doesn't. To view compliance data, the engineer needs at least the Reader role on the subscription."
+    - content: "No access—only the Security Admin role can view compliance data."
+      isCorrect: false
+      explanation: "Incorrect. While Security Admin is required to manage standards, the minimum role to view compliance data is Reader on the subscription. Security Admin isn't the only role that can view the compliance dashboard."
+  - content: "Contoso Healthcare's compliance team wants to track adherence to ISO 27001 alongside the default Microsoft Cloud Security Benchmark. The team enables the ISO 27001 standard in the regulatory compliance dashboard but no resources appear against it. What is the most likely reason?"
+    choices:
+    - content: "ISO 27001 isn't supported in the Defender for Cloud compliance dashboard."
+      isCorrect: false
+      explanation: "Incorrect. ISO 27001 is a supported regulatory standard available in Defender for Cloud when at least one paid Defender plan is enabled. It can be assigned and monitored in the regulatory compliance dashboard."
+    - content: "The subscription has no relevant resources assessed against the ISO 27001 controls."
+      isCorrect: true
+      explanation: "Correct. When a subscription has no resources within scope of the standard's policy controls, no assessments appear against those controls in the dashboard. The standard is visible, but controls show no compliance data until in-scope resources are evaluated."
+    - content: "ISO 27001 requires Defender Cloud Security Posture Management (CSPM) to be enabled before it appears in the dashboard."
+      isCorrect: false
+      explanation: "Incorrect. ISO 27001 is available when any paid Defender plan is enabled, not specifically Defender CSPM. Foundational CSPM (free) doesn't support more regulatory standards, but any paid plan is sufficient."
+    - content: "The standard assignment must be made at the management group level to populate resources."
+      isCorrect: false
+      explanation: "Incorrect. Standards can be assigned at the subscription level and resources within that subscription populate the dashboard. Management group assignment is recommended for broad coverage but isn't required for resources to appear."
+  - content: "Contoso Healthcare's security team investigates a control in the ISO 27001 standard and finds it grayed out in the dashboard. What does a grayed-out control indicate?"
+    choices:
+    - content: "The control has no failing resources—all assessed resources are compliant."
+      isCorrect: false
+      explanation: "Incorrect. A grayed-out control doesn't mean all resources are compliant. It means Defender for Cloud can't automatically assess the control—for example, because it's a procedural or process control, or because no automated assessment logic exists for it yet."
+    - content: "Defender for Cloud can't automatically assess the control."
+      isCorrect: true
+      explanation: "Correct. Grayed-out controls are controls Defender for Cloud can't automatically assess. Grayed-out controls can occur because the control is procedural or process-related rather than a technical configuration, or because no automated policy assessment is implemented. Manual attestation is still possible for these controls."
+    - content: "The control requires Defender CSPM to be enabled before assessments run."
+      isCorrect: false
+      explanation: "Incorrect. A grayed-out state isn't related to the CSPM plan level. It indicates the control type can't be automatically evaluated, regardless of which Defender plan is active."
+    - content: "The control applies only to non-Azure cloud environments and isn't relevant to Azure subscriptions."
+      isCorrect: false
+      explanation: "Incorrect. Grayed-out controls aren't scoped to non-Azure clouds. They appear for controls across all cloud environments when Defender for Cloud has no automated assessment logic for that specific control."
+  - content: "Contoso Healthcare adds any standard to the Defender for Cloud regulatory compliance dashboard and wants the same compliance improvement actions to also appear in their broader compliance management platform for all digital assets—not just Azure. Which integration automatically surfaces Defender for Cloud compliance data in a unified cross-asset compliance view?"
+    choices:
+    - content: "Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel is a SIEM and SOAR solution focused on threat detection and incident response. It doesn't provide a unified compliance management view that aggregates Defender for Cloud compliance data alongside other digital assets."
+    - content: "Microsoft Purview Compliance Manager"
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud integrates with Microsoft Purview Compliance Manager. When you add any standard to your compliance dashboard, the resource-level compliance data is automatically surfaced in Compliance Manager for the same standard, providing a unified cross-asset compliance view."
+    - content: "Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender XDR provides unified security operations and incident correlation across Microsoft security products. It doesn't aggregate compliance posture data across an organization's full digital estate in the way Purview Compliance Manager does."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy is used to assign and evaluate compliance standards and is the underlying mechanism for Defender for Cloud compliance assessments. However, it isn't the platform that provides unified cross-asset compliance management across the full digital estate."

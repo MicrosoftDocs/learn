@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-portals.compare-surface-management-and-support-portal-functions
+title: Compare Surface Management and Support Portal functions
+metadata:
+  title: Compare Surface Management And Support Portal Functions
+  description: This content is part of the "Introduction to Surface Management and Support Portals" module.
+  ms.date: 04/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-compare-surface-management-and-support-portal-functions.md)]

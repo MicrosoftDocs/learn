@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-security-risks-posture-management.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of identifying security risks using Cloud Security Posture Management in Microsoft Defender for Cloud.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your organization wants to enable attack path analysis and AI security posture management for Azure OpenAI and Azure AI Foundry workloads. Which Defender for Cloud plan provides these capabilities?"
+    choices:
+    - content: "Foundational CSPM"
+      isCorrect: false
+      explanation: "Incorrect. Foundational CSPM is enabled by default and provides secure score, recommendations, and asset inventory. It doesn't include attack path analysis or AI security posture management — those require the Defender CSPM plan."
+    - content: "Defender CSPM"
+      isCorrect: true
+      explanation: "Correct. Defender CSPM is the paid plan that adds attack path analysis, risk prioritization, AI security posture management, cloud security explorer, and data security posture management beyond the free Foundational CSPM capabilities."
+    - content: "Microsoft Defender for Servers"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers provides workload protection and vulnerability assessment for virtual machines. It doesn't provide CSPM-level attack path analysis or AI workload posture management."
+    - content: "Microsoft Defender for AI Services"
+      isCorrect: false
+      explanation: "Incorrect. Defender for AI Services provides real-time threat protection for Azure OpenAI and AI Model Inference services. It detects threats such as prompt injection and jailbreak attempts, but it doesn't provide posture management or attack path analysis."
+  - content: "Two Azure storage accounts have the same misconfiguration. One stores patient health records and is internet-accessible; the other is a non-internet-accessible development storage account. How does the risk-based Cloud Secure Score model in the Defender portal treat these two findings?"
+    choices:
+    - content: "Both findings receive the same risk level because the underlying misconfiguration is identical."
+      isCorrect: false
+      explanation: "Incorrect. The risk-based model factors in asset context — not just the misconfiguration type. Context such as internet exposure, data sensitivity, and asset criticality determines the risk level, so two assets with the same misconfiguration can receive different risk ratings."
+    - content: "The internet-exposed storage account with sensitive data receives a higher risk level."
+      isCorrect: true
+      explanation: "Correct. The risk-based prioritization engine considers internet exposure, data sensitivity, asset criticality, and lateral movement potential. The internet-exposed storage account with patient health records presents higher real-world exploitation risk and therefore receives a higher risk level."
+    - content: "Both findings are rated the same because risk level is determined entirely by the MCSB control weight."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Cloud Security Benchmark (MCSB) maps recommendations to compliance controls, but the risk level in the Defender portal's risk-based model is calculated from environmental context factors such as internet exposure and data sensitivity — not solely from MCSB control weights."
+    - content: "Only resources with confirmed sensitive data classifications appear in risk-prioritized recommendations."
+      isCorrect: false
+      explanation: "Incorrect. Risk prioritization applies to all recommendations. Sensitive data classification is one risk factor that raises the risk level, but resources without detected sensitive data still appear in recommendations and can still have high risk levels based on other factors such as internet exposure."
+  - content: "During attack path analysis in the Defender portal, you identify a storage account where five separate attack paths converge as they route from internet-exposed virtual machines toward Azure AI services. What term describes this storage account's role in the attack graph?"
+    choices:
+    - content: "Entry point"
+      isCorrect: false
+      explanation: "Incorrect. An entry point is the external access location where an attack begins, such as an internet-exposed virtual machine or publicly accessible endpoint. The storage account is an intermediate resource, not where the attack originates."
+    - content: "Target asset"
+      isCorrect: false
+      explanation: "Incorrect. A target asset is the critical resource that the attacker is ultimately trying to reach, such as a database or AI service endpoint containing valuable data. The storage account in this example is an intermediate node, not the final target."
+    - content: "Choke point"
+      isCorrect: true
+      explanation: "Correct. A choke point is a node in the attack graph where multiple attack paths converge. Remediating the security issue on a choke point can break several attack paths simultaneously, making choke points the highest-leverage remediation targets."
+    - content: "Vulnerable node"
+      isCorrect: false
+      explanation: "Incorrect. A vulnerable node is any resource along an attack path that has a security issue enabling lateral movement. While a choke point is likely also a vulnerable node, the specific characteristic described — where multiple paths converge — defines a choke point."
+  - content: "You want to use Cloud Security Explorer to build a custom query for virtual machines with high-severity vulnerabilities that also have network access to Azure AI services. In which portal do you access Cloud Security Explorer?"
+    choices:
+    - content: "Microsoft Defender portal (security.microsoft.com)"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Defender portal is where you access the Cloud Overview dashboard, risk-prioritized recommendations, and attack path analysis. Cloud Security Explorer is accessed through the Azure portal."
+    - content: "Azure portal (portal.azure.com)"
+      isCorrect: true
+      explanation: "Correct. Cloud Security Explorer is available in the Azure portal. Navigate to portal.azure.com, open Microsoft Defender for Cloud, and then select Cloud Security Explorer to build graph-based queries against the cloud security graph."
+    - content: "Microsoft Entra admin center (entra.microsoft.com)"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Entra admin center is used for managing identity, access, and conditional access policies. Cloud Security Explorer is a Defender for Cloud feature available in the Azure portal."
+    - content: "Microsoft Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Manager is the deployment and management service for Azure resources. Cloud Security Explorer is a Microsoft Defender for Cloud feature accessed through the Azure portal."

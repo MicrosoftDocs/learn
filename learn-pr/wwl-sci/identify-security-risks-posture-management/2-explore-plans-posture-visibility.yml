@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-security-risks-posture-management.explore-plans-posture-visibility
+metadata:
+  title: Explore CSPM plans and posture visibility
+  description: Compare Foundational CSPM and Defender CSPM plan capabilities, navigate the Cloud Overview dashboard in the Defender portal, discover AI workloads with AI security posture management, and understand the risk-based Cloud Secure Score.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Explore CSPM plans and posture visibility
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-plans-posture-visibility.md)]

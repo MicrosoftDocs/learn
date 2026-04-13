@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.design-strategy-building-ai-agents-business-solutions
+title: "Design AI agents for business solutions"
+metadata:
+  title: "Design AI Agents for Business Solutions"
+  description: "Learn to design AI agents for business solutions using SaaS, Copilot Studio, and Foundry platforms. Define strategies aligned with organizational goals."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 17
+content: |
+  [!include[](includes/3-design-strategy-building-ai-agents-business-solutions.md)]
