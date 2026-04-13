@@ -17,7 +17,7 @@ Select the status value for any connector to open the **Environment details** pa
 > [!TIP]
 > After creating a new connector, check Environment details within the first hour. Configuration issues appear before the first scan completes, letting you resolve problems early rather than waiting hours to discover missing coverage.
 
-:::image type="content" source="../media/verify-connector-health.png" alt-text="Diagram of the stages of checks for Connector Health.":::
+:::image type="content" source="../media/verify-connector-health.png" alt-text="Diagram of the stages of checks for Connector Health." lightbox="../media/verify-connector-health.png":::
 
 ## Verify the asset inventory
 
