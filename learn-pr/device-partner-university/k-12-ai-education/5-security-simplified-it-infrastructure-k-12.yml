@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.k-12-ai-education.security-simplified-it-infrastructure-k12
+uid: learn.dpu.k-12-ai-education.security-simplified-it-infrastructure-k-12
 title: Security and simplified IT infrastructure for K-12
 metadata:
   title: Security And Simplified IT Infrastructure For K-12
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-security-simplified-it-infrastructure-k12.md)]
+  [!include[](includes/5-security-simplified-it-infrastructure-k-12.md)]
