@@ -25,7 +25,6 @@ From your project in the Foundry portal, you can deploy a general-purpose AI mod
 You can use a general-purpose AI model to handle text analysis tasks such as:
 
 - **Key phrase extraction** lists the main concepts from unstructured text.
-- **Named entity recognition** identifies people, places, events, and more. This feature can also be customized to extract custom categories.
 - **Entity linking** identifies known entities together with a link to Wikipedia.
 - **Sentiment analysis and opinion mining** identifies whether text is positive or negative.
 - **Summarization** summarizes text by identifying the most important information.
