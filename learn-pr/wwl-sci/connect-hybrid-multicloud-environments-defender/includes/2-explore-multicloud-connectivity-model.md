@@ -50,9 +50,9 @@ For GCP, Defender for Cloud uses **workload identity federation and service acco
 
 During GCP onboarding, the GCloud script you run in your GCP project creates the following resources:
 
-1. A **workload identity pool**: the container for external identity providers
-2. **Workload identity providers** (one per enabled Defender plan): each configured to trust tokens from Microsoft Entra ID
-3. **Service accounts** with scoped project-level policy bindings: the GCP identities that Defender for Cloud impersonates
+- A **workload identity pool**: the container for external identity providers
+- **Workload identity providers** (one per enabled Defender plan): each configured to trust tokens from Microsoft Entra ID
+- **Service accounts** with scoped project-level policy bindings: the GCP identities that Defender for Cloud impersonates
 
 When Defender for Cloud scans a GCP project, it exchanges a Microsoft Entra token with Google Cloud Security Token Service (STS). Then STS validates it against the workload identity provider configuration and returns a short-lived Google STS token. Defender for Cloud uses that token to impersonate the service account and read GCP resource configuration—no private keys stored in Azure.
 
