@@ -50,10 +50,10 @@ The operating pattern affects which authentication properties the blueprint need
 
 Before you create an agent identity, confirm you can answer these questions:
 
-1. What class of agent does this blueprint represent?
-1. Which credential pattern will the blueprint use?
-1. Which shared authentication settings must all agent identities created from this blueprint inherit?
-1. Does the scenario require an agent user account?
-1. Which sponsor and owner relationships must exist from the start?
+- What class of agent does this blueprint represent?
+- Which credential pattern will the blueprint use?
+- Which shared authentication settings must all agent identities created from this blueprint inherit?
+- Does the scenario require an agent user account?
+- Which sponsor and owner relationships must exist from the start?
 
 If those answers are clear, you're ready to move into the creation workflow.
