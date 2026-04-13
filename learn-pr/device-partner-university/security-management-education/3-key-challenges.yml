@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.security-management-education.key-challenges
+title: Key challenges in K–12 and higher education IT
+metadata:
+  title: Key Challenges In K–12 And Higher Education It
+  description: This content is part of the "Microsoft security and management solutions in education" module.
+  ms.date: 03/25/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-key-challenges.md)]
