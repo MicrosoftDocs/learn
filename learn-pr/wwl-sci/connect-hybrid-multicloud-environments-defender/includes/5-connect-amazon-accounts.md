@@ -99,7 +99,7 @@ After creating the connector, verify that it's operating correctly before waitin
    - **Connecting**: initial handshake in progress—normal for the first few minutes
 4. Select the status value to open the **Environment details** page.
 
-:::image type="content" source="../media/environment-details-connector-health.png" alt-text="Screenshot of the Environment details page for a connected AWS account showing connector health status.":::
+:::image type="content" source="../media/environment-details-connector-health.png" alt-text="Screenshot of the Environment details page for a connected AWS account showing connector health status." lightbox="../media/environment-details-connector-health.png":::
 
 The Environment details page lists specific issues affecting connector health and provides remediation guidance. Common issues at this stage include:
 
