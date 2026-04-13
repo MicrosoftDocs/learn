@@ -2,7 +2,7 @@
 uid: learn.wwl.connect-hybrid-multicloud-environments-defender.summary
 metadata:
   title: Summary
-  description: Summary of connecting hybrid and multi-cloud environments to Microsoft Defender for Cloud, including key architectural decisions and next steps.
+  description: Summary of connecting hybrid and multicloud environments to Microsoft Defender for Cloud, including key architectural decisions and next steps.
   ms.date: 04/01/2026
   author: r-c-stewart
   ms.author: roberts
