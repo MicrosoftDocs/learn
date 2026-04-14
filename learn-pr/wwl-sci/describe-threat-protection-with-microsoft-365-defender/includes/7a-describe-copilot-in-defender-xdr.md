@@ -152,7 +152,7 @@ For content generated through the embedded experience you can easily transition 
 
 ## AI agents in Microsoft Defender XDR
 
-Microsoft Security Copilot also enables autonomous AI agents that operate within Microsoft Defender XDR to handle specific, repetitive security tasks. AI agents can work independently, take actions, provide transparent explanations of their decisions, and continuously learn from analyst feedback. Two agents are available directly in the Microsoft Defender portal.
+Microsoft Security Copilot also enables autonomous AI agents that operate within Microsoft Defender XDR to handle specific security tasks. AI agents can work independently, take actions, provide transparent explanations of their decisions, and continuously learn from analyst feedback. Several agents are available directly in the Microsoft Defender portal.
 
 ### Phishing Triage Agent
 
@@ -163,3 +163,11 @@ The Phishing Triage Agent requires Microsoft Defender for Office 365 Plan 2 and 
 ### Threat Intelligence Briefing Agent
 
 The **Threat Intelligence Briefing Agent** provides security operations teams with regular, customized threat intelligence briefings. The agent autonomously gathers and synthesizes relevant threat intelligence data from various sources in Microsoft Defender Threat Intelligence and delivers concise, actionable insights to help analysts stay informed about emerging threats. Rather than requiring analysts to manually review threat reports across multiple consoles, the agent surfaces the threat intelligence most relevant to your organization on an ongoing basis.
+
+### Threat Hunting Agent
+
+The **Threat Hunting Agent** is an AI-powered agent available in advanced hunting that enables analysts to investigate threats using natural language from start to finish. Rather than requiring deep Kusto Query Language (KQL) expertise, the agent transforms natural-language questions into KQL queries, interprets the results, surfaces contextual insights, and guides analysts through complete hunting sessions. The agent maintains context throughout a session, enabling follow-up questions that build on previous ones, and provides smart suggestions to help drive the investigation forward. These capabilities empower analysts of all levels to hunt threats faster and with greater confidence.
+
+### Dynamic Threat Detection Agent
+
+The **Dynamic Threat Detection Agent** is an always-on, adaptive backend service that uncovers hidden threats across Defender and Microsoft Sentinel environments. Security teams often face the risk of false negatives—threats that go undetected by traditional, rule-based detection systems. The Dynamic Threat Detection Agent addresses this by using AI to correlate alerts, events, anomalies, and threat intelligence to identify gaps and surface missed behaviors. When the agent identifies a threat, it generates a dynamic alert with full context in the alert details, including natural language explanations, mapped MITRE ATT&CK techniques, and tailored remediation steps. The agent runs seamlessly in the Defender backend and requires no setup or onboarding.
