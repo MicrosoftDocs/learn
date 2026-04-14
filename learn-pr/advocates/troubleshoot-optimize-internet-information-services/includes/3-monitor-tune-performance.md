@@ -110,7 +110,7 @@ IIS can cache the response body for a request and serve it to subsequent request
 - **Kernel-mode cache:** The response is cached in HTTP.sys memory. Requests are served directly by the kernel driver without involving the IIS worker process. This is the fastest possible path, but it only works for cacheable anonymous responses. In practice that means unauthenticated GET responses. It doesn't support authenticated content or vary-by-query-string scenarios.
 - **User-mode cache:** The response is cached in the IIS worker process. Use this mode when you need more flexible caching behavior, such as query-string variation or other dynamic cache rules, but it doesn't have the same speed advantage as kernel-mode.
 
-To configuring a cache rule, make the following changes in web.config or applicationHost.config:
+To configure a cache rule, make the following changes in web.config or applicationHost.config:
 
 ```xml
 <!-- In web.config or applicationHost.config -->
