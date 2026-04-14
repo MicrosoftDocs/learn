@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance.logs-tracing"
+title: "Diagnose errors with logs and tracing"
+metadata:
+  title: "Diagnose Errors with Logs and Tracing"
+  description: "Learn how to use logs and tracing to isolate IIS failures."
+  ms.date: "04/12/2026"
+  author: "Orin-Thomas"
+  ms.author: "orthomas"
+  ms.topic: "unit"
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-logs-tracing.md)]
