@@ -22,7 +22,7 @@ abstract: |
 
 prerequisites: |
   - None
-iconUrl: /training/achievements/microsoft-higher-education-badge.svg
+iconUrl: /training/achievements/microsoft-higher-education.svg
 ratingEnabled: false
 levels:
   - beginner

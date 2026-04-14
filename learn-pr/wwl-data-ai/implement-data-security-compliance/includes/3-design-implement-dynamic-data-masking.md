@@ -28,7 +28,7 @@ CREATE TABLE Customers (
     FirstName varchar(50),
     LastName varchar(50),
     Email varchar(100) MASKED WITH (FUNCTION = 'email()'),
-    Phone varchar(20) MASKED WITH (FUNCTION = 'partial(3, "XXX-XXX-", 2)'),
+    Phone varchar(20) MASKED WITH (FUNCTION = 'partial(3, "-XXX-XX", 2)'),
     CreditCardNumber varchar(19) MASKED WITH (FUNCTION = 'partial(0, "XXXX-XXXX-XXXX-", 4)'),
     Income decimal(18,2) MASKED WITH (FUNCTION = 'random(10000, 100000)'),
     SSN char(11) MASKED WITH (FUNCTION = 'default()')

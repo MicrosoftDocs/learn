@@ -4,7 +4,7 @@ title: "Go global"
 metadata:
   title: "Go global"
   description: "Go global"
-  ms.date: 06/23/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -17,23 +17,23 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'If after scaling up or implementing read replicas, your database resources still don’t meet the needs of your system, what is the next option?'
+  - content: 'Which Azure service acts as a global HTTP-based load balancer that can also provide caching and Web Application Firewall capabilities?'
     choices:
-    - content: 'in-memory caching'
+    - content: 'Azure Traffic Manager'
       isCorrect: false
-      explanation: "In-memory caching can improve performance, but it doesn't increase your database resources."
-    - content: 'decoupling'
-      isCorrect: false
-      explanation: 'Decoupling is a change that can help with differing resource needs between different dependent services.'
-    - content: 'sharding'
+      explanation: "Traffic Manager is a DNS-based load balancer. Because it uses DNS routing, it can't proxy connections or provide caching or WAF capabilities."
+    - content: 'Azure Front Door'
       isCorrect: true
-      explanation: 'Correct. This technique is a way to scale out our database resources.'
+      explanation: 'Correct. Azure Front Door proxies connections, enabling advanced features such as caching and Web Application Firewall.'
+    - content: 'Azure Load Balancer'
+      isCorrect: false
+      explanation: "Azure Load Balancer operates at Layer 4 within a region and doesn't provide global HTTP-based load balancing, caching, or WAF."
 
   - content: 'What consistency model offers a linearizability guarantee?'
     choices:
-    - content: 'strong consistency'
+    - content: 'Strong consistency'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'eventual consistency'
+    - content: 'Eventual consistency'
       isCorrect: false
       explanation: "Eventual consistency doesn't offer this guarantee."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-external-assets-vulnerabilities.introduction
+metadata:
+  title: Introduction
+  description: Introduction to discovering unprotected assets and vulnerabilities using Microsoft Defender External Attack Surface Management.
+  ms.date: 04/07/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

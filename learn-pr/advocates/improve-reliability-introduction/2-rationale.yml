@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-reliability-introduction.2-rationale
+uid: learn.improve-reliability-introduction.rationale
 title: Why reliability matters
 metadata:
   title: Why reliability matters
   description: Learn why it's important to focus specifically on reliability.
-  ms.date: 05/19/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -27,7 +27,7 @@ quiz:
       explanation: "Correct."
     - content: "Branding"
       isCorrect: false
-      explanation: "Having an unreliable system can impact a brand, but it does cause you to lose it."
+      explanation: "Having an unreliable system can impact a brand, but it doesn't cause you to lose it."
     - content: "Innovation"
       isCorrect: false
       explanation: "It's hard to innovate if you're experiencing reliability problems but it isn't a direct loss."

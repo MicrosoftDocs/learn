@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-security-risks-posture-management.hunt-risks-cloud-security-explorer
+metadata:
+  title: Hunt for risks with cloud security explorer
+  description: Use Cloud Security Explorer in the Azure portal to build graph-based queries that proactively discover security risks — including internet exposure, secrets, and lateral movement paths — across your Azure environment.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Hunt for risks with cloud security explorer
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-hunt-risks-cloud-security-explorer.md)]

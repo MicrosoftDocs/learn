@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance"
+metadata:
+  title: "Troubleshoot and Optimize IIS Performance"
+  description: "Learn how to diagnose common IIS failures and tune IIS for reliable performance."
+  ms.date: "04/12/2026"
+  author: "Orin-Thomas"
+  ms.author: "orthomas"
+  ms.topic: "module"
+  ms.service: "windows-server"
+  ms.collection:
+    - "ce-advocates"
+title: "Troubleshoot and optimize IIS performance"
+summary: "Learn how to troubleshoot IIS problems with logs, tracing, and performance counters, then apply tuning changes to improve reliability and throughput."
+abstract: |
+  - Collect and interpret IIS request logs, HTTP.sys logs, and Failed Request Tracing output.
+  - Diagnose common error conditions and identify CPU, memory, and queue bottlenecks.
+  - Tune recycling, caching, compression, and connection settings for production workloads.
+prerequisites: |
+  - Basic understanding of Windows Server administration.
+  - Familiarity with IIS sites and application pools.
+iconUrl: "/learn/achievements/generic-badge.svg"
+levels:
+  - "intermediate"
+roles:
+  - "administrator"
+products:
+  - "windows-server"
+subjects:
+  - "it-management-monitoring"
+units:
+  - "learn.devrel.troubleshoot-optimize-internet-information-services-performance.introduction"
+  - "learn.devrel.troubleshoot-optimize-internet-information-services-performance.logs-tracing"
+  - "learn.devrel.troubleshoot-optimize-internet-information-services-performance.monitor-tune-performance"
+  - "learn.devrel.troubleshoot-optimize-internet-information-services-performance.troubleshoot-practice"
+  - "learn.devrel.troubleshoot-optimize-internet-information-services-performance.knowledge-check"
+  - "learn.devrel.troubleshoot-optimize-internet-information-services-performance.summary"
+badge:
+  uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance.badge"
