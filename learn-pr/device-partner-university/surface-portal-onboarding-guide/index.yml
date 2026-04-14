@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.surface-portal-tenant-setup
+title: Microsoft tenant setup for Surface Portal access
+metadata:
+  title: Microsoft Tenant Setup For Surface Portal Access
+  description: "In this module, you'll learn how to set up a Microsoft tenant for accessing Surface Portal, including verifying tenant existence, identifying the global administrator, and assigning suitable roles for Surface Portals."
+  ms.date: 04/14/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  Learn how to set up a Microsoft tenant for accessing Surface Portal, including verifying tenant existence, identifying the global administrator, and assigning suitable roles for Surface Portals.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Verify whether a Microsoft tenant exists for your organization to access Surface Portal.
+  - Identify the global administrator of your Microsoft tenant who can grant access to Surface Portal.
+  - Assign suitable roles for Surface Portals to ensure proper access and permissions.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-portal-onboarding-guide-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-portal-tenant-setup.introduction
+  - learn.dpu.surface-portal-tenant-setup.verify-whether-a-microsoft-tenant-exists
+  - learn.dpu.surface-portal-tenant-setup.identify-the-global-administrator
+  - learn.dpu.surface-portal-tenant-setup.assign-suitable-roles-for-surface-portals
+  - learn.dpu.surface-portal-tenant-setup.knowledge-check
+  - learn.dpu.surface-portal-tenant-setup.summary
+badge:
+  uid: learn.dpu.surface-portal-tenant-setup.badge
