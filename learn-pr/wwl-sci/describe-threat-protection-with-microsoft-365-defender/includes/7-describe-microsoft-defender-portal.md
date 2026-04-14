@@ -28,7 +28,7 @@ The Defender Experts messages page lets you track your managed response chat con
 # [Defender Experts](#tab/defender-experts)
 :::image type="content" source="../media/defender-portal-defender-experts.png" lightbox="../media/defender-portal-defender-experts.png" alt-text="A screenshot of the Microsoft Defender Experts node on portal left navigation pane, showing Exposure management.":::
 
-# [Overview](#tab/overview)
+# [Overview](#tab/experts-overview)
 :::image type="content" source="../media/defender-portal-defender-experts-overview.png" lightbox="../media/defender-portal-defender-experts-overview.png" alt-text="A screenshot of the Defender Experts overview page in the Microsoft Defender portal.":::
 
 # [Messages](#tab/messages)
@@ -46,11 +46,11 @@ For more information, see to the unit "Describe Microsoft Security Exposure Mana
 
 Also, Vulnerability Management is now located under Exposure management. For more information, see the unit "Describe Microsoft Defender Vulnerability Management."
 
-# [Exposure management](#tab/exposure-management)
+# [Exposure_management](#tab/exposure_management)
 :::image type="content" source="../media/exposure-management-menu.png" lightbox="../media/exposure-management-menu.png" alt-text="A screenshot of the Microsoft Defender portal left navigation pane, showing Exposure management.":::
 
 # [Overview](#tab/overview)
-:::image type="content" source="../media/exposure-management-overview.png" lightbox="../media/exposure-management-attack-overview.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
+:::image type="content" source="../media/exposure-management-overview.png" lightbox="../media/exposure-management-overview.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
 
 # [Initiatives](#tab/initiatives)
 :::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-management-initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
@@ -183,7 +183,7 @@ The Cloud security node in the Microsoft Defender portal provides access to Micr
 - **Top actions** – Guidance on where to focus next, highlighting critical recommendations, high-severity incidents, and attack paths.
 - **Trends over time** – Historical views of security posture and threat detection trends, helping teams track progress over 30 days, 3 months, or 6 months.
 
-# [Cloud security](#tab/cloud-security)
+# [Cloud_security](#tab/cloud_security)
 :::image type="content" source="../media/defender-portal-cloud-security.png" lightbox="../media/defender-portal-cloud-security.png" alt-text="A screenshot of the Cloud security option in the left navigation panel of the Defender portal.":::
 
 # [Overview](#tab/overview)
@@ -195,7 +195,7 @@ The Cloud security node in the Microsoft Defender portal provides access to Micr
 
 The Microsoft Defender portal includes access to the list of Agents in use. The portal also provides access solutions and agents, available in the Security Store, that integrate with Microsoft Defender.
 
-# [Security Copilot](#tab/security-copilot)
+# [Security_Copilot](#tab/security_copilot)
 :::image type="content" source="../media/defender-portal-security-copilot.png" lightbox="../media/defender-portal-security-copilot.png" alt-text="A screenshot of the left navigation pane in the Defender portal, showing Security Copilot.":::
 
 # [Agents](#tab/agents)
