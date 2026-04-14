@@ -12,4 +12,4 @@ Throughout this exercise, you:
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2352696)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-genaiops/?linkid=2352696)
