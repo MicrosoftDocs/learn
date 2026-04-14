@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-agentic-devops-microsoft-tools-azure.exercise-classify-devops-backlog
+title: "Exercise: Classify a DevOps backlog by autonomy level"
+metadata:
+  title: "Exercise: Classify a DevOps backlog by autonomy level"
+  description: "Apply the agentic DevOps framework by classifying a realistic DevOps task backlog into autonomy levels, then compare your answers against reference criteria."
+  ms.date: 04/10/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-classify-devops-backlog.md)]
