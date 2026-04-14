@@ -84,15 +84,15 @@ Correlate the timestamp and client IP from httperr.log with Event Viewer entries
 
 ## Failed Request Tracing (FREB)
 
-Failed Request Tracing captures a detailed trace of the IIS request pipeline. Each trace records every module that processed the request, how long each module took, and where a failure or delay occurred. The output is written as XML files with XSLT stylesheets that you can open in a browser.
+Failed Request Tracing (also termed Failed Request Event Buffering (FREB)) captures a detailed trace of the IIS request pipeline. Each trace records every module that processed the request, how long each module took, and where a failure or delay occurred. The output is written as XML files with XSLT stylesheets that you can open in a browser.
 
-FREB is valuable when:
+Failed Request Tracing is valuable when:
 
 - An error is intermittent or difficult to reproduce on demand.
 - A request is slow but returns a 200, and you need to know *where* in the pipeline the time is spent.
 - IIS request logs tell you *what* happened but not *why*.
 
-### Enabling FREB
+### Enabling Failed Request Tracing
 
 **Using IIS Manager:**
 
@@ -109,7 +109,7 @@ FREB is valuable when:
 > The following commands use `::` comment syntax and must be run in a Command Prompt window (`cmd.exe`), not PowerShell.
 
 ```cmd
-:: Enable FREB on the "Default Web Site"
+:: Enable Failed Request Tracing on the "Default Web Site"
 %SystemRoot%\System32\inetsrv\appcmd set config "Default Web Site" /section:system.applicationHost/sites /"[name='Default Web Site'].traceFailedRequestsLogging.enabled:true" /commit:apphost
 
 :: Add a rule for all content
@@ -124,9 +124,9 @@ FREB is valuable when:
 
 To trace status-code failures instead, set `failureDefinitions.statusCodes:"500-599"` on the same rule.
 
-### Reading FREB output
+### Reading Failed Request Tracing output
 
-FREB trace files are written to the directory you configured (default: `%SystemDrive%\inetpub\logs\FailedReqLogFiles\W3SVC<siteId>`). Open the XML file in a browser. The XSLT stylesheet formats it into a navigable report.
+Trace files are written to the directory you configured (default: `%SystemDrive%\inetpub\logs\FailedReqLogFiles\W3SVC<siteId>`). Open the XML file in a browser. The XSLT stylesheet formats it into a navigable report.
 
 Key sections to examine:
 
@@ -139,7 +139,7 @@ Key sections to examine:
 If you see a large time gap after an event from a specific module (for example, `ManagedPipelineHandler`), the bottleneck is in that module's processing, typically in application code or an external dependency the application is calling.
 
 > [!WARNING]
-> Disable FREB as soon as you've captured the data you need. In production, use specific status codes or time-taken thresholds instead of tracing all requests, and set a maximum trace file count (for example, 50) to prevent unbounded growth. FREB writes one XML file per traced request, so high traffic can fill disk quickly and degrade performance.
+> Disable Failed Request Tracing as soon as you've captured the data you need. In production, use specific status codes or time-taken thresholds instead of tracing all requests, and set a maximum trace file count (for example, 50) to prevent unbounded growth. Failed Request Tracing writes one XML file per traced request, so high traffic can fill disk quickly and degrade performance.
 
 ## Walkthrough: 503 errors after deployment
 

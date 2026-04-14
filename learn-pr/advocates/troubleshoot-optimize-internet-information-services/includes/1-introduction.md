@@ -10,7 +10,7 @@ This module treats troubleshooting and performance tuning as a single workflow: 
 
 This module teaches you about:
 
-- **Failed Request Tracing (FREB):** Captures the full request pipeline with per-module timing, letting you pinpoint exactly where a request stalls or fails.
+- **Failed Request Tracing:** Captures the full request pipeline with per-module timing, letting you pinpoint exactly where a request stalls or fails. In older documentation and some elements of the UI, this is termed Failed Request Event Buffering (FREB).
 - **HTTP.sys error logs:** Show requests that the kernel-mode HTTP driver rejected *before* they ever reached a worker process.
 - **Performance Monitor counters:** Provide quantitative baselines and bottleneck identification for CPU, memory, disk, and request throughput.
 - **Tuning:** Covers application pool recycling, output caching, compression, and concurrency settings that directly impact production performance.
