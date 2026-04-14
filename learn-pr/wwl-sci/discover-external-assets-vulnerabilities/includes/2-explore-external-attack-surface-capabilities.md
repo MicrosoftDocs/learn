@@ -58,6 +58,6 @@ OWASP Top 10 findings appear in a separate dedicated dashboard and use OWASP cat
 
 ## Explore EASM dashboards and Defender for Cloud integration
 
-EASM includes eight dashboards that organize findings by risk category—including security posture, OWASP Top 10, GDPR compliance, and an inventory changes view. The four highest-value dashboards are covered in detail in the dashboard analysis unit later in this module.
+EASM includes eight dashboards that organize findings by risk category—including security posture, OWASP Top 10, data protection compliance, and an inventory changes view. The four highest-value dashboards are covered in detail in the dashboard analysis unit later in this module.
 
 EASM also integrates with Defender CSPM. The integration is included with the Defender CSPM plan and requires no extra license or configuration. It surfaces EASM outside-in data in Defender for Cloud's attack path analysis and Cloud Security Explorer. The integration unit covers the specific query patterns it enables.
