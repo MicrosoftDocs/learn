@@ -15,7 +15,7 @@ To connect to an AI service, your application uses an **API** (Application Progr
 
 ## Using general-purpose AI models for text analysis
 
-Start with a Microsoft Foundry resource and create an Foundry project within your resource. In the *new* Foundry portal, you can browse the model catalog and deploy a general-purpose model. 
+Start with a Microsoft Foundry resource and create a Foundry project within your resource. In the *new* Foundry portal, you can browse the model catalog and deploy a general-purpose model. 
 
 You can build a client application that interacts with Microsoft Foundry Models using the **Azure OpenAI API**. The OpenAI API lets your code talk to a deployed model by sending requests to an *endpoint*, along with an *API key* to prove you're authorized.
 
