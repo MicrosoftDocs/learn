@@ -4,7 +4,7 @@ title: "Improve your reliability with modern operations practices: Monitoring"
 metadata:
   title: "Improve your reliability with modern operations practices: Monitoring"
   description: Learn how to use monitoring to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 08/18/2023
+  ms.date: 04/15/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: module
@@ -31,7 +31,6 @@ products:
 - azure
 prerequisites: None
 subjects:
-- networking
 - it-management-monitoring
 units:
 - learn.improve-reliability-monitoring.1-introduction

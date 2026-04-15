@@ -4,7 +4,7 @@ In this module, we've explored the subject of monitoring as the foundation of a 
 
 - Concepts
 
-:::image type="content" source="../media/diagram-whole.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke; each circle contains a word relating to reliability from a previous uni.t":::
+:::image type="content" source="../media/diagram-whole.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke; each circle contains a word relating to reliability from a previous unit.":::
 
 - Tools
 

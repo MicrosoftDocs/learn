@@ -1,4 +1,4 @@
-For us to be able to effectively set up monitoring to improve our reliability, we're going need a good understanding of what sort of things we might consider measuring. In this unit, we hope to suggest some possibilities that might expand your understanding of reliability.
+For us to be able to effectively set up monitoring to improve our reliability, we're going to need a good understanding of what sort of things we might consider measuring. In this unit, we hope to suggest some possibilities that might expand your understanding of reliability.
 
 Let's look at some aspects of reliability now:
 
@@ -54,4 +54,4 @@ Freshness refers to how up to date the information is in situations where timeli
 
 Durability is another slightly more niche aspect of reliability. If you're running a service that provides storage, you know just how important it is that data a customer writes to your service can be read later. This is a durability expectation.
 
-Even though this is not an exhaustive list of possibilities, hopefully there were a few you hadn't considered, and you've expanded your understanding of reliability in the process. We're going to take this understanding into the next unit where we start to ask some crucial questions about just what we'll want to measure when it  comes to reliability.
+Even though this is not an exhaustive list of possibilities, hopefully there were a few you hadn't considered, and you've expanded your understanding of reliability in the process. We're going to take this understanding into the next unit where we start to ask some crucial questions about just what we'll want to measure when it comes to reliability.

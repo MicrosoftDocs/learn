@@ -4,7 +4,7 @@ Of all of the units in this module, this is certainly one of the most important.
 
 ## Reframing #1: Reliability from the customer’s perspective
 
-We previously discussed aspects of reliability we might want to consider monitoring, but that only seemed to expand possible set of things we might monitor. Here's one idea that can help you zero in on what you should monitor for improving your reliability:
+We previously discussed aspects of reliability we might want to consider monitoring, but that only seemed to expand the possible set of things we might monitor. Here's one idea that can help you zero in on what you should monitor for improving your reliability:
 
 *Reliability has to be measured from the customer's perspective, not the component perspective.*
 
@@ -26,7 +26,7 @@ B: It’s a serious matter. You should stop whatever you’re doing and get thos
 
 C: It’s an existential crisis for the business. You should notify C-level executives and call everyone into work to take care of the situation as fast as possible, even if it means getting them out of bed in the middle of the night.
 
-Take a moment to think through this scenario carefully before answer and then read further. Do you think it's A, B, or C?
+Take a moment to think through this scenario carefully before you answer and then read further. Do you think it's A, B, or C?
 
 The correct answer is neither A, B, nor C; it’s "it depends." Or more precisely, "it depends on how your customers are experiencing this outage."
 
@@ -55,7 +55,7 @@ There are three important words in this definition:
 
 Let's dive into this idea. A key point here is that 100% reliable is almost never the right goal. Except for certain exceptions like medical devices or aviation, we don't really need things to be 100% reliable; and in fact, 100% reliable isn't often possible.
 
-Here's an example of "not even possible:" These days, we're all running systems that have dependencies on other systems. Maybe you're running a piece of software that has to call out to a payment processor or has to call out to on authentication system. If the payment processor isn't 100% reliable or the authentication system isn't 100% reliable, it can be very difficult for your system to be 100% reliable.
+Here's an example of "not even possible:" These days, we're all running systems that have dependencies on other systems. Maybe you're running a piece of software that has to call out to a payment processor or has to call out to an authentication system. If the payment processor isn't 100% reliable or the authentication system isn't 100% reliable, it can be very difficult for your system to be 100% reliable.
 
 The other tricky thing about a goal of 100% reliable is that it means zero downtime. It also means zero chance to make changes that you think might possibly create any downtime. You don't get any headroom, something you're probably going to want and need.
 
