@@ -4,7 +4,7 @@ title: "Changing the frame"
 metadata:
   title: "Changing the frame"
   description: "Changing the frame"
-  ms.date: 08/18/2023
+  ms.date: 04/15/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -42,4 +42,4 @@ quiz:
       explanation: 'It depends on the noticeable impact to the customers of the service. If they are experiencing a severe problem and the service does not work for them, we may need to fix them immediately.'
     - content: 'It depends'
       isCorrect: true
-      explanation: 'Correct, the severity level depends on the noticeable impact to their customer.'
+      explanation: 'Correct, the severity level depends on the noticeable impact to the customer.'
