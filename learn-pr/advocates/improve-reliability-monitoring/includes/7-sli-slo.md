@@ -20,7 +20,7 @@ Here's where the concept of _appropriate level of reliability_ comes into play.
 
 Service Level Indicators (SLIs) are connected to our previous discussion about the expansive understanding of reliability. Remember this diagram?
 
-:::image type="content" source="../media/diagram-whole.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke. Each circle contains a word relating to reliability from a previous unit.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke. Each circle contains a word relating to reliability from a previous unit.](../media/diagram-whole.png)](../media/diagram-whole.png#lightbox)
 
 SLIs are our attempt to specify just how we're going to measure our system's reliability. What's the indicator that our service is behaving reliably (doing what we expect)? What can we measure to answer this?
 
@@ -97,7 +97,7 @@ AppRequests
 
 As before, we start by specifying the source of the data: the `AppRequests` table. We then narrow down the data with which we'll be working to just the last 30 days worth of information. We then collect (in five-minute buckets) the number of successful requests and the total number of requests. We use `sumif()` and `sum()` with `ItemCount` rather than `countif()` and `count()` because Application Insights can use sampling to reduce telemetry volume. Each sampled record's `ItemCount` field tells you how many actual requests that record represents, so summing `ItemCount` gives an accurate total even when sampling is active. The SLI is created using the easy arithmetic we saw before. We tell KQL we'd like to plot that SLI along with timestamps and then create a chart that looks something like this:
 
-:::image type="content" source="../media/sli-example.png" alt-text="Graph showing an SLI; the graph shows SLI at 100% reliability followed by several dips":::
+[![Graph showing an SLI; the graph shows SLI at 100% reliability followed by several dips.](../media/sli-example.png)](../media/sli-example.png#lightbox)
 
 > [!IMPORTANT]
 > This first chart plots only the SLI in five-minute buckets. It's a **trend view** that shows how the SLI varies over time, which is useful for spotting patterns and dips. In the next example, we'll add a target line for the SLO. Neither chart is the same as evaluating overall SLO compliance across the full 30-day window. To check whether you're meeting a 30-day SLO, you'd compute a single aggregate SLI across the entire window and compare it to your objective.
@@ -116,7 +116,7 @@ AppRequests
 
 There are two new lines in this example compared to the previous one. The first (`extend SLO = 80.0`) defines the number we'll use for the SLO target; the second adds `SLO` to the `project` statement so it's included in the chart. The result looks like this:
 
-:::image type="content" source="../media/slo-example.png" alt-text="Graph showing an SLI and an SLO; graph shows SLI at 100% reliability, followed by several dips. The SLO is a solid line at the 80% mark.":::
+[![Graph showing an SLI and an SLO; graph shows SLI at 100% reliability, followed by several dips. The SLO is a solid line at the 80% mark.](../media/slo-example.png)](../media/slo-example.png#lightbox)
 
 In this chart, it's easy to see the time periods where our SLI dipped below our availability target.
 

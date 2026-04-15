@@ -27,4 +27,4 @@ quiz:
       explanation: 'Correct, Azure Monitor emphasizes metrics, logs, and distributed traces as core observability data types.'
     - content: 'Counters, gauges, and alerts'
       isCorrect: false
-      explanation: 'Counters and gauges can produce metrics, and alerts act on data, but these are not the observability data types emphasized by Azure Monitor.'
+      explanation: "Counters and gauges can produce metrics, and alerts act on data, but these aren't the observability data types emphasized by Azure Monitor."

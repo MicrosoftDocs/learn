@@ -36,7 +36,7 @@ One tool that can reduce that effort—plus give us information about the applic
 
 Here's an example:
 
-:::image type="content" source="../media/application-map.png" alt-text="Screenshot of the Application map panel in Azure portal displaying several components and the stats for traffic between them.":::
+[![Screenshot of the Application map panel in Azure portal displaying several components and the stats for traffic between them.](../media/application-map.png)](../media/application-map.png#lightbox)
 
 In the preceding picture, you can see not only the components of the application, but also the communication between those components. If you zoom into one of the connections between components, you can see the number of calls made between components and the average latency for those calls. You can also see a representation of the number of successful and the number of failed calls. If you select any of these map elements, Application Insights lets you drill into the information to see detailed statistics on performance and success/failure metrics for those calls. This can be a great way to get a good sense of the larger picture of the application's components and how they function as a baseline. As a reminder, be sure to explore your application map and all that Application Insights can offer *before* you have an outage.
 
@@ -46,11 +46,11 @@ Application Insights is a great way to gain some operational awareness for an ap
 
 Azure Resource Graph Explorer provides an interactive query environment right from the Azure portal for the data you need. It lets you run queries against near-current inventory data for the resources in your subscriptions. For example, if you want to see all of the VMs you're currently running, you could run the following query:
 
-:::image type="content" source="../media/resource-graph-explorer.png" alt-text="Resource graph panel in Azure portal with the query of where type == microsoft.compute/virtualmachines":::
+[![Resource graph panel in Azure portal with the query of where type == microsoft.compute/virtualmachines.](../media/resource-graph-explorer.png)](../media/resource-graph-explorer.png#lightbox)
 
 and you'd get back a complete detailed list of the VMs being used in our subscription:
 
-:::image type="content" source="../media/resource-graph-explorer-results.png" alt-text="Resource graph panel in the Azure portal with results of query showing table of results.":::
+[![Resource graph panel in the Azure portal with results of query showing table of results.](../media/resource-graph-explorer-results.png)](../media/resource-graph-explorer-results.png#lightbox)
 
 The query language used in this environment is based on Kusto Query Language (KQL). Azure Resource Graph supports a useful subset of KQL rather than every KQL feature. We'll be discussing KQL in more depth later in this module when we talk about Azure Monitor Log Analytics.
 
@@ -72,7 +72,7 @@ Instead, let's look at a powerful idea: **dashboards as code**. Azure portal das
 
 If you need to show a colleague the view you used during an outage, it's usually better to share a link to the dashboard or workbook with the relevant filters and time range than to treat exported JSON as a snapshot of the data.
 
-:::image type="content" source="../media/dashboard.png" alt-text="Screenshot of an Azure portal dashboard showing export and sharing options.":::
+[![Screenshot of an Azure portal dashboard showing export and sharing options.](../media/dashboard.png)](../media/dashboard.png#lightbox)
 
 ### Grafana
 

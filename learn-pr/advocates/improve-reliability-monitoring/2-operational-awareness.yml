@@ -19,17 +19,17 @@ quiz:
 
   - content: 'What is operational awareness?'
     choices:
-    - content: 'An understanding of the systems we have in production and how they are functioning'
+    - content: "An understanding of the systems we have in production and how they're functioning"
       isCorrect: true
       explanation: "Correct, we can't begin to work on reliability if we don\\'t know what is actually running in production."
-    - content: 'a comprehensive accounting for how much we are paying for our infrastructure'
+    - content: "A comprehensive accounting for how much we're paying for our infrastructure"
       isCorrect: false
       explanation: 'Cost management is definitely important, but first we need to know what is running in production.'
     - content: 'The process of training your staff to be able to operate your systems'
       isCorrect: false
-      explanation: 'Your staff definitely needs to understand your systems, but awareness is not just about the training process.'
+      explanation: "Your staff definitely needs to understand your systems, but awareness isn't just about the training process."
 
-  - content: 'When we are gaining operational awareness for an application, which of these questions do we need to ask?'
+  - content: "When we're gaining operational awareness for an application, which of these questions do we need to ask?"
     choices:
     - content: 'What are the component parts?'
       isCorrect: false
@@ -60,7 +60,7 @@ quiz:
       explanation: 'Dashboards can help display information that assists with gaining operational awareness.'
     - content: 'Azure Cosmos DB'
       isCorrect: true
-      explanation: 'Correct, Cosmos DB is an excellent place to store data, but it is not directly useful for operational awareness.'
+      explanation: "Correct, Cosmos DB is an excellent place to store data, but it isn't directly useful for operational awareness."
     - content: 'Azure Resource Graph Explorer'
       isCorrect: false
       explanation: 'Resource Graph Explorer provides a query environment that can show us exactly what resources we have in play.'

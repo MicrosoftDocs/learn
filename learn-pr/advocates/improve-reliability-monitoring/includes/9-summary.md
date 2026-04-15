@@ -1,14 +1,14 @@
 In this module, we've explored the subject of monitoring as the foundation of a larger framework for improving reliability. You now have:
 
-:::image type="content" source="../media/dickerson-hierarchy.png" alt-text="Diagram of Dickerson's hierarchy of reliability.":::
+[![Diagram of Dickerson's hierarchy of reliability.](../media/dickerson-hierarchy.png)](../media/dickerson-hierarchy.png#lightbox)
 
 - Concepts
 
-:::image type="content" source="../media/diagram-whole.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke; each circle contains a word relating to reliability from a previous unit.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke; each circle contains a word relating to reliability from a previous unit.](../media/diagram-whole.png)](../media/diagram-whole.png#lightbox)
 
 - Tools
 
-:::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Diagram of a complete overview of the data sources, data types, and offerings in Azure Monitor.":::
+[![Diagram of a complete overview of the data sources, data types, and offerings in Azure Monitor.](../media/azure-monitor-overview-full.png)](../media/azure-monitor-overview-full.png#lightbox)
 
 The expanded understanding of reliability we've discussed and the framing we've provided allows us to use the tools Azure provides to:
 

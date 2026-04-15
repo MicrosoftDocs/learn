@@ -6,7 +6,7 @@ The log analytics query process involves writing queries in the Kusto Query Lang
 
 So, let's see how this is all going to work. Here's a diagram about how Log Analytics works:
 
-:::image type="content" source="../media/log-analytics-overview.png" alt-text="Diagram of Log Analytics overview showing data inputs, tables, and sample queries.":::
+[![Diagram of Log Analytics overview showing data inputs, tables, and sample queries.](../media/log-analytics-overview.png)](../media/log-analytics-overview.png#lightbox)
 
 Data for Log Analytics comes in from a number of sources, including:
 
@@ -21,13 +21,13 @@ On machines, the current Azure Monitor collection path uses AMA together with Da
 
 All of this information lands in tables in a Log Analytics workspace. Think of a table as a structured set of records optimized for querying, not as a separate database. For the examples we'll show later in this module, we'll work primarily with Application Insights request telemetry. In a workspace-based Application Insights resource, that data is stored in the `AppRequests` table.
 
-:::image type="content" source="../media/log-analytics-requests-table.png" alt-text="Diagram of Log Analytics overview with request telemetry table highlighted.":::
+[![Diagram of Log Analytics overview with request telemetry table highlighted.](../media/log-analytics-requests-table.png)](../media/log-analytics-requests-table.png#lightbox)
 
 ## Log Analytics interface
 
 The following graphic shows the different parts of the Log Analytics interface.
 
-:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal.":::
+[![Screenshot of the Log Analytics workspace in the Azure portal.](../media/log-analytics-user-interface.png)](../media/log-analytics-user-interface.png#lightbox)
 
 On the left is a section of the screen that makes sure you never get lost when using Log Analytics. It shows the tables with which you're potentially working, and if you expand a section, you’ll see a listing of the fields in that table that are available to query. If you select any of the fields or the table name, it will be copied into the query construction area.
 

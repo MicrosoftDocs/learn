@@ -2,41 +2,41 @@ For us to be able to effectively set up monitoring to improve our reliability, w
 
 Let's look at some aspects of reliability now:
 
-:::image type="content" source="../media/diagram-empty.png" alt-text="Diagram with the word reliability in a circle in the middle connected to empty circles at the end of each spoke.":::
+[![Diagram with the word reliability in a circle in the middle connected to empty circles at the end of each spoke.](../media/diagram-empty.png)](../media/diagram-empty.png#lightbox)
 
 ## Availability
 
-:::image type="content" source="../media/diagram-availability.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word availability added to one circle.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word availability added to one circle.](../media/diagram-availability.png)](../media/diagram-availability.png#lightbox)
 
 When people talk about reliability, they tend to start with availability. Is the system "up" or is it "down?" Can others reach your website or your service? Can they use the product when they expect to? It's important from the perspective of both external customers and internal users who depend on your service. Availability is probably the aspect of reliability with which you'll spend the most time working. It's a good starting point for discussing reliability, but it’s only one aspect.
 
 ## Latency
 
-:::image type="content" source="../media/diagram-latency.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word latency added to previous diagram in a different circle.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word latency added to previous diagram in a different circle.](../media/diagram-latency.png)](../media/diagram-latency.png#lightbox)
 
 Latency refers to the amount of delay between a request and a response. You might have heard the catchphrase "slow is the new down." People demand fast performance, and they lose patience with a site or service that leaves them waiting. We have good research that shows that if a website doesn't meet their expectations for response time, customers are likely to go to a competitor.
 
 ## Throughput
 
-:::image type="content" source="../media/diagram-throughput.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word throughput added to previous diagram in a different circle.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word throughput added to previous diagram in a different circle.](../media/diagram-throughput.png)](../media/diagram-throughput.png#lightbox)
 
 Throughput is a measure of the rate at which something is processed, or the number of transactions that a website, application, or service successfully handles over a specified period of time. This is particularly important when running pipelines or batch-processing systems. If a pipeline or a batch-processing system isn't processing things fast enough, that's not meeting our expectations and it isn't considered reliable.
 
 ## Coverage
 
-:::image type="content" source="../media/diagram-coverage.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word coverage added to previous diagram in a different circle.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word coverage added to previous diagram in a different circle.](../media/diagram-coverage.png)](../media/diagram-coverage.png#lightbox)
 
 Coverage refers to how much of the data that you expected to process was actually processed. Again, we come back to the idea of measuring how well we're meeting expectations as part of determining if something is reliable.
 
 ## Correctness
 
-:::image type="content" source="../media/diagram-correctness.png" alt-text="Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word correctness added to previous diagram in a different circle.":::
+[![Hub and spoke diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word correctness added to previous diagram in a different circle.](../media/diagram-correctness.png)](../media/diagram-correctness.png#lightbox)
 
 Correctness is an aspect of reliability that's often overlooked. Did the process that you ran on the data yield the correct or expected result? This is an important factor to include in monitoring for reliability. No matter how fast or "always available" your service or site is, if it returns incorrect results, it’s not reliable in the eyes of your customers. Monitoring for correctness of results is an important part of monitoring for reliability.
 
 ## Fidelity
 
-:::image type="content" source="../media/diagram-fidelity.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word fidelity added to previous diagram in a different circle.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word fidelity added to previous diagram in a different circle.](../media/diagram-fidelity.png)](../media/diagram-fidelity.png#lightbox)
 
 Fidelity in this context is best understood through an example. Let's say you visit the home page of a video-streaming site. That page is made up of separate sections: new releases, personalized recommendations, top 10 movies watched, and so on. Each of those sections is likely generated by a separate back-end service. If one of those services goes down—for example, the personalization engine—visitors to the site don't get a "Sorry this site is down" message or a blank page. Instead, they see a home page with that section either removed or replaced with static content. In technical terms, we'd say they received a "degraded" experience instead of the complete intended page.
 
@@ -44,13 +44,13 @@ If we were to measure fidelity, we'd be measuring how often the user of a servic
 
 ## Freshness
 
-:::image type="content" source="../media/diagram-freshness.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word freshness added to previous diagram in a different circle.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word freshness added to previous diagram in a different circle.](../media/diagram-freshness.png)](../media/diagram-freshness.png#lightbox)
 
 Freshness refers to how up to date the information is in situations where timeliness matters to the customer (for example, services that provide sports scores or election results). Those services are considered reliable if the data they provide is kept current.
 
 ## Durability
 
-:::image type="content" source="../media/diagram-whole.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word durability added to previous diagram in a different circle filling in the entire diagram.":::
+[![Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, the word durability added to previous diagram in a different circle filling in the entire diagram.](../media/diagram-whole.png)](../media/diagram-whole.png#lightbox)
 
 Durability is another slightly more niche aspect of reliability. If you're running a service that provides storage, you know just how important it is that data a customer writes to your service can be read later. This is a durability expectation.
 

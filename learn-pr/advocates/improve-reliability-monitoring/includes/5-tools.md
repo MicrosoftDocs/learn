@@ -15,7 +15,7 @@ Azure Monitor starts with the data that comes into the system. It takes in data 
 
 For machine-based collection, the modern Azure Monitor path uses AMA together with DCRs to define what data to collect and where to send it. The older Log Analytics agent (also known as MMA/OMS) was retired in August 2024 and is no longer supported for Azure Monitor collection.
 
-:::image type="content" source="../media/azure-monitor-overview-sources.png" alt-text="Diagram of a partial overview of Azure Monitor showing data sources.":::
+[![Diagram of a partial overview of Azure Monitor showing data sources.](../media/azure-monitor-overview-sources.png)](../media/azure-monitor-overview-sources.png#lightbox)
 
 ### Data types
 
@@ -29,12 +29,12 @@ There's a useful way to think about the observability data that Azure Monitor wo
 
 In this module, we'll focus primarily on log data, while using metrics and traces as supporting context.
 
-:::image type="content" source="../media/azure-monitor-overview-datatypes.png" alt-text="Diagram of a partial overview of Azure monitor showing data types.":::
+[![Diagram of a partial overview of Azure monitor showing data types.](../media/azure-monitor-overview-datatypes.png)](../media/azure-monitor-overview-datatypes.png#lightbox)
 
 ### Do something with the data
 
 Once the data is in Azure Monitor, there's a suite of tools that lets us analyze, visualize, respond to specific conditions, and integrate that data with other tools. Log Analytics is the ad hoc query tool for logs and traces. Workbooks provide rich interactive reports. Azure dashboards provide a portal-wide single pane of glass, and Grafana options provide Grafana-style operational dashboards. Alerts and action groups let us respond when conditions are met.
 
-:::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Diagram of the overview of the data sources, data types, and offerings in Azure monitor.":::
+[![Diagram of the overview of the data sources, data types, and offerings in Azure monitor.](../media/azure-monitor-overview-full.png)](../media/azure-monitor-overview-full.png#lightbox)
 
 In our next unit, we're going to explore one of the most useful tools for working with reliability in more detail: Log Analytics.
