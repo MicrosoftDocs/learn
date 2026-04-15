@@ -1,25 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
 metadata:
-  title: Ingest Streaming Data Using Azure Stream Analytics and Azure Synapse Analytic
-  description: "Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting."
+  title: Ingest Streaming Data Using Azure Stream Analytics
+  description: "Azure Stream Analytics is a fully managed real-time analytics service that you can use to process streaming event data and route results to a range of output destinations for storage, analysis, and visualization."
   ms.date: 04/15/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
   ms.service: azure-stream-analytics
-title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytics
-summary: Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting.
+title: Ingest streaming data using Azure Stream Analytics
+summary: Azure Stream Analytics is a fully managed, real-time analytics service that you can use to process high-velocity streaming data and route the results to various output destinations for further analysis, storage, or visualization.
 abstract: |
   After completing this module, you'll be able to:
-  *   Describe common stream ingestion scenarios for Azure Synapse Analytics.
+  *   Describe common stream processing scenarios for Azure Stream Analytics.
   *   Configure inputs and outputs for an Azure Stream Analytics job.
-  *   Define a query to ingest real-time data into Azure Synapse Analytics.
-  *   Run a job to ingest real-time data, and consume that data in Azure Synapse Analytics.
+  *   Define a query to process and route real-time data.
+  *   Run a job to ingest real-time data and monitor its execution.
 prerequisites: |
-  Before starting this module, you should be familiar with Azure Stream Analytics and Azure Synapse Analytics. Consider completing the following modules first:
+  Before starting this module, you should be familiar with real-time data concepts. Consider completing the following module first:
   - [Get started with Azure Stream Analytics](/training/modules/introduction-to-data-streaming)
-  - [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics)
 iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg
 levels:
 - intermediate
@@ -27,7 +26,6 @@ roles:
 - data-engineer
 products:
 - azure-stream-analytics
-- azure-synapse-analytics
 subjects:
 - data-analytics
 - data-engineering

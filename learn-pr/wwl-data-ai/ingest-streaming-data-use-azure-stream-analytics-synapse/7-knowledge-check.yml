@@ -12,25 +12,36 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which type of output should you use to ingest the results of an Azure Stream Analytics job into a dedicated SQL pool table in Azure Synapse Analytics?"
+  - content: "Which Azure Stream Analytics window type groups events based on periods of inactivity between consecutive events?"
     choices:
-    - content: "Azure Synapse Analytics"
+    - content: "Tumbling"
+      isCorrect: false
+      explanation: "Incorrect. A tumbling window groups events into fixed-size, nonoverlapping intervals regardless of gaps between events."
+    - content: "Session"
       isCorrect: true
-      explanation: "Correct. An Azure Synapse Analytics output writes data to a table in an Azure Synapse Analytics dedicated SQL pool."
+      explanation: "Correct. A session window groups events that arrive within a configurable timeout of each other, creating variable-length windows bounded by inactivity gaps."
+    - content: "Snapshot"
+      isCorrect: false
+      explanation: "Incorrect. A snapshot window groups events that share the same timestamp using System.Timestamp()."
+  - content: "You need to continuously write processed stream events to files in a data lake for later batch analytics. Which output type should you configure?"
+    choices:
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect. An Azure SQL Database output writes to a relational table, not to files in a data lake."
+    - content: "Blob storage/ADLS Gen2"
+      isCorrect: true
+      explanation: "Correct. A Blob storage/ADLS Gen2 output writes data to files in Azure Data Lake Storage Gen2, which is suitable for batch analytics workloads."
+    - content: "Power BI"
+      isCorrect: false
+      explanation: "Incorrect. A Power BI output writes to a streaming dataset for near real-time visualization, not to file-based storage."
+  - content: "You want to forward enriched events from a Stream Analytics job to a downstream application via a message hub. Which output type should you use?"
+    choices:
+    - content: "Azure Event Hubs"
+      isCorrect: true
+      explanation: "Correct. An Azure Event Hubs output forwards events to an event hub, enabling downstream consumers such as other jobs, functions, or applications to receive the enriched stream."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect. An Azure SQL Database output writes to a relational table, not to a message hub."
     - content: "Blob storage/ADLS Gen2"
       isCorrect: false
-      explanation: "Incorrect. A Blob storage/ADLS Gen2 output does not write data to a relational table in a dedicated SQL pool."
-    - content: "Azure Event Hubs"
-      isCorrect: false
-      explanation: "Incorrect. An Azure Event Hubs output does not write data to a relational table in a dedicated SQL pool."
-  - content: "Which type of output should be used to ingest the results of an Azure Stream Analytics job into files in a data lake for analysis in Azure Synapse Analytics?"
-    choices:
-    - content: "Azure Synapse Analytics"
-      isCorrect: false
-      explanation: "Incorrect. An Azure Synapse Analytics output does not write data to files in a data lake."
-    - content: "Blob storage/ADLS Gen2"
-      isCorrect: true
-      explanation: "Correct. A Blob storage/ADLS Gen2 output writes data to files in a data lake."
-    - content: "Azure Event Hubs"
-      isCorrect: false
-      explanation: "Incorrect. An Azure Event Hubs output does not write data to files in a data lake."
+      explanation: "Incorrect. A Blob storage/ADLS Gen2 output writes to files in a data lake, not to a message hub for real-time event forwarding."

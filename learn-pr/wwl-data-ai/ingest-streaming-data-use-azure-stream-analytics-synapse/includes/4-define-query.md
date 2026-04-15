@@ -3,7 +3,7 @@ After defining the input(s) and output(s) for your Azure Stream Analytics job, y
 
 ## Selecting input fields
 
-The simplest approach to ingesting streaming data into Azure Synapse Analytics is to capture the required field values for every event using a **SELECT...INTO** query, as shown here:
+The simplest approach to capturing event data from an input stream is to select the required field values for every event using a **SELECT...INTO** query, as shown here:
 
 ```sql
 SELECT
@@ -11,13 +11,13 @@ SELECT
     SensorID,
     ReadingValue
 INTO
-    [synapse-output]
+    [output]
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 ```
 
 > [!TIP]
-> When using an **Azure Synapse Analytics** output to write the results to a table in a dedicated SQL pool, the schema of the results produced by the query must match the table into which the data is to be loaded. You can use **AS** clauses to rename fields, and cast them to alternative (compatible) data types as necessary.
+> When using an **Azure SQL Database** output to write the results to a relational table, the schema of the results produced by the query must match the table into which the data is to be loaded. You can use **AS** clauses to rename fields, and cast them to alternative (compatible) data types as necessary.
 
 ## Filtering event data
 
@@ -29,7 +29,7 @@ SELECT
     SensorID,
     ReadingValue
 INTO
-    [synapse-output]
+    [output]
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 WHERE ReadingValue < 0
@@ -57,7 +57,7 @@ SELECT
     SensorID,
     MAX(ReadingValue) AS MaxReading
 INTO
-    [synapse-output]
+    [output]
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 GROUP BY SensorID, TumblingWindow(second, 60)
