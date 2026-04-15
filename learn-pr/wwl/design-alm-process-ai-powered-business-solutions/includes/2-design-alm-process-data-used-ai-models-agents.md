@@ -189,7 +189,7 @@ The below RACI chart is a representative sample for an organization. It's up to 
 
 <https://dialzara.com/blog/ai-data-lifecycle-management-complete-guide-2024>
 
-[https://learn.microsoft.com/fabric/governance/data-governance-overview](/fabric/governance/data-governance-overview)
+[https://learn.microsoft.com/fabric/governance/governance-compliance-overview](/fabric/governance/governance-compliance-overview)
 
 
 [https://learn.microsoft.com/en-us/azure/well-architected/ai/responsible-ai](/azure/well-architected/ai/responsible-ai)
