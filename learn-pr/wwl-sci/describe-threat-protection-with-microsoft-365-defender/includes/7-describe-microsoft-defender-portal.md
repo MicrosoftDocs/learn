@@ -193,7 +193,7 @@ The Cloud security node in the Microsoft Defender portal provides access to Micr
 
 ### Security Copilot
 
-The Microsoft Defender portal includes access to the list of Agents in use. The portal also provides access solutions and agents, available in the Security Store, that integrate with Microsoft Defender.
+The Microsoft Defender portal includes access to the list of Agents in use. The portal also provides access to solutions and agents, available in the Security Store, that integrate with Microsoft Defender.
 
 # [Security Copilot](#tab/security-copilot)
 :::image type="content" source="../media/defender-portal-security-copilot.png" lightbox="../media/defender-portal-security-copilot.png" alt-text="A screenshot of the left navigation pane in the Defender portal, showing Security Copilot.":::
