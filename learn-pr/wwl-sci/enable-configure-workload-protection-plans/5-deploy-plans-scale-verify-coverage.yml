@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-configure-workload-protection-plans.deploy-plans-scale-verify-coverage
+metadata:
+  title: Deploy plans at scale and verify coverage
+  description: Learn how to deploy Defender for Cloud workload protection plans across management groups using Azure Policy and verify coverage with the Coverage workbook.
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Deploy plans at scale and verify coverage
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-deploy-plans-scale-verify-coverage.md)]
