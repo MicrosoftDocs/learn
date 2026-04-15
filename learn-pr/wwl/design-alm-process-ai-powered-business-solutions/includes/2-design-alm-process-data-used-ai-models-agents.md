@@ -192,5 +192,5 @@ The below RACI chart is a representative sample for an organization. It's up to 
 [https://learn.microsoft.com/fabric/governance/data-governance-overview](/fabric/governance/data-governance-overview)
 
 
-[https://learn.microsoft.com/azure/architecture/guide/responsible-ai/data](/azure/architecture/guide/responsible-ai/data)
+[https://learn.microsoft.com/en-us/azure/well-architected/ai/responsible-ai](/azure/well-architected/ai/responsible-ai)
 
