@@ -53,4 +53,6 @@ Use custom SITs when your organization has unique or proprietary data that needs
 | **Regulatory compliance** | Suitable for standard regulations | Can be customized to meet specific regulatory requirements in specific industries |
 | **Recommended use cases** | General data protection and compliance needs | Protecting proprietary or organization-specific data |
 
+**Credential scanning SITs** are a specialized subset of built-in SITs that detect secrets like API keys, passwords, tokens, and connection strings. They require an E5 license and don't support editing or customization. Use them in environments where developers or IT teams routinely handle credentials in code repositories, configuration files, or cloud infrastructure. For a complete list, see [All credentials sensitive information types](/purview/sit-defn-all-creds?azure-portal=true).
+
 Starting with built-in sensitive information types allows organizations to address general information security and compliance needs. As specific requirements arise, creating custom sensitive information types enables tailored protection strategies. Finally, using advanced features like exact data match and document fingerprinting helps increase accuracy and simplifies data protection management.
