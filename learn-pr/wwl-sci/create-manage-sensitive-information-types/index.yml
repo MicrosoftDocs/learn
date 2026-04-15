@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-sensitive-information-types
 metadata:
   title: Create and manage sensitive information types
   description: "Create and manage sensitive information types."
-  ms.date: 10/03/2024
+  ms.date: 04/15/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -12,7 +12,7 @@ title: Create and manage sensitive information types
 summary: Learn how to use sensitive information types to support your information protection strategy.
 abstract: |
   After completing this module, you'll be able to:
-  - Recognize the difference between built-in and custom sensitivity labels.
+  - Recognize the difference between built-in and custom sensitive information types.
   - Configure sensitive information types with exact data match-based classification.
   - Implement document fingerprinting.
   - Create custom keyword dictionaries.
