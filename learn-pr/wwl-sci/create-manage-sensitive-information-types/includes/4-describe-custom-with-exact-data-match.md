@@ -6,11 +6,21 @@ Exact data match (EDM) allows you to create a sensitive information type (SITs) 
 - **Ensures privacy**: Keeps sensitive data secure and private, even from Microsoft.
 - **Integrates across services**: Functions with a range of Microsoft cloud services for better data governance.
 
+EDM SITs can be used in:
+
+- Microsoft Purview Data Loss Prevention
+- Autolabeling (service and client side)
+- Microsoft Purview Insider Risk Management
+- Microsoft Purview eDiscovery
+- Microsoft Defender for Cloud Apps
+
 For example, if you have customer account numbers, EDM specifically flags those numbers only, which significantly lessens the risk of incorrect flags.
+
+Before you start creating EDM SITs, keep in mind that you need Global Admin, Compliance Admin, or Exchange Admin permissions. EDM is also only available in [specific regions](/microsoft-365/enterprise/o365-data-locations?azure-portal=true), so confirm your tenant's data residency before planning a deployment.
 
  :::image type="content" source="../media/exact-data-match-classification.png" alt-text="Diagram showing how exact data match based classification works." lightbox="../media/exact-data-match-classification.png":::  
 
-EDM-based classification enables you to create custom sensitive types that match exact values from a database. This database can hold up to 100 million rows of data and can be refreshed daily to reflect changes such as new or departing employees, patients, or clients. This ensures your custom sensitive information types remain current and relevant.
+EDM-based classification enables you to create custom sensitive types that match exact values from a database. This database can hold up to 100 million rows of data. You can also refresh it daily to reflect changes such as new or departing employees, patients, or clients, which helps keep your custom sensitive information types current and relevant.
 
 ## What's different in an EDM SIT
 
@@ -48,7 +58,7 @@ The rule package in an EDM SIT defines:
 - **Classification** determines the type of sensitive information being searched for.
 - **Confidence levels** measure the likelihood of a match, based on how much supporting evidence is present.
 - **Proximity** defines the allowable character distance between the primary and supporting elements.
-- **Supporting elements** provide additional context, improving accuracy by reducing false positives and increasing confidence. For instance, finding "SSN" near a social security number helps confirm it.
+- **Supporting elements** provide more context, improving accuracy by reducing false positives and increasing confidence. For instance, finding "SSN" near a social security number helps confirm it.
 
 ### Primary and secondary support elements
 
@@ -75,7 +85,7 @@ You can toggle back and forth between the new and classic experiences, but we re
 
 1. **Multiple SITs per schema**: The classic experience allows for multiple SITs to be mapped to a single schema, which isn't possible in the new experience.
 1. **Managing more than 10 SITs**: If you need to create or manage more than 10 SITs, you need to use the classic experience. Because you can map multiple EDM SITs to the same schema, you can have more than 10 EDM SITs. Attempting to create an eleventh schema with the new experience generates an error.
-1. **Custom schema names**: The classic experience lets you specify custom names for your EDM schemas, unlike the new experience that auto-generates schema names.
+1. **Custom schema names**: The classic experience lets you specify custom names for your EDM schemas, unlike the new experience that autogenerates schema names.
 1. **Editing existing schemas**: If you need to edit schemas created in the classic experience or uploaded via PowerShell, you must use the classic experience, as the new experience doesn't support this functionality.
 
 Use the procedure to understand how to create an EDM SIT. Select the appropriate tab for guidance on creating one with the **new** or **classic** experience.
@@ -92,7 +102,7 @@ Use the procedure to understand how to create an EDM SIT. Select the appropriate
 
 1. Review the **Familiarize yourself with the steps needed to put your classifier to work** page, then select **Create EDM classifier**.
 
-1. On the **Name and describe your EDM classifier** page, name the SIT and add a description. The system uses this name, appended with the word _schema_, for the associated schema it generates.
+1. On the **Name and describe your EDM classifier** page, name the SIT, and add a description. The system uses this name, appended with the word _schema_, for the associated schema it generates.
 
 1. Select **Next**.
 
@@ -102,7 +112,7 @@ Use the procedure to understand how to create an EDM SIT. Select the appropriate
 
 1. Select **Next**.
 
-1. On the **Upload your sample file** page, select your sample file and then select **Upload file**. Select **Next**.
+1. On the **Upload your sample file** page, select your sample file, and then select **Upload file**. Select **Next**.
 
    If errors display during the upload, address them and then try again.
 
@@ -121,7 +131,7 @@ Use the procedure to understand how to create an EDM SIT. Select the appropriate
 1. **Configure settings for data in selected columns**.
     - The toggle **Use the same settings for all columns** is set to **On** by default. If you want to use separate settings for each data field, set the toggle to **Off**.
     - The **Data in columns are case-insensitive** option is selected by default. To enforce **case-sensitive** detection, uncheck this box.
-    - If needed, select the option to **Ignore delimiters and punctuation for data in all columns** You can then either select the delimiters and punctuation marks you want to ignore from a list or you can enter custom delimiters and punctuation marks to ignore.
+    - If needed, select the option to **Ignore delimiters and punctuation for data in all columns** You can then either select the delimiters, and punctuation marks you want to ignore from a list or you can enter custom delimiters and punctuation marks to ignore.
 
 1. On the **Review settings and finish** page, select **Submit**.
 
@@ -176,7 +186,7 @@ Once you create your EDM schema, the next step is to hash and upload your sensit
 
 1. (Optional) In the flyout panel, add supporting elements if your data needs extra context to strengthen detection. The options available for the supporting element are based on the available fields that aren't your primary element.
 
-1. In the flyout panel, choose the **Matching options for supporting elements**. If multiple supporting elements are specified, select whether all or any must match. For Match if any, set the minimum and maximum number of matches (pre-filled with 1 and the total number of elements).
+1. In the flyout panel, choose the **Matching options for supporting elements**. If multiple supporting elements are specified, select whether all or any must match. For Match if any, set the minimum and maximum number of matches (prefilled with 1 and the total number of elements).
 
 1. Select **Done** in the flyout panel.
 
