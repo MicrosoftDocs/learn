@@ -46,7 +46,7 @@ For more information, see to the unit "Describe Microsoft Security Exposure Mana
 
 Also, Vulnerability Management is now located under Exposure management. For more information, see the unit "Describe Microsoft Defender Vulnerability Management."
 
-# [Exposure_management](#tab/exposure_management)
+# [Exposure management](#tab/exposure-management)
 :::image type="content" source="../media/exposure-management-menu.png" lightbox="../media/exposure-management-menu.png" alt-text="A screenshot of the Microsoft Defender portal left navigation pane, showing Exposure management.":::
 
 # [Overview](#tab/overview)
@@ -183,10 +183,10 @@ The Cloud security node in the Microsoft Defender portal provides access to Micr
 - **Top actions** – Guidance on where to focus next, highlighting critical recommendations, high-severity incidents, and attack paths.
 - **Trends over time** – Historical views of security posture and threat detection trends, helping teams track progress over 30 days, 3 months, or 6 months.
 
-# [Cloud_security](#tab/cloud_security)
+# [Cloud security](#tab/cloud-security)
 :::image type="content" source="../media/defender-portal-cloud-security.png" lightbox="../media/defender-portal-cloud-security.png" alt-text="A screenshot of the Cloud security option in the left navigation panel of the Defender portal.":::
 
-# [Overview](#tab/overview)
+# [Overview](#tab/cloud-overview)
 :::image type="content" source="../media/defender-portal-cloud-security-overview.png" lightbox="../media/defender-portal-cloud-security-overview.png" alt-text="A screenshot of the Cloud security overview dashboard in the Defender portal.":::
 
 ---
@@ -195,13 +195,13 @@ The Cloud security node in the Microsoft Defender portal provides access to Micr
 
 The Microsoft Defender portal includes access to the list of Agents in use. The portal also provides access solutions and agents, available in the Security Store, that integrate with Microsoft Defender.
 
-# [Security_Copilot](#tab/security_copilot)
+# [Security Copilot](#tab/security-copilot)
 :::image type="content" source="../media/defender-portal-security-copilot.png" lightbox="../media/defender-portal-security-copilot.png" alt-text="A screenshot of the left navigation pane in the Defender portal, showing Security Copilot.":::
 
-# [Agents](#tab/agents)
+# [Agents](#tab/copilot-agents)
 :::image type="content" source="../media/defender-portal-security-copilot-agents.png" lightbox="../media/defender-portal-security-copilot-agents.png" alt-text="A screenshot of the agents page in the Microsoft Defender portal.":::
 
-# [AI agents](#tab/ai-agents)
+# [Security Store](#tab/security-store)
 :::image type="content" source="../media/defender-portal-security-copilot-security-store.png" lightbox="../media/defender-portal-security-copilot-security-store.png" alt-text="A screenshot of the Security Store page in the Microsoft Defender portal.":::
 
 ---
