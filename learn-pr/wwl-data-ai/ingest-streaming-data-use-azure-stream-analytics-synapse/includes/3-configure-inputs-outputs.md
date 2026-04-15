@@ -1,6 +1,9 @@
 
 All Azure Stream Analytics jobs include at least one input and output. In most cases, inputs reference sources of streaming data (though you can also define inputs for static reference data to augment the streamed event data). Outputs determine where the results of the stream processing query will be sent. In the case of data ingestion into Azure Synapse Analytics, the output usually references an Azure Data Lake Storage Gen2 container or a table in a dedicated SQL pool database.
 
+> [!NOTE]
+> Azure Stream Analytics offers two authoring experiences: the traditional SQL query editor covered in this module, and a no-code drag-and-drop editor. The no-code editor lets you build complete jobs — including inputs, transformations, and Synapse outputs — visually without writing SQL. You can access it from the **Overview** page of a Stream Analytics job in the Azure portal, or from Azure Event Hubs via **Process Data**. For more information, see [No-code stream processing in Azure Stream Analytics](/azure/stream-analytics/no-code-stream-processing).
+
 ## Streaming data inputs
 
 Inputs for streaming data consumed by Azure Stream Analytics can include:
@@ -8,6 +11,7 @@ Inputs for streaming data consumed by Azure Stream Analytics can include:
 - Azure Event Hubs
 - Azure IoT Hubs
 - Azure Blob or Data Lake Gen 2 Storage
+- Apache Kafka
 
 Depending on the specific input type, the data for each streamed event includes the event's data fields as well as input-specific metadata fields. For example, data consumed from an Azure Event Hubs input includes an **EventEnqueuedUtcTime** field indicating the time when the event was received in the event hub.
 
@@ -18,7 +22,7 @@ Depending on the specific input type, the data for each streamed event includes 
 
 If you need to load the results of your stream processing into a table in a dedicated SQL pool, use an **Azure Synapse Analytics** output. The output configuration includes the identity of the dedicated SQL pool in an Azure Synapse Analytics workspace, details of how the Azure Stream Analytics job should establish an authenticated connection to it, and the existing table into which the data should be loaded.
 
-Authentication to Azure Synapse Analytics is usually accomplished through SQL Server authentication, which requires a username and password. Alternatively, you can use a managed identity to authenticate. When using an Azure Synapse Analytics output, your Azure Stream Analytics job configuration must include an Azure Storage account in which authentication metadata for the job is stored securely.
+The recommended authentication method is **managed identity**, which eliminates password management overhead and avoids the 90-day token expiration that affects user-based authentication methods. Using managed identity also enables fully automated Stream Analytics deployments without embedded credentials. Alternatively, you can use SQL Server authentication with a username and password. When using an Azure Synapse Analytics output, your Azure Stream Analytics job configuration must include an Azure Storage account in which authentication metadata for the job is stored securely.
 
 > [!NOTE]
 > For more information about using an Azure Synapse Analytics output, see [Azure Synapse Analytics output from Azure Stream Analytics](/azure/stream-analytics/azure-synapse-analytics-output?azure-portal=true) in the Azure Stream Analytics documentation.

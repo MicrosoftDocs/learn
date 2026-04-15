@@ -37,7 +37,13 @@ WHERE ReadingValue < 0
 
 ## Aggregating events over temporal windows
 
-A common pattern for streaming queries is to aggregate event data over temporal (time-based) intervals, or *windows*. To accomplish this, you can use a **GROUP BY** clause that includes a Window function defining the kind of window you want to define (for example, *tumbling*, *hopping*, or *sliding*).
+A common pattern for streaming queries is to aggregate event data over temporal (time-based) intervals, or *windows*. To accomplish this, you can use a **GROUP BY** clause that includes a Window function defining the kind of window you want to define. Azure Stream Analytics supports five window types:
+
+- **Tumbling** — fixed-size, non-overlapping, contiguous intervals. An event belongs to exactly one tumbling window.
+- **Hopping** — overlapping scheduled windows that advance by a fixed hop interval. Events can belong to more than one window.
+- **Sliding** — fire only when the window content changes (when an event arrives or leaves). Every window contains at least one event.
+- **Session** — variable-length windows grouped by inactivity gap between events. Useful for IoT and user-activity scenarios where event bursts are separated by idle periods.
+- **Snapshot** — groups events that share the same timestamp using `System.Timestamp()`. Typically used after a preceding window function to further aggregate its output.
 
 > [!TIP]
 > For more information about window functions, see [Introduction to Stream Analytics windowing functions](/azure/stream-analytics/stream-analytics-window-functions?azure-portal=true) in the Azure Stream Analytics documentation.
