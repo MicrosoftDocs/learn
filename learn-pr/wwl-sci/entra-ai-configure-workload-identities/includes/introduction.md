@@ -1,4 +1,4 @@
-An organization can secure user access and still create unnecessary risk. AI workloads can use the wrong credential type, receive broad permissions, or create agent identities without clear accountability.
+An organization can secure user access and still create unnecessary risk. AI workloads can use the wrong credential type, receive broad permissions, or operate with agent identities that lack clear accountability. Agent identities may be created directly by an administrator or provisioned into Microsoft Entra by upstream platforms such as Copilot Studio or Microsoft 365, but Microsoft Entra is responsible for governing those identities once they exist in the tenant.
 
 Consider an AI service that runs outside Azure and uses a client secret for authentication. The secret is stored in code, the application is granted broad Microsoft Graph permissions, and no sponsor is assigned to the agent identity. The workload functions, but the design introduces avoidable risk across authentication, access, and lifecycle management.
 
