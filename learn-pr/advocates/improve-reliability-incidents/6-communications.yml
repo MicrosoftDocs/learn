@@ -4,7 +4,7 @@ title: "Communication and collaboration"
 metadata:
   title: "Communication and collaboration"
   description: "Communication and collaboration"
-  ms.date: 02/28/2024
+  ms.date: 04/16/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -17,15 +17,15 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What is ChatOps?'
+  - content: "What is ChatOps?"
     choices:
-    - content: 'A conversation-driven collaboration model'
+    - content: "A conversation-driven collaboration model"
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'A kind of bot that can help you with incident response'
+      explanation: "Correct."
+    - content: "A kind of bot that can help you with incident response"
       isCorrect: false
-      explanation: 'ChatOps is a conversation-driven collaboration model.'
-    - content: 'An informal get-together for operations professionals held in Boston each year'
+      explanation: "ChatOps is a conversation-driven collaboration model."
+    - content: "An informal get-together for operations professionals held in Boston each year"
       isCorrect: false
-      explanation: 'ChatOps is a conversation-driven collaboration model.'
-
+      explanation: "ChatOps is a conversation-driven collaboration model."
+

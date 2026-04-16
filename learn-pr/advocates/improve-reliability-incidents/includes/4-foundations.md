@@ -3,9 +3,9 @@ Organizations today benefit from the accessibility, efficiency, and convenience 
 Some of the common challenges that you might be facing in your organization include:
 
 - Increased number of service disruptions
-- No effective method of tracking and responding to incidents (everything is ad hoc and reactionary)
+- No effective method of tracking and responding to incidents (everything is improvised and reactionary)
 - Unacceptable time to resolution
-- Time to resolution is not improving or is getting worse
+- Time to resolution isn't improving or is getting worse
 - Information and status are difficult to find
 - Recurrence of the same problems and mistakes
 
@@ -29,11 +29,11 @@ It's essential to have a good plan, but a plan is useless without people to exec
 
 The best way to address this challenge is to design a roster. A roster is a list of people who are assigned to the on-call team. This team should be made up of multiple engineers. These team members should have the knowledge and skills to address the type of problems that can occur in your environment, as well as training in incident response.
 
-A list of names, however, is not enough. You need to build a framework around who's on call at any given point, and what each person is to do. That's where roles come in.
+A list of names, however, isn't enough. You need to build a framework around who's on call at any given point, and what each person is to do. That's where roles come in.
 
 ## Roles
 
-Roles bring order to what would be a chaotic—or at best an ad hoc—response. It does this by defining the specific functions to be assumed by each person in a particular situation, and the place of each in the "chain of command." Roles may vary by organization or even by incident type, but the following roles should generally be part of an organized incident response team:
+Roles bring order to what would be a chaotic—or at best an improvised—response. It does this by defining the specific functions to be assumed by each person in a particular situation, and the place of each in the "chain of command." Roles may vary by organization or even by incident type, but the following roles should generally be part of an organized incident response team:
 
 - **Primary responder**: This is the "point person" who's usually the first person on the scene; that is, the first on-call engineer who's called when an incident occurs.
 - **Secondary responder**: This is someone who acts as a backup and can step in if the primary responder isn't available or if a second pair of eyes is needed.
