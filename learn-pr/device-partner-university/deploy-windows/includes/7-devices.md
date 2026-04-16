@@ -8,15 +8,15 @@ As you expand your deployment of Windows 11 to more devices, you should regularl
 
 ### Windows Update for Business reports  
 
-Feature updates. Get there from Azure portal > **Monitor > Insight Hub > Windows Update for Business reports**. Select the [Feature updates](windows/deployment/update/wufb-reports-workbook#feature-updates-tab) tab to view status arranged by update or device.
+Feature updates. Get there from Azure portal > **Monitor > Insight Hub > Windows Update for Business reports**. Select the [Feature updates](/windows/deployment/update/wufb-reports-workbook#feature-updates-tab) tab to view status arranged by update or device.
 
 ### Windows Autopatch  
 
-Windows Feature Updates reports. Get there from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Reports > Windows Autopatch > Windows feature updates**. From here you can view a summary dashboard or drill down into the [Feature update status report](windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report) for a per device view of the current Windows upgrade status or [Feature update trending report](windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report) for Windows upgrade trends over the last 90 days.
+Windows Feature Updates reports. Get there from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Reports > Windows Autopatch > Windows feature updates**. From here you can view a summary dashboard or drill down into the [Feature update status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report) for a per device view of the current Windows upgrade status or [Feature update trending report](windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report) for Windows upgrade trends over the last 90 days.
 
 ### Microsoft Intune
 
-Windows Feature Update Report. Get there from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Reports > Device Management > Windows updates**. From here you can view a summary report across all Windows update policies, or you can drill down to the [Windows feature update report](https://learn.microsoft.com/en-us/intune/intune-service/protect/windows-update-reports#use-the-windows-10-feature-updates-organizational-report) to see more detail for a specific update profile.
+Windows Feature Update Report. Get there from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Reports > Device Management > Windows updates**. From here you can view a summary report across all Windows update policies, or you can drill down to the [Windows feature update report](/intune/intune-service/protect/windows-update-reports#use-the-windows-10-feature-updates-organizational-report) to see more detail for a specific update profile.
 
 Use these or other reports to identify any issues that are preventing you from reaching 100% of your planned deployment and therefore need to be addressed.
 

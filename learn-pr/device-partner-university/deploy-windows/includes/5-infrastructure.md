@@ -18,7 +18,7 @@ When monitoring infrastructure during deployment, review signals that indicate t
    - [Windows quality and feature update reports](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview#windows-feature-update-reports)
    - [Feature update status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report)
 
-As an example, if you configured Delivery Optimization in the Plan and Prepare phases, you can monitor its effectiveness during deployment. Use the [Delivery Optimization report](windows/deployment/update/wufb-reports-workbook#bkmk_do) in the Windows Update for Business reports workbook to monitor how well it’s working across your organization.
+As an example, if you configured Delivery Optimization in the Plan and Prepare phases, you can monitor its effectiveness during deployment. Use the [Delivery Optimization report](/windows/deployment/update/wufb-reports-workbook#bkmk_do) in the Windows Update for Business reports workbook to monitor how well it’s working across your organization.
 
 > [!TIP]
 >

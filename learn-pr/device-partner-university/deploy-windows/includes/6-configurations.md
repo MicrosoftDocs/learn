@@ -57,7 +57,7 @@ If any issues are identified, you should review the configurations with the stak
 
 Are there any old or conflicting policies? If you have a hybrid environment, pay particular attention to any policies that are old, outdated, no longer applicable, or no longer needed. If such policies are applied via Group Policy, they might cause conflicts. This is a common cause of misconfiguration and unexpected behavior.
 
-If you're using Microsoft Intune or Windows Autopatch, [Alerts and remediations overview](/windows/deployment/windows-autopatch/monitor/alerts-remediations) and [Troubleshoot policies and configuration profiles in Microsoft Intune](troubleshoot/mem/intune/device-configuration/troubleshoot-policies-in-microsoft-intune) are resources that might help you.
+If you're using Microsoft Intune or Windows Autopatch, [Alerts and remediations overview](/windows/deployment/windows-autopatch/monitor/alerts-remediations) and [Troubleshoot policies and configuration profiles in Microsoft Intune](/troubleshoot/mem/intune/device-configuration/troubleshoot-policies-in-microsoft-intune) are resources that might help you.
 
 Depending on the size or impact of the configuration remediations required, you might want to validate the changes in a test environment or a small deployment ring first.
 
