@@ -1,6 +1,6 @@
 A version control system (VCS) is a program or set of programs that tracks changes to a collection of files. One goal of a VCS is to easily recall earlier versions of individual files or of the entire project. Another goal is to allow several team members to work on a project, even on the same files, at the same time without affecting each other's work.
 
-Another name for a VCS is a software configuration management (SCM) system. The two terms often are used interchangeably—in fact, Git's official documentation is located at [git-scm.com](https://git-scm.com/?azure-portal=true). Technically, version control is just one of the practices involved in SCM. A VCS can be used for projects other than software, including books and online tutorials.
+Version control is often discussed as part of software configuration management (SCM). The two terms sometimes are used interchangeably—in fact, Git's official documentation is located at [git-scm.com](https://git-scm.com/?azure-portal=true). Technically, version control is just one of the practices involved in SCM. A VCS can be used for projects other than software, including books and online tutorials.
 
 With a VCS, you can:
 
@@ -16,27 +16,27 @@ Git is a fast, versatile, highly scalable, free, open-source VCS. Its primary au
 
 ## Distributed version control
 
-Earlier instances of VCSes, including CVS, Subversion (SVN), and Perforce, used a centralized server to store a project's history. This centralization meant that the one server was also potentially a single point of failure.
+Centralized VCSes, including CVS, Subversion (SVN), and Perforce, use a centralized server to store a project's history. This centralization means that the one server is also potentially a single point of failure.
 
-Git is _distributed_, which means that a project's complete history is stored both on the client *and* on the server. You can edit files without a network connection, check them in locally, and sync with the server when a connection becomes available. If a server goes down, you still have a local copy of the project. Technically, you don't even have to have a server. Changes could be passed around in e-mail or shared by using removable media, but no one uses Git this way in practice.
+Git is _distributed_, which means that a project's complete history is stored on your local computer and, when you use one, on a server. You can edit files without a network connection, commit them locally, and sync with the server when a connection becomes available. If a server goes down, you still have a local copy of the project. Technically, you don't even have to have a server. Changes can be passed around in e-mail or shared by using removable media, although most teams today use a hosted remote repository.
 
 ## Git terminology
 
-To understand Git, you have to understand the terminology. Here's a short list of terms that Git users frequently use. Don't be concerned about the details for now; all these terms will become familiar as you work your way through the exercises in this module.
+To understand Git, you have to understand the terminology. Here's a short list of terms that Git users frequently use. Don't be concerned about the details for now; all these terms will become familiar as you work your way through the exercise in this module.
 
 - **Working tree**: The set of nested directories and files that contain the project that's being worked on.
 
-- **Repository (repo)**: The directory, located at the top level of a working tree, where Git keeps all the history and metadata for a project. Repositories are almost always referred to as *repos*. A *bare repository* is one that isn't part of a working tree; it's used for sharing or backup. A bare repo is usually a directory with a name that ends in *.git*—for example, *project.git*.
+- **Repository (repo)**: The data store, contained in a hidden directory named `.git` at the top level of a working tree, where Git keeps all the history and metadata for a project. Repositories are almost always referred to as *repos*. A *bare repository* is one that isn't part of a working tree; it's used for sharing or backup. A bare repo is usually a directory with a name that ends in *.git*—for example, *project.git*.
 
-- **Hash**: A number produced by a hash function that represents the contents of a file or another object as a fixed number of digits. Git uses hashes that are 160 bits long. One advantage to using hashes is that Git can tell whether a file has changed by hashing its contents and comparing the result to the previous hash. If the file time-and-date stamp is changed, but the file hash isn’t changed, Git knows the file contents aren’t changed.
+- **Hash**: A number produced by a hash function that represents the contents of a file or another object as a fixed number of digits. Git traditionally uses SHA-1 hashes that are 160 bits long, though modern versions of Git also support SHA-256 (256 bits). One advantage to using hashes is that Git can tell whether a file has changed by hashing its contents and comparing the result to the previous hash. If the file time-and-date stamp is changed, but the file hash isn’t changed, Git knows the file contents aren’t changed.
 
-- **Object**: A Git repo contains four types of *objects,* each uniquely identified by an SHA-1 hash. A *blob* object contains an ordinary file. A *tree* object represents a directory; it contains names, hashes, and permissions. A *commit* object represents a specific version of the working tree. A *tag* is a name attached to a commit.
+- **Object**: A Git repo contains four types of *objects*, each uniquely identified by a hash. A *blob* object contains an ordinary file. A *tree* object represents a directory; it contains names, hashes, and permissions. A *commit* object represents a specific version of the working tree. An annotated *tag* object stores metadata, such as a name, message, and optional signature, and usually points to a commit, though it can point to other Git objects as well. Git also supports lightweight tags, which are references rather than objects.
 
 - **Commit**: When used as a verb, *commit* means to make a commit object. This action takes its name from commits to a database. It means you are committing the changes you have made so that others can eventually see them, too.
 
-- **Branch**: A branch is a named series of linked commits. The most recent commit on a branch is called the *head*. The default branch, which is created when you initialize a repository, is called `main`, often named `master` in Git. The head of the current branch is named `HEAD`. Branches are an incredibly useful feature of Git because they allow developers to work independently (or together) in branches and later merge their changes into the default branch.
+- **Branch**: A branch is a named series of linked commits. The most recent commit on a branch is called the *head*. The default branch, which is created when you initialize a repository, is called `main` on GitHub and many other platforms. The head of the current branch is named `HEAD`. Branches are an incredibly useful feature of Git because they allow developers to work independently (or together) in branches and later merge their changes into the default branch.
 
-- **Remote**: A remote is a named reference to another Git repository. When you create a repo, Git creates a remote named `origin` that is the default remote for push and pull operations.
+- **Remote**: A remote is a named reference to another Git repository. When you clone a repo, Git creates a remote named `origin` that points to the repository you cloned from. `origin` is the default remote for push and pull operations.
 
 - **Commands**, **subcommands**, and **options**: Git operations are performed by using commands like `git push` and `git pull`. `git` is the command, and `push` or `pull` is the subcommand. The subcommand specifies the operation you want Git to perform. Commands frequently are accompanied by options, which use hyphens (-) or double hyphens (--). For example, `git reset --hard`.
 
@@ -46,7 +46,7 @@ These terms and others, like `push` and `pull`, will make more sense shortly. Bu
 
 Several different GUIs are available for Git, including GitHub Desktop. Many programming editors, like Microsoft [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true), also have an interface to Git. They all work differently and they have different limitations. None of them implement _all_ of Git's functionality.
 
-The exercises in this module use the Git command line—specifically, Git commands executed in Azure Cloud Shell. However, Git's command-line interface works the same, no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and they have to resort to the command line to get going again.
+The exercise in this module uses a combination of the Git command line and Visual Studio Code in a GitHub Codespaces environment. Git's command-line interface works the same, no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and they have to resort to the command line to get going again.
 
 ## Git and GitHub
 
@@ -66,7 +66,9 @@ Key features provided by GitHub include:
 - Actions
 - Forks
 - Projects
+- Copilot
+- Codespaces
 
-To learn more about GitHub, see the [Introduction to GitHub](/training/modules/introduction-to-github?azure-portal=true) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github?azure-portal=true) help documentation.
+To learn more about GitHub, see the [Introduction to GitHub](/training/modules/introduction-to-github?azure-portal=true) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/en/get-started?azure-portal=true) help documentation.
 
 The next step is to try out Git for yourself!
