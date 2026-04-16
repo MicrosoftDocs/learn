@@ -1,1 +1,3 @@
-Choose the best response for each of the questions below. 
+A global consultancy firm is rolling out sensitivity labels across Microsoft 365. The project team uses a Teams team for collaboration, a SharePoint site to store client deliverables, and Power BI dashboards that combine financial projections with competitive analysis. Team members use Microsoft 365 Copilot to draft proposals from labeled source documents. A confidential board strategy meeting is scheduled for next week. The IT admin has published sensitivity labels from the Microsoft Purview portal, including **General**, **Confidential**, and **Highly Confidential**, with encryption configured on the two higher-priority labels.
+
+Use what you learned in this module to answer questions about the firm's label rollout.
