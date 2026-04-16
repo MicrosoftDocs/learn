@@ -15,7 +15,7 @@ Let’s look at each of these areas one by one, outlining the tasks and delivera
 
 > [!NOTE]
 >
-> Our recommended way forward is cloud-native, which means Microsoft Entra ID-joined and managed by Microsoft Intune. Cloud-native management can largely simplify all steps of your planning, preparation, deployment, and management of Windows 11 with Microsoft Intune and Windows Autopatch. However, many of these processes can be adapted to on-premises and hybrid environments.
+> Our recommended way forward is cloud-native, with devices Microsoft Entra ID-joined and managed through Microsoft Intune. Cloud-native management can simplify planning, preparation, deployment, and ongoing management of Windows 11 using Microsoft Intune and Windows Autopatch. Many of these processes can also be adapted for hybrid or on-premises environments. [Discover which option is right for your organization on Microsoft Learn.](https://aka.ms/EntraJoin-WhichOption)
 
 ## Phased or ring-based approach to deploying Windows
 
@@ -37,7 +37,7 @@ Windows diagnostic data provides the information for Windows update compatibilit
 |------------------------|------------------------------------------------------|----------------------------------|---------------|
 | Device readiness       | [Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)       | Microsoft Intune                 | Plan, Prepare |
 | Device readiness       | [Windows feature update compatibility risks report](/intune/intune-service/protect/windows-update-compatibility-reports#use-the-windows-feature-update-compatibility-risks-report)    | Microsoft Intune                 | Prepare       |
-| Device readiness       | [Work from anywhere](/intune/analytics/work-from-anywhere) report                            | Endpoint analytics               | Plan          |
+| Device readiness       | [Work from anywhere report](/intune/analytics/work-from-anywhere)                            | Endpoint analytics               | Plan          |
 | Device readiness       | [Feature updates – device status](/windows/deployment/update/wufb-reports-workbook#feature-updates-tab)                      | Windows Update for Business reports | Plan          |
 | Application inventory  | [Discovered apps report](/intune/intune-service/apps/app-discovered-apps)                               | Microsoft Intune                 | Plan          |
 | Device provisioning    | [Work from anywhere report](/intune/analytics/work-from-anywhere)                            | Endpoint analytics               | Plan          |
