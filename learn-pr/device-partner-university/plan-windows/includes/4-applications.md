@@ -2,7 +2,7 @@ Most of your apps are already ready for Windows 11 deployment thanks to the 99.7
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Set criteria for app handling<br>- Generate your app inventory<br>- List and assign owners and importance classifications to applications based on business impact<br>- Identify gaps in app readiness | - Application decision matrix<br>- App inventory updated with importance classifications<br>- Priority application and owner list, defined by app owners<br>- List of app gaps |
+| - Set criteria for app handling.<br>- Generate your app inventory.<br>- List and assign owners and importance classifications to applications based on business impact.<br>- Identify gaps in app readiness. | - Application decision matrix<br>- App inventory updated with importance classifications<br>- Priority application and owner list, defined by app owners<br>- List of app gaps |
 
 ### Set criteria for app handling
 
@@ -84,4 +84,4 @@ Finally, are there any tasks or deliverables you still need help with?
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Set criteria for app handling<br>- Generate your app inventory<br>- List and assign owners and importance classifications to applications based on business impact<br>- Identify gaps in app readiness | - Application decision matrix<br>- App inventory updated with importance classification<br>- Priority application and owner list, defined by app owners<br>- List of app gaps |
+| - Set criteria for app handling.<br>- Generate your app inventory.<br>- List and assign owners and importance classifications to applications based on business impact.<br>- Identify gaps in app readiness. | - Application decision matrix<br>- App inventory updated with importance classification<br>- Priority application and owner list, defined by app owners<br>- List of app gaps |

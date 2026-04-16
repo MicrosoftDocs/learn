@@ -2,7 +2,7 @@ How ready is your infrastructure for Windows 11 deployment? Determine that by fo
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define infrastructure readiness criteria<br>- Evaluate deployment management tools and infrastructure<br>- Evaluate current device provisioning processes and tools<br>- Identify infrastructure gaps | - Deployment readiness criteria<br>- Infrastructure remediation list<br>- Device provisioning plan<br>- List of infrastructure gaps |
+| - Define infrastructure readiness criteria.<br>- Evaluate deployment management tools and infrastructure.<br>- Evaluate current device provisioning processes and tools.<br>- Identify infrastructure gaps. | - Deployment readiness criteria<br>- Infrastructure remediation list<br>- Device provisioning plan<br>- List of infrastructure gaps |
 
 ## Define infrastructure readiness criteria
 
@@ -31,7 +31,7 @@ Check the prerequisites and plan for the tools that you’ll need to acquire sti
 - [Microsoft Intune](/mem/intune/fundamentals/what-is-intune):
   - **Definition & use:** This cloud-based endpoint management solution is designed to simplify management of devices, identities, and apps. It integrates with other Microsoft services and apps ensuring security and advanced management capabilities of hybrid workplaces.
   - **Prerequisites:** Check [supported operating systems and browsers](/mem/intune/fundamentals/supported-devices-browsers) as well as [network configuration requirements and bandwidth](/mem/intune/fundamentals/network-bandwidth-use). If you meet these prerequisites, just sign in to your work or school account and add Intune to your [subscription](/mem/intune/fundamentals/account-sign-up). If you don’t already have an account, you can [sign up for a free trial account](/mem/intune/fundamentals/free-trial-sign-up) to use Intune for your organization.
-- [Microsoft Entra ID](/entra/fundamentals/whatis)
+- [Microsoft Entra ID:](/entra/fundamentals/whatis)
   - **Definition & use:** This cloud-based identity and access management service allows people at your organization access external and internal sources securely.
   - **Prerequisites:** You might already have access to Microsoft Entra ID with one of your Microsoft Online business services, such as Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, or others. If not, [review all available plans](https://www.microsoft.com/security/business/microsoft-entra-pricing) and [licensing options](/entra/fundamentals/licensing).
 - [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview?tabs=business-premium-a3-communications):
@@ -85,4 +85,4 @@ Do you notice any gaps in infrastructure at this point?
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define infrastructure readiness criteria<br>- Evaluate deployment management tools and infrastructure<br>- Evaluate current device provisioning processes and tools<br>- Identify infrastructure gaps | - Deployment readiness criteria<br>- Infrastructure remediation list<br>- Device provisioning plan<br>- List of infrastructure gaps |
+| - Define infrastructure readiness criteria.<br>- Evaluate deployment management tools and infrastructure.<br>- Evaluate current device provisioning processes and tools.<br>- Identify infrastructure gaps. | - Deployment readiness criteria<br>- Infrastructure remediation list<br>- Device provisioning plan<br>- List of infrastructure gaps |

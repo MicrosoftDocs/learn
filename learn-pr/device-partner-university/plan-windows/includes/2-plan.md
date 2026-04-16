@@ -33,8 +33,6 @@ Windows diagnostic data provides the information for Windows update compatibilit
 
 ### Suggested reports
 
-### Suggested reports
-
 | Area of use | Report name | Source | Phase |
 |------------|-------------|--------|-------|
 | Device readiness | • [Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)| Microsoft Intune | Plan, Prepare |

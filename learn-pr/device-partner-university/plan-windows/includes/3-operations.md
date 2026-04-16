@@ -2,7 +2,7 @@ Let’s begin by determining your operational readiness for Windows 11 deploymen
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define operational readiness criteria<br>- Define deployment rings/phases<br>- [Optional] Define a Proof of Concept (PoC)<br>- Identify and assign roles to personnel<br>- Define servicing channel for devices<br>- Hardware refresh plan<br>- Define device update strategy<br>- Design a feedback loop<br>- Identify gaps | A table of operational readiness criteria<br>- Deployment plan (including required number of deployment phases or rings, dates, and device upgrade strategy)<br>- [Optional] List of devices and tests to be performed in a PoC<br>- Roles and responsibilities or RACI tables for tasks<br>- List of devices requiring a servicing channel other than the default<br>- Hardware refresh plan<br>- Documented feedback process<br>- List of operational gaps |
+| - Define operational readiness criteria.<br>- Define deployment rings/phases.<br>- [Optional] Define a Proof of Concept (PoC).<br>- Identify and assign roles to personnel.<br>- Define servicing channel for devices.<br>- Hardware refresh plan.<br>- Define device update strategy.<br>- Design a feedback loop.<br>- Identify gaps. | A table of operational readiness criteria<br>- Deployment plan (including required number of deployment phases or rings, dates, and device upgrade strategy)<br>- [Optional] List of devices and tests to be performed in a PoC<br>- Roles and responsibilities or RACI tables for tasks<br>- List of devices requiring a servicing channel other than the default<br>- Hardware refresh plan<br>- Documented feedback process<br>- List of operational gaps |
 
 ## Define operational readiness criteria
 
@@ -15,7 +15,7 @@ When you deploy a Windows 11 feature update, you'll need to make sure it isn't i
 
 > [!NOTE]
 > ***Recommended deliverable:***
-> 
+>
 > Document these operational readiness criteria in a format that allows sharing, such as a table.
 
 ## Define deployment rings or phases
@@ -92,12 +92,12 @@ For example, the RACI matrix for a sample of tasks in this process might look li
 
 | Stage   | Task                                         | Process manager            | End-user computing | Application owner | Operations   | Security     |
 |---------|----------------------------------------------|----------------------------|--------------------|-------------------|--------------|--------------|
-| Plan    | Define and assign roles to personnel          | Accountable, Responsible   | Informed           | Informed          | Informed     | Informed     |
-| Plan    | Outline approach to updating operation processes | Accountable               | Informed           | Informed          | Responsible  | Informed     |
-| Prepare | Review infrastructure changes                | Accountable               | Responsible        | Informed          | Informed     | Informed     |
-| Prepare | Implement and test operations changes         | Accountable               | Consulted          | Informed          | Responsible  | Informed     |
-| Deploy  | Remediate failed apps                         | Accountable               | Informed           | Responsible       | Informed     | Informed     |
-| Deploy  | Remediate issues with Microsoft Entra ID                | Accountable               | Informed           | Informed          | Informed     | Responsible  |
+| Plan    | Define and assign roles to personnel.          | Accountable, Responsible   | Informed           | Informed          | Informed     | Informed     |
+| Plan    | Outline approach to updating operation processes. | Accountable               | Informed           | Informed          | Responsible  | Informed     |
+| Prepare | Review infrastructure changes.                | Accountable               | Responsible        | Informed          | Informed     | Informed     |
+| Prepare | Implement and test operations changes.         | Accountable               | Consulted          | Informed          | Responsible  | Informed     |
+| Deploy  | Remediate failed apps.                         | Accountable               | Informed           | Responsible       | Informed     | Informed     |
+| Deploy  | Remediate issues with Microsoft Entra ID.                | Accountable               | Informed           | Informed          | Informed     | Responsible  |
 
 At the end of this and the following learning modules, you’ll find a list of all the tasks covered at each phase of update deployment.
 
@@ -171,4 +171,4 @@ Are there any recommended tasks or deliverables that you still need help with?
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define operational readiness criteria<br>- Define deployment rings/phases<br>- [Optional] Define a Proof of Concept (PoC)<br>- Identify and assign roles to personnel<br>- Define servicing channel for devices<br>- Hardware refresh plan<br>- Define device update strategy<br>- Design a feedback loop<br>- Identify gaps | A table of operational readiness criteria<br>- Deployment plan (including required number of deployment phases or rings, dates, and device upgrade strategy)<br>- [Optional] List of devices and tests to be performed in a PoC<br>- Roles and responsibilities or RACI tables for tasks<br>- List of devices requiring a servicing channel other than the default<br>- Hardware refresh plan<br>- Documented feedback process<br>- List of operational gaps |
+| - Define operational readiness criteria.<br>- Define deployment rings/phases.<br>- [Optional] Define a Proof of Concept (PoC).<br>- Identify and assign roles to personnel.<br>- Define servicing channel for devices.<br>- Hardware refresh plan.<br>- Define device update strategy.<br>- Design a feedback loop.<br>- Identify gaps. | A table of operational readiness criteria<br>- Deployment plan (including required number of deployment phases or rings, dates, and device upgrade strategy)<br>- [Optional] List of devices and tests to be performed in a PoC<br>- Roles and responsibilities or RACI tables for tasks<br>- List of devices requiring a servicing channel other than the default<br>- Hardware refresh plan<br>- Documented feedback process<br>- List of operational gaps |

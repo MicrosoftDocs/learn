@@ -2,7 +2,7 @@ Device readiness requires a few special considerations that are different for Wi
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define device readiness<br>- Evaluate device eligibility<br>- Evaluate device identity<br>- Identify gaps | - Device readiness criteria<br>- List of eligible and ineligible devices<br>- List of devices by device identity<br>- List of device-related gaps |
+| - Define device readiness.<br>- Evaluate device eligibility.<br>- Evaluate device identity.<br>- Identify gaps. | - Device readiness criteria<br>- List of eligible and ineligible devices<br>- List of devices by device identity<br>- List of device-related gaps |
 
 ## Define device readiness
 
@@ -42,7 +42,7 @@ You can use [Endpoint analytics “Work from anywhere”](/mem/analytics/work-fr
 
 Get there from **[Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Reports > Endpoint analytics > Work from anywhere**. Navigate to the **Windows** tab to see and download the list of devices that are capable and not capable of upgrading to Windows 11 based on the minimum system requirements.
 
-![A screenshot of the Endpoint analytics Work from anywhere landing page.](../media/endpoint-inline.png)(../media/endpoint-expanded.png)
+[![A screenshot of the Endpoint analytics Work from anywhere landing page.](../media/endpoint-inline.png)](../media/endpoint-expanded.png)
 
 ### Microsoft Intune
 
@@ -87,4 +87,4 @@ Which of the device-related tasks or deliverables do you still need help with as
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define device readiness<br>- Evaluate device eligibility<br>- Evaluate device identity<br>- Identify gaps | - Device readiness criteria<br>- List of eligible and ineligible devices<br>- List of devices by device identity<br>- List of device-related gaps |
+| - Define device readiness.<br>- Evaluate device eligibility.<br>- Evaluate device identity.<br>- Identify gaps. | - Device readiness criteria<br>- List of eligible and ineligible devices<br>- List of devices by device identity<br>- List of device-related gaps |
