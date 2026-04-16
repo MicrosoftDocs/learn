@@ -10,7 +10,7 @@ The first and most commonly used Git command is `git status`. It displays the st
 
 `git add` is the command you use to add file contents to the staging area.
 
-The technical term is *staging* these changes. You'll use `git add` to stage new files for their first commit and to stage later changes to files Git already knows about. All changes you stage with `git add` are stored in the *staging area* until you commit them.
+The technical term is *staging* these changes. You use `git add` to stage new files for their first commit and to stage later changes to files Git already knows about. All changes you stage with `git add` are stored in the *staging area* until you commit them.
 
 ### git commit
 

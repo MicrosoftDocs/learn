@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/14/2026
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: module-intro-to-product
-  ms.custom: team=nextgen
+  ms.topic: module
+  ms.service: git
 title: Introduction to Git
 summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.
 abstract:  |
