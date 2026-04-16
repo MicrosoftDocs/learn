@@ -1,11 +1,11 @@
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
-| Close gaps to achieve infrastructure readiness: | - Updated list of infrastructure and tools                      |
-| - Update necessary infrastructure and tooling   | - Validation reports for infrastructure and tooling             |
-| - Validate infrastructure and tooling           | - Remediation reports for infrastructure and tooling            |
-| - Compare pass or fail results against readiness criteria | - Procedural documentation of testing, remediation, and results                                                                 |
-| - Remediate infrastructure and tooling          |                                                                  |
-| - Sign off and update procedural documentation  |  |
+| **Close gaps to achieve infrastructure readiness:** | - Updated list of infrastructure and tools                      |
+| - Update necessary infrastructure and tooling.   | - Validation reports for infrastructure and tooling             |
+| - Validate infrastructure and tooling.           | - Remediation reports for infrastructure and tooling            |
+| - Compare pass or fail results against readiness criteria. | - Procedural documentation of testing, remediation, and results                                                                 |
+| - Remediate infrastructure and tooling.          |                                                                  |
+| - Sign off and update procedural documentation.  |  |
 
 ## Update necessary infrastructure and tooling
 
@@ -75,8 +75,8 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve infrastructure readiness:** | - Updated list of infrastructure and tools                                                                      |
-| - Update necessary infrastructure and tooling   | - Validation reports for infrastructure and tooling                  |
-| - Validate infrastructure and tooling           |  - Remediation reports for infrastructure and tooling             |
-| - Compare pass or fail results against readiness criteria | - Procedural documentation of testing, remediation, and results          |
-| - Remediate infrastructure and tooling          |  |
-| - Sign off and update procedural documentation  |                                                                  |
+| - Update necessary infrastructure and tooling.   | - Validation reports for infrastructure and tooling                  |
+| - Validate infrastructure and tooling.           |  - Remediation reports for infrastructure and tooling             |
+| - Compare pass or fail results against readiness criteria. | - Procedural documentation of testing, remediation, and results          |
+| - Remediate infrastructure and tooling.          |  |
+| - Sign off and update procedural documentation.  |                                                                  |

@@ -3,18 +3,18 @@ Let’s prepare and validate your applications for use with Windows 11. A few re
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve app readiness:**            |                                                                  |
-| - Run app readiness reports                     | - List of app compatibility issues                              |
-| - Modernize and update apps                     | - Refreshed app inventory with replaced or updated apps         |
-| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment | - [Optional] List of apps for PoC                                |
-| - Select critical and important applications for regression and pilot testing in a production environment | - List of apps for regression and pilot testing                 |
-| - Remediate failed apps                         | - A record of all remediated apps                                |
-| - Sign off and update procedural documentation  | - Report results<br>- Procedural documentation of testing, remediation, and results |
+| - Run app readiness reports.                     | - List of app compatibility issues                              |
+| - Modernize and update apps.                     | - Refreshed app inventory with replaced or updated apps         |
+| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment. | - [Optional] List of apps for PoC                                |
+| - Select critical and important applications for regression and pilot testing in a production environment. | - List of apps for regression and pilot testing                 |
+| - Remediate failed apps.                         | - A record of all remediated apps                                |
+| - Sign off and update procedural documentation.  | - Report results<br>- Procedural documentation of testing, remediation, and results |
 
 ## Run app readiness reports
 
-Use Windows update compatibility reports to improve your organization’s application readiness. These include Windows feature update device readiness report and Windows feature update compatibility risks report. Take advantage of these reports to reduce the time and effort it takes to validate applications in your environment. These are Microsoft Intune cloud-based reports. They can provide information on device readiness for a Windows feature update, as well as the compatibility risks likely to have the most impact in your organization.
+Use Windows update compatibility reports to improve your organization’s application readiness. These include Windows feature update device readiness report and Windows feature update compatibility risks report. Take advantage of these reports to reduce the time and effort it takes to validate applications in your environment. These are Microsoft Intune cloud-based reports. They can provide information on device readiness for a Windows feature update, and the compatibility risks likely to have the greatest effect in your organization.
 
-In the Plan module you may have already used these reports to identify which devices were eligible to receive the Windows 11 update. In this phase you can use the same reports to identify applications that may require remediation.  
+In the Plan module you might have already used these reports to identify which devices were eligible to receive the Windows 11 update. In this phase you can use the same reports to identify applications that might require remediation.  
 
 At a high level, to get started with Windows update readiness reports, you’ll need to:
 
@@ -52,7 +52,7 @@ In the Plan phase, you created an inventory of your applications. Using the comp
 
 ## Modernize and update apps
 
-Now that you have information on app compatibility, review your app inventory and identify any apps that you want or need to update. For in-house developed apps, this might require some development resources. For third-party apps, you might have to obtain a later version from your vendors. In some cases, you might take this opportunity to replace an app with a different one specifically designed for a cloud-native environment.
+Now that you have information on app compatibility, review your app inventory and identify any apps that you want or need to update. For in-house developed apps, this might require some development resources. For third-party apps, you might have to obtain a later version from your vendors. In some cases, you might take this opportunity to replace an app with a different one designed for a cloud-native environment.
 
 > [!TIP]
 > For apps that have dependencies on certain back-end infrastructure, an updated app would require updated infrastructure to support it. For example, an update to an app that queries a database might require an update to a server hosting that database.
@@ -78,19 +78,19 @@ Follow these general testing guidelines to assess app functionality on Windows 1
 1. If you haven’t already, install the application, accepting all defaults.
 2. Verify that product services are started.
 3. Update the application, including both program and definition updates.
-4. Test application core functionality (e.g. opening and exiting, window maximization, screen snapping, and taskbar pinning).
-5. Test application extended features, such as system tray context menu options or pop-up blockers. Please note that these are example features a product may contain, not a list of features you should include.
+4. Test application core functionality (for example, opening and exiting, window maximization, screen snapping, and taskbar pinning).
+5. Test application extended features, such as system tray context menu options or pop-up blockers. Note that these are example features a product might contain, not a list of features you should include.
 
 Check out additional [scenario testing instructions](/windows/compatibility/windows-11/testing-guidelines#windows-11-feature-testing) if needed.
 
 > [!NOTE]
 > ***Recommended deliverable***
 >
-> Document testing success results as well as any troubleshooting for the selected apps. Check: Do you need to get stakeholder approvals?
+> Document testing success results and any troubleshooting for the selected apps. Check: Do you need to get stakeholder approvals?
 
 ## Select critical and important applications for regression and pilot testing in a production environment
 
-Regardless of whether you tested apps in a Proof of Concept lab, you will possibly want to perform further tests in a production environment. Collaborate with people identified in your RACI chart to decide which apps must be tested first (if any). Use this information to select devices or users to include in the early deployment phases for Windows 11.
+Regardless of whether you tested apps in a Proof of Concept lab, you'll possibly want to perform further tests in a production environment. Collaborate with people identified in your RACI chart to decide which apps must be tested first (if any). Use this information to select devices or users to include in the early deployment phases for Windows 11.
 
 > [!TIP]
 > Most of your apps are already ready for Windows 11 deployment thanks to the 99.7% app compatibility between Windows 11 and Windows 10. Consider how much time and resources you actually should spend on testing applications. Concentrate on business-critical apps or those that are required to satisfy regulatory compliance.
@@ -104,7 +104,7 @@ Regardless of whether you tested apps in a Proof of Concept lab, you will possib
 
 During any phase of testing, if you run into compatibility issues that you’re unable to fix or want to ensure that your organization's applications are compatible from day one, App Assure can help.
 
-With enrollment in the [App Assure](/windows/compatibility/app-assure) service, Microsoft will help you remedy any application issues with Windows 11 at no additional cost. It’s included with your purchased plan for Microsoft Entra, Microsoft Intune, Microsoft 365 Apps, and a wide variety of other [eligible plans](/microsoft-365/fasttrack/eligibility).
+With enrollment in the [App Assure](/windows/compatibility/app-assure) service, Microsoft will help you remedy any application issues with Windows 11 at no extra cost. It’s included with your purchased plan for Microsoft Entra, Microsoft Intune, Microsoft 365 Apps, and a wide variety of other [eligible plans](/microsoft-365/fasttrack/eligibility).
 
 Visit the [App Assure page](https://fasttrack.microsoft.com/dl/daa) and sign in to submit your request for assistance from a dedicated App Assure Manager. If you experience any issues while submitting your request, contact ACHELP@microsoft.com and our team members will reach out to you.
 
@@ -122,9 +122,9 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve app readiness:**            |                                                                  |
-| - Run app readiness reports                     | - List of app compatibility issues                              |
-| - Modernize and update apps                     | - Refreshed app inventory with replaced or updated apps         |
-| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment | - [Optional] List of apps for PoC                                |
-| - Select critical and important applications for regression and pilot testing in a production environment | - List of apps for regression and pilot testing                 |
-| - Remediate failed apps                         | - A record of all remediated apps                                |
-| - Sign off and update procedural documentation  | - Report results<br>- Procedural documentation of testing, remediation, and results |
+| - Run app readiness reports.                     | - List of app compatibility issues                              |
+| - Modernize and update apps.                     | - Refreshed app inventory with replaced or updated apps         |
+| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment. | - [Optional] List of apps for PoC                                |
+| - Select critical and important applications for regression and pilot testing in a production environment. | - List of apps for regression and pilot testing                 |
+| - Remediate failed apps.                         | - A record of all remediated apps                                |
+| - Sign off and update procedural documentation.  | - Report results<br>- Procedural documentation of testing, remediation, and results |

@@ -3,11 +3,11 @@ Don't overlook the importance of user readiness to deliver an effective, enterpr
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve user readiness:**           |                                                                  |
-| - Select test users                             | - List of users and their devices for pilot phase               |
-| - Create a communications schedule to prepare different groups for changes | - Comms calendar                                                 |
-| - Draft emails to promote usage and offer support | - Set of message drafts                                          |
-| - Update help desk manuals                     | - Updated help desk manual                                      |
-| - Sign off and update procedural documentation | - Procedural documentation of testing, remediation, and results |
+| - Select test users.                             | - List of users and their devices for pilot phase               |
+| - Create a communications schedule to prepare different groups for changes. | - Comms calendar                                                 |
+| - Draft emails to promote usage and offer support. | - Set of message drafts                                          |
+| - Update help desk manuals.                     | - Updated help desk manual                                      |
+| - Sign off and update procedural documentation. | - Procedural documentation of testing, remediation, and results |
 
 ## Select test users
 
@@ -16,7 +16,7 @@ Select a few users from each business unit to test your pilot deployment of Wind
 - **Location:** Do you have users in different physical locations? Can the users be supported and can they provide feedback from the region they're located in?
 - **Application knowledge:** Do the users have the right knowledge of how the business-critical or very important applications work?
 - **Technical ability:** Do the users have the right level of technical competence to be able to test scenarios and provide useful feedback?
-- **Suitability:** Do the users accept that there could be issues during the testing which could impact their productivity? Can they be relied on to provide useful feedback?
+- **Suitability:** Do the users accept that there could be issues during the testing that could affect their productivity? Can they be relied on to provide useful feedback?
 
 Users for Pilot deployment could be volunteers who like to try out new features, frontline support members, and others. At the same time, avoid using core users like department heads, project managers, and others. Consult with operations, application owners, or developers to help you identify the most appropriate pilot users based on specific features or functionalities that need to be validated.
 
@@ -67,8 +67,8 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve user readiness:**           |                                                                  |
-| - Select test users                             | - List of users and their devices for pilot phase               |
-| - Create a communications schedule to prepare different groups for changes | - Comms calendar                                                 |
-| - Draft emails to promote usage and offer support | - Set of message drafts                                         |
-| - Update help desk manuals                     | - Updated help desk manual                                      |
-| - Sign off and update procedural documentation | - Procedural documentation of testing, remediation, and results |
+| - Select test users.                             | - List of users and their devices for pilot phase               |
+| - Create a communications schedule to prepare different groups for changes. | - Comms calendar                                                 |
+| - Draft emails to promote usage and offer support. | - Set of message drafts                                         |
+| - Update help desk manuals.                     | - Updated help desk manual                                      |
+| - Sign off and update procedural documentation. | - Procedural documentation of testing, remediation, and results |

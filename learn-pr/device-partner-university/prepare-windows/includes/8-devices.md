@@ -1,17 +1,17 @@
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve device readiness:**         |                                                                  |
-| - Run device driver readiness report            | - List of device driver incompatibilities                        |
-| - Perform device readiness remediation          | - All devices ready to upgrade to Windows 11                     |
-| - Remediate device identity                      | - All devices provided with a device identity                    |
-| - [Optional] Select and configure test devices  | - [Optional] List of testing failures                             |
-| - Sign off and update procedural documentation  | - Procedural documentation of testing, remediation, and results  |
+| - Run device driver readiness report.            | - List of device driver incompatibilities                        |
+| - Perform device readiness remediation.          | - All devices ready to upgrade to Windows 11                     |
+| - Remediate device identity.                      | - All devices provided with a device identity                    |
+| - [Optional] Select and configure test devices.  | - [Optional] List of testing failures                             |
+| - Sign off and update procedural documentation.  | - Procedural documentation of testing, remediation, and results  |
 
 ## Run device driver readiness report
 
-Use Windows update compatibility reports to improve your organization’s device driver readiness.  Take advantage of these reports to reduce the time and effort it takes to validate drivers in your environment. These are Microsoft Intune cloud-based reports. They can provide information on device readiness for a Windows feature update, as well as the compatibility risks likely to have the most impact in your organization.
+Use Windows update compatibility reports to improve your organization’s device driver readiness. Take advantage of these reports to reduce the time and effort it takes to validate drivers in your environment. These are Microsoft Intune cloud-based reports. They can provide information on device readiness for a Windows feature update, and the compatibility risks likely to have the greatest effect in your organization.
 
-In the Plan module you may have already used these reports to identify which devices were eligible to receive the Windows 11 update. In this phase you can use the same reports to identify device drivers that may require remediation.  
+In the Plan module, you might have already used these reports to identify which devices were eligible to receive the Windows 11 update. In this phase you can use the same reports to identify device drivers that might require remediation.  
 
 At a high level, to get started with Windows update readiness reports, you’ll need to:
 
@@ -32,9 +32,9 @@ At a high level, to get started with Windows update readiness reports, you’ll 
 2. In the admin center, go to Reports > Windows updates > select the Reports tab > select Windows Feature Update Device Readiness Report.
 3. Configure settings:
 
-   - Select Select Target OS and choose the version of Windows you plan to deploy.
+   - Choose 'Select Target OS' and the version of Windows you plan to deploy.
    - Select other optional settings to refine the report.
-   - Select Generate report. This process can take several minutes. You're notified when report generation is complete.
+   - Select 'Generate report'. This process can take several minutes. You're notified when report generation is complete.
 
 Review the report for any device driver incompatibilities and document them.
 
@@ -63,7 +63,7 @@ Replace devices that are incapable of being upgraded as part of your normal PC r
 
 > [!TIP]
 >
-> If you identified device driver incompatibilities, it is usually more successful to update them before attempting the Windows 11 update.
+> If you identified device driver incompatibilities, it's usually more successful to update them before attempting the Windows 11 update.
 
 > [!NOTE]
 > ***Recommended deliverable***
@@ -72,7 +72,7 @@ Replace devices that are incapable of being upgraded as part of your normal PC r
 
 ## Remediate device identity
 
-In the Plan module, you identified devices that didn’t have a device identity. Use this step to enroll these devices into Entra ID or other identity provider that you’ll be using.
+In the Plan module, you identified devices that didn’t have a device identity. Use this step to enroll these devices into Microsoft Entra ID or other identity provider that you’ll be using.
 
 > [!NOTE]
 > ***Recommended deliverable***
@@ -105,8 +105,8 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve device readiness:**         |                                                                  |
-| - Run device driver readiness report            | - List of device driver incompatibilities                        |
-| - Perform device readiness remediation          | - All devices ready to upgrade to Windows 11                     |
-| - Remediate device identity                     | - All devices provided with a device identity                    |
-| - [Optional] Select and configure test devices  | - [Optional] List of testing failures                            |
-| - Sign off and update procedural documentation  | - Procedural documentation of testing, remediation, and results  |
+| - Run device driver readiness report.            | - List of device driver incompatibilities                        |
+| - Perform device readiness remediation.          | - All devices ready to upgrade to Windows 11                     |
+| - Remediate device identity.                     | - All devices provided with a device identity                    |
+| - [Optional] Select and configure test devices.  | - [Optional] List of testing failures                            |
+| - Sign off and update procedural documentation.  | - Procedural documentation of testing, remediation, and results  |

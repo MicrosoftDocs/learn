@@ -13,7 +13,7 @@ By the end of this module, you’ll be able to:
 - Describe how deployment phases and rings are used to safely begin Windows 11 deployment
 
 > [!NOTE]
-> The ROI of adopting Windows 11 is projected at 394% over three years, according to a 2023 Forrester study [1]. Deployment is about 25% faster using the same tools and processes you use today, and Windows 11 offers 99.7% compatibility with Windows 10 apps [2].
+> The return on investment (ROI) of adopting Windows 11 is projected at 394% over three years, according to a 2023 Forrester study [1]. Deployment is about 25% faster using the same tools and processes you use today, and Windows 11 offers 99.7% compatibility with Windows 10 apps [2].
 
 ## Disclaimers
 
