@@ -3,12 +3,11 @@ uid: learn.student-evangelism.introduction-to-git.2-exercise-configure-git
 title: Exercise - Try out Git
 metadata:
   title: Exercise - Try out Git
-  description: Try out Git and configure it with your name and email.
-  ms.date: 03/05/2021
+  description: Try out Git by configuring your identity, making commits, exploring history, and working with branches.
+  ms.date: 04/15/2026
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
-  ms.custom: team=nextgen
-durationInMinutes: 45
+durationInMinutes: 60
 content: |
   [!include[](includes/2-exercise-configure-git.md)]
