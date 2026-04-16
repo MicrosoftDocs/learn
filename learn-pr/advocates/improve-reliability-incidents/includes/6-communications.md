@@ -8,11 +8,11 @@ Timely and clear sharing information is an essential element of effectively resp
 
 ## Prioritize for clear communication
 
-Earlier in this module, we mentioned that elite/high-performing organizations take a proactive rather than reactive approach. Shifting your posture from reacting to effectively responding to incidents comes as a byproduct of prioritizing and enabling good, clear, accurate communication.
+Earlier in this module, we mentioned that teams with strong incident response practices take a proactive rather than reactive approach. Shifting your posture from reacting to effectively responding to incidents comes as a byproduct of prioritizing and enabling good, clear, accurate communication.
 
 Keys to prioritizing for clear communication include:
 
-- Make sure you are sharing information about what is going on at each step of the way.
+- Make sure you're sharing information about what is going on at each step of the way.
 - Document the information; put it in writing so that it's less likely to be misunderstood or forgotten.
 - Place the information in a centralized location where it will be accessible to everyone who needs it.
 - Use tools to increase the effectiveness of communications.
@@ -21,7 +21,7 @@ Even though we didn't call it out at the time, these are all behaviors we demons
 
 ## Communication tools: ChatOps
 
-Before you can talk about communication tools, you need to learn about ChatOps, which is not a specific tool, but a conversation-driven collaboration model. It's popular with developers for bringing together people, tools, processes and automation. ChatOps gives you a new and better way for teams to work, leveraging group chat rather than relying on older technologies such as email to collaborate.
+Before you can talk about communication tools, you need to learn about ChatOps, which isn't a specific tool, but a conversation-driven collaboration model. It's popular with developers for bringing together people, tools, processes and automation. ChatOps gives you a new and better way for teams to work, leveraging group chat rather than relying on older technologies such as email to collaborate.
 
 In its advanced form, ChatOps can use customized bots and artificial intelligence to automate work. In the context of incident response, you can use ChatOps to bring group-chat tools into the conversation. Working this way can strongly incentivize engineers to get together in group chat and
 collaborate on issues and incidents, as well as normal engineering efforts.
@@ -34,10 +34,10 @@ Learning is a byproduct of sharing more about what's happening within engineerin
 
 ### Use Microsoft Teams in your ChatOps solution
 
-You already learned how Microsoft Teams can be an important part of your communications toolkit during an incident. You can create a conversation bridge with channel devoted to the incident and even use Logic Apps to automate posting the incident details directly into the channel.
+You already learned how Microsoft Teams can be an important part of your communications toolkit during an incident. You can create a conversation bridge with a channel devoted to the incident and even use Logic Apps to automate posting the incident details directly into the channel.
 
 Because Microsoft Teams is a centralized place where we have many conversations about our engineering efforts, it's a good place to start in your ChatOps solution for providing status updates and additional context.
 
-For example, you can use a webhook from Teams to update a status page. You can configure Teams to listen for a certain command in a chat, and if received, send out a request to another application. That simple application could be an Azure Function that updates a static HTML page stored in Azure Blob Storage with information about the incident in progress. The end result is that simple command in chat provides an update to additional stakeholders not in the chat. This one simple step saves time that might otherwise be spent updating those not involved in the response.
+For example, you can use a Power Automate workflow triggered from a Teams command to update a status page. The workflow listens for a certain command in a chat and, when received, calls an Azure Function or API that updates a status page hosted on a service such as Azure Static Web Apps. The end result is that a simple command in chat provides a status update visible to stakeholders who aren't part of the incident channel. This one simple step saves time that might otherwise be spent updating those not involved in the response.
 
 So far, we've largely spent our time looking at the phases before remediation. Let's now shift our focus to ways to improve that phase.
