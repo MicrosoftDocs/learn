@@ -22,4 +22,4 @@ durationInMinutes: 2
 
 content: | 
 
-  [!include[](includes/3-plan.md)] 
+  [!include[](includes/2-plan.md)] 

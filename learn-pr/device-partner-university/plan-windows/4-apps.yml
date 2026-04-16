@@ -22,4 +22,4 @@ durationInMinutes: 2
 
 content: | 
 
-  [!include[](includes/5-apps.md)] 
+  [!include[](includes/4-apps.md)] 

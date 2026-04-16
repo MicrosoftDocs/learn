@@ -22,4 +22,4 @@ durationInMinutes: 2
 
 content: | 
 
-  [!include[](includes/9-users.md)] 
+  [!include[](includes/8-users.md)] 

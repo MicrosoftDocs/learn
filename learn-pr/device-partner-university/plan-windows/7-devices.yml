@@ -22,4 +22,4 @@ durationInMinutes: 2
 
 content: | 
 
-  [!include[](includes/8-devices.md)] 
+  [!include[](includes/7-devices.md)] 
