@@ -1,0 +1,18 @@
+In this module, you learned how to deploy Windows 11 across your organization, building on the strategic work completed in the Plan and Prepare phases. We guided you through the Deploy phase using a phased or ring-based approach, covering six key areas of your environment: Operations, Applications, Infrastructure, Configurations, Devices, and Users.
+
+By completing the tasks and deliverables outlined in this module, you should now be able to:
+
+- Implement and manage Windows 11 deployments in pilot and broad phases.
+- Apply best practices for monitoring and managing deployment across all areas of your environment.
+- Create and maintain deliverables that support collaboration, tracking, and reporting throughout the deployment process.
+
+With this knowledge, you're ready to execute your deployment confidently. Use the checklist provided to track progress, document procedures, and capture outcomes and key takeaways. Doing so will help ensure a smooth rollout now and make future deployments even easier.
+
+| Objective | Tasks | Deliverables |
+|----------|------|--------------|
+| **Ops: Deploy Windows 11 across your organization.** | **Assess deployment success and capture learnings:**<br><br>- Implement RACI roles.<br>- [Optional] Review results of Proof of Concept.<br>- Commence Pilot deployment.<br>- Commence broad deployment.<br>- Sign off and update procedural documentation. | • Updated stakeholder approval tracking system<br>• Completed Pilot deployment and test results<br>• Documented stakeholder approvals to advance through deployment rings<br>• Procedural documentation of operations completeness |
+| **Apps: Ensure app functionality post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Deploy and test critical and important applications.<br>- Deploy and test other applications.<br>- Remediate applications.<br>- Review application handling criteria.<br>- Sign off and update procedural documentation. | • List of pass/fail test results and remediation steps identified<br>• Record of all remediated apps<br>• Record of apps that can't be remediated<br>• Documented go/no-go decisions for each deployment phase |
+| **Infra: Ensure infrastructure functionality during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Monitor infrastructure.<br>- Remediate infrastructure and tooling.<br>- Sign off and update procedural documentation. | • Procedural documentation of observations and remediations |
+| **Config: Ensure that settings are functioning appropriately during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Apply configurations.<br>- Monitor configurations.<br>- Remediate configurations.<br>- Sign off and update procedural documentation. | • Configurations completed and in place<br>• Procedural documentation of testing, remediation, and results |
+| **Devices: Ensure that devices function appropriately during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Monitor update deployment status.<br>- Sign off and update procedural documentation. | • Procedural documentation of testing, remediation, and results |
+| **Users: Ensure that users are productive and supported during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Monitor update deployment status.<br>- Sign off and update procedural documentation. | • Procedural documentation of testing, remediation, and results |

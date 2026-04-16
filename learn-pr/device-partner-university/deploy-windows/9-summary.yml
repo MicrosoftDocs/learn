@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.deploy-windows.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Deploy updates for Windows client and Microsoft 365 apps" module.
+  ms.date: 04/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
