@@ -49,7 +49,7 @@ Throughout this module, you applied security best practices from:
 - [Azure SQL security documentation](/azure/azure-sql/database/security-overview)
 - [Azure Storage security documentation](/azure/storage/common/storage-security-guide)
 - [MCSB v2 Data Protection controls](/security/benchmark/azure/mcsb-v2-data-protection)
-- [MCSB v2 Overview—security control structure](/security/benchmark/azure/mcsb-v2-overview)
+- [MCSB v2 Overview—security control structure](/security/benchmark/azure/overview)
 - [Defender for Cloud—Risk prioritization](/azure/defender-for-cloud/risk-prioritization)
 - [Defender for Cloud—Security recommendations and risk levels](/azure/defender-for-cloud/security-recommendations#risk-levels-and-calculation)
 - [Defender for Cloud—Data security posture management](/azure/defender-for-cloud/concept-data-security-posture)

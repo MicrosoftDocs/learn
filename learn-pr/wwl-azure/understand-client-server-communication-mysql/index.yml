@@ -5,7 +5,7 @@ metadata:
   description: "Learn about connection handling in MySQL, back up and restore, and the client interrace options available for MySQL."
   ms.date: 11/08/2022
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: GraemeMalcolm
   ms.topic: module-standard-task-based
   ms.service: azure-sql
 title: Understand client-server communication in MySQL
@@ -35,4 +35,4 @@ units:
 - learn.wwl.understand-client-server-communication-mysql.knowledge-check
 - learn.wwl.understand-client-server-communication-mysql.summary
 badge:
-  uid: learn.wwl.understand-client-server-communication-mysql.badge
+  uid: learn.wwl.understand-client-server-communication-mysql.badge

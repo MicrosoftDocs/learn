@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-regulatory-compliance
+metadata:
+  title: Evaluate Regulatory Compliance in Defender for Cloud
+  description: "Learn to use Microsoft Defender for Cloud to assess, investigate, and report on compliance posture against security frameworks including the Microsoft Cloud Security Benchmark, regulatory standards, and custom standards."
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Evaluate regulatory compliance in Defender for Cloud
+summary: In this module, you use Microsoft Defender for Cloud to assess your organization's compliance posture against security frameworks. You explore the regulatory compliance dashboard, investigate control gaps, assign regulatory standards, and generate audit-ready reports that communicate compliance status to stakeholders.
+abstract: |
+  After completing this module, you will be able to:
+    - Explain how compliance standards, controls, and assessments work in Defender for Cloud — including the role of the Microsoft Cloud Security Benchmark
+    - Navigate the regulatory compliance dashboard to identify and investigate failing compliance controls
+    - Assign regulatory compliance standards to Azure subscriptions and manage compliance scope in the Azure portal
+    - Generate compliance reports and communicate posture using audit downloads, compliance workbooks, and Microsoft Purview Compliance Manager
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a basic level
+  - Understanding of Azure resource types and Azure role-based access control (RBAC)
+  - Knowledge of cloud security concepts including misconfigurations, vulnerabilities, and security recommendations
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+  - compliance
+units:
+- learn.wwl.evaluate-regulatory-compliance.introduction
+- learn.wwl.evaluate-regulatory-compliance.understand-compliance-standards-controls
+- learn.wwl.evaluate-regulatory-compliance.navigate-compliance-dashboard-investigate-gaps
+- learn.wwl.evaluate-regulatory-compliance.assign-standards-communicate-compliance-posture
+- learn.wwl.evaluate-regulatory-compliance.knowledge-check
+- learn.wwl.evaluate-regulatory-compliance.summary
+badge:
+  uid: learn.wwl.evaluate-regulatory-compliance.badge

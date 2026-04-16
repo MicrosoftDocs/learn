@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-data-processing-ai-models-ground
+title: "Design data processing workflows for grounded AI"
+metadata:
+  title: "Design Data Processing Workflows for Grounded AI"
+  description: "Learn to design data workflows for grounded AI, balancing performance, cost, and governance while improving retrieval relevance and trust."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/13-design-data-processing-ai-models-ground.md)]

@@ -68,6 +68,6 @@ For more information, see [Modify a keyword dictionary](/purview/sit-modify-keyw
 
 ## Keyword dictionary as a custom sensitive information type
 
-Keyword dictionaries can be used in rule package definitions for a custom sensitive information type. They can be selected as sensitive information types when creating policies in the Microsoft Purview compliance portal or with the Security & Compliance PowerShell module. When using the PowerShell module, the keyword dictionary must be specified with its ID.
+Keyword dictionaries can be used in rule package definitions for a custom sensitive information type. They can be selected as sensitive information types when creating policies in the Microsoft Purview portal or with the Security & Compliance PowerShell module. When using the PowerShell module, the keyword dictionary must be specified with its ID.
 
 For more information, see [Using keyword dictionaries in custom sensitive information types and DLP policies](/purview/sit-create-a-keyword-dictionary?azure-portal=true#using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies).

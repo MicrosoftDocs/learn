@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-hybrid-multicloud-environments-defender.verify-multicloud-coverage
+metadata:
+  title: Verify multicloud coverage and validate protection
+  description: Verify multicloud connector health, confirm CSPM recommendations and compliance standards are active, and validate CWPP plan activation across on-premises, AWS, and GCP environments.
+  ms.date: 04/01/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Verify multicloud coverage and validate protection
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-verify-multicloud-coverage.md)]

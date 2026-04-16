@@ -4,7 +4,7 @@ Without these automated tools, identifying sensitive information manually would 
 
 Now that you've completed this module, you should be able to:
 
-- Recognize the difference between built-in and custom sensitivity labels
+- Recognize the difference between built-in and custom sensitive information types
 - Configure sensitive information types with exact data match-based classification
 - Implement document fingerprinting
 - Create custom keyword dictionaries
@@ -17,3 +17,5 @@ Use these resources to discover more.
 - [Create custom sensitive information types](/purview/sit-create-a-custom-sensitive-information-type?azure-portal=true)
 - [Get started with exact data match based sensitive information types](/purview/sit-get-started-exact-data-match-based-sits-overview?azure-portal=true)
 - [Create a keyword dictionary](/purview/sit-create-a-keyword-dictionary?azure-portal=true)
+- [All credentials sensitive information types](/purview/sit-defn-all-creds?azure-portal=true)
+- [Test sensitive information types](/purview/sit-create-a-custom-sensitive-information-type?azure-portal=true)

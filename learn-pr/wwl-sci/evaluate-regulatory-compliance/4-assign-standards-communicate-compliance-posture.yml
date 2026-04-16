@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-regulatory-compliance.assign-standards-communicate-compliance-posture
+metadata:
+  title: Assign standards and communicate compliance posture
+  description: Learn to assign regulatory compliance standards in the Azure portal, generate audit reports and compliance workbooks, integrate with Microsoft Purview Compliance Manager, and create custom standards.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Assign standards and communicate compliance posture
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-assign-standards-communicate-compliance-posture.md)]

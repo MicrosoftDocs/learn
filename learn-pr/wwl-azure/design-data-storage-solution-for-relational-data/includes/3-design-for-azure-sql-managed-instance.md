@@ -24,6 +24,11 @@ Let's explore a business scenario for Azure SQL Managed Instance. Komatsu is a m
 
 Consider how Azure SQL Managed Instance can be included in your relational data storage plan for Tailwind Traders:
 
+- **Consider the free offer for evaluation**: Azure SQL Managed Instance offers a free instance for 12 months after creation. The free offer allows teams to evaluate lift-and-shift migrations. You can test CLR and Service Broker workloads. It's possible to validate compatibility. There's no initial cost commitment.
+
 - **Consider instance-scoped features**. Use instance-scoped features of Azure SQL Managed Instance like Service Broker, CLR, SQL Server Agent, and Linked servers. Migrate your relational and structured data to Azure without rearchitecting your applications. 
 
 - **Consider instance scalability**. Add scalability for your instance by enabling vCores mode. You can define the maximum CPU cores and storage for your instances, so all databases in the instance share the same resources.
+
+- **Consider upgrading to Next-gen General Purpose for more capacity**: This tier supports up to 500 databases per instance, 32 TB of storage, and lets you scale resources independently. This capacity is provided at the same cost as General Purpose.
+

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-regulatory-compliance.understand-compliance-standards-controls
+metadata:
+  title: Understand compliance standards and controls in Defender for Cloud
+  description: Learn how compliance standards, controls, and assessments work in Defender for Cloud, including the Microsoft Cloud Security Benchmark, standard types, assessment states, and required permissions.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Understand compliance standards and controls in Defender for Cloud
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-compliance-standards-controls.md)]

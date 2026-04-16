@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-support-portal.verify-surface-support-portal-access-requirements
+title: Verify Surface Support Portal access requirements
+metadata:
+  title: Verify Surface Support Portal Access Requirements
+  description: This content is part of the "Getting started with Surface Support Portal" module.
+  ms.date: 04/13/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-verify-surface-support-portal-access-requirements.md)]

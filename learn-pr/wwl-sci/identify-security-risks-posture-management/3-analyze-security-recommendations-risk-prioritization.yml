@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-security-risks-posture-management.analyze-security-recommendations-risk-prioritization
+metadata:
+  title: Analyze security recommendations with risk prioritization
+  description: Use the risk-based prioritization model in Microsoft Defender for Cloud to triage security recommendations across cloud and AI workloads, identify AI-specific findings, and investigate individual recommendations.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Analyze security recommendations with risk prioritization
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-analyze-security-recommendations-risk-prioritization.md)]

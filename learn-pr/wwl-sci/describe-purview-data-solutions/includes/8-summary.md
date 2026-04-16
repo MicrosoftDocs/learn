@@ -1,16 +1,16 @@
 
 In this module, you learned about Microsoft Purview data security solutions.
 
-Microsoft Purview helps organizations protect sensitive data across its entire lifecycle by integrating data classification, sensitivity labels, data loss prevention, and insider risk management. Adaptive protection ties these solutions together by dynamically adjusting data protection controls based on the risk level that Insider Risk Management assigns to each user. This integrated approach helps organizations balance data security with productivity while meeting regulatory requirements.
+Microsoft Purview helps organizations protect sensitive data across its entire lifecycle by integrating data classification, sensitivity labels, data loss prevention, and insider risk management. Adaptive protection ties these solutions together by dynamically adjusting data protection controls based on the risk level that Insider Risk Management assigns to each user. Data Security Posture Management extends this picture by providing unified visibility into data risks across Microsoft and non-Microsoft environments. And when an incident occurs, Data Security Investigations gives your security team AI-powered tools to investigate data breaches and insider leaks quickly, categorize impacted data by risk level, and take direct action to mitigate the damage.
 
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe the data classification capabilities of Microsoft Purview Information Protection, including sensitive information types, trainable classifiers, and the benefits of Content explorer and Activity explorer.
-- Describe sensitivity labels and sensitivity label policies in Microsoft Purview.
-- Describe how Microsoft Purview Data Loss Prevention helps organizations prevent the inappropriate sharing of sensitive data.
-- Describe how Microsoft Purview Insider Risk Management helps minimize internal risks.
-- Describe how adaptive protection in Microsoft Purview dynamically applies data protection controls based on insider risk levels.
+- Describe the data classification and sensitivity labeling capabilities of Microsoft Purview Information Protection.
+- Describe how Microsoft Purview Data Loss Prevention prevents the inappropriate sharing of sensitive data.
+- Describe how Microsoft Purview Insider Risk Management and adaptive protection help minimize internal risks.
+- Describe how Data Security Posture Management provides unified visibility into data risks.
+- Describe how Microsoft Purview Data Security Investigations helps organizations investigate data security incidents.
 
 ## Learn more
 
@@ -45,3 +45,7 @@ The following resources provide more information on the topics covered in this m
 
 - [Learn about Data Security Posture Management](/purview/data-security-posture-management-learn-about)
 - [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview)
+
+### Describe Microsoft Purview Data Security Investigations
+
+- [Learn about Data Security Investigations](/purview/data-security-investigations)

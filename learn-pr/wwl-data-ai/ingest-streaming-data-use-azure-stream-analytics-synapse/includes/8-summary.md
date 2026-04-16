@@ -1,4 +1,6 @@
 
-In this module, you explored multiple ways in which you can use Azure Stream Analytics to ingest real-time data into Azure Synapse Analytics.
+In this module, you learned how to use Azure Stream Analytics to process real-time streaming data and route the results to various output destinations.
 
-The ability to include real-time data ingestion in an analytics solution enables organizations to build reports and interactive data models that reflect the most up-to-date information available. Azure Synapse Analytics offers a wide range of analytical capabilities that you can use with both streaming and batch data to create highly scalable solutions for massive volumes of data. To learn more, see the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics) module on Microsoft Learn.
+Azure Stream Analytics is a fully managed, real-time analytics service that provides a SQL-based query language with built-in support for temporal window functions—including tumbling, hopping, sliding, session, and snapshot windows—enabling you to perform aggregations and filtering over continuous data streams. You can connect jobs to multiple input sources including Azure Event Hubs, Azure IoT Hub, and Apache Kafka, and route output to data lakes, relational databases, event hubs, and real-time dashboards.
+
+To learn more, see the [Azure Stream Analytics documentation](/azure/stream-analytics/).
