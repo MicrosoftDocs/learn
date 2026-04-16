@@ -7,7 +7,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
-  ms.service: git
+  ms.service: azure
 title: Introduction to Git
 summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.
 abstract:  |
