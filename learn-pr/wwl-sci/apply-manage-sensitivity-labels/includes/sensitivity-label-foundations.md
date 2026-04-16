@@ -1,68 +1,68 @@
-Applying sensitivity labels in Microsoft 365 is essential for securing sensitive information, enabling organizations to protect critical data like financial details and strategic plans. These labels ensure that only authorized individuals have access, maintaining high data security standards while allowing seamless collaboration.
+Most people think of sensitivity labels as something you apply to a document or an email. Labels also work at the container level, on:
 
-In our global consultancy firm, the marketing team is preparing to launch a new service that uses data analysis and AI to offer unique insights to our clients. This initiative involves handling sensitive information, including financial details and strategic plans. Sensitivity labels in Microsoft 365 are essential tools at your disposal to ensure this data remains secure.
+- Teams
+- SharePoint sites
+- Microsoft 365 Groups
+- Viva Engage communities
+- Loop workspaces
 
-As part of this effort, you're tasked with deploying sensitivity labels throughout our Microsoft 365 environment for the new service launch. This project requires teamwork from around the world, including remote workers. Your main goals are to keep client information safe and make sure teams can work together smoothly.
+Container labels protect the workspace itself: who can access it, whether external sharing is allowed, and what Conditional Access policies apply.
 
-Here you learn to:
+Understanding this distinction early matters, because container labels and document labels solve different problems. A container label on a SharePoint site might restrict external sharing for the entire site, but it doesn't encrypt the documents inside it. If a team stores financial models and competitive analysis on that site, the site label controls who can share _from_ the site. Each document still needs its own label to encrypt the content. The two layers complement each other, and most organizations need both.
 
-- **Identify the function of sensitivity labels**: Describe how sensitivity labels secure critical data in Microsoft 365 environments like Teams, Groups, and SharePoint Sites.
-- **Apply sensitivity labels for your organization**: Demonstrate the process to enable and implement sensitivity labels across Microsoft 365 services for data protection.
-- **Configure settings in the Microsoft Purview compliance portal**: Modify protection settings for groups and sites to enhance data security within your organization.
+## What container labels control and what they don't
 
-## Understand sensitivity labels in Microsoft 365
+When you apply a sensitivity label to a container like a team, a SharePoint site, or a Microsoft 365 Group, the label enforces settings at the workspace level:
 
-Sensitivity labels in Microsoft 365 provide a powerful way to manage data protection and compliance across various workloads. Organizations can categorize and protect sensitive information within Microsoft Teams, Microsoft 365 Groups, and SharePoint Sites by using these labels. This functionality enhances the security of data as it travels and is saved across the digital workspace, enabling a controlled and compliant collaboration environment. With sensitivity labels, businesses can find a balance between safeguarding sensitive information and promoting productivity and collaboration among their teams.
+- **Privacy**: whether the group or site is public or private
+- **External user access**: whether the group owner can add guests
+- **External sharing**: how broadly content from SharePoint sites can be shared outside the organization
+- **Conditional Access**: requirements for unmanaged devices
 
-When you use a sensitivity label for containers like Teams, Microsoft 365 Groups, and SharePoint sites, you apply defined security and compliance settings automatically. Keep in mind:
+What container labels don't do is equally important:
 
-- Sensitivity labels, once applied, enforce predefined settings on the container.
-- Site owners can change some settings that are usually handled by administrators by applying labels. Be careful with settings that you might not want site owners to change.
-- Settings for content markings and encryption based on labels aren’t automatically applied to documents in these containers. So that users can label their documents in SharePoint sites or team sites, make sure you enabled sensitivity labels for Office files in SharePoint and OneDrive.
-- Container labels don't support displaying other languages and display the original language only for the label name and description.
+- **No automatic content protection**: Applying a label to a SharePoint site doesn't encrypt or mark the documents inside it. Content markings like headers and footers, and encryption settings, only apply when a label is applied directly to a file or email. To enable users to label their documents in SharePoint sites and team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files?azure-portal=true).
+- **No multilanguage support for container labels**: Container labels display only in the original language used when the label was created. Label names and descriptions aren't translated for users in other locales.
+- **Site owner flexibility**: Site owners can change some settings that administrators normally manage. Be deliberate about which settings you expose. If you don't want site owners changing the privacy level, configure your label accordingly.
 
-## Implement sensitivity labels across Microsoft 365 workloads
+## Enable labels for containers
 
-Before you enable and configure sensitivity labels for containers, users can see and apply sensitivity labels in their apps. For example, from Word:
+Before labels appear on containers, two steps are required. Without these steps, the settings are visible in the Microsoft Purview portal but can't be configured.
 
-:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Screenshot showing a sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png":::
+1. **Enable sensitivity labels for Microsoft 365 Groups** by following the [Microsoft Entra documentation](/entra/identity/users/groups-assign-sensitivity-labels?azure-portal=true). This step turns on the feature at the directory level.
+1. **Synchronize labels to Microsoft Entra ID** by connecting to [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell?azure-portal=true) as an administrator and running the `Execute-AzureAdLabelSync` command. This ensures labels published in the Microsoft Purview portal are available for Groups, Teams, and sites.
 
-After you enable and configure sensitivity labels for containers, users can also see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
+After these steps, users can apply sensitivity labels when creating or editing containers. For example, when creating a team site from SharePoint:
 
 :::image type="content" source="../media/sensitivity-labels-new-team-site.png" alt-text="Screenshot showing a sensitivity label when creating a team site from SharePoint." lightbox="../media/sensitivity-labels-new-team-site.png":::
 
-After a sensitivity label is applied to a site, you must have the following role to change that label in SharePoint or Teams:
+In Office apps, users can already label documents and emails without these prerequisites:
 
-- For a group-connect site: Microsoft 365 group [Owners](/microsoft-365/admin/create-groups/office-365-groups?azure-portal=true)
-- For a site that isn't group-connected: SharePoint [site admin](/sharepoint/site-permissions?azure-portal=true#site-admins)
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Screenshot showing a sensitivity label displayed in the Word desktop app." lightbox="../media/sensitivity-label-word.png":::
 
-### Enable sensitivity labels for containers and synchronize labels
+## Who can change container labels
 
-To use Microsoft Purview's data protection and compliance capabilities for Microsoft Teams, Microsoft 365 Groups, and SharePoint sites, follow these steps to enable sensitivity labels for containers in your environment.:
+After a sensitivity label is applied to a site or team, only specific roles can change it:
 
-1. **Enable labels**: Follow the [Microsoft Entra documentation to enable sensitivity labels for Microsoft 365 Groups](/entra/identity/users/groups-assign-sensitivity-labels?azure-portal=true).
-1. **Synchronize labels**: Connect to [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell?azure-portal=true) as an administrator, and run the `Execute-AzureAdLabelSync` command to sync labels with Microsoft Entra ID.
+- For a group-connected site: Microsoft 365 Group [Owners](/microsoft-365/admin/create-groups/office-365-groups?azure-portal=true)
+- For a site that isn't group-connected: SharePoint [site admins](/sharepoint/site-permissions?azure-portal=true#site-admins)
 
-### Configure groups and site settings
+Teams shared channels automatically inherit the sensitivity label settings from their parent team. That inherited label can't be removed or replaced with a different label, which keeps the protection consistent across all channels in the team.
 
-After sensitivity labels are enabled for containers, you can then configure protection settings for groups and sites in the sensitivity labeling configuration. Until sensitivity labels are enabled for containers, the settings are visible but you can't configure them.
+## Configure protection settings for groups and sites
 
-1. Navigate to the Microsoft Purview compliance portal to create or edit a sensitivity label. Select **Groups & sites** for the label's scope:
+When you create or edit a sensitivity label in the Microsoft Purview portal with the **Groups & sites** scope, you configure what the label enforces across Teams, Groups, and SharePoint sites.
+
 :::image type="content" source="../media/groups-and-sites-scope-options-sensitivity-label.png" alt-text="Screenshot showing sensitivity label scope option for Groups & sites." lightbox="../media/groups-and-sites-scope-options-sensitivity-label.png":::
-1. On the **Define protection settings for groups and sites** page, choose the settings to configure:
-   - **Privacy and external user access settings** for privacy and external users access.
-   - **External sharing and Conditional Access settings** for controlling external sharing from SharePoint sites and using Conditional Access to protect labeled sites.
-   - **Private teams discoverability and shared channel controls** for managing how private teams and shared channels are discovered and accessed.
-   - If applicable, select a default label for channel meetings and chats.
-1. If **Privacy and external user access settings** was selected:
-   1. Set the **Privacy** setting for the group or site to **Public**, **Private**, or **None** for user-defined privacy settings. Specify **External user access** rules to control whether the group owner can add guests to the group.
-1. If **External sharing and Conditional Access settings** was selected, then:
-   1. Configure **Control external sharing from labeled SharePoint sites** by selecting appropriate external sharing options for SharePoint sites.
-   1. For Microsoft Entra Conditional Access, select settings to control access from unmanaged devices or choose an existing authentication context to enforce stricter access conditions based on your organization's Conditional Access policies.
-1. **If Private teams discoverability and shared channel controls** was selected:
-   1. Use the checkbox to allow or restrict users from discovering private teams that have the sensitivity label applied.
-   1. Configure shared channel controls to manage how teams can invite other teams to shared channels, with options like **Internal only**, **Same label only**, and **Private team only**.
 
-Now that we've covered the basics of using sensitivity labels in our Microsoft 365 tools, it's clear these steps are just the beginning of ensuring our firm's information is well protected and compliant.
+The configuration page presents several setting groups. Each one represents a different aspect of container protection, and you should choose them based on what the label is meant to enforce:
 
-Next, we explore how to effectively manage sensitivity labels in Office applications, ensuring documents and emails are protected.
+**Privacy and external user access**: Controls whether the group or site is public, private, or user-defined, and whether group owners can add guests. Choose carefully here: a **Public** setting means anyone in the organization can join. For most sensitive projects, **Private** is the safer default.
+
+**External sharing and Conditional Access**: Determines how broadly content from labeled SharePoint sites can be shared externally and whether access requires compliant or managed devices. This is where your label intersects with your organization's Conditional Access policies. If you have an authentication context defined for high-sensitivity scenarios, you can reference it here to enforce stricter access conditions.
+
+**Private teams discoverability and shared channel controls**: Governs whether private teams with this label are discoverable by nonmembers and how shared channels can invite other teams. Options like **Internal only**, **Same label only**, and **Private team only** give you fine-grained control over cross-team collaboration.
+
+**Default label for channel meetings and chats**: If applicable, you can select a sensitivity label that automatically applies to all channel meetings and chats for teams with this label.
+
+Additional settings for default sharing link type and site sharing permissions are available through PowerShell. These settings are worth configuring when you want to control the default sharing behavior for labeled sites beyond what the portal UI exposes.
