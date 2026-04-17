@@ -12,7 +12,7 @@ Feature updates. Get there from Azure portal > **Monitor > Insight Hub > Windows
 
 ### Windows Autopatch  
 
-Windows Feature Updates reports. Get there from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Reports > Windows Autopatch > Windows feature updates**. From here you can view a summary dashboard or drill down into the [Feature update status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report) for a per device view of the current Windows upgrade status or [Feature update trending report](windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report) for Windows upgrade trends over the last 90 days.
+Windows Feature Updates reports. Get there from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Reports > Windows Autopatch > Windows feature updates**. From here you can view a summary dashboard or drill down into the [Feature update status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report) for a per device view of the current Windows upgrade status or [Feature update trending report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report) for Windows upgrade trends over the last 90 days.
 
 ### Microsoft Intune
 
