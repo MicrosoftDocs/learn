@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.build-fabric-data-agent-ontology
+metadata:
+  title: Build a Fabric Data Agent with an Ontology
+  description: Learn how to create a Fabric data agent that uses a Microsoft Fabric IQ ontology as its data source, configure agent instructions to improve accuracy, test natural language queries, and publish the agent for colleagues.
+  ms.date: 04/17/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Build a Fabric data agent with an ontology
+summary: Create a Fabric data agent that uses a Microsoft Fabric IQ ontology as its data source. Configure agent instructions to improve query accuracy, test natural language questions, and publish the agent so business users can get governed data answers without writing code.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain how an ontology provides business vocabulary that a Fabric data agent uses as a data source
+  - Create a Fabric data agent and connect it to an ontology as a data source
+  - Configure agent instructions to improve query accuracy
+  - Test data agent responses by asking natural language questions and reviewing generated queries
+  - Publish a Fabric data agent to make it available to colleagues
+prerequisites: |
+  Before starting this module, you should have:
+  - Completed the [Understand Microsoft Fabric IQ fundamentals](/training/modules/understand-fabric-iq-fundamentals/) module or have equivalent knowledge of Microsoft Fabric IQ concepts
+  - Completed the [Create an ontology with Microsoft Fabric IQ](/training/modules/create-ontology-with-fabric-iq/) module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
+  - Completed the [Visualize ontology data with Microsoft Fabric IQ](/training/modules/visualize-ontology-fabric-iq/) module or have equivalent knowledge of exploring ontology data
+  - Familiarity with Microsoft Fabric workspaces and navigation
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- artificial-intelligence
+units:
+- learn.wwl.build-fabric-data-agent-ontology.introduction
+- learn.wwl.build-fabric-data-agent-ontology.understand-fabric-data-agents-ontology
+- learn.wwl.build-fabric-data-agent-ontology.create-fabric-data-agent-connect-ontology
+- learn.wwl.build-fabric-data-agent-ontology.test-validate-publish-fabric-data-agent
+- learn.wwl.build-fabric-data-agent-ontology.exercise-build-data-agent-ontology
+- learn.wwl.build-fabric-data-agent-ontology.knowledge-check
+- learn.wwl.build-fabric-data-agent-ontology.summary
+badge:
+  uid: learn.wwl.build-fabric-data-agent-ontology.badge

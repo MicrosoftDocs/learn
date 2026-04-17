@@ -1,0 +1,53 @@
+A Fabric data agent is a conversational interface to your data. It operates within your Fabric environment, connected to multiple data sources that can span different systems — people ask questions in natural language and get data-backed answers without writing queries or building reports. In this module, the focus is on using an ontology as the data source.
+
+## What is a Fabric data agent?
+
+When you ask a question, the agent follows a structured flow: Azure OpenAI parses your intent, the agent identifies the relevant data source, generates a query in the appropriate language (SQL, DAX, KQL, or GQL depending on the source type), executes the query, and returns the result.
+
+:::image type="content" source="../media/data-agent-query-flow.png" alt-text="Diagram showing the Fabric data agent query flow: user question to Azure OpenAI parsing, data source identification, query generation, execution, and answer returned.":::
+
+Each agent can connect to up to five data sources in any combination:
+
+- **Lakehouses** — query Delta tables using SQL
+- **Warehouses** — query structured data using SQL
+- **KQL databases** — query event streams and time-series data using KQL
+- **Power BI semantic models** — query business metrics using DAX
+- **Ontologies** — query graph-structured domain models using GQL
+- **Microsoft Graph** — query organizational data (people, calendars, files) using Microsoft Graph APIs
+
+> [!NOTE]
+> All data access runs under your Entra ID identity using least-privilege access — the agent can only reach data you're already authorized to view. It's strictly read-only and can never write or modify data. Any Row-Level Security (RLS) or Column-Level Security (CLS) configured on your data sources is also honored. For ontologies, access requires Read permission on the ontology item itself plus Read permission on each underlying data source (lakehouse, eventhouse, or semantic model) that the ontology is bound to. For more information, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing#sharing-permission-models-and-required-source-access).
+
+## What is an ontology?
+
+An **ontology** is a structured model that describes real-world concepts — the entity types in your domain, their properties, and how they relate to each other. Unlike a raw database schema with sometimes cryptic column names, an ontology uses meaningful vocabulary that matches how people in your organization think and talk.
+
+Consider the Lamna Healthcare ontology. It defines entity types like **Hospital**, **Department**, **Room**, **Patient**, and **VitalSignEquipment**. Each entity type has properties that describe its characteristics: a Room has properties like `roomNumber`, `capacity`, and `isOccupied`. Relationships connect entities in meaningful ways: a Patient is `admittedTo` a Room, and a Room is `inDepartment` a Department.
+
+Raw lakehouse tables work differently. A column named `occ_flag` tells an AI agent nothing about its meaning or context. An entity type named `Room` with a property `isOccupied` and a relationship `admittedTo → Patient` provides a vocabulary the agent understands and uses correctly.
+
+**Connecting to the ontology** gives the agent a structured vocabulary so it maps natural language questions to defined entity types, properties, and relationship labels rather than guessing from raw column names. The Lamna ontology is bound to lakehouse tables and an eventhouse — when the agent queries through the ontology layer, it accesses real data while using the conceptual structure the ontology provides.
+
+This combination of meaningful vocabulary and real data bindings makes the ontology a bridge between how clinical staff ask questions and how data is stored.
+
+## How the agent uses the ontology
+
+When you use an ontology as the data source, the Fabric data agent generates **GQL (Graph Query Language)** — not SQL, DAX, or KQL. GQL is designed to traverse the graph structure of the ontology, following relationships between entities in ways that relational query languages like SQL weren't built to handle.
+
+Here's how it works. When the quality director asks "Which departments have patients without vital sign equipment assigned?", the agent matches "departments" to the `Department` entity type, traverses the `inDepartment` relationship to find rooms, follows `admittedTo` to reach patients, and checks whether a `VitalSignEquipment` entity is linked to each patient's room. This semantic understanding guides the agent to generate GQL that retrieves the answer.
+
+The process relies on the ontology's structure. The agent interprets "ICU" as a department filter, "beds" as rooms, and "occupied" as the `isOccupied` property or the presence of an `admittedTo` relationship. This mapping happens because the ontology defines these concepts explicitly. But terms like "ICU" or "beds" aren't always exact matches to entity type names or property values. That's where **instructions** come in — natural language guidance you write when configuring the agent to explain how domain-specific vocabulary maps to ontology concepts.
+
+The agent's ability to generate accurate GQL depends entirely on how well the ontology models your domain and how clearly your instructions explain common question patterns.
+
+## Why combine a Fabric data agent with an ontology?
+
+Without an ontology as the data source, a Fabric data agent guesses from raw column names and table structures. In a domain like healthcare where vocabulary is precise and regulated, this guessing produces unpredictable results. A column named `eq_assgn_flag` might mean equipment assigned, equipment available, or something else entirely — the agent has no reliable way to know.
+
+With an ontology as the data source, "vital sign equipment" maps to the `VitalSignEquipment` entity type, which connects to rooms and patients through well-defined relationships. This mapping is governed, repeatable, and accurate. Every user who asks the same question gets the same semantic interpretation.
+
+The agent inherits the ontology's governance layer. Permissions, entity definitions, and data bindings all flow through the ontology — you manage these in one place rather than configuring them separately for each agent. When the clinical team updates the ontology to add a new entity type like `MedicalDevice`, the agent immediately understands questions about devices without reconfiguration.
+
+This governance benefit extends beyond accuracy. The ontology becomes your organization's single source of truth for domain vocabulary, and the agent becomes the natural language interface to that truth.
+
+Now that you understand what a Fabric data agent is and how it uses an ontology as a data source, you're ready to create one and connect it to the Lamna Healthcare ontology.
