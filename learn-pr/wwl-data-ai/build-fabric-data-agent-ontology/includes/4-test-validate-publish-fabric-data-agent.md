@@ -26,7 +26,7 @@ If the steps show the agent used the wrong entity types or traversed relationshi
 
 ## Refine with instructions
 
-When an ontology is the data source, instructions are how you improve accuracy. When a response is wrong or the steps reveal incorrect reasoning, refining the instructions is the path forward. Microsoft's [guidance on iterative improvement](https://learn.microsoft.com/fabric/data-science/develop-iterative-process-data-agent) identifies four areas where targeted instructions have the most impact:
+When an ontology is the data source, instructions are how you improve accuracy. When a response is wrong or the steps reveal incorrect reasoning, refining the instructions is the path forward. Microsoft's [guidance on iterative improvement](/fabric/data-science/develop-iterative-process-data-agent) identifies four areas where targeted instructions have the most impact:
 
 - **Terminology**: Map the words users naturally use to the entity types and relationships defined in the ontology. If your organization uses department nicknames or shorthand, instructions can bridge that gap.
 - **Reasoning steps**: Give the agent a logical path to follow for common question patterns — for example, specifying which entity to start from and which relationships to traverse to reach an answer.
