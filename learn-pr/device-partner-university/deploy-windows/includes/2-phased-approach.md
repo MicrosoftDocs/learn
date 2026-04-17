@@ -1,6 +1,6 @@
 Throughout this module, we refer to deployment rings and various project phases. Some of these terms are often used interchangeably, but for this module, we use the following definitions:
 
-- **Proof of Concept (PoC)**: An optional phase often performed in a lab environment. It’s most helpful in the earliest stages of a project to test basic functionality and assumptions. This phase is sometimes called a limited pilot and is covered in the [Prepare phase](placeholderURL).
+- **Proof of Concept (PoC)**: An optional phase often performed in a lab environment. It’s most helpful in the earliest stages of a project to test basic functionality and assumptions. This phase is sometimes called a limited pilot and is covered in the [Prepare phase](/training/modules/prepare-windows/).
 - **Pilot**: The first phase you perform in the production environment. Use it to test the wider infrastructure, connectivity, and application compatibility.
 - **Broad deployment**: One or more further deployment phases in the production environment, called rings. In Windows Autopatch, these rings are named first, fast, and broad. Eventually they target most of the estate.
 
