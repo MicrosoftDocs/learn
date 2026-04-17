@@ -8,7 +8,7 @@ The chat pane is where users interact with the agent using plain English. For th
 - "How many rooms in the Surgical Services department are currently occupied?"
 - "Which vital sign monitors are assigned to rooms in the Surgical Services department?"
 
-The agent displays its answer in the chat pane. But the real value isn't just the answer — it's understanding how the agent arrived at that answer. Every response includes a **steps dropdown**, and expanding it reveals the agent's reasoning process.
+The agent displays its answer in the chat pane. Every response includes a **steps dropdown** — expand it to see how the agent interpreted your question and whether it queried the right entities.
 
 ## Examine the steps and generated GQL
 
@@ -23,9 +23,6 @@ The steps dropdown is the transparency layer that separates reliable agents from
 This visibility lets you verify the agent's interpretation before trusting its results. For a question like "How many rooms in the Surgical Services department are currently occupied?", the steps reveal whether the agent correctly identified the Room entity, filtered by the Surgical Services department, and counted only occupied rooms. When the steps look wrong, you know exactly where to refine.
 
 If the steps show the agent used the wrong entity types or traversed relationships incorrectly, there's likely a gap in the instructions. Fabric data agents show their work, making it straightforward to identify and correct gaps in the agent's reasoning.
-
-> [!TIP]
-> The steps are often more valuable than the answer itself, especially when validating a new agent. Understanding how the agent interpreted a question is the fastest way to find instruction gaps.
 
 ## Refine with instructions
 
