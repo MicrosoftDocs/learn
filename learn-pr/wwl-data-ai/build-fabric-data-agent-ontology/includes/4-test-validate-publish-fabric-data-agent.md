@@ -60,6 +60,6 @@ Sharing the agent generates a link that colleagues can use to access it directly
 :::image type="content" source="../media/data-agent-share.png" alt-text="Screenshot of the share dialog showing the permission level options for sharing the data agent.":::
 
 > [!IMPORTANT]
-> For ontology-backed agents, recipients also need read access to the ontology item itself and the underlying data it's bound to — in this case, the lakehouse and KQL database. Without those permissions, queries fail even with a valid shared link.
+> For ontology-backed agents, recipients also need read access to the ontology item itself and the underlying data it's bound to. Without those permissions, queries fail even with a valid shared link.
 
-With the agent published and shared, clinical staff at Lamna Healthcare can now ask questions like "Which patients are admitted to rooms in the Surgical Services department?" and get governed, accurate answers in seconds — without writing a query or waiting for IT. The combination of semantic understanding from the ontology and transparency from the steps dropdown gives users both convenience and confidence in the results.
+With the agent published and shared, clinical staff at Lamna Healthcare can ask questions like "Which patients are admitted to rooms in the Surgical Services department?" and get answers in seconds — without writing a query.
