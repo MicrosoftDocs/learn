@@ -65428,6 +65428,51 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-text-ai-language/7-extract-linked-entities.yml",
       "redirect_url": "/azure/ai-services/language-service/entity-linking/overview",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/1-introduction.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/2-create-instance.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/3-configure-server.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/4-build-spring-boot-microservice.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/5-build-gateway.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/6-configure-distributed-tracing.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/7-scale-spring-boot-microservices.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/9-conclusion.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/index.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    }                   
   ]
 }

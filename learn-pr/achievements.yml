@@ -7936,3 +7936,8 @@ achievements:
   title: Introduction to SQL Server 2025 data virtualization
   summary: Learn about data virtualization, enhanced Polybase features in SQL Server 2025, and how to use Polybase to access and query external data.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure-spring-cloud-workshop.badge
+  type: badge
+  title: Deploy Spring microservices to Azure
+  summary: In this module, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Apps (ASA).
+  iconUrl: /training/achievements/azure-spring-cloud-workshop.svg
