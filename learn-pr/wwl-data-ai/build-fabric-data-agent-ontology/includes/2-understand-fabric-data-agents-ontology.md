@@ -20,7 +20,7 @@ Each agent can connect to up to five data sources in any combination:
 
 An **ontology** is a structured model that describes real-world concepts — the entity types in your domain, their properties, and how they relate to each other. Instead of raw column names like `rm_id` or `adm_flag` that you might find in a database schema, an ontology uses business terms like `Room`, `Patient`, and `admittedTo`.
 
-Consider the Lamna Healthcare ontology. It defines entity types like **Hospital**, **Department**, **Room**, **Patient**, and **VitalSignEquipment**. Each entity type has properties that describe its characteristics: a Room has properties like `roomNumber`, `capacity`, and `isOccupied`. Relationships connect entities in meaningful ways: a Patient is `admittedTo` a Room, and a Room is `inDepartment` a Department.
+The Lamna Healthcare ontology defines entity types like **Hospital**, **Department**, **Room**, **Patient**, and **VitalSignEquipment**. Each entity type has properties that describe its characteristics: a Room has properties like `roomNumber`, `capacity`, and `isOccupied`. Relationships connect entities in meaningful ways: a Patient is `admittedTo` a Room, and a Room is `inDepartment` a Department.
 
 Raw lakehouse tables work differently. A column named `occ_flag` tells an AI agent nothing about its meaning or context. An entity type named `Room` with a property `isOccupied` and a relationship `admittedTo → Patient` provides a vocabulary the agent understands and uses correctly.
 
