@@ -18,7 +18,7 @@ Each agent can connect to up to five data sources in any combination:
 
 ## What is an ontology?
 
-An **ontology** is a structured model that describes real-world concepts — the entity types in your domain, their properties, and how they relate to each other. Unlike a raw database schema with sometimes cryptic column names, an ontology uses meaningful vocabulary that matches how people in your organization think and talk.
+An **ontology** is a structured model that describes real-world concepts — the entity types in your domain, their properties, and how they relate to each other. Instead of raw column names like `rm_id` or `adm_flag` that you might find in a database schema, an ontology uses business terms like `Room`, `Patient`, and `admittedTo`.
 
 Consider the Lamna Healthcare ontology. It defines entity types like **Hospital**, **Department**, **Room**, **Patient**, and **VitalSignEquipment**. Each entity type has properties that describe its characteristics: a Room has properties like `roomNumber`, `capacity`, and `isOccupied`. Relationships connect entities in meaningful ways: a Patient is `admittedTo` a Room, and a Room is `inDepartment` a Department.
 
