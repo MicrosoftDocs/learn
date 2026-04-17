@@ -3,13 +3,13 @@ Review deployment-related policies with respect to your security objectives, upd
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve configuration readiness:** |                                                                  |
-| - Create and populate your deployment rings.     | - Deployment infrastructure readiness checklist complete and ready to deploy Windows 11 |
-| - Create a security baseline.                    | - Security baseline ready to be deployed                         |
-| - Update policies and administrative templates.  | - Other device and/or user settings ready to be deployed         |
-| - Update network configuration.                  | - Network settings completed                                      |
-| - [Optional] Test settings in Proof of Concept (lab) environment. | - [Optional] Report of settings pass/fail                        |
-| - Compare configured settings against readiness criteria. | - Identify gaps                                                   |
-| - Sign off and update procedural documentation.  | - Procedural documentation of testing, remediation, and results  |
+| - Create and populate your deployment rings.     | • Deployment infrastructure readiness checklist complete and ready to deploy Windows 11 |
+| - Create a security baseline.                    | • Security baseline ready to be deployed                         |
+| - Update policies and administrative templates.  | • Other device and/or user settings ready to be deployed         |
+| - Update network configuration.                  | • Network settings completed                                      |
+| - [Optional] Test settings in Proof of Concept (lab) environment. | • [Optional] Report of settings pass/fail                        |
+| - Compare configured settings against readiness criteria. | • Identify gaps                                                   |
+| - Sign off and update procedural documentation.  | • Procedural documentation of testing, remediation, and results  |
 
 ## Create and populate your deployment rings
 
@@ -95,10 +95,10 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve configuration readiness:** |                                                                  |
-| - Create and populate your deployment rings.     | - Deployment infrastructure readiness checklist complete and ready to deploy Windows 11 |
-| - Create a security baseline.                    | - Security baseline ready to be deployed                         |
-| - Update policies and administrative templates.  | - Other device and/or user settings ready to be deployed         |
-| - Update network configuration.                  | - Network settings completed                                      |
-| - [Optional] Test settings in Proof of Concept (lab) environment. | - [Optional] Report of settings pass/fail                        |
-| - Compare configured settings against readiness criteria. | - Identify gaps                                                   |
-| - Sign off and update procedural documentation.  | - Procedural documentation of testing, remediation, and results  |
+| - Create and populate your deployment rings.     | • Deployment infrastructure readiness checklist complete and ready to deploy Windows 11 |
+| - Create a security baseline.                    | • Security baseline ready to be deployed                         |
+| - Update policies and administrative templates.  | • Other device and/or user settings ready to be deployed         |
+| - Update network configuration.                  | • Network settings completed                                      |
+| - [Optional] Test settings in Proof of Concept (lab) environment. | • [Optional] Report of settings pass/fail                        |
+| - Compare configured settings against readiness criteria. | • Identify gaps                                                   |
+| - Sign off and update procedural documentation.  | • Procedural documentation of testing, remediation, and results  |

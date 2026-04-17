@@ -3,11 +3,11 @@ Don't overlook the importance of user readiness to deliver an effective, enterpr
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve user readiness:**           |                                                                  |
-| - Select test users.                             | - List of users and their devices for pilot phase               |
-| - Create a communications schedule to prepare different groups for changes. | - Comms calendar                                                 |
-| - Draft emails to promote usage and offer support. | - Set of message drafts                                          |
-| - Update help desk manuals.                     | - Updated help desk manual                                      |
-| - Sign off and update procedural documentation. | - Procedural documentation of testing, remediation, and results |
+| - Select test users.                             | • List of users and their devices for pilot phase               |
+| - Create a communications schedule to prepare different groups for changes. | • Comms calendar                                                 |
+| - Draft emails to promote usage and offer support. | • Set of message drafts                                          |
+| - Update help desk manuals.                     | • Updated help desk manual                                      |
+| - Sign off and update procedural documentation. | • Procedural documentation of testing, remediation, and results |
 
 ## Select test users
 
@@ -42,7 +42,7 @@ Draft concise emails that inform users of what changes they can expect to see. O
 
 Here are some helpful educational resources you can adopt:
 
-- [Meet Windows 11](https://support.microsoft.com/meetwindows11) video series
+- [Meet Windows 11 video series](https://support.microsoft.com/meetwindows11)
 - [Windows help & learning](https://support.microsoft.com/windows)
 - [Upgrade to Windows 11: FAQ](https://support.microsoft.com/windows/upgrade-to-windows-11-faq-fb6206a2-1a0f-448a-80f1-8668ee5b2bf9)
 
@@ -67,8 +67,8 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve user readiness:**           |                                                                  |
-| - Select test users.                             | - List of users and their devices for pilot phase               |
-| - Create a communications schedule to prepare different groups for changes. | - Comms calendar                                                 |
-| - Draft emails to promote usage and offer support. | - Set of message drafts                                         |
-| - Update help desk manuals.                     | - Updated help desk manual                                      |
-| - Sign off and update procedural documentation. | - Procedural documentation of testing, remediation, and results |
+| - Select test users.                             | • List of users and their devices for pilot phase               |
+| - Create a communications schedule to prepare different groups for changes. | • Comms calendar                                                 |
+| - Draft emails to promote usage and offer support. | • Set of message drafts                                         |
+| - Update help desk manuals.                     | • Updated help desk manual                                      |
+| - Sign off and update procedural documentation. | • Procedural documentation of testing, remediation, and results |

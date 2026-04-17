@@ -3,10 +3,10 @@ Let’s build on your earlier assessment of operational readiness and deployment
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve operations readiness:** | |
-| - Implement RACI roles.                          | - [Optional] Stakeholder approval tracking system               |
-| - [Optional] Set up Proof of Concept (PoC) lab environment. | - [Optional] Proof of Concept (PoC) completion and results documentation |
-| - Update the deployment plan, assigning devices to rings. | - Updated deployment plan (including assignment of devices to rings) |
-| - Sign off and update procedural documentation.  | - Procedural documentation of operational readiness             |
+| - Implement RACI roles.                          | • [Optional] Stakeholder approval tracking system               |
+| - [Optional] Set up Proof of Concept (PoC) lab environment. | • [Optional] Proof of Concept (PoC) completion and results documentation |
+| - Update the deployment plan, assigning devices to rings. | • Updated deployment plan (including assignment of devices to rings) |
+| - Sign off and update procedural documentation.  | • Procedural documentation of operational readiness             |
 
 ## Implement RACI roles
 
@@ -68,7 +68,7 @@ Document your operational decisions and any remaining to-do items before deployi
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve operations readiness:**     |                                                                  |
-| - Implement RACI roles.                          | - [Optional] Stakeholder approval tracking system               |
-| - [Optional] Set up Proof of Concept (PoC) lab environment. | - [Optional] Proof of Concept (PoC) completion and results documentation |
-| - Update the deployment plan, assigning devices to rings. | - Updated deployment plan (including assignment of devices to rings) |
-| - Sign off and update procedural documentation.  | - Procedural documentation of operational readiness             |
+| - Implement RACI roles.                          | • [Optional] Stakeholder approval tracking system               |
+| - [Optional] Set up Proof of Concept (PoC) lab environment. | • [Optional] Proof of Concept (PoC) completion and results documentation |
+| - Update the deployment plan, assigning devices to rings. | • Updated deployment plan (including assignment of devices to rings) |
+| - Sign off and update procedural documentation.  | • Procedural documentation of operational readiness             |

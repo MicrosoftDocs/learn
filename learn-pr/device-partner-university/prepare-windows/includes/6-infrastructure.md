@@ -1,11 +1,12 @@
-| Tasks                                           | Deliverables                                                     |
-|-------------------------------------------------|------------------------------------------------------------------|
-| **Close gaps to achieve infrastructure readiness:** | - Updated list of infrastructure and tools                      |
-| - Update necessary infrastructure and tooling.   | - Validation reports for infrastructure and tooling             |
-| - Validate infrastructure and tooling.           | - Remediation reports for infrastructure and tooling            |
-| - Compare pass or fail results against readiness criteria. | - Procedural documentation of testing, remediation, and results                                                                 |
-| - Remediate infrastructure and tooling.          |                                                                  |
-| - Sign off and update procedural documentation.  |  |
+
+| Tasks | Deliverables |
+|-------|--------------|
+| **Close gaps to achieve infrastructure readiness:** |  |
+| - Update necessary infrastructure and tooling. | • Updated list of infrastructure and tools |
+| - Validate infrastructure and tooling. | • Validation reports for infrastructure and tooling |
+| - Compare pass or fail results against readiness criteria. | • Remediation reports for infrastructure and tooling |
+| - Remediate infrastructure and tooling. | • Procedural documentation of testing, remediation, and results |
+| - Sign off and update procedural documentation. |  |
 
 ## Update necessary infrastructure and tooling
 
@@ -72,11 +73,11 @@ Document the success, failure, and remediation of all steps you take to close th
 
 As you make decisions throughout this stage, document them in an easily shareable format for tracking, reporting, and continuity purposes. Get approvals of these deliverables from all the people identified in your RACI matrix connected to user readiness. Seek help and address any gaps before moving to the deployment phase.
 
-| Tasks                                           | Deliverables                                                     |
-|-------------------------------------------------|------------------------------------------------------------------|
-| **Close gaps to achieve infrastructure readiness:** | - Updated list of infrastructure and tools                                                                      |
-| - Update necessary infrastructure and tooling.   | - Validation reports for infrastructure and tooling                  |
-| - Validate infrastructure and tooling.           |  - Remediation reports for infrastructure and tooling             |
-| - Compare pass or fail results against readiness criteria. | - Procedural documentation of testing, remediation, and results          |
-| - Remediate infrastructure and tooling.          |  |
-| - Sign off and update procedural documentation.  |                                                                  |
+| Tasks | Deliverables |
+|-------|--------------|
+| **Close gaps to achieve infrastructure readiness:** |  |
+| - Update necessary infrastructure and tooling. | • Updated list of infrastructure and tools |
+| - Validate infrastructure and tooling. | • Validation reports for infrastructure and tooling |
+| - Compare pass or fail results against readiness criteria. | • Remediation reports for infrastructure and tooling |
+| - Remediate infrastructure and tooling. | • Procedural documentation of testing, remediation, and results |
+| - Sign off and update procedural documentation. |  |

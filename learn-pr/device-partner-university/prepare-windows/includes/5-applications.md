@@ -3,12 +3,12 @@ Let’s prepare and validate your applications for use with Windows 11. A few re
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve app readiness:**            |                                                                  |
-| - Run app readiness reports.                     | - List of app compatibility issues                              |
-| - Modernize and update apps.                     | - Refreshed app inventory with replaced or updated apps         |
-| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment. | - [Optional] List of apps for PoC                                |
-| - Select critical and important applications for regression and pilot testing in a production environment. | - List of apps for regression and pilot testing                 |
-| - Remediate failed apps.                         | - A record of all remediated apps                                |
-| - Sign off and update procedural documentation.  | - Report results<br>- Procedural documentation of testing, remediation, and results |
+| - Run app readiness reports.                     | • List of app compatibility issues                              |
+| - Modernize and update apps.                     | • Refreshed app inventory with replaced or updated apps         |
+| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment. | • [Optional] List of apps for PoC                                |
+| - Select critical and important applications for regression and pilot testing in a production environment. | • List of apps for regression and pilot testing                 |
+| - Remediate failed apps.                         | • A record of all remediated apps                                |
+| - Sign off and update procedural documentation.  | • Report results<br>• Procedural documentation of testing, remediation, and results |
 
 ## Run app readiness reports
 
@@ -29,7 +29,7 @@ At a high level, to get started with Windows update readiness reports, you’ll 
 Run the following reports:
 
 - **[Windows feature update device readiness report.](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)** Get information about compatibility risks associated with the update, including app and driver issues on a per-device basis.
-- **[Windows feature update compatibility risks report](/intune/intune-service/protect/windows-update-compatibility-reports#use-the-windows-feature-update-compatibility-risks-report).** Get a view of the top compatibility risks across the organization including the number of devices potentially affected.
+- **[Windows feature update compatibility risks report.](/intune/intune-service/protect/windows-update-compatibility-reports#use-the-windows-feature-update-compatibility-risks-report)** Get a view of the top compatibility risks across the organization including the number of devices potentially affected.
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. In the admin center, go to **Reports > Windows updates >** select the **Reports** tab > select **Windows Feature Update Compatibility Risks Report** or **Windows Feature Update Device Readiness Report**.
@@ -106,7 +106,7 @@ During any phase of testing, if you run into compatibility issues that you’re 
 
 With enrollment in the [App Assure](/windows/compatibility/app-assure) service, Microsoft will help you remedy any application issues with Windows 11 at no extra cost. It’s included with your purchased plan for Microsoft Entra, Microsoft Intune, Microsoft 365 Apps, and a wide variety of other [eligible plans](/microsoft-365/fasttrack/eligibility).
 
-Visit the [App Assure page](https://fasttrack.microsoft.com/dl/daa) and sign in to submit your request for assistance from a dedicated App Assure Manager. If you experience any issues while submitting your request, contact ACHELP@microsoft.com and our team members will reach out to you.
+Check out [Microsoft App Assure](https://fasttrack.microsoft.com/dl/daa) and sign in to submit your request for assistance from a dedicated App Assure Manager. If you experience any issues while submitting your request, contact ACHELP@microsoft.com and a team member will reach out to you.
 
 > [!NOTE]
 > ***Recommended deliverable***
@@ -122,9 +122,9 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve app readiness:**            |                                                                  |
-| - Run app readiness reports.                     | - List of app compatibility issues                              |
-| - Modernize and update apps.                     | - Refreshed app inventory with replaced or updated apps         |
-| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment. | - [Optional] List of apps for PoC                                |
-| - Select critical and important applications for regression and pilot testing in a production environment. | - List of apps for regression and pilot testing                 |
-| - Remediate failed apps.                         | - A record of all remediated apps                                |
-| - Sign off and update procedural documentation.  | - Report results<br>- Procedural documentation of testing, remediation, and results |
+| - Run app readiness reports.                     | • List of app compatibility issues                              |
+| - Modernize and update apps.                     | • Refreshed app inventory with replaced or updated apps         |
+| - [Optional] Select and test critical and important apps in Proof of Concept (lab) environment. | • [Optional] List of apps for PoC                                |
+| - Select critical and important applications for regression and pilot testing in a production environment. | • List of apps for regression and pilot testing                 |
+| - Remediate failed apps.                         | • A record of all remediated apps                                |
+| - Sign off and update procedural documentation.  | • Report results<br>• Procedural documentation of testing, remediation, and results |

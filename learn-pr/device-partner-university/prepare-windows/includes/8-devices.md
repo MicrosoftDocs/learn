@@ -1,11 +1,11 @@
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve device readiness:**         |                                                                  |
-| - Run device driver readiness report.            | - List of device driver incompatibilities                        |
-| - Perform device readiness remediation.          | - All devices ready to upgrade to Windows 11                     |
-| - Remediate device identity.                      | - All devices provided with a device identity                    |
-| - [Optional] Select and configure test devices.  | - [Optional] List of testing failures                             |
-| - Sign off and update procedural documentation.  | - Procedural documentation of testing, remediation, and results  |
+| - Run device driver readiness report.            | • List of device driver incompatibilities                        |
+| - Perform device readiness remediation.          | • All devices ready to upgrade to Windows 11                     |
+| - Remediate device identity.                      | • All devices provided with a device identity                    |
+| - [Optional] Select and configure test devices.  | • [Optional] List of testing failures                             |
+| - Sign off and update procedural documentation.  | • Procedural documentation of testing, remediation, and results  |
 
 ## Run device driver readiness report
 
@@ -17,7 +17,7 @@ At a high level, to get started with Windows update readiness reports, you’ll 
 
 1. Access the [Microsoft Intune portal](https://intune.microsoft.com/).
 2. Enable use of Windows diagnostic data by Intune.
-3. Confirm ownership of Windows licenses on Windows data page. Note: Global Administrator or Intune Administrator role is required. 
+3. Confirm ownership of Windows licenses on Windows data page. Note: Global Administrator or Intune Administrator role is required.
 4. Configure devices.
 
 > [!NOTE]
@@ -26,7 +26,7 @@ At a high level, to get started with Windows update readiness reports, you’ll 
 
 ## Run the following report:
 
-- **[Windows Feature Update device readiness report](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report).** Get information about compatibility risks associated with the update, including app and driver issues on a per-device basis.
+- **[Windows Feature Update device readiness report.](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)** Get information about compatibility risks associated with the update, including app and driver issues on a per-device basis.
 
 1. Sign in to the Microsoft Intune admin center.
 2. In the admin center, go to Reports > Windows updates > select the Reports tab > select Windows Feature Update Device Readiness Report.
@@ -50,14 +50,14 @@ Review the report for any device driver incompatibilities and document them.
 
 In both this and the Plan module, you evaluated the readiness of your devices for Windows 11. You should have identified which devices are capable of upgrade and which will need some remediation or replacement. Use this step to complete that remediation.
 
-Hardware [remediation](/windows/whats-new/windows-11-requirements#hardware-requirements) might take the form of any of the following actions:
+[Hardware remediation](/windows/whats-new/windows-11-requirements#hardware-requirements) might take the form of any of the following actions:
 
 - Clear disk space
 - Add memory
 - Upgrade the TPM
 - Update device drivers
 
-For Operating System [remediation](/windows/whats-new/windows-11-requirements#os-requirements), you might need to install some updates to enable the upgrade to Windows 11.
+For [Operating System remediation](/windows/whats-new/windows-11-requirements#os-requirements), you might need to install some updates to enable the upgrade to Windows 11.
 
 Replace devices that are incapable of being upgraded as part of your normal PC refresh plan. Otherwise, you’ll have to initiate a procurement cycle for these devices.
 
@@ -105,8 +105,8 @@ As you make decisions throughout this stage, document them in an easily shareabl
 | Tasks                                           | Deliverables                                                     |
 |-------------------------------------------------|------------------------------------------------------------------|
 | **Close gaps to achieve device readiness:**         |                                                                  |
-| - Run device driver readiness report.            | - List of device driver incompatibilities                        |
-| - Perform device readiness remediation.          | - All devices ready to upgrade to Windows 11                     |
-| - Remediate device identity.                     | - All devices provided with a device identity                    |
-| - [Optional] Select and configure test devices.  | - [Optional] List of testing failures                            |
-| - Sign off and update procedural documentation.  | - Procedural documentation of testing, remediation, and results  |
+| - Run device driver readiness report.            | • List of device driver incompatibilities                        |
+| - Perform device readiness remediation.          | • All devices ready to upgrade to Windows 11                     |
+| - Remediate device identity.                     | • All devices provided with a device identity                    |
+| - [Optional] Select and configure test devices.  | • [Optional] List of testing failures                            |
+| - Sign off and update procedural documentation.  | • Procedural documentation of testing, remediation, and results  |
