@@ -28,7 +28,7 @@ This combination of meaningful vocabulary and real data bindings makes the ontol
 
 ## How the agent uses the ontology
 
-When you use an ontology as the data source, the Fabric data agent generates **GQL (Graph Query Language)** — not SQL, DAX, or KQL. GQL is designed to traverse the graph structure of the ontology, following relationships between entities in ways that relational query languages like SQL weren't built to handle.
+When you use an ontology as the data source, the Fabric data agent generates **GQL (Graph Query Language)**. GQL is designed to traverse the graph structure of the ontology, following relationships between entities.
 
 Here's how it works. When the quality director asks "Which departments have patients without vital sign equipment assigned?", the agent matches "departments" to the `Department` entity type, traverses the `inDepartment` relationship to find rooms, follows `admittedTo` to reach patients, and checks whether a `VitalSignEquipment` entity is linked to each patient's room. This semantic understanding guides the agent to generate GQL that retrieves the answer.
 
