@@ -20,9 +20,7 @@ abstract: |
   - Publish a Fabric data agent to make it available to colleagues
 prerequisites: |
   Before starting this module, you should have:
-  - Completed the [Understand Microsoft Fabric IQ fundamentals](/training/modules/understand-fabric-iq-fundamentals/) module or have equivalent knowledge of Microsoft Fabric IQ concepts
-  - Completed the [Create an ontology with Microsoft Fabric IQ](/training/modules/create-ontology-with-fabric-iq/) module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
-  - Completed the [Visualize ontology data with Microsoft Fabric IQ](/training/modules/visualize-ontology-fabric-iq/) module or have equivalent knowledge of exploring ontology data
+  - Understanding of ontology concepts, including entity types, properties, relationships, and data bindings. If you're new to ontologies, complete the [Create an ontology with Microsoft Fabric IQ](/training/modules/create-ontology-with-fabric-iq/) module first.
   - Familiarity with Microsoft Fabric workspaces and navigation
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
