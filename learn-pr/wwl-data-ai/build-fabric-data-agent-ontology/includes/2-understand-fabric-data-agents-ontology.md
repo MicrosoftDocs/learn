@@ -36,14 +36,10 @@ The process relies on the ontology's structure. The agent interprets "ICU" as a 
 
 The agent's ability to generate accurate GQL depends entirely on how well the ontology models your domain and how clearly your instructions explain common question patterns.
 
-## Why combine a Fabric data agent with an ontology?
+## What the ontology layer provides
 
-Without an ontology as the data source, a Fabric data agent connects directly to a lakehouse or warehouse and interprets raw column names and table structures without semantic context. In a domain like healthcare where vocabulary is precise, a column named `eq_assgn_flag` might mean equipment assigned, equipment available, or something else entirely — the agent has no reliable way to know.
+The agent inherits the ontology's governance layer. Entity definitions, relationships, and data bindings all flow through the ontology — you manage these in one place rather than configuring them separately for each agent. When the clinical team adds a new entity type like `MedicalDevice`, the agent immediately understands questions about devices without reconfiguration.
 
-With an ontology as the data source, "vital sign equipment" maps to the `VitalSignEquipment` entity type, which connects to rooms and patients through well-defined relationships. This mapping is governed, repeatable, and accurate. Every user who asks the same question gets the same semantic interpretation.
-
-The agent inherits the ontology's governance layer. Permissions, entity definitions, and data bindings all flow through the ontology — you manage these in one place rather than configuring them separately for each agent. When the clinical team updates the ontology to add a new entity type like `MedicalDevice`, the agent immediately understands questions about devices without reconfiguration.
-
-This governance benefit extends beyond accuracy. The ontology becomes your organization's single source of truth for domain vocabulary, and the agent becomes the natural language interface to that truth.
+This centralized structure also means every user who asks the same question gets the same interpretation. The ontology defines how domain vocabulary maps to data, so results are consistent and repeatable.
 
 Now that you understand what a Fabric data agent is and how it uses an ontology as a data source, you're ready to create one and connect it to the Lamna Healthcare ontology.
