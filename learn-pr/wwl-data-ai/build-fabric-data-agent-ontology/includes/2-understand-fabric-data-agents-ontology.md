@@ -30,7 +30,7 @@ This combination of meaningful vocabulary and real data bindings makes the ontol
 
 When you use an ontology as the data source, the Fabric data agent generates **GQL (Graph Query Language)**. GQL is designed to traverse the graph structure of the ontology, following relationships between entities.
 
-Here's how it works. When the quality director asks "Which departments have patients without vital sign equipment assigned?", the agent matches "departments" to the `Department` entity type, traverses the `inDepartment` relationship to find rooms, follows `admittedTo` to reach patients, and checks whether a `VitalSignEquipment` entity is linked to each patient's room. This semantic understanding guides the agent to generate GQL that retrieves the answer.
+Here's how it works. When a nurse manager asks "Which departments have patients without vital sign equipment assigned?", the agent matches "departments" to the `Department` entity type, traverses the `inDepartment` relationship to find rooms, follows `admittedTo` to reach patients, and checks whether a `VitalSignEquipment` entity is linked to each patient's room. This semantic understanding guides the agent to generate GQL that retrieves the answer.
 
 The process relies on the ontology's structure. The agent interprets "ICU" as a department filter, "beds" as rooms, and "occupied" as the `isOccupied` property or the presence of an `admittedTo` relationship. This mapping happens because the ontology defines these concepts explicitly. But terms like "ICU" or "beds" aren't always exact matches to entity type names or property values. That's where **instructions** come in — natural language guidance you write when configuring the agent to explain how domain-specific vocabulary maps to ontology concepts.
 
