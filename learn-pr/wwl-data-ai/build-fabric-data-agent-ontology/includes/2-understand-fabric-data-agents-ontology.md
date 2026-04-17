@@ -14,7 +14,7 @@ Each agent can connect to up to five data sources in any combination:
 - **Microsoft Graph** — query organizational data (people, calendars, files) using Microsoft Graph APIs
 
 > [!NOTE]
-> All data access runs under your Entra ID identity using least-privilege access — the agent can only reach data you're already authorized to view. It's strictly read-only and can never write or modify data. Any Row-Level Security (RLS) or Column-Level Security (CLS) configured on your data sources is also honored. For ontologies, access requires Read permission on the ontology item itself plus Read permission on each underlying data source (lakehouse, eventhouse, or semantic model) that the ontology is bound to. For more information, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing#sharing-permission-models-and-required-source-access).
+> The agent runs under the querying user's Entra ID identity — it can only reach data that user is authorized to view, and it's strictly read-only. For more information, see [Fabric data agent sharing and permission management](/fabric/data-science/data-agent-sharing#sharing-permission-models-and-required-source-access).
 
 ## What is an ontology?
 
