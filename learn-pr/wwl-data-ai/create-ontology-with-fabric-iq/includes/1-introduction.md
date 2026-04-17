@@ -1,4 +1,7 @@
-Imagine you work at Lamna Healthcare, a fictitious medical center that manages operations across hospitals, departments, and rooms. Your data lives in multiple places—hospital, department, room, and patient records exist as lakehouse tables, while continuous vital signs monitoring from intensive care unit (ICU) equipment streams into an eventhouse. To enable natural language queries and exploration across all of it, you need to create an ontology that unifies these data sources with consistent business vocabulary.
+Imagine you work at Lamna Healthcare, a fictitious medical center that manages operations across hospitals, departments, and rooms.
+
+> [!IMPORTANT]
+> Fabric IQ is currently in [preview](/fabric/fundamentals/preview). Your data lives in multiple places—hospital, department, room, and patient records exist as lakehouse tables, while continuous vital signs monitoring from intensive care unit (ICU) equipment streams into an eventhouse. To enable natural language queries and exploration across all of it, you need to create an ontology that unifies these data sources with consistent business vocabulary.
 
 You face a key decision: how to start building your ontology. You can automatically generate structure from an existing Power BI semantic model, or build from scratch using OneLake data. Both paths lead to the same destination—a complete ontology bound to your lakehouse tables and eventhouse streams.
 

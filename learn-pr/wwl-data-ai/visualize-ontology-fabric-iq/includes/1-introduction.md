@@ -1,4 +1,9 @@
-Imagine you're a data analyst at Lamna Healthcare. You've built an ontology in Fabric IQ. Hospital, Department, Room, Patient, and VitalSignEquipment entity types are defined, bound to the lakehouse and eventhouse, and structurally sound. Now comes the reason you built it.
+Imagine you're a data analyst at Lamna Healthcare. You've built an ontology in Fabric IQ.
+
+> [!IMPORTANT]
+> Fabric IQ is currently in [preview](/fabric/fundamentals/preview).
+
+Hospital, Department, Room, Patient, and VitalSignEquipment entity types are defined, bound to the lakehouse and eventhouse, and structurally sound. Now comes the reason you built it.
 
 The clinical operations manager stops by with a question: "Which rooms in the Intensive Care Unit currently have patients, and which vital sign monitors are active there?" Before the ontology, answering that question meant writing a multi-table SQL join—linking patient assignment records to rooms, rooms to departments, and departments to equipment logs. With the ontology in place, you can explore the answer visually by following named relationships across your semantic layer.
 

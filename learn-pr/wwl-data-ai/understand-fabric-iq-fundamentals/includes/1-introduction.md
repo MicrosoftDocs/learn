@@ -1,4 +1,7 @@
-Imagine you're a data analyst at Lamna Healthcare, responsible for helping clinical operations teams understand patient care patterns across your facility. Patient records sit in lakehouse tables while vital signs stream continuously from ICU monitoring equipment into an eventhouse. When hospital administrators ask questions like "Which patients in the ICU have elevated vital signs?" or "How many beds are occupied on the surgical floor?", you need to manually join lakehouse tables with eventhouse streams, translate business terms into technical column names, and write complex queries.
+Imagine you're a data analyst at Lamna Healthcare, responsible for helping clinical operations teams understand patient care patterns across your facility.
+
+> [!IMPORTANT]
+> Fabric IQ is currently in [preview](/fabric/fundamentals/preview). Patient records sit in lakehouse tables while vital signs stream continuously from ICU monitoring equipment into an eventhouse. When hospital administrators ask questions like "Which patients in the ICU have elevated vital signs?" or "How many beds are occupied on the surgical floor?", you need to manually join lakehouse tables with eventhouse streams, translate business terms into technical column names, and write complex queries.
 
 Business users can't explore the data themselves—they depend on you to write queries each time they have a question. By the time you deliver answers, clinical conditions may have already changed.
 
