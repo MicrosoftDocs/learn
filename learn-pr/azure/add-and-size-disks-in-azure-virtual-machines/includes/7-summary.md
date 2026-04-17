@@ -1,6 +1,6 @@
 In this module, you learned how to add new disks to your VMs to increase their storage. In addition, you explored the different disk types available, features of Standard versus Premium storage, and how to resize existing disks.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
 ## Learn more
 

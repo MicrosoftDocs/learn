@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-manage-records.exercise-create-auto-apply
+title: Exercise - Auto-apply retention label using a trainable classifier
+metadata:
+  title: Exercise - Auto-apply retention label using a trainable classifier
+  description: "Exercise - Auto-apply retention label using a trainable classifier."
+  ms.date: 07/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/exercise-create-auto-apply.md)]

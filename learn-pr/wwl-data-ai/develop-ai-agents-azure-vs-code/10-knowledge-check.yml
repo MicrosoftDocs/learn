@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge of AI agent development with Microsoft Foundry.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the primary benefit of using Microsoft Foundry Agent Service compared to building agents with standard APIs?
+    choices:
+    - content: It provides access to more powerful AI models
+      isCorrect: false
+      explanation: Incorrect. Microsoft Foundry Agent Service uses the same models available through standard APIs.
+    - content: It requires no Azure subscription
+      isCorrect: false
+      explanation: Incorrect. You need an Azure subscription to use Microsoft Foundry Agent Service.
+    - content: It handles tool calling, state management, and infrastructure automatically
+      isCorrect: true
+      explanation: Correct. Microsoft Foundry Agent Service manages the complexity of tool calling, conversation state, and infrastructure, reducing development effort.
+    - content: It only works with the Azure portal
+      isCorrect: false
+      explanation: Incorrect. Microsoft Foundry Agent Service works with both the Azure portal and Visual Studio Code extension.
+  - content: How does Microsoft Foundry Agent Service handle conversation state?
+    choices:
+    - content: By requiring developers to manually manage conversation history
+      isCorrect: false
+      explanation: Incorrect. The service handles conversation state automatically.
+    - content: Through external database connections
+      isCorrect: false
+      explanation: Incorrect. The service manages state internally without requiring external databases.
+    - content: Through the Responses API which automatically manages conversation context
+      isCorrect: true
+      explanation: Correct. The Responses API handles conversation context automatically, removing the need for manual state management.
+    - content: Using local file storage on the client device
+      isCorrect: false
+      explanation: Incorrect. Conversation state is managed by the service, not stored locally on client devices.
+  - content: Which of the following is NOT a recommended security practice for AI agents?
+    choices:
+    - content: Using role-based access controls
+      isCorrect: false
+      explanation: Incorrect. This is a recommended security practice.
+    - content: Implementing prompt filtering and validation
+      isCorrect: false
+      explanation: Incorrect. This is a recommended security practice to prevent injection attacks.
+    - content: Maintaining comprehensive logging and traceability
+      isCorrect: false
+      explanation: Incorrect. This is a recommended security practice for auditability.
+    - content: Allowing agents unrestricted access to all enterprise data
+      isCorrect: true
+      explanation: Correct. This is NOT recommended. Agents should follow least privilege principles with restricted access based on their specific needs.
+  - content: What happens when an agent determines it needs a tool to respond to a user request?
+    choices:
+    - content: The agent asks the user for permission to use the tool
+      isCorrect: false
+      explanation: Incorrect. Agents don't request permission; they automatically use configured tools.
+    - content: The agent stops processing and waits for developer input
+      isCorrect: false
+      explanation: Incorrect. Agents handle tool invocation automatically without developer intervention.
+    - content: The agent automatically invokes the tool, processes results, and incorporates them into its response
+      isCorrect: true
+      explanation: Correct. Microsoft Foundry Agent Service handles the complete tool-calling lifecycle automatically.
+    - content: The agent sends the request to a separate processing queue
+      isCorrect: false
+      explanation: Incorrect. Tool execution happens synchronously as part of the response generation process.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dimensional-models-fabric.exercise
+title: "Exercise: Design and implement a dimensional model"
+metadata:
+  title: "Exercise: Design and Implement a Dimensional Model"
+  description: "Interactive exercise to design and implement a star schema dimensional model in a Fabric Warehouse"
+  ms.date: 02/25/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

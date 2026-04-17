@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-quality-service-azure-virtual-desktop
 title: Create an RDP connection to a Windows VM using Azure Bastion
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an RDP connection to a Windows VM using Azure Bastion
   description: "Create an RDP connection to a Windows VM using Azure Bastion"
   ms.date: 08/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-plan-implement-quality-service-azure-virtual-desktop.md)]
+  [!include[](includes/9-plan-implement-quality-service-azure-virtual-desktop.md)]

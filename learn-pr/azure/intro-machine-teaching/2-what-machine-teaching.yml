@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-machine-teaching.what
 title: What is Machine Teaching?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Machine Teaching?
   description: An introduction to the concept when designing Autonomous AI.
   ms.date: 10/17/2022
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-machine-teaching.md)] 
+  [!include[](includes/2-what-machine-teaching.md)] 

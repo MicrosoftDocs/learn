@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-regulatory-compliance.introduction
+metadata:
+  title: Introduction
+  description: Introduction to evaluating regulatory compliance in Microsoft Defender for Cloud using the Contoso Healthcare scenario.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

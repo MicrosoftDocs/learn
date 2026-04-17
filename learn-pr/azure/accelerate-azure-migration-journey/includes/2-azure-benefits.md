@@ -15,7 +15,7 @@ Datacenters are expensive. The costs of real estate, power, servers, storage, ne
 
 :::image type="content" source="../media/optimize-it-spend.png" alt-text="Graph showing the difference between pay as you go Azure resources and reserved instance pricing.":::
 
-In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-impact-azure-iaas/?azure-portal=true), customers report a 25 percent increase in productivity of IT staff, $10M in savings from avoided hardware, software, and staff costs, and a 478 percent return on investments.
+In a Forrester study, customers report a 25 percent increase in productivity of IT staff, a 478 percent return on investments, and $10M in savings from avoided hardware, software, and staff costs.
 
 ### Pay less with Azure
 
@@ -47,7 +47,7 @@ To ensure resiliency, there's a minimum of three separate zones in all enabled r
 
 ### Maintenance and Service Health alerts
 
-Azure has invested in improving zero-impact and low-impact update technologies including hot patching, live migration, and in-place migration. The Azure operations team deploys dozens of security and reliability patches to host infrastructure each year, many of which were implemented with no customer impact or downtime.
+Azure has invested in improving zero-impact and low-impact update technologies including hotpatches, live migration, and in-place migration. The Azure operations team deploys dozens of security and reliability patches to host infrastructure each year, many of which were implemented with no customer impact or downtime.
 
 ### Machine learning-driven failure prediction
 
@@ -81,7 +81,7 @@ Protect your workloads quickly with built-in controls and services in Azure acro
 
 #### Detect threats early with unique intelligence
 
-Identify new threats and respond quickly with services that are informed by real-time global cybersecurity intelligence delivered at cloud scale. These actionable insights are developed by analyzing vast sources including 18 billion Bing web pages, 400 billion emails, 1 billion Windows device updates, and 450 billion monthly authentications. Using machine learning, behavioral analytics, and application-based intelligence, Microsoft data scientists analyze the flood of data in the Microsoft Intelligent Security Graph. The resulting insights inform services in Azure and help you detect threats faster.
+Services informed by real-time global cybersecurity intelligence delivered at cloud scale help identify new threats and quick responses. These actionable insights are developed by analyzing vast sources including 18 billion Bing web pages, 400 billion emails, 1 billion Windows device updates, and 450 billion monthly authentications. Using machine learning, behavioral analytics, and application-based intelligence, Microsoft data scientists analyze the flood of data in the Microsoft Intelligent Security Graph. The resulting insights inform services in Azure and help you detect threats faster.
 
 ## Hybrid flexibility
 
@@ -99,7 +99,7 @@ Increase agility with best-in-class Azure infrastructure that scales to your bus
 
 Most Azure solutions can be manually scaled up or down, with many also allowing for autoscale. Autoscale is a built-in feature of [App Services](/azure/azure-monitor/autoscale/autoscale-overview?azure-portal=true), [Azure Kubernetes Services](/azure/aks/cluster-autoscaler?azure-portal=true), [Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview?azure-portal=true), and [Azure Cosmos DB](/azure/cosmos-db/provision-throughput-autoscale?azure-portal=true).
 
-Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound, others memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
+Scaling helps applications perform their best when demand changes. Performance means different things for different applications. Some apps are CPU-bound, while others are memory-bound. For example, you could have a web app that handles millions of requests during the day and none at night. Autoscale can scale your service by any of these or by a custom metric you define. An Azure administrator can scale other services such as Azure Database or Azure SQL to increase the size or responsiveness.
 
 ### Increase performance
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-data-with-document-intelligence.use-prebuilt-models
+title: Use prebuilt models
+metadata:
+  title: Use prebuilt models
+  description: Learn about document analysis models and prebuilt models for extracting data from common document types.
+  ms.date: 03/11/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-use-prebuilt-models.md)]

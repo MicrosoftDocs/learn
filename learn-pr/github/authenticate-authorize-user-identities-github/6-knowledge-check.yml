@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.authenticate-authorize-user-identities-github.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Review what you learned.
-  ms.date: 04/09/2024
+  ms.date: 04/09/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:
@@ -60,4 +61,4 @@ quiz:
           explanation: "This form of 2FA relies on the assumption that the user is the only person with access to their mobile device."
         - content: "Security Key"
           isCorrect: false
-          explanation: "A user can register a new security key through accessing their profile settings and following the security key’s documentation."
+          explanation: "A user can register a new security key through accessing their profile settings and following the security key's documentation."

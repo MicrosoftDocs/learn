@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers.create-maintenance-configuration-schedule
 title: Create a maintenance configuration schedule
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a maintenance configuration schedule
   description: "Create a maintenance configuration schedule"
   ms.date: 06/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-create-maintenance-configuration-schedule.md)]
+  [!include[](includes/5-create-maintenance-configuration-schedule.md)]

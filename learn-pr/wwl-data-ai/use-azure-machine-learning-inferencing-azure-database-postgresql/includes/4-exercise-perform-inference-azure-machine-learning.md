@@ -4,7 +4,7 @@ Now, it's time for you to train a model and invoke it from within an Azure Datab
 
 > [!Note]
 >
-> To complete this exercise, you'll need an [Azure subscription](https://azure.microsoft.com/free).
+> To complete this exercise, you'll need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 Launch the exercise and follow the instructions.
 

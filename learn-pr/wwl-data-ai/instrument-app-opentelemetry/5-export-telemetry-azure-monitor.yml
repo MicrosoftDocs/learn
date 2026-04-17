@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instrument-app-opentelemetry.export-telemetry-azure-monitor
+title: Export telemetry to Azure Monitor
+metadata:
+  title: Export Telemetry to Azure Monitor
+  description: Export telemetry to Azure Monitor
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-export-telemetry-azure-monitor.md)]

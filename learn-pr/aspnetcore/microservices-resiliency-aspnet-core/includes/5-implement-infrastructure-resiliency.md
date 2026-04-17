@@ -9,7 +9,7 @@ The *control plane* component has many components that support managing the serv
 * Security management for things like strong identity and certificates for mTLS.
 * Metrics or observability to collect and aggregate metrics and telemetry from the apps.
 
-The *data plane* component consists of proxies that are transparently injected alongside each service; this is known as the Sidecar pattern. Each proxy is configured to control the network traffic in and out of the pod that contains your service. This configuration allows each proxy to be configured to:
+The *data plane* component consists of proxies that are transparently injected alongside each service, which is known as the Sidecar pattern. Each proxy is configured to control the network traffic in and out of the pod that contains your service. This configuration allows each proxy to be configured to:
 
 * Secure traffic via mTLS.
 * Dynamically route traffic.

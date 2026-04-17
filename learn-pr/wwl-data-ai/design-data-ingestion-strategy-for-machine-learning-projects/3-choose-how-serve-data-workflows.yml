@@ -2,13 +2,11 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.choose-how-serve-data-workflows
 title: Choose how to serve data to machine learning workflows
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose how to serve data to machine learning workflows
   description: Choose how to serve data to machine learning workflows
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/20/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-pc-overview.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Copilot+ PC overview" module.
+  ms.date: 08/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

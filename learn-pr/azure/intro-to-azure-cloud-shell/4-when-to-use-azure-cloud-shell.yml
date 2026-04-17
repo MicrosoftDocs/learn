@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-cloud-shell.when-to-use-azure-cloud-shell
 title: When should you use Azure Cloud Shell?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When should you use Azure Cloud Shell?
   description: This unit describes scenarios that are suitable for the use of Azure Cloud Shell.
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-cloud-shell.md)]
-
+

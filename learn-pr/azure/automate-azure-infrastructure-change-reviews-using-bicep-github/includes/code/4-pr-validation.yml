@@ -1,7 +1,0 @@
-name: pr-validation
-
-on: pull_request
-
-jobs:
-  lint:
-    uses: ./.github/workflows/lint.yml

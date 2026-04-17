@@ -23,7 +23,7 @@ Database-level rules offer more specific control within individual databases. Yo
 
 When connecting, Azure SQL Database checks for a database-level firewall rule specific to the provided database name. If that rule isn't found, it checks the server-level IP firewall rules, which apply to all databases on the server. If either rule exists, the connection is established.
 
-If neither rule exists, and the user is using SQL Server Management Studio or Azure Data Studio to connect, they'll be prompted to create a firewall rule.
+If neither rule exists, and the user is using SQL Server Management Studio to connect, they'll be prompted to create a firewall rule.
 
 :::image type="content" source="../media/3-database-firewall-rule.png" alt-text="Screenshot showing the new firewall rule dialog from SQL Server Management Studio." lightbox="../media/3-database-firewall-rule.png":::
 

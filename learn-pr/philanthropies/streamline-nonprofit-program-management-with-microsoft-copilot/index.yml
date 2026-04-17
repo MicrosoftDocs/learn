@@ -6,6 +6,7 @@ metadata:
   author: CourtneyHMicrosoft
   ms.author: anruss
   ms.date: 01/14/2025
+  ms.update-cycle: 180-days
   ms.service: artificial-intelligence
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
@@ -32,7 +33,7 @@ roles:
   - business-user
   - business-owner
 products:
-  - ai-services
+  - foundry-tools
   - m365-apps
   - ms-copilot
 subjects:

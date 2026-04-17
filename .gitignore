@@ -26,3 +26,8 @@ Thumbs.db
 *.iws
 *.ipr
 *.ids
+
+######################
+# Custom reference files
+######################
+robbarefoot-content-map.json

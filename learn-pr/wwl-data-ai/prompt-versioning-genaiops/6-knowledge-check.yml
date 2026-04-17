@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prompt-versioning-genaiops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for prompt versioning module"
+  ms.date: 01/26/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "What happens when you create or update an agent in Microsoft Foundry?"
+    choices:
+    - content: "The existing agent version is overwritten with no history."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Foundry preserves agent version history."
+    - content: "A new agent version is created automatically, whether you use the portal or the Python SDK."
+      isCorrect: true
+      explanation: "Correct. Microsoft Foundry creates a new version whenever you create or update an agent, maintaining version history."
+    - content: "Version numbers must be manually assigned in your code."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Foundry automatically assigns incremental version numbers."
+  - content: "In a proper prompt workflow, what should happen before a prompt change reaches production?"
+    choices:
+    - content: "Changes should be deployed immediately to get real user feedback."
+      isCorrect: false
+      explanation: "Incorrect. Deploying directly to production skips critical validation steps."
+    - content: "Changes should be tested in development, validated in staging, reviewed by the team, and then deployed with monitoring."
+      isCorrect: true
+      explanation: "Correct. This systematic approach ensures changes are validated at each stage before impacting users."
+    - content: "Only the person who wrote the prompt needs to approve it."
+      isCorrect: false
+      explanation: "Incorrect. Team review provides valuable perspective and catches issues the author might miss."
+  - content: "What do Git tags provide for agent deployments?"
+    choices:
+    - content: "They automatically deploy agents to production."
+      isCorrect: false
+      explanation: "Incorrect. Git tags mark versions but don't trigger deployments by themselves."
+    - content: "They create a traceable relationship between repository versions and deployed agents, simplifying debugging and rollback."
+      isCorrect: true
+      explanation: "Correct. Git tags enable you to quickly identify which repository state corresponds to any deployed agent version."
+    - content: "They replace the need for commit messages."
+      isCorrect: false
+      explanation: "Incorrect. Tags complement commit messages by marking specific deployment milestones."

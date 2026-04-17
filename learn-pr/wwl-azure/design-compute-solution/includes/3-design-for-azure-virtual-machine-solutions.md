@@ -28,8 +28,6 @@ The first thing to think about isn't your virtual machines at all - it's the net
 
 Some developers don't give much thought about the name for a virtual machine. However, the **virtual machine name** defines a manageable **Azure resource**, and the value isn't easy to change. Choose machine names that are meaningful and consistent, so you can easily identify what each virtual machine does. 
 
-Consider how to name the first development web server for Tailwind Traders in the US South Central location. In this scenario, you might use the machine name `devusc-webvirtual machine01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
-
 #### Virtual machine location
 
 Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic regions like West US, North Europe, Southeast Asia, and so on. The datacenters provide redundancy and availability.
@@ -59,7 +57,7 @@ The best way to determine the appropriate machine size is to consider the type o
 
 A subscription is billed two separate costs for every virtual machine: _compute_ and _storage_. By separating these costs, you can scale them independently and only pay for what you need.
 
-- **Compute costs**: Compute expenses are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, you're charged for only 55 minutes of usage. You're not charged for compute capacity if you stop and deallocate the virtual machine. The [hourly price](https://azure.microsoft.com/pricing/details/virtual-machines/linux/) varies based on the virtual machine size and operating system you select.
+- **Compute costs**: Compute expenses are priced on a per-hour basis but billed on a per-minute basis. If the virtual machine is deployed for 55 minutes, you're charged for only 55 minutes of usage. You're not charged for compute capacity if you stop and deallocate the virtual machine. The hourly price varies based on the virtual machine size and operating system you select.
 
 - **Storage costs**: You're charged separately for the Azure Storage the virtual machine uses. The status of the virtual machine has no relation to the Azure Storage charges that are incurred. You're always charged for any Azure Storage used by the disks. 
 
@@ -78,3 +76,6 @@ Azure provides various operating system images that you can install into the vir
 #### Business application
 
 Try the [Azure Virtual Machines selector tool](https://azure.microsoft.com/pricing/vm-selector/) to find other sizes that best fit your workload.
+
+> [!TIP]
+> Learn more about virtual machines with the [Introduction to Azure virtual machines](/training/modules/intro-to-azure-virtual-machines/) module.

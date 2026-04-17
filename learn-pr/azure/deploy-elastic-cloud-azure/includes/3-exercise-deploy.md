@@ -1,6 +1,6 @@
 The Azure Marketplace provides ready-to-use options to help you get started with Elastic Cloud on Azure.
 
-Recall that Tailwind Traders has asked you to propose a solution for improving the search experience for its customers. In this unit, you'll deploy Elastic Cloud on Azure so they can demo the Elasticsearch engine. You'll need an Azure account to complete this exercise. If you don't currently have one, you can [sign up for a free trial](https://azure.microsoft.com/free/).
+Recall that Tailwind Traders has asked you to propose a solution for improving the search experience for its customers. In this unit, you'll deploy Elastic Cloud on Azure so they can demo the Elasticsearch engine. You'll need an Azure account to complete this exercise. If you don't currently have one, you can [sign up for a free trial](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 1. From the Azure Marketplace listing page, click **Get it now** and then agree to the authentication request and select **Continue**. You’ll be redirected to the Azure portal.
 

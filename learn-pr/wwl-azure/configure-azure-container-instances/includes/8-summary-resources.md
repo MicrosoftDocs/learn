@@ -13,7 +13,10 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - Compare benefits and usage cases for containers and virtual machines. 
 
-- Compare benefits and usage cases for Azure Container Apps and Azure Kubernetes Service. 
+- What are the best practices for configuring Azure Container Instances for task-based workloads? Explain the restart policies. 
+  
+- How do I deploy a multi-container group in Azure Container Instances using Bicep? Show an example with environment variables.
+
 
 ## Learn more with documentation
 

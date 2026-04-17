@@ -28,13 +28,12 @@ roles:
 - solution-architect
 - support-engineer
 products:
-- ai-services
+- foundry-tools
 - azure-machine-learning
 - entra-id
 - azure
 modules:
 - learn.secure-azure-openai-authentication-authorization
-- learn.wwl.secure-ai-services
 - learn.introduction-to-azure-machine-learning-auth
 trophy:
   uid: learn.manage-iam-for-ai-workloads-on-azure.trophy

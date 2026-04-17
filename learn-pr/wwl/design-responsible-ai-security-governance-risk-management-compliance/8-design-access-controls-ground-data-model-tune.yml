@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-access-controls-ground-data-model-tune
+title: "Design access controls for grounding data and model tuning"
+metadata:
+  title: "Design Access Controls for Grounding Data and Model Tuning"
+  description: "Learn how to design access controls for grounding data and model tuning workflows to ensure secure, compliant, and responsible AI system outputs."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-design-access-controls-ground-data-model-tune.md)]

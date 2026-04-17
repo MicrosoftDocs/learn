@@ -8,5 +8,4 @@ Improving your reliability can definitely be a challenge, but it's a necessary c
 ## Additional Reading
 
 - [What is DevOps?](/azure/devops/learn/what-is-devops)
-- [DevOps for Dummies](https://www.dummies.com/business/operations-management/devops-for-dummies-cheat-sheet/)
 - [Azure SRE hub](/azure/site-reliability-engineering/)

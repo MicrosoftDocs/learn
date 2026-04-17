@@ -2,10 +2,8 @@
 uid: learn.get-started-prompt-flow-ai-studio.exercise
 title: Exercise - Get started with prompt flow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Get started with prompt flow
-  description: Get started with prompt flow in the Azure AI Foundry.
+  description: Get started with prompt flow in the Microsoft Foundry.
   author: madiepev
   ms.author: madiepev
   ms.date: 11/26/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise.md)]
-
+

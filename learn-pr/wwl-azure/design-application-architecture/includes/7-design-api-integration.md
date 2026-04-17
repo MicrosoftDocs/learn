@@ -39,6 +39,15 @@ Review the following criteria, and think about what APIs and API management are 
 
 - **Consider standardizing disparate APIs**. Use an API management solution to standardize API specs, generate documentation, and create a consistent base URL for ease of use. Azure API Management can provide consistent analytics across multiple APIs and ensure compliance across all APIs.
 
+- **Consider service tier selection**. Choose the appropriate API Management tier based on your deployment and operational needs:
+   - **Classic tiers** (Developer, Basic, Standard, Premium): For existing workloads with established operational patterns.
+   - **V2 tiers** (Basic v2, Standard v2, Premium v2): For new deployments requiring fast provisioning (minutes vs hours). Standard v2 and Premium v2 add network isolation for private backends.
+   - **Consumption tier**: For serverless/microservice architectures with variable traffic patterns.
+   - **Premium v2**: Adds Workspaces for enterprise teams needing federated API management with centralized governance.
+
 - **Consider centralized API management**. Bring multiple APIs under a single administrative umbrella with Azure API Management and centralize all API operations. Without an API management service, each API is on its own in terms of administration, deployment, and developer access. A centralized model results in less duplicated effort and increases efficiency.
 
-- **Consider enhanced API security**. Azure API Management was designed with API security in mind. Use the service to manage permissions and access, and protect your APIs from malicious usage.  Azure API Management helps to achieve all corporate and government-related compliance.
+- **Consider enhanced API security**. Azure API Management was designed with API security in mind. Use the service to manage permissions and access, and protect your APIs from malicious usage. Azure API Management helps to achieve all corporate and government-related compliance.
+
+> [!TIP]
+> There's a lot more to learn in the [Explore API Management](/training/modules/explore-api-management/) module. 

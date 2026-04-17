@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-manage-containers-azure-container-registry.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Your team builds container images on developer workstations, leading to inconsistent results. You need to ensure all images are built in a controlled environment. Which Azure Container Registry feature addresses this requirement?"
+    choices:
+    - content: "ACR Tasks quick build"
+      isCorrect: true
+      explanation: "ACR Tasks quick build offloads image building to Azure, providing a consistent cloud environment that eliminates 'works on my machine' problems. Quick tasks use the az acr build command to build images in a controlled Azure environment."
+    - content: "Geo-replication"
+      isCorrect: false
+      explanation: "Geo-replication distributes images across multiple Azure regions for faster pulls but doesn't affect how images are built."
+    - content: "Repository namespaces"
+      isCorrect: false
+      explanation: "Repository namespaces organize images using forward-slash notation for logical grouping. They help with access control and organization but don't affect how images are built."
+  - content: "You need to deploy a container image to production and ensure every node in your Kubernetes cluster runs the exact same image version, even if someone pushes a new image with the same tag. How should you reference the image?"
+    choices:
+    - content: "By manifest digest"
+      isCorrect: true
+      explanation: "Manifest digests are immutable SHA-256 hashes that uniquely identify an image regardless of tags. Pulling by digest guarantees you get the exact image, even if someone pushes a new image with the same tag."
+    - content: "By the latest tag"
+      isCorrect: false
+      explanation: "The latest tag can change whenever a new image is pushed without specifying a tag. This makes deployments unpredictable and can result in different nodes running different image versions."
+    - content: "By semantic version tag"
+      isCorrect: false
+      explanation: "Semantic version tags like v1.2.0 can be overwritten with new images. While this is less common than overwriting latest, only digests provide guaranteed immutability."
+  - content: "Your AI application depends on a base image containing PyTorch. When the PyTorch team releases security patches to the base image, you want your application image to rebuild automatically. Which ACR Tasks trigger type provides this capability?"
+    choices:
+    - content: "Base image update trigger"
+      isCorrect: true
+      explanation: "Base image update triggers detect changes to parent images and automatically rebuild dependent images. This capability keeps your application images current with security patches in base images."
+    - content: "Source code commit trigger"
+      isCorrect: false
+      explanation: "Source code triggers respond to commits in your application's Git repository. They don't detect changes to base images in the registry."
+    - content: "Scheduled trigger"
+      isCorrect: false
+      explanation: "Scheduled triggers run at fixed intervals using cron expressions. While they can periodically rebuild images, they don't respond immediately to base image updates."
+  - content: "You're implementing a tagging strategy for production deployments. Your requirements include traceability to the source code commit and the ability to roll back to any previous version. Which tagging pattern best meets these requirements?"
+    choices:
+    - content: "Unique tags with Git commit SHA"
+      isCorrect: true
+      explanation: "Unique tags with Git commit SHA provide direct traceability to source code and guarantee each build is distinct for rollback. The immutable nature of unique tags ensures you can reference any specific build."
+    - content: "Stable tags like v1 and v2"
+      isCorrect: false
+      explanation: "Stable tags are reused across multiple image pushes, causing the tag to point to new images over time. This approach doesn't preserve previous versions for rollback."
+    - content: "Using only the latest tag"
+      isCorrect: false
+      explanation: "The latest tag provides no version tracking or rollback capability. It changes with each push and can't reference specific builds."
+  - content: "You deployed a critical AI inference API to production and need to prevent the container image from being accidentally deleted. Which ACR feature should you use?"
+    choices:
+    - content: "Image locking with write-enabled false"
+      isCorrect: true
+      explanation: "Setting write-enabled to false locks the image to prevent deletion or modification. Locked images remain available even when retention policies run, ensuring production deployments are protected."
+    - content: "Repository namespaces"
+      isCorrect: false
+      explanation: "Repository namespaces organize images using forward-slash notation but don't provide protection against deletion. Any image in a namespace can still be deleted by users with appropriate permissions."
+    - content: "Geo-replication"
+      isCorrect: false
+      explanation: "Geo-replication creates copies of images across regions for faster pulls. However, deleting an image in one region removes it from all replicated regions, so it doesn't protect against accidental deletion."

@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-code-performance-github-copilot-agent.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment.
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the primary purpose of performance profiling in software development?"
+    choices:
+    - content: "To optimize every line of code in an application for maximum speed."
+      isCorrect: false
+      explanation: "Incorrect. Performance profiling is about identifying the specific areas that matter most, not optimizing everything."
+    - content: "To identify the code that represents performance bottlenecks and focus optimization efforts there."
+      isCorrect: true
+      explanation: "Correct. Performance profiling helps you find the specific functions or operations consuming the most resources, so you can focus on optimizing what actually matters."
+    - content: "To replace all manual code reviews with automated performance analysis."
+      isCorrect: false
+      explanation: "Incorrect. Performance profiling is a diagnostic tool, not a replacement for code reviews or development processes."
+  - content: "Why is establishing a performance baseline critical before making optimizations?"
+    choices:
+    - content: "It's required by most development frameworks and tools."
+      isCorrect: false
+      explanation: "Incorrect. While good practice, baselines aren't typically required by frameworks."
+    - content: "It provides a reference point to objectively measure if optimizations helped or made things worse."
+      isCorrect: true
+      explanation: "Correct. Without a baseline, you can't know if your changes improved performance, had no effect, or potentially caused regressions elsewhere."
+    - content: "It automatically fixes performance issues without manual intervention."
+      isCorrect: false
+      explanation: "Incorrect. Baselines are measurements for comparison, not automatic fixes."
+  - content: "Which .NET tool is recommended for comprehensive performance benchmarking with accurate measurements?"
+    choices:
+    - content: "System.Diagnostics.Stopwatch for all performance measurements."
+      isCorrect: false
+      explanation: "Incorrect. While Stopwatch is useful for basic timing, it doesn't handle benchmarking complexities like just-in-time compilation and garbage collection interference."
+    - content: "BenchmarkDotNet for handling just-in-time compilation, garbage collection interference, and measurement precision."
+      isCorrect: true
+      explanation: "Correct. BenchmarkDotNet is designed for accurate performance benchmarking and automatically handles common benchmarking pitfalls."
+    - content: "Console.WriteLine statements to output timing information."
+      isCorrect: false
+      explanation: "Incorrect. Console output isn't a reliable or accurate method for performance measurement."
+  - content: "What type of questions can GitHub Copilot's Ask mode help answer during performance analysis?"
+    choices:
+    - content: "Only basic syntax questions about programming languages."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode can provide much more sophisticated analysis including performance bottleneck identification."
+    - content: "Algorithmic inefficiencies, optimization suggestions, and potential risks of performance changes."
+      isCorrect: true
+      explanation: "Correct. Ask mode can analyze code complexity, suggest optimizations, provide examples, and help you understand risks before making changes."
+    - content: "Only questions about GitHub repository management and version control."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode focuses on code analysis and development guidance, not repository management."
+  - content: "What is the key difference between GitHub Copilot's Ask mode and Agent mode for performance optimization?"
+    choices:
+    - content: "Ask mode provides analysis and suggestions, while Agent mode implements changes directly in code files."
+      isCorrect: true
+      explanation: "Correct. Ask mode is conversational and provides guidance in the chat panel, while Agent mode autonomously executes refactoring tasks and edits files."
+    - content: "Ask mode only works with C# code, while Agent mode supports multiple languages."
+      isCorrect: false
+      explanation: "Incorrect. Both modes support multiple programming languages, not just C#."
+    - content: "Ask mode requires a subscription, while Agent mode is free for all users."
+      isCorrect: false
+      explanation: "Incorrect. Both modes are part of GitHub Copilot, which requires a subscription."
+  - content: "When using GitHub Copilot Agent mode to refactor performance-critical code, what should you do first?"
+    choices:
+    - content: "Immediately start refactoring the slowest methods without any preparation."
+      isCorrect: false
+      explanation: "Incorrect. Refactoring should be done carefully with proper preparation to avoid breaking functionality."
+    - content: "Create unit tests that verify current behavior and ensure existing functionality is preserved."
+      isCorrect: true
+      explanation: "Correct. Before refactoring, you should create tests to verify current behavior, analyze security implications, and ensure safety measures are in place."
+    - content: "Delete all existing code and start over with a new implementation."
+      isCorrect: false
+      explanation: "Incorrect. Refactoring means improving existing code while preserving functionality, not rewriting from scratch."
+  - content: "What is a common performance optimization that Agent mode can help implement?"
+    choices:
+    - content: "Replacing efficient algorithms with slower but more readable ones."
+      isCorrect: false
+      explanation: "Incorrect. The goal is to improve performance while maintaining or improving readability, not to make code slower."
+    - content: "Converting linear searches to dictionary lookups and implementing intelligent caching mechanisms."
+      isCorrect: true
+      explanation: "Correct. Agent mode can help replace inefficient data structures like linear searches with optimized alternatives and add caching to avoid redundant operations."
+    - content: "Removing all error handling to make code run faster."
+      isCorrect: false
+      explanation: "Incorrect. Performance optimization should never compromise error handling or security. Agent mode helps maintain functionality while improving performance."

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-cosmos-db.exercise-create-resources-by-using-azure-portal
 title: 'Exercise: Create Azure Cosmos DB resources by using the Azure portal'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Create Azure Cosmos DB resources by using the Azure portal'
   description: "Exercise: Create Azure Cosmos DB resources by using the Azure portal"
   ms.date: 01/24/2025

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-iot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Windows IoT" module.
+  ms.date: 09/08/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Windows IoT?"
+    choices:
+        - content: "To replace desktop operating systems"
+          isCorrect: false
+          explanation: "Incorrect. Windows IoT is not intended to replace desktop OS."
+        - content: "To support dedicated IoT devices with enterprise-grade features"
+          isCorrect: true
+          explanation: "Correct. It is designed for specialized devices with features like security and cloud integration."
+        - content: "To manage mobile phones and tablets"
+          isCorrect: false
+          explanation: "Incorrect. Windows IoT is not focused on mobile device management."
+        - content: "To develop consumer applications"
+          isCorrect: false
+          explanation: "Incorrect. It supports custom and standard applications for IoT, not general consumer apps."
+  - content: "Which component ensures only trusted software runs during startup on Windows IoT devices?"
+    choices:
+        - content: "BitLocker"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker encrypts data, not controls startup software."
+        - content: "Windows Defender"
+          isCorrect: false
+          explanation: "Incorrect. It provides antivirus protection, not startup validation."
+        - content: "Secure Boot"
+          isCorrect: true
+          explanation: "Correct. It ensures only trusted software executes during startup."
+        - content: "Device Guard"
+          isCorrect: false
+          explanation: "Incorrect. It restricts app execution but does not manage startup integrity."
+  - content: "A company wants to monitor equipment health and automate reporting across its production line. How can Windows IoT help?"
+    choices:
+        - content: "By replacing all legacy hardware"
+          isCorrect: false
+          explanation: "Incorrect. Windows IoT supports legacy scenarios but doesn’t require full replacement."
+        - content: "By integrating with Azure for analytics and predictive maintenance"
+          isCorrect: true
+          explanation: "Correct. It enables cloud-based monitoring and optimization."
+        - content: "By disabling cloud connectivity for security"
+          isCorrect: false
+          explanation: "Incorrect. Cloud integration is a key benefit, not a risk."
+        - content: "By requiring manual updates for each device"
+          isCorrect: false
+          explanation: "Incorrect. It supports remote updates via cloud tools."
+  - content: "An organization uses kiosks and edge gateways with different architectures. Why is Windows IoT suitable?"
+    choices:
+        - content: "It only supports x86 devices"
+          isCorrect: false
+          explanation: "Incorrect. It supports more than just x86."
+        - content: "It requires identical hardware across deployments"
+          isCorrect: false
+          explanation: "Incorrect. It supports diverse hardware."
+        - content: "It supports x64 and ARM64 architectures"
+          isCorrect: true
+          explanation: "Correct. This flexibility makes it suitable for varied devices."
+        - content: "It limits application compatibility"
+          isCorrect: false
+          explanation: "Incorrect. It supports both custom and standard Windows applications."
+  - content: "A facility needs to restrict user access and prevent misconfiguration on operator kiosks. What Windows IoT feature helps?"
+    choices:
+        - content: "Azure IoT Hub"
+          isCorrect: false
+          explanation: "Incorrect. It manages devices remotely, not user access."
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. It provides configuration tools, not access restrictions."
+        - content: "Lockdown Modes"
+          isCorrect: true
+          explanation: "Correct. They limit user access to prevent misconfiguration."
+        - content: "Secure Boot"
+          isCorrect: false
+          explanation: "Incorrect. It ensures startup integrity, not user access control."

@@ -11,7 +11,7 @@ In Exercise 4, you review the deployment of the services in the previous exercis
  -  **Task 2: Delete all resources.** You delete all resources provisioned in this lab.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [:::image type="content" source="../media/launch-exercise-162c1d6a.png" alt-text="Button to launch exercise.":::
 ](https://go.microsoft.com/fwlink/?linkid=2247093)

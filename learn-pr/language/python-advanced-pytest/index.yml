@@ -6,7 +6,7 @@ metadata:
   description: Take advantage of the advanced features of pytest, a popular test framework used to write and run tests in Python.
   ms.date: 4/12/2024
   author: alfredodeza
-  ms.author: alfredodeza
+  ms.author: orthomas
   ms.topic: module
 title: Advanced testing with pytest
 summary: Improve multi-input tests with parametrize and use pytest fixtures for reusable code.

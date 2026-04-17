@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-computer-vision-in-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 02/17/2026
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: ""
+  questions:
+  - content: "What is a multimodal model?"
+    choices:
+    - content: "A model that can only process images but not text."
+      isCorrect: false
+      explanation: "Multimodal models are designed to handle multiple types of input at the same time, such as text and images. "
+    - content: "A model that can understand and work with more than one type of data, such as text and images."
+      isCorrect: true
+      explanation: "Multimodal models are designed to handle multiple types of input at the same time, such as text and images. "
+    - content: "A model that generates video content only."
+      isCorrect: false
+      explanation: "Multimodal models are designed to handle multiple types of input at the same time, such as text and images. "
+  - content: "How can developers programmatically generate images using Foundry image generation models?"
+    choices:
+    - content: "By sending text prompts through the OpenAI Responses API using a deployed image model"
+      isCorrect: true
+      explanation: " Developers can submit text prompts and retrieve generated images from Foundry models using the OpenAI Responses API."
+    - content: "By uploading images through the Foundry Playground UI."
+      isCorrect: false
+      explanation: "The Foundry Playground UI is for interacting with models, not for programmatically generating images."
+    - content: "By calling the GPT-4.1 model endpoint."
+      isCorrect: false
+      explanation: "GPT-4.1 is a multimodal model that can process text and images together. It can't generate images."
+  - content: "When you generate images programmatically using the OpenAI Python SDK with Microsoft Foundry, which value should you pass as the model parameter in the request?"
+    choices:
+    - content: "The original base model name (for example, gpt-image-1.5)."
+      isCorrect: false
+      explanation: "In Microsoft Foundry, API calls reference the deployment name, not the underlying base model name."
+    - content: "The deployment name you gave the image generation model in your Foundry resource."
+      isCorrect: true
+      explanation: "In Microsoft Foundry, API calls reference the deployment name, which is the name you gave the model."
+    - content: "The name you gave your Foundry resource."
+      isCorrect: false
+      explanation: "You need to provide the deployment name of the model, not the Foundry resource name, when making API calls to generate images."
+  - content: "Why is video generation with Sora models in Microsoft Foundry handled as an asynchronous job?"
+    choices:
+    - content: "Because video generation requires user interaction during rendering."
+      isCorrect: false
+      explanation: "Video generation doesn't require user interaction during rendering."
+    - content: "Because the REST API doesn't support synchronous requests."
+      isCorrect: false
+      explanation: "REST APIs absolutely can be synchronous. In this content, the reason given for async is workload duration and compute cost, not that it's not possible to process synchronously."
+    - content: "Because video generation is resource‑intensive and takes time to complete."
+      isCorrect: true
+      explanation: "Video generation is computationally intensive and can take several minutes to complete. For this reason, Foundry runs video generation as an asynchronous process where you create a job, poll for its status, and download the video once it's finished."

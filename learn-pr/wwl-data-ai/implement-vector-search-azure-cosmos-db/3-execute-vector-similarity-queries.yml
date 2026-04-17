@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-cosmos-db.execute-vector-similarity-queries
+title: Execute vector similarity queries for semantic search
+metadata:
+  title: Execute Vector Similarity Queries for Semantic Search
+  description: Execute vector similarity queries for semantic search
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-execute-vector-similarity-queries.md)]

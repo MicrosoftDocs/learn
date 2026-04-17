@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-processes-in-fabric.design-schedules-and-event-based-triggers
+title: Design schedules and event based triggers
+metadata:
+  title: Design schedules and event based triggers
+  description: "Design pipeline schedules and event based triggers."
+  ms.date: 11/14/2024
+  author: jamesh
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - DP-700
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-design-schedules-and-event-based-triggers.md)]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-generative-ai-model-performance
+metadata:
+  title: Optimize generative AI model performance with Microsoft Foundry
+  description: Explore complementary strategies to optimize generative AI model performance, including prompt engineering, system messages, model parameters, Retrieval Augmented Generation (RAG), and fine-tuning. Learn when to use each strategy and how to combine them.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/24/2026
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
+title: Optimize generative AI model performance with Microsoft Foundry
+summary: "Explore complementary strategies to optimize generative AI model performance. Learn how to apply prompt engineering, ground your model with RAG, and fine-tune for consistent behavior—and when to combine these approaches."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Apply prompt engineering techniques including system messages, few-shot learning, and model parameters to optimize model output.
+    - Understand when and how to ground a language model using Retrieval Augmented Generation (RAG).
+    - Identify when fine-tuning a model improves behavioral consistency.
+    - Compare optimization strategies and determine when to combine them.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-scientist
+  - ai-engineer
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.optimize-generative-ai-model-performance.introduction
+- learn.wwl.optimize-generative-ai-model-performance.prompt-engineering
+- learn.wwl.optimize-generative-ai-model-performance.retrieval-augmented-generation
+- learn.wwl.optimize-generative-ai-model-performance.fine-tune-model
+- learn.wwl.optimize-generative-ai-model-performance.compare-combine-strategies
+- learn.wwl.optimize-generative-ai-model-performance.exercise
+- learn.wwl.optimize-generative-ai-model-performance.knowledge-check
+- learn.wwl.optimize-generative-ai-model-performance.summary
+badge:
+  uid: learn.wwl.optimize-generative-ai-model-performance.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.polish-vision.enhance-videos-microsoft-designer
+
+title: Enhance videos with Microsoft Designer
+metadata:
+  title: Enhance Videos with Microsoft Designer
+  description: "Microsoft Designer extends its role in post-production by enabling creators to build scene enhancements, stylized backgrounds, title cards, and motion graphics that polish and unify a music video's visual identity."
+  ms.date: 4/25/2025
+  author: kariannab-ms
+  ms.author: kbarreto
+  ms.topic: unit
+  
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-enhance-videos-microsoft-designer.md)]

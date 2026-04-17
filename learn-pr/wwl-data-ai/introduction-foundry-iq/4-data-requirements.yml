@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-foundry-iq.data-requirements
+metadata:
+  title: Configure data sources for knowledge bases
+  description: Learn how to configure different data sources for Foundry IQ knowledge bases, including Azure AI Search, Blob Storage, Web, SharePoint, and OneLake options.
+  ms.date: 01/16/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Configure data sources for knowledge bases
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-data-requirements.md)]

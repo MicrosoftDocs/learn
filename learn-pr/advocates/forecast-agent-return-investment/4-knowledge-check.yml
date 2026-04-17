@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.forcast-agent-return-investment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Knowledge check
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+quiz:
+  questions:
+  - content: "Why is it important to measure both quantified cash flow impact and strategic value when evaluating AI investments?"
+    choices:
+    - content: "Because strategic value is easier to measure than cash flow impact."
+      isCorrect: false
+      explanation: "Strategic value is often harder to quantify, but still essential for long-term success."
+    - content: "Because AI investments only affect short-term financial metrics."
+      isCorrect: false
+      explanation: "AI investments influence both short-term financial outcomes and long-term strategic growth."
+    - content: "Because a complete ROI assessment requires capturing both tangible and intangible benefits."
+      isCorrect: true
+      explanation: "Measuring both dimensions ensures organizations can prioritize high-impact initiatives and align AI investments with broader business goals."
+  - content: "Why is Net Present Value (NPV) important when forecasting ROI for AI agent investments?"
+    choices:
+    - content: "It simplifies ROI by ignoring future costs and benefits."
+      isCorrect: false
+      explanation: "NPV accounts for the time value of money, making future costs and benefits more accurate—not ignored."
+    - content: "It ensures that only short-term gains are considered."
+      isCorrect: false
+      explanation: "NPV evaluates multi-year investments by discounting long-term cash flows to present value."
+    - content: "It provides a realistic financial view by discounting future cash flows."
+      isCorrect: true
+      explanation: "NPV reflects the time value of money, helping organizations assess whether long-term AI investments are financially sound."
+  - content: "What does sensitivity analysis reveal when comparing AI use cases?"
+    choices:
+    - content: "It confirms that ROI remains constant across all scenarios."
+      isCorrect: false
+      explanation: "ROI and NPV can vary significantly depending on changes in cost, adoption, and performance assumptions."
+    - content: "It helps identify which use case has the lowest upfront cost."
+      isCorrect: false
+      explanation: "Sensitivity analysis focuses on how financial outcomes shift under different scenarios, not just cost comparisons."
+    - content: "It shows how changes in key variables impact financial outcomes like NPV."
+      isCorrect: true
+      explanation: "Sensitivity analysis models optimistic, baseline, conservative, and worst-case scenarios to assess how assumptions affect NPV and investment risk."

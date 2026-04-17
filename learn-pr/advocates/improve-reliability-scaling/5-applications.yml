@@ -4,7 +4,7 @@ title: "Make applications scalable"
 metadata:
   title: "Make applications scalable"
   description: "Make applications scalable"
-  ms.date: 06/23/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -40,4 +40,16 @@ quiz:
     - content: 'SignalR'
       isCorrect: false
       explanation: 'SignalR is an open-source library that simplifies adding real-time web functionality to apps.'
+
+  - content: "If after scaling up or implementing read replicas, your database resources still don't meet the needs of your system, what is the next option?"
+    choices:
+    - content: 'in-memory caching'
+      isCorrect: false
+      explanation: "In-memory caching can improve performance, but it doesn't increase your database resources."
+    - content: 'decoupling'
+      isCorrect: false
+      explanation: 'Decoupling is a change that can help with differing resource needs between different dependent services.'
+    - content: 'sharding'
+      isCorrect: true
+      explanation: 'Correct. Sharding distributes data across multiple independent databases, enabling you to scale beyond the constraints of an individual database.'
   

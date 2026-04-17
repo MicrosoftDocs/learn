@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-educators.what-k-12-educators-need
+title: What K-12 educators need
+metadata:
+  title: What K-12 Educators Need
+  description: This content is part of the "Microsoft Education for K-12 educators" module.
+  ms.date: 07/17/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-what-k-12-educators-need.md)]

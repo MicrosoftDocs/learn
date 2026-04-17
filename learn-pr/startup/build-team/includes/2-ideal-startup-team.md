@@ -1,4 +1,4 @@
-It's important to consider the value of teams versus sole founders. Startups are often started by a sole founder. But before long, most sole founders realize that having a team is critical to the success of their company. Hiring a team doesn't just help manage the volume of work, but also helps tap into a broad range of skills and perspectives. Being part of a team also provides moral support.
+It's important to consider the value of teams versus sole founders. A sole founder often begins startups. But before long, most sole founders realize that having a team is critical to the success of their company. Hiring a team doesn't just help manage the volume of work, but also helps tap into a broad range of skills and perspectives. Being part of a team also provides moral support.
 
 In this unit, we're going to talk about startup teams. We'll first look at the personal attributes that are highly correlated with success in startup teams. We'll then consider functional roles and how to ensure that they're filled at the right time.
 
@@ -42,7 +42,7 @@ Founders who have this attribute:
 - Focus on taking action wherever possible.
 - Tend not to engage in prolonged deliberation or strategizing.
 - Are willing to make decisions based on imperfect information.
-- Aren't perfectionists, and realize that *perfect* is the enemy of *done*.
+- Aren't perfectionists and realize that *perfect* is the enemy of *done*.
 - Demonstrate in other aspects of life that they consistently take projects to completion.
 
 ### Determination
@@ -102,7 +102,7 @@ Let's now look at the core functional roles that need to be filled in a startup.
 
 The following table lists broad functional roles that need to be filled in most early-stage startup teams. In the early days, it's not essential (and often not possible) to have a one-to-one mapping of an individual to a role. One person might have multiple roles, and roles might be split across individuals.
 
-However, it's critical to make sure that every member of the team is clear on which functional roles they're responsible for. You also must make sure that all roles are covered, or that you have a plan for how to cover them as you grow your team.
+However, it's critical to make sure that every member of the team is clear on which functional roles they're responsible. You also must make sure that all roles are covered, or that you have a plan for how to cover them as you grow your team.
 
 |Functional role|Key tasks|
 |---|---|
@@ -117,7 +117,7 @@ However, it's critical to make sure that every member of the team is clear on wh
 
 Startup founders often struggle with the question of whether they should bring in another cofounder, hire an employee, or outsource tasks to a contractor.
 
-There are no absolutely right or wrong answers to this question, but let's review some practical considerations.
+There aren't absolutely right or wrong answers to this question, but let's review some practical considerations.
 
 ### Bringing in a cofounder
 

@@ -1,4 +1,4 @@
-Key phrase extraction is a [capability](/azure/ai-services/language-service/key-phrase-extraction/overview) offered by [Azure AI Language](/azure/ai-services/language-service/overview). It identifies the key phrases, or main concepts, in the text.
+Key phrase extraction is a [capability](/azure/ai-services/language-service/key-phrase-extraction/overview) offered by [Azure Language](/azure/ai-services/language-service/overview). It identifies the key phrases, or main concepts, in the text.
 
 There are several ways to call the [key phrase extraction API](/azure/ai-services/language-service/key-phrase-extraction/how-to/call-api). Here, you use the `azure_ai` extension to extract key phrases in SQL queries.
 

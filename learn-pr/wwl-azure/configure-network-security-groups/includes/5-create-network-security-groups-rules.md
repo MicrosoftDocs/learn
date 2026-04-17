@@ -17,3 +17,22 @@ Let's look at some of the properties you need to specify to create your security
 - **Priority**: Assigns the priority order value for the security rule. Rules are processed according to the priority order of all rules for a network security group, including a subnet and network interface. The lower the priority value, the higher priority for the rule.
 
    :::image type="content" source="../media/security-priority.png" alt-text="Screenshot that shows how to set the priority value for a security rule in the Azure portal.":::
+
+### When to use augmented security rules
+
+A single network security group rule can contain multiple values in the Source, Destination, and Service fields. This approach, called augmented security rules, reduces the total number of rules needed and simplifies NSG management. 
+
+**Things to know about augments security rules**
+
+- **Multiple IP addresses**: Combine multiple IP addresses into one rule.
+  
+- **Multiple port ranges**: Specify multiple ports and ranges in the Service field.
+  
+- **Service tags and ASGs**: Mix service tags, application security groups, and IP addresses within the same rule.
+  
+- **Reduced rule count**: Instead of creating separate rules for each IP range or port, combine them into fewer, more manageable rules.
+  
+In enterprise environments with many IP ranges or services, augmented rules prevent NSG rule sprawl. For example, instead of creating four separate rules for ports 80, 443, 8080, and 8090, create one rule with all the ports. 
+
+> [!TIP]
+> Expand your learning with the [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) training module. This module includes a sandbox where you can practice. 

@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.website-application-virtual-directory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge
+  ms.date: 03/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  questions:
+  - content: "You have an IIS server with one IP address and need to host three different HTTP websites that must all use TCP port 80. What is the recommended way to ensure IIS sends each request to the correct website?"
+    choices:
+    - content: "Assign a separate IP address to each site."
+      isCorrect: false
+      explanation: "This works, but it's an older/scarcer-resource approach and not the recommended standard when host names are available. IIS can already distinguish sites using bindings without requiring extra IPs."
+    - content: "Configure each site to listen on a unique port (80, 8080, 8081)."
+      isCorrect: false
+      explanation: "Using different ports can differentiate sites, but it's typically a dev/test or niche scenario because it forces nonstandard ports in URLs and client access. It's not the usual production recommendation when name-based hosting is possible."
+    - content: "Use host headers (host names) to differentiate the sites."
+      isCorrect: true
+      explanation: "IIS routes requests using the binding tuple: IP address + port + host name (Host header). With one IP and port 80, the host name is the differentiator, making host headers the standard production approach (with DNS pointing hostnames to the server)."
+    - content: "Install a separate instance of IIS for each site."
+      isCorrect: false
+      explanation: "IIS is designed to host multiple sites within one instance using bindings; installing multiple IIS instances is unnecessary and doesn't address request routing the way bindings do."
+  - content: "You need to host two HTTPS websites on the same IIS server using the same IP address and TCP port 443, and each site must use a different SSL/TLS certificate. Which IIS capability enables this?"
+    choices:
+    - content: "URL Rewrite."
+      isCorrect: false
+      explanation: "URL Rewrite applies after the request is received and processed at the HTTP layer; it doesn't help IIS choose the correct certificate during the TLS handshake."
+    - content: "IP and Domain Restrictions."
+      isCorrect: false
+      explanation: "This feature controls who may access a site (by client IP/domain). It doesn't control certificate selection or enable multiple certs on the same IP:443."
+    - content: "Server Name Indication (SNI)."
+      isCorrect: true
+      explanation: "SNI is a TLS extension that includes the hostname during SSL/TLS negotiation, allowing IIS to select the right certificate even when multiple sites share the same IP and port 443."
+    - content: "HTTP/2."
+      isCorrect: false
+      explanation: "HTTP/2 is a transport/application protocol enhancement; it doesn't enable multiple certificates on a single IP:443. Certificate selection happens earlier, during TLS negotiation."
+  - content: "A user gets HTTP 404.3 when requesting a .webp image from your IIS website, even though the file exists in the correct folder. What is the most likely cause and fix?"
+    choices:
+    - content: "The application pool is stopped; start the application pool."
+      isCorrect: false
+      explanation: "A stopped app pool is more associated with application availability issues (often 503). Here, the clue is 404.3, which indicates IIS refuses to serve the file due to extension handling/MIME mapping, not that the worker process is down."
+    - content: "The .webp extension isn't registered as a MIME type; add image/webp for .webp."
+      isCorrect: true
+      explanation: "IIS won't serve certain static file types unless they're mapped under staticContent / MIME types. Adding a MIME map for .webp to image/webp resolves the 404.3 extension configuration issue."
+    - content: "The file has incorrect NTFS permissions; grant read access to the app pool identity."
+      isCorrect: false
+      explanation: "Bad NTFS permissions commonly produce 401/403-style access problems. With 404.3, IIS is indicating an extension/MIME mapping configuration issue rather than a filesystem authorization issue."
+    - content: "Directory browsing is disabled; enable directory browsing."
+      isCorrect: false
+      explanation: "Directory browsing affects listing folder contents when no default document is present. It doesn't fix serving a specific static file when IIS is refusing the file type due to missing MIME mapping."
+  - content: "You want IIS to block clients from downloading any .bak files from your website (to avoid accidental exposure of backups). Which IIS feature should you configure?"
+    choices:
+    - content: "Authentication."
+      isCorrect: false
+      explanation: "Authentication controls how users prove identity (Windows/Basic/etc.). It doesn't specifically block a file type from being requested at all."
+    - content: "URL Rewrite."
+      isCorrect: false
+      explanation: "URL Rewrite can redirect/transform URLs, but the built-in security mechanism intended to deny by extension is Request Filtering, which runs early and is purpose-built for this."
+    - content: "Request Filtering."
+      isCorrect: true
+      explanation: "Request Filtering can deny specific file extensions (like .bak). When blocked by file extension, IIS logs/returns the 404.7 substatus for file name extension denied, which is exactly the protective behavior you want."
+    - content: "Authorization Rules."
+      isCorrect: false
+      explanation: "Authorization determines who is allowed to access content (users/roles), not whether a file extension is categorically blocked. Extension-level denial is handled by Request Filtering."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-secret-scanning-alerts-github-copilot-agent.examine-github-security-code-quality-tools
+title: Examine GitHub's security and code quality tools
+metadata:
+  title: Examine GitHub's security and code quality tools
+  description: "Examine GitHub's security and code quality tools."
+  ms.date: 02/16/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-examine-github-security-code-quality-tools.md)]

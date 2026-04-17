@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.purview-unified-catalog-understand
+metadata:
+  title: Understand How Microsoft Purview Unified Catalog Unifies Your Data Estate
+  description: Learn how Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance so teams can trust and use data with confidence.
+  ms.date: 09/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Understand how Microsoft Purview Unified Catalog unifies your data estate
+summary: |
+  Microsoft Purview Unified Catalog helps organizations overcome fragmented data estates by centralizing assets, adding business context, and applying consistent governance. Learn how unification supports trusted reporting, collaboration across roles, and confident decision-making at scale.
+abstract: |
+  In this unit you learn how to:
+  - Explain the challenges of fragmented data and how Unified Catalog solves them
+  - Identify the key elements of the Unified Catalog and their purpose
+  - Describe the roles and personas involved in data governance
+  - Apply responsible AI practices when using catalog features
+  - Compare the classic catalog with the Unified Catalog experience
+  - Summarize the benefits of unifying a data estate
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- data-analyst
+products:
+- microsoft-purview
+subjects:
+- data-management
+- compliance
+units:
+- learn.wwl.purview-unified-catalog-understand.introduction
+- learn.wwl.purview-unified-catalog-understand.fragmented-data-challenge
+- learn.wwl.purview-unified-catalog-understand.address-fragmentation-challenge
+- learn.wwl.purview-unified-catalog-understand.elements-unified-catalog
+- learn.wwl.purview-unified-catalog-understand.roles-personas-unified-catalog
+- learn.wwl.purview-unified-catalog-understand.responsible-ai-unified-catalog
+- learn.wwl.purview-unified-catalog-understand.from-classic-unified-catalog
+- learn.wwl.purview-unified-catalog-understand.unified-catalog-importance
+- learn.wwl.purview-unified-catalog-understand.knowledge-check
+- learn.wwl.purview-unified-catalog-understand.summary
+badge:
+  uid: learn.wwl.purview-unified-catalog-understand.badge

@@ -18,3 +18,7 @@ Here are some links to more information on the subjects we discussed in this mod
 - [Setting repository visibility](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)
 - [Learning about GitHub Importer](https://docs.github.com/get-started/importing-your-projects-to-github/importing-source-code-to-github/about-github-importer)
 - [Importing data from third-party version control systems](https://docs.github.com/enterprise-server@3.7/admin/user-management/migrating-data-to-and-from-your-enterprise/importing-data-from-third-party-version-control-systems)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-containers-azure-container-apps.configure-runtime
+title: Configure runtime settings with environment variables and secrets
+metadata:
+  title: Configure Runtime Settings With Environment Variables and Secrets
+  description: Configure runtime settings with environment variables and secrets
+  ms.date: 01/26/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-runtime.md)]

@@ -3,11 +3,11 @@ A unified security operations platform is a fully integrated toolset for securit
 
 Through the Microsoft Defender portal, Microsoft delivers on the promise of a unified security operations platform so you can view the security health of your organization. The Microsoft Defender portal combines protection, detection, investigation, and response to threats across your entire organization and all its components, in a central place.
 
-To access the portal, You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Microsoft Entra ID to access the Microsoft Defender portal.
+To access the portal, you must be assigned an appropriate role such as Global Reader or Administrator, Security Reader or Administrator, or Security Operator in Microsoft Entra ID to access the Microsoft Defender portal.  
 
 The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
-:::image type="content" source="../media/defender-portal.png" lightbox="../media/defender-portal.png" alt-text="A screenshot of the Microsoft Defender portal home page.":::
+:::image type="content" source="../media/defender-xdr-portal-home.png" lightbox="../media/defender-xdr-portal-home.png" alt-text="A screenshot of the Microsoft Defender portal home page.":::
 
 The Microsoft Defender portal home page shows many of the common cards that security teams need. The composition of cards and data depends on the user role. Because the Microsoft Defender portal uses role-based access control, different roles see cards that are more meaningful to their day-to-day jobs.
 
@@ -15,57 +15,62 @@ The Microsoft Defender portal allows you to tailor the navigation pane to meet d
 
 The left navigation pane provides easy access to the suite of Microsoft Defender XDR services. You also get access to Microsoft Sentinel and many other capabilities  The sections that follow provide a brief description of the capabilities accessible from the left navigation bar in the Microsoft Defender portal.
 
+### Defender Experts
+
+Microsoft Defender Experts for XDR is a managed extended detection and response service that helps your security operations centers (SOCs) focus and accurately respond to incidents that matter. Microsoft Defender Experts for XDR is sold separately from other Microsoft Defender XDR products. 
+
+You can view and monitor Defender Experts activities as a status card in the portal home page and in the portal navigation menu of Microsoft Defender portal. The images that follow show screenshots when accessing Defender Experts activities via the portal navigation menu.
+
+The Defender Experts Overview page provides a consolidated view of Defender Experts activity, status, and outcomes. It helps you easily understand what Defender Experts need you to do and observe the value of the service without navigating to multiple areas of the portal.
+
+The Defender Experts messages page lets you track your managed response chat conversations and inquiries you submitted through Ask Defender Experts.
+
+# [Defender Experts](#tab/defender-experts)
+:::image type="content" source="../media/defender-portal-defender-experts.png" lightbox="../media/defender-portal-defender-experts.png" alt-text="A screenshot of the Microsoft Defender Experts node on portal left navigation pane, showing Exposure management.":::
+
+# [Overview](#tab/experts-overview)
+:::image type="content" source="../media/defender-portal-defender-experts-overview.png" lightbox="../media/defender-portal-defender-experts-overview.png" alt-text="A screenshot of the Defender Experts overview page in the Microsoft Defender portal.":::
+
+# [Messages](#tab/messages)
+:::image type="content" source="../media/defender-portal-defender-experts-messages.png" lightbox="../media/defender-portal-defender-experts-messages.png" alt-text="A screenshot of the Defender Experts overview page in the Microsoft Defender portal.":::
+
+---
+
 ### Exposure management
 
 Microsoft Security Exposure Management is a security solution that provides a unified view of security posture across company assets and workloads. Security Exposure Management enriches asset information with security context that helps you to proactively manage attack surfaces, protect critical assets, and explore and mitigate exposure risk.
 
 With Security Exposure Management you can discover and monitor assets, get rich security insights, investigate specific risk areas with security initiatives, and track metrics across the organization to improve security posture.
 
+For more information, see to the unit "Describe Microsoft Security Exposure Management."
+
+Also, Vulnerability Management is now located under Exposure management. For more information, see the unit "Describe Microsoft Defender Vulnerability Management."
+
+# [Exposure management](#tab/exposure-management)
+:::image type="content" source="../media/exposure-management-menu.png" lightbox="../media/exposure-management-menu.png" alt-text="A screenshot of the Microsoft Defender portal left navigation pane, showing Exposure management.":::
+
 # [Overview](#tab/overview)
-:::image type="content" source="../media/exposure-management.png" lightbox="../media/exposure-management.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
+:::image type="content" source="../media/exposure-management-overview.png" lightbox="../media/exposure-management-overview.png" alt-text="A screenshot of the Exposure Management overview in the Microsoft Defender portal.":::
+
+# [Initiatives](#tab/initiatives)
+:::image type="content" source="../media/exposure-management-initiatives.png" lightbox="../media/exposure-management-initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
 
 # [Attack surface](#tab/attack-surface)
-:::image type="content" source="../media/attack-path.png" lightbox="../media/attack-path.png" alt-text="A screenshot of an attack path under Exposure Management.":::
-
-# [Insights](#tab/insights)
-:::image type="content" source="../media/initiatives.png" lightbox="../media/initiatives.png" alt-text="A screenshot of the initiatives page in Exposure Management.":::
+:::image type="content" source="../media/exposure-management-attack-path-with-map.png" lightbox="../media/exposure-management-attack-path-with-map.png" alt-text="A screenshot of an attack path under Exposure Management.":::
 
 # [Secure score](#tab/secure-score)
-:::image type="content" source="../media/secure-score.png" lightbox="../media/secure-score.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
+:::image type="content" source="../media/exposure-management-secure-score-v2.png" lightbox="../media/exposure-management-secure-score-v2.png" alt-text="A screenshot of the secure score page in Exposure Management.":::
 
 # [Data connectors](#tab/data-connectors)
 :::image type="content" source="../media/data-connectors.png" lightbox="../media/data-connectors.png" alt-text="A screenshot of the data-connectors page in Exposure Management.":::
 
 ---
 
-#### Attack surface
-
-Security Exposure Management automatically generates attack paths based on the data collected across assets and workloads. It simulates attack scenarios, and identifies vulnerabilities and weaknesses that an attacker could exploit.
-
-#### Security insights
-
-Exposure insights in Microsoft Security Exposure Management continuously aggregate security posture data and insights across workloads and resources, into a single pipeline.
-
-- Initiatives provide a simple way to assess security readiness for a specific security area or workload, and to constantly track and measure exposure risk for that area or workload over time.
-- Metrics in Microsoft Security Exposure Management measure security exposure for a specific scope of assets or resources within a security initiative.
-- Recommendations help you to understand the compliance state for a specific security initiative.
-- Events help you to monitor initiative changes.
-
-#### Secure score
-
-Microsoft Secure Score, one of the tools in the Microsoft Defender portal, is a representation of a company's security posture. The higher the score, the better your protection. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
-
-Secure Score provides a breakdown of the score, the improvement actions that can boost the organization's score, and how well the organization's Secure Score compares to other similar organizations.
-
-#### Data connectors
-
-Using data connectors you can connect data sources for a richer, more centralized exposure management experience.
-
 ### Investigation & response
 
 The investigation and response tab includes access to incidents and alerts, hunting, actions & submissions, and a partner catalog.
 
-:::image type="content" source="../media/investigation-response-v2.png" alt-text="A screenshot of the Microsoft Defender portal showing the selections available for investigation and response. They are incidents and alerts, hunting, actions and submissions, and partner catalog.":::
+:::image type="content" source="../media/investigation-response-v2.png" alt-text="A screenshot of the Microsoft Defender portal showing the selections available for investigation and response. They're incidents and alerts, hunting, actions and submissions, and partner catalog.":::
 
 #### Incidents and alerts
 
@@ -79,7 +84,7 @@ Within an incident, you analyze the alerts that affect your network, understand 
 - All the automated investigations triggered by the alerts in the incident.
 - All the supported evidence and response.
 
-If your organization is onboarded Microsoft to Security Copilot you can also view an incident summary, guided responses, and more.
+If your organization is onboarded to Microsoft Security Copilot you can also view an incident summary, guided responses, and more.
 
 # [Incidents](#tab/incidents)
 :::image type="content" source="../media/incidents.png" lightbox="../media/incidents.png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
@@ -113,17 +118,28 @@ From the Threat Intelligence tab, users access Microsoft Defender Threat Intelli
 
 ### Assets
 
-The Assets tab allows you to view and manage your organization's inventory of protected and discovered assets (devices and identities).
+The Assets tab allows you to view and manage your organization's inventory of protected and discovered assets, including devices, identities, applications, cloud, and AI agents.
 
 The Device inventory shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days. At a glance, you see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 The identity inventory provides a comprehensive view of all corporate identities, both cloud and on-premises.
+
+The cloud asset inventory provides a unified, contextual view of cloud infrastructure across Azure, AWS, and GCP environments. It categorizes assets by workload, criticality, and coverage status while integrating health data, device actions, and risk signals into a single interface.
 
 # [Devices](#tab/devices)
 :::image type="content" source="../media/assets-devices.png" lightbox="../media/assets-devices.png" alt-text="A screenshot of the device inventory page in the Microsoft Defender portal.":::
 
 # [Identities](#tab/identities)
 :::image type="content" source="../media/assets-identities.png" lightbox="../media/assets-identities.png" alt-text="A screenshot of the identities inventory page in the Microsoft Defender portal.":::
+
+# [Applications](#tab/applicaitons)
+:::image type="content" source="../media/assets-applications.png" lightbox="../media/assets-applications.png" alt-text="A screenshot of the applications inventory page in the Microsoft Defender portal.":::
+
+# [Cloud](#tab/cloud)
+:::image type="content" source="../media/assets-cloud.png" lightbox="../media/assets-cloud.png" alt-text="A screenshot of the cloud inventory page in the Microsoft Defender portal.":::
+
+# [AI agents](#tab/ai-agents)
+:::image type="content" source="../media/assets-ai-agents.png" lightbox="../media/assets-ai-agents.png" alt-text="A screenshot of the AI agents inventory page in the Microsoft Defender portal.":::
 
 ---
 
@@ -133,31 +149,62 @@ Some Microsoft Sentinel capabilities, like the unified incident queue, are acces
 
 For more information, see the module "Describe the capabilities in Microsoft Sentinel," whose link is included in the summary and resources unit.
 
-:::image type="content" source="../media/sentinel-node.png" lightbox="../media/sentinel-node.png" alt-text="A screenshot of the Microsoft Sentinel node on the navigation panel of the Microsoft Defender portal.":::
+:::image type="content" source="../media/defender-portal-microsoft-sentinel.png" lightbox="../media/defender-portal-microsoft-sentinel.png" alt-text="A screenshot of the Microsoft Sentinel node on the navigation panel of the Microsoft Defender portal.":::
 
 ### Identities
 
 The Identities node on the left navigation panel of the Microsoft Defender portal maps to functionality associated with Microsoft Defender for Identity. For more information, see the unit "Describe Microsoft Defender for Identity."
 
-:::image type="content" source="../media/identities-node.png" lightbox="../media/identities-node.png" alt-text="A screenshot of the identities node on the left navigation panel of the Microsoft Defender portal.":::
+:::image type="content" source="../media/defender-portal-identities.png" lightbox="../media/defender-portal-identities.png" alt-text="A screenshot of the identities node on the left navigation panel of the Microsoft Defender portal.":::
 
 ### Endpoints
 
 The Endpoints node on the left navigation panel of the Microsoft Defender portal maps to functionality associated with Microsoft Defender for Endpoints. For more information, see to the unit "Describe Microsoft Defender for Endpoints."
 
-:::image type="content" source="../media/endpoints-node.png" lightbox="../media/endpoints-node.png" alt-text="A screenshot of the endpoints node on the left navigation panel of the Microsoft Defender portal.":::
+:::image type="content" source="../media/defender-portal-endpoints.png" lightbox="../media/defender-portal-endpoints.png" alt-text="A screenshot of the endpoints node on the left navigation panel of the Microsoft Defender portal.":::
 
 ### Email and collaboration
 
 The email and collaboration node on the left navigational panel is where you find Microsoft Defender for Office 365 functionality that allows you to track and investigate threats to your users' email, track campaigns, and more. For more information, see the unit "Describe Microsoft Defender for Office 365."
 
-:::image type="content" source="../media/email-collaboration.png" lightbox="../media/email-collaboration.png" alt-text="A screenshot of the email and collaboration node on the navigation panel of the Microsoft Defender portal.":::
+:::image type="content" source="../media/defender-portal-email-collaboration.png" lightbox="../media/defender-portal-email-collaboration.png" alt-text="A screenshot of the email and collaboration node on the navigation panel of the Microsoft Defender portal.":::
 
 ### Cloud apps
 
 The Cloud apps node on the left navigational panel is where you find Microsoft Defender for Cloud Apps functionality. For more information, see the unit "Describe Microsoft Defender for Cloud Apps."
 
-:::image type="content" source="../media/cloud-apps-node.png" lightbox="../media/cloud-apps-node.png" alt-text="A screenshot of the cloud apps node on the navigation panel of the Microsoft Defender portal.":::
+:::image type="content" source="../media/defender-portal-cloud-apps.png" lightbox="../media/defender-portal-cloud-apps.png" alt-text="A screenshot of the cloud apps node on the navigation panel of the Microsoft Defender portal.":::
+
+### Cloud security
+
+The Cloud security node in the Microsoft Defender portal provides access to Microsoft Defender for Cloud. The Cloud Overview dashboard is the landing page and gives security teams a clear, actionable view of their cloud security status across Azure, AWS, and GCP environments. The dashboard is organized around three key areas:
+
+- **Security at a glance** – A snapshot of current security status including cloud secure score, threat protection alerts by severity, and asset coverage across Defender for Cloud plans.
+- **Top actions** – Guidance on where to focus next, highlighting critical recommendations, high-severity incidents, and attack paths.
+- **Trends over time** – Historical views of security posture and threat detection trends, helping teams track progress over 30 days, 3 months, or 6 months.
+
+# [Cloud security](#tab/cloud-security)
+:::image type="content" source="../media/defender-portal-cloud-security.png" lightbox="../media/defender-portal-cloud-security.png" alt-text="A screenshot of the Cloud security option in the left navigation panel of the Defender portal.":::
+
+# [Overview](#tab/cloud-overview)
+:::image type="content" source="../media/defender-portal-cloud-security-overview.png" lightbox="../media/defender-portal-cloud-security-overview.png" alt-text="A screenshot of the Cloud security overview dashboard in the Defender portal.":::
+
+---
+
+### Security Copilot
+
+The Microsoft Defender portal includes access to the list of Agents in use. The portal also provides access to solutions and agents, available in the Security Store, that integrate with Microsoft Defender.
+
+# [Security Copilot](#tab/security-copilot)
+:::image type="content" source="../media/defender-portal-security-copilot.png" lightbox="../media/defender-portal-security-copilot.png" alt-text="A screenshot of the left navigation pane in the Defender portal, showing Security Copilot.":::
+
+# [Agents](#tab/copilot-agents)
+:::image type="content" source="../media/defender-portal-security-copilot-agents.png" lightbox="../media/defender-portal-security-copilot-agents.png" alt-text="A screenshot of the agents page in the Microsoft Defender portal.":::
+
+# [Security Store](#tab/security-store)
+:::image type="content" source="../media/defender-portal-security-copilot-security-store.png" lightbox="../media/defender-portal-security-copilot-security-store.png" alt-text="A screenshot of the Security Store page in the Microsoft Defender portal.":::
+
+---
 
 ### SOC Optimization
 

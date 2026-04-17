@@ -16,8 +16,9 @@ If all of the components are roles within a single Application Insights resource
 
 :::image type="content" source="../media/application-map.png" alt-text="Application Map screenshot showing the initial load of an app where all of the components are roles within a single Application Insights resource.":::
 
-One of the key objectives with this experience is to be able to visualize complex topologies with hundreds of components. Click on any component to see related insights and go to the performance and failure triage experience for that component.
+One of the key objectives with this experience is to be able to visualize complex topologies with hundreds of components. Select on any component to see related insights and go to the performance and failure triage experience for that component.
 
 :::image type="content" source="../media/application-map-component.png" alt-text="Screenshot showing component details in the Application Map.":::
 
 Application Map uses the cloud role name property to identify the components on the map. You can manually set or override the cloud role name and change what gets displayed on the Application Map.
+

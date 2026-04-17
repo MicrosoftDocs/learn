@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads
+metadata:
+  title: Deploy and Maintain Data Pipelines and Workloads With Azure Databricks
+  description: Master the complete lifecycle of building, deploying, and maintaining production-ready data pipelines in Azure Databricks—from design and orchestration to monitoring and optimization.
+  ms.date: 12/09/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: learning-path
+title: Deploy and maintain data pipelines and workloads with Azure Databricks
+prerequisites: |
+  - Good understanding of Azure Databricks workspaces
+  - Familiarity with data engineering concepts and SQL
+  - Experience with Python programming and notebooks
+  - Knowledge of Git version control fundamentals
+summary: |
+  Master the complete lifecycle of building, deploying, and maintaining production-ready data pipelines in Azure Databricks—from design and orchestration to monitoring and optimization.
+
+  By the end of this learning path, you'll be able to:
+  
+  - Design and implement robust data pipelines using notebooks and Lakeflow Spark Declarative Pipelines
+  - Create and orchestrate Lakeflow Jobs with triggers, schedules, and error handling
+  - Apply version control and deploy pipelines across environments using Git and Databricks Asset Bundles
+  - Monitor, troubleshoot, and optimize data workloads for reliability and performance
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+subjects:
+- data-engineering
+modules:
+- learn.wwl.design-implement-data-pipelines
+- learn.wwl.implement-lakeflow-jobs
+- learn.wwl.implement-development-lifecycle-processes-azure-databricks
+- learn.wwl.monitor-troubleshoot-optimize-workloads-azure-databricks
+trophy:
+  uid: learn.wwl.azure-databricks-data-engineer-deploy-maintain-data-pipelines-workloads.trophy

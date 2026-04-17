@@ -2,8 +2,6 @@
 uid: learn.azure.secure-azure-storage-account.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 09/02/2022
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Azure Storage Account Security Feature does not exist. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
     - content: "Encryption in transit"
       isCorrect: false
-      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
+      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."

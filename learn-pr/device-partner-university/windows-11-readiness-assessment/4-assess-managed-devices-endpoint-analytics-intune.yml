@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-11-readiness-assessment.assess-managed-devices-endpoint-analytics-intune
+title: Assess managed devices with Endpoint Analytics in Microsoft Intune
+metadata:
+  title: Assess Managed Devices Endpoint Analytics In Microsoft Intune
+  description: This content is part of the "Perform a Windows 11 device readiness assessment" module.
+  ms.date: 10/31/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-assess-managed-devices-endpoint-analytics-intune.md)]

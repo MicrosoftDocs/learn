@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-database-performance
+metadata:
+  title: Optimize database performance
+  description: Optimize Azure SQL Database performance by choosing the right service tier and managing concurrency with isolation levels. Analyze queries with execution plans and DMVs. Use Query Store for plan management and resolve blocking and deadlocks.
+  ms.date: 07/07/2025
+  author: calopez
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-generated
+title: Optimize database performance
+summary: Optimize Azure SQL Database performance by choosing the right service tier and managing concurrency with transaction isolation levels. Analyze queries with execution plans and DMVs. Use Query Store for plan management and diagnose blocking and deadlocks.
+abstract: |
+  By the end of this module, you're able to:
+  *   Evaluate and recommend database configurations including service tiers, compute tiers, and resource limits.
+  *   Choose transaction isolation levels and concurrency controls that balance consistency with throughput.
+  *   Analyze query performance using execution plans and dynamic management views.
+  *   Monitor and tune queries with Query Store and Query Performance Insight.
+  *   Identify and resolve blocking and deadlocks using DMVs and Extended Events.
+prerequisites: |
+  *   Basic understanding of SQL and Transact-SQL.
+  *   Familiarity with Azure SQL Database or SQL Server.
+  *   Experience creating and configuring resources using the Azure portal.
+iconUrl: /training/achievements/generic-database.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+- developer
+- data-engineer
+products:
+- azure
+- azure-sql-database
+- sql-server
+subjects:
+- databases
+- cloud-computing
+units:
+- learn.wwl.optimize-database-performance.introduction
+- learn.wwl.optimize-database-performance.recommend-database-configurations
+- learn.wwl.optimize-database-performance.preserve-data-integrity-isolation-levels
+- learn.wwl.optimize-database-performance.evaluate-query-performance
+- learn.wwl.optimize-database-performance.monitor-tune-queries-query-store
+- learn.wwl.optimize-database-performance.identify-resolve-blocking-deadlocks
+- learn.wwl.optimize-database-performance.exercise-optimize-query-performance
+- learn.wwl.optimize-database-performance.knowledge-check
+- learn.wwl.optimize-database-performance.summary
+badge:
+  uid: learn.wwl.optimize-database-performance.badge

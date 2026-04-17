@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.dpu.business-impact-copilot-pc
+title: Turbocharge business impact with Copilot+ PC
+metadata:
+  title: Turbocharge Business Impact With Copilot+ PC
+  description: This module explores how AI-enhanced Copilot+ PCs empower organizations to stay agile and competitive by adapting to dynamic business needs. Learners will discover key features and strategies that elevate modern business through improved flexibility, management, and team potential.
+  ms.date: 08/04/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  In this module, we explored the way AI-enhanced Copilot+ PCs can help organizations stay agile, so they can adapt and respond to dynamic business needs—helping them beat out competition and stay ahead of changing industry trends. With this knowledge, you now have a better understanding of how Copilot+ PCs elevate modern business.
+abstract: |
+  By the end of this module, you'll be able to:
+  - [Add learning objectives here]
+prerequisites: |
+  - None
+iconUrl: /training/achievements/business-impact-copilot-pc.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.business-impact-copilot-pc.introduction
+  - learn.dpu.business-impact-copilot-pc.help-organizations-adapt
+  - learn.dpu.business-impact-copilot-pc.device-differentiators
+  - learn.dpu.business-impact-copilot-pc.four-key-areas-emphasis
+  - learn.dpu.business-impact-copilot-pc.adaptable-modern
+  - learn.dpu.business-impact-copilot-pc.light-up-your-teams-potential
+  - learn.dpu.business-impact-copilot-pc.improve-flexibility-management
+  - learn.dpu.business-impact-copilot-pc.tailor-business-needs
+  - learn.dpu.business-impact-copilot-pc.knowledge-check
+  - learn.dpu.business-impact-copilot-pc.summary
+badge:
+  uid: learn.dpu.business-impact-copilot-pc.badge

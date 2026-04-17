@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.apply-manage-sensitivity-labels.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/03/2024
+  ms.date: 04/16/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -16,47 +17,69 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is a benefit of applying sensitivity labels to Microsoft Teams channels?"
+  - content: "The admin applies a **Confidential** sensitivity label to the project's SharePoint site. A team member uploads an unlabeled Word document to the site's document library. What protection does that document have?"
     choices:
-    - content: "It enforces data retention policies specific to each channel's content."
+    - content: "The document inherits the site's Confidential label and its encryption settings."
       isCorrect: false
-      explanation: "Incorrect: While sensitivity labels can enforce data governance across Microsoft 365, applying them to Teams channels doesn't configure data retention policies based on content type within those channels."
-    - content: "It ensures that channel meetings and chats inherit the label's protection settings."
+      explanation: "Incorrect. Container labels applied to SharePoint sites enforce workspace-level settings like privacy and external sharing. They don't automatically apply classification, encryption, or content markings to files inside the container. The document remains unlabeled unless it receives its own label."
+    - content: "The document is encrypted by default because it's stored in a labeled site."
+      isCorrect: false
+      explanation: "Incorrect. Encryption is a document-level label setting, not a container-level one. Storing a file in a labeled site doesn't apply encryption to the file. The file needs its own sensitivity label with encryption configured."
+    - content: "The document has no sensitivity label or encryption. Container labels protect the site, not the files inside it."
       isCorrect: true
-      explanation: "Correct: Applying sensitivity labels to Teams channels is beneficial because it ensures that meetings and chats within those channels inherit the label's protection settings."
-    - content: "It restricts channel access based on the user's location and device compliance."
-      isCorrect: false
-      explanation: "Incorrect: Sensitivity labels control access to content based on classification and don't directly restrict channel access based on the user's location or device compliance. This is managed through other security policies in Microsoft 365."
-  - content: "How can sensitivity labels be applied to existing SharePoint sites?"
+      explanation: "Correct. Container labels and document labels solve different problems. A container label on a SharePoint site controls who can access and share from the site, but it doesn't encrypt or classify individual documents. To protect file content, you need to apply labels directly to files or configure a default library label."
+  - content: "A team member sends a labeled and encrypted proposal to an external client using Outlook. The client uses Gmail. What can the external recipient expect?"
     choices:
-    - content: "By navigating to the SharePoint admin center and selecting the desired label under site settings."
+    - content: "The client sees the label name and can open the document without restriction."
+      isCorrect: false
+      explanation: "Incorrect. External recipients might not see your organization's label names, and they need appropriate permissions to open encrypted content. Label names are specific to the publishing tenant."
+    - content: "The encryption protects the content regardless of whether the client can see the label name. The client needs the right permissions to open it."
       isCorrect: true
-      explanation: "Correct: Sensitivity labels are applied to existing sites in the SharePoint admin center under site settings."
-    - content: "By creating a new site and choosing the sensitivity label during setup."
+      explanation: "Correct. When labeled content leaves your organization, encryption travels with it and remains enforced. External recipients might not see the label name, but the encryption still blocks unauthorized access. The critical protection comes from the encryption settings, not the label visibility."
+    - content: "The label and encryption are stripped during transit because the client uses a non-Microsoft email provider."
       isCorrect: false
-      explanation: "Incorrect: This option describes applying labels to new sites, not existing ones."
-    - content: "By adjusting the site permissions to restrict access."
-      isCorrect: false
-      explanation: "Incorrect: Adjusting site permissions doesn't directly involve sensitivity labels, which are applied separately for data classification and access control."
-  - content: "What settings can sensitivity labels adjust to improve meeting security?"
+      explanation: "Incorrect. While some email clients might strip label metadata during transit, label-based encryption persists regardless of the recipient's email provider. The content remains protected."
+  - content: "A consultant uses Copilot in Word to draft a summary by referencing two documents: one labeled **General** and one labeled **Highly Confidential** with encryption that includes the Extract right. What label does the generated summary receive?"
     choices:
-    - content: "Recording permissions and access to meeting transcripts."
-      isCorrect: false
-      explanation: "Incorrect: Meeting recording permissions and access to meeting transcripts are important aspects of meeting security, but sensitivity labels don't control them."
-    - content: "Meeting scheduling options and calendar integration settings."
-      isCorrect: false
-      explanation: "Incorrect: Sensitivity labels focus on access control and encryption during meetings. Meeting scheduling options and calendar integration settings, while important for meeting organization, sensitivity labels aren't directly controlled by sensitivity labels."
-    - content: "Who can bypass the lobby, who can present, and encryption for meeting video and audio."
+    - content: "The summary receives the Highly Confidential label because Copilot inherits the highest-priority label from the source content."
       isCorrect: true
-      explanation: "Correct: Sensitivity labels can adjust settings like who can bypass the lobby, who can present, and encryption for meeting video and audio, enhancing meeting security."
-  - content: "What file types are fully compatible with sensitivity labels in Office apps?"
+      explanation: "Correct. When Copilot creates content from multiple labeled sources, it automatically inherits the sensitivity label with the highest priority. The user has both View and Extract rights on the Highly Confidential document, so Copilot can summarize it. The generated output inherits the Highly Confidential label."
+    - content: "The summary receives the General label because it was created in a new document."
+      isCorrect: false
+      explanation: "Incorrect. Copilot doesn't default to the lower-priority label. When multiple source files are involved, Copilot applies label inheritance based on priority."
+    - content: "Copilot refuses to generate the summary because the source documents have different sensitivity levels."
+      isCorrect: false
+      explanation: "Incorrect. Copilot doesn't refuse to generate content when sources have different labels. It resolves the difference by inheriting the highest-priority label."
+  - content: "The organizer schedules the board strategy meeting in Teams and applies a **Highly Confidential** label with end-to-end encryption enabled. What operational tradeoff should the organizer be aware of?"
     choices:
-    - content: "Image formats such as .jpg and .png."
+    - content: "Encryption requires all participants to have a Teams Premium license or they can't join."
       isCorrect: false
-      explanation: "Incorrect: Image formats aren't directly relevant to sensitivity labels in Office apps."
-    - content: "Open XML formats such as .docx, .xlsx, and .pptx."
+      explanation: "Incorrect. Meeting encryption settings are applied through the sensitivity label, not through individual participant licensing. Teams Premium is required for the admin to configure certain meeting label settings, but participants don't each need it to join."
+    - content: "Encryption prevents the meeting from being forwarded but has no other effect on features."
+      isCorrect: false
+      explanation: "Incorrect. Preventing forwarding is controlled by a separate label setting on the meeting invite. End-to-end encryption for the meeting stream has broader feature implications."
+    - content: "Encryption for meeting video and audio disables some features like recording, live captions, and breakout rooms."
       isCorrect: true
-      explanation: "Correct: Open XML formats such as .docx, .xlsx, and .pptx are fully compatible with sensitivity labels in Office apps, allowing effective data protection."
-    - content: "Legacy and nonstandard formats such as .doc and .xls."
+      explanation: "Correct. End-to-end encryption for the meeting stream provides the strongest protection for the most sensitive discussions, but it disables features that require server-side processing, including recording, live captions, and breakout rooms. The organizer needs to weigh this tradeoff against the meeting's security requirements."
+  - content: "The IT admin needs to apply sensitivity labels to 200 existing SharePoint sites across the organization. What is the most appropriate surface for this task?"
+    choices:
+    - content: "The SharePoint admin center, because it provides a central view for labeling sites at scale."
+      isCorrect: true
+      explanation: "Correct. The SharePoint admin center is the right surface when administrators need to label or relabel sites at scale. It provides a central view of all active sites and allows label changes from site settings. Team owners and group owners apply labels from their respective apps for individual decisions, but bulk administrative work belongs in the admin center."
+    - content: "The Teams desktop client, because all sites are connected to Teams."
       isCorrect: false
-      explanation: "Incorrect. Legacy and nonstandard formats might have compatibility limitations with sensitivity labels."
+      explanation: "Incorrect. The Teams client is designed for team owners creating or managing individual teams. It's not practical for bulk labeling across hundreds of sites."
+    - content: "Outlook on the web, because Microsoft 365 Groups connect to SharePoint sites."
+      isCorrect: false
+      explanation: "Incorrect. Outlook on the web is the right surface for group owners to label their own groups. It's not designed for administrators to manage labels across hundreds of sites."
+  - content: "A Power BI report builder creates a new report from a semantic model labeled **Confidential**. The builder doesn't manually apply a sensitivity label to the report. What label does the report have?"
+    choices:
+    - content: "The report receives a default label from the workspace's label policy."
+      isCorrect: false
+      explanation: "Incorrect. While default label policies exist in Power BI, inheritance from a labeled parent item takes priority. The semantic model's Confidential label is inherited by the new report."
+    - content: "The report has no label because the builder didn't apply one manually."
+      isCorrect: false
+      explanation: "Incorrect. Power BI supports automatic label inheritance when new content is created from labeled parent items."
+    - content: "The report automatically inherits the **Confidential** label from the semantic model."
+      isCorrect: true
+      explanation: "Correct. When you create a new report from a labeled semantic model, the report automatically inherits the semantic model's sensitivity label. This inheritance upon creation means labeling upstream semantic models has a cascading effect on everything built from them, reducing the need to manually label every item."

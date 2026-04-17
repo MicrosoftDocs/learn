@@ -1,19 +1,40 @@
-Controlling access to your company's data and applications is your enterprise security strategy's foundation. Every GitHub Enterprise user's experience begins with logging in. Before a user can access your GitHub organization, they must authenticate by supplying credentials that confirm their identity. For an individual account, users *can* log in with only a user name and password, but every GitHub user can and should enable 2FA (two-factor authentication) for a more secure authentication process.
+Authentication is the gateway to your enterprise's software development ecosystem. Every user's interaction with GitHub begins with identity verification. While individual accounts can rely on usernames and passwords, strong enterprise security mandates **two-factor authentication (2FA)** or more advanced methods like **passkeys** and **biometric login**. Balancing usability with security is key—especially in a fast-paced development environment.
 
-A challenge you might face in your organization is how to balance ease of use with an authorization process while maintaining secure best practices. Setting up your team for success requires ease of access for the user under the umbrella of secure organizational requirements.
+## Modern Authentication in GitHub Enterprise
 
-Configuring authentication is the first step in ensuring secure software development in your enterprise. The good news is that using the tools available with your identity provider (IdP) is critical to getting the most value from GitHub.
+To ensure a secure and streamlined authentication experience, GitHub supports multiple modern methods that integrate with your identity management systems:
 
-## Organization management through SAML SSO
+### Passkeys and WebAuthn
+- **Passkeys** are a passwordless login method, tied to a physical device, and resistant to phishing.
+- **WebAuthn** supports biometric factors and hardware tokens like YubiKey.
+- These methods significantly reduce credential-based attacks and improve login UX.
 
-An important component of an enterprise security strategy is SAML SSO. It provides a link between the IdP authorization and access to service providers (SaaS). This form of authentication allows users to sign in to all their applications with one set of credentials. Through SAML, the IdP authenticates users and grants authorization to services like GitHub. When a user logs in to GitHub, they can view the enterprises of which they're members. However, if the user tries to access repository data, GitHub will prompt for enterprise credentials (Enterprise ID).
+### GitHub Mobile for 2FA
+Users can authenticate with **GitHub Mobile**, which supports push notifications for quick, secure approval—enhancing 2FA without disrupting workflows.
 
-As the Enterprise Administrator, you're responsible for authorizing user access and permissions. Limiting a user's access to only the resources they need is important when securing your repository. This responsibility can also include routine audit events and maintaining tightly scoped access. As an administrator of a repository, you have an overview of every user with their specific access within the repository. You can also easily export this data to a CSV file.
+### OAuth and GitHub Apps
+- **OAuth Apps** use GitHub's OAuth 2.0 flow to authenticate users and grant scoped access to external applications.
+- **GitHub Apps** authenticate as individual installations with fine-grained permissions and are ideal for CI/CD and automation pipelines.
+
+### Enterprise Managed Users (EMU)
+In **GitHub Enterprise Cloud**, EMUs ensure that authentication happens strictly through your **Identity Provider (IdP)**. This model:
+- Restricts access to enterprise-managed accounts only.
+- Enforces centralized control over identity, credentials, and session policies.
+
+## Organization Management with SAML SSO
+
+One foundational capability for enterprise-grade authentication is **SAML Single Sign-On (SSO)**. SAML links your IdP with GitHub, enabling users to sign in across services using one set of credentials. GitHub uses the IdP to verify user identity before granting access to organization or enterprise resources.
+
+When users log into GitHub, they can see the enterprises they belong to—but access to repository data requires SAML reauthentication via the IdP.
+
+As an **Enterprise Admin**, your responsibilities include:
+- Authorizing access based on role and need-to-know.
+- Monitoring and auditing user activity.
+- Scoping permissions and minimizing surface area for attacks.
 
 :::image type="content" source="../media/repository-permission-list-example.png" alt-text="Screenshot of an example of admin repository permission list review.":::
 
-You need to configure SAML SSO for a GitHub organization with the IdP you're using. If you have specific questions on how to implement SAML SSO with your chosen IdP, you can find details in the documentation for each supported IdP. Here's a list of the SAML IdPs that GitHub currently supports:
-
+To configure SAML SSO for your organization, integrate your IdP with GitHub. Supported providers include:
 - Active Directory Federation Services (AD FS)
 - Microsoft Entra ID
 - Okta
@@ -22,10 +43,41 @@ You need to configure SAML SSO for a GitHub organization with the IdP you're usi
 - Shibboleth
 
 > [!NOTE]
-> GitHub offers limited support for all identity providers that implement the SAML 2.0 standard.
+> GitHub provides limited support for identity providers that implement the SAML 2.0 standard.
 
-You can accomplish more access management when using multiple organizations. You can use organizations to create distinct groups of users within your company, such as divisions or groups working on similar projects. Public and internal repositories that belong to an organization are accessible to members of other organizations in the enterprise. Private repositories are inaccessible to anyone who isn't a member of the organization.
+## Enterprise Access and Authorization Controls
 
-## Organization private information
+Access in GitHub is governed by a robust, multi-layered authorization model:
 
-When an organization member creates a repository, they can choose to make the repository public or private. In addition, when creating the repository in an organization that's owned by an enterprise account, they can choose to make the repository internal. Public repositories are accessible to everyone on the internet. Private repositories are only accessible to the user who created the repository and the people with whom they explicitly share access. Keep in mind that certain organization members have access to organization internal repositories.
+### Fine-Grained Personal Access Tokens (PATs)
+Unlike classic PATs, **fine-grained PATs**:
+- Restrict access to specific repositories and scopes.
+- Support automatic expiration for reduced risk exposure.
+- Offer enhanced traceability and compliance controls.
+
+### Custom Repository Roles
+Admins can define **custom roles** that extend beyond the default permission sets. This supports:
+- Delegated access tailored to unique workflows.
+- Least-privilege enforcement for sensitive repositories.
+
+### Security Policy Enforcement
+You can enforce global security controls such as:
+- Mandatory **2FA** for all users.
+- **IP allowlists** to restrict access to approved networks.
+- Blocking unverified OAuth apps unless explicitly approved.
+
+### Organizational and Enterprise-Level Controls
+- **Organization-level** controls include default roles, team-based access, and the management of external collaborators.
+- **Enterprise-level** governance includes:
+  - Centralized SAML enforcement.
+  - IdP-based login restrictions.
+  - Global policy enforcement via **GitHub Enterprise Cloud**.
+
+## Repository Visibility and Internal Access
+
+When organization members create repositories, they can choose among **public**, **private**, or **internal** visibility options:
+- **Public**: Available to anyone on the internet.
+- **Private**: Restricted to selected users.
+- **Internal**: Visible to all members within the enterprise but hidden from external users.
+
+This granularity ensures that source code, documentation, and other assets are only shared with appropriate stakeholders.

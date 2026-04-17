@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-applications.knowledge-check
-title: Knowledge check - Design solutions for securing applications
+title: Module assessment
 metadata:
-  title: Knowledge check - Design solutions for securing applications
+  title: Module assessment
   description: "Knowledge check for module on: design solutions for securing applications."
-  ms.date: 3/14/2023
+  ms.date: 02/10/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -30,55 +31,43 @@ quiz:
     choices:
       - content: "A practice that ensures system uptime by maintaining optimal replica volumes."
         isCorrect: false
-        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refers to replication strategies used in high availability deployment scenarios."
-      - content: "A security model used by developers to certify that code changes do not affect production environments."
+        explanation: "DevSecOps isn't concerned with replica volumes of systems, which refer to replication strategies used in high availability deployment scenarios."
+      - content: "A security model used by developers to certify that code changes don't affect production environments."
         isCorrect: false
         explanation: "There's no certification process involved in DevSecOps. The idea behind DevSecOps is that security mechanisms are integrated throughout the development cycle to increase the overall security posture."
       - content: "A set of principles designed to integrate security testing and evaluation into the software development lifecycle (SDLC)."
         isCorrect: true
         explanation: "DevSecOps is short for Development, Security, and Operations, which aims to integrate security activities into all stages of the SDLC to achieve application and infrastructure resilience."
-      - content: "A method to monitor customer satisfaction after every release of the product to ensure continuous improvement."
-        isCorrect: false
-        explanation: "While monitoring customer satisfaction is essential, it's not directly related to DevSecOps. Monitoring is also more of an Operations concern than something taken care of within the Development phase."
-  - content: "What is a service principal in Microsoft Entra ID?"
+  - content: "What is the role of a service principal in Microsoft Entra ID?"
     choices:
-    - content: "A managed identity for a specific Azure resource"
+    - content: "It serves as the local representation of an application in a specific tenant, defining what the application can do and which resources it can access."
       isCorrect: true
-      explanation: "Service principals act as an interface to allow access using OAuth 2.0 protocols between Azure AD and independent software applications."
-    - content: "An authentication mechanism that authenticates the client application identity"
+      explanation: "A service principal is the local instance of an application in a tenant. While applications are defined globally by application objects, service principals define what an application can actually do in that specific tenant, who can use it, and what resources it can access."
+    - content: "It provides automatic credential rotation for Azure resources without developer intervention."
       isCorrect: false
-      explanation: "This describes the process of OAuth2.0 that allows resources to accept external access, not just a service principal."
-    - content: "A user identity for a specific Azure resource"
+      explanation: "Automatic credential rotation without developer intervention describes managed identities, which are a special type of service principal. Service principals themselves can use certificates or secrets that require manual management."
+    - content: "It encrypts all communication between Azure services using mutual TLS."
       isCorrect: false
-      explanation: "User identities are tied to individual users, Service Client Identities authenticate applications."
-    - content: "Azure platform tokens revocation mechanism"
-      isCorrect: false
-      explanation: "Azure platform tokens are time-bound authorization keys issued by Microsoft Entra ID to resources. They've little to do with Service Principal authentication."
-  - content: "What happens when a particular service account or machine accesses a resource using its Shared Access Signature token?"
+      explanation: "Service principals handle authentication and authorization, not transport-layer encryption. Mutual TLS is configured separately at the network or service level."
+  - content: "Why should Azure API Management subscription keys not be used as the sole authentication mechanism for APIs?"
     choices:
-    - content: "The access shows up under the computer's credentials in Microsoft Entra ID's analytics logs."
-      isCorrect: false
-      explanation: "Shared Access Signatures don't pertain to Microsoft Entra ID, they're Azure object storage mechanism."
-    - content: "The resource will only be accessible if the token has the appropriate permission scope."
+    - content: "Because subscription keys are shared secrets that don't identify individual callers."
       isCorrect: true
-      explanation: "Shared Access Signatures work at the level of the specific bound resource, meaning the permissions granted to the corresponding SAS token apply to this target only."
-    - content: "It bypasses all permissions set on the resource."
+      explanation: "Subscription keys identify a subscription, not the specific user or application making the request. For proper authentication, use OAuth 2.0 with Microsoft Entra ID, which validates individual caller identity through JWT tokens. Subscription keys are appropriate for rate limiting and usage tracking."
+    - content: "Because subscription keys are incompatible with Azure Front Door and Application Gateway."
       isCorrect: false
-      explanation: "Authentication and Authorization are always calculated and checked against the set access control policies and user/role-based authorization mechanisms."
-    - content: "It triggers event-based alert notifications"
+      explanation: "Subscription keys can be passed through Azure Front Door and Application Gateway. The limitation is that they don't identify individual callers, not that they're incompatible with other Azure services."
+    - content: "Because subscription keys can only authenticate requests from Azure-hosted applications."
       isCorrect: false
-      explanation: "Shared Access Signatures are a method still not greatly prevalent in Azure Functionality, and thus don't trigger alerts."
+      explanation: "Subscription keys can be used by any API consumer regardless of where the application is hosted. The issue is that they're shared secrets that don't provide individual caller identification."
   - content: "What type of threats is the Azure web application firewall designed to protect against?"
     choices:
-    - content: "Server level attacks such as shared hosting violations"
+    - content: "Server-level attacks such as shared hosting violations"
       isCorrect: false
-      explanation: "Azure Web Application Firewall is deployed in front of a web server farm and protects against layer 7 -application-level- distributed denial-of-service (DDoS) attacks."
+      explanation: "Azure Web Application Firewall protects against layer 7 application-level threats such as injection attacks and cross-site scripting, not server-level hosting violations."
     - content: "Phishing attacks and credential stealing attempts"
       isCorrect: false
-      explanation: "As useful as this would be, the WAF is positioned for application-level security only."
-    - content: "SQL injection, Cross-site scripting attacks, and HTTP protocol violations"
+      explanation: "WAF inspects incoming HTTP/HTTPS traffic against rule sets for known attack patterns like SQL injection and XSS. It doesn't address phishing or credential theft."
+    - content: "SQL injection, cross-site scripting attacks, and HTTP protocol violations"
       isCorrect: true
-      explanation: "These are some of the most common web applications' vulnerability exploits, all of which can be programmed into a well-managed web application firewall policy."
-    - content: "Malware propagation and attack repulsion"
-      isCorrect: false
-      explanation: "WAF is position around application-level DDoS attack protection, this does NOT include general-purpose malware repulsion"
+      explanation: "Azure WAF protects against these common web application vulnerabilities using managed rule sets based on the OWASP Core Rule Set. It also protects against file inclusion, command injection, HTTP request smuggling, and other OWASP Top 10 threats."

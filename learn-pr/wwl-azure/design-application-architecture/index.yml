@@ -3,9 +3,9 @@ uid: learn.wwl.design-application-architecture
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Design an application architecture
+  title: Design an Application Architecture
   description: "Design an application architecture"
-  ms.date: 02/03/2025
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module-standard-task-based
@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design an application architecture
 summary: Azure Architects are responsible to design and recommend application architectures.
 abstract: |

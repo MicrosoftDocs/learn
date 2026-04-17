@@ -1,34 +1,33 @@
 The identity secure score is percentage that functions as an indicator for how aligned you are with Microsoft's best practice recommendations for security. Each improvement action in identity secure score is tailored to your specific configuration.
 
-:::image type="content" source="../media/identity-secure-score-overview-a041edd7.png" alt-text="Screenshot of overview page of the Identity Secure Score. Look at the percentage score for your company.":::
-
+:::image type="content" source="../media/identity-secure-score-overview.png" alt-text="Screenshot of overview page of the Identity Secure Score. Look at the percentage score for your company.":::
 
 The score helps you to:
 
- -  Objectively measure your identity security posture
- -  Plan identity security improvements
- -  Review the success of your improvements
+ - Objectively measure your identity security posture
+ - Plan identity security improvements
+ - Review the success of your improvements
 
 You can access the score and related information on the identity secure score dashboard. On this dashboard, you find:
 
- -  The secure score for your identity
- -  A comparison graph showing how your Identity secure score compares to other tenants in the same industry and similar size
- -  A trend graph showing any change to the secure score for your Identity over time
- -  A list of possible improvements
+ - The secure score for your identity
+ - A comparison graph showing how your Identity secure score compares to other tenants in the same industry and similar size
+ - A trend graph showing any change to the secure score for your Identity over time
+ - A list of possible improvements
 
 By following the improvement actions, you can:
 
- -  Improve your security posture and your score
- -  Take advantage the features available to your organization as part of your identity investments
+ - Improve your security posture and your score
+ - Take advantage the features available to your organization as part of your identity investments
 
 ## How do I get my secure score?
 
 The identity secure score is available in all editions of Microsoft Entra ID. Organizations can access their identity secure score, with the following steps:
 
-1.  Azure portal.
-2.  Microsoft Entra ID.
-3.  Security.
-4.  Identity Secure Score.
+1. Azure portal.
+2. Microsoft Entra ID.
+3. Security.
+4. Identity Secure Score.
 
 ## How are controls scored?
 

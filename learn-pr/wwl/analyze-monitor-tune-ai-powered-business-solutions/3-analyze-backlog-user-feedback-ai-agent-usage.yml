@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.analyze-backlog-user-feedback-ai-agent-usage
+title: "Analyze backlog and user feedback for AI agent usage"
+metadata:
+  title: "Analyze Backlog and User Feedback for AI Agent Usage"
+  description: "Learn how to analyze backlog data and user feedback to improve AI agent performance, prioritize enhancements, and address operational issues."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-analyze-backlog-user-feedback-ai-agent-usage.md)]

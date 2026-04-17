@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-entra-agent-id.describe-agent-id-compare-identities
+title: Describe agent ID and compare identity types
+metadata:
+  title: Describe agent ID and compare identity types
+  description: "Learn how Microsoft Entra Agent ID compares to service principals and managed identities, and understand when to use each identity type."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-describe-agent-id-compare-identities.md)]

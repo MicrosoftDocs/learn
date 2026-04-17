@@ -30,7 +30,7 @@ As an Intune admin, you can simplify enrollment in the following ways:
 Automatic enrollment lets users enroll their Windows devices in Intune. To enroll, users add their work account to their personally owned devices or join corporate-owned devices to Microsoft Entra ID. In the background, the device registers and joins Microsoft Entra ID. Once registered, the device is managed with Intune.
 
 1.  Sign in to Microsoft Intune admin center located at https://intune.microsoft.com.
-2.  Select **Devices** \- **Enroll devices** \- **Automatic enrollment**.
+2.  Select **Devices** \- **Enrollment** \- **Automatic enrollment**.
 3.  Configure the MDM User scope. Specify which users’ devices should be managed by Microsoft Intune. These Windows devices can automatically enroll in Microsoft Intune.
     
      -  **None** \- MDM automatic enrollment is disabled
@@ -65,7 +65,7 @@ If the company uses more than one UPN suffix, you need to create two CNAME recor
 ##### Step 2: Verify CNAME
 
 1.  Sign in to Microsoft Intune admin center located at https://intune.microsoft.com.
-2.  In the left navigation, select **Devices** then select **Enroll devices**.
+2.  In the left navigation, select **Devices** then select **Enrollment**.
 3.  On the Windows enrollment page, select **CNAME Validation**.
 4.  In the **Domain** box, enter the company website and then select **Test**.
 

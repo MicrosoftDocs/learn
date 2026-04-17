@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.generative-ai-tools
+metadata:
+  title: Develop generative AI apps that use tools
+  description: Tools enable models to perform tasks and interact with external systems, enabling them to extend their capabilities beyond basic chat interactions.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 03/19/2026
+  ms.service: azure-ai-foundry
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.collection:
+    - wwl-ai-copilot
+title: Develop generative AI apps that use tools
+summary: Tools enable models to perform tasks and interact with external systems, enabling them to extend their capabilities beyond basic chat interactions.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the capabilities of generative AI tools.
+  - Use the code_interpreter tool to run code and analyze data.
+  - Use the web_search tool to retrieve real-time information from the internet.  
+  - Use the file_search tool to access and analyze files.
+  - Use the function tool to run custom code.
+prerequisites: |
+  Before starting this module, you should:
+  - Be familiar with Microsoft Foundry and generative AI models.
+  - Have some programming experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+  - developer
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.wwl.generative-ai-tools.introduction
+  - learn.wwl.generative-ai-tools.tools
+  - learn.wwl.generative-ai-tools.code-interpreter
+  - learn.wwl.generative-ai-tools.web-search
+  - learn.wwl.generative-ai-tools.file-search
+  - learn.wwl.generative-ai-tools.functions
+  - learn.wwl.generative-ai-tools.exercise
+  - learn.wwl.generative-ai-tools.knowledge-check
+  - learn.wwl.generative-ai-tools.summary
+badge:
+  uid: learn.wwl.generative-ai-tools.badge

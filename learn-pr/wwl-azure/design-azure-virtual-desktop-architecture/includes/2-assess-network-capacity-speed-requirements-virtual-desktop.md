@@ -102,3 +102,4 @@ Different display resolutions require different available bandwidths. The follow
     15 Mbps
   :::column-end:::
 :::row-end:::
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-manage-performance-health.optimize-session-host-capacity-performance
 title: 'Optimize capacity and performance '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize capacity and performance
   description: "Optimize capacity and performance"
   ms.date: 08/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/7-optimize-session-host-capacity-performance.md)]
+  [!include[](includes/7-optimize-session-host-capacity-performance.md)]

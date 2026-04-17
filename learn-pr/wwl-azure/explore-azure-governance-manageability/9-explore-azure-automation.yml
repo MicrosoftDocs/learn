@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-governance-manageability.automation
 title: Explore Azure Automation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Automation
   description: "Automate frequent, time-consuming, and error-prone cloud management tasks."
   ms.date: 08/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-explore-azure-automation.md)]
+  [!include[](includes/9-explore-azure-automation.md)]

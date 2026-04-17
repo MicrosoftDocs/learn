@@ -46,7 +46,7 @@ In this module, we're going to use an example architecture from a fictional hard
 
 :::image type="content" source="../media/application-diagram.png" alt-text="Full architecture diagram of applications with frontend, backend and other components.":::
 
-This diagram is fairly complex at first glance, so let's walk through it. The website has a front end. that's what you talk to if you go to tailwindtraders.com.
+This diagram is fairly complex at first glance, so let's walk through it. The website has a front end. That's what you talk to if you go to tailwindtraders.com.
 
 :::image type="content" source="../media/application-diagram-frontend.png" alt-text="Full architecture diagram of application with frontend component highlighted.":::
 
@@ -60,17 +60,17 @@ Now that you have seen the whole architecture, let's take a moment to examine th
 
 :::image type="content" source="../media/application-diagram-failure-points.png" alt-text="Full architecture diagram of application with backend components and SQL DB highlighted.":::
 
-All of these services are a single point of failure - they’re not built for resiliency, or for scale. If one of them gets overloaded, it’s likely to crash, and there's no easy way to resolve that in the moment.
+Each of these services is a single point of failure - they’re not built for resiliency, or for scale. If one of them gets overloaded, it’s likely to crash, and there's no easy way to resolve that in the moment.
 
-Later in this module, we look at other ways to design theses service to be more scalable and reliable.
+Later in this module, we look at other ways to design these services to be more scalable and reliable.
 
 ### Pre-provisioned capacity
 
 Let's take a look at another issue that could prove troublesome. Here are the services/components that require us to pre-provision capacity:
 
-:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure AI services, Cosmos DB, and SQL DB highlighted":::
+:::image type="content" source="../media/application-diagram-provisioned.png" alt-text="Full architecture diagram of application with Azure AI services, Cosmos DB, and SQL DB highlighted.":::
 
-For example, with Cosmos DB, we pre-provision the throughput. If we exceed those limits, we’re going to start returning error messages to our customers. With Azure AI services, we select the tier and that tier has a maximum number of requests per second. After we reach either of limits, clients are going to be throttled.
+For example, with Cosmos DB, we pre-provision the throughput. If we exceed those limits, we’re going to start returning error messages to our customers. With Azure AI services, we select the tier and that tier has a maximum number of requests per second. After we reach either of these limits, clients are going to be throttled.
 
 Will a significant spike in traffic, like launching a new product, make us hit these limits? Right now, we don’t know. This matter is another that we review later in this module.
 

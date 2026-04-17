@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-email-efficiently.exercise-create-rules
+title: Exercise-create an inbox rule
+metadata:
+  title: Exercise-Create An Inbox Rule
+  description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-create-rules.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.install-configure-apps-session-host.assign-users-application-groups
 title: Assign users to application groups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Assign users to application groups
   description: "Assign users to application groups"
   ms.date: 08/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-assign-users-application-groups.md)]
+  [!include[](includes/3-assign-users-application-groups.md)]

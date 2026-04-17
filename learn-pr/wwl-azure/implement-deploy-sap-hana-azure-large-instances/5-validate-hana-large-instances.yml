@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.validate
 title: Validate SAP HANA on Azure (Large Instances)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Validate SAP HANA on Azure (Large Instances)
   description: "Validate SAP HANA on Azure (Large Instances)"
   ms.date: 06/30/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-validate-hana-large-instances.md)]
+  [!include[](includes/5-validate-hana-large-instances.md)]

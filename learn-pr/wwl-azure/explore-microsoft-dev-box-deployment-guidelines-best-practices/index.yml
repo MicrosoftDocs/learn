@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices
+metadata:
+  title: Explore Microsoft Dev Box deployment guidelines and best practices
+  description: "This module describes the details and the best practices for deploying Microsoft Dev Box in your organization."
+  ms.date: 05/12/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: dev-box
+  ai-usage: human-only
+title: Explore Microsoft Dev Box deployment guidelines and best practices
+summary: In this module, you'll learn to plan, deploy, and manage Microsoft Dev Box using manual or automated methods, covering prerequisites, architecture, security, and roll out—empowering IT admins and platform engineers to implement at scale.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Explain the planning phase including roles, responsibilities, and service requirements.
+
+  -   Describe the architecture of the service with dev centers, project, catalogs, definitions, Dev Box pool,&nbsp;network connections, role-based access, and security policies.
+
+  -   Detail out the manual and automated deployment workflow for provisioning the service.
+
+  -   Understand security and access using IAM, RBAC, Microsoft Defender, Intune, and project policies.
+
+  -   Describe rollout strategy for both pilot and production phases.
+prerequisites: '-   You should be familiar with the fundamentals of deployment planning and execution.'
+iconUrl: /training/achievements/explore-microsoft-dev-box-deployment-guidelines-best-practices.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- devops-engineer
+- platform-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- architecture
+- cloud-computing
+- devops
+- infrastructure
+- platform-engineering
+- virtual-machine
+units:
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.introduction
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.review-service-components-architecture-configuration
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.learn-about-manual-deployment
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.explore-automated-deployment
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.understand-security-compliance
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.define-test-validation
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.execute-your-rollout-strategy
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.knowledge-check
+- learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.summary
+badge:
+  uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.badge

@@ -1,6 +1,6 @@
-Azure role-based access control (Azure RBAC) is used to manage access to Azure resources, such as the ability to create new resources or use existing ones. Users in your Microsoft Entra ID are assigned specific roles, which grant access to resources. Azure RBAC allows you to configure access to Azure AI Foundry hubs and projects and by extension agents that exist within those projects.
+Azure role-based access control (Azure RBAC) is used to manage access to Azure resources, such as the ability to create new resources or use existing ones. Users in your Microsoft Entra ID are assigned specific roles, which grant access to resources. Azure RBAC allows you to configure access to Microsoft Foundry hubs and projects and by extension agents that exist within those projects.
 
-The Azure AI Foundry hub has built-in roles that are available by default.
+The Microsoft Foundry hub has built-in roles that are available by default.
 
 | **Role** | **Description** |
 |---|---|
@@ -13,9 +13,9 @@ The Azure AI Foundry hub has built-in roles that are available by default.
 
 Hubs have the system-assigned managed identity assigned to the Azure AI Administrator role. This role is more narrowly scoped to the minimum permissions needed for the managed identity to perform its tasks. This system-assigned managed identity is inherited at the project level. Depending on how an Azure AI Agent is configured, the process will use the system-assigned managed identity when accessing data sources or performing actions such as running code, running a custom function or an Azure function with the user's identity.  
 
-When a user is granted access to a project (for example, through the Azure AI Foundry portal permission management), two more roles are automatically assigned to the user. The first role is Reader on the hub. The second role is the Inference Deployment Operator role, which allows the user to create deployments on the resource group that the project is in.
+When a user is granted access to a project (for example, through the Microsoft Foundry portal permission management), two more roles are automatically assigned to the user. The first role is Reader on the hub. The second role is the Inference Deployment Operator role, which allows the user to create deployments on the resource group that the project is in.
 
-The following table is an example of how to set up role-based access control for your Azure AI Foundry for an enterprise.
+The following table is an example of how to set up role-based access control for your Microsoft Foundry for an enterprise.
 
 | **Persona** | **Role** | **Purpose** |
 |---|---|---|
@@ -24,7 +24,7 @@ The following table is an example of how to set up role-based access control for
 | **Team lead/Lead developer** | Azure AI Developer on the hub | Lead developers can create projects for their team and create shared resources (such as compute and connections) at the hub level. After project creation, project owners can invite other members. |
 | **Team members/developers** | Contributor or Azure AI Developer on the project | Developers can build and deploy AI models within a project and create assets that enable development such as computes and connections. |
 
-You can add users and assign roles directly from Azure AI Foundry at either the hub or project level. In the management center, select Users in either the hub or project section, then select New user to add a user.
+You can add users and assign roles directly from Microsoft Foundry at either the hub or project level. In the management center, select Users in either the hub or project section, then select New user to add a user.
 
 ![A screenshot Role Based Access Control configuration for an Azure AI Foundary hub in the Azure portal.](../media/hub-user-role.png)
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-review-models-azure-machine-learning
 metadata:
   title: Manage and review models in Azure Machine Learning
   description: MLflow model management and responsible AI dashboard in Azure Machine Learning.
-  ms.date: 09/07/2023
+  ms.date: 12/01/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path

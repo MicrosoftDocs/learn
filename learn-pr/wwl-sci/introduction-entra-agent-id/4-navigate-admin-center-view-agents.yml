@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-entra-agent-id.navigate-admin-center-view-agents
+title: Navigate the admin center to view agents
+metadata:
+  title: Navigate the admin center to view agents
+  description: "Learn how to navigate the Microsoft Entra admin center to view, search, filter, and manage agent identities and blueprints."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-navigate-admin-center-view-agents.md)]

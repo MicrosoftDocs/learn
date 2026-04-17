@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.understand-agent-identities-permissions
+title: Understand agent identities and permissions
+metadata:
+  title: Understand agent identities and permissions
+  description: Understand agent identities and permissions in Microsoft Security Copilot.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 02/15/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/2a-understand-agent-identities-permissions.md)]

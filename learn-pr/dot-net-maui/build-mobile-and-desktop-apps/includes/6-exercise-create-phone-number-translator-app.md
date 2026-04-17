@@ -26,49 +26,49 @@ using System.Text;
 namespace Phoneword;
 public static class PhonewordTranslator
 {
-	public static string? ToNumber(string raw)
-	{
-		if (string.IsNullOrWhiteSpace(raw))
-			return null;
+    public static string? ToNumber(string raw)
+    {
+        if (string.IsNullOrWhiteSpace(raw))
+            return null;
 
-		raw = raw.ToUpperInvariant();
+        raw = raw.ToUpperInvariant();
 
-		var newNumber = new StringBuilder();
-		foreach (var c in raw)
-		{
-			if (" -0123456789".Contains(c))
-				newNumber.Append(c);
-			else
-			{
-				var result = TranslateToNumber(c);
-				if (result != null)
-					newNumber.Append(result);
-				// Bad character?
-				else
-					return null;
-			}
-		}
-		return newNumber.ToString();
-	}
+        var newNumber = new StringBuilder();
+        foreach (var c in raw)
+        {
+            if (" -0123456789".Contains(c))
+                newNumber.Append(c);
+            else
+            {
+                var result = TranslateToNumber(c);
+                if (result != null)
+                    newNumber.Append(result);
+                // Bad character?
+                else
+                    return null;
+            }
+        }
+        return newNumber.ToString();
+    }
 
-	static bool Contains(this string keyString, char c)
-	{
-		return keyString.IndexOf(c) >= 0;
-	}
+    static bool Contains(this string keyString, char c)
+    {
+        return keyString.IndexOf(c) >= 0;
+    }
 
-	static readonly string[] digits = {
-		"ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
-	};
+    static readonly string[] digits = {
+        "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
+    };
 
-	static int? TranslateToNumber(char c)
-	{
-		for (int i = 0; i < digits.Length; i++)
-		{
-			if (digits[i].Contains(c))
-				return 2 + i;
-		}
-		return null;
-	}
+    static int? TranslateToNumber(char c)
+    {
+        for (int i = 0; i < digits.Length; i++)
+        {
+            if (digits[i].Contains(c))
+            return 2 + i;
+        }
+        return null;
+    }
 }
 ```
 
@@ -190,7 +190,7 @@ public static class PhonewordTranslator
     private void OnTranslate(object sender, EventArgs e)
     {
         string enteredNumber = PhoneNumberText.Text;
-        translatedNumber = Core.PhonewordTranslator.ToNumber(enteredNumber);
+        translatedNumber = PhonewordTranslator.ToNumber(enteredNumber);
     
         if (!string.IsNullOrEmpty(translatedNumber))
         {
@@ -221,14 +221,14 @@ public static class PhonewordTranslator
     }
     ```
 
-1. In the `OnCall` method, prompt the user, by using the **Page.DisplayAlert** method, to ask if they'd like to dial the number.
+1. In the `OnCall` method, prompt the user, by using the **Page.DisplayAlertAsync** method, to ask if they'd like to dial the number.
 
-    The parameters to `DisplayAlert` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
+    The parameters to `DisplayAlertAsync` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
 
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
     {
-        if (await this.DisplayAlert(
+        if (await this.DisplayAlertAsync(
             "Dial a Number",
             "Would you like to call " + translatedNumber + "?",
             "Yes",
@@ -260,7 +260,7 @@ public static class PhonewordTranslator
     ```csharp
     async void OnCall(object sender, System.EventArgs e)
     {
-        if (await this.DisplayAlert(
+        if (await this.DisplayAlertAsync(
             "Dial a Number",
             "Would you like to call " + translatedNumber + "?",
             "Yes",
@@ -273,12 +273,12 @@ public static class PhonewordTranslator
             }
             catch (ArgumentNullException)
             {
-                await DisplayAlert("Unable to dial", "Phone number was not valid.", "OK");
+                await DisplayAlertAsync("Unable to dial", "Phone number was not valid.", "OK");
             }
             catch (Exception)
             {
                 // Other error has occurred.
-                await DisplayAlert("Unable to dial", "Phone dialing failed.", "OK");
+                await DisplayAlertAsync("Unable to dial", "Phone dialing failed.", "OK");
             }
         }
     }

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spec-driven-development-github-spec-kit-greenfield-intro.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Summary."
+  ms.date: 01/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  zone_pivot_groups: video-or-text
+durationInMinutes: 1
+content: |
+  [!include[](includes/11-summary.md)]

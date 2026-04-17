@@ -8,7 +8,7 @@ Now that you have a better understanding of the resources available for your Lin
 
 - [Choose an Azure compute service - Azure Architecture Center](/azure/architecture/guide/technology-choices/compute-decision-tree)
 - [Use platform as a service (PaaS) options - Azure Architecture Center](/azure/architecture/guide/design-principles/managed-services?source=recommendations)
-- [Integrated support for Red Hat solutions in Microsoft Azure](https://www.redhat.com/en/resources/integrated-support-for-rh-solutions-in-azure-brief)
+- [Integrated support for Red Hat solutions in Microsoft Azure](https://www.redhat.com/en/partners/microsoft/red-hat-on-azure)
 - [Red Hat on Azure](https://azure.microsoft.com/solutions/linux-on-azure/red-hat/)
 - [SUSE on Azure](https://azure.microsoft.com/solutions/linux-on-azure/suse/)
 - [Ubuntu on Azure](https://ubuntu.com/azure)

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-support-portal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Getting started with Surface Support Portal" module.
+  ms.date: 04/13/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Where is the Surface Support Portal accessed?"
+    choices:
+        - content: "Microsoft Intune admin center"
+          isCorrect: false
+          explanation: "Incorrect. The module states that Surface Support Portal access isn't managed through Intune."
+        - content: "Azure Active Directory portal"
+          isCorrect: false
+          explanation: "Incorrect. Azure Active Directory is part of the tenant but isn't where Surface Support Portal is accessed."
+        - content: "Microsoft 365 admin center"
+          isCorrect: true
+          explanation: "Correct. The module explains that Surface Support Portal is accessed through the Support section of the Microsoft 365 admin center."
+        - content: "Partner Center"
+          isCorrect: false
+          explanation: "Incorrect. Partner Center isn't used to access Surface Support Portal, even though partners may benefit from completing the module."
+  - content: "Is Intune enrollment required to use Surface Support Portal?"
+    choices:
+        - content: "Yes, for all devices"
+          isCorrect: false
+          explanation: "Incorrect. The module clearly states that Intune enrollment isn't required."
+        - content: "Yes, but only for repairs"
+          isCorrect: false
+          explanation: "Incorrect. Repair requests can be initiated even if a device isn't enrolled in Intune."
+        - content: "No"
+          isCorrect: true
+          explanation: "Correct. The module confirms that Surface Support Portal can be used even when devices aren't enrolled in Intune."
+        - content: "Only for support requests"
+          isCorrect: false
+          explanation: "Incorrect. Neither service nor support workflows require Intune enrollment."
+  - content: "What prevents a user from creating a service order in Surface Support Portal?"
+    choices:
+        - content: "Device not enrolled in Intune"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that Intune enrollment isn't required for service orders."
+        - content: "Missing required administrative role"
+          isCorrect: true
+          explanation: "Correct. Users must be assigned the appropriate administrative role to create service orders."
+        - content: "No Microsoft 365 subscription"
+          isCorrect: false
+          explanation: "Incorrect. The module states that a subscription isn't required to access Surface Support Portal."
+        - content: "Surface Support Portal requires a paid license"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that a paid license is required."
+  - content: "Which task is appropriate for Surface Support Portal?"
+    choices:
+        - content: "Viewing device compliance status"
+          isCorrect: false
+          explanation: "Incorrect. Device compliance is managed through Intune, not Surface Support Portal."
+        - content: "Deploying configuration profiles"
+          isCorrect: false
+          explanation: "Incorrect. Configuration profiles aren't managed in Surface Support Portal."
+        - content: "Tracking a repair request"
+          isCorrect: true
+          explanation: "Correct. The module describes tracking service and repair requests as a key Surface Support Portal task."
+        - content: "Enrolling devices in Intune"
+          isCorrect: false
+          explanation: "Incorrect. Device enrollment is handled outside of Surface Support Portal."
+  - content: "After assigning roles for Surface Support Portal, what should you do before verifying access?"
+    choices:
+        - content: "Restart the Microsoft 365 admin center"
+          isCorrect: false
+          explanation: "Incorrect. Restarting the admin center doesn't affect role availability."
+        - content: "Enroll devices in Intune"
+          isCorrect: false
+          explanation: "Incorrect. Intune enrollment isn't required according to the module."
+        - content: "Allow time for role propagation"
+          isCorrect: true
+          explanation: "Correct. The module emphasizes allowing time for roles to propagate before validating access."
+        - content: "Submit an actual service order"
+          isCorrect: false
+          explanation: "Incorrect. The module states that submitting an actual request isn't required to confirm access."

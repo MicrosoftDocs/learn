@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.store-chat-history
+title: Store chat history
+metadata:
+  title: Store chat history
+  description: "Store chat history"
+  ms.date: 05/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-python
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-store-chat-history.md)]

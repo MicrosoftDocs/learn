@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-advanced-sql-code.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of advanced T-SQL coding techniques including CTEs, window functions, JSON, regex, fuzzy matching, graph queries, and error handling.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/12-summary.md)]

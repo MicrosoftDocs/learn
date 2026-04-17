@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.exercise-deploy-application-azure-kubernetes
 title: Try-This exercise - Deploy an application to Azure Kubernetes Service cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Try-This exercise - Deploy an application to Azure Kubernetes Service cluster
   description: "Try-This exercise - Deploy an application to Azure Kubernetes Service cluster"
   ms.date: 03/04/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-deploy-application-azure-kubernetes.md)]
+  [!include[](includes/7-exercise-deploy-application-azure-kubernetes.md)]

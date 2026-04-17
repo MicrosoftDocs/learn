@@ -1,7 +1,3 @@
----
-ms.custom:
-  - ignite-2024
----
 SQL Database in Microsoft Fabric is a versatile and developer-friendly transactional database built on the foundation of Azure SQL Database. It allows for the creation and management of operational databases within the Fabric environment.
 
 Differently than Azure SQL Database, which is a Platform as a Service (PaaS), SQL Database in Microsoft Fabric is a Software as a Service (SaaS). This means that users can enjoy a low-maintenance solution, allowing them to focus even more on their core business activities.
@@ -46,7 +42,7 @@ The Performance Dashboard in Fabric SQL Database simplifies the user experience 
 
 The dashboard offers different levels of metrics visibility to accommodate users with varying SQL expertise. Beginners can access basic query performance metrics, while intermediate and advanced users can view more detailed information. 
 
-You can access the performance dashboard by navigating through artifacts in the Fabric portal workspace, and then selecting the three dots icon, and then select **Open performance summary**.
+You can access the performance dashboard by right-clicking on the context button (the three dots) in the item view, then select **Open performance summary**.
 
 Alternatively, you can access the home toolbar in the **Query Editor** window, and select **Performance summary**.
 

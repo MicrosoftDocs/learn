@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-azure-ai-ready-infrastructure.introduction
+title: "Introduction: Secure infrastructure for AI workloads"
+metadata:
+  title: "Introduction: Secure Infrastructure for AI Workloads"
+  description: "Learn how to secure AI infrastructure with Azure. Configure identity, governance scopes, and policies to ensure compliance and prevent risks."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

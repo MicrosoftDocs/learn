@@ -2,8 +2,6 @@
 uid: learn.pitch-your-product-prototype.4-explain-the-how
 title: Explain how your business works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explain how your business works
   description: This unit teaches you how to share your business model.
   author: czhu89
@@ -25,4 +23,4 @@ quiz:
       isCorrect: false
     - content: "Marketing channels, business models, and techniques."
       isCorrect: false
-
+

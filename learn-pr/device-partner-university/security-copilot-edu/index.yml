@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.security-copilot-education
+title: Microsoft Security Copilot in Education
+metadata:
+  title: Microsoft Security Copilot In Education
+  description: In this module, you'll explore how Microsoft Security Copilot can help schools strengthen their defenses against cyber threats like phishing and ransomware. You'll learn how to use AI-driven insights to investigate incidents, generate reports, and improve security operations in educational environments.
+  ms.date: 11/06/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: microsoft-365-education
+  ms.custom: CE091224-1
+summary: >
+  Explore how Microsoft Security Copilot can help schools strengthen their defenses against cyber threats like phishing and ransomware. Learn how to use AI-driven insights to investigate incidents, generate reports, and improve security operations in educational environments.
+abstract: |
+  By the end of this module, you'll be able to:
+   - Investigate a phishing attack
+   - Generate a professional incident report
+   - Understand how AI can support school security operations
+prerequisites: |
+  - None
+iconUrl: /training/achievements/security-copilot-edu.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - technology-manager
+  - security-engineer
+  - security-operations-analyst
+  - administrator
+products:
+  - m365-education
+units:
+  - learn.dpu.security-copilot-education.introduction
+  - learn.dpu.security-copilot-education.define-security-copilot
+  - learn.dpu.security-copilot-education.integrations
+  - learn.dpu.security-copilot-education.types-of-threats
+  - learn.dpu.security-copilot-education.analyze-suspicious-email
+  - learn.dpu.security-copilot-education.why-reporting-matters
+  - learn.dpu.security-copilot-education.create-a-report
+  - learn.dpu.security-copilot-education.next-steps
+  - learn.dpu.security-copilot-education.knowledge-check
+  - learn.dpu.security-copilot-education.summary
+badge:
+  uid: learn.dpu.security-copilot-education.badge

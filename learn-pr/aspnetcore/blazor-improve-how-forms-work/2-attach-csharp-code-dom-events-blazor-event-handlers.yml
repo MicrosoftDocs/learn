@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: "Attach C# code to DOM events with Blazor event handlers"
   description: "Create handlers to process DOM events using C#"
-  ms.date: 01/09/2025
+  ms.date: 07/17/2025
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "C# events"
       isCorrect: false
-      explanation: "C# events don't properly transfer between components"
+      explanation: "C# events don't properly transfer between components."
     - content: "EventCallback"
       isCorrect: true
-      explanation: "EventCallbacks look like parameters on a component and can be specified on a Blazor page or another component"
+      explanation: "EventCallbacks look like parameters on a component and can be specified on a Blazor page or another component."
     - content: "Parameter"
       isCorrect: false
-      explanation: "Parameters are used to pass data between Blazor components, not methods or events"
+      explanation: "Parameters are used to pass data between Blazor components, not to pass methods or events."
   - content: "What method is used to override the default action in an HTML DOM element?"
     choices:
-    - content: "preventDefault"
+    - content: "`preventDefault`"
       isCorrect: true
-      explanation: "preventDefault prevents the default action in the DOM element from executing"
-    - content: "return false"
+      explanation: "preventDefault prevents the default action in the DOM element from executing."
+    - content: "`return false`"
       isCorrect: false
-      explanation: "return false was a technique to stop an event in other JavaScript frameworks, but doesn't prevent the default action"
-    - content: "throw new Exception()"
+      explanation: "`return false` was a technique to stop an event in other JavaScript frameworks, but doesn't prevent the default action."
+    - content: "`throw new Exception()`"
       isCorrect: false
-      explanation: "Throwing an exception might stop the default action from executing, but it also raises an error that you might not want your application users to interact with"
+      explanation: "Throwing an exception might stop the default action from executing, but it also raises an error that you might not want your application users to interact with."

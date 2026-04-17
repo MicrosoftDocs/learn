@@ -1,6 +1,6 @@
 ## Overview 
 
-### Setup IoT hub and IoT device
+### Set up IoT hub and IoT device
 
 - Create an IoT hub and a virtual Azure IoT Edge device.
 - Register the device with the IoT hub.
@@ -8,7 +8,7 @@
 
 <a name='setup-azure-ai-services'></a>
 
-### Setup Azure AI services
+### Set up Azure AI services
 
 Create an Azure AI services resource that consumes the Text Analytics API.
 
@@ -20,16 +20,16 @@ Create an Azure AI services resource that consumes the Text Analytics API.
 
 ## Components used for this stage
 
-- **Resource group:** a collection of resources for a solution.
-- **IoT hub:** allows communication between your IoT solution and the devices it manages. It connects to the devices with per-device authentication.
-- **Device identity:** lives in the cloud. When you create a device identity in the IoT hub, the hub generates a unique device connection string to associate with the physical device.
-- **Virtual device as an IoT Edge device**: The runtime can be deployed on devices as small as a Raspberry Pi or as large as an industrial server. Once a device is configured with the IoT Edge runtime, you can start deploying business logic to it from the cloud. In this module, you'll create a virtual device on the cloud. It acts as an IoT Edge device.
+- **Resource group:** A collection of resources for a solution.
+- **IoT hub:** Lets your IoT solution communicate with the devices it manages. It connects to the devices with per-device authentication.
+- **Device identity:** Exists in the cloud. When you create a device identity in the IoT hub, the hub generates a unique device connection string to associate with the physical device.
+- **Virtual device as an IoT Edge device:** The runtime can be deployed on devices as small as a Raspberry Pi or as large as an industrial server. Once a device is configured with the IoT Edge runtime, you deploy business logic to it from the cloud. In this module, you create a virtual device in the cloud. It acts as an IoT Edge device.
 
 ## Detailed steps
 
-In the following exercise, you'll complete these steps:
+In this exercise, you complete these steps:
 
-1. Create the resource group
+1. Create a resource group
 1. Create a virtual device as an IoT Edge device
 1. Create an Azure IoT hub
 1. Register the IoT Edge device to the IoT hub

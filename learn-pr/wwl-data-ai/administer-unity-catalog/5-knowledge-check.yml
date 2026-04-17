@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-for-governance.knowledge-check
+title: Module assessment
+metadata:
+  ai_generated_module_assessment: false
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 10/21/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization needs to ensure the Finance team can only access their data from designated workspaces while physically storing that data in separate Azure storage containers. Which combination of Unity Catalog isolation methods should you implement?"
+    choices:
+    - content: "Administrative roles and catalog-level permissions only"
+      isCorrect: false
+      explanation: "Incorrect. This approach doesn't restrict workspace access or provide physical data separation in storage."
+    - content: "Workspace-to-catalog binding and Azure storage separation"
+      isCorrect: true
+      explanation: "Correct. Workspace-to-catalog binding limits catalog visibility to specific workspaces, while Azure storage separation ensures data is physically isolated in different ADLS Gen2 containers."
+    - content: "Schema-level permissions and metastore admin roles"
+      isCorrect: false
+      explanation: "Incorrect. Schema-level permissions don't provide workspace isolation, and metastore admin roles are for overall governance, not team-specific access control."
+  - content: "You're planning to add a new column to the customer_silver table in your medallion architecture. How should you use Unity Catalog's automatic lineage tracking to assess the impact?"
+    choices:
+    - content: "Check the table's schema definition in Catalog Explorer"
+      isCorrect: false
+      explanation: "Incorrect. The schema definition shows table structure but doesn't reveal downstream dependencies for impact assessment."
+    - content: "Review the Lineage tab to identify upstream sources and downstream consumers"
+      isCorrect: true
+      explanation: "Correct. The Lineage tab displays both data sources feeding into the table and all downstream jobs, notebooks, and tables that consume it, enabling comprehensive impact analysis."
+    - content: "Run a SELECT query on the table to see current data"
+      isCorrect: false
+      explanation: "Incorrect. Querying shows data content but provides no information about which processes depend on the table structure."
+  - content: "After enabling Unity Catalog, your existing Hive metastore tables are still needed for production reports while you gradually migrate to Unity Catalog. What is the recommended approach?"
+    choices:
+    - content: "Immediately migrate all tables to avoid conflicts between systems"
+      isCorrect: false
+      explanation: "Incorrect. Immediate migration risks disrupting production systems and doesn't allow for a controlled transition process."
+    - content: "Use the hive_metastore catalog to access legacy tables while building new tables in Unity Catalog"
+      isCorrect: true
+      explanation: "Correct. The hive_metastore catalog provides continued access to existing Hive tables during migration, allowing you to gradually build governed tables in Unity Catalog without disrupting production."
+    - content: "Disable the Hive metastore to prevent confusion"
+      isCorrect: false
+      explanation: "Incorrect. Disabling the Hive metastore would break access to production tables that haven't been migrated yet."

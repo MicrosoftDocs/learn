@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-agent-cost-structure.infrastructure-costs
+title: Understand ongoing infrastructure and licensing costs of AI agents
+metadata:
+  title: Understand Ongoing Infrastructure and Licensing Costs of AI Agents
+  description: This unit covers the ongoing infrastructure and licensing costs associated with AI agents, including cloud resources, data storage, and software licensing.
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/1-infrastructure-costs.md)]

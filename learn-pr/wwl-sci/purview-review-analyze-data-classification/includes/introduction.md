@@ -4,17 +4,24 @@ Microsoft Purview provides tools that help security and compliance teams track c
 
 By using these tools, organizations can:
 
-- Track data classification and protection across Microsoft 365, Azure, Amazon Web Services (AWS), and on-premises storage.
-- Analyze label usage and policy compliance to ensure sensitive information is properly secured.
-- Investigate user interactions with classified content to detect unauthorized access or policy violations.
-- Apply AI-driven insights through Microsoft Security Copilot to identify risks and refine security strategies.
+- Track data classification and protection across Microsoft 365, Azure, AWS, and on-premises sources
+- Identify labeling gaps and verify that sensitive information is properly secured
+- Review user activity to detect unauthorized access or policy violations
+- Apply AI-driven insights with Microsoft Security Copilot, including its embedded experience in Microsoft Purview, to summarize alerts and surface next steps
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- Interpret Information Protection Reports to assess classification and protection trends.
-- Investigate labeled content using Data explorer and Content explorer to identify classification patterns.
-- Analyze user activity in Activity explorer to detect policy violations and potential security risks.
+- Assess classification and protection trends with Information Protection Reports
+- Examine labeled content with Data explorer and Content explorer
+- Review user activity in Activity explorer to identify policy violations
+- Use Microsoft Security Copilot (embedded in Purview) to summarize DLP and insider-risk alerts
 
-Use this knowledge to improve data security, maintain compliance, and respond to risks with confidence.
+## Prerequisites
+
+Before starting this module, you should have:
+
+- A basic understanding of Microsoft Purview and its role in data security and compliance
+- Experience assigning sensitivity labels and data loss prevention (DLP) policies in Microsoft 365
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-openai-content-safety-controls.configure-content-filters-custom-blocklists
+title: "Configure content filters and custom blocklists"
+metadata:
+  title: "Configure Content Filters and Custom Blocklists"
+  description: "Learn how to configure content filters and custom blocklists in Azure OpenAI to enhance content safety and align with organizational policies."
+  ms.date: 02/04/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-configure-content-filters-custom-block-lists.md)]

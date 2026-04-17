@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-warehouse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["31D8967B_112","31D8967B_116","31D8967B_128","31D8967B_132"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/10/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 03/04/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -45,3 +48,14 @@ quiz:
     - content: "To grant access to individual warehouses for downstream consumption."
       isCorrect: true
       explanation: "Correct.  By granting access to a single data warehouse using item permissions, you can enable downstream consumption of data."
+  - content: "What capability does a Fabric data warehouse provide that a SQL analytics endpoint does not?"
+    choices:
+    - content: "Writing data using INSERT, UPDATE, DELETE, and MERGE statements."
+      isCorrect: true
+      explanation: "Correct. A Fabric data warehouse supports full T-SQL DML, including INSERT, UPDATE, DELETE, and MERGE. A SQL analytics endpoint provides read-only access to lakehouse data."
+    - content: "Reading data from tables and views using SELECT statements."
+      isCorrect: false
+      explanation: "Incorrect. Both a Fabric data warehouse and a SQL analytics endpoint support reading data from tables and views."
+    - content: "Connecting with SQL client tools like SQL Server Management Studio."
+      isCorrect: false
+      explanation: "Incorrect. Both a Fabric data warehouse and a SQL analytics endpoint support connections from standard SQL client tools through TDS connections."

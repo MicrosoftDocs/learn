@@ -2,8 +2,6 @@
 uid: learn.improve-search-results-vector-search.prepare-search
 title: Prepare your search
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare your search
   description: Learn how to prepare your vector search.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/3-prepare-search.md)]
-
+

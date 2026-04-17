@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.queue-process-operations-service-bus
+metadata:
+  title: Queue and Process AI Operations with Azure Service Bus
+  description: Learn how to use Azure Service Bus to queue, distribute, and reliably process AI workloads using queues, topics, subscriptions, and dead-letter queues.
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-service-bus
+title: Queue and process AI operations with Azure Service Bus
+summary: |
+  Learn how to use Azure Service Bus to decouple AI application components, queue inference requests, distribute processing workloads across competing consumers, and handle failures through dead-letter queues. This module covers queues, topics with subscriptions, message structuring for AI payloads, and reliable message processing with the Python SDK.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how Azure Service Bus decouples AI application components and identify when to apply messaging patterns such as load leveling, competing consumers, and publish-subscribe.
+    - Choose between Service Bus queues and topics with subscriptions based on whether an AI workflow requires single-consumer processing or fan-out to multiple consumers.
+    - Structure Service Bus messages for AI workloads, including serializing prompts and model parameters, handling large payloads with the claim-check pattern, and including correlation IDs for end-to-end request tracking.
+    - Process messages reliably using peek-lock receive mode, handle poison messages through dead-letter queues, and monitor the dead-letter queue for failed inferences.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with asynchronous messaging concepts and distributed systems patterns.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-service-bus
+subjects:
+- backend-development
+- artificial-intelligence
+units:
+- learn.wwl.queue-process-operations-service-bus.introduction
+- learn.wwl.queue-process-operations-service-bus.explore-service-bus-concepts
+- learn.wwl.queue-process-operations-service-bus.choose-queues-topics-subscriptions
+- learn.wwl.queue-process-operations-service-bus.structure-messages-ai-workloads
+- learn.wwl.queue-process-operations-service-bus.process-messages-reliably
+- learn.wwl.queue-process-operations-service-bus.exercise-process-messages
+- learn.wwl.queue-process-operations-service-bus.knowledge-check
+- learn.wwl.queue-process-operations-service-bus.summary
+badge:
+  uid: learn.wwl.queue-process-operations-service-bus.badge

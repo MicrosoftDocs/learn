@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 6 Track model training in Jupyter notebooks with MLflow
 
 Learning Path 6 Overview
@@ -18,7 +15,7 @@ This learning path consists of four focus areas:
 
 Learning Path 6 Tips and Tricks
 
-- Describe an Mlflow solution overview with a good architecture diagram
+- Describe a Mlflow solution overview with a good architecture diagram
 - Revisit the full iterative process to show model choice process in more details
 - Provide a code walk-through for classes, objects, and methods necessary
 

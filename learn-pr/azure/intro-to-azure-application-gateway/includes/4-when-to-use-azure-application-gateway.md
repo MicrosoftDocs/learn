@@ -1,4 +1,4 @@
-Azure Application Gateway can meet your organization’s needs for the following reasons: 
+Azure Application Gateway can meet your organization’s needs for the following reasons:
 
 - Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health-probe functionality of Azure Application Gateway ensures that traffic isn't being directed to any server that becomes unavailable.
 - Azure Application Gateway TLS termination functionality reduces the amount of CPU capacity that servers in the back-end pool allocate to encryption and decryption operations.

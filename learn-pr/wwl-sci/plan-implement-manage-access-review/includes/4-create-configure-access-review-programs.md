@@ -1,14 +1,14 @@
 Microsoft Entra access reviews are a feature of Microsoft Entra ID Governance. Access reviews help to ensure that the right identities have the right access to the right resources in the organization. Access reviews can be implemented programmatically using the access reviews API in Microsoft Graph.
 
-To create an access review using Graph, call the Graph API to create an access review schedule definition. The caller must either be a user in an appropriate role with an application that has the delegated `AccessReview.ReadWrite.All` permission, or an application with the `AccessReview.ReadWrite.All` application permission.
+To create an access review using Graph, call the Graph API to create an access review schedule definition. The caller must either be a user with at least the **Identity Governance Administrator** role with an application that has the delegated `AccessReview.ReadWrite.All` permission, or an application with the `AccessReview.ReadWrite.All` application permission.
 
 You can also create an access review in PowerShell with the `New-MgIdentityGovernanceAccessReviewDefinition` cmdlet from the Microsoft Graph PowerShell cmdlets for Identity Governance module.
 
 The access reviews API in Microsoft Graph enables organizations to audit and attest to the access that identities are assigned to resources in the organization. For example, access to a SharePoint site that contains customer contact information. And by using the access reviews API, organizations can check and attest to access to such groups and by extension, resources.
 
-## Access Review API for a security groups
+## Access Review API for security groups
 
-This learning module doesn't recreate the step by step method to use the API, to get that information see the article - [Review access to security groups using access reviews APIs.](/graph/tutorial-accessreviews-securitygroup)  Here are the high level steps that need to be performed.
+This learning module doesn't recreate the step-by-step method to use the API, to get that information see the article - [Review access to security groups using access reviews APIs.](/graph/tutorial-accessreviews-securitygroup) To review guest access in Microsoft 365 groups via API, see [Review access to Microsoft 365 groups using access reviews APIs](/graph/tutorial-accessreviews-m365group). Here are the high-level steps that need to be performed.
 
 1. Create an access review for the security group
 2. List instances of the access review

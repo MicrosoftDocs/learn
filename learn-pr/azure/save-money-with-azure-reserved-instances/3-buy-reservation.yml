@@ -4,8 +4,8 @@ metadata:
   title: Make a purchase
   description: Learn how reservations are scoped, how to make a purchase, and who gets notifications for purchases.
   ms.date: 10/24/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 title: Make a purchase
 durationInMinutes: 5

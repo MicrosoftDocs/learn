@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.simplify-complex-conditionals-github-copilot-agent.analyze-complex-logic-github-copilot-ask
+title: Analyze complex logic using GitHub Copilot's Ask mode
+metadata:
+  title: Analyze Complex Logic using GitHub Copilot's Ask Mode
+  description: "Analyze complex logic using GitHub Copilot's Ask mode."
+  ms.date: 10/16/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-analyze-complex-logic-github-copilot-ask.md)]

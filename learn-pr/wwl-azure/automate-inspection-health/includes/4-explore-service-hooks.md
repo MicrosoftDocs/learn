@@ -1,23 +1,19 @@
-Service hooks enable you to do tasks on other services when your Azure DevOps Services projects happen.
+Service hooks enable automated task execution across external services triggered by Azure DevOps project events, facilitating cross-platform workflow automation, and real-time integration capabilities.
 
-For example, create a card in Trello when a work item is created.
+Integration scenarios include work item synchronization with project management platforms (Trello card creation upon work item creation), team communication automation (mobile push notifications for build failures), and custom application event processing.
 
-Or send a push notification to your team's mobile devices when a build fails.
+Service hooks provide efficient event-driven automation for custom applications and services, eliminating the need for polling mechanisms while enabling immediate response to project lifecycle events.
 
-Service hooks can also be used in custom apps and services.
+Azure DevOps provides native service hook integration across multiple service categories:
 
-It's a more efficient way to drive activities when events happen in your projects.
+| **Build and release** | **Collaborate** | **Customer support** | **Plan and track** | **Integrate**     |
+| --------------------- | --------------- | -------------------- | ------------------ | ----------------- |
+| AppVeyor              | Campfire        | UserVoice            | Trello             | Azure Service Bus |
+| Bamboo                | Flowdock        | Zendesk              |                    | Azure Storage     |
+| Jenkins               | HipChat         |                      |                    | Web Hooks         |
+| MyGet                 | Hubot           |                      |                    | Zapier            |
+| Slack                 |                 |                      |                    |                   |
 
-Azure DevOps includes built-in support for the following Service Hooks:
-
-| **Build and release.** | **Collaborate** | **Customer support** | **Plan and track** | **Integrate**     |
-| ---------------------- | --------------- | -------------------- | ------------------ | ----------------- |
-| AppVeyor               | Campfire        | UserVoice            | Trello             | Azure Service Bus |
-| Bamboo                 | Flowdock        | Zendesk              |                    | Azure Storage     |
-| Jenkins                | HipChat         |                      |                    | Web Hooks         |
-| MyGet                  | Hubot           |                      |                    | Zapier            |
-| Slack                  |                 |                      |                    |                   |
-
-This list will change over time.
+Service hook ecosystem continues expanding through marketplace extensions and custom webhook implementations.
 
 To learn more about service hooks and how to use and create them, read [Service Hooks in Azure DevOps](/azure/devops/service-hooks/overview).

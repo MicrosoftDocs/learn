@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-developer-self-service.developer-self-service-platform-architecture
 title: Developer Self-Service Platform Architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Developer Self-Service Platform Architecture
   description: "Developer Self-Service Platform Architecture"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 13
 content: |
-  [!include[](includes/3-developer-self-service-platform-architecture.md)]
+  [!include[](includes/3-developer-self-service-platform-architecture.md)]

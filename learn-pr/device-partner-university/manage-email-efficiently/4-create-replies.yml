@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.manage-email-efficiently.create-replies
+title: Draft reply emails using Copilot Chat
+metadata:
+  title: Draft Reply Emails Using Copilot Chat
+  description: This content is part of the "Manage email efficiently with Microsoft Outlook and Copilot Chat" module.
+  ms.date: 09/24/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-create-replies.md)]

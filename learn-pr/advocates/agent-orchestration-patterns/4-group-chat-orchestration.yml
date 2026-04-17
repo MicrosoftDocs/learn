@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.agent-orchestration-patterns.group-chat-orchestration
+title: Group chat orchestration
+metadata:
+  title: Group chat orchestration
+  description: Understand the group chat orchestration pattern in AI agent orchestration.
+  ms.date: 08/13/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-group-chat-orchestration.md)]

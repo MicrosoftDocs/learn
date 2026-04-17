@@ -12,5 +12,5 @@ By completing this module, you're able to:
 
 ## Prerequisites
 
-- An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+- An Azure subscription – [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 - Familiarity with Azure and the Azure portal

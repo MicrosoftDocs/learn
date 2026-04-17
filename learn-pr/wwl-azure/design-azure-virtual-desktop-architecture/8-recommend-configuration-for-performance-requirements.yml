@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Recommend a configuration for performance requirements
   description: "Recommend a configuration for performance requirements"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/8-recommend-configuration-for-performance-requirements.md)]

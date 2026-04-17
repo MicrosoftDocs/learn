@@ -7,7 +7,7 @@ The diagram shows that:
 - Software updates are continuous and frequent.
 - Most companies allow use of personal mobile devices in the workplace.
 - Most employees use mobile apps for work-related activities.
-- Cybersecurity is a growing concern,
+- Cybersecurity is a growing concern.
 - Device management failures and data breaches are costly.
 
 This workplace evolution leads to the following changes in information technology (IT) practices:
@@ -16,7 +16,7 @@ This workplace evolution leads to the following changes in information technolog
 - Shared devices such as retail point of sale devices and ruggedized devices are more common.
 - Specialized devices such as digital interactive whiteboards, conference room devices, and holographic wearable computers are more common.
 - Devices that were corporate-owned can now belong to users or the corporation.
-- Legacy apps on the corporate network are now joined by cloud-managed and software-as-a-service (SaaS) apps.
+- Cloud-managed and software-as-a-service (SaaS) apps join Legacy apps on the corporate network.
 - IT admins are moving from manual, reactive processes toward automated, proactive processes.
 - Instead of providing high-touch support environments, organizations now provide self-service solutions.
 
@@ -64,6 +64,7 @@ You might know and already be using services and tools like Microsoft Intune, Mi
 ## Learning objectives
 
 In this module, you learn about:
+
 - The products, services, and capabilities that make up Microsoft Intune.
 - How Intune and Microsoft Configuration Manager can help protect your organization's endpoints.
 - What Microsoft Intune can do for you and your organization.

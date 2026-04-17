@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-identity-access-security.authentication-methods
 title: Describe Azure authentication methods
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure authentication methods
   description: "Describe Azure authentication methods"
   ms.date: 10/03/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-authentication-methods.md)]
+  [!include[](includes/3-authentication-methods.md)]

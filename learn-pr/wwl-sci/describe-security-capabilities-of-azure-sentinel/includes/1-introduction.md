@@ -1,9 +1,9 @@
-Every organization, whatever its size, is susceptible to security threats and attacks. Being able to collect data to gain visibility into your digital estate and detect, investigate, and respond to threats is central to any network security strategy.
+Every organization, whatever its size, is susceptible to security threats and attacks. The ability to collect data, gain visibility across your digital environment, and detect, investigate, and respond to threats is central to any security strategy.
 
-In this module, you’ll learn about security information and event management (SIEM) and security orchestration automated response (SOAR). You'll explore how Microsoft Sentinel provides a single solution for alert detection, threat visibility, proactive hunting, and threat response. Finally, you'll learn how Microsoft Sentinel integrates with Microsoft Security Copilot.
+In this module, you'll learn about security information and event management (SIEM) and security orchestration, automation, and response (SOAR), and how modern AI and machine learning capabilities are reshaping security operations. You'll then explore Microsoft Sentinel—a cloud-native SIEM/SOAR solution—and see how it brings together threat detection, investigation, and response in a single platform. Finally, you'll learn how Microsoft Sentinel integrates with Microsoft Security Copilot, an AI-powered security assistant.
 
-After completing this module, you’ll be able to:
+After completing this module, you'll be able to:
 
-- Describe the security concepts for SIEM and SOAR.
-- Describe how Microsoft Sentinel provides threat detection and mitigation.
-- Describe how Microsoft Sentinel integrates with Microsoft Security Copilot.
+- Define the concepts of SIEM and SOAR, and describe the role of AI in modern security operations.
+- Describe how Microsoft Sentinel provides threat detection and mitigation capabilities.
+- Describe Microsoft Security Copilot and how it integrates with Microsoft Sentinel.

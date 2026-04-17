@@ -2,8 +2,6 @@
 uid: learn.languages.dotnet-deploy-microservices-kubernetes.exercise-microservice-resilience
 title: Exercise - Prove microservice resilience in Kubernetes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Prove microservice resilience in Kubernetes
   description: Kubernetes makes sure your microservices are running in the face of failure, as shown in the exercise.
   ms.date: 12/06/2024
@@ -31,4 +29,4 @@ quiz:
         - content: "Kubernetes doesn't automatically recover, rather it needs to be told to."
           isCorrect: false
           explanation: "A benefit of Kubernetes is that it automatically maintains system state as defined, it recovers automatically."
-
+

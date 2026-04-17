@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-transition-modern-endpoint-management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MD-102 3-Plan a transition to modern endpoint management
   description: "Explore considerations and review the planning of transitioning to modern management, focusing on migration and newly provisioned devices."
   ms.date: 05/12/2023
@@ -45,4 +43,4 @@ units:
 - learn.wwl.plan-transition-modern-endpoint-management.summary
 badge:
   uid: learn.wwl.plan-transition-modern-endpoint-management.badge
-
+

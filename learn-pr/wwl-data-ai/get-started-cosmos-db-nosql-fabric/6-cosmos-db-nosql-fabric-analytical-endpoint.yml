@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.cosmos-db-nosql-fabric-analytical-endpoint
+title: Analyze data with the analytical endpoint in Cosmos DB NoSQL in Fabric
+metadata:
+  title: Analyze data with the analytical endpoint in Cosmos DB NoSQL in Fabric
+  description: "Learn how the analytical endpoint in Cosmos DB NoSQL in Fabric enables scalable data analysis through OneLake replication and semantic model integration."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-cosmos-db-nosql-fabric-analytical-endpoint.md)]

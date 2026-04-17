@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-mapping-data-flow
 title: '"Exercise - Author an Azure Data Factory mapping data flow"'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Author an Azure Data Factory mapping data flow
   description: "\"Exercise - Author an Azure Data Factory mapping data flow\""
   ms.date: 11/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-author-azure-data-factory-mapping-data-flow.md)]
+  [!include[](includes/4-author-azure-data-factory-mapping-data-flow.md)]

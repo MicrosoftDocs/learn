@@ -31,7 +31,5 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - [Introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). Learn how to design and implement core Azure Networking infrastructure.
 
-- [Design an IP addressing schema for your Azure deployment (sandbox)](/training/modules/design-ip-addressing-for-azure/). Learn about network IP addressing and integration. 
-
 - [Implement Windows Server IaaS virtual machine IP addressing and routing](/training/modules/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/). Learn about IP addressing and virtual networks for virtual machines. 
 

@@ -2,7 +2,7 @@ Here, we discuss the process of creating and maintaining a GitHub Pages web site
 
 GitHub Pages are static sites hosted directly from your GitHub repository, but they're more than just a collection of static files. By making use of site-generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time you commit a change to the source branch associated with the site, the site is regenerated using the latest updates and automatically published to the target URL.
 
-Learn more about [Publishing sources for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites?azure-portal=true).
+Learn more about [Publishing sources for GitHub Pages sites](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Enabling GitHub Pages
 
@@ -41,7 +41,7 @@ Learn more about [Front Matter](https://jekyllrb.com/docs/front-matter/?azure-po
 
 ## Customizing your site
 
-Once your site is up and running, you can customize details about your site via `_config.yml`. This file includes virtually all site-wide configuration options, including site metadata, navigation menus, theme colors, compiler options, and more.
+Once your site is up and running, you can customize details about your site via `_config.yml`. This file includes virtually all site-wide configuration options including site metadata, navigation menus, theme colors, compiler options, and more.
 
 Learn more about [_config.yml Configuration](https://jekyllrb.com/docs/configuration/?azure-portal=true).
 
@@ -70,7 +70,7 @@ Learn more about [Liquid template language](https://shopify.github.io/liquid/?az
 
 Despite not having a database to work with, Jekyll still supports the concept of blogging using a specific convention: `_posts/2020-06-25-blog-post-name.md`. As you can likely infer, all blog posts are stored in the `_posts` folder and use the date and name convention as shown. During compilation, Jekyll processes the files in this folder to produce a list of HTML blog posts.
 
-The following example illustrates the structure of a simple blog post. It includes metadata for `subtitle`, `tags`, and `comments`. The theme that you choose, might not support this metadata.
+The following example illustrates the structure of a simple blog post. It includes metadata for `subtitle`, `tags`, and `comments`. The theme that you choose might not support this metadata.
 
 ```markdown
 ---

@@ -1,83 +1,67 @@
-Just as cloud adoption is a journey, cloud security is also an ongoing journey of incremental progress and maturity, not a static destination.
+The Cloud Adoption Framework (CAF) Secure methodology integrates security into every phase of cloud adoption. It isn't a standalone phase—it's an overlay that applies across Strategy, Plan, Ready, Adopt, Govern, and Manage. Gaps in any phase weaken overall security posture.
 
-## Envision a security end state
+As you work through each CAF phase, address security in parallel:
 
-A journey without a target destination is just wandering. While this approach might eventually lead to enlightenment, business goals and constraints often require focusing on objectives and key results.
+- **Strategy**: Define security objectives aligned with business goals
+- **Plan**: Develop security requirements and identify skills gaps
+- **Ready**: Prepare secure landing zones and establish security baselines
+- **Adopt**: Implement security controls during migration and innovation
+- **Govern**: Enforce security policies and maintain compliance
+- **Manage**: Operate security monitoring, respond to incidents, and sustain posture
 
-The Secure methodology provides a vision of the complete end state to guide the improvement of your security program over time. The following infographic provides a visual mapping of the key ways that security integrates with the larger organization and the disciplines within security.
+## Core principles: CIA Triad and Zero Trust
 
-[![Diagram showing CAF Secure Methodology.](/azure/cloud-adoption-framework/secure/media/secure-methodology.png)](/azure/cloud-adoption-framework/secure/media/secure-methodology-popout.png#lightbox)
+The Secure methodology organizes security activities around the CIA Triad and Zero Trust.
 
-The Cloud Adoption Framework provides security guidance for this security journey by providing clarity for the processes, best practices, models, and experiences. This guidance is based on the lessons learned and real world experiences of real customers, Microsoft's security journey, and work with organizations like NIST, The Open Group, and the [Center for Internet Security (CIS)](https://www.cisecurity.org/).
+The **CIA Triad** provides the model for information protection. Map controls, processes, and metrics to each principle:
 
-## Mapping to concepts, frameworks, and standards
+- **Confidentiality**: Restrict access to sensitive data through encryption, identity controls, access policies, network segmentation, and data classification.
+- **Integrity**: Preserve data correctness through hashing, signing, immutable storage, version control, and secure update supply chains.
+- **Availability**: Maintain timely access through redundancy design, fault isolation, autoscaling, backup, and disaster recovery.
 
-Security itself is both a standalone organizational discipline and a quality/attribute that is integrated or overlaid on other disciplines, which make it difficult to precisely define and map in detail. The security industry uses many different frameworks to capture risk, plan controls, and operate. Here is a quick summary of how the disciplines in the CAF Secure methodology relate to other security concepts and guidance:
+Gaps in any single principle create cascading weaknesses. Apply the triad to drive data protection decisions, business continuity engineering, and compliance reporting.
 
--   **Zero trust:** Microsoft believes all security disciplines should follow the zero-trust principles of _assume breach_, _verify explicitly_, and _use least privilege access_. These principles underpin any sound [security strategy](/azure/cloud-adoption-framework/strategy/define-security-strategy) and also must be balanced with _business enablement_ goals. The first and most visible part of zero trust is in access control, so it's highlighted in the description of access control security discipline.
-    
--   **The Open Group:** These security disciplines map closely to the zero-trust components in the [core principles white paper](https://publications.opengroup.org/security-library/w210) published by The Open Group, where Microsoft actively participates. The one notable exception is that Microsoft elevated the discipline of innovation security so that DevSecOps is a top-level element because of how new, important, and transformative this discipline is for many organizations.
-    
--   **NIST cybersecurity framework:** For organizations that use the [NIST cybersecurity framework](https://www.nist.gov/cyberframework), we have highlighted bold text where the framework most closely maps. Modern access control and DevSecOps map broadly to the full spectrum of the framework, so those items aren't noted individually.
-    
-## Mapping to roles and responsibilities
+All security activities should follow **Zero Trust** principles:
 
-While security is a highly technical discipline, it's first and foremost a human discipline reflective of the long history of human conflict (but updated for computers and the internet). The following diagram summarizes the roles and responsibilities in a security program.
+- **Verify explicitly**: Authenticate and authorize based on all available data points—identity, location, device health, data classification, and anomalies.
+- **Use least privilege access**: Limit risk with just-in-time and just-enough-access (JIT/JEA) and risk-based adaptive policies.
+- **Assume breach**: Minimize blast radius through segmentation, verify end-to-end encryption, and use analytics for threat detection.
 
-[![Diagram showing the responsibilities/functions of an enterprise security team.](/azure/cloud-adoption-framework/secure/media/roles-and-responsibilities.png)](/azure/cloud-adoption-framework/secure/media/roles-and-responsibilities-popout.png#lightbox)
+Microsoft provides a Zero Trust adoption framework that aligns with the CAF Secure methodology.
 
-For more information, see [Cloud security functions](/azure/cloud-adoption-framework/organize/cloud-security).
+## Key security strategy areas
 
-## Security transformation
+The Secure methodology identifies four key areas to address when integrating security into your cloud adoption strategy.
 
-As organizations adopt the cloud, they quickly find that static security processes cannot keep up with the pace of change in cloud platforms, the threat environment, and the evolution of security technologies. Security must shift to a continuously evolving approach to match pace with this change that will transform organizational culture and daily processes throughout the organization.
+### Security posture modernization
 
-To guide this transformation, this methodology provides guidance on the integration of security with business processes (top row) and security technical disciplines (bottom row). These collectively enable meaningful and sustainable progress on your security journey to reduce organizational risk. Few organizations can master all of these at once, but all organizations should steadily mature each process and discipline.
+Continuously elevate your defenses, detections, and resilience capabilities. Static controls degrade quickly against evolving attacker techniques. Align modernization work with the Zero Trust adoption framework and prioritize based on measurable risk reduction—exposed privileges, insecure configurations, and unmonitored assets. Automate validation through policy, infrastructure as code, continuous compliance scanning, and secure score tracking.
 
-### Change drivers
+### Incident preparedness and response
 
-Security organizations are experiencing two types of major transformations at the same time
+Even mature preventive controls can't eliminate intrusion attempts. Implement an end-to-end incident lifecycle covering readiness, detection, triage, containment, eradication, recovery, and post-incident learning. Codify roles, communication channels, and decision authority. Practice tabletop simulations and automate containment actions through orchestrated workflows.
 
--   **Security as business risk:** Security has been propelled into the realm of business risk management from a purely technical quality-oriented discipline. This is driven by dual forces of:
-    -   **Digital transformation:** Increases in digital footprint are continuously increasing the potential attack surface of the organization
-    -   **Threat landscape:** Increases in attack volume and sophistication that are fueled by an industrialized attack economy with specialized skills and continual commoditization of attack tools and techniques.
--   **Platform change:** Security is also grappling with a technical platform change to the cloud. This shift is on the scale of factories shifting from running their own electrical generators to plugging into an electrical grid. While security teams often have the right foundational skills, they are becoming overwhelmed by the changes to nearly every process and technology they use everyday.
--   **Shift in expectations:** In the past decade, digital innovation has redefined entire industries. Business agility, especially agility related to digital transformation, can quickly unseat an organization as a market leader. Likewise, loss of consumer confidence can have a similar impact on the business. While it was once acceptable for security to start with "no" to block a project and protect the organization, the urgency of embracing digital transformation must change the engagement model to "let's talk about how to stay safe while you do what is needed to stay relevant."
+### CIA Triad strategies
 
-## Guiding lasting transformation
+Each CIA principle requires a targeted strategy:
 
-Transforming how the business and tech teams view security requires aligning security closely to the priorities, processes, and risk framework. Key areas that drive success are
+- **Confidentiality**: Prioritize data privacy and protection with clear objectives aligned to regulatory compliance. Define data loss prevention (DLP) objectives and establish encryption and access control frameworks.
+- **Integrity**: Design data protection controls augmented with automation for policy management, data classification, and update management.
+- **Availability**: Define criticality tiers for workloads and establish availability targets that balance cost and performance requirements across the cloud estate.
 
--   **Culture:** The culture of security must be focused on safely meeting the business mission, not impeding it. At the same time, security must become a normalized part of the culture of the organization as the internet upon which the business operates is open, allow adversaries to attempt attacks at any time. This cultural shift requires improved processes, partnerships, and ongoing leadership support at all levels to communicate the change, model the behavior, and reinforce the shift.
--   **Risk ownership:** The accountability for security risk should be assigned to the same roles that own all other risks, freeing security up to be a trusted advisor and subject matter expert rather than a scapegoat. Security should be responsible for sound and balanced advice that is communicated in the language of those leaders, but should not be held accountable for decisions they do not own.
--   **Security talent:** Security talent is in a chronic shortage and organizations should always be planning how to best develop and distribute security knowledge and skills. In addition to growing security teams directly with technical security skill sets, mature security teams are also diversifying their strategy by focusing on
-    -   **Growing security skill sets and knowledge** within existing teams in IT and the business. This is especially important for DevOps teams with a DevSecOps approach and can take many forms (such as a security help desk, identifying and training champions within the community, or job swapping programs).
-    -   **Recruiting diverse skill sets** to security teams to bring fresh perspectives and frameworks to problems (like business, human psychology, or economics) and build better relationships within the organization. To a hammer, all problems look like nails.
+### Security posture sustainment
 
-### Business alignment
+Security doesn't end with initial implementation. Continuously review and refine practices to keep up with emerging threats. Track secure score in Microsoft Defender for Cloud, automate drift detection through policy and configuration baselines, and feed incident retrospectives into backlog refinement.
 
-Because of these shifts, your cloud adoption program should focus heavily on business alignment in three categories
+## Security teams and roles
 
--   **Risk insights:** Align and integrate security insights and risk signals/sources to the business initiatives. Ensure repeatable processes educate all teams on the application of those insights and hold teams accountable for improvements.
--   **Security integration:** Integrate security knowledge, skills, and insights deeper into daily operations of the business and IT environment via repeatable processes and deep partnership at all levels of the organization.
--   **Operational resiliency:** Focus on ensuring the organization is resilient by being able to continue operations during an attack (even if at a degraded state) and that the organization rapidly bounces back to full operations.
+The Secure methodology identifies key security functions:
 
-### Security disciplines
+- **Cloud service provider**: Shared responsibility for underlying platform security
+- **Infrastructure and platform teams**: Architecture, engineering, and operations of cloud resources
+- **Security architecture and engineering**: Design security controls and posture management
+- **Security operations (SecOps/SOC)**: Monitor, detect, respond to, and recover from incidents
+- **Security governance, risk, and compliance (GRC)**: Policy enforcement, risk management, and regulatory compliance
+- **Security education and awareness**: Training and policy communication across the organization
 
-This transformation will affect each security discipline differently. While each of these disciplines is extremely important and requires investment, these are ordered (roughly) by which ones have the most immediate opportunities for quick wins as you adopt the cloud:
-
--   **Access control:** Application of network and identity create access boundaries and segmentation to reduce the frequency and reach of any security breaches
--   **Security operations:** Monitor IT operations to detect, respond, and recover from breach. Use data to continuously reduce risk of breach
--   **Asset protection:** Maximize protection of all assets (infrastructure, devices, data, applications, networks, and identities) to minimize risk to the overall environment
--   **Security governance:** Delegated decisions accelerate innovation and introduce new risks. Monitor decisions, configurations, and data to govern decisions made across the environment and within all workloads across the portfolio.
--   **Innovation security:** As an organization adopts DevOps models to increase the pace of innovation, security must become an integral part of a DevSecOps process and integrate security expertise and resources directly into this high-speed cycle. This involves shifting some decision making from centralized teams to empower workload-focused teams.
-
-### Guiding principles
-
-All security activities should be aligned to and shaped by a dual focus on
-
--   **Business enablement:** Align to organization's business objective and risk framework
--   **Security assurances:** Focused on applying zero trust principles of
-    -   **Assume breach:** When designing security for any component or system, reduce risk of attackers expanding access by assuming other resources in the organization are compromised
-    -   **Explicit verification:** Explicitly validate trust using all available data points, rather than assuming trust. For example, in access control, validate the user identity, location, device health, service or workload, data classification, and anomalies, rather than simply allowing access from an implicitly trusted internal network.
-    -   **Least-privileged access:** Limit the risk of a compromised user or resource by providing just-in-time and just-enough-access (JIT/JEA), risk-based adaptive policies, and data protection to help secure both data and productivity.
+As a Security Architect, you work across these teams to ensure security is integrated into designs, decisions are informed by risk, and controls are operationally sustainable. Subsequent units build on this foundation by applying these principles to specific solution design areas.

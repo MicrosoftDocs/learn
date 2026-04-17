@@ -4,6 +4,9 @@ You learned how to:
 
 - Build an organization Project
 - Automate and organize your Project
+- Use layout options like boards, tables, and timelines
+- Enable default workflows to automate project tasks
+- Convert checklist items into sub-issues for better tracking
 
 ## Learn more
 
@@ -13,3 +16,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Using the API to Manage Projects](https://docs.github.com/issues/planning-and-tracking-with-projects/automating-your-project/using-the-api-to-manage-projects)
 - [Automating Projects using Actions](https://docs.github.com/issues/planning-and-tracking-with-projects/automating-your-project/automating-projects-using-actions)
 - [Archiving Items Automatically](https://docs.github.com/issues/planning-and-tracking-with-projects/automating-your-project/archiving-items-automatically)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

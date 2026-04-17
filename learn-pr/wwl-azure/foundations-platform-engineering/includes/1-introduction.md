@@ -59,7 +59,7 @@ Successful learners will have prior knowledge and understanding of the following
   - [AZ-400: Design and implement a dependency management strategy.](https://go.microsoft.com/fwlink/?linkid=2300368)
   - [AZ-400: Implement continuous feedback.](https://go.microsoft.com/fwlink/?linkid=2300718)
   - [AZ-400: Implement security and validate code bases for compliance.](https://go.microsoft.com/fwlink/?linkid=2300719)
-- Instructor-led course: [AZ-400: Designing and Implementing Microsoft DevOps solutions](/training/courses/az-400t00).
+- Instructor-led course: [AZ-400: Design and Implement Microsoft DevOps Solutions](/training/courses/az-400t00).
 
 If you're new to Azure and cloud computing, consider one of the following resources:
 
@@ -71,7 +71,4 @@ If you're new to Azure Administration, consider taking the:
 - Free online: [Prerequisites for Azure Administrators](/learn/paths/az-104-administrator-prerequisites/).
 - Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/learn/certifications/courses/az-104t00).
 
-If you're new to Azure Developer, consider taking the:
-
-- Free online: [Create serverless applications](/learn/paths/create-serverless-applications/).
-- Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00).
+If you're new to Azure Developer, consider taking this instructor-led course: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00).

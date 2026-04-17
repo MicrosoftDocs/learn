@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 7 Train models with scripts in Azure Machine Learning
 
 Learning Path 7 Overview

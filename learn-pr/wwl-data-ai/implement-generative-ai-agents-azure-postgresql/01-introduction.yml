@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-generative-ai-agents-azure-postgresql.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to implementing generative AI agents with Azure Database for PostgreSQL."
+  ms.date: 10/09/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/01-introduction.md)]
+  

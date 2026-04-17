@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-workflows-microsoft-foundry.exercise
+title: Exercise - Create an Agent-driven Workflow
+metadata:
+  title: Exercise - Create an agent-driven workflow
+  description: Apply what you've learned by creating an agent-driven workflow in Microsoft Foundry.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 1/8/2026
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/9-exercise.md)]
+
+

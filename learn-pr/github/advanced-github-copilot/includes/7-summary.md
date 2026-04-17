@@ -3,7 +3,7 @@ GitHub Copilot is a tool that offers many ways to interact with your project, an
 Now that you have finished this module, you should be able to:
 
 - Use GitHub Copilot features like chat, agents, inline chat, and slash commands, which offer more flexibility to accomplish coding tasks.
-- Apply the `@workspace` agent using GitHub Copilot Chat to provide more content when trying to get output relevant to your project.
+- Use GitHub Copilot Chat to provide context-aware assistance when working on your project and generating relevant output.
 
 ## Delete your Codespaces resources
 
@@ -21,3 +21,7 @@ To avoid consuming all your monthly GitHub Codespaces time, it's important to de
 * [What is GitHub Copilot?](/shows/introduction-to-github-copilot/what-is-github-copilot-1-of-6?WT.mc_id=academic-105743-bethanycheum )
 * [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105778-alfredodeza)
 * [Code with GitHub Codespaces](/training/modules/code-with-github-codespaces/?WT.mc_id=academic-105779-alfredodeza)
+
+## Provide feedback
+
+Use this [issue form](https://github.com/githubpartners/microsoft-learn/issues/new/choose) to provide content feedback or suggested changes for this Microsoft Learn module. GitHub maintains this content and a team member will triage the request. Thank you for taking the time to improve our content!

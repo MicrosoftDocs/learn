@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.simplify-complex-conditionals-github-copilot-agent.exercise-simplify-complex-conditionals-github-copilot
+title: Exercise - Simplify complex conditionals using GitHub Copilot
+metadata:
+  title: Exercise - Simplify Complex Conditionals using GitHub Copilot
+  description: "Exercise - Simplify complex conditionals using GitHub Copilot."
+  ms.date: 10/16/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-simplify-complex-conditionals-github-copilot.md)]

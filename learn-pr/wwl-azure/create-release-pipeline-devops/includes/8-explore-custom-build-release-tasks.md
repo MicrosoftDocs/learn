@@ -1,12 +1,12 @@
-Instead of using out-of-the-box tasks, a command line, or a shell script, you can also use your custom build and release task.
+Custom build and release tasks provide alternatives to standard tasks, command-line operations, and shell scripts.
 
-By creating your tasks, the tasks are available publicly or privately to everyone you share them with.
+Custom tasks can be shared publicly or privately with specific teams and organizations.
 
-Creating your task has significant advantages.
+Custom task development offers several advantages:
 
- -  You get access to variables that are otherwise not accessible.
- -  You can use and reuse a secure endpoint to a target server.
- -  You can safely and efficiently distribute across your whole organization.
- -  Users don't see implementation details.
+- Access to restricted variables not available in standard tasks
+- Reusable secure endpoint connections to target servers
+- Safe and efficient organization-wide distribution
+- Encapsulated implementation details for enhanced security
 
 For more information, see [Add a build or release task](/azure/devops/extend/develop/add-build-task).

@@ -1,8 +1,13 @@
 Virtual machines are an excellent way to reduce costs versus the investments that are necessary for physical hardware. However, each virtual machine is still limited to a single operating system. If you want to run multiple instances of an application on a single host machine, containers are an excellent choice.
 
-[Azure Container Instances](/azure/container-instances/container-instances-overview) are a fast and simple way to run a container on Azure. Scenarios for using Azure Container Instance include simple applications, task automation, and build jobs.
+This video highlights the differences between virtual machines and containers. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7aa48d3f-4304-4a18-9861-eaf9d4bebd26]
+
 
 ### Things to know about Azure Container Instances
+
+[Azure Container Instances](/azure/container-instances/container-instances-overview) are a fast and simple way to run a container on Azure. Scenarios for using Azure Container Instance include simple applications, task automation, and build jobs.
 
 Azure Container Instances offers many benefits, including fast startup, per second billing, and persistent storage. These benefits make Azure Container Instances a great compute solution to support new workloads and migrate data by using the lift and shift pattern.  
 
@@ -40,14 +45,5 @@ When you work with Azure Container Instances, there are several recommended secu
 
 - **Monitor container resource activity**. Monitor your resource activity, like files, network, and other resources that your containers access. Monitoring resource activity and consumption are useful both for performance monitoring and as a security measure.
 
-## Compare Azure Container Instances to Azure Virtual Machines
-
-The following table compares how important features are supported in Azure Container Instances and Azure Virtual Machines. As you review the following features, consider what features and support are required for the Tailwind Traders infrastructure compute solution.
-
-| Compare | Azure Container Instances | Azure Virtual Machines |
-| --- | --- | --- |
-| **Isolation** | Container Instances typically provide lightweight isolation from the host and other containers, but doesn't provide as strong a security boundary as a virtual machine.| A virtual machine provides complete isolation from the host operating system and other virtual machines. Isolation is useful when a strong security boundary is critical, such as hosting apps from competing companies on the same server or cluster. |
-| **Operating system** | Container Instances runs the user mode portion of an operating system and can be tailored to contain just the needed services for your application. This configuration results in fewer system resources being utilized.| Each virtual machine runs a complete operating system. Azure Virtual Machines typically requires more system resources than Container Instances, such as CPU, memory, and storage. |
-| **Deployment** | Container Instances deploy individual containers by using Docker via the command line. Multiple containers are deployed by using an orchestrator such as Azure Kubernetes Service.| You can deploy individual virtual machines by using Windows Admin Center or Hyper-V Manager. Multiple virtual machines can be deployed by using PowerShell or System Center Virtual Machine Manager. |
-| **Persistent storage** | Container Instances use Azure Disks for local storage for a single node, or Azure Files (SMB shares) for storage shared by multiple nodes or servers. | With Azure Virtual Machines, you can use a virtual hard disk (VHD) for local storage for a single virtual machine, or an SMB file share for storage shared by multiple servers. |
-| **Fault tolerance** | If a cluster node fails in Azure Container Instances, any containers running on it are rapidly recreated. | A virtual machine can fail over to another server in a cluster with the operating system of the virtual machine restarting on the new server. |
+> [!TIP]
+> Learn more about container instances in the [Configure Container Instance](/training/modules/configure-azure-container-instances/) module. 

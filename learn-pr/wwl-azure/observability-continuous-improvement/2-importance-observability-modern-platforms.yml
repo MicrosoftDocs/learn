@@ -2,8 +2,6 @@
 uid: learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
 title: The Importance of Observability in Modern Platforms
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: The Importance of Observability in Modern Platforms
   description: "The Importance of Observability in Modern Platforms"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-importance-observability-modern-platforms.md)]
+  [!include[](includes/2-importance-observability-modern-platforms.md)]

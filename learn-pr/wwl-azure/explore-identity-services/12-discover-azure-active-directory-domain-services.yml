@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-identity-services.discover-azure-active-directory-domain-services-azure-ad-ds
 title: Discover Microsoft Entra Domain Services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discover Microsoft Entra Domain Services
   description: "Implement standard Active Directory features while minimizing overhead, with Microsoft Entra Domain Services."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/12-discover-azure-active-directory-domain-services.md)]
+  [!include[](includes/12-discover-azure-active-directory-domain-services.md)]

@@ -1,51 +1,89 @@
-With Azure Virtual Machines (VMs), you can create and use VMs in the cloud. VMs provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways. Just like a physical computer, you can customize all of the software running on your VM. VMs are an ideal choice when you need:
+With Azure Virtual Machines (VMs), you can run virtualized servers in Azure as infrastructure as a service (IaaS). Like a physical server, you control the operating system and installed software. VMs are a good fit when you need:
 
  -  Total control over the operating system (OS).
  -  The ability to run custom software.
  -  To use custom hosting configurations.
 
-An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the VM. However, as an IaaS offering, you still need to configure, update, and maintain the software that runs on the VM.
+Azure VMs remove the need to buy and maintain physical server hardware. As an IaaS service, you still manage patching, updates, and configuration inside the VM.
 
-You can even create or use an already created image to rapidly provision VMs. You can create and provision a VM in minutes when you select a preconfigured VM image. An image is a template used to create a VM and may already include an OS and other software, like development tools or web hosting environments.
-
-## Scale VMs in Azure
-
-You can run single VMs for testing, development, or minor tasks. Or you can group VMs together to provide high availability, scalability, and redundancy. Azure can also manage the grouping of VMs for you with features such as scale sets and availability sets.
-
-### Virtual machine scale sets
-
-Virtual machine scale sets let you create and manage a group of identical, load-balanced VMs. If you simply created multiple VMs with the same purpose, you’d need to ensure they were all configured identically and then set up network routing parameters to ensure efficiency. You’d also have to monitor the utilization to determine if you need to increase or decrease the number of VMs.
-
-Instead, with virtual machine scale sets, Azure automates most of that work. Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes. The number of VM instances can automatically increase or decrease in response to demand, or you can set it to scale based on a defined schedule. Virtual machine scale sets also automatically deploy a load balancer to make sure that your resources are being used efficiently. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads.
-
-### Virtual machine availability sets
-
-Virtual machine availability sets are another tool to help you build a more resilient, highly available environment. Availability sets are designed to ensure that VMs stagger updates and have varied power and network connectivity, preventing you from losing all your VMs with a single network or power failure.
-
-Availability accomplish these objectives by grouping VMs in two ways: update domain and fault domain.
-
- -  **Update domain**: The update domain groups VMs that can be rebooted at the same time. This setup allows you to apply updates while knowing that only one update domain grouping is offline at a time. All of the machines in one update domain update. An update group going through the update process is given a 30-minute time to recover before maintenance on the next update domain starts.
- -  **Fault domain**: The fault domain groups your VMs by common power source and network switch. By default, an availability set splits your VMs across up to three fault domains. This helps protect against a physical power or networking failure by having VMs in different fault domains (thus being connected to different power and networking resources).
-
-Best of all, there’s no additional cost for configuring an availability set. You only pay for the VM instances you create.
+You can deploy VMs quickly from prebuilt images. An image is a template that already includes an operating system and tools such as web hosting components.
 
 ## Examples of when to use VMs
 
-Some common examples or use cases for virtual machines include:
+Common VM use cases include:
 
- -  **During testing and development**. VMs provide a quick and easy way to create different OS and application configurations. Test and development personnel can then easily delete the VMs when they no longer need them.
- -  **When running applications in the cloud**. The ability to run certain applications in the public cloud as opposed to creating a traditional infrastructure to run them can provide substantial economic benefits. For example, an application might need to handle fluctuations in demand. Shutting down VMs when you don't need them or quickly starting them up to meet a sudden increase in demand means you pay only for the resources you use.
- -  **When extending your datacenter to the cloud**: An organization can extend the capabilities of its own on-premises network by creating a virtual network in Azure and adding VMs to that virtual network. Applications like SharePoint can then run on an Azure VM instead of running locally. This arrangement makes it easier or less expensive to deploy than in an on-premises environment.
- -  **During disaster recovery**: As with running certain types of applications in the cloud and extending an on-premises network to the cloud, you can get significant cost savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
+ -  **Testing and development**. Create different OS and app configurations quickly, then remove the VM when testing is complete.
+ -  **Cloud application hosting**. Run applications in Azure and scale capacity up or down as demand changes.
+ -  **Datacenter extension**. Extend an on-premises network into Azure and host workloads in a connected virtual network.
+ -  **Disaster recovery**. Keep failover capacity in Azure and run critical workloads there if your primary site is unavailable.
+ -  **Lift and shift migration**. Move existing server workloads with minimal application redesign.
 
-## Move to the cloud with VMs
+## VM resources and sizing
 
-VMs are also an excellent choice when you move from a physical server to the cloud (also known as lift and shift). You can create an image of the physical server and host it within a VM with little or no changes. Just like a physical on-premises server, you must maintain the VM: you’re responsible for maintaining the installed OS and software.
-
-## VM Resources
-
-When you provision a VM, you’ll also have the chance to pick the resources that are associated with that VM, including:
+When you provision a VM, you choose resources such as:
 
  -  Size (purpose, number of processor cores, and amount of RAM)
  -  Storage disks (hard disk drives, solid state drives, etc.)
  -  Networking (virtual network, public IP address, and port configuration)
+
+### Understand VM size families and names
+
+Azure VM sizes are grouped into families so you can quickly choose a size based on your workload needs.
+
+:::image type="content" source="../media/virtual-machines-size-families-row.png" alt-text="Diagram depicting Azure VM families.":::
+
+The following table highlights common use cases for the Azure VM families.
+
+| Family | Typical focus | Example use |
+| --- | --- | --- |
+| B-series | Burstable, cost-efficient | Dev/test workloads with occasional CPU spikes |
+| D-series | General purpose | Web servers, small-to-medium app servers |
+| E-series | Memory optimized | In-memory databases, analytics workloads |
+| F-series | Compute optimized | CPU-intensive application tiers |
+| M-series | Large memory footprint | Large enterprise databases |
+| L-series | Storage optimized | High-throughput storage and data processing |
+| N-series | GPU enabled | AI training/inference and graphics workloads |
+
+Each VM also has options that you can customize based on your needs. You can adjust the number of virtual CPUs (vCPUs), the amount of RAM, and the storage disk configuration.
+
+:::image type="content" source="../media/virtual-machines-sizing-dimensions.png" alt-text="Key VM sizing dimensions: vCPU, RAM, Disk, Network, Premium SSD support, and hardware generation.":::
+
+Some of the adjustments you can make are:
+
+ -  **vCPU count**: affects compute capacity for concurrent and CPU-bound workloads.
+ -  **RAM**: affects how much working data the VM can keep in memory.
+ -  **Disk configuration**: affects storage capacity, IOPS, and throughput.
+ -  **Network throughput**: affects data transfer performance in and out of the VM.
+ -  **Premium SSD support**: indicates whether the size supports premium managed disks.
+ -  **Hardware generation**: indicates platform generation and can affect baseline performance.
+
+VM names also carry useful sizing information. The base name indicates the family (or purpose), the number of vCPUs, and the hardware generation. It may also indicate features such as premium storage support.
+
+:::image type="content" source="../media/virtual-machines-name-decode.png" alt-text="Breakdown of Standard_D2s_v5 showing D as family, 2 as vCPU count, s as premium disk support, and v5 as hardware generation.":::
+
+ -  `D`: the VM family (general purpose in this case)
+ -  `2`: the number of vCPUs in this size
+ -  `s`: supports Premium SSD storage
+ -  `v5`: hardware generation for that family
+
+At a fundamentals level, start by selecting a family that matches workload behavior, then choose the size that meets performance needs and scale as demand grows.
+
+## Scale and resiliency options for VMs
+
+You can run single VMs for testing, development, or minor tasks. Or you can group VMs together to provide high availability, scalability, and redundancy. Azure can manage these groupings with features such as scale sets and availability sets.
+
+### Virtual machine scale sets
+
+Virtual machine scale sets let you create and manage groups of identical, load-balanced VMs. Without scale sets, you must manually keep VM configuration consistent, monitor utilization, and adjust instance counts. Scale sets centralize configuration and can automatically scale out or in based on demand or schedules. They also integrate with load balancing so traffic is distributed efficiently.
+
+### Virtual machine availability sets
+
+Virtual machine availability sets improve VM resiliency inside a region. They reduce the chance that all VMs are affected by one maintenance event or hardware failure.
+
+Availability sets group VMs by:
+
+ -  **Update domain**: VMs that can be rebooted together during planned maintenance.
+ -  **Fault domain**: VMs that share a potential power or network failure point.
+
+Use availability sets for VM-level redundancy. In regions that support Availability Zones, zone-based designs are often preferred because they provide broader failure isolation. Availability sets themselves don't add cost; you pay for the VM instances.
+

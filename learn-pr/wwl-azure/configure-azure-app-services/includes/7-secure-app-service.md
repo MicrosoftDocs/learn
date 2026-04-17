@@ -1,4 +1,6 @@
-Azure App Service provides built-in authentication and authorization support. You can sign in users and access data by writing minimal or no code in your web app, API, and mobile backend, and also your Azure Functions apps.
+Azure App Service provides built-in [authentication and authorization](/azure/app-service/overview-authentication-authorization) support. You can sign in users and access data by writing minimal or no code in your web app, API, and mobile backend, and also your Azure Functions apps.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b69ed6c4-3890-4947-9543-f441a4f4c7e0]
 
 Secure authentication and authorization require deep understanding of security, including federation, encryption, JSON web tokens (JWT) management, grant types, and so on. App Service provides these utilities so you can spend more time and energy on providing business value to your customer.
 
@@ -9,11 +11,9 @@ Secure authentication and authorization require deep understanding of security, 
 
 Let's take a closer look at how App Service helps you provide security for your app.
 
-- The [authentication and authorization security module](/azure/app-service/overview-authentication-authorization) in Azure App Service runs in the same environment as your application code, yet separately.
+- The authentication and authorization security module in Azure App Service runs in the same environment as your application code, yet separately.
 
 - The security module is configured by using app settings. No SDKs, specific languages, or changes to your application code are required.
-
-- When you enable the security module, every incoming HTTP request passes through the module before it's handled by your application code.
 
 - The security module handles several tasks for your app:
    - Authenticate users with the specified provider

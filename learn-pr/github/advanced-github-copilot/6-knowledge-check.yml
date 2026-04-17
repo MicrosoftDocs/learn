@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.advanced-github-copilot.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Review advanced features in GitHub Copilot.
   author: abrilurena
-  ms.author: abrilu
-  ms.date: 09/30/2024
+  ms.author: orthomas
+  ms.date: 11/15/2025
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:
@@ -47,14 +49,14 @@ quiz:
       - content: "Slash commands are shortcuts to quickly solve common development tasks within the chat or inline pane."
         isCorrect: true
         explanation: "That's correct! Slash commands help you perform specific actions like writing tests and documentation faster by using predefined intents. You can access these slash command options in a drop-down menu after typing `/` in the chat or inline pane."       
-  - content: "What are the benefits of using agents like '@terminal' or '@workspace' when interacting with GitHub Copilot?"
+  - content: "What are the benefits of using agents like '@terminal' when interacting with GitHub Copilot?"
     choices:
     - content: "Agents in Visual Studio Code help you ask questions within a specific context, allowing for more precise and relevant answers from GitHub Copilot."
       isCorrect: true
-      explanation: "That's correct! Agents like '@terminal' or '@workspace' allow you to interact with GitHub Copilot in the context of your terminal or entire workspace. By using these agents, questions are more precise and relevant, which helps you efficiently solve development tasks."
+      explanation: "That's correct! Agents like '@terminal' allow you to interact with GitHub Copilot in the context of your terminal. By using these agents, questions are more precise and relevant, which helps you efficiently solve development tasks."
     - content: "Agents help enforce a consistent code format based on best practices within Visual Studio Code for improved readability."
       isCorrect: false
-      explanation: "Incorrect, agents don't specifically enforce formatting rules. They're used to interact with GitHub Copilot in the context of your terminal or workspace when asking questions and receiving answers."
+      explanation: "Incorrect, agents don't specifically enforce formatting rules. They're used to interact with GitHub Copilot in the context of your terminal when asking questions and receiving answers."
     - content: "Agents provide extra security features for detecting vulnerabilities and intrusions within Visual Studio Code projects."
       isCorrect: false
       explanation: "Incorrect, agents don't specifically focus on providing security features. They're used to interacting with GitHub Copilot in a specific context when asking questions related to development tasks."

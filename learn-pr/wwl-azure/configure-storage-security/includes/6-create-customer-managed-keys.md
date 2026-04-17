@@ -1,5 +1,7 @@
 For your Azure Storage security solution, you can use Azure Key Vault to manage your encryption keys. The Azure Key Vault APIs can be used to generate encryption keys. You can also create your own encryption keys and store them in a key vault. 
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f73714f6-e3a7-41f5-8c3c-84d15da1f0cc]
+
 ### Things to know about customer-managed keys
 
 Consider the following characteristics of customer-managed keys.
@@ -10,6 +12,8 @@ Consider the following characteristics of customer-managed keys.
 
 - Customer-managed keys can be used with Azure Storage encryption. You can use a new key or an existing key vault and key. The Azure storage account and the key vault must be in the same region, but they can be in different subscriptions.
 
+- Customer-managed keys are stored in a customer-owned Azure Key Vault or Azure Key Vault Managed HSM. Managed HSM provides FIPS 140-2 Level 3 validation for organizations with the highest compliance requirements.
+
 ## Configure customer-managed keys
 
 In the Azure portal, you can configure customer-managed encryption keys. You can create your own keys, or you can have the keys managed by Microsoft. Consider how you might use Azure Key Vault to create your own customer-managed encryption keys.
@@ -19,3 +23,7 @@ In the Azure portal, you can configure customer-managed encryption keys. You can
 - **Encryption type**: Choose how the encryption key is managed: by Microsoft or by yourself (customer).
 
 - **Encryption key**: Specify an encryption key by entering a URI, or select a key from an existing key vault.
+
+
+> [!TIP]
+> Expand your understanding of storage security in the [*Plan and implement security for storage*](/training/modules/security-storage/) training module.

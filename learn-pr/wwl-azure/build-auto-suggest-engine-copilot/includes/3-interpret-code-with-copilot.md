@@ -23,9 +23,12 @@ In this exercise, you'll familiarize yourself with the Trie project by using Cop
     }
     ```
 
-1. Right-click the selected code. Under **Copilot**, click **Explain this**
+1. Right-click the selected code and select **Explain**
 
-    The "Explain this" feature of Copilot Chat can help developers quickly understand a new codebase. Copilot Chat provides explanations for selected code, including the purpose of the code, the data types, and the return values.
+    ![Screenshot of Copilot Explain option.](../media/copilot-explain.png)
+
+
+    The "Explain" feature of Copilot Chat can help developers quickly understand a new codebase. Copilot Chat provides explanations for selected code, including the purpose of the code, the data types, and the return values.
 
     In the explanation Copilot Chat provides, note the descriptions of the `Children` and `IsEndOfWord` properties.
 
@@ -77,7 +80,9 @@ Copilot Chat can add comments for multiple lines of code, which is helpful when 
 
 1. Select the `InitializeTrie` method code and right-click the selection.
 
-1. Under **Copilot**, click **Start Code Chat**.
+1. Select **Open Inline Chat**.
+
+    ![Screenshot of Copilot Inline Chat option.](../media/copilot-inline-chat.png)
 
 1. Enter the text "Insert comments to explain this code line by line".
 
@@ -95,7 +100,7 @@ Copilot Chat can add comments for multiple lines of code, which is helpful when 
 
 1. Select the `AutoSuggest` method and right-click the selection.
 
-1. Under **Copilot**, click **Generate Docs**
+1. Under **Generate Code**, select **Generate Docs**
 
     Copilot Chat should generate suggested documentation for the method. If no suggestion appears, click the **Regenerate** button.
 

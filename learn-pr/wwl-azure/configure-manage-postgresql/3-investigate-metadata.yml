@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-manage-postgresql.investigate-metadata
 title: Investigate metadata with system catalogs and system views
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Investigate metadata with system catalogs and system views
   description: "Investigate metadata with system catalogs and system views."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-investigate-metadata.md)]
+  [!include[](includes/3-investigate-metadata.md)]

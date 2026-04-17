@@ -1,8 +1,8 @@
-Earlier, you discovered the container becomes the unit you'll use to distribute your apps. You also learned the container is in a standardized format both your developer and operation teams use.
+Earlier, you discovered the container becomes the unit you use to distribute your apps. You also learned the container is in a standardized format both your developer and operation teams use.
 
 In your example, you're developing an order-tracking portal for your company's various outlets to use. With the Docker image built, your operations team is now responsible for the deploying, rolling out updates, and managing your order-tracking portal.
 
-In the previous unit, you looked at how a Docker image is built. Here, you'll look a bit at a Docker container's lifecycle and how to manage containers. You'll also learn how to think about configuring data storage and the network options for your containers.
+In the previous unit, you looked at how a Docker image is built. In this unit, you look a bit at a Docker container's lifecycle and how to manage containers. You also learn how to think about configuring data storage and the network options for your containers.
 
 ## How to manage Docker containers
 
@@ -10,9 +10,9 @@ A Docker container has a lifecycle that you can use to manage and track the stat
 
 :::image type="content" source="../media/4-docker-container-lifecycle-2.png" alt-text="Diagram that shows the lifecycle of a container and the transition between the lifecycle phases.":::
 
-To place a container in the run state, use the _run_ command. You can also restart a container that's already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel terminates.
+To place a container in the run state, use the _run_ command. You can also restart a container that's already running. When you restart a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel terminates.
 
-A container is considered in a running state until it's either paused, stopped, or killed. A container, however, can also exit from the running state by itself. A container can self-exit when the running process completes, or if the process goes into a fault state.
+A container is considered in a running state until it's paused, stopped, or killed. A container, however, can also exit from the running state by itself. A container can self-exit when the running process completes, or if the process goes into a fault state.
 
 To pause a running container, use the `pause` command. This command suspends all processes in the container.
 
@@ -20,7 +20,7 @@ To stop a running container, use the `stop` command. The `stop` command enables 
 
 If you need to terminate the container, use the `kill` command to send a kill signal. The container's kernel captures the kill signal, but the running process doesn't. This command forcefully terminates the working process in the container.
 
-Lastly, to remove containers that are in a stopped state, use the `remove` command. After removing a container, all data stored in the container gets destroyed.
+Lastly, to remove containers that are in a stopped state, use the `remove` command. When you remove a container, all data stored in the container is destroyed.
 
 ## How to view available containers
 
@@ -35,18 +35,16 @@ docker ps -a
 Here's the output from that command:
 
 ```output
-CONTAINER ID    IMAGE        COMMAND         CREATED       STATUS           PORTS        NAMES
-d93d40cc1ce9    tmp-ubuntu:latest  "dotnet website.dll …"  6 seconds ago    Up 5 seconds        8080/tcp      happy_wilbur
-33a6cf71f7c1    tmp-ubuntu:latest  "dotnet website.dll …"  2 hours ago     Exited (0) 9 seconds ago            adoring_borg
+CONTAINER ID   IMAGE              COMMAND                 CREATED         STATUS                    PORTS      NAMES
+d93d40cc1ce9   tmp-ubuntu:latest  "dotnet website.dll …"  6 seconds ago   Up 5 seconds              8080/tcp   happy_wilbur
+33a6cf71f7c1   tmp-ubuntu:latest  "dotnet website.dll …"  2 hours ago     Exited (0) 9 seconds ago             adoring_borg
 ```
 
 There are three items to review in the preceding output:
 
-- The image name listed in the _IMAGE_ column; in this example, _tmp-ubuntu: latest_. Notice how you're allowed to create more than one container from the same image. This is a powerful management feature you can use to enable scaling in your solutions.
-
-- The container status listed in the _STATUS_ column. In this example, you have one container that's running and one container that has exited. The container's status is usually your first indicator of the container's health.
-
-- The container name listed in the _NAMES_ column. Apart from the container ID in the first column, containers also receive a name. In this example, you didn't explicitly provide a name for each container, and as a result, Docker gave the container a random name. To give a container an explicit name using the `--name` flag, use the `run` command.
+- The image name listed in the _IMAGE_ column. In this example, _tmp-ubuntu: latest_. Notice how you're allowed to create more than one container from the same image. This functionality is a powerful management feature you can use to enable scaling in your solutions.
+- The container status listed in the _STATUS_ column. In this example, you have one container that's running and one container that exited. The container's status is usually your first indicator of the container's health.
+- The container name listed in the _NAMES_ column. Apart from the container ID in the first column, containers also receive a name. In this example, you didn't explicitly provide a name for each container, and as a result, Docker gave the container a random name. To give a container an explicit name, use the `run` command with the `--name` parameter.
 
 ### Why are containers given a name?
 
@@ -56,7 +54,7 @@ This feature allows you to run multiple container instances of the same image. C
 
 To start a container, use the `docker run` command. You only need to specify the image to run with its name or ID to launch the container from the image. A container launched in this manner provides an interactive experience.
 
-Here, to run the container with our website in the background, add the `-d` flag.
+To run the container with our website in the background, add the `-d` flag.
 
 ```console
 docker run -d tmp-ubuntu
@@ -116,7 +114,7 @@ Even though this approach works, it unfortunately has several drawbacks.
 
 - **Container storage is temporary.**
 
-    Your log file won't persist between container instances. For example, let's assume that you stop and remove the container. When you launch a new container instance, the new instance bases itself on the specified image, and all your previous data will be missing. Remember, all data in a container is destroyed with the container when you remove a container.
+    Your log file doesn't persist between container instances. For example, let's assume that you stop and remove the container. When you launch a new container instance, the new instance bases itself on the specified image, and all your previous data is missing. Remember, when you remove a container, all data in the container is destroyed with the container.
 
 - **Container storage is coupled to the underlying host machine.**
 
@@ -134,23 +132,23 @@ A volume is stored on the host filesystem at a specific folder location. Choose 
 
 Docker creates and manages the new volume by running the `docker volume create` command. This command can form part of our Dockerfile definition, which means that you can create volumes as part of the container-creation process. Docker creates the volume if it doesn't exist when you try to mount the volume into a container the first time.
 
-Volumes are stored within directories on the host filesystem. Docker mounts and manages the volumes in the container. After mounting, these volumes are isolated from the host machine.
+Volumes are stored within directories on the host filesystem. Docker mounts and manages the volumes in the container. After a volume is mounted, it's isolated from the host machine.
 
 Multiple containers can simultaneously use the same volumes. Volumes also don't get removed automatically when a container stops using the volume.
 
-In this example, you can create a directory on our container host and mount this volume into the container when you create the tracking-portal container. When your tracking portal logs data, you can access this information via the container host's filesystem. You'll have access to this log file even if your container is removed.
+In this example, you can create a directory on our container host and mount this volume into the container when you create the tracking-portal container. When your tracking portal logs data, you can access this information via the container host's filesystem. You have access to this log file even if your container is removed.
 
 Docker also provides a way for third-party companies to build add-ons to be used as volumes. For example, Azure Storage provides a plugin to mount Azure Storage as volumes on Docker containers.
 
 ### What is a bind mount?
 
-A bind mount is conceptually the same as a volume; however, instead of using a specific folder, you can mount any file or folder on the host. You're also expecting that the host can change the contents of these mounts. Just like volumes, the bind mount is created if you mount it and it doesn't yet exist on the host.
+A bind mount is conceptually the same as a volume. But instead of using a specific folder, you can mount any file or folder on the host. You're also expecting that the host can change the contents of these mounts. Just like volumes, the bind mount is created if you mount it and it doesn't yet exist on the host.
 
 Bind mounts have limited functionality compared to volumes, and even though they're more performant, they depend on the host having a specific folder structure in place.
 
 Volumes are considered the preferred data-storage strategy to use with containers.
 
-For Windows containers, another option is available: you can mount an SMB path as a volume and present it to containers. This allows containers on different hosts to use the same persistent storage.
+For Windows containers, another option is available: you can mount an SMB path as a volume and present it to containers. This option allows containers on different hosts to use the same persistent storage.
 
 ## Docker container network configuration
 
@@ -188,7 +186,7 @@ By default, Docker doesn't publish any container ports. To enable port mapping b
 
 The publish flag effectively configures a firewall rule that maps the ports.
 
-In this example, your tracking portal is accessible to clients browsing to port 80. You'll have to map port 80 from the container to an available port on the host. You have port 8080 open on the host, which allows you to set the flag like this:
+In this example, your tracking portal is accessible to clients browsing to port 80. You have to map port 80 from the container to an available port on the host. You have port 8080 open on the host, which allows you to set the flag like this:
 
 ```console
 --publish 8080:80
@@ -196,7 +194,7 @@ In this example, your tracking portal is accessible to clients browsing to port 
 
 Any client browsing to the Docker host IP and port 8080 can access the tracking portal.
 
-Aside from Linux-specific configurations, the NAT network on Windows hosts functions the same as a bridge network. Also, NAT is the default network on Windows, and all containers will connect to it unless otherwise specified.
+Aside from Linux-specific configurations, the NAT network on Windows hosts functions the same as a bridge network. Also, NAT is the default network on Windows, and all containers connect to it unless otherwise specified.
 
 ### What is the host network?
 
@@ -206,15 +204,15 @@ In this example, let's assume you decide to change the networking configuration 
 
 Keep in mind that the container can use only ports the host isn't already using.
 
-On Windows, the host network isn't available. On Windows hosts, there's no option to share the same IP address (networking stack) between the host and container. The NAT network functions much like a bridge network, and the Overlay option provides an IP address to the container from the same network as the host, but not the _same_ IP address.
+On Windows, the host network isn't available. On Windows hosts, there isn't an option to share the same IP address (networking stack) between the host and container. The NAT network functions much like a bridge network, and the Overlay option provides an IP address to the container from the same network as the host, but not the _same_ IP address.
 
 ### Overlay and other network options
 
-For more advanced scenarios, both Linux and Windows provide additional network options. For example, the overlay option creates a virtual switch from the host network, so containers on that network can get IP addresses from DHCP servers or operate with IP addresses from that network segment. Furthermore, Docker allows third-party vendors to create network plugins.
+For more advanced scenarios, both Linux and Windows provide more network options. For example, the overlay option creates a virtual switch from the host network, so containers on that network can get IP addresses from DHCP servers or operate with IP addresses from that network segment. Furthermore, Docker allows third-party vendors to create network plugins.
 
 ### What is the none network?
 
-To disable networking for containers, use the _none_ network option. This might be useful if you have an application that doesn't use the network, or if you just want to validate that an application runs as expected in a container.
+To disable networking for containers, use the _none_ network option. This option might be useful if you have an application that doesn't use the network. Or if you just want to validate that an application runs as expected in a container.
 
 ### Operating system considerations
 

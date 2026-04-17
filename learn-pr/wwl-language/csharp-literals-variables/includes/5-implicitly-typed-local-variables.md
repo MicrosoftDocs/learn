@@ -32,7 +32,7 @@ message = 10.703m;
 If you run this code, you'll see the following error message.
 
 ```Output
-(2,11): error CS0029: Cannot implicitly convert type 'decimal' to 'string'
+CS0029: Cannot implicitly convert type 'decimal' to 'string'
 ```
 
 > [!NOTE]
@@ -49,7 +49,7 @@ var message;
 If you attempt to run this code, as it compiles, you'll see the following output:
 
 ```Output
-(1,5): error CS0818: Implicitly-typed variables must be initialized
+CS0818: Implicitly-typed variables must be initialized
 ```
 
 ### Why use the `var` keyword?

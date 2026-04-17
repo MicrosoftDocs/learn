@@ -2,8 +2,6 @@
 uid: learn.oxford.void-detection-edge-devices-lva.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to use Live Video Analytics on IoT Edge to build video analytics solution.
   ms.date: 07/20/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2 # dummy number at present
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

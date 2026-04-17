@@ -1,54 +1,52 @@
 ### YamlMime:Module
 uid: learn.wwl.create-speech-enabled-apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Create speech-enabled apps with Azure AI services
-  description: Create speech-enabled apps with Azure AI services.
-  author: wwlpublish
+  title: Create speech-enabled apps with Azure Speech in Microsoft Foundry Tools
+  description: Create speech-enabled apps with Azure Speech in Microsoft Foundry Tools.
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
-  ms.service: azure-ai-speech
+  ms.date: 03/10/2026
   ms.topic: module-standard-task-based
+  ms.service: azure-ai-services
+  ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
-title: Create speech-enabled apps with Azure AI services
-summary: The Azure AI Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+title: Create speech-enabled apps with Azure Speech in Microsoft Foundry Tools
+summary: Azure Speech in Microsoft Foundry Tools enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
 abstract: |
   In this module, you'll learn how to:
-  - Provision an Azure resource for the Azure AI Speech service
-  - Implement speech recognition with the  Azure AI Speech to text API
+  - Use a Microsoft Foundry resource for Azure Speech in Foundry Tools
+  - Implement speech recognition with the Azure Speech to text API
   - Use the Text to speech API to implement speech synthesis
   - Configure audio format and voices
   - Use Speech Synthesis Markup Language (SSML)
 prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal
-  - Have experience programming with C# or Python
+  - Have programming experience
 iconUrl: /training/achievements/transcribe-speech-input-text.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
-- data-scientist
-- developer
-- solution-architect
-- student
+  - ai-engineer
+  - data-scientist
+  - developer
+  - solution-architect
+  - student
 products:
-- ai-services
+  - microsoft-foundry
 subjects:
-- custom-app-development
-- artificial-intelligence
+  - custom-app-development
+  - artificial-intelligence
 units:
-- learn.wwl.create-speech-enabled-apps.introduction
-- learn.wwl.create-speech-enabled-apps.create-speech-resource
-- learn.wwl.create-speech-enabled-apps.speech-to-text
-- learn.wwl.create-speech-enabled-apps.text-to-speech
-- learn.wwl.create-speech-enabled-apps.audio-format-voices
-- learn.wwl.create-speech-enabled-apps.speech-synthesis-markup
-- learn.wwl.create-speech-enabled-apps.exercise-speech-app
-- learn.wwl.create-speech-enabled-apps.knowledge-check
-- learn.wwl.create-speech-enabled-apps.summary
+  - learn.wwl.create-speech-enabled-apps.introduction
+  - learn.wwl.create-speech-enabled-apps.create-speech-resource
+  - learn.wwl.create-speech-enabled-apps.speech-to-text
+  - learn.wwl.create-speech-enabled-apps.text-to-speech
+  - learn.wwl.create-speech-enabled-apps.audio-format-voices
+  - learn.wwl.create-speech-enabled-apps.speech-synthesis-markup
+  - learn.wwl.create-speech-enabled-apps.exercise-speech-app
+  - learn.wwl.create-speech-enabled-apps.knowledge-check
+  - learn.wwl.create-speech-enabled-apps.summary
 badge:
   uid: learn.wwl.create-speech-enabled-apps.badge
-

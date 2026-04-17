@@ -3,16 +3,13 @@ uid: learn.intro-to-azure-kubernetes-service.summary
 title: Summary
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 11/26/2024
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/23/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
 
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-

@@ -3,7 +3,7 @@ After defining the input(s) and output(s) for your Azure Stream Analytics job, y
 
 ## Selecting input fields
 
-The simplest approach to ingesting streaming data into Azure Synapse Analytics is to capture the required field values for every event using a **SELECT...INTO** query, as shown here:
+The simplest approach to capturing event data from an input stream is to select the required field values for every event using a **SELECT...INTO** query, as shown here:
 
 ```sql
 SELECT
@@ -11,13 +11,13 @@ SELECT
     SensorID,
     ReadingValue
 INTO
-    [synapse-output]
+    [output]
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 ```
 
 > [!TIP]
-> When using an **Azure Synapse Analytics** output to write the results to a table in a dedicated SQL pool, the schema of the results produced by the query must match the table into which the data is to be loaded. You can use **AS** clauses to rename fields, and cast them to alternative (compatible) data types as necessary.
+> When using an **Azure SQL Database** output to write the results to a relational table, the schema of the results produced by the query must match the table into which the data is to be loaded. You can use **AS** clauses to rename fields, and cast them to alternative (compatible) data types as necessary.
 
 ## Filtering event data
 
@@ -29,7 +29,7 @@ SELECT
     SensorID,
     ReadingValue
 INTO
-    [synapse-output]
+    [output]
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 WHERE ReadingValue < 0
@@ -37,7 +37,13 @@ WHERE ReadingValue < 0
 
 ## Aggregating events over temporal windows
 
-A common pattern for streaming queries is to aggregate event data over temporal (time-based) intervals, or *windows*. To accomplish this, you can use a **GROUP BY** clause that includes a Window function defining the kind of window you want to define (for example, *tumbling*, *hopping*, or *sliding*).
+A common pattern for streaming queries is to aggregate event data over temporal (time-based) intervals, or *windows*. To accomplish this, you can use a **GROUP BY** clause that includes a Window function defining the kind of window you want to define. Azure Stream Analytics supports five window types:
+
+- **Tumbling** — fixed-size, non-overlapping, contiguous intervals. An event belongs to exactly one tumbling window.
+- **Hopping** — overlapping scheduled windows that advance by a fixed hop interval. Events can belong to more than one window.
+- **Sliding** — fire only when the window content changes (when an event arrives or leaves). Every window contains at least one event.
+- **Session** — variable-length windows grouped by inactivity gap between events. Useful for IoT and user-activity scenarios where event bursts are separated by idle periods.
+- **Snapshot** — groups events that share the same timestamp using `System.Timestamp()`. Typically used after a preceding window function to further aggregate its output.
 
 > [!TIP]
 > For more information about window functions, see [Introduction to Stream Analytics windowing functions](/azure/stream-analytics/stream-analytics-window-functions?azure-portal=true) in the Azure Stream Analytics documentation.
@@ -51,7 +57,7 @@ SELECT
     SensorID,
     MAX(ReadingValue) AS MaxReading
 INTO
-    [synapse-output]
+    [output]
 FROM
     [streaming-input] TIMESTAMP BY EventEnqueuedUtcTime
 GROUP BY SensorID, TumblingWindow(second, 60)
@@ -59,4 +65,4 @@ HAVING COUNT(*) >= 1
 ```
 
 > [!TIP]
-> For more information about common patters for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns?azure-portal=true) in the Azure Stream Analytics documentation.
+> For more information about common patterns for queries, see [Common query patterns in Azure Stream Analytics](/azure/stream-analytics/stream-analytics-stream-analytics-query-patterns?azure-portal=true) in the Azure Stream Analytics documentation.

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.connect-on-premises-machines-azure-arc
 title: Connect on-premises machines by using Azure Arc
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect on-premises machines by using Azure Arc
   description: "Connect on-premises machines by using Azure Arc"
   ms.date: 06/11/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-connect-on-premises-machines-azure-arc.md)]
+  [!include[](includes/6-connect-on-premises-machines-azure-arc.md)]

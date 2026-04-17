@@ -1,17 +1,20 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-networks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  hidden_question_numbers: ["EDD34630_34","EDD34630_46","EDD34630_63","EDD34630_79","EDD34630_83","EDD34630_87"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/14/2025
+  ms.date: 05/20/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -40,14 +43,3 @@ quiz:
     - content: "Virtual machines running production workloads."
       isCorrect: false
       explanation: "Incorrect. Public IP addresses shouldn't be assigned to private virtual machines."
-  - content: "When does a dynamic IP address change?"
-    choices:
-    - content: "In Azure, when a virtual machine is stopped and then restarted."
-      isCorrect: true
-      explanation: "Correct. The dynamic IP address changes."
-    - content: "In the guest OS, when a virtual machine is rebooted or stopped."
-      isCorrect: false
-      explanation: "Incorrect. The dynamic IP address doesn't change."
-    - content: "Each time the virtual machine is accessed."
-      isCorrect: false
-      explanation: "Incorrect. The dynamic IP address doesn't change."

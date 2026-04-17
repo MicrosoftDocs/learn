@@ -5,7 +5,7 @@ AKS nodes run on Azure virtual machines (VMs). With AKS nodes, you can connect s
 When you deploy an AKS cluster, you specify the number and size of the nodes, and AKS deploys and configures the Kubernetes control plane and nodes.
 
 > [!NOTE]
-> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  On the Azure portal menu or from the **Home** page, select **Create a resource**.

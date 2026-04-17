@@ -1,20 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.8-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 03/06/2025
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: yoterada
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - team=devdiv
     - devx-track-extended-java
   ms.contributors: antoniomanug
+  module_assessment: true
 durationInMinutes: 3
 quiz:
   questions:

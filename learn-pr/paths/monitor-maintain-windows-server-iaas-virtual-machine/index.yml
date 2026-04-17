@@ -3,9 +3,9 @@ uid: learn.wwl.monitor-maintain-windows-server-iaas-vm
 metadata:
   title: Monitor and maintain Windows Server IaaS Virtual Machine
   description: In this learning path, you’ll learn how to implement remote administration and management in Azure. After completing this path, you’ll be able to monitor your Azure resources, and plan for scale and high-availability.
-  ms.date: 10/15/2020
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: learning-path
 title: Monitor and maintain Windows Server IaaS Virtual Machine
 prerequisites: |

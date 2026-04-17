@@ -2,7 +2,7 @@ The vacuum process is configured using the **autovacuum** server parameters. The
 
 |Parameter name                             |Default    |Description                                                                                                                        |
 |---------                                  |---------  |---------                                                                                                                          |
-|autovacuum                                 |ON         |Enables or disables the autovacuum server process. Autovacuum should always be enabled.                                            |
+|autovacuum                                 |:::no-loc text="ON":::         |Enables or disables the autovacuum server process. Autovacuum should always be enabled.                                            |
 |autovacuum_analyze_scale_factor            |0.1        |Specifies a fraction of the table to add to autovacuum_vacuum_threshold when deciding whether to trigger a vacuum operation. For example, 0.2 is 20 percent of the table size.             |
 |autovacuum_analyze_threshold               |50         |The number of inserted, updated, or deleted rows needed to trigger analyze for any one table.                                      |
 |autovacuum_freeze_max_age                  |200000000  |Maximum age (in transactions) before triggering autovacuum on a table to prevent transaction ID wraparound.                        |

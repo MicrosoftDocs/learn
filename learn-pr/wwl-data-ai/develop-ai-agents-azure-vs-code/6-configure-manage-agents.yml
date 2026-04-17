@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agents-azure-vs-code.configure-manage-agents
+title: Configure and manage agents in Visual Studio Code
+metadata:
+  title: Configure and Manage Agents in Visual Studio Code
+  description: Learn how to configure agent properties, write instructions, and manage deployed agents.
+  ms.date: 02/12/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-configure-manage-agents.md)]

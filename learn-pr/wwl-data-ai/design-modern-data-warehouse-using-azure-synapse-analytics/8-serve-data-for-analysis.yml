@@ -2,11 +2,9 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.serve-data-for-analysis-with
 title: Serve data for analysis with Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Serve data for analysis with Azure Synapse Analytics
   description: "Serve data for analysis with Azure Synapse Analytics"
-  ms.date: 07/30/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit

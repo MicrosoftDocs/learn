@@ -6,10 +6,10 @@ Industry standards, regulatory standards, and benchmarks are represented in Defe
 
 Each security standard consists of multiple compliance controls, which are logical groups of related security recommendations.
 
-Defender for Cloud continually assesses the environment-in-scope against any compliance controls that can be automatically assessed. Based on assessments, it shows resources as being compliant or non-compliant with controls.
+Defender for Cloud continually assesses the environment-in-scope against any compliance controls that can be automatically assessed. Based on assessments, it shows resources as being compliant or not compliant with controls.
 
 > [!NOTE]
-> It's important to note that if standards have compliance controls that can't be automatically assessed, Defender for Cloud isn't able to decide whether a resource complies with the control. In this case, the control will show as greyed out.
+> If standards have compliance controls that can't be automatically assessed, Defender for Cloud isn't able to decide whether a resource complies with the control. In this case, the control is greyed out.
 
 ## Viewing compliance standards
 
@@ -20,7 +20,7 @@ The Regulatory compliance dashboard provides an interactive overview of complian
 
 In the dashboard you can:
 
- -  Get a summary of standards controls that have been passed.
+ -  Get a summary of standards controls that passed.
  -  Get of summary of standards that have the lowest pass rate for resources.
  -  Review standards that are applied within the selected scope.
  -  Review assessments for compliance controls within each applied standard.
@@ -29,7 +29,7 @@ In the dashboard you can:
  -  Run a query to create a custom compliance report.
  -  [Create a "compliance over time workbook"](/azure/defender-for-cloud/custom-dashboards-azure-workbooks) to track compliance status over time.
  -  Download audit reports.
- -  Review compliance offerings for Microsoft and third-party audits.
+ -  Review compliance offerings for Microsoft and third party audits.
 
 ## Compliance standard details
 
@@ -40,10 +40,9 @@ For each compliance standard you can view:
  -  When you apply a standard to a scope, you can see a summary of compliance assessment for resources within the scope, for each standard control.
  -  The status of the assessments reflects compliance with the standard. There are three states:
     
-    
      -  A green circle indicates that resources in scope are compliant with the control.
-     -  A red circle indicates that resources are not compliant with the control.
-     -  Unavailable controls are those that can't be automatically assessed and thus Defender for Cloud is unable to access whether resources are compliant.
+     -  A red circle indicates that resources aren'o't compliant with the control.
+     -  Unavailable controls can't be automatically assessed and thus Defender for Cloud is unable to access whether resources are compliant.
 
 You can drill down into controls to get information about resources that have passed/failed assessments, and for remediation steps.
 
@@ -65,7 +64,7 @@ The following standards are available in Defender for Cloud:
 | Canada Federal PBMM                   | AWS Well-Architected Framework                        | California Consumer Privacy Act (CCPA)                |
 | CIS Azure Foundations                 | Brazilian General Personal Data Protection Law (LGPD) | CIS Controls                                          |
 | CMMC                                  | California Consumer Privacy Act (CCPA)                | CIS GCP Foundations                                   |
-| FedRAMP ‘H’ & ‘M’         | CIS AWS Foundations                                   | CIS Google Cloud Platform Foundation Benchmark        |
+| FedRAMP ‘H’ & ‘M’                     | CIS AWS Foundations                                   | CIS Google Cloud Platform Foundation Benchmark        |
 | HIPAA/HITRUST                         | CRI Profile                                           | CIS Google Kubernetes Engine (GKE) Benchmark          |
 | ISO/IEC 27001                         | CSA Cloud Controls Matrix (CCM)                       | CRI Profile                                           |
 | New Zealand ISM Restricted            |                                                       | CSA Cloud Controls Matrix (CCM)                       |
@@ -76,9 +75,11 @@ The following standards are available in Defender for Cloud:
 | SOC 2                                 | PCI DSS                                               | ISO/IEC 27002                                         |
 | SWIFT CSP CSCF                        |                                                       | ISO/IEC 27017                                         |
 | UK OFFICIAL and UK NHS                |                                                       | NIST Cybersecurity Framework (CSF)                    |
-|                                       |                                                       | NIST SP 800-53                                        |
-|                                       |                                                       | NIST SP 800-171                                       |
-|                                       |                                                       | NIST SP 800-172                                       |
-|                                       |                                                       | PCI DSS                                               |
+| Digital Operations Resiience Act (DORA) |                                                     | NIST SP 800-53                                        |
+| European Union Artificial Intelligence Act (EU AI Act) |                                      | NIST SP 800-171                                       |
+| Korean Information Management System for Public Cloud (k-ISMS-P) |                            | NIST SP 800-172                                       |
+| CIS Azure Foundation Benchmark v3.0   |                                                       | PCI DSS                                               |
 |                                       |                                                       | Sarbanes Oxley Act (SOX)                              |
 |                                       |                                                       | SOC 2                                                 |
+
+Read more about the four new public preview [regulatory frameworks](https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/microsoft-defender-for-cloud-adds-four-new-regulatory-frameworks/4433440).

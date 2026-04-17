@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.case-study-endpoints-infrastructure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Test your knowledge on the key highlights of the interactive case study."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: ceperezb 
+  ms.topic: unit 
+  ai_generated_module_assessment: false 
+durationInMinutes: 3 
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+
+quiz:
+  questions: 
+   - content: "What is a common risk associated with decentralized endpoint management in hybrid enterprise environments?"
+     choices:
+        - content: "It creates exploitable entry points due to inconsistent security practices."
+          isCorrect: true
+          explanation: Inconsistent patching and tooling create vulnerabilities that attackers can exploit.
+        - content: "It ensures consistent patching across all devices."
+          isCorrect: false
+          explanation: Decentralized management often leads to inconsistent patching and delayed remediation.
+        - content: "It simplifies compliance enforcement across regions."
+          isCorrect: false
+          explanation: Compliance enforcement becomes more difficult without centralized control.
+
+   - content: "Which Microsoft solution provides agentless, protocol-aware monitoring for operational technology (OT) environments?"
+     choices:
+      - content: "Defender for IoT"
+        isCorrect: true
+        explanation: Defender for IoT is designed for agentless monitoring of OT and IoT systems.
+      - content: "Microsoft Intune"
+        isCorrect: false
+        explanation: Intune is used for endpoint management, not OT monitoring.
+      - content: "Azure Arc"
+        isCorrect: false
+        explanation: Azure Arc extends governance to hybrid infrastructure but does not monitor OT networks.
+
+   - content: "What is the primary benefit of using IoT Hub with Private Endpoints in a hybrid security architecture?"
+     choices:
+       - content: "It enables secure, scalable cloud integration without public exposure."
+         isCorrect: true
+         explanation: Private Endpoints ensure secure telemetry routing and cloud integration.
+       - content: "It allows telemetry to be sent over the public internet."
+         isCorrect: false
+         explanation: Private Endpoints are used to avoid public internet exposure.
+       - content: "It eliminates the need for edge processing."
+         isCorrect: false
+         explanation: Edge processing remains important for local telemetry handling.
+
+   - content: "Which of the following is a common deployment blocker when implementing security tools across distributed environments?"
+     choices:
+       - content: "Conflicting change management practices across operational teams"
+         isCorrect: true
+         explanation: Security rollouts often conflict with strict operational change windows.
+       - content: "Lack of Microsoft licensing"
+         isCorrect: false
+         explanation: Licensing is not typically cited as a blocker in these scenarios.
+       - content: "Overuse of automation"
+         isCorrect: false
+         explanation: Automation is encouraged to improve consistency and reduce manual errors.
+

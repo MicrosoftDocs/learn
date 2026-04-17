@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-governance-controls-ai-ready-workloads.implement-azure-policy-guardrails-workloads
+title: "Implement Azure Policy guardrails for AI workloads"
+metadata:
+  title: "Implement Azure Policy guardrails for AI workloads"
+  description: "Implement Azure Policy guardrails for AI workloads."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-implement-azure-policy-guardrails-workloads.md)]

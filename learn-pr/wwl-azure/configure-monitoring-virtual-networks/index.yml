@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-monitoring-virtual-networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure monitoring for virtual networks
   description: 'In this module, you learn how to use the following Azure Network Watcher functionality to monitor and diagnose Azure networks: Azure Network Watcher topology. Connection Monitor. IP flow verify and NSG diagnostics. Packet capture.'
-  ms.date: 10/25/2023
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - references_regions
@@ -20,7 +18,7 @@ abstract: |
   - Enable Traffic Analytics
   - Configure access to flow logs
 prerequisites: ''
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-monitor-module.svg
 levels:
 - intermediate
 roles:

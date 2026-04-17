@@ -1,34 +1,33 @@
-You can organize your build or release pipeline into jobs. Every build or deployment pipeline has at least one job.
+Build and release pipelines can be organized into jobs. Every build or deployment pipeline contains at least one job.
 
-A job is a series of tasks that run sequentially on the same target. It can be a Windows server, a Linux server, a container, or a deployment group.
+A job is a series of tasks that run sequentially on the same target. Targets include Windows servers, Linux servers, containers, or deployment groups.
 
-A release job is executed by a build/release agent. This agent can only run one job at the same time.
+Release jobs are executed by build/release agents. Each agent can only run one job at a time.
 
-You specify a series of tasks you want to run on the same agent during your job design.
+Job design involves specifying a series of tasks to run on the same agent.
 
-When the build or release pipeline is triggered at runtime, each job is dispatched to its target as one or more.
+When the build or release pipeline is triggered at runtime, each job is dispatched to its target.
 
-A scenario that speaks to the imagination, where Jobs plays an essential role, is the following.
+Consider the following scenario demonstrating the essential role of jobs.
 
-Assume that you built an application with a backend in .NET, a front end in Angular, and a native IOS mobile App. It might be developed in three different source control repositories triggering three other builds and delivering three other artifacts.
+Consider an application with a .NET backend, an Angular frontend, and a native iOS mobile app. These components may be developed in separate source control repositories, triggering different builds and producing separate artifacts.
 
-The release pipeline brings the artifacts together and wants to deploy the backend, frontend, and Mobile App all together as part of one release.
+The release pipeline combines these artifacts and deploys the backend, frontend, and mobile app together as part of a single release.
 
-The deployment needs to take place on different agents.
+Deployment requires different agent types for each component:
 
-If an IOS app needs to be built and distributed from a Mac, the angular app is hosted on Linux, so best deployed from a Linux machine.
+- iOS apps require building and distribution from macOS machines
+- Angular apps hosted on Linux are best deployed from Linux machines
+- .NET backends can be deployed from Windows machines
 
-The backend might be deployed from a Windows machine.
-
-Because you want all three deployments to be part of one pipeline, you can define multiple Release Jobs targeting the different agents, servers, or deployment groups.
+To include all three deployments in a single pipeline, define multiple release jobs targeting different agents, servers, or deployment groups.
 
 By default, jobs run on the host machine where the agent is installed.
 
-It's convenient and typically well suited for projects just beginning to adopt continuous integration (CI).
+This approach is suitable for projects beginning continuous integration (CI) adoption.
 
-Over time, you may want more control over the stage where your tasks run.
+Advanced scenarios require greater control over the execution environment for tasks.
 
 :::image type="content" source="../media/jobs-d850fd27.png" alt-text="Screenshot of release jobs and tasks with multiple stages.":::
-
 
 For more information, see [Jobs in Azure Pipelines](/azure/devops/pipelines/process/phases).

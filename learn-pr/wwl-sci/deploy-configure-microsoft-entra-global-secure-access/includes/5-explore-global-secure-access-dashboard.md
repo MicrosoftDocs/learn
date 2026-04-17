@@ -4,15 +4,15 @@ To access the dashboard:
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 1. Browse to Global Secure Access > Dashboard.
 
-The Global Secure Access dashboard provides you with visualizations of the network traffic acquired by the Microsoft Entra Private and Microsoft Entra Internet Access services. The dashboard compiles the data from your network configurations, including devices, users, and tenants. The dashboard uses several widgets that provide you with visibility into several different types of data:
- - Volume of devices using the Global Secure Access client.
- - Change to the number of active devices.
- - Alerts that you should be aware of.
- - Service usage patterns.
- - Most used destinations.
- - Unique users are accessing the network across all your tenants.
- - Most popular website categories.
- - Most used private application segments.
+The Global Secure Access dashboard provides you with visualizations of the network traffic acquired by the Microsoft Entra Private and Microsoft Entra Internet Access services. The dashboard aggregates data from your network configurations, including devices, users, and tenants. The dashboard uses several widgets that provide you with visibility into several different types of data:
+ - Volume of devices using the Global Secure Access client
+ - Changes in the number of active devices
+ - Alerts and important notifications
+ - Service usage patterns
+ - Most used destinations
+ - Unique users accessing the network across all your tenants
+ - Most popular website categories
+ - Most used private application segments
 
 ## Global Secure Access snapshot
 This widget provides a summary of how many users and devices are using the service and how many applications were secured through the service.
@@ -22,7 +22,7 @@ This widget provides a summary of how many users and devices are using the servi
 The Global Secure Access snapshot has a filter to show data by Internet Access, Private Access, or Microsoft traffic.
 
 ## Alerts and notifications (preview)
-This widget shows what is happening in the network and helps identify suspicious activities or trends identified by the network data. Common alerts are:
+This widget shows network activity and helps identify suspicious activities or trends identified by the network data. Common alerts are:
  - Unhealthy remote network: An unhealthy remote network has one or more device-links disconnected.
  - Increased external tenants activity: The number of users accessing external tenants increased.
  - Token and device inconsistency: The original token is used on a different device.
@@ -54,7 +54,7 @@ Global Secure Access provides visibility into the number of users and devices th
  - Unseen tenants: The number of distinct tenant IDs that were seen in the last 24 hours, but not in the previous seven days.
  - Users: The number of distinct user sign-ins to other tenants in the last 24 hours.
  - Devices: The number of distinct devices that signed in to other tenants in the last 24 hours.
-Select the **Configure tenant restrictions** button to navigate to the Session management are of Global Secure Access, where you can check the settings of your tenant restrictions.
+Select the **Configure tenant restrictions** button to navigate to the Session management area of Global Secure Access, where you can check the settings of your tenant restrictions.
 
 ## Web category filtering
 The Web category filtering widget displays the top categories of web content that are blocked or allowed. These categories can be used to determine what sites or categories of sites you might want to block. Sort the results using the following categories:

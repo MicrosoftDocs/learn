@@ -18,6 +18,7 @@ The process of migrating a SQL Server database running on an Azure virtual machi
 
 Throughout this module, we're using an example scenario to explain key data migration concepts.
 
-Suppose you work for a company that builds bikes and bicycle parts. You have several legacy database servers that you want to upgrade, including and product database, a parts stock database, and a human resources database. You also want to move from a capital expenditure model to an operational expenditure model, and benefit from the scalability and availability of Azure services. You plan to migrate your SQL Server databases to Azure SQL Database. Your board of directors has asked you to plan the migration project and has made you responsible for the execution of the migration tasks.
+Suppose you work for a company that builds bikes and bicycle parts. You have several legacy database servers that you want to upgrade, including a product database, a parts stock database, and a human resources database. You also want to move from a capital expenditure model to an operational expenditure model, and benefit from the scalability and availability of Azure services. You plan to migrate your SQL Server databases to Azure SQL Database. Your board of directors has asked you to plan the migration project and has made you responsible for the execution of the migration tasks.
 
 You'll learn how to migrate SQL Server databases to Azure SQL Database. You'll begin by exploring the pre-migration considerations you need to take into account before a migration, and how to create an Azure SQL database. You'll then explore the different methods for offline and online migrations, and look at ways to move data to Azure SQL Database.
+

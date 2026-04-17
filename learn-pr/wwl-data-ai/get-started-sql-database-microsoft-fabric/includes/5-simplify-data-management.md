@@ -1,12 +1,8 @@
----
-ms.custom:
-  - ignite-2024
----
 Organizations often face challenges in managing and analyzing their data due to the complexity of integrating various data sources, ensuring data consistency, and maintaining real-time data availability. SQL Database in Microsoft Fabric addresses these challenges by providing a unified platform that simplifies data integration, enhances data consistency, and ensures near real-time data availability.
 
 ## Integrate with mirroring
 
-One of the key features of SQL Database in Microsoft Fabric is its ability to mirror databases from Azure SQL Database directly into Fabric's OneLake. 
+One of the key features of SQL Database in Microsoft Fabric is its ability to mirror databases from Azure SQL Database directly into Fabric's OneLake. Additionally, SQL Database in Fabric is automatically mirrored for analytics purposes, with data continuously replicated into OneLake in near real-time.
 
 :::image type="content" source="../media/5-mirroring.png" alt-text="Diagram of Fabric Database Mirroring for Azure SQL Database." lightbox="../media/5-mirroring.png":::
 

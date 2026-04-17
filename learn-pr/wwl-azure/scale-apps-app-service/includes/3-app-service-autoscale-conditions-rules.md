@@ -45,7 +45,7 @@ In the first step, an autoscale rule aggregates the values retrieved for a metri
 
 An interval of one minute is a short interval in which to determine whether any change in metric is long-lasting enough to make autoscaling worthwhile. So, an autoscale rule performs a second step that performs a further aggregation of the value calculated by the *time aggregation* over a longer, user-specified period, known as the *Duration*. The minimum *Duration* is 5 minutes. If the *Duration* is set to 10 minutes for example, the autoscale rule aggregates the 10 values calculated for the *time grain*.
 
-The aggregation calculation for the *Duration* can be different from the *time grain*. For example, if the *time aggregation* is *Average* and the statistic gathered is *CPU Percentage* across a one-minute *time grain*, each minute the average CPU percentage utilization across all instances for that minute is calculated. If the *time grain statistic* is set to *Maximum*, and the *Duration* of the rule is set to 10 minutes, the maximum of the 10 average values for the CPU percentage utilization is to determine if the rule threshold was crossed.
+The aggregation calculation for the *Duration* can be different from the calculation used for the *time grain*. For example, if the *time aggregation* is *Average* and the metric is *CPU Percentage* with a one-minute *time grain*, each minute the average CPU utilization across all instances is calculated. If the aggregation applied over the *Duration* is set to *Maximum*, and the *Duration* of the rule is 10 minutes, the maximum of the ten per-minute average values for CPU utilization is used to determine whether the rule threshold was crossed.
 
 ## Autoscale actions
 

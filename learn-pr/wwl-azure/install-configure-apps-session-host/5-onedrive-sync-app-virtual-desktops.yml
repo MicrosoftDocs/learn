@@ -2,8 +2,6 @@
 uid: learn.wwl.install-configure-apps-session-host.onedrive-sync-app-virtual-desktops
 title: Implement and manage OneDrive, including multisession environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and manage OneDrive, including multisession environments
   description: "Implement and manage OneDrive, including multisession environments"
   ms.date: 08/13/2024
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-onedrive-sync-app-virtual-desktops.md)]
-interactive: bash
+interactive: bash

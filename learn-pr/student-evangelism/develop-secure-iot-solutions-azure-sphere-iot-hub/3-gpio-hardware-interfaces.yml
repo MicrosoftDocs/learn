@@ -2,8 +2,6 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.gpio-hardware-interfaces
 title: Learn about Azure Sphere devices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Learn about Azure Sphere devices
   description: In this section, you'll learn what Azure Sphere devices are supported by this learning module.
   ms.date: 07/20/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/3-gpio-hardware-interfaces.md)]
-
+

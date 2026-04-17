@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-assess-mitigate-risks.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Considering the **Risky browser usage (preview)** policy template in Microsoft Purview, what aspect of organizational risk management does it address?"
+    choices:
+    - content: "Externally originated cyber threats."
+      isCorrect: false
+      explanation: "It's more focused on internal rather than external cyber threats."
+    - content: "Internal risks associated with web browsing activities."
+      isCorrect: true
+      explanation: "The **Risky browser usage (preview)** policy addresses internal risks that arise from employees' web browsing activities."
+    - content: "Physical security of organizational devices."
+      isCorrect: false
+      explanation: "The policy doesn't deal with physical device security."
+  - content: "In the scenario of Contoso Inc., what does the implementation of Microsoft Purview Adaptive Protection against external AI tool risks demonstrate?"
+    choices:
+    - content: "A strategy to limit the use of AI tools."
+      isCorrect: false
+      explanation: "The strategy isn't to limit AI tools, but to use them securely."
+    - content: "A move towards replacing AI tools with in-house solutions."
+      isCorrect: false
+      explanation: "There's no indication that they're moving towards replacing AI tools."
+    - content: "An approach to balance innovation with data security."
+      isCorrect: true
+      explanation: "Implementing Adaptive Protection to manage risks associated with external AI tools shows Contoso's effort to balance innovation with data security."

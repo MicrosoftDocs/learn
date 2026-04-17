@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-understand.management-data-plane-ai-workloads
+title: Management plane and data plane access in AI workloads
+metadata:
+  title: Management plane and data plane access in AI workloads
+  description: "Management plane and data plane access in AI workloads."
+  ms.date: 2/13/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/management-data-plane-ai-workloads.md)]

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7e8451fb-ac05-4979-8cf8-e65d3767eac3]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Regression models are trained to predict numeric label values based on training data that includes both features and known labels. The process for training a regression model (or indeed, any supervised machine learning model) involves multiple iterations in which you use an appropriate algorithm (usually with some parameterized settings) to train a model, evaluate the model's predictive performance, and refine the model by repeating the training process with different algorithms and parameters until you achieve an acceptable level of predictive accuracy.
 
 ![Diagram showing the process of training an evaluating a supervised model.](../media/supervised-training.png)
@@ -5,9 +16,9 @@ Regression models are trained to predict numeric label values based on training 
 The diagram shows four key elements of the training process for supervised machine learning models:
 
 1. Split the training data (randomly) to create a dataset with which to train the model while holding back a subset of the data that you'll use to validate the trained model.
-1. Use an algorithm to fit the training data to a model. In the case of a regression model, use a regression algorithm such as *linear regression*.
-1. Use the validation data you held back to test the model by predicting labels for the features.
-1. Compare the known *actual* labels in the validation dataset to the labels that the model predicted. Then aggregate the differences between the *predicted* and *actual* label values to calculate a metric that indicates how accurately the model predicted for the validation data.
+2. Use an algorithm to fit the training data to a model. In the case of a regression model, use a regression algorithm such as *linear regression*.
+3. Use the validation data you held back to test the model by predicting labels for the features.
+4. Compare the known *actual* labels in the validation dataset to the labels that the model predicted. Then aggregate the differences between the *predicted* and *actual* label values to calculate a metric that indicates how accurately the model predicted for the validation data.
 
 After each train, validate, and evaluate iteration, you can repeat the process with different algorithms and parameters until an acceptable evaluation metric is achieved.
 
@@ -135,3 +146,5 @@ The metrics described above are commonly used to evaluate a regression model. In
 - Algorithm parameters (numeric settings to control algorithm behavior, more accurately called *hyperparameters* to differentiate them from the ***x*** and ***y*** parameters).
 
 After multiple iterations, the model that results in the best evaluation metric that's acceptable for the specific scenario is selected.
+
+::: zone-end

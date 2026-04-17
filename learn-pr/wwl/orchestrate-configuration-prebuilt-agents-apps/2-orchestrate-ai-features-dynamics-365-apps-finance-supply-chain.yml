@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-ai-features-dynamics-365-apps-finance-supply-chain
+title: "Orchestrate AI features in Dynamics 365 Finance and Supply Chain"
+metadata:
+  title: "Orchestrate AI features in Dynamics 365 Finance and Supply Chain"
+  description: "Learn how to orchestrate AI features like Copilot in Dynamics 365 Finance and Supply Chain apps to automate workflows and improve productivity."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-orchestrate-ai-features-dynamics-365-apps-finance-supply-chain.md)]

@@ -1,18 +1,16 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-incident-readiness
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Incident Readiness
-  description: "This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed, building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Additionally, customers with support contracts will receive information on building their Major Incident Response Plan with their Microsoft account team."
-  ms.date: 6/25/2023
+  description: This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents.
+  ms.date: 05/27/2025
   author: rmcmurray
   ms.author: keall
   ms.topic: module
   ms.service: azure
 title: Introduction to Azure Incident Readiness
 summary: |
-  This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed, building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Additionally, customers with support contracts will receive information on building their Major Incident Response Plan with their Microsoft account team.
+  This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed. Learn about building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Customers with support contracts receive information on building their Major Incident Response Plan with their Microsoft account team.
 abstract: |
   By the end of this module, you can expect to:
 

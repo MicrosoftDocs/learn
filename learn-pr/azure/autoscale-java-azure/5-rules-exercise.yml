@@ -2,8 +2,6 @@
 uid: learn.autoscale-java-azure.rules-exercise
 title: Exercise - Autoscaling rules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Autoscaling rules
   description: We look at an exercise for autoscale rules.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-rules-exercise.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-sap-hana-availability
 title: Explore SAP HANA availability
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAP HANA availability
   description: "Explore different methods for ensuring SAP HANA availability."
   ms.date: 10/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/8-explore-sap-hana-availability.md)]
+  [!include[](includes/8-explore-sap-hana-availability.md)]

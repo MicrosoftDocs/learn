@@ -1,10 +1,12 @@
 Using DataFrame APIs for data analysis is essential for efficiently exploring, manipulating, and analyzing structured data in various applications.
 
-A **DataFrame** is a two-dimensional labeled data structure with columns of potentially different types. You can think of a DataFrame like a spreadsheet, a SQL table, or a dictionary of series objects. Apache Spark DataFrames provide a rich set of functions (select columns, filter, join, aggregate) that allow you to solve common data analysis problems efficiently.
+DataFrame APIs are provided by several data processing libraries, such as **Pandas** in Python, **Apache Spark**, and R's dplyr, each offering tools to handle large datasets with ease. Working with DataFrames seems similar across libraries, but each library has some slight variations in its capabilities.
 
-DataFrame APIs are provided by several data processing libraries, such as Pandas in Python, Apache Spark, and R's dplyr, each offering tools to handle large datasets with ease. Working with DataFrames seems similar across libraries, but each library has some slight variations in its capabilities.
+## Spark DataFrame
 
-Here's an example of using Spark DataFrame APIs in Python:
+A **Spark DataFrame** is a distributed collection of data organized into named columns, much like a table in a database. It lets you query and transform large datasets using SQL-like operations or APIs while automatically **scaling across a cluster**. DataFrames provide a rich set of functions (select columns, filter, join, aggregate) that allow you to solve common data analysis problems efficiently.
+
+Here's an example of using Spark DataFrame APIs in Python. The code creates a Spark DataFrame with names and ages, then demonstrates selecting a column, filtering rows by age, and grouping by age to count occurrences.
 
 ```python
 # Create a sample DataFrame
@@ -21,6 +23,12 @@ df.filter(df["Age"] > 30).show()
 # Group by and aggregate
 df.groupBy("Age").count().show()
 ```
+
+A Spark DataFrame is a distributed, cluster-based data structure designed to handle very large datasets by splitting and processing them across multiple machines.
+
+## Pandas DataFrame
+
+A **Pandas DataFrame** is an in-memory, single-machine data structure, best for small to medium datasets that fit on one computer.
 
 And here's an example of doing the same tasks using Pandas DataFrame APIs in Python:
 
@@ -42,7 +50,17 @@ print(df[df['Age'] > 30])
 print(df.groupby('Age').size())
 ```
 
-Apache Spark DataFrames are an abstraction built on top of **Resilient Distributed Datasets** (**RDDs**). Spark DataFrames and Spark SQL use a unified planning and optimization engine, allowing you to get nearly identical performance across all supported languages on Azure Databricks (Python, SQL, Scala, and R).
+## Comparing Spark DataFrame with Pandas DataFrame
+
+| Feature            | **Spark DataFrame**                                   | **pandas DataFrame**                            |
+|---------------------|-------------------------------------------------------|------------------------------------------------|
+| **Execution**       | Distributed across a cluster                          | Runs on a single machine (in-memory)           |
+| **Scalability**     | Handles very large datasets (terabytes or more)       | Best for small to medium datasets (fits in RAM)|
+| **APIs**            | SQL-like operations, Spark APIs in Python/Scala/Java/R| Python-based API                               |
+| **Performance**     | Optimized with Catalyst & Tungsten engines            | Optimized for single-node operations           |
+| **Lazy vs. Eager**  | Lazy evaluation (plans query before execution)        | Eager execution (runs immediately)             |
+| **Use Cases**       | Big data processing, ETL, streaming, machine learning | Data analysis, prototyping, lightweight ML     |
+| **Integration**     | Works with Spark ecosystem & distributed storage      | Works with Python ecosystem (NumPy, SciPy, etc.) |
 
 > [!Tip]
 > For more information about loading and transforming data using Spark, see **[Apache Spark Python (PySpark) DataFrame API](https://api-docs.databricks.com/python/pyspark/latest/pyspark.sql/api/pyspark.sql.DataFrame.html#pyspark-sql-dataframe)**, **[Apache Scala DataFrame API](https://api-docs.databricks.com/scala/spark/latest/org/apache/spark/index.html)**, or **[SparkR SparkDataFrame API](https://spark.apache.org/docs/latest/sparkr.html)**.

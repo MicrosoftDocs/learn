@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-ai-education.data-insights-learning-management-system-ecosystem-integration
+title: Data, insights, and LMS ecosystem integration
+metadata:
+  title: Data, Insights, And LMS Ecosystem Integration
+  description: This content is part of the "AI‑enhanced K‑12 institutional concepts" module.
+  ms.date: 04/09/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-data-insights-learning-management-system-ecosystem-integration.md)]

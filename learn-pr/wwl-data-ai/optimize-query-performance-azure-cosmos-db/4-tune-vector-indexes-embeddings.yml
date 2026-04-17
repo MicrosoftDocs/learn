@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db.tune-vector-indexes-embeddings
+title: Tune vector indexes for embedding workloads
+metadata:
+  title: Tune Vector Indexes for Embedding Workloads
+  description: Tune vector indexes for embedding workloads
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-tune-vector-indexes-embeddings.md)]

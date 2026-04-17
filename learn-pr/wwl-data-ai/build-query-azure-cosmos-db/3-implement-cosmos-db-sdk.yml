@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-azure-cosmos-db.implement-cosmos-db-sdk
+title: Implement the Azure Cosmos DB for NoSQL SDK
+metadata:
+  title: Implement the Azure Cosmos DB for NoSQL SDK
+  description: Implement the Azure Cosmos DB for NoSQL SDK
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-implement-cosmos-db-sdk.md)]

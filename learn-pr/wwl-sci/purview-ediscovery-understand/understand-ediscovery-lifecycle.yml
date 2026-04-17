@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-understand.understand-ediscovery-lifecycle
+title: Understand the eDiscovery case lifecycle
+metadata:
+  title: Understand the eDiscovery case lifecycle
+  description: "Understand the eDiscovery case lifecycle"
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-ediscovery-lifecycle.md)]

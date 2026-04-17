@@ -47,7 +47,7 @@ VMs and other services running in Azure or AWS must communicate with each other,
 
 | Purpose | Azure object | AWS object | Comments |
 |---|---|---|---|
-| Network segmentation | Virtual Networks (VNets) | Virtual Private Clouds (VPCs) | VNets and VPCs provide isolated networks, within which communication is permitted. Access outside these networks required configuration and is tightly controlled. Both VNets and VPCs can be subdivided into IP subnets. |
+| Network segmentation | Virtual Networks (VNets) | Virtual Private Clouds (VPCs) | VNets and VPCs provide isolated networks, within which communication is permitted. Access outside these networks requires configuration and is tightly controlled. Both VNets and VPCs can be subdivided into IP subnets. |
 | Traffic filtering | Network Security Groups (NSGs) | Security Groups | NSGs and AWS Security Groups filter traffic as it enters and exits a virtual network or VPC. |
 | Load balancing | Azure Load Balancer | Elastic Load Balancing (ELB) | These objects accept requests from users and distribute them between VMs or other services in order to optimize performance. |
 | Domain Name System (DNS) | Azure DNS | Route 53 | These objects resolve host names to IP addresses. |

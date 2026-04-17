@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-data-azure-data-factory.create-activities-pipelines
 title: Create data factory activities and pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create data factory activities and pipelines
   description: "Create data factory activities and pipelines"
   ms.date: 06/05/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/10-create-activities-pipelines.md)]
+  [!include[](includes/10-create-activities-pipelines.md)]

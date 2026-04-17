@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.resolve-github-issues-github-copilot-agent.exercise-resolve-github-issues
+title: Exercise - Resolve GitHub issues using GitHub Copilot
+metadata:
+  title: Exercise - Resolve GitHub Issues using GitHub Copilot
+  description: "Exercise - Resolve GitHub issues using GitHub Copilot"
+  ms.date: 11/11/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/7-exercise-resolve-github-issues.md)]

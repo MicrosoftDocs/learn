@@ -1,14 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-java-azure.6-sample-deployment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Sample Java app deployment
   description: We demonstrate and explain a Java app deployment to Azure App Service
   ms.date: 11/22/2024
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

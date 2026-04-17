@@ -2,4 +2,6 @@ In this module, you learned how to:
 
 * Describe the benefits of using Event Hubs and how it captures streaming data.
 * Explain how to process events.
-* Perform common operations with the Event Hubs client library.
+* Perform common operations with the Event Hubs client library. 
+* Send and retrieve events from Azure Event Hubs
+

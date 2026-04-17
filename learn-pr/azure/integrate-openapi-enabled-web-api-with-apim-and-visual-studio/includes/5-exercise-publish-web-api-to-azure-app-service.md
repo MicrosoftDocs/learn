@@ -77,4 +77,4 @@ Congratulations! You've now published your ASP.NET Core Web API app to Azure App
 
 [az appsvc]: /azure/app-service/overview
 [az apim]: /azure/api-management/api-management-key-concepts
-[az account free]: https://azure.microsoft.com/free/
+[az account free]: https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn

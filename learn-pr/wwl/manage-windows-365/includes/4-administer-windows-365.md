@@ -26,7 +26,7 @@ The Reprovision remote action allows admins to reprovision Cloud PCs. When this 
 
 To reprovision a Cloud PC, perform the following steps:
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center**, select **Devices** > **All Devices** > choose a Cloud PC device > **Reprovision**.
+1.  Sign in to the **Microsoft Intune admin center**, select **Devices** > **All Devices** > choose a Cloud PC device > **Reprovision**.
     
     :::image type="content" source="../media/reprovision-5de0ba6b.png" alt-text="Screenshot of Endpoint Manager admin center showing a device selected and highlighting the Reprovision button.":::
     
@@ -46,7 +46,7 @@ To resize a Cloud PC, the following are required:
 
 Resizing a Cloud PC involves the following steps:
 
-1.  Sign in to the Microsoft Endpoint Manager admin center, select **Devices** > **All Devices** > choose a device > **Resize**.
+1.  Sign in to the Microsoft Intune admin center, select **Devices** > **All Devices** > choose a device > **Resize**.
     
     :::image type="content" source="../media/resize-6b7faa89.png" alt-text="Screenshot of the Microsoft Intune Admin center resize pc option.":::
     

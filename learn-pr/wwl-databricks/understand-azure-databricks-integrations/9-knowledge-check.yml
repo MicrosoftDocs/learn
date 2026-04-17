@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an important security consideration when using Microsoft Fabric to read data from Unity Catalog?"
+    choices:
+    - content: "Fabric can only access tables that are publicly accessible"
+      isCorrect: false
+      explanation: "Incorrect. Fabric uses Unity Catalog credentials to access tables, but downstream authorization works differently."
+    - content: "Unity Catalog governance policies don't apply to downstream Fabric users"
+      isCorrect: true
+      explanation: "Correct. Fabric engines perform authorization using the identity of the user who configured the connection, not the identity of users who query the data. Once a table is exposed in Fabric, any Fabric user with access to the connection can query it."
+    - content: "Fabric creates a complete copy of all Unity Catalog data"
+      isCorrect: false
+      explanation: "Incorrect. Fabric creates OneLake shortcuts that point to the Delta tables without copying data."
+  - content: "Which authentication method is required when using serverless compute to write data from Azure Databricks to OneLake?"
+    choices:
+    - content: "Microsoft Entra credential passthrough"
+      isCorrect: false
+      explanation: "Incorrect. Credential passthrough isn't supported with serverless compute."
+    - content: "Personal access tokens"
+      isCorrect: false
+      explanation: "Incorrect. Personal access tokens aren't the required method for serverless compute with OneLake."
+    - content: "Service principal"
+      isCorrect: true
+      explanation: "Correct. Serverless compute requires service principal authentication when connecting to OneLake. Credential passthrough isn't supported with serverless compute."
+  - content: "What is the primary advantage of connecting Power BI Desktop to a Databricks SQL warehouse instead of a cluster?"
+    choices:
+    - content: "SQL warehouses support more data formats than clusters"
+      isCorrect: false
+      explanation: "Incorrect. The data format support is the same. The main advantage is related to performance and scaling."
+    - content: "SQL warehouses provide optimized query performance and built-in serverless scaling"
+      isCorrect: true
+      explanation: "Correct. SQL warehouses are specifically designed for analytical queries with optimized performance and automatic scaling capabilities."
+    - content: "SQL warehouses are less expensive than clusters"
+      isCorrect: false
+      explanation: "Incorrect. While cost may vary based on configuration, the primary advantage is performance optimization for queries."
+  - content: "How does the Databricks extension for Visual Studio Code enable debugging of code running on remote clusters?"
+    choices:
+    - content: "By downloading all data to the local machine for processing"
+      isCorrect: false
+      explanation: "Incorrect. The extension doesn't download data locally for processing."
+    - content: "By using Databricks Connect to create a direct connection between the local Python environment and the remote cluster"
+      isCorrect: true
+      explanation: "Correct. Databricks Connect creates a direct connection that allows the Python debugger in Visual Studio Code to control execution on the cluster, enabling breakpoints and variable inspection."
+    - content: "By converting all Spark code to local pandas operations"
+      isCorrect: false
+      explanation: "Incorrect. The code continues to run on Azure Databricks compute using Spark APIs."
+  - content: "What protocol does Microsoft Foundry use to connect AI agents with Azure Databricks Genie spaces?"
+    choices:
+    - content: "GraphQL"
+      isCorrect: false
+      explanation: "Incorrect. The integration uses a different protocol designed for AI agent communication."
+    - content: "Model Context Protocol (MCP)"
+      isCorrect: true
+      explanation: "Correct. The integration uses Model Context Protocol (MCP), an open standard that defines how AI agents communicate with external tools and data sources."
+    - content: "REST API"
+      isCorrect: false
+      explanation: "Incorrect. While REST APIs may be involved, the specific protocol for this integration is MCP."
+  - content: "When connecting Power Platform to Azure Databricks, which compute resource type should be used?"
+    choices:
+    - content: "All-purpose clusters"
+      isCorrect: false
+      explanation: "Incorrect. Power Platform requires a specific type of compute resource optimized for analytical workloads."
+    - content: "Job clusters"
+      isCorrect: false
+      explanation: "Incorrect. Job clusters aren't the required compute type for Power Platform connections."
+    - content: "SQL warehouses"
+      isCorrect: true
+      explanation: "Correct. The Power Platform connector requires SQL warehouses because they provide optimized query performance and serverless scaling for analytical workloads."

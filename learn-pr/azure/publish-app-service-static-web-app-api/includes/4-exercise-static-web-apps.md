@@ -4,10 +4,6 @@ In this exercise, you'll create an Azure Static Web Apps instance including a Gi
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance from the Azure portal.
 
-This module uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
-
-The Azure sandbox that you activated allows you to use Azure services without incurring any costs.
-
 ## Install the Azure Static Web Apps extension for Visual Studio Code
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true), and install the **Azure Static Web Apps** extension for Visual Studio Code.
@@ -20,20 +16,15 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 1. In Visual Studio Code, sign in to Azure by selecting **View** > **Command Palette**, and entering **Azure: Sign In**.
 
-   > [!IMPORTANT]
-   > Log in to Azure using the same account used to create the sandbox. The sandbox provides access to a Concierge Subscription.
-
 1. Follow the prompts to copy and paste the code provided in the web browser, which authenticates your Visual Studio Code session.
 
 ## Select Your Subscription
 
 1. Open Visual Studio Code, and select **File > Open** and open the repository you cloned to your computer in the editor.
 
-1. Verify that you have filtered your Azure subscriptions to include the Concierge Subscription by opening the command palette and entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
+1. Verify that you have signed in to your preferred Azure subscription by opening the command palette and entering `Azure: Select Subscriptions`, and press <kbd>Enter</kbd>.
 
-1. Select **Concierge Subscription** and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Screenshot of VS Code showing how to filter by subscription.":::
+1. Select your subscription (A check mark should appear next to it) and click <kbd>Ok</kbd>.
 
 ## Create a static web app
 
@@ -60,7 +51,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="angular"
 
-6. Select the **Angular** option, and press <kbd>Enter</kbd>
+6. Select the **Angular** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-angular-option.png" alt-text="Screenshot showing the angular option selected.":::
 
@@ -76,7 +67,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="react"
 
-6. Select the **React** option, and press <kbd>Enter</kbd>
+6. Select the **React** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-react-option.png" alt-text="Screenshot showing the react option selected.":::
 
@@ -92,7 +83,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
-6. Select the **Svelte** option, and press <kbd>Enter</kbd>
+6. Select the **Svelte** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-svelte-option.png" alt-text="Screenshot showing the svelte option selected.":::
 
@@ -108,7 +99,7 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
-6. Select the **Vue** option, and press <kbd>Enter</kbd>
+6. Select the **Vue** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-vue-option.png" alt-text="Screenshot showing the vue option selected.":::
 
@@ -128,10 +119,6 @@ The Azure sandbox that you activated allows you to use Azure services without in
 9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Screenshot of the confirmation code asking the user to open actions in GitHub or View/Edit Configure.":::
-
-   As the deployment is in progress, the Visual Studio Code extension reports the build status to you.
-
-   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Screenshot of the VS Code UI showing waiting for deployment.":::
 
 1. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 

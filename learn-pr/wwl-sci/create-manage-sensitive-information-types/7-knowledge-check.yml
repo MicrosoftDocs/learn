@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-sensitive-information-types.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/26/2023
+  ms.date: 04/15/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -47,3 +48,14 @@ quiz:
     - content: "Confidence level"
       isCorrect: true
       explanation: "This answer is correct."
+  - content: "An organization needs to detect exact employee Social Security numbers from an HR database to prevent them from being shared externally. Which approach is most appropriate?"
+    choices:
+    - content: "A custom sensitive information type using a regular expression."
+      isCorrect: false
+      explanation: "This answer isn't correct. A regular expression matches patterns but can't match exact values from a specific database, which increases the risk of false positives."
+    - content: "An exact data match (EDM) sensitive information type."
+      isCorrect: true
+      explanation: "This answer is correct. EDM-based SITs match exact values from a database of sensitive information, making them ideal for detecting specific data like employee Social Security numbers."
+    - content: "Document fingerprinting."
+      isCorrect: false
+      explanation: "This answer isn't correct. Document fingerprinting detects documents based on form templates, not specific data values from a database."

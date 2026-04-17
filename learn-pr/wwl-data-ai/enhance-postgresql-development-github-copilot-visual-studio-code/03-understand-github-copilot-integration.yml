@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.understand-github-copilot-integration
+title: Understand how GitHub Copilot integrates with the PostgreSQL extension
+metadata:
+  title: Understand how GitHub Copilot integrates with the PostgreSQL extension
+  description: Learn how GitHub Copilot provides inline SQL suggestions through the PostgreSQL extension in Visual Studio Code.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 12/08/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-understand-github-copilot-integration.md)]

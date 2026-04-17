@@ -3,7 +3,7 @@ One of the teams you support contacts you. The team has trouble connecting to th
 Bastion isn't supported in the Learn sandbox environment. To view this exercise, watch the video at the end. If you'd like to follow along in your own subscription, you can use the following steps.
 
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+> You need your own [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 ## Check that Bastion is deployed
 

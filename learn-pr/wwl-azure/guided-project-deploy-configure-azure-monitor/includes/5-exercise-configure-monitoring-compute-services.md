@@ -1,4 +1,3 @@
-
 This guided project consists of the four exercises:
 
 - Exercise 1: Deploy Log Analytics
@@ -15,7 +14,7 @@ You create a data collection endpoint and a data collection rule to collect Wind
 - Task 4: Configure Network Connection Monitor for a Linux IaaS virtual machine.
 
 > [!NOTE]
-> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_04_exercise_configure_monitoring_compute_services.html)
+](https://microsoftlearning.github.io/AZ-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_04_exercise_configure_monitoring_compute_services.html)

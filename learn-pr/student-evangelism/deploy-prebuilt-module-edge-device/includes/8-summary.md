@@ -1,9 +1,9 @@
 You put yourself into the role of a developer deploying IoT applications in the cloud for a factory automation application.
-You wanted to simulate both the machine's behavior and the behavior of the environment around the machine. The pre-built temperature sensor simulator module can help solve this problem when deployed at the edge.
+You wanted to simulate both the machine's behavior and the behavior of the environment around the machine. The prebuilt temperature sensor simulator module can help solve this problem when deployed at the edge.
 
-In the absence of this module, you would be unable to test the solution adequately because it is expensive to acquire both machine and ambient data.
+In the absence of this module, you would be unable to test the solution adequately because it's expensive to acquire both machine and ambient data.
 
-By using the pre-built simulated sensor module, you can be more assured that the application will perform as stipulated.
+By using the prebuilt simulated sensor module, you can be more assured that the application performs as stipulated.
 
 In this module, we explored the following engineering-led themes:  
 

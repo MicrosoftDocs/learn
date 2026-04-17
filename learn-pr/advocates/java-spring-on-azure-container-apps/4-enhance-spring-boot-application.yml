@@ -4,9 +4,8 @@ title: Exercise - Maintain Spring Boot application
 metadata:
   title: Exercise - Maintain Spring Boot application
   description: In this unit, you use the built-in Java stack to enhance your Spring Boot application on Azure Container Apps.
-  author: KarlErickson
-  ms.author: karler
-  ms.reviewer: hangwan
+  author: hangwan97
+  ms.author: hangwan
   ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:

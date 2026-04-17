@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Determine your most expensive resource and see trends
   description: Exercise - Determine your most expensive resource and see trends
   ms.date: 10/22/2024
-  author: bandersmsft
-  ms.author: banders
+  author: tonyafehr
+  ms.author: tfehr
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7

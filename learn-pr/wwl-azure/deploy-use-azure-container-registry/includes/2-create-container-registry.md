@@ -3,7 +3,7 @@ Use this Try-This exercise to gain some hands-on experience with Azure Kubernete
 Azure Container Registry is a private registry service for building, storing, and managing container images and related artifacts. In this module, you create an Azure container registry instance with the Azure portal.
 
 > [!NOTE]
-> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/).
 2.  Select **Create a resource &gt; Containers &gt; Container Registry**.:::image type="content" source="../media/create-new-container-registry-f12abbe3.png" alt-text="Screenshot of the resource creation page.":::

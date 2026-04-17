@@ -103,7 +103,7 @@ In our scenario, suppose we migrated our on-premises SQL Server to Azure SQL Man
 
 - **Modify job dependencies:** Review the SQL script and modify any job dependencies that may have changed due to the migration. For example, if the job references a linked server or a file path on the local server, update it to match the new environment.
 
-- **Azure SQL MI job creation:** Open SSMS or Azure Data Studio and connect to your Azure SQL Managed Instance. Create a new SQL Agent job using the script you generated previously.
+- **Azure SQL MI job creation:** Open SSMS and connect to your Azure SQL Managed Instance. Create a new SQL Agent job using the script you generated previously.
 
 - **Create dependencies on Azure SQL MI:** If your SQL Agent job relies on linked servers or credentials, create them in the Azure SQL MI environment. Ensure they match the configuration from the on-premises SQL Server.
 

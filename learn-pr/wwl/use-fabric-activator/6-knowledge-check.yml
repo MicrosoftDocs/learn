@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-fabric-activator.knowledge-check
+title: Module assessment
+metadata:
+  hidden_question_numbers: ["4DA1AC2E_14","4DA1AC2E_2","4DA1AC2E_26","4DA1AC2E_30","4DA1AC2E_42","4DA1AC2E_75","4DA1AC2E_79","4DA1AC2E_83","4DA1AC2E_95","4DA1AC2E_112","4DA1AC2E_116","4DA1AC2E_132"]
+  ai_generated_module_assessment: true
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 09/12/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is Microsoft Fabric Activator primarily used for?"
+    choices:
+    - content: "Storing data in warehouses"
+      isCorrect: false
+      explanation: "Incorrect. Activator is not primarily used for data storage."
+    - content: "Automatically executing actions based on data conditions"
+      isCorrect: true
+      explanation: "Correct. Activator monitors data conditions and automatically executes configured actions when those conditions are met."
+    - content: "Creating data visualizations"
+      isCorrect: false
+      explanation: "Incorrect. While Activator can work with visualizations, its primary purpose is automated action execution."
+    - content: "Managing user permissions"
+      isCorrect: false
+      explanation: "Incorrect. Activator is not used for permission management."
+

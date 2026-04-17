@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.exercise
+title: Exercise - Explore machine learning scenarios
+metadata:
+  title: Exercise - Explore machine learning scenarios
+  description: Explore machine learning scenarios.
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.date: 09/10/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/9-exercise.md)]
+

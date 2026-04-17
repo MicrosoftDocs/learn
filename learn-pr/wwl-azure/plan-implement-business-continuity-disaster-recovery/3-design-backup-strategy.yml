@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.design-backup-strategy
 title: Design and implement a backup strategy for Azure Virtual Desktop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design and implement a backup strategy for Azure Virtual Desktop
   description: "Design and implement a backup strategy for Azure Virtual Desktop"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-design-backup-strategy.md)]
+  [!include[](includes/3-design-backup-strategy.md)]

@@ -2,13 +2,11 @@
 uid: learn.wwl.analyze-images.analyze-image
 title: Analyze an image
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze an image
   description: Analyze an image
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

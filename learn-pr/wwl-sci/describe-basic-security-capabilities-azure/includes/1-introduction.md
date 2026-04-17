@@ -1,12 +1,16 @@
 
-The traditional network security perimeter is changing as more companies move to either a hybrid cloud environment, with some resources located on-premises and some in the cloud, or a fully cloud-based network solution. Protection of your organization's assets, resources, and data is essential.
+The network security perimeter is changing as more companies move to hybrid cloud or fully cloud-based environments. Protecting your organization's assets, resources, and data requires a layered approach to security that evolves with the threat landscape.
 
-Threats can come from any direction: for instance, a Denial of Service attack on your organization’s services, or a hacker trying to access your network by attempting to penetrate your firewall. Azure offers a wide array of configurable security tools that can be customized to give you the security and control to meet your organization's needs.
+Threats can come from any direction: a volumetric DDoS attack that overwhelms your services, malicious network traffic trying to reach your virtual machines, or a web application targeted by SQL injection. Azure provides a range of infrastructure security services that you can combine to address these threats at multiple layers.
 
-In this module, you explore many different services and features of Azure that can help protect your networks, assets, and resources, including DDoS protection, Azure Firewall, network security groups, and more. You’ll also learn about Azure Key Vault and why you would use this feature to keep secrets safe.
+In this module, you explore the core infrastructure security services in Azure, from network-level protection to secure remote access and cryptographic key management.
 
 After completing this module, you should be able to:
 
-- Describe Azure security capabilities for protecting your network.
-- Describe Azure Bastion.
-- Describe Azure Key Vault.
+- Describe Azure DDoS Protection and the tiers available.
+- Describe Azure Firewall and its key capabilities.
+- Describe Web Application Firewall (WAF) and the types of attacks it protects against.
+- Describe network segmentation with Azure Virtual Networks.
+- Describe Azure Network Security Groups and how they filter network traffic.
+- Describe Azure Bastion and how it provides secure remote access to virtual machines.
+- Describe Azure Key Vault and how it helps manage secrets, keys, and certificates.

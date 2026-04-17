@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro
+title: 'Windows at work: Elevate IT teams with Windows 11 Pro'
+metadata:
+  title: 'Windows At Work: Elevate IT Teams With Windows 11 Pro'
+  description: Discover how IT teams can use Microsoft Security Copilot to handle anomalous security events faster and more efficiently.
+  ms.date: 10/20/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+  ms.custom: CW041025-1
+summary: >
+  Discover how IT teams can use Microsoft Security Copilot to handle anomalous security events faster and more efficiently.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Investigate an anomalous sign-in or impossible travel alert using Microsoft Security Copilot.
+  - Correlate alerts with user activity, device logs, and related security events.
+  - Use Copilot to summarize findings, document potential threats, and recommend next steps for escalation.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/win-at-work-it.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+  - business-leader
+products:
+  - windows-11
+  - security-copilot
+units:
+  - learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.introduction
+  - learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.anomalous-sign-ins
+  - learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.investigate-alerts
+  - learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.use-security-copilot
+  - learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.knowledge-check
+  - learn.dpu.windows-at-work-elevate-it-teams-with-windows-11-pro.summary
+badge:
+  uid: learn.dpu.win-at-work-it.badge

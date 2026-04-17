@@ -23,7 +23,7 @@ Review the guidance for each methodology:
 
 ## Azure Migrate
 
-[Azure Migrate](https://azure.microsoft.com/products/azure-migrate) is your central hub for moving to Azure. You can discover, assess, create a business case of Total Cost of Ownership (TCO), migrate and modernize your IT estate. Apply the valuable insights gathered during the process and track your progress using a central dashboard.
+[Azure Migrate](https://azure.microsoft.com/products/azure-migrate) is your central hub for moving to Azure. You can discover, assess, create a business case of Total Cost of Ownership (TCO), migrate and modernize your IT estate. Apply the valuable insights gathered during the process, and track your progress using a central dashboard.
 
 :::image type="content" source="../media/azure-migrate-inline.png" alt-text="Screenshot of the Azure Migrate get started screen." lightbox="../media/azure-migrate-expanded.png":::
 
@@ -41,7 +41,7 @@ The guided experience and progress dashboard walk you through the entire journey
 
 ### Diverse capabilities
 
-Take advantage of the free Azure Migrate tool with features like agentless data center discovery, Azure readiness analysis, cost estimation, app modernization, and app dependency visualization, or choose from a collection of integrated partner tools for additional capabilities.
+Take advantage of the free Azure Migrate tool with features like agentless data center discovery, Azure readiness analysis, cost estimation, app modernization, and app dependency visualization. You can also choose from a collection of integrated partner tools for additional capabilities.
 
 ### Reduced cost
 
@@ -54,7 +54,7 @@ Migrate efficiently with rapid lift-and-shift Infrastructure as a Service (IaaS)
 You can execute a complete migration with near-zero downtime:
 
 - Database-sensitive migration moves data, schema, and objects to Azure.
-- Easy-to-understand process helps you get the job done right the first time.
+- An easy-to-understand process helps you get the job done right the first time.
 - Highly resilient and self-healing migration service provides reliable outcomes with near-zero downtime.
 - Supports Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, and Oracle migration to Azure from on-premises and other clouds.
 
@@ -62,7 +62,7 @@ You can execute a complete migration with near-zero downtime:
 
 ## Azure App Service Migration Assistant
 
-Bring your web apps to the cloud with minimal or no code changes by using the [Azure App Service Migration Assistant](https://azure.microsoft.com/products/app-service/migration-tools), a free and simple tool to migrate .NET web applications from on-premises to the cloud automatically.
+Bring your web apps to the cloud with minimal or no code changes by using the [Azure App Service Migration Assistant](/azure/app-service/app-service-asp-net-migration#app-service-migration-tools-and-resources), a free and simple tool to migrate .NET web applications from on-premises to the cloud automatically.
 
 This tool can assess and migrate your on-premises .NET, Java, and Linux web apps to Azure. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service.
 
@@ -84,10 +84,10 @@ The tool's output contains a readiness heatmap tool that helps to identify the a
 
 :::image type="content" source="../media/smart-tool.png" alt-text="Diagram showing the SMART Assessment Tool.":::
 
-This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions you get a customized report that helps you plan and close gaps.
+This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions, you get a customized report that helps you plan and close gaps.
 
 ## Cloud economics
 
-Moving to the cloud is as much a business decision as a technical one. To support customers like Tailwind Traders, Microsoft has released the [Cloud economics](https://azure.microsoft.com/solutions/cloud-economics), where you can find technical and financial tips from Azure experts. These help you to understand your cloud investment with detailed financial analysis upfront.
+Moving to the cloud is as much a business decision as a technical one. To support customers like Tailwind Traders, Microsoft has released the [Cloud economics](https://origin.azureprod.microsoft.com/en-us/solutions/cloud-economics/), where you can find technical and financial tips from Azure experts. These help you to understand your cloud investment with detailed financial analysis upfront.
 
 Cloud economics can help get the most value for your cloud investment. These tips can help you understand how moving to the cloud shapes your company’s overall financial posture and KPIs, as well as new processes to ensure that budget and ROI control are met.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-secure-ai-ready-infrastructure.deploy-azure-cosmos-agent
+title: "Deploy Azure Cosmos DB for NoSQL as an agent conversation store"
+metadata:
+  title: "Deploy Azure Cosmos DB for NoSQL as an agent conversation store"
+  description: "Deploy Azure Cosmos DB for NoSQL as an agent conversation store."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-deploy-azure-cosmos-agent.md)]

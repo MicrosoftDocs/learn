@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.access-account-resources-using-aad
 title: Access account resources using Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Access account resources using Microsoft Entra ID
   description: "Access account resources using Microsoft Entra ID"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

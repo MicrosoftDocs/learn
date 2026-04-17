@@ -1,18 +1,47 @@
-You've learned how to:
+In this module, you learned how security architects specify security requirements across different cloud service models and workload types. You explored how responsibility shifts between Microsoft and customers depending on whether solutions use IaaS, PaaS, or SaaS deployment models.
 
-*   Specify security baselines for SaaS, PaaS, and IaaS services
-*   Specify security requirements for IoT workloads
-*   Specify security requirements for web workloads
-*   Specify security requirements for containers and container orchestration
+You learned how to:
 
-## Learn more with security documentation
+- Specify security baselines for SaaS, PaaS, and IaaS services
+- Specify security requirements for IoT workloads
+- Specify security requirements for web workloads
+- Specify security requirements for containers and container orchestration
+- Specify security requirements for AI workloads
+- Evaluate security for Microsoft Foundry workloads
 
+## Learn more
 
-- [Shared responsibility in the cloud - Microsoft Azure | Microsoft Learn](/azure/security/fundamentals/shared-responsibility)
-- [Security best practices for IaaS workloads in Azure | Microsoft Learn](/azure/security/fundamentals/iaas)
-- [Best practices for secure PaaS deployments - Microsoft Azure | Microsoft Learn](/azure/security/fundamentals/paas-deployments)
-- [Azure security baseline for App Service | Microsoft Learn](/security/benchmark/azure/baselines/app-service-security-baseline)
-- [Azure security baseline for Azure Kubernetes Service | Microsoft Learn](/security/benchmark/azure/baselines/aks-security-baseline)
+Use these resources to deepen your understanding of the topics covered in this module.
 
-> [!NOTE]
-> This module contains AI-generated content
+### Security baselines and shared responsibility
+
+- [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
+- [Security best practices for IaaS workloads in Azure](/azure/security/fundamentals/iaas)
+- [Best practices for secure PaaS deployments](/azure/security/fundamentals/paas-deployments)
+- [Microsoft Cloud Security Benchmark introduction](/security/benchmark/azure/introduction)
+
+### IoT workload security
+
+- [Azure IoT security best practices](/azure/iot/iot-security-best-practices)
+- [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/overview)
+- [Azure IoT Hub security baseline](/security/benchmark/azure/baselines/iot-hub-security-baseline)
+
+### Web workload security
+
+- [Azure security baseline for App Service](/security/benchmark/azure/baselines/app-service-security-baseline)
+- [Azure App Service security best practices](/azure/app-service/overview-security)
+- [Azure Web Application Firewall overview](/azure/web-application-firewall/overview)
+
+### Container and orchestration security
+
+- [Azure security baseline for Azure Kubernetes Service](/security/benchmark/azure/baselines/aks-security-baseline)
+- [AKS cluster security best practices](/azure/aks/operator-best-practices-cluster-security)
+- [Microsoft Defender for Containers](/azure/defender-for-cloud/defender-for-containers-introduction)
+
+### AI services security
+
+- [Azure security baseline for Azure OpenAI](/security/benchmark/azure/baselines/azure-openai-security-baseline)
+- [Microsoft Foundry security baseline](/security/benchmark/azure/baselines/azure-ai-foundry-security-baseline)
+- [Azure AI Content Safety](/azure/ai-services/content-safety/overview)
+- [Threat protection for AI workloads](/azure/defender-for-cloud/ai-threat-protection)
+- [AI shared responsibility model](/azure/security/fundamentals/shared-responsibility-ai)

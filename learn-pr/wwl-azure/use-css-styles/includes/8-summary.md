@@ -2,6 +2,6 @@ You had an HTML page with your resume and wanted to set various style options su
 
 In this module, you learned how to:
 
-- Use selectors to apply style to different elements
+- Use selectors to apply HTML and CSS styles to different elements
 - Set fonts and sizing for text
 - Modify page display including colors

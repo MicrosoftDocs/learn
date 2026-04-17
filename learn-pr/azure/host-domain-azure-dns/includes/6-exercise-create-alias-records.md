@@ -8,6 +8,8 @@ In this unit, you'll:
 - Learn how to configure an Azure alias at the zone apex to direct to the load balancer.
 - Verify that the domain name resolves to one or either of the VMs on your virtual network.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Set up a virtual network, load balancer, and VMs in Azure
 
 When you manually create a virtual network, load balancer, and two VMs, it takes some time. To reduce this time, you can use a Bash setup script that's available on GitHub. Follow these instructions to create a test environment for your alias record.
@@ -43,7 +45,7 @@ Now that you created a test environment, you're ready to set up the Azure alias 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**. The **Resource groups** pane appears.
 
-1. Select the resource group: <rgn>[sandbox resource group]</rgn>. The **Resource group** pane appears.
+1. Select your resource group. The **Resource group** pane appears.
 
 1. In the list of resources, select the DNS zone you created in the previous exercise, wideworldimportsXXXX.com. The **wideworldimportsXXXX.com DNS zone** pane appears.
 

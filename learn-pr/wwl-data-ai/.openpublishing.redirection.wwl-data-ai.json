@@ -26,15 +26,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/05-exercise-explore-databricks.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/06-exercise-explore-databricks"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/06-exercise-explore-databricks"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/06-knowledge-check.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/07-knowledge-check"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/07-knowledge-check"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/07-summary.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/08-summary"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/08-summary"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/add-basic-conversational-intelligence/1-introduce-language-understanding-intelligent-service.md",
@@ -1418,35 +1418,35 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/1-introduction.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/2-explain.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/3-create-workspace-cluster.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/4-understand-notebooks.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/5-exercise-work-notebooks.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/6-knowledge-check.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/7-summary.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/index.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/1-introduction.md",
@@ -2695,19 +2695,19 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/2-understand.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/3-provision-workspaces-clusters.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/4-work-notebooks.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/5-exercise.md",
@@ -2715,15 +2715,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
@@ -5020,6 +5020,155 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/8b-knowledge-check.yml",
       "redirect_url": "/training/modules/get-started-ai-fundamentals/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/3-create-agent-group-chat.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/3-understand-agent-orchestration"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/4-design-agent-selection-strategy.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/4-use-concurrent-orchestration"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/5-define-chat-termination-strategy.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/5-use-sequential-orchestration"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/6-exercise.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/10-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/11-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/8-summary.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/12-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/4-generate-smart-cropped-thumbnail.yml",
+      "redirect_url": "/azure/ai-services/computer-vision/overview-image-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/2-identify-options-for-face-detection-analysis-identification.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/4-detect-faces-computer-vision-service.yml",
+      "redirect_url": "/training/modules/analyze-images/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/5-understand-capabilities-of-face-service.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/2-understand-capabilities-of-face-service"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/6-compare-match-detected-faces.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/4-compare-match-detected-faces"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/7-implement-facial-recognition.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/4-compare-match-detected-faces"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/3-understand-considerations-for-face-analysis.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/5-understand-considerations-for-face-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/4-train-image-classifier.yml",
+      "redirect_url": "/training/modules/classify-images/4-use-trained-image-classifier"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/4-consider-options-for-labeling-images.yml",
+      "redirect_url": "/training/modules/detect-objects-images/4-use-trained-detector"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/evaluate-models-azure-ai-studio/4-evaluation-flows.yml",
+      "redirect_url": "/azure/ai-foundry/concepts/prompt-flow"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/4-exercise.yml",
+      "redirect_url": "/training/modules/connect-agent-to-mcp-tools/5-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/connect-agent-to-mcp-tools/6-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/connect-agent-to-mcp-tools/6-summary.yml",
+      "redirect_url": "/training/modules/connect-agent-to-mcp-tools/7-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/10-exercise.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/9-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/11-knowledge-check.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/12-summary.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/11-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/9-manage-orchestration-runtime-lifecycles.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/2-evaluate-prioritize-ai-investments.yml",
+      "redirect_url": "/training/modules/scale-ai/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/2a-apply-horizon-framework.yml",
+      "redirect_url": "/training/modules/scale-ai/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/scale-ai/3-establish-ai-related-roles-responsibilities.yml",
+      "redirect_url": "/training/modules/scale-ai/3-organize-ai-success"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/6-examine-azure-machine-learning-schema.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/7-exercise-explore-azure-ai-extension.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-generative-ai-azure-database-postgresql/9-summary.yml",
+      "redirect_url": "/training/modules/get-started-generative-ai-azure-database-postgresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/8-exercise.yml",
+      "redirect_url": "/training/modules/build-agent-workflows-microsoft-foundry/9-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/9-knowledge-check.yml",
+      "redirect_url": "/training/modules/build-agent-workflows-microsoft-foundry/10-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-agent-workflows-microsoft-foundry/10-summary.yml",
+      "redirect_url": "/training/modules/build-agent-workflows-microsoft-foundry/11-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/foundry-sdk/5-exercise.yml",
+      "redirect_url": "/training/modules/foundry-sdk/6-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/foundry-sdk/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/foundry-sdk/7-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/foundry-sdk/7-summary.yml",
+      "redirect_url": "/training/modules/foundry-sdk/8-summary"
     }
   ]
 }
+

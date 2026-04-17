@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ninja-security-copilot.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check."
+  ms.date: 08/21/2025
+  author: sachow
+  ms.author: sachow
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do Security Copilot Agents in Purview help security teams manage alerts?"
+    choices:
+    - content: "By deleting low-priority alerts automatically"
+      isCorrect: false
+    - content: "By disabling DLP policies during investigations"
+      isCorrect: false
+    - content: "By automating triage and prioritization based on organizational context and policy configurations"
+      isCorrect: true
+
+  - content: "What is a primary benefit of using Security Copilot in Activity Explorer?"
+    choices:
+    - content: "It encrypts all sensitive files automatically"
+      isCorrect: false
+    - content: "It uses AI to hunt for relevant data activities and provides prompt-based exploration for investigations"
+      isCorrect: true
+    - content: "It blocks all risky user actions"
+      isCorrect: false
+
+  - content: "How do Promptbooks and the Prompt Gallery in Security Copilot support compliance and governance?"
+    choices:
+    - content: "By automatically approving all data access requests"
+      isCorrect: false
+    - content: "By restricting admin access to sensitive data"
+      isCorrect: false
+    - content: "By providing traceable and auditable investigation processes and enabling administrators to launch targeted investigations efficiently"
+      isCorrect: true

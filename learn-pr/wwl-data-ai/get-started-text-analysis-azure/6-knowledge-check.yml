@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-text-analysis-in-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/10/2026
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "You need to analyze text where the same input must return structured results based on statistical techniques. Which approach is most appropriate?"
+    choices:
+    - content: "The OpenAI responses API, because it can follow natural language instructions."
+      isCorrect: false
+      explanation: "Incorrect. The OpenAI responses API generates text probabilistically, so results can vary between calls — which is unsuitable for pipelines that require consistent output."
+    - content: "The Azure Language SDK, because it returns deterministic, structured output."
+      isCorrect: true
+      explanation: "Correct. The Azure Language SDK uses purpose-built analyzers that return consistent, structured results for the same input, making it well-suited for automated pipelines."
+    - content: "The chat playground in Foundry, because it supports follow-up questions."
+      isCorrect: false
+      explanation: "Incorrect. The chat playground is an interactive exploration tool, not a programmatic solution for automated pipelines."
+  - content: "What is the purpose of the client object in the Azure Language SDK?"
+    choices:
+    - content: "It stores the application's user interface settings."
+      isCorrect: false
+      explanation: "Incorrect. The UI settings are unrelated to the client object."
+    - content: "It helps application code communicate with the Azure Language service."
+      isCorrect: true
+      explanation: "The client object is the tool your code uses to communicate with a service, holding the endpoint, credentials, and providing methods to interact with the service."
+    - content: "The client object stores the text that needs to be analyzed."
+      isCorrect: false
+      explanation: "Incorrect. The client object doesn't store the text; it's used to communicate with the Azure Language service."
+  - content: "What is the main purpose of the Azure Language MCP server?"
+    choices:
+    - content: "To automatically generate website layouts for an agent."
+      isCorrect: false
+      explanation: "Incorrect. The MCP server doesn't generate website layouts; it provides a way for agents to access external tools and services."
+    - content: "To replace all generative AI models inside an agent."
+      isCorrect: false
+      explanation: "Incorrect. The MCP server doesn't replace generative AI models; it provides a way for agents to access external tools and services."
+    - content: "To expose Azure Language capabilities to agents through the Model Context Protocol."
+      isCorrect: true
+      explanation: "Correct. The MCP server allows agents to access Azure Language capabilities in a structured way through the Model Context Protocol."
+ 

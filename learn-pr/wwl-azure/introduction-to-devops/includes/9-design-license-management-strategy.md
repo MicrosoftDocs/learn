@@ -10,11 +10,11 @@ Probably, you want to pay for parallel jobs and make your builds run in parallel
 
 **To consider:**
 
- -  What phase are you in?
- -  How many people are using the feature?
- -  How long are you willing to wait if in the queue for pipelines? Is this urgent? Is this a validation only?
- -  Should all users access all features? Are they Stakeholders? Basic users? Do they already have a Visual Studio license?
- -  Do you have an advanced Package Management strategy? Maybe you need more space for Artifacts.
+- What phase are you in?
+- How many people are using the feature?
+- How long are you willing to wait if in the queue for pipelines? Is this urgent? Is this a validation only?
+- Should all users access all features? Are they Stakeholders? Basic users? Do they already have a Visual Studio license?
+- Do you have an advanced Package Management strategy? Maybe you need more space for Artifacts.
 
 For the latest, most up-to-date Azure DevOps pricing information, visit [Azure DevOps Pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 

@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-microsoft-deployment-toolkit.manage-deploy-images
 title: Manage and deploy images using the Microsoft Deployment Toolkit
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage and deploy images using the Microsoft Deployment Toolkit
   description: "Manage and deploy images using the Microsoft Deployment Toolkit"
   ms.date: 04/03/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-manage-deploy-images.md)]
+  [!include[](includes/4-manage-deploy-images.md)]

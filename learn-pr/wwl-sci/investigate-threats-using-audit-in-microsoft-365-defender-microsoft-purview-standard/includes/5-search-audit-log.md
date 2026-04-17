@@ -35,7 +35,7 @@ Microsoft 365 supports an audit log so that organizations can search it for acti
 | Stream                                  | MicrosoftStream                                                                                                      |
 | Threat Intelligence                     | ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent                                |
 | Workplace Analytics                     | WorkplaceAnalytics                                                                                                   |
-| Yammer                                  | Yammer                                                                                                               |
+| Viva Engage                                  | Viva Engage                                                                                                               |
 | SystemSync                              | DataShareCreated, DataShareDeleted, GenerateCopyOfLakeData, DownloadCopyOfLakeData                                   |
 
 The previous table identifies the record type value to use to search the audit log for activities in the corresponding service. Searches can be conducted using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For a more complete list of auditing record types, see [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype?azure-portal=true).

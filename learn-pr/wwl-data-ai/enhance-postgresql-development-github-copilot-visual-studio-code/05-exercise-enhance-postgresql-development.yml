@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enhance-postgresql-development-github-copilot-visual-studio-code.exercise-enhance-postgresql-development-github-copilot
+title: Exercise - Enhance PostgreSQL development with GitHub Copilot
+metadata:
+  title: Exercise - Enhance PostgreSQL development with GitHub Copilot
+  description: Use the PostgreSQL extension and GitHub Copilot to generate, explain, and fix SQL queries in Visual Studio Code.
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 12/08/2025
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/05-exercise-enhance-postgresql-development.md)]

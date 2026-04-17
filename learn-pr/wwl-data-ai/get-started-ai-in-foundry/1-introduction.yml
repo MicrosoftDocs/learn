@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-in-foundry.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit provides an overview of Microsoft Foundry, its capabilities, and its role in building AI solutions. Learn about the key components and services that make up the platform."
+  ms.date: 12/8/2025
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

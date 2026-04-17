@@ -4,7 +4,7 @@ In this exercise, you'll modify the console output from the previous exercise to
 
 In this task, you'll update your code to apply the finishing touches to the reported output. You'll start by adding a header row that includes the column labels specified by the teacher. After that, you'll use character escape sequences to add extra padding between the columns of information.
 
-1. In the .NET Editor, locate the Console.WriteLine() statements that are used to display each student's current class score and letter grade.
+1. In the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true), locate the Console.WriteLine() statements that are used to display each student's current class score and letter grade.
 
 1. Create a blank code line above the `Console.WriteLine()` statements.
 
@@ -28,7 +28,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 
     The `\t` escape sequence will insert a tab stop between the text items. Adding the tab stops should result in left-aligned columns of information.
 
-1. To view the results of your updates, select **Run**.
+1. To view the results of your updates, select the ▶️ Run button.
 
 1. Compare the output of your application with the following output:
 
@@ -105,17 +105,17 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine("Jeong:\t\t" + jeongScore + "\tA");
     ```
 
-1. To run your code and display the formatted output, select **Run**.
+1. To run your code and display the formatted output, select the ▶️ Run button.
 
 1. To verify that your code is working as expected, compare the output of your application with the following output:
 
     ```Output
-    Student         Grade
+    Student     Grade
 
-    Sophia:         94.6    A
-    Nicolas:        83.6    B
-    Zahirah:        83.4    B
-    Jeong:          95.4    A
+    Sophia:     94.6    A
+    Nicolas:    83.6    B
+    Zahirah:    83.4    B
+    Jeong:      95.4    A
     ```
 
     If your code displays different results, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.

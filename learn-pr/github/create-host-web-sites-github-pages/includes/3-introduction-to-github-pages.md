@@ -14,11 +14,9 @@ When you finish the exercise in GitHub, return here for:
 > - A quick knowledge check. 
 > - A summary of what you've learned.
 > - To earn a badge for completing this module.
-
->[!Note] 
+>[!Note]
 > You do not need to modify any of the workflow files to complete this exercise.
 > **Altering the contents in this workflow can break the exercise's**
 > **ability to validate your actions, provide feedback, or grade the results**.
-
 > [!div class="nextstepaction"]
 > [Start the exercise on GitHub](https://github.com/skills/github-pages?azure-portal=true)

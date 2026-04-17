@@ -233,7 +233,7 @@ In this task, you convert the existing `if-elseif-else` construct to a `switch-c
     ```output
     Determining projects to restore...
     All projects are up-to-date for restore.
-    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net6.0\Starter.dll
+    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net10.0\Starter.dll
 
     Build succeeded.
         0 Warning(s)

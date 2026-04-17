@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databricks.understand-key-concepts
+title: Understand key concepts
+metadata:
+  title: Understand Key Concepts
+  description: "Understand key concepts"
+  ms.date: 01/19/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/04-key-concepts.md)]

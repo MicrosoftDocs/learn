@@ -1,4 +1,4 @@
-Azure Monitor stores [log](/azure/azure-monitor/logs/data-platform-logs) data in an Azure Monitor Logs (Log Analytics) workspace. A workspace is an Azure resource that serves as an administrative boundary or geographic location for data storage. The workspace is also a container where you collect and aggregate data.
+Azure Monitor stores log data in an Azure Monitor Logs (Log Analytics) workspace. A workspace is an Azure resource that serves as an administrative boundary or geographic location for data storage. The workspace is also a container where you collect and aggregate data.
 
 While you can deploy one or more workspaces in your Azure subscription, you should ensure your initial deployment follows Microsoft guidelines. The workspace should provide a cost effective, manageable, and scalable deployment that meets your organization's needs.
 
@@ -10,11 +10,11 @@ Review these characteristics of Azure Monitor Logs workspaces and consider how t
 
 - Data in an Azure Monitor Logs workspace is organized into tables. Each table stores different kinds of data and has its own unique set of properties based on the resource that's generating the data. Most data sources write to their own tables in an Azure Monitor Logs workspace.
 
-- A workspace enables you to configure settings like [pricing tier](/azure/azure-monitor/logs/manage-cost-storage), [retention](/azure/azure-monitor/logs/manage-cost-storage#log-data-retention-and-archive), and [data capping](/azure/azure-monitor/logs/daily-cap) based on administrative boundaries or geographic locations.
+- You can set billing and retention for each workspace. Choose commitment tiers for a fixed daily rate or pay-as-you-go with an optional daily cap. Keep data for 30 to 730 days and archive older logs to save on storage costs. For details, read [Manage costs in Azure Monitor Logs](/azure/azure-monitor/logs/cost-logs).
 
 - With Azure role-based access control (Azure RBAC), you can grant users and groups only the amount of access they need to work with monitoring data in a workspace. You can align the user access control with your IT organization operating model by using a single workspace to store collected data enabled on all resources.
 
-- Workspaces are hosted on physical clusters. By default, the system creates and manages these clusters. If your system ingests more than 500 GB of data per day, you create your own dedicated clusters for your workspaces to support greater control and higher ingestion rate.
+- Workspaces are hosted on physical clusters. By default, the system creates and manages these clusters. Dedicated clusters are available for workspaces with specific requirements, such as customer-managed key (CMK) encryption, Customer Lockbox, or sustained very high ingestion volumes. 
 
 ### Things to consider when using Azure Monitor Logs workspaces
 
@@ -50,10 +50,4 @@ As you consider your options for implementing Azure Monitor Logs workspaces and 
 
 :::image type="content" source="../media/workspace-design-expanded.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
 
-The workspace doesn't require data sovereignty or regulatory compliance. The workspace doesn't need to map to the regions where your resources are deployed. Your organization's security and IT admin teams can take advantage of the improved integration with Azure access management and more secure access control.
-
-All resources, monitoring solutions, and insights like Application Insights and virtual machine insights are configured to forward their collected log data to the IT organization's centralized shared workspace. Log data from the supporting infrastructure and apps maintained by different teams is also sent to the centralized shared workspace. 
-
-Users on each team are granted access to logs for resources for which they have  access.
-
-After you deploy your workspace architecture, you can enforce this same model on Azure resources with [Azure Policy](/azure/governance/policy/overview). You can define policies and ensure compliance with your Azure resources, so they send all their resource logs to a particular workspace. By using Azure Virtual Machines or Virtual Machine Scale Sets, you can use existing policies that evaluate workspace compliance and report results, or customize to remediate if noncompliant.
+All resources, monitoring solutions, and insights — including workspace-based Application Insights and VM Insights — store their collected data directly in the IT organization's centralized Log Analytics workspace. Log data from supporting infrastructure and apps maintained by different teams is also directed to the centralized workspace.
