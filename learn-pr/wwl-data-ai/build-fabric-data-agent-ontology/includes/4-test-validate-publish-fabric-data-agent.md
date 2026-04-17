@@ -12,7 +12,7 @@ The agent displays its answer in the chat pane. Every response includes a **step
 
 ## Examine the steps and generated GQL
 
-The steps dropdown is the transparency layer that separates reliable agents from black boxes. When you expand it, you see three critical pieces of information:
+When you expand the steps dropdown, you see three pieces of information:
 
 - **Entity types and relationships** the agent identified in your question
 - **The GQL query** the agent generated to retrieve data from the ontology
@@ -20,7 +20,7 @@ The steps dropdown is the transparency layer that separates reliable agents from
 
 :::image type="content" source="../media/data-agent-steps.png" alt-text="Screenshot of the steps dropdown expanded in the data agent chat pane, showing the generated GQL query and reasoning steps.":::
 
-This visibility lets you verify the agent's interpretation before trusting its results. For a question like "How many rooms in the Surgical Services department are currently occupied?", the steps reveal whether the agent correctly identified the Room entity, filtered by the Surgical Services department, and counted only occupied rooms. When the steps look wrong, you know exactly where to refine.
+For a question like "How many rooms in the Surgical Services department are currently occupied?", the steps show whether the agent correctly identified the Room entity, filtered by the Surgical Services department, and counted only occupied rooms. When the steps look wrong, you know exactly where to refine.
 
 If the steps show the agent used the wrong entity types or traversed relationships incorrectly, there's likely a gap in the instructions. Fabric data agents show their work, making it straightforward to identify and correct gaps in the agent's reasoning.
 
