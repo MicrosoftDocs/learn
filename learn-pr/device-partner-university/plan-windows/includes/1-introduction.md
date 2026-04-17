@@ -6,7 +6,7 @@ In this module, you’ll evaluate your organization’s readiness to deploy Wind
 
 By the end of this module, you’ll have a clear picture of your organization’s Windows 11 readiness and a documented plan that prepares you for the next phase: preparing your environment for deployment.
 
-# Disclaimers
+## Disclaimers
 
 1. Microsoft App Assure program data from October 2018 to February 2022.
 2. [New Technology: The Projected Total Economic Impact™ of Windows 11 Cost Savings and Business Benefits Enabled by Windows 11](https://aka.ms/Windows11EconomicValue). A Microsoft commissioned study conducted by Forrester Consulting. July 2022. *Quantified benefits reflect results over three years combined into a single composite organization that generates USD1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle and migrates the entirety of its workforce to Windows 11 devices.*
