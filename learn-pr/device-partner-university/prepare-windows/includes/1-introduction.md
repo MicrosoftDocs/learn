@@ -17,5 +17,5 @@ By the end of this module, you’ll be able to:
 
 ## Disclaimers
 
-1. [New Technology: The Projected Total Economic Impact™ of Windows 11 Cost Savings and Business Benefits Enabled by Windows 11. A Microsoft commissioned study conducted by Forrester Consulting. July 2022.](https://aka.ms/Windows11EconomicValue) Quantified benefits reflect results over three years combined into a single composite organization that generates USD1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle and migrates the entirety of its workforce to Windows 11 devices.
+1. [New Technology: The Projected Total Economic Impact™ of Windows 11 Cost Savings and Business Benefits Enabled by Windows 11. A Microsoft commissioned study conducted by Forrester Consulting. July 2022.](https://aka.ms/Windows11EconomicValue) *Quantified benefits reflect results over three years combined into a single composite organization that generates USD1 billion in annual revenue, has 2,000 employees, refreshes hardware on a four-year cycle and migrates the entirety of its workforce to Windows 11 devices.*
 2. Microsoft App Assure program data from October 2018 to February 2022.

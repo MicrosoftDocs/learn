@@ -20,7 +20,7 @@ At a high level, to get started with Windows update readiness reports, you’ll 
 
 1. Access the [Microsoft Intune portal](https://intune.microsoft.com/).
 2. Enable use of Windows diagnostic data by Intune.
-3. Confirm ownership of Windows licenses on Windows data page. *Note that a Global Administrator or Intune Administrator role is required.*
+3. Confirm ownership of Windows licenses on Windows data page. *Global Administrator or Intune Administrator role is required.*
 4. Configure devices.
 
 > [!NOTE]
@@ -35,7 +35,7 @@ Run the following reports:
 2. In the admin center, go to **Reports > Windows updates >** select the **Reports** tab > select **Windows Feature Update Compatibility Risks Report** or **Windows Feature Update Device Readiness Report**.
 3. Configure settings:
    - Select **Select Target OS** and choose the version of Windows you plan to deploy.
-   - Select other optionally settings to refine the report.
+   - Select other optional settings to refine the report.
    - Select **Generate report**. This process can take several minutes. You're notified when report generation is complete.
 
 Understand the compatibility risks of all assets from asset detail, number of enrolled devices that might be impacted, severity level, and the description of the issue. Note any medium-to-high risk issues, since those might block the upgrade. When available, use the **Guidance** section to mitigate the compatibility risk.

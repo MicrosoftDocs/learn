@@ -58,6 +58,7 @@ units:
   - learn.dpu.prepare-windows.configurations
   - learn.dpu.prepare-windows.devices
   - learn.dpu.prepare-windows.users
+  - learn.dpu.prepare-windows.knowledge-check
   - learn.dpu.prepare-windows.summary
 
 badge: 

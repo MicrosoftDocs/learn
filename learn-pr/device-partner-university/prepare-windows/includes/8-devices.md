@@ -17,7 +17,7 @@ At a high level, to get started with Windows update readiness reports, you’ll 
 
 1. Access the [Microsoft Intune portal](https://intune.microsoft.com/).
 2. Enable use of Windows diagnostic data by Intune.
-3. Confirm ownership of Windows licenses on Windows data page. Note: Global Administrator or Intune Administrator role is required.
+3. Confirm ownership of Windows licenses on Windows data page. *Global Administrator or Intune Administrator role is required.*
 4. Configure devices.
 
 > [!NOTE]
