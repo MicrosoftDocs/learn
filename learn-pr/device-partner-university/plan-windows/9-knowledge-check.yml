@@ -26,13 +26,13 @@ quiz:
 
   questions:
 
-  - content: "What is the primary goal of the planning phase when performing a Windows deployment?"
+  - content: "What is the primary goal of the Plan phase when performing a Windows deployment?"
 
     choices:
 
     - content: "To evaluate readiness and identify gaps across the environment"
       isCorrect: true
-      explanation: "Correct. The planning phase focuses on assessing readiness and identifying gaps across key areas before deployment."
+      explanation: "Correct. The Plan phase focuses on assessing readiness and identifying gaps across key areas before deployment."
 
     - content: "To immediately deploy updates to all devices"
       isCorrect: false
@@ -44,9 +44,9 @@ quiz:
 
     - content: "To monitor update compliance on deployed devices"
       isCorrect: false
-      explanation: "Incorrect. Monitoring isn't part of the initial planning phase."
+      explanation: "Incorrect. Monitoring isn't part of the initial Plan phase."
 
-  - content: "Which areas should be assessed during the planning phase of a Windows deployment?"
+  - content: "Which areas should be assessed during the Plan phase of a Windows deployment?"
 
     choices:
 
@@ -76,7 +76,7 @@ quiz:
 
     - content: "To eliminate the need for stakeholder collaboration"
       isCorrect: false
-      explanation: "Incorrect. Collaboration is encouraged throughout the planning process."
+      explanation: "Incorrect. Collaboration is encouraged throughout the Windows deployment."
 
     - content: "To skip testing and validation phases"
       isCorrect: false
@@ -86,22 +86,22 @@ quiz:
       isCorrect: true
       explanation: "Correct. Identifying gaps early helps define success criteria and address risks proactively."
 
-  - content: "How should planning deliverables be used throughout the deployment?"
+  - content: "How should deliverables be used throughout the deployment?"
 
     choices:
 
     - content: "They're created once and not updated"
       isCorrect: false
-      explanation: "Incorrect. Planning deliverables should evolve over time."
+      explanation: "Incorrect. Deliverables should evolve over time."
 
     - content: "They should be shared and collaboratively updated throughout the deployment lifecycle"
       isCorrect: true
-      explanation: "Correct. Planning deliverables are living documents that support collaboration and ongoing decision-making."
+      explanation: "Correct. Deliverables are living documents that support collaboration and ongoing decision-making."
 
     - content: "They should only be reviewed after deployment is complete"
       isCorrect: false
-      explanation: "Incorrect. Deliverables should be reviewed and updated throughout the deployment."
+      explanation: "Incorrect. Deliverables should be reviewed and updated throughout Windows deployment."
 
     - content: "They replace the need for operational documentation"
       isCorrect: false
-      explanation: "Incorrect. Planning deliverables complement, but don't replace, operational documentation."
+      explanation: "Incorrect. Deliverables complement, but don't replace, operational documentation."
