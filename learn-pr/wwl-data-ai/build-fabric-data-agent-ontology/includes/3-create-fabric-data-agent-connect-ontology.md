@@ -32,9 +32,9 @@ To configure instructions, select **Agent instructions** from the ribbon. The in
 
 Effective instructions typically include four components:
 
-1. **Domain description** — Explain what the ontology models and its purpose. Example: "This ontology models hospital operations at Lamna Healthcare, including facilities, departments, rooms, patients, and vital sign monitoring equipment."
-1. **Terminology mappings** — Map common business terms to ontology concepts. Example: "ICU refers to the Intensive Care Unit department. Critical Care rooms are ICU patient rooms."
-1. **Scope guidance** — Define what the agent should and shouldn't answer. Example: "Answer questions about patient room assignments, department occupancy, and vital sign equipment allocation. Do not answer questions about billing, insurance, or staffing."
+- **Domain description** — Explain what the ontology models and its purpose. Example: "This ontology models hospital operations at Lamna Healthcare, including facilities, departments, rooms, patients, and vital sign monitoring equipment."
+- **Terminology mappings** — Map common business terms to ontology concepts. Example: "ICU refers to the Intensive Care Unit department. Critical Care rooms are ICU patient rooms."
+- **Scope guidance** — Define what the agent should and shouldn't answer. Example: "Answer questions about patient room assignments, department occupancy, and vital sign equipment allocation. Do not answer questions about billing, insurance, or staffing."
 
 Instructions apply automatically as you type — there's no save button. Changes take effect immediately for subsequent queries.
 
