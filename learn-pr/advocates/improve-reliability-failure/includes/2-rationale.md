@@ -20,8 +20,7 @@ units.
 
 ## Complex systems fail
 
-You must "learn to learn" from failure not in case your systems fail, but
-because it's a certainty that your systems _fail.
+You must "learn to learn" from failure not in case your systems fail, but because it's a certainty that your systems fail.
 
 In the modern world, most systems we work with today, especially in a cloud environment, are complex. They're composed of many
 interconnecting parts that have to work together, and the overall system behavior comes from the interaction of those parts as much as from
@@ -94,8 +93,7 @@ and can drastically change what and how much we learn. This finding comes
 from research in safety-critical industries such as aviation,
 medicine, search and rescue, firefighting, and more.
 
-Collectively, this field of research has become known as _Resilience
-Engineering_ (RE).
+Collectively, this field of research has become known as _Resilience Engineering_ (RE).
 
 We have a lot to learn about Resilience Engineering in the tech sector.
 Later in this module, we share some useful stuff we've

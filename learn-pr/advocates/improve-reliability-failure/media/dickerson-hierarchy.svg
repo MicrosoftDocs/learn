@@ -2,25 +2,27 @@
   <title id="svgTitle">Dickerson Hierarchy of Reliability</title>
   <desc id="svgDesc">Pyramid diagram with seven tiers. From base to apex: Monitoring, Incident Response, Post-incident Review, Testing and Release, Capacity Planning, Development, Product. The Post-incident Review tier is highlighted as the focus of this module.</desc>
 
+  <rect width="800" height="560" fill="#ffffff"/>
+
   <!-- Monitoring (base) -->
   <polygon points="0,520 600,520 557.143,451.429 42.857,451.429" fill="#0B3D5C"/>
   <text x="300" y="491" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="600">Monitoring</text>
 
   <!-- Incident Response -->
   <polygon points="42.857,451.429 557.143,451.429 514.286,382.857 85.714,382.857" fill="#155A80"/>
-  <text x="300" y="422" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">Incident Response</text>
+  <text x="300" y="422" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">Incident response</text>
 
   <!-- Post-incident Review (highlighted focus tier) -->
   <polygon points="85.714,382.857 514.286,382.857 471.429,314.286 128.571,314.286" fill="#C54B0A" stroke="#ffffff" stroke-width="2"/>
-  <text x="300" y="353" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Post-incident Review</text>
+  <text x="300" y="353" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Post-incident review</text>
 
   <!-- Testing + Release -->
   <polygon points="128.571,314.286 471.429,314.286 428.571,245.714 171.429,245.714" fill="#2A7EA8"/>
-  <text x="300" y="285" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="600">Testing + Release</text>
+  <text x="300" y="285" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="600">Testing + release</text>
 
   <!-- Capacity Planning -->
   <polygon points="171.429,245.714 428.571,245.714 385.714,177.143 214.286,177.143" fill="#4BA3C7"/>
-  <text x="300" y="216" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="600">Capacity Planning</text>
+  <text x="300" y="216" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="600">Capacity planning</text>
 
   <!-- Development -->
   <polygon points="214.286,177.143 385.714,177.143 342.857,108.571 257.143,108.571" fill="#7FC3DC"/>
