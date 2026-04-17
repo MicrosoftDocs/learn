@@ -4,12 +4,12 @@ title: "Helpful practices for learning from failure"
 metadata:
   title: "Helpful practices for learning from failure"
   description: "Helpful practices for learning from failure"
-  ms.date: 04/19/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
+  ms.contributors: orthomas-20260417
 durationInMinutes: 6
 content: |
   [!include[](includes/7-practices.md)]
@@ -17,27 +17,27 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which is a helpful practice for running a post-incident review meeting?'
+  - content: "Which is a helpful practice for running a post-incident review meeting?"
     choices:
-    - content: 'It should be run by a facilitator who was not involved in the incident.'
+    - content: "It should be run by a facilitator who wasn't involved in the incident."
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'It should last between two and four hours.'
+      explanation: "Correct."
+    - content: "It should last between two and four hours."
       isCorrect: false
-      explanation: '90 minutes is a good maximum based on our ability to concentrate and participate fully.' 
-    - content: 'It should be required for every incident to which the team responds.'
+      explanation: "90 minutes is a good maximum based on our ability to concentrate and participate fully." 
+    - content: "It should be required for every incident to which the team responds."
       isCorrect: false
-      explanation: 'Post-incident reviews are important for every significant incident.'
+      explanation: "Post-incident reviews are important for every significant incident."
  
-  - content: 'Which question could you ask that might lead to people skipping over valuable information in a post-incident review?'
+  - content: "Which question could you ask that might lead to people skipping over valuable information in a post-incident review?"
     choices:
-    - content: 'Why did the system break?'
+    - content: "Why did the system break?"
       isCorrect: true
-      explanation: 'Correct, questions like this can lead people to jump directly to a problem cause.'
-    - content: 'How did you notice the system was broken?'
+      explanation: "Correct, questions like this can lead people to jump directly to a problem cause."
+    - content: "How did you notice the system was broken?"
       isCorrect: false
-      explanation: 'This is a fine question to ask that can lead to further in-depth exploration.'
-    - content: 'What was the first thing you checked when you noticed the system was broken?'
+      explanation: "This is a fine question to ask that can lead to further in-depth exploration."
+    - content: "What was the first thing you checked when you noticed the system was broken?"
       isCorrect: false
-      explanation: 'This is a fine question to ask that can lead to further in-depth exploration.'
+      explanation: "This is a fine question to ask that can lead to further in-depth exploration."
       
