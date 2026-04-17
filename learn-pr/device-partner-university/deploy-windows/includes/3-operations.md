@@ -2,7 +2,7 @@ In the Plan and Prepare phases you completed the tasks necessary to get your ope
 
 | Tasks | Deliverables |
 |------|--------------|
-| – Implement RACI roles.<br>– [Optional] Review results of Proof of Concept.<br>– Conduct pilot deployment.<br>– Conduct broad deployment.<br>– Sign off and update procedural documentation. | • Updated stakeholder approval tracking system<br>• Completed pilot deployment and test results<br>• Documented stakeholder approvals to advance through deployment rings<br>• Procedural documentation of operations completeness |
+| - Implement RACI roles.<br>- [Optional] Review results of Proof of Concept.<br>- Conduct pilot deployment.<br>- Conduct broad deployment.<br>- Sign off and update procedural documentation. | • Updated stakeholder approval tracking system<br>• Completed pilot deployment and test results<br>• Documented stakeholder approvals to advance through deployment rings<br>• Procedural documentation of operations completeness |
 
 ## Implement RACI roles
 
@@ -146,4 +146,4 @@ Document your operational decisions and any remaining to-do items as you deploy 
 
 | Tasks | Deliverables |
 |------|--------------|
-| – Implement RACI roles.<br>– [Optional] Review results of Proof of Concept.<br>– Conduct pilot deployment.<br>– Conduct broad deployment.<br>– Sign off and update procedural documentation. | • Updated stakeholder approval tracking system<br>• Completed pilot deployment and test results<br>• Documented stakeholder approvals to advance through deployment rings<br>• Procedural documentation of operations completeness |
+| - Implement RACI roles.<br>- [Optional] Review results of Proof of Concept.<br>- Conduct pilot deployment.<br>- Conduct broad deployment.<br>- Sign off and update procedural documentation. | • Updated stakeholder approval tracking system<br>• Completed pilot deployment and test results<br>• Documented stakeholder approvals to advance through deployment rings<br>• Procedural documentation of operations completeness |

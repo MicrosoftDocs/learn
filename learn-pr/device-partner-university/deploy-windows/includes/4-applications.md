@@ -69,7 +69,7 @@ Use the information collected during testing to remediate applications wherever 
 
 2. Remediate based on the application scenario.
 
-   After identifying the blocking application, select the appropriate remediation action based on the application state and vendor support. The remediation actions available to you're to:
+   After identifying the blocking application, select the appropriate remediation action based on the application state and vendor support. The remediation actions available to you are:
 
    **Option A: Update the application (preferred):** If the application vendor provides a version supported on Windows 11, update the application to that version before retrying the upgrade.
   
@@ -88,7 +88,7 @@ Use the information collected during testing to remediate applications wherever 
 
    This is common with older antivirus, encryption, VPN, or device driver–dependent software, which frequently causes upgrade blocks.
 
-   **Option D: Seek alternatives to running the application locally.** Some options include Software-as-a-service (SaaS) offerings from the vendor or running the application in Windows 365, Azure Virtual Desktop, or on a Remote Desktop Session Host (RDSH).
+   **Option D: Seek alternatives to running the application locally:** Some options include Software-as-a-service (SaaS) offerings from the vendor or running the application in Windows 365, Azure Virtual Desktop, or on a Remote Desktop Session Host (RDSH).
 
 > [!TIP]
 >

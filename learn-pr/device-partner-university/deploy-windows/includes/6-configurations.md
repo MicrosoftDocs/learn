@@ -32,15 +32,10 @@ If you’re using Windows Autopatch, review the [Windows Autopatch management st
 In addition to baseline application status, monitor user experience and device behavior. For example:
 
 - Are users able to access the resources they need?
-
 - Are users prevented from accessing resources they should be blocked from?
-
 - Does the desktop experience provide the right environment for the user (“look and feel”)?
-
 - Are applications working correctly?
-
 - Are Windows quality updates being installed as expected?
-
 - Are devices reporting in as expected?
 
 As the deployment expands to more devices, other configuration-related issues might emerge. As such, you should revisit this task regularly throughout the deployment process.

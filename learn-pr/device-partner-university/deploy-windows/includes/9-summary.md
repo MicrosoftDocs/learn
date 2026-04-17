@@ -10,9 +10,30 @@ With this knowledge, you're ready to execute your deployment confidently. Use th
 
 | Objective | Tasks | Deliverables |
 |----------|------|--------------|
-| **Ops: Deploy Windows 11 across your organization.** | **Assess deployment success and capture learnings:**<br><br>- Implement RACI roles.<br>- [Optional] Review results of Proof of Concept.<br>- Commence Pilot deployment.<br>- Commence broad deployment.<br>- Sign off and update procedural documentation. | • Updated stakeholder approval tracking system<br>• Completed Pilot deployment and test results<br>• Documented stakeholder approvals to advance through deployment rings<br>• Procedural documentation of operations completeness |
-| **Apps: Ensure app functionality post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Deploy and test critical and important applications.<br>- Deploy and test other applications.<br>- Remediate applications.<br>- Review application handling criteria.<br>- Sign off and update procedural documentation. | • List of pass/fail test results and remediation steps identified<br>• Record of all remediated apps<br>• Record of apps that can't be remediated<br>• Documented go/no-go decisions for each deployment phase |
-| **Infra: Ensure infrastructure functionality during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Monitor infrastructure.<br>- Remediate infrastructure and tooling.<br>- Sign off and update procedural documentation. | • Procedural documentation of observations and remediations |
-| **Config: Ensure that settings are functioning appropriately during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Apply configurations.<br>- Monitor configurations.<br>- Remediate configurations.<br>- Sign off and update procedural documentation. | • Configurations completed and in place<br>• Procedural documentation of testing, remediation, and results |
-| **Devices: Ensure that devices function appropriately during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Monitor update deployment status.<br>- Sign off and update procedural documentation. | • Procedural documentation of testing, remediation, and results |
-| **Users: Ensure that users are productive and supported during and post-deployment.** | **Assess deployment success and capture learnings:**<br><br>- Monitor update deployment status.<br>- Sign off and update procedural documentation. | • Procedural documentation of testing, remediation, and results |
+| **Ops: Deploy Windows 11 across your organization.** | Assess deployment success and capture learnings: | |
+| |- Implement RACI roles. |  • Updated stakeholder approval tracking system
+| | - [Optional] Review results of Proof of Concept. | • Completed Pilot deployment and test results
+| | - Commence Pilot deployment. | • Documented stakeholder approvals to advance through deployment rings
+| | - Commence broad deployment. |  • Procedural documentation of operations completeness 
+| | - Sign off and update procedural documentation. |
+| **Apps: Ensure app functionality post-deployment.** | Assess deployment success and capture learnings: | |
+| | - Deploy and test critical and important applications. | • List of pass/fail test results and remediation steps identified
+| | - Deploy and test other applications. | • Record of all remediated apps
+| | - Remediate applications. | • Record of apps that can't be remediated
+| | - Review application handling criteria. | • Documented go/no-go decisions for each deployment phase 
+| | - Sign off and update procedural documentation|
+| **Infra: Ensure infrastructure functionality during and post-deployment.** | Assess deployment success and capture learnings: | |
+| | - Monitor infrastructure. | • Procedural documentation of observations and remediations
+| | - Remediate infrastructure and tooling.
+| | - Sign off and update procedural documentation. | 
+| **Config: Ensure that settings are functioning appropriately during and post-deployment.** | Assess deployment success and capture learnings: | |
+| | - Apply configurations. | • Configurations completed and in place
+| | - Monitor configurations. | • Procedural documentation of testing, remediation, and results
+| | - Remediate configurations.
+| | - Sign off and update procedural documentation. |
+| **Devices: Ensure that devices function appropriately during and post-deployment.** | Assess deployment success and capture learnings: | |
+| | - Monitor update deployment status. | • Procedural documentation of testing, remediation, and results
+| | - Sign off and update procedural documentation. 
+| **Users: Ensure that users are productive and supported during and post-deployment.** | Assess deployment success and capture learnings: | |
+| | - Monitor update deployment status.| • Procedural documentation of testing, remediation, and results
+| |- Sign off and update procedural documentation.|

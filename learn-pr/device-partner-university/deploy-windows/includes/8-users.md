@@ -4,7 +4,7 @@
 
 ## Implement user communication plan
 
-In the Prepare phase you created a communications schedule and a set of draft emails that you'll now use to inform your users of the upcoming changes that they can expect to see as they're migrated to Windows 11, and how they can reach out for help if necessary.  
+In the Prepare phase, you created a communications schedule and a set of draft emails that you'll now use to inform your users of the upcoming changes that they can expect to see as they're migrated to Windows 11, and how they can reach out for help if necessary.  
 
 Now is the time to send those communications and ensure that your users are informed and prepared.
 
@@ -35,13 +35,13 @@ You might also consider reviewing key identity and device controls, such as:
 
 **Device/platform security controls:**
 
-- [Local Security Authority (LSA) Protection](/windows/security/book/identity-protection-advanced-credential-protection#local-security-authority-lsa-protection) - protects credentials in memory
-- [Windows Defender Credential Guard](/windows/security/book/identity-protection-advanced-credential-protection#credential-guard) - hardware-isolated credential protection
-- [Remote Credential Guard](/windows/security/book/identity-protection-advanced-credential-protection#remote-credential-guard) - protects credentials during remote desktop sessions
-- [Trusted Platform Module (TPM) 2.0](/windows/security/hardware-security/tpm/trusted-platform-module-overview) - hardware root of trust
-- [Secure Boot](/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process) - ensures only trusted OS loads
-- [Virtualization-Based Security (VBS)](/windows/security/identity-protection/virtualization-based-security) - isolates sensitive parts of the OS
-- [Memory Integrity (HVCI)](/windows/security/identity-protection/memory-integrity) - protects kernel memory from tampering
+- [Local Security Authority (LSA) Protection:](/windows/security/book/identity-protection-advanced-credential-protection#local-security-authority-lsa-protection) protects credentials in memory
+- [Windows Defender Credential Guard:](/windows/security/book/identity-protection-advanced-credential-protection#credential-guard) hardware-isolated credential protection
+- [Remote Credential Guard:](/windows/security/book/identity-protection-advanced-credential-protection#remote-credential-guard) protects credentials during remote desktop sessions
+- [Trusted Platform Module (TPM) 2.0:](/windows/security/hardware-security/tpm/trusted-platform-module-overview) hardware root of trust
+- [Secure Boot:](/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process) ensures only trusted OS loads
+- [Virtualization-Based Security (VBS):](/windows/security/identity-protection/virtualization-based-security) isolates sensitive parts of the OS
+- [Memory Integrity (HVCI):](/windows/security/identity-protection/memory-integrity) protects kernel memory from tampering
 
 Implement and document any changes that are required. Check whether stakeholder approval is needed before applying identity-related changes.
 

@@ -19,21 +19,21 @@ Windows diagnostic data provides the information used in Windows update compatib
 
 | Area of use | Report name | Source | Phase |
 |------------|-------------|--------|-------|
-| Device readiness | • [Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)| Microsoft Intune | Plan, Prepare |
-| Device readiness | • [Windows feature update compatibility risks report](/intune/intune-service/protect/windows-update-compatibility-reports#use-the-windows-feature-update-compatibility-risks-report) | Microsoft Intune | Prepare |
-| Device readiness | • [Work from anywhere report](/intune/analytics/work-from-anywhere) | Endpoint analytics | Plan |
-| Device readiness | • [Feature updates – device status](/windows/deployment/update/wufb-reports-workbook#feature-updates-tab) | Windows Update for Business reports | Plan |
-| Application inventory | • [Discovered apps report](/intune/intune-service/apps/app-discovered-apps) | Microsoft Intune | Plan |
-| Device provisioning | • [Work from anywhere report](/intune/analytics/work-from-anywhere) | Endpoint analytics | Plan |
-| Device identity | • [Work from anywhere report](/intune/analytics/work-from-anywhere) | Endpoint analytics | Plan |
-| Deployment status | • [Feature update status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report) | Windows Autopatch | Deploy |
-| Deployment status | • [Feature update trending report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report) | Windows Autopatch | Deploy |
-| Deployment status | • [Management status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-management-status-report)    | Windows Autopatch | Deploy |
-| Deployment status | • [Windows quality and feature update reports](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview#windows-feature-update-reports) | Windows Autopatch | Deploy |
-| Deployment status | • [Feature update failures report (Organizational)](/intune/intune-service/fundamentals/reports#feature-update-failures-report-operational) | Microsoft Intune | Deploy |
-| Deployment status | • [Windows feature update (Organizational)](/intune/intune-service/fundamentals/reports#windows-feature-update-organizational)      | Microsoft Intune | Deploy |
-| Deployment status | • [Windows feature update report](/intune/intune-service/protect/windows-update-reports#use-the-windows-10-feature-updates-organizational-report) | Microsoft Intune | Deploy |
-| Deployment efficiency | • [Delivery Optimization report](/windows/deployment/update/wufb-reports-workbook#bkmk_do) | Windows Update for Business reports | Deploy |
+| Device readiness | [Windows feature update device readiness report](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)| Microsoft Intune | Plan, Prepare |
+| Device readiness | [Windows feature update compatibility risks report](/intune/intune-service/protect/windows-update-compatibility-reports#use-the-windows-feature-update-compatibility-risks-report) | Microsoft Intune | Prepare |
+| Device readiness | [Work from anywhere report](/intune/analytics/work-from-anywhere) | Endpoint analytics | Plan |
+| Device readiness | [Feature updates – device status](/windows/deployment/update/wufb-reports-workbook#feature-updates-tab) | Windows Update for Business reports | Plan |
+| Application inventory | [Discovered apps report](/intune/intune-service/apps/app-discovered-apps) | Microsoft Intune | Plan |
+| Device provisioning | [Work from anywhere report](/intune/analytics/work-from-anywhere) | Endpoint analytics | Plan |
+| Device identity | [Work from anywhere report](/intune/analytics/work-from-anywhere) | Endpoint analytics | Plan |
+| Deployment status | [Feature update status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-status-report) | Windows Autopatch | Deploy |
+| Deployment status | [Feature update trending report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-feature-update-trending-report) | Windows Autopatch | Deploy |
+| Deployment status | [Management status report](/windows/deployment/windows-autopatch/monitor/windows-autopatch-management-status-report)    | Windows Autopatch | Deploy |
+| Deployment status | [Windows quality and feature update reports](/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview#windows-feature-update-reports) | Windows Autopatch | Deploy |
+| Deployment status | [Feature update failures report (Organizational)](/intune/intune-service/fundamentals/reports#feature-update-failures-report-operational) | Microsoft Intune | Deploy |
+| Deployment status | [Windows feature update (Organizational)](/intune/intune-service/fundamentals/reports#windows-feature-update-organizational)      | Microsoft Intune | Deploy |
+| Deployment status | [Windows feature update report](/intune/intune-service/protect/windows-update-reports#use-the-windows-10-feature-updates-organizational-report) | Microsoft Intune | Deploy |
+| Deployment efficiency | [Delivery Optimization report](/windows/deployment/update/wufb-reports-workbook#bkmk_do) | Windows Update for Business reports | Deploy |
 
 ### Prerequisites for report use
 
