@@ -41,5 +41,3 @@ The agent's ability to generate accurate GQL depends entirely on how well the on
 The agent inherits the ontology's governance layer. Entity definitions, relationships, and data bindings all flow through the ontology — you manage these in one place rather than configuring them separately for each agent. When the clinical team adds a new entity type like `MedicalDevice`, the agent immediately understands questions about devices without reconfiguration.
 
 This centralized structure also means every user who asks the same question gets the same interpretation. The ontology defines how domain vocabulary maps to data, so results are consistent and repeatable.
-
-Now that you understand what a Fabric data agent is and how it uses an ontology as a data source, you're ready to create one and connect it to the Lamna Healthcare ontology.

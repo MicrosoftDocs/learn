@@ -1,8 +1,8 @@
-Now that you understand what a Fabric data agent is and how it uses an ontology as a data source, this unit covers how to set one up: creating the data agent item in a Fabric workspace, connecting an ontology as its data source, and configuring agent instructions — the primary way to improve accuracy when using an ontology.
+This unit walks through creating a data agent in a Fabric workspace, connecting an ontology as its data source, and configuring agent instructions to improve query accuracy.
 
 ## Create the data agent item
 
-Creating a data agent in Microsoft Fabric follows the same pattern as creating any workspace item. You select the item type, provide a name, and Fabric generates the item with a default interface.
+Creating a data agent in Microsoft Fabric follows the same pattern as creating other workspace items. You select the item type, provide a name, and Fabric generates the item with a default interface.
 
 1. In a Fabric workspace, select **+ New item**.
 1. In the search box, type `data agent` and select **Data agent** from the results.
