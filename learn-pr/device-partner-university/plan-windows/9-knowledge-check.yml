@@ -1,0 +1,108 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.plan-windows.knowledge-check
+
+title: Knowledge check
+
+metadata:
+
+  title: Knowledge Check
+
+  description: This content is part of the "Plan to deploy updates for Windows clients and Microsoft 365 apps" module.
+
+  ms.date: 04/17/2026
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit
+
+durationInMinutes: 5
+
+quiz:
+
+  title: Check your knowledge
+
+  questions:
+
+  - content: "What is the primary goal of the planning phase when performing a Windows deployment?"
+
+    choices:
+
+    - content: "To evaluate readiness and identify gaps across the environment"
+      isCorrect: true
+      explanation: "Correct. The planning phase focuses on assessing readiness and identifying gaps across key areas before deployment."
+
+    - content: "To immediately deploy updates to all devices"
+      isCorrect: false
+      explanation: "Incorrect. Deployment occurs after planning activities are complete."
+
+    - content: "To remediate issues found during deployment"
+      isCorrect: false
+      explanation: "Incorrect. Remediation typically occurs after gaps have been identified during planning."
+
+    - content: "To monitor update compliance on deployed devices"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring is not part of the initial planning phase."
+
+  - content: "Which areas should be assessed during the planning phase of a Windows deployment?"
+
+    choices:
+
+    - content: "Only devices and user accounts"
+      isCorrect: false
+      explanation: "Incorrect. Planning involves more than just devices and users."
+
+    - content: "Operations, applications, infrastructure, configurations, devices, and users"
+      isCorrect: true
+      explanation: "Correct. These six areas are assessed during planning to evaluate readiness and uncover gaps."
+
+    - content: "Networking hardware and third-party tools only"
+      isCorrect: false
+      explanation: "Incorrect. Planning includes organizational and operational considerations beyond hardware and tools."
+
+    - content: "Security settings applied after deployment"
+      isCorrect: false
+      explanation: "Incorrect. Security considerations are part of planning, before deployment begins."
+
+  - content: "Why is it important to identify gaps early in the deployment process?"
+
+    choices:
+
+    - content: "To avoid documenting issues until deployment is complete"
+      isCorrect: false
+      explanation: "Incorrect. Delaying identification of issues increases risk during deployment."
+
+    - content: "To eliminate the need for stakeholder collaboration"
+      isCorrect: false
+      explanation: "Incorrect. Collaboration is encouraged throughout the planning process."
+
+    - content: "To skip testing and validation phases"
+      isCorrect: false
+      explanation: "Incorrect. Testing and validation remain essential even after gaps are identified."
+
+    - content: "To define success criteria and reduce deployment risk"
+      isCorrect: true
+      explanation: "Correct. Identifying gaps early helps define success criteria and address risks proactively."
+
+  - content: "How should planning deliverables be used throughout the deployment?"
+
+    choices:
+
+    - content: "They are created once and not updated"
+      isCorrect: false
+      explanation: "Incorrect. Planning deliverables should evolve over time."
+
+    - content: "They should be shared and collaboratively updated throughout the deployment lifecycle"
+      isCorrect: true
+      explanation: "Correct. Planning deliverables are living documents that support collaboration and ongoing decision-making."
+
+    - content: "They should only be reviewed after deployment is complete"
+      isCorrect: false
+      explanation: "Incorrect. Deliverables should be reviewed and updated throughout the deployment."
+
+    - content: "They replace the need for operational documentation"
+      isCorrect: false
+      explanation: "Incorrect. Planning deliverables complement, but do not replace, operational documentation."
+      

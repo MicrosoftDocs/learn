@@ -58,6 +58,7 @@ units:
   - learn.dpu.plan-windows.configurations
   - learn.dpu.plan-windows.devices
   - learn.dpu.plan-windows.users
+  - learn.dpu.plan-windows.knowledge-check
   - learn.dpu.plan-windows.summary
 
 badge:

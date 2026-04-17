@@ -9,7 +9,7 @@ Let’s determine your configuration readiness for Windows 11. Here's what would
 Your settings readiness criteria should include security baseline updates and configuration updates. Start by reviewing the settings you have today with respect to what’s required for Windows 11:
 
 - What Windows 11 settings do I already have?
-- What settings do I still need for Windows 11? *Note: This will largely depend on your organizational needs and requirements.*
+- What settings do I still need for Windows 11? *This will largely depend on your organizational needs and requirements.*
 
 Determine which settings will be critical to a successful deployment project. Settings requirements might evolve as you progress through the deployment. Use the settings readiness criteria to record this.
 
