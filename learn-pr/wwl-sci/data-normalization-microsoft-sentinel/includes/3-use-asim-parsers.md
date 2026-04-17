@@ -40,17 +40,20 @@ _Im_Dns
 | summarize count() by SrcIpAddr, bin(TimeGenerated,15m)
 ```
 
-The following table lists available unifying parsers:
+The following table lists key unifying parsers. For the complete current list, see [ASIM parsers overview](https://learn.microsoft.com/azure/sentinel/normalization-parsers-overview).
 
-| Schema | Unifying parser|
+| Schema | Built-in unifying parser |
 | :--- | :--- |
-| Authentication | imAuthentication|
-| Dns| _Im_Dns|
-| File Event| imFileEvent|
-| Network Session |_Im_NetworkSession |
-| Process Event| imProcessCreate and imProcessTerminate|
-| Registry Event | imRegistry|
-| Web Session | _Im_WebSession|
+| Authentication | `_Im_Authentication` |
+| Audit Event | `_Im_AuditEvent` |
+| DHCP Event | `_Im_Dhcp` |
+| DNS | `_Im_Dns` |
+| File Event | `_Im_FileEvent` |
+| Network Session | `_Im_NetworkSession` |
+| Process Event | `_Im_ProcessEvent` |
+| Registry Event | `_Im_RegistryEvent` |
+| User Management | `_Im_UserManagement` |
+| Web Session | `_Im_WebSession` |
 
 
 ## Optimizing parsing using parameters
