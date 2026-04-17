@@ -2,7 +2,7 @@ Most of your apps are already ready for Windows 11 deployment thanks to the 99.7
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Set criteria for app handling.<br>- Generate your app inventory.<br>- List and assign owners and importance classifications to applications based on business impact.<br>- Identify gaps in app readiness. | - Application decision matrix<br>- App inventory updated with importance classifications<br>- Priority application and owner list, defined by app owners<br>- List of app gaps |
+| - Set criteria for app handling.<br>- Generate your app inventory.<br>- List and assign owners and importance classifications to applications based on business impact.<br>- Identify gaps in app readiness. | • Application decision matrix<br>• App inventory updated with importance classifications<br>• Priority application and owner list, defined by app owners<br>• List of app gaps |
 
 ### Set criteria for app handling
 
@@ -50,7 +50,7 @@ Documenting these nuances as an application decision matrix is an important part
 
 Generate the inventory of all apps across your organization. If your devices are enrolled in Microsoft Intune, you can see all apps installed on corporate devices and all managed applications on personal devices in the [Discovered apps report](/mem/intune/apps/app-discovered-apps).
 
-1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [**Intune admin center**](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Apps**.
 3. In the **Monitor** section, select **Discovered apps**.
 4. Download the .csv report file by selecting **Export**.
@@ -84,4 +84,4 @@ Finally, are there any tasks or deliverables you still need help with?
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Set criteria for app handling.<br>- Generate your app inventory.<br>- List and assign owners and importance classifications to applications based on business impact.<br>- Identify gaps in app readiness. | - Application decision matrix<br>- App inventory updated with importance classification<br>- Priority application and owner list, defined by app owners<br>- List of app gaps |
+| - Set criteria for app handling.<br>- Generate your app inventory.<br>- List and assign owners and importance classifications to applications based on business impact.<br>- Identify gaps in app readiness. | • Application decision matrix<br>• App inventory updated with importance classification<br>• Priority application and owner list, defined by app owners<br>• List of app gaps |

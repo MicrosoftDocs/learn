@@ -2,7 +2,7 @@ Let’s determine your configuration readiness for Windows 11. Here's what would
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Evaluate settings readiness criteria.<br>- Evaluate your security baselines.<br>- Evaluate your policies.<br>- Evaluate your network configuration.<br>- Detail configuration changes needed and identify gaps. | - Configuration readiness criteria<br>- List of required security settings<br>- List of required policy settings<br>- List of required network settings<br>- Configuration gaps and remediation list |
+| - Evaluate settings readiness criteria.<br>- Evaluate your security baselines.<br>- Evaluate your policies.<br>- Evaluate your network configuration.<br>- Detail configuration changes needed and identify gaps. | • Configuration readiness criteria<br>• List of required security settings<br>• List of required policy settings<br>• List of required network settings<br>• Configuration gaps and remediation list |
 
 ## Evaluate settings readiness criteria
 
@@ -93,4 +93,4 @@ Are there any configuration-related tasks or deliverables that you still need he
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Evaluate settings readiness criteria.<br>- Evaluate your security baselines.<br>- Evaluate your policies.<br>- Evaluate your network configuration.<br>- Detail configuration changes needed and identify gaps. | - Configuration readiness criteria<br>- List of required security settings<br>- List of required policy settings<br>- List of required network settings<br>- Configuration gaps and remediation list |
+| - Evaluate settings readiness criteria.<br>- Evaluate your security baselines.<br>- Evaluate your policies.<br>- Evaluate your network configuration.<br>- Detail configuration changes needed and identify gaps. | • Configuration readiness criteria<br>• List of required security settings<br>• List of required policy settings<br>• List of required network settings<br>• Configuration gaps and remediation list |

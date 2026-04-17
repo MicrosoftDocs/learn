@@ -2,7 +2,7 @@ User readiness will help with smooth deployment of Windows 11. To evaluate how r
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define user readiness criteria.<br>- Evaluate user identity.<br>- Identify gaps. | - List of user readiness criteria<br>- List of existing identity components<br>- List of user identity-related gaps or changes required |
+| - Define user readiness criteria.<br>- Evaluate user identity.<br>- Identify gaps. | • List of user readiness criteria<br>• List of existing identity components<br>• List of user identity-related gaps or changes required |
 
 ## Define user readiness criteria
 
@@ -50,4 +50,4 @@ Which of the user-related tasks or deliverables do you still need help with as y
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define user readiness criteria.<br>- Evaluate user identity.<br>- Identify gaps. | - List of user readiness criteria<br>- List of existing identity components<br>- List of user identity-related gaps or changes required |
+| - Define user readiness criteria.<br>- Evaluate user identity.<br>- Identify gaps. | • List of user readiness criteria<br>• List of existing identity components<br>• List of user identity-related gaps or changes required |

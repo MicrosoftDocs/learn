@@ -2,7 +2,7 @@ Device readiness requires a few special considerations that are different for Wi
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define device readiness.<br>- Evaluate device eligibility.<br>- Evaluate device identity.<br>- Identify gaps. | - Device readiness criteria<br>- List of eligible and ineligible devices<br>- List of devices by device identity<br>- List of device-related gaps |
+| - Define device readiness.<br>- Evaluate device eligibility.<br>- Evaluate device identity.<br>- Identify gaps. | • Device readiness criteria<br>• List of eligible and ineligible devices<br>• List of devices by device identity<br>• List of device-related gaps |
 
 ## Define device readiness
 
@@ -87,4 +87,4 @@ Which of the device-related tasks or deliverables do you still need help with as
 
 | Tasks | Deliverables |
 |-------|--------------|
-| - Define device readiness.<br>- Evaluate device eligibility.<br>- Evaluate device identity.<br>- Identify gaps. | - Device readiness criteria<br>- List of eligible and ineligible devices<br>- List of devices by device identity<br>- List of device-related gaps |
+| - Define device readiness.<br>- Evaluate device eligibility.<br>- Evaluate device identity.<br>- Identify gaps. | • Device readiness criteria<br>• List of eligible and ineligible devices<br>• List of devices by device identity<br>• List of device-related gaps |
