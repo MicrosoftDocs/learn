@@ -14,8 +14,8 @@ The agent displays its answer in the chat pane. Every response includes a **step
 
 When you expand the steps dropdown, you see three pieces of information:
 
-- **Entity types and relationships** the agent identified in your question
-- **The GQL query** the agent generated to retrieve data from the ontology
+- **Entity types and relationships**: The agent identified in your question
+- **The GQL query**: The agent generated to retrieve data from the ontology
 - **Intermediate reasoning steps** that show how the agent mapped your natural language to graph concepts
 
 :::image type="content" source="../media/data-agent-steps.png" alt-text="Screenshot of the steps dropdown expanded in the data agent chat pane, showing the generated GQL query and reasoning steps.":::
