@@ -3,9 +3,9 @@ uid: learn.wwl.deploy-windows-server
 metadata:
   title: Deploy Windows Server
   description: "Deploy Windows Server"
-  ms.date: 12/26/2024
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows-server
 title: Deploy Windows Server

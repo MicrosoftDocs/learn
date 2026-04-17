@@ -16,7 +16,7 @@ abstract: |
     - Onboard an OT sensor to Defender for IoT
 prerequisites: |
   - Knowledge of what Defender for IoT is and how it works at a beginner level 
-  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner user
+  - Access to an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) as a Security Admin, Contributor, or Owner user
   -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
   - Knowledge of deployment planning concepts for Defender for IoT, such as sites and zones OT sensor parameters
   - Details of the specific site and zone needed to assign to the sensor 

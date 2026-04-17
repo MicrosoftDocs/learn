@@ -9,4 +9,4 @@ In this demonstration, you'll learn to:
 Review the steps for this demonstration:
 [Deploy Azure File Sync](https://aka.ms/storage-sync-files-deployment-guide?azure-portal=true)
 
-If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). After completing the steps, delete any resource groups you created. 
+If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn). After completing the steps, delete any resource groups you created. 

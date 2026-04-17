@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-azure-databricks-integrations.integration-databricks-power-platform
+title: Understand integration with Power Platform
+metadata:
+  title: Understand Integration with Power Platform
+  description: Learn how Azure Databricks integrates with Power Platform through the Azure Databricks connector, enabling Power Apps and Power Automate to access governed data for business applications and automated workflows.
+  ms.date: 12/07/2025
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-integration-databricks-power-platform.md)]

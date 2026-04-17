@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-storage-azure-managed-redis.optimize-redis-data-structure
+title: Optimize Redis data structures for vector storage
+metadata:
+  title: Optimize Redis Data Structures for Vector Storage
+  description: Optimize Redis data structures for vector storage
+  ms.date: 11/23/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-optimize-redis-data-structure.md)]

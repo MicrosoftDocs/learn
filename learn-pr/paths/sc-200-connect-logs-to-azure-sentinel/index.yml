@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-200-connect-logs-to-azure-sentinel
 metadata:
-  title: 'SC-200: Connect logs to Microsoft Sentinel'
-  description: 'SC-200: Connect logs to Microsoft Sentinel'
-  ms.date: 03/07/2025
-  author: wwlpublish
+  title: 'Connect logs to Microsoft Sentinel'
+  description: 'Connect logs to Microsoft Sentinel'
+  ms.date: 11/26/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: learning-path
-title: 'SC-200: Connect logs to Microsoft Sentinel'
+title: 'Connect logs to Microsoft Sentinel'
 prerequisites: |
   - Knowledge of using KQL in Microsoft Sentinel like you could learn from learning path SC-200: Create queries for Azure Sentinel using Kusto Query Language (KQL)
   - Knowledge of Microsoft Sentinel environment configuration like you could learn from learning path SC-200: Configure your Microsoft Sentinel environment

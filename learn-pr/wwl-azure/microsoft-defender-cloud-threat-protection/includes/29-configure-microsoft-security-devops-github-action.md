@@ -12,7 +12,7 @@ Microsoft Security DevOps is a command line application that integrates static a
 
 ## Prerequisites
 
- -  An Azure subscription If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
+ -  An Azure subscription If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
  -  [Connect your GitHub repositories](/azure/defender-for-cloud/quickstart-onboard-github).
  -  Follow the guidance to set up [GitHub Advanced Security](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-security-and-analysis-settings-for-your-organization) to view the DevOps posture assessments in Defender for Cloud.
  -  Open the [Microsoft Security DevOps GitHub action](https://github.com/marketplace/actions/security-devops-action) in a new window.

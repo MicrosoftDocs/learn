@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.streamline-administrative-tasks-ai.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how AI tools like Teach and Copilot streamline administrative tasks in special education, improving efficiency and personalization."
+  ms.date: 01/05/2026
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

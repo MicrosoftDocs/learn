@@ -1,6 +1,6 @@
 Do you have an idea where there might be waste or inefficiencies in your cloud environment? Do your cloud deployments follow the latest, proven best practices? For that matter, do you know how you can find out?
 
-When teams build out a cloud workload in Azure, they often enlist different groups of people to set up different services, such as SQL databases and virtual machines. The newness of the cloud and the rapid pace of change adds to this confusion. A typical result might include poorly optimized and misconfigured workloads that can negatively affect your cloud environment. For example, have you sized your virtual machines and SQL databases correctly based on your usage? How secure is your platform?
+When teams build out a cloud workload in Azure, they often enlist different groups of people to set up different services, such as SQL databases and virtual machines. The newness of the cloud and the rapid pace of change adds to this confusion. A typical result might include poorly optimized and misconfigured workloads that can negatively affect your cloud environment. For example, do you know if your virtual machines and SQL databases are sized correctly based on your usage? How secure is your platform?
 
 With Azure Advisor, you can analyze your cloud environment to determine whether your workloads are following documented best practices for cost, security, reliability, performance, and operational excellence. With that information handy, you can then take action to make your workloads more effective and efficient.
 
@@ -24,11 +24,11 @@ Advisor continuously analyzes your resources and cloud usage, then recommends so
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you're able to:
 
 - Identify the different areas that Advisor looks at when making its recommendations.
 - Find Advisor in the Azure portal and view the recommendations for each area.
-- Remediate the issues that Advisor's recommendations have surfaced.
+- Remediate the issues that Advisor's recommendations bring to the surface.
 - Understand the Advisor Score and how it can help prioritize recommendations and measure impacts.
 
 The concepts discussed in this module aren't all-inclusive, but they represent some important considerations when you're managing a solution on the cloud. For more details on Azure Advisor, visit the [Azure Advisor documentation page](/azure/advisor/?azure-portal=true).

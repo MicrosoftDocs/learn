@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.exercise-investigate-alert
+title: Exercise - Investigate potential data theft using Insider Risk Management
+metadata:
+  title: Exercise - Investigate potential data theft using Insider Risk Management
+  description: "Exercise - Investigate potential data theft using Insider Risk Management."
+  ms.date: 08/05/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/exercise-investigate-alert.md)]

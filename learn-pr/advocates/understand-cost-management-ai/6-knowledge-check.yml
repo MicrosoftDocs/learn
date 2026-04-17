@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-cost-management-concepts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge
+  ms.date: 08/20/2025
+  author: scuffy
+  ms.author: socuff
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "When preparing your cloud environment, what should you do to help you manage your AI costs?"
+      choices:
+        - content: "Notify your cloud provider that you intend to use AI services."
+          isCorrect: false
+          explanation: "Azure AI Foundry is available to anyone with a Microsoft Azure subscription."
+        - content: "Ensure that you have a separate Microsoft Azure subscription for your AI workloads."
+          isCorrect: false
+          explanation: "While subscriptions are a billing boundary, you can deploy your AI applications into any subscription and use other methods to identify their specific costs."
+        - content: "Establish a resource tagging structure."
+          isCorrect: true
+          explanation: "Tagging your cloud resources with metadata can help you filter cost information and cross-charge it to various departments."
+    - content: "Which of the following is a key consideration when estimating the cost of an AI application?"
+      choices:
+        - content: "The coding language the application is written in."
+          isCorrect: false
+          explanation: "The coding language doesn't impact the cost of the AI application."
+        - content: "The number of tokens processed by the AI service."
+          isCorrect: true
+          explanation: "The billing calculation for language models includes the number of input and output tokens used during the billing period."
+        - content: "The physical size of the data center."
+          isCorrect: false
+          explanation: "You can deploy a small AI application in a large cloud data center and only pay for what you use."
+    - content: "What is a FinOps capability relevant to AI?"
+      choices:
+        - content: "Rate optimization."
+          isCorrect: true
+          explanation: "Rates for your AI services can be reduced by utilizing commitment discounts or other methods."
+        - content: "Latency optimization."
+          isCorrect: false
+          explanation: "Reducing latency is an application performance consideration not included in the FinOps Framework."
+        - content: "Naming standardization."
+          isCorrect: false
+          explanation: "Creating and enforcing naming standards doesn't impact cost and isn't included in the FinOps Framework."

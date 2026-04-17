@@ -178,7 +178,7 @@ Nesting allows you to place code blocks inside of code blocks. In this case, you
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
@@ -203,7 +203,7 @@ Nesting allows you to place code blocks inside of code blocks. In this case, you
 
 1. On the Visual Studio Code **File** menu, click **Save**.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+1. In the EXPLORER view, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 

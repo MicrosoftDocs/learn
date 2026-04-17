@@ -2,8 +2,6 @@
 uid: learn.wwl.design-migrations.select-online-storage-migration-tool
 title: Select an online storage migration tool for unstructured data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select an online storage migration tool for unstructured data
   description: "Select an online storage migration tool to move unstructured data."
   ms.date: 03/10/2025

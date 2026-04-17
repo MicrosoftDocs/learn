@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 9 Manage and review models in Azure Machine Learning
 
 Learning Path 9 Overview

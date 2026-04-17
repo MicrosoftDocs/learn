@@ -2,14 +2,12 @@
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction to access management with Microsoft Entra"
-  ms.date: 08/02/2024
+  ms.date: 03/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

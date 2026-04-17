@@ -1,10 +1,12 @@
-The following video introduces the different services that should be available with Azure Storage.
+The following video introduces the services available with Azure Storage.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAbS]
+> [!VIDEO 477e6b92-9bc6-425d-90fe-2468ab8ab0f1]
 
 A storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 
-When you create your storage account, you’ll start by picking the storage account type. The type of account determines the storage services and redundancy options and has an impact on the use cases. Below is a list of redundancy options that will be covered later in this module:
+:::image type="content" source="../media/storage-accounts-option-anatomy-layered.png" alt-text="Diagram showing the layered anatomy of an Azure Storage Account, from the account namespace to its services and redundancy options.":::
+
+When you create your storage account, you’ll start by picking the storage account type. The type of account determines the storage services and redundancy options and has an impact on the use cases. These redundancy options are covered later in this module:
 
  -  Locally redundant storage (LRS)
  -  Geo-redundant storage (GRS)
@@ -17,12 +19,14 @@ When you create your storage account, you’ll start by picking the storage acco
 | --------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Standard general-purpose v2 | Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files | LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for network file system (NFS) in Azure Files, use the premium file shares account type.    |
 | Premium block blobs         | Blob Storage (including Data Lake Storage)                                                | LRS, ZRS                             | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency.                                                |
-| Premium file shares         | Azure Files                                                                               | LRS, ZRS                             | Premium storage account type for file shares only. Recommended for enterprise or high-performance scale applications. Use this account type if you want a storage account that supports both Server Message Block (SMB) and NFS file shares. |
+| Premium file shares         | Azure Files                                                                               | LRS, ZRS                             | Premium storage account type for file shares only. Recommended for high-scale or high-performance applications. Use this account type if you want a storage account that supports both Server Message Block (SMB) and NFS file shares. |
 | Premium page blobs          | Page blobs only                                                                           | LRS                                  | Premium storage account type for page blobs only.                                                                                                                                                                                            |
+
+:::image type="content" source="../media/storage-accounts-option-types-grid.png" alt-text="Diagram comparing four Azure Storage account types: Standard general-purpose v2, Premium block blobs, Premium file shares, and Premium page blobs.":::
 
 ## Storage account endpoints
 
-One of the benefits of using an Azure Storage Account is having a unique namespace in Azure for your data. In order to do this, every storage account in Azure must have a unique-in-Azure account name. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account.
+One of the benefits of using an Azure storage account is having a unique namespace in Azure for your data. Every storage account must have a unique account name within Azure. The combination of the account name and the Azure Storage service endpoint forms the endpoints for your storage account.
 
 When naming your storage account, keep these rules in mind:
 
@@ -38,3 +42,6 @@ The following table shows the endpoint format for Azure Storage services.
 | Azure Files            | https://&lt;storage-account-name&gt;.file.core.windows.net  |
 | Queue Storage          | https://&lt;storage-account-name&gt;.queue.core.windows.net |
 | Table Storage          | https://&lt;storage-account-name&gt;.table.core.windows.net |
+
+:::image type="content" source="../media/storage-accounts-option-endpoint-map.png" alt-text="Diagram showing five Azure Storage service endpoints branching from a central storage account, each with its unique subdomain URL.":::
+

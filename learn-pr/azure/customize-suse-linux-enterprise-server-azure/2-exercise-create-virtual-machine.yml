@@ -2,8 +2,6 @@
 uid: learn.azure.customize-suse-linux-enterprise-server-azure.exercise-create-virtual-machine
 title: "Exercise - Setup: Create a new SUSE SLES virtual machine on Azure"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: "Exercise - Setup: Create a new SUSE SLES virtual machine on Azure"
   description: Create a SUSE SLES virtual machine on Azure, used in the rest of the exercises.
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-exercise-create-virtual-machine.md)]
-
+

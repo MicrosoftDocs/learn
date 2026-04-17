@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.deploy-multimodal-models
+title: Choose a speech-capable model
+metadata:
+  title: Choose a speech-capable model
+  description: "Choose a speech-capable model for your application requirements."
+  ms.date: 03/11/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-deploy-multimodal-model.md)]

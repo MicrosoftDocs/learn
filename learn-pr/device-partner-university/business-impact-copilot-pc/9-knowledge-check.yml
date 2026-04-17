@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.business-impact-copilot-pc.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Turbocharge business impact with Copilot+ PC" module.
+  ms.date: 08/04/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What distinguishes Copilot+ PCs from Windows 11 Pro AI PCs?"
+    choices:
+        - content: "They include a physical Copilot key."
+          isCorrect: false
+          explanation: ""
+        - content: "They feature a supercharged NPU capable of 40+ TOPS."
+          isCorrect: true
+          explanation: "Correct. Copilot+ PCs build on AI PCs by including a supercharged NPU with 40+ TOPS."
+        - content: "They support cloud-based AI experiences."
+          isCorrect: false
+          explanation: ""
+        - content: "They offer enhanced video calling features."
+          isCorrect: false
+          explanation: ""
+  - content: "What is the purpose of the Copilot key on Copilot+ PCs?"
+    choices:
+        - content: "To open the Windows Start menu"
+          isCorrect: false
+          explanation: "Incorrect. The Windows key serves this function."
+        - content: "To launch the Copilot app"
+          isCorrect: true
+          explanation: "Correct. The Copilot key invokes the Copilot app for easy AI integration."
+        - content: "To activate voice commands"
+          isCorrect: false
+          explanation: "Incorrect. This isn't the primary function of the Copilot key."
+        - content: "To access system settings"
+          isCorrect: false
+          explanation: "Incorrect. System settings are accessed through other means."
+  - content: "How does Recall (preview) enhance productivity on Copilot+ PCs?"
+    choices:
+        - content: "By enabling remote desktop access"
+          isCorrect: false
+          explanation: "Incorrect. Recall doesn't provide remote access functionality."
+        - content: "By providing real-time virus protection"
+          isCorrect: false
+          explanation: "Incorrect. This is a security feature, not related to Recall."
+        - content: "By allowing users to search for previously viewed content using natural language"
+          isCorrect: true
+          explanation: "Correct. Recall uses snapshots and AI to help users find past content quickly."
+        - content: "By automatically updating all installed applications"
+          isCorrect: false
+          explanation: "Incorrect. Application updates are managed separately."
+  - content: "Which security feature is unique to Copilot+ PCs?"
+    choices:
+        - content: "Windows Defender Antivirus"
+          isCorrect: false
+          explanation: "Incorrect. This is a standard Windows security feature."
+        - content: "Microsoft Pluton security coprocessor"
+          isCorrect: true
+          explanation: "Correct. Copilot+ PCs include this coprocessor for enhanced data protection."
+        - content: "Firewall protection"
+          isCorrect: false
+          explanation: "Incorrect. This is a general Windows feature."
+        - content: "BitLocker encryption"
+          isCorrect: false
+          explanation: "Incorrect. BitLocker is available on various Windows devices."
+  - content: "What is a key benefit of using NPUs in Copilot+ PCs?"
+    choices:
+        - content: "They reduce screen brightness automatically"
+          isCorrect: false
+          explanation: "Incorrect. This is a display feature, not related to NPUs."
+        - content: "They handle AI workflows more efficiently than CPUs and GPUs"
+          isCorrect: true
+          explanation: "Correct. NPUs are optimized for AI tasks, offering better performance and energy efficiency."
+        - content: "They increase internet speed"
+          isCorrect: false
+          explanation: "Incorrect. NPUs don't affect network performance."
+        - content: "They improve battery charging time"
+          isCorrect: false
+          explanation: "Incorrect. NPUs contribute to energy efficiency but not charging speed."
+

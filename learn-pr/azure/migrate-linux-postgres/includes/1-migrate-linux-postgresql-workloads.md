@@ -105,7 +105,7 @@ The use of a managed identity for authentication often requires code changes in 
 
 ## Create an Azure account and install the Azure CLI
 
-If you don't have an Azure account, you can create a [free account](https://azure.microsoft.com/free/) today. You get credits that you can use to try out paid Azure services. Even after you use the credits, you can keep the account and use free Azure services.
+If you don't have an Azure account, you can create a [free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) today. You get credits that you can use to try out paid Azure services. Even after you use the credits, you can keep the account and use free Azure services.
 
 To run the commands in the following units, you need access to a Bash shell. This shell can be in any of these areas:
 
@@ -117,7 +117,7 @@ To complete this module, you need the Azure CLI. You can install the Azure CLI o
 
 ## Resources
 
-- [Create a free Azure account](https://azure.microsoft.com/free/)
+- [Create a free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 - [Install the Azure CLI](/cli/azure/install-azure-cli)
 - [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
 - [Azure Hybrid Benefit for Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES) virtual machines](/azure/virtual-machines/linux/azure-hybrid-benefit-linux)

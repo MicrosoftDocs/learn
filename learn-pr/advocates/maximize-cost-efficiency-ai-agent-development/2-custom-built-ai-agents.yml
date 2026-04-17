@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.maximize-cost-efficiency-ai-agent-development.custom-built-ai-agents
+title: Build agents, your way
+metadata:
+  title: Build Agents, Your Way
+  description: Explore the advantages of developing custom AI agents using Azure's flexible infrastructure. 
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-custom-built-ai-agents.md)]

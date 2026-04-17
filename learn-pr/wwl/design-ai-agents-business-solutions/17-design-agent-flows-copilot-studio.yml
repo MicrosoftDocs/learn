@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-agent-flows-copilot-studio
+title: "Design agents and agent flows with Copilot Studio"
+metadata:
+  title: "Design Agents and Agent Flows with Copilot Studio"
+  description: "Learn to design intelligent agents and agent flows in Microsoft Copilot Studio using natural language, visual design, and automation best practices."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/17-design-agent-flows-copilot-studio.md)]

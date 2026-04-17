@@ -1,18 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.secure-compute-storage-databases
 metadata:
-  title: 'AZ-500: Secure compute, storage, and databases'
-  description: 'AZ-500: Secure compute, storage, and databases'
-  ms.date: 03/12/2024
+  title: 'Protect compute, storage, and databases'
+  description: 'Protect compute, storage, and databases'
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: serlingdavis
+  ms.author: roberts
   ms.topic: learning-path
-title: 'AZ-500: Secure compute, storage, and databases'
+title: 'Protect compute, storage, and databases'
 prerequisites: |
   None
 summary: |
-  Master the art of securing Azure compute resources, storage, and databases, including advanced security measures, encryption, access control, and database protection.
-iconUrl: /training/achievements/generic-trophy.svg
+  Learn how to protect your Azure compute resources, storage accounts, and databases. You implement encryption, configure access controls, and apply security best practices to safeguard your data.
+iconUrl: /training/achievements/azure-learning-path.svg
 levels:
 - intermediate
 roles:

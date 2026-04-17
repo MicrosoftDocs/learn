@@ -50,7 +50,7 @@ Use the following steps to complete this section of the exercise:
 1. Enter the following prompt:
 
     ```plaintext
-    @workspace Explain the approach to unit testing that's been implemented in this workspace.
+    #codebase Explain the approach to unit testing that's been implemented in this workspace.
     ```
 
     This prompt asks GitHub Copilot to explain the approach to unit testing in the context of the workspace. Several files are included in the prompt to provide context for the response.
@@ -69,7 +69,7 @@ Use the following steps to complete this section of the exercise:
 1. Enter the following prompt:
 
     ```plaintext
-    @workspace What are the benefits of this approach to unit testing?
+    #codebase What are the benefits of this approach to unit testing?
     ```
 
 1. Take a minute to review the response from GitHub Copilot.
@@ -88,7 +88,7 @@ Use the following steps to complete this section of the exercise:
 1. Enter the following prompt:
 
     ```plaintext
-    @workspace How can I extend the `UnitTests` project to begin testing methods in the `Library.Infrastructure` project? Provide a process overview.
+    #codebase How can I extend the `UnitTests` project to begin testing methods in the `Library.Infrastructure` project? Provide a process overview.
     ```
 
     This prompt asks GitHub Copilot to provide a process overview for extending the `UnitTests` project to begin testing methods in the `Library.Infrastructure` project. Several files are included in the prompt to provide context for the response.
@@ -140,7 +140,7 @@ Use the following steps to complete this section of the exercise:
 1. Enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace Explain how to add a reference to the Library.Infrastructure project inside `UnitTests.csproj`.
+    #codebase Explain how to add a reference to the Library.Infrastructure project inside `UnitTests.csproj`.
     ```
 
     This prompt asks GitHub Copilot to explain how to add a reference to the `Library.Infrastructure` project inside the `UnitTests.csproj` file.
@@ -272,7 +272,7 @@ Use the following steps to complete this section of the exercise:
 1. Enter the following prompt:
 
     ```plaintext
-    @workspace Create fields and a class constructor for the `GetLoan.cs` file. The class will be used to create unit tests for the GetLoan method in the `JsonLoanRepository.cs` file. Create the following private readonly fields: `_mockLoanRepository`, `_jsonLoanRepository`, `_configuration`, and `_jsonData`. Instantiate the fields in the `GetLoanTest` constructor. Use `ConfigurationBuilder` to create a `_configuration` object that can be used to instantiate the JsonData object.
+    #codebase Create fields and a class constructor for the `GetLoan.cs` file. The class will be used to create unit tests for the GetLoan method in the `JsonLoanRepository.cs` file. Create the following private readonly fields: `_mockLoanRepository`, `_jsonLoanRepository`, `_configuration`, and `_jsonData`. Instantiate the fields in the `GetLoanTest` constructor. Use `ConfigurationBuilder` to create a `_configuration` object that can be used to instantiate the JsonData object.
     ```
 
     This prompt asks GitHub Copilot to suggest fields and a class constructor.
@@ -358,7 +358,7 @@ Use the following steps to complete this section of the exercise:
 1. Select the contents of the `GetLoan.cs` file, and then enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace Update the selection to include a unit test for the `JsonLoanRepository.GetLoan` method. The unit test should test the case where a loan ID is found in the data. Use `_mockLoanRepository` to arrange the expected return loan. Use `_jsonLoanRepository` to return an actual loan. Asserts should verify that the return loan ID matches the expected loan ID. Use a loan ID that exists in the `Loans.json` file.
+    #codebase Update the selection to include a unit test for the `JsonLoanRepository.GetLoan` method. The unit test should test the case where a loan ID is found in the data. Use `_mockLoanRepository` to arrange the expected return loan. Use `_jsonLoanRepository` to return an actual loan. Asserts should verify that the return loan ID matches the expected loan ID. Use a loan ID that exists in the `Loans.json` file.
     ```
 
     This prompt asks GitHub Copilot to suggest a unit test for the `JsonLoanRepository.GetLoan` method. The unit test should test the case where a loan ID is found in the data. The test should use `_mockLoanRepository` to arrange the expected return loan, `_jsonLoanRepository` to return an actual loan, and asserts to verify that the return loan ID matches the expected loan ID. The loan ID should exist in the `Loans.json` file.

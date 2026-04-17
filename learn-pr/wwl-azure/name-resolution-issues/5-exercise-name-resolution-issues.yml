@@ -2,8 +2,6 @@
 uid: learn.wwl.name-resolution-issues.exercise-name-resolution-issues
 title: 'Exercise: Name resolution issues'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Name resolution issues'
   description: "Exercise: Name resolution issues"
   ms.date: 04/27/2023
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-name-resolution-issues.md)]
-interactive: powershell
+interactive: powershell

@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.close-out-microsoft-learn-educators-course.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/02/2024
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 6
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -31,13 +30,13 @@ quiz:
     choices:
     - content: "MSLE portal."
       isCorrect: false
-      explanation: "Feedback: Incorrect. Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. [Microsoft Learn Career Connected](https://aka.ms/CareerConnected) helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners. [Microsoft Learn Career Connected](https://aka.ms/CareerConnected) brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles."
+      explanation: "Feedback: Incorrect. Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. Microsoft Learn Career Connected helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners. Microsoft Learn Career Connected brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles."
     - content: "Microsoft Learn Career Connected."
       isCorrect: true
-      explanation: "Feedback: Correct. Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. [Microsoft Learn Career Connected](https://aka.ms/CareerConnected) helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners.[Microsoft Learn Career Connected](https://aka.ms/CareerConnected) brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles."
+      explanation: "Feedback: Correct. Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. Microsoft Learn Career Connected helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners.Microsoft Learn Career Connected brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles."
     - content: "MSLE Download Center."
       isCorrect: false
-      explanation: "Feedback: Incorrect. Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. [Microsoft Learn Career Connected](https://aka.ms/CareerConnected) helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners.[Microsoft Learn Career Connected](https://aka.ms/CareerConnected) brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles."
+      explanation: "Feedback: Incorrect. Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. Microsoft Learn Career Connected helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners.Microsoft Learn Career Connected brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles."
   - content: "Besides Microsoft Learn, where can students and educators find additional certification exam support?"
     choices:
     - content: "Microsoft Virtual Training Days and free practice assessments."

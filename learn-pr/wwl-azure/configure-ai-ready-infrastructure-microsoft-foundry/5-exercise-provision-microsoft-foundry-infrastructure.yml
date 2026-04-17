@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-ready-infrastructure-microsoft-foundry.exercise-provision-microsoft-foundry-infrastructure
+title: "Provision Microsoft Foundry infrastructure"
+metadata:
+  title: "Provision Microsoft Foundry Infrastructure"
+  description: "Learn to provision Microsoft Foundry infrastructure by creating hub-level and project-level service connections for secure Azure integration."
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-exercise-provision-microsoft-foundry-infrastructure.md)]

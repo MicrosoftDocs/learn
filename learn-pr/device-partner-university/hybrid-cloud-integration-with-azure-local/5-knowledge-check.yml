@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.hybrid-cloud-integration-with-azure-local.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Hybrid cloud integration with Azure Local" module.
+  ms.date: 09/11/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What should an IT admin do to ensure remote clinics stay operational during outages?"
+    choices:
+        - content: "Use Microsoft Sentinel for threat detection"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Sentinel helps with security, not operational continuity."
+        - content: "Deploy Windows containers only"
+          isCorrect: false
+          explanation: "Incorrect. Azure Kubernetes Service supports both Windows and Linux containers."
+        - content: "Use disconnected Azure Kubernetes Service management with Azure Arc"
+          isCorrect: true
+          explanation: "Correct. Disconnected Azure Kubernetes Service ensures operations during network outages."
+        - content: "Disable GitOps pipelines"
+          isCorrect: false
+          explanation: "Incorrect. GitOps automates deployments and supports continuity."
+  - content: "How can an admin organize and manage on-premises clusters efficiently?"
+    choices:
+        - content: "Avoid using tags and resource groups"
+          isCorrect: false
+          explanation: "Incorrect. This makes resources harder to manage and audit."
+        - content: "Use Azure Arc with tags and resource groups"
+          isCorrect: true
+          explanation: "Correct. Azure Arc enables centralized management with tagging and grouping."
+        - content: "Rely only on PowerShell scripts"
+          isCorrect: false
+          explanation: "Incorrect. PowerShell helps with automation but not organization."
+        - content: "Use Microsoft Sentinel for grouping"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft Sentinel is for security event analysis."
+  - content: "What is a key benefit of Azure Local for organizations with strict data residency requirements?"
+    choices:
+        - content: "It eliminates the need for on-premises infrastructure."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports on-premises infrastructure."
+        - content: "It allows cloud-like efficiencies while keeping data on-premises."
+          isCorrect: true
+          explanation: "Correct. Azure Local delivers cloud-like efficiencies while ensuring data remains on-premises."
+        - content: "It requires all workloads to run in Azure cloud."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports workloads on-premises."
+        - content: "It limits access to Azure services."
+          isCorrect: false
+          explanation: "Incorrect. Azure Local integrates with Azure services for centralized management."
+  - content: "Which tool is used for hybrid resource onboarding and governance in Azure Local?"
+    choices:
+        - content: "Windows Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. It's used for local deployment and monitoring."
+        - content: "Azure Arc"
+          isCorrect: true
+          explanation: "Correct. Azure Arc enables hybrid resource onboarding and governance."
+        - content: "Azure CLI"
+          isCorrect: false
+          explanation: "Incorrect. It's used for infrastructure as code and automation."
+        - content: "PowerShell"
+          isCorrect: false
+          explanation: "Incorrect. It's used for scripting and advanced management."
+  - content: "What feature in Azure Local helps automate updates across all nodes?"
+    choices:
+        - content: "Microsoft Sentinel"
+          isCorrect: false
+          explanation: "Incorrect. It's used for security event analysis."
+        - content: "Azure Policy"
+          isCorrect: false
+          explanation: "Incorrect. It enforces governance policies."
+        - content: "Azure Update Manager"
+          isCorrect: true
+          explanation: "Correct. It orchestrates updates and monitors health across nodes."
+        - content: "Azure Resource Manager"
+          isCorrect: false
+          explanation: "Incorrect. It represents clusters as resources in the Azure portal."

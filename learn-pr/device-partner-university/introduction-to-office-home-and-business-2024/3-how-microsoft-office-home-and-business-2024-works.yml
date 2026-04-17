@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-office-home-and-business-2024.how-microsoft-office-home-and-business-2024-works
+title: How Microsoft Office Home and Business 2024 works
+metadata:
+  title: How Microsoft Office Home And Business 2024 Works
+  description: This content is part of the "Introduction to Office Home & Business 2024" module.
+  ms.date: 09/22/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-microsoft-office-home-and-business-2024-works.md)]

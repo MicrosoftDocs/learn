@@ -1,24 +1,24 @@
 Recall that we said the container image becomes the unit we use to distribute applications. We also mentioned that the container is in a standardized format that both our developer and operation teams use.
 
-Here, we'll look at the differences between software, packages, and images as used in Docker. Knowing the differences between these concepts will help us better understand how Docker images work.
+In this unit, we look at the differences between software, packages, and images in Docker. Familiarity with the differences between these concepts helps us better understand how Docker images work.
 
-We'll also briefly discuss the roles of the OS running on the host and the OS running in the container.
+We also discuss the roles of the OS running on the host and the OS running in the container.
 
 ## Software packaged into a container
 
-The software packaged into a container isn't limited to the applications that our developers build.  When we talk about software, we refer to application code, system packages, binaries, libraries, configuration files, and the operating system running in the container.
+The software packaged into a container isn't limited to the applications that our developers build. When we talk about software, we refer to application code, system packages, binaries, libraries, configuration files, and the operating system running in the container.
 
-For example, assume we're developing an order-tracking portal for our company's various outlets to use. We need to look at the complete stack of software that will run our web application. The application we're building is a .NET Core MVC app, and we plan to deploy the application using nginx as a reverse proxy server on Ubuntu Linux. All of these software components form part of the container image.
+For example, assume we're developing an order-tracking portal for our company's various outlets to use. We need to look at the complete stack of software that runs our web application. The application we're building is a .NET Core MVC app, and we plan to deploy the application using `nginx` as a reverse proxy server on Ubuntu Linux. All of these software components form part of the container image.
 
 ## What is a container image?
 
-A container image is a portable package that contains software. It's this image that, when run, becomes our container. The container is an image's in-memory instance.
+A container image is a portable package that contains software, and when the image runs, it becomes our container. The container is an image's in-memory instance.
 
-A container image is immutable. Once you've built an image, you can't change it. The only way to change an image is to create a new image. This feature is our guarantee that the image we use in production is the same image used in development and QA.
+A container image is immutable. After you build an image, you can't change it. The only way to change an image is to create a new image. This feature guarantees that the image used in production is the same image used in development and QA.
 
 ## What is the host OS?
 
-The host OS is the OS on which the Docker engine runs. Docker containers running on Linux share the host OS kernel, and don't require a container OS as long as the binary can access the OS kernel directly.
+The host OS is where the Docker engine runs. Docker containers that run on Linux share the host OS kernel, and don't require a container OS as long as the binary has direct access the OS kernel.
 
 :::image type="content" source="../media/3-container-scratch-host-os.svg" alt-text="Diagram showing a Docker image with no base OS and the dependency on the host OS Kernel.":::
 
@@ -26,7 +26,7 @@ However, Windows containers need a container OS. The container depends on the OS
 
 ## What is the container OS?
 
-The container OS is the OS that's part of the packaged image. We have the flexibility to include different versions of Linux or Windows operating systems in a container. This flexibility allows us to access specific OS features or install additional software our applications might use.
+The container OS is the OS that's part of the packaged image. We have the flexibility to include different versions of Linux or Windows operating systems in a container. This flexibility allows us to access specific OS features or install more software our applications might use.
 
 :::image type="content" source="../media/3-container-ubuntu-host-os.svg" alt-text="Diagram showing a Docker image with an Ubuntu base OS and the dependency on the host OS Kernel.":::
 
@@ -40,9 +40,9 @@ We use `Unionfs` to create Docker images. `Unionfs` is a filesystem that allows 
 
 :::image type="content" source="../media/3-unionfs-diagram.svg" alt-text="Diagram showing the stacking of layers in a Docker image created with unionfs.":::
 
-For example, assume we're building an image for our web application from earlier. We'll layer the Ubuntu distribution as a base image on top of the boot file system. Next, we'll install nginx and our web app. We're effectively layering nginx and the web app on top of the original Ubuntu image.
+For example, assume we're building an image for our web application from earlier. We layer the Ubuntu distribution as a base image on top of the boot file system. Next, we install `nginx` and our web app. We're effectively layering `nginx` and the web app on top of the original Ubuntu image.
 
-A final writeable layer is created once the container is run from the image. However, this layer doesn't persist when the container is destroyed.
+A final writeable layer is created when the container is run from the image. However, this layer doesn't persist when the container is destroyed.
 
 ## What is a base image?
 
@@ -52,7 +52,7 @@ A base image is an image that uses the Docker `scratch` image. The `scratch` ima
 
 A parent image is a container image from which you create your images.
 
-For example, instead of creating an image from `scratch` and then installing Ubuntu, we'll use an image already based on Ubuntu. We can even use an image that already has nginx installed. A parent image usually includes a container OS.
+For example, instead of creating an image from `scratch` and then installing Ubuntu, we use an image already based on Ubuntu. We can even use an image that already has `nginx` installed. A parent image usually includes a container OS.
 
 ## What is the main difference between base and parent images?
 
@@ -64,11 +64,11 @@ On Windows, you can only create container images that are based on Windows base 
 
 A Dockerfile is a text file that contains the instructions we use to build and run a Docker image. It defines the following aspects of the image:
 
-- The base or parent image we use to create the new image
-- Commands to update the base OS and install additional software
-- Build artifacts to include, such as a developed application
-- Services to expose, such as storage and network configuration
-- Command to run when the container is launched
+- The base or parent image we use to create the new image.
+- Commands to update the base OS and install more software.
+- Build artifacts to include, such as a developed application.
+- Services to expose, such as storage and network configuration.
+- Command to run when the container is launched.
 
 Let's map these aspects to an example Dockerfile. Suppose we're creating a Docker image for our ASP.NET Core website. The Dockerfile might look like the following example:
 
@@ -76,13 +76,13 @@ Let's map these aspects to an example Dockerfile. Suppose we're creating a Docke
 # Step 1: Specify the parent image for the new image
 FROM ubuntu:18.04
 
-# Step 2: Update OS packages and install additional software
+# Step 2: Update OS packages and install more software
 RUN apt -y update &&  apt install -y wget nginx software-properties-common apt-transport-https \
-	&& wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
-	&& dpkg -i packages-microsoft-prod.deb \
-	&& add-apt-repository universe \
-	&& apt -y update \
-	&& apt install -y dotnet-sdk-3.0
+  && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+  && dpkg -i packages-microsoft-prod.deb \
+  && add-apt-repository universe \
+  && apt -y update \
+  && apt install -y dotnet-sdk-3.0
 
 # Step 3: Configure Nginx environment
 CMD service nginx start
@@ -103,11 +103,11 @@ EXPOSE 80:8080
 ENTRYPOINT ["dotnet", "website.dll"]
 ```
 
-We're not going to cover the Dockerfile file specification here, or the detail of each command in the preceding example. However, notice that there are several commands in this file that allow us to manipulate the image structure. For example, the `COPY` command copies the content from a specific folder on the local machine to the container image we're building.
+We're not going to explain the Dockerfile file specification here, or the detail of each command in the example. However, notice that there are several commands in this file that allow us to manipulate the image structure. For example, the `COPY` command copies the content from a specific folder on the local machine to the container image we're building.
 
-Recall that earlier, we mentioned that Docker images make use of `unionfs`. Each of these steps creates a cached container image as we build the final container image. These temporary images are layered on top of the previous image and presented as single image once all steps complete.
+Recall that earlier, we mentioned that Docker images make use of `unionfs`. Each of these steps creates a cached container image as we build the final container image. These temporary images are layered on top of the previous image and presented as single image when all steps are complete.
 
-Finally, notice the last step, step 8. The `ENTRYPOINT` in the file indicates which process will execute once we run a container from an image. If there's no ENTRYPOINT or another process to be executed, Docker will interpret that as there's nothing for the container to do, and the container will exit.
+Finally, notice Step 8. The `ENTRYPOINT` in the file indicates which process runs when we run a container from an image. If there's no `ENTRYPOINT` or another process to run, Docker interprets that as there's nothing for the container to do, and the container exits.
 
 ## How to manage Docker images
 
@@ -115,7 +115,7 @@ Docker images are large files that are initially stored on your PC, and we need 
 
 The Docker CLI and Docker Desktop allow us to manage images by building, listing, removing, and running them. We manage Docker images by using the `docker` client. The client doesn't execute the commands directly, and sends all queries to the `dockerd` daemon.
 
-We aren't going to cover all the client commands and command flags here, but we'll look at some of the most used commands. The _Learn more_ section in this module's _Summary_ unit includes links to Docker documentation, which covers all commands and command flags in detail.
+We aren't going to cover all the client commands and command flags here, but we look at some of the most used commands. The _Learn more_ section in this module's _Summary_ unit includes links to Docker documentation, which explains all commands and command flags in detail.
 
 ## How to build an image
 
@@ -157,9 +157,9 @@ Successfully built f982892ea056
 Successfully tagged temp-ubuntu:latest
 ```
 
-Don't worry if you don't understand the preceding output. However, notice the steps listed in the output. When each step executes, a new layer gets added to the image we're building.
+Don't worry if you don't understand the preceding output. However, notice the steps listed in the output. When each step runs, a new layer is added to the image we're building.
 
-Also, notice that we execute a number of commands to install software and manage configuration. For example, in step 2, we run the `apt -y update` and `apt install -y` commands to update the OS. These commands execute in a running container created for that step. Once the command runs, the intermediate container is removed. The underlying cached image is kept on the build host and not automatically deleted. This optimization ensures that later builds reuse these images to speed up build times.
+Also, notice that we run many commands to install software and manage configuration. For example, in Step 2, we run the `apt -y update` and `apt install -y` commands to update the OS. These commands run in a container created for that step. After the command runs, the intermediate container is removed. The underlying cached image is kept on the build host and not automatically deleted. This optimization ensures that later builds reuse these images to speed up build times.
 
 ### What is an image tag?
 
@@ -167,18 +167,15 @@ An image tag is a text string that's used to version an image.
 
 In the example build from earlier, notice the last build message that reads "Successfully tagged _temp-ubuntu: latest_". When building an image, we name and optionally tag the image using the `-t` command flag. In our example, we named the image using `-t temp-ubuntu`, while the resulting image name was tagged _temp-ubuntu: latest_. An image is labeled with the `latest` tag if you don't specify a tag.
 
-A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned the _latest_ tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
+A single image can have multiple tags assigned to it. By convention, the most recent version of an image is assigned to the _latest_ tag and a tag that describes the image version number. When you release a new version of an image, you can reassign the latest tag to reference the new image.
 
-For Windows, Microsoft doesn't provide base container images with the latest tag. For Windows base container images, you have to specify a tag that you want to use. For example, the Windows base container image for Server Core is `mcr.microsoft.com/windows/servercore`. Among its tags are `ltsc2016`, `ltsc2019`, and `ltsc2022`.
+For Windows, Microsoft doesn't provide base container images with the latest tag. For Windows base container images, you have to specify a tag that you want to use. For example, the Windows base container image for Server Core is `mcr.microsoft.com/windows/servercore` with the tags `ltsc2016`, `ltsc2019`, and `ltsc2022`.
 
 Here's another example. Suppose you want to use the .NET Core samples Docker images. Here we have four platforms versions from which we can choose:
 
 - `mcr.microsoft.com/dotnet/core/samples:dotnetapp`
-
 - `mcr.microsoft.com/dotnet/core/samples:aspnetapp`
-
 - `mcr.microsoft.com/dotnet/core/samples:wcfservice`
-
 - `mcr.microsoft.com/dotnet/core/samples:wcfclient`
 
 In the preceding image list, we can see that Microsoft provides multiple samples of .NET Core. Tags specify to which samples the image refers: ASP.NET, WCF Service, and so on.
@@ -194,19 +191,19 @@ docker images
 The output looks like the following example:
 
 ```output
-REPOSITORY          TAG                     IMAGE ID            CREATED                     SIZE
-tmp-ubuntu          latest             f89469694960        14 minutes ago         1.69GB
-tmp-ubuntu          version-1.0        f89469694960        14 minutes ago         1.69GB
-ubuntu              18.04                   a2a15febcdf3        5 weeks ago            64.2MB
+REPOSITORY     TAG           IMAGE ID       CREATED           SIZE
+tmp-ubuntu     latest        f89469694960    14 minutes ago    1.69GB
+tmp-ubuntu     version-1.0   f89469694960    14 minutes ago    1.69GB
+ubuntu         18.04         a2a15febcdf3    5 weeks ago       64.2MB
 ```
 
-Notice how the image is listed with its _Name_, _Tag_, and an _Image ID_. Recall that we can apply multiple labels to an image. The preceding output shows an example; even though the image names are different, we can see the IDs are the same.
+Notice how the image is listed with its _Repository_, _Tag_, and an _Image ID_. Recall that we can apply multiple labels to an image. The preceding output shows an example; even though the image names are different, we can see the IDs are the same.
 
 The image ID is a useful way to identify and manage images where the name or tag of an image might be ambiguous.
 
 ## How to remove an image
 
-You can remove an image from the local docker registry with the `docker rmi` command. This is useful if you need to save space on the container host disk, because container image layers add up to the total space available.
+You can remove an image from the local docker registry with the `docker rmi` command. Image removal is useful if you need to save space on the container host disk, because container image layers add up to the total space available.
 
 Specify the name or ID of the image to remove. This example removes the image for the sample web app using the image name:
 
@@ -216,4 +213,4 @@ docker rmi temp-ubuntu:version-1.0
 
 You can't remove an image if a container is still using the image. The `docker rmi` command returns an error message, which lists the container that relies on the image.
 
-We've explored the basics of Docker images, how to manage these images, and how to run a container from an image. Next, we'll look at how to manage containers.
+We explored the basics of Docker images, how to manage these images, and how to run a container from an image. Next, we look at how to manage containers.

@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.configure-ttl-for-document
 title: Configure time-to-live (TTL) value for a specific document
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure time-to-live (TTL) value for a specific document
   description: "Configure time-to-live (TTL) value for a specific document"
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

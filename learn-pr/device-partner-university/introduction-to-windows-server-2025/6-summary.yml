@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-windows-server-2025.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Introduction to Windows Server 2025" module.
+  ms.date: 08/27/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

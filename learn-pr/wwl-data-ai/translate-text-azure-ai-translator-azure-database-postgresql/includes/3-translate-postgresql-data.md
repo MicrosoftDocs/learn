@@ -2,13 +2,13 @@
 
 ## Translation in the azure_ai extension
 
-The [Azure AI Language service](/azure/ai-services/language-service/overview) provides powerful tools and models for working with text data. The integrations in the `azure_cognitive` schema of the `azure_ai` extension offer access to this rich set of natural language understanding and processing features accessible directly from the database. One of these functionalities includes the ability to translate text using the `translate()` function.
+The [Azure Language service](/azure/ai-services/language-service/overview) provides powerful tools and models for working with text data. The integrations in the `azure_cognitive` schema of the `azure_ai` extension offer access to this rich set of natural language understanding and processing features accessible directly from the database. One of these functionalities includes the ability to translate text using the `translate()` function.
 
 ## The `azure_cognitive.translate()` function
 
 Language translation is available in the `azure_cognitive.translate()` function. This function accepts input text and one or more languages you would like to translate it into. The function automatically detects the source language, or you can assign a source language for your input text.
 
-The function returns a table built on the Azure AI Translator service's [response body](/azure/ai-services/translator/reference/v3-0-translate#response-body). This response includes the following columns:
+The function returns a table built on the Azure Translator service's [response body](/azure/ai-services/translator/reference/v3-0-translate#response-body). This response includes the following columns:
 
 | Name | Description |
 | ---- | ----------- |

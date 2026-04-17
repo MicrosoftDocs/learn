@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Balancing host pools
   description: "Balancing host pools"
-  ms.date: 08/01/2022
+  ms.date: 06/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5-balance-host-pools.md)]

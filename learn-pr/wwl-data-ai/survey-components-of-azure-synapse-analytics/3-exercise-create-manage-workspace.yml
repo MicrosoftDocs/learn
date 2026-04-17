@@ -2,8 +2,6 @@
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.exercise-create-manage-workspace
 title: Exercise - Create and manage Azure Synapse Analytics workspace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create and manage Azure Synapse Analytics workspace
   description: "Exercise - Create and manage Azure Synapse Analytics workspace"
   ms.date: 06/23/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-exercise-create-manage-workspace.md)]
+  [!include[](includes/3-exercise-create-manage-workspace.md)]

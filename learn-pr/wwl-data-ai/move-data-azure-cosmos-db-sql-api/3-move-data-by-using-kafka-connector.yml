@@ -2,11 +2,9 @@
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-kafka-connector
 title: Move data by using a Kafka connector
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Move data by using a Kafka connector
   description: "Move data by using a Kafka connector"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

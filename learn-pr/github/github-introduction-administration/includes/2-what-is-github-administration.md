@@ -6,7 +6,7 @@ As a GitHub administrator, your goal is to keep everything working smoothly for 
 
 In GitHub, each user is an organization member that you can add to a team. You can create teams in your organization with cascading access permissions and mentions reflecting your company or group's structure. A team is a useful substructure for refining repository permissions on a more granular level and enabling communication and notification between team members.
 
-Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Microsoft Entra ID. When you synchronize a GitHub team with Microsoft Entra ID, you can replicate changes to GitHub automatically. This sync reduces the need for manual updates and custom scripts. You can use Microsoft Entra ID with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions, and removing member access to the organization.
+Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Microsoft Entra ID. When you synchronize a GitHub team with Microsoft Entra ID, you can replicate changes to GitHub automatically. This sync reduces the need for manual updates and custom scripts. This feature requires GitHub Enterprise Cloud and a verified domain. You can use Microsoft Entra ID with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions, and removing member access to the organization.
 
 Members of a team with *team maintainer* or repository *admin* permissions can:
 
@@ -47,7 +47,7 @@ We recommend setting up only one organization for your users and repositories. I
 
 - Duplicating an organization or sharing configurations between two organizations isn't possible. This means that you must set up everything from scratch every time you create an organization, which increases the risk of errors in your settings.
 - Depending on your software providers' policies, you might incur extra costs if you need to install some applications in multiple organizations.
-- Managing multiple organizations is more difficult!
+- Managing multiple organizations introduces additional complexity and setup time.
 
 ## Administration at enterprise level
 
@@ -61,7 +61,8 @@ At the enterprise level, members of an enterprise with the *owner* permissions c
 - Set up repository management policies, project board policies, team policies, and other security settings that apply to all the organizations, repositories, and members in the enterprise.
 - Extract various types of information about organizations via the use of custom scripts.
 - Apply enterprise-wide changes such as migrations via the use of custom scripts.
+- Use GitHub Connect to integrate GitHub Enterprise Server with GitHub.com, if applicable.
 
 ## Learn more
 
-Read more about [nested teams](https://docs.github.com/organizations/organizing-members-into-teams/about-teams#nested-teams)in GitHub Docs.
+Read more about [nested teams](https://docs.github.com/organizations/organizing-members-into-teams/about-teams#nested-teams) in GitHub Docs.

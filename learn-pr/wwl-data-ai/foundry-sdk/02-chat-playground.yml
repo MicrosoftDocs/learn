@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundry-sdk.chat-playground
+title: Explore with the model playground
+metadata:
+  title: Explore with the model playground
+  description: Learn to use the model playground and generate code samples for Microsoft Foundry SDK development.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/02-chat-playground.md)]

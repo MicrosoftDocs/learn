@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-enterprise-server-developer-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge-check
+  title: Knowledge Check
+  description: Knowledge check for the GitHub Enterprise Server Fundamentals for Developers module.
+  ms.date: 02/16/2026
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is a defining characteristic of GitHub Enterprise Server (GHES)?"
+    choices:
+    - content: "It's a fully managed Software as a Service (SaaS) platform hosted by GitHub."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Enterprise Server isn't an SaaS platform hosted by GitHub."
+    - content: "It automatically updates with new features as soon as they are released."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Enterprise Server follows a scheduled release cycle and doesn't update automatically with every new feature."
+    - content: "It's self-hosted and managed by the customer."
+      isCorrect: true
+      explanation: "Correct. GitHub Enterprise Server is deployed on infrastructure owned and managed by the customer, providing full control over data and operations."
+    - content: "It only supports public repositories."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Enterprise Server supports private repositories and enterprise collaboration workflows."
+  - content: "Why do new features often appear later on GitHub Enterprise Server than on GitHub.com?"
+    choices:
+    - content: "GHES is missing core GitHub functionality."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Enterprise Server includes core functionality but follows a different release cadence."
+    - content: "GHES follows a quarterly release cadence."
+      isCorrect: true
+      explanation: "Correct. GitHub Enterprise Server uses a structured quarterly release cycle to ensure stability for self-managed environments."
+    - content: "GHES doesn't support modern development workflows."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Enterprise Server supports modern development workflows."
+    - content: "GHES updates are controlled by individual developers."
+      isCorrect: false
+      explanation: "Incorrect. Updates are managed through official enterprise releases."
+  - content: "Which GitHub feature isn't supported on GitHub Enterprise Server?"
+    choices:
+    - content: "Pull requests."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests are supported on GitHub Enterprise Server."
+    - content: "GitHub Actions."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Actions are supported on GitHub Enterprise Server."
+    - content: "GitHub Codespaces."
+      isCorrect: true
+      explanation: "Correct. GitHub Codespaces is a cloud-only feature and isn't available on GitHub Enterprise Server."
+    - content: "Issues."
+      isCorrect: false
+      explanation: "Incorrect. Issues are supported on GitHub Enterprise Server."
+  - content: "You followed a GitHub.com tutorial that uses a feature you can't find in your GHES instance. What is the most likely next step?"
+    choices:
+    - content: "Assume the feature is broken and retry later."
+      isCorrect: false
+      explanation: "Incorrect. Feature availability depends on the deployed GHES version and configuration."
+    - content: "Confirm your organization's GHES version and check the version-specific documentation and release notes."
+      isCorrect: true
+      explanation: "Correct. Checking the GHES version and version-specific documentation helps confirm feature availability and behavior."
+    - content: "Create the feature manually using repository settings."
+      isCorrect: false
+      explanation: "Incorrect. Features cannot be manually enabled if they are not included in the deployed version."
+    - content: "Switch to a public repository so the feature becomes available."
+      isCorrect: false
+      explanation: "Incorrect. Repository visibility doesn't affect feature availability in GHES."

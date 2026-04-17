@@ -2,8 +2,6 @@
 uid: learn.improve-sign-in-security-authenticator.exercise.practice-user-sign-in
 title: Try the user sign-in experience
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Try the user sign-in experience
   description: "Confirm the test user can set up Microsoft Authenticator and have push notifications as the new default sign-in method. After confirming the experience for a test user, apply the policy to the remote employees group for your company."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise.md)]

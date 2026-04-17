@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.identify-security-risks-posture-management
+metadata:
+  title: Identify Security Risks by Using Cloud Security Posture Management
+  description: "Learn to use Cloud Security Posture Management (CSPM) in Microsoft Defender for Cloud to identify, prioritize, and trace security risks across Azure cloud and AI workloads — including attack path analysis and proactive risk hunting."
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Identify security risks by using Cloud Security Posture Management
+summary: In this module, you use Cloud Security Posture Management (CSPM) in Microsoft Defender for Cloud to identify, prioritize, and trace security risks across Azure environments — including generative AI workloads. You compare Foundational and Defender CSPM plan capabilities, interpret the risk-based Cloud Secure Score, investigate attack paths targeting cloud and AI resources, and run graph-based queries in Cloud Security Explorer to proactively discover hidden risks.
+abstract: |
+  After completing this module, you will be able to:
+    - Differentiate Foundational CSPM and Defender CSPM plan capabilities, including AI security posture management features
+    - Interpret the Cloud Secure Score and security recommendations using the risk-based prioritization model in the Microsoft Defender portal
+    - Identify externally exploitable attack paths — including those targeting AI workloads — using attack path analysis
+    - Run graph-based queries in Cloud Security Explorer to proactively discover security risks across Azure environments
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a basic level
+  - Understanding of Azure resource types and Azure role-based access control (RBAC)
+  - Knowledge of cloud security concepts including misconfigurations, vulnerabilities, and exposure
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.identify-security-risks-posture-management.introduction
+- learn.wwl.identify-security-risks-posture-management.explore-plans-posture-visibility
+- learn.wwl.identify-security-risks-posture-management.analyze-security-recommendations-risk-prioritization
+- learn.wwl.identify-security-risks-posture-management.identify-attack-paths-choke-points
+- learn.wwl.identify-security-risks-posture-management.hunt-risks-cloud-security-explorer
+- learn.wwl.identify-security-risks-posture-management.knowledge-check
+- learn.wwl.identify-security-risks-posture-management.summary
+badge:
+  uid: learn.wwl.identify-security-risks-posture-management.badge

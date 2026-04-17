@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-app-scaling-keda.5-exercise-deploy-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
   description: In this exercise, you use a Deployment manifest file to deploy the workload from a container registry to your Azure Kubernetes Service cluster.
   ms.date: 06/03/2024
@@ -13,4 +11,4 @@ title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-deploy-app.md)]
-
+

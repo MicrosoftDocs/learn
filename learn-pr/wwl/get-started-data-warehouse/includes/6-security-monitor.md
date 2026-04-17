@@ -1,75 +1,66 @@
-Security and monitoring are critical aspects of managing your data warehouse.
+Security and monitoring are critical aspects of managing your data warehouse. Fabric provides multiple layers of protection and visibility tools to help you control access and understand query performance.
 
 ## Security
 
-Data warehouse security is important to protect your data from unauthorized access. Fabric provides a number of security features to help you secure your data warehouse. These include:
+Fabric data warehouse security operates at multiple levels, from workspace access down to individual rows and columns. This design allows you to support the distinct needs of your organization by still allowing the democratization of data, but with governance.
 
-- Role-based access control (RBAC) to control access to the warehouse and its data.
-- SSL encryption to secure the communication between the warehouse and the client applications.
-- Azure Storage Service Encryption to protect the data in transit and at rest.
-- Azure Monitor and Azure Log Analytics to monitor the warehouse activity and audit the access to the data.
-- Multifactor authentication (MFA) to add an extra layer of security to user accounts.
-- Microsoft Entra ID integration to manage the user identities and access to the warehouse.
+### Workspace roles
 
-### Workspace permissions
-
-Data in Fabric is organized into workspaces, which are used to control access and manage the lifecycle of data and services. Appropriate workspace roles are the first line of defense in securing your data warehouse.
-
-In addition to workspace roles, you can grant *item permissions* and access through SQL.
+Data in Fabric is organized into *workspaces*, and workspace roles are the first layer of access control. Assign users to appropriate roles based on the level of access they need. For example, Admins have full control, while Viewers can view items but can't make changes.
 
 > [!TIP]
-> See [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces#roles-and-licenses) for more information on workspace roles.
-
+> For more information, see [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces#roles-and-licenses).
 ### Item permissions
 
-In contrast to workspace roles, which apply to all items within a workspace, you can use *item permissions* to grant access to individual warehouses. This enables you to share a single data warehouse for downstream consumption.
+In addition to workspace roles, you can grant **item permissions** to share individual warehouses without granting access to the entire workspace. This granularity is useful when you need to share a warehouse for downstream consumption with specific users.
 
-You can grant permissions to users via T-SQL or in the Fabric portal. Grant the following permissions to users who need to access your data warehouse:
+Grant the following permissions as needed:
 
-- Read: Allows the user to CONNECT using the SQL connection string. 
-- ReadData: Allows the user to read data from any table/view within the warehouse.
-- ReadAll: Allows user to read data the raw parquet files in OneLake that can be consumed by Spark.
+- **Read** - Allows the user to connect using the SQL analytics endpoint.
+- **ReadData** - Allows the user to read data from any table or view in the warehouse.
+- **ReadAll** - Allows the user to read raw parquet files in OneLake.
 
-A user connection to the SQL analytics endpoint will fail without Read permission at a minimum.
+> [!NOTE]
+> A user connection to the SQL analytics endpoint fails without Read permission at a minimum.
+
+### Granular SQL security
+
+For more precise access control, Fabric data warehouse supports granular security using T-SQL. These features let you restrict data visibility without changing the underlying tables:
+
+- **Object-level security** - Control access to specific tables, views, or procedures.
+- **Row-level security (RLS)** - Restrict which rows a user can see using WHERE clause predicates.
+- **Column-level security (CLS)** - Restrict which columns are visible to specific users.
+- **Dynamic data masking** - Mask sensitive data (such as email addresses or account numbers) from non-privileged users.
+
+Securing your warehouse data is important for both regulatory compliance and for ensuring that AI-powered tools like Copilot and data agents operate within governed boundaries. Security policies you define in T-SQL are enforced regardless of how the data is accessed.
+
+> [!TIP]
+> Row-level security, column-level security, and dynamic data masking are covered in depth in [Secure a Microsoft Fabric data warehouse](/training/modules/secure-data-warehouse-in-microsoft-fabric/).
 
 ## Monitoring
 
-Monitoring activities in your data warehouse is crucial to ensure optimal performance, efficient resource utilization, and security. It helps you identify issues, detect anomalies, and take action to keep the data warehouse running smoothly and securely.
+Monitoring warehouse activity helps you identify performance issues, optimize queries, and understand usage patterns.
 
-You can use *dynamic management views* (DMVs) to monitor connection, session, and request status to see live SQL query lifecycle insights. With DMVs, you can get details like the number of active queries and identify which queries are running for an extended period and require termination.
+### Query insights
 
-There are currently three DMVs available to use in Fabric:
+*Query insights* provides a central location for historical query data and actionable performance information. It retains data for 30 days and helps you identify long-running queries, track performance changes over time, and understand which queries consume the most resources.
 
-- sys.dm_exec_connections: Returns information about each connection established between the warehouse and the engine.
-- sys.dm_exec_sessions: Returns information about each session authenticated between the item and engine.
-- sys.dm_exec_requests: Returns information about each active request in a session.
+Query insights uses system views that you can query directly:
 
-### Query monitoring
+- `queryinsights.exec_requests_history` - Returns information about each completed SQL request.
+- `queryinsights.long_running_queries` - Returns queries ranked by execution time.
+- `queryinsights.exec_sessions_history` - Returns information about completed sessions.
 
-Use 'sys.dm_exec_requests' to identify long-running queries that may be impacting the overall performance of the database, and take appropriate action to optimize or terminate those queries.
+### Dynamic management views
 
-Start by identifying the queries that have been running for a long time. Use the following query to identify which queries have been running the longest, in descending order:
-
-```sql
-    SELECT request_id, session_id, start_time, total_elapsed_time
-    FROM sys.dm_exec_requests
-    WHERE status = 'running'
-    ORDER BY total_elapsed_time DESC;
-```
-
-You can continue investigating to understand which user ran the session with the long-running query, by running:
+You can also use *dynamic management views* (DMVs) to monitor active connections, sessions, and requests in real time. For example, use `sys.dm_exec_requests` to identify currently running queries:
 
 ```sql
-    SELECT login_name
-    FROM sys.dm_exec_sessions
-    WHERE 'session_id' = 'SESSION_ID WITH LONG-RUNNING QUERY';
-```
-
-Finally, you can use the `KILL` command to terminate the session with the long-running query:
-
-```sql
-    KILL 'SESSION_ID WITH LONG-RUNNING QUERY';
+SELECT request_id, session_id, start_time, total_elapsed_time
+FROM sys.dm_exec_requests
+WHERE status = 'running'
+ORDER BY total_elapsed_time DESC;
 ```
 
 > [!IMPORTANT]
-> You must be a workspace Admin to run the `KILL` command. Workspace Admins can execute all three DMVs. Member, Contributor, and Viewer roles can see their own results within the warehouse, but cannot see other users' results.
+> You must be a workspace Admin to run the `KILL` command to terminate long-running sessions. Members, Contributors, and Viewers can see their own results but can't see other users' queries.

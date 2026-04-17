@@ -1,19 +1,22 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-identity-principles-concepts
 metadata:
-  title: Describe identity concepts
+  title: Describe Identity Concepts
   description: "Describe identity concepts."
-  ms.date: 09/23/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
+  ms.service: security
   ms.topic: module
 title: Describe identity concepts
-summary: Learn about the key concepts of authentication and authorization and why identity is important in securing corporate resources. You'll also learn about some identity-related services.
+summary: Learn about the key concepts of authentication and authorization, why identity is the new security perimeter, how identity providers enable modern authentication and single sign-on, the role of directory services and Microsoft Entra ID, and how federation extends trust across organizational boundaries.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand the difference between authentication and authorization.
-  - Describe the concept of identity as a security perimeter.
-  - Describe identity-related services.
+  - Define authentication and authorization and explain how they work together to control access.
+  - Describe identity as the primary security perimeter and explain the four pillars of an identity infrastructure.
+  - Describe the role of an identity provider and how modern authentication uses tokens and single sign-on.
+  - Describe directory services, Active Directory Domain Services, and Microsoft Entra ID as its cloud evolution.
+  - Describe the concept of federation and how trust relationships enable cross-organizational access.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.

@@ -1,6 +1,6 @@
 The map for the *Improve your Reliability* learning path is based on a model from the site reliability engineering world called the Dickerson Hierarchy of Reliability. Mikey Dickerson was an SRE who became the founding administrator of the United States Digital Services. He created this hierarchy while facing one of the largest reliability crises ever.
 
-:::image type="content" source="../media/dickerson-hierarchy.png" alt-text="a diagram of a pyramid showing the seven levels of the hierarchy of reliability.":::
+:::image type="content" source="../media/dickerson-hierarchy.png" alt-text="A pyramid diagram showing the seven levels of the Dickerson hierarchy of reliability, from bottom to top: Monitoring, Incident Response, Post-Incident Review, Testing/Release, Capacity/Scale, Dev, and UX. The top two levels (Dev and UX) are grayed out.":::
 
 The model is patterned after Abraham Maslow's *hierarchy of needs*, which addresses human motivation. As with Maslow's hierarchy, to progress up the hierarchy you need to make sure that each of the lower levels has been addressed first. The levels on which we focus in this learning path, from bottom to top, are:
 
@@ -28,4 +28,4 @@ Success and the growth that comes with it, can be just as much a threat to relia
 
 There are two more levels in the hierarchy that aren't addressed in the *Improve your Reliability* learning path: the development process and the work that goes into making a good user experience (UX). These two subjects aren't discussed in the *Improve your Reliability* learning path, but other good Learn modules on these subjects are available.
 
-We have created a separate Learn module for each level in the hierarchy of reliability. We hope you join us for all five modules in this learning path.
+We have created a separate Learn module for each of the five levels covered in this learning path. We hope you join us for all five modules.

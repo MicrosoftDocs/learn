@@ -2,8 +2,6 @@
 uid: learn.wwl.tune-queries-azure-database-for-postgresql.assess-query-performance-query-store
 title: Assess query performance with the Query Store
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Assess query performance with the Query Store
   description: "Assess query performance with the Query Store."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-assess-query-performance-query-store.md)]
+  [!include[](includes/3-assess-query-performance-query-store.md)]

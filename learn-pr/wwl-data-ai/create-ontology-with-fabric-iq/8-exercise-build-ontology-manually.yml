@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-ontology-with-fabric-iq.exercise-build-ontology-manually
+title: Exercise - Build an ontology manually
+metadata:
+  title: Exercise - Build an Ontology Manually
+  description: "Hands-on practice creating an ontology from scratch with manual entity and relationship creation"
+  ms.date: 02/27/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/8-exercise-build-ontology-manually.md)]

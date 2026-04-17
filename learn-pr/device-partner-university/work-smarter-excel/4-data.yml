@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.work-smarter-excel.data
+title: Summarize and visualize data with Copilot Chat
+metadata:
+  title: Summarize And Visualize Data With Copilot Chat
+  description: This content is part of the "Work smarter in Excel with Copilot Chat" module.
+  ms.date: 09/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-data.md)]

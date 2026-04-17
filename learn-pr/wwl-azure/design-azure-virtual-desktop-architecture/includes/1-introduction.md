@@ -25,3 +25,4 @@ After completing this module, you'll be able to:
 
  -  Conceptual knowledge of Azure compute solutions.
  -  Working experience with virtual machines, containers, and app service.
+

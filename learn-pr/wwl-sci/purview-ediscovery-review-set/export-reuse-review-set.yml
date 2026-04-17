@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-review-set.export-reuse-review-set
+title: Export and reuse review set content
+metadata:
+  title: Export and reuse review set content
+  description: "Export and reuse review set content."
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/export-reuse-review-set.md)]

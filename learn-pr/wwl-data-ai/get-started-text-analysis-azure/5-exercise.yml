@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-text-analysis-in-azure.exercise
+title: Exercise - Get started with text analysis in Microsoft Foundry
+metadata:
+  title: Exercise - Get started with text analysis in Microsoft Foundry
+  description: "Exercise - Get started with text analysis in Microsoft Foundry"
+  ms.date: 04/10/2026
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise.md)]
+

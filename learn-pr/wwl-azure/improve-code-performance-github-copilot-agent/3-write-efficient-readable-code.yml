@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-code-performance-github-copilot-agent.write-efficient-readable-code
+title: Write efficient code without sacrificing readability
+metadata:
+  title: Write Efficient Code without Sacrificing Readability
+  description: Write efficient code without sacrificing readability.
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-write-efficient-readable-code.md)]

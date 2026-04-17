@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.investigate-alerts-defender
+title: Investigate DLP alerts in Microsoft Defender XDR
+metadata:
+  title: Investigate DLP alerts in Microsoft Defender XDR
+  description: "Investigate DLP alerts in Microsoft Defender XDR"
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/investigate-alerts-defender.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.name-resolution-issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot name resolution issues in Microsoft Azure
   description: "Name resolution is the process of matching the name of a computer to its network address. This module looks at name resolution issues for public networks, private networks, and internal networks that connect to Azure. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023
@@ -42,4 +40,4 @@ units:
 - learn.wwl.name-resolution-issues.summary
 badge:
   uid: learn.wwl.name-resolution-issues.badge
-
+

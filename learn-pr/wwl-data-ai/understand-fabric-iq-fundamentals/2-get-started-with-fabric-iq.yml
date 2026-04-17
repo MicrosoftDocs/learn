@@ -1,0 +1,14 @@
+### YamlMime: ModuleUnit
+uid: learn.wwl.understand-fabric-iq-fundamentals.get-started-with-fabric-iq
+title: Get started with Fabric IQ
+metadata:
+  title: Get Started with Fabric IQ
+  description: Learn what Microsoft Fabric IQ is, where to access it, and how ontologies define business vocabulary and bind to data sources.
+  ms.date: 02/09/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-get-started-with-fabric-iq.md)]

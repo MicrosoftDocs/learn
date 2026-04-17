@@ -4,8 +4,8 @@ In this module, you practiced the major steps of creating, configuring, and main
 
 You can learn more by reviewing the following documents.
 
- -  [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview?azure-portal=true).
- -  [AD DS Deployment](/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
- -  [Planning Operations Master Role Placement](/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)
- -  [Active Directory security groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
- -  [Group Policy Settings Reference Guide](https://www.microsoft.com/download/details.aspx?id=25250)
+- [Active Directory Domain Services Overview](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview?azure-portal=true).
+- [AD DS Deployment](/windows-server/identity/ad-ds/deploy/ad-ds-deployment?azure-portal=true)
+- [Planning Operations Master Role Placement](/windows-server/identity/ad-ds/plan/planning-operations-master-role-placement?azure-portal=true)
+- [Active Directory security groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
+- [Group Policy Settings Reference Guide](https://www.microsoft.com/download/details.aspx?id=25250)

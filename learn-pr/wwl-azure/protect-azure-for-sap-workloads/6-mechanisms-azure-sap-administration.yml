@@ -2,8 +2,6 @@
 uid: learn.wwl.protect-azure-for-sap-workloads.mechanisms-azure-sap-administration
 title: Explore mechanisms for Azure and SAP administration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore mechanisms for Azure and SAP administration
   description: "Explore mechanisms for Azure and SAP administration"
   ms.date: 12/10/2021
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-mechanisms-azure-sap-administration.md)]
+  [!include[](includes/6-mechanisms-azure-sap-administration.md)]

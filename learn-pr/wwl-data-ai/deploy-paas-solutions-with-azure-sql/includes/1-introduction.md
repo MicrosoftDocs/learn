@@ -9,3 +9,4 @@ At the end of this module, you'll be able to:
 - Understand PaaS provisioning and deployment options
 - Understand elastic pools and hyperscale features
 - Examine SQL Managed Instances
+

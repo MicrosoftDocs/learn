@@ -18,12 +18,12 @@ Use the following steps to complete this section of the exercise:
 
 1. Ensure that you have the `AccelerateDevGitHubCopilot` solution open in Visual Studio Code.
 
-1. Open the Chat view, and then enter a prompt that uses GitHub Copilot's `@workspace` participant to generate a description of the project.
+1. Open the Chat view, and then enter a prompt that uses GitHub Copilot's `#codebase` chat variable to generate a description of the project.
 
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace Describe this project
+    #codebase Describe this project
     ```
 
 1. Take a couple minutes to review the response.
@@ -67,7 +67,7 @@ Use the following steps to complete this section of the exercise:
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace #editor Describe the ConsoleApp class
+    #codebase #editor Describe the ConsoleApp class
     ```
 
 1. Take a couple minutes to review the response.
@@ -111,7 +111,7 @@ Use the following steps to complete this section of the exercise:
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace #editor Describe the Program.cs file
+    #codebase #editor Describe the Program.cs file
     ```
 
 1. Take a couple minutes to review the response.
@@ -150,7 +150,7 @@ Use the following steps to complete this section of the exercise:
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace /explain Explain how the data access classes work
+    #codebase /explain Explain how the data access classes work
     ```
 
 1. Take a couple minutes to review the response.
@@ -325,7 +325,7 @@ Use the following steps to complete this section of the exercise:
 1. To generate project documentation for your README file, enter the following prompt:
 
     ```plaintext
-    @workspace Generate the contents of a README.md file for the code repository. Use "Library App" as the project title. The README file should include the following sections: Description, Project Structure, Key Classes and Interfaces, Usage, License. Format all sections as raw markdown. Use a bullet list with indents to represent the project structure. Do not include ".gitignore" or the ".github", "bin", and "obj" folders.
+    #codebase Generate the contents of a README.md file for the code repository. Use "Library App" as the project title. The README file should include the following sections: Description, Project Structure, Key Classes and Interfaces, Usage, License. Format all sections as raw markdown. Use a bullet list with indents to represent the project structure. Do not include ".gitignore" or the ".github", "bin", and "obj" folders.
     ```
 
     > [!NOTE]

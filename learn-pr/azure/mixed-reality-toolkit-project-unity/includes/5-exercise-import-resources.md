@@ -42,7 +42,7 @@ To import the Mixed Reality Toolkit into your project, you'll use the Mixed Real
     > If you see any packages that are marked as deprecated, you should remove them and make sure that **Settings > Feature > Show deprecated packages** is deselected.
 
 1. After you've made your selection(s), select **Get Features**.
-1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, select **OK**.
+1. Select **Validate** to validate the packages you selected. When you see a dialog that says **No validation issues were detected**. Select **OK**.
 1. On the **Import Features** page, the left-side column, **Features**, displays the packages you selected. The right-side column, **Required dependencies**, displays any dependencies. You can select the **Details** link for any of these items to learn more about them.
 1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
 1. Select **Approve**, then select **Exit**.

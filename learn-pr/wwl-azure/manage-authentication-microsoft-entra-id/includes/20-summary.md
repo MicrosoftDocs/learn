@@ -1,1 +1,0 @@
-In this module, participants learn to configure Entra Verified ID, implement MFA, passwordless auth, password protection, SSO, integrate with identity providers, and enhance security through modern authentication protocols.

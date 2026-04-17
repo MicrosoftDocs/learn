@@ -1,90 +1,85 @@
-## Evaluating application portfolios with Defender for Cloud Apps
+With standards defined and a lifecycle strategy in place, you need to assess where your existing applications stand against these security expectations. Most organizations have a portfolio of applications built over time under varying security standards. Evaluating the security posture of this portfolio helps you prioritize remediation, identify systemic weaknesses, and demonstrate compliance progress to stakeholders.
 
-Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy.
+This unit focuses on the tools and approaches a cybersecurity architect uses to assess application security posture, centered on Microsoft Defender for Cloud and Microsoft Defender for Cloud Apps.
 
-CASBs work by discovering and providing visibility into Shadow IT and app use, monitoring user activities for anomalous behaviors, controlling access to your resources, providing the ability to classify and prevent sensitive information leak, protecting against malicious actors, and assessing the compliance of cloud services.
+## Microsoft Defender for Cloud as a CNAPP
 
-## The Defender for Cloud Apps framework
+Microsoft Defender for Cloud is a Cloud Native Application Protection Platform (CNAPP) that unifies three core capabilities into a single solution:
 
--   **Discover and control the use of Shadow IT**: Identify the cloud apps, IaaS, and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 31,000 SaaS apps against more than 80 risks. Start managing them to ensure security and compliance.
-    
--   **Protect your sensitive information anywhere in the cloud**: Understand, classify, and protect the exposure of sensitive information at rest. Leverage out-of-the box policies and automated processes to apply controls in real time across all your cloud apps.
-    
--   **Protect against cyberthreats and anomalies**: Detect unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications, analyze high-risk usage and remediate automatically to limit the risk to your organization.
-    
--   **Assess the compliance of your cloud apps**: Assess if your cloud apps meet relevant compliance requirements including regulatory compliance and industry standards. Prevent data leaks to non-compliant apps, and limit access to regulated data.
-    
+- **Cloud Security Posture Management (CSPM)** checks and improves security posture across cloud resources.
+- **Development Security Operations (DevSecOps)** manages code-level security across multicloud and multi-pipeline environments.
+- **Cloud Workload Protection Platform (CWPP)** defends workloads such as VMs, containers, databases, and serverless functions from threats.
+
+For application portfolio evaluation, the CSPM and DevSecOps capabilities are particularly relevant. They provide security recommendations, a composite secure score, and compliance assessments that help you understand the aggregate security posture of your application portfolio.
+
+### Foundational vs. advanced CSPM
+
+Defender for Cloud provides free Foundational CSPM capabilities, including centralized policy management, a secure score, and multicloud coverage. The paid Defender CSPM plan adds advanced capabilities that are critical for comprehensive portfolio evaluation:
+
+- **Attack path analysis** models traffic patterns and identifies potential risk paths through your environment before changes are implemented.
+- **Cloud Security Explorer** builds queries across a graph of your cloud environment to find security risks, such as internet-exposed applications with known vulnerabilities.
+- **Security governance** assigns remediation tasks to resource owners with deadlines and tracks progress toward security policy alignment.
+- **Regulatory compliance** assessments verify your application portfolio against standards such as Microsoft Cloud Security Benchmark, NIST SP 800-53, PCI-DSS, and ISO 27001.
+
+### DevSecOps insights
+
+Defender for Cloud extends posture management to the development pipeline itself. By connecting Azure DevOps, GitHub, and GitLab repositories, you gain visibility into infrastructure-as-code misconfigurations and exposed secrets in your codebase. These findings correlate with runtime cloud security posture data, giving you a code-to-cloud view of risk.
+
+For example, Defender for Cloud can identify that a container image deployed in production was built from a repository with known IaC misconfigurations, connecting the development-time issue to the runtime exposure.
+
+## Microsoft Defender for Cloud Apps
+
+While Defender for Cloud focuses on the security of your IaaS and PaaS workloads, Microsoft Defender for Cloud Apps (a Cloud Access Security Broker, or CASB) provides visibility and control over the SaaS applications in your portfolio. This includes both Microsoft SaaS applications (such as Microsoft 365) and non-Microsoft SaaS applications (such as Salesforce, Box, or ServiceNow).
+
+Defender for Cloud Apps delivers full protection for SaaS applications across four capability areas:
+
+- **Fundamental CASB functionality.** Discover and identify over 31,000 cloud apps in use across your organization through Shadow IT discovery. Risk-rank each app based on more than 90 risk factors covering security, compliance, and legal requirements. Classify and protect sensitive data across sanctioned and unsanctioned cloud apps using Microsoft Purview Information Protection integration. Evaluate whether your cloud apps meet regulatory compliance requirements and enforce data residency policies.
+- **SaaS Security Posture Management (SSPM).** Assess and improve the security configuration of your SaaS applications. SSPM identifies misconfigurations in connected apps and provides recommendations to strengthen their security posture, helping security teams reduce risk across the SaaS estate.
+- **Advanced threat protection.** As part of the Microsoft Defender XDR solution, detect anomalous behavior across cloud apps, including impossible travel, suspicious inbox rules, ransomware activity, and compromised accounts. Signal correlation across the full kill chain of advanced attacks provides broader visibility than standalone CASB solutions.
+- **App-to-app protection.** Monitor and govern OAuth-enabled apps that have permissions and privileges to critical data and resources. Detect overprivileged or unused apps, enforce app hygiene policies, and identify risky app-to-app interactions including unmanaged generative AI applications.
+
+The architecture of Defender for Cloud Apps uses Cloud Discovery (which analyzes traffic logs to identify apps in use), app connectors (API-level integration with major SaaS providers), and Conditional Access App Control (which proxies sessions for real-time monitoring and control).
+
+## Evaluation approach for architects
+
+As an architect designing a portfolio evaluation strategy, consider the following structured approach:
+
+### Establish a security baseline
+
+Define the minimum security requirements all applications must meet. Use the Microsoft Cloud Security Benchmark as a starting point and customize it based on your organization's risk tolerance, industry regulations, and data classification policies.
+
+### Classify applications by risk
+
+Not all applications warrant the same level of scrutiny. Classify your portfolio into tiers based on:
+
+- **Data sensitivity:** applications processing regulated or classified data require the most rigorous assessment.
+- **External exposure:** internet-facing applications and APIs carry more risk than internal tools.
+- **Business criticality:** applications supporting critical business processes require higher availability and security assurance.
+- **User population:** applications serving external customers face different threat profiles than internal employee tools.
+
+### Assess and prioritize findings
+
+Use the Defender for Cloud secure score and compliance dashboards to establish a portfolio-wide view. Identify systemic patterns, such as consistently misconfigured network security groups, missing encryption at rest, or overly permissive identity configurations. Systemic issues indicate gaps in standards or governance that affect multiple applications simultaneously.
+
+Prioritize remediation based on attack path analysis rather than individual finding severity alone. A medium-severity finding on an internet-exposed application with access to sensitive data may represent greater risk than a high-severity finding on an isolated internal tool.
+
+### Track progress and report
+
+Use security governance features to assign remediation tasks with deadlines and owners. Track Secure Score trends over time to demonstrate improvement. Report against regulatory compliance frameworks to satisfy audit requirements.
+
+### Integrate with DevOps workflows
+
+Connect your code repositories to Defender for Cloud to extend posture assessment to the development pipeline. This creates a continuous feedback loop where security issues identified in production inform development practices, and security gates in the pipeline prevent new issues from reaching production.
+
+## Defender for specific application workloads
+
+Defender for Cloud includes specialized plans for evaluating specific application types:
+
+- **Defender for App Service** identifies attacks targeting applications running on Azure App Service.
+- **Defender for Containers** provides environment hardening, vulnerability assessment, and runtime protection for Kubernetes clusters and container workloads.
+- **Defender for APIs** provides visibility into business-critical APIs, improves API security posture, and detects active real-time threats.
+- **Defender for Key Vault** detects unusual attempts to access or exploit key vault accounts that store application secrets.
+
+These workload-specific plans supplement the general CSPM assessment with deep, service-aware security intelligence.
 
 
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#architecture)
--->
-## Architecture
-
-Defender for Cloud Apps integrates visibility with your cloud by:
-
--   Using Cloud Discovery to map and identify your cloud environment and the cloud apps your organization is using.
--   Sanctioning and unsanctioning apps in your cloud.
--   Using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.
--   Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
--   Helping you have continuous control by setting, and then continually fine-tuning, policies.
-
-![Defender for Cloud Apps architecture diagram.](../media/proxy-architecture.png)
-
-
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#data-retention--compliance)
--->
-### Data retention & compliance
-
-For more information about Microsoft Defender for Cloud Apps data retention and compliance, see [Microsoft Defender for Cloud Apps data security and privacy](/defender-cloud-apps/cas-compliance-trust).
-
-
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#cloud-discovery)
--->
-### Cloud Discovery
-
-Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps that your organization is using. To create a snapshot report of your organization's cloud use, you can manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Defender for Cloud Apps log collectors to periodically forward your logs.
-
-For more information about Cloud Discovery, see [Set up Cloud Discovery](/defender-cloud-apps/set-up-cloud-discovery).
-
-
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#sanctioning-and-unsanctioning-an-app)
--->
-### Sanctioning and unsanctioning an app
-
-You can use Defender for Cloud Apps to sanction or unsanction apps in your organization by using the _cloud app catalog_. The Microsoft team of analysts has an extensive and continuously growing catalog of over 31,000 cloud apps that are ranked and scored based on industry standards. You can use the cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. Then, customize the scores and weights of various parameters to your organization's needs. Based on these scores, Defender for Cloud Apps lets you know how risky an app is. Scoring is based on over 90 risk factors that might affect your environment.
-
-
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#app-connectors)
--->
-### App connectors
-
-App connectors use APIs from cloud app providers to integrate the Defender for Cloud Apps cloud with other cloud apps. App connectors extend control and protection. They also give you access to information directly from cloud apps, for Defender for Cloud Apps analysis.
-
-To connect an app and extend protection, the app administrator authorizes Defender for Cloud Apps to access the app. Then, Defender for Cloud Apps queries the app for activity logs, and it scans data, accounts, and cloud content. Defender for Cloud Apps can enforce policies, detects threats, and provides governance actions for resolving issues.
-
-Defender for Cloud Apps uses the APIs provided by the cloud provider. Each app has its own framework and API limitations. Defender for Cloud Apps works with app providers on optimizing the use of APIs to ensure the best performance. Considering the various limitations that apps impose on APIs (such as throttling, API limits, and dynamic time-shifting API windows), the Defender for Cloud Apps engines utilize the allowed capacity. Some operations, like scanning all files in the tenant, require a large number of APIs, so they're spread over a longer period. Expect some policies to run for several hours or several days.
-
-
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#conditional-access-app-control-protection)
--->
-### Conditional Access App Control protection
-
-Microsoft Defender for Cloud Apps Conditional Access App Control uses reverse proxy architecture to give you the tools you need to have real-time visibility and control over access to and activities performed within your cloud environment. With Conditional Access App Control, you can protect your organization:
-
--   Avoid data leaks by blocking downloads before they happen
--   Set rules that force data stored in and downloaded from the cloud to be protected with encryption
--   Gain visibility into unprotected endpoints so you can monitor what's being done on unmanaged devices
--   Control access from non-corporate networks or risky IP addresses
-<!--
-[](/defender-cloud-apps/what-is-defender-for-cloud-apps#policy-control)
--->
-
-### Policy control
-
-You can use policies to define your users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. If needed, you can use policies to integrate remediation processes to achieve complete risk mitigation. Types of policies correlate to the different types of information you might want to gather about your cloud environment and the types of remediation actions you might take.

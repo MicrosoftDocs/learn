@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-agent-cost-structure.development-integration-costs
+title: Understand development and integration costs of AI agents
+metadata:
+  title: Understand Development and Integration Costs of AI Agents
+  description: This unit explores the development and integration costs associated with building AI agents, including software development, system integration, and testing.
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-development-integration-costs.md)]

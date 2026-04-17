@@ -1,0 +1,9 @@
+﻿Artificial Intelligence (AI) continues to transform business operations, enabling organizations to deliver enhanced customer experiences, streamline workflows, and drive innovation. Within the Microsoft ecosystem, Dynamics 365 and Copilot offer robust platforms for integrating AI-powered agents and solutions across sales, service, and contact center environments.
+
+This module provides an overview of foundational concepts and practical approaches for designing AI and agents tailored to business needs. Learners will explore the principles of Responsible AI, ensuring that solutions are developed and deployed in ways that are safe, trustworthy, and aligned with organizational values. Special attention is given to Microsoft's Responsible AI guidelines, which establish a framework for fairness, reliability, privacy, inclusiveness, transparency, and accountability throughout the AI lifecycle.
+
+Additionally, the module introduces best practices for configuring business terms and customizing Copilot features in Dynamics 365 applications. By mapping organizational vocabulary and processes into structured fields, organizations can ensure that AI-generated insights and recommendations reflect their unique operations, tone, and compliance requirements.
+
+Learners will also examine how to extend Copilot capabilities through custom connectors and design agents for seamless integration with Dynamics 365 Contact Center channels. This includes understanding the technical requirements for connector development, authentication and security considerations, and the importance of agent context in delivering relevant, personalized customer interactions.
+
+By the end of this module, participants will be equipped to design, implement, and govern AI solutions that support business objectives, uphold ethical standards, and maximize the value of Microsoft's AI technologies in real-world scenarios.

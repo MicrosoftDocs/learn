@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.instrument-app-opentelemetry
+metadata:
+  title: Instrument an App with OpenTelemetry
+  description: Learn how to instrument distributed applications with OpenTelemetry on Azure to capture distributed traces, diagnose latency issues, and gain deep observability into AI solution components.
+  ms.date: 02/19/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-monitor
+  ms.subservice: application-insights
+title: Instrument an app with OpenTelemetry
+summary: Learn how to instrument distributed applications with OpenTelemetry on Azure, create custom spans and traces, export telemetry to Azure Monitor Application Insights, and use trace data to debug performance issues in distributed AI solutions.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain how OpenTelemetry provides vendor-neutral observability for distributed AI applications on Azure.
+    - Add and configure the Azure Monitor OpenTelemetry Distro in an application to collect telemetry data.
+    - Create and manage custom spans and traces to capture request flows across distributed services.
+    - Export telemetry data to Azure Monitor Application Insights for analysis and visualization.
+    - Use trace data in Application Insights to identify and debug performance issues in distributed workflows.
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with distributed application architectures.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-monitor
+units:
+- learn.wwl.instrument-app-opentelemetry.introduction
+- learn.wwl.instrument-app-opentelemetry.explore-opentelemetry-observability
+- learn.wwl.instrument-app-opentelemetry.add-opentelemetry-sdk
+- learn.wwl.instrument-app-opentelemetry.configure-spans-traces
+- learn.wwl.instrument-app-opentelemetry.export-telemetry-azure-monitor
+- learn.wwl.instrument-app-opentelemetry.debug-distributed-flows-trace-data
+- learn.wwl.instrument-app-opentelemetry.exercise-instrument-app-opentelemetry
+- learn.wwl.instrument-app-opentelemetry.knowledge-check
+- learn.wwl.instrument-app-opentelemetry.summary
+badge:
+  uid: learn.wwl.instrument-app-opentelemetry.badge

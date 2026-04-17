@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-managed-identities
 metadata:
-  title: Implement managed identities
+  title: Implement Managed Identities
   description: "Implement managed identities"
   ms.date: 07/16/2024
-  author: wwlpublish
+  author: JeffKoMS
   ms.author: jeffko
   ms.topic: module
   ms.custom:

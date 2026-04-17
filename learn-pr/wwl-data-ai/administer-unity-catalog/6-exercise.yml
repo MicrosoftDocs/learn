@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-unity-catalog-for-governance.exercise
+title: "Exercise - Transition from the Hive metastore"
+metadata:
+  title: "Exercise - Transition from the Hive metastore"
+  description: "Upgrade existing tables from the Hive metastore to Unity Catalog."
+  ms.date: 10/21/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

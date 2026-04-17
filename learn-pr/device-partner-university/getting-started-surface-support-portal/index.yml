@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.getting-started-surface-support-portal
+title: Getting started with Surface Support Portal
+metadata:
+  title: Getting started with Surface Support Portal
+  description: 'In this module, learn how to get started with Surface Support Portal, including prerequisites for access, required roles and permissions, and how to verify access to the portal for managing your Surface support cases effectively.'
+  ms.date: 04/13/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  This module provides an overview of the Surface Support Portal, including how to get started, prerequisites for access, required roles and permissions, and how to verify access to the portal for managing your Surface support cases effectively.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Understand the prerequisites for accessing Surface Support Portal.
+  - Identify the required roles and permissions needed for access.
+  - Verify access to Surface Support Portal to manage your Surface support cases effectively.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/getting-started-surface-support-portal-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.getting-started-surface-support-portal.introduction
+  - learn.dpu.getting-started-surface-support-portal.access-the-microsoft-365-admin-center
+  - learn.dpu.getting-started-surface-support-portal.verify-surface-support-portal-access-requirements
+  - learn.dpu.getting-started-surface-support-portal.assign-required-roles-for-surface-support-portal
+  - learn.dpu.getting-started-surface-support-portal.verify-surface-support-portal-access
+  - learn.dpu.getting-started-surface-support-portal.knowledge-check
+  - learn.dpu.getting-started-surface-support-portal.summary
+badge:
+  uid: learn.dpu.getting-started-surface-support-portal.badge

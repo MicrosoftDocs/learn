@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.summarize-sales-data.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Summarize sales data using Copilot in Excel" module.
+  ms.date: 10/10/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

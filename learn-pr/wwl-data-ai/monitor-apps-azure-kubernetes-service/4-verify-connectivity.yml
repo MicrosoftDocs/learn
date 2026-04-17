@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-apps-azure-kubernetes-service.verify-connectivity
+title: Verify service connectivity and endpoints
+metadata:
+  title: Verify Service Connectivity and Endpoints
+  description: Verify service connectivity and endpoints
+  ms.date: 12/31/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-verify-connectivity.md)]

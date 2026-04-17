@@ -2,14 +2,16 @@
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-blob-storage
 title: Design for Azure Blob Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Blob Storage
   description: "Design for Azure Blob Storage"
-  ms.date: 12/10/2024
+  ms.date: 05/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 7
+durationInMinutes: 9
 content: |
   [!include[](includes/5-design-for-azure-blob-storage.md)]

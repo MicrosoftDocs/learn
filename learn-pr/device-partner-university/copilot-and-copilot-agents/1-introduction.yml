@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-and-copilot-agents.introduction
+title: Support organizational success
+metadata:
+  title: Support Organizational Success
+  description: This content is part of the "Microsoft 365 Copilot and Copilot agents" module.
+  ms.date: 06/26/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

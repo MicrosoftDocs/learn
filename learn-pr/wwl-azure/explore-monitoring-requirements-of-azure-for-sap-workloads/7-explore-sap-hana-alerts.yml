@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-sap-hana-alerts
 title: Explore SAP HANA alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAP HANA alerts
   description: "Explore SAP HANA alerts, including alerts for the CPU, operating system, memory, network, and storage."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-explore-sap-hana-alerts.md)]
+  [!include[](includes/7-explore-sap-hana-alerts.md)]

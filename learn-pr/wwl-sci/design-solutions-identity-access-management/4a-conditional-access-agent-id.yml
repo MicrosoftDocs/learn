@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-identity-access-management.conditional-access-agent-id
+title: Design Conditional Access policies for AI agents
+metadata:
+  title: Design Conditional Access policies for AI agents
+  description: "Design Conditional Access policies for AI agent identities using Microsoft Entra Agent ID, including agent architecture, policy configuration, risk-based controls, and investigation techniques."
+  ms.date: 03/03/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 9
+content: |
+  [!include[](includes/4a-conditional-access-agent-id.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.explore-features
 title: Learn vCore-based Azure Cosmos DB for MongoDB
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Learn vCore-based Azure Cosmos DB for MongoDB
   description: "Learn vCore-based Azure Cosmos DB for MongoDB"
   ms.date: 11/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-explore-features.md)]
+  [!include[](includes/2-explore-features.md)]

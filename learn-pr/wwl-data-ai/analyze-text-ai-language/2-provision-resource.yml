@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-text-ai-language.provision-resource
-title: Provision an Azure AI Language resource
+title: Azure Language in Microsoft Foundry Tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Provision an Azure AI Language resource
-  description: Provision an Azure AI Language resource
-  author: wwlpublish
+  title: Azure Language in Microsoft Foundry Tools
+  description: Azure Language in Microsoft Foundry Tools is accessed through a Microsoft Foundry resource.
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 03/10/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -17,4 +15,3 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-provision-resource.md)]
-

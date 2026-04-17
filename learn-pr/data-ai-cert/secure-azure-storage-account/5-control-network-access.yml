@@ -2,8 +2,6 @@
 uid: learn.azure.secure-azure-storage-account.control-network-access
 title: Control network access to your storage account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Control network access to your storage account
   description: "Control network access to your storage account"
   ms.date: 09/02/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-control-network-access.md)]
+  [!include[](includes/5-control-network-access.md)]

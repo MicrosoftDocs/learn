@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-ai-special-education.role-ai-special-education
+title: "The role of AI in special education"
+metadata:
+  title: "The Role of AI in Special Education"
+  description: "Discover how AI empowers special education with tailored plans, accessibility, and data insights to improve learning and manage time."
+  ms.date: 11/18/2025
+  author: Randall-Knapp
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-role-ai-special-education.md)]

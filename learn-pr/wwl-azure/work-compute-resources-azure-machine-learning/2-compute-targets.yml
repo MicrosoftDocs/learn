@@ -2,13 +2,11 @@
 uid: learn.wwl.work-compute-resources-azure-machine-learning.compute-targets
 title: Choose the appropriate compute target
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose the appropriate compute target
   description: Learn about the different available compute targets in Azure Machine Learning, and how to choose when to use which type.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

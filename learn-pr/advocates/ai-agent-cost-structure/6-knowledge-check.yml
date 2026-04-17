@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-agent-cost-structure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "This unit provides a knowledge check to assess understanding of the key cost drivers associated with AI agents."
+  ms.date: 10/01/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which factor most directly influences licensing costs when using hosted large language models (LLMs) such as Azure OpenAI?"
+    choices:
+    - content: "Token usage based on model interactions"
+      isCorrect: true
+      explanation: "Hosted LLMs use token-based pricing, where licensing costs scale with the number of tokens processed during model interactions."
+    - content: "Storage tier selection for archived datasets"
+      isCorrect: false
+      explanation: "Storage tiering affects infrastructure costs, not licensing fees for hosted LLMs."
+    - content: "VM orchestration method used for deployment"
+      isCorrect: false
+      explanation: "Orchestration impacts compute efficiency and scalability, but not licensing costs for hosted models."
+  - content: "Which strategy helps reduce model development costs when training AI agents on Azure?"
+    choices:
+    - content: "Use spot instances or serverless compute for interruptible workloads"
+      isCorrect: true
+      explanation: "Spot instances and serverless compute offer cost-effective options for transient tasks like model training, reducing overall development expenses."
+    - content: "Deploy full-time GPU usage for all training jobs"
+      isCorrect: false
+      explanation: "Full-time GPU usage can be expensive and is only recommended when necessary for performance."
+    - content: "Use online inference endpoints for benchmarking models"
+      isCorrect: false
+      explanation: "Online inference is suited for production workloads, not for benchmarking during development."
+  - content: "Which data issue is most likely to increase token usage and reduce model relevance during inference?"
+    choices:
+    - content: "Noisy data"
+      isCorrect: true
+      explanation: "Noisy data introduces irrelevant or inconsistent information, inflating token usage and degrading model performance."
+    - content: "Duplicate records"
+      isCorrect: false
+      explanation: "Duplicate records increase storage and indexing overhead but don't directly affect token usage during inference."
+    - content: "Missing labels"
+      isCorrect: false
+      explanation: "Missing labels limit supervised learning and semantic search, but token inefficiency is primarily caused by noisy data."
+  - content: "Which development strategy typically requires higher upfront labor costs but offers deeper control over AI agent behavior?"
+    choices:
+    - content: "Custom-build"
+      isCorrect: true
+      explanation: "Custom-building AI agents involves more engineering effort and longer development cycles, but provides greater control and flexibility."
+    - content: "Prebuilt"
+      isCorrect: false
+      explanation: "Prebuilt agents accelerate time to market and reduce complexity, but offer less customization and control."
+    - content: "Serverless deployment"
+      isCorrect: false
+      explanation: "Serverless is a hosting strategy, not a development approach, and doesn't directly determine labor costs or control depth."
+  - content: "Which practice helps reduce token usage and improve cost efficiency when operating large language models (LLMs)?"
+    choices:
+    - content: "Crafting concise prompts through prompt engineering"
+      isCorrect: true
+      explanation: "Concise prompts reduce the number of tokens processed, lowering costs and improving model responsiveness."
+    - content: "Using full-length context windows for every interaction"
+      isCorrect: false
+      explanation: "Maxing out context windows increases token usage and cost unnecessarily unless required by the task."
+    - content: "Stress testing endpoints with high-volume token loads"
+      isCorrect: false
+      explanation: "Stress testing incurs token charges and should be simulated or done using unused PTUs to avoid excess cost."
+

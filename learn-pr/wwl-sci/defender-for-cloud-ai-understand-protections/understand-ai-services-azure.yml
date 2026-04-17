@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defender-for-cloud-ai-understand-protections.understand-ai-services-azure
+title: Understand AI services in Azure
+metadata:
+  title: Understand AI services in Azure
+  description: "Understand AI services in Azure."
+  ms.date: 10/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/understand-ai-services-azure.md)]

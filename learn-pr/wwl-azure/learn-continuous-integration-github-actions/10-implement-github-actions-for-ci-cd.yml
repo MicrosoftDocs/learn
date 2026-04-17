@@ -3,9 +3,9 @@ uid: learn.wwl.learn-continuous-integration-github-actions.implement-github-acti
 title: Implement GitHub Actions for CI/CD
 metadata:
   title: Implement GitHub Actions for CI/CD
-  description: "Implement GitHub Actions for CI/CD"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  description: "Put it all together by implementing comprehensive CI/CD pipelines using GitHub Actions best practices."
+  ms.date: 09/26/2025
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 40

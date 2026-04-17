@@ -5,7 +5,7 @@ metadata:
   description: "In this module, you'll learn about Microsoft Intune, a comprehensive tool designed to manage and secure devices, applications, and data within an organization."
   ms.date: 06/06/2024
   author: wwlpublish
-  ms.author: rstearman
+  ms.author: dahans
   ms.topic: module
   ms.service: microsoft-intune
   ai-usage: ai-assisted

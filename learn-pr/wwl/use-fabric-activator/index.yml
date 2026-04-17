@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.use-fabric-activator
+metadata:
+  title: Use Activator in Microsoft Fabric
+  description: "Fabric Activator is an event detection engine that automatically triggers actions when specific patterns or conditions are detected in data sources."
+  ms.date: 09/12/2025
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: fabric
+  ms.subservice: rti-core
+title: Use Activator in Microsoft Fabric
+summary: Fabric Activator is an event detection engine that automatically triggers actions when specific patterns or conditions are detected in data sources.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define data objects and properties in Activator
+  - Create rules that evaluate conditions in your data
+  - Configure actions that execute when rule conditions are met
+prerequisites: Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+units:
+- learn.wwl.use-fabric-activator.introduction
+- learn.wwl.use-fabric-activator.configure-activator
+- learn.wwl.use-fabric-activator.create-rules
+- learn.wwl.use-fabric-activator.configure-actions
+- learn.wwl.use-fabric-activator.exercise
+- learn.wwl.use-fabric-activator.knowledge-check
+- learn.wwl.use-fabric-activator.summary
+badge:
+  uid: learn.wwl.use-fabric-activator.badge

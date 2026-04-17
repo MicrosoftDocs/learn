@@ -2,8 +2,6 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.arm-templates
 title: Azure Resource Manager templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Resource Manager templates
   description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and in mixed reality.
   ms.date: 09/10/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-arm-templates.md)]
-
+

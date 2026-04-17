@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-foundry-iq.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of Foundry IQ and knowledge-enhanced AI agents.
+  ms.date: 01/15/2026
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the primary advantage of Retrieval Augmented Generation (RAG) over simple AI agents?"
+    choices:
+    - content: "RAG eliminates the need for large language models by relying entirely on document retrieval."
+      isCorrect: false
+      explanation: "Incorrect. RAG augments large language models with retrieval capabilities—it doesn't replace them. The agent still uses its language model to generate responses, but now grounds them in retrieved organizational content."
+    - content: "RAG enables agents to ground responses in current organizational information and provide source transparency."
+      isCorrect: true
+      explanation: "Correct. RAG delivers three critical advantages: real-time updates that keep agents current, source transparency that shows which documents informed each response, and factual grounding that eliminates fabricated information."
+    - content: "RAG automatically retrains the language model whenever organizational documents change."
+      isCorrect: false
+      explanation: "Incorrect. RAG doesn't retrain the model. Instead, it retrieves current information at query time and augments the agent's context, allowing it to stay current without retraining."
+  - content: "Which data source option provides real-time access to SharePoint content with Microsoft 365 governance?"
+    choices:
+    - content: "SharePoint Indexed, which pre-processes SharePoint content into Azure AI Search."
+      isCorrect: false
+      explanation: "Incorrect. SharePoint Indexed creates a pre-processed index for faster search and advanced features, but it's not real-time. The indexed content depends on the indexing schedule."
+    - content: "SharePoint Remote, which queries SharePoint sites and libraries in real-time."
+      isCorrect: true
+      explanation: "Correct. SharePoint Remote provides real-time queries to SharePoint without pre-indexing, respects existing SharePoint permissions, and always accesses current content."
+    - content: "Azure Blob Storage, which connects to SharePoint files stored as blobs."
+      isCorrect: false
+      explanation: "Incorrect. Azure Blob Storage is a separate data source for files stored in Azure Storage containers, not for accessing SharePoint content."
+  - content: "What is the purpose of scoring profiles in Foundry IQ knowledge bases?"
+    choices:
+    - content: "To encrypt sensitive fields and protect confidential information during retrieval."
+      isCorrect: false
+      explanation: "Incorrect. Scoring profiles influence search relevance, not data security. They boost specific fields or attributes so more important results surface first during retrieval."
+    - content: "To boost specific fields or attributes so more important results surface first."
+      isCorrect: true
+      explanation: "Correct. Scoring profiles let you define field weights (like boosting title matches 3x over content matches) and freshness functions (like prioritizing documents modified within the last 90 days) to influence ranking."
+    - content: "To configure how documents are chunked and embedded for semantic search."
+      isCorrect: false
+      explanation: "Incorrect. Chunking and embedding happen during indexing when you add data sources. Scoring profiles affect retrieval ranking after content is already indexed."
+  - content: "Why is it critical to specify retrieval behavior in agent instructions?"
+    choices:
+    - content: "Without proper instructions, agents might answer from training data instead of the knowledge base, provide unverifiable responses, or fail to cite sources."
+      isCorrect: true
+      explanation: "Correct. Effective instructions specify when to retrieve (always use the knowledge base), how to cite (exact format for source attribution), and what to do when unsure (fallback behavior when information isn't found)."
+    - content: "Instructions determine the semantic ranking algorithm that Foundry IQ applies to search results."
+      isCorrect: false
+      explanation: "Incorrect. Semantic ranking is configured at the knowledge base level, not in agent instructions. Instructions control agent behavior—how it decides to search, cite, and respond."
+    - content: "Instructions enable the agent to automatically update knowledge base content when it detects outdated information."
+      isCorrect: false
+      explanation: "Incorrect. Agents consume knowledge from knowledge bases but don't modify them. Knowledge bases update when you change the connected data sources, not through agent instructions."

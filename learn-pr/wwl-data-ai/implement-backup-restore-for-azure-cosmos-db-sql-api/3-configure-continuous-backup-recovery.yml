@@ -2,8 +2,6 @@
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.configure-continuous-backup-recovery
 title: Configure continuous backup and recovery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure continuous backup and recovery
   description: "Configure continuous backup and recovery"
   ms.date: 02/27/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-configure-continuous-backup-recovery.md)]
+  [!include[](includes/3-configure-continuous-backup-recovery.md)]

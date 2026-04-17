@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-data-operations-azure-managed-redis.exercise-data-operations
+
+title: Exercise - Perform data operations in Azure Managed Redis
+metadata:
+  title: Exercise - Perform Data Operations in Azure Managed Redis
+  description: Exercise - Perform data operations in Azure Managed Redis
+  ms.date: 11/21/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-data-operations.md)]

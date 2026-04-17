@@ -57,7 +57,7 @@ If your goal is to deploy PIM for Azure resources, follow our "Discover Azure re
 
 ## Enforce principle of least privilege
 
-It's important to make sure that you've enforced the principle of least privilege in your organization for both your Microsoft Entra D and your Azure roles.
+It's important to make sure that you've enforced the principle of least privilege in your organization for both your Microsoft Entra ID and your Azure roles.
 
 ### Plan least privilege delegation
 

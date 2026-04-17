@@ -1,4 +1,4 @@
-Your first decision in your application architecture design is to plan how the application components communicate. Defining your component strategy helps you choose the appropriate Azure service.
+Your first decision in your AI-ready application architecture design is to plan how the application components communicate. Defining your component strategy helps you choose the appropriate Azure service.
 
 Suppose you're designing the architecture for a home improvement video-sharing application for Tailwind Traders. You want your application to be as reliable and scalable as possible. You're planning to use Azure technologies to build a robust communication infrastructure. Before you can choose the appropriate Azure services, you need to design how each application component communicates with the other components. For each type of communication, you might choose a different Azure technology.
 
@@ -18,13 +18,16 @@ In a message communication, the sending component expects the destination to pro
 
 Suppose a user uploads a new video by using your mobile video-sharing app. Your mobile app must send the video to the web API that runs in Azure. The video file must be sent, not just an alert that indicates there's a new video. The mobile app expects that the web API stores the new video in the database and makes the video available to other users.
 
+
+
 #### Events
 
 Now let's take a closer look at [events](/azure/event-grid/compare-messaging-services#event).
 
-- Events are lighter weight than messages and are most often used for broadcast communications.
+Events are lighter weight than messages and are most often used for broadcast communications. An event-driven architecture consists of event producers that generate a stream of events, event consumers that listen for these events, and event channels that transfer events from producers to consumers.
 
-- An event has two components, a _publisher_ and _subscribers_. The event publisher sends the event. The event subscribers receive events.
+:::image type="content" source="../media/event-pull.png" alt-text="Diagram of an event with producers and subscribers." border="false":::
+
 
 With events, receiving components generally decide the communications in which they're interested and then subscribe to those events. An intermediary manages the subscription process. The intermediary uses services like Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary routes that event to any interested parties. This pattern is known as a _publish-subscribe_ architecture and is the most used. 
 
@@ -39,6 +42,8 @@ Events have the following characteristics:
 - An event is often intended to "fan out" or have many subscribers for each publisher.
 
 - An event is a discrete unit that's unrelated to other events, but an event might be part of a related and ordered series.
+
+
 
 ### Things to consider when choosing messages or events
 

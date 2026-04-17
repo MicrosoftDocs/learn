@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.define-foundation-pillars
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Define the foundation pillars of DevOps: Architecture and Technology'
   description: "There are three things required to make DevOps happen: the cultural component, tools and technology, and architecture. Discover the last two foundation pillars of DevOps, Architecture and Technology!"
   ms.date: 09/20/2020
@@ -45,4 +43,4 @@ units:
 - learn.wwl.define-foundation-pillars.summary
 badge:
   uid: learn.wwl.define-foundation-pillars.badge
-
+

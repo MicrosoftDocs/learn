@@ -2,8 +2,6 @@
 uid: learn.languages.dotnet-deploy-microservices-kubernetes.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Managing many containerized microservices manually is messy and time consuming. Learn how to deploy a .NET-based containerized microservice into Kubernetes.
   ms.date: 12/06/2024
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

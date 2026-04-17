@@ -35,7 +35,7 @@ This tool can be helpful to you in identifying any issues that can affect a migr
 Data Migration Assistant (DMA) is a tool designed to facilitate your transition to an updated data platform. It identifies potential compatibility problems that could affect the functionality of your database on the new version of SQL Server. In addition to suggesting enhancements for performance and reliability in your target environment, DMA also enables the migration of your schema, data, and uncontained objects from your source server to your target server.
 
 > [!NOTE]
-> Whenever possible, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview?azure-portal=true) for enhanced overall experience, which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true), or via [Azure Portal](https://aka.ms/dmsazureportal?azure-portal=true), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli?azure-portal=true).
+> Whenever possible, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview?azure-portal=true) for enhanced overall experience, which is available via the [Azure Portal](https://aka.ms/dmsazureportal?azure-portal=true), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli?azure-portal=true).
 
 ### Using the Data Migration Assistant
 

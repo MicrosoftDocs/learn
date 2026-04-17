@@ -6,6 +6,8 @@ You can explore your Azure data with many different tools, depending on the data
 
 In this module, you explored different ways to use Storage Explorer to connect to your storage accounts. You used the Azure CLI to create Data Lake Gen2 Storage-enabled storage accounts. Finally, you connected Storage Explorer to Data Lake Storage. Then you uploaded and viewed the data that's stored there.
 
+[!INCLUDE [](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 ## Learn more
 
 To learn more about Storage Explorer, see the following articles:

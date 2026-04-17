@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.knowlege-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/26/2024
@@ -81,4 +79,4 @@ quiz:
       explanation: "That's incorrect. Cosmos DB doesn't have a high-performance mode."
     - content: "Partitions that are hit by a disproportionately high number of queries."
       isCorrect: true
-      explanation: "That's correct. Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."
+      explanation: "That's correct. Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."

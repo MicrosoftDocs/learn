@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.spec-driven-development-github-spec-kit-microsoft-internal.generate-implementation-tasks-file
+title: Generate tasks and implement code
+metadata:
+  title: Generate Tasks and Implement Code
+  description: "Generate tasks and implement code."
+  ms.date: 1/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-generate-implementation-tasks-file.md)]

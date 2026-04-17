@@ -1,14 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.give-your-ai-agent-skills
+hidden: true
 metadata:
   title: Create Semantic Kernel plugins
   description: "Learn how native functions can accomplish customized tasks with the semantic kernel SDK."
-  ms.date: 01/24/2025
+  ms.date: 05/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: semantic-kernel
   ai-usage: human-only
 title: Create Semantic Kernel plugins
@@ -29,20 +30,19 @@ prerequisites: |
   -   Access to Azure OpenAI services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- developer
+  - developer
 products:
-- dotnet
-- vs-code
-- azure-openai
+  - dotnet
+  - vs-code
+  - azure-openai
 units:
-- learn.wwl.give-your-ai-agent-skills.introduction
-- learn.wwl.give-your-ai-agent-skills.understand-native-plugins
-- learn.wwl.give-your-ai-agent-skills.exercise-create-native-plugins
-- learn.wwl.give-your-ai-agent-skills.configure-function-choices
-- learn.wwl.give-your-ai-agent-skills.exercise-configure-available-functions
-- learn.wwl.give-your-ai-agent-skills.knowledge-check
-- learn.wwl.give-your-ai-agent-skills.summary
+  - learn.wwl.give-your-ai-agent-skills.introduction
+  - learn.wwl.give-your-ai-agent-skills.understand-native-plugins
+  - learn.wwl.give-your-ai-agent-skills.configure-function-choices
+  - learn.wwl.give-your-ai-agent-skills.exercise-create-plugins
+  - learn.wwl.give-your-ai-agent-skills.knowledge-check
+  - learn.wwl.give-your-ai-agent-skills.summary
 badge:
   uid: learn.wwl.give-your-ai-agent-skills.badge

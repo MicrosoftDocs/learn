@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.secured-devices-by-microsoft.provide-ultimate-control
+title: Providing ultimate control
+metadata:
+  title: Providing Ultimate Control
+  description: This content is part of the "Secure at every layer with Microsoft Surface" module.
+  ms.date: 02/03/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-provide-ultimate-control.md)]

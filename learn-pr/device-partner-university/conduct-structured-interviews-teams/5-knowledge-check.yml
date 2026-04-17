@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.conduct-structured-interviews-teams.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Conduct structured interviews using Microsoft Teams and Copilot" module.
+  ms.date: 10/20/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key benefit of using Microsoft Teams for interviews?"
+    choices:
+        - content: "It allows anonymous feedback from candidates."
+          isCorrect: false
+          explanation: "Incorrect. Teams doesn't offer anonymous candidate feedback features."
+        - content: "It centralizes scheduling, communication, and documentation."
+          isCorrect: true
+          explanation: "Correct. Teams consolidates all interview elements into one workspace."
+        - content: "It automatically selects candidates based on résumé keywords."
+          isCorrect: false
+          explanation: "Incorrect. Teams doesn't perform candidate selection."
+        - content: "It replaces the need for interviewers entirely."
+          isCorrect: false
+          explanation: "Incorrect. Interviewers are still essential for evaluating candidates."
+  - content: "What must be enabled for Copilot to function during a Teams interview?"
+    choices:
+        - content: "Chat reactions"
+          isCorrect: false
+          explanation: "Incorrect. These enhance communication but aren't required for Copilot."
+        - content: "Presenter mode"
+          isCorrect: false
+          explanation: "Incorrect. This controls presentation settings, not Copilot functionality."
+        - content: "Transcription"
+          isCorrect: true
+          explanation: "Correct. Copilot relies on transcription to generate summaries."
+        - content: "Anonymous join"
+          isCorrect: false
+          explanation: "Incorrect. This affects meeting access, not Copilot’s operation."
+  - content: "How does Copilot improve post-interview feedback?"
+    choices:
+        - content: "It sends automated rejection emails."
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't handle candidate communication."
+        - content: "It ranks candidates by résumé score."
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't score résumés."
+        - content: "It generates structured summaries and follow-up actions."
+          isCorrect: true
+          explanation: "Correct."
+        - content: "It disables manual note-taking."
+          isCorrect: false
+          explanation: "Incorrect. Manual notes are still possible; Copilot simply reduces the need."
+  - content: "What is a best practice when using Copilot in interviews?"
+    choices:
+        - content: "Avoid informing candidates about transcription."
+          isCorrect: false
+          explanation: "Incorrect. Participants should be informed about transcription."
+        - content: "Use vague prompts to test AI flexibility."
+          isCorrect: false
+          explanation: "Incorrect. Specific prompts yield better results."
+        - content: "Enable transcription before the meeting begins."
+          isCorrect: true
+          explanation: "Correct. Transcription is required for Copilot to work effectively."
+        - content: "Share summaries on public channels."
+          isCorrect: false
+          explanation: "Incorrect. Summaries should be stored securely to maintain confidentiality."
+  - content: "What does Copilot’s Catch-up feature do?"
+    choices:
+        - content: "It replays the entire meeting."
+          isCorrect: false
+          explanation: "Incorrect. Catch-up provides a summary, not a replay."
+        - content: "It sends summaries to absent participants."
+          isCorrect: false
+          explanation: "Incorrect. It helps late joiners, not absentees."
+        - content: "It provides a recap for late joiners."
+          isCorrect: true
+          explanation: "Correct. Catch-up summarizes what has already been discussed."
+        - content: "It deletes irrelevant meeting content."
+          isCorrect: false
+          explanation: "Incorrect. Copilot doesn't delete content."

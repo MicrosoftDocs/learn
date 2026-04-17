@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-apps-azure-kubernetes-service.expose-applications
+title: Expose applications in Azure Kubernetes Services
+metadata:
+  title: Expose Applications in Azure Kubernetes Services
+  description: Expose applications in Azure Kubernetes Services
+  ms.date: 12/11/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-expose-applications.md)]

@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.work-compute-resources-azure-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with compute targets in Azure Machine Learning
   description: Learn how to work with compute targets in Azure Machine Learning. Compute targets allow you to run your machine learning workloads. Explore how and when you can use a compute instance or compute cluster.
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/25/2024
+  ms.date: 12/01/2025
   ms.service: azure-machine-learning
   ms.topic: module
   ms.collection:

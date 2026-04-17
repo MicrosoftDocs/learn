@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-educators.challenges-facing-k-12-educators
+title: Challenges facing K-12 educators
+metadata:
+  title: Challenges Facing K-12 Educators
+  description: This content is part of the "Microsoft Education for K-12 educators" module.
+  ms.date: 07/17/2025
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-challenges-facing-k-12-educators.md)]

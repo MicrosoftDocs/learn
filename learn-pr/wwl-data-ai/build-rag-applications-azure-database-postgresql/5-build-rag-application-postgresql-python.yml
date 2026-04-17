@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-rag-applications-azure-database-postgresql.build-rag-application-postgresql-python
+title: Build RAG Applications with Azure Database for PostgreSQL and Python
+metadata:
+  title: Build RAG Applications with Azure Database for PostgreSQL and Python
+  description: "Learn how to build a RAG application with Azure Database for PostgreSQL and Python that retrieves the right data and produces clear, grounded answers."
+  ms.date: 08/08/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-build-rag-application-postgresql-python.md)]

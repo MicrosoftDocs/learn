@@ -4,16 +4,16 @@ metadata:
   title: Introduction to Kubernetes on Azure
   description: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
   brand: azure
-  ms.date: 5/19/2020
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/20/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: learning-path
 title: Introduction to Kubernetes on Azure
 summary: |
   Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
 
   This learning path is part of a series. You can choose the topics you're most interested in or progress through each of them. Below are the learning paths in this series.
-  
+
   :::row:::
   :::column:::
   <img src="/training/achievements/intro-to-kubernetes-on-azure.svg" align="bottom" width="101" height="84" alt="Icon that shows the trophy for the Introduction to Kubernetes on Azure learning path." role="presentation"></img>
@@ -22,12 +22,12 @@ summary: |
   :::column-end:::
   :::column:::
   <img src="/training/achievements/generic-trophy.svg" align="bottom" width="101" height="84" alt="Icon that shows the trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations." role="presentation"></img>
- 
+
   [Part 2: Azure Kubernetes Service (AKS) cluster architecture and operations](../aks-cluster-architecture/index.yml)
   :::column-end:::
   :::column:::
   <img src="/training/achievements/generic-trophy.svg" align="bottom" width="101" height="84" alt="Icon that shows the trophy for the Azure Kubernetes Service (AKS) cluster architecture and operations learning path." role="presentation"></img>
-  
+
   [Part 3: Azure Kubernetes Service (AKS) application and cluster scalability](../aks-cluster-scalability/index.yml)
   :::column-end:::
   :::row-end:::
@@ -51,7 +51,5 @@ modules:
 - learn.intro-to-kubernetes
 - learn.intro-to-azure-kubernetes-service
 - learn.aks-deploy-container-app
-- learn.aks-optimize-compute-costs
-- learn.app-package-management-using-helm
 trophy:
   uid: learn.intro-to-kubernetes-on-azure.trophy

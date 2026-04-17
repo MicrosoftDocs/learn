@@ -75,7 +75,7 @@ Then, use the parameter in the resource definition. The syntax is ```[parameters
 "resources": [
   {
     "type": "Microsoft.Storage/storageAccounts",
-    "apiVersion": "2023-05-01",
+    "apiVersion": "2025-01-01",
     "name": "learntemplatestorage123",
     "location": "[resourceGroup().location]",
     "sku": {

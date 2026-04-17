@@ -10,22 +10,12 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with Azure documentation
 
-- Read about [sources of data in Azure Monitor](/azure/azure-monitor/data-sources).
-
-- Review [infrastructure metrics and logs in Azure Architecture Center](/azure/architecture/framework/scalability/monitor-infrastructure).
-
-- Monitor for [performance efficiency in Azure Architecture Center](/azure/architecture/framework/scalability/monitor).
-
-- Explore your data with [Azure Data Explorer](/azure/data-explorer/data-explorer-overview).
+- Read about [Azure Monitor](/azure/azure-monitor/).
+  
+- Read about [Azure Monitor Insights](/azure/azure-monitor/visualize/insights-overview).
 
 ## Learn more with self-paced training
 
-- Design a [holistic monitoring strategy on Azure](/training/modules/design-monitoring-strategy-on-azure/).
+- Learn how to [Monitor your Azure virtual machines with Azure Monitor](/training/modules/monitor-azure-vm-using-diagnostic-data/).
 
-- Improve [incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure/).
-
-- Get an [introduction to Azure Data Explorer](/training/modules/intro-to-azure-data-explorer/intro-to-azure-data-explorer/).
-
-## Learn more with optional practical exercises
-
-- Monitor, diagnose, and troubleshoot [your Azure storage](/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/).
+- Learn how to [Troubleshoot solutions by using Application Insights](/training/paths/az-204-instrument-solutions-support-monitoring-logging/).

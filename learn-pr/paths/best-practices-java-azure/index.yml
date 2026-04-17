@@ -75,7 +75,5 @@ modules:
 - learn.monitor-java-azure
 - learn.autoscale-java-azure
 - learn.azure.deploy-java-azure-pipeline-terraform
-- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
-- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 trophy:
   uid: learn.best-practices-java-azure.trophy

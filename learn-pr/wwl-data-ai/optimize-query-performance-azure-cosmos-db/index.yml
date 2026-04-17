@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db
+metadata:
+  title: Optimize Query Performance for Azure Cosmos DB for NoSQL
+  description: Learn how to optimize query performance and reduce costs for Azure Cosmos DB for NoSQL workloads by configuring indexes and selecting consistency levels.
+  ms.date: 02/05/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.service: azure-cosmos-db
+title: Optimize query performance for Azure Cosmos DB for NoSQL
+summary: Learn how to optimize query performance by analyzing query patterns, configuring range and composite indexes, selecting vector index types, and choosing consistency levels that balance freshness with cost efficiency.
+abstract: |
+  After completing this module, you'll be able to:
+    - Analyze query patterns and use metrics to identify performance bottlenecks and missing indexes
+    - Configure range and composite indexes to optimize filter and sort operations for AI retrieval patterns
+    - Select the appropriate vector index type based on dataset size, accuracy requirements, and performance goals
+    - Design indexing policies that balance read performance against write costs for your workload profile
+    - Choose consistency levels that meet application requirements while minimizing RU consumption
+prerequisites: |
+  Before beginning this module, you should have:
+  - Programming experience with languages such as Python, JavaScript, or C#
+  - Basic understanding of Azure Cosmos DB for NoSQL concepts including containers, items, and partition keys
+  - Familiarity with SQL query syntax for filtering and sorting data
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+- artificial-intelligence
+units:
+- learn.wwl.optimize-query-performance-azure-cosmos-db.introduction
+- learn.wwl.optimize-query-performance-azure-cosmos-db.understand-indexes-cosmos-db
+- learn.wwl.optimize-query-performance-azure-cosmos-db.configure-range-composite-indexes
+- learn.wwl.optimize-query-performance-azure-cosmos-db.tune-vector-indexes-embeddings
+- learn.wwl.optimize-query-performance-azure-cosmos-db.reduce-ru-costs-strategic-indexing
+- learn.wwl.optimize-query-performance-azure-cosmos-db.choose-consistency-levels-performance
+- learn.wwl.optimize-query-performance-azure-cosmos-db.exercise-optimize-query-performance
+- learn.wwl.optimize-query-performance-azure-cosmos-db.knowledge-check
+- learn.wwl.optimize-query-performance-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.optimize-query-performance-azure-cosmos-db.badge

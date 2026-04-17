@@ -2,13 +2,11 @@
 uid: learn.wwl.make-data-available-azure-machine-learning.create-datastore
 title: Create a datastore
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a datastore
   description: Create a datastore
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

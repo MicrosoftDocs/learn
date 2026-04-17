@@ -1,18 +1,26 @@
-A data lake is a repository of data stored in its natural format, usually as blobs or files. [Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction) Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. The solution builds on Azure Blob Storage capabilities to provide optimizations for analytics workloads. This integration enables analytics performance, high-availability, security, and durability capabilities of Azure Storage.
+A data lake is a repository of data stored in its natural format, usually as blobs or files. [Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction) Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. The solution builds on Azure Blob Storage capabilities to provide optimizations for analytics workloads. This integration enables analytics performance, high-availability, security, and durability capabilities of Azure Storage. In this video, the demonstration is not provided. 
 
-> [!Note] 
-> The current implementation of the service is Azure Data Lake Storage Gen2.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b4c743cb-38b8-4d39-a99a-3e7c39803836]
+
+> [!Important] 
+> Azure Data Lake Storage Gen1 was retired on February 29, 2024. Existing Gen1 accounts are no longer accessible and new accounts cannot be created. This unit covers Azure Data Lake Storage Gen2 exclusively.
 
 ### Things to know about Azure Data Lake Storage
 
 To better understand Azure Data Lake Storage, let's examine the following characteristics.
 
 - Azure Data Lake Storage can store any type of data by using the data's native format. With support for any data format and massive data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
+  
 - The solution is primarily designed to work with Hadoop and all frameworks that use the Apache Hadoop Distributed File System (HDFS) as their data access layer. Data analysis frameworks that use HDFS as their data access layer can directly access.
+  
 - Azure Data Lake Storage supports high throughput for input and output–intensive analytics and data movement.
+  
 - The Azure Data Lake Storage access control model supports both Azure role-based access control (RBAC) and Portable Operating System Interface for UNIX (POSIX) access control lists (ACLs).
-- Azure Data Lake Storage utilizes Azure Blob replication models. These models provide data redundancy in a single datacenter with locally redundant storage (LRS).
+  
+- Azure Data Lake Storage utilizes Azure Blob replication models. These models support the same redundancy options available for Azure Blob Storage. Microsoft recommends ZRS for Azure Data Lake Storage workloads.
+  
 - Azure Data Lake Storage offers massive storage and accepts numerous data types for analytics.
+  
 - Azure Data Lake Storage is priced at Azure Blob Storage levels.
 
 #### How Azure Data Lake Storage works
@@ -56,3 +64,6 @@ The following table compares storage solution criteria for using Azure Blob Stor
 | **Namespaces**            | Supports hierarchical namespaces                       | Supports flat namespaces                                     |
 | **Hadoop compatibility**  | Hadoop services can use data stored in Azure Data Lake | By using Azure Blob Filesystem Driver, applications and frameworks can access data in Azure Blob Storage |
 | **Security**              | Supports granular access                               | Granular access isn't supported                              |
+
+> [!Tip]
+> Learn more with self-paced training, [Introduction to Azure Data Lake Storage Gen2](/training/modules/introduction-to-azure-data-lake-storage/).

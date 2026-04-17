@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-optimize-agent-investment-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 10/1/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Your organization wants to improve the ROI of its AI agents by gaining deep visibility into performance, user interactions, and cost trends. Which combination of Azure tools best supports this goal?"
+    choices:
+    - content: "Azure Monitor Application Insights and Microsoft Cost Management"
+      isCorrect: true
+      explanation: "Application Insights provides observability into agent behavior and performance, while Microsoft Cost Management offers insights into spending patterns and helps optimize resource allocation—together they support ROI improvement."
+    - content: "Azure Kubernetes Service and Microsoft Foundry SDK"
+      isCorrect: false
+      explanation: "These tools are focused on infrastructure orchestration and agent development, not on monitoring performance or cost trends for ROI optimization."
+    - content: "GitHub Copilot and Azure Monitor Metrics Explorer"
+      isCorrect: false
+  - content: "Your organization wants to proactively manage AI agent costs and prevent budget overruns. You also need to control model usage and receive alerts when spending or performance thresholds are breached. Which combination of Azure tools best supports this strategy?"
+    choices:
+    - content: "Microsoft Cost Management Budgets, AI Foundry Quotas, and Azure Monitor Alerts"
+      isCorrect: true
+      explanation: "Budgets help set spending limits, quotas control model usage, and alerts notify teams of anomalies—together these tools provide comprehensive financial and operational oversight to improve ROI."
+    - content: "Azure Monitor Metrics Explorer, GitHub Copilot, and Azure Kubernetes Service"
+      isCorrect: false
+      explanation: "These tools support performance monitoring and development workflows but don't offer direct budget control, quota management, or alerting for financial oversight."
+    - content: "Microsoft Foundry SDK, Azure Virtual Machines, and Power BI"
+      isCorrect: false
+      explanation: "While useful for development and visualization, this combination lacks built-in budget enforcement, quota controls, and real-time alerting needed for proactive cost management."
+  - content: "Your organization is deploying AI agents with consistent workloads and wants to reduce long-term operational costs while maintaining high performance. Which Microsoft Foundry strategy best supports this goal?"
+    choices:
+    - content: "Purchase PTU reservations after estimating throughput needs"
+      isCorrect: true
+      explanation: "PTU reservations offer significant cost savings for steady workloads. Estimating throughput needs before purchasing ensures optimal capacity and avoids overcommitting."
+    - content: "Use hourly PTU billing for all deployments"
+      isCorrect: false
+      explanation: "Hourly PTU billing is flexible but more expensive for long-term use. It’s better suited for short-term or experimental workloads."
+    - content: "Request maximum quota before deploying agents"
+      isCorrect: false
+      explanation: "Requesting maximum quota before deployment can lead to overprovisioning. Best practice is to deploy first, monitor usage, and then adjust quotas or purchase reservations."
+   

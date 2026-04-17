@@ -1,23 +1,24 @@
 Azure Backup provides independent and isolated [backups for Azure virtual machines](/azure/backup/backup-azure-vms-introduction). You can use Azure Backup to take snapshot backups and restore the data on your virtual machines if there's data corruption or accidental deletion. 
 
+In this video, the instructor discusses considerations for virtual machine backup and recovery.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f5a78d16-9c91-4004-b2c0-d8618765dfc0]
+
 ### Things to know about virtual machine backup and recovery
 
 Let's examine how Azure Backup supports backup and recovery of Azure virtual machines.
 
 - Azure Backup allows for simple configuration and scaling for Windows and Linux virtual machines.
 
-   > [!Note]
-   > Azure Backup has specialized offerings for database workloads like SQL Server and SAP HANA. These offerings are workload-aware, provide 15-minute RPO (recovery point objective), and allow back up and restore of individual databases.
+- Azure VM backup offers two policy types:
+   - **Standard policy**: Once-daily backups with standard snapshot storage. Suitable for most scenarios but doesn't support Trusted Launch VMs (via portal), Ultra Disks, or Premium SSD v2.
+   - **Enhanced policy**: Supports backups as frequently as every 4 hours, zone-resilient snapshots (ZRS), and newer disk types including Ultra Disks and Premium SSD v2. Required for Trusted Launch VMs and enables agentless multi-disk crash-consistent backup.
 
 - The backup job for a virtual machine involves two phases:
    - First, a virtual machine snapshot is taken.
    - Second, the virtual machine snapshot is transferred to a Recovery Services vault. 
 
-   The transfer of the backup data to the Recovery Services vault has no effect on your production workloads. 
-
-- Azure virtual machine backups stored in a Recovery Services vault provide built-in management of recovery points.
-
-- Virtual machine backups are optimized so you can easily restore a full backup, or from a specific recovery point.
+- Azure virtual machine backups stored in a Recovery Services vault provide built-in management of recovery points. Virtual machine backups are optimized so you can easily restore a full backup, or from a specific recovery point.
 
 - Snapshot backups support [different levels of consistency](/azure/backup/backup-azure-vms-introduction#snapshot-consistency), including _Application_, _System_, and _Crash_.
 
@@ -35,13 +36,11 @@ Here are some things to review when planning backup and recovery for your virtua
 
 - **Consider backup frequency**. Determine how frequently you need to create fresh backups. Implement both short-term (daily) and long-term (weekly) backups. If you need to take a backup outside of your scheduled via backup policy, you can use an on-demand backup. You might do on-demand backups multiple times per day when scheduled backup permits only one backup per day.
 
-- **Consider backup policies**. Create a single backup policy for a group of virtual machines that require the same schedule start time, frequency, and retention settings. You might establish a backup policy for critical virtual machines, and a separate policy for noncritical machines. 
+- **Consider backup policies**. Create a single backup policy for a group of virtual machines that require the same schedule start time, frequency, and retention settings. You might establish a backup policy for critical virtual machines, and a separate policy for noncritical machines. Also, consider enhanced policy for backup frequency more than once a day. 
 
 - **Consider plan changes**. After you implement your backup solution, continue to monitor and review your plan. As your business requirements change, make sure to review and change your backup policies. Enable monitoring and alerting features and review the results. 
 
 - **Consider practice restore runs**. Restoring backups for virtual machines can be time-consuming. It's a recommended practice to try restoring from your backups before you experience a critical scenario where recovery is essential.
-
-   The total restore time depends on the Input/Output operations per second (IOPS) and the throughput of the storage account. The total restore time can be affected if the target storage account is loaded with other application read and write operations. To improve restore operation, select a storage account that isn't loaded with other application data.
 
 - **Consider throttling during restore**. If you're restoring virtual machines from a single Recovery Services vault, we highly recommend that you use different general-purpose v2 storage accounts. By using a v2 storage account, you can ensure your target storage account doesn't get throttled. Consider a scenario where each virtual machine must have a different storage account. If 10 virtual machines are being restored, plan to use 10 different storage accounts.
 

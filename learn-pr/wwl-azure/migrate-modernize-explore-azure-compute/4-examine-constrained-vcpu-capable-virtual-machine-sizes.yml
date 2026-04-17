@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-explore-azure-compute.examine-constrained-vcpu-capable-virtual-machine-sizes
 title: Examine constrained vCPU capable virtual machine sizes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine constrained vCPU capable virtual machine sizes
   description: "Examine constrained vCPU capable virtual machine sizes"
   ms.date: 01/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-examine-constrained-vcpu-capable-virtual-machine-sizes.md)]
+  [!include[](includes/4-examine-constrained-vcpu-capable-virtual-machine-sizes.md)]

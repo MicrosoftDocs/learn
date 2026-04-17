@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.get-started-with-ai.summarizing-article
+title: Summarizing an article
+metadata:
+  title: Summarizing an article
+  description: This content is a part of the Get started with AI.
+  ms.date: 04/08/2025
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-summarizing-article.md)]

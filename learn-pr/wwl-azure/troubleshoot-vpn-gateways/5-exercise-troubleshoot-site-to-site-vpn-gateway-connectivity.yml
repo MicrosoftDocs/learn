@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-vpn-gateways.exercise-troubleshoot-site-to-site-vpn-gateway-connectivity
 title: 'Exercise: Troubleshoot site-to-site VPN gateway connectivity'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Troubleshoot site-to-site VPN gateway connectivity'
   description: "Exercise: Troubleshoot site-to-site VPN gateway connectivity"
   ms.date: 04/27/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-exercise-troubleshoot-site-to-site-vpn-gateway-connectivity.md)]
+  [!include[](includes/5-exercise-troubleshoot-site-to-site-vpn-gateway-connectivity.md)]

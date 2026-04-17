@@ -6,7 +6,11 @@ Let's reconsider our design for the Tailwind Traders product demo application, a
 
 ### Things to know about Azure Event Grid
 
-[Azure Event Grid](/azure/event-grid/overview) is a fully managed event routing service that runs on [Azure Service Fabric](/azure/service-fabric/service-fabric-overview). Event Grid exists to make it easier to build event-based and serverless applications on Azure. Examine the following characteristics of the service.
+[Azure Event Grid](/azure/event-grid/overview) is a fully managed event routing service. Event Grid exists to make it easier to build event-based and serverless applications on Azure. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1c380564-a19d-49a4-9902-8509a0bcfc30]
+
+Review the following characteristics of the service.
 
 - Azure Event Grid aggregates all your events and provides routing from any source to any destination. 
 
@@ -46,6 +50,13 @@ Azure Event Grid can be an ideal solution for an event-driven application archit
 
 - **Consider distinct roles for services**. Investigate using Azure services side by side to fulfill distinct roles. An e-commerce site can use Azure Service Bus to process an order, Azure Event Hubs to capture site telemetry, and Azure Event Grid to respond to events like an item being shipped.
 
+- **Consider push vs. pull delivery**. Choose the appropriate delivery model based on your application needs:
+   - **Push delivery (classic model)**: Event Grid routes events to registered handlers (webhooks, Azure Functions, etc.). Use when avoiding constant polling and the handler has a public endpoint.
+   - **Pull delivery (namespace topics)**: Subscriber applications connect to Event Grid to read events at their own pace using queue-like semantics. Use when the consumer controls timing, needs private link connectivity, or can't expose a public endpoint.
+
 - **Consider linking services**. Link Azure services together to form an event and data pipeline stream. In this scenario, Azure Event Grid responds to events in other services. The following illustration demonstrates how several Azure services can be linked together as an event and data pipeline to stream data.
    
    :::image type="content" source="../media/services-integration.png" alt-text="Illustration that shows how Azure Event Hubs, Event Grid, and Functions link together to respond to events and stream data." border="false":::
+
+> [!TIP]
+> Consider reviewing the [Explore Azure Event Grid](/training/modules/azure-event-grid/) module.

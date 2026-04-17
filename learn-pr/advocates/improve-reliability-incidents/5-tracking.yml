@@ -2,11 +2,9 @@
 uid: learn.improve-reliability-incidents.5-tracking
 title: "Incident tracking"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Incident tracking"
   description: "Incident tracking"
-  ms.date: 02/28/2024
+  ms.date: 04/16/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -19,54 +17,42 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these questions is not immediately useful to ask about an incident when you evaluate your incident tracking process?'
+  - content: "Which of these questions isn't immediately useful to ask about an incident when you evaluate your incident tracking process?"
     choices:
-    - content: 'How did we find out about the problem?'
+    - content: "How did we find out about the problem?"
       isCorrect: false
-      explanation: 'This example is a good question to ask.'
-    - content: 'How bad is it?'
+      explanation: "This example is a good question to ask."
+    - content: "How bad is it?"
       isCorrect: false
-      explanation: 'This example is a good question to ask.'
-    - content: 'Who else is aware of the issue?'
+      explanation: "This example is a good question to ask."
+    - content: "Who else is aware of the issue?"
       isCorrect: false
-      explanation: 'This example is a good question to ask.'
-    - content: 'How quickly can we reach a C-level executive about the problem?'
+      explanation: "This example is a good question to ask."
+    - content: "How quickly can we reach a C-level executive about the problem?"
       isCorrect: true
-      explanation: 'Correct, though C-level executives are important, there are more critical factors to consider first.'
+      explanation: "Correct, though C-level executives are important, there are more critical factors to consider first."
 
-  - content: 'When creating a conversation bridge to communicate about an incident, why is it important to carve out a unique channel for it?'
+  - content: "Which of the following is true?"
     choices:
-    - content: 'This process will make sure we stay HIPAA-compliant'
+    - content: "You should keep information about incidents limited to only the primary and secondary responders until the incident has been resolved."
       isCorrect: false
-      explanation: 'HIPAA has nothing to do with this process.'
-    - content: 'It will keep irrelevant discussion out of the channel, making it easier to later use the data for post-incident review.'
+      explanation: "All people associated with the incident need access to the information."
+    - content: "You should keep information about an incident in a centralized place where everyone on the team can access it."
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'It lets us keep channels for engineers and management separate.'
+      explanation: "Correct, keeping the information is easy to find and access is important."
+    - content: "You should use only email to document discussions about the incident."
       isCorrect: false
-      explanation: 'This process is unnecessary when communicating about an incident (under normal circumstances).'
-
-  - content: 'Which of the following is true?'
-    choices:
-    - content: 'You should keep information about incidents limited to only the primary and secondary responders until the incident has been resolved.'
-      isCorrect: false
-      explanation: 'All people associated with the incident need access to the information.'
-    - content: 'You should keep information about an incident in a centralized place where everyone on the team can access it.'
-      isCorrect: true
-      explanation: 'Correct, keeping the information is easy to find and access is important.'
-    - content: 'You should use only email to document discussions about the incident.'
-      isCorrect: false
-      explanation: 'There are many ways to document discussions about an incident.'
+      explanation: "There are many ways to document discussions about an incident."
   
-  - content: 'Which tool can you use for codeless automation to automate your initial response?'
+  - content: "Which tool can you use for codeless automation to automate your initial response?"
     choices:
-    - content: 'ChatOps'
+    - content: "ChatOps"
       isCorrect: false
-      explanation: 'ChatOps is a practice, not a codeless automation tool.'
-    - content: 'Troubleshooting guides'
+      explanation: "ChatOps is a practice, not a codeless automation tool."
+    - content: "Azure Monitor Workbooks"
       isCorrect: false
-      explanation: 'Troubleshooting guides are useful for providing runbooks for response, but not as a codeless automation tool.'
-    - content: 'Logic Apps'
+      explanation: "Azure Monitor Workbooks are useful for providing runbooks for response, but not as a codeless automation tool."
+    - content: "Logic Apps"
       isCorrect: true
-      explanation: 'Correct.'
+      explanation: "Correct."
 

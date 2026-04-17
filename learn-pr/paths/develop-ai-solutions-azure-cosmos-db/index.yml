@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.develop-ai-solutions-azure-cosmos-db
+metadata:
+  title: Develop AI Solutions with Azure Cosmos DB for NoSQL
+  description: Learn how to develop AI solutions using Azure Cosmos DB for NoSQL, including vector search and query optimization for RAG pipelines and semantic retrieval.
+  ms.date: 02/08/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: learning-path
+title: Develop AI solutions with Azure Cosmos DB for NoSQL
+prerequisites: |
+  - Programming experience with Python.
+  - Basic understanding of Azure services and cloud computing concepts.
+  - Familiarity with JSON document structures.
+  - Understanding of machine learning concepts including embeddings and similarity search.
+summary: |
+  This learning path guides you through developing AI solutions using Azure Cosmos DB for NoSQL. You start by building a data foundation with the Cosmos DB resource model, SDK integration, CRUD operations, and SQL queries to retrieve document data for AI applications.
+
+  You then implement vector search capabilities to store embeddings, execute similarity queries using the VectorDistance function, combine vector search with metadata filters and hybrid search, and use the change feed to keep embeddings synchronized.
+
+  Finally, you optimize query performance by analyzing query patterns, configuring range and composite indexes, selecting vector index types, and choosing consistency levels that balance freshness with cost efficiency.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- databases
+- artificial-intelligence
+modules:
+- learn.wwl.build-query-azure-cosmos-db
+- learn.wwl.implement-vector-search-azure-cosmos-db
+- learn.wwl.optimize-query-performance-azure-cosmos-db
+trophy:
+  uid: learn.wwl.develop-ai-solutions-azure-cosmos-db.trophy

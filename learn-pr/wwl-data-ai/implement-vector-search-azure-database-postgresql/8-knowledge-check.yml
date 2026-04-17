@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vector-search-azure-database-postgresql.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 01/29/2026
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which pgvector distance operator should you use when your embeddings are normalized to unit length and you want to measure semantic similarity?"
+    choices:
+    - content: "`<=>` (cosine distance)"
+      isCorrect: true
+      explanation: "Correct. The `<=>` operator computes cosine distance, which measures the angle between vectors. When embeddings are normalized to unit length, cosine similarity is the standard choice for measuring semantic similarity because it focuses on directional similarity rather than magnitude."
+    - content: "`<->` (L2 distance)"
+      isCorrect: false
+      explanation: "Incorrect. The `<->` operator computes L2 (Euclidean) distance, which measures the straight-line distance between vector endpoints. While it works for similarity search, cosine distance is preferred for normalized embeddings because it directly measures directional similarity."
+    - content: "`<#>` (negative inner product)"
+      isCorrect: false
+      explanation: "Incorrect. The `<#>` operator computes negative inner product and is primarily used for maximum inner product search scenarios rather than standard semantic similarity searches with normalized embeddings."
+  - content: "You're building a RAG pipeline that needs to retrieve relevant document chunks quickly from a collection of 5 million embeddings. The collection receives occasional batch updates but no real-time inserts. Which index type should you choose?"
+    choices:
+    - content: "IVFFlat with an appropriate number of lists"
+      isCorrect: true
+      explanation: "Correct. IVFFlat indexes work well for large, relatively static datasets because they cluster vectors into lists and search only relevant clusters. They're faster to build than HNSW indexes and perform well when the dataset doesn't change frequently between index rebuilds."
+    - content: "HNSW with high ef_construction value"
+      isCorrect: false
+      explanation: "Incorrect. While HNSW provides excellent query performance and handles incremental updates better than IVFFlat, the scenario specifically mentions occasional batch updates rather than real-time inserts. IVFFlat is more efficient to build for static datasets and provides sufficient performance for batch-update scenarios."
+    - content: "No index, relying on exact sequential scan"
+      isCorrect: false
+      explanation: "Incorrect. Sequential scans examine every vector in the table, which becomes prohibitively slow at 5 million embeddings. For any production workload with more than a few thousand vectors, approximate nearest neighbor indexes are essential for acceptable query performance."
+  - content: "When creating an HNSW index, what does the `m` parameter control?"
+    choices:
+    - content: "The maximum number of connections per node in the graph"
+      isCorrect: true
+      explanation: "Correct. The `m` parameter sets the maximum number of bidirectional connections each node maintains to other nodes in the HNSW graph. Higher values create a more connected graph, improving recall at the cost of increased memory usage and longer index build times."
+    - content: "The number of candidate neighbors considered during index construction"
+      isCorrect: false
+      explanation: "Incorrect. The number of candidate neighbors considered during index construction is controlled by the `ef_construction` parameter, not `m`. The `ef_construction` parameter affects build quality and time, while `m` affects the graph structure and memory usage."
+    - content: "The number of lists to partition vectors into"
+      isCorrect: false
+      explanation: "Incorrect. The lists parameter is used with IVFFlat indexes, not HNSW. HNSW uses a graph-based approach with the `m` parameter controlling connections between nodes, rather than partitioning vectors into lists."
+  - content: "You need to update embeddings for 50,000 product descriptions after switching to a new embedding model. What approach minimizes the impact on concurrent searches?"
+    choices:
+    - content: "Batch the updates into transactions of 1,000-5,000 rows each"
+      isCorrect: true
+      explanation: "Correct. Batching updates into manageable transaction sizes reduces lock contention and allows concurrent queries to proceed between batches. This approach maintains system responsiveness while still completing the migration in a reasonable timeframe."
+    - content: "Update all 50,000 rows in a single transaction"
+      isCorrect: false
+      explanation: "Incorrect. A single large transaction holds locks for the entire duration of the update, blocking concurrent queries and potentially causing timeouts. This approach provides no opportunity for other operations to proceed during the lengthy update process."
+    - content: "Drop the existing vector index before updating"
+      isCorrect: false
+      explanation: "Incorrect. Dropping the index before updates eliminates index maintenance overhead but also removes the ability to perform vector searches during the migration period. Batching updates with the index in place allows searches to continue, even if the index requires a rebuild afterward for optimal performance."
+  - content: "In a hybrid search combining vector similarity with full-text search, what technique helps balance the relevance scores from both search methods?"
+    choices:
+    - content: "Using Reciprocal Rank Fusion (RRF) to combine rankings"
+      isCorrect: true
+      explanation: "Correct. Reciprocal Rank Fusion combines results from multiple search methods by computing a score based on each result's rank position rather than raw scores. This approach effectively normalizes the different scoring scales used by vector distance and text relevance, producing balanced final rankings."
+    - content: "Multiplying the vector distance by the text relevance score"
+      isCorrect: false
+      explanation: "Incorrect. Simply multiplying scores doesn't account for the different scales and meanings of vector distances versus text relevance scores. Vector distances are typically smaller values where lower is better, while text relevance scores are higher for better matches. This mismatch makes multiplication ineffective for balanced ranking."
+    - content: "Always returning vector search results first"
+      isCorrect: false
+      explanation: "Incorrect. Prioritizing one search method over the other defeats the purpose of hybrid search, which aims to leverage the strengths of both approaches. Some queries benefit more from semantic similarity while others need exact keyword matches, so balanced combination produces better overall results."

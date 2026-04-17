@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy
-title: Address security and compliance requirements with Azure policy
+title: Address security and compliance requirements with Azure Policy
 metadata:
-  title: Address security and compliance requirements with Azure policy
-  description: "SC-100 preparatory unit on the topic: address security and compliance requirements with Azure policy."
-  ms.date: 3/14/2023
+  title: Address security and compliance requirements with Azure Policy
+  description: "SC-100 preparatory unit on the topic: address security and compliance requirements with Azure Policy."
+  ms.date: 02/27/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit

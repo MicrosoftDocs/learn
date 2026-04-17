@@ -2,12 +2,10 @@
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks.vector-search
 title: Find relevant data with vector search
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Find relevant data with vector search
   description: "Find relevant data with vector search"
-  ms.date: 03/20/2025
-  author: wwlpublish
+  ms.date: 07/07/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 azureSandbox: false

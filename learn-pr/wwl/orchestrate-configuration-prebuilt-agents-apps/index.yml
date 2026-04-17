@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps
+metadata:
+  title: "Orchestrate Configuration of Prebuilt Agents and Apps"
+  description: "Learn to orchestrate, configure, and extend AI-driven experiences in Dynamics 365 and Microsoft 365 Copilot for finance, supply chain, and customer service."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: dynamics-365
+title: "Orchestrate configuration of prebuilt agents and apps"
+summary: Learn to orchestrate, configure, and extend AI-driven experiences in Dynamics 365 and Microsoft 365 Copilot.
+abstract: |
+  After completing this module, you will be able to:
+  - Orchestrate AI features and Copilot agents across Dynamics 365 and Microsoft 365 applications.
+  - Design secure, compliant, and extensible AI solutions.
+  - Configure and operationalize prebuilt Copilot agents for finance, supply chain, sales, and service scenarios.
+  - Apply best practices for responsible AI, workflow integration, and success measurement.
+prerequisites: |
+  - Familiarity with Dynamics 365 and Microsoft 365 applications.
+  - Basic understanding of AI and machine learning concepts.
+  - Experience with solution architecture and enterprise systems.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+- developer
+- administrator
+- solution-architect
+- technology-manager
+products:
+- microsoft-365-copilot
+- m365
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.introduction
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.design-ai-solutions-dynamics-365-apps-customer-experience-service
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.propose-microsoft-365-agents-business-scenarios
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-configuration-microsoft-365-copilot-sales-service
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.propose-microsoft-power-platform-ai-features-ai-hub
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.design-interoperability-finance-operations-agent-chats-sources
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.process-knowledge-sources-dynamics-365-finance-supply-chain-management
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-ai-features-dynamics-365-apps-finance-supply-chain
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.knowledge-check
+- learn.wwl.orchestrate-configuration-prebuilt-agents-apps.summary
+badge:
+  uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.badge

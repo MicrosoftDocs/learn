@@ -1,23 +1,23 @@
 ## Template references
 
-You can export reusable sections of your pipeline to a separate file. These individual files are known as templates.
+You can save reusable parts of your pipeline to separate files. These files are called templates.
 
 Azure Pipelines supports four types of templates:
 
- -  Stage
- -  Job
- -  Step
- -  Variable
+- Stage
+- Job
+- Step
+- Variable
 
-You can also use templates to control what is allowed in a pipeline and define how parameters can be used.
+You can also use templates to control what's allowed in a pipeline and define how to use parameters.
 
- -  Parameter
+- Parameter
 
-Templates themselves can include other templates. Azure Pipelines supports 50 individual template files in a single pipeline.
+Templates can include other templates. Azure Pipelines supports up to 50 template files in a single pipeline.
 
 ## Stage templates
 
-You can define a set of stages in one file and use it multiple times in other files.
+You can define stages in one file and reuse them in other files.
 
 In this example, a stage is repeated twice for two testing regimes. The stage itself is specified only once.
 
@@ -73,7 +73,7 @@ stages:
 
 ## Job templates
 
-You can define a set of jobs in one file and use it multiple times in other files.
+You can define jobs in one file and reuse them in other files.
 
 In this example, a single job is repeated on three platforms. The job itself is specified only once.
 
@@ -129,7 +129,7 @@ jobs:
 
 ## Step templates
 
-You can define a set of steps in one file and use it multiple times in another.
+You can define steps in one file and reuse them in other files.
 
 ```YAML
 # File: steps/build.yml
@@ -174,9 +174,9 @@ jobs:
 
 ## Variable templates
 
-You can define a set of variables in one file and use it multiple times in other files.
+You can define variables in one file and reuse them in other files.
 
-In this example, a set of variables is repeated across multiple pipelines. The variables are specified only once.
+In this example, variables are shared across different pipelines. You define the variables only once.
 
 ```YAML
 # File: variables/build.yml

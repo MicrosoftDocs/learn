@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.queue-process-operations-service-bus.choose-queues-topics-subscriptions
+title: Choose between queues and topics with subscriptions
+metadata:
+  title: Choose Between Queues and Topics with Subscriptions
+  description: Choose between queues and topics with subscriptions
+  ms.date: 06/26/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-choose-queues-topics-subscriptions.md)]

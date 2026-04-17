@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.explore-objective-domains
 title: Explore objective domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore objective domains
   description: "Explore objective domains"
   ms.date: 04/07/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-explore-objective-domains.md)]
+  [!include[](includes/2-explore-objective-domains.md)]

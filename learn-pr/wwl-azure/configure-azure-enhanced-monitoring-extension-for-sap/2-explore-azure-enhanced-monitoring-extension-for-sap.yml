@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.explore
 title: Explore the Azure Enhanced Monitoring Extension for SAP
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the Azure Enhanced Monitoring Extension for SAP
   description: "Explore the Azure Enhanced Monitoring Extension for SAP, a virtual machine extension that needs to be deployed by you to provide some basic data about the Azure infrastructure to the SAP Host Agent."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-explore-azure-enhanced-monitoring-extension-for-sap.md)]
+  [!include[](includes/2-explore-azure-enhanced-monitoring-extension-for-sap.md)]

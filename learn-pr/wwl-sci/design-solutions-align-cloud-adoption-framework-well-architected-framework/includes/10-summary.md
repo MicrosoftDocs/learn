@@ -7,10 +7,20 @@ To continue exploring the topics discussed in this module, we recommend the foll
 
 ## Learn more with security documentation
 
-- [Security in the Microsoft Cloud Adoption Framework for Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/secure/)
 - [Security design in Azure - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/landing-zone/design-area/security)
 - [Microsoft Azure Well-Architected Framework - Azure Architecture Center](/azure/architecture/framework/)
+- [Cloud Adoption Framework Secure methodology overview](/azure/cloud-adoption-framework/secure/overview)
+- [Integrate security into your cloud adoption strategy](/azure/cloud-adoption-framework/secure/strategy)
+- [Plan for a secure cloud adoption](/azure/cloud-adoption-framework/secure/plan)
+- [Prepare your secure cloud estate](/azure/cloud-adoption-framework/secure/ready)
+- [Perform your cloud adoption securely](/azure/cloud-adoption-framework/secure/adopt)
+- [Securely govern your cloud estate](/azure/cloud-adoption-framework/secure/govern)
+- [Manage your cloud estate with enhanced security](/azure/cloud-adoption-framework/secure/manage)
+- [Improve landing zone security - DevSecOps controls](/azure/cloud-adoption-framework/ready/considerations/landing-zone-security)
+- [Microsoft Cloud Security Benchmark - DevOps security controls](/security/benchmark/azure/mcsb-devops-security)
+- [Secure DevOps environments for Zero Trust](/security/zero-trust/develop/secure-devops-environments-zero-trust)
+- [Microsoft Cloud Security Benchmark v2 overview](/security/benchmark/azure/overview)
+- [WAF security design review checklist](/azure/well-architected/security/checklist)
+- [Well-Architected Review](/assessments/?id=azure-architecture-review&mode=pre-assessment)
+- [CAF: Enforce cloud governance policies](/azure/cloud-adoption-framework/govern/enforce-cloud-governance-policies)
 
-## Learn more with reference architectures
-
-- [DevSecOps on Azure Kubernetes Service (AKS) - Azure Architecture Center](/azure/architecture/guide/devsecops/devsecops-on-aks)

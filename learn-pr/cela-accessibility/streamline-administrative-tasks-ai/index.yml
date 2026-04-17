@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.streamline-administrative-tasks-ai
+metadata:
+  title: "Streamline Administrative Tasks With AI"
+  description: "In this module, special educators will learn how and when to use Teach and/or Copilot to streamline administrative tasks, support professional judgment, and maintain accuracy, compliance, and student centered decision making."
+  ms.date: 01/05/2026
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+title: "Streamline administrative tasks with AI tools"
+summary: Special educators will learn how and when to use Teach and/or Copilot to streamline administrative tasks, support professional judgment, and maintain accuracy, compliance, and student centered decision making.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Teach and Copilot as optional tools for supporting administrative work in special education contexts.
+  - Recognize how AI tools can support administrative efficiency and identify situations where Teach or Copilot may be a better fit based on task needs and educator preferences.
+  - Use Copilot to support drafting, summarizing, refining, or translating individualized documentation, with educator review and oversight.
+  - Use Teach to help create structured, repeatable workflows for routine tasks such as lesson planning, rubrics, and data collection templates, where consistency is helpful.
+  - Combine Teach and Copilot thoughtfully to support complete workflows that prioritize accuracy, compliance, and student-centered practice.
+  - Apply responsible AI principles and prompt design practices to support ethical, transparent, and professional use in administrative tasks.
+
+prerequisites: |
+  - Basic familiarity with Microsoft 365 tools.
+  - Understanding of special education administrative tasks.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- school-leader
+- k-12-educator
+products:
+- m365
+- microsoft-365-copilot
+- office-teams
+- office-powerpoint
+- office-word
+subjects:
+- artificial-intelligence
+- generative-ai
+units:
+- learn.wwl.streamline-administrative-tasks-ai.introduction
+- learn.wwl.streamline-administrative-tasks-ai.draft-refine-individualized-documentation-copilot
+- learn.wwl.streamline-administrative-tasks-ai.create-structured-repeatable-workflows-teach
+- learn.wwl.streamline-administrative-tasks-ai.teach-copilot-together-end-to-end-administrative-processes
+- learn.wwl.streamline-administrative-tasks-ai.exercise-reflection
+- learn.wwl.streamline-administrative-tasks-ai.knowledge-check
+- learn.wwl.streamline-administrative-tasks-ai.summary
+badge:
+  uid: learn.wwl.streamline-administrative-tasks-ai.badge

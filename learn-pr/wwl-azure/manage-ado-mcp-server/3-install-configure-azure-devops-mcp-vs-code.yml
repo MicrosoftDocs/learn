@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ado-mcp-server.install-configure-azure-devops-mcp-vscode
+title: Install and configure Azure DevOps MCP Server in Visual Studio Code
+metadata:
+  title: Install And Configure Azure DevOps MCP Server In Visual Studio Code
+  description: "Install and configure Azure DevOps MCP Server in Visual Studio Code"
+  ms.date: 02/27/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-install-configure-azure-devops-mcp-vs-code.md)]

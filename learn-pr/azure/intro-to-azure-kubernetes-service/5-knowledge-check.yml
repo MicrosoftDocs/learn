@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-kubernetes-service.knowledge-check
-title: Knowledge check
+title: Module assessment
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
-  ms.date: 11/26/2024
-  author: nickomang
-  ms.author: nickoman
+  ms.date: 03/23/2026
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: unit
+  module_assessment: true
 
 durationInMinutes: 5
 content: |
@@ -18,8 +17,8 @@ content: |
 quiz:
 
   questions:
-  
-  - content: "Suppose you work for a company that builds a Massively Multiplayer Online (MMO) game. You decide to move all your services to Azure Kubernetes service. Which of the following components contribute to your monthly Azure charge?"
+
+  - content: "Suppose you work for a company that builds a Massively Multiplayer Online (MMO) game. You decide to move all your services to Azure Kubernetes Service. Which of the following components contribute to your monthly Azure charge?"
     choices:
     - content: "The control plane"
       isCorrect: false
@@ -54,4 +53,3 @@ quiz:
     - content: "Bridge to Kubernetes"
       isCorrect: true
       explanation: "Bridge to Kubernetes allows for the development of code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies."
-

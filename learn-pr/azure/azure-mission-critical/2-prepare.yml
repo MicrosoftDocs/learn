@@ -2,8 +2,6 @@
 uid: learn.azure-mission-critical.prepare
 title: Prepare
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare - Define the key strategies
   description: Prepare for the challenge by understanding the context of an existing architecture, the tradeoffs, and the project specification.
   ms.date: 08/14/2024
@@ -15,4 +13,4 @@ content: |
   [!include[](includes/2-prepare.md)]
 
 
-
+

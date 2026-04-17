@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Code-free transformation at scale with Azure Data Factory
   description: "Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline"
   ms.date: 05/16/2024
@@ -53,4 +51,4 @@ units:
 - learn.wwl.perform-code-free-transformation-scale-azure-data-factory.summary
 badge:
   uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.badge
-
+

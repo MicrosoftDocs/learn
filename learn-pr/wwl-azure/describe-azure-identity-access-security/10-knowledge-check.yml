@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-identity-access-security.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/03/2024
   author: wwlpublish
@@ -12,6 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
+  module_assessment: true
 durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -51,3 +50,14 @@ quiz:
     - content: "Read and write"
       isCorrect: true
       explanation: "Role-based access control, using an allow model, grants all of the permissions assigned in all of the assigned roles."
+  - content: "Which Azure service is designed to securely store secrets, certificates, and encryption keys for your applications?"
+    choices:
+    - content: "Azure Key Vault"
+      isCorrect: true
+      explanation: "Azure Key Vault is used to securely store and manage secrets, certificates, and keys."
+    - content: "Azure Policy"
+      isCorrect: false
+      explanation: "Azure Policy helps enforce governance rules, but it doesn't store application secrets or encryption keys."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Azure Monitor provides telemetry and observability, not key and secret storage."

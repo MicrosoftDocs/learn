@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["DB04FD11_10","DB04FD11_30","DB04FD11_42","DB04FD11_79","DB04FD11_83","DB04FD11_124"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/20/2024
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -15,38 +18,38 @@ quiz:
   title: "Check your knowledge"
   questions:
 
-  - content: "When browsing Microsoft compliance documentation in the Service Trust Portal, you have found several documents that are specific to your industry. What is the best way of ensuring you keep up to date with the latest updates?"
+  - content: "A compliance team wants to receive an email notification whenever Microsoft updates a specific document on the Service Trust Portal. What should they do?"
     choices:
-    - content: "Save the documents to your My Library."
+    - content: "Save the document to My Library and enable notification settings."
       isCorrect: true
-      explanation: "Correct. Saving the document to the My Library section of the Service Trust Portal, will ensure you have the latest updates."
-    - content: "Print each document so you can easily refer to them."
+      explanation: "Correct. Adding a document to My Library and configuring notification settings sends an email whenever Microsoft updates that document, including a link and brief description of the update."
+    - content: "Download the document and periodically check the Service Trust Portal for a newer version."
       isCorrect: false
-      explanation: "Incorrect. Printing the document doesn't ensure you have the latest updates."
-    - content: "Download each document."
+      explanation: "Incorrect. Downloading the document doesn't provide automatic notifications about updates."
+    - content: "Submit a support request to Microsoft asking to be notified of document updates."
       isCorrect: false
-      explanation: "Incorrect. Downloading the document doesn't ensure you have the latest updates."
+      explanation: "Incorrect. The My Library notification feature in the Service Trust Portal handles document update notifications automatically, without requiring a support request."
 
-  - content: "Microsoft's approach to privacy is built on six principles: Three of the principles are strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect. Identify the three other principles that are part of Microsoft's approach to privacy."
+  - content: "A law enforcement agency submits a request directly to Microsoft for a commercial customer's data. What does Microsoft's data defense commitment specify will happen?"
     choices:
-    - content: "Customer control, transparency, and security."
+    - content: "Microsoft will scrutinize the request for legal validity, promptly notify the customer where legally permitted, and direct the requesting party to seek the data directly from the customer."
       isCorrect: true
-      explanation: "Correct. The foundation of Microsoft's approach to privacy is built on the following six principles: customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
-    - content: "Shared responsibility, transparency, and security."
+      explanation: "Correct. Microsoft's data defense commitment states that it won't give any government direct or unfettered access to customer data. Microsoft scrutinizes all government demands, notifies the customer where legally permitted, and directs the requesting party to seek the data directly from the customer."
+    - content: "Microsoft will immediately comply with the request and provide the data to the law enforcement agency."
       isCorrect: false
-      explanation: "Incorrect. The shared responsibility model identifies which security tasks are handled by the cloud provider, and which security tasks are handled by you, the customer."
-    - content: "Customer control, transparency, and zero trust."
+      explanation: "Incorrect. Microsoft doesn't give governments direct or unfettered access to customer data. It scrutinizes requests and will challenge those that aren't legally valid."
+    - content: "Microsoft will refuse the request under any circumstances because government data requests are never permitted."
       isCorrect: false
-      explanation: "Incorrect. Although zero trust is a model employed by Microsoft, it's not one of the privacy principles. The privacy principles include security more broadly. The general principles that represent Microsoft's approach to privacy are customer control, transparency, security, strong legal protections for privacy, no content-based targeting, and benefits to customers from any data we collect."
-    
-  - content: A company needs to handle inquiries about personal data that they have collected, as per certain privacy regulations. Which Priva solution should they implement?
+      explanation: "Incorrect. Microsoft will disclose data when required by law. However, it scrutinizes all government demands to ensure they're legally valid and appropriate, and notifies customers where legally permitted."
+
+  - content: "An organization's data privacy team identifies that some internal sites in their Microsoft 365 environment are accessible to far more users than necessary. Which Microsoft Priva Privacy Risk Management policy type is designed to detect and help remediate this issue?"
     choices:
-    - content: Priva Privacy Assessments
-      isCorrect: false
-      explanation: Incorrect. Priva Privacy Assessments automates the discovery, documentation, and evaluation of personal data use across the entire data estate.
-    - content: Priva Consent Management
-      isCorrect: false
-      explanation: Incorrect. Priva Consent Management is used for streamlining the management of consented personal data.
-    - content: Priva Subject Rights Requests
+    - content: "Data overexposure policy"
       isCorrect: true
-      explanation: Correct. Priva Subject Rights Requests helps handle inquiries about personal data that companies have collected.
+      explanation: "Correct. Data overexposure policies detect situations in which data is insufficiently secured—such as when access to an internal site is open to too many people—and provide remediation options such as making content private or notifying content owners."
+    - content: "Data transfer policy"
+      isCorrect: false
+      explanation: "Incorrect. Data transfer policies monitor for transfers between different world regions, departments, or outside the organization. They don't address excessive access permissions on internal sites."
+    - content: "Data minimization policy"
+      isCorrect: false
+      explanation: "Incorrect. Data minimization policies look for data that has been stored for at least a certain length of time, to help manage ongoing storage practices. They don't address access permission issues."

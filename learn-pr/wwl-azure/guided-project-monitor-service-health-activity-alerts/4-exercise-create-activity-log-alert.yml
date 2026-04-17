@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-monitor-service-health-activity-alerts.exercise-create-activity-log-alert
+title: Exercise - Create an Activity Log alert
+metadata:
+  title: Exercise - Create an Activity Log alert
+  description: "Exercise - Create an Activity Log alert"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-create-activity-log-alert.md)]

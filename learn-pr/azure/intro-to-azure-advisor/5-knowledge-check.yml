@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-advisor.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Check your knowledge."
-  ms.date: 03/08/2023
+  ms.date: 07/24/2025
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 5
 content: |
 quiz:
@@ -33,10 +32,10 @@ quiz:
       explanation: "Correct. Azure Advisor aligns recommendations with the five pillars of architectural excellence described in the Azure Well-Architected Framework."
     - content: "Cost, Interoperability, Availability, Performance"
       isCorrect: false
-      explanation: "Incorrect. Those aren't the pillars for which Azure Advisor provides recommendations."
+      explanation: "Incorrect. Azure Advisor provides recommendations for the five pillars of architectural excellence described in the Azure Well-Architected Framework."
     - content: "Security, Performance, Spend, Business Continuity, Availability"
       isCorrect: false
-      explanation: "Incorrect. Those aren't the cloud pillars for which Azure Advisor provides recommendations."
+      explanation: "Incorrect. Azure Advisor provides recommendations for the five pillars of architectural excellence described in the Azure Well-Architected Framework."
   - content: "Azure Advisor is capable of:"
     choices:
     - content: "Providing recommendations over all Azure Services."

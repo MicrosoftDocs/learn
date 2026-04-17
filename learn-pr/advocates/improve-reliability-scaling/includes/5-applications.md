@@ -10,7 +10,7 @@ Performing an architectural review helps you to identify the areas that need imp
 
 The Azure Architecture Center has a wealth of resources to help you architect your applications in the cloud, and there are many scalability recommendations you can find in the application architecture guide at the following link:
 
-[Azure Architecture Center](/azure/architecture/?WT.mc_id=msignitethetour2019-slides-ops50)
+[Azure Architecture Center](/azure/architecture/)
 
 ## Scenario: Tailwind Traders architecture
 
@@ -20,7 +20,7 @@ Take another look at the scenario you saw in the previous unit. Here’s a diagr
 
 :::image type="content" source="../media/application-diagram-products.png" alt-text="Full architecture diagram of application with products backend highlighted.":::
 
-They've decomposed the application into smaller microservices, and some of these services are sitting as containers on Azure Kubernetes Service or they could be running on VMs or App Service. You’re using some *inherently scalable* services such as Functions and Logic Apps.
+They've decomposed the application into smaller microservices, and some of these services are sitting as containers on Azure Kubernetes Service or they could be running on VMs or App Service. They’re also using some *inherently scalable* services such as Functions and Logic Apps.
 
 This change is good, but there are some improvements that would make the application more scalable. As an example, focus now on the Products service. In the diagram, the product service is running in Kubernetes, but we assume for this explanation that it's running on a VM in Azure. The scaling concepts, possibly with a slightly different implementation, can be applied to applications whether they're running on servers, App Service, or in containers.
 
@@ -31,7 +31,7 @@ The product currently runs on a single VM, connected to a single Azure SQL datab
 By applying virtual machine scale sets over single VMs, you get a few benefits:
 
 - You can autoscale based on host metrics, in-guest metrics, application insights, or by a schedule.
-- You can use Availability Zones (AZ), which are independent standalone datacenters within an Azure region. With AZ support, you can spread your VMs across multiple AZs, which make your application more reliable and protect it from datacenter failures. New instances within a scale set are automatically evenly distributed across AZs.
+- You can use Availability Zones (AZ), which are physically separate locations within an Azure region, each made up of one or more datacenters. With AZ support, you can spread your VMs across multiple AZs, which makes your application more reliable and protects it from datacenter failures. New instances within a scale set are automatically evenly distributed across AZs.
 - Adding a load balancer becomes easier. Virtual machine scale sets support the use of Azure Load Balancer for basic Layer 4 traffic distribution. They also support Azure Application Gateway for more advanced L7 traffic distribution and SSL termination.
 
 There are some important factors you need to consider before implementing scale sets. Specifically:
@@ -44,7 +44,7 @@ There are some important factors you need to consider before implementing scale 
 
 You have added more VMs with scale sets. Scaling out is the typical answer to "we need to scale." But, you can only scale on a single metric, and this answer might not be relevant to all tasks performed by your product service.
 
-In our scenario, the products service has a job. It takes a product image and after that image is uploaded. It transcodes that image, and stores it in several different sizes for thumbnails, pictures in the catalog, and so forth. The image-processing is CPU intensive, but the general usage is memory intensive.
+In our scenario, the products service has a job: when a product image is uploaded, it transcodes that image and stores it in several different sizes for thumbnails, pictures in the catalog, and so forth. The image-processing is CPU intensive, but the general usage is memory intensive.
 
 Image-processing is an asynchronous task that can be broken into a background job. You can do that by decoupling your image-processing service using a queue. Decoupling allows you to scale both services independently – one on memory (the product service), and the other (the image-processing service) on CPU or even queue length, and have another scale set consume those messages and process the images.
 
@@ -63,45 +63,43 @@ Another way to improve the performance of your application is to implement an in
 
 Now you know that performance doesn't equal scalability exactly, but by improving the performance of your application, you can reduce the load on other resources. This improvement means you may not have to scale as soon.
 
-Azure Cache for Redis is a managed Redis offering. Redis can be used for many patterns and use cases. For your product service in this scenario, you would likely implement the cache-aside pattern. In this pattern, you load items from the database into the cache as needed, making your application more performant, and reducing the load on the database.
+Azure Managed Redis (formerly Azure Cache for Redis) is a managed Redis offering. Redis can be used for many patterns and use cases. For your product service in this scenario, you would likely implement the cache-aside pattern. In this pattern, you load items from the database into the cache as needed, making your application more performant, and reducing the load on the database.
 
-Redis can also be used as a messaging queue for caching web content or for user session caching. This type of caching may be more suitable for other services in the system such as the shopping cart service, where you could store shopping cart data per session in Redis instead of using a cookie.
+Redis can also be used as a messaging queue, for caching web content, or for user session caching. This type of caching may be more suitable for other services in the system such as the shopping cart service, where you could store shopping cart data per session in Redis instead of using a cookie.
 
 ## Scale the database
 
-Now that you’ve made your compute resources more scalable, take a look at your database. In this scenario, you’re using Azure SQL database, which is a managed SQL server offering from Azure.
+Now that you've made your compute resources more scalable, take a look at your database. In this scenario, you're using Azure SQL Database, which is a managed SQL Server offering from Azure.
 
-Relational databases are more difficult to scale out than nonrelational databases. The first thing you might do to scale your database is to scale up the size of the database. This resizing can be done easily with an average downtime of under four seconds. Either by using a simple API call in Azure SQL, or by using a slider in the portal.
+Relational databases are more difficult to scale out than nonrelational databases. The first thing you might do to scale your database is to scale up the size of the database. This resizing can be done easily with only a brief moment of connectivity loss, either by using a simple API call in Azure SQL or by using a slider in the portal.
 
-If this sizing up doesn’t meet your requirements, depending on traffic characteristics, it may be suitable to scale out the reads to the database. Enabling you to route read traffic to your Read Replica.
+If this sizing up doesn't meet your requirements, depending on traffic characteristics, it may be suitable to scale out the reads to the database, enabling you to route read traffic to your read replica.
 
 > [!NOTE]
-> With Azure SQL, if you’re using the Premium or Business Critical tiers, Read Scale Out is enabled by default. It cannot be enabled on basic or standard tiers.
+> With Azure SQL, Read Scale-Out is available by default on the Premium, Business Critical, and Hyperscale tiers. For Hyperscale, at least one secondary replica must be configured. It cannot be enabled on Basic or Standard tiers.
 
-This change must be implemented in code. Here’s how to do that.
+This change must be implemented in code. You specify the routing intent by setting the `ApplicationIntent` attribute in your database connection string. Use `ReadOnly` to connect to the replica, or `ReadWrite` to connect to the primary.
 
-```sql
-#Azure SQL Connection String
+The recommended approach is to use managed identities for authentication, storing any necessary configuration in Azure Key Vault:
 
-#Master Connection String
-ApplicationIntent=ReadWrite
+```text
+#Read Replica Connection String (recommended: managed identity)
+Server=tcp:<server>.database.windows.net;Database=<mydatabase>;ApplicationIntent=ReadOnly;Authentication=Active Directory Default;Encrypt=True;
 
-#Read Replica Connection String
-ApplicationIntent=ReadOnly
-
-#Full Example
-Server=tcp:<server>.database.windows.net;Database=<mydatabase>;ApplicationIntent=ReadOnly;User ID=<myLogin>;Password=<myPassword>;Trusted_Connection=False; Encrypt=True;
+#Primary Connection String (recommended: managed identity)
+Server=tcp:<server>.database.windows.net;Database=<mydatabase>;ApplicationIntent=ReadWrite;Authentication=Active Directory Default;Encrypt=True;
 ```
 
-Update the `ApplicationIntent` attribute in your database connection string to specify to which server you want to connect. Use `ReadOnly` if you want to connect to the replica, or `ReadWrite` if you want to connect to the master.
+> [!IMPORTANT]
+> In production, use managed identities for authentication. For any additional secrets your application requires, store them in Azure Key Vault rather than in code or configuration files.
 
-Because this command must be implemented in code, it may not be a suitable solution for your situation. What if every single product service needs the ability to read and write?
+Because this change must be implemented in code, it may not be a suitable solution for your situation. What if every single product service needs the ability to read and write?
 
-In that case, you can look at scaling out SQL DB by using sharding.
+In that case, you can look at scaling out Azure SQL Database by using sharding.
 
 ### Database sharding
 
-If after scaling up or implementing Read Replicas, your database resources still don’t meet the needs of your system, the next option is *sharding*.
+If after scaling up or implementing read replicas, your database resources still don't meet the needs of your system, the next option is *sharding*.
 
 Sharding is a technique to distribute large amounts of identically structured data across many independent databases. Sharding may be required for many reasons. For example:
 
@@ -109,6 +107,6 @@ Sharding is a technique to distribute large amounts of identically structured da
 - The transaction throughput of the overall workload exceeds the capabilities of an individual database.
 - Separate tenants need to reside on different physical databases for compliance reasons (this requirement is less about scaling, but is another situation in which sharding is used).
 
-Your application adds the relevant data to the relevant shard, and thus make your system scalable beyond the constraints of the individual database.
+Your application adds the relevant data to the relevant shard, and thus makes your system scalable beyond the constraints of the individual database.
 
 Azure SQL offers the Azure Elastic Database tools. These tools help you create, maintain, and query sharded SQL databases in Azure from your application logic.

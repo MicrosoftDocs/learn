@@ -1,11 +1,11 @@
-Understanding how security works for agent pools helps you control sharing and use of agents.
+Understanding agent pool security helps you control sharing and access to agents across your organization and projects.
 
-## Azure Pipelines
+## Security model overview
 
-In Azure Pipelines, roles are defined on each agent pool. Membership in these roles governs what operations you can do on an agent pool.
+Azure Pipelines uses role-based access control for agent pools, with different roles governing what operations users can perform.
 
 > [!NOTE]
-> There are differences between **Organization** and **Project** agent pools.
+> Organization and project agent pools have different security models and capabilities.
 
 | **Role on an organization agent pool** | **Purpose**                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

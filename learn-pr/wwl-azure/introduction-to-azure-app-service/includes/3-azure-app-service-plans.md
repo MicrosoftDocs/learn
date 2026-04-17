@@ -5,8 +5,8 @@ When you create an App Service plan in a certain region (for example, West Europ
 * Operating System (Windows, Linux)
 * Region (West US, East US, etc.)
 * Number of VM instances
-* Size of VM instances (Small, Medium, Large)
-* Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
+* Size of VM instances (for example, P1v3, P2v3, based on pricing tier)
+* Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, IsolatedV2)
 
 The *pricing tier* of an App Service plan determines what App Service features you get and how much you pay for the plan. There are a few categories of pricing tiers:
 
@@ -15,7 +15,7 @@ The *pricing tier* of an App Service plan determines what App Service features y
 * **Isolated**: The **Isolated** and **IsolatedV2** tiers run dedicated Azure VMs on dedicated Azure Virtual Networks. It provides network isolation on top of compute isolation to your apps. It provides the maximum scale-out capabilities.
 
 > [!NOTE]
-> App Service Free and Shared (preview) hosting plans are base tiers that run on the same Azure virtual machines as other App Service apps. Some apps might belong to other customers. These tiers are intended to be used only for development and testing purposes.
+> App Service Free and Shared hosting plans are base tiers that run on the same Azure virtual machines as other App Service apps. Some apps might belong to other customers. These tiers are intended to be used only for development and testing purposes.
 
 ## How does my app run and scale?
 
@@ -38,6 +38,6 @@ Isolate your app into a new App Service plan when:
 
 * The app is resource-intensive.
 * You want to scale the app independently from the other apps in the existing plan.
-* The app needs resource in a different geographical region.
+* The app needs resources in a different geographical region.
 
-This way you can allocate a new set of resources for your app and gain greater control of your apps.
+This approach gives you a dedicated resource pool and greater control over your app’s performance and scaling.

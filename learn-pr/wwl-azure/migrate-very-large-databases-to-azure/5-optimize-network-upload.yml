@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.optimize-network-upload
 title: Optimize network upload
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize network upload
   description: "Optimize network upload."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-optimize-network-upload.md)]
+  [!include[](includes/5-optimize-network-upload.md)]

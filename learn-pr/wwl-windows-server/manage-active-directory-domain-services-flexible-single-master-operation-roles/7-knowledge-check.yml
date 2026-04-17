@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["B418C8C2_42","B418C8C2_55","B418C8C2_79","B418C8C2_116","B418C8C2_120","B418C8C2_124","B418C8C2_136"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

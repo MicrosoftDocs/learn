@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You're investigating a data loss prevention (DLP) alert where a user uploaded a file named 'Budget_2025.xlsx' to a personal cloud storage account. To understand what policy triggered the alert and whether it was a false positive, where should you start your investigation?"
+    choices:
+    - content: "Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Sentinel is used for broader incident correlation, not reviewing DLP policy triggers directly."
+    - content: "Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Defender XDR shows incidents but isn't the primary place to check DLP policy details."
+    - content: "Microsoft Purview"
+      isCorrect: true
+      explanation: "Correct: Microsoft Purview focuses on DLP policy matches and is the best place to validate what triggered the alert."
+
+  - content: "During your investigation, you notice the same user downloaded multiple files from SharePoint earlier that day. Which tool gives you the clearest view of all related activity in one place?"
+    choices:
+    - content: "Activity explorer"
+      isCorrect: false
+      explanation: "Incorrect: Activity explorer focuses on user actions but doesn't group events into incidents."
+    - content: "Microsoft Defender XDR"
+      isCorrect: true
+      explanation: "Correct: Defender XDR groups related alerts and user activity into incidents for a consolidated view."
+    - content: "Microsoft Purview portal"
+      isCorrect: false
+      explanation: "Incorrect: The Microsoft Purview portal focuses on compliance tasks, not incident correlation."
+
+  - content: "You want to ensure another analyst follows up on this DLP alert. What should you do in Microsoft Defender XDR?"
+    choices:
+    - content: "Assign the incident and update the status"
+      isCorrect: true
+      explanation: "Correct: Assigning the incident and updating the status ensures accountability and tracking through resolution."
+    - content: "Add the alert to a SharePoint list"
+      isCorrect: false
+      explanation: "Incorrect: SharePoint isn't used for incident workflow in Defender XDR."
+    - content: "Set the alert to simulation mode"
+      isCorrect: false
+      explanation: "Incorrect: Simulation mode is used during testing policies, not for real alerts."
+
+  - content: "You confirm the user improperly handled sensitive financial data. What remediation action is appropriate within Microsoft Defender XDR?"
+    choices:
+    - content: "Disable the user's account or remove file access"
+      isCorrect: true
+      explanation: "Correct: Disabling the account or removing file access protects organizational data after a confirmed incident."
+    - content: "Adjust the DLP policy immediately"
+      isCorrect: false
+      explanation: "Incorrect: Policy tuning comes after remediation, not as an immediate incident response."
+    - content: "Delete the alert from the incident queue"
+      isCorrect: false
+      explanation: "Incorrect: Deleting alerts isn't part of the standard remediation process."
+
+  - content: "After resolving the incident, what step helps improve your DLP policy and reduce false positives in the future?"
+    choices:
+    - content: "Tune the DLP policy based on investigation findings"
+      isCorrect: true
+      explanation: "Correct: Policy tuning ensures that detection rules are optimized based on real-world investigations."
+    - content: "Reset the policy match counter"
+      isCorrect: false
+      explanation: "Incorrect: There's no reset counter process in DLP policies."
+    - content: "Archive the incident in Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect: Archiving is for recordkeeping but doesn't improve DLP policies directly."

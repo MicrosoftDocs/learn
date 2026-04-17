@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.define-forests-domains
 title: Define Active Directory Domain Services forests and domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define Active Directory Domain Services forests and domains
   description: "Define Active Directory Domain Services forests and domains"
   ms.date: 06/18/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-define-forests-domains.md)]
+  [!include[](includes/3-define-forests-domains.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-apps-azure-kubernetes-service.persistent-storage
+title: Attach persistent storage to an app
+metadata:
+  title: Attach Persistent Storage to an App
+  description: Attach persistent storage to an app
+  ms.date: 12/14/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-persistent-storage.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-on-premises-data.run-scanner
+title: Run and manage the scanner
+metadata:
+  title: Run and manage the scanner
+  description: "Run and manage the scanner."
+  ms.date: 04/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/run-scanner.md)]

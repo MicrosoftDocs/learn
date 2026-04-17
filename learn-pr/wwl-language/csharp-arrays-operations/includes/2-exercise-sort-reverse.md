@@ -70,7 +70,7 @@ If you completed other Microsoft Learn modules in this C# series on your own com
     ```
 
     > [!NOTE]
-    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12.
+    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12 and supported in .NET 10.
 
 1. Take a minute to review the `Array.Sort(pallets);` line from the previous code you added.
 

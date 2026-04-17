@@ -3,18 +3,18 @@ uid: learn.wwl.configure-profiles-user-device
 metadata:
   title: MD-102 Configure profiles for user and devices
   description: This learning path explores Intune device profiles, the benefits of user profiles and how to synchronize profile data across multiple devices.
-  ms.date: 03/14/2023
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: learning-path
 title: MD-102 Configure profiles for user and devices
 prerequisites: |
-  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
-  *   Strong understanding of computer networking, client security, and application concepts.
-  *   Experience using Active Directory Domain Services.
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+  -   Strong understanding of computer networking, client security, and application concepts.
+  -   Experience using Active Directory Domain Services.
 summary: |
   This learning path explores Intune device profiles, the benefits of user profiles and how to synchronize profile data across multiple devices.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/onfigure-profiles-user-device.svg
 levels:
 - intermediate
 roles:

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-kubernetes-cluster-to
 title: Deploy a Kubernetes cluster to Azure Stack HCI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy a Kubernetes cluster to Azure Stack HCI
   description: "Deploy a Kubernetes cluster to Azure Stack HCI"
   ms.date: 06/09/2021
@@ -27,4 +25,4 @@ quiz:
       explanation: "Correct. During this step, specify the size of the VMs used to host the control plane components."
     - content: "Integration"
       isCorrect: false
-      explanation: "Incorrect. During this step, Windows Admin Center presents the integration settings, which indicate the Azure Stack HCI-based persistent storage available to containerized workloads."
+      explanation: "Incorrect. During this step, Windows Admin Center presents the integration settings, which indicate the Azure Stack HCI-based persistent storage available to containerized workloads."

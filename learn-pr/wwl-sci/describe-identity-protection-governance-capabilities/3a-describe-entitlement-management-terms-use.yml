@@ -2,14 +2,12 @@
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-entitlement-management-terms-use
 title: Describe entitlement management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe entitlement management
   description: "Describe entitlement management"
-  ms.date: 08/02/2024
+  ms.date: 03/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/3a-describe-entitlement-management-terms-use.md)]

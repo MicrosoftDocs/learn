@@ -2,17 +2,14 @@
 uid: learn.tensorflow.intro-computer-vision.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
-  description: In this last unit, we briefly recap what we have learned, and set directions for further learning.
-  author: shwars
-  ms.author: chnoring
-  ms.date: 07/07/2021
+  description: In this last unit, we briefly recap the module.
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.date: 04/01/2026
+  ms.update-cycle: 180-days
   ms.topic: unit
-  ms.collection:
-    - ce-advocates-ai-copilot
-  ms.custom: team=nextgen
+  ms.collection: ce-advocates-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

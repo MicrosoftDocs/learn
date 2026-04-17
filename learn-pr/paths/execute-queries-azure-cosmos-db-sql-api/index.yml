@@ -3,7 +3,7 @@ uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api
 metadata:
   title: Execute queries and build a Generative AI application with Azure Cosmos DB
   description: Execute queries and build a Generative AI application with Azure Cosmos DB
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: learning-path
@@ -19,7 +19,10 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+- azure-openai
 subjects:
+- artificial-intelligence
+- app-development
 - databases
 modules:
 - learn.wwl.query-azure-cosmos-db-sql-api

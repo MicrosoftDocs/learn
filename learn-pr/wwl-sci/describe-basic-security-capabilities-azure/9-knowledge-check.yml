@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-basic-security-capabilities-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/05/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -58,3 +59,14 @@ quiz:
     - content: "To securely store and retrieve application secrets"
       isCorrect: true
       explanation: "Correct. Application developers can use Azure Key Vault to securely store and retrieve application secrets, such as database connection strings, without having to include it in the application code."
+  - content: "An organization wants to protect its customer-facing web application from SQL injection and cross-site scripting (XSS) attacks. Which Azure service is best suited for this purpose?"
+    choices:
+    - content: "Azure DDoS Protection"
+      isCorrect: false
+      explanation: "Incorrect. Azure DDoS Protection protects against volumetric, protocol, and application-layer DDoS attacks at the network and transport layers. It doesn't inspect web application traffic for SQL injection or XSS patterns."
+    - content: "Azure Web Application Firewall (WAF)"
+      isCorrect: true
+      explanation: "Correct. Azure Web Application Firewall provides centralized protection for web applications against common exploits including SQL injection and cross-site scripting, based on OWASP core rule set rules."
+    - content: "Azure Network Security Groups"
+      isCorrect: false
+      explanation: "Incorrect. NSGs filter network traffic based on IP addresses, ports, and protocols. They don't inspect HTTP request content for SQL injection or XSS attack patterns."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.hci-stack.security-features
+title: Security features
+metadata:
+  title: Security Features
+  description: This content is part of the "Hyperconverged Infrastructure (HCI) Stack" module.
+  ms.date: 09/16/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-security-features.md)]

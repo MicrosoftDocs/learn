@@ -24,17 +24,7 @@ In this module, you learn how to:
 
 ## Skills measured 
 
-The content in the module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
-
-Design identity, governance, and monitoring solutions
-
-- Design a solution for logging and monitoring
-
-   - Recommend a logging solution.
-
-   - Recommend a solution for routing logs.
-
-   - Recommend a monitoring solution.
+The content in the module helps you prepare for [Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions](/credentials/certifications/exams/az-305/). 
 
 ## Prerequisites
 

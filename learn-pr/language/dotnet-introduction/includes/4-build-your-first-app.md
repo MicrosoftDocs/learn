@@ -4,14 +4,16 @@ For simplicity, we're going to rewrite the "Hello World" application, but this t
 
 ## Build a basic app by using C#
 
-Earlier, you learned that **Try .NET** provides an easy way to experiment with C# and .NET. You can use Try .NET without installing any software on your local computer.
+Browser code editors provide an easy way to experiment with C# and .NET. You can use this [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) without installing any software on your local computer.
 
 > [!Note]
-> In this module, you use a browser built-in version of Try .NET. If you want to experiment with the application after you finish this exercise, go to `https://try.dot.net`. Try .NET is a great way to try out small code examples without installing anything on your local computer.
+> In this module, you use a browser-based code editor. This editor is a great way to try out small code examples without installing anything on your local computer.
 
 ### Step 1 - Write the code
 
-In the .NET editor, on the right side of this web page, type the following code sample. Or copy the code sample and then paste it in the .NET editor.
+Open the [C# Code Editor](https://microsoftlearning.github.io/c-sharp-minor?azure-portal=true) in a new browser window or tab. You can position the browser windows side-by-side so that you can refer to these instructions while you work in the C# Code Editor.
+
+Type the following code sample, or copy the code sample and then paste it, into the C# Code Editor:
 
 ```csharp-interactive
 Console.WriteLine("Hello world!");
@@ -21,14 +23,14 @@ As you learned in the prerequisite module, "Hello world" is a simple and canonic
 
 ### Step 2 - Run the code
 
-Select the green **Run** button in the .NET editor. If the entered C# code is correct, the words "Hello World!" appear in the **Output** pane.
+Select the ▶️ Run button in the C# Code Editor. If the entered C# code is correct, the words "Hello World!" appear in the **Output** pane.
 
 > [!IMPORTANT]
-> If you see any errors while running this code, copy the code and paste it in the .NET editor, then try running the code again.
+> If you see any errors while running this code, copy the code and paste it in the C# Code Editor, then try running the code again.
 
 ### What happens to the code you write?
 
-The browser version of Try .NET hides some of the code you see when you build a full application by using Try .NET, Visual Studio 2022, or Visual Studio Code.
+The C# Code Editor hides some of the code you see when you build a full application using Visual Studio, or Visual Studio Code.
 
 When you include the hidden code, here's how the example looks:
 
@@ -44,7 +46,7 @@ public class Program
 }
 ```
 
-The browser version of Try .NET uses the same steps you learned about earlier. The only difference is that some of the code is hidden to simplify the experience.
+The browser-based C# Code Editor uses the same steps you learned about earlier. The only difference is that some of the code is hidden to simplify the experience.
 
 Focusing on that expanded view of the code, you can see a series of curly braces `{ }`. C# uses a pair of curly braces to define a *code block*. Different kinds of code blocks are used for different purposes.
 

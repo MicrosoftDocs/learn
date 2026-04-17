@@ -3,16 +3,17 @@ uid: learn.wwl.utilize-threat-intelligence-azure-sentinel
 metadata:
   title: Utilize threat intelligence in Microsoft Sentinel
   description: "Utilize threat intelligence in Microsoft Sentinel"
-  ms.date: 06/21/2022
-  author: wwlpublish
+  ms.date: 05/07/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Utilize threat intelligence in Microsoft Sentinel
 summary: Learn how the Microsoft Sentinel Threat Intelligence page enables you to manage threat indicators.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Manage threat indicators in Microsoft Sentinel
+  - Manage threat indicators in Microsoft Defender
   - Use KQL to access threat indicators in Microsoft Sentinel
 prerequisites: |
   Basic knowledge of security operational concepts such as monitoring, logging, and alerting.
@@ -22,7 +23,7 @@ levels:
 roles:
 - security-operations-analyst
 products:
-- azure
+- microsoft-defender
 - microsoft-sentinel
 subjects:
 - cloud-security

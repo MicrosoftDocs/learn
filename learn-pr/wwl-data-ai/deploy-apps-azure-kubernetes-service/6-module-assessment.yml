@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-apps-azure-kubernetes-service.module-assessment
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: Module assessment
+  ms.date: 12/11/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which Service type should you use when you need to expose an application to the internet with an Azure-managed load balancer?"
+    choices:
+    - content: "LoadBalancer"
+      isCorrect: true
+      explanation: "LoadBalancer creates an external Azure Load Balancer with a public IP address, making your application accessible from the internet."
+    - content: "ClusterIP"
+      isCorrect: false
+      explanation: "ClusterIP provides only internal cluster access and doesn't expose applications to the internet."
+    - content: "NodePort"
+      isCorrect: false
+      explanation: "NodePort exposes services on node IPs but doesn't provide a managed Azure load balancer with a public IP."
+  - content: "What happens if a Pod's resource requests exceed the available capacity on all cluster nodes?"
+    choices:
+    - content: "The Pod stays in Pending status until sufficient resources become available"
+      isCorrect: true
+      explanation: "When resource requests can't be satisfied, Kubernetes can't schedule the Pod, so it remains in Pending status until nodes have enough capacity."
+    - content: "Kubernetes automatically scales the cluster to add more nodes"
+      isCorrect: false
+      explanation: "Kubernetes doesn't automatically add nodes. You need to manually scale the cluster or configure cluster autoscaling separately."
+    - content: "The Pod starts but with reduced resource allocation"
+      isCorrect: false
+      explanation: "Kubernetes respects resource requests strictly. If they can't be met, the Pod doesn't start."
+  - content: "What must match between a Deployment and a Service for traffic to route correctly?"
+    choices:
+    - content: "The Pod labels in the Deployment template must match the Service selector"
+      isCorrect: true
+      explanation: "The Service uses its selector to find Pods with matching labels. If labels don't match, the Service has no endpoints and traffic can't route."
+    - content: "The container port in the Deployment must match the Service port"
+      isCorrect: false
+      explanation: "The Service port is what clients connect to. The targetPort in the Service must match the container port in the Deployment, not the Service port."
+    - content: "The Deployment name must match the Service name"
+      isCorrect: false
+      explanation: "Names don't need to match. The Service uses label selectors to find Pods, not names."
+  - content: "Which kubectl command should you use to view logs from a Pod that crashed and restarted?"
+    choices:
+    - content: "`kubectl logs <pod-name> --previous`"
+      isCorrect: true
+      explanation: "The `--previous` flag shows logs from the previous container instance before it crashed, which is essential for diagnosing CrashLoopBackOff issues."
+    - content: "`kubectl logs <pod-name>`"
+      isCorrect: false
+      explanation: "Without `--previous`, this command shows logs from the current container instance, which might not contain the crash information."
+    - content: "`kubectl describe pod <pod-name>`"
+      isCorrect: false
+      explanation: "While describe shows events and status, it doesn't show the application logs needed to diagnose why the crash occurred."
+  - content: "What does the `replicas` field in a Deployment manifest control?"
+    choices:
+    - content: "The number of Pod copies that should run simultaneously"
+      isCorrect: true
+      explanation: "The `replicas` field determines how many identical Pods Kubernetes maintains. This provides high availability and load distribution."
+    - content: "The number of containers in each Pod"
+      isCorrect: false
+      explanation: "The number of containers per Pod is defined in the containers section of the Pod template, not by the replicas field."
+    - content: "The number of Services that can connect to the Deployment"
+      isCorrect: false
+      explanation: "Services can connect to Deployments regardless of the replica count. The replicas field only controls Pod copies."

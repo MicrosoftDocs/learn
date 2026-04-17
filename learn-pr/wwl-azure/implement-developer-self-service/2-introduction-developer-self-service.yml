@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-developer-self-service.introduction-developer-self-service
 title: Introduction to Developer Self-Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Developer Self-Service
   description: "Introduction to Developer Self-Service"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-introduction-developer-self-service.md)]
+  [!include[](includes/2-introduction-developer-self-service.md)]

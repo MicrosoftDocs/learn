@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.dpu.windows-11-pro-accreditation-2026
+title: Windows 11 Pro Accreditation 2026
+metadata:
+  title: Windows 11 Pro Accreditation 2026
+  description: This Learning Path introduces Windows 11 Pro as a secure, high-performance platform designed to support AI-enabled work. Learners will explore how Windows can provide a flexible canvas for AI experiences, built-in security and management, resilient device fundamentals, and seamless integration with the Microsoft Cloud. The Learning Path covers how Windows 11 Pro supports intelligent workflows with AI and agents, simplifies IT management with security by default, and delivers reliable performance for mission-critical operations. By completing this Learning Path, learners will understand how they can use Windows 11 Pro to adopt AI while maintaining strong security, resiliency, and operational efficiency.
+  ms.date: 01/28/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+summary: >
+  Explore how Windows 11 Pro serves as a secure, reliable canvas for AI, combining intelligent tools, built-in security, and cloud integration to support business needs.
+prerequisites: None
+iconUrl: /training/achievements/windows-11-pro-accreditation-2026.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - technology-manager
+products:
+  - windows-11
+  - m365-business
+  - microsoft-365-copilot
+  - intune
+modules:
+  - learn.dpu.how-windows-enables-ai-agents
+  - learn.dpu.resilient-foundations-windows-11
+  - learn.dpu.security-management
+  - learn.dpu.cloud-powered-experiences-windows-11-pro
+trophy:
+  uid: learn.dpu.windows-11-pro-accreditation-2026.trophy

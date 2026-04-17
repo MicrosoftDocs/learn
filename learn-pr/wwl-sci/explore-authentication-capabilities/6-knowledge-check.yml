@@ -1,52 +1,73 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/23/2024
+  ms.date: 03/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
+  module_assessment: true
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Of the authentication methods listed below, Which one represents the most secure authentication method?"
+  - content: "Which of the following is classified as a phishing-resistant authentication method in Microsoft Entra ID?"
     choices:
-    - content: "Windows Hello."
+    - content: "Passkeys (FIDO2)"
       isCorrect: true
-      explanation: "Correct. Of the methods listed below, Windows Hello, as a passwordless method of authentication, is the most secure."
-    - content: "Passwords."
+      explanation: "Correct. Passkeys (FIDO2) use origin-bound public key cryptography, making them phishing resistant. Credentials can't be replayed or shared with malicious actors."
+    - content: "SMS-based authentication"
       isCorrect: false
-      explanation: "Incorrect. Passwords are considered among the most insecure methods of authentication."
-    - content: "Short message service (SMS)"
+      explanation: "Incorrect. SMS-based authentication is vulnerable to remote phishing attacks where attackers can intercept verification codes."
+    - content: "Voice call verification"
       isCorrect: false
-      explanation: "Incorrect. A passwordless authentication method, such as Windows Hello, is more secure than an SMS method of authentication, regardless of whether it's used as a primary or secondary form of authentication."
-  - content: "Which of the following additional forms of verification can be used with Microsoft Entra multifactor authentication?"
+      explanation: "Incorrect. Voice call verification is not considered a phishing-resistant authentication method."
+  - content: "Which of the following forms of verification can be used with Microsoft Entra multifactor authentication?"
     choices:
-    - content: "Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business"
+    - content: "Microsoft Authenticator, SMS, Voice call, passkey (FIDO2), and Windows Hello for Business"
       isCorrect: true
-      explanation: "Correct. These are all valid forms of verification with multifactor authentication."
-    - content: "Security questions, SMS, Voice call, FIDO2, and Windows Hello for Business"
+      explanation: "Correct. These are all valid forms of verification with Microsoft Entra multifactor authentication."
+    - content: "Security questions, SMS, Voice call, passkey (FIDO2), and Windows Hello for Business"
       isCorrect: false
       explanation: "Incorrect. Security questions aren't a valid form of verification with multifactor authentication."
-    - content: "Password spray, SMS, Voice call, FIDO2, and Windows Hello for Business"
+    - content: "Password spray, SMS, Voice call, passkey (FIDO2), and Windows Hello for Business"
       isCorrect: false
-      explanation: "Correct. Password spray isn't a form of verification, it's an identity based attack."
-  - content: "A company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
+      explanation: "Incorrect. Password spray isn't a form of verification, it's an identity-based attack."
+  - content: "A company's IT organization is asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
     choices:
-    - content: "Self-service password reset."
+    - content: "Self-service password reset"
       isCorrect: true
-      explanation: "Correct. Self-service password reset allows users to change or reset their own passwords, thereby reducing the cost of providing administrators and help desk personnel."
-    - content: "Biometric sign-in on all devices."
+      explanation: "Correct. Self-service password reset allows users to change or reset their own passwords, reducing help desk calls, and the associated IT costs."
+    - content: "Biometric sign-in on all devices"
       isCorrect: false
-      explanation: "Incorrect. Biometric sign-in is secure but may involve upgrading hardware."
-    - content: "FIDO2."
+      explanation: "Incorrect. Biometric sign-in is secure but may involve upgrading hardware, which could increase costs."
+    - content: "FIDO2 security keys"
       isCorrect: false
-      explanation: "Incorrect. FIDO2 may require the purchase of external keys such as a USB device, which might involve additional expense."
+      explanation: "Incorrect. FIDO2 security keys may require purchasing physical hardware such as USB devices, which could involve extra expense."
+  - content: "What technique does Microsoft Entra password protection use to detect variations of banned passwords?"
+    choices:
+    - content: "Normalization and fuzzy matching"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra password protection normalizes passwords by converting to lowercase and applying character substitutions, then uses fuzzy matching to detect passwords within an edit distance of one from banned passwords."
+    - content: "Exact string comparison only"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra password protection goes beyond exact matching. It uses normalization and fuzzy matching to detect variations of banned passwords."
+    - content: "User-reported weak passwords"
+      isCorrect: false
+      explanation: "Incorrect. The banned password list is maintained by analyzing security telemetry data, not user reports."
+  - content: "What does Microsoft Entra ID account recovery use to verify a user's identity when they've lost access to all authentication methods?"
+    choices:
+    - content: "AI-powered identity verification with government-issued ID"
+      isCorrect: true
+      explanation: "Correct. Account recovery uses Microsoft Entra Verified ID with Face Check, powered by Azure AI services, to match a user's real-time selfie to the photo on their government-issued ID."
+    - content: "Security questions"
+      isCorrect: false
+      explanation: "Incorrect. Account recovery is designed for total lockout scenarios where traditional methods are unavailable. It uses AI-powered identity verification, not security questions."
+    - content: "An email sent to the user's personal address"
+      isCorrect: false
+      explanation: "Incorrect. Account recovery uses robust identity verification through trusted identity verification providers and AI-powered biometric matching, not email."
 

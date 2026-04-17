@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-server-2025-features-explained.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Key features and innovations in Windows Server 2025" module.
+  ms.date: 09/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does secured-core server in Windows Server 2025 primarily protect against?"
+    choices:
+        - content: "Network-based attacks"
+          isCorrect: false
+          explanation: "Incorrect. Secured-core focuses on deeper system layers."
+        - content: "Firmware-level attacks"
+          isCorrect: true
+          explanation: "Correct. It guards against threats invisible to traditional tools."
+        - content: "Application vulnerabilities"
+          isCorrect: false
+          explanation: "Incorrect. These are addressed by other security measures."
+        - content: "Physical theft"
+          isCorrect: false
+          explanation: "Incorrect. Secured-core does not prevent physical access."
+  - content: "What is a key benefit of rebootless updates via Azure Arc?"
+    choices:
+        - content: "They eliminate the need for security patches"
+          isCorrect: false
+          explanation: "Incorrect. Patches are still applied."
+        - content: "They require manual server restarts"
+          isCorrect: false
+          explanation: "Incorrect. Rebootless updates avoid restarts."
+        - content: "They reduce downtime during patching"
+          isCorrect: true
+          explanation: "Correct. Updates are applied without disrupting workloads."
+        - content: "They only work on physical servers"
+          isCorrect: false
+          explanation: "Incorrect. They apply to Azure Arc–enabled servers."
+  - content: "How does GPU partitioning improve AI and ML workload efficiency?"
+    choices:
+        - content: "By disabling unused GPU cores"
+          isCorrect: false
+          explanation: "Incorrect. Partitioning allocates resources, not disables them."
+        - content: "By assigning one GPU per VM"
+          isCorrect: false
+          explanation: "Incorrect. It avoids dedicating full GPUs to each VM."
+        - content: "By dividing a GPU into multiple virtual GPUs"
+          isCorrect: true
+          explanation: "Correct. This enables efficient resource sharing."
+        - content: "By replacing GPUs with CPUs"
+          isCorrect: false
+          explanation: "Incorrect. CPUs are not a substitute for GPU-intensive tasks."
+  - content: "What does Azure Arc enable for Windows Server 2025 management?"
+    choices:
+        - content: "Isolated server environments"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc centralizes, not isolates."
+        - content: "Manual patching only"
+          isCorrect: false
+          explanation: "Incorrect. It supports automated patching."
+        - content: "Unified management across environments"
+          isCorrect: true
+          explanation: "Correct. It integrates on-premises, edge, and cloud."
+        - content: "Exclusive cloud-only control"
+          isCorrect: false
+          explanation: "Incorrect. Azure Arc supports hybrid environments."
+  - content: "What distinguishes Hyper-V containers from Windows containers?"
+    choices:
+        - content: "They use less memory"
+          isCorrect: false
+          explanation: "Incorrect. Isolation, not memory usage, is the key difference."
+        - content: "They share the OS with other containers"
+          isCorrect: false
+          explanation: "Incorrect. That describes Windows containers."
+        - content: "They run in a more isolated environment"
+          isCorrect: true
+          explanation: "Correct. Hyper-V containers offer added security."
+        - content: "They require physical servers"
+          isCorrect: false
+          explanation: "Incorrect. They can run on virtual infrastructure."
+

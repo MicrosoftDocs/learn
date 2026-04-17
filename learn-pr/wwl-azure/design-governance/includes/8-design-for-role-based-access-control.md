@@ -1,6 +1,6 @@
 [Azure RBAC](/azure/role-based-access-control/overview) allows you to grant access to Azure resources that you control. Azure RBAC evaluates each request for access and determines if access should be blocked, not allowed, or allowed. 
 
-:::image type="content" source="../media/role-based-access-control-flowchart.png" alt-text="Diagram of an RBAC decision tree that shows the flow from no access to access allowed." border="false":::
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1c0458bb-8548-4e8d-8443-f1edc02e5adf]
  
 RBAC is an allow model. An _allow model_ means when a user is assigned a specific role, Azure RBAC allows the user to perform the actions associated with that role. A role assignment could grant a user read permissions to a resource group. To have write permissions, the role would need to explicitly allow write access. 
 
@@ -20,7 +20,7 @@ Suppose you need to manage access to resources in Azure for Tailwind Traders Dev
 
 You have a plan for how to apply Azure Policy settings to your Tailwind Traders applications. Now consider how to integrate Azure RBAC to control user privileges and resource access.
 
-- **Consider the highest scope level for each requirement**. Your first step is to accurately define each role definition and its permissions. Next, assign the roles to specific users, groups, and service principles. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Assign each role at the highest scope level that meets the requirements.
+- **Consider the highest scope level for each requirement**. Your first step is to accurately define each role definition and its permissions. Next, assign the roles to specific users, groups, and service principals. Lastly, scope the roles to management groups, subscriptions, resource groups, and resources. Assign each role at the highest scope level that meets the requirements.
 
    :::image type="content" source="../media/role-definition-assignment-scope.png" alt-text="Diagram that shows how a role definition is assigned to a resource and then scoped." border="false":::
 

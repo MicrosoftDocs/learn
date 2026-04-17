@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-threat-indicators-to-azure-sentinel.defender-threat-intelligence-connector
+title: Connect the Defender Threat Intelligence connector
+metadata:
+  title: Connect the Defender Threat Intelligence connector
+  description: "Learn how to install, configure, and connect the Microsoft Defender Threat Intelligence (MDTI) connector in Microsoft Sentinel."
+  ms.date: 05/06/2025
+  author: KenMAG
+  ms.author: kelawson
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-connect-defender-threat-intelligence-connector.md)]

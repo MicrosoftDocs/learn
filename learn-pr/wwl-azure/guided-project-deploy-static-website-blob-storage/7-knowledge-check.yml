@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-static-website-blob-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What must you enable on a storage account before it can serve static website content?"
+    choices:
+    - content: "Blob versioning"
+      isCorrect: false
+      explanation: "Blob versioning tracks changes to blobs but does not enable web hosting."
+    - content: "Static website hosting"
+      isCorrect: true
+      explanation: "Static website hosting must be enabled in the storage account settings before Azure serves web content from the $web container."
+    - content: "Azure CDN integration"
+      isCorrect: false
+      explanation: "Azure CDN can improve performance for static sites, but it is not required to enable static website hosting."
+  - content: "Where does Azure store the files for a static website hosted in Blob Storage?"
+    choices:
+    - content: "A container named blob-website"
+      isCorrect: false
+      explanation: "Azure does not use a container named blob-website for static website hosting."
+    - content: "The root of the storage account"
+      isCorrect: false
+      explanation: "Static website files are stored in a specific container, not at the root of the storage account."
+    - content: "A container named $web"
+      isCorrect: true
+      explanation: "Azure automatically creates a $web container when you enable static website hosting. All website files are served from this container."
+  - content: "What happens when you upload an updated file to the $web container?"
+    choices:
+    - content: "You must redeploy the storage account for the change to take effect."
+      isCorrect: false
+      explanation: "No redeployment is needed. File changes are served immediately."
+    - content: "The updated content is available at the public endpoint without redeployment."
+      isCorrect: true
+      explanation: "Uploading an updated file to the $web container replaces the existing file, and the change is reflected at the public endpoint."
+    - content: "The previous version is archived and the new version enters a staging state."
+      isCorrect: false
+      explanation: "Static website hosting does not use staging or archiving. Updated files replace existing ones immediately."

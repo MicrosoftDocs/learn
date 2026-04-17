@@ -2,13 +2,11 @@
 uid: learn.wwl.deploy-model-managed-online-endpoint.monitor-online-endpoints
 title: Test managed online endpoints
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Test managed online endpoints
   description: Test managed online endpoints
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 08/25/2024
+  ms.date: 12/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

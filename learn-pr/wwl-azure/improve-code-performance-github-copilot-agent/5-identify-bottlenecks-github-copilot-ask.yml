@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-code-performance-github-copilot-agent.identify-bottlenecks-github-copilot-ask
+title: Identify performance bottlenecks using GitHub Copilot's Ask mode
+metadata:
+  title: Identify Performance Bottlenecks using GitHub Copilot's Ask Mode
+  description: Identify performance bottlenecks using GitHub Copilot's Ask mode.
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-identify-bottlenecks-github-copilot-ask.md)]

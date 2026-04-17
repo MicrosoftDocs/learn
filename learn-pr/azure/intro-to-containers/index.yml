@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.intro-to-containers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Build a containerized web application with Docker
+  title: Build a Containerized Web Application with Docker
   description: Use Docker to build, store, and manage private container images with the Azure Container Registry.  
-  ms.date: 06/28/2024
+  ms.date: 06/20/2025
   author: cryophobia
   ms.author: chrvaw
   ms.topic: module

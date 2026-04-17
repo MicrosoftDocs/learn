@@ -5,7 +5,7 @@ metadata:
   description: Learn how to build your first web app using ASP.NET Core. 
   ms.date: 9/9/2024
   author: wadepickett
-  ms.author: wpickett
+  ms.author: daroth
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: aspnet-core
   manager: coxford

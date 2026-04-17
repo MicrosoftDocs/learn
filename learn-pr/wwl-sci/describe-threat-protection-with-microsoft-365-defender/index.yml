@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-threat-protection-with-microsoft-365-defender
 metadata:
-  title: Describe threat protection with Microsoft Defender XDR
+  title: Describe Threat Protection with Microsoft Defender XDR
   description: "Describe threat protection with Microsoft Defender XDR"
-  ms.date: 08/15/2024
+  ms.date: 04/14/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
@@ -16,8 +16,8 @@ title: Describe threat protection with Microsoft Defender XDR
 summary: Protect against cyber threats with Microsoft Defender XDR across endpoints, identities, email, and applications.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the Microsoft Defender XDR service.
-  - Describe how Microsoft Defender XDR provides integrated protection against sophisticated attacks.
+  - Describe the services of the Microsoft Defender XDR suite.
+  - Describe how the services of Microsoft Defender XDR provide integrated protection against sophisticated attacks.
   - Describe and explore Microsoft Defender portal.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
@@ -47,6 +47,7 @@ units:
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-for-identity-formerly-azure-atp
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-vulnerability-management
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-defender-threat-intelligence
+- learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-security-exposure-management
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-microsoft-defender-portal
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-copilot-in-defender-xdr
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.knowledge-check

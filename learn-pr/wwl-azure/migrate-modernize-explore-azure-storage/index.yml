@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Modernize and explore Azure for SAP storage
   description: 'This module explores the use of the Azure storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.migrate-modernize-explore-azure-storage.summary
 badge:
   uid: learn.wwl.migrate-modernize-explore-azure-storage.badge
-
+

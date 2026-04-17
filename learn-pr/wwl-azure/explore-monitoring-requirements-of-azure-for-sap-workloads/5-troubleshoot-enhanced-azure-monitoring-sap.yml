@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.troubleshoot-azure-enhanced-monitoring
 title: Troubleshoot Azure Enhanced Monitoring for SAP
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot Azure Enhanced Monitoring for SAP
   description: "Troubleshoot Azure Enhanced Monitoring for SAP."
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 14
 content: |
-  [!include[](includes/5-troubleshoot-enhanced-azure-monitoring-sap.md)]
+  [!include[](includes/5-troubleshoot-enhanced-azure-monitoring-sap.md)]

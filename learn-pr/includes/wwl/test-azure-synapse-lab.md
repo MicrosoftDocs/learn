@@ -14,7 +14,7 @@ This exercise should take approximately **60** minutes to complete.
 
 ## Before you start
 
-You need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
+You need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) in which you have administrative-level access.
 
 ## Provision an Azure Synapse Analytics workspace
 

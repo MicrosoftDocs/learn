@@ -2,8 +2,6 @@
 uid: learn.wwl.observability-continuous-improvement.automation-incident-detection-resolution
 title: Automation for Incident Detection and Resolution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Automation for Incident Detection and Resolution
   description: "Automation for Incident Detection and Resolution"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-automation-incident-detection-resolution.md)]
+  [!include[](includes/5-automation-incident-detection-resolution.md)]

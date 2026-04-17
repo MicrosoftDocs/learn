@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-business-intel.how-surface-laptop-for-business-intel-ai-features-work
+title: How Surface Laptop for Business (Intel) AI features work
+metadata:
+  title: How Surface Laptop For Business (Intel) AI Features Work
+  description: This content is part of the "Introduction to Microsoft Surface Laptop for Business (Intel)" module.
+  ms.date: 11/17/2025
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-how-surface-laptop-for-business-intel-ai-features-work.md)]

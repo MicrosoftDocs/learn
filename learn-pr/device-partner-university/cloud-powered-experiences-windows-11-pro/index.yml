@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.cloud-powered-experiences-windows-11-pro
+title: Cloud-powered experiences on Windows 11 Pro
+metadata:
+  title: Cloud-Powered Experiences On Windows 11 Pro
+  description: In this module, you’ll learn how Windows 11 Pro uses hybrid execution models to balance responsiveness and capability, and how cloud-powered experiences like Copilot and AI agents support complex workflows within the Windows interface.
+  ms.date: 01/27/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: module-standard-task-based
+  ms.service: windows-11
+summary: >
+  Explore how Windows 11 Pro applies hybrid execution models to balance responsiveness and capability. Understand how cloud-powered experiences such as Copilot and AI agents support complex workflows directly within the Windows interface.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe how Windows 11 Pro uses cloud-based and on-device execution models to support different types of AI-assisted tasks and workflows.
+  - Identify scenarios where cloud execution is used in Windows 11 Pro, including long-running, multi-step tasks that require reasoning, synthesis, or access to broader data sources.
+  - Demonstrate how to initiate and monitor cloud-based work from the Windows taskbar, using Ask Copilot and AI agents to remain productive while tasks run in the background.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/cloud-powered-experiences-windows-11-pro.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.introduction
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.cloud-execution-windows-11-pro
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.execution-models-windows-11-pro
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.start-work-ask-copilot-windows-taskbar
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.run-and-monitor-ai-agents-windows-taskbar
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.get-deep-insights-cloud-powered-intelligence-using-researcher
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.exercise-research-while-you-work
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.knowledge-check
+  - learn.dpu.cloud-powered-experiences-windows-11-pro.summary
+badge:
+  uid: learn.dpu.cloud-powered-experiences-windows-11-pro.badge
+

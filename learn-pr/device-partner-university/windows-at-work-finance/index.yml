@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.windows-at-work-finance
+title: 'Windows at work: Transforming finance teams with Windows 11 Pro'
+metadata:
+  title: 'Windows At Work: Transforming Finance Teams With Windows 11 Pro'
+  description: This module teaches learners how to use Copilot and Windows 11 features to analyze business data efficiently. It covers generating insights, creating visualizations, and preparing stakeholder-ready presentations using Excel and PowerPoint.
+  ms.date: 10/22/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+  ms.custom: CW062725-1
+summary: >
+  This module teaches learners how to use Copilot and Windows 11 features to analyze business data efficiently. It covers generating insights, creating visualizations, and preparing stakeholder-ready presentations using Excel and PowerPoint.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Use Windows 11 features to organize your workspace and protect sensitive data.
+  - Analyze financial data with Copilot in Excel and Copilot in PowerPoint to generate actionable insights.
+  - Build a clear, visually effective presentation for stakeholders.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/windows-at-work-finance.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+  - business-leader
+products:
+  - microsoft-365-copilot-chat
+  - windows-11
+  - office-excel
+  - office-powerpoint
+units:
+  - learn.dpu.windows-at-work-finance.introduction
+  - learn.dpu.windows-at-work-finance.financial-analysis
+  - learn.dpu.windows-at-work-finance.analyst-agent
+  - learn.dpu.windows-at-work-finance.analyze-trends
+  - learn.dpu.windows-at-work-finance.ai-features
+  - learn.dpu.windows-at-work-finance.analyze-sales
+  - learn.dpu.windows-at-work-finance.knowledge-check
+  - learn.dpu.windows-at-work-finance.summary
+badge:
+  uid: learn.dpu.windows-at-work-finance.badge

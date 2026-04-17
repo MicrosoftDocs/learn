@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.model-catalog-evaluate.select-models-benchmarks
+title: Select models using benchmarks
+metadata:
+  title: Select models using benchmarks
+  description: Understand how to use quality, safety, cost, and performance benchmarks to compare and select models.
+  ms.date: 02/13/2026
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-select-models-benchmarks.md)]

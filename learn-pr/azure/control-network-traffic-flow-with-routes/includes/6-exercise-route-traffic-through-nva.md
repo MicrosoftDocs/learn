@@ -2,11 +2,13 @@ Now that you've created the network virtual appliance (NVA) and virtual machines
 
 :::image type="content" source="../media/6-vms-ip-addresses.svg" alt-text="Visualization of virtual machines and IP addresses.":::
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ## Create public and private virtual machines
 
 The next steps deploy a VM into the public and private subnets.
 
-1. Open the Cloud Shell editor and create a file named cloud-init.txt.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/) editor and create a file named **cloud-init.txt**.
 
     ```bash
     code cloud-init.txt
@@ -27,7 +29,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     az vm create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name public \
         --vnet-name vnet \
         --subnet publicsubnet \
@@ -42,7 +44,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     az vm create \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name private \
         --vnet-name vnet \
         --subnet privatesubnet \
@@ -57,7 +59,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```bash
     watch -d -n 5 "az vm list \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --show-details \
         --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
         --output table"
@@ -69,7 +71,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     PUBLICIP="$(az vm list-ip-addresses \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name public \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"
@@ -81,7 +83,7 @@ The next steps deploy a VM into the public and private subnets.
 
     ```azurecli
     PRIVATEIP="$(az vm list-ip-addresses \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+        --resource-group "myResourceGroupName" \
         --name private \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"

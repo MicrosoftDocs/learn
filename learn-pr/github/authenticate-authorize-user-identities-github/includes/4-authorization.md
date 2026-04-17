@@ -1,49 +1,174 @@
-Here, we introduce the authorization for GitHub users, which is the next step after user authentication.
+After a user successfully authenticates through your identity provider (IdP) by using SAML single sign-on (SSO), the next critical step is authorization—granting tools like personal access tokens (PATs), SSH keys, or OAuth apps with the ability to access organization resources.
 
-As we learned previously, you can grant a user access to a GitHub organization that uses SAML single sign-on (SSO) by authenticating through the identity provider (IdP). But after you authenticate the user with the IdP successfully from GitHub, you must now authorize any personal access token, SSH key, or OAuth App that you'd like the user to use to access your organization's resources. Let's look a little deeper into this authentication process with SAML single sign-on.
+## Automating User Authorization with SAML SSO and SCIM
 
-## Authorization with SAML SSO through SCIM
-
-SAML single sign-on (SSO) gives organization owners and enterprise owners on GitHub a way to control and secure access to organization resources like repositories, issues, and pull requests. If you use SAML SSO in your organization, you can implement SCIM or *System for Cross-domain Identity Management*. SCIM lets you add, manage, or remove organization member access within GitHub. SCIM was developed to allow synchronization of information between an IdP and multiple applications.
+Security assertion markup language (SAML) SSO enables enterprise and organization owners to control access to GitHub resources like repositories, issues, and pull requests. Integrating SCIM (System for Cross-domain Identity Management) enhances access control by automating user provisioning and deprovisioning.
 
 :::image type="content" source="../media/enable-scim-user-provisioning-example.png" alt-text="Screenshot of the SCIM setting." :::
 
-SCIM is a protocol that tells the directory an account has been created and allows you to automate the exchange of user identity information between systems. For example, while onboarding a new employee, using a central directory allows you to automatically provision the user to access services like GitHub. An administrator can deprovision an organization member using SCIM and automatically remove the member from the organization.
+With SCIM, new employees added to your IdP are granted access to GitHub automatically, while departing users are removed, reducing manual steps and improving security.
 
 > [!NOTE]
-> If you use SAML SSO without implementing SCIM, you won't have automatic deprovisioning.
+> Without SCIM, SAML SSO alone doesn't support automatic deprovisioning of organization members.
 
-SCIM integrations allow the secure exchange of user identity data between your IdP and your enterprise on GitHub. SCIM was developed to allow the synchronization of information between an IdP and multiple applications. When organization members' sessions expire after their access is removed from the IdP, they aren't automatically removed from the organization. Authorized tokens grant access to the organization even after their sessions expire. To remove this access, you can either manually remove the authorized token from the organization or automate its removal with SCIM.
+SCIM also revokes stale tokens after a session ends, reducing security risks. Without SCIM, revoking stale tokens must be done manually.
 
-### SSH key and PAT with SAML SSO
+## Managing SSH Keys and PATs with SAML SSO
 
-Once these systems are implemented, user lifecycle-management changes you make in your IdP are reflected in your GitHub enterprise automatically. The SAML IdP and the SCIM client must use matching NameID and userName values for each user. This process allows a user authenticating through SAML to be linked to their provisioned SCIM identity. Each time you make changes to group membership in your IdP, the IdP will make a SCIM call to GitHub.com to update the corresponding organization's membership. Each time an enterprise member accesses a resource protected by your enterprise account's SAML configuration, that SAML assertion will trigger provisioning.
+SAML SSO and SCIM work together to reflect identity changes in GitHub. To support this cohesion:
 
-To access your organization's protected resources using the API and Git on the command line, your users will need to authorize and authenticate with a PAT (personal access token) or SSH key. Users can authorize an existing PAT or SSH key, or create a new PAT or SSH key and then authorize it. As the administrator, you're able to review each personal access token and SSH key that a member has authorized for API and Git access.
+- `NameID` and `userName` must match between the SAML IdP and SCIM client.
+- Group changes in your IdP trigger SCIM updates in GitHub.
+
+Users accessing APIs or Git must use an authorized PAT or SSH key. These methods are auditable and securely tied to SAML SSO.
 
 :::image type="content" source="../media/saml-sso-ssh-key-example.png" alt-text="Screenshot of the SSH key." :::
 
-After you enable SAML SSO, there are multiple ways you can add new members to your organization. Organization owners can invite new members manually on GitHub or by using the API. To provision new users without an invitation from an organization owner, you can use the URL `https://github.com/orgs/ORGANIZATION/sso/sign_up`, replacing *ORGANIZATION* with the name of your organization. For example, you can configure your IdP so that anyone with access to the IdP can click a link on the IdP's dashboard to join your GitHub organization.
+To simplify onboarding, provision users using: `https://github.com/orgs/ORGANIZATION/sso/sign_up`. Display this link in your IdP dashboard.
 
-SCIM and SAML SSO also have security benefits. The first time a member uses SAML SSO to access your organization, GitHub automatically creates a record that links your organization, the member's GitHub account, and the member's account on your IdP. You can review the SAML SSO identity that a member has linked to their GitHub account. When available, the entry will include SCIM data for the user. You can also view and revoke the linked SAML identity, active sessions, and authorized credentials for members of your organization or enterprise account. When an employee leaves the company, the off-boarding process is automated, and deprovisioning happens automatically. When you unassign the application from a user or deactivate a user's account on your IdP, it will communicate with GitHub.com to invalidate any SAML sessions for that user. Automating these tasks reduces the time required for an administrator to manage user credentials and the risk of error associated with manually entering and updating user information is also mitigated.
+When users first authenticate, GitHub links their account and SCIM data to your organization. Admins can later audit or revoke sessions and credentials to automate offboarding.
 
-### Connect your IdP to your organization
+## SCIM Integration with GitHub
 
-To use SAML single sign-on and SCIM, you must connect your identity provider to your GitHub organization. When you enable SAML SSO for your GitHub organization, you connect your identity provider to your organization. Keep in mind that not all SAML identity providers are currently supported by GitHub for SCIM. Following is a list of the GitHub supported identity providers for SCIM:
+SCIM streamlines identity management in GitHub Enterprise Cloud by supporting both native integrations and custom configurations.
 
-- Microsoft Entra ID
+### Supported SCIM Providers
+
+GitHub natively supports:
+
 - Okta
+- Microsoft Entra ID
 - OneLogin
+- Ping Identity
+- Google Workspace
 
-If your support request is outside of the scope of what our team can help you with, we might recommend next steps to resolve your issue outside of GitHub Support. Your support request is possibly out of GitHub Support's scope if the request is primarily about:
+These integrations ensure reliable configuration and compatibility.
 
-- Third-party integrations
-- Hardware setup
-- CI/CD, such as Jenkins
-- Writing scripts
-- Configuration of external authentication systems, such as SAML identity providers
-- Open-source projects
+### Custom SCIM Integrations
 
-Some companies may have built their own system and synchronize their accounts in a custom way. GitHub doesn't support these custom-created accounts with technical assistance. Technical support by GitHub for changes in the way GitHub.com uses SCIM and SAML is available for enterprises that are using one of the providers listed previously.
+If your IdP isn't natively supported, use GitHub’s SCIM API to build custom integrations.
 
-If you're uncertain if the issue is out of scope, open a ticket with GitHub support, and they'll be happy to help you determine the best way to continue.
+#### SCIM API Overview
+
+The SCIM 2.0 API allows you to:
+
+- Create, update, and delete users
+- Manage groups
+
+#### Example Request to Provision a User
+
+```http
+POST /scim/v2/Users
+Content-Type: application/json
+
+{
+  "userName": "jdoe",
+  "name": {
+    "givenName": "John",
+    "familyName": "Doe"
+  },
+  "emails": [
+    {
+      "value": "jdoe@example.com",
+      "primary": true
+    }
+  ]
+}
+```
+
+GitHub processes this request and adds the user to your organization.
+
+### Getting Started
+
+#### For Supported Providers
+
+1. Sign in to your IdP admin console.
+1. Enable SCIM provisioning.
+1. Provide GitHub’s SCIM base URL and bearer token.
+
+:::image type="content" source="../media/scim-configuration-steps.png" alt-text="Screenshot of SCIM configuration steps in IdP's administrative console." :::
+
+#### For Custom IdPs
+
+1. Use GitHub's SCIM REST API.
+1. Authenticate with a PAT.
+1. Test the integration with sample requests.
+
+### Key Benefits of SCIM Integration
+
+- **Provisioning:** Automatically create accounts.
+- **Updates:** Synchronize roles and departments.
+- **Deprovisioning:** Remove access promptly upon user exit.
+
+## SCIM vs. Manual User Management
+
+| Aspect       | SCIM-Based Management                                                                 | Manual Management                                                            |
+|--------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Automation**  | Automates provisioning and deprovisioning                                             | Manual intervention required                                                  |
+| **Consistency**  | Standardized user data across systems                                                  | Risk of inconsistencies                                                       |
+| **Security**     | Timely deactivation of access                                                         | Delayed or missed revocations                                                 |
+| **Scalability**  | Scales with large user bases                                                          | Cumbersome at scale                                                           |
+| **Compliance**  | Helps meet policy and audit requirements                                               | Harder to track and report                                                    |
+
+## Connecting Your IdP to GitHub
+
+You can use a supported identity provider or bring your own SAML 2.0 IdP.
+
+### Supported (Paved Path) IdPs
+
+- Okta
+- Microsoft Entra ID
+- Google Workspace
+
+Some advantages of using the supported IdPs are:
+
+- Seamless integration
+- GitHub-supported
+- Lower setup effort
+
+### Bring Your Own IdP
+
+Bring your own IdP requires SAML 2.0 support. It has the advantage of allowing for full flexibility.
+
+### Integration Steps
+
+| Type               | Steps                 |
+|--------------------|-----------------------|
+| **Paved Path:**    | 1. Navigate to enterprise security settings. <br>2. Select your IdP. <br>3. Follow setup instructions. |
+| **Custom IdP:**    | 1. Go to security settings. <br>2. Choose custom IdP. <br>3. Enter SAML metadata. 4. Validate the connection. |
+
+
+## Comparing IdP Integration Paths
+
+| Feature               | Paved Path                        | Bring Your Own IdP               |
+|----------------------|------------------------------------|----------------------------------|
+| Setup Process        | ✅ Guided setup                    | ⚠️ Manual configuration            |
+| Flexibility          | ⚠️ Limited to listed IdPs           | ✅ Any SAML 2.0 IdP                |
+| Maintenance          | ✅ GitHub-managed                  | ⚠️ Organization-managed            |
+| Customization        | ⚠️ Minimal                        | ✅ Fully customizable             |
+| Support & Updates    | ✅ GitHub-supported                | ⚠️ Self-managed                    |
+
+## Managing Identities and Access
+
+### SAML SSO Configuration
+
+1. Configure your SAML SSO URL.
+1. Provide your public certificate.
+1. Add IdP metadata.
+
+### Credential Management
+
+PATs and SSH keys must be explicitly authorized and linked to IdP identities to access organization resources securely.
+
+### Auditing SAML Sessions
+
+- View active sessions in settings.
+- Revoke individual sessions as needed.
+
+## GitHub Membership Considerations
+
+| Type                 | Consideration            |
+|-------------------------|----------------------------|
+| GitHub Instance Membership | - Access to public repositories <br>- Create personal projects <br> - Public profile visibility |
+| Organization Membership | - Role-based internal access <br> - Profile visible to org admins <br> - Might affect billing |
+| Multiple Organization Memberships| - Different roles across orgs <br>- Broader resource access <br>- Complex permission and billing <br> - Requires strict governance |

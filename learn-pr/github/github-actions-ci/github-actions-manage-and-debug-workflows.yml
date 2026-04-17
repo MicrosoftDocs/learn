@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-ci.github-actions-manage-and-debug-workflows
+title: Manage and debug workflows in GitHub Actions
+metadata:
+  title: Manage and debug workflows in GitHub Actions
+  description: Learn how to identify workflow triggers, use logs for debugging, manage build artifacts, and automate labeling pull requests in GitHub Actions workflows.
+  ms.date: 06/18/2025
+  author: juliakm
+  ms.author: jukullam
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/github-actions-manage-and-debug-workflows.md)]

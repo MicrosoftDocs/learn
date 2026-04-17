@@ -18,6 +18,9 @@ Before creating a custom Sensitive Information Type (SIT), it’s important to u
 
 - **[Regular expressions](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/?azure-portal=true)**:  Regular expressions are patterns used to identify specific formats or types of text, such as email addresses or employee IDs. When creating custom SITs, regex allows you to define the exact format of your data. For example, you could use a regex pattern like `\b\d{3}-\d{2}-\d{4}\b` to detect a U.S. Social Security Number. Using advanced regex features, such as lookaheads or character classes, helps improve detection accuracy and allows flexibility for different data formats.
 
+  > [!IMPORTANT]
+   > Don't use positional regex anchors like `^` and `$` in custom SITs. The SIT is unlikely to behave as intended when these anchors are part of the regular expression. There are no guarantees about where in the content the starting and ending anchors correspond.
+
 - **Proximity**: Proximity defines how close the primary pattern (like an ID number) must be to supporting keywords (like "employee" or "ID badge"). Setting an appropriate proximity window ensures that related data elements are close enough to be considered a match, reducing the risk of false positives.
 
 - **Keyword lists**: A keyword list consists of predefined terms commonly found near sensitive data. For example, if you're detecting employee IDs, terms like "employee" or "badge" might appear nearby. Creating a list of these keywords helps your SIT identify relevant data more accurately. You can use existing keyword lists or create a custom list based on the context where sensitive information is typically found.
@@ -91,3 +94,23 @@ To create a custom sensitive information type, you need to:
 1. On the **Review settings and finish** page review the settings and select **Create**. When successfully created select **Done**.
 
 1. The **Sensitive info types** tab of the **Classifiers** page, lists all of the sensitive information types. select **Refresh** and then or use the search tool or browse the list to find your new SIT.
+
+> [!NOTE]
+> Custom SITs don't retroactively scan content that already exists in SharePoint and OneDrive. The search crawler must recrawl that content before your new SIT can detect matches. Crawling happens on a schedule, but you can trigger a manual recrawl for a specific site collection, list, or library if you need faster coverage.
+
+## Test your sensitive information type
+
+A custom SIT that generates too many false positives can overwhelm your DLP alerts, while one that's too narrow might miss the data you're trying to protect. Testing before you deploy to production policies helps you catch both problems early.
+
+1. In the Microsoft Purview portal, navigate to **Solutions** > **Information Protection** > **Classifiers** > **Sensitive info types**.
+
+1. Select your custom SIT from the list.
+
+1. Select **Test**.
+
+1. Upload a file containing sample data that matches your SIT pattern.
+
+1. Review the results. The test breaks down matches by confidence level, so you can see whether your primary and supporting elements are working together as expected. If you're seeing matches at lower confidence levels than intended, consider tightening your proximity or adding supporting elements.
+
+> [!NOTE]
+> Testing requires at least one Exchange Online license in your tenant. Otherwise, the **Test** option is unavailable.

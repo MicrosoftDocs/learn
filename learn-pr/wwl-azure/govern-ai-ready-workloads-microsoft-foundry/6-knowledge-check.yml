@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.govern-ai-ready-workloads-microsoft-foundry.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/02/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Your organization operates in both the United States and European Union, with separate compliance requirements for each region. Data scientists in the EU must deploy Azure OpenAI resources only in West Europe, while US teams require access to East US and West US regions. Which policy assignment strategy best enforces these geographic restrictions?"
+    choices:
+    - content: "Create a single policy at the management group level that allows all three regions, then rely on teams to self-govern their deployment choices."
+      isCorrect: false
+      explanation: "Assigning separate policies to each subscription provides the strongest enforcement by preventing noncompliant deployments at the Azure Resource Manager level. A single management group policy allowing all three regions defeats the purpose of geographic separation because any team could deploy to any region. Conditional access policies control user authentication locations, not Azure resource deployment regions, making them ineffective for data residency compliance. Subscription-scoped policies automatically evaluate every deployment attempt and block resources that violate location restrictions without requiring manual oversight."
+    - content: "Assign separate location restriction policies to each region's subscription, specifying only the approved regions for that geography."
+      isCorrect: true
+      explanation: "Assigning separate policies to each subscription provides the strongest enforcement by preventing noncompliant deployments at the Azure Resource Manager level. A single management group policy allowing all three regions defeats the purpose of geographic separation because any team could deploy to any region. Conditional access policies control user authentication locations, not Azure resource deployment regions, making them ineffective for data residency compliance. Subscription-scoped policies automatically evaluate every deployment attempt and block resources that violate location restrictions without requiring manual oversight."
+    - content: "Configure conditional access policies in Microsoft Entra ID that block authentication from unapproved Azure regions."
+      isCorrect: false
+      explanation: "Assigning separate policies to each subscription provides the strongest enforcement by preventing noncompliant deployments at the Azure Resource Manager level. A single management group policy allowing all three regions defeats the purpose of geographic separation because any team could deploy to any region. Conditional access policies control user authentication locations, not Azure resource deployment regions, making them ineffective for data residency compliance. Subscription-scoped policies automatically evaluate every deployment attempt and block resources that violate location restrictions without requiring manual oversight."
+  - content: "A development team needs to run inference queries against predeployed Azure OpenAI models but shouldn't be able to deploy new models, modify existing configurations, or access training data. Which role assignment meets these requirements with the least privilege?"
+    choices:
+    - content: "Assign the Cognitive Services User role at the resource group scope containing the deployed models."
+      isCorrect: true
+      explanation: "The Cognitive Services User built-in role grants exactly the permissions needed for inference operations while explicitly excluding deployment and configuration capabilities, following the principle of least privilege. A custom role with wildcard permissions at the subscription level violates least privilege by granting broader access than required and increases the blast radius if credentials are compromised. Using Contributor with deny policies creates unnecessary complexity and administrative overhead because you must maintain policy definitions to restrict a role that already grants excessive permissions. The User role provides read and inference permissions only, preventing the team from modifying infrastructure while enabling their core job function."
+    - content: "Create a custom role with Microsoft.CognitiveServices/* permissions and assign it at the subscription level."
+      isCorrect: false
+      explanation: "The Cognitive Services User built-in role grants exactly the permissions needed for inference operations while explicitly excluding deployment and configuration capabilities, following the principle of least privilege. A custom role with wildcard permissions at the subscription level violates least privilege by granting broader access than required and increases the blast radius if credentials are compromised. Using Contributor with deny policies creates unnecessary complexity and administrative overhead because you must maintain policy definitions to restrict a role that already grants excessive permissions. The User role provides read and inference permissions only, preventing the team from modifying infrastructure while enabling their core job function."
+    - content: "Assign the Contributor role at the resource group scope but use Azure Policy to deny deployment operations."
+      isCorrect: false
+      explanation: "The Cognitive Services User built-in role grants exactly the permissions needed for inference operations while explicitly excluding deployment and configuration capabilities, following the principle of least privilege. A custom role with wildcard permissions at the subscription level violates least privilege by granting broader access than required and increases the blast radius if credentials are compromised. Using Contributor with deny policies creates unnecessary complexity and administrative overhead because you must maintain policy definitions to restrict a role that already grants excessive permissions. The User role provides read and inference permissions only, preventing the team from modifying infrastructure while enabling their core job function."
+  - content: "Your monitoring dashboard shows that Azure OpenAI token consumption increased 300% over the past week, but usage patterns appear normal and no policy violations were detected. Investigation reveals that a marketing campaign generated higher-than-expected traffic. What governance action should you take to prevent future budget overruns while maintaining service availability?"
+    choices:
+    - content: "Configure an Azure Monitor alert rule that triggers when token consumption exceeds 150% of the monthly baseline and automatically scales up capacity."
+      isCorrect: false
+      explanation: "Cost management budget alerts with approval workflows balance governance control with operational flexibility by warning stakeholders before overages occur while allowing justified increases through approval processes. Automatically scaling capacity addresses availability but bypasses financial oversight, potentially allowing uncontrolled spending that finance teams discover only at month-end. Denying all deployments with a blanket policy creates operational disruption and blocks legitimate business needs while the approval process completes. Budget alerts at 80% thresholds provide sufficient warning time for stakeholders to evaluate whether increased spending aligns with business value, request more budgets, or implement usage controls before actual overages occur."
+    - content: "Implement an Azure Policy that denies all Azure OpenAI deployments until finance approves a revised budget allocation."
+      isCorrect: false
+      explanation: "Cost management budget alerts with approval workflows balance governance control with operational flexibility by warning stakeholders before overages occur while allowing justified increases through approval processes. Automatically scaling capacity addresses availability but bypasses financial oversight, potentially allowing uncontrolled spending that finance teams discover only at month-end. Denying all deployments with a blanket policy creates operational disruption and blocks legitimate business needs while the approval process completes. Budget alerts at 80% thresholds provide sufficient warning time for stakeholders to evaluate whether increased spending aligns with business value, request more budgets, or implement usage controls before actual overages occur."
+    - content: "Create a cost management budget alert that notifies stakeholders when spending reaches 80% of the allocated amount and requires approval for overages."
+      isCorrect: true
+      explanation: "Cost management budget alerts with approval workflows balance governance control with operational flexibility by warning stakeholders before overages occur while allowing justified increases through approval processes. Automatically scaling capacity addresses availability but bypasses financial oversight, potentially allowing uncontrolled spending that finance teams discover only at month-end. Denying all deployments with a blanket policy creates operational disruption and blocks legitimate business needs while the approval process completes. Budget alerts at 80% thresholds provide sufficient warning time for stakeholders to evaluate whether increased spending aligns with business value, request more budgets, or implement usage controls before actual overages occur."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
+title: Verify and identify faces
+metadata:
+  title: Verify and identify faces
+  description: Use facial recognition to verify and identify faces.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 05/03/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-compare-match-detected-faces.md)]
+

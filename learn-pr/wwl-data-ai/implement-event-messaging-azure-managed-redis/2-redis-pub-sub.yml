@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-event-messaging-azure-managed-redis.redis-pub-sub
+title: Publish and subscribe to events with Redis pub/sub
+metadata:
+  title: Publish and Subscribe to Events with Redis Pub/Sub
+  description: Publish and subscribe to events with Redis pub/sub
+  ms.date: 11/21/2025
+  author: jeffkoms
+  ms.author: jeffko
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-redis-pub-sub.md)]

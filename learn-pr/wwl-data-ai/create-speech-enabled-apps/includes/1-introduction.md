@@ -1,20 +1,16 @@
 
-Azure AI Speech provides APIs that you can use to build speech-enabled applications. This includes:
+Azure Speech in Foundry Tools provides APIs that you can use to build speech-enabled applications, including:
 
 - **Speech to text**: An API that enables *speech recognition* in which your application can accept spoken input.
 - **Text to speech**: An API that enables *speech synthesis* in which your application can provide spoken output.
 - **Speech Translation**: An API that you can use to translate spoken input into multiple languages.
-- **Speaker Recognition**: An API that enables your application to recognize individual speakers based on their voice.
-- **Intent Recognition**: An API that uses conversational language understanding to determine the semantic meaning of spoken input.
+- **Voice Live**: An API that you can use to build AI agents that are capable of conducting real-time conversations.
 
 This module focuses on speech recognition and speech synthesis, which are core capabilities of any speech-enabled application.
 
-In this module, you'll learn how to:
+The code examples in this module are provided in Python, but you can use any of the available Azure Speech SDK packages to develop speech-enabled applications in your preferred language. Available SDK packages include:
 
-- Provision an Azure resource for the Azure AI Speech service
-- Use the Speech to text API to implement speech recognition
-- Use the Text to speech API to implement speech synthesis
-- Configure audio format and voices
-- Use Speech Synthesis Markup Language (SSML)
-
-The units in the module include important conceptual information about Azure AI Speech and how to use its API through one of the supported software development kits (SDKs), after which you'll be able to try Azure AI Speech for yourself in a hands-on exercise. To complete the hands-on exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
+- [Azure Speech for Python](https://pypi.org/project/azure-cognitiveservices-speech?azure-portal=true)
+- [Azure Speech for Microsoft .NET](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech?azure-portal=true)
+- [Azure Speech for JavaScript](https://www.npmjs.com/package/microsoft-cognitiveservices-speech-sdk?azure-portal=true)
+- [Azure Speech For Java](https://mvnrepository.com/artifact/com.microsoft.cognitiveservices.speech/client-sdk?azure-portal=true)

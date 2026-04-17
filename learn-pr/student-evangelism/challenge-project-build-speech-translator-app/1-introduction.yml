@@ -2,13 +2,12 @@
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction.
   author: theoyinbooke
   ms.author: somelezediko
   ms.date: 12/13/2023
+  ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
     - ce-advocates-ai-copilot
@@ -16,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

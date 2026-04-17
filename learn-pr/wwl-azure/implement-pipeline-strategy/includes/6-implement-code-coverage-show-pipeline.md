@@ -1,10 +1,10 @@
-Code coverage is a metric used to measure the proportion of source code that is executed during automated tests. It provides insight into the effectiveness of test suites by identifying areas of code that lack sufficient test coverage. By ensuring comprehensive code coverage, development teams can increase confidence in their software's reliability, identify potential bugs early in the development process, and ultimately deliver higher-quality products to end users.
+Code coverage measures the percentage of source code executed during automated tests. This metric helps teams understand test effectiveness, identify untested code areas, and improve software quality. Implementing code coverage in your CI/CD pipeline provides visibility into testing gaps and helps maintain high-quality standards.
 
-While the concept of code coverage is platform-agnostic, its implementation details differ between Azure DevOps and GitHub. These details also differ across development frameworks and programming languages.
+Implementation varies across platforms and programming languages, but the core principles remain consistent. Let's explore how to implement code coverage in Azure Pipelines and display results effectively.
 
-## Azure DevOps
+## Implementing code coverage in Azure Pipelines
 
-Let's assume that you have a .NET (C\#) project for which you want to implement code coverage by using Azure Pipelines. This would involve the following sequence of tasks:
+For a .NET (C#) project, implementing code coverage involves several key steps:
 
 1. **Set up test and coverage tools:** Use a testing framework that supports code coverage analysis such as NUnit, MSTest, or xUnit for .NET. Integrate a code coverage tool such as Coverlet or OpenCover into your project. These tools can generate code coverage reports in various formats compatible with Azure Pipelines.
 1. **Configure Azure Pipelines:** In the Azure DevOps portal, navigate to your Azure DevOps project and select the pipeline where you want to add code coverage. Edit the pipeline configuration and add steps to install dependencies and build your project.
@@ -37,9 +37,9 @@ Here's a sample pipeline that illustrates this approach:
 
 This pipeline generates code coverage reports as part of the build process. This allows you to review and analyze the coverage results in the Azure DevOps portal. To perform more detailed analysis, you could download code coverage artifacts and examine them by using Visual Studio (when using the Visual Studio Test task) or code coverage tool-specific options.
 
-## GitHub
+## Implementing code coverage with GitHub Actions
 
-To make easier comparison with Azure DevOps-based approach, let's assume again that you have a .NET (C\#) project for which you want to implement code coverage by using GitHub Actions workflow. This would involve the following sequence of tasks:
+For comparison, here's how to implement code coverage for a .NET (C#) project using GitHub Actions:
 
 1. **Set up test and coverage tools:** As with Azure DevOps, use a testing framework that supports code coverage analysis. Verify that these tools can generate code coverage reports in the formats compatible with GitHub.
 1. **Create GitHub Actions workflow:** On the GitHub repository page, navigate to the **.github/workflows** directory. Create a new YAML file (for example, **ci.yml**) to define your workflow configuration. Define triggers for your workflow, such as pull requests or pushes to specific branches.

@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-java-azure-pipeline-terraform.5-exercise
 title: Exercise - Deploy a sample Spring Boot application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy a sample Spring Boot application
   description: In this exercise, you'll use GitHub Actions to deploy a sample Spring Boot application.
   ms.date: 08/02/2023
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise.md)]
-
+

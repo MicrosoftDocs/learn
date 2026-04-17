@@ -7,11 +7,11 @@ The Microsoft cloud security benchmark (MCSB) provides prescriptive best practic
 
 ## Microsoft cloud security benchmark features
 
-Comprehensive multicloud security framework: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring, and assessment across the different cloud environments (often for different compliance standards). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the Azure Security Benchmark (ASB) to the Microsoft cloud security benchmark (MCSB) to help you quickly work with different clouds by:
+Comprehensive multicloud security framework: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. Building security controls requires security teams to repeat the same implementation, monitoring, and assessment across the different cloud environments (often for different compliance standards). To address this concern, we enhanced the Azure Security Benchmark (ASB) to the Microsoft cloud security benchmark (MCSB) to help you quickly work with different clouds by:
 
- -  Providing a single control framework to easily meet the security controls across clouds
- -  Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
- -  Staying aligned with Industry Standards (e.g., Center for Internet Security, National Institute of Standards and Technology, Payment Card Industry)
+- Providing a single control framework to easily meet the security controls across clouds
+- Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
+- Staying aligned with Industry Standards (for example, Center for Internet Security, National Institute of Standards and Technology, Payment Card Industry)
 
 Automated control monitoring for AWS in Microsoft Defender for Cloud: You can use Microsoft Defender for Cloud Regulatory Compliance Dashboard to monitor your AWS environment against Microsoft cloud security benchmark (MCSB), just like how you monitor your Azure environment. We developed approximately 180 AWS checks for the new AWS security guidance in MCSB, allowing you to monitor your AWS environment and resources in Microsoft Defender for Cloud.
 
@@ -32,9 +32,54 @@ Azure guidance and security principles: Azure security guidance, security princi
 | Data Protection (DP)                      | Data Protection covers control of data protection at rest, in transit, and via authorized access mechanisms, including discover, classify, protect, and monitoring sensitive data assets using access control, encryption, key management, and certificate management.                                                                                                                                                                                                                                      |
 | Asset Management (AM)                     | Asset Management covers controls to ensure security visibility and governance over your resources, including recommendations on permissions for security personnel, security access to asset inventory and managing approvals for services and resources (inventory, track, and correct).                                                                                                                                                                                                                   |
 | Logging and Threat Detection (LT)         | Logging and Threat Detection covers controls for detecting threats on the cloud and enabling, collecting, and storing audit logs for cloud services, including enabling detection, investigation, and remediation processes with controls to generate high-quality alerts with native threat detection in cloud services; it also includes collecting logs with a cloud monitoring service, centralizing security analysis with a security event management (SEM), time synchronization, and log retention. |
-| Incident Response (IR)                    | Incident Response covers controls in the incident response life cycle - preparation, detection and analysis, containment, and post-incident activities, including using Azure services (such as Microsoft Defender for Cloud and Sentinel) and/or other cloud services to automate the incident response process.                                                                                                                                                                                           |
+| Incident Response (IR)                    | Incident Response covers controls in the incident response life cycle - preparation, detection and analysis, containment, and post-incident activities, including using Azure services (such as Microsoft Defender for Cloud and Microsoft Sentinel) and/or other cloud services to automate the incident response process.                                                                                                                                                                                           |
 | Posture and Vulnerability Management (PV) | Posture and Vulnerability Management focuses on controls for assessing and improving the cloud security posture, including vulnerability scanning, penetration testing, and remediation, as well as security configuration tracking, reporting, and correction in cloud resources.                                                                                                                                                                                                                          |
 | Endpoint Security (ES)                    | Endpoint Security covers controls in endpoint detection and response, including the use of endpoint detection and response (EDR) and anti-malware service for endpoints in cloud environments.                                                                                                                                                                                                                                                                                                              |
-| Backup and Recovery (BR)                  | Backup and Recovery covers controls to ensure that data and configuration backups at the different service tiers are performed, validated, and protected.                                                                                                                                                                                                                                                                                                                                                   |
-| DevOps Security (DS)                      | DevOps Security covers the controls related to the security engineering and operations in the DevOps processes, including deployment of critical security checks (such as static application security testing and vulnerability management) prior to the deployment phase to ensure the security throughout the DevOps process; it also includes common topics such as threat modeling and software supply security.                                                                                        |
+| Backup and Recovery (BR)                  | Backup and Recovery cover controls to ensure that data and configuration backups at the different service tiers are performed, validated, and protected.                                                                                                                                                                                                                                                                                                                                                   |
+| DevOps Security (DS)                      | DevOps Security covers the controls related to the security engineering and operations in the DevOps processes, including deployment of critical security checks (such as static application security testing and vulnerability management) before the deployment phase to ensure the security throughout the DevOps process; it also includes common articles such as threat modeling and software supply security.                                                                                        |
 | Governance and Strategy (GS)              | Governance and Strategy provide guidance for ensuring a coherent security strategy and documented governance approach to guide and sustain security assurance, including establishing roles and responsibilities for the different cloud security functions, unified technical strategy, and supporting policies and standards.                                                                                                                                                                             |
+## High level setup instructions for regulatory compliance
+
+Step by step
+1. Enable Defender for Cloud (if not already enabled)
+   - Azure portal → Microsoft Defender for Cloud
+   - Ensure Defender for Cloud is enabled on Subscriptions or Management group
+2. Go to Regulatory compliance
+   - Azure portal → Microsoft Defender for Cloud
+   - Select Regulatory compliance
+3. Enable a regulatory standard
+   - Select Manage compliance policies
+   - Choose from built-in standards (examples):
+      - ISO 27001
+      - NIST SP 800 53
+      - PCI DSSCIS Benchmarks
+      - SOC 2
+   - Select Add
+4. Assign the standard to a scope
+   - When enabling a standard, you assign it at one or more scopes:
+      - Management group (best practice for enterprise)
+      - Subscription
+5. Review controls and assessments
+   - Each standard is broken into controls
+      - Example: “Secure network configurations”
+   - Each control maps to:
+      - Azure Policy evaluations
+      - Defender for Cloud recommendations
+   - You can drill into:
+      - Control status
+      - Passing / failing resources
+      - Recommendations causing non-compliance
+6. Remediate non-compliant findings
+   - You resolve non-compliance by:
+      - Fixing configuration issues
+      - Enabling Defender plans (for example, Defender for SQL, Storage)
+      - Applying policy remediation tasks
+      - Using exemptions where justified
+7. Add custom requirements (optional)
+   - If your org has:
+      - Internal controls
+      - Regional regulations
+      - Industry specific rules
+8. Use exemptions (for audit friendly reasons)
+   - For justified noncompliance (documented risk acceptance)
+   - Maintains audit clarity without false negatives

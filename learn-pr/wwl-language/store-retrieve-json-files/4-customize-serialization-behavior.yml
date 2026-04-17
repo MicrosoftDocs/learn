@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-retrieve-json-files.customize-serialization-behavior
+title: Customize serialization behavior
+metadata:
+  title: Customize serialization behavior
+  description: "Customize serialization behavior"
+  ms.date: 04/08/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-customize-serialization-behavior.md)]

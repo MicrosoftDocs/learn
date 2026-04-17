@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.saas-foundations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Foundations of SaaS
   description: Learn about Software as a Service (SaaS), service-level agreement (SLA) and service-level objectives (SLO), security and compliance, and pricing.
   ms.date: 05/28/2024
@@ -49,4 +47,4 @@ units:
   - learn.saas-foundations.summary
 badge:
   uid: learn.saas-foundations.badge
-
+

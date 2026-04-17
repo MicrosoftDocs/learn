@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.write-advanced-sql-code
+metadata:
+  title: Write advanced T-SQL code
+  description: Learn how to write advanced T-SQL code including CTEs, window functions, JSON functions, regular expressions, fuzzy string matching, graph queries, correlated queries, and error handling.
+  ms.date: 01/28/2026
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module
+  ms.service: sql
+  ai-usage: ai-generated
+title: Write advanced T-SQL code
+summary: >-
+  Learn advanced T-SQL techniques including CTEs, window functions, JSON, regular expressions, fuzzy matching, graph queries, and error handling for SQL Server, Azure SQL, and Fabric.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Write Common Table Expressions (CTEs) including recursive CTEs for hierarchical data
+    - Use window functions for ranking, aggregation, and analytical calculations
+    - Parse, construct, and transform JSON data using JSON functions
+    - Apply regular expressions for pattern matching and text manipulation
+    - Find approximate matches using fuzzy string matching functions
+    - Create and query graph data using the MATCH operator
+    - Write correlated subqueries for row-by-row comparisons
+    - Implement structured error handling with TRY...CATCH
+prerequisites: |
+  - Experience writing T-SQL queries including SELECT, JOIN, WHERE, and GROUP BY clauses
+  - Understanding of aggregate functions like SUM, COUNT, AVG, MIN, and MAX
+  - Familiarity with SQL Server, Azure SQL Database, or SQL databases in Microsoft Fabric
+  - A SQL Server 2019+ instance, Azure SQL Database, or Fabric SQL database to practice with
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- database-administrator
+- developer
+- solution-architect
+products:
+- sql-server
+- azure-sql-database
+- azure-sql-managed-instance
+- fabric
+subjects:
+- databases
+- data-management
+- data-engineering
+- cloud-computing
+- app-development
+units:
+  - learn.wwl.write-advanced-sql-code.introduction
+  - learn.wwl.write-advanced-sql-code.common-table-expressions
+  - learn.wwl.write-advanced-sql-code.window-functions
+  - learn.wwl.write-advanced-sql-code.json-functions
+  - learn.wwl.write-advanced-sql-code.regular-expressions
+  - learn.wwl.write-advanced-sql-code.fuzzy-string-matching
+  - learn.wwl.write-advanced-sql-code.graph-queries
+  - learn.wwl.write-advanced-sql-code.correlated-queries
+  - learn.wwl.write-advanced-sql-code.error-handling
+  - learn.wwl.write-advanced-sql-code.exercise-write-advanced-sql-code
+  - learn.wwl.write-advanced-sql-code.knowledge-check
+  - learn.wwl.write-advanced-sql-code.summary
+badge:
+  uid: learn.wwl.write-advanced-sql-code.badge

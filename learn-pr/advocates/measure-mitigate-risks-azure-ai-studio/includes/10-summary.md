@@ -20,3 +20,5 @@ Although the process applied today might look linear, it's an iterative process.
 - [Model catalog and collections in Azure AI Foundry](/azure/ai-studio/how-to/model-catalog-overview)
 - [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
 - [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in)
+- [Azure AI Foundry Discord](https://aka.ms/azureaifoundry/discord)
+- [Azure AI Foundry Developer Forum](https://aka.ms/azureaifoundry/forum)

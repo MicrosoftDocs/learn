@@ -10,7 +10,7 @@ In this exercise, you step through the process of applying pod security settings
 In this exercise, you deploy an AKS cluster. You use this cluster throughout all exercises in the module. While you can deploy a cluster using the Azure portal, you can use on Azure CLI instead for simplicity.
 
 > [!NOTE]
-> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).<br>
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).<br>
 
 1.  From your computer, open a web browser window and navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  In the Azure portal, select the **Azure Cloud Shell** icon.

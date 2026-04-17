@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.identify-key-business-user-roles-ai-workloads
+title: "Identify key business user roles for AI workloads"
+metadata:
+  title: "Identify Key Business User Roles for AI Workloads"
+  description: "Learn to identify and structure key business user roles essential for supporting enterprise AI workloads, ensuring alignment and sustainability."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 8
+content: |
+  [!include[](includes/13-identify-key-business-user-roles-ai-workloads.md)]

@@ -1,6 +1,6 @@
 In a form, you should provide instructions to the website user on how to complete each value properly, but you should also check the values that they enter. Blazor provides simple tools that can perform this validation with the minimum of custom code.
 
-In this unit, you'll learn how to annotate models so that Blazor knows what data to expect and how to configure a form to validate and respond to user data correctly.
+In this unit, you learn how to annotate models so that Blazor knows what data to expect. You also learn how to configure a form so it validates and responds to user data correctly.
 
 ## Validate user input in Blazor forms
 
@@ -8,11 +8,11 @@ When you collect information from a website user, it's important to check that i
 
 - **For business reasons**: Customer information such as a telephone number or order details must be correct to give good service to users. For example, if your webpage can spot a malformed telephone number as soon as the user enters it, you can prevent costly delays later.
 - **For technical reasons**: If your code uses form input for calculations or other processing, incorrect input can cause errors and exceptions.
-- **For security reasons**: Malicious users might try to inject code by exploiting input fields that are not checked.
+- **For security reasons**: Malicious users might try to inject code by exploiting input fields that aren't checked.
 
-Website users are familiar with validation rules that check for the presence and correct format of the details they enter. Required fields are often marked with an asterisk or a **Required** label. If they omit a value or enter a poorly formatted value, they see a validation message that instructs them on how to put the problem right. The validation message might appear when the user tabs out of a field or when they click the **Submit** button.
+Website users are familiar with validation rules that check for the presence and correct format of the details they enter. Required fields are often marked with an asterisk or a **Required** label. If they omit a value or enter a poorly formatted value, they see a validation message instructing them on how to correct the problem. The validation message might appear when the user tabs out of a field or when they select the **Submit** button.
 
-Here's an example form where the user has submitted invalid data. In this case, there are validation messages at the bottom of the form and invalid fields are highlighted in red. You'll build this form in the next exercise:
+Here's an example form where the user submits invalid data. In this case, there are validation messages at the bottom of the form and invalid fields are highlighted in red. You'll build this form in the next exercise:
 
 :::image type="content" source="../media/7-show-validation-errors.png" alt-text="Screenshot of an example form displaying feedback for the user about invalid data.":::
 
@@ -50,7 +50,7 @@ public class Pizza
 }
 ```
 
-We'll use this model in a form that enables Blazing Pizza personnel to add new pizzas to the menu. It includes the `[Required]` attribute to ensure that the `Name` and `Price` values are always completed. It also uses the `[Range]` attribute to check that the price entered is within a sensible range for a pizza. Finally, it uses the `[EmailAddress]` attribute to check the `ChefEmail` value entered is a valid email address.
+We use this model in a form that enables Blazing Pizza personnel to add new pizzas to the menu. It includes the `[Required]` attribute to ensure that the `Name` and `Price` values are always completed. It also uses the `[Range]` attribute to check that the price entered is within a sensible range for a pizza. Finally, it uses the `[EmailAddress]` attribute to check the `ChefEmail` value entered is a valid email address.
 
 Other annotations that you can use in a model include:
 
@@ -67,7 +67,7 @@ Other annotations that you can use in a model include:
 
 ## Add validation components to the form
 
-To configure your form to use data-annotation validation, first make sure you've bound the input control to the model properties. Then, add the **DataAnnotationsValidator** component somewhere within the `EditForm` component. To display the messages that validation generates, use the **ValidationSummary** component, which shows all the validation messages for all controls in the form. If you prefer to show validation messages next to each control, use multiple **ValidationMessage** components. Remember to tie each **ValidationMessage** control to a specific property of the model, by using the `For` attribute:
+To configure your form to use data-annotation validation, first make sure the input control is bound to the model properties. Then, add the **DataAnnotationsValidator** component somewhere within the `EditForm` component. To display the messages that validation generates, use the **ValidationSummary** component, which shows all the validation messages for all controls in the form. If you prefer to show validation messages next to each control, use multiple **ValidationMessage** components. Remember to tie each **ValidationMessage** control to a specific property of the model, by using the `For` attribute:
 
 ```razor
 @page "/admin/createpizza"
@@ -176,7 +176,7 @@ When you use an `EditForm` component, three events are available for responding 
 - `OnValidSubmit`: This event fires when the user submits a form and their input passes validation.
 - `OnInvalidSubmit`: This event fires when the user submits a form and their input fails validation.
 
-If you use `OnSubmit`, the other two events won't fire. Instead, you can use the `EditContext` parameter to check whether to process the input data or not. Use this event when you want to write your own logic to handle form submission:
+If you use `OnSubmit`, the other two events aren't fired. Instead, you can use the `EditContext` parameter to check whether to process the input data or not. Use this event when you want to write your own logic to handle form submission:
 
 ```razor
 @page "/admin/createpizza"

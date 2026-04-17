@@ -1,31 +1,33 @@
 As we start to pay attention to our services' reliability, we need a way to track how well (or not well) they're doing. Often, we can find this information in a service's logs, so we're going to need a tool to work with those logs. Log Analytics is the tool we'll be using in Azure for this purpose. It allows us to query this data and display it in ways that are useful to our reliability work.
 
-The log analytics query process involves writing queries in the Kusto Query Language (KQL). If you've ever worked with any other query language (for example, Structured Query Language, which most people know by its acronym, SQL) you'll have no problem picking up KQL. Even if you haven't, once you see how it works, basic KQL queries will likely come pretty easy to you.
+The log analytics query process involves writing queries in the Kusto Query Language (KQL). If you've ever worked with any other query language (for example, Structured Query Language, which most people know by its acronym, SQL) you'll have no problem picking up KQL. Even if you haven't, once you see how it works, basic KQL queries will likely come pretty easily to you.
 
 ## How Log Analytics works
 
-So, let's see how this is all going to work. Here's a diagram about how Log mAnalytics works:
+So, let's see how this is all going to work. Here's a diagram about how Log Analytics works:
 
-:::image type="content" source="../media/log-analytics-overview.png" alt-text="Diagram of Log Analytics overview showing data inputs, tables, and sample queries.":::
+[![Diagram of Log Analytics overview showing data inputs, tables, and sample queries.](../media/log-analytics-overview.png)](../media/log-analytics-overview.png#lightbox)
 
 Data for Log Analytics comes in from a number of sources, including:
 
 - Windows event logs
 - `syslog` on Linux machines
-- Agents running on VMs
+- Azure Monitor Agent (AMA) running on VMs and servers
 - Custom logs people choose to send in
-- Metrics from Azure resources
-- Telemetry info from Application Insights
+- Metric data that has been routed from Azure resources
+- Telemetry from Application Insights
 
-All of this information comes into what Log Analytics calls *tables*. You can think of each table as a separate database. You'll be writing queries to pull the information from the tables. For the examples we'll show later in this module, we'll be working primarily with a table called "requests."
+On machines, the current Azure Monitor collection path uses AMA together with Data Collection Rules (DCRs). You might still encounter older material that refers to the Log Analytics agent (also known as MMA/OMS), but that agent was retired in August 2024 and is no longer supported for Azure Monitor collection. Current Azure Monitor guidance uses AMA.
 
-:::image type="content" source="../media/log-analytics-requests-table.png" alt-text="Diagram of Log Analytics overview with requests table highlighted.":::
+All of this information lands in tables in a Log Analytics workspace. Think of a table as a structured set of records optimized for querying, not as a separate database. For the examples we'll show later in this module, we'll work primarily with Application Insights request telemetry. In a workspace-based Application Insights resource, that data is stored in the `AppRequests` table.
+
+[![Diagram of Log Analytics overview with request telemetry table highlighted.](../media/log-analytics-requests-table.png)](../media/log-analytics-requests-table.png#lightbox)
 
 ## Log Analytics interface
 
 The following graphic shows the different parts of the Log Analytics interface.
 
-:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal.":::
+[![Screenshot of the Log Analytics workspace in the Azure portal.](../media/log-analytics-user-interface.png)](../media/log-analytics-user-interface.png#lightbox)
 
 On the left is a section of the screen that makes sure you never get lost when using Log Analytics. It shows the tables with which you're potentially working, and if you expand a section, you’ll see a listing of the fields in that table that are available to query. If you select any of the fields or the table name, it will be copied into the query construction area.
 
@@ -35,20 +37,22 @@ At the bottom of the page is more useful information. Here, Log Analytics shows 
 
 ## Writing KQL queries
 
-KQL is a powerful query language. We're only going to scratch the surface with some basic queries so you can see how easy it is to use. Later on, if you'd like to dive deeper to use some of the more advanced features (including some machine learning functionality), be sure to check out the [Log Analytics tutorial](/azure/azure-monitor/log-query/get-started-portal).
+KQL is a powerful query language. We're only going to scratch the surface with some basic queries so you can see how easy it is to use. Later on, if you'd like to dive deeper into KQL itself and learn more query patterns, be sure to check out the [Kusto Query Language tutorial](/azure/data-explorer/kusto/query/tutorial?pivots=azuremonitor) and the guidance on [optimizing log queries in Azure Monitor](/azure/azure-monitor/logs/query-optimization).
 
-Let's start by writing a simple KQL query. Almost all KQL queries begin with the data source; the table you're querying. So, if you were querying data from a "requests" table, you'd start with this in the query area:
+Let's start by writing a simple KQL query. Almost all KQL queries begin with the data source; the table you're querying. So, if you were querying request telemetry from Application Insights, you'd start with this in the query area:
 
-`Requests`
+`AppRequests`
+
+You might still encounter older examples that use legacy names such as `requests` and `timestamp`. Those names remain for backward compatibility, but current workspace-based Application Insights guidance uses `AppRequests` and `TimeGenerated`.
 
 The next part of a KQL query is to connect the table with the operation you want to perform. Use a pipe character (the horizontal bar on the keyboard
 most commonly found above the slash key) between the table name and the command.
 
-Here's a simple query to sort the table return the top 10 records found:
+Here's a simple query to return the 10 most recent records:
 
 ```kusto
-Requests
-|top 10
+AppRequests
+| top 10 by TimeGenerated desc
 ```
 
 Here are some examples of other common commands you might use instead of "top 10:"
@@ -56,22 +60,22 @@ Here are some examples of other common commands you might use instead of "top 10
 - If you want to see any random 10 records instead of the top 10 (for example, to see the table structure), you can use the following command:
 
     ```kusto
-    requests
-    |take 10
+    AppRequests
+    | take 10
     ```
 
 - To see records that have come in during the last half hour, you can use the following query:
 
     ```kusto
-    requests
-    |where timestamp > ago(30m)
+    AppRequests
+    | where TimeGenerated > ago(30m)
     ```
 
-- Another common task is to specify the order in which the data is to be returned. Here's an example of a query that sorts by a specific field (timestamp) in descending order (for example, most recent data first):
+- Another common task is to specify the order in which the data is to be returned. Here's an example of a query that sorts by a specific field (`TimeGenerated`) in descending order (for example, most recent data first):
 
     ```kusto
-    requests
-    |sort by timestamp desc
+    AppRequests
+    | sort by TimeGenerated desc
     ```
 
 As with SQL, you can set multiple conditions to specify which records you want returned. Use additional pipe characters and clauses to add them. The pipe character separates commands so the output of the first one will be the input of the next command. A single query can have any number of commands.
@@ -79,19 +83,22 @@ As with SQL, you can set multiple conditions to specify which records you want r
 Here's an example of a query that returns all of the 404 response-code records (for example, all of the "page not found" records from a web service) in the last 30 minutes:
 
 ```kusto
-requests
-|where timestamp > ago(30m)
-|where toint(resultCode) == 404
+AppRequests
+| where TimeGenerated > ago(30m)
+| where ResultCode == "404"
 ```
 
-This query is written to maximize efficiency. By first selecting only the records from the last 30 minutes, you drastically reduce the number of records that the second clause has to scan through. If you wrote this query in the opposite order, first it would find all of the 404s from the beginning of time in the data, and then discard the vast majority to give u only the last half an hour's worth. Always consider the order of processing when you write queries with multiple conditions.
+This query uses direct string comparison because `ResultCode` is stored as text in `AppRequests`. It's also written using a good KQL performance pattern. By filtering to the last 30 minutes first, you reduce the amount of data that later steps need to work with. In many cases, the Kusto engine can optimize or reorder predicates for you, but it's still a good habit to put highly selective filters—especially `datetime` filters on `TimeGenerated`—early in the query.
 
 One last query example before we return to the power of Log Analytics later in this module to help improve our reliability. Here's a query that shows a calculation based on the data:
 
 ```kusto
-requests
-|where timestamp > ago(30m)
-|summarize count() by name, URL
+AppRequests
+| where TimeGenerated > ago(30m)
+| summarize RequestCount = sum(ItemCount) by Name, Url
 ```
 
-This query returns a summary of the requests we received in the last half hour. So on a web service, it might tell us that there's been a `GET index.html` request to the URL `http://tailwindtraders.com` 2,875 times. We are pausing our look at KQL with this query, because it nicely connects to the KQL queries we'll use in the next unit.
+> [!TIP]
+> These examples use `sum(ItemCount)` rather than `count()`. Application Insights can use sampling to reduce telemetry volume, and each sampled record's `ItemCount` field indicates how many actual requests it represents. Using `sum(ItemCount)` gives accurate totals even when sampling is active. For simple exploration queries (like `take 10`), plain `count()` is fine, but for aggregations that drive decisions, prefer `sum(ItemCount)`.
+
+This query returns a summary of the requests we received in the last half hour. So on a web service, it might tell us that a `GET index.html` request to the URL `https://tailwindtraders.com` was seen 2,875 times. We are pausing our look at KQL with this query, because it nicely connects to the KQL queries we'll use in the next unit.

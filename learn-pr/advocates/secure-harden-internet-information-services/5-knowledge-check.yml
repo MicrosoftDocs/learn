@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.secure-harden-internet-information-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 03/31/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your organization has an intranet web application hosted on IIS that should be accessible only to domain-joined users using their Windows credentials, with no credential prompt appearing. Which IIS authentication method should you configure?"
+    choices:
+    - content: "Anonymous Authentication"
+      isCorrect: false
+      explanation: "Anonymous access allows unauthenticated users to reach the site, which contradicts the requirement that only domain-joined users be able to access it."
+    - content: "Basic Authentication"
+      isCorrect: false
+      explanation: "Basic Authentication typically prompts for a username and password and doesn't provide seamless single sign-on with Windows credentials."
+    - content: "Windows Authentication (Integrated)"
+      isCorrect: true
+      explanation: "Integrated Windows Authentication uses Kerberos/NTLM to automatically pass domain credentials for domain-joined clients, avoiding a credential prompt."
+    - content: "Digest Authentication"
+      isCorrect: false
+      explanation: "Digest Authentication isn't the standard approach for seamless intranet SSO and has extra requirements (such as domain support) without providing the typical transparent experience of Windows Authentication."
+  - content: "You need to restrict access to a /reports directory on your IIS site so that only members of the CONTOSO\\ReportViewers group can access it. Which IIS feature should you configure?"
+    choices:
+    - content: "IP Address and Domain Restrictions"
+      isCorrect: false
+      explanation: "This feature restricts access by client IP/DNS, not by Active Directory group membership."
+    - content: "Authorization Rules"
+      isCorrect: true
+      explanation: "Authorization Rules allow or deny access to specific paths based on Windows users/groups (for example, allowing CONTOSO\\ReportViewers and denying others)."
+    - content: "Request Filtering"
+      isCorrect: false
+      explanation: "Request Filtering blocks patterns (extensions, verbs, query strings) but doesn't implement AD group-based access control."
+    - content: "SSL Settings"
+      isCorrect: false
+      explanation: "SSL Settings control HTTPS requirements and certificate behavior, not which Windows groups may access a directory."
+  - content: "What is the recommended Application Pool identity type for most IIS deployments to follow the principle of least privilege?"
+    choices:
+    - content: "Local System"
+      isCorrect: false
+      explanation: "Local System is highly privileged and violates the principle of least privilege for most web applications."
+    - content: "Network Service"
+      isCorrect: false
+      explanation: "Network Service is more privileged and less isolated than ApplicationPoolIdentity; multiple apps can end up sharing the same account context."
+    - content: "ApplicationPoolIdentity"
+      isCorrect: true
+      explanation: "ApplicationPoolIdentity provides a unique, low-privilege virtual account per app pool, improving isolation and reducing required permissions."
+    - content: "Local Service"
+      isCorrect: false
+      explanation: "Local Service isn't the recommended default for IIS app pools and doesn't provide the per-pool isolation that ApplicationPoolIdentity does."
+  - content: "You're hosting three HTTPS websites on a single IIS server with one IP address. Each site has its own TLS certificate. What feature must be enabled on each HTTPS binding to support this configuration?"
+    choices:
+    - content: "Application Pool Isolation"
+      isCorrect: false
+      explanation: "Separate app pools improve process isolation, but they don't solve the 'multiple certificates on one IP:443' requirement."
+    - content: "SSL Offloading"
+      isCorrect: false
+      explanation: "SSL offloading refers to terminating TLS on a load balancer or proxy, not selecting different certificates for multiple hostnames on the same IIS IP/port."
+    - content: "Server Name Indication (SNI)"
+      isCorrect: true
+      explanation: "SNI includes the hostname in the TLS handshake, allowing IIS to choose the correct certificate for each site while sharing a single IP address."
+    - content: "HTTP Strict Transport Security (HSTS)"
+      isCorrect: false
+      explanation: "HSTS forces clients to use HTTPS for a hostname, but it doesn't enable hosting multiple certificates on one IP address."
+  - content: "Your IIS server hosts a web application that only accepts form submissions (POST) and serves pages (GET). Which configuration reduces attack surface by restricting the HTTP methods the server accepts?"
+    choices:
+    - content: "Configure IP Address and Domain Restrictions to block external requests"
+      isCorrect: false
+      explanation: "IP restrictions control where requests come from, not which HTTP methods (verbs) the server accepts."
+    - content: "Configure Request Filtering to deny all HTTP verbs except GET and POST"
+      isCorrect: true
+      explanation: "Request Filtering can explicitly allow only the verbs your app needs (such as GET/POST) and deny unused or risky verbs like TRACE, PUT, and DELETE."
+    - content: "Remove the Windows Authentication module from the site"
+      isCorrect: false
+      explanation: "Authentication modules control how users authenticate, not which HTTP methods are permitted."
+    - content: "Set the Maximum URL Length in Request Limits to 256 bytes"
+      isCorrect: false
+      explanation: "URL length limits reduce risk from oversized requests but don't restrict which HTTP verbs the server accepts."

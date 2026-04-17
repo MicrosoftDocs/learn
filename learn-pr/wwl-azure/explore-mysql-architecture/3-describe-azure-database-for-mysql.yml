@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-mysql-architecture.describe-azure-database-for-mysql
 title: Describe Azure Database for MySQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure Database for MySQL
   description: "Describe Azure Database for MySQL"
   ms.date: 10/10/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-describe-azure-database-for-mysql.md)]
+  [!include[](includes/3-describe-azure-database-for-mysql.md)]

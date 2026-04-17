@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.priva-subject-rights-requests.subject-rights-requests-overview
-title: Understand and subject rights requests across Microsoft 365 and beyond
+title: Understand subject rights requests in Microsoft 365
 metadata:
-  title: Understand and subject rights requests across Microsoft 365 and beyond
-  description: "Understand and subject rights requests across Microsoft 365 and beyond"
-  ms.date: 01/24/2025
+  title: Understand Subject Rights Requests in Microsoft 365
+  description: "Understand subject rights requests in Microsoft 365"
+  ms.date: 09/11/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/subject-rights-requests-overview.md)]

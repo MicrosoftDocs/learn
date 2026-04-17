@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-boards-using-github-copilot.steer-review-copilot-pull-requests
+title: Steer and review Copilot-generated pull requests
+metadata:
+  title: Steer and review Copilot-generated pull requests
+  description: "Steer and review Copilot-generated pull requests"
+  ms.date: 02/25/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-steer-review-copilot-pull-requests.md)]

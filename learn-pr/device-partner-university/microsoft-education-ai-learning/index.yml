@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.microsoft-education-ai-learning
+title: Microsoft Education technology and AI learning concepts
+metadata:
+  title: Microsoft Education Technology And AI Learning Concepts
+  description: Explore foundational concepts for Microsoft education technology and AI-powered learning. Learn how institutions modernize securely, support teaching and learning, and align technology decisions with institutional goals.
+  ms.date: 04/02/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-concept-based
+  ms.service: microsoft-365-education
+summary: >
+  Explore foundational concepts for Microsoft education technology and AI-powered learning. Learn how institutions modernize securely, support teaching and learning, and align technology decisions with institutional goals.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/microsoft-education-ai-learning.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-education
+units:
+  - learn.dpu.microsoft-education-ai-learning.introduction
+  - learn.dpu.microsoft-education-ai-learning.education-technology-trends-challenges
+  - learn.dpu.microsoft-education-ai-learning.microsoft-education-platform-concepts
+  - learn.dpu.microsoft-education-ai-learning.microsoft-education-strategy-pillars
+  - learn.dpu.microsoft-education-ai-learning.mapping-education-priorities-technology-solutions
+  - learn.dpu.microsoft-education-ai-learning.knowledge-check
+  - learn.dpu.microsoft-education-ai-learning.summary
+badge:
+  uid: learn.dpu.microsoft-education-ai-learning.badge

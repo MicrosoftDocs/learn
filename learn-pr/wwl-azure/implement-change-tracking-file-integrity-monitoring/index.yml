@@ -3,9 +3,9 @@ uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-i
 metadata:
   title: Implement change tracking and file integrity monitoring for Windows IaaS VMs
   description: "Implement change tracking and file integrity monitoring for Windows IaaS VMs"
-  ms.date: 01/01/2025
+  ms.date: 01/23/2026
   author: wwlpublish
-  ms.author: tonyj
+  ms.author: robbarefoot
   ms.topic: module
   ms.service: windows
 title: Implement change tracking and file integrity monitoring for Windows IaaS VMs

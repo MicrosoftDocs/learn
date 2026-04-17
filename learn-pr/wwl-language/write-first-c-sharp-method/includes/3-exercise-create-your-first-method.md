@@ -29,7 +29,7 @@ This module includes hands-on activities that guide you through the process of b
     > [!NOTE]
     > If working on your own PC, rather than in a sandbox or hosted environment, and you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip over the next step, which is used to create a console app in the TestProject folder.
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, type **`dotnet new console -o ./CsharpProjects/TestProject`** and then press Enter.
 
     This .NET CLI command uses a .NET program template to create a new C# console application project in the specified folder location. The command creates the CsharpProjects and TestProject folders for you, and uses TestProject as the name of the `.csproj` file.
 

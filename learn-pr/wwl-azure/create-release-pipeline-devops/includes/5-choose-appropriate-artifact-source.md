@@ -1,31 +1,31 @@
-When you use a release pipeline to deploy your packages to production, you need traceability.
+Release pipelines require traceability to establish package origin and ensure source integrity.
 
-That means you want to know where the package that you're deploying originates from.
+Traceability confirms that deployed packages match the exact sources built and committed to version control.
 
-It's essential to understand that the sources that you built and checked into your version control are precisely the same as the sources that you're going to deploy to the various environments that are going to be used by your customers.
+Source integrity verification is essential for production deployments across customer-facing environments.
 
-Primarily when you work in a regulated environment like a bank or an insurance company, auditors ask you to provide traceability to sources that you deployed to prove the integrity of the package.
+Regulated industries require comprehensive audit trails to verify package integrity and deployment sources.
 
-Another crucial aspect of your artifacts is auditability. You want to know who changed that line of code and who triggered the build that produces the artifact deployed.
+Auditability tracks code changes and build triggers, providing accountability throughout the deployment process.
 
-A proper mechanism to make sure you can provide the correct traceability and auditability is using immutable packages.
+Immutable packages provide reliable traceability and auditability mechanisms.
 
-It isn't something that you can buy, but something that you need to implement yourself.
+Implementation requires secure storage locations with restricted human access to prevent package modification.
 
-Using a build pipeline that produces a package stored in a location that humans can't access, you ensure the sources are unchanged throughout the whole-release process. It's an essential concept of release pipelines.
+Build pipelines must store packages in secure locations to maintain source integrity throughout the release process.
 
-You identify an immutable package by giving it a version so that you can refer to it at a later stage. Versioning strategy is a complex concept and isn't in the scope of this module.
+Package versioning enables immutable package identification and future reference.
 
-Still, having a unique identification number or label attached to the package and ensuring that this number or label cannot be changed or modified afterward ensures traceability and auditability from source code to production.
+Unique, immutable identifiers ensure end-to-end traceability and auditability from source code to production deployments.
 
 Read more about [Semantic Versioning](https://semver.org).
 
-Choosing the right artifact source is tightly related to the requirements you have about traceability and auditability.
+Artifact source selection depends on traceability and auditability requirements.
 
-If you need an immutable package (containing multiple files) that can never be changed and be traced, a build artifact is the best choice.
+Build artifacts provide optimal solutions for immutable multi-file packages requiring comprehensive traceability.
 
-If it's one file, you can directly link to source control.
+Single-file deployments can utilize direct source control links.
 
-You can also point at a disk or network share, but it implies some risk-concerning auditability and immutability. Can you ensure the package never changed?
+Disk or network shares introduce auditability and immutability risks due to potential unauthorized modifications.
 
 See also [Release artifacts and artifact sources](/azure/devops/pipelines/release/artifacts).

@@ -4,12 +4,10 @@ title: Exercise - Use delta tables in Apache Spark
 metadata:
   title: Exercise - Use delta tables in Apache Spark
   description: "Exercise - Use delta tables in Apache Spark"
-  ms.date: 09/26/2024
-  author: AngieRudduck
-  ms.author: anrudduc
+  ms.date: 05/23/2025
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
 durationInMinutes: 40
 content: |
   [!include[](includes/6-exercise-delta-tables.md)]

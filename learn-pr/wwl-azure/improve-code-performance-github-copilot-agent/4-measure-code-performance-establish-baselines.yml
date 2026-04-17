@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-code-performance-github-copilot-agent.measure-code-performance-establish-baselines
+title: Measure code performance and establish baselines
+metadata:
+  title: Measure Code Performance and Establish Baselines
+  description: Measure code performance and establish baselines.
+  ms.date: 10/20/2025
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-measure-code-performance-establish-baselines.md)]

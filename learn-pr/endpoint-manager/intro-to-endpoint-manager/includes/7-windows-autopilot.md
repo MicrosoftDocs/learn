@@ -16,4 +16,3 @@ By using cloud-based technologies, Windows Autopilot:
 - Reduces IT time deploying, managing, and retiring devices.
 - Reduces the infrastructure required to maintain devices.
 - Maximizes end user ease of use.
-

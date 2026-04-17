@@ -49,23 +49,31 @@ Providing GitHub Copilot Chat with prompts or questions that include a clear sco
 
 You can use chat participants, slash commands, and chat variables to clarify the context of your prompts.
 
-- Chat participants, such as `@workspace` or `@terminal`, help GitHub Copilot Chat understand the context of your question.
-- Slash commands, such as `/explain` or `/new`, help Copilot Chat understand the intent or purpose of your question.
+- Chat participants, such as `@terminal`, help GitHub Copilot Chat understand the context of your question.
+- Slash commands, such as `/explain` or `/new`, help GitHub Copilot Chat understand the intent or purpose of your question.
 - Chat variables, such as `#file` or `#editor`, help Copilot Chat focus on something specific when considering the larger context of your question.
 
 Using these specialized descriptors helps GitHub Copilot Chat generate more accurate and useful responses.
 
-You can combine chat participants with slash commands to perform specific actions. For example, you could scaffold a new C# console application by using the following prompt: `@workspace /new console application in C#`. This prompt includes a chat participant (`@workspace`) and a slash command (`/new`) to help GitHub Copilot Chat perform the intended task.
+You can use slash commands to perform specific actions in Copilot Chat. For example, you could scaffold a new C# console application by using the following prompt:
 
-![Screenshot showing the Chat used to scaffold a console app.](../media/chat-view-scaffold-new-workspace.png)
+```text
+/new console application in C#
+```
+This prompt uses a slash command (/new) to help GitHub Copilot Chat perform the intended task.
 
-GitHub Copilot can scaffold more complex workspaces. For example, the following prompt creates the workspace for a Node.js application that uses the Express framework, the Pug template engine, and TypeScript: `@workspace /new Node.js Express Pug TypeScript`.
+GitHub Copilot can scaffold more complex projects. For example, the following prompt creates a workspace for a Node.js application that uses the Express framework, the Pug template engine, and TypeScript:
+
+```text
+/new Node.js Express Pug TypeScript
+```
+
 
 ### Generate code with GitHub Copilot Chat using the Chat view
 
 The Chat view in Visual Studio Code provides access to an AI assistant that helps you develop code. You can ask questions and get help from your AI assistant without leaving the Visual Studio Code environment. The Chat view provides assistance when you're developing code and when you're exploring approaches to solving difficult coding problems. You can also use the Chat view to ask questions about existing code, to get help with errors or coding logic, and to get information about using project resources. The Chat view can help you learn new coding techniques, explore different coding styles, and improve your coding skills.
 
-The Chat view opens in its own panel to the right of Visual Studio Code's code editor. To open the Chat view, select **Open Chat** from the Visual Studio Code Command Center or use the **Ctrl+Alt+I** keyboard shortcut.
+The Chat view opens in its own panel to the right of Visual Studio Code's code editor. To open the Chat view, select **Chat** from the Visual Studio Code title bar or use the **Ctrl+Alt+I** keyboard shortcut.
 
 ![Screenshot showing the Chat view "welcome" message in Visual Studio Code.](../media/chat-view-1.png)
 
@@ -91,13 +99,13 @@ GitHub Copilot maintains a history of your conversation. The history is used to 
 
 Depending on your question, GitHub Copilot Chat may return source code in the response. Source code is displayed as a code block, and you can manage the code in a few different ways.
 
-If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Apply in Editor**, **Insert At Cursor (Ctrl+Enter)**, and **Copy**.
+If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Apply**, **Insert (Ctrl+Enter)**, and **Copy**.
 
 ![Screenshot showing a code block in the Chat view.](../media/chat-view-4.png)
 
 The More Actions (...) button displays the options to **Insert into Terminal (Ctrl+Alt+Enter)** and **Insert into New File**.
 
-If Copilot Chat detects that a code block contains a command, you can run it directly in the integrated terminal with **Insert into Terminal (Ctrl+Alt+Enter)**. This option creates or opens the active terminal and inserts the command text, ready for you to run.
+If GitHub Copilot Chat detects that a code block contains a command, you can run it directly in the integrated terminal with **Insert into Terminal (Ctrl+Alt+Enter)**. This option creates or opens the active terminal and inserts the command text, ready for you to run.
 
 ![Screenshot showing the Insert into Terminal option in the Chat view.](../media/chat-view-6.png)
 
@@ -123,7 +131,7 @@ You can create a new code feature using inline chat by completing the following 
 
 1. Enter a prompt that describes the feature you want to create.
 
-1. Review the suggestions provided by Copilot Chat, and refine your prompt if necessary.
+1. Review the suggestions provided by GitHub Copilot Chat, and refine your prompt if necessary.
 
 1. Once you're satisfied, accept a suggestion.
 
@@ -145,7 +153,7 @@ You can create a regular expression using inline chat by completing the followin
 
 1. Enter a prompt that describes the data pattern you need to validate.
 
-1. Review the suggestions provided by Copilot Chat, and once you're satisfied, accept a suggestion.
+1. Review the suggestions provided by GitHub Copilot Chat, and once you're satisfied, accept a suggestion.
 
 Here's an example that demonstrates how to create a regular expression for email addresses using inline chat:
 
@@ -153,7 +161,7 @@ Here's an example that demonstrates how to create a regular expression for email
 
 It's always important to review the responses generated by GitHub Copilot Chat.
 
-Copilot Chat suggests the following regular expression can be used to validate email addresses: `^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$`.
+GitHub Copilot Chat suggests the following regular expression can be used to validate email addresses: `^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$`.
 
 Let's take a minute to evaluate the suggested regular expression.
 

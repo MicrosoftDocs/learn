@@ -2,8 +2,6 @@
 uid: learn.wwl.foundations-platform-engineering.core-principles-platform-design
 title: Core Principles of Platform Design
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Core Principles of Platform Design
   description: "Core Principles of Platform Design"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-core-principles-platform-design.md)]
+  [!include[](includes/3-core-principles-platform-design.md)]

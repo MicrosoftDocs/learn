@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-server-2025-features-explained.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Key features and innovations in Windows Server 2025" module.
+  ms.date: 09/08/2025
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

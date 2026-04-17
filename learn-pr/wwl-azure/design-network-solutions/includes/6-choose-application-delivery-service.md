@@ -1,12 +1,10 @@
-Azure offers several load-balancing services for distributing your workloads across multiple computing resources. As you review the options, there are several factors to consider in your planning.
+Azure offers several AI-ready load-balancing services for distributing your workloads across multiple computing resources. As you review the options, there are several factors to consider in your planning.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51df5643-ed38-4257-b585-14ff9eccdafc]
 
 ### Things to know about load balancing
 
-Azure load-balancing services can be categorized along two dimensions:
-- Global or Regional
-- HTTP(S) or non-HTTP(S)
-
-In the Azure portal, the **Help me choose** default tab highlights other configuration characteristics:
+When selecting an Azure load-balancing service, consider these configuration characteristics.
 
 - **Traffic type**: Are you designing a web (HTTP/HTTPS) application? Is the app public facing or is it private?
 

@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-cicd-sql-database-projects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/14/2025
+  author: calopez
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A database administrator applied a hotfix directly to production by adding a missing index. The SQL Database Project doesn't have this index. What is this situation called, and which tool detects it?"
+    choices:
+    - content: "Schema drift, detected by schema comparison"
+      isCorrect: true
+      explanation: "Correct. Schema drift occurs when the live database diverges from the project definition. Schema comparison tools compare the database against the project and highlight differences like the missing index."
+    - content: "A build error, detected by dotnet build"
+      isCorrect: false
+      explanation: "Incorrect. The project builds successfully because it doesn't know about the extra index in production. Build validation checks the project's internal consistency, not differences with a live database."
+    - content: "A merge conflict, detected by Git"
+      isCorrect: false
+      explanation: "Incorrect. Merge conflicts occur when two branches modify the same file. A hotfix applied directly to the database doesn't create any file-level conflict in Git."
+    - content: "A deployment failure, detected by SqlPackage Publish"
+      isCorrect: false
+      explanation: "Incorrect. SqlPackage Publish would actually remove the index from production to make the database match the project, which is worse than a detection failure."
+  - content: "Which GitHub Actions action deploys a .dacpac file to Azure SQL Database and can automatically configure firewall rules for the runner?"
+    choices:
+    - content: "azure/sql-action"
+      isCorrect: true
+      explanation: "Correct. The azure/sql-action action deploys .dacpac, .sql, or SqlPackage projects to Azure SQL Database. When used with azure/login, it can automatically add and remove firewall rules for the GitHub Actions runner IP."
+    - content: "azure/webapps-deploy"
+      isCorrect: false
+      explanation: "Incorrect. The azure/webapps-deploy action deploys web applications to Azure App Service, not database schemas to Azure SQL Database."
+    - content: "actions/upload-artifact"
+      isCorrect: false
+      explanation: "Incorrect. The actions/upload-artifact action stores build outputs for use in later pipeline stages. It doesn't deploy anything to Azure SQL Database."
+    - content: "azure/login"
+      isCorrect: false
+      explanation: "Incorrect. The azure/login action authenticates to Azure, but it doesn't perform database deployments. It's used before azure/sql-action to enable firewall configuration."
+  - content: "A developer writes a SQL Server unit test for a stored procedure that should raise an error when a required parameter is NULL. Which attribute marks the test as expecting a SQL exception?"
+    choices:
+    - content: "[ExpectedException]"
+      isCorrect: false
+      explanation: "Incorrect. [ExpectedException] is a general .NET testing attribute. SQL Server unit tests use a SQL-specific attribute to handle expected database exceptions."
+    - content: "[ExpectedSqlException]"
+      isCorrect: true
+      explanation: "Correct. The [ExpectedSqlException] attribute marks a SQL Server unit test as expecting a SQL exception. The exception can be filter by MessageNumber, Severity, and State to verify the specific error."
+    - content: "[TestMethod]"
+      isCorrect: false
+      explanation: "Incorrect. [TestMethod] marks a method as a test case. It doesn't configure the test to expect an exception."
+    - content: "[ShouldThrow]"
+      isCorrect: false
+      explanation: "Incorrect. [ShouldThrow] isn't a valid attribute in the SQL Server unit test framework."

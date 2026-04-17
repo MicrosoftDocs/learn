@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-entra-agent-id.understand-microsoft-graph-operations
+title: Understand Microsoft Graph operations
+metadata:
+  title: Understand Microsoft Graph operations
+  description: "Learn how to use Microsoft Graph APIs to programmatically query and manage agent identities, including permission requirements and common operations."
+  ms.date: 02/09/2026
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-understand-microsoft-graph-operations.md)]
