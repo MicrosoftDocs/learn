@@ -1,10 +1,8 @@
-A Fabric data agent is a conversational interface to your data. It operates within your Fabric environment, connected to multiple data sources that can span different systems — people ask questions in natural language and get data-backed answers without writing queries or building reports. In this module, the focus is on using an ontology as the data source.
+A Fabric data agent is a conversational interface to your data. It connects to data sources in your Fabric environment — people ask questions in natural language and get data-backed answers without writing queries or building reports. In this module, the focus is on using an ontology as the data source.
 
 ## What is a Fabric data agent?
 
-When you ask a question, the agent follows a structured flow: Azure OpenAI parses your intent, the agent identifies the relevant data source, generates a query in the appropriate language (SQL, DAX, KQL, or GQL depending on the source type), executes the query, and returns the result.
-
-:::image type="content" source="../media/data-agent-query-flow.png" alt-text="Diagram showing the Fabric data agent query flow: user question to Azure OpenAI parsing, data source identification, query generation, execution, and answer returned.":::
+When you ask a question, the agent identifies the relevant data source, generates a query in the appropriate language (SQL, DAX, KQL, or GQL depending on the source type), executes the query, and returns the result.
 
 Each agent can connect to up to five data sources in any combination:
 
