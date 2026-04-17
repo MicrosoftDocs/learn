@@ -94,13 +94,13 @@ Use the information collected during testing to remediate applications wherever 
 >
 > If you can't resolve an application compatibility issue, consider using the [Microsoft App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure) service for assistance.
 
-3. Remediate driver-related blocks
+3. Remediate driver-related blocks.
 
    Some “application” blocks are actually caused by associated drivers (for example, printer, security, or virtualization drivers), not the application itself.
    
    Microsoft uses driver hard blocks to prevent upgrades when incompatible drivers are known to cause failures. These blocks must be remediated before the upgrade can proceed. In these instances, you should update the driver to a Windows 11–compatible version or remove the application if the driver can't be updated.
 
-4. Rerun compatibility checks
+4. Rerun compatibility checks.
    
    After remediating blocking applications or drivers, retry the Windows 11 upgrade. Windows Setup automatically reevaluates compatibility using updated diagnostic definitions delivered through Windows Update. No manual reset of compatibility data is required.
 
