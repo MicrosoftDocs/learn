@@ -38,7 +38,7 @@ The agent's ability to generate accurate GQL depends entirely on how well the on
 
 ## Why combine a Fabric data agent with an ontology?
 
-Without an ontology as the data source, a Fabric data agent guesses from raw column names and table structures. In a domain like healthcare where vocabulary is precise and regulated, this guessing produces unpredictable results. A column named `eq_assgn_flag` might mean equipment assigned, equipment available, or something else entirely — the agent has no reliable way to know.
+Without an ontology as the data source, a Fabric data agent connects directly to a lakehouse or warehouse and interprets raw column names and table structures without semantic context. In a domain like healthcare where vocabulary is precise, a column named `eq_assgn_flag` might mean equipment assigned, equipment available, or something else entirely — the agent has no reliable way to know.
 
 With an ontology as the data source, "vital sign equipment" maps to the `VitalSignEquipment` entity type, which connects to rooms and patients through well-defined relationships. This mapping is governed, repeatable, and accurate. Every user who asks the same question gets the same semantic interpretation.
 
