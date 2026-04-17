@@ -22,8 +22,6 @@ An **ontology** is a structured model that describes your business domain — th
 
 The Lamna Healthcare ontology defines entity types like **Hospital**, **Department**, **Room**, **Patient**, and **VitalSignEquipment**. Each entity type has properties that describe its characteristics: a Room has properties like `roomNumber`, `capacity`, and `isOccupied`. Relationships connect entities in meaningful ways: a Patient is `admittedTo` a Room, and a Room is `inDepartment` a Department.
 
-Raw lakehouse tables work differently. A column named `occ_flag` tells an AI agent nothing about its meaning or context. An entity type named `Room` with a property `isOccupied` and a relationship `admittedTo → Patient` provides a vocabulary the agent understands and uses correctly.
-
 **Connecting to the ontology** gives the agent a structured vocabulary so it maps natural language questions to defined entity types, properties, and relationship labels rather than guessing from raw column names. The Lamna ontology is bound to lakehouse tables and an eventhouse — when the agent queries through the ontology layer, it accesses real data while using the conceptual structure the ontology provides.
 
 This combination of meaningful vocabulary and real data bindings makes the ontology a bridge between how clinical staff ask questions and how data is stored.
