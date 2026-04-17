@@ -44,7 +44,7 @@ quiz:
 
     - content: "To monitor update compliance on deployed devices"
       isCorrect: false
-      explanation: "Incorrect. Monitoring is not part of the initial planning phase."
+      explanation: "Incorrect. Monitoring isn't part of the initial planning phase."
 
   - content: "Which areas should be assessed during the planning phase of a Windows deployment?"
 
@@ -58,7 +58,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. These six areas are assessed during planning to evaluate readiness and uncover gaps."
 
-    - content: "Networking hardware and third-party tools only"
+    - content: "Networking hardware and non-Microsoft tools only"
       isCorrect: false
       explanation: "Incorrect. Planning includes organizational and operational considerations beyond hardware and tools."
 
@@ -90,7 +90,7 @@ quiz:
 
     choices:
 
-    - content: "They are created once and not updated"
+    - content: "They're created once and not updated"
       isCorrect: false
       explanation: "Incorrect. Planning deliverables should evolve over time."
 
@@ -104,5 +104,4 @@ quiz:
 
     - content: "They replace the need for operational documentation"
       isCorrect: false
-      explanation: "Incorrect. Planning deliverables complement, but do not replace, operational documentation."
-      
+      explanation: "Incorrect. Planning deliverables complement, but don't replace, operational documentation."
