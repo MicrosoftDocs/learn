@@ -22,7 +22,7 @@ Be sure to record pass/fail results along with any remediation steps you identif
 2. Verify product services are started.
 3. Update the application, including both program and definition updates.
 4. Test application core functionality.
-5. Test application extended features, such as system tray context menu options or pop-up blockers. Note that these are example features a product might contain, not a list of features you should include.
+5. Test application extended features, such as system tray context menu options or pop-up blockers. These are merely example features a product might contain, not a list of features you should include.
 
 This is just an overview of general functionality testing. For more detailed guidance on how to test applications with Windows 11, visit the [Windows 11 testing guidelines](/windows/compatibility/windows-11/testing-guidelines).
 
@@ -144,7 +144,7 @@ During pilot deployment, an IT team at Contoso, Inc. identifies several applicat
 
 #### Application: Custom inventory management tool
 
-One of the failed applications is a custom inventory management tool used by warehouse staff. The application supports daily operations, and downtime would disrupt order fulfillment. 
+One of the failed applications is a custom inventory management tool used by warehouse staff. The application supports daily operations, and downtime would disrupt order fulfillment.
 
 - **Classification by impact:** Very important
 - **Deployment decision:** Based on the decision matrix, the team pauses the Windows 11 deployment only for devices used by warehouse employees, while continuing deployment for the rest of the organization. The application owner and operations lead are engaged to investigate the issue, and remediation begins within the current deployment cycle.

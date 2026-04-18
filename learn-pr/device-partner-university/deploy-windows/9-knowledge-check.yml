@@ -1,0 +1,83 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.deploy-windows.knowledge-check
+
+title: Knowledge check
+
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Deploy updates for Windows client and Microsoft 365 apps" module.
+  ms.date: 04/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+  ms.service: windows
+
+durationInMinutes: 5
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What deployment approach is used during the Deploy phase of Windows 11 deployment?"
+    choices:
+    - content: "A ring-based or phased deployment approach"
+      isCorrect: true
+      explanation: "Correct. The Deploy phase uses a ring-based or phased approach to manage risk and validate success as deployment expands."
+    - content: "A single, organization-wide deployment"
+      isCorrect: false
+      explanation: "Incorrect. The Deploy phase does not recommend deploying to the entire organization at once."
+    - content: "Manual deployment on a per-device basis"
+      isCorrect: false
+      explanation: "Incorrect. Deployment is managed through structured deployment rings, not manual per-device deployment."
+    - content: "A deployment approach focused only on new devices"
+      isCorrect: false
+      explanation: "Incorrect. The Deploy phase can address the full Windows environment, not only newly provisioned devices."
+
+
+  - content: "Which six areas are addressed during the Deploy phase?"
+    choices:
+    - content: "Security, networking, identity, storage, backup, and compliance"
+      isCorrect: false
+      explanation: "Incorrect. These areas are important but are not the six areas defined in this module."
+    - content: "Operations, applications, infrastructure, configurations, devices, and users"
+      isCorrect: true
+      explanation: "Correct. The module is structured around these six areas, which collectively support a successful Windows 11 deployment."
+    - content: "Planning, testing, preparation, imaging, support, and training"
+      isCorrect: false
+      explanation: "Incorrect. Planning and preparation occur in earlier phases, not as part of the six Deploy areas."
+    - content: "Hardware, firmware, licensing, procurement, inventory, and disposal"
+      isCorrect: false
+      explanation: "Incorrect. These activities may support deployment, but they are not the six areas outlined in this module."
+
+
+  - content: "Why does the module recommend using pilot and broad deployment phases?"
+    choices:
+    - content: "To delay deployment until all devices are replaced"
+      isCorrect: false
+      explanation: "Incorrect. Deployment proceeds based on readiness and validation, not device replacement schedules."
+    - content: "To limit deployment to a small group permanently"
+      isCorrect: false
+      explanation: "Incorrect. Pilot phases are temporary and designed to inform broader rollout."
+    - content: "To validate readiness and monitor results before expanding deployment"
+      isCorrect: true
+      explanation: "Correct. Pilot and broad deployment phases help validate success criteria and reduce risk before wider rollout."
+    - content: "To avoid the need for monitoring during deployment"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring is a core component of both pilot and broad deployment phases."
+
+
+  - content: "Why is it important to maintain deliverables throughout the Deploy phase?"
+    choices:
+    - content: "To support collaboration, tracking, and reporting across the deployment lifecycle"
+      isCorrect: true
+      explanation: "Correct. Deliverables should be easy to share and update, so they can support collaboration and reporting throughout deployment."
+    - content: "To replace monitoring and management tools"
+      isCorrect: false
+      explanation: "Incorrect. Deliverables support deployment efforts but do not replace technical monitoring tools."
+    - content: "To document the project only after deployment is complete"
+      isCorrect: false
+      explanation: "Incorrect. Documentation should be maintained continuously during deployment, not only at the end."
+    - content: "To eliminate the need for stakeholder communication"
+      isCorrect: false
+      explanation: "Incorrect. Deliverables help support stakeholder communication but do not remove the need for it."

@@ -44,6 +44,7 @@ units:
   - learn.dpu.deploy-windows.configurations
   - learn.dpu.deploy-windows.devices
   - learn.dpu.deploy-windows.users
+  - learn.dpu.deploy-windows.knowledge-check
   - learn.dpu.deploy-windows.summary
 badge:
   uid: learn.dpu.deploy-windows.badge
