@@ -4,51 +4,51 @@ title: "Characteristics and components of a good post-incident review"
 metadata:
   title: "Characteristics and components of a good post-incident review"
   description: "Characteristics and components of a good post-incident review"
-  ms.date: 04/19/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
-durationInMinutes: 3
+  ms.contributors: orthomas-20260417
+durationInMinutes: 4
 content: |
   [!include[](includes/4-components.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What is the primary purpose of a post-incident review?'
+  - content: "What is the primary purpose of a post-incident review?"
     choices:
-    - content: 'To pinpoint who is to blame for the failure.'
+    - content: "To pinpoint who is to blame for the failure."
       isCorrect: false
-      explanation: 'Blaming and shaming does not create an environment conducive to improvement.'
-    - content: 'To create a punch list of items to be repaired.'
+      explanation: "Blaming and shaming doesn't create an environment conducive to improvement."
+    - content: "To create a punch list of items to be repaired."
       isCorrect: false
-      explanation: 'While a secondary goal might be to create a list of action items, the primary purpose is to learn and improve.'
-    - content: 'To learn and improve.'
+      explanation: "While a secondary goal might be to create a list of action items, the primary purpose is to learn and improve."
+    - content: "To learn and improve."
       isCorrect: true
-      explanation: 'Correct.'     
+      explanation: "Correct."     
 
-  - content: 'Is it possible to fire your way to reliability?'
+  - content: "Is it possible to fire your way to reliability?"
     choices:
-    - content: 'Yes'
+    - content: "Yes"
       isCorrect: false
-      explanation: 'It is not possible, and it only leads to an empty team.'
-    - content: 'No'
+      explanation: "It isn't possible, and it only leads to an empty team."
+    - content: "No"
       isCorrect: true
-      explanation: 'Correct.'
+      explanation: "Correct."
 
-  - content: 'What should a post-incident review focus on?'
+  - content: "What should a post-incident review focus on?"
     choices:
-    - content: 'Deficits in process and technology'
+    - content: "Deficits in process and technology"
       isCorrect: false
-      explanation: 'The focus needs to be on all of these items.'
-    - content: 'Better understanding of the system we work within'
+      explanation: "The focus needs to be on all of these items."
+    - content: "Better understanding of the system we work within"
       isCorrect: false
-      explanation: 'The focus needs to be on all of these items.'
-    - content: 'Hearing the different perspectives people have about the same incident.'
+      explanation: "The focus needs to be on all of these items."
+    - content: "Hearing the different perspectives people have about the same incident."
       isCorrect: false
-      explanation: 'The focus needs to be on all of these items.'
-    - content: 'All of these'
+      explanation: "The focus needs to be on all of these items."
+    - content: "All of these"
       isCorrect: true
-      explanation: 'Correct, The focus needs to be on all of these items.'
+      explanation: "Correct, The focus needs to be on all of these items."
