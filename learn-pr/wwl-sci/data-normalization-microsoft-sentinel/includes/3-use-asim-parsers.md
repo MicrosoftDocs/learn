@@ -40,7 +40,8 @@ _Im_Dns
 | summarize count() by SrcIpAddr, bin(TimeGenerated,15m)
 ```
 
-The following table lists key unifying parsers. For the complete current list, see [ASIM parsers overview](https://learn.microsoft.com/azure/sentinel/normalization-parsers-overview).
+The following table lists key unifying parsers. For the complete current list, see [ASIM parsers overview]
+(/azure/sentinel/normalization-parsers-overview)
 
 | Schema | Built-in unifying parser |
 | :--- | :--- |

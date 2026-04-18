@@ -13,7 +13,7 @@ Azure Monitor supports several types of data collection rules. Common types incl
 - **Workspace transformation DCR**. Used with a Log Analytics workspace to apply ingestion-time transformations to workflows that don't currently support DCRs directly.
 
 > [!NOTE]
-> For the current complete list of DCR types and supported workflows, see [Data collection rules in Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview).
+> For the current complete list of DCR types and supported workflows, see [Data collection rules in Azure Monitor](/azure/azure-monitor/essentials/data-collection-rule-overview).
 
 
 ## Transformations
