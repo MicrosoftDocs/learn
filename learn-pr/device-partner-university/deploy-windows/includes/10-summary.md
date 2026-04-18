@@ -1,4 +1,4 @@
-In this module, you learned how to deploy Windows 11 across your organization, building on the strategic work completed in the Plan and Prepare phases. We guided you through the Deploy phase using a phased or ring-based approach, covering six key areas of your environment: Operations, Applications, Infrastructure, Configurations, Devices, and Users.
+In this module, you learned how to deploy Windows 11 across your organization, building on the strategic work completed in the Plan and Prepare phases. We guided you through the Deploy phase using a phased or ring-based approach, covering six key areas of your environment: operations, applications, infrastructure, configurations, devices, and users.
 
 By completing the tasks and deliverables outlined in this module, you should now be able to:
 
