@@ -1,36 +1,37 @@
-You need to designate and configure a Linux machine to forward the logs from your security solution to your Microsoft Sentinel workspace. This machine can be physical or virtual in your on-premises environment, an Azure VM, or a VM in another cloud. Using the link provided, you'll run a script on the designated machine that performs the following tasks:
+You need to designate and configure a Linux machine to forward logs from your security solution to your Microsoft Sentinel workspace. This machine can be physical or virtual in your on-premises environment, an Azure VM, or a VM in another cloud.
 
-Installs the Log Analytics agent for Linux (also known as the OMS agent) and configures it for the following purposes:
+The **Common Event Format (CEF) via AMA** connector uses a **Data Collection Rule (DCR)** to configure the **Azure Monitor Agent (AMA)** on your Linux forwarder. AMA handles both agent installation and log forwarding — no manual script installation is required.
 
-- Listening for CEF messages from the built-in Linux Syslog daemon on TCP port 25226
+When configured, AMA on the Linux forwarder:
 
-- Sending the messages securely over TLS to your Microsoft Sentinel workspace, where they're parsed and enriched
+- Listens for CEF messages from the built-in Linux Syslog daemon on TCP port 514
+- Forwards CEF messages to your Microsoft Sentinel workspace, where they're parsed and enriched
 
-Configures the built-in Linux Syslog daemon (rsyslog.d/syslog-ng) for the following purposes:
+## Set up the CEF via AMA connector
 
-- Listening for Syslog messages from your security solutions on TCP port 514
+To configure the connector:
 
-- Forwarding only the messages it identifies as CEF to the Log Analytics agent on localhost using TCP port 25226
+1. In the Microsoft Sentinel portal, select **Data connectors**.
 
-## Run the deployment script
+1. Search for and select **Common Event Format (CEF) via AMA**.
 
-To view the connector page:
+1. Select **Open connector page** on the details pane.
 
-1. Select Data connectors page.
+1. Under **Configuration**, select **+Create data collection rule**.
 
-1. Select Common Event Format (CEF).
+1. On the **Basic** tab, enter a name for the data collection rule, then select your subscription and resource group.
 
-1. select the Open connector page on the preview pane.
+1. On the **Resources** tab, select the Linux machine you designated as the log forwarder.
 
-1. Verify that you have the appropriate permissions as described under Prerequisites.
+1. On the **Collect** tab, confirm the CEF facility and log level settings.
 
-1. Copy the "sudo wget …"  command and run with elevated permissions on the dedicated Linux VM.
+1. Select **Review + create**, then select **Create**. AMA is automatically installed on the Linux forwarder if it isn't already present.
 
-:::image type="content" source="../media/common-event-format-connector.png" alt-text="Screenshot of the C E F Connector Page." lightbox="../media/common-event-format-connector.png":::
+1. Configure each network appliance to forward its syslog events to your Linux forwarder on UDP or TCP port 514.
 
-### Using the same machine to forward both plain Syslog and common event format messages
+:::image type="content" source="../media/common-event-format-connector.png" alt-text="Screenshot of the Common Event Format via AMA connector page in Microsoft Sentinel." lightbox="../media/common-event-format-connector.png":::
 
-If you plan to use this log forwarder machine to forward Syslog messages as CEF, then to avoid the duplication of events to the Syslog and CommonSecurityLog tables:
+## Use the same machine to forward both plain Syslog and CEF messages
 
-On each source machine that sends logs to the forwarder in CEF format, you must edit the Syslog configuration file to remove the facilities used to send CEF messages.
+If you plan to use this log forwarder machine to forward both plain Syslog messages and CEF messages, edit the Syslog configuration file on each source machine that sends logs in CEF format. Remove the facilities used to send CEF messages to avoid duplicate events in the Syslog and CommonSecurityLog tables.
 

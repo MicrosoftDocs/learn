@@ -7,15 +7,17 @@ fallen into during the post-incident review process and how to avoid them.
 
 ## Trap 1: Attribution to "human error"
 
-You might recall that "pilot error" (also known as "human error") was the
-conclusion the initial investigators reached in the B-17 story we started
-in the module introduction. Let's return to that story.
+You might recall that "pilot error," a specific form of the more general
+"human error" label, was the conclusion the initial investigators reached
+in the B-17 story we started in the module introduction. Let's return to
+that story.
 
 In that intro, we suggested that the conclusions reached might be
 dissatisfying to you. They were definitely dissatisfying to Alphonse
-Chapanis, a military psychologist who was asked by the US Air Force to
+Chapanis, a military psychologist who was asked by the US Army Air Forces
+(USAAF) to
 investigate these incidents. He noticed, among other things, that these
-accidents were unique to the B- 17 and a small amount of other aircraft.
+accidents were unique to the B-17 and a small number of other aircraft.
 There were thousands of C-47 transport aircraft in use in Western Europe at
 the same time, yet no C-47 had ever experienced a similar incident.
 
@@ -23,7 +25,7 @@ So he interviewed pilots, and based on what he heard from them, he
 went and looked at the B-17 cockpits. What he saw there were two switches:
 the gears switch and the flaps switch. The switches were about 3 inches
 apart from one another in the cockpit. Their mode of operation was
-identical. They were simply too easy to confuse for one another, and that's
+identical. They were too easy to confuse for one another, and that's
 what had happened in these incidents. If you've just landed a plane, your
 flaps are going to be extended, and before you park, you're going to
 retract them. And so Chapanis tried something different.
@@ -32,12 +34,13 @@ He glued a little rubber wheel to the switch for the gear, and a hard
 angular "flap" to the switch for the flaps, and sure enough the accidents
 stopped happening.
 
-He's now known as one of the founders of the field of ergonomics—the study
-of design factors in human performance—and he had a simple
+He's now known as one of the founders of the field of ergonomics (the study
+of design factors in human performance), and he had a simple
 observation: the design of the cockpit could affect the likelihood of
-human error. This approach has gone on to inform the design of all modern
-aircraft. The two switches in current airplanes are now very distinct, as
-mandated by federal law in the US.
+human error. This approach went on to influence the design of modern
+aircraft. For example, in the United States, transport-category airplane
+regulations require the landing-gear control to be wheel-shaped and
+distinct from the flap control.
 
 So, why did we tell you this story?
 
@@ -45,7 +48,7 @@ Humans make mistakes. However, _human error_ isn't a cause; it's a
 symptom. When human error is deemed to be the reason for a failure, people
 stop there instead of further analyzing the incident.
 
-System design, organizational context, and personal context all affect
+System design, organizational context, and personal context all influence
 when, how, and with what impact people make mistakes. "Human error" is a
 label that causes you to quit investigating at precisely the moment when
 you're about to discover something interesting about your system.
@@ -141,8 +144,7 @@ deployments, no control plane operations, nothing.
 
 Do you think your service would still be running as expected after a day?
 After a week? After a month? After a year? How long could you realistically
-expect your service to keep running without human intervention? In the vast
-majority of cases, it wouldn't.
+expect your service to keep running without human intervention? In most cases, it wouldn't.
 
 This thought exercise leads us to an important conclusion:
 
