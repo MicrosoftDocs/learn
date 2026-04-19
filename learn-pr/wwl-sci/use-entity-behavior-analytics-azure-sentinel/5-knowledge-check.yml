@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Data elements"
       isCorrect: true
-      explanation: "Correct.  The data elements include such things as Accounts, IP Addresses, Hosts"
+      explanation: "Correct. The data elements include such things as Accounts, IP Addresses, Hosts"
     - content: "Tables"
       isCorrect: false
-      explanation: "Incorrect.  Data elements are derived from the fields in tables."
+      explanation: "Incorrect. Data elements are derived from the fields in tables."
     - content: "Alerts"
       isCorrect: false
-      explanation: "Incorrect.  Alerts can be connected to Entities."
+      explanation: "Incorrect. Alerts can be connected to Entities."
   - content: "In the timeline of the Entity page, what type of items are an aggregation of notable events relating to the entity?"
     choices:
     - content: "Alerts"
       isCorrect: false
-      explanation: "Incorrect.  Activities are the aggregation of events."
+      explanation: "Incorrect. Activities are the aggregation of events."
     - content: "Activities"
       isCorrect: true
       explanation: "Correct. Activities are the aggregation of events."
     - content: "Bookmarks"
       isCorrect: false
-      explanation: "Incorrect.  Activities are the aggregation of events."
-  - content: "When you're viewing the investigation graph, what option will show Entity Behavior information?"
+      explanation: "Incorrect. Activities are the aggregation of events."
+  - content: "When you're viewing the investigation graph, what option shows Entity Behavior information?"
     choices:
     - content: "Entities"
       isCorrect: false
-      explanation: "Incorrect.  Insights will display Entity Behavior information."
+      explanation: "Incorrect. Insights display Entity Behavior information."
     - content: "Timeline"
       isCorrect: false
-      explanation: "Incorrect.  Insights will display Entity Behavior information."
+      explanation: "Incorrect. Insights display Entity Behavior information."
     - content: "Insights"
       isCorrect: true
-      explanation: "Correct.  Insights will display Entity Behavior information."
+      explanation: "Correct. Insights display Entity Behavior information."
