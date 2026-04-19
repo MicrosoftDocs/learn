@@ -76,7 +76,7 @@ With these mappings, clients see `id`, `name`, `price`, and `stockQuantity` in t
 
 ## Enable caching for improved performance
 
-[Data API Builder caching](/azure/data-api-builder/caching?azure-portal=true) reduces database load by storing query results temporarily. You can configure caching at both the global level (in the runtime section) and per-entity for fine-grained control.
+[Data API Builder caching](/azure/data-api-builder/concept/cache/level-1) reduces database load by storing query results temporarily. You can configure caching at both the global level (in the runtime section) and per-entity for fine-grained control.
 
 ```json
 "Product": {
