@@ -20,7 +20,7 @@ In this module, you learned how to:
 
 - [Data API Builder documentation](/azure/data-api-builder/?azure-portal=true)
 - [Data API Builder configuration reference](/azure/data-api-builder/reference-configuration?azure-portal=true)
-- [Deploy Data API Builder to Azure Container Apps](/azure/data-api-builder/deployment/how-to-host-container-apps?azure-portal=true)
+- [Deploy Data API Builder to Azure Container Apps](/azure/data-api-builder/deployment/azure-container-apps)
 - [Azure Functions SQL trigger binding](/azure/azure-functions/functions-bindings-azure-sql-trigger?azure-portal=true)
 - [Change Data Capture in SQL Server](/sql/relational-databases/track-changes/about-change-data-capture-sql-server?azure-portal=true)
 - [Application Insights overview](/azure/azure-monitor/app/app-insights-overview?azure-portal=true)
