@@ -106,7 +106,7 @@ During any phase of testing, if you run into compatibility issues that you’re 
 
 With enrollment in the [App Assure](/windows/compatibility/app-assure) service, Microsoft will help you remedy any application issues with Windows 11 at no extra cost. It’s included with your purchased plan for Microsoft Entra, Microsoft Intune, Microsoft 365 Apps, and a wide variety of other [eligible plans](/microsoft-365/fasttrack/eligibility).
 
-Check out [Microsoft App Assure](https://fasttrack.microsoft.com/dl/daa) and sign in to submit your request for assistance from a dedicated App Assure Manager. If you experience any issues while submitting your request, contact ACHELP@microsoft.com and a team member will reach out to you.
+Check out [Microsoft App Assure](https://fasttrack.microsoft.com/dl/daa) and sign in to submit your request for assistance from a dedicated App Assure Manager.
 
 > [!NOTE]
 > ***Recommended deliverable***
