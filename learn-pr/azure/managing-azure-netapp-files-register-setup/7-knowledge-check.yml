@@ -12,24 +12,24 @@ durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
   quiz:
-  questions:
-  - content: "Which of the following is required to register for Azure NetApp Files?"
-    choices:
+  Questions:
+  - Content: "Which of the following is required to register for Azure NetApp Files?"
+    Choices:
     - content: "An Azure subscription"
       isCorrect: true
       explanation: "Correct: An Azure subscription is required to register Azure NetApp Files."
     - content: "A Microsoft 365 subscription"
       isCorrect: false
       explanation: "Incorrect: An Azure subscription is required to register Azure NetApp Files."
-      content: "An Azure Active Directory (AAD) subscription"
+      Content: "An Azure Active Directory subscription"
       isCorrect: false
       explanation: "Incorrect: An Azure subscription is required to register Azure NetApp Files."
-      content: "An Azure Logic Apps subscription"
+      Content: "An Azure Logic Apps subscription"
       isCorrect: false
       explanation: "Incorrect: An Azure subscription is required to register Azure NetApp Files."
   
-  - content: "Which of the following statements accurately describes the purpose of delegating a subnet for Azure NetApp Files?"
-    choices:
+  - Content: "Which of the following statements accurately describes the purpose of delegating a subnet for Azure NetApp Files?"
+    Choices:
     - content: "It allows Azure NetApp Files to automatically scale storage capacity based on demand."
       isCorrect: false
       explanation: "Incorrect: Delegated subnet restricts network traffic and provides secured access control for Azure NetApp Files."
