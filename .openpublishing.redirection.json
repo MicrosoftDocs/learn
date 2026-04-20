@@ -65430,6 +65430,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/1-introduction.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/2-create-instance.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/3-configure-server.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/4-build-spring-boot-microservice.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/5-build-gateway.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/6-configure-distributed-tracing.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/7-scale-spring-boot-microservices.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/9-conclusion.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/index.yml",
+      "redirect_url": "/azure/container-apps/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/index.md",
       "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
       "redirect_document_id": false

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.troubleshooting-surface-portal-access.validate-portal-visibility-and-prerequisites
+title: Validate portal visibility and prerequisites
+metadata:
+  title: Validate Portal Visibility And Prerequisites
+  description: This content is part of the "Troubleshooting Surface Portal access issues" module.
+  ms.date: 04/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-validate-portal-visibility-and-prerequisites.md)]

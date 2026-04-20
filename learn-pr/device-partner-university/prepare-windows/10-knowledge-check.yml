@@ -1,0 +1,107 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.prepare-windows.knowledge-check
+
+title: Knowledge check
+
+metadata:
+
+  title: Knowledge Check
+
+  description: This content is part of the "Prepare to deploy updates for Windows client and Microsoft 365 apps" module.
+
+  ms.date: 04/17/2026
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit
+
+durationInMinutes: 5
+
+quiz:
+
+  title: Check your knowledge
+
+  questions:
+
+  - content: "What is the primary focus of the Prepare phase in the Windows 11 deployment process?"
+
+    choices:
+
+    - content: "Identifying high-level risks and defining success criteria"
+      isCorrect: false
+      explanation: "Incorrect. Identifying risks and success criteria is the focus of the Plan phase."
+
+    - content: "Validating readiness and remediating gaps identified during planning"
+      isCorrect: true
+      explanation: "Correct. The Prepare phase focuses on validating readiness and addressing gaps discovered during planning."
+
+    - content: "Deploying Windows 11 to all devices"
+      isCorrect: false
+      explanation: "Incorrect. Broad deployment occurs in a later phase, not during preparation."
+
+    - content: "Monitoring compliance after deployment is complete"
+      isCorrect: false
+      explanation: "Incorrect. Preparation focuses on readiness and remediation, not post-deployment compliance monitoring."
+
+  - content: "Which areas should be addressed during the Prepare phase of a Windows 11 deployment?"
+
+    choices:
+
+    - content: "Only devices and users"
+      isCorrect: false
+      explanation: "Incorrect. Preparation involves more than just devices and users."
+
+    - content: "Networking hardware and security appliances only"
+      isCorrect: false
+      explanation: "Incorrect. Preparation includes organizational, operational, and technical areas."
+
+    - content: "Operations, applications, infrastructure, configurations, devices, and users"
+      isCorrect: true
+      explanation: "Correct. All six areas should be prepared and validated before deployment."
+
+    - content: "Deployment rings only"
+      isCorrect: false
+      explanation: "Incorrect. Deployment rings are part of preparation, but not the only focus."
+
+  - content: "Why are recommended tools and reports used during the Prepare phase?"
+
+    choices:
+
+    - content: "To replace deliverables created during the Plan phase"
+      isCorrect: false
+      explanation: "Incorrect. Tools and reports in the Prepare phase don't replace deliverables created during the Plan phase."
+
+    - content: "To validate readiness and support remediation efforts"
+      isCorrect: true
+      explanation: "Correct. Tools and reports help confirm readiness and guide remediation of identified gaps."
+
+    - content: "To deploy Windows 11 automatically"
+      isCorrect: false
+      explanation: "Incorrect. Deployment isn't automatically initiated in the Prepare phase."
+
+    - content: "To eliminate the need for testing"
+      isCorrect: false
+      explanation: "Incorrect. Testing remains an important part of preparation."
+
+  - content: "What is the purpose of using deployment phases and rings during preparation?"
+
+    choices:
+
+    - content: "To safely begin deployment with controlled, staged rollouts"
+      isCorrect: true
+      explanation: "Correct. Deployment phases and rings help reduce risk by validating updates with smaller groups first."
+
+    - content: "To delay deployment indefinitely"
+      isCorrect: false
+      explanation: "Incorrect. The goal is controlled progress, not delay."
+
+    - content: "To replace remediation activities"
+      isCorrect: false
+      explanation: "Incorrect. Remediation must occur before and alongside phased deployment."
+
+    - content: "To deploy updates to all users at the same time"
+      isCorrect: false
+      explanation: "Incorrect. Phases and rings are designed to limit risk, not accelerate full deployment."
