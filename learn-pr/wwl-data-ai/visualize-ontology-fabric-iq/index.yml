@@ -18,7 +18,7 @@ abstract: |
   - Filter and explore ontology data using the Query builder with filters and components
 prerequisites: |
   Before starting this module, you should have:
-  - Completed the [Create an ontology (preview) with Microsoft Fabric IQ](/training/modules/create-ontology-with-fabric-iq/) module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
+  - Completed the [Create an ontology with Microsoft Fabric IQ](/training/modules/create-ontology-with-fabric-iq/) module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
   - Familiarity with Microsoft Fabric workspaces and navigation
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

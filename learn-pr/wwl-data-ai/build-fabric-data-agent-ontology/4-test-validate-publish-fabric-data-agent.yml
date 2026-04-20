@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-fabric-data-agent-ontology.test-validate-publish-fabric-data-agent
+title: Test, validate, and publish a Fabric data agent
+metadata:
+  title: Test, Validate, and Publish a Fabric Data Agent
+  description: Learn how to test a Fabric data agent with natural language questions, examine the generated GQL queries and reasoning steps, refine agent instructions, and publish and share the agent with colleagues.
+  ms.date: 04/17/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-test-validate-publish-fabric-data-agent.md)]

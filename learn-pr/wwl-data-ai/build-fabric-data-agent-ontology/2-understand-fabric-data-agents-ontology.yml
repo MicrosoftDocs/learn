@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-fabric-data-agent-ontology.understand-fabric-data-agents-ontology
+title: Understand Fabric data agents and ontology as a data source
+metadata:
+  title: Understand Fabric Data Agents and Ontology as a Data Source
+  description: Learn what a Fabric data agent is, how it uses an ontology as a data source to map natural language questions to entity types and relationships, and why GQL is the query language used for ontology data sources.
+  ms.date: 04/17/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-fabric-data-agents-ontology.md)]
