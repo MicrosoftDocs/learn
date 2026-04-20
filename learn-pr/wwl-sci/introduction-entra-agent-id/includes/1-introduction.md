@@ -15,6 +15,11 @@ Each of these agents needs an identity to authenticate and access resources secu
 
 Microsoft Entra Agent ID addresses these challenges by providing specialized identity types designed for AI agents.
 
+## Availability
+
+> [!NOTE]
+> Microsoft Entra Agent ID is part of **Microsoft Agent 365**, which reaches general availability on May 1, 2026.
+
 ## Content description
 
 In this module, you learn about Microsoft Entra Agent ID and how it differs from other identity types like service principals and managed identities. You explore which Microsoft products automatically create agent identities and how to view and manage them through the Microsoft Entra admin center. You also learn about the roles required to manage agent identities and how to query them programmatically using Microsoft Graph.

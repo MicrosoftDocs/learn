@@ -1,18 +1,22 @@
-Visual Studio App Center supports Microsoft Entra Conditional Access, an advanced feature of Microsoft Entra ID that enables you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like group, device type, location, and role.
+Conditional Access is an advanced capability of Microsoft Entra ID that enables you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on signals like group membership, device compliance, network location, and sign-in risk.
 
-## Setting up Conditional Access
+## Create a Conditional Access policy
 
-This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [What is Conditional Access?](/entra/identity/conditional-access/overview).
+This is an abbreviated guide to creating a Conditional Access policy. Full documentation is available at [What is Conditional Access?](/entra/identity/conditional-access/overview).
 
-In the Azure portal, open your Active Directory tenant, then open the **Security** settings, and select **Conditional Access**.
+To create a new policy:
 
-In **Conditional Access** settings, select **New policy** to create a policy.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Conditional Access Administrator.
+2. Browse to **Protection** > **Conditional Access**.
+3. Select **+ New policy**.
+4. Give the policy a meaningful name.
+5. Configure **Assignments** — select the users, groups, or roles the policy applies to.
+6. Configure **Target resources** — select the cloud apps or user actions the policy covers.
+7. Configure any additional **Conditions** such as sign-in risk, device platform, or location.
+8. Under **Access controls**, configure the **Grant** or **Session** controls to apply.
+9. Set **Enable policy** to **Report-only** to test impact before enabling, then select **Create**.
 
-:::image type="content" source="../media/conditional-access-2.png" alt-text="Screenshot of the Microsoft Entra Conditional Access screen, listing policies that currently exist.":::
-
-In **New policy** settings, select **Cloud apps or actions** and select **Visual Studio App Center** as the target of the policy. Then select the other conditions that you want to apply, enable the policy, and select **Create** to save it.
-
-:::image type="content" source="../media/conditional-access-1.png" alt-text="Screenshot of the Microsoft Entra Conditional Access: Cloud apps or actions page for configuration.":::
+Microsoft recommends starting all new policies in report-only mode. Monitor sign-in logs to verify expected behavior before switching the policy to **On**.
 
 ## Sign-in risk-based Conditional Access
 
@@ -36,13 +40,16 @@ Securing when and how users register for multifactor authentication and self-ser
 
 The following policy applies to all selected users who attempt to register using the combined registration experience, and it blocks access unless they are connecting from a location marked as a trusted network.
 
-1. In the **Microsoft Entra admin center**, browse to **Identity**, then **Protection**, and then **Conditional Access**.
+1. In the **Microsoft Entra admin center**, browse to **Protection**, then **Conditional Access**.
 2. Select **+ Create new policy**.
 3. In **Name**, Enter a Name for this policy. For example, **Combined Security Info Registration on Trusted Networks**.
 4. Under **Assignments**, select **Users and groups**, and select the users and groups you want this policy to apply to.
     
    1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
    2. Select **Done**.
+
+   > [!NOTE]
+   > If you were targeting AI agents instead of users, you would select **Workload identities** in the Assignments area and choose your agent identity from Microsoft Entra Agent ID at this step. The rest of the policy structure remains the same.
 
 5.  Under **Cloud apps or actions**, select **User actions**, check **Register security information**.
 6.  Under **Conditions**, select **Locations**.
@@ -80,7 +87,7 @@ With the location condition in Conditional Access, you can control access to you
 ### Define locations
 
 1. Sign in to the **Microsoft Entra admin portal** as a Security Administrator, or Conditional Access Administrator.
-2. Browse to **Identity**, then **Protection**, then **Conditional Access**, and then **Named locations**.
+2. Browse to **Protection**, then **Conditional Access**, then **Named locations**.
 3. Choose **New location**.
 4. Give your location a name.
 5. Choose **IP ranges** if you know the specific externally accessible IPv4 address ranges that make up that location or **Countries/Regions**.
@@ -94,7 +101,7 @@ With the location condition in Conditional Access, you can control access to you
 ### Create a Conditional Access policy
 
 1. Sign in to the **Microsoft Entra admin center** as a Security Administrator, or Conditional Access Administrator.
-2. Browse to **Identity**, then **Protection**, and then **Conditional Access**.
+2. Browse to **Protection**, then **Conditional Access**.
 3. Select **+ Create new policy**.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 5. Under **Assignments**, select **Users and groups.**
@@ -131,7 +138,7 @@ This policy compliance information is forwarded to Microsoft Entra ID where Cond
 The following steps will help create a Conditional Access policy to require devices accessing resources be marked as compliant with your organization's Intune compliance policies.
 
 1. Sign in to the **Microsoft Entra admin center** as a Security Administrator, or Conditional Access Administrator.
-2. Browse to **Identity**, then **Protection**, and then **Conditional Access**.
+2. Browse to **Protection**, then **Conditional Access**.
 3. Select **+ Create new policy**.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 5. Under **Assignments**, select **Users and groups.**
@@ -177,6 +184,8 @@ Conditional Access policies are powerful tools. We recommend excluding the follo
  - **Service accounts** and **service principals**, such as the Microsoft Entra Connect Sync Account. Service accounts are non-interactive accounts that are not tied to any particular user. They are normally used by back-end services allowing programmatic access to applications, but they are also used to sign in to systems for administrative purposes. Service accounts like these should be excluded since MFA can't be completed programmatically. Calls made by service principals are not blocked by Conditional Access.
     
    - If your organization has these accounts in use in scripts or code, consider replacing them with managed identities. As a temporary workaround, you can exclude these specific accounts from the baseline policy.
+
+ - **Agent identities**: AI agents registered in Microsoft Entra Agent ID can be targeted by or excluded from Conditional Access policies just like service principals. Ensure any trusted agents that require uninterrupted access are explicitly excluded, and review agent-targeted policies alongside your workload identity policies.
 
 ## Conditional Access Terms of Use (TOU)
 

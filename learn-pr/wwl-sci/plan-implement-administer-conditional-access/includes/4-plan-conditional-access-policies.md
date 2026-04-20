@@ -34,6 +34,8 @@ Some common questions about assignments, access controls, and session controls:
  - Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or Microsoft Entra hybrid joined devices?
  - Session controls: Do you want to control access to cloud apps by implementing requirements such as app enforced permissions or Conditional Access App Control?
 
+With the introduction of Microsoft Entra Agent ID, agent identities are now first-class principals in Microsoft Entra ID. Like users or service principals, agents can be targeted by Conditional Access policies — allowing you to apply the same Zero Trust controls to AI agents that you apply to human identities. You treat agent identities similarly to how you treat workload identities: scope policies by identity type, enforce appropriate access controls, and exclude emergency or trusted agents where necessary.
+
 ### Access token issuance
 
 Access tokens enable clients to securely call protected web APIs, and they're used by web APIs to perform authentication and authorization. Per the OAuth specification, access tokens are opaque strings without a set format. Some identity providers (IDPs) use GUIDs; others use encrypted blobs. The Microsoft identity platform uses a variety of access token formats depending on the configuration of the API that accepts the token.
