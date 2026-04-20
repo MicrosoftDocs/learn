@@ -1,4 +1,3 @@
-# Exercise – Register and Set Up Azure NetApp Files
 
 In this exercise, you will register for Azure NetApp Files services, create a NetApp account, delegate a subnet, and request region access to Azure NetApp Files.
 

@@ -11,3 +11,34 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
+  quiz:
+  questions:
+  - content: "Which of the following is required to register for Azure NetApp Files?"
+    choices:
+    - content: "An Azure subscription"
+      isCorrect: true
+      explanation: "Correct: An Azure subscription is required to register Azure NetApp Files."
+    - content: "A Microsoft 365 subscription"
+      isCorrect: false
+      explanation: "Incorrect: An Azure subscription is required to register Azure NetApp Files."
+      content: "An Azure Active Directory (AAD) subscription"
+      isCorrect: false
+      explanation: "Incorrect: An Azure subscription is required to register Azure NetApp Files."
+      content: "An Azure Logic Apps subscription"
+      isCorrect: false
+      explanation: "Incorrect: An Azure subscription is required to register Azure NetApp Files."
+  
+  - content: "Which of the following statements accurately describes the purpose of delegating a subnet for Azure NetApp Files?"
+    choices:
+    - content: "It allows Azure NetApp Files to automatically scale storage capacity based on demand."
+      isCorrect: false
+      explanation: "Incorrect: Delegated subnet restricts network traffic and provides secured access control for Azure NetApp Files."
+    - content: "It provides secure access control for Azure NetApp Files by restricting network traffic to the assigned subnet."
+      isCorrect: true
+      explanation: "Correct: You can delegate a subnet to Azure NetApp Files for secured access control for Azure NetApp Files by restricting network traffic to the assigned subnet. "
+    - content: "It grants Azure NetApp Files permission to manage network resources within a specific subnet."
+      isCorrect: false
+      explanation: "Incorrect: Delegated subnet restricts network traffic and provides secured access control for Azure NetApp Files."
+    - content: "It enables Azure NetApp Files to integrate with Azure Active Directory for user authentication."
+      isCorrect: false
+      explanation: "Incorrect: Delegated subnet restricts network traffic and provides secured access control for Azure NetApp Files."

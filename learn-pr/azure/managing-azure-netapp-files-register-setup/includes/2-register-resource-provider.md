@@ -1,5 +1,3 @@
-
-
 To use the Azure NetApp Files service, you need to register the NetApp Resource Provider.
 
 You can do that using the Azure Cloud Shell from the Azure portal.

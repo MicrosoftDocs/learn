@@ -1,5 +1,3 @@
-# Create a NetApp account
-
 Creating a NetApp account enables you to set up a capacity pool so that you can create a volume. You use the Azure NetApp Files pane to create a new NetApp account.
 
 - A NetApp account serves as an administrative grouping of the constituent capacity pools.

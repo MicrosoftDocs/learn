@@ -1,4 +1,3 @@
-# Delegate a subnet to Azure NetApp Files
 
 Azure NetApp Files volumes are designed to be contained in a special purpose subnet called a delegated subnet within your Azure Virtual Network. You must delegate a subnet to Azure NetApp Files for secured access control by restricting network traffic to the assigned subnet. You can access the volumes directly from within Azure over VNet peering or from on-premises over a Virtual Network Gateway. When you create a volume, you need to specify the delegated subnet.
 

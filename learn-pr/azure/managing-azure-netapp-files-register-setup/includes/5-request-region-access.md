@@ -1,4 +1,3 @@
-# Request region access for Azure NetApp Files
 
 In some special situations, you might need to explicitly request access to a region. This section explains how to submit a request.
 
