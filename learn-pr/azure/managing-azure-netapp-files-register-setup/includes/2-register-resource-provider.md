@@ -1,4 +1,4 @@
-# Register for Azure Resource Provider
+
 
 To use the Azure NetApp Files service, you need to register the NetApp Resource Provider.
 

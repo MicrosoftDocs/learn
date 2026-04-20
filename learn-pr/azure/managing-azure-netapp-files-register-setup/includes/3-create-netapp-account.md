@@ -19,4 +19,4 @@ From the Azure NetApp Files pane, you can select **+ Add** to create a new NetAp
 - **Resource group**: Use an existing resource group or create a new one.
 - **Location**: Select the region where you want the account and its child resources to be located.
 
-![This image shows the New NetApp account blade in the Azure Portal with configuration fields including Name: account2 (validated with a green checkmark), Subscription: test, Resource group: test (using Use existing option), and Location: East US. The form includes a Pin to dashboard checkbox, Create button, and Automation options link.](../media/managing-azure-netapp-files-register-setup/image002.png)
+    ![This image shows the New NetApp account blade in the Azure Portal with configuration fields including Name: account2 (validated with a green checkmark), Subscription: test, Resource group: test (using Use existing option), and Location: East US. The form includes a Pin to dashboard checkbox, Create button, and Automation options link.](../media/managing-azure-netapp-files-register-setup/image002.png)
