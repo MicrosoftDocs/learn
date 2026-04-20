@@ -2,7 +2,7 @@
 uid: learn.managing-azure-netapp-files-register-setup.1-introduction
 title: Introduction
 metadata:
-  title: Introduction
+  ###title: Introduction
   description: Introduction to registering and setting up Azure NetApp Files.
   ms.date: 03/25/2026
   author: rmishras
