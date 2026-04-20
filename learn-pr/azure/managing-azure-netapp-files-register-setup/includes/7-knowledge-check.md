@@ -2,7 +2,7 @@
 
 Choose the best response for each of the questions below. Then select "Check your answers."
 
-## Question 1
+### Question 1
 
 Which of the following is required to register for Azure NetApp Files?
 
@@ -11,7 +11,7 @@ Which of the following is required to register for Azure NetApp Files?
 - Incorrect: An Azure Active Directory (AAD) subscription
 - Incorrect: An Azure Logic Apps subscription
 
-## Question 2
+### Question 2
 
 Which of the following statements accurately describes the purpose of delegating a subnet for Azure NetApp Files?
 
