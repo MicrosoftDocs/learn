@@ -10,7 +10,7 @@ SQL platforms offer multiple approaches for tracking data changes, each suited t
 
 - [Change Tracking](/sql/relational-databases/track-changes/about-change-tracking-sql-server?azure-portal=true) provides a lighter-weight alternative that records which rows changed without capturing the actual values. Applications query change information to determine what data needs synchronization.
 
-- [Change Event Streaming (CES)](/sql/relational-databases/track-changes/about-change-event-streaming-sql-server?azure-portal=true) is a newer feature that pushes changes to event streams without polling. It integrates directly with Azure Event Hubs for high-throughput scenarios.
+- [Change Event Streaming (CES)](/sql/relational-databases/track-changes/change-event-streaming/overview) is a newer feature that pushes changes to event streams without polling. It integrates directly with Azure Event Hubs for high-throughput scenarios.
 
 | Feature | CDC | Change Tracking | CES |
 |---------|-----|-----------------|-----|

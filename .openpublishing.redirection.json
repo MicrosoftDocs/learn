@@ -65473,6 +65473,51 @@
       "source_path": "learn-pr/advocates/azure-spring-cloud-workshop/index.yml",
       "redirect_url": "/azure/container-apps/",
       "redirect_document_id": false
-    }                   
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/index.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/3-exercise-analyze-document-code-github-copilot.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/4-exercise-develop-code-features-github-copilot.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/5-exercise-develop-unit-tests-github-copilot.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/6-exercise-refactor-improve-code-github-copilot.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/1-introduction.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/7-knowledge-check.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/2-prepare-development-environment.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/8-summary.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
+    }
   ]
 }
