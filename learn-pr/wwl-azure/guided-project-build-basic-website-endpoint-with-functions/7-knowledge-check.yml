@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What type of trigger allows an Azure Function to respond to web requests?"
+    choices:
+    - content: "Timer trigger"
+      isCorrect: false
+      explanation: "A timer trigger runs on a schedule, not in response to web requests."
+    - content: "HTTP trigger"
+      isCorrect: true
+      explanation: "An HTTP trigger runs the function when it receives an HTTP request, making it suitable for web endpoints."
+    - content: "Blob trigger"
+      isCorrect: false
+      explanation: "A blob trigger fires when a file is added or updated in Blob Storage, not when a web request arrives."
+  - content: "What is the main advantage of using Azure Functions for a simple website endpoint?"
+    choices:
+    - content: "It provides a dedicated virtual machine for the endpoint."
+      isCorrect: false
+      explanation: "Azure Functions is a serverless service. You do not manage or provision virtual machines."
+    - content: "You do not need to manage any infrastructure."
+      isCorrect: true
+      explanation: "Azure Functions is serverless, meaning Azure handles all infrastructure. You focus only on the code."
+    - content: "It automatically creates a custom domain name."
+      isCorrect: false
+      explanation: "Azure Functions provides a default endpoint URL. Custom domains require separate configuration."
+  - content: "What Azure service lets you monitor function invocations and view execution logs?"
+    choices:
+    - content: "Azure Monitor metrics"
+      isCorrect: false
+      explanation: "Azure Monitor metrics can show high-level data, but detailed invocation logs for Functions come from Application Insights."
+    - content: "Azure Activity Log"
+      isCorrect: false
+      explanation: "The Activity Log tracks management operations on resources, not individual function invocations."
+    - content: "Application Insights"
+      isCorrect: true
+      explanation: "Application Insights provides detailed telemetry including invocation logs, response codes, and execution times for Azure Functions."

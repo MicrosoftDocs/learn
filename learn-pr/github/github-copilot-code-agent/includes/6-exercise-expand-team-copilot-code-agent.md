@@ -1,6 +1,6 @@
 In this exercise, you will:
 
-- Learn how to enable the Copilot coding agent on your repository.
+- Learn how to enable the Copilot Cloud Agent  on your repository.
 - Assign an issue and understand your agent's progress.
 - Collaborate with your agent on code changes.
 - Customize and optimize your agent's workspace.

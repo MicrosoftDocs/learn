@@ -162,7 +162,7 @@ GitHub Copilot agents and agentic features:
 - **Agent**: A built-in agent that autonomously evaluates a request, determines which files to edit, plans the work needed, and applies changes to your codebase.
 - **Plan**: A built-in agent that creates a structured, step-by-step implementation plan for a task, which can then be handed off to the Agent for implementation.
 - **Ask**: A built-in agent that answers questions about your codebase, coding topics, and general technology concepts without making changes to your files.
-- **GitHub Copilot coding agent**: An autonomous AI agent that can work on code changes for you by creating a pull request from a GitHub issue or GitHub Copilot Chat prompt.
+- **GitHub Copilot Cloud Agent **: An autonomous AI agent that can work on code changes for you by creating a branch from a GitHub issue or Copilot Chat prompt, exploring the codebase, and drafting changes—while letting you decide if and when to open a pull request.
 - **GitHub Copilot code review**: Provides AI-generated code review suggestions to help you write better code.
 
 By using AI to assist with coding tasks, GitHub Copilot can help you focus on higher-level design and problem-solving, rather than getting bogged down in syntax and implementation details.

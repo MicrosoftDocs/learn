@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-prompt-response-agents
+title: "Design prompt-driven agents using Copilot Studio"
+metadata:
+  title: "Design Prompt-Driven Agents Using Copilot Studio"
+  description: "Learn to design prompt-driven agents with Copilot Studio using NLU boosting, system topics, conditions, and triggers for adaptive responses."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-design-prompt-response-agents.md)]

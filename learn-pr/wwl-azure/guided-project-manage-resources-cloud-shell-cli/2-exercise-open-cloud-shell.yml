@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-open-cloud-shell
+title: Exercise - Open Cloud Shell and explore the environment
+metadata:
+  title: Exercise - Open Cloud Shell and explore the environment
+  description: "Exercise - Open Cloud Shell and explore the environment"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-open-cloud-shell.md)]

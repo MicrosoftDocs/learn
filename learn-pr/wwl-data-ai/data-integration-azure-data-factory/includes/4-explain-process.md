@@ -14,7 +14,7 @@ Compute services such as Databricks and Machine Learning can be used to prepare 
 
 ## Publish
 
-After the raw data has been refined into a business-ready consumable form from the transform and enrich phase, you can load the data into Azure Data Warehouse, Azure SQL Database, Azure Cosmos DB, or whichever analytics engine your business users can point to from their business intelligence tools
+After the raw data has been refined into a business-ready consumable form from the transform and enrich phase, you can load the data into Microsoft Fabric, Azure SQL Database, Azure Cosmos DB, or whichever analytics engine your business users can point to from their business intelligence tools
 
 ## Monitor
 

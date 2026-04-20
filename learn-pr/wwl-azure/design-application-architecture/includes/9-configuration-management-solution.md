@@ -12,9 +12,11 @@ App Configuration offers many benefits for an application architecture. As you r
 
 - Azure App Configuration is a fully managed service that can be set up in minutes, and supports native integration with popular frameworks.
 
-- App Configuration offers flexible key representations and mappings, and point-in-time replay of settings.
+- App Configuration offers flexible key representations and mappings, and **configuration snapshots** - immutable point-in-time captures of all settings used for deployment rollback and audit.
 
 - App Configuration has a dedicated UI for feature flag management, and supports resource tagging with labels.
+
+- **Geo-replication** allows App Configuration stores to be replicated across Azure regions for reduced latency and increased availability in multi-region scenarios.
 
 - You can compare two sets of configurations on custom-defined dimensions.
 

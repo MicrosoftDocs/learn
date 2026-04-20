@@ -3,18 +3,19 @@ uid: learn.describe-purview-data-governance
 metadata:
   title: Describe the Data Governance Solutions of Microsoft Purview
   description: "Describe the data governance solutions of Microsoft Purview."
-  ms.date: 07/30/2025
+  ms.date: 04/03/2026
   author: wwlpublish
   ms.author: ceperezb
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
   ms.service: purview
 title: Describe the data governance solutions of Microsoft Purview
-summary: "Learn about Microsoft Purview data governance solutions that leverage AI and modern technologies to ensure data quality, security, and compliance while also accelerating value creation."
+summary: "Learn about Microsoft Purview data governance solutions, including Data Map and Unified Catalog, that help ensure data quality, security, and compliance while also accelerating value creation."
 abstract: |
   By the end of this module, you'll be able to:
   - Describe the concepts and benefits of data governance.
-  - Describe the capabilities of Microsoft Purview Data Catalog.
+  - Describe what Microsoft Purview Data Map does and why it matters.
+  - Describe the capabilities of Microsoft Purview Unified Catalog.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -33,6 +34,7 @@ subjects:
 units:
   - learn.describe-purview-data-governance.introduction
   - learn.describe-purview-data-governance.describe-benefits-data-governance
+  - learn.describe-purview-data-governance.describe-data-map
   - learn.describe-purview-data-governance.describe-data-catalog
   - learn.describe-purview-data-governance.knowledge-check
   - learn.describe-purview-data-governance.summary

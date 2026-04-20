@@ -10,8 +10,10 @@ Within artificial intelligence (AI), text analysis is a subset of natural langua
 
 Techniques to process and analyze text evolved over many years, from simple statistical calculations based on term-frequency to vector-based language models that encapsulate semantic meaning. Some common use cases for text analysis include:
 
+- **Language detection**: Determining the language (or languages) in which text is written - often as the first step in a multi-step text processing workflow.
 - **Key term extraction**: Identifying important words and phrases in text, to help determine the topics and themes it discusses.
 - **Entity detection**: Identifying named entities mentioned in text; for example, places, people, dates, and organizations.
+- **Personally identifiable information (PII) detection**: Identifying and redacting personal details in text, such as names, addresses, telephone numbers, financial account details, and other sensitive information.
 - **Text classification**: Categorizing text documents based on their contents. For example, filtering email as *spam* or *not spam*.
 - **Sentiment analysis**: A particular form of text classification that predicts the *sentiment* of text - for example, categorizing social media posts as *positive*, *neutral*, or *negative*.
 - **Text summarization**: Reducing the volume of text while retaining its salient points. For example, generating a short one-paragraph summary from a multi-page document.

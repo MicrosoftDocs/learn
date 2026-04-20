@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.analyze-monitor-tune-ai-powered-business-solutions
+metadata:
+  title: "Monitor, Analyze, and Tune AI Agents"
+  description: "Learn to monitor, analyze, and tune AI agents for reliability, performance, and continuous improvement in enterprise environments."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+title: "Monitor, analyze, and tune AI agents"
+summary: Learn to ensure AI agents operate reliably, deliver high-quality outcomes, and continuously improve in enterprise environments.
+abstract: |
+  After completing this module, you'll be able to:
+  - Establish monitoring frameworks for AI agents.
+  - Apply industry tools and processes for observability.
+  - Analyze backlogs and user feedback for actionable insights.
+  - Apply AI-based diagnostic and tuning methods.
+  - Monitor performance and metrics to optimize agent workflows.
+prerequisites: |
+  - Familiarity with AI agent workflows and enterprise environments.
+  - Basic understanding of monitoring tools and governance standards.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- database-administrator
+- developer
+- administrator
+- solution-architect
+- technology-manager
+products:
+- microsoft-365-copilot
+- m365
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.introduction
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.recommend-process-tools-monitoring-agents
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.analyze-backlog-user-feedback-ai-agent-usage
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.apply-ai-based-tools-analyze-identify-issues-perform-tuning
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.monitor-agent-performance-metrics
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.interpret-telemetry-data-performance-model-tuning
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.knowledge-check
+- learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.module-summary
+badge:
+  uid: learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.badge

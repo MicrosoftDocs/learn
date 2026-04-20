@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-share-files-securely.exercise-create-storage-upload-file
+title: Exercise - Create storage and upload file
+metadata:
+  title: Exercise - Create storage and upload file
+  description: "Exercise - Create storage and upload file"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-create-storage-upload-file.md)]

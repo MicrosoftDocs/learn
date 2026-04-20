@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.introduction-cloud-infrastructure-apply-azure-skills-guided-projects
+metadata:
+  title: 'Introduction to Cloud Infrastructure: Apply Azure Skills in Guided Projects'
+  description: 'Hands-on guided projects that are part of the Azure Infrastructure fundamentals content.'
+  ms.date: 03/31/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: learning-path
+title: 'Introduction to cloud infrastructure: Apply Azure skills in guided projects'
+prerequisites: |
+  *   Basic familiarity with IT terms and concepts
+summary: |
+  New to the cloud? Introduction to Cloud Infrastructure is a series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your first services for free. Complete all of the learning paths in the series if you're preparing for Exam AZ-900: Microsoft Azure Fundamentals.
+  This learning path in the series, **Introduction to Cloud Infrastructure: Apply Azure skills in guided projects**, provides hands-on, real-world practice through guided projects. Complete as many or as few projects as you like to strengthen your Azure skills. The other learning paths in the series are [**Part 1: Describe cloud concepts**](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/), [**Part 2: Describe Azure architecture and services**](/training/paths/azure-fundamentals-describe-azure-architecture-services/), and [**Part 3: Describe Azure management and governance**](/training/paths/describe-azure-management-governance/).
+iconUrl: /training/achievements/microsoft-azure-fundamentals-describe-cloud-concepts.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- architecture
+- cloud-computing
+- infrastructure
+modules:
+- learn.wwl.guided-project-deploy-static-website-blob-storage
+- learn.wwl.guided-project-organize-resources-tags-locks
+- learn.wwl.guided-project-build-basic-website-endpoint-with-functions
+- learn.wwl.guided-project-new-employee-access
+- learn.wwl.guided-project-share-files-securely
+- learn.wwl.guided-project-cost-guardrails
+- learn.wwl.guided-project-monitor-service-health-activity-alerts
+- learn.wwl.guided-project-manage-resources-cloud-shell-cli
+trophy:
+  uid: learn.wwl.introduction-cloud-infrastructure-apply-azure-skills-guided-projects.trophy

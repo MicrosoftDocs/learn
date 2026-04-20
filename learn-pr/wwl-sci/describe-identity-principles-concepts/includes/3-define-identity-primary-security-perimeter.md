@@ -1,28 +1,56 @@
 
-Digital collaboration has changed. Your employees and partners now need to collaborate and access organizational resources from anywhere, on any device, and without affecting their productivity. There has also been an acceleration in the number of people working from home.
+Digital collaboration has transformed how and where work gets done. Employees and partners now access organizational resources from anywhere—home offices, coffee shops, client sites, and across borders. They use corporate devices, personal devices, and shared workstations. They're accessing both on-premises systems and cloud services using the same identities.
 
-Enterprise security needs to adapt to this new reality. The security perimeter can no longer be viewed as the on-premises network. It now extends to:
+This shift has fundamentally changed how organizations need to think about security.
 
-- SaaS applications for business-critical workloads that might be hosted outside the corporate network.
-- The personal devices that employees are using to access corporate resources (BYOD, or bring your own device) while working from home.
-- The unmanaged devices used by partners or customers when interacting with corporate data or collaborating with employees
-- Internet of things, referred to as IoT devices, installed throughout your corporate network and inside customer locations.
+## The traditional security perimeter
 
-The traditional perimeter-based security model is no longer enough. Identity has become the new security perimeter that enables organizations to secure their assets.
+Historically, organizations protected their resources using a *network perimeter*—a defined boundary, enforced by firewalls and VPN gateways, around corporate systems. Security controls at the edge of the network kept untrusted traffic out and allowed trusted internal traffic to flow freely.
 
-But what do we mean by an identity? An identity is the set of things that define or characterize someone or something. For example, a person’s identity includes the information they use to authenticate themselves, such, as their username and password and their level of authorization.
+This model worked well when most employees worked in a single office, accessed applications running on local servers, and used only company-managed devices connected to the corporate network. When everything important was inside the boundary, trusting the network made sense.
 
-An identity may be associated with a user, an application, a device, or something else.
+That environment no longer describes most organizations. Several factors have eroded the traditional perimeter:
 
-![Diagram showing identity as the new security perimeter](../media/3-identity-new-security-perimeter.png)
+- **Cloud and SaaS applications**: Business-critical workloads like email, collaboration tools, and line-of-business applications now run in the cloud, outside the corporate network entirely.
+- **Remote and hybrid work**: Employees connect from home networks, public Wi-Fi, and locations around the world. Their traffic may never pass through the corporate perimeter.
+- **Personal devices (BYOD)**: Employees access corporate resources on personal phones, tablets, and laptops that the organization doesn't fully manage or control.
+- **Partner and customer access**: External users—vendors, contractors, and customers—need access to specific resources without becoming part of the internal network.
+- **IoT devices**: Connected devices throughout facilities and customer locations access organizational networks, often using credentials and interfaces that are difficult to manage through traditional tools.
 
-### Four pillars of an identity infrastructure
+When trusted users and unmanaged devices all connect from outside the traditional network boundary, the perimeter alone is no longer a reliable security control. An attacker who compromises a VPN credential or a cloud account can bypass perimeter defenses entirely.
 
-Identity is a concept that spans an entire environment, so organizations need to think about it broadly. There's a collection of processes, technologies, and policies for managing digital identities and controlling how they're used to access resources. These can be organized into four fundamental pillars that organizations should consider when creating an identity infrastructure. 
+## Identity as the new security perimeter
 
-- **Administration**. Administration is about the creation and management/governance of identities for users, devices, and services. As an administrator, you manage how and under what circumstances the characteristics of identities can change (be created, updated, deleted).
-- **Authentication**. The authentication pillar tells the story of how much an IT system needs to know about an identity to have sufficient proof that they really are who they say they are. It involves the act of challenging a party for legitimate credentials.
-- **Authorization**. The authorization pillar is about processing the incoming identity data to determine the level of access an authenticated person or service has within the application or service that it wants to access.
-- **Auditing**. The auditing pillar is about tracking who does what, when, where, and how. Auditing includes having in-depth reporting, alerts, and governance of identities.
+If you can't reliably control who or what is on your network, what *can* you use as a security boundary? The answer is identity.
 
-Addressing each of these four pillars is key to a comprehensive and robust identity and access control solution.
+An *identity* is the set of attributes that define or characterize a person, device, or software component. A user's identity might include their username, their organizational role, their assigned permissions, and the authentication methods registered to their account. A device's identity might include its hardware ID, its management enrollment status, and whether it meets compliance standards.
+
+When an identity—whether a user, a device, or an application—requests access to a resource, that identity becomes the central point of verification. Rather than asking "Is this request coming from inside our corporate network?", the security question becomes: "Who or what is making this request, and should it be trusted?"
+
+:::image type="content" source="../media/3-identity-new-security-perimeter.png" alt-text="Diagram showing identity at the center connecting employees, partners and customers, cloud apps, on-premises apps, and devices—illustrating identity as the new security perimeter." lightbox="../media/3-identity-new-security-perimeter.png":::
+
+This is why *identity is the new security perimeter*. Every access decision starts with identity. Verifying identity—and controlling what each identity is authorized to do—is the fundamental security control for a world where work and data are no longer confined to a fixed location.
+
+## Types of identities
+
+Identities in a modern environment come in several types:
+
+- **Human identities** represent people: employees, contractors, customers, and partners who sign in to access applications and data.
+- **Device identities** represent hardware: laptops, mobile phones, tablets, and IoT sensors that connect to organizational systems. A device can be enrolled in management, checked for compliance, and trusted or restricted based on its state.
+- **Workload identities** represent software: applications, services, containerized workloads, and automated processes that access APIs, databases, and other resources without a human user actively involved.
+
+All three types of identities need to be authenticated and authorized. A compromised application credential can give an attacker the same access as a compromised user account. A device that doesn't meet compliance standards can be used to access sensitive data. Treating identity holistically—across users, devices, and workloads—is essential to a strong security posture.
+
+## Four pillars of an identity infrastructure
+
+Managing identity across an organization requires more than just usernames and passwords. Organizations need a comprehensive approach that covers the full lifecycle of every identity—from creation through removal. This approach can be organized into four fundamental pillars:
+
+- **Administration**: The creation, management, and governance of identities for users, devices, and services. Administration covers how identities are created and assigned (provisioning), how they're updated when roles change, and how they're removed when a user leaves the organization (deprovisioning). It also includes defining the policies that govern how identities are managed across the organization.
+
+- **Authentication**: The process of verifying that an identity is who or what it claims to be. It involves challenging the identity for legitimate credentials to provide sufficient proof before granting access.
+
+- **Authorization**: The process of determining what an authenticated identity is allowed to do. Authorization evaluates assigned permissions and the context of the access request, then grants or restricts access accordingly. The goal is to ensure that identities can only access what they need for their specific role or task.
+
+- **Auditing**: The tracking and recording of who did what, when, and from where. Auditing encompasses sign-in logs, activity reports, alerts on anomalous behavior, and forensic investigation capabilities. Auditing is essential for meeting compliance requirements, detecting security incidents, and understanding the scope of a breach.
+
+Together, these four pillars form the foundation of a comprehensive identity and access management solution. Addressing each pillar—not just authentication—is key to protecting resources in a world where identity is the primary security boundary.

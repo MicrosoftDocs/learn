@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-agents-integration-dynamics-365-contact-center-channels
+title: "Design AI agents for Dynamics 365 Contact Center"
+metadata:
+  title: "Design AI Agents for Dynamics 365 Contact Center"
+  description: "Learn how to design AI agents for Dynamics 365 Contact Center channels, leveraging Copilot features, agent context, and omnichannel workflows."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-design-agents-integration-dynamics-365-contact-center-channels.md)]

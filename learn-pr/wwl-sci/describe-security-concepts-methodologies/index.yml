@@ -12,10 +12,11 @@ title: Describe security and compliance concepts
 summary: Learn about common security and compliance concepts that are foundational to Microsoft solutions. Topics include the shared responsibility and Zero Trust models, encryption, data residency and data sovereignty, and more.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the shared responsibility and the defense-in-depth security models.
-  - Describe the Zero-Trust model.
-  - Describe the concepts of encryption and hashing.
-  - Describe some basic compliance concepts.
+  - Describe the shared responsibility model and how responsibilities shift across on-premises, IaaS, PaaS, and SaaS environments, including AI services.
+  - Describe defense-in-depth as a layered security strategy and explain the confidentiality, integrity, and availability (CIA) triad.
+  - Describe the Zero Trust model, its guiding principles, and its six foundational pillars.
+  - Describe encryption and hashing as mechanisms for protecting data at rest, in transit, and in use.
+  - Describe Governance, Risk, and Compliance (GRC) concepts, including data residency, data sovereignty, and data privacy.
 prerequisites: |
   - None
 iconUrl: /training/achievements/describe-security-concepts-and-methodologies.svg

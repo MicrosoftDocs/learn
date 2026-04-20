@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.dpu.microsoft-education-accreditation-2026
+title: Microsoft Education Accreditation 2026
+metadata:
+  title: Microsoft Education Accreditation 2026
+  description: "This Learning Path introduces the latest Microsoft Education solutions designed to support both K–12 and higher education institutions. It provides an overview of how administrators, educators, students, and IT professionals can use Microsoft tools to enhance teaching, learning, and institutional operations across primary, secondary, and postsecondary environments.\n\nLearners will explore capabilities across Microsoft Education offerings, including tools for content creation and assessment, as well as solutions that support accessibility, inclusivity, and personalized learning. The Learning Path also covers how institutions can maintain secure and compliant environments, manage devices and users, and leverage data insights to improve student outcomes and operational efficiency.\n\nBy the end of this Learning Path, participants will have a foundational understanding of how Microsoft Education solutions can be applied across roles to create engaging, secure, and effective learning experiences—empowering students, faculty, and staff to collaborate, innovate, and succeed throughout the educational journey."
+  ms.date: 04/13/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+summary: >
+  Explore how Microsoft Education solutions support both K–12 schools and higher education institutions across a wide range of roles. This learning path introduces the latest capabilities available to administrators, educators, students, and IT professionals in primary, secondary, and postsecondary environments. Discover how these tools foster inclusive, secure, and effective learning experiences—empowering students, faculty, and staff to collaborate, innovate, and succeed at every stage of their educational journey.
+prerequisites: None
+iconUrl: /training/achievements/microsoft-education-accreditation-2026.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+  - m365-education
+  - microsoft-365-copilot
+modules:
+  - learn.dpu.microsoft-education-ai-learning
+  - learn.dpu.microsoft-higher-education
+  - learn.dpu.k-12-ai-education
+  - learn.dpu.security-management-education
+trophy:
+  uid: learn.dpu.microsoft-education-accreditation-2026.trophy

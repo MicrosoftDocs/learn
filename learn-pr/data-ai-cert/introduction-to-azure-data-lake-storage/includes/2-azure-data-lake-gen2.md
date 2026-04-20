@@ -8,13 +8,15 @@ Azure Data Lake Storage combines a file system with a storage platform to help y
 
 Data Lake Storage  is designed to deal with this variety and volume of data at exabyte scale while securely handling hundreds of gigabytes of throughput. With this, you can use Data Lake Storage Gen2 as the basis for both real-time and batch solutions.
 
-### Hadoop compatible access
+### Open analytics platform access
 
-A benefit of Data Lake Storage  is that you can treat the data as if it's stored in a Hadoop Distributed File System (HDFS). With this feature, you can store the data in one place and access it through compute technologies including Azure Databricks, Azure HDInsight, and Azure Synapse Analytics without moving the data between environments. The data engineer also has the ability to use storage mechanisms such as the parquet format, which is highly compressed and performs well across multiple platforms using an internal columnar storage.
+A benefit of Data Lake Storage is that it exposes a hierarchical file system through open APIs, enabling you to store data in one place and access it through modern compute technologies including Azure Databricks and Microsoft Fabric without moving the data between environments. Data engineers can also use open file formats such as Parquet and Delta Lake, which are highly compressed, support schema enforcement, and perform well across multiple analytics platforms.
 
 ### Security
 
-Data Lake Storage supports access control lists (ACLs) and Portable Operating System Interface (POSIX) permissions that don't inherit the permissions of the parent directory. In fact, you can set permissions at a directory level or file level for the data stored within the data lake, providing a much more secure storage system. This security is configurable through technologies such as Hive and Spark or utilities such as Azure Storage Explorer, which runs on Windows, macOS, and Linux. All data that is stored is encrypted at rest by using either Microsoft or customer-managed keys.
+Azure Data Lake Storage uses a layered access control model. Azure role-based access control (Azure RBAC) lets you grant coarse-grained access—such as read or write access to all data in a container—to users, groups, and service principals. Azure Attribute-based access control (Azure ABAC) refines those role assignments by adding conditions, such as restricting access to data with a specific tag. For precise, file-level control, access control lists (ACLs) with Portable Operating System Interface (POSIX) permissions let you set permissions at the directory or file level.
+
+Permissions aren't automatically inherited from parent directories after a child item is created. However, you can configure default permissions on a parent directory, which are then applied to new child items at the time they're created. You can manage these settings using utilities such as Azure Storage Explorer, which runs on Windows, macOS, and Linux. All data that is stored is encrypted at rest by using either Microsoft-managed or customer-managed keys.
 
 ### Performance
 
@@ -22,7 +24,7 @@ Azure Data Lake Storage organizes the stored data into a hierarchy of directorie
 
 ### Data redundancy
 
-Data Lake Storage takes advantage of the Azure Blob replication models that provide data redundancy in a single data center with locally redundant storage (LRS), or to a secondary region by using the Geo-redundant storage (GRS) option. This feature ensures that your data is always available and protected if catastrophe strikes.
+Data Lake Storage inherits all Azure Blob Storage replication models. Locally redundant storage (LRS) keeps multiple copies within a single data center, while zone-redundant storage (ZRS) replicates data across availability zones in the same region. For broader geographic protection, geo-redundant storage (GRS) or read-access geo-redundant storage (RA-GRS) replicates data to a secondary region. For the highest level of resilience, geo-zone-redundant storage (GZRS or RA-GZRS) combines zone and geographic redundancy. This range of options ensures your data is always available and protected regardless of the scale of disruption.
 
 > [!TIP]
 > Whenever planning for a data lake, a data engineer should give thoughtful consideration to structure, data governance, and security. This should include consideration of factors that can influence lake structure and organization, such as:

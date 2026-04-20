@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.determine-use-standard-natural-language-processing
+title: "Determine the use of standard natural language processing"
+metadata:
+  title: "Determine the Use of Standard Natural Language Processing"
+  description: "Learn to choose between standard NLU, Azure CLU, and generative AI orchestration in Copilot Studio for business scenarios and conversational tasks."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 11
+content: |
+  [!include[](includes/16-determine-use-standard-natural-language-processing.md)]

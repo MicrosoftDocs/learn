@@ -26,7 +26,7 @@ The Ask agent is designed to help you analyze your code and investigate the opti
 
 1. Add context to the chat.
 
-    The Ask agent supports chat participants, slash commands, and chat variables. You can add the `@workspace` chat participant or `#codebase` to the chat to provide context along with files or folders.
+    The Ask agent supports chat participants, slash commands, and chat variables. You can add `#codebase` to the chat to provide context along with files or folders.
 
 1. Ask questions that help you evaluate the new feature that you want to implement.
 

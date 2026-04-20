@@ -40,10 +40,10 @@ Combining features like slash commands with inline chat allows you to choose the
 
 GitHub Copilot can be customized to provide suggestions based on the context you're working on. For example, you can ask GitHub Copilot to provide suggestions based on the entire workspace or the terminal output.
 
-GitHub Copilot can give you an accurate suggestion for your project without requiring you to open many files. Imagine you need to package your project using a _Dockerfile_. A _Dockerfile_ is a special file that needs to have specific instructions to package your project. You can use the `@workspace` agent to ask GitHub Copilot how to help you out. For example, open GitHub Copilot Chat and type the following command:
+GitHub Copilot can give you accurate suggestions for your project without requiring you to open many files. Imagine you need to package your project using a Dockerfile. A Dockerfile is a special file that needs to have specific instructions to package your project. You can use GitHub Copilot Chat to ask how to help you out. For example, open GitHub Copilot Chat and type the following command:
 
 ```text
-@workspace I need to create a Dockerfile for this project, can you generate one that will help me package it?
+I need to create a Dockerfile for this project, can you generate one that will help me package it?
 ```
 
 You'll get a response back that explains the steps to create a _Dockerfile_ for your project, along with some explanation on what the steps of the file are going to do.
@@ -51,19 +51,14 @@ You'll get a response back that explains the steps to create a _Dockerfile_ for 
 As always, if the suggestions aren't exactly what you are looking for, you can reword the prompt and be more specific. For example, you could ask GitHub Copilot to use a specific step when creating the _Dockerfile_:
 
 ```text
-@workspace help me create a Dockerfile to package this project but make sure you are using a Virtual Environment for Python.
+Help me create a Dockerfile to package this project but make sure you are using a Virtual Environment for Python.
 ```
 
-In addition to the `@workspace` agent, you can use other agents like `@terminal`, `@file`, and `@directory` to get context-specific suggestions:
+Copilot can also provide context-specific suggestions based on where you are working. For example, you can use the `@terminal` agent to get help with errors or commands allowing Copilot to provide suggestions based on the terminal output.
 
-- `@terminal`: Provides suggestions based on the terminal output.
-    - Example: @terminal How do I fix the error message I'm seeing?
-- `@file`: Focuses on the content of a specific file.
-    - Example: @file Can you help me refactor this function in main.py?
-- `@directory`: Considers the contents of a specific directory.
-    - Example: @directory How can I optimize the scripts in the utils directory?
+Example: @terminal How do I fix the error message I'm seeing?
 
 If you're stuck or not getting the results you want, then you can reword the prompt or start writing code for Copilot to autocomplete.
 
 >[!Note]
-> Although you can be specific with `@workspace`, by default GitHub Copilot uses open files in your text editor as additional context.
+> By default GitHub Copilot uses open files in your text editor as additional context.

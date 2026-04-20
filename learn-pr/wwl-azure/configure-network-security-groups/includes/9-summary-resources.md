@@ -23,7 +23,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with documentation
 
-- [Read about network security groups](/azure/virtual-network/security-overview). This article describes the properties of a network security group rule, the default security rules that are applied, and the rule properties that you can modify.
+- [Read about network security groups](/azure/virtual-network/network-security-groups-overview). This article describes the properties of a network security group rule, the default security rules that are applied, and the rule properties that you can modify.
 
 - [Filter network traffic with network security groups in the Azure portal](/azure/virtual-network/tutorial-filter-network-traffic). Learn how to create a network security group and an application security group. 
 

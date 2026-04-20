@@ -1,4 +1,4 @@
-The GitHub Copilot coding agent acts as an autonomous teammate that works directly inside GitHub. Once it is enabled, you can assign it a task, watch its progress in real time, and guide its work by leaving comments on its pull requests. This unit explains how to assign issues to Copilot using GitHub.com, GitHub Mobile, the API, or the CLI. It also shows you how to track the agent's work and iterate with it, and provides a troubleshooting playbook for common issues.
+The GitHub Copilot Cloud Agent  acts as an autonomous teammate that works directly inside GitHub. Once it is enabled, you can assign it a task, watch its progress in real time, and guide its work by leaving comments on its pull requests. This unit explains how to assign issues to Copilot using GitHub.com, GitHub Mobile, the API, or the CLI. It also shows you how to track the agent's work and iterate with it, and provides a troubleshooting playbook for common issues.
 
 ### By the end of this unit, you will be able to:
 
@@ -117,7 +117,7 @@ You guide Copilot's work the same way you would guide a human contributor-throug
 
 Pull requests created by Copilot are always in draft state. They require human approval before merge, and GitHub Actions workflows triggered by the agent do not run automatically. To run workflows on a Copilot pull request, click Approve and run workflows in the merge box. The developer who asked Copilot to create the pull request cannot approve it, which preserves your repository's "required reviews" rules and ensures an independent review before merge.
 
-### Troubleshooting Copilot coding agent
+### Troubleshooting Copilot Cloud Agent 
 
 - **Copilot not in "Assignees" list**
 
@@ -159,7 +159,7 @@ Pull requests created by Copilot are always in draft state. They require human a
 
 - **Firewall warnings** 
   
-  The Internet is restricted by default; warnings list the blocked address and command. Adjust per [Customizing or disabling the firewall for GitHub Copilot coding agent.](https://docs.github.com/en/copilot/customizing-copilot/customizing-or-disabling-the-firewall-for-copilot-coding-agent)
+  The Internet is restricted by default; warnings list the blocked address and command. Adjust per [Customizing or disabling the firewall for GitHub Copilot Cloud Agent .](https://docs.github.com/en/copilot/customizing-copilot/customizing-or-disabling-the-firewall-for-copilot-coding-agent)
 
 - **Images not picked up** 
   

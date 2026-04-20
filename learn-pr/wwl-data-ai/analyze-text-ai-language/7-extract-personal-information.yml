@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-text-ai-language.extract-personal-information
+title: Extract personally identifiable information (PII)
+metadata:
+  title: Extract personally identifiable information (PII)
+  description: Extract personally identifiable information (PII)
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 04/02/2026
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-extract-personal-information.md)]

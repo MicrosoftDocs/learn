@@ -25,7 +25,7 @@ The Ask mode can be used to evaluate your code and suggest inline code documenta
 1. Enter a prompt to generate inline code documentation. For example, you can enter the following prompt:
 
    ```plaintext
-   @workspace /doc Create inline code documentation for the ConsoleApp class.
+   /doc Create inline code documentation for the ConsoleApp class.
    ```
 
 1. Review the suggested inline code documentation in the Chat view.
@@ -96,7 +96,7 @@ The Chat view in Agent mode can be used to generate inline code documentation fo
     Create inline code documentation for all C# class files in the specified context. Document the class, properties, and methods. Do not add documentation to JSON, markdown, or other file types. Do not document UnitTest project files in the Test folder. Ensure that the solution builds without errors after the documentation is added.
     ```
 
-    Agent mode doesn't support the `@workspace` chat participant or the `/doc` slash command, so you need to provide a detailed prompt.
+    Agent mode doesn't support chat participants or the `/doc` slash command, so you need to provide a detailed prompt.
 
 1. The agent displays status messages in the Chat view as it completes the requested tasks.
 

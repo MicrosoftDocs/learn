@@ -4,10 +4,10 @@ title: Describe DevOps security management
 metadata:
   title: Describe DevOps security management
   description: "Describe DevOps security management"
-  ms.date: 08/05/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
-  [!include[](includes/6-describe-dev-ops-security-management.md)]
+  [!include[](includes/6-describe-dev-ops-security-management.md)]

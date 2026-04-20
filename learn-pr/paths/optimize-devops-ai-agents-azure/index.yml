@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.optimize-devops-ai-agents-azure
+metadata:
+  title: "Optimize DevOps with AI agents on Azure"
+  description: "Learn the concepts of agentic DevOps. Next, learn how to use GitHub Copilot, Azure DevOps MCP Server, and Azure SRE Agent to accelerate delivery, automate operations, and improve reliability across your DevOps workflows."
+  ms.date: 04/14/2026
+  author: wwlpublish
+  ms.author: petender
+  ms.topic: learning-path
+title: "Optimize DevOps with AI agents on Azure"
+summary: |
+  This learning path shows how to integrate AI-powered agents into your Azure DevOps workflows. You'll learn to manage Azure Boards with GitHub Copilot, operate Azure DevOps through the MCP Server using natural language, and improve Azure reliability with the SRE Agent.
+prerequisites: |
+  -   Foundational knowledge of generative AI and agentic AI.
+  -   Basic knowledge of Azure DevOps concepts including boards, repos, and pipelines.
+  -   Experience using Visual Studio Code.
+  -   Familiarity with GitHub Copilot fundamentals.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- devops-engineer
+products:
+- azure
+- azure-devops
+- azure-boards
+- github
+subjects:
+- devops
+modules:
+- learn.wwl.introduction-agentic-devops-microsoft-tools-azure
+- learn.wwl.manage-azure-boards-using-github-copilot
+- learn.wwl.manage-ado-mcp-server
+- learn.wwl.optimize-azure-reliability-using-sre-agent
+trophy:
+  uid: learn.wwl.optimize-devops-ai-agents-azure.trophy

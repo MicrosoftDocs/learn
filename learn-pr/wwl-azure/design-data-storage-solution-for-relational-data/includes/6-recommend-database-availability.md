@@ -44,7 +44,7 @@ The image illustrates the availability architecture for the vCore Hyperscale tie
 
 - The Hyperscale tier architecture uses paired page servers. You can scale horizontally to put all the data in caching layers.
 
-- The Hyperscale architecture supports databases as large as 100 TB.
+- The Hyperscale architecture supports databases as large as 128 TB.
 
 - This tier uses snapshots, which allow for nearly instantaneous database backups, regardless of database size.
 

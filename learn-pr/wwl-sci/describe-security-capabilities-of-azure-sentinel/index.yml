@@ -3,7 +3,7 @@ uid: learn.wwl.describe-security-capabilities-of-azure-sentinel
 metadata:
   title: Describe the Capabilities in Microsoft Sentinel
   description: "Describe the capabilities in Microsoft Sentinel"
-  ms.date: 07/30/2025
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
@@ -12,12 +12,12 @@ metadata:
   - N/A
   ms.service: microsoft-sentinel
 title: Describe security capabilities of Microsoft Sentinel
-summary: Learn about Microsoft Sentinel a scalable, cloud-native, security information event management (SIEM), and security orchestration automated response (SOAR) solution. In this module, you’ll also be introduced to Microsoft Security Copilot.
+summary: Learn about Microsoft Sentinel—a scalable, cloud-native security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution. Explore how AI and machine learning capabilities help security teams detect, investigate, and respond to threats. You'll also be introduced to Microsoft Security Copilot and how it integrates with Microsoft Sentinel.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the security concepts for SIEM and SOAR.
-  - Describe how Microsoft Sentinel provides threat detection and mitigation.
-  - Describe Microsoft Security Copilot.
+  - Define the concepts of SIEM and SOAR, and describe the role of AI in modern security operations.
+  - Describe how Microsoft Sentinel provides threat detection and mitigation capabilities.
+  - Describe Microsoft Security Copilot and how it integrates with Microsoft Sentinel.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.

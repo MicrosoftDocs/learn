@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-cost-guardrails.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What happens when a resource deployment violates an Azure Policy assignment with a deny effect?"
+    choices:
+    - content: "The deployment succeeds but is flagged as noncompliant."
+      isCorrect: false
+      explanation: "An audit effect flags noncompliant resources. A deny effect actively blocks the deployment."
+    - content: "The deployment is blocked."
+      isCorrect: true
+      explanation: "A policy assignment with a deny effect prevents any resource deployment that does not meet the policy conditions."
+    - content: "The resource is deployed and then automatically deleted."
+      isCorrect: false
+      explanation: "A deny effect prevents the deployment from starting. The resource is never created."
+  - content: "What is the purpose of a budget alert in Azure?"
+    choices:
+    - content: "To automatically stop all running resources when spending exceeds the limit."
+      isCorrect: false
+      explanation: "Budget alerts send notifications. They do not automatically stop or shut down resources."
+    - content: "To notify you when spending approaches or exceeds a defined threshold."
+      isCorrect: true
+      explanation: "Budget alerts send email notifications when actual or forecasted spending reaches the percentage thresholds you configure."
+    - content: "To enforce a hard spending cap that prevents any further charges."
+      isCorrect: false
+      explanation: "Azure budgets provide alerts, not hard caps. Spending can continue past the budget amount."
+  - content: "Why should you apply consistent tags to Azure resources?"
+    choices:
+    - content: "Tags are required before you can deploy resources."
+      isCorrect: false
+      explanation: "Tags are optional by default unless enforced by a policy. You can deploy resources without tags."
+    - content: "Tags automatically reduce the cost of tagged resources."
+      isCorrect: false
+      explanation: "Tags do not affect pricing. They help you track and allocate costs but do not reduce them."
+    - content: "To track and allocate costs by team, environment, or project."
+      isCorrect: true
+      explanation: "Consistent tags let you filter cost reports, identify spending by department or environment, and support cost governance."

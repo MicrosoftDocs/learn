@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.discover-external-assets-vulnerabilities
+metadata:
+  title: Discover Unprotected Assets and Vulnerabilities by Using Microsoft Defender External Attack Surface Management
+  description: "Use Microsoft Defender External Attack Surface Management (EASM) to discover unknown internet-facing assets, analyze attack surface dashboards, and integrate outside-in findings with Defender CSPM for attack path analysis."
+  ms.date: 04/07/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Discover unprotected assets and vulnerabilities by using Microsoft Defender External Attack Surface Management
+summary: In this module, you use Microsoft Defender External Attack Surface Management (EASM) to discover and secure your external attack surface. You learn how Microsoft Defender External Attack Surface Management (EASM) outside-in discovery complements other Defender tools. EASM uses recursive discovery to find unknown internet-facing assets across your organization, analyze dashboards to prioritize vulnerabilities and security hygiene risks, and integrate EASM findings with Defender CSPM for attack path analysis.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explore EASM features and capabilities, including asset types, asset states, and how outside-in scanning differs from other Defender tools
+    - Configure asset discovery using seeds to identify unknown internet-facing infrastructure and asset connections
+    - Use EASM dashboards to prioritize vulnerabilities and security hygiene risks across your attack surface
+    - Integrate EASM findings with Defender CSPM to analyze attack paths starting from internet-exposed resources
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a basic level
+  - Understanding of Cloud Security Posture Management (CSPM) concepts and capabilities
+  - Knowledge of cloud security concepts including misconfigurations, vulnerabilities, and exposure
+  - Familiarity with Azure resource types and Azure role-based access control (RBAC)
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.discover-external-assets-vulnerabilities.introduction
+- learn.wwl.discover-external-assets-vulnerabilities.explore-external-attack-surface-capabilities
+- learn.wwl.discover-external-assets-vulnerabilities.discover-assets-recursive-discovery
+- learn.wwl.discover-external-assets-vulnerabilities.analyze-attack-surface-dashboards
+- learn.wwl.discover-external-assets-vulnerabilities.integrate-external-attack-surface-defender-cloud
+- learn.wwl.discover-external-assets-vulnerabilities.knowledge-check
+- learn.wwl.discover-external-assets-vulnerabilities.summary
+badge:
+  uid: learn.wwl.discover-external-assets-vulnerabilities.badge

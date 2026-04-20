@@ -28,4 +28,4 @@ You can use the automated backups in several ways.
 
 Azure SQL Database automatic backups remain available to restore for up to 35 days. This period is enough for the purposes of day-to-day administration. But sometimes you might need to retain data for longer periods. For example, data protection regulations in your local jurisdiction might require you to keep backups for several years.
 
-For these requirements, use the long-term retention (LTR) feature. This way, you can store Azure SQL Database backups in read-access geo-redundant storage (RA-GRS) blobs for up to 10 years. If you need access to any backup in LTR, you can restore it as a new database by using either the Azure portal or PowerShell.
+For these requirements, use the long-term retention (LTR) feature. This way, you can store Azure SQL Database backups in Azure Blob Storage for up to 10 years. 

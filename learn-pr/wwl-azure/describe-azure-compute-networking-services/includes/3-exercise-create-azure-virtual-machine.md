@@ -1,1 +1,0 @@
-This exercise has been merged with the later exercise in this module, **Exercise - Create an Azure Virtual Machine and Configure network access**.

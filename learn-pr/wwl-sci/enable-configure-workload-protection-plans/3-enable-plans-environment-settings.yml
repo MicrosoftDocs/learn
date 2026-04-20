@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-configure-workload-protection-plans.enable-plans-environment-settings
+metadata:
+  title: Enable workload protection plans in Environment Settings
+  description: Learn how to navigate Environment Settings in the Azure portal to enable Defender for Cloud workload protection plans at subscription and resource scope.
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Enable workload protection plans in Environment Settings
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-enable-plans-environment-settings.md)]

@@ -4,9 +4,9 @@ While you can perform many of the tasks needed to develop an AI solution directl
 
 There are many development tools and environments available, and developers should choose one that supports the languages, SDKs, and APIs they need to work with and with which they're most comfortable. For example, a developer who focuses strongly on building applications for Windows using the .NET Framework might prefer to work in an integrated development environment (IDE) like Microsoft Visual Studio. Conversely, a web application developer who works with a wide range of open-source languages and libraries might prefer to use a code editor like Visual Studio Code (VS Code). Both of these products are suitable for developing AI applications on Azure.
 
-### The AI Toolkit extension for Visual Studio Code
+### The Foundry Toolkit extension for Visual Studio Code
 
-When developing Microsoft Foundry based generative AI applications in Visual Studio Code, you can use the AI Toolkit extension for Visual Studio Code to simplify key tasks in the workflow, including:
+When developing Microsoft Foundry based generative AI applications in Visual Studio Code, you can use the Foundry Toolkit extension for Visual Studio Code to simplify key tasks in the workflow, including:
 
 - Browsing and managing project resources, including deployed models, agents, connections, and vector stores.
 - Deploying models from the model catalog.
@@ -14,10 +14,10 @@ When developing Microsoft Foundry based generative AI applications in Visual Stu
 - Configuring declarative and hosted agents using a visual designer and YAML files.
 - Generating integration code to connect agents with your applications.
 
-![Screenshot of the AI Toolkit extension for Visual Studio Code.](../media/vs-code.png)
+![Screenshot of the Foundry Toolkit extension for Visual Studio Code.](../media/vs-code.png)
 
 > [!TIP]
-> For more information about using the AI Toolkit extension for Visual Studio Code, see **[AI Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview?azure-portal=true)**.
+> For more information about using the Foundry Toolkit extension for Visual Studio Code, see **[Foundry Toolkit for Visual Studio Code](https://code.visualstudio.com/docs/intelligentapps/overview?azure-portal=true)**.
 
 ### GitHub and GitHub Copilot
 

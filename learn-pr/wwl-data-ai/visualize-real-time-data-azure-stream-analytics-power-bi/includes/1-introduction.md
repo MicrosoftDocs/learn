@@ -5,4 +5,7 @@ Azure Stream Analytics provides a way to process a stream of real-time data from
 
 ![Diagram of a streaming architecture using Event Hubs to ingest streaming data, Azure Stream Analytics to transform the data, and Power BI to visualize and analyze it.](../media/stream-analytics-end-to-end-solution.png)
 
+> [!IMPORTANT]
+> Real-time streaming in Power BI is being retired. Beginning October 31, 2027, you can't create new Stream Analytics jobs with a Power BI output, and existing jobs with a Power BI output will stop. Microsoft recommends migrating to [Real-Time Intelligence in Microsoft Fabric](/fabric/real-time-intelligence/overview) as the successor capability.
+
 In this module, we'll examine how to use Azure Stream Analytics to process a stream of real-time data, and send the results to a Power BI dataset for visualization.

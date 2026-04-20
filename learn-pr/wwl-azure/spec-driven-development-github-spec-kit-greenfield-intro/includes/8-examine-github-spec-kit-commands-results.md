@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=dbecd5b0-a226-402d-8ad6-3e384a455fe1]
+
+::: zone-end
+
+::: zone pivot="text"
+
 With GitHub Spec Kit installed, you're ready to use its commands to practice spec-driven development. This unit walks through each command in the workflow, explaining what it does, what output it produces, and how to work with the results. Understanding this process prepares you for the hands-on lab exercise.
 
 ## Command overview
@@ -281,3 +289,8 @@ There are several best practices to follow when using GitHub Spec Kit:
 ## Summary
 
 GitHub Spec Kit provides a structured set of commands that operationalize spec-driven development. By following the workflow from project initialization through constitution, specification, planning, task generation, and implementation, you can systematically transform ideas into working software. Each command produces artifacts that guide the next steps, ensuring alignment and quality throughout the process. Optional enhancement commands help clarify requirements and verify consistency, while best practices ensure effective use of AI assistance. With this understanding, you're ready to apply GitHub Spec Kit in your development projects.
+
+::: zone-end
+
+> [!NOTE]
+> See the **Text and images** tab for more details!

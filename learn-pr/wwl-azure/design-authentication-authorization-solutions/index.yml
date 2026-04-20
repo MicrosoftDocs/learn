@@ -3,7 +3,7 @@ uid: learn.wwl.design-authentication-authorization-solutions
 metadata:
   title: Design Authentication and Authorization Solutions
   description: "Azure Architects design and recommend authentication and authorization solutions."
-  ms.date: 01/18/2026
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design authentication and authorization solutions
 summary: Azure Architects design and recommend authentication and authorization solutions.
 abstract: |
@@ -22,8 +22,6 @@ abstract: |
   -   Design for Microsoft Entra ID.
 
   -   Design for Microsoft Entra business-to-business (B2B).
-
-  -   Design for Azure Active Directory B2C (business-to-customer).
 
   -   Design for conditional access.
 

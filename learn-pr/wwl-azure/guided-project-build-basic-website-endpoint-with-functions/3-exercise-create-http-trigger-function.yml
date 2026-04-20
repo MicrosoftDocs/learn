@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-basic-website-endpoint-with-functions.exercise-create-http-trigger-function
+title: Exercise - Create an HTTP-trigger function
+metadata:
+  title: Exercise - Create an HTTP-trigger function
+  description: "Exercise - Create an HTTP-trigger function"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-exercise-create-http-trigger-function.md)]

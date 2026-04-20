@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-share-files-securely
+metadata:
+  title: 'Guided Project: Share files securely'
+  description: "Use Azure Storage, stored access policies, and SAS to share files securely with time-limited access."
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: module-guided-project
+  ms.service: azure
+  ai-usage: ai-generated
+title: 'Guided project: Share files securely'
+summary: |
+  This guided project teaches secure, temporary file sharing by using blob storage, stored access policies, and SAS tokens.
+
+  [!INCLUDE [](../../includes/wwl/guided-project-notes.md)]
+abstract: |
+  Upon completion of this module, you'll be able to:
+
+  -   Create blob storage for partner file exchange
+
+  -   Create stored access policies and generate policy-based SAS links
+
+  -   Validate that SAS enables access while anonymous access stays blocked
+
+  -   Revoke SAS access instantly by deleting a stored access policy
+
+  -   Configure lifecycle management rules to auto-delete shared files
+
+  -   Clean up storage resources to avoid charges
+prerequisites: '-   Basic familiarity with IT terms and concepts'
+iconUrl: /training/achievements/describe-cloud-compute.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-storage
+subjects:
+- cloud-computing
+units:
+- learn.wwl.guided-project-share-files-securely.introduction
+- learn.wwl.guided-project-share-files-securely.exercise-create-storage-upload-file
+- learn.wwl.guided-project-share-files-securely.exercise-create-access-policy
+- learn.wwl.guided-project-share-files-securely.exercise-test-partner-access
+- learn.wwl.guided-project-share-files-securely.exercise-revoke-access
+- learn.wwl.guided-project-share-files-securely.exercise-lifecycle-management
+- learn.wwl.guided-project-share-files-securely.validate-success
+- learn.wwl.guided-project-share-files-securely.clean-up-resources
+- learn.wwl.guided-project-share-files-securely.knowledge-check
+- learn.wwl.guided-project-share-files-securely.summary
+badge:
+  uid: learn.wwl.guided-project-share-files-securely.badge

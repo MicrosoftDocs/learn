@@ -49,9 +49,8 @@ To enhance the accuracy and relevance of the responses provided by GitHub Copilo
 
   :::image type="content" source="../media/chat-scope-file-referencing.png" lightbox="../media/chat-scope-file-referencing.png" alt-text="Screenshot of chat scope file referencing.":::
 
-- **Environment References:** You can reference the entire solution or workspace by using `@workspace`. This feature allows Copilot Chat to consider the broader context of the projects and configurations that are currently open in your Visual Studio IDE. For instance, asking "@workspace where is the calculate function?" prompts Copilot to consider the entire solution to find the most relevant information.
+- **Environment References**: You can use Copilot Chat alongside your terminal to get help based on command output. This allows Copilot to assist with debugging and provide suggestions based on what is happening in your terminal. For example, asking “@terminal how do I fix this error?” lets Copilot analyze the terminal output and suggest relevant solutions.
 
-  :::image type="content" source="../media/chat-scope-workspace-referencing.png" lightbox="../media/chat-scope-workspace-referencing.png" alt-text="Screenshot of chat scope workspace referencing.":::
 
 ### Slash commands
 
@@ -106,17 +105,13 @@ When working on challenging problems that require deep reasoning, premium models
 
 GitHub Copilot agents are custom tools that you can build and integrate with GitHub Copilot Chat to provide additional functionalities tailored to your specific needs. In addition to slash commands, you can use specific agents within Copilot Chat in your IDE to handle different tasks:
 
-- **@workspace:** This agent allows you to extend the context of whatever questions you ask Copilot to the whole project. It is useful for getting code generated that would fit in your project right away, using information from your whole project. It can also be utilized for getting answers about your whole codebase. 
+You can also use the “/new” smart action to generate a completely new project from scratch based on your requirements. For example, you can prompt Copilot to create a new project with:
 
-  :::image type="content" source="../media/workspace-agent-command.png" lightbox="../media/workspace-agent-command.png" alt-text="Screenshot of `@workspace` agent command.":::
+```text
+/new generate a new HTML file with pages and JavaScript for advanced calculations
+```
 
-  You can also use the “@workspace /new” smart action, which allows you  to generate a completely new project from scratch based on your requirements. For example, “@workspace /new generate new html file pages and JavaScript for advanced calculations“
-
-  :::image type="content" source="../media/workspace-new-agent-command.png" lightbox="../media/workspace-new-agent-command.png" alt-text="Screenshot of  `@workspace \new` agent command.":::
-
-  Click on “Create Workspace” to proceed with code generation and just like that you have your new project with the code you requested.
-
-  :::image type="content" source="../media/new-generated-workspace-project.png" lightbox="../media/new-generated-workspace-project.png" alt-text="Screenshot of new generated workspace project.":::
+Click on “Create Workspace” to proceed with code generation and just like that you have your new project with the code you requested.
 
 - **@terminal:** This agent is useful for command-line related questions. For example, you could ask it to find the largest file in a directory or explain the last command you ran.
 
@@ -129,7 +124,7 @@ GitHub Copilot agents are custom tools that you can build and integrate with Git
   By effectively utilizing these tools and techniques, you can significantly improve the quality of responses you receive from GitHub Copilot Chat, making your coding experience more efficient and productive.
 
 > [!NOTE]
-> Advanced agents like @workspace and complex operations may consume more Premium Request Units (PRUs). Simple queries typically use 1 PRU, while complex workspace analysis or project generation can use 2-5 PRUs. For current details on PRU consumption, monthly allowances, and rate limits, refer to the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
+> Advanced agents and complex operations may consume more Premium Request Units (PRUs). Simple queries typically use 1 PRU, while complex workspace analysis or project generation can use 2-5 PRUs. For current details on PRU consumption, monthly allowances, and rate limits, refer to the [Requests in GitHub Copilot documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests).
 
 ### Sharing feedback on GitHub Copilot Chat
 Most IDEs with Copilot Chat integration have built-in feedback mechanisms. For example, in Visual Studio Code, you can find feedback options at the beginning of GitHub Copilot Chat's suggestions. Hover over a suggestion, and you should see "thumbs up" and "thumbs down" buttons. 

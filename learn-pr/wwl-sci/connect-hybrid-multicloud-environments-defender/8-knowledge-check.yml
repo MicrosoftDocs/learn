@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-hybrid-multicloud-environments-defender.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of connecting hybrid and multicloud environments to Microsoft Defender for Cloud.
+  ms.date: 04/01/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When you connect an AWS account to Microsoft Defender for Cloud, how does Defender for Cloud authenticate to AWS APIs?"
+    choices:
+    - content: "It stores AWS access keys and secret keys in Azure Key Vault and uses them to call AWS APIs."
+      isCorrect: false
+      explanation: "Incorrect. Storing long-lived access keys or secret keys in Azure Key Vault would create a persistent credential that could be exfiltrated if the Azure environment were compromised. Defender for Cloud is designed to avoid this pattern. It uses federated trust with short-lived credentials instead."
+    - content: "It uses the customer's Microsoft Entra service principal to call AWS APIs directly."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud authenticates to AWS using a Microsoft-managed Microsoft Entra application—not a customer's service principal. The trust relationship in the IAM role created by the CloudFormation template is bound to Microsoft's managed application, not the customer's tenant."
+    - content: "It creates IAM roles with a federated trust relationship through OIDC and authenticates using short-lived credentials from AWS Security Token Service."
+      isCorrect: true
+      explanation: "Correct. The CloudFormation template creates an OpenID Connect identity provider and IAM roles in the customer's AWS account. Defender for Cloud exchanges a Microsoft Entra token for short-lived credentials through AWS Security Token Service. No long-lived credentials are stored in Azure—the trust model prevents credential exfiltration even if the Azure environment is compromised."
+    - content: "It requires a dedicated IAM user with programmatic access enabled on the AWS account."
+      isCorrect: false
+      explanation: "Incorrect. IAM users with programmatic access require long-lived access key and secret key pairs. Defender for Cloud's design specifically avoids this pattern. The CloudFormation template creates IAM roles—not IAM users—that Defender for Cloud can assume through web identity federation."
+  - content: "You connect an AWS account to Defender for Cloud with both Defender CSPM and Defender for Servers enabled. Which coverage becomes active within hours of connector creation, and which requires Azure Arc deployed on EC2 instances before it provides protection?"
+    choices:
+    - content: "Both Defender CSPM and Defender for Servers become active immediately after the connector is created—no Arc agent is needed for either."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers (a CWPP plan) provides runtime threat detection and requires the Azure Connected Machine agent to be present on EC2 instances. Only Defender CSPM is agentless. The native connector enables autoprovisioning of Arc on EC2 instances, but Arc must be successfully installed before Defender for Servers runtime protection is active on those machines."
+    - content: "Defender for Servers activates immediately; Defender CSPM requires Arc agents on EC2 instances before posture recommendations appear."
+      isCorrect: false
+      explanation: "Incorrect. CSPM is the agentless component, not Defender for Servers. Defender CSPM calls AWS cloud provider APIs to assess resource configuration—no agent is required. Defender for Servers is the plan that requires Azure Arc on each EC2 instance for runtime protection."
+    - content: "Defender CSPM activates within hours of connector creation through agentless API calls; Defender for Servers runtime protection requires Azure Arc deployed on each EC2 instance."
+      isCorrect: true
+      explanation: "Correct. Defender CSPM is agentless—it uses cloud provider APIs to assess configuration and surface recommendations within four to six hours of the first scan. Defender for Servers (a CWPP plan) requires the Azure Connected Machine agent (Azure Arc) on each EC2 instance to deliver runtime threat detection, just-in-time VM access, and file integrity monitoring."
+    - content: "Both Defender CSPM and Defender for Servers require Azure Arc on EC2 instances before any coverage becomes active."
+      isCorrect: false
+      explanation: "Incorrect. Defender CSPM is explicitly designed to be agentless. It doesn't require Arc or any agent installation. CSPM calls AWS APIs directly to collect configuration data. Azure Arc is only required for CWPP plans like Defender for Servers."
+  - content: "When Defender for Cloud connects to a GCP project, what authentication mechanism does it use, and what does this mean for credential storage in Azure?"
+    choices:
+    - content: "It downloads a GCP service account JSON key and stores it in Azure Key Vault for use in API calls."
+      isCorrect: false
+      explanation: "Incorrect. Storing a service account JSON key—a long-lived credential—in Azure Key Vault would create a persistent secret that could be exfiltrated if the Azure environment were compromised. GCP connector authentication is designed to avoid storing any long-lived credentials."
+    - content: "It uses workload identity federation and service account impersonation—no private keys or long-lived credentials are stored in Azure."
+      isCorrect: true
+      explanation: "Correct. The GCloud script creates a workload identity pool, workload identity providers, and service accounts in GCP. Defender for Cloud exchanges a Microsoft Entra token with Google Cloud STS for a short-lived token, then uses that token to impersonate the service account. No private keys or long-lived credentials are stored in Azure at any point."
+    - content: "It uses the customer's Microsoft Entra service principal to call GCP APIs directly, with no GCP-side resources required."
+      isCorrect: false
+      explanation: "Incorrect. GCP APIs require GCP-native authentication. The GCloud script creates GCP resources—a workload identity pool, providers, and service accounts—that form the trust bridge between Microsoft Entra ID and GCP. A Microsoft Entra service principal alone can't authenticate to GCP APIs."
+    - content: "It creates a dedicated GCP IAM user with API key authentication and stores the key in the connector configuration."
+      isCorrect: false
+      explanation: "Incorrect. GCP IAM user accounts with API keys are long-lived credentials—the opposite of what the connector authentication model is designed to use. The GCloud script creates service accounts and workload identity resources, not IAM user accounts."
+  - content: "After creating an AWS connector, you check Environment Settings and see 'Has issues' in the Connectivity status column. What does this status indicate, and how do you begin resolving it?"
+    choices:
+    - content: "The connector is still establishing its initial connection. Wait 24 hours and the status change to Healthy automatically."
+      isCorrect: false
+      explanation: "Incorrect. 'Connecting' is the status that appears while the initial connection is being established. 'Has issues' specifically indicates that a configuration or permission problem is preventing the connector from operating correctly. This status doesn't resolve automatically—it requires investigation and remediation."
+    - content: "The connector detected configuration or permission problems. Select the status value to open the Environment details page, which lists specific issues and often provides remediation scripts."
+      isCorrect: true
+      explanation: "Correct. 'Has issues' status indicates that Defender for Cloud detected one or more problems preventing correct connector operation. Selecting the status value opens the Environment details page, which describes each issue, explains its cause, and in many cases provides a remediation script. Common issues include missing IAM permissions (fix by regenerating and redeploying the CloudFormation template) and IAM role trust policy mismatches."
+    - content: "The AWS account reached its API call quota. Contact AWS Support to increase the API call limit before the connector can function."
+      isCorrect: false
+      explanation: "Incorrect. AWS API call quota issues don't manifest as connector health status problems in Defender for Cloud. 'Has issues' reflects authentication, configuration, or permission problems—such as missing IAM roles or incomplete CloudFormation deployment. API quota management is separate from connector health."
+    - content: "The CloudFormation stack deployed incorrectly. You must delete the connector and restart the onboarding process from the beginning."
+      isCorrect: false
+      explanation: "Incorrect. Most connectivity issues don't require deleting and recreating the connector. The Environment details page typically provides targeted remediation steps—often just updating the CloudFormation stack or rerunning it with corrected settings. Full reonboarding is rarely necessary and should be the last resort after targeted remediation attempts fail."
+  - content: "A security engineer needs full Defender for Servers Plan 2 coverage on on-premises Windows servers, including just-in-time VM access, file integrity monitoring, and agentless scanning. What is required to enable these capabilities?"
+    choices:
+    - content: "Install the Microsoft Monitoring Agent (MMA) on each server and connect it to a Log Analytics workspace linked to the Defender for Cloud subscription."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Monitoring Agent retired in August 2024. Any guidance referencing MMA-based onboarding for on-premises servers is outdated. The MMA path is no longer supported for Defender for Cloud coverage."
+    - content: "Enable Defender for Servers Plan 1 on the Azure subscription. Plan 1 includes all advanced protection features for on-premises machines without requiring any agent."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers Plan 1 provides some capabilities—including direct Microsoft Defender for Endpoint integration—without Azure Arc. However, Plan 2 features such as just-in-time VM access, file integrity monitoring, agentless scanning, and 500-MB daily free log ingestion require Azure Arc. Plan 1 alone is insufficient for the scenario described."
+    - content: "Deploy the Azure Connected Machine agent on each server to Arc-enable it, then enable Defender for Servers Plan 2 on the Azure subscription."
+      isCorrect: true
+      explanation: "Correct. Azure Arc-enabled server is the required path for on-premises machines. The Azure Connected Machine agent registers each server as an Azure resource, making it eligible for Defender for Servers Plan 2 coverage. Plan 2 features—just-in-time VM access, file integrity monitoring, agentless scanning, and 500-MB daily free log ingestion—all require Azure Arc. The Microsoft Monitoring Agent, the previous onboarding path, retired in August 2024."
+    - content: "Create a native cloud connector for the on-premises environment in Defender for Cloud Environment Settings, the same way you would for AWS or GCP."
+      isCorrect: false
+      explanation: "Incorrect. Native cloud connectors exist for AWS and GCP because those environments have cloud provider APIs that Defender for Cloud can call. On-premises servers have no equivalent API surface. The only supported path for on-premises machines is installing the Azure Connected Machine agent to Arc-enable each server."

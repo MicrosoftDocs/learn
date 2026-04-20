@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-compute-networking-services.describe-ai-ml-iot-edge-services
+title: Describe AI, machine learning, and IoT/Edge services in Azure
+metadata:
+  title: Describe AI, machine learning, and IoT/Edge services in Azure
+  description: "Describe AI, machine learning, and IoT/Edge services in Azure"
+  ms.date: 03/06/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/12a-describe-ai-ml-iot-edge-services.md)]

@@ -3,21 +3,24 @@ uid: learn.student-evangelism.introduction-to-git
 metadata:
   title: Introduction to Git
   description: Use Git to track changes and collaborate with other developers.
-  ms.date: 03/05/2021
+  ms.date: 04/14/2026
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: module-intro-to-product
-  ms.custom: team=nextgen
+  ms.topic: module
+  ms.service: azure
 title: Introduction to Git
 summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.
 abstract:  |
   In this module, you'll:
   - Learn what version control is
   - Understand distributed version control systems, like Git
-  - Create a new Git project and configure it
+  - Configure your Git identity and create a new Git project
   - Make and track changes to code by using Git
-  - Use Git to recover from simple mistakes
-prerequisites: None
+  - Work with branches to experiment safely
+prerequisites: |
+  - A [GitHub](https://github.com) account.
+  - Basic familiarity with using a command-line interface (CLI).
+  - A code editor, such as [Visual Studio Code](https://code.visualstudio.com).
 iconUrl: /training/achievements/student-evangelism/introduction-to-git-badge.svg
 levels:
 - beginner

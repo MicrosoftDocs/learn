@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Design and implement private access to Azure Services
 summary: You learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 abstract: |

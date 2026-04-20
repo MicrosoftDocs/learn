@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-monitor-tune-ai-powered-business-solutions.recommend-process-tools-monitoring-agents
+title: "Recommend process tools for monitoring agents"
+metadata:
+  title: "Recommend Process Tools for Monitoring Agents"
+  description: "Learn how to recommend processes and tools for monitoring AI agents, ensuring observability, compliance, and continuous improvement."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-recommend-process-tools-monitoring-agents.md)]

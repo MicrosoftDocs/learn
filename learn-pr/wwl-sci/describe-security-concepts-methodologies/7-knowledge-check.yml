@@ -2,11 +2,9 @@
 uid: learn.wwl.describe-security-concepts-methodologies.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["6E8CE524_67","6E8CE524_83","6E8CE524_104","6E8CE524_108","6E8CE524_136"]
-  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/23/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -38,15 +36,15 @@ quiz:
       explanation: "Correct. Multifactor authentication is an example of defense in-depth at the identity and access layer."
     - content: "Ensuring there's no segmentation of your corporate network."
       isCorrect: false
-      explanation: "Incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."
+      explanation: "Incorrect. Splitting a network up into multiple subnetworks provides better layered security and is an example of defense in depth at the network layer."
   - content: "The human resources organization wants to ensure that stored employee data is encrypted. Which security mechanism would they use?"
     choices:
     - content: "Hashing."
       isCorrect: false
-      explanation: "Incorrect.  Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it is different to encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original."
+      explanation: "Incorrect. Hashing uses an algorithm to convert the original text to a *unique* fixed-length hash value but it's different to encryption in that it doesn't use keys, and the hashed value isn't  decrypted back to the original."
     - content: "Encryption in transit."
       isCorrect: false
-      explanation: "Incorrect.  Encryption in transit is used for encrypting data that is moving from one location to another, not for data that is stored or at rest."
+      explanation: "Incorrect. Encryption in transit is used for encrypting data that's moving from one location to another, not for data that is stored or at rest."
     - content: "Encryption at rest."
       isCorrect: true
       explanation: "Correct. Encryption at rest could be part of a security strategy to protect stored employee  data."
@@ -54,10 +52,10 @@ quiz:
     choices:
     - content: "There are regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally."
       isCorrect: false
-      explanation: "​​​Incorrect. Regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally relates to data residency.  Data sovereignty, is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
-    - content: "Data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+      explanation: "​​​Incorrect. Regulations that govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally relates to data residency. Data sovereignty, is the concept that data is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+    - content: "Data is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
       isCorrect: true
-      explanation: "Correct. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+      explanation: "Correct. Data sovereignty is the concept that data is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
     - content: "Trust no one, verify everything."
       isCorrect: false
-      explanation: "Incorrect. Trust no one, verify everything describes the Zero Trust model. Data sovereignty is the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."
+      explanation: "Incorrect. Trust no one, verify everything describes the Zero Trust model. Data sovereignty is the concept that data is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed."

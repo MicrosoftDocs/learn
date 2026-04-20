@@ -1,12 +1,10 @@
-
-
 There are some core concepts with which data engineers should be familiar. These concepts underpin many of the workloads that data engineers must implement and support.
 
 ## Operational and analytical data
 
 ![Diagram representing operational and analytical data.](../media/4-operational-analytical-data.png)
 
-*Operational* data is usually transactional data that is generated and stored by applications, often in a relational or non-relational database. *Analytical* data is data that has been optimized for analysis and reporting, often in a data warehouse.
+*Operational* data is usually transactional data that is generated and stored by applications, often in a relational, or non-relational database. *Analytical* data is data that has been optimized for analysis and reporting, often in a data warehouse.
 
 One of the core responsibilities of a data engineer is to design, implement, and manage solutions that integrate operational and analytical data sources or extract operational data from multiple systems, transform it into appropriate structures for analytics, and load it into an analytical data store (usually referred to as ETL solutions).
 
@@ -39,6 +37,12 @@ The idea with a data lake is to store everything in its original, untransformed 
 A data warehouse is a centralized repository of integrated data from one or more disparate sources. Data warehouses store current and historical data in relational tables that are organized into a schema that optimizes performance for analytical queries.
 
 Data engineers are responsible for designing and implementing relational data warehouses, and managing regular data loads into tables.
+
+## Lakehouses
+
+A lakehouse combines the scalability of a data lake with the querying capabilities of a data warehouse. Rather than maintaining two separate systems—one for raw file storage and one for structured analytics—a lakehouse stores all data in a single location using the Delta Lake format, which provides ACID transactions, schema enforcement, and support for both structured and unstructured data.
+
+This means data engineers can use Apache Spark and notebooks to ingest and transform raw data, while analysts can query the same data using familiar SQL tools—without moving data between systems. The lakehouse architecture has become central to modern data engineering on Microsoft Azure, and is the primary data store pattern used in Microsoft Fabric.
 
 ## Apache Spark
 

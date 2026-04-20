@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-management-portal.verify-surface-management-portal-access
+title: Verify Surface Management Portal access
+metadata:
+  title: Verify Surface Management Portal Access
+  description: This content is part of the "Getting started with Surface Management Portal" module.
+  ms.date: 04/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-verify-surface-management-portal-access.md)]

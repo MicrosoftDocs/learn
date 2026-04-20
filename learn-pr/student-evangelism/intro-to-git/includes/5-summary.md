@@ -16,8 +16,8 @@ If you'd like to dig deeper, here are more resources:
 
 - Run the `git help tutorial` and `git help tutorial-2` commands.
 - Visit the [Everyday Git](https://git-scm.com/docs/everyday?azure-portal=true) site or use the `git help everyday` command.
-- Review [Git and GitHub learning resources](https://help.github.com/en/articles/git-and-github-learning-resources?azure-portal=true).
-- Watch the [Introduction to Git Recap](https://www.youtube.com/watch?v=9uGS1ak_FGg?azure-portal=true) video.
+- Review [Git and GitHub learning resources](https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources?azure-portal=true).
+- Watch the [Introduction to Git Recap](https://www.youtube.com/watch?v=9uGS1ak_FGg&azure-portal=true) video.
 - Check out the [documentation section](https://git-scm.com/doc?azure-portal=true) of [Git's official website](https://git-scm.com?azure-portal=true).
 
 ## Provide feedback

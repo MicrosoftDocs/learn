@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.determine-generative-ai-knowledge-sources-agents-built-copilot-studio
+title: "Determine generative AI knowledge sources for agents built in Copilot Studio"
+metadata:
+  title: "Determine Generative AI Knowledge Sources for Agents Built in Copilot Studio"
+  description: "Learn how to determine generative AI knowledge sources for agents built in Copilot Studio. Explore orchestration modes, grounding strategies, and governance."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 26
+content: |
+  [!include[](includes/7-determine-generative-ai-knowledge-sources-agents-built-copilot-studio.md)]

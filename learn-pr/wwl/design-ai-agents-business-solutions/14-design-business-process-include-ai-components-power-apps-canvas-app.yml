@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-business-process-include-ai-components-power-apps-canvas-app
+title: "Design business processes with AI in Power Apps canvas apps"
+metadata:
+  title: "Design Business Processes with AI in Power Apps"
+  description: "Learn to design business processes by integrating AI components into Power Apps canvas apps. Explore Copilot features to enhance workflows and user experiences."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 12
+content: |
+  [!include[](includes/14-design-business-process-include-ai-components-power-apps-canvas-app.md)]

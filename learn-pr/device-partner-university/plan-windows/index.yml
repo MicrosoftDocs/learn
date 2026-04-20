@@ -1,0 +1,65 @@
+### YamlMime:Module
+
+uid: learn.dpu.plan-windows
+
+title: Plan to deploy updates for Windows clients and Microsoft 365 apps
+
+metadata:
+  title: Plan to Deploy Updates for Windows Clients and Microsoft 365 Apps
+
+  description: In this module, you’ll learn how to plan updates for the clients and applications across your organization.
+
+  ms.date: 12/31/2025
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: module
+
+  ms.service: windows
+
+summary: |
+  This module introduces the Plan phase, the first stage of the Windows 11 deployment process. You’ll learn how to evaluate deployment readiness and plan your rollout by examining key operational and technical areas. In this phase, you assess readiness and identify gaps across six areas of your environment: operations, applications, infrastructure, configurations, devices, and users. The module guides you through planning-level tasks and deliverables for each area, helping you define success criteria, identify risks early, and create deliverables that can be shared and collaboratively updated throughout the life of the project.
+
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Evaluate your environment's readiness for Windows 11
+  - Define tasks and deliverables for a phased deployment plan
+  - Identify and document gaps at the earliest stage of the project
+prerequisites: |
+  - None
+
+iconUrl: /training/achievements/generic-badge.svg
+
+ratingEnabled: false
+
+levels:
+  - beginner
+
+roles:
+  - technology-manager
+
+products:
+  - windows-10
+  - windows-11
+  - m365
+  - m365-apps-admin-center
+  - intune
+  - configuration-manager
+
+units:
+  - learn.dpu.plan-windows.introduction
+  - learn.dpu.plan-windows.plan
+  - learn.dpu.plan-windows.operations
+  - learn.dpu.plan-windows.applications
+  - learn.dpu.plan-windows.infrastructure
+  - learn.dpu.plan-windows.configurations
+  - learn.dpu.plan-windows.devices
+  - learn.dpu.plan-windows.users
+  - learn.dpu.plan-windows.knowledge-check
+  - learn.dpu.plan-windows.summary
+
+badge:
+  uid: learn.dpu.plan-windows.badge

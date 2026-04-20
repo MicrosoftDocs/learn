@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-management-portal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Getting started with Surface Management Portal" module.
+  ms.date: 04/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Where do you locate Surface Management Portal after signing in to the Microsoft Intune admin center?"
+    choices:
+        - content: "All services"
+          isCorrect: true
+          explanation: "Correct. The module states that after signing in to the Microsoft Intune admin center, Surface Management Portal is located in All services."
+        - content: "Devices > Endpoint security"
+          isCorrect: false
+          explanation: "Incorrect. Endpoint security is a different area in Intune and doesn't provide access to Surface Management Portal."
+        - content: "Reports > Device health"
+          isCorrect: false
+          explanation: "Incorrect. Reports provide insights but don't give access to Surface Management Portal."
+        - content: "Tenant administration"
+          isCorrect: false
+          explanation: "Incorrect. Tenant administration isn't where Surface Management Portal is accessed."
+  - content: "Which subscription is required for an organization to access Surface Management Portal?"
+    choices:
+        - content: "Intune E3 or E5"
+          isCorrect: true
+          explanation: "Correct. The module specifies that an active Intune E3 or E5 subscription is required."
+        - content: "Microsoft 365 Business Basic"
+          isCorrect: false
+          explanation: "Incorrect. This subscription isn't listed as meeting the requirements for Surface Management Portal."
+        - content: "Windows 11 Enterprise"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't identify this as a prerequisite for Surface Management Portal access."
+        - content: "Azure Active Directory Free"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that this subscription alone is sufficient."
+  - content: "What is the result if Surface devices are deployed but not enrolled in Intune?"
+    choices:
+        - content: "Surface Management Portal can't be used"
+          isCorrect: true
+          explanation: "Correct. The module clearly states that if devices are deployed but not enrolled in Intune, Surface Management Portal can't be used."
+        - content: "Devices appear with limited information in the portal"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't indicate partial functionality if devices aren't enrolled."
+        - content: "Devices can be managed after assigning roles"
+          isCorrect: false
+          explanation: "Incorrect. Device enrollment in Intune is required regardless of role assignment."
+        - content: "Only warranty information is unavailable"
+          isCorrect: false
+          explanation: "Incorrect. The limitation affects use of the entire portal, not just warranty data."
+  - content: "Which role must be assigned to allow a user to view warranty status in Surface Management Portal?"
+    choices:
+        - content: "Microsoft Hardware Warranty Administrator"
+          isCorrect: true
+          explanation: "Correct. The module states that this role is required to view warranty status and manage service requests."
+        - content: "Global administrator"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't state that this role alone provides access to warranty information."
+        - content: "Intune service administrator"
+          isCorrect: false
+          explanation: "Incorrect. This role isn't identified as sufficient for viewing Surface warranty information."
+        - content: "Endpoint security administrator"
+          isCorrect: false
+          explanation: "Incorrect. This role focuses on security features and not Surface warranty access."
+  - content: "Which action verifies that your environment is ready for ongoing management in Surface Management Portal?"
+    choices:
+        - content: "Confirming that enrolled Surface devices appear with health and inventory data"
+          isCorrect: true
+          explanation: "Correct. The module explains that seeing the portal, enrolled devices, and health and inventory data indicates readiness."
+        - content: "Signing in to the Microsoft Intune admin center"
+          isCorrect: false
+          explanation: "Incorrect. Signing in alone doesn't verify Surface Management Portal access or readiness."
+        - content: "Assigning the required admin roles"
+          isCorrect: false
+          explanation: "Incorrect. Role assignment is necessary but doesn't by itself confirm readiness."
+        - content: "Confirming that an Intune tenant exists"
+          isCorrect: false
+          explanation: "Incorrect. Verifying a tenant exists doesn't confirm Surface Management Portal readiness."
