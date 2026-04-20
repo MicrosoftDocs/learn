@@ -17,10 +17,7 @@ The current functionality and availability of the two types of review is summari
 
 ## Code review monthly quota
 
-The review changes type of GitHub Copilot code review is a premium feature with a per-person monthly quota.
-
-> [!NOTE]
-> The per-person quota for GitHub Copilot code review will commence on June 4, 2025.
+The review changes type of GitHub Copilot code review is a premium feature with a per-person monthly quota. The quota is currently active.
 
 When you assign GitHub Copilot as a reviewer for a pull request, one premium request is deducted from your monthly quota each time GitHub Copilot posts comments to the pull request.
 
@@ -47,9 +44,14 @@ The **Review** smart action provides a way to review and analyze your code. It c
 
     The code review agent creates review comments in the COMMENTS panel (below the code editor) and displays suggested updates inline in the code editor.
 
+    > [!NOTE]
+    > The Visual Studio Code context menu for GitHub Copilot is actively being updated. The **Review** smart action may appear at the top level of the context menu (alongside **Explain**) rather than under **Generate Code**. If the **Review** option isn't available in the context menu, you can perform the same action by selecting your code and entering a prompt like "review this code" directly in the Chat view.
+
 1. Navigate through the suggestions and either apply or discard the updates.
 
-    ![Screenshot showing code review feedback using the Review smart action.](../media/github-copilot-review-and-comment-may-2025.png)
+    ![Screenshot showing a code review comment with a suggested code change diff and Apply and Discard buttons.](../media/github-copilot-review-and-comment-may-2025.png)
+
+    Where possible, Copilot's feedback includes suggested code changes. Use **Apply and Go To Next** to accept a suggestion, or **Discard and Go to Next** to reject it. Applied changes aren't automatically committed.
 
 ### Review all changes to your codebase
 
@@ -64,6 +66,24 @@ The **GitHub Copilot Code Review** feature provides a way to review all staged o
 1. Wait for GitHub Copilot to review your changes. This usually takes less than 30 seconds.
 
 1. If GitHub Copilot has any comments, they will be shown inline in your file(s), and in the Problems tab.
+
+    Where possible, Copilot's feedback includes suggested code changes. Use **Apply and Go To Next** to accept a suggestion, or **Discard and Go to Next** to reject it. Applied changes aren't automatically committed.
+
+## Customize code review with coding guidelines
+
+You can customize how Copilot reviews your code by adding custom instructions to your repository. This is supported for the **Review changes** type of review.
+
+Specify repository-wide custom instructions in a `.github/copilot-instructions.md` file. For example:
+
+```text
+When performing a code review, focus on readability and avoid nested ternary operators.
+When performing a code review, flag any use of hardcoded credentials.
+```
+
+You can also create path-specific instructions in `.github/instructions/**/*.instructions.md` files that Copilot uses only when reviewing files that match a specified path.
+
+> [!NOTE]
+> Copilot code review reads only the first 4,000 characters of any custom instruction file. Instructions beyond this limit don't affect the reviews generated.
 
 ## Summary
 
