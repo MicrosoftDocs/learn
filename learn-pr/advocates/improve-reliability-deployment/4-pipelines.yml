@@ -4,12 +4,12 @@ title: "Test automation and the delivery pipeline"
 metadata:
   title: "Test automation and the delivery pipeline"
   description: "Test automation and the delivery pipeline"
-  ms.date: 06/07/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
+  ms.contributors: orthomas-04172026
 durationInMinutes: 5
 content: |
   [!include[](includes/4-pipelines.md)]
@@ -17,33 +17,33 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Commit, test, scan, and build are typical steps in which of these things?'
+  - content: "Commit, test, scan, and build are typical steps in which of these things?"
     choices:
-    - content: 'Unit test'
+    - content: "Unit test"
       isCorrect: false
-      explanation: 'These are typical steps in a continuous delivery pipeline.'
-    - content: 'Epic deployment'
+      explanation: "These are typical steps in a continuous delivery pipeline."
+    - content: "Epic deployment"
       isCorrect: false
-      explanation: 'These are typical steps in a continuous delivery pipeline.'
-    - content: 'Continuous delivery pipeline'
+      explanation: "These are typical steps in a continuous delivery pipeline."
+    - content: "Continuous delivery pipeline"
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'Feature flag'
+      explanation: "Correct."
+    - content: "Feature flag"
       isCorrect: false
-      explanation: 'These are typical steps in a continuous delivery pipeline.'
+      explanation: "These are typical steps in a continuous delivery pipeline."
 
-  - content: 'Environment traceability allows us to do which of these things?'
+  - content: "Environment traceability allows us to do which of these things?"
     choices:
-    - content: 'Correlate what is running in production with a specific build instance.'
+    - content: "Correlate what is running in production with a specific build instance."
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'Find out which environment variables were active during a build.'
+      explanation: "Correct."
+    - content: "Find out which environment variables were active during a build."
       isCorrect: false
-      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
-    - content: 'Determine the origin of code in a source control system'
+      explanation: "Environment traceability allows us to correlate what is running in production with a specific build instance."
+    - content: "Determine the origin of code in a source control system"
       isCorrect: false
-      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
-    - content: 'Find the staging environment used for testing the code.'
+      explanation: "Environment traceability allows us to correlate what is running in production with a specific build instance."
+    - content: "Find the staging environment used for testing the code."
       isCorrect: false
-      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
-
+      explanation: "Environment traceability allows us to correlate what is running in production with a specific build instance."
+
