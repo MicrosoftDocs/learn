@@ -133,7 +133,7 @@ ChatGPT is intended for:
 
 ## GitHub Copilot tools
 
-GitHub provides a suite of AI-assisted programming tools, including GitHub Copilot and GitHub Copilot Chat. GitHub Copilot is an AI pair programmer that helps you write code faster and with less effort. GitHub Copilot works alongside you directly in your code editor, seamlessly integrating AI into your workflow. It provides intelligent code suggestions and completions based on the context of your code, helping you write code more efficiently and accurately. GitHub Copilot Chat is a chat interface that lets you interact with GitHub Copilot, to ask and receive answers to coding-related questions within GitHub.com and supported IDEs.
+GitHub provides a suite of AI-assisted programming tools, including GitHub Copilot. GitHub Copilot is an AI pair programmer that helps you write code faster and with less effort. GitHub Copilot works alongside you directly in your code editor, seamlessly integrating AI into your workflow. It provides intelligent code suggestions and completions based on the context of your code, helping you write code more efficiently and accurately. GitHub Copilot integrates with developer tools and platforms to provide chat experiences where you can interact with the AI to ask questions and receive answers to coding-related questions, either on GitHub or in supported IDEs.
 
 General support features:
 
@@ -149,7 +149,7 @@ GitHub Copilot's code completion features:
 
 GitHub Copilot suggestions can help you write code faster and with fewer errors, improving your productivity and efficiency.
 
-GitHub Copilot Chat's AI assistance features:
+GitHub Copilot's AI assistance features:
 
 - **Chat interface**: Provides a chat interface for interacting with GitHub Copilot, asking and receiving answers to coding-related questions.
 - **Code explanation**: Provides explanations for selected code snippets, helping you understand syntax, programming concepts, test cases, debugging, and more, without requiring you to navigate documentation or search online forums.
@@ -162,12 +162,12 @@ GitHub Copilot agents and agentic features:
 - **Agent**: A built-in agent that autonomously evaluates a request, determines which files to edit, plans the work needed, and applies changes to your codebase.
 - **Plan**: A built-in agent that creates a structured, step-by-step implementation plan for a task, which can then be handed off to the Agent for implementation.
 - **Ask**: A built-in agent that answers questions about your codebase, coding topics, and general technology concepts without making changes to your files.
-- **GitHub Copilot Cloud Agent **: An autonomous AI agent that can work on code changes for you by creating a branch from a GitHub issue or Copilot Chat prompt, exploring the codebase, and drafting changes—while letting you decide if and when to open a pull request.
+- **GitHub Copilot Cloud Agent**: An autonomous AI agent that can work on code changes for you by creating a branch from a GitHub issue or GitHub Copilot Chat prompt, exploring the codebase, and drafting changes—while letting you decide if and when to open a pull request.
 - **GitHub Copilot code review**: Provides AI-generated code review suggestions to help you write better code.
 
 By using AI to assist with coding tasks, GitHub Copilot can help you focus on higher-level design and problem-solving, rather than getting bogged down in syntax and implementation details.
 
-GitHub Copilot and GitHub Copilot Chat are intended for:
+GitHub Copilot is intended for:
 
 - Developers who want to write code faster and with fewer errors.
 - Teams that want to improve code quality and consistency across projects.
