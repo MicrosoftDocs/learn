@@ -50,7 +50,6 @@ subjects:
 units:
 - learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.introduction
 - learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.prepare-development-environment
-- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-develop-unit-tests-github-copilot
 - learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-refactor-improve-code-github-copilot
 - learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.knowledge-check
 - learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.summary
