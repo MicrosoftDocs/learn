@@ -1,5 +1,3 @@
-# Summary
-
 The goal in this module was to help you register your Azure NetApp Files to the resource provider and set up Azure NetApp Files by:
 
 - Creating a NetApp account

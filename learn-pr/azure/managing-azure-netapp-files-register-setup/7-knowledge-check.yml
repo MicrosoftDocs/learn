@@ -14,7 +14,6 @@ durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
   questions:
     - content: "Which of the following is required to register for Azure NetApp Files?"
       choices:
