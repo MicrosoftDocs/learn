@@ -65458,6 +65458,11 @@
       "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/1-introduction.md",
       "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/7-knowledge-check.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
     }
   ]
 }
