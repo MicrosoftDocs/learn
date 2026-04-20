@@ -65428,6 +65428,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-text-ai-language/7-extract-linked-entities.yml",
       "redirect_url": "/azure/ai-services/language-service/entity-linking/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/index.md",
+      "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
+      "redirect_document_id": false
     }
   ]
 }
