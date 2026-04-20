@@ -48,7 +48,6 @@ subjects:
 - app-development
 - productivity
 units:
-- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.prepare-development-environment
 - learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.summary
 badge:
   uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.badge
