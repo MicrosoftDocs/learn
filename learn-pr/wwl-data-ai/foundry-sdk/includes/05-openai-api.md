@@ -18,7 +18,7 @@ print(completion.choices[0].message.content)
 
 ## Retaining conversational context
 
-Unlike the *Responses* API, the *ChatCompletins* API doesn't provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
+Unlike the *Responses* API, the *ChatCompletions* API doesn't provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
 
 ```python
 # Initial messages
