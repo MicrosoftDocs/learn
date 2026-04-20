@@ -21,4 +21,4 @@ Common access blockers include:
 - Insufficient administrative permissions.
 
 >[!IMPORTANT]
-> Surface Management Portal access failures are related to Intune enrollment or subscription requirements, while Surface Support Portal access issues are related to related to roles or tenant context.
+> Surface Management Portal access failures are related to Intune enrollment or subscription requirements, while Surface Support Portal access issues are related to roles or tenant context.
