@@ -1,4 +1,3 @@
-
 In this exercise, you will register for Azure NetApp Files services, create a NetApp account, delegate a subnet, and request region access to Azure NetApp Files.
 
 ### Task 1 – Register for Azure Resource Provider
@@ -59,7 +58,7 @@ In this task, you select the subnet to use for Azure NetApp Files.
    - **Address range**: Specify the IP address range.
    - **Subnet delegation**: Select Microsoft.NetApp/volumes.
 
-![This screenshot shows the Azure Portal interface for creating a New Support Request within a NetApp account named IE_Test. The left navigation panel shows settings and various sections. The form is on the Problem description tab with fields for Issue type set to Service and subscription limits (quotas), Subscription (empty), and Quota type set to Storage: Azure NetApp Files limits. A Next button is available at the bottom.](../media/managing-azure-netapp-files-register-setup/image009.png)
+    ![This screenshot shows the Azure Portal interface for creating a New Support Request within a NetApp account named IE_Test. The left navigation panel shows settings and various sections. The form is on the Problem description tab with fields for Issue type set to Service and subscription limits (quotas), Subscription (empty), and Quota type set to Storage: Azure NetApp Files limits. A Next button is available at the bottom.](../media/managing-azure-netapp-files-register-setup/image009.png)
 
 ### Task 4: Request region access
 
