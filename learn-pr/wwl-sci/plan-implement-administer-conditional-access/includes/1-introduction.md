@@ -1,4 +1,4 @@
-Conditional Access gives a fine granularity of control over which users and identities can perform specific activities, access resources, and ensure data and systems are safe. With the introduction of Microsoft Entra Agent ID, that control now extends to AI agents — you apply the same Zero Trust principles to agent identities that you apply to users and workload identities.
+Conditional Access gives a fine granularity of control over which users and identities can perform specific activities, access resources, and ensure data and systems are safe. With the introduction of Microsoft Entra Agent ID control, now extends to AI agents—you apply the same Zero Trust principles to agent identities that you apply to users and workload identities.
 
 ## Learning objectives
 

@@ -1,4 +1,4 @@
-Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
+Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
  - Requiring all users to register for multifactor authentication.
  - Requiring administrators to perform multifactor authentication.
@@ -19,20 +19,20 @@ To enable or disable security defaults, sign in to the [Microsoft Entra admin ce
 | **Who should use security defaults?**                                                           | **Who shouldn't use security defaults?**                                                                                                 |
 | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | Organizations that want to increase their security posture but don't know how or where to start | Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies |
-| Organizations utilizing the free tier of Microsoft Entra ID Licensing                           | Organizations with Microsoft Entra ID Premium licenses                                                                                   |
+| Organizations utilizing the free tier of Microsoft Entra ID Licensing                           | Organization with Microsoft Entra ID Premium licenses                                                                                   |
 |                                                                                                 | Organizations with complex security requirements that warrant using Conditional Access                                                   |
 
 ## Policies enforced
 
 ### Unified multifactor authentication registration
 
-All users in your tenant must register for multifactor authentication (MFA) using the Microsoft Authenticator app. Registration is required immediately — there is no grace period. When users sign in after security defaults are enabled, they're prompted to register before they can access any resources. The MFA prompt uses number matching, where users enter a number displayed on screen into the Microsoft Authenticator app, which helps prevent MFA fatigue attacks.
+All users in your tenant must register for multifactor authentication (MFA) using the Microsoft Authenticator app. Registration is required immediately—there's no grace period. When users sign in after security defaults are enabled, they're prompted to register before they can access any resources. The MFA prompt uses number matching, where users enter a number displayed on screen into the Microsoft Authenticator app, which helps prevent MFA fatigue attacks.
 
 ### Protecting administrators
 
-Users with privileged access have increased access to your environment. Due to the power these accounts have, you should treat them with special care. One common method to improve the protection of privileged accounts is to require a stronger form of account verification for sign-in. In Microsoft Entra ID, you can get a stronger account verification by requiring multifactor authentication.
+Users with privileged access often increase access to your environment. Due to the power these accounts have, you should treat them with special care. One common method to improve the protection of privileged accounts is to require a stronger form of account verification for sign-in. In Microsoft Entra ID, you can get a stronger account verification by requiring multifactor authentication.
 
-After registration with multifactor authentication is finished, the following Microsoft Entra administrator roles are required to perform additional authentication every time they sign in:
+After registration with multifactor authentication is finished, the following Microsoft Entra administrator roles are required to perform other authentication every time they sign in:
 
  - Global Administrator
  - Application Administrator
@@ -57,15 +57,15 @@ We tend to think that administrator accounts are the only accounts that need ext
 
 After these attackers gain access, they can request access to privileged information on behalf of the original account holder. They can even download the entire directory to perform a phishing attack on your whole organization.
 
-One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Multifactor Authentication registration, they'll be prompted for additional authentication whenever necessary. This functionality protects all applications registered with Microsoft Entra ID, including SaaS applications.
+One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Multifactor Authentication registration, they'll be prompted for extra authentication whenever necessary. This functionality protects all applications registered with Microsoft Entra ID, including SaaS applications.
 
 ### Blocking legacy authentication
 
-To give your users easy access to your cloud apps, Microsoft Entra ID supports a variety of authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
+To give your users easy access to your cloud apps, Microsoft Entra ID supports various authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
 
  - Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
  - Client that uses mail protocols such as IMAP, SMTP, or POP3.
 
-Today, the majority of compromising sign-in attempts come from legacy authentication. Legacy authentication does not support multifactor authentication. Even if you have a multifactor authentication policy enabled on your directory, an attacker can authenticate by using an older protocol and bypass multifactor authentication.
+Today, most compromising sign-in attempts come from legacy authentication. Legacy authentication doesn't support multifactor authentication. Even if you have a multifactor authentication policy enabled on your directory, an attacker can authenticate by using an older protocol and bypass multifactor authentication.
 
 After security defaults are enabled in your tenant, all authentication requests made by an older protocol will be blocked. Security defaults blocks Exchange Active Sync basic authentication.
