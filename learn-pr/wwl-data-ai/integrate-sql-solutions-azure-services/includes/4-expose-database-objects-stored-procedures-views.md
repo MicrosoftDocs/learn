@@ -60,7 +60,7 @@ Setting `operation` to `query` in the GraphQL section indicates this entity supp
 
 ## Configure stored procedures for custom operations
 
-[Stored procedures](/azure/data-api-builder/stored-procedures?azure-portal=true) provide the most flexibility for custom database operations. They can accept parameters, perform complex logic, and return multiple result sets.
+[Stored procedures](/azure/data-api-builder/concept/rest/stored-procedures) provide the most flexibility for custom database operations. They can accept parameters, perform complex logic, and return multiple result sets.
 
 ```sql
 CREATE PROCEDURE dbo.GetProductsByPriceRange
