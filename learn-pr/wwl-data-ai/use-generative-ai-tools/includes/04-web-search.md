@@ -40,16 +40,13 @@ response = client.responses.create(
     model={model_deployment},
     instructions="You are an AI assistant. Use web search when current information is required.",
     input="What are three major announcements from Microsoft Build this week?",
-    tools=[{"type": "web_search_preview"}]
+    tools=[{"type": "web_search"}]
 )
 
 print(response.output_text)
 ```
 
 The output will vary based on current web results, but it should include a concise answer grounded in recent sources.
-
-> [!NOTE]
-> When using the web_search tool with Microsoft Foundry, use the name *web_search_preview*.
 
 ## How the web_search tool works
 

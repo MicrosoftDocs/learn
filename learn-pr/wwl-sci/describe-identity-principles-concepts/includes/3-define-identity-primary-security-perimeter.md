@@ -3,6 +3,10 @@ Digital collaboration has transformed how and where work gets done. Employees an
 
 This shift has fundamentally changed how organizations need to think about security.
 
+Watch the video that follows to learn about identities and the new security perimeter.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=25959c9a-c652-42fc-af31-cf751e478792]
+
 ## The traditional security perimeter
 
 Historically, organizations protected their resources using a *network perimeter*—a defined boundary, enforced by firewalls and VPN gateways, around corporate systems. Security controls at the edge of the network kept untrusted traffic out and allowed trusted internal traffic to flow freely.

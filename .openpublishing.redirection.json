@@ -65518,6 +65518,56 @@
       "source_path": "learn-pr/wwl-azure/guided-project-accelerate-app-development-using-github-copilot-tools/8-summary.md",
       "redirect_url": "/training/paths/accelerate-app-development-using-github-copilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/2-explore-core-features-microsoft-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/3-understand-device-management-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/4-effectively-secure-manage-applications.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/5-integrate-security-compliance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/6-optimize-deployment-strategies-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/7-unify-management-across-platforms-intune.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/discover-microsoft-intune-essentials/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune/",
+      "redirect_document_id": false
     }
   ]
 }
