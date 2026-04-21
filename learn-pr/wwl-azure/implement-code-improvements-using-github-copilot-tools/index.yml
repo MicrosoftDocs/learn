@@ -3,7 +3,7 @@ uid: learn.wwl.implement-code-improvements-using-github-copilot-tools
 metadata:
   title: Implement Code Improvements using GitHub Copilot Tools
   description: "This module explores using GitHub Copilot Chat to develop improvements for an existing codebase. Exercises provide practical experience implementing GitHub Copilot suggestions that improve code quality, reliability, performance, and security."
-  ms.date: 03/03/2026
+  ms.date: 04/16/2026
   ms.update-cycle: 180-days
   author: chrishowd
   ms.author: cahowd

@@ -72,7 +72,7 @@ Examples using chat participant and variables combined with slash commands:
 - `#codebase /explain`: Generate an explanation of the full workspace.
 - `#codebase /fix` (or `/fix`): Propose a fix for the problems in the selected code.
 - `#codebase /tests` (or `/tests`): Generate unit tests for the selected code.
-- `@vscode /api` (or `/api`): Ask about Visual Studio Code extension development.
+- `@vscode`: Ask questions about VS Code features, settings, and extension APIs. For example: `@vscode how to enable word wrapping?`
 - `#codebase /new` (or `/new`): Scaffold code for a new workspace.
 - `#codebase /newNotebook` (or `/newNotebook`): Create a new Jupyter Notebook.
 
