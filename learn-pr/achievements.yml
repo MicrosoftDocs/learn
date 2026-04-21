@@ -7936,3 +7936,13 @@ achievements:
   title: Introduction to SQL Server 2025 data virtualization
   summary: Learn about data virtualization, enhanced Polybase features in SQL Server 2025, and how to use Polybase to access and query external data.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure-spring-cloud-workshop.badge
+  type: badge
+  title: Deploy Spring microservices to Azure
+  summary: In this module, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Apps (ASA).
+  iconUrl: /training/achievements/azure-spring-cloud-workshop.svg
+- uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.badge
+  type: badge
+  title: Guided project - Accelerate app development using GitHub Copilot tools
+  summary: This Module explores using GitHub Copilot to accelerate development of an end-to-end project. GitHub Copilot is used to explain unfamiliar code, generate project documentation, develop a new app feature, develop unit tests, and implement improvements.&nbsp;
+  iconUrl: /training/achievements/generic-badge.svg

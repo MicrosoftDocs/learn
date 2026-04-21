@@ -1,4 +1,4 @@
-The GitHub Copilot Chat extension for Visual Studio Code supports the following chat interfaces:
+GitHub Copilot in Visual Studio Code supports the following chat interfaces:
 
 - The **Chat View** provides an AI assistant that's available to help you at any time.
 
@@ -16,7 +16,11 @@ The Chat view provides a managed environment for conversations between you and t
 
 By default, the Chat view is located in the Secondary Side Bar on the right side of the Visual Studio Code window.
 
-The Chat View supports three built-in agents: **Ask**, **Plan**, and **Agent**. You can select an agent from the agent picker in the Chat view.
+When you start a chat session, three choices shape how the AI responds:
+
+- **Agent type**: determines where the agent runs. Select a type from the **Agent Target** dropdown in the Chat view. Select **Local** to run the agent interactively in the editor with full access to your workspace, tools, and models. Other options include Copilot CLI, Cloud, and third-party providers.
+- **Agent**: determines the role or persona of the AI. Select an agent from the **agent picker** in the Chat view. The three built-in local agents are Ask, Plan, and Agent.
+- **Permission level**: controls how much autonomy the agent has for invoking tools and terminal commands. Options are **Default Approvals**, **Bypass Approvals**, and **Autopilot**.
 
 ### Use the Ask agent to generate code
 
@@ -115,11 +119,16 @@ When you use GitHub Copilot in Agent mode, GitHub Copilot acts as an autonomous 
 
 1. GitHub Copilot detects issues and problems in code edits and terminal commands and will iterate and perform actions to resolve them.
 
-1. As GitHub Copilot processes your request, it streams the suggested code edits directly in the editor.
+1. As GitHub Copilot processes your request, it streams the suggested code edits directly in the editor as inline diffs.
 
-1. Review the suggested edits and accept or discard the suggested edits.
+1. Review the suggested edits and accept or discard them.
+
+    Open a changed file to see the diff overlay in the editor. Use the editor overlay controls to navigate between changes and select **Keep** or **Undo** for individual edits. Alternatively, staging your changes in the Source Control view automatically accepts all pending edits.
 
 1. Continue to iterate and refine the new feature with more prompts if needed.
+
+> [!TIP]
+> Visual Studio Code automatically creates checkpoints (file snapshots) at key points during agent sessions. If the agent produces unwanted changes, you can roll back to a previous checkpoint. For more information, see [Chat checkpoints](https://code.visualstudio.com/docs/copilot/chat/chat-checkpoints).
 
 ## Generate code using an inline chat session
 

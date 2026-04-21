@@ -29,6 +29,6 @@ Learn more:
 - [Microsoft Security Copilot agents in Microsoft Entra](/entra/fundamentals/agents)
 - [Microsoft Security Copilot agents in Microsoft Defender](/defender-xdr/security-copilot-agents-defender)
 - [Microsoft Security Copilot agents in Microsoft Purview](/purview/copilot-in-purview-agents)
-- [Microsoft Security Copilot agents in Microsoft Intune](/intune/agents/agents-overview)
+- [Microsoft Security Copilot agents in Microsoft Intune](/intune/copilot/agents/)
 - [Build your own agents in Security Copilot](/copilot/security/developer/build-agent-natural-language)
 - [Microsoft Security Copilot agent development overview](/copilot/security/developer/custom-agent-overview)

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/03/2026
+  ms.date: 04/16/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
@@ -91,14 +91,14 @@ quiz:
     - content: "It enables developers to review each suggestion by selecting the left or right arrows."
       isCorrect: true
       explanation: "Correct. When GitHub Copilot generates more than one suggestion, developers can cycle through the suggestions by selecting the left or right arrows."
-  - content: "What types of code conversions can be completed using GitHub Copilot?"
+  - content: "What is the purpose of next edit suggestions (NES) in GitHub Copilot?"
     choices:
-    - content: "Convert an entire code file, a function, or a code snippet to an image."
+    - content: "To generate code completions at your cursor position based on the code you've already typed."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot doesn't have the capability to convert code snippets into images."
-    - content: "Convert an entire code file, a function, or a code snippet to another programming language."
+      explanation: "Incorrect. That describes ghost text completions. NES predicts the location and content of follow-on edits needed to keep your code consistent after a change you make — even if those edits are elsewhere in the file."
+    - content: "To predict where your next edit needs to happen and what that edit should be, even if it's elsewhere in the file."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot can convert an entire code file, a function, or a code snippet to another programming language."
-    - content: "Convert a programming language to a human language."
+      explanation: "Correct. NES analyzes changes you make and predicts both where your next edit needs to happen and what that edit should be — even if it's in a different part of the file. A gutter arrow indicates a suggestion is available, and you press Tab to navigate to it and Tab again to accept it."
+    - content: "To automatically apply all suggested edits across the entire file without requiring user review."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot isn't designed to translate programming languages into human languages."
+      explanation: "Incorrect. NES requires user action. You press Tab to navigate to the suggested edit location and Tab again to accept it. You should always review each suggestion before accepting it."

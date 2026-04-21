@@ -1,4 +1,4 @@
-The OoenAI *Responses* API brings together capabilities from two previously separate APIs (*ChatCompletions* and *Assistants*) in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. You can access the Responses API through an OpenAI-compatible client using either the Foundry SDK or the OpenAI SDK.
+The OpenAI *Responses* API brings together capabilities from two previously separate APIs (*ChatCompletions* and *Assistants*) in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. You can access the Responses API through an OpenAI-compatible client using either the Foundry SDK or the OpenAI SDK.
 
 ## Understanding the Responses API
 

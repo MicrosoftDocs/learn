@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-fabric-data-agent-ontology.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to building a Fabric data agent with an ontology as its data source, letting clinical staff ask natural language questions and get governed answers without writing code.
+  ms.date: 04/17/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
