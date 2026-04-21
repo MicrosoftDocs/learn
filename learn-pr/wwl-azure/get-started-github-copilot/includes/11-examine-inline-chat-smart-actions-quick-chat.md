@@ -1,167 +1,38 @@
-In addition to the Chat view, GitHub Copilot Chat provides several other ways to interact with the AI pair programmer. These include inline chat and smart actions.
-
-## Inline chat
-
-One of GitHub Copilot Chat's key features is answering questions inline as you're coding. This allows you to harness the power of AI directly within your code editor, with minimal interruption to your development workflow.
-
-The inline chat feature is only accessible when a file is open in the editor. There are several ways to open an inline chat session:
-
-- Select **Editor Inline Chat** from the GitHub Copilot Chat menu.
-- Use a keyboard shortcut: **Ctrl+I**.
-- Right-click inside the code editor, select **Copilot** from the context menu, and then select **Editor Inline Chat**.
-
-![Screenshot showing how to access the inline chat from the GitHub Copilot menu in Visual Studio Code.](../media/inline-chat-1.png)
-
-You can use an inline chat session to ask GitHub Copilot questions as you write or iterate your code.
-
-When you open an inline chat session, the following interface is presented in the Editor.
-
-![Screenshot showing how to access the inline chat using hot keys in Visual Studio Code.](../media/inline-chat-2.png)
-
-Consider the following scenario:
-
-- You are developing a C# application that processes a numeric list. The data is processed in batches of 100.
-- You use the code snippet below to create a list of 100 random integers between 1 and 1000 that you can use for testing.
-
-```csharp
-// create a list of 100 random number between 1 and 1000
-List<int> numbers = new List<int>();
-Random random = new Random();
-for (int i = 0; i < 100; i++)
-{
-    numbers.Add(random.Next(1, 1000));
-}
-```
-
-The code is working fine. However, what if the requirements change? What if you need to ensure that the list doesn't include any duplicate numbers?
-
-To update your code using GitHub Copilot auto completions, you would need to:
-
-1. Delete the existing code.
-1. Create a new comment that reflects your updated requirement.
-1. Use GitHub Copilot to generate a new code snippet from the updated comment.
-1. Review the suggestions and select the best option.
-
-Luckily that isn't necessary. A better solution is to use GitHub Copilot Chat to suggest the required code updates.
-
-You can use an inline chat session to suggest a code update as follows:
-
-1. Highlight the code snippet that you want to update.
-1. Press `Ctrl` + `I` to open the inline chat.
-1. Ask GitHub Copilot Chat how to complete the update.
-1. Review the suggestions and select the best option.
-
-In this case, you could ask: `Update this code to ensure that numbers doesn't include any duplicates`
-
-If you like the proposed code updates, you can select **Accept** and continue coding.
-
-![Screenshot showing suggested update from inline chat in Visual Studio Code.](../media/inline-chat-3.png)
-
-If you don't like the proposed updates, you can ask GitHub Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that appears below the prompt textbox.
-
-If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. GitHub Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate. You can choose **Discard** to close the inline chat without making any changes.
+In addition to the Chat view, GitHub Copilot provides several other ways to interact with the AI pair programmer. These include smart actions, Quick Chat, and Inline Chat.
 
 ## Smart actions
 
-Some tasks are so common that they can be automated. GitHub Copilot Chat includes smart actions that allow you to complete certain tasks without having to write a prompt. Smart actions are predefined actions that you can run directly from the Visual Studio Code editor to perform common coding tasks quickly and easily.
+Some tasks are so common that they can be automated. Visual Studio Code provides GitHub Copilot smart actions that allow you to complete certain tasks without having to write a prompt. Smart actions are predefined actions that you can run directly from the Visual Studio Code editor to perform common coding tasks quickly and easily.
 
 The following smart actions are available:
 
-- **Explain**: The `Explain` action generates a natural language description of the selected code. This can be useful for understanding the purpose and functionality of a code snippet. The `Explain` action is especially useful if you're working with unfamiliar code or need to explain the code to others.
-- **Fix**: The `Fix` action suggests a fix for the selected code. This can be helpful if you encounter an error or issue in your code and need guidance on how to resolve it. GitHub Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue.
-- **Review and Comment**: The `Review and Comment` action provides a code review of the selected code. This can be useful for identifying potential issues, improving code quality, and ensuring best practices are followed. The `Review and Comment` action can help you identify bugs, performance bottlenecks, and security vulnerabilities in your code.
-- **Generate Docs**: The `Generate Docs` action creates documentation for the selected code. This can be useful for documenting your codebase, especially if you're working on a project with multiple contributors or need to share your code with others.
-- **Generate Tests**: The `Generate Tests` action creates unit tests for the selected code. This can be helpful for ensuring the correctness and reliability of your code, especially if you're working on a project with complex logic or critical functionality.
+- **Explain**: Generates a natural language description of the selected code. This is useful for understanding unfamiliar code or explaining it to others.
+- **Review**: Provides a code review of the selected code. Helps identify bugs, performance bottlenecks, and security vulnerabilities.
+- **Generate Docs**: Creates documentation for the selected code. Useful for documenting your codebase for a team or other contributors.
+- **Generate Tests**: Creates unit tests for the selected code. Helps ensure the correctness and reliability of code with complex logic.
+- **Fix**: Suggests a fix for the selected code. Useful when you encounter an error or issue and need guidance on how to resolve it.
 
-To access the smart actions, right-click on a code snippet in the editor and select the desired action from the GitHub Copilot context menu.
+To access smart actions, right-click in the code editor. The context menu includes a section for GitHub Copilot smart actions. The available smart actions may vary based on the context of your code selection. For example, if you select code that contains an error, the **Fix** smart action should be included in the context menu.
 
-![Screenshot showing how to access smart actions in Visual Studio Code.](../media/smart-actions-1.png)
+Smart actions aren't limited to the right-click menu. GitHub Copilot also surfaces smart actions as sparkle (✨) icons elsewhere in Visual Studio Code. For example, the sparkle icon appears under the following conditions:
 
-Once again, let's consider the prime number app.
+- In the Test Explorer to fix failing tests.
+- In the terminal gutter after a failed command.
+- In the Source Control view to generate commit messages.
+- When you rename a symbol with F2 to suggest AI-generated names.
 
-In the previous section, the inline chat suggested the following code to ensure that `numbers` doesn't include any duplicates:
+## Quick Chat
 
-```csharp
-// create a list of 100 random numbers between 1 and 1000
-List<int> numbers = new List<int>();
-Random random = new Random();
-while (numbers.Count < 100)
-{
-    int randomNumber = random.Next(1, 1000);
-    if (!numbers.Contains(randomNumber))
-    {
-        numbers.Add(randomNumber);
-    }
-}
-```
+Quick Chat provides a lightweight chat panel at the top of the editor for short questions and interactions. It lets you get a quick answer without opening the full Chat view or leaving your coding context.
 
-Although this code ensures a collection of unique elements, there could be opportunities for improvement.
+To open Quick Chat, use the **Ctrl+Shift+Alt+L** keyboard shortcut or select **Quick Chat** from the **Chat** menu in the Visual Studio Code title bar.
 
-You can use the **Review This** smart action to check code selections. To use the **Review This** smart action:
+Type your prompt and press Enter. Quick Chat supports the same `#`-mentions for adding context as the full Chat view. If the conversation grows, select **Open in Chat View** to continue in the full Chat view.
 
-1. Select a code snippet that needs review. In this case, the code that generates the list of random numbers.
+## Inline Chat
 
-1. Select **Review This** from the GitHub Copilot context menu.
-
-1. Review the suggested updates and select **Accept** to apply the changes.
-
-For the code snippet that generates random numbers, the **Review This** smart action suggests the following:
-
-- Initializing `List<int> numbers` with a capacity of `100` to avoid multiple resizes during population.
-- Using a `HashSet<int>` rather than a `List<int>` for faster lookups when checking for duplicates.
-
-In this case, the **Review This** smart action leads you to using `HashSet<int>` rather than `List<int>` to improve performance.
-
-```csharp
-// create a list of 100 random numbers between 1 and 1000
-HashSet<int> numbers = new HashSet<int>();
-Random random = new Random();
-while (numbers.Count < 100)
-{
-    int randomNumber = random.Next(1, 1000);
-    if (!numbers.Contains(randomNumber))
-    {
-        numbers.Add(randomNumber);
-    }
-}
-
-int sum = addPrimeNumbersInNumericList(numbers);
-Console.WriteLine(sum);
-```
-
-Although using a `HashSet` works efficiently to ensure a collection of unique elements, the update creates a new problem. The `addPrimeNumbersInNumericList` method expects a `List<int>` as input, but the updated code creates a `HashSet<int>`. This results in the following compilation error:
-
-![Screenshot showing a compilation error in Visual Studio Code.](../media/smart-actions-2.png)
-
-Fortunately, you can use the **Fix** smart action to correct the error. To use the **Fix** smart action:
-
-1. Right-click on the code snippet that needs to be fixed. In this case, the code underlined in red.
-
-1. Select **Fix** from the GitHub Copilot context menu.
-
-1. Review the suggested fix and select **Accept** to apply the changes.
-
-The `Fix` smart action generates one or more suggestions to fix an error. In this case, one of the suggestions uses the `ToList()` method to convert the `HashSet` to a `List` inside the call to `addPrimeNumbersInNumericList`. The resulting code will look similar to the following code snippet:
-
-```csharp
-// create a list of 100 random numbers between 1 and 1000
-HashSet<int> numbers = new HashSet<int>();
-Random random = new Random();
-while (numbers.Count < 100)
-{
-    int randomNumber = random.Next(1, 1000);
-    if (!numbers.Contains(randomNumber))
-    {
-        numbers.Add(randomNumber);
-    }
-}
-
-int sum = addPrimeNumbersInNumericList(numbers.ToList());
-Console.WriteLine(sum);
-```
-
-As always, review the suggestion provided by GitHub Copilot Chat. There may better solutions. You can select **Accept** to update your code with the proposed fix.
+Starting with Visual Studio Code 1.99 (March 2025), the Inline Chat experience moved into the unified chat panel architecture. The previous Inline Chat interface included a floating overlay that appeared directly in the editor, showed diffs in place, and let you accept or reject changes without leaving the file. That overlay was deprecated because it couldn't handle multi-file edits and lacked conversation history. The Visual Studio Code user interface still provides access to Inline Chat, but the Inline Chat functionality is now integrated into the main Chat view.
 
 ## Summary
 
-GitHub Copilot Chat provides several ways to interact with the AI pair programmer, including inline chat and smart actions. These features allow you to ask questions, get code suggestions, and perform common coding tasks quickly and easily. Inline chat enables you to ask GitHub Copilot questions directly in the editor without switching context. Smart actions provide predefined operations like explaining code, fixing errors, generating tests, and reviewing code that you can run with a single click from the context menu.
+In addition to the Chat view, Visual Studio Code provides several ways to interact with GitHub Copilot's AI pair programmer. Smart actions, Quick Chat, and Inline Chat provide useful alternatives under specific conditions. By using these features, you can enhance your productivity and get more value out of GitHub Copilot.
