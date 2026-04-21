@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Planned for deployment by evaluating organizational readiness for Windows 11, including defining success criteria, identifying risks, and creating deliverables.
   - Prepared for deployment by validating readiness and remediating gaps using recommended tools, reports, and deliverables.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/deploy-windows.svg
 ratingEnabled: false
 levels:
   - beginner
