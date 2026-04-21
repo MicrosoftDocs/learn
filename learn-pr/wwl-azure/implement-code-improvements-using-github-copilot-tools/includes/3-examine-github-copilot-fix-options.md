@@ -4,6 +4,9 @@ GitHub Copilot provides quick fix options that address coding issues, test failu
 - Slash command: The `/fix` slash command is available in the Ask agent, Inline Chat sessions, and the Quick Chat window.
 - Code actions: "Fix" code actions, such as **Fix using Copilot**, are displayed in the Visual Studio Code interface when GitHub Copilot detects certain issues.
 
+> [!NOTE]
+> The Visual Studio Code context menu for GitHub Copilot is actively being updated. The **Fix** smart action may not appear in the context menu location described in this unit. If the **Fix** option isn't available in the context menu, you can perform the same action by selecting your code and entering a prompt like "fix this code" directly in the Chat view.
+
 ## Fix coding issues using the Fix smart action
 
 The **Fix** smart action is accessible from the context menu in the editor, and can be used to address coding issues without writing a prompt.

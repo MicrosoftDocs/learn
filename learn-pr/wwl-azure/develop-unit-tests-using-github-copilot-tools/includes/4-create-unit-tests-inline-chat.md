@@ -6,13 +6,18 @@ To create unit tests using Inline Chat, follow these steps:
 
 1. Open the file that contains the code you want to test.
 
-1. Select the code block that you want to test.
+1. Select the code block that needs to be tested using a unit test (typically a function or method).
 
 1. Open an Inline Chat session.
 
     Use the **Ctrl+I** keyboard shortcut to open the Inline Chat session. Alternatively, you can select **Editor Inline Chat** from one of the GitHub Copilot menus.
 
-1. Enter a prompt that generates unit tests for the selected code.
+    > [!NOTE]
+    > If the file is part of an active Chat agent session, pressing **Ctrl+I** generates the option to "Add File to Chat" or "Add Selection to Chat". To always use regular inline chat, set `inlineChat.askInChat` to `false` in Visual Studio Code settings.
+
+1. Select the **Add Selection to Chat** option.
+
+1. In the Chat view, enter a prompt that generates unit tests for the selected code.
 
     For example: "/tests Generate unit tests for this method. Validate both success and failure, and include edge cases."
 
