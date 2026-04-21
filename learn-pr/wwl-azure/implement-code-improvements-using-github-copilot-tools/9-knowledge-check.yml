@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/03/2026
+  ms.date: 04/16/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
@@ -47,58 +47,58 @@ quiz:
     - content: "To add new features or enhancements to the code."
       isCorrect: false
       explanation: "Incorrect. Code refactoring isn't primarily about adding new features or enhancements, but about improving the internal structure of the code."
-  - content: "What factors can be considered when working on code quality improvements?"
+  - content: "What is the benefit of using `#codebase` when constructing a prompt in GitHub Copilot Chat?"
     choices:
-    - content: "The number of lines of code in the program."
+    - content: "It limits the search to only the currently open file."
       isCorrect: false
-      explanation: "Incorrect. The number of lines of code isn't a primary factor in determining code quality."
-    - content: "The time required to write code."
+      explanation: "Incorrect. `#codebase` isn't limited to a single file. It searches across your entire project."
+    - content: "It downloads external code samples from GitHub.com into the current project."
       isCorrect: false
-      explanation: "Incorrect. The time required to write code doesn't directly impact code quality."
-    - content: "Readability, complexity, modularity, reusability, testability, extensibility, reliability, performance, security, scalability, usability, and portability."
+      explanation: "Incorrect. `#codebase` doesn't download external code. It performs a search within your local workspace."
+    - content: "It lets GitHub Copilot automatically find relevant files across the codebase by performing a code search."
       isCorrect: true
-      explanation: "Correct. These are all important factors to consider when working on code quality improvements."
-  - content: "What is the importance of context and intent when developing prompts for GitHub Copilot agents?"
+      explanation: "Correct. Using `#codebase` in a prompt lets GitHub Copilot search across your entire project to find the most relevant files and context for your request."
+  - content: "What is the primary benefit of using the Plan agent before handing a task off to the Agent in GitHub Copilot?"
     choices:
-    - content: "They determine the color scheme used by GitHub Copilot."
+    - content: "The Plan agent runs terminal commands to prepare the workspace before the Agent begins making changes."
       isCorrect: false
-      explanation: "Incorrect. Context and intent don't affect the color scheme of GitHub Copilot."
-    - content: "They control the volume of the audio output from GitHub Copilot."
-      isCorrect: false
-      explanation: "Incorrect. Context and intent don't control the volume of any audio output, as GitHub Copilot doesn't provide audio output."
-    - content: "They specify the scope that GitHub Copilot should examine and the goal to be achieved."
+      explanation: "Incorrect. The Plan agent doesn't run terminal commands. It analyzes your codebase and produces a structured implementation plan."
+    - content: "The Plan agent creates a structured, step-by-step implementation plan that you can review and confirm before any code changes are made."
       isCorrect: true
-      explanation: "Correct. Context and intent help GitHub Copilot agents understand what part of the codebase to analyze and what outcome you want to achieve."
-  - content: "What does code reliability refer to in software development?"
+      explanation: "Correct. The Plan agent generates a detailed plan of what will be changed. You review it first, and only when it looks right do you hand it off to an implementation agent to execute."
+    - content: "The Plan agent automatically applies all suggested code changes and then presents a summary of what was done."
+      isCorrect: false
+      explanation: "Incorrect. The Plan agent creates a plan without making code changes. It's up to you to hand the plan off to an implementation agent when you're ready."
+  - content: "What is one key difference between 'Review selection' and 'Review changes' in GitHub Copilot code review?"
     choices:
-    - content: "The use of modern CPU architectures by parallelizing tasks and performing I/O operations asynchronously."
+    - content: "Review selection supports custom coding guidelines; Review changes does not."
       isCorrect: false
-      explanation: "Incorrect. This is a method to improve code performance, not a definition of code reliability."
-    - content: "The likelihood that software will function correctly under specific conditions and for a certain period of time."
+      explanation: "Incorrect. It's the other way around. Review changes supports custom coding guidelines; Review selection does not."
+    - content: "Review selection works only in the Source Control view; Review changes works in the code editor."
+      isCorrect: false
+      explanation: "Incorrect. Review selection works in the code editor where you highlight code. Review changes is accessed from the Source Control view."
+    - content: "Review selection is a standard feature available to all GitHub Copilot subscribers; Review changes is a premium feature with a per-person monthly quota."
       isCorrect: true
-      explanation: "Correct. Code reliability refers to the probability of a software system functioning without failure under specified conditions for a specified period of time."
-    - content: "The efficiency of a program or application."
-      isCorrect: false
-      explanation: "Incorrect. This definition refers to code performance, not code reliability."
-  - content: "What is one way to improve code reliability?"
+      explanation: "Correct. Review selection is available to all GitHub Copilot subscribers as a standard feature. Review changes is a premium feature available on Pro, Pro+, Business, and Enterprise plans, with a per-person monthly quota."
+  - content: "How does GitHub Copilot assist when a command fails to run in the terminal?"
     choices:
-    - content: "By optimizing algorithms and data structures for the task at hand."
+    - content: "It automatically reruns the command with corrected syntax and displays the new output."
       isCorrect: false
-      explanation: "Incorrect. This is a method to improve code performance, not code reliability."
-    - content: "By identifying potential issues in the code to prevent bugs and errors from occurring."
+      explanation: "Incorrect. GitHub Copilot doesn't automatically rerun commands. It offers a Quick Fix option for you to review and act on."
+    - content: "It opens a new terminal window and runs a built-in diagnostic test."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't open new terminal windows or run diagnostic tests automatically."
+    - content: "It displays a sparkle icon in the terminal gutter that offers a Quick Fix to explain what happened and suggest a resolution."
       isCorrect: true
-      explanation: "Correct. Identifying potential issues in the code can help prevent bugs and errors from occurring, which improves code reliability."
-    - content: "By minimizing disk and network I/O operations or performing them asynchronously."
-      isCorrect: false
-      explanation: "Incorrect. This is a method to improve code performance, not code reliability."
-  - content: "What are some ways to improve exception handling in code to make it more secure?"
+      explanation: "Correct. When a command fails in the terminal, GitHub Copilot shows a sparkle icon in the gutter. Selecting it opens a Quick Fix that explains the error and suggests how to resolve it."
+  - content: "How can you instruct GitHub Copilot to focus on specific concerns when reviewing your code?"
     choices:
-    - content: "Revealing sensitive information in exceptions, catching general exceptions only, and swallowing exceptions."
+    - content: "By selecting a specific programming language profile in Visual Studio Code settings."
       isCorrect: false
-      explanation: "Incorrect. These practices don't improve exception handling. They can actually make the code less secure."
-    - content: "Avoid revealing sensitive information in exceptions, catch the most specific exceptions possible, and avoid swallowing exceptions."
+      explanation: "Incorrect. There's no language profile setting in Visual Studio Code that controls the focus of GitHub Copilot code review."
+    - content: "By running the `/fix` slash command before requesting a review."
+      isCorrect: false
+      explanation: "Incorrect. The `/fix` command is for fixing coding issues, not for customizing code review behavior."
+    - content: "By adding custom instructions to a `.github/copilot-instructions.md` file or path-specific `.instructions.md` files in the repository."
       isCorrect: true
-      explanation: "Correct. These practices can help improve exception handling in code and make it more secure."
-    - content: "Exposing detailed error information, catching only specific exceptions, and not rethrowing exceptions."
-      isCorrect: false
-      explanation: "Incorrect. Exposing detailed error information and not rethrowing exceptions can make the code less secure."
+      explanation: "Correct. You can customize how GitHub Copilot reviews your code by specifying repository-wide guidelines in `.github/copilot-instructions.md`, or path-specific guidelines in `.github/instructions/**/*.instructions.md` files."

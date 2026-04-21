@@ -1,0 +1,3 @@
+In this module, you learned how to determine the appropriate tenant access model when managing Surface service and support on behalf of customers using Surface Support Portal. You explored when to work in a customer's tenant versus a partner tenant, and how tenant context directly affects how service and support requests are created, tracked, and managed.
+
+You also learned how to safely manage multiple customer tenants by validating tenant context before performing actions, identified the types of Surface support actions partners can perform, and recognized when issues require escalation due to access, role, or tenant authorization boundaries.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-support-service-provider.understand-partner-access-models-for-surface-support
+title: Understand partner access models for Surface support
+metadata:
+  title: Understand Partner Access Models For Surface Support
+  description: This content is part of the "Managing Surface support as a service provider or partner" module.
+  ms.date: 04/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-understand-partner-access-models-for-surface-support.md)]

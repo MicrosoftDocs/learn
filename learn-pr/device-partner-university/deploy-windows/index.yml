@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.dpu.deploy-windows
+title: Deploy updates for Windows client and Microsoft 365 apps
+metadata:
+  title: Deploy Updates For Windows Client And Microsoft 365 Apps
+  description: In this module, you'll learn how to deploy updates to the clients and apps in your organization.
+  ms.date: 04/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows
+summary: |
+  This module introduces the Deploy phase, the third phase of the Windows 11 deployment process. By this stage, the groundwork has been established during the Plan and Prepare phases, and you're ready to begin deployment. This is a ring-based or phased deployment, with iterative monitoring and management across six key areas of the environment: Operations, Applications, Infrastructure, Configurations, Devices, and Users. This module guides you through each area one by one, outlining the tasks and deliverables that will help you deploy Windows 11 across your organization. Keep in mind that in practice, these areas often require simultaneous or overlapping attention. Deliverables should be in a format that's easy to share and collaboratively edit throughout the life of the project.
+
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Implement, monitor, and manage Windows 11 deployment using a ring-based approach, including pilot and broad deployment phases
+  - Identify and apply best practices for managing deployment across operations, applications, infrastructure, configurations, devices, and users
+  - Create and maintain deliverables that support collaboration, tracking, and reporting throughout the deployment process
+
+prerequisites: |
+  - Planned for deployment by evaluating organizational readiness for Windows 11, including defining success criteria, identifying risks, and creating deliverables.
+  - Prepared for deployment by validating readiness and remediating gaps using recommended tools, reports, and deliverables.
+iconUrl: /training/achievements/deploy-windows.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - technology-manager
+products:
+  - windows-10
+  - windows-11
+  - m365
+  - m365-apps-admin-center
+  - intune
+  - configuration-manager
+units:
+  - learn.dpu.deploy-windows.introduction
+  - learn.dpu.deploy-windows.phased-approach
+  - learn.dpu.deploy-windows.operations
+  - learn.dpu.deploy-windows.applications
+  - learn.dpu.deploy-windows.infrastructure
+  - learn.dpu.deploy-windows.configurations
+  - learn.dpu.deploy-windows.devices
+  - learn.dpu.deploy-windows.users
+  - learn.dpu.deploy-windows.knowledge-check
+  - learn.dpu.deploy-windows.summary
+badge:
+  uid: learn.dpu.deploy-windows.badge
+

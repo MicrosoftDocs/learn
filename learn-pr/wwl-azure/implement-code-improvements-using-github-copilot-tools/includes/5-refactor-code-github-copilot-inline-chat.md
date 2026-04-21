@@ -29,6 +29,9 @@ To refactor code using Inline Chat, follow these steps:
 
     Use the **Ctrl+I** keyboard shortcut to open the Inline Chat session. Alternatively, you can select **Editor Inline Chat** from one of the GitHub Copilot menus.
 
+    > [!NOTE]
+    > If the file belongs to an active chat editing session, pressing **Ctrl+I** opens **Ask in Chat** in the Chat view instead of regular inline chat. This routes your prompt into the existing session so it can use the full conversation context. To always use regular inline chat regardless of session state, set `inlineChat.askInChat` to `false` in VS Code settings.
+
 1. Enter a prompt that asks for an optimization.
 
     For example: **Can this code be improved?**

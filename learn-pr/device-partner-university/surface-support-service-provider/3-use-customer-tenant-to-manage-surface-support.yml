@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-support-service-provider.use-customer-tenant-to-manage-surface-support
+title: Use a customer's tenant to manage Surface support
+metadata:
+  title: Use A Customer's Tenant To Manage Surface Support
+  description: This content is part of the "Managing Surface support as a service provider or partner" module.
+  ms.date: 04/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-use-customer-tenant-to-manage-surface-support.md)]
