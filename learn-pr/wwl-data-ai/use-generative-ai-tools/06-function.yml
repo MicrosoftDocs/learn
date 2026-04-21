@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generative-ai-tools.functions
-title: Use the functions tool
+title: Use the function tool
 metadata:
-  title: Use the functions tool
-  description: Use the functions tool to interact with web-based functions.
+  title: Use the function tool
+  description: Use the function tool to interact with web-based functions.
   author: graememalcolm
   ms.author: gmalc
   ms.date: 03/19/2026
