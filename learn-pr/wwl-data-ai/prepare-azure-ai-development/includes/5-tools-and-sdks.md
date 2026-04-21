@@ -32,6 +32,6 @@ GitHub is the world's most popular platform for source control and DevOps manage
 
 You can develop AI applications using many common programming languages and frameworks, including Microsoft C#, Python, Node, TypeScript, Java, and others. When building AI solutions on Azure, some common APIs and SDKs you should plan to use include:
 
-- The **[Microsoft Foundry SDK](/foundry/how-to/develop/sdk-overview?azure-portal=true)**, which enables you to write code to connect to Microsoft Foundry projects and access Foundry-specific assets, like agents and Foundry IQ knowledge stores.
+- The **[Microsoft Foundry SDK](/azure/foundry/how-to/develop/sdk-overview)**, which enables you to write code to connect to Microsoft Foundry projects and access Foundry-specific assets, like agents and Foundry IQ knowledge stores.
 - The **[The OpenAI API](/azure/foundry/openai/latest)**, which enables you to use OpenAI SDKs to build chat applications based on Foundry models that support OpenAI syntax.
 - **[Foundry Tools SDKs](/azure/ai-services/reference/sdk-package-resources?azure-portal=true)** - AI service-specific libraries for multiple programming languages and frameworks that enable you to consume Foundry Tools resources in your subscription. You can also use Foundry Tools through their [REST APIs](/azure/ai-services/reference/rest-api-resources).
