@@ -24,7 +24,6 @@ The module also covered key components of network infrastructure, such as switch
 - [UGreen: Network Attached Storage: Everything Explained](https://nas.ugreen.com/blogs/knowledge/network-storage-nas-guide)
 - [IBM: What is network attached storage (NAS)?](https://www.ibm.com/think/topics/network-attached-storage)
 - [GreenCloud: What is a Data Center Firewall?](https://blog.greencloudvps.com/what-is-a-data-center-firewall.php)
-- [VMware: What is a data center firewall?](https://www.vmware.com/topics/data-center-firewall)
 - [Datacenter Knowledge: Next-Gen Networking: Exploring the Utility of Smart Routers in Data Centers](https://www.datacenterknowledge.com/switches-routers/next-gen-networking-exploring-the-utility-of-smart-routers-in-data-centers)
 - [Databank: Demystifying Data Center Networking: A Beginner’s Guide](https://www.databank.com/resources/blogs/demystifying-data-center-networking-a-beginners-guide/)
 - [Coruzant Technologies: An Ultimate Guide To Data Center Switches](https://coruzant.com/infrastructure/an-ultimate-guide-to-data-center-switches/)

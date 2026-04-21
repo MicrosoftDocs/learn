@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-fabric-data-agent-ontology.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  module_assessment: true
+  ai_generated_module_assessment: false
+  description: Check your knowledge of creating, configuring, testing, and publishing a Fabric data agent with an ontology as its data source.
+  ms.date: 04/17/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What query language does a Fabric data agent generate when an ontology is the data source?"
+    choices:
+    - content: "GQL (Graph Query Language), because it traverses the graph structure of the ontology."
+      isCorrect: true
+      explanation: "Correct. When an ontology is the data source, the agent generates GQL to traverse entity types and relationships. SQL is used for lakehouses and warehouses; KQL is used for KQL databases; DAX is used for Power BI semantic models."
+    - content: "SQL, because the ontology is bound to lakehouse tables."
+      isCorrect: false
+      explanation: "Incorrect. Although the ontology binds to lakehouse tables, the agent queries the ontology layer using GQL, not SQL directly. GQL is designed to traverse the graph structure of entity types and relationships."
+    - content: "KQL, because the ontology includes an eventhouse data source."
+      isCorrect: false
+      explanation: "Incorrect. KQL is used when the agent queries a KQL database data source directly. When the data source is an ontology, the agent uses GQL regardless of what underlying sources the ontology binds to."
+  - content: "When an ontology is the data source for a Fabric data agent, how do you improve the agent's accuracy?"
+    choices:
+    - content: "By refining agent instructions, which guide how the agent interprets terminology, reasoning steps, response behavior, and scope."
+      isCorrect: true
+      explanation: "Correct. For ontology data sources, agent instructions are how you shape the agent's behavior. Instructions let you map user terminology to ontology concepts, define reasoning paths, set response format expectations, and constrain scope."
+    - content: "By adding example query/question pairs to the data source configuration."
+      isCorrect: false
+      explanation: "Incorrect. Example queries aren't supported for ontology data sources. They're available for lakehouses, warehouses, and KQL databases. For ontology sources, use agent instructions to guide interpretation."
+    - content: "By modifying the ontology entity type definitions to match user phrasing."
+      isCorrect: false
+      explanation: "Incorrect. Modifying entity type definitions changes the underlying data model, which affects all tools connected to the ontology. The correct approach is to write agent instructions that map user terminology to existing ontology concepts."
+  - content: "A colleague receives a shared link for a published Fabric data agent backed by an ontology. They have the default (no extra) permission on the data agent link, but no permissions on the ontology item or its underlying lakehouse. What happens when they try to query the agent?"
+    choices:
+    - content: "Their queries fail or return empty results, because they lack the required Read permissions on the ontology and its underlying data sources."
+      isCorrect: true
+      explanation: "Correct. For ontology-backed data agents, users need Read permission on both the ontology item and the underlying data sources (such as the lakehouse and KQL database) bound to the ontology. The data agent link alone isn't sufficient."
+    - content: "Their queries succeed, because the default permission grants full read access to all connected data sources."
+      isCorrect: false
+      explanation: "Incorrect. The default permission grants access to query the published version of the data agent only. Users still need separate Read permissions on the ontology item and its underlying data sources for queries to return results."
+    - content: "They can only see the draft version of the agent, not the published version."
+      isCorrect: false
+      explanation: "Incorrect. The default permission (no extra permissions) grants access to the published version only—not the draft version. However, without Read on the ontology and its data sources, queries against even the published version will fail."
+  - content: "After publishing a Fabric data agent, what happens to the draft version?"
+    choices:
+    - content: "The draft version remains editable, allowing you to continue refining the agent without affecting the published version that colleagues use."
+      isCorrect: true
+      explanation: "Correct. Publishing creates a stable published version while leaving the draft version available for ongoing development. Changes to the draft don't affect the published version, so you can iterate safely."
+    - content: "The draft version is automatically deleted when you publish."
+      isCorrect: false
+      explanation: "Incorrect. Publishing does not delete the draft version. Both versions exist simultaneously after publishing — the draft for continued development and the published version for colleague access."
+    - content: "The draft version becomes read-only and can no longer be edited."
+      isCorrect: false
+      explanation: "Incorrect. The draft version remains fully editable after publishing. This is intentional — it lets you incorporate feedback and refine the agent over time without disrupting the stable published version."
