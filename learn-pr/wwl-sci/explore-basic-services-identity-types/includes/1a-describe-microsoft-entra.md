@@ -22,6 +22,8 @@ The core products in the Microsoft Entra family include:
 - **Microsoft Entra Internet Access**: An identity-centric Secure Web Gateway (SWG) that protects access to internet and SaaS applications.
 - **Microsoft Entra Private Access**: Provides Zero Trust Network Access (ZTNA) to private apps and resources without requiring a traditional VPN.
 
+:::image type="content" source="../media/1a-entra-product-family.png" alt-text="Microsoft Entra product family organized into four categories: identity and access management, identity governance, network access, and verified identity." lightbox="../media/1a-entra-product-family.png":::
+
 ## How Microsoft Entra products work together
 
 The strength of the Microsoft Entra family lies in how its products integrate with each other. Consider a scenario where an employee joins your organization:
@@ -32,6 +34,8 @@ The strength of the Microsoft Entra family lies in how its products integrate wi
 4. **Microsoft Entra Private Access** provides secure access to on-premises apps without a VPN.
 
 This integrated approach reduces security gaps that occur when organizations use disconnected tools for identity and network access management.
+
+:::image type="content" source="../media/1a-entra-products-work-together.png" alt-text="Flow diagram showing how four Microsoft Entra products work together: Entra ID authenticates, Entra ID Governance provisions access, Entra Internet Access secures cloud connections, and Entra Private Access secures private apps." lightbox="../media/1a-entra-products-work-together.png":::
 
 > [!NOTE]
 > Each product in the Microsoft Entra family can be used independently, but they deliver the most value when used together as part of a comprehensive identity and access strategy.
