@@ -8,16 +8,13 @@ Individuals can use the following steps to set up GitHub Copilot:
 
     There are several GitHub Copilot plans that provide access to GitHub Copilot:
 
-    - Use Copilot Free. Get a limited experience of Copilot with up to 2,000 code completions and 50 chats or premium requests per month-no paid plan required.
+    - Use Copilot Free. Get a limited Copilot experience; see the Copilot plans page for current feature limits and capabilities.
 
-    - Sign up for a paid plan. You can subscribe to either:
-
-        - Copilot Pro, which includes a one-time 30-day free trial and 300 monthly premium requests.
-        - Copilot Pro+, which includes 1,500 monthly premium requests and full access to all available models. Subscribe to Copilot Pro+.
+    - Subscribe to a paid plan (for example, Copilot Pro or Copilot Pro+). Paid plans provide expanded model and chat capabilities. See the Copilot plans page for current subscription options and availability.
 
     - Use Copilot through your organization or enterprise. If you're part of an organization or enterprise with a Copilot plan, you can request access through your organization.
 
-    - Verified students, teachers, or open source maintainers. Qualified individuals may be eligible to use Copilot for free.
+    - Verified students, teachers, or open source maintainers. Qualified individuals may be eligible for free access — see the Copilot plans page for details.
 
 1. Install the GitHub Copilot extension for your IDE.
 
@@ -101,10 +98,10 @@ Most individual developers can start using GitHub Copilot Free with little or no
 
 - You have a managed user account.
 - You're assigned a Copilot account through an organization.
-- You have an existing Copilot Pro or Copilot Pro+ plan or Copilot Pro trial.
+- You have an existing Copilot Pro or Copilot Pro+ plan.
 - You have free access to Copilot Pro as a student, teacher, or open-source maintainer.
 
-There are a few ways to start using Copilot Free, depending on where you're working.
+There are a few ways to start using Copilot Free, depending on where you're working. For current plan details and availability, see the Copilot plans page: https://docs.github.com/en/copilot/get-started/plans
 
 - Visual Studio and Visual Studio Code: In Visual Studio and Visual Studio Code you can sign up for the GitHub Copilot Free plan directly from the editor. If you have a GitHub account, you'll be prompted to sign in. If you don't have a GitHub account, you'll be prompted to create one. After you sign up and sign in, you can start using GitHub Copilot Free.
 

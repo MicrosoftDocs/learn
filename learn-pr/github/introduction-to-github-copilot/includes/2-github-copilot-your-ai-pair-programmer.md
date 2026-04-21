@@ -75,7 +75,8 @@ Copilot executes these tasks under your direction, helping you complete complex 
 GitHub Copilot is available in several plans, each offering different capabilities for individuals, teams, and organizations.
 
 > [!NOTE]
-> New sign-ups for some individual Copilot plans may be temporarily paused. Existing users and organization-based access are not affected. [Learn more.](https://docs.github.com/en/copilot/get-started/plans)
+> GitHub Copilot plan availability, trials, and usage limits can change over time.  
+> Refer to the official [documentation](https://docs.github.com/en/copilot/get-started/plans) for the most up-to-date information.
 
 ### GitHub Copilot Free
 
@@ -94,7 +95,7 @@ GitHub Copilot Pro is designed for individual developers who want enhanced capab
 
 **Key features:**
 
-- Unlimited code completions and chat requests
+- Higher usage limits compared to the Free plan
 - Priority access to the latest AI models
 - Advanced code suggestions and explanations
 - Integration with supported IDEs (VS Code, Visual Studio, JetBrains, Neovim)
