@@ -14,9 +14,9 @@ Now that you've reviewed this module, you should:
 * To learn more about what Microsoft can do for your sustainability organization, visit our [Microsoft Cloud for Sustainability website](https://www.microsoft.com/sustainability/cloud).
 * Stay up to date with Microsoft AI, visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
-* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
+* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?tabs=global-standard-aoai%2Cglobal-standard&pivots=azure-openai).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Services](/azure/cognitive-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Service](/azure/foundry/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 * To learn more about the initiatives within the FarmVibes project, visit the [FarmVibes website](https://www.microsoft.com/research/project/project-farmvibes/).
 * To access the AI models developed within the FarmVibes project, visit the [FarmVibes.AI repository](https://github.com/microsoft/farmvibes-ai).
