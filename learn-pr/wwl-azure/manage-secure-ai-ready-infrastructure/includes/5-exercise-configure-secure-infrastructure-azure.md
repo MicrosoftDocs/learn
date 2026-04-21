@@ -32,9 +32,9 @@ To enable access to Azure Storage, the company configures two types of connectio
 ### Prerequisites
 - **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
-- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
-- **Familiarity with Azure Storage authorization**: To learn more, refer to [Prevent Shared Key authorization for an Azure Storage account](https://azure/storage/common/shared-key-authorization-prevent?tabs=portal).
-- **Familiarity with Azure Role-Based Access Control (RBAC)**: To learn more, refer to [Azure RBAC documentation](https://azure/role-based-access-control/).
+- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](/azure/ai-foundry/concepts/resource-types).
+- **Familiarity with Azure Storage authorization**: To learn more, refer to [Prevent Shared Key authorization for an Azure Storage account](/azure/storage/common/shared-key-authorization-prevent).
+- **Familiarity with Azure Role-Based Access Control (RBAC)**: To learn more, refer to [Azure RBAC documentation](/azure/role-based-access-control/).
 
 ### Estimated time
 25 minutes
@@ -70,7 +70,7 @@ Your company is building a centralized AI platform on Microsoft Foundry to suppo
 ### Prerequisites
 - **Azure subscription**: If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) before you begin.
 - **Permissions**: To create Azure AI Services resources, you should have the Owner role assigned at the Azure subscription.
-- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](https://azure/ai-foundry/concepts/resource-types).
+- **Familiarity with Microsoft Foundry resource types**: To learn more, refer to [Choose an Azure resource type for AI foundry](/azure/ai-foundry/concepts/resource-types).
 
 ### Estimated time
 25 minutes
