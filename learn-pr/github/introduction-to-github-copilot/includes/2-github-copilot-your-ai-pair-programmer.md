@@ -74,11 +74,14 @@ Copilot executes these tasks under your direction, helping you complete complex 
 
 GitHub Copilot is available in several plans, each offering different capabilities for individuals, teams, and organizations.
 
+> [!NOTE]
+> New sign-ups for some individual Copilot plans may be temporarily paused. Existing users and organization-based access are not affected. [Learn more.](https://github.com/pricing)
+
 ### GitHub Copilot Free
 
 GitHub Copilot Free allows individual developers to use GitHub Copilot at no cost. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". Log in to your GitHub account in the window that will open in the browser.
 
-The GitHub Copilot Free tier includes 2000 code completions per month, 50 chat requests per month, and access to both GPT-4o and Claude 3.5 Sonnet models. [Learn more.](https://gh.io/copilot)
+The Copilot Free plan includes limited monthly usage for code completions and chat, along with access to supported AI models. 
 
 **Key features:**
 
@@ -87,8 +90,7 @@ The GitHub Copilot Free tier includes 2000 code completions per month, 50 chat r
 - Access to advanced AI models
 
 ### GitHub Copilot Pro
-
-GitHub Copilot Pro is designed for individual developers who want enhanced capabilities beyond the Free plan.
+GitHub Copilot Pro is designed for individual developers who want enhanced capabilities beyond the Free plan. 
 
 **Key features:**
 
@@ -96,16 +98,14 @@ GitHub Copilot Pro is designed for individual developers who want enhanced capab
 - Priority access to the latest AI models
 - Advanced code suggestions and explanations
 - Integration with supported IDEs (VS Code, Visual Studio, JetBrains, Neovim)
-- Automated test generation and code explanation features
+- Automated test generation and code explanation features 
 
-### **GitHub Copilot Pro+**
+### **GitHub Copilot Pro+** 
+**Copilot Pro+** includes all the features of Copilot Pro with additional access to premium model usage and priority performance on high-demand resources. It's suited for individuals with higher usage needs. 
 
-**Copilot Pro+** includes all the features of Copilot Pro with additional access to premium model usage and priority performance on high-demand resources. It's suited for individuals with higher usage needs.
-
-**Key features:**
-
+**Key features:** 
 - All Pro features
-- Additional premium request capacity
+-  Additional premium request capacity
 - Priority infrastructure access
 
 ### GitHub Copilot Business
@@ -114,7 +114,6 @@ GitHub Copilot Business is for organizations that want to manage Copilot access 
 
 **Key features:**
 
-- All Pro and Pro+ features for organization members
 - Centralized management and policy controls
 - Security vulnerability filtering
 - Code referencing and public code filtering
