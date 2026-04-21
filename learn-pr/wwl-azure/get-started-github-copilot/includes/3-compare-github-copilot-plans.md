@@ -45,14 +45,14 @@ The tables below show example feature differences across plans. Do not rely on t
 
 | Feature                     | GitHub Copilot Free | GitHub Copilot Pro                          | GitHub Copilot Pro+                        | GitHub Copilot Business                  | GitHub Copilot Enterprise                |
 |-----------------------------|--------------|---------------------------------------|-------------------------------------|------------------------------------|------------------------------------|
-| GitHub Copilot Chat in IDEs        | 50 messages per month | Unlimited with included models    | Unlimited with included models      | Unlimited with included models     | Unlimited with included models     |
-| Inline chat                 | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in IDEs        | 50 messages per month | Unlimited with included models    | Unlimited with included models      | Unlimited with included models     | Unlimited with included models     |
+| Edit mode                   | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Slash commands              | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat in GitHub Mobile | &#10003;   | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat in GitHub      | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat in Windows Terminal | &#10003; | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in GitHub Mobile | &#10003;   | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in GitHub      | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in Windows Terminal | &#10003; | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Increased GitHub Models rate limits | X    | X                                   | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat skills in IDEs | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot skills in IDEs | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 
 ### Models
 

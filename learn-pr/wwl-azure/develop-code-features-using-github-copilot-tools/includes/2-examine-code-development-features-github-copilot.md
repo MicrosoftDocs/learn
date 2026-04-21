@@ -1,26 +1,28 @@
-Visual Studio Code implements GitHub Copilot using two extensions, GitHub Copilot and GitHub Copilot Chat. These extensions increase developer productivity by generating suggestions that extend or improve your applications. Each extension provides a set of features that help you develop code more efficiently:
+GitHub Copilot is built into Visual Studio Code, bringing AI-powered assistance directly into your development environment. GitHub Copilot increases developer productivity by generating suggestions that extend or improve your applications. GitHub Copilot provides two main ways to generate code suggestions:
 
-- The GitHub Copilot extension generates code completion suggestions using the code you enter in the editor or your code comments.
-- The GitHub Copilot Chat extension generates code suggestions based on chat interactions or smart actions that act on selected code.
+- **Inline suggestions**: GitHub Copilot generates code completion suggestions using the code you enter in the editor or your code comments.
+- **Chat interactions**: GitHub Copilot generates code suggestions based on chat interactions or smart actions that act on selected code.
 
 > [!NOTE]
-> In this module, you use the GitHub Copilot extensions to develop new code features and applications. There are two separate modules that cover using GitHub Copilot to create unit tests and make improvements to existing code.
+> In this module, you use GitHub Copilot to develop new code features and applications. There are separate modules that cover using GitHub Copilot to create unit tests and using GitHub Copilot to make improvements to existing code.
 
 ## GitHub Copilot tools in Visual Studio Code
 
 Visual Studio Code provides easy access to the following GitHub Copilot and GitHub Copilot Chat features:
 
-- **Code line completions**: Use code line completions to write code more efficiently.
+- **Code line completions**: Use code line completions to write code more efficiently. This includes *ghost text* suggestions at your cursor and *next edit suggestions* (NES) that predict where your next edit will be and what it should be.
 - **Inline chat**: Start an inline chat conversation directly from the editor for help while you're coding.
-- **Chat view**: Open an AI assistant on the side that can help you at any time.
-- **Quick Chat**: Ask a quick question and get back into what you're doing.
+- **Chat view**: Open an AI assistant on the side that can help you at any time. The Chat view uses an agent picker to select how GitHub Copilot operates: **Ask** for conversational help, **Plan** to research and design an implementation plan before writing code, or **Agent** to work autonomously across multiple files.
+- **Quick Chat**: Ask a quick question and get back into what you're doing. Use the **Ctrl+Shift+Alt+L** keyboard shortcut to open Quick Chat, or select it from the Chat menu in the Visual Studio Code title bar.
 - **Smart actions**: Run smart actions to complete certain tasks without even having to write a prompt.
 
-The GitHub Copilot extensions bring the power of AI into the Visual Studio Code environment.
+GitHub Copilot brings the power of AI into the Visual Studio Code environment.
 
 ## Generate code using code line completions with GitHub Copilot
 
-GitHub Copilot generates code line completions as you enter code. The code that's already in your application provides context that GitHub Copilot uses to generate accurate suggestions. For example, suppose you're working on a class that processes customer expenditures. The class uses a list that contains expenditures for all customers. You need to create a method that returns the sum of all expenditures. If you start entering the method signature, GitHub Copilot generates a suggestion that completes the code line.
+GitHub Copilot generates two kinds of inline suggestions as you write code.
+
+**Ghost text suggestions** appear at your cursor position as you type. The code already in your application provides context that GitHub Copilot uses to generate accurate suggestions. For example, suppose you're working on a class that processes customer expenditures. The class uses a list that contains expenditures for all customers. You need to create a method that returns the sum of all expenditures. If you start entering the method signature, GitHub Copilot generates a suggestion that completes the code line.
 
 ![Screenshot showing a code line completion based on code.](../media/code-line-completion-1.png)
 
@@ -34,14 +36,16 @@ GitHub Copilot also generates code line completion suggestions from code comment
 
 Notice that the suggested code completion uses information from your existing code and the code comment that describes the method.
 
-Developers use code completions to accelerate the development of an initial code structure.
+Developers use ghost text completions to accelerate the development of an initial code structure.
+
+**Next edit suggestions (NES)** take inline suggestions further by predicting not just what comes next, but *where* your next edit needs to happen — even if it's elsewhere in the file. When you rename a variable, change a data type, or fix a logic error, NES suggests the follow-on edits that need to be made to keep your code consistent. A gutter arrow in the editor indicates that a suggestion is available. Press **Tab** to navigate to it, then press **Tab** again to accept it. You'll explore both ghost text completions and next edit suggestions in detail in the next unit.
 
 ## Generate code using GitHub Copilot Chat
 
 GitHub Copilot Chat helps you create code using chat interfaces and smart actions. For example, if you enter a prompt asking GitHub Copilot Chat to create a new method, GitHub Copilot provides suggestions for one or more method signatures and implementations. Reviewing, and then accepting or discarding the suggestions helps you create an initial version of your code more quickly and accurately.
 
 > [!NOTE]
-> The GitHub Copilot Chat extension for Visual Studio Code includes a chat interface that processes user input. This training uses the terms *question* and *prompt* when referring to the input you provide during a chat session.
+> GitHub Copilot in Visual Studio Code includes a chat interface that processes user input. This training uses the terms *question* and *prompt* when referring to the input you provide during a chat session.
 
 GitHub Copilot Chat is especially helpful when you need to develop code that implements unfamiliar resources, such as a new library, framework, or API. When you submit a prompt that describes your requirement, GitHub Copilot Chat generates suggestions that demonstrate how to achieve your goal. Reviewing the suggestions can also teach you how to implement the new resources.
 
@@ -60,6 +64,7 @@ You can use slash commands to perform specific actions in Copilot Chat. For exam
 ```text
 /new console application in C#
 ```
+
 This prompt uses a slash command (/new) to help GitHub Copilot Chat perform the intended task.
 
 GitHub Copilot can scaffold more complex projects. For example, the following prompt creates a workspace for a Node.js application that uses the Express framework, the Pug template engine, and TypeScript:
@@ -68,18 +73,15 @@ GitHub Copilot can scaffold more complex projects. For example, the following pr
 /new Node.js Express Pug TypeScript
 ```
 
-
 ### Generate code with GitHub Copilot Chat using the Chat view
 
 The Chat view in Visual Studio Code provides access to an AI assistant that helps you develop code. You can ask questions and get help from your AI assistant without leaving the Visual Studio Code environment. The Chat view provides assistance when you're developing code and when you're exploring approaches to solving difficult coding problems. You can also use the Chat view to ask questions about existing code, to get help with errors or coding logic, and to get information about using project resources. The Chat view can help you learn new coding techniques, explore different coding styles, and improve your coding skills.
 
 The Chat view opens in its own panel to the right of Visual Studio Code's code editor. To open the Chat view, select **Chat** from the Visual Studio Code title bar or use the **Ctrl+Alt+I** keyboard shortcut.
 
-![Screenshot showing the Chat view "welcome" message in Visual Studio Code.](../media/chat-view-1.png)
+If you need more screen space in Visual Studio Code, you can open the Chat view in a separate window by selecting **Move Chat into Editor Area** or **Move Chat into New Window** from the Chat view's context menu.
 
-If you need more screen space in Visual Studio Code, you can open the Chat view in a separate window by selecting **Open Chat in New Window** from the Chat view's context menu.
-
-![Screenshot showing the Chat view responding to a question in Visual Studio Code.](../media/chat-view-2.png)
+![Screenshot of the Chat view's "More Actions" menu showing the options to move the chat into the editor area or a new window.](../media/chat-view-2.png)
 
 GitHub Copilot Chat provides rich and interactive results that include the following elements:
 
@@ -99,9 +101,9 @@ GitHub Copilot maintains a history of your conversation. The history is used to 
 
 Depending on your question, GitHub Copilot Chat may return source code in the response. Source code is displayed as a code block, and you can manage the code in a few different ways.
 
-If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Apply**, **Insert (Ctrl+Enter)**, and **Copy**.
+If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Apply in Editor**, **Insert At Cursor (Ctrl+Enter)**, and **Copy**. The following image shows the Copy option selected.
 
-![Screenshot showing a code block in the Chat view.](../media/chat-view-4.png)
+![Screenshot showing a code block in the Chat view with the Copy option selected.](../media/chat-view-4.png)
 
 The More Actions (...) button displays the options to **Insert into Terminal (Ctrl+Alt+Enter)** and **Insert into New File**.
 
@@ -123,21 +125,21 @@ You can use inline chat in the following ways:
 
 The inline chat interface can be used to develop new code features. For example, you can use inline chat to create a new user interface component, a new API endpoint, or a new data processing pipeline.
 
-You can create a new code feature using inline chat by completing the following steps:
+To create a new code feature using inline chat:
 
-1. Select code in the editor.
+1. Position your cursor in the editor where you want to insert the new code.
 
-1. Open the inline chat interface by pressing **Ctrl+I** on the keyboard.
+1. Open inline chat by pressing **Ctrl+I** on the keyboard.
 
-1. Enter a prompt that describes the feature you want to create.
+1. Enter a prompt that describes the feature you want to create. For example:
 
-1. Review the suggestions provided by GitHub Copilot Chat, and refine your prompt if necessary.
+    ```plaintext
+    Create a method that reads a list of sales records and calculates the total revenue by product category.
+    ```
 
-1. Once you're satisfied, accept a suggestion.
+1. Review the suggestion and refine your prompt if the result doesn't match your intent.
 
-Here's an example that demonstrates how to create a new method using inline chat:
-
-![Screenshot showing an inline chat session used to create a method.](../media/inline-chat-code-suggestion-1.png)
+1. Select **Accept** to apply the suggestion.
 
 #### Create regular expressions using inline chat
 
@@ -145,42 +147,20 @@ Regular expressions are patterns used to match character combinations in strings
 
 The inline chat interface can be used to generate regular expressions quickly and accurately. For example, you can use inline chat to generate regular expressions for validating email addresses, phone numbers, postal codes, and other data patterns.
 
-You can create a regular expression using inline chat by completing the following steps:
+To create a regular expression using inline chat:
 
-1. Select code in the editor.
+1. Select the code in the editor where you want to add the validation.
 
-1. Open the inline chat interface by pressing **Ctrl** + **I** on the keyboard.
+1. Open inline chat by pressing **Ctrl+I** on the keyboard.
 
-1. Enter a prompt that describes the data pattern you need to validate.
+1. Enter a prompt that describes the data pattern you need to validate. For example:
 
-1. Review the suggestions provided by GitHub Copilot Chat, and once you're satisfied, accept a suggestion.
+    ```plaintext
+    I want to create a regular expression to validate email addresses.
+    ```
 
-Here's an example that demonstrates how to create a regular expression for email addresses using inline chat:
-
-![Screenshot showing an inline chat session used to create a regular expression.](../media/inline-chat-code-suggestion-2.png)
-
-It's always important to review the responses generated by GitHub Copilot Chat.
-
-GitHub Copilot Chat suggests the following regular expression can be used to validate email addresses: `^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$`.
-
-Let's take a minute to evaluate the suggested regular expression.
-
-`^`: This symbol indicates the start of a line. The email address must start here.
-
-`[a-zA-Z0-9_.+-]+`: This part of the expression matches one or more (+) of the characters inside the square brackets ([]). The characters can be lowercase (a-z), uppercase (A-Z), numeric (0-9), or special characters like underscore (_), period (.), plus (+), or hyphen (-).
-
-`@`: This part of the expression is the "at" symbol (@). It's a literal character in the email address.
-
-`[a-zA-Z0-9-]+`: This part of the expression is similar to the first, but it's for the domain name portion of the email. It can contain one or more lowercase, uppercase, numeric, or hyphen (-) characters.
-
-`\.`: This part of the expression is a literal period (.) character. It separates the domain name from the domain extension.
-
-`[a-zA-Z0-9-.]+`: This part of the expression matches the domain extension. It can contain one or more lowercase, uppercase, numeric, hyphen (-), or period (.) characters.
-
-`$`: This symbol indicates the end of a line. The email address must end here.
-
-Overall, this regular expression is a good starting point for validating email addresses, but it has some limitations and may not cover all valid email formats. You may want to consider using more comprehensive patterns or even dedicated email validation libraries for critical applications.
+1. Review the suggestion and select **Accept** once you're satisfied.
 
 ## Summary
 
-The GitHub Copilot extensions help developers write code faster and with fewer errors. The GitHub Copilot extension generates code completion suggestions using the code you enter in the editor or your code comments. The GitHub Copilot Chat extension generates code suggestions based on chat interactions or smart actions that act on selected code.
+GitHub Copilot helps developers write code faster and with fewer errors. It generates inline code completion suggestions using the code you enter in the editor or your code comments, and generates code suggestions based on chat interactions or smart actions that act on selected code.
