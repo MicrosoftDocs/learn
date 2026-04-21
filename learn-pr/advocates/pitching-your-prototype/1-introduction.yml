@@ -3,11 +3,11 @@ uid: learn.pitch-your-product-prototype.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: This unit is the introduction to the module.
+  description: This unit introduces the module and explains why a technically honest pitch matters.
   author: czhu89
-  ms.date: 07/23/2024
+  ms.date: 04/21/2026
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

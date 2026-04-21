@@ -2,27 +2,28 @@
 uid: learn.pitch-your-product-prototype
 metadata:
   title: Pitch your product prototype
-  description: Write a compelling pitch deck for your product prototype that will resonate with your audience and share the vision of your prototype.
+  description: Write a compelling and technically credible pitch deck for your Azure-based product prototype that resonates with your audience and accurately explains your solution.
   author: czhu89
-  ms.date: 07/23/2024
+  ms.date: 04/21/2026
   ms.author: cazh
   ms.topic: module
   ms.service: azure
 title: Pitch your product prototype
-summary: Write a compelling pitch deck for your product prototype that will resonate with your audience and share the vision of your prototype.
-abstract: | 
+summary: Write a compelling and technically credible pitch deck for your Azure-based product prototype that resonates with your audience and accurately explains your solution.
+abstract: |
  In this module, you will:
  - Construct a mission statement for a product prototype.
  - Evaluate your audience's requirements.
- - Tailor your message to your audience.
- - Explain how you'll acquire customers for your prototype.
- - Explain how your product will make money.
- - Create a demonstration strategy for a product prototype.
+ - Tailor your message to investors, customers, and reviewers.
+ - Explain how your prototype works, what still needs validation, and which parts depend on Azure services, your own data, and future roadmap items.
+ - Explain how you acquire customers for your prototype and how your product will make money.
+ - Create a reliable demonstration strategy for a product prototype.
  - Create a call to action for your audience.
 prerequisites: |
- - You should have a broad understanding of product management and road maps.
+ - You should have a broad understanding of product management and roadmaps.
  - You should have given some thought to your proposed revenue model.
  - You should have given some thought to your company's exit strategy.
+ - You should understand the current capabilities, limitations, dependencies, and validation needs of the services used in your prototype.
 iconUrl: /training/achievements/pitch-your-product-prototype.svg
 levels:
 - beginner
@@ -42,4 +43,4 @@ units:
 - learn.pitch-your-product-prototype.7-conclusion
 badge:
   uid: learn.pitch-your-product-prototype.badge
-
+

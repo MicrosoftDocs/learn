@@ -3,11 +3,11 @@ uid: learn.pitch-your-product-prototype.7-conclusion
 title: Summary
 metadata:
   title: Summary
-  description: This unit concludes the module.
+  description: This unit summarizes the module and points to the supporting Learn resources.
   author: czhu89
-  ms.date: 07/23/2024
+  ms.date: 04/21/2026
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-conclusion.md)]
+  [!include[](includes/7-conclusion.md)]
