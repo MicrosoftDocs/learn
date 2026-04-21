@@ -37,7 +37,7 @@ products:
 units:
   - learn.dpu.surface-support-service-provider.introduction
   - learn.dpu.surface-support-service-provider.understand-partner-access-models-for-surface-support
-  - learn.dpu.surface-support-service-provider.use-a-customer-s-tenant-to-manage-surface-support
+  - learn.dpu.surface-support-service-provider.use-customer-tenant-to-manage-surface-support
   - learn.dpu.surface-support-service-provider.use-a-partner-tenant-to-manage-surface-support
   - learn.dpu.surface-support-service-provider.manage-multiple-customer-tenants-safely
   - learn.dpu.surface-support-service-provider.understand-partner-boundaries-and-escalation-paths
