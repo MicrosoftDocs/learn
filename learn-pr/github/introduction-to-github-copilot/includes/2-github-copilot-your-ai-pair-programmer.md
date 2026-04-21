@@ -75,7 +75,7 @@ Copilot executes these tasks under your direction, helping you complete complex 
 GitHub Copilot is available in several plans, each offering different capabilities for individuals, teams, and organizations.
 
 > [!NOTE]
-> New sign-ups for some individual Copilot plans may be temporarily paused. Existing users and organization-based access are not affected. [Learn more.](https://github.com/pricing](https://docs.github.com/en/copilot/get-started/plans)
+> New sign-ups for some individual Copilot plans may be temporarily paused. Existing users and organization-based access are not affected. [Learn more.](https://docs.github.com/en/copilot/get-started/plans)
 
 ### GitHub Copilot Free
 
