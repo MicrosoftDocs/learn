@@ -54,17 +54,17 @@ The following policy applies to all selected users who attempt to register using
 5.  Under **Cloud apps or actions**, select **User actions**, check **Register security information**.
 6.  Under **Conditions**, select **Locations**.
     
-   1. Configure **Yes**.
-   2. Include **Any location**.
-   3. Exclude **All trusted locations**.
-   4. Select **Done** on the **Locations** screen.
-   5. Select **Done** on the **Conditions** screen.
+    - Configure **Yes**.
+    - Include **Any location**.
+    - Exclude **All trusted locations**.
+    - Select **Done** on the **Locations** screen.
+    - Select **Done** on the **Conditions** screen.
 
 7. Under **Conditions**, in **Client apps (Preview)**, set **Configure** to **Yes**, and select **Done**.
 8. Under **Access controls**, select **Grant**.
     
-   1. Select **Block access**.
-   2. Then use the **Select** option.
+    - Select **Block access**.
+    - Then use the **Select** option.
 
 9. Set **Enable policy** to **On**.
 10. Then select **Save**.

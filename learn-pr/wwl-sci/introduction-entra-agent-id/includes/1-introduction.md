@@ -18,7 +18,7 @@ Microsoft Entra Agent ID addresses these challenges by providing specialized ide
 ## Availability
 
 > [!NOTE]
-> Microsoft Entra Agent ID is part of **Microsoft Agent 365**, which reaches general availability on May 1, 2026.
+> Microsoft Entra Agent ID is part of **Microsoft Agent 365**.
 
 ## Content description
 
