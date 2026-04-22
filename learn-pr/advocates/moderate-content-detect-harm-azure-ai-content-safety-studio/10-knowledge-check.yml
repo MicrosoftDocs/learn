@@ -6,7 +6,7 @@ metadata:
   description: Validate your understanding of the key concepts covered in this module.
   author: aprilgittens
   ms.author: apspeigh
-  ms.date: 08/29/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
@@ -32,20 +32,20 @@ quiz:
     - content: To measure the speed at which the model detects harmful content.
       isCorrect: false
       explanation: The Precision metric doesn't measure the speed of detection.
-  - content: Which feature of Azure AI Content Safety is responsible for detecting and blocking incorrect information in model outputs?
+  - content: Which Azure AI Content Safety feature helps determine whether a model response is supported by the source material that you provided?
     choices:
     - content: Text moderation
       isCorrect: false
-      explanation: Text moderation detects harmful content in text.
-    - content: Prompt shields
+      explanation: Text moderation detects harmful content in text. It doesn't evaluate whether a model completion is supported by grounding sources.
+    - content: Prompt Shields
       isCorrect: false
-      explanation: To detect user prompt attacks and document attacks, prompt shields analyze large language model (LLM) inputs.
+      explanation: Prompt Shields analyzes user prompts and documents for direct and indirect prompt attacks.
     - content: Image moderation
       isCorrect: false
-      explanation: Image moderation analyzes images to identify and block offensive content.
+      explanation: Image moderation analyzes images for harmful content. It doesn't measure whether a text completion is grounded in source material.
     - content: Groundedness detection
       isCorrect: true
-      explanation:  The groundedness detection feature detects and blocks incorrect information in model outputs, to help ensure that the text responses are factual and accurate based on the provided source materials.
+      explanation: Groundedness detection evaluates whether a model completion is grounded in the source material that you supplied.
   - content: What is the purpose of the F1 score metric?
     choices:
     - content: To measure the total volume of harmful content that the model identifies.
@@ -53,7 +53,7 @@ quiz:
       explanation: The F1 score metric doesn't measure the total volume of harmful content.
     - content: To measure the balance between **Precision** and **Recall**.
       isCorrect: true
-      explanation: The F1 score metric in Content Safety is used when there's a need to balance Precision (the accuracy of identified harmful content) and Recall (the model's ability to identify actual harmful content).
+      explanation: The F1 score in Content Safety is the harmonic mean of Precision (the accuracy of identified harmful content) and Recall (the model's ability to identify actual harmful content), so it gives you a single number that balances the two.
     - content: To measure the speed at which the model detects harmful content.
       isCorrect: false
       explanation: The F1 score metric doesn't measure the speed of detection.
