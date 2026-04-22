@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.dpu.deploy-windows.phased-approach
-title: A phased approach
+title: Phased or ring-based approach to deploying Windows
 metadata:
-  title: A Phased Approach
+  title: Phased or Ring-based Approach to Deploying Windows
   description: This content is part of the "Deploy updates for Windows client and Microsoft 365 apps" module.
   ms.date: 04/15/2026
   author: Stephanie-Rosenzweig
