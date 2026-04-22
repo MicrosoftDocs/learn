@@ -37,7 +37,7 @@ products:
   - configuration-manager
 units:
   - learn.dpu.deploy-windows.introduction
-  - learn.dpu.deploy-windows.phased-approach
+  - learn.dpu.deploy-windows.deploy
   - learn.dpu.deploy-windows.operations
   - learn.dpu.deploy-windows.applications
   - learn.dpu.deploy-windows.infrastructure
