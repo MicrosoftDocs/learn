@@ -51,7 +51,6 @@ units:
 
   - learn.dpu.prepare-windows.introduction
   - learn.dpu.prepare-windows.prepare 
-  - learn.dpu.prepare-windows.phases-rings 
   - learn.dpu.prepare-windows.operations
   - learn.dpu.prepare-windows.applications
   - learn.dpu.prepare-windows.infrastructure
