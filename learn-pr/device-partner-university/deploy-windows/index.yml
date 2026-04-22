@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.service: windows
 summary: |
-  This module introduces the Deploy phase, the third phase of the Windows 11 deployment process. By this stage, the groundwork has been established during the Plan and Prepare phases, and you're ready to begin deployment. This is a ring-based or phased deployment, with iterative monitoring and management across six key areas of the environment: Operations, Applications, Infrastructure, Configurations, Devices, and Users. This module guides you through each area one by one, outlining the tasks and deliverables that will help you deploy Windows 11 across your organization. Keep in mind that in practice, these areas often require simultaneous or overlapping attention. Deliverables should be in a format that's easy to share and collaboratively edit throughout the life of the project.
+  This module introduces the Deploy phase, the third phase of the Windows 11 deployment process. By this stage, the groundwork has been established during the Plan and Prepare phases, and you're ready to begin deployment. This is a ring-based or phased deployment, with iterative monitoring and management across six key areas of the environment: operations, applications, infrastructure, configurations, devices, and users. The module guides you through each area one by one, outlining the tasks and deliverables that will help you deploy Windows 11 across your organization.
 
 abstract: |
   By the end of this module, you'll be able to:
@@ -37,7 +37,7 @@ products:
   - configuration-manager
 units:
   - learn.dpu.deploy-windows.introduction
-  - learn.dpu.deploy-windows.phased-approach
+  - learn.dpu.deploy-windows.deploy
   - learn.dpu.deploy-windows.operations
   - learn.dpu.deploy-windows.applications
   - learn.dpu.deploy-windows.infrastructure
