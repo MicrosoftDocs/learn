@@ -56,6 +56,10 @@ Here's how it works:
     $$
     :::
 
+    :::no-loc
+    for test
+    :::
+
 The state :::no-loc text="$\\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})$"::: is entangled. This particular entangled state is one of the four Bell states, :::no-loc text="$\\ket{\\phi^{+}}$":::.
 
 > [!NOTE]
