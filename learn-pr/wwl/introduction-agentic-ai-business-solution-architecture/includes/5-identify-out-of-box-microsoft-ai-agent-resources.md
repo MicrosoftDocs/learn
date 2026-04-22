@@ -60,4 +60,4 @@ Out-of-the-box AI agents reduce development time, ensure compliance with best pr
 **References**
 
 - [Microsoft AI tools and practices](https://www.microsoft.com/ai/tools-practices)
-- [Azure AI training - Microsoft Learn](/training/azure-ai)
+- [Azure AI training - Microsoft Learn](/training/paths/introduction-to-ai-on-azure)
