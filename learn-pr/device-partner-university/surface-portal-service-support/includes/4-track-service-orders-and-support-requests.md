@@ -1,5 +1,3 @@
-:::image type="content" border="true" source="../media/surface-support-request-tracking.png" alt-text="Screenshot of tracking a support request in Surface Management Portal.":::
-
 After a service order or support request is created, it's managed and tracked in the portal where it was initiated. The available tracking experience depends on the request type.
 
 - **Service orders** can be viewed and tracked in both the Surface Management Portal and the Surface Support Portal, regardless of where they were created.

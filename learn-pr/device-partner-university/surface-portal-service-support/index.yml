@@ -35,8 +35,8 @@ products:
   - surface
 units:
   - learn.dpu.surface-portal-service-support.introduction
-  - learn.dpu.surface-portal-service-support.create-a-service-order
-  - learn.dpu.surface-portal-service-support.create-a-support-request
+  - learn.dpu.surface-portal-service-support.create-service-order
+  - learn.dpu.surface-portal-service-support.create-support-request
   - learn.dpu.surface-portal-service-support.track-service-orders-and-support-requests
   - learn.dpu.surface-portal-service-support.knowledge-check
   - learn.dpu.surface-portal-service-support.summary
