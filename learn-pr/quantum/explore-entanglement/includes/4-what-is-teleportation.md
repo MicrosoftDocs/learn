@@ -1,4 +1,3 @@
-":::
 In the previous units, you learned how quantum entanglement works and that entanglement can be an excellent resource for quantum communication. In this unit, you learn how to use entanglement as a resource for quantum communication through one of the most famous applications of entanglement: the quantum teleportation protocol.
 
 Quantum teleportation uses entanglement to transfer the state of a qubit from one location to another. The state of one qubit is transferred to another qubit, but the qubit itself doesn't physically move.
@@ -13,19 +12,19 @@ Alice and Bob work together in the same company. Alice is based in Seattle, and 
 
 ### Initial setup
 
-Alice and Bob each have a qubit. Their qubits are already entangled in the Bell state :::no-loc text="$\\ket{\\phi^+}$":::
+Alice and Bob each have a qubit. Their qubits are already entangled in the Bell state :::no-loc text="$\\ket{\\phi^+}$":::,
 
 :::no-loc text="$$\\ket{\\phi^+}=\\frac1{\\sqrt2}(\\ket{0_A 0_B} + \\ket{1_A 1_B})$$":::
 
-where the subscript :::no-loc text=":::no-loc text="$A$":::"::: denotes Alice's qubit and :::no-loc text=":::no-loc text="$B$":::"::: denotes Bob's qubit.
+where the subscript :::no-loc text="$A$"::: denotes Alice's qubit and :::no-loc text="$B$"::: denotes Bob's qubit.
 
 Alice also has another qubit, called the message qubit. Alice wants to send the state of the message qubit to Bob by teleportation. Here's the state of the message qubit:
 
 :::no-loc text="$$\\ket{m}=\\alpha \\ket{0}_m + \\beta \\ket{1}_m$$":::
 
-The subscript :::no-loc text=":::no-loc text="$m$":::"::: denotes that this is the messenger qubit. The probability amplitudes :::no-loc text="$\alpha$"::: and :::no-loc text="$\beta$"::: are complex numbers, but their values are unknown to both Alice and Bob.
+The subscript :::no-loc text="$m$"::: denotes that this is the messenger qubit. The probability amplitudes :::no-loc text="$\alpha$"::: and :::no-loc text="$\beta$"::: are complex numbers, but their values are unknown to both Alice and Bob.
 
-The whole system consists of the entangled qubits, :::no-loc text="$A$"::: and :::no-loc text="$B$":::, and the message qubit, :::no-loc text="$m$":::. The state of this three-qubit system is given by the following:
+The whole system consists of the entangled qubits, :::no-loc text="$A$":::, and :::no-loc text="$B$":::, and the message qubit, :::no-loc text="$m$":::. The following gives the state of this three-qubit system:
 
 :::no-loc text="$$\\ket{\\text{System}} = (\\alpha\\ket{0}_m + \\beta\\ket{1}_m) \\otimes \\frac1{\\sqrt2}(\\ket{0_A 0_B}+ \\ket{1_A 1_B}) $$":::
 
