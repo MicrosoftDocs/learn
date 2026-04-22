@@ -1,0 +1,1 @@
+In this module, you learned how to decide whether a Surface device requires a service order or a support request and how to choose the correct Surface portal based on Intune enrollment. You also learned where requests are created, tracked, and managed, and how to review status and next steps.
