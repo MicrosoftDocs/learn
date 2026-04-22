@@ -42,8 +42,9 @@ Identities in a modern environment come in several types:
 - **Human identities** represent people: employees, contractors, customers, and partners who sign in to access applications and data.
 - **Device identities** represent hardware: laptops, mobile phones, tablets, and IoT sensors that connect to organizational systems. A device can be enrolled in management, checked for compliance, and trusted or restricted based on its state.
 - **Workload identities** represent software: applications, services, containerized workloads, and automated processes that access APIs, databases, and other resources without a human user actively involved.
+- **Agent identities** represent AI agents: assistive or autonomous agents that act on behalf of users or processes, access resources, and interact with other systems. Agent identities require purpose-built identity constructs that go beyond traditional application identities to support authentication, authorization, governance, and lifecycle management at scale.
 
-All three types of identities need to be authenticated and authorized. A compromised application credential can give an attacker the same access as a compromised user account. A device that doesn't meet compliance standards can be used to access sensitive data. Treating identity holistically—across users, devices, and workloads—is essential to a strong security posture.
+All four types of identities need to be authenticated and authorized. A compromised application credential can give an attacker the same access as a compromised user account. A device that doesn't meet compliance standards can be used to access sensitive data. As AI agents become more prevalent, unmanaged agent identities introduce similar risks. Treating identity holistically—across users, devices, workloads, and agents—is essential to a strong security posture.
 
 ## Four pillars of an identity infrastructure
 
