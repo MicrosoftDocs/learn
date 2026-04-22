@@ -46,6 +46,7 @@ Here's how it works:
 
 1. Apply a CNOT operation to the qubit pair. Recall that the control qubit is in a superposition state and the target qubit is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
+    <!-- no-loc -->
     $$
     \\begin{aligned}
     CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}+\\ket{1_c})\\ket{0_t} &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 0_t})\\\\
@@ -53,6 +54,7 @@ Here's how it works:
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})
     \\end{aligned}
     $$
+    <!-- /no-loc -->
 
 The state :::no-loc text="$\\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})$"::: is entangled. This particular entangled state is one of the four Bell states, :::no-loc text="$\\ket{\\phi^{+}}$":::.
 
@@ -176,7 +178,7 @@ To create the Bell state :::no-loc text="$\\ket{\\phi^+}$"::: in Q#, follow thes
 
 To create other Bell states, apply additional Pauli :::no-loc text="$X$"::: or :::no-loc text="$Z$"::: operations to the qubits.
 
-For example, to create the Bell state :::no-loc text="$\\ket{\\phi^-}=\\frac1{\\sqrt2}(\\ket{00}-\\ket{11})$":::, apply the Pauli $Z$ operation to the control qubit after you apply the Hadamard gate, but before you apply CNOT. The :::no-loc text="$Z$"::: operation flips the state :::no-loc text="$\\ket{+}$"::: to :::no-loc text="$\\ket{-}$":::.
+For example, to create the Bell state :::no-loc text="$\\ket{\\phi^-}=\\frac1{\\sqrt2}(\\ket{00}-\\ket{11})$":::, apply the Pauli :::no-loc text="$Z$"::: operation to the control qubit after you apply the Hadamard gate, but before you apply CNOT. The :::no-loc text="$Z$"::: operation flips the state :::no-loc text="$\\ket{+}$"::: to :::no-loc text="$\\ket{-}$":::.
 
 > [!NOTE]
 > The states :::no-loc text="$\\frac{1}{\\sqrt{2}}(\\ket{0}+\\ket{1})$"::: and :::no-loc text="$\\frac{1}{\\sqrt{2}}(\\ket{0} - \\ket{1})$"::: are also known as :::no-loc text="$\\ket{+}$"::: and :::no-loc text="$\\ket{-}$":::, respectively.
@@ -194,6 +196,7 @@ Here's how to create the :::no-loc text="$\\ket{\\phi^-}$"::: state:
 
 1. Apply the CNOT operation to the control qubit and the target qubit, which is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
+    <!-- no-loc -->
     $$
     \\begin{aligned}
     CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}-\\ket{1_c})\\ket{0_t} &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 0_t})\\\\
@@ -201,6 +204,7 @@ Here's how to create the :::no-loc text="$\\ket{\\phi^-}$"::: state:
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}-\\ket{1_c 1_t})
     \\end{aligned}
     $$
+    <!-- /no-loc -->
 
 To create the :::no-loc text="$\\ket{\\phi^-}$"::: Bell state in Q#, replace the code in the your **Main.qs** with the following code:
 
@@ -224,9 +228,9 @@ operation Main() : (Result, Result) {
 }
 ```
 
-Similarly, you can create the Bell states :::no-loc text="$\\ket{\\psi^+}$ and $\\ket{\\psi^-}$"::: by applying the Pauli $X$ and $Z$ operations to the qubits.
+Similarly, you can create the Bell states :::no-loc text="$\\ket{\\psi^+}$ and $\\ket{\\psi^-}$"::: by applying the Pauli :::no-loc text="$X$"::: and :::no-loc text="$Z$"::: operations to the qubits.
 
-- To create the Bell state :::no-loc text="$\\ket{\\psi^+}=\\frac1{\\sqrt2}(\\ket{01}+\\ket{10})$":::, apply the Pauli $X$ gate to the target qubit after you apply the Hadamard gate to the control qubit. Then apply the CNOT gate.
-- To create the Bell state :::no-loc text="$\\ket{\\psi^-}=\\frac1{\\sqrt2}(\\ket{01}-\\ket{10})$":::, apply the Pauli $Z$ to the control qubit and the Pauli $X$ to the target qubit after you apply the Hadamard gate to the control qubit. Then apply the CNOT gate.
+- To create the Bell state :::no-loc text="$\\ket{\\psi^+}=\\frac1{\\sqrt2}(\\ket{01}+\\ket{10})$":::, apply the Pauli :::no-loc text="$X$"::: gate to the target qubit after you apply the Hadamard gate to the control qubit. Then apply the CNOT gate.
+- To create the Bell state :::no-loc text="$\\ket{\\psi^-}=\\frac1{\\sqrt2}(\\ket{01}-\\ket{10})$":::, apply the Pauli :::no-loc text="$Z$"::: to the control qubit and the Pauli :::no-loc text="$X$"::: to the target qubit after you apply the Hadamard gate to the control qubit. Then apply the CNOT gate.
 
 In the next unit, you learn how to use entanglement to send quantum information, a process known as quantum teleportation.

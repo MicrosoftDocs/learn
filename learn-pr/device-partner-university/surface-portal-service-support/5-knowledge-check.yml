@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-portal-service-support.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Creating service orders and support requests in Surface portals" module.
+  ms.date: 04/22/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A Surface device requires physical repair, and your organization has an Intune subscription. Where can the service order be initiated?"
+    choices:
+        - content: "Surface Management Portal"
+          isCorrect: true
+          explanation: "Correct. When an organization has an Intune subscription, Surface Management Portal can be used to create service orders for both enrolled and unenrolled Surface devices."
+        - content: "Surface Support Portal only"
+          isCorrect: false
+          explanation: "Incorrect. Surface Support Portal is required when Intune isn't available, but it isn't the only option when an Intune subscription exists."
+        - content: "Microsoft 365 Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. Service orders aren't created in the Microsoft 365 Admin Center."
+        - content: "Surface Diagnostic Toolkit"
+          isCorrect: false
+          explanation: "Incorrect. This tool is used for troubleshooting issues, not for initiating service orders."

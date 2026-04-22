@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.surface-portal-service-support
+title: Creating service orders and support requests in Surface portals
+metadata:
+  title: Creating Service Orders And Support Requests In Surface Portals
+  description: 'In this module, you''ll learn how to create service orders and support requests in Surface portals. You''ll understand the different types of service orders and support requests, how to create them in the Surface Partner Portal and Surface Support Portal, and how to track their status and updates.'
+  ms.date: 04/22/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  This module provides guidance on creating service orders and support requests in Surface portals, including the Surface Partner Portal and Surface Support Portal.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the different types of service orders and support requests for Surface devices.
+  - Create service orders and support requests in the Surface Partner Portal.
+  - Create service orders and support requests in the Surface Support Portal.
+  - Track the status and updates of service orders and support requests.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/surface-portal-service-support-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.surface-portal-service-support.introduction
+  - learn.dpu.surface-portal-service-support.create-service-order
+  - learn.dpu.surface-portal-service-support.create-support-request
+  - learn.dpu.surface-portal-service-support.track-service-orders-and-support-requests
+  - learn.dpu.surface-portal-service-support.knowledge-check
+  - learn.dpu.surface-portal-service-support.summary
+badge:
+  uid: learn.dpu.surface-portal-service-support.badge
