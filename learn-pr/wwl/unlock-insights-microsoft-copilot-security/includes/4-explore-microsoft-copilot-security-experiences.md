@@ -1,4 +1,4 @@
-Microsoft Security Copilot provides both an immersive standalone experience and intuitive embedded experiences within other Microsoft security products, enhancing your security operations.
+Microsoft Security Copilot provides both an immersive standalone experience and intuitive embedded experiences within other Microsoft security products, enhancing your security operations. In addition, Security Copilot offers developer scenarios that enable you to build, test, publish, and integrate agents and plugins to meet unique security needs.
 
 ### Standalone experience
 Access Security Copilot directly at [securitycopilot.microsoft.com](https://securitycopilot.microsoft.com) for a comprehensive, independent experience. This platform allows security professionals to apply the full capabilities of Security Copilot in one place.
@@ -6,39 +6,37 @@ Access Security Copilot directly at [securitycopilot.microsoft.com](https://secu
 ### Embedded experience
 Utilize Security Copilot within other Microsoft security products to gain context-specific functionalities seamlessly integrated into your existing workflows. For example, within Microsoft Defender XDR, you can access features like incident summarization or script analysis directly.
 
+A feature common to all embedded experiences is the ability to hide or show the Copilot sidecar panel. The panel behavior persists per embedded experience, remembering the user's option. The embedded copilot functionality remains the same whether it's hidden or not, so closing the panel doesn't affect SCU consumption.
+
 > [!NOTE]
 > For detailed guidance on specific embedded experiences, refer to the documentation library of the corresponding service. For instance, if using Security Copilot within Microsoft Defender XDR, the relevant guidance can be found in the Microsoft Defender XDR documentation.
 
 ### Available Embedded Experiences
 
-#### Microsoft Defender XDR
-- **Summarize Incidents:** Quickly generate summaries of security incidents.
-- **Analyze Scripts and Codes:** Automatically interpret and analyze scripts and code snippets.
-- **Generate KQL Queries for Hunting:** Create KQL queries to help threat hunting.
-- **Use Guided Response:** Receive step-by-step instructions for incident response.
-- **Create Incident Reports:** Compile comprehensive reports on security incidents.
-- **Summarize Device Information:** Get detailed summaries of device status and activity.
-- **Analyze Files:** Perform in-depth file analysis to identify potential threats.
+The following table lists the available embedded experiences.
 
-#### Microsoft Entra
-- **Investigate Risky Users:** Identify and analyze users with suspicious activity.
+| Product | Embedded experience |
+|---------|-------------------|
+| **Azure Firewall** | Enrich threat profiles of IDPS signatures, generate recommendations to secure your environment, look for IDPS signatures across your tenant, and retrieve top IDPS signature hits |
+| **Microsoft Defender for Cloud** | Analyze recommendations, delegate recommendations, remediate code, remediate recommendations, and summarize recommendations |
+| **Microsoft Defender Threat Intelligence** | Use Copilot for advanced threat intelligence capabilities for proactive security measures |
+| **Microsoft Defender XDR** | Summarize incidents, analyze scripts and codes, generate KQL queries for hunting, use guided response, create incident reports, summarize device information, summarize identities, and analyze files |
+| **Microsoft Entra** | Investigate risky users, investigate app risk, investigate incidents, and manage lifecycle workflows |
+| **Microsoft Intune** | Device query, policy and setting management, and troubleshoot devices |
+| **Microsoft Purview** | Investigate Data Loss Prevention alerts, summarize Communication Compliance messages, investigate insider risk management activities, and summarize eDiscovery messages |
+| **Microsoft Sentinel** | Summarize Microsoft Sentinel incidents |
 
-#### Microsoft Intune
-- **Policy and Setting Management:** Manage and enforce security policies across devices.
-- **Troubleshoot Devices:** Use Microsoft Copilot to diagnose and resolve device issues.
+### Agents
 
-#### Microsoft Purview
-- **Investigate Data Loss Prevention Alerts:** Examine alerts to prevent data breaches.
-- **Summarize Communication Compliance Messages:** Generate summaries of compliance-related messages.
-- **Investigate Insider Risk Management Activities:** Analyze activities related to insider threats.
-- **Summarize eDiscovery Messages:** Create summaries of messages within eDiscovery cases.
-
-#### Microsoft Defender Threat Intelligence
-- **Use Copilot for Threat Intelligence:** Use advanced threat intelligence capabilities for proactive security measures.
+Security Copilot supports autonomous AI agents that handle high-volume security tasks across Microsoft security products. Agents are available in both the standalone and embedded experiences, helping teams address common security and IT challenges faster. You can discover agents from the agent library in the standalone experience or within the embedded portals. Visit the [Microsoft Security Store](https://securitystore.microsoft.com/) to browse Microsoft and partner-built agents.
 
 ### Plugins and Integrations
 
 Security Copilot extends its capabilities through plugins from Microsoft and third-party security products. These plugins bring extra context from event logs, alerts, incidents, and policies. Integrations with services like ServiceNow enhance the functionality and contextual awareness of Security Copilot, making it a versatile tool in your security arsenal.
+
+### Developer Scenarios
+
+Security Copilot supports developer scenarios for organizations seeking to extend, automate, or integrate security workflows. Developer scenarios empower you to build custom agents and plugins to automate security tasks, integrate Security Copilot with other Microsoft security products, and build, publish, test, and manage agents tailored to your organization's needs.
 
 ### Operational Workflow
 

@@ -1,6 +1,6 @@
 Access the capabilities of Microsoft Security Copilot through an immersive standalone experience or intuitive embedded experiences within other Microsoft security products. The underlying system combines a foundational language model with proprietary Microsoft technologies to boost the efficiency and capabilities of Defenders.
 
-Microsoft security solutions like Microsoft Defender XDR, Microsoft Sentinel, and Microsoft Intune seamlessly integrate with Security Copilot. Embedded experiences in these solutions allow you to access Security Copilot and its prompting capabilities within the context of your work.
+Microsoft security solutions like Microsoft Defender XDR, Microsoft Sentinel, Microsoft Intune, and Microsoft Entra seamlessly integrate with Security Copilot. Embedded experiences in these solutions allow you to access Security Copilot and its prompting capabilities within the context of your work.
 
 Extend and integrate services with Security Copilot using plugins from Microsoft and third-party security products. These plugins bring extra context from event logs, alerts, incidents, and policies from both Microsoft security products and supported third-party solutions like ServiceNow.
 
