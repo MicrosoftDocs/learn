@@ -1,3 +1,21 @@
+In this phase, your objective is to execute the deployment. You'll do so by performing iterative monitoring and management across six areas of your environment:
+
+- Operations
+- Applications
+- Infrastructure
+- Configurations
+- Devices
+- Users
+
+Let’s look at each of these areas one by one, outlining the tasks and deliverables that will help you accomplish the objective of this phase. For each deliverable, consider a format that's easy to share with others and collaboratively edit throughout the life of the project.
+
+> [!TIP]
+>
+> In practice, these six areas often require simultaneous or overlapping attention.
+>
+
+## Phased or ring-based approach to deploying Windows
+
 Throughout this module, we refer to deployment rings and various project phases. Some of these terms are often used interchangeably, but for this module, we use the following definitions:
 
 - **Proof of Concept (PoC)**: An optional phase often performed in a lab environment. It’s most helpful in the earliest stages of a project to test basic functionality and assumptions. This phase is sometimes called a limited pilot and is covered in the [Prepare phase](/training/modules/prepare-windows/).

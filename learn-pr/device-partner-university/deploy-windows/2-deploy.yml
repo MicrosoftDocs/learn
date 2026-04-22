@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.deploy-windows.phased-approach
-title: A phased approach
+uid: learn.dpu.deploy-windows.deploy
+title: The Deploy phase
 metadata:
-  title: A Phased Approach
+  title: The Deploy Phase
   description: This content is part of the "Deploy updates for Windows client and Microsoft 365 apps" module.
   ms.date: 04/15/2026
   author: Stephanie-Rosenzweig
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-phased-approach.md)]
+  [!include[](includes/2-deploy.md)]
