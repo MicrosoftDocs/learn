@@ -1,116 +1,120 @@
-Security Copilot receives improvements on an ongoing basis. This section provides a summary of the new features and enhancements that have been added to Security Copilot.
+Security Copilot receives improvements on an ongoing basis. This section provides a summary of significant new features and enhancements that have been added to Security Copilot.
 
 Each item describes where the enhancement can be experienced. For more information, see [Security Copilot experiences](/copilot/security/experiences-security-copilot).
 
-## May 2024
+For a complete and up-to-date list of all changes, see [What's new in Microsoft Security Copilot](/copilot/security/whats-new-copilot-security).
 
+## Microsoft 365 E5 inclusion (November 2025)
 
-### Microsoft Purview embedded experience - General Availability
+**Type:** New capability
+**Experience:** Standalone / Embedded
+
+Microsoft Security Copilot is now included for all Microsoft 365 E5 customers. Security Copilot is auto provisioned—no Azure setup or capacity provisioning is required. This change makes Security Copilot agents easily accessible and helps security teams get started more quickly.
+
+For more information, see: [Security Copilot inclusion](/copilot/security/security-copilot-inclusion).
+
+---
+
+## Security Copilot agents (September 2025)
+
+**Type:** New capability
+**Experience:** Standalone / Embedded
+
+Security Copilot now supports autonomous AI agents that handle high-volume security tasks across Microsoft security products. Agents are available in both the standalone and embedded experiences. Key agents include:
+
+- **Phishing Triage Agent in Microsoft Defender:** Performs deep semantic analysis of emails, URLs, and files to determine whether a submission is a phishing threat or a false alarm.
+- **Threat Intelligence Briefing Agent:** Generates relevant, organization-specific threat intelligence briefings in minutes rather than hours or days.
+- **Conditional Access Optimization Agent in Microsoft Entra:** Detects gaps, overlaps, and outdated policy assignments and recommends remediations.
+- **Access Review Agent in Microsoft Entra:** Streamlines access reviews, flags unusual patterns, and reduces fatigue for security and compliance teams.
+
+Additionally, more than 30 partner-built agents are available in the Microsoft Security Store.
+
+For more information, see: [Discover agents](/copilot/security/discover-agents).
+
+---
+
+## Build your own Security Copilot agent (September 2025)
+
+**Type:** New feature
+**Experience:** Standalone
+
+You can create custom Security Copilot agents using the standalone agent builder (no-code experience) or developer tools to design, test, and deploy agents that automate your most needed workflows.
+
+For more information, see: [Custom agent overview](/copilot/security/developer/custom-agent-overview).
+
+---
+
+## Microsoft Security Store (September 2025)
+
+**Type:** New feature
+**Experience:** Standalone
+
+The Microsoft Security Store makes it simple to discover, deploy, and buy Security Copilot agents and partner solutions. You can browse agents and SaaS solutions to power your SOC, IT, privacy, and compliance workflows.
+
+For more information, see: [Security Store](/security/store/what-is-security-store).
+
+---
+
+## Microsoft Sentinel integration - General availability (September 2025)
+
+**Type:** New feature
+**Experience:** Embedded
+
+Microsoft Sentinel data lake is now generally available with Security Copilot integration. This lets agents access connected data across Sentinel, combining graph, structured, and semantic context to reason and act with greater precision.
+
+For more information, see: [Microsoft Sentinel and Security Copilot](/azure/sentinel/sentinel-security-copilot-incident-summary).
+
+---
+
+## Copilot in Microsoft Intune - General availability (July 2025)
+
+**Type:** Changed
+**Experience:** Embedded
+
+IT admins can use Security Copilot in Intune with a dedicated data exploration experience, allowing them to ask questions, extract insights, and take action from within the Intune admin center.
+
+For more information, see: [Microsoft Copilot in Intune](/intune/intune-service/copilot/copilot-intune-overview).
+
+---
+
+## Copilot in Microsoft Entra - General availability (July 2025)
+
+**Type:** Changed
+**Experience:** Embedded
+
+Security Copilot in Microsoft Entra brings AI-assisted investigation and identity management directly into the Microsoft Entra admin center. Admins can ask natural language questions to troubleshoot sign-ins, review access, monitor tenant health, and analyze role assignments.
+
+For more information, see: [Microsoft Copilot in Microsoft Entra](/entra/fundamentals/copilot-security-entra).
+
+---
+
+## Overage SCUs - General availability (April 2025)
+
+**Type:** New capability
+**Experience:** Standalone
+
+Customers can set an overage amount of SCUs to ensure that additional SCUs are available when initially provisioned units are depleted during unexpected workload spikes. Overage units are billed on-demand and can be set as unlimited or a maximum amount.
+
+For more information, see: [Manage usage](/copilot/security/manage-usage).
+
+---
+
+## Workspaces (June 2025)
+
+**Type:** New feature
+**Experience:** Standalone
+
+Security Copilot now supports workspaces, giving organizations a flexible way to segment environments by team, region, or business unit. Admins can align access, data boundaries, and SCU capacity with operational and compliance needs.
+
+For more information, see: [Manage workspaces](/copilot/security/manage-workspaces).
+
+---
+
+## Microsoft Purview embedded experience - General availability (May 2024)
 
 **Type:** Moved from public preview to GA
 **Experience:**  Embedded (Microsoft Purview)
 
-
-Purview (embedded experience) will provide the ability to answer users Microsoft Purview data-related questions in natural language queries using existing data insights API/ solution APIs. The Purview users will be able to use Security Copilot capabilities to summarize alerts and incidents, and get contextual summary of communications. 
-
-Purview embedded experience uses Security Copilot’s natural language assistive copilot experience and enhances the Purview product experience by providing an AI assistant while using Purview. 
-
+Purview embedded experience provides the ability to answer users' Microsoft Purview data-related questions in natural language queries. Purview users can use Security Copilot capabilities to summarize alerts and incidents, and get contextual summary of communications.
 
 For more information, see: [Microsoft Security Copilot in Microsoft Purview](/purview/copilot-in-purview-overview).
-
----
-
-### CyberArk Privilege Cloud plugin - Public preview
-
-**Type:**  New plugin
-**Experience:** Standalone  
-
-
-CyberArk Privilege Cloud is a SaaS solution that provides a simplified path to securely store, rotate and isolate credentials (for both human and non-human users), monitor sessions, and quickly deliver scalable risk reduction to the business. You can use the CyberArk plugin with Microsoft Security Copilot to:
-
-- List privileged accounts in Security Copilot using natural language.
-- Use Copilot generative AI abilities to interact with privileged accounts data.
-
-For more information, see: [Cyberark Privilege Cloud](/copilot/security/plugin-cyberark).
-
----
-
-### DarkTrace plugin - Public preview
-
-**Type:**  New plugin
-**Experience:** Standalone   
-
-
-Darktrace offers cybersecurity AI services to provide preemptive visibility into security posture, real-time detection, and autonomous response to known and unknown threats. You can use the Darktrace plugin with Microsoft Security Copilot to proactively detect, investigate, and respond to threats across your digital ecosystem.
-
-For more information, see: [DarkTrace](/copilot/security/plugin-darktrace).
-
----
-
-### Jamf Pro plugin - Public preview
-
-**Type:**  New plugin
-**Experience:** Standalone
-
-
-Jamf Pro provides comprehensive MDM data. You can use the Jamf plugin with Microsoft Security Copilot to streamline how your security analysts access data, simplify the process of gathering crucial information, and facilitate seamless collaboration between IT and Security teams.
-
-
-For more information, see: [Jamf Pro](/copilot/security/plugin-jamf).
-
----
-
-### Red Canary plugin - Public preview
-
-**Type:**  New plugin
-**Experience:** Standalone
-
-
-
-Red Canary provides managed detection and response (MDR) and other security capabilities to protect endpoints, network, cloud workloads, identities, and SaaS applications. You can use the Red Canary plugin with Microsoft Security Copilot to enhance your security operations.
-
-For more information, see: [Red Canary](/copilot/security/plugin-red-canary).
-
-
----
-
-### SGNL.ai plugin - Public preview
-
-**Type:**  New plugin
-**Experience:** Standalone
-
-
-SGNL provides a dynamic access platform that provides a foundation for Zero Standing Privilege (ZSP) initiatives to protect against threats to user sessions and credentials. You can use the SGNL Access Intelligence plugin with Microsoft Security Copilot to understand and identify fine-grained access decisions and trends across your organization.
-
-
-For more information, see: [SGNL plugin](/copilot/security/plugin-sgnl).
-
----
-
-
-
-### Shodan plugin - Public preview
-
-**Type:**  New plugin 
-**Experience:** Standalone
-
-
-Shodan is a search engine that allows users to find specific types of devices connected to the internet using various filters. It provides a global view of how certain devices are connected and can be used to discover which devices are connected to the internet, where they're located, and who is using them. You can use the Shodan plugin with Microsoft Security Copilot to get enhanced visibility of their internet-facing assets and better detect threats and vulnerabilities.
-
-
-For more information, see: [Shodan](/copilot/security/plugin-shodan).
-
----
-
-
-### ReversingLabs Spectra Intelligence plugin - Public preview
-
-**Type:**  New plugin
-**Experience:** Standalone    
-
-
-​ReversingLabs empowers SOC teams to understand the file-based threats in an environment. Analysts can use Security Copilot to summarize complex file reputation information and file analysis reports for quicker triage and response time.
-
-For more information, see: [ReversingLabs Spectra Intelligence](/copilot/security/plugin-reversinglabs).
-
----

@@ -11,5 +11,6 @@ The topics covered in this module include:
 - Deploying and Setting Up Microsoft Security Copilot
 - Using and Creating Effective Prompts in Microsoft Security Copilot
 - Using Promptbooks in Microsoft Security Copilot
+- Exploring New Features in Microsoft Security Copilot
 - Understanding Responsible AI Principles in Microsoft Security Copilot
 

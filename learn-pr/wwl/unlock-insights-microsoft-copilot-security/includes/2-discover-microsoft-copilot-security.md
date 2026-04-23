@@ -1,27 +1,43 @@
-Microsoft Security Copilot is a generative AI-powered security solution designed to boost the efficiency and capabilities of Defenders, delivering improved security outcomes at machine speed and scale.
+Microsoft Security Copilot is a generative AI-powered security solution that helps increase the efficiency and capabilities of defenders to improve security outcomes at machine speed and scale.
 
-Security Copilot offers a natural language, assistive copilot experience. It supports security professionals in end-to-end scenarios such as incident response, threat hunting, intelligence gathering, and posture management.
+Security Copilot provides a natural language, assistive copilot experience. It helps support security professionals in various end-to-end scenarios such as incident response, threat hunting, intelligence gathering, posture management, and more.
 
-Integration is at the core of Security Copilot. It provides a standalone experience while seamlessly integrating with products in the Microsoft Security portfolio, including Microsoft Defender XDR, Microsoft Sentinel, Microsoft Intune, and third-party services like ServiceNow.
+Designed with integration in mind, Security Copilot offers a standalone experience and also seamlessly integrates with products in the Microsoft Security portfolio. Security Copilot integrates with products such as Microsoft Defender XDR, Microsoft Sentinel, Microsoft Intune, Microsoft Entra, and other third-party services such as ServiceNow and Jamf.
 
-Using the full power of OpenAI architecture, Security Copilot generates responses to user prompts using security-specific plugins. These plugins tap into organization-specific information, authoritative sources, and global threat intelligence. This approach gives security professionals broader visibility into threats, richer context, and the ability to extend the solution’s functionalities.
+The solution leverages the full power of OpenAI architecture to generate responses to user prompts by using security-specific plugins, including organization-specific information, authoritative sources, and global threat intelligence. By using plugins as data point sources, security professionals have wider visibility into threats, gain more context, and incident responders have the opportunity to extend the solution's functionalities.
 
 ### Primary Use Cases for Security Copilot
 
-### Incident summarization
+### Investigate and remediate security threats
 
-Quickly distill complex security alerts into concise, actionable summaries using generative AI. This improves communication across your organization, enabling faster response times and streamlined decision-making.
+Gain context for incidents to quickly triage complex security alerts into actionable summaries and remediate quicker with step-by-step response guidance.
 
-### Impact analysis
+### Build KQL queries or analyze suspicious scripts
 
-Utilize AI-driven analytics to assess the potential impact of security incidents. Gain insights into affected systems and data, allowing you to prioritize response efforts effectively.
+Eliminate the need to manually write query-language scripts or reverse engineer malware scripts with natural language translation to enable every team member to execute technical tasks.
 
-### Reverse engineering of scripts
+### Understand risks and manage security posture
 
-Eliminate the need for manual reverse engineering of malware. Analyze complex command-line scripts and translate them into natural language with clear explanations. Efficiently extract and link indicators found in the script to their respective entities in your environment.
+Get a broad picture of your environment with prioritized risks to uncover opportunities to improve posture more easily.
 
-### Guided response
+### Troubleshoot IT issues faster
 
-Receive actionable, step-by-step guidance for incident response, including directions for triage, investigation, containment, and remediation. Relevant deep links to recommended actions allow for quicker response.
+Synthesize relevant information rapidly and receive actionable insights to identify and resolve IT issues quickly.
+
+### Define and manage security policies
+
+Define a new policy, cross-reference it with others for conflicts, and summarize existing policies to manage complex organizational context quickly and easily.
+
+### Configure secure lifecycle workflows
+
+Build groups and set access parameters with step-by-step guidance to ensure a seamless configuration to prevent security vulnerabilities.
+
+### Develop reports for stakeholders
+
+Get a clear and concise report that summarizes the context and environment, open issues, and protective measures prepared for the tone and language of the report's audience.
+
+### Build and add agents
+
+Developers can build and add agents to the Security Copilot ecosystem to automate security tasks and extend the solution's capabilities.
 
 By incorporating these capabilities, Microsoft Security Copilot enhances the efficiency and effectiveness of security professionals, ensuring robust protection against evolving threats.
