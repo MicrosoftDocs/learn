@@ -65548,6 +65548,66 @@
       "source_path_from_root": "/learn-pr/wwl-databricks/monitor-troubleshoot-optimize-workloads-azure-databricks/8-summary.md",
       "redirect_url": "/training/modules/monitor-troubleshoot-optimize-workloads-azure-databricks/9-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/2-discover-microsoft-copilot-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/3-understand-how-copilot-security-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/4-explore-microsoft-copilot-security-experiences.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/5-deploy-microsoft-copilot-security-enhanced-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/6-utilize-prompts-microsoft-copilot-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/7-incorporate-promptbooks-microsoft-copilot-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/8-explore-new-features-microsoft-copilot-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/9-understand-responsible-ai-microsoft-copilot-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/unlock-insights-microsoft-copilot-security/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/security-copilot-getting-started/",
+      "redirect_document_id": false
     }
   ]
 }

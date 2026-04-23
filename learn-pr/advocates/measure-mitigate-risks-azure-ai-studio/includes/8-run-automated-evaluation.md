@@ -1,16 +1,15 @@
-Automated Evaluations within Azure AI Foundry execute an AI-assisted evaluation which uses LLMs, such as GPT-4, to evaluate the output of generative AI language systems. This process is achieved by instructing an LLM to annotate certain aspects of the AI-generated output. For instance, you can provide GPT-4 with a relevance severity scale (for example, provide criteria for relevance annotation on a 1-5 scale) and then ask GPT-4 to annotate the relevance of an AI system’s response to a given question.
+Automated evaluations in Azure AI Foundry use built-in evaluators to score model or dataset outputs at scale. AI-assisted quality evaluators such as coherence and fluency use a judge model, while similarity compares responses against expected answers when you provide ground-truth data. Risk and safety evaluators inspect content for harmful or insecure behavior. Evaluator availability varies by region, which is one reason this module uses **East US 2**.
 
 :::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results within Azure AI Foundry. The screenshot displays the metric dashboard." lightbox="../media/automated-evaluation-results.png":::
 
-We’re able to use AI-assisted evaluation to assess the performance and safety of your generative AI application. AI-assisted evaluations can be beneficial in scenarios where ground truth and expected answers aren't available. In many generative AI scenarios, such as open-ended question answering or creative writing, single correct answers don't exist, making it challenging to establish the ground truth or expected answers that are necessary for traditional metrics.
+AI-assisted evaluation is useful when you want a repeatable way to measure both quality and safety across many prompts. It's especially helpful in generative AI scenarios where outputs are open-ended and traditional pass-or-fail checks aren't enough.
 
-In the context of the Contoso Camping Store chatbot, you’re provided with a test dataset which includes sample input, and a generated response from the model that is based on its current configuration. Let’s run an automated evaluation to assess the model’s performance and safety.
+In this unit, you use a **dataset** target. That means Azure AI Foundry scores the responses already stored in the `.jsonl` file instead of rerunning your live playground configuration. The sample dataset includes prompt, answer, and ground-truth fields so you can evaluate the dataset's quality and safety profile at scale.
 
 ## Configure and run the automated evaluation
 
 1. In the left navigation, within the **Assess and improve** section, select **Evaluation**.
-1. Within the **Automated evaluations** tab, select **Create a new evaluation**.
-1. For the **What do you want to evaluate?** window, select **Dataset**.
+1. If your portal separates evaluations by type, open the **Automated evaluations** tab and select **Create**. If it uses a single create flow, select **Create** and choose **Dataset** as the evaluation target.
 
 **Basic Information**
 
@@ -25,11 +24,11 @@ In the context of the Contoso Camping Store chatbot, you’re provided with a te
 
 **Select metrics**
 
-1. For the **AI Quality (AI Assisted)** metrics, select **Coherence**, **Fluency**, **Similarity**.
-1. For the **Connection** field, select your AzureOpenAI connection.
-1. For the **Deployment name/Model** field, select the **gpt-4o** model.
-1. For the **Risk and safety metrics curated by Microsoft**, select all the metrics.
-1. For the **Set the threshold to calculate the defect rate**, select Medium.
+1. For the **AI Quality (AI Assisted)** metrics, select **Coherence** and **Fluency**. If **Similarity** appears in a separate **Textual similarity** section in your portal, select it there as well. Similarity uses the `ground_truth` field that you map later in this workflow.
+1. For the **Connection** field, select your **Azure OpenAI** connection.
+1. For the judge **Deployment name/Model** field, select a deployed chat completion model, such as the chat deployment you created earlier. The judge can be the same chat deployment you're testing, or another supported chat deployment in the same project, but it must not be the embedding deployment you created for the index.
+1. For the **Risk and safety metrics curated by Microsoft**, select the metrics that apply to this scenario (for example, **Hate and unfairness**, **Sexual**, **Violent**, **Self-harm**, **Protected material**, **Indirect attack**, and **Groundedness Pro**). If your portal exposes **Select all** and your region supports every metric, you can use that option. Region support varies; **East US 2** is one of the regions that supports the full risk and safety set - including **Protected material**, **Indirect attack**, and **Groundedness Pro** - which is why this module uses that region. For more information, see [Rate limits, region support, and enterprise features for evaluation](/azure/ai-foundry/concepts/evaluation-regions-limits-virtual-network) and [Risk and safety evaluators](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators).
+1. For **Set the threshold to calculate the defect rate**, select **Medium**. This setting controls how the evaluation report summarizes risk and safety findings for the run; it doesn't change the content filter attached to your deployment, which is configured separately. Use the row-level severity scores and evaluator reasoning to interpret flagged outputs rather than relying only on the aggregate defect rate. For background, see [Risk and safety evaluators](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators) and [Microsoft Foundry risk and safety evaluations Transparency Note](/azure/foundry/concepts/safety-evaluations-transparency-note).
 1. For the **How does your dataset map to the evaluation input?** section, map the following fields and select **Next**:
 
 | **Name** | **Data source** |
@@ -44,41 +43,41 @@ In the context of the Contoso Camping Store chatbot, you’re provided with a te
 1. Select **Submit**.
 
 > [!NOTE]
-> The evaluation may take a few minutes to execute. Once the evaluation is complete, you can view the results by navigating to the evaluation run within the **Automated evaluations** tab.
+> The evaluation may take a few minutes to execute. Once the evaluation is complete, open the evaluation run to review the results. If a metric is unavailable or missing, verify your region and model support. For more information, see [Run evaluations from the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-generative-ai-app) and [Rate limits, region support, and enterprise features for evaluation](/azure/ai-foundry/concepts/evaluation-regions-limits-virtual-network).
 
 ## Review the evaluation results
 
-The results for the automated evaluation vary as the evaluation is influenced by the GPT model that is used to execute the AI-assisted evaluation. Therefore, the review of results provided is generalized and based on sample automated evaluation results. You’re encouraged to analyze your own automated evaluation results to brainstorm potential improvements that could be made to improve results.
+The results for the automated evaluation vary because the evaluation is influenced by the judge model and the dataset. Therefore, the review of results provided is generalized and based on sample automated evaluation results. Treat the scores as signals for investigation, not proof that the app is production-ready, and analyze your own row-level results to decide what to improve next.
 
 1. In the left navigation, within the **Assess and improve** section, select **Evaluation**.
-1. On the **Automated evaluations** tab, select the **automated-eval1** evaluation run from the list to view more details on the run detail page.
-1. The **Metric dashboard** provides the averages for each metric. Toggle between the **AI Quality (AI Assisted)** and **Risk and safety** tabs to analyze the average results.
-1. The **Detailed metrics result** section provides a breakdown of the results for each row of data evaluated. Scroll through the result table to analyze the results and view the respective reasoning.
+1. Select the **automated-eval1** evaluation run from the list to open the run detail page.
+1. Review the average scores for the AI quality and risk and safety evaluators.
+1. Inspect the row-level results and reasoning to understand which prompts produced the weakest outcomes.
 
 > [!TIP]
-> Select the **i** icon for each metric to learn more about the meaning of the metric. Also, the highest score possible for each **AI Quality (AI Assisted)** metric is 5.
+> Select the **i** icon or **Learn more about metrics** link for evaluator definitions and scoring details. For more information, see [View evaluation results in the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-results).
 
 ## Decide on the best course of action
 
-Now that you have the results of the automated evaluation, you’re equipped with analytical data to influence and support your next course of action. Does the system message need adjustments? Is there another data connection to be made? Or do you suspect that another model might provide better results? These ideas are some of ideas that might come to mind after analyzing the results.
+Now that you have the results of the automated evaluation, you're equipped with analytical data to influence and support your next course of action. Does the system message need adjustments? Is there another data connection to be made? Or do you suspect that another model might provide better results? These are some of the ideas that might come to mind after analyzing the results.
 
 ## Run a second automated evaluation
 
-To facilitate a comprehensive comparison between two or more runs, you can select the desired runs and initiate the comparison process within a **List** or **Dashboard** view. Let’s run another automated evaluation for the model and compare the results.
+To facilitate a comprehensive comparison between two or more runs, select the runs you want to compare and open the comparison view. In this exercise, you use a second pregenerated dataset so you can practice the comparison experience without having to regenerate outputs yourself first.
 
 > [!NOTE]
-> The **e2e-automated-evaluation-2.jsonl** file simulates a fictitious dataset where it is assumed that modifications were made to improve the model output, such as modifying the system message, adjusting content filters, and/or grounding with additional data.
+> The **e2e-automated-evaluation-2.jsonl** file is a pregenerated sample that simulates improved outputs after changes such as refining the system message, adjusting content filters, and improving the grounded data. In a real workflow, you would make those changes in your app and then regenerate or capture a fresh dataset before running the second evaluation.
 
-## Dashboard view
+## Compare two evaluation runs
 
 :::image type="content" source="../media/compare-automated-evaluations.png" alt-text="A screenshot of the comparison of two automated evaluations in Azure AI Foundry. The scores are higher for the second evaluation." lightbox="../media/compare-automated-evaluations.png":::
 
 1. In the left navigation, within the **Assess and improve** section, select **Evaluation**.
-1. Create a new evaluation following the steps in the **Configure and run an automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
-1. Once the evaluation is complete, select both the **automated-eval1** and **automated-eval2** evaluation runs in the **Automated evaluations** list.
+1. Create a new evaluation following the steps in the **Configure and run the automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
+1. Once the evaluation is complete, select both the **automated-eval1** and **automated-eval2** evaluation runs.
 1. Select **Compare**.
-1. Within the **Comparison** section, hover over the title of **automated-eval1** and select **Set as baseline**. This sets the initial evaluation as the baseline metrics across all evaluation metrics. This is helpful for comparing a baseline set of metrics to newly run evaluations.
-1. Observe how the metrics might change after making adjustments to the system prompt or refining the grounded data.
-1. For a streamline view to observe differences, enable the **Show differences** toggle. This toggle modifies the table to only display the rows that differ between the baseline run **(automated-eval1)** and the compared run **(automated-eval2)**. This feature can be helpful to highlight discrepancies between runs and pinpoint where potential improvements or adjustments might be needed.
+1. If the comparison view lets you set a baseline, set **automated-eval1** as the baseline.
+1. Review which metrics improved, degraded, or remained inconclusive between the two datasets.
+1. Inspect the row-level differences to understand why the second run scored differently.
 
-There’s now a significant improvement in results after making changes to the model. Once the chatbot is deployed and used by Contoso Camping Store customers, you’re encouraged to execute more evaluation runs and compare results to analyze the model’s behavior.
+There's now a clearer picture of how the scored outputs differ between runs. In a production workflow, pair automated evaluations with human review and compare fresh runs each time you change prompts, grounding data, models, or guardrails. For more information about evaluator categories, region support, and results interpretation, see [Run evaluations from the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-generative-ai-app), [Rate limits, region support, and enterprise features for evaluation](/azure/ai-foundry/concepts/evaluation-regions-limits-virtual-network), and [View evaluation results in the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-results).
