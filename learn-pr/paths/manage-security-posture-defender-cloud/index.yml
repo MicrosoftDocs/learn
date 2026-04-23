@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-security-posture-defender-cloud
+metadata:
+  title: Manage Security Posture by Using Microsoft Defender for Cloud
+  description: Learn to manage cloud security posture using Microsoft Defender for Cloud. You connect hybrid and multicloud environments, identify risks, and assess compliance—then protect your workloads with threat detection and vulnerability management.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+title: Manage security posture by using Microsoft Defender for Cloud
+summary: |
+  Learn to build and maintain a strong security posture across your hybrid and multicloud estate using Microsoft Defender for Cloud. You start by connecting on-premises, AWS, and GCP environments to establish unified visibility. You then identify and prioritize security risks using Cloud Security Posture Management (CSPM)—including Secure Score, attack path analysis, and Cloud Security Explorer. You extend that posture view outside-in with Microsoft Defender External Attack Surface Management (EASM) to discover unknown internet-facing assets and surface exploitable exposure. You assess your organization's compliance posture against regulatory frameworks and generate audit-ready reports. Finally, you enable Cloud Workload Protection Platform (CWPP) plans to defend servers, storage, databases, and AI workloads against active threats. Then configure Microsoft Defender Vulnerability Management to scan and remediate vulnerabilities on Azure VMs.
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud and the Microsoft Defender portal
+  - Understanding of Azure resource types and Azure role-based access control (RBAC)
+  - Knowledge of cloud security concepts including misconfigurations, vulnerabilities, and exposure
+  - Familiarity with cloud identity and access management concepts across Azure, AWS, and GCP
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- defender-for-cloud
+subjects:
+- security
+- cloud-security
+- compliance
+modules:
+- learn.wwl.connect-hybrid-multicloud-environments-defender
+- learn.wwl.identify-security-risks-posture-management
+- learn.wwl.discover-external-assets-vulnerabilities
+- learn.wwl.evaluate-regulatory-compliance
+- learn.wwl.enable-configure-workload-protection-plans
+- learn.wwl.configure-defender-vulnerability-management
+trophy:
+  uid: learn.wwl.manage-security-posture-defender-cloud.trophy
