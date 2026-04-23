@@ -46,7 +46,7 @@ Here's how it works:
 
 1. Apply a CNOT operation to the qubit pair. Recall that the control qubit is in a superposition state and the target qubit is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
-    <!-- no-loc -->
+    <div class="notranslate">
     $$
     \\begin{aligned}
     CNOT \\frac{1}{\\sqrt{2}}(\\ket{0_c}+\\ket{1_c})\\ket{0_t} &= CNOT \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 0_t})\\\\
@@ -54,7 +54,7 @@ Here's how it works:
     &= \\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})
     \\end{aligned}
     $$
-    <!-- /no-loc -->
+    </div>
 
 The state :::no-loc text="$\\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})$"::: is entangled. This particular entangled state is one of the four Bell states, :::no-loc text="$\\ket{\\phi^{+}}$":::.
 
