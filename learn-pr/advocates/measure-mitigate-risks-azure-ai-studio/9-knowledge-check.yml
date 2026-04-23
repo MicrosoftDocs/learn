@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Test your knowledge of measuring and mitigating risks for a generative AI app in Azure AI Foundry.
-  ms.date: 09/14/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
@@ -18,45 +18,45 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: Which feature isn't included in the system message?
+  - content: What should the chatbot do when the retrieved product data doesn't contain the answer?
     choices:
-    - content: Instructions that guide the user's input.
+    - content: Say it can't find the answer in the product catalog and avoid guessing.
       isCorrect: true
-      explanation: "Correct: The user's input is freeform, and any instructions for the user would be part of the interface, not the system message."
-    - content: Data about the current conversation context.
+      explanation: "Correct: The system message in this module explicitly tells the chatbot to rely on retrieved Contoso product data and to say it can't find the answer when the catalog doesn't contain it."
+    - content: Use general model knowledge to provide the most likely answer.
       isCorrect: false
-      explanation: "Incorrect: The system message can include some contextual data to help the AI understand how to respond in line with past interactions."
-    - content: Restrictions or limitations for the AI's response.
+      explanation: "Incorrect: That would undermine grounding and can introduce hallucinations."
+    - content: Switch to general camping advice even if the question is product-specific.
       isCorrect: false
-      explanation: "Incorrect: The system message often contains restrictions that limit the types of responses the AI can provide, ensuring it follows specific rules or avoids certain topics."
-    - content: Information that sets the behavior of the AI.
+      explanation: "Incorrect: Product-specific questions should stay grounded in the Contoso product data rather than drifting into unrelated advice."
+    - content: Invent a reasonable price or feature so the response stays helpful.
       isCorrect: false
-      explanation: "Incorrect: The system message typically includes information that sets the AI's behavior, such as its personality or specific guidelines for how it should respond."
+      explanation: "Incorrect: The module teaches the chatbot to avoid inventing details when the retrieved sources don't contain the answer."
   - content: For Azure OpenAI model deployments, what is the threshold level for the default content filter?
     choices:
     - content: High.
       isCorrect: false
-      explanation: 'Incorrect: A content filter can only be set to "high" by creating a custom content filter.'
+      explanation: 'Incorrect: High is a valid custom threshold, but it isn''t the default.'
     - content: Medium.
       isCorrect: true
-      explanation: "Correct: The default content filter is set to a medium threshold. However, only customers who have been approved for modified content filtering have full content filtering control."
+      explanation: "Correct: The default content filter blocks content classified at medium or high severity in the four core harm categories (hate, sexual, violence, and self-harm) for both prompts and completions."
     - content: Low.
       isCorrect: false
-      explanation: "Incorrect: A content filter can only be set to low by creating a custom content filter."
+      explanation: "Incorrect: Low is a stricter custom threshold, not the default."
     - content: No detection.
       isCorrect: false
-      explanation: "Incorrect: Although content filters can be turned off with approval, the threshold 'no detection' isn't an actual level."
-  - content: What is the view for comparing automated evaluation results, enabling you to visualize the delta and/or only showing differences?
+      explanation: "Incorrect: Turning filters partially or fully off requires approval, and 'No detection' isn't the default behavior."
+  - content: After you select two or more automated evaluation runs, which action opens the comparison view?
     choices:
-    - content: Compare view.
-      isCorrect: false
-      explanation: "Incorrect: The Compare view isn't a view within automated evaluations."
-    - content: List view.
-      isCorrect: false
-      explanation: "Incorrect: The List view only lists all evaluation runs and their respective results. Although this view supports filters and modifying columns, this view does not include the ability to show the delta nor to show differences."
-    - content: Dashboard view.
+    - content: Compare.
       isCorrect: true
-      explanation: "Correct: You can select the desired runs and initiate the evaluation comparison process within a List or Dashboard view."
-    - content: Contrast view.
+      explanation: "Correct: After you select two or more runs, select Compare to open the comparison view and optionally set a baseline."
+    - content: Dashboard.
       isCorrect: false
-      explanation: "Incorrect: The Contrast view isn't a view within automated evaluations."
+      explanation: "Incorrect: The comparison is started with the Compare action, not a separate Dashboard command."
+    - content: Export.
+      isCorrect: false
+      explanation: "Incorrect: Exporting data doesn't open the comparison experience."
+    - content: Fine-tune.
+      isCorrect: false
+      explanation: "Incorrect: Fine-tuning changes a model; it doesn't compare evaluation runs."
