@@ -46,15 +46,7 @@ Here's how it works:
 
 1. Apply a CNOT operation to the qubit pair. Recall that the control qubit is in a superposition state and the target qubit is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
-    ```latex
-    $$
-    \begin{aligned}
-    CNOT \frac{1}{\sqrt{2}}(\ket{0_c}+\ket{1_c})\ket{0_t} &= CNOT \frac{1}{\sqrt2}(\ket{0_c 0_t}+\ket{1_c 0_t})\\
-    &= \frac{1}{\sqrt2}(CNOT \ket{0_c 0_t} + CNOT \ket{1_c 0_t})\\
-    &= \frac{1}{\sqrt2}(\ket{0_c 0_t}+\ket{1_c 1_t})
-    \end{aligned}
-    $$
-    ```
+:::image type="content" source="../media/cnot_superposition_to_entanglement.png" alt-text="Screenshot shows the step-by-step application of a CNOT gate to a qubit pair." lightbox="../media/cnot_superposition_to_entanglement.png" border="false":::
 
 The state :::no-loc text="$\\frac{1}{\\sqrt2}(\\ket{0_c 0_t}+\\ket{1_c 1_t})$"::: is entangled. This particular entangled state is one of the four Bell states, :::no-loc text="$\\ket{\\phi^{+}}$":::.
 
@@ -196,15 +188,7 @@ Here's how to create the :::no-loc text="$\\ket{\\phi^-}$"::: state:
 
 1. Apply the CNOT operation to the control qubit and the target qubit, which is in the :::no-loc text="$\\ket{0_t}$"::: state.
 
-    <div class="notranslate">
-    $$
-    \begin{aligned}
-    CNOT \frac{1}{\sqrt{2}}(\ket{0_c}-\ket{1_c})\ket{0_t} &= CNOT \frac{1}{\sqrt2}(\ket{0_c 0_t}-\ket{1_c 0_t})\\
-    &= \frac{1}{\sqrt2}(CNOT \ket{0_c 0_t} - CNOT \ket{1_c 0_t})\\
-    &= \frac{1}{\sqrt2}(\ket{0_c 0_t}-\ket{1_c 1_t})
-    \end{aligned}
-    $$
-    </div>
+    :::image type="content" source="../media/cnot_superposition_minus_target_0_derivation.png" alt-text="Screenshot shows the algebraic derivation of applying a CNOT gate to a control qubit in superposition." lightbox="../media/cnot_superposition_minus_target_0_derivation.png" border="false":::
 
 To create the :::no-loc text="$\\ket{\\phi^-}$"::: Bell state in Q#, replace the code in the your **Main.qs** with the following code:
 
