@@ -7946,3 +7946,8 @@ achievements:
   title: Guided project - Accelerate app development using GitHub Copilot tools
   summary: This Module explores using GitHub Copilot to accelerate development of an end-to-end project. GitHub Copilot is used to explain unfamiliar code, generate project documentation, develop a new app feature, develop unit tests, and implement improvements.&nbsp;
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.unlock-insights-microsoft-copilot-security.badge
+  type: badge
+  title: Unlock insights with Microsoft Copilot for Security
+  summary: This module introduces Microsoft Security Copilot, an AI-powered security solution designed to enhance the efficiency of security professionals.
+  iconUrl: /training/achievements/copilot-module.svg
