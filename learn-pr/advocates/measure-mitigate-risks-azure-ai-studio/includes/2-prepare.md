@@ -1,28 +1,29 @@
-The first step in building a generative AI solution with Azure OpenAI Service  is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in [Azure AI Foundry](https://ai.azure.com). After the hub resource is created, you'll need to create an Azure AI Project. 
+The first step in this guided project is to create a project and the supporting resources in Azure AI Foundry. This module intentionally uses a **hub-based project** in the **Foundry (classic)** experience because the later units rely on classic navigation such as **Data + indexes**, **Guardrails + controls**, and **Evaluation**.
 
-Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps.
-
-The Azure AI hub resource is the top-level Azure resource for Azure AI Foundry and provides the working environment for a team to build and manage AI applications.
-
-In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring.
-
-## Create an Azure AI Foundry project resource
+## Create an Azure AI Foundry hub-based project
 
 > [!IMPORTANT]
-> This exercise uses the East US 2 region because that region supports all features that this module includes. If you select a different region, you might not be able to complete the exercises. To learn more, see [Region availability](/azure/ai-services/content-safety/overview#region-availability).
+> Use the **East US 2** region for this exercise. Current evaluation guidance lists **East US 2** as supporting the full risk-and-safety evaluator set used later in this module, including **Protected material**, **Indirect attack**, and **Groundedness Pro**. Feature availability still changes over time, so verify both model and feature support before you create resources. For more information, see [Microsoft Foundry feature availability across cloud regions](/azure/foundry/reference/region-support), [Rate limits, region support, and enterprise features for evaluation](/azure/ai-foundry/concepts/evaluation-regions-limits-virtual-network), and [Azure AI Content Safety region availability](/azure/ai-services/content-safety/overview#region-availability).
 
-1. In [Azure AI Foundry](https://ai.azure.com/), select **+Create project**.
-1. For **Project name**, provide a name for your project.
-1. Select **Customize** and modify the following fields as needed:
-    - **Hub name**: Select an existing hub or provide a name for a new one.
-    - **Subscription**: Select your Azure subscription.
-    - **Resource group**: Select an existing resource group or create a new one.
-    - **Location**: Select **East US 2**.
-    - **Connect Azure AI Services or Azure OpenAI**: Either select an existing service, use the default name provided for a new service, or select **Create new AI Services** to provide your own name for the service.
-    - **Connect Azure AI Search**: Select **Create new AI Search**. Provide a name for the resource and select **Next**.
-1. Select **Next**.
-1. Review the hub details, and then select **Create**.
+1. Go to [Azure AI Foundry](https://ai.azure.com).
+1. If the **New Foundry** toggle is on, turn it off so you're using **Foundry (classic)**. This guided project assumes the classic left navigation and hub-based project flow.
+1. Select **Create new**. If you're already in a project, select the project breadcrumb and then select **Create new resource**.
+1. On the **Select resource type** screen, select **AI hub resource**, and then select **Next**.
+1. Enter a name for the project.
+1. Choose an existing hub, or create a new hub.
+1. If you create a new hub, expand the customization options and set the **Location** to **East US 2**. Choose or create the **Resource group** you want to use.
+1. Select **Create** and wait for the project to finish provisioning.
+
+> [!NOTE]
+> If your UI doesn't match the screenshots, first confirm that you're in **Foundry (classic)**. The current portal uses different menu names, such as **Discover** > **Model catalog**, **Build** > **Evaluations**, and **Operate** > **Compliance**. If you're already in the classic experience and still don't see **Data + indexes**, **Guardrails + controls**, or **Evaluation**, select **... More** to customize the left pane. For background, see [What is Microsoft Foundry (classic) portal?](/azure/foundry-classic/what-is-foundry), [Create a hub project for Microsoft Foundry (classic)](/azure/foundry-classic/how-to/hub-create-projects), and [Migrate from the Foundry (classic) portal](/azure/foundry/how-to/navigate-from-classic).
+
+> [!TIP]
+> If **Create new resource** or **AI hub resource** isn't available, confirm that you have the required permissions on the hub or resource group. Official hub-project guidance calls out **Owner** or **Contributor** permissions for creating or using hub resources in the portal.
+
+You also need an **Azure AI Search** resource before you create the product index later in this module. If your project doesn't already have one connected, you can create or connect one during the index-creation workflow.
 
 ## Download the project files
 
-Project files are available in the [Measure and Mitigate Workshop](https://github.com/Azure-Samples/RAI-workshops/) folder. Download the repository to access the files required this  module. To download the repository, select **Code** > **Download ZIP**.
+Sample files for this guided project are available in the [Measure and Mitigate Workshop](https://github.com/Azure-Samples/RAI-workshops/tree/main/Measure%20and%20Mitigate%20Workshop) folder. Download the repository to access the files required for this module. To download the repository, select **Code** > **Download ZIP**.
+
+After extracting the ZIP file, note the location of the **Products** folder and the evaluation `.jsonl` files because you use them in later units. Keep the extracted file and folder names unchanged so they match the steps in this module.
