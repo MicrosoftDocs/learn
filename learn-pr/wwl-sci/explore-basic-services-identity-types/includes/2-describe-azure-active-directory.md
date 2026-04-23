@@ -1,14 +1,15 @@
 
-Microsoft Entra ID is Microsoft’s cloud-based identity and access management service. Organizations use Microsoft Entra ID to enable their employees, guests, and others to sign in and access the resources they need, including:
+Microsoft Entra ID is Microsoft's cloud-based identity and access management service. Organizations use Microsoft Entra ID to enable their employees, guests, workloads, and AI agents to sign in and access the resources they need, including:
 
 - Internal resources, such as apps on your corporate network and intranet, and cloud apps developed by your own organization.
-- External services, such as Microsoft Office 365, the Azure portal, and any SaaS applications used by your organization.
+- External services, such as Microsoft 365, the Azure portal, and any SaaS applications used by your organization.
 
 Microsoft Entra ID simplifies the way organizations manage authorization and access by providing a single identity system for their cloud and on-premises applications. Microsoft Entra ID can be synchronized with your existing on-premises Active Directory, synchronized with other directory services, or used as a standalone service.
 
 Microsoft Entra ID also allows organizations to securely enable the use of personal devices, such as mobiles and tablets, and enable collaboration with business partners and customers.
 
-:::image type="content" source="../media/entra-id-general-diagram-v2.png" alt-text="Diagram showing Microsoft Entra ID as a cloud-based identity provider that works with cloud apps such as Microsoft 365, devices, and on-premises applications.":::
+:::image type="content" source="../media/entra-id-general-diagram-v3.png" lightbox="../media/entra-id-general-diagram-v3.png" alt-text="Diagram showing Microsoft Entra ID as a cloud-based identity provider that works with cloud apps such as Microsoft 365, devices, and on-premises applications.":::
+
 
 ### Identity Secure Score
 
@@ -38,4 +39,4 @@ Subscribers to Azure services, Microsoft 365, or Dynamics 365 automatically have
 
 ### Microsoft Entra ID and AI
 
-As AI agents become more prevalent in enterprise environments, Microsoft Entra ID extends its identity capabilities through Microsoft Entra Agent ID. This capability enables organizations to assign secure identities to AI agents, enforce conditional access policies based on agent context and risk, and govern agent lifecycles with designated owners and sponsors to maintain accountability. Microsoft Entra Agent ID ensures that AI agents authenticate and access resources following Zero Trust principles, just like human and workload identities.
+As assistive and autonomous agents become more prevalent in enterprise environments, Microsoft Entra ID extends its identity capabilities through Microsoft Entra Agent ID (currently in preview). Microsoft Entra Agent ID is an identity and security framework that provides purpose-built identity constructs to authenticate, authorize, govern, and protect agent identities at enterprise scale. Organizations can enforce conditional access policies, detect risks in real time, manage agent lifecycles, and apply network-level controls, ensuring that AI agents follow Zero Trust principles just like human and workload identities.
