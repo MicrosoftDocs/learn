@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-plugins-agents-security-copilot.manage-agents
+metadata:
+  title: Manage Security Copilot agents
+  description: Learn how to control agent execution by running or pausing agents, edit agent configuration, provide targeted feedback to improve agent performance. Explore managing agent memory to refine outputs over time.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ms.service: security-copilot
+title: Manage Security Copilot agents
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-manage-agents.md)]

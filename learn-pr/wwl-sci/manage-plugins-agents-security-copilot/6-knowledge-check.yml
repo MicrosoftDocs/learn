@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-plugins-agents-security-copilot.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of managing plugins and agents in Microsoft Security Copilot.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ms.service: security-copilot
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A Security Copilot owner wants contributors to be able to publish custom plugins for use by everyone in the organization. What must the owner configure first?"
+    choices:
+    - content: "Set the organization-scope permission to **Owners and Contributors**."
+      isCorrect: false
+      explanation: "Incorrect. The organization-scope permission can only be enabled after the user-scope permission is set to **Owners and Contributors**. You must configure user-scope access first."
+    - content: "Set the user-scope permission to **Owners and Contributors**."
+      isCorrect: true
+      explanation: "Correct. Setting the user-scope permission to **Owners and Contributors** is required before the organization-scope permission becomes available. The two permissions work in sequence."
+    - content: "Restrict preinstalled plugins to Owners only."
+      isCorrect: false
+      explanation: "Incorrect. Restricting preinstalled plugins controls plugin availability to users, not who can add custom plugins. It has no effect on custom plugin governance permissions."
+    - content: "Enable all default preinstalled plugins for the workspace."
+      isCorrect: false
+      explanation: "Incorrect. Enabling preinstalled plugins makes them available to users but doesn't affect who can add or publish custom plugins."
+  - content: "You restrict the Microsoft Defender XDR plugin to Owners only in your Security Copilot workspace. Which statement best describes the result?"
+    choices:
+    - content: "The plugin is disabled only for new contributors added after the restriction is applied."
+      isCorrect: false
+      explanation: "Incorrect. Restricting access is an immediate change that affects all current users of Security Copilot and its embedded experiences at the moment it's applied."
+    - content: "Analysts using Security Copilot capabilities in the Microsoft Defender portal see a restricted or degraded embedded experience."
+      isCorrect: true
+      explanation: "Correct. Restricted plugins affect embedded experiences. When the Defender XDR plugin is restricted, analysts in the Defender portal encounter limited or unavailable Copilot capabilities inside that portal."
+    - content: "The plugin is removed from all workspaces in the tenant."
+      isCorrect: false
+      explanation: "Incorrect. Plugin restrictions apply within the configured scope and affect user access, but the plugin itself remains available to owners. It isn't removed from other workspaces."
+    - content: "Contributors must reconfigure their plugin settings to regain access."
+      isCorrect: false
+      explanation: "Incorrect. Contributors can't reconfigure preinstalled plugin access—that is an owner-only action. Restricting the plugin immediately prevents contributor access until an owner changes the setting."
+  - content: "When setting up a Microsoft-built Security Copilot agent, which identity approach does Microsoft recommend?"
+    choices:
+    - content: "Assign an existing user account to reuse established permissions."
+      isCorrect: false
+      explanation: "Incorrect. Assigning an existing user account is a valid option but not the recommended approach. Using a shared account reduces auditability and increases the issues if the account is compromised."
+    - content: "Create a dedicated agent identity."
+      isCorrect: true
+      explanation: "Correct. Microsoft recommends creating a dedicated agent identity. A dedicated agent identity improves auditability—agent actions are clearly attributed to the agent, not a human user—and limits the blast radius if the identity is ever compromised."
+    - content: "Use a service principal created in the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. Agent identity configuration is handled within the Security Copilot setup flow, not the Azure portal. The two options presented are a new agent identity or an existing user account."
+    - content: "Assign the Security Copilot Owner role to the agent."
+      isCorrect: false
+      explanation: "Incorrect. Agent identity is separate from Security Copilot role assignments. Selecting an identity type is part of the agent setup; it doesn't involve assigning a workspace role to the agent."
+  - content: "A Security Copilot owner begins setting up a partner-built agent that requires access to Microsoft Defender data. The Setup button is disabled and a banner is displayed. What should the owner do?"
+    choices:
+    - content: "Configure the agent's dependent plugins first, then return to complete setup."
+      isCorrect: false
+      explanation: "Incorrect. Dependent plugin configuration occurs after setup is complete, not before. The grayed-out Setup button indicates Global Administrator approval is required, not a plugin configuration issue."
+    - content: "Copy the approval link and share it with a Global Administrator."
+      isCorrect: true
+      explanation: "Correct. When a partner agent requires access to Microsoft product data, a Global Administrator must approve access before setup can proceed. The owner copies the link from the banner and shares it with their Global Administrator to initiate the approval workflow."
+    - content: "Increase workspace capacity, then retry the setup."
+      isCorrect: false
+      explanation: "Incorrect. Capacity has no relation to the grayed-out Setup button. The banner specifically indicates that Global Administrator consent is required before the owner can complete agent setup."
+    - content: "Select Browse more agents in Security Store to find an equivalent agent that doesn't require approval."
+      isCorrect: false
+      explanation: "Incorrect. The approval requirement exists because the agent accesses Microsoft product data, which requires explicit administrator consent. Switching agents doesn't remove the need for approval if a replacement agent requires the same access."
+  - content: "An organization removes a partner agent from Security Copilot after purchasing a subscription in Security Store. What happens to the Security Store subscription?"
+    choices:
+    - content: "The subscription is automatically canceled when the agent is removed."
+      isCorrect: false
+      explanation: "Incorrect. Removing an agent from Security Copilot doesn't cancel the Security Store subscription. Billing and agent operations are managed in separate systems."
+    - content: "The subscription remains active; billing must be managed separately in Security Store."
+      isCorrect: true
+      explanation: "Correct. Security Store subscriptions and Security Copilot agent operations are separate. Removing an agent from Security Copilot stops it from running but doesn't end the subscription. Subscription management and cancellation must be handled in Security Store."
+    - content: "The subscription is paused and resumes if the agent is added back."
+      isCorrect: false
+      explanation: "Incorrect. Security Store doesn't automatically pause subscriptions based on agent activity in Security Copilot. The two systems are independent, and billing continues regardless of agent state in Security Copilot."
+    - content: "Microsoft issues a prorated refund for the unused subscription period."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft doesn't manage partner subscription billing. Refund policies align to the individual partner and managed through Security Store, not Security Copilot."
