@@ -11,7 +11,7 @@
 
 Natural language processing (NLP) is a broad term that covers AI models and techniques for making sense of language. NLP is the foundation on which generative AI large language models (LLMs) are built.
 
-The techniques NLP is built on enable *text analysis* solutions, that can analyze and summarize natural language text. For example, the computing history site could enable users to summarize articles about key historical events and extract specific names, places, and dates from them.
+The techniques NLP is built on enable *text analysis* solutions that can analyze and summarize natural language text. For example, the computing history site could enable users to summarize articles about key historical events and extract specific names, places, and dates from them.
 
 ![Screenshot of a computing history site performing text analysis.](../media/computing-history-language.png)
 

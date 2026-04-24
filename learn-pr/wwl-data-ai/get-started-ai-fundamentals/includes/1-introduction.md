@@ -28,7 +28,7 @@ So, let's go! Move on to the next unit and we'll start our exploration of AI.
 >
 > Choose your preferred experience:
 >
-> - **[Azure-based](https://aka.azk-anton?azure-portal=true)**: A comprehensive AI assistant that uses a large language model deployed in Azure and tools to extract information from Azure documentation. You must have an Azure subscription in which you can create a Microsoft Foundry project and deploy a model.
+> - **[Azure-based](https://aka.ms/azk-anton?azure-portal=true)**: A comprehensive AI assistant that uses a large language model deployed in Azure and tools to extract information from Azure documentation. You must have an Azure subscription in which you can create a Microsoft Foundry project and deploy a model.
 > - **[Browser-based](https://aka.ms/ask-anton?azure-portal=true)**: A basic AI assistant that can answer questions about AI concepts and Microsoft Foundry, and search for relevant documentation using models that run locally in your browser.
 >
 > *Ask Anton is not a supported Microsoft product or a component of Microsoft Learn or AI Skills Navigator. Just an example of an AI agent for you to explore as you learn about what's possible with AI.*

@@ -15,7 +15,7 @@ For example, we could extend the computing history site to enable users to uploa
 
 ![Screenshot of a computing history site performing image analysis.](../media/computing-history-vision.png)
 
-## Hos does computer vision work?
+## How does computer vision work?
 
 Computer vision is accomplished by using large numbers of images to train a model.
 

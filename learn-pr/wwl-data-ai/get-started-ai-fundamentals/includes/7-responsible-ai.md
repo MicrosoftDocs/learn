@@ -15,7 +15,7 @@ For example, our computing history solution should avoid providing information t
 
 ![Screenshot of a computing history site applying content filters to mitigate risk of harmful content generation.](../media/computing-history-content-safety.png)
 
-*Content filters* are one way that AI systems mitigate the risk of harmful content generation; but a responsible Ai solution requires consideration of key principles from its conception, through its design and implementation, and into its operation.
+*Content filters* are one way that AI systems mitigate the risk of harmful content generation; but a responsible AI solution requires consideration of key principles from its conception, through its design and implementation, and into its operation.
 
 ## Principles of responsible AI
 
