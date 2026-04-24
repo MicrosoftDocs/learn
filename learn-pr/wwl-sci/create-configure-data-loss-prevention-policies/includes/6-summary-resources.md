@@ -1,6 +1,6 @@
-Start narrow, validate results, then expand. That pattern applies whether you're scoping DLP policies to environments in Power Platform or enabling governance actions on file policies in Defender for Cloud Apps.
+Start narrow, validate results, then expand. In Power Platform, that means scoping data loss prevention (DLP) policies to specific environments before going tenant-wide. In Defender for Cloud Apps, it means reviewing file policy matches before enabling governance actions.
 
-The approaches differ by what you're protecting. Connector classification in Power Platform controls which data sources can work together. For non-Microsoft cloud apps, file policies in Defender for Cloud Apps provide governance actions like quarantine and link revocation, while DLP policies scoped to Instances in the Purview portal offer centralized reporting alongside your Exchange and SharePoint policies.
+The approaches differ by what you're protecting. Connector classification in Power Platform controls which data sources can work together. For non-Microsoft cloud apps, file policies in Defender for Cloud Apps provide governance actions like quarantine and link revocation, while DLP policies scoped to Instances in the Microsoft Purview portal offer centralized reporting alongside your Exchange and SharePoint policies.
 
 ## Resources
 
