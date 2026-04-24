@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.transition.traditional.ops.agent.automation.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check for the agentic DevOps module."
+  ms.date: 04/20/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "An operations team currently writes Bicep templates manually and deploys them using Azure CLI scripts. They want to reduce the coordination overhead between the architecture review, code generation, and deployment stages. Which characteristic of an agentic workflow addresses this challenge?"
+    choices:
+    - content: "Persistent domain knowledge stored in skill files"
+      isCorrect: false
+      explanation: "Persistent domain knowledge helps enforce organizational standards, but it doesn't directly address the coordination between workflow stages. Multi-step orchestration is what replaces manual coordination."
+    - content: "Multi-step orchestration through a conductor agent"
+      isCorrect: true
+      explanation: "A conductor agent coordinates the handoffs between specialized agents, eliminating the need for a human to manually sequence steps and pass outputs between stages."
+    - content: "Automatic injection of coding instructions based on file patterns"
+      isCorrect: false
+      explanation: "Auto-injected instructions enforce coding standards on output files, but they don't manage the sequencing and coordination between pipeline stages."
+  - content: "A cloud administrator is building a multi-agent pipeline for environment provisioning. The architecture agent needs to know which Azure services and SKUs the organization has approved. Where should this information be stored?"
+    choices:
+    - content: "In the conductor agent's system prompt"
+      isCorrect: false
+      explanation: "The conductor manages workflow orchestration, not domain-specific knowledge. Embedding SKU tables in the conductor would bloat its context and make the information unavailable to other agents that need it."
+    - content: "In an instruction file with an applyTo glob pattern"
+      isCorrect: false
+      explanation: "Instructions are auto-injected coding standards tied to file types. Organizational knowledge like approved services and SKUs belongs in a skill that agents read explicitly."
+    - content: "In a shared skill file that the architecture agent reads at runtime"
+      isCorrect: true
+      explanation: "Skills store reusable domain knowledge that agents pull explicitly. A shared skill for approved services and SKUs can be read by multiple agents that need this information."
+  - content: "A DevOps engineer designs a multi-agent pipeline where the IaC agent produces Bicep templates and the deployment agent runs them. The engineer later wants to switch from Bicep to Terraform without changing the deployment agent. Which design principle makes this possible?"
+    choices:
+    - content: "Using a conductor agent to delegate tasks"
+      isCorrect: false
+      explanation: "The conductor manages sequencing but doesn't determine how agents communicate their outputs. The artifact contract between agents is what enables independent evolution."
+    - content: "Defining an artifact contract between agents"
+      isCorrect: true
+      explanation: "An artifact contract specifies what each agent produces and what downstream agents expect. As long as the replacement agent produces compatible outputs, the rest of the pipeline continues to work."
+    - content: "Storing all agent definitions in version control"
+      isCorrect: false
+      explanation: "Version control is a best practice for managing agent definitions, but it doesn't enable independent replacement of pipeline stages. The artifact contract is the mechanism for loose coupling."
+  - content: "A system administrator notices that the Bicep agent always generates templates without resource locks, even though the organization requires them. Which agentic building block should the administrator configure to enforce this standard automatically?"
+    choices:
+    - content: "A skill file with resource lock patterns"
+      isCorrect: false
+      explanation: "Skills contain domain knowledge that agents must read explicitly. If the agent doesn't request the skill, the resource lock requirement would be missed. Instructions are auto-injected and enforce standards regardless of what the agent explicitly reads."
+    - content: "An instruction file targeting Bicep files"
+      isCorrect: true
+      explanation: "Instructions use a push model — they're automatically injected into an agent's context whenever the agent creates or edits a file matching the instruction's applyTo glob pattern, such as **/*.bicep."
+    - content: "A prompt that specifies the resource lock requirement"
+      isCorrect: false
+      explanation: "Adding the requirement to every prompt is manual and error-prone. Instructions provide a systematic way to enforce standards on every Bicep file the agent generates."
+  - content: "A team is evaluating which operational workflows would benefit most from a multi-agent approach. Which scenario is the strongest candidate?"
+    choices:
+    - content: "Restarting a single virtual machine after a patch"
+      isCorrect: false
+      explanation: "Restarting a VM is a simple, one-step operation that doesn't involve multiple stages or domain-specific knowledge coordination. It's better handled as a direct command."
+    - content: "Provisioning environments that involve requirements gathering, architecture assessment, IaC generation, deployment, and documentation"
+      isCorrect: true
+      explanation: "Multi-step workflows where outputs from one stage feed into the next and domain knowledge must be applied consistently are the strongest candidates for agentic orchestration."
+    - content: "Querying Azure Monitor for a single metric value"
+      isCorrect: false
+      explanation: "Querying a single metric is a one-off operation with no multi-step coordination needed. A direct prompt or CLI command is more appropriate."

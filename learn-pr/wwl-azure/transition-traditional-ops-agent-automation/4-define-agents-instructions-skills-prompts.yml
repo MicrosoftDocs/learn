@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.transition.traditional.ops.agent.automation.define-agents-instructions-skills-prompts
+title: Define agents with instructions, skills, and prompts
+metadata:
+  title: Define Agents with Instructions, Skills, and Prompts
+  description: "This unit details the four building blocks of agentic workflows and how they work together."
+  ms.date: 04/20/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-define-agents-instructions-skills-prompts.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.transition-traditional-ops-agent-automation.explore-agentic-devops-concept
+title: Explore the agentic DevOps concept
+metadata:
+  title: Explore the Agentic DevOps Concept
+  description: "This unit explains what agentic DevOps means, covering multi-agent patterns, the conductor pattern, and artifact-based communication."
+  ms.date: 04/20/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explore-agentic-devops-concept.md)]
