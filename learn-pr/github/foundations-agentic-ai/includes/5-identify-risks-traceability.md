@@ -42,16 +42,16 @@ Early-stage agent systems commonly fail in predictable ways:
 
 ### Implementation mapping: risk → GitHub mitigation
 
-| **Risk / anti-pattern**    | **What it looks like in  GitHub**                    | **Mitigation using  GitHub controls**                        |
-| -------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
-| Planless execution         | PR has a diff but no  plan or rationale              | Require a plan  section via PR template; require review before merge |
-| Over-permissioned  agents  | Workflows can write  to repo, access secrets broadly | Least-privilege GITHUB_TOKEN;  environments with required reviewers; restrict who can trigger workflows |
-| Hidden reasoning           | No  assumptions/scope/decision trail                 | Require plan + link  workflow runs + record decisions in PR comments |
-| Blind trust in  automation | "CI passed, ship it"  mindset                        | Combine checks with CODEOWNERS,  required reviews, and risk-based approvals |
+| **Risk / anti-pattern**   | **What it looks like in  GitHub**                   | **Mitigation using  GitHub controls**                        |
+| ------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| Planless execution        | PR has a diff but no plan or rationale              | Require a plan section via PR template; require review before merge |
+| Over-permissioned agents  | Workflows can write to repo, access secrets broadly | Least-privilege GITHUB_TOKEN; environments with required reviewers; restrict who can trigger workflows |
+| Hidden reasoning          | No assumptions/scope/decision trail                 | Require plan and link workflow runs and record decisions in PR comments |
+| Blind trust in automation | "CI passed, ship it" mindset                        | Combine checks with CODEOWNERS, required reviews, and risk-based approvals |
 
 ## Traceability and observability
 
-To supervise an agent well, you need more than a final diff-you need a trail. In GitHub that trail can include:
+To supervise an agent well, you need more than a final diff-you need a trail. In GitHub, that trail can include:
 
 - Pull requests and commit history
 
@@ -73,11 +73,11 @@ The goal isn't only compliance. It is operational understanding: when something 
 
 - An inspectable plan (PR plan section or file)
 
-- A bounded change set (branch + commits)
+- A bounded change set (branch and commits)
 
-- Automated evidence (workflow run + artifacts)
+- Automated evidence (workflow run and artifacts)
 
-- Human judgment (review + approval)
+- Human judgment (review and approval)
 
 - A clear outcome (merge, revert, or escalation)
 

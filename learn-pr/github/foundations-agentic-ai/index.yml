@@ -28,7 +28,6 @@ prerequisites: |
   - Familiarity with AI-assisted development tools (such as GitHub Copilot)
   - Awareness of basic repository governance concepts (for example, reviews, CODEOWNERS, and branch protection)
   
-  Note:
   Some controls discussed in this module (for example, rulesets, branch protection, and required checks) must be configured by repository or organization administrators. You can still apply the supervision model without admin access, but enforcement requires appropriate permissions.
 
 iconUrl: /training/achievements/generic-badge.svg

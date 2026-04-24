@@ -33,14 +33,14 @@ GitHub is the control plane because (when configured by policy) it provides enfo
 
 ### Controls at a glance
 
-| **GitHub control**            | **What it enforces**                 | **Why it matters for agents**                              |
-| ----------------------------- | ------------------------------------ | ---------------------------------------------------------- |
-| Pull requests                 | Changes are proposed  before merging | Makes agent work  reviewable and discussable               |
-| Required reviews              | Human + agent  approval gate         | Prevents unreviewed  merges and supports accountability    |
-| Required status  checks       | CI evidence before  merging          | Converts evaluation  into enforceable policy               |
-| CODEOWNERS                    | Review routing by  path              | Ensures the right  experts supervise high-impact changes   |
-| Rulesets / branch  protection | Centralized branch  policy           | Prevents unsafe  merges and enforces consistent guardrails |
-| Environments                  | Approvals for  deployments/secrets   | Controls sensitive  execution and secret access            |
+| **GitHub control**           | **What it enforces**                | **Why it matters for agents**                             |
+| ---------------------------- | ----------------------------------- | --------------------------------------------------------- |
+| Pull requests                | Changes are proposed before merging | Makes agent work reviewable and discussable               |
+| Required reviews             | Human and agent approval gate       | Prevents unreviewed merges and supports accountability    |
+| Required status checks       | CI evidence before merging          | Converts evaluation into enforceable policy               |
+| CODEOWNERS                   | Review routing by path              | Ensures the right experts supervise high-impact changes   |
+| Rulesets / branch protection | Centralized branch policy           | Prevents unsafe merges and enforces consistent guardrails |
+| Environments                 | Approvals for deployments/secrets   | Controls sensitive execution and secret access            |
 
  
 

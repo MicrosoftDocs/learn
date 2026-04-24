@@ -40,7 +40,7 @@ When you review an agent PR, check:
 
 - Evidence: Do required checks pass? Are logs/artifacts available if needed?
 
-- Ownership: Did CODEOWNERS review sensitive areas (when configured)?
+- Ownership: Did the CODEOWNERS review sensitive areas (when configured)?
 
 - Policy: Does it comply with rulesets/branch rules/environments (when configured)?
 
@@ -64,7 +64,7 @@ A well-supervised agent contribution is:
 
 - Understandable (clear goal and plan)
 
-- Bounded (scoped change set, least privilege)
+- Bounded (scoped changeset, least privilege)
 
 - Reviewable (right owners involved, evidence present)
 
