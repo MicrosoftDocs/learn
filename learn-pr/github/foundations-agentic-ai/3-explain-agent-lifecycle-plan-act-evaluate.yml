@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.foundations-agentic-ai.explain-agent-lifecycle
+title: Explain the agent lifecycle - plan, act, evaluate
+metadata:
+  title: Explain the agent lifecycle - plan, act, evaluate
+  description: This content is a part of the Foundations of Agentic AI in GitHub.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/24/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-explain-agent-lifecycle-plan-act-evaluate.md)]

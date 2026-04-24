@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.github.foundations-agentic-ai
+title: Foundations of Agentic AI in GitHub
+metadata:
+  title: Foundations of Agentic AI in GitHub
+  description: Explore how agentic AI changes the developer role from only writing code to guiding, reviewing, and validating systems that can take action across the SDLC. Understand GitHub's role as the system of record and control plane for safe, traceable agent workflows.
+  ms.author: camhernandez
+  ms.date: 04/24/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: Learn how AI coding agents are transforming software development by planning, acting, and improving within GitHub workflows.
+
+abstract: |
+  By the end of this module, you will be able to:
+  - Define agentic AI in the SDLC and distinguish agents from assistants 
+  - Explain and apply the plan → act → evaluate lifecycle in agent workflows 
+  - Describe how GitHub functions as the system of record and control plane for agent activity 
+  - Identify responsibilities, risks, anti-patterns, and traceability requirements in agent systems 
+  - Apply the contributor model to evaluate agent-generated work
+
+prerequisites: |
+  Before getting started, you should have:
+  - A GitHub account and familiarity with repositories, branches, and pull requests
+  - Basic experience with GitHub Actions and status checks
+  - A general understanding of the software development lifecycle (SDLC)
+  - Familiarity with AI-assisted development tools (such as GitHub Copilot)
+  - Awareness of basic repository governance concepts (for example, reviews, CODEOWNERS, and branch protection)
+  
+  Note:
+  Some controls discussed in this module (for example, rulesets, branch protection, and required checks) must be configured by repository or organization administrators. You can still apply the supervision model without admin access, but enforcement requires appropriate permissions.
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.foundations-agentic-ai.introduction
+  - learn.github.foundations-agentic-ai.define-agentic-ai
+  - learn.github.foundations-agentic-ai.explain-agent-lifecycle-plan-act-evaluate
+  - learn.github.foundations-agentic-ai.describe-github-system-record-control-plane
+  - learn.github.foundations-agentic-ai.identify-risks-traceability
+  - learn.github.foundations-agentic-ai.apply-contributor-model-agent-generated-work
+  - learn.github.foundations-agentic-ai.knowledge-check
+  - learn.github.foundations-agentic-ai.summary
+badge:
+  uid: learn.github.foundations-agentic-ai.badge

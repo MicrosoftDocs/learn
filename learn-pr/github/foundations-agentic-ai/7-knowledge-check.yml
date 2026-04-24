@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.github.foundations-agentic-ai.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Test your understanding of agentic AI in the SDLC, GitHub as a system of record, controls, risks, and the contributor model.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/24/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which is the best indicator that an AI system is acting as an agent in GitHub?"
+    choices:
+    - content: "It suggests code snippets in chat."
+      isCorrect: false
+      explanation: "Incorrect. Suggesting code snippets is assistive behavior, but it doesn't demonstrate autonomous action in the development workflow."
+    - content: "It opens a pull request from a branch it created."
+      isCorrect: true
+      explanation: "Correct! An agent doesn't only generate suggestions-it can take goal-driven actions in the SDLC. Creating a branch and opening a pull request are concrete, durable repository actions that move work forward through standard GitHub workflows."
+    - content: "It summarizes documentation."
+      isCorrect: false
+      explanation: "Incorrect. Summarizing documentation is helpful assistance, but it doesn't represent taking workflow actions."
+    - content: "It explains an error message."
+      isCorrect: false
+      explanation: "Incorrect. Explaining errors is advisory behavior, not autonomous execution of tasks."
+  - content: "Why is GitHub considered a system of record for agent workflows?"
+    choices:
+    - content: "It prevents all bugs."
+      isCorrect: false
+      explanation: "Incorrect. GitHub helps manage development processes, but it can't prevent all bugs."
+    - content: "It stores plans, commits, pull request discussion, and workflow evidence."
+      isCorrect: true
+      explanation: "Correct! GitHub captures the artifacts that document what the agent intended, what changed, and what evidence was produced-such as pull requests, commit history, reviews, and workflow runs. This creates an auditable record of agent activity."
+    - content: "It replaces CI/CD."
+      isCorrect: false
+      explanation: "Incorrect. GitHub can integrate with CI/CD systems, but it doesn't inherently replace them."
+    - content: "It automatically approves changes."
+      isCorrect: false
+      explanation: "Incorrect. Changes still require configured review and approval processes."
+  - content: "Which GitHub control is most directly used to require the right reviewers for sensitive paths?"
+    choices:
+    - content: "Issues"
+      isCorrect: false
+      explanation: "Incorrect. Issues are used for tracking work, not enforcing code review ownership."
+    - content: "CODEOWNERS"
+      isCorrect: true
+      explanation: "Correct! CODEOWNERS maps file paths to owners and automatically requests reviews when those paths change. When combined with required reviews, it helps ensure the appropriate teams review high-risk or high-impact changes."
+    - content: "Stars"
+      isCorrect: false
+      explanation: "Incorrect. Stars indicate interest in a repository and don't control reviews."
+    - content: "Forks"
+      isCorrect: false
+      explanation: "Incorrect. Forks support development workflows but don't assign reviewers."
+  - content: "Which scenario is an example of hidden reasoning?"
+    choices:
+    - content: "The plan is included in the pull request description."
+      isCorrect: false
+      explanation: "Incorrect. Making the plan visible reduces hidden reasoning."
+    - content: "The change is proposed via a pull request."
+      isCorrect: false
+      explanation: "Incorrect. Using a pull request creates visibility and reviewability."
+    - content: "The agent provides a diff but no plan, assumptions, or execution context."
+      isCorrect: true
+      explanation: "Correct! Hidden reasoning occurs when reviewers can see the output but can't see the intermediate decision-making artifacts such as plans, assumptions, constraints, or context."
+    - content: "The agent reruns a failing workflow after a test fix."
+      isCorrect: false
+      explanation: "Incorrect. Rerunning workflows is an observable action, not hidden reasoning."
+  - content: "Under the contributor model, what should reviewers evaluate first?"
+    choices:
+    - content: "Whether the author is human or AI."
+      isCorrect: false
+      explanation: "Incorrect. Review should focus on contribution quality and compliance, not author identity."
+    - content: "Whether the change meets the repo's definition of done (scope, checks, review, policy)."
+      isCorrect: true
+      explanation: "Correct! The contributor model treats agent output like any other contribution. Review starts with whether the change meets the repository's standards rather than focusing on who or what authored it."
+    - content: "Whether the pull request is small."
+      isCorrect: false
+      explanation: "Incorrect. Pull request size alone doesn't determine readiness or quality."
+    - content: "Whether the agent is popular."
+      isCorrect: false
+      explanation: "Incorrect. Popularity is irrelevant to repository governance and quality standards."
