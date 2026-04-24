@@ -2,9 +2,6 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=28f5e745-85e0-4210-838f-adc9493aed46]
 
-> [!TIP]
-> [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
-
 > [!NOTE]
 > See the **Text and images** tab for more details!
 
@@ -12,7 +9,15 @@
 
 ::: zone pivot="text"
 
-*Computer vision* is the area of artificial intelligence that deals with the analysis of visual input; such as photographs, videos, and live camera feeds. Computer vision is accomplished by using large numbers of images to train a model.
+*Computer vision* is the area of artificial intelligence that deals with the analysis of visual input; such as photographs, videos, and live camera feeds.
+
+For example, we could extend the computing history site to enable users to upload images of vintage computers, which can be analyzed, identified, and described.
+
+![Screenshot of a computing history site performing image analysis.](../media/computing-history-vision.png)
+
+## Hos does computer vision work?
+
+Computer vision is accomplished by using large numbers of images to train a model.
 
 ![Diagram of a computer vision model being trained with a large volume of images.](../media/computer-vision.png)
 

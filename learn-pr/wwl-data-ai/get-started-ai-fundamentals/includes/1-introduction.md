@@ -18,3 +18,17 @@ So, let's go! Move on to the next unit and we'll start our exploration of AI.
 
 > [!NOTE]
 > We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.
+
+> [!TIP]
+> ![Anton avatar.](../media/anton-icon.png)
+>
+> **[Ask Anton](https://aka.ms/choose-anton?azure-portal=true)**
+>
+> *Ask Anton* is an example AI application that you can use to ask questions about the topics covered in this training.
+>
+> Choose your preferred experience:
+>
+> - **[Azure-based](https://aka.azk-anton?azure-portal=true)**: A comprehensive AI assistant that uses a large language model deployed in Azure and tools to extract information from Azure documentation. You must have an Azure subscription in which you can create a Microsoft Foundry project and deploy a model.
+> - **[Browser-based](https://aka.ms/ask-anton?azure-portal=true)**: A basic AI assistant that can answer questions about AI concepts and Microsoft Foundry, and search for relevant documentation using models that run locally in your browser.
+>
+> *Ask Anton is not a supported Microsoft product or a component of Microsoft Learn or AI Skills Navigator. Just an example of an AI agent for you to explore as you learn about what's possible with AI.*

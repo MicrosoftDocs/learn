@@ -20,9 +20,12 @@ Hopefully, this module gave you an insight into some of the core capabilities of
 
 ::: zone-end
 
+Now that you have foundational understanding of AI, consider reviewing the following resources.
+
+- To learn more about Microsoft AI solutions, see the [Microsoft AI page](https://www.microsoft.com/ai).
+- To learn more about Microsoft's approach to responsible AI, see the [Microsoft responsible AI page](https://www.microsoft.com/ai/responsible-ai).
+
 > [!TIP]
-> Now that you have foundational understanding of AI, consider reviewing the following resources.
+> ![Anton avatar.](../media/anton-icon.png)
 >
-> - To try Microsoft Copilot for yourself, go to [https://copilot.microsoft.com](https://copilot.microsoft.com).
-> - To learn more about Microsoft AI solutions, see the [Microsoft AI page](https://www.microsoft.com/ai).
-> - To learn more about Microsoft's approach to responsible AI, see the [Microsoft responsible AI page](https://www.microsoft.com/ai/responsible-ai).
+> Don't forget, you can **[Ask Anton](https://aka.ms/choose-anton?azure-portal=true)** to learn more!

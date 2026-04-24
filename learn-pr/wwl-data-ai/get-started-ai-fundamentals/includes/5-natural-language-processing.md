@@ -2,9 +2,6 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=a38025d0-4c17-454f-9eb8-deb71bbea507]
 
-> [!TIP]
-> [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
-
 > [!NOTE]
 > See the **Text and images** tab for more details!
 
@@ -13,6 +10,12 @@
 ::: zone pivot="text"
 
 Natural language processing (NLP) is a broad term that covers AI models and techniques for making sense of language. NLP is the foundation on which generative AI large language models (LLMs) are built.
+
+The techniques NLP is built on enable *text analysis* solutions, that can analyze and summarize natural language text. For example, the computing history site could enable users to summarize articles about key historical events and extract specific names, places, and dates from them.
+
+![Screenshot of a computing history site performing text analysis.](../media/computing-history-language.png)
+
+## Text analysis techniques
 
 While many natural language processing scenarios are handled by generative AI models today, there are common text analysis use cases where specialist NLP tools are used to produce predictable results or apply custom rules.
 

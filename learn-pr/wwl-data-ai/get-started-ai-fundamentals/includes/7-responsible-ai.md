@@ -2,15 +2,22 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=873e40b0-178e-408e-961e-c9e3cd849cf4]
 
-> [!TIP]
-> [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
-
 > [!NOTE]
 > See the **Text and images** tab for more details!
 
 ::: zone-end
 
 ::: zone pivot="text"
+
+*Responsible AI* is a term used to describe considerations for building AI systems that include guardrails to mitigate the risk of harmful, illegal, or offensive content generation or automated actions.
+
+For example, our computing history solution should avoid providing information to users that would help or encourage illegal or harmful activity.
+
+![Screenshot of a computing history site applying content filters to mitigate risk of harmful content generation.](../media/computing-history-content-safety.png)
+
+*Content filters* are one way that AI systems mitigate the risk of harmful content generation; but a responsible Ai solution requires consideration of key principles from its conception, through its design and implementation, and into its operation.
+
+## Principles of responsible AI
 
 Principles for responsible AI include:
 
