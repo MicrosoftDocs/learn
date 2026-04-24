@@ -5,8 +5,8 @@ metadata:
   title: Query and Analyze Lakehouse Data
   description: "Learn how to query and analyze data in a lakehouse using SQL and Spark notebooks."
   ms.date: 03/04/2026
-  author: angierudduck
-  ms.author: anrudduc
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7
