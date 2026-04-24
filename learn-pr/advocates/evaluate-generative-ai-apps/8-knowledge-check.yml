@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Test your knowledge of evaluation concepts.
-  ms.date: 10/11/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
@@ -23,16 +23,16 @@ quiz:
     - content: To increase the speed of AI model training.
       isCorrect: false
       explanation: "Incorrect: The primary focus isn't on the speed of training but on the quality and reliability of the AI models."
-    - content: To validate the performance, reliability, and efficacy of AI systems.
+    - content: To measure the quality, safety, and reliability of AI systems.
       isCorrect: true
-      explanation: "Correct: Evaluations are systematic processes designed to validate how well AI systems perform their intended tasks, ensuring they meet desired standards of accuracy and reliability."
+      explanation: "Correct: Evaluations help you assess whether a model or agent is producing useful, safe, and reliable outputs for the scenarios that matter to users."
     - content: To reduce the cost of AI development.
       isCorrect: false
       explanation: "Incorrect: While evaluations might indirectly affect costs, their main goal is to validate the AI system's performance and reliability."
     - content: To replace human evaluators with automated systems.
       isCorrect: false
       explanation: "Incorrect: Evaluations often involve a combination of automated and human assessments to capture both quantitative and qualitative insights."
-  - content: Which of the characteristics isn't a characteristic of good evaluation data?
+  - content: Which of the following isn't a characteristic of good evaluation data?
     choices:
     - content: Diversity.
       isCorrect: false
@@ -46,17 +46,31 @@ quiz:
     - content: Homogeneity.
       isCorrect: true
       explanation: "Correct: Good evaluation data should be diverse and representative, capturing a wide range of scenarios and contexts. Homogeneity, or uniformity, isn't a desired characteristic as it doesn't reflect the complexities of real-world interactions."
-  - content: What is a key reason why strong AI performance in controlled evaluations might not translate to real-world success?
+  - content: Which statement best reflects how evaluation data should be prepared in Microsoft Foundry?
     choices:
-    - content: The AI's metrics are too complex to understand.
+    - content: Every built-in evaluator uses the same input fields, so one fixed schema always works.
       isCorrect: false
-      explanation: "Incorrect: Complexity in metrics isn't the reason for the gap between simulated and real-world performance."
-    - content: Real-world scenarios have fewer data variations than controlled environment.
-      isCorrect: false
-      explanation: "Incorrect: Real-world scenarios tend to have more, not fewer, data variations and complexities."
-    - content: Simulations often use idealized conditions that differ from real-world environments.
+      explanation: "Incorrect: Different evaluators can require different inputs, so you shouldn't assume one schema works everywhere."
+    - content: Different evaluators can require different inputs, so confirm the mapping for fields such as query, response, context, ground truth, or tool calls.
       isCorrect: true
-      explanation: "Correct: Simulations often rely on perfect sensor data and conditions that don't accurately reflect the complexity of real-world environments."
-    - content: Edge cases are always included in simulations.
+      explanation: "Correct: Foundry evaluations depend on matching your dataset fields to the evaluator inputs. Some evaluators need only query and response, while others also require context, ground truth, or tool-call data."
+    - content: Only custom evaluators ever use context or ground truth.
       isCorrect: false
-      explanation: "Incorrect: Edge cases are often overlooked in simulations."
+      explanation: "Incorrect: Many built-in evaluators also require context or ground truth, especially textual similarity and RAG-focused evaluators."
+    - content: You should remove edge cases so they don't distort the average score.
+      isCorrect: false
+      explanation: "Incorrect: Edge cases often reveal the failures that matter most, so they should be included rather than removed."
+  - content: When comparing two evaluation runs after a prompt change, what gives you the clearest evidence that the change helped?
+    choices:
+    - content: Compare the new run against a baseline while keeping the dataset and evaluator set stable.
+      isCorrect: true
+      explanation: "Correct: Stable comparisons make it easier to attribute score changes to the prompt update instead of to other variables."
+    - content: Run the new prompt on a different dataset with different evaluators.
+      isCorrect: false
+      explanation: "Incorrect: Changing the dataset and evaluator set at the same time makes it hard to determine what caused the result change."
+    - content: Look only at the overall pass/fail rate and ignore row-level results.
+      isCorrect: false
+      explanation: "Incorrect: Aggregate results help, but row-level results are essential for understanding why the system improved or failed."
+    - content: Change the thresholds at the same time so more results pass.
+      isCorrect: false
+      explanation: "Incorrect: Changing thresholds during a comparison obscures whether the prompt itself improved the system."

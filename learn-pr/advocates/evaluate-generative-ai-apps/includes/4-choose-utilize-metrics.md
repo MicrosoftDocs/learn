@@ -1,69 +1,70 @@
-To effectively carry out evaluations, a thorough understanding of various metrics is essential. Metrics serve as the foundation for quantifying the performance and reliability of generative AI applications. They offer a standardized way to measure different aspects of the AI models, ensuring that each evaluation is objective and comprehensive.
+To carry out useful evaluations, choose evaluators that match the behavior you want to measure. A single score rarely tells the whole story. In the Foundry portal, you choose from **Agent**, **Quality**, and **Safety**. In the full built-in catalog, those groups expand into more specific evaluator families so you can combine the right signals for writing quality, ground-truth comparison, retrieval quality, safety, and agent behavior.
 
-When you analyze these metrics, you can gain valuable insights into the strengths and weaknesses of the AI system, facilitating targeted improvements and refinements. As such, it’s important to choose the right metrics for your evaluation by selecting metrics that align with the specific goals and requirements of your application. The interpretation of what constitutes a "good" score can vary significantly depending on the specific task and context of the evaluation.
+When you analyze the right evaluator set, you gain actionable insight into where the system is succeeding and where it is failing. The interpretation of a "good" result depends on the task, the evaluator category, and the cost of the failure.
 
-You should regularly update and refine metrics to reflect evolving standards and user needs. Understanding metrics is crucial for developers and stakeholders, as metrics provide actionable insights to refine and enhance AI applications, leading to more reliable and user-centric solutions.
+## Built-in evaluator families
 
-## Performance and quality metrics
-Performance and quality metrics are essential for assessing the efficiency and effectiveness of generative AI applications. These metrics provide a systematic way to measure various aspects of an AI model's output, ensuring it meets desired standards and user expectations. They encompass both qualitative and quantitative dimensions, offering a comprehensive evaluation of the AI's capabilities.
+| Portal group | Evaluator family | Representative evaluators | Use when | Important notes |
+|---------|---------|---------|---------|---------|
+|Quality|General purpose|Coherence, Fluency|You want to judge readability and logical flow independent of domain-specific ground truth|These are AI-assisted judge evaluators and require a GPT model deployment|
+|Quality|Textual similarity|Similarity, F1, BLEU, GLEU, ROUGE, METEOR|You have expected answers and want to compare responses to a reference|These usually require ground truth; `Similarity` is AI-assisted, while overlap metrics are algorithmic|
+|Quality|RAG|Retrieval, Document Retrieval, Groundedness, Groundedness Pro, Relevance, Response Completeness|You need to measure retrieval quality and whether the response is faithful to retrieved context|These often require context and sometimes ground truth. `Document Retrieval` uses `retrieval_ground_truth` and `retrieved_documents` and returns multiple search-quality metrics (Fidelity, NDCG, XDCG, Max Relevance, and Holes) rather than one score. `Groundedness Pro` and `Response Completeness` are preview, and `Groundedness Pro` doesn't require a judge model deployment because it uses the Azure AI Content Safety service|
+|Safety|Risk and safety|Hate and Unfairness, Sexual, Violence, Self-Harm, Protected Materials, Indirect Attack (XPIA), Code Vulnerability, Ungrounded Attributes|You need to surface harmful content or security-related failure modes|These use Microsoft's hosted evaluation service and don't require a judge model deployment. The four core harm evaluators (Hate and Unfairness, Sexual, Violence, Self-Harm) return a 0-7 severity score (Very Low 0-1, Low 2-3, Medium 4-5, High 6-7) and use a default pass threshold of 3, while the remaining evaluators return a pass/fail or detected/not-detected result. Indirect Attack is supported for model targets only. Agent-specific safety evaluators such as Prohibited Actions and Sensitive Data Leakage are preview and agent-target only|
+|Agent|Agent evaluators|Task Adherence, Task Completion, Intent Resolution, Task Navigation Efficiency, Tool Call Accuracy, Tool Selection, Tool Input Accuracy, Tool Output Utilization, Tool Call Success|You are evaluating tool-using agents rather than a simple prompt/response flow|These often require `tool_definitions`, tool-call traces, or an agent target. `Task Navigation Efficiency` uses `actions` and `expected_actions` instead of a normal query/response pair. Task Adherence, Task Completion, and Intent Resolution are currently preview|
 
-Provided is a table of our built-in performance and quality metrics:
+In SDK workflows, Foundry also supports Azure OpenAI graders through the OpenAI Evals API. The graders are surfaced in the evaluator catalog as **Model Labeler**, **Model Scorer**, **String Checker**, and **Text Similarity**, and use the SDK type names `label_model` (LLM-based classification into predefined labels), `score_model` (LLM-based numeric scoring on a configurable range), `string_check` (deterministic exact or pattern string matching), and `text_similarity` (algorithmic similarity such as BLEU, GLEU, METEOR, ROUGE, fuzzy match, or cosine). Use these graders when you need full control over the judge prompt or deterministic string checks instead of the standard `azure_ai_evaluator` types. For details, see [Azure OpenAI graders](/azure/foundry/concepts/evaluation-evaluators/azure-openai-graders).
 
-### Qualitative metrics
+Before you finalize an evaluator set, verify four things: the required input fields, whether the evaluator works for dataset, model, or agent targets, whether the evaluator is preview, and whether the evaluator documentation lists language or tool-support limitations.
 
-Qualitative metrics measure the subjective qualities of AI-generated responses. Qualitative metrics focus on the human experience, assessing aspects like readability, creativity, and appropriateness.
+### General-purpose evaluators
 
-|Metric  |Definition  |Example of Use  |Interpretation  |
-|---------|---------|---------|---------|
-|Coherence     | The degree to which the output is logically consistent and makes sense.         | Assess whether the generated output for an AI creative writing assistant follows a logical sequence and maintains consistent character development throughout the story        |Assessed on a scale of 1.0 - 5.0. <br><br> High coherence means the content is easy to follow and understand as a whole.|
-|Fluency     | The smoothness and readability of the output, with correct grammar and syntax.        |Assessing a chatbot's responses to ensure they're grammatically correct and easy to read.         |Assessed on a scale of 1.0 - 5.0. <br><br> High fluency means the text flows well and sounds natural to a native speaker.|
-|Groundedness     | The extent to which the output is based on factual information or given context.        | Verifying that a generated news article accurately reflects the facts and sources provided.        | Assessed on a scale of 1.0 - 5.0. <br><br> High groundedness means the model's output is factually accurate and consistent with the given context or known information.|
-|Groundedness Pro | detects whether the generated text response is consistent or accurate with respect to the given context in a retrieval-augmented generation question and answering scenario. It checks whether the response adheres closely to the context in order to answer the query, avoiding speculation or fabrication, and outputs a true/false label. | When you need to verify that AI-generated responses align with and are validated by the provided context. It's essential for applications where contextual accuracy is key, like information retrieval and question and answering. | False if response is ungrounded and True if it's grounded |
-|Relevance     | How well the output aligns with the given context or user query.        | Assess how well generated article summaries match users' interests for an AI-powered personalized news aggregator.        |Assessed on a scale of 1.0 - 5.0. <br><br> High relevance means the content is closely aligned with the user's intent or the subject matter being discussed.|
-|Similarity     |The degree of resemblance between the generated output and the reference text.        | Assess that the AI-generated content aligns with established legal practices and terminology by comparing AI generated contract clauses with a database of standard legal language.        |Assessed on a scale of 1.0 - 5.0 <br><br> A high similarity score indicates that the compared texts or concepts have similar meanings or convey essentially the same information, even if using different words.|
-|F1 Score     |A measure of a model's accuracy that combines precision (relevance of retrieved items) and recall (completeness of retrieval).         |Assess how well a model correctly identifies and classifies various skin conditions for an AI app that assists doctors in diagnosing skin conditions from images.         | Assessed on a scale of 0 - 1. <br><br> A high F1 score indicates that the model has low false positives and low false negatives.|
-|Retrieval | Measures the quality of search without ground truth. It focuses on how relevant the context chunks (encoded as a string) are to address a query and how the most relevant context chunks are surfaced at the top of the list. | Suitable for applications where the model engages in generation using a retrieval-augmented approach to extract information from your provided documents and generate detailed responses, usually multi-turn. | Assessed on a scale of 1.0 - 5.0 <br><br> High quality means the output is highly relevant, well ranked, and no bias is introduced.
+Use coherence and fluency to check whether responses are readable and logically structured. These evaluators are useful across many scenarios, but they don't tell you whether the answer is factually correct or grounded.
 
-### Quantitative metrics
+### Textual similarity evaluators
 
-Quantitative metrics involve objective, numerical measurements of the AI's performance. Quantitative metrics are often data-driven and based on specific algorithms or statistical analysis.
+Use these evaluators when you have ground-truth answers. `Similarity` is AI-assisted and is useful when paraphrases should still score well because it focuses on meaning. F1, BLEU, GLEU, METEOR, and ROUGE are algorithmic overlap metrics, which makes them better for benchmarking tasks such as translation, summarization, or fixed-answer Q&A.
 
-|Metric  |Definition  |Example  |Interpretation  |
-|---------|---------|---------|---------|
-|ROUGE     | Recall-Oriented Understudy for Gisting Evaluation, measures the overlap of n-grams (word sequences) between the generated and reference texts. It's useful for assessing if key information is retained in summaries.        | Assess how AI-generated summaries of scientific papers capture key findings from the original research papers, comparing them against human-written reviews.        |Assessed on a scale of 0 - 1. <br><br> Higher ROUGE scores indicate better coverage of the reference content.|
-|BLEU     |Bilingual Evaluation Understudy measures how many words overlap between the machine translation and reference translations, considering exact matches and near matches. It focuses on precision and aims to capture translation adequacy and fluency.         |Assess the quality of AI-generated posts in various languages for a multilingual content generation tool for a social media platform. Compare the AI generated posts against human-translated versions.         |Assessed on a scale of 0 - 1. <br><br> Higher BLEU scores suggest better translation quality.|
-|METEOR     |Metric for Evaluation of Translation with Explicit ORdering, designed to improve some of the weaknesses of BLEU. METEOR is an automatic metric for machine translation evaluation. It considers synonyms and paraphrases and aligns words between the machine translation and reference.         | An e-learning platform developing an AI tutor that explains complex concepts in simpler terms uses METEOR to evaluate the quality of its explanations. This metric helps assess whether the AI-generated explanations effectively convey the same meaning as expert-written materials, even if using different words.        |Assessed on a scale of 0 - 1. <br><br> A high METEOR score suggests that the generated text closely matches the reference text in terms of content and meaning.|
-|GLEU     |A variant of BLEU developed by Google for evaluating machine translation. GLEU is similar to BLEU but calculates the minimum of precision and recall for n-grams, making it more sensitive to changes in translation quality that affect both precision and recall.         | A company creating an AI system for generating product descriptions uses GLEU to fine-tune their model. They compare the AI-generated descriptions against professionally written ones, using GLEU's sensitivity to both precision and recall to incrementally improve the system's ability to create compelling and accurate product narratives.        |Assessed on a scale of 0 - 1. <br><br> A high GLEU score indicates a high degree of overlap in n-grams between the generated text and reference translations. A high GLEU score generally suggests fluency and adequacy in translation, and good precision in word choice and word order.|
+### RAG evaluators
+
+RAG applications usually need more than one evaluator. `Retrieval` and `Document Retrieval` both focus on the retrieval step, but they don't use the same schema. `Retrieval` judges whether retrieved context is relevant when you don't have search ground-truth labels. `Document Retrieval` is the evaluator for human-labeled search quality and uses `retrieval_ground_truth` plus `retrieved_documents`. `Groundedness` and `Groundedness Pro` focus on whether the response stays faithful to context; for the best `Groundedness` results, Microsoft Learn recommends providing `query`, `response`, and `context` together. `Relevance` checks whether the answer addresses the user's question, and `Response Completeness` checks whether important ground-truth information is missing.
+
+### Risk and safety evaluators
+
+Risk and safety evaluators measure harmful content and security-related failure modes. The core harm evaluators assign severity for hate and unfairness, sexual content, violence, and self-harm. Other evaluators detect risks such as protected material, indirect prompt injection, code vulnerabilities, and ungrounded personal attributes. If you're evaluating agents, the catalog also includes agent-specific safety evaluators such as prohibited actions and sensitive data leakage.
+
+### Agent evaluators
+
+Use agent evaluators when the system has to decide what task to perform, which tool to call, what parameters to send, and how to use the returned result. These evaluators help you inspect execution quality, not just answer quality. Most tool-oriented agent evaluators also need `tool_definitions`, and `Task Navigation Efficiency` needs `actions` and `expected_actions` rather than a simple query/response pair. Microsoft Learn also documents limited support for some tool types, so check the current agent evaluators article before you treat those scores as authoritative.
+
+## Choose evaluator combinations that match your scenario
+
+- **General chat or Q&A**: Start with coherence, fluency, and core safety evaluators.
+- **Ground-truth tasks**: Add similarity or other textual similarity evaluators when you have expected answers.
+- **RAG applications**: Combine retrieval, groundedness, and relevance. Add response completeness if you also have a trusted ground truth, and consider indirect attack testing (model-target evaluations only) when retrieved content could contain malicious instructions.
+- **Agentic systems**: Layer agent evaluators on top of quality and safety evaluators. For agent-specific safety risks, also consider the preview `Prohibited Actions` and `Sensitive Data Leakage` evaluators, which are agent-target only.
+
+## Read each result in the right scale
+
+A helpful rule is to read both the normalized label and the natural score:
+
+- **Per-item results** commonly include `label`, `score`, `threshold`, and often `reason`.
+- **Judge-based quality evaluators** typically use a 1-5 scale and a pass threshold.
+- **Algorithmic similarity evaluators** usually return 0-1 floats.
+- **ROUGE** returns multiple values (precision, recall, and F1) rather than a single score.
+- **Document Retrieval** returns multiple search-quality metrics such as Fidelity, NDCG, XDCG, Max Relevance, and Holes instead of a single score.
+- **Agent evaluators** are mixed: some are pass/fail only, `Intent Resolution` and `Tool Call Accuracy` also expose 1-5 scores, and `Task Navigation Efficiency` adds precision/recall/F1-style details.
+- **Core safety evaluators** (Hate and Unfairness, Sexual, Violence, Self-Harm) use a 0-7 severity scale with a default pass threshold of 3, while other safety evaluators (such as Indirect Attack, Protected Materials, Code Vulnerability, and Ungrounded Attributes) typically return a pass/fail or Boolean detected/not-detected result. Groundedness Pro, although it lives in the RAG evaluator family, also returns a binary pass/fail because it uses the Azure AI Content Safety service rather than a judge model.
+
+Don't convert all of these into a single "quality percentage." Use the `label` for quick comparison across evaluators, but use the raw `score`, `threshold`, and `reason` to understand what the result actually means.
+
+## Use results to drive mitigations
+
+Once you identify a problem, use the result to guide the mitigation. For example:
+
+- Low groundedness or relevance often points to retrieval, context construction, or prompt-instruction issues.
+- High safety severity suggests you should tighten system instructions, add or revise filtering, and rerun the same dataset to confirm improvement.
+- Poor similarity or response completeness might indicate missing information, weak task instructions, or an unreliable ground truth.
+- Poor tool accuracy or task completion suggests the agent needs better tool descriptions, clearer instructions, or different orchestration logic.
 
 > [!NOTE]
-> It's important to note that while these are the theoretical maximum scores, in practice, achieving a perfect score is often unrealistic, especially for metrics like BLEU, METEOR, and GLEU.
-
-## Risk and safety metrics
-
-The development and deployment of generative AI applications brings a plethora of opportunities, ranging from personalized content generation to advanced problem-solving capabilities. However, alongside these benefits come significant risks and safety concerns. When you evaluate AI systems through robust risk and safety metrics, you can support the creation of reliable and responsible AI solutions.
-
-Risk and safety metrics are essential, as they measure the tendency of AI systems to generate harmful, unsafe, or otherwise undesirable outputs. These metrics help in identifying potential risks and formulating mitigation strategies to address them. The key reasons these metrics matter include:
-
-- **Measuring harm**: Identifying and quantifying harmful content generated by AI systems to help ensure they don't spread misinformation, hate speech, or other malicious content.
-- **Influencing mitigation strategy**: Providing actionable insights that can help in developing plans to mitigate identified risks and improve the overall safety of AI applications.
-- **Building trust**: Enhancing user trust by demonstrating a commitment to safety and responsibility in AI deployments.
-
-Provided is a table of our built-in risk and safety metrics:
-
-|Metric  |What it Measures  |Assessment Output  |
-|---------|---------|---------|
-|Hateful and Unfair Content Defect Rate     | Measures the frequency of AI-generated content that contains hate speech or unfair biases.        |Severity level: 0 – 7, <brSeverity label: Very low, Low, Medium, and High|
-|Sexual Content Defect Rate     |Measures the occurrence of AI-generated content containing inappropriate sexual references.         |Severity level: 0 – 7, <br> Severity label: Very low, Low, Medium, and High|
-|Violent Content Defect Rate    |Evaluates the frequency of content that depicts or incites violence.         |Severity level: 0 – 7, <br> Severity label: Very low, Low, Medium, and High|
-|Self-Harm Related Content Defect Rate     |Measures the generation of content that encourages or glamorizes self-harm.         | Severity level: 0 – 7, <br> Severity label: Very low, Low, Medium, and High|
-|Jailbreak Defect Rate    |Measures how often AI systems can be manipulated to bypass safety protocols and restrictions. A jailbreak occurs when a user finds a way to get the AI to produce content it's designed to prevent.         | True or False        |
-|Indirect Attack Rate     |Measures the susceptibility of AI to indirect prompt injections, where seemingly harmless prompts elicit inappropriate responses. An indirect prompt injection occurs when the AI is tricked into generating harmful content through a series of seemingly innocuous prompts.        | True or False        |
-|Protected Material Defect Rate     |Evaluates how often AI systems generate content that infringes upon protected material, such as copyrighted text.         |True or False         |
-
-Based on the results of a risk and safety evaluation, several mitigations can be implemented to enhance the robustness and reliability of AI systems. One approach is to modify the [system message](/azure/ai-services/openai/concepts/system-message?context=%2Fazure%2Fai-studio%2Fcontext%2Fcontext&tabs=top-techniques) by incorporating a tailored safety message that guides user interaction and sets clear boundaries for acceptable use. Azure AI Foundry also provides [safety system message templates](/azure/ai-services/openai/concepts/safety-system-message-templates) within the chat playground. 
-
-:::image type="content" source="../media/system-message.png" alt-text="A screenshot of the Azure AI Foundry chat playground. There's a pop-up to select safety system messages." lightbox="../media/system-message.png":::
-
-Additionally, implementing modified content filters or blocklists with [Azure AI Content Safety](/azure/ai-studio/concepts/content-filtering) can dynamically detect and intercept potentially harmful outputs before they reach the end user.
-
-:::image type="content" source="../media/content-filter.png" alt-text="A screenshot of the content filters configuration in Azure AI Foundry."  lightbox="../media/content-filter.png":::
+> Safety system messages are only one layer of protection. Microsoft Learn recommends combining them with other mitigations such as content filtering, AI red teaming where appropriate, and repeated evaluation. See [Built-in evaluators reference](/azure/foundry/concepts/built-in-evaluators), [Retrieval-Augmented Generation (RAG) evaluators](/azure/foundry/concepts/evaluation-evaluators/rag-evaluators), [Agent evaluators](/azure/foundry/concepts/evaluation-evaluators/agent-evaluators), [Risk and safety evaluators](/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators), [Run AI Red Teaming Agent in the cloud](/azure/foundry/how-to/develop/run-ai-red-teaming-cloud), and [Safety system message templates](/azure/foundry/openai/concepts/safety-system-message-templates).
