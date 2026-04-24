@@ -28,7 +28,7 @@ levels:
 roles:
   - security-engineer
 products:
-  - microsoft-security-copilot
+  - security-copilot
 subjects:
   - security
   - cloud-security
