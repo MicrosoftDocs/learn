@@ -65610,7 +65610,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/advocates/evaluate-generative-ai-apps/5-custom-prompt-based-evalutors.yml",
+      "source_path_from_root": "/learn-pr/advocates/evaluate-generative-ai-apps/5-custom-prompt-based-evalutors.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/evaluate-generative-ai-apps/",
       "redirect_document_id": false
     }
