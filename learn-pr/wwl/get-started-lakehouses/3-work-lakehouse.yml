@@ -5,8 +5,8 @@ metadata:
   title: Ingest and Transform Data in a Lakehouse
   description: "Learn how to create a lakehouse, ingest data, and transform data in Microsoft Fabric."
   ms.date: 03/04/2026
-  author: angierudduck
-  ms.author: anrudduc
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7
