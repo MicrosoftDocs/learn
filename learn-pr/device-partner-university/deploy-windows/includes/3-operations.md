@@ -1,4 +1,4 @@
-In the Plan and Prepare phases you completed the tasks necessary to get your operations ready to deploy Windows 11. To deploy Windows 11, we recommend the following tasks and deliverables.
+In the Plan and Prepare phases, you completed the tasks necessary to get your operations ready to deploy Windows 11. To deploy Windows 11, we recommend the following tasks and deliverables.
 
 | Tasks | Deliverables |
 |------|--------------|

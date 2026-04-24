@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/16/2024
+  ms.date: 04/22/2026
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Incorporating AI into offline shopping experiences."
       isCorrect: true
-      explanation: "Correct. A major challenge for AI solutions in retail is that most purchased still occur in-store."
+      explanation: "Correct. A major challenge for AI solutions in retail is that most purchases still occur in-store."
     - content: "Recruiting employees with IT skills to work in store."
       isCorrect: false
       explanation: "Incorrect. IT skills aren't a common challenge when recruiting retail employees."

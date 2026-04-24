@@ -184,4 +184,4 @@ Solution architects should recommend the toolset that covers **observability**, 
 
 [https://learn.microsoft.com/azure/ai-foundry/observability/how-to/how-to-monitor-agents-dashboard?view=foundry](/azure/ai-foundry/observability/how-to/how-to-monitor-agents-dashboard)
 
-[https://learn.microsoft.com/power-platform/admin/analytics-copilot](/power-platform/admin/analytics-copilot)
+[https://learn.microsoft.com/power-platform/admin/copilot/copilot-hub](/power-platform/admin/copilot/copilot-hub)

@@ -122,12 +122,10 @@ Because voice relies on real-time interaction, architects should design behavior
 
 ## References
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agents/agent-behaviors](/microsoft-copilot-studio/guidance/agents/agent-behaviors)
+[https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance](/microsoft-copilot-studio/guidance)
 
 <https://bisser.io/add-deep-reasoning-to-an-copilot-studio-agent/>
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/concepts/architecture](/microsoft-copilot-studio/concepts/architecture)
+[https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview](/microsoft-copilot-studio/guidance/architecture-overview)
 
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/ivr-overview](/microsoft-copilot-studio/ivr-overview)
-
-[https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-deep-reasoning](/microsoft-copilot-studio/advanced-deep-reasoning)
+[https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-reasoning-models](/microsoft-copilot-studio/authoring-reasoning-models)

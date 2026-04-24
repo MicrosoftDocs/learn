@@ -6,11 +6,11 @@ Review deployment-related policies with respect to your security objectives, upd
 
 ## Apply configurations
 
-In the Prepare phase you created and updated configurations for security baselines, policies and administrative templates, and network etc. In this phase you'll apply those configurations if you haven’t already done so.
+In the Prepare phase, you created and updated configurations for security baselines, policies and administrative templates, and network etc. In this phase, you'll apply those configurations if you haven’t already done so.
 
 During deployment, configurations are applied to devices through the active management platform.
 
-In cloud managed environments, this typically occurs through Microsoft Intune via policy assignment. If you're using Windows Autopatch, configuration and update management are coordinated automatically as devices are registered and placed into deployment rings. In hybrid or on-premises environments, [configurations might also be applied through Configuration Manager](/intune/configmgr/compliance/deploy-use/deploy-configuration-baselines) and Group Policy.
+In cloud-managed environments, this typically occurs through Microsoft Intune via policy assignment. If you're using Windows Autopatch, configuration and update management are coordinated automatically as devices are registered and placed into deployment rings. In hybrid or on-premises environments, [configurations might also be applied through Configuration Manager](/intune/configmgr/compliance/deploy-use/deploy-configuration-baselines) and Group Policy.
 
 
 > [!TIP]

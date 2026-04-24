@@ -64,12 +64,12 @@ Let's break down the steps in our `Teleport` operation:
 
     | Bell state     | Computational basis state |
     |----------------|---------------------------|
-    | $\ket{\phi^+}$ | $\ket{00}$                |
-    | $\ket{\phi^-}$ | $\ket{01}$                |
-    | $\ket{\psi^+}$ | $\ket{10}$                |
-    | $\ket{\psi^-}$ | $\ket{11}$                |
+    | :::no-loc text="$\\ket{\\phi^+}$"::: | :::no-loc text="$\\ket{00}$":::                |
+    | :::no-loc text="$\\ket{\\phi^-}$"::: | :::no-loc text="$\\ket{01}$":::                |
+    | :::no-loc text="$\\ket{\\psi^+}$"::: | :::no-loc text="$\\ket{10}$":::                |
+    | :::no-loc text="$\\ket{\\psi^-}$"::: | :::no-loc text="$\\ket{11}$":::                |
 
-1. Measure the `alice` and `message` qubits, and apply the appropriate gates to the `bob` qubit based on the measurement results. First, use the `M` operation to measure `message`. If the result is 1, then apply the $Z$ gate to `bob`. Next, measure `alice` with the `M` operation. If the result is 1, then apply the $X$ gate to `bob`.
+1. Measure the `alice` and `message` qubits, and apply the appropriate gates to the `bob` qubit based on the measurement results. First, use the `M` operation to measure `message`. If the result is 1, then apply the $Z$ gate to `bob`. Next, measure `alice` with the `M` operation. If the result is 1, then apply the :::no-loc text="$X$"::: gate to `bob`.
 
 This protocol teleports the initial state of the `message` qubit onto the `bob` qubit.
 
@@ -96,7 +96,7 @@ operation SetToMinus(q : Qubit) : Unit is Adj + Ctl {
 
 ### Define the `Main` operation
 
-Every Q# program must have an entrypoint operation, which is the `Main` operation by default. Here, our `Main` operation runs the teleportation protocol for different initial states of the message qubit, $\ket{0}$, $\ket{1}$, $\ket{+}$, and $\ket{-}$. If the protocol is successful, then Bob's qubit ends up in the same state that we initially set the message qubit to.
+Every Q# program must have an entrypoint operation, which is the `Main` operation by default. Here, our `Main` operation runs the teleportation protocol for different initial states of the message qubit, :::no-loc text="$\\ket{0}$":::, :::no-loc text="$\\ket{1}$":::, :::no-loc text="$\\ket{+}$":::, and :::no-loc text="$\\ket{-}$":::. If the protocol is successful, then Bob's qubit ends up in the same state that we initially set the message qubit to.
 
 Here's the `Main` operation for the quantum teleportation program:
 
@@ -141,7 +141,7 @@ operation Main() : Result[] {
 Let's break down the components of the `Main` operation:
 
 1. Allocate two qubits, `message` and `bob`.
-1. Create a list of tuples that contain the quantum state, the operation that initializes the `message` qubit into the desired state, and the basis for measurement. The initialization operations are `I` for $\ket{0}$, `X` for $\ket{1}$, `SetToPlus` for $\ket{+}$, and `SetToMinus` for $\ket{-}$.
+1. Create a list of tuples that contain the quantum state, the operation that initializes the `message` qubit into the desired state, and the basis for measurement. The initialization operations are `I` for :::no-loc text="$\\ket{0}$":::, `X` for :::no-loc text="$\\ket{1}$":::, `SetToPlus` for :::no-loc text="$\\ket{+}$":::, and `SetToMinus` for :::no-loc text="$\\ket{-}$":::.
 1. Iterate over the list of tuples to initialize the `message` qubit and display the initial state. Then, call the `Teleport` operation to teleport the state of the `message` qubit onto the `bob` qubit.
 1. Measure the `bob` qubit in the corresponding basis and reset the qubits so that you can reuse them for teleportation.
 1. Return the measurement results for each teleportation.

@@ -1,4 +1,8 @@
-This module examines the features and capabilities of GitHub Copilot. You review the GitHub Copilot products available from GitHub, and examine the benefits, account types, features, and limitations of GitHub Copilot. After completing a step-by-step installation of the GitHub Copilot extensions for Visual Studio Code, you examine the capabilities provided by the GitHub Copilot and GitHub Copilot Chat extensions. You also complete an exercise that demonstrates how to configure the GitHub Copilot extensions in Visual Studio Code.
+This module examines the features and capabilities of GitHub Copilot. You review the Copilot products available from GitHub, and examine the benefits, account types, features, and limitations of GitHub Copilot. After completing a step-by-step installation of the GitHub Copilot extensions for Visual Studio Code, you examine the capabilities provided by the GitHub Copilot and GitHub Copilot Chat extensions. You also complete an exercise that demonstrates how to configure the GitHub Copilot extensions in Visual Studio Code.
+
+> [!NOTE]
+> Plan details and trial availability may change. For current plan options, features, and usage limits, see the GitHub Copilot plans page: [Copilot plans page](https://docs.github.com/en/copilot/get-started/plans).
+
 
 Imagine you're a software developer at a tech startup. You're tasked with developing a feature for one of the company's newest apps. You're happy to get the assignment, but the deadline is tight. You haven't seen the codebase and you need to ensure the new feature is bug-free and efficient. You heard that GitHub Copilot can accelerate your development process, so you're looking forward to examining its features yourself. GitHub Copilot can explain new and complex code, generate documentation, and help you develop code more efficiently and accurately. GitHub Copilot can help you meet your deadline and deliver a high-quality feature to your team.
 

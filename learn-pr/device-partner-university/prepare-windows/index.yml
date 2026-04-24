@@ -14,7 +14,7 @@ metadata:
   ms.topic: module 
   ms.service: windows
 summary: | 
-   This module introduces the Prepare phase, the second phase of the Windows 11 deployment process. You’ll learn how to prepare your organization for a smooth transition to Windows 11 by building on your deployment readiness planning. You’ll explore the key tasks and deliverables needed across operations, applications, infrastructure, configurations, devices, and users.
+   This module introduces the Prepare phase, the second phase of the Windows 11 deployment process. You’ll learn how to prepare your organization for a smooth transition to Windows 11 by building on your deployment readiness planning. You’ll explore the key tasks and deliverables needed across operations, applications, infrastructure, configurations, devices, and users. The module guides you through prepare-level tasks and deliverables for each area, helping you validate readiness and address gaps using recommended tools, reports, and deliverables. 
 
 abstract: | 
   By the end of this module, you'll be able to: 
@@ -26,7 +26,7 @@ abstract: |
 prerequisites: | 
   - Planned for deployment by evaluating organizational readiness for Windows 11, including defining success criteria, identifying risks, and creating deliverables.
 
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/prepare-windows.svg
 
 ratingEnabled: false 
 
@@ -51,7 +51,6 @@ units:
 
   - learn.dpu.prepare-windows.introduction
   - learn.dpu.prepare-windows.prepare 
-  - learn.dpu.prepare-windows.phases-rings 
   - learn.dpu.prepare-windows.operations
   - learn.dpu.prepare-windows.applications
   - learn.dpu.prepare-windows.infrastructure

@@ -15,9 +15,9 @@ After this module, you should:
 * To learn more about what Microsoft can do for your manufacturing projects, visit our [Microsoft Cloud for Manufacturing website](https://www.microsoft.com/industry/manufacturing/microsoft-cloud-for-manufacturing).
 * Stay up to date with Microsoft AI. Visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
-* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
+* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/ai-services/openai/concepts/models).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Services](/azure/cognitive-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Services](/azure/ai-services/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 * To learn more about what you can do in Microsoft Fabric, visit our [Microsoft Fabric website](https://www.microsoft.com/microsoft-fabric).
 
