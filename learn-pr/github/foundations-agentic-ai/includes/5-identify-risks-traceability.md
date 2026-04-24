@@ -73,7 +73,7 @@ The goal isn't only compliance. It is operational understanding: when something 
 
 - An inspectable plan (PR plan section or file)
 
-- A bounded change set (branch and commits)
+- A bounded changeset (branch and commits)
 
 - Automated evidence (workflow run and artifacts)
 
