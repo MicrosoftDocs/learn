@@ -37,7 +37,7 @@ Some agents require only a few parameters; others involve configuring multiple p
 
 
 
-   :::image type="content" source="../media/agent-workspace-context.png" alt-text="Diagram of three Security Copilot workspaces—SOC, Compliance, and Sandbox—each containing their own scoped agents and plugins, illustrating workspace-level agent scoping.":::
+   :::image type="content" source="../media/agent-workspace-context.png" alt-text="Diagram of three Security Copilot workspaces—SOC, Compliance, and Sandbox—each containing their own scoped agents and plugins, illustrating workspace-level agent scoping." lightbox="../media/agent-workspace-context.png":::
 
 
 

@@ -30,7 +30,7 @@ These two costs are independent. An agent that runs frequently incurs both subsc
   
 2. After acquiring the agent, proceed with setup in Security Copilot.
 
-   :::image type="content" source="../media/partner-agent-approval.png" alt-text="Diagram of the partner agent approval workflow with two swimlanes: Owner/Contributor initiates setup and shares an approval link, and Global Administrator reviews and approves permissions.":::
+   :::image type="content" source="../media/partner-agent-approval.png" alt-text="Diagram of the partner agent approval workflow with two swimlanes: Owner/Contributor initiates setup and shares an approval link, and Global Administrator reviews and approves permissions." lightbox="../media/partner-agent-approval.png":::
 
 ## Global Administrator approval workflow
 
