@@ -36,8 +36,8 @@ For example, a friendliness evaluator might use an ordinal 1-5 scale and instruc
 
 Current Foundry guidance lets you create custom evaluators in two ways:
 
-1. In **Evaluation** > **Evaluator catalog** in the Foundry portal
-2. Through the Foundry SDK
+- In **Evaluation** > **Evaluator catalog** in the Foundry portal
+- Through the Foundry SDK
 
 After creation, add the custom evaluator to an evaluation run just like a built-in evaluator. In the portal, the **Criteria** step prompts for the runtime values the evaluator needs. Prompt-based evaluators require a model deployment and a threshold so the judge model can run and the service can label results as passing or failing. Code-based evaluators require a pass threshold, and the underlying evaluator definition (and SDK initialization) also requires a valid `deployment_name` for run orchestration even though `grade()` itself doesn't call an LLM. You can pass any valid model deployment name from your project. The `grade()` function still returns a float score between 0.0 and 1.0. If a code-based grading call raises an exception or times out, the run records that item as an error and assigns it a `0.0` score, so design the function defensively with `try/except` around risky logic and a clear fallback score.
 
