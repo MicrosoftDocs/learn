@@ -18,7 +18,7 @@ When an agent creates a pull request, revises code, or responds to feedback, it 
 
 - Set permissions
 
-- Chose and configured controls
+- Choose and configured controls
 
 - Approved the resulting change
 
@@ -51,7 +51,7 @@ Early-stage agent systems commonly fail in predictable ways:
 
 ## Traceability and observability
 
-To supervise an agent well, you need more than a final diff-you need a trail. In GitHub, that trail can include:
+To supervise an agent well, you need more than a final diff-you need a trail. In GitHub that trail can include:
 
 - Pull requests and commit history
 
@@ -65,7 +65,7 @@ To supervise an agent well, you need more than a final diff-you need a trail. In
 
 - Organization audit log events (availability and access depends on org/enterprise configuration)
 
-The goal is not only compliance. It is operational understanding: when something fails, you need to know what changed, who approved it, what evidence existed, and what happened next.
+The goal isn't only compliance. It is operational understanding: when something fails, you need to know what changed, who approved it, what evidence existed, and what happened next.
 
 ### Minimum audit trail for agent contributions
 
@@ -81,7 +81,7 @@ The goal is not only compliance. It is operational understanding: when something
 
 - A clear outcome (merge, revert, or escalation)
 
-Suppose the agent's vulnerability fix passes CI but later causes a regression. The key question is not only whether the agent made a mistake-it's whether the system made the mistake understandable and preventable:
+Suppose the agent's vulnerability fix passes CI but later causes a regression. The key question isn't only whether the agent made a mistake-it's whether the system made the mistake understandable and preventable:
 
 - Was there a visible plan and scope?
 

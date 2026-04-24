@@ -25,11 +25,11 @@ GitHub is the system of record because it stores the artifacts through which dev
 In an agentic workflow, these artifacts do double duty: they support development and make agent behavior inspectable after the fact.
  
 > [!NOTE]
-> This module focuses on general GitHub governance patterns. GitHub Advanced Security features such as secret scanning and push protection are not covered here, but can be integrated as additional validation signals in production environments.
+> This module focuses on general GitHub governance patterns. GitHub Advanced Security features such as secret scanning and push protection aren't covered here, but can be integrated as additional validation signals in production environments.
 
 ## GitHub as the control plane
 
-GitHub is the control plane because (when configured by policy) it provides enforcement points that shape what agent contributions can and cannot do.
+GitHub is the control plane because (when configured by policy) it provides enforcement points that shape what agent contributions can and can't do.
 
 ### Controls at a glance
 
@@ -84,8 +84,8 @@ The agent opens a pull request with a security fix. GitHub:
 
 - Prevents access to protected environment secrets until approvals are granted (when configured)
 
-This is what it means to say GitHub is the control plane: it is where enforcement happens.
+This is what it means to say GitHub is the control plane: it's where enforcement happens.
 
-GitHub is not just where agent work is stored. It is where agent work is supervised, validated, and governed. Repositories and pull requests make work visible; checks, reviews, CODEOWNERS, rulesets, branch protection, and environments make work controllable.
+GitHub isn't just where agent work is stored. It's where agent work is supervised, validated, and governed. Repositories and pull requests make work visible; checks, reviews, CODEOWNERS, rulesets, branch protection, and environments make work controllable.
 
 Now that you've seen how GitHub can constrain and validate agent behavior, the next step is to examine responsibility. In the next unit, you'll look at who remains accountable when agents act inside a workflow.
