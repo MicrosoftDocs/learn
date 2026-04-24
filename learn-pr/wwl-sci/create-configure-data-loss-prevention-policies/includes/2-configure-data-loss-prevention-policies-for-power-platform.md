@@ -52,7 +52,7 @@ To follow these steps for tenant-level policies, you need one of the following p
 
 To create environment-level policies, you need to have Power Apps Environment Admin permissions.
 
-To create a DLP policy that denies connectivity between SharePoint Online and non-business apps, follow these steps. Every connector starts in the Non-Business group by default, so the key decisions are which connectors to promote to Business (protecting them from being combined with unmanaged destinations), what URL patterns to allow or deny for custom connectors, and which environments to include in scope.
+To create a DLP policy that denies connectivity between SharePoint Online and non-business apps, follow these steps:
 
 1. In Power Platform admin center, select **Policies**, select **Data policies**, and then select **+** **New policy**.
 
@@ -60,15 +60,23 @@ To create a DLP policy that denies connectivity between SharePoint Online and no
 
 1. On the **Assign Connectors** page, review the default connector classifications.
 
+   Every connector starts in the Non-Business group unless you move it.
+
 1. Select the **SharePoint** connector, then select **Move to Business**. You can also use the ellipsis (three dots) to the right of the connector name.
+
+   Moving SharePoint to Business ensures it can only be used with other Business-group connectors, preventing flows that bridge business data to unmanaged destinations.
 
 1. After you complete the connector assignment across the **Business**, **Non-Business**, and **Blocked** groups, select **Next**.
 
-1. On the **Custom connectors patterns** page, define **Allow** or **Deny** URL patterns for custom connectors. Select **Add connector pattern**, configure the pattern, select **Save**, then select **Next**.
+1. On the **Custom connectors patterns** page, select **Add connector pattern**, define **Allow** or **Deny** URL patterns, and select **Save**. Then select **Next**.
+
+   These patterns control whether custom connectors built against specific endpoints are permitted or blocked.
 
 1. On the **Define scope** page, select **Add multiple environments**, choose the environments to include, and select **Add to policy**. Select **Next**.
 
-1. On the Review and create policy page, review all settings. Select **Create Policy**.
+   Scoping to specific environments lets you validate behavior before applying the policy more broadly.
+
+1. On the **Review and create policy** page, review all settings, and select **Create Policy**.
 
 > [!TIP]
 > You can also use the PowerApps PowerShell module with the [New-DlpPolicy](/powershell/module/microsoft.powerapps.administration.powershell/new-dlppolicy?azure-portal=true) cmdlet to create a DLP policy for Power Platform.
