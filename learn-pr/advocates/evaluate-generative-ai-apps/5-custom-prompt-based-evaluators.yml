@@ -2,9 +2,9 @@
 uid: learn.evaluate-generative-ai-apps.custom-prompt-based-evaluators
 title: Custom prompt-based evaluators
 metadata:
-  title: Custom
-  description: Learn about prompty-based evaluators and how to create them with Prompty.
-  ms.date: 10/11/2024
+  title: Custom prompt-based evaluators
+  description: Learn when to use custom prompt-based evaluators and how they differ from code-based evaluators in Microsoft Foundry.
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
