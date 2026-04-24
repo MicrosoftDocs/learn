@@ -1,50 +1,47 @@
-Custom evaluators are helpful for assessing generative AI applications for your specific criteria, as they allow for a more detailed evaluation tailored to specific, context-based requirements that conventional metrics might miss. For instance, while a conventional metric like fluency assesses the grammatical and syntactical correctness of generated content, it might not capture subtler aspects such as the friendliness or tone appropriateness of a response. 
+Custom evaluators help you measure qualities that the built-in catalog doesn't fully capture. Examples include brand tone, response format compliance, friendliness, domain-specific policy language, or whether an answer follows your organization's style rules.
 
-Custom evaluators can be tailored to measure these more subjective and context-specific attributes. Custom evaluators validate that the AI not only generates fluent text but also aligns with the desired emotional and social nuances required for applications. Custom evaluators are especially crucial in domains like customer service, where the tone and manner of communication significantly affect user experience and satisfaction. While friendliness is just one example of a custom evaluator, other custom evaluators can also significantly enhance the quality and appropriateness of AI-generated content.
+## When to use prompt-based evaluators
 
-## Prompty
+A prompt-based evaluator uses an LLM judge to score each item against criteria that you define. It is best for subjective or context-sensitive judgments, such as tone, helpfulness, completeness, empathy, or semantic correctness.
 
-You can create a custom evaluator with Prompty, a prompt template experience within the `promptflow` package. Prompty standardizes prompts and their execution into a single asset and is composed of the specification, tooling, and runtime.
+If you need deterministic, rule-based validation instead, use a code-based evaluator. Code-based evaluators use a Python `grade(sample, item)` function that returns a float between 0.0 and 1.0 (higher is better), and are a better fit for format checks, keyword rules, or rule-based policy validation. They run in a sandboxed environment with no network access, code size under 256 KB, up to two minutes per grading call, 2 GB of memory, 1 GB of disk, and 2 CPU cores. Any logic that depends on external services should be replaced with a prompt-based evaluator or a separate workflow.
 
-### Specification
+| Evaluator type | Best for | Output contract |
+|---------|---------|---------|
+|Prompt-based|Subjective quality judgments, tone, semantic nuance, rubric-based scoring|JSON object with `result` and `reason`. The `result` type matches the chosen scoring method: an integer for ordinal, a float for continuous, or a boolean for binary|
+|Code-based|Length checks, format validation, keyword rules, deterministic policy checks|Python `grade(sample, item)` function that returns a float between 0.0 and 1.0 (higher is better)|
 
-The Prompty asset is a markdown file with a `.prompty` extension and includes a modified front matter. The front matter is in YAML format which contains several metadata fields that define model configuration and expected inputs of the Prompty. Below the front matter is the prompt template in Jinja which allows for dynamic inputs to the Prompty.
+## How prompt-based evaluators work
 
-An `apology.prompty` file might resemble the following specification:
+A prompt-based evaluator uses a judge prompt template and maps your dataset fields into that template with variables such as `{{query}}`, `{{response}}`, or `{{ground_truth}}`.
 
-```md
----
-name: Apology Evaluator
-description: Apology Evaluator for QA scenario
-model:
-  api: chat
-  configuration:
-    type: azure_openai
-    connection: open_ai_connection
-    azure_deployment: gpt-4
-  parameters:
-    temperature: 0.2
-    response_format: { "type":"json_object"}
-inputs:
-  query:
-    type: string
-  response:
-    type: string
-outputs:
-  apology:
-    type: int
----
-system:
-You are an AI tool that determines if, in a chat conversation, the assistant apologized, like say sorry.
-Only provide a response of {"apology": 0} or {"apology": 1} so that the output is valid JSON.
-Give a apology of 1 if apologized in the chat conversation.
+Current Microsoft Learn guidance supports three scoring methods:
 
+- **Ordinal**: Integer scores on a discrete scale, such as 1-5
+- **Continuous**: Float scores on a range, such as 0.0-1.0
+- **Binary**: `true`/`false` for pass-style checks
+
+The prompt must return a JSON object with both a `result` and a `reason`. The `result` type must match the scoring method that you chose.
+
+For example, a friendliness evaluator might use an ordinal 1-5 scale and instruct the judge model to return:
+
+```json
+{
+  "result": 4,
+  "reason": "The response is polite and supportive, but not especially warm."
+}
 ```
 
-### Tooling
+## Create and use custom evaluators
 
-The Prompty Visual Studio Code Extension helps you create, manage, and execute, your `.prompty` assets - effectively giving you a playground in the editor, to streamline your prompt engineering workflow and speed up your prototype iterations.
+Current Foundry guidance lets you create custom evaluators in two ways:
 
-### Runtime
+1. In **Evaluation** > **Evaluator catalog** in the Foundry portal
+2. Through the Foundry SDK
 
-The Prompty Runtime helps you make the transition from static asset (.prompty file) to executable code (using a preferred language and framework) that you can test interactively from the command line and integrate seamlessly into end-to-end development workflows for automation.
+After creation, add the custom evaluator to an evaluation run just like a built-in evaluator. In the portal, the **Criteria** step prompts for the runtime values the evaluator needs. Prompt-based evaluators require a model deployment and a threshold so the judge model can run and the service can label results as passing or failing. Code-based evaluators require a pass threshold, and the underlying evaluator definition (and SDK initialization) also requires a valid `deployment_name` for run orchestration even though `grade()` itself doesn't call an LLM. You can pass any valid model deployment name from your project. The `grade()` function still returns a float score between 0.0 and 1.0. If a code-based grading call raises an exception or times out, the run records that item as an error and assigns it a `0.0` score, so design the function defensively with `try/except` around risky logic and a clear fallback score.
+
+Use custom evaluators alongside built-in evaluators rather than instead of them. For example, you might pair a custom friendliness evaluator with coherence, groundedness, and safety evaluators to measure both the tone and the trustworthiness of an answer.
+
+> [!NOTE]
+> Current Microsoft Learn guidance documents custom evaluators as preview. For the supported workflow, use the current evaluator catalog and SDK documentation rather than older promptflow-era material. See [Custom evaluators](/azure/foundry/concepts/evaluation-evaluators/custom-evaluators) and [Azure OpenAI graders](/azure/foundry/concepts/evaluation-evaluators/azure-openai-graders) when you need SDK-only grading patterns.

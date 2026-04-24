@@ -3,8 +3,8 @@ uid: learn.evaluate-generative-ai-apps.choose-utilize-metrics
 title: Choose and utilize metrics
 metadata:
   title: Choose and utilize metrics
-  description: Learn how to choose and use metrics best suited for evaluating your generative AI application.
-  ms.date: 10/11/2024
+  description: Learn how to choose built-in evaluators and metrics best suited for evaluating your generative AI application.
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   author: aprilgittens
   ms.author: apspeigh
