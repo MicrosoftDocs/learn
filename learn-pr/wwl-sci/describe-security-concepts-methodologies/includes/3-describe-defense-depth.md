@@ -29,6 +29,8 @@ Each layer in a defense-in-depth strategy slows down an attacker and gives defen
 
 Defense in depth also supports a key principle of modern security: designing your strategy as if attackers will eventually get through your outer defenses, and focusing on limiting what they can do once inside. Perimeters get tested constantly, so each additional layer of protection adds meaningful resilience.
 
+:::image type="content" source="../media/3-attacker-journey-defense-depth.png" alt-text="Diagram showing an attacker's journey through multiple defense-in-depth layers, illustrating how each layer slows progress and increases detection opportunities." lightbox="../media/3-attacker-journey-defense-depth.png":::
+
 ## Confidentiality, integrity, and availability (CIA)
 
 The defense-in-depth layers described above work toward a common set of security goals, captured in the *CIA triad*: confidentiality, integrity, and availability. These three properties represent what effective security is ultimately designed to protect.
