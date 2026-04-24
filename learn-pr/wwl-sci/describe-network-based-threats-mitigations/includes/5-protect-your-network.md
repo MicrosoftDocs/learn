@@ -22,7 +22,7 @@ Network segmentation creates boundaries around critical operations or assets, in
 
 ### Secure connections using a virtual private network
 
-A virtual private network (VPN) serves as a dedicated and secure connection, between a device and a server, across the internet. A VPN connection encrypts all your internet traffic and then disguises it so it's impossible to know the identity of the original device. This type of secure connection makes it difficult for cybercriminals to track activities and obtain your data. If you've ever connected to your work network from a public Wi-Fi hotspot, such as at an airport, you most likely used a VPN. The VPN establishes a secure connection over an insecure public network. VPN providers have become very common not just for remote work scenarios but also for personal use.
+A virtual private network (VPN) serves as a dedicated and secure connection, between a device and a server, across the internet. A VPN connection encrypts all your internet traffic and then disguises it so it's impossible to know the identity of the original device. This type of secure connection makes it difficult for cybercriminals to track activities and obtain your data. If you've ever connected to your work network from a public Wi-Fi hotspot, such as at an airport, you most likely used a VPN. The VPN establishes a secure connection over an insecure public network. VPN providers have become common not just for remote work scenarios but also for personal use.
 
 ### Encrypt your wireless network
 
