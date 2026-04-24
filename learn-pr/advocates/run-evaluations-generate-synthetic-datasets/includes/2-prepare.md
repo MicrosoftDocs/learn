@@ -1,41 +1,36 @@
-The first step to running evaluations with the Azure AI Evaluation SDK is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Foundry. After the hub resource is created, you'll need to create an Azure AI Project. Afterwards, you deploy a model to be used for running evaluations.
+The first step in this workshop is to create a hub-based project in Microsoft Foundry (classic). The local Azure AI Evaluation SDK and simulator workflows used throughout the notebooks currently apply to Foundry (classic) hub-based projects rather than new Foundry projects. After the project is ready, deploy a chat model that the AI-assisted quality evaluators can use as their judge model.
 
-Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps.
-
-The Azure AI hub resource is the top-level Azure resource for Azure AI Foundry and provides the working environment for a team to build and manage AI applications.
-
-In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring.
-
-## Create an Azure AI Foundry project resource
+## Create a hub-based project in Microsoft Foundry (classic)
 
 > [!NOTE]
-> Currently AI-assisted risk and safety metrics are only available in the following regions: East US 2, France Central, UK South, Sweden Central. Groundedness measurement leveraging Azure AI Content Safety Groundedness Detection is only supported in the following regions: East US 2 and Sweden Central. Protected Material measurement is only supported in East US 2.
+> If the portal shows the **New Foundry** toggle, turn it **off** so the UI matches the **Foundry (classic)** experience used by this workshop and by the related local SDK articles.
+
+> [!NOTE]
+> AI-assisted safety evaluators and `GroundednessProEvaluator` are available only in supported regions. For the current list, see [Rate limits, region support, and enterprise features for evaluation](/azure/foundry/concepts/evaluation-regions-limits-virtual-network).
 
 > [!IMPORTANT]
-> This exercise uses the East US 2 region because that region supports all features that this module includes. If you select a different region, you might not be able to complete the exercises. To learn more, see [Region availability](/azure/ai-services/content-safety/overview#region-availability).
+> Use **East US 2** for this workshop if you want one region that supports all the evaluation features covered in the exercises.
 
-1. In [Azure AI Foundry](https://ai.azure.com/), select **+Create project**.
-1. For **Project name**, provide a name for your project.
-1. Select **Customize** and modify the following fields as needed:
-    - **Hub name**: Select an existing hub or provide a name for a new one.
-    - **Subscription**: Select your Azure subscription.
-    - **Resource group**: Select an existing resource group or create a new one.
-    - **Location**: Select **East US 2**.
-    - **Connect Azure AI Services or Azure OpenAI**: Either select an existing service, use the default name provided for a new service, or select **Create new AI Services** to provide your own name for the service.
-    - **Connect Azure AI Search**: Select **Create new AI Search**. Provide a name for the resource and select **Next**.
-1. Select **Next**.
-1. Review the hub details, and then select **Create**.
+1. Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs).
+1. Create a new project and choose **AI hub resource** when you're asked what type of project to create.
+1. Enter a project name.
+1. Select an existing hub in **East US 2**, or create a new hub and set its **Location** to **East US 2**.
+1. Finish creating the project and wait for the hub and project resources to be provisioned.
 
-## Deploy a model
+For the full hub-based project workflow, see [Create a hub project for Microsoft Foundry (classic)](/azure/foundry-classic/how-to/hub-create-projects).
 
-1. Within Azure AI Foundry, navigate to the **Model Catalog**.
-1. In the search bar, enter: **gpt-4o**.
-1. Select the **gpt-4o** model.
-1. On the model card, select **Deploy**.
-1. For Deployment name, enter: *gpt-4o*.
-1. In the **Deployment details** section, select **Customize**.
-1. Set the **Tokens per Minute Rate Limit** slider to 100K.
-1. Select **Deploy**.
+## Deploy a chat model for the quality evaluators
+
+The exercises that use `GroundednessEvaluator`, `RelevanceEvaluator`, `CoherenceEvaluator`, `FluencyEvaluator`, or `SimilarityEvaluator` need a deployed chat model in `model_config`. The safety evaluators and `GroundednessProEvaluator` use Microsoft's hosted Foundry Evaluation service instead and don't need a deployment.
+
+1. In your hub or project, open **Deployments** or **Models + endpoints**, depending on your classic portal layout.
+1. Select **+ Deploy model** > **Deploy base model**.
+1. Choose a chat-capable model that is available in your region and supported by your quota, such as `gpt-4o` or `gpt-4o-mini`.
+1. Give the deployment a name that you'll reuse in the workshop `.env` file (for example, `gpt-4o`). Note the deployment name, the Azure OpenAI endpoint, and the API version—you set these as `AZURE_OPENAI_DEPLOYMENT`, `AZURE_OPENAI_ENDPOINT`, and `AZURE_OPENAI_API_VERSION` later.
+1. Keep the default tokens-per-minute (TPM) allocation, or adjust it only if your subscription quota requires a smaller value.
+1. Wait for the deployment status to show **Succeeded**.
+
+For more information, see [Create and deploy an Azure OpenAI in Microsoft Foundry Models resource (classic)](/azure/foundry-classic/openai/how-to/create-resource#deploy-a-model) and [Manage Azure OpenAI in Microsoft Foundry Models quota (classic)](/azure/foundry-classic/openai/how-to/quota#assign-quota).
 
 ## Access workshop code
 
@@ -46,11 +41,11 @@ A development container environment is available with all dependencies required 
 GitHub Codespaces runs a development container managed by GitHub with Visual Studio Code for the Web as the browser-based user interface. For the most straightforward development environment, use GitHub Codespaces so that you have the correct developer tools and dependencies preinstalled to complete this training module.
 
 > [!IMPORTANT]
-> All GitHub accounts can use Codespaces for up to 60 hours free each month with two core instances.
+> Personal GitHub accounts include 120 core-hours and 15 GB of storage of free Codespaces usage each month, which is the equivalent of 60 hours of clock time on the default 2-core machine. For current limits, see [About billing for GitHub Codespaces](https://docs.github.com/billing/concepts/product-billing/github-codespaces).
 
 1. Create a new GitHub Codespace using the `https://codespaces.new/Azure-Samples/RAI-workshops?quickstart=1` template.
 
-    :::image type="content" border="true" source="https://github.com/codespaces/badge.svg" alt-text="Open in GitHub Codespaces" link="https://codespaces.new/Azure-Samples/aacs-workshops?quickstart=1?azure-portal=true":::
+    :::image type="content" border="true" source="https://github.com/codespaces/badge.svg" alt-text="Open in GitHub Codespaces" link="https://codespaces.new/Azure-Samples/RAI-workshops?quickstart=1":::
 
 1. On the **Create codespace** page, review the codespace configuration settings, then select **Create new codespace**.
 
@@ -71,5 +66,7 @@ The Dev Containers extension for Visual Studio Code requires Docker to be instal
 1. Use the **Command Palette** or the automatic prompt to **Reopen in Container**.
 
 The remaining exercises in this project take place in the context of this development container. Project files are available in the [Evaluation and Data Generation Workshop](https://github.com/Azure-Samples/RAI-workshops/) folder.
+
+The notebooks install any missing Python packages and prompt you to populate the workshop `.env` file with your project and deployment values.
 
 ---
