@@ -24,6 +24,10 @@ One of the benefits of open source is that issues and vulnerabilities are public
 
 Cybercriminals conduct detailed reconnaissance of applications, searching the code for flaws they might exploit. Any flaw that's previously unknown to the application owner and left unpatched is considered a zero-day vulnerability. When a cybercriminal finds a zero-day vulnerability, they won’t publicize it. Instead, they’ll take full advantage. For example, a cybercriminal might have noticed that a banking app has a zero-day vulnerability, and used this to quietly steal information and money from application users. The zero-day name stems from the number of days (zero) a developer has to fix the vulnerability from when a vulnerability is identified to when it's exploited.
 
+### Supply chain attacks
+
+A supply chain attack happens when a cybercriminal compromises a trusted piece of software before it reaches you. Most applications are built using code libraries and tools from many different sources. If an attacker manages to insert malicious code into one of those sources, every application that uses it can become compromised. Because the software comes from a source that you trust, these attacks are especially hard to detect. Organizations protect against supply chain attacks by verifying the integrity of the software they use and monitoring for unexpected changes in their tools and libraries.
+
 ## Browser-based threats
 
 Browsers may be our gateway to the internet, but they're also applications. That's why most threats that you’ll come across manifest themselves through browser activity. Here's two of the more common browser-based threats:

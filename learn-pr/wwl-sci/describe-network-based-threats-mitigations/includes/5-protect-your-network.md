@@ -26,4 +26,4 @@ A virtual private network (VPN) serves as a dedicated and secure connection, bet
 
 ### Encrypt your wireless network
 
-Whether you're setting up a wireless access point in your home or place of work, enabling encryption is critical to protecting against attacks. Wi-Fi Protected Access 2 (WPA2) is the most commonly used Wi-Fi encryption method. It uses the Advanced Encryption Standard (AES) to secure the connection.
+Whether you're setting up a wireless access point in your home or place of work, enabling encryption is critical to protecting against attacks. Wi-Fi Protected Access (WPA) is a security standard used to encrypt wireless connections. WPA2 has been widely used for many years and uses the Advanced Encryption Standard (AES) to secure the connection. The newer standard, WPA3, provides stronger protection and is required on all modern Wi-Fi devices. WPA3 makes it harder for attackers to guess your Wi-Fi password, even if they capture your wireless traffic. When you configure a wireless access point, select WPA3 if it's available, or use a WPA2/WPA3 combined mode to support both newer and older devices.
