@@ -4,6 +4,7 @@ title: Foundations of Agentic AI in GitHub
 metadata:
   title: Foundations of Agentic AI in GitHub
   description: Explore how agentic AI changes the developer role from only writing code to guiding, reviewing, and validating systems that can take action across the SDLC. Understand GitHub's role as the system of record and control plane for safe, traceable agent workflows.
+  author: camihmerhar
   ms.author: camhernandez
   ms.date: 04/24/2026
   ms.update-cycle: 180-days
