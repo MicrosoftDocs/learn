@@ -13,8 +13,6 @@ To start, the engineer selects **Plan** from the agents dropdown in the Chat vie
 
 The Plan agent examines your workspace for existing Bicep files, modules, or parameter files. It then generates a plan that might include:
 
-[![GitHub Plan Agent Planning](../media/agent-planning-diagram.png)]
-
 1. Create a `main.bicep` file with the virtual network resource and three subnet definitions.
 2. Create an `nsg-web.bicep` module with rules allowing inbound ports 80 and 443 from the internet.
 3. Create an `nsg-app.bicep` module with rules allowing inbound traffic only from the web subnet address range.
