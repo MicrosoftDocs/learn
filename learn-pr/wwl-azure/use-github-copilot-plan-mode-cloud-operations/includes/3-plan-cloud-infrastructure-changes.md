@@ -1,7 +1,7 @@
 ## Scenario: secure a virtual network deployment
 
 > [!NOTE]
-> The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They are examples of effective prompt patterns that demonstrate the kind of context the agent needs — they are not step-by-step instructions to follow.
+> The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They're examples of effective prompt patterns that demonstrate the kind of context the agent needs. They're not step-by-step instructions to follow.
 
 Suppose a team receives a request to deploy a new Azure virtual network with specific security requirements. The virtual network needs three subnets for web, application, and data tiers, each with its own network security group (NSG). Before writing any infrastructure code, the engineer wants a clear plan that covers all the components and their relationships.
 
@@ -30,13 +30,13 @@ Priority: High
 
 ## Iterate on the plan
 
-After reviewing the initial plan, the engineer notices it doesn't account for diagnostics logging. A follow-up prompt to address this might look like:
+After reviewing the initial plan, the engineer notices it doesn't account for diagnostics logging. A follow-up prompt to address this missed item, might look like:
 
 ```text
 Add NSG flow logs for each network security group, storing them in an existing storage account. Also include a Log Analytics workspace for traffic analytics.
 ```
 
-The Plan agent updates the plan to include additional implementation steps for NSG flow logs and traffic analytics configuration.
+The Plan agent updates the plan to include more implementation steps for NSG flow logs and traffic analytics configuration.
 
 ## Scenario: automate resource group tagging compliance
 

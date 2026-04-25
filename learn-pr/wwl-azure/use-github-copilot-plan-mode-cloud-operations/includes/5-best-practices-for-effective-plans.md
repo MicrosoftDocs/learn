@@ -18,9 +18,9 @@ The more context you provide, the more detailed and actionable the plan becomes.
 
 ## Use custom instructions to encode team standards
 
-Operations teams typically follow established standards for naming, tagging, security, and coding conventions. Instead of repeating these standards in every prompt, a `.github/copilot-instructions.md` file in the repository root provides a way to communicate those standards to the Plan agent automatically — the agent reads this file as part of its context-gathering phase before generating any plan.
+Operations teams typically follow established standards for naming, tagging, security, and coding conventions. Instead of repeating these standards in every prompt, a `.github/copilot-instructions.md` file in the repository root provides a way to communicate those standards to the Plan agent automatically. The agent reads this file as part of its context-gathering phase before generating any plan.
 
-The content of the file is specific to each team's own standards and conventions. The following is an illustrative example of what such a file might contain. It is not a template to copy directly — the actual values should reflect your organization's real naming schemes, tag requirements, and tooling decisions:
+The content of the file is specific to each team's own standards and conventions. An illustrative example of what such a file might contain is below. It isn't a template to copy directly. The actual values should reflect your organization's real naming schemes, tag requirements, and tooling decisions:
 
 ```markdown
 ## Infrastructure Standards
@@ -39,7 +39,7 @@ The content of the file is specific to each team's own standards and conventions
 - Administrative access requires just-in-time (JIT) activation
 ```
 
-When the Plan agent reads this file, it incorporates the defined standards into every plan it generates for that workspace, so naming conventions, tagging requirements, and security rules are applied consistently without needing to be restated in each prompt.
+When the Plan agent reads this file, it incorporates the defined standards into every plan it generates for that workspace. This ensures that naming conventions, tagging requirements, and security rules apply consistently across all generated plans—without requiring you to restate them in each prompt.
 
 ## Iterate before implementing
 

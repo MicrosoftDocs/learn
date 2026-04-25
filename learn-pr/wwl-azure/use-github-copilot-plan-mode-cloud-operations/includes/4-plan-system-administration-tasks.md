@@ -1,9 +1,9 @@
 ## Scenario: automate Active Directory user provisioning
 
 > [!NOTE]
-> The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They are examples of effective prompt patterns that demonstrate the kind of context the agent needs — they are not step-by-step instructions to follow.
+> The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They're examples of effective prompt patterns that demonstrate the kind of context the agent needs. They're not step-by-step instructions to follow.
 
-A team manages a Windows Server environment with Active Directory Domain Services (AD DS). New employee onboarding requires creating user accounts, assigning group memberships, setting up home directories, and configuring email. Doing this manually is time-consuming and error-prone.
+A team manages a Windows Server environment with Active Directory Domain Services (ADDS). New employee onboarding requires creating user accounts, assigning group memberships, setting up home directories, and configuring email. Doing all these tasks manually, is time-consuming and error-prone.
 
 An engineer starting this automation would describe the full scope of the task to the Plan agent in a single prompt. An example of how that prompt might be structured:
 
@@ -69,7 +69,7 @@ The plan might include:
 7. Implement an alert function that sends email via `Send-MailMessage` and writes to the event log.
 8. Create a scheduled task registration script to run the monitor at specified intervals.
 
-## Tips for writing effective system administration prompts
+## Tips for effective system administration prompting
 
 When you use the Plan agent for system administration tasks, consider including:
 
