@@ -13,13 +13,7 @@ To start, the engineer selects **Plan** from the agents dropdown in the Chat vie
 
 The Plan agent examines your workspace for existing Bicep files, modules, or parameter files. It then generates a plan that might include:
 
-<!-- IMAGE PLACEHOLDER: Portal or UI screenshot
-Alt text: The VS Code Chat view showing a Plan agent session with a generated infrastructure plan for a virtual network deployment.
-Suggested source: Custom screenshot needed
-Capture instructions: Open VS Code, use Plan agent with the virtual network prompt, and capture the chat output showing the generated plan steps.
-Suggested filename: plan-agent-vnet-output.png
-Priority: High
--->
+[![GitHub Plan Agent Planning](../media/agent-planning-diagram.png)]
 
 1. Create a `main.bicep` file with the virtual network resource and three subnet definitions.
 2. Create an `nsg-web.bicep` module with rules allowing inbound ports 80 and 443 from the internet.
