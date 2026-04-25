@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-data-ai.use-github-copilot-plan-mode-cloud-operations.best-practices-for-effective-plans
+title: Best practices for effective plans
+metadata:
+  title: "Best Practices for Effective Plans"
+  description: "Discover best practices for writing effective prompts, iterating on plans, and choosing implementation strategies with GitHub Copilot plan mode."
+  ms.date: 04/25/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-best-practices-for-effective-plans.md)]
