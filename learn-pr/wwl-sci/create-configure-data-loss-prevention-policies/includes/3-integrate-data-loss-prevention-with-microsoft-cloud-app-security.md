@@ -1,4 +1,4 @@
-Connector policies in Power Platform don't help when sensitive data lives in non-Microsoft cloud apps like Box, Dropbox, or Google Workspace. To detect and protect sensitive content in those apps, you extend DLP coverage through Microsoft Defender for Cloud Apps.
+Connector policies in Power Platform don't help when sensitive data lives in non-Microsoft cloud apps like Box, Dropbox, or Google Workspace. To detect and protect sensitive content in those apps, you extend data loss prevention (DLP) coverage through Microsoft Defender for Cloud Apps.
 
 Once you connect these apps to Defender for Cloud Apps, you have two options for creating policies. File policies offer cloud-app-specific governance like quarantine and link revocation. Purview DLP policies provide the same rule engine and reporting you use for Exchange and SharePoint.
 
@@ -20,7 +20,7 @@ If you need to protect files in SharePoint Online or OneDrive specifically, use 
 
 ## Enable file monitoring
 
-Defender for Cloud Apps must have file monitoring enabled before it can scan files in connected apps. This setting may already be on in your tenant, but verify before creating file policies:
+Defender for Cloud Apps must have file monitoring enabled before it can scan files in connected apps. This setting might already be on in your tenant, but verify before creating file policies:
 
 1. Navigate to the **Microsoft Defender** portal at [https://security.microsoft.com/](https://security.microsoft.com/?azure-portal=true).
 
@@ -37,7 +37,7 @@ With file monitoring enabled, you're ready to create file policies.
 
 ## Create a DLP policy scoped to Instances
 
-If you prefer centralized reporting through the Purview portal, you can create a DLP policy scoped to connected cloud app instances instead of using file policies. First, connect your non-Microsoft cloud apps to Defender for Cloud Apps. Once connected, those apps appear as selectable instances when you create a DLP policy.
+If you prefer centralized reporting through the Microsoft Purview portal, you can create a DLP policy scoped to connected cloud app instances instead of using file policies. First, connect your non-Microsoft cloud apps to Defender for Cloud Apps. Once connected, those apps appear as selectable instances when you create a DLP policy.
 
 To create the policy:
 
