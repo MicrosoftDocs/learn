@@ -33,24 +33,7 @@ The conductor doesn't perform the actual work. It orchestrates. Think of it as t
 
 Here's how a conductor orchestrates an infrastructure deployment workflow:
 
-```
-Conductor receives: "Deploy a web app with SQL Database and Key Vault"
-    │
-    ├─ Delegate to Requirements agent
-    │   └─ Output: requirements.md (structured requirements)
-    │
-    ├─ Delegate to Architecture agent
-    │   └─ Input: requirements.md → Output: architecture-assessment.md
-    │
-    ├─ Delegate to IaC agent
-    │   └─ Input: architecture-assessment.md → Output: main.bicep + plan.md
-    │
-    ├─ Delegate to Deploy agent
-    │   └─ Input: main.bicep → Output: deployment-summary.md
-    │
-    └─ Delegate to Documentation agent
-        └─ Input: all prior artifacts → Output: runbook.md
-```
+![Conductor orchestration pattern showing a top-level agent delegating tasks to specialized agents in sequence, with each agent's output becoming the next agent's input.](/media/conductor-orchestration.png)
 
 ## Artifact-based communication
 
@@ -67,16 +50,16 @@ A typical artifact folder for an infrastructure deployment might look like this:
 
 ```
 project/
-├── requirements.md              ← Requirements agent
-├── architecture-assessment.md   ← Architecture agent
-├── architecture-diagram.png     ← Diagrammer agent
-├── implementation-plan.md       ← IaC agent
+├── requirements.md
+├── architecture-assessment.md
+├── architecture-diagram.png
+├── implementation-plan.md
 ├── infra/
-│   ├── main.bicep               ← IaC agent
-│   └── main.bicepparam          ← IaC agent
-├── deployment-summary.md        ← Deploy agent
+│   ├── main.bicep
+│   └── main.bicepparam
+├── deployment-summary.md
 └── docs/
-    └── runbook.md               ← Documentation agent
+    └── runbook.md
 ```
 
 ## Real-world ops scenarios for agentic DevOps
