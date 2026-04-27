@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-power-bi
+title: Apply sensitivity labels in Power BI
+metadata:
+  title: Apply sensitivity labels in Power BI
+  description: "Apply sensitivity labels in Power BI"
+  ms.date: 04/16/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/apply-sensitivity-labels-power-bi.md)]

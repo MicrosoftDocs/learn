@@ -1,10 +1,10 @@
-In this module so far, we've explored ways to think about, measure, and interact with our systems' reliability. But there's also a way that reliability interacts with _us_: alerts. It's easy to set up Azure Monitor and other tools to send you alerts based on various metrics and signals, including the SLIs and SLOs we've seen before. Azure can also send alerts based on service issues through the [Azure Service Health](https://azure.microsoft.com/features/service-health/) feature.
+In this module so far, we've explored ways to think about, measure, and interact with our systems' reliability. But there's also a way that reliability interacts with _us_: alerts. It's easy to set up Azure Monitor and other tools to send you alerts based on various metrics and signals, including the SLIs and SLOs we've seen before. Azure can also send alerts based on service issues through the [Azure Service Health](/azure/service-health/overview) feature.
 
 With the power of easily sending out alerts comes a potential peril. And that's where the word _sustainably_ comes into the picture in the SRE definition we've seen before:
 
 *Site Reliability Engineering is an engineering discipline devoted to helping organizations sustainably achieve the appropriate level of reliability in their systems, services, and products.*
 
-Alerts are designed to notify you when there's a problem with your systems. However, when alerts are improperly configured, it can undermine your goal of creating a sustainable operations practice. It's possible to derail all the effort you've put into bringing SLIs and SLOs into your organization if it translates into a hailstorm of alerts for your personnel. _Alert fatigue_ is a well know ailment in the operations community. This unit aims to help you prevent it from occurring in your organization.
+Alerts are designed to notify you when there's a problem with your systems. However, when alerts are improperly configured, it can undermine your goal of creating a sustainable operations practice. It's possible to derail all the effort you've put into bringing SLIs and SLOs into your organization if it translates into a hailstorm of alerts for your personnel. _Alert fatigue_ is a well-known ailment in the operations community. This unit aims to help you prevent it from occurring in your organization.
 
 A key contributor to alert fatigue is alerts that aren't actionable. Let's learn how to avoid creating them.
 
@@ -47,3 +47,20 @@ Let’s look at some elements that an actionable alert should always include so 
 - **What are the next steps to take?** If possible, the alert should include what the person responding should do next, even if that's a pointer to a troubleshooting guide or some other documentation to find help in diagnosing and remediating this problem.
 
 Including such helpful context and working to make your alerts actionable can make operations practices more sustainable and make responding to those alerts easier.
+
+## Putting it into practice
+
+You can create alerts in Azure Monitor based on the same KQL queries you've already learned. For example, using the SLI query from our previous unit, you could create a **log search alert rule** that fires when your availability drops below the SLO threshold. A simplified version of the query to power such an alert might look like this:
+
+```kusto
+AppRequests
+| where TimeGenerated > ago(1h)
+| summarize Succeed = sumif(ItemCount, Success == true), Total = sum(ItemCount)
+| where Total > 0
+| extend SLI = todouble(Succeed) * 100.00 / Total
+| where SLI < 80.0
+```
+
+This query checks whether your availability over the last hour has dropped below your 80% SLO target. The `where Total > 0` line avoids dividing by zero during periods when no requests arrived in the evaluation window. When creating the alert rule in Azure Monitor, you'd specify this query, set how often it should run (for example, every 5 minutes), and configure an **action group** — the people or systems to notify when the alert fires. For ongoing conditions, consider making the rule **stateful** by turning on **Automatically resolve alerts** so that it fires when the condition is first met and resolves when the condition clears. For more details, see [Create or edit a log search alert rule](/azure/azure-monitor/alerts/alerts-create-log-alert-rule).
+
+Remember: the goal isn't just to have alerts, but to have *good* alerts. Every alert your team receives should lead to an actionable outcome. If you find that an alert routinely fires without anyone needing to take action, it's a candidate for removal or conversion to a log entry.

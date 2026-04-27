@@ -4,12 +4,12 @@ title: "What is software deployment?"
 metadata:
   title: "What is software deployment?"
   description: "What is software deployment?"
-  ms.date: 06/07/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
+  ms.contributors: orthomas-04172026
 durationInMinutes: 3
 content: |
   [!include[](includes/2-definition.md)]
@@ -17,15 +17,15 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What is one of the characteristics of the “epic deployment?”'
+  - content: "What is one of the characteristics of the \"epic deployment?\""
     choices:
     - content: "It's fast."
       isCorrect: false
-      explanation: 'Epic deployments usually take a considerable amount of time because of their size.'
+      explanation: "Epic deployments usually take a considerable amount of time because of their size."
     - content: "It's repeatable."
       isCorrect: false
       explanation: "Because they're done so infrequently, there's only a small amount of effort put into repeatability."
     - content: "It's complex."
       isCorrect: true
       explanation: "Because of the size and infrequency, they're often complex."
-
+

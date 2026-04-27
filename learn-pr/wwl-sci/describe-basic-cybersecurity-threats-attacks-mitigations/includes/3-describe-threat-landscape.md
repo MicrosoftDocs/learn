@@ -36,7 +36,9 @@ Security breaches come in different forms, including the following:
 
 It's common to think about security breaches as exploiting some flaw or vulnerability in a technology service or piece of equipment. Likewise, you might believe that security breaches only happen because of vulnerabilities in technology. But that’s not the case. Attackers can use social engineering attacks to exploit or manipulate users into granting them unauthorized access to a system.
 
-In social engineering, impersonation attacks happen when an unauthorized user (the attacker), aims to gain the trust of an authorized user by posing as a person of authority to access a system from some nefarious activity. For example, a cybercriminal might pretend to be a support engineer to trick a user into revealing their password to access an organization’s systems. 
+In social engineering, impersonation attacks happen when an unauthorized user (the attacker), aims to gain the trust of an authorized user by posing as a person of authority to access a system from some nefarious activity. For example, a cybercriminal might pretend to be a support engineer to trick a user into revealing their password to access an organization's systems.
+
+Attackers also use artificial intelligence (AI) tools to make social engineering attacks more convincing. For example, AI can generate phishing emails that are well written, personalized, and free of the spelling or grammar mistakes that used to help identify fakes. AI can also create realistic fake audio or video of a trusted person, such as a manager or coworker, to trick someone into sharing sensitive information or transferring money. Because these AI-enhanced attacks look and sound more legitimate, it's important to verify unexpected requests through a separate, trusted channel before acting on them.
 
 ### Browser attacks
 

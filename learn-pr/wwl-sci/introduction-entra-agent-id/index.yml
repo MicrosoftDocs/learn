@@ -4,7 +4,7 @@ metadata:
   title: Introduction to Microsoft Entra Agent ID
   description: "Learn about Microsoft Entra Agent ID, a specialized identity type designed for AI agents. Understand how agent identities differ from other identity types, which Microsoft products use them, and how to view and manage them in the Microsoft Entra admin center."
   ms.date: 02/09/2026
-  author: wwlpublish
+  author: r-c-stewart
   ms.author: roberts
   ms.topic: module
   ms.service: entra-id

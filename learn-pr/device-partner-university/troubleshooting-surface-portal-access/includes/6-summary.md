@@ -1,0 +1,3 @@
+In this module, you learned how to identify common access and visibility issues for Surface Management Portal and Surface Support Portal, including how to distinguish between portal-specific prerequisite failures and tenant context issues. You validated required roles, enrollment status, and administrative permissions, and learned how these prerequisites differ between the two portals.
+
+You can now validate portal visibility, confirm required prerequisites, and recognize when issues require escalation. You also learned what information is required when escalating unresolved access issues to the appropriate administrator or support channel.

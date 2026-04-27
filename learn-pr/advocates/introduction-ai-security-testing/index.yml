@@ -3,26 +3,28 @@ uid: learn.introduction-to-ai-security-testing
 metadata:
   ms.author: ceperezb
   author: ceperezb
-  ms.date: 03/06/2026  
+  ms.date: 04/24/2026
   ms.update-cycle: 180-days
   title: Introduction to AI security testing
-  description: Introduction to AI security testing
+  description: Learn about AI red teaming, the three categories of AI security testing, and how to plan and execute red teaming exercises for LLMs and AI-enabled applications.
   ms.topic: module
   ms.collection:
-    - TBD
     - ce-advocates-ai-copilot
   ms.service: artificial-intelligence
 title: Introduction to AI security testing
-summary: Overview of the security testing procedures that you can implement in AI systems to increase the security posture of AI environments.
+summary: Learn about AI red teaming, the three categories of AI security testing, and how to plan and execute red teaming exercises for LLMs and AI-enabled applications.
 abstract:  |
-  After completing this module, you'll be able to:
-  - Describe AI red teaming
-  - Understand the three categories of AI red teaming
-  - Plan an AI red teaming exercise
+  After completing this module, you're able to:
+  - Describe what AI red teaming is and how it differs from traditional security testing
+  - Identify the three categories of AI red teaming and the skills each requires
+  - Plan an AI red teaming exercise, including team composition and testing methodology
+  - Describe how automated red teaming tools complement manual testing
 prerequisites:   |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Fundamental security concepts
-  - Fundamental AI concepts
+  - Fundamental security concepts (for example, authentication, access control, encryption)
+  - Fundamental AI concepts (for example, models, training, inference)
+  - The types of AI attacks covered in the [Fundamentals of AI security](/training/modules/fundamentals-of-ai-security/) module
+  - The security controls covered in the [AI security controls](/training/modules/ai-security-controls/) module
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -31,10 +33,11 @@ roles:
 products:
 - azure
 units:
+- learn.introduction-to-ai-security-testing.introduction
 - learn.introduction-to-ai-security-testing.what-is-ai-red-teaming
 - learn.introduction-to-ai-security-testing.the-three-categories-of-ai-red-teaming
 - learn.introduction-to-ai-security-testing.planning-ai-red-teaming
 - learn.introduction-to-ai-security-testing.knowledge-check
 - learn.introduction-to-ai-security-testing.summary
 badge:
-  uid: learn.introduction-to-ai-security-testing-badge
+  uid: learn.introduction-to-ai-security-testing.badge

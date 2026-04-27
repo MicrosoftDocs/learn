@@ -12,7 +12,7 @@ While people often talk about Spark as a single thing, it is actually an ecosyst
 
 - **Spark SQL** lets you work with structured data using a language most analysts already know: SQL. It also integrates with external data sources like Hive, Parquet, and JSON.
 
-- **Spark Streaming** allows you to process data in near real time, which is useful for applications like fraud detection or monitoring system logs.
+- **Spark Structured Streaming** allows you to process data in near real time using the same DataFrame API used for batch processing. This unified approach is useful for applications like fraud detection or monitoring system logs.
 
 - **MLlib** is Spark’s machine learning library. It provides scalable implementations of algorithms for classification, clustering, regression, and recommendation.
 

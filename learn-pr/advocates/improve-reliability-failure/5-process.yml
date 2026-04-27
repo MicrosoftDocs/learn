@@ -4,12 +4,12 @@ title: "The post-incident review process"
 metadata:
   title: "The post-incident review process"
   description: "The post-incident review process"
-  ms.date: 04/19/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
+  ms.contributors: orthomas-20260417
 durationInMinutes: 7
 content: |
   [!include[](includes/5-process.md)]
@@ -17,29 +17,29 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What is the first step to begin a post-review process?'
+  - content: "What is the first step to begin a post-review process?"
     choices:
-    - content: 'Write down everything you can remember about the incident.'
+    - content: "Write down everything you can remember about the incident."
       isCorrect: false
-      explanation: 'We need to gather the data, especially the conversation, first.'
-    - content: 'Gather the data, including the conversation and context.'
+      explanation: "We need to gather the data, especially the conversation, first."
+    - content: "Gather the data, including the conversation and context."
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'Schedule a meeting room for the discussion.'
+      explanation: "Correct."
+    - content: "Schedule a meeting room for the discussion."
       isCorrect: false
-      explanation: 'Though meeting space may be at a premium, gather the data first.'
-    - content: 'Meet with the engineering manager associated with the service that had a problem.'
+      explanation: "Though meeting space may be at a premium, gather the data first."
+    - content: "Meet with the engineering manager associated with the service that had a problem."
       isCorrect: false
-      explanation: 'You need to gather the data first, and all stakeholders can be a part of that process.'
+      explanation: "You need to gather the data first, and all stakeholders can be a part of that process."
 
-  - content: 'Which tool can help us retrieve a Teams conversation for the post-incident review?'
+  - content: "Which tool can help us retrieve a Teams conversation for the post-incident review?"
     choices:
-    - content: 'Microsoft Graph API'
+    - content: "Microsoft Graph API"
       isCorrect: true
-      explanation: 'Correct, we can query this API to retrieve Teams conversations.'
-    - content: 'Kusto Query Language'
+      explanation: "Correct, we can query this API to retrieve Teams conversations."
+    - content: "Kusto Query Language"
       isCorrect: false
-      explanation: 'KQL does not help us retrieve a Teams conversation.'
-    - content: 'Azure Monitor'
+      explanation: "KQL doesn't help us retrieve a Teams conversation."
+    - content: "Azure Monitor"
       isCorrect: false
-      explanation: 'Azure Monitor does not help us retrieve a Teams conversation.'
+      explanation: "Azure Monitor doesn't help us retrieve a Teams conversation."

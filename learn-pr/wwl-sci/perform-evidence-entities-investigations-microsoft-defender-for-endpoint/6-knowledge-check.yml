@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/28/2023
+  ms.date: 04/22/2026
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "Associated alerts"
       isCorrect: true
-      explanation: "Correct. This is provided."
+      explanation: "Correct. The associated alerts are provided."
     - content: "Security groups"
       isCorrect: false
-      explanation: "Incorrect.  The security groups the user accounts belongs isn't shown."
+      explanation: "Incorrect. The security groups the user accounts belongs isn't shown."
     - content: "Threat hunt ID"
       isCorrect: false
-      explanation: "Incorrect.  The Threat hunt ID isn't shown."
+      explanation: "Incorrect. The Threat hunt ID isn't shown."

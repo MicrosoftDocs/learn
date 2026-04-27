@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-ontology-fabric-iq.exercise-visualize-ontology
+title: Exercise - Visualize ontology data with Microsoft Fabric IQ
+metadata:
+  title: Exercise - Visualize Ontology Data with Microsoft Fabric IQ
+  description: Practice visualizing entity instances, exploring relationship graphs, and seeing data through property charts and visualizations in Microsoft Fabric IQ.
+  ms.date: 04/13/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-query-ontology.md)]

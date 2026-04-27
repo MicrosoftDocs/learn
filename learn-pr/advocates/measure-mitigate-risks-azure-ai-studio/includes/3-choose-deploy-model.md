@@ -1,55 +1,49 @@
-Selecting a model from the Model Catalog is the first step towards creating the Contoso Camping Store chatbot. The model catalog in Azure AI Foundry is the hub to discover and use a wide range of models for building generative AI applications. The model catalog features hundreds of models across model providers such as Azure OpenAI Service, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained.
+Selecting a model from the Model Catalog is the first step toward creating the Contoso Camping Store chatbot. The model catalog in Azure AI Foundry is the central place to discover, compare, and deploy models for generative AI applications. Exact collection labels and available models can change over time, so focus on the model card, deployment options, benchmark data when published, and regional availability when you make your choice.
 
 :::image type="content" source="../media/model-catalog.png" alt-text="A screenshot of the model catalog within Azure AI Foundry. Model suggestions are provided along the top followed by filters. A list of models available display under the filters." lightbox="../media/model-catalog.png":::
 
-The model catalog organizes models into three types of collections:
-- Curated by Azure AI
-- Azure OpenAI models exclusively available on Azure
-- Open models from the Hugging Face hub
-
-You can deploy some models in the **Curated by Azure AI** and **Open models from the Hugging Face hub** collections with a managed compute option. Some models are available to be deployed through serverless APIs with pay-as-you-go billing.
+The model catalog includes Azure OpenAI models together with a wide range of partner and community models. Some models support serverless deployment, some support managed compute, and some support both. For more information, see [Microsoft Foundry Models overview](/azure/foundry/concepts/foundry-models-overview).
 
 ## View model card
 
-There’s various factors to consider when choosing a model such as model performance, relevance, and cost, to name a few. You can learn more about the models within the Model Catalog by reviewing the model’s respective model card. Let’s look at the model cards for both **gpt-4o** and **Llama-2-70b-chat**.
+There are various factors to consider when choosing a model, such as performance, relevance, cost, deployment options, and regional availability. You can learn more about each model by reviewing its model card. Let's look at the model cards for both **gpt-4o** and a Meta Llama chat model.
 
 1. Within Azure AI Foundry, navigate to the **Model Catalog**.
-1. Apply the following filters:
-    - Collections > Azure OpenAI Service
-    - Inference tasks > Chat completion
+1. Search for **gpt-4o**, and then select the model to open its model card.
+1. Review the model card. Pay particular attention to the model version, supported endpoints, region availability, context limits, and any benchmark data that's available.
 
-1. Select the **gpt-4o** model to view its model card.
+The model card for **gpt-4o** helps you confirm that the model supports chat completion and gives you the information you need before deployment.
 
-The model card for the **gpt-4o** model provides the model’s description, its various versions, and further descriptions about each model version which includes the extent of its training data and token limitations.
-
-Let’s now look at a model provided as a Model as a Service (MAAS) offering to compare the difference in information available on a model card.
+Let's now look at a model provided as a serverless deployment offering to compare the difference in information available on a model card.
 
 1. Return to the **Model Catalog**.
-1. In the search bar, enter: **Llama-2-70b-chat**
-1. Select the **Llama-2-70b-chat** model to view its model card.
+1. In the search bar, enter: **Llama-3.3-70B-Instruct**.
+1. Select the **Llama-3.3-70B-Instruct** model to view its model card. If that specific model isn't available in your region, choose another currently available chat model from the same provider.
 
-The model card for the **Llama-2-70b-chat** model has more information about the model, including its cost, information about the training data, and evaluation comparisons across other Llama models.
+The model card for **Llama-3.3-70B-Instruct** has more information about the model, including its license, deployment options, training data, and benchmark comparisons across related models.
+
+> [!NOTE]
+> Model availability in the catalog changes over time. If a specific model isn't listed, choose another model from the same provider that's currently available in your region.
 
 ## Compare models
 
-While the model card provides more details about the available models, comparing your potentially chosen models gets you one step closer to choosing one (or some) for deployment. The **Model Benchmarks** section of Azure AI Foundry provides a single interface to compare benchmarks across models and datasets available in the industry to assess which one meets your business scenario. You're using a **GPT** chat completion model to create the Contoso Camping Store chatbot. However, let’s compare some of the **GPT** chat completion models to analyze how each model scores differently across accuracy, coherence, groundedness, fluency, relevance, and GPT Similarity.
+While the model card provides detailed information about each model, comparing candidate models helps you weigh tradeoffs such as quality, safety, cost, and throughput before you deploy. You're using an Azure OpenAI chat completion model to create the Contoso Camping Store chatbot, so let's compare two current Azure OpenAI chat models.
 
-:::image type="content" source="../media/model-benchmarks.png" alt-text="A screenshot of the model benchmarks page within the Azure AI Foundry. There is a graph on the page that compares 2 models." lightbox="../media/model-benchmarks.png":::
+:::image type="content" source="../media/model-benchmarks.png" alt-text="A screenshot of the model benchmarks page within the Azure AI Foundry. There's a graph on the page that compares 2 models." lightbox="../media/model-benchmarks.png":::
 
 1. Return to the **Model Catalog**.
-1. In the **Models** filter bar, select **Compare models**.
+1. If your portal shows **Compare models**, select it. If it shows **View leaderboard** instead, open the leaderboard and select models from there.
 
 :::image type="content" source="../media/compare-models.png" alt-text="A screenshot of the Model Catalog filter bar. On the far right is the Compare models button. The Compare models button is highlighted in red." lightbox="../media/compare-models.png":::
 
-1. In the **Selected model** section, click the **X** to remove any of the non-GPT models.
-1. If no GPT models are listed, select **Model to compare**.
-1. On the **Select a model** screen, search for and select the following GPT models:
-    1. gpt-4o
-    1. gpt-35-turbo
-1. View how each model scores in comparison to the various datasets. Hover over a point in the graph to view the score for the model.
-1. Modify the **X-axis** and **Y-axis** options to change the comparison metrics.
+1. Compare **gpt-4o** with **gpt-4o-mini**. If either model isn't available in your region, compare two Azure OpenAI chat completion models that are available to you.
+1. Review the published benchmark information for quality, safety, cost, and throughput.
+1. Open the **Benchmarks** tab or side-by-side comparison view to inspect the metrics in more detail.
 
-Across all comparisons, for each metric, **gpt-4o** has the highest score. Therefore, let’s use **gpt-4o** as the model for the Contoso Camping Store chatbot.
+> [!NOTE]
+> Not every model has published benchmark data. If a model doesn't have a **Benchmarks** tab, Microsoft hasn't published benchmark results for that model yet. Public benchmarks are useful for narrowing down options, but you should still test with your own prompts and data. For more information, see [Compare models using the model leaderboard](/azure/foundry/how-to/benchmark-model-in-catalog).
+
+Across most common chat scenarios, **gpt-4o** is a strong choice for this guided project, so let's deploy it.
 
 ## Deploy a model
 
@@ -58,29 +52,38 @@ You can deploy a model from either the model card or your project’s deployment
 :::image type="content" source="../media/deploy-model.png" alt-text="A screenshot of the model card for the gpt-4o model in Azure AI Foundry. The deploy button is highlighted." lightbox="../media/deploy-model.png":::
 
 > [!NOTE]
-> For Azure OpenAI models, the default quota for models varies by model and region. Certain models might only be available in some regions. Deploying consumes quota that is assigned to your subscription on a per-region, per-model basis in units of Tokens-per-Minute (TPM). When you sign up for Azure AI Foundry, you receive default quota for most of the available models. Then, you assign TPM to each deployment as it is created, thus reducing the available quota for that model by the amount you assigned. You can continue to create deployments and assign them TPMs until you reach your quota limit.
+> Model availability and quota vary by model and region. Before deployment, verify that your chosen model is available in your target region and that you have enough quota to deploy it. If **gpt-4o** isn't available to you, use another Azure OpenAI chat completion model such as **gpt-4o-mini**, and then use that same deployment throughout the rest of the module. For more information, see [Create and deploy an Azure OpenAI in Microsoft Foundry Models resource (classic)](/azure/foundry-classic/openai/how-to/create-resource#deploy-a-model) and [Manage Azure OpenAI in Microsoft Foundry Models quota (classic)](/azure/foundry-classic/openai/how-to/quota).
 
-1. Within the **Selected model** section of the **Assess model performance with evaluated metrics** page, select the **gpt-4o** model.
-1. Select the **Overview** tab.
-1. On the model card, select **Deploy**.
-1. For **Deployment name**, enter: *gpt-4o*.
-1. In the **Deployment details** section, select **Customize**.
-1. Set the **Tokens per Minute Rate Limit** slider to 100K.
+1. From the model card for the Azure OpenAI chat model you selected (for example, **gpt-4o**), select **Deploy**.
+1. For **Deployment name**, enter: *gpt-4o*, or use another clear name that matches the Azure OpenAI chat model you selected. Reuse that same chat deployment throughout the remaining units.
+1. Review the **Deployment type** and keep the default option unless your environment requires a different one.
+1. If **Tokens per Minute Rate Limit** is configurable, keep the default value or choose any value that fits your available quota. If the field isn't shown in your portal, continue with the other defaults. You can change the rate limit later from **Quota**.
 1. Select **Deploy**.
 
 > [!NOTE]
-> For Azure OpenAI models such as GPT-4o, Azure AI Foundry provides a safety filter during the deployment to ensure responsible use of AI. A safety filter allows moderation of harmful and sensitive content to promote the safety of AI-enhanced applications.
+> Azure OpenAI deployments start with the default content filter, which blocks harmful prompt and completion content at the **medium** severity threshold across the four core harm categories (hate, sexual, violence, and self-harm) for both prompts and completions. **Prompt shields for direct attacks** and **protected material detectors** are also on by default, but **Prompt shields for indirect attacks** are off by default. Because this chatbot uses retrieved product documents, you'll enable indirect-attack protection later with a custom content filter. For more information, see [Configure content filters](/azure/ai-foundry/openai/how-to/content-filters) and [Default Guardrail policies for Azure OpenAI](/azure/ai-foundry/openai/concepts/default-safety-policies).
 
-Azure AI Foundry also offers model monitoring for deployed models. Model monitoring for LLMs uses the latest GPT language models to monitor and alert when the outputs of a model perform poorly against the set thresholds of generation safety and quality. For example, you can configure a monitor to evaluate how well the model's generated answers align with information from the input source (groundedness). The monitor could also evaluate how closely the generated answer matches a ground-truth sentence or document (similarity).
+## Deploy an embedding model
+
+The next unit creates a vector index from the Contoso Camping Store product files. Vector indexes require an **embedding model** to convert your text into vectors at indexing and query time, so deploy one now in the same project.
+
+1. Return to the **Model Catalog**.
+1. Search for and select an Azure OpenAI embedding model such as **text-embedding-3-large** (recommended) or **text-embedding-3-small**. If the `text-embedding-3` models aren't available in your region or subscription, use another available embedding model, such as **text-embedding-ada-002**.
+1. Select **Deploy**, keep the default deployment name suggested by the portal or choose another clear name, and then select **Deploy**.
+
+> [!NOTE]
+> The embedding deployment doesn't need a custom content filter for this module - the chat deployment is what answers user prompts. You'll use the embedding deployment when vectorizing the product data in the next unit. For more information about embedding models in Azure OpenAI, see [Azure OpenAI embeddings models](/azure/ai-foundry/openai/concepts/models#embeddings).
+
+Azure AI Foundry also offers monitoring and evaluation features that help you measure model quality and safety after deployment. For more information, see [Run evaluations from the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-generative-ai-app).
 
 ## Chat with a deployed model in the chat playground
 
-In the Azure AI Foundry Chat playground, you can observe how your model responds with and without your data. Now that the **gpt-4o** model is deployed, let’s pass some prompts into the chat to see how the model currently responds both about general facts and towards questions about Contoso products.
+In the Azure AI Foundry chat playground, you can observe how your model responds with and without your data. Now that your Azure OpenAI chat model is deployed, let's send a few prompts to see how it behaves before the product catalog is connected.
 
 :::image type="content" source="../media/chat-playground.png" alt-text="A screenshot of the chat playground in Azure AI Foundry. Setup for the model prompt displays on the left. The chat window display to the right." lightbox="../media/chat-playground.png":::
 
-1. On the model deployment details page, select **Open in playground**.
-1. Within the chat box on the **Chat playground** page, individually submit the following prompts to observe the models generated response:
+1. On the model deployment details page, select **Open in playground**. If that shortcut isn't shown, open the **Chat playground** manually and select the same chat deployment.
+1. In the chat box on the **Chat playground** page, submit the following prompts one at a time to observe the model's generated response:
 
     | Prompt | Sample Response |
     |----------|----------|
@@ -88,4 +91,4 @@ In the Azure AI Foundry Chat playground, you can observe how your model responds
     |  Recommend a tent that fits a family of 4.    | When recommending a specific tent for a family of four, it's helpful to select one that provides ample space, durability, and comfort. Here's a well-regarded option that has been popular among camping families: **REI Co-op Kingdom 6 Tent**.   |
     |  How much is the Contoso MountainDream Sleeping Bag?    | I'm sorry for any confusion, but as an AI developed by OpenAI, I don't have the capability to access real-time pricing or inventory for products from specific retailers, including any product named "Contoso MountainDream Sleeping Bag."   |
 
-The model isn’t configured yet to answer questions about Contoso Camping Store products. You will later resolve by uploading your data, creating an index, and assigning the index to the model.
+The model isn't configured yet to answer questions about Contoso Camping Store products. You resolve this in the next unit by uploading your data, creating a vector index, and assigning that index to the chat deployment in the playground.

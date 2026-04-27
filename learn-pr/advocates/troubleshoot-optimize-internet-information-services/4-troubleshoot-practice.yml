@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance.troubleshoot-practice"
+title: "Build an operational troubleshooting practice"
+metadata:
+  title: "Build an Operational Troubleshooting Practice"
+  description: "Perform troubleshooting in a repeatable fashion."
+  ms.date: "04/12/2026"
+  author: "Orin-Thomas"
+  ms.author: "orthomas"
+  ms.topic: "unit"
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-troubleshoot-practice.md)]

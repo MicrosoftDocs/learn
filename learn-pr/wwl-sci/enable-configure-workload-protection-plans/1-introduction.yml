@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-configure-workload-protection-plans.introduction
+metadata:
+  title: Introduction
+  description: Introduction to enabling and configuring workload protection plans in Microsoft Defender for Cloud.
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit 
+
+uid: learn.dpu.prepare-windows.configurations
+
+title: Configurations
+
+metadata: 
+
+  title: Configurations
+
+  description: This content is part of the "Prepare for Windows 11" module. 
+
+  ms.date: 01/01/2026
+
+  author: Stephanie-Rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit 
+
+durationInMinutes: 5
+
+content: | 
+
+  [!include[](includes/7-configurations.md)] 

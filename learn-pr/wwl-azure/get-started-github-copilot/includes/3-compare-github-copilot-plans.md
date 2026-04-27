@@ -2,30 +2,34 @@ GitHub Copilot provides developers with an AI pair programmer that works with al
 
 GitHub Copilot is available as an extension for Visual Studio Code, Visual Studio, JetBrains IDEs, Vim/Neovim, Eclipse, and Xcode.
 
+> Note: Plan details and trial availability may change. For current plan options, features, and usage limits, see the official Copilot plans page: https://docs.github.com/en/copilot/get-started/plans
+
 ## GitHub Copilot subscription plans
 
 GitHub offers several plans for GitHub Copilot, depending on your needs and whether you're using GitHub Copilot as an individual or as part of an organization or enterprise.
 
-- **GitHub Copilot Free** is available to individual developers who don't have access to GitHub Copilot through an organization or enterprise. This free plan includes limited access to select GitHub Copilot features, allowing you to try AI-powered coding assistance at no cost.
+- **GitHub Copilot Free** is available to individual developers who don't have access to GitHub Copilot through an organization or enterprise. This free plan provides a limited Copilot experience; see the plans page for current feature details.
 
-- **GitHub Copilot Pro** is designed for individuals who want more flexibility. This paid plan includes unlimited completions, access to premium models in GitHub Copilot Chat, and a monthly allowance of premium requests. Verified students, teachers, and maintainers of popular open source projects may be eligible for free access.
+- **GitHub Copilot Pro** is designed for individuals who want more flexibility. This paid plan provides expanded capabilities and access to premium models in GitHub Copilot Chat; see the plans page for current allowances and availability.
 
-- **GitHub Copilot Pro+** offers the highest level of access for individual developers. In addition to everything in GitHub Copilot Pro, this plan includes a larger allowance of premium requests and full access to all available models in GitHub Copilot Chat. Ideal for AI power users who want access to the most advanced capabilities.
+- **GitHub Copilot Pro+** offers the highest level of access for individual developers. In addition to Pro features, this plan provides broader access to premium model capabilities; see the plans page for details.
 
-- **GitHub Copilot Business** is for organizations on GitHub Free or GitHub Team plan, or enterprises on GitHub Enterprise Cloud. This plan includes GitHub Copilot Cloud Agent  and enables centralized management and GitHub Copilot policy control for organization members.
+- **GitHub Copilot Business** is for organizations. This plan includes centralized management and policy controls for organization members.
 
-- **GitHub Copilot Enterprise** is for enterprises using GitHub Enterprise Cloud. It includes all the features of GitHub Copilot Business, plus additional enterprise-grade capabilities. Enterprise owners can assign either GitHub Copilot Enterprise or GitHub Copilot Business to individual organizations.
+- **GitHub Copilot Enterprise** is for enterprises using GitHub Enterprise Cloud and provides enterprise-grade capabilities.
 
 ## Comparing GitHub Copilot plans
 
-The tables below show the features available in each GitHub Copilot plan.
+The tables below show example feature differences across plans. Do not rely on the numeric values in this module — refer to the official plans page for the current and authoritative plan comparison.
 
 ### Pricing
 
-| Feature                     | GitHub Copilot Free | GitHub Copilot Pro                          | GitHub Copilot Pro+                        | GitHub Copilot Business                  | GitHub Copilot Enterprise                |
-|-----------------------------|--------------|---------------------------------------|-------------------------------------|------------------------------------|------------------------------------|
-| Premium requests            | 50 per month  | 300 per month                        | 1500 per month                     | 300 per user per month            | 1000 per user per month           |
-| Purchase additional premium requests | X            | &#10003;                       | &#10003;                      | &#10003;                     | &#10003;                     |
+| Feature                     | GitHub Copilot Free | GitHub Copilot Pro | GitHub Copilot Pro+ | GitHub Copilot Business | GitHub Copilot Enterprise |
+|-----------------------------|---------------------|--------------------|---------------------|-------------------------|---------------------------|
+| Premium requests            | See plans page      | See plans page     | See plans page      | See plans page          | See plans page            |
+| Purchase additional premium requests | See plans page | See plans page | See plans page | See plans page | See plans page |
+
+> Note: Plan features and usage limits change over time. Check the Copilot plans page for the latest details: https://docs.github.com/en/copilot/get-started/plans
 
 ### Agents
 
@@ -41,14 +45,14 @@ The tables below show the features available in each GitHub Copilot plan.
 
 | Feature                     | GitHub Copilot Free | GitHub Copilot Pro                          | GitHub Copilot Pro+                        | GitHub Copilot Business                  | GitHub Copilot Enterprise                |
 |-----------------------------|--------------|---------------------------------------|-------------------------------------|------------------------------------|------------------------------------|
-| GitHub Copilot Chat in IDEs        | 50 messages per month | Unlimited with included models    | Unlimited with included models      | Unlimited with included models     | Unlimited with included models     |
-| Inline chat                 | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in IDEs        | 50 messages per month | Unlimited with included models    | Unlimited with included models      | Unlimited with included models     | Unlimited with included models     |
+| Edit mode                   | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Slash commands              | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat in GitHub Mobile | &#10003;   | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat in GitHub      | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat in Windows Terminal | &#10003; | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in GitHub Mobile | &#10003;   | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in GitHub      | &#10003;     | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot in Windows Terminal | &#10003; | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 | Increased GitHub Models rate limits | X    | X                                   | &#10003;                            | &#10003;                           | &#10003;                           |
-| GitHub Copilot Chat skills in IDEs | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
+| GitHub Copilot skills in IDEs | X            | &#10003;                             | &#10003;                            | &#10003;                           | &#10003;                           |
 
 ### Models
 

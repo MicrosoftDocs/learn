@@ -120,7 +120,7 @@ model.fit(ds_train.map(tupelize_title).batch(batch_size),validation_data=ds_test
 
 Remember that the `TextVectorization` layer will automatically pad sequences of variable length in a minibatch with pad tokens. It turns out that those tokens also take part in training, and they can complicate convergence of the model.
 
-There are several approaches we can take to minimize the amount of padding. One of them is to reorder the dataset by sequence length and group all sequences by size. This can be done using the `tf.data.bucket_by_sequence_length` function (see [documentation](https://www.tensorflow.org/api_docs/python/tf/data/bucket_by_sequence_length)).
+There are several approaches we can take to minimize the amount of padding. One of them is to reorder the dataset by sequence length and group all sequences by size. This can be done using the `tf.data.bucket_by_sequence_length` function (see [documentation](https://www.tensorflow.org/api_docs/python/tf/data/experimental/bucket_by_sequence_length)).
 
 Another approach is to use **masking**. In Keras, some layers support additional input that shows which tokens should be taken into account when training. To incorporate masking into our model, we can either include a separate `Masking` layer ([docs](https://keras.io/api/layers/core_layers/masking/)), or we can specify the `mask_zero=True` parameter of our `Embedding` layer.
 
@@ -191,7 +191,7 @@ Recurrent networks, unidirectional or bidirectional, capture patterns within a s
 
 ![Diagram of multilayer long short term memory recurrent neural network.](../media/multi-layer-long-short.png)
 
-*Picture from [this post on multi-layer LSTMs](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) by Fernando López.*
+*Picture from [this post on multi-layer LSTMs](https://medium.com/data-science/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) by Fernando López.*
 
 Keras makes constructing these networks an easy task, because you just need to add more recurrent layers to the model. For all layers except the last one, we need to specify `return_sequences=True` parameter, because we need the layer to return all intermediate states, and not just the final state of the recurrent computation.
 

@@ -15,13 +15,16 @@ The Microsoft Entra Agent ID APIs in Microsoft Graph help you create, secure, an
 
 The Agent ID platform introduces several Microsoft Graph resource types:
 
-| Component | Microsoft Graph Resource | Purpose |
-|-----------|-------------------------|---------|
-| **Blueprint** | `agentIdentityBlueprint` | Template defining the agent identity type and permissions |
-| **Blueprint principal** | `agentIdentityBlueprintPrincipal` | Record of blueprint's addition to a tenant |
-| **Agent identity** | `agentIdentity` | Primary identity for authentication |
-| **Agent user** | `agentUser` | Optional account for scenarios requiring a user object |
-| **Agent registry** | `agentRegistry` | Centralized repository for agent management |
+| Component | Microsoft Graph Resource | API Version | Purpose |
+|-----------|-------------------------|-------------|--------|
+| **Blueprint** | `agentIdentityBlueprint` | v1.0 (GA) | Template defining the agent identity type and permissions |
+| **Blueprint principal** | `agentIdentityBlueprintPrincipal` | v1.0 (GA) | Record of blueprint's addition to a tenant |
+| **Agent identity** | `agentIdentity` | v1.0 (GA) | Primary identity for authentication |
+| **Agent user** | `agentUser` | Beta only | Optional account for scenarios requiring a user object |
+| **Agent registry** | `agentRegistry` | Beta only | Centralized repository for agent management |
+
+> [!WARNING]
+> The `agentUser` and `agentRegistry` resources are only available under the Microsoft Graph `/beta` endpoint. Beta APIs are subject to change and are not supported for use in production applications.
 
 ## Common Microsoft Graph operations
 

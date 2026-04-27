@@ -2,9 +2,9 @@ Lakeflow Jobs consist of several key components that enable the orchestration an
 
 - **Jobs**: Jobs are the primary component in Lakeflow Jobs. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java Archives (JARs). Jobs can be triggered on a schedule or run manually, and they can be set up to handle dependencies and complex workflows.
 
-- **Tasks**: Databricks jobs support a wide variety of task types, including notebooks, scripts and packages, SQL queries, pipelines, and control-flow tasks. You can also define dependencies between tasks to orchestrate complex, multi-step workflows.
+- **Tasks**: Databricks jobs support a wide variety of task types, including notebooks, scripts and packages, SQL queries, pipelines, and control-flow tasks. You can also define dependencies between tasks to orchestrate complex, multi-step workflows. Tasks are organized as a **Directed Acyclic Graph (DAG)**, visually representing execution order and dependency relationships.
 
-- **Clusters**: Azure Databricks can automatically manage the creation and termination of clusters for running tasks. You can configure jobs to use new clusters or existing ones, and for larger workflows, different tasks can run on separate clusters. Clusters can be fine-tuned for performance based on the workload.
+- **Compute**: Azure Databricks offers three compute options for running tasks. **Serverless compute** is the default for supported task types — Azure Databricks manages the infrastructure automatically, so you don't need to configure cluster settings. **Classic jobs compute** gives you control over cluster configuration (Spark version, instance types, autoscaling policies) and is used when specific configurations or libraries are required. **SQL warehouses** run SQL query tasks and connect to an existing serverless or pro SQL warehouse in your workspace.
 
 - **Schedule & Triggers**: Schedule & Triggers determine how and when jobs are executed. Jobs can be triggered manually, on a scheduled basis (using cron expressions), or in response to particular triggers. This provides flexibility in how Lakeflow Jobs are orchestrated.
 

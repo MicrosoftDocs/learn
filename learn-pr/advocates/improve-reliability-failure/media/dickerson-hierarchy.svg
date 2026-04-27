@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="svgTitle svgDesc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="svgTitle">Dickerson Hierarchy of Reliability</title>
+  <desc id="svgDesc">Pyramid diagram with seven tiers. From base to apex: Monitoring, Incident Response, Post-incident Review, Testing and Release, Capacity Planning, Development, Product. The Post-incident Review tier is highlighted as the focus of this module.</desc>
+
+  <rect width="800" height="560" fill="#ffffff"/>
+
+  <!-- Monitoring (base) -->
+  <polygon points="0,520 600,520 557.143,451.429 42.857,451.429" fill="#0B3D5C"/>
+  <text x="300" y="491" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="600">Monitoring</text>
+
+  <!-- Incident Response -->
+  <polygon points="42.857,451.429 557.143,451.429 514.286,382.857 85.714,382.857" fill="#155A80"/>
+  <text x="300" y="422" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="600">Incident response</text>
+
+  <!-- Post-incident Review (highlighted focus tier) -->
+  <polygon points="85.714,382.857 514.286,382.857 471.429,314.286 128.571,314.286" fill="#C54B0A" stroke="#ffffff" stroke-width="2"/>
+  <text x="300" y="353" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Post-incident review</text>
+
+  <!-- Testing + Release -->
+  <polygon points="128.571,314.286 471.429,314.286 428.571,245.714 171.429,245.714" fill="#2A7EA8"/>
+  <text x="300" y="285" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="600">Testing + release</text>
+
+  <!-- Capacity Planning -->
+  <polygon points="171.429,245.714 428.571,245.714 385.714,177.143 214.286,177.143" fill="#4BA3C7"/>
+  <text x="300" y="216" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="600">Capacity planning</text>
+
+  <!-- Development -->
+  <polygon points="214.286,177.143 385.714,177.143 342.857,108.571 257.143,108.571" fill="#7FC3DC"/>
+  <text x="300" y="147" text-anchor="middle" fill="#0a2a3d" font-size="15" font-weight="600">Development</text>
+
+  <!-- Product (apex) -->
+  <polygon points="257.143,108.571 342.857,108.571 300,40" fill="#B5DEEA"/>
+  <text x="300" y="96" text-anchor="middle" fill="#0a2a3d" font-size="13" font-weight="600">Product</text>
+
+  <!-- Focus callout -->
+  <g font-size="14">
+    <line x1="471.429" y1="348" x2="620" y2="348" stroke="#C54B0A" stroke-width="1.5"/>
+    <text x="625" y="344" font-weight="700" fill="#C54B0A">This module's focus</text>
+    <text x="625" y="362" fill="#1a1a1a">Learn from failure via</text>
+    <text x="625" y="380" fill="#1a1a1a">post-incident review</text>
+  </g>
+
+  <!-- Base caption -->
+  <text x="300" y="547" text-anchor="middle" font-size="12" font-style="italic" fill="#555">Each tier depends on the ones below it</text>
+</svg>

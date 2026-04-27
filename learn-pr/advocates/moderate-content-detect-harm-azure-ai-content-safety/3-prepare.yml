@@ -3,10 +3,10 @@ uid: learn.moderate-content-detect-harm-azure-ai-content-safety.prepare
 title: Prepare
 metadata:
   title: Prepare
-  description: Learn how to prepare for the content moderation process with Azure AI Content Safety.
+  description: Prepare the workshop environment for Azure AI Content Safety exercises.
   author: aprilgittens
   ms.author: apspeigh
-  ms.date: 08/30/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:

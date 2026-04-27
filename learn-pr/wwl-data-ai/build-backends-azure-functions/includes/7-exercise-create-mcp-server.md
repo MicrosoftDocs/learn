@@ -3,7 +3,7 @@ The Model Context Protocol (MCP) is an open standard that defines how AI agents 
 In this exercise, you create an Azure Functions project with the MCP extension, define tool trigger functions for document processing, configure the MCP server settings, and test the server locally by connecting to it from GitHub Copilot in agent mode.
 
 > [!NOTE]
-> This exercise uses the Azure Functions MCP extension, which is actively evolving. Visit the [Azure Functions MCP extension documentation](/azure/azure-functions/functions-bindings-mcp-trigger) for the most up-to-date setup instructions, API surface, and configuration options.
+> This exercise uses the Azure Functions MCP extension, which is actively evolving. Visit the [Azure Functions MCP extension documentation](/azure/azure-functions/functions-bindings-mcp-tool-trigger) for the most up-to-date setup instructions, API surface, and configuration options.
 
 Tasks performed in this exercise:
 

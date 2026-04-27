@@ -1,61 +1,72 @@
-Applying sensitivity labels is essential for securing sensitive virtual meetings. These labels ensure that only authorized participants can access important discussions conducted via Outlook and Teams. Sensitivity labels help encrypt meeting invites and enforce strict access controls.
-
-Consider, for example, a key strategy meeting to finalize our service offerings. The organizer uses a _Highly Confidential_ sensitivity label to the Teams invite. This action encrypts the invite and applies strict access controls like preventing forwarding and restricting chats. This careful application of sensitivity labels shows our firm's commitment to protecting sensitive information, allowing secure, global collaboration.
-
-As our global consultancy firm moves forward with our AI-powered service launch, securing sensitive virtual meetings becomes crucial. These meetings, involving financial discussions and strategic plans, are important for our worldwide team and diverse client base. Sensitivity labels in Microsoft Purview help us in this security effort, ensuring that our virtual discussions via Outlook and Teams are accessible only to authorized participants.
-
-Here you learn how to:
-
-- **Ensure secure communication**: Demonstrate how to use sensitivity labels through Outlook or Teams to control meeting access and enforce encryption.
-- **Protect meeting integrity**: Apply sensitivity labels to maintain data protection standards across meeting settings.
-- **Uphold compliance**: Explain the role of sensitivity label visibility during meetings in ensuring compliance with security protocols.
-
-Configuring and applying these labels in the Microsoft Purview compliance portal improves our meeting security and shows our dedication to data protection and client trust.
-
-## Prepare for secure meetings with sensitivity label settings
-
-To improve our meeting security, it's important to know how sensitivity labels affect certain settings. These settings help keep our discussions safe and private. Here are the settings sensitivity labels can adjust for better security:
+Sensitivity labels extend beyond documents and emails to protect Teams meetings and calendar events. A labeled meeting controls:
 
 - Who can bypass the lobby
 - Who can present
-- Who can record
-- Encryption for meeting video and audio
-- Option to automatically record
-- Video watermark for screen sharing and camera streams
-- Chat content copying restrictions
+- Whether the meeting can be recorded
+- Whether the video and audio stream is encrypted
 
-The sensitivity label doesn't extend to related meeting items, such as recordings, transcripts, whiteboard, and tasks.
+These settings enforce protection automatically based on the label, so organizers don't need to configure each meeting individually.
 
-Sensitivity labels can be applied to meeting invites in Outlook and Teams across [supported versions](/purview/sensitivity-labels-meetings#requirements) on Windows, macOS, iOS, and Android. This feature allows for the application, modification, and viewing of labels, with encrypted invites accessible similarly to encrypted emails for incompatible clients. Teams supports these actions directly within its platform.
+This matters because meetings are where sensitive decisions happen in real time. A board strategy session and a team standup have different security needs. Sensitivity labels let you define those differences once at the label level and apply them consistently across every meeting of that type.
 
-Here's an example showing a Teams meeting invite that has the label **Highly confidential**, and the label applies encryption settings that prevent the invite from being forwarded:
+## What meeting labels control
+
+When you apply a sensitivity label to a meeting, the label can enforce any combination of these settings:
+
+| Setting | What it controls | When to use it |
+| --- | --- | --- |
+| **Who can bypass the lobby** | Controls whether participants join directly or wait for the organizer to admit them. | Use restrictive settings for meetings where uninvited attendees shouldn't overhear content. |
+| **Who can present** | Limits who can share their screen or present content. | Restrict to organizers for one-way briefings; allow all participants for working sessions. |
+| **Who can record and transcribe** | Controls whether recording and transcription are available and who can start them. | Disable for meetings with content that shouldn't persist beyond the live discussion. |
+| **Encryption for meeting video and audio** | Applies end-to-end encryption to the meeting stream. | Use for the most sensitive discussions. Encryption disables some features like recording, live captions, and breakout rooms. |
+| **Automatically record** | Forces recordings to start when the meeting begins. | Use when your organization requires a record of all discussions at a certain sensitivity level. |
+| **Video watermark** | Overlays the participant's email address on shared content and camera feeds. | Deters unauthorized screen capture when visual content is sensitive. |
+| **Prevent copying and forwarding of chat** | Blocks copy, forward, and download actions in the meeting chat, live captions, and transcripts. | Use when chat content is as sensitive as the meeting itself. |
+
+The sensitivity label doesn't extend to related meeting items such as recordings, transcripts, whiteboard, and tasks. Those items follow their own protection rules.
+
+> [!NOTE]
+> Sensitivity labels can be applied to meeting invites in Outlook and Teams across [supported versions](/purview/sensitivity-labels-meetings#requirements) on Windows, macOS, iOS, and Android. There are limitations, including encryption restrictions, mailbox and calendar requirements, and specific behaviors for shared calendars. See [Limitations](/purview/sensitivity-labels-meetings#limitations) for details.
+
+Here's an example of a Teams meeting invite labeled **Highly confidential**, where the label applies encryption and prevents forwarding:
 
 :::image type="content" source="../media/example-protected-teams-invite.png" alt-text="Screenshot showing a labeled Teams meeting invite that prevents the invite from being forwarded." lightbox="../media/example-protected-teams-invite.png":::
 
-Keep in mind there are limitations when using sensitivity labels for meetings, such as encryption restrictions, mailbox and calendar requirements, and specific behaviors for shared calendars. For more information these limitations, see the [Limitations](/purview/sensitivity-labels-meetings#limitations) section of **Use sensitivity labels to protect calendar items, Teams meetings, and chat**.
+## Configure a label for meetings
 
-## Configure a sensitivity label to protect calendar items, Teams meetings, and chat
+Creating a meeting label requires selecting the right combination of scopes and protection settings. Think about the types of meetings in your organization and what protection each type needs before you start.
 
-1. Navigate to the Microsoft Purview compliance portal and create or edit a sensitivity label. Select **Items** along with **Files**, **Emails**, and **Meetings** for full protection.
+1. In the Microsoft Purview portal, create or edit a sensitivity label. Select **Files & other data assets**, **Emails**, and **Meetings** from the Items scope.
 
-   All three options are needed from the Items scope and can't be selected individually because of their interdependency. A meeting consists of a calendar event, the invitation and responses, related attachments, related emails, and the actual Teams meeting. As a result, all these items need the same sensitivity label applied to protect the meeting.
+   All three options are required because of their interdependency. A meeting consists of several items that all need the same sensitivity label for consistent protection:
 
-1. On the **Choose protection settings for labeled items** page, select protection settings for encryption, content marking, and Teams meeting/chat protection.
-1. On the next few pages, configure the desired settings, for encryption, content marking, and Teams settings according to your organization's needs.
-1. Complete the label configuration and then create or configure other sensitivity labels if you need different settings for other labels.
+   - Calendar event
+   - Invitation and responses
+   - Related attachments
+   - Related emails
+   - The actual Teams meeting
 
-Make sure the label is published to meeting organizers and participants.
+1. On the **Choose protection settings for labeled items** page, select the settings you need: encryption, content marking, and Teams meeting/chat protection.
+1. Configure encryption, content marking, and Teams-specific settings based on what this sensitivity level requires.
+1. Complete the label configuration. If you need different meeting behaviors for different sensitivity levels, create additional labels with different settings.
 
-Label policy settings for calendar items, Teams meetings, and chat include applying default labels to new and updated calendar events in Outlook and new events in Teams. Existing unlabeled meetings in Teams aren't automatically relabeled. Policies can also require users to label their meetings and events. These settings function independently from email label policies, meaning choices for emails don't affect meetings or events.
+Publish the label to both meeting organizers and participants. If only the organizer has access to the label, participants won't see or benefit from the protection settings.
 
-## Configure and apply a label for channel meetings
+### Label policies for meetings
 
-To apply a sensitivity label to a Teams channel, start by making sure the label is associated with a container label for the channel. This approach ensures all channel meetings and chats inherit your label settings, preventing any user changes. You do this by editing a label previously configured for groups and sites. You can then select a sensitivity label configured to protect calendar items, Teams meetings, and chat.
+Label policies for calendar items, Teams meetings, and chat work independently from email label policies. Choices you make for email defaults don't affect meetings. You can configure policies to:
+
+- Apply a default label to new and updated calendar events in Outlook and new events in Teams. Existing unlabeled meetings in Teams aren't automatically relabeled.
+- Require users to label their meetings and events before sending.
+
+### Label inheritance from shared meeting files
+
+When files are shared in the meeting chat or uploaded to the **Shared** tab, Teams can automatically apply or recommend that the meeting inherit the highest-priority sensitivity label from those files, if label is published to the meeting organizer. This helps ensure the meeting's protection level matches the sensitivity of the content being discussed. A meeting that already has a higher-priority label won't be overridden.
+
+## Apply labels to channel meetings
+
+Channel meetings and chats can inherit labels from the team's container label. This approach ensures consistent protection without relying on individual meeting organizers to apply the right label.
+
+To set this up, edit a label that's already configured with the **Groups & sites** scope. In the container label settings, select a sensitivity label configured to protect calendar items, Teams meetings, and chat. Every channel meeting and chat in teams with that container label then inherits your meeting protection settings automatically. Users can't change the inherited label.
 
 :::image type="content" source="../media/sensitivity-label-default-channel-meeting.png" alt-text="Screenshot of the option to configure a default sensitivity label to protect channel meetings and chat." lightbox="../media/sensitivity-label-default-channel-meeting.png":::
-
-## Help protect calender events, meetings, and chats with Microsoft Purview Information Protection interactive guide
-
-Use the **Help protect calender events, meetings, and chats with Microsoft Purview Information Protection interactive guide** interactive guide for a walkthrough on configuring and applying sensitivity labels for meetings and calendar events.
-
-[:::image type="content" source="../media/interactive-guide-protect-meetings-calendar-purview.png" alt-text="Cover illustration for an interactive guide that says Help protect calender events, meetings, and chats with Microsoft Purview Information Protection interactive guide." border="false":::](https://mslearn.cloudguides.com/guides/Help%20protect%20calendar%20events,%20meetings,%20and%20chats%20with%20Microsoft%20Purview%20Information%20Protection?azure-portal=true)

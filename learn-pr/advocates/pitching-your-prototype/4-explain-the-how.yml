@@ -3,9 +3,9 @@ uid: learn.pitch-your-product-prototype.4-explain-the-how
 title: Explain how your business works
 metadata:
   title: Explain how your business works
-  description: This unit teaches you how to share your business model.
+  description: This unit teaches you how to explain your business model and the operational boundaries of your solution.
   author: czhu89
-  ms.date: 07/23/2024
+  ms.date: 04/20/2026
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 7
@@ -21,6 +21,8 @@ quiz:
       explanation: "When you explain how to acquire customers, you should mention market size, marketing channels, and techniques."
     - content: "Market size, corporate identity, and industry analysis."
       isCorrect: false
+      explanation: "Corporate identity and industry analysis can support broader positioning, but customer acquisition should focus on market size, marketing channels, and techniques."
     - content: "Marketing channels, business models, and techniques."
       isCorrect: false
-
+      explanation: "Marketing channels and techniques are relevant to acquiring customers, but business models belong to the revenue model discussion, not customer acquisition."
+

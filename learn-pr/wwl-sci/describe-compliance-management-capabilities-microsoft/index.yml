@@ -1,21 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
-  title: Describe Microsoft’s Service Trust Portal and Privacy Capabilities
-  description: "Describe Microsoft’s Service Trust portal and privacy capabilities."
-  ms.date: 07/30/2025
+  title: Describe Microsoft’s Service Trust Portal and Privacy Principles
+  description: "Describe Microsoft’s Service Trust portal and privacy principles."
+  ms.date: 04/27/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
   ms.service: priva
   ai-usage: ai-assisted
-title: Describe Microsoft’s Service Trust portal and privacy capabilities
-summary: Microsoft runs on trust! Here you’ll explore the Service Trust Portal for content on how Microsoft delivers on our commitment of trust. You’ll also learn about Microsoft Priva, a solution to help meet privacy goals.
+title: Describe Microsoft’s Service Trust portal and privacy principles
+summary: Microsoft runs on trust! Here you explore the Service Trust Portal for content on how Microsoft delivers on our commitment of trust. You also learn about Microsoft's Privacy principles.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the offerings of the Service Trust Portal.
   - Describe Microsoft's Privacy principles.
-  - Describe Microsoft Priva.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -34,7 +33,6 @@ units:
 - learn.wwl.describe-compliance-management-capabilities-microsoft.introduction
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-offerings-of-service-trust-portal
 - learn.wwl.describe-compliance-management-capabilities-microsoft.describe-microsofts-privacy-principles
-- learn.wwl.describe-compliance-management-capabilities-microsoft.describe-microsoft-priva
 - learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
 - learn.wwl.describe-compliance-management-capabilities-microsoft.summary-resources
 badge:

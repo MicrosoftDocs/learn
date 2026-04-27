@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-ai-education.exercise-connect-institutional-needs-solutions
+title: Exercise - Connect institutional needs to solutions
+metadata:
+  title: Exercise - Connect Institutional Needs To Solutions
+  description: This content is part of the "AI‑enhanced K‑12 institutional concepts" module.
+  ms.date: 04/09/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-connect-institutional-needs-solutions.md)]
