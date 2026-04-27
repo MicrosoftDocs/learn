@@ -22,5 +22,4 @@ In addition to improving our energy efficiency, Microsoft aims to be water-posit
 When using Microsoft Azure, you can access specialized tools to track your sustainability goals.
 
  -  An [Emissions Impact Dashboard](https://www.microsoft.com/sustainability/emissions-impact-dashboard?rtc=1&activetab=pivot:mostpopulartab) enables you to track the carbon emissions (and reductions) of your cloud investments.
- -  The [Emissions Savings Estimator](https://gw.us-il301.gateway.prod.island.powerapps.com/customerenrollmentservice/estimator/index.html) tool can show you how much you might save in emissions by switching to Azure. (This is a bit tech-oriented!)
  -  The [Microsoft Cloud for Sustainability](/industry/sustainability/) product is a package of tools for monitoring your sustainability in the cloud.

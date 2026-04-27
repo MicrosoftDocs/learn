@@ -192,4 +192,4 @@ Examples:
 
 - [https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-router?view=foundry](/azure/ai-foundry/openai/concepts/model-router)
 - [https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/model-router?view=foundry-classic](/azure/ai-foundry/openai/concepts/model-router)
-- <https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-foundry/openai/concepts/model-router.md> 
+- <https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/foundry/openai/concepts/model-router.md> 

@@ -12,7 +12,7 @@ Working with files in Spark is designed to be consistent across small and large 
 
 ## Loading data into a dataframe
 
-Let's explore a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** in the **data** folder in your Databricks File System (DBFS) storage:
+Let's explore a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** stored in a Unity Catalog volume:
 
 ```csv
 ProductID,ProductName,Category,ListPrice
@@ -26,7 +26,7 @@ In a Spark notebook, you could use the following PySpark code to load the data i
 
 ```python
 %pyspark
-df = spark.read.load('/data/products.csv',
+df = spark.read.load('/Volumes/my_catalog/my_schema/my_volume/products.csv',
     format='csv',
     header=True
 )
@@ -37,9 +37,12 @@ The `%pyspark` line at the beginning is called a *magic*, and tells Spark that t
 
 ```scala
 %spark
-val df = spark.read.format("csv").option("header", "true").load("/data/products.csv")
+val df = spark.read.format("csv").option("header", "true").load("/Volumes/my_catalog/my_schema/my_volume/products.csv")
 display(df.limit(10))
 ```
+
+> [!NOTE]
+> Files in Azure Databricks are accessed via Unity Catalog volumes using paths in the format `/Volumes/<catalog>/<schema>/<volume>/<path>`. This is the recommended pattern for file storage and access. DBFS (`/data/...`) is a legacy approach and no longer recommended.
 
 The magic `%spark` is used to specify Scala.
 
@@ -79,7 +82,7 @@ productSchema = StructType([
     StructField("ListPrice", FloatType())
     ])
 
-df = spark.read.load('/data/product-data.csv',
+df = spark.read.load('/Volumes/my_catalog/my_schema/my_volume/product-data.csv',
     format='csv',
     schema=productSchema,
     header=False)

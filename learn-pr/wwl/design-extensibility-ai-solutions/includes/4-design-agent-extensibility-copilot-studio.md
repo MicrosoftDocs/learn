@@ -127,10 +127,8 @@ For more information, see the following principles and patterns for architecting
 
 ## References
 
-[https://learn.microsoft.com/microsoft-copilot-studio/extensibility](/microsoft-copilot-studio/extensibility)
+[https://learn.microsoft.com/microsoft-365/copilot/extensibility/](/microsoft-365/copilot/extensibility/)
 
-[https://learn.microsoft.com/microsoft-copilot-studio/build-declarative-agent](/microsoft-copilot-studio/build-declarative-agent)
+[https://learn.microsoft.com/microsoft-365/copilot/extensibility/overview-declarative-agent](/microsoft-365/copilot/extensibility/overview-declarative-agent)
 
-[https://learn.microsoft.com/microsoft-copilot-studio/use-prompt-modification](/microsoft-copilot-studio/use-prompt-modification)
-
-[https://learn.microsoft.com/microsoft-copilot-studio/vscode-agent-authoring](/microsoft-copilot-studio/vscode-agent-authoring)
+[https://learn.microsoft.com/microsoft-copilot-studio/nlu-generative-answers-prompt-modification](/microsoft-copilot-studio/nlu-generative-answers-prompt-modification)

@@ -3,7 +3,7 @@ Overall, we recommend that you use large language models when you need to genera
 There are three different categories of generative AI models:
 
 - **Natural language models** take in natural language and generate responses.
-- **Generative pre-trained transformer (GPT) models** take natural language or code snippets and translate them into code.
+- **Generative pre-trained transformer (GPT) models** take natural language input and generate human-like text responses, including answers, summaries, and code.
 - **Image generation models** take prompts, a base image, or both, and create a new image.
 
 ## Text processing

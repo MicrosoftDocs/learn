@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" role="img" aria-labelledby="title2 desc2">
+  <title id="title2">AI Open-Source Library Security Review Process</title>
+  <desc id="desc2">Flowchart showing the security review process for AI open-source libraries: assess suitability, code review and dependency analysis, AI-specific checks, vulnerability scanning, then approve or remediate</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="290" fill="#FFFFFF"/>
+
+  <!-- Box 1: Assess Suitability -->
+  <rect x="15" y="95" width="148" height="58" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="89" y="119" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Assess</text>
+  <text x="89" y="137" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Suitability</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="163" y1="124" x2="198" y2="124" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: Code Review & Dependency Analysis -->
+  <rect x="208" y="88" width="162" height="72" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="289" y="118" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Code Review &amp;</text>
+  <text x="289" y="138" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Dependency Analysis</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="370" y1="124" x2="405" y2="124" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: AI-Specific Checks -->
+  <rect x="415" y="88" width="140" height="72" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="485" y="118" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">AI-Specific</text>
+  <text x="485" y="138" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Checks</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="555" y1="124" x2="590" y2="124" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 4: Vulnerability Scanning -->
+  <rect x="600" y="88" width="148" height="72" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="674" y="118" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Vulnerability</text>
+  <text x="674" y="138" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Scanning</text>
+
+  <!-- Arrow 4→Diamond -->
+  <line x1="748" y1="124" x2="765" y2="124" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Diamond: Pass? -->
+  <polygon points="800,88 840,124 800,160 760,124" fill="#FFF4CE" stroke="#C49C00" stroke-width="2"/>
+  <text x="800" y="129" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Pass?</text>
+
+  <!-- Yes arrow → Approve -->
+  <line x1="840" y1="124" x2="872" y2="124" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="855" y="116" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#424242">Yes</text>
+
+  <!-- Box: Approve -->
+  <rect x="882" y="98" width="65" height="52" rx="8" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+  <text x="914" y="129" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Approve</text>
+
+  <!-- No arrow → Remediate -->
+  <line x1="800" y1="160" x2="800" y2="198" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="816" y="183" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#424242">No</text>
+
+  <!-- Box: Remediate or Reject -->
+  <rect x="733" y="208" width="134" height="52" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="800" y="230" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Remediate</text>
+  <text x="800" y="248" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">or Reject</text>
+
+  <!-- Loop-back arrow from Remediate to Vulnerability Scanning -->
+  <path d="M 733,234 L 674,234 L 674,160" fill="none" stroke="#424242" stroke-width="1.5" marker-end="url(#arrow)"/>
+</svg>

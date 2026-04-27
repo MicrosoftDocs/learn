@@ -12,6 +12,8 @@ You can use the built-in **visualizations** to quickly understand data distribut
 
 ![Screenshot of an Azure Databricks Notebook Chart.](../media/series-selection.gif)
 
+**Databricks Assistant** is an AI-powered coding companion built directly into notebooks, the SQL editor, and files. It helps you write, understand, and improve code more efficiently. You can type natural language prompts to generate new code, or use slash commands such as `/explain`, `/fix`, and `/optimize` to act on selected code. The assistant is context-aware: when your workspace has Unity Catalog enabled, it uses table names, column names, and schema metadata to produce suggestions tailored to your actual data. This makes it especially useful for exploratory data analysis, where you can ask the assistant to query a table, filter results, or summarize a dataset without recalling every function signature from memory.
+
 ## Work with Spark DataFrames
 
 When you work with data in notebooks, you make use of **Spark DataFrames** that are built on Apache Spark. DataFrames allow you to manipulate large datasets efficiently.
