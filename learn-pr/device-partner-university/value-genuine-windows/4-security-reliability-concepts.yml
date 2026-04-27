@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.value-genuine-windows.security-reliability-concepts
+title: Security and reliability concepts
+metadata:
+  title: Security And Reliability Concepts
+  description: This content is part of the "The value of Genuine Windows" module.
+  ms.date: 04/23/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-security-reliability-concepts.md)]

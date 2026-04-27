@@ -3,11 +3,11 @@ uid: learn.fundamentals-of-ai-security.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: An introduction to AI security
-  ms.date: 03/06/2026
+  description: An introduction to AI security fundamentals, including what you'll learn about AI-specific attacks and mitigations.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

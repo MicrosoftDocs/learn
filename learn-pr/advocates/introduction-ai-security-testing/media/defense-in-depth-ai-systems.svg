@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="720" height="480" fill="#ffffff"/>
+
+  <defs>
+    <marker id="attackArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c50f1f"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Defense in depth for AI systems</text>
+
+  <!-- Adversarial input from top -->
+  <rect x="250" y="50" width="220" height="30" rx="6" fill="#fce8e8" stroke="#c50f1f" stroke-width="1.5"/>
+  <text x="360" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="#c50f1f">Adversarial input</text>
+
+  <!-- Arrow from attack box down to Layer 1 (solid, strong) -->
+  <line x1="360" y1="80" x2="360" y2="100" stroke="#c50f1f" stroke-width="2.5" marker-end="url(#attackArrow)"/>
+
+  <!-- Layer 1: Input content classifiers -->
+  <rect x="30" y="105" width="660" height="70" rx="10" fill="#0078d4" opacity="0.12" stroke="#0078d4" stroke-width="2"/>
+  <rect x="50" y="117" width="36" height="36" rx="6" fill="#0078d4"/>
+  <text x="68" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">1</text>
+  <text x="105" y="133" font-size="15" font-weight="600" fill="#005a9e">Input content classifiers</text>
+  <text x="105" y="155" font-size="12" fill="#444444">Flag and filter potentially harmful or malicious content before it reaches the model.</text>
+
+  <!-- Arrow between Layer 1 and 2 (dashed, weaker) -->
+  <line x1="360" y1="175" x2="360" y2="190" stroke="#c50f1f" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#attackArrow)"/>
+
+  <!-- Layer 2: Metaprompt safety instructions -->
+  <rect x="30" y="195" width="660" height="70" rx="10" fill="#107c10" opacity="0.12" stroke="#107c10" stroke-width="2"/>
+  <rect x="50" y="207" width="36" height="36" rx="6" fill="#107c10"/>
+  <text x="68" y="230" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">2</text>
+  <text x="105" y="223" font-size="15" font-weight="600" fill="#0b6a0b">Metaprompt safety instructions</text>
+  <text x="105" y="245" font-size="12" fill="#444444">System-level instructions that guide model behavior and set boundaries.</text>
+
+  <!-- Arrow between Layer 2 and 3 (more dashed, weaker) -->
+  <line x1="360" y1="265" x2="360" y2="280" stroke="#c50f1f" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#attackArrow)"/>
+
+  <!-- Layer 3: Application-level controls -->
+  <rect x="30" y="285" width="660" height="70" rx="10" fill="#8661c5" opacity="0.12" stroke="#8661c5" stroke-width="2"/>
+  <rect x="50" y="297" width="36" height="36" rx="6" fill="#8661c5"/>
+  <text x="68" y="320" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">3</text>
+  <text x="105" y="313" font-size="15" font-weight="600" fill="#5c3d99">Application-level controls</text>
+  <text x="105" y="335" font-size="12" fill="#444444">Rate limiting, conversation drift detection, output validation, and grounding checks.</text>
+
+  <!-- Arrow between Layer 3 and 4 (dotted, weakest) -->
+  <line x1="360" y1="355" x2="360" y2="370" stroke="#c50f1f" stroke-width="1" stroke-dasharray="2,4" marker-end="url(#attackArrow)"/>
+
+  <!-- Layer 4: Model-level alignment -->
+  <rect x="30" y="375" width="660" height="70" rx="10" fill="#d83b01" opacity="0.12" stroke="#d83b01" stroke-width="2"/>
+  <rect x="50" y="387" width="36" height="36" rx="6" fill="#d83b01"/>
+  <text x="68" y="410" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">4</text>
+  <text x="105" y="403" font-size="15" font-weight="600" fill="#a52e00">Model-level alignment</text>
+  <text x="105" y="425" font-size="12" fill="#444444">RLHF training, safety fine-tuning, and built-in content policy enforcement.</text>
+
+  <!-- Annotation -->
+  <text x="360" y="466" text-anchor="middle" font-size="12" fill="#595959" font-style="italic">Each layer mitigates a different adversarial strategy — no single layer is sufficient alone.</text>
+</svg>

@@ -3,11 +3,11 @@ uid: learn.ai-security-controls.ground-ai-systems
 title: Ground AI systems
 metadata:
   title: Ground AI systems
-  description: Learn about grounding AI systems
-  ms.date: 03/06/2026
+  description: Learn how grounding reduces hallucinations and security risks by connecting AI responses to verified data sources through RAG and other techniques.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-ground-ai-systems.md)]

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="360" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrSolid" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555555"/>
+    </marker>
+    <marker id="arrFan" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d83b01"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="430" y="36" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Deterministic vs. probabilistic outputs</text>
+
+  <!-- ===== LEFT: Traditional system ===== -->
+  <rect x="20" y="55" width="390" height="290" rx="10" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <rect x="20" y="55" width="390" height="42" rx="10" fill="#0078d4"/>
+  <rect x="20" y="85" width="390" height="12" fill="#0078d4"/>
+  <text x="215" y="82" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Traditional system</text>
+
+  <!-- Input -->
+  <rect x="50" y="130" width="120" height="50" rx="8" fill="#e6f0fa" stroke="#0078d4" stroke-width="1.5"/>
+  <text x="110" y="160" text-anchor="middle" font-size="13" font-weight="600" fill="#005a9e">Input X</text>
+
+  <!-- Arrow to system -->
+  <line x1="170" y1="155" x2="210" y2="155" stroke="#555555" stroke-width="2" marker-end="url(#arrSolid)"/>
+
+  <!-- System box -->
+  <rect x="215" y="120" width="80" height="70" rx="8" fill="#0078d4"/>
+  <text x="255" y="150" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">System</text>
+  <text x="255" y="168" text-anchor="middle" font-size="10" fill="#ffffff">(deterministic)</text>
+
+  <!-- Arrow to output -->
+  <line x1="295" y1="155" x2="335" y2="155" stroke="#555555" stroke-width="2" marker-end="url(#arrSolid)"/>
+
+  <!-- Single output -->
+  <rect x="340" y="130" width="50" height="50" rx="8" fill="#e6f0fa" stroke="#0078d4" stroke-width="1.5"/>
+  <text x="365" y="160" text-anchor="middle" font-size="13" font-weight="700" fill="#005a9e">A</text>
+
+  <!-- Second run same result -->
+  <text x="215" y="220" text-anchor="middle" font-size="12" fill="#595959">Run again...</text>
+  <rect x="50" y="240" width="120" height="50" rx="8" fill="#e6f0fa" stroke="#0078d4" stroke-width="1.5"/>
+  <text x="110" y="270" text-anchor="middle" font-size="13" font-weight="600" fill="#005a9e">Input X</text>
+  <line x1="170" y1="265" x2="210" y2="265" stroke="#555555" stroke-width="2" marker-end="url(#arrSolid)"/>
+  <rect x="215" y="230" width="80" height="70" rx="8" fill="#0078d4"/>
+  <text x="255" y="260" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">System</text>
+  <text x="255" y="278" text-anchor="middle" font-size="10" fill="#ffffff">(deterministic)</text>
+  <line x1="295" y1="265" x2="335" y2="265" stroke="#555555" stroke-width="2" marker-end="url(#arrSolid)"/>
+  <rect x="340" y="240" width="50" height="50" rx="8" fill="#e6f0fa" stroke="#0078d4" stroke-width="1.5"/>
+  <text x="365" y="270" text-anchor="middle" font-size="13" font-weight="700" fill="#005a9e">A</text>
+
+  <!-- Same output label -->
+  <text x="365" y="315" text-anchor="middle" font-size="12" font-weight="600" fill="#005a9e">Always A</text>
+
+  <!-- ===== RIGHT: Generative AI ===== -->
+  <rect x="450" y="55" width="390" height="290" rx="10" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <rect x="450" y="55" width="390" height="42" rx="10" fill="#d83b01"/>
+  <rect x="450" y="85" width="390" height="12" fill="#d83b01"/>
+  <text x="645" y="82" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Generative AI system</text>
+
+  <!-- Input -->
+  <rect x="480" y="155" width="120" height="50" rx="8" fill="#fff0e6" stroke="#d83b01" stroke-width="1.5"/>
+  <text x="540" y="185" text-anchor="middle" font-size="13" font-weight="600" fill="#a52e00">Input X</text>
+
+  <!-- Arrow to LLM -->
+  <line x1="600" y1="180" x2="640" y2="180" stroke="#555555" stroke-width="2" marker-end="url(#arrSolid)"/>
+
+  <!-- LLM box -->
+  <rect x="645" y="145" width="80" height="70" rx="8" fill="#d83b01"/>
+  <text x="685" y="175" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">LLM</text>
+  <text x="685" y="193" text-anchor="middle" font-size="10" fill="#ffffff">(probabilistic)</text>
+
+  <!-- Fan-out arrows -->
+  <line x1="725" y1="165" x2="765" y2="120" stroke="#d83b01" stroke-width="2" marker-end="url(#arrFan)"/>
+  <line x1="725" y1="180" x2="765" y2="180" stroke="#d83b01" stroke-width="2" marker-end="url(#arrFan)"/>
+  <line x1="725" y1="195" x2="765" y2="240" stroke="#d83b01" stroke-width="2" marker-end="url(#arrFan)"/>
+
+  <!-- Multiple outputs -->
+  <rect x="770" y="100" width="50" height="42" rx="8" fill="#fff0e6" stroke="#d83b01" stroke-width="1.5"/>
+  <text x="795" y="126" text-anchor="middle" font-size="13" font-weight="700" fill="#a52e00">A</text>
+
+  <rect x="770" y="160" width="50" height="42" rx="8" fill="#fff0e6" stroke="#d83b01" stroke-width="1.5"/>
+  <text x="795" y="186" text-anchor="middle" font-size="13" font-weight="700" fill="#a52e00">B</text>
+
+  <rect x="770" y="220" width="50" height="42" rx="8" fill="#fff0e6" stroke="#d83b01" stroke-width="1.5"/>
+  <text x="795" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#a52e00">C</text>
+
+  <!-- Label -->
+  <text x="645" y="290" text-anchor="middle" font-size="12" font-weight="600" fill="#a52e00">Same input, different outputs</text>
+  <text x="645" y="310" text-anchor="middle" font-size="11" fill="#595959">Requires multiple test iterations</text>
+</svg>

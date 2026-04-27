@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title1 desc1">
+  <title id="title1">AI Security Controls Overview</title>
+  <desc id="desc1">Diagram showing seven AI security control areas surrounding a central AI System element, illustrating defense in depth</desc>
+  <rect width="900" height="420" fill="#FFFFFF"/>
+
+  <!-- Connecting lines (drawn first, behind boxes) -->
+  <line x1="450" y1="180" x2="157" y2="90" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="450" y1="180" x2="352" y2="90" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="450" y1="180" x2="547" y2="90" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="450" y1="180" x2="742" y2="90" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="450" y1="240" x2="244" y2="330" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="450" y1="240" x2="449" y2="330" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="450" y1="240" x2="654" y2="330" stroke="#424242" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Center: AI System -->
+  <rect x="350" y="180" width="200" height="60" rx="10" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="450" y="216" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">AI System</text>
+
+  <!-- Top Row: 4 controls -->
+  <rect x="80" y="40" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="157" y="60" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Supply Chain</text>
+  <text x="157" y="76" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Security</text>
+
+  <rect x="275" y="40" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="352" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Content Filtering</text>
+
+  <rect x="470" y="40" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="547" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Data Security</text>
+
+  <rect x="665" y="40" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="742" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Metaprompts</text>
+
+  <!-- Bottom Row: 3 controls -->
+  <rect x="167" y="330" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="244" y="360" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Grounding</text>
+
+  <rect x="372" y="330" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="449" y="350" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Application</text>
+  <text x="449" y="366" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Security</text>
+
+  <rect x="577" y="330" width="155" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="654" y="360" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Monitoring</text>
+
+  <!-- Caption -->
+  <text x="450" y="410" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242" font-style="italic">Defense in depth: multiple layers of controls protect the AI system</text>
+</svg>

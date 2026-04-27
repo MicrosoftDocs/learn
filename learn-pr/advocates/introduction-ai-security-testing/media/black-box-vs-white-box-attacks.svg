@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="440" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Blackbox vs. whitebox attacks</text>
+
+  <!-- ===== BLACK-BOX (left) ===== -->
+  <rect x="20" y="60" width="420" height="360" rx="10" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <rect x="20" y="60" width="420" height="44" rx="10" fill="#1a1a1a"/>
+  <rect x="20" y="90" width="420" height="14" fill="#1a1a1a"/>
+  <text x="230" y="88" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Blackbox attack</text>
+
+  <!-- Attacker -->
+  <rect x="60" y="140" width="130" height="50" rx="8" fill="#d83b01" opacity="0.9"/>
+  <text x="125" y="170" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">Attacker</text>
+
+  <!-- Inputs arrow -->
+  <line x1="190" y1="165" x2="250" y2="165" stroke="#555555" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  <text x="220" y="155" text-anchor="middle" font-size="11" fill="#505050">Inputs</text>
+
+  <!-- Model (opaque) -->
+  <rect x="250" y="130" width="150" height="70" rx="8" fill="#333333"/>
+  <text x="325" y="158" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">Model</text>
+  <text x="325" y="178" text-anchor="middle" font-size="11" fill="#cccccc">(opaque)</text>
+
+  <!-- Outputs arrow -->
+  <line x1="325" y1="200" x2="325" y2="240" stroke="#555555" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  <text x="355" y="225" text-anchor="start" font-size="11" fill="#505050">Outputs</text>
+
+  <!-- Observe box -->
+  <rect x="250" y="245" width="150" height="44" rx="8" fill="#d83b01" opacity="0.9"/>
+  <text x="325" y="272" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Observe &amp; probe</text>
+
+  <!-- Feedback loop arrow -->
+  <path d="M 250,267 L 125,267 L 125,190" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowBlack)"/>
+  <text x="170" y="290" text-anchor="middle" font-size="11" fill="#505050">Iterate</text>
+
+  <!-- Description -->
+  <text x="230" y="340" text-anchor="middle" font-size="12" fill="#333333">No access to model internals.</text>
+  <text x="230" y="358" text-anchor="middle" font-size="12" fill="#333333">Probes via inputs and outputs only.</text>
+  <text x="230" y="376" text-anchor="middle" font-size="12" font-style="italic" fill="#595959">Most real-world attacks use this approach.</text>
+
+  <!-- ===== WHITE-BOX (right) ===== -->
+  <rect x="460" y="60" width="420" height="360" rx="10" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <rect x="460" y="60" width="420" height="44" rx="10" fill="#0078d4"/>
+  <rect x="460" y="90" width="420" height="14" fill="#0078d4"/>
+  <text x="670" y="88" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Whitebox attack</text>
+
+  <!-- Attacker -->
+  <rect x="500" y="140" width="130" height="50" rx="8" fill="#d83b01" opacity="0.9"/>
+  <text x="565" y="170" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">Attacker</text>
+
+  <!-- Full access arrow -->
+  <line x1="630" y1="165" x2="690" y2="165" stroke="#555555" stroke-width="2" marker-end="url(#arrowBlack)"/>
+  <text x="660" y="155" text-anchor="middle" font-size="11" fill="#505050">Full access</text>
+
+  <!-- Model (transparent) -->
+  <rect x="690" y="130" width="150" height="70" rx="8" fill="#0078d4" opacity="0.15" stroke="#0078d4" stroke-width="2"/>
+  <text x="765" y="155" text-anchor="middle" font-size="14" font-weight="600" fill="#005a9e">Model</text>
+  <text x="765" y="175" text-anchor="middle" font-size="11" fill="#005a9e">(transparent)</text>
+
+  <!-- Connectors: Model to internal details -->
+  <line x1="720" y1="200" x2="570" y2="220" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="765" y1="200" x2="710" y2="220" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="810" y1="200" x2="830" y2="220" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Internal details -->
+  <rect x="510" y="220" width="120" height="36" rx="6" fill="#e6f0fa" stroke="#0078d4" stroke-width="1"/>
+  <text x="570" y="243" text-anchor="middle" font-size="12" fill="#005a9e">Weights</text>
+
+  <rect x="650" y="220" width="120" height="36" rx="6" fill="#e6f0fa" stroke="#0078d4" stroke-width="1"/>
+  <text x="710" y="243" text-anchor="middle" font-size="12" fill="#005a9e">Architecture</text>
+
+  <rect x="790" y="220" width="80" height="36" rx="6" fill="#e6f0fa" stroke="#0078d4" stroke-width="1"/>
+  <text x="830" y="243" text-anchor="middle" font-size="12" fill="#005a9e">Code</text>
+
+  <!-- Targeted attacks arrow -->
+  <line x1="670" y1="270" x2="670" y2="300" stroke="#555555" stroke-width="2" marker-end="url(#arrowBlack)"/>
+
+  <!-- Result -->
+  <rect x="590" y="305" width="160" height="44" rx="8" fill="#0078d4"/>
+  <text x="670" y="332" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Targeted attacks</text>
+
+  <!-- Description -->
+  <text x="670" y="378" text-anchor="middle" font-size="12" fill="#333333">Full access to weights, architecture, code.</text>
+  <text x="670" y="396" text-anchor="middle" font-size="12" fill="#333333">Enables precise, efficient vulnerability discovery.</text>
+  <text x="670" y="414" text-anchor="middle" font-size="12" font-style="italic" fill="#595959">Used in internal security assessments.</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowBlack" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555555"/>
+    </marker>
+  </defs>
+</svg>
