@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.transition.traditional.ops.agent.automation
+uid: learn.wwl.transition-traditional-ops-agent-automation
 metadata:
   title: "Transition from Traditional Ops to Agentic DevOps Workflows"
   description: "Learn how to evolve traditional cloud administration and DevOps tasks into agentic AI workflows using agent instructions, skills, and multi-agent orchestration."
@@ -35,13 +35,13 @@ subjects:
 - devops
 - cloud-computing
 units:
-- learn.wwl-azure.transition.traditional.ops.agent.automation.introduction
-- learn.wwl-azure.transition.traditional.ops.agent.automation.understand-shift-manual-ops-ai-assisted
-- learn.wwl-azure.transition.traditional.ops.agent.automation.explore-agentic-devops-concept
-- learn.wwl-azure.transition.traditional.ops.agent.automation.define-agents-instructions-skills-prompts
-- learn.wwl-azure.transition.traditional.ops.agent.automation.design-multi-agent-workflows
-- learn.wwl-azure.transition.traditional.ops.agent.automation.exercise-transition-agent-automation
-- learn.wwl-azure.transition.traditional.ops.agent.automation.knowledge-check
-- learn.wwl-azure.transition.traditional.ops.agent.automation.summary
+- learn.wwl.transition-traditional-ops-agent-automation.introduction
+- learn.wwl.transition-traditional-ops-agent-automation.understand-shift-manual-ops-ai-assisted
+- learn.wwl.transition-traditional-ops-agent-automation.explore-agentic-devops-concept
+- learn.wwl.transition-traditional-ops-agent-automation.define-agents-instructions-skills-prompts
+- learn.wwl.transition-traditional-ops-agent-automation.design-multi-agent-workflows
+- learn.wwl.transition-traditional-ops-agent-automation.exercise-transition-agent-automation
+- learn.wwl.transition-traditional-ops-agent-automation.knowledge-check
+- learn.wwl.transition-traditional-ops-agent-automation.summary
 badge:
-  uid: learn.wwl-azure.transition.traditional.ops.agent.automation.badge
+  uid: learn.wwl.transition-traditional-ops-agent-automation.badge
