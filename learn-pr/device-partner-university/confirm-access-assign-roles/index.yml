@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.confirm-access-assign-roles
+title: Confirming access and assigning roles in Surface portals
+metadata:
+  title: Confirming Access And Assigning Roles In Surface Portals
+  description: 'In this module, you''ll learn how to confirm access and assign roles in Surface portals. You''ll understand the importance of confirming access and assigning appropriate roles to users in order to ensure a secure and efficient experience when using Surface portals.'
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn how to confirm access and assign roles in Surface portals. You'll understand the importance of confirming access and assigning appropriate roles to users in order to ensure a secure and efficient experience when using Surface portals.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Verify whether a Microsoft tenant exists.
+  - Identify the global administrator for a Microsoft tenant.
+  - Assign suitable roles for Surface portals.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/confirm-access-assign-roles-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.confirm-access-assign-roles.introduction
+  - learn.dpu.confirm-access-assign-roles.verify-whether-a-microsoft-tenant-exists
+  - learn.dpu.confirm-access-assign-roles.identify-the-global-administrator
+  - learn.dpu.confirm-access-assign-roles.assign-suitable-roles-for-surface-portals
+  - learn.dpu.confirm-access-assign-roles.knowledge-check
+  - learn.dpu.confirm-access-assign-roles.summary
+badge:
+  uid: learn.dpu.confirm-access-assign-roles.badge

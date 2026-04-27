@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.confirm-access-assign-roles.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Confirming access and assigning roles in Surface portals" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]
