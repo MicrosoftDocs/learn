@@ -33,8 +33,6 @@ You aren't necessarily required to clean up your local environment, but you can 
 
 If you no longer need the Azure AI Content Safety resource that you created for this workshop, delete the resource or delete the resource group that contains it. Deleting the resource group also deletes any other resources in that group, so verify that it doesn't contain resources you want to keep. For cleanup guidance, see [Clean up resources for Azure AI services](/azure/ai-services/multi-service-resource?pivots=azportal#clean-up-resources).
 
----
-
 ### Learn more
 
 - [Azure AI Content Safety overview](/azure/ai-services/content-safety/overview)
