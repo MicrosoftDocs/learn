@@ -3,26 +3,28 @@ uid: learn.ai-security-controls
 metadata:
   ms.author: ceperezb
   author: ceperezb
-  ms.date: 03/06/2026
+  ms.date: 04/24/2026
   ms.update-cycle: 180-days
   title: AI Security Controls
-  description: Security controls that you can implement in AI systems to increase the security posture of AI environments
+  description: Learn about the security controls you can implement to protect AI systems, including content filters, metaprompts, data security, grounding, and monitoring.
   ms.topic: module
   ms.collection:
-    - TBD
     - ce-advocates-ai-copilot
   ms.service: artificial-intelligence
 title: AI security controls
-summary: Overview of the security controls that you can implement in AI systems to increase the security posture of AI environments.
+summary: Learn about the security controls you can implement to protect AI systems from threats, including supply chain security, content filtering, data security, metaprompts, grounding, application security, and ongoing monitoring.
 abstract: |
-  After completing this module, you'll be able to:
-  - Describe security controls for AI systems
-  - Understand when these controls should be used
-  - Understand the types of attacks these controls mitigate
+  After completing this module, you're able to:
+  - Evaluate open-source AI libraries for security risks
+  - Describe content filtering and data security controls for AI systems
+  - Design metaprompts and grounding strategies as security controls
+  - Apply application security best practices to AI-enabled applications
+  - Describe monitoring strategies for detecting AI-specific threats
 prerequisites:  |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Fundamental security concepts
-  - Fundamental AI concepts
+  - Fundamental security concepts (for example, authentication, access control, encryption)
+  - Fundamental AI concepts (for example, models, training, inference)
+  - Completion of the [Fundamentals of AI security](/training/modules/fundamentals-of-ai-security/) module or equivalent knowledge
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -38,7 +40,8 @@ units:
 - learn.ai-security-controls.create-metaprompts
 - learn.ai-security-controls.ground-ai-systems
 - learn.ai-security-controls.implementing-application-security-best-practices-for-ai-enabled-applications
+- learn.ai-security-controls.monitor-detect-ai-threats
 - learn.ai-security-controls.knowledge-check
 - learn.ai-security-controls.summary
 badge:
-  uid: learn.ai-security-controls-badge
+  uid: learn.ai-security-controls.badge

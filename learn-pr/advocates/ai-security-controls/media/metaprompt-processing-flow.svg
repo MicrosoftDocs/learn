@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" role="img" aria-labelledby="title5 desc5">
+  <title id="title5">Metaprompt Processing Flow</title>
+  <desc id="desc5">Diagram showing how a system prompt (metaprompt) and user prompt are both processed by the AI model, then pass through content safety filters before reaching the user</desc>
+  <defs>
+    <marker id="arr5" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="860" height="280" fill="#FFFFFF"/>
+
+  <!-- System Prompt box (top-left) -->
+  <rect x="15" y="40" width="195" height="60" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="112" y="65" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">System Prompt</text>
+  <text x="112" y="82" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#FFFFFF">(Metaprompt)</text>
+
+  <!-- User Prompt box (bottom-left) -->
+  <rect x="15" y="170" width="195" height="55" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="112" y="202" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">User Prompt</text>
+
+  <!-- Converging arrows to AI Model -->
+  <line x1="210" y1="70" x2="298" y2="125" stroke="#424242" stroke-width="1.5" marker-end="url(#arr5)"/>
+  <line x1="210" y1="198" x2="298" y2="145" stroke="#424242" stroke-width="1.5" marker-end="url(#arr5)"/>
+
+  <!-- AI Model box (center) -->
+  <rect x="308" y="105" width="140" height="60" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="378" y="140" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">AI Model</text>
+
+  <!-- Arrow to Content Safety -->
+  <line x1="448" y1="135" x2="498" y2="135" stroke="#424242" stroke-width="1.5" marker-end="url(#arr5)"/>
+
+  <!-- Content Safety Filters box -->
+  <rect x="508" y="105" width="165" height="60" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="590" y="130" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Content Safety</text>
+  <text x="590" y="147" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Filters</text>
+
+  <!-- Arrow to Response -->
+  <line x1="673" y1="135" x2="718" y2="135" stroke="#424242" stroke-width="1.5" marker-end="url(#arr5)"/>
+
+  <!-- Response box -->
+  <rect x="728" y="108" width="118" height="54" rx="8" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+  <text x="787" y="130" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Response</text>
+  <text x="787" y="147" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">to User</text>
+</svg>

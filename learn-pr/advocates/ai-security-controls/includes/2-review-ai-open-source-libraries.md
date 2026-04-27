@@ -1,34 +1,54 @@
-Open-source software (OSS) is an integral part of modern software development, and AI OSS software is no different. Just like other OSS software, AI OSS tools and libraries need to undergo a comprehensive security review. When you are performing a security review, you need to perform the following steps:
+Open-source software (OSS) is an integral part of modern software development, and AI systems are no exception. AI projects typically depend on open-source frameworks, model libraries, pretrained models, and data processing tools. Just like other OSS components, AI-specific libraries introduce supply chain risks that require a comprehensive security review before adoption.
 
-- Assess the suitability of OSS libraries
-- Code review and dependency analysis
-- Documentation and community support
-- Vulnerability Scanning and Remediation:
+## Why AI open-source libraries need special attention
+
+AI OSS libraries carry some risks that go beyond those of traditional software dependencies:
+
+- **Pre-trained models**: Many AI libraries ship with or download pretrained models. A compromised model can contain backdoors or biased behavior that's difficult to detect through code review alone.
+- **Data pipeline dependencies**: AI libraries often handle data loading, transformation, and feature extraction. Vulnerabilities in these components can expose training data or allow data poisoning.
+- **Serialization risks**: AI models are frequently saved and loaded using serialization formats (such as pickle in Python). Deserializing untrusted model files can lead to arbitrary code execution.
+- **Rapid release cycles**: AI libraries evolve quickly, with frequent breaking changes. Organizations that pin to older versions may miss critical security patches.
+
+<!-- IMAGE PLACEHOLDER: Conceptual diagram
+Alt text: Diagram showing four AI-specific supply chain risks for open-source libraries
+Suggested source: Custom diagram needed
+Capture instructions: Create a diagram with four risk categories (pre-trained models with backdoors, data pipeline vulnerabilities, serialization/deserialization risks, rapid release cycles) branching from a central "AI OSS Library" node.
+Suggested filename: ai-oss-supply-chain-risks.png
+Priority: Medium
+-->
 
 ## Assess the suitability of OSS libraries
 
-You should assess the suitability of the OSS libraries you intend to use. You can do this from the perspective of context and purpose and general risk assessment.
+Before adopting an AI OSS library, evaluate it from both functional and security perspectives:
 
-- Context and purpose: Begin by understanding why you're reviewing an OSS library. Are you considering it for integration into your project, assessing its security, or ensuring compliance? Define the context and purpose of your review clearly and the criteria under which the review will be successful.
-- Risk Assessment: Consider the potential risks associated with using the library. Threat modeling helps identify attack vectors and security goals. Understand how the library fits into your application's attack surface.
+- **Context and purpose**: Define why you're reviewing this library. Are you integrating it into a production system, using it for experimentation, or evaluating it against alternatives? Establish clear acceptance criteria for the review.
+- **Risk assessment**: Consider the potential risks of using the library. Use threat modeling to identify attack vectors—how does this library fit into your application's attack surface? What happens if the library is compromised?
+- **License compliance**: Verify that the library's license is compatible with your organization's policies, especially for commercial or government use.
+- **Maintenance health**: Check how actively the library is maintained. Look at commit frequency, issue response times, and the number of active contributors. Abandoned or minimally maintained libraries are higher risk.
 
 ## Code review and dependency analysis
 
-You'll also need to perform a review an OSS library's code and an evaluation of the dependency chains. 
+Perform a technical review of the library's code and its dependency chain:
 
-- Code inspection: Examine into the library's source code. Look for security flaws, such as buffer overflows, injection vulnerabilities, and insecure cryptographic practices. Pay attention to authentication mechanisms, input validation, and error handling.
-- Dependency evaluation: Assess the library's dependencies. Outdated or vulnerable components can introduce risks. Use tools to identify known vulnerabilities in these dependencies.
+- **Code inspection**: Examine the library's source code for security flaws such as injection vulnerabilities, insecure cryptographic practices, and unsafe deserialization. Pay attention to authentication mechanisms, input validation, and error handling.
+- **Dependency evaluation**: Assess the library's transitive dependencies. Outdated or vulnerable components in the dependency tree can introduce risks even if the library's own code is secure.
+- **Software composition analysis (SCA)**: Use automated SCA tools to identify known vulnerabilities (CVEs) in the library and its dependencies. Many organizations integrate these tools into their CI/CD pipeline to catch issues early.
 
-## Documentation and community support
+## AI-specific supply chain controls
 
-Perform a review of the ecosystem supporting the OSS library.
+Beyond standard OSS review practices, apply these AI-specific controls:
 
-- Documentation quality: Evaluate the clarity and completeness of the library's documentation. Good documentation provides insights into security features, usage guidelines, and potential pitfalls.
-- Community engagement: Consider the library's community. Active maintainers and responsive communities are indicators of a healthy project. They can help address security issues promptly.
+- **Model provenance verification**: When a library includes pretrained models, verify where the model came from, who trained it, and whether the training data and process are documented. An AI bill of materials (AI-BOM)—a structured inventory of model components, training data sources, and dependencies—helps establish trust.
+- **Model scanning**: Scan downloaded model files for known malicious payloads before loading them. Avoid deserializing model files from untrusted sources.
+- **Reproducibility checks**: Where possible, verify that models can be reproduced from documented training data and configurations. This helps confirm that the model hasn't been tampered with.
+- **Sandboxed evaluation**: Test new AI libraries in isolated environments before deploying them in production to contain any unexpected behavior.
 
 ## Vulnerability scanning and remediation
 
-When using OSS libraries, you shouldn't assume that others have performed vulnerability checks. Instead should apply your own vulnerability assessment toolchain to the code you wish to adopt.
+Don't assume that others have performed vulnerability checks. Apply your own assessment toolchain:
 
-- Comprehensive scans: Use vulnerability scanners to identify potential security weaknesses. These tools analyze the library and its dependencies for known vulnerabilities.
-- Mitigation strategies: If vulnerabilities are detected, assess their impact and prioritize remediation. Patch or update the library as needed.
+- **Comprehensive scans**: Use vulnerability scanners to identify potential security weaknesses in the library and its dependencies.
+- **Prioritized remediation**: If vulnerabilities are detected, assess their impact and exploitability. Prioritize fixes based on severity and exposure.
+- **Continuous monitoring**: OSS vulnerability databases are updated regularly. Set up automated alerts for new CVEs affecting libraries in your AI stack.
+
+:::image type="content" source="../media/ai-oss-library-review-process.png" alt-text="Flowchart of the AI open-source library security review process from assessment to approval." lightbox="../media/ai-oss-library-review-process.png":::
