@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="titleDE descDE">
+  <title id="titleDE">AI Data Exfiltration Types</title>
+  <desc id="descDE">Diagram showing three types of AI data exfiltration: model theft, training data extraction, and interaction data leakage, each with example attack vectors.</desc>
+  <defs>
+    <marker id="arrDE" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <rect x="240" y="25" width="480" height="52" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="480" y="59" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">AI Data Exfiltration Attack Vectors</text>
+
+  <!-- Column 1: Model Theft -->
+  <rect x="30" y="110" width="280" height="58" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="170" y="146" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="bold" fill="#A4262C">Model Theft</text>
+
+  <line x1="170" y1="168" x2="170" y2="198" stroke="#424242" stroke-width="1.5" marker-end="url(#arrDE)"/>
+
+  <rect x="30" y="208" width="280" height="66" rx="8" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+  <text x="170" y="234" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Repeated API queries to</text>
+  <text x="170" y="258" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">replicate model behavior</text>
+
+  <line x1="170" y1="274" x2="170" y2="304" stroke="#424242" stroke-width="1.5" marker-end="url(#arrDE)"/>
+
+  <rect x="30" y="314" width="280" height="66" rx="8" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+  <text x="170" y="340" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Unauthorized access to</text>
+  <text x="170" y="364" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">model weights or artifacts</text>
+
+  <!-- Column 2: Training Data Extraction -->
+  <rect x="340" y="110" width="280" height="58" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="480" y="146" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="bold" fill="#A4262C">Training Data Extraction</text>
+
+  <line x1="480" y1="168" x2="480" y2="198" stroke="#424242" stroke-width="1.5" marker-end="url(#arrDE)"/>
+
+  <rect x="340" y="208" width="280" height="66" rx="8" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+  <text x="480" y="234" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Membership inference:</text>
+  <text x="480" y="258" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">was data X in training set?</text>
+
+  <line x1="480" y1="274" x2="480" y2="304" stroke="#424242" stroke-width="1.5" marker-end="url(#arrDE)"/>
+
+  <rect x="340" y="314" width="280" height="66" rx="8" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+  <text x="480" y="340" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Model inversion: reconstruct</text>
+  <text x="480" y="364" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">private data from outputs</text>
+
+  <!-- Column 3: Interaction Data Leakage -->
+  <rect x="650" y="110" width="280" height="58" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="790" y="146" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="bold" fill="#A4262C">Interaction Data Leakage</text>
+
+  <line x1="790" y1="168" x2="790" y2="198" stroke="#424242" stroke-width="1.5" marker-end="url(#arrDE)"/>
+
+  <rect x="650" y="208" width="280" height="66" rx="8" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+  <text x="790" y="234" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Prompt injection to extract</text>
+  <text x="790" y="258" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">conversation context</text>
+
+  <line x1="790" y1="274" x2="790" y2="304" stroke="#424242" stroke-width="1.5" marker-end="url(#arrDE)"/>
+
+  <rect x="650" y="314" width="280" height="66" rx="8" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+  <text x="790" y="340" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">Access to stored logs and</text>
+  <text x="790" y="364" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#1A1A1A">API communication data</text>
+
+  <!-- Bottom summary bar -->
+  <rect x="30" y="425" width="900" height="56" rx="8" fill="#FFF4CE" stroke="#C49C00" stroke-width="2"/>
+  <text x="480" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#1A1A1A">Mitigation: least privilege, encryption, rate limiting, retention policies, behavioral monitoring</text>
+
+</svg>

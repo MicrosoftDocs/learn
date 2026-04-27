@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="titleMM descMM">
+  <title id="titleMM">Model Manipulation Attack Surface</title>
+  <desc id="descMM">Diagram showing two model manipulation attack vectors: model poisoning targeting the training pipeline and data poisoning targeting the training dataset, both leading to a compromised deployed model.</desc>
+  <defs>
+    <marker id="arrMM" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+    <marker id="arrMM2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#A4262C"/>
+    </marker>
+  </defs>
+  <rect width="900" height="440" fill="#FFFFFF"/>
+
+  <!-- Title bar -->
+  <rect x="250" y="15" width="400" height="44" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="450" y="43" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">Model Manipulation Attack Surface</text>
+
+  <!-- Normal pipeline flow (top row) -->
+  <!-- Training Data -->
+  <rect x="40" y="110" width="190" height="60" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="135" y="146" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">Training Data</text>
+
+  <line x1="230" y1="140" x2="290" y2="140" stroke="#424242" stroke-width="1.5" marker-end="url(#arrMM)"/>
+
+  <!-- Training Pipeline -->
+  <rect x="300" y="110" width="200" height="60" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="400" y="146" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">Training Pipeline</text>
+
+  <line x1="500" y1="140" x2="560" y2="140" stroke="#424242" stroke-width="1.5" marker-end="url(#arrMM)"/>
+
+  <!-- Trained Model -->
+  <rect x="570" y="110" width="180" height="60" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="660" y="146" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">Trained Model</text>
+
+  <line x1="660" y1="170" x2="660" y2="210" stroke="#424242" stroke-width="1.5" marker-end="url(#arrMM)"/>
+
+  <!-- Deployed Model -->
+  <rect x="570" y="220" width="180" height="60" rx="10" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="660" y="256" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">Deployed Model</text>
+
+  <!-- Attack 1: Data Poisoning -->
+  <rect x="40" y="270" width="220" height="70" rx="10" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="150" y="298" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#A4262C">Data Poisoning</text>
+  <text x="150" y="320" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#1A1A1A">Corrupts training dataset</text>
+
+  <!-- Arrow from Data Poisoning to Training Data -->
+  <path d="M 150 270 L 150 180" fill="none" stroke="#A4262C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrMM2)"/>
+
+  <!-- Attack 2: Model Poisoning -->
+  <rect x="300" y="270" width="220" height="70" rx="10" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="410" y="298" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#A4262C">Model Poisoning</text>
+  <text x="410" y="320" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#1A1A1A">Tampers with training code</text>
+
+  <!-- Arrow from Model Poisoning to Training Pipeline -->
+  <path d="M 410 270 L 410 180" fill="none" stroke="#A4262C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrMM2)"/>
+
+  <!-- Result arrow: both lead to compromised model -->
+  <rect x="260" y="375" width="380" height="50" rx="10" fill="#FFF4CE" stroke="#C49C00" stroke-width="2"/>
+  <text x="450" y="406" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#1A1A1A">Result: Compromised model with hidden behaviors</text>
+
+  <line x1="660" y1="280" x2="640" y2="370" stroke="#A4262C" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrMM2)"/>
+</svg>

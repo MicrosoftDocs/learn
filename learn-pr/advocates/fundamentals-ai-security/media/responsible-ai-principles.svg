@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="titleRAI descRAI">
+  <title id="titleRAI">Responsible AI Principles</title>
+  <desc id="descRAI">Hexagonal layout showing the six responsible AI principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability, all surrounding a central AI label.</desc>
+  <rect width="700" height="700" fill="#FFFFFF"/>
+
+  <!-- Center circle -->
+  <circle cx="350" cy="350" r="72" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="350" y="344" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Responsible</text>
+  <text x="350" y="368" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">AI</text>
+
+  <!-- Principle 1: Fairness (top) -->
+  <rect x="245" y="40" width="210" height="60" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="350" y="77" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A">Fairness</text>
+  <line x1="350" y1="100" x2="350" y2="278" stroke="#424242" stroke-width="1.5"/>
+
+  <!-- Principle 2: Reliability & Safety (top-right) -->
+  <rect x="500" y="140" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="590" y="170" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">Reliability</text>
+  <text x="590" y="192" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">&amp; Safety</text>
+  <line x1="500" y1="195" x2="415" y2="320" stroke="#424242" stroke-width="1.5"/>
+
+  <!-- Principle 3: Privacy & Security (bottom-right) -->
+  <rect x="500" y="480" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="590" y="510" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">Privacy</text>
+  <text x="590" y="532" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#1A1A1A">&amp; Security</text>
+  <line x1="500" y1="500" x2="415" y2="385" stroke="#424242" stroke-width="1.5"/>
+
+  <!-- Principle 4: Inclusiveness (bottom) -->
+  <rect x="245" y="590" width="210" height="60" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="350" y="627" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A">Inclusiveness</text>
+  <line x1="350" y1="590" x2="350" y2="422" stroke="#424242" stroke-width="1.5"/>
+
+  <!-- Principle 5: Transparency (bottom-left) -->
+  <rect x="20" y="480" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="110" y="522" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A">Transparency</text>
+  <line x1="200" y1="500" x2="285" y2="385" stroke="#424242" stroke-width="1.5"/>
+
+  <!-- Principle 6: Accountability (top-left) -->
+  <rect x="20" y="140" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="110" y="182" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600" fill="#1A1A1A">Accountability</text>
+  <line x1="200" y1="195" x2="285" y2="320" stroke="#424242" stroke-width="1.5"/>
+</svg>
