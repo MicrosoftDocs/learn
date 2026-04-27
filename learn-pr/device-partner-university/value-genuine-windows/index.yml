@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.dpu.value-genuine-windows
+title: The value of genuine Windows
+metadata:
+  title: The value of genuine Windows
+  description: ' In this module, you’ll explore the core concepts behind genuine Windows, including outcomes related to authenticity, trust, security, and risk. '
+  ms.date: 04/23/2026
+  author: sheridan-connor
+  ms.author: # PLACEHOLDER
+  ms.topic: module
+  ms.service: windows-11
+summary: >2+
+  Software authenticity affects more than licensing—it influences system integrity, long-term reliability, and the risks people take when they depend on their devices for everyday work.
+  In this module, you’ll explore the core concepts behind genuine Windows, including outcomes related to authenticity, trust, security, and risk. These concepts help explain why genuine Windows matters and how authenticity helps organizations make more confident, informed decisions.
+
+
+abstract: |2+
+
+  By the end of this module, you’ll be able to:
+    - Define what genuine Windows means in terms of software authenticity.
+    - Explain how authenticity and system integrity contribute to trust, security, and reliability.
+    - Distinguish between scenarios that reflect genuine and non genuine Windows and the associated risks. 
+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.value-genuine-windows.introduction
+  - learn.dpu.value-genuine-windows.software-authenticity-concepts
+  - learn.dpu.value-genuine-windows.trust-system-integrity-concepts
+  - learn.dpu.value-genuine-windows.security-reliability-concepts
+  - learn.dpu.value-genuine-windows.licensing-compliance-risk-concepts
+  - learn.dpu.value-genuine-windows.exercise-authenticity-concepts
+  - learn.dpu.value-genuine-windows.knowledge-check
+  - learn.dpu.value-genuine-windows.summary
+badge:
+  uid: learn.dpu.value-genuine-windows.badge

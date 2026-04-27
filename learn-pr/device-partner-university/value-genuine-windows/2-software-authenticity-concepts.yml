@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.value-genuine-windows.software-authenticity-concepts
+title: Genuine Windows and software authenticity concepts
+metadata:
+  title: Genuine Windows And Software Authenticity Concepts
+  description: This content is part of the "The value of Genuine Windows" module.
+  ms.date: 04/23/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-software-authenticity-concepts.md)]

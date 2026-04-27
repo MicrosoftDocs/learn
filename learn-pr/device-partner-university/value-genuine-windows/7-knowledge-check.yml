@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.value-genuine-windows.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "The value of Genuine Windows" module.
+  ms.date: 04/23/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does it mean when Windows is described as \"genuine\" in this module?"
+    choices:
+        - content: "It's properly licensed, unaltered, and verified as software that Microsoft created and supports."
+          isCorrect: true
+          explanation: "Correct. The module defines genuine Windows as software that is properly licensed, unaltered, and verified as created and supported by Microsoft."
+        - content: "It has the most recent feature updates installed."
+          isCorrect: false
+          explanation: "Incorrect. While updates are discussed as part of long-term outcomes, having updates alone doesn't define genuine Windows."
+        - content: "It performs faster than non-genuine versions of Windows."
+          isCorrect: false
+          explanation: "Incorrect. Performance speed isn't used to define whether Windows is genuine in the module."
+        - content: "It includes extra applications not available in other versions."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't associate genuineness with extra applications."
+  - content: "How does software authenticity relate to trust according to the module?"
+    choices:
+        - content: "Authenticity and system integrity together establish long-term confidence in system behavior."
+          isCorrect: true
+          explanation: "Correct. The module explains that authenticity and integrity combine to produce trust, defined as confidence in how a system behaves over time."
+        - content: "Trust is based mainly on how the system looks and feels to users."
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes that trust isn't based on appearances but on predictable behavior over time."
+        - content: "Trust depends only on visible security features."
+          isCorrect: false
+          explanation: "Incorrect. Trust is described as an outcome of authenticity and integrity, not just visible features."
+        - content: "Authenticity matters only during initial device setup."
+          isCorrect: false
+          explanation: "Incorrect. Authenticity is presented as important throughout the system's lifecycle, not just at setup."
+  - content: "Which outcome is more likely over time when Windows is non-genuine?"
+    choices:
+        - content: "Increased uncertainty about system stability and security"
+          isCorrect: true
+          explanation: "Correct. The module explains that non-genuine Windows can weaken security posture and reduce confidence in reliability over time."
+        - content: "Greater confidence in long-term standardization"
+          isCorrect: false
+          explanation: "Incorrect. Higher confidence in standardization is associated with genuine Windows, not non-genuine software."
+        - content: "More predictable system behavior as conditions change"
+          isCorrect: false
+          explanation: "Incorrect. Predictable behavior over time is presented as a benefit of genuine Windows."
+        - content: "Clear alignment with licensing and compliance requirements"
+          isCorrect: false
+          explanation: "Incorrect. Non-genuine Windows introduces uncertainty around licensing and compliance."
+  - content: "Why does the module state that genuine Windows matters even when a system appears to work normally?"
+    choices:
+        - content: "Because hidden risks might emerge over time despite normal surface-level behavior"
+          isCorrect: true
+          explanation: "Correct. The module repeatedly emphasizes that non-genuine Windows can introduce hidden risks that aren't immediately visible."
+        - content: "Because non-genuine systems immediately fail under load"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't claim that non-genuine systems fail immediately."
+        - content: "Because users can easily see all differences between genuine and non-genuine systems"
+          isCorrect: false
+          explanation: "Incorrect. The module notes that it's often hard to tell the difference at first glance."
+        - content: "Because appearance is the primary indicator of system reliability"
+          isCorrect: false
+          explanation: "Incorrect. The module explicitly contrasts short-term appearance with long-term confidence and reliability."
