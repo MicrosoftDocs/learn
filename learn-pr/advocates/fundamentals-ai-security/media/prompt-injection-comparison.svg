@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 460" role="img" aria-labelledby="titlePI descPI">
+  <title id="titlePI">Direct vs Indirect Prompt Injection</title>
+  <desc id="descPI">Side-by-side comparison of direct prompt injection where a user types malicious input, versus indirect prompt injection where malicious instructions are hidden in retrieved content.</desc>
+  <defs>
+    <marker id="arrPI" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="1060" height="460" fill="#FFFFFF"/>
+
+  <!-- Section Headers -->
+  <rect x="40" y="35" width="450" height="46" rx="8" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="265" y="65" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#1A1A1A">Direct Prompt Injection</text>
+
+  <rect x="555" y="35" width="460" height="46" rx="8" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="785" y="65" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#1A1A1A">Indirect Prompt Injection</text>
+
+  <!-- Divider -->
+  <line x1="530" y1="35" x2="530" y2="430" stroke="#424242" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- LEFT: Direct Injection Flow -->
+  <!-- Attacker -->
+  <rect x="100" y="110" width="200" height="50" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="200" y="141" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Attacker (User)</text>
+
+  <line x1="200" y1="160" x2="200" y2="190" stroke="#424242" stroke-width="1.5" marker-end="url(#arrPI)"/>
+
+  <!-- Malicious prompt -->
+  <rect x="80" y="200" width="240" height="55" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="200" y="223" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" fill="#1A1A1A">Malicious prompt typed</text>
+  <text x="200" y="243" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" fill="#1A1A1A">directly into AI chat</text>
+
+  <line x1="320" y1="227" x2="365" y2="227" stroke="#A4262C" stroke-width="2" marker-end="url(#arrPI)"/>
+
+  <!-- AI Model -->
+  <rect x="375" y="200" width="120" height="55" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="435" y="233" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">AI Model</text>
+
+  <line x1="435" y1="255" x2="435" y2="295" stroke="#424242" stroke-width="1.5" marker-end="url(#arrPI)"/>
+
+  <!-- Compromised output -->
+  <rect x="350" y="305" width="170" height="50" rx="8" fill="#FFF4CE" stroke="#C49C00" stroke-width="2"/>
+  <text x="435" y="336" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Compromised output</text>
+
+  <!-- Attack path label -->
+  <text x="265" y="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#A4262C" font-style="italic">Attack enters via user input</text>
+
+  <!-- RIGHT: Indirect Injection Flow -->
+  <!-- Legitimate user -->
+  <rect x="610" y="110" width="200" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="710" y="141" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Legitimate User</text>
+
+  <line x1="710" y1="160" x2="710" y2="190" stroke="#424242" stroke-width="1.5" marker-end="url(#arrPI)"/>
+
+  <!-- Normal prompt -->
+  <rect x="620" y="200" width="180" height="55" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="710" y="233" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Normal prompt</text>
+
+  <line x1="800" y1="227" x2="845" y2="227" stroke="#424242" stroke-width="1.5" marker-end="url(#arrPI)"/>
+
+  <!-- AI Model -->
+  <rect x="855" y="200" width="120" height="55" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="915" y="233" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">AI Model</text>
+
+  <!-- External data with hidden payload -->
+  <rect x="840" y="110" width="155" height="55" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="917" y="131" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" fill="#1A1A1A">Retrieved content</text>
+  <text x="917" y="151" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" fill="#A4262C">(hidden payload)</text>
+
+  <line x1="915" y1="165" x2="915" y2="195" stroke="#A4262C" stroke-width="2" marker-end="url(#arrPI)"/>
+
+  <line x1="915" y1="255" x2="915" y2="295" stroke="#424242" stroke-width="1.5" marker-end="url(#arrPI)"/>
+
+  <!-- Compromised output -->
+  <rect x="815" y="305" width="200" height="50" rx="8" fill="#FFF4CE" stroke="#C49C00" stroke-width="2"/>
+  <text x="915" y="336" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Compromised output</text>
+
+  <!-- Attack path label -->
+  <text x="785" y="400" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#A4262C" font-style="italic">Attack enters via external data</text>
+</svg>

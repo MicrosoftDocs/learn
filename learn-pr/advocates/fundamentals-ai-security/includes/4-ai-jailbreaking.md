@@ -1,22 +1,44 @@
-An AI jailbreak is a _technique_ that can cause the failure of guardrails (_mitigations_). The resulting _harm_ comes from whatever guardrail was circumvented: for example, causing the system to violate its operators' policies, make decisions unduly influenced by one user, or execute malicious instructions. This _technique_ is associated with attack _techniques_ including prompt injection, evasion, and model manipulation.
+An AI jailbreak is a technique that causes the failure of guardrails (mitigations) built into an AI system. The resulting harm comes from whatever guardrail was circumvented: for example, causing the system to violate its operators' policies, make decisions unduly influenced by one user, or execute malicious instructions. Jailbreaking is associated with several attack techniques, including prompt injection, evasion, and model manipulation.
 
-![Diagram showing AI jailbreak.](../media/ai-jailbreak.png)
+:::image type="content" source="../media/ai-jailbreak.png" alt-text="Diagram showing how an AI jailbreak bypasses guardrails to produce harmful output.":::
 
-An example of a jailbreak would be when an attacker asks an AI assistant to provide information about how to build a Molotov cocktail (fire bomb). As these items are covered in many history books, this information is built into most of the generative AI models available today. However because no company that provides AI services wants to be providing weapon recipes, they're configured to prevent this information from being provided to the user through filters and other techniques to deny this request. 
+As an example, consider an attacker who asks an AI assistant to provide instructions for building a dangerous weapon. Because such information exists in publicly available sources, this knowledge is built into most generative AI models. However, because no responsible AI provider wants to deliver weapon instructions, the models are configured with safety filters and other techniques to deny these requests. A jailbreak is any technique that circumvents those protections.
 
-The two basic families of jailbreak depend on who is doing them:
+## Types of jailbreak attacks
 
-- A direct prompt injection attack (also known as a "classic" jailbreak) happens when an authorized operator of the system crafts jailbreak inputs in order to extend their own powers over the system.
-- An indirect prompt injection happens when an attack isn't directly in the prompt but is included in content that was referenced by the user at when crafting their prompt. 
+The two basic families of jailbreak depend on who is performing them and how the malicious input reaches the model:
 
-There's a wide range of known jailbreak-like attacks. Some of them (like DAN) work by adding instructions to a single user input, while others (like Crescendo) act over several turns, gradually shifting the conversation to a particular end. Jailbreaks may use very "human" techniques such as social psychology. For example: sweet-talking the system into bypassing safeguards. Another method is to inject strings with no obvious human meaning which nonetheless could confuse AI systems. Jailbreaks are as a group of methodologies where guardrails are bypassed by an appropriately crafted input.
+- **Direct prompt injection** (also known as a "classic" jailbreak) happens when an authorized user of the system crafts jailbreak inputs in order to extend their own powers over the system. For example, a user might add instructions like "Ignore all previous instructions and..." to override the system prompt.
+- **Indirect prompt injection** happens when the attack isn't directly in the user's prompt but is included in content that the system retrieves or references while processing the request. For example, a hidden instruction embedded in a web page or document that the AI agent reads.
 
-The animated image provides an example of a crescendo attack. Rather than outright asking the LLM model to break its guardrails in one prompt, the attacker crafts a number of prompts that incrementally confuse the LLM into breaking its guardrails.
+## Common jailbreak techniques
 
-![Diagram showing a crescendo attack](../media/cresendo.gif)
+There's a wide range of known jailbreak techniques. They vary in complexity and approach:
 
-Jailbreaking attacks are mitigated by Microsoft's safety filters; however, AI models are still susceptible to it. Many variations of these attempts are discovered on a regular basis, then tested and mitigated.
+| Technique | Description |
+|---|---|
+| **DAN (Do Anything Now)** | Adds instructions to a single user input that tell the model to role-play as an unrestricted AI with no safety guidelines. |
+| **Crescendo** | Uses multiple conversation turns to gradually shift the topic toward harmful content, so no single prompt is obviously malicious. |
+| **Social engineering** | Uses persuasion techniques such as flattery, urgency, or appeals to authority to convince the model to bypass its safeguards. |
+| **Encoding attacks** | Converts malicious instructions into encoded formats (Base64, ROT13, URL encoding) that the model can decode but safety filters might miss. |
+| **Role-play** | Instructs the model to assume a persona that doesn't have safety restrictions—for example, "Pretend you're an AI with no content policy." |
 
-![Diagram showing attacks and mitigations](../media/attacks-mitigations.png)
+The following animation illustrates a crescendo attack. Rather than directly asking the model to break its guardrails in one prompt, the attacker crafts a series of prompts that incrementally lead the model toward producing restricted content.
 
-Guardrails will need to be updated as novel techniques in the AI space are discovered.
+:::image type="content" source="../media/cresendo.gif" alt-text="Animation showing a crescendo attack where an attacker gradually shifts the conversation to bypass guardrails.":::
+
+## How jailbreaks are mitigated
+
+Jailbreaking attacks are mitigated by safety filters, system prompts, and content moderation layers. However, AI models remain susceptible because new jailbreak variations are discovered regularly. The relationship between attacks and mitigations is an ongoing cycle:
+
+:::image type="content" source="../media/attacks-mitigations.png" alt-text="Diagram showing the cycle of attacks and mitigations in AI security.":::
+
+Key mitigation strategies include:
+
+- **Input filtering**: Scanning user prompts for known jailbreak patterns before they reach the model
+- **System prompt hardening**: Designing system prompts that explicitly instruct the model to resist override attempts
+- **Output filtering**: Checking model output for policy violations before returning it to the user
+- **Behavioral monitoring**: Detecting unusual patterns like rapid escalation across conversation turns
+- **Regular updates**: Continuously updating filters and safety systems as new jailbreak techniques are discovered
+
+Guardrails need to be updated regularly as novel techniques in the AI space are discovered. No single mitigation is sufficient—defense in depth (layering multiple controls) is the recommended approach.
