@@ -9,5 +9,3 @@ In a technology-driven era, the convergence of AI and education yields numerous 
 1. Papaspyridis A. [AI in Higher Education: opportunities and considerations](https://news.microsoft.com/apac/2020/03/26/ai-in-higher-education-opportunities-and-considerations/). Microsoft. Published March 26, 2020. Accessed May 28, 2025.
 
 1. [Preparing students for the future](https://educationblog.microsoft.com/2023/04/preparing-students-for-the-future). Microsoft. Published April 11, 2023. Accessed May 28, 2025.
-
-1. [Empowering Learning and well-being in the city of Helsinki using data and AI](https://customers.microsoft.com/story/1477362858581906559-helsinki-k12-edu-azure-en-finland). Microsoft. Published March 29, 2022. Accessed May 28, 2025.
