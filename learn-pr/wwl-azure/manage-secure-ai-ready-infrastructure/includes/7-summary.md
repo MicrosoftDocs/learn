@@ -10,9 +10,9 @@ Contoso's customer support AI agent now runs on secure, production-ready infrast
 ## Additional resources
 
 - [Secure Azure solutions with Azure Key Vault](/training/modules/secure-azure-solutions-with-azure-key-vault/) - Microsoft Learn module covering Key Vault deployment, secret management, and managed identity integration for centralized credential storage
-- [Monitor Azure resources with Azure Monitor](/training/modules/monitor-azure-resources/) - Comprehensive guide to implementing monitoring and alerting for Azure services including Activity Log analysis, metric alerts, and Log Analytics queries
+- [Monitor Azure resources with Azure Monitor](/training/paths/az-104-monitor-backup-resources/) - Comprehensive guide to implementing monitoring and alerting for Azure services including Activity Log analysis, metric alerts, and Log Analytics queries
 - [Microsoft Azure Well-Architected Framework](/azure/well-architected/) - Best practices and design principles for reliability, security, cost optimization, operational excellence, and performance efficiency across Azure workloads
-- [Optimize performance and costs in Azure Cosmos DB](/training/modules/optimize-performance-costs-azure-cosmos-db/) - Microsoft Learn module covering partition key design, consistency level selection, throughput provisioning strategies, and cost optimization techniques
+- [Optimize performance and costs in Azure Cosmos DB](/azure/cosmos-db/optimize-costs) - Microsoft Learn module covering partition key design, consistency level selection, throughput provisioning strategies, and cost optimization techniques
 - [Azure Security Engineer Associate certification (AZ-500)](/certifications/azure-security-engineer/) - Professional certification path validating skills in implementing security controls, managing identity and access, and securing data and applications on Azure
 
 

@@ -28,7 +28,7 @@ There are a few things that separate traditional NLPs from LLMs.
 |---|---|
 | One model per capability is needed. | A single model is used for many natural language use cases. |
 | Provides a set of labeled data to train the ML model. | Uses many terabytes of unlabeled data in the foundation model. |
-| Describes in natural language what you want the model to do. | Highly optimized for specific use cases. |
+| Highly optimized for specific use cases. | Describes in natural language what you want the model to do. |
 
 ## What doesn't an LLM do?
 

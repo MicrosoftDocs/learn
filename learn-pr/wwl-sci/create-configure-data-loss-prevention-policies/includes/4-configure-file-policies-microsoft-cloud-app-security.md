@@ -1,46 +1,75 @@
-Microsoft Defender for Cloud Apps built-in DLP engine performs content inspection by extracting text from all common file types (100+) including Office, Open Office, compressed files, various rich text formats, XML, HTML, and more.
+File policies in Defender for Cloud Apps let you scan files in connected cloud apps, detect sensitive content, and take automated action. For example, you might create a file policy that finds externally shared files containing financial data in a connected Box instance and automatically revokes the shared link.
 
-The engine combines three aspects under each policy:
+## How file policies inspect content
 
-- Content scan based on preset templates or custom expressions.
+The built-in data loss prevention (DLP) engine extracts text from more than 100 common file types, including Office files, Open Office files, compressed files, rich text formats, XML, and HTML.
 
-- Context filters including user roles, file metadata, sharing level, organizational group integration, collaboration context, and additional customizable attributes.
+Each file policy combines three elements. Consider a policy that detects externally shared files containing credit card numbers in a connected Dropbox instance:
 
-- Automated actions for governance and remediation.
+- **Content scan** identifies files that match sensitive information types or custom expressions. In this case, credit card number patterns.
+- **Context filters** narrow the scope based on metadata like sharing level, file owner, or app. Here, you'd filter to files with an external sharing level.
+- **Automated actions** define what happens when both conditions match, such as revoking external access or sending an alert.
 
-Once enabled, the policy continuously scans your cloud environment and identifies files that match the content and context filters and applies the requested automated actions. These policies detect and remediate any violations for at-rest information or when new content is created. Policies can be monitored using real-time alerts or using console-generated reports.
+These three elements determine whether a policy is useful or noisy. A broad content scan with a narrow context filter catches only the files that matter. A narrow content scan with no context filter catches everything that matches, regardless of how it's shared.
 
-The other option is to use the Data Classification Service that is also employed by the DLP policies configured in the Microsoft Purview compliance portal. You can use this option to have a uniform experience across all your configured DLP policies.
+Once enabled, the policy continuously scans your cloud environment, both existing files and new content, for matches and applies the configured actions. You can monitor results by using real-time alerts or console-generated reports.
 
-## Creating a new file policy
+## Choose an inspection method
 
-To create a file policy, follow this procedure:
+File policies support two inspection methods:
 
-1. In the **Microsoft Defender for Cloud Apps** portal at [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/?azure-portal=true), select **Control** followed by **Policies**.
-1. Select **+ Create policy** and select **File policy**.
-1. Give your policy a name and description, if you want you can base it on a template.
-1. Give your policy a **Policy severity**. If you have set Defender for Cloud Apps to send you notifications on policy matches for a specific policy severity level, this level is used to determine whether the policy's matches trigger a notification.
-1. Within **Category**, link the policy to the most appropriate risk type. This field is informative only and helps you search for specific policies and alerts later, based on risk type. The risk may already be preselected according to the category for which you chose to create the policy. By default, File policies are set to DLP.
-1. **Create a filter for the files this policy will act on** to set which discovered apps trigger this policy. Narrow down the policy filters until you reach an accurate set of files you wish to act upon. Be as restrictive as possible to avoid false positives. For example, if you wish to remove public permissions, remember to add the **Public** filter, if you wish to remove an external user, use the **External** filter etc.
-1. Under the **Apply to** filter, select **all files excluding selected folders** or **selected folders** for Box, SharePoint, Dropbox, OneDrive, where you can enforce your file policy over all files on the app or on specific folders. You're redirected to sign-in to the cloud app, and then add the relevant folders.
-1. Under the **Select user groups** filter, select either **all file owners, file owners from selected user groups** or **all file owners excluding selected groups**. Then select the relevant user groups to determine which users and groups should be included in the policy.
-1. Select the content **Inspection method**. You can select either [Built-in DLP](/cloud-app-security/content-inspection-built-in) or [Data Classification Services](/cloud-app-security/content-inspection?azure-portal=true).
-1. Choose the **Governance** actions you want Defender for Cloud Apps to take when a match is detected and select **Create**.
+- **Built-in DLP** uses Defender for Cloud Apps content inspection capabilities.
+- **Data Classification Service** uses the same sensitive information types and trainable classifiers you already manage in Microsoft Purview.
 
-Once you've created your policy, you can view it in the **Information protection** tab. You can edit a policy, calibrate its filters, or change the automated actions.
+If you already maintain sensitive information types and trainable classifiers in Purview, the Data Classification Service lets your file policies use those same definitions, so you're not maintaining two separate sets of detection rules.
 
-The policy is automatically enabled upon creation and starts scanning your cloud files immediately. Take extra care when you set governance actions, they could lead to irreversible loss of access permissions to your files.
+## Create a new file policy
 
-It's recommended to narrow down the filters to exactly represent the files that you wish to act upon, using multiple search fields. The narrower the filters, the better. For guidance, you can use the **Edit and preview results** button in the Filters section.
+File policies are enabled immediately upon creation and begin scanning right away.
+
+> [!CAUTION]
+> Don't enable governance actions on a new file policy until you've reviewed the initial matches. Overly broad filters combined with actions like quarantine or access revocation can cause widespread, irreversible disruption.
+
+### Step 1: Create the policy with monitoring only
+
+1. In the **Microsoft Defender** portal at [https://security.microsoft.com](https://security.microsoft.com/?azure-portal=true), under **Cloud Apps**, go to **Policies** > **Policy management**.
+1. Select the **Information Protection** tab.
+1. Select **Create policy** and select **File policy**.
+1. Give your policy a name and description.
+1. Assign a **Policy severity**. The **Policy severity** setting determines whether matches trigger notifications based on your configured severity levels.
+1. Within **Category**, select the most appropriate risk type. The **Category** field helps you filter policies and alerts later. File policies default to DLP.
+1. **Create a filter for the files this policy will act on.** Be as restrictive as possible to avoid false positives. For example, if you want to target publicly shared files, add the **Public** filter. To target files shared with external users, use the **External** filter.
+1. Under **Apply to**, choose whether the policy covers all files or only specific folders within your connected apps. Scoping to specific folders reduces noise and focuses the policy on high-risk locations.
+1. Under **Select user groups**, choose which file owners the policy applies to. You can include all owners, specific groups, or exclude groups.
+1. Select the content **Inspection method**. You can select either [Built-in DLP](/defender-cloud-apps/content-inspection-built-in) or [Data Classification Services](/defender-cloud-apps/content-inspection?azure-portal=true). The Data Classification Service is recommended for a consistent experience across your DLP policies.
+1. Leave **Governance** actions unset for now and select **Create**.
+
+Use the **Edit and preview results** button in the Filters section to verify your filters match the intended files before the policy starts scanning.
+
+### Step 2: Review matches and validate scope
+
+After the policy runs, review the matches to confirm it's detecting the right files. If you see unexpected results, such as too many matches, matches from apps you didn't intend to cover, or matches on files that shouldn't qualify, adjust the filters before proceeding. See the "File policy matches" section later in this unit for how to review results.
+
+### Step 3: Add governance actions
+
+Once you're satisfied that the policy scope is correct, edit the policy to add governance actions. Choose actions appropriate to the risk. For example, revoke external sharing on files with exposed financial data, or quarantine files that violate a regulatory requirement.
+
+You can edit the policy and adjust filters or actions at any time from the **Information protection** tab.
 
 > [!NOTE]
-> The Inspection method supports several built-in sensitive information types and custom expressions that can be substrings, exact string matches, and regular expressions, which are the most powerful method to find the targeted information. Creating and maintaining the correct regular expressions is a recurring task and more information can be found in the resource section of this module.
+> The Inspection method supports built-in sensitive information types and custom expressions including substrings, exact string matches, and regular expressions. For more information, see [Working with the RegEx engine](/defender-cloud-apps/working-with-the-regex-engine?azure-portal=true).
 
 ## File policy matches
 
-If you want to view all files suspected to violate a policy, follow these steps:
+To view all files suspected to violate a policy:
 
-1. Select **Control** and then **Policies**.
-1. Search the respective **File Policy** you want to view.
-1. Select the three vertical dots (**…**) on the right-side of the policy and select **View all matches**.
-1. You'll see a list of files currently recognized by the file policy to match the selected filters. You can use this view to see the impact your policy has before you change it to apply any Governance actions.
+1. In the Microsoft Defender portal, under **Cloud Apps**, go to **Policies** > **Policy management**. Select the **Information Protection** tab.
+1. Find the file policy you want to review.
+1. In the **Count** column, select the number of **matches** for the policy. You can also select the three vertical dots (**…**) on the right side of the policy and select **View all matches**.
+1. The report opens with tabs that help you review results:
+
+    - **Matching now** shows files that currently match the policy. Use the filters at the top to refine the results.
+
+    - **History** shows a history of up to six months of files that previously matched the policy.
+
+Use the report page to find patterns in your matches and decide if you need to take action. For example, if you notice a high volume of matches that all originate from a single user, investigate whether that user has a valid business reason to generate those matches.
