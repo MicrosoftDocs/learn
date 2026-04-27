@@ -44,7 +44,7 @@ The message qubit is in the unknown state :::no-loc text="$\\alpha \\ket{0}_m + 
 :::no-loc text="$$ \\ket{\\text{System}} = \\frac1{2} \\ket{\\phi^+}\\_\\text{mA} (\\alpha\\ket{0}\\_B + \\beta\\ket{1}\\_B) $$":::
 :::no-loc text="$$\\qquad\\qquad + \\frac1{2} \\ket{\\phi^-}\\_\\text{mA} (\\alpha\\ket{0}\\_B - \\beta\\ket{1}\\_B) $$":::
 :::no-loc text="$$\\qquad\\qquad + \\frac1{2} \\ket{\\psi^+}\\_\\text{mA} (\\alpha\\ket{1}\\_B + \\beta\\ket{0}\\_B) $$":::
-:::no-loc text="$$\\qquad\\qquad + \\frac1{2} \\ket{\\psi^-}\\_\\text{mA} (\\alpha\\ket{1}\\_B - \\beta\ket{0}\\_B) $$":::
+:::no-loc text="$$\\qquad\\qquad + \\frac1{2} \\ket{\\psi^-}\\_\\text{mA} (\\alpha\\ket{1}\\_B - \\beta\\ket{0}\\_B) $$":::
 
 The three-qubit state of Alice and Bob's qubits is an equal superposition of four possible states.
 
