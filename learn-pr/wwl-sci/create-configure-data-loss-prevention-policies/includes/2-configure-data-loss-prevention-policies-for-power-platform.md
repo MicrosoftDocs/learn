@@ -15,7 +15,7 @@ DLP policies control which connectors can work together, not what data flows thr
 Connectors can reside in only one group at a time. If you move SharePoint Online and a non-Microsoft connector into the Business group, users can't create flows or apps that combine those connectors with anything in the Non-Business or Blocked groups. Existing flows that already comply with the new grouping continue to run, but a background enforcement process suspends flows that now cross group boundaries.
 
 > [!TIP]
-> In addition to connector group classification, Power Platform DLP policies now support more granular controls such as connector action control and endpoint filtering. These options let you restrict specific actions or endpoints within a connector rather than blocking the entire connector. For more information, see [Connector action control](/power-platform/admin/connector-action-control) and [Endpoint filtering](/power-platform/admin/connector-endpoint-filtering).
+> In addition to connector group classification, Power Platform DLP policies now support more granular controls such as connector action control and endpoint filtering. These options let you restrict specific actions or endpoints within a connector rather than blocking the entire connector. For more information, see [Connector action control](/power-platform/admin/connector-action-control?azure-portal=true) and [Endpoint filtering](/power-platform/admin/connector-endpoint-filtering?azure-portal=true).
 
 ## Decide how to classify connectors
 
