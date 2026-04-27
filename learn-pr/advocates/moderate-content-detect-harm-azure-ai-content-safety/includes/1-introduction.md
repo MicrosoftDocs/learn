@@ -6,8 +6,8 @@ By completing this module, you’ll be able to:
 
 - Perform text and image moderation for harmful content.
 - Detect groundedness in a model’s output.
-- Identify and block AI-generated copyrighted content.
-- Mitigate direct and indirect prompt injections.
+- Identify AI-generated text that matches known protected text.
+- Detect direct and indirect prompt attacks with Prompt Shields.
 
 ## Prerequisites
 
@@ -17,6 +17,6 @@ By completing this module, you’ll be able to:
 - Developing in browser:
   - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
 - Developing locally:
-  - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+  - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
   - [Visual Studio Code](https://code.visualstudio.com/)
     - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
