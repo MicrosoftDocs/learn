@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.configure-security-copilot-workspaces
+metadata:
+  title: Configure workspaces for Microsoft Security Copilot
+  description: Learn how to plan, create, and configure Security Copilot workspaces for enterprise segmentation. Configure capacity, data residency, roles, plugins, and agent routing for multi-team deployments.
+  ms.date: 03/19/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: security-copilot
+title: Configure workspaces for Microsoft Security Copilot
+summary: In this module, you plan and configure Security Copilot workspaces for enterprise segmentation. You learn how to set capacity with Security Compute Units (SCUs), select data storage locations for compliance. Then you assign workspace roles, configure workspace-level plugins and owner settings, assign workspaces for integrated Microsoft Security Copilot agents, and monitor capacity usage.
+abstract: |
+  By the end of this module, you're able to:
+    - Plan a workspace deployment by evaluating capacity, data residency, and role requirements
+    - Create a Security Copilot workspace with appropriate SCUs, geo selection, and data sharing settings
+    - Assign and manage roles and permissions within a workspace
+    - Configure workspace-level owner settings and plugins
+    - Assign workspaces for integrated Microsoft Security Copilot agents
+    - Monitor and adjust workspace capacity usage
+prerequisites: |
+  - Familiarity with Microsoft Security Copilot concepts and features
+  - Understanding of Azure RBAC and Azure subscription management
+  - Knowledge of Microsoft Entra role-based access control
+  - Completion of [Describe the core features of Microsoft Security Copilot](/training/modules/security-copilot-describe-core-features/) is recommended
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - microsoft-security-copilot
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.configure-security-copilot-workspaces.introduction
+- learn.wwl.configure-security-copilot-workspaces.plan-workspace-deployment
+- learn.wwl.configure-security-copilot-workspaces.create-workspace
+- learn.wwl.configure-security-copilot-workspaces.configure-workspace-access-settings
+- learn.wwl.configure-security-copilot-workspaces.assign-workspaces-integrated-agents
+- learn.wwl.configure-security-copilot-workspaces.monitor-manage-workspace-capacity
+- learn.wwl.configure-security-copilot-workspaces.knowledge-check
+- learn.wwl.configure-security-copilot-workspaces.summary
+badge:
+  uid: learn.wwl.configure-security-copilot-workspaces.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-security-copilot-workspaces.monitor-manage-workspace-capacity
+metadata:
+  title: Monitor and manage workspace capacity
+  description: Learn how to monitor usage, adjust capacity, and manage Security Compute Units for Security Copilot workspaces.
+  ms.date: 03/19/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ms.service: security-copilot
+title: Monitor and manage workspace capacity
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-monitor-manage-workspace-capacity.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-security-copilot-workspaces.assign-workspaces-integrated-agents
+metadata:
+  title: Assign workspaces for integrated agents
+  description: Learn how to assign Security Copilot workspaces for integrated Microsoft Security agents and manage agent routing.
+  ms.date: 03/19/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ms.service: security-copilot
+title: Assign workspaces for integrated agents
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-assign-workspaces-integrated-agents.md)]
