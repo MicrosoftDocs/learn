@@ -1,4 +1,4 @@
-## Scenario: secure a virtual network deployment
+## Scenario: Secure a virtual network deployment
 
 > [!NOTE]
 > The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They're examples of effective prompt patterns that demonstrate the kind of context the agent needs. They're not step-by-step instructions to follow.
@@ -12,13 +12,12 @@ To start, the engineer selects **Plan** from the agents dropdown in the Chat vie
 ```
 
 The Plan agent examines your workspace for existing Bicep files, modules, or parameter files. It then generates a plan that might include:
-
-1. Create a `main.bicep` file with the virtual network resource and three subnet definitions.
-2. Create an `nsg-web.bicep` module with rules allowing inbound ports 80 and 443 from the internet.
-3. Create an `nsg-app.bicep` module with rules allowing inbound traffic only from the web subnet address range.
-4. Create an `nsg-data.bicep` module with rules allowing inbound traffic only from the app subnet address range.
-5. Create a `parameters.prod.json` file with environment-specific values.
-6. Add verification steps to validate the Bicep templates with `az bicep build` and run a what-if deployment.
+- Create a `main.bicep` file with the virtual network resource and three subnet definitions.
+- Create an `nsg-web.bicep` module with rules allowing inbound ports 80 and 443 from the internet.
+- Create an `nsg-app.bicep` module with rules allowing inbound traffic only from the web subnet address range.
+- Create an `nsg-data.bicep` module with rules allowing inbound traffic only from the app subnet address range.
+- Create a `parameters.prod.json` file with environment-specific values.
+- Add verification steps to validate the Bicep templates with `az bicep build` and run a what-if deployment.
 
 ## Iterate on the plan
 
@@ -30,7 +29,7 @@ Add NSG flow logs for each network security group, storing them in an existing s
 
 The Plan agent updates the plan to include more implementation steps for NSG flow logs and traffic analytics configuration.
 
-## Scenario: automate resource group tagging compliance
+## Scenario: Automate resource group tagging compliance
 
 An organization requires that all resource groups carry specific tags for cost allocation and ownership. The team needs an Azure Policy that enforces tagging and a remediation script for existing noncompliant resources. An example prompt for this scenario:
 
@@ -45,7 +44,7 @@ The Plan agent generates a plan covering:
 3. Create a PowerShell script that uses `Get-AzResourceGroup` to find noncompliant resource groups and `Set-AzResourceGroup` to apply default tags.
 4. Add verification steps to test the policy with a noncompliant resource group creation attempt.
 
-## Scenario: plan a role-based access control review
+## Scenario: Plan a role-based access control review
 
 When a team needs to audit and update Role-Based Access Control (RBAC) role assignments across multiple subscriptions, the scope of changes can be significant. Using Plan mode helps map out the full approach before making any modifications. An example of how an engineer might describe this goal to the Plan agent:
 
@@ -53,21 +52,13 @@ When a team needs to audit and update Role-Based Access Control (RBAC) role assi
 /plan Create a PowerShell script that audits RBAC role assignments across all subscriptions in our tenant. The script should export a CSV report of all users with Owner or Contributor roles, flag any assignments to individual user accounts (versus groups), and identify role assignments that haven't been used in the last 90 days using Azure AD sign-in logs.
 ```
 
-<!-- IMAGE PLACEHOLDER: Conceptual diagram
-Alt text: Diagram showing RBAC audit script flow across multiple Azure subscriptions, filtering by role type and cross-referencing sign-in logs.
-Suggested source: Custom diagram needed
-Capture instructions: Create a diagram showing the script flow from subscription enumeration to role assignment filtering to sign-in log correlation and CSV export.
-Suggested filename: rbac-audit-flow.png
-Priority: Medium
--->
-
 The plan might include steps for:
 
-1. Create a script that iterates through subscriptions using `Get-AzSubscription`.
-2. Retrieve role assignments with `Get-AzRoleAssignment` and filter for Owner and Contributor roles.
-3. Cross-reference assignments with Microsoft Entra ID sign-in logs to identify inactive assignments.
-4. Export results to a CSV file with columns for subscription, principal name, role, assignment type (user versus group), and last sign-in date.
-5. Add error handling for subscriptions where the current identity lacks read access.
+- Create a script that iterates through subscriptions using `Get-AzSubscription`.
+- Retrieve role assignments with `Get-AzRoleAssignment` and filter for Owner and Contributor roles.
+- Cross-reference assignments with Microsoft Entra ID sign-in logs to identify inactive assignments.
+- Export results to a CSV file with columns for subscription, principal name, role, assignment type (user versus group), and last sign-in date.
+- Add error handling for subscriptions where the current identity lacks read access.
 
 ## Tips for writing effective infrastructure prompts
 

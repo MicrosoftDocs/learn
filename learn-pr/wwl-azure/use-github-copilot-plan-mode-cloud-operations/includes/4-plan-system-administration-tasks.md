@@ -1,4 +1,4 @@
-## Scenario: automate Active Directory user provisioning
+## Scenario: Automate Active Directory user provisioning
 
 > [!NOTE]
 > The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They're examples of effective prompt patterns that demonstrate the kind of context the agent needs. They're not step-by-step instructions to follow.
@@ -31,7 +31,7 @@ Add a check for existing accounts before creation. If a username already exists,
 
 The Plan agent revises the plan to include username conflict resolution and an email notification step using `Send-MailMessage`.
 
-## Scenario: harden a Windows Server baseline
+## Scenario: Harden a Windows Server baseline
 
 Security hardening involves multiple configuration changes across different system areas. Planning all changes before implementation helps avoid lockouts or service disruptions. An example of how an engineer might describe a hardening goal to the Plan agent:
 
@@ -50,7 +50,7 @@ The Plan agent generates a comprehensive plan:
 7. Create a `Deploy-ServerHardening.ps1` script that compiles and applies the DSC configuration.
 8. Add verification steps to test the configuration with `Test-DscConfiguration` and validate compliance.
 
-## Scenario: create a server monitoring and alerting script
+## Scenario: Create a server monitoring and alerting script
 
 Monitoring server health is a routine operations task. A structured approach is helpful when requirements span multiple metrics and notification channels. An example prompt for this kind of monitoring scenario:
 

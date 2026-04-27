@@ -23,7 +23,7 @@ Operations teams typically follow established standards for naming, tagging, sec
 The content of the file is specific to each team's own standards and conventions. An illustrative example of what such a file might contain is below. It isn't a template to copy directly. The actual values should reflect your organization's real naming schemes, tag requirements, and tooling decisions:
 
 ```markdown
-## Infrastructure Standards
+## Infrastructure standards
 
 - All Azure resources must follow the naming convention: {resource-type}-{workload}-{environment}-{region}-{instance}
 - All resource groups require tags: CostCenter, Environment, Owner, Application
@@ -31,7 +31,7 @@ The content of the file is specific to each team's own standards and conventions
 - All scripts must include error handling with try/catch blocks
 - PowerShell scripts must use approved verbs (Get, Set, New, Remove)
 
-## Security Requirements
+## Security requirements
 
 - No secrets or connection strings in source code
 - Use Azure Key Vault for secret management

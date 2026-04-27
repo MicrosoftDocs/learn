@@ -12,7 +12,7 @@ The distinction that matters for operations work isn't just about safety. It's a
 
 The Plan agent is an instance of a broader agentic pattern called **plan-and-execute**, where reasoning about what to do is separated from doing it. Understanding how the agent gathers information at each stage helps you write better prompts and interpret its output more critically.
 
-### Phase 1: context gathering
+### Phase 1: Context gathering
 
 When you submit a prompt, the Plan agent doesn't immediately generate a plan. It first builds a context model of your environment by invoking a set of read-only tools in sequence:
 
@@ -23,7 +23,7 @@ When you submit a prompt, the Plan agent doesn't immediately generate a plan. It
 
 No external network calls are made to documentation sites or APIs during this phase. The agent's knowledge of Azure services, PowerShell APIs, or Bicep syntax comes from its training data, not from live lookups.
 
-### Phase 2: clarifying questions
+### Phase 2: Clarifying questions
 
 If the context gathered in Phase 1 is insufficient to produce an unambiguous plan, the agent surfaces clarifying questions. These questions aren't generated randomly. They correspond to decision points in the implementation where different answers lead to meaningfully different plans.
 
@@ -36,7 +36,7 @@ For an operations prompt, typical decision points include:
 
 The quality of the questions the agent asks is a useful signal. If the agent asks no clarifying questions and immediately produces a plan for a complex, underspecified prompt, treat the resulting plan with extra scrutiny. It made assumptions that might not match your environment.
 
-### Phase 3: plan synthesis
+### Phase 3: Plan synthesis
 
 With sufficient context, the agent synthesizes a structured plan. Which involves reasoning about:
 
@@ -47,13 +47,13 @@ With sufficient context, the agent synthesizes a structured plan. Which involves
 
 The plan output is written to `/memories/session/plan.md` automatically, making it available for reference throughout the rest of the conversation.
 
-### Phase 4: iteration
+### Phase 4: Iteration
 
-The plan isn't final after the first generation. Each follow-up prompt you submit causes the agent to reenter the synthesis phase with the updated context. Including the previous plan, your feedback, and any new constraints you introduced, are considered. The agent doesn't restart from scratch; it treats the previous plan as a prior that can be amended.
+The plan isn't final after the first generation. Each follow-up prompt you submit causes the agent to reenter the synthesis phase with the updated context. Including the previous plan, your feedback, and any new constraints you introduced, are considered. The agent doesn't restart from scratch; It treats the previous plan as a prior that can be amended.
 
 This iterative loop is where Plan mode earns most of its value for operations work. Requirements that emerge mid-conversation, can be incorporated without losing the context established in earlier turns.
 
-[![GitHub Plan Agent Planning](../media/agent-planning-diagram.png)]
+![Diagram of a typical GitHub plan agent planning flow](../media/agent-planning-diagram.png)
 
 ## Access the Plan agent
 
@@ -110,7 +110,7 @@ Use Agent mode when the task is bounded, the workspace state is easily reversibl
 After you finalize a plan, you have several options to proceed:
 
 - **Implement in the same session**: Select **Start Implementation** to let the Agent implement the plan directly in your workspace. The Agent receives the plan document as its initial context and begins executing the implementation steps.
-- **Continue in Copilot CLI**: Select **Start Implementation** > **Continue in Copilot CLI** to run the implementation as a background session. Copilot CLI creates a Git worktree; an isolated copy of your repository at the current commit. So the implementation runs against a clean state without affecting your working tree.
+- **Continue in Copilot CLI**: Select **Start Implementation** > **Continue in Copilot CLI** to run the implementation as a background session. Copilot CLI creates a Git worktree; An isolated copy of your repository at the current commit. So the implementation runs against a clean state without affecting your working tree.
 - **Continue in a cloud agent**: Hand off to a Copilot cloud agent running on GitHub infrastructure. The cloud agent implements the actual plan, opens a pull request, creates CI/CD pipeline, and establishes an auditable approval record.
 
 The handoff mechanism is significant architecturally: the plan document written to `/memories/session/plan.md` becomes the implementation agent's task specification. The quality and specificity of the plan directly controls the quality of the implementation. A vague plan produces vague implementation, and a plan with explicit verification gates causes the implementation agent to pause and verify at each gate before proceeding.

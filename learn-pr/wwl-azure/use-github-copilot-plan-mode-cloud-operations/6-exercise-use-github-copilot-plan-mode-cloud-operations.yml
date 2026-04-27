@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl-data-ai.use-github-copilot-plan-mode-cloud-operations.exercise-use-copilot-plan-mode-cloud-operations
-title: "Exercise - Use GitHub Copilot Plan mode for cloud operations"
+title: "Exercise - Use GitHub Copilot plan mode for cloud operations"
 metadata:
-  title: "Exercise - Use GitHub Copilot Plan mode for cloud operations"
-  description: "Practice using GitHub Copilot Plan mode to research requirements, reason through architecture trade-offs, and produce a structured implementation plan for a regulated cloud migration scenario."
+  title: "Exercise - Use GitHub Copilot plan mode for cloud operations"
+  description: "Practice using GitHub Copilot plan mode to research requirements, reason through architecture trade-offs, and produce a structured implementation plan for a regulated cloud migration scenario."
   ms.date: 04/25/2026
   author: petender
   ms.author: petender
