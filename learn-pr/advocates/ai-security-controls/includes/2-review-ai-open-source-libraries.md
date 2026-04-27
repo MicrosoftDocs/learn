@@ -9,13 +9,7 @@ AI OSS libraries carry some risks that go beyond those of traditional software d
 - **Serialization risks**: AI models are frequently saved and loaded using serialization formats (such as pickle in Python). Deserializing untrusted model files can lead to arbitrary code execution.
 - **Rapid release cycles**: AI libraries evolve quickly, with frequent breaking changes. Organizations that pin to older versions may miss critical security patches.
 
-<!-- IMAGE PLACEHOLDER: Conceptual diagram
-Alt text: Diagram showing four AI-specific supply chain risks for open-source libraries
-Suggested source: Custom diagram needed
-Capture instructions: Create a diagram with four risk categories (pre-trained models with backdoors, data pipeline vulnerabilities, serialization/deserialization risks, rapid release cycles) branching from a central "AI OSS Library" node.
-Suggested filename: ai-oss-supply-chain-risks.png
-Priority: Medium
--->
+:::image type="content" source="../media/ai-open-source-supply-chain-risks.png" alt-text="Diagram showing four AI-specific supply chain risks for open-source libraries: pre-trained models with backdoors, data pipeline vulnerabilities, serialization and deserialization risks, and rapid release cycles." lightbox="../media/ai-open-source-supply-chain-risks.png":::
 
 ## Assess the suitability of OSS libraries
 
@@ -51,4 +45,4 @@ Don't assume that others have performed vulnerability checks. Apply your own ass
 - **Prioritized remediation**: If vulnerabilities are detected, assess their impact and exploitability. Prioritize fixes based on severity and exposure.
 - **Continuous monitoring**: OSS vulnerability databases are updated regularly. Set up automated alerts for new CVEs affecting libraries in your AI stack.
 
-:::image type="content" source="../media/ai-oss-library-review-process.png" alt-text="Flowchart of the AI open-source library security review process from assessment to approval." lightbox="../media/ai-oss-library-review-process.png":::
+:::image type="content" source="../media/ai-open-source-library-review-process.png" alt-text="Flowchart of the AI open-source library security review process from assessment to approval." lightbox="../media/ai-open-source-library-review-process.png":::

@@ -13,7 +13,7 @@ For example, a good metaprompt might instruct: "If a user requests large quantit
 
 Industry research shows that well-designed metaprompts significantly reduce the risk of security defects and harmful outputs.
 
-:::image type="content" source="../media/metaprompts.png" alt-text="Screenshot showing metaprompts and the types of security issues they help mitigate.":::
+:::image type="content" source="../media/system-prompts.png" alt-text="Screenshot showing metaprompts and the types of security issues they help mitigate." lightbox="../media/system-prompts.png":::
 
 ## Key components of an effective metaprompt
 
@@ -25,7 +25,7 @@ A comprehensive metaprompt typically includes several types of instructions incl
 - Anti-manipulation defenses
 - Output formatting rules
 
-:::image type="content" source="../media/metaprompt-components.png" alt-text="Diagram showing the five key components of an effective security metaprompt: role and scope definition, safety and compliance rules, grounding instructions, anti-manipulation defenses, and output formatting rules.":::
+:::image type="content" source="../media/system-prompt-components.png" alt-text="Diagram showing the five key components of an effective security metaprompt: role and scope definition, safety and compliance rules, grounding instructions, anti-manipulation defenses, and output formatting rules." lightbox="../media/system-prompt-components.png":::
 
 ### Role and scope definition
 
