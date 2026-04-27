@@ -202,7 +202,7 @@ spark.sql("OPTIMIZE main.default.people")
 spark.sql("VACUUM main.default.people RETAIN 168 HOURS")
 ```
 
-For tables using **deletion vectors** (enabled by default in Databricks Runtime 14.1 and above), `VACUUM` alone does not permanently remove rows that were deleted via `DELETE` or `UPDATE` — those rows are only marked as deleted in a separate metadata file. This is particularly important for compliance use cases such as GDPR right-to-erasure requests. To physically purge deletion-vector-marked data before vacuuming, run:
+For tables using **deletion vectors** (enabled by default in Databricks Runtime 14.1 and above), `VACUUM` alone does not permanently remove rows that were deleted via `DELETE` or `UPDATE` — those rows are only marked as deleted in a separate metadata file. This is particularly important for compliance use cases such as HIPAA data retention requirements. To physically purge deletion-vector-marked data before vacuuming, run:
 
 ```sql
 REORG TABLE main.default.people APPLY (PURGE);
