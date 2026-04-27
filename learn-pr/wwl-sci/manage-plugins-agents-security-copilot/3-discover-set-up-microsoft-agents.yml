@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-plugins-agents-security-copilot.discover-setup-microsoft-agents
+uid: learn.wwl.manage-plugins-agents-security-copilot.discover-set-up-microsoft-agents
 metadata:
   title: Discover and set up Microsoft-built agents
   description: Learn how to browse the Security Copilot agent library, understand the difference between Microsoft and partner agents. Then complete the full setup flow for a Microsoft-built agent including identity selection and trigger configuration.
@@ -10,4 +10,4 @@ metadata:
 title: Discover and set up Microsoft-built agents
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-discover-setup-microsoft-agents.md)]
+  [!include[](includes/3-discover-set-up-microsoft-agents.md)]

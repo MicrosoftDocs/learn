@@ -34,8 +34,8 @@ subjects:
   - cloud-security
 units:
 - learn.wwl.manage-plugins-agents-security-copilot.introduction
-- learn.wwl.manage-plugins-agents-security-copilot.configure-plugin-settings
-- learn.wwl.manage-plugins-agents-security-copilot.discover-setup-microsoft-agents
+- learn.wwl.manage-plugins-agents-security-copilot.configure-plug-in-settings
+- learn.wwl.manage-plugins-agents-security-copilot.discover-set-up-microsoft-agents
 - learn.wwl.manage-plugins-agents-security-copilot.acquire-configure-partner-agents
 - learn.wwl.manage-plugins-agents-security-copilot.manage-agents
 - learn.wwl.manage-plugins-agents-security-copilot.knowledge-check

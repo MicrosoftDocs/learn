@@ -4,8 +4,8 @@ Beyond Microsoft built agents, the Security Store provides access to a growing e
 
 The Security Store is integrated directly into Security Copilot. To access it from within the portal:
 
-- Go to **Home menu** > **Security Store**, or
-- In the agent library, select **Browse more agents**
+1. Go to **Home menu** > **Security Store**, or
+2. In the agent library, select **Browse more agents**
 
 The Security Store lets you search for agents and filter results by publisher, product, or pricing. You can view agents in grid or list format. Selecting an agent shows its description, publisher, pricing model, and the permissions it requires.
 

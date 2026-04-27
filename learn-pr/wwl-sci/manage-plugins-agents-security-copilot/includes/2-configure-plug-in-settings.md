@@ -8,7 +8,7 @@ Plugin governance operates at two distinct levels: user scope and organization s
 
 By default, only owners can manage custom plugins at either scope. To change the default behavior, navigate to **Owner** > **Plugin settings** in the left navigation.
 
-:::image type="content" source="../media/plugin-permission-dependency.png" alt-text="Diagram of the Security Copilot plugin permission dependency: user-scope must be set to Owners and Contributors before organization-scope permissions become available." lightbox="../media/plugin-permission-dependency.png":::
+:::image type="content" source="../media/plug-in-permission-dependency.png" alt-text="Diagram of the Security Copilot plugin permission dependency: user-scope must be set to Owners and Contributors before organization-scope permissions become available." lightbox="../media/plug-in-permission-dependency.png":::
 
 ## Configure user-scope permissions
 
@@ -21,7 +21,7 @@ For the Contoso sandbox workspace, the Security Architect sets who can add plugi
 
 Changing the user-scope setting to **Owners and Contributors** also unlocks the second permission.
 
-:::image type="content" source="../media/plugin-control-options-update.png" alt-text="Screenshot of the user-scope and organization-scope plugin permissions configuration in Security Copilot." lightbox="../media/plugin-control-options-update.png":::
+:::image type="content" source="../media/plug-in-control-options-update.png" alt-text="Screenshot of the user-scope and organization-scope plugin permissions configuration in Security Copilot." lightbox="../media/plug-in-control-options-update.png":::
 
 ## Configure organization-scope permissions
 
