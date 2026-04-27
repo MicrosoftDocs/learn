@@ -4,12 +4,12 @@ title: "Why learn from incidents?"
 metadata:
   title: "Why learn from incidents?"
   description: "Why learn from incidents?"
-  ms.date: 04/19/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
+  ms.contributors: orthomas-20260417
 durationInMinutes: 5
 content: |
   [!include[](includes/2-rationale.md)]
@@ -17,30 +17,30 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these statements are NOT true about complex systems?'
+  - content: "Which of these statements is NOT true about complex systems?"
     choices:
-    - content: 'Complex systems contain changing mixtures of failure latent within them.'
+    - content: "Complex systems contain changing mixtures of failure latent within them."
       isCorrect: false
-      explanation: 'Complex systems do contain changing mixtures of failure latent within them.'
-    - content: 'Complex systems run in degraded mode.'
+      explanation: "Complex systems do contain changing mixtures of failure latent within them."
+    - content: "Complex systems run in degraded mode."
       isCorrect: false
-      explanation: 'Complex systems do run in degraded mode by their nature.'
-    - content: 'Catastrophe is always just around the corner.'
+      explanation: "Complex systems do run in degraded mode by their nature."
+    - content: "Catastrophe is always just around the corner."
       isCorrect: false
-      explanation: 'Catastrophe is always just around the corner in a complex system.'
-    - content: 'Complex systems can run without human intervention.'
+      explanation: "Catastrophe is always just around the corner in a complex system."
+    - content: "Complex systems stay reliable without ongoing human adaptation."
       isCorrect: true
-      explanation: 'Correct, this is not true. If anything, complex systems might need more human intervention to keep running.'
+      explanation: "Correct, this isn't true. Complex systems depend on ongoing human adaptation and intervention to keep working."
 
-  - content: 'What is the role of people in complex systems?'
+  - content: "What is the role of people in complex systems?"
     choices:
-    - content: 'They work on the system.'
+    - content: "They work on the system."
       isCorrect: false
-      explanation: 'Systems are socio-technical in nature, and people are a part of them.'
-    - content: 'They work with a system.'
+      explanation: "Systems are socio-technical in nature, and people are a part of them."
+    - content: "They work with a system."
       isCorrect: false
-      explanation: 'Systems are socio-technical in nature, and people are a part of them.'
-    - content: 'They work within a system.'
+      explanation: "Systems are socio-technical in nature, and people are a part of them."
+    - content: "They work within a system."
       isCorrect: true
-      explanation: 'Correct. Systems are socio-technical in nature, and people are a part of them.'
+      explanation: "Correct. Systems are socio-technical in nature, and people are a part of them."
  

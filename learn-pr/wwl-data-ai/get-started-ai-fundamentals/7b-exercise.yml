@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-ai-fundamentals.exercise
-title: Exercise - Explore a simple AI agent
+title: Exercise - Explore AI workloads
 metadata:
-  title: Exercise - Explore a simple AI agent
-  description: Explore a simple AI agent.
+  title: Exercise - Explore AI workloads
+  description: Explore AI workloads in a computing history application.
   author: GraemeMalcolm
   ms.author: gmalc
-  ms.date: 01/07/2025
+  ms.date: 04/23/2026
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/7b-exercise.md)]
-

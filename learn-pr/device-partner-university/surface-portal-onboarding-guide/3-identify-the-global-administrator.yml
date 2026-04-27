@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-portal-tenant-setup.identify-the-global-administrator
+title: Identify the Global Administrator
+metadata:
+  title: Identify The Global Administrator
+  description: This content is part of the "Microsoft tenant setup for Surface Portal access" module.
+  ms.date: 04/14/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-identify-the-global-administrator.md)]

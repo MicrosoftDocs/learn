@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-ontology-fabric-iq.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  module_assessment: true
+  ai_generated_module_assessment: false
+  description: Check your knowledge of visualizing and querying ontology data with Microsoft Fabric IQ.
+  ms.date: 04/13/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In the relationship graph, what does a labeled arrow between two nodes represent?"
+    choices:
+    - content: "A relationship connecting two entity instances, such as a patient admitted to a room."
+      isCorrect: true
+      explanation: "Correct. Edges are the named, directed connections between nodes—for example, the admittedTo edge connects a Patient instance to a Room instance."
+    - content: "A property of one of the connected entity types."
+      isCorrect: false
+      explanation: "Incorrect. Properties are attributes stored on a single node, such as RoomNumber or RoomType. Edges are the arrows that connect two separate nodes."
+    - content: "An entity type that groups related instances together."
+      isCorrect: false
+      explanation: "Incorrect. Entity types group instances of the same kind, such as all rooms or all patients. Edges are the directed connections between individual instances."
+  - content: "What does the entity instances table on the entity type overview page show?"
+    choices:
+    - content: "The actual records loaded from the bound source data for that entity type."
+      isCorrect: true
+      explanation: "Correct. The entity instances table shows the real rows from the source lakehouse or eventhouse table, one row per instance, with columns matching the entity type's configured properties."
+    - content: "A summary of all relationships configured for that entity type."
+      isCorrect: false
+      explanation: "Incorrect. Relationships appear in the relationship graph tile on the same page. The entity instances table shows the actual data records."
+    - content: "The schema showing how the entity type connects to others in the ontology."
+      isCorrect: false
+      explanation: "Incorrect. The relationship graph tile shows how entity types connect to each other. The entity instances table shows the actual data rows for this entity type."
+  - content: "You want to query the ontology for patients assigned to rooms in the Intensive Care Unit department. Which combination of Query builder controls do you need?"
+    choices:
+    - content: "Add a filter for DepartmentName = Intensive Care Unit and ensure Department, Room, and Patient nodes are enabled in the Components pane."
+      isCorrect: true
+      explanation: "Correct. A filter on the Department entity type narrows results to Intensive Care Unit, while enabling the appropriate node and edge types in the Components pane controls what appears in the graph results."
+    - content: "Remove all components except Patient nodes and run the default query."
+      isCorrect: false
+      explanation: "Incorrect. Removing Department and Room components from the query would exclude the entity types needed to trace the connection path from Cardiology to patients. All three node types are required."
+    - content: "Switch to Table view and add a filter for each entity type separately."
+      isCorrect: false
+      explanation: "Incorrect. The view type (Diagram, Card, Table) only changes how results are displayed, not which entities are returned. Switching views doesn't affect query filtering."
+  - content: "After running a query, you want to compare RoomType and DepartmentId values across all returned rooms at once. Which view is most useful?"
+    choices:
+    - content: "Table view, because results appear in rows and columns with one row per instance."
+      isCorrect: true
+      explanation: "Correct. Table view organizes results in a grid—one row per instance, one column per property—making it easy to compare values like RoomType or DepartmentId across many rooms at once."
+    - content: "Diagram view, because you can select each node to inspect its properties."
+      isCorrect: false
+      explanation: "Incorrect. Diagram view shows the graph structure with nodes and edges, but you must select each node individually to see its properties—not ideal for comparing values across multiple instances."
+    - content: "Card view, because it displays each instance with property values listed inline."
+      isCorrect: false
+      explanation: "Incorrect. Card view is useful for scanning individual records, but comparing specific property values across many instances is easier in Table view where properties align in columns."

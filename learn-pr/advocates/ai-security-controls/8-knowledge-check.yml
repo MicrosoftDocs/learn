@@ -3,47 +3,68 @@ uid: learn.ai-security-controls.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Display your knowledge
-  ms.date: 03/06/2026
+  description: Check your understanding of AI security controls including content filters, metaprompts, data security, and monitoring.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 3
+durationInMinutes: 5
 content: Choose the best response for each question. 
 quiz:
   questions:
-    - content: "What steps can you take to improve the data security of an AI enabled application?"
+    - content: "What steps can you take to improve the data security of an AI-enabled application?"
       choices:
-        - content: "AI systems should only be able to enact existing data security controls and use the access permissions of the user they're acting on behalf of."
+        - content: "Ensure the AI system only accesses data that the user it's acting on behalf of is authorized to see"
           isCorrect: true
-          explanation: "Access control decisions should never be devolved to an AI system."
-        - content: "Keep your AI enabled application isolated from the rest of your IT environment."
+          explanation: "Access control decisions should never be devolved to an AI system. The AI should operate under the user's permissions using delegated access or under its own least-privilege identity for background tasks."
+        - content: "Keep your AI-enabled application isolated from the rest of your IT environment"
           isCorrect: false
-          explanation: "Isolating an AI enabled application limits usability rather than improve data security."
-        - content: "Run your AI enabled application on premises rather than in the cloud."
+          explanation: "Isolating an AI application limits usability rather than improving data security. The correct approach is to apply proper access controls and identity management."
+        - content: "Run your AI-enabled application on premises rather than in the cloud"
           isCorrect: false
-          explanation: "Running an AI enabled application on premises requires you to create your own AI platform. This is not feasible for most organizations. It will also not improve data security."
-    - content: "What kind AI harms and attacks does a metaprompt help to mitigate?"
+          explanation: "Running on premises doesn't inherently improve data security and requires building your own AI platform. Proper access controls are effective regardless of deployment location."
+    - content: "What type of AI security issue does a metaprompt (system prompt) help mitigate?"
       choices:
         - content: "Model poisoning"
           isCorrect: false
-          explanation: "Metaprompts can't help mitigate model poisoning attacks."
-        - content: "AI overreliance"
-          isCorrect: false
-          explanation: "Metaprompts can't help mitigate overreliance on AI."
-        - content: "Jailbreaks"
+          explanation: "Metaprompts can't mitigate model poisoning because poisoning occurs during training, before the metaprompt is applied at inference time."
+        - content: "Jailbreaks and harmful content generation"
           isCorrect: true
-          explanation: "A metaprompt is a set of natural language instructions that tell an AI system how to behave or not behave."
-    - content: "You want to restrict your AI application from returning content of a sexual or hateful nature, what would you implement to accomplish this goal?"
+          explanation: "A metaprompt defines behavioral guardrails that instruct the model how to respond and what to refuse, helping mitigate jailbreak attempts, harmful content generation, and prompt manipulation."
+        - content: "Network-level denial of service attacks"
+          isCorrect: false
+          explanation: "Metaprompts operate at the model behavior level and can't mitigate infrastructure-level attacks like denial of service."
+    - content: "You want to prevent your AI application from returning harmful content. What should you implement?"
       choices:
-        - content: "Metaprompts"
+        - content: "Metaprompts only"
           isCorrect: false
-          explanation: "Metaprompts can't be configured to filter unwanted content."
-        - content: "Content safety filters"
+          explanation: "While metaprompts help, they can be bypassed. Content safety filters provide an additional layer that evaluates both inputs and outputs against harmful content categories."
+        - content: "Content safety filters as part of a defense-in-depth approach"
           isCorrect: true
-          explanation: "Content safety filters can be configured to prevent an application from returning content of a sexual or hateful nature."
-        - content: "Application security best practices"
+          explanation: "Content safety filters can be configured to detect and block harmful content categories. For best results, combine them with metaprompts and other controls for layered defense."
+        - content: "Application security best practices alone"
           isCorrect: false
-          explanation: "Application security best practices cannot prevent an AI application from returning content of a sexual or hateful nature."
-    
+          explanation: "General application security practices don't address the specific challenge of harmful AI-generated content. Content filters are purpose-built for this scenario."
+    - content: "Why is grounding an important security control for AI systems?"
+      choices:
+        - content: "It prevents all types of prompt injection attacks"
+          isCorrect: false
+          explanation: "Grounding doesn't prevent prompt injection. It constrains the model to respond based on verified data, which reduces fabricated outputs and limits the scope of responses."
+        - content: "It reduces fabricated outputs by constraining responses to verified data sources"
+          isCorrect: true
+          explanation: "Grounding connects AI responses to specific, verified data through techniques like RAG. This reduces the risk of fabricated outputs and helps keep responses within the intended scope."
+        - content: "It encrypts the model's training data"
+          isCorrect: false
+          explanation: "Grounding has nothing to do with encryption. It's about connecting model responses to verified, real-world data sources at inference time."
+    - content: "What is an AI-specific supply chain risk when adopting open-source AI libraries?"
+      choices:
+        - content: "Open-source licenses are always incompatible with commercial use"
+          isCorrect: false
+          explanation: "Many open-source licenses are compatible with commercial use. License compatibility should be verified but isn't an inherent blocker."
+        - content: "Pre-trained models included in libraries may contain backdoors or biased behavior that's hard to detect through code review"
+          isCorrect: true
+          explanation: "Pre-trained models are a unique AI supply chain risk. A compromised model can contain backdoors that aren't visible in code review, making model provenance verification and scanning essential."
+        - content: "Open-source AI libraries can't be updated after deployment"
+          isCorrect: false
+          explanation: "Open-source libraries can be updated like any other dependency. The challenge is that AI libraries evolve rapidly, and pinning to older versions may mean missing critical security patches."

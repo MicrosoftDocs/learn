@@ -55,8 +55,8 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The 'QueueClient' class is not used for managing configuration files, but for interacting with queues in Azure Queue Storage."
     - content: "It retrieves and manipulates queues stored in Azure Queue Storage."
-      isCorrect: true
-      explanation: "Correct. The 'QueueClient' class is used to interact with queues in Azure Queue Storage, including creating, retrieving, and deleting queues."
-    - content: "It creates and manage messages within a specific queue."
       isCorrect: false
-      explanation: "Incorrect. While 'QueueClient' does interact with messages, it is primarily used to retrieve and manipulate queues, not individual messages."
+      explanation: "Incorrect. The 'QueueClient' class represents a single queue. Managing multiple queues at the service level is the role of 'QueueServiceClient'."
+    - content: "It creates and manages messages within a specific queue."
+      isCorrect: true
+      explanation: "Correct. The 'QueueClient' class is used to interact with a specific queue in Azure Queue Storage, including sending, receiving, peeking, and deleting messages."

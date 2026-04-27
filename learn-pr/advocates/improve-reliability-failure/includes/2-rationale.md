@@ -1,4 +1,4 @@
-When an incident occurs, your first reaction probably isn't, "Hurray, a
+When an incident occurs, your first reaction probably isn't, "Excellent! A
 learning opportunity!" Your immediate priority is figuring out what went
 wrong and fixing it as quickly as possible, to reduce the impact on your
 customers and end users, as it should be. This is the incident-response
@@ -14,16 +14,15 @@ are different ways to approach the process, and too much focus on certain
 aspects of the problem or framing questions in the wrong way can reduce the
 value of the review.
 
-In this unit, you'll start thinking about not only why, but also how you can
-best learn from incidents. We'll expand on the "how" in subsequent
+In this unit, you start thinking about not only why, but also how you can
+best learn from incidents. We expand on the "how" in subsequent
 units.
 
 ## Complex systems fail
 
-You must "learn to learn" from failure not in case your systems fail, but
-because it's a certainty that your systems _will_ fail.
+You must "learn to learn" from failure not in case your systems fail, but because it's a certainty that your systems fail.
 
-In the modern world, the majority of systems we work with today—especially in a cloud environment—are complex. They're composed of many
+In the modern world, most systems we work with today, especially in a cloud environment, are complex. They're composed of many
 interconnecting parts that have to work together, and the overall system behavior comes from the interaction of those parts as much as from
 the individual parts themselves.
 
@@ -55,8 +54,8 @@ and post-incident review process:
     despite the presence of many flaws. System operations are dynamic, with
     components continually failing and being replaced.
 - Catastrophe is always just around the corner. The complexity of these
-    systems means major system failures are—in the long term—unavoidable. Complex systems always possess the potential for
-    catastrophic failure, and it can happen at any time. It'ss impossible
+    systems means major system failures are, in the long term, unavoidable. Complex systems always possess the potential for
+    catastrophic failure, and it can happen at any time. It's impossible
     to eliminate this potential because it's part of the inherent nature of
     the system.
 
@@ -86,7 +85,7 @@ important as preventing things from going wrong in the first place.
 
 ## Language
 
-Language matters. You'll learn in this module that we'll be very specific
+Language matters. You learn in this module that we're specific
 about what terms we use and what ones we intentionally don't use.
 
 The words we use affect how we think about what happened in an incident,
@@ -94,11 +93,10 @@ and can drastically change what and how much we learn. This finding comes
 from research in safety-critical industries such as aviation,
 medicine, search and rescue, firefighting, and more.
 
-Collectively, this field of research has become known as _Resilience
-Engineering_ (RE).
+Collectively, this field of research has become known as _Resilience Engineering_ (RE).
 
 We have a lot to learn about Resilience Engineering in the tech sector.
-Later in this module, we'll share some really useful stuff we've
+Later in this module, we share some useful stuff we've
 learned from the RE literature, including four of the most common traps
 people fall into when attempting to learn from failure; but first, we need
 to define some terms.

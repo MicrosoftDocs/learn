@@ -2,14 +2,14 @@ Now that you're aware of some of the common pitfalls that can sabotage or at
 least limit the value you can get from your post-incident reviews, the next
 logical question is "what should you do instead?"
 
-In this unit, you'll learn about four helpful practices that can improve
+In this unit, you learn about four helpful practices that can improve
 the post-incident analysis process.
 
 ## Practice 1: Run a facilitated post-incident review
 
 You already know that a post-incident review isn't a document or
-report—it's ideally a conversation—so it follows that just having a
-single person write up a "postmortem" of what happened without any
+report (it's ideally a conversation), so it follows that just having a
+single person write-up a "postmortem" of what happened without any
 discussion doesn't make for a helpful post-incident review. No matter how
 knowledgeable or how deeply involved in the incident that person might be,
 not much will be learned if everything comes from a single viewpoint.
@@ -18,10 +18,10 @@ Getting those who were involved in the incident together at the same time
 is the first step. It's often helpful to have a facilitator at that
 meeting who can help guide the discussion. Ideally, that facilitator should
 be someone "neutral" who didn't actually participate in the incident
-themselves. Everyone will learn more if the facilitator doesn't appear to have any preconceived ideas or a personal agenda in telling the story of
+themselves. Everyone learns more if the facilitator doesn't appear to have any preconceived ideas or a personal agenda in telling the story of
 the incident.
 
-The exact format for the meeting will depend on your team, scheduling, and
+The exact format for the meeting depends on your team, scheduling, and
 the nature of the incident, but here are some basic guidelines:
 
 - **Meetings, not marathons**: The meetings don't have to be long. Generally,
@@ -63,7 +63,7 @@ cause or a conclusion, skipping over a wealth of information that could be
 discussed. For example, if you ask "why did the system stop working?" the
 answer could be "Because the disk filled up." This skips right over
 important questions like "how did you notice there was a problem with the
-disk?" or even "what was the first thing you checked on the system what led
+disk?" or even "what was the first thing you checked on the system that led
 you to check it?"
 
 This doesn't mean you can't explore the contributing factors for the
@@ -86,7 +86,7 @@ events. You'll learn more if you ask questions that expose these multiple
 views and interpretations.
 
 You'll often learn as much by asking about how work "normally" happens as
-you will by asking about the specific incident.
+you'll by asking about the specific incident.
 
 To learn more about how to ask better questions, check out this resource:
 
@@ -106,7 +106,7 @@ with insights that you would not have gotten otherwise.
 
 Don't just ask how the outage happened, _ask about how you recovered, too._
 
-You will want to know what insights, tools, skills, and people helped in
+You'll want to know what insights, tools, skills, and people helped in
 the recovery effort. These are things you want to be able to reproduce, so
 this information is valuable in planning what to do going forward.
 
@@ -136,9 +136,9 @@ The best plan is to discuss repair items and planning issues in a separate
 meeting a day or two after your post-incident review. You might want to do
 this with a smaller group.
 
-This will help in two ways:
+This helps in two ways:
 
-- It will help you in the post-incident review. It's easier to avoid
+- It helps you in the post-incident review. It's easier to avoid
     jumping to conclusions if you're not focused on how to fix it.
 - Allowing a day or two of soak time will help you to identify the most
     "energy-efficient" repair items; minimum energy for maximum impact.

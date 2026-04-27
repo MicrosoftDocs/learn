@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-external-assets-vulnerabilities.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of discovering unprotected assets and vulnerabilities using Microsoft Defender External Attack Surface Management.
+  ms.date: 04/07/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer wants visibility into internet-facing assets their organization doesn't know about—including forgotten test environments from an acquisition and developer-created shadow IT. Which Microsoft Defender tool provides this outside-in discovery capability?"
+    choices:
+    - content: "Microsoft Defender for Cloud Security Posture Management (CSPM)"
+      isCorrect: false
+      explanation: "Incorrect. Defender CSPM provides inside-out posture management for known, enrolled Azure resources. It assesses misconfigurations and compliance gaps within your Azure subscription, but it doesn't discover assets that exist outside your subscription or outside your inventory."
+    - content: "Microsoft Defender Vulnerability Management (MDVM)"
+      isCorrect: false
+      explanation: "Incorrect. MDVM provides inside-out vulnerability scanning for known, enrolled virtual machines. It identifies CVEs in installed software on VMs that are already part of your inventory—it doesn't discover unknown or unenrolled internet-facing assets."
+    - content: "Microsoft Defender External Attack Surface Management (EASM)"
+      isCorrect: true
+      explanation: "Correct. Defender EASM uses outside-in recursive discovery to map your organization's internet-facing attack surface from an attacker's perspective. It discovers unknown and unmonitored assets—including assets from acquired organizations, forgotten environments, and shadow IT—by traversing infrastructure connections starting from known seeds."
+    - content: "Microsoft Defender for Endpoint"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Endpoint provides endpoint detection and response (EDR) capabilities for enrolled devices. It doesn't perform external attack surface discovery or identify internet-facing assets outside your managed device inventory."
+  - content: "You're configuring EASM discovery for your organization after an acquisition. You provide the acquired company's primary domain name as a starting point. What is this starting asset called in the EASM discovery process?"
+    choices:
+    - content: "A discovery target"
+      isCorrect: false
+      explanation: "Incorrect. 'Discovery target' isn't a term used in EASM's discovery process. EASM uses seeds as the known starting points for recursive discovery."
+    - content: "A discovery seed"
+      isCorrect: true
+      explanation: "Correct. Discovery seeds are known legitimate assets you provide as starting points for EASM's recursive discovery engine. The engine queries multiple data sources (WHOIS, DNS, SSL certificates, ASN records) for each seed and recurses through connections to uncover previously unknown assets."
+    - content: "A candidate asset"
+      isCorrect: false
+      explanation: "Incorrect. Candidate is an asset state in the EASM inventory—it means EASM discovered an asset that it believes is owned by your organization but is unconfirmed. The starting point you provide to initiate discovery is called a seed."
+    - content: "An inventory filter"
+      isCorrect: false
+      explanation: "Incorrect. Inventory filters are used within EASM to search and sort discovered assets in your inventory. They aren't used to initiate or configure the discovery process."
+  - content: "After running EASM discovery for a recently acquired company's infrastructure, your security team finds several hosts with Telnet (port 23) open and multiple SSL certificates expiring within 30 days. Which EASM dashboard surfaces these specific technical findings?"
+    choices:
+    - content: "Overview dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The Overview dashboard is the default landing page that provides an at-a-glance summary of your attack surface including high-level risk counts by severity. It doesn't surface specific technical findings like individual open ports or SSL certificate details."
+    - content: "Attack surface summary dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The Attack surface summary dashboard shows SSL certificate expiry counts by timeframe (30, 60, 90 days) and broad vulnerability severity counts. However, the Security posture dashboard surfaces the specific technical details: individual open ports and exposed services like Telnet, SSL certificate configuration problems such as expired or SHA-1 certificates, CVE exposure, and domain administration issues."
+    - content: "Security posture dashboard"
+      isCorrect: true
+      explanation: "Correct. The Security posture dashboard is the primary dashboard for security engineers investigating specific external hygiene issues. It surfaces detailed technical findings including CVE exposure, open ports, and exposed services (such as Telnet on port 23), SSL certificate configuration issues (expired certificates, weak cipher suites, SHA-1 certificates), and domain administration concerns."
+    - content: "OWASP Top 10 dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The OWASP Top 10 dashboard surfaces web application vulnerabilities in categories such as broken access control, cryptographic failures, injection, and security misconfiguration. It doesn't surface infrastructure-level findings like open ports or SSL certificate expiry status."
+  - content: "Your organization has Defender CSPM active. You want to find attack paths that start from internet-exposed IP addresses discovered by EASM and trace through to internal Azure resources. Where do you view these attack paths?"
+    choices:
+    - content: "In the EASM standalone portal at the Security posture dashboard"
+      isCorrect: false
+      explanation: "Incorrect. The EASM Security posture dashboard shows external security hygiene findings—CVE exposure, open ports, SSL issues—within the EASM portal itself. It doesn't show attack paths that trace from internet-exposed IPs through to internal Azure resources."
+    - content: "In the Microsoft Defender portal under Cloud security, go to Attack path analysis"
+      isCorrect: true
+      explanation: "Correct. With Defender CSPM active, EASM integration flows outside-in data into the Defender portal. Under Cloud security > Attack path analysis, you can filter attack paths by internet-exposed resources to see exploitable paths that start from EASM-discovered internet-facing IPs and trace through to internal target assets."
+    - content: "In Microsoft Sentinel under the Threat Intelligence workbook"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel is a SIEM and SOAR solution focused on security event correlation and threat detection. Attack path analysis that combines EASM outside-in data with Defender CSPM inside-out data is available in the Microsoft Defender portal, not Microsoft Sentinel."
+    - content: "In the Azure portal under Microsoft Defender for Cloud, go to Workload protections"
+      isCorrect: false
+      explanation: "Incorrect. Workload protections in the Azure portal provide threat protection status and alerts for specific workload types such as servers, containers, and storage. Attack path analysis integrating EASM data is available in the Microsoft Defender portal under Cloud security > Attack path analysis."

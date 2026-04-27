@@ -1,15 +1,21 @@
-holistic approach when interpreting results. Evaluating generative AI applications requires a thorough understanding of various metrics to measure performance and reliability. Azure provides tools for both manual and automated evaluations, including custom evaluators through its AI Foundry and Azure AI Evaluation SDK.
+Evaluating generative AI applications requires more than a single score. You need representative data, the right evaluator mix, and a disciplined way to interpret the results. Microsoft Foundry supports portal and SDK-based evaluation workflows, while the built-in evaluator catalog helps you assess writing quality, similarity to ground truth, RAG behavior, safety, and agent behavior.
 
-The quality and nature of data are crucial in ensuring effective and reliable AI evaluation processes. High-quality, diverse, and representative datasets allow evaluation metrics to accurately reflect AI model performance across various scenarios, while poor or biased data can mislead outcomes.
+The most effective evaluation practice combines automated runs with targeted human review. Use real-world data when possible, supplement it with synthetic data when coverage is limited, use AI red teaming or other adversarial testing when you need to probe safety and security risks, and compare runs against a stable baseline before you decide a change improved the system.
 
-Accurately interpreting evaluation results is essential, particularly as AI systems are increasingly deployed in critical domains like healthcare and finance. Proper interpretation goes beyond reading metrics; it involves contextualizing results, considering the AI system’s goals, and comparing them to benchmarks.
+Before you operationalize the workflow, confirm each evaluator's required inputs, target support, preview status, and region support in current Microsoft Learn guidance. That check matters most for cloud evaluation, safety and red-team workflows, custom evaluators, graders, and some agent-focused evaluators.
 
-Once you have your evaluation results, you’re encouraged to either create or refine your existing mitigation plan based on your assessment. Measuring enables you to implement more targeted mitigations when doing prompt engineering and configuring content filters. As you continue to improve your AI system, be sure to execute subsequent evaluations and refine your approach as needed.
+Once you have results, translate them into action. Improve retrieval when groundedness or relevance is weak, strengthen safety instructions and filtering when harm evaluators surface risk, and add custom evaluators when your business criteria go beyond the built-in catalog.
 
 ### Learn more
 
-- [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
-- [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
-- [How to evaluate generative AI models and applications with Azure AI Foundry](/azure/ai-studio/how-to/evaluate-generative-ai-app)
-- [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
-- [View evaluation results in Azure AI Foundry](/azure/ai-studio/how-to/evaluate-results)
+- [Run evaluations from the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-generative-ai-app)
+- [Run evaluations in the cloud by using the Microsoft Foundry SDK](/azure/foundry/how-to/develop/cloud-evaluation)
+- [Built-in evaluators reference](/azure/foundry/concepts/built-in-evaluators)
+- [Retrieval-Augmented Generation (RAG) evaluators](/azure/foundry/concepts/evaluation-evaluators/rag-evaluators)
+- [Agent evaluators](/azure/foundry/concepts/evaluation-evaluators/agent-evaluators)
+- [Azure OpenAI graders](/azure/foundry/concepts/evaluation-evaluators/azure-openai-graders)
+- [Custom evaluators](/azure/foundry/concepts/evaluation-evaluators/custom-evaluators)
+- [Risk and safety evaluators](/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators)
+- [Run AI Red Teaming Agent in the cloud](/azure/foundry/how-to/develop/run-ai-red-teaming-cloud)
+- [View evaluation results in the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-results)
+- [Rate limits, region support, and enterprise features for evaluation](/azure/foundry/concepts/evaluation-regions-limits-virtual-network)

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 09/12/2025
+  ms.date: 04/27/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -46,4 +46,4 @@ quiz:
       explanation: "Correct. Databricks SQL allows users to run SQL queries directly on the data stored in Databricks and visualize results without needing to interact directly with Spark DataFrames. It provides a convenient interface for data analysts and scientists to perform complex SQL queries and view results via built-in visualizations."
     - content: "Databricks Dashboard"
       isCorrect: false
-      explanation: "Incorrect. Dashboards are used to publish graphs and visualizations derived from notebook output and share them in presentation with other users."
+      explanation: "Incorrect. Dashboards display visualizations built from saved SQL queries. To run ad-hoc SQL queries and view results interactively, use the SQL Editor in Databricks SQL."

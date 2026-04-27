@@ -20,6 +20,8 @@ Microsoft Entra Agent ID is built on the Microsoft Entra ID platform and provide
 
 This blueprint-to-identity model enables centralized management while providing the flexibility needed for diverse AI agent deployment scenarios. Administrators can apply conditional access policies, disable permissions, or audit agents at scale through blueprint-based controls.
 
+:::image type="content" source="../media/3a-agent-id-blueprint-identity-model.png" alt-text="Diagram showing an Agent Identity Blueprint on the left connected by an arrow to three Agent Identity instances on the right, with blueprint-based governance controls listed below." lightbox="../media/3a-agent-id-blueprint-identity-model.png":::
+
 ### Authentication scenarios
 
 Agent identities support two key authentication patterns:

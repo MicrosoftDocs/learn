@@ -1,21 +1,22 @@
 
-Azure Synapse Analytics provides multiple ways to analyze large volumes of data. Two of the most common approaches to large-scale data analytics are:
+Azure Stream Analytics can route the results of stream processing to multiple types of output destinations, depending on whether you need to store, analyze, forward, or visualize the data.
 
-- **Data warehouses** - relational databases, optimized for distributed storage and query processing. Data is stored in  tables and queried using SQL.
-- **Data lakes** - distributed file storage in which data is stored as files that can be processed and queried using multiple runtimes, including Apache Spark and SQL.
+## Data lake storage
 
-## Data warehouses in Azure Synapse Analytics
+A common use case is to write stream processing results to a data lake hosted in Azure Data Lake Storage Gen2. Data stored in a data lake can later be processed and queried using batch analytics tools such as Apache Spark or serverless SQL engines. This approach is well suited to scenarios where you want to retain raw or lightly processed event data for historical analysis, compliance, or machine learning workloads.
 
-Azure Synapse Analytics provides dedicated SQL pools that you can use to implement enterprise-scale relational data warehouses. Dedicated SQL pools are based on a *massively parallel processing* (MPP) instance of the Microsoft SQL Server relational database engine in which data is stored and queried in tables.
+![A diagram of a stream of data being ingested into an Azure Storage data lake.](../media/data-lake.png)
 
-To ingest real-time data into a relational data warehouse, your Azure Stream Analytics query must write its results to an output that references the table into which you want to load the data.
+## Relational database storage
 
-![A diagram of a stream of data being ingested into a dedicated SQL pool in Azure Synapse Analytics.](../media/data-warehouse.png)
+When streaming results need to be available to applications or reporting tools that rely on relational data, you can write the output of a Stream Analytics job to a table in Azure SQL Database or Azure Synapse Analytics dedicated SQL pool. This approach enables dashboards and reports to query the most recently ingested data using standard SQL.
 
-## Data lakes in Azure Synapse Analytics
+![A diagram of a stream of data being ingested into a relational database.](../media/data-warehouse.png)
 
-An Azure Synapse Analytics workspace typically includes at least one storage service that is used as a data lake. Most commonly, the data lake is hosted in an Azure Storage account using a container configured to support Azure Data Lake Storage Gen2. Files in the data lake are organized hierarchically in directories (folders), and can be stored in multiple file formats, including delimited text (such as comma-separated values, or CSV), Parquet, and JSON.
+## Real-time dashboards
 
-When ingesting real-time data into a data lake, your Azure Stream Analytics query must write its results to an output that references the location in the Azure Data Lake Gen2 storage container where you want to save the data files. Data analysts, engineers, and scientists can then process and query the files in the data lake by running code in an Apache Spark pool, or by running SQL queries using a serverless SQL pool.
+For scenarios that require live visualization of streaming metrics—such as monitoring sensor readings or tracking website activity in real time—Azure Stream Analytics can write output directly to a Power BI streaming dataset. Power BI then renders the data in near real time without requiring a scheduled data refresh.
 
-![A diagram of a stream of data being ingested into an Azure Storage data lake and queried in Azure Synapse Analytics.](../media/data-lake.png)
+## Event forwarding
+
+Azure Stream Analytics can also write filtered or enriched events to another Azure Event Hubs instance. This pattern is used to build multi-stage streaming pipelines, where one Stream Analytics job performs initial filtering or enrichment and forwards the results to a downstream consumer such as another job, an Azure Function, or a custom application.

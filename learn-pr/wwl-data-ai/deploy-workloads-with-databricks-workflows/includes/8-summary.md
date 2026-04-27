@@ -9,5 +9,3 @@ In this module, you learned:
 More Reading:
 
 - [Introduction to Lakeflow Jobs](/azure/databricks/workflows/)
-- [Basics of Databricks Workflows](https://community.databricks.com/t5/technical-blog/basics-of-databricks-workflows-part-1-creating-your-pipeline/ba-p/54397)
-- [Why Databricks Workflows](https://community.databricks.com/t5/technical-blog/why-orchestration-is-your-key-to-success-for-modern-data/ba-p/50129)

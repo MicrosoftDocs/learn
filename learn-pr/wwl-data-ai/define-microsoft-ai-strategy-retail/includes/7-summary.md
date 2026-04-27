@@ -17,9 +17,9 @@ Now that you reviewed this module, you should be able to:
 * To learn more about how Microsoft infused AI into Microsoft 365, read [AI in Microsoft 365](https://aka.ms/everydayai).
 * To learn more about our intelligent business applications, visit our [Dynamics 365 AI homepage](https://dynamics.microsoft.com/ai/overview/).
 * To learn more about our low-code tools in Power Platform, visit our [Power Platform website](https://powerplatform.microsoft.com/).
-* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
+* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?tabs=global-standard-aoai%2Cglobal-standard&pivots=azure-openai).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on Foundry Tools](/azure/cognitive-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on Foundry Tools](/azure/ai-foundry/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 
 ## References

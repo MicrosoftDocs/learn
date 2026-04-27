@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-github-copilot
 metadata:
   title: Get Started with GitHub Copilot
   description: "This module introduces developers to the GitHub Copilot products, the benefits that GitHub Copilot provides to developers, the GitHub Copilot and GitHub Copilot Chat product features, and the GitHub Copilot extensions for Visual Studio Code."
-  ms.date: 03/03/2026
+  ms.date: 04/16/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-intro-to-product
@@ -21,15 +21,14 @@ abstract: |
 
   -   Explain what GitHub Copilot is and the advantages it provides.
 
-  -   Install the GitHub Copilot extensions for Visual Studio Code.
+  -   Install the GitHub Copilot Chat extension for Visual Studio Code.
 
-  -   Explain the features of the GitHub Copilot extensions for Visual Studio Code and how to use them.
+  -   Explain the features of the GitHub Copilot Chat extension for Visual Studio Code and how to use them.
 
-  -   Configure the GitHub Copilot extensions for Visual Studio Code.
+  -   Configure the GitHub Copilot Chat extension for Visual Studio Code.
 prerequisites: |
-  -   An active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. You can set up a GitHub Copilot Free plan or sign-up for a GitHub Copilot Pro subscription with a one-time 30-day free trial.  For this training, signing up for a GitHub Copilot Free plan is sufficient.
+  -   An active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. You can set up a GitHub Copilot Free plan or sign-up for a GitHub Copilot Pro subscription.  For this training, signing up for a GitHub Copilot Free plan is sufficient.
 
-  -   Awareness of the GitHub Copilot free trial conditions: if you choose the 30-day free trial offer for GitHub Copilot Pro, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

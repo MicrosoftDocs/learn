@@ -1,17 +1,38 @@
-AI content filters are systems designed to detect and prevent harmful or inappropriate content. They work by evaluating input prompts and output completions, using neural classification models to identify specific categories such as hate speech, sexual content, violence, and self-harm. These filters help ensure that AI-generated content aligns with safety guidelines and provides high-quality information.
+AI content filters are systems designed to detect and prevent harmful or inappropriate content from being generated or processed by AI systems. They work by evaluating both input prompts and output completions, using classification models to identify specific categories of problematic content. Content filters are one of the most important frontline defenses in any AI deployment.
 
-Microsoft's Content Safety Studio assists you in ensuring all user-generated content, such as product reviews, forum posts, and images, aligns with your organization's content guidelines.
+## How content filters work
 
-Content Safety Studio offers a suite of features designed to monitor and moderate content in real-time. It includes:
+Content filters operate at two points in the AI interaction pipeline:
 
-- **Text Moderation**: Detects and filters out harmful content in text, such as hate speech, violence, or inappropriate language.
-- **Image Moderation**: Analyzes images to identify and block content that may be considered unsafe or offensive.
-- **Multimodal Content Analysis**: Works across different types of content, ensuring a comprehensive content safety strategy.
-- **Groundedness** **Detection**: Detects and blocks incorrect information in model outputs, ensuring that the text responses of large language models are factual and accurate, based on the source materials provided.
-- **Prompt Shields**: Analyzes LLM inputs and detects user Prompt attacks and Document attacks.
-- **Protected Material Detection**: Identifies and blocks outputs that could potentially violate copyright by scanning for matches against an index of third-party text content, including songs, news articles, recipes, and selected web content.
-- **Monitor Online Activity**: Track your moderation API usage and trends across different modalities.
+- **Input filtering**: Analyzes user prompts before they reach the model. Input filters detect prompt injection attempts, jailbreak instructions, and requests for harmful content before the model processes them.
+- **Output filtering**: Analyzes the model's response before it's delivered to the user. Output filters catch harmful, inappropriate, or policy-violating content that the model might generate despite input-level controls.
 
-Here you can see an example of content filtering working correctly and also failing:
+Most content filtering systems use a combination of rule-based pattern matching, trained classification models, and configurable severity thresholds. Administrators can typically adjust the sensitivity of filters for different content categories based on their application's requirements.
 
-![Screenshot of guardrail protection and failure modes.](../media/content-filtering.png)
+## Core content filter capabilities
+
+When evaluating or implementing a content filtering solution for an AI system, look for these capabilities:
+
+- **Text moderation**: Detects and filters harmful content in text, such as hate speech, violence, self-harm content, or inappropriate language, before it reaches users.
+- **Image moderation**: Analyzes images to identify and block content that may be unsafe or offensive, including explicit material and violent imagery.
+- **Multimodal analysis**: Evaluates content across multiple formats—text, images, and combinations—to ensure comprehensive coverage. This is especially important for models that accept and generate multiple content types.
+- **Factual grounding verification**: Validates that AI-generated responses are grounded in the source materials provided, detecting and flagging claims that aren't supported by the referenced data. This capability helps reduce instances where the AI generates factually inaccurate content.
+- **Input attack detection**: Analyzes incoming prompts to detect and block prompt injection attacks, jailbreak attempts, and malicious instructions embedded in referenced documents. This is a critical defense against the prompt-based attacks described in the previous module.
+- **Copyright protection**: Scans model outputs for content that could potentially violate copyright by matching against known protected material, such as published text, lyrics, or news articles.
+- **Agent action oversight**: Monitors AI agent tool use to detect when an agent's actions are misaligned, unintended, or premature in the context of a user interaction—ensuring the agent only performs actions the user authorized.
+- **Usage monitoring and analytics**: Tracks moderation activity, flags trends in harmful content attempts, and provides dashboards to help security teams identify emerging risks.
+
+## Configuring content filters effectively
+
+Content filters need to be tuned for the specific context of each application:
+
+- **Set appropriate severity thresholds**: A customer-facing chatbot for children requires stricter filtering than an internal research tool. Configure thresholds based on your audience and use case.
+- **Balance safety and usability**: Overly aggressive filtering can block legitimate content and frustrate users. Monitor false positive rates and adjust settings to maintain usability.
+- **Layer filters with other controls**: Content filters are most effective as part of a defense-in-depth approach. Combine them with system prompts (metaprompts), input validation, and output monitoring.
+- **Review and update regularly**: New attack techniques emerge frequently. Update filter rules and retrain classification models to keep pace with evolving threats.
+
+Most major AI platforms provide built-in content filtering capabilities. For example, Azure AI Content Safety implements many of these capabilities through features like Prompt Shields, Groundedness Detection, and Protected Material Detection. Other platforms offer similar functionality—the key is to evaluate the capabilities against your specific requirements regardless of the platform you choose.
+
+:::image type="content" source="../media/content-filtering.png" alt-text="Screenshot of guardrail protection and failure modes showing content filtering in action.":::
+
+:::image type="content" source="../media/content-filter-pipeline.png" alt-text="Diagram of the input and output content filtering pipeline for AI systems." lightbox="../media/content-filter-pipeline.png":::

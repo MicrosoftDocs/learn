@@ -21,7 +21,7 @@ You can use the Chat view in Ask agent mode for a wide range of topics. For exam
 - Propose code fixes ("`#codebase /fix`", "`This method gives a FileNotFoundException`")
 - Ask about VS Code settings ("`@vscode how do I disable the minimap?`")
 
-![Screenshot showing the Chat view asking about the Singleton pattern.](../media/explain-chat-view-workspace-explain-singleton-pattern.png)
+![Screenshot showing the Chat view asking about the Singleton pattern.](../media/explain-chat-view-slash-explain-singleton-pattern.png)
 
 The Ask agent mode supports the following interface features:
 
@@ -33,7 +33,7 @@ The Ask agent mode supports the following interface features:
 
 - Ask Copilot: The Ask Copilot text box is where you enter your prompts. When you're using Ask agent mode, prompts can include chat participants, slash commands, and chat variables.
 
-    In Ask agent mode, you can use chat participants to specify the context of your questions. For example, you can use `@workspace` to indicate that the context is your workspace files.
+    In Ask agent mode, you can use chat participants to specify the context of your questions. You can also add `#codebase` to your prompt to include the full workspace as context.
 
 - Start Voice Chat button: The Start Voice Chat button is located to the left of the Ask Copilot textbox. You can use this button to enable or disable voice interactions with GitHub Copilot. When voice interactions are enabled, you can use your voice to ask GitHub Copilot questions.
 
@@ -71,7 +71,7 @@ The inline chat supports the following features:
 
 The Explain smart action is used to explain code that's open in the editor. You can narrow the focus by selecting a code block, a single code line, or a variable. When there's no code selected, the explanation refers to the active file. The Explain smart action displays responses in the Chat view.
 
-To access the Explain smart action, you can right-click in the active code editor, select **Copilot**, and then select **Explain**.
+To access the Explain smart action, you can right-click in the active code editor and then select **Explain**.
 
 ![Screenshot showing the Explain smart action in the context menu.](../media/explain-smart-action-explain.png)
 

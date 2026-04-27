@@ -206,6 +206,6 @@ Solution architects drive improvement cycles by:
 
 [https://learn.microsoft.com/microsoft-copilot-studio/guidance/kit-agent-inventory](/microsoft-copilot-studio/guidance/kit-agent-inventory)
 
-[https://learn.microsoft.com/power-platform/admin/analytics-copilot](/power-platform/admin/analytics-copilot)
+[https://learn.microsoft.com/power-platform/admin/copilot/copilot-hub](/power-platform/admin/copilot/copilot-hub)
 
-[https://learn.microsoft.com/power-virtual-agents/analytics/conversation-transcripts](/power-virtual-agents/analytics/conversation-transcripts)
+[https://learn.microsoft.com/microsoft-copilot-studio/analytics-transcripts-powerapps](/microsoft-copilot-studio/analytics-transcripts-powerapps)

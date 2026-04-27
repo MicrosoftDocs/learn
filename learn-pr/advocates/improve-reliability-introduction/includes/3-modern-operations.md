@@ -9,7 +9,7 @@ Let's take a quick look at both of them and what they have to offer us in this c
 
 ## DevOps
 
-DevOps is a many-splendored thing that different people have understood and interpreted in different ways. There are many good definitions for it. Lets look at a few of them to give you a well-rounded view:
+DevOps is a many-splendored thing that different people have understood and interpreted in different ways. There are many good definitions for it. Let's look at a few of them to give you a well-rounded view:
 
 ### Continuous delivery of value
 

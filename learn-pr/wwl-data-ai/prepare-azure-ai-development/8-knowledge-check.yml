@@ -45,6 +45,6 @@ quiz:
         - content: "GitHub Copilot"
           isCorrect: false
           explanation: "Incorrect. GitHub Copilot provides AI-assisted development features, but not specifically for managing Foundry project assets."
-        - content: "AI Toolkit for Visual Studio Code"
+        - content: "Foundry Toolkit for Visual Studio Code"
           isCorrect: true
-          explanation: "Correct. The AI Toolkit for Visual Studio Code provides connectivity to assets in a Foundry project."
+          explanation: "Correct. The Foundry Toolkit for Visual Studio Code provides connectivity to assets in a Foundry project."

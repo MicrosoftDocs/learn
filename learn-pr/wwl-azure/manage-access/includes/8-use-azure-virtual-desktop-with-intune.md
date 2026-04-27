@@ -38,7 +38,7 @@ Windows 10 or Windows 11 Enterprise multi-session VMs are treated as a separate 
 
 ## Create the configuration profile
 
-To configure configuration policies for Windows 10 or Windows 11 Enterprise multi-session VMs, you'll need to use the [Settings catalog](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/configuration/settings-catalog.md) in the Microsoft Intune admin center.
+To configure configuration policies for Windows 10 or Windows 11 Enterprise multi-session VMs, you'll need to use the [Settings catalog](/intune/device-configuration/settings-catalog) in the Microsoft Intune admin center.
 
 The existing device configuration profile templates aren't supported for Windows 10 or Windows 11 Enterprise multi-session VMs, except for the following templates:
 

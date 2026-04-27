@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-portal-tenant-setup.verify-whether-a-microsoft-tenant-exists
+title: Verify whether a Microsoft tenant exists
+metadata:
+  title: Verify Whether A Microsoft Tenant Exists
+  description: This content is part of the "Microsoft tenant setup for Surface Portal access" module.
+  ms.date: 04/14/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-verify-whether-a-microsoft-tenant-exists.md)]
