@@ -20,7 +20,7 @@ This learning path consists of three lessons:
 - Explain that NSGs is not a substitute for firewalls by quickly explaining defense in depth
 
 Learning Path 4 Demos
-- [Demo 04: Administer Virtual Networking](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Demos/04%20-%20Administer%20VIrtual%20Networking.html) 
+- [Demo 04: Administer Virtual Networking](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Demos/04%20-%20Administer%20Virtual%20Networking.html) 
 
 Learning Path 4 Labs/Exercises
 - [Lab 04: Implement Virtual Networking](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_04-Implement_Virtual_Networking.html)

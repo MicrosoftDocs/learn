@@ -21,7 +21,7 @@ This learning path consists of two lessons:
 - End of Learning Path Review Activity slide can be helpful for understanding the concepts 
 
 Learning Path 5 Demos
-- [Demo 05: Administer Intersite Connectivity](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Demos/04%20-%20Administer%20VIrtual%20Networking.html)
+- [Demo 05: Administer Intersite Connectivity](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Demos/04%20-%20Administer%20Virtual%20Networking.html)
 
 Learning Path 5 Labs/Exercises
 - [Lab 05: Implement Intersite Connectivity](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_05-Implement_Intersite_Connectivity.html)
