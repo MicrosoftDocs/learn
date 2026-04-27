@@ -1,21 +1,22 @@
-At the start of this module, the challenge was to set up AI workload identities without carrying forward weak credentials, excessive permissions, or agent identities that lack clear accountability.
+A workload set up with a stored client secret, broad permissions, no assigned owner, and no pre-production validation is common when teams move quickly. It's also the combination that creates the most downstream risk.
 
-You can now address that challenge by choosing the credential model that fits the hosting environment, scoping access to the workload's task, and using the blueprint and accountability model correctly for agent identities.
+Each of those setup choices compounds the others, and the combination is what makes the exposure hard to unwind after the fact. Making each decision deliberately, at setup time, is what keeps a workload identity from becoming an unmonitored exposure.
+
+The practices covered here apply to any AI workload identity. If your organization also manages agent identities provisioned by platforms such as Copilot Studio or Microsoft 365, the same least-privilege and credential-selection principles apply to governing those identities in your tenant, though agent identities have platform-specific provisioning and consent models that this module doesn't cover.
 
 In this module, you learned how to:
 
-- Recognize the setup choices that create security risk for AI workload identities.
-- Select and configure the appropriate credential pattern for an AI workload identity based on where the workload runs.
-- Apply least-privilege access by right-sizing Azure RBAC, Microsoft Graph permissions, and app roles.
-- Explain how agent identity blueprints govern creation, credentials, and token exchange for agent identities.
-- Assign owners, sponsors, and managers to establish accountability for agent identities.
-
-The most important setup discipline is to treat successful authentication as only one checkpoint. A secure setup also requires scoped permissions, documented ownership, required sponsorship, and a configuration model that matches how the workload or agent actually operates.
+- Identify setup decisions that create lasting security risk for AI workload identities.
+- Configure the right credential type for an AI workload based on its hosting environment.
+- Assign least-privilege permissions across Azure RBAC, Microsoft Graph, and app roles.
+- Select the correct roles for Key Vault, Azure AI services, storage, and downstream APIs.
+- Validate the identity configuration and plan credential maintenance before production.
 
 ## Resources
 
 - [Managed identities for Azure resources](/entra/identity/managed-identities-azure-resources/overview?azure-portal=true)
 - [Workload identity federation concepts](/entra/workload-id/workload-identity-federation?azure-portal=true)
-- [Create an agent identity blueprint](/entra/agent-id/identity-platform/create-blueprint?azure-portal=true)
-- [Create agent identities in agent identity platform](/entra/agent-id/identity-platform/create-delete-agent-identities?azure-portal=true)
-- [Administrative relationships in Microsoft Entra Agent ID](/entra/agent-id/identity-platform/agent-owners-sponsors-managers?azure-portal=true)
+- [Azure built-in roles](/azure/role-based-access-control/built-in-roles?azure-portal=true)
+- [Microsoft Graph permissions reference](/graph/permissions-reference?azure-portal=true)
+- [Provide access to Key Vault using Azure RBAC](/azure/key-vault/general/rbac-guide?azure-portal=true)
+- [Service principal sign-in logs](/entra/identity/monitoring-health/concept-sign-ins#service-principal-sign-ins?azure-portal=true)

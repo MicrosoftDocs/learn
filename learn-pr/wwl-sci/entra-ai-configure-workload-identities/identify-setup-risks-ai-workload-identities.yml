@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.entra-ai-configure-workload-identities.identify-setup-risks-ai-workload-identities
-title: Identify setup risks for AI workload identities
+title: Why setup decisions create lasting security risk
 metadata:
-  title: Identify Setup Risks for AI Workload Identities
-  description: "Identify the credential, permission, and governance risks that make AI workload identity setup insecure."
-  ms.date: 04/08/2026
+  title: Why Setup Decisions Create Lasting Security Risk
+  description: "Understand why credential, permission, ownership, and validation decisions made during AI workload identity setup persist as long-term security exposure."
+  ms.date: 04/14/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: unit

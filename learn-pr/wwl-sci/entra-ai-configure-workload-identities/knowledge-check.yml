@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/08/2026
+  ms.date: 04/14/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: unit
@@ -14,58 +14,58 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An administrator is configuring authentication for an AI workload running on Azure App Service. Which credential choice best reduces credential management overhead?"
+  - content: "An AI workload runs on Azure App Service and uses a client secret to authenticate. The workload is stable and the secret won't expire for six months. What should the administrator do?"
     choices:
-    - content: "A client secret stored in application settings"
+    - content: "Keep the client secret since it's working and not yet expired"
       isCorrect: false
-      explanation: "Incorrect: Client secrets increase rotation and exposure risk, and they aren't the preferred option for Azure-hosted workloads."
-    - content: "A managed identity used directly by the Azure-hosted workload"
+      explanation: "A working credential isn't the same as the right credential. App Service supports managed identity, which eliminates the secret entirely."
+    - content: "Replace the client secret with a managed identity on the App Service resource"
       isCorrect: true
-      explanation: "Correct: Managed identities remove the need to manage secrets or certificates for Azure-hosted workloads."
-    - content: "A shared certificate reused across unrelated workloads"
+      explanation: "The hosting environment supports managed identity, so the secret is unnecessary. Replacing it removes a credential that must be tracked, rotated, and protected."
+    - content: "Add a certificate credential alongside the secret for redundancy"
       isCorrect: false
-      explanation: "Incorrect: Reusing certificates across workloads weakens isolation and creates unnecessary management risk."
-  - content: "A workload runs outside Azure and needs app-only access to Microsoft Graph. Which approach avoids storing secrets while meeting the authentication requirement?"
+      explanation: "Adding a second credential increases the management surface without addressing the core issue. Managed identity eliminates both."
+  - content: "A workload running on a Kubernetes cluster outside Azure needs app-only access to Microsoft Graph. The cluster has an OIDC issuer configured. What credential approach should the administrator use?"
     choices:
-    - content: "Assign the workload a system-assigned managed identity in Microsoft Entra ID without any trust configuration"
+    - content: "Create a client secret on the app registration and store it in a Kubernetes secret"
       isCorrect: false
-      explanation: "Incorrect: A workload outside Azure can't use an Azure-managed identity without a configured trust relationship."
-    - content: "Use delegated user permissions so the workload can avoid app permissions"
-      isCorrect: false
-      explanation: "Incorrect: The scenario requires app-only access, so delegated user permissions don't fit the requirement."
-    - content: "Configure workload identity federation so the application trusts an external token or managed identity token"
+      explanation: "The cluster supports OIDC tokens, so federation is available. Storing a client secret introduces a credential that could be eliminated."
+    - content: "Configure workload identity federation using the cluster's OIDC issuer"
       isCorrect: true
-      explanation: "Correct: Workload identity federation lets the application trust an external token instead of storing a secret, which fits workloads that run outside Azure or use an app registration."
-  - content: "What is the primary role of an agent identity blueprint in Microsoft Entra Agent ID?"
+      explanation: "The cluster's OIDC issuer enables federation, which eliminates stored secrets by exchanging the external token for a Microsoft Entra token."
+    - content: "Enable a managed identity on the Kubernetes cluster"
+      isCorrect: false
+      explanation: "Managed identities are for Azure-hosted resources. A cluster outside Azure can't use an Azure-managed identity directly."
+  - content: "An AI workload needs to read secrets from Azure Key Vault at runtime. Which role assignment follows least-privilege principles?"
     choices:
-    - content: "It acts as the reusable governing template that holds shared configuration and credentials for agent identities"
+    - content: "Key Vault Administrator assigned at the resource group level"
+      isCorrect: false
+      explanation: "Key Vault Administrator grants full management over keys, certificates, and vault settings, which is far broader than read access to secrets."
+    - content: "Key Vault Secrets User assigned at the individual vault level"
       isCorrect: true
-      explanation: "Correct: The blueprint is the governing template from which agent identities are created and authenticated."
-    - content: "It replaces the need for sponsors, owners, and managers on agent identities"
+      explanation: "Key Vault Secrets User provides read-only access to secrets, and scoping to the individual vault limits access to the specific resource the workload needs."
+    - content: "Key Vault Secrets Officer assigned at the subscription level"
       isCorrect: false
-      explanation: "Incorrect: Administrative relationships still need to be assigned to maintain accountability."
-    - content: "It converts every agent identity into a multitenant application by default"
-      isCorrect: false
-      explanation: "Incorrect: Blueprints govern agent identities, but they don't automatically make every scenario multitenant."
-  - content: "Which administrative relationship provides business accountability for an agent identity without technical configuration privileges?"
+      explanation: "Secrets Officer adds write and delete capabilities the workload doesn't need, and subscription-level scope expands access beyond the relevant vault."
+  - content: "After configuring an AI workload identity, an administrator confirms the workload can sign in and access its target resources. What additional validation step is needed before the workload goes into production?"
     choices:
-    - content: "Owner"
-      isCorrect: false
-      explanation: "Incorrect: Owners handle technical administration such as configuration and credential management."
-    - content: "Sponsor"
+    - content: "Review the enterprise application's permissions and Azure role assignments to confirm they match the documented workload requirements"
       isCorrect: true
-      explanation: "Correct: Sponsors are accountable for the agent's purpose, lifecycle, and access decisions without needing technical admin access."
-    - content: "Manager"
+      explanation: "A successful sign-in doesn't prove the permission scope is correct. Reviewing permissions confirms the identity holds only the access its task requires."
+    - content: "Grant the identity Contributor access at the subscription level to ensure it has sufficient permissions for future needs"
       isCorrect: false
-      explanation: "Incorrect: Managers are relevant for agent user account relationships, not overall business accountability."
-  - content: "An agent identity needs to read secrets from Azure Key Vault. Which permission model should be used to grant access?"
+      explanation: "Granting broad permissions to prevent future access issues violates least-privilege principles and increases blast radius."
+    - content: "Remove all conditional access policies targeting the identity so authentication is not blocked"
+      isCorrect: false
+      explanation: "Conditional access policies provide security controls that should remain in place. Removing them to avoid sign-in issues weakens access protection."
+  - content: "An administrator rotates a certificate credential but the workload fails to authenticate with the new certificate. The old certificate is still on the app registration. What should the administrator do next?"
     choices:
-    - content: "Azure RBAC role assignment scoped to the Key Vault"
+    - content: "Remove the old certificate to force the workload to use the new one"
+      isCorrect: false
+      explanation: "Removing the working credential while the new one fails would cause a complete authentication outage."
+    - content: "Revert the workload to the old certificate and troubleshoot why the new certificate fails"
       isCorrect: true
-      explanation: "Correct: Access to Azure resources such as Key Vault is granted through Azure RBAC roles scoped to the required resource."
-    - content: "Microsoft Graph application permissions"
+      explanation: "The old certificate is still valid. Reverting restores authentication while the administrator investigates the failure without downtime."
+    - content: "Create a client secret as a temporary fallback until the certificate issue is resolved"
       isCorrect: false
-      explanation: "Incorrect: Microsoft Graph permissions are used for directory or Microsoft 365 operations, not Azure resource access."
-    - content: "App roles assigned on the blueprint"
-      isCorrect: false
-      explanation: "Incorrect: App roles apply to custom APIs, not Azure resource access."
+      explanation: "Introducing a weaker credential type creates a new risk. The old certificate is still valid and available as the immediate fallback."
