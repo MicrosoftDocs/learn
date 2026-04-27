@@ -88,7 +88,7 @@ Each skill is a Markdown file that agents read as needed. The architecture agent
 
 To illustrate how these design steps apply beyond provisioning, consider a compliance auditing workflow:
 
-![Conductor auditing workflow](../media/conductor_auditing.png)
+![Conductor auditing workflow](../media/conductor-auditing.png)
 
 The same design principles apply: single responsibility per agent, artifact-based communication, shared skills for domain knowledge, and a conductor that coordinates the sequence.
 
