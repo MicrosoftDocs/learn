@@ -6,7 +6,7 @@ When you ask the question, to what can I assign an identity in Microsoft Entra I
 - You can assign identities to physical devices, such as mobile phones, desktop computers, and IoT devices.
 - You can assign identities to software-based objects, such as applications, virtual machines, services, and containers. These types of identities are referred to as workload identities.
 
-:::image type="content" source="../media/identity-types-inline.png" lightbox="../media/identity-types-expanded.png" alt-text="A block diagram showing the categories of identity types. The categories consist of Workload identities, device identities, and human identities. Workload and device identities are grouped under machine identities.":::
+:::image type="content" source="../media/identity-types-updated.png" lightbox="../media/identity-types-updated.png" alt-text="A block diagram showing the categories of identity types. The categories consist of Workload identities, device identities, and human identities. Workload and device identities are grouped under machine identities.":::
 
 In this unit, we consider each type of Microsoft Entra identity.
 

@@ -3,9 +3,9 @@ uid: learn.pitch-your-product-prototype.5-demonstrate-your-prototype
 title: Demonstrate your prototype
 metadata:
   title: Demonstrate your prototype
-  description: This unit teaches you how to demonstrate a prototype.
+  description: This unit teaches you how to plan and deliver a reliable prototype demonstration.
   author: czhu89
-  ms.date: 07/23/2024
+  ms.date: 04/20/2026
   ms.author: cazh
   ms.topic: unit
 durationInMinutes: 5
@@ -14,21 +14,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "When you demo your prototype what should you always make sure the audience sees?"
+  - content: "When you demo your prototype, what should you always make sure the audience sees?"
     choices:
     - content: "Your key user flows."
       isCorrect: true
       explanation: "It's crucial your audience sees the key user flows so they understand how it works and what customers experience."
     - content: "The security features of your app."
       isCorrect: false
+      explanation: "Security can matter, but the demo should focus on the key user flows that show how the product works and solves the problem."
     - content: "The social sharing features of your app."
-      isCorrect: false  
+      isCorrect: false
+      explanation: "Social sharing is presented as a possible future roadmap item, not the core flow the audience must see in the demo."
   - content: "Why is it important to share your future product roadmap?"
     choices:
     - content: "It's not and you should avoid it."
       isCorrect: false
+      explanation: "The unit explains that the roadmap helps the audience understand the future of the product and where it's heading next."
     - content: "So your audience knows how many engineers you need to hire."
       isCorrect: false
+      explanation: "Hiring needs aren't the purpose of the roadmap here; the roadmap is meant to show the product's planned evolution."
     - content: "So your audience understands the future of your product."
       isCorrect: true
-      explanation: "Your audience wants to know you have a future plan for your product to help them understand how it will grow."
+      explanation: "Your audience wants to know you have a future plan for your product to help them understand how it grows."
+  - content: "If AI output or network conditions might vary during a live demo, what should you do?"
+    choices:
+    - content: "Keep a prerecorded or staged backup so you can finish the story reliably."
+      isCorrect: true
+      explanation: "A backup demo lets you preserve the narrative and credibility if the live flow becomes unreliable."
+    - content: "Continue with the live demo no matter what."
+      isCorrect: false
+      explanation: "Insisting on a failing live demo can distract the audience from the product story."
+    - content: "Remove the demo from the pitch entirely."
+      isCorrect: false
+      explanation: "The better approach is to plan a reliable fallback, not to remove the product evidence."

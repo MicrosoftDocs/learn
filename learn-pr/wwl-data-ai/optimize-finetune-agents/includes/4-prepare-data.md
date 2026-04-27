@@ -103,8 +103,6 @@ This text similarity grader compares the model's generated itinerary against the
 
 ---
 
-> [!NOTE]
-> **Format resources**: For detailed format specifications including multi-turn conversations, tool calls, and vision tasks, see [Microsoft Foundry fine-tuning data format documentation](/azure/ai-foundry/how-to/fine-tune-model-api#data-format).
 
 ## Validate data quality
 

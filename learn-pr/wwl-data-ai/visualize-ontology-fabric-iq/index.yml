@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.visualize-ontology-fabric-iq
+metadata:
+  title: Visualize Ontology Data with Microsoft Fabric IQ
+  description: Learn how to explore entity instances, visualize entity connections in the relationship graph, and filter ontology data using the Query builder with filters and components in Microsoft Fabric IQ.
+  ms.date: 04/13/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Visualize ontology data with Microsoft Fabric IQ
+summary: Explore entity instances, visualize business concept connections in the relationship graph, and filter across multiple data sources using the Query builder in Microsoft Fabric IQ—without writing SQL joins.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explore entity instances to see real records from your data sources in the ontology
+  - Expand the relationship graph to visualize entity connections
+  - Filter and explore ontology data using the Query builder with filters and components
+prerequisites: |
+  Before starting this module, you should have:
+  - Completed the [Create an ontology with Microsoft Fabric IQ](/training/modules/create-ontology-with-fabric-iq/) module or have equivalent knowledge of creating and binding ontologies in Fabric IQ
+  - Familiarity with Microsoft Fabric workspaces and navigation
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.visualize-ontology-fabric-iq.introduction
+- learn.wwl.visualize-ontology-fabric-iq.explore-ontology
+- learn.wwl.visualize-ontology-fabric-iq.visualize-relationships
+- learn.wwl.visualize-ontology-fabric-iq.query-ontology-query-builder
+- learn.wwl.visualize-ontology-fabric-iq.exercise-visualize-ontology
+- learn.wwl.visualize-ontology-fabric-iq.knowledge-check
+- learn.wwl.visualize-ontology-fabric-iq.summary
+badge:
+  uid: learn.wwl.visualize-ontology-fabric-iq.badge

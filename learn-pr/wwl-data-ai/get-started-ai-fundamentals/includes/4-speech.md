@@ -2,9 +2,6 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=1918c910-7b6e-4e7a-854a-033223beb325]
 
-> [!TIP]
-> [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
-
 > [!NOTE]
 > See the **Text and images** tab for more details!
 
@@ -13,6 +10,10 @@
 ::: zone pivot="text"
 
 *Speech* capabilities in AI applications and agents enable users to interact with them through spoken language.
+
+For example, our computing history site could include a microphone button that allows users to ask questions verbally, and respond by synthesizing spoken answers.
+
+![Screenshot of a computing history site performing speech recognition.](../media/computing-history-speech.png)
 
 ## Speech recognition
 

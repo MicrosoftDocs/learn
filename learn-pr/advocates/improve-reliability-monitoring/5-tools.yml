@@ -4,7 +4,7 @@ title: "Azure monitoring tools"
 metadata:
   title: "Azure monitoring tools"
   description: "Azure monitoring tools"
-  ms.date: 08/18/2023
+  ms.date: 04/15/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -17,14 +17,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following are the two major data types used in Azure Monitor?'
+  - content: 'Which of the following best describes the common observability data types emphasized in Azure Monitor?'
     choices:
-    - content: 'Charts and tables'
+    - content: 'Charts, tables, and dashboards'
       isCorrect: false
-      explanation: 'Azure monitor can display both charts and tables, but they are not data types.'
-    - content: 'Metrics and logs'
+      explanation: 'Azure Monitor can display charts and tables on dashboards, but those are visualizations rather than observability data types.'
+    - content: 'Metrics, logs, and distributed traces'
       isCorrect: true 
-      explanation: 'Correct, Azure Monitor works with metrics and logs.'
-    - content: 'Counters and gauges'
+      explanation: 'Correct, Azure Monitor emphasizes metrics, logs, and distributed traces as core observability data types.'
+    - content: 'Counters, gauges, and alerts'
       isCorrect: false
-      explanation: 'Azure monitor can ingest metrics from counters and gauges, but they are not the two major data types.'
+      explanation: "Counters and gauges can produce metrics, and alerts act on data, but these aren't the observability data types emphasized by Azure Monitor."

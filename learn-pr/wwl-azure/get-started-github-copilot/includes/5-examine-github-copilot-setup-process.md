@@ -8,20 +8,17 @@ Individuals can use the following steps to set up GitHub Copilot:
 
     There are several GitHub Copilot plans that provide access to GitHub Copilot:
 
-    - Use Copilot Free. Get a limited experience of Copilot with up to 2,000 code completions and 50 chats or premium requests per month-no paid plan required.
+    - Use Copilot Free. Get a limited Copilot experience; see the Copilot plans page for current feature limits and capabilities.
 
-    - Sign up for a paid plan. You can subscribe to either:
+    - Subscribe to a paid plan (for example, Copilot Pro or Copilot Pro+). Paid plans provide expanded model and chat capabilities. See the Copilot plans page for current subscription options and availability.
 
-        - Copilot Pro, which includes a one-time 30-day free trial and 300 monthly premium requests.
-        - Copilot Pro+, which includes 1,500 monthly premium requests and full access to all available models. Subscribe to Copilot Pro+.
+    - Use GitHub Copilot through your organization or enterprise. If you're part of an organization or enterprise with a GitHub Copilot plan, you can request access through your organization.
 
-    - Use Copilot through your organization or enterprise. If you're part of an organization or enterprise with a Copilot plan, you can request access through your organization.
+    - Verified students, teachers, or open source maintainers. Qualified individuals may be eligible for free access — see the Copilot plans page for details.
 
-    - Verified students, teachers, or open source maintainers. Qualified individuals may be eligible to use Copilot for free.
+2. Install the GitHub Copilot extension for your IDE.
 
-1. Install the GitHub Copilot extension for your IDE.
-
-    Using GitHub Copilot in your preferred development environment requires the GitHub Copilot extension. Extensions are available for the following IDEs:
+    Using GitHub Copilot in your preferred development environment requires a GitHub Copilot extension. Extensions are available for the following IDEs:
 
     - Visual Studio Code
     - Visual Studio
@@ -30,27 +27,29 @@ Individuals can use the following steps to set up GitHub Copilot:
     - Eclipse
     - Xcode
 
-1. Install the Copilot extension for the command line.
+    For Visual Studio Code, the extension is named **GitHub Copilot Chat**.
 
-    If you want to use Copilot in the command line, install the Copilot extension for the GitHub CLI.
+3. Install the GitHub Copilot extension for the command line.
 
-1. Use Copilot in Windows Terminal.
+    If you want to use GitHub Copilot in the command line, install the GitHub Copilot extension for the GitHub CLI.
 
-    If you want to chat with Copilot in Windows Terminal, connect Copilot with Terminal Chat in Windows Terminal Canary.
+4. Use GitHub Copilot in Windows Terminal.
 
-1. Set up networking (if necessary).
+    If you want to chat with GitHub Copilot in Windows Terminal, connect GitHub Copilot with Terminal Chat in Windows Terminal Canary.
+
+5. Set up networking (if necessary).
 
     If you connect through an HTTP proxy server or firewall, ensure that key URLs are added to the allowlist for the proxy server or firewall.
 
     You may also need to install a custom SSL certificate on your machine.
 
-1. Configure settings (optional).
+6. Configure settings (optional).
 
-    All users can configure Copilot settings in their IDE or in the CLI.
+    All users can configure GitHub Copilot settings in their IDE or in the CLI.
 
-    If you have your own Copilot plan (instead of using your organization or enterprise's plan), you can:
+    If you have your own GitHub Copilot plan (instead of using your organization or enterprise's plan), you can:
 
-    - Install Copilot Extensions to integrate other tools with Copilot Chat.
+    - Install GitHub Copilot Extensions to integrate other tools with GitHub Copilot Chat.
     - Manage policies as an individual subscriber.
 
 ## Set up GitHub Copilot for organizations
@@ -59,13 +58,13 @@ Organizations can use the following steps to set up GitHub Copilot:
 
 1. Subscribe your organization to GitHub Copilot.
 
-    Set up a Copilot Business plan for your organization.
+    Set up a GitHub Copilot Business plan for your organization.
 
-    If your organization is part of an enterprise with a Copilot Enterprise or Copilot Business plan, your enterprise owner can instead enable Copilot for your organization. You can request access from your enterprise owner by opening your GitHub account Settings and requesting access under "Get Copilot from an organization."
+    If your organization is part of an enterprise with a GitHub Copilot Enterprise or GitHub Copilot Business plan, your enterprise owner can instead enable GitHub Copilot for your organization. You can request access from your enterprise owner by opening your GitHub account Settings and requesting access under "Get Copilot from an organization."
 
 1. Set policies.
 
-    Control which Copilot features are available in your organization.
+    Control which GitHub Copilot features are available in your organization.
 
 1. Set up networking (if necessary).
 
@@ -75,25 +74,25 @@ Organizations can use the following steps to set up GitHub Copilot:
 
 1. Grant access to members.
 
-    Enable Copilot for some or all members of your organization.
+    Enable GitHub Copilot for some or all members of your organization.
 
-    To help drive adoption of Copilot in your organization, think about what teams or members are most excited about Copilot or could benefit the most from Copilot. You may want to enable Copilot for those members before enabling Copilot for your whole organization. This can help you discover blockers, demonstrate early success, and set your organization up for a successful Copilot rollout.
+    To help drive adoption of GitHub Copilot in your organization, think about what teams or members are most excited about GitHub Copilot or could benefit the most from GitHub Copilot. You may want to enable GitHub Copilot for those members before enabling GitHub Copilot for your whole organization. This can help you discover blockers, demonstrate early success, and set your organization up for a successful GitHub Copilot rollout.
 
     GitHub has found that many successful rollouts offer a self-service model where developers can claim a license without approval.
 
     If your organization is part of an enterprise on GitHub Enterprise Cloud, users must perform some additional setup to authenticate to their account from their development environment.
 
-1. Drive Copilot adoption.
+1. Drive GitHub Copilot adoption.
 
-    Planning and implementing an effective enablement process is essential to drive adoption of Copilot in your organization.
+    Planning and implementing an effective enablement process is essential to drive adoption of GitHub Copilot in your organization.
 
-1. Enhance the Copilot experience.
+1. Enhance the GitHub Copilot experience.
 
-    Enhance the Copilot experience for your organization by:
+    Enhance the GitHub Copilot experience for your organization by:
 
-    - Setting up knowledge bases for use with Copilot Chat (Copilot Enterprise only).
-    - Fine tuning Copilot by creating a custom large language model.
-    - Installing Copilot Extensions to integrate other tools with Copilot Chat.
+    - Setting up knowledge bases for use with GitHub Copilot Chat (GitHub Copilot Enterprise only).
+    - Fine tuning GitHub Copilot by creating a custom large language model.
+    - Installing GitHub Copilot Extensions to integrate other tools with GitHub Copilot Chat.
 
 ## Access to the GitHub Copilot Free plan
 
@@ -101,16 +100,16 @@ Most individual developers can start using GitHub Copilot Free with little or no
 
 - You have a managed user account.
 - You're assigned a Copilot account through an organization.
-- You have an existing Copilot Pro or Copilot Pro+ plan or Copilot Pro trial.
+- You have an existing Copilot Pro or Copilot Pro+ plan.
 - You have free access to Copilot Pro as a student, teacher, or open-source maintainer.
 
-There are a few ways to start using Copilot Free, depending on where you're working.
+There are a few ways to start using Copilot Free, depending on where you're working. For current plan details and availability, see the Copilot plans page: https://docs.github.com/en/copilot/get-started/plans
 
 - Visual Studio and Visual Studio Code: In Visual Studio and Visual Studio Code you can sign up for the GitHub Copilot Free plan directly from the editor. If you have a GitHub account, you'll be prompted to sign in. If you don't have a GitHub account, you'll be prompted to create one. After you sign up and sign in, you can start using GitHub Copilot Free.
 
-- GitHub: With a GitHub Copilot Free plan, you can ask Copilot questions within a chat interface on GitHub. You can sign up from the Settings page of your GitHub account.
+- GitHub: With a GitHub Copilot Free plan, you can ask GitHub Copilot questions within a chat interface on GitHub. You can sign up from the Settings page of your GitHub account.
 
-- GitHub Mobile: You can also chat with GitHub Copilot in GitHub Mobile. In GitHub Mobile, tap the GitHub Copilot icon in the bottom right corner of the screen (the GitHub Copilot icon is not shown on every page in GitHub Mobile, if you don't see the icon, navigate to a different page in GitHub Mobile and look for the icon there). At the bottom of the page, use the "Ask Copilot" box to start a chat with Copilot.
+- GitHub Mobile: You can also chat with GitHub Copilot in GitHub Mobile. In GitHub Mobile, tap the GitHub Copilot icon in the bottom right corner of the screen (the GitHub Copilot icon is not shown on every page in GitHub Mobile, if you don't see the icon, navigate to a different page in GitHub Mobile and look for the icon there). At the bottom of the page, use the "Ask Copilot" box to start a chat with GitHub Copilot.
 
 - Other IDEs: you need to activate GitHub Copilot Free from your GitHub account before you can use it in other IDEs. In the upper-right corner of any page on GitHub, select your profile photo, then select "Your Copilot" to open GitHub Copilot in Settings. Select "Start using Copilot Free" to activate GitHub Copilot Free and open immersive mode. To the right of the "Install Copilot in your favorite code editor" text, select the dropdown menu and then select your preferred editor.
 

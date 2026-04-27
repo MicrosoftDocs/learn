@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1280 720">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #156082;
+      }
+
+      .st2, .st3, .st4 {
+        stroke-miterlimit: 8;
+        stroke-width: 2px;
+      }
+
+      .st3 {
+        fill: #156082;
+        stroke: #042433;
+      }
+
+      .st3, .st4 {
+        fill-rule: evenodd;
+      }
+
+      .st4 {
+        fill: #a6caec;
+        stroke: #000;
+      }
+
+      .st1, .st5 {
+        font-family: ArialMT, Arial;
+      }
+
+      .st1, .st5, .st6 {
+        font-size: 24px;
+        isolation: isolate;
+      }
+
+      .st6 {
+        font-family: Arial-ItalicMT, Arial;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <rect class="st0" y="0" width="1280" height="720"/>
+  <path class="st3" d="M102,64c0-12.2,9.8-22,22-22h231c12.1,0,22,9.8,22,22v88c0,12.1-9.9,22-22,22H124c-12.2,0-22-9.9-22-22v-88Z"/>
+  <text class="st1" transform="translate(124.5 116)"><tspan x="0" y="0">Pre</tspan></text>
+  <text class="st1" transform="translate(158.5 116)"><tspan x="0" y="0">-</tspan></text>
+  <text class="st1" transform="translate(166.6 116)"><tspan x="0" y="0">deployment setup</tspan></text>
+  <path class="st4" d="M138,227.8c0-12.1,9.8-21.8,21.8-21.8h195.3c12.1,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-195.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st5" transform="translate(159.7 279)"><tspan x="0" y="0">Windows Autopilot</tspan></text>
+  <path class="st4" d="M138,382.8c0-12.1,9.8-21.8,21.8-21.8h195.3c12.1,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-195.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st5" transform="translate(164.7 434)"><tspan x="0" y="0">Microsoft Entra ID</tspan></text>
+  <path class="st4" d="M138,538.8c0-12.1,9.8-21.8,21.8-21.8h195.3c12.1,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-195.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st5" transform="translate(194.2 576)"><tspan x="0" y="0">Windows 11</tspan></text>
+  <text class="st5" transform="translate(193.6 605)"><tspan x="0" y="0">for Business</tspan></text>
+  <path class="st3" d="M428,64c0-12.2,9.9-22,22-22h231c12.2,0,22,9.8,22,22v88c0,12.1-9.8,22-22,22h-231c-12.1,0-22-9.9-22-22v-88Z"/>
+  <text class="st1" transform="translate(502.2 101)"><tspan x="0" y="0">Deployment</tspan></text>
+  <text class="st1" transform="translate(496.7 130)"><tspan x="0" y="0">management</tspan></text>
+  <path class="st4" d="M464,238c0-17.7,14.3-32,32-32h175c17.7,0,32,14.3,32,32v128c0,17.7-14.3,32-32,32h-175c-17.7,0-32-14.3-32-32v-128Z"/>
+  <text class="st6" transform="translate(482.9 237)"><tspan x="0" y="0">Cloud:</tspan></text>
+  <text class="st5" transform="translate(482.9 266)"><tspan x="0" y="0">•</tspan></text>
+  <text class="st5" transform="translate(512.9 266)"><tspan x="0" y="0">Microsoft Intune</tspan></text>
+  <text class="st5" transform="translate(482.9 295)"><tspan x="0" y="0">•</tspan></text>
+  <text class="st5" transform="translate(512.9 295)"><tspan x="0" y="0">Windows</tspan></text>
+  <text class="st5" transform="translate(512.9 324)"><tspan x="0" y="0">Autopatch</tspan></text>
+  <text class="st5" transform="translate(482.9 352)"><tspan x="0" y="0">•</tspan></text>
+  <text class="st5" transform="translate(512.9 352)"><tspan x="0" y="0">Delivery</tspan></text>
+  <text class="st5" transform="translate(512.9 381)"><tspan x="0" y="0">O</tspan></text>
+  <text class="st5" transform="translate(530.4 381)"><tspan x="0" y="0">ptimization</tspan></text>
+  <path class="st4" d="M464,451.8c0-12.1,9.8-21.8,21.8-21.8h195.3c12.1,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-195.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st6" transform="translate(479.9 459)"><tspan x="0" y="0">On</tspan></text>
+  <text class="st6" transform="translate(510.6 459)"><tspan x="0" y="0">-</tspan></text>
+  <text class="st6" transform="translate(479.9 488)"><tspan x="0" y="0">premises/hybrid:</tspan></text>
+  <text class="st5" transform="translate(479.9 517)"><tspan x="0" y="0">Configuration</tspan></text>
+  <text class="st5" transform="translate(479.9 546)"><tspan x="0" y="0">Manage</tspan></text>
+  <text class="st5" transform="translate(561.9 546)"><tspan x="0" y="0">r</tspan></text>
+  <path class="st3" d="M754,66.8c0-12.1,9.8-21.8,21.8-21.8h231.3c12,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-231.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st1" transform="translate(777.2 118)"><tspan x="0" y="0">Monitoring &amp; reporting</tspan></text>
+  <path class="st4" d="M790,227.8c0-12.1,9.8-21.8,21.8-21.8h195.3c12,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-195.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st5" transform="translate(813.6 279)"><tspan x="0" y="0">Endpoint analytics</tspan></text>
+  <path class="st4" d="M790,381.8c0-12.1,9.8-21.8,21.8-21.8h195.3c12,0,21.8,9.8,21.8,21.8v87.3c0,12.1-9.8,21.8-21.8,21.8h-195.3c-12.1,0-21.8-9.8-21.8-21.8v-87.3Z"/>
+  <text class="st5" transform="translate(821.2 419)"><tspan x="0" y="0">Windows Update</tspan></text>
+  <text class="st5" transform="translate(806.3 448)"><tspan x="0" y="0">for Business reports</tspan></text>
+  <path class="st2" d="M102,108h.8v163.1h34.8"/>
+  <path class="st2" d="M102,267h.8v163.1h34.8"/>
+  <path class="st2" d="M102,430h.8v163.1h34.8"/>
+  <path class="st2" d="M430,138h.8v163.1h34.8"/>
+  <path class="st2" d="M431,302v193.5h33.4"/>
+  <path class="st2" d="M754,109h.8v163.1h34.8"/>
+  <path class="st2" d="M755,271v154.5h35.4"/>
+</svg>

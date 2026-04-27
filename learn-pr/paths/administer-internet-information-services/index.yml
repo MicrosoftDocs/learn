@@ -24,5 +24,6 @@ modules:
 - learn.devrel.website-application-virtual-directory
 - learn.devrel.manage-internet-information-services
 - learn.devrel.secure-harden-internet-information-services
+- learn.devrel.troubleshoot-optimize-internet-information-services-performance
 trophy:
   uid: learn.devrel.administer-internet-information-services.trophy

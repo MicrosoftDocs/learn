@@ -1,0 +1,65 @@
+### YamlMime:Module 
+
+uid: learn.dpu.prepare-windows
+
+title: Prepare to deploy updates for Windows client and Microsoft 365 apps
+
+metadata: 
+
+  title: Prepare to Deploy Updates for Windows Client and Microsoft 365 Apps
+  description: In this module, you'll review recommended tasks and deliverables needed to prepare your organization for a Windows 11 upgrade.
+  ms.date: 01/01/2026 
+  author: Stephanie-Rosenzweig 
+  ms.author: v-stephanier
+  ms.topic: module 
+  ms.service: windows
+summary: | 
+   This module introduces the Prepare phase, the second phase of the Windows 11 deployment process. You’ll learn how to prepare your organization for a smooth transition to Windows 11 by building on your deployment readiness planning. You’ll explore the key tasks and deliverables needed across operations, applications, infrastructure, configurations, devices, and users. The module guides you through prepare-level tasks and deliverables for each area, helping you validate readiness and address gaps using recommended tools, reports, and deliverables. 
+
+abstract: | 
+  By the end of this module, you'll be able to: 
+
+  - Prepare operations, applications, infrastructure, configurations, devices, and users for a Windows 11 deployment
+  - Validate readiness and remediate gaps using recommended tools, reports, and deliverables
+  - Describe how deployment phases and rings are used to safely begin Windows 11 deployment
+
+prerequisites: | 
+  - Planned for deployment by evaluating organizational readiness for Windows 11, including defining success criteria, identifying risks, and creating deliverables.
+
+iconUrl: /training/achievements/prepare-windows.svg
+
+ratingEnabled: false 
+
+levels:  
+
+  - beginner
+
+roles:  
+
+  - technology-manager
+
+products: 
+
+  - windows-10
+  - windows-11
+  - m365
+  - m365-apps-admin-center
+  - intune
+  - configuration-manager
+
+units: 
+
+  - learn.dpu.prepare-windows.introduction
+  - learn.dpu.prepare-windows.prepare 
+  - learn.dpu.prepare-windows.operations
+  - learn.dpu.prepare-windows.applications
+  - learn.dpu.prepare-windows.infrastructure
+  - learn.dpu.prepare-windows.configurations
+  - learn.dpu.prepare-windows.devices
+  - learn.dpu.prepare-windows.users
+  - learn.dpu.prepare-windows.knowledge-check
+  - learn.dpu.prepare-windows.summary
+
+badge: 
+
+  uid: learn.dpu.prepare-windows.badge

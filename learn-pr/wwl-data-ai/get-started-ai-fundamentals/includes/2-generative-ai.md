@@ -2,9 +2,6 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=834bbf13-bf7b-4cd5-b8c5-3978f56cf887]
 
-> [!TIP]
-> [Try the Computing History app shown in this video for yourself](https://aka.ms/mslearn-ai-workloads?azure-portal=true).
-
 > [!NOTE]
 > See the **Text and images** tab for more details!
 
@@ -12,7 +9,17 @@
 
 ::: zone pivot="text"
 
-*Generative AI* is a branch of AI that enables software applications to generate new content; often natural language dialogs, but also images, video, code, and other formats. The ability to generate content is based on a *language model*, which has been trained with huge volumes of data - often documents from the Internet or other public sources of information.
+*Generative AI* is a branch of AI that enables software applications to generate new content; often natural language dialogs, but also images, video, code, and other formats.
+
+For example, a computing history web site could provide a generative AI chat interface into which users can enter questions about key figures, technologies, and events in the history of computing.
+
+![Screenshot of a computing history chat interface.](../media/computing-history-chat.png)
+
+The ability to chat with the site and have it generate original responses to questions creates a compelling interactive experience for users.
+
+## How does generative AI work?
+
+The ability to generate content is based on a *language model*, which has been trained with huge volumes of data - often documents from the Internet or other public sources of information.
 
 ![Diagram of a generative AI application in which a user chats with a language model.](../media/generative-ai.png)
 

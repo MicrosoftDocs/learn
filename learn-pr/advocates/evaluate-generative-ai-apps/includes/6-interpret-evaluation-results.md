@@ -1,41 +1,49 @@
-Accurately interpreting evaluation results isn't only valuable; it's essential. As AI systems become increasingly sophisticated and are deployed in critical domains such as healthcare and, finance, the stakes for misinterpretation grow exponentially. Interpreting evaluation results involves more than just reading numbers; it requires understanding the metrics, the AI's operating context, and the real-world impacts of its performance. Misinterpreting these results can lead to overconfidence in flawed systems, overlooking critical weaknesses, or missing opportunities for crucial improvements.
+Accurately interpreting evaluation results is essential because scores only become useful when you read them in context. A good review looks at the evaluator type, the dataset, the user scenario, and the mitigation decision you need to make next. Misreading those signals can lead to overconfidence in a flawed system or to changes that don't address the real problem.
 
-## Contextualizing evaluation results
+## Start with the evaluator's output contract
 
-When interpreting evaluation results for generative AI output, it's crucial to consider the broader context in which the AI system operates. This context helps provide a more nuanced and meaningful interpretation of the results.
+Before deciding whether a result is good or bad, confirm what the evaluator actually returned. Current Foundry evaluation results commonly include:
 
-### Consider the specific use case and objectives
+- **A `label`** such as `pass` or `fail` so you can compare across evaluators
+- **A `score`** on the evaluator's natural scale
+- **A `threshold`** that converts non-binary numeric scores into pass/fail
+- **A `reason`** for most LLM-judge evaluators
+- **Optional `details`** for some evaluators, especially agent-oriented ones such as `Tool Call Accuracy`
 
-Every AI application has unique goals and requirements. When analyzing evaluation results, always refer to the original objectives of the AI system. For instance, an AI designed for creative writing might prioritize originality and engagement over factual accuracy, while an AI for medical diagnosis would have opposite priorities.
+Not every evaluator uses the same score scale:
 
-### Analyze trends over multiple evaluations
+- **1-5 judge scores** for many quality and RAG evaluators
+- **0-1 algorithmic scores** for metrics such as F1, BLEU, GLEU, and METEOR
+- **0-7 severity scores** for core harm evaluators (Hate and Unfairness, Sexual, Violence, Self-Harm), with a default pass threshold of 3
+- **Boolean or pass/fail results** for evaluators such as Groundedness Pro, Indirect Attack, Protected Materials, Code Vulnerability, and Ungrounded Attributes
 
-Single evaluations can be misleading due to various factors such as data anomalies or testing conditions. For example, if a customer support AI system is only evaluated during business hours (for example, 9 AM to 5 PM), it might perform exceptionally well because the types of customer inquiries during this time might be more routine or predictable. However, by conducting evaluations at various times (for example, business hours, evenings, weekends, holidays), you might uncover differences in the AI's ability to handle varying customer moods or urgency levels that might change throughout the day or week.
+A pass label is useful for triage, but don't stop there. Always read the natural score, threshold, and reason behind it.
 
-## Interpreting different types of results
+## Use aggregate and row-level views together
 
-Evaluation results often come in various forms, each offering unique insights into the AI's performance. Understanding how to interpret these different types of results is key to a comprehensive evaluation.
+Aggregate results help you spot trends across the whole dataset. Row-level results show which prompts failed, what the model said, and why the evaluator assigned a score or label. Both views matter.
 
-### Balancing quantitative and qualitative insights
+For example, a model might show acceptable average relevance, but the row-level results could reveal that it fails consistently on one type of customer question or one retrieval source. Those clustered failures are often more actionable than the average score itself.
 
-The most robust interpretations come from combining quantitative metrics with qualitative assessments. This balanced approach provides a more complete picture of the AI's performance, capturing both measurable outcomes and subjective qualities that are often crucial in real-world applications.
+If metrics are missing or an entire category looks suspiciously empty, verify that the evaluator was selected and supported for that run before you interpret the absence of data as a good result.
 
-### Qualitative feedback and its implications
+## Compare runs against a baseline
 
-Human evaluations and open-ended feedback offer insights that numeric scores can't capture, such as the naturalness of generated text or the appropriateness of responses in context. This feedback can highlight subtle issues or unexpected strengths in the AI system’s output. For example, consider a generative AI app designed to function as a customer service chatbot for an airline. A human reviewer might note that while the chatbot's responses are grammatically correct, they often sound robotic and lack the warmth expected in customer service interactions.
+Single evaluations can be misleading. The most useful comparisons come from running the same dataset and evaluator set before and after a change, then comparing the results against a baseline. This makes it easier to attribute a score change to a prompt revision, retrieval update, filtering change, or model swap.
 
-Example interaction:
+Current Foundry comparison guidance also emphasizes statistical testing when comparing runs. In the portal comparison view, Microsoft Foundry uses statistical t-testing and color-coded indicators (such as *ImprovedStrong*, *ImprovedWeak*, *DegradedStrong*, *DegradedWeak*, *ChangedStrong*, *ChangedWeak*, and *Inconclusive*) based on sample size and p-value to flag whether a change looks improved, degraded, or inconclusive. Treat a small numerical difference with caution unless the difference is statistically significant and meaningful across enough samples.
 
-**Customer**: "I'm really worried about missing my connecting flight due to a delay."
+## Balance quantitative and qualitative insights
 
-**Chatbot**: "Your concern about missing your connecting flight due to a delay is noted. In the event of a missed connection caused by a delay in our service, you'll be re-booked on the next available flight at no additional cost."
+The strongest interpretation combines numeric metrics with human review. Numeric scores tell you where to look; human review explains whether the failure matters in the real experience.
 
-While factually correct and helpful, the response lacks empathy and a natural conversational tone. The response could lead to customer dissatisfaction despite the accurate information provided.
+For example, a customer-support response can score well for fluency and relevance but still sound cold or overly procedural. A reviewer might conclude that the answer is technically correct yet likely to frustrate the user because it lacks empathy or fails to answer the user's real concern.
 
-### Numeric scores and their significance
+## Look for trends, not isolated wins
 
-Quantitative metrics like accuracy scores or BLEU scores provide concrete, comparable data points. However, it's important to understand what each score represents and its limitations. For example, a high accuracy score might mask poor performance on rare but critical cases.
+Evaluation is most useful when you observe patterns over time. Repeatedly low groundedness can point to a retrieval problem. Repeated safety failures can point to missing guardrails. A strong overall score with a recurring edge-case failure can indicate that your average metrics are hiding a serious risk.
 
-Consider a generative AI app designed for translating medical texts from English to Spanish. When tested on a large dataset of response and ground truth data, the model output achieves a high overall BLEU score of 0.85 (on a scale from 0 to 1, where 1 is perfect). This score suggests that, on average, the AI-generated translations closely match reference translations created by human experts. It indicates that the model generally produces fluent and accurate translations for most of the medical text.
+When you interpret results this way, evaluations become more than a report card - they become evidence for what to improve next.
 
-What’s not blatantly obvious is that the model might choose common translations that are incorrect in specific contexts, yet still achieve a high BLEU score. For instance, medical terms often require context-specific translations. AI might translate the phrase "The operation revealed a frozen shoulder"  to "La operación reveló un hombro congelado". However, in the medical context, the correct translation would be "La operación reveló una capsulitis adhesive". "Frozen shoulder" is a medical term that shouldn't be translated literally, but the literal translation might still score well in a BLEU evaluation.
+> [!TIP]
+> Review the aggregate, comparison, and sample-level views together when you analyze an evaluation run. For the current portal workflow, see [View evaluation results in the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-results).

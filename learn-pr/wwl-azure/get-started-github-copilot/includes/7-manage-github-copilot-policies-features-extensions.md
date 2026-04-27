@@ -13,23 +13,23 @@ There are several features of GitHub Copilot that you can enable or disable usin
 
 #### GitHub Copilot in GitHub
 
-You can choose whether to use GitHub Copilot Chat in GitHub, however, preview features aren't available. This setting is enabled by default.
+You can choose whether to use GitHub Copilot in GitHub, however, preview features aren't available. This setting is enabled by default.
 
 #### GitHub Copilot in GitHub Desktop
 
-You can choose whether to use GitHub Copilot Chat for assistance in GitHub Desktop. This setting is enabled by default.
+You can choose whether to use GitHub Copilot for assistance in GitHub Desktop. This setting is enabled by default.
 
-#### GitHub Copilot Cloud Agent 
+#### GitHub Copilot Cloud Agent
 
-You can choose whether to enable or disable GitHub Copilot Cloud Agent  in your repositories. GitHub Copilot Cloud Agent  allows you to assign GitHub Copilot to GitHub issues, or ask GitHub Copilot to raise a pull request from a prompt in GitHub Copilot Chat. GitHub Copilot Cloud Agent  is enabled in all repositories by default, but you can block it from being used in repositories owned by your personal account. GitHub Copilot Cloud Agent  is available with the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
+You can choose whether to enable or disable GitHub Copilot Cloud Agent in your repositories. GitHub Copilot Cloud Agent allows you to assign GitHub Copilot to GitHub issues, or ask GitHub Copilot to raise a pull request from a prompt during a chat session. GitHub Copilot Cloud Agent is enabled in all repositories by default, but you can block it from being used in repositories owned by your personal account. GitHub Copilot Cloud Agent is available with the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 
 #### GitHub Copilot can search the web
 
-You can choose whether to use the web search capability in GitHub Copilot Chat. If you enable this setting, GitHub Copilot Chat will use Bing to search the internet for information related to a question. Bing search is particularly helpful when discussing new technologies or highly specific subjects.
+You can choose whether to use the web search capability in GitHub Copilot. If you enable this setting, GitHub Copilot will use Bing to search the internet for information related to a question. Bing search is particularly helpful when discussing new technologies or highly specific subjects.
 
 #### Non-Microsoft coding agents
 
-You can choose whether to allow non-Microsoft coding agents to be enabled in your repositories. Non-Microsoft agents, such as Anthropic Claude and OpenAI Codex, can work alongside the GitHub Copilot Cloud Agent . Non-Microsoft agents are available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
+You can choose whether to allow non-Microsoft coding agents to be enabled in your repositories. Non-Microsoft agents, such as Anthropic Claude and OpenAI Codex, can work alongside the GitHub Copilot Cloud Agent. Non-Microsoft agents are available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
 
 ### Enable or disable privacy policies
 
@@ -70,33 +70,33 @@ Anyone can install GitHub Copilot Extensions for their personal account, but you
 
 You can also create your own custom GitHub Copilot Extensions for your personal account.
 
-## Limitations of GitHub Copilot Chat
+## Limitations of GitHub Copilot
 
-Depending on your codebase, the prompts that you enter, and other factors, you may experience different levels of performance when using GitHub Copilot Chat. The following information is designed to help you understand system limitations and key concepts about performance as they apply to GitHub Copilot Chat.
+Depending on your codebase, the prompts that you enter, and other factors, you may experience different levels of performance when using GitHub Copilot in your development environment. The following information is designed to help you understand system limitations and key concepts about performance as they apply to GitHub Copilot.
 
 ### Limited scope
 
-GitHub Copilot Chat is trained on a large body of code but it still has a limited scope. It may not be able to handle some complex code structures or obscure programming languages. For each programming language, the quality of suggestions you receive may depend on the volume and diversity of training data for that language. For example, JavaScript is well-represented in public repositories and is one of GitHub Copilot's best supported languages. Languages with less representation in public repositories may be more challenging for GitHub Copilot Chat. Additionally, GitHub Copilot Chat can only suggest code based on the context of the code being written, so it may not be able to identify larger design or architectural issues.
+The underlying AI that GitHub Copilot uses is trained on a large body of code but it still has a limited scope. It may not be able to handle some complex code structures or obscure programming languages. For each programming language, the quality of suggestions you receive may depend on the volume and diversity of training data for that language. For example, JavaScript is well-represented in public repositories and is one of GitHub Copilot's best supported languages. Languages with less representation in public repositories may be more challenging for GitHub Copilot. Additionally, GitHub Copilot can only suggest code based on the available context, so it may not be able to identify larger design or architectural issues.
 
 ### Potential biases
 
-GitHub Copilot's training data is drawn from existing code repositories that could contain biases and errors. GitHub Copilot could perpetuate the biases if they exist in the training data. GitHub Copilot Chat may be biased towards certain programming languages or coding styles, which can lead to suboptimal or incomplete code suggestions.
+GitHub Copilot's training data is drawn from existing code repositories that could contain biases and errors. GitHub Copilot could perpetuate the biases if they exist in the training data. GitHub Copilot may be biased towards certain programming languages or coding styles, which can lead to suboptimal or incomplete code suggestions.
 
 ### Security risks
 
-GitHub Copilot Chat generates code based on the context of the code being written, which can potentially expose sensitive information or vulnerabilities if not used carefully. You should be careful when using GitHub Copilot Chat to generate code for security-sensitive applications and always review and test the generated code thoroughly.
+GitHub Copilot generates code suggestions based on the context of the code being written, which can potentially expose sensitive information or vulnerabilities if not used carefully. You should be careful when using GitHub Copilot to generate code for security-sensitive applications and always review and test the generated code thoroughly. Manual security reviews are particularly important for security-sensitive applications.
 
 ### Matches with public code
 
-GitHub Copilot Chat is capable of generating new code, which it does in a probabilistic way. The probability that GitHub Copilot Chat produces code that matches code in the training set is low, but not zero. A GitHub Copilot Chat suggestion may contain some code snippets that match code in the training set. GitHub Copilot Chat uses filters that block matches with public code on GitHub repositories, but you should still take precautions. You should treat GitHub Copilot suggestions the same way you would treat any code that uses material you didn't originate yourself. This includes precautions to ensure its suitability. These include rigorous testing, IP scanning, and checking for security vulnerabilities. You should make sure your IDE or editor doesn't automatically compile or run generated code before you review it.
+GitHub Copilot is capable of generating new code, which it does in a probabilistic way. The probability that GitHub Copilot produces code that matches code in the training set is low, but not zero. GitHub Copilot suggestions may contain some code snippets that match code in the training set. GitHub Copilot uses filters that block matches with public code on GitHub repositories, but you should still take precautions. You should treat GitHub Copilot suggestions the same way you would treat any code that uses material you didn't originate yourself. This includes precautions to ensure its suitability. These precautions include rigorous testing, IP scanning, and checking for security vulnerabilities. You should make sure your IDE or editor doesn't automatically compile or run generated code before you review it.
 
 ### Inaccurate code
 
-GitHub Copilot Chat may generate code that appears to be valid but isn't. The code may not actually be semantically or syntactically correct, or may not accurately reflect the intent of the developer. To mitigate the risk of inaccurate code, you should carefully review and test generated code. This is particularly important when dealing with critical or sensitive applications. You should also ensure that the generated code adheres to best practices and design patterns and fits within the overall architecture and style of the codebase.
+GitHub Copilot may generate code that appears to be valid but isn't. The code may not actually be semantically or syntactically correct, or may not accurately reflect the intent of the developer. To mitigate the risk of inaccurate code, you should carefully review and test generated code. This is particularly important when dealing with critical or sensitive applications. You should also ensure that the generated code adheres to best practices and design patterns and fits within the overall architecture and style of the codebase.
 
 ### Inaccurate responses to noncoding topics
 
-GitHub Copilot Chat isn't designed to answer noncoding questions, and therefore its responses may not always be accurate or helpful in these contexts. If a user asks GitHub Copilot Chat a noncoding question, it may generate an answer that is irrelevant or nonsensical, or it may indicate that it's unable to provide a useful response.
+GitHub Copilot isn't designed to answer noncoding questions, and therefore its responses may not always be accurate or helpful in these contexts. If a user asks GitHub Copilot a noncoding question, it may generate an answer that is irrelevant or nonsensical, or it may indicate that it's unable to provide a useful response.
 
 ## Summary
 

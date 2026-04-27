@@ -9,7 +9,7 @@ GitHub Copilot Chat uses your code's context and semantics to suggest assertions
 
 GitHub Copilot can help with the following testing tasks:
 
-- Set up testing frameworks: get help configuring the right testing framework and VS Code extensions for your project and language.
+- Set up testing frameworks: get help configuring the right testing framework and Visual Studio Code extensions for your project and language.
 - Generate test code: create unit tests, integration tests, and end-to-end tests that cover your application code.
 - Handle edge cases: generate comprehensive test suites to cover edge cases and error conditions.
 - Fix failing tests: receive suggestions for fixing test failures.
@@ -17,7 +17,7 @@ GitHub Copilot can help with the following testing tasks:
 
 ### Set up your testing framework
 
-To accelerate your testing workflow, GitHub Copilot can help set up the testing framework and VS Code extensions for your project. GitHub Copilot suggests appropriate testing frameworks based on your project type.
+To accelerate your testing workflow, GitHub Copilot can help set up the testing framework and Visual Studio Code extensions for your project. GitHub Copilot suggests appropriate testing frameworks based on your project type.
 
 1. Open the Chat view.
 
@@ -55,7 +55,7 @@ Alternatively, you can:
 1. Follow GitHub Copilot's suggestions to fix the test
 
 > [!TIP]
-> When using GitHub Copilot in Agent mode, the agent monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
+> When using the Agent, the agent monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
 
 ### Maintain consistency
 

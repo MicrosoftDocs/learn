@@ -14,9 +14,9 @@ Now that you've reviewed this module, you should:
 * To learn more about what Microsoft can do for your sustainability organization, visit our [Microsoft Cloud for Sustainability website](https://www.microsoft.com/sustainability/cloud).
 * Stay up to date with Microsoft AI, visit our [AI website](https://www.microsoft.com/ai).
 * To learn more about Microsoft commitment to responsible AI, visit our [Responsible AI website](https://www.microsoft.com/ai/responsible-ai).
-* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
+* To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI](/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure?tabs=global-standard-aoai%2Cglobal-standard&pivots=azure-openai).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
-* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Services](/azure/cognitive-services/).
+* To learn more about all the prebuilt AI models available at Foundry Tools, read our [technical documentation on AI Service](/azure/foundry/).
 * To learn more about the services included in Azure Machine Learning, visit our [Azure Machine Learning website](https://azure.microsoft.com/products/machine-learning/).
 * To learn more about the initiatives within the FarmVibes project, visit the [FarmVibes website](https://www.microsoft.com/research/project/project-farmvibes/).
 * To access the AI models developed within the FarmVibes project, visit the [FarmVibes.AI repository](https://github.com/microsoft/farmvibes-ai).
@@ -33,5 +33,3 @@ Now that you've reviewed this module, you should:
 3. [Smith, Brad, "An update on Microsoft’s sustainability commitments: Building a foundation for 2030," The Official Microsoft Blog, March 10, 2022.](https://blogs.microsoft.com/blog/2022/03/10/an-update-on-microsofts-sustainability-commitments-building-a-foundation-for-2030/)
 4. [Umay, Kadri; Oruganti, Yagna; Milletari, Mirco; Pternea, Moschoula, and Kowalchuk, Peter, "Microsoft and Accenture partner to tackle methane emissions with AI technology," Azure Blog, August 23, 2023.](https://azure.microsoft.com/blog/microsoft-and-accenture-partner-to-tackle-methane-emissions-with-ai-technology/)
 5. [Smith, Elliott, "AI may hold a key to the preservation of the Amazon rainforest," Microsoft Source, September 6, 2023.](https://news.microsoft.com/source/latam/features/ai/amazon-ai-rainforest-deforestation)
-6. ["Fifty thousand nature shots in two days: The Bavarian Forest National Park is simplifying its wildlife monitoring with Microsoft Azure and AI," Microsoft Customer Stories, August 16, 2023.](https://customers.microsoft.com/story/1667539539271247797-nationalparkbayerischerwald-azure-en)
-7. ["The Société du Canal de Provence relies on data to optimize the management of water supply networks and the use of this resource in the face of climate change," Microsoft Customer Stories, May 4, 2023.](https://customers.microsoft.com/story/1631008476611121138-canaldeprovence-government-power-bi-en-france)

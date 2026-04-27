@@ -14,9 +14,9 @@ These can be difficult questions to answer if nothing is being tracked.
 
 ## Standardize where incident information will be tracked
 
-There are many possible places you could keep and share your list of incidents (active or otherwise) and all of the current information about those incidents. These can be as simple as a shared file area with Word documents and as complex as highly specialized incident-tracking software and services. In between these two extremes are ticketing and work tracking systems that you can press into service for this task. Which system you choose is actually less important than how you use it. No matter which system you use, everyone who might have any connection at all to incidents (engineers, customer support, management, public relations, legal, and so on) needs to know where to go to find the system, how to raise an incident, and how to access the data when appropriate. One sure way to fail with incident tracking is to have the people who it will support not know how to get to the system ("what was the URL for our system again?") when they need it.
+There are many possible places you could keep and share your list of incidents (active or otherwise) and all of the current information about those incidents. These can be as simple as a shared file area with Word documents and as complex as highly specialized incident-tracking software and services. In between these two extremes are ticketing and work tracking systems that you can press into service for this task. Which system you choose is actually less important than how you use it. No matter which system you use, everyone who might have any connection at all to incidents (engineers, customer support, management, public relations, legal, and so on) needs to know where to go to find the system, how to raise an incident, and how to access the data when appropriate. One sure way to fail with incident tracking is to have the people who it supports not know how to get to the system ("what was the URL for our system again?") when they need it.
 
-In this module, we'll use the work-item functionality of Azure DevOps for our example tracking system.
+In this module, we use the work-item functionality of Azure DevOps for our example tracking system.
 
 ## Create a conversation bridge
 
@@ -32,7 +32,7 @@ So, let's review the pieces we've put together so far. We have a:
 
 - Roster of the people on call (and a rotation defined for them).
 - Role we can assign to the people working on an incident.
-- Specific place we are going to declare the incident and track it.
+- Specific place we're going to declare the incident and track it.
 - Unique channel for the people working on that incident to communicate about it.
 
 You can and should automate creating and managing all of these things to the fullest extent possible. When an urgent problem arises, you don't want to have to recall all of the steps necessary to raise an incident, bring the right people in, and track it. All you really want to do is to be able to push the "go" button so work can immediately start to deal with the problem.
@@ -45,11 +45,14 @@ Logic Apps is an Azure cloud service for building integration solutions. It uses
 
 For our example, we'll use the following Logic App connectors for incident tracking:
 
-- **Azure Boards** (a part of Azure DevOps), which you can use to create and track issues/incidents.
-- **Azure Storage**, where you can store and retrieve information about who's on call so you can assign the proper people to respond to the incident. In our example, we'll be using Azure Table Storage because it offers a very simple "key-value" store that makes it easy to store a list of engineers and their on-call status.
+- **Azure DevOps**, which you can use to create and track incident work items in Azure Boards.
+- **Azure Table Storage**, where you can store and retrieve information about who's on call so you can notify the proper people to respond to the incident. In our example, we'll use it as a simple schemaless key/attribute store for on-call roster data.
 - **Microsoft Teams**, which you can use to create a new, unique incident channel to track your engineering teams' conversations in real time as they communicate about specific incidents. This allows you to preserve the interactions in relation to the timeline of events later when performing a post-incident review.
 
 Now let's tie this all together with a Logic App. First, take a look at the complete app as shown in the Logic Apps Designer, then we'll walk through it step by step.
+
+> [!NOTE]
+> The Logic Apps Designer interface has been updated since these screenshots were taken. The workflow concepts remain the same, though action names, current V2 actions, configuration panes, and visual layout may differ in your environment.
 
 :::image type="content" source="../media/logic-app-overview.png" alt-text="Screenshot of a zoomed out view of a logic app as displayed in the Logic Apps Designer.":::
 
@@ -69,16 +72,16 @@ Once the channel is created, the work item we created a moment ago gets updated 
 
 :::image type="content" source="../media/logic-app-update-work-item.png" alt-text="Screenshot of the Update work item block in Logic App Designer view of the Logic App.":::
 
-Now, it's time to bring the on-call person into the picture. We perform a lookup in Azure Table Storage for the email address of the engineer listed as being on-call. This returns a JSON response, which we then parse.
+Now, it's time to bring the on-call person into the picture. We query Azure Table Storage for the roster entry that identifies the current on-call engineer. This returns a JSON response, which we then parse.
 
 :::image type="content" source="../media/logic-app-get-oncall.png" alt-text="Screenshot of the Get entities block in Logic App Designer view of the Logic App.":::
 
-Because our query will return a list, we need to iterate over each item in that list as the next step. We assign the work item to each person (they are now "owners" of the incident).
+Because our query can return a list, we need to iterate over each matching item as the next step. In a production workflow, use that data to identify a primary incident owner and any backups. The primary responder can be assigned to the Azure DevOps work item, while additional responders can be tracked through linked tasks, comments, or notifications.
 
 :::image type="content" source="../media/logic-app-foreach.png" alt-text="Screenshot of the Foreach block in Logic App Designer view of the Logic App.":::
 
 Then, as a final step, we send a message to the Teams channel with a pointer back to the work item for people who join the channel and want to know where the authoritative information for that incident is stored.
 
-:::image type="content" source="../media/logic-app-final-teams.png" alt-text="Screenshot of the Post a message as the Flow bot channel block in Logic App Designer view of the Logic App.":::
+:::image type="content" source="../media/logic-app-final-teams.png" alt-text="Screenshot of the Post a message to a Teams channel block in Logic App Designer view of the Logic App.":::
 
 That's just one example of how we can automate setting up the mechanisms for incident tracking and communication. In the next unit, we'll dive a little deeper into aspects of communication around an incident.
