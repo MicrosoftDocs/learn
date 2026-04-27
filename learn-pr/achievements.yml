@@ -7936,6 +7936,31 @@ achievements:
   title: Introduction to SQL Server 2025 data virtualization
   summary: Learn about data virtualization, enhanced Polybase features in SQL Server 2025, and how to use Polybase to access and query external data.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: implement-data-governance-security-databricks-unity-catalog.trophy
+  type: trophy
+  title: Implement Data Governance and Security with Databricks Unity Catalog
+  summary: Master data governance and security with Databricks Unity Catalog. You’ll learn to manage storage and implement robust access controls on Azure Databricks.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.understand-unity-catalog.badge
+  type: badge
+  title: Establish Unity Catalog fundamentals
+  summary: Learn about governance challenges, explore metastore components, and implement external storage integration with Unity Catalog.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.secure-unity-catalog-for-governance.badge
+  type: badge
+  title: Structure Unity Catalog for governance
+  summary: Configure Unity Catalog isolation boundaries, leverage automatic lineage tracking for impact analysis, and migrate from Hive metastore to establish centralized governance.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-security-unity-catalog.badge
+  type: badge
+  title: Implement Security and Access Control in Unity Catalog
+  summary: Learn about different features and tools to help you implement security and access control in Unity Catalog.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-advanced-security-unity-catalog.badge
+  type: badge
+  title: Implement Advanced Security and Data Management in Unity Catalog
+  summary: Learn about different features and tools to help you implement advanced security and data management in Unity Catalog.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.azure-spring-cloud-workshop.badge
   type: badge
   title: Deploy Spring microservices to Azure
