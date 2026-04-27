@@ -5,21 +5,20 @@ metadata:
   description: Learn how to implement generative AI guardrails with Azure AI Content Safety.
   author: aprilgittens
   ms.author: apspeigh
-  ms.date: 08/30/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
   ms.collection:
-    - TBD
     - ce-advocates-ai-copilot
 title: Implement generative AI guardrails with Azure AI Content Safety
 summary: Learn how to implement generative AI guardrails with Azure AI Content Safety.
 abstract: |
   By the end of this module, you're able to:
   - Perform text and image moderation for harmful content.
-  - Detect groundedness in a models output. 
-  - Identify and block AI-generated copyrighted content. 
-  - Mitigate direct and indirect prompt injections. 
+  - Detect groundedness in a model's output.
+  - Identify AI-generated text that matches known protected text.
+  - Detect direct and indirect prompt attacks with Prompt Shields.
 prerequisites: |
   - An Azure subscription - [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
   - Familiarity with Azure and the Azure portal
@@ -27,7 +26,7 @@ prerequisites: |
   - Developing in browser:
     - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
   - Developing locally:
-    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
     - [Visual Studio Code](https://code.visualstudio.com/)
       - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 iconUrl: /learn/achievements/generic-badge.svg

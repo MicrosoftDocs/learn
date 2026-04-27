@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge of content moderation and harm detection with Azure AI Content Safety.
   author: aprilgittens
   ms.author: apspeigh
-  ms.date: 08/30/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   ms.topic: unit
   ms.collection:
@@ -18,45 +18,59 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: Which Azure AI Content Safety API is responsible for identifying outputs that could potentially violate copyright?
+  - content: Which Azure AI Content Safety capability helps identify AI-generated text that matches known protected text?
     choices:
     - content: Analyze Text
       isCorrect: false
       explanation: Analyze Text scans text for sexual content, violence, hate, and self-harm with multiseverity levels.
     - content: Protected Material Text Detection
       isCorrect: true
-      explanation: Protected Material Detection scans AI-generated text for known text content (for example, song lyrics, articles, recipes, selected web content).
+      explanation: Protected Material Text Detection flags AI-generated text that matches known protected text such as song lyrics, articles, recipes, and selected web content.
     - content: Prompt Shields
       isCorrect: false
-      explanation: Prompt Shields scans text for the risk of a User input attack on a Large Language Model (LLM).
+      explanation: Prompt Shields detects prompt attacks in user prompts and documents, not protected text matches.
     - content: Groundedness Detection
       isCorrect: false
-      explanation: Groundedness Detection detects whether the text responses of LLMs are grounded in the source materials provided by the users.
+      explanation: Groundedness Detection checks whether model output is supported by the source material you provide.
   - content: Which Azure AI Content Safety API could be used to identify violent content in an image posted by a customer?
     choices:
     - content: Groundedness Detection
       isCorrect: false
-      explanation: Groundedness Detection detects whether the text responses of LLMs are grounded in the source materials provided by the users.
+      explanation: Groundedness Detection checks whether generated text is supported by provided source material; it doesn't analyze images.
     - content: Protected Material Text Detection
       isCorrect: false
-      explanation: Protected Material Detection scans AI-generated text for known text content (for example, song lyrics, articles, recipes, selected web content).
+      explanation: Protected Material Text Detection scans AI-generated text for known protected text, not customer-uploaded images.
     - content: Prompt Shields
       isCorrect: false
-      explanation: Prompt Shields scans text for the risk of a User input attack on a Large Language Model (LLM).
+      explanation: Prompt Shields detects user prompt and document attacks before content generation; it doesn't classify image harms.
     - content: Analyze Image
       isCorrect: true
       explanation: Analyze Image scans images for sexual content, violence, hate, and self-harm with multiseverity levels.
-  - content: Which  Azure AI Content Safety API is responsible for detecting and blocking false responses in model outputs?
+  - content: Which Azure AI Content Safety capability helps identify model outputs that aren't grounded in supplied source material?
     choices:
     - content: Analyze Text
       isCorrect: false
       explanation: Analyze Text scans text for sexual content, violence, hate, and self-harm with multiseverity levels.
     - content: Prompt Shields
       isCorrect: false
-      explanation: Prompt Shields scans text for the risk of a User input attack on a Large Language Model (LLM).
+      explanation: Prompt Shields detects prompt attacks in user prompts and documents before content generation.
     - content: Analyze Image
       isCorrect: false
       explanation: Analyze Image scans images for sexual content, violence, hate, and self-harm with multiseverity levels.
     - content: Groundedness Detection
       isCorrect: true
-      explanation: Groundedness Detection detects whether the text responses of LLMs are grounded in the source materials provided by the users.
+      explanation: Groundedness Detection checks whether an LLM response is grounded in the source material you provide.
+  - content: Which Azure AI Content Safety capability should inspect customer prompts and retrieved documents before they're sent to an LLM to help detect direct and indirect prompt attacks?
+    choices:
+    - content: Prompt Shields
+      isCorrect: true
+      explanation: Prompt Shields detects user prompt attacks and document attacks before content is sent to an LLM.
+    - content: Analyze Image
+      isCorrect: false
+      explanation: Analyze Image classifies image content for built-in harm categories; it doesn't inspect prompt attacks.
+    - content: Groundedness Detection
+      isCorrect: false
+      explanation: Groundedness Detection evaluates whether an LLM response is supported by source material after generation.
+    - content: Protected Material Text Detection
+      isCorrect: false
+      explanation: Protected Material Text Detection scans AI-generated text for matches to known protected text.
