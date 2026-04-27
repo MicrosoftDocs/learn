@@ -26,10 +26,8 @@ Workspace-specific ownership enables delegation. The SOC Director, Compliance Ma
 
 To deepen your Security Copilot expertise, consider exploring:
 
-- **[Describe Microsoft Security Copilot agents](/training/modules/security-copilot-describe-agents/)** - Learn how to configure, deploy, and monitor Security Copilot agents that automate security workflows.
-- **[Describe the embedded experiences of Microsoft Security Copilot](/training/modules/security-copilot-embedded-experiences/)** - Understand how Security Copilot integrates into Defender XDR, Purview, Intune, and Microsoft Entra portals.
-- **[Build your own promptbooks](https://learn.microsoft.com/copilot/security/build-promptbooks)** - Create custom multi-step workflows to automate investigation and response procedures within your workspaces.
-- **[Understand authentication in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/authentication)** - Explore Security Copilot roles, Microsoft Entra roles, and Azure RBAC in depth.
+- **[Build your own promptbooks](/copilot/security/build-promptbooks)** - Create custom multi-step workflows to automate investigation and response procedures within your workspaces.
+- **[Understand authentication in Microsoft Security Copilot](/copilot/security/authentication)** - Explore Security Copilot roles, Microsoft Entra roles, and Azure RBAC in depth.
 
 ## Learn more
 
