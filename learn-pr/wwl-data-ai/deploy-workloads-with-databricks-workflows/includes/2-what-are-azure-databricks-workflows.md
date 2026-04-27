@@ -2,7 +2,7 @@ Lakeflow Jobs are a set of tools and features within the Azure Databricks enviro
 
 The Lakeflow Jobs are deeply integrated with Azure's cloud infrastructure, benefiting from its security, scalability, and compliance features. They support dependencies between tasks, allowing for sophisticated job scheduling and management. Additionally, Azure Databricks provides a user-friendly interface for creating, monitoring, and managing these workflows, which enhances productivity and collaboration among data teams. This setup is ideal for organizations looking to streamline their data operations in a robust and scalable cloud environment.
 
-![Diagram showing how the core concepts of SDP relate to each other at a very high level](../media/lakeflow-declarative-pipelines.png)
+![Diagram showing how the core concepts of SDP relate to each other at a very high level](../media/dlt-core-concepts.png)
 
 Triggers determine when a Job is run. The following table shows the different trigger types, when each is useful, and what constraints to watch out for:
 
