@@ -3,11 +3,11 @@ uid: learn.ai-security-controls.implement-ai-data-security
 title: Implement AI data security
 metadata:
   title: Implement AI data security
-  description: Learn about AI data security and how to implement it in your AI systems
-  ms.date: 03/06/2026
+  description: Learn about AI data security, including the four types of data in AI systems, agent identity management, and access control strategies.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 6
 content: |
   [!include[](includes/4-implement-ai-data-security.md)]

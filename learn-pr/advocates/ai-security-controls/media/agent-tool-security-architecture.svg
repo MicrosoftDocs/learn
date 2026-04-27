@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" role="img" aria-labelledby="title7 desc7">
+  <title id="title7">Agent Tool Security Architecture</title>
+  <desc id="desc7">Layered architecture diagram showing an AI agent accessing external tools (APIs, databases, file systems) through a security control layer that includes capability manifests, scoped credentials, sandboxed execution, input/output sanitization, and audit logging</desc>
+  <defs>
+    <marker id="arr7" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" overflow="visible">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="900" height="450" fill="#FFFFFF"/>
+
+  <!-- External Tools Label -->
+  <text x="450" y="22" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#1A1A1A">External Tools &amp; Services</text>
+
+  <!-- External Tool boxes (top row) -->
+  <rect x="110" y="35" width="165" height="50" rx="8" fill="#F5F5F5" stroke="#424242" stroke-width="2"/>
+  <text x="192" y="65" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">APIs</text>
+
+  <rect x="367" y="35" width="165" height="50" rx="8" fill="#F5F5F5" stroke="#424242" stroke-width="2"/>
+  <text x="449" y="65" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Databases</text>
+
+  <rect x="625" y="35" width="165" height="50" rx="8" fill="#F5F5F5" stroke="#424242" stroke-width="2"/>
+  <text x="707" y="65" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">File Systems</text>
+
+  <!-- Arrows from tools down to security band -->
+  <line x1="192" y1="85" x2="192" y2="128" stroke="#424242" stroke-width="1.5" marker-end="url(#arr7)"/>
+  <line x1="449" y1="85" x2="449" y2="128" stroke="#424242" stroke-width="1.5" marker-end="url(#arr7)"/>
+  <line x1="707" y1="85" x2="707" y2="128" stroke="#424242" stroke-width="1.5" marker-end="url(#arr7)"/>
+
+  <!-- Security Controls Band (background) -->
+  <rect x="20" y="130" width="860" height="180" rx="10" fill="#EFF6FC" stroke="#0078D4" stroke-width="2"/>
+  <text x="450" y="155" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#0078D4">Security Controls Layer</text>
+
+  <!-- 5 Control boxes inside the band -->
+  <rect x="36" y="170" width="152" height="58" rx="6" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="112" y="193" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Capability</text>
+  <text x="112" y="208" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Manifest</text>
+
+  <rect x="204" y="170" width="152" height="58" rx="6" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="280" y="193" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Scoped</text>
+  <text x="280" y="208" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Credentials</text>
+
+  <rect x="372" y="170" width="152" height="58" rx="6" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="448" y="193" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Sandboxed</text>
+  <text x="448" y="208" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Execution</text>
+
+  <rect x="540" y="170" width="152" height="58" rx="6" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="616" y="193" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">I/O</text>
+  <text x="616" y="208" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Sanitization</text>
+
+  <rect x="708" y="170" width="152" height="58" rx="6" fill="#FFFFFF" stroke="#0078D4" stroke-width="1.5"/>
+  <text x="784" y="193" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Audit</text>
+  <text x="784" y="208" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Logging</text>
+
+  <!-- Description row inside band -->
+  <text x="112" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Restrict allowed</text>
+  <text x="112" y="264" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">actions</text>
+  <text x="280" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Short-lived,</text>
+  <text x="280" y="264" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">scoped tokens</text>
+  <text x="448" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Isolate</text>
+  <text x="448" y="264" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">runtime</text>
+  <text x="616" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Validate</text>
+  <text x="616" y="264" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">data flow</text>
+  <text x="784" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Record all</text>
+  <text x="784" y="264" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">tool calls</text>
+
+  <!-- Arrow from security band down to AI Agent -->
+  <line x1="450" y1="310" x2="450" y2="360" stroke="#424242" stroke-width="1.5" marker-end="url(#arr7)"/>
+  <text x="470" y="340" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242" font-style="italic">Tool calls</text>
+
+  <!-- AI Agent box (bottom, emphasized) -->
+  <rect x="310" y="370" width="280" height="65" rx="10" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="450" y="408" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">AI Agent</text>
+</svg>

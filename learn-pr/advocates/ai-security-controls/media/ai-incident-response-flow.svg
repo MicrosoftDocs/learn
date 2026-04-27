@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 410" width="1180" height="410">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+    <marker id="arrowhead-down" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1180" height="410" fill="white"/>
+
+  <!-- ============ NODES ============ -->
+
+  <!-- Node A: Monitoring alert triggered — #003056 on white = 13.49:1 AAA -->
+  <rect x="15" y="100" width="150" height="90" rx="10" fill="#003056"/>
+  <text x="90" y="138" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Monitoring</text>
+  <text x="90" y="160" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16">alert triggered</text>
+
+  <!-- Node B: Triage — #004578 on white = 9.89:1 AAA -->
+  <rect x="205" y="100" width="155" height="90" rx="10" fill="#004578"/>
+  <text x="282" y="128" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Triage:</text>
+  <text x="282" y="148" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="15">attack, attempt,</text>
+  <text x="282" y="168" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="15">or false positive?</text>
+
+  <!-- Node C: Contain — #004578 on white = 9.89:1 AAA -->
+  <rect x="455" y="100" width="150" height="90" rx="10" fill="#004578"/>
+  <text x="530" y="128" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Contain:</text>
+  <text x="530" y="148" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="15">restrict access,</text>
+  <text x="530" y="168" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="15">increase filters</text>
+
+  <!-- Node D: Investigate — #004578 on white = 9.89:1 AAA -->
+  <rect x="645" y="100" width="155" height="90" rx="10" fill="#004578"/>
+  <text x="722" y="128" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Investigate:</text>
+  <text x="722" y="148" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="15">analyze interaction</text>
+  <text x="722" y="168" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="15">history</text>
+
+  <!-- Node E: Remediate — #004578 on white = 9.89:1 AAA -->
+  <rect x="840" y="100" width="150" height="90" rx="10" fill="#004578"/>
+  <text x="915" y="138" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Remediate:</text>
+  <text x="915" y="160" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16">update controls</text>
+
+  <!-- Node G: Report & share lessons — #003056 on white = 13.49:1 AAA -->
+  <rect x="1020" y="100" width="145" height="90" rx="10" fill="#003056"/>
+  <text x="1092" y="138" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Report &amp;</text>
+  <text x="1092" y="160" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16">share lessons</text>
+
+  <!-- Node F: Tune alert thresholds (branch below B) — #005A9E on white = 7.10:1 AAA -->
+  <rect x="205" y="300" width="155" height="85" rx="10" fill="#005A9E"/>
+  <text x="282" y="337" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="bold">Tune alert</text>
+  <text x="282" y="359" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="16">thresholds</text>
+
+  <!-- ============ ARROWS ============ -->
+
+  <!-- A → B -->
+  <line x1="165" y1="145" x2="200" y2="145" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- B → C with "Confirmed" label -->
+  <line x1="360" y1="145" x2="450" y2="145" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+  <text x="405" y="126" text-anchor="middle" fill="#333333" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">Confirmed</text>
+
+  <!-- B → F with "False positive" label -->
+  <line x1="282" y1="190" x2="282" y2="295" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead-down)"/>
+  <text x="348" y="245" text-anchor="middle" fill="#333333" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">False positive</text>
+
+  <!-- C → D -->
+  <line x1="605" y1="145" x2="640" y2="145" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- D → E -->
+  <line x1="800" y1="145" x2="835" y2="145" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- E → G -->
+  <line x1="990" y1="145" x2="1015" y2="145" stroke="#333333" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+</svg>
