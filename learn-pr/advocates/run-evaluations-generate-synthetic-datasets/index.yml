@@ -3,7 +3,7 @@ uid: learn.run-evaluations-generate-synthetic-datasets
 metadata:
   ms.author: apspeigh
   author: aprilgittens
-  ms.date: 10/13/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   title: Run evaluations and generate synthetic datasets
   description: Learn how to run evaluations and generate synthetic datasets with the Azure AI Evaluation SDK.
@@ -17,7 +17,7 @@ abstract:  |
   By the end of this module, you're able to:
   - Assess a generative AI app response using performance and quality metrics
   - Assess a generative AI app response using risk and safety metrics
-  - Run an evaluation and track the results in Azure AI Foundry
+  - Run an evaluation and track the results in a Microsoft Foundry project
   - Create a custom evaluator with Prompty
   - Send queries to an endpoint and run evaluators on the resulting query and response
   - Generate a synthetic dataset using conversation starters
@@ -28,7 +28,7 @@ prerequisites: |
   - Developing in browser:
     - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
   - Developing locally:
-    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
     - [Visual Studio Code](https://code.visualstudio.com/)
       - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 iconUrl: /learn/achievements/generic-badge.svg

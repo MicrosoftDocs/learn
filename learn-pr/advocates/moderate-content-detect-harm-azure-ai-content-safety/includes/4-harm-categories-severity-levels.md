@@ -1,18 +1,22 @@
-Every harm category the service applies also comes with a severity-level rating. The severity level is meant to indicate the severity of the consequences of showing the flagged content. Both text and image content use the same set of flags.
+The text and image moderation APIs return one or more harm categories and a severity level. Both APIs use the same four built-in moderation categories.
 
 ## Harm categories
 
-| **Category** | **Description** |
-|---|---|
-| **Hate and Fairness** | Hate and fairness-related harms refer to any content that attacks or uses pejorative or discriminatory language with reference to a person or identity group based on certain differentiating attributes of these groups, including but not limited to race, ethnicity, nationality, gender identity and expression, sexual orientation, religion, immigration status, ability status, personal appearance, and body size. Fairness is concerned with ensuring that AI systems treat all groups of people equitably without contributing to existing societal inequities. Like hate speech, fairness-related harms hinge upon disparate treatment of identity groups. |
-| **Sexual** | Sexual describes language related to anatomical organs and genitals, romantic relationships, acts portrayed in erotic or affectionate terms, pregnancy, physical sexual acts, including those portrayed as an assault or a forced sexual violent act against one's will, prostitution, pornography, and abuse. |
-| **Violence** | Violence describes language related to physical actions intended to hurt, injure, damage, or kill someone or something; describes weapons, guns, and related entities, such as manufacturers, associations, legislation, etc. |
-| **Self-harm** | Self-harm describes language related to physical actions intended to purposely hurt, injure, damage one's body or kill oneself. |
+| **Category** | **What it covers** | **API term** |
+|---|---|---|
+| **Hate and Fairness** | Attacks or discriminatory language about a person or identity group, including harassment and bullying. | `Hate` |
+| **Sexual** | Sexual anatomy, romantic or sexual acts, nudity, pornography, abuse, and related content. | `Sexual` |
+| **Violence** | Physical injury, weapons, intimidation, terrorism, stalking, and other violent acts. | `Violence` |
+| **Self-harm** | Suicide, self-injury, and other forms of deliberate harm to oneself. | `SelfHarm` |
 
-Classification can be multilabeled. For example, when a text sample goes through the text-moderation model, it could be classified as both Sexual content and Violence.
+Classification can be multi-labeled. For example, a single text sample can be classified as both **Sexual** and **Violence**.
 
 ## Severity levels
 
-Every harm category the service applies also comes with a severity-level rating. The severity level is meant to indicate the severity of the consequences of showing the flagged content. The severity scale ranges from 0-7. The text model supports both the full 0-7 and the trimmed scale of 0, 2, 4, and 6. The current version of the image model only supports the trimmed scale.
+The severity level indicates how serious the flagged content is for that category.
 
-To learn more about Severity definitions, refer to [Harm categories - Severity levels](/azure/ai-services/content-safety/concepts/harm-categories?tabs=definitions#severity-levels).
+- **Text moderation** supports the full **0-7** scale when the caller requests `EightSeverityLevels`. If no output type is set, the API defaults to `FourSeverityLevels` and returns the trimmed **0, 2, 4, 6** scale. The workshop notebook doesn't set an output type, so expect the trimmed values in the exercises.
+- **Image moderation** returns the trimmed **0, 2, 4, 6** scale.
+- Higher scores usually call for stronger moderation action, but the right threshold depends on the scenario. A support workflow might review some nonzero results, while a public review system might block them immediately.
+
+For the official severity definitions and examples, see [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories?tabs=definitions#severity-levels).

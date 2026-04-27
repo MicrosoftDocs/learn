@@ -1,17 +1,14 @@
-Your organization's data is likely one of the most important assets you're responsible for safeguarding as an administrator. The ability to build apps and automation to use that data is a large part of your company's success. You can use Power Apps and Power Automate for rapid build and rollout of these high-value apps so that users can measure and act on the data in real time.
+Microsoft Purview Data Loss Prevention (DLP) policies cover Microsoft 365 locations like Exchange, SharePoint, and OneDrive natively. But sensitive data doesn't stay inside those boundaries. Users build Power Platform flows that move data between connectors, and organizations store files in non-Microsoft cloud apps like Box, Dropbox, and Google Workspace. Both scenarios share a common problem: protecting data once it leaves Microsoft 365's native DLP reach. The tools and techniques differ, but the goal is the same: extend your DLP coverage to places Purview can't reach natively.
 
-You can use data loss prevention (DLP) policies to non-Microsoft cloud apps to monitor and detect when sensitive items are used and shared via non-Microsoft cloud apps. Using these policies provides you the visibility and control you need to ensure that they're correctly used and protected.
-
-In this module, you learn how to discover, classify, and protect sensitive and business-critical content throughout its lifecycle. This process applies to both Power Platform and Microsoft Defender for Cloud Apps protected applications. You also learn to make decisions about policy priority.
+Each area needs its own DLP configuration because the risks are different. In Power Platform, the concern is which systems data can move between. In cloud apps, the concern is what sensitive content is stored and shared there.
 
 ## Learning objectives
 
-In this module, you learn to:
+After completing this module, you're able to:
 
-- Configure data loss prevention policy and rule priorities
-- Implement DLP policies in test mode
-- Configure Data loss prevention policies in PowerPlatform
-- Integrate DLP Policies into Microsoft Defender for Cloud Apps for advanced functionality
+- Configure DLP policies in Power Platform to control connector communication.
+- Integrate DLP with Microsoft Defender for Cloud Apps for non-Microsoft cloud apps.
+- Create and configure file policies in Defender for Cloud Apps.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
-The GitHub Copilot extensions for Visual Studio Code help developers write code faster and with fewer errors.
+GitHub Copilot for Visual Studio Code helps developers write code faster and with fewer errors.
 
-However, GitHub Copilot is an AI pair programmer, it's not a programmer. To get the most out of the GitHub Copilot tools, you need to follow best practices.
+However, GitHub Copilot is an AI pair programmer, not a programmer. To get the most out of GitHub Copilot, you need to follow best practices.
 
 ## Choose the right GitHub Copilot tool for the job
 
@@ -17,12 +17,12 @@ Alternatively, GitHub Copilot's chat features provide the most value when they'r
 
 - Answer questions about code in natural language.
 - Generate large sections of code, then iterate on that code to meet your needs.
-- Accomplish specific tasks with keywords and skills. GitHub Copilot Chat uses built-in keywords (and skills designed to provide important context) within prompts to accomplish common tasks quickly. Different types of keywords and skills are available in different GitHub Copilot Chat platforms.
+- Accomplish specific tasks using chat participants, slash commands, and chat variables. Chat participants (such as `@vscode` or `@terminal`) set the context for a request, slash commands (such as `/explain` or `/fix`) communicate your intent, and chat variables (such as `#file` or `#codebase`) focus Copilot on specific context. Different participants and commands are available in different GitHub Copilot Chat platforms.
 - Complete a task as a specific persona. For example, you can tell GitHub Copilot Chat that it's a Senior C++ Developer who cares greatly about code quality, readability, and efficiency. After establishing the persona, you can ask GitHub Copilot to review your code.
 
 ## Get the most out of GitHub Copilot inline suggestions
 
-The GitHub Copilot extension presents suggestions automatically to help you code more efficiently. GitHub Copilot provides better suggestions when you follow certain actions and behaviors. You may already be following some of these actions and behaviors, since they also help you and your colleagues understand your code.
+GitHub Copilot presents suggestions automatically to help you code more efficiently. GitHub Copilot provides better suggestions when you follow certain actions and behaviors. You may already be following some of these actions and behaviors, since they also help you and your colleagues understand your code.
 
 ### Provide context for GitHub Copilot
 

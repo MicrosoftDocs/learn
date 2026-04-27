@@ -5,7 +5,7 @@ metadata:
   description: Learn how to choose and configure generative AI guardrails in Azure AI Foundry.
   author: aprilgittens
   ms.author: apspeigh
-  ms.date: 08/29/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
@@ -18,11 +18,10 @@ abstract: |
   By the end of this module, you'll be able to:
   - Configure filters and threshold levels to block harmful content.
   - Perform text and image moderation for harmful content.
-  - Analyze and improve the **Precision**, **Recall**, and **F1 score** metrics.
+  - Tune thresholds by analyzing the **Precision**, **Recall**, and **F1 score** metrics.
   - Detect groundedness in a model's output.
-  - Identify and block AI-generated copyrighted content.
   - Mitigate direct and indirect prompt injections.
-  - Send filter configurations as output to code.
+  - Export starter code that reflects your filter configurations.
 prerequisites: |
   - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
   - Familiarity with Azure and the Azure portal.

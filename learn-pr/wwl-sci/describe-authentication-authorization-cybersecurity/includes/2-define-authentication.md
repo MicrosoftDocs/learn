@@ -17,6 +17,7 @@ Authentication can be divided into three types: *something you know*, *something
 - Something you **have** includes:
   - Identity cards
   - USB keys
+  - Passkeys
   - Computers
   - Cell phones
 - Something you **are** includes:
@@ -26,6 +27,8 @@ Authentication can be divided into three types: *something you know*, *something
   - Other forms of biometric ID.
   
 Biometric identification is comprised of physical characteristics that uniquely identify an individual.
+
+A **passkey** is a newer type of authentication that combines "something you have" (your device) with "something you are" (a fingerprint or face scan) or "something you know" (a PIN). When you set up a passkey for a website or app, your device creates a unique credential that's stored on the device itself. To sign in, you verify your identity on the device using your fingerprint, face, or PIN — no password is needed. Because the passkey never leaves your device and only works on the correct website, it can't be stolen through phishing or data breaches the way passwords can.
 
 :::image type="content" source="../media/authentication-types.png" alt-text="Diagram showing the three different authentications types: something you know, something you have, something you are.":::
 

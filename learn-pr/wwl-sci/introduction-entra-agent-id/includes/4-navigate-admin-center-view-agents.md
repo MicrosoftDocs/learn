@@ -1,5 +1,8 @@
 The Microsoft Entra admin center provides a centralized interface to view and manage your agent identities. This experience allows you to search, filter, sort, and take actions on agent identities across your organization.
 
+> [!IMPORTANT]
+> The **Agent ID** menu in the Microsoft Entra admin center is only visible if your tenant has Microsoft Entra Agent ID enabled through **Microsoft Agent 365**. This requires a Microsoft 365 Copilot license with the Frontier program enabled. If you don't see the Agent ID section, contact your administrator to verify licensing and Frontier access.
+
 ## Prerequisites for viewing agent identities
 
 To view agent identities in your Microsoft Entra tenant, you need:

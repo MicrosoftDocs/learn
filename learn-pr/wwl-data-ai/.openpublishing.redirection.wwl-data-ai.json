@@ -262,6 +262,142 @@
       "redirect_document_id": true
     },
     {
+        "source_path_from_root": "/learn-pr/paths/implement-data-governance-security-databricks-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/2-implement-isolation-methods.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/3-explore-lineage.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/4-transition-from-hive-metastore.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/5-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/6-exercise.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/7-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/2-understand-fine-grained-access-control.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/3-implement-row-filtering-column-masking.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/4-exercise-secure-data-access.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/5-understand-lakehouse-monitoring.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/6-implement-lakehouse-monitoring.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/7-interpret-data-quality-dashboard.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/8-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/9-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/2-understand-query-lifecycle.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/3-explore-data-sharing-marketplace-overview.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/4-implement-access-control-strategies.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/5-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/6-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/2-explore-data-governance.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/3-analyze-unity-catalog-architecture.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/4-explore-external-data.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/5-exercise.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/6-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/7-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-chat-bot-azure-portal/1-introduction.md",
       "redirect_url": "/training/modules/create-bot-with-bot-framework-composer/"
     },

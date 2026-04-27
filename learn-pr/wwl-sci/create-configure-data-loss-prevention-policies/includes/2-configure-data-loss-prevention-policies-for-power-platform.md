@@ -1,27 +1,50 @@
-While data loss prevention (DLP) policies in the Microsoft Purview compliance portal protect data in Microsoft 365 services from being shared, DLP policies in Power Platform are used to restrict the communication between connectors. A connector in Power Platform is a wrapper or an API that allows predefined triggers and actions to access the data behind it.
+Power Platform lets users build apps and automations that connect to dozens of data sources through connectors. Without governance, a user could create a flow that sends customer records from Dynamics 365 to a personal social media account. Data loss prevention (DLP) policies in Power Platform prevent this by controlling which connectors can communicate with each other.
 
-There are three groups you can use to categorize your connectors:
+## Understand connector groups
 
-| **Category**| **Actions**|
+A connector is a wrapper around an API that provides predefined triggers and actions to access the data behind it. DLP policies classify connectors into groups that determine which ones can be used together:
+
+| Category | Actions |
 | :--- | :--- |
-| Business| Allows connections only to other connectors in the business group|
-| Non-Business| Allows connections only to other connectors in the non-business group|
-| Blocked| Blocks any connection attempts to these connectors|
+| Business | Allows connections only to other connectors in the business group |
+| Non-Business | Allows connections only to other connectors in the nonbusiness group |
+| Blocked | Blocks any connection attempts to these connectors |
 
-Connectors can reside in only one group at a time. For example, the SharePoint Online connector can only be part of the business group or the non-business group and not both at the same time. By moving the SharePoint Online and another non-Microsoft connector to the Business group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the Non-Business or Blocked groups without affecting the existing workflows that use both SharePoint Online connectors.
+DLP policies control which connectors can work together, not what data flows through them. For example, if the SharePoint Online connector is in the Business group, a user can still access any content in a SharePoint library. The policy only prevents that connector from being combined with connectors in other groups.
 
-There's no specification as to the type of data you can share over the connector. For example, if you access a SharePoint Online connector you can access the content of a library no matter what is placed in that library.
+Connectors can reside in only one group at a time. If you move SharePoint Online and a non-Microsoft connector into the Business group, users can't create flows or apps that combine those connectors with anything in the Non-Business or Blocked groups. Existing flows that already comply with the new grouping continue to run, but a background enforcement process suspends flows that now cross group boundaries.
 
-To protect data in your organization, you can use Power Platform DLP policies to define which consumer connectors specific business data can be shared with. These policies help ensure consistent data handling across your organization and prevent important business data from being accidentally shared with connectors such as social media sites.
+> [!TIP]
+> In addition to connector group classification, Power Platform DLP policies now support more granular controls such as connector action control and endpoint filtering. These options let you restrict specific actions or endpoints within a connector rather than blocking the entire connector. For more information, see [Connector action control](/power-platform/admin/connector-action-control?azure-portal=true) and [Endpoint filtering](/power-platform/admin/connector-endpoint-filtering?azure-portal=true).
 
-While the blocked group exists, not all Connectors can be added to the blocked group. In this case the Block action is greyed, and a warning appears.
+## Decide how to classify connectors
+
+Before creating a policy, decide which connectors handle sensitive business data and which don't. Start with connectors that access core business systems, such as Dynamics 365, SharePoint Online, and SQL Server, and place those in the Business group. Connectors that access personal or uncontrolled destinations, such as social media or personal email services, should stay in Non-Business or be moved to Blocked. Keeping those connectors in Non-Business or moving them to Blocked prevents users from building flows that bridge business data into unmanaged channels.
+
+If you aren't sure how your organization uses a connector, keep it in Non-Business. You can reclassify it later without disrupting flows that don't cross group boundaries.
+
+While the blocked group exists, not all connectors can be added to it. When a connector can't be blocked, the Block action is greyed out and a warning appears.
 
 > [!NOTE]
-> If you select the blocked group as default, all new blockable connectors will be blocked by default and unblockable connectors will be added to the non-business group.
+> If you select the blocked group as default, all new blockable connectors default to Blocked, and unblockable connectors default to the Non-Business group.
 
-An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences.
+## Choose between tenant-level and environment-level policies
 
-Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described here for tenant-level policies, one of the following permissions is required:
+An environment is a space to store, manage, and share your organization's business data, apps, and flows. It also serves as a container to separate apps that have different roles, security requirements, or target audiences.
+
+DLP policies can be scoped to the entire tenant or to specific environments. The decision to use tenant-level or environment-level policies has real consequences:
+
+- **Tenant-level policies** apply across all environments or a selected subset. They're appropriate when you need consistent connector governance everywhere, such as blocking social media connectors organization-wide.
+- **Environment-level policies** apply only to a single environment. They're appropriate when different environments have different requirements. For example, a development environment where citizen developers need broader connector access than production.
+
+> [!CAUTION]
+> A tenant-level policy takes effect immediately against all existing flows and apps in scope. Existing flows that cross the connector groups you define are suspended. Before applying a tenant-wide policy, audit existing flows to understand which flows and apps the policy affects. Consider starting with a single environment to validate behavior, then expanding scope.
+
+When multiple policies apply to the same environment, the most restrictive combination of connector classifications takes effect.
+
+## Create a DLP policy in Power Platform admin center
+
+To follow these steps for tenant-level policies, you need one of the following permissions:
 
 - Power Platform admin permissions
 
@@ -29,24 +52,31 @@ Tenant-level policies can be defined to include or exclude specific environments
 
 To create environment-level policies, you need to have Power Apps Environment Admin permissions.
 
-If you want to create a DLP Policy to deny connectivity between SharePoint Online and non-business apps using Power Platform admin center, follow these steps:
+To create a DLP policy that denies connectivity between SharePoint Online and non-business apps, follow these steps:
 
 1. In Power Platform admin center, select **Policies**, select **Data policies**, and then select **+** **New policy**.
 
 1. Enter a policy name, and then select **Next**.
 
-1. Review the various attributes and settings you can make on the **Assign Connectors** page.
+1. On the **Assign Connectors** page, review the default connector classifications.
 
-1. Select **SharePoint** connector, and then select **Move to Business** button from the top menu bar. You can also use the ellipsis (three dots) to the right of the connector name.
+   Every connector starts in the Non-Business group unless you move it.
 
-1. After you complete all the connector assignment across the **Business**/**Non-Business**/**Blocked** groups, select **Next**.
+1. Select the **SharePoint** connector, then select **Move to Business**. You can also use the ellipsis (three dots) to the right of the connector name.
 
-1. On the Custom connectors patterns page, you can specify an ordered list of **Allow** or **Deny** URL patterns for custom connectors. Select **Add connector pattern** and once specified, select **Save**. Then select **Next**.
+   Moving SharePoint to Business ensures it can only be used with other Business-group connectors, preventing flows that bridge business data to unmanaged destinations.
 
-1. On the **Define scope** page, you can choose the environments to add to this policy. Select **Add multiple environments** and select **Next**.
+1. After you complete the connector assignment across the **Business**, **Non-Business**, and **Blocked** groups, select **Next**.
 
-1. On the **Add Environments** page, for tenant-level policies, the list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant that are managed by the user who has signed in as an environment admin. Select the environments you want to include in the policy and add them to the policy scope by using **Add to policy** from the top menu bar. Then select **Next**.
+1. On the **Custom connectors patterns** page, select **Add connector pattern**, define **Allow** or **Deny** URL patterns, and select **Save**. Then select **Next**.
 
-1. On the Review and create policy page you can review all settings. Select **Create Policy**.
+   These patterns control whether custom connectors built against specific endpoints are permitted or blocked.
 
-Or you can use the PowerApps PowerShell module using the **New-DlpPolicy** cmdlet to create a DLP policy for Power Platform.
+1. On the **Define scope** page, select **Add multiple environments**, choose the environments to include, and select **Add to policy**. Select **Next**.
+
+   Scoping to specific environments lets you validate behavior before applying the policy more broadly.
+
+1. On the **Review and create policy** page, review all settings, and select **Create Policy**.
+
+> [!TIP]
+> You can also use the PowerApps PowerShell module with the [New-DlpPolicy](/powershell/module/microsoft.powerapps.administration.powershell/new-dlppolicy?azure-portal=true) cmdlet to create a DLP policy for Power Platform.

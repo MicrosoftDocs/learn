@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-support-service-provider.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Managing Surface support as a service provider or partner" module.
+  ms.date: 04/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Where should partners usually manage Surface service and support for a customer who already has an existing Microsoft tenant?"
+    choices:
+        - content: "Customer’s tenant"
+          isCorrect: true
+          explanation: "Correct. In most scenarios, partners manage Surface service and support by accessing the customer’s Microsoft tenant in Surface Support Portal so service history and tracking remain with the customer."
+        - content: "Partner’s tenant"
+          isCorrect: false
+          explanation: "Incorrect. Using a partner tenant applies only to limited scenarios and isn't the most common approach."
+        - content: "A newly created tenant"
+          isCorrect: false
+          explanation: "Incorrect. The module advises requesting access in the customer’s existing tenant rather than creating a new one."
+        - content: "Surface Management Portal tenant"
+          isCorrect: false
+          explanation: "Incorrect. Surface Management Portal isn't a tenant used to manage Surface service and support."
+  - content: "Which portal is used by partners to submit and track Surface service and support requests?"
+    choices:
+        - content: "Surface Management Portal"
+          isCorrect: false
+          explanation: "Incorrect. It can initiate some service actions but isn't the primary portal for partner workflows."
+        - content: "Microsoft Intune"
+          isCorrect: false
+          explanation: "Incorrect. Intune doesn't handle Surface service and support requests."
+        - content: "Surface Support Portal"
+          isCorrect: true
+          explanation: "Correct. Partner workflows for submitting and tracking service and support requests are centered in Surface Support Portal."
+        - content: "Microsoft 365 Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. It isn't used for Surface service and support management."
+  - content: "What must partners confirm before creating a service order when managing multiple customer tenants?"
+    choices:
+        - content: "That the device is enrolled in Intune"
+          isCorrect: false
+          explanation: "Incorrect. Device enrollment isn't required to validate tenant context."
+        - content: "That the correct tenant context is selected"
+          isCorrect: true
+          explanation: "Correct. Surface Support Portal is tenant-scoped, so partners must confirm the correct tenant before submitting requests."
+        - content: "That shipping information is finalized"
+          isCorrect: false
+          explanation: "Incorrect. Shipping details come after tenant validation."
+        - content: "That Surface Management Portal is accessible"
+          isCorrect: false
+          explanation: "Incorrect. Surface Management Portal access isn't required for submitting requests in Surface Support Portal."
+  - content: "When is it appropriate for a partner to use their own tenant to manage Surface service and support?"
+    choices:
+        - content: "When the customer already has Surface Support Portal access"
+          isCorrect: false
+          explanation: "Incorrect. In this case, partners should work within the customer’s tenant."
+        - content: "When the partner centrally manages service requests for multiple customers"
+          isCorrect: true
+          explanation: "Correct. The module identifies this as a scenario where using a partner tenant is appropriate."
+        - content: "When the device is managed through Intune"
+          isCorrect: false
+          explanation: "Incorrect. Intune management doesn't determine which tenant to use for support."
+        - content: "When the customer wants direct visibility into service tracking"
+          isCorrect: false
+          explanation: "Incorrect. Using a partner tenant may reduce direct customer visibility."
+  - content: "Which statement correctly describes how Surface service and support requests are tracked?"
+    choices:
+        - content: "Service tracking is performed in Surface Management Portal"
+          isCorrect: false
+          explanation: "Incorrect. Surface Management Portal isn't used to track service and support requests."
+        - content: "Requests are tracked within the tenant where they're submitted in Surface Support Portal"
+          isCorrect: true
+          explanation: "Correct. Requests are tenant-scoped and tracked in the tenant context used for submission."
+        - content: "Service requests are automatically visible across all tenants"
+          isCorrect: false
+          explanation: "Incorrect. Requests aren't shared across tenants."
+        - content: "Tracking depends on whether the device is Intune-enrolled"
+          isCorrect: false
+          explanation: "Incorrect. Tracking depends on tenant context, not device enrollment."

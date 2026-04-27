@@ -1,15 +1,17 @@
-In this workshop, you learned how to use the Azure AI Evaluation SDK to run evaluations for different scenarios and how to generate a synthetic dataset. You’re now ready to configure and run your own evaluations for your generative AI apps!
+In this workshop, you used the Azure AI Evaluation SDK to measure answer quality, assess risk and safety, log results to a Foundry project, and generate synthetic conversations for further testing. You’re now ready to configure and run your own evaluations for generative AI applications.
 
-As you continue in your journey in developing AI responsibly, remember to keep responsible AI principles at the forefront of your approach to integrating AI. The generative AI development lifecycle is an iterative process where the measurement phase is critical to iterative development and getting apps into production. You’re encouraged to explore other evaluation scenarios and evolve your own approach to measuring the performance and safety of your AI systems.
+As you continue building responsibly, treat evaluation as an iterative loop: define the scenario, choose the evaluators that match the failure modes you care about, inspect both aggregate and row-level results, then adjust prompts, data, or app logic and run the evaluation again.
 
 > [!NOTE]
-> After completing the workshop, if you've finished exploring Azure AI Services, delete the Azure resource that you created during the workshop.
+> To avoid ongoing charges, delete the resource group or project resources that you created for the workshop when you're finished.
 
 ### Learn more
 
-- [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
-- [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
-- [How to evaluate generative AI models and applications with Azure AI Foundry](/azure/ai-studio/how-to/evaluate-generative-ai-app)
-- [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
-- [View evaluation results in Azure AI Foundry](/azure/ai-studio/how-to/evaluate-results)
+- [Built-in evaluators reference](/azure/foundry/concepts/built-in-evaluators)
+- [RAG evaluators](/azure/foundry/concepts/evaluation-evaluators/rag-evaluators)
+- [Risk and safety evaluators](/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators)
+- [Rate limits, region support, and enterprise features for evaluation](/azure/foundry/concepts/evaluation-regions-limits-virtual-network)
+- [Evaluate your generative AI application locally with the Azure AI Evaluation SDK](/azure/foundry-classic/how-to/develop/evaluate-sdk)
+- [Generate synthetic and simulated data for evaluation](/azure/foundry-classic/how-to/develop/simulator-interaction-data)
+- [View evaluation results in the Microsoft Foundry portal](/azure/foundry/how-to/evaluate-results)
 - [Azure AI Evaluation client library for Python](/python/api/azure-ai-evaluation/azure.ai.evaluation)

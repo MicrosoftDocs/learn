@@ -21,9 +21,11 @@ To manage agent identities (create, update, disable, delete), you need one of th
 
 ### Roles for creating agent identity blueprints
 
-To create agent identity blueprints, you need:
-- **Agent ID Developer** role or **Agent ID Administrator** role
-- **Privileged Role Administrator** role (required to grant certain permissions to blueprints)
+Creating agent identity blueprints requires different roles depending on the type of permissions being configured:
+
+- **Agent ID Developer** or **Agent ID Administrator** — to create blueprints and blueprint principals
+- **Privileged Role Administrator** — required to grant Microsoft Graph **application** permissions to the blueprint (used for autonomous, app-only agent scenarios)
+- **Cloud Application Administrator** or **Application Administrator** — required to grant Microsoft Graph **delegated** permissions to the blueprint (used for interactive agents acting on behalf of a user)
 
 ### Roles blocked from agent identities
 
