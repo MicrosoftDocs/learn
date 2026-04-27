@@ -33,7 +33,7 @@ The conductor doesn't perform the actual work. It orchestrates. Think of it as t
 
 Here's how a conductor orchestrates an infrastructure deployment workflow:
 
-![Conductor orchestration pattern showing a top-level agent delegating tasks to specialized agents in sequence, with each agent's output becoming the next agent's input.](/media/conductor-orchestration.png)
+![Diagram showing a conductor-agent orchestration pattern showing a top-level agent delegating tasks to specialized agents in sequence, with each agent's output becoming the next agent's input.](../media/conductor-orchestration.png)
 
 ## Artifact-based communication
 

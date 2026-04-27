@@ -2,7 +2,7 @@
 
 An agentic workflow is built from four components that work together: **agents**, **skills**, **instructions**, and **prompts**. Each serves a different purpose, and understanding how they relate is essential to designing effective multi-agent systems.
 
-A user prompt flows into an agent defined in an `.agent.md` file. The agent defines its identity, the tools it can use, and which subagents it can delegate to. From there, the agent draws on two sources of supporting content. The first is `skills`: domain knowledge documents that the agent reads explicitly at runtime. The second is `instructions`: coding and format standards that are automatically injected based on the type of file the agent is working with.`
+A user prompt flows into an agent defined in an `.agent.md` file. The agent defines its identity, the tools it can use, and which subagents it can delegate to. From there, the agent draws on **two sources** of supporting content. The first is `skills`: domain knowledge documents that the agent reads explicitly at runtime. The second is `instructions`: coding and format standards that are automatically injected based on the type of file the agent is working with.`
 
 ### Agents
 
@@ -126,6 +126,51 @@ Effective prompts for agentic workflows describe the desired outcome rather than
 > **More effective:** "Build an Azure environment with a web application on App Service, connected to a SQL Database, with Key Vault for secrets management and Application Insights for monitoring. Use managed identity for all service-to-service authentication."
 
 The second prompt gives the conductor enough context to plan the full workflow across requirements, architecture, code generation, and deployment, rather than handling a single step.
+
+### Agent memory and constraints
+
+Beyond skills and instructions, agents can use **memory** to persist and recall information across sessions. Memory provides a way to capture learnings, preferences, and organizational constraints that accumulate over time rather than being authored upfront.
+
+Memory operates at different scopes:
+
+| Scope | Persistence | Purpose |
+|---|---|---|
+| **Session memory** | Current conversation only | Task-specific context and in-progress notes |
+| **User memory** | Across all workspaces | Personal preferences and patterns |
+| **Repository memory** | Workspace-scoped | Project-specific facts and conventions |
+
+**Constraints files** are a common pattern for repository memory. A constraints file captures organizational rules that agents must follow when working in a specific codebase. Unlike skills, which contain general domain knowledge, constraints are project-specific rules that shouldn't be overridden.
+
+Example constraints file structure:
+
+```markdown
+## Deployment constraints
+- All resources must deploy to West Europe or North Europe regions
+- Production environments require approval from the platform team
+- Cost center tag (cc-12345) is mandatory on all resources
+
+## Security constraints
+- No public endpoints without WAF
+- Storage accounts must deny public blob access
+- Key Vault soft-delete and purge protection are required
+
+## Naming constraints
+- Resource group prefix: rg-contoso-
+- Environment suffixes: -dev, -test, -prod
+```
+
+**How memory differs from skills:**
+
+| Aspect | Skills | Memory/Constraints |
+|---|---|---|
+| **Origin** | Authored by humans | Can be authored or learned |
+| **Volatility** | Relatively stable | Updated as agents learn |
+| **Scope** | Shareable across projects | Often project-specific |
+| **Override behavior** | Agents can adapt | Constraints are non-negotiable |
+
+Use **memory** when you need agents to remember discovered facts, such as which deployment approach worked for a specific environment, or what naming pattern a user prefers. Use **constraints** when you need to enforce rules that apply to every agent working in a repository, regardless of the specific task.
+
+In practice, many teams maintain a `.github/constraints.md` file that agents read at the start of any workflow. The constraints file acts as organizational guardrails that prevent agents from generating outputs that violate company policy, even when the user's prompt doesn't mention those requirements.
 
 ## Putting the building blocks together
 

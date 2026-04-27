@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> To complete this exercise, you need an active Azure Subscription, as well as an active GitHub Copilot paid subscription (Free plan won't work).  
+> To complete this exercise, you need an active Azure Subscription, as well as an active GitHub Copilot paid subscription (**Free plan won't work**).  
 
 This exercise scenario demonstrates the full transitioning from traditional Azure Cloud Operations into agentic automation:
 

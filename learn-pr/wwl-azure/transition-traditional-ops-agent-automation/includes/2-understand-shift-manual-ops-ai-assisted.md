@@ -44,7 +44,7 @@ The key differences from prompt-based AI:
 
 ## Where ops roles fit in this evolution
 
-As a cloud administrator, system administrator, or DevOps engineer, you're likely already somewhere in stages 2 or 3. You have scripts and templates, and you might use AI assistants to help write code faster. The transition to stage 4 doesn't require you to abandon what you already built. Instead, you encode your existing knowledge into agent definitions that automate the coordination layer. Including  scripts, checklists, and tribal knowledge about how deployments should work.
+As a cloud administrator, system administrator, or DevOps engineer, you're likely already somewhere in stages 2 or 3. You have scripts and templates, and you might use AI assistants to help write code faster. The transition to stage 4 doesn't require you to abandon what you already built. Instead, you encode your existing knowledge into agent definitions that automate the coordination layer. Including  scripts, checklists, and team knowledge about how deployments should work.
 
 Think of it this way: scripted automation captures *what* to deploy. AI assistants help you write *how* to deploy it. Agentic workflows handle *when* to run each step, *what context* to carry forward, and *how to verify* each stage completed correctly.
 
