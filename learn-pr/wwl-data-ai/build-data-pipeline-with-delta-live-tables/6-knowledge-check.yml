@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 09/12/2025
+  ms.date: 04/27/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -18,24 +18,24 @@ quiz:
     choices:
     - content: "Reducing the cost of storage"
       isCorrect: false
-      explanation: "Incorrect. Reducing the cost of storage isn't the primary benefit of using DLT in Azure Databricks for real-time processing."
+      explanation: "Incorrect. Reducing the cost of storage isn't the primary benefit of using Lakeflow Declarative Pipelines in Azure Databricks for real-time processing."
     - content: "Automating data pipeline management"
       isCorrect: true
       explanation: "Correct. Lakeflow Declarative Pipelines is a framework that simplifies the management of data pipelines by automating complex tasks such as error handling, monitoring, and data pipeline lineage. This automation is valuable in real-time data processing, where managing data flows efficiently and reliably is critical."
     - content: "Increasing the latency of data processing."
       isCorrect: false
-      explanation: "Incorrect. Increasing the latency of data processing isn't the primary benefit of using DLT in Azure Databricks for real-time processing."
+      explanation: "Incorrect. Increasing the latency of data processing isn't the primary benefit of using Lakeflow Declarative Pipelines in Azure Databricks for real-time processing."
   - content: "Which feature of Lakeflow Declarative Pipelines ensures data reliability and quality in real-time processing environments?"
     choices:
-    - content: "Live data"
+    - content: "Manual schema validation"
       isCorrect: false
-      explanation: "Incorrect. You can receive live data with real-time data processing with Lakeflow Declarative Pipelines but this feature doesn't ensure data reliability and quality."
-    - content: "ACID Transactions"
+      explanation: "Incorrect. Manual schema validation isn't a built-in feature of Lakeflow Declarative Pipelines and doesn't automatically ensure data reliability at runtime."
+    - content: "Data quality expectations"
       isCorrect: true
-      explanation: "Correct. Lakeflow Declarative Pipelines support ACID transactions, which are crucial for ensuring data integrity by making all operations atomic, consistent, isolated, and durable. This is important in real-time processing environments where concurrent data modifications can lead to inconsistencies without proper transaction controls."
+      explanation: "Correct. Lakeflow Declarative Pipelines provide built-in data quality expectations that validate records as data flows through the pipeline. You can configure expectations to log violations, drop invalid records, or fail the pipeline update, ensuring that only data meeting your quality rules reaches downstream tables."
     - content: "Data Lake"
       isCorrect: false
-      explanation: "Incorrect. A Data Lake is a centralized repository that houses vast volumes of structured and unstructured data from various sources but it doesn't ensure data reliability and quality."
+      explanation: "Incorrect. A Data Lake is a centralized storage repository and isn't a Lakeflow Declarative Pipelines feature that enforces data quality constraints."
   - content: "Which component of Azure Databricks enhances performance and scalability of data operations on Delta Lake?"
     choices:
     - content: "Azure Blob Storage"
@@ -44,6 +44,6 @@ quiz:
     - content: "Azure Synapse Analytics"
       isCorrect: false
       explanation: "Incorrect. Azure Synapse Analytics is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. It isn't used to enhance performance and scalability of data operations on Delta Lake."
-    - content: "Delta Engine"
+    - content: "Photon"
       isCorrect: true
-      explanation: "Correct. Delta Engine significantly enhances the performance and scalability of operations on Delta Lake in Azure Databricks. It optimizes the execution of queries by utilizing a high-performance, in-memory execution environment, which is crucial for processing large datasets efficiently."
+      explanation: "Correct. Photon is the vectorized query engine built into Databricks Runtime that significantly enhances the performance and scalability of operations on Delta Lake in Azure Databricks. It accelerates data processing by executing queries using a native, vectorized execution model, which is crucial for processing large datasets efficiently."

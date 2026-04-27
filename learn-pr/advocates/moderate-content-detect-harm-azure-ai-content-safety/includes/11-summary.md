@@ -1,12 +1,12 @@
-In this workshop, you learned how to utilize Azure AI Content Safety APIs. You’re now ready to integrate this resource into Contoso Camping Store’s AI-powered platform!
+In this workshop, you used Azure AI Content Safety to moderate text and images, inspect prompts and documents for prompt attacks, and evaluate whether model output is grounded in source material. You also saw where protected material detection fits into an end-to-end guardrail workflow.
 
-As you continue in your journey in developing AI responsibly, remember to keep responsible AI principles at the forefront of your approach to integrating AI. Mitigating potential harms presented by generative AI models requires an iterative, layered approach that includes experimentation and measurement. Azure AI integrates years of AI policy, research, and engineering expertise from Microsoft so your teams can build safe, secure, and reliable AI solutions from the start, and leverage enterprise controls for data privacy, compliance, and security on infrastructure that is built for AI at scale.
+As you continue building AI responsibly, keep in mind that Azure AI Content Safety is only one part of a broader safety architecture. Effective guardrails usually combine model instructions, retrieval design, moderation thresholds, prompt-attack detection, output validation, and human review where appropriate.
 
 After completing the project, you might wish to clean up your development environment or return it to its typical state.
 
 ###### [Develop in browser](#tab/github-codespaces)
 
-Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free core hours entitlement you get for your account.
+Deleting the GitHub Codespaces environment helps avoid consuming compute and storage from your included Codespaces usage.
 
 1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
 
@@ -29,10 +29,20 @@ You aren't necessarily required to clean up your local environment, but you can 
 
 ---
 
+## Clean up Azure resources
+
+If you no longer need the Azure AI Content Safety resource that you created for this workshop, delete the resource or delete the resource group that contains it. Deleting the resource group also deletes any other resources in that group, so verify that it doesn't contain resources you want to keep. For cleanup guidance, see [Clean up resources for Azure AI services](/azure/ai-services/multi-service-resource?pivots=azportal#clean-up-resources).
+
 ### Learn more
 
-- [Infuse responsible AI tools and practices in your LLMops](https://azure.microsoft.com/blog/infuse-responsible-ai-tools-and-practices-in-your-llmops/)
-- [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories?tabs=warning)
+- [Azure AI Content Safety overview](/azure/ai-services/content-safety/overview)
+- [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
+- [Quickstart: Analyze text content](/azure/ai-services/content-safety/quickstart-text)
+- [Quickstart: Analyze image content](/azure/ai-services/content-safety/quickstart-image)
 - [Prompt Shields](/azure/ai-services/content-safety/concepts/jailbreak-detection)
+- [Quickstart: Detect prompt attacks with Prompt Shields](/azure/ai-services/content-safety/quickstart-jailbreak)
 - [Groundedness detection](/azure/ai-services/content-safety/concepts/groundedness)
-- [Developer resources for responsible AI innovation](https://aka.ms/operationalize-rai)
+- [Quickstart: Use Groundedness detection](/azure/ai-services/content-safety/quickstart-groundedness)
+- [Protected material detection](/azure/ai-services/content-safety/concepts/protected-material)
+- [Quickstart: Protected material detection for text](/azure/ai-services/content-safety/quickstart-protected-material)
+- [Authenticate requests to Azure AI services](/azure/ai-services/authentication)

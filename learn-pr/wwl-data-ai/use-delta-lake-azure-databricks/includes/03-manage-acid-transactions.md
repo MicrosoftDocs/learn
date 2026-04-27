@@ -169,7 +169,22 @@ USING DELTA PARTITIONED BY (event_date);
 
 Partitioning means physically dividing a table’s data into separate subsets ("partitions") based on one or more columns. You might partition a large Delta table by region, product category, or another low-cardinality field. When queries filter on those partitioning columns, Databricks can skip over irrelevant partitions rather than scanning all data. That can speed up reads significantly, reduce resource usage, and make query execution more efficient. Partitioning also helps with data management, because you can more easily drop or reorganize partitions (for example, remove old data by partition), and improve performance of pruning/filtering during writes and other operations.
 
-However, partitioning also has costs and considerations. Each partition adds metadata overhead (in the Delta log and catalog), which can slow down operations when there are many small partitions. Because of this, Azure Databricks recommends partitioning only for very large tables (typically those over **~1 TB**) and ensuring that each partition has at least about **1 GB** of data to be worth the partition. If partitions are too fine-grained (high cardinality, many small partitions), then query planning, metadata management, and write performance can degrade. Also, partitioning decisions should align with how the data is commonly queried (i.e. you filter by those partition columns often), or else you may get little benefit. Databricks also offers newer features like liquid clustering and ingestion-time clustering which in many cases reduce the need for manual partitioning.
+However, partitioning also has costs and considerations. Each partition adds metadata overhead (in the Delta log and catalog), which can slow down operations when there are many small partitions. Because of this, Azure Databricks recommends partitioning only for very large tables (typically those over **~1 TB**) and ensuring that each partition has at least about **1 GB** of data to be worth the partition. If partitions are too fine-grained (high cardinality, many small partitions), then query planning, metadata management, and write performance can degrade. Also, partitioning decisions should align with how the data is commonly queried (i.e. you filter by those partition columns often), or else you may get little benefit.
+
+**Liquid clustering** is the recommended approach for organizing data in new Delta Lake tables. Unlike traditional partitioning, liquid clustering allows you to change your clustering strategy without rewriting existing data — making it more flexible as query patterns evolve. You enable it by using the `CLUSTER BY` clause at table creation time and can specify up to four clustering keys:
+
+```sql
+CREATE TABLE main.default.weblogs_clustered (
+  user_id INT,
+  url STRING,
+  status INT,
+  event_time TIMESTAMP,
+  event_date DATE
+)
+CLUSTER BY (event_date, status);
+```
+
+After creating a clustered table, run `OPTIMIZE` to apply the clustering to your data. Liquid clustering is incremental — each `OPTIMIZE` run reorganizes only the data that needs it. Liquid clustering and partitioning are mutually exclusive; for existing partitioned tables over ~1 TB where partition pruning provides clear benefit, traditional partitioning remains appropriate.
 
 ## Optimization and maintenance
 
@@ -181,10 +196,20 @@ Delta Lake provides several utilities to optimize the performance of Delta table
 
 ```python
 # Optimize the Delta table
-spark.sql("OPTIMIZE '/FileStore/tables/my_delta_table'")
+spark.sql("OPTIMIZE main.default.people")
 
 # Clean up old files
-spark.sql("VACUUM '/FileStore/tables/my_delta_table' RETAIN 168 HOURS")
+spark.sql("VACUUM main.default.people RETAIN 168 HOURS")
 ```
 
-Databricks also offers **auto-optimize** and **auto-compaction** features (workspace/cluster settings) that can reduce the need to run these commands manually by compacting files automatically during writes.
+For tables using **deletion vectors** (enabled by default in Databricks Runtime 14.1 and above), `VACUUM` alone does not permanently remove rows that were deleted via `DELETE` or `UPDATE` — those rows are only marked as deleted in a separate metadata file. This is particularly important for compliance use cases such as HIPAA data retention requirements. To physically purge deletion-vector-marked data before vacuuming, run:
+
+```sql
+REORG TABLE main.default.people APPLY (PURGE);
+```
+
+For Unity Catalog managed tables, **Predictive Optimization** automates maintenance by running `OPTIMIZE`, `VACUUM`, and `ANALYZE` operations automatically based on workload patterns — removing the need to schedule these commands manually. You enable it at the catalog, schema, or table level:
+
+```sql
+ALTER SCHEMA main.default ENABLE PREDICTIVE OPTIMIZATION;
+```
