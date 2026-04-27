@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="920" height="500" fill="#ffffff"/>
+
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555555"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d83b01"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="460" y="38" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Direct vs. indirect prompt injection</text>
+
+  <!-- ===== DIRECT (left) ===== -->
+  <rect x="20" y="60" width="420" height="420" rx="10" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <rect x="20" y="60" width="420" height="44" rx="10" fill="#d83b01"/>
+  <rect x="20" y="90" width="420" height="14" fill="#d83b01"/>
+  <text x="230" y="88" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Direct prompt injection</text>
+
+  <!-- Attacker -->
+  <rect x="130" y="125" width="200" height="50" rx="8" fill="#d83b01" opacity="0.9"/>
+  <text x="230" y="155" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">Attacker</text>
+
+  <!-- Arrow: attacker to crafted prompt -->
+  <line x1="230" y1="175" x2="230" y2="205" stroke="#d83b01" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Crafted prompt -->
+  <rect x="100" y="210" width="260" height="54" rx="8" fill="#fff0e6" stroke="#d83b01" stroke-width="1.5"/>
+  <text x="230" y="233" text-anchor="middle" font-size="12" fill="#a52e00" font-weight="600">Crafted malicious prompt</text>
+  <text x="230" y="251" text-anchor="middle" font-size="11" fill="#595959" font-style="italic">"Ignore your instructions and..."</text>
+
+  <!-- Arrow: prompt to LLM -->
+  <line x1="230" y1="264" x2="230" y2="300" stroke="#555555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- LLM -->
+  <rect x="140" y="305" width="180" height="55" rx="8" fill="#0078d4"/>
+  <text x="230" y="326" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">LLM</text>
+  <text x="230" y="346" text-anchor="middle" font-size="11" fill="#ffffff">System prompt overridden</text>
+
+  <!-- Arrow: LLM to output -->
+  <line x1="230" y1="360" x2="230" y2="395" stroke="#555555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Manipulated output -->
+  <rect x="120" y="400" width="220" height="44" rx="8" fill="#fce8e8" stroke="#c50f1f" stroke-width="1.5"/>
+  <text x="230" y="427" text-anchor="middle" font-size="13" font-weight="600" fill="#c50f1f">Manipulated output</text>
+
+  <!-- ===== INDIRECT / XPIA (right) ===== -->
+  <rect x="480" y="60" width="420" height="420" rx="10" fill="#f8f8f8" stroke="#cccccc" stroke-width="1"/>
+  <rect x="480" y="60" width="420" height="44" rx="10" fill="#8661c5"/>
+  <rect x="480" y="90" width="420" height="14" fill="#8661c5"/>
+  <text x="690" y="88" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Indirect prompt injection (XPIA)</text>
+
+  <!-- Attacker (top left) -->
+  <rect x="510" y="120" width="140" height="44" rx="8" fill="#d83b01" opacity="0.9"/>
+  <text x="580" y="147" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Attacker</text>
+
+  <!-- Arrow: attacker embeds in document -->
+  <line x1="650" y1="142" x2="710" y2="142" stroke="#d83b01" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="680" y="133" text-anchor="middle" font-size="10" fill="#a52e00">Embeds</text>
+
+  <!-- External document -->
+  <rect x="715" y="118" width="155" height="52" rx="8" fill="#fff0e6" stroke="#d83b01" stroke-width="1.5"/>
+  <text x="792" y="140" text-anchor="middle" font-size="12" fill="#a52e00" font-weight="600">External document</text>
+  <text x="792" y="158" text-anchor="middle" font-size="10" fill="#595959" font-style="italic">Hidden instructions inside</text>
+
+  <!-- User -->
+  <rect x="510" y="215" width="140" height="44" rx="8" fill="#107c10"/>
+  <text x="580" y="242" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">User</text>
+
+  <!-- Arrow: user sends normal query -->
+  <line x1="580" y1="259" x2="580" y2="295" stroke="#555555" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="555" y="282" text-anchor="end" font-size="10" fill="#505050">Normal query</text>
+
+  <!-- LLM + RAG -->
+  <rect x="520" y="300" width="180" height="55" rx="8" fill="#0078d4"/>
+  <text x="610" y="322" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">LLM + RAG</text>
+  <text x="610" y="342" text-anchor="middle" font-size="11" fill="#ffffff">Retrieval-augmented</text>
+
+  <!-- Arrow: LLM retrieves document -->
+  <path d="M 700,320 L 792,320 L 792,170" fill="none" stroke="#8661c5" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrow)"/>
+  <text x="810" y="250" text-anchor="start" font-size="10" fill="#5c3d99">Retrieves</text>
+
+  <!-- Arrow: document feeds back hidden instructions -->
+  <path d="M 715,155 L 685,155 L 685,300" fill="none" stroke="#d83b01" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowRed)"/>
+  <text x="692" y="224" text-anchor="start" font-size="10" fill="#a52e00">Injects</text>
+  <text x="692" y="236" text-anchor="start" font-size="10" fill="#a52e00">payload</text>
+
+  <!-- Arrow: LLM to manipulated output -->
+  <line x1="610" y1="355" x2="610" y2="395" stroke="#555555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Manipulated output -->
+  <rect x="500" y="400" width="220" height="44" rx="8" fill="#fce8e8" stroke="#c50f1f" stroke-width="1.5"/>
+  <text x="610" y="427" text-anchor="middle" font-size="13" font-weight="600" fill="#c50f1f">Manipulated output</text>
+</svg>

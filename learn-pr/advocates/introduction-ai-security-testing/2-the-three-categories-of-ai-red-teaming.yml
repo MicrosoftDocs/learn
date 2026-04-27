@@ -3,11 +3,11 @@ uid: learn.introduction-to-ai-security-testing.the-three-categories-of-ai-red-te
 title: The three categories of AI red teaming
 metadata:
   title: The three categories of AI red teaming
-  description: Explanation of the categories of AI red teaming
+  description: Learn about the three categories of AI red teaming — full stack, adversarial machine learning, and prompt injection — and the skills each requires.
   ms.author: ceperezb
   author: ceperezb
-  ms.date: 03/06/2026  
+  ms.date: 04/24/2026
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-the-three-categories-of-ai-red-teaming.md)]
