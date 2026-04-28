@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d51fa66e-790c-423f-99c9-6320655c3df5]
+
+> [TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 While generative AI models and agents tend to be the focus of most modern AI solution development projects, it can often be useful to leverage "off-the-shelf" functionality for common AI tasks.
 
 Microsoft Foundry includes *Foundry Tools*; a set of out-of-the-box prebuilt APIs and models that you can integrate into your applications. Using these tools can help you create a more cost-effective and predictable solution than relying on generative AI based agents alone.
@@ -13,6 +24,8 @@ Microsoft Foundry includes *Foundry Tools*; a set of out-of-the-box prebuilt API
 To use Foundry Tools, you create client applications that connect to the tool-specific endpoint in your Microsoft Foundry resource, specifying the project authentication key or using token-based authentication. You can then use the tool-specific APIs and SDKs to use the provided functionality.
 
 Some tools provide a user interface for configuration and test in the Foundry portal.
+
+::: zone-end
 
 > [!NOTE]
 > Azure tools were previously called *Azure AI Services*, and prior to that *Azure Cognitive Services*. These names are still reflected in some APIs and SDKs; and you can still provision some tools as individual Azure resources outside of a Foundry resource. For new projects, you should use the tools provided in a Microsoft Foundry resource.

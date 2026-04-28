@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2abc9282-d1ca-40dd-99ea-2c4ae7a8125a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how tool calling extends a generative AI model from text-only reasoning to practical, grounded action.
 
 You explored how to configure tools in OpenAI Responses API requests and how each tool adds a different capability:
@@ -11,7 +22,11 @@ Across all tools, the same core implementation pattern applies: define the tool 
 
 As a next step, you can combine these techniques to build more capable assistants and evolve toward full agentic solutions with persisted instructions, tools, and orchestration.
 
-### Learn more
+::: zone-end
+
+## Further reading
+
+To learn more about using tools with models, see the following resources:
 
 - [OpenAI developer guide: Tools](https://developers.openai.com/api/docs/guides/tools?azure-portal=true)
 - [OpenAI developers Guide: Function calling](https://developers.openai.com/api/docs/guides/function-calling)
