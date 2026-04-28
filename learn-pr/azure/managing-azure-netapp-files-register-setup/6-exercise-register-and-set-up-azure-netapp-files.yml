@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Register and Set Up Azure NetApp Files
   description: Hands-on exercise to register and set up Azure NetApp Files.
   ms.date: 03/25/2026
-  author: b-rashmim
+  author: rmishras
   ms.author: b-rashmim
   ms.topic: unit
 durationInMinutes: 20

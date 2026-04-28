@@ -5,7 +5,7 @@ metadata:
   title: Create a NetApp Account
   description: Learn how to create a NetApp account in Azure NetApp Files.
   ms.date: 03/25/2026
-  author: b-rashmim
+  author: rmishras
   ms.author: b-rashmim
   ms.topic: unit
 durationInMinutes: 5

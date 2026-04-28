@@ -5,7 +5,7 @@ metadata:
   title: Request Region Access
   description: Learn how to request access to a specific Azure region for Azure NetApp Files.
   ms.date: 03/25/2026
-  author: b-rashmim
+  author: rmishras
   ms.author: b-rashmim
   ms.topic: unit
 durationInMinutes: 3

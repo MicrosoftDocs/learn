@@ -5,7 +5,7 @@ metadata:
   title: Summary
   description: Summary of what you learned in this module about registering and setting up Azure NetApp Files.
   ms.date: 03/25/2026
-  author: b-rashmim
+  author: rmishras
   ms.author: b-rashmim
   ms.topic: unit
 durationInMinutes: 2

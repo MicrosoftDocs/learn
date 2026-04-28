@@ -5,7 +5,7 @@ metadata:
   title: Register for Azure Resource Provider
   description: Learn how to register the Microsoft.NetApp resource provider for your Azure subscription.
   ms.date: 03/25/2026
-  author: b-rashmim
+  author: rmishras
   ms.author: b-rashmim
   ms.topic: unit
 durationInMinutes: 4

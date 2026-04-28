@@ -5,7 +5,7 @@ metadata:
   description: Build your knowledge and skills in managing Azure NetApp Files. Start with fundamental setup tasks and registration steps needed to deploy and manage Azure NetApp Files resources.
   brand: azure
   ms.date: 03/25/2026
-  author: b-rashmim
+  author: rmishras
   ms.author: b-rashmim
   ms.topic: learning-path
 title: Managing Azure NetApp Files
