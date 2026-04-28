@@ -1,0 +1,137 @@
+<svg width="720" height="770" viewBox="0 0 720 770"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="Segoe UI, Arial, sans-serif">
+
+  <defs>
+    <!-- Arrowhead marker (blue, downward-pointing for auto-orient) -->
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="10" refY="4"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <polygon points="0 0, 10 4, 0 8" fill="#5B9BD5"/>
+    </marker>
+  </defs>
+
+  <!-- White background -->
+  <rect width="720" height="770" fill="#FFFFFF"/>
+
+  <!-- Lane background fills (content area below header) -->
+  <rect x="0"   y="48" width="360" height="722" fill="#EBF5FB"/>
+  <rect x="360" y="48" width="360" height="722" fill="#FEF9E7"/>
+
+  <!-- Outer border -->
+  <rect x="0" y="0" width="720" height="770" fill="none" stroke="#CCCCCC" stroke-width="1.5"/>
+
+  <!-- Header bottom line -->
+  <line x1="0" y1="48" x2="720" y2="48" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- Vertical lane divider -->
+  <line x1="360" y1="0" x2="360" y2="770" stroke="#CCCCCC" stroke-width="1"/>
+
+  <!-- Header area (white) -->
+  <rect x="0" y="0" width="720" height="48" fill="#FFFFFF"/>
+
+  <!-- Header labels -->
+  <text x="180" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#000000">Owner / Contributor</text>
+  <text x="540" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#000000">Global Administrator</text>
+
+  <!-- =====================================================================
+       LEFT LANE  (x-center = 180)
+       ===================================================================== -->
+
+  <!-- Start node (filled circle) -->
+  <circle cx="180" cy="78" r="11" fill="#000000"/>
+
+  <!-- Arrow: Start → Box 1 -->
+  <line x1="180" y1="89" x2="180" y2="108"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Box 1: Begin partner agent setup (single line) -->
+  <rect x="55" y="108" width="250" height="40" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="180" y="133" text-anchor="middle" font-size="15" fill="#000000">Begin partner agent setup</text>
+
+  <!-- Arrow: Box 1 → Box 2 -->
+  <line x1="180" y1="148" x2="180" y2="168"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Box 2: Set up is disabled / Global Administrator approval required -->
+  <rect x="15" y="168" width="330" height="55" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="180" y="190" text-anchor="middle" font-size="15" fill="#000000">Setup is disabled</text>
+  <text x="180" y="210" text-anchor="middle" font-size="15" fill="#000000">Global Administrator approval required</text>
+
+  <!-- Arrow: Box 2 → Box 3 -->
+  <line x1="180" y1="223" x2="180" y2="243"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Box 3: Select Copy Link / Share with Global Administrator -->
+  <rect x="25" y="243" width="310" height="55" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="180" y="265" text-anchor="middle" font-size="15" fill="#000000">Select Copy Link</text>
+  <text x="180" y="285" text-anchor="middle" font-size="15" fill="#000000">Share with Global Administrator</text>
+
+  <!-- Cross-lane arrow: Box 3 → Box 4 (down → right → down) -->
+  <polyline points="180,298 180,318 540,318 540,338"
+            fill="none" stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- =====================================================================
+       RIGHT LANE  (x-center = 540)
+       ===================================================================== -->
+
+  <!-- Box 4: Open approval link / or navigate to Active Agents > Setup -->
+  <rect x="375" y="338" width="330" height="55" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="540" y="360" text-anchor="middle" font-size="15" fill="#000000">Open approval link</text>
+  <text x="540" y="380" text-anchor="middle" font-size="15" fill="#000000">or navigate to Active Agents &gt; Setup</text>
+
+  <!-- Arrow: Box 4 → Box 5 -->
+  <line x1="540" y1="393" x2="540" y2="413"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Box 5: Review agent description / trigger and required permissions -->
+  <rect x="385" y="413" width="310" height="55" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="540" y="435" text-anchor="middle" font-size="15" fill="#000000">Review agent description,</text>
+  <text x="540" y="455" text-anchor="middle" font-size="15" fill="#000000">trigger, and required permissions</text>
+
+  <!-- Arrow: Box 5 → Box 6 -->
+  <line x1="540" y1="468" x2="540" y2="488"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Box 6: Select Start Approval / and grant required permissions -->
+  <rect x="390" y="488" width="300" height="55" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="540" y="510" text-anchor="middle" font-size="15" fill="#000000">Select Start Approval</text>
+  <text x="540" y="530" text-anchor="middle" font-size="15" fill="#000000">and grant required permissions</text>
+
+  <!-- Return cross-lane arrow: Box 6 → Box 7 (down → left → down) -->
+  <polyline points="540,543 540,563 180,563 180,583"
+            fill="none" stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- =====================================================================
+       LEFT LANE (continued)
+       ===================================================================== -->
+
+  <!-- Box 7: Return to agent and select Setup (single line) -->
+  <rect x="30" y="583" width="300" height="40" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="180" y="608" text-anchor="middle" font-size="15" fill="#000000">Return to agent and select Setup</text>
+
+  <!-- Arrow: Box 7 → Box 8 -->
+  <line x1="180" y1="623" x2="180" y2="643"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Box 8: Complete setup / assign identity and configure trigger -->
+  <rect x="20" y="643" width="320" height="55" rx="8" ry="8"
+        fill="#FFFFFF" stroke="#5B9BD5" stroke-width="1.5"/>
+  <text x="180" y="665" text-anchor="middle" font-size="15" fill="#000000">Complete setup:</text>
+  <text x="180" y="685" text-anchor="middle" font-size="15" fill="#000000">assign identity and configure trigger</text>
+
+  <!-- Arrow: Box 8 → End node -->
+  <line x1="180" y1="698" x2="180" y2="720"
+        stroke="#5B9BD5" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- End node (bullseye) -->
+  <circle cx="180" cy="742" r="13" fill="none" stroke="#000000" stroke-width="2.5"/>
+  <circle cx="180" cy="742" r="7"  fill="#000000"/>
+
+</svg>
