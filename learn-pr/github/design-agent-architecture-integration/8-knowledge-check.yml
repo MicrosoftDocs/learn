@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.github.design-agent-architecture-integration.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Test your understanding of agent architecture, governance controls, and SDLC integration in GitHub.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/28/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the most reliable way to prevent planless execution from being merged?"
+    choices:
+    - content: "Ask the agent to be careful."
+      isCorrect: false
+      explanation: "Incorrect. Asking for caution relies on voluntary behavior and doesn't create enforceable controls."
+    - content: "Require a plan template only."
+      isCorrect: false
+      explanation: "Incorrect. Templates encourage good behavior, but templates alone don't prevent merges when requirements are skipped."
+    - content: "Make a plan check a required status check and require pull request reviews."
+      isCorrect: true
+      explanation: "Correct! Templates encourage good behavior, but required checks and required reviews enforce it. This converts plan required into a guaranteed merge condition."
+    - content: "Allow direct pushes but require tests."
+      isCorrect: false
+      explanation: "Incorrect. Direct pushes bypass pull request governance and review controls."
+  - content: "Which GitHub feature most directly routes reviews based on changed file paths?"
+    choices:
+    - content: "Issues"
+      isCorrect: false
+      explanation: "Incorrect. Issues track work but don't automatically assign code reviewers by path."
+    - content: "CODEOWNERS"
+      isCorrect: true
+      explanation: "Correct! CODEOWNERS maps paths to owners so the right experts are automatically requested for review and can be enforced with required review policies."
+    - content: "Actions artifacts"
+      isCorrect: false
+      explanation: "Incorrect. Artifacts store outputs from workflows, not review routing rules."
+    - content: "Releases"
+      isCorrect: false
+      explanation: "Incorrect. Releases package delivered versions but don't control code review ownership."
+  - content: "In a plan-act-evaluate architecture, where should evaluation evidence primarily live?"
+    choices:
+    - content: "Only inside the agent's private logs"
+      isCorrect: false
+      explanation: "Incorrect. Private logs are not easily reviewable or auditable by collaborators."
+    - content: "In PR comments only"
+      isCorrect: false
+      explanation: "Incorrect. Comments can help explain results, but they are not the strongest source of durable execution evidence."
+    - content: "In GitHub-native artifacts like workflow runs, checks, and uploaded artifacts"
+      isCorrect: true
+      explanation: "Correct! Workflow runs, checks, and artifacts are durable, reviewable, and auditable. They provide objective evidence independent of the agent."
+    - content: "In a separate external document"
+      isCorrect: false
+      explanation: "Incorrect. External documents may be harder to verify and disconnect evidence from the workflow."
+  - content: "Which design best expresses risk-based autonomy for production deployments?"
+    choices:
+    - content: "Let the agent deploy after tests pass"
+      isCorrect: false
+      explanation: "Incorrect. Passing tests alone may not be sufficient for high-risk production changes."
+    - content: "Use GitHub Environments with required reviewers for production"
+      isCorrect: true
+      explanation: "Correct! Environments create a human approval gate for high-risk execution and can restrict access to protected secrets and deployments."
+    - content: "Allow direct pushes to main"
+      isCorrect: false
+      explanation: "Incorrect. Direct pushes reduce governance and increase deployment risk."
+    - content: "Disable workflow approvals"
+      isCorrect: false
+      explanation: "Incorrect. Removing approvals weakens controls for sensitive deployments."
+  - content: "Which is an architectural anti-pattern in agent design?"
+    choices:
+    - content: "Clear success criteria"
+      isCorrect: false
+      explanation: "Incorrect. Clear success criteria improve reliability and accountability."
+    - content: "Required checks"
+      isCorrect: false
+      explanation: "Incorrect. Required checks are a governance best practice."
+    - content: "Mixed planning and execution with no inspectable plan"
+      isCorrect: true
+      explanation: "Correct! Without an inspectable plan, reviewers can't validate intent or scope. This increases hidden reasoning and reduces reliability."
+    - content: "Uploading artifacts"
+      isCorrect: false
+      explanation: "Incorrect. Uploading artifacts can improve traceability and evidence collection."
