@@ -1,8 +1,6 @@
-## Plan your agent pipeline
-
 Designing a multi-agent workflow starts with mapping your existing operational process. Most infrastructure workflows follow a predictable pattern: gather requirements, make design decisions, generate artifacts, execute actions, and produce documentation. Each of these phases becomes a candidate for a specialized agent.
 
-### Step 1: Map your current workflow
+## Step 1: Map your current workflow
 
 Before building agents, document the steps you perform today. For an environment provisioning workflow, this might look like:
 
@@ -15,7 +13,7 @@ Before building agents, document the steps you perform today. For an environment
 
 Each numbered step represents a potential agent. The human coordination between steps is what the conductor agent replaces. That coordination involves reading the output of one step and using it as input for the next.
 
-### Step 2: Define agent boundaries
+## Step 2: Define agent boundaries
 
 A well-designed agent has a **single responsibility**. It does one thing well and produces a clear output artifact. When deciding where to split agents, consider:
 
@@ -24,7 +22,7 @@ A well-designed agent has a **single responsibility**. It does one thing well an
 - **Failure isolation**: If the deployment step fails, you want to retry just the deployment, not the entire pipeline. Separate agents make this possible.
 - **Reusability**: A documentation agent that produces runbooks from deployment artifacts can be reused across multiple workflows, not just environment provisioning.
 
-### Step 3: Define the artifact contract
+## Step 3: Define the artifact contract
 
 Agents communicate through files, so define what each agent produces and what downstream agents expect. This is your artifact contract:
 
@@ -38,7 +36,7 @@ Agents communicate through files, so define what each agent produces and what do
 
 This contract ensures that agents can evolve independently. You can replace the Bicep agent with a Terraform agent, and as long as the output includes the infrastructure templates the deploy agent expects, the pipeline continues to work.
 
-### Step 4: Build the conductor
+## Step 4: Build the conductor
 
 The conductor agent ties the pipeline together. Its definition includes all specialized agents in the `agents` array and its system prompt describes the workflow sequence:
 
@@ -60,7 +58,7 @@ The conductor's system prompt specifies:
 
 Here's an example of how a conductor's system prompt might describe a handoff:
 
-```markdown
+```Markdown
 ## Workflow
 
 1. Delegate to requirements-agent with the user's scenario description
@@ -73,7 +71,7 @@ Here's an example of how a conductor's system prompt might describe a handoff:
 8. Delegate to docs-agent: "Generate a runbook from all project artifacts"
 ```
 
-### Step 5: Create shared skills
+## Step 5: Create shared skills
 
 Review the domain knowledge that multiple agents need and extract it into shared skills. Common skills for ops workflows include:
 

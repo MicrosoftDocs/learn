@@ -1,14 +1,12 @@
-## The operations maturity model
-
 Infrastructure operations evolve through distinct stages. Understanding in which stage your organization is, helps you identify the opportunities that agentic approaches unlock.
 
-### Stage 1: Manual operations
+## Stage 1: Manual operations
 
 In the earliest stage, administrators perform tasks directly through portals, command-line tools, or remote desktop sessions. You sign in to the Azure portal, select settings from dropdown menus, and configure resources one at a time.
 
 Manual operations work for small environments, but they don't scale. Every deployment requires the same select in the same order. Mistakes happen when you skip a step or enter the wrong value in a configuration field. There's no audit trail beyond what you remember to document, and knowledge stays locked in the person who performed the task.
 
-### Stage 2: Scripted automation
+## Stage 2: Scripted automation
 
 To address these limitations, teams adopt scripts and infrastructure-as-code (IaC). You write Azure CLI commands, PowerShell scripts, or Bicep templates that capture your deployment steps as repeatable code. Version control provides an audit trail, and peer review catches errors before they reach production.
 
@@ -18,7 +16,7 @@ Scripted automation is a significant improvement, but it introduces its own chal
 - **Context switching**: You move between documentation, code editors, terminals, and deployment tools throughout the workflow.
 - **Coordination overhead**: Multi-step workflows still need a human to sequence the steps, pass outputs between stages, and handle failures.
 
-### Stage 3: AI-assisted prompts
+## Stage 3: AI-assisted prompts
 
 The introduction of AI assistants like GitHub Copilot adds a new capability. You describe what you need in natural language, and the AI generates code, suggests configurations, or explains error messages. This approach removes some of the friction from stage 2. You don't need to remember every CLI flag or Bicep syntax pattern.
 
@@ -32,7 +30,7 @@ The assistant produces a draft template in seconds. You review it, make adjustme
 - **No persistent context**: The AI doesn't retain your organization's naming conventions, security requirements, or preferred architectures between sessions.
 - **No validation chain**: The AI generates code, but it doesn't verify that the output meets your compliance requirements or integrates with your existing infrastructure.
 
-### Stage 4: Agentic workflows
+## Stage 4: Agentic workflows
 
 Agentic workflows address these gaps by turning individual AI interactions into coordinated pipelines. Instead of prompting an AI for each step, you describe the overall goal once. A system of specialized AI agents handles the full workflow. Each agent is responsible for a specific domain, from parsing requirements through deployment to documentation.
 

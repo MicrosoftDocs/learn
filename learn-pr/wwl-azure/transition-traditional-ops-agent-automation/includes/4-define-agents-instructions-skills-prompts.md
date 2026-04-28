@@ -1,10 +1,8 @@
-## The four building blocks
-
 An agentic workflow is built from four components that work together: **agents**, **skills**, **instructions**, and **prompts**. Each serves a different purpose, and understanding how they relate is essential to designing effective multi-agent systems.
 
-A user prompt flows into an agent defined in an `.agent.md` file. The agent defines its identity, the tools it can use, and which subagents it can delegate to. From there, the agent draws on **two sources** of supporting content. The first is `skills`: domain knowledge documents that the agent reads explicitly at runtime. The second is `instructions`: coding and format standards that are automatically injected based on the type of file the agent is working with.`
+A user prompt flows into an agent defined in an `.agent.md` file. The agent defines its identity, the tools it can use, and which subagents it can delegate to. From there, the agent draws on **two sources** of supporting content. The first is `skills`: domain knowledge documents that the agent reads explicitly at runtime. The second is `instructions`: coding and format standards that are automatically injected based on the type of file the agent is working with.
 
-### Agents
+## Agents
 
 An agent is a persona with a defined role, a system prompt, access to tools, and optionally the ability to delegate to other agents. In practice, an agent is a Markdown file with YAML front matter that defines its configuration and a Markdown body that serves as its system prompt.
 
@@ -32,7 +30,7 @@ Key properties of an agent:
 
 A conductor agent, for example, lists all specialized agents in its `agents` array and uses `runSubagent` calls to delegate tasks. A leaf agent (one that does the actual work) typically has an empty `agents` array and relies on tools like `runInTerminal` or `createFile` to produce outputs.
 
-### Skills
+## Skills
 
 A skill is a reusable knowledge document that agents read at runtime. Skills contain domain-specific information that is too large or too volatile to embed directly in an agent's system prompt. Including  patterns, lookup tables, code snippets, and default configurations.
 
@@ -44,8 +42,7 @@ name: azure-deployment-defaults
 description: "Default configurations for Azure infrastructure deployments"
 ---
 ```
-
-```markdown
+```Markdown
 ## Naming conventions
 - Resource groups: rg-{workload}-{environment}-{region}
 - App Services: app-{workload}-{environment}
@@ -68,7 +65,7 @@ description: "Default configurations for Azure infrastructure deployments"
 
 This design lets you share the same skill across multiple agents while keeping each agent's context focused on what it needs. A deployment agent reads the deployment-defaults skill, while an architecture agent reads an architecture-patterns skill. Both skills live in the same folder, but each agent pulls only what's relevant to its task.
 
-### Instructions
+## Instructions
 
 Instructions are coding standards that are automatically injected into an agent's context based on file patterns. Unlike skills, which agents pull explicitly, instructions use a **push model**. They activate whenever an agent creates or edits a file matching the instruction's target pattern.
 
@@ -81,7 +78,7 @@ applyTo: "**/*.bicep"
 ---
 ```
 
-```markdown
+```Markdown
 ## Bicep standards
 - Use Azure Verified Modules when available
 - Include resource locks on production resources
@@ -100,7 +97,7 @@ Common instruction patterns for ops teams:
 | PowerShell standards | `**/*.ps1` | Script conventions and error handling |
 | YAML validation | `**/*.yml` | Configuration file structure rules |
 
-### When to use skills vs. instructions
+## When to use skills vs. instructions
 
 The distinction between skills and instructions matters for maintainability:
 
@@ -115,7 +112,7 @@ Use **skills** when you need to encode organizational knowledge that agents refe
 
 Use **instructions** when you need to enforce standards on the output. For example, how Bicep templates should be structured, or what formatting rules apply to documentation.
 
-### Prompts
+## Prompts
 
 The prompt is the user's natural-language message that initiates the workflow. In an agentic system, the prompt flows to whichever agent is selected as the entry point. For multi-agent workflows, it's typically the conductor agent.
 
@@ -127,7 +124,7 @@ Effective prompts for agentic workflows describe the desired outcome rather than
 
 The second prompt gives the conductor enough context to plan the full workflow across requirements, architecture, code generation, and deployment, rather than handling a single step.
 
-### Agent memory and constraints
+## Agent memory and constraints
 
 Beyond skills and instructions, agents can use **memory** to persist and recall information across sessions. Memory provides a way to capture learnings, preferences, and organizational constraints that accumulate over time rather than being authored upfront.
 
@@ -143,7 +140,7 @@ Memory operates at different scopes:
 
 Example constraints file structure:
 
-```markdown
+```Markdown
 ## Deployment constraints
 - All resources must deploy to West Europe or North Europe regions
 - Production environments require approval from the platform team

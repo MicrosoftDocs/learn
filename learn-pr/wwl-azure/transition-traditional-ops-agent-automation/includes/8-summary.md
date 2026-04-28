@@ -1,4 +1,4 @@
-Cloud administrators and DevOps engineers face a growing volume of repetitive infrastructure tasks that follow predictable patterns. In this module, you explored how the agentic DevOps approach transforms these workflows by introducing AI agents that handle multi-step operations autonomously.
+Cloud administrators and DevOps engineers face a growing volume of repetitive infrastructure tasks that follow predictable patterns. In this module, you explored how the agentic DevOps approach using GitHub Copilot, transforms these workflows by introducing AI agents that handle multi-step operations autonomously.
 
 You traced the evolution from manual operations through scripted automation and AI-assisted prompts to full multi-agent orchestration. You examined the four building blocks: agents, skills, instructions, and prompts. You learned how they work together through pull and push mechanisms. You also learned how to design agent pipelines using the conductor pattern, where specialized agents communicate through versioned artifacts and a coordinating agent manages the workflow sequence.
 
