@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.fabric-transform-data-tsql
+metadata:
+  title: Transform Data Using T-SQL in Microsoft Fabric
+  description: "Use T-SQL in Microsoft Fabric warehouses to transform and query data, create reusable views and stored procedures, and build dimensional tables."
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Transform data using T-SQL in Microsoft Fabric
+summary: "Use T-SQL in Microsoft Fabric warehouses to transform and query data, create reusable views and stored procedures, and build dimensional tables."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Transform warehouse data using T-SQL queries
+    - Create views for reusable transformation logic
+    - Build stored procedures for repeatable data processing
+    - Implement dimensional tables in a warehouse
+prerequisites: |
+  - Understanding of warehouse concepts and T-SQL fundamentals
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+units:
+- learn.wwl.fabric-transform-data-tsql.introduction
+- learn.wwl.fabric-transform-data-tsql.transform-queries
+- learn.wwl.fabric-transform-data-tsql.create-views
+- learn.wwl.fabric-transform-data-tsql.build-stored-procedures
+- learn.wwl.fabric-transform-data-tsql.implement-dimensional-tables
+- learn.wwl.fabric-transform-data-tsql.exercise
+- learn.wwl.fabric-transform-data-tsql.knowledge-check
+- learn.wwl.fabric-transform-data-tsql.summary
+badge:
+  uid: learn.wwl.fabric-transform-data-tsql.badge
