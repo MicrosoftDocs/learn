@@ -20,7 +20,7 @@ Security Copilot can be used with any data source that Defender XDR and Microsof
 
 :::image type="content" source="../media/sap-rise-security-copilot.png" alt-text="Screenshot of Security Copilot experience with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot.png":::
 
-In addition to that the Security Copilot experience is embedded on the Defender XDR portal. Next to an AI-generated summary, recommendations, and remediation like password reset for SAP are provided out-of-the-box. Learn more about fully automatic SAP attack disruption [here](/azure/sentinel/sap/deployment-attack-disrupt) and semi-automatic SAP attack disruption [here](https://www.youtube.com/watch?v=b-AZnR-nQpg).
+In addition to that the Security Copilot experience is embedded on the Defender XDR portal. Next to an AI-generated summary, recommendations, and remediation like password reset for SAP are provided out-of-the-box. Learn more about fully automatic attack disruption [here](/azure/sentinel/sap/deployment-attack-disrupt) and the semi-automatic SAP attack disruption [here](https://www.youtube.com/watch?v=b-AZnR-nQpg).
 
 :::image type="content" source="../media/sap-rise-security-copilot-defender-portal.png" alt-text="Screenshot of embedded Security Copilot experience in Defender with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot-defender-portal.png":::
 

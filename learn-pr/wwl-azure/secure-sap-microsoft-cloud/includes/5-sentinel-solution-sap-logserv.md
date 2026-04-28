@@ -1,6 +1,6 @@
 As covered in the previous unit, the Microsoft Sentinel solution for SAP applications provides powerful application-layer monitoring — tracking SAP user activity, business transactions, and critical security events while correlating them with threat signals across your entire IT estate. However, in SAP RISE/ECS environments, infrastructure and database logs remain under SAP's shared responsibility model and aren't accessible to customers through the agentless data connector.
 
-**SAP LogServ** is an optional add-on service in your SAP Cloud ERP private package that closes this gap. It unlocks access to all remaining logs from SAP's managed services — including complete SAP HANA database insights, system-level security telemetry, and audit trails — streaming them directly into Microsoft Sentinel Solution for SAP.
+**[SAP LogServ](/azure/sentinel/sap/sap-logserv-overview)** is an optional add-on service in your SAP Cloud ERP private package that closes this gap. It unlocks access to all remaining logs from SAP's managed services — including complete SAP HANA database insights, system-level security telemetry, and audit trails — streaming them directly into Microsoft Sentinel Solution for SAP.
 
 > [!NOTE]
 > SAP LogServ is a first-of-its-kind Sentinel-native integration built by SAP. RISE on Azure customers have the exclusive ability to leverage this push-based integration without any intermediary infrastructure - Unlike other pull-based mechanisms involving log-forwarding functions.
@@ -43,7 +43,7 @@ The Microsoft Sentinel for SAP solution ships with [60+ built-in analytic rules]
 
 ### Infrastructure and database detections (SAP LogServ add-on)
 
-LogServ extends detection capabilities to the infrastructure and database layer with dedicated analytic rules for SAP HANA, surfacing threats that are invisible at the application layer alone.
+LogServ extends detection capabilities to the infrastructure and database layer, surfacing threats that are invisible at the application layer alone. See below sample with dedicated analytic rules for SAP HANA database.
 
 :::image type="content" source="../media/hana-db-detections.png" alt-text="Screenshot showing SAP HANA database detection rules provided by the SAP LogServ integration." lightbox="../media/hana-db-detections.png":::
 
@@ -71,7 +71,7 @@ SAP LogServ is an optional add-on for SAP RISE/ECS and SAP Cloud ERP private edi
 
 :::image type="content" source="../media/logserv-deployment-view.png" alt-text="Diagram showing high-level deployment  flow of SAP LogServ with Microsoft Sentinel across the full SAP RISE stack." lightbox="../media/logserv-deployment-view.png":::
 
-For detailed deployment instructions, see the [SAP LogServ integration with Microsoft Sentinel blog series](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/ultimate-blog-series-sap-logserv-integration-with-microsoft-sentinel/ba-p/14126401).
+For detailed deployment instructions, see the [SAP LogServ integration with Microsoft Sentinel Solution for SAP overview article](/azure/sentinel/sap/sap-logserv-overview).
 
 > [!IMPORTANT]
 > LogServ complements the Microsoft Sentinel for SAP solution. For full-stack coverage, deploy both the agentless data connector (application layer) and the LogServ add-on (infrastructure and database layers).

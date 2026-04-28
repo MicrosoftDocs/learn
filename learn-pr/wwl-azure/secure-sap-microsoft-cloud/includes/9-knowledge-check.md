@@ -4,7 +4,7 @@ Choose the best response for each of the questions. Then select **Check your ans
 
 ## Multiple Choice
 
-What is the typical use case for SAML/OAuth SSO method in SAP RISE?
+What is the typical use case for OAuth2SAML Bearer SSO method in SAP RISE?
 ( ) Web GUI, SAP Enterprise Portal. {{Incorrect. Web GUI and SAP Enterprise Portal are typically used with SPNEGO SSO method, not SAML/OAuth.}}
 (x) Microsoft Copilot, Microsoft Power Platform, Microsoft Teams, SAP Fiori, Web GUI, Portal. {{Correct. SAML/OAuth SSO method is typically used with SAP Fiori, Web GUI, Portal, and HANA.}}
 ( ) SAP GUI. {{Incorrect. SAP GUI is typically used with SNC SSO method, not SAML/OAuth.}}

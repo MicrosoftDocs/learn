@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the typical use case for SAML/OAuth SSO method in SAP RISE?"
+  - content: "What is the typical use case for OAuth2SAML Bearer SSO method in SAP RISE?"
     choices:
     - content: "Web GUI, SAP Enterprise Portal."
       isCorrect: false
