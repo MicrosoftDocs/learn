@@ -20,10 +20,10 @@ quiz:
         - content: "They feature a supercharged NPU capable of 40+ TOPS"
           isCorrect: true
           explanation: "Correct. Copilot+ PCs include NPUs capable of 40+ TOPS, enabling efficient on-device AI processing."
-        - content: "They include Microsoft Pluton, which is not available on Windows 11 Pro PCs"
+        - content: "They include Microsoft Pluton, which isn't available on Windows 11 Pro PCs"
           isCorrect: false
-          explanation: "Incorrect. Microsoft Pluton is available on both Windows 11 Pro PCs and Copilot+ PCs. On Copilot+ PCs, it is enabled by default."
-        - content: "They do not support AI-enabled apps"
+          explanation: "Incorrect. Microsoft Pluton is available on both Windows 11 Pro PCs and Copilot+ PCs. On Copilot+ PCs, it's enabled by default."
+        - content: "They don't support AI-enabled apps"
           isCorrect: false
           explanation: "Incorrect. Copilot+ PCs support a wide range of AI-enabled applications."
 
@@ -31,13 +31,13 @@ quiz:
     choices:
         - content: "The number of AI models supported"
           isCorrect: false
-          explanation: "Incorrect. TOPS does not measure model support."
+          explanation: "Incorrect. TOPS doesn't measure model support."
         - content: "The total maximum achievable throughput"
           isCorrect: true
           explanation: "Correct. TOPS stands for *trillions of operations per second* and measures the maximum processing throughput of an NPU, indicating how many AI operations it can perform per second."
         - content: "The amount of memory used"
           isCorrect: false
-          explanation: "Incorrect. Memory usage is not related to TOPS."
+          explanation: "Incorrect. Memory usage isn't related to TOPS."
         - content: "The number of CPU cores"
           isCorrect: false
           explanation: "Incorrect. CPU cores are unrelated to TOPS."
@@ -50,18 +50,18 @@ quiz:
         - content: "It runs AI tasks in the cloud"
           isCorrect: false
           explanation: "Incorrect. NPUs process AI tasks locally on the device."
-        - content: "It is designed specifically for AI tasks, using less power and generating less heat"
+        - content: "It's designed specifically for AI tasks, using less power and generating less heat"
           isCorrect: true
           explanation: "Correct. NPUs are purpose-built for AI workloads, allowing them to run efficiently with lower power consumption and heat."
         - content: "It replaces the need for system memory"
           isCorrect: false
-          explanation: "Incorrect. NPUs do not replace system memory."
+          explanation: "Incorrect. NPUs don't replace system memory."
 
   - content: "What is a key advantage of on-device AI processing on Copilot+ PCs?"
     choices:
         - content: "Requires constant internet access"
           isCorrect: false
-          explanation: "Incorrect. On-device AI does not require a constant internet connection."
+          explanation: "Incorrect. On-device AI doesn't require a constant internet connection."
         - content: "Sends all data to the cloud"
           isCorrect: false
           explanation: "Incorrect. On-device AI processes data locally."
@@ -85,7 +85,7 @@ quiz:
           explanation: "Correct. Hybrid AI uses both on-device and cloud-based processing depending on the workload."
         - content: "Offline AI"
           isCorrect: false
-          explanation: "Incorrect. Offline AI is not a defined processing model."
+          explanation: "Incorrect. Offline AI isn't a defined processing model."
 
   - content: "How does Agent in Settings help reduce IT support requests?"
     choices:

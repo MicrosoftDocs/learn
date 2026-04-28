@@ -31,18 +31,18 @@ The following table summarizes the key differences between tiers.
 > Both Windows 11 Pro PCs and Copilot+ PCs are managed with the same IT tools and processes, including Microsoft Intune and Windows Autopilot. Organizations don't need separate management infrastructure for Copilot+ PCs.
 
 > [!IMPORTANT]
-> Performance claims are based on Microsoft testing. Results may vary depending on device configuration, usage, and other factors. For more details, see the [Copilot+ PC claims and disclosures documentation](/windows/deployment/performance-lab/claims-disclosures?tabs=copilot-plus).
+> Performance claims are based on Microsoft testing. Results may vary depending on device configuration, usage, and other factors. For more information, see the [Copilot+ PC claims and disclosures documentation](/windows/deployment/performance-lab/claims-disclosures?tabs=copilot-plus).
 
 ## What's enhanced on Copilot+ PCs
 
 Copilot+ PCs include everything available on Windows 11 Pro, with additional hardware and software capabilities designed for AI workloads. The following features are enhanced or exclusive to Copilot+ PCs:
 
-- **Click to Do** — Analyzes text or images on screen and suggests next steps, such as opening content in another app, rewriting text, or applying edits in Photos.
-- **Improved Windows search** — Contextual search that understands descriptive queries for files, settings, and images, and unifies local and cloud results in a single taskbar experience.
-- **Agent in Settings** — Describe what you want to configure (such as attaching an external screen or pairing a Bluetooth device), and the agent offers suggestions and applies your selected changes.
-- **Windows Studio Effects** — Full NPU-powered video call enhancements, including portrait blur, eye contact correction, voice focus, and auto-framing.
-- **Live Captions with translation** — Real-time translation from 40+ languages to English, and 25+ languages to Chinese (Simplified).
-- **Fluid Dictation** — Voice input that suggests corrections and improvements to your writing as you speak.
+- **Click to Do**—Analyzes text or images on screen and suggests next steps, such as opening content in another app, rewriting text, or applying edits in Photos.
+- **Improved Windows search**—Contextual search that understands descriptive queries for files, settings, and images, and unifies local and cloud results in a single taskbar experience.
+- **Agent in Settings**—Describe what you want to configure (such as attaching an external screen or pairing a Bluetooth device), and the agent offers suggestions and applies your selected changes.
+- **Windows Studio Effects**—Full NPU-powered video call enhancements, including portrait blur, eye contact correction, voice focus, and autoframing.
+- **Live Captions with translation**—Real-time translation from 40+ languages to English, and 25+ languages to Chinese (Simplified).
+- **Fluid Dictation**—Voice input that suggests corrections and improvements to your writing as you speak.
 
 > [!IMPORTANT]
 > Some Copilot+ PC features have language, region, or hardware requirements. Feature availability varies by device. For the latest details, see [Copilot+ PC FAQs]https://www.microsoft.com/en-us/windows/copilot-plus-pcs).
@@ -65,7 +65,7 @@ The following security capabilities are available on all Windows 11 Pro PCs and 
 - Post-quantum cryptography (PQC)
 
 > [!NOTE]
-> Some security features may require supported hardware and configuration. Availability can vary by device and deployment. For example, while all Windows 11 Pro PCs support TPM 2.0, some may use a discrete TPM chip while others use firmware-based TPM. For more details on security features and requirements, see the [Windows 11 security documentation](/windows/security/).
+> Some security features may require supported hardware and configuration. Availability can vary by device and deployment. For example, while all Windows 11 Pro PCs support TPM 2.0, some may use a discrete TPM chip while others use firmware-based TPM. For more information on security features and requirements, see the [Windows 11 security documentation](/windows/security/).
 
 On Copilot+ PCs, the following security features are enhanced and enabled by default:
 
@@ -76,4 +76,4 @@ On Copilot+ PCs, the following security features are enhanced and enabled by def
 | **Secured-core PC protection** | Enabled by default (configurable on supporting Windows 11 devices) |
 
 > [!TIP]
-> For learners positioning these devices in business conversations: the key takeaway is that Copilot+ PCs are **secure by default** — Microsoft Pluton, Enhanced Sign-in Security, and Secured-core protection all come enabled out of the box, without requiring IT configuration.
+> For learners positioning these devices in business conversations: the key takeaway is that Copilot+ PCs are **secure by default**—Microsoft Pluton, Enhanced Sign-in Security, and Secured-core protection all come enabled out of the box, without requiring IT configuration.
