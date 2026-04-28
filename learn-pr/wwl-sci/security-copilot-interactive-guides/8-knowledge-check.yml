@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check for the Explore Security Copilot through interactive guides module."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "A security analyst frequently runs the same set of prompts to investigate failed login attempts in Microsoft Entra. What should the analyst create to avoid entering these prompts manually each time?"
+    choices:
+    - content: "A custom plugin"
+      isCorrect: false
+      explanation: "A custom plugin extends Security Copilot's data source capabilities, but doesn't save and sequence existing prompts for reuse."
+    - content: "A custom promptbook"
+      isCorrect: true
+      explanation: "A custom promptbook saves a sequence of prompts from a previous session so the analyst can reuse the workflow in future investigations."
+    - content: "A new workspace"
+      isCorrect: false
+      explanation: "A workspace organizes Security Copilot sessions and settings, but doesn't save reusable prompt sequences."
+  - content: "An insider risk alert in Microsoft Purview indicates that a user copied sensitive data to a USB device. Which capability does Security Copilot provide to help investigate this alert?"
+    choices:
+    - content: "Automatically blocks the USB device from further use"
+      isCorrect: false
+      explanation: "Security Copilot helps analyze and summarize activity, but device blocking is a response action managed through endpoint policies."
+    - content: "Summarizes the user's activity and identifies key risk patterns"
+      isCorrect: true
+      explanation: "Security Copilot summarizes user activity, identifies risk patterns, and helps the analyst assess the potential impact of the insider risk alert."
+    - content: "Generates a compliance report for the user's manager"
+      isCorrect: false
+      explanation: "Security Copilot assists with investigation and analysis, not automated report generation for management."
+  - content: "A security analyst is investigating a complex incident in Microsoft Defender XDR that involves dozens of alerts across multiple devices. How does Security Copilot assist with this investigation?"
+    choices:
+    - content: "It automatically resolves the incident and closes all related alerts"
+      isCorrect: false
+      explanation: "Security Copilot provides analysis and guidance, but incident resolution requires analyst review and action."
+    - content: "It restricts access to the affected devices until the investigation is complete"
+      isCorrect: false
+      explanation: "Device isolation is a response action configured through Defender XDR policies, not a Security Copilot analysis feature."
+    - content: "It summarizes incident activity, connects related events, and provides guided responses"
+      isCorrect: true
+      explanation: "Security Copilot helps analysts understand complex incidents by summarizing activity, connecting related events, and providing guided responses to focus the investigation."
+  - content: "An organization needs to identify unlabeled documents before a cloud migration. Which Microsoft Purview feature, enhanced by Security Copilot, helps analyze eDiscovery search results to assess compliance risk?"
+    choices:
+    - content: "Activity explorer"
+      isCorrect: false
+      explanation: "Activity explorer monitors sensitive data activity across services, but doesn't analyze eDiscovery search results for unlabeled content."
+    - content: "Data Loss Prevention (DLP) alerts"
+      isCorrect: false
+      explanation: "DLP alerts are triggered by policy violations on sensitive data, not by searching for unlabeled content across workloads."
+    - content: "eDiscovery content search with Security Copilot summarization"
+      isCorrect: true
+      explanation: "Security Copilot in eDiscovery analyzes search results, summarizes findings, identifies sensitive information types, and reviews content distribution across workloads."
+  - content: "What determines the security data a Copilot contributor can access within Security Copilot?"
+    choices:
+    - content: "The plugins that are enabled in the workspace"
+      isCorrect: false
+      explanation: "Enabled plugins determine which security solutions Security Copilot integrates with, but don't control what security data the user can access."
+    - content: "The contributor's Microsoft Entra and Azure RBAC roles"
+      isCorrect: true
+      explanation: "A contributor's Microsoft Entra and Azure role-based access control roles determine what security data they can access in Security Copilot, regardless of which plugins are enabled."
+    - content: "The owner settings configured for the workspace"
+      isCorrect: false
+      explanation: "Owner settings control workspace-level configuration such as access controls and integrations, but individual data access is governed by the user's Entra and Azure RBAC roles."

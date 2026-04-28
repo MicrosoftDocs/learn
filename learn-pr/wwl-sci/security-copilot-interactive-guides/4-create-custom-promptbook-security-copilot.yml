@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.create-custom-promptbook-security-copilot
+title: Create a custom promptbook in Security Copilot
+metadata:
+  title: Create a Custom Promptbook in Security Copilot
+  description: "Create a custom promptbook in Security Copilot by reusing prompts from a previous identity investigation session."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-create-custom-promptbook-security-copilot.md)]
