@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.maintain-monitor
+title: Maintain and monitor semantic models
+metadata:
+  title: Maintain and Monitor Semantic Models
+  description: "Configure scheduled refresh, monitor operations, use lineage view and impact analysis, and endorse semantic models."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-maintain-monitor.md)]

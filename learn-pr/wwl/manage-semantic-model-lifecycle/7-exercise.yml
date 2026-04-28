@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.exercise
+title: "Exercise: Manage semantic models through their lifecycle"
+metadata:
+  title: "Exercise: Manage Semantic Models Through Their Lifecycle"
+  description: "Interactive exercise to create reusable Power BI assets and manage semantic models through their development lifecycle."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

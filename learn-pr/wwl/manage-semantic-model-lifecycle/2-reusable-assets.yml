@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.reusable-assets
+title: Create reusable Power BI assets
+metadata:
+  title: Create Reusable Power BI Assets
+  description: "Create Power BI templates, data source files, and shared semantic models for consistent analytics development."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-reusable-assets.md)]
