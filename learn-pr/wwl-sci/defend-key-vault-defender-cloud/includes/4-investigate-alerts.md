@@ -45,7 +45,7 @@ If you can't identify the source, or if the access appears to come from an unrec
 
 The response action depends on where the suspicious access originated.
 
-:::image type="content" source="../media/alert-response-step-2-decision.png" alt-text="Decision tree for Step 2: suspicious IP or TOR leads to firewall controls, unauthorized identity leads to RBAC removal, Microsoft Entra role leads to identity administrator escalation." lightbox="../media/alert-response-step2-decision.png":::
+:::image type="content" source="../media/alert-response-step-2-decision.png" alt-text="Decision tree for Step 2: suspicious IP or TOR leads to firewall controls, unauthorized identity leads to RBAC removal, Microsoft Entra role leads to identity administrator escalation." lightbox="../media/alert-response-step-2-decision.png":::
 
 **Unrecognized IP address or The Onion Router (TOR) exit node:** The vault firewall is your first control. Navigate to the Key Vault in the Azure portal, open **Networking**, and enable the firewall if it isn't already active. Add your known trusted networks and virtual networks explicitly. Deny all other traffic. Denying traffic stops any further access from the suspicious source while you investigate.
 
