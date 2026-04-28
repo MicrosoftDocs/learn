@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
-content:
+content: ""
 quiz:
   questions:
   - content: "A data team wants to run Spark SQL queries in a PySpark notebook. What do they need to add at the top of a cell to run SQL?"
