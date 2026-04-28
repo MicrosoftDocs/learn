@@ -14,4 +14,5 @@ You can add a subnet to a virtual network that you want to use for Azure NetApp 
 
 ![Screenshot of Add subnet blade in the Azure Portal for a virtual network called my.vnet. The screenshot shows the configuration fields Name, Address range CIDR block, Network security group, Route table, and Subnet Delegation. This is a typical setup for an Azure NetApp Files (ANF) delegated subnet.](../media/managing-azure-netapp-files-register-setup/add-subnet.png)
 
-**Note**: You can also create and delegate a subnet when you create a volume for Azure NetApp Files.
+>[!Note]
+>You can also create and delegate a subnet when you create a volume for Azure NetApp Files.
