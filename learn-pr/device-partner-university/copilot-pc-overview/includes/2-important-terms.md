@@ -45,7 +45,7 @@ Copilot+ PCs include everything available on Windows 11 Pro, with additional har
 - **Fluid Dictation**—Voice input that suggests corrections and improvements to your writing as you speak.
 
 > [!IMPORTANT]
-> Some Copilot+ PC features have language, region, or hardware requirements. Feature availability varies by device. For the latest details, see [Copilot+ PC FAQs]https://www.microsoft.com/en-us/windows/copilot-plus-pcs).
+> Some Copilot+ PC features have language, region, or hardware requirements. Feature availability varies by device. For the latest details, see [Copilot+ PC FAQs](https://www.microsoft.com/windows/copilot-plus-pcs).
 
 ## Security features across both tiers
 
