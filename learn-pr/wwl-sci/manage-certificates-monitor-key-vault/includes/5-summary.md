@@ -21,5 +21,5 @@ With an audit trail in place, the next area of focus is detecting when something
 
 ## Learn more
 
-- [About Azure Key Vault certificates](https://learn.microsoft.com/azure/key-vault/certificates/about-certificates)
-- [Azure Key Vault logging](https://learn.microsoft.com/azure/key-vault/general/logging)
+- [About Azure Key Vault certificates](/azure/key-vault/certificates/about-certificates)
+- [Azure Key Vault logging](/azure/key-vault/general/logging)
