@@ -16,7 +16,6 @@ abstract: |
   - Convert audio waveforms into spectrogram tensors for model training.
   - Build and evaluate a binary TensorFlow keyword classification model that recognizes "yes" and "no".
 iconUrl: /training/achievements/tensor-audio-data.svg
-hidden: true
 levels:
 - beginner
 roles:
