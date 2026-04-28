@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-notebooks.exercise
+title: "Exercise: Transform data with notebooks"
+metadata:
+  title: "Exercise: Transform Data with Notebooks"
+  description: "Hands-on exercise to transform data using notebooks in Microsoft Fabric."
+  ms.date: 04/01/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]
