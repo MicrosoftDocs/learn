@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.tenant-setup-surface.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Microsoft tenant setup for Surface Support Portal access" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Before creating a new Microsoft tenant for Surface device support, what is the first action you must take?"
+    choices:
+        - content: "Request access to the Surface Support Portal"
+          isCorrect: false
+          explanation: "Incorrect. Portal access can only be requested after a tenant is created."
+        - content: "Use the Tenant Lookup Tool to confirm whether a tenant already exists"
+          isCorrect: true
+          explanation: "Correct. The module states that you must confirm no tenant exist before creating a new one."
+        - content: "Create Global Admin credentials"
+          isCorrect: false
+          explanation: "Incorrect. Credentials are created during the tenant creation process, not before checking tenant status."
+        - content: "Sign in to the Microsoft 365 Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. This step occurs later, after a tenant already exists."
+  - content: "What should you do if the Tenant Lookup Tool indicates that a tenant already exists for your organization?"
+    choices:
+        - content: "Proceed with tenant creation using the onboarding page"
+          isCorrect: false
+          explanation: "Incorrect. The document explicitly instructs not to proceed if a tenant exists."
+        - content: "Stop and don't proceed with tenant creation"
+          isCorrect: true
+          explanation: "Correct. An Important note states that if a tenant exists, you shouldn't continue."
+        - content: "Create a new tenant using a different domain"
+          isCorrect: false
+          explanation: "Incorrect. This action isn't described or recommended in the module."
+        - content: "Request access to the Surface Support Portal"
+          isCorrect: false
+          explanation: "Incorrect. Portal access requires an existing tenant and occurs later in the sequence."
+  - content: "During tenant creation, what is the correct next step if your domain isn't recognized after entering your work email?"
+    choices:
+        - content: "Verify your identity by phone call or text"
+          isCorrect: false
+          explanation: "Incorrect. Identity verification happens after entering organizational details."
+        - content: "Select Set up account to create a new tenant"
+          isCorrect: true
+          explanation: "Correct. The onboarding flow instructs you to select Set-up account if the domain isn't recognized."
+        - content: "Sign in to the Microsoft 365 Admin Center"
+          isCorrect: false
+          explanation: "Incorrect. Admin Center access happens after the tenant is created."
+        - content: "Enter credit card information"
+          isCorrect: false
+          explanation: "Incorrect. Credit card entry occurs later in the tenant setup process."
+  - content: "Why is identity verification required when creating a Microsoft tenant?"
+    choices:
+        - content: "To enable billing for Surface Support services"
+          isCorrect: false
+          explanation: "Incorrect. The document states no charges are applied during this step."
+        - content: "To confirm you're authorized to set up the tenant"
+          isCorrect: true
+          explanation: "Correct. Identity verification is required to confirm authorization to create the tenant."
+        - content: "To activate Surface Management Portal features"
+          isCorrect: false
+          explanation: "Incorrect. Portal features aren't activated during identity verification."
+        - content: "To approve Surface Support Portal access"
+          isCorrect: false
+          explanation: "Incorrect. Portal access approval occurs after submitting an access request."
+  - content: "After a Microsoft tenant is created, what is the correct next step to begin using Surface support services?"
+    choices:
+        - content: "Create a support request in Surface Management Portal"
+          isCorrect: false
+          explanation: "Incorrect. Support requests require approved portal access."
+        - content: "Request access to the Surface Support Portal"
+          isCorrect: true
+          explanation: "Correct. The module states this is the next step after tenant creation."
+        - content: "Open Services Hub to escalate a ticket"
+          isCorrect: false
+          explanation: "Incorrect. Services Hub is used only if a portal access request is denied."
+        - content: "Assign more Global Admins"
+          isCorrect: false
+          explanation: "Incorrect. This can be done later and isn't required to begin Surface support access."
