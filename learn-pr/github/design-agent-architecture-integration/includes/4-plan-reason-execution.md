@@ -116,13 +116,9 @@ Importantly, this risk exists during the proposal stage, not after merge. GitHub
 
   - reviewers are comfortable evaluating plan and code together 
 
- 
-
 ### Key takeaway
 
 The choice is not whether work is reviewed-it always is. The choice is when the system allows code to be generated relative to human validation, and how early you want to introduce change into the workflow.
-
- 
 
 ### Enforcing planning boundaries using capability limits and tool gating
 

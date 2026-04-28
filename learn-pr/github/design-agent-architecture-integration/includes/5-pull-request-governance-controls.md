@@ -6,7 +6,7 @@ In this unit, you'll learn:
 
 - How to use CODEOWNERS and reviews to route and approve changes 
 
-### **Pull requests are architectural control points**
+### Pull requests are architectural control points
 
 Pull requests are the primary control mechanism for agent execution in GitHub. Instead of allowing direct changes to protected branches, well-designed architectures route agent changes through pull requests and enforce merge requirements through policy.
 

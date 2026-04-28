@@ -39,7 +39,7 @@ jobs:
 
 This design allows the agent to prepare changes while preventing it from executing production-impacting actions independently.
 
-## **Outputs are workflow contracts (step outputs vs job outputs vs env)**
+## Outputs are workflow contracts (step outputs vs job outputs vs env)
 
 When a workflow generates information that downstream steps or jobs must consume, treat that data as an explicit output rather than "just logs."
 
