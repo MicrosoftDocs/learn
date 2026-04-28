@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-security-copilot-workspaces.summary
+metadata:
+  title: Summary
+  description: Summary of configuring workspaces for Microsoft Security Copilot
+  ms.date: 03/19/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]
