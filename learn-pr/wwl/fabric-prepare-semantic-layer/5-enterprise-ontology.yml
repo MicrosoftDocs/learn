@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-prepare-semantic-layer.enterprise-ontology
+title: From semantic models to enterprise ontology
+metadata:
+  title: From Semantic Models to Enterprise Ontology
+  description: "Understand how semantic models connect to Fabric IQ ontology and the intelligent data platform."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-enterprise-ontology.md)]
