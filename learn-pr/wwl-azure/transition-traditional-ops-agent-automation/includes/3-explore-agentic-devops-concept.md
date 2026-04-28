@@ -1,5 +1,3 @@
-## What is agentic DevOps?
-
 Agentic DevOps is the practice of using AI agents to automate and orchestrate operational workflows that traditionally required manual coordination. Rather than using AI as a reactive tool that responds to individual prompts, you define a system of specialized agents. These agents proactively execute multi-step pipelines, maintain context across stages, and produce versioned artifacts.
 
 In an agentic DevOps model, the AI isn't just a coding assistant. It's an active participant in the workflow. Each agent has a defined role, access to specific tools, and domain knowledge that shapes its outputs. A coordinating agent manages the sequence, delegates tasks, and ensures that outputs from one stage are available to the next.
