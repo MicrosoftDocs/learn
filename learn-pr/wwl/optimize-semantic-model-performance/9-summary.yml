@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of optimizing semantic model performance"
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]
