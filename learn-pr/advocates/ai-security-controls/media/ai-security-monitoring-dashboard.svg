@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title8 desc8">
+  <title id="title8">AI Security Monitoring Dashboard</title>
+  <desc id="desc8">Mockup of an AI security monitoring dashboard with four panels: prompt analysis trends, content filter trigger rates, agent tool call activity, and groundedness score trends</desc>
+  <rect width="900" height="520" fill="#FFFFFF"/>
+
+  <!-- Title Bar -->
+  <rect width="900" height="45" fill="#0078D4"/>
+  <text x="450" y="30" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF">AI Security Monitoring Dashboard</text>
+
+  <!-- Panel 1: Prompt Analysis Trends (top-left) -->
+  <rect x="20" y="60" width="420" height="205" rx="8" fill="#FFFFFF" stroke="#D1D1D1" stroke-width="1.5"/>
+  <text x="230" y="85" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1A1A1A">Prompt Analysis Trends</text>
+  <!-- Axis lines -->
+  <line x1="55" y1="100" x2="55" y2="245" stroke="#D1D1D1" stroke-width="1"/>
+  <line x1="55" y1="245" x2="415" y2="245" stroke="#D1D1D1" stroke-width="1"/>
+  <!-- Y-axis labels -->
+  <text x="48" y="115" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#424242">High</text>
+  <text x="48" y="180" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#424242">Med</text>
+  <text x="48" y="243" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#424242">Low</text>
+  <!-- Jailbreak attempts line (red, ascending) -->
+  <polyline points="70,225 120,218 170,210 220,195 270,180 320,160 370,135 400,120" fill="none" stroke="#A4262C" stroke-width="2"/>
+  <circle cx="400" cy="120" r="3" fill="#A4262C"/>
+  <!-- Injection attempts line (orange, moderate) -->
+  <polyline points="70,230 120,228 170,222 220,218 270,215 320,208 370,200 400,195" fill="none" stroke="#CA5010" stroke-width="2"/>
+  <circle cx="400" cy="195" r="3" fill="#CA5010"/>
+  <!-- Legend -->
+  <line x1="70" y1="255" x2="90" y2="255" stroke="#A4262C" stroke-width="2"/>
+  <text x="95" y="259" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Jailbreak attempts</text>
+  <line x1="210" y1="255" x2="230" y2="255" stroke="#CA5010" stroke-width="2"/>
+  <text x="235" y="259" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Injection attempts</text>
+
+  <!-- Panel 2: Content Filter Trigger Rates (top-right) -->
+  <rect x="460" y="60" width="420" height="205" rx="8" fill="#FFFFFF" stroke="#D1D1D1" stroke-width="1.5"/>
+  <text x="670" y="85" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1A1A1A">Content Filter Trigger Rates</text>
+  <!-- Axis -->
+  <line x1="495" y1="100" x2="495" y2="230" stroke="#D1D1D1" stroke-width="1"/>
+  <line x1="495" y1="230" x2="855" y2="230" stroke="#D1D1D1" stroke-width="1"/>
+  <!-- Bars -->
+  <rect x="520" y="140" width="55" height="90" rx="3" fill="#0078D4"/>
+  <text x="547" y="240" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Hate</text>
+  <text x="547" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Speech</text>
+
+  <rect x="600" y="175" width="55" height="55" rx="3" fill="#0078D4"/>
+  <text x="627" y="243" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Violence</text>
+
+  <rect x="680" y="195" width="55" height="35" rx="3" fill="#0078D4"/>
+  <text x="707" y="240" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Self-</text>
+  <text x="707" y="250" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Harm</text>
+
+  <rect x="760" y="120" width="55" height="110" rx="3" fill="#A4262C"/>
+  <text x="787" y="243" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Jailbreak</text>
+
+  <!-- Panel 3: Agent Tool Call Activity (bottom-left) -->
+  <rect x="20" y="285" width="420" height="215" rx="8" fill="#FFFFFF" stroke="#D1D1D1" stroke-width="1.5"/>
+  <text x="230" y="310" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1A1A1A">Agent Tool Call Activity</text>
+  <!-- Axis -->
+  <line x1="55" y1="325" x2="55" y2="470" stroke="#D1D1D1" stroke-width="1"/>
+  <line x1="55" y1="470" x2="415" y2="470" stroke="#D1D1D1" stroke-width="1"/>
+  <!-- Baseline area (blue, low) -->
+  <polygon points="70,460 120,455 170,458 220,452 270,456 320,454 340,455 340,470 70,470" fill="#D0E4FF" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Anomaly spike (orange) -->
+  <polygon points="340,455 350,440 360,390 370,350 380,370 390,420 400,450 400,470 340,470" fill="#FFECD0" stroke="#CA5010" stroke-width="1.5"/>
+  <!-- Baseline label -->
+  <text x="192" y="448" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#0078D4">Normal baseline</text>
+  <!-- Anomaly label -->
+  <line x1="365" y1="342" x2="395" y2="330" stroke="#CA5010" stroke-width="1"/>
+  <text x="400" y="328" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#CA5010">Anomaly</text>
+  <!-- Legend -->
+  <rect x="70" y="480" width="12" height="8" fill="#D0E4FF" stroke="#0078D4" stroke-width="1"/>
+  <text x="87" y="488" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Normal</text>
+  <rect x="140" y="480" width="12" height="8" fill="#FFECD0" stroke="#CA5010" stroke-width="1"/>
+  <text x="157" y="488" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#1A1A1A">Anomalous spike</text>
+
+  <!-- Panel 4: Groundedness Score Trends (bottom-right) -->
+  <rect x="460" y="285" width="420" height="215" rx="8" fill="#FFFFFF" stroke="#D1D1D1" stroke-width="1.5"/>
+  <text x="670" y="310" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#1A1A1A">Groundedness Score Trends</text>
+  <!-- Axis -->
+  <line x1="495" y1="325" x2="495" y2="470" stroke="#D1D1D1" stroke-width="1"/>
+  <line x1="495" y1="470" x2="855" y2="470" stroke="#D1D1D1" stroke-width="1"/>
+  <!-- Y labels -->
+  <text x="488" y="340" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#424242">100%</text>
+  <text x="488" y="400" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#424242">50%</text>
+  <text x="488" y="468" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#424242">0%</text>
+  <!-- Threshold line -->
+  <line x1="495" y1="370" x2="840" y2="370" stroke="#107C10" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="843" y="368" font-family="Segoe UI,Arial,sans-serif" font-size="8" fill="#107C10">Target</text>
+  <!-- Score line (green, mostly high with a dip) -->
+  <polyline points="510,345 550,342 590,348 630,350 670,380 700,410 720,395 750,360 790,345 830,340" fill="none" stroke="#107C10" stroke-width="2"/>
+  <circle cx="700" cy="410" r="4" fill="#A4262C" stroke="#A4262C" stroke-width="1"/>
+  <!-- Dip annotation -->
+  <line x1="700" y1="410" x2="730" y2="430" stroke="#A4262C" stroke-width="1"/>
+  <text x="735" y="438" font-family="Segoe UI,Arial,sans-serif" font-size="9" fill="#A4262C">Investigate dip</text>
+</svg>

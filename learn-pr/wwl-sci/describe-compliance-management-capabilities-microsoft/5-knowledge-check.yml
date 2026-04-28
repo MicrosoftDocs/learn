@@ -6,7 +6,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/20/2024
+  ms.date: 04/27/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -42,14 +42,14 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Microsoft will disclose data when required by law. However, it scrutinizes all government demands to ensure they're legally valid and appropriate, and notifies customers where legally permitted."
 
-  - content: "An organization's data privacy team identifies that some internal sites in their Microsoft 365 environment are accessible to far more users than necessary. Which Microsoft Priva Privacy Risk Management policy type is designed to detect and help remediate this issue?"
+  - content: "A multinational organization must comply with data residency regulations that require customer data to remain within specific geographic boundaries. How do Microsoft commercial cloud services help this organization meet the requirement?"
     choices:
-    - content: "Data overexposure policy"
+    - content: "Microsoft provides data residency options backed by contractual commitments, allowing the organization to choose where data is stored."
       isCorrect: true
-      explanation: "Correct. Data overexposure policies detect situations in which data is insufficiently secured—such as when access to an internal site is open to too many people—and provide remediation options such as making content private or notifying content owners."
-    - content: "Data transfer policy"
+      explanation: "Correct. Microsoft offers data residency options around the world, so organizations can determine where their data is stored. These capabilities are backed by contractual commitments and transparency about how data is stored and processed."
+    - content: "Microsoft automatically stores all customer data in the nearest data center without customer input on location."
       isCorrect: false
-      explanation: "Incorrect. Data transfer policies monitor for transfers between different world regions, departments, or outside the organization. They don't address excessive access permissions on internal sites."
-    - content: "Data minimization policy"
+      explanation: "Incorrect. Microsoft doesn't automatically assign data location. Organizations can choose their preferred data storage locations through options available in services such as Azure, Dynamics 365, and Microsoft 365."
+    - content: "Microsoft requires the organization to manage its own data replication and geographic distribution across regions."
       isCorrect: false
-      explanation: "Incorrect. Data minimization policies look for data that has been stored for at least a certain length of time, to help manage ongoing storage practices. They don't address access permission issues."
+      explanation: "Incorrect. Microsoft provides built-in data residency options and contractual commitments. Organizations don't need to manage geographic data distribution themselves to meet residency requirements."

@@ -787,6 +787,11 @@
       "source_path_from_root": "/learn-pr/wwl-sci/create-configure-data-loss-prevention-policies/7-summary-resources.yml",
       "redirect_url": "/training/modules/create-configure-data-loss-prevention-policies/6-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/4-describe-microsoft-priva.yml",
+      "redirect_url": "/training/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
     }
     ]
 }

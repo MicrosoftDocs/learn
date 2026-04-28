@@ -3,48 +3,68 @@ uid: learn.introduction-to-ai-security-testing.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description:  Display your knowledge
+  description: Check your understanding of AI red teaming categories, planning, and best practices.
   ms.author: ceperezb
   author: ceperezb
-  ms.date: 03/06/2026  
+  ms.date: 04/24/2026
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 3
+durationInMinutes: 5
 content: Choose the best response for each question. 
 quiz:
   questions:
-    - content: "Which if the following is a flavor of AI red teaming?"
+    - content: "Which of the following is a category of AI red teaming?"
       choices:
-        - content: "Full stack testing."
+        - content: "Full stack red teaming"
           isCorrect: true
-          explanation: "Full-stack testing is a flavor of AI red teaming. This tests the underlying infrastructure."
-        - content: "Layer 7 testing."
+          explanation: "Full stack red teaming is one of the three categories of AI red teaming. It involves probing for security vulnerabilities across the entire AI technology stack."
+        - content: "Layer 7 testing"
           isCorrect: false
-          explanation: "Layer 7 is the application layer of the OSI model but isn't related to AI red teaming."
-        - content: "Model testing."
+          explanation: "Layer 7 is the application layer of the OSI model but isn't one of the three categories of AI red teaming."
+        - content: "Model testing"
           isCorrect: false
-          explanation: "Model testing isn't one of the three flavors or categories of AI red teaming."
-    - content: "You're testing an AI system. The testing you're doing involves testing multiple different types of prompts and assessing the responses from the AI application. What kind of AI red teaming is this?"
+          explanation: "Model testing isn't one of the three recognized categories of AI red teaming, although adversarial machine learning does target model vulnerabilities."
+    - content: "You're testing an AI system by crafting prompts designed to bypass the system's safety instructions. What category of AI red teaming is this?"
       choices:
-        - content: "Full stack"
+        - content: "Full stack red teaming"
           isCorrect: false
-          explanation: "full stack testing involves probing for security harms across the entire AI system rather than manipulating prompts."
-        - content: "Adversarial ML"
+          explanation: "Full stack red teaming involves probing the entire technology stack (infrastructure, APIs, pipelines), not specifically crafting prompts to bypass safety instructions."
+        - content: "Adversarial machine learning"
           isCorrect: false
-          explanation: "Adversarial ML involves studying ML model attacks to identify weak points and defend against malicious inputs rather than manipulating prompts."
-        - content: "Prompt injection."
+          explanation: "Adversarial machine learning focuses on manipulating the model through techniques like evasion attacks and data poisoning, not specifically through crafted prompts."
+        - content: "Prompt injection"
           isCorrect: true
-          explanation: "Prompt injection attempts to exploit LLMs by injecting carefully crafted prompts."
+          explanation: "Prompt injection is the category that focuses on exploiting LLMs through carefully crafted inputs designed to bypass safety instructions, extract sensitive data, or manipulate outputs."
     - content: "Which of the following should be tested as part of AI red teaming?"
       choices:
-        - content: "Base LLM and application."
+        - content: "Both the base LLM and the application layer"
           isCorrect: true
-          explanation: "AI red teaming involves testing both the base LLM and application."
-        - content: "Client operating system."
+          explanation: "AI red teaming should test both the base LLM (through API endpoints) and the full application (through its UI), as each layer may reveal different vulnerabilities."
+        - content: "Only the base LLM through API endpoints"
           isCorrect: false
-          explanation: "The security of the client operating system is outside the scope of AI red teaming."
-        - content: "DNS server."
+          explanation: "Testing only the base LLM misses application-level vulnerabilities. The application layer adds its own safety mechanisms and attack surfaces that must be tested separately."
+        - content: "Only the application through its user interface"
           isCorrect: false
-          explanation: "The security of DNS is separate from the process of AI red teaming."
-    
-  
+          explanation: "Testing only the application misses model-level vulnerabilities. Testing the base LLM directly helps identify gaps in model safety that the application layer might mask."
+    - content: "Why is it important to include nonsecurity professionals on an AI red team?"
+      choices:
+        - content: "Nonsecurity professionals are less expensive to hire"
+          isCorrect: false
+          explanation: "Cost isn't the reason. The value of nonsecurity professionals lies in their unique perspectives on how regular users interact with AI systems."
+        - content: "Regular users can bring perspectives on harms that security professionals might not consider"
+          isCorrect: true
+          explanation: "AI red teaming tests for harms from both adversarial and benign personas. Regular users can discover unexpected harmful behaviors through normal interaction patterns that security professionals might not think to test."
+        - content: "Security professionals aren't needed for AI red teaming"
+          isCorrect: false
+          explanation: "Security professionals are essential for AI red teaming. The recommendation is to include both security professionals and regular users for diverse perspectives."
+    - content: "Why does AI red teaming require multiple attempts of the same test?"
+      choices:
+        - content: "To verify that the test environment is configured correctly"
+          isCorrect: false
+          explanation: "Multiple attempts aren't about environment verification. They're needed because of the probabilistic nature of generative AI outputs."
+        - content: "Because generative AI systems are probabilistic—the same input can produce different outputs each time"
+          isCorrect: true
+          explanation: "Unlike deterministic systems where the same input always produces the same output, generative AI systems are probabilistic. A test that succeeds once might fail on the next attempt, so multiple iterations are needed to accurately assess risk."
+        - content: "Because AI models change between each test run"
+          isCorrect: false
+          explanation: "While AI models do evolve over time, the need for multiple attempts within a single testing round is due to the probabilistic nature of generative AI, not model changes between runs."

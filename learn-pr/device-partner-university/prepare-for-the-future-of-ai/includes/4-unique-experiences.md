@@ -1,6 +1,6 @@
 Thanks to their powerful Neural Processing Units (NPUs), Copilot+ PCs enable a number of unique AI experiences.
 
-It’s important to note that many ISVs (independent software vendors) are also building applications and tools that take advantage of the NPU—making tasks like video editing, deep fake detection, and threat analysis faster and more efficient than before.
+It’s important to note that many ISVs (independent software vendors) are also building applications and tools that take advantage of the NPU—making tasks like video editing, deepfake detection, and threat analysis faster and more efficient than before.
 
 Let's take a look at some of the exclusive NPU-powered features found in Copilot+ PCs. Check out [Microsoft's official site](https://www.microsoft.com/windows/copilot-plus-pcs) for more information on availability.
 

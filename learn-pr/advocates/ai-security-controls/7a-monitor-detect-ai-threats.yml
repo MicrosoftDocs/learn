@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-security-controls.monitor-detect-ai-threats
+title: Monitor and detect AI-specific threats
+metadata:
+  title: Monitor and detect AI-specific threats
+  description: Learn how to monitor AI systems for security threats including jailbreak attempts, prompt injection, and anomalous agent behavior.
+  ms.date: 04/24/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7a-monitor-detect-ai-threats.md)]
