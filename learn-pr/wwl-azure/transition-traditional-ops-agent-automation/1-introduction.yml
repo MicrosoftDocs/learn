@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-traditional-ops-agent-automation.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the agentic DevOps module and outlines how AI agents can transform traditional ops workflows."
+  ms.date: 04/24/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
