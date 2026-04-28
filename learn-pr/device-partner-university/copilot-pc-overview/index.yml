@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.dpu.copilot-pc-overview
-title: Copilot+ PC overview
+title: Explore on-device AI and NPU capabilities in Copilot+ PCs
 metadata:
-  title: Copilot+ PC Overview
-  description: In this module, we take a holistic look at Copilot+ PCs—exploring their unique combination of hardware and software advancements.
+  title: Explore on-device AI and NPU capabilities in Copilot+ PCs
+  description: Explore how Copilot+ PCs use on-device AI, a dedicated Neural Processing Unit (NPU), and Windows 11 Pro to deliver intelligent, secure AI-powered experiences for modern work.
   ms.date: 08/06/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
@@ -11,12 +11,14 @@ metadata:
   ms.service: windows-11
   ms.custom: CW052024-1
 summary: >
-  Learn how Copilot+ PCs boost performance and productivity with AI features and a powerful Neural Processing Unit (NPU).
+  Learn how Copilot+ PCs combine on-device AI, a dedicated Neural Processing Unit (NPU), and Windows 11 Pro to support efficient AI workloads, improved performance, and secure, responsive experiences in the workplace.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
   - Define key terms such as CPU, GPU, NPU, and TOPS
   - Describe how Copilot+ PCs support productivity, performance, and security
   - Understand the significance of the NPU and its effect on efficiency
+  - Explain how Copilot+ PCs support AI agents and on-device AI workloads
+  - Describe the role of Windows as a managed platform for AI
 prerequisites: |
   - None
 iconUrl: "/training/achievements/copilot-pc-overview.svg"
