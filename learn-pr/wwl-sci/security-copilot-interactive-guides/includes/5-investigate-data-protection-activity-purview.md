@@ -10,7 +10,7 @@ In this interactive guide, which takes approximately 10 minutes to complete, you
 
 ## Investigate a DLP alert
 
-When a DLP alert is triggered — for example, after a file containing sensitive financial data is accessed and modified — you need to quickly understand the context and determine the appropriate response. Security Copilot surfaces alert context and insights to help you focus on what matters during a DLP investigation.
+When a DLP alert is triggered—for example, after a file containing sensitive financial data is accessed and modified—you need to quickly understand the context and determine the appropriate response. Security Copilot surfaces alert context and insights to help you focus on what matters during a DLP investigation.
 
 In this interactive guide, which takes approximately 5 minutes to complete, you use Security Copilot to investigate a DLP alert and review the activity details associated with a flagged file.
 

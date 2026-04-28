@@ -1,8 +1,8 @@
-Security Copilot integrates with Microsoft Defender XDR to help you investigate and respond to security incidents. In this unit, you work through two interactive guides that take you through a complete incident investigation workflow — from understanding incident context to analyzing specific artifacts and performing advanced investigation.
+Security Copilot integrates with Microsoft Defender XDR to help you investigate and respond to security incidents. In this unit, you work through two interactive guides that take you through a complete incident investigation workflow—from understanding incident context to analyzing specific artifacts and performing advanced investigation.
 
 ## Investigate incident context and activity
 
-When a complex incident is identified in Microsoft Defender XDR — involving a compromised asset and dozens of alerts — it can be difficult to determine where the attack started and how it progressed. Security Copilot summarizes incident activity, connects related events, and provides guided responses to help you focus on what matters.
+When a complex incident is identified in Microsoft Defender XDR—involving a compromised asset and dozens of alerts—it can be difficult to determine where the attack started and how it progressed. Security Copilot summarizes incident activity, connects related events, and provides guided responses to help you focus on what matters.
 
 In this interactive guide, which takes approximately 10 minutes to complete, you investigate a security incident in Microsoft Defender XDR. You review incident and alert summaries, analyze related entities, and use Security Copilot insights to guide your investigation.
 

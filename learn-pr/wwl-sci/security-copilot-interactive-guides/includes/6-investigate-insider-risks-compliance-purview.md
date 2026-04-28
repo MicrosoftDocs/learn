@@ -2,7 +2,7 @@ Security Copilot also assists with investigating insider risks and compliance-re
 
 ## Investigate an insider risk alert
 
-Insider Risk Management in Microsoft Purview helps detect and investigate potentially risky user activity within your organization. When an alert is triggered — for example, suspicious activity involving the copying of sensitive data to a USB device — you need to investigate the user's activity and determine whether sensitive data was shared outside the organization.
+Insider Risk Management in Microsoft Purview helps detect and investigate potentially risky user activity within your organization. When an alert is triggered—for example, suspicious activity involving the copying of sensitive data to a USB device—you need to investigate the user's activity and determine whether sensitive data was shared outside the organization.
 
 In this interactive guide, which takes approximately 5 minutes to complete, you investigate an insider risk alert. You use Security Copilot to summarize the user's activity, identify key risk patterns, and assess the potential impact across services.
 
