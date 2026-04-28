@@ -2,8 +2,10 @@
 uid: learn.wwl.model-catalog-evaluate
 metadata:
   title: Select, deploy, and evaluate Microsoft Foundry models
-  description: Explore how to select appropriate models from the model catalog using benchmarks, deploy them to endpoints, and evaluate their performance using manual and automated approaches in Microsoft Foundry portal.
-  ms.date: 03/21/2026
+  description: Explore how to select appropriate models from the model catalog
+    using benchmarks, deploy them to endpoints, and evaluate their performance
+    using manual and automated approaches in Microsoft Foundry portal.
+  ms.date: 04/28/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based
@@ -11,7 +13,9 @@ metadata:
   ms.service: azure-ai-foundry
   ms.custom: ai-learning-hub
 title: Select, deploy, and evaluate Microsoft Foundry models
-summary: Explore how to select appropriate models from the model catalog using benchmarks, deploy them to endpoints, and evaluate their performance using manual and automated approaches in Microsoft Foundry portal.
+summary: Explore how to select appropriate models from the model catalog using
+  benchmarks, deploy them to endpoints, and evaluate their performance using
+  manual and automated approaches in Microsoft Foundry portal.
 abstract: |
   By the end of this module, you'll be able to:
     - Explore and filter models in the model catalog

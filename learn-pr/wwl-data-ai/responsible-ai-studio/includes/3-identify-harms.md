@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a31000d0-971d-4d4a-a1b0-31e8e74da2e8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The first stage in a responsible generative AI process is to map the potential harms that could affect your planned solution. There are four steps in this stage, as shown here:
 
 ![Diagram showing steps to identify, prioritize, test, and share potential harms.](../media/identify-harms.png)
@@ -23,7 +34,7 @@ Review the [information and guidelines](/azure/ai-services/responsible-use-of-ai
 
 ## 2: Prioritize the harms
 
-For each potential harm you have identified, assess the likelihood of its occurrence and the resulting level of impact if it does. Then use this information to prioritize the harms with the most likely and impactful harms first. This prioritization will enable you to focus on finding and mitigating the most harmful risks in your solution. 
+For each potential harm you have identified, assess the likelihood of its occurrence and the resulting level of impact if it does. Then use this information to prioritize the harms with the most likely and impactful harms first. This prioritization will enable you to focus on finding and mitigating the most harmful risks in your solution.
 
 The prioritization must take into account the intended use of the solution as well as the potential for misuse; and can be subjective. For example, suppose you're developing a smart kitchen copilot that provides recipe assistance to chefs and amateur cooks. Potential harms might include:
 
@@ -46,3 +57,5 @@ A common approach to testing for potential harms or vulnerabilities in a softwar
 ## 4: Document and share details of harms
 
 When you have gathered evidence to support the presence of potential harms in the solution, document the details and share them with stakeholders. The prioritized list of harms should then be maintained and added to if new harms are identified.
+
+::: zone-end

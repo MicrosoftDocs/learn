@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e83af6a8-39e2-4168-8e43-524cb84961e6]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The *file_search* tool lets your model retrieve relevant information from your own uploaded documents during a response.
 
 ## What is the file_search tool?
@@ -85,5 +96,7 @@ The general process for using the file_search tool is:
 
 Used well, file_search turns a general-purpose model into a domain-aware assistant that can answer from the documents your team actually uses.
 
-> [!TIP]
+::: zone-end
+
+> [!NOTE]
 > The file_search tool is a great way to ground a model in a specific set of documents or data files. However, for enterprise-scale agents that need to access large quantities of data in multiple data stores, you should consider using the *Foundry IQ* knowledge store solution with a Microsoft Foundry agent. To learn more, see [Build knowledge-enhanced AI agents with Foundry IQ](/training/modules/introduction-foundry-iq?azure-portal=true)

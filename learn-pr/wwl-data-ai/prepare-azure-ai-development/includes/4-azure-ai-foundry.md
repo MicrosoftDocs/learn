@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d8afdf9d-949d-4bb2-b744-9d6014abf4a7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry is a platform for AI development on Microsoft Azure. While you *can* provision individual AI resources and build applications that consume them without it, the project organization, resource management, and AI development capabilities of Microsoft Foundry makes it the recommended way to build all but the most simple solutions.
 
 Microsoft Foundry provides the *Microsoft Foundry portal*, a web-based visual interface for working with AI projects. It also provides the *Microsoft Foundry SDK*, which you can use to build AI solutions programmatically.
@@ -35,6 +46,8 @@ Most AI solution development projects begin in the Foundry project, where you ca
 - Find the endpoints and keys you need to access assets from client applications.
 
 To automate Foundry project operations, you can also use the [Microsoft Foundry SDK](/azure/foundry/how-to/develop/sdk-overview?azure-portal=true) - enabling you to create and manage assets using scripts or automated CI/CD actions in DevOps pipelines.
+
+::: zone-end
 
 > [!NOTE]
 > This module focuses on the latest Microsoft Foundry project architecture. Older (*classic*) Foundry projects may use a hub-based architecture. Additionally, the Microsoft Foundry portal is transitioning to the "new" interface shown in this module. Some tasks may not yet be supported in the new portal. For more information about Foundry *classic* projects, see [What is Microsoft Foundry? (classic)](/azure/foundry-classic/what-is-foundry?azure-portal=true)
