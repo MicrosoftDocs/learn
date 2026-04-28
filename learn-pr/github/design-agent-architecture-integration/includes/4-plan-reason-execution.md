@@ -129,7 +129,7 @@ The choice is not whether work is reviewed-it always is. The choice is when the 
 1) Capability boundary (planning agents are read-only) A planning agent should be limited to read-only tools so it cannot modify files during planning.
 2) Explicit transition (or handoff) to an implementation agent. Execution should occur only after plan approval, using a deliberate handoff.
 3) Tool gating in orchestrators in automated orchestrations, you can force planning to run without tool execution and then enable tools only after the plan is accepted.
-4) “Plan mode” workflows - Some interfaces support a planning-first experience that generates a plan artifact and pauses before any changes are applied.
+4) "Plan mode" workflows - Some interfaces support a planning-first experience that generates a plan artifact and pauses before any changes are applied.
 
 ### **Decision guidance**
 
@@ -137,7 +137,7 @@ The choice is not whether work is reviewed-it always is. The choice is when the 
 
 - Use plan + execution for medium/low risk work, but keep checks/reviews required.
 
-- Treat “instructions not to edit” as guidance; treat tool allowlists and gates as enforcement.
+- Treat "instructions not to edit" as guidance; treat tool allowlists and gates as enforcement.
 
 **Key takeaway:** Separation creates an opportunity to review intent before accepting impact.
 

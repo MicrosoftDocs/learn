@@ -2,15 +2,15 @@
 
 Agentic systems are changing how software is built and maintained. Instead of relying only on developers to write and update code, teams are adopting systems that can interpret goals, propose solutions, and take action within repositories. In GitHub, an agent might create a branch, modify files, open a pull request, and then iterate based on feedback from tests, security scans, and code reviews.
 
-However, capability alone does not make an agent reliable. Without a well-defined architecture, agents may act too early, produce unclear changes, or operate without sufficient validation. In production environments, these failures create real risks to code quality, security, and operational stability.
+However, capability alone doesn't make an agent reliable. Without a well-defined architecture, agents may act too early, produce unclear changes, or operate without sufficient validation. In production environments, these failures create real risks to code quality, security, and operational stability.
 
-Designing an agent system in GitHub is not about giving the agent more freedom. It is about defining how work flows through the system using enforceable GitHub functions such as pull requests, workflows, and repository rules. A well-designed architecture ensures that every agent action leaves a visible record, is validated by objective signals, and is accepted only when it meets policy requirements.
+Designing an agent system in GitHub isn't about giving the agent more freedom. It's about defining how work flows through the system using enforceable GitHub functions such as pull requests, workflows, and repository rules. A well-designed architecture ensures that every agent action leaves a visible record, is validated by objective signals, and is accepted only when it meets policy requirements.
 
 ## Glossary
 
 **Key terms and definitions**
 
-This module uses a small set of recurring terms. The definitions below clarify how they are used throughout the content.
+This module uses a small set of recurring terms. The definitions below clarify how they're used throughout the content.
 
 - **Plan (artifact)**
     A structured description of intended changes, typically included in a pull request description. It outlines the goal, scope, steps, risks, and validation criteria for the work. 

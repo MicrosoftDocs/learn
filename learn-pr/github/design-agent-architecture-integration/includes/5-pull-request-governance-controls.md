@@ -1,4 +1,4 @@
-In this unit, you will learn:
+In this unit, you'll learn:
 
 - How pull requests act as architectural control points for agent execution 
 
@@ -68,7 +68,7 @@ A pull request template ensures that every agent PR provides consistent plan and
 
 ## Enforcing plan validation with required checks status checks
 
-In addition to templates, you can enforce plan gating as a required status check. This turns a process expectation (“include a plan”) into a system guarantee.
+In addition to templates, you can enforce plan gating as a required status check. This turns a process expectation ("include a plan") into a system guarantee.
 
 ```yml
 # File: .github/workflows/plan-gate.yml
@@ -94,7 +94,7 @@ jobs:
 ```
 **Implementation note:**
 
-A repository administrator can mark Plan Gate as a required status check using rulesets/branch protection, ensuring PRs cannot merge unless the plan exists.
+A repository administrator can mark Plan Gate as a required status check using rulesets/branch protection, ensuring PRs can't merge unless the plan exists.
 
 GitHub can require explicit approval before workflows run on agent-generated changes.
 
@@ -111,12 +111,12 @@ CODEOWNERS ensures that changes to sensitive areas go to the right reviewers aut
 * @core-team
 ```
 
-This ensures that a plan and change set affecting high-risk paths cannot be merged without visibility from the right experts (when combined with required review policies).
+This ensures that a plan and changeset affecting high-risk paths can't be merged without visibility from the right experts (when combined with required review policies).
 
 ## Be wary of execution without validation
 
 If an agent can bypass required checks or merge without reviews, the architecture loses its primary safety mechanisms. This is less a model problem and more a workflow design failure.
 
-**Key takeaway:** Pull requests are not just collaboration tools-they are enforcement mechanisms.
+**Key takeaway:** Pull requests aren't just collaboration tools-they are enforcement mechanisms.
 
-Next, you will define how much autonomy the agent should have based on the risk of the task.
+Next, you'll define how much autonomy the agent should have based on the risk of the task.

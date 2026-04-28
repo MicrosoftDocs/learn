@@ -1,4 +1,4 @@
-In this unit, you will learn:
+In this unit, you'll learn:
 
 - How to pass data through workflows using step and job outputs 
 
@@ -18,10 +18,10 @@ A simple risk-based autonomy model might look like this:
 
 | **Task type** | **Example paths**                    | **Risk level** | **Autonomy  design**                                         |
 | ------------- | ------------------------------------ | -------------- | ------------------------------------------------------------ |
-| Low           | docs/, formatting                    | Low            | merge can be automated using GitHub auto-merge after required checks (and reviews, if configured) pass |
-| Medium        | src/, dependency bumps               | Medium         | PR required + checks + at least 1 review                     |
+| Low           | docs/, formatting                    | Low            | merge can be automated using GitHub automerge after required checks (and reviews, if configured) pass |
+| Medium        | src/, dependency bumps               | Medium         | PR required + checks + at least one review                     |
 | High          | infra/, .github/workflows/           | High           | CODEOWNERS + multiple reviews + stricter rulesets            |
-| Critical      | production deploy  settings, secrets | Critical       | environment approvals; agent prepares but cannot execute     |
+| Critical      | production deploys settings, secrets | Critical       | environment approvals; agent prepares but can't execute      |
 
 ## Implementation: environment approvals for high-risk execution
 
@@ -41,7 +41,7 @@ This design allows the agent to prepare changes while preventing it from executi
 
 ## **Outputs are workflow contracts (step outputs vs job outputs vs env)**
 
-When a workflow generates information that downstream steps or jobs must consume, treat that data as an explicit output rather than “just logs.”
+When a workflow generates information that downstream steps or jobs must consume, treat that data as an explicit output rather than "just logs."
 
 Teach and apply these principles:
 
@@ -49,7 +49,7 @@ Teach and apply these principles:
 
 - Job outputs pass values across jobs (through job dependencies).
 
-- Environment variables configure runtime behavior but should not replace outputs for structured data flow.
+- Environment variables configure runtime behavior but shouldn't replace outputs for structured data flow.
 
 Illustrative pattern (mechanics shown, but not exam-shaped):
 
@@ -79,11 +79,11 @@ jobs:
       - run: echo "Using plan: ${{ needs.plan.outputs.plan }}"
 ```
 
-## Contexts: github vs vars vs env
+## Contexts: GitHub vs vars vs env
 
 Use the right context for the right purpose:
 
-- github.* → event metadata and runtime decisions (“what triggered this run?”)
+- github.* → event metadata and runtime decisions ("what triggered this run?")
 
 - vars.* → centrally managed configuration values designed to be reused
 
@@ -91,7 +91,7 @@ Use the right context for the right purpose:
 
 ## Safe triggering and defensive gating
 
-Even when workflows are designed for PRs, repositories often have multiple triggers. Add defensive gating so “PR-only” behavior does not accidentally run without a PR context.
+Even when workflows are designed for PRs, repositories often have multiple triggers. Add defensive gating so "PR-only" behavior doesn't accidentally run without a PR context.
 
 General pattern to teach:
 
@@ -101,7 +101,7 @@ General pattern to teach:
 
 Even if a workflow is intended to run only for pull requests, it may still be triggered by other events (for example, push, workflow_dispatch, or schedule). Without additional safeguards, PR-specific steps-such as commenting on a pull request or evaluating changes-can fail or behave unexpectedly.
 
-You can prevent this by adding a **job-level condition** that ensures the workflow only runs when it is associated with a pull request.
+You can prevent this by adding a **job-level condition** that ensures the workflow only runs when it's associated with a pull request.
 
 ```yml
 name: PR Validation

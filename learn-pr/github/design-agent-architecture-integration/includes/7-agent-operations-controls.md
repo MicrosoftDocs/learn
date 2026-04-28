@@ -42,7 +42,7 @@ A well-designed agent task should produce visible, reviewable evidence using Git
 
 Uploading artifacts makes evidence durable and reviewable, even when logs scroll away.
 
-We recommend the best practice of including links to workflow runs and relevant artifacts in the PR under an “Evidence” section so reviewers can quickly validate outcomes.
+We recommend the best practice of including links to workflow runs and relevant artifacts in the PR under an "Evidence" section so reviewers can quickly validate outcomes.
 
 ```yml
 - name: Upload test results
@@ -102,7 +102,7 @@ Teach a naming/metadata principle:
 
 - Evidence should be traceable to a specific workflow run and a specific commit.
 
-This helps audits and debugging: you can answer “which run produced this artifact, and against what code state?”
+This helps audits and debugging: you can answer "which run produced this artifact, and against what code state?"
 
 ### Share evidence across jobs using artifacts
 
@@ -153,7 +153,7 @@ Instead:
 
 Teach the principle:
 
-- “The agent's runtime environment has its own secret boundary; don't assume it automatically inherits repository CI secrets.”
+- "The agent's runtime environment has its own secret boundary; don't assume it automatically inherits repository CI secrets."
 
 ## How hooks enforce guardrails and audit logging
 
@@ -214,7 +214,7 @@ As we spoke about earlier, agents will eventually fail, but we can build systems
 
 ### Rollback-safe pattern to teach:
 
-- Operate on explicit references (commit/tag) when deploying sensitive configuration, rather than “latest on a branch.”
+- Operate on explicit references (commit/tag) when deploying sensitive configuration, rather than "latest on a branch."
 
 ### Least privilege reminder:
 

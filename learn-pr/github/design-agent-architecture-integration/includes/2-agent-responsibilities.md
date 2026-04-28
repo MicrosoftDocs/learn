@@ -12,7 +12,7 @@ A more reliable approach is to map the agent to specific lifecycle stages where 
 
 ## Mapping SDLC stages to GitHub artifacts
 
-The SDLC can be simplified into planning, implementation, validation, and deployment. Each stage maps to a different GitHub “surface” where work and evidence can be recorded.
+The SDLC can be simplified into planning, implementation, validation, and deployment. Each stage maps to a different GitHub "surface" where work and evidence can be recorded.
 
 | **SDLC stage** | **Typical agent  responsibility in GitHub**                 | **Primary  artifact**                                         |
 | -------------- | ----------------------------------------------------------- | ------------------------------------------------------------- |

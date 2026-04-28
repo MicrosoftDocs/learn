@@ -1,4 +1,4 @@
-In this unit, you will learn:
+In this unit, you'll learn:
 
 - How to define structured agent tasks using inputs, outputs, and success criteria
 
@@ -32,9 +32,9 @@ When tasks are under-specified, agents can produce changes that look plausible b
 
   - a structured plan (in PR description or Github/pull_request_template.md)
 
-  - a bounded change set (commits on an agent branch)
+  - a bounded changeset (commits on an agent branch)
 
-  - And evidence links to workflow runs
+  - And evidence links to workflow run
 
 **Success criteria** 
 
@@ -78,7 +78,7 @@ jobs:
         uses: github/codeql-action/analyze@v3
 ```
 
-When this workflow is configured as a required check (via rulesets or branch protection), a pull request cannot be merged until the check passes. This ensures that success is enforced by the system-not assumed by the agent.
+When this workflow is configured as a required check (via rulesets or branch protection), a pull request can't be merged until the check passes. This ensures that success is enforced by the system-not assumed by the agent.
 
 If success criteria are vague or missing, an agent may "complete the task" in a way that looks correct but fails the underlying goal. For example, the agent might update a dependency but leave the vulnerable version reachable through a transitive dependency or make broad changes that are difficult to validate.
 
