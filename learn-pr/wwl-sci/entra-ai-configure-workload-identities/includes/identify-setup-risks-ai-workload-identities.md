@@ -1,6 +1,6 @@
-If you've managed service principals or app registrations, you've seen these problems before: a secret that nobody remembers creating, a Contributor role assigned at a scope nobody can justify, an identity with no listed owner. These problems are common across all workload identities, not just AI workloads.
+If you've managed service principals or app registrations, you've seen these problems before. A secret that nobody remembers creating. A Contributor role assigned at a scope nobody can justify. An identity with no listed owner. These problems are common across all workload identities.
 
-What changes with AI workloads is how hard these mistakes are to fix and how much damage they cause while they persist. AI workloads operate continuously, authenticate without interactive sign-in controls, and act at machine speed. A misconfigured user identity is limited by the human's working hours and session timeouts. A misconfigured AI workload identity runs 24 hours a day with whatever access it was granted.
+What changes with AI workloads is how many services a single identity touches. A workload that runs inference might authenticate to an Azure OpenAI endpoint, retrieve connection strings from Key Vault, pull grounding data from a storage account, and query user profiles from Microsoft Graph. That's four service boundaries behind one identity. If the credential is compromised or the permissions are too broad, the exposure spans every service in that chain, and the workload processes requests continuously without a human reviewing each call.
 
 ## Why set up decisions persist after production
 
@@ -18,6 +18,13 @@ A workload with a stored secret, broad permissions, no owner, and no validation 
 
 These configuration gaps surface only during incident response or an access review. At that point, someone needs a clear record of what was granted, why, and whether it's still justified. But the setup decisions have been in production for months, the person who made them might have moved on, and the documentation that would explain the reasoning was never created.
 
-## How set up decisions compound each other
+## The four decisions and how they compound
 
-A weak credential is worse when permissions are broad. Broad permissions are worse when no one owns the identity. Missing ownership is worse when there's no validation to catch the gaps. The risk isn't any single decision. It's the combination, and the combination is what this module addresses one decision at a time.
+Every workload identity requires four setup decisions:
+
+- **Credential type.** Secrets, certificates, managed identities, or federated credentials. The hosting environment constrains the options, but the choice sets the operational burden for the life of the workload.
+- **Permission scope.** Azure RBAC roles, Microsoft Graph application permissions, and app roles each have different scoping models. Broad defaults are easy to grant and difficult to narrow later.
+- **Role selection at each dependent service.** Key Vault, Azure AI services, storage accounts, and downstream APIs each have their own role definitions. Over-permissioned identities usually originate here, where someone picks a familiar role instead of the narrowest one that works.
+- **Pre-production validation.** Testing sign-in from the actual hosting environment, confirming permissions match the documented intent, and establishing a rotation plan. Without this step, gaps from the first three decisions persist undetected.
+
+These decisions compound each other. A weak credential is worse when permissions are broad, and broad permissions are harder to fix when nobody validated them before production. That interaction is why each decision deserves deliberate attention.

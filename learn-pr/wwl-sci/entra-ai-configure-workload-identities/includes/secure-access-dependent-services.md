@@ -1,4 +1,4 @@
-The permission framework is set: identify the workload's task, pick the narrowest role, scope it to the specific resource. Now the question is which specific role to pick when you're looking at Key Vault, Azure AI services, storage, or a downstream API. Azure services use similar role names, and the difference between the right role and an over-privileged one is often a single word: User vs. Officer, Reader vs. Contributor, User vs. Administrator.
+Least-privilege role assignment follows a consistent pattern. Identify the workload's task, pick the narrowest role, and scope it to the specific resource. Now the question is which specific role to pick when you're looking at Key Vault, Azure AI services, storage, or a downstream API. Azure services use similar role names, and the difference between the right role and an over-privileged one is often a single word: User vs. Officer, Reader vs. Contributor, User vs. Administrator.
 
 ## Scope Key Vault roles to the operation
 
@@ -47,8 +47,8 @@ When the workload accesses a specific container or queue, scope the role assignm
 
 ## Evaluate role definitions for downstream APIs
 
-Downstream APIs and partner applications use app roles instead of Azure RBAC. Assigning app roles follows the same pattern as any permission plane: identify the workload's operations and assign only the roles that cover them. The harder part is that you didn't define these roles, so you need to evaluate what they actually grant before assigning them.
+Downstream APIs and partner applications use app roles instead of Azure RBAC. Assigning app roles follows the same pattern as any permission plane: identify the workload's operations and assign only the roles that cover them. Because you didn't define these roles, you need to evaluate what they actually grant before assigning them.
 
 Review the app roles defined on the target application and check whether the role names describe the scope of access clearly. A role named "DataReader" that also grants write access to a subset of endpoints is over-privileged even if the name suggests otherwise. If the available roles are broader than the workload's task requires, ask the API owner whether narrower roles exist or can be created. Accepting what's available without evaluating it carries the same risk as assigning Contributor when Reader would suffice.
 
-Every role decision in this unit follows the same pattern: identify the workload's operation, find the narrowest role that covers it, and scope the assignment to the specific resource. When the names look similar, the distinction matters. The right choice limits a compromised identity to reading what it needs. The over-privileged one lets it manage everything in the resource group.
+Every role decision follows the same pattern: identify the workload's operation, find the narrowest role that covers it, and scope the assignment to the specific resource. When the names look similar, the distinction matters. The difference determines whether a compromised identity can only read what it needs or manage everything in the resource group.

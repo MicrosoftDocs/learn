@@ -4,10 +4,10 @@ title: Validate and maintain workload identity configuration
 metadata:
   title: Validate and Maintain Workload Identity Configuration
   description: "Test sign-in behavior, review permissions, audit role assignments, and rotate credentials before the workload goes into production."
-  ms.date: 04/14/2026
+  ms.date: 04/27/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/validate-maintain-workload-identity-configuration.md)]

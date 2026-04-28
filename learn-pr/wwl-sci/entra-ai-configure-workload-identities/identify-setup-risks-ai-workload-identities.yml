@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.entra-ai-configure-workload-identities.identify-setup-risks-ai-workload-identities
-title: Why setup decisions create lasting security risk
+title: What makes identity setup decisions hard to fix
 metadata:
-  title: Why Setup Decisions Create Lasting Security Risk
-  description: "Understand why credential, permission, ownership, and validation decisions made during AI workload identity setup persist as long-term security exposure."
-  ms.date: 04/14/2026
+  title: What Makes Identity Setup Decisions Hard to Fix
+  description: "Understand why credential, permission, ownership, and validation decisions made during workload identity setup are hard to change once the workload reaches production."
+  ms.date: 04/27/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: unit

@@ -7,74 +7,38 @@ Use the workload's hosting model to determine how it should authenticate.
 | Workload scenario | Preferred credential type | Why it fits |
 | --- | --- | --- |
 | Azure-hosted AI workload on a resource that supports managed identity | Managed identity | Azure manages the credential lifecycle. No secrets to store or rotate. |
-| Workload outside Azure, or workload using an app registration with a trust relationship to another identity provider | Federated identity credential | The application trusts an external token instead of storing a secret. |
-| Scenario where federation is unavailable but strong production credentials are required | Certificate credential | Certificates are a stronger production fallback than client secrets. |
+| Workload outside Azure, with a hosting environment that issues identity tokens | Federated identity credential | The application trusts an external token instead of storing a secret. |
+| Hosting environment can't issue tokens, but the workload needs production credentials | Certificate credential | Certificates require possession of the private key, making them stronger than client secrets. |
 | Local development or temporary testing only | Client secret | Simplest to configure for short-lived scenarios. Not recommended for production. |
 
-The hosting environment determines the options. A workload running on Azure App Service or Azure Functions can use a managed identity directly. A workload running on a Kubernetes cluster outside Azure can use workload identity federation. A workload that can't use either option falls back to certificate credentials for production.
-
-## Enable a managed identity for Azure-hosted AI workloads
-
-Most Azure compute resources support managed identities: App Service, Functions, Container Apps, virtual machines, and AKS all qualify. If your workload deploys to any of these, managed identity is available and eliminates secrets from the design entirely.
-
-Enable a system-assigned or user-assigned managed identity on the hosting resource. The workload can then authenticate to services like Azure AI, Key Vault, and Microsoft Graph using a single identity without storing a secret.
+The hosting environment determines the options. An inference API on App Service, a processing pipeline on Azure Functions, or a workload on Container Apps can use a managed identity directly. A model serving workload on a Kubernetes cluster outside Azure can use workload identity federation if the cluster has an OIDC issuer. A workload that can't use either option falls back to certificate credentials for production.
 
 :::image type="content" source="../media/managed-identity-authentication-flow.png" alt-text="Diagram of managed identity flow from Azure workload through Microsoft Entra ID to Key Vault, Azure AI, and Storage." border="false":::
 
-1. Confirm the Azure resource hosting the AI workload supports managed identities.
-1. Enable a system-assigned managed identity on the resource, or create and assign a user-assigned managed identity.
-1. Test token acquisition from the workload's hosting environment to confirm the managed identity can authenticate.
+## Why the credential type matters more than getting authentication working
 
-System-assigned managed identities are tied to the lifecycle of the Azure resource. When the resource is deleted, the identity is removed. User-assigned managed identities have an independent lifecycle and can be shared across related workloads when the sharing pattern is deliberate and documented.
+Each credential type carries a different operational cost:
 
-## Configure workload identity federation for external workloads
+- **Managed identity**: No rotation, no storage, no cleanup.
+- **Federated credential**: Maintain the trust relationship with the external identity provider.
+- **Certificate**: Secure the private key and rotate before expiration.
+- **Client secret**: Rotation, secure storage, and cleanup, plus the risk of exposure in code, logs, or configuration files.
 
-If the workload runs outside Azure and the hosting environment can issue identity tokens, federation is likely available. GitHub Actions runners, Kubernetes clusters with OIDC issuers, and other cloud platforms with supported identity providers all qualify. The key indicator is whether the environment can present a token that Microsoft Entra can validate.
+The common shortcut is to use whichever credential gets the workload authenticating fastest. That's usually a client secret. But if the hosting environment supports managed identity, every day the workload runs with a secret is a day you're maintaining a credential that doesn't need to exist. Start from what the hosting environment makes possible, then pick the option with the lowest operational burden for the life of the workload.
 
-Workload identity federation avoids storing secrets by trusting tokens from the external identity provider instead of managing a credential directly.
+## System-assigned vs. user-assigned managed identities
 
-1. Create or select the app registration that represents the workload.
-1. Add a federated identity credential on the app registration. Configure the issuer, subject, and audience to match the external identity provider's token claims.
-1. Test token exchange from the workload's actual hosting environment.
+If managed identity is the right credential type, the next decision is whether to use system-assigned or user-assigned. System-assigned identities are tied to the lifecycle of the Azure resource, so when the resource is deleted, the identity is removed. User-assigned identities have an independent lifecycle and can be shared across related workloads.
 
-> [!IMPORTANT]
-> Workload identity federation depends on case-sensitive exact matching of issuer, subject, and audience claims. If any value doesn't match the incoming token, token exchange fails.
+For most single-workload scenarios, system-assigned is simpler. User-assigned identities make sense when multiple related workloads need the same identity, or when the identity needs to survive resource redeployment. Make the choice deliberately and document it.
 
-The application trusts the external token and exchanges it for a Microsoft Entra token without storing a secret.
+## Key considerations for federation and certificates
 
-## Use certificate credentials when federation is unavailable
+When configuring workload identity federation, the issuer, subject, and audience claims must match the external token exactly. The matching is case-sensitive. If any value is wrong, token exchange fails silently from the workload's perspective.
 
-If the workload needs an app registration but the hosting environment doesn't issue tokens from a supported identity provider, federation isn't an option. This is the scenario when the workload runs on infrastructure you control but that infrastructure has no OIDC issuer or federated trust path. Certificate credentials are the strongest remaining alternative.
+For certificate credentials, store the private key in Azure Key Vault or a hardware security module. Plan rotation before the certificate expires, and test the rotation process before you need it.
 
-1. Create or select the app registration that represents the workload.
-1. Generate or obtain a certificate. Upload the certificate's public key to the app registration.
-1. Configure the workload to use the certificate's private key for authentication.
-1. Test token acquisition to confirm the certificate-based authentication works.
-
-Certificates are a stronger production credential than client secrets because they require possession of the private key. Store the private key securely, such as in Azure Key Vault or a hardware security module, and plan for certificate rotation before expiration.
-
-## Limit client secrets to constrained development scenarios
-
-If managed identity, federation, and certificate credentials are all unavailable, a client secret is the remaining option. This usually means the scenario is local development, a short-lived proof of concept, or a temporary test environment where the other credential types aren't available yet.
-
-Client secrets are the simplest credential to configure but the hardest to keep secure in production. A workload running with a secret stored in application code creates a credential that must be tracked, rotated, and protected for as long as the workload exists. Use client secrets only when:
-
-- The scenario is short-lived development or testing.
-- Managed identity, federation, and certificate credentials are all unavailable.
-- The secret has a short expiration and a documented rotation plan.
-
-For any production workload, replace client secrets with a stronger credential type before the workload goes live.
-
-## Understand the relationship between the app registration and the service principal
-
-Credential and permission configuration errors often come from confusing these two objects. When you create an app registration, Microsoft Entra also creates a service principal in the home tenant. They serve different purposes:
-
-- The **app registration** holds the application's configuration, including credentials, redirect URIs, and API permissions that require consent.
-- The **service principal** is the identity that authenticates and receives role assignments in the tenant.
-
-Credential configuration happens on the app registration. Role assignments and permission grants happen on the service principal. Confusing these objects leads to credentials configured in the wrong place or permissions that don't take effect.
-
-## Confirm the credential model before moving on
+## Confirm the credential model before configuring permissions
 
 Before treating authentication as complete, confirm:
 
@@ -83,4 +47,4 @@ Before treating authentication as complete, confirm:
 - No unnecessary secret remains in the design.
 - You can identify which object holds the credential (the managed identity, the app registration, or both).
 
-A successful sign-in from the actual hosting environment confirms the credential model works as intended. If authentication fails at this point, no amount of permission configuration fixes it. Once the identity can authenticate, the next decision is what it should be allowed to access.
+A successful sign-in from the actual hosting environment confirms the credential model works as intended. If authentication fails at this point, permission configuration won't fix it, so resolve credential issues first. Once the identity can authenticate, the next decision is what it should be allowed to access.

@@ -4,68 +4,68 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 04/14/2026
+  ms.date: 04/27/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: unit
   module_assessment: true
   ai_generated_module_assessment: false
-durationInMinutes: 5
+durationInMinutes: 8
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An AI workload runs on Azure App Service and uses a client secret to authenticate. The workload is stable and the secret won't expire for six months. What should the administrator do?"
+  - content: "An AI workload only sends prompts to Azure OpenAI and reads completions. The administrator assigned Cognitive Services OpenAI Contributor to get authentication working quickly. Inference succeeds. What should the administrator do?"
     choices:
-    - content: "Keep the client secret since it's working and not yet expired"
+    - content: "Incorrect: Keep Cognitive Services OpenAI Contributor since the workload authenticates and returns completions successfully"
       isCorrect: false
-      explanation: "A working credential isn't the same as the right credential. App Service supports managed identity, which eliminates the secret entirely."
-    - content: "Replace the client secret with a managed identity on the App Service resource"
+      explanation: "A working credential doesn't mean the role is right-sized. Cognitive Services OpenAI Contributor grants model deployment, fine-tuning, and dataset upload capabilities that an inference-only workload doesn't need."
+    - content: "Correct: Replace with Cognitive Services OpenAI User, which covers inference without granting model deployment or fine-tuning capabilities"
       isCorrect: true
-      explanation: "The hosting environment supports managed identity, so the secret is unnecessary. Replacing it removes a credential that must be tracked, rotated, and protected."
-    - content: "Add a certificate credential alongside the secret for redundancy"
+      explanation: "Cognitive Services OpenAI User allows the workload to make inference API calls with Microsoft Entra ID. It doesn't grant the ability to create or edit model deployments, upload fine-tuning datasets, or manage stored completions."
+    - content: "Incorrect: Replace with Cognitive Services User to limit access to data-plane operations across all Cognitive Services"
       isCorrect: false
-      explanation: "Adding a second credential increases the management surface without addressing the core issue. Managed identity eliminates both."
+      explanation: "Cognitive Services User grants data-plane actions across all Cognitive Services types, not just Azure OpenAI. Cognitive Services OpenAI User is scoped specifically to Azure OpenAI operations."
   - content: "A workload running on a Kubernetes cluster outside Azure needs app-only access to Microsoft Graph. The cluster has an OIDC issuer configured. What credential approach should the administrator use?"
     choices:
-    - content: "Create a client secret on the app registration and store it in a Kubernetes secret"
+    - content: "Incorrect: Create a client secret on the app registration and store it in a Kubernetes secret"
       isCorrect: false
       explanation: "The cluster supports OIDC tokens, so federation is available. Storing a client secret introduces a credential that could be eliminated."
-    - content: "Configure workload identity federation using the cluster's OIDC issuer"
+    - content: "Correct: Configure workload identity federation using the cluster's OIDC issuer"
       isCorrect: true
       explanation: "The cluster's OIDC issuer enables federation, which eliminates stored secrets by exchanging the external token for a Microsoft Entra token."
-    - content: "Enable a managed identity on the Kubernetes cluster"
+    - content: "Incorrect: Enable a managed identity on the Kubernetes cluster"
       isCorrect: false
       explanation: "Managed identities are for Azure-hosted resources. A cluster outside Azure can't use an Azure-managed identity directly."
-  - content: "An AI workload needs to read secrets from Azure Key Vault at runtime. Which role assignment follows least-privilege principles?"
+  - content: "An AI workload authenticates to Azure OpenAI for inference, reads secrets from Key Vault, and writes output to a single storage container. The administrator assigns all three roles at the resource group level for simplicity. What's wrong with this approach?"
     choices:
-    - content: "Key Vault Administrator assigned at the resource group level"
-      isCorrect: false
-      explanation: "Key Vault Administrator grants full management over keys, certificates, and vault settings, which is far broader than read access to secrets."
-    - content: "Key Vault Secrets User assigned at the individual vault level"
+    - content: "Correct: Resource group scope grants access to every matching resource in the group, not just the three the workload needs"
       isCorrect: true
-      explanation: "Key Vault Secrets User provides read-only access to secrets, and scoping to the individual vault limits access to the specific resource the workload needs."
-    - content: "Key Vault Secrets Officer assigned at the subscription level"
+      explanation: "If the resource group contains additional Key Vaults, AI services, or storage accounts, the workload identity can access those too. Assigning roles at the individual resource or container level limits access to exactly what the workload requires."
+    - content: "Incorrect: Azure RBAC doesn't support resource group-level role assignments for Key Vault"
       isCorrect: false
-      explanation: "Secrets Officer adds write and delete capabilities the workload doesn't need, and subscription-level scope expands access beyond the relevant vault."
-  - content: "After configuring an AI workload identity, an administrator confirms the workload can sign in and access its target resources. What additional validation step is needed before the workload goes into production?"
+      explanation: "Azure RBAC supports Key Vault role assignments at any scope, including resource group. The issue isn't whether the assignment works but whether the scope matches the workload's actual access needs."
+    - content: "Incorrect: The workload should use a separate identity for each service to isolate access"
+      isCorrect: false
+      explanation: "A single identity can hold role assignments across multiple services. The issue is the scope of each assignment, not how many identities the workload uses."
+  - content: "Before production, an administrator reviews an AI workload that generates chat completions and reads output logs from a storage container. The identity holds Cognitive Services OpenAI Contributor and Storage Blob Data Owner. Both operations succeed. What should the administrator do?"
     choices:
-    - content: "Review the enterprise application's permissions and Azure role assignments to confirm they match the documented workload requirements"
+    - content: "Correct: Downgrade to Cognitive Services OpenAI User and Storage Blob Data Reader scoped to the specific resources the workload uses"
       isCorrect: true
-      explanation: "A successful sign-in doesn't prove the permission scope is correct. Reviewing permissions confirms the identity holds only the access its task requires."
-    - content: "Grant the identity Contributor access at the subscription level to ensure it has sufficient permissions for future needs"
+      explanation: "The workload only needs inference access and blob read access. Removing model deployment capabilities from the AI role and write and access control capabilities from the storage role limits the damage a compromised identity can cause."
+    - content: "Incorrect: Keep the current roles to avoid breaking the workload close to launch"
       isCorrect: false
-      explanation: "Granting broad permissions to prevent future access issues violates least-privilege principles and increases blast radius."
-    - content: "Remove all conditional access policies targeting the identity so authentication is not blocked"
+      explanation: "Pre-production is the right time to narrow permissions. Over-privileged roles that function correctly still increase blast radius if the identity is compromised."
+    - content: "Incorrect: Remove Storage Blob Data Owner but keep Cognitive Services OpenAI Contributor since AI operations need broader access"
       isCorrect: false
-      explanation: "Conditional access policies provide security controls that should remain in place. Removing them to avoid sign-in issues weakens access protection."
+      explanation: "Both roles are broader than the workload needs. Cognitive Services OpenAI Contributor grants model deployment and fine-tuning capabilities that an inference-only workload doesn't require."
   - content: "An administrator rotates a certificate credential but the workload fails to authenticate with the new certificate. The old certificate is still on the app registration. What should the administrator do next?"
     choices:
-    - content: "Remove the old certificate to force the workload to use the new one"
+    - content: "Incorrect: Remove the old certificate to force the workload to use the new one"
       isCorrect: false
       explanation: "Removing the working credential while the new one fails would cause a complete authentication outage."
-    - content: "Revert the workload to the old certificate and troubleshoot why the new certificate fails"
+    - content: "Correct: Revert the workload to the old certificate and troubleshoot why the new certificate fails"
       isCorrect: true
       explanation: "The old certificate is still valid. Reverting restores authentication while the administrator investigates the failure without downtime."
-    - content: "Create a client secret as a temporary fallback until the certificate issue is resolved"
+    - content: "Incorrect: Create a client secret as a temporary fallback until the certificate issue is resolved"
       isCorrect: false
       explanation: "Introducing a weaker credential type creates a new risk. The old certificate is still valid and available as the immediate fallback."

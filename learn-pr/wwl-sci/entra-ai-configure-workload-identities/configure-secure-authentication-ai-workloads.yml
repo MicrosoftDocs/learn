@@ -4,10 +4,10 @@ title: Configure secure authentication for AI workloads
 metadata:
   title: Configure Secure Authentication for AI Workloads
   description: "Select and configure the correct credential type for an AI workload identity based on where the workload runs."
-  ms.date: 04/14/2026
+  ms.date: 04/27/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/configure-secure-authentication-ai-workloads.md)]

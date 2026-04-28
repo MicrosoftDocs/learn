@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.entra-ai-configure-workload-identities
 metadata:
-  title: Configure Identities and Permissions for AI Workloads
-  description: "Configure secure authentication and least-privilege permissions for AI workload identities in Microsoft Entra."
-  ms.date: 04/14/2026
+  title: Configure Workload Identities and Permissions for AI Environments
+  description: "Configure secure authentication and least-privilege permissions for workload identities in AI environments using Microsoft Entra. Focused on app registrations, managed identities, and service principals."
+  ms.date: 04/27/2026
   author: riswinto
   ms.author: riswinto
   ms.topic: module
   ms.service: entra-id
   ai-usage: ai-assisted
-title: Configure identities and permissions for AI workloads
-summary: Configure AI workload identities with secure credential models, assign least-privilege permissions across Azure RBAC and Microsoft Graph, secure access to common AI workload dependencies, and validate the configuration before the workload goes into production.
+title: Configure workload identities and permissions for AI environments
+summary: Configure workload identities with secure credential models, assign least-privilege permissions across Azure RBAC and Microsoft Graph, secure access to common AI workload dependencies, and validate the configuration before the workload goes into production. This module covers app registrations, managed identities, and service principals. It does not cover agent identities or platform-provisioned identities from services like Copilot Studio.
 abstract: |
   After completing this module, you will be able to:
-  - Identify setup decisions that create lasting security risk for AI workload identities.
+  - Explain what makes identity setup decisions hard to fix after a workload reaches production.
   - Configure the right credential type for an AI workload based on its hosting environment.
   - Assign least-privilege permissions across Azure RBAC, Microsoft Graph, and app roles.
   - Select the correct roles for Key Vault, Azure AI services, storage, and downstream APIs.

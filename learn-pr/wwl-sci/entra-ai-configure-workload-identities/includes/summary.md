@@ -1,16 +1,16 @@
-A workload set up with a stored client secret, broad permissions, no assigned owner, and no pre-production validation is common when teams move quickly. It's also the combination that creates the most downstream risk.
+A workload set up with a stored client secret, broad permissions, no assigned owner, and no preproduction validation is common when teams move quickly. It's also the combination that creates the most downstream risk.
 
-Each of those setup choices compounds the others, and the combination is what makes the exposure hard to unwind after the fact. Making each decision deliberately, at setup time, is what keeps a workload identity from becoming an unmonitored exposure.
-
-The practices covered here apply to any AI workload identity. If your organization also manages agent identities provisioned by platforms such as Copilot Studio or Microsoft 365, the same least-privilege and credential-selection principles apply to governing those identities in your tenant, though agent identities have platform-specific provisioning and consent models that this module doesn't cover.
+Each of those setup choices compounds the others, and the combination makes the exposure hard to unwind after the fact. Deliberate decisions at setup time prevent a workload identity from becoming an unmonitored exposure.
 
 In this module, you learned how to:
 
-- Identify setup decisions that create lasting security risk for AI workload identities.
+- Explain what makes identity setup decisions hard to fix after a workload reaches production.
 - Configure the right credential type for an AI workload based on its hosting environment.
 - Assign least-privilege permissions across Azure RBAC, Microsoft Graph, and app roles.
 - Select the correct roles for Key Vault, Azure AI services, storage, and downstream APIs.
 - Validate the identity configuration and plan credential maintenance before production.
+
+The practices covered here apply to any AI workload identity built on app registrations, managed identities, or service principals. If your organization also manages agent identities provisioned by platforms such as Copilot Studio or Microsoft 365, the same least-privilege and credential-selection principles apply to governing those identities in your tenant. Agent identities have platform-specific provisioning and consent models that require separate guidance.
 
 ## Resources
 
