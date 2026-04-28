@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1846167a-d7e5-4c83-a5a0-d88dd344a2bb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The term "Artificial Intelligence" (AI) covers a wide range of software capabilities that enable applications to exhibit human-like behavior. AI has been around for many years, and its definition has varied as the technology and use cases associated with it have evolved. In today's technological landscape, AI solutions are built on machine learning *models* that encapsulate semantic relationships found in huge quantities of data; enabling applications to appear to interpret input in various formats, reason over the input data, and generate appropriate responses and predictions.
 
 Common AI capabilities that developers can integrate into a software application include:
@@ -11,3 +22,5 @@ Common AI capabilities that developers can integrate into a software application
 | ![Diagram of a document and a magnifying glass.](../media/information-extraction.png)<br>**Information extraction** | The ability to combine generative AI models for language reasoning, natural language techniques for document understanding, and computer vision and speech for media analysis enables the development of AI solutions that can extract key information from documents, forms, images, recordings, and other kinds of content. For example, an automated expense claims processing application might extract purchase dates, individual line item details, and total costs from a scanned receipt.  |
 
 Determining the specific AI capabilities you want to include in your application can help you identify the most appropriate AI services that you'll need to provision, configure, and use in your solution.
+
+::: zone-end
