@@ -86,4 +86,4 @@ Some organizations need AI capabilities tailored to their specific workflows—n
 - On-device processing keeps sensitive operational data local, reducing latency, and supporting data residency requirements.
 
 > [!NOTE]
-> Windows AI Foundry is aimed at developers and IT teams build custom solutions. For more information, see [Introduction to Microsoft Foundry on Windows](https://learn.microsoft.com/en-us/training/modules/introduction-microsoft-foundry-windows/).
+> Windows AI Foundry is aimed at developers and IT teams build custom solutions. For more information, see [Introduction to Microsoft Foundry on Windows](/training/modules/introduction-microsoft-foundry-windows/).
