@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-configure-workload-identities.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 04/27/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]
