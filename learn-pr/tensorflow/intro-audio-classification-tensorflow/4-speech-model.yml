@@ -6,8 +6,10 @@ metadata:
   description: Build the model
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 08/03/2021
+  ms.date: 04/20/2026
+  ms.update-cycle: 180-days
   ms.topic: unit
+  ms.collection: ce-advocates-ai-copilot
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
@@ -15,5 +17,5 @@ metadata:
   ms.contributors:
   - cassieb-08202021
 durationInMinutes: 15
-sandbox: true
-notebook: notebooks/4-speech-model.ipynb
+content: |
+  [!include[](includes/4-speech-model.md)]

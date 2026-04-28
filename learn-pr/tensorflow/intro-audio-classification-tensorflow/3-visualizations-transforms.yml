@@ -6,8 +6,10 @@ metadata:
   description: Visualizing and transforming data
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 08/03/2021
+  ms.date: 04/20/2026
+  ms.update-cycle: 180-days
   ms.topic: unit
+  ms.collection: ce-advocates-ai-copilot
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
@@ -15,35 +17,41 @@ metadata:
   ms.contributors:
   - cassieb-08202021
 durationInMinutes: 15
-sandbox: true
-notebook: notebooks/3-visualizations-transforms.ipynb
+content: |
+  [!include[](includes/3-visualizations-transforms.md)]
 quiz:
   title: Check your knowledge
   questions:
     - content: "When you resample the audio, you are..."
       choices:
-        - content: "Increasing the size."
-          isCorrect: false
-          explanation: "Incorrect."
-        - content: "Reducing the size."
+        - content: "Changing the number of samples used to represent each second of audio."
           isCorrect: true
-          explanation: "Correct! We can reduce the size of the file by reducing the sample rate for the audio track."
+          explanation: "Correct. Resampling changes the sample rate; it can downsample or upsample depending on the target rate."
+        - content: "Always increasing the size."
+          isCorrect: false
+          explanation: "Incorrect. Resampling can increase or decrease the number of samples."
+        - content: "Always reducing the size."
+          isCorrect: false
+          explanation: "Incorrect. Downsampling can reduce size, but resampling also includes upsampling."
     - content: "What is a spectrogram?"
       choices:
-        - content: "Maps the frequency to time of an audio file."
+        - content: "A visualization of frequency content over time, usually with intensity or color showing magnitude."
           isCorrect: true
-          explanation: "Correct!"
-        - content: "The audio channels."
+          explanation: "Correct. A spectrogram shows how the strength of different frequencies changes over time."
+        - content: "The number of audio channels."
           isCorrect: false
-          explanation: "Incorrect."
-        - content: "Sample rate and frequency visualized."
+          explanation: "Incorrect. Channels describe separate audio signals, such as left and right stereo channels."
+        - content: "The amplitude of the audio signal over time."
           isCorrect: false
-          explanation: "Incorrect this is a waveform."
-    - content: "Audio classification can only be done with computer vision on spectrograms."
+          explanation: "Incorrect. That describes a waveform."
+    - content: "Which input representation can be used for audio classification?"
       choices:
-        - content: "True"
-          isCorrect: False
-          explanation: "Incorrect. There's more than one way to build audio classification models."
-        - content: "False"
-          isCorrect: True
-          explanation: "Correct! There's more than one way to build audio classification models."
+        - content: "Waveforms, engineered audio features, or spectrogram tensors, depending on the model design."
+          isCorrect: true
+          explanation: "Correct. This module uses spectrograms, but audio classifiers can also learn from raw waveforms or other audio features."
+        - content: "Only PNG images created from spectrograms."
+          isCorrect: false
+          explanation: "Incorrect. Saving spectrograms as images is optional and can add unnecessary file I/O or resizing artifacts."
+        - content: "Only the number of audio channels."
+          isCorrect: false
+          explanation: "Incorrect. Channel count is useful metadata, but it doesn't represent the audio pattern to classify."

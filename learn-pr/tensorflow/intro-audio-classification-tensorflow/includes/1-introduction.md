@@ -1,12 +1,17 @@
-Ever wonder how the voice assistants actually work? How do they understand the words that we say? When you think about voice assistants you have the first step, which is speech to text, then the Natural Language Processing (NLP) step, which is the word embedding (turning words into numbers), then you have a classification of the utterance (what people say) to the intent (what they want the voice assistant to do). If you are following this learning path, you will have learned how the NLP part works already. Now we want to look at how we get the text from the spoken audio. Audio classification can be used for many things, not just speech assistants. For example, in music you can classify genres, or detect illness by the tone in someone's voice, and even more applications that we haven't even thought of yet.
+Ever wonder how voice assistants recognize short commands such as "yes," "no," or "stop"? Full speech assistants usually combine many systems, including audio capture, speech recognition, natural language processing, and intent classification. This module focuses on one smaller but important task: keyword classification from short audio clips.
 
-In this learn module we will be learning how to do audio classification with TensorFlow. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. In this tutorial, we will first break down how to understand audio data, from analog to digital representations, then we will build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image representation and then use computer vision to classify the word spoken! We will be building a simple model that can understand `yes` and `no`. The dataset we will be using is the open dataset Speech Commands which are built into TensorFlow datasets. This dataset has 36 total different words/sounds to be used for classification. Each utterance is stored as a one-second (or less) WAVE format file. We will only be using `yes` and `no` for a binary classification.
+There are multiple ways to build an audio classification model. A model can learn directly from waveforms, from engineered audio features, or from spectrograms that represent frequency content over time. In this module, you use TensorFlow to transform audio waveforms into spectrogram tensors and train a simple convolutional neural network to classify the words `yes` and `no`.
+
+The examples use the smaller mini Speech Commands dataset that TensorFlow provides for tutorials. The original [Speech Commands dataset](https://www.tensorflow.org/datasets/catalog/speech_commands) ([Warden, 2018](https://arxiv.org/abs/1804.03209)) contains more than 105,000 one-second or shorter WAV files across 35 spoken words. The mini Speech Commands dataset contains eight commands, and this module uses only the `yes` and `no` folders for binary classification.
 
 ## Learning objectives
-- Understand some key features of audio data.
-- Introduction to how to build audio machine learning models.
-- Learn how to build a binary classification model from wave files.
+
+- Understand key features of audio data, including sample rate, amplitude, channels, and waveforms.
+- Convert audio waveforms into spectrogram tensors.
+- Build and evaluate a binary keyword classification model from WAV files.
 
 ## Prerequisites
-- Knowledge of Python
-- Basic understand of machine learning
+
+- Basic Python knowledge
+- Basic understanding of machine learning
+- A Python environment that supports TensorFlow 2.10 or later, with TensorFlow and Matplotlib installed. Use a Python version supported by the TensorFlow release you install. For setup guidance, see [Install TensorFlow with pip](https://www.tensorflow.org/install/pip) and [Install Matplotlib](https://matplotlib.org/stable/users/installing/index.html).

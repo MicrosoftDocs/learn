@@ -6,8 +6,10 @@ metadata:
   description: Understanding audio data
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 08/03/2021
+  ms.date: 04/20/2026
+  ms.update-cycle: 180-days
   ms.topic: unit
+  ms.collection: ce-advocates-ai-copilot
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
@@ -15,30 +17,30 @@ metadata:
   ms.contributors:
   - cassieb-08202021
 durationInMinutes: 10
-sandbox: true
-notebook: notebooks/2-understand-audio-data.ipynb
+content: |
+  [!include[](includes/2-understand-audio-data.md)]
 quiz:
   title: Check your knowledge
   questions:
     - content: "What is the sample rate?"
       choices:
-        - content: "Frequency mapped to time."
-          isCorrect: false
-          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
-        - content: "The audio channels."
-          isCorrect: false
-          explanation: "Although audio channels can be used in sampling, this is not what sample rate is"
-        - content: "Sampling analog sound at consistent intervals of time to create a digital sound representation."
+        - content: "The number of audio samples captured per second."
           isCorrect: true
-          explanation: "Correct!"
+          explanation: "Correct. A 16 kHz sample rate means 16,000 samples are captured each second."
+        - content: "Frequency mapped over time."
+          isCorrect: false
+          explanation: "Incorrect. Frequency content over time is represented by a spectrogram."
+        - content: "The number of audio channels."
+          isCorrect: false
+          explanation: "Incorrect. Channels describe how many separate audio signals are stored, such as mono or stereo."
     - content: "What is the waveform?"
       choices:
-        - content: "Frequency mapped to time."
-          isCorrect: false
-          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
-        - content: "Sample rate and frequency visualized."
+        - content: "The amplitude of an audio signal over time."
           isCorrect: true
-          explanation: "Correct! We can visualize our data using a waveform to map sample rate and frequency"
-        - content: "The audio channels."
+          explanation: "Correct. A waveform shows how the signal amplitude changes across samples or time."
+        - content: "Frequency mapped over time."
           isCorrect: false
-          explanation: "Incorrect."
+          explanation: "Incorrect. Frequency content over time is represented by a spectrogram."
+        - content: "The number of audio channels."
+          isCorrect: false
+          explanation: "Incorrect. Channels describe separate audio signals, not the waveform itself."
