@@ -5,8 +5,8 @@ metadata:
   title: Delegate a Subnet to Azure NetApp Files
   description: Learn how to delegate a subnet for Azure NetApp Files volumes.
   ms.date: 03/25/2026
-  author: rmishras
-  ms.author: rmishras
+  author: b-rashmim
+  ms.author: b-rashmim
   ms.topic: unit
 durationInMinutes: 5
 content: |

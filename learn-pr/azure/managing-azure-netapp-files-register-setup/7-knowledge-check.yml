@@ -6,8 +6,8 @@ metadata:
   title: Module Assessment
   description: Test your knowledge of Azure NetApp Files registration and setup.
   ms.date: 03/25/2026
-  author: rmishras
-  ms.author: rmishras
+  author: b-rashmim
+  ms.author: b-rashmim
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5
