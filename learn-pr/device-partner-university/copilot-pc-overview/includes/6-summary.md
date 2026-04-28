@@ -1,0 +1,3 @@
+In this module, you explored how Copilot+ PCs combine advanced hardware and Windows 11 Pro to enable AI-powered experiences across productivity, performance, and security. You learned key concepts such as the role of the NPU in delivering efficient on-device AI, and how these devices support AI workloads and agents. 
+
+You also saw how Windows serves as a managed platform for AI — connecting on-device intelligence with cloud-based services within an organization’s existing security and management framework.

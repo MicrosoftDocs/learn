@@ -3,7 +3,7 @@ uid: learn.dpu.copilot-pc-overview.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge Check
-  description: This content is part of the "Copilot+ PC overview" module.
+  description: This content is part of the "Explore on-device AI and NPU capabilities in Copilot+ PCs" module.
   ms.date: 08/06/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
@@ -12,74 +12,92 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What distinguishes Copilot+ PCs from other Windows 11 Pro AI PCs?"
+  - content: "What distinguishes Copilot+ PCs from standard Windows 11 Pro devices?"
     choices:
         - content: "They use cloud-based Copilot only"
           isCorrect: false
-          explanation: "Incorrect. Cloud-based Copilot is available on Windows 11 Pro PCs, not exclusive to Copilot+ PCs."
+          explanation: "Incorrect. Cloud-based Copilot is available on Windows 11 Pro devices, not exclusive to Copilot+ PCs."
         - content: "They feature a supercharged NPU capable of 40+ TOPS"
           isCorrect: true
-          explanation: "Correct. Copilot+ PCs have NPUs with 40+ TOPS, offering the fastest performance."
-        - content: "They lack a Copilot key"
+          explanation: "Correct. Copilot+ PCs include NPUs capable of 40+ TOPS, enabling efficient on-device AI processing."
+        - content: "They include Microsoft Pluton, which is not available on Windows 11 Pro PCs"
           isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs include a Copilot key for easy access to AI features."
-        - content: "They don't support AI-enabled apps"
+          explanation: "Incorrect. Microsoft Pluton is available on both Windows 11 Pro PCs and Copilot+ PCs. On Copilot+ PCs, it is enabled by default."
+        - content: "They do not support AI-enabled apps"
           isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs support a wide range of AI-enabled apps."
+          explanation: "Incorrect. Copilot+ PCs support a wide range of AI-enabled applications."
+
   - content: "What does TOPS measure in the context of NPUs?"
     choices:
         - content: "The number of AI models supported"
           isCorrect: false
-          explanation: "Incorrect. TOPS doesn't measure model support."
+          explanation: "Incorrect. TOPS does not measure model support."
         - content: "The total maximum achievable throughput"
           isCorrect: true
-          explanation: "Correct. TOPS measures the processing capability of an NPU."
+          explanation: "Correct. TOPS stands for *trillions of operations per second* and measures the maximum processing throughput of an NPU, indicating how many AI operations it can perform per second."
         - content: "The amount of memory used"
           isCorrect: false
-          explanation: "Incorrect. Memory usage isn't related to TOPS."
+          explanation: "Incorrect. Memory usage is not related to TOPS."
         - content: "The number of CPU cores"
           isCorrect: false
           explanation: "Incorrect. CPU cores are unrelated to TOPS."
-  - content: "Which component is most efficient for running AI tasks like face recognition?"
-    choices:
-        - content: "CPU"
-          isCorrect: false
-          explanation: "Incorrect. CPUs can perform AI tasks but are less efficient."
-        - content: "GPU"
-          isCorrect: false
-          explanation: "Incorrect. GPUs are better than CPUs but less efficient than NPUs for AI tasks."
-        - content: "NPU"
-          isCorrect: true
-          explanation: "Correct. NPUs complete AI tasks faster and with less energy and heat."
-        - content: "RAM"
-          isCorrect: false
-          explanation: "Incorrect. RAM stores data but doesn't process AI tasks."
-  - content: "What percentage of employees want AI to summarize meetings and plan their day?"
-    choices:
-        - content: "Sixty-four percent"
-          isCorrect: false
-          explanation: "Incorrect. Sixty-four percent of employees struggle with managing tasks due to lack of energy and time."
-        - content: "Seventy-three percent"
-          isCorrect: false
-          explanation: "Incorrect. Seventy-three percent are comfortable using AI for creative work."
-        - content: "Eighty percent"
-          isCorrect: true
-          explanation: "Correct. Eighty percent want AI to summarize meetings and plan their day."
-        - content: "Eighty-six percent"
-          isCorrect: false
-          explanation: "Incorrect. Eighty-six percent want AI to help find the right answers and information."
-  - content: "What is the end-of-service date for Windows 10?"
-    choices:
-        - content: "October 14, 2024"
-          isCorrect: false
-          explanation: "Incorrect. This date isn't mentioned in the document."
-        - content: "May 9, 2023"
-          isCorrect: false
-          explanation: "Incorrect. This is the publication date of a referenced report."
-        - content: "October 14, 2025"
-          isCorrect: true
-          explanation: "Correct. Windows 10 support ends on this date."
-        - content: "September 30, 2025"
-          isCorrect: false
-          explanation: "Incorrect. This date isn't mentioned in the document."
 
+  - content: "Why is an NPU more efficient for AI workloads than a CPU or GPU?"
+    choices:
+        - content: "It uses more power to complete tasks faster"
+          isCorrect: false
+          explanation: "Incorrect. NPUs are designed to use less power, not more."
+        - content: "It runs AI tasks in the cloud"
+          isCorrect: false
+          explanation: "Incorrect. NPUs process AI tasks locally on the device."
+        - content: "It is designed specifically for AI tasks, using less power and generating less heat"
+          isCorrect: true
+          explanation: "Correct. NPUs are purpose-built for AI workloads, allowing them to run efficiently with lower power consumption and heat."
+        - content: "It replaces the need for system memory"
+          isCorrect: false
+          explanation: "Incorrect. NPUs do not replace system memory."
+
+  - content: "What is a key advantage of on-device AI processing on Copilot+ PCs?"
+    choices:
+        - content: "Requires constant internet access"
+          isCorrect: false
+          explanation: "Incorrect. On-device AI does not require a constant internet connection."
+        - content: "Sends all data to the cloud"
+          isCorrect: false
+          explanation: "Incorrect. On-device AI processes data locally."
+        - content: "Processes data locally with lower latency and improved privacy"
+          isCorrect: true
+          explanation: "Correct. On-device AI runs locally on the NPU, reducing latency and helping keep data on the device."
+        - content: "Only works with Microsoft 365 Copilot"
+          isCorrect: false
+          explanation: "Incorrect. On-device AI supports a range of features beyond Microsoft 365 Copilot."
+
+  - content: "Which AI processing model combines both local and cloud-based processing depending on the task?"
+    choices:
+        - content: "Cloud-only AI"
+          isCorrect: false
+          explanation: "Incorrect. Cloud-only AI relies entirely on remote processing."
+        - content: "On-device AI"
+          isCorrect: false
+          explanation: "Incorrect. On-device AI processes tasks locally on the NPU without using cloud services."
+        - content: "Hybrid AI"
+          isCorrect: true
+          explanation: "Correct. Hybrid AI uses both on-device and cloud-based processing depending on the workload."
+        - content: "Offline AI"
+          isCorrect: false
+          explanation: "Incorrect. Offline AI is not a defined processing model."
+
+  - content: "How does Agent in Settings help reduce IT support requests?"
+    choices:
+        - content: "It automatically installs software updates"
+          isCorrect: false
+          explanation: "Incorrect. Software updates are handled by Windows Autopatch and Windows Update for Business, not Agent in Settings."
+        - content: "It lets users describe configuration changes in natural language and applies them"
+          isCorrect: true
+          explanation: "Correct. Agent in Settings allows users to describe what they want to configure, such as pairing a Bluetooth device or setting up an external monitor, and the agent suggests and applies the changes."
+        - content: "It blocks users from changing device settings"
+          isCorrect: false
+          explanation: "Incorrect. Agent in Settings helps users make changes, not prevent them."
+        - content: "It requires IT administrators to approve every change"
+          isCorrect: false
+          explanation: "Incorrect. Agent in Settings is designed to help end users handle routine configuration tasks independently."
