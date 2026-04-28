@@ -11,7 +11,7 @@ metadata:
   module_assessment: true
   ai_generated_module_assessment: false
 durationInMinutes: 3
-content:
+content: ""
 quiz:
   title: ""
   questions:
