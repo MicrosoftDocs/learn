@@ -127,7 +127,7 @@ The choice is not whether work is reviewed-it always is. The choice is when the 
 3) Tool gating in orchestrators in automated orchestrations, you can force planning to run without tool execution and then enable tools only after the plan is accepted.
 4) "Plan mode" workflows - Some interfaces support a planning-first experience that generates a plan artifact and pauses before any changes are applied.
 
-### **Decision guidance**
+### Decision guidance
 
 - Use plan-first for high-risk work (workflows, infra, auth, production).
 
