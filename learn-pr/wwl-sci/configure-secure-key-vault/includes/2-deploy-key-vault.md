@@ -79,4 +79,4 @@ For vaults already out of compliance, return to **Policy** > **Assignments**, se
 With your vault deployed with the right SKU, protected against purge, and tracked by policy, you're ready to configure who and what can access it.
 
 > [!TIP]  
-> For the full set of Azure Policy built-in definitions available for Key Vault, see [Azure Policy built-in definitions for Azure Key Vault](https://learn.microsoft.com/azure/key-vault/policy-reference).
+> For the full set of Azure Policy built-in definitions available for Key Vault, see [Azure Policy built-in definitions for Azure Key Vault](/azure/key-vault/policy-reference).

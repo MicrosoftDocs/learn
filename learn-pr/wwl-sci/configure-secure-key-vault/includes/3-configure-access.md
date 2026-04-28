@@ -58,6 +58,6 @@ Beyond PIM, Microsoft Entra Conditional Access lets you apply policy-based contr
 > If an AI agent needs to access the Key Vault data plane on behalf of (OBO) a human user—the compound identity pattern used in OBO flows—Azure RBAC doesn't support this model for Key Vault data plane operations. Only legacy access policies support compound identity. The recommended architecture for agents that impersonate users is to separate concerns: the agent authenticates to Key Vault using its own application-only identity with the minimum required role. The user's delegated permissions govern what the agent does in other systems; Key Vault access stays in the agent's own identity lane.
 
 > [!TIP]  
-> For a detailed walkthrough of configuring PIM for Azure roles, see [Privileged Identity Management (PIM) overview](https://learn.microsoft.com/entra/id-governance/privileged-identity-management/pim-configure).
+> For a detailed walkthrough of configuring PIM for Azure roles, see [Privileged Identity Management (PIM) overview](/entra/id-governance/privileged-identity-management/pim-configure).
 
 With access controlled—by role, by eligibility, and by sign-in policy—the remaining exposure is the network path your vault accepts connections from.
