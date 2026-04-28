@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-traditional-ops-agent-automation.design-multi-agent-workflows
+title: Design multi-agent workflows for infrastructure tasks
+metadata:
+  title: Design Multi-Agent Workflows for Infrastructure Tasks
+  description: "This unit walks through the practical steps of designing agent pipelines for common ops workflows."
+  ms.date: 04/24/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-design-multi-agent-workflows.md)]
