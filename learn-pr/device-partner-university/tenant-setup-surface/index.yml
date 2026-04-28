@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.tenant-setup-surface
+title: Microsoft tenant setup for Surface Support Portal access
+metadata:
+  title: Microsoft Tenant Setup For Surface Support Portal Access
+  description: 'In this module, you''ll learn how to set up a Microsoft tenant to access the Surface Support Portal and manage your Surface devices effectively.'
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  This module provides a step-by-step guide on how to set up a Microsoft tenant to gain access to the Surface Support Portal. By completing this module, you'll be able to create a Microsoft tenant, save tenant credentials, and request access to the Surface Support Portal, enabling you to manage your Surface devices efficiently.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create a Microsoft tenant for your organization.
+  - Save tenant credentials and tenant ID securely.
+  - Request access to the Surface Support Portal to manage your Surface devices effectively.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/tenant-setup-surface-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.tenant-setup-surface.introduction
+  - learn.dpu.tenant-setup-surface.confirm-that-no-tenant-exists
+  - learn.dpu.tenant-setup-surface.create-a-microsoft-tenant
+  - learn.dpu.tenant-setup-surface.save-tenant-credentials-and-tenant-id
+  - learn.dpu.tenant-setup-surface.request-access-to-surface-support-portal
+  - learn.dpu.tenant-setup-surface.knowledge-check
+  - learn.dpu.tenant-setup-surface.summary
+badge:
+  uid: learn.dpu.tenant-setup-surface.badge

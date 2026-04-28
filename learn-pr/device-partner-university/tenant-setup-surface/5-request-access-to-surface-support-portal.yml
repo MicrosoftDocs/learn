@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.tenant-setup-surface.request-access-to-surface-support-portal
+title: Request access to Surface Support Portal
+metadata:
+  title: Request Access To Surface Support Portal
+  description: This content is part of the "Microsoft tenant setup for Surface Support Portal access" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-request-access-to-surface-support-portal.md)]

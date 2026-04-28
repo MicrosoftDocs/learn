@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.tenant-setup-surface.confirm-that-no-tenant-exists
+title: Confirm that no tenant exists
+metadata:
+  title: Confirm That No Tenant Exists
+  description: This content is part of the "Microsoft tenant setup for Surface Support Portal access" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-confirm-that-no-tenant-exists.md)]
