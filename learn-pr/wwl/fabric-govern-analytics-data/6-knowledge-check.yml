@@ -11,6 +11,7 @@ metadata:
   module_assessment: true
   ai_generated_module_assessment: false
 durationInMinutes: 3
+content: ""
 quiz:
   questions:
   - content: "An analytics team needs to ensure that a lakehouse containing customer personal data is protected throughout the entire data lineage, including downstream semantic models and reports. Which sensitivity labeling capability automatically propagates the label to dependent items?"
@@ -68,5 +69,3 @@ quiz:
     - content: "The description only affects human users browsing the OneLake catalog, not AI agent behavior."
       isCorrect: false
       explanation: "Item descriptions serve as context for both human users and AI agents. AI agents use descriptions to understand data meaning and generate relevant responses."
-content: |
-  [!include[](includes/5-knowledge-check.md)]
