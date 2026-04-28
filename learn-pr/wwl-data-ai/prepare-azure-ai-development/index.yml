@@ -2,10 +2,13 @@
 uid: learn.wwl.prepare-azure-ai-development
 metadata:
   title: Plan and Prepare to Develop AI Solutions on Azure
-  description: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team.
+  description: Microsoft Azure offers multiple services that enable developers to
+    build amazing AI-powered solutions. Proper planning and preparation involves
+    identifying the services you'll use and creating an optimal working
+    environment for your development team.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 3/16/2026
+  ms.date: 04/28/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
@@ -13,7 +16,10 @@ metadata:
     - wwl-ai-copilot
   ms.custom: ai-learning-hub
 title: Plan and prepare to develop AI solutions on Azure
-summary: "Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team."
+summary: "Microsoft Azure offers multiple services that enable developers to
+  build amazing AI-powered solutions. Proper planning and preparation involves
+  identifying the services you'll use and creating an optimal working
+  environment for your development team."
 abstract: |
   By the end of this module, you'll be able to:
     - Identify common AI capabilities that you can implement in applications
@@ -29,12 +35,15 @@ prerequisites: |
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
-roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles:
+  # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - ai-engineer
-products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products:
+  # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - foundry-tools
   - microsoft-foundry
-subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
+  # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - artificial-intelligence
   - app-development
 units:

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-traditional-ops-agent-automation.exercise-transition-agent-automation
+title: Exercise - Transition to agentic DevOps workflows
+metadata:
+  title: Exercise - Transition to agentic DevOps workflows
+  description: "Exercise - Transition to agentic DevOps workflows: Apply your knowledge by designing a multi-agent workflow to automate a common ops task using Azure and GitHub tools."
+  ms.date: 04/24/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/7-exercise-transition-agent-automation.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-configure-workload-identities.identify-setup-risks-ai-workload-identities
+title: What makes identity setup decisions hard to fix
+metadata:
+  title: What Makes Identity Setup Decisions Hard to Fix
+  description: "Understand why credential, permission, ownership, and validation decisions made during workload identity setup are hard to change once the workload reaches production."
+  ms.date: 04/27/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/identify-setup-risks-ai-workload-identities.md)]

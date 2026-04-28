@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.entra-ai-configure-workload-identities
+metadata:
+  title: Configure Workload Identities and Permissions for AI Environments
+  description: "Configure secure authentication and least-privilege permissions for workload identities in AI environments using Microsoft Entra. Focused on app registrations, managed identities, and service principals."
+  ms.date: 04/27/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: entra-id
+  ai-usage: ai-assisted
+title: Configure workload identities and permissions for AI environments
+summary: Configure workload identities with secure credential models, assign least-privilege permissions across Azure RBAC and Microsoft Graph, secure access to common AI workload dependencies, and validate the configuration before the workload goes into production. This module covers app registrations, managed identities, and service principals. It does not cover agent identities or platform-provisioned identities from services like Copilot Studio.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain what makes identity setup decisions hard to fix after a workload reaches production.
+  - Configure the right credential type for an AI workload based on its hosting environment.
+  - Assign least-privilege permissions across Azure RBAC, Microsoft Graph, and app roles.
+  - Select the correct roles for Key Vault, Azure AI services, storage, and downstream APIs.
+  - Validate the identity configuration and plan credential maintenance before production.
+prerequisites: |
+  - Working knowledge of Microsoft Entra ID service principals, app registrations, and managed identities.
+  - Familiarity with Azure RBAC role assignments and Microsoft Graph application permissions.
+  - Basic understanding of workload identity federation concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.entra-ai-configure-workload-identities.introduction
+- learn.wwl.entra-ai-configure-workload-identities.identify-setup-risks-ai-workload-identities
+- learn.wwl.entra-ai-configure-workload-identities.configure-secure-authentication-ai-workloads
+- learn.wwl.entra-ai-configure-workload-identities.assign-least-privilege-access
+- learn.wwl.entra-ai-configure-workload-identities.secure-access-dependent-services
+- learn.wwl.entra-ai-configure-workload-identities.validate-maintain-workload-identity-configuration
+- learn.wwl.entra-ai-configure-workload-identities.knowledge-check
+- learn.wwl.entra-ai-configure-workload-identities.summary
+badge:
+  uid: learn.wwl.entra-ai-configure-workload-identities.badge

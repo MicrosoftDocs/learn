@@ -3,12 +3,15 @@ uid: learn.wwl.optimize-generative-ai-model-performance.compare-combine-strategi
 title: Compare and combine optimization strategies
 metadata:
   title: Compare and combine optimization strategies
-  description: Compare prompt engineering, RAG, and fine-tuning strategies and learn when and how to combine them for optimal generative AI model performance.
+  description: Compare prompt engineering, RAG, and fine-tuning strategies and
+    learn when and how to combine them for optimal generative AI model
+    performance.
   author: ivorb
   ms.author: berryivor
   ms.date: 02/24/2026
   ms.topic: unit
   ai-usage: ai-assisted
+  zone_pivot_groups: video-or-text
 durationInMinutes: 7
 content: |
   [!include[](includes/5-compare-combine-strategies.md)]

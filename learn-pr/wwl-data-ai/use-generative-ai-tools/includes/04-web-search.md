@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2998129b-edb8-4d37-acbd-7d437c6c0220]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The *web_search* tool enables your model to retrieve fresh information from the web while generating a response.
 
 ## What is the web_search tool?
@@ -74,3 +85,5 @@ The general process for using the web_search tool is:
 - Some environments may apply regional, policy, or network restrictions to web access
 
 Used well, web_search helps your model move from static knowledge to timely, source-aware answers that are more useful in real-world workflows.
+
+::: zone-end
