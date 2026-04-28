@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.managing-azure-netapp-files-register-setup.4-delegate-subnet
+uid: learn.azure.register-and-setup.delegate-subnet
 title: Delegate a Subnet to Azure NetApp Files
 metadata:
   title: Delegate a Subnet to Azure NetApp Files

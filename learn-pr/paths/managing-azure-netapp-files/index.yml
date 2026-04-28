@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.managing-azure-netapp-files
+uid: learn.azure.managing-azure-netapp-files
 metadata:
   title: Managing Azure NetApp Files
   description: Build your knowledge and skills in managing Azure NetApp Files. Start with fundamental setup tasks and registration steps needed to deploy and manage Azure NetApp Files resources.
@@ -28,6 +28,6 @@ products:
 subjects:
   - storage
 modules:
-  - learn.managing-azure-netapp-files-register-setup
+  - learn.azure.register-and-setup
 trophy:
-  uid: learn.managing-azure-netapp-files.trophy
+  uid: learn.azure.managing-azure-netapp-files.trophy
