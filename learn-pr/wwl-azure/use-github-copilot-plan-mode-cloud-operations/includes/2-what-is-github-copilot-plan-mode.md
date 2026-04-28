@@ -1,5 +1,3 @@
-## Understand the GitHub Copilot agent types
-
 GitHub Copilot in Visual Studio Code provides three built-in agents, each operating under a different level of autonomy and with a different relationship to your workspace:
 
 - **Agent**: A fully autonomous implementation agent. It decomposes a goal into subtasks, executes tool calls (file reads, writes, terminal commands, MCP server calls), and applies changes directly to your workspace. The Agent loop runs until the goal is achieved or it reaches an ambiguity it can't resolve.

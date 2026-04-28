@@ -1,9 +1,7 @@
-## Scenario: Secure a virtual network deployment
+Suppose a team receives a request to deploy a new Azure virtual network with specific security requirements. The virtual network needs three subnets for web, application, and data tiers, each with its own network security group (NSG). Before writing any infrastructure code, the engineer wants a clear plan that covers all the components and their relationships.
 
 > [!NOTE]
 > The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They're examples of effective prompt patterns that demonstrate the kind of context the agent needs. They're not step-by-step instructions to follow.
-
-Suppose a team receives a request to deploy a new Azure virtual network with specific security requirements. The virtual network needs three subnets for web, application, and data tiers, each with its own network security group (NSG). Before writing any infrastructure code, the engineer wants a clear plan that covers all the components and their relationships.
 
 To start, the engineer selects **Plan** from the agents dropdown in the Chat view and describes the goal. An example of how that prompt might be structured:
 

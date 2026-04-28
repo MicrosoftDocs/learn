@@ -1,5 +1,3 @@
-## Write clear, scoped prompts
-
 The quality of a plan depends directly on the quality of your prompt. Vague prompts produce vague plans. For operations tasks, include specific details about what you're trying to accomplish:
 
 **Less effective:**

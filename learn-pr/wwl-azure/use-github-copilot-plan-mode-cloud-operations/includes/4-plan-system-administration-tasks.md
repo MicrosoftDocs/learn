@@ -1,9 +1,9 @@
-## Scenario: Automate Active Directory user provisioning
+A team manages a Windows Server environment with Active Directory Domain Services (ADDS). New employee onboarding requires creating user accounts, assigning group memberships, setting up home directories, and configuring email. Doing all these tasks manually, is time-consuming and error-prone.
 
 > [!NOTE]
 > The prompts shown in this unit illustrate how an operations engineer might interact with the Plan agent for each scenario. They're examples of effective prompt patterns that demonstrate the kind of context the agent needs. They're not step-by-step instructions to follow.
 
-A team manages a Windows Server environment with Active Directory Domain Services (ADDS). New employee onboarding requires creating user accounts, assigning group memberships, setting up home directories, and configuring email. Doing all these tasks manually, is time-consuming and error-prone.
+
 
 An engineer starting this automation would describe the full scope of the task to the Plan agent in a single prompt. An example of how that prompt might be structured:
 
