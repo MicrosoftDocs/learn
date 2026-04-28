@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.tensorflow.intro-audio-classification-tensorflow.speech-model
+uid: learn.tensorflow.intro-audio-classification.speech-model
 title: Build the model
 metadata:
   title: Build the model

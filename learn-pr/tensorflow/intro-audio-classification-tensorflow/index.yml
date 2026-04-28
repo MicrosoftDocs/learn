@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.tensorflow.intro-audio-classification-tensorflow
+uid: learn.tensorflow.intro-audio-classification
 metadata:
   title: Introduction to audio classification with TensorFlow
   description: Learn how to prepare audio data, create spectrograms, and build a TensorFlow keyword classification model.
@@ -31,11 +31,11 @@ prerequisites: |
 subjects:
 - classification-analysis
 units:
-- learn.tensorflow.intro-audio-classification-tensorflow.introduction
-- learn.tensorflow.intro-audio-classification-tensorflow.understand-audio-data
-- learn.tensorflow.intro-audio-classification-tensorflow.visualizations-transforms
-- learn.tensorflow.intro-audio-classification-tensorflow.speech-model
-- learn.tensorflow.intro-audio-classification-tensorflow.summary
-
+- learn.tensorflow.intro-audio-classification.introduction
+- learn.tensorflow.intro-audio-classification.understand-audio-data
+- learn.tensorflow.intro-audio-classification.visualizations-transforms
+- learn.tensorflow.intro-audio-classification.speech-model
+- learn.tensorflow.intro-audio-classification.summary
 badge:
-  uid: learn.tensorflow.intro-audio-classification-tensorflow.badge
+  uid: learn.tensorflow.intro-audio-classification.badge
+
