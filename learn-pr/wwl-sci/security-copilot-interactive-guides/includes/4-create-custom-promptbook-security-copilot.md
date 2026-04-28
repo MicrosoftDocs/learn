@@ -4,4 +4,4 @@ In this interactive guide, you create a custom promptbook in Security Copilot by
 
 This interactive guide, which takes approximately 10 minutes to complete, walks you through the process of selecting prompts from a previous session, organizing them into a promptbook, and saving the promptbook for future use.
 
-[![Thumbnail for the Create a custom promptbook interactive guide.](../media/MS-IG-1-Thumbnail.png)](https://yourplaceholder.example.com/ig-create-custom-promptbook)
+[![Thumbnail for the Create a custom promptbook interactive guide.](../media/create-custom-promptbook-thumbnail.png)](https://yourplaceholder.example.com/ig-create-custom-promptbook)

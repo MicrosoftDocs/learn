@@ -6,7 +6,7 @@ Insider Risk Management in Microsoft Purview helps detect and investigate potent
 
 In this interactive guide, which takes approximately 5 minutes to complete, you investigate an insider risk alert. You use Security Copilot to summarize the user's activity, identify key risk patterns, and assess the potential impact across services.
 
-[![Thumbnail for the Investigate an insider risk alert interactive guide.](../media/MS-IG-4b-Thumbnail.png)](https://yourplaceholder.example.com/ig-investigate-insider-risk-alert)
+[![Thumbnail for the Investigate an insider risk alert interactive guide.](../media/investigate-insider-risk-alert-thumbnail.png)](https://yourplaceholder.example.com/ig-investigate-insider-risk-alert)
 
 ## Investigate unlabeled sensitive content using eDiscovery
 
@@ -14,4 +14,4 @@ Organizations preparing for cloud migrations or regulatory audits often need to 
 
 In this interactive guide, which takes approximately 5 minutes to complete, you use Security Copilot in eDiscovery to analyze search results from an unlabeled content investigation. You summarize findings, identify sensitive information types present in the unlabeled content, and review how the content is distributed across workloads.
 
-[![Thumbnail for the Investigate unlabeled sensitive content in eDiscovery interactive guide.](../media/MS-IG-5a-Thumbnail.png)](https://yourplaceholder.example.com/ig-investigate-ediscovery)
+[![Thumbnail for the Investigate unlabeled sensitive content in eDiscovery interactive guide.](../media/investigate-ediscovery-thumbnail.png)](https://yourplaceholder.example.com/ig-investigate-ediscovery)

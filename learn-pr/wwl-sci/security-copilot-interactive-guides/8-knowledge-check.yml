@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "A security analyst frequently runs the same set of prompts to investigate failed login attempts in Microsoft Entra. What should the analyst create to avoid entering these prompts manually each time?"
+  - content: "A security analyst frequently runs the same set of prompts to investigate failed sign in attempts in Microsoft Entra. What should the analyst create to avoid entering these prompts manually each time?"
     choices:
     - content: "A custom plugin"
       isCorrect: false
@@ -68,4 +68,4 @@ quiz:
       explanation: "A contributor's Microsoft Entra and Azure role-based access control roles determine what security data they can access in Security Copilot, regardless of which plugins are enabled."
     - content: "The owner settings configured for the workspace"
       isCorrect: false
-      explanation: "Owner settings control workspace-level configuration such as access controls and integrations, but individual data access is governed by the user's Entra and Azure RBAC roles."
+      explanation: "Owner settings control workspace-level configuration such as access controls and integrations, but individual data access is governed by the user's Microsoft Entra and Azure RBAC roles."
