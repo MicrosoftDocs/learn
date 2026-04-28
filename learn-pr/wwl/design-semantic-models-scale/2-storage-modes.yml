@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.storage-modes
+title: Choose a storage mode
+metadata:
+  title: Choose a Storage Mode
+  description: "Choose the right storage mode for a semantic model in Microsoft Fabric, with Direct Lake as the default."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-storage-modes.md)]
