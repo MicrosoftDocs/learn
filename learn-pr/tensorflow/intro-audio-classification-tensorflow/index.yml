@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: artificial-intelligence
 title: Introduction to audio classification with TensorFlow
-summary: Learn how audio is represented as tensors, how to convert waveforms into spectrograms, and how to use TensorFlow to build a simple keyword classifier that recognizes "yes" and "no".
+summary: Learn how audio is represented as tensors, how to convert waveforms into spectrograms, and how to use TensorFlow to build a simple keyword classifier.
 abstract: |
   In this module you will:
   - Describe how sample rate, amplitude, channels, and waveforms represent audio data.
