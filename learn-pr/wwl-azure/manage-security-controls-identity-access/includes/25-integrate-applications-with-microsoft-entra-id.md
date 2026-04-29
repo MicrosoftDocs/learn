@@ -1,4 +1,4 @@
-You can integrate your cloud-enabled software as service (SaaS) applications with Microsoft Entra ID. Refer to the Microsoft Entra ID Marketplace for a list of all SaaS apps that have been pre-integrated into Microsoft Entra ID. Use the application network portal to request a System for Cross-Domain Identity Management (SCIM) enabled application to be added to the gallery for automatic provisioning or n SAML / OpenID Connect (OIDC) enabled application to be added to the gallery for SSO. Once you add the application from the gallery, configure and test Microsoft Entra ID SSO for the application.
+You can integrate your cloud-enabled software as service (SaaS) applications with Microsoft Entra ID. Refer to the Microsoft Entra ID Marketplace for a list of all SaaS apps that have been preintegrated into Microsoft Entra ID. Use the application network portal to request a System for Cross-Domain Identity Management (SCIM) enabled application to be added to the gallery for automatic provisioning or n SAML / OpenID Connect (OIDC) enabled application to be added to the gallery for SSO. Once you add the application from the gallery, configure and test Microsoft Entra ID SSO for the application.
 
 ## Cloud-enabled software as a service (SaaS) providers
 
@@ -50,7 +50,7 @@ To configure the integration of Slack into Microsoft Entra ID, you need to add S
 3.  In the **Add from the gallery** section, type **Slack** in the search box.
 4.  Select Slack from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
 
-Alternatively, you can also use the Enterprise App Configuration Wizard. In this wizard, you can add an application to your tenant, add users/groups to the app, assign roles, as well as walk through the SSO configuration as well. Alternatively, you can also use the [Enterprise App Configuration Wizard](https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration).
+In this wizard, you can add an application to your tenant, add users/groups to the app, assign roles, and walk through the SSO configuration as well. You can also use the [Enterprise App Configuration Wizard](https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration).
 
 ## Configure and test Microsoft Entra SSO for Slack
 
@@ -58,16 +58,16 @@ Configure and test Microsoft Entra SSO with Slack using a test user called B.Sim
 
 To configure and test Microsoft Entra SSO with Slack, perform the following steps:
 
-1.  [Configure Microsoft Entra SSO](/entra/identity/saas-apps/slack-tutorial#configure-azure-ad-sso) \- to enable your users to use this feature.
+1.  [Configure Microsoft Entra SSO](/entra/identity/saas-apps/slack-tutorial#configure-azure-ad-sso) - to enable your users to use this feature.
 
 
-     -  [Create a Microsoft Entra test user](/entra/identity/saas-apps/slack-tutorial#create-an-azure-ad-test-user) \- to test Microsoft Entra single sign-on with B.Simon.
-     -  [Assign the Microsoft Entra test user](/entra/identity/saas-apps/slack-tutorial#assign-the-azure-ad-test-user) \- to enable B.Simon to use Microsoft Entra single sign-on.
-2.  [Configure Slack SSO](/entra/identity/saas-apps/slack-tutorial#configure-slack-sso) \- to configure the single sign-on settings on application side.
+     -  [Create a Microsoft Entra test user](/entra/identity/saas-apps/slack-tutorial#create-an-azure-ad-test-user) - to test Microsoft Entra single sign-on with B.Simon.
+     -  [Assign the Microsoft Entra test user](/entra/identity/saas-apps/slack-tutorial#assign-the-azure-ad-test-user) - to enable B.Simon to use Microsoft Entra single sign-on.
+2.  [Configure Slack SSO](/entra/identity/saas-apps/slack-tutorial#configure-slack-sso) - to configure the single sign-on settings on application side.
 
 
-     -  [Create a Slack test user](/entra/identity/saas-apps/slack-tutorial#create-slack-test-user) \- to have a counterpart of B.Simon in Slack that is linked to the Microsoft Entra representation of user.
-3.  [Test SSO](/entra/identity/saas-apps/slack-tutorial#test-sso) \- to verify whether the configuration works.
+     -  [Create a Slack test user](/entra/identity/saas-apps/slack-tutorial#create-slack-test-user) - to have a counterpart of B.Simon in Slack that is linked to the Microsoft Entra representation of user.
+3.  [Test SSO](/entra/identity/saas-apps/slack-tutorial#test-sso) - to verify whether the configuration works.
 
 ## Configure Microsoft Entra SSO
 
@@ -76,7 +76,7 @@ Follow these steps to enable Microsoft Entra SSO.
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator).
 2.  Browse to **Identity** &gt; **Applications** &gt; **Enterprise applications** &gt; **Slack** &gt; **Single sign-on**.
 3.  On the **Select a single sign-on method** page, select **SAML**.
-4.  On the **Set up single sign-on with SAML** page, click the edit/pen icon for **Basic SAML Configuration** to edit the settings.
+4.  On the **Set up single sign-on with SAML** page, select the edit/pen icon for **Basic SAML Configuration** to edit the settings.
 
     :::image type="content" source="../media/set-up-single-sign-on-with-saml-fc9f46b4-53c14c5e.png" alt-text="Screenshot showing an example of the setup single sign-on with saml page.":::
 
@@ -108,7 +108,7 @@ Follow these steps to enable Microsoft Entra SSO.
 
     :::image type="content" source="../media/default-attributes-7bda693c-b7a83f5b.png" alt-text="Screenshot showing an example of the attributes and claims page for a Slack application.":::
 
-7.  In addition to above, Slack application expects few more attributes to be passed back in SAML response which are shown below. These attributes are also pre populated but you can review them as per your requirements
+7.  In addition, Slack application expects a few more attributes to be passed back in SAML response. These attributes are also pre populated but you can review them as per your requirements
 
     :::image type="content" source="../media/claims-8fb18a60-97b2199d.png" alt-text="Screenshot showing an example of the required claims page for a Slack application.":::
 
@@ -116,14 +116,14 @@ Follow these steps to enable Microsoft Entra SSO.
 
     :::image type="content" source="../media/certificate-base-64-5cca0458-b7d5c2fc.png" alt-text="Screenshot showing an example of the SAML signing certification page.":::
 
-9.  On the **Set up Slack** section, copy the appropriate URL(s) based on your requirement.
+9.  On the **Set up Slack** section, copy the appropriate URLs based on your requirement.
 
     :::image type="content" source="../media/copy-configuration-624d5dde-e674e68c.png" alt-text="Screenshot showing an example of the U R L configurations page.":::
 
 
 ## Create a Microsoft Entra test user
 
-In this section, you'll create a test user called B.Simon.
+In this section, you create a test user called B.Simon.
 
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator).<br>
 2.  Browse to **Identity**, **Users**, **All users**.<br>
@@ -133,30 +133,30 @@ In this section, you'll create a test user called B.Simon.
 
      -  In the Display name field, enter `B.Simon.`
      -  In the User principal name field, enter the username@companydomain.extension. For example, `B.Simon@contoso.com`.
-     -  Select the **Show password** check box, and then write down the value that's displayed in the **Password** box.
+     -  Select the **Show password** check box, and then write down the value displayed in the **Password** box.
      -  Select **Review + create**.
 5.  Select **Create**.
 
 ## Assign the Microsoft Entra test user
 
-In this section, you'll enable B.Simon to use single sign-on by granting access to Slack.
+In this section, you enable B.Simon to use single sign-on by granting access to Slack.
 
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as at least a [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator).
 2.  Browse to **Identity, Applications**, **Enterprise applications, Slack**.<br>
 3.  In the app's overview page, find the **Manage** section and select **Users and groups**.<br>
 4.  Select **Add user**, then select **Users and groups** in the **Add Assignment** dialog.<br>
-5.  In the **Users and groups** dialog, select **B.Simon** from the Users list, then click the **Select** button at the bottom of the screen.<br>
-6.  If you are expecting a role to be assigned to the users, you can select it from the **Select a role** dropdown. If no role has been set up for this app, you see "Default Access" role selected.<br>
-7.  In the **Add Assignment** dialog, click the **Assign** button.<br>
+5.  In the **Users and groups** dialog, select **B.Simon** from the Users list, then select the **Select** button at the bottom of the screen.<br>
+6.  If you're expecting a role to be assigned to the users, you can select it from the **Select a role** dropdown. If no role has been set up for this app, you see "Default Access" role selected.<br>
+7.  In the **Add Assignment** dialog, select the **Assign** button.<br>
 
 ## Configure Slack SSO
 
 1.  In a different web browser window, sign in to your up Slack company site as an administrator
-2.  Click on your workspace name in the top left, then go to **Settings and administration**, **Workspace settings**.
+2.  Select on your workspace name in the top left, then go to **Settings and administration**, **Workspace settings**.
 
     :::image type="content" source="../media/tutorial-slack-team-settings-b2d349b6-963e188d.png" alt-text="Screenshot showing an example of how to configure Slack single sign-on.":::
 
-3.  In the **Settings and permissions** section, click the **Authentication** tab, and then click **Configure** button at SAML authentication method.
+3.  In the **Settings and permissions** section, select the **Authentication** tab, and then select **Configure** button at SAML authentication method.
 
     :::image type="content" source="../media/tutorial-slack-authentication-fab942a6-f4b67389.png" alt-text="Screenshot showing an example of the workspace settings and permissions page.":::
 
@@ -180,19 +180,19 @@ In this section, you'll enable B.Simon to use single sign-on by granting access 
 
     :::image type="content" source="../media/save-configuration-button-c7dde290-9fe170a4.png" alt-text="Screenshot showing an example of a member's profile information settings page.":::
 
-7.  Click **Save Configuration**.
+7.  Select **Save Configuration**.
 
     > [!NOTE]
     > If you have more than one Slack instance that you need to integrate with Microsoft Entra ID, set `https:// .slack.com`to **Service provider issuer** so that it can pair with the Azure application **Identifier** setting.
 
 ## Create Slack test user
 
-The objective of this section is to create a user called B.Simon in Slack. Slack supports just-in-time provisioning, which is by default enabled. There is no action item for you in this section. A new user is created during an attempt to access Slack if it doesn't exist yet.
+The objective of this section is to create a user called B.Simon in Slack. Slack supports just-in-time provisioning, which is by default enabled. There's no action item for you in this section. A new user is created during an attempt to access Slack if it doesn't exist yet.
 
 ## Test SSO
 
 In this section, you test your Microsoft Entra single sign-on configuration with following options.
 
- -  Click on **Test this application**. This will redirect to Slack Sign-on URL where you can initiate the login flow.
- -  Go to Slack Sign-on URL directly and initiate the login flow from there.
- -  You can use Microsoft My Apps. When you click the Slack tile in the My Apps, this will redirect to Slack Sign-on URL.
+ -  Select on **Test this application**. This will redirect to Slack Sign-on URL where you can initiate the sign-in flow.
+ -  Go to Slack Sign-on URL directly and initiate the sign-in flow from there.
+ -  You can use Microsoft My Apps. When you select the Slack tile in the My Apps, this will redirect to Slack Sign-on URL.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defend-key-vault-defender-cloud.investigate-alerts
+metadata:
+  title: Investigate and respond to Defender for Key Vault alerts
+  description: Follow the four-step investigation and response process for Microsoft Defender for Key Vault security alerts. The process includes identifying the source, responding to unauthorized access, measuring issues, and rotating affected secrets.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Investigate and respond to Defender for Key Vault alerts
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-investigate-alerts.md)]
