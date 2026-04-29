@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check your knowledge about pytest parametrize and fixtures
-  ms.date: 4/12/2024
+  description: Check your knowledge about pytest parametrization, fixtures, fixture scope, yield-based cleanup, and monkeypatch.
+  ms.date: 04/20/2026
   author: alfredodeza
   ms.author: orthomas
   ms.custom:
@@ -12,40 +12,73 @@ metadata:
     - devx-track-python
   ms.topic: unit
   module_assessment: true
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is one useful feature of adding fixtures to the _conftest.py_ file?"
+  - content: "What is one useful feature of defining fixtures in a _conftest.py_ file?"
     choices:
-    - content: "It allows importing those fixtures in a test suite."
-      isCorrect: false
-      explanation: "Incorrect. Adding fixtures in a _conftest.py_ file doesn't affect their importing in a suite."
-    - content: "It allows sharing the fixtures without importing them in a test suite."
+    - content: "Tests in the same directory and its subdirectories can request those fixtures by name without importing them."
       isCorrect: true
-      explanation: "Correct. By adding fixtures in a _conftest.py_, they become available to any test in a test suite without importing them."
-    - content: "Because it allows fixtures to require pytest fixtures."
+      explanation: "Correct. Pytest discovers `conftest.py` files automatically and makes their fixtures available to tests in the same directory and its subdirectories without explicit imports."
+    - content: "Fixtures defined in _conftest.py_ run only when the test file imports them."
       isCorrect: false
-      explanation: "Incorrect. Fixtures can always require pytest fixtures regardless of their location."
-  - content: "What makes a test a good candidate for `parametrize()`?"
+      explanation: "Incorrect. Fixtures in _conftest.py_ are discovered automatically by pytest and don't need to be imported by tests."
+    - content: "Fixtures in _conftest.py_ can only be requested by tests in that exact same file."
+      isCorrect: false
+      explanation: "Incorrect. Tests in the same directory and its subdirectories can request fixtures from _conftest.py_."
+  - content: "What makes a test a good candidate for `@pytest.mark.parametrize`?"
     choices:
-    - content: "When a test needs to loop over inputs for the same assertion."
+    - content: "When the same test logic should run for several input values or input/expected-value pairs."
       isCorrect: true
-      explanation: "Correct. Parametrize is a great choice to avoid looping, converting input items into individual tests."
-    - content: "When a test needs to catch multiple exceptions."
+      explanation: "Correct. Parametrization replaces a `for` loop or near-duplicate test functions with one test that pytest collects as a separate test case for each parameter set."
+    - content: "When unrelated behaviors need to be checked in one test function."
       isCorrect: false
-      explanation: "Incorrect. Multiple exceptions in a test don't make it a good candidate for _parametrize_."
+      explanation: "Incorrect. Parametrize is best when each case exercises the same behavior. Unrelated behaviors should usually be separate tests."
     - content: "When a test needs to run in parallel."
       isCorrect: false
-      explanation: "Incorrect. There’s no need to use _parametrize_ to run tests in parallel."
-  - content: "Why might multiple arguments with _parametrize_ not be a good idea?"
+      explanation: "Incorrect. Parallel execution is provided by plugins such as `pytest-xdist`, not by `parametrize`."
+  - content: "How do you parametrize a test that needs both an input value and an expected value?"
     choices:
-    - content: "Because pytest doesn't allow it. An exception gets raised instead."
-      isCorrect: false
-      explanation: "Incorrect. Pytest does allow multiple arguments with _parametrize_."
-    - content: "Because test functions don't allow multiple arguments."
-      isCorrect: false
-      explanation: "Incorrect. Test functions do allow multiple arguments, including when testing with _parametrize_." 
-    - content: "Because it can make tests harder to read."
+    - content: "Use a comma-separated argument-name string and a list of tuples, such as `@pytest.mark.parametrize(\"test_input, expected_value\", [(\"3+5\", 8), (\"3*4\", 12)])`."
       isCorrect: true
-      explanation: "Correct. Using multiple arguments with _parametrize_ can make tests harder to read."
+      explanation: "Correct. Each tuple supplies one value for each named test function argument, in order."
+    - content: "Use one list for all input values and a separate, unrelated list for all expected values."
+      isCorrect: false
+      explanation: "Incorrect. Pytest needs each parameter set to keep the input and expected value paired together."
+    - content: "Avoid multiple argument names because pytest doesn't support them."
+      isCorrect: false
+      explanation: "Incorrect. Pytest supports multiple argument names separated by commas in the first argument to `@pytest.mark.parametrize`."
+  - content: "What does `scope=\"module\"` do for a pytest fixture?"
+    choices:
+    - content: "Pytest creates and caches one fixture value for the module, then tears it down during module teardown after pytest finishes the last test in that module."
+      isCorrect: true
+      explanation: "Correct. Broader fixture scopes reuse the same fixture value for the duration of that scope."
+    - content: "Pytest creates a new fixture value before every assertion in the module."
+      isCorrect: false
+      explanation: "Incorrect. Even the default `function` scope creates one value per test function, not per assertion."
+    - content: "Pytest makes the fixture available without a `conftest.py` file."
+      isCorrect: false
+      explanation: "Incorrect. Scope controls fixture lifecycle, not where pytest discovers the fixture."
+  - content: "In a `yield`-based fixture, when does the code after `yield` run?"
+    choices:
+    - content: "During teardown, after the requesting test or fixture scope finishes."
+      isCorrect: true
+      explanation: "Correct. Code before `yield` performs setup and supplies a value. Code after `yield` runs during fixture teardown."
+    - content: "Before pytest passes the fixture value to the test."
+      isCorrect: false
+      explanation: "Incorrect. Code before `yield` runs before the test; code after `yield` runs during teardown."
+    - content: "Only when the test fails."
+      isCorrect: false
+      explanation: "Incorrect. Fixture teardown runs after the fixture's scope finishes, whether the requesting test passes or fails."
+  - content: "Why use the `monkeypatch` fixture when replacing a function or environment value in a test?"
+    choices:
+    - content: "It automatically undoes the change after the requesting test or fixture finishes."
+      isCorrect: true
+      explanation: "Correct. The `monkeypatch` fixture helps isolate tests by making temporary changes and then restoring the original state."
+    - content: "It permanently changes the application code so later tests see the same value."
+      isCorrect: false
+      explanation: "Incorrect. The `monkeypatch` fixture is designed for temporary changes scoped to a single test."
+    - content: "It runs parametrized tests in parallel."
+      isCorrect: false
+      explanation: "Incorrect. `monkeypatch` changes test state; it doesn't control parallel execution."
