@@ -1,18 +1,8 @@
-In this exercise, you use an interactive guide to explore the Conditional Access Optimization Agent embedded in Microsoft Entra.
+The Conditional Access Optimization Agent in Microsoft Security Copilot helps identity security teams analyze Conditional Access policies and recommend improvements. When new applications or user accounts are added to your environment, existing policies may not cover them effectively. The agent identifies these gaps and suggests optimizations.
 
-## Exercise overview
+In this interactive guide, which takes approximately 10 minutes to complete, you complete two tasks:
 
-The interactive guide walks you through a scenario at Northwind Traders, an organization that relies on Conditional Access policies to protect how employees sign in to company applications and services. Recently, several new applications and user accounts were added to the environment, which may affect how existing policies apply. As part of the identity security team, you need to review whether these new users and applications are covered by the appropriate policies.
+- **Navigate to the Conditional Access Optimization Agent and review its details** — Access the agent in the Microsoft Entra admin center and explore its configuration.
+- **Review agent activity and suggestions** — Examine the agent's activity feed, review its suggestions, and analyze how Conditional Access policies apply to newly added users and applications.
 
-The interactive guide covers two tasks:
-
-- **Task 1: Navigate to the Conditional Access Optimization Agent and review the details** - You open the Microsoft Entra admin center, navigate to the Security Copilot agents page, and open the Conditional Access Optimization Agent. You review the agent's overview page, including the agent summary, agent status, description, recent suggestions, and recent activity.
-- **Task 2: Review agent activity and suggestions** - You explore the agent's activity map to understand how it analyzes Conditional Access policies, including how it detects user drift, application drift, and policy consolidation opportunities. You review the agent's suggestions, examine policy impact, analyze proposed JSON changes, and explore agent settings and knowledge sources.
-
-This interactive guide should take approximately **10** minutes to complete.
-
-## Start the interactive guide
-
-Select the following image to launch the interactive guide.
-
-[![Thumbnail image for the Explore Conditional Access Optimization Agent interactive guide. Select to start the interactive guide.](../media/conditional-access-agent-thumbnail.png)](https://yourinteractiveguideurl.yourplaceholder.com)
+[![Thumbnail for the Conditional Access Optimization Agent interactive guide.](../media/conditional-access-agent-thumbnail.png)](https://yourplaceholder.example.com/ig-conditional-access-agent)
