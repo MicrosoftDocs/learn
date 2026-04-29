@@ -6,9 +6,9 @@ IT leaders evaluate new technologies, manage infrastructure, and protect organiz
 
 ## How Copilot+ PCs help IT decision makers
 
-- **On-device AI processing** — The dedicated NPU supports local AI workloads, reducing reliance on cloud processing and helping keep sensitive data on the device  
-- **Built-in security** — Features such as Windows Hello Enhanced Sign-in Security, Microsoft Pluton, and Secured-core PC protection provide hardware-backed protection  
-- **Integrated management** — Copilot+ PCs work with existing tools like Microsoft Intune, supporting deployment, policy enforcement, and device management at scale  
+- **On-device AI processing**—The dedicated NPU supports local AI workloads, reducing reliance on cloud processing and helping keep sensitive data on the device  
+- **Built-in security**—Features such as Windows Hello Enhanced Sign-in Security, Microsoft Pluton, and Secured-core PC protection provide hardware-backed protection  
+- **Integrated management**—Copilot+ PCs work with existing tools like Microsoft Intune, supporting deployment, policy enforcement, and device management at scale  
 
 :::column-end:::
 

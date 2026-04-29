@@ -12,12 +12,14 @@ Building on these productivity challenges, Copilot+ PCs introduce capabilities d
 
 ## How Copilot+ PCs address real work challenges
 
+:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a professional working at a desk in a shared office space.":::
+
 Copilot+ PCs are built to help professionals:
 
-- **Find information faster** — Locate files, emails, and insights without manually searching across apps and folders  
-- **Reduce repetitive work** — Automate routine tasks and streamline common workflows  
-- **Support creative and analytical tasks** — Use AI to assist with content creation, analysis, and decision-making  
-- **Stay productive across environments** — Work efficiently across locations with responsive performance and extended battery life  
+- **Find information faster**—Locate files, emails, and insights without manually searching across apps and folders  
+- **Reduce repetitive work**—Automate routine tasks and streamline common workflows  
+- **Support creative and analytical tasks**—Use AI to assist with content creation, analysis, and decision-making  
+- **Stay productive across environments**—Work efficiently across locations with responsive performance and extended battery life  
 
 ## Who benefits from Copilot+ PCs?
 
@@ -27,5 +29,3 @@ More broadly, any role that involves managing information, communicating with ot
 
 > [!NOTE]
 > Organizations exploring AI adoption strategies may find that Copilot+ PCs align naturally with existing modernization efforts.
-
-:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a professional working at a desk in a shared office space.":::

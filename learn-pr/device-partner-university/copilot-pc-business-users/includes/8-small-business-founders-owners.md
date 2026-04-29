@@ -6,9 +6,9 @@ Small and mid-sized business (SMB) leaders often manage multiple responsibilitie
 
 ## How Copilot+ PCs help small business founders and owners
 
-- **Operational efficiency** — On-device AI can support routine tasks and reduce manual work across business functions  
-- **Reliable performance** — Devices support multitasking across essential applications without added complexity  
-- **Built-in security** — Security features are enabled by default, helping protect business data without requiring dedicated IT support
+- **Operational efficiency**—On-device AI can support routine tasks and reduce manual work across business functions  
+- **Reliable performance**—Devices support multitasking across essential applications without added complexity  
+- **Built-in security**—Security features are enabled by default, helping protect business data without requiring dedicated IT support
 
 :::column-end:::
 

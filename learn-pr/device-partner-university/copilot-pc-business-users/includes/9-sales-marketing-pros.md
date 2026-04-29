@@ -6,9 +6,9 @@ Sales and marketing professionals operate in fast-paced environments where respo
 
 ## How Copilot+ PCs help
 
-- **Faster content creation** — On-device AI supports real-time content generation and editing  
-- **Improved engagement** — AI-assisted tools help draft communications and personalize outreach  
-- **Streamlined workflows** — Features like Click to Do enable quick actions on content directly from the screen
+- **Faster content creation**—On-device AI supports real-time content generation and editing  
+- **Improved engagement**—AI-assisted tools help draft communications and personalize outreach  
+- **Streamlined workflows**—Features like Click to Do enable quick actions on content directly from the screen
 
 :::column-end:::
 

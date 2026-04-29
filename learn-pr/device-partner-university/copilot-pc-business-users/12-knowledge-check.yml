@@ -20,7 +20,7 @@ quiz:
         - content: "Windows Studio Effects"
           isCorrect: false
           explanation: >-
-            Incorrect. Windows Studio Effects enhances video calls, but it does not help with reusing or modifying content.
+            Incorrect. Windows Studio Effects enhances video calls, but it doesn't help with reusing or modifying content.
         - content: "Click to Do"
           isCorrect: true
           explanation: >-
@@ -79,7 +79,7 @@ quiz:
   - content: >-
       How do Copilot+ PCs and Microsoft 365 Copilot work together?
     choices:
-        - content: "They are the same product with different names"
+        - content: "They're the same product with different names"
           isCorrect: false
           explanation: >-
             Incorrect. Copilot+ PCs and Microsoft 365 Copilot are separate but complementary solutions.
@@ -91,7 +91,7 @@ quiz:
         - content: "Microsoft 365 Copilot only works on Copilot+ PCs"
           isCorrect: false
           explanation: >-
-            Incorrect. Microsoft 365 Copilot works across supported devices and is not exclusive to Copilot+ PCs.
+            Incorrect. Microsoft 365 Copilot works across supported devices and isn't exclusive to Copilot+ PCs.
         - content: "Copilot+ PCs replace the need for Microsoft 365 Copilot"
           isCorrect: false
           explanation: >-

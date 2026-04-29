@@ -1,5 +1,7 @@
 Copilot+ PCs support a wide range of real-world work scenarios across different roles and industries.
 
+:::image type="content" border="true" source="../media/information-technology-decision-maker-at-desk.png" alt-text="Photograph of a woman wearing a headset while working on a Copilot+ PC.":::
+
 For example:
 
 - A sales professional can quickly repurpose content from a presentation into an email using on-device AI  

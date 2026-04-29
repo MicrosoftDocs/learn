@@ -4,12 +4,12 @@ These capabilities support a wide range of professionals across modern organizat
 
 Copilot+ PCs provide value across a wide range of roles and industries. Professionals in areas such as sales, marketing, customer service, and creative work can benefit from improved speed, responsiveness, and content creation capabilities.
 
+:::image type="content" border="true" source="../media/c-suite-executive-at-desk.png" alt-text="Photograph of a businessman at a desk working on a Copilot+ PC.":::
+
 More broadly, any role that involves managing information, communicating with others, or making time-sensitive decisions can benefit from on-device AI.
 
 > [!NOTE]
 > Organizations exploring AI adoption strategies may find that Copilot+ PCs align naturally with existing modernization efforts.
-
-:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a professional working at a desk in a shared office space.":::
 
 Copilot+ PCs are designed to support professionals across a range of business functions. While the benefits are broad, different roles often prioritize different capabilities.
 
