@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3c079cbe-74c9-479d-9d3a-0404213be4fe]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 When synthesizing speech, you can use a **SpeechConfig** object to customize the audio that is returned by Azure Speech in Foundry Tools.
 
 ## Audio format
@@ -28,3 +37,5 @@ speech_config.speech_synthesis_voice_name='en-US-Brian:DragonHDLatestNeural'
 ```
 
 For information about voices, see the [Azure Speech SDK documentation](/azure/ai-services/speech-service/language-support?tabs=tts).
+
+::: zone-end

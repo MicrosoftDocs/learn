@@ -26,16 +26,16 @@ If an organization allows its users to bring their own devices, the users should
 
 1.  Turn on your iOS device.
 2.  After you select your **Language**, connect your device to Wi-Fi.
-3.  On the **Set up iOS device** screen, choose whether you want to:
-    
-     -  Set up as new device
-     -  Restore from iCloud backup
-     -  Restore from iTunes backup
-4.  Once you’ve connected to Wi-Fi, the **Configuration** screen will appear. This will say:
+3.  Once you've connected to Wi-Fi, the **Configuration** screen will appear. This will say:
     
      -  \[Your Company\] will automatically configure your device.
      -  Configuration allows \[Your Company\] to manage this device over the air. An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely. An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.
      -  Configuration is provided by: \[Your Company's\] iOS Team \[Address\]
+4.  On the **Set up iOS device** screen, choose whether you want to:
+    
+     -  Set up as new device
+     -  Restore from iCloud backup
+     -  Restore from iTunes backup
 5.  **Log in with your Apple ID**. Logging in lets you install the Company Portal app and install the management profile that will let your company give you access to its resources, such as email and apps.
 6.  Agree to the **Terms and Conditions** and decide whether you want to send diagnostic information to Apple.
 7.  Once you complete your enrollment, your device may prompt you to take more actions. Some of these steps might be entering your password for email access or setting up a passcode.

@@ -7,8 +7,8 @@ metadata:
   title: Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster
   description: "Try-This exercise - Assign a policy definition to an Azure Kubernetes cluster"
   ms.date: 05/15/2025
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
   - N/A
