@@ -34,7 +34,7 @@ products:
 subjects:
   - security
   - cloud-security
-  - database
+  - databases
 units:
   - learn.wwl.configure-azure-sql-auditing.introduction
   - learn.wwl.configure-azure-sql-auditing.describe-azure-sql-auditing-capabilities
