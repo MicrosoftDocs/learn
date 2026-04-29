@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-model-context-protocol-servers-registries-allowlists.md)]
+  [!include[](includes/3-model-context-protocol-servers-registries-allow-lists.md)]
