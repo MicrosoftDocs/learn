@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-key-vault.configure-access
+metadata:
+  title: Configure access to Azure Key Vault
+  description: Configure least-privilege RBAC access control, managed identity authentication, and just-in-time privilege activation for Azure Key Vault operations.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure access to Azure Key Vault
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-configure-access.md)]

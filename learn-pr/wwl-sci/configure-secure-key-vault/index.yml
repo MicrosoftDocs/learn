@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.configure-secure-key-vault
+metadata:
+  title: Configure and Secure Azure Key Vault
+  description: "Configure a security-hardened Azure Key Vault for enterprise workloads. Apply soft delete and purge protection, enforce least-privilege RBAC access with just-in-time activation, and secure the network perimeter using firewall rules and private endpoints."
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-key-vault
+  ai-usage: ai-assisted
+title: Configure and secure Azure Key Vault
+summary: Configure a security-hardened Azure Key Vault for enterprise workloads. Apply soft delete and purge protection, enforce least-privilege RBAC access with just-in-time activation, and secure the network perimeter using firewall rules and private endpoints.
+abstract: |
+  After completing this module, you'll be able to:
+    - Deploy Azure Key Vault with security controls enforced at creation time
+    - Configure role-based access control and just-in-time privilege for Key Vault operations
+    - Secure Key Vault network access using firewall rules, virtual network service endpoints, and private endpoints
+prerequisites: |
+  - Working knowledge of Azure Key Vault, including deploying and using a vault
+  - Familiarity with Azure role-based access control (RBAC) and managed identities
+  - Basic understanding of Azure Virtual Network and private endpoint concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-key-vault
+  - azure
+  - azure-virtual-network
+  - azure-private-link
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.configure-secure-key-vault.introduction
+- learn.wwl.configure-secure-key-vault.deploy-key-vault
+- learn.wwl.configure-secure-key-vault.configure-access
+- learn.wwl.configure-secure-key-vault.configure-firewall-network
+- learn.wwl.configure-secure-key-vault.knowledge-check
+- learn.wwl.configure-secure-key-vault.summary
+badge:
+  uid: learn.wwl.configure-secure-key-vault.badge

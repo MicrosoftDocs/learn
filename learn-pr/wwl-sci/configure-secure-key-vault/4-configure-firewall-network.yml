@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-key-vault.configure-firewall-network
+metadata:
+  title: Configure Key Vault firewall and network settings
+  description: Secure Azure Key Vault network access using firewall rules, virtual network service endpoints, and private endpoints. Understand the security trade-offs of each approach.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure Key Vault firewall and network settings
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-firewall-network.md)]
