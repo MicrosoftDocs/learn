@@ -8,7 +8,7 @@ Be aware of the following limitations and caveats:
 
 #### Deploy Microsoft 365 Apps with Intune
 
-1.  Sign in to the **Endpoint Administrator admin center**.
+1.  Sign in to the **Microsoft Intune admin center**.
 2.  Select **Apps**, then select **All Apps**. Select **+ Add**.
 3.  In the **Select app type** panel, in the **App type** list, under **Microsoft 365 Apps**, select **Windows 10 and later**.
 4.  Choose **Select**. In the **App suite information** tab, configure the following:
