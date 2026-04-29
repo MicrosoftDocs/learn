@@ -1,6 +1,6 @@
 Modern cloud applications require identity-based authentication that eliminates password sprawl and enforces multifactor authentication. Contoso Financial Services discovered that their AI fraud detection service uses SQL authentication with a shared password stored in a configuration file—a security risk identified during their security review.
 
-:::image type="content" source="../media/managed-identity-auth-flow.png" alt-text="Before and after diagram comparing SQL password authentication to managed identity token flow via Microsoft Entra ID, with no stored credentials required." lightbox="../media/managed-identity-auth-flow.png":::
+:::image type="content" source="../media/managed-identity-authentication-flow.png" alt-text="Before and after diagram comparing SQL password authentication to managed identity token flow via Microsoft Entra ID, with no stored credentials required." lightbox="../media/managed-identity-authentication-flow.png":::
 
 | Configuration step | Action |
 |-------------------|--------|
