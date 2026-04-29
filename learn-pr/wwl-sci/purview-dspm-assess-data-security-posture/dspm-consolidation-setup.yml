@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.dspm-consolidation-setup
+title: How Data Security Posture Management (DSPM) works and what to enable
+metadata:
+  title: How Data Security Posture Management (DSPM) works and what to enable
+  description: "Learn how DSPM consolidates signals from data loss prevention (DLP), information protection, and Insider Risk Management into a unified posture view. Enable analytics and assign access to start generating posture data."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/dspm-consolidation-setup.md)]

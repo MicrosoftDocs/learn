@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.discover-ai-apps-observability
+title: Discover AI apps and agents with AI observability
+metadata:
+  title: Discover AI Apps and Agents with AI Observability
+  description: "Learn to use AI observability in DSPM to discover AI apps and agents with sensitive interactions and assess AI-related risk."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/discover-ai-apps-observability.md)]
