@@ -38,7 +38,7 @@ Every AuditEvent log record captures the context needed for security investigati
 | `operationName` | The action performed—for example, `SecretGet`, `KeyCreate`, `VaultDelete`. |
 | `resultType` | `Success` or `Failure`. |
 | `callerIpAddress` | The IP address of the caller. Unusual source IPs are often the first indicator in an investigation. |
-| `identity` | Claims objects containing the caller's identity. The `appid` claim identifies the calling application. The object identifier and User Principla Name (UPN) are stored under full XML claim URIs—in Log Analytics, use `parse_json(identity_s)` or the flattened identity columns to extract them. |
+| `identity` | Claims objects containing the caller's identity. The `appid` claim identifies the calling application. The object identifier and User Principal Name (UPN) are stored under full XML claim URIs—in Log Analytics, use `parse_json(identity_s)` or the flattened identity columns to extract them. |
 | `resourceId` | The full resource path of the vault. |
 | `time` | UTC timestamp of the operation. |
 
