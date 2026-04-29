@@ -7,4 +7,4 @@ In this interactive guide, which takes approximately 10 minutes to complete, you
 
 This interactive guide helps you understand how agents work and how to create one tailored to your organization's security needs.
 
-[![Thumbnail for the Explore and create an agent interactive guide.](../media/explore-and-create-agent-thumbnail.png)](https://yourplaceholder.example.com/ig-create-agent)
+[![Thumbnail for the Explore and create an agent interactive guide.](../media/explore-and-create-agent-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_create_an_agent_web/story.html)
