@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-certificates-monitor-key-vault.manage-certificates
+metadata:
+  title: Manage certificates in Azure Key Vault
+  description: Manage certificates in Azure Key Vault using integrated CA issuance, lifetime action triggers, autorenewal, certificate contacts, and exportable certificate configuration.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Manage certificates in Azure Key Vault
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-manage-certificates.md)]

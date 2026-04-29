@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8ce11522-7c96-423a-96e8-690c57ec232d]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Before deploying a model, you want to understand how it performs across different dimensions. Model benchmarks provide objective, measurable data to help you compare models and make informed selection decisions. The Microsoft Foundry portal offers comprehensive benchmarking tools organized into quality, safety, cost, and performance metrics.
 
 ## Access model benchmarks
@@ -95,3 +105,5 @@ The model leaderboard lets you view top models for specific metrics. You can sor
 - Feature support (function calling, structured output, vision)
 
 Select models by checking boxes next to their names, then choose **Compare** to open the detailed comparison view.
+
+::: zone-end

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b1904328-785b-449c-a468-499b3c6fcbb1]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The *function* tool allows your model to call developer-defined functions to retrieve data or trigger actions during a response.
 
 ## What is the function tool?
@@ -150,3 +161,5 @@ The general process for using the function tool is:
 - Function calling improves reliability, but final outputs still need review for critical decisions
 
 Used well, the function tool turns a model from a text generator into an orchestrator that can interact with real systems in a controlled, auditable way.
+
+::: zone-end

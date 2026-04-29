@@ -5,9 +5,9 @@ metadata:
   title: Try-This exercise - Scale the node count in an Azure Kubernetes Service cluster
   description: "Try-This exercise - Scale the node count in an Azure Kubernetes Service cluster"
   ms.date: 10/25/2023
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-autoscaler-node-pool.md)]
+  [!include[](includes/6-autoscaler-node-pool.md)]

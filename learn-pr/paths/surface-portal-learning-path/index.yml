@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.dpu.surface-portal-learning-path
+title: Surface Management and Support Portals learning path
+metadata:
+  title: Surface Management And Support Portals Learning Path
+  description: "This learning path helps IT administrators, service providers, and partners learn how to manage and support Microsoft Surface devices using the Surface Management Portal and Surface Support Portal. Learners compare both portals, understand how Intune enrollment and tenant context affect access, and practice selecting the correct portal for common management and support tasks.\nThrough task-based modules and decision scenarios, learners verify prerequisites, assign required roles, initiate service or support actions, and track requests using the correct portal while following tenant-scoped guardrails and escalation boundaries."
+  ms.date: 04/29/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: learning-path
+summary: >
+  By completing this learning path, you’ll be able to compare Surface Management Portal and Surface Support Portal, choose the correct portal based on device enrollment and task type, and access each portal with the required roles. You’ll also learn how to create service orders and support requests, track requests end-to-end in Surface Support Portal, and validate or escalate access issues when needed.
+prerequisites: None
+iconUrl: /training/achievements/surface-portal-learning-path-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+modules:
+  - learn.dpu.introduction-to-surface-portals
+  - learn.dpu.getting-started-surface-management-portal
+  - learn.dpu.getting-started-surface-support-portal
+  - learn.dpu.confirm-access-assign-roles
+  - learn.dpu.tenant-setup-surface
+  - learn.dpu.surface-portal-service-support
+  - learn.dpu.troubleshooting-surface-portal-access
+  - learn.dpu.surface-support-service-provider
+trophy:
+  uid: learn.dpu.surface-portal-learning-path.trophy

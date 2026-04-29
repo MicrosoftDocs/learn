@@ -4,8 +4,8 @@ metadata:
   title: Guided Project - Deploy applications to Azure Kubernetes Service
   description: "Welcome to this interactive skills validation experience. Completing this module helps prepare you for the Deploy and manage containers with Azure Kubernetes Service assessment."
   ms.date: 03/05/2025
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: module
   ms.custom:
   - N/A
