@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.agent-tooling-mcp-execution-environments.mcp-servers-registry-allowlists
-title: MCP servers registry and allow lists
+title: Model Context Protocol (MCP) servers, registries, and allow lists
 metadata:
-  title: MCP servers registry and allow lists
+  title: Model Context Protocol (MCP) servers, registries, and allow lists
   description: This content is a part of the Tooling, MCP, and Agent Execution Environments.
   author: camihmerhar
   ms.author: camhernandez
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-mcp-servers-registry-allowlists.md)]
+  [!include[](includes/3-model-context-protocol-servers-registries-allowlists.md)]
