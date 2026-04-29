@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac3a71ed-0175-494b-a53b-e7e8f04bb55b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Speech synthesis, or *text-to-speech*, is the reverse of speech-to-text. It involves submitting text to a model, which returns an audio stream of the vocalized text.
 
 Models that support text-to-speech operations include:
@@ -37,3 +47,5 @@ with client.audio.speech.with_streaming_response.create(
 
 print(f"Speech generated and saved to {speech_file_path}")
 ```
+
+::: zone-end

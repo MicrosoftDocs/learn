@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c065d379-f475-4877-9ca2-6966bd474879]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 After you understand the capabilities of the Azure Language MCP server, the next step is to connect it to an agent and start using it. This involves creating an agent in Microsoft Foundry, connecting the Language MCP tool, testing it in the agent playground, and optionally building a client application to interact with the agent programmatically.
 
 ## Create a Foundry project and agent
@@ -111,3 +121,5 @@ When a user's prompt involves multiple text analysis tasks, the agent can call m
 This prompt requires both entity recognition and sentiment analysis. The agent identifies both tasks, calls the appropriate tools (`extract_named_entities_from_text` and `detect_language_from_text`), and combines the results into a single response.
 
 Each tool call goes through the MCP server independently, and the agent synthesizes the outputs into a coherent answer for the user.
+
+::: zone-end
