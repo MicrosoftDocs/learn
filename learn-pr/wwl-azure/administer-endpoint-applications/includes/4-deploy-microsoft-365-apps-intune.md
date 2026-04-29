@@ -4,7 +4,7 @@ Be aware of the following limitations and caveats:
 
  -  If any Office apps are open when Intune installs the app suite, the installation might fail, and users might lose data from unsaved files.
  -  Intune doesn't support installing Microsoft 365 Apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Microsoft 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
- -  Multiple required or available app assignments aren't additive. A later app assignment will overwrite pre-existing installed app assignments. For example, if the first set of Office apps contains Word, and the later one doesn't, Word will be uninstalled. This condition doesn't apply to any Visio or Project applications.
+ -  Multiple required or available app assignments aren't additive. A later app assignment will overwrite preexisting installed app assignments. For example, if the first set of Office apps contains Word, and the later one doesn't, Word will be uninstalled. This condition doesn't apply to any Visio or Project applications.
 
 #### Deploy Microsoft 365 Apps with Intune
 
@@ -36,9 +36,9 @@ Be aware of the following limitations and caveats:
          -  Monthly Enterprise Channel
          -  Semi-Annual Enterprise Channel (Preview)
          -  Semi-Annual Enterprise Channel
-     -  **Remove other versions**: Choose whether you want to remove pre-existing Office .MSI apps from end-user devices. The installation won’t succeed if there are pre-existing .MSI apps on end-user devices. The apps to be uninstalled aren't limited to the apps selected for installation in Configure App Suite, as it will remove all Office (MSI) apps from the end user device. When Intune reinstalls Office on your end user's machines, end users will automatically get the same language packs that they had with previous .MSI Office installations.
+     -  **Remove other versions**: Choose whether you want to remove preexisting Office .MSI apps from end-user devices. The installation won’t succeed if there are preexisting .MSI apps on end-user devices. The apps to be uninstalled aren't limited to the apps selected for installation in Configure App Suite, as it will remove all Office (MSI) apps from the end user device. When Intune reinstalls Office on your end user's machines, end users will automatically get the same language packs that they had with previous .MSI Office installations.
      -  **Use shared computer activation**: This is used for activating Microsoft 365 apps when multiple users use the same device.
      -  **Accept the Microsoft Software License Terms on behalf of users**: Choose if you wish to accept, which hides the prompt from end users.
      -  **Install background service for Microsoft Search in Bing**: If you decide to deploy this extension, it sets Bing as the default search engine for Google Chrome and provides easier access to Microsoft Search capabilities. If Bing is already the default search engine, the extension doesn't get installed.
      -  **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end user's device. Select this option if you want to install additional languages with the app suite. You can deploy additional languages for Microsoft 365 Apps managed through Intune. The list of available languages includes the Type of language pack (core, partial, and proofing).
-6.  Continue configuring the profile, assigning the profile to users, devices or groups. Review the settings and select **Create** to complete the profile.
+6.  Continue configuring the profile, assigning the profile to users, devices, or groups. Review the settings and select **Create** to complete the profile.
