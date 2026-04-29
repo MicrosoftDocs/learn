@@ -2,4 +2,4 @@ Now it's your turn. In this lab, you'll use Microsoft Foundry to start developin
 
 Launch the lab and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-agent-quickstart&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-agent-quickstart?azure-portal=true)
