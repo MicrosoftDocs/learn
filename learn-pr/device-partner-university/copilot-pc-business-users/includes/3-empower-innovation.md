@@ -1,23 +1,51 @@
-With next-generation AI, organizations can meet current and future challenges in new ways. Business leaders want their teams to use AI to help drive product advancement and improve customer service experiences.
+Copilot+ PCs are powered by a combination of specialized hardware and integrated AI experiences. These components help explain how Copilot+ PCs support everyday work scenarios. Understanding these components helps explain how these devices deliver value in everyday work scenarios.
 
-Copilot+ PCs can address these issues by helping employees save time and streamline their workflows.
+## The neural processing unit (NPU)
 
-## Productivity needs
+At the core of every Copilot+ PC is a dedicated neural processing unit (NPU) capable of performing 40 or more trillion operations per second (TOPS). The NPU is purpose-built for AI workloads and operates alongside the CPU and GPU to handle AI tasks efficiently.
 
-According to recent research, organizations have identified their most pressing need as improving the pace of work.
+In practice, this enables:
 
-Professionals are struggling to find uninterrupted time for meaningful activities throughout the work day. In fact, 68% want to decrease the amount of time spent on low-value activities so they can invest more in high-value work and innovation.
+- **On-device AI processing** — Many AI-powered features run locally on the device, supporting faster responses, lower latency, and the ability to work without relying entirely on cloud connectivity  
+- **Improved efficiency** — The NPU handles AI workloads more efficiently than the CPU or GPU, helping extend battery life even during sustained use  
+- **Enhanced data control** — Processing AI tasks locally can reduce the need to send sensitive information to external services, supporting data privacy and governance requirements  
 
-To elaborate, 86% of professionals would like help swiftly locating files, information, and insights saving them valuable time otherwise spent searching for resources. This is just one example of a low-value activity that can be automated by AI.
+## Key capabilities for business professionals
 
-:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a financial advisor working at a table in a shared office space.":::
+:::image type="content" source="../media/copilot-plus-pc-experiences.svg" alt-text="Diagram illustrating how Copilot+ PCs support AI-powered experiences across common business tasks, including content creation, communication, search, and device interactions using on-device AI.":::
 
-## Enhanced work experiences
+Copilot+ PCs include a range of built-in AI features designed for everyday professional use:
 
-Copilot+ PCs can help professionals unlock their full potential. They can spur innovation by supporting employees in their work boosting their productivity on the spot and helping them achieve their goals.
+### Click to Do
 
-The fast and tailored experience provided by cutting-edge, next-generation AI technology can quickly uncover valuable insights sparking daring changes in business strategies and personal creativity.
+Click to Do lets users take immediate action on text or images visible on their screen. Content can be quickly copied, summarized, searched, or shared—reducing the steps between finding information and acting on it.
 
-## Source
+### Improved Windows search
 
-Microsoft. (2023, May 9). Work Trend Index | Will AI Fix Work? Microsoft WorkLab. https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work
+Improved Windows search allows users to find files, settings, and images using natural language. Results can include both local and cloud-based content, helping reduce time spent locating information.
+
+### Live Captions
+
+Live Captions provides real-time captioning and translation for audio and video content. This supports accessibility and enables more effective communication across languages.
+
+### Windows Studio Effects
+
+Windows Studio Effects enhances video calls using features such as background blur, eye contact correction, automatic framing, and voice focus—helping users present clearly in virtual environments.
+
+### Cocreator
+
+Cocreator in Paint uses on-device AI to help generate and refine visual content. This can support quick creation of visuals for presentations or internal communications.
+
+### Recall (preview)
+
+Recall helps users find previously viewed content across apps, documents, and web pages using natural language search.
+
+> [!NOTE]  
+> Recall requires Windows Hello Enhanced Sign-in Security and processes data locally on the device. IT administrators can manage Recall policies through Microsoft Intune.
+
+## Working with Microsoft 365 Copilot
+
+Copilot+ PCs complement Microsoft 365 Copilot; the AI assistant built into apps such as Word, Excel, PowerPoint, Outlook, and Teams. While Microsoft 365 Copilot uses cloud-based AI for tasks like drafting, summarizing, and analyzing, Copilot+ PCs support efficient local processing that helps maintain device performance during AI workloads.
+
+> [!NOTE]  
+> Copilot+ PC features and Microsoft 365 Copilot are complementary but separate. Copilot+ PC features are built into Windows and powered by the NPU. Microsoft 365 Copilot requires an eligible Microsoft 365 license.

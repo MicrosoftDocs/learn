@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-windows-365
+title: Introduction to Windows 365
+metadata:
+  title: Introduction To Windows 365
+  description: 'In this module, you’ll explore what Windows 365 is, how it delivers cloud‑based Windows desktops, and how to decide if it’s the right solution for your organization’s workforce needs.'
+  ms.date: 04/28/2026
+  author: sheridan-connor
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: microsoft-365-business
+summary: >2+
+  Modern organizations need to support flexible work styles for all kinds of employees while maintaining security and manageability. In this module, you’ll explore what Windows 365 is, how it delivers cloud‑based Windows desktops, and how to decide if it’s the right solution for your organization’s workforce needs.
+abstract: |2+
+  By the end of this module, you'll be able to:
+  - Evaluate whether Windows 365 is appropriate for delivering cloud‑based Windows desktops in common organizational scenarios.
+  - Describe how Windows 365 hosts, streams, and manages Cloud PC desktops for end users.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-windows-365.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365-business
+units:
+  - learn.dpu.introduction-windows-365.introduction
+  - learn.dpu.introduction-windows-365.what-is-windows-365
+  - learn.dpu.introduction-windows-365.how-windows-365-works
+  - learn.dpu.introduction-windows-365.when-use-windows-365
+  - learn.dpu.introduction-windows-365.knowledge-check
+  - learn.dpu.introduction-windows-365.conclusion
+badge:
+  uid: learn.dpu.introduction-windows-365.badge

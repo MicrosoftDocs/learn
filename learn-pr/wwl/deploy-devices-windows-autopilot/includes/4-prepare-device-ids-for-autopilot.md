@@ -18,15 +18,9 @@ As discussed earlier, you can create Windows Autopilot deployment profiles in th
 
 ### Prepare a Microsoft Autopilot deployment
 
-You can manage Windows Autopilot deployment by using:
+You manage Windows Autopilot deployment by using Microsoft Intune.
 
- -  Intune
- -  Microsoft Store for Business
-
-> [!NOTE]
-> Microsoft Store for Business is a cloud service that organizations of any size can use. Organizations use it to distribute both modern Windows apps that vendors develop for a general audience and line-of-business (LOB) apps that are available only for the organization*.*
-
-You must perform the first step—uploading device-specific information, including hardware IDs—in Microsoft Store for Business or Microsoft Intune. If you plan to manage Windows Autopilot in Intune, you’ll have to sync Windows Autopilot devices from Microsoft Store for Business to Intune.
+You must upload device-specific information, including hardware IDs, to Microsoft Intune. You can do this by importing a CSV file or by using the automated methods described in the following sections.
 
 To deploy devices by using Windows Autopilot, you must first obtain the CSV file that contains the device-specific information.
 
@@ -50,7 +44,7 @@ After installing the script, you can generate device-specific information and sa
 
 ### Upload the device-specific CSV file
 
-To do this, you must have the Admin role in Microsoft Store for Business or Global admin role in Intune. When you upload a CSV file, you'll receive a notification if the upload was successful and the number of devices that were added. If there was any error, for example, if the CSV file wasn't formatted properly or some devices were already in Microsoft Store for Business, you can download the CSV file with error information and URLs that point to detailed error descriptions, and then you can review the details.
+To upload a CSV file to Microsoft Intune, you must have the Intune Administrator role or Global Administrator role. When you upload a CSV file, you'll receive a notification if the upload was successful and the number of devices that were added. If there was any error, for example, if the CSV file wasn't formatted properly or some devices were already registered, you can download the CSV file with error information and URLs that point to detailed error descriptions, and then you can review the details.
 
 When you upload a CSV file, you can add devices to an existing Windows Autopilot deployment group, create a new Windows Autopilot deployment group for the devices, or add them without using groups. You can use groups when you want to apply the same deployment settings to multiple devices at once.
 

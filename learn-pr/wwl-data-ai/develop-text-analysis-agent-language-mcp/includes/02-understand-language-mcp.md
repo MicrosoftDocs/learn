@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=55e5ff55-159c-4f64-a706-2930540b45ff]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 The Azure Language MCP server connects AI agents to Azure Language services through the **Model Context Protocol (MCP)**. Before exploring the Language MCP server itself, it helps to understand what MCP is and how it enables agents to use external tools.
 
 ## What is the Model Context Protocol?
@@ -53,6 +63,8 @@ https://{foundry-resource-name}.cognitiveservices.azure.com/language/mcp?api-ver
 ```
 
 Replace `{foundry-resource-name}` with the name of your Foundry resource (or Azure Language resource). This endpoint is what you configure when connecting the MCP server to your agent.
+
+::: zone-end
 
 > [!NOTE]
 > Azure Language also provides a local MCP server that you can host in your own environment. For setup guidance, see the [Azure Language MCP Server quickstart](https://github.com/Azure-Samples/ai-language-samples) in the Azure Language samples repository.
