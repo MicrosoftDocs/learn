@@ -1,17 +1,36 @@
-Now that you know how Copilot+ PCs can enhance productivity and simplify tasks, let’s take a closer look at who might benefit most from using them.
+In addition to AI-powered capabilities, Copilot+ PCs include built-in security and management features designed to support modern IT environments.
 
-## Early adopters
+## Security, privacy, and IT management
 
-Some people are early adopters—individuals who eagerly embrace new technologies soon after they become available in the market. These forward-thinking leaders not only seek innovation but also actively drive change within their organizations.
+For IT decision makers evaluating new devices, security and manageability are as important as performance. Copilot+ PCs are designed with multiple layers of built-in protection—many enabled by default—and integrate with the tools IT teams already use.
 
-Copilot+ PCs are especially well-suited for early adopters in non-regulated industries, such as media, entertainment, and marketing. These sectors adhere to fewer government regulations, making it easier to quickly adopt and implement cutting-edge technology.
+## Hardware-backed security
 
-Within these non-regulated industries, Copilot+ PCs are particularly helpful for businesses that employ a substantial number of staff members engaged in sales and marketing functions—things like customer service, lead generation, client management, market research, and sales analysis.
+Copilot+ PCs include security features built into the device hardware, helping provide protection beyond software alone:
 
-## The Copilot+ PC business audience
+- **Microsoft Pluton security processor** — Integrated into the device’s silicon, Pluton helps protect credentials, encryption keys, and device identity from physical and firmware-level attacks.  
+- **Secured-core PC protection** — Copilot+ PCs meet Secured-core standards, combining hardware, firmware, and software protections to defend against sophisticated threats, including those targeting the boot process.  
+- **Windows Hello Enhanced Sign-in Security (ESS)** — Enables passwordless authentication using biometrics, with credential data securely processed and stored on the device.  
 
-To recap, Copilot+ PCs are great for people who:
+## On-device AI and data privacy
 
-- Tend to be an early adopter
-- Work in a non-regulated industry
-- Employ a substantial number of staff members engaged in sales and marketing functions
+Many AI features on Copilot+ PCs process locally through the NPU. This reduces the need to send data to the cloud for certain tasks and can support organizational data protection and privacy requirements.
+
+This approach is especially relevant for organizations that work with:
+
+- Confidential customer or client information  
+- Internal financial or strategic data  
+- Regulated data subject to compliance requirements  
+
+On-device processing can help organizations adopt AI capabilities while maintaining existing data governance practices.
+
+## IT management and deployment
+
+Copilot+ PCs are designed to integrate into existing IT environments:
+
+- **Microsoft Intune** — Manage devices using familiar tools for policy enforcement, app deployment, and compliance monitoring.  
+- **Windows Autopilot** — Enable zero-touch deployment so devices can be configured and shipped directly to employees.
+- **Policy-based management** — Copilot+ PC features can be controlled using existing policy tools, allowing IT to define how features are enabled and used.  
+
+> [!NOTE]  
+> Copilot+ PC capabilities vary by device manufacturer and configuration. For the latest information on available features, security specifications, and management options, see Copilot+ PCs.

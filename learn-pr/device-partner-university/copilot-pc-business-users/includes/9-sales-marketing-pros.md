@@ -1,39 +1,21 @@
-Operating outside of IT, these business decision makers (BDMs) are focused on helping their teams produce more and better work—especially in terms of generating sales and revenue for their organizations.
+Sales and marketing professionals operate in fast-paced environments where responsiveness, communication, and content creation are critical. They often manage multiple tools, campaigns, and customer interactions simultaneously.
 
-They want their teams to use AI-enhanced technologies to advance their flexibility, creativity, and knowledge.
+:::row:::
 
-:::image type="content" border="true" source="../media/marketing-professional-at-work.png" alt-text="Photograph of a woman using a Copilot+ PC laptop on a riser connected to two monitors, working on a PowerPoint presentation.":::
+:::column span="4":::
 
-## Challenges for sales/marketing
+## How Copilot+ PCs help
 
-According to Microsoft research, the top five responsibilities that sales and marketing professionals manage are:
+- **Faster content creation** — On-device AI supports real-time content generation and editing  
+- **Improved engagement** — AI-assisted tools help draft communications and personalize outreach  
+- **Streamlined workflows** — Features like Click to Do enable quick actions on content directly from the screen
 
-- Marketing
-- Digital media
-- Sales and business development
-- Product development
-- Employee management
+:::column-end:::
 
-We also identified the top five growth-driving priorities that they hold for their teams and organizations:
+:::column span="":::
 
-- Marketing
-- Efficiency and productivity
-- Awareness
-- Products and services
-- Suppliers
+:::image type="content" border="true" source="../media/marketing-professional.png" alt-text="Marketing professional working on digital content at a laptop.":::
 
-## Essential workplace efficiency
+:::column-end:::
 
-For sales and marketing professionals, generating revenue is their number one priority. They’re always on the lookout for new solutions to help streamline workflows—so their teams can be more productive and bring in greater profits.
-
-Indeed, over a quarter of Chief Revenue Officers plan to create new teams to oversee generative AI operations by 2025—reflecting the growing demand for AI solutions in this demographic.
-
-## Profitability via productivity
-
-Copilot+ PCs empower organizations to quickly adapt and innovate in response to shifting customer and consumer behaviors.
-
-With AI integrated into their devices, sales and marketing professionals can swiftly make creative connections and identify innovative solutions—enabling their organizations to achieve their financial goals faster and more efficiently.
-
-## Source
-
-Gartner. (2023 June 22). Press release. https://www.gartner.com/en/newsroom/press-releases/2023-06-22
+:::row-end:::

@@ -1,108 +1,31 @@
-When it comes to business, there are four key early adopter types:
+These capabilities support a wide range of professionals across modern organizations.
 
-- ITDMs
-- C-suite executives
-- SMB founders and owners
-- Sales and Marketing pros
+## Who benefits from Copilot+ PCs?
 
-## Information Technology Decision Makers (ITDMs)
+Copilot+ PCs provide value across a wide range of roles and industries. Professionals in areas such as sales, marketing, customer service, and creative work can benefit from improved speed, responsiveness, and content creation capabilities.
 
-:::row:::
+More broadly, any role that involves managing information, communicating with others, or making time-sensitive decisions can benefit from on-device AI.
 
-:::column span="4":::
+> [!NOTE]
+> Organizations exploring AI adoption strategies may find that Copilot+ PCs align naturally with existing modernization efforts.
 
-ITDMs hold leadership roles within an organization's Information Technology (IT) department.
+:::image type="content" border="true" source="../media/business-man-at-desk.png" alt-text="Photograph of a professional working at a desk in a shared office space.":::
 
-They’re typically involved in overseeing various aspects of IT operations, such as infrastructure management, cybersecurity, and technology strategy.
+Copilot+ PCs are designed to support professionals across a range of business functions. While the benefits are broad, different roles often prioritize different capabilities.
 
-Common titles include:
+The following examples show how Copilot+ PC capabilities align to common needs across key business roles.
 
-- Vice President (VP) of IT
-- Head of IT
-- IT Director
-- IT Manager
-- IT Executive
+## How roles approach AI-enabled devices
 
-:::column-end:::
+Different roles evaluate technology based on their priorities and responsibilities.
 
-:::column span="":::
+For example:
 
-:::image type="content" border="true" source="../media/information-technology-decision-maker.png" alt-text="Photograph of a man in a suit representing an Information Technology Decision Maker.":::
+- IT decision makers focus on security, management, and integration with existing systems  
+- Business leaders prioritize productivity, performance, and access to insights  
+- Sales and marketing professionals look for tools that improve responsiveness and content creation  
+- SMB leaders value solutions that are efficient, easy to manage, and support growth  
 
-:::column-end:::
+Copilot+ PCs bring together capabilities that support these needs across a single device experience.
 
-:::row-end:::
-
-## C-suite executives
-
-:::row:::
-
-:::column span="4":::
-
-C-suite executives are high-level executives within a company who hold a "C-level" title, which typically begins with the word "Chief." They play a crucial role in shaping the company's overall strategy, making key decisions, and driving its success.
-
-- Chief Information Officer (CIO)
-- Chief Technology Officer (CTO)
-- Chief of Operations (COO)
-- Chief Executive Officer (CEO)
-
-:::column-end:::
-
-:::column span="":::
-
-:::image type="content" border="true" source="../media/c-suite-executive.png" alt-text="Photograph of a woman in a suit representing a C-suite executive.":::
-
-:::column-end:::
-
-:::row-end:::
-
-## Sales and Marketing pros
-
-:::row:::
-
-:::column span="4":::
-
-Sales and marketing professionals are responsible for guiding the sales and marketing strategies of a company. They oversee teams and initiatives aimed at driving revenue growth and promoting products or services.
-
-They play a critical role in acquiring new customers, analyzing market trends, and achieving business objectives related to sales and revenue.
-
-- Chief Marketing Officer (CMO)
-- Chief Communications Officer (CCO)
-- Head of Sales
-- Head of Marketing
-- Sales Director
-- Marketing Director
-
-:::column-end:::
-
-:::column span="":::
-
-:::image type="content" border="true" source="../media/marketing-professional.png" alt-text="Photograph of a man in a suit representing a marketing professional.":::
-
-:::column-end:::
-
-:::row-end:::
-
-## Small to mid-sized business (SMB) founders and owners
-
-:::row:::
-
-:::column span="4":::
-
-SMB founders and owners are often responsible for establishing the business, making key decisions, managing finances, and overseeing day-to-day operations.
-
-They may also be involved in various other aspects of the business, including sales, marketing, customer service, and product development.
-
-- Founder
-- Owner
-- SMB Managing Director
-
-:::column-end:::
-
-:::column span="":::
-
-:::image type="content" border="true" source="../media/small-business-owner.png" alt-text="Photograph of a woman representing a small business owner.":::
-
-:::column-end:::
-
-:::row-end:::
+While these examples highlight specific audiences, many professionals can benefit from these capabilities in their everyday work.
