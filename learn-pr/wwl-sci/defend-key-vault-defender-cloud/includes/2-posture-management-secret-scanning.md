@@ -55,8 +55,8 @@ When you receive a repository finding, the credential was exposed. Check when th
 
 When the scanning engine finds secrets, recommendations are triggered under the **Remediate vulnerabilities** security control on the Defender for Cloud **Recommendations** page. The key recommendations to monitor are:
 
-- **Machines should have secrets findings resolved—for Azure VMs
-- **EC2 instances should have secrets findings resolved—for AWS instances
+- **Machines should have secrets findings resolved**  - for Azure VMs
+- **EC2 instances should have secrets findings resolved** - for AWS instances
 - **VM instances should have secrets findings resolved** - for GCP instances
 
 To investigate a specific machine, navigate to **Defender for Cloud > Recommendations**, select the relevant recommendation, and then select a specific VM from the affected resources list. The detail view shows each secret found: the secret type, the file path where it was detected, and the recommended remediation steps. You can also reach the same detail through **Defender for Cloud > Inventory** - selecting a specific VM shows all security findings for that resource in one view.
