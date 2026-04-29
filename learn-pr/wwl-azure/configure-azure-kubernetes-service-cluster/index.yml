@@ -6,8 +6,8 @@ metadata:
   title: Configure an Azure Kubernetes Service cluster
   description: "Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization."
   ms.date: 05/15/2025
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: module
   ms.collection: N/A
   ms.custom:

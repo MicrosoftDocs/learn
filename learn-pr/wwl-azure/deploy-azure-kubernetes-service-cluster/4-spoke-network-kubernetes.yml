@@ -5,11 +5,11 @@ metadata:
   title: Plan the IP addresses
   description: "Plan the IP addresses"
   ms.date: 03/08/2024
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-spoke-network-kubernetes.md)]
+  [!include[](includes/4-spoke-network-kubernetes.md)]
