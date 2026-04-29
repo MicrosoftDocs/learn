@@ -52,7 +52,7 @@ Custom agents operate within the same repository boundary but can further refine
 Inside a custom agent file (for example, .github/agents/security-reviewer.agent.md), scope is defined using fields such as:
 
 - applyTo → limits which files or directories the agent focuses on
-- ools → defines what actions the agent can perform
+- tools → defines what actions the agent can perform
 
 Example:
 
