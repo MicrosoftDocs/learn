@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-sql-auditing
+metadata:
+  title: Configure Auditing for Azure SQL Database and SQL Managed Instance
+  description: "Configure audit logging for Azure SQL Database and SQL Managed Instance to create tamper-resistant compliance records. Set audit action groups, route logs to Azure Monitor, Event Hubs, and immutable blob storage, and configure SQL Managed Instance–specific auditing to meet financial regulatory audit requirements."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-assisted
+title: Configure auditing for Azure SQL Database and SQL Managed Instance
+summary: Configure audit logging for Azure SQL Database and SQL Managed Instance to create tamper-resistant compliance records. Set audit action groups, route logs to Azure Monitor, Event Hubs, and immutable blob storage, and configure SQL Managed Instance–specific auditing to meet financial regulatory audit requirements.
+abstract: |
+  After completing this module, you'll be able to:
+    - Describe Azure SQL auditing capabilities and select appropriate audit action groups
+    - Configure audit log destinations for Azure SQL Database
+    - Configure auditing for SQL Managed Instance
+    - Design a compliant audit strategy using multiple log destinations
+prerequisites: |
+  - Familiarity with Microsoft Entra ID and Azure role-based access control (RBAC)
+  - Understanding of Azure Monitor and Log Analytics at a conceptual level
+  - Completion of Configure platform-level security for Azure SQL or equivalent experience
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-sql-database
+  - azure-sql-managed-instance
+  - azure-monitor
+subjects:
+  - security
+  - cloud-security
+  - database
+units:
+  - learn.wwl.configure-azure-sql-auditing.introduction
+  - learn.wwl.configure-azure-sql-auditing.describe-azure-sql-auditing-capabilities
+  - learn.wwl.configure-azure-sql-auditing.configure-audit-destinations
+  - learn.wwl.configure-azure-sql-auditing.configure-auditing-sql-managed-instance
+  - learn.wwl.configure-azure-sql-auditing.design-compliant-audit-strategy
+  - learn.wwl.configure-azure-sql-auditing.knowledge-check
+  - learn.wwl.configure-azure-sql-auditing.summary
+badge:
+  uid: learn.wwl.configure-azure-sql-auditing.badge
