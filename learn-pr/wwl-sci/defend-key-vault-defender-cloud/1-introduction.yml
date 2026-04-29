@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defend-key-vault-defender-cloud.introduction
+metadata:
+  title: Introduction
+  description: Introduction to protecting Azure Key Vault using Microsoft Defender for Cloud, including secret scanning and threat detection capabilities.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
