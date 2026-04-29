@@ -8,6 +8,7 @@ metadata:
   author: alfredodeza
   ms.author: orthomas
   ms.topic: module
+  ms.service: azure
 title: Advanced testing with pytest
 summary: Use parametrization, fixtures, and the monkeypatch fixture to write pytest tests with reusable setup and isolated state.
 abstract: |

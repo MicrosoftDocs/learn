@@ -3,7 +3,7 @@ uid: learn.python-advanced-pytest.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check your knowledge about pytest parametrization, fixtures, fixture scope, yield-based cleanup, and monkeypatch.
+  description: Check your knowledge about pytest parameterization, fixtures, fixture scope, yield-based cleanup, and monkeypatch.
   ms.date: 04/20/2026
   author: alfredodeza
   ms.author: orthomas
@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "When the same test logic should run for several input values or input/expected-value pairs."
       isCorrect: true
-      explanation: "Correct. Parametrization replaces a `for` loop or near-duplicate test functions with one test that pytest collects as a separate test case for each parameter set."
+      explanation: "Correct. Parameterization replaces a `for` loop or near-duplicate test functions with one test that pytest collects as a separate test case for each parameter set."
     - content: "When unrelated behaviors need to be checked in one test function."
       isCorrect: false
       explanation: "Incorrect. Parametrize is best when each case exercises the same behavior. Unrelated behaviors should usually be separate tests."
