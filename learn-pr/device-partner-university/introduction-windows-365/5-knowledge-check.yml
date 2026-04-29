@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-windows-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Windows 365" module.
+  ms.date: 04/28/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is Windows 365?"
+    choices:
+        - content: "A cloud service that provides users with a full Windows desktop experience hosted in the cloud"
+          isCorrect: true
+          explanation: "Correct. Windows 365 provides a full Windows desktop experience, called a Cloud PC, that is hosted in the cloud and accessed over the internet."
+        - content: "A tool for managing physical Windows laptops owned by an organization"
+          isCorrect: false
+          explanation: "Incorrect. Windows 365 doesn't manage physical devices; it delivers cloud-hosted desktops instead."
+        - content: "A web-only version of Windows with limited functionality"
+          isCorrect: false
+          explanation: "Incorrect. Windows 365 delivers a full Windows desktop experience, not a limited web-only version."
+        - content: "A virtualization platform used only for application testing"
+          isCorrect: false
+          explanation: "Incorrect. Windows 365 is designed for end-user productivity scenarios, not just application testing."
+  - content: "How do users interact with a Cloud PC in Windows 365?"
+    choices:
+        - content: "By installing Windows locally on their device"
+          isCorrect: false
+          explanation: "Incorrect. Windows 365 runs the operating system in the cloud, not locally on the device."
+        - content: "By sending keyboard and mouse input to the cloud and receiving visual and audio output"
+          isCorrect: true
+          explanation: "Correct. User input is sent to the Cloud PC, and visual and audio output is streamed back to the device."
+        - content: "By accessing files only through a web portal"
+          isCorrect: false
+          explanation: "Incorrect. Users interact with a full Windows desktop, not just files through a portal."
+        - content: "By remotely controlling another user's device"
+          isCorrect: false
+          explanation: "Incorrect. Each Cloud PC is assigned to an individual user and isn't shared in this way."
+  - content: "What does it mean that each Cloud PC is persistent?"
+    choices:
+        - content: "It resets to a default state every time a user signs in"
+          isCorrect: false
+          explanation: "Incorrect. Persistence means the desktop state is preserved, not reset."
+        - content: "It automatically deletes user data after each session"
+          isCorrect: false
+          explanation: "Incorrect. User data is retained between sessions on a persistent Cloud PC."
+        - content: "It retains the user’s settings, applications, and data between sessions"
+          isCorrect: true
+          explanation: "Correct. A persistent Cloud PC preserves the user’s environment so they return to the same desktop each time."
+        - content: "It can only be accessed once per day"
+          isCorrect: false
+          explanation: "Incorrect. There's no such usage limitation described for Cloud PCs."
+  - content: "Which scenario is most appropriate for using Windows 365?"
+    choices:
+        - content: "Users require long-term offline access with no internet connectivity"
+          isCorrect: false
+          explanation: "Incorrect. Windows 365 requires reliable internet connectivity to function effectively."
+        - content: "Workloads depend heavily on specialized local hardware"
+          isCorrect: false
+          explanation: "Incorrect. Scenarios with strong local hardware dependencies might not be a good fit for Windows 365."
+        - content: "Supporting remote or hybrid employees using various devices"
+          isCorrect: true
+          explanation: "Correct. Windows 365 is well suited for delivering consistent desktops to users working remotely or in hybrid scenarios across different devices."
+        - content: "Organizations that want all data stored permanently on local devices"
+          isCorrect: false
+          explanation: "Incorrect. Windows 365 centralizes data in the cloud rather than storing it on local devices."
