@@ -1,4 +1,4 @@
-Data Security Posture Management (DSPM) consolidates signals from data loss prevention (DLP), information protection, and Insider Risk Management into a single posture view organized around four questions:
+Data Security Posture Management (DSPM) consolidates signals from data loss prevention (DLP), information protection, Insider Risk Management, and Data Security Investigations into a single posture view organized around four questions:
 
 - What sensitive data does the organization have?
 - Where is that data stored?
@@ -25,7 +25,7 @@ DSPM also surfaces AI-specific exposure through AI observability, AI-tagged repo
 
 ## Enable analytics
 
-DSPM depends on analytics from DLP and Insider Risk Management to produce its posture view. The first time DSPM is opened from **Solutions** > **DSPM (preview)** in the Microsoft Purview portal, a setup prompt asks to enable both. The initial scan can take up to three days to populate.
+DSPM depends on analytics from DLP and Insider Risk Management to produce its posture view. The first time DSPM is opened from **Solutions** > **DSPM (preview)** in the Microsoft Purview portal, a setup prompt asks to enable both. Allow about a day before data starts to populate.
 
 DSPM is a consolidation layer, not a source. The dashboard reflects what DLP and Insider Risk Management analytics produce. When those aren't running, an empty card looks identical to a card showing genuinely low activity. That ambiguity is the reason the enablement step matters for assessment, not just access. Reading the dashboard during the scan window without knowing this leads to the most common early misread: treating absence of data as evidence of low risk.
 
@@ -35,7 +35,7 @@ Confirm role assignment before assessing posture. Without the correct access lev
 
 - **Compliance Administrator or equivalent**: Full access, including settings and objective management.
 - **Security Reader or Data Security Viewers**: Posture data without configuration controls.
-- **Data Security Viewers**: Also the role gate for Security Copilot features inside DSPM.
+- **Data Security Viewers**: Also required for Security Copilot features inside DSPM, in addition to any other role.
 
 For complete details, see [Permissions for Data Security Posture Management](/purview/data-security-posture-management-permissions?azure-portal=true).
 

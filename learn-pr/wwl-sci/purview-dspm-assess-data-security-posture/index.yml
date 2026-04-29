@@ -13,7 +13,7 @@ title: Assess data security posture in Microsoft Purview
 summary: Assess your organization's data security posture using Data Security Posture Management (DSPM) in Microsoft Purview. Interpret posture metrics and security objectives on the DSPM dashboard, then discover where specific gaps exist across the data estate using AI observability, asset explorer, and reports.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe how Data Security Posture Management (DSPM) consolidates DLP, information protection, and Insider Risk Management into a unified posture view
+  - Describe how Data Security Posture Management (DSPM) consolidates DLP, information protection, Insider Risk Management, and Data Security Investigations into a unified posture view
   - Interpret key posture metrics and trending data on the DSPM dashboard
   - Evaluate data security objectives to prioritize the gaps that pose the most risk
   - Discover AI apps and agents with sensitive interactions using AI observability

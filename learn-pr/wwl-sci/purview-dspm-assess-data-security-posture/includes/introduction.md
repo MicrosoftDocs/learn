@@ -8,7 +8,7 @@ Working with DSPM means separating two activities. Assessment is recognizing gap
 
 In this module, you will:
 
-- Describe how DSPM consolidates DLP, information protection, and Insider Risk Management into a unified posture view
+- Describe how DSPM consolidates DLP, information protection, Insider Risk Management, and Data Security Investigations into a unified posture view
 - Interpret key posture metrics and trending data on the DSPM dashboard
 - Evaluate data security objectives to prioritize the highest-risk gaps
 - Discover AI apps and agents with sensitive interactions using AI observability

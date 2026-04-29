@@ -2,7 +2,7 @@ Determining where the organization is most exposed no longer requires correlatin
 
 In this module, you learned how to:
 
-- Describe how Data Security Posture Management (DSPM) consolidates data loss prevention (DLP), information protection, and Insider Risk Management into a unified posture view
+- Describe how Data Security Posture Management (DSPM) consolidates data loss prevention (DLP), information protection, Insider Risk Management, and Data Security Investigations into a unified posture view
 - Interpret key posture metrics and trending data on the DSPM dashboard
 - Evaluate data security objectives to prioritize the highest-risk gaps
 - Discover AI apps and agents with sensitive interactions using AI observability
