@@ -51,7 +51,7 @@ The plan isn't final after the first generation. Each follow-up prompt you submi
 
 This iterative loop is where Plan mode earns most of its value for operations work. Requirements that emerge mid-conversation, can be incorporated without losing the context established in earlier turns.
 
-![Diagram of a typical GitHub plan agent planning flow](../media/agent-planning-workflow.png)
+![Diagram of a typical GitHub plan agent planning flow.](../media/agent-planning-workflow.png)
 
 ## Access the Plan agent
 
