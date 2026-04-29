@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-plan-mode-cloud-ops.what-is-github-copilot-plan-mode
+title: What is GitHub Copilot plan mode
+metadata:
+  title: "What Is GitHub Copilot Plan Mode"
+  description: "Learn what GitHub Copilot plan mode is, how it works, and when to use it for operations tasks."
+  ms.date: 04/29/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-github-copilot-plan-mode.md)]
