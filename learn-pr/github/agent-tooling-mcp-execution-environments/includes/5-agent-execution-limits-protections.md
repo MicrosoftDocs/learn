@@ -1,6 +1,6 @@
 Agents can take actions in repositories, but those actions run within platform limits and protections. On GitHub, Copilot cloud agent works in a GitHub Actions-powered environment, creates changes on a branch, and prepares those changes for review.
 
-It does not finalize changes on its own. You decide whether those changes should become a pull request.
+It doesn't finalize changes on its own. You decide whether those changes should become a pull request.
 
 In this unit, you'll learn:
 
@@ -11,13 +11,13 @@ In this unit, you'll learn:
 
 ## Repository and branch limits
 
-Copilot cloud agent only has access to the repository where it is working. It cannot access other repositories.
+Copilot cloud agent only has access to the repository where it's working. It can't access other repositories.
 
 Its changes are made on a separate branch, not directly on the default branch such as main. This ensures that all modifications are isolated before review.
 
 ## Pull request control
 
-When Copilot cloud agent finishes its work, it prepares the changes for review, but it does not automatically create or merge a pull request.
+When Copilot cloud agent finishes its work, it prepares the changes for review, but it doesn't automatically create or merge a pull request.
 
 You decide whether to:
 
@@ -69,7 +69,7 @@ Retries help handle temporary failures such as network issues or transient error
 
 You can implement retries by:
 
-- Re-running failed steps
+- Rerunning failed steps
 - Using retry logic in scripts
 - Structuring workflows to allow safe re-execution
 
@@ -78,31 +78,31 @@ Example pattern:
     ```
     - name: Run agent task with retry 
     run: | 
-    for i in 1 2 3; 
-    do npx @github/copilot-cli -p "Run task" && break 
-    sleep 5 
-    done
+            for i in 1 2 3; 
+                do npx @github/copilot-cli -p "Run task" && break 
+                sleep 5 
+            done
     ```
 
 This allows the workflow to recover from temporary issues without manual intervention.
 
 ## Rollbacks
 
-If an agent produces incorrect or unsafe changes, rollback mechanisms ensure those changes do not affect the main codebase.
+If an agent produces incorrect or unsafe changes, rollback mechanisms ensure those changes don't affect the main codebase.
 
 Rollback is naturally supported through:
 
 - Branch-based isolation
 - Pull request review before merge
 
-Additional rollback strategies include:
+Extra rollback strategies include:
 
 - Closing or discarding the pull request
 - Reverting commits if changes are merged
 
 ## Escalation paths
 
-When an agent cannot complete a task or encounters uncertainty, escalation ensures a human can step in.
+When an agent can't complete a task or encounters uncertainty, escalation ensures a human can step in.
 
 This can be implemented by:
 
@@ -130,7 +130,7 @@ To improve traceability:
 
 This ensures that every agent action can be inspected, understood, and attributed.
 
-These safeguards we discussed ensure that agent execution is:
+These safeguards we discussed ensuring that agent execution is:
 
 - Resilient: can handle failures and retries
 - Controlled:  prevents unsafe changes
@@ -139,7 +139,7 @@ These safeguards we discussed ensure that agent execution is:
 
 ## Environment protections
 
-If agent-generated changes are used in deployments, environments provide additional safeguards.
+If agent-generated changes are used in deployments, environments provide extra safeguards.
 
 Environments can:
 
@@ -147,7 +147,7 @@ Environments can:
 - Restrict access to secrets
 - Control deployment targets
 
-This ensures that sensitive operations are not executed automatically.
+This ensures that sensitive operations aren't executed automatically.
 
 ## Session visibility
 
@@ -165,9 +165,9 @@ This visibility allows you to stay in control throughout the process.
 
 Workflows triggered using the GITHUB_TOKEN have restrictions.
 
-Most actions performed with this token do not trigger additional workflow runs, which helps prevent unintended loops or repeated execution.
+Most actions performed with this token don't trigger extra workflow runs, which helps prevent unintended loops or repeated execution.
 
-Other authentication methods, such as GitHub App tokens or personal access tokens (PATs), can trigger additional workflow runs depending on configuration. While this enables more flexible automation patterns, it also requires careful design to avoid recursive executions or unintended automation loops.
+Other authentication methods, such as GitHub App tokens or personal access tokens (PATs), can trigger extra workflow runs depending on configuration. While this enables more flexible automation patterns, it also requires careful design to avoid recursive executions or unintended automation loops.
 
 ## Enabling agent actions safely
 

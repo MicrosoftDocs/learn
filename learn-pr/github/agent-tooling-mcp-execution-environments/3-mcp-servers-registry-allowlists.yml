@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.agent-tooling-mcp-execution-environments.mcp-servers-registry-allowlists
-title: MCP servers registry and allowlists
+title: MCP servers registry and allow lists
 metadata:
-  title: MCP servers registry and allowlists
+  title: MCP servers registry and allow lists
   description: This content is a part of the Tooling, MCP, and Agent Execution Environments.
   author: camihmerhar
   ms.author: camhernandez

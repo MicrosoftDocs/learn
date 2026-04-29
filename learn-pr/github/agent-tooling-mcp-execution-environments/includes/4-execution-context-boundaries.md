@@ -76,6 +76,7 @@ This allows the agent to focus only on specific parts of the repository and oper
 ### How this fits into execution context
 
 Repository scope defines where the agent operates, while custom agent configuration defines what the agent can access and do within that boundary.
+
 Together, they create layered control.
 
 ## Branch-based isolation
@@ -151,7 +152,7 @@ Steps:
     - Commit and push updates
 1. Review and finalize.
 
-Once you're satisfied with the code changes and results, trigger a pull request. You can request changes in the pull request, or go ahead and merge.
+    Once you're satisfied with the code changes and results, trigger a pull request. You can request changes in the pull request, or go ahead and merge.
 
 The agent works autonomously within the repository by creating branches, modifying code, and opening pull requests, while still operating within a controlled and reviewable workflow.
 
@@ -200,6 +201,7 @@ By combining:
 - Permission control
 
 GitHub ensures that agents operate within clear, enforceable limits.
+
 This prevents:
 
 - Uncontrolled changes to production code
