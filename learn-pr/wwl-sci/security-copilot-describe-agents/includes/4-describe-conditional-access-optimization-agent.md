@@ -40,19 +40,6 @@ The [Conditional Access Optimization Agent](/entra/security-copilot/conditional-
 | **Role-based access** | Security Administrator to configure the agent. Conditional Access Administrator to use the agent. |
 | **Trigger** | Runs every 24 hours or triggered manually. |
 
-#### Access Review Agent
-
-The [Access Review Agent](/entra/id-governance/access-review-agent) with Microsoft Entra ID Governance empowers reviewers to make fast and accurate access decisions. It delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
-
-| Attribute | Description |
-|-----------|-------------|
-| **Identity** | A unique agent identity for authorization is created when the agent is turned on. The agent uses this identity to scan your tenant for active access reviews, gather insights, and save its recommendations. Final decisions, submitted through the Microsoft Teams conversation, use the reviewer’s identity. |
-| **Licenses** | Microsoft Entra ID Governance or Microsoft Entra Suite. |
-| **Plugins** | Microsoft Entra (mandatory). |
-| **Products** | ID Governance Access Reviews. |
-| **Role-based access** | Both Identity Governance Administrator and Lifecycle Workflows Administrator are required to configure and use the agent. |
-| **Trigger** | Runs every 24 hours or triggered manually. |
-
 #### Identity Risk Management Agent (preview)
 
 The [Identity Risk Management Agent](/entra/id-protection/identity-risk-management-agent-get-started) in Microsoft Entra ID Protection helps administrators investigate potential risks, learn about potential effects, and take decisive action to protect their organization's critical assets.
