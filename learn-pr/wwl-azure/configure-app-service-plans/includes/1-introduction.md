@@ -10,10 +10,8 @@ The goal of this module is to ensure you can determine the best App Service plan
 
 In this module, you learn how to:
 
-- Identify features and usage cases for Azure App Service.
 - Select an appropriate Azure App Service plan pricing tier.
 - Scale an Azure App Service plan.
-- Scale out an Azure App Service plan.
 
 ## Skills measured
 
