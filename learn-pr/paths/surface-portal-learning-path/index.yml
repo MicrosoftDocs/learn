@@ -1,6 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.dpu.surface-portal-learning-path
-title: Surface Management and Support Portals Learning Path
+title: Surface Management and Support Portals learning path
 metadata:
   title: Surface Management And Support Portals Learning Path
   description: "This learning path helps IT administrators, service providers, and partners learn how to manage and support Microsoft Surface devices using the Surface Management Portal and Surface Support Portal. Learners compare both portals, understand how Intune enrollment and tenant context affect access, and practice selecting the correct portal for common management and support tasks.\nThrough task-based modules and decision scenarios, learners verify prerequisites, assign required roles, initiate service or support actions, and track requests using the correct portal while following tenant-scoped guardrails and escalation boundaries."
