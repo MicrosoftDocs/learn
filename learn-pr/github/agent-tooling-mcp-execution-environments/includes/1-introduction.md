@@ -1,4 +1,4 @@
-:::image type="content" source="../media/github-copilot-branding.png" alt-text="GitHub Copilot branding with the tagline The future of building happens together." lightbox="../media/github-copilot-branding.png" border="false":::
+:::image type="content" source="../media/github-copilot-branding.png" alt-text="Illustration of GitHub Copilot branding with the tagline The future of building happens together." lightbox="../media/github-copilot-branding.png" border="false":::
 
 Modern software agents don't operate in isolation. They rely on tools, APIs, and controlled execution environments to perform meaningful work. In the GitHub ecosystem, this includes integrations with workflows, repositories, APIs, and external systems, all governed by permissions and execution boundaries.
 
