@@ -38,7 +38,7 @@ Deployment stacks allow you to delete the stack and all of its resources through
 
 Another advantage of deleting resources managed by a stack is the potential for cost savings. Deleting an application and its resources not managed by a deployment stack is many times a manual effort that is prone to error. It's possible to accidentally forget to delete certain resources, which continue to incur cost. Deployment stacks solve for this problem acting as a cost management tool, especially when dealing with ephemeral environments.
 
-When deleting a deployment stack, you can use the `actionOnUnmanage` property to determine how Azure handles the resources, resource groups, and management groups contained in the stack. Azure can delete the resources, resource groups, and management groups, or it can *detach* them, which means the the resources aren't deleted but are no longer managed by the stack.
+When deleting a deployment stack, you can use the `actionOnUnmanage` property to determine how Azure handles the resources, resource groups, and management groups contained in the stack. Azure can delete the resources, resource groups, and management groups, or it can *detach* them, which means the resources aren't deleted but are no longer managed by the stack.
 
 ### Standardized process and templates
 
