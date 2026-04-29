@@ -6,10 +6,10 @@ metadata:
   description: Explore the Conditional Access Optimization Agent.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 02/15/2026
+  ms.date: 04/28/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/4a-explore-conditional-access-optimization-agent.md)]

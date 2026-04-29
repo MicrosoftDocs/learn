@@ -2,9 +2,6 @@ Microsoft Security Copilot includes agents embedded in the Microsoft Defender po
 
 
 > [!NOTE]
-> The list of Security Copilot agents in Microsoft Entra is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Entra. Fo more information, refer to training that relates to Microsoft Entra.
-
-> [!NOTE]
 > The list of Security Copilot agents in Microsoft Defender is continually growing. This unit is designed to provide a high-level overview of just a few of the Security Copilot agents in Microsoft Defender. For more information related to agents in Microsoft Defender and focused on SOC tasks, see [Defend against cyberthreats with Microsoft's security operations platform](/training/courses/sc-200t00).
 > 
 ### Microsoft Security Copilot agents in Microsoft Defender

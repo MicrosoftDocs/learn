@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-agents.explore-threat-intelligence-briefing-agent
-title: Explore the Threat Intelligence Briefing Agent
+title: Explore the Threat Intelligence Briefing Agent and create your own agent
 metadata:
-  title: Explore the Threat Intelligence Briefing Agent
-  description: Explore the Threat Intelligence Briefing Agent.
+  title: Explore the Threat Intelligence Briefing Agent and create your own agent
+  description: Explore the Threat Intelligence Briefing Agent and learn how to create your own agent.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 02/15/2026
+  ms.date: 04/28/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 11
+durationInMinutes: 10
 content: |
   [!include[](includes/3a-explore-threat-intelligence-briefing-agent.md)]

@@ -3,7 +3,7 @@ Microsoft Entra agents can automate many identity and access management operatio
 Microsoft Entra agents analyze your identity environment, apply best practices, and take automated actions to improve your identity and access security posture and operational efficiency. They integrate directly with Microsoft Entra services, using your organization’s identity data and configuration to provide contextual, actionable insights.
 
 > [!NOTE]
-> The list of Security Copilot agents in Microsoft Entra is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Entra. Fo more information, refer to training that relates to Microsoft Entra.
+> The list of Security Copilot agents in Microsoft Entra is continually growing. This unit is designed to provide a high-level overview of a few of the Security Copilot agents in Microsoft Entra. For more information, refer to training that relates to Microsoft Entra.
 
 ### What are Microsoft Entra agents?
 

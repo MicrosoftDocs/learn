@@ -1,4 +1,4 @@
-Microsoft Security Copilot provides a range of agents designed to enhance security workflows and streamline operations. These agents assist security engineers by automating tasks, providing insights, and integrating with other Microsoft security tools.
+Microsoft Security Copilot provides a range of agents designed to enhance security workflows and improve operational efficiency. These agents assist security engineers by automating tasks, providing insights, and integrating with other Microsoft security tools.
 
 ### Define agents in Microsoft Security Copilot
 
