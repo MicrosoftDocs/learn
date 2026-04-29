@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-key-vault.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of configuring and securing Azure Key Vault, including deployment settings, access control, and network configuration.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your organization's compliance policy requires that Key Vault objects can't be permanently deleted during a 90-day retention window—even by subscription owners. Which Key Vault setting enforces retention?"
+    choices:
+    - content: "Soft delete"
+      isCorrect: false
+      explanation: "Incorrect. Soft delete allows recovery of deleted objects within a configurable retention period (7–90 days), but it doesn't prevent permanent deletion by authorized users. A user with the Key Vault Administrator role can still permanently delete (purge) objects while soft delete is enabled without purge protection."
+    - content: "Purge protection"
+      isCorrect: true
+      explanation: "Correct. Purge protection prevents permanent deletion of Key Vault objects during the soft-delete retention period. When purge protection is enabled, no user—including subscription owners—can permanently delete (purge) a deleted object until the retention period expires."
+    - content: "Azure Policy enforcement"
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy can audit and enforce whether soft delete and purge protection are enabled on vaults, but the policy itself doesn't prevent deletion. Purge protection is the setting that blocks permanent deletion."
+    - content: "Resource lock"
+      isCorrect: false
+      explanation: "Incorrect. Resource locks prevent deletion or modification of the vault resource in Azure Resource Manager. They don't protect objects within the vault—such as secrets, keys, and certificates—from deletion."
+  - content: "Contoso's application needs to retrieve secrets from Azure Key Vault without storing credentials in code or configuration files. What is the recommended approach?"
+    choices:
+    - content: "Assign the Key Vault Secrets User role to a managed identity"
+      isCorrect: true
+      explanation: "Correct. A managed identity provides the application with an automatically managed identity in Microsoft Entra ID, eliminating the need for stored credentials. Assigning the Key Vault Secrets User RBAC role grants the minimum read access needed to retrieve secrets."
+    - content: "Configure a vault access policy for a service principal with a client secret"
+      isCorrect: false
+      explanation: "Incorrect. This approach requires storing a client secret to authenticate the service principal, which is the exact problem managed identities solve. Legacy vault access policies are still supported but aren't the recommended model—Azure RBAC is the default for new vaults and provides tighter integration with Privileged Identity Management."
+    - content: "Add the application's IP address to the Key Vault firewall allow list"
+      isCorrect: false
+      explanation: "Incorrect. Firewall rules control network-level access, not authentication. An application accessing from an allowed IP address still needs valid identity-based credentials to authenticate to Key Vault."
+    - content: "Assign the Key Vault Administrator role to the application's managed identity"
+      isCorrect: false
+      explanation: "Incorrect. The Key Vault Administrator role grants full data plane access including administrative and destructive operations. The principle of least privilege requires using the narrowest role that satisfies the task—Key Vault Secrets User for reading secrets."
+  - content: "A security engineer needs application servers in an Azure virtual network to access Key Vault with no public internet exposure. Which solution meets the requirement?"
+    choices:
+    - content: "Configure a private endpoint for Key Vault"
+      isCorrect: true
+      explanation: "Correct. A private endpoint assigns Key Vault a private IP address within the virtual network, routing all traffic over the Azure backbone. When combined with disabling public network access, this eliminates internet exposure while keeping the vault accessible from the virtual network."
+    - content: "Configure a virtual network service endpoint for Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. Virtual network service endpoints route traffic from a virtual network subnet over the Azure backbone, which improves security and reliability. However, Key Vault still retains a public IP address and isn't fully isolated from the internet—unlike private endpoints."
+    - content: "Enable the trusted Azure services bypass in the Key Vault firewall"
+      isCorrect: false
+      explanation: "Incorrect. Trusted services bypass allows specific Microsoft services (like Azure Monitor and Azure Backup) to access Key Vault regardless of firewall rules. It doesn't provide private network connectivity for application servers in a virtual network."
+    - content: "Configure a resource lock on the Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. Resource locks prevent accidental deletion or modification of the vault resource, not network isolation. A resource lock has no effect on how network traffic is routed to or from Key Vault."
