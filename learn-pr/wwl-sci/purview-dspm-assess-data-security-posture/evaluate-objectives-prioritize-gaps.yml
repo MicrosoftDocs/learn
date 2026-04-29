@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.evaluate-objectives-prioritize-gaps
+title: Evaluate data security objectives and prioritize gaps
+metadata:
+  title: Evaluate Data Security Objectives and Prioritize Gaps
+  description: "Learn to evaluate data security objectives, interpret risk indicators and outcome metrics, and prioritize the security gaps that pose the most risk."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/evaluate-objectives-prioritize-gaps.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator reviews an objective in a healthy state. Two of its submetrics show 'No data available.' What's the most accurate interpretation?"
+    choices:
+    - content: "The objective is healthy across all dimensions, so the administrator can deprioritize it."
+      isCorrect: false
+      explanation: "Incorrect: 'No data available' means DSPM can't measure those dimensions, so the healthy state only reflects what it can see, not full coverage."
+    - content: "Data Security Posture Management (DSPM) is still calculating the submetrics, so the administrator should recheck in 24 hours."
+      isCorrect: false
+      explanation: "Incorrect: 'No data available' points to a missing data source or connector, not a calculation in progress. Waiting won't populate the values; configuring the source will."
+    - content: "DSPM can't assess those dimensions because a data source or connector isn't configured, which is itself a coverage gap worth noting."
+      isCorrect: true
+      explanation: "Correct: Missing submetric data is a visibility gap, not a confirmation of safety. Flag it so the remediation team knows to connect the missing source."

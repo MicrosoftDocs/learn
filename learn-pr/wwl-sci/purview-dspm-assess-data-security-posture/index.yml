@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.purview-dspm-assess-data-security-posture
+metadata:
+  title: Assess Data Security Posture in Microsoft Purview
+  description: "Assess your organization's data security posture by interpreting posture metrics and security objectives on the DSPM dashboard, then discovering where specific gaps exist across the data estate."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+title: Assess data security posture in Microsoft Purview
+summary: Assess your organization's data security posture using Data Security Posture Management (DSPM) in Microsoft Purview. Interpret posture metrics and security objectives on the DSPM dashboard, then discover where specific gaps exist across the data estate using AI observability, asset explorer, and reports.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe how Data Security Posture Management (DSPM) consolidates DLP, information protection, and Insider Risk Management into a unified posture view
+  - Interpret key posture metrics and trending data on the DSPM dashboard
+  - Evaluate data security objectives to prioritize the gaps that pose the most risk
+  - Discover AI apps and agents with sensitive interactions using AI observability
+  - Assess classification and labeling coverage using asset explorer
+  - Track posture changes over time using DSPM reports
+prerequisites: |
+  - Familiarity with the Microsoft Purview portal and its navigation
+  - Working knowledge of sensitivity labels and information protection policies
+  - Working knowledge of data loss prevention (DLP) policies and concepts
+  - Working knowledge of Insider Risk Management concepts
+  - Basic understanding of data classification with sensitive information types and trainable classifiers
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- m365
+- microsoft-purview
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-dspm-assess-data-security-posture.introduction
+- learn.wwl.purview-dspm-assess-data-security-posture.dspm-consolidation-setup
+- learn.wwl.purview-dspm-assess-data-security-posture.interpret-posture-metrics
+- learn.wwl.purview-dspm-assess-data-security-posture.evaluate-objectives-prioritize-gaps
+- learn.wwl.purview-dspm-assess-data-security-posture.discover-ai-apps-observability
+- learn.wwl.purview-dspm-assess-data-security-posture.assess-classification-labeling-asset-explorer
+- learn.wwl.purview-dspm-assess-data-security-posture.review-posture-changes-reports
+- learn.wwl.purview-dspm-assess-data-security-posture.knowledge-check
+- learn.wwl.purview-dspm-assess-data-security-posture.summary
+badge:
+  uid: learn.wwl.purview-dspm-assess-data-security-posture.badge
