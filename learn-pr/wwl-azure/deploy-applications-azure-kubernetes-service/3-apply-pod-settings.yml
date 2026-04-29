@@ -5,11 +5,11 @@ metadata:
   title: Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
   description: "Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy"
   ms.date: 03/04/2024
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: devx-track-azurecli
 durationInMinutes: 8
 content: |
   [!include[](includes/3-apply-pod-settings.md)]
-
+

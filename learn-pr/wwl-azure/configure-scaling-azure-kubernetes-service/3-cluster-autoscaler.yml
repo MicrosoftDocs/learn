@@ -5,9 +5,9 @@ metadata:
   title: Cluster autoscaler
   description: "Cluster autoscaler"
   ms.date: 10/25/2023
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-cluster-autoscaler.md)]
+  [!include[](includes/3-cluster-autoscaler.md)]
