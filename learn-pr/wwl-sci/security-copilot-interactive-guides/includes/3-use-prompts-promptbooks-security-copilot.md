@@ -8,4 +8,4 @@ In this interactive guide, which takes approximately 10 minutes to complete, you
 - **Run prompts and review Copilot responses**: Enter prompts and review the insights Security Copilot provides.
 - **Run promptbooks and review or share results**: Execute a promptbook and learn how to review and share the investigation results.
 
-[![Thumbnail for the Use prompts and promptbooks interactive guide.](../media/use-prompts-promptbooks-thumbnail.png)](https://yourplaceholder.example.com/ig-use-prompts-promptbooks)
+[![Thumbnail for the Use prompts and promptbooks interactive guide.](../media/use-prompts-promptbooks-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_prompts_and_promptbooks_web/story.html?azure-portal=true)
