@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-advanced-pytest.parametrize
-title: Pytest parametrize
+title: Pytest parametrization
 metadata:
-  title: Pytest parametrize
-  description: Use parametrize to enhance tests that need to make the same assertion with different inputs.
-  ms.date: 4/12/2024
+  title: Pytest parametrization
+  description: Use @pytest.mark.parametrize to run the same test logic with different inputs.
+  ms.date: 04/20/2026
   author: alfredodeza
   ms.author: orthomas
   ms.custom:

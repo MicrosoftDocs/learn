@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.summary
 title: Summary
 metadata:
   title: Summary
-  description: In this module, we went through two advanced features of pytest. Fixtures and _parametrize_ help you to write better tests and produce better output.
-  ms.date: 4/12/2024
+  description: Recap how parametrization, fixtures, and the monkeypatch fixture help you write clearer, more maintainable pytest tests.
+  ms.date: 04/20/2026
   author: alfredodeza
   ms.author: orthomas
   ms.custom:
