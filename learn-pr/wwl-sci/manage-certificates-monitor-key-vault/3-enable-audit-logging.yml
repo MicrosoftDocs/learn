@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-certificates-monitor-key-vault.enable-audit-logging
+metadata:
+  title: Enable Key Vault audit logging
+  description: Enable and configure Azure Key Vault diagnostic logging to capture audit events for security investigation, compliance, and alerting on critical vault operations.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable Key Vault audit logging
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-enable-audit-logging.md)]
