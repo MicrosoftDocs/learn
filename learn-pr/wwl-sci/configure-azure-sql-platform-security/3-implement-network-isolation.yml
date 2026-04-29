@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-platform-security.implement-network-isolation
+title: Implement network isolation
+metadata:
+  title: Implement Network Isolation
+  description: "Deploy private endpoints for Azure SQL Database and SQL Managed Instance, configure firewall rules, and evaluate when to disable public endpoint access."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-implement-network-isolation.md)]
