@@ -80,11 +80,11 @@ The Azure AI Search plugin allows you to connect your company’s knowledge base
 
 Microsoft Entra is a family of multicloud identity and network access solutions that enables organizations to protect any identity and secure access to any resource. It provides a unified platform for identity and network access management, making it easier to secure identities and access to resources across multicloud and hybrid environments.
 
-Security Copilot integrates with Microsoft Entra. With the Entra plugin enabled, security analysts can instantly get a risk summary, steps to remediate, and recommended guidance for each identity at risk, in natural language. Analysts can use Copilot to guide in the creation of a lifecycle workflow to streamline the process of creating and issuing user credentials and access rights. These and many other Entra capabilities are supported by Copilot.
+Security Copilot integrates with Microsoft Entra. With the Microsoft Entra plugin enabled, security analysts can instantly get a risk summary, steps to remediate, and recommended guidance for each identity at risk, in natural language. Analysts can use Copilot to guide in the creation of a lifecycle workflow to streamline the process of creating and issuing user credentials and access rights. These and many other Microsoft Entra capabilities are supported by Copilot.
 
 Microsoft Entra capabilities in Copilot are built-in prompts that you can use but you can also enter your own prompts based on the capabilities supported.
 
-:::image type="content" source="../media/entra-skills.png" lightbox="../media/entra-skills.png" alt-text="Screen capture of the Entra capabilities that can be run in the standalone experience.":::
+:::image type="content" source="../media/entra-skills.png" lightbox="../media/entra-skills.png" alt-text="Screen capture of the Microsoft Entra capabilities that can be run in the standalone experience.":::
 
 With the plugin enabled, Copilot integration with Microsoft Entra can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
@@ -122,7 +122,7 @@ With the plugin enabled, Copilot integration with Microsoft Intune can also be e
 
 Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-There are two separate plugins in Copilot that relate to Microsoft Defender XDR (the user interface may still show Microsoft 365 Defender):
+There are two separate plugins in Copilot that relate to Microsoft Defender XDR:
 
 - Microsoft Defender XDR
 - Natural language to KQL for Microsoft Defender XDR
@@ -211,23 +211,23 @@ Copilot capabilities can also be experienced directly from within Purview soluti
 
 Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise. With Microsoft Sentinel, you get a single solution for attack detection, threat visibility, proactive hunting, and threat response.
 
-There are two separate plugins in Copilot that relate to Sentinel:
+There are two separate plugins in Copilot that relate to Microsoft Sentinel:
 
 - Microsoft Sentinel
 - Natural language to Microsoft Sentinel KQL
 
-:::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
+:::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Microsoft Sentinel and NL2KQK in Microsoft Sentinel plugin.":::
 
 ***Microsoft Sentinel***
 
-To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
+To utilize the Microsoft Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Microsoft Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
 
-The Sentinel plugin also requires the user to configure the Sentinel workspace, the subscription name, and the resource group name.
+The Microsoft Sentinel plugin also requires the user to configure the Microsoft Sentinel workspace, the subscription name, and the resource group name.
 
-:::image type="content" source="../media/sentinel-plugin-settings-v2.png" lightbox="../media/sentinel-plugin-settings-v2.png" alt-text="Screen capture of the Sentinel plugin settings page.":::
+:::image type="content" source="../media/sentinel-plugin-settings-v2.png" lightbox="../media/sentinel-plugin-settings-v2.png" alt-text="Screen capture of the Microsoft Sentinel plugin settings page.":::
 
-The Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
+The Microsoft Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
 
 ***Natural language to Microsoft Sentinel KQL***
 
-The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
+The natural language to Microsoft Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
