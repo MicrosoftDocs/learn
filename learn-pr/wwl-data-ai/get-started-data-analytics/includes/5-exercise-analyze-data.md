@@ -26,7 +26,7 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
 
     :::image type="content" source="../media/upload-files.png" alt-text="Screenshot of uploading a file to One Drive." lightbox="../media/upload-files.png":::
 
-    After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
+    After a few seconds, the **Lemonade_formatted.xlsx** file should appear in your folder like this:
 
     :::image type="content" source="../media/lemonade-formatted-xlsx.png" alt-text="Screenshot of Lemonade-formatted x l s x file in One Drive." lightbox="../media/lemonade-formatted-xlsx.png":::
 

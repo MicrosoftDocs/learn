@@ -34,6 +34,7 @@ modules:
 - learn.wwl.manage-azure-boards-using-github-copilot
 - learn.wwl.manage-ado-mcp-server
 - learn.wwl.optimize-azure-reliability-using-sre-agent
+- learn.wwl.use-plan-mode-cloud-ops
 - learn.wwl.transition-traditional-ops-agent-automation
 trophy:
   uid: learn.wwl.optimize-devops-ai-agents-azure.trophy

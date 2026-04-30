@@ -10,5 +10,5 @@ You have explored:
 
 - [Create reports and dashboards in Power BI - documentation](/power-bi/create-reports/)
 - [Azure Databricks](https://azure.microsoft.com/services/databricks/)
-- [Azure Cognitive Services](/azure/cognitive-services/what-are-cognitive-services)
+- [Azure AI Services](/azure/ai-services/what-are-ai-services)
 - [Extract, transform, and load (ETL)](/azure/architecture/data-guide/relational-data/etl)
