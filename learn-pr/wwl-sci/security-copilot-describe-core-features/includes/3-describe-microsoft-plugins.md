@@ -25,9 +25,9 @@ To view the system capabilities supported by the enabled plugins, you select the
 
 The sections that follow provide brief descriptions for many, but not all, of the available Microsoft plugins. Microsoft Security Copilot is continually adding support for Microsoft products.
 
-#### Azure Firewall (Preview)
+#### Azure Firewall
 
-Azure Firewall is a cloud-native and intelligent network firewall security service that provides best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides best-in-class threat protection for your cloud workloads running in Azure. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 
 The Azure Firewall integration with Copilot helps analysts perform detailed investigations of the malicious traffic intercepted by the intrusion detection and prevention system (IDPS) and/or the threat intelligence capabilities of the firewalls across their environment.
 
@@ -47,7 +47,7 @@ Example prompts include:
 - What are the top 20 IDPS hits from the last seven days for Firewall \<Firewall name> in resource group \<resource group name>?
 - If I want to make sure all my Firewalls are protected against attacks from signature ID \<ID number>, how do I do this?
 
-#### Azure Web Application Firewall (Preview)
+#### Azure Web Application Firewall
 
 Azure Web Application Firewall (WAF) integration in Security Copilot enables deep investigation of Azure WAF events. It can help you investigate WAF logs triggered by Azure WAF in a matter of minutes and provide related attack vectors using natural language responses at machine speed. It provides visibility into your environment’s threat landscape. It allows you to retrieve a list of most frequently triggered WAF rules and identify the top offending IP addresses in your environment.
 
@@ -55,7 +55,7 @@ Security Copilot integration is supported on both Azure WAF integrated with Azur
 
 To use the Azure WAF integration in Copilot, the Azure WAF plugin in Security Copilot must be turned on and configured.
 
-The preview standalone experience in Azure WAF can help you with:
+The standalone experience in Azure WAF can help you with:
 
 - Providing a list of top Azure WAF rules triggered in the customer environment and generating deep context with related attack vectors.
 - Providing a list of malicious IP addresses in the customer environment and generating related threats.
@@ -207,18 +207,18 @@ Microsoft Purview capabilities in Copilot are built-in prompts that you can use,
 
 Copilot capabilities can also be experienced directly from within Purview solutions, through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
-#### Microsoft Sentinel (Preview)
+#### Microsoft Sentinel
 
 Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise. With Microsoft Sentinel, you get a single solution for attack detection, threat visibility, proactive hunting, and threat response.
 
 There are two separate plugins in Copilot that relate to Sentinel:
 
-- Microsoft Sentinel (Preview)
-- Natural language to Microsoft Sentinel KQL (Preview)
+- Microsoft Sentinel
+- Natural language to Microsoft Sentinel KQL
 
 :::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
 
-***Microsoft Sentinel (Preview)***
+***Microsoft Sentinel***
 
 To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
 
@@ -228,6 +228,6 @@ The Sentinel plugin also requires the user to configure the Sentinel workspace, 
 
 The Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
 
-***Natural language to Microsoft Sentinel KQL (Preview)***
+***Natural language to Microsoft Sentinel KQL***
 
 The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
