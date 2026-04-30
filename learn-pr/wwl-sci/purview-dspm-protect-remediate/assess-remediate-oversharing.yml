@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-protect-remediate.assess-remediate-oversharing
+title: Assess and remediate oversharing with data risk assessments
+metadata:
+  title: Assess and Remediate Oversharing with Data Risk Assessments
+  description: "Use default and custom data risk assessments to identify oversharing risks at the site and item level, then apply targeted remediation actions to resolve them."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/assess-remediate-oversharing.md)]

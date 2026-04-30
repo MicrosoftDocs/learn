@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.purview-dspm-protect-remediate
+metadata:
+  title: Protect and Remediate Sensitive Data in Microsoft Purview
+  description: "Use Data Security Posture Management (DSPM) objectives and remediation workflows to select protection approaches, configure one-click policies, and assess and remediate oversharing risks across the data estate."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+title: Protect and remediate sensitive data in Microsoft Purview
+summary: Use Data Security Posture Management (DSPM) objectives and remediation workflows to protect sensitive data across the data estate. Select appropriate protection approaches, configure one-click policies for DLP, sensitivity labels, and Insider Risk Management, and assess and remediate oversharing risks.
+abstract: |
+  After completing this module, you'll be able to:
+  - Select appropriate remediation approaches based on DSPM data security objective risk indicators
+  - Configure and apply one-click policies for DLP, sensitivity labels, and Insider Risk Management through DSPM objective workflows
+  - Measure remediation progress and manage independent remediation actions
+  - Assess and remediate oversharing risks using default and custom data risk assessments
+prerequisites: |
+  - Familiarity with the Microsoft Purview portal and its navigation
+  - Working knowledge of sensitivity labels and information protection policies
+  - Working knowledge of data loss prevention (DLP) policies and concepts
+  - Working knowledge of Insider Risk Management concepts
+  - Understanding of DSPM's purpose and ability to interpret posture metrics and risk signals
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- m365
+- microsoft-purview
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-dspm-protect-remediate.introduction
+- learn.wwl.purview-dspm-protect-remediate.select-remediation-approaches
+- learn.wwl.purview-dspm-protect-remediate.apply-one-click-policies
+- learn.wwl.purview-dspm-protect-remediate.measure-remediation-progress
+- learn.wwl.purview-dspm-protect-remediate.assess-remediate-oversharing
+- learn.wwl.purview-dspm-protect-remediate.knowledge-check
+- learn.wwl.purview-dspm-protect-remediate.summary
+badge:
+  uid: learn.wwl.purview-dspm-protect-remediate.badge

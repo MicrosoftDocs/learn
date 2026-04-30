@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-protect-remediate.select-remediation-approaches
+title: Select remediation approaches from Data Security Posture Management (DSPM) data security objectives
+metadata:
+  title: Select Remediation Approaches from Data Security Posture Management (DSPM) Data Security Objectives
+  description: "Learn how to interpret DSPM data security objectives, evaluate risk indicators, and select the appropriate remediation pathway for each protection gap."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/select-remediation-approaches.md)]
