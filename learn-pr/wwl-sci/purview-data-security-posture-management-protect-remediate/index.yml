@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.purview-dspm-protect-remediate
+uid: learn.wwl.purview-data-security-posture-management-protect-remediate
 metadata:
   title: Protect and Remediate Sensitive Data in Microsoft Purview
   description: "Use Data Security Posture Management (DSPM) objectives and remediation workflows to select protection approaches, configure one-click policies, and assess and remediate oversharing risks across the data estate."
@@ -34,12 +34,12 @@ products:
 subjects:
 - information-protection-governance
 units:
-- learn.wwl.purview-dspm-protect-remediate.introduction
-- learn.wwl.purview-dspm-protect-remediate.select-remediation-approaches
-- learn.wwl.purview-dspm-protect-remediate.apply-one-click-policies
-- learn.wwl.purview-dspm-protect-remediate.measure-remediation-progress
-- learn.wwl.purview-dspm-protect-remediate.assess-remediate-overexposure
-- learn.wwl.purview-dspm-protect-remediate.knowledge-check
-- learn.wwl.purview-dspm-protect-remediate.summary
+- learn.wwl.purview-data-security-posture-management-protect-remediate.introduction
+- learn.wwl.purview-data-security-posture-management-protect-remediate.select-remediation-approaches
+- learn.wwl.purview-data-security-posture-management-protect-remediate.apply-one-click-policies
+- learn.wwl.purview-data-security-posture-management-protect-remediate.measure-remediation-progress
+- learn.wwl.purview-data-security-posture-management-protect-remediate.assess-remediate-overexposure
+- learn.wwl.purview-data-security-posture-management-protect-remediate.knowledge-check
+- learn.wwl.purview-data-security-posture-management-protect-remediate.summary
 badge:
-  uid: learn.wwl.purview-dspm-protect-remediate.badge
+  uid: learn.wwl.purview-data-security-posture-management-protect-remediate.badge
