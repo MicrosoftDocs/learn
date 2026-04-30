@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-manage-semantic-models-fabric
+metadata:
+  title: Design and Manage Semantic Models in Microsoft Fabric
+  description:  Create semantic models that serve reliable, governed analytics at scale — from initial DAX logic through performance optimization, data access control, and automated lifecycle management.
+  ms.date: 04/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: learning-path
+  ai-usage: ai-generated
+title: Design and manage semantic models in Microsoft Fabric
+prerequisites: |
+  - Experience building reports in Power BI
+  - Familiarity with DAX syntax including measures and calculated columns
+  - Understanding of dimensional data modeling design concepts
+summary: |
+  Create semantic models that serve reliable, governed analytics at scale — from initial DAX logic through performance optimization, data access control, and automated lifecycle management.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- fabric
+subjects:
+- data-analytics
+- data-modeling
+modules:
+- learn-bizapps.dax-power-bi-create-calculations
+- learn.wwl.design-semantic-models-scale
+- learn.wwl.optimize-semantic-model-performance
+- learn.wwl.enforce-semantic-model-security
+- learn.wwl.manage-semantic-model-lifecycle
+trophy:
+  uid: learn.wwl.design-manage-semantic-models-fabric.trophy
