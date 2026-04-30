@@ -7,7 +7,6 @@ metadata:
   author: r-c-stewart
   ms.author: roberts
   ms.topic: learning-path
-  ms.service: security-copilot
 title: Deploy and operate Microsoft Security Copilot
 summary: |
   In this learning path, you build a working foundation with Microsoft Security Copilot and advance to enterprise-grade deployment and day-to-day operations. You start by exploring core concepts, how Security Copilot processes natural language prompts, the elements of an effective prompt, and the steps to enable the solution for your organization. You then plan and configure workspaces with the right Security Compute Units, data residency settings, and role assignments to support enterprise segmentation requirements. Finally, you govern plugin access and manage the full lifecycle of both Microsoft-built and partner-built agents to keep your deployment running smoothly and securely.
