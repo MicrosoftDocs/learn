@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-auditing.describe-azure-sql-auditing-capabilities
+title: Describe Azure SQL auditing capabilities
+metadata:
+  title: Describe Azure SQL Auditing Capabilities
+  description: "Describe how Azure SQL auditing works, select audit action groups, compare server-level and database-level scope, and understand retention settings for compliance."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-azure-sql-auditing-capabilities.md)]

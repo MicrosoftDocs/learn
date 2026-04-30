@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-platform-security.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of platform-level security configuration for Azure SQL Database and SQL Managed Instance."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
