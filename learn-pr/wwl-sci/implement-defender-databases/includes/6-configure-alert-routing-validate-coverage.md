@@ -1,6 +1,6 @@
 Defender for Databases generates security alerts in Microsoft Defender for Cloud, but those alerts don't automatically reach the people who need to respond to them. At Contoso Financial Services, the security team enabled Defender for Azure SQL Databases and Defender for open-source relational databases across production subscriptions. Now you configure where alerts go, create suppression rules for expected behavior patterns, and validate that the detection pipeline works end-to-end.
 
-:::image type="content" source="../media/alert-routing-pipeline.png" alt-text="Diagram showing how Defender for Databases detections flow through alert generation, suppression rules, and routing to email notifications and Microsoft Sentinel." lightbox="../media/alert-routing-pipeline.png":::
+:::image type="content" source="../media/alert-routing-pipeline.png" alt-text="Diagram of Defender for Databases detections flowing through alert generation, suppression rules, and routing to email and Microsoft Sentinel." lightbox="../media/alert-routing-pipeline.png":::
 
 | Destination | Configuration method | Purpose |
 |-------------|---------------------|---------|
@@ -63,11 +63,11 @@ This validation confirms that when a real incident occurs, the right people rece
 
 Before handing off the implementation:
 
-- [ ] Defender for Azure SQL Databases is enabled on all production subscriptions
-- [ ] Defender for open-source relational databases is enabled on all subscriptions with PostgreSQL or MySQL
-- [ ] Email notifications route to the SOC team distribution list
-- [ ] Microsoft Sentinel data connector is active and Defender for Databases incidents appear in Microsoft Sentinel
-- [ ] Suppression rules are scoped correctly and have expiration dates set
-- [ ] Sample alerts are generated and validated end-to-end
+- Defender for Azure SQL Databases is enabled on all production subscriptions
+- Defender for open-source relational databases is enabled on all subscriptions with PostgreSQL or MySQL
+- Email notifications route to the SOC team distribution list
+- Microsoft Sentinel data connector is active and Defender for Databases incidents appear in Microsoft Sentinel
+- Suppression rules are scoped correctly and have expiration dates set
+- Sample alerts are generated and validated end-to-end
 
 With alert routing configured and validated, the security operations team receives Defender for Databases detections in the systems they use for incident management. Your implementation connects detection to response. This foundation enables database security operations at Contoso.

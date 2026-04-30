@@ -1,6 +1,6 @@
 Defender for Cloud extends threat detection beyond Azure SQL Database to include open-source relational database services. Contoso Financial Services runs Azure Database for PostgreSQL as a secondary customer portal database, which currently sits outside the SQL threat detection coverage you configured in the previous unit.
 
-:::image type="content" source="../media/open-source-database-coverage.png" alt-text="Coverage map showing which Azure and Amazon Rational Database Service (RDS) are protected by Defender for open-source relational databases and which aren't covered." lightbox="../media/open-source-database-coverage.png":::
+:::image type="content" source="../media/open-source-database-coverage.png" alt-text="Diagram of Azure and Amazon RDS database types covered by Defender for open-source relational databases." lightbox="../media/open-source-database-coverage.png":::
 
 | Coverage | Included | Not included |
 |----------|----------|--------------|

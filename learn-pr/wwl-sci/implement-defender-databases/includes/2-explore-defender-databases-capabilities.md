@@ -1,6 +1,6 @@
 Platform security controls and auditing logs are foundational, but they don't alert you when an attack is in progress or when an AI service begins querying sensitive data in unusual patterns. Microsoft Defender for Databases fills this gap by providing active threat detection, real-time alerts, and automated vulnerability scanning across your database workloads. At Contoso Financial Services, the security team needs to determine which plans to enable and how to configure detection policies.
 
-:::image type="content" source="../media/defender-databases-capabilities.png" alt-text="Diagram showing the Defender for Databases plans with their coverage, shared threat detection capabilities, and MITRE ATT&CK mapping." lightbox="../media/defender-databases-capabilities.png":::
+:::image type="content" source="../media/defender-databases-capabilities.png" alt-text="Diagram of Defender for Databases plans, coverage, shared threat detection capabilities, and MITRE ATT&CK mapping." lightbox="../media/defender-databases-capabilities.png":::
 
 | Plan | Coverage |
 |------|----------|
