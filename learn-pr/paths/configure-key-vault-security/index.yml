@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.configure-key-vault-security
 metadata:
-  title: Secure Azure Key Vault with defence in depth for the Cloud and AI Workloads
+  title: Secure Azure Key Vault with defense in depth for the Cloud and AI Workloads
   description: "Implement a defense-in-depth security strategy for Azure Key Vault. Configure hardened vault settings, control access through RBAC and just-in-time privilege, manage keys, secrets, and certificates, and detect threats using Microsoft Defender for Key Vault and Defender CSPM."
   ms.date: 04/13/2026
   author: r-c-stewart
   ms.author: roberts
   ms.topic: learning-path
   ai-usage: ai-assisted
-title: Secure Azure Key Vault with defence in depth for the cloud and AI workloads
+title: Secure Azure Key Vault with defense in depth for the cloud and AI workloads
 summary: |
   Implement a defense-in-depth security strategy for Azure Key Vault. In this learning path, you apply security-hardened vault configuration, enforce least-privilege access with just-in-time activation, manage the full lifecycle of keys, secrets, and certificates, and use Microsoft Defender for Cloud to detect exposed credentials and malicious access patterns targeting your vaults.
 prerequisites: |
