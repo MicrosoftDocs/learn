@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bfe2e37a-385b-4499-8b5b-81a4b2d50c79]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 As AI agents become more capable, the range of tools and services they can access also grows. However, registering new tools, managing, updating, and integrating them can quickly become complex and time-consuming. Dynamic tool discovery helps solve this problem by enabling agents to find and use tools automatically at runtime.
 
 ## Advantages of the Model Context Protocol for AI agents
@@ -41,3 +52,5 @@ This approach provides several benefits:
 - Flexibility: Supports diverse tool types and complex workflows by aggregating capabilities.
 
 Dynamic tool discovery is especially useful in environments where tools evolve rapidly or where many teams manage different APIs and services. Using tools allows AI agents to adapt to changing capabilities in real time, interact with external systems securely, and perform actions that go beyond language generation.
+
+::: zone-end
