@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-platform-security.configure-authentication-managed-identity
+title: Configure authentication and managed identity access
+metadata:
+  title: Configure Authentication and Managed Identity Access
+  description: "Configure Microsoft Entra ID–only authentication for Azure SQL, disable SQL authentication, and grant managed identity access to AI workloads without credentials."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-configure-authentication-managed-identity.md)]
