@@ -28,7 +28,7 @@ products:
 subjects:
   - security
   - cloud-security
-  - database
+  - databases
 modules:
   - learn.wwl.configure-azure-sql-platform-security
   - learn.wwl.configure-azure-sql-auditing
