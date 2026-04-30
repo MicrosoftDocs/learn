@@ -13,7 +13,7 @@ Modern cloud applications require identity-based authentication that eliminates 
 
 Microsoft Entra ID–only authentication disables SQL logins and SQL Server authentication at the server level. When you enable this mode, traditional username-password authentication stops working, and all connections must authenticate using Microsoft Entra credentials.
 
-Before enabling Entra-only authentication, you must set an Microsoft Entra admin on the logical SQL server or SQL Managed Instance. This admin has full control over the database and can create more Microsoft Entra users. In the Azure portal, navigate to your SQL server. Select **Settings** > **Microsoft Entra ID**, then choose **Set admin** to assign a user or group. You can also use Azure CLI:
+Before enabling Entra-only authentication, you must set a Microsoft Entra admin on the logical SQL server or SQL Managed Instance. This admin has full control over the database and can create more Microsoft Entra users. In the Azure portal, navigate to your SQL server. Select **Settings** > **Microsoft Entra ID**, then choose **Set admin** to assign a user or group. You can also use Azure CLI:
 
 ```azurecli
 az sql server ad-admin create \
@@ -28,7 +28,7 @@ Using a Microsoft Entra group as the admin is the recommended approach. An admin
 This configuration brings three security benefits: it eliminates password sprawl by removing local SQL credentials, enables MFA enforcement through Microsoft Entra authentication policies, and allows Conditional Access policies to control access based on location, device compliance, or risk level.
 
 > [!IMPORTANT]
-> Enabling Entra-only authentication immediately disables all SQL authentication logins. Ensure you have an Microsoft Entra admin configured and tested before enabling this mode in production environments.
+> Enabling Entra-only authentication immediately disables all SQL authentication logins. Ensure you have a Microsoft Entra admin configured and tested before enabling this mode in production environments.
 
 ## Create contained database users for managed identities
 
