@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-auditing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your knowledge of configuring audit logging for Azure SQL Database and SQL Managed Instance."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's Azure SQL Database server hosts a high-volume Online Transaction Processing (OLTP) banking application. The security team reports that server-level auditing is causing performance degradation during peak transaction hours. What change resolves this issue?"
+    choices:
+    - content: "Disable auditing temporarily during peak hours and re-enable it during off-peak windows"
+      isCorrect: false
+      explanation: "Incorrect. Disabling auditing creates compliance gaps and violates financial regulatory requirements. Temporary disabling isn't an acceptable solution for regulated workloads."
+    - content: "Route audit logs to Event Hubs instead of Azure Storage to reduce write latency"
+      isCorrect: false
+      explanation: "Incorrect. The audit log destination affects where logs are stored, not the performance challenge of audit logging on the database engine. Switching destinations doesn't resolve OLTP performance degradation."
+    - content: "Switch to database-level auditing so each database writes audit logs to its own folder independently"
+      isCorrect: true
+      explanation: "Correct. For high-volume OLTP environments, database-level auditing is recommended over server-level auditing. Each database manages its own extended event session and writes to a separate folder, reducing contention and improving query performance."
+    - content: "Increase the storage account performance tier to Premium to reduce audit log write times"
+      isCorrect: false
+      explanation: "Incorrect. Storage performance affects write latency for stored logs, but doesn't address the database engine overhead created by the audit extended event session processing at the server level."
+  - content: "A financial regulator requires that Contoso's database audit logs can't be altered or deleted after they're written. Which audit destination configuration meets this requirement?"
+    choices:
+    - content: "Azure Monitor Log Analytics workspace with a 365-day retention policy"
+      isCorrect: false
+      explanation: "Incorrect. Log Analytics workspaces store logs in a mutable format. Retention policies control how long logs are kept, but don't prevent modification of existing log records."
+    - content: "Azure Blob Storage with immutable blob storage (WORM) policies configured on the audit container"
+      isCorrect: true
+      explanation: "Correct. Immutable blob storage enforces write-once-read-many (WORM) policies that prevent modification or deletion of audit logs for a defined period. This provides tamper-resistant records suitable for financial regulatory compliance."
+    - content: "Event Hubs with a dedicated consumer group and 30-day message retention"
+      isCorrect: false
+      explanation: "Incorrect. Event Hubs is a streaming platform designed for real-time ingestion and forwarding. It doesn't provide the tamper-resistant, long-term storage required for regulatory compliance."
+    - content: "Azure Monitor diagnostic settings with a resource lock applied to the Log Analytics workspace"
+      isCorrect: false
+      explanation: "Incorrect. A resource lock prevents the workspace from being deleted, but doesn't make the log records themselves immutable. Logs in Log Analytics can still be purged or modified."
+  - content: "A cloud security engineer needs to configure SQL Managed Instance auditing to route logs to both Azure Monitor and an Event Hubs. Which configuration method is required for these nonstorage destinations?"
+    choices:
+    - content: "The SQL auditing screen in the Azure portal, selecting all three destinations simultaneously"
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal auditing screen for SQL Managed Instance has different capabilities than SQL Database. For nonstorage destinations on SQL MI, T-SQL or diagnostic settings are required."
+    - content: "T-SQL CREATE SERVER AUDIT with TO EXTERNAL_MONITOR specified as the destination"
+      isCorrect: true
+      explanation: "Correct. SQL Managed Instance uses T-SQL CREATE SERVER AUDIT with TO EXTERNAL_MONITOR to send audit logs to Azure Monitor (Log Analytics) or Event Hubs. This is the required method for nonstorage audit destinations on SQL MI."
+    - content: "Enable the server audit through the Defender for Cloud recommendations panel"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud can surface a recommendation to enable auditing, but it doesn't configure the audit destinations. Destination configuration requires T-SQL or diagnostic settings on SQL Managed Instance."
+    - content: "Configure a Log Analytics workspace directly in the SQL Managed Instance auditing settings under the Security screen"
+      isCorrect: false
+      explanation: "Incorrect. SQL Managed Instance auditing settings in the portal support Azure Storage as a destination. For Log Analytics and Event Hubs, you must use T-SQL with TO EXTERNAL_MONITOR or configure diagnostic settings."
