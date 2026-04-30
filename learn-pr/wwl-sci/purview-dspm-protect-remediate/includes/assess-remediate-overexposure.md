@@ -65,6 +65,6 @@ Item-level scanning, available in custom assessments, identifies individual file
 > [!IMPORTANT]
 > Removing a sharing link is irreversible from the assessment workflow. If legitimate users need access, the site or item owner must create a new sharing link with more restrictive permissions.
 
-## Feeding results back to the objective
+## Feed results back to the objective
 
 Data risk assessment remediation feeds directly into the **Prevent oversharing of sensitive data** objective's outcome metrics. As you remediate overshared items or create site-level policies from assessment results, the objective's coverage and risk indicators update. If the gap remains after item-level remediation, complement it with a broader one-click policy from the objective workflow.

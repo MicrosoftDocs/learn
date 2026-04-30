@@ -12,7 +12,7 @@ Reviewing these metrics validates that a policy is working as intended and revea
 
 :::image type="content" source="../media/objective-oversharing-trend-metrics.png" alt-text="Screenshot showing the Prevent oversharing objective with stable trend lines and key metrics showing no change over 30 days.":::
 
-## Evaluating whether policies achieve their intent
+## Evaluate whether policies achieve their intent
 
 An improvement in outcome metrics confirms the policy is active and covering data. But "active and covering" doesn't always mean the protection gap is closed. Consider these evaluation questions:
 
@@ -30,7 +30,7 @@ An improvement in outcome metrics confirms the policy is active and covering dat
 
 The impact prediction you reviewed before submitting the policy is your baseline. The outcome card is the result. When those two visuals don't align, the gap between them tells you what to investigate next.
 
-## Identifying when further action is needed
+## Identify when further action is needed
 
 Several conditions signal that a policy alone didn't resolve the protection gap:
 
@@ -40,7 +40,7 @@ Several conditions signal that a policy alone didn't resolve the protection gap:
 - **Improvement plateaus below the target**: The policy addressed part of the gap, but the remaining portion is a different kind of problem. A DLP policy prevents future sharing violations, but items already overshared need item-level remediation through a data risk assessment.
 - **New risk indicators appear**: Changes in the data estate introduced risks the current policy doesn't cover. Reassess the objective to determine whether the new gap needs a separate policy or a different remediation type entirely.
 
-## Repeating the cycle
+## Repeat the cycle
 
 Protection in DSPM isn't a one-time action. Each objective requires periodic reassessment:
 

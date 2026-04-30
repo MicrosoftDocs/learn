@@ -28,7 +28,7 @@ Targeted actions like removing a sharing link or applying a sensitivity label ad
 
 :::image type="content" source="../media/select-remediation-approaches.png" border="false" alt-text="Diagram showing broad coverage gaps mapping to one-click policies and concentrated oversharing mapping to data risk assessments.":::
 
-## Matching the gap to the pathway
+## Match the gap to the pathway
 
 | Risk condition | Recommended pathway | Why |
 | --- | --- | --- |
@@ -37,6 +37,6 @@ Targeted actions like removing a sharing link or applying a sensitivity label ad
 | AI interactions surfacing protected content | Copilot-specific one-click policy | The objective's workflow scopes a DLP policy to Copilot interactions |
 | Multiple complementary gaps across objectives | Multiple pathways | Some gaps need both a broad policy and targeted fixes |
 
-## Confirming it worked
+## Confirm it worked
 
 Outcome metrics update after you apply remediation. Coverage percentages shift, trends change direction, and risk indicators reflect the new state. If you apply a policy and the metrics don't improve, that's a signal. Either the policy scope doesn't match the actual gap, or the gap requires a different type of action. A DLP policy prevents future sharing violations, but it doesn't retroactively remove existing anonymous links. That kind of gap still needs item-level remediation even after the policy is active.

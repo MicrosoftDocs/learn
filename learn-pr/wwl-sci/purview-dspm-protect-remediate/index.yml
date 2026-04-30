@@ -38,7 +38,7 @@ units:
 - learn.wwl.purview-dspm-protect-remediate.select-remediation-approaches
 - learn.wwl.purview-dspm-protect-remediate.apply-one-click-policies
 - learn.wwl.purview-dspm-protect-remediate.measure-remediation-progress
-- learn.wwl.purview-dspm-protect-remediate.assess-remediate-oversharing
+- learn.wwl.purview-dspm-protect-remediate.assess-remediate-overexposure
 - learn.wwl.purview-dspm-protect-remediate.knowledge-check
 - learn.wwl.purview-dspm-protect-remediate.summary
 badge:

@@ -10,7 +10,7 @@ The term "one-click" refers to the guided simplification, not a literal single c
 
 :::image type="content" source="../media/one-click-policy-copilot-remediation-plan.png" alt-text="Screenshot showing the remediation plan for the Copilot interactions objective with preconfigured policy recommendations, default protections checklist, and estimated impact on risk pattern chart.":::
 
-## Creating a policy from an objective
+## Create a policy from an objective
 
 Regardless of policy type, you want to confirm that the preconfigured conditions match your specific gap and evaluate the impact prediction before you commit. Using a DLP policy as an example:
 
@@ -28,7 +28,7 @@ Sensitivity label policies and Insider Risk Management policies follow the same 
 > [!NOTE]
 > Creating policies from objectives requires the same roles as creating them from their associated solutions. DSPM simplifies the workflow but doesn't change the underlying permission requirements.
 
-## Evaluating impact predictions
+## Evaluate impact predictions
 
 Before applying any one-click policy, DSPM shows an impact prediction visual estimating:
 
@@ -44,7 +44,7 @@ This prediction is where you validate that the policy matches the gap:
 
 The impact prediction is based on current data state and might not account for newly created content. Treat it as a planning tool rather than a guarantee.
 
-## What to review before submitting
+## What to review before you submit
 
 Even though DSPM preconfigures settings, two decisions are worth deliberate attention:
 
