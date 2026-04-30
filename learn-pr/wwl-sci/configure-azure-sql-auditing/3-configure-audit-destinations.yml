@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-auditing.configure-audit-destinations
+title: Configure audit destinations for Azure SQL Database
+metadata:
+  title: Configure Audit Destinations for Azure SQL Database
+  description: "Configure audit log routing to Azure Blob Storage, Azure Monitor Log Analytics, and Event Hubs for Azure SQL Database, and enable immutable storage for tamper-resistant compliance records."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-configure-audit-destinations.md)]
