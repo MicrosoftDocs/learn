@@ -2,12 +2,12 @@
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.automatically-scale-cluster-azure-kubernetes-service
 title: Automatically scale a cluster on Azure Kubernetes Service
 metadata:
-  title: Automatically scale a cluster on Azure Kubernetes Service
+  title: Automatically Scale a Cluster on Azure Kubernetes Service
   description: "Automatically scale a cluster on Azure Kubernetes Service"
-  ms.date: 10/25/2023
+  ms.date: 04/20/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/7-automatically-scale-cluster-azure-kubernetes-service.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.scaling-options-azure-kubernetes-services
-title: Scaling options in Azure Kubernetes Services
+title: Scaling options in Azure Kubernetes Service
 metadata:
-  title: Scaling options in Azure Kubernetes Services
-  description: "Scaling options in Azure Kubernetes Services"
-  ms.date: 10/25/2023
+  title: Scaling Options in Azure Kubernetes Service
+  description: "Scaling options in Azure Kubernetes Service"
+  ms.date: 04/20/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit
