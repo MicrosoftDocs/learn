@@ -45,3 +45,7 @@ Select the ellipses for the promptbook you want to edit then select Edit from th
 :::image type="content" source="../media/my-promptbooks-library-edit-v2.png" lightbox="../media/my-promptbooks-library-edit-v2.png" alt-text="Screen capture of the edit option for your custom promptbook.":::
 
 In addition to editing, you can also choose to view the details of the promptbook, duplicate it, or delete it. You can also choose to run the promptbook by selecting the Get started button.
+
+### Continue on failure
+
+The **Continue on failure** feature allows users to set a promptbook to continue running the next prompt even after a prompt fails, instead of halting the entire promptbook. This is useful for investigation flows where some prompts might not return results but you still want the rest of the promptbook to complete.
