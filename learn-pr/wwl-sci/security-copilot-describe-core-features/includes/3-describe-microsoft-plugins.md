@@ -25,9 +25,9 @@ To view the system capabilities supported by the enabled plugins, you select the
 
 The sections that follow provide brief descriptions for many, but not all, of the available Microsoft plugins. Microsoft Security Copilot is continually adding support for Microsoft products.
 
-#### Azure Firewall (Preview)
+#### Azure Firewall
 
-Azure Firewall is a cloud-native and intelligent network firewall security service that provides best of breed threat protection for your cloud workloads running in Azure. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
+Azure Firewall is a cloud-native and intelligent network firewall security service that provides best-in-class threat protection for your cloud workloads running in Azure. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 
 The Azure Firewall integration with Copilot helps analysts perform detailed investigations of the malicious traffic intercepted by the intrusion detection and prevention system (IDPS) and/or the threat intelligence capabilities of the firewalls across their environment.
 
@@ -47,7 +47,7 @@ Example prompts include:
 - What are the top 20 IDPS hits from the last seven days for Firewall \<Firewall name> in resource group \<resource group name>?
 - If I want to make sure all my Firewalls are protected against attacks from signature ID \<ID number>, how do I do this?
 
-#### Azure Web Application Firewall (Preview)
+#### Azure Web Application Firewall
 
 Azure Web Application Firewall (WAF) integration in Security Copilot enables deep investigation of Azure WAF events. It can help you investigate WAF logs triggered by Azure WAF in a matter of minutes and provide related attack vectors using natural language responses at machine speed. It provides visibility into your environment’s threat landscape. It allows you to retrieve a list of most frequently triggered WAF rules and identify the top offending IP addresses in your environment.
 
@@ -55,7 +55,7 @@ Security Copilot integration is supported on both Azure WAF integrated with Azur
 
 To use the Azure WAF integration in Copilot, the Azure WAF plugin in Security Copilot must be turned on and configured.
 
-The preview standalone experience in Azure WAF can help you with:
+The standalone experience in Azure WAF can help you with:
 
 - Providing a list of top Azure WAF rules triggered in the customer environment and generating deep context with related attack vectors.
 - Providing a list of malicious IP addresses in the customer environment and generating related threats.
@@ -80,11 +80,11 @@ The Azure AI Search plugin allows you to connect your company’s knowledge base
 
 Microsoft Entra is a family of multicloud identity and network access solutions that enables organizations to protect any identity and secure access to any resource. It provides a unified platform for identity and network access management, making it easier to secure identities and access to resources across multicloud and hybrid environments.
 
-Security Copilot integrates with Microsoft Entra. With the Entra plugin enabled, security analysts can instantly get a risk summary, steps to remediate, and recommended guidance for each identity at risk, in natural language. Analysts can use Copilot to guide in the creation of a lifecycle workflow to streamline the process of creating and issuing user credentials and access rights. These and many other Entra capabilities are supported by Copilot.
+Security Copilot integrates with Microsoft Entra. With the Microsoft Entra plugin enabled, security analysts can instantly get a risk summary, steps to remediate, and recommended guidance for each identity at risk, in natural language. Analysts can use Copilot to guide in the creation of a lifecycle workflow to streamline the process of creating and issuing user credentials and access rights. These and many other Microsoft Entra capabilities are supported by Copilot.
 
 Microsoft Entra capabilities in Copilot are built-in prompts that you can use but you can also enter your own prompts based on the capabilities supported.
 
-:::image type="content" source="../media/entra-skills.png" lightbox="../media/entra-skills.png" alt-text="Screen capture of the Entra capabilities that can be run in the standalone experience.":::
+:::image type="content" source="../media/entra-skills.png" lightbox="../media/entra-skills.png" alt-text="Screen capture of the Microsoft Entra capabilities that can be run in the standalone experience.":::
 
 With the plugin enabled, Copilot integration with Microsoft Entra can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
@@ -122,7 +122,7 @@ With the plugin enabled, Copilot integration with Microsoft Intune can also be e
 
 Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-There are two separate plugins in Copilot that relate to Microsoft Defender XDR (the user interface may still show Microsoft 365 Defender):
+There are two separate plugins in Copilot that relate to Microsoft Defender XDR:
 
 - Microsoft Defender XDR
 - Natural language to KQL for Microsoft Defender XDR
@@ -207,27 +207,27 @@ Microsoft Purview capabilities in Copilot are built-in prompts that you can use,
 
 Copilot capabilities can also be experienced directly from within Purview solutions, through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
-#### Microsoft Sentinel (Preview)
+#### Microsoft Sentinel
 
 Microsoft Sentinel delivers intelligent security analytics and threat intelligence across the enterprise. With Microsoft Sentinel, you get a single solution for attack detection, threat visibility, proactive hunting, and threat response.
 
-There are two separate plugins in Copilot that relate to Sentinel:
+There are two separate plugins in Copilot that relate to Microsoft Sentinel:
 
-- Microsoft Sentinel (Preview)
-- Natural language to Microsoft Sentinel KQL (Preview)
+- Microsoft Sentinel
+- Natural language to Microsoft Sentinel KQL
 
-:::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Sentinel and NL2KQK in Sentinel plugin.":::
+:::image type="content" source="../media/sentinel-skills-v3.png" lightbox="../media/sentinel-skills-v3.png" alt-text="Screen capture of the Microsoft Sentinel and NL2KQK in Microsoft Sentinel plugin.":::
 
-***Microsoft Sentinel (Preview)***
+***Microsoft Sentinel***
 
-To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
+To utilize the Microsoft Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Microsoft Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
 
-The Sentinel plugin also requires the user to configure the Sentinel workspace, the subscription name, and the resource group name.
+The Microsoft Sentinel plugin also requires the user to configure the Microsoft Sentinel workspace, the subscription name, and the resource group name.
 
-:::image type="content" source="../media/sentinel-plugin-settings-v2.png" lightbox="../media/sentinel-plugin-settings-v2.png" alt-text="Screen capture of the Sentinel plugin settings page.":::
+:::image type="content" source="../media/sentinel-plugin-settings-v2.png" lightbox="../media/sentinel-plugin-settings-v2.png" alt-text="Screen capture of the Microsoft Sentinel plugin settings page.":::
 
-The Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
+The Microsoft Sentinel plugin capabilities are focused on incidents and workspaces. Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
 
-***Natural language to Microsoft Sentinel KQL (Preview)***
+***Natural language to Microsoft Sentinel KQL***
 
-The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.
+The natural language to Microsoft Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs.

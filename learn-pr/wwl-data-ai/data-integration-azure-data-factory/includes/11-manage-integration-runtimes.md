@@ -6,20 +6,20 @@ In short, the Integration Runtime (IR) is the compute infrastructure used by Azu
 
 - **Data Flow**: Execute a Data Flow in managed Azure compute environment.
 - **Data movement**: Copy data across data stores in public network and data stores in private network (on-premises or virtual private network). It provides support for built-in connectors, format conversion, column mapping, and performant and scalable data transfer.
-- **Activity dispatch**: Dispatch and monitor transformation activities running on a variety of compute services such as Azure Databricks, Azure HDInsight, Azure Machine Learning, Azure SQL Database, SQL Server, and more.
+- **Activity dispatch**: Dispatch and monitor transformation activities running on various compute services such as Azure Databricks, Azure HDInsight, Azure Machine Learning, Azure SQL Database, SQL Server, and more.
 - **SSIS package execution**: Natively execute SQL Server Integration Services (SSIS) packages in a managed Azure compute environment.
 
 Whenever an Azure Data Factory instance is created, a default Integration Runtime environment is created that supports operations on cloud data stores and compute services in public network. This can be viewed when the integration runtime is set to Auto-Resolve
 
 ## Integration runtime types
 
-Data Factory offers three types of Integration Runtime, and you should choose the type that best serve the data integration capabilities and network environment needs you are looking for. These three types are:
+Data Factory offers three types of Integration Runtime, and you should choose the type that best serve the data integration capabilities and network environment needs you're looking for. These three types are:
 
 - Azure
 - Self-hosted
 - Azure-SSIS
 
-You can explicitly define the Integration Runtime setting in the **connectVia** property, if this is not defined, then the default Integration Runtime is used with the property set to Auto-Resolve.  
+You can explicitly define the Integration Runtime setting in the **connectVia** property, if this isn't defined, then the default Integration Runtime is used with the property set to Auto-Resolve.  
 
 The following table describes the capabilities and network support for each of the integration runtime types:
 
@@ -34,13 +34,13 @@ The following table describes the capabilities and network support for each of t
 
 ## Determining which integration runtime to use
 
-There are a range of factors that affect the Integration Runtime that you will use. The following is a guide that will help you select the right IR
+There are a range of factors that affect the Integration Runtime that you'll use. The following is a guide that will help you select the right IR
 
 ### Copy activity
 
 For the Copy activity, it requires source and sink linked services to define the direction of data flow. The following logic is used to determine which integration runtime instance is used to perform the copy:
 
-- Copying between two cloud data sources: when both source and sink linked services are using Azure IR, ADF will use the regional Azure IR if you specified, or auto determine a location of Azure IR if you choose the auto-resolve IR (default) as described in Integration runtime location section.
+- Copying between two cloud data sources: when both source and sink linked services are using Azure IR, ADF uses the regional Azure IR if you specified, or auto determine a location of Azure IR if you choose the autoresolve IR (default) as described in Integration runtime location section.
 
 - Copying between a cloud data source and a data source in private network: if either source or sink linked service points to a self-hosted IR, the copy activity is executed on that self-hosted Integration Runtime.
 

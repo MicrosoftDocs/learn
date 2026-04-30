@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b55d118e-c1ad-4eed-89bc-bb2d20d6a591]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The *code_interpreter* tool provides your model with a Python runtime in which it can generate and run Python code.
 
 ## What is the code_interpreter tool?
@@ -85,3 +96,5 @@ The general process for using the code_interpreter tool is:
 - Some libraries may not be available; let the model know if a standard library fails
 - **Timeout limits** apply to long-running operations
 - Code runs with **memory constraints**—massive datasets may need streaming or chunking
+
+::: zone-end

@@ -11,29 +11,37 @@ metadata:
   ai-usage: ai-generated
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-    - content: Which endpoint offers the broadest support for OpenAI APIs with Foundry Models?
+    - content: Which endpoint offers the broadest support for OpenAI APIs with Foundry
+        Models?
       choices:
         - content: The Foundry project endpoint
           isCorrect: false
-          explanation: Incorrect. The Foundry Project endpoint is used for Foundry-native operations, and OpenAI API support for the Responses API with Foundry direct models.
+          explanation: Incorrect. The Foundry Project endpoint is used for Foundry-native
+            operations, and OpenAI API support for the Responses API with
+            Foundry direct models.
         - content: The Azure OpenAI endpoint
           isCorrect: true
-          explanation: Correct. The Azure OpenAI endpoint provides broad support for OpenAI APIs with Foundry Models.
+          explanation: Correct. The Azure OpenAI endpoint provides broad support for
+            OpenAI APIs with Foundry Models.
         - content: The Foundry Tools endpoint
           isCorrect: false
-          explanation: Incorrect. Foundry Tools do not provide broad support for OpenAI APIs with Foundry Models.
-    - content: Which package must you install to use the Microsoft Foundry SDK in Python?
+          explanation: Incorrect. Foundry Tools do not provide broad support for OpenAI
+            APIs with Foundry Models.
+    - content: Which package must you install to use the Microsoft Foundry SDK in
+        Python?
       choices:
         - content: Package `azure-foundry`
           isCorrect: false
           explanation: Incorrect. This package doesn't exist.
         - content: Package `azure-ai-projects`
           isCorrect: true
-          explanation: Correct. The `azure-ai-projects` package provides the Microsoft Foundry SDK for Python.
+          explanation: Correct. The `azure-ai-projects` package provides the Microsoft
+            Foundry SDK for Python.
         - content: Package `microsoft-foundry-sdk`
           isCorrect: false
           explanation: Incorrect. This package doesn't exist.

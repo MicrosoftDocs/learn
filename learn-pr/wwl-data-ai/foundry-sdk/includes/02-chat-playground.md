@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e1c66b97-da7f-454f-a866-d1167918f8b8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Before you write code to build a generative AI chat application, it's helpful to explore what your project can do through the Foundry portal. The portal provides interactive tools for testing models and generating code samples that you can use as starting points for your applications.
 
 [![Screenshot of the Model playground in Microsoft Foundry portal.](../media/foundry-playground.png)](../media/foundry-playground.png#lightbox)
@@ -41,3 +51,5 @@ The typical workflow for building an AI application with Microsoft Foundry looks
 This approach lets you quickly prototype and validate your ideas before investing time in development.
 
 In the next unit, you'll learn about the available endpoints and SDKs you can use to develop a client application.
+
+::: zone-end

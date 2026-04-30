@@ -6,10 +6,10 @@ In this module, you've learned how to use SQL to store and retrieve data in Azur
 
 - [sqlcmd Utility](/sql/tools/sqlcmd-utility)
 - [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
-- [Tutorial: Design a relational database in a single database within Azure SQL using SSMS](/azure/sql-database/sql-database-design-first-database)
+- [Tutorial: Design a relational database in Azure SQL Database using SSMS](/azure/sql-database/sql-database-design-first-database)
 - [MySQL Community Downloads](https://dev.mysql.com/downloads/workbench) 
-- [Azure Database for MySQL: Use MySQL Workbench to connect and query data](/azure/mysql/connect-workbench)
-- [Quickstart: Use the Azure portal's query editor to query a database](/azure/azure-sql/database/connect-query-portal)
+- [Use MySQL Workbench with Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/connect-workbench)
+- [Quickstart: Use the Azure portal query editor to query Azure SQL Database](/azure/azure-sql/database/connect-query-portal)
 - [DML Queries with SQL](/sql/t-sql/queries/queries)
 - [Joins (SQL Server)](/sql/relational-databases/performance/joins) 
 

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=52e5e614-33ab-410c-9724-9228336f1909]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The most accessible way to optimize a model's performance is through **prompt engineering**. Prompt engineering is the process of designing and refining prompts to improve the quality, accuracy, and relevance of the responses a language model generates. It requires no additional infrastructure or training data, and you can start experimenting immediately.
 
 ## Understand prompt components
@@ -142,3 +153,5 @@ Prompt engineering is the right starting point for any model optimization effort
 - Keep costs low, as no additional training or data storage is required.
 
 However, prompt engineering has limits. If the model doesn't have access to the information it needs (like your company's hotel catalog), or if it consistently fails to maintain a specific behavior despite detailed instructions, you need to consider additional strategies.
+
+::: zone-end

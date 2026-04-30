@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-scaling-azure-kubernetes-service
 metadata:
-  title: Configure scaling in Azure Kubernetes Service
-  description: This module covers the scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
-  ms.date: 10/25/2023
-  author: wwlpublish
-  ms.author: bradj
+  title: Configure Scaling in Azure Kubernetes Service
+  description: This module covers how to scale applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
+  ms.date: 04/20/2026
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-kubernetes-service
 title: Configure scaling in Azure Kubernetes Service
-summary: This module covers the scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
+summary: This module covers how to scale applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
 abstract: |
   After completing this module, you'll be able to:
-  * Manually scaling pods or nodes
-  * Using the Horizontal pod autoscaler
-  * Using the Cluster autoscaler
-  * Integrating with Azure Container Instances (ACI)
+  * Manually scale workload replicas and AKS node pools
+  * Use the horizontal pod autoscaler (HPA) to scale workload replicas
+  * Use the cluster autoscaler to scale AKS node pools
+  * Use virtual nodes to run burst workloads in Azure Container Instances (ACI)
 prerequisites: |
-  None
+  * Familiarity with core Kubernetes concepts such as pods, Deployments, replicas, nodes, and node pools
+  * Basic experience working with an Azure Kubernetes Service (AKS) cluster
+  * An Azure subscription and permissions to view or modify AKS node pools, if you complete the optional exercise
+  * Familiarity with container resource requests and limits, which the autoscalers rely on to make scheduling decisions
 iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate

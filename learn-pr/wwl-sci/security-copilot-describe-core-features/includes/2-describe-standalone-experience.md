@@ -39,11 +39,11 @@ From the home menu, the user can navigate as follows:
 
   - Owner settings. These settings include the option to switch Security Compute Units (SCUs) capacity, select the workspace for Copilot agents, configure data sharing options to help improve Copilot, allow logging audit data in Microsoft Purview, and configure who can upload files.
 
-    # [Swtich capacity](#tab/switch-capacity)
+    # [Switch capacity](#tab/switch-capacity)
     :::image type="content" source="../media/owner-settings-capacity.png" lightbox="../media/owner-settings-capacity.png" alt-text="Screen capture showing the owner settings, specifically focused on capacity information.":::
 
     # [Agent workspaces](#tab/agent-worksapces)
-    :::image type="content" source="../media/agent-workspaces.png" lightbox="../media/agent-workspaces.png" alt-text="Screen capture showing the workspace that will be used for Security Copilot agent experiences in Microsoft Defender, Microsoft Entra, Microsoft Purview and Microsoft Intune.":::
+    :::image type="content" source="../media/agent-workspaces.png" lightbox="../media/agent-workspaces.png" alt-text="Screen capture showing the workspace that will be used for Security Copilot agent experiences in Microsoft Defender, Microsoft Entra, Microsoft Purview, and Microsoft Intune.":::
 
     # [Improve Copilot](#tab/improve-copilot)
     :::image type="content" source="../media/owner-settings-improve-copilot.png" lightbox="../media/owner-settings-improve-copilot.png" alt-text="Screen capture showing the owner settings, specifically focused on data sharing options.":::
@@ -83,9 +83,9 @@ From the home menu, the user can navigate as follows:
   
        :::image type="content" source="../media/workspace-manage-v2.png" lightbox="../media/workspace-manage-v2.png" alt-text="A screenshot of the manage workspaces page that lists the available workspaces.":::
 
-  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility, for a selected workspace, into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
+  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility, for a selected workspace, into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. Security Copilot supports both provisioned SCUs for predictable workloads and overage SCUs that provide flexible, on-demand capacity billed only when used. Overage SCUs ensure additional capacity is available when initially provisioned units are depleted during unexpected workload spikes. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
   
-    When the provisioned capacity is crossed, the analyst sees an error message stating that due to high usage in organization, they cannot submit additional prompts. The analyst is asked to contact the owner to increase the provisioned SCUs.
+    When the provisioned capacity is crossed, the analyst sees an error message stating that due to high usage in the organization, they can't submit additional prompts. The analyst is asked to contact the owner to increase the provisioned SCUs.
 
     # [Usage monitoring](#tab/usage-monitoring)
     :::image type="content" source="../media/usage-monitoring-dashboard-new.png" lightbox="../media/usage-monitoring-dashboard-new.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
@@ -134,7 +134,7 @@ Selecting the ellipses on the bottom left corner of the navigation panel, allows
     ---
 
 
-- Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from.  Also a user may have access to Security Copilot across multiple tenants. In the screenshot that follows, the user is provisioned only in the "Zava - Private" tenant. If the user had been provisioned in other tenants, they would be listed and the user would be able to select any of the available tenants.
+- Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. Also a user may have access to Security Copilot across multiple tenants. In the screenshot that follows, the user is provisioned only in the "Zava - Private" tenant. If the user had been provisioned in other tenants, they would be listed and the user would be able to select any of the available tenants.
 
     :::image type="content" source="../media/tenant-switcher-v4.png" lightbox="../media/tenant-switcher-v4.png" alt-text="Screen capture showing the tenant switching window, with multiple tenants listed.":::
 
