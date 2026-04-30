@@ -4,12 +4,12 @@ title: Exercise - Integrate a Notebook within Azure Synapse Pipelines
 metadata:
   title: Exercise - Integrate a Notebook within Azure Synapse Pipelines
   description: "Exercise - Integrate a Notebook within Azure Synapse Pipelines"
-  ms.date: 04/19/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 18
 content: |
-  [!include[](includes/5a-exercise-integrate-notebook-azure-synapse-pipelines.md)]
+  [!include[](includes/5a-exercise-integrate-notebook-azure-synapse-pipelines.md)]

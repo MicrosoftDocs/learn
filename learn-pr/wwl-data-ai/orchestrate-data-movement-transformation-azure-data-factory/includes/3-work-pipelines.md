@@ -1,4 +1,4 @@
-To work with data factory pipelines, it is imperative to understand what a pipeline in Azure Data Factory is. 
+To work with data factory pipelines, it's imperative to understand what a pipeline in Azure Data Factory is. 
 
 A pipeline in Azure Data Factory represents a logical grouping of activities where the activities together perform a certain task.
 
@@ -9,7 +9,7 @@ A pipeline enables you to manage the separate individual activities as a set, wh
 Activities in a pipeline are referred to as actions that you perform on your data.
 An activity can take zero or more input datasets and produce one or more output datasets.
 
-An example of an action can be the use of a copy activity, where you copy data from an Azure SQL Database to an Azure DataLake Storage Gen2. To build on this example, you can use a data flow activity or an Azure Databricks Notebook activity for processing and transforming the data that was copied to your Azure Data Lake Storage Gen2 account, in order to have the data ready for business intelligence reporting solutions like in Azure Synapse Analytics.
+An example of an action can be the use of a copy activity, where you copy data from an Azure SQL Database to an Azure Data Lake Storage Gen2. To build on this example, you can use a data flow activity or an Azure Databricks Notebook activity for processing and transforming the data that was copied to your Azure Data Lake Storage Gen2 account, in order to have the data ready for business intelligence reporting solutions like Microsoft Fabric.
 
 Because there are many activities that are possible in a pipeline in Azure Data Factory, we have grouped the activities in three categories:
 
@@ -27,4 +27,4 @@ The four dependency conditions are:
 
 For example, if a pipeline has an Activity A, followed by an Activity B and Activity B has as a dependency condition on Activity A 'Succeeded', then Activity B will only run if Activity A has the status of succeeded.
 
-If you have multiple activities in a pipeline and subsequent activities are not dependent on previous activities, the activities may run in parallel.
+If you have multiple activities in a pipeline and subsequent activities aren't dependent on previous activities, the activities may run in parallel.

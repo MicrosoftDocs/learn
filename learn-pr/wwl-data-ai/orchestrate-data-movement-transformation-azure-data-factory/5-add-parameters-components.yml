@@ -4,12 +4,12 @@ title: Add parameters to data factory components
 metadata:
   title: Add parameters to data factory components
   description: "Add parameters to data factory components"
-  ms.date: 04/19/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-add-parameters-components.md)]
+  [!include[](includes/5-add-parameters-components.md)]
