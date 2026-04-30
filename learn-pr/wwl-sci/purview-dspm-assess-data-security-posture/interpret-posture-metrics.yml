@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.interpret-posture-metrics
+title: Interpret posture metrics on the dashboard
+metadata:
+  title: Interpret Posture Metrics on the Dashboard
+  description: "Learn to navigate the Data Security Posture Management (DSPM) posture dashboard and interpret key posture metrics, data use snapshots, trending data, and top objectives."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/interpret-posture-metrics.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The data snapshot on the Posture page shows a large volume of fresh unlabeled data alongside a 30-day exfiltration trend that's climbing. How should an administrator interpret this combination?"
+    choices:
+    - content: "The unlabeled status means data loss prevention (DLP) policies likely don't cover this content, and the rising exfiltration is happening on data the controls can't see."
+      isCorrect: true
+      explanation: "Correct: Most DLP policies key off labels, so unlabeled content falls outside enforcement. A rising exfiltration trend on ungoverned data means sensitive content is actively leaving the organization unchecked."
+    - content: "The exfiltration trend will resolve once labels are eventually applied, so no immediate action is needed."
+      isCorrect: false
+      explanation: "Incorrect: The trend reflects activity already happening. Waiting for labeling doesn't address data leaving the organization now."
+    - content: "Stale data is always the larger concern because it accumulates over time without review."
+      isCorrect: false
+      explanation: "Incorrect: Fresh unlabeled content with a rising exfiltration trend is the more immediate signal. Actively moving data outweighs dormant accumulation."
