@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-investigate-risks.investigate-risky-ai-agent-behavior
+title: Investigate risky AI agent behavior through AI observability
+metadata:
+  title: Investigate Risky AI Agent Behavior Through AI Observability
+  description: "Drill into risky agent activity, sensitive interactions, and agent-specific signals through AI observability to assess and respond to AI-specific data security risks."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/investigate-risky-ai-agent-behavior.md)]

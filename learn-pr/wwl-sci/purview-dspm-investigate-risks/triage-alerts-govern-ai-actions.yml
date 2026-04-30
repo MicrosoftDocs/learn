@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-investigate-risks.triage-alerts-govern-ai-actions
+title: Triage alerts and govern AI-driven actions
+metadata:
+  title: Triage Alerts and Govern AI-Driven Actions
+  description: "Evaluate AI-driven triage agent categorizations for DLP and Insider Risk Management alerts, review automated actions taken by AI agents, and exercise governance over AI-driven responses."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/triage-alerts-govern-ai-actions.md)]

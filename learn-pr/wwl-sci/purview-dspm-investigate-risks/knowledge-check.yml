@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-investigate-risks.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "A data security administrator receives a DLP alert about sensitive files shared externally. They want to trace the complete sequence of events surrounding the alert, including which files were accessed, what sensitivity labels were applied, and the exact timestamps. Which investigation surface provides the authoritative chronological record?"
+    choices:
+    - content: "Activity explorer filtered by user and time range"
+      isCorrect: false
+      explanation: "Activity explorer shows individual events and supports filtering, but the authoritative chronological record with timestamps, exact operations, and compliance-grade detail comes from the audit log. Activity explorer is better for identifying patterns across events."
+    - content: "The unified audit log surfaced through DSPM"
+      isCorrect: true
+      explanation: "The audit log captures the authoritative chronological record of user and agent interactions, including exact timestamps, operations performed, files accessed, and sensitivity labels applied. It provides the compliance-grade detail needed to reconstruct event sequences for formal investigations."
+    - content: "Reports with advanced filtering"
+      isCorrect: false
+      explanation: "Reports show aggregated trends and patterns across many events over time. They're useful for identifying behavioral shifts and comparing periods, but they don't provide the granular, chronological event sequence needed to trace a specific alert."
+  - content: "An administrator uses the risky user investigation Promptbook to investigate a user. The Promptbook reports no anomalous behavior, but the administrator knows this user recently resigned and has been downloading large quantities of files. What should the administrator do next?"
+    choices:
+    - content: "Accept the Promptbook result because Security Copilot analyzed the full data set and found no risk."
+      isCorrect: false
+      explanation: "Security Copilot synthesizes available data, but it may not have context about the user's employment status or organizational context. A Promptbook result showing no anomalies should be validated through direct investigation when you have additional context that contradicts the finding."
+    - content: "Validate with direct investigation through activity explorer and the audit log, filtering for the user's file download activity during the period after their resignation notice."
+      isCorrect: true
+      explanation: "When you have organizational context that contradicts Security Copilot's findings, validate through direct investigation. The administrator knows about the resignation (context Copilot lacks) and can filter activity explorer for the specific behavior pattern. Security Copilot's 30-day timeframe limit might also miss earlier activity."
+    - content: "Run the sensitive data protection Promptbook instead, since it focuses on data rather than users."
+      isCorrect: false
+      explanation: "Switching Promptbooks doesn't address the fundamental issue: the administrator has context (the user's resignation) that Security Copilot can't access. The correct response is to validate through direct investigation, applying the contextual knowledge the administrator has."
+  - content: "The DLP triage agent categorized an alert as 'Less urgent' because the sensitivity risk was evaluated as low. However, the administrator knows that the affected data, while labeled with a lower sensitivity, is subject to an upcoming regulatory requirement that significantly increases its importance. What governance action is appropriate?"
+    choices:
+    - content: "Accept the categorization because the agent correctly evaluated the current label sensitivity."
+      isCorrect: false
+      explanation: "The agent assesses based on available signals, including label sensitivity. But organizational context (the upcoming regulatory requirement) changes the risk assessment. Governance means applying context the agent can't access, not deferring to agent logic when you know it doesn't reflect the full picture."
+    - content: "Override the categorization and provide feedback that explains the regulatory context, so the agent can improve future categorization of similar alerts."
+      isCorrect: true
+      explanation: "When you have organizational context the agent lacks, override the categorization and provide feedback. The agent correctly evaluated based on available signals, but governance means applying organizational knowledge that changes the risk assessment. Feedback helps the agent calibrate for similar situations."
+    - content: "Ignore the categorization and investigate the alert manually without providing agent feedback."
+      isCorrect: false
+      explanation: "Investigating manually is appropriate, but skipping feedback means the agent will continue to miscategorize similar alerts. Governance includes improving the agent's future performance, not just correcting individual decisions."
+  - content: "AI observability shows an agent flagged as high risk with 'oversharing' as its top risky activity category. The agent processes customer support requests and has access to customer records. What does the administrator need to determine before concluding this is a genuine risk?"
+    choices:
+    - content: "Whether the agent's owner authorized the sharing behavior and whether the volume of sharing matches expected operational levels for a customer support agent."
+      isCorrect: true
+      explanation: "Agent risk signals must be interpreted in context. A customer support agent accessing and sharing customer records might be normal operation. The investigation question is whether the sharing scope, volume, and recipients match the agent's designed purpose. Risk exists when behavior exceeds the agent's intended function, not when an agent does what it was designed to do."
+    - content: "Whether the agent has a DLP policy applied to it, since any agent without a DLP policy is automatically a risk."
+      isCorrect: false
+      explanation: "Policy coverage is relevant but doesn't answer the investigation question. An agent without a DLP policy might still be operating within its intended function. The administrator needs to determine whether the flagged behavior represents a deviation from intended functionality, not just check for policy presence."
+    - content: "Whether the IRM risk level is critical, since only critical-level agents represent genuine security risks."
+      isCorrect: false
+      explanation: "Risk level is one signal among several. A high-risk agent might be operating as designed if its access scope is intentionally broad. The investigation requires understanding context: what the agent is supposed to do, whether its actual behavior matches that purpose, and whether the sharing recipients are appropriate."
