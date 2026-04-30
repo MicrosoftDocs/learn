@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-databases.enable-defender-azure-sql-databases
+title: Enable Defender for Azure SQL Databases at subscription scope
+metadata:
+  title: Enable Defender for Azure SQL Databases at Subscription Scope
+  description: "Enable Defender for Azure SQL Databases at subscription scope in Microsoft Defender for Cloud, verify coverage, and enforce consistent protection using Azure Policy."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-enable-defender-azure-sql-databases.md)]

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.implement-defender-databases
+metadata:
+  title: Implement Microsoft Defender for Databases
+  description: "Enable Microsoft Defender for Databases to detect SQL injection, anomalous query patterns, and vulnerability exposures across Azure SQL services. Enable protection at subscription scope using Azure Policy, configure vulnerability assessment baselines, and route security alerts to the security operations team."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Implement Microsoft Defender for Databases
+summary: Enable Microsoft Defender for Databases to detect SQL injection, anomalous query patterns, and vulnerability exposures across Azure SQL services. Enable protection at subscription scope using Azure Policy, configure vulnerability assessment baselines, and route security alerts to the security operations team.
+abstract: |
+  After completing this module, you'll be able to:
+    - Describe Microsoft Defender for Databases plans and threat detection capabilities
+    - Enable Defender for Azure SQL Databases at subscription scope
+    - Enable Defender for open-source relational databases
+    - Configure vulnerability assessment to establish security baselines for Azure SQL
+    - Configure alert routing to deliver Defender detections to the security operations team
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a conceptual level
+  - Understanding of Azure subscription and resource management
+  - Completion of Configure platform-level security for Azure SQL or equivalent experience
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-sql-database
+  - azure-sql-managed-instance
+  - microsoft-defender
+subjects:
+  - security
+  - cloud-security
+  - databases
+units:
+  - learn.wwl.implement-defender-databases.introduction
+  - learn.wwl.implement-defender-databases.explore-defender-databases-capabilities
+  - learn.wwl.implement-defender-databases.enable-defender-azure-sql-databases
+  - learn.wwl.implement-defender-databases.enable-defender-open-source-databases
+  - learn.wwl.implement-defender-databases.configure-vulnerability-assessment
+  - learn.wwl.implement-defender-databases.configure-alert-routing-validate-coverage
+  - learn.wwl.implement-defender-databases.knowledge-check
+  - learn.wwl.implement-defender-databases.summary
+badge:
+  uid: learn.wwl.implement-defender-databases.badge
