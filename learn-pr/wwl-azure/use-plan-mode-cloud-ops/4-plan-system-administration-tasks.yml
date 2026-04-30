@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-plan-mode-cloud-ops.plan-system-administration-tasks
+title: Plan system administration tasks with Copilot
+metadata:
+  title: "Plan System Administration Tasks With Copilot"
+  description: "Use GitHub Copilot plan mode to create implementation plans for Windows Server and Active Directory administration tasks."
+  ms.date: 04/29/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-plan-system-administration-tasks.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/summary.md)]
