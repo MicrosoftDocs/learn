@@ -6,7 +6,7 @@ metadata:
   description: Describe the core features of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 04/30/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -48,7 +48,7 @@ quiz:
     choices:
     - content: Select the My sessions option from the home menu.
       isCorrect: true
-      explanation: Correct. My sessions allows users to manage and review past sessions with options to search, filter, rename, duplicate, or delete.
+      explanation: Correct. My sessions allow users to manage and review past sessions with options to search, filter, rename, duplicate, or delete.
     - content: Select the Help icon.
       isCorrect: false
       explanation: Incorrect. Help provides assistance and information about using the platform, not past session management.
