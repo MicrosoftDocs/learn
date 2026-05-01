@@ -4,4 +4,6 @@ In this interactive guide, you create a custom promptbook in Security Copilot by
 
 This interactive guide, which takes approximately 10 minutes to complete, walks you through the process of selecting prompts from a previous session, organizing them into a promptbook, and saving the promptbook for future use.
 
+Select the image below to get started.
+
 [![Thumbnail for the Create a custom promptbook interactive guide.](../media/create-custom-promptbook-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_create_a_custom_promptbook_web/story.html?azure-portal=true)
