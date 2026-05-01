@@ -2,7 +2,7 @@ The dashboard, objectives, and asset explorer each show a dimension of posture a
 
 ## Start with the question, not the report
 
-The **Reports** page in DSPM (preview) presents a library of report cards, each focused on a specific security concern. Rather than browsing through every report, start with category filters to narrow the view to what you're investigating.
+The **Reports** page in DSPM presents a library of report cards, each focused on a specific security concern. Rather than browsing through every report, start with category filters to narrow the view to what you're investigating.
 
 Six category tags map to the core questions DSPM reports are designed to answer:
 
