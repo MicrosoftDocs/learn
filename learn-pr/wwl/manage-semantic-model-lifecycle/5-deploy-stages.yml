@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.deploy-stages
+title: Deploy content through stages
+metadata:
+  title: Deploy Content Through Stages
+  description: "Create and configure deployment pipelines to promote semantic models and reports through development, test, and production stages."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-deploy-stages.md)]

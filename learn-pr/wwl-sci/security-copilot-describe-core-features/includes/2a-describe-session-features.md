@@ -9,7 +9,7 @@ Copilot has features that are common across all sessions and the individual prom
 
 ### Process log
 
-For every prompt Copilot runs, Copilot generates a process log that is visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Incident Analysis capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
+For every prompt Copilot runs, Copilot generates a process log that's visible to the user. The user can see what capability is used to generate the response. This is important because it enables the user to determine whether the response was generated from a trusted source. In the screenshot that follows, the process log shows that Copilot chose the Incident Analysis capability. The process log also shows that the final output went through safety checks, which is part of Microsoft’s commitment to responsible AI.
 
 :::image type="content" source="../media/process-log-new.png" lightbox="../media/process-log-new.png" alt-text="Screen capture showing process log, which shows the selected skill and that a safety check was run on the composed message.":::
 

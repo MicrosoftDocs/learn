@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to designing semantic models for scale in Microsoft Fabric."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

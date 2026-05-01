@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-windows-365.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "Introduction to Windows 365" module.
+  ms.date: 04/28/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

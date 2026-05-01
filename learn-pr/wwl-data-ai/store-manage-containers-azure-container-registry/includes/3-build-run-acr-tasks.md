@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7e2b484f-dbc3-43dd-b55c-38b002e11267]
+
+> [!TIP]
+> Select the **Text** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 ACR Tasks provide cloud-based container image building without requiring a local Docker installation. This capability addresses common challenges for AI development teams, including inconsistent builds across developer machines and the need for automated continuous integration. This unit covers quick tasks for on-demand builds, automatic triggers for continuous integration, and multi-step workflows for complex build scenarios.
 
 ## Understand ACR Tasks
@@ -163,6 +174,8 @@ Follow these practices to get the most from ACR Tasks:
 - **Monitor task logs:** Review task output to diagnose build failures using `az acr task logs`. Logs show the complete build process including any errors.
 - **Optimize build context:** Use `.dockerignore` to exclude unnecessary files from the context upload. Large contexts slow down builds and consume bandwidth.
 - **Layer caching:** ACR Tasks cache layers between builds. Order Dockerfile instructions to maximize cache hits by placing frequently changing instructions late in the file.
+
+::: zone-end
 
 ## Additional resources
 

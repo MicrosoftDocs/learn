@@ -2,13 +2,13 @@
 uid: learn.wwl.integrate-data-azure-data-factory
 metadata:
   title: Data integration with Azure Data Factory
-  description: Integrate data with Azure Data Factory or Azure Synapse Pipeline
-  ms.date: 06/05/2023
-  author: wwlpublish
-  ms.author: jamesh
+  description: Integrate data with Azure Data Factory
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-factory
-title: Integrate data with Azure Data Factory or Azure Synapse Pipeline
+title: Integrate data with Azure Data Factory
 summary: In this module, you'll examine Azure Data Factory and the core components that enable you to create large scale data ingestion solutions in the cloud
 abstract: |
   In this module, you will:
@@ -34,7 +34,6 @@ roles:
 - data-scientist
 products:
 - azure-data-factory
-- azure-synapse-analytics
 subjects:
 - data-analytics
 units:
@@ -53,4 +52,4 @@ units:
 - learn.wwl.integrate-data-azure-data-factory.summary
 badge:
   uid: learn.wwl.integrate-data-azure-data-factory.badge
-
+

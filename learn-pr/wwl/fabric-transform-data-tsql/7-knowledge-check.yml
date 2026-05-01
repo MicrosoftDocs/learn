@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-tsql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for transforming data using T-SQL"
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data engineer needs to combine order data from a staging table with customer names from a dimension table and calculate a running total of sales per customer. Which T-SQL feature calculates the running total without collapsing the result set?"
+    choices:
+    - content: "A GROUP BY clause with SUM"
+      isCorrect: false
+      explanation: "Incorrect. GROUP BY with SUM produces one row per group, collapsing the result set. A running total requires keeping every row while computing cumulative values."
+    - content: "A window function with SUM ... OVER"
+      isCorrect: true
+      explanation: "Correct. Window functions with SUM ... OVER (PARTITION BY ... ORDER BY ...) calculate running totals across a set of related rows without reducing the number of rows in the result."
+    - content: "A common table expression (CTE)"
+      isCorrect: false
+      explanation: "Incorrect. A CTE organizes a query into named steps for readability, but it doesn't compute running totals. You need a window function for that calculation."
+  - content: "A team queries the same complex join and aggregation logic from multiple reports and semantic models. What is the primary benefit of implementing this logic as a view instead of repeating the query?"
+    choices:
+    - content: "Views store pre-computed results that load faster than running the query directly."
+      isCorrect: false
+      explanation: "Incorrect. Views don't store data. Each time you query a view, the warehouse runs the underlying query against the current source tables."
+    - content: "Views define the query once so it can be referenced by name, reducing duplication and simplifying maintenance."
+      isCorrect: true
+      explanation: "Correct. A view saves the query definition as a database object. Multiple consumers reference the view by name, so changes to the logic only need to be made in one place."
+    - content: "Views enforce foreign key constraints between the tables they reference."
+      isCorrect: false
+      explanation: "Incorrect. Views don't enforce constraints. Fabric warehouses maintain referential integrity through loading logic and naming conventions, not view definitions."
+  - content: "A data engineer builds a stored procedure that accepts year and month parameters to refresh a summary table. The procedure deletes existing rows for that period and inserts freshly aggregated data. Which loading pattern does this procedure implement?"
+    choices:
+    - content: "Merge (upsert)"
+      isCorrect: false
+      explanation: "Incorrect. A merge pattern uses a MERGE statement to insert new rows and update existing ones in a single operation. This procedure deletes and reinserts all rows for a period, which is a targeted refresh, not a merge."
+    - content: "Incremental load"
+      isCorrect: false
+      explanation: "Incorrect. An incremental load processes only new or changed data since the last run. This procedure deletes and replaces an entire period's data, which goes beyond incremental processing."
+    - content: "Full refresh of a partition"
+      isCorrect: true
+      explanation: "Correct. The procedure replaces all data for the specified period by deleting existing rows and inserting fresh results. This is a full refresh scoped to a time-based partition."
+  - content: "When loading a fact table from staging data, the INSERT statement joins staging.orders with dim.customer using the filter is_current = 1. What does this filter accomplish?"
+    choices:
+    - content: "It restricts the load to only the most recent orders in the staging table."
+      isCorrect: false
+      explanation: "Incorrect. The is_current column exists on the dimension table, not the staging table. It filters customer records, not order records."
+    - content: "It links each fact row to the current version of the customer dimension record."
+      isCorrect: true
+      explanation: "Correct. In an SCD Type 2 dimension, multiple rows can exist for the same customer. Filtering on is_current = 1 ensures the fact row references the active customer record."
+    - content: "It prevents duplicate rows from being inserted into the fact table."
+      isCorrect: false
+      explanation: "Incorrect. The is_current filter selects the active dimension record. It doesn't deduplicate fact rows. Deduplication requires a different approach such as a DISTINCT clause or a NOT EXISTS check."
+  - content: "A data engineer needs to test transformation logic against production warehouse data without risking changes to the original tables. Which Fabric feature supports this scenario with minimal storage overhead?"
+    choices:
+    - content: "Create a view over the production table"
+      isCorrect: false
+      explanation: "Incorrect. A view provides a read-only query layer but doesn't let you test write operations like INSERT or UPDATE against a copy of the data."
+    - content: "Create a table clone of the production table"
+      isCorrect: true
+      explanation: "Correct. A table clone creates a zero-copy reference to the source table's data. You can test write operations on the clone without affecting the original, and only changed data consumes extra storage."
+    - content: "Create a stored procedure that wraps the production table in a transaction"
+      isCorrect: false
+      explanation: "Incorrect. A stored procedure with a transaction can roll back changes, but it still locks and temporarily modifies the production table during execution. A clone provides a safer, isolated environment."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-semantic-model-security.row-level-security
+title: Implement row-level security
+metadata:
+  title: Implement Row-Level Security
+  description: "Learn how to create security roles with DAX filter expressions, implement dynamic RLS using USERPRINCIPALNAME(), and use the security table pattern."
+  ms.date: 04/15/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-row-level-security.md)]

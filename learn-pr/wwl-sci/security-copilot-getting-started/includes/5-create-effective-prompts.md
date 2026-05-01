@@ -6,7 +6,7 @@ In a previous unit, we defined a prompt as the text-based, natural language inpu
 Effective prompts give Copilot adequate and useful parameters to generate a valuable response. Security analysts or researchers should include the following elements when writing a prompt.
 
 - Goal - specific, security-related information that you need
-- Context - why you need this information or how you'll use it
+- Context - why you need this information or how you use it
 - Expectations - format or target audience you want the response tailored to
 - Source - known information, data sources, or plugins Copilot should use
 
@@ -14,7 +14,7 @@ Effective prompts give Copilot adequate and useful parameters to generate a valu
 
 Every good prompt should have a goal. Whether it comes in the form of instructions or questions, it should indicate what you want out of your current session.
 
-For Copilot, context can refer to the time frame, or that you'll use the response for a report. Expectations can include whether you want the response to be in a table format, a list of action steps, a summary, or even a diagram. Source might be useful in specifying which Microsoft plugins you're referring to, if needed. Some plugins require more context to work effectively or supporting plugins to ensure a response when initial responses fail.
+For Copilot, context can refer to the time frame, or that you use the response for a report. Expectations can include whether you want the response to be in a table format, a list of action steps, a summary, or even a diagram. Source might be useful in specifying which Microsoft plugins you're referring to, if needed. Some plugins require more context to work effectively or supporting plugins to ensure a response when initial responses fail.
 
 Watch this short video for a summary on how to create effective prompts.
 
@@ -38,7 +38,7 @@ Some things to remember when coming up with your own prompts:
   - Basic prompt: Give me a list of unmanaged devices in my network.
   - Better prompt: Give me a list of high-risk unmanaged devices in my network. If they're named "test" remove them from the list.
 
-- Directly address Copilot as "You" as in, "You should ..." or "You must ...", as this is more effective than referring to it as a model or assistant.
+- Directly address Copilot as "You" as in, "You should ..." or "You must ...," as this is more effective than referring to it as a model or assistant.
 
 While these guidelines can help you get started in creating prompts, it’s important to note that you’re not limited to forming prompts following the structure of the previous examples. What’s great about Copilot is that it's designed to respond to questions or instructions made in your own words (that is, using natural language).
 

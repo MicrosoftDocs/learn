@@ -1,0 +1,7 @@
+[Windows 365](/windows-365/overview) is a cloud service that provides users with a full Windows desktop experience—known as a Cloud PC—that's hosted in the cloud and accessed over the internet. Each Cloud PC is assigned to an individual user and remains available to them across sessions, offering a consistent and personalized Windows environment.
+
+From a user's perspective, a Cloud PC looks and feels like a traditional Windows desktop. Users can sign in, access applications, store files, and work with Windows features. The key difference is that the operating system, applications, and data are hosted in the cloud rather than installed and stored on the local device.
+
+Windows 365 is designed to simplify how organizations deliver Windows desktops while maintaining centralized control. Because desktops live in the cloud, organizations can manage access, security, and policies without relying on the physical device. This model can be especially valuable in environments where devices are diverse, frequently replaced, or not owned by the organization.
+
+Windows 365 also supports a wide range of use cases without requiring users to change how they interact with Windows. Instead of learning a new interface or workflow, users connect to their Cloud PC and get to work using conventions they know. This continuity can reduce friction for both users and IT teams when adopting a cloud-based desktop approach.

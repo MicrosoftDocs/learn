@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-platform-security.apply-data-masking-row-level-security
+title: Apply data masking and row-level security
+metadata:
+  title: Apply Data Masking and Row-Level Security
+  description: "Configure dynamic data masking functions and granular UNMASK permissions, and implement row-level security predicates to restrict financial data access by role and division."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-apply-data-masking-row-level-security.md)]

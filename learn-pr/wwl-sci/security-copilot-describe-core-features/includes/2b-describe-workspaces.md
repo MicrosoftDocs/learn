@@ -1,4 +1,4 @@
-Copilot workspaces are separate work environments within the tenant in which your Copilot instance is operating.
+Copilot workspaces are separate work environments within the tenant in which your Copilot instance is operating. Workspaces were designed to give customers the ability to create segmentation for agentic traffic and help teams manage resources, optimize workflows, and maintain compliance with organizational policies.
 
 To help you better understand the concept of workspaces, we use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that use that room. When someone enters the house, they might have access to some rooms but not others.
 

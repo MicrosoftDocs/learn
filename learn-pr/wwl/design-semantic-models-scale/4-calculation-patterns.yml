@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.dynamic-elements
+title: Design scalable calculations
+metadata:
+  title: Design Scalable Calculations
+  description: "Design calculations that stay performant and maintainable as data volumes and team size grow, using calculation groups, DAX readability discipline, and aggregations."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-calculation-patterns.md)]

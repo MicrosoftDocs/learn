@@ -1,4 +1,4 @@
-It is easy to set up Azure Data Factory from within the Azure portal, you only require the following information:
+It's easy to set up Azure Data Factory (ADF) from within the Azure portal, you only require the following information:
 
 - **Name**: The name of the Azure Data Factory instance
 - **Subscription**: The subscription in which the ADF instance is created
@@ -9,30 +9,26 @@ It is easy to set up Azure Data Factory from within the Azure portal, you only r
 Enable Git provides the capability to integrate the code that you create with a Git repository enabling you to source control the code that you would create. Define the GIT url, repository name, branch name, and the root folder. 
 
 > [!div class="mx-imgBorder"]
-> ![Creating an Azure Data Factory Instance](../media/create-azure-data-factory-instance.png)
+> ![Screenshot showing how to create an Azure Data Factory Instance.](../media/create-azure-data-factory-instance.png)
 
-Alternatively, there are a number of different ways that you can provision the service programmatically. In this example you can see PowerShell at work to set up the environment.
+Alternatively, there are many different ways that you can provision the service programmatically. In this example you can see PowerShell at work to set up the environment.
 
 
 ``` PowerShell
-######################################################################
-##                PART I: Creating an Azure Data Factory            ##
-######################################################################
+# Sign in to Azure
+Connect-AzAccount
 
-
-# Sign in to Azure and set the WINDOWS AZURE subscription to work with
+# Select the target subscription
 $SubscriptionId = "add your subscription in the quotes"
+Select-AzSubscription -SubscriptionId $SubscriptionId
 
-Add-AzureRmAccount
-Set-AzureRmContext -SubscriptionId $SubscriptionId
+# Register the Microsoft Azure Data Factory resource provider
+Register-AzResourceProvider -ProviderNamespace Microsoft.DataFactory
 
-# register the Microsoft Azure Data Factory resource provider
-Register-AzureRmResourceProvider -ProviderNamespace Microsoft.DataFactory
-
-# DEFINE RESOURCE GROUP NAME AND LOCATION PARAMETERS
+# Define resource group name and location
 $resourceGroupName = "cto_ignite"
 $rglocation = "West US 2"
 
-# CREATE AZURE DATA FACTORY
-New-AzureRmDataFactoryV2 -ResourceGroupName $resourceGroupName -Name "ctoigniteADF" -Location $rglocation
+# Create Azure Data Factory
+Set-AzDataFactoryV2 -ResourceGroupName $resourceGroupName -Name "ctoigniteADF" -Location $rglocation
 ```

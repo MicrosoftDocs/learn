@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-prepare-semantic-layer.exercise
+title: "Exercise: Prepare a semantic model for AI"
+metadata:
+  title: "Exercise: Prepare a Semantic Model for AI"
+  description: "Interactive exercise to configure Prep for AI features including verified answers, AI instructions, and schema simplification."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

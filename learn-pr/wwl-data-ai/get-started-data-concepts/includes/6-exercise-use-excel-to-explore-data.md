@@ -1,8 +1,8 @@
-OK, now it's your chance to get hands on with data. In this lab, you'll use Microsoft Excel Online to explore a simple dataset.
+OK, now it's your chance to get hands on with data. In this lab, you'll use Microsoft Excel for the web to explore a simple dataset.
 
 ## Before you start
 
-If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
+If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`, or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
 
 ## Lab overview
 
@@ -12,7 +12,7 @@ In this lab, you'll explore and visualize the data Rosie recorded.
 
 ## Exercise 1: View a table of data in Excel
 
-In this exercise, you'll upload the Excel workbook containing Rosie's data to the OneDrive cloud storage account associated with your Microsoft account, and then explore the data in Microsoft Excel Online.
+In this exercise, you'll upload the Excel workbook containing Rosie's data to the OneDrive cloud storage account associated with your Microsoft account, and then explore the data in Microsoft Excel for the web.
 
 ### Upload the workbook to OneDrive
 
@@ -35,9 +35,9 @@ In this exercise, you'll upload the Excel workbook containing Rosie's data to th
 
     :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
 
-### Open the workbook in Excel Online
+### Open the workbook in Excel for the web
 
-1. Select the **Lemonade.xlsx** file in your OneDrive folder to open it in Excel Online. When opened, it should look like this:
+1. Select the **Lemonade.xlsx** file in your OneDrive folder to open it in Excel for the web. When opened, it should look like this:
 
     :::image type="content" source="../media/lemonade-workbook.png" alt-text="Screenshot of Lemonade workbook in Excel." lightbox="../media/lemonade-workbook.png":::
 
@@ -70,7 +70,7 @@ In this exercise, you'll upload the Excel workbook containing Rosie's data to th
 
 ### Challenge: Find the weekday with the lowest temperature
 
-1. Use the filter and sort capabilities in Excel Online to filter the data so that only weekdays (Monday to Friday) are shown, then sort the data so that the first row contains data for the weekday with the lowest temperature.
+1. Use the filter and sort capabilities in Excel for the web to filter the data so that only weekdays (Monday to Friday) are shown, then sort the data so that the first row contains data for the weekday with the lowest temperature.
 2. Make a note of the day and the temperature, and then clear the filter and resort the data back into chronological order.
 
 ## Exercise 2: Using formulas to explore data in Excel

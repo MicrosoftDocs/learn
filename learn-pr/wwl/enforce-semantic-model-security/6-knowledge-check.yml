@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-semantic-model-security.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/15/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "A data modeler needs to ensure that sales managers see only the sales data for their assigned region. The modeler wants a scalable solution that doesn't require model changes when managers change regions. Which approach should the data modeler use?"
+    choices:
+    - content: "Create a static RLS rule for each region and assign managers to the appropriate role."
+      isCorrect: false
+      explanation: "Incorrect. Static rules require creating separate roles for each region and updating role assignments when managers move between regions. This approach doesn't scale well."
+    - content: "Create a dynamic RLS rule using USERPRINCIPALNAME() with a security table that maps managers to regions."
+      isCorrect: true
+      explanation: "Correct. A dynamic rule with USERPRINCIPALNAME() and a security table provides a scalable, data-driven solution. When a manager changes regions, you update the security table data rather than the model definition."
+    - content: "Use object-level security to hide regions that each manager shouldn't access."
+      isCorrect: false
+      explanation: "Incorrect. Object-level security hides tables and columns, not individual rows. RLS is the correct feature for filtering data at the row level."
+  - content: "An organization's semantic model contains an Employee table with a Salary column. General managers need access to the Employee table for contact information, but only HR staff should see salary values. Which security feature should the data modeler configure?"
+    choices:
+    - content: "Row-level security to filter salary rows."
+      isCorrect: false
+      explanation: "Incorrect. RLS filters rows, not columns. You can't use RLS to hide a specific column while keeping the rest of the table visible."
+    - content: "Object-level security to restrict the Salary column."
+      isCorrect: true
+      explanation: "Correct. OLS can hide specific columns from designated roles. Setting the Salary column to None for the general manager role hides it while keeping the rest of the Employee table visible."
+    - content: "Remove the Salary column from the semantic model and create a separate model for HR."
+      isCorrect: false
+      explanation: "Incorrect. Creating separate models adds complexity and maintenance overhead. OLS provides column-level restrictions within a single model."
+  - content: "A data modeler configured RLS on a semantic model and published it to the Power BI service. A Viewer reports that they can see all data instead of just their region's data. What is the most likely cause?"
+    choices:
+    - content: "The RLS filter expression contains a syntax error."
+      isCorrect: false
+      explanation: "Incorrect. A syntax error in the filter expression would prevent the role from working entirely, likely causing an error rather than showing all data."
+    - content: "The user hasn't been assigned to an RLS role in the Power BI service."
+      isCorrect: true
+      explanation: "Correct. When a Viewer isn't assigned to any RLS role, they see all data by default. Users must be explicitly assigned to roles for RLS filters to take effect."
+    - content: "The semantic model uses DirectQuery instead of import mode."
+      isCorrect: false
+      explanation: "Incorrect. RLS works with both import and DirectQuery modes. The storage mode doesn't affect whether role assignments are required."
+  - content: "A data modeler needs to test whether RLS correctly filters data before publishing the semantic model to the Power BI service. How should the data modeler verify the security configuration?"
+    choices:
+    - content: "Use the View as feature on the Modeling tab in Power BI Desktop to preview data as a specific role."
+      isCorrect: true
+      explanation: "Correct. The View as feature lets you preview reports as if you were assigned to a specific role, including testing dynamic rules with different user identities."
+    - content: "Publish the model and ask each user to verify their data access."
+      isCorrect: false
+      explanation: "Incorrect. Testing with actual users after publishing risks exposing unauthorized data. Always validate security in Desktop before publishing."
+    - content: "Review the DAX filter expressions for syntax errors in the formula bar."
+      isCorrect: false
+      explanation: "Incorrect. Reviewing expressions checks for syntax but doesn't verify that the filters produce the correct data results. The View as feature provides end-to-end validation."
+  - content: "A data modeler is deciding how to assign users to RLS roles for a semantic model used by 200 sales representatives across five regions. What is the recommended approach for managing role membership?"
+    choices:
+    - content: "Add each sales representative individually to the appropriate regional role."
+      isCorrect: false
+      explanation: "Incorrect. Adding 200 individual users creates excessive mappings and makes ongoing maintenance difficult as employees join, leave, or change regions."
+    - content: "Map Microsoft Entra security groups to roles, with one security group per region."
+      isCorrect: true
+      explanation: "Correct. Security groups reduce the number of mappings and delegate membership management to network administrators. Adding or removing users from the group automatically updates their data access."
+    - content: "Create a Microsoft 365 group for each region and assign the groups to roles."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft 365 groups aren't supported for RLS role membership. Use Microsoft Entra security groups instead."

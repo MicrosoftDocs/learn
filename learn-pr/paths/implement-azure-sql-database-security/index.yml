@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-azure-sql-database-security
+metadata:
+  title: Implement Security for Azure SQL Databases for the Cloud and AI Security Engineer
+  description: Implement end-to-end security for Azure SQL Database and SQL Managed Instance. Configure Entra ID authentication with managed identity access, deploy private endpoints, and apply encryption and access controls to protect sensitive financial data. Establish compliant audit trails and enable Microsoft Defender for Databases to detect SQL injection, anomalous access, and vulnerability exposures.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+title: Implement security for Azure SQL databases
+summary: |
+  Implement end-to-end security for Azure SQL Database and SQL Managed Instance. Configure Entra ID authentication with managed identity access, deploy private endpoints, and apply encryption and access controls to protect sensitive financial data. Establish compliant audit trails and enable Microsoft Defender for Databases to detect SQL injection, anomalous access, and vulnerability exposures.
+prerequisites: |
+  - Familiarity with Microsoft Entra ID and Azure role-based access control (RBAC)
+  - Understanding of Azure networking concepts including virtual networks, subnets, and private endpoints
+  - Familiarity with Azure Key Vault at a conceptual level
+  - Understanding of Microsoft Defender for Cloud at a conceptual level
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-sql-database
+  - azure-sql-managed-instance
+  - microsoft-defender
+subjects:
+  - security
+  - cloud-security
+  - databases
+modules:
+  - learn.wwl.configure-azure-sql-platform-security
+  - learn.wwl.configure-azure-sql-auditing
+  - learn.wwl.implement-defender-databases
+trophy:
+  uid: learn.wwl.implement-azure-sql-database-security.trophy

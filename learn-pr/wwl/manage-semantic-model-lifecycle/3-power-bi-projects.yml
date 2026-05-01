@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.power-bi-projects
+title: Manage Power BI content in version control
+metadata:
+  title: Manage Power BI Content in Version Control
+  description: "Use Power BI Desktop projects and Git integration in Microsoft Fabric to version-control semantic models and reports."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-power-bi-projects.md)]

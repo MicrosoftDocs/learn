@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-databases.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your knowledge of implementing Microsoft Defender for Databases across Azure SQL and open-source relational database services."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's cloud security team needs to protect both Azure SQL Managed Instance and Azure Database for MySQL. Which Defender for Databases plan selection correctly covers both services?"
+    choices:
+    - content: "Defender for Azure SQL Databases covers both Azure SQL Managed Instance and Azure Database for MySQL in a single plan"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Azure SQL Databases covers Azure SQL services including SQL Database, SQL Managed Instance, elastic pools, and Synapse Analytics dedicated SQL pools. Azure Database for MySQL is covered by a separate plan."
+    - content: "Defender for open-source relational databases covers all Azure PaaS database services including Azure SQL"
+      isCorrect: false
+      explanation: "Incorrect. Defender for open-source relational databases covers PostgreSQL, MySQL, and MariaDB flexible server offerings. It doesn't cover Azure SQL Database or SQL Managed Instance."
+    - content: "Defender for Azure SQL Databases for SQL Managed Instance, and Defender for open-source relational databases for Azure Database for MySQL"
+      isCorrect: true
+      explanation: "Correct. There are two separate plans within Defender for Databases. Defender for Azure SQL Databases covers SQL Managed Instance and other Azure SQL services. Defender for open-source relational databases covers MySQL Flexible Server and other open-source database services."
+    - content: "A single Defender for Databases plan covers all Azure relational database services"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Databases is a category containing two separate plans with distinct coverage boundaries, not a single unified plan covering all relational database services."
+  - content: "A security engineer enables Defender for Azure SQL Databases at subscription scope. Which statement correctly describes the resulting coverage behavior?"
+    choices:
+    - content: "Only Azure SQL resources created before the enablement date receive protection; new resources require individual enrollment"
+      isCorrect: false
+      explanation: "Incorrect. Subscription-level enablement covers both existing and future resources. New Azure SQL resources created in the subscription receive protection automatically without requiring manual enrollment."
+    - content: "All existing and future Azure SQL resources in the subscription receive protection automatically"
+      isCorrect: true
+      explanation: "Correct. When you enable Defender for Azure SQL Databases at the subscription scope, all supported resources in the subscription are protected immediately. Future resources created in the same subscription also receive protection automatically."
+    - content: "Each Azure SQL server must be individually enrolled in Defender for Cloud after subscription-level enablement"
+      isCorrect: false
+      explanation: "Incorrect. Individual enrollment is the resource-level approach. Subscription-level enablement eliminates the need to configure each resource separately."
+    - content: "Coverage applies to Azure SQL Database but SQL Managed Instance requires a separate enablement step"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Azure SQL Databases covers SQL Managed Instance as part of the same plan. Subscription-level enablement protects both SQL Database and SQL Managed Instance without separate steps."
+  - content: "A cloud security engineer runs a vulnerability assessment on Contoso's Azure SQL Database and sees several findings. Some findings represent accepted configurations, such as broad read permissions for an internal reporting service account. What is the correct action to prevent these known findings from appearing as open issues?"
+    choices:
+    - content: "Create an alert suppression rule in Defender for Cloud scoped to the affected storage account"
+      isCorrect: false
+      explanation: "Incorrect. Alert suppression rules apply to threat detection alerts, not to vulnerability assessment findings. They also reference storage accounts, which are unrelated to SQL vulnerability assessment."
+    - content: "Disable vulnerability assessment on the affected database to remove the false-positive findings"
+      isCorrect: false
+      explanation: "Incorrect. Disabling vulnerability assessment removes all findings and all ongoing scanning for that database. Removing the assessment is an overly broad action that eliminates security visibility."
+    - content: "Set a baseline for the findings to mark the accepted configurations as known and expected"
+      isCorrect: true
+      explanation: "Correct. Vulnerability assessment baselines allow you to mark specific findings as accepted configurations. After setting a baseline, those findings no longer appear as open issues, and the assessment only surfaces new or changed findings that deviate from the baseline."
+    - content: "Remove the Defender for Azure SQL Databases plan from the affected SQL server to clear the findings"
+      isCorrect: false
+      explanation: "Incorrect. Removing the Defender plan disables all threat detection and vulnerability assessment for the server. Removing the plan isn't an appropriate response to accepted configuration findings."

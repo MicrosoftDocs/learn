@@ -2,7 +2,7 @@
 
 Control flow is an orchestration of pipeline activities that includes chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on demand or from a trigger.
 
-Control flow can also include looping containers, that can pass information for each iteration of the looping container.
+Control flow can also include looping containers that can pass information for each iteration of the looping container.
 
 If a For Each loop is used as a control flow activity, Azure Data Factory can start multiple activities in parallel using this approach. This allows you to build complex and iterative processing logic within the pipelines you create with Azure Data Factory, which supports the creation of diverse data integration patterns such as building a modern data warehouse.
 
@@ -10,16 +10,18 @@ Some of the common control flow activities are described in the below sections.
 
 ## Chaining activities
 
-Within Azure Data Factory, you can chain activities in a sequence within a pipeline. It is possible to use the **dependsOn** property in an activity definition to chain it with an upstream activity.
+Within Azure Data Factory, you can chain activities in a sequence within a pipeline. It's possible to use the **dependsOn** property in an activity definition to chain it with an upstream activity.
 
 ## Branching activities
 
-Use Azure Data Factory for branching activities within a pipeline. An example of a branching activity is *The If-condition* activity which is similar to an if-statement provided in programming languages. A branching activity evaluates a set of activities, and when the condition evaluates to true, a set of activities are executed. When it evaluates to false, then an alternative set of activities is executed.
+Use Azure Data Factory for branching activities within a pipeline. An example of a branching activity is the *If Condition* activity, which is similar to an if-statement provided in programming languages. A branching activity evaluates a set of activities, and when the condition evaluates to true, a set of activities are executed. When it evaluates to false, then an alternative set of activities is executed.
+
+For situations where you need more than two outcome paths, use the *Switch* activity. The Switch activity works like a switch/case statement in programming languages: it evaluates an expression and executes the activities that match a specific case value. You can define up to 25 named cases plus a default branch that runs when no case matches. Use If Condition for binary true/false decisions and Switch when you have multiple discrete outcomes.
 
 ## Parameters
 
 You can define parameters at the pipeline level and pass arguments while you're invoking the pipeline on-demand
-or from a trigger. Activities then consume the arguments held in a parameter as they are passed to the pipeline.
+or from a trigger. Activities then consume the arguments held in a parameter as they're passed to the pipeline.
 
 ## Custom state passing
 
@@ -27,7 +29,7 @@ Custom state passing is made possible with Azure Data Factory. Custom state pass
 
 ## Looping containers
 
-The looping containers umbrella of control flow such as the ForEach activity  defines repetition in a pipeline. It enables you to iterate over a collection and runs specified activities in the defined loop. It works similarly to the 'for each looping structure' used in programming languages. Besides each activity, there is also an Until activity. This functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met.
+The looping containers umbrella of control flow such as the ForEach activity  defines repetition in a pipeline. It enables you to iterate over a collection and runs specified activities in the defined loop. It works similarly to the 'for each looping structure' used in programming languages. Besides each activity, there's also an Until activity. This functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met.
 
 ## Trigger-based flows
 
