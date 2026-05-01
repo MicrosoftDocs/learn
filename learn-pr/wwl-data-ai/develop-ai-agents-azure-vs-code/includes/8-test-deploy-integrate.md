@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=411684d4-9d90-42f0-9285-6521f5095180]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Testing, deploying, and integrating agents are critical steps in moving from development to production. Microsoft Foundry provides comprehensive capabilities for validating agent behavior, deploying to production environments, and connecting agents to your applications. These final steps transform prototypes into reliable automation that delivers business value.
 
 ## Testing strategies for agents
@@ -232,3 +243,6 @@ As requirements evolve, you'll need to update deployed agents:
 The agent ID remains constant across updates, so existing integrations continue working with updated behavior.
 
 Testing, deploying, and integrating agents transforms development efforts into production value. By following systematic testing approaches, leveraging integrated deployment tools, and implementing robust integration patterns, you can confidently deliver AI agents that enhance your applications and automate workflows while maintaining enterprise-grade reliability and security.
+
+::: zone-end
+

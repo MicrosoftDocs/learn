@@ -5,7 +5,7 @@ metadata:
   description: Learn how to build, test, and deploy AI agents using Microsoft Foundry Agent Service through both the Azure portal and Visual Studio Code extension.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/12/2026
+  ms.date: 5/1/2026
   ms.service: azure-ai-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-generated
