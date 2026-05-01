@@ -1,13 +1,21 @@
 
 To start using Microsoft Security Copilot, organizations need to take steps to onboard the service and users. These include:
 
-1. Provision Copilot capacity
-2. Set up the default environment
-3. Assign role permissions
+1. Identify your customer category
+2. Provision Copilot capacity (if required)
+3. Set up the default environment
+4. Assign role permissions
+
+### Identify your customer category
+
+Your onboarding experience depends on your license status:
+
+- **Microsoft 365 E5 and E7 customers** - Security Copilot is included with your Microsoft 365 E5 and E7 license. Microsoft automatically provisions and onboards Security Copilot for eligible tenants through zero-click activation, so no Azure setup or manual capacity provisioning is required. Customers receive a 7-day advance notification before activation. Once provisioning is complete, Security Copilot is ready for use.
+- **Non-Microsoft 365 E5 and E7 customers** - If Security Copilot isn't included in your license, you must follow the manual onboarding steps to provision Security Compute Units (SCUs) to use Security Copilot.
 
 ### Provision capacity
 
-Security Copilot operates on a provisioned capacity and an overage model. Provisioned capacity is billed by the hour while the overage capacity is billed on usage.
+For non-Microsoft 365 E5 and E7 customers, Security Copilot operates on a provisioned capacity and an overage model. Provisioned capacity is billed by the hour while the overage capacity is billed on usage.
 
 You can flexibly provision Security Compute Units (SCUs) to accommodate regular workloads and adjust them anytime without long-term commitments. An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
 
@@ -17,16 +25,17 @@ Before users can start using Copilot, admins need to provision and allocate capa
 
 - You must have an Azure subscription.
 - You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
+- You need to be a Security Administrator or higher in the tenant you're onboarding Security Copilot.
   
     *Keep in mind that a global Microsoft Entra administrator role doesn't necessarily have the Azure owner or Azure contributor role by default. Microsoft Entra role assignments don't grant access to Azure resources. As a global Microsoft Entra administrator, you can enable access management for Azure resources through the Azure portal. For details, see [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin). Once you've enabled access management to Azure resources, you can configure the appropriate Azure role.*
 
 There are two options for provisioning capacity:
 
-- Provision capacity within Security Copilot (recommended) - When you first open Security Copilot as an admin, a wizard guides you through the steps in setting up capacity. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+- Provision capacity within Security Copilot (recommended) - When you first open Security Copilot as an admin, a wizard guides you through the steps in setting up capacity, including workspace creation. The wizard prompts you for information including workspace name, Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 - Provision capacity through Azure - The Azure portal now includes Security Copilot as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
 > [!NOTE]
-> Regardless of the method you choose, you'll need to purchase a minimum of 1 and a maximum of 100 SCUs.
+> Regardless of the method you choose, you'll need to purchase a minimum of 1 and a maximum of 100 SCUs. The recommended number of units to conduct an introductory exploration of Security Copilot is 3 units with overage set to unlimited overage.
 
 # [Provision through Copilot](#tab/provision-through-copilot)
 :::image type="content" source="../media/create-security-capacity-page-no-pricing-info.png" lightbox="../media/create-security-capacity-page-no-pricing-info.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
@@ -81,23 +90,30 @@ During the setup of Security Copilot, you're prompted to configure settings. The
 
 To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions. Role permissions are configured per workspace.
 
-Permissions can be assigned using Microsoft Entra ID roles or Security Copilot roles. As a best practice, provide the least privileged role applicable for each user.
+Permissions can be assigned using Microsoft Entra or Microsoft Purview roles, or Security Copilot roles. As a best practice, provide the least privileged role applicable for each user.
 
-The Microsoft Entra ID roles are:
-
-- Global administrator
-- Security administrator
-- Security operator
-- Security reader
-
-Although these Microsoft Entra ID roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot. For this reason, Security Copilot introduces two roles that function like access groups but aren't Microsoft Entra ID roles. Instead, they only control access to the capabilities of the Security Copilot platform.
+Security Copilot introduces two roles that function like access groups but aren't Microsoft Entra ID roles. Instead, they only control access to the capabilities of the Security Copilot platform and provide no access by themselves to security data.
 
 The Microsoft Security Copilot roles are:
 
 - Copilot owner
 - Copilot contributor
 
-The Security Administrator and Global Administrator roles in Microsoft Entra automatically inherit Copilot owner access.
+The following Microsoft Entra and Microsoft Purview roles automatically inherit **Copilot owner** access, ensuring Security Copilot always has at least two owners:
+
+Microsoft Entra roles:
+
+- Billing Administrator
+- Entra Compliance Administrator
+- Global Administrator
+- Intune Administrator
+- Security Administrator
+
+Microsoft Purview roles:
+
+- Purview Compliance Administrator
+- Purview Data Governance Administrator
+- Purview Organization Management
 
 :::image type="content" source="../media/role-assignments-new-edited.png" lightbox="../media/role-assignments-new-edited.png" alt-text="Screen capture showing the role assignment settings.":::
 
