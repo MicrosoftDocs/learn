@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.explore-create-agent-security-copilot
+title: Explore and create an agent in Security Copilot
+metadata:
+  title: Explore and Create an Agent in Security Copilot
+  description: "Explore the Threat Intelligence Briefing Agent and create an agent in the Security Copilot standalone experience."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/8-explore-create-agent-security-copilot.md)]

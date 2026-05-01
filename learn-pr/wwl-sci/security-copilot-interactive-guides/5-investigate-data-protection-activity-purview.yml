@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.investigate-data-protection-activity-purview
+title: Investigate data protection activity in Microsoft Purview
+metadata:
+  title: Investigate Data Protection Activity in Microsoft Purview
+  description: "Use Security Copilot to investigate sensitive activity in Activity explorer and investigate a DLP alert in Microsoft Purview."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 17
+content: |
+  [!include[](includes/5-investigate-data-protection-activity-purview.md)]
