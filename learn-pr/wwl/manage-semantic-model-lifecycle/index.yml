@@ -23,7 +23,7 @@ prerequisites: |
   - Understanding of semantic model concepts
   - Familiarity with Python and Fabric notebooks, including DataFrames
   - Foundational Git workflow knowledge (fork, branch, commit, sync, merge, pull request)
-iconUrl: /training/achievements/manage-semantic-model-lifecycle.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

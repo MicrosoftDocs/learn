@@ -3,7 +3,7 @@ In this exercise, you validate a semantic model using SemPy in a Fabric notebook
 > [!NOTE]
 > You need access to a Fabric-enabled workspace to complete this exercise. For information about a trial license, see [Getting started with Fabric](/fabric/get-started/fabric-trial).
 
-This lab takes approximately **30** minutes to complete.
+This lab takes approximately **45** minutes to complete.
 
 Launch the exercise and follow the instructions.
 
