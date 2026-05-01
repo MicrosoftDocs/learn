@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-dspm-investigate-risks.knowledge-check
+uid: learn.wwl.purview-data-security-posture-management-investigate-risks.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
@@ -14,12 +14,12 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An administrator needs to reconstruct the exact sequence of events for a DLP alert, including files accessed, labels applied, and timestamps. Which investigation surface provides this chronological record?"
+  - content: "An administrator needs to reconstruct the exact sequence of events for a data loss prevention (DLP) alert, including files accessed, labels applied, and timestamps. Which investigation surface provides this chronological record?"
     choices:
     - content: "Activity explorer filtered by user and time range"
       isCorrect: false
       explanation: "Incorrect: Activity explorer shows individual events but is better for identifying patterns. The audit log provides the compliance-grade chronological detail needed to reconstruct event sequences."
-    - content: "The unified audit log surfaced through DSPM"
+    - content: "The unified audit log, accessible through Data Security Posture Management (DSPM)"
       isCorrect: true
       explanation: "Correct: The audit log captures exact timestamps, operations, files, and labels applied. It provides the compliance-grade detail needed to reconstruct event sequences for formal investigations."
     - content: "Reports with advanced filtering"
@@ -40,24 +40,13 @@ quiz:
     choices:
     - content: "Accept the Promptbook result because Security Copilot found no risk."
       isCorrect: false
-      explanation: "Incorrect: Security Copilot may lack context about employment status. When you have information that contradicts the finding, validate through direct investigation."
+      explanation: "Incorrect: Security Copilot might lack context about employment status. When you have information that contradicts the finding, validate through direct investigation."
     - content: "Validate through activity explorer and the audit log, filtering for file downloads after the resignation notice."
       isCorrect: true
       explanation: "Correct: The administrator has context Copilot lacks. Direct investigation lets them filter for the specific behavior pattern, and Copilot's 30-day timeframe limit might miss earlier activity."
     - content: "Run the sensitive data protection Promptbook instead."
       isCorrect: false
       explanation: "Incorrect: Switching Promptbooks doesn't solve the problem. The administrator has context Security Copilot can't access. Direct investigation is the correct next step."
-  - content: "A triage agent categorized an alert as 'Less urgent' based on low label sensitivity. The administrator knows the affected data is subject to an upcoming regulatory requirement that raises its importance. What governance action is appropriate?"
-    choices:
-    - content: "Accept the categorization because the agent correctly evaluated current label sensitivity."
-      isCorrect: false
-      explanation: "Incorrect: The agent assessed available signals correctly, but the regulatory requirement changes the risk picture. Governance means applying context the agent can't access."
-    - content: "Override the categorization and provide feedback explaining the regulatory context."
-      isCorrect: true
-      explanation: "Correct: Override and provide feedback. The agent evaluated correctly given its inputs, but governance means applying organizational knowledge it lacks. Feedback helps it calibrate for similar situations."
-    - content: "Investigate manually without providing agent feedback."
-      isCorrect: false
-      explanation: "Incorrect: Investigating is appropriate, but skipping feedback means the agent continues miscategorizing similar alerts. Governance includes improving future performance."
   - content: "AI observability flags a customer support agent as high risk for 'oversharing.' The agent has access to customer records. What must the administrator determine before concluding this is a genuine risk?"
     choices:
     - content: "Whether the sharing volume matches expected operational levels for a customer support agent."
@@ -66,6 +55,6 @@ quiz:
     - content: "Whether the agent has a DLP policy applied to it."
       isCorrect: false
       explanation: "Incorrect: Policy coverage doesn't answer the investigation question. An agent without a DLP policy might still be operating within its intended function."
-    - content: "Whether the IRM risk level is critical."
+    - content: "Whether the Insider Risk Management risk level is critical."
       isCorrect: false
       explanation: "Incorrect: Risk level is one signal. A high-risk agent might be operating as designed if its access scope is intentionally broad. Context about intended function matters more."

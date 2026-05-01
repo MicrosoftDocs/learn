@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-dspm-investigate-risks.investigate-with-security-copilot
+uid: learn.wwl.purview-data-security-posture-management-investigate-risks.investigate-with-security-copilot
 title: Investigate data security events with Security Copilot
 metadata:
   title: Investigate Data Security Events with Security Copilot
-  description: "Use Security Copilot prompts, Promptbooks, and the Prompt Gallery within DSPM to hunt for data security events, investigate specific users, and identify critical risk patterns."
+  description: "Use Security Copilot prompts and Promptbooks in the Data Security Posture Management (DSPM) Prompt Gallery to investigate users and identify critical risk patterns."
   ms.date: 04/30/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/investigate-with-security-copilot.md)]

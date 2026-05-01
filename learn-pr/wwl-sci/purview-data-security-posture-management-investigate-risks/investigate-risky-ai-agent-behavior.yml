@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-dspm-investigate-risks.investigate-risky-ai-agent-behavior
+uid: learn.wwl.purview-data-security-posture-management-investigate-risks.investigate-risky-ai-agent-behavior
 title: Investigate risky AI agent behavior through AI observability
 metadata:
   title: Investigate Risky AI Agent Behavior Through AI Observability
@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 7
 content: |
   [!include[](includes/investigate-risky-ai-agent-behavior.md)]

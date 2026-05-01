@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-dspm-investigate-risks.analyze-sensitive-data-activity
+uid: learn.wwl.purview-data-security-posture-management-investigate-risks.analyze-sensitive-data-activity
 title: Analyze sensitive data activity with DSPM investigation surfaces
 metadata:
   title: Analyze Sensitive Data Activity with DSPM Investigation Surfaces
-  description: "Use activity explorer, the AI activities tab, audit logs, and reports with advanced filtering to trace user and agent interactions and identify risky data security patterns."
+  description: "Analyze sensitive data activity across activity explorer, AI activities, audit logs, and reports to identify risky patterns."
   ms.date: 04/30/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/analyze-sensitive-data-activity.md)]
