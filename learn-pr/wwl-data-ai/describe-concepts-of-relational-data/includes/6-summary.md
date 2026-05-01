@@ -10,6 +10,6 @@ In this module you have learned:
 
 - [Description of the database normalization basics](/office/troubleshoot/access/database-normalization-description)
 - [Structured Query Language (SQL)](/sql/odbc/reference/structured-query-language-sql)
-- [Technical overview of SQL Database](/azure/sql-database/sql-database-technical-overview)
-- [SQL Server Technical Documentation](/sql/sql-server/?view=sql-server-ver15)
-- [SQL Database PaaS vs IaaS Offerings](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
+- [What is Azure SQL Database?](/azure/azure-sql/database/sql-database-paas-overview)
+- [SQL Server Technical Documentation](/sql/sql-server/)
+- [What is Azure SQL?](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview)

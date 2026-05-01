@@ -28,7 +28,7 @@ Data processing takes the data in its raw form, cleans it, and converts it into 
 > [!NOTE]
 > Data cleaning is a generalized term that encompasses a range of actions, such as removing anomalies, and applying filters and transformations that would be too time-consuming to run during the ingestion stage.
 
-The aim of data processing is to convert the raw data into one or more business models. A business model describes the data in terms of meaningful business entities, and may aggregate items together and summarize information. The data processing stage could also generate predictive or other analytical models from the data. Data processing can be complex, and may involve automated scripts, and tools such as Azure Databricks, Azure Functions, and Azure Cognitive Services to examine and reformat the data, and generate models. A data analyst could use machine learning to help determine future trends based on these models.
+The aim of data processing is to convert the raw data into one or more business models. A business model describes the data in terms of meaningful business entities, and may aggregate items together and summarize information. The data processing stage could also generate predictive or other analytical models from the data. Data processing can be complex, and may involve automated scripts, and tools such as Azure Databricks, Azure Functions, and Azure AI Services to examine and reformat the data, and generate models. A data analyst could use machine learning to help determine future trends based on these models.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram of Processing ingested data to generate data models.](../media/2-process-stage.png)
@@ -56,3 +56,6 @@ This is a simple table showing the advantages of ETL and ELT in most cases.
 :::image type="content" source="../media/2-etl-vs-elt.png" alt-text="Diagram of ETL versus ELT.":::
 
 Another more generalized approach is to use Azure Data Factory. Azure Data Factory is a cloud-based data integration service that allows you to create data-driven workflows for orchestrating data movement and transforming data at scale. Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from disparate data stores. You can build complex ETL processes that transform data visually with data flows, or by using compute services such as *Azure Databricks* and *Azure SQL Database*.
+
+> [!NOTE]
+> Microsoft Fabric includes a next-generation Data Factory experience that integrates data integration with the broader Fabric analytics platform. If you're building new data pipelines, consider [Data Factory in Microsoft Fabric](/fabric/data-factory/data-factory-overview) as your starting point.

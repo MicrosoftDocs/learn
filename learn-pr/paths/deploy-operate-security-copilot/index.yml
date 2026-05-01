@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-operate-security-copilot
+metadata:
+  title: Deploy and Operate Microsoft Security Copilot
+  description: Build hands-on expertise with Microsoft Security Copilot. Start with enabling the solution and writing effective prompts to configuring enterprise workspaces and managing plugins and agents at scale.
+  ms.date: 04/30/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+title: Deploy and operate Microsoft Security Copilot
+summary: |
+  In this learning path, you build a working foundation with Microsoft Security Copilot and advance to enterprise-grade deployment and day-to-day operations. You start by exploring core concepts, how Security Copilot processes natural language prompts, the elements of an effective prompt, and the steps to enable the solution for your organization. You then plan and configure workspaces with the right Security Compute Units, data residency settings, and role assignments to support enterprise segmentation requirements. Finally, you govern plugin access and manage the full lifecycle of both Microsoft-built and partner-built agents to keep your deployment running smoothly and securely.
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Familiarity with Microsoft security products and services
+  - Basic knowledge of Azure subscription management and Microsoft Entra roles
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+  - security-operations-analyst
+products:
+  - security-copilot
+  - microsoft-defender
+  - microsoft-sentinel
+  - defender-xdr
+  - entra
+subjects:
+  - cloud-security
+  - security
+  - threat-protection
+modules:
+- learn-wwl.security-copilot-getting-started
+- learn.wwl.configure-security-copilot-workspaces
+- learn.wwl.manage-plugins-agents-security-copilot
+trophy:
+  uid: learn.wwl.deploy-operate-security-copilot.trophy

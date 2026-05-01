@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-govern-analytics-data.endorse-document
+title: Endorse and document data assets
+metadata:
+  title: Endorse and Document Data Assets
+  description: "Learn how to use endorsement levels, tags, the OneLake catalog, and documentation practices to make data assets trustworthy and discoverable in Microsoft Fabric."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-endorse-document.md)]

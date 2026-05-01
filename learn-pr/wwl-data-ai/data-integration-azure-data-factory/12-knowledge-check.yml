@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/05/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -21,18 +21,18 @@ quiz:
       explanation: "Incorrect. Linked Services is objects that are used to define the connection to data stores or compute resources in Azure."
     - content: "Datasets"
       isCorrect: false
-      explanation: "Incorrect. Datasets represent data structures within the data store that is being referenced by the Linked Service object."
+      explanation: "Incorrect. Datasets represent data structures within the data store that's being referenced by the Linked Service object."
     - content: "Activities"
       isCorrect: true
       explanation: "Correct. Activities contain the transformation logic or the analysis commands of the Azure Data Factory’s work."
-  - content: "You're moving data from an Azure Data Lake Gen2 store to Azure Synapse Analytics. Which Azure Data Factory integration runtime would be used in a data copy activity?"
+  - content: "You're copying data from an Azure Data Lake Storage Gen2 account to an Azure SQL Database. Which Azure Data Factory integration runtime would be used in this data copy activity?"
     choices:
     - content: "Azure-SSIS"
       isCorrect: false
-      explanation: "Incorrect. Azure-SSIS IR is used when you lift and shift existing SSIS workload."
+      explanation: "Incorrect. Azure-SSIS IR is used when lifting and shifting existing SSIS packages to execute in Azure."
     - content: "Azure"
       isCorrect: true
-      explanation: "Correct. When moving data between Azure data platform technologies, the Azure Integration runtime is used when copying data between two Azure data platform."
+      explanation: "Correct. When copying data between two Azure cloud data stores, the Azure Integration Runtime is used. It automatically determines the appropriate region for the copy."
     - content: "Self-hosted"
       isCorrect: false
-      explanation: "Incorrect. Self-hosted IR is used when working with data movement from private networks to the cloud and vice versa."
+      explanation: "Incorrect. Self-hosted IR is used when copying data between private network resources and the cloud, not between two Azure cloud data stores."

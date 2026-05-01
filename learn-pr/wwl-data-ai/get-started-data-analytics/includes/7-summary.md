@@ -2,13 +2,13 @@ Revealing the stories within your dataset is a crucial element of data analysis.
 
 By completing this module, you've learned how to:
 
-- Understand how to aggregate data.
-- Group and summarize data within a dataset.
-- Convert data from text to visualizations.
+- Describe data aggregation.
+- Describe grouping of data.
+- Describe data visualizations.
 
 ## Resources
 
 Use the following resources to discover more: 
 
 - [Get started with Microsoft data analytics](/training/paths/data-analytics-microsoft/)
-- [Create and use analytics reports with Power BI](/training/paths/create-use-analytics-reports-power-bi/)
+- [Design effective reports in Power BI](/training/paths/power-bi-effective/)

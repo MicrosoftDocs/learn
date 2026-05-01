@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.manage-semantic-model-lifecycle
+metadata:
+  title: Manage the Semantic Model Development Lifecycle
+  description: "Manage semantic models through their full development lifecycle. Create reusable assets, version-control with Git, inspect and validate with the XMLA endpoint and SemPy, deploy through pipelines, and maintain with monitoring and impact analysis."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
+  ms.service: powerbi
+  ai-usage: ai-generated
+title: Manage the semantic model development lifecycle
+summary: Manage semantic models through their full development lifecycle. Create reusable assets, version-control with Git, inspect and validate with the XMLA endpoint and SemPy, deploy through pipelines, and maintain with monitoring and impact analysis.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create reusable Power BI assets
+  - Manage Power BI content in version control
+  - Manage semantic models with the XMLA endpoint
+  - Deploy content through stages
+  - Maintain and monitor semantic models
+prerequisites: |
+  - Experience with Power BI Desktop and the Power BI service
+  - Understanding of semantic model concepts
+  - Familiarity with Python and Fabric notebooks, including DataFrames
+  - Foundational Git workflow knowledge (fork, branch, commit, sync, merge, pull request)
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- power-bi
+- fabric
+subjects:
+- data-analytics
+- data-management
+units:
+- learn.wwl.manage-semantic-model-lifecycle.introduction
+- learn.wwl.manage-semantic-model-lifecycle.reusable-assets
+- learn.wwl.manage-semantic-model-lifecycle.power-bi-projects
+- learn.wwl.manage-semantic-model-lifecycle.manage-models-xmla
+- learn.wwl.manage-semantic-model-lifecycle.deploy-stages
+- learn.wwl.manage-semantic-model-lifecycle.maintain-monitor
+- learn.wwl.manage-semantic-model-lifecycle.exercise
+- learn.wwl.manage-semantic-model-lifecycle.knowledge-check
+- learn.wwl.manage-semantic-model-lifecycle.summary
+badge:
+  uid: learn.wwl.manage-semantic-model-lifecycle.badge

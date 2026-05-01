@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-notebooks.shape-clean-data
+title: Shape and clean data
+metadata:
+  title: Shape and Clean Data
+  description: "Shape and clean data using Spark SQL and PySpark in notebooks."
+  ms.date: 04/01/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-shape-clean-data.md)]

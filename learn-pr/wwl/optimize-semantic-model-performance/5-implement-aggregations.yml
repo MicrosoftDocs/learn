@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.implement-aggregations
+title: Implement aggregations
+metadata:
+  title: Implement Aggregations
+  description: "Implement aggregations to accelerate queries on large datasets."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-implement-aggregations.md)]

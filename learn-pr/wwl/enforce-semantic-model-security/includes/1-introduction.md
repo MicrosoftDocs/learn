@@ -1,0 +1,7 @@
+Semantic model security controls which data users can access when they query your Power BI semantic models. Without security, anyone with query access to a semantic model can view all data in the model. By implementing security, you restrict data visibility to only authorized users.
+
+Suppose you work at a retail analytics organization with regional sales teams across multiple territories. Sales managers need to view performance data for their own region but shouldn't access data for other regions. The HR department maintains employee records with sensitive salary information that only authorized payroll staff should see. As the organization adopts Copilot in Power BI for natural language queries, you need to ensure that security boundaries apply to every access path, not just traditional reports.
+
+In this module, you learn how to implement row-level security (RLS) using DAX filter expressions, including dynamic patterns that scale without per-user role updates. You also explore object-level security (OLS) to hide tables and columns from unauthorized roles. Finally, you learn how to test security configurations in Power BI Desktop and the service, and manage role membership.
+
+By the end of this module, you can implement RLS and OLS in semantic models, test security configurations, and manage role membership to ensure that every user sees only the data they're authorized to access.

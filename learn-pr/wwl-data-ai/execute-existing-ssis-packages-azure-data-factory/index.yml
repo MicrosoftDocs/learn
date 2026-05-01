@@ -3,9 +3,9 @@ uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory
 metadata:
   title: Execute existing SSIS packages in Azure Data Factory
   description: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
-  ms.date: 02/04/2026
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure
 title: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline

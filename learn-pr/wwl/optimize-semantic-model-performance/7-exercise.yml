@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.exercise
+title: "Exercise: Diagnose and fix a slow report"
+metadata:
+  title: "Exercise: Diagnose and fix a slow report"
+  description: "Interactive exercise to diagnose and fix performance issues in a semantic model"
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

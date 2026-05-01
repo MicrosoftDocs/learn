@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-semantic-model-security.test-manage-roles
+title: Test security and manage roles
+metadata:
+  title: Test Security and Manage Roles
+  description: "Learn how to test RLS and OLS roles, assign role membership, and validate AI consumption paths."
+  ms.date: 04/15/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-test-manage-roles.md)]
