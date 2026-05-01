@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-fabric
 metadata:
   title: Get started with Microsoft Fabric
   description: Explore how to implement data analytics solutions on a single platform with Microsoft Fabric. Integrate, transform, and store data to train AI models and create insightful reports.
-  ms.date: 02/26/2025
+  ms.date: 05/01/2026
   author: AngieRudduck
   ms.author: anrudduc
   ms.topic: learning-path
@@ -25,11 +25,7 @@ subjects:
 - data-analytics
 - data-engineering
 - data-integration
-- data-management
-- data-modeling
-- information-protection-governance
 - data-storage
-- data-visualization
 modules:
 - learn.wwl.introduction-end-analytics-use-microsoft-fabric
 - learn.wwl.get-started-lakehouses
