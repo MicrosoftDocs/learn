@@ -14,7 +14,7 @@ The term "one-click" refers to the guided simplification, not a literal single c
 
 Regardless of policy type, you want to confirm that the preconfigured conditions match your specific gap and evaluate the impact prediction before you commit. Using a DLP policy as an example:
 
-1. Open the Microsoft Purview portal and navigate to **DSPM (preview)**.
+1. Open the Microsoft Purview portal and navigate to **DSPM**.
 1. Select the objective that addresses the protection gap you identified, such as **Prevent exfiltration to risky destinations**.
 1. Review the objective's risk indicators to confirm which condition the policy should address.
 1. Select the recommended policy action within the objective's workflow.

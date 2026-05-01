@@ -1,32 +1,41 @@
 
 To start using Microsoft Security Copilot, organizations need to take steps to onboard the service and users. These include:
 
-1. Provision Copilot capacity
-2. Set up the default environment
-3. Assign role permissions
+1. Identify your customer category
+2. Provision Copilot capacity (if required)
+3. Set up the default environment
+4. Assign role permissions
+
+### Identify your customer category
+
+Your onboarding experience depends on your license status:
+
+- **Microsoft 365 E5 and E7 customers** - Security Copilot is included with your Microsoft 365 E5 and E7 license. Microsoft automatically provisions and onboards Security Copilot for eligible tenants through zero-click activation, so no Azure setup or manual capacity provisioning is required. Customers receive a 7-day advance notification before activation. Once provisioning is complete, Security Copilot is ready for use.
+- **Non-Microsoft 365 E5 and E7 customers** - If Security Copilot isn't included in your license, you must follow the manual onboarding steps to provision Security Compute Units (SCUs) to use Security Copilot.
 
 ### Provision capacity
 
-Security Copilot operates on a provisioned capacity and an overage model. Provisioned capacity is billed by the hour while the overage capacity is billed on usage.
+For non-Microsoft 365 E5 and E7 customers, Security Copilot operates on a provisioned capacity and an overage model. Provisioned capacity is billed by the hour while the overage capacity is billed on usage.
 
 You can flexibly provision Security Compute Units (SCUs) to accommodate regular workloads and adjust them anytime without long-term commitments. An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
 
-To manage unexpected demand spikes, you can allocate an overage amount to ensure that additional SCUs are available when initially provisioned units are depleted during unexpected workload spikes. Overage units are billed on-demand and can be set as unlimited or a maximum amount. This approach enables predictable billing while providing the flexibility to handle both regular and unexpected usage.  See the summary and resources section of this module for links to information on Managing security compute unit usage and Security Copilot pricing.
+To manage unexpected demand spikes, you can allocate an overage amount to ensure that additional SCUs are available when initially provisioned units are depleted during unexpected workload spikes. Overage units are billed on-demand and can be set as unlimited or a maximum amount. This approach enables predictable billing while providing the flexibility to handle both regular and unexpected usage. See the summary and resources section of this module for links to information on Managing security compute unit usage and Security Copilot pricing.
 
 Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
 
 - You must have an Azure subscription.
 - You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
+- You need to be a Security Administrator or higher in the tenant you're onboarding Security Copilot.
   
     *Keep in mind that a global Microsoft Entra administrator role doesn't necessarily have the Azure owner or Azure contributor role by default. Microsoft Entra role assignments don't grant access to Azure resources. As a global Microsoft Entra administrator, you can enable access management for Azure resources through the Azure portal. For details, see [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin). Once you've enabled access management to Azure resources, you can configure the appropriate Azure role.*
 
 There are two options for provisioning capacity:
 
-- Provision capacity within Security Copilot (recommended) - When you first open Security Copilot as an admin, a wizard guides you through the steps in setting up capacity. The wizard prompts you for information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
+- Provision capacity within Security Copilot (recommended) - When you first open Security Copilot as an admin, a wizard guides you through the steps in setting up capacity, including workspace creation. The wizard prompts you for information including workspace name, Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 - Provision capacity through Azure - The Azure portal now includes Security Copilot as a service. Selecting the service, opens the page where you input information including your Azure subscription, resource group, region, capacity name, and the quantity of SCUs.
 
 > [!NOTE]
-> Regardless of the method you choose, you'll need to purchase a minimum of 1 and a maximum of 100 SCUs.
+> Regardless of the method you choose, you need to purchase a minimum of one and a maximum of 100 SCUs. The recommended number of units to conduct an introductory exploration of Security Copilot is three units with overage set to unlimited overage.
 
 # [Provision through Copilot](#tab/provision-through-copilot)
 :::image type="content" source="../media/create-security-capacity-page-no-pricing-info.png" lightbox="../media/create-security-capacity-page-no-pricing-info.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
@@ -72,7 +81,7 @@ During the setup of Security Copilot, you're prompted to configure settings. The
 
 - Plugin settings - The admin manages plugins and configures whether to allow Security Copilot to access data from your Microsoft 365 services. These settings are configured per workspace.
   - Configure who can add and manage their own custom plugins and who can add and manage custom plugins for everyone in the organization.
-  - Manage plugin availability and restrict access. When enabled, admins decide which new and existing plugins will be available to everyone in your organization, and which will be restricted to owners only.
+  - Manage plugin availability and restrict access. When enabled, admins decide which new and existing plugins are available to everyone in your organization, and which will be restricted to owners only.
   - Allow Security Copilot to access data from your Microsoft 365 services. If this option is turned off, your organization won't be able to use plugins that access Microsoft 365 services. Currently, this option is required for use of the Microsoft Purview plugin. Setting and/or changing this setting requires a user with a Copilot owner role or a global Microsoft Entra administrator role.
   
     :::image type="content" source="../media/plugin-settings-no-restrictions.png" lightbox="../media/plugin-settings-no-restrictions.png" alt-text="Screen capture showing the plugin settings and the setting to allow Security Copilot to access data from your Microsoft 365 services.":::
@@ -81,36 +90,43 @@ During the setup of Security Copilot, you're prompted to configure settings. The
 
 To ensure that the users can access the features of Copilot, they need to have the appropriate role permissions. Role permissions are configured per workspace.
 
-Permissions can be assigned using Microsoft Entra ID roles or Security Copilot roles. As a best practice, provide the least privileged role applicable for each user.
+Permissions can be assigned using Microsoft Entra or Microsoft Purview roles, or Security Copilot roles. As a best practice, provide the least privileged role applicable for each user.
 
-The Microsoft Entra ID roles are:
-
-- Global administrator
-- Security administrator
-- Security operator
-- Security reader
-
-Although these Microsoft Entra ID roles grant users varying levels of access to Copilot, the scope of these roles extends beyond Copilot. For this reason, Security Copilot introduces two roles that function like access groups but aren't Microsoft Entra ID roles. Instead, they only control access to the capabilities of the Security Copilot platform.
+Security Copilot introduces two roles that function like access groups but aren't Microsoft Entra ID roles. Instead, they only control access to the capabilities of the Security Copilot platform and provide no access by themselves to security data.
 
 The Microsoft Security Copilot roles are:
 
 - Copilot owner
 - Copilot contributor
 
-The Security Administrator and Global Administrator roles in Microsoft Entra automatically inherit Copilot owner access.
+The following Microsoft Entra and Microsoft Purview roles automatically inherit **Copilot owner** access, ensuring Security Copilot always has at least two owners:
+
+Microsoft Entra roles:
+
+- Billing Administrator
+- Microsoft Entra Compliance Administrator
+- Global Administrator
+- Intune Administrator
+- Security Administrator
+
+Microsoft Purview roles:
+
+- Purview Compliance Administrator
+- Purview Data Governance Administrator
+- Purview Organization Management
 
 :::image type="content" source="../media/role-assignments-new-edited.png" lightbox="../media/role-assignments-new-edited.png" alt-text="Screen capture showing the role assignment settings.":::
 
 Only users that have the global administrator, security administrator, or Copilot owner roles can make role assignments in Copilot by adding/removing members from the Owner and Contributor roles.
 
-A group that admins/owners can include as a member of the Contributor role is the **Recommended Microsoft Security roles** group. This group exists only in Security Copilot and is a bundle of existing Microsoft Entra roles. When you add this group as a member of the Contributor role, all users that are members of the Entra ID roles that are included in the recommended Microsoft Security roles group get access to the Copilot platform. This option provides a quick, secure way to give users in your organization, who already have access to security data used by Copilot through a Microsoft plugin, access to the Copilot platform.
+A group that admins/owners can include as a member of the Contributor role is the **Recommended Microsoft Security roles** group. This group exists only in Security Copilot and is a bundle of existing Microsoft Entra roles. When you add this group as a member of the Contributor role, all users that are members of the Microsoft Entra ID roles that are included in the recommended Microsoft Security roles group get access to the Copilot platform. This option provides a quick, secure way to give users in your organization, who already have access to security data used by Copilot through a Microsoft plugin, access to the Copilot platform.
 
 For a detailed listing of the permissions granted for each of these roles, refer to the Assign roles section in [Understand authentication in Microsoft Security Copilot](/security-copilot/authentication).
 
 #### Copilot plugins and role requirements
 
-Your role controls what activities you have access to, such as configuring settings, assigning permissions, or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins may have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a security operator role or a Copilot workspace contributor role is able to access the Copilot portal and create sessions, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
+Your role controls what activities you have access to, such as configuring settings, assigning permissions, or performing tasks. Copilot doesn't go beyond the access you have. Additionally, individual Microsoft plugins might have their own role requirements for accessing the service and data it represents. As an example, an analyst that has been assigned a security operator role or a Copilot workspace contributor role is able to access the Copilot portal and create sessions, but to utilize the Microsoft Sentinel plugin would need an appropriate role like Microsoft Sentinel Reader to access incidents in the workspace. To access the devices, privileges, and policies available through the Microsoft Intune plugin, that same analyst would need another service-specific role like the Intune Endpoint Security Manager role.
 
-Generally speaking, Microsoft plugins in Copilot use the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured. Some Microsoft plugins that require setup may include configurable parameters that are used for authentication in-lieu of the OBO model.
+Generally speaking, Microsoft plugins in Copilot use the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured. Some Microsoft plugins that require setup might include configurable parameters that are used for authentication in-lieu of the OBO model.
 
 Enabling of individual plugins and configuration of plugins is done per workspace.

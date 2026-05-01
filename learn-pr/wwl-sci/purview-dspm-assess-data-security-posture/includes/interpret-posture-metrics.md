@@ -1,4 +1,4 @@
-The **Posture** page in Data Security Posture Management (DSPM) (preview) is where you assess the organization's data security state at a glance. The dashboard answers four questions: how well is sensitive data identified, how broadly is it protected, how quickly are alerts handled, and whether things are getting better or worse. Each signal is partial on its own. Assessment depends on reading them in combination.
+The **Posture** page in Data Security Posture Management (DSPM) is where you assess the organization's data security state at a glance. The dashboard answers four questions: how well is sensitive data identified, how broadly is it protected, how quickly are alerts handled, and whether things are getting better or worse. Each signal is partial on its own. Assessment depends on reading them in combination.
 
 ## Key posture metrics
 
