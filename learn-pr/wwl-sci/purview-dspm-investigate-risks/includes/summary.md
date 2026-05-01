@@ -1,37 +1,13 @@
-You started this module with a practical challenge: sensitive data events are happening across your organization, and knowing your posture state or having protection policies in place doesn't tell you what's actually occurring. You needed investigation skills to trace activity, identify patterns, and determine whether events require response.
-
-## What you can now do
-
-You developed four distinct investigation capabilities, each with a different relationship to the data and to AI:
-
-**Direct investigation**: You can trace sensitive data activity through activity explorer, the AI activities tab, audit logs, and reports. You know how to filter effectively, reconstruct event sequences from the audit trail, and identify patterns across aggregated report data.
-
-**AI-powered investigation**: You can use Security Copilot to accelerate investigation through Promptbooks, the Prompt Gallery, and custom prompts. You know when Copilot's synthesis is sufficient and when to validate through direct investigation.
-
-**AI governance**: You can evaluate whether DLP and IRM triage agent categorizations are correct for your organizational context, provide feedback when they're not, and review automated actions for appropriateness and proportionality.
-
-**AI agent investigation**: You can investigate AI agents as risk subjects through AI observability, examining their activities, interpreting risk signals, and determining whether flagged behavior represents genuine risk or normal operation for that agent's purpose.
-
-## Key judgments you practiced
+Sensitive data activity generates signals constantly. DLP alerts fire, users trigger policy matches, AI agents interact with content they may not need. Determining what happened, who was involved, and whether the response needs to change is now something you can do through DSPM's investigation surfaces, Security Copilot, triage agent governance, and AI observability.
 
 In this module, you learned how to:
 
-- Analyze sensitive data activity using activity explorer, the AI activities tab, audit logs, and reports with advanced filtering
-- Investigate data security events using Security Copilot prompts, Promptbooks, and the Prompt Gallery within DSPM
-- Evaluate AI-driven triage agent categorizations for DLP and Insider Risk Management alerts and govern automated actions
-- Investigate risky AI agent behavior through AI observability to assess agent-specific data security risks
+- Analyze sensitive data activity across activity explorer, audit logs, and DSPM reports
+- Investigate data security events using Security Copilot in DSPM
+- Evaluate and govern AI-driven alert triage for DLP and Insider Risk Management
+- Investigate risky AI agent behavior through AI observability
 
-## The investigation cycle
-
-Investigation in DSPM is ongoing. New events, new AI deployments, and new data sharing patterns create continuous investigation needs. The cycle repeats:
-
-1. Signals appear (alerts, trend changes, risk level increases).
-1. You investigate through the appropriate surface (direct, AI-powered, or both).
-1. You evaluate AI-driven responses if triage agents are active.
-1. You investigate AI agent behavior as the agent landscape evolves.
-1. You escalate to Data Security Investigations when patterns require deeper analysis.
-
-Each pass through this cycle builds your investigative judgment. Patterns you've seen before become faster to identify. Triage categorizations become easier to evaluate with experience. Agent behavior becomes interpretable as you learn each agent's normal operating profile.
+Investigation needs shift as new AI agents deploy, data sharing patterns change, and policies evolve. The signals that matter today will look different in six months. Regular use of these surfaces keeps your understanding of sensitive data activity current and your responses proportionate.
 
 ## Resources
 

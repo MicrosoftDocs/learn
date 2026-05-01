@@ -1,108 +1,49 @@
-Your cognitive role shifts in this unit. In direct investigation and Security Copilot, you're the investigator examining data or directing AI as a partner. Now you become a supervisor of AI. The DLP triage agent and the Insider Risk Management triage agent analyze alerts, categorize them by priority, and can take automated actions. Your job is to evaluate whether their decisions are correct and their actions are appropriate for your organizational context.
+Data loss prevention (DLP) and Insider Risk Management generate alerts based on the same sensitive data activity you trace through Data Security Posture Management (DSPM). Two triage agents, one for DLP and one for Insider Risk Management, automatically categorize those alerts by priority and can take automated actions like removing sharing links or revoking permissions. While you're investigating activity patterns in DSPM, these agents are responding to the alerts that activity generates.
 
-This governance skill is distinct from investigation. You're not tracing what a user did with sensitive data. You're evaluating whether AI's interpretation of what a user did is accurate and whether AI's response was proportionate.
+That parallel creates a question DSPM is well-positioned to surface. Are the triage agents getting it right? If your DSPM investigation reveals a pattern, but the corresponding alerts were categorized as "Less urgent," the agents may not be weighing risk correctly for your organization. That gap is what you're looking for.
 
-## What triage agents do
+## What triage agents are
 
 Microsoft Purview provides two triage agents:
 
-- **DLP triage agent**: Evaluates DLP alerts based on sensitivity risk, exfiltration risk, and policy risk
-- **Insider Risk Management triage agent**: Evaluates IRM alerts based on user risk, file risk, and activity risk
+- **DLP triage agent**: Categorizes DLP alerts based on sensitivity risk, exfiltration risk, and policy risk
+- **Insider Risk Management triage agent**: Categorizes IRM alerts based on user risk, file risk, and activity risk
 
-Both agents categorize alerts into groups:
+Both agents place alerts into one of three groups: "Needs attention," "Less urgent," or "Not categorized." They provide explanations for each categorization, which makes it possible to evaluate whether the reasoning matches your context.
 
-- **Needs attention**: The agent determined this alert poses the greatest risk to your organization
-- **Less urgent**: The agent determined this alert poses a lower risk
-- **Not categorized**: The agent couldn't successfully triage the alert (server error, in-process, or unsupported activities)
+Beyond categorization, the agents can take automated actions on detected risks, including removing public sharing links, applying DLP policies, and revoking permissions. These actions happen without manual approval, so their appropriateness is also something you need to verify.
 
-The agents provide explanations for their categorization logic. This transparency is what makes governance possible: you can evaluate whether the reasoning matches your organizational context.
+## How DSPM connects to triage agent decisions
 
-## Evaluating DLP triage agent categorizations
+DSPM surfaces signals that can indicate triage agents aren't performing as expected:
 
-The DLP triage agent is accessible from the DLP solution's **Alerts** page. Switch to the **Triage Agent** view using the toggle at the top right of the page to see agent-triaged alerts grouped by category.
+- **The Data investigation metric** on the posture page shows what percentage of alerts have been triaged. A low percentage means alerts are accumulating without agent response.
+- **Activity patterns that don't match alert priority**: If DSPM investigation surfaces a concentrated exfiltration pattern for a user, but the corresponding DLP alerts were categorized as "Less urgent," the agent's risk weighting may not match your organizational context.
+- **Automated actions visible in objectives**: The **View agent activity** option in data security objectives shows what actions triage agents took, when they took them, and what triggered them. If you're investigating an event in DSPM and notice the agent already acted on it, you can evaluate whether that action was proportionate.
+- **Security Copilot alert summaries**: Security Copilot in DSPM can surface alert context and user risk profiles, giving you the data to cross-reference against what the triage agent decided.
 
-When you select an alert marked "Needs attention," the details panel shows:
+The investigation flow is: DSPM surfaces a concern → you check whether existing alerts match what you're seeing → you evaluate whether triage agents handled those alerts appropriately.
 
-- A summary of the alert context
-- The risk factors the agent identified (sensitivity of the data, exfiltration indicators, policy severity)
-- The reasoning behind the categorization
+## When triage agent decisions need attention
 
-Your evaluation questions:
+Common situations where DSPM investigation reveals a governance gap:
 
-- Does the sensitivity assessment match this data's actual importance in your organization? A "Needs attention" categorization for a low-business-impact label might indicate the agent's weighting doesn't match your risk tolerance.
-- Does the exfiltration risk reflect your organization's actual threat model? The agent may flag external sharing in an organization where cross-boundary collaboration is normal and expected.
-- Are there contextual factors the agent can't see? An alert about a user downloading sensitive files might look urgent, but if that user is in a role that requires regular access to those files, the categorization may be inappropriate.
+- You see a sustained activity pattern in reports, but corresponding alerts were consistently marked "Less urgent" because the agent assessed each one individually without connecting the pattern
+- An automated action removed access that DSPM activity data shows was legitimate for that user's role
+- A high-risk agent or user shows repeated sensitive data interactions in AI observability or activity explorer, but alert categorization doesn't reflect that cumulative risk
+- The agent categorized an alert based on label sensitivity, but your organizational context assigns different business importance to that data than the label implies
 
-## Evaluating IRM triage agent categorizations
+In each case, DSPM gave you the evidence. The governance step is taking that evidence to the triage agent's categorization and evaluating whether it made the right call.
 
-The IRM triage agent appears on the **Triage Agent** dashboard within Insider Risk Management. Select **Triage Agent** at the top of the dashboard page to view triaged alerts.
+## Providing feedback and reviewing actions
 
-For each alert, the agent provides:
+When you identify a mismatch between what DSPM shows and how the triage agent responded:
 
-- **Agent categorization**: "Needs attention" or "Less urgent"
-- **User info**: Alert history, title, organization, and last working date
-- **Risk patterns**: A narrative summary of each risk associated with the alert, detailing the risky activity, the sensitive data involved, and the affected files
+- **For categorization disagreements**: Select **Is this incorrect?** on the triage agent's categorization in DLP or IRM to provide feedback. This improves future categorization for your organization.
+- **For automated action concerns**: Review the action scope and outcome through **View agent activity** in DSPM objectives. Determine whether the action was proportionate to the risk DSPM evidence shows.
 
-Select a risk pattern narrative to see:
+Triage errors affect which alerts get your attention first. Automated action errors affect operations directly. Both deserve review, but automated actions demand closer scrutiny because their impact is immediate.
 
-- **Summary**: What happened, what data was involved, which files were affected
-- **Actors**: The device involved and client IP address
+## Scope of this governance work
 
-Your evaluation questions:
-
-- Does the risk narrative accurately describe the severity of the behavior? IRM signals can vary in importance based on the user's role, the organization's data handling norms, and recent changes (such as a user's impending departure).
-- Does the alert history provide context that changes the categorization? A first-time alert might be less urgent, while a pattern of repeated alerts escalates the actual risk beyond what a single-alert analysis shows.
-- Is "Less urgent" actually safe to deprioritize? The agent makes a point-in-time assessment. Patterns across multiple "Less urgent" alerts from the same user could indicate an escalating risk the agent hasn't connected.
-
-## Providing feedback on categorizations
-
-When you disagree with an agent's categorization, select **Is this incorrect?** to provide feedback on why the categorization doesn't match your assessment. This feedback improves the agent's future categorization logic for your organization.
-
-Feedback is appropriate when:
-
-- The agent consistently miscategorizes alerts for a specific data type or user role
-- Organizational context (which the agent can't access) changes the risk assessment
-- The agent's reasoning is based on factors that aren't relevant in your environment
-
-## Reviewing automated actions
-
-Beyond triage categorization, AI agents in DSPM can take direct actions on detected risks. These automated actions may include:
-
-- Removing public sharing links
-- Applying DLP policies
-- Revoking permissions
-
-These are higher-consequence decisions than categorization. Your governance responsibility includes:
-
-- Reviewing what actions were taken and whether they were proportionate
-- Understanding the scope of each action (how many items affected, which users impacted)
-- Determining whether the automated response created unintended consequences (legitimate users losing access, business processes disrupted)
-
-Access the audit trail of AI agent actions through the **View agent activity** options available throughout data security objectives. This shows what the agent did, when, and what triggered the action.
-
-## The distinction between triage and automated action governance
-
-These require different governance reasoning:
-
-| Governance task | What you're evaluating | Consequence of error |
-|---|---|---|
-| Triage categorization | Whether the priority ranking is correct | An important alert gets deprioritized and response is delayed |
-| Automated action | Whether the remediation step was appropriate and proportionate | Legitimate access is disrupted, business processes break, or an action is insufficient for the actual risk |
-
-Triage errors affect your attention allocation. Automated action errors affect operations directly. Both require governance, but automated actions demand closer scrutiny because they have immediate real-world impact.
-
-## When to override or escalate
-
-Override a triage categorization when:
-
-- You have organizational context the agent lacks (user is departing, data is less sensitive than the label suggests, the sharing pattern is authorized)
-- Multiple data points contradict the categorization (the "Less urgent" alert is part of a weeks-long pattern the agent assesses individually)
-- The alert connects to a broader investigation you're already conducting
-
-Escalate beyond DSPM governance when:
-
-- Automated actions need to be reversed and you lack the permissions
-- The pattern suggests the triage agent's configuration needs adjustment (repeated miscategorizations indicate a systemic issue)
-- The automated action created compliance implications that require legal or HR involvement
-
-Governance is an ongoing calibration. As your organization changes, the triage agents' assessments may need recalibration. Regular review of categorization accuracy and automated action outcomes helps you maintain appropriate oversight without creating bottlenecks.
+The detailed mechanics of how each triage agent works, the specific panels and fields in DLP and IRM dashboards, and the full procedural workflows for managing triage agents belong in DLP and IRM focused content. From a DSPM investigation perspective, the skill is recognizing when your investigation evidence contradicts automated decisions and knowing how to act on that contradiction.

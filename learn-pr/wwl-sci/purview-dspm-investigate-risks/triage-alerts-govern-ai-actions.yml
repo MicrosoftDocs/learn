@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/triage-alerts-govern-ai-actions.md)]
