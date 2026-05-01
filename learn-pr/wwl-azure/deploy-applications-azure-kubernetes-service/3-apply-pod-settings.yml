@@ -2,9 +2,9 @@
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.apply-pod-settings
 title: Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
 metadata:
-  title: Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
+  title: Try-This Exercise - Apply Azure Kubernetes Service Pod Settings Using Azure Policy
   description: "Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy"
-  ms.date: 03/04/2024
+  ms.date: 04/25/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit
