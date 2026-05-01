@@ -32,6 +32,8 @@ modules:
 - learn.wwl.purview-data-security-posture-management-understand
 - learn.wwl.purview-dspm-assess-data-security-posture
 - learn.wwl.purview-data-security-posture-management-protect-remediate
+- learn.wwl.purview-data-security-posture-management-investigate-risks
+
 
 trophy:
   uid: learn.wwl.purview-data-security-posture-management.trophy

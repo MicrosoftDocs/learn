@@ -25,7 +25,7 @@ DSPM also surfaces AI-specific exposure through AI observability, AI-tagged repo
 
 ## Enable analytics
 
-DSPM depends on analytics from DLP and Insider Risk Management to produce its posture view. The first time DSPM is opened from **Solutions** > **DSPM (preview)** in the Microsoft Purview portal, a setup prompt asks to enable both. Allow about a day before data starts to populate.
+DSPM depends on analytics from DLP and Insider Risk Management to produce its posture view. The first time DSPM is opened from **Solutions** > **DSPM** in the Microsoft Purview portal, a setup prompt asks to enable both. Allow about a day before data starts to populate.
 
 DSPM is a consolidation layer, not a source. The dashboard reflects what DLP and Insider Risk Management analytics produce. When those aren't running, an empty card looks identical to a card showing genuinely low activity. That ambiguity is the reason the enablement step matters for assessment, not just access. Reading the dashboard during the scan window without knowing this leads to the most common early misread: treating absence of data as evidence of low risk.
 
