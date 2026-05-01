@@ -5,6 +5,7 @@ Microsoft Security Copilot is now accessible from within Microsoft Purview data 
 
 Some of the scenarios supported as part of the embedded experience include:
 
+- Gain insights about your data security posture (DSPM).
 - Gain comprehensive summary of Data Loss Prevention alerts.
 - Gain comprehensive summary of Insider Risk Management alerts.
 - Gain contextual summary of Communication Compliance policy matches.
@@ -24,7 +25,7 @@ Data security teams generally receive more data security alerts per day than the
 
 To summarize Data Loss Prevention alerts using Copilot:
 
-1. Sign in to the Microsoft Purview compliance portal or the new Microsoft Purview portal and select the Data Loss Prevention solution. 
+1. Sign in to the Microsoft Purview portal or the new Microsoft Purview portal and select the Data Loss Prevention solution. 
 1. Navigate to the alerts queue and select the alert you want to review.
 1. Select "Get a summary from Security Copilot."
 
@@ -38,7 +39,7 @@ To summarize Data Loss Prevention alerts using Copilot:
 
 To summarize Insider Risk Management alerts using Copilot, you follow similar steps as described for DLP. 
 
-You sign in to the Microsoft Purview compliance portal or the new Microsoft Purview portal and go to the Insider Risk Management solution. Navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed.
+You sign in to the Microsoft Purview portal or the new Microsoft Purview portal and go to the Insider Risk Management solution. Navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed.
 
 :::image type="content" source="../media/copilot-insider-risk-management-v2.png" lightbox="../media/copilot-insider-risk-management-v2.png" alt-text="Screen capture of an Insider Risk Management alerts page that shows the option to summarize an alert.":::
 
@@ -57,17 +58,17 @@ Reviewing communications is an integral part of protecting your organization’s
 
 Contextual Summarization currently supports trainable classifiers as context and contextual summaries are only eligible for messages and attachments with a combined length of 100 words or more.
 
-Before you get started, ensure you have proper licensing to access Communication Compliance and the appropriate role permissions for Copilot and Communication Compliance. To get contextual summaries in policies, you must have Communication Compliance or Communication Compliance Investigator Role. For Copilot, you need, as a minimum, the Entra Security operator or Copilot workspace contributor role.
+Before you get started, ensure you have proper licensing to access Communication Compliance and the appropriate role permissions for Copilot and Communication Compliance. To get contextual summaries in policies, you must have Communication Compliance or Communication Compliance Investigator Role. For Copilot, you need, as a minimum, the Microsoft Entra Security operator or Copilot workspace contributor role.
 
 To get started:
 
-1. Navigate to the Communication Compliance solution from the Microsoft Purview compliance portal or the new Microsoft Purview portal, then navigate to the Policies tab in Communication Compliance.
+1. Navigate to the Communication Compliance solution from the Microsoft Purview portal or the new Microsoft Purview portal, then navigate to the Policies tab in Communication Compliance.
 
 1. Navigate to a policy that uses trainable classifiers as part of the policy’s configurations and select a policy match to view message content.
 
 1. A Copilot action button appears in the upper left command bar or a Summarize action button in the lower right command bar. Select either action to generate a contextual summary of the message and supported attachments.
 
-    :::image type="content" source="../media/copilot-communication-compliance-v2.png" lightbox="../media/copilot-communication-compliance-v2.png" alt-text="Screen capture of a Communication Compliance policy alerts page and the Copilot summary for that policy alert.":::
+    :::image type="content" source="../media/copilot-communication-compliance-v2.png" lightbox="../media/copilot-communication-compliance-v2.png" alt-text="Screen capture of a Communication Compliance policy alerts page and the Copilot summary for the policy alerts.":::
 
 1. To learn more about the message, explore other default prompts or type your own question into the text prompt in the Copilot side panel.
 
@@ -80,11 +81,11 @@ eDiscovery admins or managers spend a significant amount of time reviewing evide
 - Get a contextual summary of a single item in a review set.
 - Ask follow-up contextual questions about the summary.
 
-To use Copilot in Microsoft Purview with eDiscovery (Premium), you must be licensed for eDiscovery (Premium) and have the appropriate role permissions for Copilot and for eDiscovery. You must have access to eDiscovery (Premium) cases, and to obtain a contextual summary for an item in a review set, the Purview Review role is required. For Copilot, you need, as a minimum, the Entra Security operator or Copilot workspace contributor role.
+To use Copilot in Microsoft Purview with eDiscovery (Premium), you must be licensed for eDiscovery (Premium) and have the appropriate role permissions for Copilot and for eDiscovery. You must have access to eDiscovery (Premium) cases, and to obtain a contextual summary for an item in a review set, the Purview Review role is required. For Copilot, you need, as a minimum, the Microsoft Entra Security operator or Copilot workspace contributor role.
 
 To get started:
 
-1. Navigate to the Microsoft Purview compliance portal (this use case isn't currently supported in the new Microsoft Purview portal), then navigate to an eDiscovery. (Premium) case.
+1. Navigate to the Microsoft Purview portal (this use case isn't currently supported in the new Microsoft Purview portal), then navigate to an eDiscovery. (Premium) case.
 
 1. Navigate to and open a review set.
 
