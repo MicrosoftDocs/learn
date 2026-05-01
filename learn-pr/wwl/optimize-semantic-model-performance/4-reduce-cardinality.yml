@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.reduce-cardinality
+title: Reduce cardinality for better performance
+metadata:
+  title: Reduce Cardinality for Better Performance
+  description: "Reduce cardinality levels to improve semantic model efficiency."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-reduce-cardinality.md)]

@@ -1,0 +1,43 @@
+﻿### YamlMime:Module
+uid: learn.wwl.enforce-semantic-model-security
+metadata:
+  title: Enforce Semantic Model Security
+  description: "Implement row-level security, object-level security, and dynamic security patterns to protect sensitive data in semantic models."
+  ms.date: 04/15/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Enforce semantic model security
+summary: Implement row-level security (RLS), object-level security (OLS), and dynamic security patterns to protect sensitive data in semantic models while enabling appropriate access for different user groups.
+abstract: |
+  By the end of this module, you're able to:
+  - Implement row-level security using DAX filter expressions and dynamic security patterns.
+  - Apply object-level security to hide tables and columns.
+  - Validate security roles and manage role membership.
+prerequisites: |
+  - Experience developing semantic models in Power BI Desktop.
+  - Understanding of DAX fundamentals.
+iconUrl: /training/achievements/enforce-power-bi-model-security.svg
+levels:
+- advanced
+roles:
+- data-analyst
+- data-engineer
+products:
+- power-bi
+- fabric
+subjects:
+- data-analytics
+- data-management
+units:
+- learn.wwl.enforce-semantic-model-security.introduction
+- learn.wwl.enforce-semantic-model-security.row-level-security
+- learn.wwl.enforce-semantic-model-security.object-level-security
+- learn.wwl.enforce-semantic-model-security.test-manage-roles
+- learn.wwl.enforce-semantic-model-security.exercise
+- learn.wwl.enforce-semantic-model-security.knowledge-check
+- learn.wwl.enforce-semantic-model-security.summary
+badge:
+  uid: learn.wwl.enforce-semantic-model-security.badge

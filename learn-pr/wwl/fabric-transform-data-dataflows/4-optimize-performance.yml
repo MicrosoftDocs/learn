@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-dataflows.optimize-performance
+title: Optimize Dataflows Gen2 performance
+metadata:
+  title: Optimize Dataflows Gen2 Performance
+  description: "Learn query folding and other techniques to optimize Dataflows Gen2 performance"
+  ms.date: 03/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-optimize-performance.md)]

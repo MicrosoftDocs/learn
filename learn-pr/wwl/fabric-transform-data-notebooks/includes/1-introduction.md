@@ -1,0 +1,9 @@
+Data-driven organizations need reliable ways to transform raw data into clean, structured formats ready for analysis. In Microsoft Fabric, notebooks provide an interactive, code-based environment powered by Apache Spark. You can use notebooks to read from and write to lakehouses, as well as warehouses, KQL databases, and external sources. Notebooks give you a single transformation tool that reaches across the Fabric platform.
+
+Suppose you work at a retail analytics organization that collects sales transactions, customer records, and product data from multiple systems into a Fabric lakehouse. The raw data contains inconsistencies: missing values in customer records, duplicate transaction rows, and separate tables that need to be joined before analysts can build meaningful reports. Low-code tools handle simple transformations, but your team needs complex joins across multiple tables, window functions for ranking and running totals, and custom business logic to derive new metrics. Your organization needs a scalable, repeatable approach that builds on your team's existing SQL skills.
+
+Fabric notebooks let you address these challenges using Spark SQL, which extends familiar SQL syntax to work with large datasets. When you need more programmatic flexibility, PySpark provides a DataFrame API for the same transformations. Both languages run on the same Spark engine, so you can choose the approach that fits each task.
+
+You explore how Fabric notebooks work, what data stores they connect to, and common development patterns. You also learn to shape and clean data by filtering rows, handling nulls, and adding calculated columns. You combine and aggregate data using joins, grouping, and window functions. Finally, you write your transformed results to properly sized Delta tables.
+
+By the end of this module, you're able to transform data using Spark SQL and PySpark in Fabric notebooks.

@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-dataflows.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for transforming data using Dataflows Gen2"
+  ms.date: 03/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary purpose of a dataflow in Microsoft Fabric?"
+    choices:
+    - content: "To create visualizations and reports from raw data"
+      isCorrect: false
+      explanation: "Incorrect. Dataflows focus on data transformation and loading, not on creating visualizations. Reports are built in Power BI using semantic models."
+    - content: "To extract, transform, and load data using a low-code Power Query interface"
+      isCorrect: true
+      explanation: "Correct. Dataflows provide a cloud-based ETL experience using Power Query Online, allowing you to connect to data sources, apply transformations, and load results to destinations like lakehouses and warehouses."
+    - content: "To manage workspace security and access permissions"
+      isCorrect: false
+      explanation: "Incorrect. Workspace security is managed through Fabric workspace roles and permissions, not through dataflows."
+  - content: "What is query folding?"
+    choices:
+    - content: "The process of combining multiple queries into a single query for efficiency"
+      isCorrect: false
+      explanation: "Incorrect. Combining queries is done through Merge or Append operations. Query folding refers to pushing transformation logic to the data source for execution."
+    - content: "The process of pushing transformation logic to the data source for execution instead of processing it in the Power Query engine"
+      isCorrect: true
+      explanation: "Correct. Query folding translates M steps into native query language (like SQL) that the data source executes, returning only the transformed results. This reduces data transfer and improves performance."
+    - content: "The process of organizing applied steps into folders for better readability"
+      isCorrect: false
+      explanation: "Incorrect. Query folding is a performance optimization technique, not an organizational feature for applied steps."
+  - content: "Which transformation combines rows from two queries into a single query, similar to a SQL JOIN?"
+    choices:
+    - content: "Append queries"
+      isCorrect: false
+      explanation: "Incorrect. Append queries stack rows from multiple queries vertically, similar to a SQL UNION. Merge queries join data horizontally on matching columns."
+    - content: "Group by"
+      isCorrect: false
+      explanation: "Incorrect. Group by aggregates data based on column values. Merge queries is the transformation that joins two queries on matching columns."
+    - content: "Merge queries"
+      isCorrect: true
+      explanation: "Correct. Merge queries joins two queries by matching values in selected columns, similar to a SQL JOIN operation. You can choose different join types like left outer, inner, and full outer."
+  - content: "How can you check whether a specific applied step folds to the data source?"
+    choices:
+    - content: "Open the Advanced Editor and look for SQL syntax in the M code"
+      isCorrect: false
+      explanation: "Incorrect. The Advanced Editor shows M code, not the native query sent to the source. Use the View Native Query option on specific steps instead."
+    - content: "Right-click the step in the Applied Steps pane and check if View Native Query is available"
+      isCorrect: true
+      explanation: "Correct. If View Native Query is available, the step folds to the data source and you can see the native query that would be sent. If it's grayed out, the step doesn't fold."
+    - content: "Run the dataflow and check the refresh history for folding status"
+      isCorrect: false
+      explanation: "Incorrect. While refresh history shows performance details, you check folding for individual steps by right-clicking the step and looking for the View Native Query option."
+  - content: "When is a notebook a better choice than a dataflow for data transformation?"
+    choices:
+    - content: "When the team prefers a visual drag-and-drop interface"
+      isCorrect: false
+      explanation: "Incorrect. A visual interface is a strength of dataflows, not notebooks. Notebooks require writing code in Python or other languages."
+    - content: "When transformations involve filtering rows and removing columns"
+      isCorrect: false
+      explanation: "Incorrect. Filtering and column selection are common dataflow operations that work well in Power Query. Notebooks are better suited for more complex scenarios."
+    - content: "When transformations require complex logic or large-scale distributed processing"
+      isCorrect: true
+      explanation: "Correct. Notebooks with Apache Spark provide more flexibility for complex algorithms, advanced data science workloads, and large-scale data processing that benefits from distributed compute."

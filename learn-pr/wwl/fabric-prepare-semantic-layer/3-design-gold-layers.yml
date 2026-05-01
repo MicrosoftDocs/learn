@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-prepare-semantic-layer.design-gold-layers
+title: Design gold layers with AI in mind
+metadata:
+  title: Design Gold Layers with AI in Mind
+  description: "Learn entity-oriented design, naming conventions, and documentation practices that make gold layers effective for AI consumption."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-design-gold-layers.md)]
