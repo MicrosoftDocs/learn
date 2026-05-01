@@ -14,6 +14,7 @@ Security Copilot capabilities embedded in Microsoft Defender XDR include:
 - Incident reports
 - Analyze files
 - Device summary
+- Threat intelligence
 
 > [!NOTE]
 >The list of Copilot capabilities embedded in Microsoft Defender XDR is continually growing. This unit provides just a sampling of some of those Copilot capabilities. For more information, see documentation on Microsoft Defender XDR.
@@ -157,6 +158,14 @@ Similarly, Copilot in Microsoft Defender XDR can summarize identities.
 :::image type="content" source="../media/identity-summary.png" lightbox="../media/identity-summary.png" alt-text="Screen capture showing the identity summary from Copilot.":::
 
 ---
+
+### Threat intelligence
+
+Copilot is embedded in the threat intelligence section of the Microsoft Defender portal, helping security teams make informed decisions by consolidating and summarizing threat intelligence data.
+
+From the threat intelligence page, you can ask Copilot to summarize relevant threats impacting your environment, prioritize threats based on your organization's exposure levels, or identify threat actor groups that may be targeting your industry. Copilot uses the Microsoft Defender Threat Intelligence plugin to surface this information and can generate summaries of threat analytics reports, intel profiles, and vulnerability disclosures—all in natural language.
+
+This capability is particularly useful for threat hunters and analysts who need broad situational awareness before diving into a specific incident investigation.
 
 ### Common functionality across key features
 
