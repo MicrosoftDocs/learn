@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.security-copilot-interactive-guides
+metadata:
+  title: Experience Security Copilot Through Guided Simulations
+  description: "Explore use cases of Microsoft Security Copilot in the standalone and embedded experiences through interactive guides."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: module
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+title: Experience Security Copilot through guided simulations
+summary: "Explore use cases of Microsoft Security Copilot in the standalone and embedded experiences through interactive guides covering prompts, promptbooks, Microsoft Purview, and Microsoft Defender XDR."
+abstract: |
+  After completing this module, you'll be able to:
+  - Configure owner settings in Microsoft Security Copilot.
+  - Use prompts and promptbooks to investigate security scenarios.
+  - Create a custom promptbook to streamline repeatable investigation workflows.
+  - Use Security Copilot in Microsoft Purview to investigate data protection activity, insider risks, DLP alerts, and unlabeled sensitive content.
+  - Use Security Copilot in Microsoft Defender XDR to investigate security incidents and analyze artifacts.
+  - Explore and create agents in Security Copilot.
+  - Review Conditional Access Optimization Agent activity and suggestions.
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft Security solutions and services
+  - Completion of the module [Describe Microsoft Security Copilot](/training/modules/security-copilot-getting-started/)
+  - Completion of the module [Describe the core features of Microsoft Security Copilot](/training/modules/security-copilot-describe-core-features/)
+  - Completion of the module [Describe the embedded experiences of Microsoft Security Copilot](/training/modules/security-copilot-embedded-experiences/)
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- security-engineer
+- security-operations-analyst
+products:
+- ms-copilot
+- microsoft-purview
+- defender-xdr
+- entra-id
+subjects:
+- security
+units:
+- learn.wwl.security-copilot-interactive-guides.introduction
+- learn.wwl.security-copilot-interactive-guides.explore-owner-settings-security-copilot
+- learn.wwl.security-copilot-interactive-guides.use-prompts-promptbooks-security-copilot
+- learn.wwl.security-copilot-interactive-guides.create-custom-promptbook-security-copilot
+- learn.wwl.security-copilot-interactive-guides.investigate-data-protection-activity-purview
+- learn.wwl.security-copilot-interactive-guides.investigate-insider-risks-compliance-purview
+- learn.wwl.security-copilot-interactive-guides.investigate-security-incidents-defender-xdr
+- learn.wwl.security-copilot-interactive-guides.explore-create-agent-security-copilot
+- learn.wwl.security-copilot-interactive-guides.explore-conditional-access-agent
+- learn.wwl.security-copilot-interactive-guides.knowledge-check
+- learn.wwl.security-copilot-interactive-guides.summary
+badge:
+  uid: learn.wwl.security-copilot-interactive-guides.badge
