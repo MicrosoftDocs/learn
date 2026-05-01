@@ -29,7 +29,7 @@ A separate default weekly assessment covers Microsoft Fabric workspaces. Fabric 
 
 When oversharing risk is concentrated in locations outside the top 100, or when you need item-level visibility into what's being shared and to whom, create a custom assessment:
 
-1. Navigate to **DSPM (preview)** > **Discover** > **Data risk assessments**.
+1. Navigate to **DSPM** > **Discover** > **Data risk assessments**.
 1. Select **Create custom assessment**.
 1. Configure the assessment parameters, selecting users, data sources, or specific SharePoint sites.
 1. Choose the scan level. Selecting **Item-level** scanning enables remediation actions on individual overshared items rather than only at the site level.
