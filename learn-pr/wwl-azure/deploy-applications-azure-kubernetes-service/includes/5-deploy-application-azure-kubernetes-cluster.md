@@ -26,7 +26,7 @@ Stateful workloads that require stable network identities, ordered deployment or
 
 Most stateless applications in AKS should be managed by Deployments rather than as individually scheduled pods. Kubernetes can monitor Deployment health and status to ensure that the required number of replicas run within the cluster. When scheduled individually, pods don't have a controller to create a replacement if the pod is deleted or the node fails. The kubelet might restart containers on the same node according to the pod's restart policy, but Kubernetes doesn't recreate the pod elsewhere. In addition, Deployments support controlled rollouts and rollbacks.
 
-To help define the Deployment, you use a manifest file in YAML format. You reference the manifest file when running the `kubectl create` or `kubectl apply` commands. For more information, see [AKS cluster and workload concepts](https://learn.microsoft.com/azure/aks/concepts-clusters-workloads).
+To help define the Deployment, you use a manifest file in YAML format. You reference the manifest file when running the `kubectl create` or `kubectl apply` commands. For more information, see [AKS cluster and workload concepts](/azure/aks/concepts-clusters-workloads).
 
 ### Deploy AKS workloads with Helm
 

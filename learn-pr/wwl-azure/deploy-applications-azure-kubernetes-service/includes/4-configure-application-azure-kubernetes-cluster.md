@@ -4,13 +4,13 @@ AKS supports both stateless and stateful workloads. Stateful workloads typically
 
 ### Select the right storage service
 
-When choosing the optimal storage for AKS containerized workloads, review [AKS storage concepts](https://learn.microsoft.com/azure/aks/concepts-storage) and choose from the following options:
+When choosing the optimal storage for AKS containerized workloads, review [AKS storage concepts](/azure/aks/concepts-storage) and choose from the following options:
 
 - **Application-level access to structured or semi-structured data**. For structured or semi-structured data, use a platform managed database, such as Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure Cosmos DB.
 - **File-level access to data**. For shared application data that requires high performance, use Azure NetApp Files or Azure Files SSD provisioned v2 shares (`PremiumV2_LRS` or `PremiumV2_ZRS`). The earlier `Premium_LRS` and `Premium_ZRS` SSD shares are still supported, but provisioned v2 is recommended for new deployments. For shared data that requires moderate performance, use Azure Files HDD pay-as-you-go or HDD provisioned v2 shares.
 - **Block-level access to data (self-managed)**. For applications requiring consistently low latency, high IOPS, and high throughput, use Azure Premium SSD, Azure Premium SSD v2, or Azure Ultra Disk Storage. These options provide flexibility when you want to manage storage characteristics yourself.
 - **Object-level access to data**. For large unstructured data, interact with Azure Blob Storage directly, or mount Blob Storage by using the Azure Blob CSI driver with NFS v3.0 or BlobFuse.
-- **Block-level access to data (fully managed)**. For a fully managed, cloud-based volume management and orchestration solution, consider [Azure Container Storage](https://learn.microsoft.com/azure/storage/container-storage/container-storage-introduction). It integrates with Kubernetes, allowing dynamic and automatic provisioning of persistent volumes. Azure Container Storage 2.0.x supports local NVMe disks; 2.1.x and later add support for Azure Elastic SAN. Use Azure Container Storage 2.1.x or later for local NVMe or Azure Elastic SAN, and a supported 1.x release for Azure Disks, because the 2.x line doesn't support Azure Disks.
+- **Block-level access to data (fully managed)**. For a fully managed, cloud-based volume management and orchestration solution, consider [Azure Container Storage](/azure/storage/container-storage/container-storage-introduction). It integrates with Kubernetes, allowing dynamic and automatic provisioning of persistent volumes. Azure Container Storage 2.0.x supports local NVMe disks; 2.1.x and later add support for Azure Elastic SAN. Use Azure Container Storage 2.1.x or later for local NVMe or Azure Elastic SAN, and a supported 1.x release for Azure Disks, because the 2.x line doesn't support Azure Disks.
 
 ### Plan for pod volumes
 

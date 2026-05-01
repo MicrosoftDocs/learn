@@ -2,10 +2,10 @@ You can apply and enforce security settings on pods hosted in Azure Kubernetes S
 
 ### Explore Azure Policy add-on for AKS
 
-[Azure Policy for Kubernetes](https://learn.microsoft.com/azure/governance/policy/concepts/policy-for-kubernetes) extends Gatekeeper v3, an admission controller webhook for Open Policy Agent (OPA), to apply at-scale enforcements and safeguards in a centralized, consistent manner. Current Azure Policy add-on versions still use Gatekeeper v3. On supported add-on and Kubernetes versions, the add-on can also generate Kubernetes-native ValidatingAdmissionPolicy (VAP) resources for Common Expression Language (CEL)-based policies. Azure Policy makes it possible to manage and report on the compliance state of your AKS environment.
+[Azure Policy for Kubernetes](/azure/governance/policy/concepts/policy-for-kubernetes) extends Gatekeeper v3, an admission controller webhook for Open Policy Agent (OPA), to apply at-scale enforcements and safeguards in a centralized, consistent manner. Current Azure Policy add-on versions still use Gatekeeper v3. On supported add-on and Kubernetes versions, the add-on can also generate Kubernetes-native ValidatingAdmissionPolicy (VAP) resources for Common Expression Language (CEL)-based policies. Azure Policy makes it possible to manage and report on the compliance state of your AKS environment.
 
 > [!NOTE]
-> You can implement namespace-level security policies for individual AKS clusters (without relying on Azure Policy) by using [Pod Security Admission](https://learn.microsoft.com/azure/aks/use-psa). Pod Security Admission is enabled by default in AKS clusters running Kubernetes version 1.23 or later, but AKS doesn't enforce baseline or restricted policies on namespaces automatically. To apply a profile, label the namespace (for example, `pod-security.kubernetes.io/enforce=restricted`). PSA replaces the Kubernetes PodSecurityPolicy feature, which was deprecated in Kubernetes 1.21 and removed in Kubernetes 1.25. In enterprise scenarios, you should consider using Azure Policy-based policies instead.
+> You can implement namespace-level security policies for individual AKS clusters (without relying on Azure Policy) by using [Pod Security Admission](/azure/aks/use-psa). Pod Security Admission is enabled by default in AKS clusters running Kubernetes version 1.23 or later, but AKS doesn't enforce baseline or restricted policies on namespaces automatically. To apply a profile, label the namespace (for example, `pod-security.kubernetes.io/enforce=restricted`). PSA replaces the Kubernetes PodSecurityPolicy feature, which was deprecated in Kubernetes 1.21 and removed in Kubernetes 1.25. In enterprise scenarios, you should consider using Azure Policy-based policies instead.
 
 To implement Azure Policy for AKS, register the `Microsoft.PolicyInsights` resource provider in the subscription, verify that the cluster runs a supported AKS Kubernetes version, and then install the Azure Policy add-on for AKS. The add-on manages interaction between Azure Policy and Gatekeeper components, including the following tasks:
 
@@ -23,7 +23,7 @@ To install the Azure Policy add-on for AKS, you can use the Azure portal, Azure 
 
 ### Review built-in Azure Policy for AKS initiative and policy definitions targeting pod configurations
 
-Commonly used [Azure Policy built-in initiatives](https://learn.microsoft.com/azure/governance/policy/samples/built-in-initiatives#kubernetes) for AKS targeting pod security include:
+Commonly used [Azure Policy built-in initiatives](/azure/governance/policy/samples/built-in-initiatives#kubernetes) for AKS targeting pod security include:
 
 - Kubernetes cluster pod security baseline standards for Linux-based workloads.
 - Kubernetes cluster pod security restricted standards for Linux-based workloads.
