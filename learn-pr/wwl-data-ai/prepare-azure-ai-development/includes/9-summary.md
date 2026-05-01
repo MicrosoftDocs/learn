@@ -7,6 +7,8 @@
 
 ::: zone-end
 
+::: zone pivot="text"
+
 In this module, you explored some of the key considerations when planning and preparing for AI application development. You also had the opportunity to become familiar with Microsoft Foundry, the preferred platform for developing AI solutions on Azure.
 
 ::: zone-end
