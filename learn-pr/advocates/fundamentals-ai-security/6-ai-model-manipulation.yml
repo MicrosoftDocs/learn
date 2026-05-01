@@ -3,11 +3,11 @@ uid: learn.fundamentals-of-ai-security.ai-model-manipulation
 title: AI model manipulation
 metadata:
   title: AI model manipulation
-  description: Understanding AI model manipulation
-  ms.date: 03/06/2026
+  description: Learn about model poisoning and data poisoning attacks that compromise AI systems during training.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/6-ai-model-manipulation.md)]

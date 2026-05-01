@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-databases.explore-defender-databases-capabilities
+title: Explore Microsoft Defender for Databases capabilities
+metadata:
+  title: Explore Microsoft Defender for Databases Capabilities
+  description: "Explore the Defender for Databases plans, their coverage scope, and the threat types each plan detects across Azure SQL and open-source relational database services."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-defender-databases-capabilities.md)]

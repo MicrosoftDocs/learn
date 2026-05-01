@@ -1,10 +1,10 @@
 Microsoft Defender for Endpoint provides information about forensic artifacts found in the environment. There are specific observable pages for Files, User Accounts, IP Addresses, and Domains.
 
-You're a Security Operations Analyst working at a company that has implemented Microsoft Defender for Endpoint, and your primary job is to remediate incidents.  You're assigned an incident with alerts related to a suspicious PowerShell command line.
+You're a Security Operations Analyst working at a company that implemented Microsoft Defender for Endpoint, and your primary job is to remediate incidents. You're assigned to an incident with alerts related to a suspicious PowerShell command line.
 
-You start by reviewing the incident and understand all the related alerts, devices, and evidence.  The evidence tab shows three files, six processes, and one persistence method.  One of the files has a name you have never seen before.  You open the file page to review everything known about the file.  
+You start by reviewing the incident and understand all the related alerts, devices, and evidence. The evidence tab shows three files, six processes, and one persistence method. One of the files has a name your unfamiliar with. You open the file page to review everything known about the file.  
 
-The file has never been seen in the organization other than this incident. If the situation is malware, it's good to know whether this file impacted only this machine.  You decide to submit a deep analysis on the file to see if the file performs any suspicious activities.  The results show suspicious activity; you then select Add Indicator from the file page to ensure Defender for Endpoint will use the indicator for detections.  
+The file was unknown in the organization before this incident. If the situation is malware, it's good to know whether this file impacted only this machine. You decide to submit a deep analysis on the file to see if the file performs any suspicious activities. The results show suspicious activity; you then select *Add Indicator* from the file page to ensure Defender for Endpoint uses the indicator for detections.  
 
 After completing this module, you'll be able to:
 
@@ -14,4 +14,4 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-Intermediate understanding of Windows 10.
+Intermediate understanding of Windows 10 or later.

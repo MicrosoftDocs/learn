@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-configure-workload-protection-plans.configure-storage-database-plans
+metadata:
+  title: Configure Defender for Storage and Defender for Databases
+  description: Learn how to configure Defender for Storage protection layers including malware scanning, and how to enable and manage the Defender for Databases subplans (four subplans total).
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Configure Defender for Storage and Defender for Databases
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-storage-database-plans.md)]

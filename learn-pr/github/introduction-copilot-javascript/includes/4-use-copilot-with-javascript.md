@@ -45,4 +45,4 @@ Copilot supercharges your productivity but requires some good practices to ensur
 If you're stuck or not getting the results you want, then you can reword the prompt or start writing code for Copilot to autocomplete.
 
 >[!Note]
-> GitHub Copilot uses open files in your text editor as additional context. This is helpful because it provides useful information in addition to the prompt or code you may be writing. If you need GitHub Copilot to provide suggestions based on other files you can open those or use `@workspace` with your prompt when using GitHub Copilot Chat.
+> GitHub Copilot uses open files in your text editor as additional context. This is helpful because it provides useful information in addition to the prompt or code you may be writing. If you need GitHub Copilot to provide suggestions based on other files you can open them when using GitHub Copilot Chat.

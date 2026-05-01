@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-education-ai-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Microsoft Education technology and AI learning concepts" module.
+  ms.date: 04/02/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of Microsoft’s education technology approach?"
+    choices:
+        - content: "Replace all existing institutional systems"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft’s education approach focuses on supporting existing environments rather than replacing all systems."
+        - content: "Support secure modernization and improved learning experiences"
+          isCorrect: true
+          explanation: "Correct. Microsoft’s education approach helps institutions modernize securely while improving learning outcomes."
+        - content: "Limit collaboration tools across institutions"
+          isCorrect: false
+          explanation: "Incorrect. Collaboration is a key component of modern education environments."
+        - content: "Standardize all education environments globally"
+          isCorrect: false
+          explanation: "Incorrect. Microsoft solutions support flexibility across diverse education environments."
+  - content: "Which of the following is one of the four Microsoft education strategy pillars?"
+    choices:
+        - content: "Build custom hardware devices"
+          isCorrect: false
+          explanation: "Incorrect. Hardware development is not one of the four education strategy pillars."
+        - content: "Expand classroom facilities"
+          isCorrect: false
+          explanation: "Incorrect. Physical infrastructure expansion is not part of the strategy pillars."
+        - content: "Secure every institution"
+          isCorrect: true
+          explanation: "Correct. This is one of the four pillars in Microsoft’s education strategy."
+        - content: "Replace legacy networks"
+          isCorrect: false
+          explanation: "Incorrect. While modernization may include infrastructure updates, this is not one of the defined pillars."
+  - content: "Why do institutions evaluate technology decisions based on broader goals?"
+    choices:
+        - content: "To reduce the number of available tools"
+          isCorrect: false
+          explanation: "Incorrect. Institutions evaluate technology to improve effectiveness, not reduce options."
+        - content: "To ensure technology supports learning outcomes and operational needs"
+          isCorrect: true
+          explanation: "Correct. Technology decisions align with institutional priorities and long-term goals."
+        - content: "To eliminate cloud services"
+          isCorrect: false
+          explanation: "Incorrect. Cloud services often support modernization and scalability."
+        - content: "To standardize teaching methods"
+          isCorrect: false
+          explanation: "Incorrect. Technology supports flexibility in teaching approaches."
+  - content: "How can integrated technology platforms benefit education institutions?"
+    choices:
+        - content: "By limiting access to collaboration tools"
+          isCorrect: false
+          explanation: "Incorrect. Integrated platforms typically enhance collaboration."
+        - content: "By creating fragmented systems"
+          isCorrect: false
+          explanation: "Incorrect. Integration reduces fragmentation."
+        - content: "By simplifying management and improving user experiences"
+          isCorrect: true
+          explanation: "Correct. Integrated platforms reduce complexity and improve consistency."
+        - content: "By reducing student access to devices"
+          isCorrect: false
+          explanation: "Incorrect. Modern platforms aim to expand access."
+  - content: "Which scenario best represents responsible AI adoption in education?"
+    choices:
+        - content: "AI replaces all instructor-created content"
+          isCorrect: false
+          explanation: "Incorrect. Responsible AI supports educators, not replaces them."
+        - content: "AI tools are used without oversight"
+          isCorrect: false
+          explanation: "Incorrect. Responsible AI includes governance and human oversight."
+        - content: "AI assists educators while maintaining human review"
+          isCorrect: true
+          explanation: "Correct. Responsible AI supports efficiency while maintaining instructional quality."
+        - content: "AI limits collaboration between students"
+          isCorrect: false
+          explanation: "Incorrect. AI can support collaboration and engagement."

@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.provide-prompt-engineering-guidelines-techniques
+title: "Provide prompt engineering guidelines and techniques"
+metadata:
+  title: "Provide Prompt Engineering Guidelines and Techniques"
+  description: "Learn to design, evaluate, and apply prompt engineering techniques for AI solutions. Improve accuracy, reliability, and business value with advanced methods."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/12-provide-prompt-engineering-guidelines-techniques.md)]

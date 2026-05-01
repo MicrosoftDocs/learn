@@ -2,7 +2,7 @@
 
 The pipelines (data-driven workflows) in Azure Data Factory typically perform the following four steps:
 
-![Data Factory process](../media/data-driven-workflow.png)
+![Diagram showing the Data Factory process.](../media/data-driven-workflow.png)
 
 ## Connect and collect
 
@@ -12,9 +12,11 @@ The first step in building an orchestration system is to define and connect all 
 
 Compute services such as Databricks and Machine Learning can be used to prepare or produce transformed data on a maintainable and controlled schedule to feed production environments with cleansed and transformed data. In some instances, you may even augment the source data with additional data to aid analysis, or consolidate it through a normalization process to be used in a Machine Learning experiment as an example.
 
-## Publish
+## CI/CD and publish
 
-After the raw data has been refined into a business-ready consumable form from the transform and enrich phase, you can load the data into Azure Data Warehouse, Azure SQL Database, Azure Cosmos DB, or whichever analytics engine your business users can point to from their business intelligence tools
+After the raw data has been refined into a business-ready consumable form from the transform and enrich phase, you can load the data into Microsoft Fabric, Azure SQL Database, Azure Cosmos DB, or whichever analytics engine your business users can point to from their business intelligence tools.
+
+Azure Data Factory provides full support for CI/CD of your data pipelines using Azure DevOps and GitHub. Source control integration allows you to develop pipelines incrementally across environments—from development through to production—and publish changes in a controlled, auditable way.
 
 ## Monitor
 

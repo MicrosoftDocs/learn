@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.windows-ecosystems-modern-work.management-security-scale-windows
+title: Management, security, and scale in Windows
+metadata:
+  title: Management, Security, And Scale In Windows
+  description: 'This content is part of the "Windows ecosystems for modern work: The Windows advantage" module.'
+  ms.date: 04/08/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-management-security-scale-windows.md)]
+

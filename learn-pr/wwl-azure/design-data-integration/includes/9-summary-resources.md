@@ -12,24 +12,15 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with Azure documentation
 
-- Read about [Azure Data Factory](https://azure.microsoft.com/services/data-factory/).
-- Read about [Azure Databricks](https://azure.microsoft.com/services/databricks/).
-- Read about [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/).
+- Read about [Azure Data Factory](/azure/data-factory/).
+- Read about [Azure Databricks](/azure/databricks/).
+- Read about [Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction).
 - Examine the [Azure Synapse SQL architecture](/azure/synapse-analytics/sql/overview-architecture).
-- Get an [overview of Azure Synapse Link for Azure Cosmos DB](/azure/cosmos-db/synapse-link).
-- Understand [Analytics end-to-end with Azure Synapse](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end?tabs=portal).
-- Understand [Transact-SQL features supported in Azure Synapse SQL](/azure/synapse-analytics/sql/overview-features).
-- Understand [stream processing](/training/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing).
-- Get an [overview of Azure Stream Analytics Cluster](/azure/stream-analytics/cluster-overview).
 
 ## Learn more with self-paced training
 
-- Use [data integration at scale with Azure Data Factory](/training/paths/data-integration-scale-azure-data-factory).
-- Discover [Azure database and analytics services](/training/modules/azure-database-fundamentals).
-- Review [concepts of data analytics](/training/modules/explore-concepts-of-data-analytics).
-- Work with [data streams by using Azure Stream Analytics](/training/modules/introduction-to-data-streaming).
+- [Explore Azure Databricks](/training/wwl-databricks/explore-azure-databricks/) for data analytics using Apache Spark.
 
-## Learn more with optional hands-on exercises
+- Review [Introduction to Azure Data Lake Storage Gen2](/training/modules/introduction-to-azure-data-lake-storage/) a scalable, secure, cloud-based solution for data lake storage.
 
-- Explore [Azure Databricks (interactive exercise)](/training/modules/describe-azure-databricks). *This module requires an Azure subscription with administrative access permissions*.
-- Explore [Azure Synapse Analytics (interactive exercise)](/training/modules/introduction-azure-synapse-analytics). *This module requires an Azure subscription with administrative access permissions*.
+

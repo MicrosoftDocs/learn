@@ -4,36 +4,25 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/10/2026
+  ms.date: 04/10/2026
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "You want to use Azure Language to determine the key talking points in a text document. Which feature of the service should you use?"
+  - content: "You need to analyze text where the same input must return structured results based on statistical techniques. Which approach is most appropriate?"
     choices:
-    - content: "Sentiment analysis"
+    - content: "The OpenAI responses API, because it can follow natural language instructions."
       isCorrect: false
-      explanation: "Incorrect. Sentiment analysis returns a numeric score indicating how positive or negative the text is."
-    - content: "Key phrase extraction"
+      explanation: "Incorrect. The OpenAI responses API generates text probabilistically, so results can vary between calls — which is unsuitable for pipelines that require consistent output."
+    - content: "The Azure Language SDK, because it returns deterministic, structured output."
       isCorrect: true
-      explanation: "Correct. Key phrases can be used to identify the main talking points in a text document."
-    - content: "Entity detection"
+      explanation: "Correct. The Azure Language SDK uses purpose-built analyzers that return consistent, structured results for the same input, making it well-suited for automated pipelines."
+    - content: "The chat playground in Foundry, because it supports follow-up questions."
       isCorrect: false
-      explanation: "Incorrect. Entity detection identifies specific types of entity in the document, not the main talking points."
-  - content: "You use Azure Language to perform sentiment analysis on a sentence. The sentiment scores returned are: 0.04 positive, 0.36 neutral, and 0.60 negative. What do these scores indicate about the sentence sentiment?"
-    choices:
-    - content: "The document is positive."
-      isCorrect: false
-      explanation: "Incorrect. The sentiment is most likely the type with the highest sentiment score."
-    - content: "The document is neutral."
-      isCorrect: false
-      explanation: "Incorrect. The sentiment is most likely the type with the highest sentiment score."
-    - content: "The document is negative."
-      isCorrect: true
-      explanation: "Correct. The sentiment is most likely the type with the highest sentiment score, in this case 0.60 negative."
+      explanation: "Incorrect. The chat playground is an interactive exploration tool, not a programmatic solution for automated pipelines."
   - content: "What is the purpose of the client object in the Azure Language SDK?"
     choices:
     - content: "It stores the application's user interface settings."
@@ -56,3 +45,4 @@ quiz:
     - content: "To expose Azure Language capabilities to agents through the Model Context Protocol."
       isCorrect: true
       explanation: "Correct. The MCP server allows agents to access Azure Language capabilities in a structured way through the Model Context Protocol."
+ 

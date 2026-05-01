@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "This unit introduces the Explore Security Copilot through interactive guides module and outlines the learning objectives."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

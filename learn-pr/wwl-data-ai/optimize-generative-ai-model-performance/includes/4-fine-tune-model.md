@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=891bb369-e767-4fd5-91ed-df8ea8603ef7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Prompt engineering helps you guide the model's behavior, and RAG helps you ground responses in factual data. But sometimes the model still doesn't produce responses with the consistent style, tone, or format you need. When you notice that the model ignores or inconsistently follows your instructions—even with detailed system messages and few-shot examples—it might be time to **fine-tune** the model.
 
 **Fine-tuning** is the process of taking a pretrained language model and further training it on a smaller, task-specific dataset. This adjusts the model's internal weights so that it produces responses that are consistent with the patterns in your training data.
@@ -67,3 +78,5 @@ Fine-tuning introduces costs and complexity that you should evaluate before comm
 - **Model drift**: Specializing too narrowly can make the model less effective at general language tasks outside the fine-tuned domain.
 
 For the travel agency, fine-tuning means every response consistently matches the company's brand voice and formatting guidelines—even without extensive system messages. But the team needs to weigh this benefit against the cost of preparing training data and maintaining the fine-tuned model over time.
+
+::: zone-end

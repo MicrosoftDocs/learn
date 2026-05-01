@@ -5,7 +5,7 @@ metadata:
   description: "Migrate Cassandra workloads to Cosmos DB"
   ms.date: 02/01/2021
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: module-standard-task-based
   ms.service: azure-cosmos-db
   ms.subservice: apache-cassandra
@@ -40,4 +40,4 @@ units:
 - learn.wwl.migrate-cassandra-workloads-cosmos-db.summary
 badge:
   uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.badge
-
+

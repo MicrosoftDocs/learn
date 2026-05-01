@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f31ca70d-666c-4300-aad2-97049d368ef8]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Similarly to its **Speech to text** APIs, Azure Speech in Foundry Tools offers a **Text to speech** API for speech synthesis:
 
 As with speech recognition, in practice most interactive speech-enabled applications are built using the Azure Speech SDK.
@@ -50,3 +59,5 @@ elif speech_synthesis_result.reason == speechsdk.ResultReason.Canceled:
         if cancellation_details.error_details:
             print("Error details: {}".format(cancellation_details.error_details))
 ```
+
+::: zone-end

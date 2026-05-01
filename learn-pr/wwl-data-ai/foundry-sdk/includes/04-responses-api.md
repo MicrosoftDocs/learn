@@ -1,4 +1,15 @@
-The OoenAI *Responses* API brings together capabilities from two previously separate APIs (*ChatCompletions* and *Assistants*) in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. You can access the Responses API through an OpenAI-compatible client using either the Foundry SDK or the OpenAI SDK.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8461a925-d01f-4b56-8092-dfe9c406861e]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+The OpenAI *Responses* API brings together capabilities from two previously separate APIs (*ChatCompletions* and *Assistants*) in a unified experience. It provides stateful, multi-turn response generation, making it ideal for conversational AI applications. You can access the Responses API through an OpenAI-compatible client using either the Foundry SDK or the OpenAI SDK.
 
 ## Understanding the Responses API
 
@@ -334,3 +345,5 @@ asyncio.run(stream_response())
 ```
 
 By using the *Responses* API through the Microsoft Foundry SDK, you can build sophisticated conversational AI applications that maintain context, support multiple model types, and provide a responsive user experience.
+
+::: zone-end

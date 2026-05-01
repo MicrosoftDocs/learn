@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.azure.managing-azure-netapp-files
+metadata:
+  title: Managing Azure NetApp Files
+  description: Build your knowledge and skills in managing Azure NetApp Files. Start with fundamental setup tasks and registration steps needed to deploy and manage Azure NetApp Files resources.
+  brand: azure
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: learning-path
+title: Managing Azure NetApp Files
+summary: |
+  Azure NetApp Files provides enterprise-grade file storage for business-critical workloads on Azure. This learning path equips you with the foundational knowledge and hands-on skills needed to register, set up, and manage Azure NetApp Files resources.
+  
+  Through this learning path, you'll complete essential setup tasks including registering Azure NetApp Files for your subscription, creating NetApp accounts, configuring networking prerequisites, and requesting region access when needed.
+prerequisites: |
+  - An active Azure subscription
+  - Basic understanding of Azure portal navigation
+  - Familiarity with Azure networking concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+  - storage
+modules:
+  - learn.azure.register-and-setup
+trophy:
+  uid: learn.azure.managing-azure-netapp-files.trophy

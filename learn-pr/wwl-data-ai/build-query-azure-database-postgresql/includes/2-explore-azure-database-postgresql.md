@@ -64,4 +64,4 @@ When configuring Azure Database for PostgreSQL for your application, consider th
 - [Azure Database for PostgreSQL documentation](/azure/postgresql/)
 - [Service overview](/azure/postgresql/flexible-server/service-overview)
 - [Compute and storage options](/azure/postgresql/flexible-server/concepts-compute-storage)
-- [High availability concepts](/azure/postgresql/flexible-server/concepts-high-availability)
+- [High availability concepts](/azure/postgresql/high-availability/concepts-high-availability)

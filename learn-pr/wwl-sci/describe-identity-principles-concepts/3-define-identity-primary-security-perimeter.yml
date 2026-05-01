@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 11
 content: |
   [!include[](includes/3-define-identity-primary-security-perimeter.md)]

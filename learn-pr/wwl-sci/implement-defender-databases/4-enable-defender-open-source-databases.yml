@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-databases.enable-defender-open-source-databases
+title: Enable Defender for open-source relational databases
+metadata:
+  title: Enable Defender for Open-Source Relational Databases
+  description: "Enable Defender for open-source relational databases to protect Azure Database for PostgreSQL, MySQL, and MariaDB, and understand the coverage boundaries and limitations of this plan."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-enable-defender-open-source-databases.md)]

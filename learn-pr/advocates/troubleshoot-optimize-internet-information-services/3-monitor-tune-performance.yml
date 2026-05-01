@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance.monitor-tune-performance"
+title: "Monitor and tune IIS performance"
+metadata:
+  title: "Monitor and Tune IIS Performance"
+  description: "Learn how to monitor and tune IIS performance using performance counters."
+  ms.date: "04/12/2026"
+  author: "Orin-Thomas"
+  ms.author: "orthomas"
+  ms.topic: "unit"
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-monitor-tune-performance.md)]

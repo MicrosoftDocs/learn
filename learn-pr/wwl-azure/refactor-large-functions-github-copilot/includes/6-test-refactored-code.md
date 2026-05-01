@@ -10,13 +10,13 @@ Use GitHub Copilot to create tests throughout the refactoring process:
 
 Here are some examples prompts you can use to generate unit tests:
 
-- `@workspace /tests Generate unit tests for the ValidateOrderItems method I'm about to extract`
+- `#codebase /tests Generate unit tests for the ValidateOrderItems method I'm about to extract`
 - `Create parameterized tests for CalculateDiscounts with edge cases`
 - `Generate test cases for all public methods in the refactored OrderProcessor class`
 
 Here are some examples prompts you can use to generate integration tests:
 
-- `@workspace Generate integration tests for the refactored ProcessOrder method that verify all helper methods are called in the correct sequence`
+- `#codebase Generate integration tests for the refactored ProcessOrder method that verify all helper methods are called in the correct sequence`
 - `Create integration tests for the OrderProcessor class focusing on the interaction between ValidateOrder, CalculateTotal, and ApplyDiscounts methods`
 - `Generate tests that verify error handling flows correctly through the extracted validation methods`
 
@@ -78,7 +78,7 @@ The following coverage targets help ensure that refactored code remains well-tes
 
 Ask Copilot to identify gaps while refactoring:
 
-- `@workspace What edge cases are not covered in the current test suite?`
+- `#codebase What edge cases are not covered in the current test suite?`
 - `Suggest test cases for error handling in the methods I'm extracting`
 - `Identify untested code paths in the extracted helper functions`
 - `List all exception scenarios that should be tested`

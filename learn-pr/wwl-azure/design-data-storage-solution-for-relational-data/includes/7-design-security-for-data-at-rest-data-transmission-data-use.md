@@ -18,16 +18,16 @@ Data exists in three basic states: data at rest, data in motion, and data in pro
 There are different encryption methods for each of data state. The following table summarizes the methods. 
 
 | Data state | Encryption method | Encryption level |
-| --- | --- |
-| **Data&nbsp;at&nbsp;rest** | Transparent data encryption (TDE) | Always encrypted. |
-| **Data&nbsp;in&nbsp;motion** | Secure Socket Layers and Transport Layer Security (SSL/TLS) | Always encrypted. |
-| **Data&nbsp;in&nbsp;process** | Dynamic data masking | Specific data is unencrypted. Remaining data is encrypted. |
+| --- | --- | --- |
+| **Data at rest** | Transparent data encryption (TDE) | Always encrypted. |
+| **Data in motion** | Transport Layer Security (TLS 1.2 or higher) | Always encrypted. |
+| **Data in process** | Dynamic data masking | Specific data is unencrypted. Remaining data is encrypted. |
 
 ### Things to know about data encryption
 
 - Transparent data encryption (TDE) protects Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics against the threat of malicious offline activity by encrypting data at rest. TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. TDE is enabled by default to all newly deployed Azure SQL Databases. 
 
-- Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics enforce Secure Socket Layers and Transport Layer Security (SSL/TLS) encryption always for all connections. This level of encryption ensures all data is encrypted "in transit" between the client and server. Transport Layer Security (TLS) is used by all drivers that Microsoft supplies or supports for connecting to databases in Azure SQL Database or Azure SQL Managed Instance. 
+- Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics enforce Transport Layer Security (TLS) 1.2 or higher for all connections. TLS 1.0 and TLS 1.1 are retired and no longer supported. This level of encryption ensures all data is encrypted "in transit" between the client and server. Transport Layer Security is used by all drivers that Microsoft supplies or supports for connecting to databases in Azure SQL Database or Azure SQL Managed Instance. 
 
 - Data-in-use employs a policy-based security feature called _dynamic data masking_. This feature hides the sensitive data in the result set of a query over designated database fields, while the data in the database remains unchanged. Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal consequence on the application layer.
 

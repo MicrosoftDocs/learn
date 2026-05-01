@@ -55,9 +55,9 @@ _Figure 7: Options for scheduling a reduce task, $R$, with feeding nodes TT1 and
 1. _S. Ibrahim, H. Jin, L. Lu, S. Wu, B. He, and L. Qi (Dec. 2010). [LEEN: Locality/Fairness-Aware Key Partitioning for MapReduce in the Cloud](https://www.researchgate.net/publication/221276678_LEEN_LocalityFairness-Aware_Key_Partitioning_for_MapReduce_in_the_Cloud) CloudCom_
 2. _M. Hammoud and M. F. Sakr (2011). [Locality-Aware Reduce Task Scheduling for MapReduce](https://web2.qatar.cmu.edu/~mhhammou/mhh_msakr_LARTS_CloudCom2011_paper.pdf) CloudCom_
 3. _M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). [Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic](https://dl.acm.org/doi/10.1109/CLOUD.2012.92) CLOUD_
-4. _[Hadoop scheduling](https://developer.ibm.com/articles/os-hadoop-scheduling/) IBM_
+4. _[Hadoop scheduling](https://www.ibm.com/docs/en/spectrum-symphony/7.3.2?topic=distribution-resource-scheduling-plans)     IBM_
 5. _[Hadoop fair scheduler](https://hadoop.apache.org/docs/r1.2.1/fair_scheduler.html) Hadoop_
-6. _B. Thirumala Rao and L. S. S. Reddy (November 2011). [Survey on Improved Scheduling in Hadoop MapReduce in Cloud Environments](https://arxiv.org/ftp/arxiv/papers/1207/1207.0780.pdf) International Journal of Computer Applications_
+6. _B. Thirumala Rao and L. S. S. Reddy (November 2011). [Survey on Improved Scheduling in Hadoop MapReduce in Cloud Environments](https://arxiv.org/abs/1207.0780) International Journal of Computer Applications_
 7. _M. Zaharia, D. Borthakur, J. S. Sarma, K. Elmeleegy, S. Shenker, and I. Stoica (April 2010). [Delay Scheduling: A Simple Technique for Achieving Locality and Fairness in Cluster Scheduling](https://dl.acm.org/doi/10.1145/1755913.1755940) EuroSys, pp. 265-278_
 8. _[Mahout Homepage](https://mahout.apache.org/) Apache Mahout_
 9. _S. Huang, J. Huang, J. Dai, T. Xie, and B. Huang (2010). [The HiBench Benchmark Suite: Characterization of the MapReduce-Based Data Analysis](https://ieeexplore.ieee.org/document/5452747) ICDEW_
@@ -71,9 +71,9 @@ _Figure 7: Options for scheduling a reduce task, $R$, with feeding nodes TT1 and
 [^1]: <https://www.researchgate.net/publication/221276678_LEEN_LocalityFairness-Aware_Key_Partitioning_for_MapReduce_in_the_Cloud> "S. Ibrahim, H. Jin, L. Lu, S. Wu, B. He, and L. Qi (Dec. 2010). *LEEN: Locality/Fairness-Aware Key Partitioning for MapReduce in the Cloud* CloudCom"
 [^2]: <https://web2.qatar.cmu.edu/~mhhammou/mhh_msakr_LARTS_CloudCom2011_paper.pdf> "M. Hammoud and M. F. Sakr (2011). *Locality-Aware Reduce Task Scheduling for MapReduce* CloudCom"
 [^3]: <https://dl.acm.org/doi/10.1109/CLOUD.2012.92> "M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). *Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic* CLOUD"
-[^4]: <https://developer.ibm.com/articles/os-hadoop-scheduling/> "*Hadoop scheduling* IBM"
+[^4]: <https://www.ibm.com/docs/en/spectrum-symphony/7.3.2?topic=distribution-resource-scheduling-plans> "*Hadoop scheduling* IBM"
 [^5]: <https://hadoop.apache.org/docs/r1.2.1/fair_scheduler.html> "*Hadoop fair scheduler* Apache Hadoop"
-[^6]: <https://arxiv.org/ftp/arxiv/papers/1207/1207.0780.pdf> "B. Thirumala Rao and L. S. S. Reddy (November 2011). *Survey on Improved Scheduling in Hadoop MapReduce in Cloud Environments* International Journal of Computer Applications"
+[^6]: <https://arxiv.org/abs/1207.0780> "B. Thirumala Rao and L. S. S. Reddy (November 2011). *Survey on Improved Scheduling in Hadoop MapReduce in Cloud Environments* International Journal of Computer Applications"
 [^7]: <https://dl.acm.org/doi/10.1145/1755913.1755940> "M. Zaharia, D. Borthakur, J. S. Sarma, K. Elmeleegy, S. Shenker, and I. Stoica (April 2010). *Delay Scheduling: A Simple Technique for Achieving Locality and Fairness in Cluster Scheduling* EuroSys, pp. 265-278"
 [^8]: <https://mahout.apache.org/> "*Mahout Homepage* Apache Mahout"
 [^9]: <https://ieeexplore.ieee.org/document/5452747> "S. Huang, J. Huang, J. Dai, T. Xie, and B. Huang (2010). *The HiBench Benchmark Suite: Characterization of the MapReduce-Based Data Analysis* ICDEW"

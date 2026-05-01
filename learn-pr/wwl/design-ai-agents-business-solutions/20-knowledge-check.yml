@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which Microsoft Responsible AI tenet ensures that AI systems treat all people fairly and avoid harmful biases?"
+    choices:
+    - content: "Privacy & Security"
+      isCorrect: false
+      explanation: "Incorrect. Privacy & Security focuses on protecting data and ensuring secure systems, not fairness."
+    - content: "Fairness"
+      isCorrect: true
+      explanation: "Correct. The Fairness tenet is focused on ensuring equitable outcomes across demographics and avoiding harmful biases in AI systems."
+    - content: "Reliability & Safety"
+      isCorrect: false
+      explanation: "Incorrect. Reliability & Safety ensures that AI systems operate reliably and safely, not necessarily addressing fairness."
+    - content: "Transparency"
+      isCorrect: false
+      explanation: "Incorrect. Transparency focuses on making AI systems understandable and clear, not fairness."
+  - content: "When customizing Copilot in Dynamics 365 Customer Service, which configuration step ensures that Copilot includes the correct organizational vocabulary in its summaries?"
+    choices:
+    - content: "Changing the CRM theme color"
+      isCorrect: false
+      explanation: "Incorrect. Changing the CRM theme color does not affect Copilot's summaries or organizational vocabulary."
+    - content: "Managing fields used in case summaries"
+      isCorrect: true
+      explanation: "Correct. Selecting and mapping the appropriate fields for Copilot to reference ensures that the correct business terms and vocabulary are used in generated summaries."
+    - content: "Editing agent permissions only"
+      isCorrect: false
+      explanation: "Incorrect. Editing agent permissions does not directly impact the organizational vocabulary used in Copilot summaries."
+    - content: "Installing new entities manually"
+      isCorrect: false
+      explanation: "Incorrect. Installing new entities manually does not ensure the inclusion of organizational vocabulary in Copilot summaries."
+  - content: "Which authentication method is required for custom connectors used with Copilot in Dynamics 365 Sales?"
+    choices:
+    - content: "Basic Auth"
+      isCorrect: false
+      explanation: "Incorrect. Basic Auth is not the required authentication method for custom connectors in Dynamics 365 Sales."
+    - content: "API Key"
+      isCorrect: false
+      explanation: "Incorrect. API Key authentication is not supported for custom connectors in Dynamics 365 Sales."
+    - content: "OAuth 2.0 using Microsoft Entra ID"
+      isCorrect: true
+      explanation: "Correct. Custom connectors must use OAuth 2.0 with Microsoft Entra ID as the identity provider for secure authentication."
+    - content: "Anonymous access"
+      isCorrect: false
+      explanation: "Incorrect. Anonymous access is not a secure authentication method for custom connectors in Dynamics 365 Sales."
+  - content: "What is the main benefit of mapping organizational vocabulary and processes into structured fields for Copilot in Dynamics 365?"
+    choices:
+    - content: "It allows agents to change their workflow at will"
+      isCorrect: false
+      explanation: "Incorrect. Mapping organizational vocabulary does not enable agents to change their workflow at will."
+    - content: "It ensures AI-generated insights and recommendations reflect the organization's unique operations, tone, and compliance requirements"
+      isCorrect: true
+      explanation: "Correct. Mapping organizational vocabulary and processes into structured fields allows Copilot to generate content that accurately aligns with internal business rules, terminology, and compliance needs."
+    - content: "It enables the use of third-party connectors"
+      isCorrect: false
+      explanation: "Incorrect. Mapping organizational vocabulary does not directly enable the use of third-party connectors."
+    - content: "It updates the Dynamics 365 interface theme"
+      isCorrect: false
+      explanation: "Incorrect. Mapping organizational vocabulary does not update the Dynamics 365 interface theme."

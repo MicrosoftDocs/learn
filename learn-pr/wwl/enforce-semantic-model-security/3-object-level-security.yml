@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-semantic-model-security.object-level-security
+title: Apply object-level security
+metadata:
+  title: Apply Object-Level Security
+  description: "Learn how to configure object-level security to hide tables and columns from unauthorized roles in Power BI semantic models."
+  ms.date: 04/15/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-object-level-security.md)]

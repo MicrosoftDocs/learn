@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-ai-dynamics-365-apps-customer-experience-service
+title: "Design ALM processes for AI in Dynamics 365 apps"
+metadata:
+  title: "Design ALM Processes for AI in Dynamics 365 Apps"
+  description: "Learn to design ALM processes for AI in Dynamics 365 apps, ensuring reliability, governance, compliance, and iterative innovation."
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-design-alm-process-ai-dynamics-365-apps-customer-experience-service.md)]

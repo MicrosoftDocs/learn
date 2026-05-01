@@ -48,10 +48,10 @@ This test is not quite right, it is not including cities that doesn't exist. Onl
 
 ### Step 3: Use an agent to write the documentation
 
-Finally, use the `@workspace` agent to write project documentation and details on how to run the project itself. Open the `README.md` file and use the following prompt in GitHub Copilot Chat:
+Finally, use GitHub Copilot Chat Agent mode to write project documentation and details on how to run the project itself. Open the `README.md` file and use the following prompt in GitHub Copilot Chat:
 
 ```text
-@workspace I want to document how to run this project so that other developers can get started quickly by reading the README.md file.
+I want to document how to run this project so that other developers can get started quickly by reading the README.md file.
 ```
 
 You should get a response that helps you update the README.md file with the necessary information to run the project.

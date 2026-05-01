@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.surface-portal-tenant-setup.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Microsoft tenant setup for Surface Portal access" module.
+  ms.date: 04/14/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What must you verify before accessing either the Surface Management Portal or Surface Support Portal?"
+    choices:
+        - content: "That Surface devices are already enrolled in Intune"
+          isCorrect: false
+          explanation: "Incorrect. Device enrollment isn't required before validating tenant availability."
+        - content: "That your organization has a valid Microsoft tenant"
+          isCorrect: true
+          explanation: "Correct. Access to both Surface portals requires confirming that a Microsoft tenant exists."
+        - content: "That support roles have already been assigned"
+          isCorrect: false
+          explanation: "Incorrect. Roles are assigned after the tenant is validated and the Global Administrator is identified."
+        - content: "That billing and shipping addresses are configured"
+          isCorrect: false
+          explanation: "Incorrect. Address management is a role-based task and not a prerequisite for portal access."
+  - content: "If a valid Microsoft tenant already exists for your organization, what is the recommended next step?"
+    choices:
+        - content: "Create a new tenant through the Surface Support Portal"
+          isCorrect: false
+          explanation: "Incorrect. The guidance states that you shouldn't create a new tenant if one already exists."
+        - content: "Identify the Global Administrator and request the appropriate access"
+          isCorrect: true
+          explanation: "Correct. The Global Administrator can sign in, create users, and assign the required roles."
+        - content: "Assign yourself the Global Administrator role"
+          isCorrect: false
+          explanation: "Incorrect. You must already have Global Administrator permissions to assign roles."
+        - content: "Proceed directly to assigning Surface roles in Intune"
+          isCorrect: false
+          explanation: "Incorrect. You need appropriate admin access before assigning roles."
+  - content: "Which role is recommended for comprehensive access to both the Surface Management Portal and Surface Support Portal?"
+    choices:
+        - content: "Global Reader"
+          isCorrect: false
+          explanation: "Incorrect. This role provides read-only access and can't manage service or replacement requests."
+        - content: "Service Support Admin"
+          isCorrect: false
+          explanation: "Incorrect. This role can't manage shipping addresses and doesn't provide full access."
+        - content: "Microsoft Hardware Warranty Administrator"
+          isCorrect: true
+          explanation: "Correct. This role is recommended for overseeing service requests, replacements, and shipping and billing updates across both portals."
+        - content: "Microsoft Hardware Warranty Specialist"
+          isCorrect: false
+          explanation: "Incorrect. This role doesn't allow management of billing or shipping addresses."
+  - content: "Which capability isn't available to a user assigned the Microsoft Hardware Warranty Specialist role?"
+    choices:
+        - content: "Viewing service requests"
+          isCorrect: false
+          explanation: "Incorrect. The Specialist role allows users to view service requests."
+        - content: "Creating or managing device replacement requests"
+          isCorrect: false
+          explanation: "Incorrect. The Specialist role includes permission to create and manage replacements."
+        - content: "Adding, editing, or deleting ship-to addresses"
+          isCorrect: true
+          explanation: "Correct. This role doesn't include permissions to manage shipping addresses."
+        - content: "Read-only access to the Microsoft 365 tenant outside the support portals"
+          isCorrect: false
+          explanation: "Incorrect. This read-only access is included with the Specialist role."
+  - content: "What additional role is required for a Microsoft Hardware Warranty Administrator to access the Surface Management Portal only?"
+    choices:
+        - content: "Service Support Admin"
+          isCorrect: false
+          explanation: "Incorrect. This role focuses on support tasks and doesn't provide tenant visibility."
+        - content: "Billing Admin"
+          isCorrect: false
+          explanation: "Incorrect. This role manages billing and shipping but doesn't grant Entra visibility."
+        - content: "Global Reader"
+          isCorrect: true
+          explanation: "Correct. Global Reader provides read-only visibility into Microsoft Entra, which is required for Surface Management Portal access."
+        - content: "Global Administrator"
+          isCorrect: false
+          explanation: "Incorrect. Global Administrator isn't required and is discouraged for routine Surface management tasks."

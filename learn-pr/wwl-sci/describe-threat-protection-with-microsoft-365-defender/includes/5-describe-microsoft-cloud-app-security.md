@@ -28,7 +28,7 @@ Defender for Cloud Apps connects to SaaS apps to scan for files containing sensi
 - Block downloads to an unmanaged device
 - Remove external collaborators on confidential files
 
-The Defender for Cloud Apps integration with Microsoft Purview also enables security teams to leverage out-of-the-box data classification types in their information protection policies and control sensitive information with data loss protection (DLP) features.
+The Defender for Cloud Apps integration with Microsoft Purview also enables security teams to use out-of-the-box data classification types in their information protection policies and control sensitive information with data loss prevention (DLP) features.
 
 #### SaaS Security Posture Management (SSPM)
 
@@ -48,6 +48,12 @@ Defender for Cloud Apps is also integrated directly into Microsoft Defender XDR,
  OAuth, an open standard for token-based authentication and authorization, enables a user's account information to be used by third-party services, without exposing the user's password. Apps that use OAuth often have extensive permissions to access data in other apps on behalf of a user, making OAuth apps susceptible to a compromise.
 
 Defender for Cloud Apps closes the gap on OAuth app security, helping you protect inter-app data exchange with application governance. With Defender for Cloud Apps, you can watch for unused apps and monitor both current and expired credentials to govern the apps used in your organization and maintain app hygiene.
+
+### AI agent protection
+
+As organizations build and deploy custom AI agents using platforms like Microsoft Copilot Studio, new security risks emerge. Attackers can attempt to manipulate these agents through malicious prompt injection, unauthorized tool execution, or by exploiting data sources to escalate privileges or exfiltrate data.
+
+Microsoft Defender for Cloud Apps addresses these risks through AI agent protection capabilities that monitor custom AI agents for suspicious activity. Defender for Cloud Apps detects all custom AI agents created with Microsoft Copilot Studio, integrates their activity data into advanced hunting for proactive threat detection, and collects audit logs to enable ongoing monitoring and alerts. It also provides real-time protection to block suspicious or harmful actions initiated by AI agents. Alerts from AI agent protection are integrated into the Microsoft Defender XDR incidents and alerts environment, giving security teams a unified view across traditional and AI-driven threats.
 
 ### Microsoft Defender for Cloud Apps in the Microsoft Defender portal
 

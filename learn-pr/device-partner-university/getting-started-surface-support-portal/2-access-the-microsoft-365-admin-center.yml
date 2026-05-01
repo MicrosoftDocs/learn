@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-support-portal.access-the-microsoft-365-admin-center
+title: Access the Microsoft 365 Admin Center
+metadata:
+  title: Access The Microsoft 365 Admin Center
+  description: This content is part of the "Getting started with Surface Support Portal" module.
+  ms.date: 04/13/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-access-the-microsoft-365-admin-center.md)]

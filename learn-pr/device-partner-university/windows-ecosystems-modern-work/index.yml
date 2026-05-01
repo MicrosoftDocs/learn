@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.dpu.windows-ecosystems-modern-work
+title: 'Windows ecosystems for modern work: The Windows advantage'
+metadata:
+  title: 'Windows Ecosystems For Modern Work: The Windows Advantage'
+  description: Learn how Windows ecosystems support modern work through integrated productivity, security, management, and AI capabilities across diverse organizational environments.
+  ms.date: 04/08/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-standard-concept-based
+  ms.service: windows-11
+summary: >
+  Learn how Windows ecosystems support modern work through integrated productivity, security, management, and AI capabilities across diverse organizational environments.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/windows-ecosystems-modern-work.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.windows-ecosystems-modern-work.introduction
+  - learn.dpu.windows-ecosystems-modern-work.devices-as-productivity-ecosystems
+  - learn.dpu.windows-ecosystems-modern-work.productivity-collaboration-windows
+  - learn.dpu.windows-ecosystems-modern-work.management-security-scale-windows
+  - learn.dpu.windows-ecosystems-modern-work.ai-modern-windows-ecosystems
+  - learn.dpu.windows-ecosystems-modern-work.knowledge-check
+  - learn.dpu.windows-ecosystems-modern-work.summary
+badge:
+  uid: learn.dpu.windows-ecosystems-modern-work.badge

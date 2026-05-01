@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=55e5ff55-159c-4f64-a706-2930540b45ff]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 The Azure Language MCP server connects AI agents to Azure Language services through the **Model Context Protocol (MCP)**. Before exploring the Language MCP server itself, it helps to understand what MCP is and how it enables agents to use external tools.
 
 ## What is the Model Context Protocol?
@@ -21,17 +31,15 @@ The Azure Language MCP server exposes Azure Language NLP capabilities as tools t
 
 | Capability | Description |
 |---|---|
-| **Named Entity Recognition** | Identifies and categorizes entities in text, such as people, places, organizations, dates, and quantities. |
-| **Sentiment Analysis** | Determines whether text expresses positive, negative, or neutral sentiment, and can extract opinions about specific aspects. |
-| **Summarization** | Generates concise summaries of longer text content. |
-| **Key Phrase Extraction** | Identifies the main concepts and key phrases in text. |
-| **PII Redaction** | Detects and redacts personally identifiable information such as names, addresses, and phone numbers. |
 | **Language Detection** | Identifies the language in which text is written. |
+| **Named Entity Recognition** | Identifies and categorizes entities in text, such as people, places, organizations, dates, and quantities. |
+| **PII Redaction** | Detects and redacts personally identifiable information (PII) such as names, addresses, and phone numbers. |
 | **Text Analytics for Health** | Extracts and labels medical entities (such as diagnoses, medications, and symptoms) from clinical text. |
-| **Conversational Language Understanding** | Interprets user utterances to identify intents and extract entities based on a trained custom model. |
-| **Custom Question Answering** | Returns curated answers to user questions from a configured knowledge base. |
 
-When you connect the Language MCP server to an agent, the agent receives the full list of available tools. Based on the user's prompt, the agent's underlying model decides which tool (or combination of tools) to call. For example, if a user asks "Summarize this article and tell me what people are mentioned," the agent might call both the summarization tool and the named entity recognition tool in the same turn.
+> [!NOTE]
+> Azure Language also provides functionality for sentiment analysis, summarization, key phrase extraction, and other common language-related tasks. These deprecated capabilities are provided to support existing applications.
+
+When you connect the Language MCP server to an agent, the agent receives the full list of available tools. Based on the user's prompt, the agent's underlying model decides which tool (or combination of tools) to call. For example, if a user asks "Determine the language that this article is written in, and tell me what people are mentioned." the agent might call both the language detection tool and the named entity recognition tool in the same turn.
 
 ## How the agent selects tools
 
@@ -55,6 +63,8 @@ https://{foundry-resource-name}.cognitiveservices.azure.com/language/mcp?api-ver
 ```
 
 Replace `{foundry-resource-name}` with the name of your Foundry resource (or Azure Language resource). This endpoint is what you configure when connecting the MCP server to your agent.
+
+::: zone-end
 
 > [!NOTE]
 > Azure Language also provides a local MCP server that you can host in your own environment. For setup guidance, see the [Azure Language MCP Server quickstart](https://github.com/Azure-Samples/ai-language-samples) in the Azure Language samples repository.

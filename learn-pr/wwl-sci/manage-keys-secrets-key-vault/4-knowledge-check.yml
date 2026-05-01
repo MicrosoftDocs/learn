@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-keys-secrets-key-vault.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of managing cryptographic keys and secrets in Azure Key Vault, including HSM protection, Bring Your Own Key (BYOK), autorotation, and dual-credential rotation.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A regulatory compliance assessment requires that encryption keys protecting patient record archives meet FIPS 140-3 Level 3 hardware security requirements. Which Azure Key Vault configuration satisfies this requirement?"
+    choices:
+    - content: "Create RSA keys in an Azure Key Vault Standard vault with software protection."
+      isCorrect: false
+      explanation: "Incorrect. Software-protected keys in a Standard vault are encrypted at rest but processed in software—they don't meet FIPS 140-3 Level 3 hardware validation requirements. HSM-protected keys in a Premium vault are required for this compliance scenario."
+    - content: "Enable purge protection on an Azure Key Vault Standard vault."
+      isCorrect: false
+      explanation: "Incorrect. Purge protection prevents permanent deletion of vault objects during the soft-delete retention period. It has no effect on the hardware security level of stored keys. Purge protection and key protection level are independent settings."
+    - content: "Create RSA-HSM keys in an Azure Key Vault Premium vault."
+      isCorrect: true
+      explanation: "Correct. Hardware Security Module (HSM) protected keys in Azure Key Vault Premium are generated, stored, and processed in hardware security modules validated to FIPS 140-3 Level 3. The Premium SKU is required—Standard vaults support software-protected keys only, which don't meet FIPS 140-3 Level 3 hardware validation."
+    - content: "Import keys using BYOK into an Azure Key Vault Standard vault."
+      isCorrect: false
+      explanation: "Incorrect. The BYOK process transfers key material from a customer-owned HSM into an Azure Key Vault HSM boundary. BYOK requires the Premium SKU—it isn't supported on a Standard vault, which doesn't have HSM-backed key storage."
+  - content: "A security engineer configures an autorotation policy for an RSA encryption key in Azure Key Vault. What happens to data that was encrypted with the previous key version after rotation occurs?"
+    choices:
+    - content: "Previously encrypted data becomes permanently inaccessible and must be re-encrypted before rotation."
+      isCorrect: false
+      explanation: "Incorrect. Key Vault retains all key versions after rotation, so previously encrypted data remains accessible using the older version. Re-encryption is an optional long-term planning activity, not an immediate requirement for continued access."
+    - content: "Previously encrypted data remains accessible because Key Vault retains all key versions."
+      isCorrect: true
+      explanation: "Correct. Key Vault automatically versions keys when rotation occurs and retains all previous versions. Data encrypted with an earlier version can still be decrypted. Applications using versionless key URIs automatically use the latest version for new encryption operations."
+    - content: "Azure automatically re-encrypts all existing data with the new key version during rotation."
+      isCorrect: false
+      explanation: "Incorrect. Key Vault doesn't automatically re-encrypt customer data. Re-encrypting existing data to bring it under a new key version is an application-level responsibility—it isn't performed automatically by the platform during rotation."
+    - content: "Key autorotation requires application downtime to update key version references."
+      isCorrect: false
+      explanation: "Incorrect. Autorotation is designed explicitly to rotate keys without application downtime. Applications that reference keys by their versionless URI automatically receive the latest key version—no application change or restart is required at rotation time."
+  - content: "An Azure Function uses a database connection string stored as a Key Vault secret. A security engineer wants to rotate the connection string without causing application downtime. What rotation pattern should they use?"
+    choices:
+    - content: "Single-credential rotation with immediate atomic secret update."
+      isCorrect: false
+      explanation: "Incorrect. Single-credential rotation creates a brief window between invalidating the old credential and the application picking up the new one. During this gap, authentication fails. For high-availability workloads, this gap is a risk—dual-credential rotation eliminates it entirely."
+    - content: "Key autorotation policy configured on an RSA key."
+      isCorrect: false
+      explanation: "Incorrect. Key autorotation applies to cryptographic keys (RSA, EC) in Key Vault. Database connection strings are secrets, not keys. Secret rotation requires a separate mechanism—typically an Azure Function triggered by the SecretNearExpiry Event Grid event."
+    - content: "Certificate autorenewal with an integrated CA issuer."
+      isCorrect: false
+      explanation: "Incorrect. Certificate autorenewal manages the lifecycle of TLS/SSL certificates stored in Key Vault. It has no mechanism for rotating database connection strings, which are secrets—a different object type with its own rotation patterns."
+    - content: "Dual-credential rotation using two alternating valid connection strings."
+      isCorrect: true
+      explanation: "Correct. Dual-credential rotation maintains two valid credentials simultaneously in both Key Vault and the target system. While the application uses one credential, the other is rotated and stored. The application switches to the new credential via the versionless Key Vault reference before the previous credential is invalidated—eliminating any downtime window."

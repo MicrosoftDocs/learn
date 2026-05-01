@@ -17,10 +17,12 @@ Microsoft Defender for Endpoint includes:
 - **Endpoint detection and response**: Provides advanced attack detections that are near real time and actionable. Security analysts can prioritize alerts, see the full scope of a breach, and take response actions to remediate threats.
 - **Automated investigation and remediation (AIR)**: The technology in automated investigation uses various inspection algorithms and is based on processes that are used by security analysts. AIR capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing security operations to focus on more sophisticated threats and other high-value initiatives.
 - **Microsoft Secure Score for Devices**: Microsoft Secure Score for Devices helps you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
-- **Microsoft Threat Experts**: Microsoft Threat Experts is a managed threat hunting service that provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
+- **Microsoft Defender Experts for Hunting**: Microsoft Defender Experts for Hunting is a managed threat hunting service that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately.
 - **Management and APIs**: Defender for Endpoint offers an API model designed to expose entities and capabilities through a standard Microsoft Entra ID-based authentication and authorization model.
 
 Microsoft Defender for Endpoint also integrates with various components in the Microsoft Defender suite, and with other Microsoft solutions including Intune and Microsoft Defender for Cloud.
+
+Microsoft Defender for Endpoint is an AI-powered endpoint security solution. Microsoft Security Copilot integrates with Defender for Endpoint, enabling security teams to summarize device security posture, investigate alerts faster, and generate threat-hunting queries using natural language. The Copilot integration is covered in more detail in the unit, "Describe Microsoft Security Copilot in Microsoft Defender XDR," included in this module.
 
 Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. Information on what's included in each plan is detailed in the Compare Microsoft Defender for Endpoint plans document linked in the summary and resources unit.
 

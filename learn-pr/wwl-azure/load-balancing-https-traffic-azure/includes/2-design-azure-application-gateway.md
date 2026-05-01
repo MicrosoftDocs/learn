@@ -1,15 +1,23 @@
 
 
 
-The [Azure Application Gateway](/azure/application-gateway/overview) processes network traffic to web apps hosted on a pool of web servers. The processing performed by Azure Application Gateway includes load balancing HTTP traffic and inspecting traffic using a web application firewall. This type of routing is known as application layer (OSI layer 7) load balancing. Azure Application Gateway includes the following features:
+The [Azure Application Gateway](/azure/application-gateway/overview) processes network traffic to web apps hosted on a pool of web servers. The processing performed by Azure Application Gateway includes load balancing HTTP traffic and inspecting traffic using a web application firewall. This type of routing is known as application layer (OSI layer 7) load balancing. A
+
+Azure Application Gateway v2 includes the following features.  
 
 - Support for the HTTP, HTTPS, HTTP/2, and WebSocket protocols.
 - A web application firewall (WAF) to protect against web application vulnerabilities.
-- End-to-end request encryption.
+- SSL/TLS termination at the gateway, offloading encryption overhead from backend servers.
+- End-to-end TLS encryption for compliance scenarios requiring encryption to the backend.
 - Autoscaling to dynamically adjust capacity as your web traffic load change.
 - Connection draining allowing graceful removal of backend pool members during planned service updates.
 - Session stickiness to ensure client requests in the same session are routed to the same backend server. 
-- Path and URL based routing. 
+- Path and URL based routing.
+- Zone redundancy, Azure key vault integration, and HTTP header rewrite.
+
+> [!Note]
+> Support for Application Gateway V1 ends on April 28, 2026.
+
 
 ## How Azure Application Gateway works
 

@@ -14,5 +14,5 @@ Continue building production-ready AI operations:
 
 ## More resources
 
-- [Microsoft Foundry reliability documentation](/azure/reliability/reliability-ai-studio) - Best practices for high availability and disaster recovery in AI infrastructure
+- [Microsoft Foundry reliability documentation](/azure/foundry/) - Best practices for high availability and disaster recovery in AI infrastructure
 - [Azure Well-Architected Framework for AI](/azure/well-architected/) - Comprehensive guidance on reliability, security, cost optimization, and performance for cloud AI workloads

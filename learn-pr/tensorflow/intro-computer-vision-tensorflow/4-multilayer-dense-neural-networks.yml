@@ -2,19 +2,17 @@
 uid: learn.tensorflow.intro-computer-vision.multilayer-dense-neural-networks
 title: Multi-layer networks
 metadata:
-  title: Multi-layer networks
+  title: Multi-Layer Networks
   description: Learn how multi-layer neural networks can be constructed to improve model accuracy
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 04/01/2026
   ms.update-cycle: 180-days
   ms.topic: unit
-  ms.collection:
-    - ce-advocates-ai-copilot
-  ms.custom: team=nextgen
+  ms.collection: ce-advocates-ai-copilot
 durationInMinutes: 10
-sandbox: true
-notebook: notebooks/4-multilayer-dense-neural-networks.ipynb
+content: |
+  [!include[](includes/4-multilayer-dense-neural-networks.md)]
 quiz:
   title: Check your knowledge
   questions:

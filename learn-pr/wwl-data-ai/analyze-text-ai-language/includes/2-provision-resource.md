@@ -1,12 +1,23 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cc6a903-3991-4feb-b9d6-44e4455457a7]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Azure Language in Foundry Tools is designed to help you extract information from text. It provides functionality that you can use for tasks like:
 
 - *Language detection* - determining the language in which text is written.
-- *Key phrase extraction* - identifying important words and phrases in the text that indicate the main points.
-- *Sentiment analysis* - quantifying how positive or negative the text is.
 - *Named entity recognition* - detecting references to entities, including people, locations, time periods, organizations, and more.
-- *Entity linking* - identifying specific entities by providing reference links to Wikipedia articles.
+- *Personally Identifiable Information (PII) extraction* - identifying and redacting personal details in text.
 
-    :::image type="content" source="../media/text-analytics-resource.png" alt-text="Diagram showing an Azure Language resource performing language detection, key phrase extraction, sentiment analysis, named entity recognition, and entity linking.":::
+    :::image type="content" source="../media/text-analytics-resource.png" alt-text="Diagram showing an Azure Language resource performing language detection, named entity recognition, and PII extraction.":::
+
+> [!NOTE]
+> Azure Language also provides functionality for sentiment analysis, summarization, key phrase extraction, and other common language-related tasks. These deprecated capabilities are provided to support existing applications.
 
 ## Using a Microsoft Foundry resource for text analysis
 
@@ -49,3 +60,5 @@ credential = DefaultAzureCredential()
 client = TextAnalyticsClient(endpoint="YOUR_FOUNDRY_RESOURCE_ENDPOINT", 
                              credential=credential)
 ```
+
+::: zone-end

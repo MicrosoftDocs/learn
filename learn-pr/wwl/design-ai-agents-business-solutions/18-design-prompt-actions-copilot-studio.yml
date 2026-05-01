@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-ai-agents-business-solutions.design-prompt-actions-copilot-studio
+title: "Design prompt actions in Copilot Studio"
+metadata:
+  title: "Design Prompt Actions in Copilot Studio"
+  description: "Learn how to design prompt actions in Copilot Studio to create reliable, grounded, and consistent agent responses using the Prompt Coach template."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 11
+content: |
+  [!include[](includes/18-design-prompt-actions-copilot-studio.md)]

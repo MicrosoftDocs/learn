@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.propose-microsoft-power-platform-ai-features-ai-hub
+title: "Propose Microsoft Power Platform AI features"
+metadata:
+  title: "Propose Microsoft Power Platform AI Features"
+  description: "Learn to propose Microsoft Power Platform AI features like AI Hub, Copilot, and AI Builder for scalable, enterprise-grade AI solutions."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-propose-microsoft-power-platform-ai-features-ai-hub.md)]

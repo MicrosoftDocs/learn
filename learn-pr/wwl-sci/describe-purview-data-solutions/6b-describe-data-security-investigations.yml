@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.describe-data-security-investigations
+title: Describe Microsoft Purview Data Security Investigations
+metadata:
+  title: Describe Microsoft Purview Data Security Investigations
+  description: "Describe how Microsoft Purview Data Security Investigations helps organizations investigate data security incidents."
+  ms.date: 04/03/2026
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6b-describe-data-security-investigations.md)]

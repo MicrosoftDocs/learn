@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=10d222d7-b2d6-42b1-9944-05c400fe73ac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry Models includes models that are capable of using tools to find information or perform tasks. You can use tool support in models by specifying which tools you want the model to use in prompts submitted through the OpenAI *Responses* API.
 
 ![Diagram of an application configuring a model to use tools.](../media/tools.png)
@@ -56,3 +67,5 @@ print(response.output_text)
 
 > [!TIP]
 > To learn more about using the *Responses* API to submit a prompt to a model in Microsoft Foundry, see the [Develop a generative AI chat app with Microsoft Foundry](/training/modules/foundry-sdk?azure-portal=true) module.
+
+::: zone-end

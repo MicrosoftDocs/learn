@@ -7,29 +7,30 @@ You can use any of these tools to query data held in Azure SQL Database:
 - The query editor in the Azure portal
 - The `sqlcmd` utility from the command line or the Azure Cloud Shell
 - SQL Server Management Studio
+- Visual Studio Code
 - SQL Server Data Tools
 
 To use these tools, you first need to establish a connection to the database. You'll require the details of the server to connect to, an Azure SQL Database account (a username and password) that has access to this server, and the name of the database to use on this server. You can find the server name for a database using the Azure portal: go to the page for your database, and on the **Overview** page note the fully qualified server name in the **Server name** field.
 
 > [!div class="mx-imgBorder"]
-> ![The **Overview** page for a SQL Database instance in the Azure portal](../media/3-azure-connect.png)
+> ![Screenshot of the **Overview** page for a SQL Database instance in the Azure portal.](../media/3-azure-connect.png)
 
 Some tools and applications require a connection string that identifies the server, database, account name, and password. You can find this information from the **Overview** page for a database in the Azure portal: select **Show database connection strings**.
 
 > [!NOTE]
-> The database connection string shown in the Azure portal does not include the password for the account. You must contact your database administrator for this information.
+> The database connection string shown in the Azure portal doesn't include the password for the account. You must contact your database administrator for this information.
 
 ## Use the Azure portal to query a database
 
 To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You'll be prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Microsoft Entra password authentication** and provide the credentials of an authorized user in Microsoft Entra ID. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
 
  > [!div class="mx-imgBorder"]
- > ![The SQL Database sign-in page in the Azure portal](../media/3-sign-in-annotated.png)
+ > ![Screenshot of the SQL Database sign-in page in the Azure portal.](../media/3-sign-in-annotated.png)
 
 You enter your SQL query in the query pane and then click **Run** to execute it. Any rows that are returned appear in the **Results** pane. The **Messages** pane displays information such as the number of rows returned, or any errors that occurred:
 
  > [!div class="mx-imgBorder"]
- > ![The query editor in the Azure portal with the various panes highlighted](../media/3-query-editor-annotated.png)
+ > ![Screenshot of the query editor in the Azure portal with the various panes highlighted.](../media/3-query-editor-annotated.png)
 
 You can also enter INSERT, UPDATE, DELETE, CREATE, and DROP statements in the query pane.
 
@@ -58,12 +59,12 @@ The first time you run SQL Server Management Studio the **Connect to Server** di
     |---------|---------|
     |Server type | Database Engine |
     |Server name	     | The fully qualified server name. You can find the server name in the Azure portal, as described earlier. |
-    |Authentication    | SQL Server Authentication. Unless you're using Microsoft Entra, select SQL Server Authentication. |
+    |Authentication    | **Microsoft Entra - Password** (recommended) for Microsoft Entra accounts, or **SQL Server Authentication** for SQL logins. |
     |Login   | The server admin account user name. Specify the user name from the account used to create the server.        |
     |Password    | The password you specified when you provisioned the server.  |
     
     > [!div class="mx-imgBorder"]
-    > ![SQL Server Management Studio - Connect to Server](../media/3-sql-sever-management-studio-connect.png)
+    > ![Screenshot of SQL Server Management Studio - Connect to Server dialog.](../media/3-sql-sever-management-studio-connect.png)
 
 1. Select **Connect**.
 
@@ -122,7 +123,7 @@ GO
 To execute the script, select **Execute** on the toolbar. Notifications appear in the MESSAGES pane showing query progress.
 
 > [!div class="mx-imgBorder"]
-> ![The query pane in SQL Server Management Studio, showing the results of running a SQL script](../media/3-sql-sever-management-studio-query.png)
+> ![Screenshot of the query pane in SQL Server Management Studio, showing the results of running a SQL script.](../media/3-sql-sever-management-studio-query.png)
 
 ## Use SQL Server Data Tools in Visual Studio
 
@@ -144,9 +145,9 @@ SQL Server Data Tools are available from the **Tools** menu in Visual Studio. To
 
 
     > [!div class="mx-imgBorder"]
-    > ![The **Connect** dialog box in Visual Studio](../media/3-sql-sever-data-tool-connect.png)
+    > Screenshot of the **Connect** dialog box in Visual Studio.](../media/3-sql-sever-data-tool-connect.png)
 
 1. In the **Query** window, enter your SQL query, and then select the **Execute** button in the toolbar. The results appear in the **Results** pane.
 
     > [!div class="mx-imgBorder"]
-    > ![Running a query in Visual Studio](../media/3-run-query.png)
+    > ![Screenshot of running a query in Visual Studio.](../media/3-run-query.png)

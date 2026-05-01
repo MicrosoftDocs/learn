@@ -1,4 +1,4 @@
-[Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/) is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform provides the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both _container management_ and _container orchestration_. 
+Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. This orchestration platform provides the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings. Kubernetes provides both _container management_ and _container orchestration_. 
 
 :::image type="content" source="../media/container-scaling.png" alt-text="Diagram that shows how container orchestration dynamically or automatically scales container instances." border="false":::
 
@@ -8,13 +8,13 @@ Container management is the process of organizing, adding, removing, or updating
 
 ### Things to know about Azure Kubernetes Service
 
-The Azure Kubernetes Service environment is enabled with many features, such as automated updates, self-healing, and easy scaling. Review the following characteristics that make AKS an appealing compute option to build new workloads and support lift and shift migrations.   
+The Azure Kubernetes Service (AKS) environment is enabled with many features, such as automated updates, self-healing, and easy scaling. Review the following characteristics that make AKS an appealing compute option to build new workloads and support lift and shift migrations.   
 
 :::image type="content" source="../media/select-azure-kubernetes-service.png" alt-text="Flowchart that shows the decision tree for selecting Azure Kubernetes Service to build new workloads and to support lift and shift migrations." border="false":::
 
-- Azure manages the Kubernetes cluster for free. You manage the agent nodes in the cluster and only pay for the virtual machines on which your nodes run.
+- AKS has three cluster management pricing tiers: Free, Standard, and Premium. The Free tier has no control plane charge but no SLA guarantee, suitable for dev/test. The Standard tier includes an hourly control plane charge with an uptime SLA, recommended for production. The Premium tier adds 24-month Long Term Support. All tiers require you to pay separately for agent node virtual machines.
 
-- When you create the cluster, you can use Azure Resource Manager (ARM) templates to automate cluster creation. With ARM templates, you specify features like as advanced networking, Microsoft Entra ID integration, and monitoring. 
+- When you create the cluster, you can use Azure Resource Manager (ARM) templates or Bicep files. With these infrastructure-as-code options, you specify features such as advanced networking, Microsoft Entra ID integration, and monitoring.
 
 - AKS gives you the benefits of open-source Kubernetes. You don't have the complexity or operational overhead of running your own custom Kubernetes cluster.
 
@@ -30,14 +30,9 @@ There are several factors to consider when deciding whether Azure Kubernetes Ser
 | **Cluster node upgrades** | _Do you want to reduce the number of cluster management tasks?_ | AKS manages Kubernetes software upgrades and the process of cordoning off nodes and draining them. |
 | **Storage volume support** | _Does your application require persisted storage?_ | AKS supports both static and dynamic storage volumes. Pods can attach and reattach to these storage volumes as they're created or rescheduled on different nodes. |
 | **Virtual network support** | _Do you need pod-to-pod network communication or access to on-premises networks from your AKS cluster?_ | An AKS cluster can be deployed into an existing virtual network with ease. |
-| **Ingress with HTTP application routing support** | _Do you need to make your deployed applications publicly available?_ | The HTTP application routing add-on makes it easy to access AKS cluster deployed applications. |
+| **Application routing and ingress** | _Do you need to make your deployed applications publicly available?_ | AKS supports application routing through the application routing add-on. AKS is transitioning to the Kubernetes Gateway API as the long-term standard for ingress. |
 | **Docker image support** | _Do you already use Docker images for your containers?_ | By default, AKS supports the Docker file image format. |
 | **Private container registry** | _Do you need a private container registry?_ | AKS integrates with Azure Container Registry (ACR). You aren't limited to ACR though, you can use other container repositories, public, or private. |
-
-#### Business application
-
-Take a few minutes to read about how [Mercedes-Benz R&D is using Azure Kubernetes Service](https://customers.microsoft.com/story/784791-mercedes-benz-r-and-d-creates-container-driven-cars-powered-by-microsoft-azure).
-
 
 > [!TIP]
 > Learn more about Kubernetes in the [Introduction to Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/) module. 

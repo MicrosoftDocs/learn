@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.troubleshooting-surface-portal-access
+title: Troubleshooting Surface Portal access issues
+metadata:
+  title: Troubleshooting Surface Portal access issues
+  description: "In this module, you'll learn how to troubleshoot common access issues related to the Surface Management Portal and Surface Support Portal, ensuring that you can effectively manage your organization's Surface devices and support requests."
+  ms.date: 04/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  This module provides a comprehensive guide to troubleshooting access issues for the Surface Management Portal and Surface Support Portal. You'll learn how to identify common access problems, validate portal visibility and prerequisites, and escalate unresolved issues to Microsoft support when necessary. By the end of this module, you'll be equipped with the knowledge and tools to ensure seamless access to both portals, enabling you to effectively manage your organization's Surface devices and support requests.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify common access issues related to the Surface Management Portal and Surface Support Portal.
+  - Validate portal visibility and prerequisites to ensure proper access.
+  - Escalate unresolved access issues to Microsoft support for further assistance.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/troubleshooting-surface-portal-access-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.troubleshooting-surface-portal-access.introduction
+  - learn.dpu.troubleshooting-surface-portal-access.identify-common-access-issues
+  - learn.dpu.troubleshooting-surface-portal-access.validate-portal-visibility-and-prerequisites
+  - learn.dpu.troubleshooting-surface-portal-access.escalate-unresolved-issues
+  - learn.dpu.troubleshooting-surface-portal-access.knowledge-check
+  - learn.dpu.troubleshooting-surface-portal-access.summary
+badge:
+  uid: learn.dpu.troubleshooting-surface-portal-access.badge

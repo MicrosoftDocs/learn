@@ -8,6 +8,7 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 2
+  zone_pivot_groups: video-or-text
+durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

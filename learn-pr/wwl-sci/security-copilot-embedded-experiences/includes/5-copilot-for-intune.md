@@ -7,7 +7,7 @@ Access to your Intune data is supported through Microsoft Security Copilot, refe
 
 ### Before you begin
 
-To enable Copilot to access your Intune data, for either the embedded or standalone experience, Microsoft Security Copilot must be configured, the Microsoft Intune plugin must be enabled, and you need to have appropriate role permissions. You need a role permission that grants access to Copilot and you also need a separate Intune service-specific role like the Intune Endpoint Security Manager role. There isn't a built-in Intune role that includes access to Copilot.
+To enable Copilot to access your Intune data, for either the embedded or standalone experience, Microsoft Security Copilot must be configured, the Microsoft Intune plugin must be enabled, and you need to have appropriate role permissions. The Intune Administrator role in Microsoft Entra ID has access to Copilot in Intune by default. Other roles can be assigned access through Security Copilot. There isn't a built-in Intune service role (such as Intune Endpoint Security Manager) that includes access to Copilot—Copilot access is controlled separately.
 
 :::image type="content" source="../media/intune-plugin.png" lightbox="../media/intune-plugin.png" alt-text="Screen capture showing the Microsoft Intune plugin enabled.":::
 
@@ -23,6 +23,8 @@ Currently, Copilot in Intune is available for:
 
 - Policy and setting management
 - Device details and troubleshooting
+- Data exploration using natural language
+- Automated tasks through Copilot agents
 
 #### Policy and setting management
 
@@ -53,3 +55,20 @@ You can use Copilot to get device-specific information, like the installed apps,
 :::image type="content" source="../media/intune-copilot-device-summary-troubleshooting.png" lightbox="../media/intune-copilot-device-summary-troubleshooting.png" alt-text="Screen capture of Copilot in Intune device summary, showing prompts that provide device specific information and can help in troubleshooting.":::
 
 When the Copilot window opens, select a prompt, and enter any required or optional input, if needed. You can also open the prompt guide for some follow-up questions.
+
+#### Data exploration
+
+Copilot in Intune supports natural language queries across your Intune data. From the Copilot panel, you can ask questions about your devices, users, apps, policies, updates, and compliance—without writing queries or navigating through multiple admin pages. Built-in examples help you discover the kinds of questions you can ask.
+
+When you run a query, Copilot summarizes the results and surfaces recommended actions you can take based on the output. Results can also feed directly into creating custom reports or adding users or devices to groups. This capability extends to Windows 365 Cloud PCs, allowing you to troubleshoot and get insights about Cloud PCs using the same natural language experience.
+
+#### Copilot agents in Intune
+
+Security Copilot agents in Intune are AI-powered assistants that go beyond prompt-based assistance to help automate key endpoint management tasks. Intune includes four specialized agents:
+
+- **Change Review Agent** – Evaluates Multi Admin Approval requests and recommends actions.
+- **Device Offboarding Agent** – Identifies stale or misaligned devices and provides insights before offboarding.
+- **Policy Configuration Agent** – Converts plain-language documents and industry security baselines into recommended Intune policy settings.
+- **Vulnerability Remediation Agent** – Uses Defender data to monitor vulnerabilities and prioritize remediation with AI-driven risk assessments.
+
+These agents help IT teams quickly address vulnerabilities, policy gaps, and emerging threats across managed devices.

@@ -7,13 +7,13 @@ Today, work happens from anywhere. Employees use personal and corporate devices,
 
 Zero Trust addresses this reality by assuming that no network, device, user, or application should be trusted by default, even those that have already authenticated or are connected to a trusted network.
 
+Watch this video to learn about Zero Trust.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5881f412-3b50-43dc-9d03-794d4348603b]
+
 ## Zero Trust guiding principles
 
 The Zero Trust model is built on three guiding principles that shape how security decisions are made in every part of an organization.
-
-This video introduces the Zero Trust methodology:
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5881f412-3b50-43dc-9d03-794d4348603b]
 
 - **Verify explicitly**: Always authenticate and authorize based on all available signals, not just a single factor like a password or network location. Signals include the user's identity, their sign-in location, the device they're using and its compliance status, the service or application being accessed, the classification of the data involved, and any anomalies such as unusual sign-in times or locations. The more signals you can evaluate, the more confident you can be that the right person is accessing the right resource.
 

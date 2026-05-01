@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.k-12-ai-education.institutional-priorities-modern-k-12-education
+title: Institutional priorities in modern K-12 education
+metadata:
+  title: Institutional Priorities In Modern K-12 Education
+  description: This content is part of the "AI‑enhanced K‑12 institutional concepts" module.
+  ms.date: 04/09/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-institutional-priorities-modern-k-12-education.md)]

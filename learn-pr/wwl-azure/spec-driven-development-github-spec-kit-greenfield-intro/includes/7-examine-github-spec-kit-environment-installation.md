@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1487ed15-c87a-4616-b5f2-2792a846e2cb]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you can use GitHub Spec Kit to practice spec-driven development, you need to set up your environment. This unit covers the prerequisites, installation process, and configuration steps to get GitHub Spec Kit running in your development environment.
 
 ## Prerequisites and system requirements
@@ -198,3 +206,8 @@ For issues beyond these common problems, consult the GitHub Spec Kit README and 
 ## Summary
 
 GitHub Spec Kit supports various development environments and AI coding assistants. Core requirements include Python 3.11+, Git, and the `uv` tool. You can install the `specify` CLI globally or use it one-time via `uvx`. Visual Studio Code with GitHub Copilot is a common setup, but other AI tools are supported as well. Verifying your installation with `specify check` helps ensure everything is configured correctly.
+
+::: zone-end
+
+> [!NOTE]
+> See the **Text and images** tab for more details!

@@ -25,7 +25,7 @@ quiz:
       explanation: "IaaS provides full control over the AI stack and is best for advanced teams in regulated industries. It requires significant infrastructure and orchestration skills, which this team lacks."
   - content: "Your team wants to build custom AI agents that can autonomously write code, submit pull requests, and adapt to your existing modular codebase. You also want to maintain oversight and guide the agent during development. Which GitHub Copilot feature best supports this workflow?"
     choices:
-    - content: "Coding agent with human-in-the-loop collaboration"
+    - content: "Copilot Cloud Agent with human-in-the-loop collaboration"
       isCorrect: true
       explanation: "The coding agent can autonomously write code and submit pull requests, while human-in-the-loop collaboration allows developers to guide and review the agent’s output, maintaining oversight and control."
     - content: "Agent mode for real-time code suggestions"

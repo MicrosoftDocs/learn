@@ -3,7 +3,7 @@ uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply sensitivity labels for data protection
   description: "Apply sensitivity labels for data protection."
-  ms.date: 06/03/2024
+  ms.date: 04/16/2026
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -11,15 +11,17 @@ metadata:
   ai-usage: ai-assisted
   ms.subservice: purview-information-protection
 title: Apply sensitivity labels for data protection
-summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate aren't hindered.
+summary: Learn how to apply sensitivity labels across Microsoft 365 workloads to classify and protect business data while supporting collaboration and productivity.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand the foundations of sensitivity label integration in Microsoft 365.
-  - Manage sensitivity label use in Office apps for security compliance.
-  - Secure Outlook and Teams meetings with sensitivity labels.
-  - Apply labels to Microsoft 365 Groups, SharePoint, and OneDrive for data protection.
+  - Describe how sensitivity labels protect containers like Teams, SharePoint sites, and Microsoft 365 Groups.
+  - Manage sensitivity labels in Office apps, including file compatibility and cross-organizational sharing.
+  - Explain how Microsoft 365 Copilot respects and inherits sensitivity labels.
+  - Apply sensitivity labels to secure meetings and calendar events.
+  - Choose where and how to apply labels across SharePoint, Teams, and Microsoft 365 Groups.
+  - Apply sensitivity labels in Power BI to protect reports, dashboards, and semantic models.
 prerequisites: |
-  Fundamentals knowledge of information governance in Microsoft 365.
+  Fundamentals knowledge of information protection in Microsoft 365.
 iconUrl: /training/achievements/implement-and-manage-sensitivity-labels.svg
 levels:
 - intermediate
@@ -29,6 +31,7 @@ roles:
 products:
 - microsoft-purview
 - m365
+- power-bi
 subjects:
 - information-protection-governance
 units:
@@ -38,6 +41,7 @@ units:
 - learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-with-copilot
 - learn.wwl.apply-manage-sensitivity-labels.protect-meetings-with-sensitivity-labels
 - learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-to-microsoft-365-services
+- learn.wwl.apply-manage-sensitivity-labels.apply-sensitivity-labels-power-bi
 - learn.wwl.apply-manage-sensitivity-labels.knowledge-check
 - learn.wwl.apply-manage-sensitivity-labels.summary-resources
 badge:

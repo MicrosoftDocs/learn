@@ -11,15 +11,16 @@ For example, you can create a document fingerprint for a blank health insurance 
 Document fingerprinting offers several benefits:
 
 - **Works across multiple platforms**: DLP policies using document fingerprints can be applied to Exchange, SharePoint, OneDrive, Teams, and devices.
+- **Supports auto-labeling**: Information protection autolabeling can use document fingerprinting as a detection method in Exchange, SharePoint, and OneDrive.
 - **Supports multiple matching types**: Both partial and exact matching are available, ensuring flexible and accurate detection.
 - **Multilingual detection**: Detects content in multiple languages, including dual-byte languages such as Chinese, Japanese, and Korean.
 - **Improved accuracy**: By focusing on unique word patterns, document fingerprinting reduces false positives and improves detection accuracy for sensitive forms.
 
 ## How document fingerprinting works
 
-Document fingerprinting works by identifying the unique word patterns within a document. When you upload a form or template, DLP analyzes this pattern and generates a fingerprint in the form of a small Unicode XML file containing a hash value, rather than storing the document itself. This fingerprint becomes a SIT that can be associated with your DLP policies to detect outbound documents that match the original form.
+Document fingerprinting works by identifying the unique word patterns within a document. When you upload a form or template, DLP analyzes this pattern and generates a fingerprint as a small Unicode XML file containing a hash value. The original document itself isn't stored. This fingerprint becomes a SIT that can be associated with your DLP policies to detect outbound documents that match the original form.
 
-For instance, imagine you upload a blank patent application template. Once the fingerprint is created, any document that includes this template, whether partially filled out or completely, can be automatically detected and managed by your DLP policy.
+For instance, imagine you upload a blank patent application template. Once the fingerprint is created, your DLP policy can detect and manage any document that includes this template, whether it's partially filled out or complete.
 
 The image illustrates this process.
 
@@ -43,6 +44,8 @@ Document fingerprinting works best with text-based documents. It doesn't detect 
 - Image only files
 - Files missing text from the original form
 - Files larger than 4 MB
+
+The template you upload must contain at least 256 characters, and the extracted text can't exceed 204,800 characters. If your template is too short, the fingerprint won't have enough word patterns to generate reliable matches. Also, keep in mind that text in embedded documents isn't considered during fingerprint creation, so use a flat, standalone template file for best results.
 
 ## Matching options in document fingerprinting
 
@@ -79,6 +82,9 @@ Exact matching ensures only documents identical to the original template are fla
 
 To use document fingerprinting with devices, [**Advanced classification scanning and protection**](/purview/dlp-configure-endpoint-settings#advanced-classification-scanning-and-protection?azure-portal=true) must be turned on.
 
-Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create about 50 fingerprints per tenant.
+Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 300 KB. Given this limit, you can create approximately 100 fingerprints per tenant.
+
+> [!IMPORTANT]
+> If you're an E5 customer, we recommend updating your existing fingerprints to take advantage of the full document fingerprint feature set. If you're an E3 customer, we recommend upgrading to an E5 license.
 
 For more information about creating a new DLP policy using fingerprint-based SITS, see [Create a new policy using your fingerprint SIT](/purview/document-fingerprinting#create-a-new-policy-using-your-fingerprint-sit-using-the-compliance-portal?azure-portal=true).

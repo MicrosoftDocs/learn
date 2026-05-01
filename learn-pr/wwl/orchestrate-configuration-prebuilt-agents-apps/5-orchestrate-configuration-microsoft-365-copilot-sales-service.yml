@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.orchestrate-configuration-microsoft-365-copilot-sales-service
+title: "Orchestrate and configure Microsoft 365 Copilot for sales and service"
+metadata:
+  title: "Orchestrate and Configure Microsoft 365 Copilot"
+  description: "Learn to orchestrate and configure Microsoft 365 Copilot for Sales and Service. Explore architecture, workflows, and governance for optimal outcomes."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-orchestrate-configuration-microsoft-365-copilot-sales-service.md)]

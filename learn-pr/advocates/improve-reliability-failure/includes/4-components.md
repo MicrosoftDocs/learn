@@ -1,6 +1,5 @@
 You now know what a post-incident review is, its role in the incident
-response process, and when you should conduct one. In this unit, you'll
-dive a little deeper into the details of what makes a post-incident review
+response process, and when you should conduct one. In this unit, you dive a little deeper into the details of what makes a post-incident review
 most effective.
 
 Because incidents differ, the exact makeup of post-incident reviews can be
@@ -22,8 +21,8 @@ post-incident review, you should consider what it's _not._
     pinpoint a culprit (especially not a single root cause; complex systems
     almost always fail due to a whole set of contributing factors). It's to
     think about and share information about all aspects of the incident so
-    as learn and improve.
-  It's not a list of action items. You might end up with such a list as a
+    as to learn and improve.
+- It's not a list of action items. You might end up with such a list as a
     result of what you learn in the review, but this isn't the focus. If
     you don't come away with a list of items in a ticket queue or bug
     reports in a bug reporting system, but you do know more about your
@@ -32,12 +31,23 @@ post-incident review, you should consider what it's _not._
 The incident review is, more than anything, a _conversation._ It's a
 defined space within which your team can review what they knew at the time
 and what they know now, and explore and better understand how the parts of
-the system—including the human parts—do or don't work together in
+the system, including the human parts, do or don't work together in
 response to problems.
 
 ## Characteristics and components
 
+### Blameless
+
 As we mentioned in the last unit, an incident review has to be _blameless._
+_Blameless_ doesn't mean "no one is ever accountable" or "we pretend
+mistakes didn't happen." It means you deliberately separate the work of
+_understanding_ an incident from the work of _assigning fault_ for it.
+In a blameless review, you assume that everyone involved acted with good
+intent and did the best they could with the information, tools, and
+context available to them at the time. The goal is to surface _why_ the
+actions people took made sense to them in the moment, so you can learn
+how the system, including its human parts, actually behaves.
+
 Although you need to examine how the human parts of the system interacted
 with it, you don't do this in order to label anyone "at fault." The focus
 should be on the failures of the technology and the process, not of the
@@ -58,17 +68,17 @@ _You can't fire your way to reliability._
 
 Shaming and blaming or an investigation that's aimed at finding and firing
 the person who's "responsible" won't lead to more reliable systems.
-Instead, it'll lead to an inexperienced or even empty operations team and
+Instead, it leads to an inexperienced or even empty operations team and
 personnel who are afraid to act.
 
 Approach the review as a search for knowledge and context, not a hunt for
 who did what and a reaction to that.
 
 Although the review is about the failures of the technology, it's not a
-technical process as much as it is a people process. Talk—and more
-important, listen—to the people who were involved in the incident. Keep
+technical process as much as it's a people process. Talk (and, more
+important, listen) to the people who were involved in the incident. Keep
 an open mind. Different people have different perspectives and not everyone
-will agree, and that mix of perspectives is invaluable to the learning
+agree, and that mix of perspectives is invaluable to the learning
 process.
 
 A post-incident review is an honest inquiry. As such, it embraces these key
@@ -79,8 +89,9 @@ components:
 - Dissent
 - Discovery
 
-These "4 Ds" create a framework on which you can build a post-incident
-review that can result in more reliable systems and more productive teams
+These "four Ds" are a useful mnemonic for the mindset a post-incident
+review should embody. They create a framework on which you can build a
+review that results in more reliable systems and more productive teams
 that work together.
 
 In our next unit, we'll talk more about the process you can follow for

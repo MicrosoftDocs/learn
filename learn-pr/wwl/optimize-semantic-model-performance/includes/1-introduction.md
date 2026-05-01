@@ -1,0 +1,9 @@
+Semantic models provide a foundation for reports, dashboards, and AI-powered experiences in Microsoft Fabric and Power BI. When a semantic model performs well, users can easily navigate reports and have reliable AI answers. When it doesn't, reports load slowly, users lose trust, and AI workflows can time out or fail entirely or provide inaccurate or incomplete responses.
+
+Performance issues can come from many places: an expensive DAX calculation, a table with millions of unique values in a single column, or a visual that requests too much data at once. The challenge isn't knowing that *something* is slow, but knowing *where* the bottleneck is and *how* to fix it.
+
+Suppose you work at a retail analytics organization that recently migrated its reporting to Microsoft Fabric. The team built semantic models to support executive dashboards, store-level reports, and Copilot chat for natural language data exploration. Within weeks, users start reporting that several dashboards take 30 seconds or more to load. The executive team notices that Copilot chat responses are timing out. The reports work, but they're too slow. Your task is to find the bottlenecks, fix them, and verify the improvements. You need a systematic approach that covers DAX optimization, data model efficiency, and aggregation strategies.
+
+In this module, you learn how to use Performance analyzer to diagnose slow visuals and identify the root cause of performance issues. You explore techniques for optimizing DAX calculations, reducing cardinality, and implementing aggregations. You also learn a systematic troubleshooting approach for common performance problems.
+
+By the end of this module, you're able to diagnose performance issues in a semantic model and apply targeted fixes that improve query speed for both human users and AI-powered experiences.

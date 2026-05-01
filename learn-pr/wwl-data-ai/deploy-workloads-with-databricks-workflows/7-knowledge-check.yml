@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module Assessment
   description: "Knowledge check"
-  ms.date: 09/12/2025
+  ms.date: 04/27/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. Jobs are the primary component in Lakeflow Jobs. They allow you to define and schedule automated tasks such as running notebooks, scripts, or compiled Java Archives (JARs)."
     - content: "Clusters"
       isCorrect: true
-      explanation: "Correct. Clusters in Azure Databricks are groups of virtual machines that provide computational resources for running jobs. They can be configured to autoscale, which means they automatically adjust the number of nodes in the cluster based on the workload, ensuring efficient use of resources and optimal performance."
+      explanation: "Correct. Classic jobs compute (clusters) in Azure Databricks provides groups of virtual machines that can be configured to autoscale based on workload demands. For simpler scenarios, serverless compute scales automatically with no cluster configuration required — serverless is the default for supported task types."
   - content: "What is the primary use of the Databricks REST API in the context of Lakeflow Jobs?"
     choices:
     - content: "To manually execute SQL queries"

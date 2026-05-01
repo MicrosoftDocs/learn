@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-platform-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Check your knowledge of platform-level security configuration for Azure SQL Database and SQL Managed Instance."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's fraud detection AI service needs to query Azure SQL Database. Which authentication approach eliminates credential management while maintaining least-privilege access?"
+    choices:
+    - content: "SQL authentication with a dedicated service account and a strong password stored in Azure Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. Although storing credentials in Key Vault reduces exposure, SQL authentication still uses passwords that must be rotated and managed. Managed identity authentication eliminates credentials entirely."
+    - content: "A system-assigned managed identity with a Microsoft Entra ID contained database user mapped to the identity"
+      isCorrect: true
+      explanation: "Correct. A system-assigned managed identity allows the AI service to authenticate to Azure SQL using its Microsoft Entra ID identity, with no passwords or connection string secrets to manage. A contained database user maps the identity to database permissions."
+    - content: "A shared access signature scoped to the Azure SQL resource"
+      isCorrect: false
+      explanation: "Incorrect. Shared access signatures are an Azure Storage concept and don't apply to Azure SQL Database authentication."
+    - content: "A SQL sign-in using a service principal client secret rotated every 90 days"
+      isCorrect: false
+      explanation: "Incorrect. Client secrets are credentials that require rotation and management. Managed identities are the preferred approach because they eliminate the need for any secret or password."
+  - content: "A cloud security engineer is configuring transparent data encryption with customer-managed keys for a regulated banking database. Which two Azure Key Vault settings are mandatory before the key can be attached to Azure SQL?"
+    choices:
+    - content: "Soft-delete and purge protection must both be enabled on the Key Vault"
+      isCorrect: true
+      explanation: "Correct. Azure SQL Database requires both soft-delete and purge protection to be enabled on the Key Vault before a customer-managed key can be used for Transparent Data Encryption (TDE). These settings prevent accidental or malicious key deletion that would render the database inaccessible."
+    - content: "The Key Vault must be in the same Azure region as the SQL server"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database can use a Key Vault in a different region. However, for geo-replicated databases, the failover region must also have access to the Key Vault."
+    - content: "The Key Vault must use RBAC authorization mode with the SQL Security Manager role assigned"
+      isCorrect: false
+      explanation: "Incorrect. Both RBAC and vault access policy modes are supported. The required permissions are `get`, `wrapKey`, and `unwrapKey` on the key, regardless of authorization mode."
+    - content: "The Key Vault must be dedicated to SQL encryption keys with no other secrets or certificates"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database has no requirement for a dedicated Key Vault. The same vault can store keys, secrets, and certificates for multiple services."
+  - content: "A database administrator needs to prevent customer service representatives from seeing full credit card numbers in query results, while allowing the finance team to view unmasked values. Which Azure SQL feature provides granular column-level unmask permissions?"
+    choices:
+    - content: "Row-level security with filter predicates scoped to the credit card column"
+      isCorrect: false
+      explanation: "Incorrect. Row-level security filters entire rows based on predicate logic. It controls which rows a user can see, not which columns are masked within a visible row."
+    - content: "Always Encrypted with role-based column encryption keys assigned per team"
+      isCorrect: false
+      explanation: "Incorrect. Always Encrypted encrypts column data at the application layer and is designed to prevent the database engine from seeing plaintext. It doesn't provide role-based unmask permissions within the database."
+    - content: "Dynamic data masking with GRANT UNMASK permissions scoped to the specific column"
+      isCorrect: true
+      explanation: "Correct. Dynamic data masking applies masking functions to columns and supports granular UNMASK permissions at the database, schema, table, and column level. Granting UNMASK on the credit card column to the finance team role allows those users to see unmasked values while customer service representatives see the masked output."
+    - content: "Transparent data encryption with a customer-managed key scoped per column"
+      isCorrect: false
+      explanation: "Incorrect. Transparent data encryption protects data at rest at the database file level. It doesn't provide column-level access control or masking functionality."

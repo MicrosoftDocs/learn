@@ -26,15 +26,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/05-exercise-explore-databricks.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/06-exercise-explore-databricks"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/06-exercise-explore-databricks"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/06-knowledge-check.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/07-knowledge-check"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/07-knowledge-check"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-databricks/07-summary.yml",
-      "redirect_url": "/training/modules/explore-azure-databricks/08-summary"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/08-summary"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/add-basic-conversational-intelligence/1-introduce-language-understanding-intelligent-service.md",
@@ -260,6 +260,142 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/index.yml",
       "redirect_url": "/training/paths/build-ai-copilot-vcore-based-azure-cosmos-db-mongodb-azure-openai/",
       "redirect_document_id": true
+    },
+    {
+        "source_path_from_root": "/learn-pr/paths/implement-data-governance-security-databricks-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/2-implement-isolation-methods.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/3-explore-lineage.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/4-transition-from-hive-metastore.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/5-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/6-exercise.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/7-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/administer-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/2-understand-fine-grained-access-control.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/3-implement-row-filtering-column-masking.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/4-exercise-secure-data-access.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/5-understand-lakehouse-monitoring.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/6-implement-lakehouse-monitoring.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/7-interpret-data-quality-dashboard.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/8-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/9-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-advanced-security-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/2-understand-query-lifecycle.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/3-explore-data-sharing-marketplace-overview.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/4-implement-access-control-strategies.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/5-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/6-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/implement-security-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/1-introduction.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/2-explore-data-governance.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/3-analyze-unity-catalog-architecture.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/4-explore-external-data.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/5-exercise.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/6-knowledge-check.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/7-summary.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
+    },
+    {
+        "source_path_from_root": "/learn-pr/wwl-data-ai/understand-unity-catalog/index.yml",
+        "redirect_url": "/training/paths/azure-databricks-data-engineer-secure-govern-unity-catalog/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/build-chat-bot-azure-portal/1-introduction.md",
@@ -1418,35 +1554,35 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/1-introduction.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/2-explain.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/3-create-workspace-cluster.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/4-understand-notebooks.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/5-exercise-work-notebooks.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/6-knowledge-check.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/7-summary.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-azure-databricks/index.md",
-      "redirect_url": "/training/modules/explore-azure-databricks/"
+      "redirect_url": "/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/1-introduction.md",
@@ -2695,19 +2831,19 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/2-understand.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/3-provision-workspaces-clusters.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/4-work-notebooks.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/5-exercise.md",
@@ -2715,15 +2851,15 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-azure-databricks/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-databricks/"
+      "redirect_url": "https://learn.microsoft.com/training/wwl-databricks/explore-azure-databricks/"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution/15-explore-best-practices-dp-100-learning-path-12.md",
@@ -5168,6 +5304,10 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/foundry-sdk/7-summary.yml",
       "redirect_url": "/training/modules/foundry-sdk/8-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-data-movement-transformation-azure-data-factory/5a-exercise-integrate-notebook-azure-synapse-pipelines.yml",
+      "redirect_url": "/azure/data-factory/quickstart-get-started"
     }
   ]
 }

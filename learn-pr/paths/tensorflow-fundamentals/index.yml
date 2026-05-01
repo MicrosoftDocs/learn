@@ -18,7 +18,6 @@ prerequisites: |
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
 iconUrl: /training/achievements/tensor-intro-trophy.svg
-hidden: true
 levels:
 - beginner
 - intermediate
@@ -32,7 +31,7 @@ modules:
 - learn.tensorflow.intro-machine-learning-keras
 - learn.tensorflow.intro-computer-vision
 - learn.tensorflow.intro-natural-language-processing
-- learn.tensorflow.intro-audio-classification-tensorflow
+- learn.tensorflow.intro-audio-classification
 - learn.tensorflow.intro-machine-learning-tensorflow
 trophy:
   uid: learn.tensorflow.tensorflow-fundamentals.trophy

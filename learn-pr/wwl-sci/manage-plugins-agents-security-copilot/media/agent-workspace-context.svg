@@ -1,0 +1,55 @@
+<svg width="1400" height="190" viewBox="0 0 1400 190"
+     xmlns="http://www.w3.org/2000/svg"
+     font-family="Segoe UI, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="1400" height="190" fill="#FFFFFF"/>
+
+  <!-- ======================================================
+       Card 1: SOC Workspace  (x=8, width=454)
+       ====================================================== -->
+  <rect x="8"   y="22" width="454" height="158" rx="5" ry="5"
+        fill="#E5F6FF" stroke="#00B4D8" stroke-width="2"/>
+  <!-- legend white mask cuts through top border -->
+  <rect x="14"  y="12" width="316" height="18" fill="white"/>
+  <text x="17"  y="26" font-size="15" font-weight="bold" fill="#000000">SOC Workspace | Dedicated SOC capacity</text>
+
+  <!-- Agent box 1 – Threat Hunting Agent -->
+  <rect x="20"  y="48" width="210" height="112" rx="4" ry="4" fill="#2869C9"/>
+  <text x="30"  y="85"  font-size="15" font-weight="bold" fill="#FFFFFF">Threat Hunting Agent</text>
+  <text x="30"  y="107" font-size="15" fill="#FFFFFF">Plug-ins: Defender</text>
+  <text x="30"  y="129" font-size="15" fill="#FFFFFF">XDR, Sentinel</text>
+
+  <!-- Agent box 2 – Alert Triage Agent -->
+  <rect x="240" y="48" width="210" height="112" rx="4" ry="4" fill="#2869C9"/>
+  <text x="250" y="85"  font-size="15" font-weight="bold" fill="#FFFFFF">Alert Triage Agent</text>
+  <text x="250" y="107" font-size="15" fill="#FFFFFF">Plug-ins: Defender</text>
+  <text x="250" y="129" font-size="15" fill="#FFFFFF">XDR, Sentinel</text>
+
+  <!-- ======================================================
+       Card 2: Compliance Workspace  (x=472, width=456)
+       ====================================================== -->
+  <rect x="472" y="22" width="456" height="158" rx="5" ry="5"
+        fill="#F0E6FF" stroke="#00B4D8" stroke-width="2"/>
+  <rect x="478" y="12" width="388" height="18" fill="white"/>
+  <text x="481" y="26" font-size="15" font-weight="bold" fill="#000000">Compliance Workspace | EU data residency enforced</text>
+
+  <!-- Agent box – Compliance Review Agent -->
+  <rect x="484" y="48" width="432" height="112" rx="4" ry="4" fill="#7B3DB6"/>
+  <text x="494" y="96"  font-size="15" font-weight="bold" fill="#FFFFFF">Compliance Review Agent</text>
+  <text x="494" y="118" font-size="15" fill="#FFFFFF">Plug-ins: Microsoft Purview, NL to KQL</text>
+
+  <!-- ======================================================
+       Card 3: Sandbox Workspace  (x=938, width=454)
+       ====================================================== -->
+  <rect x="938" y="22" width="454" height="158" rx="5" ry="5"
+        fill="#EFFFEF" stroke="#00B4D8" stroke-width="2"/>
+  <rect x="944" y="12" width="336" height="18" fill="white"/>
+  <text x="947" y="26" font-size="15" font-weight="bold" fill="#000000">Sandbox Workspace | Isolated test environment</text>
+
+  <!-- Agent box – Experimental Agent -->
+  <rect x="950" y="48" width="430" height="112" rx="4" ry="4" fill="#107C10"/>
+  <text x="960" y="96"  font-size="15" font-weight="bold" fill="#FFFFFF">Experimental Agent</text>
+  <text x="960" y="118" font-size="15" fill="#FFFFFF">Plug-ins: Configured per test</text>
+
+</svg>

@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=96750be3-fdc2-4528-9785-54aecb1a81a5]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 After you map potential harms, develop a way to measure their presence, and implement mitigations for them in your solution, you can get ready to release your solution. Before you do so, there are some considerations that help you ensure a successful release and subsequent operations.
 
 ## Complete prerelease reviews
@@ -20,3 +31,5 @@ A successful release requires some planning and preparation. Consider the follow
 - Implement a capability to block specific users, applications, or client IP addresses in the event of system misuse.
 - Implement a way for users to provide feedback and report issues. In particular, enable users to report generated content as *inaccurate*, *incomplete*, *harmful*, *offensive*, or otherwise problematic.
 - Track telemetry data that enables you to determine user satisfaction and identify functional gaps or usability challenges. Telemetry collected should comply with privacy laws and your own organization's policies and commitments to user privacy.
+
+::: zone-end

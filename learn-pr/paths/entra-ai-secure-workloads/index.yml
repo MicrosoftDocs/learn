@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.entra-ai-secure-workloads
+metadata:
+  title: 'Secure AI identity infrastructure with Microsoft Entra'
+  description: 'Learn how to secure identities used by AI workloads in Azure. Build skills in workload identity architecture, access management, Conditional Access, and identity risk response by using Microsoft Entra.'
+  ms.date: 04/22/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Secure AI identity infrastructure with Microsoft Entra'
+prerequisites: |
+  - Experience with Microsoft Entra ID fundamentals
+  - Familiarity with Azure role-based access control (RBAC)
+  - Basic understanding of Azure subscriptions, resource groups, and resources
+  - General understanding of identity and access management concepts
+summary: |
+  Learn how to secure identities used by AI workloads in Azure. Understand workload identity architecture, configure access to Azure resources, apply Conditional Access policies, and investigate identity risk by using Microsoft Entra.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- identity-access-admin
+products:
+- entra
+subjects:
+- security
+modules:
+- learn.wwl.entra-ai-understand
+- learn.wwl.implement-access-management-for-azure-resources
+- learn.wwl.plan-implement-administer-conditional-access
+- learn.wwl.manage-azure-ad-identity-protection
+trophy:
+  uid: learn.wwl.entra-ai-secure-workloads.trophy

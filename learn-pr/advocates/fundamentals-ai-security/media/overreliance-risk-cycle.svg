@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="titleORC descORC">
+  <title id="titleORC">AI Overreliance Risk Cycle</title>
+  <desc id="descORC">Circular diagram showing the overreliance risk cycle: AI generates confident output, user accepts without verification, errors compound over time, and organizational dependency grows, which feeds back into unquestioned AI use.</desc>
+  <defs>
+    <marker id="arrORC" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="700" height="700" fill="#FFFFFF"/>
+
+  <!-- Center label -->
+  <circle cx="350" cy="350" r="70" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="350" y="342" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#A4262C">Overreliance</text>
+  <text x="350" y="362" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#A4262C">Risk Cycle</text>
+
+  <!-- Step 1 (top): AI generates confident output -->
+  <rect x="210" y="40" width="280" height="80" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="350" y="72" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#0078D4">1</text>
+  <text x="350" y="94" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">AI generates confident output</text>
+
+  <!-- Step 2 (right): User accepts without verification -->
+  <rect x="490" y="260" width="180" height="100" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="580" y="292" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#0078D4">2</text>
+  <text x="580" y="314" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">User accepts</text>
+  <text x="580" y="336" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">without verification</text>
+
+  <!-- Step 3 (bottom): Errors compound over time -->
+  <rect x="210" y="520" width="280" height="80" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="350" y="552" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#0078D4">3</text>
+  <text x="350" y="574" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Errors compound over time</text>
+
+  <!-- Step 4 (left): Organizational dependency grows -->
+  <rect x="30" y="260" width="180" height="100" rx="12" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="120" y="292" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#0078D4">4</text>
+  <text x="120" y="314" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Organizational</text>
+  <text x="120" y="336" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">dependency grows</text>
+
+  <!-- Curved arrows connecting the steps in a cycle -->
+  <!-- Arrow 1→2: top-right curve -->
+  <path d="M 490 100 Q 570 120, 580 260" fill="none" stroke="#424242" stroke-width="2" marker-end="url(#arrORC)"/>
+
+  <!-- Arrow 2→3: bottom-right curve -->
+  <path d="M 580 360 Q 570 480, 490 540" fill="none" stroke="#424242" stroke-width="2" marker-end="url(#arrORC)"/>
+
+  <!-- Arrow 3→4: bottom-left curve -->
+  <path d="M 210 560 Q 130 480, 120 360" fill="none" stroke="#424242" stroke-width="2" marker-end="url(#arrORC)"/>
+
+  <!-- Arrow 4→1: top-left curve -->
+  <path d="M 120 260 Q 130 140, 210 100" fill="none" stroke="#424242" stroke-width="2" marker-end="url(#arrORC)"/>
+</svg>

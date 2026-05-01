@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.fabric-transform-data-notebooks
+metadata:
+  title: Transform Data Using Notebooks in Microsoft Fabric
+  description: "Use Fabric notebooks to transform data with Spark SQL and PySpark, connecting to lakehouses, warehouses, and other data stores."
+  ms.date: 04/01/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Transform data using notebooks in Microsoft Fabric
+summary: "Use Fabric notebooks to transform data with Spark SQL and PySpark, connecting to lakehouses, warehouses, and other data stores."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe notebooks in Microsoft Fabric
+    - Shape and clean data using Spark SQL and PySpark
+    - Combine and aggregate data using Spark SQL and PySpark
+    - Write and size Delta tables appropriately
+prerequisites: |
+  - Understanding of lakehouse concepts and SQL fundamentals
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+units:
+- learn.wwl.fabric-transform-data-notebooks.introduction
+- learn.wwl.fabric-transform-data-notebooks.describe-notebooks
+- learn.wwl.fabric-transform-data-notebooks.shape-clean-data
+- learn.wwl.fabric-transform-data-notebooks.combine-aggregate
+- learn.wwl.fabric-transform-data-notebooks.write-delta-tables
+- learn.wwl.fabric-transform-data-notebooks.exercise
+- learn.wwl.fabric-transform-data-notebooks.knowledge-check
+- learn.wwl.fabric-transform-data-notebooks.summary
+badge:
+  uid: learn.wwl.fabric-transform-data-notebooks.badge

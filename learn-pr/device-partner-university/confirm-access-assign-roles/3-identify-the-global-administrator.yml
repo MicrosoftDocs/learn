@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.confirm-access-assign-roles.identify-the-global-administrator
+title: Identify the Global Administrator
+metadata:
+  title: Identify The Global Administrator
+  description: This content is part of the "Confirming access and assigning roles in Surface portals" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-identify-the-global-administrator.md)]

@@ -74,7 +74,7 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
         -DefinitionFile ".\InputDataset.json"
     ```
 
-    Here is the sample output:
+    Here's the sample output:
 
     ```Text
     DatasetName       : InputDataset
@@ -115,7 +115,7 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
         -DefinitionFile ".\OutputDataset.json"
     ```
 
-     Here is the sample output:
+     Here's the sample output:
 
     ```Text
     DatasetName       : OutputDataset

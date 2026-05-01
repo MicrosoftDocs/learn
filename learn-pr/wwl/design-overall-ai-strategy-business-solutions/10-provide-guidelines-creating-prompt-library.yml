@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.provide-guidelines-creating-prompt-library
+title: "Provide guidelines for creating a prompt library"
+metadata:
+  title: "Provide guidelines for creating a prompt library"
+  description: "Learn how to design, structure, and operationalize a prompt library aligned with Microsoft best practices for enterprise AI workloads."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-provide-guidelines-creating-prompt-library.md)]

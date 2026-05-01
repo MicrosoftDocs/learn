@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=43d83906-3fe8-423c-8e0e-e35c6c216208]
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you explored the complete workflow for selecting, deploying, and evaluating Foundry Models. You learned how to make informed decisions about model selection using benchmarks, how to deploy models to endpoints, and how to assess their performance using various evaluation approaches.
 
 ## Key takeaways
@@ -31,3 +39,5 @@ With models deployed and evaluated, consider these next steps:
 **Iterate based on user feedback** by collecting real-world usage data and conducting periodic re-evaluations. Continuous improvement keeps your generative AI applications aligned with user needs.
 
 The skills you developed in this module—selecting appropriate models, deploying them effectively, and evaluating their performance—form the foundation for building robust, high-quality generative AI applications using Microsoft Foundry.
+
+::: zone-end

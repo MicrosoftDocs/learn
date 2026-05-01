@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="800" height="500" fill="#ffffff"/>
+
+  <defs>
+    <marker id="probeArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d83b01"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Two levels of AI red teaming</text>
+
+  <!-- ===== Red team box (left side, with breathing room) ===== -->
+  <rect x="12" y="195" width="74" height="65" rx="10" fill="#a52e00"/>
+  <text x="49" y="222" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Red</text>
+  <text x="49" y="240" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">team</text>
+
+  <!-- ===== Outer container: Application level ===== -->
+  <rect x="110" y="55" width="480" height="395" rx="16" fill="#e6f0fa" stroke="#0078d4" stroke-width="2.5"/>
+  <text x="350" y="80" text-anchor="middle" font-size="16" font-weight="600" fill="#005a9e">Application level</text>
+
+  <!-- Inner group: Application components container (dashed border) -->
+  <rect x="128" y="90" width="444" height="122" rx="10" fill="#d1e5f7" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="350" y="108" text-anchor="middle" font-size="11" fill="#005a9e" font-style="italic">Application components</text>
+
+  <!-- App component row 1 -->
+  <rect x="142" y="114" width="130" height="36" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="1.2"/>
+  <text x="207" y="137" text-anchor="middle" font-size="12" fill="#005a9e">Metaprompt</text>
+
+  <rect x="285" y="114" width="130" height="36" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="1.2"/>
+  <text x="350" y="137" text-anchor="middle" font-size="12" fill="#005a9e">Content filters</text>
+
+  <rect x="428" y="114" width="130" height="36" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="1.2"/>
+  <text x="493" y="137" text-anchor="middle" font-size="12" fill="#005a9e">Search / RAG</text>
+
+  <!-- App component row 2 -->
+  <rect x="142" y="160" width="130" height="36" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="1.2"/>
+  <text x="207" y="183" text-anchor="middle" font-size="12" fill="#005a9e">User interface</text>
+
+  <rect x="285" y="160" width="130" height="36" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="1.2"/>
+  <text x="350" y="183" text-anchor="middle" font-size="12" fill="#005a9e">Safety triggers</text>
+
+  <rect x="428" y="160" width="130" height="36" rx="6" fill="#ffffff" stroke="#0078d4" stroke-width="1.2"/>
+  <text x="493" y="183" text-anchor="middle" font-size="12" fill="#005a9e">APIs / Endpoints</text>
+
+  <!-- ===== Inner container: Base LLM ===== -->
+  <rect x="200" y="235" width="330" height="185" rx="14" fill="#fff8f0" stroke="#d83b01" stroke-width="2.5"/>
+  <text x="365" y="260" text-anchor="middle" font-size="16" font-weight="600" fill="#a52e00">Base LLM</text>
+
+  <rect x="215" y="275" width="140" height="38" rx="6" fill="#ffffff" stroke="#d83b01" stroke-width="1.2"/>
+  <text x="285" y="299" text-anchor="middle" font-size="12" fill="#a52e00">Model safety</text>
+
+  <rect x="375" y="275" width="140" height="38" rx="6" fill="#ffffff" stroke="#d83b01" stroke-width="1.2"/>
+  <text x="445" y="299" text-anchor="middle" font-size="12" fill="#a52e00">Capabilities</text>
+
+  <rect x="215" y="325" width="140" height="38" rx="6" fill="#ffffff" stroke="#d83b01" stroke-width="1.2"/>
+  <text x="285" y="349" text-anchor="middle" font-size="12" fill="#a52e00">Model misuse</text>
+
+  <rect x="375" y="325" width="140" height="38" rx="6" fill="#ffffff" stroke="#d83b01" stroke-width="1.2"/>
+  <text x="445" y="349" text-anchor="middle" font-size="12" fill="#a52e00">Limitations</text>
+
+  <!-- ===== Red team probe arrows ===== -->
+  <!-- Dashed arrow: Red team right edge → App components container left edge -->
+  <line x1="86" y1="210" x2="126" y2="155" stroke="#d83b01" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#probeArrow)"/>
+
+  <!-- Solid arrow: Red team right edge → Base LLM container left edge -->
+  <line x1="86" y1="245" x2="198" y2="327" stroke="#d83b01" stroke-width="2" marker-end="url(#probeArrow)"/>
+
+  <!-- ===== Outcome callouts (right side) ===== -->
+  <rect x="610" y="95" width="175" height="95" rx="8" fill="#f0f6ff" stroke="#0078d4" stroke-width="1"/>
+  <text x="697" y="118" text-anchor="middle" font-size="11" font-weight="600" fill="#005a9e">App-level findings</text>
+  <text x="697" y="138" text-anchor="middle" font-size="10" fill="#444444">System-wide failures</text>
+  <text x="697" y="154" text-anchor="middle" font-size="10" fill="#444444">Safety bypass paths</text>
+  <text x="697" y="170" text-anchor="middle" font-size="10" fill="#444444">Content drift</text>
+
+  <rect x="610" y="270" width="175" height="95" rx="8" fill="#fff5f0" stroke="#d83b01" stroke-width="1"/>
+  <text x="697" y="293" text-anchor="middle" font-size="11" font-weight="600" fill="#a52e00">Model-level findings</text>
+  <text x="697" y="313" text-anchor="middle" font-size="10" fill="#444444">Model misuse vectors</text>
+  <text x="697" y="329" text-anchor="middle" font-size="10" fill="#444444">Capability limits</text>
+  <text x="697" y="345" text-anchor="middle" font-size="10" fill="#444444">Improve future models</text>
+
+  <!-- Connecting lines: containers → callouts -->
+  <line x1="572" y1="150" x2="608" y2="142" stroke="#0078d4" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="530" y1="327" x2="608" y2="317" stroke="#d83b01" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- ===== Legend ===== -->
+  <line x1="160" y1="472" x2="200" y2="472" stroke="#d83b01" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="208" y="476" font-size="12" fill="#444444">Application-level probing</text>
+
+  <line x1="420" y1="472" x2="460" y2="472" stroke="#d83b01" stroke-width="2"/>
+  <text x="468" y="476" font-size="12" fill="#444444">Model-level probing</text>
+</svg>

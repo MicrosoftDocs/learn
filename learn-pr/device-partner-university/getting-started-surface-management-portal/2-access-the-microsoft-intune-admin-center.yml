@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.getting-started-surface-management-portal.access-the-microsoft-intune-admin-center
+title: Access the Microsoft Intune Admin Center
+metadata:
+  title: Access The Microsoft Intune Admin Center
+  description: This content is part of the "Getting started with Surface Management Portal" module.
+  ms.date: 04/09/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-access-the-microsoft-intune-admin-center.md)]

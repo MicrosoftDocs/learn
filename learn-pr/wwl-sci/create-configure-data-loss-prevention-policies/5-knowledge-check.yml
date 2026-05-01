@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-data-loss-prevention-policies.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/24/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A tenant-level data loss prevention (DLP) policy blocks social media connectors. An environment-level policy for the development environment places those same connectors in the Non-Business group. What happens to social media connectors in that environment?"
+    choices:
+    - content: "The environment-level policy overrides the tenant-level policy, so social media connectors are available in the Non-Business group."
+      isCorrect: false
+      explanation: "Incorrect: Environment-level policies don't override tenant-level policies. When multiple policies apply to the same environment, the most restrictive combination of connector classifications takes effect."
+    - content: "Social media connectors remain blocked because the most restrictive classification across all applicable policies takes effect."
+      isCorrect: true
+      explanation: "Correct: When multiple DLP policies apply to the same environment, the most restrictive connector classification wins. The tenant-level policy blocks social media connectors, so the less restrictive environment-level classification can't override that."
+    - content: "The policies conflict, so both are suspended until an admin resolves the overlap."
+      isCorrect: false
+      explanation: "Incorrect: Power Platform doesn't suspend conflicting policies. Multiple policies can apply to the same environment, and the most restrictive combination takes effect automatically."
+  - content: "You need to detect and quarantine files containing sensitive financial data that users share externally through a connected Box instance. Which approach should you use?"
+    choices:
+    - content: "Create a DLP policy in the Microsoft Purview portal scoped to the Instances location."
+      isCorrect: false
+      explanation: "Incorrect: DLP policies in the Microsoft Purview portal provide the full DLP rule engine, but quarantining files is a governance action that's only available through file policies in Defender for Cloud Apps."
+    - content: "Create a file policy in the Microsoft Defender portal under Cloud Apps."
+      isCorrect: true
+      explanation: "Correct: File policies in Defender for Cloud Apps provide governance actions like quarantining files and revoking shared links. When you need automated remediation actions specific to a cloud app, file policies are the right choice."
+    - content: "Create a DLP policy in the Power Platform admin center."
+      isCorrect: false
+      explanation: "Incorrect: Power Platform DLP policies govern connector communication for Power Apps and Power Automate. They don't apply to files stored in non-Microsoft cloud apps like Box."
+  - content: "You create a new file policy in Defender for Cloud Apps to detect externally shared files containing credit card numbers across all connected cloud apps. The policy is active and scanning. What should you do before adding a governance action like quarantine?"
+    choices:
+    - content: "Review the initial matches to confirm the policy is detecting the right files, then add governance actions after validating the scope."
+      isCorrect: true
+      explanation: "Correct: File policies begin scanning immediately upon creation. Reviewing matches first lets you verify that filters are correctly scoped before enabling irreversible actions like quarantine or access revocation."
+    - content: "Add the quarantine action immediately so violations are remediated as soon as they're detected."
+      isCorrect: false
+      explanation: "Incorrect: Enabling governance actions on a new policy without reviewing matches first risks widespread disruption. Overly broad filters combined with actions like quarantine can affect files that shouldn't be targeted."
+    - content: "Wait 30 days for the policy to collect enough data, then enable quarantine."
+      isCorrect: false
+      explanation: "Incorrect: There's no required waiting period. The key step is reviewing initial matches to validate that the policy scope is correct, not waiting a fixed amount of time."

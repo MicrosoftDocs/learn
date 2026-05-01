@@ -4,13 +4,14 @@ title: "Improve your reliability with modern operations practices: Capacity plan
 metadata:
   title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
   description: Learn about capacity planning and scaling practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 06/23/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
-summary: Success and the growth that comes with it can be just as much a challenge to your reliability as any other factor. Learn ways to plan for, handle, and estimate costs for your success while still retaining th reliability you need.
+  ms.service: azure
+summary: Success and the growth that comes with it can be just as much a challenge to your reliability as any other factor. Learn ways to plan for, handle, and estimate costs for your success while still retaining the reliability you need.
 abstract: |
   In this module you will:
   - Learn about scalability and the scalability/reliability relationship.
@@ -33,7 +34,8 @@ roles:
 - technology-manager
 products:
 - azure
-prerequisites: None
+prerequisites: |
+  - Familiarity with the previous modules in the [Improve your reliability with modern operations practices](/training/paths/improve-reliability-modern-operations/) learning path is recommended.
 subjects:
 - site-reliability-engineering
 units:
