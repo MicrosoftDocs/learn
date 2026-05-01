@@ -2,10 +2,10 @@
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 03/04/2024
-  author: Orin-Thomas 
+  ms.date: 04/25/2026
+  author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
   module_assessment: true
@@ -19,18 +19,18 @@ quiz:
     choices:
     - content: "Deployments allow for more resource allocation to each pod"
       isCorrect: false
-      explanation: "Incorrect. Deployments don't allocate more resources to each pod, but rather manage a group of identical pods."
+      explanation: "Incorrect. Resource requests and limits are defined in pod specifications. A Deployment manages pod replicas, but it doesn't allocate more resources to each pod."
     - content: "Deployments provide higher security for the pods"
       isCorrect: false
-      explanation: "Incorrect. Deployments don't provide higher security for the pods, but rather ensure high availability and redundancy."
-    - content: "Deployments enable automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      explanation: "Incorrect. Deployments don't provide higher security for pods. They improve workload availability and resiliency by managing pod replicas."
+    - content: "Deployments manage replicas, support rolling updates and rollbacks, and ensure replacement pods are created when pods or nodes fail"
       isCorrect: true
-      explanation: "Correct. Deployments enable automation and validation of the creation and teardown of environments, which helps deliver secure and stable application hosting platforms by ensuring high availability and redundancy."
+      explanation: "Correct. Deployments help maintain the desired number of pod replicas, support controlled rollouts and rollbacks, and use ReplicaSets to ensure replacement pods are created and scheduled on available nodes when failures occur."
   - content: "What is the purpose of a StorageClass in AKS?"
     choices:
     - content: "To determine the access mode of the persistent volume"
       isCorrect: false
-      explanation: "Incorrect. The access mode is determined by the PersistentVolumeClaim, not the StorageClass."
+      explanation: "Incorrect. Access modes are specified in PersistentVolumeClaims and supported by PersistentVolumes, not selected by the StorageClass."
     - content: "To define the size of the persistent volume claim"
       isCorrect: false
       explanation: "Incorrect. The StorageClass defines storage characteristics, not size."
@@ -41,21 +41,43 @@ quiz:
     choices:
     - content: "To deploy a pod with a persistent volume mount"
       isCorrect: false
-      explanation: "Incorrect. A custom storage class is created before creating a persistent volume claim."
+      explanation: "Incorrect. A pod uses a PersistentVolumeClaim and volume mount after the storage class and claim are created."
     - content: "To list the content of a directory in the AKS cluster"
       isCorrect: false
       explanation: "Incorrect. Listing the content of a directory isn't related to creating a custom storage class."
-    - content: "To define the properties of a persistent volume that will be used by a persistent volume claim"
+    - content: "To define the parameters used to dynamically provision persistent volumes for persistent volume claims"
       isCorrect: true
-      explanation: "Correct. A custom storage class defines the properties of a persistent volume that will be used by a persistent volume claim, such as the storage class name, the provisioner, and the reclaim policy."
+      explanation: "Correct. A custom StorageClass can define parameters such as the provisioner, SKU, reclaim policy, volume binding mode, and volume expansion behavior used when dynamically provisioning persistent volumes."
   - content: "What are the storage options available for AKS containerized workloads?"
     choices:
     - content: "Use only Azure Premium SSD v2 for applications that require consistently low latency, high I/O operations per second (IOPS), and high throughput."
       isCorrect: false
-      explanation: "Incorrect. Azure Premium SSD v2 is one of the options for block level access to data, but it isn't the only option."
+      explanation: "Incorrect. Azure Premium SSD v2 is one option for block-level access to data, but it isn't the only storage option for AKS workloads."
     - content: "Use only Azure NetApp Files for shared application data that requires high performance."
       isCorrect: false
-      explanation: "Incorrect. Azure NetApp Files is one of the options for file level access to data, but it isn't the only option."
-    - content: "Choose from platform managed databases, disks, and file and blob storage."
+      explanation: "Incorrect. Azure NetApp Files is one option for file-level access to data, but it isn't the only storage option for AKS workloads."
+    - content: "Choose from managed databases, Azure Disks, Azure Files, Azure NetApp Files, Azure Blob Storage, and Azure Container Storage based on workload requirements."
       isCorrect: true
-      explanation: "Correct. AKS supports both stateless and stateful workloads. To accommodate this requirement, you can apply a range of native Azure services, including managed databases, disks, and file and blob storage. Each of these options offers different SKUs, sizes, and performance characteristics."
+      explanation: "Correct. AKS supports both stateless and stateful workloads. You can use native Azure services such as managed databases, Azure Disks, Azure Files, Azure NetApp Files, Azure Blob Storage, and Azure Container Storage, with different SKUs, sizes, and performance characteristics."
+  - content: "What is the role of the Azure Policy add-on for AKS?"
+    choices:
+    - content: "It checks for Azure Policy assignments, deploys policy definitions to the cluster as Gatekeeper resources and, for supported CEL policies, Kubernetes ValidatingAdmissionPolicy resources, and reports compliance details back to Azure Policy."
+      isCorrect: true
+      explanation: "Correct. The Azure Policy add-on for AKS monitors assignments, deploys Gatekeeper constraint or mutation resources and supported Kubernetes-native ValidatingAdmissionPolicy resources, and reports auditing and compliance details back to Azure Policy."
+    - content: "It replaces Kubernetes Deployments with Azure Resource Manager templates."
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Manager templates can help provision Azure resources, but the Azure Policy add-on doesn't replace Kubernetes Deployments."
+    - content: "It creates StorageClasses and PersistentVolumeClaims for every pod in the cluster."
+      isCorrect: false
+      explanation: "Incorrect. StorageClasses and PersistentVolumeClaims manage storage. The Azure Policy add-on manages policy assignment enforcement and compliance reporting."
+  - content: "What should you expect when validating the effect of a deny Azure Policy assignment on an AKS cluster?"
+    choices:
+    - content: "Existing noncompliant pods are immediately deleted from the cluster."
+      isCorrect: false
+      explanation: "Incorrect. A deny policy doesn't affect the operational status of existing noncompliant resources."
+    - content: "Admission requests for the resource type evaluated by the policy — for example, the noncompliant Pod in this exercise — are blocked. Existing noncompliant resources keep running, controller-created replacement Pods that violate the policy are blocked, and compliance details are reported to Azure Policy."
+      isCorrect: true
+      explanation: "Correct. The deny effect blocks admission of new resources of the type the policy evaluates. For pod-scoped policies, that means the noncompliant Pod is rejected by Gatekeeper or a generated ValidatingAdmissionPolicy; a parent Deployment or ReplicaSet object can still be created, with the rejection visible in the ReplicaSet's events. Existing noncompliant resources continue running, and the add-on reports compliance details to Azure Policy."
+    - content: "The policy changes the node pool operating system so pods can be admitted."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy evaluates and enforces Kubernetes resource configuration; it doesn't change the node pool operating system to admit noncompliant pods."
