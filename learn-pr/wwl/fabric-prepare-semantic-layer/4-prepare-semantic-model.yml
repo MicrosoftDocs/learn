@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-prepare-semantic-layer.prepare-semantic-model
+title: Prepare a semantic model for AI
+metadata:
+  title: Prepare a Semantic Model for AI
+  description: "Configure Prep for AI features including AI data schema, verified answers, and AI instructions in Power BI."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-prepare-semantic-model.md)]

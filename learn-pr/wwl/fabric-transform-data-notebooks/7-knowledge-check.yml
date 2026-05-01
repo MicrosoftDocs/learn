@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-notebooks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for transforming data using notebooks."
+  ms.date: 04/01/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 3
+content: ""
+quiz:
+  questions:
+  - content: "A data team wants to run Spark SQL queries in a PySpark notebook. What do they need to add at the top of a cell to run SQL?"
+    choices:
+    - content: "`%spark`"
+      isCorrect: false
+      explanation: "Incorrect. The `%spark` magic command switches to Scala, not Spark SQL."
+    - content: "`%%sql`"
+      isCorrect: true
+      explanation: "Correct. The `%%sql` magic command lets you run Spark SQL queries in a cell, even when the notebook's default language is PySpark."
+    - content: "`%%pyspark`"
+      isCorrect: false
+      explanation: "Incorrect. The `%%pyspark` magic command switches to PySpark, which is already the default language in this scenario."
+  - content: "An analytics engineer needs to replace null values in a discount column with zero using PySpark. Which method should they use?"
+    choices:
+    - content: "`df.dropna(subset=[\"discount\"])`"
+      isCorrect: false
+      explanation: "Incorrect. The `dropna()` method removes rows with null values instead of replacing them."
+    - content: "`df.fillna({\"discount\": 0})`"
+      isCorrect: true
+      explanation: "Correct. The `fillna()` method replaces null values with the specified value for the given column."
+    - content: "`df.filter(col(\"discount\").isNotNull())`"
+      isCorrect: false
+      explanation: "Incorrect. The `filter()` method with `isNotNull()` removes rows with null values instead of replacing them."
+  - content: "A team writes a nightly transformation that replaces all data in a gold-layer table with freshly processed results. Which write mode should they use?"
+    choices:
+    - content: "`append`"
+      isCorrect: false
+      explanation: "Incorrect. Append mode adds rows to the existing table, which would create duplicate data when running a full refresh."
+    - content: "`overwrite`"
+      isCorrect: true
+      explanation: "Correct. Overwrite mode replaces the entire table with new data, which is appropriate for a full-refresh transformation."
+    - content: "`merge`"
+      isCorrect: false
+      explanation: "Incorrect. Merge operations update or insert individual rows based on a match condition, not replace the entire table."
+  - content: "What does a window function provide that a standard GROUP BY aggregation does not?"
+    choices:
+    - content: "It calculates aggregated values while keeping the individual row detail."
+      isCorrect: true
+      explanation: "Correct. Window functions calculate values across a set of related rows without collapsing the data. Each original row is preserved in the output alongside the calculated value."
+    - content: "It runs faster than GROUP BY on large datasets."
+      isCorrect: false
+      explanation: "Incorrect. Window functions are not inherently faster. Their purpose is to compute values across related rows while preserving row-level detail."
+    - content: "It supports more aggregation functions than GROUP BY."
+      isCorrect: false
+      explanation: "Incorrect. Both window functions and GROUP BY support the same aggregation functions like SUM, AVG, and COUNT. The difference is that window functions preserve row detail."
+  - content: "A table has grown to contain many small Parquet files after weeks of incremental appends. Which command consolidates these files to improve query performance?"
+    choices:
+    - content: "`VACUUM`"
+      isCorrect: false
+      explanation: "Incorrect. VACUUM removes old, unreferenced files from storage. It does not consolidate or compact existing files."
+    - content: "`OPTIMIZE`"
+      isCorrect: true
+      explanation: "Correct. OPTIMIZE performs bin compaction by consolidating small files into larger ones, which improves query performance."
+    - content: "`ANALYZE TABLE`"
+      isCorrect: false
+      explanation: "Incorrect. ANALYZE TABLE collects statistics about a table but does not consolidate files."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-tsql.transform-queries
+title: Transform data with T-SQL queries
+metadata:
+  title: Transform Data with T-SQL Queries
+  description: "Use T-SQL queries to filter, join, aggregate, and reshape data in a Microsoft Fabric warehouse."
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-transform-queries.md)]

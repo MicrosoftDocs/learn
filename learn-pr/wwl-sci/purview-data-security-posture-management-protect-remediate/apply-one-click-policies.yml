@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-protect-remediate.apply-one-click-policies
+title: Apply one-click policies through DSPM objective workflows
+metadata:
+  title: Apply One-Click Policies Through DSPM Objective Workflows
+  description: "Create DLP, sensitivity label, and Insider Risk Management policies from within DSPM objective workflows, and evaluate impact predictions before applying protection."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/apply-one-click-policies.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-prepare-semantic-layer.understand-ai-needs
+title: Understand what AI needs from your data
+metadata:
+  title: Understand What AI Needs from Your Data
+  description: "Learn how Copilot and AI tools consume semantic model metadata through the grounding process."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-ai-needs.md)]

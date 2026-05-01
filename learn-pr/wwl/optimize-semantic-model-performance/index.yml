@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-semantic-model-performance
+metadata:
+  title: Optimize Semantic Model Performance
+  description: "Diagnose and fix semantic model and report performance issues. Use Performance analyzer to identify bottlenecks, optimize DAX calculations, reduce cardinality, and implement aggregations to improve query speed."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Optimize semantic model performance
+summary: "Diagnose and fix semantic model and report performance issues. Use Performance analyzer to identify bottlenecks, optimize DAX calculations, reduce cardinality, and implement aggregations to improve query speed."
+abstract: |
+  By the end of this module, you're able to:
+    - Use Performance analyzer to identify performance bottlenecks
+    - Optimize DAX calculations for better query performance
+    - Reduce cardinality levels to improve model efficiency
+    - Implement aggregations to accelerate queries on large datasets
+    - Apply a systematic approach to troubleshoot common performance issues
+prerequisites: |
+  - Semantic model design experience and DAX authoring skills
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - data-analyst
+products:
+  - fabric
+  - power-bi
+subjects:
+  - data-analytics
+  - data-modeling
+units:
+- learn.wwl.optimize-semantic-model-performance.introduction
+- learn.wwl.optimize-semantic-model-performance.performance-analyzer
+- learn.wwl.optimize-semantic-model-performance.optimize-dax
+- learn.wwl.optimize-semantic-model-performance.reduce-cardinality
+- learn.wwl.optimize-semantic-model-performance.implement-aggregations
+- learn.wwl.optimize-semantic-model-performance.troubleshoot
+- learn.wwl.optimize-semantic-model-performance.exercise
+- learn.wwl.optimize-semantic-model-performance.knowledge-check
+- learn.wwl.optimize-semantic-model-performance.summary
+badge:
+  uid: learn.wwl.optimize-semantic-model-performance.badge
