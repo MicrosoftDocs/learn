@@ -3,7 +3,7 @@ uid: learn.wwl.build-agent-with-custom-tools
 metadata:
   title: Integrate custom tools into your agent
   description: Learn how to build an agent with custom tools using the Microsoft Foundry Agent Service.
-  ms.date: 02/24/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based
