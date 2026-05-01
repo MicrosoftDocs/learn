@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.optimize-dax
+title: Optimize DAX calculations
+metadata:
+  title: Optimize DAX Calculations
+  description: "Optimize DAX calculations for better query performance."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-optimize-dax.md)]

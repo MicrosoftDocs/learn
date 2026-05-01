@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.troubleshoot
+title: Troubleshoot common performance issues
+metadata:
+  title: Troubleshoot Common Performance Issues
+  description: "Apply a systematic approach to troubleshoot common semantic model performance issues."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-troubleshoot.md)]

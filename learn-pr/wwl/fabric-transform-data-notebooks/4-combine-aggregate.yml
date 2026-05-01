@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-notebooks.combine-aggregate
+title: Combine and aggregate data
+metadata:
+  title: Combine and Aggregate Data
+  description: "Combine and aggregate data from multiple sources using Spark SQL and PySpark."
+  ms.date: 04/01/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-combine-aggregate.md)]

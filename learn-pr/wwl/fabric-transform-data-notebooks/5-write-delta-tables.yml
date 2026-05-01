@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-notebooks.write-delta-tables
+title: Write and size Delta tables
+metadata:
+  title: Write and Size Delta Tables
+  description: "Write data to Delta tables and understand table sizing best practices."
+  ms.date: 04/01/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-write-delta-tables.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-tsql.exercise
+title: "Exercise: Transform data with T-SQL"
+metadata:
+  title: "Exercise: Transform Data with T-SQL"
+  description: "Interactive exercise to transform data using T-SQL in a Microsoft Fabric warehouse."
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise.md)]
