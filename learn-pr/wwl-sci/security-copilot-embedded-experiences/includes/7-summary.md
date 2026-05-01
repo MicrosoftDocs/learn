@@ -20,5 +20,5 @@ Now that you completed this module, you can:
 - [Learn about communication compliance](/purview/communication-compliance)
 - [Overview of Microsoft Purview eDiscovery (Premium)](/purview/ediscovery-overview)
 - [Learn about insider risk management](/purview/insider-risk-management)
-- [Microsoft Copilot in Intune (public preview)](/mem/intune/copilot/copilot-intune-overview)
-- [Copilot for Security in Defender for Cloud (Preview)](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
+- [Microsoft Copilot in Intune](/mem/intune/copilot/copilot-intune-overview)
+- [Microsoft Security Copilot in Defender for Cloud](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
