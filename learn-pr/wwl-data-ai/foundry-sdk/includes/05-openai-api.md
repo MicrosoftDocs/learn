@@ -8,6 +8,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 The OpenAI *ChatCompletions* API is commonly used across generative AI models and platforms. Although the *Responses* API is recommended for new project development, it's likely that you'll encounter scenarios where the *ChatCompletions* API is useful for code maintenance or cross-platform compatibility.
 
 ## Submitting a prompt

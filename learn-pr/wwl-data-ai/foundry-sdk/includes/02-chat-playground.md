@@ -8,6 +8,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Before you write code to build a generative AI chat application, it's helpful to explore what your project can do through the Foundry portal. The portal provides interactive tools for testing models and generating code samples that you can use as starting points for your applications.
 
 [![Screenshot of the Model playground in Microsoft Foundry portal.](../media/foundry-playground.png)](../media/foundry-playground.png#lightbox)
