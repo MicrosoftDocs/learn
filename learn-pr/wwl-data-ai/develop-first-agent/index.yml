@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.develop-first-agent
+hidden: true
+metadata:
+  title: Develop your first agent with Microsoft Foundry
+  description: "AI agents are transforming how we interact with technology. In
+    this module, you'll learn how to develop your first AI agent using Microsoft
+    Foundry, a powerful platform for building and deploying AI solutions."
+  ms.date: 4/29/2026
+  ms.update-cycle: 180-days
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ai-usage: ai-assisted
+  ms.topic: module
+  ms.service: azure-ai-foundry
+
+title: Develop your first agent with Microsoft Foundry
+
+summary: "AI agents are transforming how we interact with technology. In this
+  module, you'll learn how to develop your first AI agent using Microsoft
+  Foundry, a powerful platform for building and deploying AI solutions."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe what an AI agent is and its potential applications.
+    - Understand the capabilities of Microsoft Foundry for AI agent development.
+    - Develop an agent in the Microsoft Foundry portal.
+    - Extend your agent's capabilities using developer tools and SDKs.
+prerequisites: |
+  - A conceptual understanding of AI and its applications.
+  - Software development experience - preferably with Python.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+products:
+  - microsoft-foundry
+subjects:
+  - artificial-intelligence
+units:
+  - learn.develop-first-agent.introduction
+  - learn.develop-first-agent.generative-ai-agents
+  - learn.develop-first-agent.microsoft-foundry
+  - learn.develop-first-agent.developer-tools
+  - learn.develop-first-agent.lab-create-your-first-ai-agent
+  - learn.develop-first-agent.summary
+badge:
+  uid: learn.develop-first-agent.badge
