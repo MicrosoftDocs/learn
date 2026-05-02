@@ -14,7 +14,7 @@ In the screenshot below, you can see GCP projects displayed in Defender for Clou
 
 ## Prerequisites
 
-- A Microsoft Azure subscription. If you don't have an Azure subscription, you can [sign up for a free one](https://azure.microsoft.com/pricing/free-trial/).
+- A Microsoft Azure subscription. If you don't have an Azure subscription, you can [sign up for a free one](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn/).
 
 - Microsoft Defender for Cloud  set up on your Azure subscription.
 

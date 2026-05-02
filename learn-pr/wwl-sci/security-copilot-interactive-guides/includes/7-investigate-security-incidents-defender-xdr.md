@@ -6,6 +6,8 @@ When a complex incident is identified in Microsoft Defender XDR—involving a co
 
 In this interactive guide, which takes approximately 10 minutes to complete, you investigate a security incident in Microsoft Defender XDR. You review incident and alert summaries, analyze related entities, and use Security Copilot insights to guide your investigation.
 
+Select the image below to get started.
+
 [![Thumbnail for the Investigate security incidents in Defender XDR interactive guide.](../media/investigate-security-incidents-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive-guide-investigate-security-incidents-in-microsoft-defender-web/story.html?azure-portal=true)
 
 ## Analyze artifacts and pivot to advanced investigation
@@ -13,5 +15,7 @@ In this interactive guide, which takes approximately 10 minutes to complete, you
 After you understand the overall incident context, the next step is to analyze individual alerts and investigate specific artifacts. Security Copilot helps you examine alert details, review device and user context, and identify risks with recommended actions.
 
 In this interactive guide, which guide takes approximately 10 minutes to complete, you continue your investigation by analyzing alerts in Microsoft Defender XDR. You review alert details, examine device and user context, and use Security Copilot to support advanced investigation.
+
+Select the image below to get started.
 
 [![Thumbnail for the Analyze artifacts and investigations in Defender XDR interactive guide.](../media/analyze-artifacts-thumbnail.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive-guide-analyze-artifacts-investigations-in-defender-web/story.html?azure-portal=true)
