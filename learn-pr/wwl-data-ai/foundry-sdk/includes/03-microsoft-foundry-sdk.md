@@ -8,6 +8,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Microsoft Foundry provides flexibility for developing generative AI chat applications. Before you start development, it's important to understand the options that are available, and how to decide which of them to use. Some considerations for developing an application include:
 
 - **Endpoints**: Microsoft Foundry projects provide two endpoints that you can use to connect to and consume project assets, such as model deployments, from client applications. Each project has both a *Project endpoint* and an *Azure OpenAI endpoint*.

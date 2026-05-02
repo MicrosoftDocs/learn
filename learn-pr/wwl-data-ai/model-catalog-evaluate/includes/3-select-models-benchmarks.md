@@ -8,6 +8,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Before deploying a model, you want to understand how it performs across different dimensions. Model benchmarks provide objective, measurable data to help you compare models and make informed selection decisions. The Microsoft Foundry portal offers comprehensive benchmarking tools organized into quality, safety, cost, and performance metrics.
 
 ## Access model benchmarks
