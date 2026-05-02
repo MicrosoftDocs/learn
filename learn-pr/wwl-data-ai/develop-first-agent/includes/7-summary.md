@@ -8,9 +8,9 @@
 
 ::: zone pivot="text"
 
-We've reached the end of this module; and hopefully you enjoyed the opportunity to create and test an AI agent in Microsoft Foundry.
+In this module, we explored how to get started creating agents with Microsoft Foundry; and hopefully you enjoyed the opportunity to create and test an AI agent in Microsoft Foundry.
 
-Now that you've started learning about agent development, why not continue your journey with these resources?
+Why not continue your journey with these resources?
 
 ::: zone-end
 
