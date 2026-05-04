@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-windows-365.what-is-windows-365
+title: What is Windows 365
+metadata:
+  title: What Is Windows 365
+  description: This content is part of the "Introduction to Windows 365" module.
+  ms.date: 04/28/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-windows-365.md)]

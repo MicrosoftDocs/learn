@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-analytics-data-stores
+metadata:
+  title: Explore Analytics Data Stores in Microsoft Fabric
+  description: Understand how Microsoft Fabric unifies analytics storage through OneLake, and evaluate when to use lakehouses, warehouses, or eventhouses for your data workloads.
+  ms.date: 04/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: learning-path
+  ai-usage: ai-generated
+title: Explore analytics data stores in Microsoft Fabric
+prerequisites: |
+  - Familiarity with data concepts and terminology
+summary: |
+  Understand how Microsoft Fabric unifies analytics storage through OneLake, and evaluate when to use lakehouses, warehouses, or eventhouses for your data workloads.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+modules:
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric
+- learn.wwl.discover-data-onelake
+- learn.wwl.get-started-lakehouses
+- learn.wwl.get-started-data-warehouse
+- learn.wwl.get-started-kusto-fabric
+trophy:
+  uid: learn.wwl.explore-analytics-data-stores.trophy

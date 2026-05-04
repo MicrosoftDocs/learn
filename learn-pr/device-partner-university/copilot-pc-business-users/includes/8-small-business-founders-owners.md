@@ -1,49 +1,21 @@
-Innovative and entrepreneurial by nature, small and medium business (SMB) founders and owners are eager to adopt technology that can help spur business growth.
+Small and mid-sized business (SMB) leaders often manage multiple responsibilities across operations, finance, and customer engagement. They benefit from solutions that are practical, efficient, and easy to manage without requiring extensive IT resources.
 
-They believe affordable AI solutions have the potential to increase productivity and improve customer service— helping them gain a competitive edge in their respective industries.
+:::row:::
 
-:::image type="content" border="true" source="../media/small-business-owner-at-work.png" alt-text="Photograph of a man working on a Copilot+ PC in a casual home office setting.":::
+:::column span="4":::
 
-## SMB founder/owner concerns
+## How Copilot+ PCs help small business founders and owners
 
-According to Microsoft research, the five biggest responsibilities of SMB founders and owners are:
+- **Operational efficiency**—On-device AI can support routine tasks and reduce manual work across business functions  
+- **Reliable performance**—Devices support multitasking across essential applications without added complexity  
+- **Built-in security**—Security features are enabled by default, helping protect business data without requiring dedicated IT support
 
-- Sales and business development
-- IT and security
-- Company strategy
-- Day-to-day management
-- Budget management
+:::column-end:::
 
-We also uncovered the top five growth-oriented priorities that SMB founders and owners set:
+:::column span="":::
 
-- Marketing
-- Cost-savings
-- Awareness
-- Efficiency and productivity
-- Suppliers
+:::image type="content" border="true" source="../media/small-business-owner.png" alt-text="Small business owner working on a laptop in a workspace.":::
 
-## Forward-thinking leaders
+:::column-end:::
 
-Similar to C-suite executives, SMB founders and owners are competition-minded. They recognize the pivotal role technology takes in shaping the modern business landscape.
-
-As such, they’re willing to embrace AI to enhance operations and drive growth. Their interest makes sense—research shows more than half of SMB owners who use disruptive tech reported significant productivity benefits.
-
-SMB founder/owner considerations SMB founders and owners have many factors to consider when choosing to adopt AI solutions. Some of these considerations include:
-
-- Managing the financial and human resources required for AI
-- Addressing the shortage of AI-skilled talent in the organization
-- Planning to scale AI as the business grows
-- Navigating industry-specific regulations and compliance
-- Safeguarding sensitive business data and customer information
-- Ensuring that AI investments yield meaningful returns
-
-## Facilitating company growth
-
-Copilot+ PCs can help SMB founders and owners build a culture of innovation — helping them serve their customers more effectively and adapt to meet evolving needs.
-
-Both they and their employees can discover fresh insights, find new angles, and quickly deliver transformative strategies with 
-Copilot+ PCs—helping them drive growth and leave competition behind.
-
-## Source
-
-IDC. (2023). Business Value of AI Survey. https://blogs.microsoft.com/blog/2023/11/02/new-study-validates-the-business-value-and-opportunity-of-ai/
+:::row-end:::

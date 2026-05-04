@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-investigate-risks.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator needs to reconstruct the exact sequence of events for a data loss prevention (DLP) alert, including files accessed, labels applied, and timestamps. Which investigation surface provides this chronological record?"
+    choices:
+    - content: "Activity explorer filtered by user and time range"
+      isCorrect: false
+      explanation: "Incorrect: Activity explorer shows individual events but is better for identifying patterns. The audit log provides the compliance-grade chronological detail needed to reconstruct event sequences."
+    - content: "The unified audit log, accessible through Data Security Posture Management (DSPM)"
+      isCorrect: true
+      explanation: "Correct: The audit log captures exact timestamps, operations, files, and labels applied. It provides the compliance-grade detail needed to reconstruct event sequences for formal investigations."
+    - content: "Reports with advanced filtering"
+      isCorrect: false
+      explanation: "Incorrect: Reports show aggregated trends over time. They help identify behavioral shifts across periods but don't provide granular, chronological event sequences for a specific alert."
+  - content: "DLP alerts spiked this week. Before investigating individual alerts, an administrator wants to determine whether the spike reflects genuine behavioral change or a recently deployed sensitivity information type. Which surface answers this most efficiently?"
+    choices:
+    - content: "Activity explorer filtered to the past seven days"
+      isCorrect: false
+      explanation: "Incorrect: Activity explorer shows individual events but lacks built-in period comparison. Distinguishing behavioral change from policy-driven change requires trend-level analysis."
+    - content: "Reports comparing current and previous weeks"
+      isCorrect: true
+      explanation: "Correct: Reports show trends over time, letting you compare periods and identify whether the increase correlates with policy deployment dates or genuine behavioral shifts."
+    - content: "The audit log filtered for DLP-related operations"
+      isCorrect: false
+      explanation: "Incorrect: The audit log provides high-fidelity event detail but not trend-level comparison. It answers 'what happened' for specific events, not 'what shifted' across a time period."
+  - content: "The risky user investigation Promptbook reports no anomalous behavior for a user. But the administrator knows this user recently resigned and has been downloading large quantities of files. What should they do next?"
+    choices:
+    - content: "Accept the Promptbook result because Security Copilot found no risk."
+      isCorrect: false
+      explanation: "Incorrect: Security Copilot might lack context about employment status. When you have information that contradicts the finding, validate through direct investigation."
+    - content: "Validate through activity explorer and the audit log, filtering for file downloads after the resignation notice."
+      isCorrect: true
+      explanation: "Correct: The administrator has context Copilot lacks. Direct investigation lets them filter for the specific behavior pattern, and Copilot's 30-day timeframe limit might miss earlier activity."
+    - content: "Run the sensitive data protection Promptbook instead."
+      isCorrect: false
+      explanation: "Incorrect: Switching Promptbooks doesn't solve the problem. The administrator has context Security Copilot can't access. Direct investigation is the correct next step."
+  - content: "AI observability flags a customer support agent as high risk for 'oversharing.' The agent has access to customer records. What must the administrator determine before concluding this is a genuine risk?"
+    choices:
+    - content: "Whether the sharing volume matches expected operational levels for a customer support agent."
+      isCorrect: true
+      explanation: "Correct: A customer support agent sharing customer records might be normal operation. Risk exists when behavior exceeds the agent's intended function, not when it does what it was designed to do."
+    - content: "Whether the agent has a DLP policy applied to it."
+      isCorrect: false
+      explanation: "Incorrect: Policy coverage doesn't answer the investigation question. An agent without a DLP policy might still be operating within its intended function."
+    - content: "Whether the Insider Risk Management risk level is critical."
+      isCorrect: false
+      explanation: "Incorrect: Risk level is one signal. A high-risk agent might be operating as designed if its access scope is intentionally broad. Context about intended function matters more."

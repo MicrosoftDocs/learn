@@ -73,13 +73,13 @@ To create the connection to an existing Azure AI Search index, configure the Azu
     - Name of Azure AI Search service – This is the name of your search service.
     - Name of index – This is the name of the index, within your Azure AI search instance, that will be searched.
     - Name of vector field in index – This is the name of the field in the index containing the vector of embeddings.
-    - Name of text field in index – This is the name of the text field in the index.  The contents of this field, in your index, represents the text to search. If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it doesn't exceed the token limit size of the embedding model. The default index field name, chunk, is referring to a chunk of text.
+    - Name of text field in index – This is the name of the text field in the index. The contents of this field, in your index, represents the text to search. If your index was created using the Import and vectorize data wizard, the name of the field containing the text to search may be referred to as chunk, as a default. The reason is that the wizard will chunk your data so that it doesn't exceed the token limit size of the embedding model. The default index field name, chunk, is referring to a chunk of text.
     - Name of title field in index – This is the name of the title field in the index and represents the title of each document to display as a source (optional).
     - Value – This is the access identifier for API authentication.
 
    :::image type="content" source="../media/ai-search-plugin-settings.png" lightbox="../media/ai-search-plugin-settings.png" alt-text="Screen capture of the Azure AI Search plugin parameters.":::
 
-1. To obtain the information that you'll use for the plugin settings, you need to go to the Azure portal. Open a new browser tab to go to the Azure portal (https://portal.azure.com).
+1. To obtain the information that you use for the plugin settings, you need to go to the Azure portal. Open a new browser tab to go to the Azure portal (https://portal.azure.com).
 
 1. From the Azure portal, search for and navigate to Azure AI Search.
 
@@ -112,7 +112,7 @@ To create the connection to an existing Azure AI Search index, configure the Azu
 1. Check that all your parameters are correct for the search instance and index you want to connect to then select save.
 
   > [!IMPORTANT]
-  > Currently, Copilot does not validate your credentials when you save your settings. If they are not correct, you will see an error later when Copilot attempts to run the Azure AI Search plugin. Close the Azure AI Search settings window.
+  > Currently, Copilot doesn't validate your credentials when you save your settings. If they aren't correct, you see an error later when Copilot attempts to run the Azure AI Search plugin. Close the Azure AI Search settings window.
 
 Once connected, prompt Copilot to look for information in the Azure AI Search index. Make sure to mention "Azure AI Search" in the prompt. For example:
 

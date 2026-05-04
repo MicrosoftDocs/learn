@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge on the embedded experiences of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 05/01/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -39,7 +39,7 @@ quiz:
     - content: The organization needs to be licensed for Microsoft Purview eDiscovery (Standard), as a minimum.
       isCorrect: false
       explanation: Incorrect. To use Security Copilot functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
-  - content: After enabling the Entra plugin in Copilot and assigning the appropriate role permissions, an admin navigates to the Risky users report to investigate a user's risky sign-ins. What should the admin do next to view the Copilot generated summary?
+  - content: After enabling the Microsoft Entra plugin in Copilot and assigning the appropriate role permissions, an admin navigates to the Risky users report to investigate a user's risky sign-ins. What should the admin do next to view the Copilot generated summary?
     choices:
     - content: Select the 'Export' option to download the user's risk details.
       isCorrect: false
@@ -61,7 +61,7 @@ quiz:
     - content: Information about individual settings, their impact, and recommended values.
       isCorrect: true
       explanation: Correct. When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values.
-  - content: Copilot in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Security Copilot. What additional requirement must be met to remediate code with Security Copilot?
+  - content: Copilot in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have Security Compute Units (SCUs) assigned for Security Copilot. What additional requirement must be met to remediate code with Security Copilot?
     choices:
     - content: You must enable all the cloud workload protection plans.
       isCorrect: false

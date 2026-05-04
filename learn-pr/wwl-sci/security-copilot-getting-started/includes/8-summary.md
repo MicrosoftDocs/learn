@@ -18,6 +18,8 @@ Now that you've completed this module, you should be able to:
 - [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot)
 - [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 - [Understand authentication in Microsoft Security Copilot](/security-copilot/authentication)
+- [Get started with onboarding to Microsoft Security Copilot](/copilot/security/get-started-security-copilot)
+- [Learn about Security Copilot in Microsoft 365 E5 and E7](/copilot/security/security-copilot-inclusion)
 - [Describe workspaces](/training/modules/security-copilot-describe-core-features/2b-describe-workspaces)
 - [Microsoft Security Copilot agents overview](/copilot/security/agents-overview)
 - [Manage security compute unit usage in Security Copilot](/copilot/security/manage-usage)

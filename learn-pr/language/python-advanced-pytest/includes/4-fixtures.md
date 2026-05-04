@@ -1,151 +1,211 @@
-Fixtures are pytest helper functions used to create modular, scalable, and maintainable tests. You use fixtures to set up preconditions for tests such as database connections, creating test data, or configuring a system state required before a test can run. They can also be used for cleanup after tests are done running.
+Fixtures provide a defined, reliable context for tests. Custom fixtures are Python functions decorated with `@pytest.fixture`. You use them to arrange preconditions such as test data, environment variables, database connections, or files that a test needs before it runs. Fixtures can also define teardown steps that clean up resources after the test or fixture scope is complete.
+
+A test requests a fixture by declaring an argument with the same name as the fixture. Pytest finds the fixture, runs it, and passes the returned or yielded value into the test. For more information about the fixture lifecycle, see the pytest documentation for [fixtures](https://docs.pytest.org/en/stable/how-to/fixtures.html).
+
+Fixtures are most helpful when setup or cleanup is reused, complex, or clearer when named. For simple one-off values, keeping setup code directly in the test can be easier to read.
 
 Key characteristics of pytest fixtures include:
 
-- **Scope control**: Fixtures can be configured to have different scopes using the `scope` parameter (such as `function`, `class`, `module`, or `session`), which determine how often the fixture is called.
-- **Handling of setup and teardown**: Pytest manages the lifecycle of fixtures, automatically setting up and tearing down as required.
-- **Dependency injection**: Fixtures are injected into test functions as arguments, making it clear which tests rely on which fixtures.
-- **Reusability and modularity**: Fixtures can be defined in one place and used across multiple test functions, modules, or even projects.
+- **Scope control**: Fixtures can use the `scope` parameter to control how often pytest creates and destroys the fixture value. Broader scopes can improve performance, but they also share state for longer.
+- **Setup and teardown**: Fixtures can use `yield` for cleanup. Advanced fixtures can also receive the built-in `request` fixture (introduced later in this unit) to inspect the requesting test and call `request.addfinalizer()` to register cleanup callbacks.
+- **Dependency injection**: Tests and fixtures request fixtures as arguments, making dependencies explicit.
+- **Reusability and modularity**: Fixtures can be defined once and reused across test functions, modules, directories, or projects.
+- **Automatic activation**: A fixture defined with `@pytest.fixture(autouse=True)` runs for every test in its availability scope without being listed as an argument. Use this option sparingly because it hides test dependencies.
 
 ## Creating a temporary file fixture
 
-When writing tests that interact with files, it's common to need temporary files that don't clutter the file system post-test. With pytest, we can create a fixture that sets up a temporary file. The fixture uses Python's `tempfile` module to generate temporary files safely, ensuring that they can be used and deleted without affecting the local environment. (In this initial version of our fixture, the file won't be automatically deleted because of the `delete=False` flag. We address file deletion later on.)
+When writing tests that interact with files, it's common to need isolated paths that don't conflict with other tests or depend on a hard-coded location. Pytest provides built-in temporary directory fixtures that are usually the best choice for new tests because pytest creates unique directories and manages their retention. However, creating a small custom fixture is a useful way to understand fixture requests and return values.
 
-Here's what the fixture looks like:
+The following fixture returns a factory function. The fixture itself doesn't create a file during setup. Instead, the nested `create()` function creates a file when the test calls `tmp_file()`:
 
 ```python
-import pytest
+from pathlib import Path
 import tempfile
+
+import pytest
+
 
 @pytest.fixture
 def tmp_file():
-    def create():
-        # Create a named temporary file that persists beyond the function scope
+    def create(contents=""):
         temp = tempfile.NamedTemporaryFile(delete=False)
-        return temp.name
+        try:
+            path = Path(temp.name)
+        finally:
+            temp.close()
+
+        path.write_text(contents, encoding="utf-8")
+        return path
+
     return create
 ```
 
-In this setup, `tmp_file()` acts as the fixture. The fixture's name is how tests reference it. Within the fixture, the nested function `create()` creates the file only when called, rather than upon fixture setup. This allows precise control over when the temporary file is created, which is useful in tests where timing and file state are critical.
+The fixture uses Python's `tempfile.NamedTemporaryFile()` function with `delete=False` so that the file still exists after it is closed. The file handle is closed before the test receives the path, which is important when tests need to reopen or delete the file, especially on Windows.
 
-Within the nested function `create()`, a temporary file is created and then returns the absolute path to it. Here's an example of how a test might use the fixture we wrote:
+Here's an example of how a test might use the fixture:
 
 ```python
-import os
-
 def test_file(tmp_file):
-    path = tmp_file()
-    assert os.path.exists(path)
+    path = tmp_file("ready")
+    assert path.read_text(encoding="utf-8") == "ready"
 ```
 
-A test uses a fixture by specifying the name of the fixture as an argument. Our simple use case can be easily expanded by writing to the file or making modifications such as changing permissions or ownership.
+In this setup, `tmp_file` is the fixture name, and the test receives the `create()` function that the fixture returns. Calling `tmp_file()` inside the test creates the file, writes the requested contents, and returns a `pathlib.Path` object for it.
 
-### Scope management
+> [!NOTE]
+> Be careful when combining fixtures with context managers. If a fixture returns a path or handle from inside a `with` block, the context manager might close or delete the resource before the test uses it. Keep the context manager open across a `yield` when the test needs the managed resource, or close the resource intentionally before returning and clean it up later.
 
-In pytest, managing the lifecycle of test resources through setup and teardown routines is crucial for maintaining clean and efficient test environments. You also want to safeguard the integrity of tests by ensuring that each test starts with a known, consistent state. By default, pytest fixtures operate with a `function` scope, which impacts behavior in two ways:
+## Scope management
 
-- **Lifecycle per test**: The fixture's return value is recalculated for every test function that uses it, ensuring that each test operates with a fresh state.
-- **Cleanup after each use**: Any necessary cleanup operations are performed after each test that utilizes the fixture.
+By default, pytest fixtures use `function` scope. A function-scoped fixture is created when a test requests it and is destroyed at the end of that test. If the fixture uses teardown code, pytest runs that teardown code at the end of the fixture's scope.
 
-Pytest also allows fixtures to be scoped more broadly to optimize performance and resource usage. Scoping is particularly useful in situations like managing database state or when you have complex state setups that are time-consuming to establish. The four scopes available are:
+Pytest also allows broader fixture scopes to optimize expensive setup work. The built-in fixture scope names are:
 
-- `function`: Default scope, the fixture is executed once per test
-- `class`: The fixture runs once per test class.
-- `module`: Runs once for a module.
-- `session`: Runs once per test session. This scope is useful for expensive operations that need to persist throughout the entire test session, such as initializing a service or starting a database server.
+- `function`: The default scope. The fixture is created once per test function.
+- `class`: The fixture is created once per test class.
+- `module`: The fixture is created once for the module.
+- `package`: The fixture is created once for the package where it's defined and torn down after the last test in that package, including tests in subpackages and subdirectories.
+- `session`: The fixture is created once for the test session.
 
-In this case, _running once_ means that the return value is cached. So a fixture that has a scope of "module" can get called several times in a test module, but the return value is that of the first test that called it.
+For advanced cases, `scope` can also be a callable that returns one of these scope names. Pytest calls the function once when it defines the fixture and passes the keyword arguments `fixture_name` and `config`. See the pytest docs on [dynamic scope](https://docs.pytest.org/en/stable/how-to/fixtures.html#dynamic-scope) for details.
 
-Here's how the `tmp_file()` fixture would look with a module scope:
+In this context, _created once_ means that pytest caches the fixture value for that scope. For example, a module-scoped fixture can be requested by several tests in one module, but those tests receive the same cached fixture value. A parametrized fixture is the exception: pytest may create a new value for each parameter set within the scope.
+
+Keep fixtures function-scoped unless sharing setup is safe and useful. Mutable objects, open connections, environment changes, and files can leak state between tests when they're cached by a broader scope.
+
+Here's how the `tmp_file` fixture would look with a module scope:
 
 ```python
-import pytest
+from pathlib import Path
 import tempfile
+
+import pytest
+
 
 @pytest.fixture(scope="module")
 def tmp_file():
-    def create():
+    def create(contents=""):
         temp = tempfile.NamedTemporaryFile(delete=False)
-        return temp.name
+        try:
+            path = Path(temp.name)
+        finally:
+            temp.close()
+
+        path.write_text(contents, encoding="utf-8")
+        return path
+
     return create
 ```
 
-### Cleanup management
+Because this fixture returns a factory function, `scope="module"` caches the factory function for the module. The factory still creates a new file each time a test calls `tmp_file()`. If the fixture created and returned a file path directly, then every test in the module would receive the same path.
 
-The previous code specifying the `tmp_file` fixture creates a temporary file, but it doesn't automatically handle cleanup after tests are completed. To ensure that temporary files aren't left behind, you can use pytest's `request` fixture to register a cleanup function.
+## Cleanup management
 
-Here's how you can modify the `tmp_file` fixture to include automatic cleanup:
+The previous versions of the `tmp_file` fixture create temporary files, but they don't remove those files. Pytest recommends `yield` fixtures for straightforward cleanup. Code before `yield` performs setup and supplies a value to the test. Code after `yield` runs during teardown, even when the test fails after setup completes. If a `yield` fixture raises before it reaches `yield`, pytest doesn't run the teardown code after that `yield`, but it still tears down any earlier fixtures that completed successfully for the same test.
+
+The following version tracks every file created by the factory and attempts to delete those files after the test finishes:
 
 ```python
-import pytest
+from pathlib import Path
 import tempfile
-import os
 
-@pytest.fixture(scope="module")
-def tmp_file(request):
-    # Create a temporary file that persists beyond the function scope
-    temp = tempfile.NamedTemporaryFile(delete=False)
+import pytest
 
-    def create():
-        # Returns the path of the temporary file
-        return temp.name
 
-    def cleanup():
-        # Remove the file after the tests are done
-        os.remove(temp.name)
+@pytest.fixture
+def tmp_file():
+    paths = []
 
-    # Register the cleanup function to be called after the last test in the module
-    request.addfinalizer(cleanup)
+    def create(contents=""):
+        temp = tempfile.NamedTemporaryFile(delete=False)
+        try:
+            path = Path(temp.name)
+        finally:
+            temp.close()
 
-    return create
+        paths.append(path)
+        path.write_text(contents, encoding="utf-8")
+        return path
+
+    yield create
+
+    for path in paths:
+        try:
+            path.unlink()
+        except FileNotFoundError:
+            pass
 ```
 
-By using `request.addfinalizer()` and passing the nested `cleanup()` function, the cleanup gets called depending on the scope. In this case, the scope is `module`, so after all tests in a module pytest calls that cleanup function.
+With the default `function` scope, pytest runs the cleanup code after each test that requests `tmp_file`. If you change the fixture to `scope="module"`, pytest runs the cleanup during module teardown, after pytest finishes running tests in that module. When several `yield` fixtures are active, pytest runs their teardown code in reverse order of setup.
+
+The cleanup uses `try`/`except FileNotFoundError` because a test might delete the file itself. On Windows, deletion can also fail with `PermissionError` if a test left the file open, so make sure tests close any handles they create. You can also use `request.addfinalizer()` for cleanup when you need more control. Register the finalizer only after the resource has been created, because pytest runs an added finalizer during teardown even if the fixture later raises. For straightforward cleanup, `yield` fixtures are usually easier to read.
 
 ## Using conftest.py
 
-Instead of including your fixtures in your test files you can save them in a _conftest.py_ file. All fixtures in _conftest.py_ are automatically available to your tests in the same directory without having to explicitly import them.
+Instead of defining fixtures in each test file, you can save shared fixtures in a file named `conftest.py`. Fixtures in `conftest.py` are automatically available to tests in the same directory and its subdirectories without explicit imports.
+
+You can have multiple `conftest.py` files in a test suite. Pytest resolves fixture availability from the perspective of the requesting test: fixtures in the test class or module are considered in that local scope, then fixtures from `conftest.py` files in the same directory and parent directories. Tests can search upward for fixtures, but they don't search downward into sibling or child directories. Plugin fixtures are searched after local fixtures. Don't import from `conftest.py` in test files; let pytest discover it.
 
 ## Exploring built-in fixtures
 
-Pytest has many built-in fixtures designed to streamline testing. These fixtures can handle setup and cleanup automatically, allowing you to focus on writing your test cases instead of test management.
+Pytest has many built-in fixtures designed to streamline testing. These fixtures handle common setup and cleanup tasks so that you can focus on writing test assertions. To review the complete list, see the pytest reference for [built-in fixtures](https://docs.pytest.org/en/stable/reference/fixtures.html#built-in-fixtures).
 
 Key built-in fixtures include:
 
-- `cache`: Used to create and manage test-level cache, which is useful for storing data between test sessions.
-- `capsys`: Captures and allows inspection of `stderr` and `stdout`, making it easy to inspect and test console outputs.
-- `tmpdir`: Provides a temporary directory for files that need to be created and used during tests.
-- `monkeypatch`: Provides a way to safely modify the behavior and values of objects, functions, and your os environment. 
+- `cache`: Stores and retrieves values across pytest runs.
+- `capsys`: Captures text written to `stdout` and `stderr`.
+- `tmp_path`: Provides a `pathlib.Path` object for a temporary directory that's unique to each test function invocation, including each parametrized case.
+- `tmpdir`: Provides a temporary directory as a legacy `py.path.local` object. For new tests, pytest recommends `tmp_path`.
+- `monkeypatch`: Temporarily modifies classes, functions, dictionaries, environment variables, and other objects.
+- `request`: Provides information about the currently executing test or fixture and supports finalizers.
 
-### The role of monkeypatching in testing 
+Other commonly used built-in fixtures include `caplog` (captures log records), `capfd` (captures file-descriptor-level output), `tmp_path_factory` (creates session-scoped temporary directories), and `pytestconfig` (exposes the active pytest configuration). For the full list, see the pytest reference for [built-in fixtures](https://docs.pytest.org/en/stable/reference/fixtures.html#built-in-fixtures).
 
-Testing code that tightly integrates with external resources like databases or external APIs can be challenging due to the dependencies involved. A technique called _monkey patching_ involves temporarily modifying your system during test runs, which allows for independence from external systems and lets you safely alter the state and behavior of your operating system environment during testing.
+The next exercise uses `tmp_path` and `pathlib.Path` to create temporary files in a per-test directory. You might encounter `tmpdir` in existing pytest projects, but for new code, prefer `tmp_path`. By default, pytest keeps temporary directories from the last few test runs, so seeing recent pytest-managed temporary folders after a run is expected. For more information, see the pytest documentation for [temporary directories and files](https://docs.pytest.org/en/stable/how-to/tmp_path.html).
 
-Here's an example of how to override the `os.path.exists()` function using the `monkeypatch` fixture:
+## The role of monkeypatching in testing
 
-```python
-import os
+The previous fixtures created and cleaned up test resources. Another common use of fixtures is *temporary state modification* in tests that need to isolate code from external state. For those cases, pytest provides the built-in `monkeypatch` fixture, which is itself a pytest fixture and a good example of automatic teardown.
 
-def test_os(monkeypatch):
-    # Override os.path.exists to always return False
-    monkeypatch.setattr('os.path.exists', lambda x: False)
-    assert not os.path.exists('/')
-```
+Testing code that depends on external resources, global configuration, or operating system state can be challenging. The `monkeypatch` fixture lets you temporarily change attributes, dictionary values, environment variables, the current working directory, or `sys.path` for a test. Pytest automatically undoes those changes after the requesting test function or fixture finishes.
 
-Alternatively, you can use the `setattr()` method with direct reference to the object and attribute:
+Here's an example that replaces a function attribute on a small project module for one test. Patching narrowly scoped application code (instead of standard-library functions used by pytest itself) keeps the test focused and avoids accidentally breaking pytest's own behavior:
 
 ```python
-def test_os(monkeypatch):
-    # Specify the object and attribute to override
-    monkeypatch.setattr(os.path, 'exists', lambda x: False)
-    assert not os.path.exists('/')
+# project_module.py
+def get_user_id():
+    # Imagine this calls a remote service.
+    return "real-user"
 ```
 
-Aside from setting attributes and overriding methods, the `monkeypatch` fixture can set and delete environment variables, change dictionary values, and modify system paths. The `monkeypatch` fixture automatically reverts any changes after each test but care should still be taken when using the `monkeypatch` fixture. Here are some reasons to be careful when using it:
+```python
+# test_project.py
+import project_module
 
--**Code clarity and maintenance**: Overusing `monkeypatch` or using it in complex ways can make test harder to understand and maintain. When you read your test results, it might not be immediately clear how the components are supposed to behave normally vs. how they're modified for testing.
--**Test validity**: Monkeypatching can sometimes lead to tests that pass under artificial conditions that are very different from the production environment. This can create a false sense of security, as the tests might pass because the test altered the system's behavior too dramatically.
--**Overdependence on implementation details**: Tests that rely on monkeypatching might be tightly coupled to specific implementation details of the code they're testing. This can make tests brittle and susceptible to breaking with even minor changes to the underlying codebase. 
--**Debugging complexity**: Debugging tests that use `monkeypatch` can be more complex, especially if the patch changes fundamental aspects of the applications behavior. Understanding why a test is failing might require a deeper dive into how the components are being modified during the test.
 
-While `monkeypatch` is a powerful tool for creating isolated and controlled test environments, it should be used judiciously and with a clear understanding of how it affects the test suite and the application's behavior.
+def test_user_id(monkeypatch):
+    monkeypatch.setattr(project_module, "get_user_id", lambda: "test-user")
+    assert project_module.get_user_id() == "test-user"
+```
+
+You can also specify the target as a dotted import path string. Pytest resolves and imports the named module when it applies the patch, which is convenient when the test file doesn't already need the module. The later `import project_module` in this example is only so the test can reference the patched function for the assertion:
+
+```python
+# test_project.py
+def test_user_id_by_path(monkeypatch):
+    monkeypatch.setattr("project_module.get_user_id", lambda: "test-user")
+
+    import project_module
+    assert project_module.get_user_id() == "test-user"
+```
+
+Aside from setting attributes and overriding methods with `setattr()`, the `monkeypatch` fixture can delete attributes with `delattr()`, set and delete environment variables (`setenv`, `delenv`), set and delete dictionary items (`setitem`, `delitem`), prepend to `sys.path` (`syspath_prepend`), change the current working directory (`chdir`), and create a nested patching scope with `context()`. The default `raising=True` behavior for `setattr()` and `delattr()` helps catch misspelled targets. Use `monkeypatch.context()` when a patch should be undone before the rest of a test or fixture teardown continues. For more information, see the pytest documentation for [monkeypatching](https://docs.pytest.org/en/stable/how-to/monkeypatch.html).
+
+While `monkeypatch` is powerful, use it carefully:
+
+- **Code clarity and maintenance**: Overusing `monkeypatch` or using it in complex ways can make tests harder to understand and maintain.
+- **Test validity**: Monkeypatching can create tests that pass under artificial conditions that are very different from production behavior.
+- **Overdependence on implementation details**: Tests that patch internal implementation details can become brittle when the underlying code changes.
+- **Debugging complexity**: Debugging tests that use `monkeypatch` can be harder when a patch changes fundamental application behavior.
+
+Use `monkeypatch` when it helps isolate a focused behavior, and keep each patch as small and explicit as possible.

@@ -4,8 +4,8 @@ metadata:
   title: Deploy an Azure Kubernetes Service cluster
   description: This module covers the deployment of a managed Kubernetes cluster in Azure using Azure Kubernetes Service (AKS).
   ms.date: 03/08/2024
-  author: wwlpublish
-  ms.author: bradj
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: module
   ms.custom:
   - N/A

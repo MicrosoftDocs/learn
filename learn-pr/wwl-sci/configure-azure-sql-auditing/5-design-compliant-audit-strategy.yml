@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-auditing.design-compliant-audit-strategy
+title: Design a compliant audit strategy
+metadata:
+  title: Design a Compliant Audit Strategy
+  description: "Design an audit strategy that combines immutable storage for tamper-resistant compliance records with Log Analytics for operational monitoring. Then you enforce coverage using Azure Policy."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-design-compliant-audit-strategy.md)]

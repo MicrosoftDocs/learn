@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-sql-platform-security
+metadata:
+  title: Configure Platform-Level Security for Azure SQL
+  description: "Configure authentication, network isolation, encryption, and access controls for Azure SQL Database and SQL Managed Instance. Implement Microsoft Entra ID–only authentication with managed identity access for AI workloads, deploy private endpoints, and apply transparent data encryption, dynamic data masking, and row-level security to protect sensitive financial data."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-sql-database
+  ai-usage: ai-assisted
+title: Configure platform-level security for Azure SQL
+summary: Configure authentication, network isolation, encryption, and access controls for Azure SQL Database and SQL Managed Instance. Implement Microsoft Entra ID–only authentication with managed identity access for AI workloads, deploy private endpoints, and apply transparent data encryption, dynamic data masking, and row-level security to protect sensitive financial data.
+abstract: |
+  After completing this module, you'll be able to:
+    - Configure Microsoft Entra ID authentication and disable SQL authentication on Azure SQL
+    - Implement network isolation for Azure SQL using private endpoints and firewall rules
+    - Enable transparent data encryption and configure customer-managed keys for regulated workloads
+    - Apply dynamic data masking and row-level security to restrict access to sensitive data
+prerequisites: |
+  - Familiarity with Microsoft Entra ID and Azure role-based access control (RBAC)
+  - Understanding of Azure networking concepts including virtual networks, subnets, and private endpoints
+  - Familiarity with Azure Key Vault at a conceptual level
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-sql-database
+  - azure-sql-managed-instance
+subjects:
+  - security
+  - cloud-security
+  - databases
+units:
+  - learn.wwl.configure-azure-sql-platform-security.introduction
+  - learn.wwl.configure-azure-sql-platform-security.configure-authentication-managed-identity
+  - learn.wwl.configure-azure-sql-platform-security.implement-network-isolation
+  - learn.wwl.configure-azure-sql-platform-security.encrypt-protect-data
+  - learn.wwl.configure-azure-sql-platform-security.apply-data-masking-row-level-security
+  - learn.wwl.configure-azure-sql-platform-security.knowledge-check
+  - learn.wwl.configure-azure-sql-platform-security.summary
+badge:
+  uid: learn.wwl.configure-azure-sql-platform-security.badge

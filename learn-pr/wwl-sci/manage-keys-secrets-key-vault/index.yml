@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.manage-keys-secrets-key-vault
+metadata:
+  title: Manage Keys and Secrets in Azure Key Vault
+  description: "Manage the security lifecycle of cryptographic keys and secrets in Azure Key Vault. Configure HSM-backed keys, implement BYOK, automate key rotation, and build zero-downtime secret rotation using dual-credential patterns."
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-key-vault
+  ai-usage: ai-assisted
+title: Manage keys and secrets in Azure Key Vault
+summary: Manage the security lifecycle of cryptographic keys and secrets in Azure Key Vault. Configure HSM-backed keys, implement Bring Your Own Key (BYOK) for regulatory scenarios, set up automated key rotation, and build zero-downtime secret rotation using dual-credential patterns.
+abstract: |
+  After completing this module, you'll be able to:
+    - Create and manage cryptographic keys, including HSM-protected and BYOK scenarios
+    - Configure automated key rotation policies to minimize cryptographic exposure risk
+    - Build zero-downtime secret rotation using dual-credential and automated rotation patterns
+prerequisites: |
+  - Azure Key Vault deployed and secured with access controls configured
+  - Understanding of Azure RBAC and managed identities
+  - Familiarity with cryptographic concepts including keys and secrets
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-key-vault
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-keys-secrets-key-vault.introduction
+- learn.wwl.manage-keys-secrets-key-vault.manage-keys
+- learn.wwl.manage-keys-secrets-key-vault.manage-secrets
+- learn.wwl.manage-keys-secrets-key-vault.knowledge-check
+- learn.wwl.manage-keys-secrets-key-vault.summary
+badge:
+  uid: learn.wwl.manage-keys-secrets-key-vault.badge

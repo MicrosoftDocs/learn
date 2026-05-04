@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.assess-classification-labeling-asset-explorer
+title: Assess data classification and labeling with asset explorer
+metadata:
+  title: Assess Data Classification and Labeling with Asset Explorer
+  description: "Learn to use asset explorer in DSPM to view data classification and labeling coverage across the organization and identify gaps."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/assess-classification-labeling-asset-explorer.md)]

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.design-semantic-models-scale
+metadata:
+  title: Design Semantic Models for Scale in Microsoft Fabric
+  description: "Design semantic models for scale in Microsoft Fabric. Choose storage modes, design star schema relationships, create scalable calculation patterns, and configure settings for large datasets and concurrent consumption."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Design semantic models for scale in Microsoft Fabric
+summary: "Design semantic models for scale in Microsoft Fabric. Choose the right storage mode, design star schema relationships for clarity and performance, create scalable calculation patterns, and configure settings that support large datasets and concurrent consumption."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Choose a storage mode based on data freshness, performance, and source location.
+    - Design star schema relationships for clarity and performance in a semantic model.
+    - Design calculations that stay performant and maintainable as data volumes and team size grow.
+    - Configure semantic model settings that support large-scale consumption.
+prerequisites: |
+  - Understanding of data modeling concepts, including star schema, fact tables, and dimension tables.
+  - Experience with Microsoft Fabric and Power BI.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+  - power-bi
+subjects:
+  - data-modeling
+units:
+- learn.wwl.design-semantic-models-scale.introduction
+- learn.wwl.design-semantic-models-scale.storage-modes
+- learn.wwl.design-semantic-models-scale.relationships
+- learn.wwl.design-semantic-models-scale.dynamic-elements
+- learn.wwl.design-semantic-models-scale.enterprise-settings
+- learn.wwl.design-semantic-models-scale.exercise
+- learn.wwl.design-semantic-models-scale.knowledge-check
+- learn.wwl.design-semantic-models-scale.summary
+badge:
+  uid: learn.wwl.design-semantic-models-scale.badge

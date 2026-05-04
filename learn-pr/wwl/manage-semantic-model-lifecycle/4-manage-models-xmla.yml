@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.manage-models-xmla
+title: Manage semantic models with the XMLA endpoint
+metadata:
+  title: Manage Semantic Models with the XMLA Endpoint
+  description: "Inspect, validate, and manage semantic models programmatically using SemPy in Fabric notebooks and external tools through the XMLA endpoint."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-manage-models-xmla.md)]

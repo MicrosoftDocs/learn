@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-semantic-model-security.exercise
+title: 'Exercise: Implement RLS for a semantic model'
+metadata:
+  title: 'Exercise: Implement RLS for a Semantic Model'
+  description: "Implement row-level security for a semantic model using dynamic security patterns."
+  ms.date: 04/15/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+labId: 124444
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

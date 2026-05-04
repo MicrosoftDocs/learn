@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.foundations-agentic-ai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the Foundations of Agentic AI in GitHub.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/24/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-summary.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-tsql.create-views
+title: Create views for reusable logic
+metadata:
+  title: Create Views for Reusable Logic
+  description: "Create views in a Microsoft Fabric warehouse to create reusable transformation logic."
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-views.md)]

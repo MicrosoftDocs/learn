@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.investigate-security-incidents-defender-xdr
+title: Investigate security incidents in Microsoft Defender XDR
+metadata:
+  title: Investigate Security Incidents in Microsoft Defender XDR
+  description: "Use Security Copilot to investigate security incidents, analyze artifacts, and perform advanced investigation in Microsoft Defender XDR."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 22
+content: |
+  [!include[](includes/7-investigate-security-incidents-defender-xdr.md)]

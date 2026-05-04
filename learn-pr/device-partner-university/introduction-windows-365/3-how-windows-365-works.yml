@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-windows-365.how-windows-365-works
+title: How Windows 365 works
+metadata:
+  title: How Windows 365 Works
+  description: This content is part of the "Introduction to Windows 365" module.
+  ms.date: 04/28/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-how-windows-365-works.md)]

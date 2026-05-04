@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-ai-ready-analytics-data
+metadata:
+  title: Prepare AI-Ready Analytics Data in Microsoft Fabric
+  description: Prepare your semantic layer for AI by adding metadata and linguistic context to gold-layer data stores and semantic models, then generate ontologies that AI agents use to answer business questions.
+  ms.date: 04/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: learning-path
+  ai-usage: ai-generated
+title: Prepare AI-ready analytics data in Microsoft Fabric
+prerequisites: |
+  - Experience designing and publishing semantic models in Microsoft Fabric
+  - Familiarity with DAX measures and relationships in semantic models
+  - Basic understanding of how AI agents consume structured data
+summary: |
+  Prepare your semantic layer for AI by adding metadata and linguistic context to gold-layer data stores and semantic models, then generate ontologies that AI agents use to answer business questions.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-modeling
+modules:
+- learn.wwl.fabric-prepare-semantic-layer
+- learn.wwl.understand-fabric-iq-fundamentals
+- learn.wwl.create-ontology-with-fabric-iq
+trophy:
+  uid: learn.wwl.prepare-ai-ready-analytics-data.trophy

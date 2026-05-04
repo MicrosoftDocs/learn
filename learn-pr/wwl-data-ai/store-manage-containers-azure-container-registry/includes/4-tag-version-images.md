@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=af2835eb-5226-4c86-b3dc-26faf5c5e96c]
+
+> [!TIP]
+> Select the **Text** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The tagging strategy you choose affects deployment reliability, rollback capabilities, and image maintenance. This unit covers tagging approaches, versioning schemes, and lifecycle management practices that support production AI deployments.
 
 ## Understand tagging strategies
@@ -195,6 +206,8 @@ Follow these practices to maintain a reliable container image strategy:
 - **Implement retention policies:** Clean up orphaned images to control storage costs. Schedule regular purge tasks.
 - **Include build metadata:** Add traceability information to tags for debugging and auditing. Link images to builds and source commits.
 - **Document your tagging scheme:** Ensure your team follows consistent conventions. Document which tags are stable versus unique and when to use each.
+
+::: zone-end
 
 ## Additional resources
 

@@ -1,6 +1,6 @@
 Learn how to orchestrate data movement and transformations in Azure Data Factory.
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 * Understand the data factory control flow
 * Work with data factory pipelines
@@ -10,11 +10,11 @@ After completing this module, you will be able to:
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
+Before taking this module, it's recommended that the student is able to:
 
-* Log into the Azure portal
+* Log in to the Azure portal
 * Explain and create resource groups
-* Describe Azure Data Factory and it's core components
+* Describe Azure Data Factory and its core components
 * Ingest data into Azure Data Factory using the Copy Activity
 
 

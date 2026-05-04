@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-govern-analytics-data.classify-protect
+title: Classify and protect data in Microsoft Fabric
+metadata:
+  title: Classify and Protect Data in Microsoft Fabric
+  description: "Learn how to apply sensitivity labels from Microsoft Purview Information Protection to classify and protect data in Microsoft Fabric."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-classify-protect.md)]

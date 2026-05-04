@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.review-posture-changes-reports
+title: Use reports to analyze posture changes
+metadata:
+  title: Use reports to analyze posture changes
+  description: "Learn to use Data Security Posture Management (DSPM) reports to assess how data security posture is changing over time across AI interactions, data protection, and risk activity."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/review-posture-changes-reports.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A data loss prevention (DLP) coverage report shows 48 active policies. The detail table reveals that 17 of them are still in Test mode. How should an administrator factor this into the assessment?"
+    choices:
+    - content: "All 48 policies count toward enforcement, so the headline coverage number is accurate."
+      isCorrect: false
+      explanation: "Incorrect: Test-mode policies generate alerts but don't block activity. Counting them as enforcement overstates actual coverage."
+    - content: "The 17 Test-mode policies should be removed to keep the coverage report clean."
+      isCorrect: false
+      explanation: "Incorrect: Test mode is a deliberate validation stage. Removing those policies discards work in progress and doesn't address the coverage question."
+    - content: "Test-mode policies monitor without enforcing, so the gap between intent and enforcement is worth calling out, especially for the highest-risk areas."
+      isCorrect: true
+      explanation: "Correct: The useful finding is whether policies covering the highest-risk areas are still in Test mode rather than enforcing. That's the gap to surface."

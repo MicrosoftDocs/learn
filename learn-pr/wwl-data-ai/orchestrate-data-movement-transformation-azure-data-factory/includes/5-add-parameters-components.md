@@ -1,35 +1,37 @@
 ## Parameterize linked services in Azure Data Factory
 
-Within Azure Data Factory, it is possible to parameterize a linked service in which you can pass through dynamic values during run time. A use-case for this scenario is connecting to several different databases that are on the same SQL server, in which you might think about parameterizing the database name in the linked service definition. The benefit of doing this is that you don't have to create a single linked service for each database that is on the same SQL Server.
+Within Azure Data Factory, it's possible to parameterize a linked service in which you can pass through dynamic values during run time. A use-case for this scenario is connecting to several different databases that are on the same SQL server, in which you might think about parameterizing the database name in the linked service definition. The benefit of doing this is that you don't have to create a single linked service for each database that is on the same SQL Server.
 
-It is also possible to parameterize other properties of the linked service like a username.
+It's also possible to parameterize other properties of the linked service like a username.
 
 If you decide to parameterize linked services in Azure Data Factory, you can do this in the Azure Data Factory user interface, the Azure portal, or a programming interface of your preference.
 
-If you choose to author the linked service through the user interface, Data Factory can provide you with built-in parameterization for some of the connectors:
+If you choose to author the linked service through the user interface, Data Factory provides built-in parameterization for over 50 connector types, including commonly used connectors such as:
 
-* Amazon Redshift
-* Azure Cosmos DB (SQL API)
-* Azure Database for MySQL
 * Azure SQL Database
-* Azure Synapse Analytics (formerly SQL DW)
-* MySQL
-* Oracle
+* Azure SQL Managed Instance
+* Azure Blob Storage
+* Azure Data Lake Storage Gen2
+* Azure Cosmos DB for NoSQL
+* Azure Databricks
 * SQL Server
-* Generic HTTP
-* Generic REST
+* Salesforce
+* Snowflake
+* Generic HTTP and Generic REST
 
-If you go to the creation/edit blade of the linked service, you will find the options for parameterizing.
+For the full list of natively supported connectors, see [Parameterize linked services in Azure Data Factory](/azure/data-factory/parameterize-linked-services#supported-linked-service-types).
+
+If you go to the creation/edit blade of the linked service, you'll find the options for parameterizing.
 
 > [!div class="mx-imgBorder"]
-> [![Parameter settings in Linked Service](../media/azure-data-factory-edit-linked-service-parameter-settings.png)](../media/azure-data-factory-edit-linked-service-parameter-settings.png#lightbox)
+> [![Screenshot showing the parameter settings in Linked Service.](../media/azure-data-factory-edit-linked-service-parameter-settings.png)](../media/azure-data-factory-edit-linked-service-parameter-settings.png#lightbox)
 
-If you cannot use the built-in parameterization because you're using a different type of connector, you are able to edit the JSON through the user interface.
+If the connector you're using isn't in the natively supported list, you can still parameterize it by editing the JSON through the user interface.
 
 In linked service creation/edit pane, expand **Advanced** at the bottom of the pane, select the **Specify dynamic contents in JSON format** checkbox, and specify the linked service JSON payload.
 
 > [!div class="mx-imgBorder"]
-> [![Parameter settings editing JSON through UI](../media/azure-data-factory-advanced-parameterization-json.png)](../media/azure-data-factory-advanced-parameterization-json.png#lightbox)
+> [![Screenshot showing the parameter settings editing JSON through UI.](../media/azure-data-factory-advanced-parameterization-json.png)](../media/azure-data-factory-advanced-parameterization-json.png#lightbox)
 
 Or, after you create a linked service without parameterization, in the **Management** hub, select **Linked services**, and find the specific linked service. Then, select **{}** (Code button) to edit the JSON.
 
@@ -48,11 +50,11 @@ In the side menu pane, enter a name, select a data type, and specify the value o
 After a global parameter is created, you can edit it by selecting the parameter's name. To alter multiple parameters together, select **Edit all**.
 
 > [!div class="mx-imgBorder"]
-> [![Global parameters in Azure Data Factory set up](../media/azure-data-factory-new-global-parameter.png)](../media/azure-data-factory-new-global-parameter.png#lightbox)
+> [![Screenshot showing the global parameters in Azure Data Factory set up.](../media/azure-data-factory-new-global-parameter.png)](../media/azure-data-factory-new-global-parameter.png#lightbox)
 
 ## Use global parameters in a pipeline
 
-When using global parameters in a pipeline in Azure Data Factory, it is mostly referenced in pipeline expressions. For example, if a pipeline references to a resource like a dataset or data flow, you can pass down the global parameter value through the resource parameter. The command or reference of global parameters in Azure Data Factory flows as follows: `pipeline().globalParameters.<parameterName>`.
+When using global parameters in a pipeline in Azure Data Factory, it's mostly referenced in pipeline expressions. For example, if a pipeline references to a resource like a dataset or data flow, you can pass down the global parameter value through the resource parameter. The command or reference of global parameters in Azure Data Factory flows as follows: `pipeline().globalParameters.<parameterName>`.
 
 ## Global parameters in CI/CD
 
@@ -83,12 +85,12 @@ The reason for parameterizing mapping data flows is to make sure that your data 
 
 To add parameters to your data flow, select the blank portion of the data flow canvas to see the general properties.
 
-In the **Settings** pane, you will see a **Parameter** tab.
+In the **Settings** pane, you'll see a **Parameter** tab.
 
 Select **New** to generate a new parameter. For each parameter, you must assign a name, select a type, and optionally set a default value.
 
 > [!div class="mx-imgBorder"]
-> [![Global Parameters in Dataflow in Azure Data Factory Settings](../media/azure-data-factory-global-parameter-dataflow.png)](../media/azure-data-factory-global-parameter-dataflow.png#lightbox)
+> [![Screenshot showing the global Parameters in Dataflow in Azure Data Factory Settings.](../media/azure-data-factory-global-parameter-dataflow.png)](../media/azure-data-factory-global-parameter-dataflow.png#lightbox)
 
 ## Assign parameters from a pipeline in mapping dataflow
 
@@ -96,4 +98,4 @@ If you have created a data flow in which you have set parameters, it's possible 
 
 After you have added the activity to the pipeline canvas, you'll find the data flow parameters in the activity's **Parameters** tab.
 
-Assigning parameter values, ensures that you are able to use the parameters in a pipeline expression language or data flow expression language based on spark types. You can also combine the two, that is, the pipeline and data flow expression parameters.
+Assigning parameter values, ensures that you're able to use the parameters in a pipeline expression language or data flow expression language based on spark types. You can also combine the two, that is, the pipeline and data flow expression parameters.

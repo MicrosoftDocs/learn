@@ -1,5 +1,5 @@
 
-In this module, you learned about the embedded experience for Microsoft. The embedded experience is a great place to start a security investigation, while enabling analysts the ability to pivot to the standalone experience to pursue a more detailed, cross product investigation that brings to bear all the Copilot capabilities enabled for your role.
+In this module, you learned about the embedded experiences of Microsoft Security Copilot. The embedded experience is a great place to start a security investigation, while enabling analysts the ability to pivot to the standalone experience to pursue a more detailed, cross-product investigation that brings to bear all the Copilot capabilities enabled for your role.
 
 Now that you completed this module, you can:
 
@@ -20,5 +20,6 @@ Now that you completed this module, you can:
 - [Learn about communication compliance](/purview/communication-compliance)
 - [Overview of Microsoft Purview eDiscovery (Premium)](/purview/ediscovery-overview)
 - [Learn about insider risk management](/purview/insider-risk-management)
-- [Microsoft Copilot in Intune (public preview)](/mem/intune/copilot/copilot-intune-overview)
-- [Copilot for Security in Defender for Cloud (Preview)](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
+- [Security Copilot in Microsoft Entra](/entra/security-copilot/security-copilot-in-entra)
+- [Microsoft Copilot in Intune](/mem/intune/copilot/copilot-intune-overview)
+- [Copilot for Security in Defender for Cloud](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
