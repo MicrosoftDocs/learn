@@ -1,13 +1,13 @@
-To allow access to your applications or between application components, Kubernetes provides an abstraction layer to virtual networking. Kubernetes nodes connect to a virtual network, providing inbound and outbound connectivity for pods. The *kube-proxy* component runs on each node to provide these network features.
+To allow access to your applications or between application components, Kubernetes provides an abstraction layer to virtual networking. Kubernetes nodes connect to a virtual network, providing inbound and outbound connectivity for pods. The *kube-proxy* component commonly provides Service networking in many configurations, but AKS clusters with Azure CNI powered by Cilium don't use kube-proxy.
 
 In Kubernetes:
 
- -  *Services* logically group pods to allow for direct access on a specific port via an IP address or DNS name.
+ -  *Services* typically group pods using label selectors and provide a stable IP address or DNS name to reach them. The ExternalName service type is an exception—it maps a service name to an external DNS hostname.
  -  *ServiceTypes* allow you to specify what kind of Service you want.
  -  You can distribute traffic using a *load balancer*.
  -  More complex routing of application traffic can also be achieved with *ingress controllers*.
 
-The Azure platform also simplifies virtual networking for AKS clusters. When you create a Kubernetes load balancer, you also create and configure the underlying Azure load balancer resource. As you open network ports to pods, the corresponding Azure network security group rules are configured. For HTTP application routing, Azure can also configure *external DNS* as new Ingress routes are configured.
+The Azure platform also simplifies virtual networking for AKS clusters. When you create a Kubernetes LoadBalancer service, AKS provisions a Standard SKU Azure Load Balancer (the Basic SKU was retired on September 30, 2025). As you open network ports to pods, the corresponding Azure network security group rules are configured. The Application Routing add-on is a Microsoft-managed NGINX ingress option supported through November 2026; AKS is moving toward Gateway API as the long-term direction.
 
 ## Services
 
@@ -23,21 +23,21 @@ The following ServiceTypes are available:
     
  -  **NodePort**
     
-    NodePort creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port.
+    NodePort creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port. NodePort allocates a port from the cluster's configured node-port range (default 30000–32767) on every node.
     
     :::image type="content" source="../media/kubernetes-nodeport-cluster-f3af76e3.png" alt-text="Diagram showing NodePort traffic flow in an AKS cluster.":::
     
  -  **LoadBalancer**
     
-    LoadBalancer creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers' traffic to reach the application, load balancing rules are created on the desired ports.
+    LoadBalancer creates a Standard SKU Azure load balancer resource. In AKS, the Azure Load Balancer backend pool contains cluster nodes, node IPs, or node pool instances, not pods. By default, AKS provisions a public Standard Load Balancer frontend IP; using the internal load balancer annotation provisions a private IP instead. Load balancing rules are created on the desired ports so the load balancer distributes traffic to cluster nodes, and Kubernetes Service networking forwards it to the selected pod endpoints.
     
     :::image type="content" source="../media/kubernetes-load-balancer-cluster-1ba6c92c.png" alt-text="Diagram showing Load Balancer traffic flow in an AKS cluster.":::
     
     
-    For extra control and routing of the inbound traffic, you may instead use an [Ingress controller](/azure/aks/concepts-network#ingress-controllers).
+    For extra control and routing of the inbound traffic, you may instead use an [Ingress controller](/azure/aks/concepts-network-ingress#ingress-controllers).
  -  **ExternalName**
     
-    Creates a specific DNS entry for easier application access.
+    Maps the service to an external DNS hostname by configuring the cluster DNS to return a CNAME record. No traffic proxying is performed; pods resolve the in-cluster service name and DNS redirects them to the external endpoint.
 
 Either the load balancers and services IP address can be dynamically assigned, or you can specify an existing static IP address. You can assign both internal and external static IP addresses. Existing static IP addresses are often tied to a DNS entry.
 
@@ -45,40 +45,32 @@ You can create both *internal* and *external* load balancers. Internal load bala
 
 ## Azure virtual networks
 
-In AKS, you can deploy a cluster that uses one of the following network models:
+AKS supports several network plug-ins (Container Network Interface, or CNI), grouped into two networking models:
 
- -  ***Kubenet* networking**
-    
-    The network resources are typically created and configured as the AKS cluster is deployed.
- -  ***Azure Container Networking Interface (CNI)* networking**
-    
-    The AKS cluster is connected to existing virtual network resources and configurations.
+ -  **Overlay model** — Pods receive IP addresses from a private CIDR that is logically separate from the virtual network subnet that hosts the nodes. This model conserves virtual network IP space and scales to large clusters.
+ -  **Flat (VNet-integrated) model** — Pods receive IP addresses from the same virtual network as the nodes, so pods are directly addressable from other resources in the virtual network.
 
-### Kubenet (basic) networking
+### Recommended plug-ins
 
-The *kubenet* networking option is the default configuration for AKS cluster creation. With *kubenet*:
+ -  **Azure CNI Overlay** — The default plug-in for new AKS clusters. Pod IPs come from a private overlay CIDR, and traffic leaving the cluster is source NATed (SNATed) to the node IP. Recommended for most scenarios.
+ -  **Azure CNI Pod Subnet** — Pods receive IPs from a separate, dedicated subnet in the virtual network and are directly addressable from other VNet resources without NAT. Recommended when pods need direct VNet IP connectivity.
+ -  **Azure CNI Powered by Cilium** — Combines supported Azure CNI IPAM modes, including overlay, virtual-network pod subnet with dynamic pod IP allocation, and node subnet mode where supported, with the Cilium eBPF data plane for advanced network policy and observability.
 
- -  Nodes receive an IP address from the Azure virtual network subnet.
- -  Pods receive an IP address from a logically different address space than the nodes' Azure virtual network subnet.
- -  Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network.
- -  The source IP address of the traffic is translated to the node's primary IP address.
+### Legacy plug-ins
 
-Nodes use the kubenet Kubernetes plugin. You can let the Azure platform create and configure the virtual networks for you, or choose to deploy your AKS cluster into an existing virtual network subnet.
+ -  **Azure CNI Node Subnet** — The original Azure CNI mode. Every pod receives an IP address from the node's virtual network subnet, and the maximum number of pod IPs per node is reserved up front. This approach can lead to IP exhaustion in large or growing clusters, so plan IP space carefully.
+ -  **Kubenet** — A legacy overlay plug-in. Pods receive IPs from a logically separate address space and use network address translation (NAT) to reach resources on the virtual network; the source IP is translated to the node's primary IP. Kubenet is scheduled to be **retired on March 31, 2028** and isn't recommended for new clusters. Migrate to Azure CNI Overlay before that date.
 
-Only the nodes receive a routable IP address. The pods use NAT to communicate with other resources outside the AKS cluster. This approach reduces the number of IP addresses you need to reserve in your network space for pods to use.
+### Advanced options
 
-### Azure CNI (advanced) networking
+ -  **Bring your own (BYO) CNI** — Use `--network-plugin none` to install and manage your own CNI plug-in. Microsoft support can't assist with CNI-related issues in BYO CNI clusters; use AKS-supported CNI plug-ins when Microsoft CNI support is required.
 
-With Azure CNI, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be planned in advance and unique across your network space. Each node has a configuration parameter for the maximum number of pods it supports. The equivalent number of IP addresses per node are then reserved up front. This approach can lead to IP address exhaustion or the need to rebuild clusters in a larger subnet as your application demands grow, so it's important to plan properly.
-
-Unlike kubenet, traffic to endpoints in the same virtual network isn't NAT related to the node's primary IP. The source address for traffic inside the virtual network is the pod IP. Traffic that's external to the virtual network still NATs to the node's primary IP.
-
-:::image type="content" source="../media/advanced-networking-diagram-kubernetes-f78266ae.png" alt-text="Diagram showing two nodes with bridges connecting each to a single Azure VNet.":::
+:::image type="content" source="../media/advanced-networking-diagram-kubernetes-f78266ae.png" alt-text="Diagram showing two nodes with bridges connecting each to a single Azure virtual network.":::
 
 
 ## Ingress controllers
 
-When you create a LoadBalancer-type Service, you also create an underlying Azure load balancer resource. The load balancer is configured to distribute traffic to the pods in your Service on a given port.
+When you create a LoadBalancer-type Service, you also create an underlying Azure load balancer resource. The load balancer is configured to distribute traffic on the Service port to cluster nodes. Kubernetes Service routing then forwards that traffic to matching pod endpoints for the Service.
 
 The *LoadBalancer* only works at layer 4. At layer 4, the Service is unaware of the actual applications, and can't make any more routing considerations.
 
