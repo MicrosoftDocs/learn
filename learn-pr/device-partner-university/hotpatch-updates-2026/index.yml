@@ -32,10 +32,10 @@ products:
   - intune
   - windows-11
 units:
-  - learn.dpu.hotpatch-updates.introduction
-  - learn.dpu.hotpatch-updates.protection-with-less-disruption
-  - learn.dpu.hotpatch-updates.update-schedules
-  - learn.dpu.hotpatch-updates.enable-hotpatch
-  - learn.dpu.hotpatch-updates.summary
+  - learn.dpu.hotpatch-updates-2026.introduction
+  - learn.dpu.hotpatch-updates-2026.protection-with-less-disruption
+  - learn.dpu.hotpatch-updates-2026.update-schedules
+  - learn.dpu.hotpatch-updates-2026.enable-hotpatch
+  - learn.dpu.hotpatch-updates-2026.summary
 badge:
   uid: learn.dpu.hotpatch-updates.badge

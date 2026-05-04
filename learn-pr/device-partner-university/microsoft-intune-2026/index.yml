@@ -31,14 +31,14 @@ roles:
 products: 
   - intune
 units:
-  - learn.dpu.microsoft-intune.introduction
-  - learn.dpu.microsoft-intune.challenges
-  - learn.dpu.microsoft-intune.ways-to-use-intune
-  - learn.dpu.microsoft-intune.set-up-intune
-  - learn.dpu.microsoft-intune.adding-assigning-apps
-  - learn.dpu.microsoft-intune.app-protection-policies
-  - learn.dpu.microsoft-intune.intune-plans
-  - learn.dpu.microsoft-intune.knowledge-check
-  - learn.dpu.microsoft-intune.summary
+  - learn.dpu.microsoft-intune-2026.introduction
+  - learn.dpu.microsoft-intune-2026.challenges
+  - learn.dpu.microsoft-intune-2026.ways-to-use-intune
+  - learn.dpu.microsoft-intune-2026.set-up-intune
+  - learn.dpu.microsoft-intune-2026.adding-assigning-apps
+  - learn.dpu.microsoft-intune-2026.app-protection-policies
+  - learn.dpu.microsoft-intune-2026.intune-plans
+  - learn.dpu.microsoft-intune-2026.knowledge-check
+  - learn.dpu.microsoft-intune-2026.summary
 badge:
   uid: learn.dpu.microsoft-intune.badge

@@ -31,18 +31,18 @@ roles:
 products:
   - entra-id
 units:
-  - learn.dpu.introduction-to-entra-id.introduction
-  - learn.dpu.introduction-to-entra-id.microsoft-entra-id
-  - learn.dpu.introduction-to-entra-id.strong-authentication
-  - learn.dpu.introduction-to-entra-id.risk-based-conditional-access
-  - learn.dpu.introduction-to-entra-id.zero-trust
-  - learn.dpu.introduction-to-entra-id.recommendations
-  - learn.dpu.introduction-to-entra-id.security-defaults
-  - learn.dpu.introduction-to-entra-id.identity-secure-score
-  - learn.dpu.introduction-to-entra-id.tenant-id
-  - learn.dpu.introduction-to-entra-id.device-identities
-  - learn.dpu.introduction-to-entra-id.how-use-entra-id
-  - learn.dpu.introduction-to-entra-id.knowledge-check
-  - learn.dpu.introduction-to-entra-id.summary
+  - learn.dpu.introduction-to-entra-id-2026.introduction
+  - learn.dpu.introduction-to-entra-id-2026.microsoft-entra-id
+  - learn.dpu.introduction-to-entra-id-2026.strong-authentication
+  - learn.dpu.introduction-to-entra-id-2026.risk-based-conditional-access
+  - learn.dpu.introduction-to-entra-id-2026.zero-trust
+  - learn.dpu.introduction-to-entra-id-2026.recommendations
+  - learn.dpu.introduction-to-entra-id-2026.security-defaults
+  - learn.dpu.introduction-to-entra-id-2026.identity-secure-score
+  - learn.dpu.introduction-to-entra-id-2026.tenant-id
+  - learn.dpu.introduction-to-entra-id-2026.device-identities
+  - learn.dpu.introduction-to-entra-id-2026.how-use-entra-id
+  - learn.dpu.introduction-to-entra-id-2026.knowledge-check
+  - learn.dpu.introduction-to-entra-id-2026.summary
 badge:
   uid: learn.dpu.introduction-to-entra-id.badge
