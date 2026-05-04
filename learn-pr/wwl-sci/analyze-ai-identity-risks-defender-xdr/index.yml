@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-ai-identity-risks-defender-xdr
+metadata:
+  title: Analyze AI Identity Risks Using Microsoft Defender XDR
+  description: "Discover AI agents in your environment and assess the identity-based risks they present using Microsoft Defender XDR. Identify agent blast radius and analyze attack paths to understand the scope of exposure from a compromised agent identity."
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: microsoft-365-security
+  ai-usage: ai-assisted
+title: Analyze AI identity risks using Microsoft Defender XDR
+summary: Use Microsoft Defender XDR to discover AI agents operating in your environment, assess the blast radius of each agent identity, and analyze attack paths that could lead to unauthorized data or resource access.
+abstract: |
+  After completing this module, you're able to:
+  - Discover AI agents in Microsoft Defender XDR using the AI agent inventory
+  - Assess the blast radius of agent identities by examining permissions, knowledge sources, and blueprint configuration
+  - Analyze attack paths that could result in unauthorized access if an agent identity is compromised
+prerequisites: |
+  - Understanding of Microsoft Entra Agent ID concepts
+  - Familiarity with Microsoft Defender portal navigation
+  - Basic knowledge of identity-based attack paths and risk assessment
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-xdr
+  - entra-id
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.analyze-ai-identity-risks-defender-xdr.introduction
+- learn.wwl.analyze-ai-identity-risks-defender-xdr.discover-ai-agents-defender-portal
+- learn.wwl.analyze-ai-identity-risks-defender-xdr.assess-blast-radius-attack-paths
+- learn.wwl.analyze-ai-identity-risks-defender-xdr.knowledge-check
+- learn.wwl.analyze-ai-identity-risks-defender-xdr.summary
+badge:
+  uid: learn.wwl.analyze-ai-identity-risks-defender-xdr.badge
