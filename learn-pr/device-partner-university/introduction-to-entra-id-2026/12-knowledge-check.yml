@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Entra ID" module.
+  ms.date: 08/28/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key benefit of using Microsoft Entra ID for identity management?"
+    choices:
+        - content: "It eliminates the need for authentication."
+          isCorrect: false
+          explanation: "Incorrect. Entra ID enhances authentication, not removes it."
+        - content: "It centralizes identity and access management across environments."
+          isCorrect: true
+          explanation: "Correct. Entra ID provides unified management across cloud and hybrid setups."
+        - content: "It only supports on-premises applications."
+          isCorrect: false
+          explanation: "Incorrect. Entra ID supports both cloud and on-premises applications."
+        - content: "It requires manual password resets for all users."
+          isCorrect: false
+          explanation: "Incorrect. Entra ID supports automated and passwordless authentication methods."
+  - content: "Which authentication method is considered phishing-resistant in Microsoft Entra ID?"
+    choices:
+        - content: "Password and security questions"
+          isCorrect: false
+          explanation: "Incorrect. These are vulnerable to phishing and credential theft."
+        - content: "SMS-based verification"
+          isCorrect: false
+          explanation: "Incorrect. SMS can be intercepted and isn't phishing-resistant."
+        - content: "Windows Hello for Business"
+          isCorrect: true
+          explanation: "Correct. It interacts directly with the sign-in interface to prevent interception."
+        - content: "Email-based OTP"
+          isCorrect: false
+          explanation: "Incorrect. Email-based codes can be phished or reused."
+  - content: "What does Conditional Access in Microsoft Entra ID use to evaluate access requests?"
+    choices:
+        - content: "User’s browser history"
+          isCorrect: false
+          explanation: "Incorrect. Browser history isn't used in Conditional Access evaluations."
+        - content: "Risk signals like IP location and real-time detection"
+          isCorrect: true
+          explanation: "Correct. These signals help enforce access policies."
+        - content: "Device battery level"
+          isCorrect: false
+          explanation: "Incorrect. Battery level is irrelevant to access control."
+        - content: "Application popularity"
+          isCorrect: false
+          explanation: "Incorrect. Popularity doesn't influence access decisions."
+  - content: "What is the purpose of Privileged Identity Management (PIM) in Entra ID?"
+    choices:
+        - content: "To allow unrestricted admin access"
+          isCorrect: false
+          explanation: "Incorrect. PIM restricts persistent access to reduce risk."
+        - content: "To disable MFA for privileged users"
+          isCorrect: false
+          explanation: "Incorrect. PIM supports secure access, including MFA."
+        - content: "To enable time-bound and approval-based role activation"
+          isCorrect: true
+          explanation: "Correct. This reduces risks from excessive access."
+        - content: "To assign roles randomly"
+          isCorrect: false
+          explanation: "Incorrect. Role assignment is deliberate and controlled."
+  - content: "What does the identity secure score help organizations do?"
+    choices:
+        - content: "Track employee attendance"
+          isCorrect: false
+          explanation: "Incorrect. The score is unrelated to attendance."
+        - content: "Monitor internet usage"
+          isCorrect: false
+          explanation: "Incorrect. It focuses on identity configurations, not browsing habits."
+        - content: "Measure and improve identity security posture"
+          isCorrect: true
+          explanation: "Correct. It evaluates configurations against best practices."
+        - content: "Schedule software updates"
+          isCorrect: false
+          explanation: "Incorrect. Software updates aren't part of the secure score system."
+
