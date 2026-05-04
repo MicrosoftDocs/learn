@@ -16,7 +16,7 @@ The dashboard has four sections:
 | **Data closer look** | Sensitive data findings, storage and database alerts, security explorer queries, and internet-exposed data resources |
 | **AI closer look** | AI resource discovery, AI threat protection metrics (prompts scanned, alerts by severity), AI security explorer queries, and internet-exposed grounding resources |
 
-:::image type="content" source="../media/data-ai-security-dashboard-layout.png" alt-text="Data and AI security dashboard in Microsoft Defender for Cloud showing the overview, top issues, data, and AI sections." lightbox="../media/data-ai-security-dashboard-layout.png":::
+:::image type="content" source="../media/data-ai-security-dashboard-layout.png" alt-text="Screenshot of Data and AI security dashboard in Microsoft Defender for Cloud showing the overview, top issues, data, and AI sections." lightbox="../media/data-ai-security-dashboard-layout.png":::
 
 ## Verify AI protection status
 
