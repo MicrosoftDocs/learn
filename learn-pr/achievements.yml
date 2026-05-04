@@ -7976,3 +7976,43 @@ achievements:
   title: Unlock insights with Microsoft Copilot for Security
   summary: This module introduces Microsoft Security Copilot, an AI-powered security solution designed to enhance the efficiency of security professionals.
   iconUrl: /training/achievements/copilot-module.svg
+- uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight.trophy
+  type: trophy
+  title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
+  summary: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
+  iconUrl: /training/achievements/building-oss-analytical-solutions-with-azure-hdinsight.svg
+- uid: learn.wwl.creating-and-configuring-hdinsight-cluster.badge
+  type: badge
+  title: Creating and configuring a HDInsight cluster
+  summary: Creating and configuring a HDInsight cluster
+  iconUrl: /training/achievements/creating-and-configuring-a-hdinsight-cluster.svg
+- uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.badge
+  type: badge
+  title: Choose the correct HDInsight Configuration to build open source analytics solutions
+  summary: Choose the correct HDInsight Configuration to build open source analytics solutions
+  iconUrl: /training/achievements/hdinsight-config-build-oss-analytical-solutions.svg
+- uid: learn.wwl.introduction-open-source-analytics-offering.badge
+  type: badge
+  title: Introduction to the Open source Analytics Offering
+  summary: Introduction to the Open source Analytics Offering
+  iconUrl: /training/achievements/introduction-to-the-open-source-analytics-offering.svg
+- uid: learn.wwl.manage-enterprise-security-in-hdinsight.badge
+  type: badge
+  title: Manage enterprise security in HDInsight
+  summary: Manage enterprise security in HDInsight
+  iconUrl: /training/achievements/manage-enterprise-security-in-hdinsight.svg
+- uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.badge
+  type: badge
+  title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
+  summary: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
+  iconUrl: /training/achievements/perform-advanced-streaming-data-transformations.svg
+- uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.badge
+  type: badge
+  title: Perform Zero ETL analytics with HDInsight Interactive Query
+  summary: Perform Zero ETL analytics with HDInsight Interactive Query
+  iconUrl: /training/achievements/perform-zero-etl-analytics-with-hdinsights-interactive-query.svg
+- uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.badge
+  type: badge
+  title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
+  summary: Run Petabyte level OSS NoSQL databases with HDInsight HBase
+  iconUrl: /training/achievements/run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.svg
