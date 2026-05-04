@@ -1,0 +1,154 @@
+### YamlMime:ModuleUnit
+uid: learn.github.agent-tooling-mcp-execution-environments.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Verify your knowledge of tool selection, MCP, and safe agent execution.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/28/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Where do agents execute tasks when working with GitHub repositories?"
+    choices:
+    - content: "Directly on the developer's local machine."
+      isCorrect: false
+      explanation: "Incorrect. Agents do not execute tasks on your local machine."
+    - content: "Within workflows powered by GitHub Actions."
+      isCorrect: true
+      explanation: "Correct! Agent tasks are executed through workflows."
+    - content: "Inside the GitHub web interface without workflows."
+      isCorrect: false
+      explanation: "Incorrect. Execution is not handled directly in the UI."
+    - content: "On external servers without using GitHub workflows."
+      isCorrect: false
+      explanation: "Incorrect. Agent execution in GitHub relies on workflows."
+  - content: "How are agent-generated code changes isolated before review?"
+    choices:
+    - content: "By committing directly to the default branch."
+      isCorrect: false
+      explanation: "Incorrect. Changes are not made directly to the default branch."
+    - content: "By creating and working within a separate branch."
+      isCorrect: true
+      explanation: "Correct! Changes are isolated on a branch before review."
+    - content: "By storing changes in a temporary external system."
+      isCorrect: false
+      explanation: "Incorrect. Changes are made within the repository."
+    - content: "By applying changes only after deployment."
+      isCorrect: false
+      explanation: "Incorrect. Changes are reviewed before deployment."
+  - content: "What determines what an agent can do during workflow execution?"
+    choices:
+    - content: "The number of contributors in the repository."
+      isCorrect: false
+      explanation: "Incorrect. Contributors do not control permissions."
+    - content: "Workflow permissions and the GITHUB_TOKEN scope."
+      isCorrect: true
+      explanation: "Correct! Permissions define allowed actions."
+    - content: "The size of the repository."
+      isCorrect: false
+      explanation: "Incorrect. Repository size does not affect permissions."
+    - content: "The number of workflow runs completed."
+      isCorrect: false
+      explanation: "Incorrect. Execution count does not determine permissions."
+  - content: "What is the purpose of a pull request in agent workflows?"
+    choices:
+    - content: "To automatically merge agent changes into the default branch."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests require review before merging."
+    - content: "To provide a place to review and validate changes before merging."
+      isCorrect: true
+      explanation: "Correct! Pull requests enable review and validation."
+    - content: "To bypass workflow execution."
+      isCorrect: false
+      explanation: "Incorrect. Pull requests often trigger workflows."
+    - content: "To execute code changes immediately without checks."
+      isCorrect: false
+      explanation: "Incorrect. Changes are validated before merging."
+  - content: "How can workflows be triggered after an agent updates code?"
+    choices:
+    - content: "Only manually by a repository administrator."
+      isCorrect: false
+      explanation: "Incorrect. Workflows can run automatically."
+    - content: "Through events such as push or pull request."
+      isCorrect: true
+      explanation: "Correct! Events trigger workflow runs."
+    - content: "Only when a repository is forked."
+      isCorrect: false
+      explanation: "Incorrect. Forking does not trigger workflows."
+    - content: "Only when code is downloaded locally."
+      isCorrect: false
+      explanation: "Incorrect. Local downloads do not trigger workflows."
+  - content: "What is the role of an MCP server?"
+    choices:
+    - content: "To replace GitHub workflows."
+      isCorrect: false
+      explanation: "Incorrect. MCP does not replace workflows."
+    - content: "To expose tools and services that agents can use."
+      isCorrect: true
+      explanation: "Correct! MCP servers provide access to tools."
+    - content: "To store repository code."
+      isCorrect: false
+      explanation: "Incorrect. Code is stored in repositories."
+    - content: "To execute workflows instead of GitHub Actions."
+      isCorrect: false
+      explanation: "Incorrect. Workflows are handled by GitHub Actions."
+  - content: "What controls which MCP servers an agent can use?"
+    choices:
+    - content: "Repository size limits."
+      isCorrect: false
+      explanation: "Incorrect. Size does not control access."
+    - content: "Registries and allow lists."
+      isCorrect: true
+      explanation: "Correct! Registries provide discovery and allow lists enforce usage."
+    - content: "Workflow execution time limits."
+      isCorrect: false
+      explanation: "Incorrect. Time limits do not control MCP access."
+    - content: "The number of commits in the repository."
+      isCorrect: false
+      explanation: "Incorrect. Commits do not affect MCP access."
+  - content: "Why are environment protections used in GitHub workflows?"
+    choices:
+    - content: "To increase workflow execution speed."
+      isCorrect: false
+      explanation: "Incorrect. Protections are not for performance."
+    - content: "To require approvals and protect sensitive operations."
+      isCorrect: true
+      explanation: "Correct! Environments enforce approvals and access control."
+    - content: "To automatically merge pull requests."
+      isCorrect: false
+      explanation: "Incorrect. Protections do not merge changes."
+    - content: "To disable workflows on certain branches."
+      isCorrect: false
+      explanation: "Incorrect. Protections control execution, not disable workflows."
+  - content: "What is the effect of using least-privilege permissions in workflows?"
+    choices:
+    - content: "It gives agents full access to all resources."
+      isCorrect: false
+      explanation: "Incorrect. Least privilege restricts access."
+    - content: "It limits actions to only what is required."
+      isCorrect: true
+      explanation: "Correct! Permissions are restricted to necessary actions."
+    - content: "It prevents workflows from running."
+      isCorrect: false
+      explanation: "Incorrect. Workflows still run."
+    - content: "It automatically approves pull requests."
+      isCorrect: false
+      explanation: "Incorrect. Permissions do not approve PRs."
+  - content: "How are agent actions kept visible and reviewable?"
+    choices:
+    - content: "By hiding logs and restricting access."
+      isCorrect: false
+      explanation: "Incorrect. Visibility is required."
+    - content: "Through workflow logs and pull request review."
+      isCorrect: true
+      explanation: "Correct! Logs and PRs provide visibility."
+    - content: "By executing actions outside GitHub."
+      isCorrect: false
+      explanation: "Incorrect. Actions remain within GitHub systems."
+    - content: "By skipping validation steps."
+      isCorrect: false
+      explanation: "Incorrect. Validation improves visibility and safety."

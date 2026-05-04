@@ -65673,6 +65673,391 @@
       "source_path_from_root": "/learn-pr/wwl/optimize-microsoft-intune-microsoft-copilot-security-integration/11-summary.yml",
       "redirect_url": "https://learn.microsoft.com/intune/copilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/2-what-hdinsight.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/3-how-hdinsight-work.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/4-when-use-hdinsight.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/5-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/6-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/intro-open-source-analytics-offering/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/2-hdinsight-config.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/3-decision-criteria.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/4-analyze-scenario.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/5-cost-optimization.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/6-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/7-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/hdinsight-config-open-source-solution/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/10-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/2-creating-hdinsight-cluster.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/3-exercise-create-hdinsight-cluster-via-azure-portal.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/4-opening-jupyter-notebook-hdinsight-spark-cluster.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/5-exercise-execute-queries-hdinsight-spark-cluster.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/6-enabling-monitoring-hdinsight-jobs.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/7-common-provisioning-issues.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/8-exercise-monitor-hdinsight-cluster.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/9-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/creating-and-configuring-hdinsight-cluster/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/10-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/2-describe-apache-hbase.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/3-explain-clusters-architecture-application-patterns.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/4-improve-write-read-performance-hbase-clusters.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/5-determine-migration-high-availability-strategies.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/6-use-apache-phoenix.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/7-determine-cluster-performance.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/8-perform-benchmarking-hbase.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/9-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-petabyte-level-oss-nosql-databases-hdinsight-hbase/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/10-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/11-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/2-use-hdinsight.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/3-stream-data-with-apache-kafka.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/4-describe-spark-structured-streaming.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/5-create-kafka-spark-architecture.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/6-exercise-provision-hdinsight-perform-data-transformations.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/7-exercise-create-kafka-producer.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/8-exercise-stream-kafka-data-to-jupyter-notebook-window-data.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/9-replicate-data-to-secondary-cluster.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-advanced-streaming-data-transformations-with-spark-kafka/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/2-when-should-you-use-hdinsight-interactive-query.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/3-hdinsight-interactive-queries.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/4-exercise-provisioning-hdinsight-perform-adhoc-analytics.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/5-exercise-upload-query-data-hdinsight.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/6-integrate-apache-spark-hive-llap-queries.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/7-interactive-query-dashboard-evaluating-real-estate-trends.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/8-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/9-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/perform-zero-etl-analytics-hdinsight-interactive-query/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/1-introduction.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/2-describe-hdinsight-security-areas.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/3-implement-network-security.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/4-understand-operating-system-security.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/5-manage-application-middleware-security.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/6-implement-data-access-security.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/7-knowledge-check.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/8-summary.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/build-oss-analytical-solutions-az-hdinsight/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.manage-enterprise-security-in-hdinsight.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.introduction-open-source-analytics-offering.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.creating-and-configuring-hdinsight-cluster.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.build-oss-analytical-solutions-az-hdinsight.trophy.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
     }
   ]
 }
