@@ -66018,6 +66018,46 @@
       "source_path_from_root": "/learn-pr/paths/build-oss-analytical-solutions-az-hdinsight/index.yml",
       "redirect_url": "/azure/hdinsight/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.manage-enterprise-security-in-hdinsight.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.introduction-open-source-analytics-offering.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.creating-and-configuring-hdinsight-cluster.badge.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.build-oss-analytical-solutions-az-hdinsight.trophy.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
     }
   ]
 }
