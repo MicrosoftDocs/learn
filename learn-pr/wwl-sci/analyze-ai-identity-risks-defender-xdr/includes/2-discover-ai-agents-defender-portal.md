@@ -44,7 +44,7 @@ The search function lets you find agents by name or associated identity. If you 
 
 Risk level filtering is useful for prioritization. Defender XDR assigns risk scores based on the agent's permissions, knowledge sources, and configuration. Filtering to high-risk agents lets you focus your assessment effort on the agents most likely to cause damage if compromised.
 
-:::image type="content" source="../media/agent-inventory-portal-view.svg" alt-text="Diagram of the AI Agents inventory in Microsoft Defender XDR showing agents from Copilot Studio, Foundry, AWS Bedrock, and GCP Vertex AI with risk levels." lightbox="../media/agent-inventory-portal-view.svg":::
+:::image type="content" source="../media/agent-inventory-portal-view.png" alt-text="Diagram of the AI Agents inventory showing agents from Copilot Studio, Foundry, AWS Bedrock, and GCP Vertex AI with risk levels." lightbox="../media/agent-inventory-portal-view.png":::
 
 > [!NOTE]
 > Agents that don't use Microsoft Entra-backed identities can’t appear in the inventory. Some external or custom agents authenticate using API keys or external identity providers. These agents require separate discovery methods outside Defender XDR.
