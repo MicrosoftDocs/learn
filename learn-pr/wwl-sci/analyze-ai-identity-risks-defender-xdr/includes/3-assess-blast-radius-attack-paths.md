@@ -48,7 +48,7 @@ Prioritize attack paths by criticality, not complexity. A three-step path to cus
 
 At Contoso, the security team analyzes attack paths for their highest-risk agents. One Microsoft Foundry agent built for HR has SharePoint access to employee records, a Microsoft Graph permission to read all user profiles (User.Read.All), and an action configured to send emails. The attack path shows: (1) attacker compromises agent identity, (2) queries all employee records from SharePoint, (3) reads sensitive user profile data including salary information, (4) sends data to external email address using the agent's send-mail capability. This is a three-step path to a critical data breach involving personal data and compensation data. The security team flags this agent for immediate remediation.
 
-:::image type="content" source="../media/agent-attack-path-example.png" alt-text="Flowchart showing a four-step attack path from a compromised agent identity through SharePoint and email to a personal information data breach." lightbox="../media/agent-attack-path-example.png":::
+:::image type="content" source="../media/agent-attack-path-example.png" alt-text="Diagram showing a four-step attack path from a compromised agent identity through SharePoint and email to a personal information data breach." lightbox="../media/agent-attack-path-example.png":::
 
 ## Plan remediation actions
 
