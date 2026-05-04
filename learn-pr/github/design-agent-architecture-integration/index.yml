@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.github.design-agent-architecture-integration
+title: Designing Agent Architecture and SDLC Integration
+metadata:
+  title: Designing Agent Architecture and SDLC Integration
+  description: Illustration showing how agentic systems use GitHub workflows such as branches, pull requests, checks, and repository rules to safely build and maintain software.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/28/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: Learn how agentic systems use GitHub workflows to build software safely.
+
+abstract: |
+  By the end of this module, you will be able to:
+  - Map agent responsibilities to SDLC stages and define architectural boundaries 
+  - Define structured agent tasks using inputs, outputs, and success criteria 
+  - Separate planning, reasoning, and execution to create inspectable and reliable workflows 
+  - Implement pull request-based governance using templates, checks, CODEOWNERS, rules, and environments 
+  - Design reliable workflows using outputs, contexts, triggers, and cross-job handoffs 
+  - Operate agent systems safely using observability, tool governance, secrets boundaries, hooks, and reliability patterns
+
+
+prerequisites: |
+  Before getting started, you should have:
+  - A GitHub account and familiarity with repositories, branches, and pull requests
+  - Basic experience with GitHub Actions workflows and status checks
+  - A general understanding of the software development lifecycle (SDLC) (planning, implementation, validation, deployment)
+  - Awareness of repository governance concepts, such as required reviews, CODEOWNERS, and branch protection
+
+  Some enforcement controls (for example, rulesets/branch protection and required checks) require repository or organization administrator permissions to configure.
+
+  This module focuses on repository-level architecture (pull requests, checks, and rules). In practice, agent systems also include environment-level controls such as network access restrictions. For example, GitHub Copilot cloud agent uses a configurable firewall to limit external access. These controls define what the agent can access at runtime, while PR-based governance defines what changes are accepted.
+
+  For more information, see: [Customize the agent firewall for Copilot cloud agent.](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/customize-the-agent-firewall)
+
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.design-agent-architecture-integration.introduction
+  - learn.github.design-agent-architecture-integration.agent-responsibilities
+  - learn.github.design-agent-architecture-integration.inputs-outputs-success-criteria
+  - learn.github.design-agent-architecture-integration.plan-reason-execution
+  - learn.github.design-agent-architecture-integration.pull-request-governance-controls
+  - learn.github.design-agent-architecture-integration.reliable-workflows
+  - learn.github.design-agent-architecture-integration.agent-operations-controls
+  - learn.github.design-agent-architecture-integration.knowledge-check
+  - learn.github.design-agent-architecture-integration.summary
+badge:
+  uid: learn.github.design-agent-architecture-integration.badge
