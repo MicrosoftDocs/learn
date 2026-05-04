@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.configure-ai-gateway-security-foundry
+metadata:
+  title: Configure AI Gateway Security in Microsoft Foundry
+  description: "Secure AI model traffic in Microsoft Foundry by deploying and configuring AI Gateway. Examine AI Gateway architecture, create and configure a gateway instance, and apply access controls and monitoring to protect AI workloads."
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-ai-foundry
+  ai-usage: ai-assisted
+title: Configure AI Gateway security in Microsoft Foundry
+summary: Use AI Gateway in Microsoft Foundry to secure and govern AI model traffic. Examine the gateway architecture, create and configure a gateway instance with security controls, and apply access restrictions and monitoring to enforce policy and detect misuse.
+abstract: |
+  After completing this module, you can:
+  - Examine the AI Gateway architecture and explain how it secures AI model traffic
+  - Create and configure an AI Gateway instance in Microsoft Foundry
+  - Apply access controls and monitoring to secure and audit AI Gateway usage
+prerequisites: |
+  - Experience working with Microsoft Azure AI Foundry
+  - Familiarity with API management and gateway concepts
+  - Understanding of AI workload security requirements
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-ai-foundry
+  - azure
+subjects:
+  - security
+  - cloud-security
+  - ai-machine-learning
+units:
+- learn.wwl.configure-ai-gateway-security-foundry.introduction
+- learn.wwl.configure-ai-gateway-security-foundry.examine-ai-gateway-architecture
+- learn.wwl.configure-ai-gateway-security-foundry.create-configure-ai-gateway
+- learn.wwl.configure-ai-gateway-security-foundry.secure-monitor-ai-gateway-access
+- learn.wwl.configure-ai-gateway-security-foundry.knowledge-check
+- learn.wwl.configure-ai-gateway-security-foundry.summary
+badge:
+  uid: learn.wwl.configure-ai-gateway-security-foundry.badge
