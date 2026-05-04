@@ -1,10 +1,15 @@
-Microsoft Security Copilot provides a range of agents designed to enhance security workflows and improve operational efficiency. These agents assist security engineers by automating tasks, providing insights, and integrating with other Microsoft security tools.
+Microsoft Security Copilot agents enhance security and IT operations with autonomous and adaptive automation. These agents seamlessly integrate with Microsoft Security solutions and the third-party partner ecosystem to handle high-volume security tasks. Purpose-built for security, agents learn from feedback, adapt to organizational workflows with your team fully in control, and operate securely within Microsoft's Zero Trust framework—accelerating responses, prioritizing risks, and driving efficiency.
 
 ### Define agents in Microsoft Security Copilot
 
-Agents in Microsoft Security Copilot help automate repetitive tasks, reduce manual workloads, and optimize security operations. Agents consist of predefined workflows and capabilities tailored to address particular security challenges. They're designed to perform specific tasks, such as analyzing threats, triaging phishing incidents, or optimizing conditional access policies.
+An agent is an AI-driven security assistant or workflow that can autonomously execute and orchestrate tasks on behalf of security teams. Each agent has a defined goal, such as triaging alerts, generating a threat intelligence briefing, or remediating vulnerabilities. Agents reduce manual workloads, enhance operational effectiveness, and strengthen your organization's overall security posture.
 
-Agents utilize security compute units (SCUs) to operate just like other features in Security Copilot. They integrate seamlessly with Microsoft Security solutions and the broader supported partner ecosystem and fit naturally into existing workflows. Agents learn based on feedback and keep you in control on the actions it takes.
+Agents can be:
+
+- **Interactive** – Respond to user input in real time through a conversational experience.
+- **Automated** – Triggered by events or schedules to run autonomously without requiring user interaction.
+
+Agents utilize security compute units (SCUs) to operate, just like other features in Security Copilot. They integrate seamlessly with Microsoft Security solutions and the broader supported partner ecosystem, fitting naturally into existing workflows.
 
 ### Agent terminology in Microsoft Security Copilot
 
@@ -12,48 +17,58 @@ To effectively use Security Copilot agents, it's essential to understand the ter
 
 | Term         | Description |
 |--------------|-------------|
-| **Trigger**  | An event or condition that tells an agentic system to initiate an action or series of actions. |
-| **Permissions** | The level of authorization an AI agent is given by an admin during configuration that enables it to access specific information or carry out its tasks. |
-| **Identity** | An agent needs an identity to authenticate and securely access resources when it runs. During the agent setup process, you choose from two types of identity: (1) **Create an agent identity**—Creates a dedicated identity for the agent using the Microsoft Entra Agent ID capability, keeping access scoped, secure, and easier to manage. Currently, this option is only available for Microsoft-built agents. (2) **Connect with an existing user account**—Lets the agent use your credentials to run, inheriting your access and permissions while it's active. |
-| **Plugins**  | A component that extends what an agent can do by giving it access to capabilities in Microsoft and non-Microsoft services and public websites through APIs. While some plugins may be required to run an agent, some agents may employ optional plugins that can enhance its functionality by providing access to more data sources or tools.|
+| **Trigger**  | An event or condition that tells an agentic system to initiate an action or series of actions. You can set the agent to run automatically at specific intervals or choose to run it manually when needed. |
+| **Permissions** | The level of authorization an AI agent is given by an administrator during configuration that enables it to access specific information or carry out its tasks. These permissions might include the ability to read data from other solutions, such as Microsoft Defender External Attack Surface Management or Microsoft Threat Intelligence. |
+| **Identity** | An agent needs an identity to authenticate and securely access resources when it runs. During the agent setup process, you can choose from two types of identity: (1) **Create an agent identity**—Creates a dedicated identity for the agent using the Microsoft Entra Agent ID capability. Microsoft Entra Agent IDs are identities created specifically for AI agents. Using Agent IDs keeps access scoped, secure, and easier to manage. Currently, this option is only available for Microsoft-built agents. (2) **Connect with an existing user account**—Lets the agent use your credentials to run, inheriting your access and permissions while it's active. |
+| **Plugins**  | A component that extends what an agent can do by giving it access to capabilities in Microsoft and non-Microsoft services and public websites through APIs. Having access to plugins adds more context to the output of an agent. While some plugins may be required to run an agent, others are optional and can enhance functionality by providing access to more data sources or tools. |
 | **Role-based access control (RBAC)** | Determines who can view and manage the outputs generated by agents in Microsoft Security Copilot, and ensures that sensitive information is accessible only to authorized users. |
 
-### Agents in Microsoft Security Copilot
+### Discover agents in Microsoft Security Copilot
 
-You can discover Microsoft Security Copilot agents through the standalone and embedded experiences. Copilot agents are also available from partners. Depending on your role, you can either set them up or access the agent to run it.
+You can discover Microsoft Security Copilot agents from both the standalone and embedded experiences. Finding the right agent is the first step to automating your security workflows.
 
-To access the full list of available agents, select Active agents from the home menu. Copilot displays the list of available Microsoft and partner agents.
+In the **standalone** experience (accessed through https://securitycopilot.microsoft.com):
+
+1. Navigate to the agent library from the home menu.
+1. Select **Agents**.
+1. The agent library opens, displaying Microsoft and partner agents available for you to choose from.
+
+In the **embedded** experiences, you see agents within the portal of the corresponding Microsoft security product and can explore their capabilities directly.
+
+Depending on your role, you can either set up agents or access them to run.
 
 > [!NOTE]
 > The list of Microsoft and Partner agents is continually growing. The agents covered in this module represent only a sample of the available agents.
 
 :::image type="content" source="../media/agents-copilot-v3.png" lightbox="../media/agents-copilot-v3.png"  alt-text="Screen capture of the Agents page in Microsoft Security Copilot. The page displays tiles for all available agents from Microsoft and partners.":::
 
-### Microsoft Agents
+### Microsoft agents
 
-Security Copilot includes agents that are seamlessly integrated with Microsoft security solutions.
+Security Copilot includes agents that are seamlessly integrated with Microsoft security solutions. Agents are available across the integrated Microsoft security products, organized by area:
 
 #### Agents in the standalone experience
 
-- **[Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent)**: Automatically curates relevant and timely threat intelligence based on an organization’s unique attributes and threat exposure.
+- **[Threat Intelligence Briefing Agent](/copilot/security/threat-intel-briefing-agent)**: Generates timely, relevant threat intelligence reports with detailed technical analysis based on the latest threat actor activity and vulnerability information.
+- **[Security Analyst Agent](/copilot/security/security-analyst-agent)**: Helps security analysts quickly identify, assess, and prioritize risks by providing flexible analysis, data integration, and actionable insights from Microsoft Defender XDR, Microsoft Sentinel Log Analytics, or Microsoft Sentinel Data Lake.
 
 #### Agents embedded in Microsoft Entra
 
-- **[Conditional Access Optimization Agent](https://aka.ms/EntraAgent)**: Monitors for new users or apps not covered by existing policies, identifies necessary updates to close security gaps, and recommends quick fixes for identity teams to apply with a single click.
-- **[Access Review Agent](/entra/id-governance/access-review-agent)**: Configured in Microsoft Entra and available in Microsoft Teams, the agent delivers insights and recommendations so reviewers can make fast, accurate access decisions through a simple conversation.
+- **[Conditional Access Optimization Agent](/entra/security-copilot/conditional-access-agent-optimization)**: Evaluates your Conditional Access policies against Microsoft best practices and Zero Trust principles, identifies gaps and redundancies, and recommends improvements that identity teams can apply with one click.
+- **[Identity Risk Management Agent](/entra/id-protection/identity-risk-management-agent-get-started)** (Preview): Helps administrators investigate potential identity risks in Microsoft Entra ID Protection, understand their effects, and take decisive action to protect critical assets.
 
 #### Agents embedded in Microsoft Defender
 
-- **[Phishing Triage Agent](/defender-xdr/phishing-triage-agent)**: Helps security operations analysts triage and classify user-submitted phishing incidents autonomously, providing transparent rationale for classification verdicts in natural language.
+- **[Security Alert Triage Agent](/defender-xdr/security-alert-triage-agent)**: Helps security teams triage alerts at scale using AI-driven reasoning, identifying which alerts represent real attacks and which are false positives. This agent evolved from the Phishing Triage Agent and now supports email, identity, and cloud alerts.
 - **[Threat Intelligence Briefing Agent](/defender-xdr/threat-intel-briefing-agent-defender)**: Also available in the Defender portal, this agent gathers and synthesizes threat intelligence data to deliver concise and actionable insights to security operations teams.
 - **[Threat Hunting Agent](/defender-xdr/advanced-hunting-security-copilot-threat-hunting-agent)**: Enables threat hunting using natural language, generates KQL queries, interprets results, and guides analysts through full hunting sessions.
-- **[Dynamic Threat Detection Agent (preview)](/defender-xdr/dynamic-threat-detection-agent)**: An always-on adaptive service that uncovers hidden threats across Defender and Microsoft Sentinel environments by correlating alerts, events, and threat intelligence.
+- **[Dynamic Threat Detection Agent](/defender-xdr/dynamic-threat-detection-agent)**: An always-on adaptive service that uncovers hidden threats across Defender and Microsoft Sentinel environments by correlating alerts, events, and threat intelligence.
+- **[Security Analyst Agent](/copilot/security/security-analyst-agent)**: Accessible in the Advanced hunting experience in the Defender portal, this agent helps security analysts quickly identify, assess, and prioritize risks by analyzing data from Microsoft Defender XDR, Microsoft Sentinel Log Analytics, or Microsoft Sentinel Data Lake.
 
-#### Agents embedded in Microsoft Purview (preview)
+#### Agents embedded in Microsoft Purview
 
 - **[Alert Triage Agent in Data Loss Prevention](/purview/copilot-in-purview-agents)**: Evaluates DLP alerts based on sensitivity risk, exfiltration risk, and policy risk, then sorts them into prioritized categories.
 - **[Triage Agent in Insider Risk Management](/purview/copilot-in-purview-agents)**: Evaluates IRM alerts based on user risk, file risk, and activity risk, then sorts them into prioritized categories.
-- **[Data Security Posture Management Agent](/purview/copilot-in-purview-posture-agent-get-started)**: Helps identify and address data security posture risks by providing proactive insights and recommendations.
+- **[Data Security Posture Agent](/purview/copilot-in-purview-posture-agent-get-started)**: Uses natural language search to find sensitive data across SharePoint, OneDrive, Teams, Exchange, and Copilot interactions, providing risk-level assessments and exportable insight reports for preinvestigation checks.
 
 #### Agents embedded in Microsoft Intune
 
@@ -64,8 +79,8 @@ Security Copilot includes agents that are seamlessly integrated with Microsoft s
 
 ### Partner agents
 
-Organizations are increasingly using AI-powered agents to enhance their security operations. While Microsoft Security Copilot agents provide robust solutions, integrating partner agents can offer other benefits and provides you with the flexibility to use tools you're already familiar with. These agents offer unique capabilities, from privacy breach response to network supervision and alert triage, ensuring you can address diverse security challenges effectively.
+Organizations can extend their security operations by integrating partner-built agents into Security Copilot. These agents offer unique capabilities—from privacy breach response to network supervision and alert triage—ensuring you can address diverse security challenges with tools you're already familiar with.
 
-There's a growing ecosystem of partner-built agents in Security Copilot. To find the most up-to-date list of agent offerings and how to deploy them, see [Security Store](https://securitystore.microsoft.com/), which you can also access from the Security Copilot portal (the standalone experience) directly. 
+Browse and add agents directly from the integrated [Security Store](https://securitystore.microsoft.com/) within Security Copilot. The Security Store provides a growing ecosystem of Microsoft and partner-built agents, making it easy to find solutions that fit your security needs.
 
 :::image type="content" source="../media/security-copilot-security-store.png" lightbox="../media/security-copilot-security-store.png"  alt-text="Screen capture of the Security Copilot home menu with the Security store menu option highlighted.":::

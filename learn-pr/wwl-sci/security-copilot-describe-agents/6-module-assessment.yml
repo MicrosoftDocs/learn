@@ -6,7 +6,7 @@ metadata:
   description: Describe Microsoft Security Copilot agents.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 02/15/2026
+  ms.date: 05/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -52,18 +52,18 @@ quiz:
       - content: Threat Hunting Agent
         isCorrect: false
         explanation: "Incorrect. The Threat Hunting Agent enables investigation using natural language and KQL queries. It is not specifically designed for classifying user-reported phishing incidents."
-      - content: Phishing Triage Agent
+      - content: Security Alert Triage Agent
         isCorrect: true
-        explanation: "Correct. The Phishing Triage Agent autonomously triages and classifies user-submitted phishing incidents, provides transparent rationale for its verdicts, and continuously improves based on analyst feedback."
+        explanation: "Correct. The Security Alert Triage Agent (formerly the Phishing Triage Agent) autonomously triages and classifies alerts, including user-reported phishing emails, provides transparent rationale for its verdicts, and can incorporate analyst feedback to tune its analysis."
 
-  - content: Which Microsoft Purview agent helps security teams evaluate insider risk management alerts based on user risk, file risk, and activity risk?
+  - content: Which Microsoft Purview agent helps security teams evaluate insider risk management alerts based on activity risk and user risk?
     choices:
       - content: Alert Triage Agent in Data Loss Prevention
         isCorrect: false
-        explanation: "Incorrect. The Alert Triage Agent in Data Loss Prevention evaluates DLP alerts based on sensitivity risk, exfiltration risk, and policy risk, not insider risk management alerts."
+        explanation: "Incorrect. The Alert Triage Agent in Data Loss Prevention evaluates DLP alerts based on content risk, exfiltration risk, and policy risk, not insider risk management alerts."
       - content: Triage Agent in Insider Risk Management
         isCorrect: true
-        explanation: "Correct. The Triage Agent in Insider Risk Management evaluates alerts based on user risk, file risk, and activity risk, and sorts them into categories for the security team to review."
+        explanation: "Correct. The Triage Agent in Insider Risk Management evaluates alerts based on activity risk and user risk, and sorts them into categories for the security team to review."
       - content: Conditional Access Optimization Agent
         isCorrect: false
         explanation: "Incorrect. The Conditional Access Optimization Agent is a Microsoft Entra agent that monitors and optimizes Conditional Access policies. It does not evaluate insider risk management alerts."
