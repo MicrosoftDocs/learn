@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-defender-cloud-ai-services
+metadata:
+  title: Enable Defender for AI Services Workload Protection in Microsoft Defender for Cloud
+  description: "Enable and configure the Defender for AI Services Cloud Workload Protection plan in Microsoft Defender for Cloud. The plan helps to detect threats targeting Azure AI services workloads and monitor AI security posture."
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Enable Defender for AI Services workload protection in Microsoft Defender for Cloud
+summary: Enable and configure the Defender for AI Services plan in Microsoft Defender for Cloud to detect threats targeting Azure AI services workloads. Then configure plan components, and monitor AI security posture using the Data and AI security dashboard.
+abstract: |
+  By the end of this module, you're able to:
+  - Enable the Defender for AI Services plan and configure its components for an Azure subscription
+  - Investigate AI threat protection alerts in the Defender portal
+  - Monitor AI security posture using the Data and AI security dashboard in Microsoft Defender for Cloud
+prerequisites: |
+  - Experience navigating Microsoft Defender for Cloud in the Azure portal
+  - Familiarity with enabling Defender for Cloud workload protection plans
+  - Understanding of Azure AI services concepts (Azure OpenAI, model deployments)
+  - **Owner** or **Contributor** role on the target Azure subscription
+iconUrl: /training/achievements/implement-defender-cloud-ai-services.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- defender-for-cloud
+- azure
+subjects:
+- cloud-security
+units:
+- learn.wwl.implement-defender-cloud-ai-services.introduction
+- learn.wwl.implement-defender-cloud-ai-services.enable-configure-ai-services-plan
+- learn.wwl.implement-defender-cloud-ai-services.monitor-ai-security-dashboard
+- learn.wwl.implement-defender-cloud-ai-services.knowledge-check
+- learn.wwl.implement-defender-cloud-ai-services.summary
+badge:
+  uid: learn.wwl.implement-defender-cloud-ai-services.badge
