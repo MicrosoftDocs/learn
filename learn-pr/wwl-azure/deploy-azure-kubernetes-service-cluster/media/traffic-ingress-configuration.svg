@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc"><title id="title">End-to-end TLS ingress configuration</title><desc id="desc">The diagram shows four numbered TLS-related hops in a virtual network: the user connects to Application Gateway, Application Gateway re-encrypts to the AKS ingress controller, and the ingress controller forwards securely to the workload. It also shows Application Gateway retrieving certificates for delta.contoso.com and *.aks-ingress.contoso.com from Azure Key Vault.</desc>
+  <defs>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 1 1 L 11 6 L 1 11 Z" fill="#107C10" />
+    </marker>
+  </defs>
+  <rect width="1200" height="660" fill="#FFFFFF" />
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#1F1F1F">
+    <g id="virtual-network">
+      <rect x="35" y="40" width="1130" height="560" rx="20" fill="#FFFFFF" stroke="#5B6B7A" stroke-width="2" stroke-dasharray="10 8" />
+      <text x="1135" y="78" text-anchor="end" font-size="22" font-weight="600">Virtual network</text>
+    </g>
+
+    <g id="ingress-flow" stroke="#107C10" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="170" y1="240" x2="220" y2="240" marker-end="url(#arrow-green)" />
+      <line x1="270" y1="240" x2="320" y2="240" marker-end="url(#arrow-green)" />
+      <line x1="520" y1="240" x2="570" y2="240" marker-end="url(#arrow-green)" />
+      <line x1="620" y1="240" x2="700" y2="240" marker-end="url(#arrow-green)" />
+      <line x1="865" y1="240" x2="885" y2="240" marker-end="url(#arrow-green)" />
+      <line x1="935" y1="240" x2="960" y2="240" marker-end="url(#arrow-green)" />
+      <path d="M 420 295 L 420 340 L 440 340 L 440 390" marker-end="url(#arrow-green)" />
+    </g>
+
+    <g id="user">
+      <rect x="80" y="210" width="90" height="60" rx="12" fill="#F6F8FA" stroke="#8A8886" stroke-width="2" />
+      <text x="125" y="246" text-anchor="middle" font-size="18" font-weight="600">User</text>
+    </g>
+
+    <g id="hop-1">
+      <circle cx="245" cy="240" r="25" fill="#107C10" />
+      <text x="245" y="235" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">1</text>
+      <text x="245" y="256" text-anchor="middle" font-size="14" fill="#FFFFFF">&#x1F512;</text>
+    </g>
+
+    <g id="application-gateway">
+      <rect x="320" y="185" width="200" height="110" rx="12" fill="#E8F1FB" stroke="#2B6EA6" stroke-width="2" />
+      <text x="420" y="230" text-anchor="middle" font-size="18" font-weight="600">Application</text>
+      <text x="420" y="255" text-anchor="middle" font-size="18" font-weight="600">Gateway</text>
+    </g>
+
+    <g id="hop-2">
+      <circle cx="595" cy="240" r="25" fill="#107C10" />
+      <text x="595" y="235" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">2</text>
+      <text x="595" y="256" text-anchor="middle" font-size="14" fill="#FFFFFF">&#x1F512;</text>
+    </g>
+
+    <g id="aks-cluster">
+      <rect x="660" y="140" width="450" height="200" rx="18" fill="#FFFFFF" stroke="#5B6B7A" stroke-width="2" />
+      <text x="885" y="174" text-anchor="middle" font-size="20" font-weight="600">AKS cluster</text>
+      <rect x="700" y="210" width="165" height="70" rx="12" fill="#E8F1FB" stroke="#2B6EA6" stroke-width="2" />
+      <text x="782.5" y="239" text-anchor="middle" font-size="17" font-weight="600">Ingress</text>
+      <text x="782.5" y="263" text-anchor="middle" font-size="17" font-weight="600">controller</text>
+      <g id="hop-3">
+        <circle cx="910" cy="240" r="25" fill="#107C10" />
+        <text x="910" y="235" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">3</text>
+        <text x="910" y="256" text-anchor="middle" font-size="14" fill="#FFFFFF">&#x1F512;</text>
+      </g>
+      <rect x="960" y="210" width="120" height="70" rx="12" fill="#E8F1FB" stroke="#2B6EA6" stroke-width="2" />
+      <text x="1020" y="250" text-anchor="middle" font-size="18" font-weight="600">Workload</text>
+    </g>
+
+    <g id="hop-4-key-vault">
+      <circle cx="465" cy="340" r="24" fill="#107C10" />
+      <text x="465" y="346" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">4</text>
+      <rect x="330" y="390" width="220" height="80" rx="12" fill="#E8F1FB" stroke="#2B6EA6" stroke-width="2" />
+      <text x="440" y="438" text-anchor="middle" font-size="20" font-weight="600">Key Vault</text>
+      <text x="440" y="510" text-anchor="middle" font-size="17" font-weight="600">delta.contoso.com</text>
+      <text x="440" y="536" text-anchor="middle" font-size="17" font-weight="600">*.aks-ingress.contoso.com</text>
+    </g>
+  </g>
+</svg>
