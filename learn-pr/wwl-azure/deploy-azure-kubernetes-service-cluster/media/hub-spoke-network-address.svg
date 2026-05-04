@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" font-family="Segoe UI, Arial, sans-serif">
+  <title id="title">Hub-spoke network topology</title>
+  <desc id="desc">Diagram of two Azure resource groups containing a hub virtual network and a spoke virtual network. The hub includes separate Firewall, Gateway, and Bastion subnets; the spoke includes cluster node, ingress, Application Gateway, Private Link endpoint, and API server subnets. A labeled peering link connects the VNets, and a callout explains that Azure CNI Overlay pods use a separate address space.</desc>
+  <style>
+    .page-title { font-size: 32px; font-weight: 700; fill: #1f2937; }
+    .section-title { font-size: 17px; font-weight: 700; fill: #1f2937; }
+    .vnet-title { font-size: 15px; font-weight: 700; fill: #1f2937; }
+    .subnet-name { font-size: 15px; font-weight: 700; fill: #1f2937; }
+    .cidr { font-size: 14px; fill: #374151; }
+    .note { font-size: 14px; font-style: italic; fill: #4b5563; }
+    .small { font-size: 14px; fill: #374151; }
+    .callout-title { font-size: 15px; font-weight: 700; fill: #1f2937; }
+    .resource-group { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; }
+    .vnet-box { fill: #ffffff; stroke: #1b4e7a; stroke-width: 2; stroke-dasharray: 8 6; }
+    .subnet-box { fill: #e8f1fb; stroke: #0f4c81; stroke-width: 2; }
+    .peering { stroke: #0f4c81; stroke-width: 3; }
+    .callout-box { fill: #fff8e6; stroke: #8a6d1d; stroke-width: 2; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#0f4c81" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="#ffffff" />
+  <text x="600" y="48" text-anchor="middle" class="page-title">Hub-spoke network topology</text>
+
+  <g id="hub-resource-group">
+    <rect x="50" y="82" width="520" height="515" rx="18" class="resource-group" />
+    <text x="75" y="117" class="section-title">Resource group: rg-enterprise-networking-hubs</text>
+
+    <g id="hub-vnet">
+      <rect x="90" y="150" width="440" height="410" rx="14" class="vnet-box" />
+      <text x="115" y="184" class="vnet-title">VNet: vnet-eastus-hub (10.200.0.0/24)</text>
+
+      <g id="hub-subnets">
+        <rect x="120" y="220" width="380" height="80" rx="10" class="subnet-box" />
+        <text x="145" y="253" class="subnet-name">AzureFirewallSubnet</text>
+        <text x="145" y="276" class="cidr">10.200.0.0/26</text>
+
+        <rect x="120" y="325" width="380" height="80" rx="10" class="subnet-box" />
+        <text x="145" y="358" class="subnet-name">GatewaySubnet</text>
+        <text x="145" y="381" class="cidr">10.200.0.64/27</text>
+
+        <rect x="120" y="430" width="380" height="80" rx="10" class="subnet-box" />
+        <text x="145" y="463" class="subnet-name">AzureBastionSubnet</text>
+        <text x="145" y="486" class="cidr">10.200.0.128/26</text>
+      </g>
+    </g>
+  </g>
+
+  <g id="spoke-resource-group">
+    <rect x="620" y="82" width="530" height="515" rx="18" class="resource-group" />
+    <text x="645" y="117" class="section-title">Resource group: rg-enterprise-networking-spokes</text>
+
+    <g id="spoke-vnet">
+      <rect x="655" y="150" width="460" height="410" rx="14" class="vnet-box" />
+      <text x="680" y="184" class="vnet-title">VNet: vnet-spoke-BU0001A0008-00 (10.240.0.0/16)</text>
+
+      <g id="spoke-subnets">
+        <rect x="685" y="205" width="400" height="56" rx="10" class="subnet-box" />
+        <text x="710" y="229" class="subnet-name">snet-clusternodes</text>
+        <text x="710" y="249" class="cidr">10.240.0.0/22</text>
+
+        <rect x="685" y="270" width="400" height="56" rx="10" class="subnet-box" />
+        <text x="710" y="294" class="subnet-name">snet-clusteringressservices</text>
+        <text x="710" y="314" class="cidr">10.240.4.0/28</text>
+
+        <rect x="685" y="335" width="400" height="56" rx="10" class="subnet-box" />
+        <text x="710" y="359" class="subnet-name">snet-applicationgateway</text>
+        <text x="710" y="379" class="cidr">10.240.5.0/24</text>
+
+        <rect x="685" y="400" width="400" height="56" rx="10" class="subnet-box" />
+        <text x="710" y="424" class="subnet-name">snet-privatelinkendpoints</text>
+        <text x="710" y="444" class="cidr">10.240.4.32/28</text>
+
+        <rect x="685" y="465" width="400" height="78" rx="10" class="subnet-box" />
+        <text x="710" y="490" class="subnet-name">snet-apiserver</text>
+        <text x="710" y="510" class="cidr">10.240.6.0/28</text>
+        <text x="710" y="530" class="note">delegated to Microsoft.ContainerService/managedClusters</text>
+      </g>
+    </g>
+  </g>
+
+  <g id="pod-cidr-callout">
+    <line x1="840" y1="615" x2="935" y2="560" stroke="#8a6d1d" stroke-width="2" stroke-dasharray="5 5" />
+    <rect x="650" y="615" width="500" height="105" rx="12" class="callout-box" />
+    <text x="675" y="642" class="callout-title">Azure CNI Overlay pod CIDR</text>
+    <text x="675" y="666" class="small">Pod IPs come from a separate overlay address</text>
+    <text x="675" y="688" class="small">space (e.g. 192.168.0.0/16). Pods don't</text>
+    <text x="675" y="710" class="small">consume VNet subnet IPs.</text>
+  </g>
+
+  <g id="vnet-peering">
+    <line x1="310" y1="755" x2="890" y2="755" class="peering" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)" />
+    <text x="600" y="782" text-anchor="middle" class="section-title">VNet peering</text>
+  </g>
+</svg>
