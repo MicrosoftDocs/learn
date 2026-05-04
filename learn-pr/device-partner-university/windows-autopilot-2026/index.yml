@@ -19,7 +19,7 @@ abstract: |
   - Discover how Windows Autopilot streamlines IT tasks such as resetting, repurposing, and reassigning devices.
 prerequisites: |
   - None
-iconUrl: /training/achievements/windows-autopilot.svg
+iconUrl: /training/achievements/windows-autopilot-2026.svg
 ratingEnabled: false
 levels:
   - beginner
@@ -32,11 +32,11 @@ products:
   - windows-autopilot
 
 units:
-  - learn.dpu.windows-autopilot.introduction
-  - learn.dpu.windows-autopilot.windows-autopilot
-  - learn.dpu.windows-autopilot.deployment-process
-  - learn.dpu.windows-autopilot.other-capabilities
-  - learn.dpu.windows-autopilot.knowledge-check
-  - learn.dpu.windows-autopilot.summary
+  - learn.dpu.windows-autopilot-2026.introduction
+  - learn.dpu.windows-autopilot-2026.windows-autopilot
+  - learn.dpu.windows-autopilot-2026.deployment-process
+  - learn.dpu.windows-autopilot-2026.other-capabilities
+  - learn.dpu.windows-autopilot-2026.knowledge-check
+  - learn.dpu.windows-autopilot-2026.summary
 badge:
-  uid: learn.dpu.windows-autopilot.badge
+  uid: learn.dpu.windows-autopilot-2026.badge

@@ -19,7 +19,7 @@ abstract: |
   - Describe what hotpatch updates are and how they function
 prerequisites: |
   - None
-iconUrl: /training/achievements/hotpatch-updates.svg
+iconUrl: /training/achievements/hotpatch-updates-2026.svg
 ratingEnabled: false
 levels:
   - beginner
@@ -38,4 +38,4 @@ units:
   - learn.dpu.hotpatch-updates-2026.enable-hotpatch
   - learn.dpu.hotpatch-updates-2026.summary
 badge:
-  uid: learn.dpu.hotpatch-updates.badge
+  uid: learn.dpu.hotpatch-updates-2026.badge
