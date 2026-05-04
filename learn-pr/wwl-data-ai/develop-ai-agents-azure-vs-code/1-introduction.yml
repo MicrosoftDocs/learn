@@ -2,6 +2,7 @@
 uid: learn.wwl.develop-ai-agents-azure-vs-code.introduction
 title: Introduction
 metadata:
+  zone_pivot_groups: video-or-text
   title: Introduction
   description: Introduction to developing AI agents with Microsoft Foundry and Visual Studio Code.
   ms.date: 5/1/2026
