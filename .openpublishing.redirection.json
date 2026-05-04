@@ -66013,6 +66013,11 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/manage-enterprise-security-hdinsight/index.yml",
       "redirect_url": "/azure/hdinsight/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/build-oss-analytical-solutions-az-hdinsight/index.yml",
+      "redirect_url": "/azure/hdinsight/",
+      "redirect_document_id": false
     }
   ]
 }
