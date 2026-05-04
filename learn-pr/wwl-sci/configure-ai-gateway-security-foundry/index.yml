@@ -7,7 +7,7 @@ metadata:
   author: r-c-stewart
   ms.author: roberts
   ms.topic: module
-  ms.service: azure-ai-foundry
+  ms.service: azure-api-management
   ai-usage: ai-assisted
 title: Configure AI Gateway security in Microsoft Foundry
 summary: Use AI Gateway in Microsoft Foundry to secure and govern AI model traffic. Examine the gateway architecture, create and configure a gateway instance with security controls, and apply access restrictions and monitoring to enforce policy and detect misuse.
@@ -26,12 +26,12 @@ levels:
 roles:
   - security-engineer
 products:
-  - azure-ai-foundry
   - azure
+  - microsoft-foundry
+  - azure-api-management
 subjects:
   - security
   - cloud-security
-  - ai-machine-learning
 units:
 - learn.wwl.configure-ai-gateway-security-foundry.introduction
 - learn.wwl.configure-ai-gateway-security-foundry.examine-ai-gateway-architecture
