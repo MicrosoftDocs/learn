@@ -58,7 +58,7 @@ For network policy, prefer Cilium when you use Azure CNI Powered by Cilium. For 
 
 Factor in the addresses that are required for communication with other Azure services over Private Link. In this architecture, budget at least three Private Link IP addresses: two for the initial Azure Container Registry private endpoint (one for the registry endpoint and one for the home-region regional data endpoint) and one for Azure Key Vault. Add more if you enable Azure Container Registry geo-replication or additional regional endpoints.
 
-:::image type="content" source="../media/hub-spoke-network-address.svg" alt-text="Hub-spoke network topology showing the hub VNet (10.200.0.0/24) with Azure Firewall, Gateway, and Bastion subnets, peered to a spoke VNet (10.240.0.0/16) containing cluster nodes, ingress services, Application Gateway, Private Link endpoints, and a delegated API server subnet, plus a separate Azure CNI Overlay pod CIDR.":::
+:::image type="content" source="../media/hub-spoke-network-address.svg" alt-text="Diagram that shows a hub-spoke network topology with hub and spoke VNet address ranges and AKS cluster subnets.":::
 
 
 This architecture is designed for a single workload. For multiple workloads, you might want to isolate the user node pools from each other and from the system node pool. That choice results in more subnets that are smaller in size. Also, the ingress resource might be more complex, and as a result you might need multiple ingress controllers that require extra IP addresses.

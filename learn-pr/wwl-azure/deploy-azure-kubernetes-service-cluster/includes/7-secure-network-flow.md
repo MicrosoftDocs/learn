@@ -7,14 +7,14 @@ Securing network flow into and out of an Azure Kubernetes Service (AKS) cluster 
 
 This architecture has several layers of security to secure all types of traffic.
 
-:::image type="content" source="../media/network-traffic-ingress.svg" alt-text="Network traffic flow showing user-initiated traffic from the public internet through a Web Application Firewall and AKS-managed internal load balancer to the AKS cluster, and cluster-initiated egress traffic from the cluster through Azure Firewall in a peered hub VNet to the public internet.":::
+:::image type="content" source="../media/network-traffic-ingress.svg" alt-text="Diagram that shows AKS ingress traffic through a WAF and egress traffic through Azure Firewall in a hub VNet.":::
 
 
 ## Ingress traffic flow
 
 The architecture accepts only TLS-encrypted requests from the client. The Application Gateway is configured with the `AppGwSslPolicy20220101` predefined policy (or `AppGwSslPolicy20220101S` for a stricter cipher set, or an equivalent CustomV2 policy) to enforce TLS 1.2 as the minimum protocol version, with TLS 1.3 also enabled. Use host-specific multi-site HTTPS listeners for production sites so each TLS site is matched by SNI hostname. For no-SNI or IP-only clients on Application Gateway v2, configure a high-priority dummy multi-site HTTPS listener with a self-signed certificate and route it to a sinkhole backend. Use lower-priority wildcard or basic listeners only as catch-all routing after TLS listener selection. For background on multisite listeners, see [Application Gateway multiple site hosting](/azure/application-gateway/multiple-site-overview). The diagram shows the recommended production posture: end-to-end TLS from the client to the workload pod, with certificate material stored in Azure Key Vault.
 
-:::image type="content" source="../media/traffic-ingress-configuration.svg" alt-text="End-to-end TLS ingress configuration: client connects over TLS to Application Gateway (hop 1), Application Gateway re-encrypts traffic to the in-cluster ingress controller (hop 2), the ingress controller forwards over TLS to the workload pod (hop 3), and Application Gateway retrieves TLS certificates from Azure Key Vault through a certificate management path (background certificate rotation, not per-request traffic).":::
+:::image type="content" source="../media/traffic-ingress-configuration.svg" alt-text="Diagram that shows end-to-end TLS ingress from client to Application Gateway, ingress controller, and workload pod with Key Vault.":::
 
 
 1.  The client sends an HTTPS request to `delta.contoso.com`. The name resolves through a DNS `A` record to the public IP address of Azure Application Gateway. Application Gateway presents the `delta.contoso.com` certificate from Azure Key Vault by using a user-assigned managed identity.
