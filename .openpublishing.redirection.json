@@ -171,6 +171,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "/training/paths/modern-management-with-cloud-native-windows-learning-path",
+      "redirect_url": "/training/paths/modern-management-with-cloud-native-windows-accreditation-2026"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/gain-insights-data-kusto-query-language/10-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/azure/?product=popular",
       "redirect_document_id": false
