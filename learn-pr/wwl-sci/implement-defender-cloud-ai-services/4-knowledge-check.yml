@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-cloud-ai-services.knowledge-check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge of enabling and configuring the Defender for AI Services plan and monitoring AI security posture.
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's security engineer needs to enable threat detection for Azure OpenAI models deployed in an Azure subscription. Which toggle does the engineer enable in Microsoft Defender for Cloud?"
+    choices:
+    - content: "The Defender Cloud Security Posture Management (CSPM) plan toggle in Environment settings"
+      isCorrect: false
+      explanation: "Incorrect. Defender CSPM provides posture management and attack path analysis, but doesn't provide runtime threat detection for AI services inference traffic."
+    - content: "The AI services plan toggle in Environment settings"
+      isCorrect: true
+      explanation: "Correct. The AI services plan is the Cloud Workload Protection plan that scans text tokens at inference time and generates security alerts for threats like jailbreak attempts, data leakage, and credential theft."
+    - content: "The Security for AI Agents toggle in the Microsoft Defender portal"
+      isCorrect: false
+      explanation: "Incorrect. Security for AI Agents in the Microsoft Defender portal enables Copilot Studio agent protection through Defender for Cloud Apps. It doesn't enable threat detection for Azure AI services workloads."
+    - content: "The Microsoft 365 app connector in the Microsoft Defender portal"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft 365 app connector enables audit log and alert flow for Defender for Cloud Apps, not Azure AI services threat detection."
+  - content: "A SOC analyst at Contoso reviews an AI threat protection alert but finds the prompt content is masked. What setting needs to be enabled so future alerts include the prompt and response snippets?"
+    choices:
+    - content: "Data security for AI interactions"
+      isCorrect: false
+      explanation: "Incorrect. Data security for AI interactions enables Microsoft Purview to access prompt and response data for compliance capabilities like SIT classification and eDiscovery. It doesn't control whether prompt content appears in security alerts."
+    - content: "AI model security"
+      isCorrect: false
+      explanation: "Incorrect. AI model security scans models in Azure Machine Learning registries for vulnerabilities and malware. It doesn't affect the content shown in AI threat protection alerts."
+    - content: "Suspicious prompt evidence"
+      isCorrect: true
+      explanation: "Correct. Enabling suspicious prompt evidence includes redacted snippets of the user prompt and model response in each alert, giving security engineers the context they need for effective triage."
+    - content: "Microsoft Sentinel alert enrichment"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel can ingest and enrich Defender for Cloud alerts. However, the prompt evidence toggle in the Defender for AI Services plan settings is what controls whether prompt content appears in alerts."
+  - content: "A security engineer needs to confirm that all Azure subscriptions with AI workloads have threat detection enabled. Where should the engineer check protection coverage?"
+    choices:
+    - content: "The Microsoft Defender XDR incident queue filtered by AI alerts"
+      isCorrect: false
+      explanation: "Incorrect. The incident queue shows alerts that fired, but it doesn't show which subscriptions have the plan enabled or disabled."
+    - content: "The Data and AI security dashboard in Microsoft Defender for Cloud"
+      isCorrect: true
+      explanation: "Correct. The Data and AI security dashboard shows protection coverage across subscriptions, including which have the AI services plan enabled and which don't."
+    - content: "The Azure Monitor activity log filtered by Defender for Cloud events"
+      isCorrect: false
+      explanation: "Incorrect. The activity log records management operations on Azure resources, but doesn't provide a consolidated view of Defender plan coverage across subscriptions."
+    - content: "The Security for AI settings page in the Microsoft Defender portal"
+      isCorrect: false
+      explanation: "Incorrect. The Security for AI settings page in the Microsoft Defender portal controls Copilot Studio agent protection through Defender for Cloud Apps, not the Defender for Cloud AI services plan."
+  - content: "A security engineer opens an AI threat protection alert in the Microsoft Defender portal to confirm it contains the context the SOC team needs for triage. The prompt evidence field is empty. What should the engineer do?"
+    choices:
+    - content: "Enable the suspicious prompt evidence toggle in the AI services plan settings"
+      isCorrect: true
+      explanation: "Correct. The prompt evidence field is empty when suspicious prompt evidence is disabled. Enabling the toggle in the AI services plan settings in Defender for Cloud Environment settings causes future alerts to include redacted prompt and response snippets."
+    - content: "Enable data security for AI interactions in the AI services plan settings"
+      isCorrect: false
+      explanation: "Incorrect. Data security for AI interactions enables Microsoft Purview to access prompt data for compliance purposes. It doesn't control whether prompt content appears in security alert fields in the Defender portal."
+    - content: "Configure the Microsoft Defender XDR data connector in Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. The Defender XDR data connector routes alerts to Microsoft Sentinel. It doesn't affect the content of individual alert fields such as prompt evidence."
+    - content: "Assign the Security reader role to the SOC team in the Azure subscription"
+      isCorrect: false
+      explanation: "Incorrect. Role assignments control who can view alerts, not what content appears within alert fields. The prompt evidence field is empty because the feature is disabled, not because of a permissions issue."
