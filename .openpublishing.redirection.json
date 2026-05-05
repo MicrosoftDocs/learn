@@ -171,27 +171,27 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/training/modules/introduction-to-entra-id/index.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/introduction-to-entra-id/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-entra-id-2026/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/training/modules/windows-autopilot/index.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/windows-autopilot/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/windows-autopilot-2026/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/training/modules/microsoft-intune/index.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/microsoft-intune/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/microsoft-intune-2026/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/training/modules/hotpatch-updates/index.yml",
+      "source_path_from_root": "/learn-pr/device-partner-university/hotpatch-updates/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/hotpatch-updates-2026/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/training/paths/modern-management-with-cloud-native-windows-learning-path",
+      "source_path_from_root": "/learn-pr/paths/modern-management-with-cloud-native-windows-learning-path/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/modern-management-with-cloud-native-windows-accreditation-2026/",
       "redirect_document_id": false
     },
