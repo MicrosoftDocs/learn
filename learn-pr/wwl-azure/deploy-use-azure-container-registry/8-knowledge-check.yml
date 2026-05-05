@@ -37,3 +37,14 @@ quiz:
     - content: "To create a virtual machine instance with the Azure portal."
       isCorrect: false
       explanation: "Incorrect. The user wants to create a container registry instance, not a virtual machine instance."
+  - content: "When a user signs in to Azure Container Registry with the Azure CLI by using az acr login, which value should they provide for the --name parameter?"
+    choices:
+    - content: "The registry resource name, such as newregistryapl."
+      isCorrect: true
+      explanation: "Correct. The az acr login command uses the registry resource name, not the fully qualified login server."
+    - content: "The fully qualified login server, such as newregistryapl.azurecr.io."
+      isCorrect: false
+      explanation: "Incorrect. The fully qualified login server is used in Docker tags, but az acr login --name uses the registry resource name."
+    - content: "The repository and tag name, such as hello-world:v1."
+      isCorrect: false
+      explanation: "Incorrect. The repository and tag identify the container image, but az acr login --name uses the registry resource name."
