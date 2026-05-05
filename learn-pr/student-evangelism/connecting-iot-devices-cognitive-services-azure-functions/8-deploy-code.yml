@@ -5,10 +5,9 @@ metadata:
   title: How to upload device code to the IoT DevKit
   description: In this section, we help the learner configure the IoT DevKit to call the cloud-hosted Function app
   ms.date: 05/01/2026
-  author: leestott
-  ms.author: leestott
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/8-deploy-code.md)]

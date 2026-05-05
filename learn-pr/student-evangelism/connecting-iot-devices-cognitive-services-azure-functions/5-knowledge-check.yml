@@ -5,10 +5,9 @@ metadata:
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 05/01/2026
-  author: leestott
-  ms.author: leestott
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
 quiz:

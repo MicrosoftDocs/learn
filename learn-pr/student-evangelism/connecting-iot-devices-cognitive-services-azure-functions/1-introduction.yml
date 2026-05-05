@@ -5,10 +5,9 @@ metadata:
   title: Introduction
   description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
   ms.date: 05/01/2026
-  author: leestott
-  ms.author: leestott
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]

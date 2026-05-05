@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Deploying the cloud Function app and device code
   description: In this section, learners deploy a cloud-hosted Azure Function app that calls Azure AI Speech and configure the IoT DevKit to call it
   ms.date: 05/01/2026
-  author: leestott
-  ms.author: leestott
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/9-exercise-deploy.md)]
