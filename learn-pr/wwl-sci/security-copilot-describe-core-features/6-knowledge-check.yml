@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-  module_assessment: true
+  module_assessment: false
 durationInMinutes: 2
 
 content: |
