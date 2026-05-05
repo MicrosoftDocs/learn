@@ -30,4 +30,4 @@ The Conditional Access optimization agent scans your tenant for new users and ap
 
 
 
-[![Screenshot of the landing page for the interactive simulation.](../media/simulation-coditional-access-agent.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_conditional_access_optimization_agent_web/story.html)
+[![Screenshot of the landing page for the interactive simulation.](../media/simulation-conditional-access-agent.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_conditional_access_optimization_agent_web/story.html)
