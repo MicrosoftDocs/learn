@@ -4,7 +4,7 @@ title: How to create Azure AI services
 metadata:
   title: How to create Azure AI services
   description: In this section, we help the learner to create a Speech service in the cloud
-  ms.date: 07/10/2024
+  ms.date: 05/01/2026
   author: leestott
   ms.author: leestott
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/6-create.md)]
-
+

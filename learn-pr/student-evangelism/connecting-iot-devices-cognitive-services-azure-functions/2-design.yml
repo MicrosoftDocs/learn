@@ -4,7 +4,7 @@ title: Design Azure AI services using Azure Functions
 metadata:
   title: Design Azure AI services using Azure Functions
   description: In this section, we help the learner to understand the design of the deploying Azure AI services using Azure Functions
-  ms.date: 07/10/2024
+  ms.date: 05/01/2026
   author: leestott
   ms.author: leestott
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/2-design.md)]
-
+

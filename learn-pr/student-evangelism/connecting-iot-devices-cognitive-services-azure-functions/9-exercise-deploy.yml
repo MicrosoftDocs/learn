@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-deploy-azure-functions
-title: Exercise - Deploying Azure AI services as Azure Functions to the IoT device
+title: Exercise - Deploying the cloud Function app and device code
 metadata:
-  title: Exercise - Deploying Azure AI services as Azure Functions to the IoT device
-  description: In this section, we help the learner to how to deploy Azure AI services using the Azure Functions to the IoT device
-  ms.date: 07/10/2024
+  title: Exercise - Deploying the cloud Function app and device code
+  description: In this section, learners deploy a cloud-hosted Azure Function app that calls Azure AI Speech and configure the IoT DevKit to call it
+  ms.date: 05/01/2026
   author: leestott
   ms.author: leestott
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 15 # dummy number at present
 content: |
   [!include[](includes/9-exercise-deploy.md)]
-
+

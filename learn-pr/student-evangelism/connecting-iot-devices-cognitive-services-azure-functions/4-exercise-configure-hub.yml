@@ -4,7 +4,7 @@ title: Exercise - Configuring IoT device to the IoT Hub
 metadata:
   title: Exercise - Configuring IoT device to the IoT Hub
   description: In this section, we help the learner to configure IoT Devkit to the IoT Hub
-  ms.date: 07/10/2024
+  ms.date: 05/01/2026
   author: leestott
   ms.author: leestott
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/4-exercise-configure-hub.md)]
-
+
