@@ -6,7 +6,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.date: 5/1/2026
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-generated
 title: Develop AI agents with Microsoft Foundry and Visual Studio Code

@@ -8,7 +8,7 @@ metadata:
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Develop a vision-enabled generative AI application
 summary: A picture says a thousand words, and multimodal generative AI models can interpret images to respond to visual prompts. Learn how to build vision-enabled chat apps.
 abstract: |

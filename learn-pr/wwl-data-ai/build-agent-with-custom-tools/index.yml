@@ -8,7 +8,7 @@ metadata:
   ms.author: berryivor
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Integrate custom tools into your agent
 summary: "Built-in tools are useful, but they may not meet all your needs. In this module, learn how to extend the capabilities of your agent by integrating custom tools for your agent to use."
 abstract: |
