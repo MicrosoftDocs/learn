@@ -1,2 +1,2 @@
 <!-- Knowledge check questions are defined in the unit YAML file. -->
-Check your knowledge with these questions.
+Use the questions to verify your learning in this module.

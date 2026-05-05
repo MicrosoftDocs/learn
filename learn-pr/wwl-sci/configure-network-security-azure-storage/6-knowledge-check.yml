@@ -8,24 +8,24 @@ metadata:
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-generated
-title: Knowledge check
+title: Knowledge check 
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "A storage account has firewall rules configured with specific virtual network rules. An Azure Machine Learning workspace in the same subscription needs to access the storage account, but the workspace can't be placed in a virtual network. What network rule type should be configured to grant access?"
+  - content: "A storage account has firewall rules configured with specific virtual network rules. An Azure Machine Learning workspace in the same subscription needs to access the storage account, but the workspace cannot be placed in a virtual network. What network rule type should be configured to grant access?"
     choices:
     - content: "An IP network rule for the workspace's outbound IP addresses"
       isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning workspaces don't have fixed outbound IP addresses suitable for IP network rules. Resource instance rules are the correct approach for Azure PaaS services that can't use virtual network rules."
+      explanation: "Incorrect. Azure Machine Learning workspaces do not have fixed outbound IP addresses suitable for IP network rules. Resource instance rules are the correct approach for Azure PaaS services that cannot use virtual network rules."
     - content: "A virtual network rule for the subnet where the workspace is deployed"
       isCorrect: false
-      explanation: "Incorrect. In this scenario the workspace can't be placed in a virtual network, so a virtual network rule can't be applied. Resource instance rules address this limitation."
+      explanation: "Incorrect. In this scenario the workspace cannot be placed in a virtual network, so a virtual network rule cannot be applied. Resource instance rules address this limitation."
     - content: "A resource instance rule scoped to the Azure Machine Learning workspace"
       isCorrect: true
-      explanation: "Correct. Resource instance rules allow specific Azure resource instances to access storage accounts even when those resources can't be placed in a virtual network. The rule is scoped by the resource's managed identity and RBAC assignments."
+      explanation: "Correct. Resource instance rules allow specific Azure resource instances to access storage accounts even when those resources cannot be placed in a virtual network. The rule is scoped by the resource's managed identity and RBAC assignments."
     - content: "A trusted service exception for Azure Machine Learning"
       isCorrect: false
       explanation: "Incorrect. Trusted service exceptions apply to a defined set of Azure platform services. For granular, resource-specific access control, resource instance rules are the appropriate mechanism."
@@ -33,27 +33,27 @@ quiz:
     choices:
     - content: "Configure IP network rules to restrict access to the virtual network address space"
       isCorrect: false
-      explanation: "Incorrect. IP network rules restrict which IPs can reach the public endpoint, but they don't eliminate the public endpoint. Traffic still routes through the public endpoint infrastructure."
+      explanation: "Incorrect. IP network rules restrict which IPs can reach the public endpoint, but they do not eliminate the public endpoint. Traffic still routes through the public endpoint infrastructure."
     - content: "Enable virtual network service endpoints for the storage account subnet"
       isCorrect: false
-      explanation: "Incorrect. Virtual network service endpoints keep the storage account's public endpoint active. They optimize routing over the Azure backbone but don't assign a private IP to the storage account."
+      explanation: "Incorrect. Virtual network service endpoints keep the storage account's public endpoint active. They optimize routing over the Azure backbone but do not assign a private IP to the storage account."
     - content: "Deploy a private endpoint for the storage account and disable public network access"
       isCorrect: true
-      explanation: "Correct. A private endpoint assigns the storage account a private IP address within the virtual network. When admins combine this with disabling public network access, all storage traffic flows through the private IP with no public endpoint exposure."
+      explanation: "Correct. A private endpoint assigns the storage account a private IP address within the virtual network. Combined with disabling public network access, all storage traffic flows through the private IP with no public endpoint exposure."
     - content: "Enable the secure transfer required option on the storage account"
       isCorrect: false
-      explanation: "Incorrect. Secure transfer required enforces HTTPS for all requests but doesn't change the routing of traffic or eliminate the public endpoint."
-  - content: "A storage account has both virtual network rules and IP network rules configured. A client in a subnet that has a virtual network service endpoint for Azure Storage sends a request. The client's subnet IP falls within an IP network rule. Which statement correctly describes firewall rule evaluation?"
+      explanation: "Incorrect. Secure transfer required enforces HTTPS for all requests but does not change the routing of traffic or eliminate the public endpoint."
+  - content: "A storage account has both virtual network rules and IP network rules configured. A client in a subnet that has a VNet service endpoint for Azure Storage sends a request. The client's subnet IP falls within an IP network rule. Which statement correctly describes firewall rule evaluation?"
     choices:
-    - content: "The IP network rule is evaluated first and applies because it's explicitly configured"
+    - content: "The IP network rule is evaluated first and applies because it is explicitly configured"
       isCorrect: false
       explanation: "Incorrect. When a subnet has a service endpoint configured, traffic from that subnet no longer uses a public IP as the source. As a result, IP network rules no longer apply to that traffic."
-    - content: "The virtual network rule applies; service endpoint traffic uses a private source IP so IP rules no longer affect it"
+    - content: "The VNet rule applies; service endpoint traffic uses a private source IP so IP rules no longer affect it"
       isCorrect: true
-      explanation: "Correct. When a virtual network service endpoint is enabled on a subnet, traffic from that subnet uses the subnet's private address as its source IP. Using the private address means any matching IP network rules have no effect on that traffic."
+      explanation: "Correct. When a VNet service endpoint is enabled on a subnet, traffic from that subnet uses the subnet's private address as its source IP. This means any matching IP network rules have no effect on that traffic."
     - content: "Both rules apply simultaneously and the most permissive rule takes effect"
       isCorrect: false
-      explanation: "Incorrect. Azure Storage firewall rules don't work on a most-permissive basis with simultaneous rule application. Once a service endpoint is enabled, IP rules are superseded for that subnet's traffic."
+      explanation: "Incorrect. Azure Storage firewall rules do not work on a most-permissive basis with simultaneous rule application. Once a service endpoint is enabled, IP rules are superseded for that subnet's traffic."
     - content: "Service endpoint traffic bypasses all firewall rules"
       isCorrect: false
-      explanation: "Incorrect. Service endpoint traffic is still evaluated against the virtual network rules configured for the storage account. It isn't exempt from firewall evaluation; it's just governed by virtual network rules rather than IP rules."
+      explanation: "Incorrect. Service endpoint traffic is still evaluated against the virtual network rules configured for the storage account. It is not exempt from firewall evaluation; it is just governed by VNet rules rather than IP rules."
