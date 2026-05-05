@@ -66063,6 +66063,11 @@
       "source_path_from_root": "/learn-pr/wwl-azure/deploy-azure-kubernetes-service-cluster/6-integrate-azure-active-directory-cluster.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/deploy-azure-kubernetes-service-cluster/",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-azure/deploy-use-azure-container-registry/7-create-virtual-network.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-use-azure-container-registry/",
+      "redirect_document_id": false
     }
   ]
 }
