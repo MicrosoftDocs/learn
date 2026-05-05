@@ -23,11 +23,10 @@ To view the system capabilities supported by the enabled plugins, you select the
 
 :::image type="content" source="../media/prompts-to-system-capabilities.png" lightbox="../media/prompts-to-system-capabilities.png" alt-text="Screen capture of the prompt icon that when selected opens the window to select system capabilities.":::
 
-The sections that follow provide brief descriptions for many, but not all, of the available Microsoft plugins. Microsoft Security Copilot is continually adding support for Microsoft products.
+> [!IMPORTANT]
+> The sections that follow provide brief descriptions for only a few of the available Microsoft plugins and some of their capabilities. Microsoft Security Copilot is continually adding support for Microsoft products and for each plugin the list of capabilities is also growing.
 
 #### Azure Firewall
-
-Azure Firewall is a cloud-native and intelligent network firewall security service that provides best-in-class threat protection for your cloud workloads running in Azure. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 
 The Azure Firewall integration with Copilot helps analysts perform detailed investigations of the malicious traffic intercepted by the intrusion detection and prevention system (IDPS) and/or the threat intelligence capabilities of the firewalls across their environment.
 
