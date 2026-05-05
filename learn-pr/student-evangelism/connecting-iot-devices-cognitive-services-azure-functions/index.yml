@@ -35,7 +35,6 @@ prerequisites: |
     - A supported .NET SDK installed on your computer, such as .NET 8, if you migrate the Functions project to Azure Functions v4. The legacy .NET Core 2.1 SDK is only for archival reproduction of the old sample and isn't supported for current Azure deployment.
 
 iconUrl: /training/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
-hidden: true
 badge:
   uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.badge
 levels:
@@ -45,7 +44,6 @@ roles:
 products:
 - azure-iot-hub
 - azure-functions
-- azure-ai-services
 subjects:
 - iot
 - machine-learning
