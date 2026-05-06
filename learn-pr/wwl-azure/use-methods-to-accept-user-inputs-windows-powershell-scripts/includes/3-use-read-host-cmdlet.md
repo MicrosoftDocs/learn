@@ -20,7 +20,7 @@ $answer = Read-Host
 ```
 
 > [!NOTE]
-> Input from **Read-Host** is limited to 1022 characters.
+> Input from **Read-Host** is limited to 8190 characters in Windows PowerShell 5.1.
 
-You can mask the input users enter at the prompt by using the *-MaskInput* or *-AsSecureString* parameters. Both parameters cause the characters entered by the user to display as asterisks (`*`). When *-MaskInput* is used, the response is collected as a String object. When *-AsSecureString* is used, the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.
+You can mask the input users enter at the prompt by using the *-AsSecureString* parameter. This parameter causes the characters entered by the user to display as asterisks (`*`), and the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.
 

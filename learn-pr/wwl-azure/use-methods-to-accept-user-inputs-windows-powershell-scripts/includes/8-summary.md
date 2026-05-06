@@ -16,7 +16,11 @@ In this module, you learned about various methods that allow you to accept user 
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [Read-Host](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/read-host?view=powershell-5.1)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [Get-Credential](https://learn.microsoft.com/powershell/module/microsoft.powershell.security/get-credential?view=powershell-5.1)
+
+- [SecretManagement and SecretStore overview](https://learn.microsoft.com/powershell/utility-modules/secretmanagement/overview?view=ps-modules)
+
+- [About Functions Advanced Parameters](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters?view=powershell-5.1)
 

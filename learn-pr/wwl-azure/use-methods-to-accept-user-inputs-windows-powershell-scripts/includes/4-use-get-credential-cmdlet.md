@@ -2,7 +2,7 @@ As a best practice, administrators should have two user accounts. Each administr
 
 Many of the scripts that administrators run require elevated privileges. For example, a script that creates Active Directory Domain Services (AD DS) user accounts requires administrative privileges. Even querying event logs from a remote computer might require administrative privileges.
 
-One way to elevate privileges when you run a script is to use the **Run as administrator** option when you open the Windows PowerShell prompt. If you use **Run as administrator**, you're prompted for credentials. So, all actions performed at that Windows PowerShell prompt use the credentials provided.
+One way to elevate privileges when you run a script is to use the **Run as administrator** option when you open the Windows PowerShell prompt. If your account is a standard user, Windows prompts you to enter administrator credentials. If your account is already a member of the local Administrators group, Windows displays a UAC consent prompt rather than a credential prompt. Either way, all actions performed at that Windows PowerShell prompt run with elevated privileges.
 
 As an alternative to using **Run as administrator** for running a script, you can have your script prompt for credentials instead. Many Windows PowerShell cmdlets allow an alternate set of credentials to be provided. That way, the credentials that the script obtains can be used to run individual commands in the script. You can prompt for credentials by using **Get-Credential**. The syntax for using the **Get-Credential** cmdlet is:
 
@@ -39,6 +39,9 @@ The **SecretManagement** module is available in the PowerShell Gallery. You can 
 ```powershell
 Install-Module Microsoft.PowerShell.SecretManagement
 ```
+
+> [!NOTE]
+> If you're using PSResourceGet (included with PowerShell 7.4 and later), you can also install the module with `Install-PSResource Microsoft.PowerShell.SecretManagement`.
 
 Microsoft also provides the **SecretStore** module that you can use to create a local secret vault for storing credentials. However, similar to using **Export-Clixml**, the vault is stored on the local machine and in the current user context.
 
