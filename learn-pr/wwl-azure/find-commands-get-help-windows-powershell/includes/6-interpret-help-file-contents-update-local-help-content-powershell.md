@@ -1,23 +1,26 @@
 When you find the command that you need for a task, you can use its help file to learn how to use it. One way to learn is to review the examples and try to understand their usage. However, it's uncommon for examples to cover all possible variations of that's command's usage. Learning to interpret the help-file syntax can help you to identify all capabilities of a given command.
 
-## Get-EventLog help
+## Get-Service help
 
-Use the help for **Get-EventLog** as an example. If you enter the command **Get-Help Get-EventLog** in the console and press the Enter key, the help returns the following syntax:
+> [!NOTE]
+> This unit uses **Get-Service** as the example for reading help file syntax. `Get-Service` works in both Windows PowerShell 5.1 and PowerShell 7. If you encounter **Get-EventLog** in existing scripts or documentation, be aware that it is only available in Windows PowerShell 5.1 — it was removed from PowerShell 7. Microsoft recommends **Get-WinEvent** as the modern replacement for event log queries.
+
+Use the help for **Get-Service** as an example. If you enter the command **Get-Help Get-Service** in the console and press the Enter key, the help returns the following syntax:
 
 ```ps
-Get-EventLog [-LogName] <String> [[-InstanceId] <Int64[]>] [-After <DateTime>] [-AsBaseObject] [-Before <DateTime>] [-ComputerName <String[]>] [-EntryType {Error | Information | FailureAudit | SuccessAudit | Warning}] [-Index <Int32[]>] [-Message <String>] [-Newest <Int32>] [-Source <String[]>] [-UserName <String[]>] [<CommonParameters>]
+Get-Service [[-Name] <String[]>] [-ComputerName <String[]>] [-DependentServices] [-RequiredServices] [-Include <String[]>] [-Exclude <String[]>] [<CommonParameters>]
 
-Get-EventLog [-AsString] [-ComputerName <String[]>] [-List] [<CommonParameters>]
+Get-Service [-ComputerName <String[]>] [-DependentServices] [-RequiredServices] -DisplayName <String[]> [-Include <String[]>] [-Exclude <String[]>] [<CommonParameters>]
 
 ```
 
-The two blocks of text are *parameter sets*, each of which represents a way in which you can run the command. Notice that each parameter set has many parameters, and they both have several parameters in common. You can't mix and match parameters between sets. That is, if you decide to use the *–List* parameter, you can't also use *–LogName*, because these parameters don't appear together in the same parameter set.
+The two blocks of text are *parameter sets*, each of which represents a way in which you can run the command. Notice that each parameter set has many parameters, and they both have several parameters in common. You can't mix and match parameters between sets. That is, if you decide to use the *–DisplayName* parameter, you can't also use *–Name*, because these parameters don't appear together in the same parameter set.
 
-The *–LogName* parameter name is enclosed in square brackets, meaning it's a *positional parameter*. You can't run the command without a log name. However, you don't have to enter the –*LogName* parameter name. You do need to pass the log name string as the first parameter, because that's the position in the help file where the *–LogName* parameter appears. Therefore, the following two commands provide the same results:
+The *–Name* parameter name is enclosed in square brackets, meaning it's a *positional parameter*. You can retrieve a service without providing the parameter name — you just need to pass the service name as the first argument, because that's the position in the help file where the *–Name* parameter appears. Therefore, the following two commands provide the same results:
 
 ```ps
-Get-EventLog –LogName Application
-Get-EventLog Application
+Get-Service –Name Spooler
+Get-Service Spooler
 
 ```
 
@@ -26,14 +29,14 @@ Get-EventLog Application
 Be cautious when omitting parameter names, for a few reasons. You can't omit every parameter. For example, the *‑ComputerName* parameter can't have the parameter name omitted. Additionally, you can quickly lose track of where things go. When you provide parameter names, the parameters can appear in any order, as the following command depicts:
 
 ```ps
-Get-EventLog –ComputerName LON-DC1 –LogName Application –Newest 10
+Get-Service –Name Spooler –ComputerName LON-DC1
 
 ```
 
-However, when you omit parameter names, you must ensure to enter parameters in the correct order. For example, the following command won't work because the log name value doesn't appear in the correct position:
+However, when you omit parameter names, you must ensure to enter parameters in the correct order. For example, the following command won't work because the service name value doesn't appear in the correct position:
 
 ```ps
-Get-EventLog –ComputerName LON-DC1 Application
+Get-Service –ComputerName LON-DC1 Spooler
 
 ```
 
@@ -42,19 +45,19 @@ Get-EventLog –ComputerName LON-DC1 Application
 Some parameters accept more than one value. In the **SYNTAX** section, a double-square-bracket notation in the parameter value type designates these parameters. For example:
 
 ```ps
--ComputerName <string[]>
+-Name <string[]>
 
 ```
 
-The above syntax indicates that the *–ComputerName* parameter can accept one or more string values. One way to specify multiple values is by using a comma-separated list. You don't have to enclose the values in quotation marks, unless the values themselves contain a comma or white space, such as a space or tab character. For example, use the following command to specify multiple computer names:
+The above syntax indicates that the *–Name* parameter can accept one or more string values. One way to specify multiple values is by using a comma-separated list. You don't have to enclose the values in quotation marks, unless the values themselves contain a comma or white space, such as a space or tab character. For example, use the following command to retrieve services on multiple computers:
 
 ```ps
-Get-EventLog –LogName Application –ComputerName LON-CL1,LON-DC1
+Get-Service –Name Spooler –ComputerName LON-CL1,LON-DC1
 
 ```
 
 > [!NOTE]
-> You can find more information about each parameter by reviewing the command’s full help. For example, run **Get-Help Get-EventLog –Full** to review the full help for **Get-EventLog**, and notice the additional information that displays. For example, you can confirm that the *–LogName* parameter is mandatory and appears in the first position.
+> You can find more information about each parameter by reviewing the command's full help. For example, run **Get-Help Get-Service –Full** to review the full help for **Get-Service**, and notice the additional information that displays. For example, you can confirm that the *–Name* parameter is optional (it defaults to returning all services) and appears in the first position.
 
 **Best Practice:** If you're just getting started with Windows PowerShell, try to provide full parameter names instead of passing parameter values by position. Full parameter names make commands easier to review and troubleshoot, and they make it easier to notice mistakes if you're entering the command incorrectly.
 

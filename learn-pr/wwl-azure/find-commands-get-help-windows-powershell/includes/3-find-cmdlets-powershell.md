@@ -32,4 +32,7 @@ The PowerShell Gallery is a central repository for Windows PowerShell–related 
 
 You can pass the results of the **Find-Command** cmdlet to the **Install-Module** cmdlet, which the **PowerShellGet** module also contains. **Install-Module** will install the module that contains the cmdlet that you discovered.
 
+> [!NOTE]
+> If you're using **PowerShell 7.4 or later**, the `Microsoft.PowerShell.PSResourceGet` module is included as the successor to PowerShellGet. It provides updated cmdlets: `Find-PSResource` replaces `Find-Command`/`Find-Module`, and `Install-PSResource` replaces `Install-Module`. Both modules are available side-by-side in PowerShell 7.4+, so existing scripts using PowerShellGet cmdlets continue to work.
+
 **Additional Reading:** For more information about PowerShell Gallery, refer to [PowerShell Gallery](https://aka.ms/iast9g).

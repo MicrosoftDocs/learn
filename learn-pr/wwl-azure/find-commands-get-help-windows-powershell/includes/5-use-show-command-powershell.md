@@ -1,4 +1,9 @@
-The **Show-Command** cmdlet opens a window that displays either a list of commands or a specific command's parameters. This window is the same one that displays when you select the **Show** **Command Window** option in the ISE.
+The **Show-Command** cmdlet opens a window that displays either a list of commands or a specific command's parameters.
+
+> [!NOTE]
+> The **Windows PowerShell ISE** referenced in this unit is only available for **Windows PowerShell 5.1**. The ISE is no longer in active feature development and is not supported in PowerShell 7. Microsoft recommends **Visual Studio Code with the PowerShell extension** as the modern scripting environment for both Windows PowerShell and PowerShell 7. You can use `Show-Command` from the integrated terminal in VS Code.
+
+In the Windows PowerShell ISE, this window is the same one that displays when you select the **Show** **Command Window** option.
 
 To display a specific command's parameters, provide the name of the command as the value for the *‑Name* parameter. For example, to open the **Show** **Command Window** with the command used to retrieve an Active Directory user, enter the following command in the console, and then press the Enter key:
 
