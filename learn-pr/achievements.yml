@@ -8016,3 +8016,13 @@ achievements:
   title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
   summary: Run Petabyte level OSS NoSQL databases with HDInsight HBase
   iconUrl: /training/achievements/run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.svg
+- uid: learn.wwl.use-sql-warehouses-azure-databricks.badge
+  type: badge
+  title: Use SQL Warehouses in Azure Databricks
+  summary: Learn how to use SQL Warehouses in Azure Databricks to run SQL queries and perform data analysis.
+  iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
+- uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.badge
+  type: badge
+  title: Run Azure Databricks notebooks in Azure Data Factory
+  summary: Learn how to run Azure Databricks notebooks in Azure Data Factory to orchestrate data workflows and automate data processing tasks.
+  iconUrl: /training/achievements/create-production-workloads-on-azure-databricks-with-azure-data-factory.svg

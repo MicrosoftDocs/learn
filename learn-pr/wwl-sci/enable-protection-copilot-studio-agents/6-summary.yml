@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-protection-copilot-studio-agents.summary
+metadata:
+  title: Summary
+  description: Summary of enabling real-time protection for Copilot Studio agents using Microsoft Defender for Cloud Apps, covering protection capabilities, configuration steps, and output verification.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

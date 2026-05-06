@@ -1,44 +1,20 @@
-Copilot+ PCs don’t just deliver power and performance—**they bring peace of mind**.
+In addition to on-device AI experiences, organizations use cloud-based AI services such as [Microsoft 365 Copilot.](https://www.microsoft.com/microsoft-365/copilot/enterprise?msockid=2600a68726456a7030cfb26d27b46b1e). 
 
-With advanced, built-in security features designed to protect sensitive information, safeguard employee credentials, and help maintain data privacy, **Copilot+ PCs provide organizations with a trusted foundation for AI-powered productivity**. Let’s take a closer look at how these devices help create confidence and keep businesses secure by design.
+These services provide powerful AI capabilities while also including enterprise data protection designed to help organizations manage how business data is accessed and used. Microsoft 365 Copilot operates within the organization’s existing permissions, ensuring that users only access data they're authorized to use.
 
-## Secure from the start
+## Microsoft 365 Copilot: Enterprise data protection
 
-Copilot+ PCs are built with security at their core, offering the highest level of Windows protection from the **moment the device is powered on**.
+Microsoft 365 Copilot includes enterprise data protection designed to help organizations manage how business data is accessed and used. It operates within the organization’s existing permissions, ensuring that users only access data they're authorized to use.
 
-These devices are Secured-core PCs, meaning they come with multiple layers of protection—hardware, firmware, and OS—**all working together to keep organizational data and credentials safe**. This includes firmware protection and features **designed to guard against modern, sophisticated attacks**.
+With enterprise data protection enabled:
 
-### Secured-core protection
+- **Prompts and responses aren’t retained** after the session ends  
+- **Microsoft doesn’t access** user prompts or responses  
+- **Business data isn’t used to train** the underlying AI models  
 
-Every Copilot+ PC is a Secured-core PC, delivering robust protection from the silicon up.
+These protections allow organizations to use Microsoft 365 Copilot while maintaining control over their data.
 
-Key technologies include:
+> [!NOTE]  
+> Microsoft 365 Copilot requires a separate license. Learn more about enterprise data protection with Copilot: [Enterprise data protection with Microsoft 365 Copilot](/microsoft-365/copilot/enterprise-data-protection)
 
-- **Microsoft Pluton**: A Microsoft-designed security processor, built in collaboration with silicon partners and integrated directly into the CPU. Pluton helps protect sensitive data like credentials and encryption keys—even in the event of device theft.
-- **TPM 2.0**: A Trusted Platform Module that enables hardware-based cryptographic operations, helping ensure system integrity.
-
-These built-in capabilities work together to establish a foundation of multilayer security against evolving threats.
-
-### Advanced sign-in security
-
-Copilot+ PCs are designed with secure, streamlined sign-in options that support modern identity protection standards.
-
-Users benefit from:
-
-- **Windows Hello**  
-- **Enhanced Sign-in Security**  
-- **Hardware-backed MDM certificates**  
-- **Biometric and phishing-resistant authentication**
-
-These features help reduce the risk of credential theft while enabling fast, secure access for employees.
-
-### Threat prevention by design
-
-Copilot+ PCs help prevent threats before they can impact operations.
-
-Built-in defenses include:
-
-- **App Control for Business**: Prevents untrusted or unauthorized applications from running.
-- **Protected Print Mode**: Helps secure printing environments by controlling access to sensitive documents.
-
-With security rooted in hardware and reinforced by enterprise-grade protections, Copilot+ PCs offer peace of mind across the organization.
+While these protections help secure cloud-based AI experiences, organizations also need a way to manage how AI is configured and used across devices and users.

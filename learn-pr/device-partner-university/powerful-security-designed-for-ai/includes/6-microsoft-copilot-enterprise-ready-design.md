@@ -1,28 +1,35 @@
-Beyond Recall, Copilot+ PCs are built to bring the power of AI to everyday tasks—securely and responsibly. [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot/enterprise?msockid=2600a68726456a7030cfb26d27b46b1e) helps users work smarter across apps and workflows, **while maintaining the high standards of data privacy and security that businesses expect**.
+As organizations adopt both on-device and cloud-based AI experiences, securing those experiences requires more than individual controls. It requires a consistent approach to governance, policy enforcement, and identity protection across the entire environment.
 
-This next section highlights how Microsoft 365 Copilot is designed with enterprise-grade protections, and how IT teams can manage the experience through Microsoft 365 and Intune.
+Copilot+ PCs, together with Microsoft 365 and Microsoft Intune, enable organizations to apply the same security frameworks used for devices and applications to AI experiences. This helps ensure that AI is introduced in a way that remains secure, compliant, and aligned with organizational policies.
 
-## Copilot with commercial data protection
+This integrated approach helps organizations manage AI experiences while maintaining control over data and compliance.
 
-Microsoft 365 Copilot is built to respect organizational data boundaries—**ensuring enterprise-grade security, privacy, and compliance**.
+## Enterprise governance and compliance
 
-With commercial data protection enabled:
+Copilot+ PCs can be managed using familiar tools and frameworks:
 
-- **Prompts and responses are not retained**: User interactions aren’t stored or accessible after the session ends.  
-- **No Microsoft access to data**: Microsoft doesn’t view prompts or responses.  
-- **Data is never used to train the models**: Your business data stays confidential and isn’t used to improve the underlying AI.  
+- **Microsoft Intune** for device management, compliance policies, and configuration of on-device AI experiences  
+- **Microsoft Entra ID** for identity, authentication, and conditional access  
+- **Zero-touch deployment** for streamlined provisioning at scale  
 
-These safeguards ensure that users and organizations can confidently use Microsoft 365 Copilot without compromising security. [Learn more about enterprise data protection with Copilot.](/copilot/microsoft-365/enterprise-data-protection)
+These tools enable IT administrators to control how AI features are enabled, configured, and used across devices.
 
-> [!NOTE]
-> Microsoft 365 Copilot is sold separately.
+## Supporting modern security models
 
-## Seamless integration with Microsoft 365 and Intune
+These capabilities support broader security approaches, including Zero Trust principles, by enabling:
 
-When paired with Microsoft 365 Business Premium and managed through Intune, organizations gain added control:
+- Continuous verification of identity and device state  
+- Least-privilege access controls  
+- Protection of sensitive data across endpoints  
 
-- **Enforceable policies**: IT admins can configure and enforce security, data access, and privacy controls.
-- **Compliance-first design**: Devices and user experiences remain secure and aligned with company standards.
-- **Customizable AI experiences**: Features like Recall can be enabled, restricted, or tailored to meet business needs.
+As organizations adopt AI experiences—including AI agents—these same controls extend to how those experiences access data, interact with users, and operate within organizational policies.
 
-This integrated approach helps **businesses embrace AI while staying in control of their data and compliance posture**.
+Windows 11 Pro allows organizations to govern AI experiences using the same tools and policies used to manage devices and applications. This approach reduces complexity by allowing organizations to manage AI experiences using the same tools, policies, and processes already in place.
+
+| Capability | How it’s secured |
+|------------|------------------|
+| On-device AI (Recall, Click to Do) | Processed locally with hardware-backed protections |
+| Cloud AI (Microsoft 365 Copilot) | Protected with enterprise data protection and identity controls |
+| AI management | Governed through Microsoft Intune, Microsoft Entra ID, and existing policies |
+
+Together, these capabilities create a consistent approach to securing AI across both on-device and cloud-based experiences, using familiar tools, policies, and management frameworks. This unified approach helps organizations adopt AI confidently while maintaining control, security, and compliance across both device and cloud environments.

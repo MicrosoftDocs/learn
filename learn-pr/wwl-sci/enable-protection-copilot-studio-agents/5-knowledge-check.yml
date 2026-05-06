@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-protection-copilot-studio-agents.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of enabling real-time protection for Copilot Studio agents in Microsoft Defender, including protection capabilities, configuration steps, and output verification.
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer at Contoso needs to enable real-time runtime protection for Copilot Studio agents. Where in the Microsoft Defender portal are these settings configured?"
+    choices:
+    - content: "Settings > Cloud Apps > Connected apps"
+      isCorrect: false
+      explanation: "Incorrect. Connected apps in Defender for Cloud Apps are used to connect and monitor external SaaS applications, not to configure real-time protection for Copilot Studio agents."
+    - content: "System > Settings > Security for AI agents"
+      isCorrect: true
+      explanation: "Correct. Real-time protection for Copilot Studio agents is configured by navigating to System > Settings > Security for AI agents in the Microsoft Defender portal. The Defender portal is where you enable Security for AI agents and configure real-time runtime protection."
+    - content: "Endpoints > Configuration management > Agent configuration"
+      isCorrect: false
+      explanation: "Incorrect. The Endpoints section manages device configurations and isn't related to Copilot Studio agent protection."
+    - content: "Cloud Apps > Policies > Policy management"
+      isCorrect: false
+      explanation: "Incorrect. Policy management in Cloud Apps is used to create session and access policies for SaaS applications. The Security for AI settings are the correct location for enabling Copilot Studio agent protection."
+  - content: "After a security engineer enables protection for a Copilot Studio agent in the Microsoft Defender portal, a Power Platform admin needs to complete a step for protection to take effect. What must the Power Platform admin configure?"
+    choices:
+    - content: "Grant the Defender for Cloud Apps service principal owner permissions on the Power Platform environment"
+      isCorrect: false
+      explanation: "Incorrect. Service principal permission grants aren't the required step. The Power Platform admin must configure the App ID of the Defender service in the Power Platform admin center to establish the connection."
+    - content: "Configure the App ID of the Microsoft Defender service in the Power Platform admin center"
+      isCorrect: true
+      explanation: "Correct. The Power Platform admin navigates to the Power Platform admin center, enters the URL shared by the security engineer, and creates or selects a Microsoft Entra ID application. That application generates an App ID, which the Power Platform admin shares back with the security engineer to enter in the Defender portal. Both sides of this exchange must be complete before the Connected status appears."
+    - content: "Enable the Defender for Cloud Apps connector in the Power Platform data loss prevention policy"
+      isCorrect: false
+      explanation: "Incorrect. DLP policies in Power Platform control which connectors agents can use, but they don't establish the Defender runtime protection connection. The App ID configuration in the Power Platform admin center is the required step."
+    - content: "Assign the Security Administrator role to the Copilot Studio environment service account"
+      isCorrect: false
+      explanation: "Incorrect. Role assignments control administrative access, not the runtime protection connection. The Power Platform admin must configure the Defender App ID to enable agent traffic inspection."
+  - content: "A security engineer wants to verify that real-time protection is active for a Copilot Studio agent after completing setup. What status indicator confirms the agent is protected?"
+    choices:
+    - content: "The agent appears in the Microsoft Defender XDR Devices inventory"
+      isCorrect: false
+      explanation: "Incorrect. Copilot Studio agents appear in the AI assets inventory, not the Devices inventory. The Devices section tracks managed endpoints."
+    - content: "The agent shows a Connected status in the Security for AI settings"
+      isCorrect: true
+      explanation: "Correct. After admins successfully enable protection and complete the Power Platform App ID configuration, the agent displays a Connected (green) status in the Security for AI settings in the Microsoft Defender portal, confirming that runtime protection is active."
+    - content: "An alert is generated in Microsoft Defender XDR confirming agent enrollment"
+      isCorrect: false
+      explanation: "Incorrect. No enrollment alert is generated when protection is enabled. Connected status in the Security for AI settings page is the indicator to verify successful protection setup."
+    - content: "The agent appears in the Defender for Cloud Apps app governance dashboard"
+      isCorrect: false
+      explanation: "Incorrect. App governance in Defender for Cloud Apps focuses on OAuth application governance, not Copilot Studio agent runtime protection. Connected status in Security for AI is the correct verification point."
+  - content: "A security engineer is reviewing the identity model for Copilot Studio agents created after the tenant opted in to Microsoft Entra Agent Identity. Which statement correctly describes the identity Copilot Studio automatically assigns to these agents?"
+    choices:
+    - content: "A user-assigned managed identity that the security team creates and assigns to the agent during deployment"
+      isCorrect: false
+      explanation: "Incorrect. Copilot Studio creates and manages agent identities automatically—the security team doesn't create or assign them. Managed identities are used for Azure resources, not for Copilot Studio agents."
+    - content: "A Microsoft Entra service principal with an 'Agent' subtype, automatically created and managed by Copilot Studio"
+      isCorrect: true
+      explanation: "Correct. For agents created after a tenant opts in to Microsoft Entra Agent Identity, Copilot Studio automatically assigns a Microsoft Entra Agent ID—a Microsoft Entra service principal with an 'Agent' subtype. This identity enables agent-specific governance capabilities including Conditional Access policies and centralized audit logging. You can find the Microsoft Entra Agent ID in Copilot Studio under Settings > Advanced > Metadata."
+    - content: "The same App ID configured in the Power Platform admin center when enabling real-time protection"
+      isCorrect: false
+      explanation: "Incorrect. The App ID configured in the Power Platform admin center is a proxy identity that establishes the inspection connection between Power Platform and Microsoft Defender. It's separate from the Microsoft Entra Agent ID that Copilot Studio automatically assigns to represent the agent's own identity."
+    - content: "A legacy app registration that the agent owner must renew annually"
+      isCorrect: false
+      explanation: "Incorrect. Legacy app registrations are used for agents created before a tenant enabled Microsoft Entra Agent Identity. New agents receive Microsoft Entra Agent IDs instead, which use federated identity credentials managed by Microsoft—no manual renewal is required."

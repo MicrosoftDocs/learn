@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-gateway-security-foundry.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of configuring AI Gateway security in Microsoft Foundry, including gateway architecture, configuration steps, and access monitoring.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's AI team deployed a model in Microsoft Foundry and wants to ensure that only internal applications with valid credentials can call the model endpoint. Which AI Gateway capability enforces the requirement that callers present valid credentials before their requests are routed to the model?"
+    choices:
+    - content: "Token rate limiting"
+      isCorrect: false
+      explanation: "Incorrect. Token rate limiting controls the volume of requests that callers can send within a defined period. It doesn't restrict which callers are authorized to access the gateway."
+    - content: "Authentication and authorization controls on the AI Gateway"
+      isCorrect: true
+      explanation: "Correct. AI Gateway supports authentication and authorization controls that require callers to present valid credentials—such as API keys or Microsoft Entra tokens—before their requests are routed to the model. This ensures only authorized applications can access the endpoint."
+    - content: "Content filtering rules in the model deployment"
+      isCorrect: false
+      explanation: "Incorrect. Content filtering evaluates the content of prompts and responses against safety policies. It doesn't control which callers are authorized to reach the model."
+    - content: "Prompt Shield configuration in Microsoft Foundry"
+      isCorrect: false
+      explanation: "Incorrect. Prompt Shields detect and block prompt injection attempts in model input. They're a guardrail feature, not an authentication, and authorization control."
+  - content: "A security engineer wants to use AI Gateway in Microsoft Foundry to enforce fair use across multiple teams that share the same model deployment. Which AI Gateway feature directly addresses this?"
+    choices:
+    - content: "Diagnostic logging"
+      isCorrect: false
+      explanation: "Incorrect. Diagnostic logging captures traffic and usage data for audit and monitoring purposes. It provides visibility but doesn't actively enforce usage limits."
+    - content: "Route policies"
+      isCorrect: false
+      explanation: "Incorrect. Route policies direct traffic to specific model deployments based on defined criteria. They manage traffic routing, not consumption limits per caller."
+    - content: "Token rate limiting"
+      isCorrect: true
+      explanation: "Correct. Token rate limiting in AI Gateway allows you to set per-caller or per-subscription consumption limits, ensuring that no single team or application monopolizes the shared model deployment. This enforces fair use across teams."
+    - content: "Managed identity assignment"
+      isCorrect: false
+      explanation: "Incorrect. Managed identity assignment controls how the gateway authenticates to downstream resources. It doesn't limit consumption per caller."
+  - content: "After admins deploy AI Gateway in Microsoft Foundry, a security engineer needs to detect if any application is sending an unusually high volume of requests outside business hours. Which capability provides this data?"
+    choices:
+    - content: "Microsoft Purview Audit logs"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview Audit captures user and admin activity across Microsoft 365 services. It doesn't provide model traffic data from Microsoft Foundry AI Gateway."
+    - content: "AI Gateway diagnostic logging routed to Azure Monitor"
+      isCorrect: true
+      explanation: "Correct. AI Gateway diagnostic logging captures detailed data about requests, token usage, caller identity, and timestamps. When routed to Azure Monitor or Log Analytics, this data can be queried and analyzed to detect anomalies such as high-volume activity outside business hours."
+    - content: "Microsoft Defender for Cloud AI workloads plan alerts"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Cloud detects threats against Azure-hosted AI resources, but it relies on its own detection logic, not AI Gateway diagnostic logs. For detailed per-request traffic analysis, AI Gateway logging is the correct source."
+    - content: "Microsoft Entra ID sign-in logs filtered to the model endpoint"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra sign-in logs capture authentication events, not the volume, or timing of individual API calls to AI models. AI Gateway diagnostic logs provide that level of traffic detail."
+  - content: "A Foundry-deployed agent is generating 50 times its normal model call volume per task. A security engineer needs to identify which specific agent is responsible and revoke its access without disrupting other agents or applications. Which combination of AI Gateway capabilities makes this possible?"
+    choices:
+    - content: "Token rate limiting and route policies"
+      isCorrect: false
+      explanation: "Incorrect. Token rate limiting controls how much capacity a caller can consume, and route policies direct traffic to model deployments. The solution fails to provide the per-agent identity visibility or the targeted access revocation needed here."
+    - content: "Per-agent managed identity with a unique client ID logged in GatewayLogs, combined with role assignment revocation"
+      isCorrect: true
+      explanation: "Correct. Each Foundry-deployed agent authenticates using its own managed identity, which has a unique client ID recorded in GatewayLogs. This lets the security engineer query the logs to confirm which agent is responsible, then revoke that agent's role assignment at the gateway—without affecting other agents or applications that use separate managed identities."
+    - content: "Diagnostic logging routed to a Storage Account and IP allowlisting"
+      isCorrect: false
+      explanation: "Incorrect. Storage Account logging provides long-term retention but doesn't support real-time querying by agent identity. IP allowlisting restricts access by network source, not by individual agent identity, and wouldn't selectively revoke access to one agent."
+    - content: "A shared API key rotated to block all callers, then reissued to unaffected agents"
+      isCorrect: false
+      explanation: "Incorrect. Rotating a shared API key disrupts all callers simultaneously. This approach is the vulnerability AI Gateway is designed to eliminate—per-agent managed identities exist precisely so that revoking one identity doesn't affect others."
