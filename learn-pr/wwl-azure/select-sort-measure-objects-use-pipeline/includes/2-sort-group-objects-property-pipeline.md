@@ -2,7 +2,15 @@ Some PowerShell commands produce their output in a specific order. For example, 
 
 ## Sort-Object
 
-The **Sort-Object** command accepts one or more property names to sort by. By default, the command sorts in ascending order. If you want to reverse the sort order, add the *-Descending* parameter. If you specify more than one property, the command sorts by the first property, then by the second property, and so on. It isn't possible in a single command to sort by one property in ascending order and another in descending order.
+The **Sort-Object** command accepts one or more property names to sort by. By default, the command sorts in ascending order. If you want to reverse the sort order, add the *-Descending* parameter. If you specify more than one property, the command sorts by the first property, then by the second property, and so on.
+
+You can also sort multiple properties in different directions by using hash tables as property expressions. Each hash table specifies a property name and an **Expression** and **Descending** key. For example:
+
+```powershell
+Get-Service | Sort-Object -Property @{Expression = "Status"; Descending = $true}, @{Expression = "Name"; Descending = $false}
+```
+
+This command sorts services by **Status** in descending order, then alphabetically by **Name** within each status group.
 
 The following commands are examples of sorting:
 
@@ -11,6 +19,9 @@ Get-Service | Sort-Object –Property Name –Descending
 Get-Service | Sort Name –Desc
 Get-Service | Sort Status,Name
 ```
+
+> [!NOTE]
+> The **sort** alias for **Sort-Object** works only on Windows. On Linux and macOS (including Azure Cloud Shell), the native shell `sort` command takes precedence. The other aliases covered in this module — **fw**, **group**, **select**, and **measure** — work on all platforms.
 
 By default, string properties are sorted without regard to case. That is, lowercase and uppercase letters are treated the same. The parameters of **Sort-Object** allow you to specify a case-sensitive sort, a specific culture’s sorting rules, and other options. As with other commands, you can review the help for **Sort-Object** for details and examples.
 

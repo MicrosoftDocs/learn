@@ -8,6 +8,11 @@ The *-Property* parameter of **Measure-Object** allows you to specify a single p
 > [!NOTE]
 > PowerShell allows you to *truncate* a parameter name, or use only a portion of the parameter name, if the truncated name clearly identifies the parameter. You'll frequently notice the *–Sum*, *-Minimum*, and *–Maximum* parameters truncated to *-Sum*, *-Min*, and *-Max*, corresponding to the common English abbreviations for those words. However, you can't shorten *‑Average* to *-Avg*, although beginners frequently try to. You can shorten the *‑Average* parameter to *-Ave*, which is a valid truncation of the name.
 
+PowerShell 6 and later also added two additional parameters:
+
+- **-StandardDeviation** calculates the standard deviation for the specified numeric property.
+- **-AllStats** computes all numeric statistics at once — equivalent to specifying *-Sum*, *-Average*, *-Maximum*, *-Minimum*, and *-StandardDeviation* together.
+
 The following command counts the number of files in a folder and displays the smallest, largest, and average file sizes:
 
 ```powershell

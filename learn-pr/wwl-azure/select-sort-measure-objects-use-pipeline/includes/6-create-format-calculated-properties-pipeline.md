@@ -38,7 +38,7 @@ The previous example uses a semicolon to separate the two key-value pairs, and i
 > `$PSItem` is a special variable created by Windows PowerShell. It represents whatever object was piped into the **Select-Object** command. In the previous example, that's a **Process** object. The period after `$PSItem` lets you access a single member of the object. In this example, one calculated property uses the **VM** property, and the other uses the **PM** property.
 
 > [!NOTE]
-> Windows PowerShell 1.0 and Windows PowerShell 2.0 used `$_` instead of `$PSItem`. That older syntax is compatible in Windows PowerShell 3.0 and newer, and many experienced users continue to use it out of habit.
+> `$_` is the standard automatic variable for the current pipeline object and remains valid in PowerShell 7. `$PSItem` was introduced in PowerShell 3.0 as a more readable alias for `$_` — both mean exactly the same thing. This module uses `$PSItem` for clarity, but you'll encounter `$_` frequently in real-world scripts and in the official PowerShell documentation.
 
 A comma separates each property, such as **Name**, **ID**, and each calculated propert from the others in the list.
 
