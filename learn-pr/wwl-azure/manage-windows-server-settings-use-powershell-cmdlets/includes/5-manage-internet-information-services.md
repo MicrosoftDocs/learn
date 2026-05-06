@@ -7,6 +7,9 @@ To manage web-based applications, you can use the **WebAdministration** module f
 > [!NOTE]
 > The WebAdministration module is superseded by the **IISAdministration** module. For any IIS-related management tasks, use the **IISAdministration** module.
 
+> [!NOTE]
+> Both the **IISAdministration** and **WebAdministration** modules are classified as "Untested with Compatibility Layer" for PowerShell 7. For reliable IIS management, use Windows PowerShell 5.1.
+
 The following table lists common IIS and web application administration cmdlets.
 
 *Table 1: IIS and web application administration cmdlets*

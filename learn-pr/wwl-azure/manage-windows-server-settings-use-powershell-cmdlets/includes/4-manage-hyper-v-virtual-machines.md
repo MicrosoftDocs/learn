@@ -1,6 +1,6 @@
 PowerShell offers more than 200 cmdlets for managing Hyper-V Virtual machines (VMs), virtual hard disks, and other components of a Hyper-V environment. Hyper-V cmdlets are available in the **Hyper-V** module for PowerShell.
 
-The Hyper-V cmdlets are available when you install the **Hyper-V Management tools** feature on a Windows client operating system, or the **Hyper-V Module for Windows PowerShell** feature on Windows Server.
+The Hyper-V cmdlets are available when you install the **Hyper-V Module for Windows PowerShell** feature (found under Hyper-V Management Tools) on a Windows client operating system, or the **Hyper-V Module for Windows PowerShell** feature on Windows Server. The Hyper-V module is natively compatible with PowerShell 7 on Windows 10/11 1809 and later.
 
 Hyper-V cmdlets use one of three prefixes:
 

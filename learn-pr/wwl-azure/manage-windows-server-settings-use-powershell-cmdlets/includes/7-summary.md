@@ -9,5 +9,7 @@ In this module, you learned about cmdlets used to configure settings related to 
 
 To learn more, go through the following documents:
 
-- [PowerShell 7 Module Compatibility](https://aka.ms/powershell-7-module-compatibility)
-- [Microsoft PowerShell Management](https://aka.ms/microsoft-powershell-management)
+- [PowerShell 7 Module Compatibility](https://aka.ms/PSModuleCompat)
+- [GroupPolicy module reference](https://learn.microsoft.com/powershell/module/grouppolicy/)
+- [IISAdministration module reference](https://learn.microsoft.com/powershell/module/iisadministration/)
+- [Hyper-V module reference](https://learn.microsoft.com/powershell/module/hyper-v/)
