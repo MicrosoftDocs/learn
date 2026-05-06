@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-protection-copilot-studio-agents.explore-copilot-studio-ai-agent-protection
+metadata:
+  title: Explore Copilot Studio AI agent protection
+  description: Explore the three capability pillars of Microsoft Defender for Cloud Apps AI agent protection—discovery and hunting, audit and alerts, and real-time runtime protection—and understand what each capability provides for Copilot Studio agents.
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Explore Copilot Studio AI agent protection
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-copilot-studio-ai-agent-protection.md)]
