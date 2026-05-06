@@ -18,7 +18,7 @@ The naming of variables in the **ForEach** loop should be meaningful. Most of th
 
 ## Parallel performance
 
-In PowerShell 7, the *-Parallel* parameter was added to the **ForEach-Object** cmdlet. This allows the pipeline to process multiple objects simultaneously. Processing multiple objects simultaneously can provide better performance than a standard **ForEach** loop. You should consider this if you're using PowerShell 7. The following example explains how to use the **ForEach-Object** with the *-Parallel* parameter.
+PowerShell 7 adds the `-Parallel` parameter to the **ForEach-Object** cmdlet. This allows the pipeline to process multiple objects simultaneously, which can provide better performance than a standard **ForEach** loop. Consider using this if you're using PowerShell 7. The following example shows how to use **ForEach-Object** with the `-Parallel` parameter.
 
 ```powershell
 $users | ForEach-Object -Parallel { Set-ADUser $_ -Department "Marketing" }
@@ -27,4 +27,4 @@ $users | ForEach-Object -Parallel { Set-ADUser $_ -Department "Marketing" }
 > [!NOTE]
 > Inside a `-Parallel` script block, use `$_` to refer to the current pipeline object — the same as in a regular `ForEach-Object` block. This is different from a `foreach` statement, where you name the iteration variable yourself. If you need to access a variable defined outside the parallel block, prefix it with the `Using:` scope modifier — for example, `$Using:department`.
 
-By default, the *-Parallel* parameter allows five items to be processed at a time. You can modify this to be larger or smaller by using the *-ThrottleLimit* parameter.
+By default, the `-Parallel` parameter processes five items at a time. You can increase or decrease this limit with the `-ThrottleLimit` parameter.

@@ -1,4 +1,4 @@
-While there are some simple scripts that use only simple Windows PowerShell commands, most scripts use scripting constructs to perform more complex actions. You can use the **ForEach** construct to process all of the objects in an array. You can use **If..Else** and **Switch** constructs to make decisions in your scripts. Finally, there are less common looping constructs such as **For**, **While**, and **Do..While** loops that can be used when appropriate. In this module, you'll learn how to use scripting constructs.
+Most scripts use scripting constructs to perform complex actions beyond simple Windows PowerShell commands. You can use the **ForEach** construct to process all objects in an array. You can use **If..Else** and **Switch** constructs to make decisions in your scripts. Finally, less common looping constructs such as **For**, **While**, and **Do..While** loops are available when you need them. In this module, you'll learn how to use scripting constructs.
 
 ## Learning objectives
 

@@ -11,9 +11,9 @@ Switch ($choice) {
 }
 ```
 
-In addition to matching values, the **Switch** construct can also be used to match patterns. You can use the *-Wildcard* parameter to perform pattern matching by using the same syntax as the *-like* operator. Alternatively, you can use the *-regex* parameter to perform matching by using regular expressions.
+In addition to matching values, the **Switch** construct can also match patterns. You can use the `-Wildcard` parameter to perform pattern matching using the same syntax as the `-like` operator. Alternatively, you can use the `-Regex` parameter to match using regular expressions.
 
-It's important to be aware that when you use pattern matching, multiple matches are possible. When there are multiple matches, the script blocks for all matching patterns are run. This is different from an **If** construct in which only one script block is run.
+When you use pattern matching, multiple matches are possible. When there are multiple matches, all matching pattern script blocks run. This is different from an **If** construct in which only one script block runs.
 
 The following example uses pattern matching:
 
@@ -28,4 +28,4 @@ Switch -Wildcard ($ip) {
 
 For values of `$ip` on the London or Vancouver networks, two messages will be displayed. If `$ip` includes an IP address on the 10.x.x.x network, the messages will indicate that the computer is on the internal network and that the computer is in either London or Vancouver. If `$ip` is not an IP address on the 10.x.x.x network, the message indicates that it's not on the internal network.
 
-If you provide multiple values in an array to a **Switch** construct, each item in the array is evaluated. In the previous example, if the variable `$ip` was an array with two IP addresses, then both IP addresses would be processed. The actions appropriate for each item in the array would be performed.
+If you provide multiple values in an array to a **Switch** construct, each item in the array is evaluated. In the previous example, if the variable `$ip` was an array with two IP addresses, both IP addresses would be processed and the appropriate actions run for each item.

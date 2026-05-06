@@ -1,8 +1,8 @@
-In this module, you learned to use scripting constructs such as the **ForEach** construct to process all of the objects in an array and the **If..Else** and **Switch** constructs to make decisions in your scripts. The following are the key takeaways:
+In this module, you learned to use scripting constructs such as the **ForEach** construct to process all objects in an array and the **If..Else** and **Switch** constructs to make decisions in your scripts. Key takeaways:
 
 - Use the **ForEach-Object** cmdlet to process the data in the pipeline. When you store data in an array, the **ForEach** construct allows you to process each item in the array.
 
-- In PowerShell 7, the **-Parallel** parameter was added to the **ForEach-Object** cmdlet. This allows the pipeline to process multiple objects simultaneously.
+- PowerShell 7 adds the `-Parallel` parameter to the **ForEach-Object** cmdlet, allowing the pipeline to process multiple objects simultaneously.
 
 - Use the **If** construct in Windows PowerShell to make decisions. 
 
@@ -10,9 +10,9 @@ In this module, you learned to use scripting constructs such as the **ForEach** 
 
 - The **For** construct performs a series of loops similar to a **ForEach** construct. However, when using the **For** construct, you must define how many loops occur, which is useful when you want an action to be performed a specific number of times. 
 
-- There are other less common looping constructs that you can use. These are **Do..While**, **Do..Until**, and **While**. 
+- Other less common looping constructs include **Do..While**, **Do..Until**, and **While**.
 
-- **Break** and **Continue** are two commands that you can use to modify the default behavior of a loop. **Continue** ends the processing for the current iteration of the loop. **Break** completely stops the loop processing. 
+- Use **Break** and **Continue** to modify loop behavior. **Continue** ends processing for the current iteration. **Break** completely stops the loop. 
 
 ## Additional reading
 
