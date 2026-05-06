@@ -27,7 +27,7 @@ levels:
 roles:
   - security-engineer
 products:
-  - purview
+  - microsoft-purview
   - azure
 subjects:
   - security
