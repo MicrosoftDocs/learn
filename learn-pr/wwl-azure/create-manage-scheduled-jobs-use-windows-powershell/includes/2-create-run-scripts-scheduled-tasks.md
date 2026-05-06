@@ -11,7 +11,7 @@ However, scheduled tasks can't capture and manipulate task output. A scheduled t
 - The **Trigger**, which defines the time or system event that determines when the program is to be run.
 - The **Additional settings**, which further configure the task and control how the action is run.
 
-Commands that work with scheduled tasks are in the **ScheduledTasks** module that's included with Windows 10 and Windows Server 2019. To review the complete list of commands, run the following command:
+Commands that work with scheduled tasks are in the **ScheduledTasks** module that's included with Windows 11 and Windows Server 2022 and later. To review the complete list of commands, run the following command:
 
 ```powershell
 Get-Command –Module ScheduledTasks

@@ -18,7 +18,12 @@ To create a scheduled job, use the scheduled job commands. Note that anything cr
 > [!NOTE]
 > When you change a scheduled job setting in **Task Scheduler**, the change applies for all future instances of that scheduled job.
 
-The commands that work with scheduled jobs in the **PSScheduledJob** module are included in the current versions of the Windows Server and Client operating systems. To review the complete list of commands, run the following command:
+The commands that work with scheduled jobs in the **PSScheduledJob** module are included in the current versions of the Windows Server and Client operating systems.
+
+> [!NOTE]
+> The **PSScheduledJob** module is available in **Windows PowerShell 5.1 only**. It is not included in PowerShell 7.x and cannot be loaded via the PowerShell 7 compatibility layer. To use scheduled job cmdlets, ensure you're running `powershell.exe` (Windows PowerShell 5.1), not `pwsh.exe` (PowerShell 7).
+
+To review the complete list of commands, run the following command:
 
 ```powershell
 Get-Command –Module PSScheduledJob
