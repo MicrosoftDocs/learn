@@ -1,4 +1,4 @@
-To enhance the usability of your scripts, you must learn how to accept user input. This skill allows you to create scripts that can be used for multiple purposes. In addition, accepting user input allows you to create scripts that are easier for others to use. In this module, you'll learn about multiple methods for accepting user input in a script.
+Accepting user input makes your scripts more flexible and easier for others to use. In this module, you'll learn multiple methods for accepting user input in a script.
 
 ## Learning objectives
 
