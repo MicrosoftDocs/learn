@@ -8,7 +8,7 @@ $logFile | Get-Member
 
 To browse through the properties and methods for a variable, you leverage the tab completion feature by entering the name of the variable appended with a dot. When you select the **Tab** key, the properties and methods available for the variable display.
 
-When you review the properties and methods for a variable, some of them will be easily understandable. If you don't understand how to use a property or method for a variable, you can review documentation for that variable type in the Microsoft .NET Framework Class Library. Each variable type has its own section in the documentation. For example, the documentation for Decimal variables is located in Decimal Struct.
+When you review the properties and methods for a variable, some of them will be easily understandable. If you don't understand how to use a property or method for a variable, you can review documentation for that variable type in the .NET API browser. Each variable type has its own section in the documentation. For example, the documentation for Decimal variables is located in the Decimal Struct page.
 
 > **Additional reading:** For more information on .NET Framework variable types, refer to the **Structs** section at [System Namespace](https://aka.ms/system-namespace).
 

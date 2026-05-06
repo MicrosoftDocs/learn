@@ -25,7 +25,10 @@ Write-Host "The location of the log file is $logFile"
 ```
 
 > [!NOTE]
-> When you display a variable by using **Write-Host** and you place the variable name in double quotes ("), that variable is evaluated and its value is displayed. If you use single quotes ('), that variable is not evaluated, resulting in its name being displayed instead. 
+> When you display a variable by using **Write-Host** and you place the variable name in double quotes ("), that variable is evaluated and its value is displayed. If you use single quotes ('), that variable is not evaluated, resulting in its name being displayed instead.
+
+> [!NOTE]
+> **Write-Host** sends output directly to the console and bypasses the PowerShell pipeline. Output written with **Write-Host** cannot be captured in a variable or piped to another command. For pipeline-compatible output, use **Write-Output** or simply enter the variable name on its own line.
 
 To remove all values from a variable, you can set the variable equal to `$null`. The `$null` variable is automatically defined by Windows PowerShell as nothing. For example:
 
@@ -50,6 +53,8 @@ You can set the value of a variable by using the **Set-Variable** cmdlet. When y
 ```powershell
 Set-Variable -Name num1 -Value 5
 ```
+
+PowerShell also supports compound assignment operators that combine an operation with assignment in a single step. For example, `$count += 1` is equivalent to `$count = $count + 1`. Other compound operators include `-=`, `*=`, and the increment (`++`) and decrement (`--`) operators.
 
 **Additional reading:** For more information about assignment operators, refer to [about_Assignment_Operators](https://aka.ms/lewact).
 
