@@ -1,4 +1,7 @@
-The **PowerShellGet** module includes cmdlets for accessing and publishing items in the PowerShell Gallery. This module was introduced in Windows Management Framework 5.0, which is included in Windows 10 and Windows Server 2016. You can upgrade older Windows operating systems to include Windows Management Framework 5.0 or newer and thereby obtain the **PowerShellGet** module. Alternatively, if you can't update to Windows Management Framework 5.0, there's a .msi installer for **PowerShellGet** that you can use on systems with Windows PowerShell 4.0.
+The **PowerShellGet** module includes cmdlets for accessing and publishing items in the PowerShell Gallery. This module was introduced in Windows Management Framework 5.1, which is included in Windows 10 and Windows Server 2016. Windows PowerShell 5.1 ships with PowerShellGet version 1.0.0.1, which must be updated before you can reliably use it with the PowerShell Gallery. The current supported version for Windows PowerShell 5.1 is **PowerShellGet 2.2.5**.
+
+> [!NOTE]
+> PowerShell 7.4 and later ships with **Microsoft.PowerShell.PSResourceGet** — the next-generation successor to PowerShellGet. It provides the same core functionality through updated cmdlets such as `Find-PSResource` and `Install-PSResource`. PSResourceGet is also available for Windows PowerShell 5.1 from the PowerShell Gallery.
 
 When you use the cmdlets in the **PowerShellGet** module for the first time, you're prompted to install the NuGet provider. NuGet is a package manager that can obtain and install packages on Windows. The cmdlets in the **PowerShellGet** module use the functionality in NuGet to interact with the PowerShell Gallery.
 

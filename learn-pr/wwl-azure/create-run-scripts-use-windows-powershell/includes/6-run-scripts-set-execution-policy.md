@@ -10,7 +10,7 @@ When you right-click a Windows PowerShell script or activate its context menu, y
 
 - **Open**. This option opens the script in Notepad.
 - **Run with PowerShell**. This option runs the script, but the Windows PowerShell prompt doesn't remain open when the script completes.
-- **Edit**. This option opens the script in the Windows PowerShell ISE.
+- **Edit**. This option opens the script in the Windows PowerShell ISE, if it is installed. On systems where the ISE is not present, consider using **Visual Studio Code with the PowerShell extension**, which is the currently recommended editor.
 
 In most cases, you want the Windows PowerShell prompt to remain open when you run a script. To do this task, run the script from a Windows PowerShell prompt that's already open.
 
