@@ -12,7 +12,7 @@ Understanding these pillars matters. Each pillar has different setup requirement
 
 You configured real-time protection by navigating to **System** > **Settings** > **Security for AI agents** in the Microsoft Defender portal, registering the target Copilot Studio agent by App ID, and coordinating with the Power Platform admin to configure the Defender App ID in the Power Platform admin center. The two-admin coordination requirement is by design—runtime protection requires changes on both the security and platform administration sides, and the Connected status indicator in the Security for AI settings page confirms when both steps are complete.
 
-You also explored agent identity—how Copilot Studio automatically assigns each agent an Microsoft Entra Agent ID (a Microsoft Entra service principal with an "Agent" subtype) that enables Conditional Access policies, centralized audit logging, and Zero Trust lifecycle management. This identity is distinct from the proxy App ID exchanged during real-time protection setup.
+You also explored agent identity—how Copilot Studio automatically assigns each agent a Microsoft Entra Agent ID (a Microsoft Entra service principal with an "Agent" subtype) that enables Conditional Access policies, centralized audit logging, and Zero Trust lifecycle management. This identity is distinct from the proxy App ID exchanged during real-time protection setup.
 
 You then verified protection outputs across three surfaces:
 
