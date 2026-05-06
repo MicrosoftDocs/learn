@@ -30,7 +30,7 @@ To configure the server, run **Enable-WsManCredSSP –Role Server**. No delegate
 
 ## Resource-based, Kerberos-constrained delegation
 
-Starting with Windows Server 2012, you can forgo using CredSSP and instead use constrained delegation. *Constrained delegation* implements delegation of service tickets by using security descriptors rather than an allow list of server names. This allows the resource to determine which security principals can request tickets on behalf of another user. Resource-based constrained delegation works correctly regardless of domain functional level.
+You can forgo using CredSSP and instead use resource-based constrained delegation, which implements delegation of service tickets by using security descriptors rather than an allow list of server names. This allows the resource to determine which security principals can request tickets on behalf of another user. Resource-based constrained delegation works correctly regardless of domain functional level.
 
 Constrained delegation requires:
 
@@ -44,10 +44,14 @@ Add-WindowsFeature RSAT-AD-PowerShell
 Import-Module ActiveDirectory
 ```
 
-To grant resource-based, Kerberos-constrained delegation from **LON-SVR1** through **LON-SVR2** to **LON-SVR3**, run the following command:
+> [!NOTE]
+> `Add-WindowsFeature` is for Windows Server only. On Windows 10 or Windows 11 clients, use `Add-WindowsCapability -Online -Name Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0` to install the Active Directory module instead.
+
+To grant resource-based, Kerberos-constrained delegation from **LON-SVR1** through **LON-SVR2** to **LON-SVR3**, configure the *resource* server (**LON-SVR3**) to accept delegated credentials from the *intermediate* server (**LON-SVR2**):
 
 ```powershell
-Set-ADComputer -Identity LON-SVR2 -PrincipalsAllowedToDelegateToAccount LON-SVR3
+$ServerB = Get-ADComputer -Identity LON-SVR2
+Set-ADComputer -Identity LON-SVR3 -PrincipalsAllowedToDelegateToAccount $ServerB
 ```
 
 One issue could cause this command to fail. The Key Distribution Center (KDC) has a 15-minute SPN negative cache. If **LON-SVR2** has already tried to communicate with **LON-SVR3**, then there's a negative cache entry. You'll need to clear the cache on **LON-SVR2** by using one of the following techniques:
@@ -59,10 +63,11 @@ One issue could cause this command to fail. The Key Distribution Center (KDC) ha
 To test constrained delegation, run the following code example:
 
 ```powershell
-$cred = Get-Credential Adatum\TestUser                
-Invoke-Command -ComputerName LON-SVR1.Name -Credential $cred -ScriptBlock {Test-Path \\$($using:ServerC.Name)\C$            `
-Get-Process lsass -ComputerName $($using:LON-SVR2.Name)
-Get-EventLog -LogName System -Newest 3 -ComputerName $using:LON-SVR3.Name            
+$cred = Get-Credential Adatum\TestUser
+Invoke-Command -ComputerName LON-SVR2 -Credential $cred -ScriptBlock {
+    Test-Path \\LON-SVR3\C$
+    Get-Process lsass -ComputerName LON-SVR3
+    Get-WinEvent -LogName System -MaxEvents 3 -ComputerName LON-SVR3
 }
 ```
 
