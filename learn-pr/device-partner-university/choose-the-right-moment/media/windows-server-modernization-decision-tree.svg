@@ -3,12 +3,19 @@
   <defs>
     <style>
       .title { font: 700 22px 'Segoe UI', Arial, sans-serif; fill:#1f2937; }
-      .text  { font: 14px 'Segoe UI', Arial, sans-serif; fill:#111827; }
-      .small { font: 12px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+
+      /* Increased for readability */
+      .text  { font: 16px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+      .small { font: 14px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+
       .muted { fill:#374151; }
+
       .box { fill:#ffffff; stroke:#1f2937; stroke-width:2; rx:14; }
       .qbox { fill:#eff6ff; stroke:#1d4ed8; stroke-width:2; rx:14; }
-      .yesno { font: 700 13px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+
+      /* Increased for readability */
+      .yesno { font: 700 14px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+
       .pill { fill:#f3f4f6; stroke:#6b7280; stroke-width:1.5; rx:18; }
       .arrow { stroke:#1f2937; stroke-width:2.5; fill:none; marker-end:url(#arrowhead); }
     </style>
@@ -18,12 +25,15 @@
     </marker>
   </defs>
 
+  <!-- Background (prevents dark theme issues) -->
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+
   <!-- Title -->
   <text x="40" y="48" class="title">Windows Server modernization: where are you in the journey?</text>
   <text x="40" y="76" class="text muted">Use this decision tree to determine whether to stay the course or begin modernization evaluation.</text>
 
   <!-- Start box (taller + wrapped with tspans) -->
-  <rect x="70" y="120" width="380" height="120" class="box"/>
+  <rect x="70" y="120" width="425" height="120" class="box"/>
   <text x="95" y="154" class="text">
     <tspan font-weight="700">Start:</tspan>
     <tspan> Your Windows Server environment is stable.</tspan>
@@ -31,7 +41,7 @@
   </text>
 
   <!-- Q1 -->
-  <rect x="70" y="270" width="380" height="130" class="qbox"/>
+  <rect x="70" y="270" width="425" height="130" class="qbox"/>
   <text x="95" y="306" class="text"><tspan font-weight="700">Q1:</tspan> Are there signals that expectations have changed</text>
   <text x="95" y="328" class="text">or gaps are emerging?</text>
   <text x="95" y="356" class="small muted">Consider security, operational, or business indicators.</text>
@@ -59,27 +69,27 @@
   <text x="610" y="400" class="text">• Review periodically</text>
   <text x="610" y="424" class="text">• Reassess as priorities evolve</text>
 
-<!-- Q2 -->
-<rect x="70" y="500" width="380" height="250" class="qbox"/>
-<text x="95" y="536" class="text"><tspan font-weight="700">Q2:</tspan> Which signal category applies?</text>
+  <!-- Q2 -->
+  <rect x="70" y="500" width="380" height="250" class="qbox"/>
+  <text x="95" y="536" class="text"><tspan font-weight="700">Q2:</tspan> Which signal category applies?</text>
 
-<!-- Row 1 -->
-<rect x="95" y="560" width="330" height="45" class="box"/>
-<text x="115" y="582.5" class="text" dominant-baseline="middle">
-  <tspan font-weight="700">Security &amp; compliance</tspan>
-</text>
+  <!-- Row 1 -->
+  <rect x="95" y="560" width="330" height="45" class="box"/>
+  <text x="115" y="582.5" class="text" dominant-baseline="middle">
+    <tspan font-weight="700">Security &amp; compliance</tspan>
+  </text>
 
-<!-- Row 2 (45 height + 18px gap => next y = 560 + 45 + 18 = 623) -->
-<rect x="95" y="623" width="330" height="45" class="box"/>
-<text x="115" y="645.5" class="text" dominant-baseline="middle">
-  <tspan font-weight="700">Operations</tspan>
-</text>
+  <!-- Row 2 (45 height + 18px gap => next y = 560 + 45 + 18 = 623) -->
+  <rect x="95" y="623" width="330" height="45" class="box"/>
+  <text x="115" y="645.5" class="text" dominant-baseline="middle">
+    <tspan font-weight="700">Operations</tspan>
+  </text>
 
-<!-- Row 3 (623 + 45 + 18 = 686) -->
-<rect x="95" y="686" width="330" height="45" class="box"/>
-<text x="115" y="708.5" class="text" dominant-baseline="middle">
-  <tspan font-weight="700">Business</tspan>
-</text>
+  <!-- Row 3 (623 + 45 + 18 = 686) -->
+  <rect x="95" y="686" width="330" height="45" class="box"/>
+  <text x="115" y="708.5" class="text" dominant-baseline="middle">
+    <tspan font-weight="700">Business</tspan>
+  </text>
 
   <!-- Start evaluation box -->
   <rect x="560" y="520" width="560" height="230" class="box"/>
