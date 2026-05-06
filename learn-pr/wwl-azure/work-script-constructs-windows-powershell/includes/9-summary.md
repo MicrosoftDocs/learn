@@ -18,6 +18,20 @@ In this module, you learned to use scripting constructs such as the **ForEach** 
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [About ForEach](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_foreach)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [About If](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_if)
+
+- [About Switch](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_switch)
+
+- [About For](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_for)
+
+- [About While](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_while)
+
+- [About Do](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_do)
+
+- [About Break](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_break)
+
+- [About Continue](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_continue)
+
+- [ForEach-Object](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/foreach-object)

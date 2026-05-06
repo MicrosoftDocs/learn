@@ -11,14 +11,14 @@ Switch ($choice) {
 }
 ```
 
-In addition to matching values, the **Switch** construct can also be used to match patterns. You can use the *-wildcard* parameter to perform pattern matching by using the same syntax as the *-like* operator. Alternatively, you can use the *-regex* parameter to perform matching by using regular expressions.
+In addition to matching values, the **Switch** construct can also be used to match patterns. You can use the *-Wildcard* parameter to perform pattern matching by using the same syntax as the *-like* operator. Alternatively, you can use the *-regex* parameter to perform matching by using regular expressions.
 
 It's important to be aware that when you use pattern matching, multiple matches are possible. When there are multiple matches, the script blocks for all matching patterns are run. This is different from an **If** construct in which only one script block is run.
 
 The following example uses pattern matching:
 
 ```powershell
-Switch -WildCard ($ip) {
+Switch -Wildcard ($ip) {
    "10.*" { Write-Host "This computer is on the internal network" }
    "10.1.*" { Write-Host "This computer is in London" }
    "10.2.*" { Write-Host "This computer is in Vancouver" }
