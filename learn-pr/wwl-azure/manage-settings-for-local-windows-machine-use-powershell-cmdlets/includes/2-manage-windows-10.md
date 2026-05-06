@@ -1,4 +1,4 @@
-You most likely use the Windows 10 GUI interface to change configuration settings and perform management tasks on Windows 10 workstations. However, you might be able to perform some tasks quicker by opening a PowerShell console and running a cmdlet.
+You most likely use the Windows 10 or Windows 11 GUI interface to change configuration settings and perform management tasks on Windows workstations. However, you might be able to perform some tasks quicker by opening a PowerShell console and running a cmdlet.
 
 The **Microsoft.PowerShell.Management** module includes many built-in cmdlets that can be used to obtain information and perform specific operations on a local computer. To review the cmdlets included in this module, you can enter the following:
 
@@ -20,7 +20,7 @@ The following table lists some of the more common cmdlets included in the **Micr
 | **Stop-Service**     | Stops one or more running services                                                                         |
 | **Stop-Process**     | Stops one or more running processes                                                                        |
 | **Stop-Computer**    | Shuts down local and remote computers                                                                      |
-| **Clear-EventLog**   | Deletes all of the entries from the specified event logs on the local computer or on remote computers      |
+| **Clear-EventLog**   | Deletes all of the entries from the specified event logs on the local computer or on remote computers (only available in Windows PowerShell 5.1) |
 | **Clear-RecycleBin** | Deletes the content of a computer's recycle bin                                                            |
 | **Restart-Computer** | Restarts the operating system on local and remote computers                                                |
 | **Restart-Service**  | Stops and then starts one or more services                                                                 |
@@ -36,6 +36,9 @@ The following cmdlets are examples of how to use some of the management cmdlets 
     
     ```
  -  To retrieve the latest five error entries from the Application log, run the following command:
+
+    > [!NOTE]
+    > `Get-EventLog` and `Clear-EventLog` are only available in Windows PowerShell 5.1. In PowerShell 7, use `Get-WinEvent` and `Clear-WinEvent` instead.
     
     ```powershell
     Get-EventLog -LogName Application -Newest 5 -EntryType Error
