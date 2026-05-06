@@ -10,10 +10,7 @@ metadata:
   ai-usage: ai-generated
 title: Knowledge check
 durationInMinutes: 3
-content: |
-  [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
   questions:
   - content: "A storage account has firewall rules configured with specific virtual network rules. An Azure Machine Learning workspace in the same subscription needs to access the storage account, but the workspace cannot be placed in a virtual network. What network rule type should be configured to grant access?"
     choices:
