@@ -10,7 +10,7 @@ In this module, you learned how to:<br>
 
 ## Clean up resources
 
-If you created a resource group solely for this module, delete it when you're finished. Replace `<resource-group-name>` with the name of that module-specific resource group. Don't use this command to delete shared or pre-existing resource groups. Deleting the resource group deletes the container registry and its stored images.
+If you created a resource group solely for this module, delete it when you're finished. Replace `<resource-group-name>` with the name of that module-specific resource group. Don't use this command to delete shared or preexisting resource groups. Deleting the resource group deletes the container registry and its stored images.
 
 ```azurecli
 az group delete --name <resource-group-name> --yes --no-wait

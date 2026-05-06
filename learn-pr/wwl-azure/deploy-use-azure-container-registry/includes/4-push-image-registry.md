@@ -50,7 +50,7 @@ After repository roles are assigned, Azure role assignment changes can take up t
 az acr login --name <registry-name>
 ```
 
-Use [docker push](https://docs.docker.com/engine/reference/commandline/push/) to push the image to the registry instance.Replace `<login-server>` with the exact **Login server** value of your registry instance. This example creates the **hello-world** repository, containing the `hello-world:v1` image.
+Use [docker push](https://docs.docker.com/engine/reference/commandline/push/) to push the image to the registry instance. Replace `<login-server>` with the exact **Login server** value of your registry instance. This example creates the **hello-world** repository, containing the `hello-world:v1` image.
 
 ```console
 docker push <login-server>/hello-world:v1

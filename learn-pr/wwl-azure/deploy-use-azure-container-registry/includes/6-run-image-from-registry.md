@@ -13,7 +13,7 @@ After repository roles are assigned, Azure role assignment changes can take up t
 az acr login --name <registry-name>
 ```
 
-Replace `<login-server>` with the exact **Login server** value shown for your registry in the Azure portal.The default Tenant Reuse/DNL registry created in this module uses `<registry-name>-<hash>.azurecr.io`. A registry created with the Unsecure/non-DNL option uses `<registry-name>.azurecr.io` instead.
+Replace `<login-server>` with the exact **Login server** value shown for your registry in the Azure portal. The default Tenant Reuse/DNL registry created in this module uses `<registry-name>-<hash>.azurecr.io`. A registry created with the Unsecure/non-DNL option uses `<registry-name>.azurecr.io` instead.
 
 ```console
 docker run --rm <login-server>/hello-world:v1
