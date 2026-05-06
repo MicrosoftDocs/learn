@@ -54,9 +54,12 @@ $computers=New-Object System.Collections.ArrayList
 When you use an array list, you can use methods to both add and remove items. However, these methods will fail when you try to use them on a fixed-size array. For example:
 
 ```powershell
-$computers.Add("LON-SRV2")
+[void]$computers.Add("LON-SRV2")
 $computers.Remove("LON-CL1")
 ```
+
+> [!NOTE]
+> The `Add()` method returns the index of the newly added item as an integer. Without `[void]`, calling `Add()` in a script sends this integer to the console output. Use `[void]` to suppress this return value.
 
 > [!NOTE] 
 > When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.
@@ -66,3 +69,14 @@ If you want to remove an item from an array list based on the index number, you 
 ```powershell
 $computers.RemoveAt(1)
 ```
+
+> [!NOTE]
+> `ArrayList` is deprecated in favor of the generic `List[T]` collection. For new scripts, use `[System.Collections.Generic.List[string]]::new()` for string lists or `[System.Collections.Generic.List[int]]::new()` for integer lists. For example:
+>
+> ```powershell
+> $computers = [System.Collections.Generic.List[string]]::new()
+> $computers.Add("LON-DC1")
+> $computers.Add("LON-SRV1")
+> ```
+>
+> Generic lists are strongly typed, which reduces errors, and don't require `[void]` with `Add()` because the method returns no value.

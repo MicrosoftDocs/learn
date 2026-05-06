@@ -20,6 +20,15 @@ $servers.Add("LON-SRV2","172.16.0.12")
 $servers.Remove("LON-DC1")
 ```
 
+You can also add or update a value using array notation:
+
+```powershell
+$servers["LON-SRV3"] = "172.16.0.13"
+```
+
+> [!NOTE]
+> The `Add()` method throws an error if the key already exists. Array notation silently updates the value instead of throwing an error, making it more suitable when you're not sure whether a key already exists.
+
 You can also update the value for a key. For example:
 
 ```powershell
