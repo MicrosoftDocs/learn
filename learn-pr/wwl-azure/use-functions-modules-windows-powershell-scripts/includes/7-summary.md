@@ -14,10 +14,10 @@ In this module, you learned about functions and modules. The following are the k
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [About Functions](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [About Scopes](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_scopes)
 
-- [About Language Modes](https://aka.ms/nxcyid)​
+- [About Language Modes](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes)
 
-- [About Functions Advanced Parameters](https://aka.ms/about-functions-advanced-parameters)​
+- [About Functions Advanced Parameters](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters)

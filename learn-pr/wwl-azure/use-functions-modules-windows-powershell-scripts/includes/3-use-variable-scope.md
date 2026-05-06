@@ -11,6 +11,9 @@ The following table describes the three scopes and how they affect variable use.
 | Function  | The function scope is for a single function. Variables set within a function aren't shared with other functions or the script. If you set a variable value in the function scope that already exists in the global or script scope, a new variable is created in the function scope. Then, there are two variables of the same name in two separate scopes. |
 
 > [!NOTE]
+> The Windows PowerShell ISE is no longer in active feature development and only supports Windows PowerShell 5.1 and earlier. For new script development, **Visual Studio Code with the PowerShell extension** is the recommended scripting environment.
+
+> [!NOTE]
 > To avoid confusion, it's a best practice to avoid using the same variable names in different scopes.
 
 In addition to reviewing a variable in a higher-level scope, you can also modify that variable by specifically referencing the scope of the variable when you modify it. To modify a script scope variable from a function, use the following syntax:
