@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-github-copilot-cloud-operations.prompt-engineering-for-infra-as-code
+title: Prompt engineering for Infrastructure as Code
+metadata:
+  title: Prompt Engineering for Infrastructure as Code
+  description: "Learn how to craft effective prompts for GitHub Copilot to generate, review, and refine Bicep templates and other IaC artifacts."
+  ms.date: 05/05/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-prompt-engineering-for-infra-as-code.md)]

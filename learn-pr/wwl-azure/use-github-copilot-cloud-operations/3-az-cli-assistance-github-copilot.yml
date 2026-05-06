@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-github-copilot-cloud-operations.az-cli-assistance-github-copilot
+title: Azure CLI and PowerShell assistance with GitHub Copilot
+metadata:
+  title: Azure CLI and PowerShell Assistance with GitHub Copilot
+  description: "Learn how to use GitHub Copilot to generate, enhance, and translate Azure CLI and Azure PowerShell scripts for cloud operations and automation tasks."
+  ms.date: 05/05/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-az-cli-assistance-github-copilot.md)]
