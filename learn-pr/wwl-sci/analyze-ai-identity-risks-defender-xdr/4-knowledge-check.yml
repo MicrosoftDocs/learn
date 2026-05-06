@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-ai-identity-risks-defender-xdr.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of analyzing AI identity risks in Microsoft Defender XDR, including AI asset discovery, blast radius assessment, and attack path analysis.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer at Contoso wants to see all AI agents operating across the organization's Microsoft environment from a single location. Where in Microsoft Defender XDR does this inventory appear?"
+    choices:
+    - content: "Assets > Devices"
+      isCorrect: false
+      explanation: "Incorrect. The Devices inventory tracks endpoints and servers, not AI agents. AI agents appear in the AI assets section of the Microsoft Defender portal."
+    - content: "Assets > AI Agents"
+      isCorrect: true
+      explanation: "Correct. The AI agent inventory in Microsoft Defender XDR provides a consolidated view of AI agents discovered across the organization's environment, including agent identity, product source, and associated risk signals. The inventory is currently in Preview and requires enabling integrations for each supported platform before agents appear."
+    - content: "Threat intelligence > AI threats"
+      isCorrect: false
+      explanation: "Incorrect. The Threat intelligence section provides information about threat actors and campaigns, not an inventory of AI agents in your environment."
+    - content: "Endpoints > Software inventory"
+      isCorrect: false
+      explanation: "Incorrect. The software inventory tracks installed applications on managed endpoints, not AI agents running in cloud services."
+  - content: "Contoso's security team is reviewing a Copilot Studio agent that has access to the company's SharePoint knowledge base, CRM data connector, and can send emails via Graph API. How is the blast radius of this agent best described?"
+    choices:
+    - content: "The agent's blast radius is limited to the SharePoint sites it was explicitly configured to access"
+      isCorrect: false
+      explanation: "Incorrect. Blast radius includes all resources, data, and capabilities accessible to the agent—not just data it was primarily designed to use. The CRM connector and Graph API email scope are part of the blast radius."
+    - content: "The scope of SharePoint documents, CRM records, and email capabilities accessible to the agent if its identity is compromised"
+      isCorrect: true
+      explanation: "Correct. Blast radius is the scope of resources, data, and capabilities accessible to an agent identity if compromised. Data includes all permissions, knowledge sources, and blueprint-defined capabilities—in this case, SharePoint data, CRM records, and the ability to send emails via Microsoft Graph."
+    - content: "The number of users who interact with the agent on a daily basis"
+      isCorrect: false
+      explanation: "Incorrect. User interaction volume is an operational metric, not a measure of security risk. Blast radius refers to what an attacker could access or affect through the agent's identity, not how many users the agent serves."
+    - content: "The Azure subscription resources the agent's managed identity can access"
+      isCorrect: false
+      explanation: "Incorrect. While managed identity permissions are one component of blast radius for Azure-hosted agents, blast radius encompasses all resources and capabilities accessible to the agent—including knowledge sources, data connectors, and API scopes—not just Azure subscription resources."
+  - content: "A security engineer is reviewing attack paths for a Microsoft Foundry agent in Microsoft Defender XDR. The attack path shows the agent identity can reach a storage account containing unrestricted access to financial records. What remediation action directly reduces this attack path?"
+    choices:
+    - content: "Enable Microsoft Defender for Storage on the storage account"
+      isCorrect: false
+      explanation: "Incorrect. Enabling Defender for Storage adds threat detection for the storage account, which helps detect suspicious access. However, it doesn't remove the attack path—the agent identity still has access. Reducing the path requires removing or scoping the agent's permissions."
+    - content: "Remove or scope down the agent identity's permissions to the storage account"
+      isCorrect: true
+      explanation: "Correct. An attack path exists because of an exploitable permission. An admin removing the agent's access to the storage account, or scoping it to only the specific containers or blobs required, directly eliminates the attack path."
+    - content: "Add a Conditional Access policy requiring multifactor authentication for the agent identity"
+      isCorrect: false
+      explanation: "Incorrect. While Conditional Access policies can apply to workload identities, they don't enforce MFA in the same way as for user accounts. More importantly, the attack path exists because of the permission. Removing or scoping the permission directly eliminates the path in a way that authentication controls alone can't."
+    - content: "Rotate the client secret or certificate used by the agent identity"
+      isCorrect: false
+      explanation: "Incorrect. Rotating credentials reduces the risk of a specific stolen credential being used, but it doesn't eliminate the attack path. As long as the agent identity retains access to the storage account, the attack path remains."
