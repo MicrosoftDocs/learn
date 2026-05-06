@@ -32,7 +32,10 @@ These cmdlets include:
 - **Get-Service**
 - **Set-Service**
 - **Get-WinEvent**
-- **Get-WmiObject**
+- **Get-CimInstance**
+
+> [!NOTE]
+> The **Get-WmiObject** cmdlet, available in Windows PowerShell 5.1, is also in this category but has been superseded by **Get-CimInstance** since PowerShell 3.0. **Get-CimInstance** is not available in PowerShell 6 and newer.
 
 Typically, cmdlets that support remoting without special configuration have the *ComputerName* parameter and don't have the *Session* parameter.
 
@@ -53,4 +56,4 @@ SSH remoting offers basic PowerShell session remoting between Windows and Linux 
 > [!NOTE]
 > The **New-PSSession**, **Enter-PSSession**, and **Invoke-Command** cmdlets now have a new parameter set to support this new remoting connection.
 
-To use PowerShell remoting over SSH, you must install PowerShell 6 or newer and SSH on all computers. Then, you must install both the SSH client (ssh.exe) and server (sshd.exe) executables so that you can remote to and from the computers. OpenSSH for Windows is available starting with Windows 10 build 1809 and Windows Server 2019. For Linux, install the version of SSH (including the sshd.exe server) that's appropriate for your platform. You also need to install the current version of PowerShell from GitHub to ensure that the SSH remoting feature is available. You should configure the SSH server to create an SSH subsystem to host a PowerShell process on the remote computer. You also need to enable either password or key-based authentication.
+To use PowerShell remoting over SSH, you must install PowerShell 6 or newer and SSH on all computers. Then, you must install both the SSH client (ssh.exe) and server (sshd.exe) executables so that you can remote to and from the computers. OpenSSH for Windows is available as an optional feature starting with Windows 10 build 1809 and Windows Server 2019. On Windows Server 2025, OpenSSH is installed by default but must be enabled. For Linux, install the version of SSH (including the sshd.exe server) that's appropriate for your platform. You also need to install the current version of PowerShell to ensure that the SSH remoting feature is available. You should configure the SSH server to create an SSH subsystem to host a PowerShell process on the remote computer. You also need to enable either password or key-based authentication.
