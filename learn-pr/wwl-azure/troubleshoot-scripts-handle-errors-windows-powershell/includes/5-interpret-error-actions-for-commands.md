@@ -1,4 +1,4 @@
-When a PowerShell command generates an error, that error might be one of two types, either a *terminating* error or a *non-terminating* error. A terminating error occurs when Windows PowerShell determines that it's not possible to continue processing after the error and the command stops. A non-terminating error occurs when Windows PowerShell determines that it's possible to continue processing after the error. When a non-terminating error occurs, the script running or pipeline running will continue. Non-terminating errors are more common than terminating errors.
+When a PowerShell command generates an error, that error is either a *terminating* error or a *non-terminating* error. A terminating error stops the command because Windows PowerShell can't continue processing. A non-terminating error allows processing to continue — the script or pipeline keeps running. Non-terminating errors are more common than terminating errors.
 
 Consider the following command:
 
@@ -6,7 +6,7 @@ Consider the following command:
 Get-CimInstance -ClassName Win32_BIOS -ComputerName LON-SVR1,LON-DC1
 ```
 
-If you assume that the computer **LON-SVR1** isn't available on the network, **Get-CimInstance** generates an error when it tries to query that computer. However, the command could continue with the next computer, **LON-DC1**. The error is therefore a non-terminating error.
+If **LON-SVR1** isn't available on the network, **Get-CimInstance** generates an error when it tries to query that computer. However, the command could continue with the next computer, **LON-DC1**. The error is therefore a non-terminating error.
 
 ## $ErrorActionPreference
 
@@ -32,17 +32,17 @@ If you intend to trap an error within your script so that you can manage the err
 
 ## -ErrorAction parameter
 
-All Windows PowerShell commands have the *–ErrorAction* parameter. This parameter has the alias *–EA*. The parameter accepts the same values as `$ErrorActionPreference`, and the parameter overrides the variable for that command. If you expect an error to occur on a command, you use *–ErrorAction* to set that command’s error action to **Stop**. Doing this lets you trap and manage the error for that command but leaves all other commands to use the action in `$ErrorActionPreference`. An example is:
+All Windows PowerShell commands have the `-ErrorAction` parameter. This parameter has the alias `-EA`. The parameter accepts the same values as `$ErrorActionPreference` and overrides it for that command. If you expect an error on a command, use `-ErrorAction` to set that command's error action to **Stop**. Setting `-ErrorAction Stop` lets you trap and manage errors for that command while leaving all other commands to use `$ErrorActionPreference`. An example is:
 
 ```powershell
 Get-CimInstance -ClassName Win32_BIOS -ComputerName LON-SVR1,LON-DC1 -ErrorAction Stop
 ```
 
-The only time that you'll modify `$ErrorActionPreference` is when you expect an error outside of a Windows PowerShell command, such as when you're running a method such as the following:
+Modify `$ErrorActionPreference` only when you expect an error outside of a Windows PowerShell command, such as when you're running a method like the following:
 
 ```powershell
 Get-Process –Name Notepad | ForEach-Object { $PSItem.Kill() }
 ```
 
-In this example, the **Kill()** method might generate an error. But because it's not a Windows PowerShell command, it doesn't have the *–ErrorAction* parameter. You would instead set `$ErrorActionPreference` to **Stop** before running the method, and then set the variable back to **Continue** after you run the method.
+In this example, the **Kill()** method might generate an error. Because it's not a Windows PowerShell command, it doesn't have the `-ErrorAction` parameter. Instead, set `$ErrorActionPreference` to **Stop** before running the method, and set it back to **Continue** after.
 
