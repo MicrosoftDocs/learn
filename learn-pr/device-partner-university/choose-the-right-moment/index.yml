@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.choose-the-right-moment
+title: Choose the right moment to modernize Windows Server
+metadata:
+  title: Choose The Right Moment To Modernize Windows Server
+  description: This module helps you evaluate Windows Server modernization by identifying security, operational, and business signals that indicate misalignment with evolving requirements. You’ll learn how to assess environments and determine when a modernization evaluation might be needed.
+  ms.date: 05/05/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-server
+summary: >
+  This module helps you evaluate Windows Server modernization by identifying key security, operational, and business signals that indicate misalignment with evolving requirements. It explains how to assess your environment and determine whether a modernization evaluation is needed.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Describe how Windows Server is positioned within modern on-premises and hybrid environments
+  - Explain why environments that are stable and functional might still face emerging challenges
+  - Recognize how Windows Server modernization conversations typically begin 
+  - Identify and assess signals—such as operational, security, and business indicators—that suggest when it might be useful to evaluate modernization options
+prerequisites: |
+  - None
+iconUrl: /training/achievements/choose-the-right-moment.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - technology-manager
+products:
+  - windows-server-2025
+units:
+  - learn.dpu.choose-the-right-moment.introduction
+  - learn.dpu.choose-the-right-moment.stability
+  - learn.dpu.choose-the-right-moment.current-environments
+  - learn.dpu.choose-the-right-moment.conversations
+  - learn.dpu.choose-the-right-moment.when-to-evaluate
+  - learn.dpu.choose-the-right-moment.knowledge-check
+  - learn.dpu.choose-the-right-moment.summary
+badge:
+  uid: learn.dpu.choose-the-right-moment.badge
+
