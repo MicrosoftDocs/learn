@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-protection-copilot-studio-agents.enable-protection-microsoft-defender
+metadata:
+  title: Enable protection in Microsoft Defender
+  description: Configure real-time protection for Copilot Studio agents in the Microsoft Defender portal by navigating to System > Settings > Security for AI. Then, coordinate App ID configuration with Power Platform admins, and verify the Connected status of protected agents.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable protection in Microsoft Defender
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-enable-protection-microsoft-defender.md)]
