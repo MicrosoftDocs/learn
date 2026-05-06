@@ -33,5 +33,5 @@ The following table lists common parameters for the **New-NetRoute** cmdlet.
 The following command creates an IP routing table entry:
 
 ```powershell
-New-NetRoute -DestinationPrefix 0.0.0.0/24 -InterfaceAlias "Ethernet" -DefaultGateway 192.168.1.1
+New-NetRoute -DestinationPrefix "0.0.0.0/0" -InterfaceAlias "Ethernet" -NextHop 192.168.1.1
 ```

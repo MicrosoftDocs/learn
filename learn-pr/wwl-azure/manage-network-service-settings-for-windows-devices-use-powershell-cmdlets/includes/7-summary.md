@@ -8,5 +8,7 @@ In this module, you've learned about the PowerShell modules and cmdlets used for
 ## Additional reading
 
 To learn more, go through the following documents:
-- [PowerShell 7 Module Compatibility](https://aka.ms/powershell-7-module-compatibility)
-- [Microsoft PowerShell Management](https://aka.ms/microsoft-powershell-management)
+- [PowerShell 7 Module Compatibility](https://aka.ms/PSModuleCompat)
+- [NetTCPIP module reference](https://learn.microsoft.com/powershell/module/nettcpip/)
+- [NetSecurity module reference](https://learn.microsoft.com/powershell/module/netsecurity/)
+- [DnsClient module reference](https://learn.microsoft.com/powershell/module/dnsclient/)
