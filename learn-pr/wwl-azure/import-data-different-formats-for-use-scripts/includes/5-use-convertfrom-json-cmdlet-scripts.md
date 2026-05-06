@@ -1,11 +1,11 @@
 JavaScript Object Notation (JSON) is a lightweight data format that's similar to XML, because it can represent multiple layers of data. JSON is a lightweight data-interchange format compared to XML because of its simpler syntax.
 
-Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, you can retrieve the data by using **Get-Content** and then convert the data by using the **ConvertFrom-Json** cmdlet.
+Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, you can retrieve the data by using **Get-Content** with the *-Raw* parameter and then convert the data by using the **ConvertFrom-Json** cmdlet. The *-Raw* parameter reads the entire file as a single string, which is required for **ConvertFrom-Json** to parse multi-line JSON correctly.
 
 The **ConvertFrom-Json** cmdlet uses the following syntax:
 
 ```powershell
-$users = Get-Content C:\Scripts\Users.json | ConvertFrom-Json
+$users = Get-Content -Raw C:\Scripts\Users.json | ConvertFrom-Json
 ```
 
 ## Invoke-RestMethod

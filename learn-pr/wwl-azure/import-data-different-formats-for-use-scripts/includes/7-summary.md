@@ -15,9 +15,15 @@ In this module, you learned to import data from a text file, CSV file, XML file,
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [Get-Content](https://learn.microsoft.com/powershell/module/microsoft.powershell.management/get-content)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [Import-Csv](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/import-csv)
+
+- [Import-Clixml](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/import-clixml)
+
+- [ConvertFrom-Json](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json)
+
+- [Invoke-RestMethod](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-restmethod)
 
 
 
