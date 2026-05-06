@@ -14,4 +14,9 @@ Some common providers include:
 - FileSystem. Provides access to the files and folders in the file system.
 - Function. Provides access to Windows PowerShell functions loaded into memory.
 - Variable. Provides access to Windows PowerShell variables and their values loaded into memory.
+- Certificate. Provides access to X.509 certificate stores using the `Cert:` drive.
+- WSMan. Provides access to WS-Management configuration data using the `WSMan:` drive.
+
+> [!NOTE]
+> The Certificate, Registry, and WSMan providers are only available on Windows platforms.
 

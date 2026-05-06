@@ -6,6 +6,19 @@ Some providers include help files that you can review. Help files use the naming
 Get-Help about_FileSystem_Provider
 ```
 
+To list all available provider help topics without knowing the exact topic name, run:
+
+```powershell
+Get-Help * -Category Provider
+```
+
+You can also get help for a specific provider by using just the provider name, without the full `about_` prefix:
+
+```powershell
+Get-Help FileSystem
+Get-Help Registry
+```
+
 Cmdlets that work with providers use the nouns **Item** and **ItemProperty**. To list cmdlets that work with providers, run the following cmdlets:
 
 ```powershell
