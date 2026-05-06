@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-ai-data-risks-purview.assess-sharepoint-overexposure
+metadata:
+  title: Assess SharePoint overexposure
+  description: Identify and assess SharePoint data overexposure risks that affect AI grounding data, using Microsoft Purview DSPM for AI insights and recommendations.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Assess SharePoint overexposure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-assess-sharepoint-overexposure.md)]
