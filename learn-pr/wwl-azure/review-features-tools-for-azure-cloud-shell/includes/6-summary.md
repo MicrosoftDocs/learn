@@ -15,12 +15,6 @@ In this module, you learned about Azure Cloud Shell and its features. The follow
 
 To learn more, go through the following documents:
 
-- [Quickstart: Automatically migrate PowerShell scripts from AzureRM to the Az PowerShell module](https://aka.ms/quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module)
+- [Azure Cloud Shell features](https://learn.microsoft.com/azure/cloud-shell/features)
 
-- [Microsoft Graph PowerShell​](/powershell/microsoftgraph/overview)
-
-- [AzureAD​](https://aka.ms/azure-ad-2)
-​
-- [New-AzVM](https://aka.ms/new-azvm)​
-
-- [Az.Storage](https://aka.ms/az-storage-2)
+- [Microsoft Graph PowerShell](https://learn.microsoft.com/powershell/microsoftgraph/overview)
