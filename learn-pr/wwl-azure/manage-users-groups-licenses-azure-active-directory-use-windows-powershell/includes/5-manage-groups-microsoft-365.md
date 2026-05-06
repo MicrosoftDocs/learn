@@ -14,52 +14,31 @@ Microsoft 365 has multiple types of groups that you can use to provide access to
 > [!NOTE]
 > There are no AzureAD or Msol cmdlets for managing Microsoft 365 groups. The cmdlets for managing Microsoft 365 groups are part of Exchange Online, because these groups include a mailbox. In the Exchange Online cmdlets, Microsoft 365 groups are referred to as *unified groups*.
 
-## Managing groups with AzureAD cmdlets
+## Managing groups with Microsoft Entra PowerShell
 
-You can create distribution groups, security groups, and mail-enabled security groups by using the **New-AzureADGroup** cmdlet. The type of group created depends on how you use the *-MailEnabled* and *-SecurityEnabled* parameters. The following example creates a mail-enabled security group:
+You can create distribution groups, security groups, and mail-enabled security groups by using the **New-EntraGroup** cmdlet. The type of group created depends on how you use the *-MailEnabled* and *-SecurityEnabled* parameters. The following example creates a mail-enabled security group:
 
 ```powershell
-New-AzureADGroup -DisplayName "Marketing Group" -MailEnabled $true -SecurityEnabled $true -MailNickname MarketingGrp
+New-EntraGroup -DisplayName "Marketing Group" -MailEnabled $true -SecurityEnabled $true -MailNickname MarketingGrp
 ```
 
-When you create a new group, the group is assigned an ObjectID. The ObjectID is a unique identifier for the group. You need to use the ObjectID for the group with management cmdlets. You can't use a display name to refer to a group because it isn't guaranteed to be unique. Use the **Get-AzureADGroup** cmdlet to identify the ObjectID for a group that you want to manage.
+When you create a new group, the group is assigned an object ID. The object ID is a unique identifier for the group. You need to use the object ID with management cmdlets. You can't use a display name to refer to a group because it isn't guaranteed to be unique. Use the **Get-EntraGroup** cmdlet to identify the object ID for a group that you want to manage.
 
-Other AzureAD cmdlets that you can use to manage groups are listed in the following table.
+The following table lists other Microsoft Entra PowerShell cmdlets that you can use to manage groups.
 
-*Table 2: AzureAD cmdlets for group management*
+*Table 2: Microsoft Entra PowerShell cmdlets for group management*
 
 | Cmdlet                      | Description                                                  |
 | --------------------------- | ------------------------------------------------------------ |
-| **Get-AzureADGroup**          | Queries for distribution groups, security groups, and mail-enabled security groups. This cmdlet supports using a filter or search string. |
-| **Set-AzureADGroup**          | Modifies the properties of distribution groups, security groups, and mail-enabled security groups. |
-| **Remove-AzureADGroup**       | Deletes distribution groups, security groups, and mail-enabled security groups. |
-| **Get-AzureADGroupMember**    | Queries the membership of distribution groups, security groups, and mail-enabled security groups. |
-| **Add-AzureADGroupMember**    | Adds a member to distribution groups, security groups, and mail-enabled security groups. |
-| **Remove-AzureADGroupMember** | Removes a member from distribution groups, security groups, and mail-enabled security groups. |
-| **Get-AzureADGroupOwner**     | Queries the owners of distribution groups, security groups, and mail-enabled security groups. |
-| **Add-AzureADGroupOwner**     | Adds an owner to distribution groups, security groups, and mail-enabled security groups. |
-| **Remove-AzureADGroupOwner**  | Removes an owner from distribution groups, security groups, and mail-enabled security groups. |
-
-## Managing groups with Msol cmdlets
-
-You can use the **New-MsolGroup** cmdlet to create security groups. There are no Msol cmdlets to create distribution groups or mail-enabled security groups. The following example creates a new security group:
-
-```powershell
-New-MsolGroup -DisplayName "Marketing Group"
-```
-
-Other Msol cmdlets that you can use to manage groups are listed in the following table.
-
-*Table 3: Msol cmdlets for managing groups*
-
-| Cmdlet                 | Description                                                  |
-| ---------------------- | ------------------------------------------------------------ |
-| **Get-MsolGroup**          | Queries for distribution groups, security groups, and mail-enabled security groups. You can filter results based on group type or a search string for the display name. |
-| **Set-MsolGroup**          | Modifies the properties of distribution groups, security groups, and mail-enabled security groups. |
-| **Remove-MsolGroup**       | Deletes distribution groups, security groups, and mail-enabled security groups. |
-| **Get-MsolGroupMember**    | Queries the membership of distribution groups, security groups, and mail-enabled security groups. |
-| **Add-MsolGroupMember**    | Adds a member to distribution groups, security groups, and mail-enabled security groups. |
-| **Remove-MsolGroupMember** | Removes a member from distribution groups, security groups, and mail-enabled security groups. |
+| **Get-EntraGroup**          | Queries for distribution groups, security groups, and mail-enabled security groups. This cmdlet supports using a filter or search string. |
+| **Set-EntraGroup**          | Modifies the properties of distribution groups, security groups, and mail-enabled security groups. |
+| **Remove-EntraGroup**       | Deletes distribution groups, security groups, and mail-enabled security groups. |
+| **Get-EntraGroupMember**    | Queries the membership of distribution groups, security groups, and mail-enabled security groups. |
+| **Add-EntraGroupMember**    | Adds a member to distribution groups, security groups, and mail-enabled security groups. |
+| **Remove-EntraGroupMember** | Removes a member from distribution groups, security groups, and mail-enabled security groups. |
+| **Get-EntraGroupOwner**     | Queries the owners of distribution groups, security groups, and mail-enabled security groups. |
+| **Add-EntraGroupOwner**     | Adds an owner to distribution groups, security groups, and mail-enabled security groups. |
+| **Remove-EntraGroupOwner**  | Removes an owner from distribution groups, security groups, and mail-enabled security groups. |
 
 ## Synchronized groups
 
