@@ -13,6 +13,9 @@ The following table lists cmdlets that you can use to manage computer accounts.
 | **Test-ComputerSecureChannel**    | Verifies or repairs the trust relationship between a computer and the domain |
 | **Reset-ComputerMachinePassword** | Resets the password for a computer account                   |
 
+> [!NOTE]
+> **Test-ComputerSecureChannel** and **Reset-ComputerMachinePassword** are part of the **Microsoft.PowerShell.Management** module and are only available in Windows PowerShell 5.1. They're not available in PowerShell 7. The `New-ADComputer`, `Set-ADComputer`, `Get-ADComputer`, and `Remove-ADComputer` cmdlets are part of the Active Directory module and work in both Windows PowerShell and PowerShell 7.
+
 ## Creating new computer accounts
 
 You can use the **New-ADComputer** cmdlet to create a new computer account before you join the computer to the domain. You do this so that you can create the computer account in the correct OU before deploying the computer.
@@ -37,6 +40,9 @@ New-ADComputer -Name LON-CL10 -Path "ou=marketing,dc=adatum,dc=com" -Enabled $tr
 
 You can use the **Test-ComputerSecureChannel** cmdlet with the *-Repair* parameter to repair a lost trust relationship between a computer and a domain. You must run the cmdlet on the computer with the lost trust relationship.
 
+> [!NOTE]
+> **Test-ComputerSecureChannel** is only available in Windows PowerShell 5.1. It's not available in PowerShell 7.
+
 ## Account vs. device management cmdlets
 
-**-ADComputer** cmdlets are part of the Active Directory module and manage the computer object, not the physical device or its operating system. For example, you can use the **Add‑Computer** cmdlet to join a computer to a domain. To manage the properties of the physical computer and its operating system, use the **-Computer** cmdlets.
+**-ADComputer** cmdlets are part of the Active Directory module and manage the computer object, not the physical device or its operating system. For example, you can use the **Add‑Computer** cmdlet (Windows PowerShell 5.1 only) to join a computer to a domain. To manage the properties of the physical computer and its operating system, use the **-Computer** cmdlets.

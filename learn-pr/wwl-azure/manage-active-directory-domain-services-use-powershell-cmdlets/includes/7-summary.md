@@ -9,4 +9,4 @@ The Active Directory module for Windows PowerShell can be used to automate Activ
 ## Additional reading
 
 To learn more, go through the following document:
-- [PowerShell 7 Module Compatibility](https://aka.ms/powershell-7-Module-compatibility)
+- [PowerShell 7 Module Compatibility](https://aka.ms/PSModuleCompat)
