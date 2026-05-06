@@ -17,7 +17,7 @@ There are also situations where maintaining the current approach remains appropr
 
 Use the following decision tree to determine whether your current Windows Server environment should remain as-is or whether it might be time to begin a modernization evaluation based on common signals.
 
-:::image type="content" source="../media/windows-server-modernization-decision-tree.svg" lightbox="../media/windows-server-modernization-decision-tree.svg" alt-text="Diagram that shows a decision tree guiding Windows Server modernization decisions from system stability through signals and recommended outcomes.":::
+:::image type="content" source="../media/windows-server-modernization-decision-tree.svg" alt-text="Diagram that shows a decision tree guiding Windows Server modernization decisions from system stability through signals and recommended outcomes." lightbox="../media/windows-server-modernization-decision-tree.svg":::
 
 The goal of evaluation isn't to prescribe outcomes, but to determine whether existing environments still align with evolving expectations. As gaps or constraints begin to emerge, this evaluation often expands to consider whether hybrid or cloud approaches could help address those limitations.
 
