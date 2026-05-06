@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-gateway-security-foundry.examine-ai-gateway-architecture
+metadata:
+  title: Examine AI Gateway architecture
+  description: Examine the AI Gateway architecture in Microsoft Foundry, including how it sits between callers and AI models. Then check what security controls it enforces, and why it's a critical layer in AI workload protection.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Examine AI Gateway architecture
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-examine-ai-gateway-architecture.md)]
