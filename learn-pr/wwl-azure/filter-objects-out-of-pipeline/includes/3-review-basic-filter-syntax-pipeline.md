@@ -1,4 +1,4 @@
-The **Where-Object** command and its alias, **Where**, have two syntax forms: basic and advanced. These two forms are defined by an extensive list of parameter sets—one for each comparison operator. This allows for an easy-to-review syntax, especially in the basic form.
+The **Where-Object** command and its alias, **Where**, have two syntax forms: basic and advanced (referred to in Microsoft documentation as *simplified syntax* and *scriptblock syntax*, respectively). These two forms are defined by an extensive list of parameter sets—one for each comparison operator. This allows for an easy-to-review syntax, especially in the basic form.
 
 For example, to display a list of only the running services, enter the following command in the console, and then press the Enter key:
 

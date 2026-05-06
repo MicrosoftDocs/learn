@@ -1,4 +1,4 @@
-The advanced syntax of **Where-Object** uses a filter script. A *filter script* is a script block that contains the comparison and that you pass by using the *-FilterScript* parameter. Within that script block, you can use the built-in `$PSItem` variable (or `$_`, which is also valid in versions of Windows PowerShell older than 3.0) to reference whatever object was piped into the command. Your filter script runs one time for each object that's piped into the command. When the filter script returns True, that object is passed down the pipeline as output. When the filter script returns False, that object is removed from the pipeline.
+The advanced syntax of **Where-Object** (also called *scriptblock syntax* in Microsoft documentation) uses a filter script. A *filter script* is a script block that contains the comparison and that you pass by using the *-FilterScript* parameter. Within that script block, you can use the built-in `$_` variable (also written as `$PSItem`) to reference whatever object was piped into the command. Your filter script runs one time for each object that's piped into the command. When the filter script returns True, that object is passed down the pipeline as output. When the filter script returns False, that object is removed from the pipeline.
 
 The following two commands are functionally identical. The first uses the basic syntax, and the second uses the advanced syntax to do the same thing:
 
@@ -8,7 +8,7 @@ Get-Service | Where Status –eq Running
 Get-Service | Where-Object –FilterScript { $PSItem.Status –eq 'Running' }
 ```
 
-The *-FilterScript* parameter is positional, and most users omit it. Most users also use the **Where** alias or the **?** alias, which is even shorter. Experienced Windows PowerShell users also use the `$_` variable instead of `$PSItem`, because only `$_` is allowed in Windows PowerShell 1.0 and Windows PowerShell 2.0. The following commands perform the same task as the previous two commands:
+The *-FilterScript* parameter is positional, and most users omit it. Most users also use the **Where** alias or the **?** alias, which is even shorter. Experienced PowerShell users typically use `$_` because it is more concise. Both `$_` and `$PSItem` are fully interchangeable in all current versions; `$_` is also the only option when maintaining scripts for Windows PowerShell 1.0 or 2.0. The following commands perform the same task as the previous two commands:
 
 ```powershell
 Get-Service | Where {$PSItem.Status –eq 'Running'}
@@ -23,9 +23,12 @@ The single quotation marks (**' '**) around **Running** in these examples are re
 The advanced syntax allows you to combine multiple criteria by using the **-and** and **-or** Boolean, or logical, operators. Here's an example:
 
 ```powershell
-Get-EventLog –LogName Security –Newest 100 |
-Where { $PSItem.EventID –eq 4672 –and $PSItem.EntryType –eq 'SuccessAudit' } 
+Get-WinEvent -LogName Security -MaxEvents 100 |
+Where { $PSItem.Id -eq 4672 -and $PSItem.LevelDisplayName -eq 'Information' }
 ```
+
+> [!NOTE]
+> `Get-EventLog` is a legacy cmdlet available only in Windows PowerShell 5.1 that uses a deprecated Win32 API. Use `Get-WinEvent` in new scripts — it works in both Windows PowerShell 5.1 and PowerShell 7, and uses `Id` and `LevelDisplayName` instead of `EventID` and `EntryType`.
 
 The logical operator must have a complete comparison on either side of it. In the preceding example, the first comparison checks the **EventID** property, and the second comparison checks the **EntryType** property. The following example is one that many beginning users try. It's incorrect, because the second comparison is incomplete:
 

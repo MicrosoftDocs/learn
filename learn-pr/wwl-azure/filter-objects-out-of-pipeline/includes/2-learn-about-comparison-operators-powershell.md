@@ -20,7 +20,7 @@ PowerShell also contains the **-like** operator and its case-sensitive companion
 Other, more advanced operators exist that are beyond the scope of this course. These operators include:
 
 - The **-in** and **-contains** operators, which test whether an object exists in a collection.
-- The **-as** operator, which tests whether an object is of a specified type.
+- The **-is** and **-isnot** operators, which test whether an object is an instance of a specified .NET type. (The **-as** operator converts an object to a specified type and returns `$null` if the conversion fails — it is a type conversion operator, not a type test.)
 - The **-match** and **-cmatch** operators, which compare a string to a regular expression.
 
 PowerShell also contains many operators that reverse the logic of the comparison, such as **-notlike** and **-notin**.
