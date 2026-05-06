@@ -1,6 +1,6 @@
-JavaScript Object Notation (JSON) is a lightweight data format that's similar to XML, because it can represent multiple layers of data. JSON is a lightweight data-interchange format compared to XML because of its simpler syntax.
+JavaScript Object Notation (JSON) is a lightweight data format. Like XML, it supports multiple layers of data, but its simpler syntax makes it less verbose.
 
-Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, you can retrieve the data by using **Get-Content** with the *-Raw* parameter and then convert the data by using the **ConvertFrom-Json** cmdlet. The *-Raw* parameter reads the entire file as a single string, which is required for **ConvertFrom-Json** to parse multi-line JSON correctly.
+Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, use **Get-Content** with the `-Raw` parameter to read the file as a single string, then pipe it to **ConvertFrom-Json**. The `-Raw` parameter is required for **ConvertFrom-Json** to parse multi-line JSON correctly.
 
 The **ConvertFrom-Json** cmdlet uses the following syntax:
 
@@ -10,7 +10,7 @@ $users = Get-Content -Raw C:\Scripts\Users.json | ConvertFrom-Json
 
 ## Invoke-RestMethod
 
-When you query a web service, the data is commonly provided using the JSON format. You can query data directly from a web service by using **Invoke-RestMethod**. **Invoke-RestMethod** sends a request to the specified URL and obtains data from the response. The retrieved data in JSON format is automatically converted to objects. You don't need to use **ConvertFrom-Json**.
+When you query a web service, the data is commonly provided using the JSON format. You can query data directly from a web service by using **Invoke-RestMethod**. **Invoke-RestMethod** sends a request to the specified URL and retrieves data from the response. JSON data in the response is automatically converted to objects. You don't need to use **ConvertFrom-Json**.
 
 The **Invoke-RestMethod** cmdlet uses the following syntax:
 
@@ -19,7 +19,7 @@ $users = Invoke-RestMethod "https://hr.adatum.com/api/staff"
 ```
 
 > [!NOTE] 
-> The URLs used to retrieve data from a web service aren't standardized. You must review the documentation for the web service to identify the correct URLs to retrieve data.
+> The URLs used to retrieve data from a web service aren't standardized. Review the documentation for the web service to identify the correct URLs.
 
 > [!NOTE] 
 > **Invoke-RestMethod** is also capable of working with XML, RSS feeds, and ATOM feeds.

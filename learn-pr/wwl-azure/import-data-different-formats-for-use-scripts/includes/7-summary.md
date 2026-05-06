@@ -1,14 +1,14 @@
-In this module, you learned to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file. The following are the key takeaways:
+In this module, you learned to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file. Key takeaways:
 
 - Use **Get-Content** to retrieve data from a text file for use in your scripts. The information retrieved from the text file is stored in an array and each line in the text file becomes an item in the array.
 
-- Many applications can export data to a CSV file. This ability makes the **Import-Csv** cmdlet useful because it can import data that was exported from those applications. 
+- Many applications export data to CSV files, making **Import-Csv** a useful cmdlet for importing that data.
 
 - Use the **Import-Clixml** cmdlet to retrieve data from an XML file to create an array of objects. 
 
-- JavaScript Object Notation (JSON) is a lightweight data format that's similar to XML, because it can represent multiple layers of data. JSON is a lightweight data-interchange format compared to XML because of its simpler syntax.
+- JSON is a lightweight data format. Like XML, it supports multiple layers of data, but uses a simpler syntax.
 
-- Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, you can retrieve the data by using **Get-Content** and then convert the data by using the **ConvertFrom-Json** cmdlet.
+- Windows PowerShell doesn't include cmdlets to import or export JSON files directly. Instead, use **Get-Content** to read the file, then pipe the output to **ConvertFrom-Json**.
 
 
 ## Additional reading
@@ -24,7 +24,4 @@ To learn more, go through the following documents:
 - [ConvertFrom-Json](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-json)
 
 - [Invoke-RestMethod](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/invoke-restmethod)
-
-
-
 

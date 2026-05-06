@@ -1,4 +1,4 @@
-When you create a script, reusing data from other sources is useful. Most applications can export the data you want in various formats such as a CSV file or an XML file. You can use Windows PowerShell cmdlets to import data in different formats for use in your scripts. In this module, you'll learn how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file.
+Scripts often need to reuse data from other sources. Most applications export data in formats such as CSV and XML. Windows PowerShell includes cmdlets to import data in these formats for use in your scripts. In this module, you'll learn how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file.
 
 ## Learning objectives 
 
