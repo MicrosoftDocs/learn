@@ -1,4 +1,4 @@
-To create a new Azure virtual machine (VM) with PowerShell commands, you can use the locally installed Windows PowerShell with Az module, or you can use the Cloud Shell environment that's available in Azure portal. If you choose to use your locally installed PowerShell, it's recommended that you use Windows PowerShell 7.1. You should also install the Az module, so you can have Azure-related commands available. Also, when using locally installed PowerShell, you first need to use the **Connect-AzAccount** command to authenticate and connect to your Azure tenant. When you run this command in your PowerShell environment, you'll be prompted to authenticate. You need to use credentials from your Azure tenant, with privileges that allow you to create the resources needed for Azure VMs.
+To create a new Azure virtual machine (VM) with PowerShell commands, you can use the locally installed Windows PowerShell with Az module, or you can use the Cloud Shell environment that's available in Azure portal. If you choose to use your locally installed PowerShell, it's recommended that you use PowerShell 7.2 or later. You should also install the Az module, so you can have Azure-related commands available. Also, when using locally installed PowerShell, you first need to use the **Connect-AzAccount** command to authenticate and connect to your Azure tenant. When you run this command in your PowerShell environment, you'll be prompted to authenticate. You need to use credentials from your Azure tenant, with privileges that allow you to create the resources needed for Azure VMs.
 
 To create an Azure VM, you need to perform the following tasks:
 
@@ -41,7 +41,7 @@ $vmParams = @{
   ResourceGroupName = 'myResourceGroup'
   Name = 'TestVM'
   Location = 'westeurope'
-  ImageName = 'Win2016Datacenter'
+  ImageName = 'Win2022AzureEdition'
   PublicIpAddressName = 'TestPublicIp'
   Credential = $cred
   OpenPorts = 3389
@@ -58,13 +58,13 @@ Alternatively, you can also choose to provide VM parameters directly with **New-
 
 ```powershell
 New-AzVm `
-    -ResourceGroupName "myResourceGroup"
-    -Name "myVM"
-    -Location "EastUS"
-    -VirtualNetworkName "myVnet"
-    -SubnetName "mySubnet"
-    -SecurityGroupName "myNetworkSecurityGroup"
-    -PublicIpAddressName "myPublicIpAddress"
+    -ResourceGroupName "myResourceGroup" `
+    -Name "myVM" `
+    -Location "EastUS" `
+    -VirtualNetworkName "myVnet" `
+    -SubnetName "mySubnet" `
+    -SecurityGroupName "myNetworkSecurityGroup" `
+    -PublicIpAddressName "myPublicIpAddress" `
     -Credential $cred
 ```
 

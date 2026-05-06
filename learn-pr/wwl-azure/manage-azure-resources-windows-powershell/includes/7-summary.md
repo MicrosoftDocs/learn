@@ -15,12 +15,10 @@ In this module, you learned how to create and manage Azure VMs by using PowerShe
 
 To learn more, go through the following documents:
 
-- [Quickstart: Automatically migrate PowerShell scripts from AzureRM to the Az PowerShell module](https://aka.ms/quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module)
-
-- [Install Azure Active Directory PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
-
-- [AzureAD​](https://aka.ms/azure-ad-2)
-​
-- [New-AzVM](https://aka.ms/new-azvm)​
+- [New-AzVM](https://aka.ms/new-azvm)
 
 - [Az.Storage](https://aka.ms/az-storage-2)
+
+- [Install the Microsoft Graph PowerShell SDK](https://learn.microsoft.com/powershell/microsoftgraph/installation)
+
+- [Migrate from Azure AD PowerShell to Microsoft Graph PowerShell](https://learn.microsoft.com/powershell/microsoftgraph/migration-steps)

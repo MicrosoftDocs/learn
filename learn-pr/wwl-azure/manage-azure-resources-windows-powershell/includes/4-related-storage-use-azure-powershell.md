@@ -13,11 +13,14 @@ $ctx = $storageAccount.Context
 
 Blobs are always uploaded into a container. You can organize groups of blobs the way you organize your files on your computer in folders.
 
-Set the container name, and then create the container by using **New-AzStorageContainer**. Set the blob permissions to allow public access of the files. The container name in the following example is **quickstartblobs**.
+Set the container name, and then create the container by using **New-AzStorageContainer**. The container name in the following example is **quickstartblobs**.
+
+> [!NOTE]
+> New Azure storage accounts block public blob access by default (`AllowBlobPublicAccess = false`). The `-Permission` parameter on `New-AzStorageContainer` sets the container-level access tier, but has no effect when public access is disabled at the account level. For most scenarios, keep containers private (`-Permission Off`). If your scenario requires public anonymous access, you must first enable it on the storage account using `Set-AzStorageAccount -AllowBlobPublicAccess $true`, which Microsoft does not recommend unless explicitly required.
 
 ```powershell
 $containerName = "quickstartblobs"
-New-AzStorageContainer -Name $containerName -Context $ctx -Permission blob
+New-AzStorageContainer -Name $containerName -Context $ctx -Permission Off
 ```
 
 You can use the **Set-AzStorageAccount** cmdlet to modify an Azure Storage account. You can use this cmdlet to modify the account type, update a customer domain, or set tags on a Storage account.
