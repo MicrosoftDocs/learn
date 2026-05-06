@@ -15,7 +15,7 @@ abstract: |
   By the end of this module, you’ll be able to:
   - Describe how Windows Server is positioned within modern on-premises and hybrid environments
   - Explain why environments that are stable and functional might still face emerging challenges
-  - Recognize how Windows Server modernization conversations typically begin
+  - Recognize how Windows Server modernization conversations typically begin 
   - Identify and assess signals—such as operational, security, and business indicators—that suggest when it might be useful to evaluate modernization options
 prerequisites: |
   - None
