@@ -1,5 +1,5 @@
-In this module, you learned how Microsoft Copilot+ PCs deliver multilayered, hardware-based security tailored for the AI-powered workday.
+In this module, you explored how Copilot+ PCs provide layered security designed for the AI-powered workplace.
 
-We explored how these devices protect sensitive data and user identities through innovations like Microsoft Pluton, enhanced sign-in experiences, and Recall (preview). You also learned how Microsoft 365 Copilot upholds strict enterprise-grade protections and how IT can manage AI tools securely with Microsoft Intune.
+You learned how hardware-based protections, Windows 11 Pro security features, and on-device AI capabilities work together to protect data and identities.
 
-Together, these features demonstrate how Copilot+ PCs provide organizations with a trusted platform for responsible, secure AI adoption.
+You also saw how organizations can manage and govern AI experiences across both device and cloud environments using Microsoft 365 and Microsoft Intune, helping maintain privacy, compliance, and control as AI is adopted.

@@ -21,7 +21,7 @@ The **Enable-PSRemoting** cmdlet performs the following operations:
 This command will fail on client computers where one or more network connections are set to Public instead of Work or Home. You can override this failure by adding the *–SkipNetworkProfileCheck* parameter. However, be aware that Windows Firewall won't allow exceptions when you're connected to a Public network.
 
 > [!NOTE]
-> The **Set-WSManQuickConfig** cmdlet doesn't affect remote endpoint configurations created by Windows PowerShell. It only affects endpoints created with PowerShell version 6 and newer. To enable and disable PowerShell remoting endpoints that are hosted by Windows PowerShell, run the **Enable-PSRemoting** cmdlet from within a Windows PowerShell session.
+> The **Enable-PSRemoting** cmdlet, when run in PowerShell 6 or newer, doesn't affect remote endpoint configurations created by Windows PowerShell. It only affects endpoints created with PowerShell version 6 and newer. To enable and disable PowerShell remoting endpoints that are hosted by Windows PowerShell, run the **Enable-PSRemoting** cmdlet from within a Windows PowerShell session.
 
 ## Enabling remoting by using a GPO
 

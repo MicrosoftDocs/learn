@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-ai-gateway-security-foundry.create-configure-ai-gateway
+metadata:
+  title: Create and configure AI Gateway
+  description: Create an AI Gateway instance in Microsoft Foundry, configure route policies, set token rate limits, and apply security controls to govern AI model traffic.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Create and configure AI Gateway
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-configure-ai-gateway.md)]

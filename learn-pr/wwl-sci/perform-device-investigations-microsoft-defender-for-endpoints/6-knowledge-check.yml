@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/26/2024
+  ms.date: 05/06/2026
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
@@ -39,7 +39,7 @@ quiz:
     - content: "Feedback-loop blocking"
       isCorrect: false
       explanation: "Incorrect. This is used with Defender AV."
-  - content: "A Windows 10 Device doesn't appear in the device list, what could be the problem?"
+  - content: "A Windows device doesn't appear in the device list, what could be the problem?"
     choices:
     - content: "The Device was renamed."
       isCorrect: false

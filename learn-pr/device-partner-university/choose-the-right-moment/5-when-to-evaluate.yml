@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-the-right-moment.when-to-evaluate
+title: When to evaluate Windows Server modernization
+metadata:
+  title: When To Evaluate Windows Server Modernization
+  description: This content is part of the "Choose the right moment to modernize Windows Server" module.
+  ms.date: 05/05/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-when-to-evaluate.md)]

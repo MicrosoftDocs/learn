@@ -1,37 +1,64 @@
-Copilot+ PCs are designed around four core themes:
+Copilot+ PCs include AI-powered experiences that run locally on the device, using the NPU to process data without sending it to the cloud.
 
-- **Performance**: Exceptional speed powered by next-gen NPUs
-- **Productivity**: Seamless integration with Microsoft 365 and Recall (preview)
-- **Security**: Protection from chip to cloud
-- **Readiness**: Built for the AI-powered workday
+Because these experiences operate on-device, they benefit from the same hardware security protections—**Microsoft Pluton**, **Secured-core PC**, and **BitLocker encryption**—that help protect the operating system.
 
-Let’s explore how Copilot+ PCs support these themes—particularly security.
+These protections extend to AI-powered features, helping ensure that data remains secure while being processed and accessed.
 
-## Powerful performance for transformative impact
+Two examples of these on-device AI experiences are **Recall (preview)** and **Click to Do**, which are designed with privacy, security, and user control in mind.
 
-**Accelerate success** with a turbocharged NPU, for an unmatched experience with lightning speed, smooth performance, and richer AI. Copilot+ PCs are powered by advanced NPUs capable of delivering up to 40 trillion operations per second (TOPS)—**fueling smoother performance, lightning-fast responsiveness, and more immersive AI experiences**.
+## Recall (preview)
 
-That’s up to **5x faster than 5-year-old Windows PCs still in use today**, enabling a noticeable leap forward in productivity and efficiency for modern workloads.  
-*Based on Cinebench 24 Multi-Core benchmark. [See Copilot+ PCs FAQs](https://aka.ms/cpclaims)*
+Recall helps users locate previously viewed content by capturing snapshots of on-screen activity over time.
 
-## Unlock efficiency and innovation
+Because this feature may include sensitive data, it includes multiple security and privacy controls:
 
-With unique AI experiences, **you can uncover new opportunities, solve problems faster, and create compelling content**.
+**Opt-in by design**
 
-Copilot+ PCs are designed to **help you get more done with less work**. For instance, you can find something you’ve seen on your Copilot+ PC faster than ever using Recall (preview). Copilot+ PCs also have the fastest implementation of Microsoft 365 apps.
+Recall is not enabled by default. Users must explicitly opt in, and the feature requires Windows Hello Enhanced Sign-in Security to be configured before it can be activated. Users can pause, disable, or delete their Recall data at any time.
 
-## Safeguard mission-critical data by default
+**Encrypted and on-device**
 
-Copilot+ PCs are built on a foundation of trust—designed to **protect sensitive information the moment they’re powered on**.
+All Recall snapshots are stored locally on the device and encrypted at rest. Snapshot data is protected by device-level encryption, including BitLocker or Device Encryption. Recall data never leaves the device, isn't shared with Microsoft, and isn't used to train AI models.
 
-Every device is a Secured-core PC, equipped with a Microsoft Pluton security processor that adds a robust layer of defense against physical and firmware-based attacks. Combined with the built-in security features of Windows 11 Pro, Copilot+ PCs help keep **your organization's most mission-critical data safe—by default, and by design**.
+**Authenticated access**
 
-## Turbocharge your business impact
+Each time Recall is accessed, Windows Hello reauthenticates the user. Enhanced Sign-in Security provides hardware-backed biometric protection that helps resist spoofing and replay attacks.
 
-Copilot+ PCs bring next-generation performance and AI experiences together—**empowering your team to move faster, work smarter, and unlock new levels of innovation**.
+**Sensitive content filtering**
 
-With industry-leading power-to-performance efficiency and incredible all-day battery life, **organizations equipped with Copilot+ PCs will be at the forefront of AI-powered transformation**.¹ And because they’re built on Windows 11 Pro, these devices are easy to deploy, secure, and manage—**so teams can stay focused on what matters most, without disruption**.
+Recall includes built-in filtering to help prevent capturing sensitive information such as passwords and financial data. InPrivate browsing sessions and DRM-protected content are excluded from snapshots.
 
-### Disclaimer
+**IT administrator controls**
 
-1. Battery life varies significantly by device and with settings, usage, and other factors. See [aka.ms/cpclaims](/windows/deployment/performance-lab)
+IT administrators can manage Recall using Microsoft Intune. This includes disabling Recall, configuring storage and retention settings, and excluding apps or websites from capture.
+
+> [!TIP]
+> For detailed IT admin configuration guidance, see [Manage Recall](/windows/client-management/manage-recall).
+> For more user-facing privacy controls, see [Control Recall](https://support.microsoft.com/windows/privacy-and-control-over-your-recall-experience-d404f672-7647-41e5-886c-a3c59680af15).
+
+## Click to Do
+
+Click to Do enables users to take actions on text and images displayed on screen using on-device AI processing.
+
+Like Recall, Click to Do processes data locally and benefits from the same encryption and hardware-backed protections that secure Copilot+ PCs.
+
+Because Click to Do works directly with on-screen content, it keeps data processing on the device and aligned with existing security controls.
+
+**On-device processing**
+
+Actions are performed locally using the NPU, helping reduce the need to send sensitive data to the cloud.
+
+**Platform-level protection**
+
+Click to Do benefits from built-in protections such as Microsoft Pluton, Secured-core PC, and BitLocker encryption.
+
+**Managed using existing tools**
+
+Click to Do can be governed using the same tools used to manage devices and applications, including Microsoft Intune.
+
+> [!TIP]
+> For IT administrator configuration and policy guidance, see [Manage Click to Do](/windows/client-management/manage-click-to-do). This includes how to enable or disable Click to Do and manage its behavior using Microsoft Intune.
+
+These examples show how Copilot+ PCs extend hardware-backed security to AI-powered experiences, keeping data protected while enabling new ways to interact with information directly on the device.
+
+In addition to securing on-device AI experiences, organizations also need to manage how AI operates and how data is protected across cloud-based services.

@@ -1,0 +1,110 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.choose-the-right-moment.knowledge-check
+
+title: Knowledge check 
+
+metadata: 
+  title: Knowledge Check 
+  description: Check your knowledge of when to evaluate Windows Server modernization. 
+  ms.date: 05/05/2026 
+  author: Stephanie-Rosenzweig 
+  ms.author: v-stephanier 
+  ms.topic: unit 
+
+durationInMinutes: 5 
+
+quiz: 
+  title: Check your knowledge 
+
+  questions: 
+
+  - content: "Why do organizations that have stable Windows Server environments still revisit modernization discussions?" 
+    choices: 
+    - content: "Because Windows Server environments automatically become unsupported over time" 
+      isCorrect: false 
+      explanation: "Incorrect. Stability alone doesn't determine whether an environment will continue to meet modern needs." 
+
+    - content: "Because existing environments might no longer align with evolving security and operational expectations" 
+      isCorrect: true 
+      explanation: "Correct. Even stable environments might need to be re-evaluated as security, operational, and integration expectations change." 
+
+    - content: "Because hybrid and cloud models require immediate migration" 
+      isCorrect: false 
+      explanation: "Incorrect. Modernization doesn't require immediate migration to hybrid or cloud models." 
+
+    - content: "Because modernization is required to maintain compliance" 
+      isCorrect: false 
+      explanation: "Incorrect. Modernization decisions are context-dependent and not driven by compliance alone." 
+
+  - content: "Which factor most often signals that it might be appropriate to evaluate Windows Server modernization options?" 
+    choices: 
+    - content: "The release of a new Windows Server version" 
+      isCorrect: false 
+      explanation: "Incorrect. New releases alone don't require organizations to re-evaluate their environments." 
+
+    - content: "Increasing operational complexity or limited visibility across environments" 
+      isCorrect: true 
+      explanation: "Correct. Growing complexity or reduced visibility can signal that an environment might no longer align with current expectations." 
+
+    - content: "A desire to replace on-premises infrastructure entirely" 
+      isCorrect: false 
+      explanation: "Incorrect. Evaluation doesn't assume a full replacement of existing infrastructure." 
+
+    - content: "The need to standardize licensing across all servers" 
+      isCorrect: false 
+      explanation: "Incorrect. Licensing considerations alone aren't the primary indicator for modernization evaluation." 
+
+  - content: "How do effective Windows Server modernization conversations typically begin?" 
+    choices: 
+    - content: "By identifying which new features should be enabled" 
+      isCorrect: false 
+      explanation: "Incorrect. Modernization discussions don't typically start with enabling features." 
+
+    - content: "By evaluating licensing and edition options" 
+      isCorrect: false 
+      explanation: "Incorrect. Licensing and editions usually come later, if needed." 
+
+    - content: "By acknowledging existing stability and past investments" 
+      isCorrect: true 
+      explanation: "Correct. Effective conversations begin by recognizing the value of existing environments." 
+
+    - content: "By recommending specific hybrid or cloud services" 
+      isCorrect: false 
+      explanation: "Incorrect. Recommendations follow evaluation, not precede it." 
+
+  - content: "Which statement best reflects the recommended approach to Windows Server modernization?" 
+    choices: 
+    - content: "Modernization should be driven primarily by product lifecycle timelines" 
+      isCorrect: false 
+      explanation: "Incorrect. Product lifecycles alone shouldn't drive modernization decisions." 
+
+    - content: "All environments should move to hybrid or cloud models" 
+      isCorrect: false 
+      explanation: "Incorrect. Not every environment requires hybrid or cloud adoption." 
+
+    - content: "Modernization decisions depend on organizational context and evolving expectations" 
+      isCorrect: true 
+      explanation: "Correct. The need for modernization varies based on organizational needs and expectations." 
+
+    - content: "Immediate action is required to reduce future risk" 
+      isCorrect: false 
+      explanation: "Incorrect. Modernization is best approached through thoughtful evaluation rather than immediate action." 
+
+  - content: "Which situation signals a need to evaluate Windows Server modernization?" 
+    choices: 
+    - content: "A new version of Windows Server has been released" 
+      isCorrect: false 
+      explanation: "Incorrect. New releases alone don’t indicate a need for evaluation." 
+
+    - content: "Systems are stable and haven't experienced outages" 
+      isCorrect: false 
+      explanation: "Incorrect. Stability alone doesn’t indicate whether the environment still meets current needs." 
+
+    - content: "Increasing operational complexity and limited visibility across environments" 
+      isCorrect: true 
+      explanation: "Correct. Growing complexity and reduced visibility are strong signals that the current approach might no longer align with evolving needs." 
+
+    - content: "A desire to standardize configurations across servers" 
+      isCorrect: false 
+      explanation: "Incorrect. Standardization can be useful, but it isn’t by itself a clear signal for evaluation." 

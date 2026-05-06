@@ -14,7 +14,7 @@ You can select affected devices whenever you see them in the portal to open a de
 
 - Any IP address or domain details view
 
-When you investigate a specific device, you'll see:
+When you investigate a specific device, you see:
 
 - Device details
 
@@ -26,7 +26,7 @@ When you investigate a specific device, you'll see:
 
 ## Device details
 
-The device details section provides information such as the device's domain, OS, and health state. If there's an investigation package available on the device, you'll see a link that allows you to download the package.
+The device details section provides information such as the device's domain, OS, and health state. If there's an investigation package available on the device, you see a link that allows you to download the package.
 
 ## Response actions
 
@@ -46,7 +46,7 @@ Response actions run along the top of a specific device page and include:
 
 - Initiate automated investigation
 
-- Consult a threat expert
+- Ask Defender Experts
 
 - Action center
 
@@ -106,11 +106,11 @@ More details about certain events are provided and vary depending on the type of
 
 - Remediation successful - the detected threat was stopped and cleaned
 
-- Warning bypassed by user - the Windows Defender SmartScreen warning was dismissed and overridden by a user
+- Warning bypassed by user - the Microsoft Defender SmartScreen warning was dismissed and overridden by a user
 
 - Suspicious script detected - a potentially malicious script was found running
 
-- The alert category - if the event led to the generation of an alert, the alert category ("Lateral Movement", for example) is provided
+- The alert category - if the event led to the generation of an alert, the alert category ("Lateral Movement," for example) is provided
 
 **Flag an event**
 
@@ -122,29 +122,29 @@ While navigating the device timeline, you can search and filter for specific eve
 
 - Building a clean breach timeline
 
-Find the event that you want to flag.  Select the flag icon in the Flag column.
+Find the event that you want to flag. Select the flag icon in the Flag column.
 
 **View flagged events**
 
-In the timeline Filters section, enable Only Flagged events.  Select Apply. Only flagged events are displayed. You can apply more filters by clicking the time bar. This will only show events prior to the flagged event.
+In the timeline Filters section, enable Only Flagged events. Select Apply. Only flagged events are displayed. You can apply more filters by clicking the time bar. This will only show events prior to the flagged event.
 
 ### Event details
 
 Select an event to view relevant details about that event. A panel displays to show general event information. When applicable and data is available, a graph showing related entities and their relationships are also shown.
 
-To further inspect the event and related events, you can quickly run an advanced hunting query by selecting Hunt for related events. The query will return the selected event and the list of other events that occurred around the same time on the same endpoint.
+To further inspect the event and related events, you can quickly run an advanced hunting query by selecting Hunt for related events. The query returns the selected event and the list of other events that occurred around the same time on the same endpoint.
 
 ### Security recommendations
 
-Security recommendations are generated from Microsoft Defender for Endpoint's Threat & Vulnerability Management capability. Selecting a recommendation will show a panel where you can view relevant details such as the description of the recommendation and the potential risks associated with not enacting it.
+Security recommendations are generated from Microsoft Defender for Endpoint's Microsoft Defender Vulnerability Management capability. Selecting a recommendation shows a panel where you can view relevant details such as the description of the recommendation and the potential risks associated with not enacting it.
 
 ### Software inventory
 
-The Software inventory tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software will take you to the software details page, where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution.
+The Software inventory tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software takes you to the software details page, where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution.
 
 ### Discovered vulnerabilities
 
-The Discovered vulnerabilities tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities will show a description and details.
+The Discovered vulnerabilities tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. Selecting specific vulnerabilities show a description and details.
 
 ### Missing knowledge bases
 
