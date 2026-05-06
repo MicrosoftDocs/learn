@@ -1,7 +1,6 @@
 Visual Studio Code (VS Code) is a Microsoft script editor that provides a rich and interactive script editing experience. This experience is similar to the PowerShell Integrated Scripting Environment (ISE) when you use it with the PowerShell extension. VS Code supports the following PowerShell versions:
 
-- PowerShell 7 and newer for Windows, macOS, and Linux
-- PowerShell Core 6 for Windows, macOS, and Linux
+- PowerShell 7.2 and higher for Windows, macOS, and Linux
 - Windows PowerShell 5.1 for Windows operating systems only
 
 > [!NOTE]
