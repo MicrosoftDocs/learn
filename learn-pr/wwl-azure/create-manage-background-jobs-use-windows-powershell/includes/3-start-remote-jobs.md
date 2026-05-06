@@ -34,7 +34,7 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location
 Start Windows PowerShell remote jobs by running **Invoke-Command**. This is the same command that sends commands to a remote computer. Add the *–AsJob* parameter to make the command run in the background. Use the *–JobName* parameter to specify a custom job name. All other parameters of **Invoke-Command** are used in the same way. Here's an example:
 
 ```powershell
-PS C:\> Invoke-Command -ScriptBlock { Get-EventLog -LogName System -Newest 10 }
+PS C:\> Invoke-Command -ScriptBlock { Get-WinEvent -LogName System -MaxEvents 10 }
 -ComputerName LON-DC1,LON-CL1,LON-SVR1 -AsJob -JobName RemoteLogs
 
 Id     Name            PSJobTypeName   State         HasMoreData     Location
@@ -44,7 +44,7 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location
 ```
 
 > [!NOTE]
-> The *–ComputerName* parameter is a parameter of **Invoke-Command**, not of **Get-EventLog**. The parameter causes the local computer to coordinate the Windows PowerShell remote connections to the three computers specified. Each computer receives only the **Get-EventLog** command and runs it locally, returning results.
+> The *–ComputerName* parameter is a parameter of **Invoke-Command**, not of **Get-WinEvent**. The parameter causes the local computer to coordinate the Windows PowerShell remote connections to the three computers specified. Each computer receives only the **Get-WinEvent** command and runs it locally, returning results. **Get-WinEvent** is the modern replacement for the deprecated **Get-EventLog** cmdlet and uses `-MaxEvents` instead of `-Newest`.
 
 The computer on which you run **Invoke-Command** creates and manages remote jobs. You can refer to that computer as the *initiating computer*. The commands inside the job are transmitted to remote computers, which then run them and return results to the initiating computer. The initiating computer stores the job’s results in its memory.
 
@@ -64,22 +64,8 @@ Id     Name  PSJobTypeName  State   HasMoreData  Location   Command
 You also can run other commands that use CIM as jobs by using **Start-Job**. An example is **Invoke-CimMethod**.
 The fact that CIM commands don't have an *–AsJob* parameter isn't important. You just need to remember to use the job commands when you want to run CIM commands as jobs.
 
-Start a WMI job by running **Get-WmiObject**. This is the same command you'd use to query WMI instances. Add the *–AsJob* parameter to run the command on a background thread. There's no option to provide a custom job name. The **Get-Help** information for **Get-WmiObject** states the following for the *–AsJob* parameter:
-
-To use this parameter with remote computers, the local and remote computers must be configured for Windows PowerShell remoting. Additionally, you must start Windows PowerShell by using the **Run as administrator** option in Windows 7 and newer versions of Windows.
-
-WMI jobs don't require that you enable Windows PowerShell remoting on either the initiating computer or the remote computer. However, they do require that WMI be accessible on the remote computers.
-
-Here's an example:
-
-```powershell
-PS C:\> Get-WmiObject -Class Win32_NTEventLogFile -ComputerName localhost,LON-DC1 -AsJob
-
-Id     Name            PSJobTypeName   State         HasMoreData     Location
---     ----            -------------   -----         -----------     --------
-10     Job10           WmiJob          Running       True            localho...
-
-```
+> [!NOTE]
+> The older `Get-WmiObject -AsJob` pattern is supported in Windows PowerShell 5.1 but `Get-WmiObject` has been superseded by `Get-CimInstance` since PowerShell 3.0. For new scripts, use `Start-Job` with `Get-CimInstance` as shown in the CIM example above.
 
 ## Job objects
 

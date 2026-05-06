@@ -11,7 +11,8 @@ There are three basic types of background jobs:
 
 Each job type has specific characteristics. For example, local and Windows PowerShell remote jobs run in a background Windows PowerShell run space. Think of them as running in a hidden instance of Windows PowerShell. Other types of jobs might have different characteristics. Also, add-in modules add more job types to Windows PowerShell, and those job types have their own characteristics. Remote jobs are useful for managing multiple remote computers simultaneously. Remote computers run Windows PowerShell remote commands by using their own local resources. Therefore, you can include any command in the job.
 
-Remember that these job types aren't the only ones that Windows PowerShell supports. Use modules and other add-ins to create other job types. Workflow jobs help you automate long-running tasks, or *workflows*, by simultaneously targeting multiple managed computers or devices. Windows PowerShell workflows offer extra resiliency benefits. When you restart target devices, unfinished workflow automatically restarts on the target device or devices and continues with the job's workflow commands.
+Remember that these job types aren't the only ones that Windows PowerShell supports. Use modules and other add-ins to create other job types. Workflow jobs, available in Windows PowerShell 5.1, help automate long-running tasks by simultaneously targeting multiple managed computers or devices.
 
-It's important to note that interactive Windows PowerShell console workflow jobs aren't available in a noninteractive Windows PowerShell console. Scheduling a task to run at machine startup won't find suspended jobs from a noninteractive console. Scheduled tasks can't find workflow jobs to resume unless you're signed in to an interactive session.
+> [!IMPORTANT]
+> PowerShell Workflow jobs are a **Windows PowerShell 5.1-only** feature. The `PSWorkflow` module was removed from PowerShell 6 and later because the underlying Windows Workflow Foundation is deprecated. For modern parallelized automation, use `ForEach-Object -Parallel` (PowerShell 7+) or scheduled scripts with state persistence.
 
