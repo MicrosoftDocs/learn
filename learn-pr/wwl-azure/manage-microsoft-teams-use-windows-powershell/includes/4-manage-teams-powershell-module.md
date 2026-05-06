@@ -55,10 +55,10 @@ A team can have multiple channels that contain content. The following table depi
 | Cmdlet                   | Description                                             |
 | ------------------------ | ------------------------------------------------------- |
 | **New-TeamChannel**        | Creates a new channel in a team.                        |
-| **Get-TeamChannel**        | Lists the channels in a set.                            |
+| **Get-TeamChannel**        | Lists the channels in a team.                           |
 | **Set-TeamChannel**        | Modifies the display name or description for a channel. |
 | **Add-TeamChannelUser**    | Adds a user as a member or owner of a channel.          |
 | **Remove-TeamChannelUser** | Removes a user from a channel.                          |
 
 > [!NOTE]
-> At the time of writing this learning path, the **Add-TeamChannelUser** and **Remove-TeamChannelUser** cmdlets are available only in the preview release of the Microsoft Teams module.
+> The **Add-TeamChannelUser** and **Remove-TeamChannelUser** cmdlets are currently part of the Public Preview version of the Microsoft Teams module. Install the preview version to use these cmdlets.
