@@ -1,4 +1,7 @@
-Tab completion is a PowerShell feature that improves the speed and ease of finding and entering cmdlets and parameters. To use it, enter a few characters of a cmdlet or a parameter in the ISE or console, and then press the Tab key. PowerShell will automatically provide the missing part of the name for you based on the match on the characters you entered. If there are multiple matches, just press the Tab key multiple times until you are presented with the one you intended to use. This works for cmdlets and parameters, variable names, object properties, and file paths.
+Tab completion is a PowerShell feature that improves the speed and ease of finding and entering cmdlets and parameters. To use it, enter a few characters of a cmdlet or a parameter in the console, Windows PowerShell ISE, or Visual Studio Code with the PowerShell extension, and then press the Tab key. PowerShell will automatically provide the missing part of the name for you based on the match on the characters you entered. If there are multiple matches, just press the Tab key multiple times until you are presented with the one you intended to use. This works for cmdlets and parameters, variable names, object properties, and file paths.
+
+> [!NOTE]
+> The Windows PowerShell ISE is no longer in active feature development and is not supported in PowerShell 7. Microsoft recommends **Visual Studio Code with the PowerShell extension** as the modern scripting environment for both Windows PowerShell and PowerShell 7. Tab completion works the same way in all three environments.
 
 ## Improving speed and accuracy
 

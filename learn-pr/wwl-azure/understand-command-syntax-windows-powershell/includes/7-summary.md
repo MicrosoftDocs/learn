@@ -7,7 +7,11 @@ In this module, you've learned about the cmdlet structure and the parameters for
 
 ## Additional reading
 
-To learn more, go through the following document:
+To learn more, go through the following documents:
 
- -  [About\_Profiles](https://aka.ms/about-profiles)
+ - [About Command Syntax](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_command_syntax)
+
+ - [About Parameters](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters)
+
+ - [About Tab Expansion](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_tab_expansion)
 

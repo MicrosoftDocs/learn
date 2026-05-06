@@ -26,4 +26,4 @@ The noun portion of a cmdlet name indicates what kinds of resources or objects t
 Nouns can also have prefixes that help the grouping of related nouns into families. For example, the Active Directory nouns start with the letters **AD** (such as **ADUser**, **ADGroup**, and **ADComputer**). Microsoft SharePoint Server cmdlets begin with the prefix **SP**, and Microsoft Azure cmdlets begin with the prefix **Az**.
 
 > [!NOTE]
-> Windows PowerShell uses the generic term *command* to refer to cmdlets, functions, workflows, applications, and other items. These items differ in terms of creation method. However, for now, you should consider them as all working in the same way. This module uses the terms *command* and *cmdlet* interchangeably.
+> Windows PowerShell uses the generic term *command* to refer to cmdlets, functions, workflows (Windows PowerShell 5.1 only), applications, and other items. These items differ in terms of creation method. However, for now, you should consider them as all working in the same way. This module uses the terms *command* and *cmdlet* interchangeably.
