@@ -6,7 +6,7 @@ To review, the intent behind the following command is to display a list of the 1
 $Log = 'Security'
 $Quantity = 10
 Invoke-Command –Computer ONE,TWO –ScriptBlock {
-  Get-EventLog –LogName $Log –Newest $Quantity
+  Get-WinEvent –LogName $Log –MaxEvents $Quantity
 }
 ```
 
@@ -18,9 +18,12 @@ The correct syntax for this command is as follows:
 $Log = 'Security'
 $Quantity = 10
 Invoke-Command –Computer ONE,TWO –ScriptBlock {
-  Param($x,$y) Get-EventLog –LogName $x –Newest $y
+  Param($x,$y) Get-WinEvent –LogName $x –MaxEvents $y
 } –ArgumentList $Log,$Quantity
 ```
+
+> [!NOTE]
+> These examples use **Get-WinEvent**, the modern replacement for the deprecated **Get-EventLog** cmdlet. **Get-WinEvent** uses `-MaxEvents` instead of `-Newest` to limit results.
 
 By using this syntax, the local variables are passed to the *ArgumentList* parameter of **Invoke-Command**. Within the script block, a **Param()** block is created, which contains the same number of variables as the *–ArgumentList* list of values, which, in this case, is two. Note that you can assign any names to the variables within the **Param()** block. They will receive data from the *ArgumentList* parameter based on order. In other words, because `$Log` was listed first on *ArgumentList*, its value will be passed to `$x` because that's the first entry in the **Param()** block. The variables in the **Param()** block can then be used inside the script block, as depicted in the example.
 
