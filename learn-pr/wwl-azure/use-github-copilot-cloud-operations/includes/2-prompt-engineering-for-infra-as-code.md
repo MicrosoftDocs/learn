@@ -8,7 +8,7 @@ The skill of writing good prompts is learnable. This unit covers the techniques 
 
 Every strong infrastructure prompt contains some combination of four elements:
 
-### 1. Context
+### Context
 
 Context tells Copilot what kind of work you're doing and what constraints apply. Without context, Copilot makes assumptions. Those assumptions may not match your environment.
 
@@ -17,7 +17,7 @@ Context tells Copilot what kind of work you're doing and what constraints apply.
 
 Context includes: the target environment (dev/staging/production), the region, the tool or language, existing constraints (naming conventions, tagging policies), and any standards you want followed.
 
-### 2. Requirements
+### Requirements
 
 Requirements are the specific capabilities, properties, or behaviors the resource must have. Being explicit about requirements prevents Copilot from omitting things it can't infer.
 
@@ -26,7 +26,7 @@ For example:
 
 List requirements as bullet points or numbered items when you have several. Copilot handles structured lists well and is less likely to skip items.
 
-### 3. Output format
+### Output format
 
 Tell Copilot what kind of output you expect. For IaC, it usually means to specify the language or tool, whether you want a complete file or just a snippet, and how parameters should be handled.
 
@@ -35,14 +35,14 @@ For example:
 
 If you don't specify a format, Copilot chooses one. It may choose inline hardcoded values when you wanted parameters, or a snippet when you wanted a full file.
 
-### 4. Constraints
+### Constraints
 
 Constraints tell Copilot what to avoid. Easy to overlook, yet important, especially for security or compliance.
 
 For example:
 `Do not use any deprecated API versions. Do not expose any management ports (22, 3389) in NSG rules. Do not hardcode any subscription IDs or tenant IDs.`
 
-## Zero-Shot prompting
+## Zero-shot prompting
 
 Zero-shot prompting means you describe what you want without providing any examples. It's the most common approach and works well for standard infrastructure patterns, based on Copilot's trained data.
 
@@ -62,7 +62,7 @@ Use descriptive parameter names and add @description() decorators to each.
 
 Zero-shot works best when the resource type is common and your requirements are specific. If you're working with a less common resource type, or if you need a particular structure, consider providing an example.
 
-## Few-Shot prompting
+## Few-shot prompting
 
 Few-shot prompting means you provide one or more examples in your prompt so Copilot understands the pattern or style you want. Useful when you have an existing codebase with conventions that Copilot wouldn't know about otherwise.
 
@@ -83,7 +83,7 @@ a similar resource block for an Azure Service Bus namespace with these requireme
 
 By showing Copilot your existing pattern, you get output that blends into your codebase rather than output that follows Copilot's default style. Saving significant cleanup time when integrating generated code with existing templates.
 
-## Role-Based prompting
+## Role-based prompting
 
 Role-based prompting asks Copilot to adopt a specific perspective before generating output. It's effective for security reviews and architectural guidance.
 
