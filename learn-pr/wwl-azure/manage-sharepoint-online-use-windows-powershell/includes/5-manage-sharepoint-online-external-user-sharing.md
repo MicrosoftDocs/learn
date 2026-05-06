@@ -21,7 +21,7 @@ To configure these permissions for a site, you use the **Set-SPOSite** cmdlet wi
 The following example disables external sharing for a site:
 
 ```powershell
-Set-SPOSite -https://adatum.sharepoint.com/sites/Marketing -SharingCapability Disabled
+Set-SPOSite -Identity https://adatum.sharepoint.com/sites/Marketing -SharingCapability Disabled
 ```
 
 When you allow sharing with external users, you can restrict sharing based on the user domain by using the *-SharingDomainRestrictionMode* parameter. The following table describes the valid values.
