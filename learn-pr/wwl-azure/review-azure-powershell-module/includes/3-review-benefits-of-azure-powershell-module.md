@@ -36,4 +36,4 @@ The Az PowerShell module is based on the .NET Standard library and works with Po
 Az is the most current PowerShell module for Azure. You can log issues or feature requests directly on the GitHub repository. You can also contact Microsoft support if you have a support contract. Feature requests will be implemented in the latest version of Az. Critical issues will be implemented on the last two versions of Az.
 
 > [!NOTE]
-> Because Az PowerShell modules now have all the capabilities of AzureRM PowerShell modules and more, Microsoft plans to retire AzureRM PowerShell modules on February 29, 2024.
+> AzureRM PowerShell modules were officially deprecated on February 29, 2024. Although AzureRM may still function, it's no longer maintained or supported. Migrate to the Az PowerShell module to ensure continued support.

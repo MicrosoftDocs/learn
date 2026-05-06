@@ -1,6 +1,6 @@
 In this module, you learned about the Azure PowerShell environment and the Az module for Windows PowerShell. Also, you learned about ways to manage Microsoft Entra ID by using PowerShell modules. The following are the key takeaways:
 
-- Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to let you connect to your Azure subscription and manage resources. It provides a set of cmdlets that you can use to manage and administer Azure resources directly from the PowerShell command line.
+- Azure PowerShell is a module that you add to Windows PowerShell or PowerShell 7 to let you connect to your Azure subscription and manage resources. It provides a set of cmdlets that you can use to manage and administer Azure resources directly from the PowerShell command line.
 
 - The Az PowerShell module is a set of cmdlets for managing Azure resources directly from PowerShell. 
 
@@ -14,10 +14,4 @@ To learn more, go through the following documents:
 
 - [Quickstart: Automatically migrate PowerShell scripts from AzureRM to the Az PowerShell module](https://aka.ms/quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module)
 
-- [Install Azure Active Directory PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
-
-- [AzureAD​](https://aka.ms/azure-ad-2)
-​
-- [New-AzVM](https://aka.ms/new-azvm)​
-
-- [Az.Storage](https://aka.ms/az-storage-2)
+- [Microsoft Graph PowerShell overview](https://learn.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-1.0)

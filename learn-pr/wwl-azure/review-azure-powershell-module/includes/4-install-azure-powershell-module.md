@@ -28,10 +28,10 @@ You can install the Azure Az PowerShell module by using one of the following met
 Using the **Install-Module** cmdlet is the preferred installation method for the Azure Az PowerShell module. You should install this module for the current user only. This is the recommended installation scope. This method works the same on Windows, macOS, and Linux platforms. To install the Az module, run the following command from a local PowerShell session:
 
 ```powershell
-Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-Although PowerShell 7.x is the recommended version of PowerShell, and **Install-Module** is the recommended installation option, you can also install the Az module within PowerShell 5.1 environment on Windows. If you're on Windows 10 version 1607 or higher, you already have PowerShell 5.1 installed. You should also make sure that you have .NET Framework 4.7.2 or newer installed and the latest version of PowerShellGet. To install the latest version of the PowerShellGet module within PowerShell 5.1, run the following command:
+Although PowerShell 7.x is the recommended version of PowerShell, and **Install-Module** is the recommended installation option, you can also install the Az module within PowerShell 5.1 environment on Windows. If you're on Windows 10 version 1607, Windows 11, or higher, you already have PowerShell 5.1 installed. You should also make sure that you have .NET Framework 4.7.2 or newer installed and the latest version of PowerShellGet. To install the latest version of the PowerShellGet module within PowerShell 5.1, run the following command:
 
 ```powershell
 Install-Module -Name PowerShellGet -Force

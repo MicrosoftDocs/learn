@@ -8,7 +8,7 @@ After completing this module, you'll be able to:
 - Describe the Azure Az PowerShell module.
 - Install the Azure Az PowerShell module.
 - Migrate Azure PowerShell from AzureRM to Az.
-- Describe the Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
+- Describe the Microsoft Graph PowerShell module and how to use it for Microsoft Entra ID administration.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ Familiarity with:
 - Windows networking technologies and implementation
 - Windows Server administration, maintenance, and troubleshooting
 - Windows PowerShell and its commands to perform specific tasks
-- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows client device administration
 - Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 - CIM and WMI technologies
 - Using variables, arrays, hash tables, and scripting constructs in Windows PowerShell
