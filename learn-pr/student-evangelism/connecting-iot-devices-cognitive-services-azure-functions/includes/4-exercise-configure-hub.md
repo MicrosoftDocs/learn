@@ -10,6 +10,9 @@ You need to install the Azure IoT extension for Azure CLI using the following co
 az extension add --name azure-iot
 ```
 
+>[!IMPORTANT]
+>If you complete later deployment or provisioning steps in the same subscription and workflow, reuse the resource group, IoT Hub, and device identity you create here. Alternatively, choose one provisioning path and skip creating duplicate resources.
+
 ##  Creating a resource group
 
 Create a resource group in the eastus2 location using the following command. Give a name to your resource group.
@@ -20,7 +23,10 @@ az group create --name <resource-group-name> --location eastus2
 
 ##  Creating an IoT Hub
 
-Create a F1 Tier IoT Hub using the following command. Give a name to your IoT Hub and replace with your resource group.
+Create a free-tier (F1) IoT Hub using the following command. Give a name to your IoT Hub and replace with your resource group.
+
+>[!NOTE]
+>Each Azure subscription can have only one free-tier IoT Hub. If an F1 hub already exists in your subscription, reuse it for this exercise or create a paid/standard tier hub, such as S1.
 
 ```azurecli
 az iot hub create --resource-group <resource-group-name> --name <iot-hub-name> --sku F1 --partition-count 2
@@ -33,6 +39,15 @@ A device must be registered with your IoT Hub before it can connect. Enter the f
 ```azurecli
 az iot hub device-identity create --hub-name <iot-hub-name> --device-id <device-id>
 ```
+
+If you created the default symmetric-key device identity, retrieve the IoT Hub device connection string for configuring the DevKit. If you configured an X.509 device identity instead, use the certificate-based device configuration for that identity.
+
+```azurecli
+az iot hub device-identity connection-string show --hub-name <iot-hub-name> --device-id <device-id> --output table
+```
+
+>[!WARNING]
+>The IoT Hub device connection string contains a shared access key. Treat it as a secret, don't commit it to source control, and rotate the device keys if the value is exposed.
 
 ## Connecting the IoT Devkit to your computer
 

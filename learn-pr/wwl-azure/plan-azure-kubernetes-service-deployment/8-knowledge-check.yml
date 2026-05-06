@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/14/2025
+  ms.date: 05/01/2026
   author: Orin-Thomas 
   ms.author: orthomas
   ms.topic: unit
@@ -30,34 +30,34 @@ quiz:
       explanation: "Correct. Kubernetes provides a declarative approach to deployments, backed by a robust set of APIs for management operations. This allows you to build and run modern, portable, microservices based applications, using Kubernetes to orchestrate and manage the availability of the application components."
   - content: "What is the purpose of Pod Disruption Budgets in Kubernetes?"
     choices:
-    - content: "To define how many replicas in a deployment can be taken down during an update or node upgrade without any restrictions."
-      isCorrect: false
-      explanation: "Incorrect. Pod Disruption Budgets define restrictions on how many replicas in a deployment can be taken down during an update or node upgrade."
     - content: "To define the maximum number of replicas that can be created in a deployment."
       isCorrect: false
-      explanation: "Incorrect. Pod Disruption Budgets don't define the maximum number of replicas that can be created in a deployment."
+      explanation: "Incorrect. Pod Disruption Budgets don't define the maximum number of replicas in a deployment; that's controlled by the deployment's replica count and any horizontal pod autoscaler configuration."
     - content: "To enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      isCorrect: false
+      explanation: "Incorrect. That description applies to CI/CD pipelines or infrastructure-as-code tools, not to Pod Disruption Budgets."
+    - content: "To limit how many pod replicas can be simultaneously unavailable during voluntary disruptions, such as node drains during cluster upgrades."
       isCorrect: true
-      explanation: "Correct. Pod Disruption Budgets enable the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms by defining restrictions on how many replicas in a deployment can be taken down during an update or node upgrade."
-  - content: "What is the purpose of Kubernetes APIs such as kubectl or the Kubernetes dashboard?"
+      explanation: "Correct. A Pod Disruption Budget defines the minimum number of replicas that must remain available—or the maximum that can be simultaneously unavailable—during voluntary disruptions like node upgrades, helping protect application availability during planned maintenance."
+  - content: "What is the purpose of client tools such as kubectl?"
     choices:
-    - content: "To configure or directly access a control plane"
+    - content: "To configure or directly access the underlying virtual machines that host the control plane."
       isCorrect: false
-      explanation: "Incorrect. This isn't the purpose of Kubernetes APIs such as kubectl or the Kubernetes dashboard."
-    - content: "To deploy a self-managed Kubernetes cluster using Cluster API Provider Azure"
+      explanation: "Incorrect. The control plane in AKS is fully managed by Azure; you don't access the underlying control plane VMs directly."
+    - content: "To deploy a self-managed Kubernetes cluster using Cluster API Provider Azure."
       isCorrect: false
-      explanation: "Incorrect. This isn't the purpose of Kubernetes APIs such as kubectl or the Kubernetes dashboard."
-    - content: "To interact with the control plane"
+      explanation: "Incorrect. Cluster API Provider Azure is a separate provisioning tool, not the purpose of kubectl."
+    - content: "To interact with the control plane by calling the Kubernetes API."
       isCorrect: true
-      explanation: "Correct. Kubernetes APIs such as kubectl or the Kubernetes dashboard are used to interact with the control plane through Kubernetes APIs."
+      explanation: "Correct. kubectl is a command-line client that calls the Kubernetes API to interact with the control plane."
   - content: "What is the purpose of defining resource requests and limits when creating a pod in Kubernetes?"
     choices:
     - content: "To allow multiple instances of the same pod to run on different nodes"
       isCorrect: false
-      explanation: "Incorrect. This isn't the purpose of defining resource requests and limits."
+      explanation: "Incorrect. Running multiple pod instances across nodes is achieved by setting the replica count in a Deployment or ReplicaSet—not by defining resource requests and limits."
     - content: "To ensure that the pod always runs on the same node"
       isCorrect: false
-      explanation: "Incorrect. This isn't the purpose of defining resource requests and limits."
+      explanation: "Incorrect. Pinning a pod to a specific node is controlled by node selectors, node affinity rules, or taints and tolerations—not by resource requests and limits."
     - content: "To request a certain amount of CPU or memory resources and prevent a pod from consuming too much compute resource from the underlying node"
       isCorrect: true
-      explanation: "Correct. Defining resource requests and limits helps the Kubernetes Scheduler identify resources and preventing pods from consuming excessive compute resources from the underlying node."
+      explanation: "Correct. Resource requests inform the Kubernetes Scheduler when placing a pod on a node with enough available CPU or memory, and resource limits are enforced by the kubelet at runtime to prevent a pod from consuming excessive compute resources from the underlying node."
