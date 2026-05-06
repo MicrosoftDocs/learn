@@ -4,46 +4,45 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/01/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
   questions:
   - content: "Which of the following is a characteristic of Azure functions and serverless?"
     choices:
-    - content: "You can bring your own containers."
+    - content: "You must bring your own containers."
       isCorrect: false
-      explanation: "You deploy and manage containerized applications with Serverless Kubernetes."
-    - content: "You can automate your business process."
+      explanation: "Azure Functions supports custom containers on supported hosting options, but custom containers aren't required for serverless function apps."
+    - content: "You can create no-code business-process workflows without writing function code."
       isCorrect: false
-      explanation: "You use a serverless engine to build automated workflows to integrate apps and data between cloud services and on-premises systems with Logic apps."
+      explanation: "Azure Logic Apps is for visual workflow automation of business processes. Azure Functions focuses on event-driven code that runs by using triggers and bindings."
     - content: "You can integrate services using triggers and bindings."
       isCorrect: true
       explanation: "You can incorporate Azure services into the function and use a trigger to execute your code."
-  - content: "Suppose you're responsible for managing the reliability of speech data coming from different kinds of IoT devices connected to IoT Hub. Why is IoT Hub appropriate for this scenario?"
+  - content: "Suppose you're responsible for secure device identity and authentication for speech-capable IoT devices connected to IoT Hub. Why is IoT Hub appropriate for this scenario?"
     choices:
-    - content: "IoT Hub provides per device identity to each device."
+    - content: "IoT Hub provides per-device identity to each device."
       isCorrect: true
       explanation: "IoT Hub securely connects the device to the IoT Hub by per-device authentication."
     - content: "IoT Hub tracks events like device creation, device failures and device connections."
       isCorrect: false
-      explanation: "IoT Hub maintains the health of your solution by monitoring events. But this function cannot authenticate a device."
+      explanation: "IoT Hub event monitoring can help you operate and understand the health of your solution, but it doesn't provide per-device authentication."
     - content: "IoT Hub is hosted in the cloud."
       isCorrect: false
-      explanation: "Cloud hosting does not impact authenticity in itself."
-  - content: "Suppose that you’re responsible for implementing AI solutions with IoT device as an event-based function. You want to explore the ability to interact with Cognitive Service. Which would be a better a solution to implement this scenario?"
+      explanation: "Cloud hosting alone doesn't authenticate a device."
+  - content: "Suppose that you’re responsible for implementing an AI solution for IoT device events with Azure Functions. You want your function to call Azure AI Speech. Which would be a better solution to implement this scenario?"
     choices:
-    - content: "You can configure Cognitive Service API key to trigger the function and execute your code."
+    - content: "You can configure an Azure AI Speech key to trigger the function and execute your code."
       isCorrect: false
-      explanation: "You use an API key to	access the Cognitive Service. It doesn’t trigger the function. "
-    - content: "You can write a function that can be deployed locally, then run the function by calling Cognitive service API."
+      explanation: "You use a key to access Azure AI Speech. It doesn’t trigger the function."
+    - content: "You can write a function that runs locally and automatically calls Azure AI Speech without configuring a trigger or service credentials."
       isCorrect: false
-      explanation: "You can only deploy your function and access the Cognitive service in the cloud."
-    - content: "You can write your code as an Azure function that is invoked by a trigger and call the Cognitive Service into the function."
+      explanation: "You can develop and test functions locally with Azure Functions Core Tools and call live Azure services, but an event-based function still needs a trigger and Azure AI Speech configuration."
+    - content: "You can write your code as an Azure function that is invoked by a trigger and calls Azure AI Speech from the function."
       isCorrect: true
-      explanation: "This gives the flexibility for you to interact with your Cognitive Service API."
-
+      explanation: "This approach lets the triggered function use configured credentials to interact with Azure AI Speech."
+

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-cloud-ai-services.monitor-ai-security-dashboard
+title: Monitor AI security with the Data and AI dashboard
+metadata:
+  title: Monitor AI Security With the Data and AI Dashboard
+  description: Use the Data and AI security dashboard in Microsoft Defender for Cloud to verify protection coverage, review AI threat alerts, and configure notifications.
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-monitor-ai-security-dashboard.md)]

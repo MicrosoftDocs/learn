@@ -2,14 +2,12 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.network-topology
 title: Network topology
 metadata:
-  title: Network topology
+  title: Network Topology
   description: "Network topology"
-  ms.date: 03/08/2024
-  author: Orin-Thomas 
+  ms.date: 04/25/2026
+  author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
-  ms.custom:
-  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-network-topology.md)]

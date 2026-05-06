@@ -1,10 +1,15 @@
-## Creating Azure Cognitive Service
+## Create an Azure AI Speech resource
 
-In the Azure portal, click Create a resource and search for Speech.
+>[!IMPORTANT]
+>This exercise follows an archived Azure IoT Device Workbench sample workflow. The Workbench-based workflow and Azure IoT Tools sample path are legacy and unsupported for new development. Use the Workbench commands only as legacy sample commands when reproducing the archived sample. For current projects, deploy the cloud-hosted Function app with the Azure Functions extension for Visual Studio Code or Azure Functions Core Tools, and manage IoT Hub/devices with Azure CLI plus the Azure IoT extension (`azure-iot`) or Azure IoT Explorer.
+>
+>Choose one provisioning path. The **legacy Workbench path** provisions or selects an IoT Hub, an IoT Hub device identity, and a cloud-hosted Function App. The **current/reuse path** reuses existing IoT Hub/device resources, but you must create and deploy the Function App separately with supported Azure Functions tooling before configuring the app settings below.
 
-Create a Speech Service. 
+In the Azure portal, click **Create a resource** and search for Speech.
 
-Fill out the form to create the Speech Service.
+Create an Azure AI Speech resource. 
+
+Fill out the form to create the Speech resource.
 
 **Name:** Enter a name  
 
@@ -16,10 +21,10 @@ Fill out the form to create the Speech Service.
 
 **Resource group:** Select your resource group
 
-![An illustration is showing how to create cognitive speech service.](../media/create-cognitive-service.png)
+![An illustration showing how to create an Azure AI Speech resource.](../media/create-cognitive-service.png)
 
 
-Go to the Speech service you just created, click Keys section to copy and note down the Key1. You'll use it for IoT DevKit to access.
+Go to the Azure AI Speech resource you just created, click the Keys section, and copy and note down both Key1 and the Speech resource region identifier (for example, `eastus` or `westus`). The cloud-hosted Function app uses both values to configure Azure AI Speech calls. Treat the key as a secret and don't commit it to source control.
 
 ![An illustration is showing speech API-keys.](../media/speech-api-key.png)
 
@@ -30,10 +35,10 @@ You need to install some extensions for the Visual Studio Code.
 
 - Launch Visual Studio Code, search for Arduino in the extension marketplace, and install it. This extension provides enhanced experiences for developing on the Arduino platform.
 
-- Search for [Azure IoT Tools](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) in the extension marketplace and install it.
+- The archived sample used Azure IoT Device Workbench, which was previously distributed through the Azure IoT Tools extension pack. Azure IoT Tools/Device Workbench are legacy and retired for new development; use this path only if you're reproducing the archived sample and the extension is already available.
 
   >[!NOTE]
-  >The Azure IoT Tools extension pack contains the [Azure IoT Device Workbench](https://github.com/microsoft/vscode-iot-workbench/releases), which is used to develop and debug on various IoT devkit devices. The [Azure IoT Hub extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit), also included with the Azure IoT Tools extension pack, is used to manage and interact with Azure IoT Hubs.
+  >For current IoT Hub/device management, use Azure CLI plus the Azure IoT extension (`azure-iot`) or Azure IoT Explorer. The [Azure IoT Hub Toolkit extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) is for managing and interacting with Azure IoT Hubs; it isn't the retired Azure IoT Tools extension pack or Azure IoT Device Workbench.
 
 - Search for C# in the extension marketplace and install it.
 
@@ -63,7 +68,7 @@ Add following lines to configure Arduino depending on your platform:
 
   ```json
   "arduino.path": "/home/{username}/Downloads/arduino-1.8.8",
-  "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azur
+  "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azureboard_index.json"
   ```
 
 
@@ -73,7 +78,16 @@ Add following lines to configure Arduino depending on your platform:
 First of all, start signing in your Azure account.
 Click F1 to open the command palette, type, and select Azure: Sign in
 
-Click F1 to open the command palette, type, and select Azure IoT Device Workbench: Open Examples.... Then select IoT DevKit as the board.
+Current path: Clone or download the DevKit Translator sample from GitHub, then open the project folder in Visual Studio Code.
+
+```bash
+git clone https://github.com/Azure-Samples/mxchip-iot-devkit-translator
+code mxchip-iot-devkit-translator
+```
+
+If you don't use Git, download the ZIP from [https://github.com/Azure-Samples/mxchip-iot-devkit-translator](https://github.com/Azure-Samples/mxchip-iot-devkit-translator), extract it, and open the extracted folder in Visual Studio Code.
+
+For archival reproduction only, use the legacy Workbench sample command: Click F1 to open the command palette, type, and select Azure IoT Device Workbench: Open Examples.... Then select IoT DevKit as the board.
 
 
 In the IoT Workbench Examples page, find DevKit Translator and click Open Sample. Then select the default path to download the sample code.
@@ -109,39 +123,60 @@ Click F1 to open the command palette, type, and select Arduino: Board Manager. S
 
 ##  Create Azure Function/Provision Azure Services
 
-In Visual Studio Code, click F1, type, and select Azure IoT Device Workbench: Provision Azure Services....
+Before provisioning, choose exactly one path:
+
+- **Legacy Workbench path:** Use only when reproducing the archived sample. The Azure IoT Device Workbench command below provisions or selects the IoT Hub, IoT Hub device identity, and cloud-hosted Azure Function app used by this exercise.
+- **Current/reuse path:** If you already created an IoT Hub and IoT Hub device identity in an earlier exercise or by using Azure CLI or Azure IoT Explorer, reuse those IoT resources and don't run the archived Workbench provisioning flow unless you intentionally want a separate IoT Hub/device set. Create and deploy the Function App separately with the Azure Functions extension for Visual Studio Code or Azure Functions Core Tools, then configure the `deviceName` constant with the IoT Hub device ID (`--device-id`), the Speech key and region, and the Function App application setting `iotHubConnectionString` as described below.
+
+Legacy sample command: In Visual Studio Code, click F1, type, and select Azure IoT Device Workbench: Provision Azure Services....
 
 ![An illustration is showing how to provision Azure services.](../media/provision-azure-services.png)
 
-Follow the steps to finish the provisioning of Azure IoT Hub and Azure Functions.
+If you chose the legacy Workbench path, follow the steps to finish provisioning or selecting Azure IoT Hub, an IoT Hub device identity, and a cloud-hosted Azure Function app. If you chose the current/reuse path, skip this Workbench provisioning step and use the Function App you created with supported Azure Functions tooling.
 
 ![An illustration is showing how to provision iot services.](../media/provision-azure-services-2.png)
 
-Take a note of the Azure IoT Hub device name you created.
+Take a note of the IoT Hub device ID (`--device-id`) you created or reused. You'll use it for the `deviceName` value in the Function code.
 
-Now you have Azure IoT Hub provisioned and device created in it. Also, the device connection string will be saved in Visual Studio Code for configuring the IoT DevKit later.
+In the legacy Workbench path, the device connection string is saved in Visual Studio Code for configuring the IoT DevKit later. In the current/reuse path, keep the IoT Hub device connection string for the DevKit configuration step. The device connection string is separate from the backend `iotHubConnectionString` Function App application setting.
 
 ![An illustration is showing the confirmation of provisioning Azure services.](../media/provision-azure-services-3.png)
 
+After the Function App exists and before testing, configure the cloud-hosted Function app with an application setting named `iotHubConnectionString`. This applies to both the current/reuse path and the legacy Workbench path. In the Azure portal, use the Function App's **Configuration** > **Application settings** page, or equivalent Azure Functions deployment tooling, to add the setting. Set this value to an IoT Hub service/shared-access policy connection string that permits cloud-to-device sends, such as a service policy with **ServiceConnect** permissions. The Function uses this backend connection to send translated results to the IoT DevKit as C2D messages. This setting is separate from the IoT Hub device connection string that is configured on the DevKit itself.
 
 
-Open **Functions\DevKitTranslatorFunction.cs** and update the following lines of code with the device name and Speech Service key you noted down.
+
+Open **Functions\DevKitTranslatorFunction.cs** in the archived sample. It contains constants for the IoT Hub device ID and Azure AI Speech settings:
 
 ```csharp
-// Subscription Key of Speech Service
+// Subscription key for the Azure AI Speech resource
 const string speechSubscriptionKey = "";
 
-// Region of the speech service, see https://learn.microsoft.com/azure/cognitive-services/speech-service/regions for more details.
+// Region identifier of the Azure AI Speech resource, such as eastus or westus.
+// Use the region that matches your Speech resource location, not the endpoint URL or display name.
 const string speechServiceRegion = "";
 
-// Device ID
+// IoT Hub device ID (--device-id)
 const string deviceName = "";
 ```
 
+>[!IMPORTANT]
+>These constants are legacy sample placeholders. For current development, store secrets in Function App application settings for the deployed app, use **local.settings.json** for local debugging, or use Key Vault references. Don't commit real Speech keys. If you run the archived sample unchanged, enter values only in your local working copy and remove them after the exercise.
+
+Before deploying or testing the Function, open **Functions\SpeechTranslation.cs** in the archived sample and set the target translation language to the Speech translation target language code `en` for the base English-output test. The archived sample sets the target language as a default method parameter on `TranslationWithAudioStreamAsync`, commonly like `string targetLanguage = "en-US"`. Change that default parameter to `targetLanguage = "en"`, for example:
+
+```csharp
+public async Task<string> TranslationWithAudioStreamAsync(Stream audioStream, string fromLanguage = "en-US", string targetLanguage = "en")
+```
+
+Alternatively, leave the method signature unchanged and pass `"en"` from the caller when invoking `TranslationWithAudioStreamAsync`. Speech translation target languages use language codes such as `en`, `es`, and `de`, while source speech recognition uses locales such as `en-US`.
+
+>[!IMPORTANT]
+>The archived DevKit Translator sample targets old Azure Functions runtime and .NET Core versions, such as Azure Functions v2 and .NET Core 2.1. For current Azure deployments, migrate the Functions project to Azure Functions v4 and a supported .NET version before deploying. If you don't migrate it, treat the deployment path below as archival/legacy only.
 
 ##  Deploying Azure Function
 
-Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If Visual Studio Code asks for confirmation for redeployment, click Yes.
+Legacy sample command: Click F1, type, and select Azure IoT Device Workbench: Deploy to Azure.... If Visual Studio Code asks for confirmation for redeployment, click Yes. If you chose the current/reuse path, deploy the Function project to the Function App you created by using the Azure Functions extension for Visual Studio Code or Azure Functions Core Tools instead of the Workbench deployment command.
 
 ![An illustration is showing how to deploy Azure function to the cloud.](../media/deploy-azure-function.png)
 
@@ -149,11 +184,14 @@ Make sure the deployment is successful.
 
 ![An illustration is showing the confirmation of Azure function deployment.](../media/successful-function-development.png)
 
-In the Azure portal, go to the Functions Apps section, find the Azure Function app created. Click **devkit_translator**, then click **Get Function URL** to copy the URL.
+In the Azure portal, go to the Functions Apps section and find the cloud-hosted Azure Function app that was created. Click **devkit_translator**, then click **Get Function URL** to copy the URL.
 
 ![An illustration is showing how to get function url from the cloud.](../media/function-url.png)
 
-Paste the URL into **azure_config.h** file.  
+Paste the cloud-hosted function URL into the **azure_config.h** file. The IoT DevKit calls this URL when it sends audio for translation.
+
+>[!WARNING]
+>The Function URL copied from **Get Function URL** includes an access key by default. Treat the full URL as a secret, don't commit it or the **azure_config.h** file, and rotate or delete the lab key after the exercise. For production, use stronger authentication such as Azure API Management or App Service Authentication where appropriate.
 
 ![An illustration is showing how to configure Azure function url in the sample project.](../media/configure-function-url.png)
 
@@ -164,11 +202,13 @@ In the bottom-right status bar, check the MXCHIP AZ3166 is shown as a selected b
 
 ![An illustration is showing how to select serial port.](../media/select-serial-port.png) 
 
-Click F1, type, and select Azure IoT Device Workbench: Configure Device Settings... > Config Device Connection String. Select IoT Hub Device Connection String to configure it to the DevKit.
+Before running the Workbench configuration command, put the DevKit into configuration mode: hold down button A, push and release the reset button, and then release button A.
+
+Legacy sample command: Click F1, type, and select Azure IoT Device Workbench: Configure Device Settings... > Config Device Connection String. Select IoT Hub Device Connection String to configure it on the DevKit.
 
 ![An illustration is showing how to configure connecting string.](../media/configure-connection-string.png) 
 
-On DevKit, hold down button A, push and release the reset button, and then release button A. Your DevKit enters configuration mode and saves the connection string.
+The command sends the IoT Hub device connection string to the DevKit and saves it.
 
 You'll see the notification once it's done successfully.  
 
@@ -177,7 +217,7 @@ You'll see the notification once it's done successfully.
 ##  Uploading device code
 
 
-Click F1 again, type, and select Azure IoT Device Workbench: Upload Device Code. It starts to compile and upload the code to DevKit.
+Legacy sample command: Click F1 again, type, and select Azure IoT Device Workbench: Upload Device Code. It starts to compile and upload the code to DevKit.
 
 ![An illustration is showing how to upload device code to the iot device.](../media/upload-device-code.png)
 
