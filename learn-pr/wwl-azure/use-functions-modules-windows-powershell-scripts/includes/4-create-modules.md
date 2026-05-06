@@ -1,12 +1,12 @@
-You can create modules to store functions and share those functions among scripts. After you put your functions into modules, they're discoverable just as cmdlets are. Also, like the modules included with Windows, the modules you create load automatically when a function is required.
+You can create modules to store functions and share those functions among scripts. After you put your functions into modules, they're discoverable just as cmdlets are. Like the built-in Windows modules, your modules also load automatically when a function is required.
 
 > [!NOTE]
-> As a best practice, you should name your functions in modules with a naming structure similar to the cmdlet naming convention. For example, you would use the verb-noun format.
+> Name your functions in modules using the same verb-noun naming convention as cmdlets. For example, use the verb-noun format.
 
 > [!NOTE]
-> Functions in modules can include comment-based help that's discoverable by using **Get-Help**. To support this, you need to include the help information in each function.
+> Functions in modules can include comment-based help that **Get-Help** can discover. Include the help information in each function to enable this.
 
-In many cases, you already have your functions in a Windows PowerShell script file. To convert a script file containing only functions to a module, rename it with the **.psm1** file extension. No structural changes in the file are required.
+If you already have your functions in a Windows PowerShell script file, convert it to a module by renaming it with the **.psm1** file extension. The file structure doesn't need to change.
 
 Windows PowerShell uses the `$PSModulePath` environmental variable to define the paths from which modules are loaded. In Windows PowerShell 5.1, the following paths are listed:
 

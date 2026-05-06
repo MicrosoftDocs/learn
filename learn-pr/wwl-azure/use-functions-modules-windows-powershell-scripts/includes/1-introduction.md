@@ -1,4 +1,4 @@
-When you create many scripts, you'll have snippets of code that you want to reuse. You'll also have snippets of code that you want to reuse within the same script. Rather than having the same code display multiple times in a script, you can create a function that displays once in the script, but is called multiple times. If you need to use the same code across multiple scripts, then you can put the function into a module that can be shared by multiple scripts. In this module, you'll learn to create functions and modules.
+As your scripts grow, you'll often need the same code in multiple places — within a single script or across many scripts. Rather than repeating that code, you can create a function that you define once and call multiple times. If you need the same function across multiple scripts, you can put it in a module that any script can share. In this module, you'll learn to create functions and modules.
 
 ## Learning objectives
 
