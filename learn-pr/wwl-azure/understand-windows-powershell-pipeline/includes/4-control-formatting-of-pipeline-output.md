@@ -1,4 +1,7 @@
-PowerShell provides several ways to control the formatting of pipeline output. The default formatting of the output depends on the objects that exist in the output and the configuration files that define the output. After PowerShell decides on the appropriate format, it passes the output to a set of formatting cmdlets without your input.
+PowerShell provides several ways to control the formatting of pipeline output. The default formatting of the output depends on the objects that exist in the output and the configuration files that define the output.
+
+> [!NOTE]
+> In Windows PowerShell 5.1, default formatting views are defined in `.ps1xml` files in the PowerShell installation directory. In PowerShell 7 and later, these views are compiled into the PowerShell runtime itself — the `.ps1xml` files are no longer present on disk. You can still create custom `.ps1xml` files to override default views in both versions. After PowerShell decides on the appropriate format, it passes the output to a set of formatting cmdlets without your input.
 
 The formatting cmdlets are:
 
@@ -10,7 +13,7 @@ The formatting cmdlets are:
 You can override the default output formatting by specifying any of the preceding cmdlets as part of the pipeline.
 
 > [!NOTE]
-> The **Format-Custom** cmdlet requires creating custom XML configuration files that define the format. It's used infrequently and is beyond the scope of this course.
+> The **Format-Custom** cmdlet renders output in a nested, hierarchical format suited to complex objects. It works without any custom XML files — `Get-Process | Format-Custom` is valid syntax with no setup required. Custom `.ps1xml` view files are only needed if you want to reference a named view via its `-View` parameter. `Format-Custom` is used infrequently and is beyond the scope of this course.
 
 Each formatting cmdlet accepts the *-Property* parameter. The *-Property* parameter accepts a comma‑separated list of property names, and then it filters the list of properties that display and the order in which they display. Keep in mind that when you specify property names for this parameter, the original command must have returned those properties.
 
@@ -37,7 +40,7 @@ The **Format-Table** cmdlet formats output as a table, where each row represents
 
 By default, the table includes the property names as the column headers, which are separated from the data by a row of dashes. The formatting of the table depends on the returned objects. You can modify this formatting by using a variety of parameters, such as:
 
-- *-AutoSize*. This parameter adjusts the size and number of columns based on the width of the data. In Windows PowerShell 5.0 and newer, *-AutoSize* is set to **true** by default. In older versions of Windows PowerShell, the default values might truncate data in the table.
+- *-AutoSize*. This parameter adjusts the size and number of columns based on the width of the data. By default, **-AutoSize** is **not** enabled — without it, `Format-Table` may truncate data that is wider than the default column width. Specify `-AutoSize` explicitly when you need columns sized to fit your data.
 - *-HideTableHeaders*. This parameter removes the table headers from the output.
 - *-Wrap*. This parameter causes text that's wider than the column width to wrap to the next line.
 

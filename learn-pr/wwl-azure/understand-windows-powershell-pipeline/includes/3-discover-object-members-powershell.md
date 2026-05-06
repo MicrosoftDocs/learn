@@ -5,8 +5,12 @@
 - Events, which trigger when something happens to an object. A file might trigger an event when it is updated, or a process might trigger an event when it has output to produce.
 
 PowerShell primarily deals with properties and methods. For most commands that you run, the default on-screen output doesn't include all of an object’s properties. Some objects have hundreds of properties, and the full list won't fit on the screen. PowerShell includes several configuration files that list the object properties that should display by default. That's why you notice three properties when you run **Get-Service**.
+> [!NOTE]
+> In Windows PowerShell 5.1, these default views are stored in `.ps1xml` files in the PowerShell installation directory. In PowerShell 7 and later, they are compiled into the runtime and no longer exist as files on disk.
+Use the **Get-Member** command to list all the members of an object. This command lists all the properties, even those that don't display on the screen by default. This command also lists methods and events and displays the type name of the object. For example, the objects that **Get-Service** produces have the type name **System.ServiceProcess.ServiceController**.
 
-Use the **Get-Member** command to list all the members of an object. This command lists all the properties, even those that don't display on the screen by default. This command also lists methods and events and displays the type name of the object. For example, the objects that **Get-Service** produces have the type name **System.ServiceProcess.ServiceController**. You can use the type name when you search the internet to locate object documentation and examples. However, those examples are frequently in a programming language such as Microsoft Visual Basic or C#.
+> [!NOTE]
+> In PowerShell 7, `Get-Service | Get-Member` reports the TypeName as `System.Service.ServiceController#StartupType` due to additional properties added by the PowerShell Extended Type System (ETS). The underlying .NET type is the same — if you see a different TypeName in your terminal, this is expected when running PowerShell 7.
 
 > [!NOTE]
 > **Get-Member** has an alias: **gm**.
