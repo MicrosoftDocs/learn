@@ -29,6 +29,10 @@ The default action for **Set-PSBreakPoint** is **break**, which provides the int
 > [!NOTE]
 > Breakpoints are stored in memory rather than as part of the script. Breakpoints aren't shared between multiple Windows PowerShell prompts and are removed when the prompt is closed.
 
+> [!NOTE]
+> [!NOTE]
+> The Windows PowerShell ISE is no longer in active feature development and only supports Windows PowerShell 5.1 and earlier. For new script development, **Visual Studio Code with the PowerShell extension** is the recommended editor.
+
 ## PowerShell ISE
 
 In the Windows PowerShell Integrated Scripting Environment (ISE), you can set breakpoints based on the line. Options related to breakpoints are in the **Debug** menu. Lines that you configure as breakpoints are highlighted, making it easy to identify them. Also, in the Windows PowerShell ISE, as you add or remove lines to your script, the breakpoints are updated automatically with the correct line number.

@@ -27,6 +27,8 @@ In this module, you learned about adding more troubleshooting information to scr
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [About Preference Variables](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [About Error Handling](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_error_handling)
+
+- [Set-PSBreakpoint](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint)
