@@ -4,7 +4,7 @@ You can use the **New-PSDrive** cmdlet to create PowerShell drives for any part 
 
 - **HKLM**. Represents the **HKEY_LOCAL_MACHINE** registry hive.
 
-- **HKCU**. Represents the **HKEY_LOCAL_USER** registry hive.
+- **HKCU**. Represents the **HKEY_CURRENT_USER** registry hive.
 
 You access registry keys by using cmdlets with the **Item** and **ChildItem** nouns, whereas you access entries and values by using cmdlets with the **ItemProperty** and **ItemPropertyValue** nouns. This is because PowerShell considers registry entries to be properties of a key item.
 
@@ -29,7 +29,7 @@ Get-ItemPropertyValue HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name 
 ```
 
 > [!NOTE]
-> The Registry provider doesn't support the **Invoke-Item** cmdlet. There's no default action for registry keys, entries, or values.
+> The Registry provider supports the **Invoke-Item** cmdlet, but unlike the FileSystem or Certificate providers, it has no default graphical action. Registry management is best performed using the **\*-Item** and **\*-ItemProperty** cmdlets.
 
 The Registry provider supports a dynamic parameter, *-Type*, for the ***-ItemProperty** cmdlets that are unique to the Registry provider. The following table lists valid parameter values and their equivalent registry data types.
 

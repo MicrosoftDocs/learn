@@ -23,7 +23,7 @@ These additional drives support using most of the standard provider verbs and no
 Get-Item -Path Alias:
 ```
 
-In some cases, there are no equivalent cmdlets for a provider-based command. For example, there's no **Remove-Alias** cmdlet that deletes an alias, but you can use either of the following commands to delete an alias named **MyAlias**:
+In some cases, provider-based commands are the primary approach. For example, in Windows PowerShell 5.1 there's no **Remove-Alias** cmdlet, but you can use either of the following commands to delete an alias named **MyAlias**:
 
 ```powershell
 Remove-Item -Path Alias:MyAlias
@@ -32,6 +32,9 @@ Remove-Item -Path Alias:MyAlias
 ```powershell
 Clear-Item -Path Alias:MyAlias
 ```
+
+> [!NOTE]
+> PowerShell 6.0 and later versions introduced the **Remove-Alias** cmdlet as the preferred method: `Remove-Alias -Name MyAlias`. The provider-based approaches above continue to work in newer versions for backward compatibility.
 
 As with the other providers covered by earlier topics, the providers used to create these drives can have dynamic parameters or properties associated with them. The Alias provider, for example, includes the dynamic parameter *-Options*, which you can use to specify the Options property of an alias.
 
