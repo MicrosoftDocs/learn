@@ -7,7 +7,7 @@ Get-WmiObject -Namespace root -List -Recurse | Select -Unique __NAMESPACE
 ```
 
 > [!NOTE] 
-> If you receive errors when running the previous command, ensure that you're using an elevated Windows PowerShell prompt. Some namespaces have security requirements that allow only administrators to access them.
+> **Get-WmiObject** is available in Windows PowerShell 5.1 only. It's not included in PowerShell 7 or later. If you receive errors when running the previous command, also ensure that you're using an elevated Windows PowerShell prompt. Some namespaces have security requirements that allow only administrators to access them.
 
 You can use the **Get-CimInstance** cmdlet to list the namespaces within a specific namespace, but it doesn't provide a *-Recurse* parameter to list all available namespaces in a single command. However, the CIM cmdlets support tab completion for the *-Namespace* parameter, similar to how you can use tab completion when entering a file system path. Using tab completion for the namespace is a browsing method that you can use to explore the available namespaces.
 
@@ -56,6 +56,6 @@ However, this technique does not provide the ability to search class description
 > [!NOTE] 
 > There are several free graphical tools that you can use to browse WMI and CIM classes. To find these tools, use a search engine to search for **WMI explorer** or **CIM explorer**.
 
-There's one specific WMI class object that can cause problems for system administrators. This is the **Win32_Product** class. You can use this class to query installed software, but be aware that returning the results takes a long time and has negative performance implications. When you query this class, the provider performs a Windows Installer (MSI) reconfiguration on every MSI package on the system as the query is being performed. Microsoft recommends using the **Win32reg_AddRemovePrograms** class as an alternative, but this class is only available on systems with the Microsoft Endpoint Configuration Manager client installed.
+There's one specific WMI class object that can cause problems for system administrators. This is the **Win32_Product** class. You can use this class to query installed software, but be aware that returning the results takes a long time and has negative performance implications. When you query this class, the provider performs a Windows Installer (MSI) reconfiguration on every MSI package on the system as the query is being performed. Microsoft recommends using the **Win32reg_AddRemovePrograms** class as an alternative, but this class is only available on systems with the Microsoft Configuration Manager client installed.
 
 **Additional reading:** You can find the Microsoft Support page for this MSI reconfiguration issue at [Event log message indicates that the Windows Installer reconfigured all installed applications](https://aka.ms/jlgark).
