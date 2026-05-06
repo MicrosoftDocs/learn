@@ -2,7 +2,10 @@ PowerShell provides several ways to write output to a file. The **Out-File** com
 
 PowerShell also supports converting and exporting objects, which the next topics examine. The **Out-File** behavior differs from converting or exporting the objects, because you don’t change the form of the objects. Instead, PowerShell captures what would have displayed on the screen.
 
-Various **Out-File** parameters allow you to specify a file name, append content to an existing file, specify character encoding, and more. PowerShell also supports the text redirection operators (**>** and **>>**) that **cmd.exe** uses. These operators act as an alias for **Out-File**. The greater than sign (**>**) at the end of a pipeline directs output to a file, overwriting the content. Two consecutive greater than signs (**>>**) direct output to a file, appending the output to any text already in the file.
+Various **Out-File** parameters allow you to specify a file name, append content to an existing file, specify character encoding, and more. PowerShell also supports the text redirection operators (**>** and **>>**) that **cmd.exe** uses.
+
+> [!NOTE]
+> The default encoding for **Out-File** and the redirection operators differs between environments. Windows PowerShell 5.1 defaults to **UTF-16LE** (with BOM), while PowerShell 7 defaults to **UTF-8 without BOM** (`UTF8NoBOM`). Files written in one environment may not render correctly in the other. Use the `-Encoding` parameter explicitly when cross-environment compatibility is required — for example, `-Encoding utf8BOM` or `-Encoding ascii`. These operators act as an alias for **Out-File**. The greater than sign (**>**) at the end of a pipeline directs output to a file, overwriting the content. Two consecutive greater than signs (**>>**) direct output to a file, appending the output to any text already in the file.
 
 **Out-File** is the easiest way to move data from PowerShell to external storage. However, the text files that **Out-File** creates are usually intended for reviewing by a person. Therefore, reading the data back into Windows PowerShell in a way that enables data manipulation, sorting, selection, and measurement is frequently difficult or impractical.
 
