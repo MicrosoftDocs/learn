@@ -11389,6 +11389,386 @@
       "redirect_url": "/credentials"
     },
     {
+      "source_path_from_root": "/learn-pr/paths/azure-databricks-data-engineer/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/02-set-up-real-time-sources.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/03-optimize-delta-lake.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/04-handle-late-data-and-out-of-order-events.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/05-monitoring-performance-tuning-strategies.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/06-exercise.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/07-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/08-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/perform-incremental-processing-with-spark-structured-streaming/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/02-event-driven-architectures-with-delta-live-tables.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/03-ingest-data-with-structured-streaming.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/04-maintain-data-consistency-and-reliability-with-structured-streaming.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/05-scale-streaming-workloads-with-delta-live-tables.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/06-exercise.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/07-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/08-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/implement-streaming-architecture-patterns-with-delta-live-tables/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/02-use-serverless-compute-and-parallelism-with-delta-live-tables.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/03-perform-cost-based-optimization-and-query-performance.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/04-use-change-data-capture.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/05-use-enhanced-autoscaling.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/06-implement-observability-and-data-quality-metrics.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/07-exercise.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/08-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/09-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-performance-with-spark-and-delta-live-tables/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/02-version-control.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/03-testing.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/04-environments.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/05-rollback-rollforward.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/06-exercise.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/07-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/08-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ci-cd-workflows-pipelines-azure-databricks/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/02-implement-jobs.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/03-parameters.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/04-dependency-management.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/05-error-handling.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/06-best-practices.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/07-exercise.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/08-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/09-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/automate-jobs-azure-databricks/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/02-implement-data-encryption-techniques.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/03-manage-access-controls.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/04-implement-data-masking-and-anonymization.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/05-use-compliance-frameworks-and-secure-data-sharing.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/06-use-data-lineage-and-metadata-management.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/07-implement-governance-automation.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/08-exercise.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/09-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/10-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/manage-data-privacy-and-governance-with-azure-databricks/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/02-sql-warehouses.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/03-databases-tables.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/04-queries-dashboards.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/05-exercise-databricks-sql.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/06-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/07-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/use-sql-warehouses-azure-databricks/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/01-introduction.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/02-databricks-notebooks.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/03-linked-service.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/04-notebook-activity.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/05-notebook-parameters.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/06-exercise-databricks-factory.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/07-knowledge-check.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/08-summary.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/run-azure-databricks-notebooks-azure-data-factory/index.yml",
+      "redirect_url": "/training/courses/dp-750t00",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/cmu-cloud-computing/cmu-analytics-engines-graphlab/0-introduction.md",
       "redirect_url": "/training/modules/cmu-analytics-engines-graphlab/0-introduction"
     },
