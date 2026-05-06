@@ -24,7 +24,7 @@ $WmiSpoolerService.GetMethodParameters("Change")
 If the method requires multiple parameters and you don't want to change some of them, you can pass a `$null` value for the parameters you don't want to change. Additionally, you don't need to specify parameters that are positioned after the one you want to change. In the following example, the Change method has 11 parameters, but only the second parameter (display name) is being configured.
 
 ```powershell
-$WimSpoolerService.Change($null,"Printer Service")
+$WmiSpoolerService.Change($null,"Printer Service")
 ```
 
 > [!NOTE] 
@@ -35,19 +35,19 @@ $WimSpoolerService.Change($null,"Printer Service")
 
 ## Using the Invoke-WmiMethod cmdlet
 
-The **Invoke-WmiMethod** cmdlet is another way to invoke a method for a WMI object with different syntax. The *-Name* parameter is used to specify the method to invoke and the *-Argument* parameter is used to specify the parameter values that are passed to the method. If required, multiple parameters are passed as a comma-separated list or array. The parameter values need to be in a specific order just as they were for direct invocation.
+The **Invoke-WmiMethod** cmdlet is another way to invoke a method for a WMI object with different syntax. The *-Name* parameter is used to specify the method to invoke and the *-ArgumentList* parameter is used to specify the parameter values that are passed to the method. If required, multiple parameters are passed as a comma-separated list or array. The parameter values need to be in a specific order just as they were for direct invocation.
 
 You can use the **Invoke-WmiMethod** cmdlet by itself, or you can use the pipeline to send it a WMI object. Here are two examples that work the same way:
 
 ```powershell
-Get-WmiObject -Class Win32_OperatingSystem | Invoke-WmiMethod -Name Win32Shutdown -Argument 0
+Get-WmiObject -Class Win32_OperatingSystem | Invoke-WmiMethod -Name Win32Shutdown -ArgumentList 0
 ```
 
 ```powershell
-Invoke-WmiMethod -Class Win32_OperatingSystem -Name Win32Shutdown -Argument 0
+Invoke-WmiMethod -Class Win32_OperatingSystem -Name Win32Shutdown -ArgumentList 0
 ```
 
-The **Get-WmiObject** and **Invoke-Method** cmdlets both have the *-ComputerName* parameter that lets you run the cmdlet on a remote computer.
+The **Get-WmiObject** and **Invoke-WmiMethod** cmdlets both have the *-ComputerName* parameter that lets you run the cmdlet on a remote computer.
 
 ## Using the Invoke-CimMethod cmdlet
 
