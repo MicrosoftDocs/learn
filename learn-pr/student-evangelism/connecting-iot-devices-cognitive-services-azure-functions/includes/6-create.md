@@ -1,17 +1,19 @@
-To build a translator application, we'll firstly create a Cognitive Speech Service in Azure. Then we'll call Cognitive Speech API for real-time speech translation and configure its API key in Azure Function.
+To build a translator application, first create an Azure AI Speech resource in Azure. The function app code calls Azure AI Speech for real-time speech translation. This module's sample configuration uses the Speech resource key plus region to configure the Speech SDK. Endpoint-based configuration requires the Speech endpoint plus a key, token, or supported credential.
 
-You use the following components for this unit: 
+You use the following components for this unit:
 
-**Speech API:** It allows you to access Azure AI services and add real-time speech translations to your app.
+**Azure AI Speech:** Provides speech-to-text, text-to-speech, and speech translation capabilities through Azure AI services.
 
-**Speech API key:** It's a unique identifier used to authenticate your app with the API.
+**Speech resource key:** A secret credential used by your function or app code to authenticate requests to Azure AI Speech. For this module's sample configuration, use it with the matching Speech resource region. It doesn't identify the resource by itself, and it isn't used by the Azure Functions runtime itself.
 
-**Speech API endpoint:** It s a base URL that associates with the network address of API service. 
+**Speech resource region:** The Azure region identifier for the Speech resource, such as `eastus` or `westus`. Use the region value that matches the Speech resource you create.
+
+**Speech endpoint:** The HTTPS endpoint for the Speech resource. Use it only with endpoint-based configuration, along with a key, token, or supported credential.
 
 We’ll use the following steps in this unit:
 
-1.  Go to Azure portal
-2.  Create **Speech** resource
-3.  Fill out the form to create a Speech API
+1. Go to the Azure portal.
+2. Create a **Speech** resource.
+3. Copy the Speech resource key and region for this module's sample configuration. If you use endpoint-based configuration instead, copy the Speech endpoint and configure it with a key, token, or supported credential.
 
-Once the Speech API is generated, you can navigate to the Keys blade and copy any of the keys. This key will be used by the Azure Functions Runtime to connect to and consume the Azure AI Speech service API so that Azure function will be able to access it programmatically. Also, make a note of the location where you're creating the speech service. You'll edit the key and location in the Azure function for IoT DevKit accessing to it. That is important when you're passing the information to the Speech API to ensure that the endpoint of the API starts with the location name.
+After the Speech resource is created, navigate to **Keys and Endpoint** and copy one of the keys. Also note the resource's region identifier for this module's sample configuration, or copy the endpoint if you use endpoint-based configuration. Store Speech authentication settings in secure configuration, such as Function App application settings for deployed code, **local.settings.json** for local debugging, or Key Vault references where appropriate. Don't commit Speech keys, tokens, or credentials to source control.

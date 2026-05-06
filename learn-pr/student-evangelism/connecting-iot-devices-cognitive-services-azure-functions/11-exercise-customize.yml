@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.exercise-customizing-cognitive-services
-title: Exercise - Customizing Azure AI services as Azure Functions
+title: Exercise - Customizing Azure AI Speech translation
 metadata:
-  title: Exercise - Customizing Azure AI services as Azure Functions
-  description: In this section, we help the learner to how to customizing Azure AI services using the Azure Functions to the IoT device
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  title: Exercise - Customizing Azure AI Speech translation
+  description: In this section, learners customize Azure AI Speech translation behavior in the cloud-hosted Azure Function app and device code
+  ms.date: 05/01/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/11-exercise-customize.md)]
-
+

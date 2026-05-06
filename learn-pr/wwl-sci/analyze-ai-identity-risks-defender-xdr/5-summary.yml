@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-ai-identity-risks-defender-xdr.summary
+metadata:
+  title: Summary
+  description: Summary of analyzing AI identity risks using Microsoft Defender XDR, covering AI agent discovery, blast radius assessment, and attack path analysis.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-summary.md)]
