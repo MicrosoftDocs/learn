@@ -1,4 +1,4 @@
-Most administrators start working with scripts by either downloading or modifying scripts that others create. After you've obtained a script, you must run it. There are some important differences between running scripts in Windows PowerShell versus running them at a standard command prompt. These differences are covered in this module along with other concepts that are related to scripting.
+Most administrators start working with scripts by downloading or modifying scripts that others create. Once you have a script, you need to run it. Running scripts in Windows PowerShell differs in important ways from running them at a standard command prompt. This module covers those differences and other scripting concepts.
 
 ## Learning objectives
 
