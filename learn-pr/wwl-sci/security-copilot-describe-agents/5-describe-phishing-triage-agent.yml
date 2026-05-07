@@ -6,11 +6,11 @@ metadata:
   description: Describe the Security Copilot agents in Microsoft Defender.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 02/15/2026
+  ms.date: 05/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 5
+durationInMinutes: 9
 content: |
   [!include[](includes/5-describe-phishing-triage-agent.md)]
 
