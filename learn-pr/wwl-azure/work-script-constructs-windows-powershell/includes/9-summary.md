@@ -18,20 +18,20 @@ In this module, you learned to use scripting constructs such as the **ForEach** 
 
 To learn more, go through the following documents:
 
-- [About ForEach](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_foreach)
+- [About ForEach](/powershell/module/microsoft.powershell.core/about/about_foreach)
 
-- [About If](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_if)
+- [About If](/powershell/module/microsoft.powershell.core/about/about_if)
 
-- [About Switch](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_switch)
+- [About Switch](/powershell/module/microsoft.powershell.core/about/about_switch)
 
-- [About For](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_for)
+- [About For](/powershell/module/microsoft.powershell.core/about/about_for)
 
-- [About While](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_while)
+- [About While](/powershell/module/microsoft.powershell.core/about/about_while)
 
-- [About Do](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_do)
+- [About Do](/powershell/module/microsoft.powershell.core/about/about_do)
 
-- [About Break](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_break)
+- [About Break](/powershell/module/microsoft.powershell.core/about/about_break)
 
-- [About Continue](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_continue)
+- [About Continue](/powershell/module/microsoft.powershell.core/about/about_continue)
 
-- [ForEach-Object](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/foreach-object)
+- [ForEach-Object](/powershell/module/microsoft.powershell.core/foreach-object)
