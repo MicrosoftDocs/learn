@@ -216,6 +216,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-language-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-text-analysis-azure/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-language-azure/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-text-analysis-azure/",
       "redirect_document_id": false
@@ -258,6 +263,11 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-language-azure/9-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-text-analysis-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-generative-ai-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-generative-ai-and-agents/",
       "redirect_document_id": false
     },
     {
