@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-  module_assessment: true
+  module_assessment: false
 durationInMinutes: 2
 
 content: |
@@ -46,9 +46,9 @@ quiz:
 
   - content: A security analyst needs to review past sessions created in Microsoft Security Copilot. After accessing the standalone experience, which option should they select to manage and review these sessions?
     choices:
-    - content: Select the My sessions option from the home menu.
+    - content: Select the History option.
       isCorrect: true
-      explanation: Correct. My sessions allow users to manage and review past sessions with options to search, filter, rename, duplicate, or delete.
+      explanation: Correct. History allows users to manage and review past sessions with options to search, filter, rename, duplicate, or delete.
     - content: Select the Help icon.
       isCorrect: false
       explanation: Incorrect. Help provides assistance and information about using the platform, not past session management.

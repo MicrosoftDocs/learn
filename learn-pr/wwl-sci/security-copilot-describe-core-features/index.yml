@@ -48,7 +48,6 @@ units:
 - learn.security-copilot-describe-core-features.describe-session-features
 - learn.security-copilot-describe-core-features.describe-workspaces
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
-- learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-custom-promptbooks
 - learn.security-copilot-describe-core-features.describe-knowledge-base-connections
 - learn.security-copilot-describe-core-features.knowledge-check
