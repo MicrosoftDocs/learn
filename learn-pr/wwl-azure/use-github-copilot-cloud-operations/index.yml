@@ -35,9 +35,9 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.use-github-copilot-cloud-operations.introduction
-- learn.wwl.use-github-copilot-cloud-operations.prompt-engineering-for-infra-as-code
-- learn.wwl.use-github-copilot-cloud-operations.az-cli-assistance-github-copilot
-- learn.wwl.use-github-copilot-cloud-operations.exercise-github-copilot-cloud-ops
+- learn.wwl.use-github-copilot-cloud-operations.prompt-engineering-for-infrastructure-as-code
+- learn.wwl.use-github-copilot-cloud-operations.azure-cli-assistance-github-copilot
+- learn.wwl.use-github-copilot-cloud-operations.exercise-github-copilot-cloud-operations
 - learn.wwl.use-github-copilot-cloud-operations.knowledge-check
 - learn.wwl.use-github-copilot-cloud-operations.summary
 badge:

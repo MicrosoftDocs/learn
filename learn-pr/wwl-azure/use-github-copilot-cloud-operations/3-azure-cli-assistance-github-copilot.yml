@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-github-copilot-cloud-operations.az-cli-assistance-github-copilot
+uid: learn.wwl.use-github-copilot-cloud-operations.azure-cli-assistance-github-copilot
 title: Azure CLI and PowerShell assistance with GitHub Copilot
 metadata:
   title: Azure CLI and PowerShell Assistance with GitHub Copilot
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-az-cli-assistance-github-copilot.md)]
+  [!include[](includes/3-azure-cli-assistance-github-copilot.md)]
