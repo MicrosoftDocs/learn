@@ -17,7 +17,7 @@ The main characteristics of Azure Cloud Shell are that it:
 
 You can access Cloud Shell in several ways:
 
-- Direct link. Open a browser and refer to **https://shell.azure.com**.
+- Direct link. Open a browser and refer to [https://shell.azure.com](https://shell.azure.com).
 - Azure portal. Select the Cloud Shell icon in the toolbar.
 - Azure CLI or Azure PowerShell documentation pages on Microsoft Learn. Select the **Open Cloud Shell** button that appears with code snippets:
 
@@ -55,4 +55,4 @@ After the first launch, you can use the **Switch to Bash** or **Switch to PowerS
 
 Microsoft manages Azure Cloud Shell, so it comes with popular command-line tools and language support. Cloud Shell also helps securely authenticate automatically, so that you can instantly access your resources through the Azure CLI or Azure PowerShell cmdlets. Cloud Shell also offers an integrated graphical text editor based on the open-source Monaco Editor.
 
-Cloud Shell machines are temporary, but when a storage account is mounted, your files are persisted in two ways: through a disk image, and through a mounted file share named **clouddrive**. On the first launch, Cloud Shell lets you choose between mounting a storage account for persistent storage or starting an ephemeral session without one. If you mount storage, a single file share is used by both Bash and PowerShell in Cloud Shell and is automatically attached for all future sessions.
+Cloud Shell machines are temporary, but when you mount a storage account, Cloud Shell persists your files in two ways: through a disk image, and through a mounted file share named `clouddrive`. On the first launch, Cloud Shell lets you choose between mounting a storage account for persistent storage or starting an ephemeral session without one. If you mount storage, a single file share is used by both Bash and PowerShell in Cloud Shell and is automatically attached for all future sessions.

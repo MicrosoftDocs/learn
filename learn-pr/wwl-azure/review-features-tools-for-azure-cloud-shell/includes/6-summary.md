@@ -15,6 +15,6 @@ In this module, you learned about Azure Cloud Shell and its features. The follow
 
 To learn more, go through the following documents:
 
-- [Azure Cloud Shell features](https://learn.microsoft.com/azure/cloud-shell/features)
+- [Azure Cloud Shell features](/azure/cloud-shell/features)
 
-- [Microsoft Graph PowerShell](https://learn.microsoft.com/powershell/microsoftgraph/overview)
+- [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview)

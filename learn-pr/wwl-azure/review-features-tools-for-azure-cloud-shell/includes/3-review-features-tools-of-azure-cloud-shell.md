@@ -8,15 +8,15 @@ Cloud Shell securely and automatically authenticates account access for the Azur
 
 ## $HOME persistence across sessions
 
-To persist files across sessions, Cloud Shell can attach an Azure file share. On first launch, you can choose to mount a storage account or start an ephemeral session without one. When storage is mounted, Cloud Shell will automatically attach your storage (mounted as `$HOME\clouddrive`) for all future sessions. Additionally, your `$HOME` directory is persisted as an .img in your Azure file share. Files outside of $HOME and machine state aren't persisted across sessions. Depending on the scenario, you should use recommended best practices when storing secrets such as SSH keys. Services such as Azure Key Vault have tutorials for setup.
+To persist files across sessions, Cloud Shell can attach an Azure file share. On first launch, you can choose to mount a storage account or start an ephemeral session without one. When storage is mounted, Cloud Shell automatically attaches your storage (mounted as `$HOME\clouddrive`) for all future sessions. Additionally, your `$HOME` directory persists as an .img in your Azure file share. Files outside of $HOME and machine state don't persist across sessions. Depending on the scenario, you should use recommended best practices when storing secrets such as SSH keys. Services such as Azure Key Vault have tutorials for setup.
 
 ## Azure drive (Azure:)
 
-PowerShell in Cloud Shell provides the Azure drive (Azure:). You can switch to the Azure drive with **cd Azure:** and back to your home directory with **cd ~**. The Azure drive enables easier discovery and navigation of Azure resources such as compute, network, and storage, similar to file system navigation. You can continue to use familiar Azure PowerShell cmdlets to manage these resources, regardless of the drive you're in. Any changes to the Azure resources, whether they're made directly in the Azure portal or by using Azure PowerShell cmdlets, are reflected in the Azure drive. You can run **dir -Force** to refresh your resources.
+PowerShell in Cloud Shell provides the Azure drive (Azure:). You can switch to the Azure drive with `cd Azure:` and back to your home directory with `cd ~`. The Azure drive enables easier discovery and navigation of Azure resources such as compute, network, and storage, similar to file system navigation. You can continue to use familiar Azure PowerShell cmdlets to manage these resources, regardless of the drive you're in. Any changes to the Azure resources, whether they're made directly in the Azure portal or by using Azure PowerShell cmdlets, are reflected in the Azure drive. You can run `dir -Force` to refresh your resources.
 
 ## Manage Exchange Online
 
-Exchange Online PowerShell is preinstalled in Cloud Shell. Run **Connect-ExchangeOnline** to connect to Exchange Online and access Exchange management cmdlets. By using these cmdlets, you can manage your Exchange Online instance running in the Microsoft 365 environment.
+Exchange Online PowerShell is preinstalled in Cloud Shell. Run `Connect-ExchangeOnline` to connect to Exchange Online and access Exchange management cmdlets. By using these cmdlets, you can manage your Exchange Online instance running in the Microsoft 365 environment.
 
 ## Deep integration with open-source tooling
 
