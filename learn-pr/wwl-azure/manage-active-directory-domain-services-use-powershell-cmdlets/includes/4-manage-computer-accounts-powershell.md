@@ -6,29 +6,29 @@ The following table lists cmdlets that you can use to manage computer accounts.
 
 | Cmdlet                             | Description                        |
 | ---------------------------------- | ---------------------------------- |
-| **New-ADComputer**                | Creates a new computer account                        |
-| **Set-ADComputer**                | Modifies properties of a computer account                    |
-| **Get-ADComputer**                | Displays properties of a computer account                    |
-| **Remove-ADComputer**             | Deletes a computer account                                   |
-| **Test-ComputerSecureChannel**    | Verifies or repairs the trust relationship between a computer and the domain |
-| **Reset-ComputerMachinePassword** | Resets the password for a computer account                   |
+| `New-ADComputer`                | Creates a new computer account                        |
+| `Set-ADComputer`                | Modifies properties of a computer account                    |
+| `Get-ADComputer`                | Displays properties of a computer account                    |
+| `Remove-ADComputer`             | Deletes a computer account                                   |
+| `Test-ComputerSecureChannel`    | Verifies or repairs the trust relationship between a computer and the domain |
+| `Reset-ComputerMachinePassword` | Resets the password for a computer account                   |
 
 > [!NOTE]
-> **Test-ComputerSecureChannel** and **Reset-ComputerMachinePassword** are part of the **Microsoft.PowerShell.Management** module and are only available in Windows PowerShell 5.1. They're not available in PowerShell 7. The `New-ADComputer`, `Set-ADComputer`, `Get-ADComputer`, and `Remove-ADComputer` cmdlets are part of the Active Directory module and work in both Windows PowerShell and PowerShell 7.
+> `Test-ComputerSecureChannel` and `Reset-ComputerMachinePassword` are part of the `Microsoft.PowerShell.Management` module and are only available in Windows PowerShell 5.1. They're not available in PowerShell 7. The `New-ADComputer`, `Set-ADComputer`, `Get-ADComputer`, and `Remove-ADComputer` cmdlets are part of the Active Directory module and work in both Windows PowerShell 5.1 and PowerShell 7.
 
 ## Creating new computer accounts
 
-You can use the **New-ADComputer** cmdlet to create a new computer account before you join the computer to the domain. You do this so that you can create the computer account in the correct OU before deploying the computer.
+You can use the `New-ADComputer` cmdlet to create a new computer account before you join the computer to the domain. You take this step so that you can create the computer account in the correct OU before deploying the computer.
 
-The following table lists common parameters for **New-ADComputer**.
+The following table lists common parameters for `New-ADComputer`.
 
 *Table 2: Common parameters for New-ADComputer*
 
 | Parameter               | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
-| ‑Name | Defines the name of a computer account                 |
-| ‑Path     | Defines the OU or container where a computer account is  created |
-| ‑Enabled  | Defines whether the computer account is enabled or  disabled; by default, a computer account is enabled, and a random password is generated |
+| `-Name` | Defines the name of a computer account                 |
+| `-Path`     | Defines the OU or container where a computer account is  created |
+| `-Enabled`  | Defines whether the computer account is enabled or  disabled; by default, a computer account is enabled, and a random password is generated |
 
 The following example is a command that you can use to create a computer account:
 
@@ -38,11 +38,11 @@ New-ADComputer -Name LON-CL10 -Path "ou=marketing,dc=adatum,dc=com" -Enabled $tr
 
 ## Repairing the trust relationship for a computer account
 
-You can use the **Test-ComputerSecureChannel** cmdlet with the *-Repair* parameter to repair a lost trust relationship between a computer and a domain. You must run the cmdlet on the computer with the lost trust relationship.
+You can use the `Test-ComputerSecureChannel` cmdlet with the `-Repair` parameter to repair a lost trust relationship between a computer and a domain. You must run the cmdlet on the computer with the lost trust relationship.
 
 > [!NOTE]
-> **Test-ComputerSecureChannel** is only available in Windows PowerShell 5.1. It's not available in PowerShell 7.
+> `Test-ComputerSecureChannel` is only available in Windows PowerShell 5.1. It's not available in PowerShell 7.
 
 ## Account vs. device management cmdlets
 
-**-ADComputer** cmdlets are part of the Active Directory module and manage the computer object, not the physical device or its operating system. For example, you can use the **Add‑Computer** cmdlet (Windows PowerShell 5.1 only) to join a computer to a domain. To manage the properties of the physical computer and its operating system, use the **-Computer** cmdlets.
+`*-ADComputer` cmdlets are part of the Active Directory module and manage the computer object, not the physical device or its operating system. For example, you can use the `Add-Computer` cmdlet (Windows PowerShell 5.1 only) to join a computer to a domain. To manage the properties of the physical computer and its operating system, use the `*-Computer` cmdlets.
