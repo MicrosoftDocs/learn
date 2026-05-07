@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-label="Architectural diagram showing the three security layers protecting agent identities: Conditional Access, ID Protection, and ID Governance">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#FFFFFF"/>
+
+  <!-- Center: Agent Identity -->
+  <circle cx="450" cy="250" r="55" fill="#0078D4" stroke="#2A446F" stroke-width="2" aria-label="Agent Identity"/>
+  <text x="450" y="243" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Agent</text>
+  <text x="450" y="260" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Identity</text>
+
+  <!-- Shield ring around agent -->
+  <circle cx="450" cy="250" r="80" fill="none" stroke="#8DC8E8" stroke-width="3" stroke-dasharray="8 4" aria-label="Security perimeter"/>
+
+  <!-- Top: Conditional Access -->
+  <path d="M450 165 L450 80" stroke="#091F2C" stroke-width="2" fill="none"/>
+  <path d="M446 85 L450 75 L454 85" fill="#091F2C"/>
+  <rect x="300" y="15" width="300" height="60" rx="10" fill="#FFFFFF" stroke="#FF5C39" stroke-width="2" aria-label="Conditional Access for Agents"/>
+  <rect x="300" y="15" width="300" height="24" rx="10" fill="#FF5C39"/>
+  <rect x="300" y="29" width="300" height="10" fill="#FF5C39"/>
+  <text x="450" y="33" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Conditional Access for Agents</text>
+  <text x="450" y="56" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Enforce adaptive policies • Evaluate risk • Block compromised agents</text>
+
+  <!-- Left: ID Protection -->
+  <path d="M370 250 L230 250" stroke="#091F2C" stroke-width="2" fill="none"/>
+  <path d="M235 246 L225 250 L235 254" fill="#091F2C"/>
+  <rect x="30" y="200" width="200" height="100" rx="10" fill="#FFFFFF" stroke="#C73ECC" stroke-width="2" aria-label="ID Protection for Agents"/>
+  <rect x="30" y="200" width="200" height="24" rx="10" fill="#C73ECC"/>
+  <rect x="30" y="214" width="200" height="10" fill="#C73ECC"/>
+  <text x="130" y="218" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">ID Protection</text>
+  <text x="130" y="248" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Detect anomalous activities</text>
+  <text x="130" y="264" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Provide risk signals</text>
+  <text x="130" y="280" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Auto-remediate compromised</text>
+  <text x="130" y="296" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">agents</text>
+
+  <!-- Right: ID Governance -->
+  <path d="M530 250 L670 250" stroke="#091F2C" stroke-width="2" fill="none"/>
+  <path d="M665 246 L675 250 L665 254" fill="#091F2C"/>
+  <rect x="670" y="200" width="200" height="100" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" aria-label="ID Governance for Agents"/>
+  <rect x="670" y="200" width="200" height="24" rx="10" fill="#0078D4"/>
+  <rect x="670" y="214" width="200" height="10" fill="#0078D4"/>
+  <text x="770" y="218" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">ID Governance</text>
+  <text x="770" y="248" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Lifecycle management</text>
+  <text x="770" y="264" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Assign sponsors &amp; owners</text>
+  <text x="770" y="280" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Time-bound access packages</text>
+  <text x="770" y="296" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Prevent orphaned agents</text>
+
+  <!-- Bottom: Microsoft Entra platform -->
+  <path d="M450 335 L450 380" stroke="#091F2C" stroke-width="2" fill="none"/>
+  <path d="M446 375 L450 385 L454 375" fill="#091F2C"/>
+  <rect x="200" y="385" width="500" height="50" rx="10" fill="#091F2C" aria-label="Microsoft Entra ID Platform"/>
+  <text x="450" y="415" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Microsoft Entra ID Platform</text>
+
+  <!-- Bottom labels -->
+  <rect x="200" y="450" width="155" height="35" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1" aria-label="Custom security attributes"/>
+  <text x="277" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Security Attributes</text>
+
+  <rect x="372" y="450" width="155" height="35" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1" aria-label="Real-time risk signals"/>
+  <text x="449" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Real-time Risk Signals</text>
+
+  <rect x="545" y="450" width="155" height="35" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1" aria-label="Policy enforcement at scale"/>
+  <text x="622" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Policy Enforcement</text>
+</svg>

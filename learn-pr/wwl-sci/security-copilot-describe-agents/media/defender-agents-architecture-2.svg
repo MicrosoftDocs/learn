@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 640" role="img" aria-label="Architectural diagram showing two Microsoft Defender agents in Security Copilot: Dynamic Threat Detection Agent and Security Analyst Agent, along with their key capabilities.">
+  <!-- Background -->
+  <rect width="740" height="640" fill="#FFFFFF"/>
+
+  <!-- Top: Title -->
+  <rect x="120" y="18" width="500" height="52" rx="8" fill="#091F2C" aria-label="Microsoft Defender Agents"/>
+  <text x="370" y="50" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">Microsoft Defender Agents</text>
+
+  <!-- Subtitle -->
+  <text x="370" y="92" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#091F2C">AI-powered agents in the Microsoft Defender portal for Security Copilot</text>
+
+  <!-- Agent 4: Dynamic Threat Detection Agent -->
+  <rect x="30" y="120" width="330" height="505" rx="8" fill="#FFFFFF" stroke="#008272" stroke-width="2" aria-label="Dynamic Threat Detection Agent"/>
+  <rect x="30" y="120" width="330" height="38" rx="8" fill="#008272"/>
+  <rect x="30" y="144" width="330" height="14" fill="#008272"/>
+  <text x="195" y="145" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Dynamic Threat Detection Agent</text>
+
+  <!-- Description -->
+  <text x="50" y="178" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Always-on adaptive backend service that</text>
+  <text x="50" y="195" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">uncovers hidden threats across Defender</text>
+  <text x="50" y="212" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">and Microsoft Sentinel environments.</text>
+
+  <!-- Key Benefits -->
+  <text x="50" y="240" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#004D47">Key Benefits:</text>
+
+  <rect x="50" y="252" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#008272" stroke-width="1" aria-label="Find missed threats"/>
+  <text x="65" y="272" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Find Missed Threats</text>
+  <text x="65" y="290" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Uncovers false negatives and detection gaps</text>
+
+  <rect x="50" y="312" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#008272" stroke-width="1" aria-label="Reduce noise"/>
+  <text x="65" y="332" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Reduce Noise</text>
+  <text x="65" y="350" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Validated precision + clear risk context</text>
+
+  <rect x="50" y="372" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#008272" stroke-width="1" aria-label="Always on and zero-touch"/>
+  <text x="65" y="392" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Always On, Zero-Touch</text>
+  <text x="65" y="410" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">No tuning or onboarding required</text>
+
+  <rect x="50" y="432" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#008272" stroke-width="1" aria-label="Deep integration"/>
+  <text x="65" y="452" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Deep Integration</text>
+  <text x="65" y="470" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Copilot, Defender, and Sentinel signals</text>
+
+  <!-- Key details -->
+  <line x1="50" y1="498" x2="340" y2="498" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="50" y="518" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Trigger:</tspan> Always on (backend service)</text>
+  <text x="50" y="538" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Output:</tspan> Dynamic alerts with MITRE ATT&amp;CK</text>
+  <text x="50" y="558" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Includes:</tspan> NL explanations + remediation</text>
+
+  <!-- Products -->
+  <rect x="50" y="572" width="290" height="36" rx="6" fill="#008272" opacity="0.1"/>
+  <text x="195" y="594" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#008272">Copilot + Defender + Sentinel</text>
+
+  <!-- Agent 5: Security Analyst Agent -->
+  <rect x="380" y="120" width="330" height="505" rx="8" fill="#FFFFFF" stroke="#5C2D91" stroke-width="2" aria-label="Security Analyst Agent"/>
+  <rect x="380" y="120" width="330" height="38" rx="8" fill="#5C2D91"/>
+  <rect x="380" y="144" width="330" height="14" fill="#5C2D91"/>
+  <text x="545" y="145" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Security Analyst Agent</text>
+
+  <!-- Description -->
+  <text x="400" y="178" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Identifies, assesses, and prioritizes risks</text>
+  <text x="400" y="195" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">with ready-to-use or custom analyses on</text>
+  <text x="400" y="212" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">security data from multiple sources.</text>
+
+  <!-- Capabilities -->
+  <text x="400" y="240" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#3B1C5A">Key Capabilities:</text>
+
+  <rect x="400" y="252" width="290" height="60" rx="6" fill="#F4F3F5" stroke="#5C2D91" stroke-width="1" aria-label="Flexible analysis"/>
+  <text x="415" y="274" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Flexible Analysis</text>
+  <text x="415" y="292" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Pattern analysis, anomaly detection,</text>
+  <text x="415" y="306" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">clustering, risk scoring, forecasting</text>
+
+  <rect x="400" y="320" width="290" height="60" rx="6" fill="#F4F3F5" stroke="#5C2D91" stroke-width="1" aria-label="Data integration"/>
+  <text x="415" y="342" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Data Integration</text>
+  <text x="415" y="360" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Defender XDR, Sentinel Log Analytics,</text>
+  <text x="415" y="374" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Sentinel Data Lake</text>
+
+  <rect x="400" y="388" width="290" height="48" rx="6" fill="#F4F3F5" stroke="#5C2D91" stroke-width="1" aria-label="Interactive exploration"/>
+  <text x="415" y="410" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Interactive Exploration</text>
+  <text x="415" y="426" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Visualize data to spot anomalies faster</text>
+
+  <rect x="400" y="444" width="290" height="48" rx="6" fill="#F4F3F5" stroke="#5C2D91" stroke-width="1" aria-label="Conversation assistance"/>
+  <text x="415" y="466" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Conversation Assistance</text>
+  <text x="415" y="482" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Follow-up questions + deeper analysis</text>
+
+  <!-- Key details -->
+  <line x1="400" y1="504" x2="690" y2="504" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="400" y="522" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Surface:</tspan> Advanced hunting in Defender</text>
+  <text x="400" y="540" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Output:</tspan> Prioritized insights with evidence</text>
+  <text x="400" y="558" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Scale:</tspan> Single or multistep on large data</text>
+
+  <!-- Products -->
+  <rect x="400" y="572" width="290" height="36" rx="6" fill="#5C2D91" opacity="0.1"/>
+  <text x="545" y="594" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#5C2D91">Security Copilot + Defender</text>
+</svg>

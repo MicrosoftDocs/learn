@@ -9,7 +9,7 @@ The following Microsoft Security Copilot agents are available in Microsoft Purvi
 
 #### Triage Agent in Insider Risk Management
 
-The [Triage Agent in Insider Risk Management](/purview/copilot-in-purview-agents) helps security teams by triaging alerts and sorting them into categories that are presented in the insider risk management solution on the **Alerts** tab. To determine the category for each alert, the agent evaluates the following risk factors:
+The [Triage Agent in Insider Risk Management](/purview/copilot-in-purview-triage-irm-agent-get-started) helps security teams by evaluating alerts based on user risk and activity risk. The agent then sorts the triaged alerts into categories that are presented in the insider risk management solution on the **Alerts** tab. To determine the category for each alert, the agent evaluates the following risk factors:
 
 - **Activity risk**: Identifies activities with the highest risk of exfiltration and reports historical alert insights.
 - **User risk**: Attributes of the user that can affect prioritization, such as priority user group configuration or number of currently active cases.
@@ -26,9 +26,9 @@ The [Triage Agent in Insider Risk Management](/purview/copilot-in-purview-agents
 
 #### Alert Triage Agent in Data Loss Prevention (preview)
 
-The [Alert Triage Agent in Data Loss Prevention](/purview/copilot-in-purview-agents) helps security teams by triaging alerts and sorting them into categories that are presented in the DLP solution on the **Alerts** page. For devices, you must set up evidence collection for file activities on devices and enable evidence collection in the DLP policy rule configuration. To determine the category for each alert, the agent evaluates the following risk factors:
+The [Alert Triage Agent in Data Loss Prevention](/purview/copilot-in-purview-triage-dlp-agent-get-started) helps security teams by evaluating alerts based on sensitivity risk, exfiltration risk, and policy risk. The agent then sorts the triaged alerts into categories that are presented in the DLP solution on the **Alerts** page. For devices, you must set up evidence collection for file activities on devices and enable evidence collection in the DLP policy rule configuration. To determine the category for each alert, the agent evaluates the following risk factors:
 
-- **Content risk**: The primary risk factor, covering sensitive content based on Microsoft-provided sensitive information types (SITs), trainable classifiers, and default sensitivity labels.
+- **Sensitivity risk**: The primary risk factor, covering sensitive content based on Microsoft-provided sensitive information types (SITs), trainable classifiers, and default sensitivity labels.
 - **Exfiltration risk**: Exfiltration of sensitive data shared externally.
 - **Policy risk**: Policy mode and rules with actions that affect alert prioritization.
 

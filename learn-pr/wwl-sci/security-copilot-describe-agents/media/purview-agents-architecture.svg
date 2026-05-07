@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" role="img" aria-label="Architectural diagram showing three Microsoft Purview agents in Security Copilot: Triage Agent in Insider Risk Management, Alert Triage Agent in Data Loss Prevention, and Data Security Posture Agent, along with their key capabilities.">
+  <!-- Background -->
+  <rect width="1100" height="660" fill="#FFFFFF"/>
+
+  <!-- Top: Title -->
+  <rect x="300" y="18" width="500" height="52" rx="8" fill="#091F2C" aria-label="Microsoft Purview Agents"/>
+  <text x="550" y="50" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">Microsoft Purview Agents</text>
+
+  <!-- Subtitle -->
+  <text x="550" y="92" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" fill="#091F2C">AI-powered agents in the Microsoft Purview embedded experience for Security Copilot</text>
+
+  <!-- Agent 1: Triage Agent in Insider Risk Management -->
+  <rect x="40" y="120" width="330" height="530" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" aria-label="Triage Agent in Insider Risk Management"/>
+  <rect x="40" y="120" width="330" height="38" rx="8" fill="#0078D4"/>
+  <rect x="40" y="144" width="330" height="14" fill="#0078D4"/>
+  <text x="205" y="145" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Triage Agent in Insider Risk Management</text>
+
+  <!-- Description -->
+  <text x="60" y="175" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Evaluates alerts based on user risk and</text>
+  <text x="60" y="192" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">activity risk; sorts into categories.</text>
+
+  <!-- Risk Factors -->
+  <text x="60" y="225" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#2A446F">Risk Factors Evaluated:</text>
+
+  <rect x="60" y="238" width="290" height="70" rx="6" fill="#F4F3F5" stroke="#0078D4" stroke-width="1" aria-label="Activity risk"/>
+  <text x="75" y="260" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Activity Risk</text>
+  <text x="75" y="278" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Highest risk of exfiltration;</text>
+  <text x="75" y="294" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">historical alert insights</text>
+
+  <rect x="60" y="318" width="290" height="70" rx="6" fill="#F4F3F5" stroke="#0078D4" stroke-width="1" aria-label="User risk"/>
+  <text x="75" y="340" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">User Risk</text>
+  <text x="75" y="358" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Priority user group; number</text>
+  <text x="75" y="374" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">of active cases</text>
+
+  <!-- Key details -->
+  <line x1="60" y1="405" x2="350" y2="405" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="60" y="428" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Trigger:</tspan> Schedule or one alert at a time</text>
+  <text x="60" y="448" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Plugin:</tspan> Microsoft Purview</text>
+  <text x="60" y="468" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Identity:</tspan> Runs as activating admin</text>
+  <text x="60" y="488" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Auth expiry:</tspan> 90 days</text>
+
+  <!-- License -->
+  <rect x="60" y="510" width="290" height="48" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="205" y="531" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">License</text>
+  <text x="205" y="549" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">M365 E3/E5/A5/F5/G5</text>
+
+  <!-- Agent 2: Alert Triage Agent in DLP -->
+  <rect x="390" y="120" width="330" height="530" rx="8" fill="#FFFFFF" stroke="#C73ECC" stroke-width="2" aria-label="Alert Triage Agent in Data Loss Prevention"/>
+  <rect x="390" y="120" width="330" height="38" rx="8" fill="#C73ECC"/>
+  <rect x="390" y="144" width="330" height="14" fill="#C73ECC"/>
+  <text x="555" y="145" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Alert Triage Agent in Data Loss Prevention (preview)</text>
+
+  <!-- Description -->
+  <text x="410" y="175" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Triages DLP alerts into categories</text>
+  <text x="410" y="192" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">on the Alerts page.</text>
+
+  <!-- Risk Factors -->
+  <text x="410" y="225" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#702573">Risk Factors Evaluated:</text>
+
+  <rect x="410" y="238" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#C73ECC" stroke-width="1" aria-label="Sensitivity risk"/>
+  <text x="425" y="260" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Sensitivity Risk</text>
+  <text x="425" y="278" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">SITs, classifiers, sensitivity labels</text>
+
+  <rect x="410" y="300" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#C73ECC" stroke-width="1" aria-label="Exfiltration risk"/>
+  <text x="425" y="322" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Exfiltration Risk</text>
+  <text x="425" y="340" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Sensitive data shared externally</text>
+
+  <rect x="410" y="362" width="290" height="52" rx="6" fill="#F4F3F5" stroke="#C73ECC" stroke-width="1" aria-label="Policy risk"/>
+  <text x="425" y="384" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Policy Risk</text>
+  <text x="425" y="402" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Policy mode and rule actions</text>
+
+  <!-- Key details -->
+  <line x1="410" y1="428" x2="700" y2="428" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="410" y="450" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Trigger:</tspan> Schedule or one alert at a time</text>
+  <text x="410" y="470" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Plugin:</tspan> Microsoft Purview</text>
+  <text x="410" y="490" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Identity:</tspan> Runs as activating admin</text>
+  <text x="410" y="510" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Auth expiry:</tspan> 90 days</text>
+
+  <!-- License -->
+  <rect x="410" y="530" width="290" height="48" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="555" y="551" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">License</text>
+  <text x="555" y="569" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">M365 E3/E5/A5/F5/G5</text>
+
+  <!-- Agent 3: Data Security Posture Agent -->
+  <rect x="740" y="120" width="330" height="530" rx="8" fill="#FFFFFF" stroke="#FF5C39" stroke-width="2" aria-label="Data Security Posture Agent (preview)"/>
+  <rect x="740" y="120" width="330" height="38" rx="8" fill="#FF5C39"/>
+  <rect x="740" y="144" width="330" height="14" fill="#FF5C39"/>
+  <text x="905" y="145" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Data Security Posture Agent (preview)</text>
+
+  <!-- Description -->
+  <text x="760" y="175" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Discovers sensitive data using natural</text>
+  <text x="760" y="192" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">language prompts across M365.</text>
+
+  <!-- Key Capabilities -->
+  <text x="760" y="225" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#73391D">Key Capabilities:</text>
+
+  <rect x="760" y="238" width="290" height="44" rx="6" fill="#F4F3F5" stroke="#FF5C39" stroke-width="1" aria-label="Natural language search"/>
+  <text x="775" y="258" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Natural Language Search</text>
+  <text x="775" y="275" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Intent-based prompts, not keywords</text>
+
+  <rect x="760" y="292" width="290" height="44" rx="6" fill="#F4F3F5" stroke="#FF5C39" stroke-width="1" aria-label="Risk-level assessments"/>
+  <text x="775" y="312" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Risk-Level Assessments</text>
+  <text x="775" y="329" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Content relevance-based risk levels</text>
+
+  <rect x="760" y="346" width="290" height="44" rx="6" fill="#F4F3F5" stroke="#FF5C39" stroke-width="1" aria-label="Exportable insight reports"/>
+  <text x="775" y="366" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Exportable Insight Reports</text>
+  <text x="775" y="383" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Download as Word documents</text>
+
+  <rect x="760" y="400" width="290" height="44" rx="6" fill="#F4F3F5" stroke="#FF5C39" stroke-width="1" aria-label="Credential scanning"/>
+  <text x="775" y="420" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">Credential Scanning</text>
+  <text x="775" y="437" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Exposed credentials across tenant</text>
+
+  <!-- Key details -->
+  <line x1="760" y1="458" x2="1050" y2="458" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="760" y="480" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Trigger:</tspan> On demand (natural language)</text>
+  <text x="760" y="500" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Plugin:</tspan> Microsoft Purview</text>
+  <text x="760" y="520" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Identity:</tspan> Agent identity (recommended)</text>
+  <text x="760" y="540" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C"><tspan font-weight="600">Scope:</tspan> SharePoint, OneDrive, Teams,</text>
+  <text x="760" y="558" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">Exchange, Copilot interactions</text>
+
+  <!-- License -->
+  <rect x="760" y="570" width="290" height="48" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1"/>
+  <text x="905" y="591" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#091F2C">License</text>
+  <text x="905" y="609" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#091F2C">M365 E5 + SCUs provisioned</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Architectural diagram showing role-based access control and permissions for agents in Security Copilot, including Owner and Contributor roles and partner agent approval flow">
+  <!-- Background -->
+  <rect width="900" height="520" fill="#FFFFFF"/>
+
+  <!-- Top: Security Copilot Platform -->
+  <rect x="150" y="20" width="600" height="40" rx="8" fill="#091F2C" aria-label="Security Copilot Platform"/>
+  <text x="450" y="45" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Security Copilot Platform</text>
+
+  <!-- Arrows down to roles -->
+  <path d="M320 60 L320 90" stroke="#091F2C" stroke-width="2" fill="none"/>
+  <path d="M316 85 L320 95 L324 85" fill="#091F2C"/>
+  <path d="M580 60 L580 90" stroke="#091F2C" stroke-width="2" fill="none"/>
+  <path d="M576 85 L580 95 L584 85" fill="#091F2C"/>
+
+  <!-- Owner Role -->
+  <rect x="160" y="95" width="320" height="130" rx="10" fill="#FFFFFF" stroke="#0078D4" stroke-width="2" aria-label="Security Copilot Owner Role"/>
+  <rect x="160" y="95" width="320" height="28" rx="10" fill="#0078D4"/>
+  <rect x="160" y="110" width="320" height="13" fill="#0078D4"/>
+  <text x="320" y="114" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Security Copilot Owner</text>
+  <text x="180" y="145" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Set up agents</text>
+  <text x="180" y="163" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Manage settings &amp; assign permissions</text>
+  <text x="180" y="181" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Build, test, publish (workspace scope)</text>
+  <text x="180" y="199" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• All platform tasks</text>
+
+  <!-- Contributor Role -->
+  <rect x="520" y="95" width="320" height="130" rx="10" fill="#FFFFFF" stroke="#C73ECC" stroke-width="2" aria-label="Security Copilot Contributor Role"/>
+  <rect x="520" y="95" width="320" height="28" rx="10" fill="#C73ECC"/>
+  <rect x="520" y="110" width="320" height="13" fill="#C73ECC"/>
+  <text x="680" y="114" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Security Copilot Contributor</text>
+  <text x="540" y="145" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Run agents</text>
+  <text x="540" y="163" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Create sessions</text>
+  <text x="540" y="181" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Interact with agent outputs</text>
+  <text x="540" y="199" font-family="Segoe UI, sans-serif" font-size="11" fill="#091F2C">• Build, test, publish (user scope)</text>
+
+  <!-- Inherited roles section -->
+  <rect x="160" y="240" width="320" height="50" rx="6" fill="#F4F3F5" stroke="#E8E6DF" stroke-width="1" aria-label="Auto-inherited owner access"/>
+  <text x="320" y="262" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#091F2C">Auto-inherited Owner access:</text>
+  <text x="320" y="278" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Global Admin • Security Admin • Compliance Admin</text>
+
+  <!-- Data access boundary -->
+  <rect x="150" y="310" width="700" height="55" rx="8" fill="#FFFFFF" stroke="#FF5C39" stroke-width="2" stroke-dasharray="6 3" aria-label="Data access boundary"/>
+  <text x="450" y="335" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#73391D">Data Access Boundary</text>
+  <text x="450" y="353" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Agent data access governed by user's existing Entra &amp; Azure RBAC roles — Security Copilot never exceeds user access</text>
+
+  <!-- Partner Agent Flow -->
+  <text x="450" y="395" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#091F2C">Partner Agent Permission Flow</text>
+
+  <!-- Flow boxes -->
+  <rect x="50" y="415" width="200" height="70" rx="8" fill="#FFFFFF" stroke="#2A446F" stroke-width="1.5" aria-label="Partner Agent accesses Microsoft data"/>
+  <text x="150" y="442" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#2A446F">Partner Agent</text>
+  <text x="150" y="458" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Accesses Microsoft</text>
+  <text x="150" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">product data</text>
+
+  <!-- Arrow -->
+  <path d="M250 450 L310 450" stroke="#091F2C" stroke-width="1.5" fill="none"/>
+  <path d="M305 446 L315 450 L305 454" fill="#091F2C"/>
+
+  <rect x="315" y="415" width="200" height="70" rx="8" fill="#FFA38B" stroke="#73391D" stroke-width="1.5" aria-label="Global Admin approves permissions"/>
+  <text x="415" y="442" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#73391D">Global Admin</text>
+  <text x="415" y="458" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Approves required</text>
+  <text x="415" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">permissions</text>
+
+  <!-- Arrow -->
+  <path d="M515 450 L575 450" stroke="#091F2C" stroke-width="1.5" fill="none"/>
+  <path d="M570 446 L580 450 L570 454" fill="#091F2C"/>
+
+  <rect x="580" y="415" width="200" height="70" rx="8" fill="#8DC8E8" stroke="#2A446F" stroke-width="1.5" aria-label="Owner or Contributor completes setup"/>
+  <text x="680" y="442" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#2A446F">Owner / Contributor</text>
+  <text x="680" y="458" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">Completes agent</text>
+  <text x="680" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#091F2C">setup</text>
+
+  <!-- Note at bottom -->
+  <text x="450" y="508" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-style="italic" fill="#091F2C">Agents not accessing Microsoft product data skip the Global Admin approval step.</text>
+</svg>

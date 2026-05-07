@@ -36,6 +36,8 @@ An AI agent can use its identity to:
 - **Delegated access (on-behalf-of)**: Act on behalf of a human user, using rights the user controls and delegates. In this flow, the agent accesses resources with the user's identity and permissions to retrieve data or perform actions the user can also do.
 - **Authenticate incoming messages**: Accept and validate requests from other clients, users, or agents using Microsoft Entra access tokens.
 
+:::image type="content" source="../media/agent-identities-capabilities.png" alt-text="Architectural diagram showing the two agent identity types in Security Copilot and the four capabilities they enable, including web service access, autonomous access, delegated access, and message authentication." lightbox="../media/agent-identities-capabilities.png":::
+
 ### Permissions for agents
 
 Permissions define the authorization level an agent is given during configuration, enabling it to access specific information or carry out its tasks. These might include reading data from solutions like Microsoft Defender External Attack Surface Management or Microsoft Threat Intelligence.

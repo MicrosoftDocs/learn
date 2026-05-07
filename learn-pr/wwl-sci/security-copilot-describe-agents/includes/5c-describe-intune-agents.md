@@ -10,7 +10,8 @@ The following Microsoft Security Copilot agents are available in Microsoft Intun
 - They run under the identity and permissions of the admin account used during setup.
 - Agent authentication expires after 90 days and must be renewed.
 - They're supported on the public cloud only and aren't supported on government clouds.
-- They require Microsoft Intune Plan 1 and Microsoft Security Copilot with sufficient security compute units (SCUs).
+- They require the Microsoft Intune Plan 1 license as a minimum.
+- Microsoft Security Copilot with sufficient security compute units (SCUs).
 
 #### Vulnerability Remediation Agent
 
@@ -21,7 +22,7 @@ When the agent runs, it analyzes data from Microsoft Defender Vulnerability Mana
 | Attribute | Description |
 |-----------|-------------|
 | **Identity** | Runs under the identity and permissions of the admin account used during setup. |
-| **License** | Microsoft Intune Plan 1, Microsoft Security Copilot with sufficient SCUs, and Microsoft Defender Vulnerability Management (provided by Defender for Endpoint P2 or Defender Vulnerability Management Standalone). |
+| **License** | Microsoft Intune Plan 1 and Microsoft Defender Vulnerability Management (provided by Defender for Endpoint P2 or Defender Vulnerability Management Standalone). |
 | **Plugins** | Microsoft Intune and Microsoft Defender. |
 | **Products** | Security Copilot, Microsoft Intune, and Microsoft Defender Vulnerability Management. |
 | **Role-based access** | **Set up**: Security Copilot Owner, Intune Read Only Operator (or custom role with Managed apps/Read, Mobile apps/Read, Device configurations/Read), and Defender Security Reader. **Use**: Security Copilot Contributor and Intune Read Only Operator (or equivalent). |
@@ -36,7 +37,7 @@ The agent analyzes these signals to assess the potential risk associated with ea
 | Attribute | Description |
 |-----------|-------------|
 | **Identity** | Runs under the identity and permissions of the admin account used during setup. |
-| **License** | Microsoft Intune Plan 1, Microsoft Entra ID P2, Microsoft Defender Vulnerability Management, and Microsoft Security Copilot with sufficient SCUs. |
+| **License** | Microsoft Intune Plan 1, Microsoft Entra ID P2, and Microsoft Defender Vulnerability Management. |
 | **Plugins** | Microsoft Intune, Microsoft Entra, Microsoft Defender XDR, and Microsoft Threat Intelligence. |
 | **Products** | Security Copilot, Microsoft Intune, Microsoft Entra ID, and Microsoft Defender. |
 | **Role-based access** | **Set up**: Security Copilot Owner, Microsoft Entra Intune Administrator, Microsoft Entra Security Reader, Entra/Identity risky user (read), and Defender Security Reader. **Use**: Security Copilot Contributor, Intune Read Only Operator (or equivalent), and the same Microsoft Entra and Defender roles. |
@@ -51,7 +52,7 @@ The agent analyzes uploaded documents or industry benchmarks and automatically i
 | Attribute | Description |
 |-----------|-------------|
 | **Identity** | Runs under the identity and permissions of the account used during setup. |
-| **License** | Microsoft Intune Plan 1 and Microsoft Security Copilot with sufficient SCUs. |
+| **License** | Microsoft Intune Plan 1 |
 | **Plugins** | Microsoft Intune. |
 | **Products** | Security Copilot and Microsoft Intune. |
 | **Role-based access** | **Set up**: Security Copilot Owner and Intune Read Only Operator (or custom role with Device configurations/Read). **Use and create policies**: Security Copilot Contributor and Intune Policy and Profile manager (or custom role with Device configurations/Create and Device configurations/Update). |
