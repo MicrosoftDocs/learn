@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-agents-microsoft-agent-365.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of governing AI agents using Microsoft Agent 365, including enabling the management interface. You then test your understanding of registering agents, applying access controls, and monitoring agent activity.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A Microsoft 365 administrator at Contoso wants to enable Microsoft Agent 365 to begin governing AI agents across the organization. Where is Microsoft Agent 365 accessed in the Microsoft 365 admin center?"
+    choices:
+    - content: "Settings > Org settings > Microsoft 365 Copilot"
+      isCorrect: false
+      explanation: "Incorrect. The Org settings area contains general Microsoft 365 Copilot configuration options but isn't the location for Microsoft Agent 365. Agent 365 is accessed through the Agents workload in the left navigation."
+    - content: "Agents > Overview (or Agents > All agents)"
+      isCorrect: true
+      explanation: "Correct. Microsoft Agent 365 is accessed in the Microsoft 365 admin center by selecting Agents from the left navigation bar. The Overview page provides the governance dashboard, and All agents provide the Agent Registry and Requests tab. A Microsoft 365 Copilot license is required to access this feature."
+    - content: "Admin centers > Power Platform > Agents"
+      isCorrect: false
+      explanation: "Incorrect. The Power Platform admin center manages Power Platform environments, Copilot Studio agents, and related configurations, but it isn't the location for Microsoft Agent 365."
+    - content: "Microsoft Entra admin center > Applications > Agent identities"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Entra admin center manages agent identities and security, not the Microsoft Agent 365 governance interface. Agent 365 is in the Microsoft 365 admin center."
+  - content: "Contoso's security policy requires that all AI agents used in the organization must be reviewed and approved before employees can interact with them. Which Microsoft Agent 365 capability enforces this?"
+    choices:
+    - content: "Agent activity monitoring"
+      isCorrect: false
+      explanation: "Incorrect. Activity monitoring tracks what agents do after they're in use. It doesn't control whether an agent must be approved before deployment."
+    - content: "Agent approval workflows"
+      isCorrect: true
+      explanation: "Correct. Microsoft Agent 365 supports approval workflows that require administrators to review and approve agents before they're available to users. This ensures only vetted agents can be deployed within the organization."
+    - content: "Conditional Access policies scoped to agent identities"
+      isCorrect: false
+      explanation: "Incorrect. Conditional Access controls authentication conditions for agent identities in Microsoft Entra. It doesn't provide a predeployment approval workflow for agents in the Microsoft 365 context."
+    - content: "Data loss prevention policies in Microsoft Purview"
+      isCorrect: false
+      explanation: "Incorrect. Data Loss Prevention (DLP) policies control how sensitive data is shared and used. They don't enforce agent preapproval workflows."
+  - content: "A security engineer at Contoso notices that one agent has been generating a high volume of interactions outside business hours over the past week. Which Microsoft Agent 365 capability surfaces this information?"
+    choices:
+    - content: "Agent access controls and usage scope restrictions"
+      isCorrect: false
+      explanation: "Incorrect. Access controls and scope restrictions define what an agent is allowed to do. They don't provide historical usage data or activity trends."
+    - content: "Agent activity monitoring and usage reporting"
+      isCorrect: true
+      explanation: "Correct. Microsoft Agent 365 provides activity monitoring and usage reporting that surfaces interaction volumes, timing patterns, and usage trends for registered agents. This data helps administrators identify anomalous behavior such as high-volume activity outside expected hours."
+    - content: "Microsoft Defender XDR AI assets inventory"
+      isCorrect: false
+      explanation: "Incorrect. The AI assets inventory in Defender XDR provides a view of AI agents and associated risk signals, but it doesn't provide the usage reporting and interaction volume trend data available in Microsoft Agent 365."
+    - content: "Microsoft Purview Audit filtered to agent activity"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview Audit captures user and admin activity across Microsoft 365 services, but it doesn't provide the agent-specific interaction volume and usage trend reporting available in Microsoft Agent 365."

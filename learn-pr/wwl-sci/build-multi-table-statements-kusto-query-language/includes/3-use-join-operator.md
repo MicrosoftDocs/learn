@@ -18,9 +18,9 @@ SecurityEvent
 
 ```
 
-The first table specified in the join is considered the Left table.  The table after the join keyword is the right table. The columns from the tables are designated, the `$left.Column` and the `$right.Column` to distinguish which tables columns you're referencing.
+The first table specified in the join is considered as the Left table. The table after the join keyword is the right table. The columns from the tables are designated, the `$left.Column` and the `$right.Column` to distinguish which tables columns you're referencing.
 
-When joining tables, you use Join flavors to determine the joining behavior.  It's essential to understand the impact of records on the left and right side based on the join flavor.  The graphic below shows which records will be kept if there's or isn't a matching record in the other dataset.  The **inner join** will only show records from the left side if there's a matching record on the right side. The right side will also require a left side record.
+When joining tables, you use Join flavors to determine the joining behavior. It's essential to understand the impact of records on the left and right side based on the join flavor. The graphic below shows which records will be kept if there's or isn't a matching record in the other dataset. The **inner join** will only show records from the left side if there's a matching record on the right side. The right side will also require a left side record.
 
 :::image type="content" source="../media/kusto-query-language-m03-01.png" alt-text="Diagram of Example join types, showing where how joins work.":::
 
@@ -32,5 +32,7 @@ When joining tables, you use Join flavors to determine the joining behavior.  It
 | kind=leftsemi| Returns all the records from the left side that have matches from the right.|
 | kind=rightsemi| Returns all the records from the right side that have matches from the left.|
 | kind=inner| Contains a row in the output for every combination of matching rows from left and right.|
-| kind=leftouter (or kind=rightouter or kind=fullouter)| Contains a row for every row on the left and right, even if it has no match. The unmatched output cells contain nulls.|
+| kind=leftouter| Contains a row for every row on the **left** side, even if it has no match on the right. Unmatched right-side cells contain nulls.|
+| kind=rightouter| Contains a row for every row on the **right** side, even if it has no match on the left. Unmatched left-side cells contain nulls.|
+| kind=fullouter| Contains a row for every row on **both** the left and right sides, even if there's no match. Unmatched cells on either side contain nulls.|
 

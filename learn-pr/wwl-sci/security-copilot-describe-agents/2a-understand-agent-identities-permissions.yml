@@ -6,10 +6,10 @@ metadata:
   description: Understand agent identities and permissions in Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 02/15/2026
+  ms.date: 05/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/2a-understand-agent-identities-permissions.md)]
