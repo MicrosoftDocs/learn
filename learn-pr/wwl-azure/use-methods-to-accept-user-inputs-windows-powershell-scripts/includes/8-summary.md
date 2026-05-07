@@ -1,22 +1,26 @@
-In this module, you learned about various methods that allow you to accept user input in PowerShell scripts. The following are the key takeaways:
+In this module, you learned about various methods that allow you to accept user input in PowerShell scripts. Key takeaways:
 
 - Use the **Read-Host** cmdlet to obtain input from users while a script is running.
 
-- The **Get-Credential** helps to use the administrative account while you're still signed in to a standard user account.
+- The **Get-Credential** cmdlet lets you use an administrative account while you're signed in to a standard user account.
 
-- To store credentials to a file, use **Export-Clixml**. For a credential object, **Export-Clixml** encrypts the credential object before storing it in an XML file. 
+- Use **Export-Clixml** to encrypt and store a credential object to an XML file.
 
-- Microsoft has released the **SecretManagement** module that you can use to store and retrieve credentials. The **SecretManagement** module is available in the PowerShell Gallery. 
+- Use the **SecretManagement** module from the PowerShell Gallery to store and retrieve credentials.
 
-- The **Out-GridView** cmdlet is primarily used to review data. However, you can also use **Out-GridView** to create a simple menu selection interface.
+- Use **Out-GridView** to review data or create a simple menu selection interface.
 
-- To identify the variables that will store parameter values, you use a **Param()** block. The variable names are defined between the parentheses. 
+- Use a **Param()** block to define the variables that store parameter values.
 
 ## Additional reading
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [Read-Host](/powershell/module/microsoft.powershell.utility/read-host)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential)
+
+- [SecretManagement and SecretStore overview](/powershell/utility-modules/secretmanagement/overview)
+
+- [About Functions Advanced Parameters](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters)
 

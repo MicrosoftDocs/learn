@@ -1,4 +1,4 @@
-To enhance the usability of your scripts, you must learn how to accept user input. This skill allows you to create scripts that can be used for multiple purposes. In addition, accepting user input allows you to create scripts that are easier for others to use. In this module, you'll learn about multiple methods for accepting user input in a script.
+Accepting user input makes your scripts more flexible and easier for others to use. In this module, you'll learn multiple methods for accepting user input in a script.
 
 ## Learning objectives
 
@@ -17,7 +17,7 @@ Familiarity with:
 - Windows networking technologies and implementation
 - Windows Server administration, maintenance, and troubleshooting
 - Windows PowerShell and its commands to perform specific tasks
-- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows client device administration (Windows 10 and Windows 11)
 - Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 - CIM and WMI technologies
 - The use of variables, arrays, and hash tables in Windows PowerShell
