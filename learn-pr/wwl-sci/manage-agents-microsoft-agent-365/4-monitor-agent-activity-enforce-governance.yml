@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-agents-microsoft-agent-365.monitor-agent-activity-enforce-governance
+metadata:
+  title: Monitor agent activity and enforce governance
+  description: Monitor AI agent activity in Microsoft Agent 365, review usage data and policy violations, and enforce organizational governance controls, maintaining visibility and accountability across deployed agents.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Monitor agent activity and enforce governance
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-monitor-agent-activity-enforce-governance.md)]

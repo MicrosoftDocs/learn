@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-agents-microsoft-agent-365.register-agents-apply-access-controls
+metadata:
+  title: Register agents and apply access controls
+  description: Register AI agents in Microsoft Agent 365 and apply organizational access controls, including approval workflows, usage policies, and scope restrictions, to ensure agents operate within defined boundaries.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Register agents and apply access controls
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-register-agents-apply-access-controls.md)]
