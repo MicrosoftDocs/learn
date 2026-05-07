@@ -17,7 +17,7 @@ abstract: |
   - Configure Conditional Access policies scoped to agent identities
   - Control agent access, and manage agent identity lifecycle events
 prerequisites: |
-  - Completion of Introduction to Microsoft Entra Agent Identity (learn.wwl.introduction-entra-agent-identity)
+  - Completion of Introduction to Microsoft Entra Agent Identity module on Learn
   - Understanding of Microsoft Entra Conditional Access policy structure
   - Familiarity with Microsoft Entra ID authentication concepts
 iconUrl: /training/achievements/generic-badge.svg
@@ -33,8 +33,8 @@ subjects:
   - identity-access
 units:
 - learn.wwl.secure-access-entra-agent-identity.introduction
-- learn.wwl.secure-access-entra-agent-identity.map-authentication-flows-ca-scope
-- learn.wwl.secure-access-entra-agent-identity.configure-ca-policies-agents
+- learn.wwl.secure-access-entra-agent-identity.authentication-flow-conditional-access
+- learn.wwl.secure-access-entra-agent-identity.configure-agent-conditional-access-policy
 - learn.wwl.secure-access-entra-agent-identity.control-agent-access-lifecycle
 - learn.wwl.secure-access-entra-agent-identity.knowledge-check
 - learn.wwl.secure-access-entra-agent-identity.summary

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.secure-access-entra-agent-identity.configure-ca-policies-agents
+uid: learn.wwl.secure-access-entra-agent-identity.configure-agent-conditional-access-policy
 metadata:
   title: Configure Conditional Access policies for agents
   description: Create, configure, and enforce Microsoft Entra Conditional Access policies scoped to AI agent identities. Then with these policies, you can block unauthorized agent sign-ins, and restrict agent capabilities.
@@ -11,4 +11,4 @@ metadata:
 title: Configure Conditional Access policies for agents
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-configure-ca-policies-agents.md)]
+  [!include[](includes/3-configure-agent-conditional-access-policy.md)]
