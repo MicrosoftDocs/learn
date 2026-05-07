@@ -4632,6 +4632,11 @@ achievements:
   title: Ingest data with Spark and Microsoft Fabric notebooks
   summary: Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.orchestrate-processes-in-fabric.badge
+  type: badge
+  title: Orchestrate processes in Microsoft Fabric
+  summary: This training takes a look at choosing between the use of a pipeline or notebook and different orchestration patterns in Microsoft Fabric.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.build-azure-machine-learning-custom-skill-for-azure-cognitive-search.badge
   type: badge
   title: Build an Azure Machine Learning custom skill for Azure AI Search
