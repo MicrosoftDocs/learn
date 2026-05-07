@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-access-entra-agent-identity.control-agent-access-lifecycle
+metadata:
+  title: Control agent access and lifecycle
+  description: Manage the full lifecycle of agent identities in Microsoft Entra Agent ID. Management includes disabling agent access through Conditional Access, blocking agent creation per product, and monitoring audit logs for lifecycle events.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Control agent access and lifecycle
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-control-agent-access-lifecycle.md)]
