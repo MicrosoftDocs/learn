@@ -3,7 +3,7 @@ Microsoft Security Copilot can be accessed through the dedicated site, referred 
 
 There are some key landmarks on the Copilot landing page (portal) to which the user can navigate.
 
-- Home menu
+- Navigation panel
 - Workspaces
 - Prompts to try
 - Prompt bar
@@ -11,15 +11,11 @@ There are some key landmarks on the Copilot landing page (portal) to which the u
 
 :::image type="content" source="../media/copilot-landing-page-new-anchors-highlighted-v2.png" lightbox="../media/copilot-landing-page-new-anchors-highlighted-v2.png" alt-text="Screen capture of the landing page for the standalone experience of Microsoft Security Copilot.":::
 
-### Home menu
+### Navigation panel
 
-The home menu is accessed by selecting the hamburger icon located on the top left corner of the Copilot landing page.
+From the navigation panel, the user can navigate as follows:
 
-:::image type="content" source="../media/home-menu-icon-home-menu-options-agents-v2.png" lightbox="../media/home-menu-icon-home-menu-options-agents-v2.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
-
-From the home menu, the user can navigate as follows:
-
-- Active Agents, which are AI-powered assistants built into Microsoft Security Copilot available for you to choose from. Depending on your role, you can either set them up or access the agent to run it. This page lists Microsoft and non-Microsoft agents that offer significant benefits for security teams and IT operations by automating routine tasks and freeing up valuable time for teams to concentrate on strategic initiatives and complex problem-solving.
+- Agents, which are AI-powered assistants built into Microsoft Security Copilot available for you to choose from. Depending on your role, you can either set them up or access the agent to run it. This page lists Microsoft and non-Microsoft agents that offer significant benefits for security teams and IT operations by automating routine tasks and freeing up valuable time for teams to concentrate on strategic initiatives and complex problem-solving.
 
     :::image type="content" source="../media/agent-list-v3.png" lightbox="../media/agent-list-v3.png" alt-text="Screen capture showing the active agents window.":::
 
