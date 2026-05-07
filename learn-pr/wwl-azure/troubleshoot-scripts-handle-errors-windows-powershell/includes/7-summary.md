@@ -23,8 +23,8 @@ In this module, you learned about adding more troubleshooting information to scr
 
 To learn more, go through the following documents:
 
-- [About Preference Variables](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_preference_variables)
+- [About Preference Variables](/powershell/module/microsoft.powershell.core/about/about_preference_variables)
 
-- [About Error Handling](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_error_handling)
+- [About Error Handling](/powershell/module/microsoft.powershell.core/about/about_error_handling)
 
-- [Set-PSBreakpoint](https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/set-psbreakpoint)
+- [Set-PSBreakpoint](/powershell/module/microsoft.powershell.utility/set-psbreakpoint)
