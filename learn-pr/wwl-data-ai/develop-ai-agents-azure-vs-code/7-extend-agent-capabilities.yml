@@ -2,9 +2,10 @@
 uid: learn.wwl.develop-ai-agents-azure-vs-code.extend-agent-capabilities
 title: Extend agent capabilities with tools
 metadata:
+  zone_pivot_groups: video-or-text
   title: Extend Agent Capabilities with Tools
   description: Learn how to add built-in tools and Model Context Protocol servers to extend agent functionality.
-  ms.date: 02/12/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

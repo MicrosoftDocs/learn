@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=68ea9577-bfed-4c82-81a1-d64269f66af7]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once you have a declarative agent (created in the Foundry portal or through the SDK), the real work begins — configuring its behavior, instructions, and properties to match your requirements. The Microsoft Foundry VS Code extension provides comprehensive configuration options through both the visual Agent Designer and direct YAML file editing, giving you flexibility in how you work.
 
 > [!NOTE]
@@ -105,3 +116,5 @@ As you build more complex agents, these practices help maintain quality and reli
 **Keep instructions focused** - Each agent should have a clear, specific purpose. Agents trying to do too many things perform inconsistently.
 
 Configuring agents in Visual Studio Code provides powerful capabilities for creating sophisticated automation. The combination of visual design tools and direct YAML editing enables rapid development while maintaining the precision needed for production deployments.
+
+::: zone-end

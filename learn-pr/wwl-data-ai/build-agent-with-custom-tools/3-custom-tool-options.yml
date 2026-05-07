@@ -2,9 +2,10 @@
 uid: learn.wwl.build-agent-with-custom-tools.custom-tool-options
 title: Options for implementing custom tools
 metadata:
+  zone_pivot_groups: video-or-text
   title: Options for implementing custom tools
   description: "Explore the options for implementing custom tools in your agent."
-  ms.date: 02/24/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

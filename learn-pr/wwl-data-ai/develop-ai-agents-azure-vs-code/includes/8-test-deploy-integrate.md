@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=411684d4-9d90-42f0-9285-6521f5095180]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Testing, deploying, and publishing agents are critical steps in moving from development to production. Microsoft Foundry provides comprehensive capabilities for validating agent behavior, deploying to your Foundry project, and publishing agents as callable endpoints that external consumers and applications can use.
 
 ## Testing strategies for agents
@@ -134,3 +145,5 @@ Running agents in production requires attention to several operational areas:
 - **Cost management** - Monitor token usage, set response length limits, and implement rate limiting to prevent unexpected spikes.
 - **Error handling** - Implement retry logic with exponential backoff for transient failures. Handle rate limiting with backoff strategies. Validate inputs before sending to agents.
 - **Conversation management** - Agent Application endpoints currently support only the stateless Responses API. Store conversation history in your client for multi-turn experiences.
+
+::: zone-end

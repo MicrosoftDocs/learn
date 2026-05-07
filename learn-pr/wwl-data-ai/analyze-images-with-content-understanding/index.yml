@@ -8,7 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Analyze images with Content Understanding
 summary: Learn how to analyze images with Azure Content Understanding.
 abstract: |

@@ -8,7 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: module
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Build knowledge-enhanced AI agents with Foundry IQ
 summary: |
   Learn how to connect AI agents with enterprise knowledge using Foundry IQ. You'll explore how Retrieval Augmented Generation (RAG) solves the knowledge problem for AI agents, discover how Foundry IQ provides a shared knowledge platform that multiple agents can access, improve retrieval quality through data optimization, and configure agent instructions for consistent, cited responses.

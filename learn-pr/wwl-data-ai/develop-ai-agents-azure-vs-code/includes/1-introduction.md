@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1ec6e724-797d-44d8-a5cd-3951db2869b0]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Imagine you work for a healthcare organization that needs to automate patient interactions while maintaining high security standards. You need an AI agent that can handle patient inquiries, schedule appointments, and access real-time medical information. Building such a system traditionally requires extensive infrastructure management, significant coding effort, and careful attention to data security. Microsoft Foundry Agent Service offers a solution that simplifies this complexity while maintaining enterprise-grade security.
 
 Microsoft Foundry Agent Service is a fully managed platform that empowers you to build, deploy, and scale AI agents without managing underlying compute and storage resources. Whether you prefer working through the Foundry portal or developing directly in Visual Studio Code, you have flexible options for creating intelligent agents that automate workflows and enhance user experiences.
@@ -21,3 +32,8 @@ By the end of this module, you'll be able to:
 - Familiarity with Azure and the Azure portal
 - An understanding of generative AI (recommended: [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/) module)
 - Basic familiarity with Visual Studio Code
+
+::: zone-end
+
+
+
