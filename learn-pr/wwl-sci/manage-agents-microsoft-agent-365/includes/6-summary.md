@@ -19,4 +19,4 @@ In this module, you learned how to:
 You now have the tools to govern AI agents across your organization's Microsoft 365 environment. As agent adoption grows, the discipline of consistent approval criteria, documented blocking decisions, and regular activity review will determine whether your AI security posture strengthens or erodes over time.
 
 > [!TIP]
-> To explore Microsoft Agent 365 capabilities and governance workflows in depth, see [Microsoft Agent 365 overview](https://learn.microsoft.com/en-us/microsoft-agent-365/overview).
+> To explore Microsoft Agent 365 capabilities and governance workflows in depth, see [Microsoft Agent 365 overview](/microsoft-agent-365/overview).
