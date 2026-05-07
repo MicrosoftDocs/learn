@@ -1,4 +1,4 @@
-IP routing forwards data packets based on the destination IP address. This routing is based on routing tables, and while entries are made automatically, you might need to add, remove, or modify routing table entries manually. The **NETTCPIP** PowerShell module also includes cmdlets used to manage the routing table for Windows servers and devices.
+IP routing forwards data packets based on the destination IP address. This routing is based on routing tables, and while entries are made automatically, you might need to add, remove, or modify routing table entries manually. The `NetTCPIP` PowerShell module also includes cmdlets used to manage the routing table for Windows servers and devices.
 
 The cmdlets for managing routing table entries have the noun “NetRoute” in the names.
 
@@ -8,19 +8,19 @@ The following table lists common cmdlets for managing routing table entries and 
 
 | Cmdlet              | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
-| **New-NetRoute**    | Creates an entry in the IP routing table                     |
-| **Get-NetRoute**    | Retrieves an entry from the IP routing table                 |
-| **Set-NetRoute**    | Modifies properties of an entry in the IP routing table      |
-| **Remove-NetRoute** | Deletes an entry from the IP routing table                   |
-| **Find-NetRoute**   | Identifies the best local IP address and route to reach a  remote address |
+| `New-NetRoute`    | Creates an entry in the IP routing table                     |
+| `Get-NetRoute`    | Retrieves an entry from the IP routing table                 |
+| `Set-NetRoute`    | Modifies properties of an entry in the IP routing table      |
+| `Remove-NetRoute` | Deletes an entry from the IP routing table                   |
+| `Find-NetRoute`   | Identifies the best local IP address and route to reach a remote address |
 
 ## Creating an IP routing table entry
 
-You can use the **New-NetRoute** cmdlet to create routing table entries on a Windows computer. The **New-NetRoute** cmdlet requires you to identify the network interface and destination prefix.
+You can use the `New-NetRoute` cmdlet to create routing table entries on a Windows computer. The `New-NetRoute` cmdlet requires you to identify the network interface and destination prefix.
 
-The following table lists common parameters for the **New-NetRoute** cmdlet.
+The following table lists common parameters for the `New-NetRoute` cmdlet.
 
-*Table 2: Parameters for New-NetRoute*
+*Table 2: Parameters for `New-NetRoute`*
 
 | Parameter               | Description                                                  |
 | ---------------------------- | ------------------------------------------------------------ |
