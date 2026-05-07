@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.manage-agents-microsoft-agent-365
+metadata:
+  title: Manage Agents Using Microsoft Agent 365
+  description: "Govern AI agents in your Microsoft 365 environment using Microsoft Agent 365. Enable and navigate the Agent 365 management interface, register agents and apply access controls, and monitor agent activity to enforce organizational governance policies."
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
+title: Manage agents using Microsoft Agent 365
+summary: Use Microsoft Agent 365 to govern AI agents in your Microsoft 365 environment. Enable the Agent 365 management interface, register agents and apply access controls, and monitor agent activity and usage to enforce your organization's AI governance policies.
+abstract: |
+  After completing this module, you can:
+  - Enable and navigate the Microsoft Agent 365 management interface in the Microsoft 365 admin center
+  - Register agents and apply access controls to enforce organizational policies
+  - Monitor agent activity and enforce governance controls using Microsoft Agent 365
+prerequisites: |
+  - Experience administering Microsoft 365 with Microsoft 365 Copilot licensing
+  - Familiarity with Microsoft agent concepts and governance requirements
+  - Understanding of organizational AI governance policies
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-agents-microsoft-agent-365.introduction
+- learn.wwl.manage-agents-microsoft-agent-365.enable-navigate-microsoft-agent-365
+- learn.wwl.manage-agents-microsoft-agent-365.register-agents-apply-access-controls
+- learn.wwl.manage-agents-microsoft-agent-365.monitor-agent-activity-enforce-governance
+- learn.wwl.manage-agents-microsoft-agent-365.knowledge-check
+- learn.wwl.manage-agents-microsoft-agent-365.summary
+badge:
+  uid: learn.wwl.manage-agents-microsoft-agent-365.badge
