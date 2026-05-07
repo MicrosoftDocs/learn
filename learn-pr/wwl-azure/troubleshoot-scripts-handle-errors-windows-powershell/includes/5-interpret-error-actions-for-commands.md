@@ -1,12 +1,12 @@
-When a PowerShell command generates an error, that error is either a *terminating* error or a *non-terminating* error. A terminating error stops the command because Windows PowerShell can't continue processing. A non-terminating error allows processing to continue — the script or pipeline keeps running. Non-terminating errors are more common than terminating errors.
+PowerShell errors are either *terminating* or *non-terminating*. A terminating error stops the command immediately — PowerShell can't recover and continue. With a non-terminating error, the script or pipeline keeps running. Non-terminating errors are far more common.
 
-Consider the following command:
+For example:
 
 ```powershell
 Get-CimInstance -ClassName Win32_BIOS -ComputerName LON-SVR1,LON-DC1
 ```
 
-If **LON-SVR1** isn't available on the network, **Get-CimInstance** generates an error when it tries to query that computer. However, the command continues with the next computer, **LON-DC1**. That makes this a non-terminating error.
+If **LON-SVR1** isn't available on the network, **Get-CimInstance** generates an error. However, the command continues with the next computer, **LON-DC1**. That makes this a non-terminating error.
 
 ## $ErrorActionPreference
 
@@ -19,30 +19,30 @@ If **LON-SVR1** isn't available on the network, **Get-CimInstance** generates an
 - **Stop** treats the error as terminating and stops running.
 - **Break** enters the PowerShell debugger when an error occurs, enabling interactive investigation of the script state at the point of failure.
 
-To set the `$ErrorActionPreference` variable, use the following syntax:
+To set `$ErrorActionPreference`:
 
 ```powershell
 $ErrorActionPreference = 'Inquire'
 ```
 
 > [!NOTE]
-> Be selective about using **SilentlyContinue** for `$ErrorActionPreference`. You might think that this makes your script better for users, but it could make troubleshooting difficult.
+> Be selective about using **SilentlyContinue** for `$ErrorActionPreference`. This might seem to make your script friendlier, but it makes troubleshooting much harder.
 
 To trap and manage errors in your script, commands must use the **Stop** action. You can trap and manage only terminating errors.
 
 ## -ErrorAction parameter
 
-All Windows PowerShell commands have the `-ErrorAction` parameter. This parameter has the alias `-EA`. The parameter accepts the same values as `$ErrorActionPreference` and overrides it for that command. If you expect an error on a command, use `-ErrorAction` to set that command's error action to **Stop**. Setting `-ErrorAction Stop` lets you trap and manage errors for that command while leaving all other commands to use `$ErrorActionPreference`. For example:
+All PowerShell commands have the `-ErrorAction` parameter (alias: `-EA`). It accepts the same values as `$ErrorActionPreference` and overrides it for that command. If you expect an error, set `-ErrorAction Stop` on that command. This lets you trap and manage errors there while all other commands continue to use `$ErrorActionPreference`. For example:
 
 ```powershell
 Get-CimInstance -ClassName Win32_BIOS -ComputerName LON-SVR1,LON-DC1 -ErrorAction Stop
 ```
 
-Modify `$ErrorActionPreference` only when you expect an error outside of a Windows PowerShell command, such as when you're running a method like the following:
+Use `$ErrorActionPreference` only when you expect an error outside of a PowerShell command — for example, when calling a method:
 
 ```powershell
 Get-Process –Name Notepad | ForEach-Object { $PSItem.Kill() }
 ```
 
-In this example, the **Kill()** method might generate an error. Because it's not a Windows PowerShell command, it doesn't have the `-ErrorAction` parameter. Instead, set `$ErrorActionPreference` to **Stop** before running the method, and set it back to **Continue** after.
+The **Kill()** method might generate an error. Because it's not a PowerShell command, it doesn't have the `-ErrorAction` parameter. Instead, set `$ErrorActionPreference` to **Stop** before running the method, and reset it to **Continue** after.
 
