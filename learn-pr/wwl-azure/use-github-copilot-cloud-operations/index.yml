@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.use-github-copilot-cloud-operations
+metadata:
+  title: "Use GitHub Copilot for Cloud Operations"
+  description: "Learn how to use GitHub Copilot to author Infrastructure as Code templates, apply prompt engineering techniques, and generate Azure CLI and PowerShell scripts for cloud operations tasks."
+  ms.date: 05/05/2026
+  author: petender
+  ms.author: petender
+  ms.topic: module
+  ms.service: azure-devops
+  ai-usage: ai-generated
+title: Use GitHub Copilot for cloud operations
+summary: Learn how to use GitHub Copilot to accelerate Infrastructure as Code authoring, apply effective prompt engineering techniques for Bicep templates, and generate and translate Azure CLI and PowerShell scripts.
+abstract: |
+  By the end of this module, you're able to:
+  - Explain what Infrastructure as Code is and how GitHub Copilot changes the IaC authoring workflow.
+  - Apply prompt engineering techniques to generate and refine Bicep templates using GitHub Copilot.
+  - Generate, enhance, and translate Azure CLI and Azure PowerShell scripts using GitHub Copilot.
+prerequisites: |
+  - Basic understanding of GitHub and version control
+  - Familiarity with Azure cloud services and Azure resource types
+  - Access to GitHub Copilot
+  - Visual Studio Code installed with the GitHub Copilot extension
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+products:
+- github
+- azure
+subjects:
+- devops
+- cloud-computing
+units:
+- learn.wwl.use-github-copilot-cloud-operations.introduction
+- learn.wwl.use-github-copilot-cloud-operations.prompt-engineering-for-infrastructure-as-code
+- learn.wwl.use-github-copilot-cloud-operations.azure-cli-assistance-github-copilot
+- learn.wwl.use-github-copilot-cloud-operations.exercise-github-copilot-cloud-operations
+- learn.wwl.use-github-copilot-cloud-operations.knowledge-check
+- learn.wwl.use-github-copilot-cloud-operations.summary
+badge:
+  uid: learn.wwl.use-github-copilot-cloud-operations.badge
