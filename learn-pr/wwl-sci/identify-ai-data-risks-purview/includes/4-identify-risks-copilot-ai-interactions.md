@@ -21,10 +21,10 @@ The **Reports** section in the DSPM for AI (classic) dashboard displays AI inter
 
 For event-level detail, use **Activity explorer**. Activity explorer displays a chronological list of AI interaction events. Each entry shows the activity type, the sensitivity label or sensitive information type involved, the user who triggered the event, the AI application, and a timestamp. Activity types include:
 
-- **AI interaction—a Copilot or agent interaction where prompts and responses were captured
-- **AI website visit—a user browsed to an external AI site
-- **Sensitive info types—sensitive information was detected during an AI interaction
-- **DLP rule match—a DLP policy matched during an AI interaction
+- **AI interaction** - a Copilot or agent interaction where prompts and responses were captured
+- **AI website visit** - a user browsed to an external AI site
+- **Sensitive info types** - sensitive information was detected during an AI interaction
+- **DLP rule match** - a DLP policy matched during an AI interaction
 
 Risk types for Copilot interactions fall into several categories. **Prompt-based risks** occur when a user includes sensitive content directly in a Copilot prompt—for example, copying text from a confidential document into the Copilot chat window. **Response-based risks** occur when Copilot generates a response that references or incorporates content from labeled files the user has access to. **Browser-based risks** occur when a user pastes sensitive content into an external AI site.
 

@@ -8,7 +8,7 @@ metadata:
   ms.author: roberts
   ms.topic: unit
   ai-usage: ai-assisted
-title: Configure DSPM for AI
+title: Configure Data Security Posture Management (DSPM) for AI
 durationInMinutes: 4
 content: |
   [!include[](includes/2-configure-purview-ai.md)]
