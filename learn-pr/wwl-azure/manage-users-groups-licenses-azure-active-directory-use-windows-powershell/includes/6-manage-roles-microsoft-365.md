@@ -17,7 +17,7 @@ In Microsoft 365, roles are used to assign administrative permissions to user ac
 
 ## Managing roles with Microsoft Entra PowerShell
 
-Microsoft Entra PowerShell requires you to identify whether a role is already in use before you can assign it to a user. If no users have been assigned to a role, then it exists only as a template, and you need to enable the role before you can add users to it. You can use the **Get-EntraDirectoryRole** cmdlet to review the roles that are enabled. Use the **Get-EntraDirectoryRoleTemplate** cmdlet to review the roles that aren't yet enabled.
+Microsoft Entra PowerShell requires you to identify whether a role is already in use before you can assign it to a user. If no users have been assigned to a role, then it exists only as a template, and you need to enable the role before you can add users to it. You can use the `Get-EntraDirectoryRole` cmdlet to review the roles that are enabled. Use the `Get-EntraDirectoryRoleTemplate` cmdlet to review the roles that aren't yet enabled.
 
 The following example depicts how to enable the User Administrator role. When you enable the role, you need to refer to the object ID of the template:
 
@@ -26,7 +26,7 @@ $roleTemplate = Get-EntraDirectoryRoleTemplate | Where-Object {$_.DisplayName -e
 Enable-EntraDirectoryRole -RoleTemplateId $roleTemplate.Id
 ```
 
-After you enable the role, you can add a role member to assign administrative permissions by using the **Add-EntraDirectoryRoleMember** cmdlet. The following example depicts how to add an account to the User Administrator role. The *-ObjectId* parameter refers to the object ID of the role. The *-RefObjectId* parameter refers to the object ID of the user account:
+After you enable the role, you can add a role member to assign administrative permissions by using the `Add-EntraDirectoryRoleMember` cmdlet. The following example depicts how to add an account to the User Administrator role. The `-ObjectId` parameter refers to the object ID of the role. The `-RefObjectId` parameter refers to the object ID of the user account:
 
 ```powershell
 $user = Get-EntraUser -UserId AbbieP@adatum.com
@@ -34,4 +34,4 @@ $role = Get-EntraDirectoryRole | Where-Object {$_.DisplayName -eq 'User Administ
 Add-EntraDirectoryRoleMember -ObjectId $role.Id -RefObjectId $user.Id
 ```
 
-To list existing members of a role, use **Get-EntraDirectoryRoleMember**. To remove a member from a role, use **Remove-EntraDirectoryRoleMember**.
+To list existing members of a role, use `Get-EntraDirectoryRoleMember`. To remove a member from a role, use `Remove-EntraDirectoryRoleMember`.
