@@ -26,7 +26,6 @@ subjects:
   - artificial-intelligence
 modules:
   - learn.wwl.get-started-ai-fundamentals
-  - learn.wwl.get-started-ai-in-foundry
   - learn.wwl.fundamentals-machine-learning
   - learn.wwl.design-machine-learning-model-training-solution
   - learn.wwl.fundamentals-generative-ai
