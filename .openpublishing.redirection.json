@@ -216,6 +216,57 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    }, 
+     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/2-concepts.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    }, 
+         {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/3-components.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/4-microsoft-foundry.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/5-foundry-projects.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/6-about-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/7-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-in-foundry/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-with-ai-in-azure/",
+      "redirect_document_id": false
+    },
+    ###
+    {
       "source_path_from_root": "/learn-pr/azure/high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-azure-arc-sql-managed-instance",
       "redirect_document_id": false
