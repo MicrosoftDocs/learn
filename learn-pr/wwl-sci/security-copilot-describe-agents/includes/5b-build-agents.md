@@ -12,7 +12,7 @@ Custom agents use AI-driven automation to streamline tasks by combining the foll
 - **Instructions** - System-level directives that an agent must follow.
 - **Feedback** - Store response in memory to guide subsequent runs.
 
-Custom agents integrate with various security workflows, helping your organization maintain a proactive and adaptive security posture. The solution supports workflow-driven automation that responds to events or schedules, executing a series of actions based on the agent structure and guidance from Large Language Models (LLMs).
+Custom agents integrate with various security workflows, helping your organization maintain a proactive and adaptive security posture. The solution supports workflow-driven automation that responds to events or schedules, executing a series of actions based on the agent structure and guidance from Large Language Models (LLMs). Custom agents can be **interactive** (respond to user input in real time) or **automated** (triggered by events or schedules).
 
 Developers can choose from different experiences to build agents.
 
@@ -22,9 +22,9 @@ Developers can choose from different experiences to build agents.
 | **Model Context Protocol (MCP)** | **[MCP tools](/copilot/security/developer/mcp-overview)**: Create agents using natural language in an MCP compatible IDE using MCP tools. |
 | **Upload Plugins** | **[YAML Manifest](/copilot/security/developer/build-agent-manifest)**: Build and upload your agent manifest. |
 
-Whatever experience you choose, natural language or the agent builder, the experience converges in a YAML manifest file that is deployed as an agent to Security Copilot or Security Store for partners. The agent development process follows a structured workflow: **Build**, **Test**, and **Publish**.
+Whatever experience you choose, natural language or the agent builder, the experience converges in a YAML manifest file that is deployed as an agent to Security Copilot or Security Store for partners. The agent development process follows a structured workflow: **Build**, **Test**, and **Publish**. Publishing permissions are role-based: a Copilot contributor can publish agents at user scope, while a Copilot owner can publish agents at workspace scope.
 
-### Natural Language Agent Creation (NL2Agent)
+## Natural Language Agent Creation (NL2Agent)
 
 The Natural Language Agent Creation method allows you to build agents simply by describing what you want in conversational language. Based on your description, Security Copilot understands your intent, suggests tools and instructions, and autogenerates the agent YAML file, which can be further customized.
 
@@ -34,6 +34,7 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 - Quick and intuitive agent creation
 - Guided experience with suggested prompts
 - Seamless transition to the agent builder to finalize configuration, publish, and test
+- The final output is always an agent definition YAML file
 
 **What you do:**
 
@@ -42,8 +43,8 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 - Engage in a conversational workflow where Security Copilot asks clarifying questions
 - Review and approve the automatically generated agent configuration
 - Select **View agent configuration** to transition to the agent builder, where you finalize your agent
-- Once the agent is configured, select **Publish**. You must publish your agent before you can test it.
-- Once published, you **test** you agent.
+- Once the agent is configured, select **Publish**
+- Once published, **test** your agent
 
 
 # [Build agent](#tab/build-agent)
@@ -65,7 +66,7 @@ The Natural Language Agent Creation method allows you to build agents simply by 
 
 ## Agent builder
 
-The agent builder provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface. On the top navigation bar, there are two tabs: **Build** and **Test**. Use the **Build** tab to define your agent and configure its tools. The **Test** tab lets you validate the agent's responses, but you must currently first publish your agent before you can test it.
+The agent builder provides a comprehensive form-based experience for creating agents from scratch using the Security Copilot platform's graphical interface. On the top navigation bar, there are two tabs: **Build** and **Test**. Use the **Build** tab to define your agent and configure its tools. The **Test** tab lets you validate the agent's responses.
 
 You can configure the following sections in the agent builder:
 
@@ -91,7 +92,7 @@ You can also use the **Copilot** button to open a Chat interface that appears on
 
 ---
 
-Once you have completed the configuration of your agent, you must currently publish it before you can test it.
+Once you have completed the configuration of your agent, publish it to make it available for testing.
 
 ## YAML upload method
 
@@ -100,7 +101,7 @@ If you prefer not to use natural language prompts or the form-based agent builde
 **Key advantages:**
 
 - Full programmatic control over agent definition
-- Version control and iteration management capabilities
+- Version control and iteration management
 - Reusable configurations across multiple agents
 - Integration with existing development workflows
 
@@ -124,12 +125,6 @@ If you prefer not to use natural language prompts or the form-based agent builde
 ## Model Context Protocol (MCP) tools
 
 Model Context Protocol (MCP) is an open protocol that enables seamless integration between LLM applications and external data sources and tools. The collection of Security Copilot agent creation MCP tools that are part of the [Microsoft Sentinel MCP server](/azure/sentinel/datalake/sentinel-mcp-overview) enables you to create agents using natural language directly within developer environments that host an MCP client, such as GitHub Copilot in Visual Studio Code.
-
-The MCP tools support the following capabilities:
-
-- Understand your intent to discover relevant tools (skills) within Security Copilot.
-- Autogenerate an agent YAML file, which can be further customized.
-- Deploy the agent to Security Copilot at user scope or workspace scope.
 
 Developers can quickly begin building agents by prompting the MCP tools with a natural language request, such as "Build me an agent that can triage and respond to compromised accounts." The MCP tools generate an agent YAML file and support iterative development through conversational input with the AI assistant, and finally deploy the agent to Security Copilot.
 
