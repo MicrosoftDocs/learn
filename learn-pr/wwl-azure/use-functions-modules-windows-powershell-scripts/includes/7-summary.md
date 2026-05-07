@@ -14,10 +14,10 @@ In this module, you learned about functions and modules. Key takeaways:
 
 To learn more, go through the following documents:
 
-- [About Functions](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions)
+- [About Functions](/powershell/module/microsoft.powershell.core/about/about_functions)
 
-- [About Scopes](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_scopes)
+- [About Scopes](/powershell/module/microsoft.powershell.core/about/about_scopes)
 
-- [About Language Modes](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes)
+- [About Language Modes](/powershell/module/microsoft.powershell.core/about/about_language_modes)
 
-- [About Functions Advanced Parameters](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters)
+- [About Functions Advanced Parameters](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters)
