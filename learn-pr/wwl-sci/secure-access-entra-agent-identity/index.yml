@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.secure-access-entra-agent-identity
+metadata:
+  title: Secure Access for Microsoft Entra Agent Identity
+  description: "Secure AI agent identities by applying Conditional Access policies through Microsoft Entra Agent Identity. Map authentication flows, configure CA policies scoped to agents, and control agent access and lifecycle events to reduce identity-based risk."
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: entra-id
+  ai-usage: ai-assisted
+title: Secure access for Microsoft Entra Agent Identity
+summary: Apply Conditional Access controls to AI agent identities in Microsoft Entra Agent Identity. Map how agents authenticate, configure policies that enforce access conditions, and manage the agent identity lifecycle to reduce risk from compromised or over-privileged agents.
+abstract: |
+  After completing this module, you can:
+  - Map how AI agents authenticate and identify where Conditional Access applies
+  - Configure Conditional Access policies scoped to agent identities
+  - Control agent access, and manage agent identity lifecycle events
+prerequisites: |
+  - Completion of Introduction to Microsoft Entra Agent Identity module on Learn
+  - Understanding of Microsoft Entra Conditional Access policy structure
+  - Familiarity with Microsoft Entra ID authentication concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - entra-id
+  - entra
+subjects:
+  - security
+  - identity-access
+units:
+- learn.wwl.secure-access-entra-agent-identity.introduction
+- learn.wwl.secure-access-entra-agent-identity.authentication-flow-conditional-access
+- learn.wwl.secure-access-entra-agent-identity.configure-agent-conditional-access-policy
+- learn.wwl.secure-access-entra-agent-identity.control-agent-access-lifecycle
+- learn.wwl.secure-access-entra-agent-identity.knowledge-check
+- learn.wwl.secure-access-entra-agent-identity.summary
+badge:
+  uid: learn.wwl.secure-access-entra-agent-identity.badge
