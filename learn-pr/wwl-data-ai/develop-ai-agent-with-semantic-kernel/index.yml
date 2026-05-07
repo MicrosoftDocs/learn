@@ -6,7 +6,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.date: 02/24/2026
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
 title: Develop an AI agent with Microsoft Agent Framework

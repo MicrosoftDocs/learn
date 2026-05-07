@@ -10,7 +10,7 @@ metadata:
   ms.author: berryivor
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ms.custom: ai-learning-hub
 title: Select, deploy, and evaluate Microsoft Foundry models
 summary: Explore how to select appropriate models from the model catalog using

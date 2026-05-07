@@ -2,9 +2,10 @@
 uid: learn.wwl.develop-ai-agents-azure-vs-code.set-up-vs-code
 title: Set up Visual Studio Code for agent development
 metadata:
+  zone_pivot_groups: video-or-text
   title: Set Up Visual Studio Code for Agent Development
   description: Learn how to install and configure the Microsoft Foundry extension for Visual Studio Code.
-  ms.date: 02/12/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

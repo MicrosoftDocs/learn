@@ -8,7 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Develop a multi-agent solution with Microsoft Foundry Agent Service
 summary: Break down complex tasks with intelligent collaboration. Learn how to design multi-agent solutions using connected agents.
 abstract: |

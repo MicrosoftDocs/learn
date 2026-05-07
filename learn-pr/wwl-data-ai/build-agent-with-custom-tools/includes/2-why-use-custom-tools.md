@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1047753e-f5b2-4c6d-89d1-6b306cd99b07]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Microsoft Foundry Agent Service offers a powerful platform for integrating custom tools to enhance productivity and provide tailored solutions for specific business needs. By using these custom tools, businesses can achieve greater efficiency and effectiveness in their operations.
 
 ## Why use custom tools?
@@ -53,3 +64,5 @@ Custom tools within the Foundry Agent Service enable users to extend the capabil
 - **Outcome**: Enhanced learning experiences, increased student engagement, and streamlined administrative tasks.
 
 These examples demonstrate how custom tools within the Foundry Agent Service can be used across industries to address unique challenges, drive efficiency, and deliver value.
+
+::: zone-end

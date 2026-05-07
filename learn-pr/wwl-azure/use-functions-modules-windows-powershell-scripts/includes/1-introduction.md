@@ -1,4 +1,4 @@
-When you create many scripts, you'll have snippets of code that you want to reuse. You'll also have snippets of code that you want to reuse within the same script. Rather than having the same code display multiple times in a script, you can create a function that displays once in the script, but is called multiple times. If you need to use the same code across multiple scripts, then you can put the function into a module that can be shared by multiple scripts. In this module, you'll learn to create functions and modules.
+Scripts often reuse the same code — within a single script or across many. Rather than repeating that code, you can create a function that you define once and reuse as needed. If you need the same function across multiple scripts, you can store it in a module that any script can share. In this module, you'll learn to create functions and modules.
 
 ## Learning objectives
 
@@ -16,7 +16,7 @@ Familiarity with:
 - Windows networking technologies and implementation
 - Windows Server administration, maintenance, and troubleshooting
 - Windows PowerShell and its commands to perform specific tasks
-- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows client device administration (Windows 10 and Windows 11)
 - Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 - CIM and WMI technologies
 - The use of variables, arrays, and hash tables in Windows PowerShell

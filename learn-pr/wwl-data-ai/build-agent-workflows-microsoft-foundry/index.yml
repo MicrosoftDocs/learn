@@ -6,7 +6,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.date: 2/18/2026
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
 title: Build agent-driven workflows using Microsoft Foundry

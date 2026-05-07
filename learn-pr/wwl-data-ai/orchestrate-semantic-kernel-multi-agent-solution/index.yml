@@ -6,7 +6,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.date: 02/24/2026
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
 title: Orchestrate a multi-agent solution using the Microsoft Agent Framework
 summary: Learn how to use the Microsoft Agent Framework SDK to develop your own AI agents that can collaborate for a multi-agent solution.
