@@ -37,3 +37,11 @@ union Security*
 | summarize count() by Type
 
 ```
+
+When using wildcard unions, you often need to know which source table each row came from. Use the `withsource` parameter to add a column that identifies the source table for each row.
+
+```kusto
+union withsource=SourceTable Security*
+| summarize count() by SourceTable
+
+```

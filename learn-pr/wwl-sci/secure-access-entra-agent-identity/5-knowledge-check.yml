@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-access-entra-agent-identity.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of securing Microsoft Entra Agent ID identities. Test subject areas include authentication flow mapping, Conditional Access policy configuration, and agent lifecycle management.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "Contoso's security team wants to prevent any new Copilot Studio agents from authenticating to Microsoft services unless they meet specific access conditions. Which Microsoft Entra capability enforces this at sign-in time?"
+    choices:
+    - content: "Microsoft Entra Privileged Identity Management (PIM)"
+      isCorrect: false
+      explanation: "Incorrect. PIM manages just-in-time access for privileged roles but doesn't control authentication conditions at sign-in for agent identities."
+    - content: "Microsoft Entra Conditional Access"
+      isCorrect: true
+      explanation: "Correct. Conditional Access evaluates authentication requests from agent identities against defined conditions—such as compliant device, named location, or sign-in risk—and grants or blocks access accordingly at sign-in time."
+    - content: "Microsoft Entra Identity Protection"
+      isCorrect: false
+      explanation: "Incorrect. Identity Protection detects risky sign-ins and users, and can feed risk signals into Conditional Access policies. However, it doesn't directly enforce access conditions—that's the role of Conditional Access."
+    - content: "Microsoft Entra access reviews"
+      isCorrect: false
+      explanation: "Incorrect. Access reviews periodically validate whether users or service principals should retain access to resources. They don't enforce conditions at sign-in time."
+  - content: "A security engineer needs to disable all agents created by a specific AI product in Microsoft Entra Agent ID, without deleting the agent identities. What is the recommended approach?"
+    choices:
+    - content: "Remove the agent's application registration from Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Incorrect. Removing the application registration permanently deletes the identity. If the goal is to disable access while retaining the identity record, a Conditional Access block policy targeting the agent sign-in is the correct approach."
+    - content: "Create a Conditional Access policy that blocks sign-in for the agent identity"
+      isCorrect: true
+      explanation: "Correct. A Conditional Access block policy targeted at agent identities prevents authentication without deleting the identity. To scope the policy to agents from a specific AI product, target the relevant agent service principals or their parent blueprint. This preserves the audit trail and identity record while stopping authentication."
+    - content: "Revoke the agent's Microsoft Graph API permissions"
+      isCorrect: false
+      explanation: "Incorrect. Revoking API permissions reduces what an agent can do after it authenticates, but it doesn't prevent the agent from authenticating in the first place."
+    - content: "Set the agent identity's account enabled property to false in Microsoft Graph"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Graph exposes properties on service principal objects, directly setting properties via API isn't the recommended management interface for agent identities at scale. To disable a category of agents from a specific AI product without deleting them, a Conditional Access block policy is the recommended approach—it applies tenant-wide without modifying each agent identity object individually."
+  - content: "An administrator at Contoso wants to ensure the Microsoft Entra audit log captures all agent creation events for a specific product. What should the administrator monitor in the audit log?"
+    choices:
+    - content: "The 'Update application' category filtered to the agent product's display name"
+      isCorrect: false
+      explanation: "Incorrect. 'Update application' events reflect changes to existing registrations, not the creation of new agent identities."
+    - content: "The 'Add service principal' operation filtered to the agent product's service"
+      isCorrect: true
+      explanation: "Correct. When an AI product creates an agent identity in Microsoft Entra Agent ID, the event is recorded in the audit log as 'Add service principal.' Filtering by the product's associated service or application name surfaces new agent creation events."
+    - content: "The 'Add member to role' category filtered to the AI application"
+      isCorrect: false
+      explanation: "Incorrect. 'Add member to role' events track role assignments, not the creation of agent identities."
+    - content: "The 'Sign-in' log filtered to non-interactive sign-ins from the agent identity"
+      isCorrect: false
+      explanation: "Incorrect. Sign-in logs record authentication events, not identity creation events. To capture agent creation, the audit log's 'Add service principal' operation is the correct source."
+  - content: "A security engineer creates a new Conditional Access policy to block a legacy Copilot Studio agent. What should the engineer do before switching the policy to Enabled?"
+    choices:
+    - content: "Delete the agent's service principal to confirm the policy targets the correct object"
+      isCorrect: false
+      explanation: "Incorrect. Deleting the service principal permanently removes the agent identity. The correct approach is to deploy the policy in report-only mode and review sign-in logs to validate the target scope before enforcing."
+    - content: "Deploy the policy in report-only mode and review sign-in logs for 24–48 hours"
+      isCorrect: true
+      explanation: "Correct. Report-only mode evaluates the policy against every authentication request and logs what would happen without actually blocking access. Reviewing sign-in logs for at least 24–48 hours confirms the policy targets the intended agents and reveals any unintended matches before enforcement begins."
+    - content: "Apply the policy only to a test tenant to avoid affecting production agents"
+      isCorrect: false
+      explanation: "Incorrect. Testing in a separate tenant doesn't validate issues on the production agent identities and service principals you intend to target. Report-only mode evaluates the policy against real production authentication requests without blocking them."
+    - content: "Assign the policy to all users first, then narrow the scope to agent identities"
+      isCorrect: false
+      explanation: "Incorrect. Assigning a block policy to all users before narrowing scope risks disrupting production user access. Policies targeting agent identities should be scoped correctly from creation, then validated in report-only mode before enforcement."
