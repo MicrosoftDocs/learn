@@ -54,4 +54,4 @@ Key capabilities include:
 | **Role-based access** | Agent configuration is per-user. Other users in the same tenant can configure the agent using their own identity. |
 | **Trigger** | Interactive—runs when a user submits a natural language prompt. |
 
-:::image type="content" source="../media/security-analyst-agent-info-v2.png" lightbox="../media/security-analyst-agent-info-v2.png"  alt-text="Screen capture of the Security Analyst agent set up page.":::
+:::image type="content" source="../media/security-analyst-agent-info-v2.png" lightbox="../media/security-analyst-agent-info-v2.png"  alt-text="Screen capture of the Security Analyst agent setup page.":::
