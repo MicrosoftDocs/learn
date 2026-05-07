@@ -2,9 +2,10 @@
 uid: learn.wwl.build-agent-with-custom-tools.why-use-custom-tools
 title: Why use custom tools
 metadata:
+  zone_pivot_groups: video-or-text
   title: Why use custom tools
   description: "Understand the benefits of using custom tools with your agent."
-  ms.date: 02/24/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

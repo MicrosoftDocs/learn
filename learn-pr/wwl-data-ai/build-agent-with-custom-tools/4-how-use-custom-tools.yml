@@ -2,9 +2,10 @@
 uid: learn.wwl.build-agent-with-custom-tools.how-use-custom-tools
 title: How to integrate custom tools
 metadata:
+  zone_pivot_groups: video-or-text
   title: How to integrate custom tools
   description: "Learn how to integrate custom tools into your agent. This unit covers function calling, Azure Function integration, and OpenAPI specification integration."
-  ms.date: 02/24/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

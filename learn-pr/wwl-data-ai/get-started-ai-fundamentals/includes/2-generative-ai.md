@@ -23,7 +23,7 @@ The ability to generate content is based on a *language model*, which has been t
 
 ![Diagram of a generative AI application in which a user chats with a language model.](../media/generative-ai.png)
 
-Users interact with generative AI language models through *prompts* - natural language statements of questions. The language model in a generative AI solution uses the prompt to initiate the generation of a meaningful response.
+Users interact with generative AI language models through *prompts* - natural language statements or questions. The language model in a generative AI solution uses the prompt to initiate the generation of a meaningful response.
 
 Generative AI models encapsulate *semantic* relationships between language elements (that's a fancy way of saying that the models "know" how words relate to one another), and that's what enables them to generate a meaningful sequence of text.
 
