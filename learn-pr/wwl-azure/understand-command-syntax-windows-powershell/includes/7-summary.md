@@ -1,17 +1,17 @@
-In this module, you've learned about the cmdlet structure and the parameters for using Windows PowerShell cmdlets. You've also learned how to use tab completion and how to display **About** files content. The following are the key takeaways:
+In this module, you've learned about the cmdlet structure and the parameters for using PowerShell cmdlets. You've also learned how to use tab completion and how to display `About` files content. The following are the key takeaways:
 
- -  The common structure cmdlet creators use, is the Verb-Noun format. This helps you predict both a cmdlet's name and its syntax, thus making it much easier to discover and use cmdlets.
+ -  The common structure cmdlet creators use, is the Verb-Noun format. This format helps you predict both a cmdlet's name and its syntax, thus making it much easier to discover and use cmdlets.
  -  Parameters modify the actions that a cmdlet performs. You can specify no parameters, one parameter, or many parameters for a cmdlet.
  -  Tab completion is a PowerShell feature that improves the speed and ease of finding and entering cmdlets and parameters.
- -  In addition to the help content relating to commands, **About** help files contain documentation about the PowerShell scripting language, operators, and other details. This information doesn't specifically relate to a single command, but to global shell techniques and features.
+ -  In addition to the help content relating to commands, `About` help files contain documentation about the PowerShell scripting language, operators, and other details. This information doesn't specifically relate to a single command, but to global shell techniques and features.
 
 ## Additional reading
 
 To learn more, go through the following documents:
 
- - [About Command Syntax](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_command_syntax)
+ - [About Command Syntax](/powershell/module/microsoft.powershell.core/about/about_command_syntax)
 
- - [About Parameters](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters)
+ - [About Parameters](/powershell/module/microsoft.powershell.core/about/about_parameters)
 
- - [About Tab Expansion](https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_tab_expansion)
+ - [About Tab Expansion](/powershell/module/microsoft.powershell.core/about/about_tab_expansion)
 
