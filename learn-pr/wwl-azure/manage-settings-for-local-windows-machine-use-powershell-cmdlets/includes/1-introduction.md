@@ -7,7 +7,7 @@ In this module, you'll learn about common PowerShell cmdlets that can be used to
 After completing this module, you'll be able to:
 
  -  Describe the cmdlets for managing Windows devices.
- -  Describe the cmdlets for managing local permissions with Windows PowerShell.
+ -  Describe the cmdlets for managing local permissions with PowerShell.
 
 ## Prerequisites
 
@@ -15,4 +15,4 @@ Familiarity with:
 
  -  Windows networking technologies and implementation.
  -  Windows Server administration, maintenance, and troubleshooting.
- -  Windows PowerShell and its commands to perform specific tasks.
+ -  PowerShell and its commands to perform specific tasks.
