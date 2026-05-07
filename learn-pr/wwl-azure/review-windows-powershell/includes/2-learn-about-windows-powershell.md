@@ -8,13 +8,13 @@ Windows PowerShell superseded the Windows command-line interface (**cmd.exe**) a
 - Tab completion and prediction.
 - Support for command and parameter aliases.
 - Chaining commands that use the Pipeline feature.
-- A robust in-console help system
+- A robust in-console help system.
 
-Initially, Windows PowerShell was a platform built on the .NET Framework and only worked on Windows operating systems. However, with its recent releases, PowerShell uses the .NET Core and can run on Windows, macOS, and Linux platforms. Due to their multi-platform support, these recent releases are referred to as PowerShell (rather than Windows PowerShell).
+Initially, Windows PowerShell was a platform built on the .NET Framework and only worked on Windows operating systems. However, with its recent releases, PowerShell uses the .NET Core and can run on Windows, macOS, and Linux platforms. Due to their multi-platform support, Microsoft refers to these releases as PowerShell (rather than Windows PowerShell).
 
 ## A scripting language
 
-*Commands* provide PowerShell’s main functionality. There are many varieties of commands, including cmdlets (pronounced *command-lets*), functions, filters, scripts, applications, configurations, and workflows. Commands are building blocks that you piece together by using the Windows PowerShell scripting language. Using commands enables you to create custom solutions to complex administrative problems. Alternatively, you can run commands directly within the PowerShell console to complete a single task. The console is the CLI for PowerShell and is the primary way in which you'll interact with PowerShell.
+*Commands* provide PowerShell’s main functionality. There are many varieties of commands, including cmdlets (pronounced *command-lets*), functions, filters, scripts, applications, configurations, and workflows. Commands are building blocks that you piece together by using the PowerShell scripting language. Using commands enables you to create custom solutions to complex administrative problems. Alternatively, you can run commands directly within the PowerShell console to complete a single task. The console is the CLI for PowerShell and is the primary way in which you'll interact with PowerShell.
 
 Cmdlets use a Verb-Noun naming convention. For example, you can use the **Get-Command** cmdlet to list all cmdlets and functions that are registered in the command shell. The verb identifies the action for the cmdlet to perform, and the noun identifies the resource on which the cmdlet will perform its action.
 
@@ -25,10 +25,10 @@ Microsoft server applications and cloud services provide specialized cmdlets tha
 PowerShell incorporates the PowerShell Desired State Configuration (DSC) management framework. This framework enables you to manage enterprise infrastructure with code to help with:
 
 - Using declarative configurations and repeatable scripts for repeatable deployments.
-- Enforcing configurations settings and identifying when configuration drift takes place from standard requirements.
+- Enforcing configuration settings and identifying when configuration drift takes place from standard requirements.
 - Deploying configuration settings using push or pull models.
 
-Applications and services with PowerShell–based administrative functions are consistent in how they work. This attribute means that you can quickly apply the lessons you learned. Also, when you use automation scripts to administer a software application, you can reuse them among other applications.
+Applications and services with PowerShell-based administrative functions are consistent in how they work. This attribute means that you can quickly apply the lessons you learned. Also, when you use automation scripts to administer a software application, you can reuse them among other applications.
 
 ## Windows PowerShell versions
 
@@ -39,7 +39,7 @@ As you learn about PowerShell, it's important to understand the various versions
 
 ### Windows PowerShell
 
-Windows PowerShell is available exclusively for the Windows OS. Windows PowerShell 1.0 was introduced in 2006 as a component installable on Windows XP Service Pack 2 (SP2), Windows Server 2003 SP1, and Windows Vista. It was also an optional component of Windows Server 2008. In 2009, PowerShell 2.0 was integrated into Windows 7 and Windows Server 2008 R2. All versions of Windows PowerShell up to and including 5.1, which is the version available with Windows 10 and Windows 11, are integrated with a Windows OS.
+Windows PowerShell is available exclusively for the Windows OS. Microsoft introduced Windows PowerShell 1.0 in 2006 as a component installable on Windows XP Service Pack 2 (SP2), Windows Server 2003 SP1, and Windows Vista. It was also an optional component of Windows Server 2008. In 2009, Microsoft integrated PowerShell 2.0 into Windows 7 and Windows Server 2008 R2. All versions of Windows PowerShell up to and including 5.1, which is the version available with Windows 10 and Windows 11, are integrated with a Windows OS.
 
 Windows PowerShell is an OS component, so it receives the same lifecycle support and licensing agreements as its parent OS.
 
@@ -52,7 +52,7 @@ PowerShell is shipped, installed, and configured separately from Windows PowerSh
 
 PowerShell and Windows PowerShell are separately installed and you can run supported commands using either environment.
 
-Standard Windows licensing agreements don't include PowerShell. Rather, it's supported under Microsoft paid support, Microsoft Enterprise Agreements, and Microsoft Software Assurance. Community support is also available. 
+Standard Windows licensing agreements don't include PowerShell. Rather, Microsoft supports it under Microsoft paid support, Microsoft Enterprise Agreements, and Microsoft Software Assurance. Community support is also available. 
 
 ## Version release history
 

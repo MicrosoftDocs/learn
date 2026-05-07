@@ -4,7 +4,7 @@ Visual Studio Code (VS Code) is a Microsoft script editor that provides a rich a
 - Windows PowerShell 5.1 for Windows operating systems only
 
 > [!NOTE]
-> Visual Studio Code is different from Visual Studio. You can download VS Code from the [Visual Studio Code Download](https://aka.ms/visual-studio-code-2) page and the PowerShell extension from the [Visual Studio Marketplace](https://aka.ms/visual-studio-marketplace). You can also install the extension directly from within VS Code.
+> Visual Studio Code is different from Visual Studio. You can download VS Code from the [Visual Studio Code Download](https://code.visualstudio.com/download) page and the PowerShell extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com). You can also install the extension directly from within VS Code.
 
 ## ISE Mode in Visual Studio Code
 
@@ -17,4 +17,5 @@ Enabling ISE Mode makes several notable changes to the way VS Code works, includ
 - Enabling ISE-like tab completion.
 - Providing several ISE themes to make the VS Code editor look like the ISE.
 
-> **Additional information:** For more information on using Visual Studio Code and replicating the ISE experience, refer to [Using Visual Studio Code for PowerShell Development](https://aka.ms/using-visual-studio-code-for-powershell-development).
+> [!NOTE]
+> For more information on using Visual Studio Code and replicating the ISE experience, see [Using Visual Studio Code for PowerShell development](/powershell/scripting/dev-cross-plat/vscode/using-vscode).
