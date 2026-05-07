@@ -12,9 +12,9 @@ It helps to understand which tool to reach for, before generating scripts.
 
 Both tools cover the same Azure operations. Choosing between them is largely a question of which language your team is most comfortable with and which environment your scripts run in. GitHub Copilot handles both fluently and can translate between them.
 
-## Generating Azure CLI scripts with Copilot
+## Generate Azure CLI scripts with Copilot
 
-### Starting simple
+### Start simple
 
 For straightforward resource creation, a direct prompt works well. Copilot knows the `az` command structure and can generate correct syntax for common operations.
 
@@ -35,7 +35,7 @@ az group create \
 
 For a single command, the syntax is straightforward. The real value appears when you ask GitHub Copilot to build a complete script with multiple steps, variables, and error handling.
 
-### Building a full provisioning script
+### Build a full provisioning script
 
 In this more advanced approach, your prompt might contain more details, like the example here:
 
@@ -62,7 +62,7 @@ Copilot generates a script with a clean variable block, idempotency checks, and 
 - **Existence check before creation**: makes the script idempotent (safe to rerun)
 - **Exit on failure (`set -e`)**: prevents silent failures from propagating
 
-### Adding idempotency
+### Add idempotency
 
 Idempotency means the script produces the same result, whether run once or 10 times. Which is critical for automation scripts that may run on a schedule or as part of CI/CD pipelines.
 
@@ -89,7 +89,7 @@ else
 fi
 ```
 
-### Adding parameter validation
+### Add parameter validation
 
 Another useful use case is using parameter validation, as part of your prompt. See the example here:
 
@@ -103,7 +103,7 @@ Add a validation block at the top of the script that:
 
 This pattern makes scripts suitable for use in automation pipelines where inputs come from environment variables or CI/CD parameters rather than hardcoded values.
 
-## Generating Azure PowerShell scripts with GitHub Copilot
+## Generate Azure PowerShell scripts with GitHub Copilot
 
 The same natural language approach works for (Azure) PowerShell. Copilot understands Az module cmdlets and generates idiomatic PowerShell rather than translating CLI syntax verbatim.
 
@@ -155,7 +155,7 @@ if (-not $RG) {
 
 Notice that Copilot naturally produces PowerShell-idiomatic patterns: `param()` blocks, `try/catch`, `-ErrorAction SilentlyContinue`, and the `$(...)` expansion syntax. It doesn't try to replicate bash patterns in PowerShell.
 
-## Translating between CLI and PowerShell
+## Translate between CLI and PowerShell
 
 One of the most practical uses of GitHub Copilot for infrastructure work is converting scripts between tools. Common scenarios are:
 
@@ -163,7 +163,7 @@ One of the most practical uses of GitHub Copilot for infrastructure work is conv
 - Documentation examples are in CLI but your team uses PowerShell
 - You want to standardize all automation to one language
 
-An example of such a transformation prompt, could be similar to this example:
+An example of such a transformation prompt could be similar to this example:
 
 ```
 Translate the following Azure CLI bash script to Azure PowerShell.
@@ -197,7 +197,7 @@ Understanding the mappings helps you verify Copilot's translations:
 
 ## Practical patterns for Copilot-Assisted CLI work
 
-### Generating commands for unfamiliar resources
+### Generate commands for unfamiliar resources
 
 Even experienced Azure engineers encounter Azure Resource types they worked with before. Copilot removes the documentation lookup:
 
@@ -211,7 +211,7 @@ and a system-assigned managed identity. Output the login server at the end.
 
 Copilot generates the correct `az acr create` command with the right flag names. Including  flags that are easy to forget, such as `--sku`, `--admin-enabled false`, and `--identity [system]`.
 
-### Building cleanup scripts
+### Build cleanup scripts
 
 Cleanup scripts are essential in training environments and development. Copilot generates them quickly. An example of such prompt might look like this:
 
@@ -223,7 +223,7 @@ Generate an Azure CLI script that:
 - Reports how many groups were deleted at the end
 ```
 
-### Generating cross-subscription scripts
+### Generate cross-subscription scripts
 
 Enterprise environments often rely on multiple Azure subscriptions. With GitHub Copilot, this added complexity is easy to handle. Include that specification as part of your prompt, as shown here:
 

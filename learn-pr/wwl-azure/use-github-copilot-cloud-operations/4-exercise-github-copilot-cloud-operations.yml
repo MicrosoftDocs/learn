@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.use-github-copilot-cloud-operations.exercise-github-copilot-cloud-ops
+uid: learn.wwl.use-github-copilot-cloud-operations.exercise-github-copilot-cloud-operations
 title: "Exercise - Use GitHub Copilot for cloud operations"
 metadata:
   title: "Exercise - Use GitHub Copilot for Cloud Operations"
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/4-exercise-github-copilot-cloud-ops.md)]
+  [!include[](includes/4-exercise-github-copilot-cloud-operations.md)]

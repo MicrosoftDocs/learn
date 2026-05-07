@@ -13,15 +13,17 @@ Every strong infrastructure prompt contains some combination of four elements:
 Context tells Copilot what kind of work you're doing and what constraints apply. Without context, Copilot makes assumptions. Those assumptions may not match your environment.
 
 **Less good prompt**: "Create a storage account in Bicep."
+
 **Optimized prompt**: "Create a Bicep resource definition for an Azure Storage Account. Running in a production environment in the Australia East region. The account should use Standard_LRS and require HTTPS-only access."
 
-Context includes: the target environment (dev/staging/production), the region, the tool or language, existing constraints (naming conventions, tagging policies), and any standards you want followed.
+Context includes the target environment (dev/staging/production), the region, the tool or language, existing constraints (naming conventions, tagging policies), and any standards you want followed.
 
 ### Requirements
 
 Requirements are the specific capabilities, properties, or behaviors the resource must have. Being explicit about requirements prevents Copilot from omitting things it can't infer.
 
 For example:
+
 `The storage account must: have soft delete enabled for blobs (7 days), use a private endpoint, disable public blob access, and be tagged with Environment, Owner, and CostCenter.`
 
 List requirements as bullet points or numbered items when you have several. Copilot handles structured lists well and is less likely to skip items.
@@ -30,7 +32,8 @@ List requirements as bullet points or numbered items when you have several. Copi
 
 Tell Copilot what kind of output you expect. For IaC, it usually means to specify the language or tool, whether you want a complete file or just a snippet, and how parameters should be handled.
 
-For example: 
+For example:
+
 `Output a complete Bicep file with parameters at the top, a resource block in the middle, and outputs at the bottom. Use decorators to add descriptions to all parameters.`
 
 If you don't specify a format, Copilot chooses one. It may choose inline hardcoded values when you wanted parameters, or a snippet when you wanted a full file.
@@ -40,6 +43,7 @@ If you don't specify a format, Copilot chooses one. It may choose inline hardcod
 Constraints tell Copilot what to avoid. Easy to overlook, yet important, especially for security or compliance.
 
 For example:
+
 `Do not use any deprecated API versions. Do not expose any management ports (22, 3389) in NSG rules. Do not hardcode any subscription IDs or tenant IDs.`
 
 ## Zero-shot prompting
@@ -87,16 +91,16 @@ By showing Copilot your existing pattern, you get output that blends into your c
 
 Role-based prompting asks Copilot to adopt a specific perspective before generating output. It's effective for security reviews and architectural guidance.
 
-An example in the security context, good look like this:
+An example in the security context, could look like this:
 
 ```
 You are a senior Azure security engineer reviewing Bicep templates for enterprise
 production deployments. Review the following template and identify:
-1. Any security misconfigurations or missing security controls
-2. Resources that expose public endpoints unnecessarily
-3. Missing diagnostic settings or logging configuration
-4. RBAC assignments that are too broad
-5. Any deprecated API versions
+- Any security misconfigurations or missing security controls
+- Resources that expose public endpoints unnecessarily
+- Missing diagnostic settings or logging configuration
+- RBAC assignments that are too broad
+- Any deprecated API versions
 
 For each issue found, explain the risk and provide the corrected Bicep snippet.
 ```
@@ -151,27 +155,38 @@ This five-step approach consistently produces better output than a single comple
 
 ### Being too vague
 
-**Problem:** prompt: `Create a Bicep template for my infrastructure`
+**Problem:** using a prompt like `Create a Bicep template for my infrastructure`
+
 **Result:** A minimal template with guessed values, wrong resource types, and no security settings.
+
 **Fix:** Be specific about what resources you need, what SKUs, what regions, and what security requirements apply.
 
 ### Forgetting security constraints
 
 **Problem:** Generating a VM template without specifying that management ports shouldn't be open
+
 **Result:** An NSG that allows inbound SSH and RDP from the internet. Which is a critical security misconfiguration
+
 **Fix:** Explicitly state security requirements as part of every infrastructure prompt. Don't assume Copilot defaults to secure
 
 ### Not specifying API version preferences
 
-**Problem:** prompt: `Use the latest API version`
+**Problem:** using a prompt like `Use the latest API version`
+
 **Result:** Without MCP, Copilot may still use versions from its training data, which could be outdated.
+
 **Fix:** Enable the Bicep MCP server or explicitly state the API version if known. At minimum, ask Copilot to flag if it's uncertain about the API version.
 
 ### Asking for too much in one prompt
 
-**Problem:** A 20-line prompt asking for a complete Azure landing zone with networking, identity, governance, and monitoring. All at once.
-**Result:** A long template with many gaps, missing cross-resource references, and properties Copilot guessed at.
-**Fix:** Use iterative refinement. Build the template in layers and validate each layer before adding the next.
+**Problem:** 
+A 20-line prompt asking for a complete Azure landing zone with networking, identity, governance, and monitoring. All at once.
+
+**Result:** 
+A long template with many gaps, missing cross-resource references, and properties Copilot guessed at.
+
+**Fix:** 
+Use iterative refinement. Build the template in layers and validate each layer before adding the next.
 
 ### Not providing context for existing codebases
 
@@ -218,11 +233,11 @@ Use when auditing an existing template:
 
 ```
 Review this [tool] template for:
-1. Security misconfigurations
-2. Missing required properties
-3. Deprecated API versions
-4. Resources exposed to the public internet unnecessarily
-5. Missing tags or diagnostic settings
+- Security misconfigurations
+- Missing required properties
+- Deprecated API versions
+- Resources exposed to the public internet unnecessarily
+- Missing tags or diagnostic settings
 
 For each issue, explain the problem and provide the corrected snippet.
 
@@ -271,7 +286,7 @@ The questions to ask when reviewing Copilot's infrastructure output:
 - **Are resources correctly cross-referenced?** Ensure symbolic names, not hardcoded IDs, are used for resource references.
 - **Is it idempotent?** Would running this template twice create conflicts or duplicates?
 
-Treat Copilot's output as a first draft, not a final answer, is the mindset that produces the best results.
+Treating Copilot's output as a first draft, not a final answer, is the mindset that produces the best results.
 
 ## Key takeaways
 

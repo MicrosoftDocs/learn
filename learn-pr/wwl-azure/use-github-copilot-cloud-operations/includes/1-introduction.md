@@ -35,7 +35,7 @@ Each step has friction. Writing a Bicep template from scratch requires knowledge
 
 The result is that IaC is often treated as a specialist skill. Engineers who don't write templates regularly, fall back on portal select, breaking the consistency that IaC is meant to provide.
 
-## Declarative vs. Imperative approaches
+## Declarative vs. imperative approach
 
 There are two fundamental styles of IaC. Understanding the difference helps you choose the right tool and craft better prompts for GitHub Copilot.
 
@@ -87,7 +87,7 @@ Inline suggestions work best for continuing patterns, already established in the
 
 ### Copilot chat
 
-Copilot Chat (`Ctrl+Alt+I`) is a conversation interface where you can ask questions, describe what you want built, paste existing code for review, or request explanations.
+Copilot chat (`Ctrl+Alt+I`) is a conversation interface where you can ask questions, describe what you want built, paste existing code for review, or request explanations.
 
 Chat is better than inline suggestions for tasks that require more context. Examples such as generating an entire template from scratch, refactoring a complex file, or asking for an explanation of how a resource works.
 
@@ -99,10 +99,10 @@ MCP allows Copilot to connect to external tools and data sources. The **Bicep MC
 
 Infrastructure definitions have qualities that make them good candidates for AI-assisted generation:
 
-- **They are highly structured** Resource definitions follow schemas. Properties are based on known types, valid values, and required/optional designations. This structured nature makes it easier for a model to produce syntactically correct output.
-- **They are pattern-rich** Most Azure deployments use a relatively small set of common resource types: virtual networks, storage accounts, compute resources, and identity. These patterns appear frequently in training data, meaning Copilot relies on many examples.
-- **They are expensive to research manually** Finding the correct combination of API version, required properties, and valid SKUs for an unfamiliar resource type can take significant time. Copilot compresses that research into a prompt.
-- **They are safe to iterate** You validate before you deploy. A wrong suggestion from Copilot is caught at `az bicep build` or `what-if` before it touches any real resources. This safety net encourages experimentation.
+- **They are highly structured**: Resource definitions follow schemas. Properties are based on known types, valid values, and required/optional designations. This structured nature makes it easier for a model to produce syntactically correct output.
+- **They are pattern-rich**: Most Azure deployments use a relatively small set of common resource types: virtual networks, storage accounts, compute resources, and identity. These patterns appear frequently in training data, meaning Copilot relies on many examples.
+- **They are expensive to research manually**: Finding the correct combination of API version, required properties, and valid SKUs for an unfamiliar resource type can take significant time. Copilot compresses that research into a prompt.
+- **They are safe to iterate**: You validate before you deploy. A wrong suggestion from Copilot is caught at `az bicep build` or `what-if` before it touches any real resources. This safety net encourages experimentation.
 
 ## Key takeaways
 
