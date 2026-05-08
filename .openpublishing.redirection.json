@@ -216,6 +216,151 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.recognize-synthesize-speech.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/introduction-to-ai-on-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-ai-apps-agents/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/2-understand-speech.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/3-get-started-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/3a-use-azure-speech.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/4-exercise-transcribe-speech-use-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/recognize-synthesize-speech/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/2-azure-ai-vision.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/3-image-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/4-face-service.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/5-azure-ai-foundry.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/6-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-computer-vision-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-vision-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/2-azure-ai-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/3-azure-ai-vision.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/4-content-understanding.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/5-document-intelligence.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/6-ai-search.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/7-exercise.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/ai-information-extraction/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-information-extraction/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-language-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-text-analysis-azure/",
       "redirect_document_id": false
