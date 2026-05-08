@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-ai-data-risks-purview.identify-risks-copilot-ai-interactions
+metadata:
+  title: Identify risks in Copilot and AI app interactions
+  description: Review sensitive data risks surfaced from Copilot and AI application interactions in the Microsoft Purview DSPM for AI dashboard, and interpret findings to prioritize remediation.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Identify risks in Copilot and AI app interactions
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-identify-risks-copilot-ai-interactions.md)]
