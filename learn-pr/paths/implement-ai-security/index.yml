@@ -36,10 +36,9 @@ subjects:
   - cloud-security
   - artificial-intelligence
 modules:
-- learn.wwl.identify-ai-data-risks-purview
 - learn.wwl.secure-access-entra-agent-identity
 - learn.wwl.analyze-ai-identity-risks-defender-xdr
-- learn.wwl.enable-protection-copilot-studio-agents
+- learn.wwl.enable-realtime-protection-copilot-studio-agents
 - learn.wwl.configure-ai-gateway-security-foundry
 - learn.wwl.azure-ai-foundry-configure-manage-guardrails
 - learn.wwl.defender-for-cloud-ai-protect-workloads
