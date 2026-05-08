@@ -29,7 +29,7 @@ Examples include:
 These experiences help reduce context switching and support more efficient workflows across research, communication, and collaboration tasks.
 
 > [!IMPORTANT]
-> Some Copilot+ PC features have language, region, or hardware requirements. Feature availability varies by device. For the latest details, see [Copilot+ PC FAQs](https://www.microsoft.com/en-us/windows/copilot-plus-pcs).
+> Some Copilot+ PC features have language, region, or hardware requirements. Feature availability varies by device. For the latest details, see [Copilot+ PC FAQs](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs?msockid=2600a68726456a7030cfb26d27b46b1e#compare:~:text=Frequently%20asked%20questions).
 
 ## Security and governance
 
