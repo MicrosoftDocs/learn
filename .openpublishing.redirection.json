@@ -216,6 +216,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.recognize-synthesize-speech.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-speech-azure/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/introduction-to-ai-on-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-ai-apps-agents/",
       "redirect_document_id": false
