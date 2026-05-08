@@ -29,6 +29,7 @@ modules:
 - learn.wwl.get-started-data-warehouse
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 - learn-wwl.query-data-warehouse-microsoft-fabric
+- learn.wwl.get-started-copilot-fabric-data-warehouse
 - learn.wwl.monitor-fabric-data-warehouse
 - learn-wwl.secure-data-warehouse-in-microsoft-fabric
 trophy:
