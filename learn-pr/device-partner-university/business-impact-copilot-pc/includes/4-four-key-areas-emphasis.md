@@ -1,35 +1,60 @@
-There are four primary ways that Copilot+ PCs enhance business impact. They are: 
+As organizations adopt AI-powered workflows, the impact of AI extends beyond individual features or devices. Copilot+ PCs support modern business environments by combining on-device AI, cloud-connected services, and Windows 11 Pro capabilities into a unified platform.
 
-- Powerful performance for transformative impact
-- Unlock productivity superpowers
-- Powerful security designed for AI
-- Turbocharge your business impact
+These capabilities help organizations improve productivity, strengthen security, and support more flexible and responsive work experiences.
 
-Let's explore each of these key areas of emphasis in more detail: 
+## Performance and responsiveness
 
-## Powerful performance for transformative impact
+Copilot+ PCs include NPUs designed to efficiently process AI workloads directly on the device. This enables responsive AI experiences while helping reduce power consumption and minimize delays caused by cloud-only processing.
 
-Business success is accelerated with a turbocharged NPU (Neural Processing Unit), for an unmatched experience with lightning speed, smooth performance, and richer AI. Unlike the NPUs found in other Windows 11 PCs, Copilot+ PCs feature NPUs capable of a minimum of 40 TOPS (Trillions of Operations per Second)—making them up to five times faster than the most popular five-year-old Windows PCs still in use today.¹
+Organizations can benefit from:
 
-## Unlock productivity superpowers
+- Faster responsiveness for supported AI experiences
+- Real-time processing for collaboration and productivity features
+- Improved multitasking during AI-assisted workflows
+- More efficient power usage for AI workloads
 
-With unique AI experiences, you can uncover new opportunities, solve problems faster, and create compelling content. Copilot+ PCs are designed to help you get more done with less work. For instance, you can find something you’ve seen on your Copilot+ PC faster than ever using universal AI-powered Recall (preview). Copilot+ PCs also have the fastest implementation of Microsoft 365 apps.
+These capabilities help employees stay productive during demanding workflows while supporting more consistent experiences across different work environments.
 
-## Powerful security designed for AI
+## Productivity workflows
 
-Copilot+ PCs safeguard your most sensitive information. Like all Windows 11 Pro devices, Copilot+ PCs are designed to be secure from the moment they’re powered on. All Copilot+ PCs are Secured-core PCs and include a Microsoft Pluton security co-processor-providing extra protection for your most sensitive data.
+Copilot+ PCs integrate AI experiences directly into Windows 11 workflows to help users reduce manual steps and work more efficiently.
 
-## Turbocharge your business impact
+Examples include:
 
-Copilot+ PCs put AI and blazing performance at your service, so your team can respond to business needs with speed, agility, and innovation. Organizations with Copilot+ PCs are on the forefront of AI innovation—with the best power to performance efficiency of any Windows PC and incredible, all day battery life.²
+- **Click to Do**—Identifies actionable content on screen and suggests relevant next steps.
+- **Improved Windows Search**—Uses AI-enhanced contextual search to help users locate files and information more efficiently.
+- **Live Captions**—Provides real-time translation and captioning across audio sources.
+- **Windows Studio Effects**—Enhances audio and video quality during meetings and collaboration.
 
-## The power of an NPU
+These experiences help reduce context switching and support more efficient workflows across research, communication, and collaboration tasks.
 
-You may wonder why NPUs are so important. Let’s consider the following scenario.
+> [!IMPORTANT]
+> Some Copilot+ PC features have language, region, or hardware requirements. Feature availability varies by device. For the latest details, see [Copilot+ PC FAQs](https://www.microsoft.com/windows/business/devices/copilot-plus-pcs?msockid=2600a68726456a7030cfb26d27b46b1e#compare:~:text=Frequently%20asked%20questions).
 
-There's a video feed, and you ask an AI tool to identify faces in this feed and count every face that it saw. The NPU, CPU, and GPU can all perform this task. But the NPU is designed to this far more effectively. Because the NPU is a chip that is designed specifically to handle AI workflows, it's able to complete this task faster while generating far less heat and using much less energy. As AI becomes more prevalent, PCs need this functionality to handle ever evolving user demands that rely on AI.
+## Security and governance
 
-### Disclaimers
+Like other Windows 11 Pro devices, Copilot+ PCs include built-in security and management capabilities designed to help organizations maintain control over devices, users, and AI experiences.
 
-1. Tested May 2024 using Cinebench 2024 Multi-Core benchmark comparing Copilot+PCs with Snapdragon X Elite 12 core and Snapdragon X Plus 10 core configurations to a selection of Windows PC models commercially released four to five years ago with the most monthly active use, as determined based on Microsoft internal usage data as of February 2024. Performance varies significantly between device configuration and usage.
-1. Battery life varies significantly by device and with settings, usage, and other factors.
+Key capabilities include:
+
+- **Secured-core PC**—Firmware-level protection against advanced threats
+- **Microsoft Pluton security processor**—Hardware-backed protection for credentials and sensitive data
+- **Microsoft Intune integration**—Centralized device and policy management
+- **AI governance capabilities**—Visibility and control over AI-powered features and agents
+
+As AI adoption expands, these capabilities help organizations maintain compliance, reduce risk, and support secure AI-enabled workflows.
+
+## Flexible AI experiences
+
+Copilot+ PCs support a hybrid approach to AI processing by combining on-device AI experiences with cloud-connected services.
+
+Some workloads run locally on the device for responsiveness and offline support, while other experiences use cloud services for larger-scale processing and organizational data access.
+
+This flexibility helps organizations:
+
+- Support hybrid and remote work environments
+- Maintain productivity with limited connectivity
+- Balance local performance with cloud scalability
+- Deliver consistent AI experiences across workflows and locations
+
+Together, these capabilities position Copilot+ PCs as part of a broader Windows platform designed to support modern AI-powered work.

@@ -1,19 +1,22 @@
 ### YamlMime:Module
 uid: learn.dpu.business-impact-copilot-pc
-title: Turbocharge business impact with Copilot+ PC
+title: Understand the business impact of Copilot+ PCs
 metadata:
-  title: Turbocharge Business Impact With Copilot+ PC
-  description: This module explores how AI-enhanced Copilot+ PCs empower organizations to stay agile and competitive by adapting to dynamic business needs. Learners will discover key features and strategies that elevate modern business through improved flexibility, management, and team potential.
+  title: Understand the Business Impact of Copilot+ PCs
+  description: Learn how Copilot+ PCs support modern organizations through on-device AI, cloud-connected services, and Windows 11 Pro capabilities. Explore how AI-powered workflows, security, governance, and productivity features help businesses improve flexibility, collaboration, and operational efficiency.
   ms.date: 08/04/2025
   author: ozahran7
   ms.author: v-zahranomar
   ms.topic: module
   ms.service: windows-11
 summary: >
-  In this module, we explored the way AI-enhanced Copilot+ PCs can help organizations stay agile, so they can adapt and respond to dynamic business needs—helping them beat out competition and stay ahead of changing industry trends. With this knowledge, you now have a better understanding of how Copilot+ PCs elevate modern business.
+  In this module, you explore how Copilot+ PCs support modern work through a combination of on-device AI, cloud-connected services, and Windows 11 Pro capabilities. Learn how organizations use AI-powered workflows, security, governance, and productivity features to improve flexibility, collaboration, and operational efficiency across modern work environments.
 abstract: |
   By the end of this module, you'll be able to:
-  - [Add learning objectives here]
+  - Explain how Copilot+ PCs support modern business workflows
+  - Describe how on-device AI and cloud services work together in Windows
+  - Identify key areas where Copilot+ PCs improve productivity, security, and efficiency
+  - Summarize how Copilot+ PCs support AI-driven workflows in organizations
 prerequisites: |
   - None
 iconUrl: /training/achievements/business-impact-copilot-pc.svg

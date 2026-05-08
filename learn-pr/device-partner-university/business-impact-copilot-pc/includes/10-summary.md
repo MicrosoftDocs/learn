@@ -1,3 +1,12 @@
-In this module, we explored the way AI-enhanced Copilot+ PCs can help organizations stay agile, so they can adapt and respond to dynamic business needs—helping them beat out competition and stay ahead of changing industry trends. With this knowledge, you now have a better understanding of how Copilot+ PCs elevate modern business.
+In this module, you explored how Copilot+ PCs support modern work through a combination of on-device AI, cloud-connected services, and Windows 11 Pro capabilities.
 
-We took a look at the different types of Windows PCs, software enhancements of Copilot+ PCs that unlock new productivity workflows, and unique hardware experiences that turbocharge the way business is done.
+You learned how organizations use these capabilities to improve productivity, support flexible work environments, strengthen security and governance, and scale AI experiences across teams and workflows.
+
+You also explored how:
+
+- On-device and cloud AI complement each other across business scenarios
+- AI-powered features help reduce manual steps and improve efficiency
+- Organizations maintain governance and IT control as AI adoption expands
+- Copilot+ PCs support extensible AI workflows through Microsoft 365 Copilot, Copilot Studio, and custom agents
+
+These concepts provide a foundation for evaluating where Copilot+ PCs deliver unique value across productivity, collaboration, security, and IT management.
