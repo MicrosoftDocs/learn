@@ -1,19 +1,33 @@
-The visual query editor in Microsoft Fabric data warehouse is a tool that provides an intuitive interface for building SQL queries. 
+The visual query editor in Microsoft Fabric provides an intuitive, graphical, no-code interface for building queries.
 
-It simplifies the process of writing and managing queries, especially for those who might not be comfortable with SQL syntax.
+To open the visual query editor, select the dropdown arrow on **New SQL query** in the ribbon, then select **New visual query**.
 
-- **Graphical interface**: The editor provides a graphical interface where you can drag and drop tables, and visually design your queries. This makes it easier to understand the structure of your query and the relationships between tables.
+- **Graphical interface**: Drag and drop tables onto a canvas to visually design your queries. The editor shows the relationships between tables, making the query structure easy to understand at a glance.
 
-- **Automatic query generation**: As you design your query using the visual interface, the corresponding SQL query is automatically generated. This allows you to focus on the logic of your query, rather than the syntax. All workspace users can save their queries in **My queries** folder.
+- **Automatic query generation**: As you design your query, the corresponding T-SQL is generated automatically, so you can focus on the logic rather than the syntax.
 
 ## Build your query visually
 
-The visual query editor enhances intuitive understanding of data relationships by allowing users to visually organize tables and fields.
+To build a query, drag tables from the **Explorer** onto the canvas.
 
-Also, the visual query editor is user-friendly, even for those with little to no SQL experience. Nontechnical team members can use it to extract valuable insights from your data, democratizing data access within your organization and speeding up the decision-making process.
+:::image type="content" border="false" source="../media/4-new-visual-query.png" alt-text="Screenshot showing the New visual query option selected in the dropdown menu, with red arrows indicating how to drag the Date and Trip tables from the Explorer onto the blank canvas.":::
 
-:::image type="content" border="false" source="../media/3-visual-editor.gif" alt-text="Animated GIF showing how to build a query using the visual query editor for a data warehouse in Microsoft Fabric.":::
+Once your tables are on the canvas, you can join them by right-clicking a table and selecting **Merge queries**.
 
-Similarly to the SQL query editor, the **Save as table** and **Save as view** options are also available. These features can be useful for reusing your queries or for creating more complex queries based on the results of previous queries.
+:::image type="content" border="false" source="../media/4-merge-queries.png" alt-text="Screenshot of the visual query editor canvas with two tables and the Merge queries option highlighted in the context menu.":::
 
-To learn more about SQL query editor, see [Query using the visual query editor](/fabric/data-warehouse/visual-query-editor?azure-portal=true).
+In the Merge dialog, select the common key column in each table and choose a join type, then select **OK**.
+
+:::image type="content" border="false" source="../media/4-merge-dialog.png" alt-text="Screenshot of the Merge dialog in the visual query editor showing column selection and join type options.":::
+
+After configuring your query, select **Run** to see results in the pane below the canvas.
+
+:::image type="content" border="false" source="../media/4-visual-canvas.png" alt-text="Screenshot of the visual query editor showing two tables joined on the canvas with query results displayed in the pane below, including Save as table, Download Excel file, and Visualize results options.":::
+
+Like the SQL query editor, the visual query editor also provides **Save as table** and **Save as view** in the results toolbar. You can also select **Download Excel file** to export results, or **Visualize results** to create a chart.
+
+## View the generated SQL
+
+As you build your visual query, the corresponding T-SQL is generated automatically. Select **View SQL** in the ribbon to inspect it, or **Edit SQL script** to open it in the SQL query editor for further editing.
+
+To learn more about the visual query editor, see [Query using the visual query editor](/fabric/data-warehouse/visual-query-editor?azure-portal=true).
