@@ -123,7 +123,7 @@ ORDER BY query_count DESC
 LIMIT 10;
 ```
 
-You can also use *Databricks Assistant* to explore lineage interactively. From Catalog Explorer, select the Assistant icon and type:
+You can also use *Genie Code* to explore lineage interactively. From Catalog Explorer, select Genie Code icon and type:
 
 - `/getTableLineages` to view upstream and downstream dependencies
 - `/getTableInsights` to access metadata-driven insights like user activity patterns
