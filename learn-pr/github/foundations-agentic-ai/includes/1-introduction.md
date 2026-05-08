@@ -5,3 +5,14 @@ As these systems become more capable, your role as a developer starts to change.
 
 Agent workflows follow a plan → act → evaluate loop, where each cycle uses system feedback to refine the next step until the outcome meets required standards.
 This module gives you the foundation you need to understand that shift. You'll learn what makes a system “agentic,” how agents differ from traditional assistants, and how they operate inside GitHub. You'll also see how GitHub acts as both the system of record and the control plane, using familiar tools like pull requests, reviews, status checks, CODEOWNERS, rulesets, and environments to keep agent activity safe and controlled.
+
+In this module we cover:
+ - Define agentic AI in the SDLC and distinguish agents from assistants
+ - Explain and apply the plan → act → evaluate lifecycle in agent workflows
+ - Describe how GitHub functions as the system of record and control plane for agent activity
+ - Identify responsibilities, risks, anti-patterns, and traceability requirements in agent systems
+ - Apply the contributor model to evaluate agent-generated work
+
+Here are other modules for more learning about Developing in Agentic AI Systems:
+- [Developing Agent Architecture and SDLC Integration](/training/modules/design-agent-architecture-integration/)
+- [Tooling, MCP, and Agent Execution Environments](/training/modules/agent-tooling-mcp-execution-environments/) 
