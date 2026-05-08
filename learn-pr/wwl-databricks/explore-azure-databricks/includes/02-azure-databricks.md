@@ -60,14 +60,16 @@ Use the top bar to **search** for workspace objects such as notebooks, queries, 
 
 The workspace is available in **multiple languages.** To change the workspace language, select your username in the top navigation bar, select **Settings** and go to the **Preferences** tab.
 
-## Get help from Databricks Assistant
+## Get help from Genie Code
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=06416086-5e53-47c0-8804-8387d1973871]
 
-**Databricks Assistant** is an AI-powered pair programmer and support tool that helps you work more efficiently in Databricks by generating, explaining, and fixing code or queries directly in notebooks, dashboards, and files. 
+**Genie Code** (formerly Databricks Assistant) is an AI-powered pair programmer and support tool that helps you work more efficiently in Databricks by generating, explaining, and fixing code or queries directly in notebooks, dashboards, and files.
 
-![Screenshot of the Azure Databricks Assistant.](../media/databricks-assistant.png)
+![Screenshot of Genie Code in Azure Databricks.](../media/genie-code.png)
 
-It can assist with a wide range of tasks, including identifying and correcting errors, creating data visualizations, diagnosing job issues, and filtering or analyzing data using natural language prompts. The Assistant can surface relevant guidance from the Azure Databricks documentation. 
+It can assist with a wide range of tasks, including identifying and correcting errors, creating data visualizations, diagnosing job issues, and filtering or analyzing data using natural language prompts. Genie Code can surface relevant guidance from the Azure Databricks documentation.
+
+Genie Code also includes **Agent mode**, which is generally available for data science, data engineering, and dashboard authoring. Agent mode extends Genie Code with agentic capabilities so it can autonomously plan and complete multi-step data tasks on your behalf.
 
 By using Unity Catalog metadata, it personalizes its responses based on your organization’s data assets—tables, columns, and descriptions—making it easier to explore and work with your data.

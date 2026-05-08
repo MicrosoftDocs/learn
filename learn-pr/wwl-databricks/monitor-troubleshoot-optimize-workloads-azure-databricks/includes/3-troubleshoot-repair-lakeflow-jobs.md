@@ -32,7 +32,7 @@ To investigate a failed job:
 The matrix view helps you identify patterns. If the same task fails repeatedly, the issue likely relates to that task's code or configuration. If failures appear random across different tasks, you might have a cluster or resource problem.
 
 > [!TIP]
-> Use the **Diagnose Error** button in the Jobs UI to get help from Databricks Assistant. This feature analyzes error messages and provides suggestions for common issues.
+> Use the **Diagnose Error** button in the Jobs UI to get help from Genie Code. This feature analyzes error messages and provides suggestions for common issues.
 
 ## Fix common failure causes
 
