@@ -14,5 +14,5 @@ In this module we cover:
  - Apply the contributor model to evaluate agent-generated work
 
 Here are other modules for more learning about Developing in Agentic AI Systems:
-- [Developing Agent Architecture and SDLC Integration](https://learn.microsoft.com/en-us/training/modules/design-agent-architecture-integration/)
-- [Tooling, MCP, and Agent Execution Environments](https://learn.microsoft.com/en-us/training/modules/agent-tooling-mcp-execution-environments/) 
+- [Developing Agent Architecture and SDLC Integration](/training/modules/design-agent-architecture-integration/)
+- [Tooling, MCP, and Agent Execution Environments](/training/modules/agent-tooling-mcp-execution-environments/) 
