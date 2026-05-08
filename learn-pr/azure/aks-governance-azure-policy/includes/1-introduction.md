@@ -20,5 +20,5 @@ By the end of this module, you're able to:
 ## Prerequisites
 
 - Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes).
-- An active [Azure subscription](https://azure.microsoft.com/free/?cid=msft_learn)
+- An active [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 - Ability to use the [Azure CLI](/cli/azure/)

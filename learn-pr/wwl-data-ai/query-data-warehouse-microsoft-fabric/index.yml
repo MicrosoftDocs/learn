@@ -2,20 +2,20 @@
 uid: learn-wwl.query-data-warehouse-microsoft-fabric
 metadata:
   title: Query a data warehouse in Microsoft Fabric
-  description: Learn how to query a data warehouse in Microsoft Fabric using different tools.
-  ms.date: 02/27/2025
+  description: Learn to query a Microsoft Fabric data warehouse using the SQL query editor, visual query editor, and SQL Server Management Studio.
+  ms.date: 05/08/2025
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.service: fabric
   ai-usage: ai-assisted
 title: Query a data warehouse in Microsoft Fabric
-summary: Data warehouse in Microsoft Fabric is a comprehensive platform for data and analytics, featuring advanced query processing and full transactional T-SQL capabilities for easy data management and analysis.
+summary: In this module, you'll learn how to query a data warehouse in Microsoft Fabric using the built-in SQL and visual query editors, and external client tools like SQL Server Management Studio.
 abstract: |
   In this module, you'll:
-  - Use SQL query editor to query a data warehouse.
-  - Explore how visual query editor works.
-  - Learn how to connect and query a data warehouse using SQL Server Management Studio.  
+  - Use the SQL query editor to write and run T-SQL queries against a data warehouse.
+  - Build queries using the no-code visual query editor.
+  - Connect to a data warehouse from SQL Server Management Studio using Microsoft Entra ID authentication.
 prerequisites: |
   Before starting this module, you should be familiar with the basic principles of data warehousing.
 iconUrl: /training/achievements/query-a-data-warehouse-in-microsoft-fabric.svg
@@ -28,7 +28,7 @@ products:
 - fabric
 subjects:
 - data-management
-- machine-learning
+- data-analytics
 units:
 - learn-wwl.query-data-warehouse-microsoft-fabric.introduction
 - learn-wwl.query-data-warehouse-microsoft-fabric.query-data
