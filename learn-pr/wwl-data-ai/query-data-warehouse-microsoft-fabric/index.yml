@@ -3,7 +3,7 @@ uid: learn-wwl.query-data-warehouse-microsoft-fabric
 metadata:
   title: Query a data warehouse in Microsoft Fabric
   description: Learn to query a Microsoft Fabric data warehouse using the SQL query editor, visual query editor, and SQL Server Management Studio.
-  ms.date: 05/08/2025
+  ms.date: 05/08/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
