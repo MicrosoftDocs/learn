@@ -54,9 +54,7 @@ If Copilot is enabled in your tenant, you'll see **Fix query errors** and **Expl
 You can also open the Copilot chat pane by selecting **Copilot** in the toolbar, to generate T-SQL from natural language questions.
 
 > [!NOTE]
-> Copilot in Data Warehouse requires an F2 or P1 capacity or higher. It isn't available on trial SKUs.
+> Copilot in Data Warehouse requires an F2 or P1 capacity or higher. It isn't available on trial SKUs. For a full introduction to Copilot capabilities, see [Get started with Copilot in Microsoft Fabric for Data Warehouse](/training/modules/get-started-copilot-fabric-data-warehouse/).
 
-For a full introduction to Copilot capabilities in Data Warehouse, see [Get started with Copilot in Microsoft Fabric for Data Warehouse](/training/modules/get-started-copilot-fabric-data-warehouse/).
-
-To learn more about SQL query editor, see [Query using the SQL query editor](/fabric/data-warehouse/sql-query-editor?azure-portal=true).
+To learn more about the SQL query editor, see [Query using the SQL query editor](/fabric/data-warehouse/sql-query-editor?azure-portal=true).
 

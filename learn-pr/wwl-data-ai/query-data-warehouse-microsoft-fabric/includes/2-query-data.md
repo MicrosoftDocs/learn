@@ -1,10 +1,10 @@
-Once the dimension and fact tables in a data warehouse are populated with data, you can use T-SQL to query these tables and perform data analysis. The Transact-SQL (T-SQL) syntax used for querying tables in a warehouse in Fabric closely resembles the SQL syntax used in SQL Server and Azure SQL Database. This familiarity allows for an easy transition if you're already used to working with these platforms.
+Once the dimension and fact tables in a data warehouse are populated with data, you can use T-SQL to query and analyze them. T-SQL supports `SELECT`, `JOIN`, aggregate functions, window functions, and more — giving you the tools to extract, filter, group, and summarize your data.
 
 ## Aggregate measures by dimension attributes
 
-Most data warehouse analytics involves aggregating numeric measures from fact tables based on attributes in dimension tables. Because of the star or snowflake schema structure, these queries use `JOIN` clauses to link fact and dimension tables, along with aggregate functions and `GROUP BY` clauses to define aggregation hierarchies.
+A common pattern is to join a fact table to one or more dimension tables, then aggregate a numeric measure grouped by a dimension attribute.
 
-The following SQL query aggregates sales amounts by year and quarter from the **FactSales** and **DimDate** tables in a hypothetical data warehouse:
+The following query aggregates sales amounts by year and quarter from the **FactSales** and **DimDate** tables:
 
 ```sql
 SELECT  dates.CalendarYear,
@@ -28,7 +28,7 @@ The results look similar to the following table:
 | 2025 | 2 | 36162.27 |
 | ... | ... | ... |
 
-You can join as many dimension tables as needed to calculate the aggregations you need. For example, the following code extends the previous example to group the quarterly sales totals by city based on the customer's address details in the **DimCustomer** table.
+You can join multiple dimension tables to slice the results by additional attributes. The following query extends the previous example to break down quarterly sales by city, using the **DimCustomer** table:
 
 ```sql
 SELECT  dates.CalendarYear,

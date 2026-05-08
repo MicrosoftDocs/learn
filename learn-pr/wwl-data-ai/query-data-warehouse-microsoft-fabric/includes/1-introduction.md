@@ -1,4 +1,4 @@
-[Microsoft Fabric Data Warehouse](/fabric/data-warehouse/?azure-portal=true) is a complete platform for data, analytics, and AI (Artificial Intelligence). A data warehouse stores, organizes, and manages large volumes of structured and semi-structured data. 
+Microsoft Fabric Data Warehouse is a complete platform for data, analytics, and AI (Artificial Intelligence). A data warehouse stores, organizes, and manages large volumes of structured and semi-structured data. 
 
 The data warehouse in Microsoft Fabric offers a rich set of features that make it easier to manage and analyze data. It includes advanced query processing capabilities and supports the full transactional T-SQL capabilities of an enterprise data warehouse.
 
@@ -10,12 +10,8 @@ In a typical data warehouse, the data is organized using a schema, often a [star
 
 Fact tables store the measurable, quantitative data about a business, while dimension tables contain descriptive attributes related to fact data.
 
-:::image type="content" border="false" source="../media/1-star-schema.png" alt-text="Diagram of a star schema design with a fact table in the center and dimension tables forming the points of the star.":::
+:::image type="content" border="false" source="../media/1-star-schema.svg" alt-text="Diagram of a star schema for sales facts with a central fact table and five dimension tables forming the points of the star.":::
 
-Think of a dimension table as the *"who, what, where, when, why”* of your data warehouse. It’s like the descriptive backdrop that gives context to the raw numbers found in the fact tables.
-
-For example, if you’re running an online store, your fact table might contain the raw sales data - how many units of each product were sold. But without a dimension table, you wouldn’t know who bought those products, when they were bought, or where the buyer is located.
+In the diagram, a central **Sales** fact table stores the measurable data — quantities sold, revenue, and other numeric values. The five surrounding dimension tables answer the key questions about each sale: **Customer** (who), **Product** (what), **Store** (where), **Date** (when), and **Currency** (how much). Without the dimension tables, the fact table numbers have no context.
 
 We'll explore different ways to connect and query a data warehouse, and how they can help you effectively extract insights from your data.
-
-For more information, see [Understand star schema and the importance for Power BI](/power-bi/guidance/star-schema?azure-portal=true).
