@@ -16,7 +16,16 @@ Between these extremes, you find tools like **Auto Loader** for cloud storage fi
 
 Lakeflow Connect represents the modern approach to data ingestion in Azure Databricks. It offers both fully managed connectors and standard connectors that integrate with Lakeflow Spark Declarative Pipelines for a streamlined experience.
 
-**Managed connectors** provide out-of-the-box integration with popular enterprise applications and databases. Supported sources include Salesforce, ServiceNow, SharePoint, SQL Server, Google Analytics, and Workday. These connectors handle the complexities of source-specific authentication, incremental data capture, API rate limiting, and automated retries. They run on serverless compute and write to streaming tables governed by Unity Catalog.
+Managed connectors are organized into three types:
+
+- **SaaS connectors** provide out-of-the-box integration with enterprise applications such as Salesforce, ServiceNow, SharePoint, HubSpot, Jira, Microsoft Dynamics 365, Workday, Zendesk, and many others. These connectors handle source-specific authentication, incremental reads, API rate limiting, schema evolution, and automated retries. They run on serverless compute and write to streaming tables governed by Unity Catalog.
+
+- **Database connectors** ingest data from relational databases including MySQL, PostgreSQL, and SQL Server using change data capture (CDC). Because CDC-based connectors read from database transaction logs rather than querying tables directly, they require an **ingestion gateway** deployed in your network and a staging storage volume to buffer captured changes.
+
+- **Community connectors** are open-source connectors built and maintained by the community. They extend Lakeflow Connect to sources that don't yet have a managed connector. You can use an existing community connector or contribute your own.
+
+> [!NOTE]
+> The connector ecosystem is growing rapidly. See the [managed connectors documentation](https://learn.microsoft.com/azure/databricks/ingestion/lakeflow-connect/) for the current full list of supported sources.
 
 **Standard connectors** extend Lakeflow Connect to cloud object storage and message buses. You can ingest data from Amazon S3, Azure Data Lake Storage, or Google Cloud Storage using Auto Loader. For real-time data, standard connectors support Apache Kafka, Google Pub/Sub, and Apache Pulsar.
 
@@ -25,6 +34,22 @@ Lakeflow Connect represents the modern approach to data ingestion in Azure Datab
 Consider Lakeflow Connect when you need reliable, low-maintenance ingestion from supported sources. The managed connectors significantly reduce development time and ongoing maintenance compared to custom solutions. However, if your data source isn't supported or you need highly specialized ingestion logic, you might need to explore other options.
 
 Lakeflow Connect supports both **scheduled** ingestion (hourly, daily, weekly) and **on-demand** triggers, making it suitable for regular data refresh cycles and ad hoc loading scenarios.
+
+## Query-based connectors
+
+Query-based connectors are a lightweight alternative to CDC database connectors for scheduled ingestion from relational databases. Instead of reading transaction logs, they query the source table directly using a **cursor column** — a monotonically increasing timestamp or integer that tracks which rows are new or updated since the last pipeline run.
+
+Because they query the source directly, query-based connectors don't require an ingestion gateway or staging storage. On each scheduled run, the connector retrieves all rows with a cursor column value greater than the high-water mark from the previous run, then writes results to streaming tables in Unity Catalog.
+
+Supported sources include Oracle, Teradata, SQL Server, MySQL, MariaDB, PostgreSQL, and all Lakehouse Federation data sources.
+
+Query-based connectors support three history tracking modes for destination tables:
+
+- **SCD Type 1**: Overwrites the existing row with the latest source row. No history is preserved.
+- **SCD Type 2**: Preserves the full history by adding new rows with version metadata.
+- **Append-only**: Appends every ingested row without merging or overwriting.
+
+Choose query-based connectors over CDC database connectors when CDC or binlog infrastructure isn't available but a reliable cursor column exists in the source. Choose CDC connectors when you need every intermediate row state between pipeline runs or when soft-delete tracking is critical. The trade-off is that query-based connectors place more load directly on source tables compared to CDC connectors, which read from the binlog.
 
 ## Auto Loader
 
@@ -116,7 +141,7 @@ Start by identifying your data source type, then consider operational requiremen
 
 For **enterprise applications** (Salesforce, ServiceNow, SharePoint), Lakeflow Connect managed connectors offer the fastest path to production with minimal maintenance. These connectors handle the complexity of API integration, rate limiting, and change tracking.
 
-For **relational databases** with supported types, Lakeflow Connect database connectors provide managed ingestion with change data capture. For unsupported databases, notebook-based JDBC/ODBC extraction remains a viable approach.
+For **relational databases** with supported types, Lakeflow Connect offers two managed paths: **database connectors** (CDC-based, requires gateway) for continuous change capture, and **query-based connectors** for simpler scheduled ingestion using a cursor column. For unsupported databases, notebook-based JDBC/ODBC extraction remains a viable approach.
 
 For **files in cloud storage**, Auto Loader provides efficient incremental discovery and processing. Use COPY INTO for simpler batch scenarios or when you prefer SQL-first workflows.
 
