@@ -14,6 +14,9 @@ The fastest way to establish a connection is through **Partner Connect**. From t
 
 After establishing the connection, you select your **data connectivity mode**. With **Import** mode, Power BI loads data into its internal storage engine, enabling fast queries but requiring periodic refreshes to stay current. With **DirectQuery** mode, Power BI queries Azure Databricks directly for each visualization, ensuring real-time data access but requiring an active connection and running compute resource.
 
+> [!NOTE]
+> Since February 2026, all new Power BI connections to Azure Databricks use the **Arrow Database Connectivity (ADBC)** driver by default. ADBC is a modern, columnar API standard based on Apache Arrow that offers more efficient data transfer for analytical workloads. Existing connections continue to use ODBC unless you manually update them by setting `Implementation="2.0"` in the Advanced Editor in Power BI Desktop. Test your existing semantic models against ADBC to verify compatibility before updating.
+
 **Authentication** determines how Power BI accesses your data. **Personal access tokens** provide simple authentication but represent a single user identity. **Microsoft Entra ID** enables single sign-on where each user's credentials pass through to Azure Databricks, allowing Unity Catalog to enforce fine-grained permissions. For automated scenarios, **service principals** with machine-to-machine OAuth provide fixed credentials that don't depend on individual user accounts.
 
 Power BI Desktop also supports **native SQL queries** for compute-intensive operations. Instead of using Power BI's visual query builder, you write SQL directly against your Databricks SQL warehouse. This approach gives you full control over query optimization and access to Databricks-specific SQL features.

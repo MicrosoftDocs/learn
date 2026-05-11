@@ -32,18 +32,25 @@ With **serverless compute**, your compute resources run in a serverless compute 
 
 With **classic compute**, your compute resources run in your own Azure subscription in what's called the classic compute plane. Azure Databricks creates new compute resources within each workspace's virtual network in your subscription. This approach provides natural isolation because resources run in your subscription, giving you more control over networking and security configurations.
 
+> [!NOTE]
+> Classic workspaces are referred to as **Hybrid workspaces** in the Azure portal.
+
 The separation between control and compute planes allows Azure Databricks to manage orchestration centrally while processing your data in isolated, secure environments.
 
 ## Workspace storage
 
-Each Azure Databricks workspace has an associated **workspace storage account** that resides in your Azure subscription. This storage account serves multiple purposes and contains different types of data.
+Workspace storage is handled differently depending on your workspace type. **Classic workspaces** have an associated **workspace storage account** that resides in your Azure subscription. **Serverless workspaces** use **default storage**—a fully managed storage location within your Azure Databricks account, not in your own Azure subscription. You'll explore default storage in detail in a later unit.
 
 :::image type="content" source="../media/workspace-storage.png" alt-text="Diagram showing workspace storage." border="false" lightbox="../media/workspace-storage.png":::
 
-The workspace storage account contains **workspace system data** generated as you use Azure Databricks features. This includes notebook revisions, job run details, command results, and Spark logs. The system uses this data to provide versioning, auditing, and troubleshooting capabilities.
+Regardless of workspace type, workspace storage contains two categories of data.
 
-If your workspace was enabled for Unity Catalog automatically, the workspace storage account also contains the default **workspace catalog**. All users in your workspace can create data assets in the default schema within this catalog, providing a convenient starting point for organizing data. Users access this data through Unity Catalog's governance layer and don't have direct access to the underlying storage, ensuring security and proper access control.
+**Workspace file system data** includes the assets that you and your team create and manage through the Azure Databricks UI—notebooks, SQL queries and dashboards, alerts, repos, libraries, and other small files such as Python or YAML configuration files.
 
-The workspace storage account may also contain **DBFS (Databricks File System)**, which is a distributed file system accessible under the `dbfs:/` namespace. DBFS root and DBFS mounts are legacy features. Storing and accessing data using DBFS root or DBFS mounts is a deprecated pattern. Instead, you should use Unity Catalog-managed tables and volumes for better governance and security.
+**Workspace system data** is generated internally by Azure Databricks features and includes SQL query results, job run results, notebook revisions, SQL query plans used for observability, and cluster logs.
+
+In classic workspaces, both categories reside in the workspace storage account in your Azure subscription. If your classic workspace was enabled for Unity Catalog automatically, the workspace storage account also contains the default **workspace catalog**. All users in your workspace can create data assets in the default schema within this catalog. Users access this data through Unity Catalog's governance layer and don't have direct access to the underlying storage, ensuring security and proper access control.
+
+The classic workspace storage account may also contain **DBFS (Databricks File System)**, which is a distributed file system accessible under the `dbfs:/` namespace. DBFS root and DBFS mounts are legacy features. Storing and accessing data using DBFS root or DBFS mounts is a deprecated pattern. Instead, you should use Unity Catalog-managed tables and volumes for better governance and security.
 
 Understanding where your data resides helps you implement appropriate security controls, such as enabling firewall support for your workspace storage account to limit access to authorized resources and networks only.
