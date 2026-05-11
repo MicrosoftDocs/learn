@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.create-fruit-classification-model
-title: Create the fruit classification model
+title: Understand the fruit classification model
 metadata:
-  title: Create the fruit classification model
-  description: In this section, we help the learner to how to create a classification model.
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  title: Understand the fruit classification model
+  description: "Explore how the provided fruit classification model was created and exported from Azure AI Custom Vision, and how Azure Speech text to speech announces item labels in the IoT Edge solution."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
-durationInMinutes: 4 # dummy number at present
+  ms.custom: team=cloud_advocates
+durationInMinutes: 4
 content: |
   [!include[](includes/4-create-fruit-classification-model.md)]
-
+
