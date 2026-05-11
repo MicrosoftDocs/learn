@@ -1,4 +1,4 @@
-PowerShell 7.0 introduced a third parameter set for **ForEach-Object**: the `-Parallel` parameter. This allows multiple pipeline objects to be processed concurrently, rather than one at a time. The `-Parallel` parameter requires PowerShell 7.0 or later — it isn't available in Windows PowerShell 5.1.
+PowerShell 7.0 introduced a third parameter set for `ForEach-Object`: the `-Parallel` parameter. This parameter lets you process multiple pipeline objects concurrently, rather than one at a time. The `-Parallel` parameter requires PowerShell 7.0 or later—it isn't available in Windows PowerShell 5.1.
 
 ## Basic parallel syntax
 
@@ -8,7 +8,7 @@ The basic syntax uses the `-Parallel` parameter with a scriptblock:
 1..5 | ForEach-Object -Parallel { "Processing $_" }
 ```
 
-By default, **ForEach-Object -Parallel** runs up to five iterations simultaneously. Use the `-ThrottleLimit` parameter to control the maximum number of concurrent scriptblocks:
+By default, `ForEach-Object -Parallel` runs up to five iterations simultaneously. Use the `-ThrottleLimit` parameter to control the maximum number of concurrent scriptblocks:
 
 ```powershell
 Get-Content servers.txt | ForEach-Object -Parallel {
