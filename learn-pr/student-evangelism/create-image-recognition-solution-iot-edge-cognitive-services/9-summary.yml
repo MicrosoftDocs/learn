@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.create-image-recognition-with-azure-iot-edge.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review how the module built an Azure IoT Edge image recognition solution that uses an exported Azure AI Custom Vision model and Azure Speech text to speech to classify scanned items and announce labels."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
+

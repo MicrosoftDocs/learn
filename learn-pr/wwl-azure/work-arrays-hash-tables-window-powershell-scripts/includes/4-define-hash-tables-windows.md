@@ -35,3 +35,16 @@ $servers['LON-DC1']
 
 > [!NOTE]
 > You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.
+
+## Ordered dictionaries
+
+By default, hash tables don't guarantee the order in which keys are displayed. If you need keys to appear in a consistent order—for example, in reports or structured output—use the `[ordered]` type accelerator to create an ordered dictionary:
+
+```powershell
+$servers = [ordered]@{"LON-DC1" = "192.168.0.10"; "LON-SRV1" = "192.168.0.11"}
+```
+
+Ordered dictionaries behave like hash tables except that keys are always listed in the order you defined them.
+
+> [!NOTE]
+> Place `[ordered]` immediately before `@{}`, not before the variable name.

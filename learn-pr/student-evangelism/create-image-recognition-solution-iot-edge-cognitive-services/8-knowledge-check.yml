@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Answer assessment questions about IoT Edge module deployment, local Custom Vision model invocation through the classifier module, and the edgeAgent component that pulls container images."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
+  module_assessment: true
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Suppose you're deploying an image recognition solution with a Camera Capture module that handles camera input and audio output/playback, and an Image Classification module. Which sequence best describes how IoT Edge deploys and runs these modules?"
+    choices:
+    - content: "Create your modules - Write a deployment manifest - Apply the manifest to IoT Hub - IoT Hub transfers module binaries to the edge device"
+      isCorrect: false
+      explanation: "The deployment manifest is applied to IoT Hub as desired configuration. IoT Hub doesn't transfer module binaries to the device; the IoT Edge agent on the device pulls container images from the registry."
+    - content: "Create your modules - Package them as containers - Push the images to a container registry - Write a deployment manifest that references the images - Apply the manifest to the device identity in IoT Hub - The device retrieves the desired configuration and edgeAgent pulls the images"
+      isCorrect: true
+      explanation: "IoT Hub stores the desired properties from the deployment manifest for the IoT Edge device. The device retrieves that desired configuration, then edgeAgent pulls the referenced container images from the registry and starts the modules."
+    - content: "Create your modules - Package them as containers - Upload the deployment manifest to the container registry - Then apply the manifest to IoT Hub"
+      isCorrect: false
+      explanation: "For IoT Edge deployments, you apply the deployment manifest to IoT Hub. The device receives desired configuration from IoT Hub, while the container registry stores module images for edgeAgent to pull."
+  - content: "In this module, which interface does the application use to request predictions from the prebuilt, exported Custom Vision classification model packaged in an IoT Edge module?"
+    choices:
+    - content: "A REST API exposed by the local image classification module"
+      isCorrect: true
+      explanation: "The exported Custom Vision model runs in an IoT Edge module, and the application calls the local classifier through its REST API to classify images."
+    - content: "The Custom Vision Training SDK running directly on the edge device"
+      isCorrect: false
+      explanation: "The model is already exported for the IoT Edge solution. The application requests predictions from the local classifier through REST rather than training or invoking the training SDK on the device."
+    - content: "Only the cloud Custom Vision service, without using IoT Edge containers"
+      isCorrect: false
+      explanation: "This solution uses IoT Edge modules packaged as containers. The runtime prediction request is made to the local classifier module's REST API, not only to the cloud service."
+  - content: "Which IoT Edge component pulls module images from the container registry so the modules can run on the IoT Edge device?"
+    choices:
+    - content: "IoT Hub"
+      isCorrect: false
+      explanation: "IoT Hub stores the desired configuration from the deployment manifest, but it doesn't pull or run container images on the device."
+    - content: "IoT Edge module"
+      isCorrect: false
+      explanation: "An IoT Edge module is the workload that runs in a container. It doesn't manage downloading the other module images."
+    - content: "IoT Edge agent (edgeAgent)"
+      isCorrect: true
+      explanation: "edgeAgent is the IoT Edge runtime component that manages module installation and updates on the device. After the device receives desired configuration from IoT Hub, edgeAgent pulls the referenced images from the container registry."
