@@ -60,7 +60,7 @@ After Fix runs for Contoso's 47 storage accounts with secure transfer disabled, 
 
 ## Policy remediation tasks—trigger DeployIfNotExists at scale
 
-Some recommendations are backed by Azure Policy definitions with DeployIfNotExists or Modify effects. For these recommendations, the security control is deployed by creating a **policy remediation task—the same mechanism you used in Module 1 Unit 3, but initiated from the Defender for Cloud recommendation view rather than the Azure Policy portal.
+Some recommendations are backed by Azure Policy definitions with DeployIfNotExists or Modify effects. For these recommendations, the security control is deployed by creating a policy remediation task—the same mechanism you used in Module 1 Unit 3, but initiated from the Defender for Cloud recommendation view rather than the Azure Policy portal.
 
 DeployIfNotExists policies are common for recommendations that require deploying a child resource or configuration alongside the primary resource. Examples include:
 
