@@ -1,6 +1,6 @@
 In this module, you learned how to create and manage Azure VMs by using PowerShell and manage Azure storage accounts and Azure subscriptions with PowerShell. The following are the key takeaways:
 
-- You can create a new Azure virtual machine (VM) with PowerShell commands, by using the locally installed Windows PowerShell with the Az PowerShell module. You can also use the Cloud Shell environment that's available in Azure portal.
+- You can create a new Azure virtual machine (VM) with PowerShell commands, by using the locally installed PowerShell with the Az module. You can also use the Cloud Shell environment that's available in Azure portal.
 
 - You can also use PowerShell commands to manage, modify, and remove Azure VMs and the resources related to Azure VMs. 
 
@@ -15,12 +15,10 @@ In this module, you learned how to create and manage Azure VMs by using PowerShe
 
 To learn more, go through the following documents:
 
-- [Quickstart: Automatically migrate PowerShell scripts from AzureRM to the Az PowerShell module](https://aka.ms/quickstart-automatically-migrate-powershell-scripts-from-azurerm-to-the-az-powershell-module)
+- [New-AzVM](/powershell/module/az.compute/new-azvm)
 
-- [Install Azure Active Directory PowerShell for Graph​](https://aka.ms/install-azure-active-directory-powershell-for-graph)
+- [Az.Storage](/powershell/module/az.storage/)
 
-- [AzureAD​](https://aka.ms/azure-ad-2)
-​
-- [New-AzVM](https://aka.ms/new-azvm)​
+- [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation)
 
-- [Az.Storage](https://aka.ms/az-storage-2)
+- [Migrate from Azure AD PowerShell to Microsoft Graph PowerShell](/powershell/microsoftgraph/migration-steps)
