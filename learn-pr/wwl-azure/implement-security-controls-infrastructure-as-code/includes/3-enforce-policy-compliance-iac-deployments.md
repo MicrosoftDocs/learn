@@ -7,7 +7,7 @@ Pipeline scanning protects the CI/CD path, but not every deployment goes through
 
 ## Why pipeline scanning alone isn't enough
 
-Contoso's DevOps team is well-governed. But what about a developer with ARM template access who deploys manually from the CLI? Or an emergency change pushed directly to ARM template without a PR? Or an external tool that directly calls the Azure Resource Manager API?
+Contoso's DevOps team is well-governed. But what about a developer with ARM template access who deploys manually from the CLI? Or an emergency change pushed directly to an ARM template without a PR? Or an external tool that directly calls the Azure Resource Manager API?
 
 MSDO scanning protects the pipeline path. Azure Policy with the **Deny effect** protects EVERY deployment path—it operates at the Azure Resource Manager layer and intercepts all write operations before they're committed to resource state. Together, MSDO and Azure Policy form two independent defense layers that address different threat surfaces. One catches violations during code review. The other catches violations at the moment of deployment, no matter where the deployment originates.
 
