@@ -113,6 +113,50 @@ The `expect_all`, `expect_all_or_drop`, and `expect_all_or_fail` decorators appl
 
 In SQL, separate multiple constraints with commas:
 
+> [!TIP]
+> In-memory dictionaries are convenient for simple pipelines, but they embed rules inside your notebook. For production workloads where the same rules should apply across multiple pipelines, store expectations in a Unity Catalog Delta table instead — rules become version-controlled, auditable, and queryable like any other governed asset.
+
+## Store rules in a Unity Catalog table
+
+Centralizing expectations in a Unity Catalog table separates quality rules from pipeline logic. You update or audit rules in one place, and every pipeline that references the table picks up the change automatically.
+
+First, create a rules table in a governed schema:
+
+```sql
+CREATE OR REPLACE TABLE governance.data_quality.rules AS
+SELECT col1 AS name, col2 AS constraint, col3 AS tag
+FROM (
+  VALUES
+    ('valid_amount',    'amount > 0',                              'financial'),
+    ('valid_currency',  'currency IN (''USD'', ''EUR'', ''GBP'')',  'financial'),
+    ('non_null_email',  'email IS NOT NULL',                       'customer'),
+    ('valid_hire_date', 'hire_date <= current_date()',             'hr')
+);
+```
+
+Then define a helper function that reads rules filtered by tag and returns them as a dictionary:
+
+```python
+from pyspark import pipelines as dp
+from pyspark.sql.functions import col
+
+def get_rules(tag):
+    df = spark.read.table("governance.data_quality.rules").filter(col("tag") == tag).collect()
+    return {row["name"]: row["constraint"] for row in df}
+
+@dp.table
+@dp.expect_all_or_drop(get_rules("financial"))
+def validated_payments():
+    return spark.readStream.table("raw.payments")
+
+@dp.table
+@dp.expect_all_or_drop(get_rules("customer"))
+def validated_customers():
+    return spark.readStream.table("raw.customers")
+```
+
+Because the rules table lives in Unity Catalog, it benefits from lineage tracking, access control, and audit logs alongside your data tables. Teams can update a constraint by editing one row in the rules table, without touching any pipeline notebook.
+
 ```sql
 CREATE OR REFRESH STREAMING TABLE validated_payments(
     CONSTRAINT valid_amount EXPECT (amount > 0),

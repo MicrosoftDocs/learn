@@ -14,6 +14,8 @@ A job run can result in several states:
 - **Timed Out**: The job exceeded its configured maximum duration.
 - **Canceled**: A user or automated process stopped the run.
 
+Individual tasks can also show a **Disabled** status. A task is disabled when you explicitly disable it in the job settings, or when Lakeflow Jobs automatically disables it because an upstream dependency task is disabled. Disabled tasks appear with a circle-off icon in the DAG view. During a repair run, the run state—not the disabled state—determines what gets re-run; you can force a disabled task to run by including it explicitly in the repair request.
+
 Understanding these states helps you prioritize your response. A failed leaf task requires immediate attention, while a skipped run might indicate a scheduling conflict that resolves itself.
 
 ## Identify the cause of failure
