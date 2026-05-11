@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-microsoft-defender-servers.onboard-servers-defender-servers
+metadata:
+  title: Onboard servers to Defender for Servers
+  description: Select Defender for Servers Plan 1 or Plan 2 based on required capabilities and onboard Azure virtual machines. Then onboard Arc-connected hybrid servers at subscription, resource group, or resource scope using Environment Settings and Azure Policy.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Onboard servers to Defender for Servers
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-onboard-servers-defender-servers.md)]

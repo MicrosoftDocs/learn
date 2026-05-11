@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-microsoft-defender-servers
+metadata:
+  title: Implement Microsoft Defender for Servers
+  description: "Onboard Azure virtual machines and Arc-connected hybrid servers to Microsoft Defender for Servers. Select Plan 1 or Plan 2, configure vulnerability scanning using agentless and agent-based approaches. Then integrate Microsoft Defender for Endpoint, manage agentless scanning, and enable File Integrity Monitoring."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Implement Microsoft Defender for Servers
+summary: Onboard Azure virtual machines and Arc-connected hybrid servers to Microsoft Defender for Servers. Select Plan 1 or Plan 2 based on capability requirements, configure vulnerability scanning using agentless and agent-based Defender Vulnerability Management. Then integrate Microsoft Defender for Endpoint, and manage agentless scanning capabilities for software inventory, secrets, malware detection, and File Integrity Monitoring.
+abstract: |
+  After completing this module, you can:
+    - Select Defender for Servers Plan 1 or Plan 2 based on required capabilities, and onboard Azure VMs and Arc-connected servers
+    - Configure vulnerability scanning using agentless and agent-based Defender Vulnerability Management
+    - Manage the Microsoft Defender for Endpoint integration and configure agentless scanning and File Integrity Monitoring
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+  - Understanding of Azure role-based access control (RBAC) and Azure Policy fundamentals
+  - Familiarity with Azure Arc-enabled servers
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure-virtual-machines
+  - azure-arc
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.implement-microsoft-defender-servers.introduction
+- learn.wwl.implement-microsoft-defender-servers.onboard-servers-defender-servers
+- learn.wwl.implement-microsoft-defender-servers.configure-vulnerability-scanning
+- learn.wwl.implement-microsoft-defender-servers.configure-mde-agentless-scanning-fim
+- learn.wwl.implement-microsoft-defender-servers.knowledge-check
+- learn.wwl.implement-microsoft-defender-servers.summary
+badge:
+  uid: learn.wwl.implement-microsoft-defender-servers.badge
