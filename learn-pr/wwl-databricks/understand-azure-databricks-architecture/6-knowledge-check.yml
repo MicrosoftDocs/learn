@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/07/2025
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -53,13 +53,13 @@ quiz:
     choices:
     - content: "Classic compute clusters can access catalogs stored in default storage"
       isCorrect: false
-      explanation: "Incorrect. All access to default storage requires serverless compute. Classic compute cannot read from or write to catalogs on default storage."
-    - content: "Default storage is available in both serverless and traditional workspaces"
+      explanation: "Incorrect. All access to catalogs in default storage requires serverless compute. Classic compute cannot read from or write to catalogs on default storage."
+    - content: "Default storage is used only in serverless workspaces and is unavailable in classic workspaces"
       isCorrect: false
-      explanation: "Incorrect. Default storage is exclusively available in serverless workspaces and requires serverless compute for access."
+      explanation: "Incorrect. Default storage is used by both workspace types for internal Azure Databricks features such as Data Classification, Anomaly detection, and Clean Rooms. The restriction is that creating new catalogs in default storage requires a serverless workspace."
     - content: "Default storage is fully managed by Azure Databricks and requires no external storage configuration"
       isCorrect: true
-      explanation: "Correct. Default storage is a fully managed platform that provides immediate storage without requiring cloud storage accounts or credentials."
+      explanation: "Correct. Default storage is a fully managed platform built into Azure Databricks that provides immediate storage without requiring you to configure cloud storage accounts or manage access credentials."
   - content: "What happens to the underlying data files when a managed table in Unity Catalog is dropped?"
     choices:
     - content: "The data files are immediately deleted from cloud storage"
