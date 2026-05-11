@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.eliminate-public-exposure-paas-private-link.expose-internal-services-azure-private-link-service
+title: Expose internal services securely using Azure Private Link service
+metadata:
+  title: Expose Internal Services Securely Using Azure Private Link Service
+  description: "Configure Azure Private Link service to expose internal workloads to authorized consumers across subscriptions or tenants without creating a public endpoint."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-expose-internal-services-azure-private-link-service.md)]
