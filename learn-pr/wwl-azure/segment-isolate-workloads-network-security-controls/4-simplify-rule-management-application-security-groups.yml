@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.segment-isolate-workloads-network-security-controls.simplify-rule-management-application-security-groups
+title: Simplify rule management with application security groups
+metadata:
+  title: Simplify Rule Management with Application Security Groups
+  description: "Use application security groups to group workloads by function and reduce Network Security Group (NSG) rule complexity in dynamic Azure environments."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-simplify-rule-management-application-security-groups.md)]

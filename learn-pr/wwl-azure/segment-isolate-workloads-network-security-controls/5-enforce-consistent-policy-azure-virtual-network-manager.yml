@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.segment-isolate-workloads-network-security-controls.enforce-consistent-policy-azure-virtual-network-manager
+title: Enforce consistent policy with Azure Virtual Network Manager
+metadata:
+  title: Enforce Consistent Policy with Azure Virtual Network Manager
+  description: "Use Azure Virtual Network Manager security admin rules to enforce organization-wide network policies that individual teams can't override."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-enforce-consistent-policy-azure-virtual-network-manager.md)]
