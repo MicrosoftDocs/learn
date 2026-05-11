@@ -68,7 +68,7 @@ You can monitor continuous jobs in the exponential backoff state through the **J
 
 A task that hangs indefinitely blocks downstream processing and wastes compute resources. **Timeout thresholds** terminate unresponsive tasks so your job can either retry or fail cleanly.
 
-:::image type="content" source="../media/6-timeout-threshold.png" alt-text="Diagram explaining timout behavior." border="false" lightbox="../media/6-timeout-threshold.png":::
+:::image type="content" source="../media/6-timeout-threshold.png" alt-text="Diagram explaining timeout behavior." border="false" lightbox="../media/6-timeout-threshold.png":::
 
 To configure timeout thresholds:
 
