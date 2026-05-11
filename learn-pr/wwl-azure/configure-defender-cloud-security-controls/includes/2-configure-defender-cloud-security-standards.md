@@ -2,7 +2,7 @@ Configuring Microsoft Defender for Cloud correctly ensures the tool generates ac
 
 ## Environment settings—configure before you govern
 
-Defender for Cloud environment settings are where you configure per-subscription settings for data collection, autoprovisioning of monitoring agents, and workload protection plan coverage. These settings control what Defender for Cloud monitors and how it collects security data from your resources.
+Defender for Cloud environment settings is where you configure per-subscription settings for data collection, autoprovisioning of monitoring agents, and workload protection plan coverage. These settings control what Defender for Cloud monitors and how it collects security data from your resources.
 
 Management group onboarding is the key to scaling configuration across subscriptions. Connecting Defender for Cloud at the management group level lets you push settings across all child subscriptions in a single operation. New subscriptions added to the management group automatically inherit the configuration—you don't need to configure each subscription individually.
 
