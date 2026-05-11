@@ -14,10 +14,19 @@ When you create a workspace, you must specify:
 - A **workspace name**.
 - Select an available **region**. For available regions, see [Azure services available by region](https://azure.microsoft.com/explore/global-infrastructure).
 - A **pricing tier**:
-  - **Standard** - Core Apache Spark capabilities with Microsoft Entra ID integration.
-  - **Premium** - Role-based access controls and other enterprise-level features.
-  - **Trial** - A 14-day free trial of a premium-level workspace
+  - **Premium** - Role-based access controls, Unity Catalog, SQL, Mosaic AI, serverless compute, Genie Code, and other enterprise-level features.
+  - **Trial** - A 14-day free trial of a Premium-level workspace
+
+  > [!NOTE]
+  > The Standard tier is no longer available for new workspaces as of April 1, 2026. All new workspaces are created on the Premium tier.
+
+- **Workspace type**:
+  - **Serverless** - Pre-configured with serverless compute and managed storage. Recommended for most use cases.
+  - **Hybrid** (also called Classic) - Provisions compute and storage in your Azure subscription. Best for custom networking or on-premises connectivity.
 - **Managed Resource Group name** (optional): an automatically created resource group where Azure provisions and manages the infrastructure resources needed for your Databricks workspace.
+
+> [!TIP]
+> A **Free Edition** is available for students and educators with no time limit and no payment required, though it has daily usage limits and no access to classic compute. See [Sign up for Azure Databricks](/azure/databricks/getting-started/free-trial-vs-free-edition) for a comparison.
 
 ![Screenshot of Azure Databricks in the Azure Portal.](../media/01-azure-databricks.png)
 
@@ -28,13 +37,13 @@ az databricks workspace create
     --resource-group myresourcegroup \
     --name mydatabricksws  \
     --location westus2  \
-    --sku standard
+    --sku premium
 ```
 
 The equivalent [New-AzDatabricksWorkspace](/powershell/module/az.databricks/new-azdatabricksworkspace) PowerShell cmdlet:
 
 ```
-New-AzDatabricksWorkspace -Name mydatabricksws -ResourceGroupName myresourcegroup -Location westus2 -ManagedResourceGroupName databricks-group -Sku standard
+New-AzDatabricksWorkspace -Name mydatabricksws -ResourceGroupName myresourcegroup -Location westus2 -ManagedResourceGroupName databricks-group -Sku premium
 ```
 
 ## Navigating the Azure Databricks Workspace UI

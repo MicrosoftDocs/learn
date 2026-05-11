@@ -58,6 +58,8 @@ A task that hangs indefinitely consumes resources and blocks downstream processi
 - **Expected duration**: Triggers a warning notification if exceeded
 - **Maximum duration**: Terminates the task if exceeded
 
+For streaming tasks, you can also configure **streaming backlog metric thresholds** under **Metric thresholds** in the task configuration panel. When a streaming source's backlog exceeds your defined threshold, a notification event fires — giving you early warning of processing lag before it compounds into a larger delay. This feature is currently in Public Preview.
+
 ### Add notifications
 
 Proactive alerting enables rapid response to failures. Configure **notifications** to reach your team through:

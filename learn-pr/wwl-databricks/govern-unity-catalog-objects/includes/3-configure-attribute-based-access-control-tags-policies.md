@@ -2,9 +2,6 @@
 
 Attribute-based access control (ABAC) provides a flexible, scalable approach to data governance in Unity Catalog. Instead of managing individual permissions for every table and user combination, you define policies based on attributes. When you tag data assets with meaningful classifications, ABAC policies automatically enforce the right access controls.
 
-> [!IMPORTANT]
-> ABAC in Unity Catalog is currently in **Public Preview**. Features may change before general availability.
-
 In this unit, you learn how to use governed tags and ABAC policies to implement dynamic, centralized access control across your Unity Catalog environment.
 
 ## Understand governed tags
@@ -79,7 +76,7 @@ ROW FILTER filter_non_eu
 TO `analysts`
 FOR TABLES
 MATCH COLUMNS
-    hasTagValue('pii', 'address') AS addr
+    has_tag_value('pii', 'address') AS addr
 USING COLUMNS (addr);
 ```
 
@@ -112,7 +109,7 @@ TO `all_users`
 EXCEPT `compliance_team`
 FOR TABLES
 MATCH COLUMNS
-    hasTagValue('pii', 'ssn') AS ssn_col
+    has_tag_value('pii', 'ssn') AS ssn_col
 ON COLUMN ssn_col;
 ```
 
@@ -139,15 +136,20 @@ Avoid common performance pitfalls:
 
 Keep access control decisions in the policy definition, not the UDF. The policy specifies who the rules apply to; the UDF specifies how to transform the data.
 
+> [!IMPORTANT]
+> When a user queries a view or function that accesses an ABAC-protected table, row filters and column masks are evaluated using the **session user's identity**—the identity of the person running the query, not the view or function owner. Users querying through views still don't need direct privileges on the underlying tables, but policies must be designed with the caller's identity in mind rather than assuming the view owner's permissions.
+
 ## Understand policy inheritance and scope
 
 ABAC policies follow an inheritance model that simplifies governance at scale. A policy defined at the catalog level automatically applies to all schemas and tables within that catalog. Similarly, schema-level policies apply to all tables in the schema.
 
 Policy quotas limit how many policies you can create:
 
-- 10 policies per catalog
-- 10 policies per schema
-- 5 policies per table
+- 100 policies per catalog
+- 100 policies per schema
+- 50 policies per table
+- 10,000 policies per metastore
+- 20 principals per policy (`TO` and `EXCEPT` clauses combined)
 
 Only one row filter can apply to any given table, and only one column mask can apply to any given column. If multiple policies would result in multiple filters or masks, Azure Databricks blocks access and throws an error.
 
