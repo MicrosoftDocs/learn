@@ -4,7 +4,7 @@ title: Understand Unity Catalog managed storage
 metadata:
   title: Understand Unity Catalog Managed Storage
   description: Learn how Unity Catalog uses managed storage locations to organize and isolate data across catalogs and schemas, and understand the storage hierarchy resolution.
-  ms.date: 12/07/2025
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

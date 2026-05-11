@@ -25,4 +25,4 @@ Data analysts who primarily interact with data through SQL can use SQL warehouse
 :::image type="content" source="../media/05-azure-databricks-sql.png" alt-text="Diagram of DatabricksSQL Editor screen." lightbox="../media/05-azure-databricks-sql.png":::
 
 > [!NOTE]
-> SQL warehouses are included in the Premium (or higher) tier. Standard workspace doesn't provide SQL warehouses. 
+> SQL warehouses require the Premium tier.

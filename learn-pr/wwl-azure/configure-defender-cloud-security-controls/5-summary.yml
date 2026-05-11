@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-defender-cloud-security-controls.summary
+metadata:
+  title: Summary
+  description: Summary of configuring security controls and remediating recommendations in Defender for Cloud.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-summary.md)]

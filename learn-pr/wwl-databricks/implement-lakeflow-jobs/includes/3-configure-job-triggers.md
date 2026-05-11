@@ -99,6 +99,9 @@ Continuous triggers work well for:
 
 Before enabling a continuous trigger, consider the cost implications. Your job continuously consumes compute resources, which can add up over time. Use serverless compute to optimize costs, as it scales automatically based on workload.
 
+> [!IMPORTANT]
+> Continuous jobs on serverless compute only support **bounded** Structured Streaming triggers such as `Trigger.AvailableNow`. Time-based streaming triggers—`Trigger.ProcessingTime` and `Trigger.Continuous`—are **not** supported on serverless compute. If your streaming workload requires time-based triggers, use classic jobs compute. For low-latency streaming on serverless, use Lakeflow Spark Declarative Pipelines in continuous mode instead.
+
 > [!NOTE]
 > When you resume a paused continuous trigger while a run is still active, the scheduler waits for that run to complete before triggering a new one.
 
