@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hybrid-connectivity-azure.harden-vpn-gateway-security
+title: Harden VPN gateway security
+metadata:
+  title: Harden VPN Gateway Security
+  description: "Configure VPN gateway authentication, Internet Key Exchange (IKE) version, custom IPsec / IKE policies, and forced tunneling to reduce attack surface for site-to-site and point-to-site connections."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-harden-vpn-gateway-security.md)]

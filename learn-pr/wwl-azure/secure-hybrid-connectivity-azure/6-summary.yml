@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hybrid-connectivity-azure.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit summarizes the key takeaways from the secure remote and hybrid connectivity using VPN gateways and Microsoft Entra Private Access module."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-summary.md)]

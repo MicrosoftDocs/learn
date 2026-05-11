@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hybrid-connectivity-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of VPN gateway security risks, hardening controls, and Microsoft Entra Private Access configuration.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's point-to-site VPN currently uses shared certificate authentication. After a certificate is compromised, any device with the certificate can connect. What authentication change reduces this risk most effectively?"
+    choices:
+    - content: "Increase the certificate key length from 2048-bit to 4096-bit and reissue certificates to all users."
+      isCorrect: false
+      explanation: "Longer certificate keys make brute-force attacks harder, but don't address the core problem—a compromised certificate that anyone can copy and use. Switching to Microsoft Entra ID authentication ties authentication to individual user identities that can be revoked."
+    - content: "Switch P2S authentication to Microsoft Entra ID so that each connection requires valid Microsoft Entra credentials and supports Conditional Access and MFA."
+      isCorrect: true
+      explanation: "Microsoft Entra authentication for P2S eliminates shared certificates. Each connection requires individual user credentials, revocation is immediate through Microsoft Entra, and Conditional Access policies such as MFA can be enforced at connection time."
+    - content: "Deploy a RADIUS server on-premises and configure the VPN gateway to use RADIUS for certificate validation."
+      isCorrect: false
+      explanation: "RADIUS with certificate validation still relies on certificates as the authentication factor. The compromise risk remains as long as a shared or copyable certificate is involved."
+  - content: "Contoso has 3,000 remote employees connected via VPN. A security audit finds that all employees with VPN access can reach every Azure-hosted application regardless of their role. What is the most effective control to address the over-broad access problem without disrupting all VPN connectivity?"
+    choices:
+    - content: "Add Network Security Group (NSG) rules on each application subnet to restrict access by employee IP address ranges assigned by the VPN."
+      isCorrect: false
+      explanation: "IP-based NSG rule for VPN address ranges still grant access at a network level and don't differentiate by user identity or role. The access grant is difficult to maintain as VPN IP assignments change."
+    - content: "Deploy Microsoft Entra Private Access and configure per-app access segments so that users only reach the specific applications their role requires, enforced by Conditional Access policy."
+      isCorrect: true
+      explanation: "Microsoft Entra Private Access provides per-application access scope rather than full network access. Users are granted access to specific app segments based on identity and Conditional Access policy, eliminating the over-broad 'connected means authorized' problem."
+    - content: "Implement split tunneling on the VPN so that only Azure-bound traffic goes through the VPN and internet traffic routes locally."
+      isCorrect: false
+      explanation: "Split tunneling controls which traffic uses the VPN tunnel—it doesn't restrict which Azure applications a connected user can reach. The lateral access problem remains unchanged."
+  - content: "Contoso's site-to-site VPN connection uses IKEv1 with default encryption settings. The security team wants to enforce stronger encryption. Which configuration change achieves this?"
+    choices:
+    - content: "Upgrade the VPN gateway SKU to VpnGw5 for higher throughput and stronger default encryption."
+      isCorrect: false
+      explanation: "Gateway SKU determines throughput and connection capacity, not the IKE version, or encryption algorithm used. A custom IPsec/IKE policy is required to enforce specific encryption parameters."
+    - content: "Create a custom IPsec/IKE policy on the connection that specifies IKEv2, AES-256 encryption, SHA-256 integrity, and a DHGroup with at least 2048-bit key strength."
+      isCorrect: true
+      explanation: "A custom IPsec/IKE policy allows explicit control over IKE version, encryption algorithm, integrity algorithm, and Diffie-Hellman group. Specifying IKEv2 with AES-256 and SHA-256 enforces modern encryption and eliminates IKEv1 vulnerabilities."
+    - content: "Enable forced tunneling on the site-to-site connection to route all branch traffic through Azure before reaching the internet."
+      isCorrect: false
+      explanation: "Forced tunneling controls traffic routing direction—it doesn't change the encryption algorithm or IKE version used to secure the VPN tunnel itself."
