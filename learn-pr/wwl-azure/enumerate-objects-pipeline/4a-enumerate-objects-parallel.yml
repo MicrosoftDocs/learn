@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enumerate-objects-pipeline.enumerate-objects-parallel
+title: Enumerate objects in parallel with ForEach-Object
+metadata:
+  title: Enumerate objects in parallel with ForEach-Object
+  description: "Enumerate objects in parallel with ForEach-Object"
+  ms.date: 01/23/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4a-enumerate-objects-parallel.md)]
