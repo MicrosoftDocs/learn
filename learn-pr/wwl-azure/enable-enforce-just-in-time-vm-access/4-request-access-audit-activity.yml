@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-enforce-just-in-time-vm-access.request-access-audit-activity
+metadata:
+  title: Request Just-in-time (JIT) access and audit access activity
+  description: Submit just-in-time access requests for VMs from the Defender for Cloud portal and Azure portal, audit JIT access history using the Activity Log, and enforce JIT adoption at scale using the built-in Azure Policy definition.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Request Just-in-time (JIT) access and audit access activity
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-request-access-audit-activity.md)]
