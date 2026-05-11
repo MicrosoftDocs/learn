@@ -46,7 +46,7 @@ To configure a job to run in continuous mode:
 1. In the **Jobs & Pipelines** sidebar, open your job
 2. In the **Job details** panel, select **Add trigger**
 3. Select **Continuous** in the **Trigger type** dropdown
-4. Optionally, select a **Task retry mode**—choose **On failure** to retry failed tasks within a job, or **Never** to only retry at the job level
+4. Optionally, select a **Task retry mode**—choose **On failure** to retry failed tasks within a job, or **Never** to only retry at the job level. **On failure** is the default for new continuous jobs. For an existing job being converted to continuous mode, you may need to select **Configure retry mode** first before the task retry mode option appears.
 5. Select **Save**
 
 :::image type="content" source="../media/6-configure-continuous-job-retry-mode.png" alt-text="Screenshot of the continuous job task retry mode dialog." lightbox="../media/6-configure-continuous-job-retry-mode.png":::

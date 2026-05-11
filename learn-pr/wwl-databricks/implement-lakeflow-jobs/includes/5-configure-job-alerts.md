@@ -79,7 +79,7 @@ Alert fatigue undermines the value of notifications. When teams receive too many
 
 :::image type="content" source="../media/5-alert-fatigue.png" alt-text="Diagram explaining alert fatigue." border="false" lightbox="../media/5-alert-fatigue.png":::
 
-**Filter out skipped and canceled runs**: When you cancel a job or a run gets skipped due to concurrent run limits, you might not need a notification. Select **Mute notifications for skipped runs** or **Mute notifications for canceled runs** to suppress these.
+**Filter out skipped and canceled runs**: When you cancel a job or a run gets skipped due to concurrent run limits, you might not need a notification. Select **Mute notifications for skipped runs** or **Mute notifications for canceled runs** to suppress these. Note that these mute options apply only to job-level notifications—if you've also configured task-level notifications, you must set the same filters on each task separately.
 
 **Use duration warnings strategically**: Rather than alerting on every long-running job, set duration thresholds based on historical performance. A job that usually takes 30 minutes might warrant a warning at 45 minutes—not at 35.
 
