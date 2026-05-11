@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-right-size-rbac-role-assignments.create-custom-azure-entra-roles
+metadata:
+  title: Create custom Azure roles and Microsoft Entra roles
+  description: Create custom Azure RBAC roles and Microsoft Entra custom roles to provide minimum necessary permissions for operations that built-in roles don't cover appropriately.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Create custom Azure roles and Microsoft Entra roles
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-custom-azure-entra-roles.md)]
