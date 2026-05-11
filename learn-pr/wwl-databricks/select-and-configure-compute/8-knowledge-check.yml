@@ -76,9 +76,9 @@ quiz:
     - content: "The library must be stored in a Unity Catalog volume first"
       isCorrect: false
       explanation: "Incorrect. Maven libraries can be installed directly from repositories, but they require a different security step."
-    - content: "A metastore admin must add the Maven coordinates to the allowlist"
+    - content: "A metastore admin must add the Maven coordinates to the allow list"
       isCorrect: true
-      explanation: "Correct. Standard access mode requires explicit approval for Maven libraries and JAR files. A metastore admin must add Maven coordinates to the allowlist before installation."
+      explanation: "Correct. Standard access mode requires explicit approval for Maven libraries and JAR files. A metastore admin must add Maven coordinates to the allow list before installation."
     - content: "The cluster must be restarted after library installation"
       isCorrect: false
       explanation: "Incorrect. While clusters do reinstall libraries on restart, this isn't a specific requirement for standard access mode."
