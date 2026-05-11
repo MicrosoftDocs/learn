@@ -8,6 +8,9 @@ In this unit, you learn how to access and query audit logs, understand what even
 
 ## Understand the audit log system table
 
+> [!NOTE]
+> The audit log system table (`system.access.audit`) is currently in **Public Preview**. An account admin must enable system tables before you can query audit logs. See [Enable system tables](https://learn.microsoft.com/azure/databricks/admin/system-tables/#enable).
+
 Azure Databricks automatically captures audit events and stores them in the **audit log system table** located at `system.access.audit`. This table records actions across all workspaces attached to your Unity Catalog metastore, providing a **centralized view** of activity across your organization.
 
 Consider a scenario where your security team needs to investigate unauthorized data access. Rather than searching through multiple log files, you query a single table that contains every tracked event. This centralized approach transforms compliance investigations from manual searches into straightforward SQL queries.
