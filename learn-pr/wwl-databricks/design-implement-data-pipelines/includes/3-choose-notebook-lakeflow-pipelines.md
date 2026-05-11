@@ -38,7 +38,7 @@ Lakeflow Spark Declarative Pipelines simplify **production data pipelines** by h
 
 **Operational visibility**. Lakeflow Spark Declarative Pipelines provide **lineage tracking**, **execution graphs**, and **monitoring dashboards** without additional configuration. Operations teams can trace data from source to target and troubleshoot issues faster.
 
-**External streaming targets**. Beyond Unity Catalog tables, SDP supports **sinks** for streaming output to Apache Kafka topics, Azure EventHubs, Delta tables, and custom Python data sources. This makes the declarative approach a natural fit for event-driven architectures where processed data needs to flow to downstream streaming consumers.
+**External streaming targets**. Beyond Unity Catalog tables, SDP supports **sinks** for streaming output to Apache Kafka topics, Azure Event Hubs, Delta tables, and custom Python data sources. This makes the declarative approach a natural fit for event-driven architectures where processed data needs to flow to downstream streaming consumers.
 
 ## Compare the approaches
 
