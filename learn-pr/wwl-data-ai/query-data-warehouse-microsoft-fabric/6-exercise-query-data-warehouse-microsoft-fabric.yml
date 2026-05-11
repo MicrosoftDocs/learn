@@ -4,7 +4,7 @@ title: 'Exercise: Query a data warehouse in Microsoft Fabric'
 metadata:
   title: 'Exercise: Query a data warehouse in Microsoft Fabric'
   description: "Practice querying a Microsoft Fabric data warehouse using the SQL query editor, verifying data consistency, and saving results as a view."
-  ms.date: 05/08/2025
+  ms.date: 05/08/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

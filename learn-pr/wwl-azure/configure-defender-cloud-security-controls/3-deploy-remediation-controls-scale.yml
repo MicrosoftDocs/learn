@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-defender-cloud-security-controls.deploy-remediation-controls-scale
+metadata:
+  title: Deploy remediation controls at scale
+  description: Deploy security controls to remediate Defender for Cloud recommendations at scale using Fix, governance rules, Policy remediation tasks, and exemptions.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Deploy remediation controls at scale
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-deploy-remediation-controls-scale.md)]
