@@ -4,7 +4,7 @@ title: Understand integration with Microsoft Fabric
 metadata:
   title: Understand Integration with Microsoft Fabric
   description: Learn how Azure Databricks integrates with Microsoft Fabric through Unity Catalog and OneLake, enabling bidirectional data access for analytics and reporting scenarios.
-  ms.date: 12/07/2025
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
