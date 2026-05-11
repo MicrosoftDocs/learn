@@ -4,19 +4,19 @@ When you deploy Azure Databricks workspaces, you typically need to configure clo
 
 Default storage is a fully managed object storage platform built into Azure Databricks. It provides immediate storage capabilities without requiring you to configure external cloud storage accounts or manage access credentials.
 
-This storage platform serves multiple purposes within your Azure Databricks environment. It stores workspace-level artifacts, control plane metadata, and data for catalogs you create. Unlike external storage where you maintain separate cloud storage accounts, default storage is managed entirely by Azure Databricks.
+Default storage is used across **both classic and serverless workspaces** for internal Azure Databricks features. Capabilities such as Data Classification, Anomaly detection, Clean Rooms, and Knowledge Assistant all store their operational data in default storage regardless of workspace type.
 
-When you create a serverless workspace, Azure Databricks automatically provisions a default catalog that uses default storage. You can also create additional catalogs that use either default storage or your own cloud object storage, giving you flexibility in how you organize your data.
+In **serverless workspaces**, default storage also serves as the primary storage for workspace system data and for the catalogs you create. When you create a serverless workspace, Azure Databricks automatically provisions a default catalog that uses default storage. You can also create additional catalogs that use either default storage or your own cloud object storage, giving you flexibility in how you organize your data.
 
 ## Where is default storage available?
 
-Default storage is available exclusively in serverless workspaces.
+**Creating new catalogs in default storage** is available exclusively in serverless workspaces. Classic workspaces can access catalogs stored in default storage, but only when using serverless compute.
 
 :::image type="content" source="../media/default-storage.png" alt-text="Screenshot showing configuration for default storage." border="false" lightbox="../media/default-storage.png":::
 
-Serverless workspaces use default storage for three key areas. First, they use it for internal workspace operations and control plane metadata. Second, they store workspace-level files and artifacts there. Third, catalogs you create can use default storage to store managed tables and volumes.
+Serverless workspaces use default storage for three key areas. First, they use it for internal workspace operations and workspace system data. Second, they store workspace-level files and artifacts there. Third, catalogs you create can use default storage to store managed tables and volumes.
 
-Traditional workspaces can access catalogs stored in default storage, but only when using serverless compute. This means you can share data across workspace types while maintaining the requirement for serverless compute when accessing default storage.
+This means you can share data across workspace types while maintaining the requirement for serverless compute when accessing default storage catalogs.
 
 :::image type="content" source="../media/workspace-storage-access.png" alt-text="Diagram explaining workspace storage access." border="false" lightbox="../media/workspace-storage-access.png":::
 
