@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-vm-security-machine-configuration.author-assign-custom-machine-configurations
+metadata:
+  title: Author and assign custom machine configurations
+  description: Author a custom Azure Machine Configuration using PowerShell Desired State Configuration (DSC) or Chef InSpec, publish the configuration package to Azure Storage, create a custom Azure Policy definition, and assign it to enforce organization-specific OS security requirements.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Author and assign custom machine configurations
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-author-assign-custom-machine-configurations.md)]

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.enforce-vm-security-machine-configuration
+metadata:
+  title: Enforce VM Security Configuration with Azure Machine Configuration
+  description: "Audit and enforce OS security configuration on Azure virtual machines and Arc-enabled servers using Azure Machine Configuration. Apply built-in Windows and Linux security baseline policies, configure audit and enforce modes, and author custom machine configurations for organization-specific requirements."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: Enforce VM security configuration with Azure Machine Configuration
+summary: Audit and enforce OS security configuration on Azure virtual machines and Arc-enabled servers using Azure Machine Configuration. Apply built-in Windows and Linux security baseline policies, configure audit and enforce modes, and author custom machine configurations for organization-specific security requirements.
+abstract: |
+  After completing this module, you can:
+    - Explore how Azure Machine Configuration audits and enforces OS-level settings using Azure Policy
+    - Deploy the Azure Machine Configuration extension and configure required prerequisites
+    - Assign built-in Windows and Linux security baseline policies in audit and enforce modes
+    - Author and publish a custom machine configuration for organization-specific requirements
+prerequisites: |
+  - Understanding of Azure Policy fundamentals, including policy effects and initiative assignments
+  - Familiarity with Azure Virtual Machines and Azure Arc-enabled servers
+  - Basic understanding of OS configuration concepts for Windows and Linux
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-virtual-machines
+  - azure-arc
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.enforce-vm-security-machine-configuration.introduction
+- learn.wwl.enforce-vm-security-machine-configuration.explore-machine-configuration-capabilities
+- learn.wwl.enforce-vm-security-machine-configuration.apply-built-in-security-baseline-policies
+- learn.wwl.enforce-vm-security-machine-configuration.author-assign-custom-machine-configurations
+- learn.wwl.enforce-vm-security-machine-configuration.knowledge-check
+- learn.wwl.enforce-vm-security-machine-configuration.summary
+badge:
+  uid: learn.wwl.enforce-vm-security-machine-configuration.badge
