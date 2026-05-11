@@ -12,5 +12,5 @@ By the end of this module, you're able to:
 - Assign custom security standards that enforce internal organizational requirements.
 - Deploy security controls across subscriptions using Fix operations and policy remediation tasks.
 - Create and manage governance rules to assign ownership and remediation timelines.
-- Create and justify exemptions to document resources excluded from a control using Waiver or Mitigated categories.
+- Create and justify exemptions from document resources excluded from a control using Waiver or Mitigated categories.
 - Measure and report remediation progress using secure score and governance reports.
