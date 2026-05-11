@@ -2,6 +2,18 @@
 
 Data engineers face a common challenge: getting data from diverse sources into analytics platforms efficiently and reliably. Whether your data lives in SQL Server, Salesforce, SharePoint, or cloud storage, you need consistent, governed pipelines that minimize manual effort. **Lakeflow Connect** addresses this challenge by providing managed ingestion connectors that bring data directly into Unity Catalog tables.
 
+## Lakeflow Connect connector types
+
+Lakeflow Connect provides three categories of managed connectors, each suited to different source types and ingestion requirements.
+
+| Connector type | Description |
+|---|---|
+| **SaaS connectors** | Ingest data from enterprise SaaS applications including Salesforce, HubSpot, Jira, and Workday. The connector handles extraction directly through the source API. |
+| **Database connectors (CDC)** | Ingest data from relational databases like MySQL, PostgreSQL, and SQL Server using change data capture. These connectors use an ingestion gateway to continuously extract changes from the source `binlog`. |
+| **Query-based connectors** | Ingest data from databases by querying the source directly on a schedule, without requiring CDC configuration. These connectors use a cursor column—a monotonically increasing timestamp or integer column—to track which rows are new or updated since the last run. No gateway or staging storage is required. |
+
+The rest of this unit focuses on CDC database connectors as the primary example. For databases where CDC or `binlog` access isn't available, query-based connectors provide a simpler alternative that runs direct queries against source tables on a schedule.
+
 ## Understand ingestion pipelines
 
 Lakeflow Connect is a collection of managed connectors in Azure Databricks that simplify data ingestion from external sources. Rather than writing custom extraction code, you configure pipelines through either a graphical interface or declarative definitions.

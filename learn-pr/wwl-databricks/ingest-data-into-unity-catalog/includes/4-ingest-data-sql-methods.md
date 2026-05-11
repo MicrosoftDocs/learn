@@ -146,3 +146,6 @@ Each SQL ingestion method serves distinct purposes in your data engineering work
 | **COPY INTO** | Ongoing file ingestion, incremental loads | Appends to existing table; skips loaded files |
 
 For file-based ingestion that requires automatic schema inference, file notifications, or exactly-once guarantees, consider using Auto Loader as a complementary approach. When your ingestion needs are straightforward and you prefer declarative SQL over procedural code, these three methods provide a complete toolkit for managing data flow into Unity Catalog.
+
+> [!NOTE]
+> `COPY INTO` works well when ingesting files in the order of thousands over time. For sources that will grow to millions of files or more, Auto Loader (covered in the next unit) is the recommended approach—it discovers files more efficiently, supports richer schema evolution, and scales without the overhead of directory listing. Databricks also recommends streaming tables backed by Auto Loader as a scalable, long-term alternative for SQL-based file ingestion.
