@@ -4,7 +4,7 @@ title: Understand integration with Microsoft Foundry
 metadata:
   title: Understand Integration with Microsoft Foundry
   description: Learn how Azure Databricks integrates with Microsoft Foundry through the Genie MCP connector, enabling AI agents to query enterprise data using natural language.
-  ms.date: 12/07/2025
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

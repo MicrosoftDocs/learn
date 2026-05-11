@@ -27,7 +27,7 @@ Clusters that are not Unity Catalog-enabled, or queries that access tables by di
 Lineage is aggregated across all workspaces attached to a Unity Catalog metastore. When you capture lineage in one workspace, users in other workspaces that share the same metastore can view that lineage information. This **cross-workspace visibility** is particularly valuable for organizations with distributed data teams.
 
 > [!NOTE]
-> Lineage data is retained for **one year**. You can filter lineage data by time frame within this window to focus on specific periods.
+> Lineage data retention varies by access method. **Catalog Explorer and the lineage API** retain data indefinitely for events captured after September 1, 2024. **Lineage system tables** (`system.access.table_lineage` and `system.access.column_lineage`) retain a rolling one-year window; events older than one year are removed on a rolling basis. Use Catalog Explorer or the lineage API when you need access to historical lineage beyond one year.
 
 ## View data lineage using Catalog Explorer
 

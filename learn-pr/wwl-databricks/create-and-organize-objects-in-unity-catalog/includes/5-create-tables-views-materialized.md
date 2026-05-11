@@ -236,6 +236,44 @@ GROUP BY transaction_date;
 
 Materialized views excel at improving dashboard performance and reducing compute costs for frequently run analytics. Consider materialized views when queries take more than a few seconds to run, or when multiple users query the same aggregated data repeatedly. For data that changes constantly and requires real-time accuracy, standard views might be more appropriate despite slower performance.
 
+## Create streaming tables
+
+Where materialized views use batch semantics to precompute results over bounded data, **streaming tables** use streaming semantics to process only new rows that arrive after the last refresh. Every streaming table is backed by a Delta table and managed by a dedicated serverless pipeline that Unity Catalog creates automatically when you run the `CREATE OR REFRESH STREAMING TABLE` statement.
+
+Streaming tables are best suited for incremental ingestion scenarios: landing files from cloud storage with Auto Loader, consuming change events from Kafka, or building bronze and silver layers in a medallion architecture where data only ever arrives as new rows. Unlike materialized views, streaming tables don't reprocess previously seen data during a normal refresh — making them significantly more efficient for large, ever-growing datasets.
+
+To create a streaming table, use the `CREATE OR REFRESH STREAMING TABLE` statement with the `STREAM` keyword to read from the source incrementally:
+
+```sql
+CREATE OR REFRESH STREAMING TABLE bronze_orders
+  SCHEDULE EVERY 1 HOUR
+  AS SELECT *
+  FROM STREAM read_files(
+    '/Volumes/prod_catalog/landing/raw_files/orders/',
+    format => 'json'
+  );
+```
+
+For production workloads where upstream data doesn't arrive on a predictable schedule, use `TRIGGER ON UPDATE` instead of a fixed schedule. This tells the streaming table to refresh automatically whenever its source tables are updated, eliminating the need to coordinate timing across pipelines:
+
+```sql
+CREATE OR REFRESH STREAMING TABLE silver_orders
+  TRIGGER ON UPDATE
+  AS SELECT
+    order_id,
+    customer_id,
+    order_total
+  FROM STREAM bronze_orders;
+```
+
+To manually refresh a streaming table at any time, run:
+
+```sql
+REFRESH STREAMING TABLE silver_orders;
+```
+
+Choose streaming tables over materialized views when your source only ever appends new records, when you want exactly-once incremental processing, or when the source doesn't retain full history (for example, Kafka topics). For aggregations over a complete dataset where periodic full recomputation is acceptable, materialized views remain the right choice.
+
 ## Best practices for tables and views
 
 When creating tables, start with **managed tables** unless you have a specific need for external storage. Managed tables provide better integration with Unity Catalog features, automatic optimization, and simpler lifecycle management. Enable row tracking on Delta tables that serve as sources for materialized views to support efficient incremental refreshes.

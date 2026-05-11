@@ -22,11 +22,11 @@ This debugging environment works with both Python files and notebooks. You can d
 
 Beyond interactive debugging, the extension supports running Python tests with `pytest`. You write unit tests for your data processing logic and execute them on Databricks compute. This capability ensures that your tests run against the same environment and dependencies as your production code, catching environment-specific issues early in development.
 
-## Deploy workflows with Asset Bundles
+## Deploy workflows with Declarative Automation Bundles
 
-The Databricks extension simplifies deployment through **Databricks Asset Bundles**, which package your code, configurations, and dependencies into deployable units.
+The Databricks extension simplifies deployment through **Declarative Automation Bundles** (formerly known as Databricks Asset Bundles), which package your code, configurations, and dependencies into deployable units.
 
-Asset Bundles define **Lakeflow Jobs**, **Lakeflow Spark Declarative Pipelines (SDP)**, and **MLOps Stacks** using configuration files. You specify compute settings, schedule triggers, and task dependencies in YAML format. The extension provides a UI for creating, validating, and deploying these bundles without leaving Visual Studio Code.
+Declarative Automation Bundles define **Lakeflow Jobs**, **Lakeflow Spark Declarative Pipelines (SDP)**, and **MLOps Stacks** using configuration files. You specify compute settings, schedule triggers, and task dependencies in YAML format. The extension provides a UI for creating, validating, and deploying these bundles without leaving Visual Studio Code.
 
 :::image type="content" source="../media/bundle-deployment.png" alt-text="Diagram showing the Azure Databricks VS Code Bundle Deployment capability." border="false" lightbox="../media/bundle-deployment.png":::
 
@@ -40,4 +40,4 @@ While Asset Bundles handle deployment, you might also want to keep local code sy
 
 This synchronization capability works well for teams transitioning from workspace-based development to local development. You maintain existing workspace folders while gradually adopting local development practices and version control. By syncing your local files to the workspace, you can test and run them remotely while keeping your local project as the source of truth for version control in Git.
 
-However, for production workflows, Asset Bundles provide better control and consistency. Synchronization suits exploratory work and quick iterations, while bundles suit structured deployment pipelines with environment-specific configurations.
+However, for production workflows, Declarative Automation Bundles provide better control and consistency. Synchronization suits exploratory work and quick iterations, while bundles suit structured deployment pipelines with environment-specific configurations.
