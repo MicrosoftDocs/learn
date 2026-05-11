@@ -86,11 +86,11 @@ df_january.write.mode("overwrite").partitionBy("report_month").saveAsTable("sale
 ```
 
 > [!IMPORTANT]
-> Overwriting specific partitions by setting `partitionOverwriteMode=dynamic` is a legacy approach that only works on classic compute—it doesn't work on Databricks SQL warehouses or serverless compute. For new pipelines, use `REPLACE USING` instead.
+> The SQL `INSERT OVERWRITE PARTITION` syntax combined with `partitionOverwriteMode=dynamic` is restricted to **classic compute** only—it doesn't work on Databricks SQL warehouses or serverless compute. Python and Scala DataFrame writes using `partitionOverwriteMode=dynamic` work on all compute types. For new pipelines, Databricks recommends `REPLACE USING` over partition overwrite because partition overwrite can use stale data when partitioning changes.
 
-### Dynamically replace partitions with REPLACE USING
+### Dynamically replace data with REPLACE USING
 
-`REPLACE USING` is the recommended approach for dynamic partition overwrites. It works across all compute types—including Databricks SQL warehouses and serverless compute—and doesn't require Spark session configuration.
+`REPLACE USING` is the recommended approach for dynamic data overwrites. It works across all compute types—including Databricks SQL warehouses and serverless compute—and doesn't require Spark session configuration. Unlike `partitionOverwriteMode`, `REPLACE USING` supports partitioned tables, unpartitioned tables, and tables with liquid clustering.
 
 ```sql
 -- Replace only the partitions touched by the incoming data
@@ -101,7 +101,7 @@ INSERT INTO sales.monthly_report
   GROUP BY region, product_category, report_month;
 ```
 
-The `REPLACE USING` clause atomically deletes rows in `sales.monthly_report` that match incoming rows on `report_month`, then inserts the new rows. Partitions not represented in the source query are left untouched.
+The `REPLACE USING` clause atomically deletes rows in `sales.monthly_report` that match incoming rows on `report_month`, then inserts the new rows. Rows that don't match the specified columns are left untouched. In Databricks Runtime 16.3–17.1, the `USING` columns must be the table's full set of partition columns (legacy behavior). In Databricks Runtime 17.2 and above, any columns on any table type—including unpartitioned tables and tables with liquid clustering—are supported.
 
 When you need more flexible matching—such as replacing rows based on a custom condition or treating NULL values as equal—use `REPLACE ON` instead:
 
@@ -202,8 +202,8 @@ Your choice of loading operation depends on the relationship between source and 
 | Full refresh | INSERT OVERWRITE | Lookup tables, aggregations, failed batch reprocessing |
 | Mixed updates and inserts | MERGE | CDC feeds, dimension tables, data synchronization |
 | Selective replacement by predicate | REPLACE WHERE | Correcting specific date ranges or logical conditions |
-| Dynamic partition replacement (all compute types) | REPLACE USING | Recommended for partition overwrites on SQL warehouses and serverless |
-| Custom-condition row replacement | REPLACE ON | Partition overwrites with NULL-equality or cross-column conditions |
+| Dynamic data overwrite (all compute types) | REPLACE USING | Recommended for row-level overwrites on any table type (partitioned, unpartitioned, liquid clustering) |
+| Custom-condition row replacement | REPLACE ON | Row-level overwrites with NULL-safe or complex matching conditions |
 
 > [!IMPORTANT]
 > MERGE operations require a unique match between source and target rows. If multiple source rows match the same target row, the operation fails. Deduplicate your source data before merging.

@@ -33,8 +33,15 @@ The task type determines which configuration options appear. For a notebook task
 | ------------- | ---------------------------- | ------------------------------------------- |
 | Notebook      | Notebook path, parameters    | Serverless, classic jobs, all-purpose       |
 | Python script | Script path, CLI arguments   | Serverless, classic jobs, all-purpose       |
+| Python wheel  | Wheel package path, entry point | Serverless, classic jobs, all-purpose    |
 | SQL           | Query or file, SQL warehouse | Serverless SQL warehouse, pro SQL warehouse |
 | Pipeline      | Existing pipeline selection  | Serverless or classic pipeline compute      |
+| dbt / dbt platform | dbt project, profiles   | Serverless or classic jobs compute          |
+| JAR           | Main class, JAR path         | Classic jobs compute                        |
+| Spark Submit  | Spark parameters             | Classic jobs compute                        |
+| Run Job       | Existing job selection       | Determined by the referenced job            |
+
+Additional task types support control flow within a job. **If/else** tasks evaluate a condition and route execution to different downstream paths. **For each** tasks apply the same logic across every item in an input array. These patterns are covered in the *Design and implement data pipelines* module.
 
 After configuring a task, select **Create task** to add it to your job.
 
