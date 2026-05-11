@@ -38,7 +38,7 @@ $servers['LON-DC1']
 
 ## Ordered dictionaries
 
-By default, hash tables don't guarantee the order in which keys are displayed. If you need keys to appear in a consistent order — for example, in reports or structured output — use the `[ordered]` type accelerator to create an ordered dictionary:
+By default, hash tables don't guarantee the order in which keys are displayed. If you need keys to appear in a consistent order—for example, in reports or structured output—use the `[ordered]` type accelerator to create an ordered dictionary:
 
 ```powershell
 $servers = [ordered]@{"LON-DC1" = "192.168.0.10"; "LON-SRV1" = "192.168.0.11"}
