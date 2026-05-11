@@ -8,6 +8,8 @@ Notebooks execute code **step by step**. You control every aspect of data proces
 
 Lakeflow Spark Declarative Pipelines work differently. Instead of specifying **how** to process data, you define **what** you want as the end result. You declare your **streaming tables** and **materialized views**, and the pipeline engine handles **orchestration**, **parallelization**, and **error recovery** automatically.
 
+The foundational processing unit in SDP is a **flow** — a definition that reads data from a source, applies transformation logic, and writes the result to a streaming table, materialized view, or sink. When you define a streaming table or materialized view, SDP creates the underlying flow implicitly. Because SDP can analyze the relationships between flows, it determines the correct execution order and maximizes parallelism without any manual orchestration code.
+
 :::image type="content" source="../media/3-understand-notebook-pipeline-approach.png" alt-text="Diagram explaining the two approaches when it comes to choosing notebooks or Lakeflow Spark Declarative Pipelines." border="false" lightbox="../media/3-understand-notebook-pipeline-approach.png":::
 
 Consider a scenario where you need to ingest sales data, join it with product information, and calculate regional aggregates. With a notebook, you write explicit read, join, and aggregation commands in sequence. With Lakeflow Spark Declarative Pipelines, you define the final tables and their relationships—the system determines the most efficient execution plan.
@@ -35,6 +37,8 @@ Lakeflow Spark Declarative Pipelines simplify **production data pipelines** by h
 **Automatic dependency management**. The pipeline engine analyzes relationships between your tables and determines the correct **execution order**. When source data updates, the engine refreshes only the **affected downstream tables**.
 
 **Operational visibility**. Lakeflow Spark Declarative Pipelines provide **lineage tracking**, **execution graphs**, and **monitoring dashboards** without additional configuration. Operations teams can trace data from source to target and troubleshoot issues faster.
+
+**External streaming targets**. Beyond Unity Catalog tables, SDP supports **sinks** for streaming output to Apache Kafka topics, Azure EventHubs, Delta tables, and custom Python data sources. This makes the declarative approach a natural fit for event-driven architectures where processed data needs to flow to downstream streaming consumers.
 
 ## Compare the approaches
 
