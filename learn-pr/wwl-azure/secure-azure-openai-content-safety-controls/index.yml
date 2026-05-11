@@ -2,7 +2,7 @@
 uid: learn.wwl.secure-azure-openai-content-safety-controls
 metadata:
   title: "Secure Azure OpenAI with content safety controls"
-  description: "This course explains how to design secure AI platforms using Microsoft Foundry, applying centralized governance, managed identities, private networking, Azure OpenAI security controls, and container image protection to ensure compliant, production‑ready AI workloads across enterprise environments."
+  description: "This module shows you how to secure Azure OpenAI workloads in Microsoft Foundry by using centralized governance, managed identities, private networking, content safety controls, and container image protection for compliant enterprise deployments."
   ms.date: 02/04/2026
   author: wwlpublish
   ms.author: bradj
@@ -31,7 +31,6 @@ roles:
 - devops-engineer
 products:
 - azure
-- azure-ai-foundry-sdk
 - azure-openai
 - azure-sdks
 - microsoft-foundry
