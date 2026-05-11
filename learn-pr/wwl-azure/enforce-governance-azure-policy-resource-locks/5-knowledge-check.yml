@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-governance-azure-policy-resource-locks.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Azure Policy effects, remediation tasks, resource lock behavior, and policy exemptions.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer assigns an Azure Policy definition with the DeployIfNotExists effect. Existing resources in the subscription don't meet the policy requirement. What must the engineer do to bring those resources into compliance?"
+    choices:
+    - content: "Wait for the policy evaluation cycle to automatically remediate the resources."
+      isCorrect: false
+      explanation: "Incorrect. The DeployIfNotExists effect deploys a required configuration, but existing noncompliant resources aren't automatically remediated. The engineer must create a remediation task to trigger the deployment against existing resources."
+    - content: "Create a remediation task that triggers the DeployIfNotExists deployment against the noncompliant resources."
+      isCorrect: true
+      explanation: "Correct. For DeployIfNotExists and Modify effects, Azure Policy doesn't automatically fix existing noncompliant resources. A remediation task must be created to apply the required configuration retroactively. The policy's managed identity requires the permissions needed to deploy the required resource."
+    - content: "Change the policy effect to Deny so that Azure Policy blocks and replaces the noncompliant resources."
+      isCorrect: false
+      explanation: "Incorrect. The Deny effect prevents new noncompliant resources from being created or updated but doesn't remediate existing ones. DeployIfNotExists with a remediation task is the correct approach for deploying missing configurations."
+    - content: "Delete and redeploy each noncompliant resource to trigger the policy evaluation."
+      isCorrect: false
+      explanation: "Incorrect. Deleting and redeploying resources is disruptive and not how policy remediation works. A remediation task applies the required configuration to existing resources without requiring redeployment."
+  - content: "A security engineer applies a Delete lock to a production Azure virtual network. A network administrator with the Owner role attempts to delete the network. What is the result?"
+    choices:
+    - content: "The delete succeeds because the Owner role overrides resource locks."
+      isCorrect: false
+      explanation: "Incorrect. Resource locks override RBAC role assignments regardless of role level. Even a user with the Owner role can't delete a resource that has a Delete lock applied."
+    - content: "The delete is blocked. Resource locks override all RBAC role assignments, including Owner."
+      isCorrect: true
+      explanation: "Correct. Resource locks take precedence over RBAC permissions. A Delete lock prevents the resource from being deleted. To remove the lock, the user needs the `Microsoft.Authorization/locks/delete` permission—typically granted through the Owner or User Access Administrator role—but they must first explicitly remove the lock before they can delete the resource."
+    - content: "The delete succeeds after the administrator reauthenticates with multifactor authentication."
+      isCorrect: false
+      explanation: "Incorrect. Multifactor authentication doesn't override resource locks. The lock must be explicitly removed before the resource can be deleted."
+    - content: "The delete is blocked only if the lock was applied at the subscription scope."
+      isCorrect: false
+      explanation: "Incorrect. Locks apply to the resource they're set on and inherited by child resources. A lock applied directly to the virtual network resource blocks deletion of that specific resource, regardless of the scope at which it was set."
+  - content: "Contoso's security team receives a request to exempt a storage account from a policy that requires HTTPS-only access. The account uses a legacy application, and the network team confirmed that a compensating network control routes all traffic through an encrypted gateway. Which exemption category should the security engineer select?"
+    choices:
+    - content: "Waiver—the policy risk is accepted and will be addressed in a future release."
+      isCorrect: false
+      explanation: "Incorrect. A waiver is used when the risk acknowledged by the policy is accepted by leadership. The risk won't be addressed by a direct policy fix in the short term. It doesn't indicate an alternative control is in place."
+    - content: "Mitigated—an alternative control addresses the same risk that the policy is designed to prevent."
+      isCorrect: true
+      explanation: "Correct. The Mitigated category documents that a compensating control achieves the same security objective as the policy. In this case, the encrypted network gateway addresses the data-in-transit risk that the HTTPS-only policy targets. This exemption type maintains an audit trail of the compensating control."
+    - content: "In grace period—the resource needs more time to become compliant."
+      isCorrect: false
+      explanation: "Incorrect. A grace period is for situations where compliance is planned but not yet achieved. It doesn't apply when a compensating control is already in place."
+    - content: "Disabled—the policy definition should be disabled for this resource group."
+      isCorrect: false
+      explanation: "Incorrect. Disabling a policy definition removes enforcement for all resources in scope, not just the specific resource. Exemptions are the correct mechanism for excluding specific resources while keeping the policy active for others."
