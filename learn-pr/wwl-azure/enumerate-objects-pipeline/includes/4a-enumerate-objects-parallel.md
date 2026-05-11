@@ -2,13 +2,13 @@ PowerShell 7.0 introduced a third parameter set for `ForEach-Object`: the `-Para
 
 ## Basic parallel syntax
 
-The basic syntax uses the `-Parallel` parameter with a scriptblock:
+The basic syntax uses the `-Parallel` parameter with a script block:
 
 ```powershell
 1..5 | ForEach-Object -Parallel { "Processing $_" }
 ```
 
-By default, `ForEach-Object -Parallel` runs up to five iterations simultaneously. Use the `-ThrottleLimit` parameter to control the maximum number of concurrent scriptblocks:
+By default, `ForEach-Object -Parallel` runs up to five iterations simultaneously. Use the `-ThrottleLimit` parameter to control the maximum number of concurrent script blocks:
 
 ```powershell
 Get-Content servers.txt | ForEach-Object -Parallel {
@@ -16,9 +16,9 @@ Get-Content servers.txt | ForEach-Object -Parallel {
 } -ThrottleLimit 10
 ```
 
-## Passing variables into parallel scriptblocks
+## Passing variables into parallel script blocks
 
-Parallel scriptblocks run in separate runspaces and can't directly access variables from the caller's scope. Use the `$using:` scope modifier to pass outer variables in:
+Parallel script blocks run in separate runspaces and can't directly access variables from the caller's scope. Use the `$using:` scope modifier to pass outer variables in:
 
 ```powershell
 $logPath = "C:\Logs"
@@ -29,7 +29,7 @@ Get-ChildItem $logPath -File | ForEach-Object -Parallel {
 ```
 
 > [!NOTE]
-> Variables referenced without `$using:` inside a `-Parallel` scriptblock will be `$null` because the scriptblock runs in an isolated runspace.
+> Variables referenced without `$using:` inside a `-Parallel` script block are `$null` because the script block runs in an isolated runspace.
 
 ## When to use parallel enumeration
 
@@ -39,9 +39,9 @@ Parallel execution is best suited for tasks where the work per object is time-co
 - File I/O operations on separate files
 - Queries to multiple servers
 
-For trivial tasks, the overhead of creating new runspaces can make parallel execution *slower* than sequential. Use `-Parallel` when each operation takes at least several seconds.
+For trivial tasks, the overhead of creating new runspaces can make parallel execution *slower* than sequential processing. Use `-Parallel` when each operation takes at least several seconds.
 
-## Additional parameters
+## Other parameters
 
 - `-TimeoutSeconds` limits how long the parallel operation runs before stopping remaining items.
 - `-AsJob` returns the operation as a background job object instead of waiting for results.
