@@ -36,6 +36,16 @@ The balance between number of workers and instance size affects performance diff
 
 For analytical workloads with many shuffle operations, **fewer larger workers** typically perform better. For simple batch processing that benefits from high parallelism, **more smaller workers** might be more cost-effective.
 
+## Use flexible node types
+
+When Azure Databricks launches a compute resource, your cloud provider may occasionally run out of capacity for your specified instance type. This results in a `CLOUD_PROVIDER_RESOURCE_STOCKOUT` error, which can delay or fail job execution without warning.
+
+**Flexible node types** address this by automatically falling back to compatible alternative instance types when the preferred type is unavailable. Compatible alternatives share the same vCPU count, memory (within 100–110%), local disk configuration, CPU architecture, and OS image support as the primary instance type — ensuring your workload runs correctly regardless of which type is acquired.
+
+Workspace admins enable this feature by toggling **Enable auto flexible node types** in the workspace **Compute** admin settings. Once enabled, all new classic compute resources automatically use fallback instance types. This is particularly valuable for spot instances: flexible node types can attempt acquisition across multiple compatible types before falling back to on-demand, increasing the percentage of spot instances used and reducing total compute costs.
+
+For workloads with strict instance type requirements, you can disable flexible node types for an individual compute resource by setting `alternate_node_type_ids` to an empty list via the Clusters API. You can also specify a custom fallback list through the API if you prefer to control which alternative types are used rather than relying on automatic selection.
+
 ## Configure autoscaling
 
 Autoscaling adjusts the number of workers based on workload demands, helping you maintain performance while controlling costs.
