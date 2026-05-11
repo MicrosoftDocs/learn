@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-defender-cloud-security-controls.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Defender for Cloud configuration, security standards, and recommendation remediation.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer needs to deploy the required encryption configuration to 400 storage accounts that Defender for Cloud flagged as noncompliant. The same configuration change is needed on every resource. What is the most efficient approach?"
+    choices:
+    - content: "Create a governance rule to assign the storage team as owner of the recommendation with a 30-day deadline."
+      isCorrect: false
+      explanation: "Incorrect. A governance rule assigns ownership and a deadline, but it doesn't deploy the configuration. The storage team would still need to remediate each resource individually."
+    - content: "Use the Fix action on the recommendation to automatically deploy the required configuration to all selected noncompliant resources at once."
+      isCorrect: true
+      explanation: "Correct. The Fix action in Defender for Cloud deploys the required security configuration—such as enabling encryption—across all selected noncompliant resources in a single operation. This is the most efficient remediation path for security controls that can be automatically applied."
+    - content: "Export the recommendation list to CSV and update each storage account through the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. Manual remediation is error-prone and doesn't scale to hundreds of resources. The Fix action is designed specifically for this scenario."
+    - content: "Create a new Azure Policy definition with an Audit effect to report the noncompliant storage accounts."
+      isCorrect: false
+      explanation: "Incorrect. An Audit policy would report the noncompliance but not deploy the required configuration. The Fix action is the correct tool for bulk deployment of missing security controls."
+  - content: "Contoso's security team creates a custom security standard in Defender for Cloud to enforce internal security policies. What technology does Defender for Cloud use as the foundation for custom security standards?"
+    choices:
+    - content: "Microsoft Sentinel analytics rules"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel analytics rules detect threats and generate alerts. They aren't used to define compliance standards in Defender for Cloud."
+    - content: "Azure Policy initiatives"
+      isCorrect: true
+      explanation: "Correct. Custom security standards in Defender for Cloud are built on Azure Policy initiatives. When you create a custom standard, Defender for Cloud maps the initiative's policy definitions to security controls. Then it surfaces compliance status as recommendations in the same dashboard as built-in standards like Microsoft Cloud Security Benchmark (MCSB)."
+    - content: "Microsoft Secure Score control categories"
+      isCorrect: false
+      explanation: "Incorrect. Secure Score reflects the security posture improvement from remediating recommendations. It's a scoring model, not the underlying technology for defining standards."
+    - content: "Defender for Cloud workflow automation rules"
+      isCorrect: false
+      explanation: "Incorrect. Workflow automation rules trigger automated responses to recommendations or alerts. They aren't the foundation for custom security standards."
+  - content: "A Defender for Cloud recommendation flags a resource as noncompliant, but the security team confirmed that an alternative compensating control addresses the same risk. The resource should continue to be tracked but excluded from compliance calculations. Which exemption category is appropriate?"
+    choices:
+    - content: "Waiver—the risk identified by the recommendation has been accepted by the organization."
+      isCorrect: false
+      explanation: "Incorrect. A waiver indicates the risk has been accepted without an alternative control. It doesn't document that a compensating control is in place."
+    - content: "Mitigated—an alternative control addresses the same risk that the recommendation targets."
+      isCorrect: true
+      explanation: "Correct. The Mitigated exemption category documents that a compensating control provides equivalent risk reduction to the recommendation. This maintains an audit trail of the alternative control while excluding the resource from compliance score calculations."
+    - content: "In grace period resource,  need more time to implement the required control."
+      isCorrect: false
+      explanation: "Incorrect. A grace period is appropriate when compliance is planned but not yet achieved. It doesn't apply when an alternative control is already in place."
+    - content: "Risk accepted—the recommendation severity is too low to justify the remediation effort."
+      isCorrect: false
+      explanation: "Incorrect. Risk accepted isn't an exemption category in Defender for Cloud. The correct categories are Waiver and Mitigated."
