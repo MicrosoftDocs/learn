@@ -1,5 +1,16 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=fb14f62e-fac1-42f5-86ef-96a823f93551]
 
+Access control in Unity Catalog is built on four complementary models that work together to enforce secure, fine-grained access across your data environment.
+
+| Mechanism | Applies to | Use case |
+|---|---|---|
+| **Privileges and ownership** | Catalogs, schemas, tables | Baseline access and delegation — who can access what |
+| **Attribute-based access control (ABAC)** | Tagged objects across catalogs and schemas | Centralized, tag-driven policies for dynamic enforcement |
+| **Table-level row and column filters** | Individual tables | Per-table filtering or masking using UDFs |
+| **Workspace bindings** | Catalogs, external locations, storage credentials | Restricting access to objects from specific workspaces |
+
+This unit focuses on **privileges and ownership** — the foundation that all other models build on. Fine-grained row and column security is covered in the next two units. ABAC is covered in depth in the *Govern Unity Catalog objects* module.
+
 Unity Catalog uses a privilege model to control access to securable objects such as catalogs, schemas, tables, and views. Grants define *who* (the principal, such as a group or user) can perform *what action* (a privilege like SELECT, MODIFY, or CREATE) on *which object* (such as a table). Privileges can be assigned explicitly at each level of containment or inherited from higher levels like schemas or catalogs. Understanding these patterns is key to designing secure and maintainable permission structures.
 
 On Azure, a Unity Catalog **metastore** is a top-level container for all securable objects and is tightly integrated with Azure Databricks workspaces:

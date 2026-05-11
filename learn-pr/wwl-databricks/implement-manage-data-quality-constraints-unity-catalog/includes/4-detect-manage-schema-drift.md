@@ -78,6 +78,35 @@ WHEN NOT MATCHED THEN INSERT *
 
 New columns from the source are automatically added to the target table. However, you should carefully consider when to use schema evolution—automatic changes might introduce columns you didn't expect.
 
+## Choose a schema evolution mode
+
+Auto Loader supports five schema evolution modes controlled by the `cloudFiles.schemaEvolutionMode` option. Choosing the right mode depends on whether you need strict control, automatic adaptation, or a way to capture unexpected data without blocking the pipeline.
+
+| Mode | Behavior on new column or type change |
+|------|---------------------------------------|
+| `addNewColumns` (default) | Stream stops; new columns are added to schema on restart. Existing column types unchanged. |
+| `rescue` | Schema never evolves; unexpected data stored in the rescued data column. Stream continues. |
+| `failOnNewColumns` | Stream stops; requires manual schema update or removal of offending data before restart. |
+| `none` | Schema never evolves; new columns are silently ignored unless `rescuedDataColumn` is set. |
+| `addNewColumnsWithTypeWidening` | Stream stops; new columns are added **and** supported type changes are widened automatically (for example, `INT` → `LONG`). Requires Databricks Runtime 16.4 or above (Public Preview). |
+
+The `addNewColumnsWithTypeWidening` mode is useful when source systems gradually expand numeric ranges—for example, when a row count column grows beyond the `INT` limit. Rather than routing those records to the rescued data column, Auto Loader widens the column type automatically on restart:
+
+```python
+(spark.readStream
+    .format("cloudFiles")
+    .option("cloudFiles.format", "json")
+    .option("cloudFiles.schemaLocation", "/path/to/schema")
+    .option("cloudFiles.schemaEvolutionMode", "addNewColumnsWithTypeWidening")
+    .load("/path/to/source")
+    .writeStream
+    .option("checkpointLocation", "/path/to/checkpoint")
+    .toTable("target_table")
+)
+```
+
+Unsupported type changes—such as `INT` to `STRING`—are still captured in the rescued data column when this mode is active.
+
 ### Rescue unexpected data
 
 When you need to preserve data that doesn't match your schema without modifying the target structure, use the rescued data column. This approach captures mismatched data in a separate JSON column for later review.
@@ -106,7 +135,7 @@ Beyond automatic schema management, you need strategies for handling records tha
 Use expectations to filter out records that don't meet your structure requirements:
 
 ```python
-import databricks.sdk.pipelines as dp
+from pyspark import pipelines as dp
 
 @dp.table
 @dp.expect_or_drop("required_columns_present", 
@@ -136,7 +165,7 @@ The pipeline stops immediately when it encounters records missing required colum
 For a balanced approach, route invalid records to a separate quarantine table while allowing valid records to proceed:
 
 ```python
-import databricks.sdk.pipelines as dp
+from pyspark import pipelines as dp
 
 @dp.table
 def valid_transactions():

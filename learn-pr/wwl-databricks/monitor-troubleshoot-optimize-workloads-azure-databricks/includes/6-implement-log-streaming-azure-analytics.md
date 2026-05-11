@@ -24,6 +24,9 @@ Platform administrators typically configure the diagnostic settings through the 
 > [!NOTE]
 > Diagnostic logs require the **Azure Databricks Premium plan**. Logs typically become available in Log Analytics within **15 minutes** of the event occurring.
 
+> [!NOTE]
+> For querying audit logs within Azure Databricks itself, Databricks recommends using the `system.access.audit` system table. Log streaming to Azure Log Analytics is the preferred approach when you need cross-service centralized monitoring, KQL-based alerting, or integration with Azure Monitor and other Azure services.
+
 ## Explore the Azure Databricks log tables
 
 Azure Log Analytics organizes Azure Databricks logs into **purpose-specific tables**. Each table captures events from a particular service or feature, making it easier to focus your queries.
@@ -36,7 +39,7 @@ The most commonly used tables include:
 | `DatabricksJobs`         | Job creation, runs, failures, and schedule modifications           |
 | `DatabricksNotebook`     | Notebook execution, creation, and modification events              |
 | `DatabricksSQL`          | SQL warehouse operations and query-related events                  |
-| `DatabricksUnityCatalog` | Catalog, schema, and table access events                           |
+| `DatabricksTables`       | Table creation, deletion, access, and permission change events     |
 | `DatabricksWorkspace`    | Workspace-level operations and administrative actions              |
 | `DatabricksSecrets`      | Secret scope and secret access events                              |
 
@@ -49,7 +52,7 @@ Each table contains **standard columns** for event tracking:
 - `RequestParams` - Details about the request
 - `Response` - The outcome including status codes
 
-Understanding these tables helps you target your queries efficiently. For job-related issues, start with `DatabricksJobs`. For security investigations, focus on `DatabricksSecrets` and `DatabricksUnityCatalog`.
+Understanding these tables helps you target your queries efficiently. For job-related issues, start with `DatabricksJobs`. For security investigations, focus on `DatabricksSecrets` and `DatabricksTables`.
 
 ## Query logs with Kusto Query Language
 
@@ -92,14 +95,14 @@ DatabricksClusters
 | order by EventCount desc
 ```
 
-### Monitor Unity Catalog access
+### Monitor table access patterns
 
-For security and compliance, track who accesses sensitive data:
+For security and compliance, track who is creating, modifying, or deleting tables across your workspaces:
 
 ```kusto
-DatabricksUnityCatalog
+DatabricksTables
 | where TimeGenerated > ago(24h)
-| where OperationName has "getTable" or OperationName has "selectFromTable"
+| where OperationName has "create" or OperationName has "delete" or OperationName has "update"
 | project TimeGenerated, Identity, OperationName, RequestParams
 | order by TimeGenerated desc
 ```
@@ -130,14 +133,15 @@ DatabricksJobs
 | where FailureCount > 5
 ```
 
-**Unusual access patterns**: Alert when access to sensitive Unity Catalog objects occurs outside business hours.
+**Unusual table operations**: Alert when table create or delete operations occur outside business hours, which might indicate unauthorized data modification.
 
 ```kusto
-DatabricksUnityCatalog
+DatabricksTables
 | where TimeGenerated > ago(1h)
 | where hourofday(TimeGenerated) < 6 or hourofday(TimeGenerated) > 20
-| summarize AccessCount = count() by Identity
-| where AccessCount > 10
+| where OperationName has "create" or OperationName has "delete"
+| summarize OperationCount = count() by Identity
+| where OperationCount > 5
 ```
 
 **Cluster creation spikes**: Alert when cluster creation events exceed normal patterns, which might indicate runaway automation or unauthorized activity.
@@ -152,7 +156,7 @@ Log streaming transforms troubleshooting from **reactive investigation** to **sy
 
 **Investigating performance issues**: Query cluster events to identify scaling patterns. Look for frequent autoscaling events that might indicate undersized initial configurations.
 
-**Security incident response**: Use `DatabricksUnityCatalog` and `DatabricksSecrets` tables to trace data access. Correlate with `SourceIPAddress` to identify unusual access locations.
+**Security incident response**: Use `DatabricksTables` and `DatabricksSecrets` tables to trace data access. Correlate with `SourceIPAddress` to identify unusual access locations.
 
 **Cost attribution**: Combine cluster and job logs with Azure cost data to understand which teams or projects drive consumption.
 

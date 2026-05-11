@@ -34,7 +34,7 @@ To implement CDC processing, you first create a streaming table as the target. T
 from pyspark import pipelines as dp
 from pyspark.sql.functions import col, expr
 
-@dp.view
+@dp.temporary_view
 def employees_cdf():
     return spark.readStream.table("bronze.employee_changes")
 
@@ -70,6 +70,8 @@ dp.create_auto_cdc_flow(
 ```
 
 SCD Type 2 adds `__START_AT` and `__END_AT` columns to track when each version was active. The Seattle record remains with an end date, while a new Portland record appears with no end date. Analysts can query the table to see exactly when and how employee data changed over time.
+
+Some source systems emit **partial update records** that include only the changed columns rather than full row snapshots. In these cases, applying the update directly would overwrite unchanged columns with null values. The `ignore_null_updates` parameter (Python) or `IGNORE NULL UPDATES` clause (SQL) prevents this: when a CDC event matches an existing row, any null values in the incoming record leave the existing column values intact rather than overwriting them.
 
 ## Configure CDC flows in SQL
 

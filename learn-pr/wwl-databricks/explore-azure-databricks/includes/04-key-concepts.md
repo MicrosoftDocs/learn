@@ -119,14 +119,15 @@ All Databricks SQL queries run on **SQL warehouses** (formerly called SQL endpoi
 
 - **Pro SQL Warehouses**
 
-  - More customizable but slower to start (≈4 minutes).
-  - Less responsive autoscaling compared to serverless.
-  - Useful when consistent, predictable workloads are required.
+  - Supports Photon and Predictive IO, but not Intelligent Workload Management.
+  - Use when serverless is unavailable, or when custom networking is required (for example, federation or hybrid/on-premises connections).
 
 - **Classic SQL Warehouses**
 
   - Compute resources run in your **own Azure subscription**, not in Databricks.
-  - Less flexible than serverless but may be preferred for specific governance or cost management requirements.
+  - Takes approximately 4 minutes to start and scales with less responsiveness than serverless.
+  - Supports only Photon; no Predictive IO or Intelligent Workload Management.
+  - Use only for basic interactive exploration when serverless or pro aren't options.
 
 ## MLflow
 
