@@ -1,10 +1,10 @@
 ### YamlMime: ModuleUnit
 uid: learn.wwl.implement-development-lifecycle-processes-azure-databricks.configure-package-databricks-asset-bundles
-title: Configure and package DABs
+title: Configure and package Declarative Automation Bundles
 metadata:
-  title: Configure and Package DABs
-  description: Learn how to configure and customize Databricks Asset Bundles (DABs) for deployment automation, including bundle configuration structure, variables, resources, and deployment targets.
-  ms.date: 03/09/2026
+  title: Configure and Package Declarative Automation Bundles
+  description: Learn how to configure and customize Declarative Automation Bundles for deployment automation, including bundle configuration structure, variables, resources, and deployment targets.
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

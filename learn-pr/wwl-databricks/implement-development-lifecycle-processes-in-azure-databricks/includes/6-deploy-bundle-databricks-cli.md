@@ -1,6 +1,9 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ba441582-fe5d-4a1a-8f64-a1b426799f87]
 
-After your team packages a data asset bundle, deploying it to Azure Databricks becomes your next responsibility. The **Databricks CLI** provides a direct path from your local development environment to production workspaces. You control when and where your pipelines, jobs, and other resources go live. Understanding this **deployment workflow** enables you to move code reliably across environments while maintaining consistency.
+After your team configures a Declarative Automation Bundle, deploying it to Azure Databricks becomes your next responsibility. The **Databricks CLI** provides a direct path from your local development environment to production workspaces. You control when and where your pipelines, jobs, and other resources go live. Understanding this **deployment workflow** enables you to move code reliably across environments while maintaining consistency.
+
+> [!NOTE]
+> This unit focuses on CLI-based deployment, which is the recommended approach for CI/CD automation. Declarative Automation Bundles can also be managed through the Azure Databricks workspace UI (Public Preview), useful for ad-hoc collaboration without installing the CLI. See [Collaborate on bundles in the workspace](/azure/databricks/dev-tools/bundles/workspace).
 
 :::image type="content" source="../media/6-deploy-bundle-databricks-cli.png" alt-text="Diagram explaining the different steps when deploying a bundle with Databricks CLI." border="false" lightbox="../media/6-deploy-bundle-databricks-cli.png":::
 
