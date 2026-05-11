@@ -16,7 +16,10 @@ Data skipping becomes powerful when **related records are stored together** in t
 
 ## Implement liquid clustering for new tables
 
-Liquid clustering is the **recommended approach** for organizing data in new Delta Lake tables. Unlike traditional partitioning, liquid clustering allows you to **change your clustering strategy without rewriting existing data**. This flexibility is valuable when query patterns evolve or when you're uncertain which columns will be filtered most frequently.
+Liquid clustering is the **recommended approach** for organizing data in new Delta Lake tables, and is also available in Public Preview for managed Apache Iceberg tables in Unity Catalog (Databricks Runtime 16.4 LTS and above). Unlike traditional partitioning, liquid clustering allows you to **change your clustering strategy without rewriting existing data**. This flexibility is valuable when query patterns evolve or when you're uncertain which columns will be filtered most frequently.
+
+> [!NOTE]
+> For managed Iceberg tables in Unity Catalog, specifying a `PARTITION BY` clause is interpreted as liquid clustering keys — not traditional Hive-style partitions. There is no separate Iceberg-specific partition behavior; all layout optimization goes through liquid clustering.
 
 To enable liquid clustering, use the **`CLUSTER BY`** clause when creating a table:
 
