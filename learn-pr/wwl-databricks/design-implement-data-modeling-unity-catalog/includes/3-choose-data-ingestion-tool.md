@@ -25,7 +25,7 @@ Managed connectors are organized into three types:
 - **Community connectors** are open-source connectors built and maintained by the community. They extend Lakeflow Connect to sources that don't yet have a managed connector. You can use an existing community connector or contribute your own.
 
 > [!NOTE]
-> The connector ecosystem is growing rapidly. See the [managed connectors documentation](https://learn.microsoft.com/azure/databricks/ingestion/lakeflow-connect/) for the current full list of supported sources.
+> The connector ecosystem is growing rapidly. See the [managed connectors documentation](/azure/databricks/ingestion/lakeflow-connect/) for the current full list of supported sources.
 
 **Standard connectors** extend Lakeflow Connect to cloud object storage and message buses. You can ingest data from Amazon S3, Azure Data Lake Storage, or Google Cloud Storage using Auto Loader. For real-time data, standard connectors support Apache Kafka, Google Pub/Sub, and Apache Pulsar.
 
