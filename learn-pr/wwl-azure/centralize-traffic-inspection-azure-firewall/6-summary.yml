@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.centralize-traffic-inspection-azure-firewall.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit summarizes the key takeaways from the centralize and enforce traffic inspection using Azure Firewall module."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-summary.md)]

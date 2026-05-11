@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.centralize-traffic-inspection-azure-firewall.determine-when-centralized-traffic-inspection-required
+title: Determine when centralized traffic inspection is required
+metadata:
+  title: Determine When Centralized Traffic Inspection Is Required
+  description: "Identify the threat classes that Network Security Group (NSG) filtering can't address and determine when Azure Firewall is required. Azure Firewall provides deep packet inspection, FQDN-based filtering, and threat-intelligence-based blocking."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-determine-when-centralized-traffic-inspection-required.md)]

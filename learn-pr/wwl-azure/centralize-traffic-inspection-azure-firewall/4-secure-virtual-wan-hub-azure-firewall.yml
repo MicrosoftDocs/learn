@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.centralize-traffic-inspection-azure-firewall.secure-virtual-wan-hub-azure-firewall
+title: Secure a Virtual WAN hub with Azure Firewall
+metadata:
+  title: Secure a Virtual WAN Hub with Azure Firewall
+  description: "Deploy a Secured Virtual Hub to centralize traffic inspection for hub-spoke and branch environments using Azure Firewall Manager routing intent."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-secure-virtual-wan-hub-azure-firewall.md)]
