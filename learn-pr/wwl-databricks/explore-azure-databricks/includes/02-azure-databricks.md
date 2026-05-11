@@ -26,7 +26,7 @@ When you create a workspace, you must specify:
 - **Managed Resource Group name** (optional): an automatically created resource group where Azure provisions and manages the infrastructure resources needed for your Databricks workspace.
 
 > [!TIP]
-> A **Free Edition** is available for students and educators with no time limit and no payment required, though it has daily usage limits and no access to classic compute. See [Sign up for Azure Databricks](https://learn.microsoft.com/azure/databricks/getting-started/free-trial-vs-free-edition) for a comparison.
+> A **Free Edition** is available for students and educators with no time limit and no payment required, though it has daily usage limits and no access to classic compute. See [Sign up for Azure Databricks](/azure/databricks/getting-started/free-trial-vs-free-edition) for a comparison.
 
 ![Screenshot of Azure Databricks in the Azure Portal.](../media/01-azure-databricks.png)
 
