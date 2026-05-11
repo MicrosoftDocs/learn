@@ -59,9 +59,9 @@ Azure Machine Configuration policies (formerly Azure Guest Configuration) assess
 
 Contoso's security team assigns three policies at the Factory Operations management group scope:
 
-1. **Configure Azure Defender for Servers to be enabled (with 'P1' subplan) for all resources—ensures all Arc servers receive vulnerability scanning and threat detection
-2. **Configure ChangeTracking Extension for Windows Arc machines—enables FIM on all factory Windows servers
-3. **Windows machines should meet requirements of the Azure compute security baseline—assesses compliance with CIS benchmarks
+- **Configure Azure Defender for Servers to be enabled (with 'P1' subplan) for all resources** — ensures all Arc servers receive vulnerability scanning and threat detection
+- **Configure ChangeTracking Extension for Windows Arc machines** — enables FIM on all factory Windows servers
+- **Windows machines should meet requirements of the Azure compute security baseline** — assesses compliance with CIS benchmarks
 
 After assignment, the team creates remediation tasks to deploy extensions to the 47 Arc-enrolled servers that existed before the policies were assigned. All future Arc enrollments receive these extensions automatically within minutes of registration.
 
