@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.segment-isolate-workloads-network-security-controls.verify-effective-network-security-rules-network-watcher
+title: Verify effective network security rules with Network Watcher
+metadata:
+  title: Verify Effective Network Security Rules with Network Watcher
+  description: "Use Network Watcher effective security rules, IP flow verify, and Network Security Group (NSG) diagnostics to validate that segmentation controls produce the intended security posture."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-verify-effective-network-security-rules-network-watcher.md)]
