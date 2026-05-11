@@ -45,8 +45,10 @@ Storage credentials are metastore-level objects available to all attached worksp
 
 By default, an external location is accessible from all workspaces attached to your metastore. This means that any user with appropriate privileges can use the external location from any workspace. However, you might want to restrict access to specific workspaces to align with your organization's security boundaries or data governance policies.
 
-**Workspace binding** restricts an external location to designated workspaces. When enabled, users can only access the external location from assigned workspaces, regardless of their Unity Catalog privileges. This creates an additional layer of access control beyond user-level permissions. 
+**Workspace binding** restricts an external location to designated workspaces. When enabled, users can only access the external location from assigned workspaces, regardless of their Unity Catalog privileges. This creates an additional layer of access control beyond user-level permissions.
 
 :::image type="content" source="../media/workspace-binding-external-locations.png" alt-text="Diagram explaining workspace binding for external locations." border="false" lightbox="../media/workspace-binding-external-locations.png":::
+
+Workspace binding applies independently to both external locations and storage credentials. By default, a storage credential is also accessible from all workspaces attached to the metastore. You can bind a storage credential to specific workspaces so it can only be used to create external locations within designated workspaces—a common pattern for ensuring production credentials are used only in production workspaces.
 
 Workspace binding is relevant when workspaces represent different environments (production versus development) or when compliance requirements mandate that certain data remains accessible only from specific compute environments. For example, production data can be bound exclusively to production workspaces, preventing access from development environments even for privileged users.
