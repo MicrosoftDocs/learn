@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-defender-cloud-security-controls.configure-defender-cloud-security-standards
+metadata:
+  title: Configure Defender for Cloud and manage security standards
+  description: Configure Defender for Cloud environment settings and manage security standards at management group scope, including Microsoft Cloud Security Benchmark (MCSB), regulatory standards, and custom standards.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure Defender for Cloud and manage security standards
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-configure-defender-cloud-security-standards.md)]
