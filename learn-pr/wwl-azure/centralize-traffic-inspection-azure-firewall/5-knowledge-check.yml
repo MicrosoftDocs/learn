@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.centralize-traffic-inspection-azure-firewall.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Azure Firewall capabilities, rule collection configuration, Firewall Policy, and Secured Virtual Hub deployment.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's security team needs to prevent Azure-hosted VMs from accessing malware command-and-control domains, even if those domains use dynamically generated hostnames. Which Azure Firewall capability addresses the requirement?"
+    choices:
+    - content: "A network rule collection that denies outbound traffic on ports 80 and 443."
+      isCorrect: false
+      explanation: "Blocking ports 80 and 443 broadly prevents all web traffic, not just malicious destinations. Threat-intelligence-based filtering targets known malicious IPs and domains specifically without blocking legitimate traffic."
+    - content: "Threat-intelligence-based filtering set to Deny mode, which blocks traffic to and from known malicious IPs and domains maintained by Microsoft."
+      isCorrect: true
+      explanation: "Threat-intelligence-based filtering in Deny mode uses Microsoft's threat intelligence feed to block traffic to and from known malicious destinations automatically, addressing dynamically generated hostnames that static IP rules can't capture."
+    - content: "An application rule collection with a wildcard FQDN deny-rule for all `.xyz` and `.top` domains."
+      isCorrect: false
+      explanation: "Wildcard FQDN rules deny entire TLDs indiscriminately. Threat-intelligence filtering is more precise and is maintained automatically by Microsoft's security research teams."
+  - content: "A Contoso Azure AI agent running in a spoke virtual network makes outbound HTTPS calls to Azure OpenAI endpoints. The security team wants to ensure the agent can only reach authorized Azure OpenAI endpoints and is blocked from reaching any other external AI APIs. Which Azure Firewall rule type enforces blocking external AI APIs?"
+    choices:
+    - content: "A network rule collection that allows outbound traffic on port 443 to Azure OpenAI IP ranges."
+      isCorrect: false
+      explanation: "Azure OpenAI uses shared infrastructure with dynamic IP addresses. FQDN-based application rules are the correct control for restricting access to specific service endpoints by hostname rather than IP."
+    - content: "An application rule collection with FQDN rules that allow the specific Azure OpenAI endpoint hostnames and deny all other external AI service FQDNs."
+      isCorrect: true
+      explanation: "Application rules with FQDN targets control outbound HTTPS by destination hostname. Allowing specific Azure OpenAI FQDNs and relying on the deny-stance blocks other external AI APIs without needing to enumerate their IP addresses."
+    - content: "A threat-intelligence rule that blocks known AI data exfiltration domains."
+      isCorrect: false
+      explanation: "Threat-intelligence filtering addresses known malicious destinations. It doesn't provide allow-listing control over which legitimate AI services an agent is permitted to reach."
+  - content: "Contoso deploys Azure Virtual WAN with hub-spoke topology across three regions. The CISO requires all inter-spoke and internet-bound traffic to pass through a central inspection point. What configuration achieves the outcome?"
+    choices:
+    - content: "Deploy an Azure Firewall in each spoke virtual network and configure UDRs to route all traffic through the local spoke firewall."
+      isCorrect: false
+      explanation: "Deploying firewalls in individual spokes creates distributed inspection points that are harder to manage centrally and don't intercept traffic between spokes. The Secured Virtual Hub pattern centralizes inspection in the hub."
+    - content: "Convert each Virtual WAN hub to a Secured Virtual Hub by deploying Azure Firewall into the hub, then enable routing intent for private and internet traffic."
+      isCorrect: true
+      explanation: "A Secured Virtual Hub with routing intent configured for both private and internet traffic routes all inter-spoke and internet-bound traffic through the hub-resident Azure Firewall, providing centralized inspection across all regions."
+    - content: "Create NSG rules on each spoke subnet that deny direct spoke-to-spoke traffic and force routing through an on-premises firewall."
+      isCorrect: false
+      explanation: "Routing traffic back to an on-premises firewall introduces significant latency and bandwidth costs for cloud-to-cloud traffic. Secured Virtual Hub provides the central inspection point natively in Azure."
