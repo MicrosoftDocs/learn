@@ -28,10 +28,10 @@ Azure Firewall supports two configuration methods: classic rules and **Firewall 
 
 Firewall Policy organizes rules into a four-level hierarchy:
 
-1. **Policy**: The top-level resource (for example, `policy-contoso-security`)
-2. **Rule collection group**: A container with a priority value (100, 200, 300, and so on). Lower numbers are evaluated first.
-3. **Rule collection**: A set of rules with a shared action (Allow or Deny) and priority within the group
-4. **Rules**: Individual traffic-matching criteria (source IP, destination FQDN, port, protocol)
+- **Policy**: The top-level resource (for example, `policy-contoso-security`)
+- **Rule collection group**: A container with a priority value (100, 200, 300, and so on). Lower numbers are evaluated first.
+- **Rule collection**: A set of rules with a shared action (Allow or Deny) and priority within the group
+- **Rules**: Individual traffic-matching criteria (source IP, destination FQDN, port, protocol)
 
 Firewall Policy supports three rule collection types, and Azure Firewall evaluates all traffic in a fixed priority order:
 
