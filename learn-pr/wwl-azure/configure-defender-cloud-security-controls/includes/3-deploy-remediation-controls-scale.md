@@ -4,17 +4,17 @@ Recommendations in Microsoft Defender for Cloud represent missing or misconfigur
 
 A recommendation in Defender for Cloud identifies a specific security gap on one or more resources. The remediation workflow is straightforward:
 
-- review the recommendation
-- select the deployment mechanism that fits the control type
-- execute the deployment
-- verify the control is active and the recommendation is resolved
+- Review the recommendation
+- Select the deployment mechanism that fits the control type
+- Execute the deployment
+- Verify the control is active and the recommendation is resolved
 
 Four mechanisms deploy security controls at scale:
 
-- **Fix** - deploy a security configuration automatically to selected resources using Defender for Cloud's built-in remediation logic
-- **Policy remediation task** - trigger a DeployIfNotExists or Modify policy to configure resources that match the policy condition
-- **Governance rule** - assign ownership and a compliance deadline to the team responsible for a group of resources
-- **Exemption** - formally document that a resource is excluded from a specific control with a justified reason
+- **Fix** - Deploy a security configuration automatically to selected resources using Defender for Cloud's built-in remediation logic
+- **Policy remediation task** - Trigger a DeployIfNotExists or Modify policy to configure resources that match the policy condition
+- **Governance rule** - Assign ownership and a compliance deadline to the team responsible for a group of resources
+- **Exemption** - Formally document that a resource is excluded from a specific control with a justified reason
 
 Use this table to choose the right mechanism when you open a recommendation:
 
