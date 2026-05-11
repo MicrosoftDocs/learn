@@ -3,13 +3,13 @@ uid: learn.oxford.create-image-recognition-with-azure-iot-edge.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this section, we introduce the concept to the learner.
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  description: "Introduce the Azure IoT Edge image recognition scenario, solution components, learning objectives, and prerequisites for using Azure AI Custom Vision and Azure Speech text to speech."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
-durationInMinutes: 4 # dummy number at present
+  ms.custom: team=cloud_advocates
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

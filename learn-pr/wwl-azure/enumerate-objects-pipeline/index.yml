@@ -26,6 +26,8 @@ abstract: |
   -   Explain how to enumerate objects by using advanced syntax.
 
   -   Perform advanced enumeration.
+
+  -   Use ForEach-Object -Parallel to process pipeline objects concurrently in PowerShell 7.
 prerequisites: |
   -   Familiarity with Windows networking technologies and implementation.
 
@@ -55,6 +57,7 @@ units:
 - learn.wwl.enumerate-objects-pipeline.learn-about-enumerations-pipeline
 - learn.wwl.enumerate-objects-pipeline.review-basic-syntax-enumerate-objects
 - learn.wwl.enumerate-objects-pipeline.review-advanced-syntax-enumerate-objects
+- learn.wwl.enumerate-objects-pipeline.enumerate-objects-parallel
 - learn.wwl.enumerate-objects-pipeline.knowledge-check
 - learn.wwl.enumerate-objects-pipeline.summary
 badge:

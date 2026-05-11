@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.eliminate-public-exposure-paas-private-link.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of private endpoint configuration, private DNS integration, Azure Private Link service, and policy-based enforcement of private access adoption.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso configures a private endpoint for an Azure SQL database but finds that applications continue to resolve the server's public hostname to its public IP address. What is missing from the configuration?"
+    choices:
+    - content: "The private endpoint approval workflow isn't complete—the private endpoint connection is still in a pending state."
+      isCorrect: false
+      explanation: "An unapproved private endpoint would prevent connectivity entirely. DNS resolution returning the public IP indicates the private endpoint is potentially approved but DNS isn't configured to route name resolution to the private IP."
+    - content: "A private DNS zone for `privatelink.database.windows.net` isn't linked to the virtual network, so DNS still resolves to the public IP instead of the private endpoint IP."
+      isCorrect: true
+      explanation: "Private endpoint DNS integration requires a private DNS zone linked to the virtual network. Without it, the public hostname resolves to the public IP and traffic bypasses the private endpoint. The private DNS zone overrides public resolution with the private endpoint's private IP."
+    - content: "The public network access setting on the Azure SQL server isn't disabled—public access must be removed before the private endpoint activates."
+      isCorrect: false
+      explanation: "Disabling public access is a recommended hardening step but is separate from DNS resolution. The private endpoint is functional once approved, but without DNS integration, clients still resolve to the public IP even if the private endpoint exists."
+  - content: "A penetration tester demonstrates that a stolen Microsoft Entra credential can be used to upload data to a Contoso Storage account directly from the internet, bypassing all corporate network controls. Contoso already has the Storage account firewall set to allow selected networks with specific virtual network service endpoints. This attack still works, why?"
+    choices:
+    - content: "Service endpoints restrict which VNets can reach the Storage account over its public endpoint, but the public endpoint still exists and is reachable from the internet with valid credentials."
+      isCorrect: true
+      explanation: "Virtual network service endpoints restrict access to the public endpoint by authorized virtual network source—they don't eliminate the public endpoint. An attacker with valid credentials can authenticate directly against the public endpoint from anywhere on the internet. Private endpoints are required to eliminate the public route entirely."
+    - content: "The storage firewall should be set to deny all networks rather than selected networks. Allowing any virtual network keeps the public endpoint open."
+      isCorrect: false
+      explanation: "Setting the firewall to deny all networks would block virtual network traffic as well. The core architectural gap is that service endpoints protect the public endpoint rather than replacing it—private endpoints are the correct control."
+    - content: "The stolen credential should be revoked through Microsoft Entra to prevent further use. Network controls are secondary to identity controls in this scenario."
+      isCorrect: false
+      explanation: "Credential revocation is an important immediate response, but it doesn't address the systemic problem—the Storage account is reachable from the internet. Private endpoints eliminate the public route so that stolen credentials can't be used against the storage endpoint from outside the private network."
+  - content: "Contoso's security team wants to prevent any new Azure SQL server from being created with public network access enabled, while giving existing noncompliant servers time to be remediated before enforcement. What is the correct sequencing of Azure Policy actions?"
+    choices:
+    - content: "Assign a Deny policy immediately at management group scope, then create remediation tasks for existing servers using the policy's remediation capability."
+      isCorrect: false
+      explanation: "Assigning a Deny policy immediately would block all new Azure SQL server deployments that don't include private endpoint configuration, but it doesn't prevent breaking changes to existing workflows during the transition period. Audit-first is the safer approach."
+    - content: "Assign the policy in Audit effect first, review the compliance report to identify noncompliant resources, remediate existing servers, then change the policy effect to Deny."
+      isCorrect: true
+      explanation: "Starting in Audit mode surfaces noncompliant resources without blocking new deployments. After existing servers are remediated and teams are notified, switching to Deny prevents new public-endpoint servers from being created—this is the Zero Trust 'know your state before you enforce' approach."
+    - content: "Use Defender for Cloud recommendations to tag noncompliant servers, then delete and redeploy them with private endpoints enabled."
+      isCorrect: false
+      explanation: "Deleting and redeploying production databases introduces unnecessary risk and downtime. Private endpoints can be added to existing Azure SQL servers without redeployment."

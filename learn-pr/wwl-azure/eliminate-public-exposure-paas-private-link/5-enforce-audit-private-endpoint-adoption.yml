@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.eliminate-public-exposure-paas-private-link.enforce-audit-private-endpoint-adoption
+title: Enforce and audit private endpoint adoption
+metadata:
+  title: Enforce and Audit Private Endpoint Adoption
+  description: "Use Azure Policy in audit mode then deny mode, and Defender for Cloud network recommendations, to enforce and audit private endpoint adoption across Azure PaaS and AI services at scale."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-enforce-audit-private-endpoint-adoption.md)]
