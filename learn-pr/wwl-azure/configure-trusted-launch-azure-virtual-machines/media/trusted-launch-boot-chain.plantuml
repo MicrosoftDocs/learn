@@ -1,0 +1,107 @@
+@startuml
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontSize 16
+skinparam sequence {
+  ArrowColor #FF5C39
+  ArrowFontSize 15
+  LifeLineBorderColor #0078D4
+  LifeLineBackgroundColor #004578
+  BoxBackgroundColor #E8F0FE
+  BoxBorderColor #0078D4
+  BoxFontSize 16
+  DividerFontSize 16
+  GroupFontSize 16
+  GroupBorderColor #0078D4
+}
+skinparam participant {
+  BackgroundColor #0078D4
+  FontColor #FFFFFF
+  BorderColor #004578
+  FontSize 16
+  RoundCorner 8
+}
+skinparam note {
+  BackgroundColor #FFF4E5
+  FontColor #000000
+  BorderColor #FF5C39
+  FontSize 15
+}
+skinparam box {
+  FontColor #000000
+  BorderColor #0078D4
+  FontSize 16
+}
+skinparam legend {
+  BackgroundColor #FFFFFF
+  BorderColor #CCCCCC
+  FontSize 15
+}
+
+legend top right
+  |= Color |= Component |= Role |
+  |<#0078D4>   | Boot components | The VM boot chain stages |
+  |<#FF5C39>   | Secure Boot | Prevent — block unsigned code |
+  |<#C73ECC>   | vTPM | Measure — record what ran |
+  |<#F4364C>   | Defender for Cloud | Detect — alert on failures |
+end legend
+
+box "Azure Virtual Machine — Boot Chain" #E8F0FE
+  participant "UEFI\nFirmware" as UEFI
+  participant "Boot\nLoader" as BL
+  participant "OS\nKernel" as Kernel
+  participant "Kernel-mode\nDrivers" as Drivers
+end box
+
+participant "Secure Boot\n(Prevent)" as SB #FF5C39
+participant "vTPM\n(Measure)" as vTPM #C73ECC
+
+box "Azure Platform" #E8F0FE
+  participant "Attestation\nService" as Attest
+  participant "Defender\nfor Cloud" as DfC #F4364C
+end box
+
+== Stage 1: Firmware ==
+
+UEFI -> SB : Submit firmware signature
+SB --> UEFI : ✓ Valid — allow execution
+vTPM -> UEFI : Measure firmware → store in PCR 0
+
+== Stage 2: Boot Loader ==
+
+UEFI -> BL : Load boot loader
+BL -> SB : Submit boot loader signature
+SB --> BL : ✓ Valid — allow execution
+vTPM -> BL : Measure boot loader → store in PCR 4
+
+== Stage 3: OS Kernel ==
+
+BL -> Kernel : Load kernel
+Kernel -> SB : Submit kernel signature
+SB --> Kernel : ✓ Valid — allow execution
+vTPM -> Kernel : Measure kernel → store in PCR 8
+
+== Stage 4: Kernel Drivers ==
+
+Kernel -> Drivers : Load drivers
+Drivers -> SB : Submit driver signatures
+SB --> Drivers : ✓ Valid — allow execution
+vTPM -> Drivers : Measure drivers → store in PCR 11
+
+== Attestation (Integrity Monitoring) ==
+
+vTPM -> Attest : Send PCR measurements\nvia Guest Attestation extension
+Attest -> Attest : Compare against\nknown-good baseline
+
+alt Boot integrity confirmed
+  Attest --> DfC : ✓ Boot integrity healthy
+else Mismatch detected (tampered component or Secure Boot disabled)
+  Attest --> DfC : ⚠ Boot integrity failure
+  note over DfC
+    Security alert generated
+    Appears in Azure portal
+    Triggers configured actions
+    (email, Logic App, etc.)
+  end note
+end
+
+@enduml

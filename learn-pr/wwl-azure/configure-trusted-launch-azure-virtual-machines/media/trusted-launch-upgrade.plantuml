@@ -1,0 +1,60 @@
+@startuml
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontSize 16
+left to right direction
+
+skinparam rectangle {
+  FontSize 16
+  FontColor #FFFFFF
+  BorderThickness 2
+  BorderColor #004578
+  RoundCorner 8
+}
+
+skinparam arrow {
+  Color #FF5C39
+  FontSize 15
+  FontColor #000000
+  Thickness 2
+}
+
+skinparam note {
+  BackgroundColor #FFF4E5
+  FontColor #000000
+  BorderColor #FF5C39
+  FontSize 15
+}
+
+skinparam legend {
+  BackgroundColor #FFFFFF
+  BorderColor #CCCCCC
+  FontSize 15
+}
+
+legend top right
+  |= Color |= Meaning |
+  |<#0078D4>   | Starting state (Standard security) |
+  |<#FF5C39>   | Upgrade actions required |
+  |<#107C10>   | Protected end state (Trusted Launch) |
+end legend
+
+rectangle "**Standard Security VM**\n\nGeneration: Gen2\n\n[ ] Secure Boot: Disabled\n[ ] vTPM: Disabled\n[ ] Integrity monitoring: Disabled\n\nBoot chain: Unverified\nDefender for Cloud: No boot alerts" as Standard #0078D4
+
+rectangle "**Enable Trusted Launch**\n\nDeallocate VM\nChange security type\nEnable components\nRestart" as Steps #FF5C39
+
+rectangle "**Trusted Launch VM**\n\nGeneration: Gen2\n\n[x] Secure Boot: Enforcing signatures\n[x] vTPM: Measuring boot chain\n[x] Integrity monitoring: Active\n\nBoot chain: Cryptographically verified\nDefender for Cloud: Boot alerts enabled" as Trusted #107C10
+
+Standard --> Steps : upgrade\nrequired
+Steps --> Trusted : Trusted Launch\nenabled on restart
+
+note bottom of Standard
+  New Gen2 VMs default to Trusted Launch
+  automatically — no upgrade required.
+end note
+
+note bottom of Trusted
+  Integrity monitoring requires
+  explicit enablement on all paths.
+end note
+
+@enduml
