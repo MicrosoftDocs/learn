@@ -3,16 +3,16 @@ uid: learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-install-
 title: Exercise - Install IoT Edge runtime for Linux
 metadata:
   title: Exercise - Install IoT Edge runtime for Linux
-  description: In this section, we help the learner to how to install edge runtime on Linux computer.
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  description: "Create Azure resources, register an IoT Edge device, and install and provision the Azure IoT Edge 1.5 runtime with the Moby engine on a supported Ubuntu Server Linux computer."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange
     - linux-related-content
-    - team=nextgen
-durationInMinutes: 15 # dummy number at present
+    - team=cloud_advocates
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-install-edge-runtime-linux.md)]
-
+

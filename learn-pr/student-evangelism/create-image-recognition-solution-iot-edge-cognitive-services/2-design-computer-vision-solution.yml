@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.design-computer-vision-solution
-title: Exercise - Design computer vision solution
+title: Design a computer vision solution
 metadata:
-  title: Exercise - Design computer vision solution
-  description: In this section, we help the learner to how to design the solution.
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  title: Design a computer vision solution
+  description: "Learn how the self-checkout solution uses Azure IoT Edge, Azure IoT Hub, containerized modules, a prebuilt Azure AI Custom Vision model, and Azure Speech to classify scanned items and announce labels."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
-durationInMinutes: 5 # dummy number at present
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
 content: |
   [!include[](includes/2-design-computer-vision-solution.md)]
-
+

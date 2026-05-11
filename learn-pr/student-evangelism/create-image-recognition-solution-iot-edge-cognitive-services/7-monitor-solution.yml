@@ -3,13 +3,13 @@ uid: learn.oxford.create-image-recognition-with-azure-iot-edge.monitor-solution
 title: Monitor your solution
 metadata:
   title: Monitor your solution
-  description: In this unit, we monitor the solution on IoT Edge and from Azure IoT Hub
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  description: "Monitor the deployed IoT Edge solution by checking module status on the Linux device, reviewing module state in Azure IoT Hub, and optionally observing upstream telemetry events from Azure Cloud Shell."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
-durationInMinutes: 3 # dummy number at present
+  ms.custom: team=cloud_advocates
+durationInMinutes: 3
 content: |
-   [!include[](includes/7-monitor-solution.md)]
-
+  [!include[](includes/7-monitor-solution.md)]
+
