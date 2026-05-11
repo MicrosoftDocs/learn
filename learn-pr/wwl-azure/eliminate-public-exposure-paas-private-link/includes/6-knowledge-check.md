@@ -1,0 +1,1 @@
+Answer the following questions to check your understanding of private endpoint configuration, private DNS integration, Azure Private Link service, and policy-based enforcement of private access adoption.
