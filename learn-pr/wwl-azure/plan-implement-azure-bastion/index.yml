@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.plan-implement-azure-bastion
+metadata:
+  title: Plan and Implement Azure Bastion
+  description: "Plan and deploy Azure Bastion to provide secure, browser-based RDP and SSH access to virtual machines without exposing public IP addresses or management ports. Select the right SKU, deploy and configure Bastion, and connect to VMs using portal and native client methods."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-bastion
+  ai-usage: ai-assisted
+title: Plan and implement Azure Bastion
+summary: Plan and deploy Azure Bastion to provide secure, browser-based RDP and SSH access to virtual machines without exposing public IP addresses or management ports. Select the appropriate SKU based on scale and feature requirements, deploy and configure Bastion in an Azure virtual network, and connect to VMs using both portal and native client methods.
+abstract: |
+  After completing this module, you can:
+    - Select the appropriate Azure Bastion SKU based on scale, feature, and cost requirements
+    - Deploy and configure Azure Bastion in an Azure virtual network
+    - Connect to Azure virtual machines through Azure Bastion using portal and native client methods
+    - Configure advanced Bastion features including native client support, shareable links, and session recording
+prerequisites: |
+  - Working knowledge of Azure Virtual Machines, including deploying and managing VMs
+  - Understanding of Azure Virtual Network concepts including subnets and public IP addresses
+  - Familiarity with RDP and SSH remote access concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-bastion
+  - azure-virtual-machines
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.plan-implement-azure-bastion.introduction
+- learn.wwl.plan-implement-azure-bastion.plan-azure-bastion-deployment
+- learn.wwl.plan-implement-azure-bastion.deploy-configure-azure-bastion
+- learn.wwl.plan-implement-azure-bastion.connect-vms-azure-bastion
+- learn.wwl.plan-implement-azure-bastion.knowledge-check
+- learn.wwl.plan-implement-azure-bastion.summary
+badge:
+  uid: learn.wwl.plan-implement-azure-bastion.badge
