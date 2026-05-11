@@ -43,7 +43,7 @@ Delta Lake extends Parquet files with a **transaction log** that records every c
 
 - **Unified batch and streaming**: Use the same table as both a batch source and a streaming source or sink.
 
-Delta Lake integrates deeply with the Azure Databricks platform. Features like **liquid clustering**, **predictive optimization**, and **change data feed** rely on Delta Lake's transaction log.
+Delta Lake integrates deeply with the Azure Databricks platform. Features like **liquid clustering** and **predictive optimization** are available for both Delta Lake and managed Apache Iceberg tables in Unity Catalog. **Change data feed**, however, is specific to Delta Lake and relies on its transaction log.
 
 For most scenarios in Azure Databricks, Delta Lake is the recommended choice. It provides the performance benefits of Parquet with transactional guarantees that production data systems require.
 

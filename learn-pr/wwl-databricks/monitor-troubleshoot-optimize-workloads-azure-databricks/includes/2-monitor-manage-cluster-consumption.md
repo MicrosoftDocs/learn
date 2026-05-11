@@ -128,3 +128,6 @@ GROUP BY sku_name, usage_unit
 ```
 
 Reviewing monthly cost reports helps you catch anomalies early. Investigate unexpected increases before they become significant budget problems.
+
+> [!NOTE]
+> Serverless compute for notebooks and jobs uses a different cost model. In `system.billing.usage`, filter by `product_features.is_serverless = true` to isolate serverless usage. The `identity_metadata.run_as` column identifies which user or service principal ran the workload. Because of the distributed architecture, multiple billing records can appear for a single serverless job run—always use `SUM()` rather than expecting a single row per run.
