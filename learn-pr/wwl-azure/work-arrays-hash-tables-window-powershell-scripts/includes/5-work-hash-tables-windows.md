@@ -13,12 +13,21 @@ Notice the following syntax in the previous example:
 > [!NOTE]
 > The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.
 
-Adding or removing items from a hash table is similar to an array list. You use the methods **Add()** and **Remove()**. For example:
+Adding or removing items from a hash table is similar to an array list. You use the methods `Add()` and `Remove()`. For example:
 
 ```powershell
 $servers.Add("LON-SRV2","172.16.0.12")
 $servers.Remove("LON-DC1")
 ```
+
+You can also add or update a value using array notation:
+
+```powershell
+$servers["LON-SRV3"] = "172.16.0.13"
+```
+
+> [!NOTE]
+> The `Add()` method throws an error if the key already exists. Array notation silently updates the value instead of throwing an error, making it more suitable when you're not sure whether a key already exists.
 
 You can also update the value for a key. For example:
 
@@ -26,7 +35,7 @@ You can also update the value for a key. For example:
 $servers."LON-SRV2"="172.16.0.100"
 ```
 
-To review all properties and methods available for a hash table, use the **Get-Member** cmdlet. For example:
+To review all properties and methods available for a hash table, use the `Get-Member` cmdlet. For example:
 
 ```powershell
 $servers | Get-Member
