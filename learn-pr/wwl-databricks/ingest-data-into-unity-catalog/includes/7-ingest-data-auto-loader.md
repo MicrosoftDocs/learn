@@ -88,6 +88,7 @@ When your source data introduces new columns, Auto Loader detects the change and
 | Mode | Behavior |
 | --- | --- |
 | `addNewColumns` | Stream fails. New columns are added to the schema. On restart, stream continues with the updated schema. This is the default when no schema is provided. |
+| `addNewColumnsWithTypeWidening` | Stream fails. New columns are added to the schema and supported data type changes (such as `INT` to `LONG`) are widened automatically. Unsupported type changes are captured in `_rescued_data`. Requires Databricks Runtime 16.4+. |
 | `rescue` | Schema is never evolved and stream does not fail. All new columns are captured in the `_rescued_data` column. |
 | `failOnNewColumns` | Stream fails. Stream does not restart unless the provided schema is updated or the offending data file is removed. |
 | `none` | Schema is not evolved, new columns are ignored, and data is not rescued unless the `rescuedDataColumn` option is set. This is the default when a schema is provided. |
