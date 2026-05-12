@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-azure-arc-servers.monitor-arc-server-security-posture
+metadata:
+  title: Monitor Arc server security posture in Defender for Cloud
+  description: Monitor and improve the security posture of Arc-enrolled servers using Microsoft Defender for Cloud security recommendations, regulatory compliance views, and inventory coverage tools.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Monitor Arc server security posture in Defender for Cloud
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-monitor-arc-server-security-posture.md)]

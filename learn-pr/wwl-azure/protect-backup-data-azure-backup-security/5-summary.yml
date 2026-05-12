@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-backup-data-azure-backup-security.summary
+metadata:
+  title: Summary
+  description: Summary of protecting backup data with Azure Backup security features.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-summary.md)]

@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. Declarative Automation Bundles use YAML configuration files, not JSON files."
     - content: "config.yml"
       isCorrect: false
-      explanation: "Incorrect. The primary configuration file for Databricks Asset Bundles is named databricks.yml."
+      explanation: "Incorrect. The primary configuration file for Declarative Automation Bundles is named databricks.yml."
     - content: "databricks.yml"
       isCorrect: true
       explanation: "Correct. The databricks.yml file must exist at the root of a bundle project. This file establishes the bundle's identity and can reference additional configuration files."

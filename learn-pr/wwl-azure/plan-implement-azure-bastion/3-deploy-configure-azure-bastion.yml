@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-azure-bastion.deploy-configure-azure-bastion
+metadata:
+  title: Deploy and configure Azure Bastion
+  description: Deploy Azure Bastion by creating the AzureBastionSubnet, provisioning the Bastion host, and configuring advanced features. The main features include host scaling, native client support, shareable links, and session recording.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Deploy and configure Azure Bastion
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-deploy-configure-azure-bastion.md)]
