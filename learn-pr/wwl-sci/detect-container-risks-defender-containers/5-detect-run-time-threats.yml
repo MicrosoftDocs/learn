@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.detect-container-risks-defender-containers.detect-run-time-threats-misconfigurations
+uid: learn.wwl.detect-container-risks-defender-containers.detect-run-time-threats
 metadata:
   title: Detect container runtime threats and misconfigurations
   description: Detect control plane threats using Kubernetes audit log analysis, identify runtime threats with Defender sensor alerts, configure binary drift detection and blocking, enforce CIS Kubernetes Benchmark posture recommendations, and gate deployments using Azure Policy admission control.
@@ -11,4 +11,4 @@ metadata:
 title: Detect container runtime threats and misconfigurations
 durationInMinutes: 11
 content: |
-  [!include[](includes/5-detect-run-time-threats-misconfigurations.md)]
+  [!include[](includes/5-detect-run-time-threats.md)]

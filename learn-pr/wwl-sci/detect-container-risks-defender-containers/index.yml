@@ -41,7 +41,7 @@ units:
 - learn.wwl.detect-container-risks-defender-containers.explore-defender-for-containers
 - learn.wwl.detect-container-risks-defender-containers.enable-configure-defender-containers
 - learn.wwl.detect-container-risks-defender-containers.assess-container-image-vulnerabilities
-- learn.wwl.detect-container-risks-defender-containers.detect-run-time-threats-misconfigurations
+- learn.wwl.detect-container-risks-defender-containers.detect-run-time-threats
 - learn.wwl.detect-container-risks-defender-containers.knowledge-check
 - learn.wwl.detect-container-risks-defender-containers.summary
 badge:
