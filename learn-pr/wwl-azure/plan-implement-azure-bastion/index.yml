@@ -37,7 +37,7 @@ units:
 - learn.wwl.plan-implement-azure-bastion.introduction
 - learn.wwl.plan-implement-azure-bastion.plan-azure-bastion-deployment
 - learn.wwl.plan-implement-azure-bastion.deploy-configure-azure-bastion
-- learn.wwl.plan-implement-azure-bastion.connect-vms-azure-bastion
+- learn.wwl.plan-implement-azure-bastion.connect-virtual-machines-azure-bastion
 - learn.wwl.plan-implement-azure-bastion.knowledge-check
 - learn.wwl.plan-implement-azure-bastion.summary
 badge:

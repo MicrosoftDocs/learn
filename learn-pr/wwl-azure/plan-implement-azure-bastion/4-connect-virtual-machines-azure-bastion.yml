@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.plan-implement-azure-bastion.connect-vms-azure-bastion
+uid: learn.wwl.plan-implement-azure-bastion.connect-virtual-machines-azure-bastion
 metadata:
   title: Connect to VMs through Azure Bastion
   description: Connect to Azure virtual machines through Azure Bastion using browser-based RDP and SSH sessions, native client tunneling, shareable links, and monitor active sessions.
@@ -11,4 +11,4 @@ metadata:
 title: Connect to VMs through Azure Bastion
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-connect-vms-azure-bastion.md)]
+  [!include[](includes/4-connect-virtual-machines-azure-bastion.md)]
