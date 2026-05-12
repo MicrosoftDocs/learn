@@ -10,8 +10,7 @@ metadata:
   ms.topic: module
   moduleType: standard
   ms.collection: ce-advocates-ai-copilot
-  ms.service: azure-ai-foundry
-  ms.subservice: azure-ai-foundry-openai
+  ms.service: microsoft-foundry
 title: Secure Azure OpenAI authentication and authorization
 summary: Learn why you should use managed identity for Azure OpenAI authentication and how you can configure role based access controls to minimize necessary permissions
 abstract: |
