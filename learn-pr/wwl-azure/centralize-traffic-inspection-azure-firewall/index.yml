@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.centralize-traffic-inspection-azure-firewall
+metadata:
+  title: Centralize and Enforce Traffic Inspection Using Azure Firewall
+  description: "Deploy Azure Firewall to centralize traffic inspection and enforce filtering policies across your Azure environment. Configure rule collections, apply threat-intelligence-based blocking, and extend centralized inspection to Virtual WAN deployments using Secured Virtual Hubs."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-firewall
+  ai-usage: ai-generated
+title: Centralize and enforce traffic inspection using Azure Firewall
+summary: Deploy Azure Firewall to centralize traffic inspection and enforce filtering policies across your Azure environment. Azure Firewall includes threat-intelligence-based blocking and Secured Virtual Hub deployment for hub-spoke and branch traffic.
+abstract: |
+  After completing this module, you'll be able to:
+  - Determine when Azure Firewall is required to address threats that Network Security Group (NSG) filtering can't mitigate
+  - Configure Azure Firewall rule collections and Firewall Policy to control and inspect network traffic
+  - Deploy Azure Firewall to a Virtual WAN hub to centralize inspection for hub-spoke and branch traffic
+prerequisites: |
+  - Familiarity with Azure virtual networks and network security groups
+  - Understanding of firewall concepts such as rules, policies, and rule processing order
+  - Basic understanding of Azure Virtual WAN concepts at a conceptual level
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-firewall
+  - azure-firewall-manager
+  - azure-virtual-wan
+subjects:
+  - security
+  - networking
+units:
+  - learn.wwl.centralize-traffic-inspection-azure-firewall.introduction
+  - learn.wwl.centralize-traffic-inspection-azure-firewall.determine-when-centralized-traffic-inspection-required
+  - learn.wwl.centralize-traffic-inspection-azure-firewall.configure-azure-firewall-rules-policies
+  - learn.wwl.centralize-traffic-inspection-azure-firewall.secure-virtual-wan-hub-azure-firewall
+  - learn.wwl.centralize-traffic-inspection-azure-firewall.knowledge-check
+  - learn.wwl.centralize-traffic-inspection-azure-firewall.summary
+badge:
+  uid: learn.wwl.centralize-traffic-inspection-azure-firewall.badge
