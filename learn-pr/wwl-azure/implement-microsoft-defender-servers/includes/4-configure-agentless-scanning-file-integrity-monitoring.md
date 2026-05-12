@@ -4,7 +4,7 @@ Microsoft Defender for Endpoint integration, agentless scanning capabilities, an
 
 | Capability | What It Provides | Plan Requirement | Data Source |
 |-----------|-----------------|------------------|-------------|
-| Microsoft Denfender for Endpoint (MDE) integration | EDR, behavioral analytics, threat intelligence | Plan 1 or Plan 2 | MDE agent sensor |
+| Microsoft Defender for Endpoint (MDE) integration | EDR, behavioral analytics, threat intelligence | Plan 1 or Plan 2 | MDE agent sensor |
 | Agentless scanning | Software inventory, vulnerability assessment, secrets scanning, malware scanning | Plan 2 | Disk snapshots analyzed offline |
 | File Integrity Monitoring | Change detection for OS files, registries, application files | Plan 2 | MDE agent + agentless scanning |
 
