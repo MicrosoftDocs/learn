@@ -4,9 +4,9 @@ title: Enable Microsoft Defender for Cloud in hybrid environments
 metadata:
   title: Enable Microsoft Defender for Cloud in hybrid environments
   description: "Enable Microsoft Defender for Cloud in hybrid environments"
-  ms.date: 12/20/2024
-  author: wwlpublish
-  ms.author: tonyj
+  ms.date: 01/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7

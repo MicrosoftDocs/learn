@@ -8,7 +8,7 @@ metadata:
   title: Introduction to Azure Copilot
   description: Learn how to use Azure Copilot to perform operations tasks, manage access, and enhance productivity.
   ms.topic: module
-  ms.service: copilot-for-azure
+  ms.service: copilot-in-azure
   ms.collection: ce-advocates-ai-copilot
 title: Introduction to Azure Copilot
 summary: Learn about the functionality of Azure Copilot, including how to access it, perform operations tasks, and manage access.
