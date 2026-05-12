@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-right-size-rbac-role-assignments.introduction
+metadata:
+  title: Introduction
+  description: Introduction to managing and right-sizing RBAC role assignments for least privilege.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
