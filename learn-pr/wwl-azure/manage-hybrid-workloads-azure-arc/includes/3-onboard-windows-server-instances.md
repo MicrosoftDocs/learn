@@ -15,7 +15,7 @@ For smaller-scale deployments, you can use the onboarding script available direc
 
 The Azure Connected Machine agent enables you to manage Windows and Linux machines hosted on-premises or with another cloud provider. The Azure Connected Machine agent officially supports the following versions of the Windows and Linux operating systems:
 
-- Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, 2022, and 2025
+- Windows Server 2012 R2, 2016, 2019, 2022, and 2025
 - Azure Stack HCI
 - Ubuntu 18.04, 20.04, and 22.04 LTS (x64)
 - SUSE Linux Enterprise Server (SLES) 12 and 15 (x64)
