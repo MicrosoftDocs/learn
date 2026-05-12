@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.evaluate-azure-local.when-introduce-azure-local
+title: When to introduce Azure Local
+metadata:
+  title: When To Introduce Azure Local
+  description: This content is part of the "When to evaluate Azure Local for private cloud scenarios" module.
+  ms.date: 05/12/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-when-introduce-azure-local.md)]

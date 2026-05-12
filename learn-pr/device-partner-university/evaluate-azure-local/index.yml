@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.evaluate-azure-local
+title: When to evaluate Azure Local for private cloud scenarios
+metadata:
+  title: When To Evaluate Azure Local For Private Cloud Scenarios
+  description: "In this module, you’ll explore why private cloud scenarios are reemerging, understand what Azure Local represents in private and hybrid cloud discussions, see how it works alongside existing Windows Server environments. You'll also learn how to recognize the signals and timing that indicate when Azure Local might be appropriate to introduce into infrastructure conversations."
+  ms.date: 05/12/2026
+  author: sheridan-connor
+  ms.author: v-mwinters
+  ms.topic: module
+  ms.service: azure-local
+summary: >2+
+  This module helps learners understand why private cloud scenarios are reemerging, clarifies what Azure Local represents within private and hybrid cloud discussions, explains how it coexists with existing Windows Server environments, and guides readers in recognizing the signals and timing that indicate when Azure Local might be appropriate to introduce into infrastructure planning conversations.
+abstract: |2+
+  By the end of this module, you'll be able to:
+  - Explain why private cloud scenarios are reemerging in modern infrastructure planning.
+  - Describe what Azure Local represents at a conceptual level within private and hybrid cloud discussions.
+  - Identify how Azure Local works alongside existing Windows Server environments.
+  - Recognize common signals that indicate Azure Local might be worth evaluating.
+  - Determine when it's appropriate to introduce Azure Local into infrastructure conversations.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - azure-local
+units:
+  - learn.dpu.evaluate-azure-local.introduction
+  - learn.dpu.evaluate-azure-local.why-private-cloud
+  - learn.dpu.evaluate-azure-local.what-azure-local-represents
+  - learn.dpu.evaluate-azure-local.how-azure-local-fits-alongside-windows-server
+  - learn.dpu.evaluate-azure-local.when-introduce-azure-local
+  - learn.dpu.evaluate-azure-local.knowledge-check
+  - learn.dpu.evaluate-azure-local.summary-evaluating-azure-local
+badge:
+  uid: learn.dpu.evaluate-azure-local.badge
