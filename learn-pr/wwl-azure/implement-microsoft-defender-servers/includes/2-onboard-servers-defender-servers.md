@@ -1,5 +1,3 @@
-# Onboard servers to Defender for Servers
-
 Enabling Defender for Servers transforms unmonitored virtual machines and Arc-connected servers into actively protected assets with vulnerability scanning, endpoint detection and response, and advanced threat protection. Before you enable protection, you select the plan tier that matches your organization's security requirements and budget.
 
 | Capability | Plan 1 | Plan 2 |

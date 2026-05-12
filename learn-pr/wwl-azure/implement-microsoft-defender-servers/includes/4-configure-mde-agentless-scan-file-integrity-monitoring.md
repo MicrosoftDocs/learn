@@ -1,5 +1,3 @@
-# Configure Defender for Endpoint integration, agentless scanning, and File Integrity Monitoring
-
 Microsoft Defender for Endpoint integration, agentless scanning capabilities, and File Integrity Monitoring work together to create multiple layers of visibility and protection on your server estate. Each capability addresses a different detection need—from real-time behavioral threat detection to offline malware scanning to detecting unauthorized file changes that might indicate lateral movement by an attacker.
 
 | Capability | What It Provides | Plan Requirement | Data Source |
