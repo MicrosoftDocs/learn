@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-controls-aks
+metadata:
+  title: Implement Security Controls for Azure Kubernetes Service
+  description: "Implement security controls for Azure Kubernetes Service. Configure Microsoft Entra integration and Kubernetes RBAC for API server authentication and authorization, enforce network policies and private cluster access. Then apply workload identity and pod security standards to harden containerized workloads in Azure Kubernetes Service (AKS)."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-kubernetes-service
+  ai-usage: ai-assisted
+title: Implement security controls for Azure Kubernetes Service
+summary: Implement security controls for Azure Kubernetes Service. Configure Microsoft Entra integration and Kubernetes RBAC for API server authentication and authorization, enforce network policies and private cluster access. Then apply workload identity and pod security standards to harden containerized workloads in Azure Kubernetes Service (AKS).
+abstract: |
+  After completing this module, you can:
+    - Configure Microsoft Entra ID integration and RBAC for AKS API server authentication and authorization
+    - Implement network security controls including private clusters, authorized IP ranges, and network policies
+    - Apply workload identity and managed identities to eliminate credential management for AKS workloads
+    - Enforce pod security standards and container access restrictions
+prerequisites: |
+  - Working knowledge of Azure Kubernetes Service including deploying and managing AKS clusters
+  - Understanding of Microsoft Entra ID and Azure role-based access control (RBAC)
+  - Familiarity with Kubernetes concepts including namespaces, deployments, and pods
+  - Basic understanding of Azure Virtual Network and private endpoint concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-kubernetes-service
+  - defender-for-cloud
+subjects:
+  - security
+  - cloud-security
+  - containers
+units:
+- learn.wwl.implement-security-controls-kubernetes.introduction
+- learn.wwl.implement-security-controls-kubernetes.control-kubernetes-cluster-access-entra
+- learn.wwl.implement-security-controls-kubernetes.secure-kubernetes-network-access
+- learn.wwl.implement-security-controls-kubernetes.implement-workload-identity-secrets-management
+- learn.wwl.implement-security-controls-kubernetes.enforce-pod-container-security
+- learn.wwl.implement-security-controls-kubernetes.knowledge-check
+- learn.wwl.implement-security-controls-kubernetes.summary
+badge:
+  uid: learn.wwl.implement-security-controls-kubernetes.badge
