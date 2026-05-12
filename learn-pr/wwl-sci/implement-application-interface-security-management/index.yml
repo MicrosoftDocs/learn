@@ -7,7 +7,7 @@ metadata:
   author: r-c-stewart
   ms.author: roberts
   ms.topic: module
-  ms.service: api-management
+  ms.service: azure-api-management
   ai-usage: ai-assisted
 title: Implement API backend security using Azure API Management
 summary: Implement security policies for backend API protection using Azure API Management. Configure subscription key management, JSON Web Token (JWT) validation, and OAuth 2.0 policies, and apply IP filtering and rate limiting. Then enforce mutual Transport Layer Security (mTLS) for secure backend API connections, and configure AI Gateway to secure and govern AI model endpoints.
@@ -39,7 +39,7 @@ units:
 - learn.wwl.implement-application-interface-security-management.introduction
 - learn.wwl.implement-application-interface-security-management.configure-authentication-authorization-policies
 - learn.wwl.implement-application-interface-security-management.implement-network-security-threat-protection
-- learn.wwl.implement-application-interface-security-management.secure-management-backend-connections
+- learn.wwl.implement-application-interface-security-management.secure-management-back-end-connections
 - learn.wwl.implement-application-interface-security-management.configure-application-gateway-management
 - learn.wwl.implement-application-interface-security-management.knowledge-check
 - learn.wwl.implement-application-interface-security-management.summary
