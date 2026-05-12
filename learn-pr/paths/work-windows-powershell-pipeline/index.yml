@@ -3,7 +3,7 @@ uid: learn.wwl.work-windows-powershell-pipeline
 metadata:
   title: Work with the Windows PowerShell pipeline
   description: This learning path explains the purpose and use of the PowerShell pipeline and use the pipeline to sort, filter, enumerate and display output data for PowerShell cmdlets.
-  ms.date: 01/23/2026
+  ms.date: 05/13/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: learning-path

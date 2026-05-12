@@ -3,7 +3,7 @@ uid: learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting
 metadata:
   title: Manage single and multiple computers by using Windows PowerShell remoting
   description: "This module explains how to use remoting to perform administration on remote computers."
-  ms.date: 01/23/2026
+  ms.date: 05/13/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -11,7 +11,7 @@ metadata:
   - N/A
   ms.service: powershell
   ms.subservice: cmdlets
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Manage single and multiple computers by using Windows PowerShell remoting
 summary: This module explains how to use remoting to perform administration on remote computers.
 abstract: |
