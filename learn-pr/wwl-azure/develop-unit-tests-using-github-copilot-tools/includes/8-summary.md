@@ -1,12 +1,14 @@
-In this module, you learned about the use of GitHub Copilot Chat and Visual Studio Code for creating and managing unit tests. The content discussed how GitHub Copilot Chat aids in generating code snippets for test cases, suggesting possible inputs, outputs, assertions, and identifying edge cases and boundary conditions. You also learned how Visual Studio Code, with the C# Dev Kit extension, provides a rich set of features for managing unit tests, including a Test Explorer, running and debugging test cases, viewing test results, testing commands, and testing settings. The process involves creating a test project, generating unit test cases using GitHub Copilot Chat, and running and managing the tests in Visual Studio Code.
+In this module, you learned how to use GitHub Copilot and Visual Studio Code to create and maintain unit tests for C# projects. You examined the Visual Studio Code testing environment provided by the .NET SDK and the C# Dev Kit extension, including Test Explorer, run and debug commands, and the supported test frameworks (xUnit, NUnit, and MSTest). You then used the GitHub Copilot Chat view to generate unit tests with the Ask agent, the `/setupTests` slash command, and the `/tests` slash command.
 
-The main takeaways from this module are the efficient and effective creation and management of unit tests, ensuring the quality and reliability of the codebase. You learned how to create unit tests for a C# project using GitHub Copilot Chat in Visual Studio Code.
+You also explored how the Plan and Agent agents extend the workflow for larger testing tasks. The Plan agent produces a reviewable test strategy before any code is written, and the Agent automates multi-file workflows that scaffold projects, generate tests, and run the resulting suite. Finally, you learned how ghost text suggestions extend coverage from inside the editor, and how Test Explorer's Fix Test Failure button and the `/fixTestFailure` slash command help you diagnose and resolve failing tests.
+
+The main takeaway is that GitHub Copilot lets you move through every stage of the unit testing workflow—setup, generation, extension, and repair—without leaving Visual Studio Code, while the C# Dev Kit keeps the test project organized and runnable.
 
 Additional Reading:
 
 - [GitHub Copilot documentation](https://docs.github.com/copilot)
 - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)
-- [GitHub Copilot in Visual Studio Code - FAQ](https://code.visualstudio.com/docs/copilot/faq)
+- [Test with GitHub Copilot](https://code.visualstudio.com/docs/copilot/guides/test-with-copilot)
+- [Set up a test-driven development flow in VS Code](https://code.visualstudio.com/docs/copilot/guides/test-driven-development-guide)
 - [GitHub Copilot in Visual Studio Code - Cheat Sheet](https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features)
-- [GitHub Copilot in Visual Studio Code - Workspace Context](https://code.visualstudio.com/docs/copilot/reference/workspace-context)
 - [Testing with the C# Dev Kit](https://code.visualstudio.com/docs/csharp/testing)
