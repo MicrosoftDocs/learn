@@ -1,14 +1,12 @@
 In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
+## Step 1: Open the sample project
+
 1. Start Visual Studio Code.
-
-2. Click **Open folder**.
-
-3. Open the **Azure-Sphere lab** folder.
-
-4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT** folder.
-
-5. Click **Select Folder** or the **OK** button to open the project.
+1. Click **Open folder**.
+1. Open the **Azure-Sphere** folder.
+1. Open the **Lab_2_Send_Telemetry_to_Azure_IoT** folder.
+1. Click **Select Folder** or the **OK** button to open the project.
 
 ## Step 2: Configure the Azure Sphere application
 
@@ -16,12 +14,20 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 1. Update the connection properties for the Azure IoT Central application.
 
-    - Update **CmdArgs** with your Azure IoT Central ID scope.
-    - Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
+    - Keep the existing **SchemaVersion**, **Name**, **ComponentId**, **EntryPoint**, and **ApplicationType** fields.
+    - Update **CmdArgs** with your Azure IoT Central ID scope. Keep the `--ConnectionType`, `DPS`, and `--ScopeID` entries, and replace only the scope ID value.
+    - Preserve the existing **Gpio**, **I2cMaster**, and **PowerControls** capabilities from the sample manifest. The **PowerControls** entry is set to `[ "ForceReboot" ]` for the controlled-reboot lab later in this learning path. Because `ForceReboot` and `ForcePowerDown` allow an application to immediately terminate all running applications, applications that use these values **must** ensure the device can still receive Azure Sphere OS and application updates (see [Force Power Down and updates](/azure-sphere/app-development/power-down?view=azure-sphere-integrated#force-power-down-and-updates)). Remove **PowerControls** from production applications that don't call the power management APIs, and don't add `ForcePowerDown` or any other capability unless the application requires it.
+    - Update **DeviceAuthentication** with the Azure Sphere (Legacy) tenant UUID for your catalog. With Azure Sphere Integrated, every catalog exposes this UUID through the Azure Sphere Catalog `properties.tenantId` field. Run the following Azure CLI command, using the resource group and catalog name for your Azure Sphere catalog:
+
+      ```azurecli
+      az sphere catalog show --resource-group <resource-group-name> --catalog <catalog-name> --query "properties.tenantId" --output tsv
+      ```
+
+      Use the returned GUID. This value is the legacy tenant UUID expected by `DeviceAuthentication`; don't use the Azure Resource Manager catalog resource ID. Catalogs that were migrated from Azure Sphere (Legacy) also expose the same value via `tags.MigratedCatalogId` for backward compatibility, but `properties.tenantId` works for every Azure Sphere catalog.
 
 1. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
 
-1. You can format the app_manifest.json document by right mouse clicking on the document and selecting **Format Document** from the context menu.
+1. You can format the app_manifest.json document by right-clicking the document and selecting **Format Document** from the context menu.
 
 1. Review your updated **app_manifest.json** file. It should look similar to the following.
 
@@ -60,9 +66,13 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
             ],
             "DeviceAuthentication": "9d7e79eb-9999-43ce-9999-fa8888888894"
         },
-        "ApplicationType": "Default"
+        "ApplicationType": "Default",
+        "MallocVersion": 2
     }
     ```
+
+    > [!NOTE]
+    > `"MallocVersion": 2` opts in to the mallocng allocator, which the [app_manifest reference](/azure-sphere/app-development/app-manifest?view=azure-sphere-integrated) recommends for all new Azure Sphere applications. The official Azure Sphere AzureIoT sample sets the same value.
 
 1. Save the updated app_manifest.json file.
 
@@ -70,13 +80,11 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 ## Step 3: Select your developer board configuration
 
-These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board. The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you have this board, there is no additional configuration required.
+These labs support developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1. Select exactly one board configuration in **CMakeLists.txt**.
 
 1. Open **CMakeLists.txt**.
-
-2. Add **#** at the beginning of the **set AVNET** line to disable it.
-
-3. Uncomment the **set** command that corresponds to your Azure Sphere developer board.
+1. If you're using the Avnet Azure Sphere Starter Kit Revision 1, leave the **set AVNET** line uncommented and leave all other board lines commented. No **CMakeLists.txt** change is required.
+1. If you're using any other supported board, add **#** at the beginning of the **set AVNET** line to disable it, and then uncomment exactly one **set** command that matches your Azure Sphere developer board. Only one board line should be uncommented.
 
     ```text
     set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
@@ -84,12 +92,13 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
     # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
     # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
     ```
+1. Save the file. Visual Studio Code and CMake Tools will update the CMake configuration for the selected board.
 
-4. Save the file. This will autogenerate the CMake cache.
+## Step 4: Build and sideload the application to Azure Sphere
 
-## Step 4: Deploy the application to Azure Sphere
+This step uses Visual Studio Code to build the high-level application, create an image package, sideload it to the attached Azure Sphere device, and start a debug session. Sideloading is a local development deployment over USB; it is different from a cloud deployment through the Azure Sphere Security Service to a product and device group. The attached device must be enabled for development and debugging before you can sideload.
 
-### Start the app build and deployment process
+### Start the app build and sideload process
 
 1. Open **main.c**.
 
@@ -99,24 +108,26 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
    :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="The illustration shows CMake status.":::
 
-1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
+1. From Visual Studio Code, press F5 to build, create the image package, sideload it to the attached device, start the application, and attach the remote debugger to the application now running on the Azure Sphere device.
 
-1. Try setting a breakpoint in the **MeasureSensorHandler** function. The function will be called every 5 seconds.
+1. Try setting a breakpoint in the **MeasureSensorHandler** function. This sensor timer runs every 6 seconds.
+
+    The connection-status LED timer runs every 5 seconds.
 
     > [!NOTE]
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
 ### View debugger output
 
-1. Select the Visual Studio Code **Output** tab to view the output from **Log_Debug** statements in the code.
+1. Select the Visual Studio Code **Output** tab to monitor CMake, build, image package, and sideload progress.
 
    > [!TIP]
    > You can open the output tab by using the Visual Studio Code **Ctrl+Shift+U** shortcut or clicking the **Output** tab.
-
-2. You'll see the device negotiating security, and then it will start sending telemetry to Azure IoT Central.
+1. Select the **Debug Console** to view debugger output and messages from **Log_Debug** statements in the code. After sideloading completes, Visual Studio Code typically focuses the Debug Console.
+1. In the Debug Console, you'll see the device establish networking, DPS provisioning, and the secured IoT Hub connection, and then it will start sending telemetry to Azure IoT Central.
 
     > [!NOTE]
-    > You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to Azure IoT Central is being negotiated.
+    > During startup, you may briefly see transient IoT status messages while networking, DPS provisioning, and IoT Hub connection setup complete, such as `IOTHUB_CLIENT_CONNECTION_NO_NETWORK` or `device auth not ready`. If errors such as `ERROR: Failed to create client IoT Hub Client Handle` persist and telemetry doesn't appear, recheck the ID scope, **AllowedConnections**, **DeviceAuthentication**, Wi-Fi/network connectivity, and IoT Central device approval state. For more detail, see the [Azure IoT troubleshooting guide](https://github.com/Azure/azure-sphere-samples/blob/main/Samples/AzureIoT/AzureIoTTroubleshooting.md).
 
 ## Step 5: Expected device behavior
 
@@ -144,11 +155,17 @@ These labs support developer boards from Avnet and Seeed Studio. You need to set
 
 1. From the sidebar menu, select **Devices**, then the **Learning Path Lab Monitor** template, then your **device**.
 
-    The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
+    The device name is your Azure Sphere Device ID. You can display your Device ID for the attached device by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
 
-   ```
-   azsphere device show-attached
-   ```
+    ```azurecli
+    az sphere device show-attached
+    ```
+
+    If more than one device is attached, list the attached devices with `az sphere device list-attached`, then add `--device <DeviceIdValue>` to target the correct device. To show the device record in your Azure Sphere catalog, use your resource group, catalog name, and device ID:
+
+    ```azurecli
+    az sphere device show --resource-group <resource-group-name> --catalog <catalog-name> --device <DeviceIdValue>
+    ```
 
 1. Select the **Overview** tab to view the device telemetry.
 

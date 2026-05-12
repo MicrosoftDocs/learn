@@ -3,7 +3,7 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 metadata:
   title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
-  ms.date: 07/10/2024
+  ms.date: 05/10/2026
   ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
@@ -12,7 +12,7 @@ metadata:
   ms.service: azure-sphere
   ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central"
-summary: "Deploy an Azure Sphere application to monitor ambient conditions for a laboratory. The application will monitor the room environment, connect to Azure IoT Central, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
+summary: "Deploy an Azure Sphere application to monitor ambient conditions for a laboratory. The application monitors the room environment, connect to Azure IoT Central, and send telemetry data from the device to the cloud. You control cloud-to-device communications and undertake actions as needed."
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Central application
@@ -34,7 +34,6 @@ prerequisites: |
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
-hidden: true
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere.badge
 levels:
@@ -69,4 +68,4 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
-
+

@@ -2,104 +2,86 @@ In this exercise, we'll build a high-level Azure Sphere application that connect
 
 ## Step 1: Create a new Azure IoT Central application
 
-1. Open this link in a new window: [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
+1. Open the [Create IoT Central Application](https://portal.azure.com/#create/Microsoft.IoTCentral) page in a new browser window.
+1. Sign in with an Azure account that has an active subscription. You should have at least **Contributor** access to the subscription or resource group where you create the application.
+1. Enter the application details:
 
-2. Click **Build a solution**.
+   | Field | Value |
+   | --- | --- |
+   | **Subscription** | The Azure subscription you want to use. |
+   | **Resource group** | Create a new resource group or select an existing resource group. |
+   | **Resource name** | A valid Azure resource name for the IoT Central application. |
+   | **Application URL** | A unique subdomain for your application. The application URL looks like `https://<your-app-name>.azureiotcentral.com`. |
+   | **Template** | **Custom application** |
+   | **Region** | The Azure region you want to use. |
+   | **Pricing plan** | Select a **Standard** plan, such as **Standard 2**. |
 
-3. You'll need to sign with your Microsoft personal, work, or school account. If you do not have a Microsoft account, then you can create one for free by using the **Create one!** link.
+   Standard plans are billed on a per-device basis. They include two free devices plus a plan-specific monthly message allocation (S0: 400 messages/device/month; S1: 5,000; S2: 30,000); extra devices and usage beyond the included message allocation can affect charges. See [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/?azure-portal=true) for current rates and the [Create an IoT Central application](https://learn.microsoft.com/azure/iot-central/core/howto-create-iot-central-application?azure-portal=true) article for details on the available plans.
+1. Select **Review + create**, then select **Create**.
+1. When the application is ready, open it from the Azure portal by selecting the application URL.
 
-4. Expand the sidebar menu by clicking on the **Menu** icon.
+## Step 2: Establish trust between IoT Central and your Azure Sphere catalog
 
-   <!-- > [!div class="mx-imgBorder"]
-   > ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png) -->
-
-   :::image type="content" source="../media/iot-central-burger-menu.png" alt-text="The illustration shows how to expand the sidebar menu.":::
-
-5. Navigate to **Build**, and select **Custom apps**.
-
-   <!-- > [!div class="mx-imgBorder"]
-   > ![The illustration shows how to create custom app.](../media/iot-central-new-application.png) -->
-
-   :::image type="content" source="../media/iot-central-new-application.png" alt-text="The illustration shows how to create custom app.":::
-
-6. Specify the **Application name**, specify the **URL**, select the **Free** pricing plan, and complete the registration form.
-
-7. Click **Create**.
-
-## Step 2: Establish trust between IoT Central and your Azure Sphere Tenant
-
-1. If you're using Windows, open an Windows **PowerShell command line**. If you're using Linux, open **Terminal**.
-
-2. Log in to your Azure Sphere tenant if you have not already done so.
+1. If you're using Windows, open a Windows **PowerShell command line**. If you're using Linux, open **Terminal**.
+1. Sign in with Azure CLI if you have not already done so.
 
    ```
-   azsphere login
+   az login
    ```
-
-3. Make a note of the current directory or change to the **Azure-Sphere** directory. You'll need the name of this directory in the next step.
-
-4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
+1. Select the Azure subscription that contains your Azure Sphere catalog, unless it's already the current default subscription. If you don't set it as the default, add `--subscription <subscription-id-or-name>` to each Azure Sphere resource command in this exercise.
 
    ```
-   azsphere ca-certificate download --destination CAcertificate.cer
+   az account set --subscription <subscription-id-or-name>
+   ```
+1. Make a note of the current directory or change to a directory where you have write permission. You'll download certificate files to this directory.
+1. Download the certificate authority (CA) certificate for your Azure Sphere catalog. Replace `<resource-group-name>` and `<catalog-name>` with your Azure Sphere resource group and catalog name.
+
+   ```
+   az sphere ca-certificate download --resource-group <resource-group-name> --catalog <catalog-name> --output-file CACertificate.cer
    ```
 
    The output file must have the .cer extension.
 
-### Create an Enrollment Group
+### Create an X.509 enrollment group
 
-1. From IoT Central, go to **Administration** > **Device Connection**.
+IoT Central manages group authentication settings as enrollment groups. In the UI, these settings are under **Device connection groups**.
 
-2. Click **+ Create an enrollment group**
+1. From your IoT Central application, in the left pane select **Permissions**, then select **Device connection groups**.
+1. Select **+ New**.
+1. Name the enrollment group **Azure Sphere**.
+1. Select **Certificates (X.509)** from the attestation type dropdown.
+1. Select **Save**.
 
-3. Name the enrollment group **Azure Sphere**
+   The **ID scope** for your IoT Central application is shown on the device connection groups page. You'll use the ID scope in a later exercise.
 
-4. Select Certificates (X.509) from the Attestation type dropdown.
+### Upload the Azure Sphere catalog CA certificate to Azure IoT Central
 
-5. Click Save
+1. In the **Azure Sphere** device connection group, scroll to **Certificates (X.509)**. Under **Primary**, select **Manage Primary**.
+1. In the **Primary certificate** dialog box, select **Add certificate**. Navigate to the directory where you downloaded `CACertificate.cer`, select the certificate, and then select **Open**.
+1. Verify the certificate by using one of the following options. Use automatic verification only when you trust the CA certificate and know that you own it; otherwise, use manual verification to prove possession with a verification certificate.
 
-### Upload the Azure Sphere tenant CA certificate to Azure IoT Central and generate a verification code
+   - **Automatic verification**: Leave **Set certificate status to verified on upload** set to **On**, select **Upload**, confirm that the certificate status is **Verified**, and then select **Close**.
+   - **Manual verification**: Set **Set certificate status to verified on upload** to **Off**, select **Upload**, select **Generate verification code**, and copy the verification code.
 
-1. Click **+ Manage primary**.
+      Return to the PowerShell Command Line or Linux Terminal and download a validation certificate that proves that you own the catalog CA certificate. Replace `<code>` with the verification code from IoT Central.
 
-2. Click the folder icon next to the **Primary** box and navigate to the directory where you downloaded the certificate. If you don't see the .cer file in the list, make sure that the view filter is set to **All files (*)**. Select the certificate and then click the gear icon next to the **Primary** box.
+      ```
+      az sphere ca-certificate download-proof --resource-group <resource-group-name> --catalog <catalog-name> --verification-code <code> --output-file ValidationCertificate.cer
+      ```
 
-3. The **Primary Certificate** dialog box appears. The **Subject** and **Thumbprint** fields contain information about the current Azure Sphere tenant and primary root certificate.
+      The Azure Sphere Security Service signs the validation certificate with the verification code to prove that you own the CA.
 
-4. Click the **Generate verification code**.
-
-5. Copy the verification code to the clipboard.
+      Return to Azure IoT Central, select **Verify**, and select `ValidationCertificate.cer`. When the verification process completes, the **Primary certificate** dialog box displays the **Verified** status. Select **Close**.
 
    <!-- > [!div class="mx-imgBorder"]
    > ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)   -->
 
    :::image type="content" source="../media/iot-central-certificate-verify.png" alt-text="The illustration shows how to verify a certificate.":::
 
-### Verify the tenant CA certificate
-
-1. Return to the PowerShell Command Line or Linux Terminal.
-
-2. Download a validation certificate that proves that you own the tenant CA certificate. Replace **<code\>** in the command with the verification code from the previous step.
-
-   ```
-   azsphere ca-certificate download-proof --destination ValidationCertification.cer --verification-code <code>
-   ```
-
-3. The Azure Sphere Security Service signs the validation certificate with the verification code to prove that you own the Certificate Authority (CA).
-
-### Use the validation certificate to verify the tenant's identity
-
-1. Return to Azure IoT Central and click **Verify**.
-
-2. When prompted, select the validation certificate that you generated in the previous step. When the verification process is complete, the **Primary Certificate** dialog box displays the **Verified** message.
-
-3. Click **Close** to dismiss the box.
-
    <!-- > [!div class="mx-imgBorder"]
    > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png) -->
 
    :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows a verified certificate.":::
+1. Select **Save** at the top of the device connection group page.
 
-4. Click **Save**.
-
-After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
+After you complete these steps, the IoT Central X.509 enrollment group trusts device authentication certificates issued by your Azure Sphere catalog CA. A catalog device can be authenticated by the Device Provisioning Service (DPS) and provisioned into this IoT Central application when its application connects with this app's ID scope, valid X.509 credentials, a unique device ID, and the model ID that IoT Central uses to assign the device template. If **Auto approve** is disabled for the device connection group, an operator may need to approve the device before it can start sending data.
