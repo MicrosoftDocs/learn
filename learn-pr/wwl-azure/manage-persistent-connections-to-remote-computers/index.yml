@@ -37,9 +37,9 @@ prerequisites: |
 
   -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
 
-  -   Familiarity with Windows PowerShell pipeline, PowerShell providers and PowerShell drives
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 
-  -   Familiarity with CIM and WMI technologies
+  -   Familiarity with Common Information Model (CIM) and Windows Management Instrumentation (WMI) technologies
 
   -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
 iconUrl: /training/achievements/manage-persistent-connections-to-remote-computers.svg
