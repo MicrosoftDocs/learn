@@ -66798,6 +66798,11 @@
       "source_path_from_root": "/learn-pr/achievements/learn.oxford.learn.oxford.create-image-recognition-with-azure-iot-edge.badge.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-image-recognition-solution-iot-edge-cognitive-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/priva-data-privacy-solutions/index.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
     }
   ]
 }

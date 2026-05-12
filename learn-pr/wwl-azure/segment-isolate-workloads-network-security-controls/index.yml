@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.segment-isolate-workloads-network-security-controls
+metadata:
+  title: Segment and Isolate Azure Workloads Using Network Security Controls
+  description: "Segment Azure workloads to control lateral movement and enforce least-privilege network access. Design and configure Network Security Group (NSG) and Application Security Group (ASG) rules with a security-first approach, enforce organization-wide policies using Azure Virtual Network Manager, and verify effective security posture using Network Watcher diagnostics."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-virtual-network
+  ai-usage: ai-generated
+title: Segment and isolate Azure workloads using network security controls
+summary: Segment Azure workloads to control lateral movement and enforce least-privilege network access using NSGs, ASGs, Azure Virtual Network Manager, and Network Watcher verification.
+abstract: |
+  After completing this module, you'll be able to:
+  - Assess a virtual network topology to identify lateral movement risk and network segmentation gaps
+  - Configure NSG rules to enforce least-privilege access between Azure workloads
+  - Use ASGs to simplify and maintain NSG rule sets for grouped workloads
+  - Configure Azure Virtual Network Manager security admin rules to enforce organization-wide network policies
+  - Verify effective network security rules using Network Watcher diagnostics
+prerequisites: |
+  - Familiarity with Azure virtual networks and subnets
+  - Experience deploying Azure resources in the Azure portal
+  - Basic understanding of network security groups and port-based traffic filtering
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-virtual-network
+  - azure-network-watcher
+subjects:
+  - security
+  - networking
+units:
+  - learn.wwl.segment-isolate-workloads-network-security-controls.introduction
+  - learn.wwl.segment-isolate-workloads-network-security-controls.assess-network-segmentation-gaps
+  - learn.wwl.segment-isolate-workloads-network-security-controls.control-traffic-network-security-groups
+  - learn.wwl.segment-isolate-workloads-network-security-controls.simplify-rule-management-application-security-groups
+  - learn.wwl.segment-isolate-workloads-network-security-controls.enforce-consistent-policy-azure-virtual-network-manager
+  - learn.wwl.segment-isolate-workloads-network-security-controls.verify-effective-network-security-rules-network-watcher
+  - learn.wwl.segment-isolate-workloads-network-security-controls.knowledge-check
+  - learn.wwl.segment-isolate-workloads-network-security-controls.summary
+badge:
+  uid: learn.wwl.segment-isolate-workloads-network-security-controls.badge

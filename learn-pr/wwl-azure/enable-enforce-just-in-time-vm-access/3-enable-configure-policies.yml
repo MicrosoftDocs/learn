@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-enforce-just-in-time-vm-access.enable-configure-policies
+metadata:
+  title: Enable and configure Just-in-time (JIT) access policies
+  description: Enable just-in-time VM access from Microsoft Defender for Cloud and the Azure portal, configure per-port access policies with custom time windows and source IP restrictions, and manage JIT configuration programmatically using PowerShell and the REST API.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable and configure JIT access policies
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-enable-configure-policies.md)]

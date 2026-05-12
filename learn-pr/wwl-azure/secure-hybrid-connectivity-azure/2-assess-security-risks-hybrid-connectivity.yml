@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hybrid-connectivity-azure.assess-security-risks-hybrid-connectivity
+title: Assess security risks in hybrid connectivity
+metadata:
+  title: Assess Security Risks in Hybrid Connectivity
+  description: "Identify the security risks of VPN gateway configurations for site-to-site and point-to-site connections, including authentication weaknesses, legacy Internet Key Exchange (IKE) versions, and over-broad post-tunnel access."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-assess-security-risks-hybrid-connectivity.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.segment-isolate-workloads-network-security-controls.control-traffic-network-security-groups
+title: Control traffic with network security groups (NSGs)
+metadata:
+  title: Control Traffic with Network Security Groups (NSGs)
+  description: "Design and configure NSG rules using a security-first, least-privilege approach. This unit explains how to control traffic between Azure workloads."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-control-traffic-network-security-groups.md)]

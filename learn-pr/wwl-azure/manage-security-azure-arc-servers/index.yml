@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-security-azure-arc-servers
+metadata:
+  title: Manage Security for Arc-Enabled Hybrid Servers
+  description: "Manage security controls for Azure Arc-enabled hybrid servers. Configure RBAC and extension security to prevent unauthorized agent modifications. Then apply Azure Policy to enforce security baselines on Arc-enrolled machines. Finally, monitor hybrid server security posture in Microsoft Defender for Cloud."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-arc
+  ai-usage: ai-assisted
+title: Manage security for Arc-enabled hybrid servers
+summary: Manage security controls for Azure Arc-enabled hybrid servers. Configure RBAC and extension security to prevent unauthorized agent modifications. Then apply Azure Policy to enforce security baselines on Arc-enrolled machines. Finally, monitor hybrid server security posture in Microsoft Defender for Cloud.
+abstract: |
+  After completing this module, you can:
+    - Configure RBAC and extension allow/block lists to protect Arc-enabled servers from unauthorized extension installation
+    - Assign and manage Azure Policy for Arc-enabled servers to enforce security baselines
+    - Monitor the security posture of Arc-enrolled servers in Microsoft Defender for Cloud
+    - Apply machine configuration policies to Arc-enrolled servers
+prerequisites: |
+  - Familiarity with Azure Arc-enabled servers, including connecting machines to Azure Arc
+  - Understanding of Azure role-based access control (RBAC) and Azure Policy fundamentals
+  - Basic familiarity with Microsoft Defender for Cloud
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-arc
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-security-azure-arc-servers.introduction
+- learn.wwl.manage-security-azure-arc-servers.control-access-extension-security
+- learn.wwl.manage-security-azure-arc-servers.apply-azure-policy-arc-servers
+- learn.wwl.manage-security-azure-arc-servers.monitor-arc-server-security-posture
+- learn.wwl.manage-security-azure-arc-servers.knowledge-check
+- learn.wwl.manage-security-azure-arc-servers.summary
+badge:
+  uid: learn.wwl.manage-security-azure-arc-servers.badge
