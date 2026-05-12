@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-microsoft-defender-servers.4-configure-mde-agentless-scan-file-integrity-monitoring
+uid: learn.wwl.implement-microsoft-defender-servers.configure-mde-agentless-scan-file-integrity-monitoring
 metadata:
   title: Configure Defender for Endpoint integration, agentless scanning, and File Integrity Monitoring
   description: Manage the Microsoft Defender for Endpoint integration in Defender for Servers, configure agentless scanning for software inventory, secrets, and malware, and enable File Integrity Monitoring to detect unauthorized changes to OS files and registries.
@@ -11,4 +11,4 @@ metadata:
 title: Configure Defender for Endpoint integration, agentless scanning, and File Integrity Monitoring
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-4-configure-mde-agentless-scan-file-integrity-monitoring.md)]
+  [!include[](includes/4-configure-mde-agentless-scan-file-integrity-monitoring.md)]
