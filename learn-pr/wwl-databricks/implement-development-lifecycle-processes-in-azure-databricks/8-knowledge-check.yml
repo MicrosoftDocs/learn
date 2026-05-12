@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/09/2026
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -27,18 +27,18 @@ quiz:
     - content: "Team members should avoid using Git folders and instead manually copy files between workspaces"
       isCorrect: false
       explanation: "Incorrect. Git folders provide integrated version control that enables collaboration through shared branches and coordinated commits."
-  - content: "Which file must exist at the root of a Databricks Asset Bundle project?"
+  - content: "Which file must exist at the root of a Declarative Automation Bundle project?"
     choices:
     - content: "bundle.json"
       isCorrect: false
-      explanation: "Incorrect. Databricks Asset Bundles use YAML configuration files, not JSON files."
+      explanation: "Incorrect. Declarative Automation Bundles use YAML configuration files, not JSON files."
     - content: "config.yml"
       isCorrect: false
       explanation: "Incorrect. The primary configuration file for Databricks Asset Bundles is named databricks.yml."
     - content: "databricks.yml"
       isCorrect: true
       explanation: "Correct. The databricks.yml file must exist at the root of a bundle project. This file establishes the bundle's identity and can reference additional configuration files."
-  - content: "What happens when deploying a Databricks Asset Bundle with mode set to development?"
+  - content: "What happens when deploying a Declarative Automation Bundle with mode set to development?"
     choices:
     - content: "Resource names are prefixed with the developer username and schedules are paused"
       isCorrect: true

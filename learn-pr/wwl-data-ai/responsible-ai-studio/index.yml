@@ -2,17 +2,19 @@
 uid: learn.wwl.responsible-ai-studio
 metadata:
   title: Implement a responsible generative AI solution in Microsoft Foundry
-  description: A practical approach to implementing generative AI responsibly, and exploring guardrails in AI Foundry portal.
+  description: A practical approach to implementing generative AI responsibly, and
+    exploring guardrails in AI Foundry portal.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/22/2026
-  ms.service: azure-ai-foundry
+  ms.date: 04/28/2026
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
   ms.collection:
     - wwl-ai-copilot
 title: Implement a responsible generative AI solution in Microsoft Foundry
-summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
+summary: "Generative AI enables amazing creative solutions, but must be
+  implemented responsibly to minimize the risk of harmful content generation."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe an overall process for responsible generative AI solution development

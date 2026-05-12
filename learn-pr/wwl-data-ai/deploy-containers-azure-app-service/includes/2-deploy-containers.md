@@ -123,7 +123,7 @@ The extension can help you create the web app and deploy the selected image. For
 
 ## Update the container image
 
-When you deploy a new version of your application to ACR, update the container image reference. App Service restarts the web app, which stops and starts the container on each instance so the app runs the new image.
+To release a new version with a different tag, update the configured image tag using the CLI. App Service restarts the web app automatically, pulling the new image on each instance.
 
 ```azurecli
 az webapp config container set \
@@ -131,6 +131,8 @@ az webapp config container set \
     --name myDocumentProcessor \
     --container-image-name myregistry.azurecr.io/docprocessor:v2
 ```
+
+If you push a new image to the same tag (for example, `latest`), App Service doesn't detect the change automatically. App Service runs `docker pull` on every restart and pulls only changed layers. To pick up the updated image, restart the web app manually or enable continuous deployment so a webhook triggers the restart for you.
 
 ## Enable continuous deployment
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defend-key-vault-defender-cloud.enable-defender-key-vault
+metadata:
+  title: Enable Microsoft Defender for Key Vault
+  description: Enable Microsoft Defender for Key Vault, understand the anomalous access patterns it detects, and configure alert destinations and suppression rules.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable Microsoft Defender for Key Vault
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-enable-defender-key-vault.md)]

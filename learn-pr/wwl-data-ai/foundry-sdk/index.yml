@@ -2,17 +2,19 @@
 uid: learn.wwl.foundry-sdk
 metadata:
   title: Develop a generative AI chat app with Microsoft Foundry
-  description: Use Microsoft Foundry to develop generative AI chat applications with projects and the Responses API.
+  description: Use Microsoft Foundry to develop generative AI chat applications
+    with projects and the Responses API.
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/18/2026
-  ms.service: azure-ai-foundry
+  ms.date: 04/28/2026
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-generated
   ms.collection:
     - wwl-ai-copilot
 title: Develop a generative AI chat app with Microsoft Foundry
-summary: Use Microsoft Foundry to develop generative AI chat applications with projects and the Responses API.
+summary: Use Microsoft Foundry to develop generative AI chat applications with
+  projects and the Responses API.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the process for creating a generative AI chat application with Microsoft Foundry.

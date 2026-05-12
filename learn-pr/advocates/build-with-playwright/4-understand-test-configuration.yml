@@ -4,10 +4,9 @@ title: "Exercise: Deconstruct a Playwright Test"
 metadata:
   title: "Exercise: Deconstruct a Playwright Test"
   description: Let's now dive deeper into the Playwright Test Specification and Configuration. Let's open the project we created in the previous section in our favorite code editor and explore the files that Playwright installed. We're using Visual Studio Code for the workshop. 
-  ms.date: 03/19/2025
-  ms.author: debbieobrien
-  author: debs-obrien
-  ms.manager: jamont
+  ms.date: 05/01/2026
+  ms.author: orthomas
+  author: Orin-Thomas
   ms.topic: unit
 durationInMinutes: 18
 content: |

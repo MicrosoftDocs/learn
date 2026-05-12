@@ -4,11 +4,11 @@ title: "When to use LLMs"
 metadata:
   title: "When to use LLMs"
   description: Learn when to use large language models.
-  ms.date: 11/30/2023
+  ms.date: 04/27/2026
   author: softchris
   ms.author: chnoring
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-use-large-language-models.md)]
-
+

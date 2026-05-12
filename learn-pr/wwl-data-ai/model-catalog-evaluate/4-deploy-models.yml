@@ -3,12 +3,14 @@ uid: learn.wwl.model-catalog-evaluate.deploy-models
 title: Deploy models to endpoints
 metadata:
   title: Deploy models to endpoints
-  description: Learn how to deploy models to different endpoint types and test them in the playground.
+  description: Learn how to deploy models to different endpoint types and test
+    them in the playground.
   ms.date: 02/13/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
   ai-usage: ai-assisted
+  zone_pivot_groups: video-or-text
 durationInMinutes: 8
 content: |
   [!include[](includes/4-deploy-models.md)]

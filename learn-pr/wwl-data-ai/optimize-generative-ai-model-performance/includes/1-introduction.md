@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=46ac8bd3-0ebd-4b61-bd72-04d73b2ccfad]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Language models are powerful tools for building generative AI applications, but a base model on its own might not meet all of your requirements. The quality, accuracy, and consistency of the responses a model generates depend on how you configure and augment it.
 
 Imagine you're a developer working for a travel agency. You're building a chat application to help customers with their travel-related questions. The base model gives decent responses, but your team has specific needs: the responses should follow the company's tone of voice, include accurate information about your hotel catalog, and maintain a consistent format across interactions. How do you get the model to perform at this level?
@@ -8,14 +16,7 @@ There are several complementary strategies you can use to optimize a generative 
 
 Throughout this module, you explore each of these strategies and learn when and how to apply them individually or in combination.
 
-In this module, you learn how to:
+::: zone-end
 
-- Apply prompt engineering techniques including system messages, few-shot learning, and model parameters to optimize model output.
-- Understand when and how to ground a language model using Retrieval Augmented Generation (RAG).
-- Identify when fine-tuning a model improves behavioral consistency.
-- Compare optimization strategies and determine when to combine them.
-
-## Prerequisites
-
-- Familiarity with fundamental AI concepts and services in Azure.
-- A basic understanding of generative AI models and how they generate responses.
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

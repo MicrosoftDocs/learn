@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-security-posture-management-protect-remediate.measure-remediation-progress
+title: Measure remediation progress
+metadata:
+  title: Measure Remediation Progress
+  description: "Review outcome metrics to evaluate whether applied policies closed protection gaps, and identify when further remediation is needed."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/measure-remediation-progress.md)]

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.fabric-prepare-semantic-layer
+metadata:
+  title: Prepare the Semantic Layer for AI in Microsoft Fabric
+  description: "Learn to design gold layers, configure Prep for AI features, and connect semantic models to enterprise ontology with Fabric IQ so that Copilot and AI agents deliver accurate, business-relevant insights."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Prepare the semantic layer for AI in Microsoft Fabric
+summary: Design gold layers, semantic models, and documentation that enable Copilot, data agents, and enterprise ontologies to deliver accurate, business-relevant insights.
+abstract: |
+  By the end of this module, you're able to:
+  - Describe how AI systems consume data and metadata from semantic models.
+  - Design gold layers with AI-friendly naming, documentation, and structure.
+  - Configure Prep for AI features in a semantic model, including verified answers and AI instructions.
+  - Explain how semantic models connect to enterprise ontology in Fabric IQ.
+  - Validate AI readiness through testing and iteration.
+prerequisites: |
+  - Experience with semantic model design and configuration in Power BI.
+  - Familiarity with star schema concepts and DAX measures.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- data-engineer
+- data-analyst
+products:
+- fabric
+- power-bi
+subjects:
+- data-modeling
+units:
+- learn.wwl.fabric-prepare-semantic-layer.introduction
+- learn.wwl.fabric-prepare-semantic-layer.understand-ai-needs
+- learn.wwl.fabric-prepare-semantic-layer.design-gold-layers
+- learn.wwl.fabric-prepare-semantic-layer.prepare-semantic-model
+- learn.wwl.fabric-prepare-semantic-layer.enterprise-ontology
+- learn.wwl.fabric-prepare-semantic-layer.validate-readiness
+- learn.wwl.fabric-prepare-semantic-layer.exercise
+- learn.wwl.fabric-prepare-semantic-layer.knowledge-check
+- learn.wwl.fabric-prepare-semantic-layer.summary
+badge:
+  uid: learn.wwl.fabric-prepare-semantic-layer.badge

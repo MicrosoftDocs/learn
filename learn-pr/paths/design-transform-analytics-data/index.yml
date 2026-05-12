@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-transform-analytics-data
+metadata:
+  title: Design and Transform Analytics Data in Microsoft Fabric
+  description: Design dimensional models and apply transformations using dataflows, Spark notebooks, and T-SQL to produce consistent, analysis-ready data in Microsoft Fabric.
+  ms.date: 04/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: learning-path
+  ai-usage: ai-generated
+title: Design and transform analytics data in Microsoft Fabric
+prerequisites: |
+  - Experience working with data stores such aslakehouses or warehouses
+  - Familiarity with SQL query syntax
+  - Understanding of data modeling concepts such as tables, relationships, and keys
+summary: |
+  Design dimensional models and apply transformations using dataflows, Spark notebooks, and T-SQL to produce consistent, analysis-ready data in Microsoft Fabric.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-engineering
+- data-integration
+- data-modeling
+modules:
+- learn.wwl.choose-data-store-fabric
+- learn.wwl.design-dimensional-models-fabric
+- learn.wwl.fabric-transform-data-dataflows
+- learn.wwl.fabric-transform-data-notebooks
+- learn.wwl.fabric-transform-data-tsql
+trophy:
+  uid: learn.wwl.design-transform-analytics-data.trophy

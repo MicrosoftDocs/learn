@@ -1,5 +1,18 @@
-Congratulations on building an audio binary classification speech model!  
+Congratulations on learning how to build a binary audio classification model.
 
-We have covered the basics of building an audio machine learning model from understanding how analog sound turns to digital sound, to creating spectrogram images of our wave files. We used the Speech Commands dataset, parsed the classes down to `yes` and `no`, looked at ways we can understand and visualize audio data, and created spectrogram images based on the audio. From there, we used a convolutional neural network to build our model an used the spectrograms images to train it. 
+You learned how analog sound is represented as digital samples, how waveforms show amplitude over time, and how spectrograms show frequency content over time. You also saw how to load the `yes` and `no` classes from the Speech Commands dataset, convert waveforms into spectrogram tensors, train a convolutional neural network, and evaluate the model on held-out data.
 
-Be sure to check out the other modules in this learning path to learn more about machine learning with TensorFlow.
+## Next steps
+
+To go deeper, try these ideas:
+
+- Extend the model to classify all eight commands in the mini Speech Commands dataset by loading `SOURCE_DATASET_PATH` instead of the binary `BINARY_DATASET_PATH`. The `label_names` array and `num_labels` value update automatically from the directory names.
+- Use the full [Speech Commands dataset](https://www.tensorflow.org/datasets/catalog/speech_commands) and the `train`, `validation`, and `test` splits provided by TensorFlow Datasets for a more rigorous evaluation. TensorFlow Datasets exposes the standard keyword-spotting label set, including target commands plus `_unknown_` and `_silence_`, so update the output layer and label handling for that label set.
+- Try [transfer learning for audio recognition](https://www.tensorflow.org/tutorials/audio/transfer_learning_audio) with a pretrained YAMNet model.
+
+## Related learning
+
+- [TensorFlow fundamentals](/training/paths/tensorflow-fundamentals/) learning path
+- [Introduction to TensorFlow using Keras](/training/modules/intro-machine-learning-keras/)
+- [Introduction to computer vision with TensorFlow](/training/modules/intro-computer-vision-tensorflow/)
+- [Go beyond Keras: Customize with TensorFlow](/training/modules/intro-machine-learning-tensorflow/)

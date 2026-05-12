@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-data-security-posture-management
+metadata:
+  title: Reduce Data Exposure Risk with Data Security Posture Management in Microsoft Purview
+  description: Reduce data exposure risk by using Data Security Posture Management in Microsoft Purview to assess posture, protect sensitive data, and investigate risks.
+  ms.date: 05/01/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: Reduce data exposure risk with Data Security Posture Management in Microsoft Purview
+summary: |
+  Data Security Posture Management (DSPM) in Microsoft Purview helps you understand where sensitive data is exposed and how risk is distributed across your environment. You start by exploring DSPM as a unified posture layer, then assess your organization's data security posture. Finally, you protect sensitive data with security objectives and investigate risks when they arise.
+prerequisites: |
+  - Familiar with the Microsoft Purview portal and its navigation
+  - Working knowledge of sensitivity labels and information protection policies
+  - Working knowledge of data loss prevention (DLP) policies and concepts
+  - Working knowledge of Insider Risk Management concepts
+  - Basic understanding of data classification with sensitive information types and trainable classifiers
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- threat-protection
+- security
+modules:
+- learn.wwl.purview-data-security-posture-management-understand
+- learn.wwl.purview-dspm-assess-data-security-posture
+- learn.wwl.purview-data-security-posture-management-protect-remediate
+- learn.wwl.purview-data-security-posture-management-investigate-risks
+
+
+trophy:
+  uid: learn.wwl.purview-data-security-posture-management.trophy

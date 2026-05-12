@@ -28,7 +28,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Discover [Azure API Management](/azure/api-management/api-management-key-concepts).
 
-- Discover [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview).
+- Discover [Azure Managed Redis](/azure/redis/overview).
 
 ## Learn more with self-paced training
 

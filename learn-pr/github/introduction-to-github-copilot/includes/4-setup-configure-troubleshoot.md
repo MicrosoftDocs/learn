@@ -2,7 +2,7 @@ This unit explains how to sign up for GitHub Copilot, how to configure GitHub Co
 
 ## Sign up for GitHub Copilot
 
-Before you can start using GitHub Copilot, you need to set up a free trial or subscription for your account.
+Before you can start using GitHub Copilot, you need to sign in with a GitHub account that has access to GitHub Copilot.
 
 To get started, select your GitHub profile photo, and then select **Settings**. Copilot is on the left menu under **Code, planning, and automation**.
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-semantic-model-performance.performance-analyzer
+title: Use Performance analyzer to diagnose issues
+metadata:
+  title: Use Performance analyzer to Diagnose Issues
+  description: "Use Performance analyzer to identify and diagnose performance bottlenecks."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-performance-analyzer.md)]

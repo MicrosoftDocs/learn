@@ -3,11 +3,11 @@ uid: learn.fundamentals-of-ai-security.data-exfiltration
 title: Data exfiltration
 metadata:
   title: Data exfiltration
-  description: Understanding data exfiltration
-  ms.date: 03/06/2026
+  description: Learn about model, training data, and interaction data exfiltration attacks and how to prevent them.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 6
 content: |
   [!include[](includes/7-data-exfiltration.md)]

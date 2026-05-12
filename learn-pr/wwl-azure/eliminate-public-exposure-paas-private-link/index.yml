@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.eliminate-public-exposure-paas-private-link
+metadata:
+  title: Eliminate Public Network Exposure of Azure PaaS Services
+  description: "Eliminate public network exposure of Azure PaaS and AI services using private endpoints and Azure Private Link. Configure private endpoints, integrate private DNS, expose internal services using Private Link service, and enforce private access adoption using Azure Policy and Defender for Cloud."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-private-link
+  ai-usage: ai-generated
+title: Eliminate public network exposure of Azure PaaS services
+summary: Eliminate public network exposure of Azure PaaS and AI services using private endpoints and Azure Private Link, then enforce adoption at scale using Azure Policy and Defender for Cloud.
+abstract: |
+  After completing this module, you'll be able to:
+  - Assess the attack surface created by public PaaS service endpoints in an Azure environment
+  - Configure private endpoints to route access to Azure PaaS and AI services over a private network
+  - Configure Azure Private Link service to expose internal services without creating a public endpoint
+  - Enforce private endpoint adoption at scale using Azure Policy and Defender for Cloud
+prerequisites: |
+  - Familiarity with Azure virtual networks and DNS concepts
+  - Understanding of Azure PaaS services such as Storage, SQL Database, Key Vault, and Azure OpenAI at a conceptual level
+  - Basic understanding of Azure Policy and Defender for Cloud
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-private-link
+  - azure-virtual-network
+  - defender-for-cloud
+subjects:
+  - security
+  - networking
+units:
+  - learn.wwl.eliminate-public-exposure-paas-private-link.introduction
+  - learn.wwl.eliminate-public-exposure-paas-private-link.assess-risk-public-paas-endpoint-exposure
+  - learn.wwl.eliminate-public-exposure-paas-private-link.configure-private-endpoints-eliminate-public-paas-exposure
+  - learn.wwl.eliminate-public-exposure-paas-private-link.expose-internal-services-azure-private-link-service
+  - learn.wwl.eliminate-public-exposure-paas-private-link.enforce-audit-private-endpoint-adoption
+  - learn.wwl.eliminate-public-exposure-paas-private-link.knowledge-check
+  - learn.wwl.eliminate-public-exposure-paas-private-link.summary
+badge:
+  uid: learn.wwl.eliminate-public-exposure-paas-private-link.badge

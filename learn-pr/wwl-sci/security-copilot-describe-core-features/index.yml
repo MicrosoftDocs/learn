@@ -5,7 +5,7 @@ metadata:
   description: Describe the core features of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/03/2025
+  ms.date: 04/30/2026
   ms.service: security-copilot
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
@@ -48,7 +48,6 @@ units:
 - learn.security-copilot-describe-core-features.describe-session-features
 - learn.security-copilot-describe-core-features.describe-workspaces
 - learn.security-copilot-describe-core-features.describe-microsoft-plugins
-- learn.security-copilot-describe-core-features.describe-non-microsoft-plugins
 - learn.security-copilot-describe-core-features.describe-custom-promptbooks
 - learn.security-copilot-describe-core-features.describe-knowledge-base-connections
 - learn.security-copilot-describe-core-features.knowledge-check

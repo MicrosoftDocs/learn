@@ -150,12 +150,12 @@ Best practice:<br>**Modularize AI behaviors** so that service teams can update l
 
 ## References
 
-<https://www.microsoft.com/dynamics-365/resources/customer-service>
+<https://www.microsoft.com/dynamics-365/products/customer-service>
 
 [https://www.microsoft.com/dynamics-365/products/customer-service#Agents](https://www.microsoft.com/dynamics-365/products/customer-service) 
 
-[https://learn.microsoft.com/dynamics365/customer-service/copilot](/dynamics365/customer-service/copilot)
+[https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-microsoft-365-copilot](/dynamics365/customer-service/use/use-microsoft-365-copilot)
 
-[https://learn.microsoft.com/dynamics365/customer-service/service-workspace](/dynamics365/customer-service/service-workspace)
+[https://learn.microsoft.com/dynamics365/customer-service/implement/csw-overview](/dynamics365/customer-service/implement/csw-overview)
 
 [Manage Customer Knowledge Management Agent | Microsoft Learn](/dynamics365/customer-service/administer/admin-km-agent)

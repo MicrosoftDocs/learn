@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.relationships
+title: Design star schema for semantic models
+metadata:
+  title: Design Star Schema for Semantic Models
+  description: "Design star schema relationships for clarity and performance, including cross-source connections and referential integrity considerations."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-implement-star-schema.md)]

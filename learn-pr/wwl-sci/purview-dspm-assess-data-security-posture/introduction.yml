@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to assessing data security posture with Microsoft Purview Data Security Posture Management (DSPM)."
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.enable-realtime-protection-copilot-studio-agents
+metadata:
+  title: Enable Real-Time Protection for Copilot Studio Agents
+  description: "Enable and configure real-time runtime protection for Microsoft Copilot Studio agents using Microsoft Defender for Cloud Apps. Discover agents in your environment, enable protection through the Defender portal Security for AI settings, and verify that protection outputs flow into Microsoft Defender XDR."
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud-apps
+  ai-usage: ai-assisted
+title: Enable real-time protection for Copilot Studio agents
+summary: Configure Microsoft Defender for Cloud Apps to provide runtime protection for Copilot Studio agents. Enable protection in the Defender portal Settings for AI, coordinate with Power Platform admins for App ID configuration, and verify that agent inventory, alerts, and Advanced Hunting data appear in Microsoft Defender XDR.
+abstract: |
+  After completing this module, you can:
+  - Describe the AI agent protection capabilities available in Microsoft Defender for Cloud Apps
+  - Enable real-time protection for Copilot Studio agents in the Microsoft Defender portal
+  - Verify that agent protection outputs appear in the Microsoft Defender XDR inventory, alerts, and Advanced Hunting
+prerequisites: |
+  - Familiarity with Microsoft Copilot Studio and agent development concepts
+  - Experience with Microsoft Defender portal administration
+  - Understanding of Microsoft Defender for Cloud Apps capabilities
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud-apps
+  - defender-xdr
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.enable-protection-copilot-studio-agents.introduction
+- learn.wwl.enable-protection-copilot-studio-agents.explore-copilot-studio-ai-agent-protection
+- learn.wwl.enable-protection-copilot-studio-agents.enable-protection-microsoft-defender
+- learn.wwl.enable-protection-copilot-studio-agents.review-ai-agent-protection-outputs
+- learn.wwl.enable-protection-copilot-studio-agents.knowledge-check
+- learn.wwl.enable-protection-copilot-studio-agents.summary
+badge:
+  uid: learn.wwl.enable-protection-copilot-studio-agents.badge

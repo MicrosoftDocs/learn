@@ -63,7 +63,7 @@ The Chat view in Plan mode can be used to create a detailed plan for generating 
     For example, you can enter the following prompt:
 
     ```plaintext
-    Create a plan for adding inline code documentation to the ConsoleApp class. Document the class, its properties, and methods. Identify all files that need documentation updates.
+    Create a plan for adding inline code documentation to the codebase. Document classes, properties, and methods. Identify all files that need documentation updates.
     ```
 
 1. Review the implementation plan.
@@ -116,28 +116,6 @@ The Chat view in Agent mode can be used to generate inline code documentation fo
 
     You can continue to update the documentation as needed in the code editor.
 
-## Generate inline code documentation using the "Generate Docs" smart action
-
-The **Generate Docs** smart action can be used to generate inline code documentation for classes, methods, or complex code blocks. It's a quick way to generate documentation without needing to write a prompt. The **Generate Docs** smart action is available in the context menu when you right-click selected code in the editor.
-
-The **Generate Docs** smart action suggests inline code documentation directly in the code editor.
-
-1. Open the code file in the editor.
-
-1. Select the code that you want to document.
-
-1. Right-click the selected code, select **Copilot**, and then select the **Generate Docs** smart action.
-
-    ![Screenshot showing the Generate Docs smart action.](../media/smart-action-generate-docs-may-2025.png)
-
-1. Review the suggested inline code documentation in the editor.
-
-    ![Screenshot showing the code documentation suggested by the Generate Docs smart action.](../media/smart-action-generate-docs-may-2025-accept-updates.png)
-
-1. Use the **Accept** button accept the suggested update or **Close** to reject the update.
-
-    You can also use the **Rerun** button to rerun the prompt with or without updates.
-
 ## Generate inline code documentation using inline chat
 
 The inline chat feature can be used to generate inline code documentation for classes, methods, or complex code blocks. The prompt is used to specify context or to provide specific instructions. You can also use the `/doc` slash command without a text prompt if you want.
@@ -167,6 +145,27 @@ Inline chat suggests inline code documentation directly in the code editor.
 1. Use the **Accept** button accept the suggested update or **Close** to reject the update.
 
     You can also use the **Rerun** button to rerun the prompt with or without updates.
+
+## Generate inline code documentation using the "Generate Docs" smart action
+
+The **Generate Docs** smart action can be used to generate inline code documentation for classes, methods, or complex code blocks. It's a quick way to generate documentation without needing to write a prompt. The **Generate Docs** smart action is available in the context menu when you right-click selected code in the editor.
+
+The **Generate Docs** smart action suggests inline code documentation directly in the code editor.
+
+1. Open the code file in the editor.
+
+1. Select the code that you want to document.
+
+1. Right-click the selected code, select **Generate Code**, and then select **Generate Docs**.
+
+1. Review the suggested inline code documentation in the editor.
+
+1. Use the **Accept** button accept the suggested update or **Close** to reject the update.
+
+    You can also use the **Rerun** button to rerun the prompt with or without updates.
+
+> [!NOTE]
+> If the **Generate Code > Generate Docs** smart action isn't available, use the inline chat feature or Chat view to generate documentation.
 
 ### Summary
 

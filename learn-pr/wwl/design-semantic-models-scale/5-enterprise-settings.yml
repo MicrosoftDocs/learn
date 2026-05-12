@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.enterprise-settings
+title: Configure settings for scale
+metadata:
+  title: Configure Settings for Scale
+  description: "Configure semantic model settings for large datasets, concurrent queries, and external tool access in Microsoft Fabric."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-configure-settings.md)]

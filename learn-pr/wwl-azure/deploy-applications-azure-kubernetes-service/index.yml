@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-applications-azure-kubernetes-service
 metadata:
-  title: Deploy applications to Azure Kubernetes Service
-  description: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
-  ms.date: 03/04/2024
-  author: wwlpublish
-  ms.author: bradj
+  title: Deploy Applications to Azure Kubernetes Service
+  description: Provision an Azure Kubernetes Service (AKS) cluster, enforce pod configuration with Azure Policy, evaluate AKS storage options, configure persistent storage with StorageClasses and PersistentVolumeClaims, and create and update Kubernetes Deployments.
+  ms.date: 04/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-kubernetes-service
 title: Deploy applications to Azure Kubernetes Service
-summary: This module covers how to provision an Azure Kubernetes Service cluster and validate the effect of Azure Policy.
+summary: Provision an Azure Kubernetes Service (AKS) cluster, enforce pod configuration with Azure Policy, evaluate AKS storage options, configure persistent storage with StorageClasses and PersistentVolumeClaims, and create and update Kubernetes Deployments.
 abstract: |
   After completing this module, you'll be able to:
   -   Provision an AKS cluster.
   -   Install the Azure Policy add-on for Azure Kubernetes Service.
-  -   Assign an Azure Policy initiative to an Azure Kubernetes Service cluster
-  -   Validate the effect of Azure Policy
+  -   Assign an Azure Policy initiative to an Azure Kubernetes Service cluster.
+  -   Validate the effect of Azure Policy.
+  -   Select storage options for AKS containerized workloads.
+  -   Configure persistent storage for pods by using StorageClasses and PersistentVolumeClaims.
+  -   Describe why Kubernetes Deployments are preferred over individual pods, and create and update a Deployment in AKS.
 prerequisites: |
-  None
+  An Azure subscription with access to Azure Cloud Shell is required to complete the hands-on exercises. Your account must have permission to create AKS clusters and resources, register resource providers such as `Microsoft.PolicyInsights`, enable AKS add-ons, and create Azure Policy assignments. For policy assignment operations, use an account assigned the Owner or Resource Policy Contributor role at the assignment scope.
 iconUrl: /training/achievements/kubernetes-module.svg
 levels:
 - intermediate
@@ -37,4 +40,3 @@ units:
 - learn.wwl.deploy-applications-azure-kubernetes-service.summary
 badge:
   uid: learn.wwl.deploy-applications-azure-kubernetes-service.badge
-

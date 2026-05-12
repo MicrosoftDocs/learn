@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-governance-azure-policy-resource-locks.assign-built-in-policy-definitions
+metadata:
+  title: Assign built-in Azure Policy definitions
+  description: Assign built-in Azure Policy definitions and initiatives to enforce security configurations at subscription and management group scope.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Assign built-in Azure Policy definitions
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-assign-built-in-policy-definitions.md)]

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
-title: Describe the Threat Intelligence Briefing Agent
+title: Describe the agents in the Security Copilot standalone experience
 metadata:
-  title: Describe the Threat Intelligence Briefing Agent
-  description: Describe the Threat Intelligence Briefing Agent.
+  title: Describe the agents in the Security Copilot standalone experience
+  description: Describe the agents in the Security Copilot standalone experience.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 02/15/2026
+  ms.date: 05/04/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/3-describe-threat-intelligence-briefing-agent.md)]

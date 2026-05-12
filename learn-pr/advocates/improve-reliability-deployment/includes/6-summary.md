@@ -2,9 +2,9 @@ One important step towards improving your reliability is to prevent incidents wh
 
 In this module, you:
 
-- Learned about what software deployment is and different kinds of deployments we might employ.
-- Discussed the significant benefits of switching from an "epic deployment" model to a "continuous deployment" model.
-- Explored the components of continuous deployment.
-- Looked deeper into pipelines and how they're implemented in Azure Pipelines.
-- Learned a number of different strategies for deployment to production that can help avoid incidents.
-- Examined some important best practices that can minimize the risk when rolling out new software or a new version of existing software.
+- Learned what software deployment is and the different kinds of deployments organizations use.
+- Discussed the benefits of moving from an "epic deployment" model to continuous integration, delivery, and deployment.
+- Explored continuous integration, delivery, and deployment, and the foundations they share.
+- Examined pipelines and how Azure Pipelines and GitHub Actions implement them on Azure.
+- Compared deployment strategies including rolling, blue-green, canary, ring-based, and feature-flag releases.
+- Applied best practices that minimize risk when rolling out new or updated software.

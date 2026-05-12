@@ -3,7 +3,7 @@ uid: learn.measure-mitigate-risks-azure-ai-studio
 metadata:
   ms.author: apspeigh
   author: aprilgittens
-  ms.date: 09/14/2024
+  ms.date: 04/20/2026
   ms.update-cycle: 180-days
   title: Measure and mitigate risks for a generative AI app in Azure AI Foundry
   description: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Foundry.
@@ -18,13 +18,15 @@ summary: |
   This module is a _guided project_. You complete an end-to-end project by following step-by-step instructions.
 abstract:  |
   By the end of this module, you're able to:
-  - Upload data and create an index
-  - Set up a system message
-  - Create and add a content filter
-  - Execute a manual evaluation
-  - Execute and analyze an AI-assisted evaluation
+  - Choose and deploy a model from the model catalog
+  - Upload data and create a vector index
+  - Set up and refine a system message
+  - Create and apply a content filter
+  - Run a manual evaluation
+  - Run and compare automated evaluations
 prerequisites: |
-  - An Azure subscription – [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
+  - An Azure subscription [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
+  - Permission to create or manage resources in the subscription, or access to an existing hub-based project
   - Familiarity with Azure and the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

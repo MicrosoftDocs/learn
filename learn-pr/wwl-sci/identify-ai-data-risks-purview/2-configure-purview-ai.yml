@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-ai-data-risks-purview.configure-purview-ai
+metadata:
+  title: Configure Data Security Posture Management (DSPM) for AI
+  description: Configure Microsoft Purview Data Security Posture Management for AI, enable data discovery, and set up the DSPM for AI dashboard to surface AI-related data risks.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure Data Security Posture Management (DSPM) for AI
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-configure-purview-ai.md)]

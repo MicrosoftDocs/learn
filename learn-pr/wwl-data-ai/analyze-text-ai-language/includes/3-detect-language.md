@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7394c536-7d46-4f8d-a6f7-e8ebde5bda74]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 The Azure Language detection API evaluates text input and, for each document submitted, returns language identifiers with a score indicating the strength of the analysis.
 
 This capability is useful for content stores that collect arbitrary text, where language is unknown. Another scenario could involve a chat application.  If a user starts a session with the application, language detection can be used to determine which language they're using and allow you to configure your application's responses in the appropriate language.
@@ -42,3 +51,5 @@ In our sample, both languages show a high confidence value, mostly because the t
 If you try to detect the language of a document that has multilingual content, for example `I know a cool AI developer. He has a certain je ne sais quoi!`, the response may reflect some ambiguity.  Mixed language content within the same document returns the language with the largest representation in the content, but with a lower positive rating, reflecting the marginal strength of that assessment.
 
 The last condition to consider is when there's ambiguity as to the language content.  The scenario might happen if you submit textual content that the analyzer isn't able to parse, for example because of character encoding issues when converting the text to a string variable.  As a result, the response for the language name and ISO code will be returned as `(unknown)` and the score value will be returned as `0`.  
+
+::: zone-end

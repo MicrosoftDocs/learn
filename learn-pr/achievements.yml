@@ -4632,6 +4632,11 @@ achievements:
   title: Ingest data with Spark and Microsoft Fabric notebooks
   summary: Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.orchestrate-processes-in-fabric.badge
+  type: badge
+  title: Orchestrate processes in Microsoft Fabric
+  summary: This training takes a look at choosing between the use of a pipeline or notebook and different orchestration patterns in Microsoft Fabric.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.build-azure-machine-learning-custom-skill-for-azure-cognitive-search.badge
   type: badge
   title: Build an Azure Machine Learning custom skill for Azure AI Search
@@ -7936,3 +7941,93 @@ achievements:
   title: Introduction to SQL Server 2025 data virtualization
   summary: Learn about data virtualization, enhanced Polybase features in SQL Server 2025, and how to use Polybase to access and query external data.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: implement-data-governance-security-databricks-unity-catalog.trophy
+  type: trophy
+  title: Implement Data Governance and Security with Databricks Unity Catalog
+  summary: Master data governance and security with Databricks Unity Catalog. You’ll learn to manage storage and implement robust access controls on Azure Databricks.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.understand-unity-catalog.badge
+  type: badge
+  title: Establish Unity Catalog fundamentals
+  summary: Learn about governance challenges, explore metastore components, and implement external storage integration with Unity Catalog.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.secure-unity-catalog-for-governance.badge
+  type: badge
+  title: Structure Unity Catalog for governance
+  summary: Configure Unity Catalog isolation boundaries, leverage automatic lineage tracking for impact analysis, and migrate from Hive metastore to establish centralized governance.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-security-unity-catalog.badge
+  type: badge
+  title: Implement Security and Access Control in Unity Catalog
+  summary: Learn about different features and tools to help you implement security and access control in Unity Catalog.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.implement-advanced-security-unity-catalog.badge
+  type: badge
+  title: Implement Advanced Security and Data Management in Unity Catalog
+  summary: Learn about different features and tools to help you implement advanced security and data management in Unity Catalog.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure-spring-cloud-workshop.badge
+  type: badge
+  title: Deploy Spring microservices to Azure
+  summary: In this module, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Apps (ASA).
+  iconUrl: /training/achievements/azure-spring-cloud-workshop.svg
+- uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.badge
+  type: badge
+  title: Guided project - Accelerate app development using GitHub Copilot tools
+  summary: This Module explores using GitHub Copilot to accelerate development of an end-to-end project. GitHub Copilot is used to explain unfamiliar code, generate project documentation, develop a new app feature, develop unit tests, and implement improvements.&nbsp;
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.unlock-insights-microsoft-copilot-security.badge
+  type: badge
+  title: Unlock insights with Microsoft Copilot for Security
+  summary: This module introduces Microsoft Security Copilot, an AI-powered security solution designed to enhance the efficiency of security professionals.
+  iconUrl: /training/achievements/copilot-module.svg
+- uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight.trophy
+  type: trophy
+  title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
+  summary: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
+  iconUrl: /training/achievements/building-oss-analytical-solutions-with-azure-hdinsight.svg
+- uid: learn.wwl.creating-and-configuring-hdinsight-cluster.badge
+  type: badge
+  title: Creating and configuring a HDInsight cluster
+  summary: Creating and configuring a HDInsight cluster
+  iconUrl: /training/achievements/creating-and-configuring-a-hdinsight-cluster.svg
+- uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.badge
+  type: badge
+  title: Choose the correct HDInsight Configuration to build open source analytics solutions
+  summary: Choose the correct HDInsight Configuration to build open source analytics solutions
+  iconUrl: /training/achievements/hdinsight-config-build-oss-analytical-solutions.svg
+- uid: learn.wwl.introduction-open-source-analytics-offering.badge
+  type: badge
+  title: Introduction to the Open source Analytics Offering
+  summary: Introduction to the Open source Analytics Offering
+  iconUrl: /training/achievements/introduction-to-the-open-source-analytics-offering.svg
+- uid: learn.wwl.manage-enterprise-security-in-hdinsight.badge
+  type: badge
+  title: Manage enterprise security in HDInsight
+  summary: Manage enterprise security in HDInsight
+  iconUrl: /training/achievements/manage-enterprise-security-in-hdinsight.svg
+- uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.badge
+  type: badge
+  title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
+  summary: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
+  iconUrl: /training/achievements/perform-advanced-streaming-data-transformations.svg
+- uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.badge
+  type: badge
+  title: Perform Zero ETL analytics with HDInsight Interactive Query
+  summary: Perform Zero ETL analytics with HDInsight Interactive Query
+  iconUrl: /training/achievements/perform-zero-etl-analytics-with-hdinsights-interactive-query.svg
+- uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.badge
+  type: badge
+  title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
+  summary: Run Petabyte level OSS NoSQL databases with HDInsight HBase
+  iconUrl: /training/achievements/run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.svg
+- uid: learn.wwl.use-sql-warehouses-azure-databricks.badge
+  type: badge
+  title: Use SQL Warehouses in Azure Databricks
+  summary: Learn how to use SQL Warehouses in Azure Databricks to run SQL queries and perform data analysis.
+  iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
+- uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.badge
+  type: badge
+  title: Run Azure Databricks notebooks in Azure Data Factory
+  summary: Learn how to run Azure Databricks notebooks in Azure Data Factory to orchestrate data workflows and automate data processing tasks.
+  iconUrl: /training/achievements/create-production-workloads-on-azure-databricks-with-azure-data-factory.svg

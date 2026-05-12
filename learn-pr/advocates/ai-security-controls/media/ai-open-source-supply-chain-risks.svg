@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480">
+  <defs>
+    <style>
+      .center-node { fill: #003056; }
+      .risk-node { fill: #004578; }
+      .connector { stroke: #005A9E; stroke-width: 2.5; fill: none; }
+      .center-text { fill: #FFFFFF; font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; font-weight: 600; }
+      .risk-title { fill: #FFFFFF; font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .risk-desc { fill: #FFFFFF; font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 400; }
+      .icon-text { fill: #FFFFFF; font-family: 'Segoe UI', Arial, sans-serif; font-size: 22px; }
+    </style>
+  </defs>
+
+  <!-- Connectors (drawn first so nodes overlap them) -->
+  <line class="connector" x1="500" y1="210" x2="225" y2="120" />
+  <line class="connector" x1="500" y1="210" x2="775" y2="120" />
+  <line class="connector" x1="500" y1="270" x2="225" y2="370" />
+  <line class="connector" x1="500" y1="270" x2="775" y2="370" />
+
+  <!-- Center node: AI OSS Library -->
+  <rect class="center-node" x="390" y="200" width="220" height="80" rx="12" ry="12" />
+  <text class="center-text" x="500" y="237" text-anchor="middle">AI Open-Source</text>
+  <text class="center-text" x="500" y="259" text-anchor="middle">Library</text>
+
+  <!-- Risk node 1 (top-left): Pre-trained models with backdoors -->
+  <rect class="risk-node" x="70" y="40" width="310" height="80" rx="10" ry="10" />
+  <text class="icon-text" x="100" y="82" text-anchor="middle">&#x1F9E0;</text>
+  <text class="risk-title" x="120" y="70" text-anchor="start">Pre-trained models</text>
+  <text class="risk-desc" x="120" y="90" text-anchor="start">Compromised models can contain backdoors</text>
+  <text class="risk-desc" x="120" y="106" text-anchor="start">or biased behavior hard to detect in review</text>
+
+  <!-- Risk node 2 (top-right): Data pipeline vulnerabilities -->
+  <rect class="risk-node" x="620" y="40" width="310" height="80" rx="10" ry="10" />
+  <text class="icon-text" x="650" y="82" text-anchor="middle">&#x1F4CA;</text>
+  <text class="risk-title" x="670" y="70" text-anchor="start">Data pipeline vulnerabilities</text>
+  <text class="risk-desc" x="670" y="90" text-anchor="start">Flaws in data loading and transformation</text>
+  <text class="risk-desc" x="670" y="106" text-anchor="start">can expose training data or allow poisoning</text>
+
+  <!-- Risk node 3 (bottom-left): Serialization/deserialization risks -->
+  <rect class="risk-node" x="70" y="350" width="310" height="80" rx="10" ry="10" />
+  <text class="icon-text" x="100" y="392" text-anchor="middle">&#x1F510;</text>
+  <text class="risk-title" x="120" y="380" text-anchor="start">Serialization / deserialization risks</text>
+  <text class="risk-desc" x="120" y="400" text-anchor="start">Untrusted model files can lead to</text>
+  <text class="risk-desc" x="120" y="416" text-anchor="start">arbitrary code execution when loaded</text>
+
+  <!-- Risk node 4 (bottom-right): Rapid release cycles -->
+  <rect class="risk-node" x="620" y="350" width="310" height="80" rx="10" ry="10" />
+  <text class="icon-text" x="650" y="392" text-anchor="middle">&#x1F504;</text>
+  <text class="risk-title" x="670" y="380" text-anchor="start">Rapid release cycles</text>
+  <text class="risk-desc" x="670" y="400" text-anchor="start">Frequent breaking changes mean pinned</text>
+  <text class="risk-desc" x="670" y="416" text-anchor="start">versions may miss critical security patches</text>
+
+  <!-- Connector dots at center node edges -->
+  <circle cx="500" cy="210" r="4" fill="#005A9E" />
+  <circle cx="500" cy="270" r="4" fill="#005A9E" />
+</svg>

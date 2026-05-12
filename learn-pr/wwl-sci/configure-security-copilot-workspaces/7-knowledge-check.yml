@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-security-copilot-workspaces.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of configuring workspaces for Microsoft Security Copilot.
+  ms.date: 03/19/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your organization needs to ensure that prompts and session data for the compliance team remain within the European Union for regulatory reasons. Which workspace configuration setting addresses this requirement?"
+    choices:
+    - content: "Prompt evaluation location"
+      isCorrect: false
+      explanation: "Incorrect. Prompt evaluation location determines where GPU resources process prompts, but data at rest is stored based on the data storage location setting."
+    - content: "Data storage location"
+      isCorrect: true
+      explanation: "Correct. The data storage location setting determines where Security Copilot stores session data at rest. For EU compliance, you select an EU geo during workspace creation. This setting is immutable after creation."
+    - content: "Data sharing preferences"
+      isCorrect: false
+      explanation: "Incorrect. Data sharing preferences control whether Microsoft can use data to improve the service, not where data is stored geographically."
+    - content: "Capacity resource group location"
+      isCorrect: false
+      explanation: "Incorrect. The Azure resource group location for capacity resources doesn't control where Security Copilot stores session data."
+  - content: "You need to assign the SOC team lead permissions to configure plugins and manage user access within the SOC workspace. Which Security Copilot role provides these capabilities?"
+    choices:
+    - content: "Contributor"
+      isCorrect: false
+      explanation: "Incorrect. Contributors can use Security Copilot features but can't configure workspace settings or manage access."
+    - content: "Security Administrator"
+      isCorrect: false
+      explanation: "Incorrect. While Security Administrators can perform some configuration tasks, workspace-specific permissions are managed through workspace roles."
+    - content: "Owner"
+      isCorrect: true
+      explanation: "Correct. The Owner role for a specific workspace enables configuration of plugins, promptbooks, role assignments, and other workspace settings. Owners can tailor the workspace to team needs."
+    - content: "Azure Contributor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Contributor provides permissions for Azure resources like capacity but doesn't grant Security Copilot workspace management permissions."
+  - content: "Your organization sets 5 Security Compute Units (SCUs) for the sandbox workspace. During load testing, all SCUs are consumed and operations are throttled. You configured 3 overage units during creation. What happens next?"
+    choices:
+    - content: "Operations continue to be throttled until provisioned capacity is reduced below the limit"
+      isCorrect: false
+      explanation: "Incorrect. Overage units are designed to handle usage spikes beyond provisioned capacity."
+    - content: "Security Copilot automatically allocates up to 3 extra SCUs on-demand to handle the spike"
+      isCorrect: true
+      explanation: "Correct. Overage units provide extra Security Compute Units when available SCUs are depleted during usage spikes. You have 3 overage units configured. Security Copilot can allocate up to 3 more SCUs beyond the 5 provisioned units."
+    - content: "The workspace owner receives an alert but no extra capacity is made available"
+      isCorrect: false
+      explanation: "Incorrect. Overage units are automatically allocated when provisioned capacity is exhausted."
+    - content: "Users are automatically switched to the default workspace for continued operation"
+      isCorrect: false
+      explanation: "Incorrect. Workspaces operate independently. Overage units handle capacity spikes within the same workspace."
+  - content: "You assign the Defender XDR agent to the SOC workspace. What must you do before switching the agent assignment to a different workspace?"
+    choices:
+    - content: "Export all session history from the current workspace"
+      isCorrect: false
+      explanation: "Incorrect. While session history remains in the original workspace, exporting isn't a prerequisite for switching."
+    - content: "Turn off any scheduled or automatic agent triggers in the current workspace"
+      isCorrect: true
+      explanation: "Correct. Before switching workspace assignments for integrated agents, you must turn off scheduled or automatic agent triggers. After switching, you reconfigure agents in the new workspace. New agent setups can't access to previous workspace-specific data."
+    - content: "Increase the capacity allocation for the destination workspace"
+      isCorrect: false
+      explanation: "Incorrect. While ensuring adequate capacity is a good practice, it isn't a required prerequisite for switching agent workspace assignments."
+    - content: "Reassign all users from the source workspace to the destination workspace"
+      isCorrect: false
+      explanation: "Incorrect. User workspace access is managed independently from agent workspace assignments."
+  - content: "You update provisioned SCU capacity from 3 to 8 units for the compliance workspace. When does the new capacity take effect?"
+    choices:
+    - content: "Immediately upon saving the change"
+      isCorrect: false
+      explanation: "Incorrect. Capacity changes aren't instantaneous."
+    - content: "Within 30 minutes of the change"
+      isCorrect: true
+      explanation: "Correct. Capacity adjustments typically take effect within 30 minutes. Plan capacity changes in advance of anticipated usage spike to ensure availability."
+    - content: "At the start of the next billing cycle"
+      isCorrect: false
+      explanation: "Incorrect. Capacity changes take effect sooner than the next billing cycle."
+    - content: "After all users sign out and back in to the workspace"
+      isCorrect: false
+      explanation: "Incorrect. User sessions don't affect when capacity changes take effect."

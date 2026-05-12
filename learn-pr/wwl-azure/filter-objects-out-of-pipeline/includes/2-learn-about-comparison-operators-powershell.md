@@ -6,24 +6,24 @@ The following table lists the basic comparison operators and what they mean.
 
 | Operator | Description              |
 | -------- | ------------------------ |
-| **-eq**  | Equal to                 |
-| **-ne**  | Not equal to             |
-| **-gt**  | Greater than             |
-| **-lt**  | Less than                |
-| **-le**  | Less than or equal to    |
-| **-ge**  | Greater than or equal to |
+| `-eq`  | Equal to                 |
+| `-ne`  | Not equal to             |
+| `-gt`  | Greater than             |
+| `-lt`  | Less than                |
+| `-le`  | Less than or equal to    |
+| `-ge`  | Greater than or equal to |
 
-These operators are case-insensitive when used with strings. This means that the results are the same whether the letters are capitalized or not. A case-sensitive version of each operator is available and begins with the letter **c**, such as **-ceq** and **-cne**.
+These operators are case-insensitive when used with strings. This case-insensitivity means that the results are the same whether the letters are capitalized or not. A case-sensitive version of each operator is available and begins with the letter `c`, such as `-ceq` and `-cne`.
 
-PowerShell also contains the **-like** operator and its case-sensitive companion, **-clike**. The **-like** operator resembles **-eq** but supports the use of the question mark (?) and asterisk (*) wildcard characters in string comparisons.
+PowerShell also contains the `-like` operator and its case-sensitive companion, `-clike`. The `-like` operator resembles `-eq` but supports the use of the question mark (?) and asterisk (*) wildcard characters in string comparisons.
 
 Other, more advanced operators exist that are beyond the scope of this course. These operators include:
 
-- The **-in** and **-contains** operators, which test whether an object exists in a collection.
-- The **-as** operator, which tests whether an object is of a specified type.
-- The **-match** and **-cmatch** operators, which compare a string to a regular expression.
+- The `-in` and `-contains` operators, which test whether an object exists in a collection.
+- The `-is` and `-isnot` operators, which test whether an object is an instance of a specified .NET type. (The `-as` operator converts an object to a specified type and returns `$null` if the conversion fails—it's a type conversion operator, not a type test.)
+- The `-match` and `-cmatch` operators, which compare a string to a regular expression.
 
-PowerShell also contains many operators that reverse the logic of the comparison, such as **-notlike** and **-notin**.
+PowerShell also contains many operators that reverse the logic of the comparison, such as `-notlike` and `-notin`.
 
 You can make comparisons directly at the command prompt, which returns either True or False. Here's an example:
 

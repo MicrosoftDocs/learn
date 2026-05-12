@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=42158315-f597-41f5-80a7-52633f96f410]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Building effective generative AI applications requires selecting the right foundation model for your specific use case. With thousands of models available, you need a structured approach to discover, compare, deploy, and validate that a model meets your requirements.
 
 Consider a scenario where you're building an AI-powered customer support chatbot for a retail company. You need to select a language model that can understand customer questions, provide accurate responses, and maintain appropriate tone and safety standards. But how do you choose from the vast catalog of available models? How do you know if a model performs well for your specific needs? And once deployed, how do you measure and improve its performance?
@@ -13,3 +21,8 @@ By the end of this module, you'll be able to:
 - Deploy a model to an endpoint and test it in the playground
 - Evaluate model performance using manual and automated approaches
 - Understand different evaluation metrics and when to use them
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

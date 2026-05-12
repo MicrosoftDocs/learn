@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-copilot-interactive-guides.use-prompts-promptbooks-security-copilot
+title: Use prompts and promptbooks in Security Copilot
+metadata:
+  title: Use Prompts and Promptbooks in Security Copilot
+  description: "Explore the prompt bar, run prompts and promptbooks, and review investigation results in Security Copilot."
+  ms.date: 04/28/2026
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-use-prompts-promptbooks-security-copilot.md)]

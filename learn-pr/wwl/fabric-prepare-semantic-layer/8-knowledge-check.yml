@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-prepare-semantic-layer.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check for preparing semantic models for AI consumption."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "An analytics team notices that Copilot in Power BI frequently returns incorrect answers when users ask about revenue. The semantic model has a measure called `Rev` with no description. What should the team do first to improve Copilot's accuracy for revenue-related questions?"
+    choices:
+    - content: "Create a verified answer for every possible revenue question."
+      isCorrect: false
+      explanation: "Creating verified answers for every possible revenue question isn't practical. The fundamental issue is that the measure name and missing description make it difficult for Copilot to identify and interpret the measure correctly."
+    - content: "Rename the measure to a descriptive name like 'Revenue (USD)' and add a description that explains the business logic."
+      isCorrect: true
+      explanation: "Clear naming and descriptions are the foundation of AI readiness. Copilot uses measure names and descriptions as grounding data during preprocessing. A descriptive name and explanation of business logic directly reduce ambiguity."
+    - content: "Mark the semantic model as Approved for Copilot to enable enhanced AI features."
+      isCorrect: false
+      explanation: "Marking a model as Approved for Copilot removes friction treatments but doesn't improve the grounding data that Copilot uses. The model needs better naming and descriptions first."
+  - content: "A data team generates an ontology from a published semantic model in Fabric. After generation, several entity types have names like `factsales` and `dimstore`. What is the recommended next step?"
+    choices:
+    - content: "Delete the generated ontology and rebuild it manually from OneLake tables."
+      isCorrect: false
+      explanation: "Deleting and rebuilding wastes the automatically generated properties, data bindings, and relationships. The generation provides a strong starting point that only needs refinement."
+    - content: "Rename the entity types to business-friendly names like 'SaleEvent' and 'Store' and verify data bindings."
+      isCorrect: true
+      explanation: "After ontology generation, the recommended step is to rename technical table names to business-friendly entity type names and verify that properties, keys, and bindings are correct."
+    - content: "Publish the ontology as-is since the entity types automatically update when the semantic model changes."
+      isCorrect: false
+      explanation: "Entity types don't automatically rename when the source semantic model changes. Technical names like 'factsales' aren't meaningful to business users or AI agents and should be renamed manually."
+  - content: "A developer configures the AI data schema in the Prep for AI dialog. They hide several surrogate key columns and ETL metadata fields. Which Copilot behavior does this action directly affect?"
+    choices:
+    - content: "Copilot no longer includes those fields in its grounding data during preprocessing."
+      isCorrect: true
+      explanation: "Hidden fields are excluded from the grounding data that Copilot collects during preprocessing. This reduces schema complexity and helps Copilot focus on business-relevant fields when interpreting user questions."
+    - content: "Copilot generates faster responses because it processes fewer tokens."
+      isCorrect: false
+      explanation: "While fewer fields might slightly reduce token count, the primary effect of hiding fields is that Copilot no longer considers them when interpreting questions. Response speed isn't the main benefit."
+    - content: "Copilot automatically creates descriptions for the remaining visible fields."
+      isCorrect: false
+      explanation: "Hiding fields doesn't trigger automatic description generation for visible fields. You need to add descriptions separately, either manually or using Copilot's measure description feature."
+  - content: "An organization wants Copilot to consistently return the same visual when users ask 'What were total sales last quarter?' Which Prep for AI feature should the team configure?"
+    choices:
+    - content: "AI instructions that define the preferred measure and time filter for sales questions."
+      isCorrect: false
+      explanation: "AI instructions provide general business context but can't guarantee that Copilot returns a specific visual for a specific question. AI instructions influence interpretation but don't predefine responses."
+    - content: "Verified answers with trigger phrases that match common ways users ask this question."
+      isCorrect: true
+      explanation: "Verified answers predefine a specific visual and response for matching trigger phrases. When a user's question matches the trigger phrases, Copilot returns the predefined answer instead of generating one."
+    - content: "Linguistic modeling with synonyms for 'total sales' and 'last quarter.'"
+      isCorrect: false
+      explanation: "Synonyms help Copilot interpret terminology but don't guarantee a specific visual or response format. For consistent, predefined responses, verified answers are the correct feature."
+  - content: "An analytics professional builds a well-designed semantic model with clear names, descriptions, and star schema relationships. They want their work to support AI agents beyond Power BI Copilot. Which Fabric IQ capability connects their semantic model to broader enterprise AI?"
+    choices:
+    - content: "The Generate Ontology feature that creates entity types, properties, and relationships from the semantic model."
+      isCorrect: true
+      explanation: "Generating an ontology from a semantic model creates entity types, properties, and relationships that data agents and other AI tools across Fabric IQ consume. This connects the analyst's work to enterprise-wide AI capabilities."
+    - content: "The Approved for Copilot designation that certifies the model for AI consumption."
+      isCorrect: false
+      explanation: "Approved for Copilot affects only the Power BI Copilot experience by removing friction treatments. It doesn't connect the model to Fabric IQ data agents or enterprise ontology."
+    - content: "The Q&A setup that configures synonyms and linguistic relationships for the model."
+      isCorrect: false
+      explanation: "Q&A setup improves Copilot and Q&A experiences within Power BI but doesn't extend the model to Fabric IQ data agents or enterprise ontology."

@@ -6,10 +6,10 @@ metadata:
   description: Learn about custom promptbooks and how you can create them.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 04/30/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-custom-promptbooks.md)]

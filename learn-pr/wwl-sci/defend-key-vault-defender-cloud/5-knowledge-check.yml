@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defend-key-vault-defender-cloud.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of protecting Azure Key Vault with Microsoft Defender for Cloud. The features covered include CSPM secret scanning, Defender for Key Vault capabilities, and alert response.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security team wants to discover plaintext connection strings stored on Azure virtual machine (VM) disks across their subscription. Which Microsoft Defender for Cloud plan provides this agentless scanning capability?"
+    choices:
+    - content: "Microsoft Defender for Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Key Vault monitors for suspicious access patterns and anomalous behavior targeting Key Vault accounts. It doesn't scan virtual machine disks for exposed plaintext secrets—that capability belongs to Defender CSPM or Defender for Servers Plan 2."
+    - content: "Foundational CSPM"
+      isCorrect: false
+      explanation: "Incorrect. Foundational CSPM is the free default plan that provides basic secure score, asset inventory, and security recommendations. Agentless secrets scanning is an advanced feature that requires the paid Defender CSPM plan or Defender for Servers Plan 2."
+    - content: "Defender Cloud Security Posture Management (CSPM) or Defender for Servers Plan 2"
+      isCorrect: true
+      explanation: "Correct. Agentless machine secrets scanning is included with either the Defender CSPM plan or Defender for Servers Plan 2. The scanning takes disk snapshots without installing agents, with no issues on VM performance. Defender CSPM also includes cloud deployment scanning."
+    - content: "Microsoft Defender for Servers Plan 1"
+      isCorrect: false
+      explanation: "Incorrect. Defender for Servers Plan 1 provides foundational server protection but doesn't include agentless secrets scanning. The machine secrets scanning feature requires Defender for Servers Plan 2 or the Defender CSPM plan."
+  - content: "Microsoft Defender for Key Vault generates an alert for access from The Onion Router (TOR) exit node. What is the correct first step in the investigation and response process?"
+    choices:
+    - content: "Immediately revoke all access policies and RBAC assignments on the Key Vault."
+      isCorrect: false
+      explanation: "Incorrect. Revoking all access immediately is disruptive and potentially unnecessary. The response process starts with identification—you need to understand who triggered the alert before deciding what access to revoke. Indiscriminate revocation could break legitimate application access."
+    - content: "Dismiss the alert because the source IP belongs to the Microsoft address space."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft recommends never dismissing Defender for Key Vault alerts simply because the IP is in the Microsoft address space. Azure VMs are assigned Microsoft IPs, meaning a Microsoft IP in the alert doesn't indicate the access was from Microsoft itself."
+    - content: "Rotate all secrets in the Key Vault before investigating the alert details."
+      isCorrect: false
+      explanation: "Incorrect. Secret rotation is Step 4 (take action) in the response process—not the first step. Rotating all secrets before identifying which ones were accessed is potentially disruptive and doesn't address the root cause. The correct order is: identify → respond → measure issues → take action."
+    - content: "Verify whether the traffic originated from within your Azure tenant to identify the source."
+      isCorrect: true
+      explanation: "Correct. Step 1 of the Defender for Key Vault response process is to identify the source—specifically whether the traffic came from within your Azure tenant. After establishing the source, you respond proportionately: contacting the owner if known, or taking protective action if not."
+  - content: "A security engineer reviews Defender CSPM findings and sees that an ARM template contains a plaintext storage account connection string. How should they remediate this finding?"
+    choices:
+    - content: "Enable the Defender CSPM plan to suppress the finding."
+      isCorrect: false
+      explanation: "Incorrect. The Defender CSPM plan is required to detect cloud deployment secrets in the first place—not to suppress findings. Suppressing a finding doesn't remediate the risk; the exposed secret remains in the deployment template and any deployment history."
+    - content: "Remove the hardcoded secret from the deployment template and store it as a secret in Azure Key Vault, referenced at runtime."
+      isCorrect: true
+      explanation: "Correct. The recommended remediation for secrets exposed in cloud deployment templates is to remove the hardcoded credential and use a Key Vault secret reference instead. Defender CSPM's recommendation guidance directs you to use secrets management systems such as Azure Key Vault."
+    - content: "Enable purge protection on the Key Vault to prevent the secret from being deleted."
+      isCorrect: false
+      explanation: "Incorrect. Purge protection prevents deletion of Key Vault objects during the retention period. It doesn't address the finding that a plaintext secret exists in a deployment template—the secret needs to be moved out of the template and into Key Vault."
+    - content: "Configure a Key Vault firewall rule to block access from the deployment service."
+      isCorrect: false
+      explanation: "Incorrect. Configuring a firewall rule restricts network access to Key Vault but doesn't address the finding. The issue is that a plaintext secret is stored in the deployment template, not that Key Vault access controls need adjustment."
+  - content: "An organization enabled Microsoft Defender for Key Vault but hasn't enabled Defender CSPM. Which security risk remains unaddressed?"
+    choices:
+    - content: "Anomalous access patterns targeting the Key Vault won't generate alerts."
+      isCorrect: false
+      explanation: "Incorrect. Anomalous access alerting is provided by Microsoft Defender for Key Vault, which is already enabled. The missing capability is outbound secret exposure detection—credentials exposed from the vault and exists in the environment outside it."
+    - content: "The Key Vault won't enforce role-based access control for secrets."
+      isCorrect: false
+      explanation: "Incorrect. Role-based access control for Key Vault is configured through Azure RBAC and isn't dependent on either Defender CSPM or Defender for Key Vault being enabled. These are threat detection plans, not access control mechanisms."
+    - content: "Plaintext credentials stored on VM disks or in deployment templates won't be detected."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Key Vault is a CWPP plan that monitors the vault for suspicious access patterns. It doesn't scan the environment for secrets already escaped the vault. Defender CSPM secret scanning is required to detect credentials exposed on VM disks, in deployment templates, or in code repositories."
+    - content: "Defender for Key Vault alerts won't appear in the Security alerts page in Defender for Cloud."
+      isCorrect: false
+      explanation: "Incorrect. Defender for Key Vault alerts surface in the Security alerts page in Defender for Cloud regardless of whether Defender CSPM is enabled. The two plans are independent—enabling one doesn't affect the alerting behavior of the other."

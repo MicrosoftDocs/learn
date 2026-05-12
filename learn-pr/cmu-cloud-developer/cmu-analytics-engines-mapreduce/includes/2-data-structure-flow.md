@@ -33,7 +33,7 @@ The combiner function is best illustrated through an example. Assume that a map 
 2. _M. Hammoud and M. F. Sakr (2011). [Locality-Aware Reduce Task Scheduling for MapReduce](https://web2.qatar.cmu.edu/~mhhammou/mhh_msakr_LARTS_CloudCom2011_paper.pdf) CloudCom_
 3. _[HDFS Architecture Guide](http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html) Hadoop_
 4. _M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). [Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic](https://dl.acm.org/doi/10.1109/CLOUD.2012.92) CLOUD_
-5. _J. Gray, S. Chaudhuri, A. Bosworth, A. Layman, D. Reichart, M. Venkatrao, and H. Pirahesh (1997). [Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals](https://arxiv.org/ftp/cs/papers/0701/0701155.pdf) Data Mining and Knowledge Discovery_
+5. _J. Gray, S. Chaudhuri, A. Bosworth, A. Layman, D. Reichart, M. Venkatrao, and H. Pirahesh (1997). [Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals](https://arxiv.org/pdf/cs/0701155.pdf) Data Mining and Knowledge Discovery_
 
 ***
 
@@ -41,4 +41,4 @@ The combiner function is best illustrated through an example. Assume that a map 
 [^2]: <https://web2.qatar.cmu.edu/~mhhammou/mhh_msakr_LARTS_CloudCom2011_paper.pdf> "M. Hammoud and M. F. Sakr (2011). *Locality-Aware Reduce Task Scheduling for MapReduce* CloudCom"
 [^3]: <http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html> "*HDFS Architecture Guide* Hadoop"
 [^4]: <https://dl.acm.org/doi/10.1109/CLOUD.2012.92> "M. Hammoud, M. S. Rehman, and M. F. Sakr (2012). *Center-of-Gravity Reduce Task Scheduling to Lower MapReduce Network Traffic* CLOUD"
-[^5]: <https://arxiv.org/ftp/cs/papers/0701/0701155.pdf> "J. Gray, S. Chaudhuri, A. Bosworth, A. Layman, D. Reichart, M. Venkatrao, and H. Pirahesh (1997). *Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals* Data Mining and Knowledge Discovery"
+[^5]: <https://arxiv.org/pdf/cs/0701155.pdf> "J. Gray, S. Chaudhuri, A. Bosworth, A. Layman, D. Reichart, M. Venkatrao, and H. Pirahesh (1997). *Data Cube: A Relational Aggregation Operator Generalizing Group-by, Cross-tab, and Sub-totals* Data Mining and Knowledge Discovery"

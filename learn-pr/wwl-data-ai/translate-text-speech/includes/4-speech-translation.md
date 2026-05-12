@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a233ae23-43d4-4daa-ac45-fe20595d4f71]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Azure Speech in Foundry Tools provides multiple APIs that you can use to build speech-enabled applications and agents. The Speech Translation API enables you to build solutions that translate spoken input and return the translation as text or speech.
 
 ## Use Azure Speech translation in application code
@@ -186,6 +196,8 @@ print(f"Translating '{translation_results.text}'")
 print(translation_results.translations[target_language])
 playsound(output_file)
 ```
+
+::: zone-end
 
 > [!TIP]
 > For more information about synthesizing translations, see the [Azure Speech documentation](/azure/ai-services/speech-service/how-to-translate-speech?tabs=terminal&pivots=programming-language-python&azure-portal=true#synthesize-translations).

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-dataflows.transform-power-query
+title: Transform data with Power Query
+metadata:
+  title: Transform Data with Power Query
+  description: "Apply Power Query transformations to shape and clean data in Dataflows Gen2"
+  ms.date: 03/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-transform-power-query.md)]

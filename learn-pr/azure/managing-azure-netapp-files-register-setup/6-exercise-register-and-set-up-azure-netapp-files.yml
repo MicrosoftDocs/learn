@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.register-and-setup.exercise
+title: Exercise - Register and Set Up Azure NetApp Files
+metadata:
+  title: Exercise - Register and Set Up Azure NetApp Files
+  description: Hands-on exercise to register and set up Azure NetApp Files.
+  ms.date: 03/25/2026
+  author: rmishras
+  ms.author: b-rashmim
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-register-and-set-up-azure-netapp-files.md)]

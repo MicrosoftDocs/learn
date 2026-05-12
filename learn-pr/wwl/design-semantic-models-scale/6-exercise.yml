@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.exercise
+title: "Exercise: Design a semantic model for scale in Fabric"
+metadata:
+  title: "Exercise: Design a Semantic Model for Scale in Fabric"
+  description: "Apply your skills by designing a semantic model for scale in the Microsoft Fabric service."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]

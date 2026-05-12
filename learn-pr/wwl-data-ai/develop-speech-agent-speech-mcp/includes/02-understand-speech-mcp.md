@@ -1,3 +1,13 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=64daf464-add0-4a3c-91af-d126a8dd87dd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 The Azure Speech MCP server connects AI agents to Azure Speech in Foundry Tools through the **Model Context Protocol (MCP)**. Before exploring the Speech MCP server itself, it helps to understand what MCP is and how it enables agents to use external tools.
 
 ## What is the Model Context Protocol?
@@ -68,3 +78,5 @@ The Azure Speech MCP server uses key-based authentication. When you create the c
 - Avoid embedding keys or SAS URLs directly in source code, scripts, or documentation.
 - Use the shortest practical SAS expiry time and scope it to the minimum required resource.
 - Rotate keys immediately if you suspect they're exposed.
+
+::: zone-end

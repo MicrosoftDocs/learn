@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 30
+durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-secure-data-access.md)]

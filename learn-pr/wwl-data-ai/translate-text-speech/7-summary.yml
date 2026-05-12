@@ -8,6 +8,7 @@ metadata:
   ms.author: gmalc
   ms.date: 3/13/2026
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

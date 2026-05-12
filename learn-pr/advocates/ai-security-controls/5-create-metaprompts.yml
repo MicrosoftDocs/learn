@@ -3,11 +3,11 @@ uid: learn.ai-security-controls.create-metaprompts
 title: Create metaprompts
 metadata:
   title: Create metaprompts
-  description: Learn about metaprompts and how they can help you secure your AI systems
-  ms.date: 03/06/2026
+  description: Learn how to design effective metaprompts (system prompts) as a security control, including role definition, safety rules, grounding instructions, and anti-manipulation techniques.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/5-create-metaprompts.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.configure-defender-cloud-security-controls
+metadata:
+  title: Configure Security Controls and Remediate Recommendations in Defender for Cloud
+  description: "Configure Defender for Cloud security standards at management group scope and systematically deploy security controls to remediate recommendations at scale using Fix, governance rules, Policy remediation tasks, and exemptions."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Configure security controls and remediate recommendations in Defender for Cloud
+summary: Configure Defender for Cloud security standards at management group scope and systematically deploy security controls to remediate recommendations. Manage custom security standards, assign recommendation ownership using governance rules, and remediate at scale using Fix, Azure Policy remediation tasks, and structured exemptions.
+abstract: |
+  After completing this module, you can:
+    - Configure Defender for Cloud environment settings and security standards at management group scope
+    - Deploy security controls to remediate recommendations at scale using Fix, governance rules, Policy remediation tasks, and exemptions
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+  - Understanding of Azure role-based access control (RBAC) and Azure Policy fundamentals
+  - Working knowledge of Azure resource types and subscription management
+  - Completion of (or equivalent knowledge to) Enable and configure workload protection plans in Microsoft Defender for Cloud
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure-policy
+  - azure
+subjects:
+  - security
+  - cloud-security
+  - compliance
+units:
+- learn.wwl.configure-defender-cloud-security-controls.introduction
+- learn.wwl.configure-defender-cloud-security-controls.configure-defender-cloud-security-standards
+- learn.wwl.configure-defender-cloud-security-controls.deploy-remediation-controls-scale
+- learn.wwl.configure-defender-cloud-security-controls.knowledge-check
+- learn.wwl.configure-defender-cloud-security-controls.summary
+badge:
+  uid: learn.wwl.configure-defender-cloud-security-controls.badge

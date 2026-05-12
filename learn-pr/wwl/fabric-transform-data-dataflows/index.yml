@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.fabric-transform-data-dataflows
+metadata:
+  title: Transform Data Using Dataflows Gen2 in Microsoft Fabric
+  description: "Apply low-code transformations using Power Query in Dataflows Gen2 to prepare analytical data for downstream consumption."
+  ms.date: 03/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-generated
+title: Transform data using Dataflows Gen2 in Microsoft Fabric
+summary: "Apply low-code transformations using Power Query in Dataflows Gen2 to prepare analytical data for downstream consumption."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Create and configure Dataflows Gen2 in Microsoft Fabric
+    - Apply Power Query transformations to prepare data
+    - Optimize dataflow performance with query folding
+    - Load transformed data to lakehouse or warehouse destinations
+prerequisites: |
+  - Understanding of data transformation concepts and Power Query fundamentals
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+subjects:
+  - data-analytics
+  - data-engineering
+units:
+- learn.wwl.fabric-transform-data-dataflows.introduction
+- learn.wwl.fabric-transform-data-dataflows.understand-dataflows
+- learn.wwl.fabric-transform-data-dataflows.transform-power-query
+- learn.wwl.fabric-transform-data-dataflows.optimize-performance
+- learn.wwl.fabric-transform-data-dataflows.exercise
+- learn.wwl.fabric-transform-data-dataflows.knowledge-check
+- learn.wwl.fabric-transform-data-dataflows.summary
+badge:
+  uid: learn.wwl.fabric-transform-data-dataflows.badge

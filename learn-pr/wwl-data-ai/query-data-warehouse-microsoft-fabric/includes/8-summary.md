@@ -1,10 +1,3 @@
-Learning how to query a data warehouse empowers individuals to extract, analyze, and interpret large volumes of stored data, transforming raw data into meaningful insights. These insights can drive strategic decision-making, optimize operations, and uncover hidden patterns and trends.
+In this module, you explored the tools available for querying a data warehouse in Microsoft Fabric. You used the SQL query editor to write and run T-SQL queries, explored the visual query editor as a no-code alternative, and learned how to connect to a data warehouse from SQL Server Management Studio (SSMS) using Microsoft Entra ID authentication.
 
-There’s no one-size-fits-all solution for querying your data. The best approach depends on the specifics of your data warehouse and the question you’re trying to answer.
-
-For additional reading, you can refer to the following URLs:
-
-- [Connectivity to data warehousing in Microsoft Fabric](/fabric/data-warehouse/connectivity?azure-portal=true)
-- [Query the SQL analytics endpoint or Warehouse in Microsoft Fabric](/fabric/data-warehouse/query-warehouse?azure-portal=true)
-- [View data in the Data preview in Microsoft Fabric](/fabric/data-warehouse/data-preview?azure-portal=true)
- 
+Each tool serves a different need — the SQL query editor gives you full control over your queries, the visual query editor makes it easy to build queries without writing code, and client tools like SSMS provide a familiar environment for database professionals.

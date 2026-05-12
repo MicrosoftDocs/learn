@@ -4,6 +4,6 @@ Viewing data in its raw format rarely provides useful insights into the patterns
 
 After completing this module, you'll be able to:
 
-- Understand how to aggregate data.
-- Group and summarize data within a dataset.
-- Convert data from text to visualizations.
+- Describe data aggregation.
+- Describe grouping of data.
+- Describe data visualizations.

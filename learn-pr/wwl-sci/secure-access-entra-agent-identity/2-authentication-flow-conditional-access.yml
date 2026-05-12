@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-access-entra-agent-identity.authentication-flow-conditional-access
+metadata:
+  title: Map authentication flows and Conditional Access scope
+  description: Map how AI agents authenticate to Microsoft services and identify the points in agent authentication flows where Conditional Access policies can be applied.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Map authentication flows and Conditional Access scope
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-authentication-flow-conditional-access.md)]

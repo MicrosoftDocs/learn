@@ -1,23 +1,23 @@
-In this module, you learned about functions and modules. The following are the key takeaways:
+In this module, you learned about functions and modules. Key takeaways:
 
-- A function is a block of reusable code. You can use functions to perform repetitive actions within a script rather than putting the same code in the script multiple times.
+- A function is a block of reusable code that you define once and call multiple times, avoiding repeated code in your scripts.
 
-- Variables have a specific scope and are limited in how they interact between scopes. Variable scopes can be global, script, and function.
+- Variables have a specific scope — global, script, or function — that limits how they interact with each other.
 
-- You can create modules to store functions and share those functions among scripts. After you put your functions into modules, they're discoverable just as cmdlets are. Also, like the modules included with Windows, the modules you create load automatically when a function is required.
+- Modules store and share functions across scripts. Functions in modules are discoverable like cmdlets and load automatically when called.
 
-- Dot sourcing is a method for importing another script into the current scope. If you have a script file that contains functions, you can use dot sourcing to load the functions into memory at a Windows PowerShell prompt.
+- Dot sourcing is a method for importing another script into the current scope. If you have a script file that contains functions, you can use dot sourcing to load the functions into memory at a PowerShell prompt.
 
-- Dot sourcing can load from a local file or over the network by using a Universal Naming Convention (UNC) path. 
+- Dot sourcing supports local files and network paths using Universal Naming Convention (UNC) paths.
 
 ## Additional reading
 
 To learn more, go through the following documents:
 
-- [About Assignment Operators](https://aka.ms/lewact)
+- [About Functions](/powershell/module/microsoft.powershell.core/about/about_functions)
 
-- [Hosting your own NuGet Feeds](https://aka.ms/vm0ys1)
+- [About Scopes](/powershell/module/microsoft.powershell.core/about/about_scopes)
 
-- [About Language Modes](https://aka.ms/nxcyid)​
+- [About Language Modes](/powershell/module/microsoft.powershell.core/about/about_language_modes)
 
-- [About Functions Advanced Parameters](https://aka.ms/about-functions-advanced-parameters)​
+- [About Functions Advanced Parameters](/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters)

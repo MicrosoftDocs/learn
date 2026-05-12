@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e183ca90-6c59-4c74-abce-8494964b7ceb]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Azure Speech in Foundry Tools is a set of speech-related capabilities that are provided by a Foundry resource. You can use these capabilities to add speech support to apps and agents built in Microsoft Foundry projects. For example:
 
 - Creating an application to transcribe recorded calls or meetings.
@@ -32,6 +41,8 @@ import azure.cognitiveservices.speech as speech_sdk
 speech_config = speech_sdk.SpeechConfig(subscription="YOUR_FOUNDRY_KEY",
                                         endpoint="YOUR_FOUNDRY_ENDPOINT")
 ```
+
+::: zone-end
 
 > [!NOTE]
 > Releases of the Python SDK prior to **1.48.2** required that you specify the *region* where your resource is deployed instead of the endpoint. With the latest release, you can use either the Foundry resource endpoint or the region.

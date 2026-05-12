@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 12
 content: |
   [!include[](includes/2-define-authentication-authorization.md)]

@@ -1,17 +1,46 @@
-Put AI to work for you by easily creating custom, automated workflows, and industry-specific solutions with expanded Copilot experiences. Using Copilot+PCs, you can automate low-value, time-consuming tasks and invest your effort in more valuable areas.
+Organizations can extend AI beyond built-in Windows experiences by creating custom solutions tailored to their workflows, data, and operational requirements.
 
-## Take advantage of AI solutions
+Copilot+ PCs support these scenarios through integration with Microsoft AI platforms, cloud-connected services, and Windows-based AI development capabilities.
 
-Copilot+ PCs help users unlock more productivity through the power of AI.
+## Extending AI across workflows
 
-- **Microsoft Copilot Studio Copilot**: Build your own copilots to serve employees and customers and automate workflows using natural language or a graphical interface.¹
+Organizations can use AI to automate repetitive processes, surface relevant information, and support role-specific workflows across departments and teams. For example, organizations might use AI agents to automate approval workflows, surface role-specific insights, or streamline internal support requests.
 
-- **Copilot for Microsoft 365**: Deliver AI capabilities at scale in Teams, Word, Outlook, PowerPoint, Excel, and other Microsoft 365 apps.²
+Examples include:
 
-- **Copilot for Security**: Quickly assess and respond to threats with a natural language security analysis tool that’s powered by AI. It works well alongside Microsoft security products like Microsoft Sentinel, Microsoft Defender, and Microsoft Intune.³
+- Automating approvals and routine tasks
+- Surfacing role-specific insights from organizational data
+- Supporting internal knowledge discovery
+- Streamlining communication and collaboration workflows
 
-### Disclaimers
+These experiences help organizations tailor AI capabilities to their operational needs while supporting more efficient and responsive workflows.
 
-1. Copilot Studio Preview is available with Microsoft 365 Business Standard, Business Premium, or Microsoft 365 E3/E5. Sold separately.
-1. Microsoft 365 Business Standard, Business Premium, or Microsoft 365 E3/E5 required. Sold separately.
-1. Copilot for Security, Microsoft Sentinel, Microsoft Defender, and Microsoft Intune are sold separately.
+## Building custom AI experiences
+
+Organizations can extend AI capabilities through tools and platforms such as:
+
+- **Microsoft Copilot Studio**—Build and manage custom AI agents and automated workflows
+- **Microsoft Foundry on Windows**—Develop, test, and deploy AI-powered applications and experiences across Windows devices and cloud services
+- **Microsoft 365 Copilot**—Integrate AI-powered assistance across Microsoft 365 applications and organizational workflows
+
+These platforms allow organizations to create AI solutions that align with their business requirements while maintaining compatibility with existing Microsoft environments.
+
+## Maintaining governance and consistency
+
+As organizations expand AI usage, maintaining governance and operational consistency becomes increasingly important.
+
+Copilot+ PCs help organizations extend AI experiences without fragmenting security, management, or compliance practices.
+
+Organizations can:
+
+- Apply consistent policies across devices and AI experiences
+- Govern how AI agents and workflows are used
+- Maintain visibility into AI-enabled processes
+- Scale AI capabilities while supporting organizational security requirements
+
+This approach helps organizations expand AI capabilities while maintaining centralized management and operational control.
+
+> [!TIP]
+> Organizations that want to build custom AI agents and workflows can use Microsoft Copilot Studio to create and manage AI-powered experiences across business scenarios.
+
+These capabilities help organizations scale AI-enabled workflows while maintaining consistent security, governance, and management practices across the business.
