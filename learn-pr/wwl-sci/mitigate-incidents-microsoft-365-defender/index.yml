@@ -7,8 +7,7 @@ metadata:
   author: KenMAG
   ms.author: kelawson
   ms.topic: module
-  ms.service: microsoft-365-security
-  ms.subservice: m365d
+  ms.service: defender-xdr
   ai-usage: ai-assisted
 title: Mitigate incidents using Microsoft Defender
 summary: Learn how the Microsoft Defender portal provides a unified view of incidents from the Microsoft Defender family of products.
