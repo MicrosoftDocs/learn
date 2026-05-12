@@ -44,7 +44,7 @@ The following components are enabled by default when you turn on the plan:
 | **Kubernetes API access** | Required for agentless container posture management, runtime vulnerability assessment, and response actions. |
 | **Registry access** | Enables agentless vulnerability assessment for images stored in ACR. |
 
-:::image type="content" source="../media/containers-settings-monitoring.png" alt-text="Screenshot of the Defender for Containers Settings pane showing components available for enablement.":::
+:::image type="content" source="../media/containers-settings-monitoring.png" alt-text="Screenshot of the Defender for Containers Settings pane showing components available for enablement." lightbox="../media/containers-settings-monitoring.png":::
 
 3. Select **Continue**.
 4. Review the monitoring coverage page to see what resources are protected.
@@ -75,8 +75,8 @@ After you enable the plan and its components, verify that the Defender sensor an
 1. In Defender for Cloud, select **Recommendations** in the left menu.
 2. Filter recommendations by **Resource type** and select **Kubernetes services**.
 3. Look for the following recommendations:
-   - **Azure Kubernetes Service clusters should have Defender profile enabled—identifies clusters that are missing the Defender sensor.
-   - **Azure Policy for Kubernetes should be installed and enabled on your clusters—identifies clusters missing the Azure Policy add-on.
+   - **Azure Kubernetes Service clusters should have Defender profile enabled** - identifies clusters that are missing the Defender sensor.
+   - **Azure Policy for Kubernetes should be installed and enabled on your clusters**  - identifies clusters missing the Azure Policy add-on.
 
 Clusters that appear under either recommendation haven't yet received the corresponding component. Select a recommendation, choose the affected clusters, and select **Fix** to trigger deployment.
 

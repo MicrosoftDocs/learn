@@ -54,7 +54,7 @@ To configure drift policies:
 2. Select **Containers drift policy**.
 3. Select the rule you want to configure, or select the **Default binary drift** rule to set a subscription-wide default.
 4. For each rule, define:
-   - **Action—Choose **Drift detection alert** to generate an alert, **Drift detection blocking** to block execution, or **Ignore drift detection** to exclude matched containers.
+   - **Action** - Choose **Drift detection alert** to generate an alert, **Drift detection blocking** to block execution, or **Ignore drift detection** to exclude matched containers.
    - **Cloud scope** - Select the Azure subscriptions where the rule applies.
    - **Resource scope** - Add conditions based on container name, image name, namespace, pod labels, or cluster name to target specific workloads.
    - **Allowlist for processes** - Specify process names that are permitted to run even if they're not in the original image.
