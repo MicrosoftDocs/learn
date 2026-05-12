@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-azure-arc-servers.introduction
+metadata:
+  title: Introduction
+  description: Introduction to managing security for Arc-enabled hybrid servers, covering the security gaps addressed when on-premises servers are enrolled in Azure Arc without security controls applied.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
