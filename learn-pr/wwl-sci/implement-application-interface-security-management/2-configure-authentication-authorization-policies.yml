@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-interface-security-management.configure-authentication-authorization-policies
+metadata:
+  title: Configure API authentication and authorization policies
+  description: Configure subscription key management, JSON Web Token (JWT) validation, and Microsoft Entra ID token policies to control who can call APIs in Azure API Management.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure API authentication and authorization policies
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-configure-authentication-authorization-policies.md)]

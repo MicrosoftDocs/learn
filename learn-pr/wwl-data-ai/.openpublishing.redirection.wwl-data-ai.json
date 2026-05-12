@@ -5308,6 +5308,66 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-data-movement-transformation-azure-data-factory/5a-exercise-integrate-notebook-azure-synapse-pipelines.yml",
       "redirect_url": "/azure/data-factory/quickstart-get-started"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/2-describe.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/3-define-architecture.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/4-exercise-identify-architecture-components.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/5-design-ingestion-patterns-for-warhouse.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/6-understand-data-storage.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/6a-understand-file-formats-structure-modern-data-warehouse.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/7-prepare-transform-data.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/8-serve-data-for-analysis.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/9-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/10-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }
