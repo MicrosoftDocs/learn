@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.detect-container-risks-defender-containers
+metadata:
+  title: Detect Container Risks Using Microsoft Defender for Containers
+  description: "Detect misconfigurations and runtime risks across container workloads using Microsoft Defender for Containers. Enable and configure the Defender for Containers plan, and assess container image vulnerabilities in Azure Container Registry. Then respond to runtime threat alerts and security posture recommendations for Azure Kubernetes Service (AKS) clusters."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Detect container risks using Microsoft Defender for Containers
+summary: Detect misconfigurations and runtime risks across container workloads using Microsoft Defender for Containers. Enable and configure the Defender for Containers plan, and assess container image vulnerabilities in Azure Container Registry. Then respond to runtime threat alerts and security posture recommendations for Azure Kubernetes Service (AKS) clusters.
+abstract: |
+  After completing this module, you can:
+    - Describe the architecture and protection pillars of Microsoft Defender for Containers
+    - Enable and configure the Defender for Containers plan in Microsoft Defender for Cloud
+    - Evaluate container image vulnerability findings from Azure Container Registry (ACR) scanning
+    - Interpret runtime threat alerts and security posture recommendations for AKS clusters
+prerequisites: |
+  - Familiarity with Azure networking concepts including virtual networks and subnets
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+  - Basic understanding of container concepts and Azure Kubernetes Service
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - defender-for-cloud
+  - azure-kubernetes-service
+  - azure-container-registry
+subjects:
+  - security
+  - cloud-security
+  - containers
+units:
+- learn.wwl.detect-container-risks-defender-containers.introduction
+- learn.wwl.detect-container-risks-defender-containers.explore-defender-for-containers
+- learn.wwl.detect-container-risks-defender-containers.enable-configure-defender-containers
+- learn.wwl.detect-container-risks-defender-containers.assess-container-image-vulnerabilities
+- learn.wwl.detect-container-risks-defender-containers.detect-runtime-threats-misconfigurations
+- learn.wwl.detect-container-risks-defender-containers.knowledge-check
+- learn.wwl.detect-container-risks-defender-containers.summary
+badge:
+  uid: learn.wwl.detect-container-risks-defender-containers.badge
