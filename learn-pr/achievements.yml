@@ -7620,6 +7620,11 @@ achievements:
   title: Introduction to Azure Private Link
   summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
   iconUrl: /training/achievements/introduction-to-azure-private-link.svg
+- uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.badge
+  type: badge
+  title: Understand data warehouse developer features of Azure Synapse Analytics
+  summary: Learn about the language capabilities that are available to create data warehouses in Azure Synapse Analytics.
+  iconUrl: /training/achievements/understand-data-warehouse-developer-features-of-azure-synapse-analytics.svg
 - uid: learn.introduction-azure-virtual-wan.badge
   type: badge 
   title: Introduction to Azure Virtual WAN
