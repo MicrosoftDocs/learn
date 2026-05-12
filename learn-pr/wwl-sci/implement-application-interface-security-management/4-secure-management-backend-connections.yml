@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-interface-security-management.secure-management-backend-connections
+metadata:
+  title: Secure API Management backend connections
+  description: Enforce client certificate authentication and mutual Transport Layer Security (TLS) for backend connections, and manage certificates through Azure Key Vault integration.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Secure API Management backend connections
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-secure-management-backend-connections.md)]
