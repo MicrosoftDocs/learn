@@ -37,7 +37,7 @@ The policy validates certificates by one of two methods:
 - **Thumbprint**: Matches the presented certificate against a specific known thumbprint. Use this for tightly controlled environments where you manage the exact set of trusted certificates.
 - **Issuer and subject**: Validates that the certificate was issued by a trusted CA and matches an expected subject name. Use this when you operate a CA that issues certificates to known partners, so that any certificate issued by your CA with the correct subject passes validation automatically.
 
-Set `validate-revocation`, `validate-not-before`, and `validate-not-after` to `true` in production. These checks confirm the certificate isn't been revoked, isn't being used before its valid start date, and isn't expired.
+Set `validate-revocation`, `validate-not-before`, and `validate-not-after` to `true` in production. These checks confirm the certificate hasn't been revoked, isn't being used before its valid start date, and isn't expired.
 
 ## Establish mutual TLS for two-way authentication
 
