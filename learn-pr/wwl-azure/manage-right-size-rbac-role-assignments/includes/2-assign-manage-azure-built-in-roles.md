@@ -69,7 +69,7 @@ Once you confirm the required scope and role, follow these steps to assign Virtu
 5. Select **Review + assign**
 6. Return to **Access control (IAM)** → **Role assignments** to verify the new assignment appears
 
-If the engineer previously had Contributor at subscription scope, remove the over-broad assignment:
+   If the engineer previously had Contributor at subscription scope, remove the over-broad assignment:
 
 7. At the subscription scope, navigate to **Access control (IAM)** → **Role assignments**
 8. Find the engineer's existing Contributor assignment
