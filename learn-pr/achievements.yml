@@ -1502,6 +1502,11 @@ achievements:
   title: Explore Kubernetes tooling
   summary: Explore Kubernetes tooling
   iconUrl: /training/achievements/4-explore-kubernetes-tooling.svg
+- uid: learn.wwl.explore-azure-synapse-studio.badge
+  type: badge
+  title: Explore Azure Synapse Studio
+  summary: Take a tour of the core application used to interact with the various components of Azure Synapse Analytics.
+  iconUrl: /training/achievements/explore-azure-synapse-studio.svg
 - uid: learn.wwl.implement-azure-kubernetes-service-aks.badge
   type: badge
   title: Implement Azure Kubernetes Service (AKS)
