@@ -17,7 +17,7 @@ Traditional backup systems treat the backup administrator as a trusted principal
 
 **Soft delete** creates a safety net for deleted backup items. When backup data is deleted—whether by an administrator, an attacker, or accidental user action—the recovery points enter a soft-deleted state instead of being immediately purged. During the soft delete retention period, you can recover the data at no extra cost. The data remains in Azure storage; only the deletion is reversed.
 
-Azure Backup enforces soft delete by default across all public Azure regions as part of its **Secure by default** platform commitment. In regions where this enforcement is generally available, soft delete can't be disabled from the Azure portal for any vault. In regions where it's in preview, new vaults have soft delete enabled and enforced by default.
+Azure Backup enforces soft delete by default across all global Azure regions as part of its **Secure by default** platform commitment. In regions where this enforcement is generally available, soft delete can't be disabled from the Azure portal for any vault. In regions where it's in preview, new vaults have soft delete enabled and enforced by default.
 
 Within this baseline, you configure the **retention period** and the **always-on** setting:
 
