@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Output format and context."
       isCorrect: false
-      explanation: "Output format controls the structure of the generated file. Context affects values like region. Both elements are missing from the prompt, but they do not control whether tags are included or public access is disabled."
+      explanation: "Output format controls the structure of the generated file. Context affects values like region. Both elements are missing from the prompt, but they don't control whether tags are included or public access is disabled."
     - content: "Requirements and constraints."
       isCorrect: true
       explanation: "Requirements tell Copilot what the resource must have, such as tags and a parameterized location. Constraints tell Copilot what to avoid, such as enabling public blob access. Without both, Copilot applies its defaults, which may not match security or operational standards."
@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "A 'set -e' directive at the top of the script to exit immediately on any failure."
       isCorrect: false
-      explanation: "'set -e' stops the script on the first error but does not prevent the error from occurring. It makes the failure visible rather than making the script safe to rerun."
+      explanation: "'set -e' stops the script on the first error but doesn't prevent the error from occurring. It makes the failure visible rather than making the script safe to rerun."
     - content: "An existence check before each resource creation command so the script skips resources that already exist."
       isCorrect: true
       explanation: "This is the idempotency pattern: check whether a resource exists before trying to create it. If it exists, print a skip message and continue. This makes the script safe to run multiple times without failure."
@@ -51,30 +51,30 @@ quiz:
     choices:
     - content: "The MCP server changed the prompt before sending it to the language model."
       isCorrect: false
-      explanation: "The MCP server does not modify prompts. It provides the language model with access to live schema data from the Bicep type registry, which the model uses when generating resource definitions."
+      explanation: "The MCP server doesn't modify prompts. It provides the language model with access to live schema data from the Bicep type registry, which the model uses when generating resource definitions."
     - content: "The MCP server queried the live Bicep type registry and provided Copilot with the current stable API version for the Azure Firewall resource type."
       isCorrect: true
       explanation: "The Bicep MCP server connects Copilot to the live type registry. This gives Copilot access to current API versions, required properties, and deprecation notices that its training data may not reflect."
     - content: "The engineer's VS Code extension was updated and reset the default API version preferences."
       isCorrect: false
-      explanation: "VS Code extensions do not control which API versions Copilot uses in generated Bicep. The API version in Copilot's output comes from its training data or, when enabled, from live schema data provided by the Bicep MCP server."
+      explanation: "VS Code extensions don't control which API versions Copilot uses in generated Bicep. The API version in Copilot's output comes from its training data or, when enabled, from live schema data provided by the Bicep MCP server."
   - content: "A security review finds that a Node.js application's container image contains dev dependencies, build tools, and source maps in the final image, inflating its size and attack surface. Which GitHub Copilot prompt approach most directly fixes this?"
     choices:
     - content: "Ask Copilot to add a HEALTHCHECK instruction to the existing single-stage Dockerfile."
       isCorrect: false
-      explanation: "A HEALTHCHECK lets Kubernetes or Docker know when the container is ready, but it does not affect what is included in the image or reduce the attack surface."
+      explanation: "A HEALTHCHECK lets Kubernetes or Docker know when the container is ready, but it doesn't affect what is included in the image or reduce the attack surface."
     - content: "Ask Copilot to generate a multi-stage Dockerfile that copies only the production artifacts from the build stage into a clean runtime image."
       isCorrect: true
       explanation: "Multi-stage builds separate the build environment from the runtime environment. Only the files needed to run the application are copied into the final image, excluding dev dependencies, build tools, and source maps."
-    - content: "Ask Copilot to add a .dockerignore file that excludes the test directory from the build context."
+    - content: "Ask Copilot to add a .Dockerignore file that excludes the test directory from the build context."
       isCorrect: false
-      explanation: "A .dockerignore file reduces the build context sent to the Docker daemon, but it does not separate build-time dependencies from runtime dependencies. Dev packages included in a single-stage build remain in the final image."
+      explanation: "A .Dockerignore file reduces the build context sent to the Docker daemon, but it doesn't separate build-time dependencies from runtime dependencies. Dev packages included in a single-stage build remain in the final image."
   - content: "A platform team wants to replace Azure service principal secrets stored in GitHub Secrets with a more secure authentication method for their GitHub Actions IaC deployment workflows. Which approach should they ask GitHub Copilot to implement?"
     choices:
     - content: "Store the service principal password as an encrypted GitHub Secret and rotate it every 90 days."
       isCorrect: false
-      explanation: "Rotating secrets reduces the window of exposure but does not eliminate the risk of a stored secret being leaked. The secret must still be stored, managed, and rotated, which creates ongoing operational burden."
-    - content: "Use OIDC federation with the azure/login action so GitHub issues short-lived tokens that Azure trusts directly, eliminating the need for a stored secret."
+      explanation: "Rotating secrets reduces the window of exposure but doesn't eliminate the risk of a stored secret being leaked. The secret must still be stored, managed, and rotated, which creates ongoing operational burden."
+    - content: "Use OIDC federation with the Azure/login action so GitHub issues short-lived tokens that Azure trusts directly, eliminating the need for a stored secret."
       isCorrect: true
       explanation: "OIDC federation removes the password entirely. GitHub's identity provider issues a short-lived token scoped to the specific repository and branch. Azure trusts the token directly through a federated credential configuration. No secret string needs to be stored or rotated."
     - content: "Hardcode the service principal credentials in the workflow YAML and restrict repository access to trusted team members."
@@ -84,21 +84,21 @@ quiz:
     choices:
     - content: "Paste the updated template into Copilot and ask it to generate a plain-language architecture overview."
       isCorrect: false
-      explanation: "An architecture overview describes what the full template deploys, not what changed between versions. It would not highlight the subnet resize, new resource, or tag addition as distinct changes with their reasons and impact."
+      explanation: "An architecture overview describes what the full template deploys, not what changed between versions. It wouldn't highlight the subnet resize, new resource, or tag addition as distinct changes with their reasons and impact."
     - content: "Paste both the old and new templates into Copilot and ask it to generate a change summary grouped by category, with the likely reason and deployment impact for each change."
       isCorrect: true
       explanation: "The change summary prompt compares two template versions and produces a structured report of what changed, why it likely changed, and what impact it has on existing deployments. This output is directly usable as a pull request description."
     - content: "Ask Copilot to add @description() decorators to the parameters in the updated template."
       isCorrect: false
-      explanation: "@description() decorators document what individual parameters control. They are useful for parameter reference documentation but do not describe differences between template versions or explain why changes were made."
-  - content: "A security analyst needs to identify source IP addresses generating the most denied traffic through Azure Firewall over the last 24 hours, and view the results as a bar chart in Log Analytics. The analyst is not familiar with KQL. What should they ask GitHub Copilot to produce?"
+      explanation: "@description() decorators document what individual parameters control. They're useful for parameter reference documentation but don't describe differences between template versions or explain why changes were made."
+  - content: "A security analyst needs to identify source IP addresses generating the most denied traffic through Azure Firewall over the last 24 hours, and view the results as a bar chart in Log Analytics. The analyst isn't familiar with KQL. What should they ask GitHub Copilot to produce?"
     choices:
     - content: "Export the Azure Firewall diagnostic logs to a JSON file and paste them into Copilot Chat for direct analysis."
       isCorrect: false
-      explanation: "Pasting log data into Copilot Chat produces a one-time analysis in the chat window. It does not create a reusable query in Log Analytics, and the results cannot be visualized as a bar chart or scheduled to run again."
+      explanation: "Pasting log data into Copilot Chat produces a one-time analysis in the chat window. It doesn't create a reusable query in Log Analytics, and the results can't be visualized as a bar chart or scheduled to run again."
     - content: "A KQL query for the AzureDiagnostics table that filters for denied Firewall connections in the last 24 hours, groups by source IP, sorts by count descending, and renders a bar chart."
       isCorrect: true
       explanation: "Copilot generates KQL queries from natural language descriptions. A query targeting AzureDiagnostics with filters for the Firewall category, Deny action, and a 24-hour time window, grouped by source IP and rendered as a bar chart, runs directly in Log Analytics and can be saved and reused."
     - content: "An Azure CLI command that lists all deny rules currently configured on the Azure Firewall."
       isCorrect: false
-      explanation: "Firewall deny rules define the policy configuration. They are not the same as connection log entries, which record actual traffic that was evaluated. Listing rules does not show which source IPs generated the most denied traffic."
+      explanation: "Firewall deny rules define the policy configuration. They aren't the same as connection log entries, which record actual traffic that was evaluated. Listing rules doesn't show which source IPs generated the most denied traffic."
