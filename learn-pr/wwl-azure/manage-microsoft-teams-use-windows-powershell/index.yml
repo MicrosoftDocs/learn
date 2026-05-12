@@ -3,7 +3,7 @@ uid: learn.wwl.manage-microsoft-teams-use-windows-powershell
 metadata:
   title: Manage Microsoft Teams by using Windows PowerShell
   description: "This module explains how to use Microsoft Teams PowerShell module to perform tasks such as creating teams and managing user permissions."
-  ms.date: 05/13/2026
+  ms.date: 05/12/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module

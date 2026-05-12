@@ -3,7 +3,7 @@ uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-p
 metadata:
   title: Manage users, groups, and licenses in Microsoft Entra ID by using Windows PowerShell
   description: "This module covers how to give access to the services in Microsoft 365, so that you can create user accounts and then assign licenses that provide access to the services."
-  ms.date: 05/13/2026
+  ms.date: 05/12/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
