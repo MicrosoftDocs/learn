@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-right-size-rbac-role-assignments.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of RBAC role assignment, custom role creation, and overprivilege remediation.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's security team needs to grant a junior administrator the ability to view Azure Virtual Machine configurations and status across a resource group, but not start, stop, or modify them. Which role assignment follows the principle of least privilege?"
+    choices:
+    - content: "Assign the Virtual Machine Contributor role at the subscription scope."
+      isCorrect: false
+      explanation: "Incorrect. The Virtual Machine Contributor role grants the ability to manage virtual machines, including starting and stopping them. Assigning it at subscription scope grants more permissions across more resources than the junior administrator needs."
+    - content: "Assign the Reader role at the resource group scope."
+      isCorrect: true
+      explanation: "Correct. The Reader role grants read-only access to all resources in scope without allowing any modifications or control operations. Assigning it at the resource group scope limits access to the intended group of resources rather than the entire subscription."
+    - content: "Assign the Contributor role at the resource group scope."
+      isCorrect: false
+      explanation: "Incorrect. The Contributor role grants full management permissions to create, modify, and delete resources. Complete control violates least privilege by granting far more than view-only access."
+    - content: "Assign the Owner role at the resource scope for each virtual machine."
+      isCorrect: false
+      explanation: "Incorrect. The Owner role grants full permissions including the ability to assign roles. Granting Owner per resource is more work and grants more access than the task requires."
+  - content: "A developer needs to perform a specific set of Azure Storage data plane operations. No existing built-in Azure role grants exactly the required permissions without also granting extra operations the developer shouldn't have. What should the security engineer create?"
+    choices:
+    - content: "A Microsoft Entra custom role scoped to the storage account resource."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Entra custom roles govern Microsoft Entra directory operations—such as managing users, groups, and directory settings. They don't control Azure resource data plane operations like Azure Storage access."
+    - content: "A custom Azure RBAC role that specifies only the required actions and data actions."
+      isCorrect: true
+      explanation: "Correct. Custom Azure RBAC roles let you define exactly the actions (control plane) and data actions (data plane) required, assigning the role at the appropriate scope. Accurate scope assignment provides minimum necessary permissions without the excess permissions that come with broader built-in roles."
+    - content: "An application registration with a service principal and a broad set of Microsoft Graph permissions."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Graph permissions govern access to Microsoft 365 and Microsoft Entra data, not Azure Storage data plane operations."
+    - content: "An Azure Policy definition that allows the specific storage operations."
+      isCorrect: false
+      explanation: "Incorrect. Azure Policy governs resource configurations and compliance. It doesn't grant or control identity permissions for data plane operations."
+  - content: "A Microsoft Entra access review is configured for Azure subscription Owner role assignments. When the review period ends, some reviewers take no action. What autoapply setting enforces the least-privilege outcome for nonresponses?"
+    choices:
+    - content: "Set nonresponse behavior to No change—preserve existing assignments until the next review."
+      isCorrect: false
+      explanation: "Incorrect. No change preserves overprivileged assignments for reviewers who don't respond, which defeats the purpose of the access review as a governance control."
+    - content: "Set nonresponse behavior to Remove access—revoke the role assignment when no decision is made."
+      isCorrect: true
+      explanation: "Correct. Configuring nonresponse to remove access enforces a default-deny outcome: if a reviewer doesn't explicitly confirm that access is still needed, the assignment is revoked. Revoked access enforces least privilege as the baseline rather than requiring active work to remove excess access."
+    - content: "Extend the review period to give reviewers more time before applying results."
+      isCorrect: false
+      explanation: "Incorrect. Extending the review period delays remediation and doesn't enforce a governance outcome. The access review configuration should be designed to produce a least-privilege result when the review period ends."
+    - content: "Reassign nonresponded reviews to the subscription owner for a second review."
+      isCorrect: false
+      explanation: "Incorrect. Reassigning to the subscription owner introduces delay and doesn't guarantee a least-privilege outcome. The autoapplied setting removes the dependency on reviewer follow-up."
