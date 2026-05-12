@@ -20,25 +20,27 @@ Security Copilot in Microsoft Entra includes both a standalone experience and em
 
 Security Copilot supports a wide range of identity and access management scenarios across multiple Microsoft Entra products. The following describes the product areas and the types of tasks you can accomplish using Security Copilot in Microsoft Entra.
 
-- **Microsoft Entra ID**—Quickly retrieve and manage user, group, domain, and license information. Investigate sign-in logs and audit logs to identify suspicious activity. Explore Conditional Access policies, authentication methods, device details, and role assignments. Security Copilot can also surface Microsoft Entra recommendations and health monitoring alerts.
+- **Microsoft Entra ID**: Quickly retrieve and manage user, group, domain, and license information. Investigate sign-in logs, audit logs, and provisioning logs to identify suspicious activity. Explore Conditional Access policies, authentication methods, device details, and role assignments. Security Copilot can also surface Microsoft Entra recommendations, health monitoring alerts, and service-level agreement data.
 
-- **Microsoft Entra ID Protection**—Summarize a user's risk level, investigate risk detections, and get remediation recommendations. You can also assess application risk by analyzing workload identities and permissions.
+- **Microsoft Entra ID Protection**: Summarize a user's risk level, investigate risk detections, and get remediation recommendations. You can also assess application risk by analyzing workload identities and permissions.
 
-- **Microsoft Entra ID Governance**—Analyze access review data and decision patterns, manage access packages in entitlement management, monitor privileged access through Privileged Identity Management (PIM), and configure or troubleshoot lifecycle workflows.
+- **Microsoft Entra ID Governance**: Analyze access review data and decision patterns, manage access packages in entitlement management, monitor privileged access through Privileged Identity Management (PIM), and configure or troubleshoot lifecycle workflows.
+
+- **Microsoft Entra Internet Access and Private Access**: Investigate Global Secure Access logs and network traffic to understand how users connect to resources.
 
 ### Microsoft Entra agents
 
-Security Copilot supports specialized agents that automate repetitive identity and access management tasks and reduce manual workloads for administrators. These agents analyze your identity environment, apply best practices, and take automated actions to improve your identity security posture and operational efficiency. Each agent is grounded in a specific product area and can run on a schedule, be triggered manually, or both.
+Microsoft Entra agents are AI-powered tools that automate repetitive identity and access management tasks and reduce manual workloads for administrators. These agents analyze your identity environment, apply best practices, and take automated actions to improve your identity and access security posture and operational efficiency. Each agent is grounded in a specific product area and can run on a schedule or be triggered manually.
+
+Each agent uses a unique agent identity created when the agent is turned on. The agent identity is granted specific read and write permissions needed to perform its tasks. Administrators configure and manage agents through the Microsoft Entra admin center under the **Agents** section.
 
 Currently, the following Microsoft Entra agents are available:
 
-- **Access Review Agent**—Empowers reviewers to make fast and accurate access decisions. Working with Microsoft Entra ID Governance, this agent delivers insights and recommendations so reviewers can complete their work through a simple conversation directly inside Microsoft Teams. The agent scans the tenant for active access reviews, gathers additional context, and saves recommendations and justifications for the reviewer. Final decisions, submitted through the Teams conversation, use the reviewer's identity.
+- **Conditional Access Optimization Agent**: Ensures comprehensive user protection by analyzing Conditional Access policies and recommending improvements. The agent evaluates your current policy configuration against Microsoft best practices and Zero Trust principles, identifying gaps, overlap, and misconfigurations. It scans your tenant every 24 hours or can be triggered manually, checking for new users, applications, and agent identities that aren't protected by Conditional Access policies and provides suggested next steps, such as turning on or modifying a policy.
 
-- **Conditional Access Optimization Agent**—Ensures comprehensive user protection by analyzing Conditional Access policies and recommending improvements. The agent evaluates the current policy configuration against Microsoft best practices and Zero Trust principles, identifying gaps, overlap, and misconfigurations.
+- **Identity Risk Management Agent (Preview)**: Helps administrators investigate potential risks in Microsoft Entra ID Protection, learn about potential effects, and take decisive action to protect the organization's critical assets. The agent runs every 24 hours, can be triggered manually, or can provide continuous monitoring.
 
-- **Identity Risk Management Agent (Preview)**—Helps administrators investigate potential risks in Microsoft Entra ID Protection, learn about potential effects, and take decisive action to protect the organization's critical assets.
-
-Each agent uses a unique agent identity created when the agent is turned on. The agent identity is granted specific read and write permissions needed to perform its tasks. Administrators configure and manage agents through the Microsoft Entra admin center under the **Agents** section. Discovery of Microsoft and partner-built agents is also available through the Security Store, which is embedded directly in the Microsoft Entra admin center.
+Discovery of Microsoft and partner-built agents is also available through the Security Store, which is embedded directly in the Microsoft Entra admin center. The Security Store provides a centralized place to discover, purchase, and deploy agents and solutions.
 
 ### Providing feedback
 
