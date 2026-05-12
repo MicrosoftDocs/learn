@@ -6620,6 +6620,11 @@ achievements:
   title: Choose the best networking plugin for AKS
   summary: Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.survey-components-of-azure-synapse-analytics.badge
+  type: badge
+  title: Survey the Components of Azure Synapse Analytics
+  summary: Learn the various components of Azure Synapse Analytics that enables you to build your analytical solutions in one place.
+  iconUrl: /training/achievements/survey-the-components-of-azure-synapse-analytics.svg
 - uid: learn.aks-cluster-architecture.trophy
   type: trophy
   title: Azure Kubernetes Service (AKS) cluster architecture and operations
