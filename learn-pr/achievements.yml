@@ -8031,3 +8031,8 @@ achievements:
   title: Run Azure Databricks notebooks in Azure Data Factory
   summary: Learn how to run Azure Databricks notebooks in Azure Data Factory to orchestrate data workflows and automate data processing tasks.
   iconUrl: /training/achievements/create-production-workloads-on-azure-databricks-with-azure-data-factory.svg
+- uid: learn.wwl.priva-data-privacy-solutions.trophy
+  type: trophy
+  title: Implement and manage data privacy with Microsoft Priva
+  summary: Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use Privacy Risk Management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.
+  iconUrl: /training/achievements/generic-trophy.svg
