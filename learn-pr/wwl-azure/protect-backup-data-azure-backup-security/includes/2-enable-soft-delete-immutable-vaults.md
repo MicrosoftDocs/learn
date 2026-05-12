@@ -84,7 +84,7 @@ Azure Backup evaluates each vault's configuration and assigns a security posture
 The Excellent tier requires two elements: a deletion protection mechanism (either locked immutability or always-on soft delete), and Multi-User Authorization. The deletion protection mechanisms—soft delete and immutability—protect recovery points after an attack begins. Multi-User Authorization prevents a single compromised credential from disabling those protections.
 
 > [!NOTE]
-> With Secure by default platform enforcement, all new vaults in public Azure regions already start at the **Good** tier because soft delete is enforced. Configuring locked immutability or always-on soft delete combined with Multi-User Authorization is still required to reach the **Excellent** tier.
+> With Secure by default platform enforcement, all new vaults in global Azure regions already start at the **Good** tier because soft delete is enforced. Configuring locked immutability or always-on soft delete combined with Multi-User Authorization is still required to reach the **Excellent** tier.
 
 For Contoso's production environment, you configure always-on soft delete with 90-day retention and locked vault immutability, reaching the Excellent tier's first path: both deletion protections active at their strongest irreversible settings. The next unit completes the Excellent tier by adding Multi-User Authorization with Resource Guard.
 
