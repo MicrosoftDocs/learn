@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disk-encryption-azure-virtual-machines.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Azure VM disk encryption options, encryption at host configuration, and confidential disk encryption.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which disk encryption approach is recommended for new Azure virtual machines and provides end-to-end encryption that covers temp disks, disk caches, and data flows to storage?"
+    choices:
+    - content: "Azure Disk Encryption (ADE) using BitLocker or DM-Crypt"
+      isCorrect: false
+      explanation: "Azure Disk Encryption is scheduled for retirement on September 15, 2028. For new VMs, encryption at host is the recommended approach because it covers temp disks, disk caches, and data flows to storage clusters without requiring a VM extension."
+    - content: "Encryption at host"
+      isCorrect: true
+      explanation: "Encryption at host is the currently recommended approach for new Azure virtual machines. It enhances server-side encryption by encrypting temp disks and disk caches at rest, with all data flowing encrypted to storage clusters, providing true end-to-end encryption."
+    - content: "Server-side encryption with platform-managed keys"
+      isCorrect: false
+      explanation: "Server-side encryption with platform-managed keys is always enabled automatically and encrypts data on managed disks, but it doesn't encrypt temp disks or disk caches. Encryption at host is needed for complete end-to-end coverage."
+  - content: "You need to use your organization's own keys to encrypt Azure VM managed disks, with the keys managed in Azure Key Vault. What Azure resource must you create to associate the customer-managed key with the VM's disks?"
+    choices:
+    - content: "Key Vault access policy configured for the VM's managed identity"
+      isCorrect: false
+      explanation: "A Key Vault access policy grants a managed identity permission to use keys, but it doesn't establish the association between the key and the VM's disks. A Disk Encryption Set is the required resource that holds the key reference and is linked to managed disks."
+    - content: "Disk Encryption Set"
+      isCorrect: true
+      explanation: "A Disk Encryption Set is an Azure resource that references a customer-managed key in Azure Key Vault (or Azure Key Vault Managed HSM). You associate the Disk Encryption Set with managed disks during VM creation or by updating existing disk properties."
+    - content: "Key encryption key (KEK) in Azure Key Vault"
+      isCorrect: false
+      explanation: "A key encryption key (KEK) is used in Azure Disk Encryption to wrap the disk encryption keys—it's part of the ADE encryption model. For encryption at host with customer-managed keys, the required resource is a Disk Encryption Set linked to the customer-managed key."
+  - content: "A confidential VM uses which mechanism to bind disk encryption keys, ensuring that protected disk content is accessible only to that specific VM?"
+    choices:
+    - content: "A Disk Encryption Set linked to the VM's managed identity"
+      isCorrect: false
+      explanation: "Disk Encryption Sets are used for encryption at host with customer-managed keys on standard VMs. For confidential VMs, disk encryption keys are bound to the VM's virtual Trusted Platform Module (vTPM), not to a Disk Encryption Set."
+    - content: "Azure Key Vault with private endpoint and firewall restriction"
+      isCorrect: false
+      explanation: "Key Vault firewall and private endpoint control network access to the vault but don't provide workload isolation. Confidential disk encryption uses vTPM key binding to ensure only the specific VM can access its encrypted disk contents."
+    - content: "The VM's virtual Trusted Platform Module (vTPM)"
+      isCorrect: true
+      explanation: "Confidential disk encryption binds disk encryption keys to the virtual machine's vTPM. Bound encryption keys make protected disk content accessible only to that specific VM, even from a hardware perspective—the keys can't be extracted by the hypervisor or host OS."
