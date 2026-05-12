@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-interface-security-management.implement-network-security-threat-protection
+metadata:
+  title: Implement API network security and threat protection
+  description: Implement IP filtering, rate limiting, quota policies, and virtual network integration, allowing you to control API consumption and reduce the gateway attack surface.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Implement API network security and threat protection
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-implement-network-security-threat-protection.md)]
