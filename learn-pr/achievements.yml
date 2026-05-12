@@ -2603,6 +2603,11 @@ achievements:
   title: Choose the right Azure services by examining SLAs and service lifecycle
   summary: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning.
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.badge
+  type: badge
+  title: Integrate SQL and Apache Spark pools in Azure Synapse Analytics
+  summary: Learn how to integrate SQL and Apache Spark pools in Azure Synapse Analytics.
+  iconUrl: /training/achievements/integrate-sql-and-apache-spark-pools-in-azure-synapse-analytics.svg
 - uid: learn.azure.protect-against-security-threats-azure.badge
   type: badge
   title: Protect against security threats on Azure
