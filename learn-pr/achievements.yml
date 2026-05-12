@@ -502,6 +502,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.badge
+  type: badge
+  title: Design a Modern Data Warehouse using Azure Synapse Analytics
+  summary: Learn how Azure Synapse Analytics enables you to build Data Warehouses using modern architecture patterns.
+  iconUrl: /training/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
 - uid: learn.wwl.get-started-openai.badge   
   type: badge   
   title: Get started with Azure OpenAI Service   
