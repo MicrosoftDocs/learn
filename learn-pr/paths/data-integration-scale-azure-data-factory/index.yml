@@ -30,7 +30,6 @@ modules:
 - learn.wwl.integrate-data-azure-data-factory
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory
 - learn.wwl.perform-code-free-transformation-scale-azure-data-factory
-- learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory
 - learn.wwl.operationalize-your-azure-data-factory-pipelines
