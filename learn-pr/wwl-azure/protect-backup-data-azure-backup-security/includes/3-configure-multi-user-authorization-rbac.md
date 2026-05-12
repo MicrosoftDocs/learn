@@ -68,24 +68,24 @@ The security administrator creates the Resource Guard in a subscription separate
 
 The vault administrator needs read access to the Resource Guard to see that it exists and to submit approval requests. They must not have **Contributor**, **Backup MUA Admin**, or **Backup MUA Operator** permissions on the Resource Guard—any of these roles allow self-approval of critical operations.
 
-11. Navigate to the Resource Guard you created
-12. Select **Access control (IAM)**
-13. Select **+ Add role assignment**
-14. On the **Role** tab, select **Reader**
-15. On the **Members** tab, select the vault administrator account or the service principal used for backup operations
-16. Select **Review + assign**
+1. Navigate to the Resource Guard you created
+2. Select **Access control (IAM)**
+3. Select **+ Add role assignment**
+4. On the **Role** tab, select **Reader**
+5. On the **Members** tab, select the vault administrator account or the service principal used for backup operations
+6. Select **Review + assign**
 
 **Step 3: Configure the vault to use MUA**
 
 The vault administrator configures the vault to enforce MUA using the Resource Guard:
 
-17. Sign in as the vault administrator
-18. Navigate to the Recovery Services vault
-19. Under **Settings**, select **Properties**
-20. Under **Multi-User Authorization**, select **Update**
-21. Select **Protect with Resource Guard**
-22. Use the cross-subscription resource picker to select the Resource Guard created in Step 1
-23. Select **Save**
+1. Sign in as the vault administrator
+2. Navigate to the Recovery Services vault
+3. Under **Settings**, select **Properties**
+4. Under **Multi-User Authorization**, select **Update**
+5. Select **Protect with Resource Guard**
+6. Use the cross-subscription resource picker to select the Resource Guard created in Step 1
+7. Select **Save**
 
 After this configuration, any attempt by the vault administrator to perform a protected operation generates a request that requires Resource Guard owner approval. The request includes context about the operation and the identity of the user requesting it.
 
