@@ -23,7 +23,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
 
 Three things to notice: the `@` symbol separates the resource type from the API version, parameters are declared at the top, and resource references use symbolic names rather than resource IDs. These patterns matter when reviewing Copilot's output.
 
-This unit focuses on using Copilot to generate, extend, and optimize Bicep templates. For a full Bicep introduction, see [Introduction to Bicep](https://learn.microsoft.com/en-us/training/modules/implement-bicep/1-introduction).
+This unit focuses on using Copilot to generate, extend, and optimize Bicep templates. For a full Bicep introduction, see [Introduction to Bicep](/training/modules/implement-bicep/1-introduction).
 
 ## Generating templates from natural language prompts
 
