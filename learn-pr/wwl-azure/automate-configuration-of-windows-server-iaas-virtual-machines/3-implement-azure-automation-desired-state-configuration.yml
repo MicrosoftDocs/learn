@@ -4,9 +4,9 @@ title: Implement Azure Automation with DSC
 metadata:
   title: Implement Azure Automation with DSC
   description: "Implement Azure Automation with DSC"
-  ms.date: 12/24/2024
-  author: wwlpublish
-  ms.author: tonyj
+  ms.date: 01/23/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 14
