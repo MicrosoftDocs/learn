@@ -3,7 +3,7 @@ uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
 metadata:
   title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Hub"
-  ms.date: 07/20/2024
+  ms.date: 05/10/2026
   ms.update-cycle: 180-days
   author: orin-thomas
   ms.author: orthomas
@@ -34,7 +34,6 @@ prerequisites: |
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-for-azure-sphere-with-iot-hub.svg
-hidden: true
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere-iot-hub.badge
 levels:
@@ -67,4 +66,4 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.summary
-
+
