@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-infrastructure-as-code.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of IaC scanning with Defender for DevOps and Azure Policy enforcement in CI/CD pipelines.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer wants to use the Microsoft Security DevOps (MSDO) GitHub Action to scan only infrastructure as code files in a repository, excluding code scanning. Which configuration achieves this?"
+    choices:
+    - content: "Set the `tools` parameter to `template-analyzer` in the GitHub Action workflow."
+      isCorrect: false
+      explanation: "Incorrect. The `tools` parameter selects specific scanning tools by name. To scope by category rather than tool, the `categories` parameter is the correct approach—it filters scan results by type across all applicable tools."
+    - content: "Add `categories: 'IaC'` in the `with:` block of the Microsoft Security DevOps GitHub Action."
+      isCorrect: true
+      explanation: "Correct. The `categories: 'IaC'` parameter instructs the MSDO extension to run only the IaC scanning tools (including Template Analyzer for Bicep and ARM template, and Checkov for broader IaC formats) and exclude other scan categories like code quality or secret scanning. The equivalent parameter works the same way in the Azure DevOps MicrosoftSecurityDevOps@1 task."
+    - content: "Create a separate workflow file that uses file path filters to include only `.bicep` and `.json` files."
+      isCorrect: false
+      explanation: "Incorrect. File path filters control when a workflow runs (for example, only on changes to specific files), but they don't scope the scanning tools to IaC only. The `categories` parameter in the MSDO step is the correct configuration."
+    - content: "Set the severity threshold parameter to Medium to filter out non-IaC findings."
+      isCorrect: false
+      explanation: "Incorrect. Severity threshold controls which findings are reported based on their severity level, not based on scan category. A Medium threshold would still report code and secret findings if those scanners run."
+  - content: "A Bicep template passes the IaC scan in a pipeline. The deploying engineer bypasses the pipeline and uses Azure CLI to deploy the template directly to production. Which control prevents the noncompliant resource from being created?"
+    choices:
+    - content: "Microsoft Defender for DevOps agentless scanning detects the deployment and blocks it."
+      isCorrect: false
+      explanation: "Incorrect. Agentless scanning periodically scans code repositories for IaC findings. It doesn't monitor or block runtime deployments made directly to Azure outside of a pipeline."
+    - content: "PR annotations that block merging the noncompliant code would prevent the deployment."
+      isCorrect: false
+      explanation: "Incorrect. PR annotations require the change to go through a pull request. If the engineer deploys directly using Azure CLI without going through the pipeline or a PR, annotation-based controls are bypassed."
+    - content: "Azure Policy with a Deny effect assigned at management group scope blocks the noncompliant resource at the platform level."
+      isCorrect: true
+      explanation: "Correct. Azure Policy with a Deny effect evaluates every deployment request at the Azure Resource Manager layer, regardless of how the deployment is triggered. Whether a resource is deployed through a pipeline, the Azure portal, Azure CLI, or any other tool, the policy evaluates and blocks noncompliant configurations before the resource is created."
+    - content: "Enabling the MSDO extension in the Azure CLI installation would scan templates at runtime."
+      isCorrect: false
+      explanation: "Incorrect. The MSDO extension runs as a pipeline step during CI/CD execution, not as a component of the Azure CLI. There's no runtime scanning of CLI deployments by MSDO."
+  - content: "What is the recommended first step when introducing a new Azure Policy definition in a policy-as-code workflow?"
+    choices:
+    - content: "Assign the policy definition immediately with a Deny effect at management group scope to protect all environments at once."
+      isCorrect: false
+      explanation: "Incorrect. Assigning a new Deny policy at management group scope without testing first risks blocking legitimate deployments across all environments. Starting with an Audit effect in a controlled environment is the recommended approach."
+    - content: "Assign the policy definition in Audit effect in a development or test environment and review compliance results before promoting to Deny."
+      isCorrect: true
+      explanation: "Correct. The policy-as-code workflow starts with Audit mode to observe which resources would be affected without blocking any deployments. After reviewing compliance results and confirming the policy logic is correct, the engineer promotes the policy to Deny effect—first in nonproduction, then in production environments—to enforce the control without unexpected disruption."
+    - content: "Create a remediation task for the policy definition before assigning it to any scope."
+      isCorrect: false
+      explanation: "Incorrect. Remediation tasks apply to DeployIfNotExists and Modify policies after assignment, not before. They can't be created before the policy is assigned and evaluated."
+    - content: "Add the policy definition to an initiative and assign the initiative before testing the individual definition."
+      isCorrect: false
+      explanation: "Incorrect. While initiatives group multiple policies together, adding an untested policy to an initiative before verifying its behavior adds complexity and risk. Testing the individual definition first in Audit mode is the recommended practice."

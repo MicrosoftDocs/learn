@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-interface-security-management.introduction
+metadata:
+  title: Introduction
+  description: Introduction to securing Azure API Management for Contoso Retail's partner-facing API, covering authentication, network controls, backend mTLS, and AI Gateway.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-disk-encryption-azure-virtual-machines
+metadata:
+  title: Implement Disk Encryption for Azure Virtual Machines
+  description: "Select and configure the right disk encryption approach for Azure virtual machines. Compare managed disk encryption options, configure encryption at host with customer-managed keys using Disk Encryption Sets, and apply confidential disk encryption to confidential virtual machines."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: Implement disk encryption for Azure virtual machines
+summary: Select and configure the right disk encryption approach for Azure virtual machines. Compare managed disk encryption options, configure encryption at host with customer-managed keys using Disk Encryption Sets, apply confidential disk encryption to confidential virtual machines, and enforce disk encryption compliance using Azure Policy.
+abstract: |
+  After completing this module, you can:
+    - Compare Azure managed disk encryption options and select the appropriate approach for new and existing VMs
+    - Configure encryption at host with customer-managed keys using a Disk Encryption Set and Azure Key Vault
+    - Apply confidential disk encryption to confidential virtual machines
+    - Enforce disk encryption compliance using Azure Policy
+prerequisites: |
+  - Working knowledge of Azure Virtual Machines, including deploying and managing VMs
+  - Familiarity with Azure Key Vault, including creating and managing keys
+  - Understanding of Azure role-based access control (RBAC) and Azure Policy fundamentals
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-virtual-machines
+  - azure-key-vault
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.implement-disk-encryption-azure-virtual-machines.introduction
+- learn.wwl.implement-disk-encryption-azure-virtual-machines.choose-disk-encryption-option
+- learn.wwl.implement-disk-encryption-azure-virtual-machines.configure-encryption-at-host
+- learn.wwl.implement-disk-encryption-azure-virtual-machines.apply-confidential-disk-encryption
+- learn.wwl.implement-disk-encryption-azure-virtual-machines.knowledge-check
+- learn.wwl.implement-disk-encryption-azure-virtual-machines.summary
+badge:
+  uid: learn.wwl.implement-disk-encryption-azure-virtual-machines.badge

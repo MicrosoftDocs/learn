@@ -3141,7 +3141,67 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/9-transfer-data-outside-synapse-workspace-using-sql-authentication.md",
-      "redirect_url": "/training/modules/integrate-sql-apache-spark-pools-azure-synapse-analytics"
+      "redirect_url": "/azure/synapse-analytics/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/2-describe-integration-methods-between-sql.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/3-understand-use-cases-for-sql-integration.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/4-authenticate.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/5-transfer-data-between-sql-spark-pool.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/6-authenticate-between-spark-sql-pool.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/7-exercise-integrate-sql.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/8-externalize-use-of-spark-pools-within-workspace.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/10-transfer-data-outside-synapse-workspace-using-pyspark-connector.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/11-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/12-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/1-introduction.md",
@@ -5310,62 +5370,62 @@
       "redirect_url": "/azure/data-factory/quickstart-get-started"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/index.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/index.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/1-introduction.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/1-introduction.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/2-describe-integration-methods-between-sql.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/2-describe.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/3-understand-use-cases-for-sql-integration.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/3-define-architecture.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/4-authenticate.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/4-exercise-identify-architecture-components.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/5-transfer-data-between-sql-spark-pool.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/5-design-ingestion-patterns-for-warhouse.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/6-authenticate-between-spark-sql-pool.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/6-understand-data-storage.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/7-exercise-integrate-sql.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/6a-understand-file-formats-structure-modern-data-warehouse.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/8-externalize-use-of-spark-pools-within-workspace.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/7-prepare-transform-data.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/10-transfer-data-outside-synapse-workspace-using-pyspark-connector.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/8-serve-data-for-analysis.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/11-knowledge-check.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/9-knowledge-check.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/12-summary.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/10-summary.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     }

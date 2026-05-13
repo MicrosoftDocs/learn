@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-azure-arc-servers.summary
+metadata:
+  title: Summary
+  description: Summary of managing security for Arc-enabled hybrid servers, covering access control, extension security, Azure Policy enforcement, and Defender for Cloud posture monitoring.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

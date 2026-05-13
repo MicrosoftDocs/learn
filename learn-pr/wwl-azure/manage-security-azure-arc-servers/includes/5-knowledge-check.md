@@ -1,0 +1,1 @@
+You explored how to secure Arc-enabled servers using RBAC, extension controls, Azure Policy, and Microsoft Defender for Cloud. Test your understanding of these security governance concepts with the following questions.

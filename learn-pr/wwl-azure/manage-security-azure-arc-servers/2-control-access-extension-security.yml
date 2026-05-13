@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-azure-arc-servers.control-access-extension-security
+metadata:
+  title: Control access and extension security for Arc-enabled servers
+  description: Configure RBAC roles and extension allow/block lists on the Azure Connected Machine agent to prevent unauthorized extension installation on Arc-enrolled servers, providing defense in depth beyond cloud-based policy controls.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Control access and extension security for Arc-enabled servers
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-control-access-extension-security.md)]
