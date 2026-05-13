@@ -5310,6 +5310,61 @@
       "redirect_url": "/azure/data-factory/quickstart-get-started"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/2-use.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/3-understand-analytical-processes.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/4-explore-data-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/6-explore-develop-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/8-explore-orchestrate-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/10-explore-monitor-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/12-explore-manage-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/14-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/15-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/index.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
