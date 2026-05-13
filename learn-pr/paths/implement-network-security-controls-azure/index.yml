@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-network-security-controls-azure
+metadata:
+  title: Implement Network Security Controls in Azure
+  description: Implement defense-in-depth network security controls in Azure. Segment workloads to control lateral movement, centralize traffic inspection with Azure Firewall, harden remote and hybrid connectivity, and eliminate public network exposure of PaaS and AI services using private endpoints.
+  ms.date: 05/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+title: Implement network security controls in Azure
+summary: |
+  Implement defense-in-depth network security controls in Azure. Segment workloads and enforce least-privilege access using NSGs, ASGs, and Azure Virtual Network Manager. Inspect and control traffic centrally with Azure Firewall. Harden remote and hybrid connectivity and replace broad VPN access with Zero Trust application-level access using Microsoft Entra Private Access. Eliminate public exposure of PaaS and AI services using private endpoints and Azure Private Link.
+prerequisites: |
+  - Familiarity with Azure virtual networks, subnets, and basic networking concepts
+  - Experience deploying and configuring Azure resources in the Azure portal (AZ-104 level)
+  - Basic understanding of network security concepts such as firewalls, encryption, and access control
+  - Familiarity with Microsoft Entra ID and Azure role-based access control (RBAC) at a conceptual level
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-virtual-network
+  - azure-firewall
+  - azure-vpn-gateway
+  - azure-private-link
+  - entra-id
+subjects:
+  - security
+  - cloud-security
+  - networking
+modules:
+  - learn.wwl.segment-isolate-workloads-network-security-controls
+  - learn.wwl.centralize-traffic-inspection-azure-firewall
+  - learn.wwl.secure-hybrid-connectivity-azure
+  - learn.wwl.eliminate-public-exposure-paas-private-link
+trophy:
+  uid: learn.wwl.implement-network-security-controls-azure.trophy

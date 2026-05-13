@@ -1,6 +1,9 @@
 The upgraded microbiology laboratory temperature, pressure, and humidity sensor is running well on the Azure Sphere real-time core. The customer is happy, and they can run their experiments. The customer would also like to remotely monitor the lab conditions.
 
-In this unit, you will learn how to read data from the upgraded lab sensor and send the data to IoT Hub so that can be monitored.
+> [!NOTE]
+> The real-time application in this unit runs on top of **Eclipse ThreadX** (formerly known as **Azure RTOS**). Microsoft announced the contribution of Azure RTOS to the Eclipse Foundation on 21 November 2023. Eclipse ThreadX 6.4.1 was published under the MIT license on 29 February 2024, and Microsoft announced on 4 April 2024 that the transition to the Eclipse Foundation was complete. The kernel and APIs used here are unchanged. Some lab folder names and code identifiers retain the original "Azure RTOS" naming.
+
+In this unit, you will learn how to read data from the upgraded lab sensor and send the data to IoT Hub so that it can be monitored.
 
 ## Solution architecture
 
@@ -8,11 +11,11 @@ The following describes how an Azure Sphere high-level application can read data
 
 ![Inter-core communications architecture.](../media/intercore-coms.png)
 
-To recap the solution architecture introduced in the Azure RTOS lab.
+To recap the solution architecture introduced in the previous (Eclipse ThreadX / Azure RTOS) lab:
 
-1. The Azure RTOS real-time environment sensor thread runs every 2 seconds. The thread stores in memory the latest environment temperature, humidity, and pressure data.
+1. The Eclipse ThreadX (Azure RTOS) real-time environment sensor thread runs every 2 seconds. The thread stores in memory the latest environment temperature, humidity, and pressure data.
 2. The high-level telemetry streaming app requests from the real-time core the latest environment data.
-3. The Azure RTOS real-time environment service thread responses with the latest environment data.
+3. The Eclipse ThreadX (Azure RTOS) real-time environment service thread responds with the latest environment data.
 4. The high-level application serializes the environment data as JSON and sends the telemetry message to IoT Hub.
 5. Azure IoT Explorer subscribes to telemetry messages sent to IoT Hub by the device and displays the telemetry.
 6. You can also set the desired temperature for the room by setting a property. The property is set on the device via an IoT Hub device twin message.
@@ -20,7 +23,7 @@ To recap the solution architecture introduced in the Azure RTOS lab.
 
 ## Inter-core message contract
 
-There needs to be a contract that describes the shape of the data being passed between the cores. The following structure declares the inter-core contract used in this unit. You can find this contact in the **IntercoreContract** directory.
+There needs to be a contract that describes the shape of the data being passed between the cores. The following structure declares the inter-core contract used in this unit. You can find this contract in the **IntercoreContract** directory.
 
 ```c
 typedef enum
@@ -43,34 +46,51 @@ typedef struct
 
 ## Inter-core security
 
-To communicate, applications running across cores must be configured with corresponding Component IDs.
+To communicate, applications running across cores must be configured with corresponding Component IDs in both application manifests. The `AllowedApplicationConnections` capability authorizes runtime inter-core communication; it doesn't control what the development tools delete during deployment. During development, the Visual Studio Code or Visual Studio launch configuration must also list the partner component IDs in `partnerComponents` so that sideloading one app doesn't remove the other.
 
-The Component ID for the real-time application can be found in its **app_manifest.json** file.
+### Real-time inter-core capabilities
+
+The Component ID for the real-time application can be found in the real-time app's **app_manifest.json** file.
+
+```json
+{
+  "SchemaVersion": 1,
+  "Name": "demo_threadx",
+  "ComponentId": "6583cf17-d321-4d72-8283-0b7c5b56442b",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [],
+  "ApplicationType": "RealTimeCapable",
+  "Capabilities": {
+    "Gpio": [],
+    "I2cMaster": [ "ISU2" ],
+    "AllowedApplicationConnections": [ "25025d2c-66da-4448-bae1-ac26fcdd3627" ]
+  }
+}
+```
+
+This is the RTApp's `app_manifest.json`. Note `ApplicationType` is `RealTimeCapable`; the app declares the I2C master peripheral it uses to read the on-board sensor, includes an empty `Gpio` list because this RTApp doesn't reserve GPIOs, and sets `AllowedApplicationConnections` to the high-level partner app's component ID so the two apps can exchange inter-core messages. RTApp manifests use raw hardware **AppManifestValue** strings such as `ISU2`; high-level app manifests can use hardware-definition constants such as `$I2cMaster2`.
+
+### High-level inter-core capabilities
+
+The high-level application's **app_manifest.json** uses the same pattern in reverse: its **AllowedApplicationConnections** property is set to the Component ID of the Eclipse ThreadX (Azure RTOS) real-time application. The following excerpt focuses on inter-core communication; keep the other capabilities required by the IoT Hub app, such as `AllowedConnections`, `DeviceAuthentication`, GPIO, and power-control capabilities, in the actual manifest.
 
 ```json
 {
   "SchemaVersion": 1,
   "Name": "AzureSphereIoTCentral",
   "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
-  ...
-}
-```
-
-### High-level inter-core capabilities
-
-The **AllowedApplicationConnections** property in the high-level **app_manifest.json** file is set to the Component ID of the Azure RTOS real-time application.
-
-```json
-{
-    ...
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "<Your DPS ID scope>" ],
+  "Capabilities": {
     "AllowedApplicationConnections": [ "6583cf17-d321-4d72-8283-0b7c5b56442b" ]
-    ...
+  },
+  "ApplicationType": "Default"
 }
 ```
 
 ## Initializing inter-core communications
 
-In the **InitPeripheralAndHandlers** a call is made to **lp_interCoreCommunicationsEnable**, passing in the Component ID of the real-time and the inter-core callback function.
+In **InitPeripheralAndHandlers**, the high-level app calls **lp_interCoreCommunicationsEnable**, passing in the component ID of the real-time application and the inter-core callback function.
 
 The inter-core callback function will be called when a message is received from the real-time core.
 

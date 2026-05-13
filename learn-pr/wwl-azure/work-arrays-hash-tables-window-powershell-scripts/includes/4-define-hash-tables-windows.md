@@ -34,7 +34,7 @@ $servers['LON-DC1']
 ```
 
 > [!NOTE]
-> You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.
+> You only need to use single quote marks to enclose keys that contain special characters. While the hyphen, as part of a file name, isn't a special character, you could use single or double quotes to encapsulate the name if you were concerned. Use single quotes to prevent evaluation, and double quotes to allow evaluation of variables.
 
 ## Ordered dictionaries
 

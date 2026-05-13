@@ -1,4 +1,4 @@
-Microsoft Azure is a global cloud provider, meaning you can provision resources anywhere in the world. You can provision resources rapidly to meet a sudden demand, to test out a new feature, or accidentally. If you accidentally provision new resources, you may not be aware of them until it’s time for your invoice. Cost Management is a service that helps avoid those situations.
+Microsoft Azure is a global cloud provider, meaning you can provision resources anywhere in the world. You can provision resources rapidly to meet a sudden demand, to test out a new feature, or accidentally. If you accidentally provision new resources, you may not be aware of them until it’s time for your invoice. Cost Management is a set of tools that helps organizations analyze, monitor, and manage Azure costs to avoid those situations.
 
 ## What is Cost Management?
 
@@ -30,11 +30,11 @@ For example, you might set an alert at 80% of a monthly dev/test budget so your 
 
 ### Credit alerts
 
-Credit alerts notify you when your Azure credit monetary commitments are consumed. Monetary commitments are for organizations with Enterprise Agreements (EAs). Credit alerts are generated automatically at 90% and at 100% of your Azure credit balance. Whenever an alert is generated, it's reflected in cost alerts, and in the email sent to the account owners.
+Credit alerts notify you when your Azure Prepayment (previously called monetary commitment) is consumed. Azure Prepayment is for organizations with Enterprise Agreements (EAs). Credit alerts are generated automatically at 90% and at 100% of your Azure credit balance. Whenever an alert is generated, it's reflected in cost alerts, and in the email sent to the account owners.
 
 ### Department spending quota alerts
 
-Department spending quota alerts are specific to Enterprise Agreement customers. They notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the EA portal. Whenever a threshold is met, it generates an email to department owners, and appears in cost alerts. For example, 50 percent or 75 percent of the quota.
+Department spending quota alerts are specific to Enterprise Agreement customers. They notify you when department spending reaches a fixed threshold of the quota. Spending quotas are configured in the Azure portal. Whenever a threshold is met, it generates an email to department owners, and appears in cost alerts. For example, 50 percent or 75 percent of the quota.
 
 ## Budgets
 
