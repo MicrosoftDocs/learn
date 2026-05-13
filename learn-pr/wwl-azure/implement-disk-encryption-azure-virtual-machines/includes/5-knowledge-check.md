@@ -1,0 +1,1 @@
+You explored Azure disk encryption options, configured encryption at host with customer-managed keys, and applied confidential disk encryption to confidential VMs. Check your knowledge of these concepts before moving on.

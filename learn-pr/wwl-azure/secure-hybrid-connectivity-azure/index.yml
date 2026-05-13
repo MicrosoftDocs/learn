@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.secure-hybrid-connectivity-azure
+metadata:
+  title: Secure Remote and Hybrid Connectivity Using VPN Gateways and Microsoft Entra Private Access
+  description: "Harden Azure remote and hybrid connectivity to reduce attack surface and enforce Zero Trust access principles. Assess VPN gateway security risks, apply hardening controls, and deploy Microsoft Entra Private Access to replace broad VPN access with identity-aware, per-application access."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-vpn-gateway
+  ai-usage: ai-generated
+title: Secure remote and hybrid connectivity using VPN gateways and Microsoft Entra Private Access
+summary: Harden Azure VPN gateway security and deploy Microsoft Entra Private Access to replace broad VPN access with identity-aware, per-application access that enforces Zero Trust connectivity principles.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify security risks in VPN gateway configurations for site-to-site and point-to-site connections
+  - Configure VPN gateway settings to reduce attack surface through stronger authentication and encryption
+  - Deploy Microsoft Entra Private Access to enforce Zero Trust application-level access for remote users
+prerequisites: |
+  - Familiarity with Azure virtual networks and basic network connectivity concepts
+  - Understanding of VPN concepts such as tunnels, authentication, and encryption
+  - Familiarity with Microsoft Entra ID and Conditional Access at a conceptual level
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-vpn-gateway
+  - entra-id
+subjects:
+  - security
+  - networking
+units:
+  - learn.wwl.secure-hybrid-connectivity-azure.introduction
+  - learn.wwl.secure-hybrid-connectivity-azure.assess-security-risks-hybrid-connectivity
+  - learn.wwl.secure-hybrid-connectivity-azure.harden-vpn-gateway-security
+  - learn.wwl.secure-hybrid-connectivity-azure.replace-broad-vpn-access-entra-private-access
+  - learn.wwl.secure-hybrid-connectivity-azure.knowledge-check
+  - learn.wwl.secure-hybrid-connectivity-azure.summary
+badge:
+  uid: learn.wwl.secure-hybrid-connectivity-azure.badge

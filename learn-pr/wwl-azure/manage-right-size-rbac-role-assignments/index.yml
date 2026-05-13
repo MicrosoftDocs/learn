@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.manage-right-size-rbac-role-assignments
+metadata:
+  title: Manage and Right-Size RBAC Role Assignments for Least Privilege
+  description: "Implement least-privilege access governance across Azure and Microsoft Entra ID. Assign built-in roles at appropriate scope, create custom roles for Azure resources and Microsoft Entra directory operations, and identify and remediate overprivileged access using Microsoft Entra access reviews and Defender for Cloud CSPM identity insights."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Manage and right-size RBAC role assignments for least privilege
+summary: Implement least-privilege access governance across Azure and Microsoft Entra ID. Assign built-in roles at appropriate scope, create custom roles for Azure resources and Microsoft Entra directory operations. Then identify and remediate overprivileged access using Microsoft Entra access reviews and Defender for Cloud Security Posture Management (CSPM) identity insights.
+abstract: |
+  After completing this module, you can:
+    - Assign built-in Azure roles at the appropriate scope using least-privilege principles
+    - Create custom Azure roles and Microsoft Entra roles for operations that built-in roles don't cover at the right permission level
+    - Identify overprivileged role assignments and remediate them using Defender for Cloud CSPM, Cloud Infrastructure Entitlement Management (CIEM), and Microsoft Entra access reviews
+prerequisites: |
+  - Familiarity with Microsoft Entra ID concepts including users, groups, and directory roles
+  - Understanding of Azure role-based access control (RBAC), including role assignments and the Azure scope hierarchy
+  - Basic experience navigating the Azure portal and Microsoft Entra admin center
+  - Familiarity with Zero Trust security principles including least privilege
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+  - advanced
+roles:
+  - security-engineer
+products:
+  - entra-id
+  - defender-for-cloud
+  - azure
+subjects:
+  - identity-access
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-right-size-rbac-role-assignments.introduction
+- learn.wwl.manage-right-size-rbac-role-assignments.assign-manage-azure-built-in-roles
+- learn.wwl.manage-right-size-rbac-role-assignments.create-custom-azure-entra-roles
+- learn.wwl.manage-right-size-rbac-role-assignments.evaluate-remediate-overprivileged-access
+- learn.wwl.manage-right-size-rbac-role-assignments.knowledge-check
+- learn.wwl.manage-right-size-rbac-role-assignments.summary
+badge:
+  uid: learn.wwl.manage-right-size-rbac-role-assignments.badge

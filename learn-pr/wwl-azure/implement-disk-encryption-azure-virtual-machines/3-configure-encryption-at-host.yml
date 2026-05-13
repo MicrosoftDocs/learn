@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disk-encryption-azure-virtual-machines.configure-encryption-at-host
+metadata:
+  title: Configure encryption at host with customer-managed keys
+  description: Configure encryption at host with customer-managed keys using a Disk Encryption Set and Azure Key Vault to enforce end-to-end encryption for virtual machine data.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure encryption at host with customer-managed keys
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-configure-encryption-at-host.md)]

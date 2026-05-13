@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-azure-arc-servers.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Arc-enabled server access control, extension security, Azure Policy enforcement, and security posture monitoring.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security team wants to prevent any extensions except the Microsoft Defender for Endpoint extension from being installed on Arc-enrolled servers—even if a privileged Azure user approves the installation. Which control achieves this protection that Azure Policy alone can't provide?"
+    choices:
+    - content: "Azure Policy with Deny effect assigned at management group scope"
+      isCorrect: false
+      explanation: "Azure Policy controls can be modified by anyone with permission to edit policy assignments. If a privileged Azure user has that permission, they can remove or modify the policy. Agent-level controls on the Azure Connected Machine agent provide a stronger protection that can't be overridden from the cloud."
+    - content: "Resource lock on the Arc server resource in Azure"
+      isCorrect: false
+      explanation: "Resource locks prevent deletion or modification of the Azure resource representation of the Arc server, but they don't control which extensions the Azure Connected Machine agent accepts. Extension allow/block lists configured on the agent itself are required."
+    - content: "The allow list for the extension, is configured on the Azure Connected Machine agent"
+      isCorrect: true
+      explanation: "The extension allow list is configured directly on the Azure Connected Machine agent using `azcmagent.config``. Unlike Azure Policy, which can be modified by privileged cloud users, the agent-level allow list takes precedence over cloud-based instructions. Setting an allow list to include only the approved extension blocks all others, regardless of what Azure Policy or portal requests."
+  - content: "An organization uses Azure Arc to manage on-premises servers. A team member needs to onboard new servers to Arc but must not be able to modify existing server configurations or install extensions. Which built-in role should be assigned?"
+    choices:
+    - content: "Azure Connected Machine Resource Administrator"
+      isCorrect: false
+      explanation: "The Azure Connected Machine Resource Administrator role grants full control over Arc-enrolled servers, including the ability to deploy extensions and modify server configurations. The ability to deploy extensions and configure servers exceeds the stated requirement."
+    - content: "Azure Connected Machine Onboarding"
+      isCorrect: true
+      explanation: "The Azure Connected Machine Onboarding role grants only the permissions required to connect new servers to Azure Arc. It can't be used to reonboard, delete, or modify existing server resources, and it doesn't grant extension deployment rights—making it the least-privilege choice for this scenario."
+    - content: "Contributor"
+      isCorrect: false
+      explanation: "The Contributor role grants broad write access across all resource types within its scope, including the ability to deploy extensions and modify server configurations. It violates the least-privilege principle for this use case."
+  - content: "After Arc-enrolling Contoso Manufacturing's on-premises servers, a security engineer checks Microsoft Defender for Cloud and sees the servers listed in security recommendations. What does this confirm?"
+    choices:
+    - content: "The servers are fully protected by Defender for Servers Plan 2 and all capabilities are active"
+      isCorrect: false
+      explanation: "Appearing in Defender for Cloud security recommendations indicates visibility into the server's posture, but it doesn't confirm that Defender for Servers is enabled. Defender for Servers must be explicitly enabled through Environment Settings or Azure Policy to activate workload protection."
+    - content: "The Azure Connected Machine agent is installed and the servers are visible to Defender for Cloud's posture assessment"
+      isCorrect: true
+      explanation: "When Arc-enrolled servers appear in Defender for Cloud security recommendations, it confirms that the Azure Connected Machine agent is operational and the servers are enrolled in Azure. Defender for Cloud can now assess their posture and surface recommendations—though Defender for Servers must still be enabled to activate active threat protection."
+    - content: "The servers require the Log Analytics agent before Defender for Cloud can assess them"
+      isCorrect: false
+      explanation: "Defender for Cloud no longer relies on the Log Analytics agent for Arc-enrolled servers. The Azure Connected Machine agent, combined with the Defender for Endpoint extension deployed by Defender for Servers, replaces the Log Analytics agent for security data collection."

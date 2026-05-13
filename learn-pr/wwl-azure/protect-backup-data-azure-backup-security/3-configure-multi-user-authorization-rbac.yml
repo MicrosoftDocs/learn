@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-backup-data-azure-backup-security.configure-multi-user-authorization-rbac
+metadata:
+  title: Configure Multi-User Authorization and RBAC for backup
+  description: Implement Multi-User Authorization using Resource Guard and configure RBAC roles to enforce a two-admin approval model for critical backup operations.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure Multi-User Authorization and RBAC for backup
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-configure-multi-user-authorization-rbac.md)]

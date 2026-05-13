@@ -3,7 +3,7 @@ uid: learn.wwl.query-manipulate-repository-objects
 metadata:
   title: Query and manipulate repository objects by using CIM and WMI methods
   description: "This module explains how to use CIM and WMI to make changes by using methods. The methods available vary depending on the type of object. Discovering and understanding these methods is an important step in querying and manipulating the repository information."
-  ms.date: 01/23/2026
+  ms.date: 05/12/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -11,7 +11,7 @@ metadata:
   - N/A
   ms.service: powershell
   ms.subservice: cmdlets
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Query and manipulate repository objects by using CIM and WMI methods
 summary: This module explains how to use CIM and WMI to make changes by using methods. Discovering and understanding these methods is an important step in querying and manipulating the repository information.
 abstract: |

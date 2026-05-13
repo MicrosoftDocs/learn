@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-enforce-just-in-time-vm-access.summary
+metadata:
+  title: Summary
+  description: Summary of enabling and enforcing just-in-time VM access, covering JIT requirements, policy configuration, access requests, activity auditing, and Azure Policy enforcement.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]
