@@ -1823,6 +1823,81 @@
       "redirect_url": "/training/modules/explore-query-performance-optimization/"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/2-understand-performance-issues-related-to-tables.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/3-exercise-understand-performance-issues-related-to-tables.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/4-understand-table-distribution-design.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/5-use-indexes-to-improve.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/5a-understand-query-plans.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/6-exercise-use-table-distribution-indexes-to-improve-performance.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/7-create-statistics-to-improve.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/8-improve-materialized-views.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/9-use-read-committed-snapshot-for-data-consistency.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/10-optimize-common-queries.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/10a-exercise-see-how-statistics-affects-query-plan.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/11-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/12-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-sql-server-query-plans/6-knowledge-check.md",
       "redirect_url": "/training/modules/explore-query-performance-optimization/"
     },
