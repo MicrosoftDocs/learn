@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-controls-function-logic-apps
+metadata:
+  title: Implement Security Controls for Azure Function Apps and Logic Apps
+  description: "Implement security controls for Azure Function apps and Logic apps. Configure authentication and authorization, managed identities, virtual network integration, and private endpoints for Function apps, and apply managed identity, connector security, and network isolation for Logic apps."
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-functions
+  ai-usage: ai-assisted
+title: Implement security controls for Azure Function apps and Logic apps
+summary: Implement security controls for Azure Function apps and Logic apps. Configure authentication and authorization, managed identities, virtual network integration, and private endpoints for Function apps, and apply managed identity, connector security, and network isolation for Logic apps.
+abstract: |
+  After completing this module, you can:
+    - Configure authentication and authorization controls for Azure Function apps
+    - Implement network access controls for Function apps including virtual network integration and private endpoints
+    - Apply managed identity, connector security, and network isolation for Azure Logic apps
+prerequisites: |
+  - Working knowledge of Azure App Service fundamentals (Function apps run on the App Service platform)
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Familiarity with Azure Virtual Network and private endpoint concepts
+  - Basic understanding of serverless and event-driven computing concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-functions
+  - logic-apps
+  - azure-key-vault
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.implement-security-controls-function-logic-apps.introduction
+- learn.wwl.implement-security-controls-function-logic-apps.configure-authentication-authorization-function-apps
+- learn.wwl.implement-security-controls-function-logic-apps.secure-network-access-function-apps
+- learn.wwl.implement-security-controls-function-logic-apps.implement-security-controls-logic-apps
+- learn.wwl.implement-security-controls-function-logic-apps.knowledge-check
+- learn.wwl.implement-security-controls-function-logic-apps.summary
+badge:
+  uid: learn.wwl.implement-security-controls-function-logic-apps.badge
