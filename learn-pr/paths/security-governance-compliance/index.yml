@@ -35,8 +35,8 @@ subjects:
   - identity-access
   - devops
 modules:
-- learn.wwl.configure-defender-cloud-security-controls
 - learn.wwl.enforce-governance-azure-policy-resource-locks
+- learn.wwl.configure-defender-cloud-security-controls
 - learn.wwl.evaluate-regulatory-compliance
 - learn.wwl.manage-right-size-rbac-role-assignments
 - learn.wwl.protect-backup-data-azure-backup-security
