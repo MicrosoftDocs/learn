@@ -66838,6 +66838,11 @@
       "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/subject-rights-requests-overview.md",
       "redirect_url": "/privacy/priva/subject-rights-requests",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/summary.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
     }
   ]
 }
