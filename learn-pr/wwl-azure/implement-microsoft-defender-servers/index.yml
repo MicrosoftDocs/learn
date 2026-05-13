@@ -37,7 +37,7 @@ units:
 - learn.wwl.implement-microsoft-defender-servers.introduction
 - learn.wwl.implement-microsoft-defender-servers.onboard-servers-defender-servers
 - learn.wwl.implement-microsoft-defender-servers.configure-vulnerability-scanning
-- learn.wwl.implement-microsoft-defender-servers.configure-mde-agentless-scan-file-integrity-monitoring
+- learn.wwl.implement-microsoft-defender-servers.configure-endpoint-agentless-scan-file-integrity-monitoring
 - learn.wwl.implement-microsoft-defender-servers.knowledge-check
 - learn.wwl.implement-microsoft-defender-servers.summary
 badge:
