@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.security-governance-compliance
+metadata:
+  title: Enforce Security Governance and Regulatory Compliance
+  description: "Enforce security governance and regulatory compliance across Azure environments using Azure Policy, Microsoft Defender for Cloud, Azure RBAC. Then enable Azure Backup security features, and infrastructure as code scanning."
+  ms.date: 05/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: Enforce security governance and regulatory compliance
+summary: |
+  Enforce security governance and regulatory compliance across Azure environments. Configure Azure Policy and resource locks to block noncompliant deployments. Then manage security standards and remediate recommendations in Defender for Cloud, evaluate regulatory compliance posture, govern RBAC role assignments at scale, protect backup data against ransomware and deletion, and embed security controls into Bicep pipelines before resources reach production.
+prerequisites: |
+  - Working knowledge of Azure administration at the AZ-104 level, including resource management, role assignments, and virtual network concepts
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+  - Understanding of Azure role-based access control (RBAC) including role assignments and scope hierarchy
+  - Basic experience navigating the Azure portal and Microsoft Entra admin center
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+  - advanced
+roles:
+  - security-engineer
+products:
+  - azure
+  - defender-for-cloud
+  - azure-policy
+  - entra-id
+  - azure-backup
+subjects:
+  - security
+  - cloud-security
+  - compliance
+  - identity-access
+  - devops
+modules:
+- learn.wwl.configure-defender-cloud-security-controls
+- learn.wwl.enforce-governance-azure-policy-resource-locks
+- learn.wwl.evaluate-regulatory-compliance
+- learn.wwl.manage-right-size-rbac-role-assignments
+- learn.wwl.protect-backup-data-azure-backup-security
+- learn.wwl.implement-security-controls-infrastructure-as-code
+trophy:
+  uid: learn.wwl.security-governance-compliance.trophy
