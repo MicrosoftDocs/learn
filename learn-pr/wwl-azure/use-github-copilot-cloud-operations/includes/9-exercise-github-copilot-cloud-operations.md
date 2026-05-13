@@ -6,8 +6,8 @@ In this exercise, you take on the role of an infrastructure engineer at a retail
 The exercise covers:
 - Generate Azure CLI and PowerShell Script.
 - Compose Bicep Template (with and without MCP).
-- Generate CI/CD Pipeline syntax for Azure DevOps + GitHub Actions.
-- Use GitHub Copilot to assist in writing cloud infrastructure documentation.
+- Generate CI/CD Pipeline syntax for Azure DevOps and GitHub Actions.
+- Use GitHub Copilot to help writing cloud infrastructure documentation.
 - Analyze Azure Activity log and Azure Firewall logs using GitHub Copilot.
 
 When you select the launch exercise button, the browser navigates to a public GitHub page that provides instructions for this exercise.
