@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-kubernetes.knowledge-check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge of Azure Kubernetes Service (AKS) security controls including identity, network access, workload identity, and pod security.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your security team needs to control which users can run `az aks get-credentials` to download cluster credentials from Azure. Which authorization system governs this access?"
+    choices:
+    - content: "Azure RBAC role assignments on the AKS cluster resource"
+      isCorrect: true
+      explanation: "Correct. Azure RBAC controls access to Azure resources, including the AKS cluster resource and its credentials. The Azure Kubernetes Service Cluster Admin Role and Azure Kubernetes Service Cluster User Role govern who can retrieve cluster kubeconfig from Azure."
+    - content: "Kubernetes ClusterRoleBinding in the cluster"
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes RBAC controls what authenticated identities can do with Kubernetes API resources inside the cluster—creating pods, managing deployments, and similar operations. It doesn't govern access to Azure resources such as the AKS cluster credential endpoint."
+    - content: "Kubernetes ServiceAccount permissions"
+      isCorrect: false
+      explanation: "Incorrect. Service account tokens authenticate workloads inside the cluster to the Kubernetes API server. They don't provide authorization for Azure control plane operations such as retrieving kubeconfig."
+    - content: "Namespace-scoped Kubernetes RoleBinding"
+      isCorrect: false
+      explanation: "Incorrect. Namespace-scoped RoleBindings control permissions within a specific Kubernetes namespace. They have no effect on Azure control plane operations such as downloading cluster credentials."
+  - content: "Contoso Retail's compliance policy requires that the AKS API server must have no public IP address. Which configuration meets this requirement?"
+    choices:
+    - content: "A private AKS cluster"
+      isCorrect: true
+      explanation: "Correct. A private AKS cluster removes the API server from the public internet entirely. The API server receives a private IP address accessible only from within the virtual network or from connected networks such as on-premises networks via VPN or ExpressRoute."
+    - content: "Authorized IP ranges restricted to the corporate office IP address"
+      isCorrect: false
+      explanation: "Incorrect. Authorized IP ranges restrict which source IP addresses can reach the API server, but the endpoint remains publicly routable. The API server retains its public IP address—only traffic from listed IPs is permitted. This doesn't meet the requirement for no public IP address."
+    - content: "A Kubernetes NetworkPolicy that blocks external traffic to the API server"
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes NetworkPolicies control pod-to-pod traffic inside the cluster. They don't affect the public accessibility of the AKS API server endpoint."
+    - content: "Disabling local accounts on the cluster"
+      isCorrect: false
+      explanation: "Incorrect. Disabling local accounts forces cluster authentication through Microsoft Entra ID. It's an identity control, not a network control, and has no effect on the public IP address or network exposure of the API server."
+  - content: "A security engineer wants to enforce pod-to-pod network policies on an existing AKS cluster that was deployed without a network policy plugin. What is the correct action?"
+    choices:
+    - content: "Recreate the cluster with `--network-policy azure` or `--network-policy calico` specified at cluster creation time"
+      isCorrect: true
+      explanation: "Correct. The network policy plugin must be specified at cluster creation time. It can't be added to an existing cluster after deployment. The cluster must be recreated with the network policy option enabled."
+    - content: "Run `az aks update --network-policy azure` to add the plugin to the existing cluster"
+      isCorrect: false
+      explanation: "Incorrect. The `az aks update` command doesn't support adding a network policy plugin to an existing cluster. The network policy engine must be deployed at cluster creation time and can't be retrofitted."
+    - content: "Apply NetworkPolicy objects with kubectl to activate the enforcement engine on existing nodes"
+      isCorrect: false
+      explanation: "Incorrect. Applying NetworkPolicy objects without the network policy plugin installed has no effect. The enforcement engine that interprets and applies the policies must be deployed at cluster creation time."
+    - content: "Deploy a Kubernetes DaemonSet to existing nodes to enable network policy enforcement"
+      isCorrect: false
+      explanation: "Incorrect. While some network policy engines use DaemonSets as part of their architecture, you can't retrofit the network policy plugin to an existing AKS cluster by deploying a DaemonSet. The plugin must be specified during cluster creation."
+  - content: "An AI agent pod running in AKS needs to call Azure OpenAI without storing an API key as a Kubernetes secret. Which mechanism enables the pod to authenticate to Azure OpenAI without credentials stored in the cluster?"
+    choices:
+    - content: "Microsoft Entra Workload ID using AKS OIDC issuer and federated identity credentials"
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra Workload ID uses OIDC federation to exchange the pod's Kubernetes service account token for a Microsoft Entra ID access token at runtime. No API key or client secret is stored in the cluster—the token is generated on demand and scoped to the requested Azure resource."
+    - content: "Kubernetes RBAC with a service account token"
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes RBAC and service account tokens control access to Kubernetes API resources inside the cluster. They don't provide authentication to Azure services such as Azure OpenAI."
+    - content: "Azure Key Vault Secrets Store CSI Driver with an imagePullSecret"
+      isCorrect: false
+      explanation: "Incorrect. imagePullSecrets are used for container registry authentication, not for authenticating to Azure services. The CSI driver can retrieve secrets from Key Vault, but it still requires an identity—typically workload identity—for authentication."
+    - content: "Azure Container Registry integration with managed identity"
+      isCorrect: false
+      explanation: "Incorrect. ACR integration with managed identity handles image pull authentication from the container registry. It doesn't provide authentication to Azure OpenAI or other Azure AI services."
+  - content: "Your organization wants to apply the strictest supported pod security configuration to application workload namespaces in AKS. Which Pod Security Standard profile should you enforce?"
+    choices:
+    - content: "Restricted"
+      isCorrect: true
+      explanation: "Correct. The Restricted profile is the most restrictive of the three Pod Security Standards. It enforces all Baseline restrictions and additionally requires nonroot execution, prohibits privilege escalation, mandates a seccomp profile, and limits volume types. It's the recommended profile for application workloads."
+    - content: "Privileged"
+      isCorrect: false
+      explanation: "Incorrect. The Privileged profile applies no restrictions and is intended only for system and infrastructure namespaces that require full host access. Applying it to application workloads removes all pod security protections."
+    - content: "Baseline"
+      isCorrect: false
+      explanation: "Incorrect. The Baseline profile prevents known privilege escalations and represents a minimum security posture. The Restricted profile provides stronger protections and is the recommended standard for application workloads."
+    - content: "Default"
+      isCorrect: false
+      explanation: "Incorrect. Default isn't one of the three Pod Security Standards. The three defined profiles are Privileged, Baseline, and Restricted."
