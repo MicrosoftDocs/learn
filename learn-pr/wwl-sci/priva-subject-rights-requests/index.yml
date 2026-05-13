@@ -35,7 +35,6 @@ subjects:
 - compliance
 - security
 units:
-- learn.wwl.priva-subject-rights-requests.subject-rights-requests-overview
 - learn.wwl.priva-subject-rights-requests.summary
 
 badge:
