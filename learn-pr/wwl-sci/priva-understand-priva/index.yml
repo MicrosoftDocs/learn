@@ -36,7 +36,6 @@ subjects:
 - compliance
 - security
 units:
-- learn.wwl.priva-understand-microsoft-priva.introduction
 - learn.wwl.priva-understand-microsoft-priva.priva-overview
 - learn.wwl.priva-understand-microsoft-priva.navigate-priva-portal
 - learn.wwl.priva-understand-microsoft-priva.knowledge-check
