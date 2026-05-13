@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-container-risks-defender-containers.explore-defender-for-containers
+metadata:
+  title: Explore Microsoft Defender for Containers
+  description: Explore the architecture and four protection pillars of Microsoft Defender for Containers. Pillars include the Defender sensor, Azure Policy for Kubernetes, registry access, and Kubernetes API access components.
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Explore Microsoft Defender for Containers
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-defender-for-containers.md)]
