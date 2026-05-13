@@ -10,11 +10,11 @@ Microsoft Entra Workload ID solves the credential problem by replacing stored cr
 
 The exchange works through five components working together:
 
-1. **AKS OIDC issuer**: Every AKS cluster exposes an OIDC issuer URL that Microsoft Entra trusts as an identity provider. Enable it at cluster creation or on an existing cluster with `--enable-oidc-issuer`.
-2. **Kubernetes service account annotation**: A service account in the cluster is annotated with the client ID of a Microsoft Entra application registration (`azure.workload.identity/client-id`).
-3. **Federated identity credential**: A federated identity credential is configured on the app registration. It specifies the AKS OIDC issuer URL as the trusted issuer and the service account namespace and name as the subject—for example, `system:serviceaccount:retail-app:payment-svc`.
-4. **Workload identity webhook**: The Azure Workload Identity webhook is a mutating admission controller that intercepts pod creation. For pods using an annotated service account, it injects the required environment variables - `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_FEDERATED_TOKEN_FILE` - and mounts a projected service account token as a file.
-5. **Token exchange at runtime**: When the workload calls the Azure Identity SDK using `DefaultAzureCredential` or `WorkloadIdentityCredential`, the SDK reads the projected token file and presents it to the Microsoft Entra token endpoint. Microsoft Entra validates the token against the federated credential configuration and returns a scoped access token.
+- **AKS OIDC issuer**: Every AKS cluster exposes an OIDC issuer URL that Microsoft Entra trusts as an identity provider. Enable it at cluster creation or on an existing cluster with `--enable-oidc-issuer`.
+- **Kubernetes service account annotation**: A service account in the cluster is annotated with the client ID of a Microsoft Entra application registration (`azure.workload.identity/client-id`).
+- **Federated identity credential**: A federated identity credential is configured on the app registration. It specifies the AKS OIDC issuer URL as the trusted issuer and the service account namespace and name as the subject—for example, `system:serviceaccount:retail-app:payment-svc`.
+- **Workload identity webhook**: The Azure Workload Identity webhook is a mutating admission controller that intercepts pod creation. For pods using an annotated service account, it injects the required environment variables - `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_FEDERATED_TOKEN_FILE` - and mounts a projected service account token as a file.
+- **Token exchange at runtime**: When the workload calls the Azure Identity SDK using `DefaultAzureCredential` or `WorkloadIdentityCredential`, the SDK reads the projected token file and presents it to the Microsoft Entra token endpoint. Microsoft Entra validates the token against the federated credential configuration and returns a scoped access token.
 
 The pod never holds a password, client secret, or certificate. Access tokens are short-lived, generated on demand, and scoped to the requested Azure resource.
 
