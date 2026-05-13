@@ -66803,6 +66803,11 @@
       "source_path": "learn-pr/paths/priva-data-privacy-solutions/index.md",
       "redirect_url": "/privacy/priva/priva-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/index.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
     }
   ]
 }
