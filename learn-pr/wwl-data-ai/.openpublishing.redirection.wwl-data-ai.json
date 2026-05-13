@@ -5093,6 +5093,41 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/work-with-data-in-aml/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/"
     },
+        {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/2-describe.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/3-choose-between-dimension-types.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/4-exercise-design-implement-type-1-dimension.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/5-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/6-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
     {
       "source_path": "perform-incremental-processing-with-spark-structured-streaming/06-exercise-01-transform-with-spark-structured-streaming.md",
       "redirect_url": "/training/modules/perform-incremental-processing-with-spark-structured-streaming/06-exercise/"
@@ -5310,17 +5345,7 @@
       "redirect_url": "/azure/data-factory/quickstart-get-started"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/index.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/index.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/1-introduction.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
@@ -5330,17 +5355,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/2-describe.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/2-describe.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/3-choose-between-dimension-types.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
@@ -5350,27 +5365,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/4-exercise-design-implement-type-1-dimension.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/4-exercise-identify-architecture-components.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/5-knowledge-check.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/5-design-ingestion-patterns-for-warhouse.yml",
-      "redirect_url": "/azure/synapse-analytics/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/6-summary.yml",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
