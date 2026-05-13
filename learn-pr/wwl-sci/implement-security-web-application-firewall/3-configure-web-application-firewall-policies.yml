@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-security-web-application-firewall.configure-web-application-firewall-policies
 metadata:
   title: Configure Web Application Firewall policies
-  description: Configure WAF policies on Azure Application Gateway including managed rule sets, Detection and Prevention modes, rule exclusions, custom rules, and policy association levels.
+  description: Configure Web Application Firewall (WAF) policies on Azure Application Gateway including managed rule sets. Then configure Detection and Prevention modes, rule exclusions, custom rules, and policy association levels.
   ms.date: 04/15/2026
   author: r-c-stewart
   ms.author: roberts

@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-security-web-application-firewall.protect-app-service-web-application-firewall
 metadata:
   title: Protect App Service with Web Application Firewall
-  description: Deploy Application Gateway with WAF_v2, route traffic through the WAF, restrict App Service to Application Gateway traffic only, and monitor WAF diagnostic logs to tune the policy.
+  description: Deploy Application Gateway with WAF_v2, and route traffic through the Web Application Firewall (WAF). Then restrict App Service to Application Gateway traffic only, and tune the policy by monitoring WAF diagnostic logs.
   ms.date: 04/15/2026
   author: r-c-stewart
   ms.author: roberts

@@ -1,4 +1,4 @@
-The App Service security controls and the WAF policy on Application Gateway work together — but only if the integration is configured correctly. For Contoso Retail, the penetration test showed that SQL injection bypassed application-layer protections. Closing that gap requires three things: deploying Application Gateway with WAF in front of App Service, routing all inbound traffic through the Application Gateway so the WAF inspects it, and restricting App Service to reject any traffic that doesn't arrive through the Application Gateway.
+The App Service security controls and the Web Application Firewall (WAF) policy on Application Gateway work together—but only if the integration is configured correctly. For Contoso Retail, the penetration test showed that SQL injection bypassed application-layer protections. Closing that gap requires three things: admins deploying Application Gateway with WAF in front of App Service, routing all inbound traffic through the Application Gateway so the WAF inspects it, and restricting App Service to reject any traffic that doesn't arrive through the Application Gateway.
 
 ## Understand the integration architecture
 
@@ -21,7 +21,7 @@ To deploy an Application Gateway with WAF in the Azure portal:
 2. On the **Basics** tab, set **Tier** to **WAF V2** and configure the subscription, resource group, and region.
 3. On the **Frontends** tab, create a public IP address to serve as the Application Gateway's internet entry point.
 4. On the **WAF** tab, create or associate a WAF policy. Set **Policy mode** to **Detection** for initial deployment.
-5. On the **Backends** tab, add a backend pool. Enter the App Service default hostname — for example, `contoso-retail.azurewebsites.net` — as the backend target.
+5. On the **Backends** tab, add a backend pool. Enter the App Service default hostname—for example, `contoso-retail.azurewebsites.net` - as the backend target.
 6. On the **Configuration** tab, create a routing rule that maps the frontend listener to the backend pool and backend HTTP settings.
 
 > [!TIP]
@@ -42,7 +42,7 @@ For end-to-end TLS encryption between Application Gateway and App Service:
 
 After Application Gateway is deployed and routing traffic to App Service, restrict App Service to reject traffic from any other source. Without this restriction, an attacker who discovers the App Service hostname can send requests directly to App Service and bypass WAF inspection entirely.
 
-**Option 1 — Access restrictions with a service tag rule:**
+**Option 1 - Access restrictions with a service tag rule:**
 
 1. In App Service, navigate to **Settings** > **Networking** > **Public network access**.
 2. Select **Add** to add a new access restriction rule.
@@ -51,7 +51,7 @@ After Application Gateway is deployed and routing traffic to App Service, restri
 5. Add a second rule with **Action** set to **Deny**, **Priority** to `200`, **Type** set to **IPv4**, and IP address block `0.0.0.0/0` to deny all other traffic.
 6. Select **Save**.
 
-**Option 2 — Private endpoint:**
+**Option 2 - Private endpoint:**
 
 1. In App Service, navigate to **Settings** > **Networking** > **Private endpoints**.
 2. Select **Add** to create a private endpoint in the subnet used by Application Gateway or a connected subnet.
@@ -83,9 +83,9 @@ This query returns the most frequently triggered blocking rules and the request 
 After collecting WAF logs in Detection mode, review the matched and blocked requests to identify false positives. For each confirmed false positive:
 
 1. Note the rule ID from the WAF log entry.
-2. Identify which request element triggered the rule — header name, cookie name, query string argument, or request body argument.
+2. Identify which request element triggered the rule—header name, cookie name, query string argument, or request body argument.
 3. In the WAF policy, navigate to **Managed rules** > **Exclusions** and add a targeted exclusion scoped to that rule ID and request element.
 
 Once legitimate traffic passes cleanly without false positives, switch the WAF policy to Prevention mode. Navigate to the WAF policy, select **Policy settings**, and change **Policy mode** to **Prevention**.
 
-With Prevention mode active and App Service access restrictions in place, all web traffic to Contoso Retail's e-commerce application passes through WAF inspection before reaching the application — and App Service accepts only traffic that arrived through that inspection path.
+With Prevention mode active and App Service access restrictions in place, all web traffic to Contoso Retail's e-commerce application passes through WAF inspection before reaching the application—and App Service accepts only traffic that arrived through that inspection path.

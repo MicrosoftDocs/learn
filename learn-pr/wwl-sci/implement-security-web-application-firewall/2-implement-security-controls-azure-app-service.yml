@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-security-web-application-firewall.implement-security-controls-azure-app-service
 metadata:
   title: Implement security controls for Azure App Service
-  description: Configure EasyAuth authentication, managed identity, HTTPS enforcement, access restrictions, VNet integration, private endpoints, and Key Vault references for Azure App Service.
+  description: Configure EasyAuth authentication, managed identity, and HTTPS enforcement. Then configure access restrictions, virtual network integration, private endpoints, and Key Vault references for Azure App Service.
   ms.date: 04/15/2026
   author: r-c-stewart
   ms.author: roberts

@@ -1,4 +1,4 @@
-A Web Application Firewall (WAF) inspects HTTP and HTTPS traffic and blocks requests matching patterns associated with known attacks. Unlike network-layer controls that filter on IP addresses and ports, a WAF understands application-layer request structure — query strings, headers, cookies, and request bodies. For Contoso Retail, deploying a WAF policy on Application Gateway is the primary defense against the SQL injection attack the penetration test demonstrated.
+A Web Application Firewall (WAF) inspects HTTP and HTTPS traffic and blocks requests matching patterns associated with known attacks. Unlike network-layer controls that filter on IP addresses and ports, a WAF understands application-layer request structure—query strings, headers, cookies, and request bodies. For Contoso Retail, deploying a WAF policy on Application Gateway is the primary defense against the SQL injection attack the penetration test demonstrated.
 
 ## Choose between Application Gateway WAF and Azure Front Door WAF
 
@@ -30,9 +30,9 @@ For the Contoso Retail scenario, the SQL injection rule group in CRS 3.2 covers 
 
 A WAF policy operates in one of two modes, and the mode determines what the WAF does when a request matches a rule.
 
-**Detection mode** logs rule matches but doesn't block any requests. Every request — including those that trigger rules — passes through to the back-end application. Detection mode is the right starting point when you first deploy a WAF against existing production traffic. It lets you observe which rules trigger against real application requests, identify false positives before any traffic is affected, and tune exclusions without disrupting users.
+**Detection mode** logs rule matches but doesn't block any requests. Every request—including those that trigger rules—passes through to the back-end application. Detection mode is the right starting point when you first deploy a WAF against existing production traffic. It lets you observe which rules trigger against real application requests, identify false positives before any traffic is affected, and tune exclusions without disrupting users.
 
-**Prevention mode** both logs and blocks requests that match rules. A blocked request returns an HTTP 403 response and never reaches the back-end application. Prevention mode is the production configuration once you've completed tuning.
+**Prevention mode** both logs and blocks requests that match rules. A blocked request returns an HTTP 403 response and never reaches the back-end application. Prevention mode is the production configuration once you completed tuning.
 
 The recommended practice is:
 
@@ -51,16 +51,16 @@ To change the mode in the Azure portal, navigate to your WAF policy, select **Po
 
 Some legitimate application requests trigger WAF rules because the request data matches patterns the rules are designed to detect. A common example is an authentication token in a request header that contains characters resembling a SQL injection pattern. Blocking this request in Prevention mode would break authentication for all users.
 
-Rule exclusions suppress a specific rule for a specific request element — a header name, cookie name, query string argument name, or request body argument name — without disabling the rule globally for all request types.
+Rule exclusions suppress a specific rule for a specific request element—a header name, cookie name, query string argument name, or request body argument name—without disabling the rule globally for all request types.
 
 When you configure exclusions:
 
 1. Find the rule ID that generated the false positive in the WAF logs.
-2. Identify which request element triggered the rule — for example, the `Authorization` request header.
+2. Identify which request element triggered the rule—for example, the `Authorization` request header.
 3. In the WAF policy, navigate to **Managed rules** > **Exclusions**.
 4. Select **Add exclusion**.
 5. Set **Match variable** to the request element type (request header name, cookie name, query string argument name, or request body argument name).
-6. Set **Operator** and **Selector** to match the specific header, cookie, or argument name — for example, operator **Equals** and selector `Authorization`.
+6. Set **Operator** and **Selector** to match the specific header, cookie, or argument name—for example, operator **Equals** and selector `Authorization`.
 7. Select the rule or rule group to exclude and select **Save**.
 
 > [!IMPORTANT]
@@ -68,13 +68,13 @@ When you configure exclusions:
 
 ## Create custom WAF rules
 
-Managed rule sets cover the OWASP Top 10 attack categories, but your application may need additional protections beyond what the built-in rules provide. Custom rules let you define match conditions and actions specific to your workload.
+Managed rule sets cover the OWASP Top 10 attack categories, but your application can need other protections beyond what the built-in rules provide. Custom rules let you define match conditions and actions specific to your workload.
 
 A custom rule consists of:
 
-- **Match conditions**: The criteria the WAF evaluates — request URI, HTTP method, request header value, query string value, request body content, client IP address, or client geographic location.
-- **Operator**: The comparison applied to the match condition — equals, contains, starts with, ends with, regex match, IP match, or geo match.
-- **Action**: The response when the match condition is true — Allow, Block, or Log.
+- **Match conditions**: The criteria the WAF evaluates—request URI, HTTP method, request header value, query string value, request body content, client IP address, or client geographic location.
+- **Operator**: The comparison applied to the match condition—equals, contains, starts with, ends with, regex match, IP match, or geo match.
+- **Action**: The response when the match condition is true—Allow, Block, or Log.
 - **Priority**: An integer that determines evaluation order. Lower numbers are evaluated first. All custom rules are evaluated before any managed rule set rules.
 
 For Contoso Retail, you might add custom rules to:
@@ -87,7 +87,7 @@ Configure custom rules in the WAF policy under **Custom rules** > **Add custom r
 
 ## Associate WAF policies at the right level
 
-A single Application Gateway can serve multiple applications through separate listeners — one listener per hostname or IP address. WAF policies can be associated at two levels.
+A single Application Gateway can serve multiple applications through separate listeners—one listener per hostname or IP address. WAF policies can be associated at two levels.
 
 **Gateway-level association** applies the policy to all listeners on the Application Gateway. Every application behind the gateway shares the same WAF configuration, including all managed rules, exclusions, and custom rules.
 
