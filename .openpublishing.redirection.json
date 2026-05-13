@@ -66818,6 +66818,11 @@
       "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/introduction.md",
       "redirect_url": "/privacy/priva/subject-rights-requests",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/knowledge-check.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
     }
   ]
 }
