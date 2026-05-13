@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.evaluate-azure-local.how-azure-local-fits-alongside-windows-server
+title: How Azure Local fits alongside Windows Server
+metadata:
+  title: How Azure Local Fits Alongside Windows Server
+  description: This content is part of the "When to evaluate Azure Local for private cloud scenarios" module.
+  ms.date: 05/12/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-how-azure-local-fits-alongside-windows-server.md)]

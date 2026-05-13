@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-controls-infrastructure-as-code
+metadata:
+  title: Implement Security Controls in Infrastructure as Code
+  description: "Embed security controls into infrastructure as code pipelines to prevent noncompliant Azure resources from reaching production. Integrate IaC security scanning using Microsoft Defender for DevOps and the MSDO extension, and configure Azure Policy in a policy-as-code workflow to enforce security compliance at deployment time."
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Implement security controls in infrastructure as code
+summary: Embed security controls into infrastructure as code pipelines to prevent noncompliant Azure resources from reaching production. Integrate IaC security scanning using Microsoft Defender for DevOps and the Microsoft DevOps (MSDO) extension, and configure Azure Policy in a policy-as-code workflow to enforce security compliance at deployment time.
+abstract: |
+  After completing this module, you can:
+    - Configure Microsoft Defender for DevOps to scan Bicep and ARM templates in GitHub Actions and Azure Pipelines
+    - Apply Azure Policy in a policy-as-code workflow to enforce security compliance at IaC deployment time
+prerequisites: |
+  - Working knowledge of Azure Policy including policy effects and assignment
+  - Familiarity with CI/CD pipelines in GitHub Actions or Azure DevOps
+  - Understanding of Bicep or ARM templates at a basic level
+  - Completion of (or equivalent knowledge to) Enforce governance with Azure Policy and resource locks
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure-policy
+  - azure
+subjects:
+  - security
+  - cloud-security
+  - devops
+units:
+- learn.wwl.implement-security-controls-infrastructure-as-code.introduction
+- learn.wwl.implement-security-controls-infrastructure-as-code.scan-iac-templates-defender-devops
+- learn.wwl.implement-security-controls-infrastructure-as-code.enforce-policy-compliance-iac-deployments
+- learn.wwl.implement-security-controls-infrastructure-as-code.knowledge-check
+- learn.wwl.implement-security-controls-infrastructure-as-code.summary
+badge:
+  uid: learn.wwl.implement-security-controls-infrastructure-as-code.badge

@@ -66798,6 +66798,91 @@
       "source_path_from_root": "/learn-pr/achievements/learn.oxford.learn.oxford.create-image-recognition-with-azure-iot-edge.badge.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-image-recognition-solution-iot-edge-cognitive-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/priva-data-privacy-solutions/index.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/index.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/create-subject-rights-request-m365.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/introduction.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/knowledge-check.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/review-subject-rights-request-data.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/subject-rights-request-reports.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/subject-rights-requests-overview.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-subject-rights-requests/summary.md",
+      "redirect_url": "/privacy/priva/subject-rights-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/index.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/address-privacy-challenges.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/configure-priva-settings.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/introduction.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/knowledge-check.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/navigate-priva-portal.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/priva-overview.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/summary.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
     }
   ]
 }

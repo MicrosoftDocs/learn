@@ -502,6 +502,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.badge
+  type: badge
+  title: Design a Modern Data Warehouse using Azure Synapse Analytics
+  summary: Learn how Azure Synapse Analytics enables you to build Data Warehouses using modern architecture patterns.
+  iconUrl: /training/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
 - uid: learn.wwl.get-started-openai.badge   
   type: badge   
   title: Get started with Azure OpenAI Service   
@@ -8036,3 +8041,18 @@ achievements:
   title: Run Azure Databricks notebooks in Azure Data Factory
   summary: Learn how to run Azure Databricks notebooks in Azure Data Factory to orchestrate data workflows and automate data processing tasks.
   iconUrl: /training/achievements/create-production-workloads-on-azure-databricks-with-azure-data-factory.svg
+- uid: learn.wwl.priva-data-privacy-solutions.trophy
+  type: trophy
+  title: Implement and manage data privacy with Microsoft Priva
+  summary: Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use Privacy Risk Management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.priva-subject-rights-requests.badge
+  type: badge
+  title: Manage Microsoft Priva Subject Rights Requests
+  summary: Microsoft Priva Subject Rights Requests let organizations respond to privacy rights requests in a structured way. Learn how to create and manage requests for data stored in Microsoft 365, review collected information, and complete requests with accurate reports and audit records.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-understand-microsoft-priva.badge
+  type: badge
+  title: Understand Microsoft Priva
+  summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management and Subject Rights Requests, and learn how to configure settings and assign roles to ensure secure and effective use of Priva.
+  iconUrl: /training/achievements/generic-badge.svg

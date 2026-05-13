@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hybrid-connectivity-azure.replace-broad-vpn-access-entra-private-access
+title: Replace broad VPN access with Microsoft Entra Private Access
+metadata:
+  title: Replace Broad VPN Access with Microsoft Entra Private Access
+  description: "Configure Microsoft Entra Private Access to enforce identity-aware, per-application access for remote users. Including connector deployment, Quick Access and per-app configuration, and Conditional Access integration."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-replace-broad-vpn-access-entra-private-access.md)]
