@@ -3723,6 +3723,11 @@ achievements:
   title: Create a Bot with the Bot Framework Composer
   summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
   iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
+- uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.badge
+  type: badge
+  title: Optimize data warehouse query performance in Azure Synapse Analytics
+  summary: Learn the techniques that you can use to optimize query performance within Azure Synapse Analytics.
+  iconUrl: /training/achievements/optimize-data-warehouse-query-performance-in-azure-synapse-analytics.svg
 - uid: learn.wwl.az-400-get-started-devops-transformation-journey.trophy
   type: trophy
   title: 'AZ-400: Get started on a DevOps transformation journey'
