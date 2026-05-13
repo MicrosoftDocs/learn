@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-web-application-firewall.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of implementing security controls for Azure App Service and Web Application Firewall, including authentication configuration, WAF modes, rule exclusions, and integration patterns.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does enabling the **Require authentication** option in App Service EasyAuth do for incoming requests?"
+    choices:
+    - content: "It encrypts all inbound traffic before it reaches application code."
+      isCorrect: false
+      explanation: "Incorrect. HTTPS enforcement handles encryption. The Require authentication option in EasyAuth controls whether unauthenticated requests are blocked at the platform layer before they reach application code."
+    - content: "It blocks unauthenticated requests at the platform layer before they reach application code, returning a 401 response or redirecting to the identity provider."
+      isCorrect: true
+      explanation: "Correct. When Require authentication is enabled, the EasyAuth middleware intercepts every incoming request. Requests without a valid authentication token are rejected with a 401 response for API clients or redirected to the configured identity provider for browser clients — neither reaches application code."
+    - content: "It assigns a managed identity to the App Service for outbound service authentication."
+      isCorrect: false
+      explanation: "Incorrect. Managed identity for outbound authentication is configured separately under Settings > Identity. EasyAuth controls inbound authentication for requests arriving at the application."
+    - content: "It restricts inbound traffic to specific IP address ranges."
+      isCorrect: false
+      explanation: "Incorrect. IP address restrictions are configured under Settings > Networking > Public network access. EasyAuth handles identity-based authentication, not network-layer access control."
+  - content: "What is the recommended approach when first deploying a WAF policy on Application Gateway against an existing production application?"
+    choices:
+    - content: "Deploy in Prevention mode immediately to block attacks from the start."
+      isCorrect: false
+      explanation: "Incorrect. Deploying directly in Prevention mode without a Detection phase risks blocking legitimate application traffic that triggers false positives. Prevention mode should be enabled only after tuning exclusions."
+    - content: "Deploy in Detection mode, analyze logs to identify false positives, configure exclusions, and then switch to Prevention mode."
+      isCorrect: true
+      explanation: "Correct. Detection mode logs rule matches without blocking requests, which lets you observe how the WAF responds to real application traffic without affecting users. After identifying and addressing false positives through exclusions, switching to Prevention mode enforces blocking."
+    - content: "Deploy in Detection mode and leave it permanently because Prevention mode increases latency."
+      isCorrect: false
+      explanation: "Incorrect. Detection mode is a tuning phase, not a permanent configuration. In Detection mode the WAF logs rule matches but blocks nothing, providing no protection against attacks. Prevention mode is the production configuration."
+    - content: "Deploy without a WAF policy and attach one after observing traffic patterns for 30 days."
+      isCorrect: false
+      explanation: "Incorrect. You can deploy a WAF policy in Detection mode from the start, which observes traffic without blocking. There is no benefit to delaying WAF policy attachment — Detection mode provides visibility without disruption."
+  - content: "What is the purpose of configuring a WAF rule exclusion?"
+    choices:
+    - content: "To permanently disable a WAF rule across all requests when it causes too many alerts."
+      isCorrect: false
+      explanation: "Incorrect. Disabling a rule globally removes protection for all requests, not just the ones causing false positives. Rule exclusions are targeted — they suppress a rule for a specific request element such as a header name, cookie name, or query string argument."
+    - content: "To allow legitimate requests that trigger WAF rules to pass through, scoped to a specific request element rather than disabling the rule globally."
+      isCorrect: true
+      explanation: "Correct. A rule exclusion suppresses a specific rule for a specific request attribute — for example, the Authorization request header — without disabling that rule for all other request elements. This eliminates the false positive while preserving protection for other request types."
+    - content: "To increase the priority of a rule so it is evaluated before other rules in the managed rule set."
+      isCorrect: false
+      explanation: "Incorrect. Rule priority controls the order of custom rule evaluation. Exclusions suppress rule matches for specified request elements and don't affect the priority or evaluation order of rules."
+    - content: "To route WAF-blocked requests to a different backend pool instead of returning a 403 response."
+      isCorrect: false
+      explanation: "Incorrect. WAF rule exclusions suppress rule matching for specific request elements. They don't redirect traffic — blocked requests in Prevention mode always receive a 403 response."
+  - content: "Why is it important to configure App Service access restrictions to allow only Application Gateway traffic after deploying Application Gateway with WAF?"
+    choices:
+    - content: "To reduce the cost of outbound data transfer from App Service."
+      isCorrect: false
+      explanation: "Incorrect. Access restrictions are a security control, not a cost optimization. They control which sources can send inbound traffic to App Service."
+    - content: "To ensure App Service only accepts traffic that has passed through WAF inspection, preventing attackers from bypassing the WAF by targeting the App Service hostname directly."
+      isCorrect: true
+      explanation: "Correct. Without access restrictions, the App Service public endpoint is reachable from any IP address, including an attacker who has discovered the App Service hostname. An attacker targeting App Service directly bypasses the WAF entirely. Access restrictions or a private endpoint ensure all traffic passes through WAF inspection first."
+    - content: "To enable end-to-end TLS encryption between Application Gateway and App Service."
+      isCorrect: false
+      explanation: "Incorrect. End-to-end TLS is configured in the Application Gateway backend HTTP settings. Access restrictions control which sources can send inbound requests to App Service — they don't affect encryption."
+    - content: "To prevent Application Gateway from caching responses from App Service."
+      isCorrect: false
+      explanation: "Incorrect. Application Gateway response caching is a separate feature. Access restrictions are a security control that limits which sources can send inbound traffic to the App Service endpoint."
+  - content: "Which attack category does the SQL injection (SQLI) rule group in the OWASP Core Rule Set (CRS) protect against?"
+    choices:
+    - content: "Attacks that overload the server with more requests than it can handle."
+      isCorrect: false
+      explanation: "Incorrect. Request volume attacks such as denial-of-service are handled at the network and infrastructure layer, not by SQL injection WAF rules. The SQLI rule group targets query manipulation attacks, not volumetric attacks."
+    - content: "Attacks that inject malicious SQL statements into input fields to manipulate back-end database queries."
+      isCorrect: true
+      explanation: "Correct. SQL injection attacks insert SQL statements into form fields, query strings, headers, or cookies to manipulate the database queries an application executes. The SQLI rule group in CRS detects these patterns in request data before the request reaches the application."
+    - content: "Attacks that inject client-side scripts into web pages to execute in other users' browsers."
+      isCorrect: false
+      explanation: "Incorrect. Client-side script injection is cross-site scripting (XSS), which is handled by the XSS rule group in CRS. The SQLI rule group specifically targets SQL statement injection patterns."
+    - content: "Attacks that intercept encrypted traffic between the client and the server."
+      isCorrect: false
+      explanation: "Incorrect. Interception of encrypted traffic is a transport-layer attack not addressed by WAF rules. The SQLI rule group targets application-layer injection patterns in HTTP request content."
