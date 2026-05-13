@@ -37,7 +37,6 @@ subjects:
 - security
 units:
 - learn.wwl.priva-understand-microsoft-priva.introduction
-- learn.wwl.priva-understand-microsoft-priva.address-privacy-challenges
 - learn.wwl.priva-understand-microsoft-priva.priva-overview
 - learn.wwl.priva-understand-microsoft-priva.navigate-priva-portal
 - learn.wwl.priva-understand-microsoft-priva.configure-priva-settings
