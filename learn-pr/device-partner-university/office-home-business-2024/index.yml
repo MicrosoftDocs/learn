@@ -1,0 +1,62 @@
+### YamlMime:Module
+uid: learn.dpu.office-home-business-2024
+title: Choose the best Office productivity option for stable and evolving workflows
+
+metadata:
+  title: Choose The Best Office Productivity Option For Stable And Evolving Workflows
+  description: >
+    In this module, you’ll learn how to choose the Office productivity option that best fits your needs by evaluating key decision criteria—such as product model, change tolerance, service dependency, AI benefits, and deployment style—and applying them to real-world scenarios involving stable and evolving workflows.
+  ms.date: 05/12/2026
+  author: sheridan-connor
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: office
+
+summary: >
+  Many decision-makers choose Microsoft productivity suites because they need reliable tools to help their businesses handle documents, spreadsheets, presentations, email, and notes. But modern offerings don't just differ in which apps are available—they differ in how **they deliver value over time**.
+
+  Some Office options are part of ongoing services, where features evolve continuously and capabilities such as AI-assisted drafting, summarizing, and analysis might be part of the experience. Other Office options are designed as standalone productivity suites, where you purchase a defined set of applications and expect a stable experience for years.
+
+  This module helps you choose the Office productivity option that best fits your needs by focusing on one key decision:
+
+  **Do you want productivity tools that operate as a stable suite, or as part of an evolving service ecosystem that might include AI features and other service benefits?**
+
+  You'll compare Office productivity options, examine helpful decision criteria, and apply those criteria to real-world scenarios so you can confidently choose the best option for your work.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Choose the Office productivity option that best fits your needs based on product model, change tolerance, service dependency, AI benefits, and deployment style.
+
+prerequisites: |
+  - None
+
+iconUrl: /training/achievements/office-home-business-2024.svg
+
+ratingEnabled: false
+
+levels:
+  - beginner
+
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+
+products:
+  - office
+
+units:
+  - learn.dpu.office-home-business-2024.introduction
+  - learn.dpu.office-home-business-2024.understand-product-options
+  - learn.dpu.office-home-business-2024.analyze-decision-criteria
+  - learn.dpu.office-home-business-2024.scenario-predictable-workflows
+  - learn.dpu.office-home-business-2024.scenario-ai-assistance
+  - learn.dpu.office-home-business-2024.scenario-minimize-service
+  - learn.dpu.office-home-business-2024.scenario-evolving-workflows
+  - learn.dpu.office-home-business-2024.knowledge-check
+  - learn.dpu.office-home-business-2024.summary
+
+badge:
+  uid: learn.dpu.office-home-business-2024.badge
