@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.github.memory-state-evaluation
+title: Memory, State, and Evaluation
+metadata:
+  title: Memory, State, and Evaluation
+  description: This module introduces the foundations of agent memory, state management, and evaluation. You will learn how to structure memory, persist progress through GitHub artifacts, maintain consistency across environments, and define clear signals for success.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/13/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: Learn how to manage agent memory and state, persist progress across environments, and evaluate agent behavior using clear success signals.
+
+abstract: |
+  By the end of this module, you will be able to:
+  - Learn agent memory strategies using short-term, long-term, and external memory 
+  - Learn how to maintain and persistent agent state and manage context drift
+  - Learn how to manage agent state across tools and environments 
+  - Understand agent evaluation signals and success criteria 
+
+prerequisites: |
+  - A GitHub account 
+  - Basic understanding of repositories, branches, and pull requests 
+  - Familiarity with GitHub Actions 
+  - General understanding of agent workflows in GitHub, IDE, or CLI environments 
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.memory-state-evaluation.introduction
+  - learn.github.memory-state-evaluation.agent-memory-strategies
+  - learn.github.memory-state-evaluation.agent-state-context-drift
+  - learn.github.memory-state-evaluation.memory-state-continuity
+  - learn.github.memory-state-evaluation.evaluation-signals-quality-gates
+  - learn.github.memory-state-evaluation.agent-failures-behavior-improvement
+  - learn.github.memory-state-evaluation.knowledge-check
+  - learn.github.memory-state-evaluation.summary
+badge:
+  uid: learn.github.memory-state-evaluation.badge

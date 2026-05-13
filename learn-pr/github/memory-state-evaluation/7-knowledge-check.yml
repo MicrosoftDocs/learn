@@ -1,0 +1,107 @@
+### YamlMime:ModuleUnit
+uid: learn.memory-state-evaluation.knowledge-check
+title: Module assessment
+metadata:
+  unitType: knowledge_check
+  title: Module assessment
+  description: Verify your knowledge of agent memory, state management, evaluation, and failure analysis.
+  ms.date: 05/13/2026
+  author: camihmerhar
+  ms.author: camihmerhar
+  ms.topic: unit
+  module_assessment: true
+durationInMinutes: 15
+content: |
+
+quiz:
+  questions:
+
+  - content: "Which type of memory is considered the most reliable source of truth in agent workflows?"
+    choices:
+    - content: "Short-term memory stored in prompts."
+      isCorrect: false
+      explanation: "Incorrect. Short-term memory is temporary and not reliable across sessions."
+    - content: "Long-term memory stored in cached responses."
+      isCorrect: false
+      explanation: "Incorrect. Cached responses are not authoritative sources of truth."
+    - content: "External memory stored in GitHub artifacts such as issues and pull requests."
+      isCorrect: true
+      explanation: "Correct. External memory is durable and serves as the source of truth."
+    - content: "Logs that are automatically deleted after execution."
+      isCorrect: false
+      explanation: "Incorrect. Logs are temporary and not intended as the primary source of truth."
+
+  - content: "What is the primary role of a pull request in agent workflows?"
+    choices:
+    - content: "To automatically deploy changes to production."
+      isCorrect: false
+      explanation: "Incorrect. Deployment is handled separately."
+    - content: "To act as a central place to track progress, decisions, and validation results."
+      isCorrect: true
+      explanation: "Correct. Pull requests serve as a state anchor for agent workflows."
+    - content: "To store workflow logs permanently."
+      isCorrect: false
+      explanation: "Incorrect. Logs are stored in workflow runs, not PRs."
+    - content: "To replace issues as the source of requirements."
+      isCorrect: false
+      explanation: "Incorrect. Issues typically define requirements."
+
+  - content: "What is context drift in agent workflows?"
+    choices:
+    - content: "When workflows exceed their execution time."
+      isCorrect: false
+      explanation: "Incorrect. Execution time is unrelated to drift."
+    - content: "When the agent’s actions no longer align with the original goal or prior decisions."
+      isCorrect: true
+      explanation: "Correct. Context drift occurs when alignment is lost."
+    - content: "When logs are deleted after retention expires."
+      isCorrect: false
+      explanation: "Incorrect. This is artifact expiration."
+    - content: "When a branch is merged into the default branch."
+      isCorrect: false
+      explanation: "Incorrect. Merging does not indicate drift."
+
+  - content: "Which GitHub feature ensures validation must pass before merging changes?"
+    choices:
+    - content: "Workflow logs."
+      isCorrect: false
+      explanation: "Incorrect. Logs provide information but do not enforce rules."
+    - content: "Required status checks."
+      isCorrect: true
+      explanation: "Correct. Required checks must pass before merging."
+    - content: "Issue comments."
+      isCorrect: false
+      explanation: "Incorrect. Comments do not enforce validation."
+    - content: "Commit messages."
+      isCorrect: false
+      explanation: "Incorrect. Messages do not control merging."
+
+  - content: "Which GitHub artifacts are most useful for analyzing agent failures?"
+    choices:
+    - content: "Workflow logs, workflow runs, and pull requests."
+      isCorrect: true
+      explanation: "Correct. These provide execution and decision history."
+    - content: "Repository stars and watchers."
+      isCorrect: false
+      explanation: "Incorrect. These are unrelated to execution."
+    - content: "Branch names only."
+      isCorrect: false
+      explanation: "Incorrect. Names do not provide failure details."
+    - content: "Issue labels."
+      isCorrect: false
+      explanation: "Incorrect. Labels do not show execution behavior."
+
+  - content: "How can agent behavior be improved after identifying a failure?"
+    choices:
+    - content: "By rerunning the workflow without changes."
+      isCorrect: false
+      explanation: "Incorrect. This does not address the root cause."
+    - content: "By adjusting prompts, memory structure, or workflow configuration."
+      isCorrect: true
+      explanation: "Correct. Improvements should target the root cause."
+    - content: "By deleting the pull request."
+      isCorrect: false
+      explanation: "Incorrect. This removes useful context."
+    - content: "By ignoring the failure."
+      isCorrect: false
+      explanation: "Incorrect. Failures should be analyzed and fixed."
