@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-vm-security-machine-configuration.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Azure Machine Configuration extension capabilities, prerequisites, built-in baseline policies, and custom configuration authoring.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer assigns the 'Windows machines should meet requirements of the Azure compute security baseline' policy. The policy shows noncompliant resources for some VMs even though the VMs are healthy. What two prerequisites must be present on the VM for the policy to evaluate compliance?"
+    choices:
+    - content: "Log Analytics agent and Azure Monitor agent"
+      isCorrect: false
+      explanation: "Azure Machine Configuration doesn't rely on the Log Analytics agent or Azure Monitor agent for OS compliance evaluation. These agents are used for monitoring and log collection, not for guest OS configuration assessment."
+    - content: "Azure Machine Configuration extension and system-assigned managed identity"
+      isCorrect: true
+      explanation: "The Azure Machine Configuration extension must be installed on the VM, and the VM must have a system-assigned managed identity. The extension uses the managed identity to authenticate to Azure and report compliance results. Without both prerequisites, the policy can't evaluate the VM's OS settings."
+    - content: "Microsoft Defender for Endpoint agent and Guest Attestation extension"
+      isCorrect: false
+      explanation: "The Defender for Endpoint agent is used for threat detection and vulnerability assessment, and the Guest Attestation extension supports Trusted Launch integrity monitoring. Neither is a prerequisite for Azure Machine Configuration OS baseline compliance evaluation."
+  - content: "After admins author and locally test a custom Azure Machine Configuration package, what is the correct sequence of steps to deploy it using Azure Policy?"
+    choices:
+    - content: "Upload to Azure Storage → create a custom policy definition referencing the package → assign the policy"
+      isCorrect: true
+      explanation: "The custom configuration package must first be uploaded to an accessible Azure Storage location. A custom Azure Policy definition is then created that references the package URL. Finally, the policy is assigned to the appropriate scope (management group, subscription, or resource group) to begin evaluating or enforcing the configuration."
+    - content: "Upload to Azure Key Vault → reference it in a policy initiative → deploy via Defender for Cloud"
+      isCorrect: false
+      explanation: "Custom Machine Configuration packages are stored in Azure Storage, not Azure Key Vault. Key Vault stores keys and secrets, not configuration packages. The deployment path is: Azure Storage → custom policy definition → policy assignment."
+    - content: "Commit to a GitHub repository → link to Azure Policy as a code-based policy → autodeploy"
+      isCorrect: false
+      explanation: "Azure Machine Configuration doesn't support direct GitHub repository integration for policy deployment. The package must be uploaded to Azure Storage and referenced in a custom policy definition."
+  - content: "A security engineer is preparing to deploy Azure Machine Configuration OS baseline enforcement across Contoso Manufacturing's production VMs. Which initial approach minimizes the risk of service disruption?"
+    choices:
+    - content: "Assign in enforce mode immediately to close compliance gaps as quickly as possible"
+      isCorrect: false
+      explanation: "Deploying in enforce mode immediately can cause service disruptions if the baseline settings conflict with existing VM configurations—for example, by enforcing service states or security settings that the application depends on. Starting in audit mode is the recommended practice."
+    - content: "Deploy in audit mode first to identify noncompliant settings, then promote to enforce mode after reviewing the issues"
+      isCorrect: true
+      explanation: "The recommended approach is to start in audit mode (AuditIfNotExists), which reports noncompliant settings without making changes. After reviewing which settings are noncompliant and assessing the issues of enforcement on running workloads, you can promote the assignment to enforce mode (DeployIfNotExists) with confidence."
+    - content: "Apply Azure Policy built-in initiatives with Deny effect at the management group scope"
+      isCorrect: false
+      explanation: "Azure Policy Deny effects prevent resource creation or modification but don't configure or audit OS settings within VMs. Machine Configuration uses AuditIfNotExists and DeployIfNotExists effects, not Deny."

@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.github.developing-agentic-systems-1
+metadata:
+  title: Developing in Agentic AI Systems Part 1 of 2
+  description: Learn how to design, deploy, and manage agentic AI systems within the software development lifecycle by integrating, orchestrating, and governing autonomous agents using GitHub to ensure safe, reliable, and scalable delivery.
+  brand: github
+  ms.date: 05/06/2026
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: learning-path
+title: Developing in Agentic AI Systems Part 1 of 2
+summary: |
+  Learn how to design, deploy, and manage agentic AI systems within the software development lifecycle.
+
+  In this learning path, you'll:
+
+  - Integrate AI agents into the software development lifecycle (SDLC) by defining agent tasks, inputs/outputs, and execution boundaries
+  - Design and configure agent architectures that separate planning, reasoning, and execution to improve reliability and control
+  - Implement tool use and environment interactions by configuring agent tools, permissions, and MCP servers within development environments
+
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+  - github
+modules:
+  - learn.github.foundations-agentic-ai
+  - learn.github.design-agent-architecture-integration
+  - learn.github.agent-tooling-mcp-execution-environments
+levels:
+  - beginner
+  - intermediate
+iconUrl: /training/achievements/agentic-github-1
+prerequisites: |
+  - A [GitHub](https://github.com) account
+  - Basic understanding of AI fundamentals
+  - Basic understanding of repositories, branches, and pull requests
+  - General knowledge of CI and CD concepts
+trophy:
+  uid: learn.github.agentic-github-1

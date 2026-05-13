@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-infrastructure-as-code.enforce-policy-compliance-iac-deployments
+metadata:
+  title: Enforce policy compliance in IaC deployments
+  description: Apply Azure Policy in a policy-as-code workflow using source control and CI/CD pipelines to block noncompliant IaC deployments at the platform level.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enforce policy compliance in IaC deployments
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-enforce-policy-compliance-iac-deployments.md)]

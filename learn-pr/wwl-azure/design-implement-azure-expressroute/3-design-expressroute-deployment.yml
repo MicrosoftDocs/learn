@@ -28,4 +28,4 @@ quiz:
       explanation: "Incorrect. Microsoft manages ExpressRoute Direct."
     - content: "ExpressRoute Direct is optimized for a single tenant with multiple business units."
       isCorrect: true
-      explanation: "Correct. For a single tenant with multiple business units, use a service provider model."
+      explanation: "Correct. A single tenant with multiple business units doesn't need a service provider model."

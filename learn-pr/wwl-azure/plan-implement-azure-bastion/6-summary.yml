@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-azure-bastion.summary
+metadata:
+  title: Summary
+  description: Summary of planning and implementing Azure Bastion, covering SKU selection, deployment architecture, configuration, and VM connection methods.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

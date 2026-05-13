@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.protect-backup-data-azure-backup-security
+metadata:
+  title: Protect Backup Data with Azure Backup Security Features
+  description: "Protect Azure Backup data against ransomware, accidental deletion, and rogue administrators. Configure enhanced soft delete, vault immutability, Multi-User Authorization with Resource Guard, and RBAC controls to achieve an Excellent security posture rating across Recovery Services vaults."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-backup
+  ai-usage: ai-assisted
+title: Protect backup data with Azure Backup security features
+summary: Protect Azure Backup data against ransomware, accidental deletion, and rogue administrators. Configure enhanced soft delete, vault immutability, Multi-User Authorization with Resource Guard, and RBAC controls to achieve an Excellent security posture rating across Recovery Services vaults.
+abstract: |
+  After completing this module, you can:
+    - Configure soft delete and vault immutability to protect backup recovery points from deletion
+    - Implement Multi-User Authorization using Resource Guard to prevent unauthorized critical backup operations
+prerequisites: |
+  - Working knowledge of Azure Backup including Recovery Services vaults and backup policies
+  - Understanding of Azure role-based access control (RBAC) and resource hierarchy
+  - Familiarity with ransomware threats and their challenges on backup infrastructure
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-backup
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.protect-backup-data-azure-backup-security.introduction
+- learn.wwl.protect-backup-data-azure-backup-security.enable-soft-delete-immutable-vaults
+- learn.wwl.protect-backup-data-azure-backup-security.configure-multi-user-authorization-rbac
+- learn.wwl.protect-backup-data-azure-backup-security.knowledge-check
+- learn.wwl.protect-backup-data-azure-backup-security.summary
+badge:
+  uid: learn.wwl.protect-backup-data-azure-backup-security.badge

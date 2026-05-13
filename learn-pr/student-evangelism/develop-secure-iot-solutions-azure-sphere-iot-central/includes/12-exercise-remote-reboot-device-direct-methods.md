@@ -1,26 +1,20 @@
 ## Step 1: Build and deploy your application
 
 1. Start Visual Studio Code to open your project.
-
-2. Click **Open folder**.
-
-3. Open the **Azure-Sphere lab** folder.
-
-4. Open the **Lab_4_Direct_Methods** folder.
-
-5. Click **Select Folder** or the **OK** button to open the project.
+1. Click **Open folder**.
+1. Open the **Azure-Sphere** folder.
+1. Open the **Lab_4_Direct_Methods** folder.
+1. Click **Select Folder** or the **OK** button to open the project.
 
 ## Step 2: Set your developer board configuration
 
-These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
+These labs support developer boards from Avnet and Seeed Studio. The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you're using the Avnet Revision 1 board, no **CMakeLists.txt** change is required.
 
-The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you have this board, there's no additional configuration required.
+If you're using any other supported board, update **CMakeLists.txt** so that only one board is selected:
 
-1. Open the **CMakeList.txt** file.
-
-2. Add a `#` at the beginning of the set Avnet line to disable it.
-
-3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
+1. Open the **CMakeLists.txt** file.
+1. Add a `#` at the beginning of the `set(AVNET TRUE ...)` line to disable the Avnet Revision 1 default.
+1. Uncomment exactly one `set` command that matches your Azure Sphere developer board. Leave all other board `set` commands commented out.
 
    ```text
    set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
@@ -28,18 +22,24 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
-
-4. Save the file. This will auto-generate the CMake cache.
+1. Save the file. This will auto-generate the CMake cache.
 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
+1. You'll need to redo only the Azure IoT connection settings for this lab's **app_manifest.json** file. Do **not** replace the whole file with copied connection output or with the **app_manifest.json** file from a previous exercise.
+1. Copy or update only the top-level **CmdArgs** array, plus the **AllowedConnections** and **DeviceAuthentication** entries inside **Capabilities**, using the values from Notepad if you still have it open or from the **app_manifest.json** file you created in the previous exercise.
+1. Confirm that the **Capabilities** section still includes the `PowerControls` capability for `ForceReboot`. This lab uses `PowerManagement_ForceSystemReboot` to restart the device.
 
-2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open or copy them from the **app_manifest.json** file you created in the previous exercise.
+   ```json
+   "PowerControls": [
+       "ForceReboot"
+   ]
+   ```
 
-3. Replace the existing configuration by pasting the contents of the clipboard into **app_manifest.json**.
-
-4. Save the updated **app_manifest.json** file.
+   > [!WARNING]
+   > `ForceReboot` and `ForcePowerDown` allow an application to immediately terminate all applications on the device. Used incorrectly — for example, on a device that reboots before it can connect to the Azure Sphere Security Service — this can result in the device being **unable to fetch updates and requiring recovery**. Use `ForceReboot` only when required, and ensure your application leaves enough idle, connected time for the device to receive operating system and application updates between reboots. See [Force Power Down and updates](/azure-sphere/app-development/power-down?view=azure-sphere-integrated&azure-portal=true#force-power-down-and-updates&preserve-view=true) for the official guidance.
+1. Save the updated **app_manifest.json** file.
 
 ## Step 4: Start the app build deploy process
 
@@ -81,7 +81,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 1. Select the Azure IoT Central **Commands** tab.
 
-1. Set the **Restart Device** time in seconds, and then click **Run**.
+1. Set the **Restart Device** command request value to an integer from **3** through **9** seconds, such as `5`, and then click **Run**. The `RestartDeviceHandler` in this lab accepts only values in that range; values outside the range are expected to fail.
 
 1. Observe the device rebooting. The LEDs will turn off for a few seconds.
 
@@ -90,8 +90,8 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
    :::image type="content" source="../media/iot-central-device-command-run.png" alt-text="The illustration shows how to control the device with a command.":::
 
-1. Switch back to Azure IoT Central and click the **Command History** button to view the result of the command.
+1. Switch back to Azure IoT Central and select **command history** to view the result of the command.
 
-## Close Visual Studio
+## Close Visual Studio Code
 
-Now close Visual Studio.
+Now close Visual Studio Code.
