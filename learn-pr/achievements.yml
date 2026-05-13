@@ -8046,3 +8046,8 @@ achievements:
   title: Manage Microsoft Priva Subject Rights Requests
   summary: Microsoft Priva Subject Rights Requests let organizations respond to privacy rights requests in a structured way. Learn how to create and manage requests for data stored in Microsoft 365, review collected information, and complete requests with accurate reports and audit records.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-understand-microsoft-priva.badge
+  type: badge
+  title: Understand Microsoft Priva
+  summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management and Subject Rights Requests, and learn how to configure settings and assign roles to ensure secure and effective use of Priva.
+  iconUrl: /training/achievements/generic-badge.svg
