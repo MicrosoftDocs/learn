@@ -18,14 +18,14 @@ Without a SIEM, detecting a breach can take days or weeks. With one, detection c
 
 ## What is SOAR?
 
-Security orchestration, automation, and response (SOAR) takes the alerting capability of a SIEM further. A SOAR system takes alerts from a SIEM—and from other security tools—then triggers action-driven automated workflows to handle the response.
+Security orchestration, automation, and response (SOAR) take the alerting capability of a SIEM further. A SOAR system takes alerts from a SIEM—and from other security tools—then triggers action-driven automated workflows to handle the response.
 
 SOAR introduces two important concepts into security operations:
 
 - **Orchestration** connects different security tools and systems so they work together. For example, when the SIEM detects a threat, the SOAR system can simultaneously query an identity system for user context, check a threat intelligence feed for related indicators, and notify the security team—all coordinated automatically.
 - **Automation** handles repetitive, time-consuming tasks without requiring manual effort. Rather than having an analyst follow the same response steps every time a particular alert fires, a SOAR platform executes those steps automatically.
 
-A key SOAR concept is the *playbook*—a predefined sequence of automated actions triggered by a specific alert or incident type. For example, when a user account is flagged for suspicious login activity, a playbook can automatically:
+A key SOAR concept is the *playbook*—a predefined sequence of automated actions triggered by a specific alert or incident type. For example, when a user account is flagged for suspicious sign-in activity, a playbook can automatically:
 
 1. Disable the account.
 2. Send a notification to the security team.
