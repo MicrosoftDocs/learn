@@ -2,6 +2,8 @@ Microsoft Sentinel is a scalable, cloud-native security information and event ma
 
 Microsoft Sentinel has evolved beyond a traditional SIEM. Today it serves both as a SIEM and as a security platform—providing an AI-ready, data-first foundation that transforms telemetry into actionable security insights while keeping your security team in command.
 
+:::image type="content" source="../media/sentinel-architecture-diagram.png" lightbox="../media/sentinel-architecture-diagram.png" alt-text="Architecture diagram of Microsoft Sentinel as a SIEM and a security platform.":::
+
 ## Microsoft Sentinel as a SIEM
 
 As a SIEM, Microsoft Sentinel gives your security team a unified view of threats across the entire enterprise. It collects and correlates signals from all users, devices, applications, and infrastructure—whether on-premises, in Azure, or in other cloud environments like Amazon Web Services (AWS) and Google Cloud Platform (GCP).
@@ -15,8 +17,6 @@ Microsoft Sentinel supports end-to-end security operations across four interconn
 
 Microsoft Sentinel is available in the Microsoft Defender portal, which is the recommended access point and provides a unified security operations experience.
 
-:::image type="content" source="../media/sentinel-in-defender.png" lightbox="../media/sentinel-in-defender.png" alt-text="Screen capture of Microsoft Sentinel in the Microsoft Defender portal.":::
-
 > [!NOTE]
 > The Azure portal experience for Microsoft Sentinel will be retired on March 31, 2027. Microsoft Sentinel will be available only in the Microsoft Defender portal after that date.
 
@@ -26,11 +26,13 @@ Beyond its SIEM capabilities, Microsoft Sentinel provides an extensible security
 
 ### Microsoft Sentinel data lake
 
-The Microsoft Sentinel data lake is a fully managed, cloud-native data lake purpose-built for security operations. It's the central, unified repository for all security data ingested into Microsoft Sentinel. Key capabilities include:
+Microsoft Sentinel stores security data across two complementary tiers. The **analytics tier** is a Log Analytics workspace that supports real-time alerting, advanced hunting, and incident management—this is where data is ingested first and where analytics rules run. The **data lake tier** is a cost-effective, long-term storage layer purpose-built for security operations. Data from the analytics tier is mirrored to the data lake tier, preserving a single copy of the data in an open format.
+
+Together, these tiers provide a unified data platform with the following capabilities:
 
 - **Unified storage**: Centralizes logs from Microsoft 365, Microsoft Defender, Azure, Microsoft Entra ID, Microsoft Purview, Microsoft Intune, and over 350 connectors including AWS and GCP—eliminating data silos.
-- **Multi-modal analytics**: Query security data using Kusto Query Language (KQL), graph analytics, and AI-powered notebooks—all on a single copy of open-format data.
-- **Cost-efficient retention**: Stores large volumes of security data at scale. Long-term retention enables investigations into persistent threats and the creation of behavioral baselines using months of historical data.
+- **Multi-modal analytics**: Query security data using Kusto Query Language (KQL) in the analytics tier, and use graph analytics and AI-powered notebooks on data lake tier data—all on a single copy of open-format data.
+- **Cost-efficient retention**: The data lake tier stores large volumes of security data at scale for up to 12 years. Long-term retention enables investigations into persistent threats and the creation of behavioral baselines using months of historical data—without the cost of keeping all data in the analytics tier.
 
 ### Microsoft Sentinel graph
 

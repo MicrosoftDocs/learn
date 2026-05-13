@@ -20,9 +20,9 @@ quiz:
   questions:
   - content: "Which of the following statements about Azure VNets is correct?"
     choices:
-    - content: "Outbound communication with the internet must be configured for each resource on the VNet."
+    - content: "VNet resources can't be configured for outbound communication with the internet."
       isCorrect: false
-      explanation: "Incorrect. All resources in a VNet can communicate outbound to the internet, by default."
+      explanation: "Incorrect. VNet resources can be configured for outbound communication to the internet."
     - content: "Azure VNets enable communication between Azure resources."
       isCorrect: true
       explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets."
