@@ -25,6 +25,8 @@ When you configure task dependencies, you choose from several dependency conditi
 
 These conditions give you control over task execution beyond simple sequential ordering. For example, you might configure a cleanup task with **All done** to ensure temporary resources are released regardless of whether earlier tasks succeeded.
 
+When debugging a pipeline, you can **disable individual tasks** rather than deleting them. A disabled task is skipped at runtime but keeps its configuration, dependencies, and run history intact, so you can re-enable it without rebuilding the task. This is preferable to deletion when you might need the task again — for example, pausing a broken task so the rest of the job continues to run on schedule.
+
 ## Design task execution patterns
 
 Your choice between **serial** and **parallel execution** affects both runtime performance and resource utilization. Tasks without dependencies on each other can run simultaneously, reducing total job duration.

@@ -3,11 +3,11 @@ uid: learn.fundamentals-of-ai-security.ai-architecture-layers
 title: AI architecture layers
 metadata:
   title: AI architecture layers
-  description: AI architecture layer information
-  ms.date: 03/06/2026
+  description: Explore the three layers of AI architecture, the security concerns at each layer, and how the shared responsibility model divides security duties between providers and customers.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 9
 content: |
   [!include[](includes/3-ai-architecture-layers.md)]

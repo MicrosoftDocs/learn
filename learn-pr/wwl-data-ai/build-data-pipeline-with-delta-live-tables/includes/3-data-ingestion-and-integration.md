@@ -90,6 +90,9 @@ SELECT from_json('{"a":1, "b":0.8}', 'a INT, b DOUBLE');
 
 Optionally, you can use expectations to apply quality constraints that validate data as it flows through ETL pipelines. Expectations provide greater insight into data quality metrics and allow you to fail updates or drop records when detecting invalid records.
 
+> [!IMPORTANT]
+> The **Advanced** product edition of Lakeflow Declarative Pipelines is required to use expectations. If your pipeline includes expectations with the Core or Pro editions, you receive an error.
+
 ![Diagram showing Lakeflow Declarative Pipelines expectations.](../media/expectations.png)
 
 Here's an example of a materialized view that defines a constraint clause. In this case, the constraint contains the actual logic for what is being validated: the Country_Region shouldn't be empty. When a record fails this condition, the expectation is triggered.
@@ -106,7 +109,7 @@ SELECT
    Confirmed,
    Deaths,
    Recovered
-FROM live.raw_covid_data;
+FROM raw_covid_data;
 ```
 
 Examples of constraints:
@@ -160,7 +163,7 @@ SELECT
    sum(Confirmed) as Total_Confirmed,
    sum(Deaths) as Total_Deaths,
    sum(Recovered) as Total_Recovered
-FROM live.processed_covid_data
+FROM processed_covid_data
 GROUP BY Report_Date;
 ```
 
@@ -178,3 +181,14 @@ Lakeflow Declarative Pipelines support tasks such as:
 - Alerting on pipeline events such as the success or failure of pipeline updates. 
 - Viewing metrics for streaming sources like Apache Kafka and Auto Loader. 
 - Receiving email notifications when a pipeline update fails or completes successfully.
+
+## Develop with the Lakeflow Pipelines Editor
+
+The **Lakeflow Pipelines Editor** is the integrated development environment for creating and iterating on pipeline source code. When you create a new pipeline, the editor provides a default folder structure with a `transformations/` directory for source code and an `explorations/` directory for ad hoc analysis notebooks. Store your pipeline source code in a Git folder to enable version control.
+
+The editor supports iterative development through several features:
+
+- **Dry run**: Validates your pipeline code without processing data, allowing you to catch syntax errors and missing dependencies before execution.
+- **Selective execution**: Run individual files or single table definitions rather than the entire pipeline, enabling faster iteration during development.
+- **Interactive DAG**: Visualize the dependency graph between your tables, select specific tables for targeted refreshes, and inspect execution metrics.
+- **Data preview**: Sample data from streaming tables and materialized views directly in the editor to verify transformation logic.

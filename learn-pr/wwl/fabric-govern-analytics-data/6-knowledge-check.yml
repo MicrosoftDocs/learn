@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-govern-analytics-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: "Knowledge check for governing analytics data in Microsoft Fabric."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: ""
+quiz:
+  questions:
+  - content: "An analytics team needs to ensure that a lakehouse containing customer personal data is protected throughout the entire data lineage, including downstream semantic models and reports. Which sensitivity labeling capability automatically propagates the label to dependent items?"
+    choices:
+    - content: "Default labeling"
+      isCorrect: false
+      explanation: "Default labeling applies a label when an item is created or edited without one. It doesn't propagate labels to existing downstream items in a data lineage."
+    - content: "Mandatory labeling"
+      isCorrect: false
+      explanation: "Mandatory labeling requires users to apply a label before saving, but it doesn't propagate labels from parent items to downstream dependents."
+    - content: "Downstream inheritance"
+      isCorrect: true
+      explanation: "Downstream inheritance automatically propagates a sensitivity label from an upstream item to all dependent downstream items, protecting data throughout the lineage."
+  - content: "A data team wants to designate a semantic model as the authoritative, single source of truth for product reference data across the organization. Which endorsement level is most appropriate?"
+    choices:
+    - content: "Promoted"
+      isCorrect: false
+      explanation: "Promoted indicates that the item creator considers it ready for sharing, but it doesn't convey that the item is an authoritative source of organizational reference data."
+    - content: "Certified"
+      isCorrect: false
+      explanation: "Certified indicates that an authorized reviewer has verified quality standards, but it doesn't specifically designate the item as a core source of organizational reference data."
+    - content: "Master data"
+      isCorrect: true
+      explanation: "Master data designates that an item contains core organizational reference data and serves as the single source of truth for that data category."
+  - content: "A governance lead reviews the OneLake catalog and notices that many items lack descriptions and sensitivity labels. Which tab in the OneLake catalog provides recommended actions to improve governance posture?"
+    choices:
+    - content: "Explore tab"
+      isCorrect: false
+      explanation: "The Explore tab helps users browse and filter items across the environment, but it doesn't surface governance improvement recommendations."
+    - content: "Govern tab"
+      isCorrect: true
+      explanation: "The Govern tab provides insights about the governance posture of data you own and presents recommended actions to improve governance status, such as adding descriptions or applying labels."
+    - content: "Secure tab"
+      isCorrect: false
+      explanation: "The Secure tab centralizes security management for workspace roles and OneLake security roles, but it doesn't provide governance posture recommendations."
+  - content: "An organization deploys a data agent that answers executive questions about quarterly revenue. The agent has access to both a certified semantic model and an unpromoted experimental dataset. How does endorsement affect the agent's behavior?"
+    choices:
+    - content: "The agent ignores endorsement metadata and queries both sources equally."
+      isCorrect: false
+      explanation: "AI agents in Fabric use endorsement metadata as a quality signal when determining which sources to prioritize."
+    - content: "The agent prioritizes the certified semantic model as a more authoritative source."
+      isCorrect: true
+      explanation: "Endorsement metadata acts as a quality signal that AI agents evaluate programmatically. A certified item is treated as more authoritative than an unendorsed item."
+    - content: "The agent only queries items that have the master data designation."
+      isCorrect: false
+      explanation: "AI agents don't limit queries exclusively to master data items. They use all endorsement levels as signals to prioritize sources, with higher endorsement levels carrying more weight."
+  - content: "An analytics engineer documents a semantic model with the description 'Monthly retail sales revenue by region and product category, refreshed daily from the certified lakehouse.' How does this affect AI agent responses compared to a generic description?"
+    choices:
+    - content: "The description has no effect because AI agents rely only on sensitivity labels for context."
+      isCorrect: false
+      explanation: "AI agents use multiple metadata sources for context, including item descriptions, endorsement, and sensitivity labels."
+    - content: "The detailed description provides context that helps the AI agent generate specific, accurate responses about the data's scope and refresh frequency."
+      isCorrect: true
+      explanation: "AI agents use item descriptions to understand what data represents. Specific descriptions enable agents to generate responses that accurately reference the data's scope, source, and update frequency."
+    - content: "The description only affects human users browsing the OneLake catalog, not AI agent behavior."
+      isCorrect: false
+      explanation: "Item descriptions serve as context for both human users and AI agents. AI agents use descriptions to understand data meaning and generate relevant responses."

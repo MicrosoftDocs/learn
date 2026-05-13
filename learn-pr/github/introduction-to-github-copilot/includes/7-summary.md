@@ -6,7 +6,7 @@ GitHub Copilot helps developers work more efficiently and ship quality code.
 
 At the end of this module, you can:
 
-* Explain GitHub Copilot features and the subscription plans (Free, Pro, Pro+, Business and Enterprise)
+* Explain GitHub Copilot features and available plans for individuals and organizations
 * Set up and configure GitHub Copilot
 * Develop using GitHub Copilot and Visual Studio Code (VS Code)
 

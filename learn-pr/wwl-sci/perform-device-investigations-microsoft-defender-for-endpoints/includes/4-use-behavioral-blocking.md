@@ -66,11 +66,11 @@ When endpoint detection and response (EDR) in block mode is turned on, Defender 
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=69b80126-fa43-4f52-b89d-e4ebc3aba0a4]
 
-EDR in block mode is also integrated with threat & vulnerability management. Your organization's security team will get a security recommendation to turn EDR in block mode on if it isn't already enabled.
+EDR in block mode is also integrated with Microsoft Defender Vulnerability Management. Your organization's security team gets a security recommendation to turn EDR in block mode on if it isn't already enabled.
 
 ### What happens when something is detected?
 
-When EDR in block mode is turned on and a malicious artifact is detected, blocking and remediation actions are taken. You'll see detection status as Blocked or Prevented as completed actions in the Action Center.
+When EDR in block mode is turned on and a malicious artifact is detected, blocking and remediation actions are taken. You see detection status as Blocked or Prevented as completed actions in the Action Center.
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 

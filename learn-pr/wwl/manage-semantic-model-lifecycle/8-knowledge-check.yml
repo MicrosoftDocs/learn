@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-semantic-model-lifecycle.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check for managing the semantic model development lifecycle."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A team needs to ensure that every regional report uses the same visuals, measures, and layout but connects to a different data source. Which Power BI asset type best fits this requirement?"
+    choices:
+    - content: "Power BI template (.pbit)"
+      isCorrect: true
+      explanation: "Correct. A Power BI template captures report structure, visuals, data model definitions, and queries without data. When opened, it prompts for parameter values and credentials, making it ideal for reusable report layouts across different data sources."
+    - content: "Power BI data source file (.pbids)"
+      isCorrect: false
+      explanation: "Incorrect. A data source file configures connection information but doesn't include report layout, visuals, or model definitions. It solves connection consistency, not report structure consistency."
+    - content: "Shared semantic model with DirectQuery"
+      isCorrect: false
+      explanation: "Incorrect. A shared semantic model centralizes metric definitions for multiple reports but doesn't provide a reusable report layout. Reports still need to be built individually."
+  - content: "An analytics team uses Git integration to version-control their Fabric workspace. A developer commits changes to a semantic model, but the workspace shows a conflict. What does a conflict indicate?"
+    choices:
+    - content: "The same item changed in both the workspace and the repository since the last sync."
+      isCorrect: true
+      explanation: "Correct. A conflict occurs when the same item is modified in both locations since the last sync. The developer must resolve the conflict by choosing which version to keep."
+    - content: "The workspace contains items that don't exist in the repository."
+      isCorrect: false
+      explanation: "Incorrect. New items that exist only in one location appear as additions, not conflicts. Conflicts specifically involve the same item with competing changes."
+    - content: "The Git provider rejected the connection because of insufficient permissions."
+      isCorrect: false
+      explanation: "Incorrect. Permission issues result in authentication or authorization errors, not conflicts. Conflicts are a Git version control concept related to divergent changes."
+  - content: "Before deploying a semantic model to production, an analyst wants to verify that all relationships are valid and no orphaned foreign keys exist. Which SemPy function identifies relationship violations?"
+    choices:
+    - content: "list_relationship_violations()"
+      isCorrect: true
+      explanation: "Correct. The list_relationship_violations() function returns rows where a foreign key value in one table has no matching primary key value in the related table, identifying orphaned keys that can cause incorrect report results."
+    - content: "list_relationships()"
+      isCorrect: false
+      explanation: "Incorrect. The list_relationships() function returns the defined relationships in a model but doesn't check whether the data in those relationships is valid. It shows the structure, not the data integrity."
+    - content: "evaluate_measure()"
+      isCorrect: false
+      explanation: "Incorrect. The evaluate_measure() function tests DAX measure calculations against data. It doesn't inspect or validate the relationship structure between tables."
+  - content: "A team configures a deployment pipeline with development, test, and production stages. The development workspace connects to a test database, but production must connect to the live database. How should the team handle this difference?"
+    choices:
+    - content: "Configure a data source deployment rule that changes the connection when deploying to the production stage."
+      isCorrect: true
+      explanation: "Correct. Data source deployment rules automatically substitute configuration values when content moves between stages. This ensures each stage connects to the correct data source without manual intervention."
+    - content: "Manually update the data source connection in the production workspace after each deployment."
+      isCorrect: false
+      explanation: "Incorrect. Manual updates are error-prone and don't scale. Deployment rules automate this configuration change, ensuring consistency every time content is promoted."
+    - content: "Create separate semantic models for each stage with different hardcoded connection strings."
+      isCorrect: false
+      explanation: "Incorrect. Maintaining separate models defeats the purpose of deployment pipelines. The pipeline promotes the same content through stages while rules handle environment-specific configuration."
+  - content: "A semantic model depends on upstream data in a lakehouse that must finish loading before the model refreshes. An analyst currently schedules the model refresh one hour after the lakehouse load, but sometimes the load takes longer and the model refreshes against incomplete data. Which approach solves this problem?"
+    choices:
+    - content: "Use a Data Factory pipeline with a semantic model refresh activity that runs after the lakehouse load succeeds."
+      isCorrect: true
+      explanation: "Correct. A Data Factory pipeline enforces sequential execution. The semantic model refresh activity starts only after the upstream lakehouse load completes successfully, eliminating timing-based failures."
+    - content: "Schedule the semantic model refresh two hours after the lakehouse load instead of one."
+      isCorrect: false
+      explanation: "Incorrect. Increasing the delay reduces the risk but doesn't eliminate it. If the lakehouse load takes longer than two hours, the same problem occurs. A pipeline enforces order regardless of duration."
+    - content: "Enable real-time refresh on the semantic model so it always has current data."
+      isCorrect: false
+      explanation: "Incorrect. Semantic models use scheduled or on-demand refresh, not real-time streaming. Even if near-real-time options existed, they wouldn't solve the dependency ordering problem between upstream and downstream loads."

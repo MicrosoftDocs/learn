@@ -1,3 +1,10 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=70fd34a7-115d-489b-9fd7-9de5372a1f9e]
+
+::: zone-end
+
+::: zone pivot="text"
 The Azure Speech MCP server connects AI agents to speech-to-text and text-to-speech capabilities through the Model Context Protocol. In this module, you learned how to use this server to build an agent that can transcribe audio and generate speech.
 
 In this module, you learned how to:
@@ -7,6 +14,8 @@ In this module, you learned how to:
 - Set up Azure Blob Storage for audio file input and output.
 - Connect the Azure Speech MCP server to an agent in Microsoft Foundry.
 - Build a Python client application that invokes an agent with speech tools using the Foundry SDK.
+
+::: zone-end
 
 ## Learn more
 

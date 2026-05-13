@@ -80,7 +80,7 @@ Store custom instructions in a `.github/copilot-instructions.md` file at your wo
 
 Setup steps:
 
-1. Set `github.copilot.chat.codeGeneration.useInstructionFiles` to `true`.
+1. Verify that `github.copilot.chat.codeGeneration.useInstructionFiles` is enabled (on by default in recent versions of Visual Studio Code).
 1. Create `.github/copilot-instructions.md` at workspace root.
 1. Describe instructions using natural language and Markdown format.
 
@@ -160,6 +160,77 @@ Define instructions as text or reference external files:
 - **Use targeted application**: Leverage `applyTo` property for file-specific instructions.
 - **Reference efficiently**: Reference custom instructions in prompt files to avoid duplication.
 
+## Prompt files
+
+Prompt files are reusable, standalone task prompts stored as `.prompt.md` files. Unlike custom instructions — which describe *how* GitHub Copilot should respond — prompt files describe *what* should be done for a specific task. You run them on demand rather than having them automatically apply to every request.
+
+Prompt files are well-suited to recurring vibe coding workflows: scaffolding a new component, generating a first draft of a product requirements document, running a code review pass, or kicking off a session with your project context already loaded.
+
+### Create a prompt file
+
+Store prompt files in the `.github/prompts/` folder in your workspace. The file name becomes the prompt name.
+
+File structure:
+
+```md
+---
+mode: "ask"
+description: "Generate a product requirements document for a new feature"
+---
+# Generate a PRD
+
+Create a product requirements document for the described feature.
+
+Include the following sections:
+- Product summary
+- Target audience
+- Core features (prioritized by must-have / should-have / could-have)
+- Out of scope
+- Technical requirements
+
+Feature description: ${input:Feature description}
+```
+
+### Run a prompt file
+
+- **Command Palette**: Run `Chat: Run Prompt` and select the file.
+- **Chat input**: Type `#` in the Chat view and select the prompt file by name.
+
+Prompt files support `mode` values of `ask`, `edit`, and `agent`. They can also reference your custom instructions files using Markdown link syntax to avoid duplicating content across files.
+
+## Custom chat modes
+
+Custom chat modes let you configure how the GitHub Copilot Chat panel operates for a specific workflow. You define which tools are available, how the AI interacts with your codebase, and what role it should play — without modifying your custom instructions.
+
+For vibe coding, this is especially useful for separating the *planning* phase from the *building* phase. A planning mode can restrict GitHub Copilot to read-only analysis so it proposes designs without making changes, while an implementation mode unlocks full editing tools.
+
+### Create a custom chat mode
+
+Store custom chat mode files in the `.github/chatmodes/` folder in your workspace.
+
+File structure:
+
+```md
+---
+description: "Plan mode: read-only analysis and architecture decisions"
+tools: []
+---
+You are a software architect in planning mode. Analyze the codebase, identify patterns, suggest designs, and answer questions — but do not make any code changes.
+```
+
+Common chat mode configurations for vibe coding:
+
+| Mode | Tools | Use case |
+|------|-------|----------|
+| Planning | None (read-only) | Architecture decisions, feature design, PRD review |
+| Research | Web search | Investigating libraries, comparing approaches |
+| Implementation | Full tool access | Writing and editing code, running commands |
+| Review | Read-only | Code review, security audit, performance check |
+
+### Use a custom chat mode
+
+Select the mode from the chat mode picker in the Chat view toolbar. The mode persists for the session until you switch.
+
 ## Summary
 
-Custom instructions in GitHub Copilot Chat allow you to define coding practices, preferred technologies, and project requirements that are automatically included in every chat request. By using `.github/copilot-instructions.md` files, `.instructions.md` files, or Visual Studio Code settings, you can ensure that AI-generated responses align with your coding standards and project needs. This approach enhances the quality and relevance of AI assistance while maintaining control over the coding process.
+Customizing GitHub Copilot responses lets you shape AI assistance to fit your specific workflow. Custom instructions — using `.github/copilot-instructions.md` files, `.instructions.md` files, or Visual Studio Code settings — define *how* GitHub Copilot should respond, encoding your coding practices, standards, and preferences. Prompt files define *what* should be done for recurring tasks, giving you reusable prompts you can run on demand. Custom chat modes configure *how the chat session operates*, letting you switch between planning, research, implementation, and review workflows without changing your underlying instructions. Together, these three tools help you build a consistent vibe coding environment where GitHub Copilot understands your project from the start.

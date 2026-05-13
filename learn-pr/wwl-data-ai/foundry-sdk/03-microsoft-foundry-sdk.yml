@@ -11,6 +11,7 @@ metadata:
   ai-usage: ai-generated
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: video-or-text
 durationInMinutes: 7
 content: |
   [!include[](includes/03-microsoft-foundry-sdk.md)]

@@ -3,11 +3,11 @@ uid: learn.ai-security-controls.content-filters
 title: Content filters
 metadata:
   title: Content filters
-  description: Learn about content filters and how they can help you secure your AI systems
-  ms.date: 03/06/2026
+  description: Learn how content filters detect and block harmful content in AI systems, including input and output filtering pipelines and configuration strategies.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/3-content-filters.md)]

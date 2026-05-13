@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.design-agent-architecture-integration.agent-operations-controls
+title: Control and operate agents - observability, tools, MCP, secrets, hooks, and reliability
+metadata:
+  title: Control and operate agents - observability, tools, MCP, secrets, hooks, and reliability
+  description: This content is a part of the Designing Agent Architecture and SDLC Integration.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/28/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-agent-operations-controls.md)]

@@ -18,5 +18,5 @@ Familiarity with:
 - Windows PowerShell and its commands to perform specific tasks
 - PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
 - Windows PowerShell pipeline, PowerShell providers, and PowerShell drives 
-- CIM and WMI technologies
+- Common Information Model (CIM) and Windows Management Instrumentation (WMI) technologies
 - Using variables, arrays, hash tables, and scripting constructs in Windows PowerShell

@@ -7,7 +7,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Discover Azure AI Agents with A2A
 summary: Learn how to implement the A2A protocol to enable agent discovery, direct communication, and coordinated task execution across remote agents.
 abstract: |

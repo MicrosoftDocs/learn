@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 580" role="img" aria-labelledby="titleMC descMC">
+  <title id="titleMC">Key Components of an Effective Metaprompt</title>
+  <desc id="descMC">Diagram showing the five key components of an effective security metaprompt as a layered stack: role and scope definition, safety and compliance rules, grounding instructions, anti-manipulation defenses, and output formatting rules, each with a brief description.</desc>
+  <rect width="820" height="580" fill="#FFFFFF"/>
+
+  <!-- Header -->
+  <text x="410" y="42" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#1A1A1A">Metaprompt components</text>
+
+  <!-- Layer 1: Role and Scope Definition -->
+  <rect x="40" y="68" width="740" height="84" rx="10" fill="#00589A" stroke="#004A82" stroke-width="2"/>
+  <text x="76" y="102" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">1. Role and scope definition</text>
+  <text x="76" y="132" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#FFFFFF">Define what the AI is and isn't allowed to do, its expertise, and tone</text>
+
+  <!-- Layer 2: Safety and Compliance Rules -->
+  <rect x="40" y="164" width="740" height="84" rx="10" fill="#005A9E" stroke="#004578" stroke-width="2"/>
+  <text x="76" y="198" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">2. Safety and compliance rules</text>
+  <text x="76" y="228" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#FFFFFF">Decline harmful content, handle sensitive topics, acknowledge uncertainty</text>
+
+  <!-- Layer 3: Grounding Instructions -->
+  <rect x="40" y="260" width="740" height="84" rx="10" fill="#004578" stroke="#003056" stroke-width="2"/>
+  <text x="76" y="294" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">3. Grounding instructions</text>
+  <text x="76" y="324" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#FFFFFF">Base responses on provided context, require citations, handle gaps</text>
+
+  <!-- Layer 4: Anti-Manipulation Defenses -->
+  <rect x="40" y="356" width="740" height="84" rx="10" fill="#003056" stroke="#001D3A" stroke-width="2"/>
+  <text x="76" y="390" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">4. Anti-manipulation defenses</text>
+  <text x="76" y="420" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#FFFFFF">Never reveal system instructions, resist override attempts</text>
+
+  <!-- Layer 5: Output Formatting Rules -->
+  <rect x="40" y="452" width="740" height="84" rx="10" fill="#001D3A" stroke="#000E1D" stroke-width="2"/>
+  <text x="76" y="486" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">5. Output formatting rules</text>
+  <text x="76" y="516" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#FFFFFF">Set response lengths, define output format, handle ambiguous requests</text>
+
+  <!-- Right-side icons -->
+  <!-- Icon 1: Person/Role -->
+  <circle cx="738" cy="110" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="738" cy="102" r="7" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M725 122 Q738 114 751 122" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Icon 2: Shield/Safety -->
+  <path d="M729 200 L738 193 L747 200 L747 216 Q738 222 729 216 Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Icon 3: Anchor/Grounding -->
+  <circle cx="738" cy="293" r="6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="738" y1="299" x2="738" y2="318" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M728 313 Q738 325 748 313" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Icon 4: Lock/Anti-manipulation -->
+  <rect x="729" y="393" width="18" height="14" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M732 393 L732 387 Q738 378 744 387 L744 393" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Icon 5: Document/Formatting -->
+  <rect x="729" y="478" width="18" height="20" rx="2" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="733" y1="484" x2="743" y2="484" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="733" y1="489" x2="743" y2="489" stroke="#FFFFFF" stroke-width="1.5"/>
+  <line x1="733" y1="494" x2="740" y2="494" stroke="#FFFFFF" stroke-width="1.5"/>
+</svg>

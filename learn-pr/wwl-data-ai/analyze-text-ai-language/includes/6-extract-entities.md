@@ -1,4 +1,13 @@
+::: zone pivot="video"
 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=704f0d85-685a-4761-aac7-c1b4358aefed]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
 Named Entity Recognition identifies entities that are mentioned in the text. Entities are grouped into categories and subcategories, for example:
 
 - Person
@@ -43,3 +52,5 @@ Entities in document 1:
  - Microsoft (Organization)
  - February 4, 2014. (DateTime)
 ```
+
+::: zone-end

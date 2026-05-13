@@ -2,9 +2,7 @@ The Chat view in Visual Studio Code is used to manage chat conversations between
 
 The Chat view interface includes three sections: a toolbar near the top, a display area in the center, and an input and control menu at the bottom.
 
-![Screenshot showing how to access the Chat view in Visual Studio Code.](../media/github-copilot-chat-view-interface.png)
-
-To open the Chat view, you can select the **Toggle Chat** button (Copilot icon), or use the **Ctrl+Alt+I** keyboard shortcut.
+To open the Chat view, you can select the **Toggle Chat** button, or use the **Ctrl+Alt+I** keyboard shortcut.
 
 ## Select an agent
 
@@ -17,7 +15,26 @@ The Chat view provides the following built-in agents:
 To switch agents, open the agent picker at the bottom of the Chat view, and then select **Agent**, **Plan**, or **Ask**.
 
 > [!IMPORTANT]
-> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total number of premium requests used is based on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions GitHub Copilot takes on your behalf. The total number of premium requests used is based on the complexity of the task, the number of steps involved, and the model selected.
+
+## Choose where the agent runs
+
+Selecting an agent determines its role, but you also control *where* it runs using the **Agent Target** dropdown in the Chat view. This determines how the agent interacts with your workspace and when you receive results.
+
+- **Local**: runs interactively in the editor with full access to your workspace, tools, and models. Use this for real-time coding, codebase exploration, or any task where you want to review each step as it happens.
+- **GitHub Copilot CLI**: runs in the background on your machine. Use this when you want to implement a well-defined task while you continue working on something else.
+- **Cloud**: runs remotely using GitHub Copilot and integrates with GitHub pull requests. Use this to delegate a GitHub issue or create a pull request for team review.
+- **Third-party**: uses the agent harness from Anthropic or OpenAI to run either locally or in the cloud.
+
+## Control agent permissions
+
+You also control how much autonomy the agent has using the **Permissions** picker in the Chat view. Giving agents more autonomy increases efficiency but reduces your oversight of individual steps.
+
+| Permission level | Description |
+|---|---|
+| **Default Approvals** | Only safe, read-only tools run without explicit confirmation. Most tool calls show a confirmation dialog. |
+| **Bypass Approvals** | Auto-approves all tool calls without confirmation dialogs. |
+| **Autopilot** (Preview) | Auto-approves all tool calls, auto-responds to clarifying questions, and the agent works fully autonomously until the task is complete. |
 
 ## Add context to your chat session
 
@@ -54,17 +71,15 @@ The Ask agent is optimized for asking questions about your code projects, coding
 
 When the chat response contains code blocks, you can apply them individually to the corresponding file in your workspace. GitHub Copilot performs a smart apply and inserts the changes in the right location within the file.
 
-To apply a code block to your codebase, hover over the code block and select the **Apply in Editor** button. Copilot tries to apply the proposed changes to your existing code.
+To apply a code block to your codebase, hover the mouse pointer over the code block and then select one of the action buttons that appear in the top-right corner of the code block. The three action buttons are:
 
-![Screenshot of a Copilot Chat code block response, highlighting the actions to apply changes.](../media/copilot-chat-view-code-block-actions.png)
-
-Alternatively, you can also copy the code or insert it at the current cursor position. Hover over the code block and select the corresponding action.
+- **Apply in Editor**: This option applies the code block to the corresponding file in your workspace. GitHub Copilot performs a smart apply and inserts the changes in the right location within the file.
+- **Insert at Cursor**: This option inserts the code block content at the current cursor position in the active editor.
+- **Copy**: This option copies the code block content to your clipboard.
 
 Depending on the language extension, code blocks in chat responses might support IntelliSense, similar to the experience in the editor.
 
-If a code block contains a shell command, you can run it directly in the integrated terminal with the Insert into Terminal (Ctrl+Alt+Enter) action.
-
-![Screenshot of a Copilot Chat code block with Insert into Terminal option visible.](../media/copilot-chat-view-run-in-terminal.png)
+If a suggested code block contains a shell command, an **Insert into Terminal** action button is displayed. This option sends the command to the integrated terminal and runs it there.
 
 ## Use **Plan**
 
@@ -72,28 +87,24 @@ The Plan agent is optimized for creating structured, step-by-step implementation
 
 Once the plan is generated, the Chat view displays the structured plan with a list of steps. You can review the plan, provide feedback, and refine the steps before proceeding. When you're satisfied with the plan, you can hand it off to the Agent for implementation.
 
-### Revert edits
-
-After completing a series of code updates, you may decide that you need to roll back some of the changes. For example, you may want to use a different implementation strategy, or GitHub Copilot may have gone down the wrong path when generating edits.
-
-You can use the **Undo Last Edit** control in the Chat view title bar to revert the last edits and return to the state before sending the last request. After you perform an undo of the last edit, you can redo those edits again by using the **Redo Last Edit** control in the Chat view title bar.
-
-![Screenshot of the chat view showing the undo and redo last edit controls.](../media/github-copilot-chat-view-undo-redo-edits.png)
-
 ## Use **Agent**
 
 The Agent allows you to specify a high-level task, and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase. The Agent uses a combination of code editing and tool invocation to accomplish the task you specified. As it processes your request, it monitors the outcome of edits and tools, and iterates to resolve any issues that arise. Code updates are made directly in the editor as iterations are processed. Task progress is monitored and updates are displayed in the Chat view.
 
 The Agent uses tools to accomplish specialized tasks while processing a user request. For example, listing the files in a directory, editing a file in your workspace, running a terminal command, or getting the output from the terminal.
 
+### Revert edits
+
+After completing a series of code updates, you may decide that you need to roll back some of the changes. For example, you may want to use a different implementation strategy, or GitHub Copilot may have gone down the wrong path when generating edits.
+
+You can use the **Undo Last Edit** control in the Chat view title bar to revert the last edits and return to the state before sending the last request. After you perform an undo of the last edit, you can redo those edits again by using the **Redo Last Edit** control in the Chat view title bar.
+
 ### Confirm tool invocations and terminal commands
 
-Before Copilot runs a terminal command or a tool that isn't built in, it requests confirmation to continue. Confirmation is required because the tools might run locally on your machine and perform actions that modify files or data.
+Before GitHub Copilot runs a terminal command or a tool that isn't built in, it requests confirmation to continue. Confirmation is required because the tools might run locally on your machine and perform actions that modify files or data.
 
 Use the **Continue** button's dropdown options to automatically confirm the specific tool for the current session, workspace, or all future invocations.
 
-![Screenshot of the agent mode asking for confirmation.](../media/github-copilot-agent-mode-tool-confirmation.png)
-
 ## Summary
 
-The Chat view in Visual Studio Code is used to manage chat conversations between you and the AI pair programmer. The Chat view interface includes three sections: a toolbar near the top, a display area in the center, and an input and control menu at the bottom. The Chat view provides three built-in agents: Agent, Plan, and Ask. You can add context to your chat session by specifying context within your prompts, using chat variables, or using the **Add Context** button. The Ask agent is optimized for asking questions about your code projects, coding topics, and general technology concepts. The Plan agent is optimized for creating structured, step-by-step implementation plans for complex tasks. The Agent allows you to specify a high-level task and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase.
+The Chat view in Visual Studio Code is used to manage chat conversations between you and the AI pair programmer. The Chat view interface includes three sections: a toolbar near the top, a display area in the center, and an input and control menu at the bottom. The Chat view provides three built-in agents — Agent, Plan, and Ask. You select where each agent runs using the Agent Target dropdown: Local (interactive in the editor), GitHub Copilot CLI (background on your machine), Cloud (GitHub), or Third-party (Anthropic/OpenAI). You control agent autonomy using the Permissions picker: Default Approvals, Bypass Approvals, or Autopilot (Preview). You can add context to your chat session by specifying context within your prompts, using chat variables, or using the **Add Context** button. The Ask agent is optimized for asking questions about your code projects, coding topics, and general technology concepts. The Plan agent is optimized for creating structured, step-by-step implementation plans for complex tasks. The Agent allows you to specify a high-level task and let AI autonomously evaluate the request, plan the work needed, and apply the changes to your codebase.

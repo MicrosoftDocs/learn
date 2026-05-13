@@ -3,9 +3,9 @@ uid: learn-wwl.work-with-data-warehouses-using-microsoft-fabric
 metadata:
   title: Implement a data warehouse with Microsoft Fabric DP-602T00
   description: Explore the data warehousing process and learn how to load, monitor, secure, and query a warehouse in Microsoft Fabric. (DP-602T00)
-  ms.date: 1/27/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 05/08/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: learning-path
 title: Implement a data warehouse with Microsoft Fabric
 prerequisites: |
@@ -29,6 +29,7 @@ modules:
 - learn.wwl.get-started-data-warehouse
 - learn-wwl.load-data-into-microsoft-fabric-data-warehouse
 - learn-wwl.query-data-warehouse-microsoft-fabric
+- learn.wwl.get-started-copilot-fabric-data-warehouse
 - learn.wwl.monitor-fabric-data-warehouse
 - learn-wwl.secure-data-warehouse-in-microsoft-fabric
 trophy:

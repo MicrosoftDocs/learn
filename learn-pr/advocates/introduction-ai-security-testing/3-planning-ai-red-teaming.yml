@@ -3,11 +3,11 @@ uid: learn.introduction-to-ai-security-testing.planning-ai-red-teaming
 title: Planning AI red teaming
 metadata:
   title: Planning AI red teaming
-  description: How to plan AI red teaming
+  description: Learn how to plan an AI red teaming exercise, including team recruitment, adversarial test design, iterative testing, and automated red teaming tools.
   ms.author: ceperezb
   author: ceperezb
-  ms.date: 03/06/2026  
+  ms.date: 04/24/2026
   ms.topic: unit
-durationInMinutes: 14
+durationInMinutes: 7
 content: |
   [!include[](includes/3-planning-ai-red-teaming.md)]

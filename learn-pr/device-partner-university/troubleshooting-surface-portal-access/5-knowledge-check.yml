@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.troubleshooting-surface-portal-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Troubleshooting Surface Portal access issues" module.
+  ms.date: 04/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A user can't access Surface Management Portal, and the Surface device isn't enrolled in Intune. What is the most likely cause of the access issue?"
+    choices:
+        - content: "Missing Intune enrollment"
+          isCorrect: true
+          explanation: "Correct. Surface Management Portal access failures are usually related to Intune enrollment or subscription requirements."
+        - content: "Missing shipping information"
+          isCorrect: false
+          explanation: "Incorrect. Shipping information isn't identified as a prerequisite for accessing Surface Management Portal."
+        - content: "Required support roles are missing"
+          isCorrect: false
+          explanation: "Incorrect. Missing support roles are commonly associated with Surface Support Portal access issues, not Surface Management Portal."
+        - content: "Wrong Microsoft tenant is selected"
+          isCorrect: false
+          explanation: "Incorrect. While tenant selection should be validated, the scenario specifically identifies missing Intune enrollment as the issue."
+  - content: "A user can't create service requests in Surface Support Portal. What should be validated first?"
+    choices:
+        - content: "Required support roles are assigned"
+          isCorrect: true
+          explanation: "Correct. Surface Support Portal access issues are usually related to missing required support roles."
+        - content: "Device compliance policies"
+          isCorrect: false
+          explanation: "Incorrect. Device compliance policies aren't listed as a prerequisite for creating service requests in Surface Support Portal."
+        - content: "Surface device is enrolled in Intune"
+          isCorrect: false
+          explanation: "Incorrect. Intune enrollment is a prerequisite specific to Surface Management Portal."
+        - content: "Intune subscription is assigned"
+          isCorrect: false
+          explanation: "Incorrect. Intune subscription assignment isn't identified as a prerequisite for Surface Support Portal."
+  - content: "A partner sees service requests appearing under the wrong organization. What should be validated?"
+    choices:
+        - content: "Tenant context"
+          isCorrect: true
+          explanation: "Correct. Service requests appearing under the wrong organization indicate an incorrect tenant context."
+        - content: "Device warranty period"
+          isCorrect: false
+          explanation: "Incorrect. Warranty status doesn't affect which tenant service requests appear under."
+        - content: "Intune enrollment status"
+          isCorrect: false
+          explanation: "Incorrect. Intune enrollment impacts Surface Management Portal access, not tenant context."
+        - content: "Administrative permissions in Intune"
+          isCorrect: false
+          explanation: "Incorrect. While permissions matter, the issue described is specifically related to tenant context."
+  - content: "When should escalation occur for unresolved access or visibility issues?"
+    choices:
+        - content: "After validating tenant, roles, and prerequisites without resolution"
+          isCorrect: true
+          explanation: "Correct. Escalation is required only after validation is completed and the issue can't be resolved."
+        - content: "Immediately upon first access failure"
+          isCorrect: false
+          explanation: "Incorrect. The module states that validation steps must be completed before escalating."
+        - content: "Before confirming the correct tenant"
+          isCorrect: false
+          explanation: "Incorrect. Confirming the correct tenant is a required validation step before escalation."
+        - content: "When a portal tile is missing"
+          isCorrect: false
+          explanation: "Incorrect. Missing tiles are an indicator, but validation must occur before escalation."
+  - content: "Which prerequisite validation step applies only to Surface Management Portal?"
+    choices:
+        - content: "Confirm that the Surface device is enrolled in Intune"
+          isCorrect: true
+          explanation: "Correct. Intune enrollment is a prerequisite specific to Surface Management Portal."
+        - content: "Confirm that required administrative roles are assigned"
+          isCorrect: false
+          explanation: "Incorrect. Required roles must be validated for both portals."
+        - content: "Confirm that you're signed into the correct tenant"
+          isCorrect: false
+          explanation: "Incorrect. Tenant validation applies to both Surface Management Portal and Surface Support Portal."
+        - content: "Confirm that the appropriate admin center is being used"
+          isCorrect: false
+          explanation: "Incorrect. Each portal has a specific admin center, so this validation applies to both."

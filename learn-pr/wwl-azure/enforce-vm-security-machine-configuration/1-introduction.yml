@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-vm-security-machine-configuration.introduction
+metadata:
+  title: Introduction
+  description: Introduction to enforcing VM security configuration with Azure Machine Configuration, covering the OS-level configuration compliance gap that Azure Machine Configuration addresses.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

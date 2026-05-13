@@ -8,7 +8,7 @@ metadata:
   description: Microsoft Security Copilot knowledge check
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 05/01/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -27,11 +27,11 @@ quiz:
       explanation: Incorrect. To onboard the organization and users, an admin must Provision SCUs, set up the default environment, and assign role permission.  
     - content: Procure Microsoft Entra Premium 1 licensing.
       isCorrect: false
-      explanation: Incorrect. Entra Premium 1 licensing isn't required. To onboard the organization and users to Copilot, The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
+      explanation: Incorrect. Microsoft Entra Premium 1 licensing isn't required. To onboard the organization and users to Copilot, the admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
     - content: Provision SCUs, set up the default environment, and assign role permission.
       isCorrect: true
       explanation: Correct. The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to user.
-  - content: A security analyst is crafting a prompt to investigate an incident involving the Pearl Sleet actor. Which prompt will likely yield the most comprehensive results?
+  - content: A security analyst is crafting a prompt to investigate an incident involving the Pearl Sleet actor. Which prompt yields the most comprehensive results?
     choices:
     - content: Can you give me information about Pearl Sleet activity, including a list of known indicators of compromise and tools, tactics, and procedures (TTPs)?
       isCorrect: true
@@ -44,9 +44,9 @@ quiz:
       explanation: Incorrect. This prompt is too vague and doesn't provide specific elements like context or expectations.
   - content: An admin is tasked with setting up Microsoft Security Copilot and needs to provision capacity. After reviewing the options, which method should the admin choose to provision capacity for their organization?
     choices:
-    - content: Provision capacity through a third-party vendor
+    - content: Provision capacity through a non-Microsoft vendor
       isCorrect: false
-      explanation: Incorrect. Microsoft Security Copilot capacity must be provisioned either within Copilot itself or through Azure, not via third-party vendors.
+      explanation: Incorrect. Microsoft Security Copilot capacity must be provisioned either within Copilot itself or through Azure, not via non-Microsoft vendors.
     - content: Provision capacity within Security Copilot
       isCorrect: true
       explanation: Correct. Provisioning capacity within Security Copilot is recommended and guided by a wizard for ease of setup.

@@ -2,27 +2,27 @@
 uid: learn.wwl.plan-azure-kubernetes-service-deployment
 metadata:
   title: Plan an Azure Kubernetes Service deployment
-  description: "In this module, you learn about the core Kubernetes infrastructure components, including control plane nodes, node pools, and workload resources such as pods, deployments, and sets."
-  ms.date: 02/14/2025
-  author: wwlpublish
-  ms.author: bradj
+  description: "In this module, you learn about the core Kubernetes infrastructure components, including the control plane, node pools, pods, deployments, namespaces, services, ingress, and load balancing in AKS."
+  ms.date: 05/01/2026
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure-kubernetes-service
   ai-usage: human-only
 title: Plan an Azure Kubernetes Service deployment
-summary: In this module, you learn about the core Kubernetes infrastructure components, including control plane nodes, node pools, and workload resources such as pods, deployments, and sets.
+summary: In this module, you learn about the core Kubernetes infrastructure components, including the control plane, node pools, pods, deployments, namespaces, services, ingress, and load balancing in AKS.
 abstract: |
   After completing this module, you'll be able to:
 
-  -   Describe control plane nodes, node pools, and workload resources like pods, deployments, and sets.
+  -   Describe control plane components, node pools, pods, deployments, namespaces, and network access in AKS.
 
-  -   Scheduling of fault-tolerant application workloads using Azure Kubernetes Service.
+  -   Schedule fault-tolerant application workloads using Azure Kubernetes Service.
 
-  -   Managing deployment and core management tasks, like upgrade coordination using Azure Kubernetes Service.
+  -   Manage core AKS tasks such as deployment and upgrade coordination.
 
-  -   Clustering of virtual or on-premises machines called nodes that share compute, network, and storage resources.
+  -   Explain how Kubernetes clusters group nodes that share compute, network, and storage resources.
 prerequisites: None
 iconUrl: /training/achievements/kubernetes-module.svg
 levels:

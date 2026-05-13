@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 310" role="img" aria-labelledby="title6 desc6">
+  <title id="title6">RAG Grounding Process</title>
+  <desc id="desc6">Diagram showing the retrieval-augmented generation grounding process: user query triggers retrieval from knowledge base, documents augment the prompt, model generates a grounded response, and groundedness detection validates the output</desc>
+  <defs>
+    <marker id="arr6" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="980" height="310" fill="#FFFFFF"/>
+
+  <!-- Step labels above -->
+  <text x="55" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#424242" font-style="italic">1. Query</text>
+  <text x="185" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#424242" font-style="italic">2. Retrieve</text>
+  <text x="331" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#424242" font-style="italic">3. Augment</text>
+  <text x="479" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#424242" font-style="italic">4. Generate</text>
+  <text x="629" y="70" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#424242" font-style="italic">5. Validate</text>
+
+  <!-- Box 1: User Query -->
+  <rect x="10" y="85" width="90" height="50" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="55" y="115" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">User Query</text>
+
+  <line x1="100" y1="110" x2="120" y2="110" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+
+  <!-- Box 2: Retrieval System -->
+  <rect x="130" y="78" width="110" height="64" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="185" y="104" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Retrieval</text>
+  <text x="185" y="122" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">System</text>
+
+  <line x1="240" y1="110" x2="265" y2="110" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+
+  <!-- Box 3: Documents Added to Prompt -->
+  <rect x="275" y="78" width="112" height="64" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="331" y="98" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Documents</text>
+  <text x="331" y="114" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Added to</text>
+  <text x="331" y="130" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Prompt</text>
+
+  <line x1="387" y1="110" x2="413" y2="110" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+
+  <!-- Box 4: Model Generates Response (emphasized) -->
+  <rect x="423" y="78" width="112" height="64" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="479" y="98" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">Model</text>
+  <text x="479" y="114" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">Generates</text>
+  <text x="479" y="130" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">Response</text>
+
+  <line x1="535" y1="110" x2="563" y2="110" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+
+  <!-- Box 5: Groundedness Detection -->
+  <rect x="573" y="78" width="112" height="64" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="629" y="100" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Groundedness</text>
+  <text x="629" y="118" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Detection</text>
+
+  <!-- Diamond: Grounded? -->
+  <line x1="685" y1="110" x2="710" y2="110" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+
+  <polygon points="750,75 790,110 750,145 710,110" fill="#FFF4CE" stroke="#C49C00" stroke-width="2"/>
+  <text x="750" y="113" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" fill="#1A1A1A">Grounded?</text>
+
+  <!-- Yes → Response to User -->
+  <line x1="790" y1="110" x2="823" y2="110" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+  <text x="805" y="103" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#424242">Yes</text>
+
+  <rect x="833" y="85" width="98" height="50" rx="8" fill="#DFF6DD" stroke="#107C10" stroke-width="2"/>
+  <text x="882" y="105" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Response</text>
+  <text x="882" y="123" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">to User</text>
+
+  <!-- No → Flagged for Review -->
+  <line x1="750" y1="145" x2="750" y2="195" stroke="#424242" stroke-width="1.5" marker-end="url(#arr6)"/>
+  <text x="766" y="175" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#424242">No</text>
+
+  <rect x="685" y="205" width="130" height="45" rx="8" fill="#FDE7E9" stroke="#A4262C" stroke-width="2"/>
+  <text x="750" y="225" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Flagged for</text>
+  <text x="750" y="243" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Review / Retry</text>
+
+  <!-- Knowledge Base icon below Retrieval -->
+  <rect x="145" y="175" width="80" height="44" rx="4" fill="#F5F5F5" stroke="#424242" stroke-width="1"/>
+  <text x="185" y="193" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Knowledge</text>
+  <text x="185" y="207" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#424242">Base</text>
+  <line x1="185" y1="142" x2="185" y2="165" stroke="#424242" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arr6)"/>
+</svg>

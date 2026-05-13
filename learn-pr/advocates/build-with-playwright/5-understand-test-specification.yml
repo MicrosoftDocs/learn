@@ -4,10 +4,9 @@ title: Understand Test Specification
 metadata:
   title: Understand Test Specification
   description: The default test runs on the tests/example.spec.ts specification. Let's unpack that to see what it contains.
-  ms.date: 03/19/2025
-  ms.author: debbieobrien
-  author: debs-obrien
-  ms.manager: jamont
+  ms.date: 05/01/2026
+  ms.author: orthomas
+  author: Orin-Thomas
   ms.topic: unit
 durationInMinutes: 9
 content: |

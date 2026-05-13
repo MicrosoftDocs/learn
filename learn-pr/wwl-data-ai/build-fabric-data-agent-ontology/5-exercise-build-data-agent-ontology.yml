@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-fabric-data-agent-ontology.exercise-build-data-agent-ontology
+title: Exercise - Build a Fabric data agent with an ontology
+metadata:
+  title: Exercise - Build a Fabric Data Agent with an Ontology
+  description: Practice creating a Fabric data agent connected to a Lamna Healthcare ontology, configuring agent instructions, testing natural language queries, and publishing the agent.
+  ms.date: 04/17/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-build-data-agent-ontology.md)]

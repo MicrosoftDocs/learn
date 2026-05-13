@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.evaluate-azure-local.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "When to evaluate Azure Local for private cloud scenarios" module.
+  ms.date: 05/12/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why are private cloud scenarios reemerging in modern infrastructure planning?"
+    choices:
+        - content: "Because existing systems are failing and need immediate replacement"
+          isCorrect: false
+          explanation: "Incorrect. The module explains that private cloud interest isn't due to system failure but changing expectations."
+        - content: "Because expectations around governance, compliance, and operational consistency are changing"
+          isCorrect: true
+          explanation: "Correct. The content emphasizes evolving regulatory, governance, and operational expectations as the main drivers."
+        - content: "Because public cloud services are no longer available"
+          isCorrect: false
+          explanation: "Incorrect. Public cloud remains available; private cloud applies cloud principles where public cloud isn't always the right fit."
+        - content: "Because Windows Server environments are no longer stable"
+          isCorrect: false
+          explanation: "Incorrect. The module notes that many Windows Server environments remain stable and reliable."
+  - content: "What does Azure Local represent at a conceptual level in private cloud discussions?"
+    choices:
+        - content: "A complete replacement for all on-premises servers"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local is explicitly stated as not intended to replace all on-premises servers."
+        - content: "A forced upgrade path for Windows Server environments"
+          isCorrect: false
+          explanation: "Incorrect. The module states Azure Local isn't a forced upgrade path."
+        - content: "An extension of Azure-aligned operations into on-premises environments"
+          isCorrect: true
+          explanation: "Correct. Azure Local extends Azure-aligned governance and management into on-premises environments."
+        - content: "A public cloud migration tool"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local supports private and hybrid scenarios rather than migrating workloads to public cloud."
+  - content: "How is Azure Local typically positioned in relation to existing Windows Server environments?"
+    choices:
+        - content: "As a replacement that phases out Windows Server"
+          isCorrect: false
+          explanation: "Incorrect. The module emphasizes coexistence rather than replacement."
+        - content: "As a platform used only after all Windows Server workloads are retired"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local is designed to work alongside existing environments."
+        - content: "As a coexistence model used alongside Windows Server"
+          isCorrect: true
+          explanation: "Correct. Azure Local complements Windows Server by enabling Azure operations selectively."
+        - content: "As a temporary solution before full public cloud adoption"
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't position Azure Local as a temporary step toward public cloud."
+  - content: "Which situation is identified as a signal that Azure Local might be worth discussing?"
+    choices:
+        - content: "Minimal regulatory pressure and full satisfaction with current operations"
+          isCorrect: false
+          explanation: "Incorrect. These are listed as situations where Azure Local might not be necessary."
+        - content: "A desire to avoid any form of cloud-aligned operations"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local aligns with cloud-style governance and operations."
+        - content: "Sovereign or regulatory requirements affecting workload placement"
+          isCorrect: true
+          explanation: "Correct. The module lists regulatory and sovereignty requirements as key signals for evaluation."
+        - content: "An organization mandate to replace all infrastructure immediately"
+          isCorrect: false
+          explanation: "Incorrect. Azure Local is introduced for evaluation, not forced or urgent replacement."

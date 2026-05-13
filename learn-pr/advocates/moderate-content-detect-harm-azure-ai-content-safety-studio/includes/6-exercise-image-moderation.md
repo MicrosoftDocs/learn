@@ -4,17 +4,17 @@ You can apply an AI model to detect whether the images that customers post are h
 
 ## Safe content
 
-First, test an image of a family camping:
+First, test an image of a family on a camping trip:
 
-1. On the **Content Safety** page, select **Moderate image content**.
-1. Select **Browse for a file** and upload the **family-builds-campfire.JPG** file. The file is within the **data/Image Moderation** folder.
+1. On the **Try it out** page in **Guardrails + controls**, select **Moderate image content**.
+1. Select **Browse for a file** and upload the **family-builds-campfire.jpg** file. The file is within the **data/Image Moderation** folder.
 1. Set all **Threshold level** values to **Medium**.
 
     :::image type="content" source="../media/image-moderation.png" alt-text="Screenshot of the image preview and filter configuration for image moderation."  lightbox="../media/image-moderation.png":::
 
 1. Select **Run test**.
 
-As expected, this image content is **Allowed**. The severity level is **Safe** across all categories.
+You should see that this image content is **Allowed**. The severity level is **Safe** across all categories.
 
 :::image type="content" source="../media/image-moderation-allow-results.png" alt-text="Screenshot of image moderation results. The content is allowed. The severity level across all categories is Safe. The threshold across all categories is Medium. The judgment across all categories is Allowed."  lightbox="../media/image-moderation-allow-results.png":::
 
@@ -25,7 +25,7 @@ You should anticipate that customers can potentially post harmful image content.
 > [!NOTE]
 > The image that you use for testing contains a graphic depiction of a bear attack. The image is blurred by default in the image preview. However, you're welcome to use the **Blur image** toggle to change this setting.
 
-1. Select **Browse for a file** and upload the **bear-attack-blood.JPG** file.
+1. Select **Browse for a file** and upload the **bear-attack-blood.jpg** file.
 1. Set all **Threshold level** values to **Medium**.
 1. Select **Run test**.
 
@@ -35,14 +35,16 @@ The content is **Blocked**. The **Violence** filter rejected it and shows a seve
 
 ## Run a bulk test
 
-So far, you've tested image content for singular, isolated images. However, you can test a bulk dataset of image content all at once and receive metrics based on the model's performance.
+So far, you've tested single images. However, you can test a bulk dataset of image content all at once and receive metrics based on the model's performance.
 
 You have a bulk dataset of images from customers. The dataset also includes sample harmful images to test the model's ability to detect harmful content. Each record in the dataset includes a label to indicate whether the content is harmful.
 
 Do another test round, but this time with the dataset:
 
 1. Switch to the **Run a bulk test** tab.
-1. Select **Browse for a file** and upload the **bulk-image-moderation-dataset.zip** file.
+1. Select **Browse for a file** and upload the **bulk-image-moderatation-dataset.zip** file.
+
+   Keep the archive zipped. The sample repository currently uses the filename `bulk-image-moderatation-dataset.zip`, including that spelling.
 1. In the **Dataset preview** section, browse through the records and their corresponding labels. A label of **0** indicates that the content is acceptable (not harmful). A label of **1** indicates that the content is unacceptable (harmful).
 
     :::image type="content" source="../media/bulk-image-moderation.png" alt-text="Screenshot of the dataset preview for bulk image moderation. It shows a list of image records and their corresponding labels on one side and the section for configuring filters on the other side.":::
@@ -54,4 +56,4 @@ Examine the results.
 
 :::image type="content" source="../media/bulk-image-moderation-results.png" alt-text="Screenshot of results for bulk image moderation."  lightbox="../media/bulk-image-moderation-results.png":::
 
-Is there room for improvement? If so, adjust the **Threshold** levels until the **Precision**, **Recall**, and **F1 score** metrics are closer to **1**.
+Review whether the current thresholds match your policy. Lower thresholds usually catch more harmful images but can increase false positives, while higher thresholds can reduce false positives but miss borderline harmful content. Use **Precision**, **Recall**, and **F1 score** together to choose the best tradeoff for your scenario instead of trying to maximize every metric independently. For more tuning strategies, see [Mitigate false results in Azure AI Content Safety](/azure/ai-services/content-safety/how-to/improve-performance#customize-your-severity-settings).

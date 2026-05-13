@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a8728b09-163b-4f02-a4bf-e7705d5169ab]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Prompt engineering helps guide how a model responds, but it can't give the model knowledge it doesn't already have. Language models are trained on large datasets, but that training data has a cutoff date and doesn't include your organization's private information. When a model lacks relevant context, it might generate responses that sound plausible but are factually incorrect.
 
 To address this challenge, you can **ground** the model by providing it with relevant, factual data to base its responses on. **Retrieval Augmented Generation (RAG)** is the most common technique for grounding a language model.
@@ -111,3 +122,5 @@ For the travel agency scenario, RAG allows customers to ask questions about spec
 
 > [!TIP]
 > If you're building agents that need grounded knowledge without managing your own search infrastructure, consider **Foundry IQ** — a managed knowledge store that simplifies grounding for AI agents. To learn more, see [Build knowledge-enhanced AI agents with Foundry IQ](/training/modules/introduction-foundry-iq/?azure-portal=true).
+
+::: zone-end

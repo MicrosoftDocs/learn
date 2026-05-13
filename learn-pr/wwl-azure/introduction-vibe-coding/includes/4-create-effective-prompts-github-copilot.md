@@ -93,7 +93,8 @@ Help Copilot understand your project structure and intentions by managing your d
 
 - Open relevant files and close unrelated ones.
 - Highlight specific code sections you want Copilot to reference.
-- Use chat participants like `@vscode` in Visual Studio Code or `@project` in JetBrains IDEs.
+- Use the **Add Context** button in the Chat view to attach specific files, symbols, or workspace content.
+- Reference context directly in your prompt with `#`-references such as `#file` and `#selection`.
 
 **In Copilot Chat**:
 

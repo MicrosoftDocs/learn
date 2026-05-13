@@ -1,4 +1,15 @@
-The OpenAI *ChatCompletions* API is commonly used across generative AI models and platforms. Although the *Responses* API is recommended for new project development, it's likely that you'll encounter scenarios where the *ChatCompletions* API is useful for code maintenance of cross-platform compatibility.
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c770294d-763e-49ef-bfbf-e67cb255880c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+The OpenAI *ChatCompletions* API is commonly used across generative AI models and platforms. Although the *Responses* API is recommended for new project development, it's likely that you'll encounter scenarios where the *ChatCompletions* API is useful for code maintenance or cross-platform compatibility.
 
 ## Submitting a prompt
 
@@ -18,7 +29,7 @@ print(completion.choices[0].message.content)
 
 ## Retaining conversational context
 
-Unlike the *Responses* API, the *ChatCompletins* API doesn't provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
+Unlike the *Responses* API, the *ChatCompletions* API doesn't provide a stateful response tracking feature. To retain conversational context, you must write code to manually track previous prompts and responses.
 
 ```python
 # Initial messages
@@ -125,3 +136,5 @@ Assistant: Goodbye!
 Each new user prompt and completion is added to the conversation, and the entire conversation history is submitted in each turn.
 
 While not as fully featured as the *Responses* API, the *ChatCompletions* API is well established in the generative AI model ecosystem, so it's useful to be familiar with it.
+
+::: zone-end

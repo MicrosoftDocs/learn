@@ -1,3 +1,11 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=56a011d5-69fa-4d89-aee8-c513f46168d9]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Generative AI models are powerful at understanding and generating text, but they operate within a knowledge boundary. They can only reason about information in their training data. By integrating **tools** into your generative AI interactions, you unlock capabilities far beyond what the model alone can do.
 
 > [!NOTE]
@@ -19,3 +27,8 @@ In this module, we'll focus on specifying tools in prompts that a client applica
 
 > [!TIP]
 > You can learn more about how to use the Microsoft Foundry Agents SDK to create agents with persisted configurations in [Develop AI agents on Azure](/training/paths/develop-ai-agents-azure/).
+
+::: zone-end
+
+> [!NOTE]
+> We recognize that different people like to learn in different ways. You can choose to complete this module in video-based format or you can read the content as text and images. The text contains greater detail than the videos, so in some cases you might want to refer to it as supplemental material to the video presentation.

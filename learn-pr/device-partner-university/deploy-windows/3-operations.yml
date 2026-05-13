@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.deploy-windows.operations
+title: Operations
+metadata:
+  title: Operations
+  description: This content is part of the "Deploy updates for Windows client and Microsoft 365 apps" module.
+  ms.date: 04/15/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-operations.md)]

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.manage-certificates-monitor-key-vault
+metadata:
+  title: Manage Certificates and Monitor Azure Key Vault
+  description: "Manage certificate lifecycle in Azure Key Vault through integrated CA issuance and autorenewal, and enable diagnostic logging to create an investigation-ready audit trail for security operations."
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-key-vault
+  ai-usage: ai-assisted
+title: Manage certificates and monitor Azure Key Vault
+summary: Manage certificate lifecycle in Azure Key Vault through integrated certificate authority issuance and autorenewal. Enable diagnostic logging to create an investigation-ready audit trail, configure log-based alert rules, and integrate Event Grid for real-time lifecycle automation.
+abstract: |
+  After completing this module, you'll be able to:
+    - Manage certificate issuance, renewal, and lifecycle through integrated certificate authorities
+    - Configure Key Vault lifetime actions and certificate contacts for automated renewal and notification
+    - Enable Key Vault diagnostic logging to support security investigation and compliance requirements
+prerequisites: |
+  - Azure Key Vault deployed and secured with access controls configured
+  - Familiarity with TLS/SSL certificates and public key infrastructure (PKI) concepts
+  - Microsoft Defender for Cloud enabled in your Azure subscription
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-key-vault
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-certificates-monitor-key-vault.introduction
+- learn.wwl.manage-certificates-monitor-key-vault.manage-certificates
+- learn.wwl.manage-certificates-monitor-key-vault.enable-audit-logging
+- learn.wwl.manage-certificates-monitor-key-vault.knowledge-check
+- learn.wwl.manage-certificates-monitor-key-vault.summary
+badge:
+  uid: learn.wwl.manage-certificates-monitor-key-vault.badge

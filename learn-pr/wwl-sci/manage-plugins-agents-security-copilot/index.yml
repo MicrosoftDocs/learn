@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-plugins-agents-security-copilot
+metadata:
+  title: Manage Plugins and Agents in Microsoft Security Copilot
+  description: Learn how to configure plugin governance settings and manage the Security Copilot agent lifecycle, from discovering agents in the agent library and Security Store through to day-to-day agent operations.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: security-copilot
+  ai-usage: ai-assisted
+title: Manage plugins and agents in Microsoft Security Copilot
+summary: In this module, you configure plugin governance settings and manage the Security Copilot agent lifecycle. You learn how owner-level plugin settings control who can add and publish custom plugins. Then explore how to restrict preinstalled plugin access across workspaces, and how to discover, set up, and manage both Microsoft-built and Security Store partner agents.
+abstract: |
+  By the end of this module, you're able to:
+    - Configure plugin settings to govern who can add and manage custom plugins at user and organization scope
+    - Restrict preinstalled plugin access to manage availability across embedded and standalone experiences
+    - Discover and set up Microsoft-built agents using the Security Copilot agent library
+    - Acquire and configure partner-built agents using Security Store, including the Global Administrator approval workflow
+    - Manage agents by controlling run state, editing configuration, and maintaining agent memory
+prerequisites: |
+  - Completion of [Configure workspaces for Microsoft Security Copilot](/training/modules/configure-security-copilot-workspaces/) is recommended
+  - Familiarity with Microsoft Security Copilot Owner and Contributor roles
+  - Basic knowledge of Microsoft Entra roles
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - security-copilot
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-plugins-agents-security-copilot.introduction
+- learn.wwl.manage-plugins-agents-security-copilot.configure-plug-in-settings
+- learn.wwl.manage-plugins-agents-security-copilot.discover-set-up-microsoft-agents
+- learn.wwl.manage-plugins-agents-security-copilot.acquire-configure-partner-agents
+- learn.wwl.manage-plugins-agents-security-copilot.manage-agents
+- learn.wwl.manage-plugins-agents-security-copilot.knowledge-check
+- learn.wwl.manage-plugins-agents-security-copilot.summary
+badge:
+  uid: learn.wwl.manage-plugins-agents-security-copilot.badge

@@ -58,7 +58,7 @@ We are building a wildlife AI system. How can we create a dashboard for users to
 Microsoft Copilot gives us an overview of the different tools we may need to ensure we successfully implement a product.
 
 > [!NOTE]
->If you're a student, you can have 100USD free Azure credits to use it in your technology. Learn more about it, [at Azure for Studens](https://azure.microsoft.com/free/students/?cid=msft_learn).
+>If you're a student, you can have 100USD free Azure credits to use it in your technology. Learn more about it, [at Azure for Students](https://azure.microsoft.com/free/students/?cid=msft_learn).
 > If you're new to azure, you can sign in and try azure for 30-days, register [at Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn)
 
 Repeat step 2 for each feature until you have a clear understanding of how you can build the final product.

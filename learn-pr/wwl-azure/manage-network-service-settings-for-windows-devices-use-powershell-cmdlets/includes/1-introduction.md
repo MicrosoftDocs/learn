@@ -1,4 +1,7 @@
-Both Windows PowerShell and PowerShell Core support cmdlets that you can use to manage all aspects related to network settings on Windows devices. Settings that you can configure with PowerShell include TCP/IP, Domain Name System (DNS), firewall, and routing table configurations. In addition to the cmdlets for managing network features and components, the **Test-NetConnection** cmdlet is also available. This cmdlet offers the same functionality as traditional command-line interface tools such as **ping.exe** and **tracert.exe**, which are used to identify and diagnose network connectivity and configuration settings.
+Both Windows PowerShell and PowerShell support cmdlets that you can use to manage all aspects related to network settings on Windows devices. Settings that you can configure with PowerShell include TCP/IP, Domain Name System (DNS), firewall, and routing table configurations. In addition to the cmdlets for managing network features and components, the `Test-NetConnection` cmdlet is also available. This cmdlet offers the same functionality as traditional command-line interface tools such as `ping.exe` and `tracert.exe`, which are used to identify and diagnose network connectivity and configuration settings.
+
+> [!NOTE]
+> The three modules covered in this module—NetTCPIP, NetSecurity, and DnsClient—are natively compatible with PowerShell 7 on Windows Server 2019 and later and Windows 10 1809 and later. No Windows PowerShell compatibility layer is required.
 
 In this module, you'll learn about the PowerShell modules and cmdlets used for configuring network settings for Windows devices.
 
@@ -17,4 +20,4 @@ Familiarity with:
 
 - Windows networking technologies and implementation.
 - Windows Server administration, maintenance, and troubleshooting.
-- Windows PowerShell and its commands to perform specific tasks.
+- PowerShell and its commands to perform specific tasks.

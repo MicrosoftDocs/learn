@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-key-vault.deploy-key-vault
+metadata:
+  title: Deploy Azure Key Vault with security controls
+  description: Learn to deploy Azure Key Vault with security-critical settings enforced at creation time, including SKU selection. Explore how soft delete, purge protection, and Azure Policy enforcement add layers of protection to your key vault.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Deploy Azure Key Vault with security controls
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-deploy-key-vault.md)]

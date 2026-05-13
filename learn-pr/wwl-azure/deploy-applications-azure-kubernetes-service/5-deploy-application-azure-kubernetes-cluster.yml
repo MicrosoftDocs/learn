@@ -2,12 +2,12 @@
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.deploy-application-azure-kubernetes-cluster
 title: Deploy an application to an Azure Kubernetes Service cluster
 metadata:
-  title: Deploy an application to an Azure Kubernetes Service cluster
+  title: Deploy an Application to an Azure Kubernetes Service Cluster
   description: "Deploy an application to an Azure Kubernetes Service cluster"
-  ms.date: 03/04/2024
-  author: wwlpublish
-  ms.author: bradj
+  ms.date: 04/25/2026
+  author: Orin-Thomas 
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-deploy-application-azure-kubernetes-cluster.md)]
+  [!include[](includes/5-deploy-application-azure-kubernetes-cluster.md)]

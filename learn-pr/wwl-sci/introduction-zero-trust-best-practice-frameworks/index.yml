@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-zero-trust-best-practice-frameworks
 metadata:
   title: Introduction to Zero Trust and Best Practice Frameworks
   description: "You learn about security best practices and antipatterns, the concept of Zero Trust and its guiding principles, and key best practice frameworks including CAF, WAF, MCRA, and MCSB. You also learn about the Zero Trust adoption framework and how the frameworks relate to each other."
-  ms.date: 02/24/2026
+  ms.date: 04/27/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -17,7 +17,7 @@ abstract: |
     - Describe common security antipatterns and the role of best practices for cybersecurity architects.
     - Describe the concept of Zero Trust and its guiding principles.
     - Describe the purpose and scope of CAF, WAF, MCRA, and MCSB.
-    - Describe the Zero Trust adoption framework and the approach to rapid modernization.
+    - Describe the Zero Trust adoption framework.
     - Describe how the different best practice frameworks relate to each other.
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.

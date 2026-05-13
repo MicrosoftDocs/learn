@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-backup-data-azure-backup-security.enable-soft-delete-immutable-vaults
+metadata:
+  title: Enable soft delete and immutable vaults
+  description: Configure enhanced soft delete and vault immutability to protect Azure Backup recovery points from deletion by ransomware and unauthorized administrators.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable soft delete and immutable vaults
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-enable-soft-delete-immutable-vaults.md)]

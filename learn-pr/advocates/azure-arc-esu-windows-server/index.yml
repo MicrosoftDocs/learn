@@ -7,6 +7,7 @@ metadata:
   title: Enable Windows Server Extended Security Updates by using Azure Arc
   description: Use Azure Arc to enable Windows Server Extended Security Updates.
   ms.topic: module
+  ms.service: windows-server
 title: Enable Windows Server Extended Security Updates by using Azure Arc
 summary: Learn how to configure extended security updates for Windows Server using Azure Arc. This module covers the role of ESU in supporting Windows Server beyond end of extended support, enabling ESU on Windows Server with Azure Arc, using Multiple Activation Keys to enable ESU for non Arc enabled servers, and creating and allocating ESU Licenses for Arc enabled servers.
 abstract: |

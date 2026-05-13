@@ -1,0 +1,4 @@
+Imagine you work for a fictitious company called Lamna Healthcare. Your organization has consolidated data from multiple operational systems into a Microsoft Fabric lakehouse and eventhouse, and built a Fabric IQ ontology that models the hospital domain — hospitals, departments, rooms, patients, and vital sign monitoring equipment. In this module, you learn how to build a Fabric data agent on top of that ontology — how to create the agent, connect it to the ontology, configure instructions to improve accuracy, test it with natural language questions, and publish it so colleagues can ask questions and get answers directly from the data.
+
+> [!IMPORTANT]
+> Ontology in Microsoft Fabric is currently in [preview](/fabric/fundamentals/preview).

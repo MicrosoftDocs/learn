@@ -2,9 +2,10 @@
 uid: learn.dpu.copilot-pc-business-users.knowledge-check
 title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: This content is part of the "Introducing Copilot+ PC business users" module.
-  ms.date: 08/04/2025
+  title: Knowledge check
+  description: >-
+    This content is part of the "How Copilot+ PCs support modern business users" module.
+  ms.date: 04/15/2026
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: unit
@@ -12,60 +13,106 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the top concern for IT Decision Makers (ITDMs) regarding generative AI?"
+  - content: >-
+      A sales professional needs to quickly adapt content from a presentation
+      into an email. Which Copilot+ PC capability would help streamline this task?
     choices:
-        - content: "Difficulty in training employees"
+        - content: "Windows Studio Effects"
           isCorrect: false
-          explanation: "Incorrect. While training is a challenge, it isn't the top concern."
-        - content: "Lack of innovation"
-          isCorrect: false
-          explanation: "Incorrect. ITDMs are focused on innovation but are more concerned about security risks."
-        - content: "New security risks to data"
+          explanation: >-
+            Incorrect. Windows Studio Effects enhances video calls, but it doesn't help with reusing or modifying content.
+        - content: "Click to Do"
           isCorrect: true
-          explanation: "Correct. A reported 71% of early adopting ITDMs believe generative AI will introduce new security risks."
-        - content: "High cost of AI hardware"
+          explanation: >-
+            Correct. Click to Do allows users to take immediate action on visible content, such as copying, summarizing, or sharing information.
+        - content: "Live Captions"
           isCorrect: false
-          explanation: "Incorrect. Cost is a consideration, but not the top concern."
-  - content: "Which role is primarily focused on generating revenue and streamlining workflows using AI-enhanced technologies?"
-    choices:
-        - content: "IT Decision Makers"
+          explanation: >-
+            Incorrect. Live Captions provides real-time captioning and translation for audio and video.
+        - content: "Microsoft Pluton"
           isCorrect: false
-          explanation: "Incorrect. They focus on technology strategy and security."
-        - content: "C-suite Executives"
-          isCorrect: false
-          explanation: "Incorrect. They oversee strategy and innovation but aren't primarily focused on revenue generation."
-        - content: "Sales and Marketing pros"
-          isCorrect: true
-          explanation: "Correct. Their main priority is generating revenue and improving productivity through AI."
-        - content: "Small and medium business Founders and Owners"
-          isCorrect: false
-          explanation: "Incorrect. They're focused on overall business growth and operations."
-  - content: "What is a key benefit of Copilot+ PCs for knowledge creators?"
-    choices:
-        - content: "Reducing company expenses"
-          isCorrect: false
-          explanation: "Incorrect. While AI might contribute to cost savings, this isn't the key benefit for knowledge creators."
-        - content: "Automating customer service entirely"
-          isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs support but don't fully automate customer service."
-        - content: "Accelerating results and safeguarding work"
-          isCorrect: true
-          explanation: "Correct. Copilot+ PCs help knowledge creators work efficiently and securely."
-        - content: "Replacing human decision-making"
-          isCorrect: false
-          explanation: "Incorrect. AI is used to augment, not replace, human decision-making."
-  - content: "Which of the following is NOT listed as a top responsibility for C-suite executives?"
-    choices:
-        - content: "Digital strategy"
-          isCorrect: false
-          explanation: "Incorrect. This is listed as a top responsibility for C-suite executives."
-        - content: "Product development"
-          isCorrect: false
-          explanation: "Incorrect. This is one of the key responsibilities mentioned."
-        - content: "Sales and business development"
-          isCorrect: true
-          explanation: "Correct. This responsibility is associated with Sales and Marketing pros, not C-suite executives."
-        - content: "Employee management"
-          isCorrect: false
-          explanation: "Incorrect. C-suite executives are responsible for managing employees."
+          explanation: >-
+            Incorrect. Microsoft Pluton is a hardware-based security feature, not a content interaction tool.
 
+  - content: >-
+      An IT decision maker is evaluating Copilot+ PCs for their organization.
+      Which feature helps protect sensitive data at the hardware level?
+    choices:
+        - content: "Click to Do"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Click to Do helps with content interaction, not device security.
+        - content: "Microsoft Pluton security processor and Secured-core PC protection"
+          isCorrect: true
+          explanation: >-
+            Correct. Copilot+ PCs include the Microsoft Pluton security processor and meet Secured-core PC standards, providing hardware-backed protection.
+        - content: "Live Captions"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Live Captions supports communication and accessibility, not security.
+        - content: "Windows Studio Effects"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Windows Studio Effects enhances video calls, not device security.
+
+  - content: >-
+      A business leader needs faster access to information across documents,
+      emails, and workflows. How do Copilot+ PCs help address this need?
+    choices:
+        - content: "By requiring all data to be processed in the cloud"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Copilot+ PCs support both local and cloud-based AI, not cloud-only processing.
+        - content: "By limiting access to AI tools to reduce complexity"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Copilot+ PCs are designed to make AI more accessible, not restrict it.
+        - content: "By enabling AI-powered experiences that help surface relevant information more quickly"
+          isCorrect: true
+          explanation: >-
+            Correct. Copilot+ PCs support AI-powered features that help users find and act on information more efficiently.
+        - content: "By replacing all existing business applications"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Copilot+ PCs work alongside existing applications and workflows.
+
+  - content: >-
+      How do Copilot+ PCs and Microsoft 365 Copilot work together?
+    choices:
+        - content: "They're the same product with different names"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Copilot+ PCs and Microsoft 365 Copilot are separate but complementary solutions.
+        - content: >-
+            Copilot+ PC features run locally on the device, while Microsoft 365 Copilot provides cloud-based AI in productivity apps
+          isCorrect: true
+          explanation: >-
+            Correct. Copilot+ PCs support on-device AI processing, while Microsoft 365 Copilot operates in the cloud within apps like Word, Excel, and Teams.
+        - content: "Microsoft 365 Copilot only works on Copilot+ PCs"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Microsoft 365 Copilot works across supported devices and isn't exclusive to Copilot+ PCs.
+        - content: "Copilot+ PCs replace the need for Microsoft 365 Copilot"
+          isCorrect: false
+          explanation: >-
+            Incorrect. The two are complementary and provide different types of AI capabilities.
+
+  - content: >-
+      Why is on-device AI processing important for business users?
+    choices:
+        - content: "It requires constant internet access"
+          isCorrect: false
+          explanation: >-
+            Incorrect. On-device AI can reduce reliance on constant connectivity.
+        - content: "It helps improve responsiveness and can keep data on the device"
+          isCorrect: true
+          explanation: >-
+            Correct. On-device AI processing supports faster performance and can reduce the need to send sensitive data to the cloud.
+        - content: "It replaces all cloud-based AI services"
+          isCorrect: false
+          explanation: >-
+            Incorrect. Copilot+ PCs support both local and cloud-based AI.
+        - content: "It limits device performance to conserve energy"
+          isCorrect: false
+          explanation: >-
+            Incorrect. On-device AI is designed to improve efficiency, not limit performance.

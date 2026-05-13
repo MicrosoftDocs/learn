@@ -2,48 +2,56 @@
 # Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge
 metadata:
-  title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
-  description: "This is a computer vision solution using Azure IoT Edge"
-  ms.date: 07/10/2024
+  title: "Create an image recognition solution with Azure IoT Edge, Azure AI Custom Vision, and Azure Speech"
+  description: "Build an image recognition solution that runs on Azure IoT Edge. Use a prebuilt, exported Azure AI Custom Vision model locally at the edge and call Azure Speech in Foundry Tools to announce labels with text to speech."
+  ms.date: 05/01/2026
   ms.update-cycle: 180-days
-  author: orin-thomas
+  author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-services
   ms.collection:
-    - TBD
     - ce-advocates-ai-copilot
-title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
-summary: "Create a computer vision solution on the IoT Edge using Azure AI services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
+title: "Create an image recognition solution with Azure IoT Edge, Azure AI Custom Vision, and Azure Speech"
+summary: "Build an Azure IoT Edge image recognition solution for a self-checkout scenario. The exported Azure AI Custom Vision classification model runs locally in an IoT Edge module, and the Camera Capture module calls Azure Speech (via a Foundry resource) at runtime to synthesize item labels as audio."
 abstract: |
     In this module, you will:
-    - Use a pre-trained image classification module with Azure AI services
-    - Deploy your solution to the IoT Edge using VS Code
-    - Verify a module that running successfully
+    - Describe how Azure IoT Edge, Azure IoT Hub, a camera, and containerized modules support image recognition at the edge
+    - Use a prebuilt, exported Azure AI Custom Vision classification model packaged in an IoT Edge module
+    - Create the required Azure resources, including an IoT Hub device identity and a Foundry resource for Speech in Southeast Asia, unless you update the sample code and deployment template to make the Speech region configurable
+    - Build and deploy the solution to an Azure IoT Edge device by using Visual Studio Code
+    - Verify module status and monitor events from the edge device and Azure IoT Hub
+
+    > [!NOTE]
+    > This lab uses the Azure IoT Edge tools for Visual Studio Code extension because the existing lab assets and steps depend on that workflow. Microsoft documentation states that the Visual Studio Code IoT Edge extension is in maintenance mode; Microsoft currently identifies the Azure IoT Edge Dev Tool CLI (`iotedgedev`) as the preferred development tool for new IoT Edge module development. Note that the public `iotedgedev` PyPI release has not been updated since November 2022 (v3.3.7); check release status before adopting it for new production development.
+
+    > [!IMPORTANT]
+    > Azure AI Custom Vision is planned for retirement on September 25, 2028. Existing Azure Custom Vision customers are supported until then, but new production plans that create or export Custom Vision models should evaluate migration options or alternatives.
 
     ***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***
 prerequisites: |
-    - Basic knowledge of IoT Edge
-    - Basic knowledge of Azure AI services
-    - Basic knowledge of Azure Custom Vision
-    - Basic knowledge of Azure Speech Service
-    - Azure subscription
-    - Linux computer
-    - USB Camera
-    - Visual Studio Code installed on your computer
-    - Docker Community Edition installed on your computer
+    - An Azure subscription
+    - Basic knowledge of Azure IoT Edge concepts
+    - Basic awareness of the Azure AI services used in this lab: Azure Speech text to speech and Azure AI Custom Vision model export
+    - A Linux computer or IoT Edge device running supported Ubuntu Server 24.04 or 22.04 and targeting amd64 for this lab
+    - A USB camera and speaker or audio output connected to the Linux computer or IoT Edge device
+    - Visual Studio Code with the Azure IoT Hub extension, the Azure IoT Edge Tools extension (in maintenance mode), and the Container Tools extension (the replacement for the previous Docker extension) installed for this exercise's Visual Studio Code workflow. VS Code's built-in JSON support is sufficient; the community-maintained JSON Tools extension (`eriklynd.json-tools`) is optional if you prefer its formatting features. The Azure Account extension was deprecated in January 2025, but the legacy Azure IoT Hub and Azure IoT Edge VS Code extensions may still install it transitively as a dependency; let Azure Account install if those extensions require it.
+    - Docker-compatible container development tooling, with Moby engine installed as part of the IoT Edge runtime setup
 
-iconUrl: /training/achievements/student-evangelism/create-image-recognition-solution-iot-edge-cognitive-services.svg
-hidden: true
+iconUrl: /learn/achievements/generic-badge.svg
 badge:
-  uid: learn.oxford.learn.oxford.create-image-recognition-with-azure-iot-edge.badge
+  uid: learn.oxford.create-image-recognition-with-azure-iot-edge-badge
 levels:
 - intermediate
 roles:
 - ai-edge-engineer
 products:
 - azure-iot-edge
+- azure-iot-hub
+- azure-custom-vision
+- azure-speech
+- foundry-tools
 subjects:
 - machine-learning
 - iot
@@ -57,4 +65,4 @@ units:
 - learn.oxford.create-image-recognition-with-azure-iot-edge.monitor-solution
 - learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
 - learn.oxford.create-image-recognition-with-azure-iot-edge.summary
-
+

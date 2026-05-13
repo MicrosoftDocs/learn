@@ -4,10 +4,10 @@ title: Use client tools to query a warehouse
 metadata:
   title: Use client tools to query a warehouse
   description: "Learn how to use client tools to query a warehouse in Microsoft Fabric."
-  ms.date: 02/27/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 05/08/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/5-use-client-tools.md)]

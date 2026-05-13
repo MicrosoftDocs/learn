@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="520" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="480" y="40" text-anchor="middle" font-size="20" font-weight="600" fill="#1a1a1a">Three categories of AI red teaming</text>
+
+  <!-- Column headers -->
+  <rect x="20" y="60" width="160" height="50" rx="6" fill="#e8e8e8"/>
+  <rect x="190" y="60" width="245" height="50" rx="6" fill="#0078d4"/>
+  <rect x="445" y="60" width="245" height="50" rx="6" fill="#107c10"/>
+  <rect x="700" y="60" width="245" height="50" rx="6" fill="#d83b01"/>
+
+  <text x="100" y="90" text-anchor="middle" font-size="14" font-weight="600" fill="#333333"></text>
+  <text x="312" y="90" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Full stack red teaming</text>
+  <text x="567" y="90" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Adversarial ML</text>
+  <text x="822" y="90" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Prompt injection</text>
+
+  <!-- Row 1: Focus -->
+  <rect x="20" y="120" width="160" height="80" rx="4" fill="#f5f5f5"/>
+  <rect x="190" y="120" width="245" height="80" rx="4" fill="#f0f6ff"/>
+  <rect x="445" y="120" width="245" height="80" rx="4" fill="#f0fff0"/>
+  <rect x="700" y="120" width="245" height="80" rx="4" fill="#fff5f0"/>
+
+  <text x="100" y="165" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">Focus</text>
+  <text x="312" y="155" text-anchor="middle" font-size="13" fill="#333333">Infrastructure, APIs,</text>
+  <text x="312" y="173" text-anchor="middle" font-size="13" fill="#333333">CI/CD, data pipelines</text>
+  <text x="567" y="155" text-anchor="middle" font-size="13" fill="#333333">Model behavior</text>
+  <text x="567" y="173" text-anchor="middle" font-size="13" fill="#333333">and robustness</text>
+  <text x="822" y="155" text-anchor="middle" font-size="13" fill="#333333">Language interface</text>
+  <text x="822" y="173" text-anchor="middle" font-size="13" fill="#333333">and LLM responses</text>
+
+  <!-- Row 2: Skills needed -->
+  <rect x="20" y="210" width="160" height="80" rx="4" fill="#f5f5f5"/>
+  <rect x="190" y="210" width="245" height="80" rx="4" fill="#ffffff"/>
+  <rect x="445" y="210" width="245" height="80" rx="4" fill="#ffffff"/>
+  <rect x="700" y="210" width="245" height="80" rx="4" fill="#ffffff"/>
+
+  <text x="100" y="255" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">Skills needed</text>
+  <text x="312" y="245" text-anchor="middle" font-size="13" fill="#333333">Penetration testing,</text>
+  <text x="312" y="263" text-anchor="middle" font-size="13" fill="#333333">DevSecOps, networking</text>
+  <text x="567" y="245" text-anchor="middle" font-size="13" fill="#333333">ML / data science,</text>
+  <text x="567" y="263" text-anchor="middle" font-size="13" fill="#333333">security research</text>
+  <text x="822" y="245" text-anchor="middle" font-size="13" fill="#333333">NLP expertise,</text>
+  <text x="822" y="263" text-anchor="middle" font-size="13" fill="#333333">creative prompting</text>
+
+  <!-- Row 3: Tools -->
+  <rect x="20" y="300" width="160" height="80" rx="4" fill="#f5f5f5"/>
+  <rect x="190" y="300" width="245" height="80" rx="4" fill="#f0f6ff"/>
+  <rect x="445" y="300" width="245" height="80" rx="4" fill="#f0fff0"/>
+  <rect x="700" y="300" width="245" height="80" rx="4" fill="#fff5f0"/>
+
+  <text x="100" y="345" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">Tools</text>
+  <text x="312" y="335" text-anchor="middle" font-size="13" fill="#333333">Burp Suite, nmap,</text>
+  <text x="312" y="353" text-anchor="middle" font-size="13" fill="#333333">custom scripts, scanners</text>
+  <text x="567" y="335" text-anchor="middle" font-size="13" fill="#333333">ART, Foolbox,</text>
+  <text x="567" y="353" text-anchor="middle" font-size="13" fill="#333333">custom ML code</text>
+  <text x="822" y="335" text-anchor="middle" font-size="13" fill="#333333">Manual crafting,</text>
+  <text x="822" y="353" text-anchor="middle" font-size="13" fill="#333333">prompt fuzzing tools</text>
+
+  <!-- Row 4: Example attacks -->
+  <rect x="20" y="390" width="160" height="100" rx="4" fill="#f5f5f5"/>
+  <rect x="190" y="390" width="245" height="100" rx="4" fill="#ffffff"/>
+  <rect x="445" y="390" width="245" height="100" rx="4" fill="#ffffff"/>
+  <rect x="700" y="390" width="245" height="100" rx="4" fill="#ffffff"/>
+
+  <text x="100" y="440" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">Example</text>
+  <text x="100" y="458" text-anchor="middle" font-size="14" font-weight="600" fill="#1a1a1a">attacks</text>
+  <text x="312" y="425" text-anchor="middle" font-size="13" fill="#333333">Exposed API endpoints,</text>
+  <text x="312" y="443" text-anchor="middle" font-size="13" fill="#333333">misconfigured storage,</text>
+  <text x="312" y="461" text-anchor="middle" font-size="13" fill="#333333">supply chain compromise</text>
+  <text x="567" y="425" text-anchor="middle" font-size="13" fill="#333333">Evasion attacks,</text>
+  <text x="567" y="443" text-anchor="middle" font-size="13" fill="#333333">model extraction,</text>
+  <text x="567" y="461" text-anchor="middle" font-size="13" fill="#333333">data poisoning</text>
+  <text x="822" y="425" text-anchor="middle" font-size="13" fill="#333333">Direct injection, XPIA,</text>
+  <text x="822" y="443" text-anchor="middle" font-size="13" fill="#333333">jailbreaking,</text>
+  <text x="822" y="461" text-anchor="middle" font-size="13" fill="#333333">crescendo attacks</text>
+</svg>

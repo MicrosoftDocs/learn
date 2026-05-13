@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-azure-bastion.plan-azure-bastion-deployment
+metadata:
+  title: Plan Azure Bastion deployment
+  description: Select the appropriate Azure Bastion SKU and design the deployment architecture, including subnet requirements, hub-spoke placement, and feature availability across SKUs.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Plan Azure Bastion deployment
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-plan-azure-bastion-deployment.md)]

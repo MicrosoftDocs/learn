@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-security-copilot-workspaces.create-workspace
+metadata:
+  title: Create a Security Copilot workspace
+  description: Learn how to create a Security Copilot workspace with appropriate capacity, geo selection, and data sharing settings.
+  ms.date: 03/19/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+title: Create a Security Copilot workspace
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-workspace.md)]

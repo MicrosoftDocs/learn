@@ -3,11 +3,11 @@ uid: learn.ai-security-controls.review-ai-open-source-libraries
 title: Review AI open-source libraries
 metadata:
   title: Review AI open-source libraries
-  description: Learn about reviewing AI open-source libraries to ensure that they are secure and reliable
-  ms.date: 03/06/2026
+  description: Learn how to evaluate open-source AI libraries for security risks, including AI-specific supply chain threats like model provenance and serialization vulnerabilities.
+  ms.date: 04/24/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/2-review-ai-open-source-libraries.md)]

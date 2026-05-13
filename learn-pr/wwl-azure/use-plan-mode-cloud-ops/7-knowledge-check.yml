@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-plan-mode-cloud-ops.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/29/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "An operations engineer needs to plan a complex Azure infrastructure deployment involving multiple resource types and dependencies. The engineer wants to review and approve the full approach before any files are created. Which GitHub Copilot agent should the engineer select in Visual Studio Code?"
+    choices:
+    - content: "Agent"
+      isCorrect: false
+      explanation: "The Agent autonomously implements changes directly. It doesn't create a separate review step before writing code."
+    - content: "Plan"
+      isCorrect: true
+      explanation: "The Plan agent creates a structured implementation plan that you review and iterate on before any code is written. This approach aligns with change management requirements for production infrastructure."
+    - content: "Ask"
+      isCorrect: false
+      explanation: "The Ask agent answers questions without making file changes. It doesn't generate implementation plans."
+  - content: "A cloud administrator uses the Plan agent to create a Bicep deployment plan. After reviewing the initial plan, the administrator notices it lacks rollback procedures. What should the administrator do next?"
+    choices:
+    - content: "Start a new Plan session with a completely rewritten prompt that includes rollback requirements."
+      isCorrect: false
+      explanation: "Restarting from scratch is unnecessary. The Plan agent supports iterative refinement through follow-up prompts in the same session."
+    - content: "Submit a follow-up prompt asking the Plan agent to add rollback steps to the existing plan."
+      isCorrect: true
+      explanation: "The Plan agent supports iteration. You can submit follow-up prompts to add missing steps, refine the approach, or include additional requirements without starting over."
+    - content: "Accept the plan and manually add rollback steps during implementation."
+      isCorrect: false
+      explanation: "Adding critical steps manually after the planning phase bypasses the benefit of having a complete, reviewed plan before implementation."
+  - content: "A DevOps team wants to use GitHub Copilot plan mode to standardize how infrastructure plans follow their organization's naming conventions, tagging requirements, and security policies. What is the most effective approach?"
+    choices:
+    - content: "Include all organizational standards in every prompt submitted to the Plan agent."
+      isCorrect: false
+      explanation: "Repeating standards in every prompt is error-prone and inefficient. Custom instructions files provide a reusable solution."
+    - content: "Create a .github/copilot-instructions.md file in the repository with the team's standards."
+      isCorrect: true
+      explanation: "The Plan agent automatically reads custom instructions files and incorporates those standards when generating plans. This ensures consistent application of team conventions without manual repetition."
+    - content: "Configure the Plan agent's default model to one that understands organizational conventions."
+      isCorrect: false
+      explanation: "Language model selection affects general capabilities but doesn't provide project-specific standards. Custom instructions files are the correct mechanism for encoding team conventions."
+  - content: "After finalizing a plan for a production network security change, an operations engineer wants the implementation to go through team review and CI pipeline validation before being applied. Which handoff strategy should the engineer choose?"
+    choices:
+    - content: "Implement in the same session using the Agent"
+      isCorrect: false
+      explanation: "Implementing in the same session applies changes directly to the workspace without creating a pull request for team review."
+    - content: "Continue in Copilot CLI for background implementation"
+      isCorrect: false
+      explanation: "Copilot CLI runs in the background on the local machine. While it isolates changes in a worktree, it doesn't automatically create a pull request for team review and CI validation."
+    - content: "Hand off to a Copilot cloud agent to create a pull request"
+      isCorrect: true
+      explanation: "The cloud agent creates a pull request on GitHub, which enables peer review, automated CI pipeline validation, and a documented approval trail — all requirements for production changes."

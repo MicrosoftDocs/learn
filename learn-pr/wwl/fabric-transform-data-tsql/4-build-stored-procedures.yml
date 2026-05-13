@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-tsql.build-stored-procedures
+title: Build stored procedures
+metadata:
+  title: Build Stored Procedures
+  description: "Build stored procedures for repeatable and parameterized data processing in a Microsoft Fabric warehouse."
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-build-stored-procedures.md)]

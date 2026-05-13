@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.github.agent-tooling-mcp-execution-environments
+title: Tooling, MCP, and Agent Execution Environments
+metadata:
+  title: Tooling, MCP, and Agent Execution Environments
+  description: This module introduces how modern software agents interact with tools, APIs, and execution environments to perform meaningful tasks. It covers the role of Model Context Protocol (MCP), GitHub Actions, and agentic workflows in enabling scalable and controlled agent execution. You will also learn how GitHub ensures security and governance through defined execution boundaries and safeguards.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 04/28/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: Learn how agents use tools, MCP, and GitHub workflows to execute tasks safely, with clear boundaries, security controls, and scalable automation.
+
+abstract: |
+  By the end of this module, you will:
+  - Understand how agents use tools and APIs to perform actions 
+  - Explain the role of MCP servers in extending agent capabilities 
+  - Configure execution environments using GitHub Actions and GitHub Agentic workflows
+  - Define execution boundaries such as repository, branch, and workflow scope 
+  - Identify limits and protections that govern agent execution, including branch restrictions, pull request review, and environment safeguards
+
+prerequisites: |
+  Before getting started, you should have:
+  - A GitHub account 
+  - Basic understanding of repositories, branches, and pull requests 
+  - Familiarity with GitHub Actions 
+  - General knowledge of CI and CD concepts
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.agent-tooling-mcp-execution-environments.introduction
+  - learn.github.agent-tooling-mcp-execution-environments.interact-github-apis-workflows
+  - learn.github.agent-tooling-mcp-execution-environments.mcp-servers-registry-allowlists
+  - learn.github.agent-tooling-mcp-execution-environments.execution-context-boundaries
+  - learn.github.agent-tooling-mcp-execution-environments.agent-execution-limits-protections
+  - learn.github.agent-tooling-mcp-execution-environments.knowledge-check
+  - learn.github.agent-tooling-mcp-execution-environments.summary
+badge:
+  uid: learn.github.agent-tooling-mcp-execution-environments.badge

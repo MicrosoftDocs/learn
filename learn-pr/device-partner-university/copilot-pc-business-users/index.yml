@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.dpu.copilot-pc-business-users
-title: Introducing Copilot+ PC business users
+title: How Copilot+ PCs support modern business users
 metadata:
-  title: Introducing Copilot+ PC Business Users
-  description: In this module, you'll learn who some of the main business audiences for Copilot+ PCs are—and what priorities and challenges Copilot+ PCs can help them address.
+  title: How Copilot+ PCs Support Modern Business Users
+  description: In this module, you learn how Copilot+ PCs support modern business users with on-device AI, built-in security, and capabilities that improve productivity across common work scenarios.
   ms.date: 08/04/2025
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
@@ -11,12 +11,12 @@ metadata:
   ms.service: windows-11
   ms.custom: CW052024-2
 summary: >
-  Explore early adopters of Copilot+ PCs for business, and learn what Copilot+ PCs can do for them.
+  Explore how Copilot+ PCs support modern business users with on-device AI, built-in security, and capabilities designed to improve productivity across everyday work scenarios.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Identify the key business audiences for Copilot+ PCs and understand their roles, priorities, and challenges.
-  - Explain how Copilot+ PCs address productivity, innovation, and efficiency needs across various professional functions.
-  - Evaluate the benefits of Copilot+ PCs for early adopters in non-regulated industries, particularly in sales and marketing.
+  By the end of this module, you are able to:
+  - Describe how AI is changing workplace productivity and why on-device AI matters for business professionals.
+  - Identify the key capabilities of Copilot+ PCs that address common productivity, security, and workflow challenges.
+  - Explain how Copilot+ PCs support professionals across different business functions, including IT, leadership, sales, marketing, and creative roles.
 prerequisites: |
   - None
 iconUrl: /training/achievements/copilot-pc-business-users.svg

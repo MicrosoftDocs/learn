@@ -482,12 +482,33 @@ stages:
                   inputs:
                     appName: "myapp-prod"
 
-                # Post-deployment: Monitor Application Insights for 10 minutes
-                - task: AzureMonitorAlerts@1
-                  inputs:
-                    alertRules: "HighErrorRate,SlowResponseTime"
-                    evaluationDuration: "10m"
-                    actionOnFailure: "rollback"
+      # AzureMonitor@1 requires an agentless (server) job
+      - job: MonitorPostDeploy
+        dependsOn: DeployProd
+        pool: server
+        steps:
+          - task: AzureMonitor@1
+            inputs:
+              connectedServiceNameARM: '<your-azure-service-connection>'
+              ResourceGroupName: '<your-resource-group>'
+              filterType: 'none'           # 'none' | 'resource' | 'alertrule'
+              severity: 'Sev0,Sev1,Sev2'
+              timeRange: '1h'              # smallest window available
+              alertState: 'Acknowledged,New'
+              monitorCondition: 'Fired'
+
+  # Optional: rollback stage triggered if MonitorPostDeploy fails
+  - stage: Rollback
+    dependsOn: Production
+    condition: failed()
+    jobs:
+      - deployment: RollbackProd
+        environment: production
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - script: echo "Add rollback steps here"
 ```
 
 **Latency and throughput monitoring:**

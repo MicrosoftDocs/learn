@@ -56,7 +56,7 @@ Microsoft provides **Out-of-the-Box (OOB) AI Agents** to help organizations quic
 
 ## References
 
-- [Explore agents prebuilt in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-prebuilt-for-you-in-microsoft-copilot-studio/)
+- [Explore agents prebuilt in Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/explore-agents-pre-built-for-you-in-microsoft-copilot-studio)
 - [Transform work with autonomous agents - Dynamics 365 Blog](https://www.microsoft.com/dynamics-365/blog/business-leader/2024/10/21/transform-work-with-autonomous-agents-across-your-business-processes/)
 - [Copilot Studio template fundamentals - Microsoft Learn](/microsoft-copilot-studio/template-fundamentals)
 - [Microsoft Adoption Scenario Library](https://adoption.microsoft.com/scenario-library/)

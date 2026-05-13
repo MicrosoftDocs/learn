@@ -20,7 +20,7 @@ It's important to recognize that as new intelligent technology emerges and proli
 
 Every technological leap reminds us that responsibility must keep pace with capability. In 2016, Microsoft launched a chatbot called Tay on X to learn from public conversations. Within 24 hours, it began echoing hateful content—an early lesson in how human behavior can exploit machine learning. That experience reinforced the need to anticipate misuse and design safeguards from day one.
 
-Today’s generative AI introduces new challenges: convincingly realistic images, audio, and video make it harder to verify what’s real. To address this challenge, Microsoft collaborates with news organizations and technology partners to develop standards against deep fake manipulation. We built advanced content filters and supervisory controls into services like Azure AI and Bing Chat to reduce harmful outputs and protect training data integrity.
+Today’s generative AI introduces new challenges: convincingly realistic images, audio, and video make it harder to verify what’s real. To address this challenge, Microsoft collaborates with news organizations and technology partners to develop standards against deepfake manipulation. We built advanced content filters and supervisory controls into services like Azure AI and Bing Chat to reduce harmful outputs and protect training data integrity.
 
 > [!TIP]
 > Defenses must evolve as threats do. Expect to iterate on filters, monitoring, and governance as your AI footprint grows.

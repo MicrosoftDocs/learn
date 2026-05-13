@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-right-size-rbac-role-assignments.evaluate-remediate-overprivileged-access
+metadata:
+  title: Evaluate and remediate overprivileged access
+  description: Identify overprivileged role assignments using Defender Cloud Security Posture Management (CSPM), Cloud Infrastructure Entitlement Management (CIEM), and Microsoft Entra access reviews, then right-size access to enforce least-privilege principles.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Evaluate and remediate overprivileged access
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-evaluate-remediate-overprivileged-access.md)]

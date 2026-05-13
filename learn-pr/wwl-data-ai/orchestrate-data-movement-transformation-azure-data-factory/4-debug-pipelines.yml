@@ -4,12 +4,12 @@ title: Debug data factory pipelines
 metadata:
   title: Debug data factory pipelines
   description: "Debug data factory pipelines"
-  ms.date: 04/19/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-debug-pipelines.md)]
+  [!include[](includes/4-debug-pipelines.md)]

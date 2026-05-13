@@ -3,7 +3,7 @@ uid: learn.dpu.powerful-security-ai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge Check
-  description: This content is part of the "Powerful security designed for AI" module.
+  description: This content is part of the "Secure on-device AI with Copilot+ PCs" module.
   ms.date: 08/05/2025
   author: hhreyes21
   ms.author: v-homerreyes
@@ -12,46 +12,63 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What can you do with Copilot+ PCs to help your organization?"
+  - content: "How do Copilot+ PCs help secure AI-powered experiences?"
     choices:
-        - content: "Replace the need for Microsoft 365 entirely"
+        - content: "By sending all AI data to the cloud for centralized processing"
           isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs complement Microsoft 365, they do not replace it."
-        - content: "Automatically send user data to the cloud for analysis"
-          isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs process data locally and do not send snapshots or prompts to the cloud."
-        - content: "Use on-device AI to enhance productivity while keeping data secure"
+          explanation: "Incorrect. Copilot+ PCs prioritize on-device AI processing to reduce data exposure."
+        - content: "By integrating hardware security, on-device AI processing, and built-in protections across the platform"
           isCorrect: true
-          explanation: "Correct. Copilot+ PCs use on-device AI and security features to boost productivity while maintaining data privacy."
-        - content: "Disable security features to improve system performance"
+          explanation: "Correct. Copilot+ PCs combine hardware, OS, and AI protections to secure AI experiences."
+        - content: "By relying only on third-party security software"
           isCorrect: false
-          explanation: "Incorrect. Security is a core feature and is designed to work without compromising performance."
-  - content: "What are the security benefits of Copilot+ PCs?"
+          explanation: "Incorrect. Security is built into the platform, not dependent on third-party tools."
+        - content: "By disabling local processing to prevent data access"
+          isCorrect: false
+          explanation: "Incorrect. Local processing is a key part of how Copilot+ PCs protect data."
+
+  - content: "What is the key benefit of on-device AI processing in Copilot+ PCs?"
     choices:
-        - content: "They rely solely on user-installed antivirus software"
+        - content: "All data is automatically backed up to the cloud"
           isCorrect: false
-          explanation: "Incorrect. Copilot+ PCs have built-in hardware-backed security layers beyond just antivirus."
-        - content: "They use on-device AI that automatically deletes all files daily"
-          isCorrect: false
-          explanation: "Incorrect. On-device AI is used for productivity, not for deleting files."
-        - content: "They include Secured-core protections, Microsoft Pluton, and advanced sign-in security"
+          explanation: "Incorrect. On-device AI focuses on local processing, not automatic cloud storage."
+        - content: "AI workloads are processed locally, helping reduce latency and data exposure"
           isCorrect: true
-          explanation: "Correct. These features provide multilayer protection against modern threats."
-        - content: "They store snapshots in the cloud for easier backup"
+          explanation: "Correct. Local processing improves performance while keeping sensitive data on the device."
+        - content: "AI features require a constant internet connection to function"
           isCorrect: false
-          explanation: "Incorrect. Snapshots are stored locally only, not in the cloud."
-  - content: "How do the advanced security features of Copilot+ PCs benefit you professionally?"
+          explanation: "Incorrect. Many AI features can run locally without relying on the cloud."
+        - content: "AI processing replaces the need for device security"
+          isCorrect: false
+          explanation: "Incorrect. AI processing works alongside built-in security protections."
+
+  - content: "How can IT administrators manage AI experiences on Copilot+ PCs?"
     choices:
-        - content: "They ensure you never need to update your system again"
+        - content: "By using separate tools designed only for AI workloads"
           isCorrect: false
-          explanation: "Incorrect. Regular updates are still necessary for optimal security and performance."
-        - content: "They allow you to share sensitive data more easily over email"
+          explanation: "Incorrect. AI is managed using existing tools, not separate systems."
+        - content: "By manually configuring each device without centralized control"
           isCorrect: false
-          explanation: "Incorrect. While secure, sharing sensitive data still requires caution."
-        - content: "They give you peace of mind to focus on tasks without worrying about data breaches"
+          explanation: "Incorrect. Centralized management tools are used to scale control."
+        - content: "By using tools like Microsoft Intune and Microsoft Entra ID to apply policies and controls"
           isCorrect: true
-          explanation: "Correct. The built-in protections help ensure your work is safeguarded, allowing you to focus on productivity."
-        - content: "They remove the need for password authentication"
+          explanation: "Correct. AI experiences can be governed using the same tools used to manage devices and identities."
+        - content: "By disabling AI features entirely across all devices"
           isCorrect: false
-          explanation: "Incorrect. Passwords are still in use, though enhanced sign-in methods like Windows Hello are supported."
+          explanation: "Incorrect. AI features can be configured and governed, not just disabled."
+
+  - content: "How do Copilot+ PCs and Microsoft 365 Copilot work together to support secure AI?"
+    choices:
+        - content: "Copilot+ PCs only support cloud-based AI experiences"
+          isCorrect: false
+          explanation: "Incorrect. Copilot+ PCs support both on-device and cloud-based AI."
+        - content: "Both rely on the same cloud processing model for all data"
+          isCorrect: false
+          explanation: "Incorrect. On-device AI and cloud AI use different processing models."
+        - content: "On-device AI processes data locally, while Microsoft 365 Copilot applies enterprise data protection in the cloud"
+          isCorrect: true
+          explanation: "Correct. Copilot+ PCs and Microsoft 365 Copilot provide a combined approach to secure AI across device and cloud."
+        - content: "They operate independently with no shared security or governance model"
+          isCorrect: false
+          explanation: "Incorrect. Both are governed using consistent security and management frameworks."
 

@@ -4,17 +4,17 @@ You already know about the "epic deployment" approach, which some refer to as th
 
 ## Rolling deployment strategy
 
-The rolling deployment strategy takes a gradual approach to introducing new versions of code. The new version is phased in over a period of time, gradually increasing the instances of the new code while at the same time decreasing instances of the old. This means the old and new instances will coexist within the organization. For instance, you might upgrade the software on one server, virtual machine, or container at a time.
+The rolling deployment strategy takes a gradual approach to introducing new versions of code. The new version is phased in over a period of time, gradually increasing the instances of the new code while decreasing instances of the old. As a result, old and new instances coexist across the deployment target during the rollout. For example, you might upgrade the software on one server, virtual machine, or container at a time.
 
 An advantage of this strategy is that you can monitor the new code in the production environment to ensure that it meets your performance, security, reliability, and other standards before it's widely deployed.
 
 ## Blue-green deployment strategy
 
-The blue-green deployment strategy uses two separate environments that are identical to one another. One is a test environment containing the new version of the software, the other is the current production environment. When you're satisfied that the software is working properly and meets your standards, you can perform a complete switch from the current production environment to the new one so that it now handles all of the production traffic.
+The blue-green deployment strategy uses two separate environments that are kept as similar as possible and are both capable of serving production traffic. One environment handles the current production load while the other hosts the new version of the software so you can validate it before shifting traffic. When you're satisfied that the new version is healthy, you can switch traffic all at once or gradually increase the share of traffic going to the new environment while you monitor the results.
 
-The blue environment is your current production environment. The green environment is an exact duplicate of it. You first deploy the new version of the software in the green environment, then when you're ready, you route the application traffic from the blue environment to the green, which is now your production environment.
+The blue environment is the one currently serving production traffic. The green environment is its parallel counterpart. You first deploy the new version of the software to green, validate it, and then route production traffic from blue to green. After the cutover, the roles can switch: green becomes the live environment, and blue can be prepared for the next release.
 
-An advantage of this strategy is that you can make the switch almost instantaneously, with no downtime. It's also easy to switch back to blue if a problem occurs after you take the green environment live.
+An advantage of this strategy is that you can switch quickly, often with little or no downtime. It's also relatively easy to direct traffic back to the previous environment if a problem occurs after the new environment goes live.
 
 ## Canary deployment strategy
 
@@ -24,20 +24,30 @@ The name comes from the practice of using canaries in coal mines as an early war
 
 ## Feature flags
 
-The feature flag idea is another strategy that requires slightly more sophistication on the developers' part. Instead of having two separate versions of the same software, an old one and a new one (presumably with new features in it), we ship a version of the software that contains both the old software plus the new changes (features, etc.). The new changes are by default dormant and not visible until the "feature flag" for that change is activated by flipping the flag. That flag can take many forms, including a line in a configuration file, a command-line argument, a special response from an online server the software consults upon startup, and so on.
+The feature flag idea is another strategy that requires slightly more sophistication on the developers' part. Instead of having two separate versions of the same software (an old one and a new one with new features), you ship a single version that contains the old behavior plus the new changes. The new changes are dormant by default and aren't visible until the corresponding "feature flag" is activated. A flag can take many forms, including a line in a configuration file, a command-line argument, or a value retrieved from a remote configuration service and evaluated at runtime.
 
-One strong plus for this approach is the ease at which we can roll back if there's a problem, or the ease in slowly rolling out changes. We don't have to send a new release (with all of those bits) to our servers or our customers, we just need to turn the appropriate flag off or on to downgrade or upgrade them.
+A strong advantage of this approach is the ease of rolling back if a problem occurs and the ease of slowly rolling out changes. In many cases, you don't need to ship a new release to expose or hide the feature. You can simply turn the appropriate flag off or on and let the running application react to the new setting.
+
+On Azure, the **feature management** capability of [Azure App Configuration](/azure/azure-app-configuration/feature-management-overview?azure-portal=true) provides a managed feature-flag store that your applications can read from at runtime, with SDK support for .NET, Java, Python, JavaScript, and Go.
+
+## Ring-based deployments
+
+A ring-based deployment is a structured form of progressive rollout used widely inside Microsoft and Azure. New code is released to a sequence of "rings". For example, an internal or dogfood ring, an early adopter ring, a broad deployment ring, and finally a general availability ring. Each ring is larger than the previous one, and the deployment only advances to the next ring after health signals from the current ring meet defined criteria. Ring-based deployments combine the gradual exposure of canary deployments with explicit, named audiences and approval gates between rings.
+
+## Progressive delivery
+
+The strategies above (canary, ring-based, and feature flags) are often grouped under the umbrella term **progressive delivery**. The unifying idea is that a release is exposed to a controlled, growing audience, instrumented with health and business metrics, and either advanced or rolled back automatically based on those signals. Progressive delivery is increasingly the default model for high-reliability cloud services because it limits the blast radius of any individual change.
 
 ## Deployment best practices
 
-Regardless of which deployment strategy you use, there are some best practices that will help you minimize the risk when rolling out new software or a new version of existing software:
+Regardless of which deployment strategy you use, some best practices help you minimize risk when rolling out new software or a new version of existing software:
 
-- Use proper tools—such as Azure Pipelines—to create a continuous integration and deployment pipeline.
+- Use proper tools, such as Azure Pipelines or GitHub Actions, to create a continuous integration and deployment pipeline.
 
 - Integrate automated testing.
 
-- Use communication channels to notify proper parties of the results of the testing; that is, alert teams if deployments fail, encounter problems, and so on.
+- Use communication channels to notify the right parties of test results. For example, alert teams when deployments fail or encounter problems.
 
 - Monitor for issues immediately after the deployment.
 
-- Have a plan for rolling back if a new version deployment doesn't pass health checks or work properly.
+- Have a plan for rolling back if a new version doesn't pass health checks or work properly.

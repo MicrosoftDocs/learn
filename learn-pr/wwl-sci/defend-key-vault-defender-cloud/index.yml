@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.defend-key-vault-defender-cloud
+metadata:
+  title: Protect Azure Key Vault with Microsoft Defender for Cloud
+  description: "Protect Azure Key Vault with Microsoft Defender for Cloud. Use Defender Cloud Security Posture Management (CSPM) agentless secret scanning to discover exposed credentials, enable Microsoft Defender for Key Vault to detect malicious access patterns, and respond effectively to Key Vault security alerts."
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Protect Azure Key Vault with Microsoft Defender for Cloud
+summary: Protect Azure Key Vault with Microsoft Defender for Cloud. Use Defender CSPM agentless secret scanning to discover exposed credentials across virtual machines (VMs) and cloud deployments, enable Microsoft Defender for Key Vault to detect malicious access patterns, and respond effectively to Key Vault security alerts.
+abstract: |
+  After completing this module, you're able to:
+    - Use Defender CSPM agentless scanning to discover secrets exposed on virtual machines and cloud deployments
+    - Enable Microsoft Defender for Key Vault and identify its threat detection capabilities
+    - Investigate and respond to Microsoft Defender for Key Vault security alerts
+prerequisites: |
+  - Azure Key Vault deployed with access controls and diagnostic logging configured
+  - Microsoft Defender for Cloud enabled in your Azure subscription
+  - Understanding of Microsoft Defender for Cloud plans and security recommendations
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-key-vault
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.defend-key-vault-defender-cloud.introduction
+- learn.wwl.defend-key-vault-defender-cloud.posture-management-secret-scanning
+- learn.wwl.defend-key-vault-defender-cloud.enable-defender-key-vault
+- learn.wwl.defend-key-vault-defender-cloud.investigate-alerts
+- learn.wwl.defend-key-vault-defender-cloud.knowledge-check
+- learn.wwl.defend-key-vault-defender-cloud.summary
+badge:
+  uid: learn.wwl.defend-key-vault-defender-cloud.badge

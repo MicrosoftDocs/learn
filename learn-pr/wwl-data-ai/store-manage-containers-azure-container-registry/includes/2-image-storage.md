@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3808428a-8e36-4ec9-9195-ea1e9db356cc]
+
+> [!TIP]
+> Select the **Text** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Understanding how Azure Container Registry (ACR) organizes container images helps you design an effective storage strategy for AI applications. This unit explains the registry hierarchy and shows how manifests, layers, and digests enable efficient storage and retrieval of container artifacts.
 
 ## Understand Azure Container Registry
@@ -100,6 +111,8 @@ Following these practices helps you maintain an organized and efficient registry
 - **Plan repository structure:** Group related images logically. Consider whether images belong together based on deployment patterns, team ownership, or lifecycle management needs.
 - **Enable geo-replication:** For global AI deployments, replicate images to regions where your services run. This reduces pull latency and improves deployment reliability.
 - **Monitor storage:** Track storage consumption and implement retention policies to remove untagged manifests. Container images accumulate over time, and cleanup policies prevent unnecessary storage costs.
+
+::: zone-end
 
 ## Additional resources
 

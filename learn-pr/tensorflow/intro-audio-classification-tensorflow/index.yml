@@ -1,22 +1,21 @@
 ### YamlMime:Module
-uid: learn.tensorflow.intro-audio-classification-tensorflow
+uid: learn.tensorflow.intro-audio-classification
 metadata:
   title: Introduction to audio classification with TensorFlow
-  description: Learn how to do audio classification with TensorFlow.
-  ms.date: 08/03/2021
+  description: Learn how to prepare audio data, create spectrograms, and build a TensorFlow keyword classification model.
+  ms.date: 04/20/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
   ms.service: artificial-intelligence
 title: Introduction to audio classification with TensorFlow
-summary: In this learn module we'll be learning how to do audio classification with TensorFlow. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. In this tutorial we'll first break down how to understand audio data, from analog to digital representations, then we'll build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image representation and then do computer vision to classify the word spoken!
+summary: Learn how audio is represented as tensors, how to convert waveforms into spectrograms, and how to use TensorFlow to build a simple keyword classifier.
 abstract: |
   In this module you will:
-  - Learn the basics of audio data
-  - Learn how to visualize and transform audio data
-  - Build a binary classification speech model that can recognize "yes" and "no"
+  - Describe how sample rate, amplitude, channels, and waveforms represent audio data.
+  - Convert audio waveforms into spectrogram tensors for model training.
+  - Build and evaluate a binary TensorFlow keyword classification model that recognizes "yes" and "no".
 iconUrl: /training/achievements/tensor-audio-data.svg
-hidden: true
 levels:
 - beginner
 roles:
@@ -24,20 +23,19 @@ roles:
 - developer
 - student
 products:
-- azure
 - azure-machine-learning
 prerequisites: |
   - Basic Python knowledge
-  - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
+  - A Python environment that supports TensorFlow 2.10 or later, with TensorFlow and Matplotlib installed
 subjects:
 - classification-analysis
 units:
-- learn.tensorflow.intro-audio-classification-tensorflow.introduction
-- learn.tensorflow.intro-audio-classification-tensorflow.understand-audio-data
-- learn.tensorflow.intro-audio-classification-tensorflow.visualizations-transforms
-- learn.tensorflow.intro-audio-classification-tensorflow.speech-model
-- learn.tensorflow.intro-audio-classification-tensorflow.summary
-
+- learn.tensorflow.intro-audio-classification.introduction
+- learn.tensorflow.intro-audio-classification.understand-audio-data
+- learn.tensorflow.intro-audio-classification.visualizations-transforms
+- learn.tensorflow.intro-audio-classification.speech-model
+- learn.tensorflow.intro-audio-classification.summary
 badge:
   uid: learn.tensorflow.intro-audio-classification.badge
+

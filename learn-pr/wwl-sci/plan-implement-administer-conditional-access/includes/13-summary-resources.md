@@ -23,3 +23,4 @@ To learn more about the technology in this module, check out the following links
  - [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
  - [Plan a Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access)
  - [Continuous Access Evaluation (CAE](/entra/identity/conditional-access/concept-continuous-access-evaluation))
+ - [Conditional Access for agent identities (Microsoft Entra Agent ID)](/entra/identity/conditional-access/concept-conditional-access-policy-common)

@@ -1,4 +1,4 @@
-When calling KQL functions, you can provide a set of parameters.  This is an important concept for building ASIM parsers as it allows you to filter the function results with dynamic values before returning results.
+When calling KQL functions, you can provide a set of parameters. This is an important concept for building ASIM parsers as it allows you to filter the function results with dynamic values before returning results.
 
 
 
@@ -35,7 +35,7 @@ Then create two parameters:
 Your screen should look like the image below:
 
 
-:::image type="content" source="../media/example-function-properties.png#lightbox" alt-text="Screenshot of K Q L Function properties.":::
+:::image type="content" source="../media/example-function-properties.png" alt-text="Screenshot of KQL function properties." lightbox="../media/example-function-properties.png":::
 
 Create a new query. Then enter:
 
@@ -44,7 +44,7 @@ AzureActivityByCategory("Administrative", todatetime("2021/04/05 5:40:01.032 PM"
 ```
 
 
-:::image type="content" source="../media/example-use-function.png#lightbox" alt-text="Screenshot of the K Q L calling Function.":::
+:::image type="content" source="../media/example-use-function.png" alt-text="Screenshot of a KQL query calling a parameterized function." lightbox="../media/example-use-function.png":::
 
 
 
