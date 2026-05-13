@@ -36,7 +36,6 @@ subjects:
 - security
 units:
 - learn.wwl.priva-subject-rights-requests.subject-rights-requests-overview
-- learn.wwl.priva-subject-rights-requests.subject-rights-request-reports
 - learn.wwl.priva-subject-rights-requests.summary
 
 badge:
