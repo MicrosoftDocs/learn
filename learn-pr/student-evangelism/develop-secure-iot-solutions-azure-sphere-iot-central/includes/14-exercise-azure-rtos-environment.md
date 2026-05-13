@@ -53,7 +53,7 @@ If you're using any other supported board, update **CMakeLists.txt** so that onl
 
     <!-- ![Set Debug build.](../media/visual-studio-code-start-application.png) -->
 
-    :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="This illustration shows you how to set the the debug build.":::
+    :::image type="content" source="../media/visual-studio-code-start-application.png" alt-text="This illustration shows you how to set the debug build.":::
 1. Before pressing <kbd>F5</kbd>, complete these prerequisites:
 
     - Open the RTApp **.vscode\launch.json** file and verify that the active debug configuration includes the high-level application's component ID in `partnerComponents`. This marks the high-level app as a partner so Visual Studio Code sideload doesn't remove it while you debug the RTApp.

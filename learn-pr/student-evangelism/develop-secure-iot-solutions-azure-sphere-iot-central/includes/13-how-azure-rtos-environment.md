@@ -1,4 +1,4 @@
-The microbiology laboratory is to run a set of experiments for a new customer. The experiments require the lab temperature, humidity, and pressure to be stable. After much investigation a new environment sensor is found that meets the customers needs. However, it's discovered that the new sensor is very timing sensitive and needs to be deployed onto one of the Azure Sphere real-time cores.
+The microbiology laboratory is to run a set of experiments for a new customer. The experiments require the lab temperature, humidity, and pressure to be stable. After much investigation a new environment sensor is found that meets the customer's needs. However, it's discovered that the new sensor is very timing sensitive and needs to be deployed onto one of the Azure Sphere real-time cores.
 
 In this unit, you'll learn how to deploy a real-time application onto the Azure Sphere to support the new temperature, humidity, and pressure sensor.
 
