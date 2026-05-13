@@ -66878,6 +66878,11 @@
       "source_path": "learn-pr/wwl-sci/priva-understand-priva/priva-overview.md",
       "redirect_url": "/privacy/priva/priva-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/summary.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
     }
   ]
 }
