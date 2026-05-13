@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-web-application-firewall.summary
+metadata:
+  title: Summary
+  description: Summary of implementing security controls for Azure App Services and Web Application Firewall, covering platform controls, Web Application Firewall (WAF) policy configuration, and WAF integration with App Service.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

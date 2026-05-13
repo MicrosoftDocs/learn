@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-web-application-firewall
+metadata:
+  title: Implement Security Controls for Azure App Services and Web Application Firewall
+  description: "Implement security controls for Azure App Services and Web Application Firewall. Configure authentication, managed identities, VNet integration, and private endpoints for App Service, and deploy WAF policies on Azure Application Gateway to protect web workloads at the network edge."
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-app-service
+  ai-usage: ai-assisted
+title: Implement security controls for Azure App Services and Web Application Firewall
+summary: Implement security controls for Azure App Services and Web Application Firewall. Configure authentication, managed identities, VNet integration, and private endpoints for App Service, and deploy WAF policies on Azure Application Gateway to protect web workloads at the network edge.
+abstract: |
+  After completing this module, you will be able to:
+    - Implement authentication, managed identity, and network controls for Azure App Service
+    - Configure Web Application Firewall policies including managed rule sets and custom rules
+    - Integrate Web Application Firewall with App Service to enforce edge-layer protection
+prerequisites: |
+  - Working knowledge of Azure App Service including deploying and configuring web apps
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Familiarity with Azure Virtual Network and Application Gateway concepts
+  - Basic understanding of HTTP/HTTPS and web application security concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-app-service
+  - azure-web-application-firewall
+  - azure-application-gateway
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.implement-security-web-application-firewall.introduction
+- learn.wwl.implement-security-web-application-firewall.implement-security-controls-azure-app-service
+- learn.wwl.implement-security-web-application-firewall.configure-web-application-firewall-policies
+- learn.wwl.implement-security-web-application-firewall.protect-app-service-web-application-firewall
+- learn.wwl.implement-security-web-application-firewall.knowledge-check
+- learn.wwl.implement-security-web-application-firewall.summary
+badge:
+  uid: learn.wwl.implement-security-web-application-firewall.badge
