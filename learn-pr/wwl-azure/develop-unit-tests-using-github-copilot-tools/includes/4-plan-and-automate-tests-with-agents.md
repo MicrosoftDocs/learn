@@ -1,4 +1,4 @@
-The Ask agent is ideal for generating tests one prompt at a time, but larger testing tasks often require multiple steps: deciding what to test, scaffolding a test project, generating tests across several files, and running the resulting suite. The **Plan** and **Agent** agents in the Chat view are designed for that level of work. Use the Plan agent to design a test strategy before any code is written, then hand the approved plan to the Agent for autonomous implementation.
+The previous unit used Agent mode to generate tests from a single Chat view prompt. Larger testing tasks often need more structure: deciding what to test, scaffolding a test project, generating tests across several files, and running the resulting suite. The **Plan** agent and longer **Agent** sessions in the Chat view are designed for that level of work. Use the Plan agent to design a test strategy before any code is written, then hand the approved plan to the Agent for autonomous, multi-step implementation.
 
 ## Compare the Ask, Plan, and Agent agents
 
@@ -6,9 +6,9 @@ The Chat view provides three built-in local agents. Each one is optimized for a 
 
 | Agent | Best for | Typical use in unit testing |
 |---|---|---|
-| **Ask** | Single-prompt responses about your code | Generate tests for a file or selection. |
-| **Plan** | Structured, step-by-step implementation plans | Design a test strategy before writing tests. |
-| **Agent** | Autonomous, multi-file coding workflows | Scaffold a test project, create tests across files, and run them. |
+| **Ask** | Read-only analysis and Q&A about your code | Explore edge cases, framework choices, or example tests before writing any code. |
+| **Plan** | Structured, step-by-step implementation plans | Design a multi-file test strategy that you can review before implementation. |
+| **Agent** | Autonomous, multi-file coding workflows | Generate tests directly into a test project, run them, and iterate on failures. |
 
 Choose an agent by selecting it from the agent picker in the Chat view. You can switch agents at any time during a session.
 

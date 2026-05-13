@@ -70,6 +70,17 @@ quiz:
     - content: "The Plan agent."
       isCorrect: false
       explanation: "Incorrect. The Plan agent produces a step-by-step plan but doesn't implement it. Hand the plan off to the Agent for autonomous implementation."
+  - content: "You want GitHub Copilot to generate unit tests for the active file and write them directly into a test project. Which agent in the Chat view is the recommended starting point?"
+    choices:
+    - content: "Agent."
+      isCorrect: true
+      explanation: "Correct. Agent mode can edit files, run terminal commands, and rerun tests, so it can take a single prompt and produce a working test file you only need to review."
+    - content: "Ask."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode answers questions in chat without modifying files. Use Ask mode to explore edge cases or framework choices first, then switch to Agent mode to actually generate the tests."
+    - content: "Plan."
+      isCorrect: false
+      explanation: "Incorrect. The Plan agent produces a step-by-step plan but doesn't implement it. Use Agent mode for direct test generation, or hand a Plan output off to the Agent for autonomous implementation."
   - content: "A test file already contains several xUnit test methods. You want to quickly add tests for a few more edge cases by working directly in the editor. Which GitHub Copilot feature is the best fit?"
     choices:
     - content: "Ghost text inline suggestions in the editor."
