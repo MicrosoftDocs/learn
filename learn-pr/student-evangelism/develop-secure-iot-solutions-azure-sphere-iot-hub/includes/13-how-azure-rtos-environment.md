@@ -1,6 +1,6 @@
-The microbiology laboratory is to run a set of experiments for a new customer. The experiments require the lab temperature, humidity, and pressure to be very stable. After much investigation a new environment sensor is found that meets the customer's needs. However, it's discovered the new sensor is very timing sensitive and needs to be deployed onto one of the Azure Sphere real-time cores.
+The microbiology laboratory is to run a set of experiments for a new customer. The experiments require the lab temperature, humidity, and pressure to be stable. After much investigation, a new environment sensor is found that meets the customer's needs. However, it's discovered the new sensor is very timing sensitive and needs to be deployed onto one of the Azure Sphere real-time cores.
 
-In this unit, you will learn how to deploy a real-time application onto the Azure Sphere to support the new temperature, humidity, and pressure sensor.
+In this unit, you'll learn how to deploy a real-time application onto the Azure Sphere to support the new temperature, humidity, and pressure sensor.
 
 ## Azure Sphere architecture
 
@@ -12,7 +12,7 @@ High-level applications running on the Cortex-A7 Linux kernel are used for less 
 
 ## What is an RTOS (Real-Time Operating System)
 
-A system is said to be real-time if the total correctness of an operation depends not only upon its logical correctness, but also upon the time in which it is performed [Link to Wikipedia Article](https://en.wikipedia.org/wiki/Real-time_computing?azure-portal=true)
+A system is said to be real-time if the total correctness of an operation depends not only upon its logical correctness, but also upon the time in which it's performed [Link to Wikipedia Article](https://en.wikipedia.org/wiki/Real-time_computing?azure-portal=true)
 
 A Real-Time Operating System is system software that provides services and manages processor resources for applications. These resources include processor cycles, memory, peripherals, and interrupts. The main purpose of a real-time Operating System is to allocate processing time among various duties the embedded software must perform.
 
@@ -22,7 +22,7 @@ This typically involves a division of the software into pieces, commonly called 
 
 The real-time operating system used in this module is **Eclipse ThreadX**, which until 2024 was known as **Azure RTOS**. On 21 November 2023, Microsoft announced that it was contributing the Azure RTOS source code to the Eclipse Foundation. The first open-source release under the MIT license, **Eclipse ThreadX 6.4.1**, was published on 29 February 2024, and Microsoft announced on 4 April 2024 that the transition to the Eclipse Foundation was complete. The project is now governed by the Eclipse Foundation and is hosted at [threadx.io](https://threadx.io?azure-portal=true), with source on [GitHub (eclipse-threadx)](https://github.com/eclipse-threadx?azure-portal=true).
 
-Eclipse ThreadX is an embedded development suite that includes a small but powerful real-time kernel — ThreadX — which delivers reliable, ultra-fast performance for resource-constrained devices. The suite also includes networking (NetX Duo), file system (FileX), USB (USBX), graphical user interface (GUIX), flash wear-leveling for NAND/NOR memory (LevelX), and a host-based system analysis tool (TraceX). In this unit, you'll use the ThreadX kernel.
+Eclipse ThreadX is an embedded development suite that includes a small but powerful real-time kernel — ThreadX — which delivers reliable, ultra-fast performance for resource-constrained devices. The suite also includes networking (NetX Duo), file system (FileX), USB (USBX), graphical user interface (GUIX), flash wear-leveling for NAND/NOR memory (LevelX), and a host-based system analysis tool (TraceX). In this unit, you use the ThreadX kernel.
 
 ThreadX is an advanced real-time operating system (RTOS) designed specifically for deeply embedded applications. Its benefits include real-time multithreading, inter-thread communication and synchronization, and memory management. ThreadX has many advanced features, including a picokernel architecture, preemption threshold, event chaining, and a rich set of system services.
 
@@ -33,15 +33,15 @@ ThreadX is an advanced real-time operating system (RTOS) designed specifically f
 
 The reasons to run code on the Cortex M4 real-time cores include:
 
-1. You are migrating existing Cortex M4 code to an Azure Sphere.
+1. You're migrating existing Cortex M4 code to an Azure Sphere.
 1. Your application requires precise or deterministic timing that cannot be guaranteed on the Cortex-A7 Linux kernel core where it would have to compete with the Azure Sphere OS, networking stack, and high-level application work.
 1. Your application may benefit from running across multiple cores to take advantage of all the memory and processing resources on the Azure Sphere.
 
-To learn more, review the [Overview of Azure Sphere applications](/azure-sphere/app-development/applications-overview?view=azure-sphere-integrated&azure-portal=true), the [What is Eclipse ThreadX?](/azure/rtos/?azure-portal=true) overview, and the [Eclipse ThreadX project](https://threadx.io?azure-portal=true).
+To learn more, review the [Overview of Azure Sphere applications](/azure-sphere/app-development/applications-overview?view=azure-sphere-integrated&preserve-view=true), the [What is Eclipse ThreadX?](/azure/rtos/?azure-portal=true) overview, and the [Eclipse ThreadX project](https://threadx.io?azure-portal=true).
 
 ## Inter-core communications
 
-For security reasons, applications running on the real-time cores cannot access the internet, Azure Sphere applibs, or other Azure Sphere OS features. Azure Sphere supports inter-core communication between a high-level application and a real-time capable application (RTApp). The high-level (Cortex-A7) app calls `Application_Connect` with the RTApp component ID; this returns a connected socket file descriptor that the app uses with POSIX `send()` and `recv()` calls. Each message body can be up to 1 KB. On the real-time (Cortex-M4F) side, the Azure Sphere inter-core mechanism uses mailbox notifications and a ring buffer mapped to shared memory; the helper code in this lab wraps those operations as `EnqueueData` and `DequeueData`.
+For security reasons, applications running on the real-time cores can't access the internet, Azure Sphere applibs, or other Azure Sphere OS features. Azure Sphere supports inter-core communication between a high-level application and a real-time capable application (RTApp). The high-level (Cortex-A7) app calls `Application_Connect` with the RTApp component ID; this returns a connected socket file descriptor that the app uses with POSIX `send()` and `recv()` calls. Each message body can be up to 1 KB. On the real-time (Cortex-M4F) side, the Azure Sphere inter-core mechanism uses mailbox notifications and a ring buffer mapped to shared memory; the helper code in this lab wraps those operations as `EnqueueData` and `DequeueData`.
 
 Both application manifests must declare the partner application's component ID in `AllowedApplicationConnections`; otherwise `Application_Connect` fails with a permissions error. During development, the applications must also be marked as partners in the Visual Studio Code launch configuration so that deploying one app doesn't delete the other. There also needs to be a shared data contract that describes the shape of the data being passed between the cores. Keep the contract fixed-size and identical in both projects, don't pass pointers, and use scalar fields such as integers, floats, enums, and characters. For more complex data, such as arrays or variable-length objects, implement an explicit serialization scheme.
 

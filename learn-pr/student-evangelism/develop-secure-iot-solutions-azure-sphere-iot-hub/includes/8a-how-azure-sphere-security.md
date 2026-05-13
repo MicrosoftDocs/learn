@@ -1,4 +1,4 @@
-In this unit you will learn about Azure Sphere security.
+In this unit you'll learn about Azure Sphere security.
 
 Applications on Azure Sphere are secure by default. You must grant capabilities to the application. Granting capabilities is key to Azure Sphere security and is also known as the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege?azure-portal=true). You should grant only the capabilities that the Azure Sphere application needs to run correctly.
 
@@ -6,7 +6,7 @@ Application capabilities include what hardware can be accessed, what network end
 
 ## IoT Hub and DPS network endpoints
 
-You must declare all network endpoints your application will use. As a security feature, if you try to access any endpoint that has not been declared in the application manifest then the application will fail when it tries to connect. This security is implemented as a network firewall that cannot be changed until the application package is updated.
+You must declare all network endpoints your application uses. As a security feature, if you try to access any endpoint that hasn't been declared in the application manifest then the application fails when it tries to connect. This security is implemented as a network firewall that can't be changed until the application package is updated.
 
 When you connect to IoT Hub via the Device Provisioning Service (DPS), your application's `AllowedConnections` capability must include the DPS global endpoint `global.azure-devices-provisioning.net` and the hostname of every IoT hub that DPS may assign the device to (each hub's `<your-iot-hub>.azure-devices.net` hostname). Do **not** add the per-instance DPS service endpoint (the `<dpsName>.azure-devices-provisioning.net` value) to `AllowedConnections` — Azure Sphere devices reach DPS only through the global endpoint, and adding the service endpoint over-grants network access without enabling provisioning.
 
@@ -38,9 +38,9 @@ For Azure Sphere (Integrated), get the Azure Sphere (Legacy) tenant UUID by show
 
 ## Access to hardware
 
-Remember, Azure Sphere applications are secure by default and you must declare access to hardware peripherals your application requires. If you do not declare the hardware your application needs, then your application will fail when it tries to access the hardware. Security access to hardware is implemented in hardware as a silicon firewall.
+Remember, Azure Sphere applications are secure by default and you must declare access to hardware peripherals your application requires. If you don't declare the hardware your application needs, then your application fails when it tries to access the hardware. Security access to hardware is implemented in hardware as a silicon firewall.
 
-On a production Azure Sphere device — that is, one in the `DeviceComplete` manufacturing state with the `appDevelopment` device capability *not* present — the silicon firewall configuration is locked at the end of system startup and remains in place until the device is rebooted. This is what is meant by the firewall being "sticky": once locked, peripheral assignments cannot be changed without a reboot. On a development device (one that has the `appDevelopment` capability, as you do for the labs in this module), the firewall is reconfigured each time applications are sideloaded, so a device restart is only needed when peripheral assignments change between deployed apps. For details, see [Peripheral configuration locking](/azure-sphere/deployment/peripheral-configuration-locking?azure-portal=true).
+On a production Azure Sphere device — that is, one in the `DeviceComplete` manufacturing state with the `appDevelopment` device capability *not* present — the silicon firewall configuration is locked at the end of system startup and remains in place until the device is rebooted. This is what is meant by the firewall being "sticky": once locked, peripheral assignments can't be changed without a reboot. On a development device (one that has the `appDevelopment` capability, as you do for the labs in this module), the firewall is reconfigured each time applications are sideloaded, so a device restart is only needed when peripheral assignments change between deployed apps. For details, see [Peripheral configuration locking](/azure-sphere/deployment/peripheral-configuration-locking?azure-portal=true).
 
 ## Hardware capabilities
 
