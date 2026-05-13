@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-container-risks-defender-containers.summary
+metadata:
+  title: Summary
+  description: Summary of detecting container risks using Microsoft Defender for Containers. We cover the four protection pillars, plan configuration, vulnerability assessment, runtime threat detection, and gated deployment for Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) environments.
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

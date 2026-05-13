@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-container-risks-defender-containers.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Microsoft Defender for Containers. The test includes architecture components, plan configuration, vulnerability assessment, runtime threat detection, and gated deployment.
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which component of Microsoft Defender for Containers collects runtime data from Azure Kubernetes Service (AKS) nodes using eBPF technology?"
+    choices:
+    - content: "Defender sensor DaemonSet"
+      isCorrect: true
+      explanation: "Correct. The Defender sensor is a DaemonSet deployed on each AKS node as part of the AKS Security profile. It uses eBPF (extended Berkeley Packet Filter) technology to collect runtime data—Kubernetes events, process data, and network activity—and sends it securely to Defender for Cloud for threat protection."
+    - content: "Azure Policy for Kubernetes add-on"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Policy for Kubernetes add-on is deployed as an AKS add-on and functions as an admission controller webhook. It enforces configuration rules at deployment time by intercepting resource creation requests. It doesn't collect runtime data from nodes."
+    - content: "Kubernetes API access"
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes API access uses Azure-native capabilities and the AKS API server to discover and assess cluster configurations. It doesn't use eBPF technology and doesn't collect runtime data from nodes."
+    - content: "Agentless scanning for machines"
+      isCorrect: false
+      explanation: "Incorrect. Agentless scanning for machines performs periodic disk snapshots of AKS node VMs for out-of-band OS and file system analysis. It doesn't use eBPF technology and doesn't provide real-time runtime data collection."
+  - content: "When you enable the Defender for Containers plan in Microsoft Defender for Cloud, which two components are autoprovisioned to AKS clusters by default?"
+    choices:
+    - content: "Defender sensor and agentless scanning for machines"
+      isCorrect: false
+      explanation: "Incorrect. While both of these are valid plan components and are enabled by default, agentless scanning for machines targets node VM disk analysis. The primary autoprovisioned components deployed directly to AKS clusters for runtime protection and admission control are the Defender sensor and the Azure Policy for Kubernetes add on."
+    - content: "Defender sensor and Azure Policy for Kubernetes add-on"
+      isCorrect: true
+      explanation: "Correct. The Defender sensor is deployed as an AKS Security profile DaemonSet on each node, providing runtime threat protection. The Azure Policy for Kubernetes add-on is deployed as an AKS add-on, providing admission control enforcement. Both are autoprovisioned to AKS clusters when the Defender for Containers plan is enabled."
+    - content: "Registry access and Kubernetes API access"
+      isCorrect: false
+      explanation: "Incorrect. Registry access enables vulnerability scanning for ACR images and Kubernetes API access enables agentless container posture management. Neither of these is deployed directly to AKS clusters—they enable Defender for Cloud capabilities that connect to registries and the AKS API server."
+    - content: "Azure Policy for Kubernetes add-on and Kubernetes API access"
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes API access provides cluster configuration visibility but doesn't deploy a component to the cluster—it uses the AKS API server and Trusted Access from outside the cluster. The correct pairing for directly deployed AKS cluster components is the Defender sensor and the Azure Policy add-on."
+  - content: "What is the key difference between push-triggered scanning and runtime container scanning in Defender for Containers?"
+    choices:
+    - content: "Push-triggered scanning uses the Defender sensor; runtime scanning uses agentless discovery."
+      isCorrect: false
+      explanation: "Incorrect. Push-triggered scanning doesn't use the Defender sensor. It's triggered by ACR registry events when an image is pushed to the registry. Runtime container scanning does use either the Defender sensor or Kubernetes API access to identify images running in AKS clusters."
+    - content: "Push-triggered scanning runs daily; runtime scanning runs only when an image is pushed."
+      isCorrect: false
+      explanation: "Incorrect. This reverses the descriptions. Push-triggered scanning fires when an image is pushed to ACR. It's continuous rescanning (not push-triggered) that runs on a daily schedule for images recently pushed, recently pulled, or currently running in monitored clusters."
+    - content: "Push-triggered scanning applies only to Linux images; runtime scanning covers both Linux and Windows."
+      isCorrect: false
+      explanation: "Incorrect. This describes an OS support difference that isn't the key distinction between these two scanning types. Both push-triggered and runtime scanning evaluate image vulnerabilities. The core difference is their scope: registry images versus images actively running in AKS clusters."
+    - content: "Push-triggered scanning evaluates images stored in ACR; runtime scanning evaluates images currently running in AKS clusters."
+      isCorrect: true
+      explanation: "Correct. Push-triggered scanning fires within a few hours when an image is pushed to ACR, scanning the stored image for known CVEs. Runtime container scanning evaluates images that are actively running in AKS clusters, including images pulled from registries outside ACR. Runtime findings map vulnerable images to the specific clusters and namespaces where they're running."
+  - content: "What does binary drift detection identify in a running container?"
+    choices:
+    - content: "Containers that are running with root user privileges"
+      isCorrect: false
+      explanation: "Incorrect. Running containers with root user privileges is a security posture misconfiguration detected through CIS Kubernetes Benchmark recommendations in Defender for Cloud. Binary drift detection specifically monitors for process execution, not privilege configuration."
+    - content: "Container images in ACR that have CVEs above a defined severity threshold"
+      isCorrect: false
+      explanation: "Incorrect. Known CVEs in ACR images are surfaced through vulnerability assessment scanning (push-triggered and continuous rescanning), not binary drift detection. Binary drift detection focuses on process execution behavior in running containers."
+    - content: "Executables running inside a container that weren't present in the original container image"
+      isCorrect: true
+      explanation: "Correct. Binary drift occurs when a container runs an executable that wasn't part of the original image. Because container images should be immutable, any process starting from a binary not in the original image is flagged as potential drift—which could be a diagnostic tool a developer copied in, or malware injected after exploitation. Drift detection generates a high-severity alert; drift blocking (preview) actively prevents the unauthorized process from executing."
+    - content: "Kubernetes API calls made from unusual source IP addresses"
+      isCorrect: false
+      explanation: "Incorrect. Suspicious Kubernetes API calls from unusual source IPs are detected through control plane threat detection using Kubernetes audit log analysis. Binary drift detection is a node-level capability that uses the Defender sensor to monitor process execution within running containers."
+  - content: "Which component of the Defender for Containers plan blocks noncompliant workloads from being deployed to an AKS cluster before they reach the cluster?"
+    choices:
+    - content: "Azure Policy for Kubernetes add-on"
+      isCorrect: true
+      explanation: "Correct. The Azure Policy for Kubernetes add-on extends the open-source Gatekeeper v3 admission controller and registers as a webhook to Kubernetes admission control. In deny mode, it intercepts resource creation requests to the AKS API server and rejects deployments that don't meet your defined security policies—before the workload is ever scheduled to run on a node."
+    - content: "Defender sensor DaemonSet"
+      isCorrect: false
+      explanation: "Incorrect. The Defender sensor monitors runtime behavior of workloads that are already running in the cluster. It detects threats and can block processes through binary drift blocking, but it operates after workloads are deployed. Blocking deployments before they reach the cluster is the role of the Azure Policy admission controller."
+    - content: "Agentless scanning for machines"
+      isCorrect: false
+      explanation: "Incorrect. Agentless scanning for machines analyzes node VM disk snapshots for OS-level vulnerabilities and configuration. It's a detection and assessment capability, not an enforcement mechanism that intercepts and blocks deployment requests."
+    - content: "Kubernetes API access"
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes API access reads cluster configuration data through the AKS API server to provide configuration visibility. It doesn't intercept or block deployment requests. Blocking noncompliant deployments requires the Azure Policy for Kubernetes add-on operating as an admission controller."

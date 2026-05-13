@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-security-controls-containers
+metadata:
+  title: Implement Security Controls for Azure Container Registry, Container Instances, and Container Apps
+  description: "Implement security controls across Azure Container Registry, Azure Container Instances, and Azure Container Apps. Configure RBAC, private endpoints, and content trust for ACR; apply managed identities and virtual network integration for Container Instances; and enforce ingress controls, managed identities, and secrets management for Container Apps environments."
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-container-registry
+  ai-usage: ai-assisted
+title: Implement security controls for Azure Container Registry, Container Instances, and Container Apps
+summary: Implement security controls across Azure Container Registry, Azure Container Instances, and Azure Container Apps. Configure RBAC, private endpoints, and content trust for ACR; apply managed identities and virtual network integration for Container Instances; and enforce ingress controls, managed identities, and secrets management for Container Apps environments.
+abstract: |
+  After completing this module, you can:
+    - Implement access controls and network isolation for Azure Container Registry
+    - Configure security controls for Azure Container Instances workloads
+    - Apply ingress controls, managed identity, and secrets management for Azure Container Apps
+prerequisites: |
+  - Working knowledge of container fundamentals including images, registries, and container runtimes
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Familiarity with Azure Virtual Network and private endpoint concepts
+  - Basic understanding of Defender for Containers capabilities (covered in a previous module in this learning path)
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-container-registry
+  - azure-container-instances
+  - azure-container-apps
+  - defender-for-cloud
+subjects:
+  - security
+  - cloud-security
+  - containers
+units:
+- learn.wwl.implement-security-controls-containers.introduction
+- learn.wwl.implement-security-controls-containers.secure-azure-container-registry
+- learn.wwl.implement-security-controls-containers.implement-security-controls-azure-container-instances
+- learn.wwl.implement-security-controls-containers.implement-security-controls-azure-container-apps
+- learn.wwl.implement-security-controls-containers.knowledge-check
+- learn.wwl.implement-security-controls-containers.summary
+badge:
+  uid: learn.wwl.implement-security-controls-containers.badge

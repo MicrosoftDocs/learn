@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-kubernetes.control-kubernetes-cluster-access-entra
+metadata:
+  title: Control Azure Kubernetes Service (AKS) Cluster Access with Microsoft Entra ID and RBAC
+  description: Configure Microsoft Entra ID integration and Kubernetes RBAC for AKS cluster authentication and authorization, including disabling local accounts and binding roles to Entra ID groups.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Control AKS cluster access with Microsoft Entra ID and RBAC
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-control-kubernetes-cluster-access-entra.md)]

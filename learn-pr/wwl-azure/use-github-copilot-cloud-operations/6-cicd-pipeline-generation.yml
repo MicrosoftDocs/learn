@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-github-copilot-cloud-operations.cicd-pipeline-generation
+title: CI/CD pipeline generation with GitHub Copilot
+metadata:
+  title: CI/CD Pipeline Generation with GitHub Copilot
+  description: "Learn how to use GitHub Copilot to generate multi-stage Azure DevOps YAML pipelines and GitHub Actions workflows for IaC deployment, including OIDC authentication and pipeline translation."
+  ms.date: 05/05/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-cicd-pipeline-generation.md)]

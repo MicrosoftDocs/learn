@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-github-copilot-cloud-operations.container-infrastructure
+title: Container infrastructure with GitHub Copilot
+metadata:
+  title: Container Infrastructure with GitHub Copilot
+  description: "Learn how to use GitHub Copilot to generate production-grade Dockerfiles with multi-stage builds, apply container security best practices, and generate Kubernetes manifests for AKS deployments."
+  ms.date: 05/05/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-container-infrastructure.md)]

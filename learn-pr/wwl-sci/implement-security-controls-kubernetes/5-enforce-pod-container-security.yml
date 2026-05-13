@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-kubernetes.enforce-pod-container-security
+metadata:
+  title: Enforce Pod and Container Security
+  description: Apply Pod Security Standards, security contexts, user namespaces, and AppArmor profiles to harden containerized workloads in Azure Kubernetes Service (AKS).
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enforce pod and container security
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-enforce-pod-container-security.md)]
