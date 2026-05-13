@@ -66853,6 +66853,11 @@
       "source_path": "learn-pr/wwl-sci/priva-understand-priva/address-privacy-challenges.md",
       "redirect_url": "/privacy/priva/priva-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/configure-priva-settings.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
     }
   ]
 }
