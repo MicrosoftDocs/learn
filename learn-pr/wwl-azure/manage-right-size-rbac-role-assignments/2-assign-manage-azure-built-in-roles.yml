@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-right-size-rbac-role-assignments.assign-manage-azure-built-in-roles
+metadata:
+  title: Assign and manage Azure built-in roles
+  description: Assign built-in Azure roles at the appropriate scope using least-privilege principles, including managed identity role assignments and effective permissions review.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Assign and manage Azure built-in roles
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-assign-manage-azure-built-in-roles.md)]

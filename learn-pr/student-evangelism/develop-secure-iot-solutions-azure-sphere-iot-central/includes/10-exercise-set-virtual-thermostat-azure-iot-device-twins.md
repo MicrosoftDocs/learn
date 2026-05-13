@@ -1,26 +1,20 @@
 ## Step 1: Open the project
 
 1. Start Visual Studio Code to open your project.
-
-2. Click **Open folder**.
-
-3. Open the **Azure-Sphere lab** folder.
-
-4. Open the **Lab_3_Device_Twins** folder.
-
-5. Click **Select Folder** or the **OK** button to open the project.
+1. Click **Open folder**.
+1. Open the **Azure-Sphere** folder.
+1. Open the **Lab_3_Device_Twins** folder.
+1. Click **Select Folder** or the **OK** button to open the project.
 
 ## Step 2: Set your developer board configuration
 
-These labs support developer boards from Avnet and Seeed Studio. Set the configuration that matches your developer board.
+These labs support developer boards from Avnet and Seeed Studio. The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you're using the Avnet Revision 1 board, no **CMakeLists.txt** change is required.
 
-The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you have this board, there's no additional configuration required.
+If you're using any other supported board, update **CMakeLists.txt** so that only one board is selected:
 
-1. Open the **CMakeList.txt** file.
-
-2. Add a `#` at the beginning of the set Avnet line to disable it.
-
-3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
+1. Open the **CMakeLists.txt** file.
+1. Add a `#` at the beginning of the `set(AVNET TRUE ...)` line to disable the Avnet Revision 1 default.
+1. Uncomment exactly one `set` command that matches your Azure Sphere developer board. Leave all other board `set` commands commented out.
 
    ```text
    set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
@@ -28,18 +22,15 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
    # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
-
-4. Save the file. The CMake cache with be auto-generated.
+1. Save the file. The CMake cache will be auto-generated.
 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
-
-2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open, or copy them from the **app_manifest.json** file you created in the previous exercise.
-
-3. Replace the existing configuration by pasting the contents of the clipboard into **app_manifest.json**.
-
-4. Save the updated **app_manifest.json** file.
+1. You'll need to redo only the Azure IoT connection settings in this lab's **app_manifest.json** file. Do **not** replace the whole file with copied connection output or with the **app_manifest.json** file from a previous exercise.
+1. Copy or update only the top-level **CmdArgs** array, plus the **AllowedConnections** and **DeviceAuthentication** entries inside **Capabilities**, using the values from Notepad if you still have it open or from the **app_manifest.json** file you created in the previous exercise.
+1. Preserve the rest of this lab's manifest, including **SchemaVersion**, **Name**, **ComponentId**, **EntryPoint**, **ApplicationType**, and all existing **Capabilities** entries such as any GPIO, I2C, or **PowerControls** entries already present.
+1. Save the updated **app_manifest.json** file.
 
 ## Step 4: Start the app build deploy process
 
@@ -51,7 +42,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
 
 ## Step 5: Add a properties view to the Lab Monitor device template
 
-IoT Central creates a device template and default views based on the IoT Plug and Play model downloaded from the public IoT Plug and Play models repository. A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
+IoT Central can create a device template from the IoT Plug and Play model ID sent by a device when the model is available from a model repository. A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application. The model defines capabilities such as telemetry, properties, and commands; views and forms define how operators visualize and manage those capabilities.
 
 1. Switch back to the **IoT Central** web portal.
 1. Navigate to **Device templates**, then click on the **Learning Path Lab Monitor** template.
@@ -64,33 +55,25 @@ IoT Central creates a device template and default views based on the IoT Plug an
 ### Create a properties form
 
 1. Navigate to the **Views** menu.
-
-2. Select **Editing device and cloud data**.
+1. Select **Editing device and cloud data**.
 
    <!-- > [!div class="mx-imgBorder"]
    > ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png) -->
 
    :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="The illustration shows how to edit device and cloud data.":::
-
-3. Name the form **Properties**.
-
-4. Expand the **Properties** section.
-
-5. Select the following properties.
+1. Name the form **Properties**.
+1. Expand the **Properties** section.
+1. Select the following properties.
    - Last reported device restart time
    - Last reported device start time (UTC)
    - Last reported HVAC operating mode
    - Last reported temperature
-
-6. Click **Add section**.
-
-7. Select the following properties.
+1. Click **Add section**.
+1. Select the following properties.
    - Desired Sample Rate in Seconds [1..60]
    - Desired Temperature
-
-8. Click **Add section**.
-
-9. Click **Save** to save the form.
+1. Click **Add section**.
+1. Click **Save** to save the form.
 
 <!-- > [!div class="mx-imgBorder"]
 > ![The illustration shows the properties section.](../media/iot-central-add-tile-form.png) -->
@@ -102,8 +85,7 @@ IoT Central creates a device template and default views based on the IoT Plug an
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices in your IoT Central application.
 
     :::image type="content" source="../media/iot-central-template-publish.png" alt-text="The illustration shows how to publish a device template.":::
-
-2. Confirm and click **Publish**.
+1. Confirm and click **Publish**.
 
 ## Step 6: Set the desired temperature
 
@@ -112,12 +94,12 @@ To set the desired temperature:
 1. From the sidebar menu, select **Devices**, then the **Learning Path Lab Monitor** template, then your **device**.
 1. Click the **Properties** tab.
 1. Update the **Desired Temperature** value.
-1. Save the property. This will send the desired temperature property to Azure Sphere. The RGB LED color will change depending on the desired temperature chosen.
+1. Select **Save**. IoT Central sends the **Desired Temperature** writable property update to the Azure Sphere application. The RGB LED color will change depending on the desired temperature chosen.
 
-    :::image type="content" source="../media/iot-central-display-settings.png" alt-text="he illustration shows display settings.":::
+    :::image type="content" source="../media/iot-central-display-settings.png" alt-text="The illustration shows display settings.":::
 
-1. The Desired Temperature property status will change to **Accepted now**.
-1. If the HVAC operation mode changes then the **Last reported HVAC operating mode** property will also be updated.
+1. The **Desired Temperature** property status is **Pending** until the device reports an acknowledgment. After the device accepts the value, the status changes to **Accepted** along with a relative timestamp (for example, **Accepted seconds ago**). The exact label depends on the acknowledgment code (`ac`) returned by the device — values that are out of range or refused appear with a different status, so allow a few seconds for the device to respond.
+1. If the HVAC operating mode changes, the **Last reported HVAC operating mode** property will also be updated.
 
 ## Step 7: Expected device behavior
 
@@ -146,6 +128,6 @@ The Avnet Azure Sphere Starter Kit, revisions 1 and 2, have a built-in temperatu
 1. The User LED will blink every 5 seconds when connected to Azure.
 
 
-## Close Visual Studio
+## Close Visual Studio Code
 
-Now close Visual Studio.
+Now close Visual Studio Code.

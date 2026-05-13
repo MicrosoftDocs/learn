@@ -1,0 +1,1 @@
+You explored how Azure Machine Configuration audits and enforces OS-level security settings through Azure Policy. Test your understanding of prerequisite deployment, baseline policy assignment, and custom configuration authoring.
