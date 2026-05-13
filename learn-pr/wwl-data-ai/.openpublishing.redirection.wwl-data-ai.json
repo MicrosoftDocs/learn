@@ -1977,6 +1977,46 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/2-monitor-spark-pools-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/3-base-line-apache-spark-performance-history-server-azure-synapse-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/4-optimize-apache-spark-jobs-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/5-automate-scaling-of-apache-spark-pools-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/6-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/7-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/4-explain-htap-scenarios-context-of-synapse-link.md",
       "redirect_url": "/training/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/"
     },

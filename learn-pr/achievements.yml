@@ -3328,6 +3328,11 @@ achievements:
   title: Azure RTOS ThreadX next steps
   summary: Learn the next steps for Azure RTOS ThreadX.
   iconUrl: /training/achievements/iot/threadx-next-steps.svg
+- uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.badge
+  type: badge
+  title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
+  summary: Learn how to monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics.
+  iconUrl: /training/achievements/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse.svg
 - uid: learn.iot.azure-rtos-netx-duo.trophy
   type: trophy
   title: Azure RTOS NetX Duo
