@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-microsoft-defender-servers.introduction
+metadata:
+  title: Introduction
+  description: Introduction to implementing Microsoft Defender for Servers, covering the threat detection and vulnerability visibility gaps addressed in this module.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

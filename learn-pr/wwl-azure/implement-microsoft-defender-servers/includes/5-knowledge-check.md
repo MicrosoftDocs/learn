@@ -1,0 +1,1 @@
+You implemented Defender for Servers across Contoso Manufacturing's Azure VMs and Arc-connected factory servers, configured both agent-based and agentless vulnerability scanning, and enabled File Integrity Monitoring to detect unauthorized changes. Now validate your understanding of plan selection, scanning methods, and configuration requirements.

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-microsoft-defender-servers.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Defender for Servers plan selection, onboarding, vulnerability scanning configuration, and agentless scanning capabilities.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer enables Defender for Servers Plan 2 on a subscription. Which capability is automatically enabled by default that isn't available in Plan 1?"
+    choices:
+    - content: "Microsoft Defender for Endpoint integration and automatic agent provisioning"
+      isCorrect: false
+      explanation: "Microsoft Defender for Endpoint integration is available in both Plan 1 and Plan 2. The Microsoft Defender for Endpoint (MDE) extension is automatically provisioned on supported machines when either plan is enabled."
+    - content: "Agent-based vulnerability assessment using Defender Vulnerability Management"
+      isCorrect: false
+      explanation: "Agent-based vulnerability assessment using Defender Vulnerability Management is available in both Plan 1 and Plan 2, as it relies on the Defender for Endpoint agent that is included in both plans."
+    - content: "Agentless scanning for machines"
+      isCorrect: true
+      explanation: "Agentless scanning is a Plan 2–exclusive capability that is enabled by default when Plan 2 is activated. It provides vulnerability assessment, software inventory, secrets scanning, and malware scanning without requiring an agent installed on the machine."
+  - content: "Agentless machine scanning in Defender for Servers Plan 2 runs on what schedule, and what happens to VMs that are powered off during a scan?"
+    choices:
+    - content: "Continuously in real time; powered-off VMs are scanned using their last known disk state"
+      isCorrect: false
+      explanation: "Agentless scanning isn't a real-time, continuous process. It runs on a fixed 24-hour schedule. VMs that are powered off during the scan window aren't scanned—they must be running for the scan to execute."
+    - content: "Once every 24 hours; powered-off VMs aren't scanned during that cycle"
+      isCorrect: true
+      explanation: "Agentless scanning runs once every 24 hours on a nonconfigurable schedule. The scan only runs on VMs that are running at the time of the scan—VMs that are powered off are skipped and will be scanned in the next cycle when they're running."
+    - content: "Once per week; powered-off VMs are queued and scanned when they next start"
+      isCorrect: false
+      explanation: "Agentless scanning runs once every 24 hours, not weekly. VMs that are powered off aren't queued—they're skipped and will be included when they're running during a future scan cycle."
+  - content: "A VM has both the Defender for Endpoint agent (enabling agent-based vulnerability scanning) and agentless scanning enabled. Which vulnerability assessment results are displayed in Defender for Cloud?"
+    choices:
+    - content: "Results from agentless scanning only, because it provides wider coverage across more disk types"
+      isCorrect: false
+      explanation: "When both scanning methods are active, agent-based results take precedence—not agentless. The Defender for Endpoint agent provides fresher, more frequent vulnerability data than the 24-hour agentless scan cycle."
+    - content: "Results from agent-based scanning only, because it provides better freshness"
+      isCorrect: true
+      explanation: "When a machine has both agent-based vulnerability scanning (via the Defender for Endpoint agent) and agentless scanning enabled, Defender for Cloud displays agent-based results only. The agent-based results are prioritized because they provide better freshness—the sensor reports vulnerability data more frequently than the 24-hour agentless scan interval."
+    - content: "Results from both sources, merged and deduplicated into a single unified view"
+      isCorrect: false
+      explanation: "Defender for Cloud doesn't merge results from both sources when both are active. Agent-based results take precedence and are the only results displayed, because they provide better freshness than agentless scanning."
