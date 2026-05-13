@@ -23,6 +23,9 @@ Neither approach is inherently better. The right choice depends on your prioriti
 - how much you want your **productivity tools tied to services**
 - and whether you view AI features as a **meaningful benefit** or an optional extra
 
+> [!NOTE]
+> This module focuses on selecting the right Office productivity option based on technical characteristics and usage requirements. Detailed instructions for performing tasks in Word, Excel, Outlook, or other apps are covered in separate task‑based Learn modules.
+
 ## Learning objective
 
 By the end of this module, you'll be able to:

@@ -6,11 +6,7 @@ This overview isn't meant to teach you how the products work or compare features
 
 ## Option 1: Office Home & Business 2024
 
-Office Home & Business 2024 is a **one-time purchase Office suite** designed for individuals and small businesses that want a fixed set of desktop productivity applications.
-
-It includes core Office apps—Word, Excel, PowerPoint, Outlook, and OneNote—installed on your device. Rather than evolving as an ongoing service, this option emphasizes a **defined feature set** and a **predictable experience over time**.
-
-As part of that experience, Office Home & Business 2024 will receive security updates throughout its lifecycle, but not new feature innovation.
+Office Home & Business 2024 is a **one-time purchase Office suite** that includes classic desktop versions of Word, Excel, PowerPoint, Outlook, and OneNote installed locally on a single device. These applications provide core document creation, data analysis, presentation, and email capabilities, but don't receive new features beyond security and reliability updates during the product lifecycle.
 
 Office Home & Business 2024 might be a strong fit for people who:
 
@@ -23,14 +19,14 @@ Choosing this type of option can be a good fit if your baseline needs are well s
 
 ## Option 2: Microsoft 365
 
-Microsoft 365 is a **subscription-based productivity offering** that includes Office applications—which can function offline when needed—alongside cloud-connected services.
+Microsoft 365 is a **subscription-based productivity offering** that provides the Office applications alongside cloud services such as OneDrive and SharePoint, enabling real‑time coauthoring in Word, Excel, and PowerPoint and shared file access across devices. In supported plans, AI‑assisted features appear directly within familiar Office apps to help draft text, summarize content, and analyze data, with availability depending on licensing and configuration.
 
 This option emphasizes:
 
 - ongoing feature updates
 - service integration
 - collaboration and connectivity
-- and **AI-assisted productivity experiences** designed to help users draft, summarize, analyze, and iterate faster. AI capabilities vary by plan, region, and configuration.
+- and AI‑assisted features integrated into Office apps that support drafting text, summarizing documents and email threads, and generating analysis outputs
 
 Microsoft 365 might be chosen by people who:
 
