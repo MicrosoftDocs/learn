@@ -4,9 +4,9 @@ title: How to deploy a high-level application to your Azure Sphere
 metadata:
   title: How to deploy a high-level application to your Azure Sphere
   description: In this section, we deploy a high-level application to your Azure Sphere.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4 # dummy number at present
 content: |

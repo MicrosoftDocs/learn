@@ -60,14 +60,3 @@ Other management tools that you'll use to perform AD DS administration are descr
 | Active Directory Domains and Trusts            | The Active Directory Domains and Trusts MMC snap-in configures and maintains trust relationships at the domain and forest functional levels.                                                                                                                                                                         |
 | Active Directory Schema snap-in                | The Active Directory Schema MMC snap-in examines and modifies the definitions of AD DS attributes and object classes. You don't need to review or change it often. Therefore, by default, the Active Directory Schema snap-in is not registered.                                                                     |
 
-The following video demonstrates how to manage objects in AD DS by using Active Directory Administrative Center. The main steps in the process are:
-
-1.  From Server Manager, open Active Directory Administrative Center.
-2.  Select Dynamic Access Control in the Contoso domain.
-3.  Perform a global search and review the results.
-4.  Reset the password for a user in the Contoso domain.
-5.  Create a new computer object called SEA-CL4.
-6.  Open the new computer object and review its properties, including its Extensions.
-7.  Review the Windows PowerShell history and examine the New-ADComputer command.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvF]

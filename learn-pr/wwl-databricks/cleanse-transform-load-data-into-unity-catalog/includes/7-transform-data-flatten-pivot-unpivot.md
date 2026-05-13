@@ -119,7 +119,7 @@ This creates columns for both the sum and average of each quarter's revenue.
 
 Unpivoting performs the reverse transformation—it converts columns back into rows. Use unpivoting when you receive wide-format data that needs normalization for analysis or when preparing data for systems that expect a long format.
 
-![Diagram explaing the process of unpivoting coluns into rows.](../media/7-pivot-rows-into-columns.png)
+![Diagram explaing the process of unpivoting coluns into rows.](../media/7-unpivot-columns-into-rows.png)
 
 The `UNPIVOT` clause transforms specified columns into value-name pairs. You define a column to hold the values and another to hold the original column names.
 

@@ -4,9 +4,9 @@ title: How to connect a room environment monitor to Azure IoT Hub
 metadata:
   title: How to connect a room environment monitor to Azure IoT Hub
   description: In this section, we create an Azure Sphere application and connect it to Azure IoT Hub.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4 # dummy number at present
 content: |

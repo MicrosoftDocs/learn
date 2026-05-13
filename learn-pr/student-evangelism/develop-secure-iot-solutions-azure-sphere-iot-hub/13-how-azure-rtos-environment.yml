@@ -4,9 +4,9 @@ title: How to deploy an Azure RTOS real-time sensor application to monitor the r
 metadata:
   title: How to deploy an Azure RTOS real-time sensor application to monitor the room environment
   description: In this section, we'll deploy an Azure RTOS real-time sensor application to monitor the room environment
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4 # dummy number at present
 content: |
