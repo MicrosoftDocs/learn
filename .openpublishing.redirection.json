@@ -66873,6 +66873,11 @@
       "source_path": "learn-pr/wwl-sci/priva-understand-priva/navigate-priva-portal.md",
       "redirect_url": "/privacy/priva/priva-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/priva-understand-priva/priva-overview.md",
+      "redirect_url": "/privacy/priva/priva-overview",
+      "redirect_document_id": false
     }
   ]
 }
