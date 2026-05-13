@@ -3,7 +3,7 @@ uid: learn.github.memory-state-evaluation
 title: Memory, State, and Evaluation
 metadata:
   title: Memory, State, and Evaluation
-  description: This module introduces the foundations of agent memory, state management, and evaluation. You will learn how to structure memory, persist progress through GitHub artifacts, maintain consistency across environments, and define clear signals for success.
+  description: This module introduces the foundations of agent memory, state management, and evaluation. You'll learn how to structure memory, persist progress through GitHub artifacts, maintain consistency across environments, and define clear signals for success.
   author: camihmerhar
   ms.author: camhernandez
   ms.date: 05/13/2026
@@ -13,7 +13,7 @@ metadata:
 summary: Learn how to manage agent memory and state, persist progress across environments, and evaluate agent behavior using clear success signals.
 
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Learn agent memory strategies using short-term, long-term, and external memory 
   - Learn how to maintain and persistent agent state and manage context drift
   - Learn how to manage agent state across tools and environments 

@@ -76,7 +76,7 @@ To prevent this:
 
 For example:
 
-- Do not redefine acceptance criteria in multiple prompts 
+- Don't redefine acceptance criteria in multiple prompts 
 
 - Update the issue or pull request instead of storing new versions elsewhere 
 
@@ -92,7 +92,7 @@ In GitHub workflows, this can happen when:
 
 - Workflow results no longer reflect the current code 
 
-- Requirements have changed but were not updated 
+- Requirements have changed but weren't updated 
 
 To prevent this:
 
