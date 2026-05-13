@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.extend-and-fix-tests-with-copilot
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.extend-fix-tests-using-github-copilot
 title: Extend tests with ghost text and fix failing tests
 metadata:
   title: Extend Tests with Ghost Text and Fix Failing Tests
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-extend-and-fix-tests-with-copilot.md)]
+  [!include[](includes/5-extend-fix-tests-using-github-copilot.md)]

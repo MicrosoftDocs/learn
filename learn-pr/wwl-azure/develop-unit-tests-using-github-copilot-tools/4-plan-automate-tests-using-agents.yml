@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.plan-and-automate-tests-with-agents
+uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.plan-automate-tests-using-agents
 title: Plan and automate test workflows with the Plan and Agent agents
 metadata:
   title: Plan and Automate Test Workflows with the Plan and Agent Agents
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-plan-and-automate-tests-with-agents.md)]
+  [!include[](includes/4-plan-automate-tests-using-agents.md)]
