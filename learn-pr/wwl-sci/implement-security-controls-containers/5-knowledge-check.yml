@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-containers.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of security controls for Azure Container Registry, Azure Container Instances, and Azure Container Apps.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why should the Azure Container Registry admin account be disabled in production environments?"
+    choices:
+    - content: "The admin account provides shared credentials with full registry access that aren't tied to a specific identity, making individual actions unauditable and credential rotation difficult."
+      isCorrect: true
+      explanation: "Correct. The admin account is a single username and password pair with full push and pull access across the entire registry. Because it isn't linked to a Microsoft Entra ID identity, you can't audit which person or workload performed a given action, and you can't scope its access down to specific repositories or operations."
+    - content: "The admin account can only pull images and can't push new images to the registry."
+      isCorrect: false
+      explanation: "Incorrect. The admin account has full push and pull access across the registry—it isn't limited to read-only operations. This broad access is part of why the admin account shouldn't be used in production."
+    - content: "The admin account is deprecated and no longer available in newly created registries."
+      isCorrect: false
+      explanation: "Incorrect. The admin account is still available in new registries, but it's disabled by default and must be explicitly enabled. Microsoft recommends keeping it disabled and using Microsoft Entra ID-based identities instead."
+    - content: "The admin account requires a Premium SKU and incurs other licensing costs."
+      isCorrect: false
+      explanation: "Incorrect. The admin account is available on all Azure Container Registry (ACR) SKUs and doesn't incur other cost. The security concern is the shared credential model, not the pricing tier."
+  - content: "What is the primary purpose of ACR scope map tokens?"
+    choices:
+    - content: "To grant per-repository, per-permissions access using the principle of least privilege—allowing a CI/CD pipeline to push to one specific repository without having access to the rest of the registry."
+      isCorrect: true
+      explanation: "Correct. Scope maps define a named set of repository-level permissions, and tokens are issued bound to that scope map. This lets you restrict a CI/CD pipeline or automation identity to only the repositories and operations it legitimately needs, rather than granting registry-wide RBAC roles."
+    - content: "To provide an alternative to managed identity authentication for Azure services that don't support managed identities."
+      isCorrect: false
+      explanation: "Incorrect. Scope map tokens use username and password authentication rather than Microsoft Entra ID, so they don't support Azure RBAC or managed identity patterns. They're designed for repository-scoped access scenarios, not as a replacement for managed identities."
+    - content: "To enable content trust signing on individual image repositories within a registry."
+      isCorrect: false
+      explanation: "Incorrect. Content trust is a registry-level feature that requires the AcrImageSigner role, not scope map tokens. Scope map tokens control which repositories a caller can push to or pull from, but they don't govern image signing."
+    - content: "To restrict which IP addresses can access specific repositories in the registry."
+      isCorrect: false
+      explanation: "Incorrect. IP-based access restrictions are a network-level control configured on the registry's firewall settings, not on scope map tokens. Scope map tokens define repository-level operation permissions for a specific identity."
+  - content: "How should a Container Instances workload access a database connection string securely?"
+    choices:
+    - content: "Store the connection string in Azure Key Vault and use a managed identity with the Key Vault Secrets User role to retrieve it at runtime via a secure environment variable reference."
+      isCorrect: true
+      explanation: "Correct. Storing the secret in Key Vault and referencing it via a managed identity means the connection string never appears in the ARM template, deployment history, or container group metadata. Using secureValue for the environment variable ensures the value is encrypted at rest and not returned in `GET` operations."
+    - content: "Pass the connection string as a plain-text value environment variable in the ARM template."
+      isCorrect: false
+      explanation: "Incorrect. Plain-text environment variables appear in the deployment history, in container group metadata visible to anyone with Reader access, and in source control if the template is committed. This exposes credentials to anyone with access to those resources."
+    - content: "Embed the connection string in the container image at build time using a Dockerfile ARG instruction."
+      isCorrect: false
+      explanation: "Incorrect. Embedding secrets in container images at build time is a significant security risk. The value persists in every image layer, in the image history, and in any registry where the image is stored—making it visible to anyone with image pull access."
+    - content: "Store the connection string in an Azure Storage table and mount it as a volume in the container group."
+      isCorrect: false
+      explanation: "Incorrect. While Azure Storage can store configuration data, it isn't a secrets management service. It doesn't provide the auditing, access policies, and rotation capabilities that Azure Key Vault provides for sensitive credentials."
+  - content: "What does setting ingress to 'internal' on a Container App do?"
+    choices:
+    - content: "Restricts the app to be accessible only from within the Container Apps environment and virtual network—no public IP address is assigned and the app isn't reachable from the internet."
+      isCorrect: true
+      explanation: "Correct. Internal ingress removes the public endpoint entirely. The app receives an internal FQDN that resolves only within the Container Apps environment and the connected virtual network. This is the correct setting for backend APIs, queue processors, and data services that shouldn't be reachable from the public internet."
+    - content: "Enables the built-in authentication middleware to require Microsoft Entra ID sign-in before requests reach the container."
+      isCorrect: false
+      explanation: "Incorrect. The built-in authentication middleware (EasyAuth) is a separate configuration from ingress mode. You can enable EasyAuth on apps with either external or internal ingress—the two settings are independent."
+    - content: "Configures IP security restrictions to block specific source IP addresses from reaching the app."
+      isCorrect: false
+      explanation: "Incorrect. IP security restriction is a separate ingress configuration that applies allow lists or block lists to external ingress traffic. Setting ingress to internal removes the public endpoint entirely rather than filtering access to it."
+    - content: "Routes all ingress traffic through Azure Application Gateway for web application firewall inspection."
+      isCorrect: false
+      explanation: "Incorrect. Routing traffic through Azure Application Gateway is a separate architectural pattern that requires explicit configuration. Internal ingress simply removes the public endpoint—it doesn't route traffic through any proxy or gateway."
+  - content: "What security benefit does Dapr provide automatically between Azure Container Apps services?"
+    choices:
+    - content: "Mutual TLS (mTLS) encryption between all Dapr sidecar containers—service-to-service communication is encrypted in transit without any certificate management or application code changes required."
+      isCorrect: true
+      explanation: "Correct. Dapr sidecars automatically negotiate and enforce mTLS for all service-to-service communication within the Container Apps environment. The application code communicates with its own sidecar over localhost; Dapr handles all TLS certificate issuance, rotation, and negotiation between sidecars transparently."
+    - content: "Role-based access control between Dapr-enabled apps, preventing unauthorized apps from calling each other's endpoints."
+      isCorrect: false
+      explanation: "Incorrect. Dapr doesn't enforce RBAC between apps. Service-to-service access control in Dapr is handled through access control policies configured in component YAML, not through Azure RBAC. All Dapr-enabled apps in the same environment can invoke each other by default."
+    - content: "Automatic IP-based firewall rules that block traffic between container services in different environments."
+      isCorrect: false
+      explanation: "Incorrect. Dapr doesn't configure network-level firewall rules. Network isolation between environments is provided by the Container Apps environment's virtual network configuration. Dapr's security contribution is transport-layer encryption (mTLS), not network segmentation."
+    - content: "Automatic rotation of managed identity credentials used by each service to authenticate to Azure resources."
+      isCorrect: false
+      explanation: "Incorrect. Managed identity credential rotation is handled by the Azure platform automatically, independent of Dapr. Dapr can be configured to use managed identity to authenticate to Azure Key Vault as a secret store, but that's a configuration choice—not an automatic behavior."

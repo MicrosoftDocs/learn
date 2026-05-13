@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-containers.summary
+metadata:
+  title: Summary
+  description: Summary of security controls for Azure Container Registry, Azure Container Instances, and Azure Container Apps for the Cloud and AI Security Engineer.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]
