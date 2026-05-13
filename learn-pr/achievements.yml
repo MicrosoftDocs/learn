@@ -5630,6 +5630,11 @@ achievements:
   title: Deploy the Altair emulator to Azure Sphere
   summary: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
   iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-deploy-emulator.svg
+- uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.badge
+  type: badge
+  title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines
+  summary: In this module, you will learn how to implement Slowly Changing Dimension using Azure Data Factory or Azure Synapse Pipelines.
+  iconUrl: /training/achievements/azure-synapse-analytics-pipelines.svg
 - uid: learn.altair-azure-sphere-computing-fundamentals.trophy
   type: trophy
   title: Learn computing fundamentals with Altair 8800 and Azure Sphere
