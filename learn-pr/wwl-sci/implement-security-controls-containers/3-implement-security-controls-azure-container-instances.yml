@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-containers.implement-security-controls-azure-container-instances
+metadata:
+  title: Implement security controls for Azure Container Instances
+  description: Configure security controls for Azure Container Instances workloads, including managed identities, Key Vault secret references, VNet integration, security context settings, and managed identity image pull.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Implement security controls for Azure Container Instances
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-implement-security-controls-azure-container-instances.md)]

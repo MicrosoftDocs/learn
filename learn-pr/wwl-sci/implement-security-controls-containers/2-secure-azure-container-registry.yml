@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-containers.secure-azure-container-registry
+metadata:
+  title: Secure Azure Container Registry
+  description: Implement access controls and network isolation for Azure Container Registry, including disabling the admin account, configuring RBAC roles and scope maps, private endpoints, firewall rules, and content trust.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Secure Azure Container Registry
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-secure-azure-container-registry.md)]

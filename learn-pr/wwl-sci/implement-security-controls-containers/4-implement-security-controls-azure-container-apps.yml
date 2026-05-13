@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-containers.implement-security-controls-azure-container-apps
+metadata:
+  title: Implement security controls for Azure Container Apps
+  description: Apply ingress controls, managed identities, secrets management, and Dapr mTLS for Azure Container Apps environments.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Implement security controls for Azure Container Apps
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-implement-security-controls-azure-container-apps.md)]
