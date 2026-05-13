@@ -30,7 +30,7 @@ Defender for Containers uses a set of lightweight, Azure-managed components that
 
 The following diagram shows how these components map to each phase of the container lifecycle and how data flows into Defender for Cloud.
 
-:::image type="content" source="../media/defender-containers-architecture.png" alt-text="Defender for Containers architecture: registry scanning, admission control, and runtime sensors feeding alerts and findings into Defender for Cloud." lightbox="../media/defender-containers-architecture.png":::
+:::image type="content" source="../media/defender-containers-architecture.png" alt-text="Diagram of Defender for Containers architecture. Icludes registry scanning, admission control, and runtime sensors." lightbox="../media/defender-containers-architecture.png":::
 
 ## Describe how Defender for Containers discovers your environment
 

@@ -34,17 +34,17 @@ After you enable the plan, review and configure the individual components. To ac
 1. In the **Containers** row on the Defender plans page, select **Settings**.
 2. The **Settings** pane lists all available components with their current state.
 
-The following components are enabled by default when you turn on the plan:
+   The following components are enabled by default when you turn on the plan:
 
-| Component | Purpose |
-|---|---|
-| **Defender sensor** | Deployed on each AKS node as a DaemonSet. Collects runtime data required for threat protection and binary drift detection. Two optional subsettings are available within this component: **Enable Defender Security Gating** (adds an admission control layer that evaluates deployments against security policies before workloads run in the cluster) and **Enable Defender Runtime Anti Malware** (enables runtime malware detection for Kubernetes hosts and containers, with optional real-time blocking of malicious file execution—requires Helm-based sensor deployment). |
-| **Azure Policy** | Deployed as an AKS add-on. Provides Kubernetes data plane hardening through admission control enforcement. |
-| **Agentless scanning for machines** | Periodically snapshots node VM disks for out-of-band OS and file system vulnerability analysis. No agents or network connectivity required. |
-| **Kubernetes API access** | Required for agentless container posture management, runtime vulnerability assessment, and response actions. |
-| **Registry access** | Enables agentless vulnerability assessment for images stored in ACR. |
+   | Component | Purpose |
+   |---|---|
+   | **Defender sensor** | Deployed on each AKS node as a DaemonSet. Collects runtime data required for threat protection and binary drift detection. Two optional subsettings are available within this component: **Enable Defender Security Gating** (adds an admission control layer that evaluates deployments against security policies before workloads run in the cluster) and **Enable Defender Runtime Anti Malware** (enables runtime malware detection for Kubernetes hosts and containers, with optional real-time blocking of malicious file execution—requires Helm-based sensor deployment). |
+   | **Azure Policy** | Deployed as an AKS add-on. Provides Kubernetes data plane hardening through admission control enforcement. |
+   | **Agentless scanning for machines** | Periodically snapshots node VM disks for out-of-band OS and file system vulnerability analysis. No agents or network connectivity required. |
+   | **Kubernetes API access** | Required for agentless container posture management, runtime vulnerability assessment, and response actions. |
+   | **Registry access** | Enables agentless vulnerability assessment for images stored in ACR. |
 
-:::image type="content" source="../media/containers-settings-monitoring.png" alt-text="Screenshot of the Defender for Containers Settings pane showing components available for enablement." lightbox="../media/containers-settings-monitoring.png":::
+   :::image type="content" source="../media/containers-settings-monitoring.png" alt-text="Screenshot of the Defender for Containers Settings pane showing components available for enablement." lightbox="../media/containers-settings-monitoring.png":::
 
 3. Select **Continue**.
 4. Review the monitoring coverage page to see what resources are protected.
