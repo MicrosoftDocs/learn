@@ -4,7 +4,7 @@ Azure Container Apps provides a managed platform for running containerized micro
 
 Every Container App runs inside a **Container Apps environment**. The environment defines the virtual network subnet, shared log analytics workspace, and Dapr configuration that all apps in the environment share. Apps within the same environment can communicate over a private internal address space. Apps in different environments are isolated by default.
 
-This architecture has a direct security implication: apps with different trust levels shouldn't share an environment. An e-commerce platform that runs both public-facing APIs and internal backend services should use separate environments — the backend environment configured for VNet-only access, the frontend environment for external ingress. Mixing services with different exposure requirements in a single environment means a misconfigured ingress rule on one app could expose other services in the same environment.
+This architecture has a direct security implication: apps with different trust levels shouldn't share an environment. An e-commerce platform that runs both public-facing APIs and internal backend services should use separate environments—the backend environment configured for VNet-only access, the frontend environment for external ingress. Mixing services with different exposure requirements in a single environment means a misconfigured ingress rule on one app could expose other services in the same environment.
 
 ## Assign managed identities to Container Apps
 
@@ -19,7 +19,7 @@ az containerapp identity assign \
   --system-assigned
 ```
 
-Grant the identity the roles it needs. For ACR image pull:
+Grant the identity the roles it needs. For Azure Container Registry (ACR) image pull:
 
 ```azurecli
 az role assignment create \
@@ -35,11 +35,11 @@ User-assigned identities are useful when multiple Container Apps share the same 
 Ingress determines how a Container App receives network traffic. Two ingress modes are available:
 
 - **External ingress**: The app is accessible from the public internet. It receives a public FQDN and can be fronted by Azure Front Door or Application Gateway.
-- **Internal ingress**: The app is accessible only from within the Container Apps environment or other resources in the same VNet. No public IP address is assigned.
+- **Internal ingress**: The app is accessible only from within the Container Apps environment or other resources in the same virtual network. No public IP address is assigned.
 
-Set backend APIs, queue processors, and data services to internal ingress. Only services that genuinely need to be reachable from outside your network should use external ingress. The Contoso Retail environment had every service set to external, exposing internal services to the public internet without a business reason — internal ingress removes that exposure with a single configuration change.
+Set backend APIs, queue processors, and data services to internal ingress. Only services that genuinely need to be reachable from outside your network should use external ingress. The Contoso Retail environment had every service set to external, exposing internal services to the public internet without a business reason—internal ingress removes that exposure with a single configuration change.
 
-You can restrict external ingress further using IP security restrictions. Configure an allowlist of trusted source IP addresses or CIDR ranges:
+You can restrict external ingress further using IP security restrictions. Configure an allow list of trusted source IP addresses or CIDR ranges:
 
 ```azurecli
 az containerapp ingress access-restriction set \
@@ -50,7 +50,7 @@ az containerapp ingress access-restriction set \
   --action Allow
 ```
 
-For apps that serve authenticated users, use the built-in authentication middleware — often called EasyAuth — to require Microsoft Entra ID login before a request reaches your container code. Configure it in the Azure portal under **Authentication** on your Container App, or with the CLI. The middleware intercepts unauthenticated requests and redirects users to the Microsoft Entra ID sign-in page. No application code changes are required.
+For apps that serve authenticated users, use the built-in authentication middleware—often called EasyAuth—to require Microsoft Entra ID sign-in before a request reaches your container code. Configure it in the Azure portal under **Authentication** on your Container App, or with the CLI. The middleware intercepts unauthenticated requests and redirects users to the Microsoft Entra ID sign-in page. No application code changes are required.
 
 ## Manage secrets with Key Vault references
 
@@ -58,7 +58,7 @@ Container Apps provide two mechanisms for managing secrets.
 
 **Environment-level secrets** are stored within the Container Apps platform and injected as environment variables or volume mounts at runtime. They're suitable for configuration values that change infrequently and don't require centralized rotation or audit.
 
-**Key Vault references** point to a secret in Azure Key Vault by URI and retrieve the value at runtime using the app's managed identity. The secret value is never stored in the Container Apps configuration — the platform fetches it each time it's needed. This is the recommended approach for credentials, connection strings, and any value that must be audited or rotated centrally.
+**Key Vault references** point to a secret in Azure Key Vault by URI and retrieve the value at runtime using the app's managed identity. The secret value is never stored in the Container Apps configuration—the platform fetches it each time it's needed. This is the recommended approach for credentials, connection strings, and any value that must be audited or rotated centrally.
 
 To reference a Key Vault secret:
 
@@ -69,19 +69,19 @@ az containerapp secret set \
   --secrets "db-connection=keyvaultref:<key-vault-secret-uri>,identityref:<managed-identity-resource-id>"
 ```
 
-When you rotate the secret value in Key Vault, the Container App retrieves the updated value on the next container restart. You don't update the Container App configuration to pick up the new secret — the Key Vault URI remains the same; only the value it points to changes.
+When you rotate the secret value in Key Vault, the Container App retrieves the updated value on the next container restart. You don't update the Container App configuration to pick up the new secret—the Key Vault URI remains the same; only the value it points to changes.
 
 ## Secure service-to-service communication with Dapr
 
-Dapr (Distributed Application Runtime) is a Cloud Native Computing Foundation (CNCF) project that provides application-level capabilities through a sidecar architecture. In Azure Container Apps, enabling Dapr adds a sidecar container alongside your application container. The sidecar handles service-to-service invocation, pub/sub messaging, state management, and external bindings — your application communicates with the sidecar over localhost rather than directly with other services or infrastructure.
+Dapr (Distributed Application Runtime) is a Cloud Native Computing Foundation (CNCF) project that provides application-level capabilities through a sidecar architecture. In Azure Container Apps, enabling Dapr adds a sidecar container alongside your application container. The sidecar handles service-to-service invocation, pub/sub messaging, state management, and external bindings—your application communicates with the sidecar over localhost rather than directly with other services or infrastructure.
 
-The most important security behavior Dapr provides is **mutual TLS (mTLS)**. Dapr sidecars automatically negotiate and enforce mTLS for all service-to-service communication within the Container Apps environment. Traffic between two Dapr-enabled apps is encrypted in transit without any configuration required in the application code. You don't manage certificates or implement TLS in your services — Dapr handles it.
+The most important security behavior Dapr provides is **mutual TLS (mTLS)**. Dapr sidecars automatically negotiate and enforce mTLS for all service-to-service communication within the Container Apps environment. Traffic between two Dapr-enabled apps is encrypted in transit without any configuration required in the application code. You don't manage certificates or implement TLS in your services—Dapr handles it.
 
 When you're assessing a Container Apps environment that uses Dapr, verify these security configurations:
 
-- **Component scoping**: Dapr components — such as state stores, pub/sub brokers, and secret stores — can be scoped to specific apps. Without scoping, any Dapr-enabled app in the environment can use any component. Apply app-level scoping to restrict each component to the apps that legitimately need it.
+- **Component scoping**: Dapr components—such as state stores, pub/sub brokers, and secret stores—can be scoped to specific apps. Without scoping, any Dapr-enabled app in the environment can use any component. Apply app-level scoping to restrict each component to the apps that legitimately need it.
 - **Secret store configuration**: Configure Dapr's secret store component to use Azure Key Vault, backed by the app's managed identity. This eliminates hardcoded credentials in Dapr component configuration.
-- **Dapr dashboard exposure**: The Dapr dashboard provides observability into running Dapr components and active services. Confirm it isn't exposed with external ingress — it should only be accessible within the environment or over a private network connection.
+- **Dapr dashboard exposure**: The Dapr dashboard provides observability into running Dapr components and active services. Confirm it isn't exposed with external ingress—it should only be accessible within the environment or over a private network connection.
 
 > [!TIP]
 > For a full overview of Dapr integration in Container Apps, including how to configure components and enable Dapr on an existing app, see [Dapr integration with Azure Container Apps](/azure/container-apps/dapr-overview).

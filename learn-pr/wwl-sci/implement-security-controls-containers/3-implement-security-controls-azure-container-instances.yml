@@ -2,7 +2,7 @@
 uid: learn.wwl.implement-security-controls-containers.implement-security-controls-azure-container-instances
 metadata:
   title: Implement security controls for Azure Container Instances
-  description: Configure security controls for Azure Container Instances workloads, including managed identities, Key Vault secret references, VNet integration, security context settings, and managed identity image pull.
+  description: Configure security controls for Azure Container Instances workloads. Configuration includes managed identities, Key Vault secret references, virtual network integration, security context settings, and managed identity image pull.
   ms.date: 04/15/2026
   author: r-c-stewart
   ms.author: roberts
