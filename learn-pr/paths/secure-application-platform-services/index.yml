@@ -34,10 +34,10 @@ subjects:
   - containers
 modules:
 - learn.wwl.detect-container-risks-defender-containers
-- learn.wwl.implement-security-controls-kubernetes
+- learn.wwl.implement-security-controls-aks
 - learn.wwl.implement-security-controls-containers
 - learn.wwl.implement-security-controls-function-logic-apps
 - learn.wwl.implement-security-web-application-firewall
-- learn.wwl.implement-application-interface-security-management
+- learn.wwl.implement-api-security-api-management
 trophy:
   uid: learn.wwl.secure-application-platform-services.trophy
