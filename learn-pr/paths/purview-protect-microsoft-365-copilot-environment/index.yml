@@ -34,7 +34,7 @@ subjects:
 modules:
 - learn.wwl.purview-audit-search-investigate
 - learn-m365.m365-compliance-information-protect-information
-- learn.wwl.purview-implement-manage-dlp
+- learn.wwl.purview-data-loss-prevention-create-manage-policies
 
 trophy:
   uid: learn.wwl.purview-protect-microsoft-365-copilot-environment.trophy
