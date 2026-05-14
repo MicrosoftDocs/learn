@@ -34,7 +34,7 @@ This is just an overview of general functionality testing. For more detailed gui
 
 ## Deploy and test other applications
 
-As you move through the deployment phases, you'll deploy the applications that are required by the users and devices in the current deployment phase.
+As you move through the deployment phases, you'll deploy the applications required by the users and devices in the current deployment phase after those devices have been upgraded to Windows 11.
 
 > [!TIP]
 >
@@ -50,12 +50,14 @@ Review any user feedback and monitor helpdesk calls to identify any common issue
 
 ## Remediate applications
 
+Application issues can occur at different stages of the deployment process. Some applications that are already installed on a device might block the Windows upgrade, while others might install or run incorrectly after the upgrade completes. The remediation approach depends on when the issue occurs.
+
 Use the information collected during testing to remediate applications wherever possible. Before taking action, consult the application decision matrix created during the Plan phase to help you:
 - Estimate impact.
-- Make deployment decisions (for example, whether to pause deployment broadly or only for affected devices). 
+- Make deployment decisions (for example, whether to pause deployment broadly or only for affected devices).
 - Triage priority for each issue.
 
-1. Identify the blocking application and the type of block.
+1. Identify the blocking application and the type of block. The following steps apply when performing an in-place upgrade, where existing applications may block the Windows installation.
    - Review Windows Update for “What needs your attention” messages to identify affected applications.
    - Use diagnostic tools such as SetupDiag (Microsoft diagnostic tool), WindowsUpdate.log, and the Application Compatibility Toolkit (ACT) to help you analyze and identify the root cause of blocks.
 
@@ -115,6 +117,8 @@ Use the information collected during testing to remediate applications wherever 
 | Hard block              | Update required; the upgrade can't proceed until resolved.    |
 
 Microsoft Copilot can also help you troubleshoot issues with specific applications by referencing known issues, documented workarounds, official support guidance, and common patterns identified by Microsoft. You can ask it for suggestions on resolving problems and recommended troubleshooting steps.
+
+In later deployment phases, application issues are more likely to appear after the upgrade during normal use rather than blocking the upgrade itself.
 
 > [!TIP]
 >

@@ -1,31 +1,32 @@
-Image classification can be used in many scenarios on edge devices. For example, the ability to detect images can help in detecting the presence of people and animals in a scene. 
+Image classification can be used in many embedded edge scenarios where a device needs to label a small image locally instead of sending the input to another computer for inference.
 
-Azure Sphere enables you to implement a neural network model performing real-time image classification on a secured, internet-connected microcontroller-based device.
+Azure Sphere enables you to build and run a real-time capable application (RTApp) on an MT3620 Cortex-M4F real-time core. In this module, the RTApp runs local whole-image classification against one compile-time 32x32 RGB input image by using a pretrained, prequantized neural network model. In this context, *real-time* refers to the Azure Sphere real-time capable core that runs the RTApp; the module evaluates only the compiled-in image and doesn't process streams or infer regions within an image.
 
-Suppose you are a park ranger responsible for a large park that is open to the public. Herds of wild deer roam freely in the park. These deer are the star attraction of the park. However, the deer are wild animals and can be unpredictable, especially at certain times of the year. Their space must be respected, and it is recommended to maintain a minimum distance of 50 meters away from the deer.
+Suppose you're evaluating whether a secured microcontroller can run a small image-classification workload at the embedded edge. You have a CIFAR-10 class image that has already been converted into C data for the application. You want to build the RTApp, sideload it to an Azure Sphere development kit for local testing, and view the class result from the device output.
 
-People and dogs also frequent the park and sometimes interact with the deer. As the park ranger, you are responsible for the safety of both people and animals in the park. You have noticed that recently, interactions between people and deer have increased.  To ensure everyone's safety, you want to study and analyze these interactions between people, deer, and dogs. To capture this data, you need a device in the field that can record the interactions between deer and people. The device should capture and store only pictures that include deer. The system should be capable of operating in the field safely and securely.  By capturing images with deer, you can analyze the interactions between deer, people, and dogs. You can then suggest additional safety measures or recommend alternate routes for people to walk in the park to increase safety.
+Azure Sphere devices can be internet-connected for device management, OS updates, cloud deployments, and high-level applications. The RTApp inference path in this module is local to the device; Azure Sphere RTApps don't use the internet or Azure Sphere OS application libraries.
 
 ![The illustration shows an image classification application running on Azure Sphere.](../media/scenario-image.png)
 
-By the end of this module, you will be able to implement a neural network model performing real-time image classification for detecting the presence of deer in a scene.
+By the end of this module, you'll be able to implement local whole-image classification on an Azure Sphere real-time capable core by using a pretrained, prequantized CIFAR-10 model.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Implement image classification on a microcontroller device using a pre-trained neural network model.
-- Describe how the components and services of Azure Sphere work to deploy a pre-trained image classification model.
+- Implement local image classification on a microcontroller device using a pre-trained, prequantized neural network model.
+- Describe how Azure Sphere components support local deployment and execution on a real-time capable core, with setup and update services as background device-management context.
 
 ## Prerequisites
 
-- A PC running Windows 10
-- Basic knowledge of Azure Sphere
-- USB cable to connect Azure Sphere to the computer
-- USB-to-serial adapter
-- Mini cable to connect the serial adapter to the computer
-- Jumper wires to connect the serial adapter to Azure Sphere
-- Basic knowledge of using Visual Studio Code
-- Visual Studio Code installed on your computer
-- Git installed on your computer
-- Ability to use Git/GitHub
+- An Azure account with an active subscription and a resource group for Azure Sphere resources.
+- An Azure Sphere development kit, such as an MT3620 development kit.
+- A development computer running Windows 11, Windows 10 Anniversary Update or later, Ubuntu 24.04 LTS x64, or Ubuntu 22.04 LTS x64.
+- USB access from the host computer to the development kit; if you use a virtual machine, support for USB pass-through.
+- Azure Sphere SDK installed for your operating system.
+- On Linux, `sudo` permission. Install `net-tools` and `curl` before running the SDK installer, answer `Y` when it asks to set up the default `udev` rule and `azsphere` group, then sign out and back in (or restart) before running `az sphere` commands.
+- Azure CLI 2.45.0 or later with the Azure Sphere extension installed and signed in to your Azure subscription.
+- Visual Studio Code with the Azure Sphere and CMake Tools extensions installed.
+- CMake and Ninja installed and available on your PATH.
+- GNU Arm Embedded Toolchain installed for real-time capable applications.
+- Basic knowledge of Azure Sphere, Visual Studio Code, Git, and GitHub.
