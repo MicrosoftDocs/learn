@@ -1,11 +1,11 @@
-After analyzing security issues using Ask mode, you're ready to implement fixes. GitHub Copilot's Agent mode enables you to execute complex remediation tasks safely while ensuring functionality is preserved and code quality is improved.
+After analyzing security issues using the Ask agent, you're ready to implement fixes. GitHub Copilot's Agent enables you to execute complex remediation tasks safely while ensuring functionality is preserved and code quality is improved.
 
 > [!NOTE]
-> Always use GitHub Copilot's Ask mode to analyze security issues and formulate a remediation plan before using Agent mode to implement changes. This approach ensures that refactoring is done thoughtfully and safely.
+> Consider using the Ask agent to analyze security issues and formulate a remediation plan before using the Agent to implement changes. This approach ensures that refactoring is done thoughtfully and safely.
 
 ## What is Agent mode?
 
-GitHub Copilot's Agent mode works autonomously to execute complex remediation tasks across your codebase. Unlike Ask mode, which provides guidance and suggestions in the chat panel, Agent mode implements suggested updates as edits directly in your code files.
+GitHub Copilot's Agent mode is one of three built-in agents in GitHub Copilot Chat. Unlike the Ask agent, which provides guidance and suggestions in the chat panel, Agent mode implements changes as edits directly in your code files.
 
 Agent mode capabilities include:
 
@@ -16,11 +16,32 @@ Agent mode capabilities include:
 - Understanding project context and dependencies.
 - Maintaining consistency across the codebase.
 
-Agent mode is ideal for implementing multi-step security fixes that require careful handling of dependencies, edge cases, and testing. Agent mode automatically defines the required context and executes the necessary steps to achieve your remediation goals.
+Agent mode is ideal for implementing multi-step security fixes that require careful handling of dependencies, edge cases, and testing. It automatically determines the required context and executes the necessary steps to achieve your remediation goals.
 
-## Remediate security issues using Agent mode
+### Agent types for security remediation
 
-You can use Agent mode to implement the security fixes identified during your Ask mode analysis. Agent mode can execute multiple remediation steps automatically while preserving the original functionality and improving code security.
+GitHub Copilot offers multiple agent types that run in different environments. For security remediation workflows, the two most relevant types are:
+
+- **Local agent (Agent in VS Code)**: runs interactively in the editor with full access to your workspace, tools, and models. This is the agent type described throughout this unit — ideal for hands-on, step-by-step security remediation where you review each change.
+- **Copilot cloud agent**: runs remotely and integrates with GitHub pull requests. You can assign a GitHub issue directly to the cloud agent, which then researches the codebase, creates an implementation plan, and makes code changes on a branch for your review. Available with Copilot Pro+, Business, and Enterprise plans.
+
+For most security remediation, the local Agent is recommended because it gives you real-time visibility into each change. The cloud agent is useful for well-defined, lower-risk issues where autonomous implementation is acceptable.
+
+### Permission levels
+
+Before starting a remediation session, choose a permission level that matches the complexity and risk of the work:
+
+| Permission level | Description | Recommended for |
+|---|---|---|
+| **Default Approvals** | Only read-only and safe tools run without confirmation. All file edits and terminal commands require your approval. | Security-sensitive remediation — maximum oversight |
+| **Bypass Approvals** | Auto-approves all tool calls without confirmation dialogs. | Routine fixes where you trust the plan |
+| **Autopilot** (Preview) | Fully autonomous — auto-approves tools and auto-responds until the task is complete. | Not recommended for security changes |
+
+Select the permission level from the permissions picker in the Chat view. For security remediation, **Default Approvals** is recommended so you can review each file edit before it's applied.
+
+## Remediate security issues using the Agent
+
+You can use the Agent to implement the security fixes identified during your Ask agent analysis. The Agent can execute multiple remediation steps automatically while preserving the original functionality and improving code security.
 
 ### Strategies for remediating security issues
 
@@ -28,21 +49,21 @@ Here are key strategies for using Agent mode to remediate security issues:
 
 - **Fix injection vulnerabilities**: Instruct Agent mode to replace string concatenation with parameterized queries or prepared statements.
 
-- **Implement secure encryption**: Have Agent mode upgrade weak hashing algorithms using secure alternatives like bcrypt or Argon2.
+- **Implement secure encryption**: Have the Agent upgrade weak hashing algorithms using secure alternatives like bcrypt or Argon2.
 
-- **Sanitize logging**: Use Agent mode to remove sensitive data from log statements while maintaining useful diagnostic information.
+- **Sanitize logging**: Use the Agent to remove sensitive data from log statements while maintaining useful diagnostic information.
 
-- **Validate file paths**: Let Agent mode add proper path validation that prevents directory traversal attacks.
+- **Validate file paths**: Let the Agent add proper path validation that prevents directory traversal attacks.
 
-- **Add input validation**: Have Agent mode implement comprehensive input validation and sanitization.
+- **Add input validation**: Have the Agent implement comprehensive input validation and sanitization.
 
-- **Ensure security**: Instruct Agent mode to validate that fixes maintain all existing security checks and don't introduce new vulnerabilities.
+- **Ensure security**: Instruct the Agent to validate that fixes maintain all existing security checks and don't introduce new vulnerabilities.
 
-- **Maintain functionality**: Use Agent mode to preserve all existing business logic and error handling while improving security.
+- **Maintain functionality**: Use the Agent to preserve all existing business logic and error handling while improving security.
 
-### Agent mode prompts for remediating security issues
+### Agent prompts for remediating security issues
 
-When using Agent mode to remediate security issues, your prompts should be specific, actionable, and include safety considerations. Here are examples of natural language text that you can include in your prompt when remediating security issues:
+When using the Agent to remediate security issues, your prompts should be specific, actionable, and include safety considerations. Here are examples of natural language text that you can include in your prompt when remediating security issues:
 
 #### Preparation and safety
 
@@ -87,7 +108,7 @@ Follow this systematic workflow to remediate security issues using Agent mode:
 
 Starting with a clean workspace ensures you can track changes accurately and roll back if needed.
 
-Ensure you're working in a clean git branch with all existing work committed. Navigate to the file containing the security vulnerability analyzed in Ask mode and have your remediation plan ready to reference.
+Ensure you're working in a clean git branch with all existing work committed. Navigate to the file containing the security vulnerability identified during your Ask agent analysis and have your remediation plan ready to reference.
 
 ### Step 2: Set up safety measures
 
@@ -97,7 +118,10 @@ Before making changes, create tests to verify current behavior.
 
 Example prompt: "Create comprehensive unit tests for the `SearchProducts` function to verify current behavior before implementing security fixes."
 
-Agent mode creates tests that capture current behavior, providing a baseline for validation.
+The Agent creates tests that capture current behavior, providing a baseline for validation.
+
+> [!TIP]
+> VS Code automatically creates checkpoints at key points during agent sessions. If a security fix introduces unexpected issues, use checkpoints to roll back to a known good state without losing other work. This complements your feature branch strategy with a fine-grained undo option.
 
 ### Step 3: Start with critical security fixes
 
@@ -107,7 +131,7 @@ Begin with the highest-priority vulnerabilities.
 
 Example prompt: "Refactor the `SearchProducts` method to use parameterized queries instead of string concatenation. Ensure all SQL injection vectors are eliminated."
 
-Agent mode analyzes the code, replaces vulnerable string concatenation with parameterized queries, and adds input validation to eliminate the SQL injection vulnerability.
+The Agent analyzes the code, replaces vulnerable string concatenation with parameterized queries, and adds input validation to eliminate the SQL injection vulnerability.
 
 ### Step 4: Implement secure cryptography
 
@@ -117,7 +141,7 @@ Continue with cryptographic improvements.
 
 Example prompt: "Replace the MD5 password hashing in `HashPassword` method with bcrypt implementation including proper salt generation."
 
-Agent mode upgrades weak hashing algorithms to secure alternatives like bcrypt, adds password validation, and creates a verification method.
+The Agent upgrades weak hashing algorithms to secure alternatives like bcrypt, adds password validation, and creates a verification method.
 
 ### Step 5: Sanitize logging and error handling
 
@@ -127,7 +151,7 @@ Address information disclosure issues.
 
 Example prompt: "Remove sensitive information from logging statements in the authentication module while maintaining diagnostic value."
 
-Agent mode removes sensitive data from logs and replaces detailed error messages with user-friendly alternatives while preserving diagnostic information in secure logs.
+The Agent removes sensitive data from logs and replaces detailed error messages with user-friendly alternatives while preserving diagnostic information in secure logs.
 
 ### Step 6: Add path validation
 
@@ -137,7 +161,7 @@ Implement file path security.
 
 Example prompt: "Add comprehensive path validation to the `SaveFile` method to prevent directory traversal attacks."
 
-Agent mode implements path validation using `Path.GetFileName()`, verifies paths remain within intended directories, and adds checks for invalid characters.
+The Agent implements path validation using `Path.GetFileName()`, verifies paths remain within intended directories, and adds checks for invalid characters.
 
 ### Step 7: Validate changes
 
@@ -147,7 +171,7 @@ After each major security fix, validate the changes.
 
 Example prompt: "Run all unit tests and create security-specific tests to verify the SQL injection vulnerability is fully fixed."
 
-Agent mode runs existing tests and creates other security tests that attempt SQL injection attacks to verify the vulnerability is resolved.
+The Agent runs existing tests and creates other security tests that attempt SQL injection attacks to verify the vulnerability is resolved.
 
 ### Step 8: Review and iterate
 
@@ -157,13 +181,13 @@ If issues are found, provide specific instructions for refinements.
 
 Example prompt: "The password length validation test is failing. Update the validation to allow passwords between 8 and 128 characters."
 
-Agent mode analyzes failing tests and makes necessary corrections to ensure all requirements are met.
+The Agent analyzes failing tests and makes necessary corrections to ensure all requirements are met.
 
 This structured approach ensures remediation is done safely and systematically, with validation at each step.
 
 ## Security and quality considerations
 
-When using Agent mode for security remediation, always consider security and quality implications:
+When using the Agent for security remediation, always consider security and quality implications:
 
 ### Security best practices
 
@@ -191,7 +215,7 @@ Maintain high code quality by following these guidelines:
 
 ## Agent mode safety guidelines
 
-Agent mode is powerful but requires careful oversight.
+The Agent is powerful but requires careful oversight.
 
 ### Before remediation
 
@@ -199,7 +223,8 @@ Taking these precautions before starting remediation minimizes the risk of losin
 
 - Always work in a feature branch.
 - Ensure comprehensive test coverage exists.
-- Review the remediation plan from Ask mode analysis.
+- Review the remediation plan from the Ask agent analysis.
+- Set the permission level to **Default Approvals** so you review each tool call.
 - Understand the security vulnerability and its potential effects.
 - Back up any critical data or configurations.
 
@@ -212,6 +237,7 @@ Following these practices during remediation helps you catch and address issues 
 - Review generated code for correctness and security.
 - Test frequently to catch issues early.
 - Monitor for unintended side effects.
+- Use Visual Studio Code checkpoints to roll back to a known good state if needed.
 
 ### After remediation
 
@@ -225,7 +251,7 @@ These post-remediation steps verify that your fixes are complete, correct, and r
 
 ## Treat Agent mode as a powerful assistant
 
-While Agent mode can perform complex remediation tasks, it requires human oversight:
+While the Agent can perform complex remediation tasks, it requires human oversight:
 
 - Review all changes before accepting them.
 - Validate that security vulnerabilities are fully addressed.
@@ -233,11 +259,11 @@ While Agent mode can perform complex remediation tasks, it requires human oversi
 - Test thoroughly to catch subtle issues.
 - Verify compliance with security policies.
 
-Agent mode accelerates security remediation but doesn't replace the need for careful review and testing.
+The Agent accelerates security remediation but doesn't replace the need for careful review and testing.
 
 ## Integration with Git workflow
 
-Incorporate Agent mode changes into your Git workflow seamlessly using Visual Studio Code's built-in tools.
+Incorporate Agent changes into your Git workflow seamlessly using Visual Studio Code's built-in tools.
 
 ### Commit changes using Source Control view
 
@@ -291,4 +317,4 @@ git push origin your-branch-name
 
 ## Summary
 
-Using GitHub Copilot's Agent mode enables developers to efficiently remediate security issues while maintaining code quality and functionality. By combining the analytical insights from Ask mode with Agent mode's execution capabilities, you can systematically address vulnerabilities in your codebase. The key to success is providing clear instructions, maintaining safety practices, thoroughly validating all changes, and ensuring proper documentation. GitHub Copilot's Agent mode is a powerful assistant that accelerates remediation. However, human oversight remains essential to ensuring security fixes are complete, correct, and don't introduce new vulnerabilities.
+Using GitHub Copilot's Agent mode enables developers to efficiently remediate security issues while maintaining code quality and functionality. By combining the analytical insights from the Ask agent with the Agent's execution capabilities, you can systematically address vulnerabilities in your codebase. Choose the right agent type for your situation — use the local Agent for interactive, step-by-step remediation, or the cloud agent to assign well-defined issues for autonomous resolution. The key to success is providing clear instructions, setting appropriate permission levels, maintaining safety practices, thoroughly validating all changes, and ensuring proper documentation. The Agent is a powerful assistant that accelerates remediation, but human oversight remains essential to ensuring security fixes are complete, correct, and don't introduce new vulnerabilities.

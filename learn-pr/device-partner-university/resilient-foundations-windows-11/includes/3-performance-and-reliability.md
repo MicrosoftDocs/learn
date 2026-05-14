@@ -10,7 +10,7 @@ Copilot+ PCs use a trio of processors to optimize performance. They are:
 
 - **CPU (central processing unit):** The CPU is the general-purpose workhorse of the computer—capable of managing a wide range of tasks. It excels at sequential processing and low-latency tasks—making it ideal for tasks that require quick decision-making. The CPU can also execute complex instructions and manage the operating system and applications. An example case is running multiple applications like a web browser, word processor, and email client simultaneously.
 - **GPU (graphics processing unit):** Specialized for parallel processing—making it powerful for tasks that can be divided into smaller, simultaneous operations. GPUs are useful for a wide range of graphics, analytics, and AI workloads including simulating environments for training large language or vision models faster, multimedia generation, and  analyzing large data sets. A use case for the GPU is rendering high-resolution graphics in video games or performing complex calculations in scientific simulations.
-- **NPU (neural processing unit):** A purpose-built processor built for AI—especially for high-speed inference tasks like natural language processing or image enhancement. NPUs are more energy-efficient than CPUs and GPIs for AI tasks. An example of the use case of this processor is real-time image recognition or running AI models for voice assistants.
+- **NPU (neural processing unit):** A purpose-built processor built for AI—especially for high-speed inference tasks like natural language processing or image enhancement. NPUs are more energy-efficient than CPUs and GPUs for AI tasks. An example of the use case of this processor is real-time image recognition or running AI models for voice assistants.
 
 ## User experience consistency
 
@@ -36,7 +36,7 @@ Let's say that an employee needs to view their available storage to install a ne
 
 :::image type="content" border="true" source="../media/snap-layouts.gif" alt-text="Animation showing how to use Snap layouts in Windows 11 Pro.":::
 
-**Snap layouts:** Part of being productive and efficient comes down to staying organized. Snap layouts allow users to maximize multitasking and save time searching for windows that you need. Snap layouts are preconfigured ways to organize windows on your screen. You can choose from two windows side by side, both using one half of the screen, or four windows, each using one quarter of the screen. Here's are the ways to open and use Snap layouts:
+**Snap layouts:** Part of being productive and efficient comes down to staying organized. Snap layouts allow users to maximize multitasking and save time searching for windows that you need. Snap layouts are preconfigured ways to organize windows on your screen. Options include two windows side by side (each using one half of the screen), four windows (each using one quarter of the screen), and many other configurations to suit your workflow needs. Here are the ways to open and use Snap layouts:
 
 - Select Windows logo key + Z to launch the Snap layout box.
 - Hover over the minimize or maximize button in the upper-right corner of your window to launch the Snap layout box.
