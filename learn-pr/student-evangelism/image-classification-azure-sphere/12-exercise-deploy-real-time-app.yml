@@ -4,9 +4,9 @@ title: Exercise - Deploy a real-time image classification application to Azure S
 metadata:
   title: Exercise - Deploy a real-time image classification application to Azure Sphere
   description: In this section, we help the learner to deploy a real-time image classification to Azure Sphere.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |
