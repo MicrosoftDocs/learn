@@ -6,22 +6,22 @@ What's less obvious is that choosing Office today also means choosing **how your
 
 Some Office offerings emphasize:
 
-- ongoing feature updates
-- cloud-connected services
-- built-in collaboration
-- in some plans, AI-assisted workflows that can speed up common tasks
+- Ongoing feature updates
+- Cloud-connected services
+- Built-in collaboration
+- In some plans, AI-assisted workflows that can speed up common tasks
 
 Other offerings emphasize:
 
-- a stable, locally installed experience
-- predictable ownership
-- a fixed feature set
+- A stable, locally installed experience
+- Predictable ownership
+- A fixed feature set
 
 Neither approach is inherently better. The right choice depends on your priorities, especially:
 
-- **how much change** you want over time
-- how much you want your **productivity tools tied to services**
-- and whether you view AI features as a **meaningful benefit** or an optional extra
+- **How much change** you want over time
+- How much you want your **productivity tools tied to services**
+- And whether you view AI features as a **meaningful benefit** or an optional extra
 
 > [!NOTE]
 > This module focuses on selecting the right Office productivity option based on technical characteristics and usage requirements. Detailed instructions for performing tasks in Word, Excel, Outlook, or other apps are covered in separate task‑based Learn modules.

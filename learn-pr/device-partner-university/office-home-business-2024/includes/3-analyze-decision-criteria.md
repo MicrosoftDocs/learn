@@ -16,8 +16,8 @@ Use this table for a quick guide to the decision criteria that matter most for y
 
 Start with whether you prefer:
 
-- a **one-time purchase** with long-term use of a fixed version, or
-- a **subscription service** that delivers ongoing updates and new capabilities
+- A **one-time purchase** with long-term use of a fixed version, or
+- A **subscription service** that delivers ongoing updates and new capabilities
 
 This choice affects cost structure, update cadence, and what "value over time" looks like.
 
@@ -45,10 +45,10 @@ AI-assisted productivity—such as writing suggestions, summarization, and analy
 
 Common ways that AI adds value include:
 
-- speeding up first drafts
-- summarizing long email threads or documents
-- helping identify patterns in data
-- generating starting points for presentations
+- Speeding up first drafts
+- Summarizing long email threads or documents
+- Helping identify patterns in data
+- Generating starting points for presentations
 
 For other workflows, AI might be helpful but not essential—or simply not worth prioritizing relative to stability and predictable ownership.
 

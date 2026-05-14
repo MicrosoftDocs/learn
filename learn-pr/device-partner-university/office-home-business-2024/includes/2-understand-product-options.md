@@ -6,14 +6,14 @@ This overview isn't meant to teach you how the products work or compare features
 
 ## Option 1: Office Home & Business 2024
 
-Office Home & Business 2024 is a **one-time purchase Office suite** that includes classic desktop versions of Word, Excel, PowerPoint, Outlook, and OneNote installed locally on a single device. These applications provide core document creation, data analysis, presentation, and email capabilities, but don't receive new features beyond security and reliability updates during the product lifecycle.
+Office Home & Business 2024 is a **one-time purchase Office suite** that includes classic desktop versions of Word, Excel, PowerPoint, Outlook, and OneNote installed locally on a single device. These applications provide core document creation, data analysis, presentation, and email capabilities, but do not receive new features beyond security and reliability updates during the product lifecycle.
 
 Office Home & Business 2024 might be a strong fit for people who:
 
-- prefer ownership over subscription models
-- want locally installed desktop applications
-- value consistency and minimal change
-- and are comfortable with a core productivity suite that doesn't integrate service-based enhancements, such as evolving AI capabilities
+- Prefer ownership over subscription models
+- Want locally installed desktop applications
+- Value consistency and minimal change
+- And are comfortable with a core productivity suite that doesn't integrate service-based enhancements, such as evolving AI capabilities
 
 Choosing this type of option can be a good fit if your baseline needs are well served by the core apps and you prefer fewer moving parts. It also means deliberately **opting out of certain service benefits**, such as AI-assisted productivity, that are featured in some subscription offerings, which might be a worthwhile tradeoff.
 
@@ -23,16 +23,16 @@ Microsoft 365 is a **subscription-based productivity offering** that provides th
 
 This option emphasizes:
 
-- ongoing feature updates
-- service integration
-- collaboration and connectivity
-- and AI‑assisted features integrated into Office apps that support drafting text, summarizing documents and email threads, and generating analysis outputs
+- Ongoing feature updates
+- Service integration
+- Collaboration and connectivity
+- And AI‑assisted features integrated into Office apps that support drafting text, summarizing documents and email threads, and generating analysis outputs
 
 Microsoft 365 might be chosen by people who:
 
-- want continuous feature improvements
-- benefit from cloud services and collaboration
-- value integrated services as part of the productivity experience
-- and see AI features as a practical benefit for everyday work
+- Want continuous feature improvements
+- Benefit from cloud services and collaboration
+- Value integrated services as part of the productivity experience
+- And see AI features as a practical benefit for everyday work
 
 A key difference is that subscription offerings can deliver **new value over time**, while a fixed suite is designed to remain stable.
