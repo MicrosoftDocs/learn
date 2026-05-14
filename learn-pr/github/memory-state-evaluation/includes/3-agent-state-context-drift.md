@@ -2,7 +2,7 @@ Memory helps an agent understand what matters. State tracks what has been done, 
 
 In GitHub workflows, state is not stored in a single place. It is represented through artifacts such as issues, pull requests, commits, workflow runs, and logs. These artifacts act as persistent memory, allowing the agent to retain context and continue work across sessions without losing progress.
 
-## In this unit, you'll learn:
+In this unit, you'll learn:
 
 - How to capture task progress and decisions as durable artifacts 
 
@@ -12,7 +12,7 @@ In GitHub workflows, state is not stored in a single place. It is represented th
 
 - How to define memory expiration, pruning, and reset rules 
 
-## Capturing task progress as durable state
+## Capture task progress as durable state
 
 Agent state should be stored in locations that are persistent and easy to review.
 
@@ -38,7 +38,7 @@ For example:
 
 Together, these artifacts act as persistent memory, providing a complete view of what the agent has done, what decisions were made, and what still needs to be completed.
 
-## Using pull requests as a state anchor
+## Use pull requests as a state anchor
 
 Pull requests are the central place to track state during agent workflows.
 
@@ -62,25 +62,25 @@ In practice:
 
 GitHub aggregates commits, checks, and discussions in the pull request, making it the primary place to track progress and decisions.
 
-## Resuming work without repeating steps
+## Resume work without repeating steps
 
 Agent workflows may pause or move between environments. To resume work correctly, the agent should rely on stored state instead of starting over.
 
 A typical resume flow looks like:
 
-- Open the existing pull request 
+1. Open the existing pull request 
 
-- Review the description and linked issue 
+1. Review the description and linked issue 
 
-- Check commits already made 
+1. Check commits already made 
 
-- Review workflow results under the “Checks” tab 
+1. Review workflow results under the “Checks” tab 
 
-- Continue from the latest state 
+1. Continue from the latest state 
 
 Because GitHub preserves commit history and workflow runs, the agent can identify completed work and avoid duplication.
 
-## Detecting context drift
+## Detect context drift
 
 Context drift occurs when the agent’s actions no longer align with the original goal or prior decisions.
 
@@ -92,7 +92,7 @@ In GitHub workflows, drift can be identified by checking:
 
 - Whether workflow checks are failing or missing 
 
-## Correcting context drift
+## Correct context drift
 
 To correct drift, the agent should be re-aligned with the source of truth.
 
@@ -108,7 +108,7 @@ In practice:
 
 GitHub allows workflow runs to be re-executed and surfaces results through the Checks tab, making it easier to verify alignment.
 
-## Managing memory over time
+## Manage memory over time
 
 Agent memory should be maintained to ensure it remains accurate and useful.
 
@@ -172,7 +172,7 @@ In practice:
 
 - Clearly document the new direction before continuing 
 
-## Maintaining consistency over time
+## Maintain consistency over time
 
 Consistent state management ensures that:
 

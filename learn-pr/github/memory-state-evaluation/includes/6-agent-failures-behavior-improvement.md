@@ -2,7 +2,7 @@ Agent workflows do not always succeed on the first attempt. Failures can occur d
 
 In GitHub workflows, failures are observable through logs, pull requests, workflow runs, and related artifacts. These provide the information needed to understand what happened and why.
 
-## In this unit, you'll learn:
+In this unit, you'll learn:
 
 - How to analyze agent failures using logs, plans, and artifacts 
 
@@ -10,7 +10,7 @@ In GitHub workflows, failures are observable through logs, pull requests, workfl
 
 - How to improve agent behavior through prompts, memory, and tool configuration 
 
-## Analyzing failures using GitHub artifacts
+## Analyze failures using GitHub artifacts
 
 When an agent fails to complete a task correctly, the first step is to review the available evidence.
 
@@ -36,7 +36,7 @@ In practice:
 
 These artifacts provide a record of workflow execution and repository changes, helping identify where the failure occurred.
 
-### Comparing intent with results
+### Compare intent with results
 
 To understand a failure, compare what the agent was expected to do with what was produced.
 
@@ -60,7 +60,7 @@ Comparing these helps determine whether the agent:
 
 - Failed during execution or validation 
 
-## Classifying root causes
+## Classify root causes
 
 Failures can be grouped into common categories such as:
 
@@ -102,7 +102,7 @@ Examples include:
 
 This classification is a practical way to diagnose failures based on how the workflow behaves.
 
-## Improving agent behavior
+## Improve agent behavior
 
 Once the root cause is identified, the next step is to improve how the agent operates.
 
@@ -146,25 +146,25 @@ In practice:
 
 GitHub workflows and branch protection rules enforce how validation and execution occur.
 
-## Using a feedback loop
+## Use a feedback loop
 
 Improving agent behavior is an iterative process.
 
 A typical loop looks like:
 
-- Run the agent on a task 
+1. Run the agent on a task 
 
-- Observe failures through logs and artifacts 
+1. Observe failures through logs and artifacts 
 
-- Identify the root cause 
+1. Identify the root cause 
 
-- Apply fixes to prompts, memory, or tools 
+1. Apply fixes to prompts, memory, or tools 
 
-- Re-run the workflow 
+1. Re-run the workflow 
 
 GitHub supports this loop by allowing workflows to be re-run and by preserving logs and artifacts for inspection.
 
-## Maintaining traceability
+## Maintain traceability
 
 All improvements should be visible and traceable in GitHub.
 

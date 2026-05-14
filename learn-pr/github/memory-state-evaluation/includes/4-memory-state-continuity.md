@@ -2,7 +2,7 @@ Agent workflows often span multiple tools and environments. An agent may start w
 
 In GitHub workflows, continuity is achieved by relying on durable artifacts and consistent sources of truth rather than temporary session context.
 
-## In this unit, you'll learn:
+In this unit, you'll learn:
 
 - How to share agent state across tools and environments 
 
@@ -10,7 +10,7 @@ In GitHub workflows, continuity is achieved by relying on durable artifacts and 
 
 - How to prevent stale context 
 
-## Sharing agent state across tools
+## Share agent state across tools
 
 Agent state should be shared using durable references, not copied context.
 
@@ -38,7 +38,7 @@ In practice:
 
 Because all environments can access the same repository data, the agent can maintain continuity without needing to transfer session context.
 
-## Using GitHub as the source of truth
+## Use GitHub as the source of truth
 
 To maintain consistency, all important information should exist in one place.
 
@@ -62,7 +62,7 @@ In practice:
 
 Using GitHub as the source of truth ensures that all tools and environments operate on the same state.
 
-## Preventing conflicting context
+## Prevent conflicting context
 
 Conflicting context occurs when the same information exists in multiple places with different values.
 
@@ -82,7 +82,7 @@ For example:
 
 This ensures that the agent always retrieves consistent information.
 
-## Preventing stale context
+## Prevent stale context
 
 Stale context occurs when outdated information is used during execution.
 
@@ -116,7 +116,7 @@ In practice:
 
 - Re-run workflows when changes are made 
 
-- Use the “Checks” tab to verify the latest state 
+- Use the "Checks" tab to verify the latest state 
 
 Because workflows run in controlled environments and produce consistent outputs, they provide a reliable way to validate state across tools.
 
@@ -126,15 +126,15 @@ When switching between environments, the agent should always re-anchor to GitHub
 
 A typical flow looks like:
 
-- Start work in an IDE using a repository 
+1. Start work in an IDE using a repository 
 
-- Open or reference an existing pull request 
+1. Open or reference an existing pull request 
 
-- Continue work through CLI or automation 
+1. Continue work through CLI or automation 
 
-- Validate changes using GitHub workflows 
+1. Validate changes using GitHub workflows 
 
-- Review and finalize work in the pull request 
+1. Review and finalize work in the pull request 
 
 By always returning to GitHub artifacts, the agent avoids losing context or diverging from prior work.
 

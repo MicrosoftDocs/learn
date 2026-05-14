@@ -2,7 +2,7 @@ Agents need structured memory to complete tasks reliably. Instead of relying on 
 
 In GitHub workflows, this typically involves combining in-session context with durable artifacts such as issues, pull requests, and repository instructions.
 
-## In this unit, you'll learn:
+In this unit, you'll learn:
 
 - The difference between short-term, long-term, and external memory 
 
@@ -34,7 +34,7 @@ External memory is stored outside the agent in durable systems. In GitHub, this 
 
 External memory acts as the source of truth because it is persistent and can be reviewed at any time.
 
-## Choosing where to store information
+## Choose where to store information
 
 Different types of information should be stored in different places.
 
@@ -44,7 +44,7 @@ Plans and decisions should also be stored in the same locations. This helps main
 
 Repeatable processes should be stored as instructions or reusable skills. This avoids redefining the same workflow for every task.
 
-## Scoping memory to relevant information
+## Scope memory to relevant information
 
 Memory should be limited to information that affects the outcome of the task.
 
@@ -60,7 +60,7 @@ Information that does not affect the outcome should not be stored. This includes
 
 Limiting memory reduces confusion and helps prevent the use of outdated information.
 
-## Defining a source of truth
+## Define a source of truth
 
 Each type of information should have a single, clear location.
 

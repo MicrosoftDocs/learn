@@ -1,4 +1,4 @@
-## In this unit, you'll learn:
+In this unit, you'll learn:
 
 - How to define success criteria for agent tasks 
 
@@ -60,11 +60,11 @@ Workflows powered by GitHub Actions are used to automate evaluation.
 
 Common workflow steps include:
 
-- Running tests 
+1. Running tests 
 
-- Linting code 
+1. Linting code 
 
-- Building the application 
+1. Building the application 
 
 Example trigger:
 
@@ -166,19 +166,19 @@ Branch protection rules enforce these requirements before changes can be merged.
 
 A typical evaluation flow in GitHub looks like:
 
-- An issue defines the task and success criteria 
+1. An issue defines the task and success criteria 
 
-- An agent creates a branch and opens a pull request 
+1. An agent creates a branch and opens a pull request 
 
-- Workflows run automatically 
+1. Workflows run automatically 
 
-- Status checks appear in the pull request 
+1. Status checks appear in the pull request 
 
-- Required checks must pass 
+1. Required checks must pass 
 
-- A reviewer approves the changes 
+1. A reviewer approves the changes 
 
-- The pull request is merged 
+1. The pull request is merged 
 
 This ensures that all changes are validated before being accepted.
 
