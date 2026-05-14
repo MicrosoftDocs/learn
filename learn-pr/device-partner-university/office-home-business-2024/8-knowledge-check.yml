@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.office-home-business-2024.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Choose the best Office productivity option for stable and evolving workflows" module.
+  ms.date: 05/12/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary decision this module helps you make when choosing an Office productivity option?"
+    choices:
+        - content: "Which Office apps have the most advanced features"
+          isCorrect: false
+          explanation: "Incorrect. The module explicitly states it doesn't focus on detailed feature comparisons."
+        - content: "Whether to choose tools as a stable suite or an evolving service"
+          isCorrect: true
+          explanation: "Correct. The module centers on deciding between a stable suite and an evolving service ecosystem that delivers value over time."
+        - content: "Which option is the least expensive over time"
+          isCorrect: false
+          explanation: "Incorrect. Cost structure is mentioned, but it isn't the primary decision emphasized."
+        - content: "Whether Office apps can be used offline"
+          isCorrect: false
+          explanation: "Incorrect. Offline use is referenced, but it isn't the main decision the module targets."
+  - content: "Which characteristic best describes Office Home & Business 2024?"
+    choices:
+        - content: "A subscription-based service with continuous feature updates"
+          isCorrect: false
+          explanation: "Incorrect. This describes Microsoft 365, not Office Home & Business 2024."
+        - content: "A one-time purchase with a fixed feature set"
+          isCorrect: true
+          explanation: "Correct. Office Home & Business 2024 is described as a one-time purchase with predictable features over time."
+        - content: "A cloud-only productivity solution"
+          isCorrect: false
+          explanation: "Incorrect. The suite is locally installed on the device."
+        - content: "An offering optimized for AI-assisted workflows"
+          isCorrect: false
+          explanation: "Incorrect. This option deliberately opts out of service-based enhancements such as evolving AI capabilities."
+  - content: "Which decision criterion focuses on how often your productivity experience might change?"
+    choices:
+        - content: "Product model"
+          isCorrect: false
+          explanation: "Incorrect. Product model focuses on whether value is delivered through a one-time purchase or a subscription."
+        - content: "Service dependency"
+          isCorrect: false
+          explanation: "Incorrect. Service dependency examines reliance on integrated services such as cloud features or AI."
+        - content: "Change tolerance"
+          isCorrect: true
+          explanation: "Correct. Change tolerance evaluates how comfortable you are with frequent updates versus a stable experience."
+        - content: "Deployment style"
+          isCorrect: false
+          explanation: "Incorrect. Deployment style refers to whether apps are locally installed or service-connected."
+  - content: "In which scenario is Microsoft 365 described as the best fit?"
+    choices:
+        - content: "A business that values minimal change and predictable ownership"
+          isCorrect: false
+          explanation: "Incorrect. That scenario aligns better with Office Home & Business 2024."
+        - content: "An independent consultant with inconsistent connectivity"
+          isCorrect: false
+          explanation: "Incorrect. This scenario favors minimizing service reliance with a fixed suite."
+        - content: "A professional writer who benefits from AI-assisted writing"
+          isCorrect: true
+          explanation: "Correct. The module states Microsoft 365 is more appropriate when AI assistance is a core benefit."
+        - content: "A user who prefers locally installed apps without services"
+          isCorrect: false
+          explanation: "Incorrect. This preference aligns with a one-time purchase option."
+  - content: "What does the \"service dependency\" decision criterion ask you to consider?"
+    choices:
+        - content: "How many applications are included in the suite"
+          isCorrect: false
+          explanation: "Incorrect. The module advises focusing on decision criteria rather than counting features."
+        - content: "How value is added through integrated services"
+          isCorrect: true
+          explanation: "Correct. Service dependency evaluates benefits delivered through services like cloud connectivity, collaboration, and AI."
+        - content: "How often security updates are delivered"
+          isCorrect: false
+          explanation: "Incorrect. Security updates are mentioned but aren't the focus of this criterion."
+        - content: "How long you can use the software after purchase"
+          isCorrect: false
+          explanation: "Incorrect. This relates more to ownership and licensing than service dependency."
