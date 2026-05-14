@@ -15,11 +15,11 @@ title: Get started with AI-powered information extraction in Azure
 summary: AI gives you the power to unlock insights from your data. Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify Foundry Tools for information extraction
-  - Describe Azure Vision information extraction capabilities
-  - Describe Azure Content Understanding information extraction capabilities
-  - Describe Azure Document Intelligence information extraction capabilities
-  - Describe Azure AI Search information extraction capabilities
+  - Describe Azure Content Understanding and its core purpose
+  - Explain how content is processed, from ingestion, to analysis, to structured output
+  - Identify supported content types (documents, audio, and video)
+  - Use analyzers and schemas to extract structured data
+  - Explore and interact with results using Foundry tools and APIs
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure portal
