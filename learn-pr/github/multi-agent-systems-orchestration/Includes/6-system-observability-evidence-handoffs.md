@@ -32,7 +32,7 @@ Observable artifacts include:
 
 As the number of agents grows, traceability becomes a primary requirement. Reviewers need to understand which agent produced a change, what decision was made, what evidence supports it, and what happened next. 
 
-GitHub provides these answers when workflows consistently produce artifacts, logs, and structured handoffs in pull requests. This matters because without traceability, systems cannot be debugged or trusted.
+GitHub provides these answers when workflows consistently produce artifacts, logs, and structured handoffs in pull requests. This matters because without traceability, systems can't be debugged or trusted.
 
 ### Define a practical observability goal
 
@@ -50,15 +50,16 @@ A practical observability goal is that every meaningful step leaves a durable tr
 
 Adopt conventions such as:
 
-- PR titles: [agent:dependency] Update <package> to <version>
+- PR titles: [agent: dependency] Update <package> to <version>
 
-- labels: agent:dependency, agent:security, agent:refactor
+- labels: agent: dependency, agent: security, agent: refactor
 
 - PR body sections: Plan, Evidence, Risks, Rollback/Escalation
 
 ### Upload structured agent evidence as artifacts
 
 Artifacts create durable evidence that supports debugging and audits.
+
 
 ```yml
 
@@ -138,15 +139,15 @@ This structure ensures that every decision is captured, every action is justifie
 
 ## Why observability matters
 
-Observability is what allows multi-agent systems to scale safely. Without it, coordination breaks down because there is no shared understanding of what has happened or why.
+Observability is what allows multi-agent systems to scale safely. Without it, coordination breaks down because there's no shared understanding of what has happened or why.
 
-### What happens when systems are not observable
+### What happens when systems aren't observable
 
-When systems lack logs or artifacts, failures cannot be diagnosed and trust cannot be established. In multi-agent systems, invisible work becomes an operational risk.
+When systems lack logs or artifacts, failures can't be diagnosed and trust can't be established. In multi-agent systems, invisible work becomes an operational risk.
 
 Without clear attribution and evidence:
 
-- reviewers cannot verify decisions 
+- reviewers can't verify decisions 
 
 - debugging becomes reactive and slow 
 
@@ -154,6 +155,6 @@ Without clear attribution and evidence:
 
 ## Key takeaway
 
-Observability is not optional. It is the mechanism that keeps multi-agent systems reviewable and operable.
+Observability isn't optional. It's the mechanism that keeps multi-agent systems reviewable and operable.
 
-Even with good observability, failures will happen. In the next unit, you will learn how to diagnose system-level coordination failures and recover safely using bounded retries, rollback strategies, and human escalation.
+Even with good observability, failures will happen. In the next unit, you'll learn how to diagnose system-level coordination failures and recover safely using bounded retries, rollback strategies, and human escalation.

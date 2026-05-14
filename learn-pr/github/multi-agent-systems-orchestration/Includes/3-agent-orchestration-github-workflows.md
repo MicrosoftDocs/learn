@@ -1,4 +1,4 @@
-Once responsibilities are clear, the focus shifts to how agents coordinate their work. Even well-defined roles can lead to confusion if execution is not structured. Think about when agents should run, how their work is sequenced, and how outputs move between steps. Expressing this coordination through GitHub workflows keeps the system predictable, observable, and easier to manage as it grows.
+Once responsibilities are clear, the focus shifts to how agents coordinate their work. Even well-defined roles can lead to confusion if execution isn't structured. Think about when agents should run, how their work is sequenced, and how outputs move between steps. Expressing this coordination through GitHub workflows keeps the system predictable, observable, and easier to manage as it grows.
 
 In this unit, you'll learn
 
@@ -16,7 +16,7 @@ Orchestration in multi-agent systems defines how multiple agents coordinate thei
 
 ## How orchestration works in GitHub
 
-In GitHub, orchestration works best when it is expressed through workflows that respond to events. This keeps coordination visible because it happens in pull requests, workflow runs, checks, and logs.
+In GitHub, orchestration works best when it's expressed through workflows that respond to events. This keeps coordination visible because it happens in pull requests, workflow runs, checks, and logs.
 
 Typical triggers include:
 
@@ -155,10 +155,10 @@ jobs:
 
 ### What happens when orchestration is hidden
 
-If coordination happens outside GitHub and does not leave evidence in pull requests or workflow runs, reviewers lose the ability to understand why the system behaved the way it did. This makes failures harder to diagnose and reduces trust.
+If coordination happens outside GitHub and doesn't leave evidence in pull requests or workflow runs, reviewers lose the ability to understand why the system behaved the way it did. This makes failures harder to diagnose and reduces trust.
 
 ## Key takeaway
 
 Orchestration should be expressed through GitHub Actions events and shared artifacts so the system remains observable. Use sequential orchestration when outputs depend on prior steps. Use parallel orchestration only when agents operate on isolated paths.
 
-Once workflows are coordinated, you must ensure agents do not interfere with each other during execution.
+Once workflows are coordinated, you must ensure agents don't interfere with each other during execution.

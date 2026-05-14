@@ -1,4 +1,4 @@
-Execution isolation is the practice of separating agent activity so that each agent operates within its own controlled scope. It ensures that agents do not interfere with each other, do not share execution context such as branches, workflows, or permissions, and do not create unstable or unpredictable behavior when running in parallel.
+Execution isolation is the practice of separating agent activity so that each agent operates within its own controlled scope. It ensures that agents don't interfere with each other, don't share execution context such as branches, workflows, or permissions, and don't create unstable or unpredictable behavior when running in parallel.
 
 In this unit, you'll learn
 
@@ -12,7 +12,7 @@ In this unit, you'll learn
 
 ### Why isolation matters in multi-agent systems
 
-Isolation is not only about preventing merge conflicts. It is also about preventing instability. When multiple agents share the same execution context-such as a branch, a workflow, or broad write permissions-failures become harder to diagnose and the system becomes more likely to thrash through repeated runs.
+Isolation isn't only about preventing merge conflicts. It's also about preventing instability. When multiple agents share the same execution context-such as a branch, a workflow, or broad write permissions-failures become harder to diagnose and the system becomes more likely to thrash through repeated runs.
 
 Isolation makes concurrency safe and attribution clear. This matters because shared execution context leads to unstable and unpredictable systems.
 
@@ -28,7 +28,7 @@ Each agent should open a PR from a dedicated branch such as:
 
 - `agent/security/<ticket>`
 
-This makes changes bounded and helps reviewers understand intent and scope.
+This makes changes bound and helps reviewers understand intent and scope.
 
 ### Workflow isolation
 
@@ -40,7 +40,7 @@ Once workflows are separated, permissions must also be scoped to prevent uninten
 
 Workflow permissions should be reduced to the minimum needed. GitHub documents workflow syntax, including permissions.
 
-Example permissions for a workflow that updates PR metadata but should not push arbitrary commits:
+Example permissions for a workflow that updates PR metadata but shouldn't push arbitrary commits:
 
 ```yml
 permissions:
@@ -68,7 +68,7 @@ concurrency:
 
 #### Configure Workflow-Level Concurrency for Safe Parallel Execution
 
-When multiple agent sessions may push to the same repository or PR, you must prevent workflow runs from colliding on the same branch, while still allowing jobs to run in parallel across *different* branches or workflows. Use a properly-scoped concurrency group on the workflow:
+When multiple agent sessions may push to the same repository or PR, you must prevent workflow runs from colliding on the same branch, while still allowing jobs to run in parallel across *different* branches or workflows. Use a properly scoped concurrency group on the workflow:
 
 ```yml
 concurrency:
@@ -105,4 +105,4 @@ Not all agent invocation modes support parallel tasks:
 
 Isolation is the foundation for multi-agent stability. Use concurrency controls when workflows trigger frequently, especially on pull request updates.
 
-Isolation reduces interference, but it does not eliminate conflicts. In the next unit, you will learn how to detect conflicts early and resolve them predictably using GitHub-native arbitration controls such as merge validation checks and CODEOWNERS.
+Isolation reduces interference, but it doesn't eliminate conflicts. In the next unit, you'll learn how to detect conflicts early and resolve them predictably using GitHub-native arbitration controls such as merge validation checks and CODEOWNERS.
