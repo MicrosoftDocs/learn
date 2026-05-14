@@ -20,7 +20,7 @@ summary: |
   
   - Design and implement robust data pipelines using notebooks and Lakeflow Spark Declarative Pipelines
   - Create and orchestrate Lakeflow Jobs with triggers, schedules, and error handling
-  - Apply version control and deploy pipelines across environments using Git and Databricks Asset Bundles
+  - Apply version control and deploy pipelines across environments using Git and Declarative Automation Bundles
   - Monitor, troubleshoot, and optimize data workloads for reliability and performance
 iconUrl: /training/achievements/generic-trophy.svg
 levels:

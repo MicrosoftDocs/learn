@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-github-copilot-cloud-operations.generating-bicep-templates
+title: Generating Bicep templates with GitHub Copilot
+metadata:
+  title: Generating Bicep Templates with GitHub Copilot
+  description: "Learn how to use GitHub Copilot to generate simple and complex Bicep templates, modularize infrastructure code, and improve output quality with the Bicep MCP server."
+  ms.date: 05/05/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-generating-bicep-templates.md)]

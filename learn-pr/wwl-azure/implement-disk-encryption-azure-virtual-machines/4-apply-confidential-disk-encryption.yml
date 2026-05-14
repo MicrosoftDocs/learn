@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disk-encryption-azure-virtual-machines.apply-confidential-disk-encryption
+metadata:
+  title: Apply confidential disk encryption to confidential virtual machines
+  description: Configure confidential disk encryption for Azure confidential virtual machines, binding disk encryption keys to the VM's vTPM for workload isolation.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Apply confidential disk encryption to confidential virtual machines
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-apply-confidential-disk-encryption.md)]

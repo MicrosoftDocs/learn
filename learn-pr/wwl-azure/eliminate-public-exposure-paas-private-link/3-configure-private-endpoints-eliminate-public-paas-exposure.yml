@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.eliminate-public-exposure-paas-private-link.configure-private-endpoints-eliminate-public-paas-exposure
+title: Configure private endpoints to eliminate public PaaS exposure
+metadata:
+  title: Configure Private Endpoints to Eliminate Public PaaS Exposure
+  description: "Configure private endpoints and private DNS zone integration to route PaaS and AI service traffic through the private network, then disable public network access to complete the control."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-private-endpoints-eliminate-public-paas-exposure.md)]

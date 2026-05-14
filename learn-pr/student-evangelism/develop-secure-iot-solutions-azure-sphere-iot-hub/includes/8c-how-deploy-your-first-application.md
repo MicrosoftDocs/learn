@@ -2,7 +2,7 @@ In this unit, you will learn how to deploy a high-level application to your Azur
 
 ## Solution architecture
 
-The following outlines how the Azure Sphere stream telemetry to IoT Hub.
+The following outlines how the Azure Sphere application streams telemetry to IoT Hub.
 
 ![Azure Sphere Streaming telemetry to IoT Hub.](../media/azsure-sphere-telemetry-streaming.png)
 
@@ -33,7 +33,7 @@ static LP_TIMER measureSensorTimer = {
 
 The **MeasureSensorHandler** function is called when the **measureSensorTimer** timer triggers.
 
-The MeasureSensorHandler function will read the environment sensor, format the data into a JSON string, display the JSON data on the **Output** tab, and then send the telemetry to Azure IoT Hub.
+The MeasureSensorHandler function will read the environment sensor, format the data into a JSON string, write the JSON data to the Visual Studio Code **Output** tab, and then send the telemetry to Azure IoT Hub.
 
 ```c
 /// <summary>
@@ -62,9 +62,9 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 ## Introduction to IoT Plug and Play
 
-IoT Plug and Play enables solution builders to integrate smart devices with their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play enabled application. To learn more, visit "[What is IoT Plug and Play](/azure/iot-pnp/overview-iot-plug-and-play?azure-portal=true)".
+IoT Plug and Play enables solution builders to integrate smart devices with their solutions without any manual configuration. At the core of IoT Plug and Play is a device model that a device uses to advertise its capabilities to an IoT Plug and Play enabled application. To learn more, visit [What is IoT Plug and Play](/azure/iot/overview-iot-plug-and-play?azure-portal=true).
 
-The IoT Plug and Play model for this learning module can be found in the **IoTPlugAndPlay** directory. This model has been uploaded to the public repository of IoT Plug and Play models.
+The IoT Plug and Play model for this learning module can be found in the **IoTPlugAndPlay** directory. This model has been published to the public IoT Plug and Play model repository hosted at `devicemodels.azure.com`. The repository continues to serve existing models. The associated GitHub repository [`Azure/iot-plugandplay-models`](https://github.com/Azure/iot-plugandplay-models?azure-portal=true) is now archived (read-only); Microsoft has not accepted new model submissions there since February 2024, when the Azure Certified Device program was retired.
 
 The IoT Plug and Play model used by this learning module is declared in main.c.
 
@@ -72,6 +72,6 @@ The IoT Plug and Play model used by this learning module is declared in main.c.
 #define IOT_PLUG_AND_PLAY_MODEL_ID "dtmi:com:example:azuresphere:labmonitor;1"
 ```
 
-Azure IoT Explorer along with IoT Central are IoT Plug and Play enabled applications. IoT Plug and Play is an open specification. You can also build Plug and Play compliant applications. For more information, read the [Introduction to IoT Plug and Play](/azure/iot/overview-iot-plug-and-play) article.
+Azure IoT Explorer and IoT Central are both IoT Plug and Play enabled applications. IoT Plug and Play is an open specification, so you can also build your own Plug and Play compliant applications. For more information, read the [Introduction to IoT Plug and Play](/azure/iot/overview-iot-plug-and-play?azure-portal=true) article.
 
-When your device first connects to IoT Hub, the IoT Plug and Play Model ID is passed to IoT Hub. Azure IoT Explorer then retrieves the IoT Plug and Play model from the public repository of IoT Plug and Play models. The telemetry is display using the model.
+When your device first connects to IoT Hub as an IoT Plug and Play device, it announces the model ID to IoT Hub. Azure IoT Explorer can read the model ID from IoT Hub and, if the public repository is configured as a model source and contains that DTMI, resolve the DTDL model and display modeled telemetry.

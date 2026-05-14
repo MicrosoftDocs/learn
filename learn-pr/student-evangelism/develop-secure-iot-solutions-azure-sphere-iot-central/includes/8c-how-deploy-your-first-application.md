@@ -1,17 +1,17 @@
-In this unit, you will learn how to deploy a high-level application to your Azure Sphere and stream telemetry to IoT Central.
+In this unit, you'll learn how to deploy a high-level application to your Azure Sphere and stream telemetry to IoT Central.
 
 ## Solution architecture
 
-The following outlines how the Azure Sphere stream telemetry to IoT Central.
+The following diagram outlines how Azure Sphere streams telemetry to IoT Central.
 
 ![Azure Sphere Streaming telemetry to IoT Central.](../media/azsure-sphere-telemetry-streaming.png)
 
-1. The high-level application running on the Cortex-A7 reads the environment sensors every 6 seconds, serializes the data as JSON, and sends the telemetry message to IoT Hub.
-2. Azure IoT Central subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.
+1. After provisioning through the IoT Central application's DPS ID scope, the device connects to the application's underlying IoT Hub. The high-level application running on the Cortex-A7 reads the environment sensors every 6 seconds, serializes the data as JSON, and sends telemetry through that connection.
+1. Azure IoT Central ingests the telemetry from the underlying IoT Hub and displays the data to the user.
 
 ## Understanding the Azure Sphere application
 
-These labs make extensive use event timers, so there is a generalized model to simplify working with timers. Event-driven programming helps to simplify application design.
+These labs make extensive use of event timers, so there's a generalized model to simplify working with timers. Event-driven programming helps to simplify application design.
 
 There are two types of timers:
 
@@ -22,7 +22,7 @@ Event timers generate events that are bound to handler functions, which implemen
 
 ![The illustration shows the event timers concept.](../media/timer-events.png)
 
-The application declares a periodic **measureSensorTimer** event timer. When initialized, this timer will trigger every 6 seconds calling the **MeasureSensorHandler** handler function.
+The application declares a periodic **measureSensorTimer** event timer. When initialized, this timer triggers every 6 seconds calling the **MeasureSensorHandler** handler function.
 
 ```c
 static LP_TIMER measureSensorTimer = {
@@ -33,7 +33,7 @@ static LP_TIMER measureSensorTimer = {
 
 The **MeasureSensorHandler** function is called when the **measureSensorTimer** timer triggers.
 
-The MeasureSensorHandler function will read the environment sensor, format the data into a JSON string, display the JSON data on the **Output** tab, and then send the telemetry to Azure IoT Central.
+The MeasureSensorHandler function reads the environment sensor, format the data into a JSON string, display the JSON data in the **Debug Console** during Visual Studio Code debugging, and then send the telemetry to Azure IoT Central.
 
 ```c
 /// <summary>
@@ -62,9 +62,9 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 ## Introduction to IoT Plug and Play
 
-IoT Plug and Play enables solution builders to integrate smart devices with their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play enabled application. To learn more, visit "[What is IoT Plug and Play](/azure/iot-pnp/overview-iot-plug-and-play?azure-portal=true)".
+IoT Plug and Play enables solution builders to integrate smart devices with their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play-enabled application. To learn more, visit "[What is IoT Plug and Play](/azure/iot/overview-iot-plug-and-play?azure-portal=true)".
 
-The IoT Plug and Play model for this learning module can be found in the **IoTPlugAndPlay** directory. This model has been uploaded to the public repository of IoT Plug and Play models.
+The IoT Plug and Play model for this learning module can be found in the **IoTPlugAndPlay** directory. This model has been uploaded to the public device model repository so IoT Central can discover it from the model ID.
 
 The IoT Plug and Play model used by this learning module is declared in main.c.
 
@@ -72,4 +72,4 @@ The IoT Plug and Play model used by this learning module is declared in main.c.
 #define IOT_PLUG_AND_PLAY_MODEL_ID "dtmi:com:example:azuresphere:labmonitor;1"
 ```
 
-IoT Central is an IoT Plug and Play enabled application. When your device first connects to IoT Central, the IoT Plug and Play Model ID is passed to IoT Central. IoT Central then retrieves the IoT Plug and Play model from the public repository of IoT Plug and Play models and creates a device template and default views.
+IoT Central is an IoT Plug and Play-enabled application. When your device first connects to IoT Central, the device sends the IoT Plug and Play model ID. If a matching device template is already published in the application, IoT Central assigns the device to that template. If not, IoT Central looks for the model in the public device model repository and, when found, generates a basic device template from the model definition. You can then add or customize views in IoT Central for the visualizations and forms you want operators to use.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-kubernetes.secure-kubernetes-network-access
+metadata:
+  title: Secure Azure Kubernetes Service (AKS) Network Access
+  description: Implement network security controls for AKS, including private clusters, authorized IP ranges, Kubernetes network policies, and Instance Metadata Service (IMDS) restriction.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Secure AKS network access
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-secure-kubernetes-network-access.md)]

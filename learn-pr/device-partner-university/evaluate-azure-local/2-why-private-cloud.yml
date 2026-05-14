@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.evaluate-azure-local.why-private-cloud
+title: Why private cloud is back in the conversation
+metadata:
+  title: Why Private Cloud Is Back In The Conversation
+  description: This content is part of the "When to evaluate Azure Local for private cloud scenarios" module.
+  ms.date: 05/12/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-why-private-cloud.md)]

@@ -6,7 +6,7 @@ To check your PowerShell version, run the following command from within a PowerS
 $PSVersionTable.PSVersion
 ```
 
-Before installing the Azure Az PowerShell module, you should set your PowerShell script execution policy to **RemoteSigned**. You can do this by running the following command:
+Before installing the Azure Az PowerShell module, you should set your PowerShell script execution policy to `RemoteSigned`. You can do this by running the following command:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -16,7 +16,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 You can install the Azure Az PowerShell module by using one of the following methods:
 
-- The **Install-Module** cmdlet
+- The `Install-Module` cmdlet
 - Azure PowerShell MSI
 - Az PowerShell Docker container
 
@@ -25,13 +25,13 @@ You can install the Azure Az PowerShell module by using one of the following met
 
 ### The Install-Module cmdlet
 
-Using the **Install-Module** cmdlet is the preferred installation method for the Azure Az PowerShell module. You should install this module for the current user only. This is the recommended installation scope. This method works the same on Windows, macOS, and Linux platforms. To install the Az module, run the following command from a local PowerShell session:
+Using the `Install-Module` cmdlet is the preferred installation method for the Azure Az PowerShell module. You should install this module for the current user only. This scope is the recommended installation scope. This method works the same on Windows, macOS, and Linux platforms. To install the Az module, run the following command from a local PowerShell session:
 
 ```powershell
-Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-Although PowerShell 7.x is the recommended version of PowerShell, and **Install-Module** is the recommended installation option, you can also install the Az module within PowerShell 5.1 environment on Windows. If you're on Windows 10 version 1607 or higher, you already have PowerShell 5.1 installed. You should also make sure that you have .NET Framework 4.7.2 or newer installed and the latest version of PowerShellGet. To install the latest version of the PowerShellGet module within PowerShell 5.1, run the following command:
+Although PowerShell 7.x is the recommended version of PowerShell, and `Install-Module` is the recommended installation option, you can also install the Az module within PowerShell 5.1 environment on Windows. If you're on Windows 10 version 1607, Windows 11, or higher, you already have PowerShell 5.1 installed. You should also make sure that you have .NET Framework 4.7.2 or newer installed and the latest version of PowerShellGet. To install the latest version of the PowerShellGet module within PowerShell 5.1, run the following command:
 
 ```powershell
 Install-Module -Name PowerShellGet -Force
@@ -43,7 +43,7 @@ You can then install the Az module by using the same command you use in PowerShe
 
 In some environments, it isn't possible to connect to the PowerShell Gallery. In such situations, you can install the Az PowerShell module offline, by downloading the Azure PowerShell MSI package. Keep in mind that the MSI installer only works for PowerShell 5.1 on Windows.
 
-To update any PowerShell module, you should use the same method used to install the module. For example, if you originally used **Install-Module**, then you should use **Update-Module** to get the latest version. If you originally used the MSI package, then you should download and install the new MSI package.
+To update any PowerShell module, you should use the same method used to install the module. For example, if you originally used `Install-Module`, then you should use `Update-Module` to get the latest version. If you originally used the MSI package, then you should download and install the new MSI package.
 
 ### Az PowerShell Docker container
 

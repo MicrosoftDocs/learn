@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.segment-isolate-workloads-network-security-controls.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of network segmentation. You're also tested on Network Security Group (NSG) and Application Security Group (ASG) configuration, Azure Virtual Network Manager security admin rules, and Network Watcher verification.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Contoso's security team discovers that a compromised web-tier VM can initiate connections directly to the database tier on port 1433. No NSG is attached to the database subnet. What is the most effective first step to close this lateral movement path?"
+    choices:
+    - content: "Install a host-based firewall on each database server to block inbound connections from web-tier IPs."
+      isCorrect: false
+      explanation: "Host-based firewalls are a valid defense-in-depth layer, but attaching an NSG to the database subnet is the correct Azure network control—it operates at the network layer without requiring changes to individual servers."
+    - content: "Create and attach an NSG to the database subnet with a deny-all inbound rule, then add an allow rule for port 1433 scoped to the web tier only."
+      isCorrect: true
+      explanation: "Attaching an NSG with a default-deny stance and a scoped allow rule enforces least-privilege access at the subnet level, blocking all lateral movement except explicitly permitted traffic."
+    - content: "Move the database VMs to a separate virtual network and use virtual network peering to allow web-tier access."
+      isCorrect: false
+      explanation: "Moving to a separate virtual network is a valid isolation pattern but adds unnecessary complexity when an NSG attached to the database subnet achieves the same segmentation goal with less architectural change."
+  - content: "A team uses IP-based NSG rules to control access between 40 application-tier VMs and 20 database-tier VMs. When new VMs are added, rules frequently break because IP addresses change. What change resolves this maintenance problem while preserving the security boundary?"
+    choices:
+    - content: "Replace the NSG with an Azure Firewall rule collection that references VM names instead of IP addresses."
+      isCorrect: false
+      explanation: "Azure Firewall FQDN rules apply to outbound internet traffic. For east-west VM-to-VM access within a virtual network, ASGs in NSG rules are the correct tool."
+    - content: "Use application security groups to group application-tier and database-tier VMs, then write NSG rules referencing the ASGs instead of individual IPs."
+      isCorrect: true
+      explanation: "ASGs abstract group membership from NSG rules. New VMs join the ASG—the NSG rule doesn't change—which eliminates the IP-change maintenance problem while maintaining the security boundary."
+    - content: "Switch to a flat virtual network with no subnets so VM scaling doesn't affect routing."
+      isCorrect: false
+      explanation: "A flat virtual network without subnets removes the ability to attach NSGs at the subnet level, which eliminates a key segmentation control rather than solving the maintenance problem."
+  - content: "Contoso wants to ensure that no team in any subscription can create an NSG rule that allows RDP (port 3389) inbound from the internet. They want to block this even if they have Owner permissions on their subscription. Which Azure Virtual Network Manager capability enforces this?"
+    choices:
+    - content: "A security admin rule with action Always Deny on destination port 3389 from source Any applied to a network group covering all subscriptions."
+      isCorrect: true
+      explanation: "Security admin rules with Always Deny take precedence over all NSG rules in the network group scope, including rules created by subscription owners. This is the enforcement mechanism AVNM provides that individual NSGs can't."
+    - content: "An Azure Policy with Deny effect that prevents creation of NSG rules with port 3389."
+      isCorrect: false
+      explanation: "Azure Policy can restrict NSG rule creation through Deny effects, but it requires authoring and managing individual policy definitions per rule type. AVNM security admin rules provide a network-native enforcement layer that's simpler and more directly integrated with network control."
+    - content: "A network security group attached to the virtual network gateway subnet with a deny rule for port 3389."
+      isCorrect: false
+      explanation: "An NSG on the gateway subnet controls traffic flowing through the gateway. It doesn't prevent other teams from creating NSG rules that allow RDP on their own subnets within the environment."

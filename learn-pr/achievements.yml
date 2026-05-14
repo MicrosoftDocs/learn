@@ -502,6 +502,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.badge
+  type: badge
+  title: Design a Modern Data Warehouse using Azure Synapse Analytics
+  summary: Learn how Azure Synapse Analytics enables you to build Data Warehouses using modern architecture patterns.
+  iconUrl: /training/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
 - uid: learn.wwl.get-started-openai.badge   
   type: badge   
   title: Get started with Azure OpenAI Service   
@@ -1507,6 +1512,11 @@ achievements:
   title: Explore Kubernetes tooling
   summary: Explore Kubernetes tooling
   iconUrl: /training/achievements/4-explore-kubernetes-tooling.svg
+- uid: learn.wwl.explore-azure-synapse-studio.badge
+  type: badge
+  title: Explore Azure Synapse Studio
+  summary: Take a tour of the core application used to interact with the various components of Azure Synapse Analytics.
+  iconUrl: /training/achievements/explore-azure-synapse-studio.svg
 - uid: learn.wwl.implement-azure-kubernetes-service-aks.badge
   type: badge
   title: Implement Azure Kubernetes Service (AKS)
@@ -2608,6 +2618,11 @@ achievements:
   title: Choose the right Azure services by examining SLAs and service lifecycle
   summary: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning.
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.badge
+  type: badge
+  title: Integrate SQL and Apache Spark pools in Azure Synapse Analytics
+  summary: Learn how to integrate SQL and Apache Spark pools in Azure Synapse Analytics.
+  iconUrl: /training/achievements/integrate-sql-and-apache-spark-pools-in-azure-synapse-analytics.svg
 - uid: learn.azure.protect-against-security-threats-azure.badge
   type: badge
   title: Protect against security threats on Azure
@@ -3318,6 +3333,11 @@ achievements:
   title: Azure RTOS ThreadX next steps
   summary: Learn the next steps for Azure RTOS ThreadX.
   iconUrl: /training/achievements/iot/threadx-next-steps.svg
+- uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.badge
+  type: badge
+  title: Monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics
+  summary: Learn how to monitor and manage data engineering workloads with Apache Spark in Azure Synapse Analytics.
+  iconUrl: /training/achievements/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse.svg
 - uid: learn.iot.azure-rtos-netx-duo.trophy
   type: trophy
   title: Azure RTOS NetX Duo
@@ -3723,6 +3743,11 @@ achievements:
   title: Create a Bot with the Bot Framework Composer
   summary: User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code.
   iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
+- uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.badge
+  type: badge
+  title: Optimize data warehouse query performance in Azure Synapse Analytics
+  summary: Learn the techniques that you can use to optimize query performance within Azure Synapse Analytics.
+  iconUrl: /training/achievements/optimize-data-warehouse-query-performance-in-azure-synapse-analytics.svg
 - uid: learn.wwl.az-400-get-started-devops-transformation-journey.trophy
   type: trophy
   title: 'AZ-400: Get started on a DevOps transformation journey'
@@ -5625,6 +5650,11 @@ achievements:
   title: Deploy the Altair emulator to Azure Sphere
   summary: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
   iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-deploy-emulator.svg
+- uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.badge
+  type: badge
+  title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines
+  summary: In this module, you will learn how to implement Slowly Changing Dimension using Azure Data Factory or Azure Synapse Pipelines.
+  iconUrl: /training/achievements/azure-synapse-analytics-pipelines.svg
 - uid: learn.altair-azure-sphere-computing-fundamentals.trophy
   type: trophy
   title: Learn computing fundamentals with Altair 8800 and Azure Sphere
@@ -6625,6 +6655,11 @@ achievements:
   title: Choose the best networking plugin for AKS
   summary: Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.survey-components-of-azure-synapse-analytics.badge
+  type: badge
+  title: Survey the Components of Azure Synapse Analytics
+  summary: Learn the various components of Azure Synapse Analytics that enables you to build your analytical solutions in one place.
+  iconUrl: /training/achievements/survey-the-components-of-azure-synapse-analytics.svg
 - uid: learn.aks-cluster-architecture.trophy
   type: trophy
   title: Azure Kubernetes Service (AKS) cluster architecture and operations
@@ -7625,6 +7660,11 @@ achievements:
   title: Introduction to Azure Private Link
   summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
   iconUrl: /training/achievements/introduction-to-azure-private-link.svg
+- uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.badge
+  type: badge
+  title: Understand data warehouse developer features of Azure Synapse Analytics
+  summary: Learn about the language capabilities that are available to create data warehouses in Azure Synapse Analytics.
+  iconUrl: /training/achievements/understand-data-warehouse-developer-features-of-azure-synapse-analytics.svg
 - uid: learn.introduction-azure-virtual-wan.badge
   type: badge 
   title: Introduction to Azure Virtual WAN
@@ -8036,3 +8076,18 @@ achievements:
   title: Run Azure Databricks notebooks in Azure Data Factory
   summary: Learn how to run Azure Databricks notebooks in Azure Data Factory to orchestrate data workflows and automate data processing tasks.
   iconUrl: /training/achievements/create-production-workloads-on-azure-databricks-with-azure-data-factory.svg
+- uid: learn.wwl.priva-data-privacy-solutions.trophy
+  type: trophy
+  title: Implement and manage data privacy with Microsoft Priva
+  summary: Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use Privacy Risk Management to identify and mitigate potential risks, and manage subject rights requests to respond accurately and on time. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance and strengthens trust with employees and customers.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.priva-subject-rights-requests.badge
+  type: badge
+  title: Manage Microsoft Priva Subject Rights Requests
+  summary: Microsoft Priva Subject Rights Requests let organizations respond to privacy rights requests in a structured way. Learn how to create and manage requests for data stored in Microsoft 365, review collected information, and complete requests with accurate reports and audit records.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.priva-understand-microsoft-priva.badge
+  type: badge
+  title: Understand Microsoft Priva
+  summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management and Subject Rights Requests, and learn how to configure settings and assign roles to ensure secure and effective use of Priva.
+  iconUrl: /training/achievements/generic-badge.svg

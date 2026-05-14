@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-container-risks-defender-containers.assess-container-image-vulnerabilities
+metadata:
+  title: Assess container image vulnerabilities
+  description: Evaluate container image vulnerability findings from Azure Container Registry (ACR) push-triggered and continuous scanning. Then interpret Common Vulnerability Scoring System (CVSS) scores and exploitability data, and use runtime vulnerability findings to trace vulnerable images to live Azure Kubernetes Service (AKS) workloads.
+  ms.date: 05/10/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Assess container image vulnerabilities
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-assess-container-image-vulnerabilities.md)]

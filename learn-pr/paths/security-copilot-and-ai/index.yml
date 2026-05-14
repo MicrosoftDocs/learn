@@ -40,6 +40,6 @@ modules:
 - learn.security-copilot-describe-core-features
 - learn.security-copilot-embedded-experiences
 - learn.security-copilot-describe-agents
-- learn.security-copilot-exercises
+- learn.wwl.security-copilot-interactive-guides
 trophy:
   uid: earn.wwl.security-copilot-and-ai.trophy

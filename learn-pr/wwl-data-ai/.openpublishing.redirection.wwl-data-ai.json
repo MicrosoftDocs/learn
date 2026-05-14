@@ -165,6 +165,66 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-receipts-form-recognizer/6-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/2-explore-development-tools.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/3-understand-transact-sql-language-capabilities.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/4-work-windowing-functions.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/5-exercise-work-windowing-functions.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/6-work-approximate-execution.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/7-exercise-work-approximate-execution.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/8-work-json-data-sql-pools.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/9-encapsulate-transact-sql-logic.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/10-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/understand-data-warehouse-developer-features-of-azure-synapse-analytics/11-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/overview-features",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-text-with-text-analytics-service/2-get-started-azure.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/analyze-text-with-text-analytics-service/3-get-started-azure"
     },
@@ -1763,6 +1823,81 @@
       "redirect_url": "/training/modules/explore-query-performance-optimization/"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/2-understand-performance-issues-related-to-tables.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/3-exercise-understand-performance-issues-related-to-tables.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/4-understand-table-distribution-design.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/5-use-indexes-to-improve.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/5a-understand-query-plans.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/6-exercise-use-table-distribution-indexes-to-improve-performance.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/7-create-statistics-to-improve.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/8-improve-materialized-views.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/9-use-read-committed-snapshot-for-data-consistency.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/10-optimize-common-queries.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/10a-exercise-see-how-statistics-affects-query-plan.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/11-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/optimize-data-warehouse-query-performance-azure-synapse-analytics/12-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/sql/best-practices-dedicated-sql-pool",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-sql-server-query-plans/6-knowledge-check.md",
       "redirect_url": "/training/modules/explore-query-performance-optimization/"
     },
@@ -1840,6 +1975,46 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/3-describe-supported-analytical-workloads.md",
       "redirect_url": "/training/modules/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/3-azure-synapse-link",
       "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/2-monitor-spark-pools-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/3-base-line-apache-spark-performance-history-server-azure-synapse-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/4-optimize-apache-spark-jobs-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/5-automate-scaling-of-apache-spark-pools-analytics.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/6-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/monitor-manage-data-engineering-workloads-apache-spark-azure-synapse-analytics/7-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/spark/apache-spark-overview",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics/4-explain-htap-scenarios-context-of-synapse-link.md",
@@ -3141,7 +3316,67 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/9-transfer-data-outside-synapse-workspace-using-sql-authentication.md",
-      "redirect_url": "/training/modules/integrate-sql-apache-spark-pools-azure-synapse-analytics"
+      "redirect_url": "/azure/synapse-analytics/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/2-describe-integration-methods-between-sql.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/3-understand-use-cases-for-sql-integration.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/4-authenticate.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/5-transfer-data-between-sql-spark-pool.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/6-authenticate-between-spark-sql-pool.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/7-exercise-integrate-sql.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/8-externalize-use-of-spark-pools-within-workspace.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/10-transfer-data-outside-synapse-workspace-using-pyspark-connector.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/11-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/12-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/intro-to-azure-machine-learning-service/1-introduction.md",
@@ -4889,6 +5124,71 @@
       "redirect_url": "https://learn.microsoft.com/training/paths/create-language-solution-azure-cognitive-services/"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/2-create-workspace.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/3-exercise-create-manage-workspace.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/4-describe-sql.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/5-explain-apache-spark-snalytics.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/6-exercise-create-pools.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/7-orchestrate-data-integration-with-pipelines.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/8-exercise-identifying-pipeline-components.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/9-visualize-your-analytics-with-power-bi.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/10-understand-hybrid-transactional-analytical-processing.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/11-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/survey-components-of-azure-synapse-analytics/12-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/use-mlflow-to-track-experiments-azure-databricks/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/mlflow-azure-databricks/"
     },
@@ -5092,6 +5392,41 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/work-with-data-in-aml/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/make-data-available-azure-machine-learning/"
+    },
+        {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/2-describe.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/3-choose-between-dimension-types.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/4-exercise-design-implement-type-1-dimension.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/5-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines/6-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
     },
     {
       "source_path": "perform-incremental-processing-with-spark-structured-streaming/06-exercise-01-transform-with-spark-structured-streaming.md",
@@ -5308,6 +5643,121 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-data-movement-transformation-azure-data-factory/5a-exercise-integrate-notebook-azure-synapse-pipelines.yml",
       "redirect_url": "/azure/data-factory/quickstart-get-started"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/2-use.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/3-understand-analytical-processes.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/4-explore-data-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/6-explore-develop-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/8-explore-orchestrate-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/10-explore-monitor-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/12-explore-manage-hub.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/14-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-synapse-studio/15-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/index.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/1-introduction.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/2-describe.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/3-define-architecture.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/4-exercise-identify-architecture-components.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/5-design-ingestion-patterns-for-warhouse.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/6-understand-data-storage.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/6a-understand-file-formats-structure-modern-data-warehouse.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/7-prepare-transform-data.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/8-serve-data-for-analysis.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/9-knowledge-check.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/design-modern-data-warehouse-using-azure-synapse-analytics/10-summary.yml",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,12 +1,15 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=23dc491a-a896-40ed-83b6-984f46a7e651]
 
-When you work on data engineering projects, you need a systematic way to define, package, and deploy your Databricks resources across environments. **Databricks Asset Bundles (DABs)** provide an **infrastructure-as-code** approach that lets you describe jobs, pipelines, and other resources in YAML configuration files. By configuring and customizing these bundles, you can **automate deployments** and ensure consistency between development and production workspaces.
+When you work on data engineering projects, you need a systematic way to define, package, and deploy your Databricks resources across environments. **Declarative Automation Bundles** (formerly known as Databricks Asset Bundles) provide an **infrastructure-as-code** approach that lets you describe jobs, pipelines, and other resources in YAML configuration files. By configuring and customizing these bundles, you can **automate deployments** and ensure consistency between development and production workspaces.
 
-:::image type="content" source="../media/5-configure-package-databricks-asset-bundles.png" alt-text="Diagram explaining Databricks asset bundles." border="false" lightbox="../media/5-configure-package-databricks-asset-bundles.png":::
+> [!NOTE]
+> Bundle configuration can also be expressed in Python (Public Preview), which lets you define jobs and resources as Python code instead of YAML. This unit focuses on YAML-based configuration, which is the most common approach. To learn more, see [Bundle configuration in Python](/azure/databricks/dev-tools/bundles/python/).
+
+:::image type="content" source="../media/5-configure-package-databricks-asset-bundles.png" alt-text="Diagram explaining Declarative Automation Bundles." border="false" lightbox="../media/5-configure-package-databricks-asset-bundles.png":::
 
 ## Understand the bundle configuration structure
 
-A Databricks Asset Bundle consists of **YAML configuration files** that define your project's resources and deployment settings. The primary configuration file, `databricks.yml`, must exist at the **root of your bundle project**. This file establishes the bundle's identity and can reference additional configuration files for better organization.
+A Declarative Automation Bundle consists of **YAML configuration files** that define your project's resources and deployment settings. The primary configuration file, `databricks.yml`, must exist at the **root of your bundle project**. This file establishes the bundle's identity and can reference additional configuration files for better organization.
 
 The `databricks.yml` file contains several key sections that control how your bundle behaves:
 

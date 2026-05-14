@@ -3,13 +3,13 @@ uid: learn.wwl.review-azure-powershell-module
 metadata:
   title: Review Azure PowerShell module
   description: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
-  ms.date: 01/23/2026
+  ms.date: 05/12/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
   ms.custom:
   - N/A
-  ai-usage: human-only
+  ai-usage: ai-assisted
   ms.service: azure-powershell
 title: Review Azure PowerShell module
 summary: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
@@ -19,12 +19,12 @@ abstract: |
   -   Describe the Azure Az PowerShell module.
   -   Install the Azure Az PowerShell module.
   -   Migrate Azure PowerShell from AzureRM to Az.
-  -   Describe the Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
+  -   Describe the Microsoft Graph PowerShell module and how to use it for Microsoft Entra ID administration.
 prerequisites: |
   -   Familiarity with Windows networking technologies and implementation.
   -   Familiarity with Windows Server administration, maintenance, and troubleshooting.
   -   Familiarity with Windows PowerShell and its commands to perform specific tasks.
-  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows client device administration.
   -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives.
   -   Familiarity with CIM and WMI technologies.
   -   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.

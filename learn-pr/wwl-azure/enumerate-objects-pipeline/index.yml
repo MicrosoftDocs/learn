@@ -3,7 +3,7 @@ uid: learn.wwl.enumerate-objects-pipeline
 metadata:
   title: Enumerate objects in the pipeline
   description: "This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation."
-  ms.date: 01/23/2026
+  ms.date: 05/12/2026
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
@@ -11,7 +11,7 @@ metadata:
   - N/A
   ms.service: powershell
   ms.subservice: cmdlets
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Enumerate objects in the pipeline
 summary: This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation.
 abstract: |
@@ -26,6 +26,8 @@ abstract: |
   -   Explain how to enumerate objects by using advanced syntax.
 
   -   Perform advanced enumeration.
+
+  -   Use ForEach-Object -Parallel to process pipeline objects concurrently in PowerShell 7.
 prerequisites: |
   -   Familiarity with Windows networking technologies and implementation.
 
@@ -55,6 +57,7 @@ units:
 - learn.wwl.enumerate-objects-pipeline.learn-about-enumerations-pipeline
 - learn.wwl.enumerate-objects-pipeline.review-basic-syntax-enumerate-objects
 - learn.wwl.enumerate-objects-pipeline.review-advanced-syntax-enumerate-objects
+- learn.wwl.enumerate-objects-pipeline.enumerate-objects-parallel
 - learn.wwl.enumerate-objects-pipeline.knowledge-check
 - learn.wwl.enumerate-objects-pipeline.summary
 badge:

@@ -25,7 +25,7 @@ Using Python, add expectation decorators to your streaming table definition:
 ```python
 from pyspark import pipelines as dp
 
-@dp.table()
+@dp.table
 @dp.expect_or_drop("valid_email", "email IS NOT NULL")
 @dp.expect_or_drop("valid_customer_id", "customer_id IS NOT NULL")
 def customers():
@@ -71,7 +71,7 @@ Pipeline expectations can validate cardinality by checking for conditions that i
 from pyspark.sql.window import Window
 from pyspark.sql.functions import count
 
-@dp.table()
+@dp.table
 @dp.expect("unique_ssn_per_person", "ssn_count = 1")
 def employees():
     df = spark.table("raw.employees")
@@ -114,7 +114,7 @@ Range validation confirms that numeric, date, and other values fall within accep
 Define range expectations using comparison operators or the `BETWEEN` clause:
 
 ```python
-@dp.table()
+@dp.table
 @dp.expect_or_fail("valid_age", "age BETWEEN 0 AND 150")
 @dp.expect_or_fail("valid_salary", "salary >= 0")
 @dp.expect_or_fail("valid_hire_date", "hire_date <= current_date()")

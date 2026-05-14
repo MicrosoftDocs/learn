@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 5 # dummy number at present
@@ -35,17 +35,17 @@ quiz:
     - content: "The class must exist in CIFAR-10"
       isCorrect: true
       explanation: "The class must exist in CIFAR-10 if it's to be used for classification"
-  - content: "Which of the following is possible due to the use of IoT Edge devices?"
+  - content: "Which statement accurately describes how the image classification model runs on an Azure Sphere real-time application (RTApp)?"
     choices:
-    - content: "You can deploy a machine learning model on an IoT Edge device even when the device is offline"
+    - content: "The RTApp performs inference locally on the device's Cortex-M4 core without requiring internet connectivity."
       isCorrect: true
-      explanation: "A machine learning model can be deployed on an IoT Edge device and can be operational even when the device is offline"
-    - content: "You can use an IoT Edge device to capture images"
+      explanation: "Azure Sphere RTApps run on the Cortex-M4 cores and the inference path used in this module is local to the device, so it doesn't depend on the internet or Azure Sphere OS application libraries."
+    - content: "The RTApp sends each image to Azure for classification and waits for the result."
       isCorrect: false
-      explanation: "The ability to capture images isn't a characteristic of IoT Edge devices"
-    - content: "You can use an IoT Edge device to perform real-time processing"
+      explanation: "The RTApp performs inference locally on the device; it doesn't offload classification to Azure."
+    - content: "The RTApp runs on the Cortex-A7 Linux core alongside the high-level application."
       isCorrect: false
-      explanation: "Real-time processing isn't a characteristic of IoT Edge devices"
+      explanation: "Real-time applications run on the Cortex-M4 cores, not on the Cortex-A7 Linux core."
     
     
-
+

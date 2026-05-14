@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enforce-governance-azure-policy-resource-locks.create-deploy-custom-policy-definitions
+metadata:
+  title: Create and deploy custom policy definitions
+  description: Create custom Azure Policy definitions with remediation tasks, which enforce controls that built-in definitions don't cover.
+  ms.date: 04/23/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Create and deploy custom policy definitions
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-deploy-custom-policy-definitions.md)]

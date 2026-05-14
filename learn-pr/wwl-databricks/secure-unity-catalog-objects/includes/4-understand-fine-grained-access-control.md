@@ -53,15 +53,18 @@ Characteristics to note:
 - **Read-only exposure**: Views can't themselves be updated; any data modification still requires access to the base tables.
 - **Object proliferation risk**: Each audience-specific variant typically requires a new view.
 
-## Why row and column security is preferred
+## Why row and column security is preferred over dynamic views
 
-You should default to Row and Column Security because:
+When choosing between these two manual approaches, you should default to Row and Column Security because:
 
 - **Reduced object sprawl**: One table plus a small set of functions replaces a potentially expanding family of views.
 - **Easier maintenance**: Policy changes occur where the data resides, lowering chances of unsynchronized logic across parallel views.
 - **Performance advantages**: Enforcement happens at the source, avoiding extra resolution layers and enabling better optimization.
 - **Clearer governance**: Auditing and lineage focus on the primary table rather than a web of derivative objects.
 - **Flexible combinations**: You avoid creating a new physical or logical artifact for every unique mix of masking and filtering rules.
+
+> [!NOTE]
+> Both Row and Column Security and Dynamic Views are *manual*, per-table approaches. Databricks also provides **Attribute-Based Access Control (ABAC)**, which lets you define centralized policies that apply automatically to all tables matching a governed tag across an entire schema or catalog — without any per-table configuration. ABAC is now the recommended approach for most use cases. It is covered in detail in the *Govern Unity Catalog objects* module.
 
 ## When dynamic views still make sense
 
@@ -74,7 +77,7 @@ You should consider dynamic views instead (or in addition) when:
 
 ## Comparing row and column security with dynamic views
 
-Here's your comparison table with **Row and Column Security** vs **Dynamic Views** side by side, so you can see the trade-offs and decide which approach best fits your needs.
+Here's a comparison of the two manual approaches side by side, so you can see the trade-offs and decide which best fits your needs. For a three-way comparison that includes ABAC, see the *Govern Unity Catalog objects* module.
 
 | **Dimension**            | **Row and Column Security**                                                               | **Dynamic Views**                                                                   |
 | ------------------------ | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |

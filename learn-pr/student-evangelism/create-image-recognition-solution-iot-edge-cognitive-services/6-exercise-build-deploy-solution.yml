@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.exercise-build-deploy-solution
-title: Exercise - Deploy and build the solution
+title: Exercise - Build and deploy the solution
 metadata:
-  title: Exercise - Deploy and build the solution
-  description: In this section, we help the learner to how to deploy and build a solution.
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  title: Exercise - Build and deploy the solution
+  description: "Build and deploy the Azure IoT Edge solution by creating a Speech-capable Foundry resource, configuring the sample text-to-speech key, using a local lab registry, and applying the generated deployment manifest."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen, linux-related-content
-durationInMinutes: 20 # dummy number at present
+  ms.custom:
+    - linux-related-content
+    - team=cloud_advocates
+durationInMinutes: 45
 content: |
   [!include[](includes/6-exercise-build-deploy-solution.md)]
-
+

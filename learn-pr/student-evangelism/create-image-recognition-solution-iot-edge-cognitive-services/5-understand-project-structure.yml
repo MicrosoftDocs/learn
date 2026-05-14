@@ -3,13 +3,13 @@ uid: learn.oxford.create-image-recognition-with-azure-iot-edge.understand-projec
 title: Understand the project structure
 metadata:
   title: Understand the project structure
-  description: In this section, we help the learner to how to create a classification model.
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  description: "Examine the sample project structure, including IoT Edge modules, module build metadata, deployment templates, generated deployment manifests, and versioning helper files."
+  ms.date: 05/01/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
-durationInMinutes: 4 # dummy number at present
+  ms.custom: team=cloud_advocates
+durationInMinutes: 4
 content: |
   [!include[](includes/5-understand-project-structure.md)]
-
+

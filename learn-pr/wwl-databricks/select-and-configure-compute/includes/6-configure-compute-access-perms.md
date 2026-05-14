@@ -58,6 +58,8 @@ When designing your access control strategy, consider which users genuinely need
 
 ## Dedicated group access mode
 
+When creating compute resources in the UI, the access mode defaults to **Auto**. Auto automatically selects **Standard** access mode unless you choose a Databricks Runtime for Machine Learning or a Runtime below version 14.3, in which case **Dedicated** is selected automatically. This means ML workloads often use dedicated mode without any explicit configuration on your part. When you need to assign compute to a specific group, override Auto by explicitly selecting **Dedicated** in the **Advanced** section of the compute creation form.
+
 **Standard access mode** allows multiple users to share compute resources securely, with Lakeguard providing isolation between user workloads. **Dedicated access mode** takes a different approach by assigning the entire compute resource to a single user or group, with user permissions automatically scoping down to match the assigned entity's permissions.
 
 This **permission scoping** enables secure group collaboration on workloads that standard access mode doesn't support, including **Databricks Runtime for ML**, **RDD APIs**, and **R language** execution. When a user connects to a group cluster, their individual permissions temporarily reduce to only what the group possesses, preventing privilege escalation while maintaining necessary functionality.
