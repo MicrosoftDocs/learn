@@ -4,7 +4,7 @@ You'll use a USB-to-serial adapter to connect the MT3620 real-time core's dedica
 
 Before you open or build the RTApp project, verify that your development environment includes the Azure Sphere SDK, CMake, Ninja, the Azure Sphere and CMake Tools extensions for Visual Studio Code, and the GNU Arm Embedded Toolchain (`arm-none-eabi`) or an equivalent toolchain installed through vcpkg artifacts.
 
-Install the GNU Arm Embedded Toolchain by following the [Azure Sphere RTApp quickstart](/azure-sphere/install/qs-real-time-application?view=azure-sphere-integrated#install-the-gnu-arm-embedded-toolchain). The quickstart links to current Arm GNU Toolchain downloads and describes the vcpkg artifacts option. By default, Visual Studio Code searches for the installed toolchain. If you encounter build problems related to toolchain discovery, set **Azure Sphere: Arm Gnu Path** to the actual GNU Arm toolchain installation directory. Don't set it to an Azure Sphere SDK sysroot directory.
+Install the GNU Arm Embedded Toolchain by following the [Azure Sphere RTApp quickstart](/azure-sphere/install/qs-real-time-application?view=azure-sphere-integrated#install-the-gnu-arm-embedded-toolchain&preserve-view=true). The quickstart links to current Arm GNU Toolchain downloads and describes the vcpkg artifacts option. By default, Visual Studio Code searches for the installed toolchain. If you encounter build problems related to toolchain discovery, set **Azure Sphere: Arm Gnu Path** to the actual GNU Arm toolchain installation directory. Don't set it to an Azure Sphere SDK sysroot directory.
 
 Install a serial terminal emulator:
 
@@ -18,7 +18,7 @@ Install a serial terminal emulator:
 
 ## Connect the USB-to-serial adapter
 
-To set up the hardware to display output from an RTApp, follow these steps. You'll need to refer to the documentation from your hardware manufacturer to determine the pin locations. If you're using hardware that follows the MT3620 reference board design (RDB), like the MT3620 Dev Kit from Seeed Studio, then looking at [the RDB interface headers](/azure-sphere/hardware/mt3620-user-guide?view=azure-sphere-integrated#interface-headers) may help you to determine the pin locations.
+To set up the hardware to display output from an RTApp, follow these steps. You'll need to refer to the documentation from your hardware manufacturer to determine the pin locations. If you're using hardware that follows the MT3620 reference board design (RDB), like the MT3620 Dev Kit from Seeed Studio, then looking at [the RDB interface headers](/azure-sphere/hardware/mt3620-user-guide?view=azure-sphere-integrated#interface-headers&preserve-view=true) may help you to determine the pin locations.
 
 > [!IMPORTANT]
 > Use a USB-to-serial adapter set for 3.3 V logic. For the dedicated RT-core logging UART, connect only GND and adapter RX to board TX. Do not connect adapter VCC or adapter TX.

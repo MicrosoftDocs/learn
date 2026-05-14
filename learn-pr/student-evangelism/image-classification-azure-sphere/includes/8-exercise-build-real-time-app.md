@@ -1,4 +1,4 @@
-In this exercise, you'll modify and update the ImageClassification_RTApp_MT3620_BareMetal project that you created from the current HelloWorld RTApp sample. You'll copy the pre-trained, pre-quantized CIFAR-10 example source, headers, and required legacy CMSIS-NN sources into your project, then update your current CMake file without replacing the sample's `CMakePresets.json` or Azure Sphere image-package step.
+In this exercise, you'll modify and update the ImageClassification_RTApp_MT3620_BareMetal project that you created from the current HelloWorld RTApp sample. You copy the pretrained, prequantized CIFAR-10 example source, headers, and required legacy CMSIS-NN sources into your project, then update your current CMake file without replacing the sample's `CMakePresets.json` or Azure Sphere image-package step.
 
 1. Go to the directory where you want to clone the repository.
 
@@ -20,11 +20,11 @@ In this exercise, you'll modify and update the ImageClassification_RTApp_MT3620_
 
 6. Copy `CMSISNN-Cifar10\main.c` into your `ImageClassification_RTApp_MT3620_BareMetal` project folder, replacing the HelloWorld `main.c`.
 
-7. Go back to Visual Studio Code and refresh the explorer. You'll see that `CMSIS` and `include` folders are added.
+7. Go back to Visual Studio Code and refresh the explorer. You see that `CMSIS` and `include` folders are added.
 
    ![The illustration shows how to refresh the explorer.](../media/refresh-explorer.png)
 
-8. Open the `main.c` file. You'll see the parameters, weights, and input headers included in `main.c`. You'll add the source and include paths in the next step so CMake can compile these files.
+8. Open the `main.c` file. You see the parameters, weights, and input headers included in `main.c`. You'll add the source and include paths in the next step so CMake can compile these files.
 
    ![The illustration shows weights, parameters and input files.](../media/include-files.png)
 
@@ -71,6 +71,6 @@ In this exercise, you'll modify and update the ImageClassification_RTApp_MT3620_
 
 11. Because you changed CMake configuration, run **CMake: Delete Cache and Reconfigure** from the Visual Studio Code Command Palette. Make sure the `ARM-Debug` configure preset is selected. If you're building from the CLI, delete or recreate the build directory, such as `out\ARM-Debug`, and then configure again with the `ARM-Debug` preset.
 
-12. Your updated CMakeLists.txt file will look like:
+12. Your updated CMakeLists.txt file looks like:
 
     ![The illustration shows CMakeList after adding libraries and directories.](../media/modified-cmake.png)

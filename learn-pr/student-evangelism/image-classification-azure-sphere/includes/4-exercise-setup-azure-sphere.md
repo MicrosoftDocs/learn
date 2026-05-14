@@ -4,7 +4,7 @@ Use Azure Sphere Integrated tooling from a standard PowerShell, Windows Command 
 
 1. Confirm that your development computer is running Windows 11, Windows 10 Anniversary Update or later, Ubuntu 24.04 LTS x64, or Ubuntu 22.04 LTS x64. Make sure you have an unused USB port, or USB pass-through if you're using a virtual machine.
 
-2. Install [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) if it isn't already installed. Open a standard shell and check the Azure CLI version:
+2. Install [Azure CLI](/cli/azure/install-azure-cli) if it isn't already installed. Open a standard shell and check the Azure CLI version:
 
    ```azurecli
    az version
@@ -106,7 +106,7 @@ An Azure Sphere catalog is an Azure resource in a resource group. Access is cont
 
 Configure networking so the device can receive Azure Sphere OS updates and use Azure Sphere cloud management. Wi-Fi doesn't allow the RTApp in this module to use the internet or Azure IoT Hub directly; that would require a high-level partner application and separate IoT Hub/DPS setup.
 
-Azure Sphere supports 802.11b/g/n Wi-Fi networks that use WPA2-PSK, EAP-TLS, or open (no password) authentication. WEP isn't supported. SSIDs are case-sensitive. The commands in this section cover WPA2-PSK and open networks; for enterprise EAP-TLS networks, follow the [EAP-TLS setup docs](https://learn.microsoft.com/azure-sphere/network/eap-tls-overview?view=azure-sphere-integrated).
+Azure Sphere supports 802.11b/g/n Wi-Fi networks that use WPA2-PSK, EAP-TLS, or open (no password) authentication. WEP isn't supported. SSIDs are case-sensitive. The commands in this section cover WPA2-PSK and open networks; for enterprise EAP-TLS networks, follow the [EAP-TLS setup docs](/azure-sphere/network/eap-tls-overview?view=azure-sphere-integrated&preserve-view=true).
 
 1. If your network requires MAC address registration, get the device MAC address and register it with your network administrator:
 
