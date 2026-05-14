@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.github.multi-agent-systems-orchestration
+title: Multi-Agent Systems and Orchestration
+metadata:
+  title: Multi-Agent Systems and Orchestration
+  description: In this module, you will learn how to design multi-agent systems that coordinate through GitHub-native artifacts, remain observable through logs and workflow outputs, and recover safely through retry, rollback, and human escalation.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: Learn how to design reliable multi-agent systems in GitHub using observable workflows, coordinated artifacts, and safe recovery mechanisms.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define agent responsibilities and scope boundaries within the SDLC 
+  - Coordinate multi-agent workflows using GitHub Actions events and orchestration patterns 
+  - Isolate agent execution using branches, workflows, permissions, and concurrency controls 
+  - Detect and resolve conflicts using GitHub-native validation and review mechanisms 
+  - Ensure observability, attribution, and traceability of agent actions 
+  - Diagnose failures and implement recovery strategies for reliable multi-agent systems
+
+prerequisites: |
+  - A GitHub account 
+  - Basic understanding of repositories, branches, and pull requests 
+  - Familiarity with GitHub Actions 
+  - General understanding of agent workflows in GitHub, IDE, or CLI environments 
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.multi-agent-systems-orchestration.introduction
+  - learn.github.multi-agent-systems-orchestration.multi-agent-responsibilities
+  - learn.github.multi-agent-systems-orchestration.agent-orchestration-github-workflows
+  - learn.github.multi-agent-systems-orchestration.execution-isolation-permissions-concurrency
+  - learn.github.multi-agent-systems-orchestration.conflict-resolution-github-arbitration
+  - learn.github.multi-agent-systems-orchestration.system-observability-evidence-handoffs
+  - learn.github.multi-agent-systems-orchestration.scale-failure-recovery
+  - learn.github.multi-agent-systems-orchestration.knowledge-check
+  - learn.github.multi-agent-systems-orchestration.summary
+badge:
+  uid: learn.github.multi-agent-systems-orchestration.badge
