@@ -672,6 +672,11 @@ achievements:
   title: Synthesize Text Input to Speech
   summary: Synthesize Text Input to Speech
   iconUrl: /training/achievements/synthesize-text-input-speech.svg
+- uid: learn.wwl.recognize-synthesize-speech.badge
+  type: badge
+  title: (AI-900) Get started with speech in Microsoft Foundry (deprecated)
+  summary: Recognize and Synthesize Speech
+  iconUrl: /training/achievements/convert-speech-to-text.svg
 - uid: learn.csc.space-jam-cloud-skills-challenge.badge # Cloud Skills Challenge achievement (manually awarded via paspier)
   type: badge
   title: Space Jam - A New Legacy Cloud Skills Challenge

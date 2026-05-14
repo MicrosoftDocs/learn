@@ -7,13 +7,14 @@ Microsoft Defender XDR (Extended Detection and Response) is a unified pre- and p
 
 The Microsoft Defender XDR suite includes the following integrated solutions:
 
-- **Microsoft Defender for Endpoint** - A unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint helps enterprise networks protect a wide range of devices, including laptops, phones, tablets, PCs, access points, routers, and firewalls.
+- **Microsoft Defender for Endpoint** - A unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response for devices across the organization.
 - **Microsoft Defender Vulnerability Management** - Delivers continuous asset visibility, intelligent risk-based assessments, and built-in remediation tools to help your security and IT teams prioritize and address critical vulnerabilities and misconfigurations across your organization.
-- **Microsoft Defender for Office 365** - Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including SharePoint, Teams, and Outlook.
-- **Microsoft Defender for Identity** - Uses on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
-- **Microsoft Defender for Cloud Apps** - Delivers full protection for software as a service (SaaS) applications. Defender for Cloud Apps is a cloud access security broker (CASB) that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
-- **Microsoft Defender Threat Intelligence (Defender TI)** - Aggregates and enriches critical threat information to help security analysts with triage, incident response, threat hunting, and vulnerability management workflows.
-- **Microsoft Security Exposure Management** - Provides a unified view of security posture across the organization by aggregating signals from the Defender XDR suite, Microsoft Defender for Cloud, Microsoft Entra ID, and non-Microsoft tools. It maps the entire attack surface, identifies critical assets, generates attack paths that show how an attacker could chain weaknesses to reach high-value targets, and tracks exposure risk through security initiatives and secure scores. Security Exposure Management is covered in detail in a later unit of this module.
+- **Microsoft Defender for Office 365** - Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
+- **Microsoft Defender for Identity** - A cloud-based security solution that monitors identity signals from on-premises Active Directory and Microsoft Entra ID to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions across on-premises, cloud, and hybrid environments.
+- **Microsoft Entra ID Protection** - Works alongside Defender for Identity to protect cloud identities. It uses the learnings Microsoft has acquired across organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users from identity-based risks.
+- **Microsoft Defender for Cloud Apps** - A comprehensive cross-SaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps. Defender for Cloud Apps is a cloud access security broker (CASB) that helps discover and control shadow IT and protect sensitive information across SaaS and PaaS applications.
+- **Microsoft Defender Threat Intelligence (Defender TI)** - A platform that aggregates and enriches critical threat information, helping security analysts with triage, incident response, threat hunting, and vulnerability management workflows. Defender TI capabilities are converging into Microsoft Defender XDR and Microsoft Sentinel for a unified experience.
+- **Microsoft Security Exposure Management** - A security solution that provides a unified view of security posture across company assets and workloads spanning endpoints, cloud resources, and external attack surfaces. It enriches asset information with security context to help proactively manage attack surfaces, protect critical assets, and explore and mitigate exposure risk across your entire digital estate. Security Exposure Management is covered in detail in a later unit of this module.
 
 ## Cross-product capabilities
 
@@ -25,23 +26,23 @@ Across all products in the suite, related alerts, suspicious events, and impacte
 
 ### Automatic response to threats
 
-When one product in the suite detects a threat, it immediately shares that information with all other products. For example, if Microsoft Defender for Endpoint detects a malicious file on a device, it instructs Microsoft Defender for Office 365 to scan and remove that file from all email messages across the organization. The file is blocked by the entire suite without manual intervention, stopping the threat from spreading through other channels.
+When one product in the suite detects a threat, it immediately shares that information with all other products. For example, if Microsoft Defender for Endpoint detects a malicious file on a device, it instructs Microsoft Defender for Office 365 to scan and remove that file from all email messages across the organization. The file is blocked on sight by the entire Microsoft 365 security suite without manual intervention, stopping the threat from spreading through other channels.
 
-### Self-healing for compromised assets
+### Self-healing for compromised devices, user identities, and mailboxes
 
-Microsoft Defender XDR uses AI-powered automatic actions and playbooks to remediate impacted assets back to a secure state. When an attack is contained, Defender XDR works to automatically restore affected mailboxes, endpoints, and user identities wherever possible, reducing the manual recovery effort for security teams.
+Microsoft Defender XDR uses AI-powered automatic actions and playbooks to remediate impacted assets back to a secure state. When an attack is contained, Defender XDR leverages automatic remediation capabilities of the suite products to ensure all impacted assets related to an incident are automatically remediated where possible, reducing the manual recovery effort for security teams.
 
 ### Automatic attack disruption
 
-Microsoft Defender XDR uses high-fidelity signals produced across the suite to detect attacks in progress and contain them before they can spread. Automatic attack disruption can isolate compromised devices, disable compromised accounts, or block malicious lateral movement in real time—without waiting for human action. This capability limits damage and gives security teams more time to investigate and respond.
+Microsoft Defender XDR uses high-fidelity signals produced across the suite to detect attacks in progress and contain them before they can spread. Automatic attack disruption correlates signals from multiple sources into a single high-confidence incident, identifies assets controlled by the attacker, and automatically takes response actions—such as isolating compromised devices, disabling compromised accounts, or containing malicious IP addresses—in real time without waiting for human action. This capability limits damage and gives security teams more time to investigate and respond.
 
 ### Cross-product threat hunting
 
-Security teams can build custom queries across the raw data collected by all products in the suite. Microsoft Defender XDR provides query-based access to 30 days of historical raw signals and alert data, enabling analysts to proactively hunt for signs of compromise across their entire environment.
+Security teams can build custom queries across the raw data collected by all products in the suite. Microsoft Defender XDR provides query-based access to 30 days of historic raw signals and alert data across endpoint and Defender for Office 365 data, enabling analysts to proactively hunt for signs of compromise across their entire environment.
 
 ## The Microsoft Defender portal
 
-The information and insights from the Microsoft Defender XDR suite are centralized in the Microsoft Defender portal, which delivers a unified security operations platform. The portal combines data from the Defender XDR suite with information from Microsoft Sentinel and Microsoft Defender for Cloud, giving security admins a single place to monitor, investigate, and respond to threats across identities, endpoints, email, applications, and cloud infrastructure.
+The information and insights from the Microsoft Defender XDR suite are centralized in the Microsoft Defender portal, which delivers a unified security operations platform. The portal combines data from the Defender XDR suite with information from Microsoft Sentinel and Microsoft Defender for Cloud, giving security teams a single place to monitor, investigate, and respond to threats across identities, endpoints, email, applications, and cloud infrastructure.
 
 ## Microsoft Security Copilot integration
 

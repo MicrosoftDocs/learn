@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-security-controls-function-logic-apps.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of authentication, authorization, network isolation, and secrets management for Azure Function apps and Logic apps.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer configures Azure App Service Authentication on a Function app and sets the action for unauthenticated requests to **Require authentication**. What happens when an external caller invokes the HTTP trigger without a valid token?"
+    choices:
+    - content: "The request is passed to the function code, which can then check for a token and return a 401 response."
+      isCorrect: false
+      explanation: "Incorrect. When **Require authentication** is selected, the EasyAuth middleware intercepts unauthenticated requests before the function code runs. The function code is never executed for requests that lack a valid token."
+    - content: "The request is rejected with a 401 response or redirected to the identity provider sign-in page before the function code executes."
+      isCorrect: true
+      explanation: "Correct. The EasyAuth middleware runs as a platform-level component before your function code. When **Require authentication** is selected, any request without a valid identity provider token is rejected at the middleware layer—the function code is never invoked."
+    - content: "The request is logged for review, and the function returns a 200 response with an empty body."
+      isCorrect: false
+      explanation: "Incorrect. **Require authentication** blocks unauthenticated requests entirely. It doesn't allow the function to run and return a response—it rejects the request before reaching the function code."
+    - content: "The request proceeds, but the function receives empty identity headers instead of the caller's claims."
+      isCorrect: false
+      explanation: "Incorrect. This describes the behavior of the **Allow unauthenticated requests** setting, not **Require authentication**. With **Require authentication** selected, unauthenticated requests never reach the function."
+  - content: "Contoso Retail has 12 HTTP-triggered functions in a single Function app. A partner system needs access to three specific functions but must not be able to call the other nine. Which function authorization level achieves this without any code changes?"
+    choices:
+    - content: "Assign the partner system a host key for the Function app."
+      isCorrect: false
+      explanation: "Incorrect. A host key grants access to all functions in the Function app. Assigning the partner system a host key would allow it to invoke any of the 12 functions—not just the three it requires."
+    - content: "Set all 12 functions to the Anonymous authorization level and implement key checks in the function code."
+      isCorrect: false
+      explanation: "Incorrect. The anonymous authorization level removes the key requirement entirely, making functions accessible without any key. Implementing access control in function code is possible, but the question asks for an approach without code changes."
+    - content: "Create function-level keys for each of the three target functions and provide those keys to the partner system."
+      isCorrect: true
+      explanation: "Correct. A function key is scoped to a single function—it can invoke only the function it was created for. Providing the partner system with function-level keys for the three target functions gives it access to exactly those functions without access to any others."
+    - content: "Create a new host key scoped to the three target functions."
+      isCorrect: false
+      explanation: "Incorrect. Host keys are shared across all functions in the app and can't be scoped to a subset of functions. Only function-level keys provide per-function access control."
+  - content: "A security team wants to eliminate the public endpoint for a Function app so that it's only accessible through a private IP address within their virtual network. Which hosting plan is required to configure a private endpoint for inbound access?"
+    choices:
+    - content: "Standard Consumption plan"
+      isCorrect: false
+      explanation: "Incorrect. The standard Consumption plan doesn't support private endpoints for Function apps. To configure a private endpoint, the Function app must run on the Flex Consumption, Elastic Premium, or Dedicated (App Service) plan."
+    - content: "Elastic Premium or Dedicated (App Service) plan"
+      isCorrect: true
+      explanation: "Correct. Private endpoints for Function apps require the Flex Consumption, Elastic Premium, or Dedicated (App Service) plan. The standard Consumption plan doesn't support private endpoint configuration."
+    - content: "Any Function app hosting plan supports private endpoints."
+      isCorrect: false
+      explanation: "Incorrect. Private endpoints aren't available on the standard Consumption plan. The Function app must be hosted on the Flex Consumption, Elastic Premium, or Dedicated plan to configure a private endpoint."
+    - content: "Functions must be deployed to an App Service Environment (ASE) to use private endpoints."
+      isCorrect: false
+      explanation: "Incorrect. An App Service Environment provides the highest level of network isolation, but it isn't required for private endpoints. Elastic Premium and Dedicated plans also support private endpoints without requiring an ASE."
+  - content: "An organization needs to build a Logic app workflow that calls a SQL Server database with no public access, and the workflow trigger shouldn't be reachable from the public internet. Which Logic Apps hosting plan supports both requirements?"
+    choices:
+    - content: "Consumption plan, because it provides the lowest cost for infrequently triggered workflows."
+      isCorrect: false
+      explanation: "Incorrect. The Consumption plan doesn't support virtual network integration or private endpoints. It can't connect to a private SQL Server or expose the trigger through a private endpoint."
+    - content: "Standard plan, because it supports virtual network integration for outbound connector calls and private endpoints for inbound trigger access."
+      isCorrect: true
+      explanation: "Correct. The Standard plan supports both virtual network integration—allowing the workflow to call resources not exposed to the public internet—and private endpoints, which eliminate the public trigger URL. The Consumption plan supports neither capability."
+    - content: "Either plan, because Logic Apps routing is controlled through Azure Front Door regardless of the hosting plan."
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door is an edge delivery and load-balancing service; it doesn't provide virtual network integration or private endpoint capabilities for Logic apps. These capabilities are plan-dependent."
+    - content: "Consumption plan, if an on-premises data gateway is installed on the SQL Server subnet."
+      isCorrect: false
+      explanation: "Incorrect. While an on-premises data gateway can help Consumption plan workflows connect to private resources, it doesn't provide private endpoint support for the trigger endpoint. The requirement that the trigger isn't reachable from the public internet still requires the Standard plan."
+  - content: "A Function app stores a database connection string as an application setting. The security team wants to remove the plain-text credential and retrieve it from Azure Key Vault at runtime. What is the correct syntax for a Key Vault reference in a Function app application setting?"
+    choices:
+    - content: "`@Microsoft.KeyVault(SecretUri=https://<vault-name>.vault.azure.net/secrets/<secret-name>/)`"
+      isCorrect: true
+      explanation: "Correct. The Key Vault reference syntax uses `@Microsoft.KeyVault(SecretUri=...)` as the application setting value. The Function app resolves this reference at runtime using its managed identity, replacing the placeholder with the actual secret value from Key Vault."
+    - content: "`@AzureKeyVault(<vault-name>/<secret-name>)`"
+      isCorrect: false
+      explanation: "Incorrect. This isn't a valid Key Vault reference syntax. The correct syntax is `@Microsoft.KeyVault(SecretUri=https://<vault-name>.vault.azure.net/secrets/<secret-name>/)`."
+    - content: "`{{KeyVaultSecret:<secret-name>}}`"
+      isCorrect: false
+      explanation: "Incorrect. This format isn't recognized by Azure App Service or Azure Functions. The correct syntax for a Key Vault reference is `@Microsoft.KeyVault(SecretUri=...)`."
+    - content: "`keyvault://<vault-name>/secrets/<secret-name>`"
+      isCorrect: false
+      explanation: "Incorrect. This URI format isn't a valid Key Vault reference syntax for application settings. The correct format is `@Microsoft.KeyVault(SecretUri=https://<vault-name>.vault.azure.net/secrets/<secret-name>/)`."
