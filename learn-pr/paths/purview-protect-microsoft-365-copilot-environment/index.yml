@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-protect-microsoft-365-copilot-environment
+metadata:
+  title: 'Protect information in a Microsoft 365 Copilot environment using Microsoft Purview'
+  description: 'Microsoft 365 Copilot accesses organizational data to generate responses, which introduces new risks for sensitive information exposure. Learn how to use Microsoft Purview audit, sensitivity labels, and data loss prevention to investigate, classify, and protect data in a Copilot-enabled environment.'
+  ms.date: 05/14/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Protect information in a Microsoft 365 Copilot environment using Microsoft Purview'
+prerequisites: |
+  - Foundational knowledge of Microsoft 365 security and compliance
+  - Basic familiarity with Microsoft Purview, including sensitivity labels, data loss prevention (DLP), and audit
+  - Understanding of how Microsoft 365 Copilot accesses and generates content using organizational data
+summary: |
+  Microsoft 365 Copilot uses organizational data to generate content, which means existing sensitivity labels, DLP policies, and audit capabilities play a critical role in preventing data exposure. In this learning path, you learn how to:
+  - Search and investigate Copilot prompts and responses using Microsoft Purview Audit.
+  - Apply sensitivity labels to classify and protect content that Copilot can access or generate.
+  - Implement data loss prevention policies to detect and restrict risky sharing of sensitive information in AI-powered workflows.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- ip-admin
+products:
+- microsoft-purview
+- m365
+- microsoft-365-copilot
+subjects:
+- security
+- compliance
+modules:
+- learn.wwl.purview-audit-search-investigate
+- learn-m365.m365-compliance-information-protect-information
+- learn.wwl.purview-data-loss-prevention-create-manage-policies
+
+trophy:
+  uid: learn.wwl.purview-protect-microsoft-365-copilot-environment.trophy
