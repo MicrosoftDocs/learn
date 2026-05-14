@@ -50,7 +50,7 @@ A practical observability goal is that every meaningful step leaves a durable tr
 
 Adopt conventions such as:
 
-- PR titles: [agent: dependency] Update <package> to <version>
+- PR titles: `[agent: dependency] Update <package> to <version>`
 
 - labels: agent: dependency, agent: security, agent: refactor
 

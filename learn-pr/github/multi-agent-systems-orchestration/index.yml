@@ -43,7 +43,7 @@ units:
   - learn.github.multi-agent-systems-orchestration.agent-orchestration-github-workflows
   - learn.github.multi-agent-systems-orchestration.execution-isolation-permissions-concurrency
   - learn.github.multi-agent-systems-orchestration.conflict-resolution-github-arbitration
-  - learn.github.multi-agent-systems-orchestration.system-observability-evidence-handoffs
+  - learn.github.multi-agent-systems-orchestration.system-observability-evidence-workflows
   - learn.github.multi-agent-systems-orchestration.scale-failure-recovery
   - learn.github.multi-agent-systems-orchestration.knowledge-check
   - learn.github.multi-agent-systems-orchestration.summary
