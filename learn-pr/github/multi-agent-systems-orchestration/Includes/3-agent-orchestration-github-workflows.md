@@ -74,7 +74,7 @@ The core design requirement for parallel orchestration is isolation: if agents c
 
 Example: Fan-Out, Fan-In Orchestration Pattern
 
-To coordinate multiple agents in parallel and then merge their outputs, use the fan-out/fan-in orchestration with needs:.This pattern is tested in the exam and is a best practice for composing analysis/review/merge phases.
+To coordinate multiple agents in parallel and then merge their outputs, use the fan-out/fan-in orchestration with needs. This pattern is tested in the exam and is a best practice for composing analysis/review/merge phases.
 
 ```yml
 name: multi-agent-orchestration

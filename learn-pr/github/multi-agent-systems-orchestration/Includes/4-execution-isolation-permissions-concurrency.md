@@ -18,7 +18,7 @@ Isolation makes concurrency safe and attribution clear. This matters because sha
 
 ## How isolation works in GitHub
 
-### Branch isolatio
+### Branch isolation
 
 Each agent should open a PR from a dedicated branch such as:
 
