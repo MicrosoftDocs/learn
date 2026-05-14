@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-application-platform-services
+metadata:
+  title: Secure Azure Application Platform Services for the Cloud and AI Security Engineer
+  description: "Implement security controls across Azure application platform services—from container workloads to the API layer. Configure Microsoft Defender for Containers, secure Azure Kubernetes Service (AKS), Azure Container Registry (ACR), Container Instances, and Container Apps. Then apply authentication, network access, and policy controls across Azure Function apps, Logic apps, App Services, Web Application Firewall, and Azure API Management."
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: Secure Azure application platform services for the cloud and AI security engineer
+summary: |
+  Implement security controls across Azure application platform services—from container workloads to the API layer. Configure Microsoft Defender for Containers to detect risks in AKS and ACR, enforce AKS security baselines, harden container registries and runtime environments. Then apply authentication, network access, and policy controls across Azure Function apps, Logic apps, App Services, Web Application Firewall, and Azure API Management.
+prerequisites: |
+  - Familiarity with Azure networking concepts including virtual networks, subnets, and private endpoints
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+  - Basic understanding of container concepts and Azure Kubernetes Service
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - defender-for-cloud
+  - azure-kubernetes-service
+  - azure-container-registry
+  - azure-functions
+  - azure-api-management
+subjects:
+  - security
+  - cloud-security
+  - containers
+modules:
+- learn.wwl.detect-container-risks-defender-containers
+- learn.wwl.implement-security-controls-aks
+- learn.wwl.implement-security-controls-containers
+- learn.wwl.implement-security-controls-function-logic-apps
+- learn.wwl.implement-security-web-application-firewall
+- learn.wwl.implement-api-security-api-management
+trophy:
+  uid: learn.wwl.secure-application-platform-services.trophy
