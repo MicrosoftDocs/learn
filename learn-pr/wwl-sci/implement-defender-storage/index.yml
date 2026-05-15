@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-defender-storage
+metadata:
+  title: Implement Microsoft Defender for Storage
+  description: "Enable and configure Microsoft Defender for Storage to detect threats against Azure Blob Storage, Azure Files, and Azure Data Lake Storage. Configure activity monitoring, malware scanning with cost controls, sensitive data threat detection, and alert routing to ensure Defender outputs reach the appropriate security team."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Implement Microsoft Defender for Storage
+summary: Enable and configure Microsoft Defender for Storage to detect threats against Azure Blob Storage, Azure Files, and Azure Data Lake Storage. Configure activity monitoring, malware scanning with cost controls, sensitive data threat detection, and alert routing to ensure Defender outputs reach the appropriate security team.
+abstract: |
+  After completing this module, you'll be able to:
+    - Describe the three detection pillars of Microsoft Defender for Storage and how they differ from the classic plan
+    - Enable Defender for Storage at subscription and resource level using policy-driven deployment
+    - Configure malware scanning with monthly GB caps for cost control
+    - Configure sensitive data threat detection
+    - Configure alert notifications and verify that Defender outputs reach the appropriate security team
+prerequisites: |
+  - Microsoft Defender for Cloud enabled in your Azure subscription
+  - Familiarity with Microsoft Defender for Cloud plans and security recommendations
+  - Azure Storage accounts deployed in your environment
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-storage
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.implement-defender-storage.introduction
+- learn.wwl.implement-defender-storage.explore-defender-storage-capabilities
+- learn.wwl.implement-defender-storage.enable-deploy-defender-storage
+- learn.wwl.implement-defender-storage.configure-malware-scanning-sensitive-data
+- learn.wwl.implement-defender-storage.configure-alert-routing-validate-coverage
+- learn.wwl.implement-defender-storage.knowledge-check
+- learn.wwl.implement-defender-storage.summary
+badge:
+  uid: learn.wwl.implement-defender-storage.badge

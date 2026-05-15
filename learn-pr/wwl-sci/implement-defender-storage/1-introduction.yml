@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-storage.introduction
+metadata:
+  title: Introduction
+  description: Introduction to implementing Microsoft Defender for Storage to detect threats including malicious file uploads and compromised AI agent credentials targeting Azure Storage accounts.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
