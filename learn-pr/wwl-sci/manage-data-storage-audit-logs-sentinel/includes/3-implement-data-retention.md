@@ -37,8 +37,6 @@ Retention settings are managed per-table from the **Tables** page in the Microso
 5. Under **Total retention**, enter the total period. For the SOX-applicable tables, enter `2555` days (seven years).
 6. Select **Save**.
 
-:::image type="content" source="../media/manage-table-retention.png" alt-text="Screenshot of the Manage table settings dialog in the Microsoft Defender portal showing Analytics tier retention and total retention configuration for the SecurityEvent table.":::
-
 Repeat this process for each table in your compliance scope. Changes take effect immediately and apply to new data going forward. Existing data that's already past the previous retention period can't be recovered—which is why establishing these settings at deployment time, rather than after the fact, is critical.
 
 > [!NOTE]

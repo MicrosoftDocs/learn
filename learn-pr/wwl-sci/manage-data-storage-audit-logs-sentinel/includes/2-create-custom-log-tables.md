@@ -36,8 +36,6 @@ To create a custom table in the Microsoft Defender portal:
 
 6. Select **Create**.
 
-:::image type="content" source="../media/create-custom-table.png" alt-text="Screenshot of the custom table creation page in the Microsoft Defender portal showing schema column definition for TradingSystemEvents_CL.":::
-
 ## Configure a data collection rule for ingestion
 
 Creating the table establishes the schema and target. Sending data to it requires a **Data Collection Rule (DCR)** and a **Data Collection Endpoint (DCE)**. The DCE provides the network endpoint that applications call, and the DCR defines the transformation and routing from the source data stream to the target table.
