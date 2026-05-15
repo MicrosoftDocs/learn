@@ -6,8 +6,6 @@ In the Microsoft Defender portal, select **Microsoft Sentinel**, then select **C
 
 Each solution card shows the solution name, publisher, and the types of content it includes. Select a solution card to open the details pane, which lists every content item the solution contains—including how many playbooks, analytics rules, workbooks, and data connectors come with it. For the Contoso SOC notification use case is search for "Microsoft Sentinel Incidents" or "Teams notification" to find solutions that include incident notification playbooks.
 
-:::image type="content" source="../media/content-hub-playbook.png" alt-text="Screenshot of the Content Hub in the Microsoft Defender portal filtered to show playbook solutions.":::
-
 When you identify a solution that fits your scenario, review the permissions documentation in the details pane before installing. Most playbook solutions require you to create API connections during or after deployment—for example, a Teams connection authenticated with a service account or a managed identity.
 
 ## Deploy a Content Hub playbook to your subscription
@@ -33,10 +31,8 @@ To assign the required role:
 4. In the **Members** tab, set **Assign access to** to **Managed identity**, then select **+ Select members**. Find the Logic App by name, select it, and confirm.
 5. Select **Review + assign**.
 
-:::image type="content" source="../media/playbook-managed-identity-rbac.png" alt-text="Screenshot of the Add role assignment page in the Azure portal assigning the Microsoft Sentinel Responder role to a Logic App managed identity.":::
-
-> [!IMPORTANT]
-> If you skip this step, the playbook fails with a 401 Unauthorized error every time it tries to call the Microsoft Sentinel connector. You can diagnose this by selecting the Logic App in the Azure portal, opening **Run history**, and selecting a failed run to view the error detail on the Microsoft Sentinel connector action.
+   > [!IMPORTANT]
+   > If you skip this step, the playbook fails with a 401 Unauthorized error every time it tries to call the Microsoft Sentinel connector. You can diagnose this by selecting the Logic App in the Azure portal, opening **Run history**, and selecting a failed run to view the error detail on the Microsoft Sentinel connector action.
 
 This same managed identity and role assignment pattern applies beyond playbooks. When an autonomous AI agent—such as an agent built on Azure AI Foundry—needs programmatic access to Microsoft Sentinel to read incidents, add comments, or update status, you assign the same Microsoft Sentinel Responder role to the agent's managed identity on the same workspace. The identity model is identical whether the caller is a Logic Apps playbook or an AI-powered automation agent.
 

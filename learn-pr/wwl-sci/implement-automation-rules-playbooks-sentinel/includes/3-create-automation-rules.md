@@ -23,8 +23,6 @@ To create an automation rule:
 8. Leave **Expiration** empty for a permanent rule, or set a date for time-limited suppression scenarios.
 9. Verify the rule is set to **Enabled**, then select **Apply**.
 
-:::image type="content" source="../media/create-automation-rule.png" alt-text="Screenshot of the Create automation rule page in the Microsoft Defender portal showing conditions and actions configured for trading platform incidents.":::
-
 ## Configure conditions to target specific incidents
 
 Conditions support **AND** logic by default—all conditions must be true for the rule to fire. This is the right model for most routing and tagging rules, where you want both the right analytics rule *and* the right severity before taking action.

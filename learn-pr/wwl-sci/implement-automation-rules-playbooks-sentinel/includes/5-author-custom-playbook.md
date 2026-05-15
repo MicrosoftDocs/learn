@@ -20,8 +20,6 @@ To create the Logic App:
 6. In the search box, search for **Microsoft Sentinel**. Select **Microsoft Sentinel** under **Triggers**, then select **When a Microsoft Sentinel incident is created**.
 7. Select **Sign in** and authenticate using your account. If your organization uses managed identity, switch the connection to **Managed Identity** in the connection settings.
 
-:::image type="content" source="../media/logic-app-sentinel-trigger.png" alt-text="Screenshot of the Logic Apps Designer showing the Microsoft Sentinel incident trigger configured with a workspace connection.":::
-
 The trigger is now configured. Every time an incident is created in your Microsoft Sentinel workspace, this Logic App receives the incident details as a structured JSON object.
 
 ## Add enrichment and notification actions
@@ -47,10 +45,8 @@ With the trigger in place, add the actions that retrieve incident data and post 
 
 5. Select **Save** in the toolbar.
 
-:::image type="content" source="../media/logic-app-teams-action.png" alt-text="Screenshot of the Logic Apps Designer showing a Teams post message action populated with Microsoft Sentinel incident dynamic content fields.":::
-
-> [!NOTE]
-> If the Teams connector's dynamic content fields don't appear, check that the Teams connection is authenticated. Select the Teams action's connection, select **Change connection**, and sign in with an account that has permission to post to the target channel.
+   > [!NOTE]
+   > If the Teams connector's dynamic content fields don't appear, check that the Teams connection is authenticated. Select the Teams action's connection, select **Change connection**, and sign in with an account that has permission to post to the target channel.
 
 ## Connect the playbook to an automation rule and validate
 
