@@ -127,7 +127,7 @@ Azure Content Understanding's analyzers identify text values in documents and ma
 
 In Foundry portal, you can also view the JSON results of the processing. 
 
-:::image type="content" source="../media/invoice-json-result-playground.png" alt-text="Screenshot of the classic Foundry portal with the JSON result of an invoice analyzed with Azure Content Understanding." lightbox="../media/invoice-json-result-playground.png":::
+:::image type="content" source="../media/invoice-json-result-playground.png" alt-text="Screenshot of the new Foundry portal with the JSON result of an invoice analyzed with Azure Content Understanding." lightbox="../media/invoice-json-result-playground.png":::
 
 ## Building a client application with Azure Content Understanding 
 
