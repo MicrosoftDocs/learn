@@ -64,7 +64,7 @@ Each Azure Repos Git repository that's associated with a data factory has a coll
 
 ![Screenshot of the new feature branch creation panel in Azure Data Factory.](../media/new-branch.png)
 
-When you're ready to merge the changes from your feature branch to your collaboration branch, select on the branch dropdown and select **Create pull request**. This action takes you to Azure Repos Git where you can raise pull requests, do code reviews, and merge changes to your collaboration branch. You're only allowed to publish to the Data Factory service from your collaboration branch. 
+When you're ready to merge the changes from your feature branch to your collaboration branch, select the branch dropdown and select **Create pull request**. This action takes you to Azure Repos Git where you can raise pull requests, do code reviews, and merge changes to your collaboration branch. You're only allowed to publish to the Data Factory service from your collaboration branch. 
 
 ![Screenshot of the pull request creation option in the Azure Data Factory branch dropdown.](../media/create-pull-request.png)
 

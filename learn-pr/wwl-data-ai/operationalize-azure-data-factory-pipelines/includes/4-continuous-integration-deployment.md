@@ -172,7 +172,7 @@ If you're unable to use Azure DevOps or a different release management tool, you
 
 1. Select **Load file**, and then select the generated Resource Manager template. This is the **arm_template.json** file located in the .zip file exported in step 1.
 
-   ![Resource Manager template editor in the Azure portal](../media/custom-deployment-edit-template.png)
+   ![Resource Manager template editor in the Azure portal.](../media/custom-deployment-edit-template.png)
 
 1. In the settings section, enter the configuration values, like linked service credentials. When you're done, select **Purchase** to deploy the Resource Manager template.
 
