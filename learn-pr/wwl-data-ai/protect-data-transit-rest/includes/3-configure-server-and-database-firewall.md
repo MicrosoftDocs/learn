@@ -31,7 +31,7 @@ If neither exist and the user is connecting through SQL Server Management Studio
 
 ## Virtual network endpoints
 
-Virtual network endpoints allow traffic from a specific Azure Virtual Network. These rules apply at the server level, not just the database level.
+Virtual network endpoints allow traffic from a specific Azure Virtual Network. These rules apply at the server level, not the database level.
 
 Additionally, the service endpoint applies to only one region, which is the underlying endpoint’s region.
 
