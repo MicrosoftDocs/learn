@@ -39,7 +39,7 @@ After migration completes, the VM runs as a Gen2 Trusted Launch VM within the sa
 
 You can enable or disable Secure Boot, vTPM, and integrity monitoring independently even after the VM is running. This flexibility is useful when troubleshooting compatibility issues or adjusting security posture for specific workloads.
 
-:::image type="content" source="../media/trusted-launch-component-dependencies.png" alt-text="Diagram showing Trusted Launch components and the effect of disabling each one, including the dependency where disabling vTPM also disables integrity monitoring." lightbox="../media/trusted-launch-component-dependencies.png":::
+:::image type="content" source="../media/trusted-launch-component-dependencies.png" alt-text="Diagram showing Trusted Launch components, the effect of disabling each, and how disabling vTPM also disables integrity monitoring." lightbox="../media/trusted-launch-component-dependencies.png":::
 
 To modify individual components, navigate to the VM's **Configuration** screen and locate the **Security type** section. Each component appears as a separate toggle. If the VM is running, Azure prompts you to restart—a full stop and deallocate isn't required.
 

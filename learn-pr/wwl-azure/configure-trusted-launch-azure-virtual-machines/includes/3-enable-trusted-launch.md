@@ -5,7 +5,7 @@ Enabling Trusted Launch on a new Gen2 virtual machine is largely automatic—Azu
 | New VM deployment | Gen2 | Low (automatic) | N/A |
 | Existing Gen2 upgrade | Gen2 | Medium (manual) | Yes (deallocate) |
 
-:::image type="content" source="../media/trusted-launch-upgrade.png" alt-text="Diagram showing a Standard security VM transitioning through an Enable Trusted Launch step to a Trusted Launch VM with Secure Boot, vTPM, and integrity monitoring active." lightbox="../media/trusted-launch-upgrade.png":::
+:::image type="content" source="../media/trusted-launch-upgrade.png" alt-text="Diagram showing a Standard VM upgrading to Trusted Launch with Secure Boot, vTPM, and integrity monitoring enabled." lightbox="../media/trusted-launch-upgrade.png":::
 
 ## Enable Trusted Launch on new virtual machines
 

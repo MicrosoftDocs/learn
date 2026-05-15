@@ -24,7 +24,8 @@ For Contoso Manufacturing's factory floor VMs, Trusted Launch provides the neces
 
 Trusted Launch combines three security technologies that work together to establish and verify boot integrity. Each component plays a specific role in the defense-in-depth strategy.
 
-:::image type="content" source="../media/trusted-launch-boot-chain.png" alt-text="Diagram of the Trusted Launch boot chain showing Secure Boot validating signatures, vTPM measuring each stage, and Defender for Cloud alerting on failures." lightbox="../media/trusted-launch-boot-chain.png":::
+:::image type="content" source="../media/trusted-launch-boot-chain.png" alt-text="Diagram of the Trusted Launch boot chain
+Secure Boot validates signatures, vTPM measures stages, and Defender for Cloud alerts on failures." lightbox="../media/trusted-launch-boot-chain.png":::
 
 ### Secure Boot
 
