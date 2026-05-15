@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.governance-guardrails-operations.design-human-workflows
+title: Design human-in-the-loop workflows
+metadata:
+  title: Design human-in-the-loop workflows
+  description: This content is a part of the Governance, Guardrails, and Operations.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-human-workflows.md)]

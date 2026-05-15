@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.github.governance-guardrails-operations
+title: Governance, Guardrails, and Operations
+metadata:
+  title: Governance, Guardrails, and Operations
+  description: Agent systems must operate within clear governance frameworks to ensure security, compliance, and accountability. In the GitHub ecosystem, governance is enforced through repository controls, workflows, and policies that help prevent unauthorized changes, unsafe deployments, and sensitive data exposure.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.update-cycle: 180-days
+  ms.service: github
+  ms.topic: module
+summary: This module covered how to design secure and compliant agent governance using GitHub-native controls, human-in-the-loop approvals, and least-privilege access. It also introduced operational safeguards to improve reliability, accountability, and recovery.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define risk-based autonomy and action boundaries for agent systems 
+  - Enforce governance using GitHub-native controls such as rulesets, checks, CODEOWNERS, and environments 
+  - Design human-in-the-loop workflows for high-risk actions 
+  - Control agent capabilities using least-privilege permissions 
+  - Make agent actions observable, traceable, and auditable 
+  - Maintain governance and operational reliability over time
+
+prerequisites: |
+  Before getting started, you should have:
+  - A GitHub account 
+  - Basic understanding of repositories, branches, and pull requests 
+  - Familiarity with GitHub Actions 
+  - General understanding of agent workflows in GitHub, IDE, or CLI environments
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+units:
+  - learn.github.governance-guardrails-operations.introduction
+  - learn.github.governance-guardrails-operations.define-risk-based-autonomy
+  - learn.github.governance-guardrails-operations.enforce-governance-gitHub-controls
+  - learn.github.governance-guardrails-operations.design-human-workflows
+  - learn.github.governance-guardrails-operations.control-agent-capabilities
+  - learn.github.governance-guardrails-operations.make-actions-observable-traceable-auditable
+  - learn.github.governance-guardrails-operations.maintain-governance-operational-reliability
+  - learn.github.governance-guardrails-operations.knowledge-check
+  - learn.github.governance-guardrails-operations.summary
+badge:
+  uid: learn.github.governance-guardrails-operations.badge

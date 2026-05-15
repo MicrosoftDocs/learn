@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.github.governance-guardrails-operations.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Verify your knowledge of governance, guardrails, and operations.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the best way to allow a terminal agent to perform a low-risk, read-only task like summarizing recent commits without granting broad capabilities?"
+    choices:
+    - content: "Allow all tools so the agent never prompts for approval"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Scope tool access to only what is required for read-only Git inspection"
+      isCorrect: true
+      explanation: "Correct! Tool-scoped autonomy limits the agent to only the minimum read-only capability needed, reducing blast radius and preventing accidental high-risk actions."
+    - content: "Grant write access by default and rely on audits afterward"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Deny all shell access and require manual copy/paste of commit history"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Which GitHub-native control is most effective for requiring explicit approval before production workflows access production secrets?"
+    choices:
+    - content: "A PR template that asks for review"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A repository README policy statement"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "A protected environment with required reviewers"
+      isCorrect: true
+      explanation: "Correct! Protected environments enforce approvals and can scope secrets so they are only released after authorization."
+    - content: "A label applied by the agent"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What is the recommended least-privilege pattern for GITHUB_TOKEN permissions in agent-driven workflows?"
+    choices:
+    - content: "Set write permissions globally so any job can push if needed"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Default to read-only and elevate permissions only for the job that performs write operations"
+      isCorrect: true
+      explanation: "Correct! Read-only defaults prevent unintended writes across the workflow, and job-level elevation limits high-risk capability to the smallest necessary scope."
+    - content: "Disable permissions entirely and store a PAT in the repository"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Grant all permissions during business hours only"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "Which configuration helps prevent overlapping production deployments and cancels in-progress deployments when a newer run starts?"
+    choices:
+    - content: "Using larger runners"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Adding more approvals"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Concurrency with a shared group and cancel-in-progress"
+      isCorrect: true
+      explanation: "Correct! Concurrency serializes deployments by group, and cancel-in-progress prevents overlapping deployments that can create inconsistent production state."
+    - content: "Disabling workflow_dispatch"
+      isCorrect: false
+      explanation: "Incorrect."
+  - content: "What is the best GitHub-native mechanism to route required review for sensitive paths like .github/workflows/ and infra/?"
+    choices:
+    - content: "Asking reviewers in chat"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "CODEOWNERS (with required reviews policy)"
+      isCorrect: true
+      explanation: "Correct! CODEOWNERS routes review based on file paths and, when required, ensures sensitive changes cannot merge without the correct approvals."
+    - content: "Adding labels and milestones"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Squashing commits before merge"
+      isCorrect: false
+      explanation: "Incorrect."
