@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-data-factory
 title: Operationalize your Azure Data Factory pipelines
-summary: In this module, you will learn how you can publish your Azure Data Factory work between different environments.
+summary: In this module, you'll learn how you can publish your Azure Data Factory work between different environments.
 abstract: |
   In this module, you will:
   - Configure a git repository with a development factory
@@ -22,7 +22,7 @@ abstract: |
   - Learn about Azure Data Factory security
 prerequisites: |
   The student should be able to:
-  - Log into the Azure portal
+  - Sign in to the Azure portal
   - Explain and create resource groups
   - Describe Azure Data Factory and its core components
 iconUrl: /training/achievements/operationalize-your-azure-data-factory-pipelines.svg
