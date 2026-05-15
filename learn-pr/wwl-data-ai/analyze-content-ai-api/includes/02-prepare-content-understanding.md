@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0676549b-8b41-40e0-b736-b6241721e2af]
+
+> [!TIP]
+> See the Text and images tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Before you can use the Azure Content Understanding API, you need a Microsoft Foundry resource in your Azure subscription. You can provision this resource in the following ways:
 
 - Create a **Microsoft Foundry** resource in the Azure portal.
@@ -35,6 +46,4 @@ pip install azure-ai-contentunderstanding
 
 > [!TIP]
 > To learn more about programming with the Microsoft Foundry SDK, complete the **[Develop an AI app with the Microsoft Foundry SDK](/training/modules/ai-foundry-sdk/)** module.
-
-
-
+::: zone-end

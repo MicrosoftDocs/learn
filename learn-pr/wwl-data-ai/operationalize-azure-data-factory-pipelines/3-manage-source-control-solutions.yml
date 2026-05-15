@@ -4,12 +4,12 @@ title: Manage source control of Azure Data Factory solutions
 metadata:
   title: Manage source control of Azure Data Factory solutions
   description: "Manage source control of Azure Data Factory solutions"
-  ms.date: 05/16/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/15/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-manage-source-control-solutions.md)]
+  [!include[](includes/3-manage-source-control-solutions.md)]

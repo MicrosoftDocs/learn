@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.security
+title: Understand Azure Data Factory security
+metadata:
+  title: Understand Azure Data Factory security
+  description: "Understand Azure Data Factory security"
+  ms.date: 05/15/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-security.md)]

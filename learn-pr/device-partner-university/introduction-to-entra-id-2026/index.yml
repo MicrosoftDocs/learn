@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-entra-id-2026
+title: Introduction to Microsoft Entra ID
+metadata:
+  title: Introduction To Microsoft Entra ID
+  description: In this module, you’ll learn how to manage identities and access using Microsoft Entra ID.
+  ms.date: 08/28/2025
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: entra-id
+  ms.custom: CC111424-2
+summary: >
+  Explore how Microsoft Entra ID streamlines identity and access management, strengthens organizational security, and enables effective control over users, devices, and resources.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Configure secure and user-friendly access using Microsoft Entra ID to protect organizational resources and ensure compliance with identity management standards.
+  - Evaluate your identity security posture using Microsoft’s secure score and built-in recommendations.
+  - Simplify device and user management across cloud and hybrid environments with Entra join and Conditional Access.
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-to-entra-id-2026.svg
+ratingEnabled: false
+levels:
+  - intermediate
+roles:
+  - business-owner
+  - business-user
+  - administrator
+  - technology-manager
+products:
+  - entra-id
+units:
+  - learn.dpu.introduction-to-entra-id-2026.introduction
+  - learn.dpu.introduction-to-entra-id-2026.microsoft-entra-id
+  - learn.dpu.introduction-to-entra-id-2026.strong-authentication
+  - learn.dpu.introduction-to-entra-id-2026.risk-based-conditional-access
+  - learn.dpu.introduction-to-entra-id-2026.zero-trust
+  - learn.dpu.introduction-to-entra-id-2026.recommendations
+  - learn.dpu.introduction-to-entra-id-2026.security-defaults
+  - learn.dpu.introduction-to-entra-id-2026.identity-secure-score
+  - learn.dpu.introduction-to-entra-id-2026.tenant-id
+  - learn.dpu.introduction-to-entra-id-2026.device-identities
+  - learn.dpu.introduction-to-entra-id-2026.how-use-entra-id
+  - learn.dpu.introduction-to-entra-id-2026.knowledge-check
+  - learn.dpu.introduction-to-entra-id-2026.summary
+badge:
+  uid: learn.dpu.introduction-to-entra-id-2026.badge

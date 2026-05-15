@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b8fc31ef-12ae-4c81-8670-e3f299ae2e88]
+
+> [!TIP]
+> See the Text and images tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Prebuilt models in Azure Document Intelligence enable you to extract data from common form types without training your own models. Microsoft trains these models on large numbers of sample documents, so you can expect accurate and reliable results for standard document types.
 
 ## Document analysis models
@@ -87,6 +98,8 @@ Prebuilt models are designed to extract different types of data from documents. 
 ## When to use prebuilt vs. custom models
 
 Prebuilt models cover the most common document types. If you have an industry-specific or unique form type, you might get more accurate results with a custom model. However, custom models require time and sample data to train. Always check whether a prebuilt model exists for your scenario before investing in custom model development.
+
+::: zone-end
 
 ## Learn more
 

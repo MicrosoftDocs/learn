@@ -18,11 +18,15 @@ Identity Protection identifies risks in the following classifications:
 | ----------------------------------- | ---------------------------------------- |
 | Anonymous IP address                | Sign in from an anonymous IP address (for example: Tor browser, anonymizer VPNs). |
 | Atypical travel                     | Sign in from an atypical location based on the user's recent sign ins. |
-| Malware-linked IP address           | Sign in from a malware-linked IP address. |
+| Malicious IP address                | Sign in from a malicious IP address. |
 | Unfamiliar sign in properties       | Sign in with properties we've not seen recently for the given user. |
 | Leaked credentials                  | Indicates that the user's valid credentials have been leaked. |
 | Password spray                      | Indicates that multiple usernames are being attacked using common passwords in a unified brute-force manner. |
 | Microsoft Entra threat intelligence | Microsoft's internal and external threat intelligence sources have identified a known attack pattern. |
+| Anomalous token                     | Detects unusual characteristics in a token, such as an unusual token lifetime or a token replayed from an unfamiliar location. |
+| Token issuer anomaly                | Detects when the SAML token issuer for the associated SAML token is potentially compromised. |
+| Suspicious browser                  | Detects anomalous sign-in activity across multiple tenants from the same browser. |
+| Verified threat actor IP            | Detects sign-in activity from IP addresses known to be associated with verified threat actors. |
 | New country                         | This detection is discovered by Microsoft Defender for Cloud Apps (MDCA). |
 | Activity from anonymous IP address  | This detection is discovered by MDCA.    |
 | Suspicious inbox forwarding         | This detection is discovered by MDCA.    |
@@ -37,7 +41,7 @@ Identity Protection requires users be a Security Reader, Security Operator, Secu
 | Security Operator      | View all Identity Protection reports and Overview screen, Dismiss user risk, confirm safe sign-in, confirm compromise | Configure or change policies, Reset password for a user, Configure alerts |
 | Security Reader        | View all Identity Protection reports and Overview screen | Configure or change policies, Reset password for a user, Configure alerts, Give feedback on detections |
 
-Currently, the Security Operator role cannot access the Risky sign ins report. Conditional Access Administrators can also create policies that factor in sign-in risk as a condition.
+The Security Operator role can't access the Risky sign-ins report. Conditional Access Administrators can also create policies that factor in sign-in risk as a condition.
 
 ## License requirements
 

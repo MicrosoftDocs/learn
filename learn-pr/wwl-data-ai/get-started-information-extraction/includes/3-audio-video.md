@@ -47,7 +47,7 @@ Using Azure Content Understanding to analyze the audio recording and apply your 
 
 #### Analyzing audio in the Foundry portal 
 
-As with document analysis, using Content Understanding in the *classic* Foundry portal is a fast way to validate that your analyzer returns the fields you expect before you automate the workflow in code. 
+As with document analysis, using Content Understanding in the *new* Foundry portal is a fast way to validate that your analyzer returns the fields you expect before you automate the workflow in code. 
 
 In the portal, you can:
 
@@ -57,11 +57,11 @@ In the portal, you can:
 
 Let's take a look at how we can use content understanding to analyze a call recording. Rather than listen to the whole call, you can run the prebuilt audio analyzer to extract information from the audio. When the analysis is done, you can see a written transcript of the call.
 
-:::image type="content" source="../media/audio-extraction-playground.png" alt-text="Screenshot of the classic Foundry portal with audio analyzed with Azure Content Understanding." lightbox="../media/audio-extraction-playground.png":::
+:::image type="content" source="../media/audio-extraction-playground.png" alt-text="Screenshot of the new Foundry portal with audio analyzed with Azure Content Understanding." lightbox="../media/audio-extraction-playground.png":::
 
 In the returned results, you can see specific information from the call. As with other analyzers in content understanding, the results are in JSON format for further processing. 
 
-:::image type="content" source="../media/audio-json-result.png" alt-text="Screenshot of the classic Foundry portal where audio is analyzed and JSON is returned." lightbox="../media/audio-json-result.png":::
+:::image type="content" source="../media/audio-json-result.png" alt-text="Screenshot of the new Foundry portal where audio is analyzed and JSON is returned." lightbox="../media/audio-json-result.png":::
 
 ## Extracting structured data from video 
 

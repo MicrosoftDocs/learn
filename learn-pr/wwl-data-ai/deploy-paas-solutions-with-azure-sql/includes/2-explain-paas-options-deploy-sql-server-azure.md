@@ -74,7 +74,7 @@ Serverless isn't fully compatible with all the features in Azure SQL Database si
 - The sync database in SQL Data Sync (Data Sync is a service that replicates data between a group of databases)
 
 > [!NOTE]
-> Serverless is currently only supported in the General Purpose tier in the vCore purchasing model.
+> The serverless compute tier is available in both the General Purpose and Hyperscale service tiers of the vCore purchasing model. Auto-pause and auto-resume are currently only supported in the General Purpose tier.
 
 ## Backups
 
