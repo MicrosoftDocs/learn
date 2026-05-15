@@ -4,12 +4,12 @@ title: Monitor Azure Data Factory pipelines
 metadata:
   title: Monitor Azure Data Factory pipelines
   description: "Monitor Azure Data Factory pipelines"
-  ms.date: 05/16/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/15/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-monitor.md)]
+  [!include[](includes/5-monitor.md)]

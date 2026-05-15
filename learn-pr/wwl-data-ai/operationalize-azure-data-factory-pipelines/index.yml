@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
-  title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
-  description: "Operationalize your Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 05/16/2024
-  author: wwlpublish
-  ms.author: jamesh
+  title: Operationalize your Azure Data Factory pipelines
+  description: "Operationalize your Azure Data Factory pipelines"
+  ms.date: 05/15/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-factory
-title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
+title: Operationalize your Azure Data Factory pipelines
 summary: In this module, you will learn how you can publish your Azure Data Factory work between different environments.
 abstract: |
   In this module, you will:
@@ -33,7 +33,6 @@ roles:
 - data-scientist
 products:
 - azure-data-factory
-- azure-synapse-analytics
 units:
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.introduction
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.understand-language-support-azure-data-factory
@@ -42,8 +41,9 @@ units:
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.monitor
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.set-up-alerts-azure-data-factory
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.re-run-azure-data-factory-pipelines
+- learn.wwl.operationalize-your-azure-data-factory-pipelines.security
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.knowledge-check
 - learn.wwl.operationalize-your-azure-data-factory-pipelines.summary
 badge:
   uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.badge
-
+
