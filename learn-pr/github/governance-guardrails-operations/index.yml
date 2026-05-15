@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: learn.github.governance-guardrails-operations
-title: Governance, Guardrails, and Operations
+title: Governance, guardrails, and operations
 metadata:
   title: Governance, Guardrails, and Operations
   description: Agent systems must operate within clear governance frameworks to ensure security, compliance, and accountability. In the GitHub ecosystem, governance is enforced through repository controls, workflows, and policies that help prevent unauthorized changes, unsafe deployments, and sensitive data exposure.
