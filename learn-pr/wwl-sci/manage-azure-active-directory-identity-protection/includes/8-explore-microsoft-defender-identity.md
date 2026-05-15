@@ -1,4 +1,4 @@
-Microsoft Defender for Identity (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution. Defender for identity uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Defender for Identity enables SecOp analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
+Microsoft Defender for Identity (formerly Azure Advanced Threat Protection) is a cloud-based security solution. Defender for identity uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Defender for Identity enables SecOp analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
 
  - Monitor users, entity behavior, and activities with learning-based analytics
  - Protect user identities and credentials stored in Active Directory
@@ -11,10 +11,10 @@ Microsoft Defender for Identity (formerly Azure Advanced Threat Protection, also
 
 Defender for Identity consists of the following components:
 
- - **Defender for Identity portal** \- The Defender for Identity portal allows the creation of your Defender for Identity instance, displays the data received from Defender for Identity sensors, and enables you to monitor, manage, and investigate threats in your network environment.
+ - **Microsoft Defender portal** \- Defender for Identity is managed through the Microsoft Defender portal (`security.microsoft.com`). The portal displays data received from Defender for Identity sensors and enables you to monitor, manage, and investigate threats in your network environment.
  - **Defender for Identity sensor** \- Defender for Identity sensors can be directly installed on the following servers:
 
    - Domain controllers: The sensor directly monitors domain controller traffic, without the need for a dedicated server, or configuration of port mirroring.
    - Active Directory Federated Services (AD FS): The sensor directly monitors network traffic and authentication events.
 
- - **Defender for Identity cloud service** \- Defender for Identity cloud service runs on Azure infrastructure and is currently deployed in the US, Europe, and Asia. Defender for Identity cloud service is connected to Microsoft's intelligent security graph.
+ - **Defender for Identity cloud service** \- Defender for Identity cloud service runs on Azure infrastructure and is currently deployed in the US, Europe, and Asia. Defender for Identity cloud service is connected to Microsoft's threat intelligence.
