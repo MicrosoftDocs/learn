@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.enforce-trusted-launch-azure-policy
+metadata:
+  title: Enforce Trusted Launch adoption with Azure Policy
+  description: Assign the built-in Trusted Launch Azure Policy initiative to enforce adoption across a VM estate, review compliance, and create remediation tasks for capable but noncompliant virtual machines.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enforce Trusted Launch adoption with Azure Policy
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-enforce-trusted-launch-azure-policy.md)]

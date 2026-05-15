@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.identify-trusted-launch-components
+metadata:
+  title: Identify Trusted Launch components and VM security types
+  description: Identify the three components of Trusted Launch—Secure Boot, vTPM, and integrity monitoring—and the VM security types available for Azure virtual machines.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Identify Trusted Launch components and VM security types
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-identify-trusted-launch-components.md)]
