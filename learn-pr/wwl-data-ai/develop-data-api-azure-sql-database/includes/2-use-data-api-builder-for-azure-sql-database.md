@@ -19,10 +19,10 @@ To see a list of feature available for Data API builder, see [Feature availabili
 
 To get started with Azure Data API Builder, ensure you have an Azure subscription and the necessary tools installed, such as the [latest .NET 8](/dotnet/framework/install/) and [Azure Developer CLI](/azure/developer/azure-developer-cli/overview?azure-portal=true).
 
-1. **Create a new project:** Use the Azure Developer CLI to create and deploy the required services. For example, use the Azure Developer CLI to deploy an Azure Static Web App that hosts the Data API Builder. Navigate to the directory where you want to create your project and run the following command to create a new Azure Static Web App project.
+1. **Create a new project:** Use the Azure Developer CLI to create and deploy the required services. To deploy an Azure Static Web App that hosts Data API Builder, choose an Azure Static Web Apps template from the [Awesome AZD](https://azure.github.io/awesome-azd/) gallery, navigate to the directory where you want to create your project, and run the following commands by using the template name shown on the template card.
 
-    ```
-    azd init --template staticwebapp
+    ```bash
+    azd init --template <template-name>
     azd up
     ```
 

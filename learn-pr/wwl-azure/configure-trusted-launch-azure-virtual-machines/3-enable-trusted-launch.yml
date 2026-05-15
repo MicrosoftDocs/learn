@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.enable-trusted-launch
+metadata:
+  title: Enable Trusted Launch on new and existing Gen2 VMs
+  description: Enable Trusted Launch on new Azure virtual machines and upgrade existing Gen2 VMs to the Trusted Launch security type by configuring Secure Boot, vTPM, and integrity monitoring.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable Trusted Launch on new and existing Gen2 VMs
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-enable-trusted-launch.md)]

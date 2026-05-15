@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.summary
+metadata:
+  title: Summary
+  description: Summary of configuring Trusted Launch security features for Azure virtual machines, covering component identification, configuration, upgrade paths, and Azure Policy enforcement.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]
