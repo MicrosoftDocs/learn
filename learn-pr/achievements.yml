@@ -2603,6 +2603,16 @@ achievements:
   title: Explore Azure database and analytics services
   summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL Database, Azure SQL Managed Instance, Azure Database for MySQL, and Azure Database for PostgreSQL. In addition, you'll learn about several of the big data and analysis services in Azure.
   iconUrl: /training/achievements/azure-database-fundamentals.svg
+- uid: learn.wwl.introduction-to-azure-data-share.badge
+  type: badge
+  title: Introduction to Azure Data Share
+  summary: Learn how to use Azure Data Share for securely sending and receiving data to both external organizations or for inter-departmental transfers.
+  iconUrl: /training/achievements/introduction-to-azure-data-share.svg
+- uid: learn.wwl.sharing-data-with-azure-data-share.trophy
+  type: trophy
+  title: Share data with Azure Data Share
+  summary: Learn how Azure Data Share enables you to send and receive data between departments and external organizations.
+  iconUrl: /training/achievements/sharing-data-with-azure-data-share.svg
 - uid: learn.azure.azure-networking-fundamentals.badge
   type: badge
   title: Explore Azure networking services
