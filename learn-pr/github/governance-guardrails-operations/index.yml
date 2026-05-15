@@ -41,7 +41,7 @@ products:
 units:
   - learn.github.governance-guardrails-operations.introduction
   - learn.github.governance-guardrails-operations.define-risk-based-autonomy
-  - learn.github.governance-guardrails-operations.enforce-governance-gitHub-controls
+  - learn.github.governance-guardrails-operations.enforce-governance-github-controls
   - learn.github.governance-guardrails-operations.design-human-workflows
   - learn.github.governance-guardrails-operations.control-agent-capabilities
   - learn.github.governance-guardrails-operations.make-actions-observable-traceable-auditable
