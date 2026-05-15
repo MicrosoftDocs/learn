@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-account-security.select-authorization-model
+metadata:
+  title: Select an authorization model for Azure Storage
+  description: Compare Azure Storage authorization models including Shared Key, SAS types, and Microsoft Entra ID with managed identity, and select the appropriate model for AI agent and enterprise workloads.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Select an authorization model for Azure Storage
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-select-authorization-model.md)]

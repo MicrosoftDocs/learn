@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-account-security.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of implementing security and managing access for Azure Storage, including authorization models, stored access policies, and Shared Key enforcement.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security team disables Shared Key authorization on a storage account. Which type of shared access signature continues to work after this change?"
+    choices:
+    - content: "Service SAS signed with the storage account key"
+      isCorrect: false
+      explanation: "Incorrect. A service SAS is signed with the account key. When Shared Key authorization is disabled, service SAS tokens are rejected for all Azure Storage services."
+    - content: "Account SAS signed with the storage account key"
+      isCorrect: false
+      explanation: "Incorrect. An account SAS is also signed with the account key. When Shared Key authorization is disabled, account SAS tokens are denied for all services."
+    - content: "User delegation SAS signed with Microsoft Entra credentials"
+      isCorrect: true
+      explanation: "Correct. A user delegation SAS is signed with Microsoft Entra credentials rather than the account key. It continues to work when Shared Key authorization is disabled because it's authorized through Microsoft Entra ID."
+    - content: "Connection string containing the account access key"
+      isCorrect: false
+      explanation: "Incorrect. A connection string that contains the account access key uses Shared Key authorization and is rejected when Shared Key is disabled on the storage account."
+  - content: "An AI agent running in Azure Functions needs read-only access to a blob container. Which authorization approach does Microsoft recommend for Azure-hosted AI workloads?"
+    choices:
+    - content: "Store a SAS token in Azure Functions application settings and pass it with each request"
+      isCorrect: false
+      explanation: "Incorrect. Storing SAS tokens in application settings is a security risk. If application settings are exposed, the SAS token grants unauthorized access. Microsoft recommends managed identity for Azure-hosted workloads."
+    - content: "Embed the storage account access key in the Function App environment variables"
+      isCorrect: false
+      explanation: "Incorrect. Embedding account keys in environment variables isn't recommended. Keys grant full access to the account and pose a significant security risk if exposed."
+    - content: "Assign the Function App a managed identity with the Storage Blob Data Reader role"
+      isCorrect: true
+      explanation: "Correct. Microsoft recommends using a managed identity for Azure-hosted workloads. Assigning the Storage Blob Data Reader role to the Function App managed identity provides least-privilege read access without storing or managing credentials."
+    - content: "Enable anonymous read access on the blob container"
+      isCorrect: false
+      explanation: "Incorrect. Anonymous read access removes authorization entirely, allowing any unauthenticated client to read the data. Microsoft recommends disabling anonymous access for all storage accounts."
+  - content: "A service SAS token associated with a stored access policy is compromised. What is the fastest way to revoke access for all clients using this SAS?"
+    choices:
+    - content: "Wait for the SAS token expiry time to pass"
+      isCorrect: false
+      explanation: "Incorrect. Waiting for expiry isn't appropriate when a token is compromised. The SAS could remain valid for hours or days, leaving data exposed during that time."
+    - content: "Delete or modify the stored access policy associated with the SAS"
+      isCorrect: true
+      explanation: "Correct. Deleting or modifying the stored access policy immediately invalidates all SAS tokens associated with it. Action on the stored access policy is the fastest and most targeted revocation mechanism for service SAS tokens linked to a stored access policy."
+    - content: "Rotate the storage account access keys"
+      isCorrect: false
+      explanation: "Incorrect. Rotating account keys invalidates all Shared Key-based access across the storage account, which is broader than needed and can disrupt other legitimate services. It isn't the targeted mechanism for a specific stored access policy."
+    - content: "Disable the storage account in the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. Disabling the storage account blocks all access, including legitimate workloads. This level of disruption isn't appropriate for revoking a single compromised SAS token."
