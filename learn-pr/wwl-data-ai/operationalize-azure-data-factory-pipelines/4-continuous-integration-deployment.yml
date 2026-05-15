@@ -4,9 +4,9 @@ title: Continuous integration and deployment
 metadata:
   title: Continuous integration and deployment
   description: "Continuous integration and deployment"
-  ms.date: 05/16/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/15/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   ms.custom:
     - sfi-ropc-nochange
@@ -16,4 +16,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-continuous-integration-deployment.md)]
-
+
