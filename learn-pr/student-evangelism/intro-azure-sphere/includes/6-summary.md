@@ -17,12 +17,12 @@ Azure Sphere addressed the scenario by securing the Azure Sphere-enabled devices
 
 ## Learn more
 
-- [Retirement of Azure Sphere](https://learn.microsoft.com/azure-sphere/product-overview/retirement?view=azure-sphere-integrated)
-- [What is Azure Sphere?](https://learn.microsoft.com/azure-sphere/product-overview/what-is-azure-sphere?view=azure-sphere-integrated)
-- [Guardian modules](https://learn.microsoft.com/azure-sphere/hardware/guardian-modules?view=azure-sphere-integrated)
-- [Azure Sphere OS networking requirements](https://learn.microsoft.com/azure-sphere/network/ports-protocols-domains?view=azure-sphere-integrated)
-- [About over-the-air updates](https://learn.microsoft.com/azure-sphere/deployment/device-updates?view=azure-sphere-integrated)
-- [Use Azure IoT with Azure Sphere](https://learn.microsoft.com/azure-sphere/app-development/use-azure-iot?view=azure-sphere-integrated)
-- [What is Azure IoT Hub?](https://learn.microsoft.com/azure/iot-hub/iot-concepts-and-iot-hub)
-- [What is Device Update for IoT Hub?](https://learn.microsoft.com/azure/iot-hub-device-update/understand-device-update)
-- [Azure Monitor overview](https://learn.microsoft.com/azure/azure-monitor/overview)
+- [Retirement of Azure Sphere](/azure-sphere/product-overview/retirement?view=azure-sphere-integrated&preserve-view=true)
+- [What is Azure Sphere?](/azure-sphere/product-overview/what-is-azure-sphere?view=azure-sphere-integrated&preserve-view=true)
+- [Guardian modules](/azure-sphere/hardware/guardian-modules?view=azure-sphere-integrated&preserve-view=true)
+- [Azure Sphere OS networking requirements](/azure-sphere/network/ports-protocols-domains?view=azure-sphere-integrated&preserve-view=true)
+- [About over-the-air updates](/azure-sphere/deployment/device-updates?view=azure-sphere-integrated&preserve-view=true)
+- [Use Azure IoT with Azure Sphere](/azure-sphere/app-development/use-azure-iot?view=azure-sphere-integrated&preserve-view=true)
+- [What is Azure IoT Hub?](/azure/iot-hub/iot-concepts-and-iot-hub)
+- [What is Device Update for IoT Hub?](/azure/iot-hub-device-update/understand-device-update)
+- [Azure Monitor overview](/azure/azure-monitor/overview)

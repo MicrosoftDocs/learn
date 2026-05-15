@@ -14,7 +14,7 @@ The Azure Sphere Security Service supports authentication, software updates, and
 
 ## Guardian modules and brownfield devices
 
-Azure Sphere also supports legacy IoT scenarios through [guardian modules](https://learn.microsoft.com/azure-sphere/hardware/guardian-modules?view=azure-sphere-integrated). A guardian module is add-on hardware that incorporates an Azure Sphere chip and attaches to a brownfield device.
+Azure Sphere also supports legacy IoT scenarios through [guardian modules](/azure-sphere/hardware/guardian-modules?view=azure-sphere-integrated&preserve-view=true). A guardian module is add-on hardware that incorporates an Azure Sphere chip and attaches to a brownfield device.
 
 > [!NOTE]
 > Brownfield devices are existing devices already in use that either don't support internet connectivity or don't support it securely.
