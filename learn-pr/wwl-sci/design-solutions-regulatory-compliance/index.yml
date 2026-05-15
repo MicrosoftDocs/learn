@@ -3,7 +3,7 @@ uid: learn.wwl.design-solutions-regulatory-compliance
 metadata:
   title: Design Solutions for Regulatory Compliance
   description: "Learn how to design security solutions that address regulatory compliance requirements across multicloud environments. Translate compliance requirements into security controls using Zero Trust principles, Microsoft Purview, Microsoft Priva, Azure Policy, and Microsoft Defender for Cloud."
-  ms.date: 02/27/2026
+  ms.date: 05/15/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
@@ -11,12 +11,11 @@ metadata:
   ai-usage: ai-assisted
 title: Design solutions for regulatory compliance
 summary: |
-  Learn how to design security solutions that address regulatory compliance requirements across multicloud environments. You'll learn to translate compliance requirements into security controls, use Microsoft Purview Compliance Manager for multicloud compliance including AI governance, address privacy requirements with Microsoft Priva, design Azure Policy solutions, and evaluate compliance using Microsoft Defender for Cloud.
+  Learn how to design security solutions that address regulatory compliance requirements across multicloud environments. You'll learn to translate compliance requirements into security controls, use Microsoft Purview Compliance Manager for multicloud compliance including AI governance, design Azure Policy solutions, and evaluate compliance using Microsoft Defender for Cloud.
 abstract: |
   Upon completion of this module, the learner will be able to:
   -   Translate compliance requirements into security solutions using Zero Trust principles
   -   Address compliance requirements with Microsoft Purview including AI governance templates
-  -   Design a solution to address privacy requirements with Microsoft Priva
   -   Design Azure Policy solutions to address security and compliance requirements
   -   Evaluate infrastructure compliance across multicloud environments using Microsoft Defender for Cloud
 prerequisites: |
@@ -42,7 +41,6 @@ units:
 - learn.wwl.design-solutions-regulatory-compliance.translate-compliance-requirements-security-solution
 - learn.wwl.design-solutions-regulatory-compliance.ai-compliance-considerations
 - learn.wwl.design-solutions-regulatory-compliance.address-compliance-requirements-microsoft-purview
-- learn.wwl.design-solutions-regulatory-compliance.address-privacy-requirements-microsoft-priva
 - learn.wwl.design-solutions-regulatory-compliance.address-security-compliance-requirements-azure-policy
 - learn.wwl.design-solutions-regulatory-compliance.evaluate-infrastructure-compliance-defender-cloud
 - learn.wwl.design-solutions-regulatory-compliance.knowledge-check
