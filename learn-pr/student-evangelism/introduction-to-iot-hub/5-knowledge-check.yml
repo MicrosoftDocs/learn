@@ -3,29 +3,29 @@ uid: learn.oxford.intro-to-iot-hub.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=nextgen
   module_assessment: true
-durationInMinutes: 5 # dummy number at present
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Suppose you work for manufacturing company. You're responsible for managing the authenticity of data from different kinds of sensors. All the devices are connected to IoT Hub. In this scenario, IoT Hub is suitable because:"
+  - content: "You're responsible for verifying that telemetry messages received by IoT Hub originate from known, trusted sensor devices in your fleet. Which feature of IoT Hub helps you achieve this?"
     choices:
-    - content: "IoT Hub provides per device identity."
+    - content: "IoT Hub provides per-device identity."
       isCorrect: true
-      explanation: "IoT Hub contains an identity registry that stores information about the devices and modules permitted to connect to the IoT Hub."
+      explanation: "IoT Hub contains an identity registry that stores per-device credentials and identifiers for every device permitted to connect. Each device authenticates to IoT Hub using its registered credentials (X.509 certificate or symmetric key), so IoT Hub can verify the origin of every incoming message."
     - content: "IoT Hub supports many languages and platforms."
       isCorrect: false
-      explanation: "The support for multiple languages doesn't affect the authenticity of the data from the devices."
-    - content: "IoT Hub enables bi-directional communication between devices and IoT Hub."
+      explanation: "Broad SDK and platform support makes it easier to build device clients, but it doesn't help IoT Hub verify which device sent an incoming telemetry message."
+    - content: "IoT Hub enables bidirectional communication between devices and IoT Hub."
       isCorrect: false
-      explanation: "The support for bi-directional communication doesn't affect the authenticity of the data from the devices."
-  - content: "Suppose you're managing a number of IoT devices in a building. You need to manage the lifecycle of  these devices at scale. IoT Hub is suitable for this scenario because:"
+      explanation: "Bidirectional communication lets the cloud send commands and configuration back to devices, but it isn't the mechanism IoT Hub uses to verify the origin of incoming telemetry."
+  - content: "Suppose you're managing a number of IoT devices in a building. You need to manage the lifecycle of these devices at scale. IoT Hub is suitable for this scenario because:"
     choices:
     - content: "IoT Hub can integrate with third-party services."
       isCorrect: false
@@ -33,20 +33,18 @@ quiz:
     - content: "IoT Hub can provide message routing."
       isCorrect: false
       explanation: "The ability to provide message routing doesn't impact the management of the devices."
-    - content: "IoT Hub can provision devices at scale."
+    - content: "IoT Hub integrates with DPS to provision devices at scale."
       isCorrect: true
-      explanation: " IoT hub provides the ability to provision devices at scale without hardcoding IoT Hub connection information at the factory."
-  - content: "IoT Hub-based application performs distributed processing. Which tier of IoT Hub should you use?"
+      explanation: "IoT Hub integrates with the Azure IoT Hub Device Provisioning Service (DPS), a helper service that enables zero-touch, just-in-time provisioning to the right IoT hub at scale. After DPS registers devices with the appropriate hub, IoT Hub supports lifecycle management through per-device identities, device twins for configuration and state synchronization, telemetry and operational monitoring, and decommissioning by retiring device identities."
+  - content: "You're designing an IoT Hub-based application that needs to send commands and configuration updates from the cloud back to its devices, in addition to receiving telemetry. Which tier of IoT Hub should you use?"
     choices:
     - content: "Basic tier"
       isCorrect: false
-      explanation: "The basic tier is used for applications based around collecting data from devices."
+      explanation: "The Basic tier supports one-way device-to-cloud telemetry and device file upload. It does not support cloud-to-device messaging, device twins, or Azure IoT Edge, so it cannot meet a requirement to send commands or configuration to devices."
     - content: "Standard tier"
       isCorrect: true
-      explanation: "The standard tier is used for advanced processing requirements such as distributed processing."
-    - content: "Advanced tier"
+      explanation: "The Standard tier supports bidirectional communication with devices, including cloud-to-device messages, device twins, and Azure IoT Edge — none of which are available in the Basic tier. The Basic tier supports one-way device-to-cloud telemetry and device file upload, so you must choose Standard for any scenario that needs cloud-to-device commands or configuration."
+    - content: "Free tier"
       isCorrect: false
-      explanation: "IoT Hub comes with only two types of tiers: Basic and Standard.s"
-    
-    
-
+      explanation: "The Free (F1) tier has the same capabilities as Standard, including cloud-to-device messaging and device twins, but it has limited messaging allowances and is intended only for evaluation and testing. It is not appropriate for any production scenario."
+
