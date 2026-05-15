@@ -9,6 +9,7 @@ metadata:
   ms.author: berryivor
   ms.topic: unit
   ai-usage: ai-assisted
+  zone_pivot_groups: video-or-text
 durationInMinutes: 10
 content: |
   [!include[](includes/4-use-prebuilt-models.md)]
