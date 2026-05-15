@@ -76,7 +76,8 @@ CREATE PARTITION SCHEME PartitionByMonthSch
     AS PARTITION PartitionByMonth
     TO (FILEGROUP1, FILEGROUP2, FILEGROUP3, FILEGROUP4,
         FILEGROUP5, FILEGROUP6, FILEGROUP7, FILEGROUP8,
-        FILEGROUP9, FILEGROUP10, FILEGROUP11, FILEGROUP12);
+        FILEGROUP9, FILEGROUP10, FILEGROUP11, FILEGROUP12,
+        FILEGROUP13);
 
 -- Creates a partitioned table called Order that applies PartitionByMonthSch partition scheme to partition the OrderDate column  
 CREATE TABLE Order ([Id] int PRIMARY KEY, OrderDate datetime2)  

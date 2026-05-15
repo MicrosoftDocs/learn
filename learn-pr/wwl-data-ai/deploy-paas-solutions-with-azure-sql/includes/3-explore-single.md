@@ -125,12 +125,12 @@ az sql server firewall-rule create \
 # Create a database in the server
 az sql db create \
  --resource-group $resourceGroupName \
- --server $servername 
+ --server $servername \
  --name mySampleDatabase \
  --sample-name AdventureWorksLT \
  --edition GeneralPurpose \
  --family Gen4 \
- --capacity 1 \
+ --capacity 1
 
 # Echo random password
 echo $password
