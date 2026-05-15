@@ -3,7 +3,7 @@ uid: learn.wwl.describe-security-concepts-methodologies
 metadata:
   title: Describe Security Concepts and Methodologies
   description: "Describe security and compliance concepts."
-  ms.date: 01/13/2026
+  ms.date: 05/15/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Describe the shared responsibility model and how responsibilities shift across on-premises, IaaS, PaaS, and SaaS environments, including AI services.
   - Describe defense-in-depth as a layered security strategy and explain the confidentiality, integrity, and availability (CIA) triad.
-  - Describe the Zero Trust model, its guiding principles, and its six foundational pillars.
+  - Describe the Zero Trust model, its guiding principles, and its seven foundational pillars.
   - Describe encryption and hashing as mechanisms for protecting data at rest, in transit, and in use.
   - Describe Governance, Risk, and Compliance (GRC) concepts, including data residency, data sovereignty, and data privacy.
 prerequisites: |
