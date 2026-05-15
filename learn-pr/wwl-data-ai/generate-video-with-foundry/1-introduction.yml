@@ -8,6 +8,7 @@ metadata:
   author: buzahid
   ms.author: buzahid
   ms.topic: unit
+  zone_pivot_groups: video-or-text
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=07ae3543-78e0-4c55-816b-519d1a50dd8b]
+
+> [!TIP]
+> See the Text and images tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The enrichment pipeline that is orchestrated by an indexer uses a *skillset* of AI skills to create AI-enriched fields. The indexer applies each skill in order, refining the index document at each step.
 
 ![Diagram of an indexer using a skillset to enrich data.](../media/skillset.png)
@@ -19,6 +30,7 @@ To use the built-in skills, your indexer must have access to a Foundry Tools res
 ## Custom skills
 
 You can further extend the enrichment capabilities of your index by creating *custom* skills. As the name suggests, custom skills perform custom logic on input data from your index document to return new field values that can be incorporated into the index. Often, custom skills are "wrappers" around services that are specifically designed to extract data from documents. For example, you could implement a custom skill as an Azure Function, and use it to pass data from your index document to an Azure Document Intelligence model, which can extract fields from a form.
+::: zone-end
 
 > [!TIP]
 > To learn more about using custom skills with Azure AI Search, see **[Add a custom skill to an Azure AI Search enrichment pipeline](/azure/search/cognitive-search-custom-skill-interface)** in the Azure AI Search documentation.
