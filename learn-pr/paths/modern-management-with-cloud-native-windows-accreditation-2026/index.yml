@@ -26,9 +26,9 @@ products:
   - windows-autopilot
   - entra-id
 modules:
-  - learn.dpu.introduction-to-entra-id
-  - learn.dpu.windows-autopilot
-  - learn.dpu.microsoft-intune
-  - learn.dpu.hotpatch-updates
+  - learn.dpu.introduction-to-entra-id-2026
+  - learn.dpu.windows-autopilot-2026
+  - learn.dpu.microsoft-intune-2026
+  - learn.dpu.hotpatch-updates-2026
 trophy:
   uid: learn.dpu.modern-management-with-cloud-native-windows-accreditation-2026.trophy

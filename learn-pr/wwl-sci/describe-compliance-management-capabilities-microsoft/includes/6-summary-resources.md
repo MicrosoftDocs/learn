@@ -12,5 +12,4 @@ Now that you’ve completed this module, you should be able to:
 - [Get started with the Microsoft Service Trust Portal](/microsoft-365/compliance/get-started-with-service-trust-portal)
 - [Trust Center](https://www.microsoft.com/trust-center)
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
-- [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 

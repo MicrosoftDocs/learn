@@ -27,7 +27,7 @@ Microsoft Purview supports four categories of sensitive information types:
 - **Custom sensitive information types**: When the built-in SITs don't meet your needs, you can create your own using regular expressions, keywords, and keyword dictionaries. For example, an organization might create a custom SIT to represent employee IDs or project codes.
 - **Exact data match (EDM) sensitive information types**: EDM-based classification lets you create custom sensitive information types that reference exact values from a database of sensitive information. In the Purview portal, these are referred to as **EDM classifiers**. EDM classification is useful for highly specific data like employee IDs, patient record numbers, or proprietary product codes.
 
-Sensitive information types are used across many Microsoft Purview solutions, including data loss prevention (DLP) policies, sensitivity labels, retention labels, insider risk management, communication compliance, auto-labeling policies, and Microsoft Priva.
+Sensitive information types are used across many Microsoft Purview solutions, including data loss prevention (DLP) policies, sensitivity labels, retention labels, insider risk management, communication compliance, and auto-labeling policies.
 
 ## Trainable classifiers
 

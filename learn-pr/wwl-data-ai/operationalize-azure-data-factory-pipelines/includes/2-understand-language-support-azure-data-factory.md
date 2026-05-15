@@ -1,17 +1,19 @@
-While most Azure Data Factory users develop using the user interface, Azure Data Factory is available in a variety of software development kits (SDKs) for anyone who wish to develop programmatically. When using an SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
+While most Azure Data Factory users develop using the user interface, Azure Data Factory is available in a variety of software development kits (SDKs) for anyone who wishes to develop programmatically. When using an SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
 
 There are Azure Data Factory libraries for Python that enables you to perform the management of the service.
 
-You can install the following package
+To use the Python SDK, install the following packages:
 
 ```Python
-pip install azure-mgmt-datafactory 
+pip install azure-mgmt-resource
+pip install azure-mgmt-datafactory
+pip install azure-identity
 ```
 
-From there you can perform a range of activities, such as creating Azure Data Factory in your subscription on the East US region, as shown in the following code.
+Python 3.9 or later is required to use these packages. From there you can perform a range of activities, such as creating Azure Data Factory in your subscription on the East US region, as shown in the following code.
 
 ```Python
-from azure.common.credentials import ServicePrincipalCredentials
+from azure.identity import DefaultAzureCredential
 from azure.mgmt.resource import ResourceManagementClient
 from azure.mgmt.datafactory import DataFactoryManagementClient
 from azure.mgmt.datafactory.models import *
@@ -19,7 +21,7 @@ import time
 
 #Create a data factory
 subscription_id = '<Specify your Azure Subscription ID>'
-credentials = ServicePrincipalCredentials(client_id='<Active Directory application/client ID>', secret='<client secret>', tenant='<Active Directory tenant ID>')
+credentials = DefaultAzureCredential()
 adf_client = DataFactoryManagementClient(credentials, subscription_id)
 
 rg_params = {'location':'eastus'}
