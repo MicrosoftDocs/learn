@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=27f7856a-a6a0-44ba-a7c8-601593f8b9d1]
+
+> [!TIP]
+> See the Text and images tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Document Intelligence provides powerful capabilities for extracting data from documents at scale. In this module, you explored the full range of the service's functionality.
 
 You learned how to:
@@ -8,6 +19,8 @@ You learned how to:
 - Train and use custom template and neural models for industry-specific forms.
 
 Azure Document Intelligence is one part of the broader set of AI services available in Microsoft Foundry. You can integrate Document Intelligence with other services, such as Azure AI Search for knowledge mining scenarios or generative AI models for document summarization.
+
+::: zone-end
 
 ## Learn more
 
