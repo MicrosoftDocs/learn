@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel
+metadata:
+  title: Implement Automation Rules and Playbooks in Microsoft Sentinel
+  description: "Automate incident management in Microsoft Sentinel using automation rules and Logic Apps playbooks. Create automation rules to triage and route incidents, activate a prebuilt playbook from Content Hub, and author a custom Logic Apps playbook. The process implements an automated notification and response workflow."
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: microsoft-sentinel
+  ai-usage: ai-assisted
+title: Implement automation rules and playbooks in Microsoft Sentinel
+summary: Automate incident management in Microsoft Sentinel using automation rules and Logic Apps playbooks. Create automation rules to triage and route incidents, activate a prebuilt response playbook from Content Hub, and author a custom playbook. The process implements an automated notification and response workflow.
+abstract: |
+  After completing this module, you'll be able to:
+    - Explain the difference between automation rules and playbooks in Microsoft Sentinel
+    - Create automation rules to automate incident management tasks
+    - Configure and activate a prebuilt playbook from the Microsoft Sentinel Content Hub
+    - Author a custom Logic Apps playbook and connect it to an automation rule
+prerequisites: |
+  - Experience setting up a Microsoft Sentinel workspace and connecting data sources
+  - Familiarity with Microsoft Sentinel incidents and analytics rules
+  - Basic understanding of Azure Logic Apps concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - microsoft-sentinel
+  - defender-xdr
+  - azure-logic-apps
+subjects:
+  - security
+  - cloud-security
+  - automation
+units:
+- learn.wwl.implement-automation-rules-playbooks-sentinel.introduction
+- learn.wwl.implement-automation-rules-playbooks-sentinel.understand-automation-options
+- learn.wwl.implement-automation-rules-playbooks-sentinel.create-automation-rules
+- learn.wwl.implement-automation-rules-playbooks-sentinel.configure-content-hub-playbook
+- learn.wwl.implement-automation-rules-playbooks-sentinel.author-custom-playbook
+- learn.wwl.implement-automation-rules-playbooks-sentinel.knowledge-check
+- learn.wwl.implement-automation-rules-playbooks-sentinel.summary
+badge:
+  uid: learn.wwl.implement-automation-rules-playbooks-sentinel.badge
