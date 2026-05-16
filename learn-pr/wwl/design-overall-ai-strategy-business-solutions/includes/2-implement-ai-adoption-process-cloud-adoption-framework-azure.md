@@ -210,12 +210,12 @@ _A = Accountable, R = Responsible, C = Consulted_
 
 - [AI Agent Adoption Guidance for Organizations (plan, govern & secure, build, operate)](/azure/cloud-adoption-framework/ai-agents/)
 
-- [Technology plan for AI agents (SaaS vs. custom)](/azure/cloud-adoption-framework/ai-agents/plan/technology-plan)
+- [Technology plan for AI agents (SaaS vs. custom)](/azure/cloud-adoption-framework/ai-agents/technology-solutions-plan-strategy)
 
-- [Data architecture for AI agents](/azure/cloud-adoption-framework/ai-agents/plan/data-architecture)
+- [Data architecture for AI agents](/azure/cloud-adoption-framework/ai-agents/data-architecture-plan)
 
-- [Governance & security for AI agents](/azure/cloud-adoption-framework/ai-agents/govern/governance-and-security)
+- [Governance & security for AI agents](/azure/cloud-adoption-framework/ai-agents/governance-security-across-organization)
 
-- [Manage AI agents (operate)](/azure/cloud-adoption-framework/ai-agents/operate/manage) 
+- [Manage AI agents (operate)](/azure/cloud-adoption-framework/ai-agents/integrate-manage-operate) 
 
-- [CAF AI adoption (GitHub source)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/scenarios/ai/index.md)
+- [CAF AI adoption (GitHub source)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai/index.md)
