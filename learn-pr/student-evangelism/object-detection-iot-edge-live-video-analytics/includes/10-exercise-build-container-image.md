@@ -1,159 +1,234 @@
-Before you start, make sure that you have installed rerequisites in your local machine.
+Before you start, choose the build path that matches your environment.
 
--   [Install Docker](https://docs.docker.com/desktop) on your machine
--   Install [curl](http://curl.haxx.se)
+- **Common prerequisites:** Install the [Azure CLI](/cli/azure/install-azure-cli) on the machine or shell where you'll sign in to Azure Container Registry. Install [curl](https://curl.se/download.html) only if your build workflow requires it.
+- **ACR Tasks path:** Use `az acr build` to build and push in Azure. This path doesn't require a local Docker CLI or Docker daemon.
+- **Local Docker path:** [Install Docker](https://docs.docker.com/desktop) on the machine where you'll run `docker buildx build --platform <target-platform> --load`, `docker tag`, and `docker push`, and make sure the Docker daemon is running.
+
+> [!NOTE]
+> Run the Bash snippets in this unit from Azure Cloud Shell, WSL, macOS, or Linux. If you're using PowerShell on Windows, set variables with `$VarName = '<value>'` and capture command output with `$VarName = az ... --query ... --output tsv`.
+
+> [!IMPORTANT]
+> The original exercise told learners to download `https://github.com/Azure/live-video-analytics` and use `utilities/video-analysis/yolov4-tflite-tiny`. That repository URL is no longer available, and the historical LVA sample assets and `tag.txt` file can't be obtained from the stated source. The remaining build sections are a historical walkthrough of the original workflow. Use them to understand the registry, build, and push process, but use maintained model assets from your own repository for any current lab.
 
 ## Create an Azure container registry
 
-1. Open the Azure Cloud Shell from the Azure portal selecting the Cloud Shell icon.
+The original walkthrough created the registry from Azure Cloud Shell or another Bash terminal with the Azure CLI.
+
+1. Azure Cloud Shell was opened from the Azure portal by selecting the Cloud Shell icon.
 
    [![The illustration shows Azure Cloud Shell.](../media/shell-icon.png)](../media/shell-icon.png#lightbox)
 
-2. You'll create an Azure container registry with the az acr create command. Run the following command to define a variable called ACR_NAME. The container registry name must be unique within Azure and contain between 5 and 50 alphanumeric characters.
+2. The Bash session defined variables for your resource group and registry. The registry name had to be unique within Azure and contain 5-50 lowercase alphanumeric characters.
 
-   ```
-   ACR_NAME=<enter-registry-name>
-   ```
-
-3. Enter the following command into the Cloud Shell editor to create new container registry.
-
-   ```
-   az acr create --resource-group <replace-with-resource-group> --name $ACR_NAME --sku Standard
+   ```bash
+   RESOURCE_GROUP=<replace-with-resource-group>
+   ACR_NAME=<unique-lowercase-registry-name>
    ```
 
-4. Go to the container registry resource you just created and navigate to **Access keys**.
+3. The container registry was created.
 
-5. Copy the registry name, login server, username, and password.
+   ```azurecli
+   az acr create --resource-group $RESOURCE_GROUP --name $ACR_NAME --sku Standard
+   ```
+
+4. The registry login server returned by Azure was captured.
+
+   ```azurecli
+   ACR_LOGIN_SERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv)
+   echo $ACR_LOGIN_SERVER
+   ```
+
+5. Because Azure Cloud Shell doesn't provide a Docker daemon, `az acr login` wasn't run there. The Docker sign-in happened later from a Docker-enabled local terminal. The **Access keys** page wasn't needed unless the admin account was intentionally enabled for a short testing scenario.
 
    [![The illustration shows the access keys.](../media/container-registry-access-keys.png)](../media/container-registry-access-keys.png#lightbox)
 
-## Download the inference YOLOv4(tiny) TensorFlow Lite model
+## Prepare model container assets
 
-1. Go to `https://github.com/Azure/live-video-analytics` and download zip in your local machine.
+1. The historical sample expected a model container project that included a Dockerfile, model files, service code, and any label file the app required.
 
    [![The illustration shows how to download a project from GitHub.](../media/download-zip-file.png)](../media/download-zip-file.png#lightbox)
 
-2. Go to the following path in the downloaded folder.
-
-   ```
-   live-video-analytics-master/utilities/video-analysis/yolov4-tflite-tiny
-   ```
+2. The walkthrough then opened the directory that contained the Dockerfile.
 
    [![The illustration shows the project folder.](../media/project-folder.png)](../media/project-folder.png#lightbox)
 
-3. Create a new directory on your machine and copy all the files (including the sub-folders) from this GitHub folder to new directory.
+3. All required files had to be available in that directory or in the source context that'd be sent to the build.
 
-## Build a container image with the YOLO model
+## Build a container image with the model
 
-1. You will see Dockerfile that provides build instructions for the container image.
+1. The project included a Dockerfile that provided build instructions for the container image.
 
    [![The illustration shows Dockerfile.](../media/build-instructions.png)](../media/build-instructions.png#lightbox)
 
-2. Open the terminal in this directory. Run the following docker command from a command window in that directory to build the container image.
+2. From a Docker-enabled local terminal, the image was built for the target edge architecture from the directory that contained the Dockerfile.
 
+   ```bash
+   docker buildx build --platform <target-platform> --load -t yolo-model:latest .
    ```
-   docker build . -t yolov4-tflite-tiny:latest
-   ```
+
+   Use `linux/amd64` when the target IoT Edge VM is AMD64, which is the common Ubuntu VM path in unit 4. Use `linux/arm64` when the target IoT Edge host is ARM64.
 
    [![The illustration shows how to build a docker image.](../media/build-docker-image.png)](../media/build-docker-image.png#lightbox)
 
-## Push the docker image to the Azure Container Registry
+> [!NOTE]
+> For a Cloud Shell-friendly alternative, [ACR Tasks](/azure/container-registry/container-registry-tutorial-quick-task) can build and push the image in Azure:
+>
+> ```azurecli
+> az acr build --platform <target-platform> --registry $ACR_NAME --image yolo-model:latest <context>
+> ```
+>
+> For a registry that uses **RBAC Registry + ABAC Repository Permissions**, specify source-registry authentication explicitly when the quick build should use the caller's repository permissions for source registry access:
+>
+> ```azurecli
+> az acr build --platform <target-platform> --registry $ACR_NAME --image yolo-model:latest --source-acr-auth-id [caller] <context>
+> ```
+>
+> Use `--source-acr-auth-id none` only when the quick build intentionally needs no source-registry access. This command doesn't require a local Docker daemon or `az acr login`. To queue and run quick builds or runs, the Azure identity needs `Container Registry Tasks Contributor` or a broader role that includes ACR Tasks actions. That role doesn't grant image push or pull permissions. For registries that use **RBAC Registry + ABAC Repository Permissions**, also assign `Container Registry Repository Catalog Lister` with the needed repository role: `Container Registry Repository Writer` or `Container Registry Repository Contributor` for the target repository, and `Container Registry Repository Reader` for any source repository that the task reads. If the registry uses **RBAC Registry Permissions** instead, use `AcrPush` or `AcrPull` as appropriate.
 
-Now, you have a docker image with the YOLO model. Before you can push an image to your registry, you must tag it with the fully qualified name of your registry login server. The login server name is in the format ***azurecr.io*** (must be all lowercase).
+## Push the Docker image to Azure Container Registry
 
-1. In your local machine, log in to Azure with the Azure CLI.
+The separate push steps applied only when the image was built locally. If `az acr build` was used instead, ACR Tasks already pushed the image to the registry.
 
-   ```
+1. In a Docker-enabled local terminal, the workflow signed in to Azure and to the registry. If the registry was created in a different shell, `ACR_NAME` was set again manually and `ACR_LOGIN_SERVER` was captured again with the actual value. The identity used for this sign-in needed `Container Registry Repository Writer` if the registry used **RBAC Registry + ABAC Repository Permissions**, or `AcrPush` if it used **RBAC Registry Permissions**. Docker CLI pushes don't require `Container Registry Tasks Contributor`. For more information, see [Microsoft Entra-based repository permissions](/azure/container-registry/container-registry-rbac-abac-repository-permissions).
+
+   ```azurecli
    az login
-   ```
-
-2. Log in to ACR with the Azure CLI (docker may also be used).
-   
-   ```
-   docker login <replace-with-your-acr-login-server>
+   ACR_NAME=<registry-name>
+   ACR_LOGIN_SERVER=$(az acr show --name $ACR_NAME --query loginServer --output tsv)
+   az acr login --name $ACR_NAME
    ```
 
    [![The illustration shows how to login docker.](../media/docker-login.png)](../media/docker-login.png#lightbox)
 
-3. Tag the image using the **docker tag** command. Replace
-\<login-server\> with the login server name of your ACR instance.
+2. The image was tagged by using the registry login server.
 
+   ```bash
+   docker tag yolo-model:latest $ACR_LOGIN_SERVER/yolo-model:latest
    ```
-   docker tag <original-image-name:tag> <registry-name>.azurecr.io/<image-name:tag>
-   ```
 
-   [![The illustration shows how to a docker image.](../media/tag-image.png)](../media/tag-image.png#lightbox)
+   [![The illustration shows how to tag a docker image.](../media/tag-image.png)](../media/tag-image.png#lightbox)
 
-4. Use **docker push** to push the image to the registry instance. Replace \<login-server\> with the login server name of your registry instance.
+3. The image was pushed to the registry instance.
 
-   ```
-   docker push <registry-name>.azurecr.io/<image-name:tag>
+   ```bash
+   docker push $ACR_LOGIN_SERVER/yolo-model:latest
    ```
 
    [![The illustration shows how to push image to a container registry.](../media/docker-push.png)](../media/docker-push.png#lightbox)
 
-5. It will take some time to push your containerized model to Azure container registry. After pushing the image to your container registry, your image URI would be:
+4. After the image was pushed, the image URI was:
 
-   ```
-   <registry-name>.azurecr.io/<image-name:tag>
+   ```text
+   <login-server>/yolo-model:latest
    ```
 
-6. To verify if the image is pushed, you will go to the Container registry resource and navigate the repository.
+5. The push could then be verified in the Container Registry resource under **Repositories**, or by showing the tags for the `yolo-model` repository with the Azure CLI.
+
+   ```azurecli
+   az acr repository show-tags --name $ACR_NAME --repository yolo-model --output table
+   ```
 
    [![The illustration shows the containerized model in container registry.](../media/container-registry-repositories.png)](../media/container-registry-repositories.png#lightbox)
 
-## Deploy the YOLO model as an Azure IoT Edge module
+## Create pull credentials for IoT Edge
+
+Before you open **Set Modules**, create the pull credentials that you'll enter in **Container Registry Credentials**. Store the password securely, such as in Azure Key Vault, because you can't retrieve the same generated value later.
+
+1. Choose one of these options:
+
+   - **Service principal (AcrPull role):** If your registry uses **RBAC Registry Permissions**, create a service principal for pull access.
+
+     ```bash
+     SP_NAME=<unique-service-principal-name>
+     ```
+
+     ```azurecli
+     ACR_ID=$(az acr show --name $ACR_NAME --query id --output tsv)
+     az ad sp create-for-rbac --name $SP_NAME --scopes $ACR_ID --role acrpull
+     ```
+
+     Use the returned `appId` as **Username** and `password` as **Password** in **Container Registry Credentials**.
+
+   - **ACR token with a repository scope map:** Create repository-scoped pull credentials for the `yolo-model` repository.
+
+     ```bash
+     SCOPE_MAP_NAME=<scope-map-name>
+     TOKEN_NAME=<token-name>
+     ```
+
+     ```azurecli
+     az acr scope-map create --name $SCOPE_MAP_NAME --registry $ACR_NAME --repository yolo-model content/read metadata/read
+     TOKEN_PASSWORD=$(az acr token create --name $TOKEN_NAME --registry $ACR_NAME --scope-map $SCOPE_MAP_NAME --query "credentials.passwords[0].value" --output tsv)
+     echo $TOKEN_PASSWORD
+     ```
+
+     Use `$TOKEN_NAME` as **Username** and `$TOKEN_PASSWORD` as **Password** in **Container Registry Credentials**.
+
+2. Keep the registry login server value for the **Address** field.
+
+   ```bash
+   echo $ACR_LOGIN_SERVER
+   ```
+
+For more information, see [Azure Container Registry authentication with service principals](/azure/container-registry/container-registry-auth-service-principal) and [Non-Microsoft Entra token-based repository permissions in Azure Container Registry](/azure/container-registry/container-registry-token-based-repository-permissions).
+
+## Deploy the model as an Azure IoT Edge module
+
+> [!NOTE]
+> The following steps reflect the current IoT Edge 1.5 portal workflow. They deploy a container module when you provide your own compatible image, but they don't make the retired LVA-based Vision on Edge solution runnable.
 
 1. In the Azure portal, go to your IoT Hub resource.
 
-2. On the left pane, select IoT Edge under Automatic Device Management.
+2. On the left pane, select **Devices** under **Device management**.
 
-3. Select the IoT Edge device that is to receive the deployment.
+3. Select the target IoT Edge device.
 
-4. On the upper bar, select Set Modules.
+4. On the upper bar, select **Set Modules**.
 
-5. Provide the following.
+5. In **Container Registry Credentials**, enter the values from the pull-credential option you created in the previous section. Managed identity authentication to ACR is for supported Azure hosts that sign in directly to ACR, not for the username/password fields shown here. If you use the registry admin account for a short test, enable it explicitly and disable it after the lab.
 
-   - **Name:** Replace with registry name of your Azure container registry
-
-   - **Address:** Replace with login server of your Azure container registry
-
-   - **Username:** Replace with the username of your Azure container registry
-
-   - **Password:** Replace with the password of your Azure container registry
+   - **Name:** A friendly name for the registry credential entry.
+   - **Address:** The value of `$ACR_LOGIN_SERVER`, such as `<login-server>`.
+   - **Username:** The service principal `appId` or the token name created earlier.
+   - **Password:** The corresponding service principal password or generated token password.
 
    [![The illustration shows how to edit container credentials.](../media/set-modules.png)](../media/set-modules.png#lightbox)
 
-6. Select **Add**.
-
-7. In the IoT Edge Modules section, select Add, and select IoT Edge Module from the drop-down menu.
+6. In the **IoT Edge Modules** section, select **Add**, and then select **IoT Edge Module**.
 
    [![The illustration shows how to add edge module.](../media/add-edge-module.png)](../media/add-edge-module.png#lightbox)
 
-8. Give a name to your IoT Edge module and enter the image URL, which is the path as below.
+7. Give your IoT Edge module a name and enter the image URI.
 
-   ```
-   <registry-name>.azurecr.io/<image-name:tag>
+   ```text
+   <login-server>/yolo-model:latest
    ```
 
-9. Select **Add.**
+8. Select **Add**.
 
    [![The illustration shows how to add image path.](../media/add-iot-edge-module.png)](../media/add-iot-edge-module.png#lightbox)
 
-## Review + create
+9. Select **Next: Routes**. Keep the default route if messages from modules should go upstream to IoT Hub, or add only the routes your solution requires.
 
-After setting your module, select **Review + create**. The review section shows you the JSON deployment manifest that was created based on the modules you set. Check whether the module you set in the previous section is defined in the manifest.
+10. Select **Next: Review + create**. The review section shows the JSON deployment manifest that was created based on your module and route settings. Confirm that your module image URI and registry settings are correct.
 
-   [![The illustration shows the review of deployment.](../media/review-deployment.png)](../media/review-deployment.png#lightbox)
+    [![The illustration shows the review of deployment.](../media/review-deployment.png)](../media/review-deployment.png#lightbox)
 
-## Check the deployed module in your edge device
+11. Select **Create** to apply the deployment.
 
-After the deployment, you can check the module in your edge device. Connect to your virtual machine and run the **docker ps** command.
+## Check the deployed module on your edge device
 
-   ```
-   docker ps
-   ```
+After the deployment is applied, verify module status from the IoT Edge device page in IoT Hub. You can also connect to your virtual machine and run one of these commands:
 
-Now you have your own inference module in the edge device, and the prediction endpoint can be accessed through **/score** with port **80** if your image is built from the Tiny YOLOv4 TensorFlow Lite model.
+```bash
+sudo iotedge list
+sudo docker ps
+```
 
-Make a note of predict endpoint that is in the form of **http://{module-name}:80/score** and can be accessed only within your edge device.
+If your image implements the historical Tiny YOLO scoring interface, the prediction endpoint is available only within the edge module network in this form:
+
+```text
+http://<module-name>:80/score
+```
+
+Make a note of the endpoint for private lab use only. Don't expose the scoring endpoint directly to the internet.
