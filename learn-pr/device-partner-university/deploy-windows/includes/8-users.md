@@ -27,7 +27,7 @@ Validate that authentication behavior aligns with your design by reviewing the [
 You might also consider reviewing key identity and device controls, such as:
 
 **Authentication/identity controls:**
-- [Windows Hello for Business:](/windows/security/identity-protection/windows-hello-for-business/) secure passwordless authentication
+- [Windows Hello for Business:](/windows/security/identity-protection/hello-for-business) secure passwordless authentication
 - [FIDO2 Security Keys:](/entra/identity/authentication/howto-authentication-passwordless-security-key-windows) passwordless, hardware-based authentication
 - [Microsoft Entra Conditional Access policies:](/entra/identity/conditional-access/overview) enforce device and identity access requirements
 - [Authentication Strength Policies:](/entra/identity/authentication/concept-authentication-strengths) configure and enforce strong authentication
@@ -40,8 +40,8 @@ You might also consider reviewing key identity and device controls, such as:
 - [Remote Credential Guard:](/windows/security/book/identity-protection-advanced-credential-protection#remote-credential-guard) protects credentials during remote desktop sessions
 - [Trusted Platform Module (TPM) 2.0:](/windows/security/hardware-security/tpm/trusted-platform-module-overview) hardware root of trust
 - [Secure Boot:](/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process) ensures only trusted OS loads
-- [Virtualization-Based Security (VBS):](/windows/security/identity-protection/virtualization-based-security) isolates sensitive parts of the OS
-- [Memory Integrity (HVCI):](/windows/security/identity-protection/memory-integrity) protects kernel memory from tampering
+- [Virtualization-Based Security (VBS):](/windows-hardware/design/device-experiences/oem-vbs) isolates sensitive parts of the OS
+- [Memory Integrity (HVCI):](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity) protects kernel memory from tampering
 
 Implement and document any changes that are required. Check whether stakeholder approval is needed before applying identity-related changes.
 

@@ -38,7 +38,7 @@ Alternatively, verify that your devices are eligible and ready using Endpoint An
 
 ### Endpoint analytics
 
-You can use [Endpoint analytics “Work from anywhere”](/mem/analytics/work-from-anywhere) report to help determine the hardware readiness of your devices for Windows 11. This cloud-based service computes your readiness score for all active Intune and Configuration Manager devices [enrolled into Endpoint analytics](/mem/analytics/overview).
+You can use [Endpoint analytics “Work from anywhere”](/intune/endpoint-analytics/work-from-anywhere) report to help determine the hardware readiness of your devices for Windows 11. This cloud-based service computes your readiness score for all active Intune and Configuration Manager devices [enrolled into Endpoint analytics](/intune/endpoint-analytics/?pivots=intune).
 
 Get there from **[Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Reports > Endpoint analytics > Work from anywhere**. Navigate to the **Windows** tab to see and download the list of devices that are capable and not capable of upgrading to Windows 11 based on the minimum system requirements.
 
@@ -67,7 +67,7 @@ A [device identity](/graph/api/resources/device) is represented by the device’
 
 Device identities are established by joining or registering a device to an identity provider like Microsoft Entra ID. Embrace joining your newly provisioned Windows devices to Microsoft Entra and hybrid joining your previously provisioned Windows devices to Microsoft Entra. For further details, check out [Skilling snack: Windows Entra joined devices](https://techcommunity.microsoft.com/blog/windows-itpro-blog/skilling-snack-windows-entra-joined-devices/4111391).
 
-You can use the [“Work from anywhere” report in Endpoint analytics](/mem/analytics/work-from-anywhere) to evaluate device identity for your Intune and Configuration Manager devices and identify any devices without an appropriate identity.
+You can use the [“Work from anywhere” report in Endpoint analytics](/intune/endpoint-analytics/work-from-anywhere) to evaluate device identity for your Intune and Configuration Manager devices and identify any devices without an appropriate identity.
 
 Get there from **[Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > Reports > Endpoint analytics** and explore the **Cloud identity** tab. Identify devices enrolled and not enrolled into Microsoft Entra ID. For on-premises Active Directory domain-joined devices, plan to hybrid-join them to [Microsoft Entra ID](/entra/identity/devices/how-to-hybrid-join).
 
