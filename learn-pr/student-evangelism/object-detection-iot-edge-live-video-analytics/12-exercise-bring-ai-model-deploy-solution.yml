@@ -1,8 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.object-detection-lva-edge-device.exercise-bring-ai-model-deploy-solution
-title: Exercise - bring your AI model to deploy a video analytics solution
+title: Exercise - Bring your AI model to deploy a video analytics solution
+
 metadata:
-  title: Exercise - bring your AI model to deploy a video analytics solution
+  title: Exercise - Bring your AI model to deploy a video analytics solution
+
   description: Historical exercise reviewing how a YOLO-based model was brought into the archived Vision on Edge workflow and deployed in the retired Live Video Analytics scenario.
   ms.date: 05/10/2026
   author: Orin-Thomas
@@ -24,4 +26,4 @@ quiz:
       explanation: "That was part of the architecture, but by itself it did not make the solution a general template for deploying machine learning models"
     - content: "Because teams could build and deploy their own models to an edge device"
       isCorrect: true
-      explanation: "Historically, the solution could incorporate other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"
+      explanation: "Historically, the solution could incorporate other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"
