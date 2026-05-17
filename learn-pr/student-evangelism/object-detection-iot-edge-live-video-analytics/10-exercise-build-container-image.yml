@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.object-detection-lva-edge-device.exercise-build-container-image
 title: Exercise - Build a container image with YOLO model and deploy it to IoT Edge
+
 metadata:
   title: Exercise - Build a container image with YOLO model and deploy it to IoT Edge
-  description: In this section, we help learner build a container image and push it to edge device.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+
+  description: Historical exercise showing how to build a YOLO container image locally and publish it to Azure Container Registry so IoT Edge can pull it during module deployment.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 15
 content: |
@@ -24,4 +26,4 @@ quiz:
       explanation: "It’s a storage that holds docker images"
     - content: "Dockerfile"
       isCorrect: true
-      explanation: "A Dockerfile is a plain text file containing all the commands needed to build an image"
+      explanation: "A Dockerfile is a plain text file containing all the commands needed to build an image"

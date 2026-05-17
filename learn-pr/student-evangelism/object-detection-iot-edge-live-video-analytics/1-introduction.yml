@@ -3,10 +3,10 @@ uid: learn.oxford.object-detection-lva-edge-device.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this section, we help the learner to decide if the solution will meet their needs by explaining when to use the product and how it works.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  description: This introduction explains the historical Live Video Analytics on IoT Edge / Vision on Edge architecture, the retired services it depended on, and current alternatives for new solutions.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4
 content: |

@@ -3,10 +3,10 @@ uid: learn.oxford.object-detection-lva-edge-device.how-install-vision-edge-solut
 title: How to install Vision on Edge solution
 metadata:
   title: How to install Vision on Edge solution
-  description: In this section, we explain how to install Vision on Edge solution using installer
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  description: Historical walkthrough of how the archived Vision on Edge installer set up Azure resources and IoT Edge modules for the retired Live Video Analytics scenario.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 8
 content: |

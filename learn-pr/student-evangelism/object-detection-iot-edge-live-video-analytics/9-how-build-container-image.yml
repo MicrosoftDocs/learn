@@ -3,10 +3,10 @@ uid: learn.oxford.object-detection-lva-edge-device.how-build-container-image
 title: How to build a container image with YOLOv4 TensorFlow Lite model
 metadata:
   title: How to build a container image with YOLOv4 TensorFlow Lite model
-  description: In this section, we help learner how to build a container image to push edge device.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  description: Historically explains how to build a YOLO container image locally and publish it to Azure Container Registry so the image can be pulled by IoT Edge during module deployment.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 7
 content: |
