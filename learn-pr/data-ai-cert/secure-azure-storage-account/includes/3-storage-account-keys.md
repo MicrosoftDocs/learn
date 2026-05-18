@@ -26,7 +26,7 @@ In Azure Storage accounts, shared keys are called *storage account keys*. Azure 
 
 You'll find the storage account keys in the Azure portal view of the storage account. In the left menu pane of your storage account, select **Security + networking** > **Access keys**.
 
-![Screenshot showing the access keys in the Azure portal.](../media/3-storage-keys.png)
+![Screenshot that shows the access keys in the Azure portal.](../media/3-storage-keys.png)
 
 ## Protect shared keys
 
@@ -45,3 +45,12 @@ To refresh keys:
 
 > [!IMPORTANT]
 > After you refresh keys, any client that attempts to use the old key value will be refused. Make sure you identify all clients that use the shared key and update them to keep them operational.
+
+## Disable Shared Key authorization
+
+Beyond rotating keys, you can remove Shared Key authorization entirely. When you set **Allow storage account key access** to **Disabled** in the storage account's **Configuration** settings, Azure Storage rejects all subsequent requests that use an account access key. Only requests authorized through Microsoft Entra ID succeed.
+
+Disabling Shared Key is the strongest protection against unauthorized key use, and it's a required step before you can apply Microsoft Entra Conditional Access policies to a storage account. Before disabling, migrate your applications to use Microsoft Entra ID-based authorization (preferably with managed identities) so that their access isn't interrupted.
+
+> [!TIP]
+> Microsoft recommends disabling Shared Key access if it isn't required to prevent its inadvertent use. Use Microsoft Entra ID with managed identities for workloads that support OAuth, Kerberos for Azure Files over SMB, and user delegation SAS tokens for other scenarios.
