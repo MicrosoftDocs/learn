@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-storage-audit-logs-sentinel.implement-data-retention
+metadata:
+  title: Implement data retention in Microsoft Sentinel
+  description: Configure data retention tiers and archive policies for Microsoft Sentinel tables, including Analytics, Basic, and Archive tiers, to meet compliance and cost requirements.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Implement data retention in Microsoft Sentinel
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-implement-data-retention.md)]

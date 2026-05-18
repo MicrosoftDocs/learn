@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-storage-audit-logs-sentinel.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of custom log tables, data retention tiers, and Microsoft Purview Audit integration in Microsoft Sentinel.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer creates a custom table named `TradingEvents` in the Microsoft Sentinel workspace to store events from a proprietary trading system using the Logs Ingestion API. What is the full table name that appears in the workspace?"
+    choices:
+    - content: "TradingEvents_CL"
+      isCorrect: true
+      explanation: "Correct. Custom log tables created via the Logs Ingestion API use the `_CL` (Custom Log) suffix automatically appended to the name you provide. The table appears as `TradingEvents_CL` in Log Analytics and KQL queries."
+    - content: "TradingEvents_LOG"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Sentinel doesn't use a `_LOG` suffix. Custom tables created via the Logs Ingestion API always receive the `_CL` (Custom Log) suffix."
+    - content: "TradingEvents"
+      isCorrect: false
+      explanation: "Incorrect. The `_CL` suffix is automatically appended to custom log table names. You can't create a custom log table without this suffix—it distinguishes custom tables from built-in Azure and Microsoft Sentinel tables."
+    - content: "TradingEvents_RAW"
+      isCorrect: false
+      explanation: "Incorrect. There's no `_RAW` suffix in Microsoft Sentinel. Custom tables use `_CL`, search results tables use `_SRCH`, and restored tables use `_RST`."
+  - content: "Contoso Financial Services must retain security logs for seven years for SOX compliance while keeping the last 90 days immediately queryable for active investigations. Which table retention configuration achieves both requirements at the lowest cost?"
+    choices:
+    - content: "Set Analytics tier interactive retention to 90 days and total retention to 2,555 days (approximately seven years) using the Archive tier"
+      isCorrect: true
+      explanation: "Correct. Microsoft Sentinel supports a two-tier approach: the Analytics tier provides interactive KQL querying for the configured interactive retention period (up to two years), while the Archive tier extends total retention at a lower cost (up to 12 years). Setting 90-day interactive retention and 7-year total retention satisfies both the investigation and compliance requirements."
+    - content: "Set the Log Analytics workspace default retention to seven years for all tables"
+      isCorrect: false
+      explanation: "Incorrect. Setting workspace-level retention to seven years would keep all data in the Analytics tier for seven years, which is more expensive than using the Archive tier for data older than 90 days. The Archive tier is designed for long-term retention at lower cost."
+    - content: "Export logs to Azure Blob Storage after 90 days and delete from Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. Exporting to Blob Storage creates a separate data store that isn't queryable through KQL in the Defender portal. This approach also loses the integrated Microsoft Sentinel experience for compliance investigations and requires separate tooling to search the exported data."
+    - content: "Configure a Basic tier table with 90-day retention"
+      isCorrect: false
+      explanation: "Incorrect. The Basic tier has a maximum retention of eight days and is designed for high-volume, noncritical logs at lower ingestion cost. It doesn't support 90-day interactive retention or 7-year total retention."
+  - content: "Which permission is required to search Microsoft Purview Audit logs in the Microsoft Defender XDR portal?"
+    choices:
+    - content: "View-Only Audit Logs role in Microsoft Purview or Exchange Online"
+      isCorrect: true
+      explanation: "Correct. Searching Microsoft Purview Audit logs requires the View-Only Audit Logs or Audit Logs role assigned in Microsoft Purview portal or Exchange Online. This permission is separate from Microsoft Sentinel RBAC—roles with Microsoft Sentinel control access to Microsoft Sentinel features but don't grant the right to query the Purview Audit log."
+    - content: "Microsoft Sentinel Contributor role on the Microsoft Sentinel workspace"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Sentinel Contributor role grants permissions to create and manage Microsoft Sentinel resources such as analytics rules, workbooks, and data connectors. It doesn't grant permission to search Microsoft Purview Audit logs, which is a separate permission managed in Microsoft Purview or Exchange Online."
+    - content: "Security Reader role in Microsoft Entra ID"
+      isCorrect: false
+      explanation: "Incorrect. The Security Reader role in Microsoft Entra ID grants read access to security-related features in Microsoft Entra ID, Defender for Cloud, and related services. It doesn't grant access to Microsoft Purview Audit log search."
+    - content: "Log Analytics Contributor role on the Log Analytics workspace"
+      isCorrect: false
+      explanation: "Incorrect. The Log Analytics Contributor role grants permissions to manage Log Analytics workspaces and their data. It doesn't grant access to Microsoft Purview Audit search, which uses a separate permission model in Microsoft Purview."
