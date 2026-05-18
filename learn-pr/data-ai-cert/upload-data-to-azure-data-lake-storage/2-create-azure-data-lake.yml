@@ -4,12 +4,12 @@ title: Exercise - Create an Azure Storage account for Azure Data Lake Storage
 metadata:
   title: Exercise - Create an Azure Storage account for Azure Data Lake Storage
   description: "Create an Azure Storage account for Azure Data Lake Storage"
-  ms.date: 03/25/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-create-azure-data-lake.md)]
+  [!include[](includes/2-create-azure-data-lake.md)]
