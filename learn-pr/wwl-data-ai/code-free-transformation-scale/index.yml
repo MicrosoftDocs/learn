@@ -2,13 +2,13 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory
 metadata:
   title: Code-free transformation at scale with Azure Data Factory
-  description: "Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 05/16/2024
-  author: wwlpublish
-  ms.author: jamesh
+  description: "Perform code-free transformation at scale with Azure Data Factory"
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-factory
-title: Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline
+title: Perform code-free transformation at scale with Azure Data Factory
 summary: In this module, you will learn how to perform common data transformation and cleansing activities within Azure Data Factory without using code.
 abstract: |
   * Introduction
@@ -35,7 +35,6 @@ roles:
 - data-scientist
 products:
 - azure-data-factory
-- azure-synapse-analytics
 subjects:
 - data-analytics
 units:
@@ -51,4 +50,4 @@ units:
 - learn.wwl.perform-code-free-transformation-scale-azure-data-factory.summary
 badge:
   uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.badge
-
+

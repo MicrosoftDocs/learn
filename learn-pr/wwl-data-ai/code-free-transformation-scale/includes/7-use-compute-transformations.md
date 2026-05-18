@@ -22,7 +22,7 @@ You have learned what Azure Data Factory is and how its integration with Azure D
 ## Integrating Azure Databricks notebooks with Azure Data Factory pipeline
 
   
-There are a number of tasks that needs to be performed to integrate Azure Databricks notebooks with Azure Data Factory pipeline as follows:
+There are many tasks that need to be performed to integrate Azure Databricks notebooks with Azure Data Factory pipeline as follows:
 
 1. Generate a Databricks Access Token.
 
@@ -40,29 +40,29 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 ### Task 1: Generate a Databricks Access Token.
 
-1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdbwsstudxx** where xx are the initials of your name.
+1. In the Azure portal, select **Resource groups** and then select **awrgstudxx**, and then select **awdbwsstudxx** where `xx` are the initials of your name.
 
-1. Click on **Launch Workspace**
+1. Select **Launch Workspace**
 
-1. Click the user **Settings** in the bottom left corner of your Databricks workspace.
+1. Select your user profile menu in the top right corner of your Databricks workspace.
 
-1. Click **User Settings**.
+1. Select **Settings**, then select the **Developer** tab.
 
-1. Go to the Access Tokens tab, and click the **Generate New Token** button.
+1. Under **Access tokens**, select the **Manage** button, then select **Generate new token**.
 
-1. Enter a description in the **comment** "For ADF Integration" and set the **lifetime** period of 10 days and click on **Generate**
+1. Enter a description in the **comment** "For ADF Integration" and set the **lifetime** period of 10 days and select **Generate**
 
-1. Copy the generated token and store in Notepad, and then click on **Done**.
+1. Copy the generated token and store in Notepad, and then select **Done**.
 
 ### Task 2: Generate a Databricks Notebook
 
-1. On the left of the screen, click on the **Workspace** icon, then click on the arrow next to the word Workspace, and click on **Create** and then click on **Folder**. Name the folder **adftutorial**, and click on **Create Folder**. The adftutorial folder appears in the Workspace.
+1. On the left of the screen, select the **Workspace** icon, then select the arrow next to the word Workspace, and select **Create** and then select **Folder**. Name the folder **adftutorial**, and select **Create Folder**. The adftutorial folder appears in the Workspace.
 
-1. Click on the drop down arrow next to adftutorial, and then click **Create**, and then click **Notebook**.
+1. Select the drop-down arrow next to adftutorial, and then select **Create**, and then select **Notebook**.
 
-1. In the Create Notebook dialog box, type the name of **mynotebook**, and ensure that the language states **Python**, and then click on **Create**. The notebook with the title of mynotebook appears/
+1. In the Create Notebook dialog box, type the name of `mynotebook`, and ensure that the language states **Python**, and then select **Create**. The notebook with the title of `mynotebook` appears/
 
-1. In the newly created notebook "mynotebook'" add the following code:
+1. In the newly created notebook `mynotebook` add the following code:
 
     ```Python
     # Creating widgets for leveraging parameters, and printing the parameters
@@ -79,65 +79,65 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 ### Task 3: Create Linked Services
 
-1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory and click on Open Azure Data Factory Studio.
+1. In Microsoft Edge, select the tab for the portal In the Azure portal, and return to Azure Data Factory and select **Open Azure Data Factory Studio**.
 
-1. On the left hand side of the screen, click on the **Manage** icon.
+1. On the left hand side of the screen, select the **Manage** icon.
 
-1. Under **Connections**,  click on **Linked Services**.
+1. Under **Connections**,  select **Linked Services**.
 
-1. In the **Linked Service**, at the top of the screen, click on **+ New**, 
+1. In the **Linked Service**, at the top of the screen, select **+ New**, 
 
-1. Click on the **Compute** tab, click **Azure Databricks**, and then click on **Continue**.
+1. Select the **Compute** tab, select **Azure Databricks**, and then select **Continue**.
 
-1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **Finish**
-    - **Name**: xx_dbls, where xx are your initials
-    - **Databricks Workspace**: awdbwsstudxx, where xx are your initials
+1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and select **Finish**
+    - **Name**: `xx_dbls`, where `xx` are your initials
+    - **Databricks Workspace**: `awdbwsstudxx`, where `xx` are your initials
     - **Select cluster**: use existing
     - **Domain/ Region**: should be populated
     - **Access Token**: Copy the access token from Notepad and paste into this field
-    - **Choose from existing cluster**: awdbclstudxx, where xx are your initials
+    - **Choose from existing cluster**: `awdbclstudxx`, where `xx` are your initials
     - Leave other options to their default settings
 
     > [!Note]
-    > When you click on finish, you are returned to the **Author & Monitor** screen where the xx_dbls has been created, with the other linked services created in the previous exercize.
+    > When you select **Finish**, you are returned to the **Azure Data Factory Studio** where the xx_dbls has been created, with the other linked services created in the previous exercize.
 
 ### Task 4: Create a pipeline that uses Databricks Notebook Activity.
 
-1. On the left hand side of the screen, click on the **Author** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
+1. On the left hand side of the screen, select the **Author** icon, and then select **Pipeline**. This opens up a tab with a Pipeline designer.
 
-1. At the bottom of the pipeline designer, click on the parameters tab, and then click on **+ New**
+1. At the bottom of the pipeline designer, select the parameters tab, and then select **+ New**
 
 1. Create a parameter with the Name of **name**, with a type of **string**
 
 1. Under the **Activities** menu, expand out **Databricks**.
 
-1. Click and drag **Notebook** onto the canvas.
+1. Select and drag **Notebook** onto the canvas.
 
 1. In the properties for the **Notebook1** window at the bottom, complete the following steps:
     - Switch to the **Azure Databricks** tab.
     - Select **xx_dbls** which you created in the previous procedure.
 
     - Switch to the **Settings** tab, and put **/adftutorial/mynotebook** in Notebook path.
-    - Expand **Base Parameters**, and then click on **+ New**
+    - Expand **Base Parameters**, and then select **+ New**
     - Create a parameter with the Name of **input**, with a value of **@pipeline().parameters.name**
 
-1. In the **Notebook1**, click on **Validate**, next to the Save as template button. As window appears on the right of the screen that states "Your Pipeline has been validated.
-No errors were found." Click on the >> to close the window.
+1. In the **Notebook1**, select **Validate**, next to the Save as template button. As window appears on the right of the screen that states "Your Pipeline has been validated.
+No errors were found." Select the >> to close the window.
 
-1. Click on the **Publish All** to publish the linked service and pipeline.
+1. Select **Publish All** to publish the linked service and pipeline.
 
     > [!Note]
     > A message will appear to state that the deployment is successful.
 
 ### Task 5: Trigger a Pipeline Run
 
-1. In the **Notebook1**, click on **Add trigger**, and click on **Trigger Now** next to the Debug  button.
+1. In the **Notebook1**, select **Add trigger**, and select **Trigger Now** next to the Debug  button.
 
-1. The **Pipeline Run** dialog box asks for the name parameter. Use **/path/filename** as the parameter here. Click Finish. A red circle appear above the Notebook1 activity in the canvas.
+1. The **Pipeline Run** dialog box asks for the name parameter. Use **/path/filename** as the parameter here. Select **Finish**. A red circle appears above the Notebook1 activity in the canvas.
 
 ### Task 6: Monitor the Pipeline
 
-1. On the left of the screen, click on the **Monitor** tab. Confirm that you see a pipeline run. It takes approximately 5-8 minutes to create a Databricks job cluster, where the notebook is executed.
+1. On the left of the screen, select the **Monitor** tab. Confirm that you see a pipeline run. It takes approximately 5-8 minutes to create a Databricks job cluster, where the notebook is executed.
 
 1. Select **Refresh** periodically to check the status of the pipeline run.
 
@@ -145,11 +145,11 @@ No errors were found." Click on the >> to close the window.
 
 ### Task 7: Verify the output
 
-1. In Microsoft Edge, click on the tab **mynotebook - Databricks** 
+1. In Microsoft Edge, select the tab `mynotebook - Databricks`
 
-1. In the **Azure Databricks** workspace, click on **Clusters** and you can see the Job status as pending execution, running, or terminated.
+1. In the **Azure Databricks** workspace, select **Clusters** and you can see the Job status as pending execution, running, or terminated.
 
-1. Click on the cluster **awdbclstudxx**, and then click on the **Event Log** to view the activities.
+1. Select the cluster `awdbclstudxx`, and then select the **Event Log** to view the activities.
 
     > [!Note]
     > You should see an Event Type of **Starting** with the time you triggered the pipeline run.
