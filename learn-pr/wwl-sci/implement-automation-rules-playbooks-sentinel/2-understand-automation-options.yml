@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel.understand-automation-options
+metadata:
+  title: Understand Microsoft Sentinel automation options
+  description: Explore the two automation tiers in Microsoft Sentinel—automation rules and Logic Apps playbooks—and learn when to use each for incident management and response.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Understand Microsoft Sentinel automation options
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-automation-options.md)]

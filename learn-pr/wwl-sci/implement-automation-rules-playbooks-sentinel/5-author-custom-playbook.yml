@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel.author-custom-playbook
+metadata:
+  title: Author a custom playbook with Azure Logic Apps
+  description: Build a custom Microsoft Sentinel playbook using Azure Logic Apps, configuring the Microsoft Sentinel incident trigger, and adding response actions. Then, connect the playbook to an automation rule for end-to-end automated response.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Author a custom playbook with Azure Logic Apps
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-author-custom-playbook.md)]
