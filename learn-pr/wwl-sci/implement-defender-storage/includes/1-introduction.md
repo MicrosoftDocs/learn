@@ -13,3 +13,4 @@ After completing this module, you'll be able to:
 - Configure malware scanning with monthly GB caps for cost control
 - Configure sensitive data threat detection
 - Configure alert notifications and verify that Defender outputs reach the appropriate security team
+
