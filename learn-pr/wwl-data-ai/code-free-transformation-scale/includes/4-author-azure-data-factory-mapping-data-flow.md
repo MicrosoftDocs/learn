@@ -112,11 +112,11 @@ The main tasks for this are as follows:
 
     ![Screenshot that shows the Aggregate transformation added to the Mapping Data Flow.](../media/use-aggregate-transformation.png)
 
-    In the Aggregates tab, you can create aggregates calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest, and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
+    In the Aggregates tab, you can create aggregates calculated over the specified group by columns. For every genre and year, let's get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function), and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
 
     ![Screenshot that shows the Aggregate transformation configured with group by columns and aggregate expressions.](../media/configure-aggregate-transformation.png)
 
-    * To see how the aggregate transformation changes your data, use the Data Preview tab
+    * To see how the aggregate transformation changes your data, use the Data Preview tab.
    
 
 1. **Specify Upsert condition via an Alter Row Transformation**. If you're writing to a tabular sink, you can specify insert, delete, update, and upsert policies on rows using the [Alter Row transformation](/azure/data-factory/data-flow-alter-row) by selecting the + icon next to your Aggregate transformation and selecting Alter Row under Row modifier. Since you're always inserting and updating, you can specify that all rows will always be upserted.
@@ -143,7 +143,7 @@ The main tasks for this are as follows:
     
         ![Screenshot that shows the Sink settings configured to allow upsert based on key columns.](../media/sink-settings.png)
 
-At this point, You have finished building your eight transformation Mapping Data Flow. It's time to run the pipeline and see the results!
+At this point, you have finished building your eight transformation Mapping Data Flows. It's time to run the pipeline and see the results!
 
 [![Screenshot that shows the completed Mapping Data Flow with all eight transformations connected.](../media/completed-mapping-data-flow.png)](../media/completed-mapping-data-flow.png#lightbox)
 
@@ -155,7 +155,7 @@ At this point, You have finished building your eight transformation Mapping Data
 
 1. Before you publish your pipeline, run another debug run to confirm it's working as expected. Looking at the Output tab, you can monitor the status of both activities as they're running.
 
-1. Once both activities succeeded, you can select the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
+1. Once both activities succeed, you can select the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
 
 1. If you used the same logic described in this lab, your Data Flow writes 737 rows to your SQL DW. You can go into [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) to verify the pipeline worked correctly and see what got written.
 

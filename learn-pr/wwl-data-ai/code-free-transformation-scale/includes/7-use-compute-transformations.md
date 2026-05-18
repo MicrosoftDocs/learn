@@ -38,11 +38,11 @@ There are many tasks that need to be performed to integrate Azure Databricks not
     > The following steps assume there is already an Azure Databricks cluster already provisioned
 
 
-### Task 1: Generate a Databricks Access Token.
+### Task 1: Generate a Databricks Access Token
 
 1. In the Azure portal, select **Resource groups** and then select **awrgstudxx**, and then select **awdbwsstudxx** where `xx` are the initials of your name.
 
-1. Select **Launch Workspace**
+1. Select **Launch Workspace**.
 
 1. Select your user profile menu in the top right corner of your Databricks workspace.
 
@@ -50,7 +50,7 @@ There are many tasks that need to be performed to integrate Azure Databricks not
 
 1. Under **Access tokens**, select the **Manage** button, then select **Generate new token**.
 
-1. Enter a description in the **comment** "For ADF Integration" and set the **lifetime** period of 10 days and select **Generate**
+1. Enter a description in the **comment** "For ADF Integration" and set the **lifetime** period of 10 days and select **Generate**.
 
 1. Copy the generated token and store in Notepad, and then select **Done**.
 
@@ -60,7 +60,7 @@ There are many tasks that need to be performed to integrate Azure Databricks not
 
 1. Select the drop-down arrow next to adftutorial, and then select **Create**, and then select **Notebook**.
 
-1. In the Create Notebook dialog box, type the name of `mynotebook`, and ensure that the language states **Python**, and then select **Create**. The notebook with the title of `mynotebook` appears/
+1. In the Create Notebook dialog box, type the name of `mynotebook`, and ensure that the language states **Python**, and then select **Create**. The notebook with the title of `mynotebook` appears.
 
 1. In the newly created notebook `mynotebook` add the following code:
 
@@ -75,7 +75,7 @@ There are many tasks that need to be performed to integrate Azure Databricks not
     ```
 
     > [!Note] 
-    > that the notebook path is **/adftutorial/mynotebook**
+    > The notebook path is **/adftutorial/mynotebook**
 
 ### Task 3: Create Linked Services
 
@@ -85,11 +85,11 @@ There are many tasks that need to be performed to integrate Azure Databricks not
 
 1. Under **Connections**,  select **Linked Services**.
 
-1. In the **Linked Service**, at the top of the screen, select **+ New**, 
+1. In the **Linked Service**, at the top of the screen, select **+ New**.
 
 1. Select the **Compute** tab, select **Azure Databricks**, and then select **Continue**.
 
-1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and select **Finish**
+1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and select **Finish**:
     - **Name**: `xx_dbls`, where `xx` are your initials
     - **Databricks Workspace**: `awdbwsstudxx`, where `xx` are your initials
     - **Select cluster**: use existing
@@ -99,13 +99,13 @@ There are many tasks that need to be performed to integrate Azure Databricks not
     - Leave other options to their default settings
 
     > [!Note]
-    > When you select **Finish**, you are returned to the **Azure Data Factory Studio** where the xx_dbls has been created, with the other linked services created in the previous exercize.
+    > When you select **Finish**, you are returned to the **Azure Data Factory Studio** where the xx_dbls has been created, with the other linked services created in the previous exercise.
 
-### Task 4: Create a pipeline that uses Databricks Notebook Activity.
+### Task 4: Create a pipeline that uses Databricks Notebook Activity
 
 1. On the left hand side of the screen, select the **Author** icon, and then select **Pipeline**. This opens up a tab with a Pipeline designer.
 
-1. At the bottom of the pipeline designer, select the parameters tab, and then select **+ New**
+1. At the bottom of the pipeline designer, select the parameters tab, and then select **+ New**.
 
 1. Create a parameter with the Name of **name**, with a type of **string**
 
@@ -118,10 +118,10 @@ There are many tasks that need to be performed to integrate Azure Databricks not
     - Select **xx_dbls** which you created in the previous procedure.
 
     - Switch to the **Settings** tab, and put **/adftutorial/mynotebook** in Notebook path.
-    - Expand **Base Parameters**, and then select **+ New**
+    - Expand **Base Parameters**, and then select **+ New**.
     - Create a parameter with the Name of **input**, with a value of **@pipeline().parameters.name**
 
-1. In the **Notebook1**, select **Validate**, next to the Save as template button. As window appears on the right of the screen that states "Your Pipeline has been validated.
+1. In the **Notebook1**, select **Validate**, next to the Save as template button. A window appears on the right of the screen that states "Your Pipeline has been validated.
 No errors were found." Select the >> to close the window.
 
 1. Select **Publish All** to publish the linked service and pipeline.
@@ -145,7 +145,7 @@ No errors were found." Select the >> to close the window.
 
 ### Task 7: Verify the output
 
-1. In Microsoft Edge, select the tab `mynotebook - Databricks`
+1. In Microsoft Edge, select the tab `mynotebook - Databricks`.
 
 1. In the **Azure Databricks** workspace, select **Clusters** and you can see the Job status as pending execution, running, or terminated.
 
