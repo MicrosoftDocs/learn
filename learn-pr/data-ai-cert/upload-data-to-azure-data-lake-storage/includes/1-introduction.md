@@ -1,6 +1,6 @@
-Azure Data Lake Storage Gen2 is an enterprise data lake solution designed to run large-scale analytical workloads in the cloud. It takes core capabilities from Azure Data Lake Storage Gen1, including security, scale, and file system semantics. It combines these capabilities with the low cost and high availability of Azure Blob storage.
+Azure Data Lake Storage isn't a separate service or account type. Instead, it's a set of capabilities built on top of Azure Blob Storage that you unlock by enabling the *hierarchical namespace* setting when you create a storage account. This design means you get enterprise-grade analytics features — compatibility with big data analytics frameworks such as Apache Spark, a hierarchical directory structure, a fine-grained POSIX security model, and massive scalability—at Azure Blob Storage storage capacity prices. Transaction costs vary depending on which endpoint your workloads use.
 
-Let's suppose you want to show the company, Contoso, the various ways you can upload data into Data Lake Storage Gen2. Your demonstration will include examples about how to load data in an ad-hoc way, and how to integrate the upload capability into applications.
+Let's suppose you want to show the company, Contoso, the various ways you can upload data into Data Lake Storage Gen2. Your demonstration includes examples about how to load data in an ad-hoc way, and how to integrate the upload capability into applications.
 
 ## Learning objectives
 

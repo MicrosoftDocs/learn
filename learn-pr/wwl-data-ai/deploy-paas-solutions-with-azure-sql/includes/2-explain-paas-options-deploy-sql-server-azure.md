@@ -26,7 +26,7 @@ In Azure, all services support physical hardware, and you have the flexibility t
 
 [DTU-based purchasing model](/azure/azure-sql/database/service-tiers-dtu?azure-portal=true) is calculated based on a formula combining compute, storage, and I/O resources. It's a good choice for customers who want simple, preconfigured resource options.
 
-The DTU purchasing model comes in several different service tiers, such as Basic, Standard, and Premium. Each tier has varying capabilities, providing a wide range of options when choosing this platform.
+The DTU purchasing model comes in three different service tiers: Basic, Standard, and Premium. Each tier has varying capabilities, providing a wide range of options when choosing this platform.
 
 In terms of performance, the Basic tier is used for less demanding workloads, while the Premium tier is used for intensive workload requirements.
 
