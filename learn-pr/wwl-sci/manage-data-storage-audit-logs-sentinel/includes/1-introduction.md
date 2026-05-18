@@ -16,3 +16,4 @@ After completing this module, you'll be able to:
 - Configure data retention tiers and archive policies for Microsoft Sentinel tables.
 - Connect Microsoft Purview Audit as a data source in Microsoft Sentinel.
 - Query Purview Audit logs in the Microsoft Defender XDR portal.
+
