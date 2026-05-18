@@ -4,12 +4,12 @@ title: Understand data ingestion security considerations
 metadata:
   title: Understand data ingestion security considerations
   description: "Understand data ingestion security considerations"
-  ms.date: 01/05/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-understand-data-ingestion-security-considerations.md)]
+  [!include[](includes/7-understand-data-ingestion-security-considerations.md)]
