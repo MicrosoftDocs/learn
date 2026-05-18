@@ -21,7 +21,7 @@ An Azure integration runtime is capable of:
     - Validation activity
     - Web activity
 
-You can set a certain location of an Azure IR, in which case the data movement or activity dispatch will happen in that specific region. If you choose to use the autoresolve Azure IR, which is the default, ADF makes a best effort to automatically detect your sink and source data store to choose the best location either in the same region if available or the closest one in the same geography for the Copy Activity. For anything else, it uses the IR in the Data Factory region. Azure Integration Runtime also has support for virtual networks. 
+You can set a certain location of an Azure IR, in which case the data movement or activity dispatch will happen in that specific region. If you choose to use the autoresolve Azure IR, which is the default, ADF makes a best effort to automatically detect your sink and source data store to choose the best location either in the same region, if available, or the closest one in the same geography for the Copy Activity. For anything else, it uses the IR in the Data Factory region. Azure Integration Runtime also has support for virtual networks. 
 
 ## Create and configure Azure integration runtime
 
