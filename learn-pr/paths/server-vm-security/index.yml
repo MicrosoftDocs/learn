@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.server-vm-security
+metadata:
+  title: Implement Security for Servers and Virtual Machines
+  description: "Implement layered security controls across Azure virtual machines and Arc-enabled hybrid servers. Configure disk encryption, Trusted Launch, Azure Bastion, Microsoft Defender for Servers, just-in-time VM access, and Azure Machine Configuration to close security gaps across your server estate."
+  ms.date: 05/18/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: Implement security for servers and virtual machines
+summary: |
+  Implement layered security controls across Azure virtual machines and Arc-enabled hybrid servers. Configure disk encryption options including encryption at host with customer-managed keys and confidential disk encryption. Enable Trusted Launch security features—Secure Boot, vTPM, and integrity monitoring—to protect against boot-level threats. Eliminate public RDP and SSH exposure with Azure Bastion. Extend Azure security governance to on-premises and multicloud servers using Azure Arc. Deploy Microsoft Defender for Servers for vulnerability scanning, endpoint detection, agentless machine scanning, and File Integrity Monitoring. Enforce just-in-time VM access to eliminate permanently open management ports. Apply Azure Machine Configuration to audit and enforce OS security baselines across your entire server estate.
+prerequisites: |
+  - Working knowledge of Azure Virtual Machines, including deploying and managing VMs
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+  - Understanding of Azure role-based access control (RBAC) and Azure Policy fundamentals
+  - Familiarity with Azure Arc server connectivity
+  - Completion of (or equivalent knowledge to) Connect hybrid and multicloud environments to Microsoft Defender for Cloud
+  - Completion of (or equivalent knowledge to) Enable and configure workload protection plans in Microsoft Defender for Cloud
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-virtual-machines
+  - defender-for-cloud
+  - azure-bastion
+  - azure-arc
+  - azure-key-vault
+  - azure
+subjects:
+  - security
+  - cloud-security
+modules:
+- learn.wwl.implement-disk-encryption-azure-virtual-machines
+- learn.wwl.configure-trusted-launch-azure-virtual-machines
+- learn.wwl.plan-implement-azure-bastion
+- learn.wwl.manage-security-azure-arc-servers
+- learn.wwl.implement-microsoft-defender-servers
+- learn.wwl.enable-enforce-just-in-time-vm-access
+- learn.wwl.enforce-vm-security-machine-configuration
+trophy:
+  uid: learn.wwl.server-vm-security.trophy
