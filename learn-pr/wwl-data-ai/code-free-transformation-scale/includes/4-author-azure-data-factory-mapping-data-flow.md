@@ -149,7 +149,7 @@ At this point, You have finished building your eight transformation Mapping Data
 
 ## Task 5: Running the Pipeline
 
-1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](/sql/relational-databases/polybase/polybase-guide?view=sql-server-2017), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
+1. Go to the pipeline1 tab in the canvas. Because Azure Synapse Analytics in Data Flow uses [PolyBase](/sql/relational-databases/polybase/polybase-guide), you must specify a blob or ADLS staging folder. In the Execute Data Flow activity's settings tab, open up the PolyBase accordion and select your ADLS linked service and specify a staging folder path.
 
     ![Screenshot that shows the PolyBase configuration with an ADLS staging folder path specified.](../media/polybase-configuration.png)
 
@@ -157,6 +157,6 @@ At this point, You have finished building your eight transformation Mapping Data
 
 1. Once both activities succeeded, you can select the eyeglasses icon next to the Data Flow activity to get a more in depth look at the Data Flow run.
 
-1. If you used the same logic described in this lab, your Data Flow writes 737 rows to your SQL DW. You can go into [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017) to verify the pipeline worked correctly and see what got written.
+1. If you used the same logic described in this lab, your Data Flow writes 737 rows to your SQL DW. You can go into [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) to verify the pipeline worked correctly and see what got written.
 
     ![Screenshot that shows the query results displayed in SQL Server Management Studio.](../media/query-results.png)
