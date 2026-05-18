@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-storage.enable-deploy-defender-storage
+metadata:
+  title: Enable and deploy Defender for Storage
+  description: Enable Microsoft Defender for Storage at subscription and resource level, exclude specific storage accounts from protected subscriptions, deploy at scale using built-in Azure Policy, and verify coverage using Storage Center.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Enable and deploy Defender for Storage
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-enable-deploy-defender-storage.md)]
