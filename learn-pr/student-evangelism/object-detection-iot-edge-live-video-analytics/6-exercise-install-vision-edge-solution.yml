@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.object-detection-lva-edge-device.exercise-install-vision-edge-solution
-title: Exercise - Install Vision Edge Solution
+title: Exercise - Install Vision on Edge solution
 metadata:
-  title: Exercise - Install Vision Edge Solution
-  description: In this section, we help learner to install Vision Edge Solution.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  title: Exercise - Install Vision on Edge solution
+  description: Historical exercise reviewing how the archived Vision on Edge solution installer configured Azure resources and IoT Edge modules for the retired Live Video Analytics scenario.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 10
 content: |
@@ -14,14 +14,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In the context of the Vision on Edge solution, you deploy several edge modules to your edge device. Which of the following is responsible for defining where media should be captured from, how it should be processed, and where the results should be delivered?"
+  - content: "In the context of the Vision on Edge solution, which of the following defines where media should be captured from, how it should be processed, and where the results should be delivered?"
     choices:
     - content: "Web module"
       isCorrect: false
-      explanation: "This module is the web application that user interacts with "
+      explanation: "This module hosts the web application, but it doesn't define the media sources, processors, and sinks."
     - content: "Live Video Analytics module"
-      isCorrect: true
-      explanation: "You set the media graph to the live video analytics module that parses frames from the camera and sends them to the Inference Module"
-    - content: "Predict module"
       isCorrect: false
-      explanation: "It runs the custom vision trained model or user-provided model and return the results"
+      explanation: "The Live Video Analytics module hosts and executes the media graph, but the media graph defines the sources, processors, and sinks."
+    - content: "Media graph"
+      isCorrect: true
+      explanation: "The media graph topology and instance together define where media is captured, how it's processed, and where results are delivered."
