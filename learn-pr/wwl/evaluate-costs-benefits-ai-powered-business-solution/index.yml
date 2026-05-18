@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution
+metadata:
+  title: "Evaluate Costs and Benefits of AI Solutions"
+  description: "Learn to assess costs and benefits of AI solutions. Develop ROI analyses, evaluate TCO, and decide to build, buy, or extend AI components."
+  ms.date: 02/13/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: microsoft-365-copilot
+title: "Evaluate costs and benefits of AI solutions"
+summary: Learn to assess costs, benefits, and ROI of AI solutions while deciding whether to build, buy, or extend AI components for business processes.
+abstract: |
+  After completing this module, you will be able to:
+  - Define ROI criteria and evaluate total cost of ownership (TCO) for AI solutions.
+  - Create a comprehensive ROI analysis for AI-powered business processes.
+  - Analyze and decide whether to build, buy, or extend AI components.
+  - Implement model routing strategies to optimize AI performance and cost.
+prerequisites: |
+  - Familiarity with AI concepts and business processes.
+  - Basic understanding of ROI and TCO principles.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect 
+products: 
+- microsoft-365-copilot 
+- microsoft-365-copilot-chat 
+- power-platform 
+- microsoft-copilot-studio 
+- dynamics-365 
+subjects: 
+- generative-ai 
+- data-analytics 
+- data-management 
+- data-engineering 
+- data-integration 
+units:
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.introduction
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.roi-criteria-ai-powered-business-solution-including-total-cost-ownership
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.create-roi-analysis-proposed-ai-solution-business-process
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.analyze-whether-build-buy-extend-ai-components-business-solutions
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.implement-model-router-intelligently-route-requests-most-suitable-model
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.knowledge-check
+- learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.summary
+badge:
+  uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.badge

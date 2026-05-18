@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-static-website-blob-storage.exercise-upload-verify-content
+title: Exercise - Upload and verify site content
+metadata:
+  title: Exercise - Upload and verify site content
+  description: "Exercise - Upload and verify site content"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-exercise-upload-verify-content.md)]

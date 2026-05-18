@@ -1,23 +1,24 @@
 ### YamlMime:Module
 uid: learn.dpu.powerful-security-ai
-title: Powerful security designed for AI
+title: Secure on-device AI with Copilot+ PCs
 metadata:
-  title: Powerful Security Designed For AI
-  description: In this module, you’ll explore how Copilot+ PCs are engineered with advanced, built-in security features that empower employees while helping safeguard sensitive business data.
-  ms.date: 08/05/2025
+  title: Secure On-Device AI with Copilot+ PCs
+  description: Learn how Copilot+ PCs integrate hardware-backed security, Windows 11 Pro protections, and on-device AI processing to help organizations protect data, identities, and devices.
+  ms.date: 05/06/2026
   author: hhreyes21
   ms.author: v-homerreyes
   ms.topic: module
   ms.service: windows-11
   ms.custom: CW052024-5
 summary: >
-  This module highlights how Copilot+ PCs deliver advanced security for AI-powered work, combining hardware-backed protection, enterprise privacy controls, and productivity-enhancing features like Recall (preview) and Microsoft 365 Copilot integration.
+  This module explores how Copilot+ PCs secure AI-powered experiences by integrating hardware-backed protections, Windows 11 Pro security, and on-device AI processing. You learn how organizations can adopt AI with built-in security, privacy, and management controls across devices and cloud services.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Describe how Copilot+ PCs integrate hardware-backed security and AI acceleration to protect data and identities.
-  - Distinguish the key security advantages of Copilot+ PCs compared to other Windows 11 Pro devices.
-  - Explain how features like Microsoft Pluton, enhanced sign-in security, and Recall (preview) help businesses operate with confidence.
-  - Understand how Copilot+ PCs align with enterprise-level security models, including Zero Trust principles.
+  By the end of this module, you are able to:
+  - Describe how Copilot+ PCs integrate hardware-backed security and AI acceleration to protect data and identities
+  - Explain how Windows 11 Pro security features protect data, identities, and devices
+  - Summarize how Microsoft Pluton and Windows Hello Enhanced Sign-in Security protect credentials and device integrity
+  - Describe how on-device AI experiences support privacy and align with Zero Trust principles
+  - Identify how IT administrators can govern on-device AI experiences using existing management tools
 prerequisites: |
   - None
 iconUrl: /training/achievements/powerful-security-designed-for-ai.svg

@@ -2,11 +2,9 @@
 uid: learn.wwl.describe-security-capabilities-of-azure-sentinel.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["67F3C680_2","67F3C680_22","67F3C680_30","67F3C680_34","67F3C680_59","67F3C680_75","67F3C680_79","67F3C680_83","67F3C680_100","67F3C680_112","67F3C680_124","67F3C680_136","67F3C680_140"]
-  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/06/2024
+  ms.date: 03/31/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -23,27 +21,27 @@ quiz:
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false
-      explanation: "Incorrect. Redirect is not one of the four key aspects of a SIEM/SOAR solution."
+      explanation: "Incorrect. Redirect isn't one of the four key aspects of a SIEM/SOAR solution."
     - content: "Collect, Detect, Investigate, and Respond."
       isCorrect: true
-      explanation: "Correct. A SIEM/SOAR solution uses collect, detect, investigate, and respond to identify and protect your organization's network perimeter."
+      explanation: "Correct. Microsoft Sentinel uses these four areas to help security teams identify and respond to threats across the entire enterprise."
     - content: "Collect, Detect, Investigate, and Repair."
       isCorrect: false
-      explanation: "Incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
+      explanation: "Incorrect. Repair isn't one of the four key aspects of a SIEM/SOAR solution."
   
-  - content: "Your estate has many different data sources where data is stored. Which tool should be used with Microsoft Sentinel to quickly gain insights across your data as soon as a data source is connected?"
+  - content: "A security analyst suspects that a threat actor is active in the environment but no alert has been triggered yet. Which Microsoft Sentinel capability lets the analyst proactively search for suspicious activity before an alert fires?"
     choices:
-    - content: "Azure Monitor Workbooks."
+    - content: "Threat hunting."
       isCorrect: true
-      explanation: "Correct. Using the Microsoft Sentinel integration with Azure Monitor Workbooks allows you to monitor data and provides versatility in creating custom workbooks."
+      explanation: "Correct. Threat hunting lets security analysts run queries across Microsoft Sentinel data to search for suspicious activity that hasn't yet triggered an analytics rule. When a query surfaces a significant finding, it can be promoted into a custom analytics rule to generate alerts automatically in the future."
+    - content: "Automation rules."
+      isCorrect: false
+      explanation: "Incorrect. Automation rules manage how incidents are handled after they're created—for example, assigning or triaging them. They don't search for threats proactively."
     - content: "Playbooks."
       isCorrect: false
-      explanation: "Incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."
-    - content: "Microsoft Defender XDR."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Defender XDR provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
+      explanation: "Incorrect. Playbooks automate remediation actions in response to incidents that have already been detected. They aren't used to proactively search for unknown threats."
 
-  - content: A security analyst is tasked with investigating a specific incident using Microsoft Sentinel. They want to obtain a summary of the incident, related alerts, reputation scores, users, and devices.  What functionality should they use?
+  - content: A security analyst is tasked with investigating a specific incident using Microsoft Sentinel. They want to obtain a summary of the incident, related alerts, reputation scores, users, and devices. What functionality should they use?
     choices:
     - content: Microsoft Sentinel KQL (Preview) plugin
       isCorrect: false
@@ -53,4 +51,28 @@ quiz:
       explanation: Correct. The Microsoft Sentinel incident investigation promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
     - content: Jupyter notebooks
       isCorrect: false
-      explanation: Incorrect. Jupyter notebooks are an open-source web application that allows users to create and share documents containing live code, equations, visualizations, and narrative text.
+      explanation: Incorrect. Jupyter notebooks are used to create documents with live code, visualizations, and narrative text for extended analytics, not to retrieve structured incident reports.
+
+  - content: A security operations team is struggling with alert fatigue—analysts are overwhelmed by the volume of alerts and missing genuine threats. Which capability in a modern SIEM/SOAR solution most directly addresses this problem?
+    choices:
+    - content: Generating more alerts from more data sources to improve coverage.
+      isCorrect: false
+      explanation: Incorrect. Adding more alerts without prioritization makes alert fatigue worse, not better.
+    - content: Using AI and machine learning to group related alerts into incidents, assign severity scores, and reduce false positives.
+      isCorrect: true
+      explanation: Correct. Modern SIEM/SOAR platforms use AI and ML to correlate related alerts into high-quality incidents, prioritize by severity, and reduce false positives—directly reducing the number of alerts analysts must review.
+    - content: Disabling alerts from lower-priority data sources to reduce volume.
+      isCorrect: false
+      explanation: Incorrect. Disabling alerts reduces visibility and can cause genuine threats to be missed.
+
+  - content: What best describes Microsoft Security Copilot?
+    choices:
+    - content: A cloud-native SIEM/SOAR platform that collects and analyzes security data to detect and respond to threats.
+      isCorrect: false
+      explanation: Incorrect. That description applies to Microsoft Sentinel. Microsoft Security Copilot is an AI-powered assistant, not a SIEM/SOAR platform.
+    - content: A generative AI-powered security solution that helps defenders investigate threats, summarize incidents, and build KQL queries through natural language.
+      isCorrect: true
+      explanation: Correct. Microsoft Security Copilot is a generative AI-powered solution designed to help security professionals work more efficiently across scenarios such as incident investigation, threat hunting, and query building—using natural language.
+    - content: A data connector that links Microsoft Sentinel to non-Microsoft security tools and automates playbook execution.
+      isCorrect: false
+      explanation: Incorrect. Data connectors are components of Microsoft Sentinel that bring in security data. Microsoft Security Copilot is an AI-powered security assistant.

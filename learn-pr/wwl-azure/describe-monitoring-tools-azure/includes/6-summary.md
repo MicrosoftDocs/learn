@@ -15,3 +15,14 @@ The following additional resources are intended to provide more information on t
  -  [Get started with Azure Advisor](/learn/modules/get-started-azure-advisor/) is a Microsoft Learn module that helps you get started with Azure Advisor.
  -  [Intro to Azure Service Health](/learn/modules/intro-to-azure-service-health/) is a Microsoft Learn module that provides additional information about Azure Service Health.
  -  [Monitor the usage, performance, and availability of resources with Azure Monitor](/learn/paths/monitor-usage-performance-availability-resources-azure-monitor/) is a Microsoft Learn learning path that dives deeper into Azure Monitor. It provides helpful guidance on setting up and getting the most from the Azure Monitor service.
+
+## Explore with Copilot
+
+> [!TIP]
+> Try one of these prompts in Copilot Chat:
+>
+> - "Design a monitoring strategy that combines Azure Advisor, Service Health, Azure Monitor, Log Analytics, Alerts, and Application Insights."
+> - "Walk through an outage scenario and explain which monitoring tool to check first at each stage of diagnosis and response."
+> - "Define an alerting model with severity levels, thresholds, action groups, and escalation paths for a production workload."
+
+

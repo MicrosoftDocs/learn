@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0bd987dd-e22e-4be2-b191-8c3f5ada0112]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to optimize generative AI model performance using complementary strategies in Microsoft Foundry.
 
 You learned how to:
@@ -11,7 +22,11 @@ The key takeaway is that prompt engineering, RAG, and fine-tuning aren't competi
 
 For the travel agency scenario, the most effective solution might combine all three: a fine-tuned model that maintains the brand voice, RAG that grounds responses in the actual hotel catalog, and prompt engineering that adds conversation-specific instructions and safety guardrails.
 
-### Learn more
+::: zone-end
+
+## Further reading
+
+For more information about the topics discussed in this module, see the following resources:
 
 - [Getting started with customizing a large language model (LLM)](/azure/ai-foundry/openai/concepts/customizing-llms)
 - [Prompt engineering techniques](/azure/ai-foundry/openai/concepts/prompt-engineering)

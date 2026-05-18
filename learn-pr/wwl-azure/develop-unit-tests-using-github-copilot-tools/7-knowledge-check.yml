@@ -2,73 +2,104 @@
 uid: learn.wwl.develop-unit-tests-using-github-copilot-tools.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["170CED1A_10","170CED1A_14","170CED1A_2","170CED1A_26","170CED1A_6","170CED1A_51","170CED1A_55","170CED1A_59","170CED1A_63","170CED1A_67","170CED1A_83"]
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/03/2026
+  ms.date: 05/12/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A
-  ai_generated_module_assessment: true
   module_assessment: true
 durationInMinutes: 7
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the role of GitHub Copilot Chat in generating unit test cases?"
+  - content: "Which Visual Studio Code feature provides a tree view that lists every test case in your workspace and lets you run or debug them?"
     choices:
-    - content: "It automatically writes all the test cases for the solution."
-      isCorrect: false
-      explanation: "Incorrect. GitHub Copilot Chat does not automatically write all the test cases for a solution. It does generate unit tests based on the code specified by the user."
-    - content: "It only suggests possible input parameters and expected output values."
-      isCorrect: false
-      explanation: "Incorrect. While GitHub Copilot Chat does suggest possible input parameters and expected output values, it also suggests assertions and can help identify edge cases and boundary conditions."
-    - content: "It helps generate unit tests based on the code files and selections specified by the user."
+    - content: "The Test Explorer view provided by the C# Dev Kit extension."
       isCorrect: true
-      explanation: "Correct. GitHub Copilot Chat helps generate code snippets for test cases, suggesting possible inputs, outputs, assertions, and identifying edge cases and boundary conditions."
-  - content: "What is the purpose of the Test Explorer in Visual Studio Code?"
-    choices:
-    - content: "To write new code snippets for unit tests."
+      explanation: "Correct. The C# Dev Kit extension contributes the Test Explorer, which lists all test cases in the workspace and provides controls to run and debug them."
+    - content: "The Chat view in GitHub Copilot."
       isCorrect: false
-      explanation: "Incorrect. The Test Explorer is not used to write new code snippets, but to manage and run existing unit tests."
-    - content: "To run and debug unit tests, view the results of test runs, and manage test cases in the workspace."
+      explanation: "Incorrect. The Chat view is used to interact with GitHub Copilot. It doesn't enumerate test cases or run them directly."
+    - content: "The Solution Explorer view."
+      isCorrect: false
+      explanation: "Incorrect. Solution Explorer shows projects and files, but it doesn't enumerate or run individual test cases."
+  - content: "You want to create a new xUnit test project in Visual Studio Code. What's the most direct way to do this?"
+    choices:
+    - content: "Open the Command Palette and run `.NET: New Project...`, then select `xUnit Test Project`."
       isCorrect: true
-      explanation: "Correct. The Test Explorer is used to run and debug unit tests, view test results, and manage test cases in the workspace."
-    - content: "To generate test cases based on the code context."
+      explanation: "Correct. The `.NET: New Project...` command in the Command Palette is the recommended way to create a test project that uses xUnit, NUnit, or MSTest."
+    - content: "Right-click the editor and select `Generate Code` > `Generate Tests`."
       isCorrect: false
-      explanation: "Incorrect. The Test Explorer does not generate test cases, but provides a user interface to manage and run existing test cases."
-  - content: "What is the purpose of generating assertions to ensure that function input parameters are valid?"
+      explanation: "Incorrect. There's no `Generate Tests` smart action for creating a test project. Use the `.NET: New Project...` command in the Command Palette instead."
+    - content: "Open the Chat view and run the `/newproject` slash command."
+      isCorrect: false
+      explanation: "Incorrect. `/newproject` isn't a built-in GitHub Copilot slash command. Use the `.NET: New Project...` command in the Command Palette to scaffold a test project."
+  - content: "Which slash command in the Chat view generates unit tests for the code that's currently active in the editor?"
     choices:
-    - content: "To enhance the performance of the function."
-      isCorrect: false
-      explanation: "Incorrect. Generating assertions for function input parameters is not primarily done to enhance performance."
-    - content: "To prevent invalid data from being processed by the function."
+    - content: "`/tests`"
       isCorrect: true
-      explanation: "Correct. Generating assertions for function input parameters helps prevent invalid data from being processed by the function."
-    - content: "To check if the function returns the expected output."
+      explanation: "Correct. The `/tests` slash command generates unit tests for the active file or the current editor selection."
+    - content: "`/setupTests`"
       isCorrect: false
-      explanation: "Incorrect. Generating assertions for function input parameters is not primarily done to check the function's output."
-  - content: "What are the three built-in agents available in the Chat view for creating unit tests?"
+      explanation: "Incorrect. `/setupTests` helps configure a testing framework for your project. It doesn't generate test code for an existing file."
+    - content: "`/explain`"
+      isCorrect: false
+      explanation: "Incorrect. `/explain` describes how code works. It doesn't generate tests."
+  - content: "What are the three built-in agents available in the GitHub Copilot Chat view?"
     choices:
-    - content: "Ask, Edit, and Agent."
-      isCorrect: false
-      explanation: "Incorrect. Edit mode has been replaced. The three built-in agents available in the Chat view are Ask, Plan, and Agent."
     - content: "Ask, Plan, and Agent."
       isCorrect: true
-      explanation: "Correct. The Chat view provides three built-in agents: Ask for answering questions, Plan for creating structured implementation plans before writing code, and Agent for agentic coding workflows."
+      explanation: "Correct. The Chat view provides three built-in local agents: Ask for question-and-answer prompts, Plan for creating structured implementation plans, and Agent for autonomous coding workflows."
+    - content: "Ask, Edit, and Agent."
+      isCorrect: false
+      explanation: "Incorrect. Edit isn't a built-in agent in the Chat view. The three built-in agents are Ask, Plan, and Agent."
     - content: "Plan, Debug, and Agent."
       isCorrect: false
-      explanation: "Incorrect. Debug is not a built-in agent in the Chat view. The three built-in agents are Ask, Plan, and Agent."
-  - content: "What is the purpose of the Plan agent in the Chat view?"
+      explanation: "Incorrect. Debug isn't a built-in agent in the Chat view. The three built-in agents are Ask, Plan, and Agent."
+  - content: "Your team has a multi-step testing task: scaffold a new test project, generate tests across several application files, and run the tests. Which agent is best suited to autonomously complete this work?"
     choices:
-    - content: "It automatically implements code changes across multiple files in the workspace."
-      isCorrect: false
-      explanation: "Incorrect. The Plan agent does not make code changes. The Plan agent creates a structured implementation plan, which can then be handed off to the Agent for implementation."
-    - content: "It creates a structured, step-by-step implementation plan before writing any code."
+    - content: "The Agent."
       isCorrect: true
-      explanation: "Correct. The Plan agent researches the task comprehensively, asks clarifying questions, and produces a step-by-step plan. Once the plan is reviewed and approved, it can be handed off to the Agent for implementation."
-    - content: "It runs tests and generates test reports for the project."
+      explanation: "Correct. The Agent is optimized for autonomous coding workflows that span multiple files and terminal commands, including scaffolding test projects and running tests."
+    - content: "The Ask agent."
       isCorrect: false
-      explanation: "Incorrect. The Plan agent does not run tests or generate reports. The Plan agent creates a detailed implementation plan that can be handed off to the Agent for implementation."
+      explanation: "Incorrect. The Ask agent responds to individual prompts. It doesn't autonomously create files, run tests, or invoke terminal commands."
+    - content: "The Plan agent."
+      isCorrect: false
+      explanation: "Incorrect. The Plan agent produces a step-by-step plan but doesn't implement it. Hand the plan off to the Agent for autonomous implementation."
+  - content: "You want GitHub Copilot to generate unit tests for the active file and write them directly into a test project. Which agent in the Chat view is the recommended starting point?"
+    choices:
+    - content: "Agent."
+      isCorrect: true
+      explanation: "Correct. Agent mode can edit files, run terminal commands, and rerun tests, so it can take a single prompt and produce a working test file you only need to review."
+    - content: "Ask."
+      isCorrect: false
+      explanation: "Incorrect. Ask mode answers questions in chat without modifying files. Use Ask mode to explore edge cases or framework choices first, then switch to Agent mode to actually generate the tests."
+    - content: "Plan."
+      isCorrect: false
+      explanation: "Incorrect. The Plan agent produces a step-by-step plan but doesn't implement it. Use Agent mode for direct test generation, or hand a Plan output off to the Agent for autonomous implementation."
+  - content: "A test file already contains several xUnit test methods. You want to quickly add tests for a few more edge cases by working directly in the editor. Which GitHub Copilot feature is the best fit?"
+    choices:
+    - content: "Ghost text inline suggestions in the editor."
+      isCorrect: true
+      explanation: "Correct. Ghost text uses the existing patterns in the file to suggest additional test cases as you type. Press Tab to accept a suggestion."
+    - content: "The `/setupTests` slash command in the Chat view."
+      isCorrect: false
+      explanation: "Incorrect. `/setupTests` helps configure a testing framework. It doesn't add edge-case tests to an existing file."
+    - content: "The Plan agent in the Chat view."
+      isCorrect: false
+      explanation: "Incorrect. The Plan agent is intended for designing a test strategy across a larger task, not for adding individual edge cases to an existing test file."
+  - content: "A unit test fails in Test Explorer. What's the fastest way to ask GitHub Copilot to propose a fix for that specific failure?"
+    choices:
+    - content: "Hover over the failing test in Test Explorer and select the Fix Test Failure button (sparkle icon)."
+      isCorrect: true
+      explanation: "Correct. The Fix Test Failure button in Test Explorer opens a GitHub Copilot chat session with the failing test and its output attached as context."
+    - content: "Run the `/setupTests` slash command in the Chat view."
+      isCorrect: false
+      explanation: "Incorrect. `/setupTests` is for configuring a testing framework, not for fixing a specific failing test."
+    - content: "Right-click the test file and select `Generate Code` > `Generate Tests`."
+      isCorrect: false
+      explanation: "Incorrect. There's no `Generate Tests` smart action in Visual Studio Code. Use the Fix Test Failure button in Test Explorer or the `/fixTestFailure` slash command in the Chat view."

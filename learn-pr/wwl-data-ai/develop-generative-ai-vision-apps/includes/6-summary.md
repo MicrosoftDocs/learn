@@ -1,7 +1,16 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6ed66085-78f6-425b-bbab-34d2ef683284]
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned about vision-enabled generative AI models and how to implement chat solutions that include image-based input.
 
 Vision-enabled models let you create AI solutions that can understand images and respond to related questions or instructions. Beyond just identifying objects in pictures, some models can also use reasoning based on what they see. For instance, they can interpret a chart or assess if an object is damaged.
 
-> [!TIP]
-> For more information about working with multimodal models in Microsoft Foundry, see **[How to use image and audio in chat completions with Azure AI model inference](/azure/ai-foundry/model-inference/how-to/use-chat-multi-modal)** and **[Quickstart: Use images in your AI chats](/azure/ai-services/openai/gpt-v-quickstart)**.
+::: zone-end
 
+> [!TIP]
+> For more information about analyzing images with the OpenAI Responses API, see, see **[Images and vision](https://developers.openai.com/api/docs/guides/images-vision?format=url#analyze-images?azure-portal=true)** in the OpenAI developer guide.

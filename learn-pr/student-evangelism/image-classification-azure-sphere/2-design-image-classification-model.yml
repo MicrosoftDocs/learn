@@ -4,9 +4,9 @@ title: Design an image classification model on Azure Sphere
 metadata:
   title: Design an image classification model on Azure Sphere
   description: In this section, we explain the architecture of running an image classification model on Azure Sphere.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |

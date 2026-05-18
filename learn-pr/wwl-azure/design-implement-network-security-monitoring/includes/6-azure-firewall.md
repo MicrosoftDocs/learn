@@ -6,7 +6,7 @@
 
 ## When to use Azure Firewall 
 
-Azure Firewall has three [SKUs](/azure/firewall/choose-firewall-sku): Azure Firewall Basic, Azure Firewall Standard, and Azure Firewall Premium. All versions can help you in these scenarios. 
+Azure Firewall has three [SKUs](/azure/firewall/choose-firewall-sku): Azure Firewall Basic, Azure Firewall Standard, and Azure Firewall Premium. 
 
 - You want to protect your network against infiltration.
 - You want to protect your network against user error.
@@ -14,9 +14,22 @@ Azure Firewall has three [SKUs](/azure/firewall/choose-firewall-sku): Azure Fire
 - You want to configure spoke-to-spoke connectivity.
 - You want to monitor incoming and outgoing traffic.
 
+### How to choose the SKU
+
+All SKUs support availability zone deployment for zone-redundant high availability. All SKUs include policy analytics for tracking rule usage over time and managing redundant or conflicting rules.
+
+- **Basic SKU**: Up to 250 Mbps; SMB environments; has threat intelligence in alert mode only.
+  
+- **Standard SKU**: Up to 30 Gbps; enterprise environments; L3–L7 filtering, DNS proxy, web categories, and threat intelligence.
+  
+- **Premium SKU**: Up to 100 Gbps; regulated/sensitive environments (healthcare, payment); adds TLS inspection, IDPS, full URL filtering, and PCI DSS compliance.
+
+
+
+
 ## What are Azure Firewall rules?
 
- An Azure Firewall denies all traffic by default, until rules are manually configured to allow traffic. Rules are organized inside Rule Collections which are contained in Rule Collection Groups. In the Azure Firewall, you can configure NAT rules, network rules, and applications rules.
+ An Azure Firewall denies all traffic by default, until rules are manually configured to allow traffic. Rules are organized inside Rule Collections that are contained in Rule Collection Groups. In the Azure Firewall, you can configure NAT rules, network rules, and applications rules.
 
 | Rule type	| Description |
 | --- | --- |

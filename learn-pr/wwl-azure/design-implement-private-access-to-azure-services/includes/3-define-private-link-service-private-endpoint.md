@@ -36,9 +36,25 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 
 :::image type="content" source="../media/private-link-71e02d03.png" alt-text="Diagram showing private endpoint and private link zone.":::
 
+[Network policies](/azure/private-link/disable-private-endpoint-network-policy/) are disabled by default for private endpoint subnets. You can selectively enable support for:
+
+- **Network Security Groups (NSG)**: Control inbound traffic to the private endpoint from specific sources.
+
+- **User Defined Routes (UDR)**: Override the default /32 route to redirect traffic through an NVA or firewall.
+
+- **Application Security Groups (ASG)**: Group private endpoints for policy application.
+
 
 ## How is Azure Private Endpoint different from a service endpoint?
 
-Private Endpoints grant network access to specific resources behind a given service providing granular segmentation. Traffic can reach the service resource from on premises without using public endpoints.
 
-A service endpoint remains a publicly routable IP address. A private endpoint is a private IP in the address space of the virtual network where the private endpoint is configured.
+
+Azure Private Endpoint lets you connect to an Azure service using a private IP address from your own virtual network. This process ensures all traffic on Microsoft's network and means you don't need the public internet to access the service.
+
+In contrast, Service Endpoints secure access to an Azure service’s public endpoint by allowing traffic from specific VNets or subnets, but the service itself still uses a public IP.
+
+Private Endpoints offer full isolation and higher security, while Service Endpoints are easier to set up but provide less isolation.
+
+
+> [!NOTE]
+> When public internet access is required for PaaS services, [Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) provides a logical security boundary with controlled inbound and outbound access rules. Network Security Perimeter is generally available in all Azure public regions and complements Private Link.

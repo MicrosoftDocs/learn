@@ -7,7 +7,7 @@ You then examined Security Copilot agents across multiple Microsoft security pro
 - **Microsoft Entra** agents that automate identity and access management tasks, including Conditional Access optimization, access reviews, and identity risk management.
 - **Microsoft Defender** agents that carry out security operations tasks like phishing triage, threat intelligence briefing, threat hunting, and dynamic threat detection.
 - **Microsoft Purview** agents that help triage insider risk management and data loss prevention alerts.
-- **Microsoft Intune** agents that enhance enterprise endpoint security by automating vulnerability remediation, change review, device offboarding, and policy configuration.
+- **Microsoft Intune** agents that enhance enterprise endpoint security by automating vulnerability remediation, change review, and policy configuration.
 
 Finally, you learned how Security Copilot supports building your own custom agents through multiple development experiences, including natural language, YAML upload, and Model Context Protocol (MCP) tools.
 
@@ -29,6 +29,6 @@ Learn more:
 - [Microsoft Security Copilot agents in Microsoft Entra](/entra/fundamentals/agents)
 - [Microsoft Security Copilot agents in Microsoft Defender](/defender-xdr/security-copilot-agents-defender)
 - [Microsoft Security Copilot agents in Microsoft Purview](/purview/copilot-in-purview-agents)
-- [Microsoft Security Copilot agents in Microsoft Intune](/intune/agents/agents-overview)
+- [Microsoft Security Copilot agents in Microsoft Intune](/intune/copilot/agents/)
 - [Build your own agents in Security Copilot](/copilot/security/developer/build-agent-natural-language)
 - [Microsoft Security Copilot agent development overview](/copilot/security/developer/custom-agent-overview)

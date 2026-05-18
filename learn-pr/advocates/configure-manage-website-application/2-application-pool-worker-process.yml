@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.website-application-virtual-directory.application-pool-worker-process
+title: Application pools and worker process
+metadata:
+  title: Application Pools and Worker Process
+  description: Learn about application pools and worker processes in Internet Information Services (IIS) on Windows Server, including how to create and manage application pools to provide process isolation for web applications, and how to monitor and troubleshoot worker processes for optimal performance and reliability.
+  ms.date: 03/26/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/2-application-pool-worker-process.md)]

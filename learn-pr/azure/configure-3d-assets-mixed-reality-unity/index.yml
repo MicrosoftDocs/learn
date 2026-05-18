@@ -26,7 +26,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- ai-services
+- foundry-tools
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

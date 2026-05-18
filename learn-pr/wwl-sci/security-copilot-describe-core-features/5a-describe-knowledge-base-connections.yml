@@ -6,10 +6,10 @@ metadata:
   description: Learn about knowledge base connections and how to integrate as an additional source of information for your organization.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 04/30/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 13
+durationInMinutes: 8
 content: |
   [!include[](includes/5a-describe-knowledge-base-connections.md)]

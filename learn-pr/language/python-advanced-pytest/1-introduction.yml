@@ -3,8 +3,8 @@ uid: learn.python-advanced-pytest.introduction
 title: Introduction
 metadata:
   title: Introduction to advanced testing with pytest
-  description: This module walks you through advanced features of pytest, a powerful testing tool for Python. You'll find out about parametrize, fixtures, and patching.
-  ms.date: 4/12/2024
+  description: Introduce pytest parametrization, fixtures, and the built-in monkeypatch fixture for more maintainable Python tests.
+  ms.date: 04/20/2026
   author: alfredodeza
   ms.author: orthomas
   ms.custom:

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-new-employee-access.exercise-verify-least-privilege
+title: Exercise - Verify least-privilege model
+metadata:
+  title: Exercise - Verify least-privilege model
+  description: "Exercise - Verify least-privilege model"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-verify-least-privilege.md)]

@@ -1,4 +1,4 @@
-As you develop more scripts, you'll find that efficient troubleshooting makes your script development much faster. A large part of efficient troubleshooting is understanding error messages. For some difficult problems, you can use breakpoints to stop a script partially through running to query values for variables.
+Efficient troubleshooting makes your script development faster. Understanding error messages is the foundation of that troubleshooting. For difficult problems, you can use breakpoints to pause a running script and inspect variable values.
 
 ## Learning objectives
 
@@ -16,12 +16,8 @@ Familiarity with:
 - Windows networking technologies and implementation
 - Windows Server administration, maintenance, and troubleshooting
 - Windows PowerShell and its commands to perform specific tasks
-- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+- PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows client device administration (Windows 10 and Windows 11)
 - Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 - CIM and WMI technologies
 - The use of variables, arrays, and hash tables in Windows PowerShell
-
-
-
-
 

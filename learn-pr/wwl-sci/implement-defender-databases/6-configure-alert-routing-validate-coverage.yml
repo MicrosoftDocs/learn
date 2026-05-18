@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-databases.configure-alert-routing-validate-coverage
+title: Configure alert routing and validate coverage
+metadata:
+  title: Configure Alert Routing and Validate Coverage
+  description: "Configure email notifications and Microsoft Sentinel integration for Defender for Databases alerts, create suppression rules for known-good patterns, and validate coverage using sample alerts."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-configure-alert-routing-validate-coverage.md)]

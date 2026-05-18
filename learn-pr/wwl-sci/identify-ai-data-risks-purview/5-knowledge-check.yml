@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-ai-data-risks-purview.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Microsoft Purview Data Security Posture Management for AI, including DSPM configuration, SharePoint overexposure assessment, and interaction risk identification.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "Contoso's security team wants to understand which SharePoint sites are being used to ground Microsoft 365 Copilot responses and whether those sites expose sensitive data. Which Microsoft Purview capability provides this visibility?"
+    choices:
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview Audit records user and admin activity across Microsoft 365 services, but it doesn't provide posture-based assessment of AI data exposure risks or SharePoint overexposure."
+    - content: "Data Security Posture Management (DSPM) for AI"
+      isCorrect: true
+      explanation: "Correct. DSPM for AI discovers how AI tools interact with organizational data, surfaces overexposed SharePoint content used for AI grounding. DSPM for AI also provides risk insights to help prioritize remediation."
+    - content: "Microsoft Purview Information Protection"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview Information Protection classifies and protects sensitive data using labels and policies, but it doesn't provide AI-specific posture assessments or grounding data visibility."
+    - content: "Microsoft Purview Data Loss Prevention"
+      isCorrect: false
+      explanation: "Incorrect. Data Loss Prevention (DLP) policies prevent sensitive data from being shared outside approved channels, but they don't provide visibility into AI grounding data exposure or posture-based risk assessment."
+  - content: "After admins enable DSPM for AI in Microsoft Purview, a security engineer notices the dashboard shows several high-severity interaction risks from Microsoft 365 Copilot. What does an interaction risk indicate?"
+    choices:
+    - content: "A Copilot session where the user attempted to access a blocked SharePoint site"
+      isCorrect: false
+      explanation: "Incorrect. DSPM for AI interaction risks don't trigger for blocked access attempts. They surface instances where sensitive data was referenced or exposed during AI interactions."
+    - content: "A Copilot or AI app interaction that involved sensitive data classified by Microsoft Purview"
+      isCorrect: true
+      explanation: "Correct. Interaction risks in DSPM for AI identify instances where Copilot or AI application interactions referenced content that contains sensitive information as classified by Microsoft Purview sensitivity labels or data classification."
+    - content: "A failed data loss prevention policy evaluation during a Copilot session"
+      isCorrect: false
+      explanation: "Incorrect. DLP policy failures are tracked in DLP alerts and activity explorer, not in the DSPM for AI interaction risks dashboard."
+    - content: "A SharePoint site that isn't reviewed by a site owner in 90 days"
+      isCorrect: false
+      explanation: "Incorrect. Stale site reviews are a SharePoint governance concern, not a DSPM for AI interaction risk. Interaction risks focus on sensitive data referenced in AI tool conversations."
+  - content: "A security engineer at Contoso is configuring DSPM for AI for the first time. Which prerequisite must be satisfied before the DSPM for AI dashboard can surface AI interaction risks?"
+    choices:
+    - content: "Deploy a Microsoft Purview data connector to Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Incorrect. A Microsoft Sentinel data connector isn't required to enable DSPM for AI. DSPM for AI is configured directly in the Microsoft Purview portal."
+    - content: "Enable Microsoft Purview Audit and ensure users have Microsoft 365 Copilot licenses assigned"
+      isCorrect: true
+      explanation: "Correct. Microsoft Purview Audit must be enabled (it is on by default for new tenants, but should be verified) and users must have Microsoft 365 Copilot licenses assigned. These are the two required prerequisites before DSPM for AI can surface Copilot interaction data. Sensitivity labels are recommended for full risk prioritization but aren't a hard blocker for enabling the dashboard."
+    - content: "Assign the Global Administrator role to the security engineer performing the configuration"
+      isCorrect: false
+      explanation: "Incorrect. Global Administrator isn't required. The Compliance Administrator role or equivalent permissions in the Microsoft Purview portal are sufficient to configure DSPM for AI."
+    - content: "Enable the Microsoft Defender for Cloud AI workloads plan"
+      isCorrect: false
+      explanation: "Incorrect. The Defender for Cloud AI workloads plan is a separate capability that protects Azure-hosted AI workloads. It isn't a prerequisite for DSPM for AI in Microsoft Purview."

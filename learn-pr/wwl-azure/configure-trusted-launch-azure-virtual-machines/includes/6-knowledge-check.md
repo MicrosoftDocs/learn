@@ -1,0 +1,1 @@
+You explored how Trusted Launch protects Azure VMs from boot-level threats through Secure Boot, vTPM, and integrity monitoring. You learned how to enable these protections on new and existing VMs and how to enforce adoption using Azure Policy. Test your knowledge of these concepts with the following questions.

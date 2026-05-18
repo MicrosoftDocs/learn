@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.confirm-access-assign-roles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Confirming access and assigning roles in Surface portals" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why must you verify whether a Microsoft tenant already exists before creating a new one?"
+    choices:
+        - content: "Because Surface portals can only be accessed after a new tenant is created"
+          isCorrect: false
+          explanation: ""
+        - content: "Because an existing tenant already provides access to Microsoft services and portal onboarding"
+          isCorrect: true
+          explanation: ""
+        - content: "Because only partners are allowed to create Microsoft tenants"
+          isCorrect: false
+          explanation: ""
+        - content: "Because tenant validation is required only for Surface Support Portal access"
+          isCorrect: false
+          explanation: ""
+  - content: "Which role is required to assign access for the Surface Management Portal and Surface Support Portal?"
+    choices:
+        - content: "Service Support Admin"
+          isCorrect: false
+          explanation: ""
+        - content: "Billing Admin"
+          isCorrect: false
+          explanation: ""
+        - content: "Global Administrator"
+          isCorrect: true
+          explanation: ""
+        - content: "Microsoft Hardware Warranty Specialist"
+          isCorrect: false
+          explanation: ""
+  - content: "Which role is recommended for managing Surface devices across both the Surface Management Portal and Surface Support Portal?"
+    choices:
+        - content: "Global Reader"
+          isCorrect: false
+          explanation: ""
+        - content: "Service Support Admin"
+          isCorrect: false
+          explanation: ""
+        - content: "Microsoft Hardware Warranty Administrator"
+          isCorrect: true
+          explanation: ""
+        - content: "Billing Admin"
+          isCorrect: false
+          explanation: ""
+  - content: "What other role is required for Surface Management Portal access when a user is assigned as the Microsoft Hardware Warranty Administrator role?"
+    choices:
+        - content: "Service Support Admin"
+          isCorrect: false
+          explanation: ""
+        - content: "Global Reader"
+          isCorrect: true
+          explanation: ""
+        - content: "Billing Admin"
+          isCorrect: false
+          explanation: ""
+        - content: "Global Administrator"
+          isCorrect: false
+          explanation: ""
+  - content: "Which action isn't supported by the Microsoft Hardware Warranty Specialist role?"
+    choices:
+        - content: "Viewing service requests"
+          isCorrect: false
+          explanation: ""
+        - content: "Creating and managing device replacement requests"
+          isCorrect: false
+          explanation: ""
+        - content: "Adding, editing, or deleting ship-to addresses"
+          isCorrect: true
+          explanation: ""
+        - content: "Viewing their own service requests"
+          isCorrect: false
+          explanation: ""

@@ -1,8 +1,8 @@
-The Device inventory page shows a list of the devices in your network where alerts were generated. By default, the queue displays devices with alerts seen in the last 30 days.  Select a device to open the Device page.  The Device page is also accessed from various investigation pages like Incidents and Alerts.
+The Device inventory page shows a list of the devices in your network where alerts were generated. By default, the queue displays devices with alerts seen in the last 30 days. Select a device to open the Device page. The Device page is also accessed from various investigation pages like Incidents and Alerts.
 
 :::image type="content" source="../media/device-list.png" alt-text="Screen shot of Defender for Endpoint Device Inventory List" lightbox="../media/device-list.png":::
 
-At a glance, you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+At a glance, you see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 During the onboarding process, the Devices list is gradually populated with devices as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online, or download the complete endpoint list as a CSV file for offline analysis.
 
@@ -38,7 +38,7 @@ The following device health states:
 
 ## Antivirus status
 
-The antivirus status for Windows 10 devices only:
+The antivirus status for Windows devices:
 
 - Disabled - Virus & threat protection is turned off.
 

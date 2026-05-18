@@ -2,19 +2,17 @@
 uid: learn.tensorflow.intro-computer-vision.image-data
 title: Introduction to image data
 metadata:
-  title: Introduction to image data
+  title: Introduction to Image Data
   description: Learn how image data can be represented as tensors for neural network training
   author: Orin-Thomas
   ms.author: orthomas
-  ms.date: 07/07/2021
+  ms.date: 04/01/2026
   ms.update-cycle: 180-days
   ms.topic: unit
-  ms.collection:
-    - ce-advocates-ai-copilot
-  ms.custom: team=nextgen
+  ms.collection: ce-advocates-ai-copilot
 durationInMinutes: 10
-sandbox: true
-notebook: notebooks/2-image-data.ipynb
+content: |
+  [!include[](includes/2-image-data.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -25,7 +23,7 @@ quiz:
       explanation: "Don't forget to take into account that the image has color"
     - content: "32x32x3 tensor of floats in the range 0..1"
       isCorrect: true
-      explanation: "Correct. We have 3 color channels, and each channel is normalized to the range of 0..1"
+      explanation: "Correct. We have three color channels, and each channel is normalized to the range of 0..1"
     - content: "32x32x3 tensor of integers in the range 0..255"
       isCorrect: false
       explanation: "Neural networks are trained with float numbers, and they should be normalized in the range 0..1"

@@ -4,10 +4,10 @@ title: Specify security requirements for IoT devices and embedded systems
 metadata:
   title: Specify security requirements for IoT devices and embedded systems
   description: "Learn how to specify security requirements for IoT devices and embedded systems including device identity, network segmentation, and threat detection."
-  ms.date: 02/07/2026
+  ms.date: 03/14/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 11
+durationInMinutes: 14
 content: |
   [!include[](includes/4-specify-embedded-device-security-requirements.md)]

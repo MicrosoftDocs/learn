@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-organize-resources-tags-locks.clean-up-resources
+title: Clean up resources
+metadata:
+  title: Clean up resources
+  description: "Clean up resources"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-clean-up-resources.md)]

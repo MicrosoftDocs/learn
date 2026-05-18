@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-new-employee-access.exercise-assign-role
+title: Exercise - Assign RBAC role at scope
+metadata:
+  title: Exercise - Assign RBAC role at scope
+  description: "Exercise - Assign RBAC role at scope"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-exercise-assign-role.md)]

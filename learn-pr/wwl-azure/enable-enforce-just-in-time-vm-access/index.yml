@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.enable-enforce-just-in-time-vm-access
+metadata:
+  title: Enable and Enforce Just-in-Time VM Access
+  description: "Enable and configure just-in-time VM access in Microsoft Defender for Cloud to eliminate permanently open RDP and SSH ports. Configure per-port access policies, request time-bound access, audit access activity, and enforce JIT adoption across your VM estate using Azure Policy."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Enable and enforce just-in-time VM access
+summary: Enable and configure just-in-time VM access in Microsoft Defender for Cloud to eliminate permanently open RDP and SSH ports. Configure per-port access policies, request time-bound access to VMs, audit access activity, and enforce JIT adoption across your VM estate using Azure Policy.
+abstract: |
+  After completing this module, you can:
+    - Examine how just-in-time VM access reduces the attack surface on management ports
+    - Enable JIT and configure per-port access policies on Azure VMs
+    - Request and approve JIT access and audit access activity
+    - Enforce JIT adoption across a VM estate using Azure Policy
+prerequisites: |
+  - Microsoft Defender for Servers Plan 2 enabled on the subscription
+  - Working knowledge of Azure Virtual Machines and network security groups
+  - Basic familiarity with Microsoft Defender for Cloud
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure-virtual-machines
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.enable-enforce-just-in-time-vm-access.introduction
+- learn.wwl.enable-enforce-just-in-time-vm-access.examine-access-requirements
+- learn.wwl.enable-enforce-just-in-time-vm-access.enable-configure-policies
+- learn.wwl.enable-enforce-just-in-time-vm-access.request-access-audit-activity
+- learn.wwl.enable-enforce-just-in-time-vm-access.knowledge-check
+- learn.wwl.enable-enforce-just-in-time-vm-access.summary
+badge:
+  uid: learn.wwl.enable-enforce-just-in-time-vm-access.badge

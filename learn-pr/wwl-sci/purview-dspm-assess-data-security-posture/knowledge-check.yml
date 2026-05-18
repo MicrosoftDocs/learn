@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-dspm-assess-data-security-posture.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/29/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The Data Security Posture Management (DSPM) Posture page shows Data discovery at a lower percentage but trending up, and Data protection at a higher percentage but trending down. What does this combination tell an administrator?"
+    choices:
+    - content: "Protection is in better shape because its percentage is higher, so focus on discovery."
+      isCorrect: false
+      explanation: "Incorrect: A higher number trending downward can be more urgent than a lower number trending up, because the trend tells you which direction coverage is heading."
+    - content: "Discovery is improving and protection is degrading, so labeling is working but data loss prevention (DLP) coverage needs attention before the gap widens."
+      isCorrect: true
+      explanation: "Correct: Discovery climbing from a lower base shows labeling effort is working, while protection trending down from a higher base means DLP coverage is shrinking relative to the data estate."
+    - content: "Both cards are within normal range, so no action is needed yet."
+      isCorrect: false
+      explanation: "Incorrect: DSPM doesn't define a fixed action threshold, and a downward trend is a meaningful signal regardless of the absolute number."
+  - content: "In data security objectives, the **Prevent data exfiltration** objective shows a large count of affected items with a flat 30-day trend and active DLP policies already in place. The **Prevent oversharing of sensitive data through AI** objective shows a smaller count with a steep upward trend and no policies assigned. Which objective should be prioritized first, and why?"
+    choices:
+    - content: "Prevent data exfiltration, because the count is larger."
+      isCorrect: false
+      explanation: "Incorrect: The exfiltration count is large but stable and already governed by active policies, so it's being managed. A smaller but rapidly growing and ungoverned gap is more urgent."
+    - content: "Prevent oversharing through AI, because the gap is accelerating with no policies to slow it."
+      isCorrect: true
+      explanation: "Correct: A steep upward trend combined with zero policy coverage means nothing is containing the growth, so acting now prevents the count from multiplying unchecked."
+    - content: "Neither, because both should be treated as equally urgent."
+      isCorrect: false
+      explanation: "Incorrect: One objective is governed and stable while the other is ungoverned and accelerating. Treating them equally ignores the signals objectives are designed to surface."
+  - content: "On the AI observability page, an agent is flagged as high risk with active oversharing, 0 policies assigned, and an increasing 30-day activity trend. What does this combination indicate about the next assessment move?"
+    choices:
+    - content: "The agent appears in AI observability, so it's governed appropriately."
+      isCorrect: false
+      explanation: "Incorrect: Appearing in AI observability means DSPM has visibility into the agent, but the 0 Policies count indicates nothing governs its behavior."
+    - content: "Risk level alone determines urgency, so policy coverage and trend don't change the assessment."
+      isCorrect: false
+      explanation: "Incorrect: Risk level describes severity, but policy coverage and activity trend shape priority too."
+    - content: "The agent is ungoverned, active, and growing in use, so it belongs at the top of the priority list with a handoff to the AI policy team."
+      isCorrect: true
+      explanation: "Correct: High risk plus 0 policies plus an increasing trend signals ungoverned and accelerating AI exposure, and assessment ends with handing the right context to the right team."
+  - content: "In asset explorer, filtering to a SharePoint subworkload returns many assets with sensitive content but no sensitivity label. How should this finding be interpreted?"
+    choices:
+    - content: "Classification is failing, and the team should investigate why sensitive content isn't being detected."
+      isCorrect: false
+      explanation: "Incorrect: Classification is working because the assets were identified as sensitive, so the gap is in labeling rather than detection."
+    - content: "Classification is working, but labels aren't being applied, so the assets fall outside label-based DLP and access controls."
+      isCorrect: true
+      explanation: "Correct: The system detected the sensitive content, but without a label no DLP policy or access control applies. Labeling policies need to extend to what classification already found."
+    - content: "The data is protected because it's already classified."
+      isCorrect: false
+      explanation: "Incorrect: Most DLP policies and access controls reference labels for enforcement, so classification alone doesn't apply protection."
+  - content: "The team deployed an autolabeling policy for financial documents in SharePoint two weeks ago. The unlabeled financial content trend is flat. What's the most useful conclusion before reporting back?"
+    choices:
+    - content: "The policy is working, and the flat trend confirms no new unlabeled content is being created."
+      isCorrect: false
+      explanation: "Incorrect: A working policy should drive the unlabeled count down as existing content gets labeled, so a flat trend means coverage isn't expanding."
+    - content: "Two weeks isn't long enough to measure impact, so wait another month."
+      isCorrect: false
+      explanation: "Incorrect: DSPM trends reflect policy changes within the 30-day window. A flat line two weeks after deployment is a real signal, not a reason to wait longer."
+    - content: "The policy isn't reaching the intended content, so verify its scope and targets."
+      isCorrect: true
+      explanation: "Correct: When a deliberate action produces no movement in the relevant trend, the action isn't reaching the intended content, often due to scope, location mismatches, or unmatched conditions."

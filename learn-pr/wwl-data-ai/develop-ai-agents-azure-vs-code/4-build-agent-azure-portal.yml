@@ -2,9 +2,10 @@
 uid: learn.wwl.develop-ai-agents-azure-vs-code.build-agent-azure-portal
 title: Build your first agent in Microsoft Foundry
 metadata:
+  zone_pivot_groups: video-or-text
   title: Build Your First Agent in Microsoft Foundry
   description: Learn how to create and configure AI agents using the Azure portal.
-  ms.date: 02/12/2026
+  ms.date: 5/1/2026
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

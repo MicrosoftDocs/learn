@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.architecture
+title: Technical architecture of Azure SRE Agent
+metadata:
+  title: Technical architecture of Azure SRE Agent
+  description: "Explore the four-layer architecture of Azure SRE Agent including signal ingestion, reasoning, governance, and execution."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-architecture.md)]

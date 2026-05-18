@@ -1,7 +1,7 @@
 Copilot in Microsoft Fabric's Data Warehouse provides two AI-powered quick actions: **Explain** and **Fix**. These actions help you write, understand, and debug SQL queries more efficiently. Located at the top of the SQL query editor, near the **Run** button, these quick actions accelerate productivity by simplifying complex tasks.
 
-- **Explain**: Adds a summary at the top of the query and inline comments throughout the query to describe its functionality.
-- **Fix**: Automatically resolves syntax or logic errors in your query, using the SQL error message as context.
+- **Explain**: Adds a summary at the top of the query and inline comments throughout the query to describe its functionality. Before selecting **Explain**, highlight the query or the portion you want Copilot to explain — you can select the whole query or just a section.
+- **Fix**: Automatically resolves syntax or logic errors in your query, using the SQL error message as context. The **Fix** button is only enabled after you run a query that returns an error — Copilot automatically uses that error message as context, so no extra input is needed.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Quick Actions.](../media/fix-explain.png)](../media/fix-explain.png#lightbox)
@@ -15,7 +15,7 @@ With your sample warehouse open, expand the views, and select the **vw_PaymentAn
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Fabric Data Warehouse Copilot Quick Actions.](../media/quick-actions.png)](../media/quick-actions.png#lightbox)
 
-When you select **Explain**, Copilot analyzes your query and generates inline comments that explain what your code does. If applicable, Copilot leaves a summary at the top of the query as well. The comments appear next to the relevant lines of code in your query editor. You can edit or delete the comments as needed. 
+To use **Explain**, first highlight the query or the part you want explained, then select the **Explain** button. Copilot analyzes your query and generates inline comments that explain what your code does. If applicable, Copilot leaves a summary at the top of the query as well. The comments appear next to the relevant lines of code in your query editor. You can edit or delete the comments as needed. 
 
 ```sql
 -- Create a view named vw_PaymentAnalysis to analyze payment data

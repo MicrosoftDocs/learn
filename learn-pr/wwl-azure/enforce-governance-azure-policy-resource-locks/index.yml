@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.enforce-governance-azure-policy-resource-locks
+metadata:
+  title: Enforce Governance with Azure Policy and Resource Locks
+  description: "Enforce security standards before resources reach production using Azure Policy. Assign built-in policy definitions and initiatives at management group scope, author custom definitions with automated remediation tasks, and protect critical resources from deletion using Azure resource locks."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-policy
+  ai-usage: ai-assisted
+title: Enforce governance with Azure Policy and resource locks
+summary: Enforce security standards before resources reach production using Azure Policy. Assign built-in policy definitions and initiatives at management group scope, author custom definitions with automated remediation tasks, and protect critical resources from deletion using Azure resource locks.
+abstract: |
+  After completing this module, you can:
+    - Assign built-in Azure Policy definitions and initiatives to enforce security configurations at subscription and management group scope
+    - Create custom Azure Policy definitions with remediation tasks to enforce controls that built-in definitions don't cover
+    - Configure Azure resource locks to prevent critical resources from being deleted or modified
+prerequisites: |
+  - Working knowledge of Azure administration at the AZ-104 level
+  - Basic understanding of Azure resource hierarchy (management groups, subscriptions, resource groups, resources)
+  - Familiarity with Azure role-based access control (RBAC) concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-policy
+  - azure
+subjects:
+  - security
+  - cloud-security
+  - compliance
+units:
+- learn.wwl.enforce-governance-azure-policy-resource-locks.introduction
+- learn.wwl.enforce-governance-azure-policy-resource-locks.assign-built-in-policy-definitions
+- learn.wwl.enforce-governance-azure-policy-resource-locks.create-deploy-custom-policy-definitions
+- learn.wwl.enforce-governance-azure-policy-resource-locks.implement-resource-locks
+- learn.wwl.enforce-governance-azure-policy-resource-locks.knowledge-check
+- learn.wwl.enforce-governance-azure-policy-resource-locks.summary
+badge:
+  uid: learn.wwl.enforce-governance-azure-policy-resource-locks.badge

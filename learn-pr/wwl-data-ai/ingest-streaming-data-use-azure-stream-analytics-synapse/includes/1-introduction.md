@@ -1,14 +1,14 @@
 
-Suppose a retail company captures real-time sales transaction data from an e-commerce website, and wants to analyze this data along with more static data related to products, customers, and employees. A common way to approach this problem is to ingest the stream of real-time data into a data lake or data warehouse, where it can be queried together with data that is loaded using batch processing techniques.
+Suppose a manufacturing company captures real-time telemetry data from factory floor sensors, and wants to monitor equipment performance, detect anomalies, and archive event data for long-term analysis. A common approach is to use a stream processing engine to continuously filter and aggregate the flow of sensor events, and route the results to one or more destinations—such as a data lake for storage, a relational database for operational reporting, or a message hub for downstream alerting systems.
 
-Microsoft Azure Synapse Analytics provides a comprehensive enterprise data analytics platform, into which real-time data captured in Azure Event Hubs or Azure IoT Hub, and processed by Azure Stream Analytics can be loaded.
+Azure Stream Analytics is a fully managed, cloud-based stream processing service that enables you to build real-time analytics pipelines. It connects to streaming data sources such as Azure Event Hubs, Azure IoT Hub, and Azure Data Lake Storage, processes data using a SQL-based query language, and writes results to a wide range of output destinations.
 
-![A diagram of a data stream in Azure Event Hubs being queried by Azure Stream Analytics and loaded into Azure Synapse Analytics.](../media/stream-ingestion.png)
+![A diagram of a data stream in Azure Event Hubs being queried by Azure Stream Analytics and loaded into multiple output destinations.](../media/stream-ingestion.png)
 
-A typical pattern for real-time data ingestion in Azure consists of the following sequence of service integrations:
+A typical pattern for real-time data processing in Azure consists of the following sequence:
 
 1. A real-time source of data is captured in an event ingestor, such as Azure Event Hubs or Azure IoT Hub.
-2. The captured data is perpetually filtered and aggregated by an Azure Stream Analytics query.
-3. The results of the query are loaded into a data lake or data warehouse in Azure Synapse Analytics for subsequent analysis.
+2. The captured data is perpetually filtered, aggregated, or enriched by an Azure Stream Analytics query.
+3. The results of the query are written to one or more output destinations—such as a data lake, a relational database, another event hub, or a real-time dashboard.
 
-In this module, you'll explore multiple ways in which you can use Azure Stream Analytics to ingest real-time data into Azure Synapse Analytics.
+In this module, you'll learn how to configure Azure Stream Analytics jobs to process streaming data and route the results to a variety of output destinations.

@@ -4,7 +4,7 @@ title: "Prepare for growth"
 metadata:
   title: "Prepare for growth"
   description: "Prepare for growth"
-  ms.date: 06/23/2023
+  ms.date: 04/12/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
@@ -24,25 +24,25 @@ quiz:
       explanation: 'Correct. This description is the definition of organic growth.'
     - content: 'inorganic growth'
       isCorrect: false
-      explanation: 'This description is the definition of organic growth.'
+      explanation: 'Inorganic growth arises from external factors, such as a marketing event or acquisition, rather than a natural expansion of business activity.'
     - content: 'capacity planning'
       isCorrect: false
-      explanation: 'This description is the definition of organic growth.'
+      explanation: 'Capacity planning is the process of determining the resources needed to meet present and future demands, not the growth pattern itself.'
 
   - content: 'With Cosmos DB, which of these metrics are incorporated into a request unit?'
     choices:
     - content: 'memory'
       isCorrect: false
-      explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS.'
+      explanation: 'Request Units (RUs) are a blended measure of memory, CPU, and IOPS.'
     - content: 'CPU'
       isCorrect: false
-      explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS'
+      explanation: 'Request Units (RUs) are a blended measure of memory, CPU, and IOPS.'
     - content: 'IOPS'
       isCorrect: false
-      explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS'
+      explanation: 'Request Units (RUs) are a blended measure of memory, CPU, and IOPS.'
     - content: 'All of these metrics.'
       isCorrect: true
-      explanation: 'Correct. Request Units (RUs) are a mixture of memory, CPU, and IOPS'
+      explanation: 'Correct. Request Units (RUs) are a blended measure of memory, CPU, and IOPS.'
 
   - content: 'Which of the following options is _not_ a business metric you should correlate your resource usage to when planning for capacity?'
     choices:

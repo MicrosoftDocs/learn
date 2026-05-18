@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-surface-portals
+title: Introduction to Surface Management and Support Portals
+metadata:
+  title: Introduction To Surface Management And Support Portals
+  description: 'Learn about Surface Management and Support Portals, their functions, and when to use each portal for managing and supporting your Surface devices effectively.'
+  ms.date: 04/08/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  This module provides an overview of Surface Management and Support Portals, explaining their functions and guiding users on when to use each portal for effective management and support of Surface devices.
+
+abstract: |
+  By the end of this module, you're able to:
+  - Understand what Surface Management and Support Portals are and their key functions.
+  - Differentiate between the two portals and identify when to use each one for managing and supporting Surface devices effectively.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-to-surface-portals-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-surface-portals.introduction
+  - learn.dpu.introduction-to-surface-portals.what-are-surface-management-and-support-portals
+  - learn.dpu.introduction-to-surface-portals.how-the-surface-portals-work
+  - learn.dpu.introduction-to-surface-portals.compare-surface-management-and-support-portal-functions
+  - learn.dpu.introduction-to-surface-portals.when-to-use-surface-management-portal
+  - learn.dpu.introduction-to-surface-portals.when-to-use-surface-support-portal
+  - learn.dpu.introduction-to-surface-portals.knowledge-check
+  - learn.dpu.introduction-to-surface-portals.summary
+badge:
+  uid: learn.dpu.introduction-to-surface-portals.badge

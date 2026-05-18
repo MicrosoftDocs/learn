@@ -15,7 +15,7 @@ ORDER BY OrderDate DESC;
 
 The query consists of a SELECT statement, which is composed of multiple *clauses*, each of which defines a specific operation that must be applied to the data being retrieved. Before we examine the run-time order of operations, let's briefly take a look at what this query does, although the details of the various clauses will not be covered in this module.
 
-The SELECT clause returns the **OrderDate** column, and the count of **OrderID** values, to which is assigns the name (or *alias*) **Orders**:
+The SELECT clause returns the **OrderDate** column, and the count of **OrderID** values, to which it assigns the name (or *alias*) **Orders**:
 
 ```sql
 SELECT OrderDate, COUNT(OrderID) AS Orders

@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-ai-security
+metadata:
+  title: Implement Security for AI
+  description: "Implement a defense-in-depth security strategy for AI workloads across Microsoft's AI platform. Configure data security posture management in Microsoft Purview, secure agent identities in Microsoft Entra, and analyze AI identity risks in Microsoft Defender XDR. Then, enable real-time agent protection in Microsoft Defender, configure AI Gateway security in Microsoft Foundry, manage guardrails, protect AI workloads with Defender for Cloud, and govern agents with Microsoft Agent 365."
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: Implement security for AI
+summary: |
+  AI workloads introduce new attack surfaces across identity, data, and runtime layers that traditional security controls don't fully address. In this learning path, you implement layered AI security controls across the Microsoft security platform.
+
+  You start by discovering and assessing AI data risks using Microsoft Purview Data Security Posture Management (DSPM). Next you secure agent identities using Microsoft Entra Agent ID and Conditional Access, and analyze AI identity blast radius and attack paths in Microsoft Defender XDR. From there, you configure real-time runtime protection for Copilot Studio agents using Microsoft Defender for Cloud Apps, and secure AI model traffic using AI Gateway in Microsoft Foundry. Finally, you configure guardrails in Microsoft Foundry, protect AI workloads using Microsoft Defender for Cloud, and govern deployed agents using Microsoft Agent 365.
+prerequisites: |
+  - Working knowledge of Microsoft Entra ID and Azure identity concepts
+  - Familiarity with Microsoft Defender portal and Microsoft Purview portal navigation
+  - Experience managing cloud security configurations in Azure
+  - Awareness of AI agent concepts and Microsoft Copilot technologies
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - microsoft-purview
+  - entra-id
+  - defender-xdr
+  - defender-for-cloud-apps
+  - microsoft-foundry
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+  - artificial-intelligence
+modules:
+- learn.wwl.secure-access-entra-agent-identity
+- learn.wwl.analyze-ai-identity-risks-defender-xdr
+- learn.wwl.enable-realtime-protection-copilot-studio-agents
+- learn.wwl.configure-ai-gateway-security-foundry
+- learn.wwl.azure-ai-foundry-configure-manage-guardrails
+- learn.wwl.defender-for-cloud-ai-protect-workloads
+- learn.wwl.implement-defender-cloud-ai-services
+- learn.wwl.manage-agents-microsoft-agent-365
+- learn.wwl.identify-ai-data-risks-purview
+trophy:
+  uid: learn.wwl.implement-ai-security.trophy

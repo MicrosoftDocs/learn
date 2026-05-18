@@ -99,12 +99,9 @@ When a record fails validation, the framework can respond in different ways depe
 |--------|----------|
 | `EXPECT` (default) | Retains invalid records, tracks violation counts in metrics |
 | `ON VIOLATION DROP ROW` | Removes invalid records from the output |
-| `ON VIOLATION FAIL UPDATE` | Stops the pipeline and rolls back the transaction |
+| `ON VIOLATION FAIL UPDATE` | Stops the current flow; other flows continue. Manual intervention is required before reprocessing. |
 
 Use `ON VIOLATION FAIL UPDATE` for critical constraints where any violation indicates a serious data problem that requires investigation before processing can continue.
-
-> [!IMPORTANT]
-> The Lakeflow Spark Declarative Pipelines **Advanced** product edition is required to use expectations. If your pipeline includes expectations with the Core or Pro editions, you receive an error.
 
 ## Develop pipelines with the Lakeflow Pipelines Editor
 
@@ -116,6 +113,8 @@ The Lakeflow Pipelines Editor provides an integrated development environment for
 :::image type="content" source="../media/7-lakeflow-pipeline-editor.png" alt-text="Screenshot of Azure Databricks Lakeflow Pipelines Editor." lightbox="../media/7-lakeflow-pipeline-editor.png":::
 
 The editor supports iterative development through several features:
+
+- **Genie Code**: Describe your pipeline in natural language and let this agentic experience create, update, and debug pipeline code for you — from data discovery and code generation through to pipeline execution and resolving data quality issues.
 
 - **Dry run**: Validates your pipeline code without processing data, allowing you to catch syntax errors and missing dependencies before execution.
 

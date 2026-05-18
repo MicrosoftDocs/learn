@@ -28,25 +28,36 @@ quiz:
     - content: "Update sets"
       isCorrect: false
       explanation: "Azure has Availability Sets and Update Domains, but not update sets."
-  - content: "Which Azure service allows users to use a cloud hosted version of Windows from any location and connect from most modern browsers?"
+  - content: "Which Azure compute option is event-driven and serverless, so you can run code without managing virtual machines?"
     choices:
-    - content: "Azure Virtual Desktop"
+    - content: "Azure Functions"
       isCorrect: true
-      explanation: "Azure Virtual Desktop provides access to a cloud-hosted version of Windows, and it works with most modern browsers."
+      explanation: "Azure Functions is an event-driven, serverless compute service that runs code without requiring virtual machine management."
     - content: "Azure Virtual Machines"
       isCorrect: false
-      explanation: "Azure Virtual Machines allows you to configure a Windows environment, but it doesn’t provide access via most modern browsers by default."
+      explanation: "Azure Virtual Machines is an IaaS option where you still manage the operating system and software."
     - content: "Azure Container Instances"
       isCorrect: false
-      explanation: "Azure Container Instances lets you provision containers in the cloud, but doesn’t provide access to a cloud-hosted version of windows available from most modern browsers."
-  - content: "If you need connections between virtual networks, point-to-site connections, multisite connections, or coexistence with an Azure ExpressRoute gateway, which type of VPN gateway should you use?"
+      explanation: "Azure Container Instances runs containers quickly, but it isn't the module's event-driven serverless code option."
+  - content: "Which Azure service lets organizations host web apps and APIs without managing the underlying infrastructure?"
     choices:
-    - content: "Policy-based VPN gateway"
-      isCorrect: false
-      explanation: "You should use a route-based VPN gateway. They're more resilient to topology changes such as the creation of new subnets."
-    - content: "Point-based VPN gateway"
-      isCorrect: false
-      explanation: "Point-based VPN gateways aren't a type of VPN gateway."
-    - content: "Route-based VPN gateway"
+    - content: "Azure App Service"
       isCorrect: true
-      explanation: "You should use a route-based VPN gateway. They're more resilient to topology changes such as the creation of new subnets."
+      explanation: "Azure App Service is a managed hosting platform for web apps and APIs, so you don't manage the underlying server infrastructure."
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Azure Virtual Machines can host apps, but you still manage the operating system and server configuration."
+    - content: "Azure ExpressRoute"
+      isCorrect: false
+      explanation: "Azure ExpressRoute is a private networking connectivity service, not an app hosting platform."
+  - content: "Which Azure service category provides prebuilt APIs for capabilities like vision, speech, and language without training your own model from scratch?"
+    choices:
+    - content: "Azure AI services"
+      isCorrect: true
+      explanation: "Azure AI services provides prebuilt AI capabilities through APIs so you can quickly add intelligent features to applications."
+    - content: "Azure Virtual Machines"
+      isCorrect: false
+      explanation: "Virtual machines provide infrastructure and hosting control, not prebuilt AI APIs."
+    - content: "Azure Virtual Networks"
+      isCorrect: false
+      explanation: "Azure Virtual Networks is a networking service used for connectivity and segmentation, not prebuilt AI capabilities."

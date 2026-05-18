@@ -19,14 +19,17 @@ By default, Azure services are all designed for direct internet access. All Azur
 
 :::image type="content" source="../media/service-endpoint-e15a99ae.png" alt-text="Diagram showing web server, database server, and Service Endpoint within a VNet.":::
 
-Service Endpoints can connect certain services directly to your private address space in Azure. Azure Service Endpoints are available for many services, such as:
+Service Endpoints can connect certain services directly to your private address space in Azure. Azure Service Endpoints are available for many services, including:
 
 - Azure Storage
 - Azure SQL Database
 - Azure Cosmos DB
 - Azure Key Vault
 - Azure Service Bus
-- Azure Data Lake
+- Azure Event Hubs
+- Azure App Service
+- Azure Container Registry
+
 
 ## Service Endpoint optimization and security features
 

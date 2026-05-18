@@ -5,7 +5,7 @@ In the Azure portal, there are several settings to configure to create an Azure 
 :::image type="content" source="../media/implement-scale-sets-61516afb.png" alt-text="Screenshot that shows how to create Virtual Machine Scale Sets in the Azure portal.":::
 
 
-- [**Orchestration mode**](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes): Choose how the scale set manages the virtual machines. In flexible orchestration mode, you manually create and add a virtual machine of any configuration to the scale set. In uniform orchestration mode, you define a virtual machine model and Azure generates identical instances based on that model.
+- [**Orchestration mode**](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes): Choose how the scale set manages the virtual machines. Flexible orchestration is the default and recommended mode for new deployments. For most new workloads, accept the Flexible default unless you have a specific requirement for identical instances.
 
 - **Image**: Choose the base operating system or application for the VM.
 

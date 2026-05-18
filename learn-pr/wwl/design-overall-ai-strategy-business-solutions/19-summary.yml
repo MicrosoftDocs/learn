@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.summary
+title: "Summary"
+metadata:
+  title: "Summary"
+  description: "Learn how to implement an enterprise-ready AI strategy using Azure's Cloud Adoption Framework, focusing on AI agents in business solutions."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+  [!include[](includes/19-summary.md)]

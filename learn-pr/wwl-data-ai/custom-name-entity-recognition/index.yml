@@ -28,7 +28,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- ai-services
+- foundry-tools
 units:
 - learn.wwl.custom-name-entity-recognition.introduction
 - learn.wwl.custom-name-entity-recognition.understand-custom-named

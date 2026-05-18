@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.design-alm-process-ai-powered-business-solutions
+metadata:
+  title: "Design ALM Process for AI-Powered Business Solutions"
+  description: "Learn to design ALM processes for AI solutions, ensuring governance, security, and consistency across development, testing, and production."
+  ms.date: 02/12/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: azure-ai-services
+title: "Design ALM process for AI-powered business solutions"
+summary: Learn to design ALM processes for AI solutions, ensuring governance, security, and consistency across environments.
+abstract: |
+  After completing this module, you will be able to:
+  - Design ALM processes for AI components like datasets, prompts, and models.
+  - Establish governance, security, and monitoring across environments.
+  - Ensure consistent and compliant AI behavior from development to production.
+prerequisites: |
+  - Familiarity with AI concepts and lifecycle management.
+  - Basic understanding of Microsoft technologies like Copilot Studio, Dynamics 365, and Azure AI.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+- developer
+- administrator
+- solution-architect
+- technology-manager
+products:
+- microsoft-365-copilot
+- m365
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.design-alm-process-ai-powered-business-solutions.introduction
+- learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-data-used-ai-models-agents
+- learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-copilot-studio-agents-connectors-actions
+- learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-microsoft-foundry-agents
+- learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-custom-ai-models
+- learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-ai-dynamics-365-apps-finance-supply-chain
+- learn.wwl.design-alm-process-ai-powered-business-solutions.design-alm-process-ai-dynamics-365-apps-customer-experience-service
+- learn.wwl.design-alm-process-ai-powered-business-solutions.knowledge-check
+- learn.wwl.design-alm-process-ai-powered-business-solutions.summary
+badge:
+  uid: learn.wwl.design-alm-process-ai-powered-business-solutions.badge

@@ -2,7 +2,7 @@ In this exercise, you create a SQL database project, build it locally, push it t
 
 > [!NOTE]
 >
-> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free) and a [GitHub account](https://github.com/join).
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and a [GitHub account](https://github.com/join).
 
 Launch the exercise and follow the instructions.
 

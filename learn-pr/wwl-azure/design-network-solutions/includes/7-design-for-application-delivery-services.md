@@ -3,10 +3,10 @@ Azure offers several AI-ready networking services to help deliver applications. 
 
 | Feature/Service | Azure Front Door | Application Gateway | Traffic Manager | Load Balancer  |
 | --- |--- | ---| --- | --- |
-| Type | Global | Regional | Global | Regional/Global |
+| Type | Global CDN/ADN | Regional | Global | Regional/Global |
 | Layer	| Layer 7 (HTTP/HTTPS) | Layer 7 (HTTP/HTTPS) | DNS-based | Layer 4 (TCP/UDP) |
-| Primary Use Case | Web traffic load balancing, application acceleration, and global routing | Web application firewall, TLS/SSL termination, and HTTP load balancing | DNS-based traffic routing for high availability and performance | Internal and external load balancing for non-HTTP(S) traffic |
-| Key Features | Path-based routing, TLS/SSL offload, Web Application Firewall (WAF), URL-based routing | Path-based routing, TLS/SSL offload, Web Application Firewall (WAF), URL-based routing | DNS-based routing, geographic routing, priority routing, weighted routing | High availability, low latency, zonal and zone-redundant endpoints |
+| Primary Use Case | Web traffic load balancing, application acceleration, global routing, and CDN content delivery | Web application firewall, TLS/SSL termination, and HTTP load balancing | DNS-based traffic routing for high availability and performance | Internal and external load balancing for non-HTTP(S) traffic |
+| Key Features | Path-based routing, TLS/SSL offload, Web Application Firewall (WAF), URL-based routing, CDN/edge caching  | Path-based routing, TLS/SSL offload, Web Application Firewall (WAF), URL-based routing | DNS-based routing, geographic routing, priority routing, weighted routing | High availability, low latency, zonal and zone-redundant endpoints |
 | Scalability | High | High | High | High |
 | Cost | Based on data processed and rules applied | Based on data processed, rules applied, and SKU | Based on DNS queries, health checks, and data points processed | Based on rules and data processed |
 
@@ -17,8 +17,11 @@ The different load balancers can work together in your networking architecture.
 
 ### Azure Front Door
 
-[Azure Front Door](/azure/frontdoor/front-door-overview) lets you define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. With Front Door, you can transform your global (multi-region) consumer and enterprise applications into robust, high-performance personalized modern applications, APIs, and content that reaches a global audience with Azure.
- 
+[Azure Front Door Standard and Premium](/azure/frontdoor/front-door-overview) lets you define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. With Front Door, you can transform your global (multi-region) consumer and enterprise applications into robust, high-performance personalized modern applications, APIs, and content that reaches a global audience with Azure.
+
+> [!NOTE]
+> Azure Front Door (classic) is being retired March 31, 2027. Use Front Door Standard or Premium tiers for new deployments.
+
 #### Business scenarios
 
 - Low latency: Ensure requests are sent to the lowest latency backends.
@@ -26,7 +29,10 @@ The different load balancers can work together in your networking architecture.
 - Weighted: Distribute traffic by using weight coefficients.
 - Affinity: Ensure requests from the same end user are sent to the same backend.
 - Support WAF and CDN integration for HTTP(S) traffic.
-- Support for content delivery services. 
+- Support for content delivery services.
+- Private Link integration for private origins (Premium tier).
+-	CDN content delivery for static workloads across 118+ edge locations.
+
 
 ### Azure Traffic Manager
 

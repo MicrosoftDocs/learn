@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-dataflows.exercise
+title: "Exercise: Transform data with Dataflows Gen2"
+metadata:
+  title: "Exercise: Transform Data with Dataflows Gen2"
+  description: "Hands-on exercise to create and configure a Dataflow Gen2 in Microsoft Fabric"
+  ms.date: 03/30/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

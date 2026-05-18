@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-purview-data-governance.describe-data-catalog
-title: Describe Microsoft Purview Data Catalog
+title: Describe Microsoft Purview Unified Catalog
 metadata:
-  title: Describe Microsoft Purview Data Catalog
-  description: "Describe Microsoft Purview Data Catalog."
-  ms.date: 9/19/2024
+  title: Describe Microsoft Purview Unified Catalog
+  description: "Describe the features of Microsoft Purview Unified Catalog, including governance domains, data products, glossary terms, and data quality."
+  ms.date: 04/03/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit

@@ -21,7 +21,9 @@ Let's take a quick look at the Azure compute services we review in this module.
 
 - **Azure Logic Apps**: Configure this cloud-based _platform_ to create and run automated workflows similar to capabilities in Azure Functions.
 
-- **Azure Container Instances**: Run containers in Azure in a fast and simple manner without creating virtual machines or relying on a higher-level service.
+- **Azure Container Instances (ACI)**: Run containers in Azure in a fast and simple manner without creating virtual machines or relying on a higher-level service.
+
+- **Azure Container Apps (ACA)**: Run containerized applications on a fully managed serverless platform without managing Kubernetes infrastructure. Supports scale-to-zero, Dapr integration, jobs, and revision-based traffic management.
 
 - **Azure Kubernetes Service (AKS)**: Run containerized applications with this managed Kubernetes service.
 
@@ -60,11 +62,11 @@ The [hosting option](/azure/security/fundamentals/shared-responsibility) of your
 
 :::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram that highlights the developer and cloud provider responsibilities for infrastructure and platform services." border="false":::
 
-- **[Software-as-a-Service (SaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas)** delivers software applications over the internet, on a subscription basis. Users can access these applications via a web browser without needing to manage the underlying infrastructure or application software. Microsoft 365 is an example of a SaaS solution, providing cloud-based productivity tools like Word, Excel, Outlook, and Teams.
+- **[Software-as-a-Service (SaaS)](/azure/well-architected/saas/get-started)** delivers software applications over the internet, on a subscription basis. Users can access these applications via a web browser without needing to manage the underlying infrastructure or application software. Microsoft 365 is an example of a SaaS solution, providing cloud-based productivity tools like Word, Excel, Outlook, and Teams.
 
-- **[Platform-as-a-Service (PaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-paas)** provides a managed hosting environment where developers can build, deploy, and manage applications without worrying about the underlying infrastructure. Azure handles the infrastructure, maintenance, and scalability, allowing developers to focus on writing code. Examples of Azure PaaS offerings include Azure App Services, Azure Functions, and Azure SQL Database.
+- **[Platform-as-a-Service (PaaS)](/azure/architecture/guide/design-principles/managed-services)** provides a managed hosting environment where developers can build, deploy, and manage applications without worrying about the underlying infrastructure. Azure handles the infrastructure, maintenance, and scalability, allowing developers to focus on writing code. Examples of Azure PaaS offerings include Azure App Services, Azure Functions, and Azure SQL Database.
 
-- **[Infrastructure-as-a-Service (IaaS)](https://azure.microsoft.com/overview/what-is-iaas/)** provides virtualized computing resources over the internet. It allows users to rent virtual machines, storage, and networking resources on-demand, without the need for physical hardware. Azure Virtual Machines is a prime example of an IaaS offering, where users can deploy and manage VMs inside an Azure virtual network.
+- **Infrastructure-as-a-Service (IaaS)** provides virtualized computing resources over the internet. It allows users to rent virtual machines, storage, and networking resources on-demand, without the need for physical hardware. Azure Virtual Machines is a prime example of an IaaS offering, where users can deploy and manage VMs inside an Azure virtual network.
 
 - **On-premises hosting** involves deploying and managing applications on local servers within an organization's own data center. This option provides the highest level of control over the infrastructure but requires significant investment in hardware, maintenance, and IT staff. Azure also supports hybrid cloud solutions, allowing integration between on-premises infrastructure and Azure services.
 

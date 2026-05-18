@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-backup-data-azure-backup-security.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Azure Backup security features including soft delete, vault immutability, and Multi-User Authorization.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer enables enhanced soft delete on a Recovery Services vault and configures the always-on setting. What is the primary effect of the always-on setting?"
+    choices:
+    - content: "The soft delete retention period automatically extends to 180 days."
+      isCorrect: false
+      explanation: "Incorrect. The always-on setting controls whether soft delete can be disabled, not the length of the retention period. The retention period is set separately and can be configured from 14 to 180 days."
+    - content: "Soft delete can't be disabled on the vault after the always-on setting is configured."
+      isCorrect: true
+      explanation: "Correct. The always-on setting makes enhanced soft delete irreversible. Once configured, no user—including administrators—can disable soft delete on that vault. Preventing delete operations provides protection against a ransomware attacker who compromises admin credentials and attempts to disable backup protection before encrypting data."
+    - content: "Recovery points are automatically replicated to a secondary Azure region."
+      isCorrect: false
+      explanation: "Incorrect. Cross-region replication requires configuring geo-redundant storage (GRS) on the vault. The always-on setting for soft delete only prevents the feature from being disabled."
+    - content: "The vault automatically requires Multi-User Authorization for all backup operations."
+      isCorrect: false
+      explanation: "Incorrect. Multi-User Authorization is a separate feature configured independently from soft delete. Enabling always-on soft delete doesn't automatically configure MUA."
+  - content: "Contoso's security team needs to prevent the backup administrator from disabling soft delete or stopping backups with data deletion—even if the administrator's credentials are compromised. Which Azure Backup feature provides this protection?"
+    choices:
+    - content: "Setting vault immutability to the Enabled and Locked state."
+      isCorrect: false
+      explanation: "Incorrect. Vault immutability prevents backup policies from being modified and recovery points from being deleted. It doesn't restrict the backup administrator from disabling soft delete or performing other administrative operations like stopping backup with data deletion."
+    - content: "Multi-User Authorization using Resource Guard."
+      isCorrect: true
+      explanation: "Correct. Multi-User Authorization (MUA) with Resource Guard requires a second administrator—who owns the Resource Guard resource—to authorize critical operations like disabling soft delete or stopping backup with data deletion. The backup administrator can't perform these operations alone, even with compromised credentials. They must also have permissions on the Resource Guard, which is controlled by a different team."
+    - content: "Assigning the Backup Reader role to the backup administrator account."
+      isCorrect: false
+      explanation: "Incorrect. The Backup Reader role is read-only and can't perform backup management operations. Backup administrators typically need the Backup Operator or Backup Contributor role to manage backups. Restricting them to Backup Reader would prevent them from doing their job."
+    - content: "Enabling Azure Policy with an Audit effect on backup configurations."
+      isCorrect: false
+      explanation: "Incorrect. An Azure Policy with an Audit effect reports noncompliant configurations but doesn't prevent operations from being performed. It detects problems after they occur rather than preventing them."
+  - content: "A security engineer sets a Recovery Services vault to the Enabled and Locked immutability state. What is the primary consequence of this irreversible decision?"
+    choices:
+    - content: "The vault can be unlocked by a Global Administrator in an emergency."
+      isCorrect: false
+      explanation: "Incorrect. The Enabled and Locked state is permanent and irreversible by design. No user, including a Global Administrator, can disable immutability once the vault is in this state. Locked immutability is intentional to prevent circumvention by attackers who compromise administrative accounts."
+    - content: "Vault immutability becomes permanent—it can't be disabled or changed back to a reversible state."
+      isCorrect: true
+      explanation: "Correct. The Enabled and Locked state activates WORM (Write Once, Read Many) storage for the vault, making the immutability setting irreversible. Locked immutability guarantees that recovery points can't be modified or deleted before their retention period expires, even if an attacker gains full administrative access to the subscription."
+    - content: "Backup policies can no longer be modified or updated on the vault."
+      isCorrect: false
+      explanation: "Incorrect. Vault immutability protects recovery points from being deleted or shortened in retention. Backup policies can still be modified as long as the changes don't reduce the retention of existing recovery points below the configured minimum."
+    - content: "Cross-region restore is automatically enabled to complement the immutability protection."
+      isCorrect: false
+      explanation: "Incorrect. Cross-region restore is an independent feature that requires geo-redundant storage (GRS) and must be configured separately. It isn't triggered by enabling vault immutability."

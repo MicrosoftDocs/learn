@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.confirm-access-assign-roles.assign-suitable-roles-for-surface-portals
+title: Assign suitable roles for Surface Portals
+metadata:
+  title: Assign Suitable Roles For Surface Portals
+  description: This content is part of the "Confirming access and assigning roles in Surface portals" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-assign-suitable-roles-for-surface-portals.md)]

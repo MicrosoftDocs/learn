@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: "learn.devrel.troubleshoot-optimize-internet-information-services-performance.knowledge-check"
+title: "Knowledge check"
+metadata:
+  title: "Knowledge Check"
+  description: "Check your knowledge."
+  ms.date: "04/12/2026"
+  author: "Orin-Thomas"
+  ms.author: "orthomas"
+  ms.topic: "unit"
+  module_assessment: true
+durationInMinutes: 4
+content: |
+  Choose the best response for each question.
+quiz:
+  title: "Knowledge check"
+  questions:
+    - content: "A user reports \"Service Unavailable\" errors, but you find no matching entries in the site's IIS request logs. Which log should you check next?"
+      choices:
+        - content: "The Windows Security Event Log"
+          isCorrect: false
+          explanation: "Incorrect. The Windows Security Event Log records security-related events such as logon attempts, not HTTP request rejections."
+        - content: "The HTTP.sys error log (httperr.log)"
+          isCorrect: true
+          explanation: "Correct. HTTP.sys rejects requests before they reach the worker process when the app pool is offline or the queue is full. These rejections appear only in httperr.log, not in IIS request logs."
+        - content: "The IIS configuration audit log"
+          isCorrect: false
+          explanation: "Incorrect. The IIS configuration audit log tracks changes to IIS configuration, not request-level errors."
+        - content: "The Failed Request Tracing output"
+          isCorrect: false
+          explanation: "Incorrect. Failed Request Tracing captures requests that reach the IIS pipeline. Requests rejected by HTTP.sys before reaching IIS don't appear in Failed Request Tracing output."
+    - content: "You need to capture detailed diagnostic data for requests that complete successfully (HTTP 200) but take longer than 30 seconds. Which Failed Request Tracing rule type should you configure?"
+      choices:
+        - content: "A rule triggered by status code 200"
+          isCorrect: false
+          explanation: "Incorrect. A status-code rule for 200 would trace all successful requests, which is far too many in production."
+        - content: "A rule triggered by time-taken exceeding 30 seconds"
+          isCorrect: true
+          explanation: "Correct. A time-taken threshold captures any request exceeding the specified duration regardless of status code."
+        - content: "A rule triggered by the GENERAL_REQUEST_END event"
+          isCorrect: false
+          explanation: "Incorrect. The GENERAL_REQUEST_END event fires for every completed request, not just slow ones."
+        - content: "A rule triggered by verbosity level \"Verbose\""
+          isCorrect: false
+          explanation: "Incorrect. Verbosity level controls the detail of trace output, not the condition that triggers tracing."
+    - content: "Performance Monitor shows Requests Queued (ASP.NET) steadily increasing while Requests/sec (Web Service) is flat. What does this most likely indicate?"
+      choices:
+        - content: "The server is receiving fewer requests than usual"
+          isCorrect: false
+          explanation: "Incorrect. If the server were receiving fewer requests, the queue wouldn't be growing."
+        - content: "The HTTP.sys request queue limit is too low"
+          isCorrect: false
+          explanation: "Incorrect. A low queue limit would cause rejected requests rather than a steadily growing queue."
+        - content: "The worker process can't process requests fast enough to keep up with incoming traffic"
+          isCorrect: true
+          explanation: "Correct. Flat Requests/sec with rising Requests Queued means the worker process has hit a throughput ceiling. New requests are arriving faster than completed requests are leaving the pipeline."
+        - content: "IIS output caching is invalidating entries too frequently"
+          isCorrect: false
+          explanation: "Incorrect. Cache invalidation issues would show increased processing time, not a specific pattern of flat throughput with a growing queue."
+    - content: "An application has a known slow memory leak. Which application pool recycling trigger is most appropriate to prevent memory exhaustion without causing unnecessary restarts?"
+      choices:
+        - content: "Regular time interval set to 4 hours"
+          isCorrect: false
+          explanation: "Incorrect. Time-based recycling may fire too frequently, wasting resources, or not frequently enough, failing to prevent memory exhaustion."
+        - content: "Request count limit set to 100,000"
+          isCorrect: false
+          explanation: "Incorrect. Request-count-based recycling doesn't correlate with actual memory consumption and may trigger unnecessarily or too late."
+        - content: "Private memory limit set to a threshold below the problem point"
+          isCorrect: true
+          explanation: "Correct. A private memory limit triggers recycling only when the leak has consumed significant memory, directly addressing the problem without unnecessary restarts."
+        - content: "Disable all recycling and restart the server nightly"
+          isCorrect: false
+          explanation: "Incorrect. Disabling recycling and relying on nightly restarts risks memory exhaustion during the day and is disruptive."
+    - content: "After deploying a new application version, the application pool keeps stopping. Event Viewer shows Event ID 5002 from source WAS. Which two actions should you take first?"
+      choices:
+        - content: "Check the Application Event Log for the exception causing the worker process crash and check httperr.log for the reason code associated with the 503 responses"
+          isCorrect: true
+          explanation: "Correct. Event ID 5002 means rapid-fail protection triggered due to repeated crashes. The priority is finding the crash cause in the Application Event Log and confirming the rejection mechanism in httperr.log."
+        - content: "Increase the rapid-fail protection failure count to 20 and disable rapid-fail protection to keep the app pool running"
+          isCorrect: false
+          explanation: "Incorrect. Increasing the failure count or disabling rapid-fail protection just allows the crash loop to continue longer without addressing the root cause."
+        - content: "Increase the rapid-fail protection failure count to 20 and check httperr.log for the reason code associated with the 503 responses"
+          isCorrect: false
+          explanation: "Incorrect. While checking httperr.log is appropriate, increasing the rapid-fail protection failure count doesn't help diagnose the root cause."
+        - content: "Check the Application Event Log for the exception causing the worker process crash and disable rapid-fail protection to keep the app pool running"
+          isCorrect: false
+          explanation: "Incorrect. While checking the Application Event Log is appropriate, disabling rapid-fail protection masks the problem rather than fixing it."
+

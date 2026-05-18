@@ -8,7 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Evaluate generative AI performance in Microsoft Foundry portal
 summary: Evaluating copilots is essential to ensure your generative AI applications meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your generative AI applications using the tools and features available in the Azure AI Studio.
 abstract: |
@@ -26,7 +26,7 @@ roles:
   - data-scientist
   - ai-engineer
 products: 
-  - azure-ai-foundry
+  - microsoft-foundry
 subjects: 
   - artificial-intelligence
   - machine-learning

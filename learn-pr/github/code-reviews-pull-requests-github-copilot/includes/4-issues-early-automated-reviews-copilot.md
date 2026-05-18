@@ -22,7 +22,7 @@ Copilot then applies these rules automatically to reviews to analyze larger diff
 
 ## Creating path-specific custom instructions
 
-You can use path-specific custom instructions to guide Copilot code review or the Copilot coding agent for specific files or folders. Here's how to set them up:
+You can use path-specific custom instructions to guide Copilot code review or the Copilot Cloud Agent  for specific files or folders. Here's how to set them up:
 
 1. **Create the instructions directory**
    

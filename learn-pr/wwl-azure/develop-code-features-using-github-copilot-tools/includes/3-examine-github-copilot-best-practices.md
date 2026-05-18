@@ -1,6 +1,6 @@
-The GitHub Copilot extensions for Visual Studio Code help developers write code faster and with fewer errors.
+GitHub Copilot for Visual Studio Code helps developers write code faster and with fewer errors.
 
-However, GitHub Copilot is an AI pair programmer, it's not a programmer. To get the most out of the GitHub Copilot tools, you need to follow best practices.
+However, GitHub Copilot is an AI pair programmer, not a programmer. To get the most out of GitHub Copilot, you need to follow best practices.
 
 ## Choose the right GitHub Copilot tool for the job
 
@@ -17,12 +17,12 @@ Alternatively, GitHub Copilot's chat features provide the most value when they'r
 
 - Answer questions about code in natural language.
 - Generate large sections of code, then iterate on that code to meet your needs.
-- Accomplish specific tasks with keywords and skills. GitHub Copilot Chat uses built-in keywords (and skills designed to provide important context) within prompts to accomplish common tasks quickly. Different types of keywords and skills are available in different GitHub Copilot Chat platforms.
+- Accomplish specific tasks using chat participants, slash commands, and chat variables. Chat participants (such as `@vscode` or `@terminal`) set the context for a request, slash commands (such as `/explain` or `/fix`) communicate your intent, and chat variables (such as `#file` or `#codebase`) focus Copilot on specific context. Different participants and commands are available in different GitHub Copilot Chat platforms.
 - Complete a task as a specific persona. For example, you can tell GitHub Copilot Chat that it's a Senior C++ Developer who cares greatly about code quality, readability, and efficiency. After establishing the persona, you can ask GitHub Copilot to review your code.
 
 ## Get the most out of GitHub Copilot inline suggestions
 
-The GitHub Copilot extension presents suggestions automatically to help you code more efficiently. GitHub Copilot provides better suggestions when you follow certain actions and behaviors. You may already be following some of these actions and behaviors, since they also help you and your colleagues understand your code.
+GitHub Copilot presents suggestions automatically to help you code more efficiently. GitHub Copilot provides better suggestions when you follow certain actions and behaviors. You may already be following some of these actions and behaviors, since they also help you and your colleagues understand your code.
 
 ### Provide context for GitHub Copilot
 
@@ -93,11 +93,11 @@ If you're using GitHub Copilot Chat in your IDE, open the file(s) or highlight t
 
 ### Use chat participants, slash commands, and chat variables
 
-Chat participants are designed to collect extra context either about a code base or a specific domain or technology. When you specify the appropriate participant, GitHub Copilot Chat can find and provide better information to send to the GitHub Copilot backend. For example, use `@workspace` when you ask questions about your open project, or `@vscode` when you ask questions about Visual Studio Code features and APIs.
+Chat participants are designed to collect extra context either about a code base or a specific domain or technology. When you specify the appropriate participant, GitHub Copilot Chat can find and provide better information to send to the GitHub Copilot backend. For example, use `@vscode` when you ask questions about Visual Studio Code features and APIs.
 
 Slash commands help GitHub Copilot Chat to understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting GitHub Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
 
-Chat participants, such as `@workspace` or `@vscode`, can contribute chat variables that provide domain-specific context. You can reference a chat variable in your chat prompt by using the `#` symbol. You can use chat variables to be more specific about the context of your prompt.
+Chat participants, such as `@terminal` or `@vscode`, can contribute chat variables that provide domain-specific context. You can reference a chat variable in your chat prompt by using the `#` symbol. You can use chat variables to be more specific about the context of your prompt.
 
 For example, the `#file` chat variable lets you reference specific files from your workspace in your chat prompt. This helps make the answers from GitHub Copilot Chat more relevant to your code by providing context about the file you're working with. You can ask questions like "`Can you suggest improvements to #file:package.json?`" or "`How do I add an extension in #file:devcontainer.json?`". Using the `#file` variable can help you get more targeted and accurate responses from GitHub Copilot.
 

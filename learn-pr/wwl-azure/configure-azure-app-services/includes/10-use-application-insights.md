@@ -14,8 +14,6 @@ Let's examine some characteristics of Application Insights for Azure Monitor.
 
 - Application Insights integrates with your Azure Pipeline processes, and has connection points to many development tools.
 
-- You can monitor and analyze data from mobile apps by integrating with Visual Studio App Center.
-
 ### Things to consider when using Application Insights
 
 Application Insights is ideal for supporting your development team. The feature helps developers understand how your app is performing and how it's being used. Consider monitoring the following items in your App Service configuration scenario.

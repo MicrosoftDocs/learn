@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-server-data-virtualization.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn about data virtualization in SQL Server 2025."
+  ms.date: 02/26/2026
+  author: HugoMSFT
+  ms.author: hudequei
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

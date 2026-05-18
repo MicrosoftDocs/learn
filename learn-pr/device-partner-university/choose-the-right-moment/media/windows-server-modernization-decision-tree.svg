@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <defs>
+    <style>
+      .title { font: 700 22px 'Segoe UI', Arial, sans-serif; fill:#1f2937; }
+
+      /* Increased for readability */
+      .text  { font: 16px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+      .small { font: 14px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+
+      .muted { fill:#374151; }
+
+      .box { fill:#ffffff; stroke:#1f2937; stroke-width:2; rx:14; }
+      .qbox { fill:#eff6ff; stroke:#1d4ed8; stroke-width:2; rx:14; }
+
+      /* Increased for readability */
+      .yesno { font: 700 14px 'Segoe UI', Arial, sans-serif; fill:#111827; }
+
+      .pill { fill:#f3f4f6; stroke:#6b7280; stroke-width:1.5; rx:18; }
+      .arrow { stroke:#1f2937; stroke-width:2.5; fill:none; marker-end:url(#arrowhead); }
+    </style>
+
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1f2937"/>
+    </marker>
+  </defs>
+
+  <!-- Background (prevents dark theme issues) -->
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="40" y="48" class="title">Windows Server modernization: where are you in the journey?</text>
+  <text x="40" y="76" class="text muted">Use this decision tree to determine whether to stay the course or begin modernization evaluation.</text>
+
+  <!-- Start box (taller + wrapped with tspans) -->
+  <rect x="70" y="120" width="425" height="120" class="box"/>
+  <text x="95" y="154" class="text">
+    <tspan font-weight="700">Start:</tspan>
+    <tspan> Your Windows Server environment is stable.</tspan>
+    <tspan x="95" dy="22">(Stable systems can fall behind changing expectations.)</tspan>
+  </text>
+
+  <!-- Q1 -->
+  <rect x="70" y="270" width="425" height="130" class="qbox"/>
+  <text x="95" y="306" class="text"><tspan font-weight="700">Q1:</tspan> Are there signals that expectations have changed</text>
+  <text x="95" y="328" class="text">or gaps are emerging?</text>
+  <text x="95" y="356" class="small muted">Consider security, operational, or business indicators.</text>
+
+  <!-- Connector arrow: Start -> Q1 -->
+  <path d="M260 240 L260 270" class="arrow"/>
+
+  <!-- Pill row (SWAPPED): YES on left, NO on right -->
+  <!-- YES pill (left) -->
+  <rect x="125" y="420" width="120" height="36" class="pill"/>
+  <text x="185" y="443" text-anchor="middle" class="yesno">YES</text>
+
+  <!-- NO pill (right) -->
+  <rect x="275" y="420" width="120" height="36" class="pill"/>
+  <text x="335" y="443" text-anchor="middle" class="yesno">NO</text>
+
+  <!-- Small arrow: Q1 -> between pills (choice point) -->
+  <path d="M260 400 L260 420" class="arrow"/>
+
+  <!-- Stay the course box -->
+  <rect x="560" y="290" width="560" height="150" class="box"/>
+  <text x="590" y="324" class="text"><tspan font-weight="700">Stay the course</tspan></text>
+  <text x="590" y="350" class="text">If workloads are stable and needs are met:</text>
+  <text x="610" y="376" class="text">• Maintain current approach</text>
+  <text x="610" y="400" class="text">• Review periodically</text>
+  <text x="610" y="424" class="text">• Reassess as priorities evolve</text>
+
+  <!-- Q2 -->
+  <rect x="70" y="500" width="380" height="250" class="qbox"/>
+  <text x="95" y="536" class="text"><tspan font-weight="700">Q2:</tspan> Which signal category applies?</text>
+
+  <!-- Row 1 -->
+  <rect x="95" y="560" width="330" height="45" class="box"/>
+  <text x="115" y="582.5" class="text" dominant-baseline="middle">
+    <tspan font-weight="700">Security &amp; compliance</tspan>
+  </text>
+
+  <!-- Row 2 (45 height + 18px gap => next y = 560 + 45 + 18 = 623) -->
+  <rect x="95" y="623" width="330" height="45" class="box"/>
+  <text x="115" y="645.5" class="text" dominant-baseline="middle">
+    <tspan font-weight="700">Operations</tspan>
+  </text>
+
+  <!-- Row 3 (623 + 45 + 18 = 686) -->
+  <rect x="95" y="686" width="330" height="45" class="box"/>
+  <text x="115" y="708.5" class="text" dominant-baseline="middle">
+    <tspan font-weight="700">Business</tspan>
+  </text>
+
+  <!-- Start evaluation box -->
+  <rect x="560" y="520" width="560" height="230" class="box"/>
+  <text x="590" y="554" class="text"><tspan font-weight="700">Start a modernization evaluation</tspan></text>
+  <text x="590" y="580" class="text">Assess alignment before making changes:</text>
+  <text x="610" y="606" class="text">1) Acknowledge current stability</text>
+  <text x="610" y="630" class="text">2) Identify what has changed</text>
+  <text x="610" y="654" class="text">3) Evaluate gaps and constraints</text>
+  <text x="610" y="678" class="text">4) Define desired outcomes</text>
+
+  <!-- Arrow: YES pill -> Q2 (YES is left now) -->
+  <path d="M185 456 L185 500" class="arrow"/>
+
+  <!-- Arrow: Q2 -> Start evaluation -->
+  <path d="M450 625 L560 635" class="arrow"/>
+
+  <!-- Arrow: NO pill -> Stay the course (NO is right now) -->
+  <!-- Routed to avoid crossing the pills -->
+  <path d="M335 456
+           L335 480
+           L520 480
+           L520 365
+           L560 365" class="arrow"/>
+
+  <!-- Footer -->
+  <text x="70" y="772" class="small muted">Use this as a guide to determine when evaluation—not immediate change—is appropriate.</text>
+</svg>

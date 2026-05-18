@@ -4,10 +4,10 @@ title: Query data
 metadata:
   title: Query data
   description: "Learn how to query in a data warehouse."
-  ms.date: 02/27/2025
-  author: JulianePadrao
-  ms.author: jupadrao
+  ms.date: 05/08/2026
+  author: theresa-i
+  ms.author: theresai
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/2-query-data.md)]

@@ -6,7 +6,7 @@
 
 - **IoT Hub:** allows communication between your IoT solution and the devices it manages. It connects to the devices with per-device authentication. 
 
-- **Device identity:** lives in the cloud. When you create a device identity in the IoT Hub, the hub generates a unique device connection string to associate with the physical device.
+- **Device identity:** lives in the cloud. IoT Hub stores registered device identities and their authentication credentials. For symmetric-key authentication, Azure tools or the Azure CLI can retrieve a device connection string for a registered device that includes `HostName`, `DeviceId`, and `SharedAccessKey`. X.509 authentication uses certificates instead of a symmetric-key connection string.
 
 - **MXChip IoT Devkit (a.k.a IoT Devkit):** is an Arduino compatible IoT device with rich peripherals and sensors. It also has a WiFi chip for wireless connectivity and an OLED screen, microphone, and audio out and a MicroUSB connection. You can also program it with Azure. The Mxchip device connects directly to Azure IoT Hub, which is a bi-directional service. You can capture telemetry information from the MXChip and send it back to Azure.
 
@@ -19,5 +19,5 @@
 
 Before you begin, if you don't have an active Azure subscription, you need to create a free account, and you can use 30 days free trial, or you can create your pay-as-you-go subscription.
 
-After completing this unit, your device will be connected to the WiFi, and you'll have a device identity created in the IoT Hub. The device identity retrieves the connection string that will be used to configure the IoT device to send the data to the cloud.
+After completing this unit, your device will be connected to the WiFi, and you'll have a device identity created in the IoT Hub. For symmetric-key samples, use Azure tools or the Azure CLI to retrieve the device connection string, which you'll use to configure the IoT device to send data to the cloud.
 

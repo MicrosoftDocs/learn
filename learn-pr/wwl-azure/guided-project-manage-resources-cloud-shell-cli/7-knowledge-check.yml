@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What query language does the Azure CLI use to filter and shape JSON output?"
+    choices:
+    - content: "SQL"
+      isCorrect: false
+      explanation: "SQL is used for relational databases, not for filtering Azure CLI JSON output."
+    - content: "JMESPath"
+      isCorrect: true
+      explanation: "The Azure CLI --query parameter uses JMESPath, a built-in query language for filtering and reshaping JSON results."
+    - content: "KQL (Kusto Query Language)"
+      isCorrect: false
+      explanation: "KQL is used with Azure Monitor and Log Analytics, not with Azure CLI JSON output filtering."
+  - content: "What happens when you delete a resource group using the Azure CLI?"
+    choices:
+    - content: "Only the resource group is deleted. Resources inside it are preserved."
+      isCorrect: false
+      explanation: "Deleting a resource group removes everything inside it, including all resources."
+    - content: "All resources inside the resource group are also deleted."
+      isCorrect: true
+      explanation: "Deleting a resource group is a cascading operation that removes the group and every resource it contains."
+    - content: "Resources are moved to a default resource group before the original is deleted."
+      isCorrect: false
+      explanation: "Azure does not move resources automatically. Deleting a resource group permanently removes all its contents."
+  - content: "What shell environment does Cloud Shell use by default for Azure CLI commands?"
+    choices:
+    - content: "PowerShell"
+      isCorrect: false
+      explanation: "PowerShell is available in Cloud Shell, but Azure CLI commands use the Bash environment by default."
+    - content: "Command Prompt"
+      isCorrect: false
+      explanation: "Command Prompt is a Windows-only shell and is not available in Cloud Shell."
+    - content: "Bash"
+      isCorrect: true
+      explanation: "Cloud Shell defaults to a Bash environment for Azure CLI commands, providing a Linux-based shell experience."

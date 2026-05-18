@@ -19,7 +19,17 @@ Serverless compute requires **Unity Catalog** and is available for:
 
 Serverless works best for exploratory analysis, ETL pipelines, business intelligence workloads, and scenarios where startup latency matters. The versionless runtime means Azure Databricks automatically applies upgrades, so you always run on the latest features without migration effort.
 
-However, serverless has limitations. You can't use **RDD APIs** (Resilient Distributed Dataset), **R language**, **JAR libraries** in notebooks, or custom Spark configurations. If your workload requires these capabilities, consider classic compute instead.
+However, serverless has limitations. In notebooks, serverless doesn't support **Scala**, **R language**, **JAR libraries**, or **RDD APIs** (Resilient Distributed Dataset). Custom Spark configurations are also restricted. **JAR tasks in Lakeflow Jobs** on serverless compute are available in Public Preview. If your workload requires Scala or R notebooks, RDD APIs, or full Spark configuration control, use classic compute with dedicated access mode instead.
+
+## Choose a serverless performance mode
+
+Serverless compute for jobs and pipelines offers two performance modes that balance startup speed against cost.
+
+**Performance-optimized mode** is the default. Azure Databricks maintains a pool of warm compute resources, enabling startups in seconds. Choose this mode for interactive workloads, latency-sensitive jobs, and scenarios where fast startup is critical.
+
+**Standard mode** is optimized for cost. Serverless workloads using standard performance mode typically start within 4 to 6 minutes. Standard mode can reduce DBU consumption by up to 70% compared to performance-optimized mode, making it well suited for scheduled batch jobs and pipelines where startup latency is acceptable.
+
+You configure the performance mode using the **Performance optimized** toggle in the job details page. Standard mode is not available for continuous pipelines or one-time runs submitted via the `runs/submit` API endpoint. For notebooks, only performance-optimized mode is available.
 
 ## Classic compute
 

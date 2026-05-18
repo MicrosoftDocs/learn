@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance
+metadata:
+  title: "Design Responsible AI Security, Governance, Risk Management, and Compliance"
+  description: "Learn to design secure, governed, and compliant AI systems that align with organizational policies and Responsible AI principles."
+  ms.date: 02/09/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: module
+  ms.service: azure-ai-services
+title: "Design responsible AI security, governance, risk management, and compliance"
+summary: Learn to design secure, governed, and compliant AI systems that align with organizational policies and Responsible AI principles.
+abstract: |
+  After completing this module, you will be able to:
+  - Design AI systems that balance innovation with accountability.
+  - Apply identity, access control, and data governance to secure AI agents.
+  - Implement observability and threat protection for AI solutions.
+  - Translate compliance requirements into technical controls.
+  - Mitigate vulnerabilities across prompts, models, and workflows.
+prerequisites: |
+  - Working knowledge of Microsoft Entra ID, Azure RBAC, Azure monitoring, data governance concepts, and Copilot Studio administration.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- microsoft-365-copilot
+- microsoft-365-copilot-chat
+- power-platform
+- microsoft-copilot-studio
+- dynamics-365
+subjects:
+- generative-ai
+- data-analytics
+- data-management
+- data-engineering
+- data-integration
+units:
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.introduction
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-security-agents
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-governance-agents
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-model-security
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.analyze-solution-ai-vulnerabilities-mitigations-prompt-manipulation
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.review-solution-adherence-responsible-ai-principles
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.validate-data-residency-movement-compliance
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-access-controls-ground-data-model-tune
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.design-audit-trails-changes-models-data
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.knowledge-check
+- learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.summary
+badge:
+  uid: learn.wwl.design-responsible-ai-security-governance-risk-management-compliance.badge

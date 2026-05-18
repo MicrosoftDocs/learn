@@ -7,7 +7,7 @@ In a traditional model, you’d need to expose the Remote Desktop Protocol (RDP)
 
 Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that you provision inside your virtual network. Azure Bastion provides secure and seamless RDP and SSH connectivity to your virtual machines directly from the Azure portal using Transport Layer Security (TLS). When you connect via Azure Bastion, your virtual machines don't need a public IP address, agent, or special client software.
 
-:::image type="content" source="../media/2-azure-bastion.png" alt-text="Diagram showing how a user can make a remote desktop connection to an Azure VM using Azure Bastion.":::
+:::image type="content" source="../media/2-azure-bastion.png" alt-text="Diagram showing how a user can make a remote desktop connection to an Azure VM using Azure Bastion." lightbox="../media/2-azure-bastion.png":::
 
 Bastion provides secure RDP and SSH connectivity to all VMs in the virtual network, and peered virtual networks, in which it's provisioned. Using Azure Bastion protects your virtual machines from exposing RDP/SSH ports to the outside world, while still providing secure access using RDP/SSH.
 
@@ -18,7 +18,7 @@ Azure Bastion deployment is per virtual network with support for virtual network
 The following are key benefits of Azure Bastion:
 
 - **RDP and SSH directly in Azure portal**: You get to the RDP and SSH session directly in the Azure portal, using a single-click experience.
-- **Remote session over TLS and firewall traversal for RDP/SSH**: From the Azure portal, a connection to the VM, will open an HTML5 based web client that is automatically streamed to your local device. You'll get your Remote Desktop Protocol (RDP) and Secure Shell (SSH) to traverse the corporate firewalls securely. The connection is made secure by using the Transport Layer Security (TLS) protocol to establish encryption.
+- **Remote session over TLS and firewall traversal for RDP/SSH**: From the Azure portal, a connection to the VM opens an HTML5-based web client that is automatically streamed to your local device. Your Remote Desktop Protocol (RDP) and Secure Shell (SSH) traverse corporate firewalls securely. The connection uses the Transport Layer Security (TLS) protocol to establish encryption.
 - **No Public IP required on the Azure VM**: Azure Bastion opens the RDP/SSH connection to your Azure virtual machine using private IP on your VM. You don't need a public IP.
 - **No hassle managing NSGs**: A fully managed platform PaaS service from Azure that's hardened internally to provide secure RDP/SSH connectivity. You don't need to apply any NSGs on an Azure Bastion subnet.
 - **Protection against port scanning**: Because you don't need to expose your virtual machines to the internet, your VMs are protected against port scanning by rogue and malicious users located outside your virtual network.
@@ -26,4 +26,21 @@ The following are key benefits of Azure Bastion:
 
 Use Azure Bastion to establish secure RDP and SSH connectivity to your virtual machines in Azure.
 
-Azure Bastion offers multiple SKU tiers. For more information on Azure Bastion, including the features available in the available SKUs, see the linked documentation titled "What is Azure Bastion," in the Learn more section of the summary and resources unit.
+## Azure Bastion tiers
+
+Azure Bastion is available in four tiers, allowing organizations to choose the right level of capability for their needs:
+
+- **Developer**: Uses shared infrastructure and is provided at no cost. Designed for development and testing environments—not production. Developer tier supports one virtual machine connection at a time and is available in select regions.
+- **Basic**: Provides a dedicated deployment with fixed capacity. Suitable for production environments with moderate connection requirements. Basic tier offers the core Bastion capabilities without the advanced features of higher tiers.
+- **Standard**: Includes all Basic features plus scalability, host scaling, shareable links, IP-based connections, custom port support, native client support, and file transfer. Standard is suited for organizations that need flexibility and a wider range of access options.
+- **Premium**: Includes all Standard features plus session recording (for compliance and audit requirements), and supports private-only deployment—meaning Bastion can be deployed without a public IP address for enhanced security. Premium is designed for organizations with strict regulatory or compliance requirements.
+
+## How to connect using Azure Bastion
+
+Azure Bastion supports several connection methods depending on the tier:
+
+- **Browser-based connections**: Connect to a virtual machine directly through the Azure portal using an HTML5 web client. No additional client software is required. Available for all tiers.
+- **Native client connections**: Connect using the SSH or RDP client already installed on your local computer. This provides a more familiar experience for users accustomed to native tools. Available for Standard and Premium tiers.
+- **Shareable links**: Create shareable links that allow authorized users to connect to VMs without needing to access the Azure portal directly. Available for Standard and Premium tiers.
+
+In all connection methods, the traffic goes over TLS on port 443, which means it traverses corporate firewalls that allow standard HTTPS traffic—without needing to open additional ports.

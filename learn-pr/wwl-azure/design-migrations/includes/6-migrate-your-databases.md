@@ -2,20 +2,22 @@ Most applications use a database to store the data used by the application. For 
 
 ## Azure Database Migration Service
 
-The [Azure Database Migration Service](/azure/dms/dms-overview) is part of Azure Migrate. Supported scenarios include:
+The [Azure Database Migration Service](/azure/dms/dms-overview) is part of Azure Migrate. Example scenarios include:
 
 - Azure SQL Database
 - Azure SQL Managed Instance
 - Azure SQL VM
 - Azure Cosmos DB 
 - Azure Database for MySQL 
-- Azure Database for PostgreSQL 
+- Azure Database for PostgreSQL
+
+View a complete list of [services and tools available for data migration scenarios](/azure/dms/dms-tools-matrix).
 
 ### Things to know about the Database Migration Service
 
 Azure Database Migration Service is a fully managed service. The service enables seamless migrations from multiple database sources to Azure data platforms. You can migrate your databases offline or while they're online.
 
-- **Offline migration**: An offline migration requires shutting down the server at the start of the migration. Use online migration if you can't afford application downtime. 
+- **Offline migration**: An offline migration requires shutting down the server at the start of the migration. 
 
 - **Online migration**: An online migration uses a continuous synchronization of live data, which allows a cut over to the Azure replica database at any time. Online migration minimizes downtime. 
 

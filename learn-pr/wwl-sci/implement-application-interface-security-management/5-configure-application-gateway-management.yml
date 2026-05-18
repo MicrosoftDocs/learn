@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-interface-security-management.configure-application-gateway-management
+metadata:
+  title: Configure AI Gateway in API Management for Azure AI Foundry
+  description: Configure AI Gateway capabilities in API Management to secure Azure OpenAI endpoints using managed identity authentication, token-based rate limiting, and semantic caching.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure AI Gateway in API Management for Azure AI Foundry
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-configure-application-gateway-management.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-share-files-securely.exercise-lifecycle-management
+title: Exercise - Configure lifecycle management
+metadata:
+  title: Exercise - Configure lifecycle management
+  description: "Exercise - Configure lifecycle management"
+  ms.date: 03/28/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-exercise-lifecycle-management.md)]

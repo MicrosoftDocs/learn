@@ -6,7 +6,7 @@ Event Grid delivers events by sending an HTTP POST request to the subscriber's e
 
 Event Grid delivers one event at a time by default, with the payload as an array containing a single event. This default behavior ensures that each event is independently acknowledged and retried. For high-throughput AI workloads, you can enable output batching to group multiple events per delivery request, which reduces HTTP overhead and improves throughput.
 
-Event Grid provides at-least-once delivery, which means that subscribers might receive the same event more than once. This guarantee matters for AI pipelines because it means your handler endpoints must be [idempotent](/azure/architecture/building-blocks/idempotency). Use the event `id` field to detect and deduplicate repeated deliveries. For example, if your inference service receives the same event twice, it should check whether it already processed a result for that event ID before starting a new inference run.
+Event Grid provides at-least-once delivery, which means that subscribers might receive the same event more than once. This guarantee matters for AI pipelines because it means your handler endpoints must be idempotent. Use the event `id` field to detect and deduplicate repeated deliveries. For example, if your inference service receives the same event twice, it should check whether it already processed a result for that event ID before starting a new inference run.
 
 ## Examine the retry schedule and error handling
 

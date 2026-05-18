@@ -25,17 +25,6 @@ quiz:
         - content: "Microsoft Entra (keyless) and API key"
           isCorrect: true
           explanation: "Microsoft Entra (keyless) and API key are both supported authentication methods for the Voice Live API."
-    - content: "Which scope is required when generating a token for Microsoft Entra authentication?"
-      choices:
-        - content: "`https://cognitiveservices.azure.com/.default`"
-          isCorrect: true
-          explanation: "The scope `https://cognitiveservices.azure.com/.default`, or `https://ai.azure.com/.default`, is required for Microsoft Entra authentication."
-        - content: "`https://management.azure.com/.default`"
-          isCorrect: false
-          explanation: "This is the Azure Resource Manager scope, not for AI services"
-        - content: "`https://graph.microsoft.com/.default`"
-          isCorrect: false
-          explanation: "This is the Microsoft Graph API scope, not for AI services"
     - content: "Which protocol is used for avatar streaming integration in Voice Live API?"
       choices:
         - content: "HTTP/2"
@@ -47,25 +36,25 @@ quiz:
         - content: "gRPC"
           isCorrect: false
           explanation: "gRPC is used to enable communication between microservices by using HTTP/2."
-    - content: "Which event should be handled to stop audio playback when a user interrupts the voice agent?"
+    - content: "How do you configure and test Voice Live agent integration in the Foundry Portal?"
       choices:
-        - content: "`ServerEventType.RESPONSE_AUDIO_DELTA`"
+        - content: "You can't - Voice Live is only accessible through the REST API or Python SDK."
+          isCorrect: false
+          explanation: "You can configure and test Voice Live agent integration in the Foundry Portal."
+        - content: "In the Azure Speech in Foundry Tools Voice Live playground"
+          isCorrect: false
+          explanation: "You can use Voice Live playground to test the Voice live API; but not to integrate it with an agent."
+        - content: "Enable Voice mode in the agent playground"
+          isCorrect: true
+          explanation: "Enabling Voice mode in the agent playground enables you to configure and test Voice Live agent integration."
+    - content: "How can you stop audio playback when a user interrupts the voice agent?"
+      choices:
+        - content: "You can't - the user must wait for the agent to finish."
           isCorrect: false
           explanation: "This event is for receiving audio chunks to play, not for stopping playback"
-        - content: "`ServerEventType.INPUT_AUDIO_BUFFER_SPEECH_STARTED`"
+        - content: "Handle the ServerEventType.INPUT_AUDIO_BUFFER_SPEECH_STARTED event"
           isCorrect: true
           explanation: "This event can be used to stop audio playback, and cancel any current response."
-        - content: "`ServerEventType.SESSION_UPDATED`"
+        - content: "Reset the Voice Live session and clear the conversation history"
           isCorrect: false
-          explanation: "This event indicates session readiness, not user speech interruption."
-    - content: "What is the recommended authentication method for production applications using the SDK?"
-      choices:
-        - content: "API key authentication"
-          isCorrect: false
-          explanation: "API key authentication isn't recommended for production applications."
-        - content: "Microsoft Entra authentication with DefaultAzureCredential"
-          isCorrect: true
-          explanation: "Microsoft Entra authentication with DefaultAzureCredential is the recommended approach for production applications."
-        - content: "Basic username/password authentication"
-          isCorrect: false
-          explanation: "Basic username/password authentication isn't a supported authentication method."
+          explanation: "It isn't necessary to reset the session or clear conversation history to stop audio playback when a user interrupts the voice agent."

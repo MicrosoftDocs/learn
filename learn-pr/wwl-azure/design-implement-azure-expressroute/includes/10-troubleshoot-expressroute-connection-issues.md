@@ -23,7 +23,7 @@ For an ExpressRoute circuit to be operational, the Microsoft **Circuit status** 
 
 ### Verify the peering 
 
-Each ExpressRoute circuit can have: an Azure private peering, an Azure public peering, and/or a Microsoft peering. For success, the peering status should be **provisioned**. 
+Each ExpressRoute circuit can have one or both peerings: Azure private peering and Microsoft peering. For success, the peering status should be **provisioned**. 
 
 :::image type="content" source="../media/peering-status.png" alt-text="Screenshot of the peering status. ":::
 
@@ -36,4 +36,4 @@ The Azure portal has information on configuring and troubleshooting ExpressRoute
 When you need assistance from Microsoft or from an ExpressRoute partner, you must provide the ExpressRoute Service Key. The Service Key uniquely identifies your circuit.
 
 > [!TIP]
-> Learn more about ExpressRoute troubleshooting in the [Troubleshoot virtual network connectivity in Microsoft Azure](/training/modules/cloud-hybrid-connectivity/) module.
+> Learn more about ExpressRoute troubleshooting in the [Troubleshoot cloud and hybrid connectivity in Microsoft Azure](/training/modules/cloud-hybrid-connectivity/) module.

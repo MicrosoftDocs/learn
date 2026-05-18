@@ -1,20 +1,31 @@
-Microsoft Foundry supports multiple models that are capable of generating images, including (but not limited to):
+﻿::: zone pivot="video"
 
-- DALL-E 3
-- GPT-Image 1
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=55d537f9-dbe9-4e5d-befe-2d8ae238f16f]
 
 > [!TIP]
-> For the latest information about model availability in Microsoft Foundry, view the model catalog. See **[Model catalog and collections in Microsoft Foundry portal](/azure/ai-foundry/how-to/model-catalog-overview?azure-portal=true)** for details.
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
+Microsoft Foundry supports multiple models that are capable of generating images, including (but not limited to):
+
+- The OpenAI *gpt-image-1* series of models.
+- The Black Forest Labs *FLUX* series of models.
+
+> [!TIP]
+> View the **[Model catalog](https://ai.azure.com/catalog/models?azure-portal=true)** for the full set of models available in Microsoft Foundry. In the Foundry portal you can filter by inference task to find *text to image* models.
 
 Image generation models are generative AI model that can create graphical data from natural language input. Put more simply, you can provide the model with a description and it can generate an appropriate image.
 
 For example, you might submit the following natural language prompt to an image generation model:
 
-*A squirrel on a motorcycle*
+*A robot eating spaghetti*
 
 This prompt could result in the generation of graphical output such as the following image:
 
-![A picture of a squirrel on a motorcycle.](../media/squirrel-on-motorcycle.png)
+![An illustration of a robot eating spaghetti.](../media/robot-eating-spaghetti.png)
 
 The images generated are original; they aren't retrieved from a curated image catalog. In other words, the model isn't a search system for *finding* appropriate images - it is an artificial intelligence (AI) model that *generates* new images based on the data on which it was trained.
-
+::: zone-end

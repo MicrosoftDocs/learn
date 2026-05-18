@@ -8,7 +8,7 @@ metadata:
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Develop a speech-capable generative AI application
 summary: A voice carries meaning beyond words. Learn how to use models that transacribe and synthesize speech.
 abstract: |

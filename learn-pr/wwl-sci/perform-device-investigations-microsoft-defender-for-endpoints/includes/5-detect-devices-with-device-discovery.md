@@ -20,7 +20,7 @@ To assess and Onboard Unmanaged Devices:
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=c8e97473-5d33-4e67-bd36-7b608f678262]
 
 
-With this capability, a security recommendation to onboard devices to Microsoft Defender for Endpoint is available as part of the existing threat and vulnerability management experience.
+With this capability, a security recommendation to onboard devices to Microsoft Defender for Endpoint is available as part of the existing Microsoft Defender Vulnerability Management experience.
 
 
 Discovery methods

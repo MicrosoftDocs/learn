@@ -15,7 +15,7 @@ The module also covered the core components of datacenters, such as power supply
 - [DCHost: What is a Data Center? Why is it Important for Web Hosting?](https://www.dchost.com/blog/en/what-is-a-data-center-why-is-it-important-for-web-hosting/)
 - [Datacenter Dynamics: An ode to data centers - From server rooms to critical infrastructure](https://www.datacenterdynamics.com/en/broadcasts/management-and-operations/2025/an-ode-to-data-centers-from-server-rooms-to-critical-infrastructure/)
 - [Building the Backbone of the Digital Economy and Financial Innovation through Strategic Investments in Data Centers](https://ijisrt.com/building-the-backbone-of-the-digital-economy-and-financial-innovation-through-strategic-investments-in-data-centers)
-- [The Role of Data Centers in Powering Retail's Digital Transformation](https://articleterrain.com/the-role-of-data-centers-in-powering-retails-digital-transformation/)
+- [The Role of Data Centers in Powering Retail's Digital Transformation](https://content.techgig.com/technology-guide/the-role-of-data-center-solutions-in-digital-transformation/articleshow/115888809.cms)
 - [LSE Research Online: Computing the everyday: social media as data platforms](https://eprints.lse.ac.uk/81432/1/Kallinikos_Computing%20the%20everyday_2017.pdf)
 - [Technology Magazine: The New Era of AI and its Impact on Data Centers](https://technologymagazine.com/articles/the-new-era-of-ai-and-its-impact-on-data-centres)
 - [The Internet of Things: Definitions, Key Concepts, and Reference Architectures](https://link.springer.com/chapter/10.1007/978-3-030-41110-7_1)

@@ -12,5 +12,4 @@ Thank you for letting us partner with you as we seek to transform the future of 
 - [Student certification discount](https://aka.ms/mslestudentsdiscount)
 - [Microsoft Volume Licensing Program](https://aka.ms/mslevolumelicensing)
 - [Certiport](https://certiport.pearsonvue.com/Certifications/Microsoft)
-- [Microsoft Learn Career Connected](https://aka.ms/CareerConnected)
 - [Microsoft Learned Career Connected Talent Coalition](/training/educator-center/programs/msle/index-tab3)

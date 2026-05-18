@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.eliminate-public-exposure-paas-private-link.assess-risk-public-paas-endpoint-exposure
+title: Assess the risk of public PaaS endpoint exposure
+metadata:
+  title: Assess the Risk of Public PaaS Endpoint Exposure
+  description: "Assess the attack surface created by public PaaS endpoints, compare service endpoints and private endpoints, and understand data exfiltration scenarios that public endpoints enable."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-assess-risk-public-paas-endpoint-exposure.md)]

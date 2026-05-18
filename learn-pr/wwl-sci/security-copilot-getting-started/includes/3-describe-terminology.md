@@ -18,7 +18,7 @@ At the center of Security Copilot is the prompt bar. You use the prompt bar to t
 
 :::image type="content" source="../media/prompt-bar-new.png" lightbox="../media/prompt-bar-new.png" alt-text="A screen capture of the Microsoft Security Copilot prompt bar.":::
 
-As you make requests and as Copilot responds, you may have some follow-up requests. The entirety of the dialog is referred to as a session. Copilot maintains context within a session.
+As you make requests and as Copilot responds, you might have some follow-up requests. The entirety of the dialog is referred to as a session. Copilot maintains context within a session.
 
 ***Plugins and capabilities***
 
@@ -30,7 +30,7 @@ In the previous unit, we mentioned that Copilot integrates with various sources 
 - The ability to generate KQL queries from natural language input.
 - The ability to generate incident reports.
 
-A plugin for Microsoft Sentinel may have similar capabilities but runs only within the scope of Microsoft Sentinel.
+A plugin for Microsoft Sentinel might have similar capabilities but runs only within the scope of Microsoft Sentinel.
 
 Copilot currently supports plug-ins for Microsoft services and non-Microsoft services, including websites and custom plug-ins that can be enabled.
 
@@ -38,15 +38,15 @@ Copilot currently supports plug-ins for Microsoft services and non-Microsoft ser
 
 :::image type="content" source="../media/non-microsoft-plugins-updated.png" lightbox="../media/non-microsoft-plugins-updated.png" alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
 
-Some plugins require setup and configuration, as depicted by the Setup button or the gear icon. For Microsoft plugins, set up may be required where resource specific information needs to be specified. For non-Microsoft sources, set up may be required for account authentication.
+Some plugins require setup and configuration, as depicted by the Setup button or the gear icon. For Microsoft plugins, set up might be required where resource specific information needs to be specified. For non-Microsoft sources, set up might be required for account authentication.
 
 ***Workspaces***
 
 Copilot workspaces are separate Copilot work environments within the tenant in which your Copilot instance is operating.
 
-To help you better understand the concept of workspaces, we'll use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that will use that room. When someone enters the house, they may have access to some rooms but not others.
+To help you better understand the concept of workspaces, we use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that use that room. When someone enters the house, they might have access to some rooms but not others.
 
-:::image type="content" source="../media/workspace-overview.png" lightbox="../media/workspace-overview.png" alt-text="Illustration of a house which is like a tenant and a room in the house is like a workspace in Security Copilot.":::
+:::image type="content" source="../media/workspace-overview.png" lightbox="../media/workspace-overview.png" alt-text="Illustration of a house, which is like a tenant and a room in the house is like a workspace in Security Copilot.":::
 
 You can think of Copilot Workspaces fitting into this analogy. A Copilot workspace is analogous to a room in a house. You can also think of the house as analogous to a tenant. In the same way that a house has multiple rooms, the tenant in which Copilot is operating can have multiple workspaces.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-create-list-resources
+title: Exercise - Create and list resources with CLI commands
+metadata:
+  title: Exercise - Create and list resources with CLI commands
+  description: "Exercise - Create and list resources with CLI commands"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-list-resources.md)]

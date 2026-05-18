@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-extensibility-ai-solutions.design-agent-extensibility-model-context-protocol-copilot-studio
+title: "Design extensible agents using MCP in Copilot Studio"
+metadata:
+  title: "Design Extensible Agents Using MCP in Copilot Studio"
+  description: "Learn how to design and extend agents in Copilot Studio using MCP for consistent reasoning, integration, and governance in enterprise systems."
+  ms.date: 02/13/2026
+  author: pablorodMS
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-design-agent-extensibility-model-context-protocol-copilot-studio.md)]

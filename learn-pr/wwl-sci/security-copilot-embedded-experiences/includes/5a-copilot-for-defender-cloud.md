@@ -1,139 +1,80 @@
-Defender for Cloud integrates Copilot directly in to the Defender for Cloud experience. This integration allows you to analyze, summarize, remediate, and delegate your recommendations with natural language prompts
+Microsoft Defender for Cloud integrates both Microsoft Security Copilot and Microsoft Copilot for Azure into its experience. These integrations allow you to ask security-related questions, receive responses, and automatically trigger the necessary skills to analyze, summarize, remediate, and delegate recommendations using natural language prompts.
+
+> [!NOTE]
+> The list of Copilot capabilities embedded in Microsoft Defender for Cloud is continually growing. This unit provides just a sampling of those capabilities. For more information, see the documentation on Microsoft Security Copilot in Defender for Cloud.
+
+### How the integration works
+
+Copilot in Defender for Cloud uses a dual-platform architecture. When you enter a prompt in the Copilot interface, Copilot for Azure receives the prompt and evaluates it along with the active page to determine the skills needed. If the prompt is security related and a matching Security Copilot skill is available, Security Copilot executes the skill and sends the response back through Copilot for Azure for presentation. If the skill is unavailable, Copilot for Azure searches its own available skills to find the most relevant match and responds accordingly.
+
+This distinction matters for SCU consumption. Only prompts that invoke Security Copilot skills consume Security Compute Units. Prompts handled entirely by Copilot for Azure don't consume SCUs.
+
+### Prerequisites
 
 Copilot in Defender for Cloud is available for all users when you:
 
 - Enable Defender for Cloud on your environment.
-- Have access to Azure Copilot.
-- Have Security Compute Units assigned for Security Copilot.
+- Have access to Azure Copilot, which is available by default to all Azure portal users unless restricted by a Global Administrator.
+- Have Security Compute Units (SCUs) assigned for Security Copilot.
 
-Copilot in Defender for Cloud isn't reliant on any of the available plans in Defender. However, in order to enjoy the full range of Copilot's capabilities in Defender for Cloud, we recommend enabling the Defender for Cloud Security Posture Management (DCSPM) plan on your environments. The DCSPM plan includes many extra security features such as Attack path analysis, Risk prioritization and more, all of which can be navigated and managed using Security Copilot. Without the DCSPM plan, you're still able to use Copilot in Defender for Cloud, but in a limited capacity.
+Copilot in Defender for Cloud doesn't rely on any of the available Defender for Cloud plans. However, to enjoy the full range of Copilot capabilities, enabling the Defender Cloud Security Posture Management (DCSPM) plan is recommended. The DCSPM plan includes extra security features such as attack path analysis and risk prioritization, all of which can be navigated and managed using Security Copilot. Without the DCSPM plan, you can still use Copilot in Defender for Cloud, but with limited capacity.
 
-> [!NOTE]
->The list of Copilot capabilities embedded in Microsoft Defender for Cloud is continually growing. This unit provides just a sampling of those capabilities. For more information, see documentation on Microsoft Defender for Cloud.
+### Analyze recommendations
 
-### Analyze recommendations with Security Copilot
+Copilot's integration with Defender for Cloud enables you to analyze all recommendations presented on the recommendations page using natural language prompts. From the recommendations page, selecting **Analyze with Copilot** opens the Copilot interface where you can use natural language prompts to narrow the scope of the recommendations and focus on specific areas of concern.
 
-Microsoft Defender for Cloud's integration with Security Copilot allows you to analyze all of the recommendations presented on the recommendations page. By narrowing the scope of the recommendations page, you can focus on specific recommendations and get a better understanding of your security posture.
+:::image type="content" source="../media/defender-for-cloud-recommendations.png" lightbox="../media/defender-for-cloud-recommendations.png" alt-text="Screen capture of the recommendations page of Microsoft Defender for Cloud.":::
 
-Once the list of recommendations is filtered, you can investigate specific recommendations and gain a better understanding of the risks and vulnerabilities that are present in your environment.
+Some sample prompts include:
 
-To analyze your recommendations:
+- Show risks for publicly exposed resources
+- Show risks for resources with sensitive data
+- Show risks for critical resources
 
-1. From the Azure portal, search for and select Microsoft Defender for Cloud.
+Copilot generates an initial analysis and you can filter the list of recommendations based on the results. You can further refine the results by selecting suggested follow-up prompts or entering prompts manually. The recommendations page updates with the appropriate filters applied based on the prompts you provided.
 
-1. Navigate to Recommendations.
+:::image type="content" source="../media/defend-for-cloud-apply-filter.png" lightbox="../media/defend-for-cloud-apply-filter.png" alt-text="Screen capture of the recommendations analysis provided by Microsoft Defender for Cloud and the option to filter the list of recommendations.":::
 
-1. Select Analyze with Copilot.
+### Summarize recommendations
 
-    :::image type="content" source="../media/defender-for-cloud-recommendations.png" lightbox="../media/defender-for-cloud-recommendations.png" alt-text="Screen capture of the recommendations page of Microsoft Defender for Cloud.":::
+Once you select a specific recommendation, Copilot can summarize it to provide a quick, natural-language overview of the risks and vulnerabilities associated with that recommendation. The summary helps you understand the context and effect of the recommendation, enabling you to prioritize remediation efforts effectively.
 
-1. Select one of the suggested prompts or enter a prompt in natural language. Some sample prompts include:
+By summarizing a recommendation, you gain insight into what the recommendation addresses, why it matters, and the potential impact of implementing it—all without having to interpret the technical details manually.
 
-    - Show risks for publicly exposed resources
-    - Show risks for resources with sensitive data
-    - Show risks for critical resources
+:::image type="content" source="../media/defender-for-cloud-summarize-recommendation.png" lightbox="../media/defender-for-cloud-summarize-recommendation.png" alt-text="Screen capture of the recommendation summary generated by Copilot.":::
 
-1. Copilot generates an initial analysis and you can filter the list of recommendation based on that initial analysis. You can further refine the results by selecting one of the suggested follow-up prompts or entering one manually, and applying the filter.
+Once you have a better understanding of the recommendation, you can decide how best to handle it. For example, you can ask Copilot to help remediate the recommendation, delegate the remediation to the resource owner, or enter other prompts as needed.
 
-    :::image type="content" source="../media/defend-for-cloud-apply-filter.png" lightbox="../media/defend-for-cloud-apply-filter.png" alt-text="Screen capture of the recommendations analysis provided by Microsoft Defender for Cloud and the option to filter the list of recommendations.":::
+### Remediate recommendations
 
-The recommendations page updates with the appropriate filters applied based on the prompts you provided. Copilot remains open and you can enter other prompts as needed.
+After summarizing a recommendation, Copilot can assist with remediation by providing step-by-step guidance to address the identified risk. Remediating recommendations with Copilot allows you to improve your security posture by directly addressing vulnerabilities in your environment.
 
-### Summarize recommendations with Security Copilot
+When you ask Copilot to help with remediation, it provides suggested remediation information along with instructions. In some cases, a recommendation might include a script that can be run to apply the remediation directly.
 
-Microsoft Defender for Cloud's integration with Security Copilot allows you to summarize a recommendation to get a better understanding of the risks and vulnerabilities that are present in your environment.
+:::image type="content" source="../media/defender-for-cloud-run-script.png" lightbox="../media/defender-for-cloud-run-script.png" alt-text="Screen capture of a recommendation summary showing the option to run a script to remediate a recommendation.":::
 
-By summarizing a recommendation, you can get a quick overview of the recommendation in natural language. Summarizing the recommendation helps you understand the information presented in a recommendation and allows you to prioritize your remediation efforts.
+### Delegate recommendations
 
-Once a recommendation is selected, you can summarize it with Copilot. By using prompts, you can get a better understanding of the recommendation and decide how best to handle it.
+Copilot can also help you delegate recommendations to the appropriate person or team. Delegating recommendations ensures that the right people address the risks and vulnerabilities in your environment, improving overall security posture.
 
-To summarize a selected recommendation:
+When you choose to delegate, Copilot drafts an email summarizing the recommendation and the suggested remediation actions. You can review the email, add recipients, and send it directly from the interface. Once delegated, you can monitor the progress of the remediation on Defender for Cloud's recommendations page.
 
-1. From the Azure portal, search for and select Microsoft Defender for Cloud.
+:::image type="content" source="../media/defender-for-cloud-delegate-v2b.png" lightbox="../media/defender-for-cloud-delegate-v2b.png" alt-text="Screen capture of the response Copilot generates when you select to delegate a recommendation to the resource owner.":::
 
-1. Navigate to Recommendations, then select a recommendation.
+:::image type="content" source="../media/defender-for-cloud-delegate-email.png" lightbox="../media/defender-for-cloud-delegate-email.png" alt-text="Screen capture of the email Copilot generates when you select to delegate a recommendation to the resource owner.":::
 
-1. From the recommendation page, select Summarize with Copilot.
+### Remediate code
 
-    :::image type="content" source="../media/defender-for-cloud-summarize-recommendation.png" lightbox="../media/defender-for-cloud-summarize-recommendation.png" alt-text="Screen capture of the recommendation summary generated by Copilot.":::
+Copilot in Defender for Cloud can also help remediate Infrastructure as Code (IaC) misconfigurations discovered in your code repositories. This capability allows you to address security misconfigurations and vulnerabilities early in the development cycle by automatically generating pull requests (PRs) that correct the identified weaknesses.
 
-1. Once Copilot generates a summary response, you enter more prompts as needed.
+This capability requires additional prerequisites beyond the standard Copilot requirements, including connecting your Azure DevOps environment to Defender for Cloud, configuring the Microsoft Security DevOps Azure DevOps extension, and meeting the DevOps security support and prerequisites requirements.
 
-Once you have a better understanding of the recommendation, you can decide how best to handle it. You can, for example, select to have Copilot help you remediate the recommendation, delegate the remediation to the resource owner, or you can enter other prompts as needed.
+When a recommendation related to IaC scanning findings is identified, you can select **Reduce risk with Copilot** to have Copilot generate a code fix. Copilot identifies the relevant security check, generates a remediation, and creates a pull request in your code repository. A developer should then review and approve the PR before merging it into the code base.
 
-### Remediate recommendations with Security Copilot
+:::image type="content" source="../media/defender-for-cloud-devops.png" lightbox="../media/defender-for-cloud-devops.png" alt-text="Screen capture of a recommendation titled, Azure DevOps repositories should have infrastructure as code scanning findings resolved, and the option to reduce risk with Copilot.":::
 
-Microsoft Defender for Cloud's integration with Security Copilot allows you to remediate recommendations that are present on the recommendations page with natural language prompts. Remediating a recommendation with Security Copilot allows you to improve your security posture by addressing the risks and vulnerabilities that are present in your environment.
+:::image type="content" source="../media/defender-for-cloud-security-check-v2.png" lightbox="../media/defender-for-cloud-security-check-v2.png" alt-text="Screen capture showing Copilot's response to selecting Reduce risk with Copilot.":::
 
-Once a recommendation is summarized with Copilot in Defender for Cloud, you can decide how best to handle it. By using prompts, you can have Security Copilot assist you in the remediation process.
+### Providing feedback
 
-To use Copilot in Defender for Cloud to assist with the remediation process for recommendations:
-
-1. Summarize a recommendation, as described in the section, 'Summarize recommendations with Security Copilot'
-
-1. Select Help me remediate this recommendation.
-
-1. Review the suggested remediation information and follow the instructions to remediate the recommendation. In some cases, a recommendation may include a script that can be run to apply the remediation.
-
-    :::image type="content" source="../media/defender-for-cloud-run-script.png" lightbox="../media/defender-for-cloud-run-script.png" alt-text="Screen capture of a recommendation summary showing the option to run a script to remediate a recommendation.":::
-
-### Delegate recommendations with Security Copilot
-
-Microsoft Defender for Cloud's integration with Security Copilot allows you to delegate recommendations that are present on the recommendations page with natural language prompts. Recommendations can be delegated to another person or team.
-
-Delegating recommendations can improve your security posture by having the right people address the risks and vulnerabilities presented by the recommendations that are present in your environment.
-
-To use Copilot to delegate recommendations and ensure the right person or team is handling the risks and vulnerabilities that are present in your environment:
-
-1. Summarize a recommendation, as described in the section, 'Summarize recommendations with Security Copilot.'
-
-1. Select Delegate the remediation to the resource owner.
-
-1. Copilot summarizes an email that it drafts. You can then select to view and send the email.
-
-    :::image type="content" source="../media/defender-for-cloud-delegate-v2b.png" lightbox="../media/defender-for-cloud-delegate-v2b.png" alt-text="Screen capture of the response copilot generates when you select to delegate a recommendation to the resource owner.":::
-
-1. Review the email and add recipients, and select Send.
-
-    :::image type="content" source="../media/defender-for-cloud-delegate-email.png" lightbox="../media/defender-for-cloud-delegate-email.png" alt-text="Screen capture of the email copilot generates when you select to delegate a recommendation to the resource owner.":::
-
-Once the recommendation is delegated, you can monitor the progress of the remediation on Defender for Cloud's recommendations page. Copilot remains open and you can enter other prompts as needed.
-
-### Remediate code with Security Copilot
-
-Microsoft Defender for Cloud's integration with Security Copilot allows you to remediate Infrastructure as Code (IaC) misconfigurations that are discovered in your code repositories. Remediating an IaC finding with Copilot allows you to address security misconfigurations and vulnerabilities early in the development cycle by automatically generating Pull Requests (PRs) that correct the identified weaknesses. Remediating these misconfigurations and vulnerabilities ensure that security issues in code are addressed accurately and promptly.
-
-To use Copilot to help remediate Infrastructure as Code (IaC) misconfigurations that are discovered in your code repositories, you must:
-
-- Enable Defender for Cloud on your environment.
-- Have access to Azure Copilot.
-- Have Security Compute Units assigned for Security Copilot.
-- Connect your Azure DevOps environment to Defender for Cloud.
-- Configure the Microsoft Security DevOps Azure DevOps extension.
-- Review and ensure you meet the DevOps security support and prerequisites requirements.
-
-To remediate an Infrastructure as Code scanning finding:
-
-1. From the Azure portal, search for and select Microsoft Defender for Cloud.
-
-1. Navigate to Recommendations.
-
-1. Search for recommendations with the title 'Azure DevOps repositories should have infrastructure as code scanning findings resolved' recommendation then select any of the resulting recommendations.
-
-1. Select Reduce risk with Copilot.
-
-    :::image type="content" source="../media/defender-for-cloud-devops.png" lightbox="../media/defender-for-cloud-devops.png" alt-text="Screen capture of a recommendation titled, 'Azure DevOps repositories should have infrastructure as code scanning findings resolved' and the option to reduce risk with Copilot.":::
-
-1. By selecting 'Select security check,' Copilot can generate pull requests to remediate supported security checks from the recommendation.
-
-1. Select the appropriate description followed by the select button.
-
-    :::image type="content" source="../media/defender-for-cloud-security-check-v2.png" lightbox="../media/defender-for-cloud-security-check-v2.png" alt-text="Screen capture showing Copilot's response to selecting Reduce risk with Copilot.":::
-
-1. Review the summary of the code fix, then select Submit.
-
-1. Select the provided link.
-
-1. Review the PR.
-
-Once the PR is generated in your code repository, you should have a developer review and approve the PR to have it merged into the code base.
+As with other embedded experiences, Copilot in Defender for Cloud provides a mechanism to give feedback on the accuracy of AI-generated responses. After each completed prompt, you can select from available options including **Looks right** if the results are accurate, **Needs improvement** if the results are incomplete or incorrect, or **Inappropriate** if the results contain questionable information. Whenever possible, provide additional details to help improve future responses.

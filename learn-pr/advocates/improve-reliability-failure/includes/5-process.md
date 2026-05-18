@@ -15,7 +15,7 @@ important first step: gather the data.
 
 Before you can conduct a post-incident review, you first need to gather
 data. Specifically, you need to collect as much of the conversation and
-context (both technical and non-technical) surrounding the event as you can
+context (both technical and nontechnical) surrounding the event as you can
 so you can use all of the crucial data contained in it. The conversation
 among team members that happened during the outage or incident will be one
 of your richest sources of information.
@@ -25,7 +25,7 @@ the people involved in the incident drew context. What information were
 they getting from your systems when the incident was going on?
 
 And finally, if possible, it would be helpful for you to get a better
-picture of what changed just prior to and during the incident, because
+picture of what changed prior to and during the incident, because
 changes are often contributing factors when an incident occurs.
 
 We can look at this process as three separate parts:
@@ -61,123 +61,123 @@ happened during the incident.
 
 ### Microsoft Graph API for extracting the conversation
 
-Microsoft Graph API provides a programmatic way to find, export and bring
-in the conversation that was collected inside the Teams channel devoted to
-this specific incident. The data retrieved also includes metadata that
-will be useful when constructing a chronology, including who joined the
-channel (and when) and timestamps for individual parts of the conversation.
+Microsoft Graph API provides a programmatic way to retrieve the
+conversation that was collected inside the Teams channel devoted to this
+specific incident. The data retrieved includes timestamps, authorship,
+edits, replies, and some system messages, all of which can help when
+constructing a chronology.
 
 One easy way to get started with Microsoft Graph API is to use the
 Microsoft Graph Explorer. Microsoft Graph Explorer is a web-based API
-browser which allows you to pick the API calls by choosing pre-populated
-options. Here's what it looks like:
+browser that lets you choose API calls from a **Sample queries** panel and
+try them interactively.
 
-:::image type="content" source="../media/microsoft-graph-explorer.png" alt-text="Screenshot of the Microsoft Graph Explorer web page.":::
+Before you run the queries, make sure the user or app you're using has the
+permissions and consent required for the access mode you've chosen. In
+delegated scenarios, listing joined teams
+uses `Team.ReadBasic.All`, listing channels uses `Channel.ReadBasic.All`,
+and reading channel messages requires `ChannelMessage.Read.All`. If you
+later automate the workflow with app-only access, use
+`GET /users/{id | user-principal-name}/joinedTeams` instead of the
+delegated-only `/me/joinedTeams` alias, using the `Team.ReadBasic.All`
+application permission. For the channel-specific read steps, the
+least-privileged app-only options are `ChannelSettings.Read.Group` for
+listing channels and `ChannelMessage.Read.Group` for reading messages,
+both with resource-specific consent.
 
-We'll step through a set of "Microsoft Teams" and "Microsoft Teams
-(beta)" API calls to retrieve the conversation. Each step of the way, we'll choose a query, run the query, and then select the info from the
-response that helps us with the next step. We then use this info to
+We'll step through a set of Microsoft Graph v1.0 "Microsoft Teams" API
+calls to retrieve the conversation. (Channel messages moved from beta to
+v1.0 several years ago, so the beta endpoints are no longer required for
+this scenario.) Each step of the way, we'll choose a query, run the query,
+and then select the info from the response that helps us with the next step. We then use this info to
 construct the next request. For example, first we query a list of team IDs
-to show the teams we are a part of. We choose the one we need from the
+to show the teams we're a part of. We choose the one we need from the
 response and insert this ID into the next query URL to get a list of
 channels in that team.
 
-Here are our steps:
+Here are our steps, shown as Microsoft Graph v1.0 endpoints:
 
-1. GET "my joined teams" (to find the team ID of the team we use).
-2. GET "channels of a team which I am member of" (to find the channel ID of the channel we used for that incident).
-3. GET "messages in a channel" (to retrieve the conversation).
+1. `GET /me/joinedTeams` (to find the team ID of the team we use in a delegated scenario) or `GET /users/{id | user-principal-name}/joinedTeams` (to do the same in an app-only scenario).
+2. `GET /teams/{team-id}/channels` (to find the channel ID of the channel we used for that incident).
+3. `GET /teams/{team-id}/channels/{channel-id}/messages?$expand=replies` (to retrieve the threaded conversation).
+4. Follow `@odata.nextLink` and `replies@odata.nextLink` as needed, or call `GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies` to page through larger threads.
+
+If you used a shared channel, note the `joinedTeams` API doesn't
+return the host team for a shared channel that the user is a direct member
+of. This caveat applies whether you call `GET /me/joinedTeams` or
+`GET /users/{id | user-principal-name}/joinedTeams`. In that case, start
+from the known team and channel identifiers or use the associated team APIs
+to locate the host team.
+
+In Graph Explorer, you can either enter these URLs directly or pick the equivalent entries from the built-in **Sample queries** panel under **Microsoft Teams**.
 
 If we later wanted to construct a program to perform each of those steps
 (and indeed we do), there's a **code snippets** option in the request window
 that presents sample code for that query in a number of different
 programming languages.
 
-### Targeted dashboards for context display
+Depending on how your team uses Teams, the message history can also contain
+system messages that help explain when members were added or removed.
+However, if you need an authoritative audit trail of channel membership or
+access changes, complement this data with Microsoft 365 audit logs.
 
-Dashboards in Azure allow us to collect the
-information from Azure Monitor that matters to us for operational
-awareness together on a single page. The user interface allows us to choose the time period being
-displayed, so it's possible to "rewind time" and show the dashboard
-information for the time period associated with an incident if we so choose
-(providing the information is not too old to no longer be retained in Azure
-Monitor). This reconstructed user interface can be helpful when trying to
-determine what the people in an incident saw during that incident, but it
-requires the person doing the incident review to manually seek to the right
-time period.
+### Dashboards and workbooks for context display
 
-One feature of dashboards on Azure that often gets overlooked is their
-ability to dump a template of any dashboard being displayed into a JSON
-file using the **Download** (down arrow) button and to load them back in with
-the **Upload** (up arrow) button. This means we could either manually seek to
-the right time, download the dashboard in that state and share the JSON
-file with others, or simply download the current dashboard and modify the
-JSON to our specification. If you search for the string "time" in a
-downloaded JSON dashboard file, you'll come upon a section that looks
-like this:
+Azure dashboards and Azure Monitor workbooks can both help reconstruct the
+context that operators saw during an incident. Dashboards are useful for
+at-a-glance operational overview across Azure services. Workbooks are
+usually the better fit for incident analysis because they support richer
+queries, parameters, drilldowns, and narrative text alongside charts.
 
-```json
-"metadata": {
-  "model": {
-    "timeRange": {
-      "value": {
-        "relative": {
-          "duration": 24,
-          "timeUnit": 1
-        }
-      },
-      "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
-    },
-    "filterLocale": {
-      "value": "en-us"
-    },
-    "filters": {
-      "value": {
-        "MsPortalFx_TimeRange": {
-          "model": {
-            "format": "utc",
-            "granularity": "auto",
-            "relative": "24h"
-          },
-          "displayCache": {
-            "name": "UTC Time",
-            "value": "Past 24 hours"
-          },
-```
+If you already have a dashboard or workbook that captures the right
+signals, set its time range to the period around the incident and use it to
+reconstruct what people saw at the time. This can be especially helpful
+when correlating metrics, logs, and alerts across several resources.
 
-Modify this section to your specification and reupload. If you're not
-familiar with the format in use, you can change the dashboard manually,
-download it, and see the required format.
+Shared dashboards are Azure resources and can still be exported as JSON
+from the portal. That export/import path is useful when you want to version
+or templatize a dashboard. However, for most post-incident investigation
+scenarios, workbooks are the more flexible tool because they let you
+combine visualizations, KQL queries, and explanatory text in a single
+artifact.
 
-### Audit Logs and Log Analytics for change exploration
+### Activity logs, resource logs, and Log Analytics for change exploration
 
-A Log Analytics workspace can take in data from many sources, including the
-Azure Activity Log. First, create a new log analytics workspace. Then, go to
-the Activity log feature in the portal and choose **Diagnostic settings**.
-This provides the option to send the activity log for an Azure
-subscription to your new workspace.
+A Log Analytics workspace can take in data from many sources, including
+Azure Activity log, Azure resource logs, and service-specific diagnostics.
+First, create a new Log Analytics workspace. Then, in the Azure portal,
+open **Monitor → Activity log** and select **Export Activity Logs** at the
+top of the pane. This opens a diagnostic setting that lets you send the
+activity log for an Azure subscription to your workspace.
 
-In a short time, you'll be able to use all of the power of the
-Kusto Query Language (KQL) to retrieve detailed information about changes
-that have taken place in that subscription since you connected the data
-source.
+In a short time, you're able to use Kusto Query Language (KQL) to
+retrieve detailed information about changes that have taken place in that
+subscription since you connected the data source.
 
-For example, the following query shows information about resources that changed or have been deleted. We can
-set the range of time for the query in the query explorer to more precisely
-hone in on the time shortly before the incident if we desire.
+For example, the following query shows information about resources that
+changed or were deleted. We can set the range of time in the Logs
+experience to more precisely hone in on the period shortly before the
+incident.
 
 ```Kusto
 AzureActivity
 | where CategoryValue == 'Administrative'
 | where OperationNameValue endswith "write" or OperationNameValue endswith "delete"
-| project TimeGenerated, Level, ResourceGroup, ResourceId, OperationName, OperationNameValue, ActivityStatus, Caller
-| order by TimeGenerated nulls first
+| project TimeGenerated, Level, ResourceGroup, ResourceId, OperationName, OperationNameValue, ActivityStatusValue, Caller
+| order by TimeGenerated desc
 ```
 
-One quick note: when you set the Azure activity log as a data source, the
-information starts to flow into the Log Analytics workspace from that point
-in time forward. You won't be able to query that workspace for data
-retroactively for events that took place before you made the connection.
+This query is useful for management-plane changes, but remember what it
+doesn't show. `AzureActivity` captures control-plane operations such as
+create, update, delete, and policy actions. It doesn't capture data-plane
+or application-level changes inside a service. To investigate those, pair
+this query with Azure resource logs, service-specific audit logs,
+deployment history, and CI/CD or source-control records.
+
+One quick note: when you export the Azure activity log, the information
+starts to flow into the Log Analytics workspace from that point in time
+forward. You won't be able to query that workspace retroactively for events
+that took place before you made the connection.
 
 These tools should be able to give you a good start on collecting
 information necessary for a chronology to use in a post-incident review.

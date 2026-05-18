@@ -20,13 +20,13 @@ The pricing tiers are grouped into three categories:
 
 Here's a sample of different [plan details](/azure/app-service/overview-hosting-plans). 
 
-| Feature | Free F1 | Basic B1 | Standard S1 | Premium P1V3 | 
-| --- | --- | --- | --- | --- | 
-| Usage | Development, Testing | Development, Testing | Production workloads | Enhanced scale, performance | 
-| Staging slots | N/A | N/A | 5 | 20 |
-| Auto scale | N/A | Manual | Rules | Rules, Elastic |
-| Scale instances | N/A | 3 | 10 | 30 |
-| Daily backups | N/A | N/A | 10 | 50 |
+| Feature | Free F1 | Basic B1 | Standard S1 | Premium P1V3 | Isolated V2 |
+| --- | --- | --- | --- | --- | --- |
+| Usage | Development, Testing | Development, Testing | Production workloads | Enhanced scale, performance | Network-isolated workloads |
+| Staging slots | N/A | N/A | 5 | 20 | 20 |
+| Auto scale | N/A | Manual | Rules | Rules, Elastic | Rules |
+| Scale instances | N/A | 3 | 10 | 30 | 200 |
+| Daily backups | N/A | N/A | 10 | 50 | 50 |
 
 ### Free and Shared
 
@@ -42,11 +42,11 @@ The Standard service plan is designed for running production workloads. Pricing 
 
 ### Premium
 
-The Premium service plan is designed to provide enhanced performance for production applications. The upgraded Premium plan, Premium v2, offers Dv2-series virtual machines with faster processors, SSD storage, and double memory-to-core ratio compared to the Standard tier. The new Premium plan also supports higher scale via increased instance count while still providing all the advanced capabilities of the Standard tier. The first generation of Premium plan is still available to support existing customer scaling needs.
+The Premium service plan is designed for production apps that need higher performance and scale. PremiumV3 is the current Premium tier, offering Dav4 and Ddv4-series virtual machines and SSD storage. PremiumV3 supports standard compute SKUs and memory-optimized SKUs for high-memory workloads. PremiumV3 supports both rule-based autoscaling and automatic scaling. PremiumV3 is recommended for new deployments.
 
 ### Isolated
 
-The Isolated service plan is designed to run mission critical workloads that are required to run in a virtual network. The Isolated plan allows customers to run their applications in a private, dedicated environment in an Azure datacenter. The plan offers Dv2-series virtual machines with faster processors, SSD storage, and a double memory-to-core ratio compared to the Standard tier. The private environment used with an Isolated plan is called the App Service Environment. The plan can scale to 100 instances with more available upon request.
+The Isolated service plan supports mission-critical workloads needing network isolation. IsolatedV2 is the preferred tier offering newer hardware, up to 200 instances, private environments, and enhanced security. IsolatedV2 is recommended for new workloads due to better performance and simpler pricing.
 
 ## Task to be done: Select an App Service plan
 

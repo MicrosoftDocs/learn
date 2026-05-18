@@ -1,0 +1,1 @@
+You explored how Azure Bastion provides secure remote connectivity to virtual machines without exposing RDP and SSH ports to the internet. Test your understanding of SKU selection, deployment requirements, and connection methods with these scenario-based questions.

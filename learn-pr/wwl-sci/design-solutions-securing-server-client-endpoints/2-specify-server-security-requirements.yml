@@ -4,10 +4,10 @@ title: Specify security requirements for servers
 metadata:
   title: Specify security requirements for servers
   description: "SC-100 preparatory unit on the topic: specify security requirements for servers, including multiple platforms and operating systems."
-  ms.date: 02/07/2026
+  ms.date: 03/14/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 13
 content: |
   [!include[](includes/2-specify-server-security-requirements.md)]

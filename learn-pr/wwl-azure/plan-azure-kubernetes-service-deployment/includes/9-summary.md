@@ -1,12 +1,12 @@
 In this module, you learned about:
 
- -  Control plane nodes, node pools, and workload resources like pods, deployments, and sets.
- -  Scheduling of fault-tolerant application workloads using Azure Kubernetes Service.
- -  Managing deployment and core management tasks, like upgrade coordination using Azure Kubernetes Service.
- -  Clustering of virtual or on-premises machines called nodes that share compute, network, and storage resources.
+ -  Control plane components, node pools, pods, deployments, namespaces, and network access in AKS.
+ -  Scheduling fault-tolerant application workloads using Azure Kubernetes Service.
+ -  Managing core AKS tasks, including deployment and upgrade coordination.
+ -  How Kubernetes clusters group nodes that share compute, network, and storage resources.
 
 ## Learn more
 
- -  [Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) \| [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/?azure-portal=true)
- -  [Free account for Students](https://azure.microsoft.com/free/students/?cid=msft_learn) \| [Azure for students FAQ](/azure/education-hub/azure-dev-tools-teaching/program-faq#azure-for-students/?azure-portal=true)
- -  [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) module on Learn.
+ -  [Azure free account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) \| [Azure free account FAQ](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn#FAQ)
+ -  [Free account for Students](https://azure.microsoft.com/free/students/?cid=msft_learn) \| [Azure for students FAQ](/azure/education-hub/azure-dev-tools-teaching/program-faq?azure-portal=true#azure-for-students)
+ -  [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true) module on Learn.

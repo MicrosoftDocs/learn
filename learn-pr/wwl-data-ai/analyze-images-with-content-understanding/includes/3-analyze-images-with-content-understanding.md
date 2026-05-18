@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=56be56e2-5ebf-4776-a72e-d1443dde578b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Content Understanding can analyze images to extract structured data, identify visual elements, and generate descriptions. You can use prebuilt analyzers for common scenarios or create custom analyzers tailored to your specific needs.
 
 ## Supported image formats
@@ -63,26 +74,48 @@ Here's an example schema for analyzing product images:
 
 ## Analyze an image
 
-To analyze an image using Content Understanding, submit a POST request to the analyze endpoint with your analyzer ID and the image URL or file:
+To analyze an image using Content Understanding, you can use the Python SDK, which you can install using `pip` like this:
 
 ```bash
-curl -X POST "{endpoint}/contentunderstanding/analyzers/{analyzerId}:analyze?api-version=2025-11-01" \
-  -H "Ocp-Apim-Subscription-Key: {key}" \
-  -H "Content-Type: application/json" \
-  -d '{
-        "inputs": [
-          {
-            "url": "https://example.url/product-image.jpg"
-          }
-        ]
-      }'
+pip install azure-ai-contentunderstanding
 ```
 
-The response includes a result ID that you use to retrieve the analysis results once processing completes.
+To submit a request to the analyze endpoint with your analyzer ID and the image URL or file, you can use code similar to this example:
 
-## Understand the response
+```python
+from azure.ai.contentunderstanding import ContentUnderstandingClient
+from azure.ai.contentunderstanding.models import AnalysisInput, AnalysisResult
+from azure.core.credentials import AzureKeyCredential # for key-based authentication
+from azure.identity import DefaultAzureCredential # for Entra ID authentication
 
-When analysis completes, the response includes:
+# Get a client
+credential = AzureKeyCredential(key)
+client = ContentUnderstandingClient(endpoint={FOUNDRY_ENDPOINT},
+                                    credential={KEY_OR_IDENTITY},
+                                    api_version="2025-11-01")
+
+# Analyze an image file
+with open("my_image.png", "rb") as f:
+            file_bytes = f.read()
+
+try:
+    poller = client.begin_analyze(
+        analyzer_id={ANALYSER_ID},
+        inputs=[AnalysisInput(data=file_bytes)],
+    )
+    # Get results asynchronously from poller
+    result: AnalysisResult = poller.result()
+
+    # Display results
+    result_str = json.dumps(result.as_dict(), indent=2)
+    print (result_str)
+
+except Exception as ex:
+    print(f"[Unexpected Error]: {ex}")
+    sys.exit(1)
+```
+
+When analysis completes, the results include the extracted content:
 
 - **markdown**: A text representation of the image content, useful for search and RAG scenarios
 - **fields**: Extracted field values matching your schema, each with a confidence score
@@ -135,3 +168,4 @@ Use confidence scores to build automation workflows that route low-confidence ex
 - **Consistent orientation**: Upright images are processed more reliably than rotated ones
 
 Content Understanding's image analysis capabilities enable you to transform visual content into structured, actionable data for document processing, inventory management, quality inspection, and many other business scenarios.
+::: zone-end

@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- ai-services
+- foundry-tools
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub
@@ -60,4 +60,3 @@ units:
 - learn.azure.set-up-mixed-reality-azure-digital-twins-unity.summary
 badge:
   uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.badge
-

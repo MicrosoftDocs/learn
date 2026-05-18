@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.tenant-setup-surface.create-a-microsoft-tenant
+title: Create a Microsoft tenant
+metadata:
+  title: Create A Microsoft Tenant
+  description: This content is part of the "Microsoft tenant setup for Surface Support Portal access" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-create-a-microsoft-tenant.md)]

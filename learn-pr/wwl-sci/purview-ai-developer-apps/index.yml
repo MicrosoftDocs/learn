@@ -38,7 +38,7 @@ products:
 - entra
 - microsoft-copilot-studio
 - fabric
-- ai-services
+- foundry-tools
 subjects:
 - security
 - generative-ai

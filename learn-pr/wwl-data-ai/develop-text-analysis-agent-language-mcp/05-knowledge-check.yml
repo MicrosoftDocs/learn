@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-text-analysis-agent-language-mcp.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding of the Azure Language MCP server and agent integration.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/13/2026
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary role of the Azure Language MCP server?"
+    choices:
+    - content: "To train and fine-tune custom language models for use by AI agents."
+      isCorrect: false
+      explanation: "Incorrect. The Azure Language MCP server exposes existing Azure Language NLP capabilities as tools for agents; it doesn't train custom models."
+    - content: "To expose Azure Language text analysis capabilities as MCP tools for agents."
+      isCorrect: true
+      explanation: "Correct. The Azure Language MCP server makes NLP capabilities such as entity recognition, sentiment analysis, and summarization available as MCP tools."
+    - content: "To deploy and manage large language models in an Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect. The MCP server provides access to Azure Language NLP capabilities, not model deployment."
+  - content: "How does an agent determine which Azure Language MCP tool to call when processing a user's prompt?"
+    choices:
+    - content: "The developer writes routing logic to direct each prompt to a specific tool."
+      isCorrect: false
+      explanation: "Incorrect. The agent selects tools autonomously based on tool descriptions received from the MCP server."
+    - content: "The agent matches the prompt to tool descriptions received from the MCP server."
+      isCorrect: true
+      explanation: "Correct. Through dynamic tool discovery, the agent receives tool descriptions and uses them to determine which tool best matches the user's request."
+    - content: "The MCP server analyzes the prompt and automatically routes it to a tool."
+      isCorrect: false
+      explanation: "Incorrect. The agent (not the MCP server) decides which tool to call based on the tool descriptions."
+  - content: "When building a Python client application, how do you reference a Foundry agent when calling the OpenAI Responses API?"
+    choices:
+    - content: "By passing the agent's API key as a request header to the endpoint."
+      isCorrect: false
+      explanation: "Incorrect. The agent is referenced by name in the extra_body parameter, not through an API key header."
+    - content: "By specifying the agent name in the agent_reference field in extra_body."
+      isCorrect: true
+      explanation: "Correct. You include an agent_reference with the agent's name and type in the extra_body parameter of the responses.create() call."
+    - content: "By passing the agent's endpoint URL as the model parameter value."
+      isCorrect: false
+      explanation: "Incorrect. The agent is referenced by name in the extra_body parameter, not as a model endpoint."
+  - content: "What authentication method is used when connecting the Azure Language MCP server to a Foundry agent?"
+    choices:
+    - content: "OAuth 2.0 authentication with a client certificate and tenant ID."
+      isCorrect: false
+      explanation: "Incorrect. The connection uses key-based authentication with the Ocp-Apim-Subscription-Key header."
+    - content: "Key-based authentication using the Ocp-Apim-Subscription-Key credential."
+      isCorrect: true
+      explanation: "Correct. The Azure Language MCP server uses key-based authentication, where the resource key is provided in the Ocp-Apim-Subscription-Key header."
+    - content: "Anonymous access that requires no authentication or credentials."
+      isCorrect: false
+      explanation: "Incorrect. Authentication is required to connect to the Azure Language MCP server."

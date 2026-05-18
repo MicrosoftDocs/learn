@@ -30,7 +30,7 @@ The next diagram offers a high-level view of Azure Monitor. At the center of the
 
 1. **The data platform** stores the collected data. Azure Monitor's core data platform has stores for metrics, logs, traces, and changes. Metrics  are numerical values that describe an aspect of a system at a particular point in time. Logs are recorded system events. 
 
-1. **Insights** are large, scalable, curated visualizations. Insights are available for applications, containers, networks, and virtual machines. 
+1. **Insights** provides visualizations for applications, containers, networks, and virtual machines. 
 
 1. **Visualizations** such as charts and tables are effective tools for summarizing monitoring data and presenting it to different audiences. Visualizations can include: dashboards, workbooks, Power BI, and Grafana. Grafana is an open platform that excels in operational dashboards. 
 

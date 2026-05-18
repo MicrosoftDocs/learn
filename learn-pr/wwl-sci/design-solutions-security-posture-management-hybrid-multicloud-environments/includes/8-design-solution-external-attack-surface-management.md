@@ -15,6 +15,8 @@ Defender EASM discovers and catalogs:
 | SSL certificates | Certificate chains, expiration status |
 | ASNs and WHOIS data | Network ownership, registration contacts |
 
+:::image type="content" source="../media/overview-3.png" alt-text="Screenshot of the Defender EASM overview page showing counts of domains, hosts, pages, SSL certificates, ASNs, IP blocks, IP addresses, and contacts along with attack surface priorities by severity." lightbox="../media/overview-3.png":::
+
 **Design consideration**: Defender EASM provides an external perspective—it discovers what attackers can see. Combine this with Defender for Cloud's internal view for complete attack surface visibility.
 
 ## Designing discovery configuration
@@ -29,7 +31,7 @@ Discovery starts with seeds—known assets that Defender EASM uses to map your a
 
 **Exclusions**: Specify entities to exclude from discovery, such as subsidiaries you don't own or third-party infrastructure that shouldn't appear in your inventory.
 
-**Design consideration**: Start with your organization's prebaked attack surface if available—Microsoft maintains preconfigured attack surfaces for many organizations. Then customize with additional seeds for subsidiaries, brands, or recently acquired companies.
+**Design consideration**: Start with your organization's prebuilt attack surface if available—Microsoft maintains preconfigured attack surfaces for many organizations. Then customize with additional seeds for subsidiaries, brands, or recently acquired companies.
 
 ## Managing asset inventory
 
@@ -44,6 +46,8 @@ Discovered assets require classification to distinguish owned infrastructure fro
 | Requires Investigation | Flagged for deeper analysis | Assets with weak connection confidence |
 
 Only **Approved Inventory** assets appear in dashboard metrics by default and receive daily scanning. Design your workflow to regularly review Candidate assets and promote legitimate assets to Approved Inventory.
+
+:::image type="content" source="../media/overview-4.png" alt-text="Screenshot of the Defender EASM inventory page showing discovered assets with their type, state, and associated data such as IP addresses and registrant information." lightbox="../media/overview-4.png":::
 
 **Labels and external IDs**: Apply labels to organize assets by business unit, compliance requirement, or remediation priority. External IDs help correlate EASM data with your existing asset management systems.
 
@@ -91,6 +95,8 @@ Defender EASM provides eight dashboards to prioritize security efforts:
 | OWASP Top 10 | Critical web application security risks based on OWASP list |
 | CWE Top 25 | Common software weaknesses based on annual MITRE list |
 | CISA Known Exploits | Vulnerabilities with confirmed exploitation by threat actors |
+
+:::image type="content" source="../media/overview-2.png" alt-text="Screenshot of the Defender EASM Attack Surface Summary dashboard showing SSL certificate expiration, domain expiration, and IP reputation data." lightbox="../media/overview-2.png":::
 
 Use the Attack Surface Summary to identify high-severity findings—critical CVEs, compromised infrastructure associations, deprecated technology, or compliance issues. Each insight includes suggested remediation actions.
 

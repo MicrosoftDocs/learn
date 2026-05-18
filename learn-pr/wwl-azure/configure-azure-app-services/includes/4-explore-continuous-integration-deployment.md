@@ -10,7 +10,7 @@ When you create your web app with App Service, you can choose continuous or manu
 
 **Continuous deployment (CI/CD)** is a process used to push out new features and bug fixes in a fast and repetitive pattern with minimal impact on end users. Azure supports automated deployment directly from several sources:
 
-   - **GitHub**: Azure supports automated deployment directly from GitHub. When you connect your GitHub repository to Azure for automated deployment, any changes you push to your production branch on GitHub are automatically deployed for you.
+   - **GitHub**: Azure supports automated deployment directly from GitHub. Azure supports automated deployment directly from GitHub using two build providers. When you connect your GitHub repository to Azure, you can choose between **[GitHub Actions]( /azure/developer/github/github-actions)** (default) and **[App Service Build Service](/azure/app-service/deploy-continuous-deployment?tabs=others#enable-continuous-deployment)**. 
 
    - **Bitbucket**: With its similarities to GitHub, you can configure an automated deployment with Bitbucket.
 
@@ -18,10 +18,6 @@ When you create your web app with App Service, you can choose continuous or manu
 
    - **Azure Repos**: Azure Repos is a set of version control tools that you can use to manage your code. Whether your software project is large or small, using version control as soon as possible is a good idea.
 
-**Manual deployment** enables you to manually push your code to Azure. There are several options for manually pushing your code:
+**Manual deployment** enables you to manually push your code to Azure. 
 
    - **Remote Git**: The App Service Web Apps feature offers a Git URL that you can add as a remote repository. Pushing to the remote repository deploys your app.
-
-   - **OneDrive**: OneDrive is a service that lets you store and share files on the internet with a Microsoft account. 
-
-   - **Dropbox**: Dropbox is a file hosting service

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.what-why-sre-agent
+title: What is Azure SRE Agent and why does it matter?
+metadata:
+  title: What is Azure SRE Agent and why does it matter?
+  description: "Learn what Azure SRE Agent is, its capabilities, and how it helps reduce operational toil and accelerate incident response."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-what-why-sre-agent.md)]

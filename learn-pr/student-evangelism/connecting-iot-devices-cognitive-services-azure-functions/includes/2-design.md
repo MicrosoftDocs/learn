@@ -1,44 +1,9 @@
-In this module, you’ll build a translator application with an IoT device by deploying Azure Function in the cloud. You'll use Visual Studio Code to create and deploy a function. The function will receive an HTTP request. This request will trigger an Azure function and initiate the code execution. The code will use Speech APIs to translate the voice into the target language. The function receives voice data from the IoT device and interactively translates speech from a foreign language into the target language. You'll specify the target language in the module and display the results on the screen of the IoT device.
+Consider the scenario of deploying digital signage equipment at bus stops. Your objective is to translate a tourist's spoken source language into English text for display on the sign. The tourist can then receive health and safety information in real time. Later customization can change the configured source and target languages for other markets.
 
-You'll use the following components in the design of the solution: 
+In this scenario, Azure Functions can help you host the translation logic in the cloud while the MXChip IoT DevKit captures audio and displays results. The cloud-hosted function app uses Azure AI Speech. To connect the Speech service to the function, create an Azure AI Speech resource and configure the function code for the Speech SDK by using the resource's key plus region. For endpoint-based configuration, use the Speech endpoint plus a key, token, or supported credential. When a tourist speaks into the IoT DevKit, the device posts audio to the cloud-hosted HTTP-triggered function. The function calls Speech translation to recognize and transcribe the audio, translate the text from the configured source language into English by default, and send the translated text back to the device by using IoT Hub cloud-to-device messaging. The IoT DevKit then displays the message. Speech can synthesize audio too if you add that feature, but this module displays translated text.
 
-- **Azure Functions and serverless:** Serverless computing enables developers to build applications without worrying about application infrastructure. Serverless computing has three parts:
+Without the Azure Function, you would need to build this app from scratch. You would need to hardcode to access other services. Azure Functions is easy to configure and set up within minutes. The cloud infrastructure provides all the up-to-date servers. Once the function code is ready, cloud servers host the function app. The cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code. Hence, you don't need to set up any application infrastructure or allocate resources in advance. You can scale your application rapidly. In this module's HTTP-triggered scenario, the function handles a short, event-driven operation and doesn't maintain device state between invocations. Azure Functions can also support stateful workflows with Durable Functions, and hosting plan choices can support longer-running workloads when needed. You run the function only as needed.
 
-   - Serverless Kubernetes
-   - Serverless Functions
-   - Serverless Application Environments
-   
-   In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
-- **Cognitive Speech Service:** The Speech service is an API that provides you speech to text, text to speech, and speech translation functionality into a single Azure subscription. In this module, you'll use the Cognitive Speech service to integrate real-time speech translation.  
+**Clean up**
 
-- **Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT device.  
-
-- **Azure IoT Device Workbench:** is a Visual Studio Code extension. You use the Azure IoT Device Workbench to open a project, create and deploy Azure functions, and debug IoT Devkit.  
-
-- **C#:**  You'll develop Azure Function by using C# programming language in .NET class libraries.
-
-- **Function app:** is the container that hosts the execution of individual functions.
-
-- **Devkit Translator sample:** is a project sample using Azure Functions and Azure AI services that are available on [GitHub](https://github.com/Azure-Samples/mxchip-iot-devkit-translator). You'll use this code as a basis and modify it for the scenario outlined above  
-
-- **Device code:** is Arduino Sketch File (.ino file extension) that you can use for controlling an Arduino circuit board.  
-
-The overall module steps are:
-
-1. Configure IoT Devkit to the cloud
-
-2. Create a Cognitive Speech Service in Azure
-
-3. Build a translator sample using Visual Studio Code
-
-   a. Open “Devkit Translator” sample
-
-   b. Provision Azure IoT Hub and IoT device and Azure Functions
-
-   c. Configure Speech API key in the Azure function
-
-   d. Deploy Azure function
-
-   e. Configure and compile the code
-
-After completing the module, your device will be configured to the IoT Hub. You'll have the Azure function app deployed in the cloud. You'll also implement the device code in the IoT device. The device code will use the Azure function and will execute the code in a serverless environment. The resulting solution will perform speech translation using Azure AI services for the Digital signage scenario.
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.

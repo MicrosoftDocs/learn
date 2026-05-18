@@ -22,7 +22,7 @@ roles:
 - ai-engineer
 - devops-engineer
 products:
-- ai-services
+- foundry-tools
 - microsoft-foundry
 - github
 subjects:

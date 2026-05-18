@@ -8,7 +8,7 @@ Let's examine some of the basic configuration settings you need to create an app
 
 - **Publish**: App Service hosts (publishes) your app as code or as a Docker Container.
 
-- **Runtime stack**: App Service uses a software stack to run your app, including the language and SDK versions. For Linux apps and custom container apps, you can set an optional start-up command or file. Your choices for the stack include .NET Core, .NET Framework, Node.js, PHP, Python, and Ruby. Various versions of each product are available for Linux and Windows.
+- **Runtime stack**: App Service uses a software stack to run your app, including the language and SDK versions. For Linux apps and custom container apps, you can set an optional start-up command or file. Your choices for the stack include .NET Core, .NET Framework, Node.js, PHP, and Python. Various versions of each product are available for Linux and Windows.
 
 - **Operating system**: The operating system for your app runtime stack can be Linux or Windows.
 

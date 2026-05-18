@@ -1,6 +1,6 @@
-Before you can begin modifying Windows PowerShell scripts or creating your own, you must know how to run a Windows PowerShell script. You might be familiar with the idea of double-clicking an executable file or selecting it and then selecting Enter to run it, but that process doesn't work for Windows PowerShell scripts.
+Before you modify or create Windows PowerShell scripts, you need to know how to run them. You might be familiar with the idea of double-clicking an executable file or selecting it and then selecting Enter to run it, but that process doesn't work for Windows PowerShell scripts.
 
-One of the problems with many scripting languages is that running the scripts by accident is too easy. Users can accidentally run a script by double-clicking it or selecting it and then selecting Enter. This action is especially problematic when the file extension is hidden, and malware is included as an email attachment. For example, an attached file named **receipt.txt.vbs** would display as **receipt.txt** and users would run it accidentally, thinking it's a simple text file. This setting isn't a concern for Windows PowerShell scripts because of the actions required to run a script.
+A common problem with many scripting languages is that scripts are too easy to run accidentally. Users can accidentally run a script by double-clicking it or selecting it and then selecting Enter. This risk increases when file extensions are hidden and an attachment contains malware. For example, an attached file named **receipt.txt.vbs** would display as **receipt.txt** and users would run it accidentally, thinking it's a simple text file. This setting isn't a concern for Windows PowerShell scripts because of the actions required to run a script.
 
 ## Integration with File Explorer
 
@@ -10,9 +10,9 @@ When you right-click a Windows PowerShell script or activate its context menu, y
 
 - **Open**. This option opens the script in Notepad.
 - **Run with PowerShell**. This option runs the script, but the Windows PowerShell prompt doesn't remain open when the script completes.
-- **Edit**. This option opens the script in the Windows PowerShell ISE.
+- **Edit**. This option opens the script in the Windows PowerShell ISE, if it is installed. On systems where the ISE is not present, consider using **Visual Studio Code with the PowerShell extension**, which is the currently recommended editor.
 
-In most cases, you want the Windows PowerShell prompt to remain open when you run a script. To do this task, run the script from a Windows PowerShell prompt that's already open.
+To keep the Windows PowerShell prompt open when you run a script, run it from an already-open Windows PowerShell prompt.
 
 ## Running scripts at the PowerShell prompt
 
@@ -26,26 +26,26 @@ To run a Windows PowerShell script at the Windows PowerShell prompt, you can use
 
 ## The script execution policy
 
-You can control whether Windows PowerShell scripts can be run on Windows computers. You do this task by setting the execution policy on the computer. The default execution policy on a computer varies depending on the operating system version. To be sure of the current configuration, you can use the **Get-ExecutionPolicy** cmdlet.
+You can control whether Windows PowerShell scripts can run on Windows computers by setting the execution policy. The default execution policy on a computer varies depending on the operating system version. To be sure of the current configuration, you can use the **Get-ExecutionPolicy** cmdlet.
 
 The options for the execution policy are:
 
-- **Restricted**. No scripts are allowed to be run.
-- **AllSigned**. Scripts can be run only if they're digitally signed.
-- **RemoteSigned**. Scripts that are downloaded can only be run if they're digitally signed.
-- **Unrestricted**. All scripts can be run, but a confirmation prompt displays when running unsigned scripts that are downloaded.
-- **Bypass**. All scripts are run without prompts.
+- **Restricted**. No scripts can run.
+- **AllSigned**. Scripts run only if they're digitally signed.
+- **RemoteSigned**. Downloaded scripts run only if they're digitally signed.
+- **Unrestricted**. All scripts can run, but a confirmation prompt appears for unsigned scripts downloaded from the internet.
+- **Bypass**. All scripts run without prompts.
 
 > [!NOTE]
 > Setting the script execution policy provides a safety net that can prevent untrusted scripts from being run accidentally. However, the execution policy can always be overridden.
 
 You can set the execution policy on a computer by using the **Set-ExecutionPolicy** cmdlet. However, this setting is difficult to manage across many computers. When you configure the execution policy for many computers, you can use the **Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\Windows PowerShell\\Turn on Script Execution** Group Policy setting to override the local setting.
 
-You can override the execution policy for an individual Windows PowerShell instance. This setting is useful if company policy requires the execution policy to be set as **Restricted**, but you still must run scripts occasionally. To override the execution policy, run **PowerShell.exe** with the *-ExecutionPolicy* parameter.
+You can override the execution policy for an individual Windows PowerShell instance. This setting is useful if company policy requires the execution policy to be set as **Restricted**, but you still must run scripts occasionally. To override the execution policy, run **PowerShell.exe** with the `-ExecutionPolicy` parameter.
 
 ```powershell
 Powershell.exe -ExecutionPolicy ByPass
 ```
 
-If you've modified a script downloaded from the internet, the script still has the attributes that identify it as a downloaded file. To remove that status from a script, use the **Unblock-File** cmdlet.
+If you modify a script downloaded from the internet, it retains the attributes that mark it as downloaded. To remove that status, use the **Unblock-File** cmdlet.
 

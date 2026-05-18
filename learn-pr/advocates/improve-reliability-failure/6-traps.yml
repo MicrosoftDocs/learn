@@ -4,12 +4,12 @@ title: "Common traps to avoid"
 metadata:
   title: "Common traps to avoid"
   description: "Common traps to avoid"
-  ms.date: 04/19/2024
+  ms.date: 04/17/2026
   author: dnblankedelman
   ms.author: dnb
   ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: dnb-06092020
+  ms.contributors: orthomas-20260417
 durationInMinutes: 7
 content: |
   [!include[](includes/6-traps.md)]
@@ -17,26 +17,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following terms refers to telling a story about events that did not happen in order to explain what did happen?'
+  - content: "Which of the following terms refers to telling a story about events that didn't happen in order to explain what did happen?"
     choices:
-    - content: 'Mechanistic reasoning'
+    - content: "Mechanistic reasoning"
       isCorrect: false
-      explanation: 'Mechanistic reasoning refers to the concept that a particular outcome can be inferred from intervention.'
-    - content: 'Normative language'
+      explanation: "Mechanistic reasoning refers to the concept that a particular outcome can be inferred from intervention."
+    - content: "Normative language"
       isCorrect: false 
-      explanation: 'Normative language often implies that there was an "obviously correct" course of action and judges people based on hindsight.'
-    - content: 'Counterfactual reasoning'
+      explanation: "Normative language often implies that there was an \"obviously correct\" course of action and judges people based on hindsight."
+    - content: "Counterfactual reasoning"
       isCorrect: true
-      explanation: 'Correct.'
+      explanation: "Correct."
 
-  - content: 'Human error is a...'
+  - content: "Human error is a..."
     choices:
-    - content: 'Diagnosis.'
+    - content: "Diagnosis."
       isCorrect: false
-      explanation: 'Human error is a label.'
-    - content: 'Cause of problems.'
+      explanation: "Human error is a label."
+    - content: "Cause of problems."
       isCorrect: false
-      explanation: 'Human error is a label.'
-    - content: 'Label that causes you to quit investigating at precisely the moment when you’re about to discover something interesting about your system.'
+      explanation: "Human error is a label."
+    - content: "Label that causes you to quit investigating at precisely the moment when you're about to discover something interesting about your system."
       isCorrect: true
-      explanation: 'Correct.'
+      explanation: "Correct."

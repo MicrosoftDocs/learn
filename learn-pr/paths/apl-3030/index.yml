@@ -2,29 +2,29 @@
 uid: learn.wwl.apl-3030-build-ai-app-foundry
 hidden: true
 metadata:
-  title: Build a generative AI chat app
+  title: Build a generative AI chat app (Microsoft Applied Skill)
   description: Learn how to build a generative AI chat app using Microsoft Foundry. (MAS-3030)
   ms.date: 12/08/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
-title: Build a generative AI chat app
+title: Build a generative AI chat app (Microsoft Applied Skill)
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. You should also have programming experience.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more accessible through comprehensive development platforms like Microsoft Foundry. Learn how to build a generative AI chat app that uses language models to chat with your users.
+  This learning path prepares you for the Microsoft Applied Skill [Build a generative AI chat app using Microsoft Foundry](/credentials/applied-skills/build-a-generative-ai-chat-app/).
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- ai-engineer
+  - ai-engineer
 products:
-- ai-services
-- microsoft-foundry
+  - foundry-tools
+  - microsoft-foundry
 subjects:
-- artificial-intelligence
+  - artificial-intelligence
 modules:
-- learn.wwl.ai-foundry-sdk
+  - learn.wwl.ai-foundry-sdk
 trophy:
   uid: learn.wwl.apl-3030-build-ai-app-foundry.trophy

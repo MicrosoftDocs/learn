@@ -4,11 +4,10 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 07/10/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/01/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
   module_assessment: true
 durationInMinutes: 3 # dummy number at present
 content: |
@@ -16,23 +15,23 @@ quiz:
   questions:
   - content: "Which of the following descriptions best describes how Speech translation works?"
     choices:
-    - content: "Speech translation recognizes speech from microphone input to convert the speech into a large number of audio files, and asynchronously receives transcription results."
+    - content: "Speech translation stores microphone input for batch processing before any translation can occur."
       isCorrect: false
-      explanation: "You only convert the speech into the text."
-    - content: "Speech translation recognizes speech from microphone input to convert speech into an audio file, normalizes the text, and then translates into an audio file."
+      explanation: "Speech translation can recognize spoken input and return translated text without requiring batch storage first."
+    - content: "Speech translation recognizes audio input, transcribes it to text, and returns translated text in the target language."
       isCorrect: true
-      explanation: "You convert speech to text then translate the text."
-    - content: "It recognizes speech from microphone input to convert the speech into an audio file and then synthesize speech to a speaker."
+      explanation: "Speech translation recognizes speech, translates the resulting text, and returns translated text. Synthesized speech output is optional if implemented."
+    - content: "It only synthesizes translated speech to a speaker and doesn't return translated text."
       isCorrect: false
-      explanation: "You only synthesize speech to a speaker."
+      explanation: "Speech translation returns translated text; speech synthesis is an optional additional step."
   - content: "How would you describe a function app?"
     choices:
     - content: "A function app is a function runtime to execute the function code."
       isCorrect: false
       explanation: "A function app isn’t a runtime. It’s a collection of one or more functions. Azure functions runtime provides a way to manage the function and execute the function code."
-    - content: "A function app is a containerized application that can be invoked using a trigger."
+    - content: "A function app is a single trigger definition that runs one function."
       isCorrect: false
-      explanation: "A function app isn't a containerized application."
+      explanation: "A function app is a collection of one or more functions that are managed together. Azure Functions can also be container-hosted on supported hosting options."
     - content: "A function app is a collection of one or more functions that are managed together."
       isCorrect: true
-      explanation: "A function app can handle multiple functions."
+      explanation: "A function app can handle multiple functions."

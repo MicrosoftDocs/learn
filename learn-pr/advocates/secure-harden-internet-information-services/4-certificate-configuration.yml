@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.devrel.secure-harden-internet-information-services.certificate-configuration
+title: HTTPS and TLS configuration
+metadata:
+  title: HTTPS and TLS Configuration
+  description: Learn to configure certificate based security for Internet Information Services. 
+  ms.date: 03/31/2026
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 24
+content: |
+  [!include[](includes/4-certificate-configuration.md)]

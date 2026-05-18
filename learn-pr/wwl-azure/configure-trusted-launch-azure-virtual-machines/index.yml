@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.configure-trusted-launch-azure-virtual-machines
+metadata:
+  title: Configure Trusted Launch Security Features for Azure Virtual Machines
+  description: "Configure Trusted Launch security features for Azure virtual machines. Enable Secure Boot, vTPM, and integrity monitoring to protect against boot-level malware and rootkits. Then upgrade existing VMs to the Trusted Launch security type, and enforce adoption at scale using Azure Policy."
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-virtual-machines
+  ai-usage: ai-assisted
+title: Configure trusted launch security features for Azure virtual machines
+summary: Configure Trusted Launch security features for Azure virtual machines. Enable Secure Boot, vTPM, and integrity monitoring to protect against boot-level malware and rootkits. Upgrade existing Gen1 and Gen2 VMs to the Trusted Launch security type and enforce adoption at scale using Azure Policy.
+abstract: |
+  After completing this module, you can:
+    - Identify how Trusted Launch protects against boot-level threats using Secure Boot, vTPM, and integrity monitoring
+    - Enable Trusted Launch and configure its security components on new and existing Azure VMs
+    - Upgrade existing Gen1 VMs to Gen2 with Trusted Launch enabled
+    - Enforce Trusted Launch adoption using built-in Azure Policy
+prerequisites: |
+  - Working knowledge of Azure Virtual Machines, including deploying and managing VMs
+  - Familiarity with Azure Policy fundamentals
+  - Basic understanding of Microsoft Defender for Cloud
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure-virtual-machines
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.introduction
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.identify-trusted-launch-components
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.enable-trusted-launch
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.migrate-gen-1-configure-components
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.enforce-trusted-launch-azure-policy
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.knowledge-check
+- learn.wwl.configure-trusted-launch-azure-virtual-machines.summary
+badge:
+  uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.badge

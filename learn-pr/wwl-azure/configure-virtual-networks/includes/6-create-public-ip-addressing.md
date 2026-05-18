@@ -6,7 +6,7 @@ You can create a public IP address for your resource in the Azure portal. For ex
 
 To create a public IP address, configure these settings. Notice that public IP addresses are often used with load balancers. 
 
-- **IP Version**: Public IPv4 addresses can be attached to a load balancer or to a network interface. Public IPv6 addresses can only be attached to load balancers. IPv4 and IPv6 addresses are charged at the same rate.
+- **IP Version**: Public IP addresses can be attached to a load balancer or to a network interface. IPv4 and IPv6 addresses are charged at the same rate.
 
 - **SKU**: Select the SKU for the public IP address. A Public IP's SKU must match the SKU of the Load Balancer with which it is used.
 

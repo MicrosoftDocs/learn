@@ -10,13 +10,13 @@ Data movement activities simply move data from one data store to another. You ca
 
 ## Data transformation activities
 
-Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, SQL Database and Azure Synapse Analytics, Machine Learning Services, Azure Virtual machines and HDInsight. You can make use of any existing SQL Server Integration Services (SSIS) Packages stored in a Catalog to execute in Azure
+Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, Azure SQL Database, Machine Learning Services, Azure Virtual machines, and HDInsight. You can make use of any existing SQL Server Integration Services (SSIS) Packages stored in a Catalog to execute in Azure
 
 As this list is always evolving, you can get the [latest information here](/azure/data-factory/concepts-pipelines-activities#data-transformation-activities).
 
 ## Control activities
 
-When graphically authoring ADF solutions, you can use the control flow within the design to orchestrate pipeline activities that include chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger. The current capabilities include:
+When graphically authoring ADF solutions, you can use the control flow within the design for orchestrating pipeline activities that include chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger. The current capabilities include:
 
 | Control Activity | Description |
 |------------------|-------------|
@@ -25,9 +25,15 @@ When graphically authoring ADF solutions, you can use the control flow within th
 | WebActivity  | Web Activity can be used to call a custom REST endpoint from a Data Factory pipeline. You can pass datasets and linked services to be consumed and accessed by the activity. |
 | Lookup Activity  | Lookup Activity can be used to read or look up a record/ table name/ value from any external source. This output can further be referenced by succeeding activities. |
 | Get Metadata Activity  | GetMetadata activity can be used to retrieve metadata of any data in Azure Data Factory. |
-| Until Activity  | Implements Do-Until loop that is similar to Do-Until looping structure in programming languages. It executes a set of activities in a loop until the condition associated with the activity evaluates to true. You can specify a timeout value for the until activity in Data Factory. |
+| Until Activity  | Implements Do-Until loop that's similar to Do-Until looping structure in programming languages. It executes a set of activities in a loop until the condition associated with the activity evaluates to true. You can specify a timeout value for the until activity in Data Factory. |
 | If Condition Activity  | The If Condition can be used to branch based on condition that evaluates to true or false. The If Condition activity provides the same functionality that an if statement provides in programming languages. It evaluates a set of activities when the condition evaluates to true and another set of activities when the condition evaluates to false. |
 | Wait Activity  | When you use a Wait activity in a pipeline, the pipeline waits for the specified period of time before continuing with execution of subsequent activities. |
+| Append Variable Activity | Add a value to an existing array variable. |
+| Filter Activity | Apply a filter expression to an input array. |
+| Set Variable Activity | Set the value of an existing variable. |
+| Validation Activity | Ensure a pipeline only continues execution if a reference dataset exists, meets a specified criteria, or a timeout is reached. |
+| Webhook Activity | Call a custom REST endpoint and pass a callback URL. The pipeline waits for the callback to be invoked before proceeding to the next activity. |
+| Fail Activity | Intentionally fail a pipeline with a custom error message and error code. |
 
 You can get the [latest information here](/azure/data-factory/concepts-pipelines-activities#control-activities).
 
@@ -97,7 +103,7 @@ The following table describes properties in the above JSON:
 
 ## Defining pipelines
 
-Here is how a pipeline is defined in JSON format:
+Here's how a pipeline is defined in JSON format:
 
 ```JSON
 {
@@ -127,7 +133,7 @@ The following table describes properties in the above JSON:
 
 The following JSON defines pipeline named "MyFirstPipeline" that contains one activity type of HDInsightHive that will call a query from a script name "partitionweblogs.hql" that is stored in the  linked service named "StorageLinkedService", with an input named "AzureBlobInput" and an output named "AzureBlobOutput". It executes this against the compute resource defined in the linked service named "HDInsightOnDemandLinkedService" 
 
-The pipeline is scheduled to execute on a monthly basis, and will attempt to execute 3 times should it fail. 
+The pipeline is scheduled to execute on a monthly basis, and will attempt to execute three times should it fail. 
 
 ```JSON
 {

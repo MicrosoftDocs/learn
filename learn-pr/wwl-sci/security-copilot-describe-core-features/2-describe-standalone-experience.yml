@@ -6,10 +6,10 @@ metadata:
   description: Describe the features available in the standalone experience of Microsoft Security Copilot
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 04/30/2026
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 17
+durationInMinutes: 18
 content: |
   [!include[](includes/2-describe-standalone-experience.md)]

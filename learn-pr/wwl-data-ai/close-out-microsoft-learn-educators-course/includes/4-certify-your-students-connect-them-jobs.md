@@ -1,6 +1,6 @@
-Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. [Microsoft Learn Career Connected](https://aka.ms/CareerConnected) helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners.
+Students want to land the career of their dreams. To do so, they need to understand where to go and how to get connected with employers. Microsoft Learn Career Connected helps support skilled and credentialed students looking for jobs within the Microsoft ecosystem of customers and partners.
 
-[Microsoft Learn Career Connected](https://aka.ms/CareerConnected) brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles. 
+Microsoft Learn Career Connected brings together skilling organizations, newly skilled job seekers, and employers in need of talent to create a community of connection where people can discover opportunity, further develop their skills, build relationships, and hire the right people for the right roles. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=8e2e8eb9-fcfd-49f2-9bac-3bd41dd3bf50]
 

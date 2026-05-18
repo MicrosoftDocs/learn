@@ -65,5 +65,5 @@ Registry authentication affects both security and reliability. You can use the f
 These resources help you verify the supported registry authentication options and understand the trade-offs for production deployments. Use the CLI reference to confirm the current parameters for registry configuration and managed identity support. Use the Azure Container Registry overview when you want more context on registry capabilities like role-based access control and image management.
 
 - [Azure CLI: az containerapp registry](/cli/azure/containerapp/registry)
-- [Azure Container Registry overview](/azure/container-registry/container-registry-overview)
+- [Azure Container Registry overview](/azure/container-registry/container-registry-intro)
 - [Azure Container Apps overview](/azure/container-apps/overview)

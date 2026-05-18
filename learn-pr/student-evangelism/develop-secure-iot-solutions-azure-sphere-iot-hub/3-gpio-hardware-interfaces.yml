@@ -4,9 +4,9 @@ title: Learn about Azure Sphere devices
 metadata:
   title: Learn about Azure Sphere devices
   description: In this section, you'll learn what Azure Sphere devices are supported by this learning module.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |

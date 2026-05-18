@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.define-solution-rules-constraints-building-ai-components
+title: "Define solution rules and constraints for AI components"
+metadata:
+  title: "Define Solution Rules and Constraints for AI Components"
+  description: "Learn how to define solution rules and architectural constraints for AI components using Copilot Studio, Microsoft Foundry, and Foundry Tools."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-define-solution-rules-constraints-building-ai-components.md)]

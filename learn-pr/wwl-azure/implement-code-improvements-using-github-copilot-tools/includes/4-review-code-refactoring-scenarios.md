@@ -64,6 +64,8 @@ The following guidelines can help you to write better prompts:
 
     GitHub Copilot uses the history of the conversation to provide context. Remove past questions and responses from the history if they're not relevant. Or, start a new session if you want to change the context.
 
+    Visual Studio Code automatically compacts conversation history when the context window fills up. You can also use the `/compact` command at any time to manually summarize the conversation and free up context space. The context window control in the chat input box shows current usage.
+
 ### Provide the right context and tools
 
 Enrich your prompts with relevant context to get more accurate and relevant responses in chat. With the right tools, you can boost your developer productivity.

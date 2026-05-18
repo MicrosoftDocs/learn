@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-semantic-models-scale.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Module assessment for design and manage semantic models in Microsoft Fabric."
+  ms.date: 04/06/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+content: ""
+quiz:
+  title: ""
+  questions:
+  - content: "An analytics team builds a new semantic model in Microsoft Fabric with all data stored in a lakehouse. Which storage mode should they choose as the default for this model?"
+    choices:
+    - content: "Import mode, because it provides the fastest query performance."
+      isCorrect: false
+      explanation: "Incorrect. Import mode requires copying data into the model and scheduling refreshes. For Fabric-native data in a lakehouse, Direct Lake provides fast queries without the overhead of importing data."
+    - content: "Direct Lake mode, because it reads Delta tables directly from OneLake without importing data."
+      isCorrect: true
+      explanation: "Correct. Direct Lake is the default storage mode for Fabric workloads. It reads Delta tables directly from OneLake, combining fast query performance with near-real-time data freshness."
+    - content: "DirectQuery mode, because it queries the source in real time."
+      isCorrect: false
+      explanation: "Incorrect. DirectQuery sends queries to the source at query time, which is useful for real-time requirements. However, for Fabric-native lakehouse data, Direct Lake provides better performance because it reads Delta files directly."
+  - content: "A company has 60 base measures in a semantic model and needs Year-to-Date, Quarter-to-Date, and Month-to-Date versions of each. What should a model designer implement to avoid creating 180 additional measures?"
+    choices:
+    - content: "A calculation group with time intelligence calculation items that use SELECTEDMEASURE()."
+      isCorrect: true
+      explanation: "Correct. Calculation groups define reusable calculation patterns that apply across all measures. Three calculation items (YTD, QTD, MTD) using SELECTEDMEASURE() replace 180 separate measures."
+    - content: "DAX variables to store intermediate results and reduce repeated calculations."
+      isCorrect: false
+      explanation: "Incorrect. Variables improve readability and performance within individual measures, but they don't eliminate the need to create separate measures for each time intelligence pattern."
+    - content: "Aggregations with pre-summarized tables at the monthly, quarterly, and yearly grain."
+      isCorrect: false
+      explanation: "Incorrect. Aggregations improve query performance on large fact tables by pre-summarizing data. They don't address the problem of measure proliferation across time intelligence patterns."
+  - content: "A model designer needs to use Tabular Editor for external model development and deploy through CI/CD pipelines. Which setting is a prerequisite for XMLA endpoint read/write access?"
+    choices:
+    - content: "Large semantic model storage format."
+      isCorrect: true
+      explanation: "Correct. Large semantic model storage format is required for XMLA endpoint read/write access. Once enabled, external tools like Tabular Editor, DAX Studio, and ALM Toolkit can connect to the model for development, debugging, and deployment."
+    - content: "OneLake integration."
+      isCorrect: false
+      explanation: "Incorrect. OneLake integration makes semantic model data accessible as Delta tables for downstream Fabric items like notebooks. It doesn't enable XMLA endpoint access for external tools."
+    - content: "Query scaleout."
+      isCorrect: false
+      explanation: "Incorrect. Query scaleout distributes read queries across replicas for high concurrency. It doesn't enable XMLA endpoint access, though it shares the same prerequisite: large semantic model storage format."
+  - content: "A model designer enables the Assume referential integrity setting on a relationship between a fact table and a dimension table in a Direct Lake model. What is the performance benefit of this setting?"
+    choices:
+    - content: "The engine uses INNER joins instead of LEFT OUTER joins, which reduces the number of rows processed."
+      isCorrect: true
+      explanation: "Correct. When referential integrity holds, the engine switches from LEFT OUTER to INNER joins. INNER joins process fewer rows because they exclude unmatched keys, which improves query performance."
+    - content: "The engine caches relationship metadata so that subsequent queries skip relationship evaluation."
+      isCorrect: false
+      explanation: "Incorrect. The Assume referential integrity setting changes the join type used during queries. It doesn't introduce caching of relationship metadata."
+    - content: "The engine creates an index on the foreign key column to speed up relationship lookups."
+      isCorrect: false
+      explanation: "Incorrect. The Assume referential integrity setting changes the join strategy from LEFT OUTER to INNER joins. It doesn't create indexes on foreign key columns."
+  - content: "A semantic model has a fact table with 150 million rows. Report users primarily view monthly and quarterly summaries by region. Which design pattern improves query performance for these summary-level visuals?"
+    choices:
+    - content: "Aggregation tables that store precalculated totals at the monthly and quarterly grain."
+      isCorrect: true
+      explanation: "Correct. Aggregations store summary data at a higher grain than the detail data. When a query matches an aggregation, the engine returns results from the smaller summary table instead of scanning 150 million detail rows."
+    - content: "Calculation groups with time intelligence calculation items."
+      isCorrect: false
+      explanation: "Incorrect. Calculation groups apply reusable calculation patterns across measures, such as time intelligence. They don't pre-summarize data to improve query performance on large fact tables."
+    - content: "Bi-directional filtering between the fact and dimension tables."
+      isCorrect: false
+      explanation: "Incorrect. Bi-directional filtering changes how filters propagate between tables. It doesn't improve query performance on large fact tables and can actually degrade performance."

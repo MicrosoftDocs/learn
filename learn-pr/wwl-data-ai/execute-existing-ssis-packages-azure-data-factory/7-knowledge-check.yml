@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 04/30/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -25,17 +25,17 @@ quiz:
     - content: "SQL Server 2016."
       isCorrect: false
       explanation: "Incorrect. SSIS Projects was introduced in SQL Server 2012 and is the unit of deployment for SSIS solutions."
-  - content: "Which tool is used to perform an assessment of migrating SSIS packages to Azure SQL Database services?"
+  - content: "Which tool provides a built-in cloud compatibility assessment feature that lets you evaluate SSIS packages and execute them directly on Azure-SSIS IR from your development environment?"
     choices:
-    - content: "Data Migration Assistant."
+    - content: "SQL Server Data Tools (SSDT)."
       isCorrect: true
-      explanation: "Correct. The Data Migration Assistant is used to perform an assessment of migrating SSIS packages to Azure SQL Database services."
-    - content: "Data Migration Assessment."
+      explanation: "Correct. SQL Server Data Tools (SSDT) includes an Azure-Enabled Project feature with a built-in assessment that surfaces migration blockers and informative issues, and lets you execute packages directly on Azure-SSIS IR."
+    - content: "SQL Server Management Studio (SSMS)."
       isCorrect: false
-      explanation: "Incorrect. Data Migration Assessment does not exist. Instead Data Migration Assistant is used to perform an assessment of migrating SSIS packages to Azure SQL Database services."
-    - content: "Data Migration Service."
+      explanation: "Incorrect. SSMS is used to manage and deploy SSIS packages and migrate SQL Server Agent jobs, but it doesn't provide a built-in cloud compatibility assessment for SSIS packages. SQL Server Data Tools (SSDT) provides this capability."
+    - content: "Azure Database Migration Service."
       isCorrect: false
-      explanation: "Incorrect. The Data Migration Service is used to migrate database objects. The Data Migration Assistant is used to perform an assessment of migrating SSIS packages to Azure SQL Database services."
+      explanation: "Incorrect. Azure Database Migration Service is used for large-scale database migrations to Azure SQL. SQL Server Data Tools (SSDT) provides the built-in SSIS package assessment and Azure execution capability."
   - content: "Which tool is used to create and deploy SQL Server Integration Packages on an Azure-SSIS integration runtime, or for on-premises SQL Server?"
     choices:
     - content: "SQL Server Data Tools."
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. SQL Server Management Studio is used to manage database instances and databases. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."
     - content: "dtexec."
       isCorrect: false
-      explanation: "Incorrect. The dtexec command prompt utility is used to configure and execute SQL Server Integration Services packages. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."
+      explanation: "Incorrect. The dtexec command prompt utility is used to configure and execute SQL Server Integration Services packages. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."

@@ -4,7 +4,7 @@ title: Understand external storage
 metadata:
   title: Understand External Storage
   description: Learn how external locations in Unity Catalog connect cloud storage to Azure Databricks, and understand how to create and manage them using Catalog Explorer and SQL.
-  ms.date: 12/07/2025
+  ms.date: 05/11/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit

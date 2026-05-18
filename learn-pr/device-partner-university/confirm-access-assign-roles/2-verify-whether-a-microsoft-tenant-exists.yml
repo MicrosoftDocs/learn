@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.confirm-access-assign-roles.verify-whether-a-microsoft-tenant-exists
+title: Verify whether a Microsoft tenant exists
+metadata:
+  title: Verify Whether A Microsoft Tenant Exists
+  description: This content is part of the "Confirming access and assigning roles in Surface portals" module.
+  ms.date: 04/24/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-verify-whether-a-microsoft-tenant-exists.md)]

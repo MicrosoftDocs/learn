@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-govern-analytics-data.exercise
+title: Exercise - Govern analytics data in Microsoft Fabric
+metadata:
+  title: Exercise - Govern Analytics Data in Microsoft Fabric
+  description: "Apply governance practices including endorsement, documentation, and lineage analysis to data assets in Microsoft Fabric."
+  ms.date: 04/07/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

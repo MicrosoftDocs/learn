@@ -4,7 +4,7 @@ metadata:
   title: Introduction to Kubernetes
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   manager: rayoflores
-  ms.date: 11/13/2024
+  ms.date: 03/20/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: module
@@ -23,9 +23,9 @@ prerequisites: |
 iconUrl: /training/achievements/introduction-to-kubernetes.svg
 badge:
   uid: learn.intro-to-kubernetes.badge
-levels: 
+levels:
 - beginner
-roles: 
+roles:
 - developer
 - administrator
 - solution-architect
@@ -43,4 +43,3 @@ units:
 - learn.intro-to-kubernetes.exercise-kubernetes-functionality
 - learn.intro-to-kubernetes.when-to-use-kubernetes
 - learn.intro-to-kubernetes.summary
-

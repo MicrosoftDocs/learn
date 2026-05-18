@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-azure-reliability-using-sre-agent.summary
+title: Summary and next steps
+metadata:
+  title: Summary and next steps
+  description: "Review key takeaways from Azure SRE Agent and define next steps for adoption."
+  ms.date: 03/08/2026
+  author: petender
+  ms.author: petender
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-summary.md)]

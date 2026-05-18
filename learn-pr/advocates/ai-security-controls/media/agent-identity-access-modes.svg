@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="title4 desc4">
+  <title id="title4">Agent Identity Access Modes</title>
+  <desc id="desc4">Diagram comparing two AI agent identity modes: delegated access where the agent inherits user permissions, and application-only access where the agent uses its own identity with RBAC roles. Both modes feed into audit logging.</desc>
+  <defs>
+    <marker id="arr4" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="900" height="440" fill="#FFFFFF"/>
+
+  <!-- Left Lane Header -->
+  <rect x="20" y="30" width="410" height="44" rx="8" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="225" y="58" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A1A1A">Delegated Access (On Behalf of User)</text>
+
+  <!-- Right Lane Header -->
+  <rect x="470" y="30" width="410" height="44" rx="8" fill="#E1EFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="675" y="58" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#1A1A1A">Application-Only Access</text>
+
+  <!-- Divider -->
+  <line x1="450" y1="30" x2="450" y2="325" stroke="#424242" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- LEFT LANE Steps -->
+  <!-- Step 1 -->
+  <rect x="50" y="100" width="340" height="52" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="220" y="131" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">User signs in; agent uses on-behalf-of flow</text>
+  <!-- Arrow -->
+  <line x1="220" y1="152" x2="220" y2="177" stroke="#424242" stroke-width="1.5" marker-end="url(#arr4)"/>
+  <!-- Step 2 -->
+  <rect x="50" y="183" width="340" height="52" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="220" y="214" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Agent inherits only the user's permissions</text>
+  <!-- Arrow -->
+  <line x1="220" y1="235" x2="220" y2="260" stroke="#424242" stroke-width="1.5" marker-end="url(#arr4)"/>
+  <!-- Step 3 -->
+  <rect x="50" y="266" width="340" height="52" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="220" y="297" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Data accessed with user scope only</text>
+
+  <!-- RIGHT LANE Steps -->
+  <!-- Step 1 -->
+  <rect x="500" y="100" width="350" height="52" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="675" y="131" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Agent uses its own dedicated identity</text>
+  <!-- Arrow -->
+  <line x1="675" y1="152" x2="675" y2="177" stroke="#424242" stroke-width="1.5" marker-end="url(#arr4)"/>
+  <!-- Step 2 -->
+  <rect x="500" y="183" width="350" height="52" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="675" y="214" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Admin assigns RBAC roles to agent identity</text>
+  <!-- Arrow -->
+  <line x1="675" y1="235" x2="675" y2="260" stroke="#424242" stroke-width="1.5" marker-end="url(#arr4)"/>
+  <!-- Step 3 -->
+  <rect x="500" y="266" width="350" height="52" rx="8" fill="#FFFFFF" stroke="#0078D4" stroke-width="2"/>
+  <text x="675" y="297" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#1A1A1A">Data accessed with agent scope (least privilege)</text>
+
+  <!-- Arrows down to shared audit box -->
+  <line x1="220" y1="318" x2="220" y2="355" stroke="#424242" stroke-width="1.5" marker-end="url(#arr4)"/>
+  <line x1="675" y1="318" x2="675" y2="355" stroke="#424242" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+  <!-- Shared Audit Box -->
+  <rect x="60" y="365" width="780" height="54" rx="8" fill="#0078D4" stroke="#005A9E" stroke-width="2"/>
+  <text x="450" y="397" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF">Audit Logs: all operations tracked under delegated or agent identity</text>
+</svg>

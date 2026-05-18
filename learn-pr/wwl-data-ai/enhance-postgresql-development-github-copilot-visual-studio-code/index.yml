@@ -17,7 +17,7 @@ prerequisites: |
   - Familiarity with PostgreSQL.
   - Visual Studio Code installed.
   - Azure subscription with access to Azure Database for PostgreSQL.
-iconUrl: /learn/wwl/azure-database-postgresql/media/module-icon.svg
+iconUrl: /training/achievements/module-icon.svg
 levels:
   - intermediate
 roles:

@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=df557c73-9038-4732-9e85-ad227227c921]
+
+>[!TIP]
+See the Text and images tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Once your Sora 2 model is deployed, you can start generating videos. Video generation is an asynchronous process—you submit a request with your prompt and video settings, then retrieve the completed video when it's ready.
 
 ## Video generation parameters
@@ -19,6 +30,8 @@ Before crafting your prompt, understand the API parameters that control your vid
 ## Test video generation in the playground
 
 After deploying the Sora 2 model, you can test it using the Video playground in Microsoft Foundry portal:
+
+![Screenshot of the video playground.](../media/video-playground.png)
 
 1. Navigate to your deployed Sora 2 model in the Foundry portal.
 1. Select the **Playground** tab to access the video generation interface.
@@ -103,3 +116,4 @@ For best results:
 - **Iterate**: Small changes to camera, lighting, or action can shift outcomes dramatically—treat each generation as a creative variation
 
 Video generation with Sora 2 is a collaborative process. You provide direction, and the model delivers creative variations. Be prepared to experiment—sometimes the second or third generation is the best one.
+::: zone-end

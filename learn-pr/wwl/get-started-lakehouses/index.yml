@@ -4,8 +4,8 @@ metadata:
   title: Get started with lakehouses in Microsoft Fabric
   description: "Lakehouses in Microsoft Fabric combine data lake flexibility with data warehouse analytics. Learn how to create, load, and query a lakehouse on a single platform."
   ms.date: 03/04/2026
-  author: angierudduck
-  ms.author: anrudduc
+  author: theresa-i
+  ms.author: theresai
   ms.topic: module-standard-task-based
   ms.collection: N/A
   ms.service: fabric

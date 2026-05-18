@@ -31,7 +31,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- ai-services
+- foundry-tools
 - dynamics-365
 - dynamics-guides
 - dynamics-remote-assist

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.office-home-business-2024.scenario-predictable-workflows
+title: Choose an Office option for predictable, long-term workflows
+metadata:
+  title: Choose An Office Option For Predictable, Long-Term Workflows
+  description: This content is part of the "Choose the best Office productivity option for stable and evolving workflows" module.
+  ms.date: 05/12/2026
+  author: melissawinters
+  ms.author: v-mwinters
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-scenario-predictable-workflows.md)]

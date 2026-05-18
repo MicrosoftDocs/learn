@@ -12,7 +12,7 @@ You can find the three reports in the **Microsoft Entra admin center**, then **I
 
 Each report launches with a list of all detections for the period shown at the top of the report. Each report allows for the addition or removal of columns based on administrator preference. Administrators can choose to download the data in .CSV or .JSON format. Reports can be filtered using the filters across the top of the report.
 
-Selecting individual entries enables additional entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
+Selecting individual entries enables more entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
@@ -33,7 +33,7 @@ Administrators can then choose to take action on these events. They can choose t
  - Confirm user compromise.
  - Dismiss user risk.
  - Block user from signing in.
- - Investigate further using Azure ATP.
+ - Investigate in Microsoft Defender for Identity.
 
 ### Risky sign-ins
 
@@ -67,10 +67,10 @@ With the information provided by the risk detections report, administrators can 
 
 Administrators can then choose to return to the user's risk or sign-ins report to take actions based on information gathered.
 
-The risk detection report also provides a clickable link to the detection in the Microsoft Defender for Cloud Apps (MDCA) portal where you can view additional logs and alerts.
+The risk detection report also provides a clickable link to the detection in the Microsoft Defender for Cloud Apps (MDCA) portal where you can view more logs and alerts.
 
 > [!NOTE]
-> Our system detects that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system will dismiss the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
+> Our system detects that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system dismisses the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
 
 ## Remediate risks and unblock users
 
@@ -93,7 +93,7 @@ Administrators have the following options to remediate:
 
 If you allow users to self-remediate, with multifactor authentication (MFA) and self-service password reset (SSPR) in your risk policies, they can unblock themselves when risk is detected. These detections are then considered closed. Users must have previously registered for MFA and SSPR in order to use when risk is detected.
 
-Some detections don't raise risk to the level where a user self-remediation would be required, but administrators should still evaluate these detections. Administrators determine that additional measures are necessary, such as blocking access from locations or lowering the acceptable risk in their policies.
+Some detections don't raise risk to the level where a user self-remediation would be required, but administrators should still evaluate these detections. Administrators determine that other measures are necessary, such as blocking access from locations or lowering the acceptable risk in their policies.
 
 ### Manual password reset
 
@@ -167,7 +167,7 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 
 1. Sign in to the Microsoft Entra admin center.
 2. Browse to **Identity**, then open Settings, and select **Domain names**.
-3. Take note of the .onmicrosoft.com domain. You'll need this information in a later step.
+3. Take note of the .onmicrosoft.com domain. You need this information in a later step.
 
 ### Create a new app registration
 
@@ -176,7 +176,7 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 3. On the **Create** page, perform the following steps:
 
    1. In the **Name** textbox, type a name for your application (for example: Microsoft Entra Risk Detection API).
-   2. Under **Supported account types**, select the type of accounts that will use the APIs.
+   2. Under **Supported account types**, select the type of accounts that use the APIs.
    3. Select **Register**.
 
 4. Copy the **Application ID**.
@@ -204,7 +204,7 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
    2. Select **Add**.
 
       > [!NOTE]
-      > If you lose this key, you'll have to return to this section and create a new key. Keep this key a secret: Anyone who has it can access your data.
+      > If you lose this key, you have to return to this section and create a new key. Keep this key a secret: Anyone who has it can access your data.
 
 ### Authenticate to Microsoft Graph and query the Identity Protection risk detections API
 
@@ -237,7 +237,7 @@ The response, if successful, is a collection of identity risk detections and ass
 
 ### Sample
 
-This sample shows the use of a shared secret to authenticate. In a production environment, storing secrets in code is generally frowned upon. Organizations can use managed identities for Azure resources to secure these credentials.
+This sample shows the use of a shared secret to authenticate. In a production environment, storing secrets in code is frowned upon. Organizations can use managed identities for Azure resources to secure these credentials.
 
 Here’s sample code for authenticating and calling the API using PowerShell. Just add your client ID, the secret key, and the tenant domain.
 

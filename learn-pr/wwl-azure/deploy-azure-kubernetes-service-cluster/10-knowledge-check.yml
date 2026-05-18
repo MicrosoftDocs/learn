@@ -2,14 +2,12 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: "Knowledge check"
-  ms.date: 03/08/2024
-  author: wwlpublish
-  ms.author: bradj
+  ms.date: 04/25/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom:
-  - N/A
   module_assessment: true
 durationInMinutes: 7
 content: |
@@ -17,47 +15,50 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the recommended approach for scaling Kubernetes clusters?"
+  - content: "In the Azure Kubernetes Service (AKS) autoscaling pattern covered in this module, which pair handles both pod and node scaling?"
     choices:
-    - content: "Cluster autoscaling"
+    - content: "Cluster autoscaler only"
       isCorrect: false
-      explanation: "Incorrect. Cluster autoscaling is an AKS add-on component that scales the number of nodes in a node pool."
-    - content: "Manual scaling"
+      explanation: "Incorrect. In this module's autoscaling pattern, cluster autoscaler scales the number of nodes in a node pool but doesn't scale pod replicas; HPA handles pod scaling."
+    - content: "Manual `kubectl scale` and `az aks scale` only"
       isCorrect: false
-      explanation: "Incorrect. Manual scaling requires monitoring and setting alerts on CPU utilization or custom metrics."
-    - content: "Autoscaling"
+      explanation: "Incorrect. Manual scaling is reactive and requires monitoring; AKS provides autoscalers that respond to load automatically."
+    - content: "Horizontal Pod Autoscaler (HPA) for pods plus cluster autoscaler for nodes"
       isCorrect: true
-      explanation: "Correct. Autoscaling is recommended because some of the manual mechanisms are built into the autoscaler, which can scale both pod replicas and the node count in the cluster."
-  - content: "What does the kubectl command 'apply' do?"
+      explanation: "Correct. HPA scales pod replicas based on observed metrics, and cluster autoscaler adds or removes nodes when pods become unschedulable. Together they scale both layers automatically."
+  - content: "Which AKS networking mode assigns pod IPs from a private overlay CIDR, reducing VNet IP exhaustion?"
     choices:
-    - content: "Lists all pods in all namespaces"
-      isCorrect: false
-      explanation: "Incorrect. The 'get pods --all-namespaces' command is used to list all pods in all namespaces."
-    - content: "Deletes a deployment"
-      isCorrect: false
-      explanation: "Incorrect. The 'delete' command is used to delete a deployment."
-    - content: "Applies a configuration to a resource by filename or stdin"
+    - content: "Azure CNI Overlay"
       isCorrect: true
-      explanation: "Correct. The 'apply' command is used to apply a configuration to a resource by filename or stdin."
-  - content: "Why is it important to consider the address space of the virtual network when setting up an AKS cluster?"
+      explanation: "Correct. Azure CNI Overlay assigns pod IPs from a private, non-VNet overlay CIDR while node IPs come from the VNet subnet, reducing VNet IP exhaustion."
+    - content: "Azure CNI Pod Subnet (dynamic IP allocation)"
+      isCorrect: false
+      explanation: "Incorrect. Azure CNI Pod Subnet with dynamic IP allocation still assigns pod IPs from VNet address space, even though it allocates them more efficiently than the legacy Azure CNI Node Subnet."
+    - content: "Kubenet"
+      isCorrect: false
+      explanation: "Incorrect. Kubenet conserves VNet IPs, but it isn't Azure CNI Overlay and doesn't assign pod IPs using the Azure CNI private overlay CIDR mode."
+    - content: "Bring your own CNI"
+      isCorrect: false
+      explanation: "Incorrect. Bring your own CNI depends on the installed plugin and isn't the AKS Azure CNI Overlay mode described here."
+  - content: "When you plan the spoke virtual network address space for an AKS cluster that uses **Azure CNI Overlay**, which IP allocations must come from the VNet subnets?"
     choices:
-    - content: "To ensure that all pods have the same IP address"
+    - content: "Pod IPs and node IPs"
       isCorrect: false
-      explanation: "Incorrect. Pods should have individual IP addresses."
-    - content: "To limit the number of nodes in the cluster"
+      explanation: "Incorrect. With Azure CNI Overlay, pods receive IPs from a separate overlay pod CIDR — they don't consume VNet subnet IPs."
+    - content: "Only pod IPs"
       isCorrect: false
-      explanation: "Incorrect. The address space should be large enough to accommodate all nodes and their scalability limits."
-    - content: "To ensure that all entities that receive traffic have an IP address allocated from the subnet address space"
+      explanation: "Incorrect. The opposite is true: with Azure CNI Overlay, pod IPs come from a separate overlay CIDR, while node IPs and other entities still come from the VNet subnets."
+    - content: "Node IPs, internal load balancers, Application Gateway instance IPs (and any private frontend IP) in their dedicated subnet, Private Link endpoints, and the API Server VNet Integration subnet"
       isCorrect: true
-      explanation: "Correct. The address space should be large enough to hold all subnets and allocate IP addresses for all entities that receive traffic, including nodes, pods, and Azure Private Link addresses."
-  - content: "What is the purpose of deploying Private Link endpoints in a dedicated subnet within the spoke virtual network?"
+      explanation: "Correct. With Azure CNI Overlay, only entities that need a VNet IP — node IPs, internal load balancers, Application Gateway instance IPs (one per instance, plus an extra address if a private frontend IP is configured), Private Link endpoints, and the delegated API server subnet — are sized from the VNet subnets. Public Application Gateway frontend IPs are standalone Azure public IP resources, not subnet IPs. Pods come from a separate overlay CIDR."
+  - content: "What is the **subnet-level** benefit of placing Private Link endpoints in a dedicated subnet within the spoke virtual network?"
     choices:
-    - content: "To keep the resources that belong to the cluster in a separate virtual network."
-      isCorrect: false
-      explanation: "Incorrect. While deploying Private Link endpoints in a dedicated subnet within the spoke virtual network does keep the resources that belong to the cluster in the same virtual network, this isn't the primary purpose of doing so."
-    - content: "To reduce traffic passing the hub virtual network connection."
-      isCorrect: false
-      explanation: "Incorrect. This answer describes the purpose of deploying Private Link endpoints in the hub virtual network, not in a dedicated subnet within the spoke virtual network."
-    - content: "To enable granular security rules at the subnet level using network security groups."
+    - content: "It allows applying granular network security group rules at the subnet level."
       isCorrect: true
-      explanation: "Correct. Deploying Private Link endpoints in a dedicated subnet within the spoke virtual network allows for granular security rules to be applied at the subnet level using network security groups, which can help improve security."
+      explanation: "Correct. A dedicated subnet allows NSG rules scoped to those endpoints — but only after explicitly enabling network policies on the subnet. Set `privateEndpointNetworkPolicies` to `Enabled` (which enables both NSG and route-table policy evaluation) or to the granular `NetworkSecurityGroupEnabled` (NSG-only) so NSG rules apply to private endpoints; otherwise NSG rules aren't enforced on private endpoints by default. For more information, see [Manage network policies for private endpoints](/azure/private-link/disable-private-endpoint-network-policy)."
+    - content: "It removes the need for Azure Private Link service connections."
+      isCorrect: false
+      explanation: "Incorrect. The Private Link service connection is still required regardless of which subnet hosts the endpoint."
+    - content: "It guarantees that traffic never traverses the hub virtual network."
+      isCorrect: false
+      explanation: "Incorrect. Whether traffic traverses the hub depends on routing and topology, not on the choice of subnet within the spoke."

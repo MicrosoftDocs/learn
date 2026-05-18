@@ -1,53 +1,60 @@
-You might be wondering why NPUs are so important. Let’s examine a concrete example.
+In earlier sections, you learned what an NPU is and how Copilot+ PCs use it to power real-world business scenarios. This section takes a closer look at *why* the NPU is a significant shift in PC architecture—and what it means for the future of Windows as a platform for AI.
 
-This video represents how an NPU, GPU, and a CPU perform the same task. An AI was asked to identify faces in a video feed and count every face it saw.
+## Seeing the difference: CPU vs. GPU vs. NPU
+
+To understand why the NPU matters, it helps to see how all three processors handle the same AI task.
+
+In the following demonstration, an AI model was asked to identify and count faces in a live video feed. The same task was run on a CPU, a GPU, and an NPU.
 
 :::image type="content" border="true" source="../media/processor-speed.gif" alt-text="Illustrative comparison of image loading speeds on an NPU, GPU, and CPU.":::
 
-As you can see, all the chips can do this work—but the NPU does it far more effectively. Not only is the task completed faster with an NPU, but the process generates far less heat and uses much less energy.
+All three processors completed the task—but the results were different:
 
-## Data-driven focal points
+| Processor | Speed | Energy use | Heat generated |
+|---|---|---|---|
+| **CPU** | Slowest | Highest | Most |
+| **GPU** | Moderate | Moderate | Moderate |
+| **NPU** | Fastest | Lowest | Least |
 
-AI is already helping Copilot+ PC users work smarter. With high performance and advanced features, these devices bring real innovation and support the way business gets done. 
+The NPU completed the task faster while generating less heat and using less energy. This efficiency is what enables Copilot+ PCs to run AI features continuously—like Live Captions or Windows Studio Effects during a video call—without draining battery life or slowing down other applications.
 
-### Potential for AI in workplaces
+> [!TIP]
+> This demonstration illustrates a key concept: the NPU isn't faster at AI tasks—it's more *efficient*. In a business context, efficiency means employees can use AI features throughout the workday without carrying a charger or closing other apps to free up resources.
 
-People spend more than half their day (57%) communicating in meetings, email, and chat, with only 43% dedicated to creating. In fact, since 2020, the amount of time that people spend in meetings has tripled.<sup>5</sup>
+## How on-device AI changes the computing model
 
-Many people struggle with these distractions, as 68% say they don’t have enough uninterrupted focus time during the day. Indeed, 64% of employees state they have a difficult time managing work tasks due to lack of energy and time.<sup>5</sup>
+Traditionally, AI processing has relied on cloud-based services—sending data to a remote server, processing it there, and returning the results. This approach works well for many scenarios, but it introduces latency, requires an internet connection, and means sensitive data leaves the device.
 
-These challenges contribute to what is commonly called "brain-drain," where people are 3.5X more likely to struggle with innovation and strategic thinking—hindering their organizations’ ability to generate profits, adapt, and compete.<sup>5</sup>
+The NPU in Copilot+ PCs enables a different model: **on-device AI processing**. With an NPU capable of 40+ TOPS, many AI tasks can run locally—directly on the hardware—without sending data to the cloud. In many real-world workflows, AI processing happens in a hybrid model. Some tasks run locally on the device using the NPU for speed, privacy, or offline access, while more complex requests rely on cloud-based AI services. Copilot+ PCs are designed to support this approach by balancing on-device intelligence with cloud processing as needed.
 
-The message is clear—employees want to simplify their workday so they can focus on contributing more to their organizations, and many are already thinking about how AI can help:
+| Processing model | How it works | Best suited for |
+|---|---|---|
+| **Cloud-based AI** | Data is sent to a remote service for processing and results are returned over the internet | Complex tasks requiring large models, cross-organizational data queries, scenarios where internet is available |
+| **On-device AI** | Data is processed locally on the NPU without leaving the device | Low-latency tasks, offline scenarios, privacy-sensitive workloads, real-time features like captions and video effects |
+| **Hybrid AI** | Some tasks run locally on the NPU while others are handled by cloud services, depending on the workload | Organizations that need both real-time on-device features and cloud-powered intelligence like Microsoft 365 Copilot |
 
-- **80%** of employees would like AI to summarize their meetings, action items, and plan their day.<sup>5</sup>
+Copilot+ PCs support all three models. On-device features like Live Captions, Windows Studio Effects, and Click to Do run on the NPU. Cloud-based features like Microsoft 365 Copilot use cloud processing. Many workflows combine both—for example, using on-device search to find a local file, then using Microsoft 365 Copilot to summarize its contents.
 
-- **86%** of employees want AI to help them find the right answers and information.<sup>5</sup>
+## Windows as a platform for AI
 
-- **73%** would be comfortable using AI for creative work.<sup>5</sup>
+The NPU is part of a broader shift in how Windows supports AI across the organization. Windows 11 Pro serves as the platform that connects on-device AI capabilities with cloud-based intelligence and IT management tools.
 
-Industries worldwide rely on Microsoft innovations in AI to transform, solve problems, and seize new opportunities.
+This platform approach includes:
 
-Now, organizations of any size can benefit from devices uniquely designed for AI and high-octane performance.
+- **On-device AI processing** through the NPU, enabling faster response times and reducing dependency on cloud connectivity for supported features.
+- **AI agents within Windows** that can reason, plan, and take actions on behalf of users—such as configuring device settings through natural language or suggesting next steps based on on-screen content.
+- **Windows AI Foundry** for building custom AI-powered applications that take advantage of local hardware acceleration alongside cloud services.
+- **IT governance and control** through Microsoft Intune, allowing organizations to manage which AI capabilities are available and how agents interact with organizational data.
 
-Copilot+ PCs can bring powerful, intelligent edge computing to work experiences—helping to accelerate innovation, solve problems faster, and drive business growth.
+> [!IMPORTANT]
+> AI agents in Windows operate within the organization's existing management and security framework. IT administrators can govern agent behavior and data access through the same tools used to manage other Windows 11 Pro policies and configurations.
 
-As the pace and complexity of work increase, many are exploring how AI can help simplify daily tasks and improve focus. Recent insights show strong interest in AI tools that can:
+## What this means for organizations
 
-- Summarize meetings, track action items, and assist with planning.
-- Quickly surface accurate information.
-- Support creative processes and idea generation.
+The combination of on-device AI, cloud intelligence, and platform governance creates a practical model for organizations adopting AI at scale:
 
-## Windows 10 end of service
+- **Employees** get faster, more responsive AI features that work even without an internet connection—improving productivity in the field, during travel, or in low-connectivity environments.
+- **IT teams** maintain control over AI capabilities through familiar management tools, with security features enabled by default and agent behavior governed at the policy level.
+- **Developers** can build custom AI solutions using Windows AI Foundry, integrating open-source and proprietary models that run locally on the NPU—keeping sensitive data on-device while still connecting to cloud services when needed.
 
-Better still, new feature enhancements will continue to be delivered to your desktop.
-
-With support for Windows 10 ending on **October 14, 2025**, it's important to plan ahead. Transitioning to newer devices ensures continued access to the latest updates in security, productivity, and AI capabilities—all delivered directly to the desktop.
-
-## Disclaimers
-
-1. Requires eligible Microsoft 365 license.
-1. Copilot key is available on many new Windows 11 PCs. Copilot key feature availability varies by market. Learn more about Copilot key.
-1. Based on Microsoft-commissioned testing performed by Principled Technologies conducted in May 2024 and September 2024 using Cinebench® 2024 Multi-Core benchmark. For more information, see [Detailed Test Results](/windows/deployment/performance-lab/claims-disclosures?tabs=copilot-plus#detailed-test-results).
-1. Battery life varies significantly by device and with settings, usage, and other factors. [Learn more](/windows/deployment/performance-lab/claims-disclosures?tabs=copilot-plus).
-1. Microsoft. (May 9 2023). *Will AI Fix Work? Work Trend Index Annual Report*. https://www.microsoft.com/worklab/work-trend-index/will-ai-fix-work
+When discussing Copilot+ PCs with business decision-makers, the platform story is often the most compelling angle: these aren't faster PCs—they're the foundation for how the organization builds, deploy, and manage AI going forward. The NPU is a critical piece of that foundation, enabling a new class of AI-powered experiences that are efficient, responsive, and secure.

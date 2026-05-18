@@ -3,22 +3,22 @@ uid: learn.fundamentals-of-ai-security
 metadata:
   ms.author: ceperezb
   author: ceperezb
-  ms.date: 03/06/2026
+  ms.date: 04/24/2026
   ms.update-cycle: 180-days
-  title: Fundamentals of AI security 
-  description: Fundamental concepts of AI security
+  title: Fundamentals of AI Security 
+  description: Learn about AI security fundamentals including how AI security differs from traditional cybersecurity, the three-layer AI architecture model, and AI-specific attack techniques like jailbreaking, prompt injection, and data exfiltration.
   ms.topic: module
   ms.service: artificial-intelligence
   ms.collection:
-    - TBD
     - ce-advocates-ai-copilot
 title: Fundamentals of AI security
-summary: In this module you learn about fundamental concepts of AI security
+summary: Learn how AI security differs from traditional cybersecurity, explore the three-layer AI architecture model, and examine AI-specific attack techniques including jailbreaking, prompt injection, model manipulation, data exfiltration, and overreliance.
 abstract: |
   After completing this module, you'll be able to:
-  -	Understand and describe the basic concepts of AI security
-  -	Describe the three layers of AI architecture 
-  -	Describe new, AI specific attack techniques
+  - Describe how AI security differs from traditional cybersecurity
+  - Identify the three layers of AI architecture and the security concerns at each layer
+  - Explain AI-specific attack techniques, including jailbreaking, prompt injection, model manipulation, data exfiltration, and overreliance
+  - Describe mitigation strategies for each attack type
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Fundamental security concepts
@@ -42,4 +42,4 @@ units:
 - learn.fundamentals-of-ai-security.knowledge-check
 - learn.fundamentals-of-ai-security.summary
 badge:
-  uid: learn.fundamentals-of-ai-security-badge
+  uid: learn.fundamentals-of-ai-security.badge

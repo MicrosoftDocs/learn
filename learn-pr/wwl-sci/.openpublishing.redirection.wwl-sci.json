@@ -1,6 +1,11 @@
 {
     "redirections": [
       {
+        "source_path_from_root": "/learn-pr/wwl-sci/security-copilot-describe-core-features/4-describe-non-microsoft-plugins.md",
+        "redirect_url": "/training/modules/security-copilot-describe-core-features/3-describe-microsoft-plugins",
+        "redirect_document_id": false
+      },
+      {
         "source_path_from_root": "/learn-pr/wwl-sci/security-copilot-describe-core-features/5-describe-embedded-experience.md",
         "redirect_url": "/training/modules/security-copilot-embedded-experiences/2-copilot-for-defender",
         "redirect_document_id": false
@@ -771,6 +776,41 @@
     {
       "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-secure-privileged-access/8-evaluate-security-active-directory-domain-services.yml",
       "redirect_url": "/training/modules/design-solutions-identity-access-management/6-specify-requirements-secure-active-directory-domain-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/create-configure-data-loss-prevention-policies/5-manage-data-loss-prevention-violations-microsoft-cloud-app-security.yml",
+      "redirect_url": "/training/modules/purview-data-loss-prevention-alerts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/create-configure-data-loss-prevention-policies/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/create-configure-data-loss-prevention-policies/5-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/create-configure-data-loss-prevention-policies/7-summary-resources.yml",
+      "redirect_url": "/training/modules/create-configure-data-loss-prevention-policies/6-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/4-describe-microsoft-priva.yml",
+      "redirect_url": "/training/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/security-copilot-describe-agents/3a-explore-threat-intelligence-briefing-agent.yml",
+      "redirect_url": "/training/modules/security-copilot-describe-agents/3-describe-threat-intelligence-briefing-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/security-copilot-describe-agents/4a-explore-conditional-access-optimization-agent.yml",
+      "redirect_url": "/training/modules/security-copilot-describe-agents/4-describe-conditional-access-optimization-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-regulatory-compliance/4-address-privacy-requirements-microsoft-priva.yml",
+      "redirect_url": "https://github.com/microsoft/purview/blob/main/eDiscovery/SRR%20Playbook/srr-playbook.md",
       "redirect_document_id": false
     }
     ]

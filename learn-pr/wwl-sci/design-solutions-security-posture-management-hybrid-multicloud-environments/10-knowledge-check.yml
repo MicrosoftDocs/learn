@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for the module on the topic: design solutions for security posture management in hybrid and multicloud environments."
-  ms.date: 02/05/2026
+  ms.date: 03/12/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -27,62 +27,62 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-    - content: "What is the purpose of Cloud Security Posture Management (CSPM)?"
+    - content: "An organization operates workloads across Azure, AWS, and GCP. Which capability requires Defender CSPM rather than Foundational CSPM?"
       choices:
-        - content: "To provide a comprehensive vulnerability assessment of all resources in the cloud environment."
+        - content: "Continuous assessment of resources against the Microsoft cloud security benchmark (MCSB)."
           isCorrect: false
-          explanation: "CSPM provides more than just a vulnerability assessment, it offers continuous compliance monitoring and security configuration management."
-        - content: "To facilitate secure communication between hybrid and multicloud environments."
+          explanation: "Foundational CSPM includes continuous assessment against MCSB at no cost across Azure, AWS, and GCP."
+        - content: "Generating a secure score that quantifies overall security posture."
           isCorrect: false
-          explanation: "This statement is referring to another concept called hybrid and multicloud connectivity."
-        - content: "To enable users to prevent and respond to threats, automate compliance requirements, and assess the security posture of their cloud environment."
+          explanation: "Secure score is available in both Foundational and Defender CSPM tiers."
+        - content: "Identifying exploitable attack paths across multicloud environments using the cloud security graph."
           isCorrect: true
-          explanation: "CSPM helps users ensure their cloud environment is secure by assessing, identifying, preventing and responding to threats or vulnerabilities that could compromise it. Additionally, it automates compliance tasks and monitors security configuration across all cloud resources or services."
-        - content: "To provide endpoint protection against advanced attacks."
+          explanation: "Attack path analysis uses the cloud security graph to correlate assets, identities, and permissions across Azure, AWS, and GCP. This capability is only available with Defender CSPM."
+        - content: "Generating security recommendations with remediation guidance for noncompliant resources."
           isCorrect: false
-          explanation: "Endpoint protection refers to a different approach to security which involves securing individual endpoints like devices or servers."
-          
-    - content: "What is Cloud Workload Protection in Microsoft Defender for Cloud?"
+          explanation: "Security recommendations are available in Foundational CSPM. Defender CSPM adds advanced capabilities like attack path analysis, cloud security explorer, and agentless scanning."
+
+    - content: "A security architect is designing workload protection for an environment that includes Azure VMs and AWS EC2 instances. What is required to enable Defender for Servers on the AWS instances?"
       choices:
-        - content: "A feature that provides external attack surface management."
+        - content: "Install the Azure Monitor Agent directly on each EC2 instance using AWS Systems Manager."
           isCorrect: false
-          explanation: "Workload protection is focused on providing security measures to specific workloads or applications running in the cloud, and doesn't pertain to external attack surface management."
-        - content: "A feature that automates vulnerability assessments and compliance checks."
-          isCorrect: false
-          explanation: "This statement is describing CSPM functionality, not workload protection."
-        - content: "A feature that surfaces workload-specific recommendations that lead you to the right security controls to protect your workloads."
+          explanation: "While agents can be deployed, the prerequisite for Defender for Cloud protection on non-Azure resources is Azure Arc, which projects the resources into Azure Resource Manager."
+        - content: "Connect the AWS account through Defender for Cloud and onboard EC2 instances through Azure Arc."
           isCorrect: true
-          explanation: "Workload protection is designed specifically for addressing threats targeting cloud workloads such as applications or containers."
-        - content: "A feature that provides security controls for DevOps teams and their CI/CD pipelines."
+          explanation: "Azure Arc is a prerequisite for Defender for Cloud protection on non-Azure resources. AWS connectors can autoprovision Azure Arc agents on EC2 instances, enabling Defender for Servers protection."
+        - content: "Deploy a Defender for Cloud sensor directly into the AWS VPC where the instances run."
           isCorrect: false
-          explanation: "This statement is referring to another feature called Azure Defender for Kubernetes which provides native security controls for CI/CD pipelines."
-          
-    - content: "What is Azure Arc used for?"
+          explanation: "Defender for Cloud doesn't deploy sensors into AWS VPCs. It uses cloud connectors and Azure Arc to extend protection to AWS resources."
+        - content: "Enable AWS Security Hub and configure it to forward findings to Defender for Cloud."
+          isCorrect: false
+          explanation: "AWS Security Hub isn't used to enable workload protection. Defender for Cloud uses its own connectors and Azure Arc to provide runtime threat detection on non-Azure machines."
+
+    - content: "Which statement accurately describes how the Microsoft cloud security benchmark (MCSB) supports multicloud security assessment?"
       choices:
-        - content: "To automatically scale compute resources in cloud environments."
+        - content: "MCSB evaluates all cloud providers using Azure-specific configuration checks translated to equivalent settings."
           isCorrect: false
-          explanation: "This statement describes auto scaling which is related but distinct from Azure Arc."
-        - content: "To monitor network traffic and detect anomalies in cloud environments."
-          isCorrect: false
-          explanation: "This statement describes a network monitoring tool, rather than Azure Arc which is more focused on enabling hybrid cloud management."
-        - content: "To extend Azure management capabilities and tools to manage resources running outside of Azure datacenters."
+          explanation: "MCSB doesn't translate Azure checks to other clouds. It provides platform-specific implementation guidance tailored to each cloud provider's native services."
+        - content: "MCSB provides platform-specific implementation guidance for each control across Azure, AWS, and GCP, reported under unified control domains."
           isCorrect: true
-          explanation: "Azure Arc enables enterprises to manage their infrastructure centrally from Azure portal, including servers, Kubernetes clusters, and applications running in distributed environments."
-        - content: "To perform virtual machine backups and disaster recovery for cloud environments."
+          explanation: "MCSB includes platform-specific guidance for each control. For example, the Network Security control evaluates Azure NSGs, AWS Security Groups, and GCP firewall rules using platform-appropriate criteria but reports findings under the same MCSB control."
+        - content: "MCSB requires each cloud provider to implement identical security configurations for consistent assessment."
           isCorrect: false
-          explanation: "This statement generally refers to another feature within Azure called Azure Site Recovery which focuses on ensuring business continuity and disaster recovery."
-          
-    - content: "What is external attack surface management?"
+          explanation: "Each cloud has different services and configuration models. MCSB adapts its guidance per platform while maintaining consistent control objectives."
+        - content: "MCSB applies only to Azure resources, and separate benchmarks are used for AWS and GCP assessments."
+          isCorrect: false
+          explanation: "MCSB is a multicloud benchmark that includes implementation guidance for Azure, AWS, and GCP within a single framework."
+
+    - content: "A security team wants to discover internet-facing assets that might be unknown to the organization, including infrastructure from a recent acquisition. Which tool addresses this requirement?"
       choices:
-        - content: "A feature that secures data stored on public cloud services."
+        - content: "Microsoft Security Exposure Management, which maps attack paths across the digital estate."
           isCorrect: false
-          explanation: "This statement references data security, while external attack surface management is more about the visibility and governance of all external assets and resources exposed to potential attackers."
-        - content: "A feature that provides endpoint threat detection and response for cloud-connected devices."
+          explanation: "Security Exposure Management analyzes attack paths and security posture for known assets. It doesn't perform external discovery of unknown internet-facing infrastructure."
+        - content: "Microsoft Defender for Cloud with Defender CSPM, which provides agentless scanning across cloud environments."
           isCorrect: false
-          explanation: "This statement is describing a feature called Microsoft Defender for Endpoint which focuses more specifically on protecting endpoints linked to cloud resources or services."
-        - content: "An umbrella term used to describe tactics used by hackers to gain access to an organization's assets through external-facing entry points such as web applications, APIs, and remote offices."
-          isCorrect: false
-          explanation: "This is a definition of the external attack surface itself, while external attack surface management refers to the proactive identification and governance of potential risks to those entry points."
-        - content: "A feature that correlates information from various sources to provide a single view of the organization's security posture related to external attack surfaces."
+          explanation: "Defender for Cloud assesses resources within connected cloud subscriptions and accounts. It doesn't discover unknown external-facing assets outside those environments."
+        - content: "Microsoft Defender External Attack Surface Management (Defender EASM), which recursively discovers internet-facing assets from seed infrastructure."
           isCorrect: true
-          explanation: "External attack surface management allows organizations to have a unified view of their external assets so they can detect risks at the earliest possible time. The feature correlates information from various sources, including intelligence feeds, third-party tools, and internal organizational information to provide a complete view on external attack surface risk levels."
+          explanation: "Defender EASM starts with known seeds (domains, IP blocks) and recursively maps connections to discover assets the organization might not know it owns, including infrastructure from acquisitions."
+        - content: "Azure Arc, which projects external resources into Azure Resource Manager for security assessment."
+          isCorrect: false
+          explanation: "Azure Arc requires intentional onboarding of known resources. It doesn't discover unknown internet-facing assets."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-manage-resources-cloud-shell-cli.exercise-tag-query-clean-up
+title: Exercise - Tag, query, and clean up resources
+metadata:
+  title: Exercise - Tag, query, and clean up resources
+  description: "Exercise - Tag, query, and clean up resources"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-tag-query-clean-up.md)]

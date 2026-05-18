@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.design-multi-agent-solution
+title: "Design a multi-agent solution"
+metadata:
+  title: "Design a Multi-Agent Solution"
+  description: "Learn how to design multi-agent solutions using Microsoft 365 Copilot, Copilot Studio, and Microsoft Foundry, including orchestration patterns and connected agent architectures."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-design-multi-agent-solution.md)]

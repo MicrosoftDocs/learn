@@ -86,7 +86,7 @@ Later in this module, we cover how the cloud evolved to make computing a public 
 ### References
 
 1. _Real Time Statistics Project (2015). [Internet Live Stats](https://www.internetlivestats.com/)_
-2. _IBM (2017). [What is Big Data?](https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/)_
+2. _IBM (2017). [What is Big Data?](https://www.ibm.com/think/topics/big-data)_
 4. _Google Inc. (2015). [How Search Works](https://www.google.com/insidesearch/howsearchworks/thestory/)_
 5. _Hilbert, Martin and Lopez, Priscila (2011). [The world's technological capacity to store, communicate, and compute information](https://science.sciencemag.org/content/332/6025/60)_
 6. _Hamilton, James R and others (2007). [On Designing and Deploying Internet-Scale Services](https://highscalability.com/paper-on-designing-and-deploying-internet-scale-services/)_
@@ -95,7 +95,7 @@ Later in this module, we cover how the cloud evolved to make computing a public 
 ***
 
 [^1]: <https://www.internetlivestats.com/> "*Real Time Statistics Project* (2015)"
-[^2]: <https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/> "IBM (2017). *What is Big Data?*"
+[^2]: <https://www.ibm.com/think/topics/big-data> "IBM (2017). *What is Big Data?*"
 [^4]: <https://www.google.com/insidesearch/howsearchworks/thestory/> "Google Inc. (2015). *How Search Works*"
 [^5]: <https://science.sciencemag.org/content/332/6025/60> "Hilbert, Martin and Lopez, Priscila (2011). *The world's technological capacity to store, communicate, and compute information*" 
 [^6]: <https://highscalability.com/paper-on-designing-and-deploying-internet-scale-services/> "Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*" 

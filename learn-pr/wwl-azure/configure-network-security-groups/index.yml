@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Network Security Groups
   description: "Learn how to implement network security groups, and ensure network security group rules are correctly applied."
-  ms.date: 02/20/2026
+  ms.date: 03/23/2026
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

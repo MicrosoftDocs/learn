@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-overall-ai-strategy-business-solutions.implement-ai-adoption-process-cloud-adoption-framework-azure
+title: "Implement AI adoption process with Azure"
+metadata:
+  title: "Implement AI Adoption Process With Azure"
+  description: "Learn to implement AI adoption using Azure's Cloud Adoption Framework. Align AI strategy, governance, and operations for enterprise success."
+  ms.date: 02/13/2026
+  author: Randall-Knapp
+  ms.author: taeldin
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-implement-ai-adoption-process-cloud-adoption-framework-azure.md)]

@@ -22,11 +22,11 @@ Azure Migrate helps with performance-based sizing calculations (virtual machine 
 
 Azure Migrate also supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time.
 
-### Things to know about Server Assessment
+### Things to know about Discovery and Assessment
 
-Azure Migrate includes several assessment tools to help you prepare for your migration. To perform an agentless discovery, you use the Azure Migrate Server Assessment tool.
+Azure Migrate includes several assessment tools to help you prepare for your migration. To perform an agentless discovery, you use the Azure Migrate Discovery and assessment tool.
 
-Server Assessment guides you through downloading a lightweight collector appliance. The appliance carries out the discovery of systems in your environment. The tool uses data collected by the appliance to identify data about virtual machine cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
+The Azure Migrate Discovery and assessment tool guides you through downloading a lightweight collector appliance. The appliance carries out the discovery of systems in your environment. The tool uses data collected by the appliance to identify data about virtual machine cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 
 After data collection is complete, the data is pushed to your Azure Migrate project. In the Azure portal, you can view the discovered systems and download a report. The full process for assessing a server can be visualized as follows:
 
@@ -35,6 +35,6 @@ After data collection is complete, the data is pushed to your Azure Migrate proj
 1. Create an assessment.
 1. Review the assessment.
 
-:::image type="content" source="../media/migrate-discovery.png" alt-text="Flowchart that shows how to do server assessment with the Azure Migrate Server Assessment tool." border="false":::
+:::image type="content" source="../media/migrate-discovery.png" alt-text="Flowchart that shows how to do discovery and assessment with the Azure Migrate Discovery and Assessment tool." border="false":::
 
 We examine Azure Migrate in more detail in the next unit.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-cost-guardrails.exercise-assign-test-policy
+title: Exercise - Assign and test an Azure Policy
+metadata:
+  title: Exercise - Assign and test an Azure Policy
+  description: "Exercise - Assign and test an Azure Policy"
+  ms.date: 03/16/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-assign-test-policy.md)]

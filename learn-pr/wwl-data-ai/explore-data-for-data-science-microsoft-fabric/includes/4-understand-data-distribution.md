@@ -107,7 +107,7 @@ plt.show()
 
 :::image type="content" border="false" source="../media/4-uniform-distribution.png" alt-text="Screenshot of a histogram for a uniform distributed feature.":::
 
-In this code, the `np.random.uniform` function generates 1000 random numbers that are uniformly distributed between -1 and 1. The `bins=30` argument specifies that the data should be divided into 30 bins, and `density=True` ensures that the histogram is normalized to form a probability density. This means the area under the histogram integrates to 1, which is useful when comparing distributions.
+In this code, the `np.random.uniform` function generates 1000 random numbers that are uniformly distributed between -1 and 1. The `bins=20` argument specifies that the data should be divided into 20 bins, and `density=True` ensures that the histogram is normalized to form a probability density. This means the area under the histogram integrates to 1, which is useful when comparing distributions.
 
 >[!Note]
 > You'll likely get different results if you run the code multiple times. The basic idea of randomness is that it's unpredictable, and each time you sample, you can get different results.

@@ -1,4 +1,4 @@
-[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps) is another type of serverless compute solution that offers a cloud-based platform for creating and running automated _workflows_. Workflows are step-by-step processes that integrate your applications, data, services, and systems. With Azure Logic Apps, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. 
+[Azure Logic Apps](/azure/logic-apps/logic-apps-overview) is another type of serverless compute solution that offers a cloud-based platform for creating and running automated _workflows_. Workflows are step-by-step processes that integrate your applications, data, services, and systems. With Azure Logic Apps, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. 
 
 ### Things to know about Azure Logic Apps
 
@@ -8,7 +8,7 @@ Let's review some characteristics of Azure Logic Apps and scenarios for using th
 
 - Azure Logic Apps is a component of [Azure Integration Services](https://azure.microsoft.com/product-categories/integration/). Logic Apps simplifies the way you connect legacy, modern, and cutting-edge systems across cloud, on-premises, and hybrid environments.
 
-- With Logic Apps, you can schedule and send email notifications by using Office 365 when a specific event happens, such as a new file uploaded.
+- With Logic Apps, you can schedule and send email notifications by using Microsoft 365 when a specific event happens, such as a new file uploaded.
 
 - Use Logic Apps to route and process customer orders across on-premises systems and cloud services.
 
@@ -45,6 +45,8 @@ There are several points to consider when deciding whether Azure Logic Apps is t
 
 - **Consider other options**. Know when _not_ to use Azure Logic Apps. There are cases where Logic Apps might not be the best option. Logic Apps isn't an ideal solution for real-time requirements, complex business rules, or if you're using nonstandard services.
 
+- **Consider Logic Apps hosting models**. **Consumption plan**: multitenant, pay-per-execution, and one workflow per resource. The consumption plan is best for occasional workloads. **Standard plan**: single-tenant, virtual network integration, multiple workflows per app, and dedicated compute resources. The standard plan is best for enterprise integration or compliance-sensitive workloads.
+  
 #### Business application
 
 This flowchart shows a detailed decision tree for when to use Azure Logic Apps.

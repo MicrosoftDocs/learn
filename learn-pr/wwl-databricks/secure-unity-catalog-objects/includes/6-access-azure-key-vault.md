@@ -25,7 +25,12 @@ For production workloads, Azure Key Vault-backed scopes offer several advantages
 
 ## Creating an Azure Key Vault-backed secret scope
 
-Before you create an Azure Key Vault-backed scope, you need an Azure Key Vault instance configured correctly. Your Key Vault must use the **Vault access policy** permission model rather than Azure role-based access control. Under the Key Vault's networking settings, you must allow trusted Microsoft services to bypass the firewall, even if you restrict access to specific virtual networks.
+Before you create an Azure Key Vault-backed scope, you need an Azure Key Vault instance configured correctly. Your Key Vault must use the **Vault access policy** permission model rather than Azure role-based access control — Azure Databricks does not support the RBAC permission model for Key Vault-backed secret scopes.
+
+> [!IMPORTANT]
+> As of 2026, Azure Key Vault API version 2026-02-01 and later create new vaults with **Azure RBAC** as the default permission model. If you create a Key Vault through the Azure portal, Azure CLI, or SDK without explicitly setting the permission model, it defaults to RBAC and Databricks secret scope creation fails with a 403 authorization error. Before creating the Databricks scope, verify your Key Vault uses the Vault access policy model: in the Azure portal, go to your Key Vault → **Settings** → **Access configuration** → **Permission model** and confirm it is set to **Vault access policy**. You can change this setting before creating the secret scope.
+
+Under the Key Vault's networking settings, you must allow trusted Microsoft services to bypass the firewall, even if you restrict access to specific virtual networks.
 
 You create the secret scope using a special URL in your Azure Databricks workspace. Navigate to `https://<databricks-instance>#secrets/createScope`, replacing `<databricks-instance>` with your workspace URL. This URL is case-sensitive—the `S` in `createScope` must be uppercase.
 

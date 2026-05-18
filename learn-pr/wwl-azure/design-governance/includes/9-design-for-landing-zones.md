@@ -12,13 +12,15 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
    :::image type="content" source="../media/landing-zones.png" alt-text="Diagram of a management group and subscription organization that uses landing zones." border="false":::
 
+- An Azure landing zone consists of a platform landing zone and one or more application landing zones. The platform landing zone hosts shared services (identity, connectivity, and management subscriptions) managed by a central team. Application landing zones host individual workloads or applications across development, test, and production environments.
+
 - Azure policies are associated with landing zones to ensure continued compliance with the organization platform.
 
 - Landing zones are pre-provisioned through code. 
 
 - A landing zone can be scoped to support application migrations and development to scale across the organization's full IT portfolio.
 
-- The Azure landing zone accelerator can be deployed into the same Microsoft Entra tenant for an existing Azure architecture. The accelerator is an Azure-portal-based deployment.
+- The Azure landing zone IaC accelerator is the recommended way to deploy and manage landing zones. It uses Bicep or Terraform via Azure Verified Modules (AVMs) to automate deployment. A portal-based accelerator is also available for organizations without IaC expertise.
 
 ### Things to consider when using Azure landing zones
 
@@ -28,7 +30,7 @@ You're ready to finalize your governance strategy for Tailwind Traders. Consider
  
 - **Consider creating landing zones through code**. Implement landing zones that are pre-provisioned through code. As your situation changes, you should expect to refactor the code. Use an iterative approach that maximizes learning opportunities and minimizes time to business success. You can minimize refactoring by having a central IT team to review both short term and long-term scenarios.  
 
-- **Consider using the [Azure landing zone accelerator](/azure/cloud-adoption-framework/ready/landing-zone/#azure-landing-zone-accelerator)**. Use the accelerator to provide a full implementation of the conceptual architecture, along with opinionated configurations for key components like management groups and policies. 
+- **Consider using the [Azure landing zone accelerator](/azure/cloud-adoption-framework/ready/landing-zone/implementation-options)**. Use the accelerator to provide a full implementation of the conceptual architecture, along with opinionated configurations for key components like management groups and policies. 
 
 - **Consider focusing on your applications**. Focus on application-centric migrations and development rather than pure infrastructure lift-and-shift migrations, such as moving virtual machines. 
 

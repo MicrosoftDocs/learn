@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-configuration-prebuilt-agents-apps.process-knowledge-sources-dynamics-365-finance-supply-chain-management
+title: "Recommend process knowledge sources for in-app help in Dynamics 365"
+metadata:
+  title: "Recommend Process Knowledge Sources for In-App Help in Dynamics 365"
+  description: "Learn how to recommend and manage process knowledge sources for in-app help in Dynamics 365 Finance and Supply Chain apps. Improve user productivity."
+  ms.date: 02/13/2026
+  author: msdavidram
+  ms.author: taeldin
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-process-knowledge-sources-dynamics-365-finance-supply-chain-management.md)]

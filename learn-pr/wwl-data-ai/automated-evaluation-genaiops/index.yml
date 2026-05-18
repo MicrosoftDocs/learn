@@ -32,7 +32,7 @@ roles:
   - developer
 products: 
   - azure
-  - ai-services
+  - foundry-tools
   - github
 subjects: 
   - cloud-computing

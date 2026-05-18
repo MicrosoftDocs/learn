@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "kind=leftouter"
       isCorrect: false
-      explanation: "Incorrect.  Leftouter Contains a row for every row on the left and right, even if it has no match."
+      explanation: "Incorrect. Leftouter contains a row for every row on the left side, even if it has no match on the right. Unmatched right-side cells contain nulls."
     - content: "kind=inner"
       isCorrect: true
-      explanation: "Correct.  Inner contains a row in the output for every combination of matching rows from left and right."
+      explanation: "Correct. Inner contains a row in the output for every combination of matching rows from left and right."
     - content: "kind=fullouter"
       isCorrect: false
-      explanation: "Incorrect.  Fullouter Contains a row for every row on the left and right, even if it has no match."
+      explanation: "Incorrect. Fullouter contains a row for every row on both the left and right sides, even if there's no match. Unmatched cells on either side contain nulls."
   - content: "When you're using the join operator, how do you specify fields from each table?"
     choices:
     - content: "`$1.columname` and `$2.columnname`"
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. The $left and $right preceding the field name specifies the table."
     - content: "`$left.columname` and `$right.columnname`"
       isCorrect: true
-      explanation: "Correct.  The $left and $right preceding the field name specifies the table."
+      explanation: "Correct. The $left and $right preceding the field name specifies the table."
     - content: "`$inner.columname` and `$outer.columnname`"
       isCorrect: false
       explanation: "Incorrect. The $left and $right preceding the field name specifies the table."
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "No."
       isCorrect: true
-      explanation: "Correct.  The results contain all columns from both tables."
+      explanation: "Correct. The results contain all columns from both tables."
     - content: "Yes."
       isCorrect: false
-      explanation: "Incorrect.  The result set will contain columns from both tables, even if the columns don't match."
+      explanation: "Incorrect. The result set contains columns from both tables, even if the columns don't match."
     - content: "Only when the project operator is used."
       isCorrect: false
-      explanation: "Incorrect.  The result set will contain columns from both tables, even if the columns don't match."
+      explanation: "Incorrect. The result set contains columns from both tables, even if the columns don't match."

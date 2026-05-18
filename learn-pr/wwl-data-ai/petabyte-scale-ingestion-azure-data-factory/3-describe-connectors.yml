@@ -4,12 +4,12 @@ title: Describe data factory connectors
 metadata:
   title: Describe data factory connectors
   description: "Describe data factory connectors"
-  ms.date: 01/05/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-describe-connectors.md)]
+  [!include[](includes/3-describe-connectors.md)]

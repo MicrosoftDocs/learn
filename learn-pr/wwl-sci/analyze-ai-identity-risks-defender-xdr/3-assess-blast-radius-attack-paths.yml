@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-ai-identity-risks-defender-xdr.assess-blast-radius-attack-paths
+metadata:
+  title: Assess blast radius and attack paths
+  description: Assess the blast radius of AI agent identities by examining permissions, knowledge sources, and blueprint configuration. Then analyze attack paths that expose resources to risk if an agent identity is compromised.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Assess blast radius and attack paths
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-assess-blast-radius-attack-paths.md)]

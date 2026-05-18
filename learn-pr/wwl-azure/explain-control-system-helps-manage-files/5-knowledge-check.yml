@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What type of system focuses on the ability to rapidly role back code in the event of a mistake?"
+  - content: "What type of system focuses on the ability to rapidly rollback code in the event of a mistake?"
     choices:
     - content: "Version control system"
       isCorrect: true

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-cloud-ai-services.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you accomplished by enabling the Defender for AI Services plan and monitoring AI security posture with the Data and AI security dashboard.
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

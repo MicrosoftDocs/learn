@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-costs-benefits-ai-powered-business-solution.knowledge-check
+title: "Module assessment"
+metadata:
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 02/13/2026
+  author: pabloMS
+  ms.author: taeldin
+  ms.topic: unit
+  module_assessment: false
+durationInMinutes: 3
+content: "Choose the best response for each of the following questions."
+quiz:
+  questions:
+  - content: "Which of the following is a financial ROI indicator in AI-powered business solutions?"
+    choices:
+    - content: "Customer satisfaction score"
+      isCorrect: false
+      explanation: "Incorrect. Customer satisfaction is considered a strategic or intangible (soft value) indicator, not a direct financial metric."
+    - content: "Minutes saved per workflow"
+      isCorrect: false
+      explanation: "Incorrect. Minutes saved per workflow is a time-based metric, not a direct financial indicator."
+    - content: "Money saved per successful agent run"
+      isCorrect: true
+      explanation: "Correct. Financial ROI measures quantifiable, monetary outcomes such as 'money saved per successful agent run,' which is a direct financial metric."
+    - content: "Employee sentiment rating"
+      isCorrect: false
+      explanation: "Incorrect. Employee sentiment is considered a strategic or intangible (soft value) indicator, not a direct financial metric."
+  - content: "Which element must be included to produce a complete ROI analysis for an AI solution?"
+    choices:
+    - content: "Only financial savings"
+      isCorrect: false
+      explanation: "Incorrect. A complete ROI analysis requires more than just financial savings; it must also include Total Cost of Ownership (TCO)."
+    - content: "Only labor-hours saved"
+      isCorrect: false
+      explanation: "Incorrect. Labor-hours saved is a measurable benefit but doesn't account for the full ROI analysis, which includes TCO."
+    - content: "Both measurable benefits and TCO"
+      isCorrect: true
+      explanation: "Correct. A complete ROI analysis requires both quantifiable benefits (such as time and cost savings) and a full accounting of Total Cost of Ownership (TCO), ensuring the analysis is balanced and enterprise-ready."
+    - content: "Only the number of automated tasks"
+      isCorrect: false
+      explanation: "Incorrect. The number of automated tasks alone doesn't provide a complete ROI analysis; TCO and measurable benefits are also required."
+  - content: "Which scenario most strongly indicates a Build approach for AI components?"
+    choices:
+    - content: "Standard HR onboarding workflow"
+      isCorrect: false
+      explanation: "Incorrect. Standard workflows are typically well-supported by commercial tools and do not require a Build approach."
+    - content: "Document summarization for internal policies"
+      isCorrect: false
+      explanation: "Incorrect. Document summarization is a common task that can often be handled by off-the-shelf solutions."
+    - content: "Highly specialized decision engine that differentiates the organization competitively"
+      isCorrect: true
+      explanation: "Correct. The Build approach is best when the AI solution defines competitive advantage, requires deep customization, or supports unique business processes not covered by commercial tools."
+    - content: "Simple customer email triage"
+      isCorrect: false
+      explanation: "Incorrect. Simple tasks like customer email triage are typically well-supported by commercial tools and do not require a Build approach."
+  - content: "Which Total Cost of Ownership (TCO) category includes costs for data cleansing, labeling, and monitoring data drift in AI-powered business solutions?"
+    choices:
+    - content: "Infrastructure Costs"
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure Costs typically include hardware, cloud services, and other foundational resources, not data preparation."
+    - content: "Development and Integration Costs"
+      isCorrect: false
+      explanation: "Incorrect. Development and Integration Costs focus on creating and integrating AI solutions, not data preparation."
+    - content: "Data Quality and Preparation Costs"
+      isCorrect: true
+      explanation: "Correct. Data Quality and Preparation Costs encompass data collection, cleaning, labeling, structuring, chunking, grounding, indexing, and monitoring."
+    - content: "Ongoing Operational Costs"
+      isCorrect: false
+      explanation: "Incorrect. Ongoing Operational Costs include maintenance and monitoring but do not specifically cover data preparation tasks."

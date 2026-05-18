@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-keys-secrets-key-vault.manage-keys
+metadata:
+  title: Manage cryptographic keys in Azure Key Vault
+  description: Create and manage cryptographic keys in Azure Key Vault, including HSM-backed keys, Bring your Own Key (BYOK) import, key versioning, and autorotation policy configuration.
+  ms.date: 04/13/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Manage cryptographic keys in Azure Key Vault
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-manage-keys.md)]

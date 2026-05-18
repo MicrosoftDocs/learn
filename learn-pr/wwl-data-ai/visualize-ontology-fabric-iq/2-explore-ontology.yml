@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.visualize-ontology-fabric-iq.explore-ontology
+title: Explore the ontology
+metadata:
+  title: Explore the Ontology
+  description: Learn how to open the entity type overview, view entity instances, and inspect individual entity instance details and relationships in Microsoft Fabric IQ.
+  ms.date: 04/13/2026
+  author: theresa-i
+  ms.author: theresai
+  ms.topic: unit
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-ontology.md)]

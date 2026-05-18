@@ -4,10 +4,10 @@ Windows 11 Pro continues to raise the bar on performance, reliability, and fit-a
 
 Windows 11 Pro devices help businesses improve in four key areas that enable them to be more efficient and successful:
 
-- **Productivity:** With AI-driven, efficient workflows enabled by intelligent PCs and Microsoft 365 Copilot1, businesses can increase their day-to-day efficiency by 50%.2
-- **Performance:** Windows 11 Pro devices help to accelerate business success with powerful performance, long battery life, and PCs that work for every user type. Copilot+ PCs offer business users up to 22 hours of battery life3, supporting work both in the office and remotely.
-- **Security:** Windows 11 Pro is built to keep your business safe against evolving threats with device to cloud protection and the most comprehensive Windows security suite ever. Windows 11 Pro devices have reported a 62% drop4 in security incidents when compared to previous generations—helping to keep data safeguarded.
-- **IT agility:** To adapt to rapidly changing business needs, Windows 11 Pro devices empower IT decision makers to scale device management and control to innovate with flexible and intelligent solutions. With Copilot+ PCs, device management time drops up to 30%5, reducing deployment time, and maximizing business efficiency.
+- **Productivity:** With AI-driven, efficient workflows enabled by intelligent PCs and Microsoft 365 Copilot, businesses can increase their day-to-day efficiency by 50%.
+- **Performance:** Windows 11 Pro devices help to accelerate business success with powerful performance, long battery life, and PCs that work for every user type. Copilot+ PCs offer business users up to 22 hours of battery life, supporting work both in the office and remotely.
+- **Security:** Windows 11 Pro is built to keep your business safe against evolving threats with device to cloud protection and the most comprehensive Windows security suite ever. Windows 11 Pro devices have reported a 62% drop in security incidents when compared to previous generations—helping to keep data safeguarded.
+- **IT agility:** To adapt to rapidly changing business needs, Windows 11 Pro devices empower IT decision makers to scale device management and control to innovate with flexible and intelligent solutions. With Copilot+ PCs, device management time drops up to 30%, reducing deployment time, and maximizing business efficiency.
 
 Operational efficiency is becoming a top priority for today's businesses and for good reasons. AI is reshaping industries, and the pace of business is faster than it has ever been. Business users are feeling the tension between introducing new innovations while weighing against potential security risks.
 

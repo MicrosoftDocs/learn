@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-azure-bastion.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Azure Bastion SKU selection, deployment architecture, configuration, and connection methods.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer needs to deploy Azure Bastion to support native RDP client connections and IP-based connections to VMs, but doesn't require session recording. Which SKU meets these requirements at the lowest cost?"
+    choices:
+    - content: "Developer"
+      isCorrect: false
+      explanation: "The Developer SKU provides basic browser-based RDP/SSH access for a single user without extra charges for host units, but it doesn't support native client connections, IP-based connections, or host scaling. It's a low-cost option for individual development use, not for organizational deployment with native client requirements."
+    - content: "Basic"
+      isCorrect: false
+      explanation: "The Basic SKU supports browser-based RDP/SSH connections and includes two host units, but it doesn't support native client connections or IP-based connections to VMs. Upgrading to Standard is required for those features."
+    - content: "Standard"
+      isCorrect: true
+      explanation: "The Standard SKU supports configurable host unit scaling, native client connections (including RDP client tunneling), IP-based connections, and shareable links—meeting all the stated requirements. Session recording is a Premium SKU feature, so Standard is the correct and lowest-cost choice here."
+  - content: "What is the minimum subnet size required for the AzureBastionSubnet in an Azure virtual network?"
+    choices:
+    - content: "/28"
+      isCorrect: false
+      explanation: "A /28 subnet provides only 16 IP addresses, which is too small for Azure Bastion. The minimum required size is /26, which provides 64 IP addresses to support the Bastion host instances and allow for scaling."
+    - content: "/27"
+      isCorrect: false
+      explanation: "While a /27 subnet provides 32 IP addresses, it doesn't meet the minimum requirement. Azure Bastion requires at least a /26 subnet to accommodate current and future host instances."
+    - content: "/26"
+      isCorrect: true
+      explanation: "Azure Bastion requires a dedicated subnet named AzureBastionSubnet with a minimum size of /26. The subnet provides 64 IP addresses, which is necessary to support the Bastion host instances and allow for scaling to meet demand."
+  - content: "An organization wants to provide a contractor with browser-based RDP access to a specific development VM, but the contractor doesn't have an Azure portal account. Which Azure Bastion feature enables this without granting Azure access?"
+    choices:
+    - content: "Native client tunneling"
+      isCorrect: false
+      explanation: "Native client tunneling allows users with Azure portal access to use their local RDP or SSH clients through the Bastion connection. It still requires the user to authenticate to Azure."
+    - content: "Shareable link"
+      isCorrect: true
+      explanation: "Shareable links (available in Standard and Premium SKUs) allow a Bastion session to be shared with users who don't have Azure portal access. The generated URL provides browser-based RDP or SSH access to the specific VM without requiring Azure account credentials."
+    - content: "Kerberos authentication"
+      isCorrect: false
+      explanation: "Kerberos authentication allows domain-joined machines to use Kerberos credentials through Bastion. It doesn't provide access to users without Azure portal accounts."

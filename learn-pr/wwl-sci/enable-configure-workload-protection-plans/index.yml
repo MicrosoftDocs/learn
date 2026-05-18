@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.enable-configure-workload-protection-plans
+metadata:
+  title: Enable and Configure Workload Protection Plans in Microsoft Defender for Cloud
+  description: "Learn to enable and configure Cloud Workload Protection Platform (CWPP) plans in Microsoft Defender for Cloud, including Defender for Servers, Storage, Databases, APIs, and AI Services — and how to deploy protection at scale and verify coverage."
+  ms.date: 03/31/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: defender-for-cloud
+  ai-usage: ai-assisted
+title: Enable and configure workload protection plans in Microsoft Defender for Cloud
+summary: Enable Cloud Workload Protection Platform (CWPP) plans in Microsoft Defender for Cloud to defend servers, storage, databases, and AI workloads against active threats. You identify the right plan for each workload type — including Defender for AI Services and Defender for APIs — configure plan-specific settings such as the Defender for Servers P1/P2 tier distinction and Defender for Storage malware scanning, and deploy protection at subscription or management group scope. The module concludes by verifying coverage using the Coverage workbook.
+abstract: |
+  After completing this module, you will be able to:
+    - Identify the CWPP plans available in Defender for Cloud and explain what workloads each plan protects — including Defender for AI Services and Defender for APIs
+    - Enable workload protection plans at the subscription level using Environment Settings in the Azure portal
+    - Configure Defender for Servers (Plan 1 vs. Plan 2) and Defender for Storage sub-settings for your protection requirements
+    - Deploy protection plans at scale using management groups and Azure Policy, and verify plan coverage using the Coverage workbook
+prerequisites: |
+  - Familiarity with Microsoft Defender for Cloud at a basic level
+  - Understanding of Azure resource types and Azure role-based access control (RBAC)
+  - Knowledge of cloud security concepts including threat protection and security posture
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - defender-for-cloud
+  - azure
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.enable-configure-workload-protection-plans.introduction
+- learn.wwl.enable-configure-workload-protection-plans.explore-workload-protection-plan-catalog
+- learn.wwl.enable-configure-workload-protection-plans.enable-plans-environment-settings
+- learn.wwl.enable-configure-workload-protection-plans.configure-storage-database-plans
+- learn.wwl.enable-configure-workload-protection-plans.deploy-plans-scale-verify-coverage
+- learn.wwl.enable-configure-workload-protection-plans.knowledge-check
+- learn.wwl.enable-configure-workload-protection-plans.summary
+badge:
+  uid: learn.wwl.enable-configure-workload-protection-plans.badge

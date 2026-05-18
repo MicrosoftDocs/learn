@@ -5,7 +5,7 @@ title: How Docker containers work
 metadata:
   title: How Docker containers work
   description: In this unit, we explore how Docker containers work and how to run containers. We also discuss the life cycle of a Docker container.
-  ms.date: 10/09/2024
+  ms.date: 03/20/2026
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: unit
@@ -28,7 +28,7 @@ quiz:
     - content: "host"
       isCorrect: false
       explanation: "The Host network configuration allows the container to use the host's IP address and ports. The publish flag isn't used with this network."
- 
+
   - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution; for example, the resolve.conf file on Linux?"
     choices:
     - content: "A volume"
@@ -37,4 +37,3 @@ quiz:
     - content: "Bind mount"
       isCorrect: true
       explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, the host is expected to update bind mount data. The resolve.conf contents is expected to change by the host and used by both the container and host."
-

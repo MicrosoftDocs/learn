@@ -1,11 +1,9 @@
-In this module we will learn how to perform different computer vision tasks using [TensorFlow](https://www.tensorflow.org/) and Keras. We will start with an introduction to a small Dense Neural Network (DNNs), then build on that knowledge to dive into Convolutional Neural Networks (CNNs). Lastly, we will look at how we can use pre-trained models in transfer learning to improve our results with less data.
+In this module, we learn how to perform different computer vision tasks using [TensorFlow](https://www.tensorflow.org/) and Keras. We start with an introduction to dense neural networks, then build on that knowledge to dive into Convolutional Neural Networks (CNNs). Lastly, we look at how we can use pretrained models in transfer learning to improve our results with less data.
 
-## Learning objectives
-- Introduction to how to build computer vision machine learning models
-- Intro to training with Dense Neural Networks (DNNs)
-- Intro to Convolutional Neural Networks (CNNs)
+In this module you will:
 
-## Prerequisites
-- Knowledge of Python
-- Basic knowledge about how to use Jupyter Notebooks
-- Basic understand of machine learning
+- Build computer vision machine learning models
+- Train image classifiers with dense neural networks
+- Apply Convolutional Neural Networks (CNNs) to extract spatial patterns
+- Use transfer learning with pretrained models to classify custom images
+

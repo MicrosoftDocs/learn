@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-regulatory-compliance.navigate-compliance-dashboard-investigate-gaps
+metadata:
+  title: Navigate the regulatory compliance dashboard and investigate control gaps
+  description: Learn to use the regulatory compliance dashboard in the Defender portal to identify and investigate failing controls, review automated and manual assessments, and remediate findings.
+  ms.date: 03/26/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Navigate the regulatory compliance dashboard and investigate control gaps
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-navigate-compliance-dashboard-investigate-gaps.md)]

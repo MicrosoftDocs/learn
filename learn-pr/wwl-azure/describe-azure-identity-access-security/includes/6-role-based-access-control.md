@@ -1,4 +1,4 @@
-When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? The principle of least privilege says you should only grant access up to the level needed to complete a task. If you only need read access to a storage blob, then you should only be granted read access to that storage blob. Write access to that blob shouldn’t be granted, nor should read access to other storage blobs. It’s a good security practice to follow.
+When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? The principle of least privilege says you should only grant access up to the level needed to complete a task. If you only need read access to a storage blob, then you should only be granted read access to that storage blob — not write access, and not access to other blobs. It's a good security practice to follow.
 
 However, managing that level of permissions for an entire team would become tedious. Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created or new people join the team, Azure enables you to control access through Azure role-based access control (Azure RBAC).
 
@@ -12,7 +12,7 @@ Role-based access control is applied to a scope, which is a resource or set of r
 
 The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource group might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
 
-:::image type="content" source="../media/role-based-access-scope-4b12a8f3-7f40fc55.png" alt-text="A diagram showing scopes and roles. Role and scope combinations map to a specific kind of user or account, such as an observer or an admin.":::
+:::image type="content" source="../media/rbac-option-scope-hierarchy.png" alt-text="A diagram showing Azure RBAC scope hierarchy from broadest to narrowest: Management Group, Subscription, Resource Group, and Resource. Each scope level shows example roles like Owner, Contributor, and Reader, with color-coded arrows indicating that permissions inherit downward from parent to child scopes.":::
 
 
 Scopes include:
@@ -36,3 +36,4 @@ Azure RBAC is enforced on any action that's initiated against an Azure resource 
 You typically access Resource Manager from the Azure portal, Azure Cloud Shell, Azure PowerShell, and the Azure CLI. Azure RBAC doesn't enforce access permissions at the application or data level. Application security must be handled by your application.
 
 Azure RBAC uses an allow model. When you're assigned a role, Azure RBAC allows you to perform actions within the scope of that role. If one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you have both read and write permissions on that resource group.
+

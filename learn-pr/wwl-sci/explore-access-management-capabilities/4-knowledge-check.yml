@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.knowledge-check
 title: Module assessment
 metadata:
-  hidden_question_numbers: ["2928D6EB_10","2928D6EB_14","2928D6EB_18","2928D6EB_79","2928D6EB_104"]
-  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 08/02/2024
+  ms.date: 03/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: unit
@@ -64,5 +62,17 @@ quiz:
       explanation: "That's incorrect. VPN is a method of network access, not a feature of Microsoft Entra Private Access that allows for granular control of access policies."
     - content: "Global Secure Access app"
       isCorrect: true
-      explanation: "That's correct. The Global Secure Access app, also referred to as Per-app Access, provides a more granular approach. The admin can create multiple enterprise apps and for each of these aps, assign users and groups and assign specific conditional access policies."
+      explanation: "That's correct. The Global Secure Access app, also referred to as Per-app Access, provides a more granular approach. The admin can create multiple enterprise apps and for each of these apps, assign users, and groups and assign specific Conditional Access policies."
+  
+  - content: "An organization wants to ensure that only phishing-resistant authentication methods are used to access a highly sensitive application. Which Conditional Access grant control should they use?"
+    choices:
+    - content: "Require authentication strength"
+      isCorrect: true
+      explanation: "Correct. Authentication strength is a Conditional Access grant control that specifies which combinations of authentication methods can be used. The built-in phishing-resistant MFA strength restricts access to methods like Windows Hello for Business, FIDO2 security keys, and certificate-based authentication."
+    - content: "Require multifactor authentication"
+      isCorrect: false
+      explanation: "Incorrect. The required multifactor authentication control accepts any MFA method, including less secure methods like Short Message Service (SMS). Authentication strength provides the granular control needed to restrict to phishing-resistant methods only."
+    - content: "Session controls"
+      isCorrect: false
+      explanation: "Incorrect. Session controls limit the user experience within cloud applications, such as blocking downloads. They don't control which authentication methods are used."
            

@@ -26,8 +26,8 @@ roles:
 - ai-engineer
 - student
 products:
-- ai-services
-- azure-ai-foundry
+- foundry-tools
+- microsoft-foundry
 subjects:
 - artificial-intelligence
 - natural-language-processing

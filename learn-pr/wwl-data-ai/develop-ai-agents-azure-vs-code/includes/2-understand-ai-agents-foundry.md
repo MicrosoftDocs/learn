@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ed03608c-f526-418a-b833-7483c200d590]
+
+> [!NOTE]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 An AI agent is a software service that uses generative AI to understand and perform tasks on behalf of users or other programs. Unlike traditional applications that follow predetermined rules, AI agents can operate independently by understanding context, making decisions, and taking actions to achieve specific goals. These agents combine advanced AI models with specialized tools to create intelligent automation that adapts to various scenarios.
 
 The evolution of generative AI enables agents to behave intelligently on our behalf, transforming how we integrate AI into business processes and applications. Understanding what AI agents are and how to use them is crucial for automating tasks, making informed decisions, and enhancing user experiences.
@@ -112,3 +123,5 @@ These features provide a streamlined and secure way to build and deploy AI agent
 
 > [!NOTE]
 > You can explore more about agents in general with the [Fundamentals of AI agents](/training/modules/ai-agent-fundamentals) module.
+
+::: zone-end

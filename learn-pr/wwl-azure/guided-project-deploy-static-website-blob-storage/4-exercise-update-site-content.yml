@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-deploy-static-website-blob-storage.exercise-update-site-content
+title: Exercise - Update the site content
+metadata:
+  title: Exercise - Update the site content
+  description: "Exercise - Update the site content"
+  ms.date: 03/25/2026
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-update-site-content.md)]

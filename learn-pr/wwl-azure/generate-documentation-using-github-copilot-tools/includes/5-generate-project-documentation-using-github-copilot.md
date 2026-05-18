@@ -55,7 +55,7 @@ Use the following process to generate project documentation using the Ask agent 
 
 1. Enter a prompt that asks for suggested project documentation, listing the required sections that you identified in the first step.
 
-    For example: "`@workspace /explain I need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License.`"
+    For example: "`#codebase /explain I need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License.`"
 
 1. Review the suggested project documentation, and refine the results using new prompts if necessary.
 
@@ -99,7 +99,7 @@ Use the following process to generate project documentation, such as README.md f
 
 1. Add context to the chat session.
 
-    Chat participants aren't available in agent mode, so you can't specify `@workspace` as part of your prompt. However, you can add context to the chat session using `#codebase` and by adding workspace files and folders to the chat context. External files can be opened in Visual Studio Code and then added to the chat context using the **Attach Context** button.
+    Chat participants aren't available in agent mode, so you can't specify `@terminal` as part of your prompt. However, you can add context to the chat session using `#codebase` and by adding workspace files and folders to the chat context. External files can be opened in Visual Studio Code and then added to the chat context using the **Attach Context** button.
 
 1. Enter a prompt to create the intended project documentation.
 

@@ -1,45 +1,75 @@
 
-Microsoft Sentinel integrates with Microsoft Security Copilot.
+Microsoft Sentinel integrates with Microsoft Security Copilot to bring AI-assisted capabilities directly into security operations workflows. Rather than replacing analyst judgment, the integration surfaces relevant context faster—so your team can investigate and respond to threats more efficiently.
 
-For businesses that are onboarded to Microsoft Security Copilot, the integration is enabled through plugins accessed through the Copilot portal. Sentinel provides two plugins to integrate with Security Copilot:
+## How the integration works
 
-- Microsoft Sentinel (Preview)
-- Natural language to KQL for Microsoft Sentinel (Preview)
+The integration between Microsoft Sentinel and Security Copilot works across two experiences:
 
-:::image type="content" source="../media/sentinel-plugins.png" alt-text="Screen capture showing the Microsoft Sentinel plugins.":::
+- **The embedded experience in the Microsoft Defender portal**: Because Microsoft Sentinel incidents are unified with Microsoft Defender XDR incidents in the Defender portal, Security Copilot capabilities are available for any incident—including those that originate in Microsoft Sentinel. Analysts can summarize incidents, analyze scripts, assess suspicious files, and generate reports without leaving the portal.
+- **The standalone Security Copilot experience**: Security Copilot connects to Microsoft Sentinel as a data source through two plugins—**Microsoft Sentinel** and **Natural language to KQL for Microsoft Sentinel**. These plugins allow analysts to ask questions about incidents and data in a conversational, chat-based interface.
 
-***Microsoft Sentinel (Preview) plugin***. To utilize the Sentinel plugin, the user would need to be assigned a role permission that grants access to Copilot and a Sentinel specific role like Microsoft Sentinel Reader to access incidents in the workspace.
+:::image type="content" source="../media/copilot-incident-summary.png" lightbox="../media/copilot-incident-summary.png" alt-text="Screen capture of the Security Copilot incident summary for a Microsoft Sentinel incident, shown in the Microsoft Defender portal.":::
 
-The Sentinel plugin requires the user to configure the Sentinel workspace, the subscription name, and the resource group name.
+## Security Copilot capabilities in the Defender portal
 
-:::image type="content" source="../media/sentinel-plugin-configuration.png" lightbox="../media/sentinel-plugin-configuration.png" alt-text="Screen capture showing the Microsoft Sentinel plugin configuration parameters.":::
+When Microsoft Sentinel is onboarded to the Defender portal, the following Security Copilot capabilities are available for Microsoft Sentinel incidents and data.
 
-The Sentinel plugin capabilities are focused on incidents and workspaces. The Microsoft Sentinel capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
+### Incident summarization
 
-:::image type="content" source="../media/sentinel-prompts.png" alt-text="Screen capture showing the Microsoft Sentinel capabilities.":::
+When you open a Microsoft Sentinel incident, Security Copilot automatically generates a natural-language summary describing what happened, which entities are involved, and what the likely impact is. The summary includes the attack timeline, affected assets, indicators of compromise (IoCs), and threat actor names when available. This helps analysts quickly understand the scope of a threat without manually reviewing every alert and log entry.
 
-Additionally, Copilot includes a promptbook for Microsoft Sentinel incident investigation. This promptbook includes prompts for getting a report about a specific incident, along with related alerts, reputation scores, users, and devices.
+### Guided responses
 
-The Microsoft Sentinel incident investigation promptbook is not only a great starting point for your investigation, it's also a starting point for creating effective prompts.
+Security Copilot provides AI-generated response recommendations specific to each incident. Recommendations are organized into four categories: **triage** (classify the incident), **containment** (stop the attack from spreading), **investigation** (further analysis steps), and **remediation** (specific actions for affected entities). These aren't automated actions—they're suggestions that help analysts decide how to proceed, especially useful for less experienced team members.
 
-:::image type="content" source="../media/sentinel-promptbook.png" alt-text="Screen capture showing the Microsoft Sentinel incident investigation promptbook.":::
+### Script and command-line analysis
 
-***Natural language to Microsoft Sentinel KQL (Preview) plugin***. The natural language to Sentinel KQL (NL2KQLSentinel) plugin converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. This saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst’s needs. The Natural language to KQL for Microsoft Sentinel (Preview) plugin generates and runs KQL hunting queries using Microsoft Sentinel data. This capability is available in the standalone experience and the advanced hunting section of the Microsoft Defender portal.
+Attackers often use obfuscated scripts to avoid detection. Security Copilot can analyze potentially malicious scripts, such as PowerShell command lines, and provide a plain-language explanation of what the script does, whether it's malicious, and which MITRE ATT&CK techniques it uses. This eliminates the need for external reverse-engineering tools and lets analysts of varying experience levels assess threats quickly.
 
-### Microsoft Sentinel with Copilot in Defender
+### File analysis
 
-The integration of Microsoft Sentinel with Copilot can be experienced through both the standalone experience and the embedded experience using the Defender portal.  The embedded experience that is accessed through the Defender portal uses the unified security operations platform with your Microsoft Sentinel data.
+Security Copilot assesses suspicious files by generating a summary that includes detection information, related file certificates, API calls, and strings found in the file. This analysis is generated automatically when an analyst opens a file page, accelerating investigation of potentially malicious files associated with Microsoft Sentinel incidents.
 
-***Incidents*** - Microsoft Sentinel incidents are now unified with Defender XDR incidents, so you can use Copilot in Microsoft Defender for incident summary, guided responses and incident reports of Sentinel incidents.
+### Identity and device summarization
 
-# [Unified incidents](#tab/unified-incidents)
+During an investigation, analysts often need to assess whether a user account is compromised or whether a device is at risk. Security Copilot generates:
 
-:::image type="content" source="../media/unified-incidents.png" lightbox="../media/unified-incidents.png" alt-text="Screen capture of unified incidents list in the Defender portal.":::
+- **Identity summaries** that include the user's role, recent role changes, sign-in behaviors, authentication methods, and risk flags from Microsoft Entra ID.
+- **Device summaries** that include the device's security posture, protection status, unusual activity, vulnerable software, and relevant Microsoft Intune information.
 
-# [Sentinel incident summary](#tab/sentinel-incident-summary)
+These summaries let analysts quickly evaluate the entities involved in a Microsoft Sentinel incident without navigating to multiple consoles.
 
-:::image type="content" source="../media/copilot-incident-summary.png" lightbox="../media/copilot-incident-summary.png" alt-text="Screen capture of the Copilot incident summary for a Sentinel incident, shown in the Defender portal.":::
+### Incident report generation
 
-***Advanced hunting*** - With the Natural language to KQL for Microsoft Sentinel (Preview) plugin enabled, you can generate and run KQL hunting queries using, Microsoft Sentinel data, in the advanced hunting section of the Microsoft Defender portal.
+After an investigation, Security Copilot can compile all incident information—including the summary, response actions taken, timestamps, analysts involved, and classification reasoning—into a structured report. Analysts can export the report to PDF or post it to the incident activity log, saving significant documentation time.
 
-:::image type="content" source="../media/advanced-hunting.png" lightbox="../media/advanced-hunting.png" alt-text="Screen capture of Copilot hunting queries in the Defender portal.":::
+### Natural language to KQL for threat hunting
+
+Threat hunting in Microsoft Sentinel typically requires writing queries in Kusto Query Language (KQL), which has a learning curve. The **natural language to KQL** capability lets analysts describe what they're looking for in plain language, and Security Copilot generates a ready-to-run KQL query against Microsoft Sentinel data.
+
+For example, an analyst can type "Show me sign-in attempts from unfamiliar locations in the last 48 hours" and receive a KQL query they can run immediately or refine. This capability is available in both the standalone experience and the advanced hunting section of the Defender portal.
+
+:::image type="content" source="../media/advanced-hunting.png" lightbox="../media/advanced-hunting.png" alt-text="Screen capture of Security Copilot generating a KQL hunting query in the advanced hunting section of the Microsoft Defender portal.":::
+
+### Threat intelligence
+
+Security Copilot consolidates and summarizes threat intelligence to help security teams understand which threats are most relevant to their environment. Analysts can ask Copilot to summarize threats based on their organization's exposure levels or find threat actors that might target their industry.
+
+### AI agents
+
+In addition to the analyst-driven capabilities described above, Security Copilot includes autonomous AI agents that operate in the background. For Microsoft Sentinel, the most relevant is the **Dynamic Threat Detection Agent**—an always-on service that uses AI to correlate alerts, events, anomalies, and threat intelligence across Microsoft Defender and Microsoft Sentinel environments. When it identifies a threat that traditional rule-based detection missed, it generates a dynamic alert with full context, natural language explanations, mapped MITRE ATT&CK techniques, and recommended remediation steps.
+
+## The standalone experience
+
+In the standalone Security Copilot portal, the Microsoft Sentinel plugin lets analysts interact with their security data conversationally. Analysts can ask questions like "What are the top five high priority Microsoft Sentinel incidents?" or "Tell me about the entities associated with that incident." The **Microsoft Sentinel incident investigation promptbook** assembles a sequence of prompts automatically—retrieving the incident report, related alerts, reputation scores, and details about users and devices involved—giving analysts a structured starting point.
+
+:::image type="content" source="../media/sentinel-promptbook.png" alt-text="Screen capture showing the Microsoft Sentinel incident investigation promptbook in the standalone Security Copilot experience.":::
+
+## Why this integration matters
+
+Security operations teams deal with high volumes of alerts, complex investigations, and time pressure. The integration of Microsoft Sentinel with Security Copilot helps address those challenges by:
+
+- **Reducing investigation time**: AI-generated summaries, script analysis, and file analysis help analysts understand incidents in minutes rather than hours.
+- **Making hunting more accessible**: Natural language queries remove a technical barrier, enabling analysts who aren't KQL experts to participate in proactive threat detection.
+- **Streamlining documentation**: Automated incident reports save time on post-investigation paperwork.
+- **Keeping humans in control**: Security Copilot provides suggestions and surfaces information—analysts make the final decisions.

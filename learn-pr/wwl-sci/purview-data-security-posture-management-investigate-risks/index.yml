@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.purview-data-security-posture-management-investigate-risks
+metadata:
+  title: Investigate Data Security Risks with Microsoft Purview Data Security Posture Management
+  description: "Investigate data security risks by using Purview Data Security Posture Management (DSPM) to analyze activity signals, identify risky user and AI agent behavior, and use Security Copilot to prioritize the most critical data security events."
+  ms.date: 04/30/2026
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+title: Investigate data security risks with Microsoft Purview Data Security Posture Management
+summary: Investigate data security risks by using DSPM to analyze activity signals, identify risky user and AI agent behavior, and use Security Copilot to prioritize critical data security events.
+abstract: |
+  After completing this module, you'll be able to:
+  - Analyze sensitive data activity across activity explorer, audit logs, and DSPM reports
+  - Investigate data security events using Security Copilot in DSPM
+  - Investigate risky AI agent behavior through AI observability
+prerequisites: |
+  - Familiarity with the Microsoft Purview portal and its navigation
+  - Working knowledge of sensitivity labels, data loss prevention (DLP) policies, and Insider Risk Management concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- m365
+- microsoft-purview
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-data-security-posture-management-investigate-risks.introduction
+- learn.wwl.purview-data-security-posture-management-investigate-risks.analyze-sensitive-data-activity
+- learn.wwl.purview-data-security-posture-management-investigate-risks.investigate-with-security-copilot
+- learn.wwl.purview-data-security-posture-management-investigate-risks.investigate-risky-ai-agent-behavior
+- learn.wwl.purview-data-security-posture-management-investigate-risks.knowledge-check
+- learn.wwl.purview-data-security-posture-management-investigate-risks.summary
+badge:
+  uid: learn.wwl.purview-data-security-posture-management-investigate-risks.badge

@@ -14,7 +14,7 @@ There are two WAF policy modes: Detection and Prevention. By default, the WAF po
 
 :::image type="content" source="../media/waf-policy-modes-4a04568d.png" alt-text="Screenshot of the WAF policy modes.":::
 
-The Web Application Firewall works with the Application Gateway, Azure Front Door Service, and the Azure CDN Service.
+The Web Application Firewall works with the Application Gateway and Azure Front Door.
 
 ## Microsoft managed rule sets, rule groups, and rules
 

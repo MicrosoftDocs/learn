@@ -234,4 +234,4 @@ This empirical approach validates that your indexing strategy achieves the expec
 
 - [Indexing metrics in Azure Cosmos DB](/azure/cosmos-db/nosql/query-metrics)
 - [Optimize request cost in Azure Cosmos DB](/azure/cosmos-db/optimize-cost-reads-writes)
-- [Best practices for Azure Cosmos DB indexing](/azure/cosmos-db/nosql/best-practice-query#indexing-policy)
+- [Best practices for Azure Cosmos DB indexing](/azure/cosmos-db/index-policy)

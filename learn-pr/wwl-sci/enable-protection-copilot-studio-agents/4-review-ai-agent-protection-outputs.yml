@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-protection-copilot-studio-agents.review-ai-agent-protection-outputs
+metadata:
+  title: Review AI agent protection outputs
+  description: Verify that Copilot Studio agent protection is working by reviewing the agent inventory in Microsoft Defender XDR. Then, confirm that alerts flow to XDR incidents, and validate that Advanced Hunting tables contain agent activity data.
+  ms.date: 05/03/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Review AI agent protection outputs
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-review-ai-agent-protection-outputs.md)]

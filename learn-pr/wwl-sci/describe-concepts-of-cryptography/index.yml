@@ -3,13 +3,13 @@ uid: learn.wwl.describe-concepts-of-cryptography
 metadata:
   title: Describe Concepts of Cryptography
   description: "Describe concepts of cryptography."
-  ms.date: 07/30/2025
+  ms.date: 04/24/2026
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: module
   ms.service: security
 title: Describe concepts of cryptography
-summary: Cryptography is foundational to protecting the confidentiality, integrity, and availability of information; and defending against cyberattacks. Throughout this module, you'll learn about the different elements of cryptography and their application in cybsecurity.
+summary: Cryptography is foundational to protecting the confidentiality, integrity, and availability of information; and defending against cyberattacks. Throughout this module, you'll learn about the different elements of cryptography and their application in cybersecurity.
 abstract: |
   After completing this module, you'll be able to:
   - Describe some of the basic concepts of cryptography.

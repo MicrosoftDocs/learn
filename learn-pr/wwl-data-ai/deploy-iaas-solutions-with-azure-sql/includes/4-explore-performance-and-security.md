@@ -22,9 +22,9 @@ Furthermore, each disk can be one of several types:
 |------------|-------------|-------------|-------------|-------------|-------------|
 | **Disk type** | SSD | SSD | SSD | SSD | HDD |
 | **Best for** | IO-intensive workloads | Performance-sensitive workloads | Performance-sensitive workloads | Lightweight workloads | Backups, non-critical workloads |
-| **Max disk size** | 65,536 GiB | 64,000 GiB | 32,767 GiB | 32,767 GiB | 32,767 GiB |
-| **Max throughput** | 10,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
-| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000 |
+| **Max disk size** | 65,536 GiB | 65,536 GiB | 32,767 GiB | 32,767 GiB | 32,767 GiB |
+| **Max throughput** | 10,000 MB/s | 2,000 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
+| **Max IOPS** | 400,000 | 80,000 | 20,000 | 6,000 | 2,000 |
 
 The best practices for SQL Server on Azure recommend using Premium Disks pooled for increased IOPs and storage capacity. Data files should be stored in their own pool with read-caching on the Azure disks.
 
@@ -76,7 +76,8 @@ CREATE PARTITION SCHEME PartitionByMonthSch
     AS PARTITION PartitionByMonth
     TO (FILEGROUP1, FILEGROUP2, FILEGROUP3, FILEGROUP4,
         FILEGROUP5, FILEGROUP6, FILEGROUP7, FILEGROUP8,
-        FILEGROUP9, FILEGROUP10, FILEGROUP11, FILEGROUP12);
+        FILEGROUP9, FILEGROUP10, FILEGROUP11, FILEGROUP12,
+        FILEGROUP13);
 
 -- Creates a partitioned table called Order that applies PartitionByMonthSch partition scheme to partition the OrderDate column  
 CREATE TABLE Order ([Id] int PRIMARY KEY, OrderDate datetime2)  

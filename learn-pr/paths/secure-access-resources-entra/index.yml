@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-access-resources-entra
+metadata:
+  title: Secure Access to Resources by Using Microsoft Entra
+  description: Learn to design and implement strong authentication controls, apply Just-in-Time privileged access strategies, and extend identity-based security to AI-powered applications using Microsoft Entra.
+  ms.date: 05/17/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+title: Secure access to resources by using Microsoft Entra
+summary: |
+  Controlling who can access what, and under what conditions, is one of the most consequential responsibilities in cloud security. A misconfigured authentication policy, an overprivileged account left unreviewed, or a poorly secured AI agent can each become the foothold an attacker needs to move laterally through your environment.
+
+  In this learning path, you build the skills to close those gaps. You start by designing and deploying secure authentication in Microsoft Entra ID, including configuring multifactor authentication. Next, you configure Conditional Access policies, passwordless options, and self-service password reset for hybrid environments. You then move into privileged access, where you implement Just-in-Time access for Microsoft Entra roles and Azure resources using Privileged Identity Management (PIM). Just-in-Time access eliminates standing permissions that create unnecessary risk. Finally, you apply these identity and access principles to a modern challenge: securing AI-powered applications and declarative agents that use API plugins to act on behalf of users.
+
+  By the end of this learning path, you have a practical, defense-in-depth approach to access security, spanning credential hardening, privileged access governance, and identity-aware AI application design.
+prerequisites: |
+  - Familiarity with Microsoft Entra ID concepts, including users, groups, and directory roles
+  - Understanding of Azure role-based access control (RBAC), including role assignments and the Azure scope hierarchy (management group, subscription, resource group, resource)
+  - Basic experience navigating the Azure portal and the Microsoft Entra admin center
+  - Familiarity with Zero Trust security principles, including least privilege and assume breach
+  - Awareness of Microsoft Entra ID P2 or Microsoft Entra ID Governance licensing requirements
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- entra
+- entra-id
+subjects:
+- identity-access
+- security
+modules:
+- learn.wwl.manage-implement-authentication-methods
+- learn.wwl.implement-configure-privileged-identity-management
+- learn.copilot-declarative-agent-api-plugin-auth
+trophy:
+  uid: learn.wwl.secure-access-resources-entra.trophy

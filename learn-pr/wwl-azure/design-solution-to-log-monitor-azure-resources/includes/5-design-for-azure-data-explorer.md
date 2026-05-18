@@ -20,7 +20,7 @@ The following diagram shows a hybrid end-to-end monitoring solution integrated w
 
 - **Consider native capabilities in Azure Monitor**. Implement the native capabilities of Azure Monitor to monitor Tailwind Traders IT assets, run and monitor tasks from the dashboard, and set up alerts to ingest logs from VMs and services.
 
-- **Consider features of Microsoft Sentinel**. Combine features provided by Microsoft Sentinel and Azure Monitor with Azure Data Explorer to build a flexible and cost-optimized end-to-end monitoring solution for Tailwind Traders.
+- **Consider features of Microsoft Sentinel**. Microsoft Sentinel is Azure’s SIEM and SOAR platform. It collects security logs from Azure, on-premises, and multi-cloud sources into Log Analytics, providing unified monitoring and security. Use Microsoft Sentinel, Azure Monitor, and Azure Data Explorer together for a comprehensive and cost-effective solution. 
 
 - **Consider advantages of Azure Data Explorer**. Take advantage of the flexibility and control offered by Azure Data Explorer for all aspects and types of logs in the following scenarios:
 

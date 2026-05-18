@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.entra-ai-configure-workload-identities.secure-access-dependent-services
+title: Secure access to dependent services
+metadata:
+  title: Secure Access to Dependent Services
+  description: "Apply least-privilege role assignments to Azure Key Vault, AI services, storage, and downstream APIs for AI workloads."
+  ms.date: 04/27/2026
+  author: riswinto
+  ms.author: riswinto
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/secure-access-dependent-services.md)]

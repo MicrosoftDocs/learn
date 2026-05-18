@@ -1,5 +1,5 @@
 
-[Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness. The most important point to understand is that Traffic Manager works at the DNS level which is at the Application layer (Layer-7).
+[Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions. Traffic Manager also provides your public endpoints with high availability and quick responsiveness. The most important point to understand is that Traffic Manager works at the DNS level, which is at the Application layer (Layer-7).
 
 This video reviews Traffic Manager features and how the service works. 
 
@@ -51,3 +51,6 @@ Use the [**Performance** routing method](/azure/traffic-manager/traffic-manager-
 Use the [**Geographic** routing method](/azure/traffic-manager/traffic-manager-routing-methods#geographic-traffic-routing-method) to direct users to specific endpoints based on where their DNS queries originate from geographically. Good choice for regional compliance requirements. 
 
 :::image type="content" source="../media/routing-method-geographic-c04c1141.png" alt-text="Diagram that shows the 'Geographic' routing method.":::
+
+> [!Note]
+> The are two other routing methods: Multivalue and Subnet. Use the [**Multivalue** routing method](/azure/traffic-manager/traffic-manager-routing-methods#multivalue-traffic-routing-method) when you want to return multiple healthy endpoints in a single DNS query response. Use the [**Subnet** routing method](/azure/traffic-manager/traffic-manager-routing-methods#subnet-traffic-routing-method) when you want to map user IP address ranges to specific endpoints. 

@@ -55,7 +55,7 @@ In serverless computing, a cloud service automatically scales compute resources 
 
 ### Other database services
 
-Caching databases are popular ways to optimize performance for cloud-native applications and often use **Redis**. [**Azure Cache for Redis**](https://azure.microsoft.com/products/cache/) is an implementation of Redis in the Azure cloud. The equivalent service in AWS is **Amazon MemoryDB for Redis**. Another non-Redis cache service is **ElastiCache**.
+Caching databases are popular ways to optimize performance for cloud-native applications and often use **Redis**. [**Azure Managed Redis**](https://azure.microsoft.com/products/managed-redis/) is an implementation of Redis in the Azure cloud. The equivalent service in AWS is **Amazon MemoryDB for Redis**. Another non-Redis cache service is **ElastiCache**.
 
 There are various big data, analytics, and ETL/ELT services in Azure including: **Azure Databricks**, **Azure HDInsight**, and **Azure Data Factory**. Similar functionality is available in AWS with **Amazon Elastic MapReduce (EMR)**. **Amazon Athena** is also used for querying data in S3 using SQL.
 

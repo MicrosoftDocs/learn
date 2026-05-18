@@ -24,7 +24,7 @@ roles:
   - business-user
   - business-owner
 products:
-  - ai-services
+  - foundry-tools
   - m365-apps
   - ms-copilot
 subjects:

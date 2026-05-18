@@ -28,7 +28,7 @@ For more information about the topics discussed in this module, see:
 [/azure/cosmos-db/monitor-cosmos-db-reference]: /azure/cosmos-db/monitor-cosmos-db-reference
 [/azure/cosmos-db/monitor-request-unit-usage]: /azure/cosmos-db/monitor-request-unit-usage
 [/azure/cosmos-db/rate-limiting-requests]: /azure/cosmos-db/rate-limiting-requests
-[/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]: /azure/cosmos-db/sql/troubleshoot-request-rate-too-large
+[/azure/cosmos-db/troubleshoot-request-rate-too-large]: /azure/cosmos-db/troubleshoot-request-rate-too-large
 [/azure/cosmos-db/cosmosdb-monitor-logs-basic-queries]: /azure/cosmos-db/cosmosdb-monitor-logs-basic-queries
 [/azure/cosmos-db/cosmosdb-monitor-resource-logs]: /azure/cosmos-db/cosmosdb-monitor-resource-logs
 [/azure/azure-monitor/essentials/diagnostic-settings]: /azure/azure-monitor/essentials/diagnostic-settings

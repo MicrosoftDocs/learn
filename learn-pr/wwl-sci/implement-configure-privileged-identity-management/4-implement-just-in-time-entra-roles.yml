@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-configure-privileged-identity-management.implement-just-in-time-entra-roles
+title: Implement just-in-time access for Microsoft Entra roles
+metadata:
+  title: Implement Just-in-Time Access for Microsoft Entra Roles
+  description: "Learn how to configure just-in-time access for Microsoft Entra roles using Privileged Identity Management."
+  ms.date: 03/17/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-implement-just-in-time-entra-roles.md)]

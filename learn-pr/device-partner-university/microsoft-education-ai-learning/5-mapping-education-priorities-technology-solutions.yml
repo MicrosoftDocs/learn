@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.microsoft-education-ai-learning.mapping-education-priorities-technology-solutions
+title: Mapping education priorities to technology solutions
+metadata:
+  title: Mapping Education Priorities To Technology Solutions
+  description: This content is part of the "Microsoft Education technology and AI learning concepts" module.
+  ms.date: 04/02/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-mapping-education-priorities-technology-solutions.md)]
+

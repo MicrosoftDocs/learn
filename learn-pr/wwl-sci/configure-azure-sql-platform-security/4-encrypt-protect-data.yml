@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-sql-platform-security.encrypt-protect-data
+title: Encrypt and protect data in transit and at rest
+metadata:
+  title: Encrypt and Protect Data in Transit and at Rest
+  description: "Enable transparent data encryption with service-managed and customer-managed keys in Azure Key Vault, enforce transport encryption, and evaluate Always Encrypted for column-level protection."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-encrypt-protect-data.md)]

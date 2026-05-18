@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fabric-transform-data-tsql.implement-dimensional-tables
+title: Implement dimensional tables
+metadata:
+  title: Implement Dimensional Tables
+  description: "Implement fact and dimension tables in a Microsoft Fabric warehouse using T-SQL."
+  ms.date: 04/02/2026
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-implement-dimensional-tables.md)]

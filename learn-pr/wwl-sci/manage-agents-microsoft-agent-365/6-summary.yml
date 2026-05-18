@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-agents-microsoft-agent-365.summary
+metadata:
+  title: Summary
+  description: Summary of managing AI agents using Microsoft Agent 365, covering the management interface, agent registration, access controls, and activity monitoring.
+  ms.date: 04/21/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

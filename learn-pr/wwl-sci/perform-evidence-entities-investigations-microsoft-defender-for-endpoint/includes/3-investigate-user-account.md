@@ -8,9 +8,9 @@ You can find user account information in the following views:
 
 - Device details page
 
-A clickable user account link is available in these views. Selecting the link will take you to the user account details page where more details about the user account are displayed.
+A clickable user account link is available in these views. Selecting the link takes you to the user account details page where more details about the user account are displayed.
 
-When you investigate a user account entity, you'll see:
+When you investigate a user account entity, you see:
 
 - User account details and logged on devices, role, log-on type, and other details
 
@@ -22,7 +22,9 @@ When you investigate a user account entity, you'll see:
 
 ### User details
 
-The User details pane on left provides information about the user, such as related open incidents, active alerts, SAM name, SID, number of devices the user is logged on to, when the user was first and last seen, role, and log-on types. Depending on the integration features you've enabled, you'll see other details. 
+The User details pane on left provides information about the user, such as related open incidents, active alerts, SAM name, SID, number of devices the user is logged on to, when the user was first and last seen, role, and log-on types. Depending on the integration features you've enabled, you see other details.
+
+When Microsoft Defender for Identity or Microsoft Entra ID integration is configured in the Defender portal settings, the User details pane also surfaces identity enrichment data, including sign-in risk level, multifactor authentication (MFA) registration status, last sign-in details, and Active Directory group memberships. This other context is valuable when investigating potential account compromise or lateral movement.
 
 ### Overview
 
@@ -30,9 +32,9 @@ The Overview tab shows the incident details and a list of the devices the user h
 
 ### Alerts
 
-The Alerts tab provides a list of alerts that are associated with the user account. This list is a filtered view of the Alert queue and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the device associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned the alert.
+The Alerts tab provides a list of alerts that are associated with the user account. This list is a filtered view of the Alert queue and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the device associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned to the alert.
 
 ### Observed in organization
 
-The Observed in organization tab allows you to specify a date range to see a list of devices where this user was observed logged on to, the most frequent and least frequent logged on user account for each of these devices, and total observed users on each device.  Selecting an item on the Observed in organization table will expand the item, revealing more details about the device. Directly selecting a link within an item will send you to the corresponding page.
+The Observed in organization tab allows you to specify a date range to see a list of devices where this user was observed logged on to, the most frequent, and least frequent logged on user account for each of these devices, and total observed users on each device. Selecting an item on the Observed in organization table expands the item, revealing more details about the device. Directly selecting a link within an item sends you to the corresponding page.
 

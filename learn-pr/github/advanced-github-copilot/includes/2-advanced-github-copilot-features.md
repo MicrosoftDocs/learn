@@ -28,5 +28,3 @@ Using specific slash commands to create a question is a good way to get better r
 ## Agents
 
 Visual Studio Code has a feature called *agents* that allows you to interact with GitHub Copilot. These agents allow you to ask questions using a specific context. For example the `@terminal` agent helps you chat with GitHub Copilot to interact with the terminal.
-
-Another agent is `@workspace`, which is aware of your entire workspace. It allows you to ask questions about the entire project. To use an agent, prefix your question with the agent, for example: `@workspace how can I package this project?`.

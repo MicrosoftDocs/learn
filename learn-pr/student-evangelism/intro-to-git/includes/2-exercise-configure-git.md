@@ -2,7 +2,7 @@ This exercise checks your knowledge of Git fundamentals, including version contr
 
 ## Getting started
 
-When you select the **Copy Exercise** button below, you'll be navigated to a public GitHub template repository that prompts you to complete a series of small challenges.
+When you select the **Start the exercise on GitHub** button below, you'll be taken to a public GitHub template repository. Select the **Copy Exercise** button on that page to copy the exercise to your own account, then complete a series of small challenges.
 
 When you've finished the exercise in GitHub, return here for:
 

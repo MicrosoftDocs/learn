@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-application-interface-security-management.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of API Management security, including authentication policies, rate limiting, mutual TLS, virtual network integration, and AI Gateway token-based rate limiting.
+  ms.date: 04/15/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer configures the `validate-azure-ad-token` policy on a partner-facing API in API Management. What must every caller provide for the policy to allow the request?"
+    choices:
+    - content: "A valid Microsoft Entra ID access token in the Authorization header, issued for the allowed application ID and tenant"
+      isCorrect: true
+      explanation: "Correct. The `validate-azure-ad-token` policy validates that the caller presents a valid Microsoft Entra access token in the Authorization header. The policy checks the token's issuer against the configured tenant ID, validates the signature using Microsoft Entra published signing keys, and verifies that the calling application's client ID is in the allowed list."
+    - content: "A subscription key in the Ocp-Apim-Subscription-Key header"
+      isCorrect: false
+      explanation: "Incorrect. Subscription keys are enforced by API Management's subscription key validation, not by the `validate-azure-ad-token` policy. Subscription keys are a separate access control layer. The `validate-azure-ad-token` policy specifically requires a valid Microsoft Entra access token."
+    - content: "A client certificate presented during the TLS handshake"
+      isCorrect: false
+      explanation: "Incorrect. Client certificate validation is enforced by the validate-client-certificate policy, not `validate-azure-ad-token`. These are separate policies that address different authentication mechanisms—certificate-based identity versus token-based identity."
+    - content: "A PKCE code verifier in the Authorization header alongside the token"
+      isCorrect: false
+      explanation: "Incorrect. PKCE (Proof Key for Code Exchange) is used during the OAuth 2.0 authorization code flow to obtain a token—it's not something callers include when calling the API. The `validate-azure-ad-token` policy validates the access token itself, not the mechanism used to acquire it."
+  - content: "Contoso Retail's partner contract allows 10,000 API calls per month but also requires that no partner can exceed 200 calls per minute. Which combination of API Management policies enforces both requirements?"
+    choices:
+    - content: "Apply the rate-limit policy to enforce the per-minute limit and the quota policy to enforce the monthly limit"
+      isCorrect: true
+      explanation: "Correct. The rate-limit policy restricts calls within a short renewal period (seconds or minutes), making it the right tool for the per-minute cap. The quota policy enforces total call count or bandwidth over a longer period, such as a month. Combining both at the product scope enforces the short-window and long-period constraints independently."
+    - content: "Apply the rate-limit policy twice—once with a renewal-period of 60 seconds and once with a renewal-period of 2,592,000 seconds"
+      isCorrect: false
+      explanation: "Incorrect. The rate-limit policy is designed for short time windows and is keyed per subscription in the context of a product. Using it with a long renewal period isn't the intended design—the quota policy is built specifically for enforcing total call count or bandwidth limits over longer periods such as days or months."
+    - content: "Apply the rate-limit-by-key policy with a counter key set to the subscription ID for both limits"
+      isCorrect: false
+      explanation: "Incorrect. Rate-limit-by-key is useful for throttling based on custom expressions like IP addresses or JSON Web Token (JWT) claims. It doesn't provide a monthly quota—it's a short-window throttle. Meeting both requirements needs rate-limit for the per-minute window and quota for the monthly cap."
+    - content: "Configure a single quota policy with two bandwidth thresholds—one for calls and one for data transfer"
+      isCorrect: false
+      explanation: "Incorrect. A single quota policy enforces one renewal period. It can limit both calls and bandwidth within that period, but it can't simultaneously enforce a per-minute limit and a monthly total. Two different policies addressing two different time horizons are required."
+  - content: "An API gateway forwards partner requests to a backend API over HTTPS. With standard TLS, the partner's application verifies the backend server's certificate. What does mutual TLS (mTLS) add that standard TLS doesn't provide?"
+    choices:
+    - content: "The backend server also verifies the client's certificate, so both sides authenticate each other's identity before the connection is established"
+      isCorrect: true
+      explanation: "Correct. In standard TLS, only the server presents a certificate for the client to validate. Mutual TLS requires both parties to present and validate certificates. In the API Management context, this means the backend verifies API Management's client certificate, ensuring that only requests originating from the authorized gateway are accepted."
+    - content: "The connection uses TLS 1.3 instead of TLS 1.2, providing stronger cipher suite negotiation"
+      isCorrect: false
+      explanation: "Incorrect. Mutual TLS refers to bidirectional certificate authentication during the TLS handshake, not to a specific TLS version. You can configure mTLS with TLS 1.2 or TLS 1.3. The protocol version and mutual authentication are separate configuration concerns."
+    - content: "The server certificate is signed by a public certificate authority rather than a private CA, improving trust chain verification"
+      isCorrect: false
+      explanation: "Incorrect. The CA type (public or private) is independent of whether mutual TLS is configured. mTLS adds client certificate authentication on top of the standard server-side TLS certificate, regardless of which CA issued either certificate."
+    - content: "Session keys are rotated more frequently during the connection to reduce exposure from a compromised key"
+      isCorrect: false
+      explanation: "Incorrect. Session key rotation is a property of the TLS session itself and isn't what distinguishes mutual TLS from standard TLS. The defining characteristic of mTLS is that both the client and server authenticate each other using certificates during the handshake."
+  - content: "Contoso Retail's Azure OpenAI-based product recommendation API should only be accessible to internal applications on the company's private network—no public internet access is permitted to the API Management gateway hosting this API. Which virtual network integration mode satisfies this requirement?"
+    choices:
+    - content: "Internal mode, which deploys API Management fully inside the virtual network with no public endpoint"
+      isCorrect: true
+      explanation: "Correct. Internal mode removes the public IP endpoint from API Management entirely. The gateway and management plane are accessible only from within the virtual network or from connected on-premises networks via VPN or ExpressRoute. This is the appropriate mode when the gateway must never be reachable from the public internet."
+    - content: "External mode, which places API Management in the virtual network while retaining a public IP address"
+      isCorrect: false
+      explanation: "Incorrect. External mode maintains a public-facing IP address for the gateway. Internal applications can still reach it over the virtual network, but it remains accessible from the internet—which violates the requirement for no public internet access."
+    - content: "Configure a network security group (NSG) on the API Management subnet to block all inbound internet traffic"
+      isCorrect: false
+      explanation: "Incorrect. NSG rules can restrict which source IPs can reach the gateway, but the public endpoint still exists and is still reachable unless the correct NSG rules are applied and maintained. Internal mode eliminates the public endpoint entirely, providing a stronger and more deterministic isolation guarantee."
+    - content: "Enable the private endpoint for inbound access and disable the default gateway endpoint"
+      isCorrect: false
+      explanation: "Incorrect. A private endpoint creates a private IP for the gateway in a virtual network but doesn't remove the public endpoint unless public network access is explicitly disabled. Internal virtual network mode is the deployment model that eliminates public internet access to the gateway at the platform level."
+  - content: "Contoso Retail routes Azure OpenAI calls through API Management. A single partner subscriber occasionally sends a batch of complex document summarization requests that each consume 8,000 tokens per call. Why is the azure-openai-token-limit policy more effective than the standard rate-limit policy for governing this subscriber's consumption?"
+    choices:
+    - content: "AI API cost is driven by token consumption—a few token-intensive calls can exhaust provisioned throughput as effectively as a large number of lightweight calls"
+      isCorrect: true
+      explanation: "Correct. The rate-limit policy counts HTTP calls regardless of how many tokens each call consumes. A subscriber sending 10 calls that each consume 8,000 tokens uses 80,000 tokens—the same as 80 calls consuming 1,000 tokens each. The azure-openai-token-limit policy limits consumption based on tokens per minute, which directly reflects the cost and throughput challenges of AI workloads."
+    - content: "The azure-openai-token-limit policy applies per API operation, while rate-limit only applies at the product scope"
+      isCorrect: false
+      explanation: "Incorrect. Both policies can be applied at the global, product, API, or operation scope. Scope flexibility isn't what differentiates them. The key difference is that azure-openai-token-limit measures consumption in tokens—the actual cost unit for Azure OpenAI—rather than in HTTP call counts."
+    - content: "Azure OpenAI returns HTTP 429 errors that rate-limit can't intercept, but azure-openai-token-limit processes these before they reach the caller"
+      isCorrect: false
+      explanation: "Incorrect. Both policies return 429 responses when limits are exceeded. The azure-openai-token-limit policy limits token consumption before the request reaches the backend when possible, preventing the cost from being incurred. The distinction is what the limit measures—tokens versus calls."
+    - content: "The rate-limit policy only works when subscription keys are enabled, but azure-openai-token-limit works without subscription keys"
+      isCorrect: false
+      explanation: "Incorrect. The rate-limit policy can be applied regardless of whether subscription keys are enabled, and its counter key can be customized. The reason azure-openai-token-limit is more appropriate for OpenAI workloads is that it limits the actual consumption metric that drives cost and throughput—tokens consumed—rather than the number of HTTP requests."

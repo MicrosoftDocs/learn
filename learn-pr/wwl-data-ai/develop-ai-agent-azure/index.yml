@@ -6,7 +6,7 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.date: 08/28/2025
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ms.topic: module-standard-task-based
   ai-usage: ai-assisted
 title: Develop an AI agent with Microsoft Foundry Agent Service
@@ -29,9 +29,8 @@ roles:
   - solution-architect
   - student
 products: 
-  - azure-ai-foundry
-  - azure-ai-foundry-agent-service
-  - azure-ai-foundry-sdk
+  - microsoft-foundry
+  - foundry-agent-service 
 subjects: 
   - artificial-intelligence
 units:

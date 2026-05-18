@@ -1,3 +1,14 @@
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=560fd7ae-24e6-4ffd-b96c-6d70ec53095a]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Now that you've explored prompt engineering, RAG, and fine-tuning individually, let's look at how they relate to each other. These strategies aren't mutually exclusive;  they're complementary methods that you can combine to meet different optimization goals.
 
 ## Understand the optimization spectrum
@@ -78,3 +89,5 @@ When deciding which strategies to use, start simple and add complexity only when
 1. **Combine as needed**: Layer strategies based on your application's specific requirements. Not every application needs all three.
 
 This incremental approach helps you avoid unnecessary cost and complexity while ensuring you achieve the optimization level your application requires.
+
+::: zone-end

@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-create-ai-travel-agent
+hidden: true
 metadata:
   title: Guided project - Create an AI travel agent
   description: "Develop a proof of concept AI Travel assistant chatbot using the Semantic Kernel SDK."
@@ -8,7 +9,7 @@ metadata:
   ms.author: buzahid
   ms.topic: module
   ms.custom:
-  - N/A
+    - N/A
   ms.service: semantic-kernel
   ai-usage: human-only
 title: Guided project - Create an AI travel agent
@@ -31,20 +32,20 @@ prerequisites: |
   -   Access to Azure OpenAI services.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- developer
+  - developer
 products:
-- dotnet
-- vs-code
-- azure-openai
+  - dotnet
+  - vs-code
+  - azure-openai
 units:
-- learn.wwl.guided-project-create-ai-travel-agent.introduction
-- learn.wwl.guided-project-create-ai-travel-agent.prepare
-- learn.wwl.guided-project-create-ai-travel-agent.exercise-create-currency-converter
-- learn.wwl.guided-project-create-ai-travel-agent.exercise-create-travel-itenerary
-- learn.wwl.guided-project-create-ai-travel-agent.exercise-require-approval-for-actions
-- learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
-- learn.wwl.guided-project-create-ai-travel-agent.summary
+  - learn.wwl.guided-project-create-ai-travel-agent.introduction
+  - learn.wwl.guided-project-create-ai-travel-agent.prepare
+  - learn.wwl.guided-project-create-ai-travel-agent.exercise-create-currency-converter
+  - learn.wwl.guided-project-create-ai-travel-agent.exercise-create-travel-itenerary
+  - learn.wwl.guided-project-create-ai-travel-agent.exercise-require-approval-for-actions
+  - learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
+  - learn.wwl.guided-project-create-ai-travel-agent.summary
 badge:
   uid: learn.wwl.guided-project-create-ai-travel-agent.badge

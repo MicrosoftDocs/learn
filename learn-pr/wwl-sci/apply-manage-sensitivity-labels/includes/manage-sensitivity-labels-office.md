@@ -1,73 +1,57 @@
-Applying sensitivity labels in Microsoft Purview is essential for managing and protecting sensitive information within your organization. These labels help classify and secure data across various platforms and applications, ensuring compliance and data security. Sensitivity labels can be used in Office apps, manage file compatibility, secure cross-organizational data sharing, and audit label activities to maintain robust data security.
+Office apps are where most people encounter sensitivity labels for the first time. A user creates a document in Word, sends an email from Outlook, or builds a spreadsheet in Excel, and the sensitivity bar asks them to classify the content. For labels to work well in this environment, you need to understand which file formats support them and how encryption replaces older protection methods. You also need to know what happens when labeled content crosses organizational boundaries.
 
-As our consultancy firm rolls out its new AI-powered service, it's important we keep our sensitive data secure, especially with our marketing team working hard on the launch. Sensitivity labels are a valuable security feature that we can use once we create and publish them in the Microsoft Purview compliance portal.
+## Understand file format support
 
-Here you learn how to:
+Not every file format supports sensitivity labels equally, and this variation matters when you're planning a rollout. If your organization still uses older file formats or converts documents to PDF frequently, you need to know where protection holds and where it doesn't.
 
-- **Use sensitivity labels in Office apps**: Apply sensitivity labels in Office apps to protect documents and emails.
-- **Understand file compatibility**: Identify which file types support sensitivity labels.
-- **Cross-organizational protection**: Use sensitivity labels for secure data sharing and management across organizations.
-- **Audit label activities**: Use Microsoft Purview to audit sensitivity label use.
+> [!NOTE]
+> The Azure Information Protection (AIP) unified labeling client add-in for Office [is retired](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908?azure-portal=true) and no longer supported. Built-in sensitivity labels in Office apps replace it. If your organization previously used the AIP add-in, verify that the Office policy setting **Use the Azure Information Protection add-in for sensitivity labeling** is set to **Not configured** or **Disabled**. If it's still set to **Enabled**, built-in labeling won't work.
 
-## Transitioning to built-in labeling in Office apps
+**Open XML formats** (.docx, .xlsx, .pptx) have full sensitivity label support:
 
-With the [Azure Information Protection (AIP) unified labeling client add-in set to retire in April 2024](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/retirement-notification-for-the-azure-information-protection/ba-p/3791908?azure-portal=true), it's crucial to switch to Office's built-in sensitivity labels. This ensures your data protection is up-to-date, providing access to the latest security features like advanced classifiers. These features are available across Windows, macOS, iOS, Android, and Office on the web without the need for external add-ins.
-To integrate these labels smoothly:
+- Classification
+- Encryption
+- Content markings
+- Labeling automation
 
-- Ensure your Office subscription supports these features.
-- Configure and publish label policies through the Microsoft Purview compliance portal for organizational consistency.
-- Keep your [Office applications updated to the latest versions that support these labels](/purview/sensitivity-labels-versions?azure-portal=true).
+This is the baseline format for reliable label protection. For the minimum Office version needed for specific label features, see [Minimum versions for sensitivity labels in Office apps](/purview/sensitivity-labels-versions?azure-portal=true).
 
-You can manage adjustments using Office policy settings. Use Group Policy or cloud-based tools for detailed control over how labels are applied.
+**Legacy formats** like .doc, .xls, and Open Document Formats (.odt, .ods) have limited or no built-in labeling support. If your organization still uses these formats, consider a migration strategy or accept that labeling gaps exist for those files.
 
-## Sensitivity label support and file compatibility in Office apps
+**PDFs** retain sensitivity labels, content markings, and encryption when you convert from an Office app using **Save As** or **Export**. However, there are gaps worth knowing about:
 
-To manage and safeguard your organization's data effectively, you need to understand how sensitivity labels work in different Office applications and document formats. Sensitivity labels let you classify, label, and protect content as it's being created, edited, or shared within and outside of office. This functionality makes them useful for different kinds of files including PDFs.
+- PDF attachments in Outlook don't inherit label-based encryption from the email.
+- Printing to PDF can bypass the label entirely.
+- Administrators can control PDF labeling behavior through Group Policy settings.
 
-### Compatibility across document formats
+### The sensitivity bar in Office apps
 
-Understanding compatibility across document formats is important, as sensitivity labels offer different levels of support depending on the file type being used within Office apps.
-
-- **Open XML formats**: Sensitivity labels are fully compatible with Open XML formats (.docx, .xlsx, .pptx). To find out the minimum Office version needed to use certain features of sensitivity labels, such as classification, encryption, and labeling automation, see [Minimum versions for sensitivity labels in Office apps](/purview/sensitivity-labels-versions?azure-portal=true).
-- **Legacy and non-standard formats**: Compatibility limitations exist for older file formats such as .doc, .xls, and Open Document Formats (.odt, .ods), where built-in labeling might not be available. Configuring SharePoint and OneDrive is also necessary to maintain the integrity of labeled documents within these services.
-- **PDF support**: Office applications let you convert documents to PDFs and keep sensitivity labels, content markings, and encryption. It's important to note:
-
-  - PDF attachments in Outlook don't inherit label-based encryption.
-  - The potential bypass of labels when printing to PDF.
-  - Administrators can manage the application of sensitivity labels to PDFs through Group Policy settings to align with organizational security policies.
-
-### Label application in Office with the sensitivity bar
-
-To see the sensitivity bar in Office applications like Word, Excel, and PowerPoint, your Office version needs to meet specific version requirements. This feature, when supported, displays sensitivity labels in a bar next to the file name at the top window bar.
+In supported versions of Word, Excel, and PowerPoint, users see a sensitivity bar next to the file name. The sensitivity bar makes the current label visible and provides a consistent entry point for changing it.
 
 :::image type="content" source="../media/sensitivity-bar-example.png" alt-text="Screenshot of sensitivity labels on the window title bar." lightbox="../media/sensitivity-bar-example.png":::
 
-When Outlook supports this feature, the sensitivity bar is displayed on the **Subject** line of the email in the classic Outlook experience.
+In classic Outlook, the sensitivity bar appears on the **Subject** line of the email.
 
 :::image type="content" source="../media/sensitivity-bar-example-outlook.png" alt-text="Screenshot of sensitivity labels on the Outlook Subject line." lightbox="../media/sensitivity-bar-example-outlook.png":::
 
-## Manage sensitivity labels for encryption and collaboration in Office apps
+The sensitivity bar makes labeling visible without interrupting the user's workflow. This visibility matters because it reinforces labeling behavior. Users are more likely to apply correct labels when the current classification is always in view.
 
-Sensitivity labels offer a modern alternative to traditional Information Rights Management (IRM). They make the encryption process easier and more effective, allowing information protection to be coherent and manageable across documents and emails. These labels provide a consistent way of securing data by automating encryption and giving clear instructions for both users and administrators.
+## Transition from Information Rights Management to sensitivity labels
 
-### Encryption and sensitivity label management in Office apps
+If your organization used Information Rights Management (IRM) before sensitivity labels, the transition is worth understanding. Sensitivity labels replace IRM as the primary way to apply encryption to documents and emails. They offer a significant advantage: labels combine classification, encryption, and content markings in a single, policy-driven action, rather than requiring users to make separate encryption decisions.
 
-Office apps are moving from IRM to sensitivity labels for encryption, where users are prompted to use labels for protection settings. This transition  is part of a more user-friendly experience for applying protection to documents and emails.
+In current versions of Word, Excel, and PowerPoint for Windows and Mac, the legacy IRM options are no longer available. Instead, Office displays a dialog box that directs users to apply a sensitivity label.
 
    :::image type="content" source="../media/irm-redirect-sensitivity-labels.png" alt-text="Screenshot of a dialog box prompting users to use sensitivity labels from the sensitivity bar.":::
 
-Documents automatically inherit encryption from associated emails or previous IRM policies, simplifying the transition to a unified labeling system. Administrators enforce tenant-specific policies to ensure consistent protection and compliance across the organization.
+This redirect helps ensure labels apply encryption consistently rather than relying on individual user decisions. Documents that were previously protected with IRM continue to inherit their encryption, and administrators can enforce tenant-specific policies to manage the transition.
 
-### Collaborating with sensitivity labels across organizations
+## Sharing labeled content across organizations
 
-Sensitivity labels also play a role in securing collaborative efforts across organizational boundaries:
+When labeled documents and emails leave your organization, understanding what travels with them helps you set realistic expectations.
 
-- **Document sharing and metadata**: Sensitivity labels attach metadata to documents and emails, including the organization's tenant information and a unique label identifier (GUID). This metadata keeps label visibility consistent within the same tenant, while external or guest users might not see these labels.
-- **Cross-organizational sharing considerations**: Sensitivity labels ensure external document sharing respects the data protection policies of both the sending and receiving organizations. Although Outlook retains label metadata, other email clients might not, potentially impacting label visibility. However, label-based encryption secures the content regardless of metadata visibility.
-- **Extended access controls**: External users with Microsoft Entra ID or through guest accounts can also access documents shared outside your organization. This access is enabled by additional configurations for cross-tenant access and conditional access settings.
+**What follows the content**: Sensitivity labels attach metadata to the document, including the tenant ID and the label identifier (GUID). Within the same tenant, this metadata keeps label visibility consistent. Label-based encryption also travels with the content and remains enforced regardless of where the file is opened.
 
-## Auditing labeling activities
+**What might not be visible**: External recipients and guest users might not see your organization's label names. Other email clients besides Outlook might strip label metadata during transit. However, the critical point is that encryption protects the content independently of whether the label is displayed. An external user who doesn't see the "Highly Confidential" label name still can't open the document unless they have the right permissions.
 
-Microsoft Purview allows organizations to monitor and manage data protection and compliance across their digital assets by auditing sensitivity labels. This process involves tracking and logging events related to the usage of sensitivity labels on various items like SharePoint sites, Teams sites, documents, emails, and calendar events. When these items are labeled or unlabeled, specific events are triggered and recorded. These include actions like applying a new sensitivity label to a site or file, changing an existing label, or removing a label completely. Each event is carefully logged, whether the label was applied through Microsoft 365 apps, Office on the web, an auto-labeling policy, or even via PowerShell cmdlets.
-
-For information about the auditing events that sensitivity label activities generate, see the [Sensitivity label activities](/purview/audit-log-activities?azure-portal=true#sensitivity-label-activities) section from [Search the audit log in the Microsoft Purview compliance portal](/purview/audit-new-search?azure-portal=true). The auditing information is visually represented in the content explorer and activity explorer in the data classification dashboard. This visualization helps you understand how your sensitivity labels are being used and where this labeled content is located.
+**Enabling external access**: External users can access labeled and encrypted documents through Microsoft Entra ID accounts or as guest users. This access requires cross-tenant access and Conditional Access configurations. When you plan cross-organizational collaboration with labeled content, the encryption settings on your labels matter more than the label visibility.

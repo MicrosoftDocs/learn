@@ -157,7 +157,7 @@ Besides the events in Exchange Online and SharePoint Online, there are events in
  -  [Microsoft Forms](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?azure-portal=true)
  -  [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream?azure-portal=true)
  -  [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities?azure-portal=true)
- -  [Yammer](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?azure-portal=true)
+ -  [Viva Engage](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?azure-portal=true)
 
 ### High-bandwidth access to the Office 365 Management Activity API
 

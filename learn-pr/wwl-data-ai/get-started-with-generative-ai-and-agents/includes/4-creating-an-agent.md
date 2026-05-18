@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=5f4b8cbc-cba8-4394-9130-e167af01d0e3]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ba5b63c1-1dc4-433b-a323-88498a8a8231]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -126,13 +126,6 @@ print(f"Response output: {response.output_text}")
 
 ```
 
-### Publishing an agent
-
-**Publishing** an agent changes it from a saved development asset to a managed Azure resource with a stable endpoint. A published agent can be shared without exposing the Foundry project or source code. You can publish an agent through the Foundry portal. 
-
-![Screenshot of publishing agent in the Foundry portal.](../media/publish-agent.png)
-![Screenshot of agent after it is published in the Foundry portal with the endpoint information.](../media/agent-published.png)
-
-Publishing an agent gives you a stable endpoint to integrate the agent into applications. 
+Next, explore a generative AI model in the new Foundry portal.
 
 ::: zone-end

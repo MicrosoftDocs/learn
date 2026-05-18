@@ -2,19 +2,17 @@ In this module, you learned how to design security posture management solutions 
 
 You learned how to:
 
-- Evaluate security posture using Microsoft Cloud Security Benchmark (MCSB) as a foundation for security standards and regulatory compliance mapping.
-- Design integrated solutions that combine Cloud Security Posture Management (CSPM) for configuration assessment with Cloud Workload Protection (CWP) for runtime threat detection.
-- Assess and improve security posture using Defender for Cloud's secure score and prioritized recommendations.
-- Design workload protection for servers, containers, databases, storage, and other resource types using Defender for Cloud plans.
-- Extend security posture management to hybrid and multicloud environments using Azure Arc.
-- Design external attack surface discovery using Defender EASM to identify internet-exposed assets.
-- Specify requirements for unified posture management using Microsoft Security Exposure Management's attack paths, initiatives, and prioritization capabilities.
+- Evaluate security posture by using Microsoft cloud security benchmark, Microsoft Defender for Cloud, and secure scores
+- Design integrated security posture management and workload protection solutions in hybrid and multicloud environments
+- Design cloud workload protection solutions that use Microsoft Defender for Cloud
+- Design solutions for Microsoft Defender External Attack Surface Management (Defender EASM)
+- Specify requirements for secure posture management using Microsoft Security Exposure Management attack paths
 
 With these capabilities, security architects can deliver comprehensive visibility across distributed environments, prioritize remediation based on actual risk, and maintain consistent security policies regardless of where workloads run.
 
 ## Learn more
 
-- [Microsoft Cloud Security Benchmark overview](/security/benchmark/azure/introduction)
+- [Microsoft cloud security benchmark overview](/security/benchmark/azure/introduction)
 - [Overview of Cloud Security Posture Management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management)
 - [Secure score in Microsoft Defender for Cloud](/azure/defender-for-cloud/secure-score-security-controls)
 - [Cloud workload protection in Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction#protect-cloud-workloads)

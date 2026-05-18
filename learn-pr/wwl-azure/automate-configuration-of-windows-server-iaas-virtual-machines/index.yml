@@ -4,8 +4,8 @@ metadata:
   title: Automate the configuration of Windows Server IaaS Virtual Machines
   description: "Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
   ms.date: 01/23/2026
-  author: wwlpublish
-  ms.author: robbarefoot
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: windows-server
 title: Automate the configuration of Windows Server IaaS Virtual Machines

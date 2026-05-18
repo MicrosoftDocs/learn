@@ -60,9 +60,9 @@ Copilot Spaces provide a dedicated place to collaborate with AI on a project. In
 
 Spaces offer a context‑rich environment where Copilot retains knowledge of your repository and workflow.
 
-### Copilot coding agent
+### Copilot Cloud Agent 
 
-The Copilot coding agent acts as an autonomous AI assistant. It performs multi-step coding tasks based on your instructions. You can ask it to:
+The Copilot Cloud Agent  acts as an autonomous AI assistant. It performs multi-step coding tasks based on your instructions. You can ask it to:
 
 - Generate multiple related files
 - Implement a feature set
@@ -74,11 +74,15 @@ Copilot executes these tasks under your direction, helping you complete complex 
 
 GitHub Copilot is available in several plans, each offering different capabilities for individuals, teams, and organizations.
 
+> [!NOTE]
+> GitHub Copilot plan availability, trials, and usage limits can change over time.  
+> Refer to the official [documentation](https://docs.github.com/en/copilot/get-started/plans) for the most up-to-date information.
+
 ### GitHub Copilot Free
 
 GitHub Copilot Free allows individual developers to use GitHub Copilot at no cost. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". Log in to your GitHub account in the window that will open in the browser.
 
-The GitHub Copilot Free tier includes 2000 code completions per month, 50 chat requests per month, and access to both GPT-4o and Claude 3.5 Sonnet models. [Learn more.](https://gh.io/copilot)
+The Copilot Free plan includes limited monthly usage for code completions and chat, along with access to supported AI models. 
 
 **Key features:**
 
@@ -87,25 +91,22 @@ The GitHub Copilot Free tier includes 2000 code completions per month, 50 chat r
 - Access to advanced AI models
 
 ### GitHub Copilot Pro
-
-GitHub Copilot Pro is designed for individual developers who want enhanced capabilities beyond the Free plan.
+GitHub Copilot Pro is designed for individual developers who want enhanced capabilities beyond the Free plan. 
 
 **Key features:**
 
-- Unlimited code completions and chat requests
+- Higher usage limits compared to the Free plan
 - Priority access to the latest AI models
 - Advanced code suggestions and explanations
 - Integration with supported IDEs (VS Code, Visual Studio, JetBrains, Neovim)
-- Automated test generation and code explanation features
+- Automated test generation and code explanation features 
 
-### **GitHub Copilot Pro+**
+### **GitHub Copilot Pro+** 
+**Copilot Pro+** includes all the features of Copilot Pro with additional access to premium model usage and priority performance on high-demand resources. It's suited for individuals with higher usage needs. 
 
-**Copilot Pro+** includes all the features of Copilot Pro with additional access to premium model usage and priority performance on high-demand resources. It's suited for individuals with higher usage needs.
-
-**Key features:**
-
+**Key features:** 
 - All Pro features
-- Additional premium request capacity
+-  Additional premium request capacity
 - Priority infrastructure access
 
 ### GitHub Copilot Business
@@ -114,7 +115,6 @@ GitHub Copilot Business is for organizations that want to manage Copilot access 
 
 **Key features:**
 
-- All Pro and Pro+ features for organization members
 - Centralized management and policy controls
 - Security vulnerability filtering
 - Code referencing and public code filtering
