@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-account-security.configure-storage-account-security
+metadata:
+  title: Configure storage account security settings
+  description: Configure account-level security settings including secure transfer, minimum TLS version, anonymous access controls, and cross-tenant object replication restrictions.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure storage account security settings
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-configure-storage-account-security.md)]
