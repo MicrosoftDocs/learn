@@ -14,3 +14,4 @@ After completing this module, you'll be able to:
 - Create automation rules to automate incident management tasks.
 - Configure and activate a prebuilt playbook from the Microsoft Sentinel Content Hub.
 - Author a custom Logic Apps playbook and connect it to an automation rule.
+
