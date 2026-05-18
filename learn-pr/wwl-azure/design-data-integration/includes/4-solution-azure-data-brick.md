@@ -56,4 +56,4 @@ You can use Azure Databricks as a solution for multiple scenarios. Consider how 
 - **Consider machine learning programs**. Take advantage of the integrated end-to-end machine learning environment. It incorporates managed services for experiment tracking, model training, feature development and management, and feature and model serving.
 
 > [!Tip]
-> Learn more with self-paced training, [Explore Azure Databricks](/training/wwl-databricks/explore-azure-databricks/).
+> Learn more with self-paced training, [Explore Azure Databricks](/training/modules/explore-azure-databricks).
