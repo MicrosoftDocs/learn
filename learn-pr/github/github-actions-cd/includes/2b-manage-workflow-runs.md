@@ -40,7 +40,7 @@ The following example uploads an artifact that persists for 10 days instead of t
 
 ## Add a workflow status badge to your repository
 
-It's helpful to know a workflow's status without having to visit the **Actions** tab to see if it successfully completed. Adding workflow status badges to your repository `README.md` file allows you to quickly see if your workflows are passing or failing. While it's common to add a status badge to a repository `README.md` file, you can also add it any web page. By default, status badges display the workflow statuses on your default branch, but you can also display workflow status badges on other branches using the `branch` and `event` parameters.
+It's helpful to know a workflow's status without having to visit the **Actions** tab to see if it successfully completed. Adding workflow status badges to your repository `README.md` file allows you to quickly see if your workflows are passing or failing. While it's common to add a status badge to a repository `README.md` file, you can also add it to any web page. By default, status badges display the workflow statuses on your default branch, but you can also display workflow status badges on other branches using the `branch` and `event` parameters.
 
 Here's an example of what you need to add to a file to see a workflow status badge:
 
