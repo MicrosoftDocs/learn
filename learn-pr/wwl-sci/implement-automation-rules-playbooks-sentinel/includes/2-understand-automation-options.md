@@ -33,9 +33,9 @@ Playbooks are the right choice when the response workflow requires any of the fo
 
 Contoso's security team identified three playbook use cases during their automation planning session:
 
-1. **Incident enrichment**: When a high-severity incident is created, a playbook queries a threat intelligence service for each IP entity in the incident, then adds the reputation score as a comment before the analyst opens the case.
-2. **Machine isolation**: If a confirmed malware incident includes a named host entity, the playbook calls the Defender for Endpoint API to isolate the machine, then posts a Teams message to the on-call analyst with the incident URL.
-3. **Compliance notification**: When a SharePoint audit alert triggers a Microsoft Sentinel incident, the playbook posts a formatted incident summary to the compliance team's Teams channel and creates a record in Contoso's external compliance tracking system.
+  - **Incident enrichment**: When a high-severity incident is created, a playbook queries a threat intelligence service for each IP entity in the incident, then adds the reputation score as a comment before the analyst opens the case.
+  - **Machine isolation**: If a confirmed malware incident includes a named host entity, the playbook calls the Defender for Endpoint API to isolate the machine, then posts a Teams message to the on-call analyst with the incident URL.
+  - **Compliance notification**: When a SharePoint audit alert triggers a Microsoft Sentinel incident, the playbook posts a formatted incident summary to the compliance team's Teams channel and creates a record in Contoso's external compliance tracking system.
 
 None of these workflows are possible with automation rules alone—they all require external API calls or runtime data retrieval.
 

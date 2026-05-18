@@ -4,10 +4,10 @@ Before you build your first automation rule, take a few minutes to map the incid
 
 Before opening the rule wizard, answer these questions:
 
-1. **What is the trigger?** Most incident management rules use the **Incident created** trigger. Use **Incident updated** when you need to react to status changes, such as reassigning an incident when escalated from low to high severity.
-2. **How specific should the conditions be?** A rule scoped to a single analytics rule by name is precise but requires updates when you rename that rule. A rule scoped to a severity level is broad but durable. Combine both for the right balance.
-3. **What actions run, and in what order?** Actions within a single rule execute in the order you define them. Put the assign action before the tag action if you want the assignee to already be set when the notification fires.
-4. **What priority number should this rule have?** Lower numbers run first. If two rules match the same incident, the lower-priority rule's actions complete before the higher one runs. Reserve the lowest numbers (1–10) for critical suppression or escalation rules.
+  - **What is the trigger?** Most incident management rules use the **Incident created** trigger. Use **Incident updated** when you need to react to status changes, such as reassigning an incident when escalated from low to high severity.
+  - **How specific should the conditions be?** A rule scoped to a single analytics rule by name is precise but requires updates when you rename that rule. A rule scoped to a severity level is broad but durable. Combine both for the right balance.
+  - **What actions run, and in what order?** Actions within a single rule execute in the order you define them. Put the assign action before the tag action if you want the assignee to already be set when the notification fires.
+  - **What priority number should this rule have?** Lower numbers run first. If two rules match the same incident, the lower-priority rule's actions complete before the higher one runs. Reserve the lowest numbers (1–10) for critical suppression or escalation rules.
 
 ## Create an automation rule in Microsoft Sentinel
 
