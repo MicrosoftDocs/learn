@@ -20,7 +20,7 @@ The `CopilotActivity` table represents an important and growing compliance surfa
 
 Before configuring the connector, verify these prerequisites are met:
 
-1. **Unified audit logging is enabled** in your Microsoft 365 tenant. In the Microsoft Purview portal, navigate to **Audit** and check that the banner says "Recording user and admin activity." If it shows "Start recording," select it to enable. You can also verify via PowerShell in Exchange Online:
+- **Unified audit logging is enabled** in your Microsoft 365 tenant. In the Microsoft Purview portal, navigate to **Audit** and check that the banner says "Recording user and admin activity." If it shows "Start recording," select it to enable. You can also verify via PowerShell in Exchange Online:
 
    ```powershell
    Get-AdminAuditLogConfig | Select-Object UnifiedAuditLogIngestionEnabled
@@ -28,9 +28,9 @@ Before configuring the connector, verify these prerequisites are met:
 
    The output should show `True`. If it shows `False`, contact your Microsoft Purview admin to enable it.
 
-2. **Licensing**: The tenant must have at least Microsoft 365 E3 for Audit Standard coverage. For `CopilotActivity` events, verify that Microsoft 365 Copilot licenses are assigned to users whose activity you want to audit.
+- **Licensing**: The tenant must have at least Microsoft 365 E3 for Audit Standard coverage. For `CopilotActivity` events, verify that Microsoft 365 Copilot licenses are assigned to users whose activity you want to audit.
 
-3. **Permissions**: Three roles are needed across the integration:
+- **Permissions**: Three roles are needed across the integration:
    - **Microsoft Sentinel Contributor** (or higher) in Azure—required to configure the data connector in the Defender portal.
    - **Global Administrator** or **Security Administrator** in Microsoft 365—required to authorize the connector to access the tenant's audit logs.
    - **View-Only Audit Logs** in Microsoft 365 (assigned via the Microsoft Purview portal or Exchange admin center)—required for analysts who will query the `OfficeActivity` or `CopilotActivity` tables after ingestion.
