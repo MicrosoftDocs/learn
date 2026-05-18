@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-security-azure-storage.describe-storage-network-security
+metadata:
+  title: Describe Azure Storage network security controls
+  description: Describe how Azure Storage firewall rules shift accounts from default allow-all to a deny-all baseline. Then describe the four rule types available, and the difference between public endpoint and private endpoint access architecture.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Describe Azure Storage network security controls
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-storage-network-security.md)]
