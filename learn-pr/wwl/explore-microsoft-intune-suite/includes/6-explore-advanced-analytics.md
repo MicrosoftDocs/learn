@@ -1,4 +1,4 @@
-    The **Advanced Analytics** feature within the **Microsoft Intune Suite** provides IT professionals with the tools needed to monitor and analyze data from devices, apps, compliance, and security. This feature offers insights to help optimize management and security based on real-time and historical data.
+The **Advanced Analytics** feature within the **Microsoft Intune Suite** provides IT professionals with the tools needed to monitor and analyze data from devices, apps, compliance, and security. This feature offers insights to help optimize management and security based on real-time and historical data.
 
 
 ### How it’s used in Modern IT
