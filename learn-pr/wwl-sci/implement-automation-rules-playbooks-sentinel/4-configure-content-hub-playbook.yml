@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel.configure-content-hub-playbook
+metadata:
+  title: Configure and activate a Content Hub playbook
+  description: Find, install, and activate a prebuilt Microsoft Sentinel playbook from the Content Hub, including granting the playbook's managed identity the required permissions to interact with Microsoft Sentinel.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure and activate a Content Hub playbook
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-configure-content-hub-playbook.md)]

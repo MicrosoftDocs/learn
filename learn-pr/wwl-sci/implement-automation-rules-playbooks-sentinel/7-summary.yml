@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel.summary
+metadata:
+  title: Summary
+  description: Summary of implementing automation rules and Logic Apps playbooks in Microsoft Sentinel, covering incident triage automation, Content Hub playbooks, and custom playbook authoring.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]
