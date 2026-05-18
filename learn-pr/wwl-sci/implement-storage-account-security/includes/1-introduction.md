@@ -9,4 +9,4 @@ After completing this module, you'll be able to:
 - Configure storage account security settings including secure transfer, minimum TLS, and anonymous access controls
 - Select an appropriate authorization model for different access scenarios including managed identity for AI agent workloads
 - Create and manage stored access policies to control SAS token lifecycle
-- Disable Shared Key authorization and enforce compliance using Azure Policy
+- Disable Shared Key authorization and enforce compliance using Azure Policy 
