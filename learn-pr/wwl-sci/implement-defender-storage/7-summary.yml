@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-storage.summary
+metadata:
+  title: Summary
+  description: Summary of implementing Microsoft Defender for Storage. Covers detection pillars, policy-driven deployment, malware scanning cost controls, and alert routing configuration to route outputs to the appropriate security team.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

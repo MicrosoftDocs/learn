@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-storage-audit-logs-sentinel.query-purview-audit
+metadata:
+  title: Query Purview Audit logs in Microsoft Defender XDR
+  description: Search and query Microsoft Purview Audit logs in the Microsoft Defender portal using the Purview Audit search tool and Advanced Hunting KQL queries for compliance investigation and incident correlation.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Query Purview Audit logs in Microsoft Defender XDR
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-query-purview-audit.md)]

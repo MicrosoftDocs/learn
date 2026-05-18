@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Microsoft Sentinel automation rules and Logic Apps playbooks, including when to use each, required permissions, and playbook trigger types.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer needs to automatically close low-severity informational incidents that match a specific analytics rule, without running a Logic Apps workflow. Which Microsoft Sentinel feature meets this requirement?"
+    choices:
+    - content: "An automation rule with a 'Close incident' action"
+      isCorrect: true
+      explanation: "Correct. Automation rules handle lightweight incident management tasks—including assigning owners, changing severity, adding tags, and closing incidents—without requiring a Logic Apps playbook. You can scope the rule to a specific analytics rule and severity level."
+    - content: "A playbook triggered by the Microsoft Sentinel incident trigger"
+      isCorrect: false
+      explanation: "Incorrect. A playbook could close an incident, but it requires a Logic Apps workflow, which adds unnecessary complexity for this scenario. Automation rules are the right tool for simple, no-code incident management actions."
+    - content: "An analytics rule with automated remediation enabled"
+      isCorrect: false
+      explanation: "Incorrect. Analytics rules detect threats and generate alerts or incidents—they don't manage or close existing incidents. Incident management automation is handled by automation rules."
+    - content: "A Microsoft Sentinel workbook with a parameterized incident query"
+      isCorrect: false
+      explanation: "Incorrect. Workbooks are reporting and visualization tools. They display and analyze data but can't take automated actions on incidents."
+  - content: "A security engineer deploys a Logic Apps playbook to post a Teams notification when a high-severity Microsoft Sentinel incident is created. After deployment, the playbook fails on every run with an authorization error when calling the Microsoft Sentinel connector. What is the most likely cause?"
+    choices:
+    - content: "The Logic App's managed identity hasn't been assigned the Microsoft Sentinel Responder role on the workspace"
+      isCorrect: true
+      explanation: "Correct. Playbooks interact with Microsoft Sentinel through the Microsoft Sentinel Logic Apps connector, which requires the Logic App's managed identity to have at minimum the Microsoft Sentinel Responder role on the workspace. Without this role assignment, the connector can't read incident data or take actions."
+    - content: "The playbook must be deployed in the same Azure region as the Microsoft Sentinel workspace"
+      isCorrect: false
+      explanation: "Incorrect. Logic Apps playbooks can operate across regions. The failure is an authorization issue, not a regional colocation requirement."
+    - content: "The analytics rule must have incident creation disabled when the workspace is onboarded to the Defender portal"
+      isCorrect: false
+      explanation: "Incorrect. Disabling analytics rule incident creation relates to how Defender Extended Detection and Response (XDR) handles incident generation in the unified portal—it's not related to playbook authorization errors."
+    - content: "The Logic App must use a service principal connection string instead of a managed identity"
+      isCorrect: false
+      explanation: "Incorrect. Managed identities are the recommended authentication method for Logic Apps connecting to Microsoft Sentinel. The issue is that the managed identity hasn't been granted the required RBAC role, not that managed identity authentication is unsupported."
+  - content: "Contoso's SOC needs a response workflow that queries an external threat intelligence API, evaluates the result, and then calls the Microsoft Defender for Endpoint API to isolate a compromised machine—all triggered automatically when a specific incident type is created. Which approach is most appropriate?"
+    choices:
+    - content: "A playbook built in Azure Logic Apps with the Microsoft Sentinel incident trigger"
+      isCorrect: true
+      explanation: "Correct. Complex, multi-step response workflows that require external API calls, conditional branching, and cross-service actions need a Logic Apps playbook. Automation rules handle simple actions; playbooks handle workflows that require integration with external systems and custom logic."
+    - content: "An automation rule with a 'Change severity' and 'Assign owner' action sequence"
+      isCorrect: false
+      explanation: "Incorrect. Automation rule actions are limited to built-in incident management tasks. They can't make external API calls, evaluate conditional logic against external data, or call Defender for Endpoint APIs."
+    - content: "A Microsoft Sentinel analytics rule with a KQL query that filters for the incident type"
+      isCorrect: false
+      explanation: "Incorrect. Analytics rules detect threats and generate alerts—they don't execute response actions, call external APIs, or isolate machines."
+    - content: "A Microsoft Sentinel automation rule that runs a built-in isolation action"
+      isCorrect: false
+      explanation: "Incorrect. Automation rules don't have a built-in machine isolation action. Isolation requires calling the Defender for Endpoint API, which is only possible through a Logic Apps playbook."

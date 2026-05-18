@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.implement-storage-account-security
+metadata:
+  title: Implement Security and Manage Access for Azure Storage
+  description: "Implement account-level security controls and access governance for Azure Storage. Configure secure transfer settings, choose appropriate authorization models, apply stored access policies for SAS lifecycle management, and enforce Shared Key disable using Azure Policy."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-storage
+  ai-usage: ai-assisted
+title: Implement security and manage access for Azure Storage
+summary: Implement account-level security controls and access governance for Azure Storage. Configure secure transfer settings, choose appropriate authorization models, apply stored access policies for SAS lifecycle management, and enforce Shared Key disable using Azure Policy to protect storage accounts used by AI agents and enterprise workloads.
+abstract: |
+  After completing this module, you'll be able to:
+    - Configure storage account security settings including secure transfer, minimum Transport Layer Security (TLS), and anonymous access controls
+    - Select an appropriate authorization model for different access scenarios including managed identity for AI agent workloads
+    - Create and manage stored access policies to control SAS token lifecycle
+    - Disable Shared Key authorization and enforce compliance using Azure Policy
+prerequisites: |
+  - Familiarity with Azure Storage accounts
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Basic understanding of Microsoft Entra ID
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-storage
+  - azure-blob-storage
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.implement-storage-account-security.introduction
+- learn.wwl.implement-storage-account-security.configure-storage-account-security
+- learn.wwl.implement-storage-account-security.select-authorization-model
+- learn.wwl.implement-storage-account-security.manage-stored-access-policies
+- learn.wwl.implement-storage-account-security.disable-shared-key-enforce-policy
+- learn.wwl.implement-storage-account-security.knowledge-check
+- learn.wwl.implement-storage-account-security.summary
+badge:
+  uid: learn.wwl.implement-storage-account-security.badge
