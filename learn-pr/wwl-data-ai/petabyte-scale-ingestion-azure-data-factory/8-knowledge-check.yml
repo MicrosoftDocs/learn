@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 01/05/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
   module_assessment: true
 azureSandbox: false
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. The Azure Data Factory diagnostic logs are retained for 45 days."
     - content: "45 days"
       isCorrect: true
-      explanation: "Correct. The Azure Data Factory diagnostic logs are retained for 45 days."
+      explanation: "Correct. The Azure Data Factory diagnostic logs are retained for 45 days."

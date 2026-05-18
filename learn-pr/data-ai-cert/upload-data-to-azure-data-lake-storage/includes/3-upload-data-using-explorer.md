@@ -1,6 +1,9 @@
-To do ad hoc data transfers into an Azure Data Lake store, use Azure Storage Explorer.
+To do one-off data transfers into an Azure Data Lake store, use Azure Storage Explorer.
 
-Storage Explorer is a free application for Windows, macOS, and Linux. This Azure app is designed to manage unstructured data such as tables, blobs, queues, and files. It also supports data in Azure Cosmos DB and Azure Data Lake Storage Gen2. That's why we'll use it in this exercise.
+Storage Explorer is a free standalone application for Windows, macOS, and Linux that lets you manage Azure Storage data including blobs, queues, tables, file shares, and Azure Data Lake Storage Gen2. That's why we use it in this exercise.
+
+> [!NOTE]
+> Storage Explorer 1.42.0 and later requires a **.NET 10 runtime** that matches the architecture of your Storage Explorer installation. The installer adds .NET 10 if it isn't already present, but it's your responsibility to keep your .NET install up to date. You can download the latest runtime from the [.NET 10 download page](https://dotnet.microsoft.com/download/dotnet/10.0).
 
 > [!NOTE]
 > If you don't have an Azure account or prefer not to do this exercise in your account, just read through the exercise to understand how to install and use Storage Explorer.
@@ -18,30 +21,27 @@ This module explores some of these capabilities.
 
 ## Connect Storage Explorer to your Azure account
 
-To get started using Storage Explorer, first add your Azure account:
+To get started using Storage Explorer, sign in with your Azure account:
 
-1. In Storage Explorer, on the left, select the Account button.
+1. In Storage Explorer, select **View** > **Account Management**, or select the **Manage Accounts** button in the left toolbar.
 
-    ![Screenshot showing account management in Storage Explorer.](../media/3-account-management.png)
+1. In the **ACCOUNT MANAGEMENT** panel, select **Add an account...**. The **Connect to Azure Storage** dialog opens.
 
-1. You can connect your storage account in multiple ways: 
-   - Sign in with your Azure account to access all of your subscriptions.
-   - Use a connection string to access a specific Azure Storage account.
-   - Use a storage account name and access key.
+1. In the **Select Resource** panel, select **Subscription**.
 
-     ![Screenshot showing the ways to connect to Azure Storage.](../media/3-connect-to-azure-storage.png)
+1. In the **Select Azure Environment** panel, select your Azure environment (for example, **Azure**), and then select **Next**.
 
-1. After you sign in, select the subscriptions you want to work with. Make sure to select the subscription in which you created the Azure Storage account.
+1. Storage Explorer opens a browser page for you to sign in. Sign in with your Azure account.
 
-The app shows a list of storage areas you can work with from your subscriptions. Your Azure Storage account should appear on the list.
+1. After you sign in, your account and its subscriptions appear under **ACCOUNT MANAGEMENT**. Select the subscription in which you created the Azure Storage account, and then select **Apply**.
 
-![Screenshot showing available storage areas in Storage Explorer.](../media/3-main-app-display.png)
+Storage Explorer loads the **Explorer** tab and shows all storage accounts associated with your selected subscriptions. Your Azure Storage account appears in the list.
 
 ## Create a file system in Storage Explorer
 
 Because blobs are always uploaded into folders, you can organize groups of blobs much like you organize files on your computer.
 
-In Data Lake Storage Gen2, you start by creating a _file system_. This defines the Blob storage container that will hold your data lake. You create folders and files within this dedicated area.
+In Data Lake Storage Gen2, you start by creating a _file system_. This defines the Blob storage container that holds your data lake. You create folders and files within this dedicated area.
 
 1. In Storage Explorer, expand your subscription, and then expand your storage accounts.
 
@@ -49,9 +49,9 @@ In Data Lake Storage Gen2, you start by creating a _file system_. This defines t
 
 1. Right-click **Blob Containers** and select **Create Blob Container**.
 
-1. Under **Blob Containers**, enter **salesdata**.
+1. Under **Blob Containers**, enter `salesdata`.
 
-1. After the container is created, select **salesdata**.
+1. After the container is created, select `salesdata`.
 
 ## Create a folder in a storage container
 
@@ -59,7 +59,7 @@ A folder helps provide a hierarchical structure for your data. You can create mu
 
 1. On the menu at the top of Storage Explorer, select **New Folder**.
 
-    ![The New Folder button in Storage Explorer.](../media/3-create-new-folder.png)
+    ![Screenshot that shows the New Folder button in Azure Storage Explorer.](../media/3-create-new-folder.png)
 
 1. Name the folder **sample**. Then select **OK** to create the directory. If you get a message that asks if you want to refresh your view, select **Yes**.
 
@@ -99,7 +99,7 @@ You can upload files and folders from your local machine to directories in your 
 
 1. In the **Upload Files** dialog box, ensure that the destination directory is **sample/data**. Then select **Upload**.
 
-    ![Screenshot of the Upload Files dialog box in Storage Explorer.](../media/3-upload-file.png)
+    ![Screenshot that shows the Upload Files dialog box in Azure Storage Explorer.](../media/3-upload-file.png)
 
 When you finish, the file appears on the list.
 

@@ -4,13 +4,13 @@ title: Exercise - Use the data factory copy activity
 metadata:
   title: Exercise - Use the data factory copy activity
   description: "Exercise - Use the data factory copy activity"
-  ms.date: 01/05/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-use-copy-activity.md)]
-
+

@@ -5,51 +5,52 @@ In Data Factory, an activity defines the action to be performed. A linked servic
 A self-hosted integration runtime is capable of:
 
 - Running copy activity between a cloud data store and a data store in the private network.
-- Dispatching the following transform activities against compute resources in on-premises or Azure Virtual Network: 
-    - HDInsight Hive activity (BYOC-Bring Your Own Cluster) 
-    - HDInsight Pig activity (BYOC)
-    - HDInsight MapReduce activity (BYOC) 
-    - HDInsight Spark activity (BYOC)  
-    - HDInsight Streaming activity (BYOC)
-    - Machine Learning Batch Execution activity
-    - Machine Learning Update Resource activities
-    - Stored Procedure activity
-    - Data Lake Analytics U-SQL activity
+- Dispatching the following transform activities against compute resources in on-premises or Azure Virtual Network:
+    - Azure Function activity
     - Custom activity (runs on Azure Batch)
+    - Get Metadata activity
+    - HDInsight Hive activity (BYOC-Bring Your Own Cluster)
+    - HDInsight Pig activity (BYOC)
+    - HDInsight MapReduce activity (BYOC)
+    - HDInsight Spark activity (BYOC)
+    - HDInsight Streaming activity (BYOC)
     - Lookup activity
-    - Get Metadata activity.
+    - Machine Learning Execute Pipeline activity
+    - Stored Procedure activity
+    - Validation activity
+    - Web activity
 
-The self-hosted integration runtime is logically registered to the Azure Data Factory and the compute resource used to support its function as provided by you. Therefore there is no explicit location property for self-hosted IR. When used to perform data movement, the self-hosted IR extracts data from the source and writes it into the destination.
+The self-hosted integration runtime is logically registered to the Azure Data Factory and the compute resource used to support its function as provided by you. Therefore there's no explicit location property for self-hosted IR. When used to perform data movement, the self-hosted IR extracts data from the source and writes it into the destination.
 
 ## Create a self-hosted Integration Runtime within Azure Data Factory
 
 1. On the Let's get started page of Azure Data Factory UI, select Manage in the leftmost pane, and select Integration runtimes. Select +New.
     > [!div class="mx-imgBorder"]  
-    > ![Create an integration runtime](../media/create-integration-runtime.png)
+    > ![Screenshot that shows the Integration runtimes page with the New button highlighted.](../media/create-integration-runtime.png)
 
 1. On the Integration runtime setup page, select Azure, Self-Hosted, and then select Continue.
     > [!div class="mx-imgBorder"]  
-    > ![Create a selfhosted IR](../media/self-hosted-integration-runtime.png)
+    > ![Screenshot that shows the Integration runtime setup page with the Self-Hosted option selected.](../media/self-hosted-integration-runtime.png)
 
-1. On the Integration runtime setup page, type in a name of MySelfHostedIR, and click Create 
+1. On the Integration runtime setup page, type in a name of MySelfHostedIR, and select Create 
     > [!div class="mx-imgBorder"]  
-    > ![Integration runtime setup](../media/integration-runtime-setup.png)
+    > ![Screenshot that shows the Integration runtime setup page with the name field filled in.](../media/integration-runtime-setup.png)
 
 1. Copy and paste the authentication key. Select Download and install integration runtime.
     > [!div class="mx-imgBorder"]  
-    > ![Integration runtime setup keys](../media/integration-runtime-setup-keys.png)
+    > ![Screenshot that shows the Integration runtime setup page with the authentication key and the download link for the runtime installer.](../media/integration-runtime-setup-keys.png)
 
 1. Download the self-hosted integration runtime on a local Windows machine. Run the installer.
 
 1. On the Register Integration Runtime (Self-hosted) page, paste the key you saved earlier, and select Register.
     > [!div class="mx-imgBorder"]  
-    > ![Register the integration runtime](../media/register-integration-runtime.png)
+    > ![Screenshot that shows the Register Integration Runtime page with the authentication key pasted into the key field.](../media/register-integration-runtime.png)
 
 1. On the New Integration Runtime (Self-hosted) Node page, select Finish.
 
 1. After the self-hosted integration runtime is registered successfully, you see the following window:
     > [!div class="mx-imgBorder"]  
-    > ![Successful registration](../media/successful-registration.png)
+    > ![Screenshot that shows the successful registration confirmation for the self-hosted integration runtime.](../media/successful-registration.png)
 
 ## Automated deployments
 
@@ -63,7 +64,7 @@ You can also set up a self-hosted IR on an Azure VM via an Azure Resource Manage
 
 2. Download and install the self-hosted integration runtime on a local machine.
 
-3. Retrieve the authentication key and register the self-hosted integration runtime with the key. Here is a PowerShell example:
+3. Retrieve the authentication key and register the self-hosted integration runtime with the key. Here's a PowerShell example:
 
     ```PowerShell
     Get-AzDataFactoryV2IntegrationRuntimeKey -ResourceGroupName $resourceGroupName -DataFactoryName $dataFactoryName -Name $selfHostedIntegrationRuntimeName  

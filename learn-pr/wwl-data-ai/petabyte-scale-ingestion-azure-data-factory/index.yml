@@ -2,14 +2,14 @@
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
 metadata:
   title: Petabyte-scale ingestion with Azure Data Factory
-  description: "Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 02/13/2024
-  author: wwlpublish
-  ms.author: jamesh
+  description: "Petabyte-scale ingestion with Azure Data Factory"
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-factory 
-title: Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline
-summary: In this module, you will learn the various methods that can be used to ingest data between various data stores using Azure Data Factory.
+title: Petabyte-scale ingestion with Azure Data Factory
+summary: In this module, you'll learn the various methods that can be used to ingest data between various data stores using Azure Data Factory.
 abstract: |
   * Introduction
   * List the data factory ingestion methods
@@ -22,7 +22,7 @@ abstract: |
   * Summary
 prerequisites: |
   The student should be able to:
-  - Log in to the Azure portal
+  - Sign in to the Azure portal
   - Explain and create resource groups
   - Describe Azure Data Factory and its core components
 iconUrl: /training/achievements/petabyte-scale-ingestion-azure-data-factory.svg
@@ -33,7 +33,6 @@ roles:
 - data-scientist
 products:
 - azure-data-factory
-- azure-synapse-analytics
 subjects:
 - app-development
 units:
@@ -48,4 +47,3 @@ units:
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.summary
 badge:
   uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.badge
-
