@@ -20,7 +20,6 @@ roles:
 - data-engineer
 products:
 - azure-stream-analytics
-- azure-synapse-analytics
 - power-bi
 subjects:
 - data-analytics
