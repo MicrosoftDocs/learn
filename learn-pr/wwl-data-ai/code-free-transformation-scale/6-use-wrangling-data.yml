@@ -4,12 +4,12 @@ title: Exercise - Use Azure Data Factory wrangling data
 metadata:
   title: Exercise - Use Azure Data Factory wrangling data
   description: "Exercise - Use Azure Data Factory wrangling data"
-  ms.date: 11/18/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-use-wrangling-data.md)]
+  [!include[](includes/6-use-wrangling-data.md)]

@@ -67077,6 +67077,31 @@
       "source_path": "learn-pr/wwl-sci/priva-understand-priva/summary.md",
       "redirect_url": "/privacy/priva/priva-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-sap-microsoft-cloud/5-sentinel-solution-sap-business-technology-platform-overview.md",
+      "redirect_url": "/training/modules/secure-sap-microsoft-cloud/6-sentinel-solution-sap-business-technology-platform-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-sap-microsoft-cloud/6-automatic-response-sentinel-capability.md",
+      "redirect_url": "/training/modules/secure-sap-microsoft-cloud/7-automatic-response-sentinel-capability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-sap-microsoft-cloud/7-azure-monitor-rise.md",
+      "redirect_url": "/training/modules/secure-sap-microsoft-cloud/8-azure-monitor-rise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-sap-microsoft-cloud/8-knowledge-check.md",
+      "redirect_url": "/training/modules/secure-sap-microsoft-cloud/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/secure-sap-microsoft-cloud/9-summary.md",
+      "redirect_url": "/training/modules/secure-sap-microsoft-cloud/10-summary",
+      "redirect_document_id": false
     }
   ]
 }

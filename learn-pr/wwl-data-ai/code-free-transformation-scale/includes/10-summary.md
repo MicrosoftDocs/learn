@@ -2,3 +2,6 @@ The Mapping Data Flow makes it even easier for more people to create code free t
 
 > [!Important]
 > Should you be working in your own subscription while running through this content, it is best practice at the end of a project to identify whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or just delete the resource group to get rid of the entire set.
+
+> [!NOTE]
+> [Data Factory in Microsoft Fabric](/fabric/data-factory/) is the next generation of Azure Data Factory, with a simpler architecture, built-in AI, and new integration features. If you're new to data integration, start with Data Factory in Microsoft Fabric.
