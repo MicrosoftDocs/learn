@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=fe6a5b0a-e365-4825-8080-682bb06db603]
 
@@ -16,6 +17,7 @@ You explored how to:
 - Analyze images using the Content Understanding API
 
 Content Understanding transforms unstructured visual content into structured, actionable data. By defining a schema and using prebuilt or custom analyzers, you can automate image analysis for document processing, inventory management, quality inspection, and other business scenarios.
+
 ::: zone-end
 
 > [!TIP]

@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=c3009df7-2129-468a-932a-474de9faf3f6]
 
@@ -15,6 +16,7 @@ For example, the OpenAI *gpt-image-1* model can create original graphical conten
 The ability to use AI to generate graphics has many applications; including the creation of illustrations or photorealistic images for articles or marketing collateral, generation of unique product or company logos, or any scenario where a desired image can be described.
 
 In this module, you'll learn how to develop an application that uses generative AI to generate original images.
+
 ::: zone-end
 
 > [!NOTE]

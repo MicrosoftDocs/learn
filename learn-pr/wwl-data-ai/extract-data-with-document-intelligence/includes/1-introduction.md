@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=601786ba-c68f-42cb-abe7-0b12b3b8cbdc]
 
@@ -28,6 +29,7 @@ By the end of this module, you'll be able to:
 
 - Familiarity with Azure and the Azure portal.
 - Programming experience with C# or Python.
+  
 ::: zone-end
 
 > [!NOTE]

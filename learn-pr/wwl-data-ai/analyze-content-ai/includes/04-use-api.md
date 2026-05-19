@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=2215749f-e6e0-41e7-9ed7-6edf3fb4e71c]
 

@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=9714b6a8-1785-46eb-b4ff-4d0026dcaac4]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Microsoft Foundry Models is a model catalog that includes generative AI models from multiple providers. Different models have different capabilities, and are optimized for different use-cases.
 
 To find a suitable model, you can use the filter and search features in the Microsoft Foundry Portal.

@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=2b2fd243-f958-4b8c-a816-ec21648eefe9]
 
@@ -25,4 +26,5 @@ After deploying a multimodal model, you can test it in the chat playground in Mi
 ![Screenshot of the chat playground with an image-based prompt.](../media/image-prompt.png)
 
 In the chat playground, you can upload an image from a local file and add text to the message to elicit a response from a multimodal model.
+
 ::: zone-end

@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=56be56e2-5ebf-4776-a72e-d1443dde578b]
 
@@ -168,4 +169,5 @@ Use confidence scores to build automation workflows that route low-confidence ex
 - **Consistent orientation**: Upright images are processed more reliably than rotated ones
 
 Content Understanding's image analysis capabilities enable you to transform visual content into structured, actionable data for document processing, inventory management, quality inspection, and many other business scenarios.
+
 ::: zone-end

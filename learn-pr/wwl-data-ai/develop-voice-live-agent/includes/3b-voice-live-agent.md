@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=154e537e-4a48-4c0e-9871-165eda877a3c]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 You can create and run an application to use Voice Live with a Microsoft Foundry agent. Using agents with Voice Live brings the following advantages over connecting directly to a model:
 
 - Agents encapsulate instructions and configuration within the agent itself, rather than specifying instructions in the session code.

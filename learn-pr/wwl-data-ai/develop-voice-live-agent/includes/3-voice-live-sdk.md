@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=d88999e9-646e-4bc4-87f5-f772b445bdc2]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 The Azure AI Voice Live client library for Python provides a real-time, speech-to-speech client for Azure AI Voice Live API. It opens a WebSocket session to stream microphone audio to the service and receives server events for responsive conversations.
 
 > [!IMPORTANT]
