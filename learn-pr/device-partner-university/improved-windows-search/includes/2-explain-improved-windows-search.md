@@ -31,7 +31,7 @@ Key enhancements include:
 These improvements reduce the time users spend navigating folders or switching between applications to locate information.
 
 > [!NOTE]
-> Improved Windows Search supports a range of text, image, and document formats, including the file types listed below. This list may expand over time as support continues to evolve.
+> Improved Windows Search supports a range of text, image, and document formats, including the file types listed. This list might expand over time as support continues to evolve.
 >
 > - Documents: .txt, .pdf, .docx, .doc, .rtf, .pptx, .ppt, .xls, .xlsx
 >

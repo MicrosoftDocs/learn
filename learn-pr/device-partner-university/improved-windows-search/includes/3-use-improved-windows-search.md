@@ -1,4 +1,4 @@
-Traditional search requires remembering exact file names or locations. Improved Windows Search removes that dependency by understanding intent and context. 
+Traditional search requires remembering exact file names or locations. Improved Windows Search removes that dependency by understanding intent and context.
 
 Improved Windows Search is available directly within Windows, making it easy to find what you need without switching between tools. You can access it from the taskbar’s Windows Search box, File Explorer, or Settings, so you can readily find what you’re looking for. Use the taskbar search box for quick, broad searches across apps, files, and settings, and use File Explorer when you want to focus on files within a specific location.
 
@@ -68,10 +68,10 @@ Improved Windows Search automatically indexes common locations on your device. Y
 1. Choose **Searching Windows**.
 1. Select one of the following:
 
-   - **Classic:** This mode indexes your Documents, Pictures, and Music folders plus the desktop by default. It is suitable for users who primarily store their files in these locations. Classic mode provides a balance between search performance and system resource usage.  
+   - **Classic:** This mode indexes your Documents, Pictures, and Music folders plus the desktop by default. It's suitable for users who primarily store their files in these locations. Classic mode provides a balance between search performance and system resource usage.  
 
-   - **Enhanced:** This mode indexes your entire PC, including all user folders and files. It is ideal for users who store files in various locations across their device. Enhanced mode provides more comprehensive search results but may use more system resources.
+   - **Enhanced:** This mode indexes your entire PC, including all user folders and files. It's ideal for users who store files in various locations across their device. Enhanced mode provides more comprehensive search results but might use more system resources.
 
    Choose Classic if you mainly work within standard folders like Documents and Desktop. Choose Enhanced if your files are spread across multiple locations and you want more complete search results.
 
-To add another location for indexing, select **Customize search locations**, then choose **Modify** to see Indexed locations and select the folder(s) you want to add.
+To add another location for indexing, select **Customize search locations**, then choose **Modify** to see Indexed locations and select the folders you want to add.

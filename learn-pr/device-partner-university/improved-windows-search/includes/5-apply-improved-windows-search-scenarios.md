@@ -2,7 +2,7 @@ Improved Windows Search delivers value across the organization. The following sc
 
 ### IT and Operations
 
-An IT administrator is troubleshooting a device issue that’s affecting a user’s ability to work. The user’s productivity is stalled, and the IT administrator needs to quickly locate a specific system setting, but navigating multiple menus to find it is slowing resolution.
+An IT administrator is troubleshooting a device issue that’s affecting a user’s ability to work. The user’s productivity is stalled, and the IT administrator needs to quickly locate a specific system setting, but navigating multiple menus to find it's slowing resolution.
 
 They open **Settings search** and type “remote desktop settings.” Windows immediately surfaces the correct setting based on intent, allowing them to adjust the configuration without digging through system menus.
 

@@ -21,7 +21,7 @@ In these situations, Improved Windows Search helps users stay focused on their w
 
 ## Try it yourself
 
-Use Improved Windows Search to complete the following tasks. If search is working as expected, you should see relevant results appear quickly based on your query— even without exact file names or locations.
+Use Improved Windows Search to complete the following tasks. If search is working as expected, you should see relevant results appear quickly based on your query—even without exact file names or locations.
 
 1. Open the taskbar’s **Windows Search box** and type a natural language query such as:  
 

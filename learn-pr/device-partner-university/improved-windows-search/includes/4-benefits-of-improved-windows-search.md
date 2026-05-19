@@ -1,4 +1,4 @@
-Searching is one of the most common tasks users perform throughout the day. Whether locating files, accessing settings, or retrieving information, even small delays can interrupt workflow and reduce productivity. 
+Searching is one of the most common tasks users perform throughout the day. Whether locating files, accessing settings, or retrieving information, even small delays can interrupt workflow and reduce productivity.
 
 Improved Windows Search reduces this friction by allowing users to describe what they’re looking for and quickly access the most relevant results.
 
