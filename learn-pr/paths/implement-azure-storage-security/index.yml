@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-azure-storage-security
+metadata:
+  title: Implement Security for Azure Storage for the Cloud and AI Security Engineer
+  description: "Implement a defense-in-depth security strategy for Azure Storage. Harden storage accounts, govern access with Microsoft Entra ID and stored access policies, enforce network perimeter controls using firewall rules and private endpoints, and enable Microsoft Defender for Storage to detect threats from malicious uploads and compromised AI agent credentials."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: Implement security for Azure Storage for the cloud and AI security engineer
+summary: |
+  Implement a defense-in-depth security strategy for Azure Storage. In this learning path, you harden storage accounts against common attack vectors, and govern access with Microsoft Entra ID managed identities and stored access policies. Next you configure network perimeter controls using firewall rules and private endpoints, and enable Microsoft Defender for Storage to detect threats including malicious file uploads and compromised AI agent credentials.
+prerequisites: |
+  - Familiarity with Azure Storage accounts including Blob Storage and Azure Files
+  - Understanding of Azure role-based access control (RBAC) and managed identities
+  - Familiarity with Microsoft Defender for Cloud at a foundational level
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-storage
+  - azure-blob-storage
+  - azure-files
+  - defender-for-cloud
+subjects:
+  - security
+  - cloud-security
+modules:
+- learn.wwl.describe-azure-storage-services
+- learn.wwl.implement-storage-account-security
+- learn.wwl.configure-network-security-azure-storage
+- learn.wwl.implement-defender-storage
+trophy:
+  uid: learn.wwl.implement-azure-storage-security.trophy
