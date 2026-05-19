@@ -5,9 +5,6 @@
 > [!TIP]
 > See the **Text and images** tab for more details!
 
-> [!TIP]
-> Select the **Text** tab for more details!
-
 ::: zone-end
 
 ::: zone pivot="text"
