@@ -14,13 +14,15 @@ summary: In this module, you learn about integrating Azure Identity Services wit
 abstract: |
   After completing this module, you’ll be able to:
 
-  -   Understand and configure single sign-on (SSO) for SAP environments running in ECS/RISE using Microsoft Entra ID.
+  -   Understand and configure single sign-on (SSO) with MFA for SAP environments running in ECS/RISE using Microsoft Entra ID.
 
   -   Manage SAP user lifecycle and authorizations using Microsoft Entra ID Governance.
 
   -   Utilize Microsoft's Security Copilot for responding to cyber threats and assessing risk exposure.
 
-  -   Implement Microsoft Sentinel solution for monitoring, detection, and response to suspicious activities in SAP applications.
+  -   Implement Microsoft Sentinel solution for SAP and SAP BTP for signal correlation across the enterprise, monitoring, detection, and response to suspicious activities in SAP applications.
+
+  -   Implement SAP LogServ add-on for Microsoft Sentinel solution for SAP to enhance the application layer logs with the logs owned by SAP ECS (infra, database, etc.).
 
   -   Understand the limitations of Azure Monitor for SAP solutions with SAP RISE/ECS and the alternatives available.
 prerequisites: |
@@ -44,6 +46,7 @@ units:
 - learn.wwl.secure-sap-microsoft-cloud.azure-identity-services-rise
 - learn.wwl.secure-sap-microsoft-cloud.microsoft-security-copilot-rise
 - learn.wwl.secure-sap-microsoft-cloud.microsoft-sentinel-security-rise
+- learn.wwl.secure-sap-microsoft-cloud.sentinel-solution-sap-logserv
 - learn.wwl.secure-sap-microsoft-cloud.sentinel-solution-sap-business-technology-platform-overview
 - learn.wwl.secure-sap-microsoft-cloud.automatic-response-sentinel-capability
 - learn.wwl.secure-sap-microsoft-cloud.azure-monitor-rise
