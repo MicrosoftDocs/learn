@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.improved-windows-search.summary
+title: Key takeaways
+metadata:
+  title: Key Takeaways
+  description: This content is part of the "Discover faster insights with Improved Windows Search" module.
+  ms.date: 05/19/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]
