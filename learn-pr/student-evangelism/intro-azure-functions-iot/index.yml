@@ -26,7 +26,7 @@ prerequisites: |
     
 iconUrl: /training/achievements/student-evangelism/introduction-to-azure-functions-iot-edge.svg
 badge:
-  uid: learn.oxford.intro-iot-functions-iot.badge
+  uid: learn.oxford.intro-iot-funtions-iot.badge
 levels:
 - beginner
 roles:
