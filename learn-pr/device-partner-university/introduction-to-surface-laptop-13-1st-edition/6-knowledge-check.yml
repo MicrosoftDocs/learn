@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-surface-laptop-13-1st-edition.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Surface Laptop for Business, 13-inch (1st Edition)" module.
+  ms.date: 05/19/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which scenario best aligns with when Surface Laptop for Business, 13-inch (1st Edition) is most appropriate?"
+    choices:
+        - content: "A stationary workstation used exclusively for high-end rendering tasks in a fixed office"
+          isCorrect: false
+          explanation: "Incorrect. The device is designed for portability and flexible work scenarios, not as a fixed, high-performance rendering workstation."
+        - content: "A mobile consultant who travels frequently and works across Microsoft 365 apps and video calls"
+          isCorrect: true
+          explanation: "Correct. The module identifies mobile information workers—such as consultants and project leads—as a key use case, emphasizing portability and support for Microsoft 365 workloads and collaboration tools."
+        - content: "A gaming-focused device designed for entertainment and graphics-intensive applications"
+          isCorrect: false
+          explanation: "Incorrect. The device is positioned for business productivity and AI-enabled workflows, not gaming or entertainment."
+        - content: "A device intended primarily for offline use without cloud-connected tools"
+          isCorrect: false
+          explanation: "Incorrect. The module highlights integration with Microsoft 365 apps and collaboration tools, which rely on connected experiences."
+  - content: "What is the primary function of the Neural Processing Unit (NPU) in Surface Laptop for Business, 13-inch (1st Edition)?"
+    choices:
+        - content: "To store files locally for faster retrieval"
+          isCorrect: false
+          explanation: "Incorrect. File storage is handled by the device’s internal storage, not the NPU."
+        - content: "To enable on-device AI processing and workflows"
+          isCorrect: true
+          explanation: "Correct. The NPU powers on-device AI experiences such as document summaries, translation, and other AI-driven workflows."
+        - content: "To manage USB-C connections and external monitors"
+          isCorrect: false
+          explanation: "Incorrect. External connections are handled by device ports, not the NPU."
+        - content: "To control battery charging and power efficiency"
+          isCorrect: false
+          explanation: "Incorrect. Charging and power management are handled by other system components, not the NPU."
+  - content: "How does Improved Windows Search help users find files and settings more efficiently?"
+    choices:
+        - content: "It requires exact file names and locations for accurate results"
+          isCorrect: false
+          explanation: "Incorrect. The feature removes the need for exact file names by supporting natural language searches."
+        - content: "It disables indexing to improve system performance"
+          isCorrect: false
+          explanation: "Incorrect. The feature uses indexing to support efficient search results, not disable it."
+        - content: "It allows users to search using natural language instead of exact terms"
+          isCorrect: true
+          explanation: "Correct. The module explains that Improved Windows Search uses AI to understand intent, allowing users to search without remembering exact file names or locations."
+        - content: "It limits search functionality to the Settings application only"
+          isCorrect: false
+          explanation: "Incorrect. The feature is available in File Explorer, the taskbar search box, and the Settings app."
+  - content: "What is a key capability of Live Captions on Surface Laptop for Business, 13-inch (1st Edition)?"
+    choices:
+        - content: "It converts handwritten notes into editable digital text"
+          isCorrect: false
+          explanation: "Incorrect. This function isn't part of Live Captions."
+        - content: "It transcribes and translates audio into captions in real time"
+          isCorrect: true
+          explanation: "Correct. The feature uses on-device processing to transcribe audio from multiple languages into captions."
+        - content: "It enhances video resolution and visual quality during playback"
+          isCorrect: false
+          explanation: "Incorrect. Display quality is determined by hardware, not Live Captions."
+        - content: "It reduces power consumption when streaming video content"
+          isCorrect: false
+          explanation: "Incorrect. Live Captions is designed for accessibility, not power management."
+  - content: "Which feature allows IT administrators to remotely disable hardware components on Surface Laptop for Business, 13-inch (1st Edition)?"
+    choices:
+        - content: "Windows Autopilot"
+          isCorrect: false
+          explanation: "Incorrect. Windows Autopilot is used for device deployment and lifecycle management, not restricting hardware components."
+        - content: "Device Firmware Configuration Interface (DFCI)"
+          isCorrect: true
+          explanation: "Correct. DFCI enables IT administrators to remotely disable specific hardware components and restrict user access."
+        - content: "Improved Windows Search"
+          isCorrect: false
+          explanation: "Incorrect. This feature is used to help locate files and settings, not manage device hardware."
+        - content: "Surface Studio Camera settings"
+          isCorrect: false
+          explanation: "Incorrect. Camera settings control camera functionality but don't provide system-wide hardware restrictions."
