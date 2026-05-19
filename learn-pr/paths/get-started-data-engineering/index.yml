@@ -3,9 +3,9 @@ uid: learn.wwl.get-started-data-engineering
 metadata:
   title: Get started with data engineering on Azure
   description: Learn how to perform core data engineering workloads on Microsoft Azure.
-  ms.date: 02/07/2023
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/19/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: learning-path
 title: Get started with data engineering on Azure
 prerequisites: |
@@ -19,7 +19,6 @@ roles:
 - data-engineer
 products:
 - azure-data-lake-storage
-- azure-synapse-analytics
 subjects:
 - data-engineering
 modules:
