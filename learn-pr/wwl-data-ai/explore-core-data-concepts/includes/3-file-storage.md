@@ -102,7 +102,7 @@ Some common optimized file formats you might see include *Parquet* and *Avro*:
 - *Avro* is a row-based format. It was created by Apache. Each file contains a header that describes the structure of the data in the file. This header is stored as JSON. The data is stored as binary information in one or more blocks of records. An application uses the information in the header to parse the binary data and extract the fields it contains. Avro is a good format for compressing data and minimizing storage and network bandwidth requirements.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram showing Avro format.](../media/avro.png)
+> ![Diagram showing Avro format.](../media/row-based-storage.png)
 
 - *Delta Lake* is an open-source storage format that builds on Parquet by adding a transaction log, which enables ACID transactions, data versioning, and reliable updates on top of files stored in a data lake.
 
