@@ -3,6 +3,9 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7e2b484f-dbc3-43dd-b55c-38b002e11267]
 
 > [!TIP]
+> See the **Text and images** tab for more details!
+
+> [!TIP]
 > Select the **Text** tab for more details!
 
 ::: zone-end

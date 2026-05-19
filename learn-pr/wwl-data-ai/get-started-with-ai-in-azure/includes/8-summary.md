@@ -2,7 +2,7 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=389ed1d3-889c-4f4c-9d18-991568f96b22]
 
-> [!NOTE]
+> [!TIP]
 > See the **Text and images** tab for more details!
 
 ::: zone-end
@@ -21,4 +21,3 @@ Use the links below to learn more.
 - [Use a QuickStart to create a Foundry project and deploy a model](/azure/ai-foundry/tutorials/quickstart-create-foundry-resources?view=foundry&tabs=portal)
 - [Learn more about Foundry's Agent Service](/azure/ai-foundry/agents/overview?view=foundry)
 - [Learn more about Foundry Models' REST API](/azure/ai-foundry/openai/reference?view=foundry-classic)
-

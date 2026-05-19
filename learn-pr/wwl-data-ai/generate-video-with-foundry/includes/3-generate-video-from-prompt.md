@@ -1,10 +1,4 @@
 ﻿
-::: zone pivot="video"
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=df557c73-9038-4732-9e85-ad227227c921]
-
-> [!TIP]
-> See the Text and images tab for more details!
 
 ::: zone-end
 
@@ -119,3 +113,4 @@ For best results:
 Video generation with Sora 2 is a collaborative process. You provide direction, and the model delivers creative variations. Be prepared to experiment—sometimes the second or third generation is the best one.
 
 ::: zone-end
+
