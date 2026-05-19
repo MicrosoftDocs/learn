@@ -2,7 +2,7 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=cdc95eee-079d-4efe-b393-63357073f895]
 
-> [!NOTE]
+> [!TIP]
 > See the **Text and images** tab for more details!
 
 ::: zone-end

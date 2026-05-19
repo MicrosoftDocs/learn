@@ -4,7 +4,7 @@
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=d02c8cfd-dc7e-40ab-9c9b-739f473c8c95]
 
 > [!TIP]
-> See the Text and images tab for more details!
+> See the **Text and images** tab for more details!
 
 ::: zone-end
 
