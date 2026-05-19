@@ -1,50 +1,49 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.intro-iot-funtions-iot.knowledge-check
+uid: learn.oxford.intro-iot-functions-iot.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
   description: In this section, we create interactive questions that validate if the learner understands the learning objectives
-  ms.date: 07/25/2024
-  author: leestott
-  ms.author: leestott
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
   module_assessment: true
 durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "Which characteristic of Azure Functions for IoT helps to deploy large-scale IoT applications?"
+  - content: "Which characteristic of Azure Functions helps to deploy large-scale IoT applications?"
     choices:
-    - content: "Azure Functions for IoT can manage demand that spikes up or down."
+    - content: "Azure Functions can manage demand that spikes up or down."
       isCorrect: true
-      explanation: "Correct. Azure Functions for IoT enables developers to create scalable IoT applications that can be rapidly deployed without provisioning a fixed infrastructure capacity in advance. This helps with large-scale IoT solutions where demand from IoT devices can spike up or down rapidly."
-    - content: "Azure Functions for IoT is secure."
+      explanation: "Correct. Azure Functions enables developers to create scalable IoT applications that can be rapidly deployed. On Flex Consumption, the recommended serverless pay-as-you-go plan for new function apps, Azure Functions can scale event-driven processing without preallocating fixed compute capacity. The legacy Consumption plan can also scale this way, and it remains the only serverless option for Windows function apps."
+    - content: "Azure Functions is secure."
       isCorrect: false
       explanation: "Incorrect. Security doesn't directly help in scaling solutions"
-    - content: "Azure Functions for IoT can manage large volumes of data."
+    - content: "Azure Functions automatically stores every IoT message and image in a database."
       isCorrect: false
-      explanation: "Incorrect. In themselves, IoT functions aren't related to managing large data volumes"
-  - content: "An Azure Function has two parts - triggers and bindings. Collectively, what do triggers and bindings achieve?"
+      explanation: "Incorrect. Azure Functions runs event-driven code. You must configure bindings, application code, and downstream services to store data."
+  - content: "How do triggers and bindings work together in an Azure Function?"
     choices:
     - content: "Triggers and bindings help to create a scalable solution."
       isCorrect: false
-      explanation: "Incorrect. Scalable solutions are a feature of Azure solutions but aren't uniquely related to Triggers and Bindings."
+      explanation: "Incorrect. Scalable solutions are a feature of Azure solutions but aren't uniquely related to triggers and bindings."
     - content: "Triggers and bindings help you to avoid hardcoding access to other services."
       isCorrect: true
-      explanation: "Correct. The trigger invokes the function and provides data needed by the function. Bindings connect resources to the function. Data from bindings is provided to the function as parameters. Thus, Triggers and bindings help you to avoid hardcoding access to other services."
+      explanation: "Correct. Each Azure Function has exactly one trigger, which invokes the function and provides data needed by the function. A function can optionally use one or more input and output bindings to connect to other resources. Together, triggers and bindings help you to avoid hardcoding access to other services."
     - content: "Triggers and bindings provide a rapid response to events."
       isCorrect: false
       explanation: "Incorrect. Triggers and bindings aren't uniquely responsible for providing a rapid response to events."
-  - content: "Identify the feature of Azure Functions for IoT that ensure that you're charged only for the resources you use?"
+  - content: "Identify the feature of Azure Functions on a serverless pay-as-you-go hosting plan that helps ensure that you're charged only for the resources you use?"
     choices:
-    - content: "Azure Functions for IoT is faster hence they use less resources."
+    - content: "Azure Functions runs faster, so it uses fewer resources."
       isCorrect: false
-      explanation: "Incorrect. The speed of execution doesn't directly influence overall resources."
+      explanation: "Incorrect. Azure Functions doesn't have a feature that simply makes code run faster. On serverless consumption-style plans, duration and memory do affect billed resources, so the cost-related characteristic is avoiding preallocated compute capacity, not raw execution speed."
     - content: "Azure Functions can be managed through a dashboard."
       isCorrect: false
       explanation: "Incorrect. The existence of a dashboard doesn't influence the cost."
-    - content: "You don't have to preallocate the resources in advance."
+    - content: "You don't have to preallocate fixed compute capacity in advance."
       isCorrect: true
-      explanation: "Correct. You're charged only for the resources you use. You don't have to manage the infrastructure and to allocate the resources in advance. The system does that for you."
-
+      explanation: "Correct. On Flex Consumption, the recommended serverless pay-as-you-go plan for new function apps, Azure Functions can scale automatically and billing is based on executions and resources used. The legacy Consumption plan has similar billing behavior and remains the only serverless option for Windows function apps, while [Linux Consumption hosting retires on September 30, 2028](/azure/azure-functions/consumption-plan), so existing Linux Consumption apps should migrate to Flex Consumption. Premium, Dedicated, and Container Apps hosting plans have different billing and capacity behavior."
+
