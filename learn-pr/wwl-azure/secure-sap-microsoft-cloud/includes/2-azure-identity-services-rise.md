@@ -21,9 +21,9 @@ For more information about SNC, see [Getting started with SAP SNC for RFC integr
 
 Microsoft Entra also supports passwordless and phishing‑resistant authentication methods such as Microsoft Authenticator and Passkeys (FIDO2), improving security while simplifying the user sign‑in experience.
 
-## Multi-factor authentication for SAP GUI with Microsoft Entra
+## Multifactor authentication for SAP GUI with Microsoft Entra
 
-While SSO secures the sign-in experience, organizations increasingly require multi-factor authentication (MFA) for SAP GUI to meet Zero Trust and compliance requirements. Two approaches integrate MFA for SAP GUI with Microsoft Entra ID, both using SNC (Secure Network Communications) and Entra Conditional Access to enforce the second factor.
+While SSO secures the sign-in experience, organizations increasingly require multifactor authentication (MFA) for SAP GUIto meet Zero Trust and compliance requirements. Two approaches integrate MFA for SAP GUI with Microsoft Entra ID, both using SNC (Secure Network Communications) and Entra Conditional Access to enforce the second factor.
 
 ### Approach 1: Microsoft Entra Private Access with Global Secure Access client (recommended)
 
@@ -57,7 +57,7 @@ For a detailed walkthrough, see [SAP GUI MFA with SAP Secure Login Service and M
  
 Microsoft Entra ID Governance modernizes SAP access management by enabling HR‑driven provisioning, entitlement management, access reviews, and policy‑based controls, reducing operational overhead while strengthening security and compliance. 
 
-Through native integration with SAP Cloud Identity Services (CIS), Microsoft Entra enables automated user and group provisioning, ensuring consistent identity lifecycle management and a seamless user experience across SAP applications, including SAP S/4HANA, SAP BTP, SAP SaaS and On-Premises solutions.
+Through native integration with SAP Cloud Identity Services (CIS), Microsoft Entra enables automated user and group provisioning, ensuring consistent identity lifecycle management and a seamless user experience across SAP applications, including SAP S/4HANA, SAP BTP, SAP SaaS and on-premises solutions.
 
 For advanced SAP authorization governance, Microsoft Entra provides a native integration with SAP Identity Access Governance (SAP IAG), allowing SAP business roles to be managed directly within Entra access packages. This delivers a unified governance model, streamlined approvals, and automated role assignments across SAP systems, aligned with Zero Trust principles. 
 

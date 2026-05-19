@@ -3,7 +3,7 @@ As covered in the previous unit, the Microsoft Sentinel solution for SAP applica
 **[SAP LogServ](/azure/sentinel/sap/sap-logserv-overview)** is an optional add-on service in your SAP Cloud ERP private package that closes this gap. It unlocks access to all remaining logs from SAP's managed services — including complete SAP HANA database insights, system-level security telemetry, and audit trails — streaming them directly into Microsoft Sentinel Solution for SAP.
 
 > [!NOTE]
-> SAP LogServ is a first-of-its-kind Sentinel-native integration built by SAP. RISE on Azure customers have the exclusive ability to leverage this push-based integration without any intermediary infrastructure - Unlike other pull-based mechanisms involving log-forwarding functions.
+> SAP LogServ is a first-of-its-kind Sentinel-native integration built by SAP. RISE on Azure customers have the exclusive ability to leverage this push-based integration without any intermediary infrastructure - unlike other pull-based mechanisms involving log-forwarding functions.
 
 ## Solution architecture
 
@@ -53,9 +53,9 @@ Learn more from [this blog article](https://community.sap.com/t5/enterprise-reso
 
 A built-in workbook provides operational insights into your LogServ data — visualizing log ingestion patterns, available log sources, and helping you create alerts for anomalies.
 
-:::image type="content" source="../media/logserv-workbook1.png" alt-text="Screenshot showing the upper part of the SAP LogServ workbook in Microsoft Sentinel with log ingestion patterns and source overview." lightbox="../media/logserv-workbook1.png":::
+:::image type="content" source="../media/logserv-workbook-1.png" alt-text="Screenshot showing the upper part of the SAP LogServ workbook in Microsoft Sentinel with log ingestion patterns and source overview." lightbox="../media/logserv-workbook-1.png":::
 
-:::image type="content" source="../media/logserv-workbook2.png" alt-text="Screenshot showing the lower part of the SAP LogServ workbook in Microsoft Sentinel with log ingestion patterns and source overview." lightbox="../media/logserv-workbook2.png":::
+:::image type="content" source="../media/logserv-workbook-2.png" alt-text="Screenshot showing the lower part of the SAP LogServ workbook in Microsoft Sentinel with log ingestion patterns and source overview." lightbox="../media/logserv-workbook-2.png":::
 
 Learn more from [this blog article](https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/gaining-operational-insights-with-the-sap-logserv-workbook-on-microsoft/ba-p/14165489)
 

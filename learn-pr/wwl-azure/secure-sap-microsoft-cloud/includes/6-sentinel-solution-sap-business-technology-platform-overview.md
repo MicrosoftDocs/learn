@@ -2,12 +2,12 @@ SAP BTP is a cloud-based solution that provides a wide range of tools and servic
 
 The Microsoft Sentinel solution for SAP BTP monitors and protects your SAP Business Technology Platform (BTP) system by collecting audits and activity logs from the BTP-based apps, and detecting threats, suspicious activities, illegitimate activities, and more.
 
-## What SAP services are covered
+## What SAP services are covered?
 
 The Microsoft Sentinel Solution for SAP BTP covers all SAP BTP services that log security-relevant events to the [SAP Audit Log Management service](https://help.sap.com/docs/btp/sap-business-technology-platform/security-events-logged-by-cf-services). Among the supported services are:
 
 - **SAP Cloud Integration - Integration Suite**: Connects different SAP applications and systems, both on-premises and in the cloud, to facilitate data exchange and integration processes.
-- **SAP Cloud Identity Service - Identity Authentication**: Provides secure and seamless access to SAP applications through single sign-on (SSO), multi-factor authentication (MFA), and proxy scenarios with Microsoft Entra ID.
+- **SAP Cloud Identity Service - Identity Authentication**: Provides secure and seamless access to SAP applications through single sign-on (SSO), multifactor authentication (MFA), and proxy scenarios with Microsoft Entra ID.
 - **SAP Business Application Studio (BAS)**: A cloud-based development environment that provides tools and services for building, testing, and deploying applications on SAP BTP using low-code and pro-code approaches.
 - **SAP Build Apps**: A low-code development platform for creating custom business applications quickly using visual modeling and prebuilt components.
 - **SAP Build Work Zone**: A unified point of access to SAP applications (such as SAP S/4HANA), custom-built, and third-party applications and extensions, both on the cloud and on-premises.

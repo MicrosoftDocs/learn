@@ -8101,3 +8101,8 @@ achievements:
   title: Understand Microsoft Priva
   summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management and Subject Rights Requests, and learn how to configure settings and assign roles to ensure secure and effective use of Priva.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.secure-sap-microsoft-cloud.badge
+  type: badge
+  title: Secure SAP on Microsoft Cloud
+  summary: Integrate Azure Identity Services with SAP RISE, implement single sign-on, transition from SAP Identity Management to Microsoft Entra, and use Microsoft Security Copilot and Microsoft Sentinel with SAP RISE.
+  iconUrl: /training/achievements/generic-badge.svg

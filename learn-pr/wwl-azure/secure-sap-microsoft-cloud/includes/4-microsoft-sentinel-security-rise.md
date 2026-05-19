@@ -24,4 +24,4 @@ To enable the solution, an authorized RFC user is required on the SAP system and
 For more information about deploying the agentless data connector, see [Microsoft Sentinel for SAP deployment overview](/azure/sentinel/sap/deployment-overview).
 
 > [!IMPORTANT]
-> The agentless data connector of the Micrsoft Sentinel for SAP solution covers SAP application-layer logs. For infrastructure-level coverage — including **SAP HANA database logs**, OS logs, and NetWeaver infrastructure traces that are otherwise not available to customers in RISE — SAP offers the optional Logging Service **LogServ**. It serves as a native add-on to the Sentinel for SAP solution. Learn more in the next section.
+> The agentless data connector of the Microsoft Sentinel for SAP solution covers SAP application-layer logs. For infrastructure-level coverage — including **SAP HANA database logs**, OS logs, and NetWeaver infrastructure traces that are otherwise not available to customers in RISE — SAP offers the optional Logging Service **LogServ**. It serves as a native add-on to the Sentinel for SAP solution. Learn more in the next section.
