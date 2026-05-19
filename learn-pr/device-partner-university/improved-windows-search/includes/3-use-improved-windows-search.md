@@ -16,7 +16,7 @@ Improved Windows Search is available directly within Windows, making it easy to 
 
 Instead of relying on exact matches, Windows surfaces results based on meaning, recent activity, and relevance. Improved Windows Search uses AI to interpret intent, so even vague or incomplete queries can return relevant results.
 
-![Using the Windows Search box on the taskbar to find files with natural language queries](../media/taskbar-search-box.gif)
+![Gif that shows using the Windows Search box on the taskbar to find files with natural language queries.](../media/taskbar-search-box.gif)
 
 *Use the taskbar search box to quickly find files, apps, and settings by describing what you remember.*
 
@@ -37,7 +37,7 @@ Use File Explorer when you want to narrow your search to a specific location.
 
 This is especially useful when you remember what a file contains or when it was used, but not where it’s stored.
 
-![Searching for files in File Explorer using descriptive queries](../media/file-explorer.gif)
+![Gif that shows searching for files in File Explorer using descriptive queries.](../media/file-explorer.gif)
 
 *Search within File Explorer to narrow results by location and quickly find files based on their content, relevance, or recent activity.*
 
@@ -55,7 +55,7 @@ You can also use improved search to quickly access system settings.
 
 Windows maps your intent to the appropriate setting, eliminating the need to navigate through menus.
 
-![Searching for system settings using natural language in Windows](../media/windows-settings.gif)
+![Gif that shows searching for system settings using natural language in Windows.](../media/windows-settings.gif)
 
 *Find system settings by typing what you want to do, without needing to navigate menus.*
 
