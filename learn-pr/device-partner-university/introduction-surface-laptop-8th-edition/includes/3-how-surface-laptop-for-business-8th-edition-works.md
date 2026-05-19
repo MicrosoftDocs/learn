@@ -1,4 +1,4 @@
-:::image type="content" border="true" source="../media/surface-laptop-8th-edition-ports.jpeg" alt-text="Diagram of the ports on Microsoft Surface Laptop for Business (8th Edition).":::
+:::image type="content" border="true" source="../media/surface-laptop-8th-edition-ports.svg" alt-text="Diagram of the ports on Microsoft Surface Laptop for Business (8th Edition).":::
 
 Surface Laptop for Business (8th Edition) is a Copilot+ PC that's ideal for AI applications and business-centric portability. Let's get familiar with the hardware of Surface Laptop for Business (8th Edition) before you turn it on for the first time.
 
