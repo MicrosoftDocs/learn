@@ -4,6 +4,7 @@ title: Discover faster insights with Improved Windows Search
 metadata:
   title: Discover Faster Insights With Improved Windows Search
   description: In this module, you learn how Improved Windows Search uses AI to interpret user intent and deliver more relevant results through natural language queries. You also explore how features like enhanced indexing and access across Windows help users quickly locate files and improve productivity.
+  ms.date: 05/19/2026
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: module
@@ -37,6 +38,7 @@ units:
   - learn.dpu.improved-windows-search.benefits-of-improved-windows-search
   - learn.dpu.improved-windows-search.apply-improved-windows-search-scenarios
   - learn.dpu.improved-windows-search.choose-when-to-use-improved-windows-search
+  - learn.dpu.improved-windows-search.knowledge-check
   - learn.dpu.improved-windows-search.summary
 badge:
   uid: learn.dpu.improved-windows-search.badge
