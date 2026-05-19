@@ -13,15 +13,15 @@ When you open Surface Laptop for Business (8th Edition), you'll see the power bu
 
 :::image type="content" border="true" source="../media/windows-setup-flow.gif" alt-text="Animation of the Windows setup flow on Microsoft Surface Laptop for Business (8th Edition).":::
 
-After powering Surface Laptop for Business (8th Edition), it's easy to configure your settings and be ready to work in moments. Start by selecting your language, then connecting to your local network. Once the basics are set up, sign in to your Microsoft or work account. Doing this allows you to sync files and data across devices. Logging into your account will also automatically sign you into native applications like Microsoft Edge.
+After powering on your Surface Laptop for Business (8th Edition), it's easy to configure your settings and be ready to work in moments. Start by selecting your language, then connecting to your local network. Once the basics are set up, sign in to your Microsoft or work account. Doing this allows you to sync files and data across devices. Logging into your account will also automatically sign you into native applications like Microsoft Edge.
 
 After your account is synchronized, you'll have the option to set up biometric unlocking through Windows Hello to keep your device secure, importing settings from previous devices with your Microsoft Account backup, and finally setting up privacy settings. And now your Surface Laptop for Business (8th Edition) is ready to be used.
 
 To set up Windows Hello follow these steps:
 
-- Open **Settings**
-- Then select **Accounts**
-- Choose **Sign-in options**
-- Select **Facial recognition (Windows Hello)**
-- Select **Set up**
-- Follow on-screen instructions to register facial scan data
+1. Open **Settings**
+2. Then select **Accounts**
+3. Choose **Sign-in options**
+4. Select **Facial recognition (Windows Hello)**
+5. Select **Set up**
+6. Follow on-screen instructions to register facial scan data

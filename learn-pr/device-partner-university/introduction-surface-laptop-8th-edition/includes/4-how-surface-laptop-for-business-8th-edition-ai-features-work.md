@@ -31,12 +31,10 @@ Click to Do identifies text and images on your screen that you can take contextu
   - **Erase objects with Photos:** Erases unwanted objects in the image with the Photos app.
   - **Remove background with Paint:** Removes the background of the image with Paint.
 - Click to Do is enabled by default on Surface Laptop for Business (Intel). If you do not want to use this feature, this is how to disable it:
-  - Open **Settings**, then go to **Privacy & security > Click to Do**.
-  - Set the Click to Do setting to **Off** to disable the feature.
+  1. Open **Settings**, then go to **Privacy & security > Click to Do**.
+  2. Set the Click to Do setting to **Off** to disable the feature.
 
 ## Agent in Settings
-
-:::image type="content" border="true" source="../media/agent-in-settings.png" alt-text="Screenshot of the Agent in Settings feature on Microsoft Surface Laptop for Business (8th Edition).":::
 
 Using natural language, Agent in Settings helps to streamline finding and changing settings. Agent in Settings uses on-device AI to understand your intent, and with your permission, automate and execute the desired task. You're now able to quickly describe what you need help with like, "I want to control my PC by voice" or "my mouse pointer is too small" and Agent in Settings will recommend the steps to resolve it.
 

@@ -30,9 +30,9 @@ Imagine that you're a business user that needs a device that balances performanc
 
 To enable Adaptive Touch, follow these steps:
 
-- Open the **Surface app**.
-- Select **Touchpad settings**.
-- Enable Adaptive Touch by toggling the switch to **On** and then select "**Turn on**."
+1. Open the **Surface app**.
+2. Select **Touchpad settings**.
+3. Enable Adaptive Touch by toggling the switch to **On** and then select **Turn on**.
 
 :::image type="content" border="true" source="../media/adaptive-touch.png" alt-text="Screenshot of the Adaptive Touch settings in the Surface app.":::
 
