@@ -1,9 +1,10 @@
-﻿::: zone pivot="video"
+
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=b07c0d56-387c-4393-9c22-0135de2cfd2e]
 
 > [!TIP]
-> See the Text and images tab for more details!
+> See the **Text and images** tab for more details!
 
 ::: zone-end
 
@@ -91,4 +92,5 @@ When a job fails, check `video.error` for details about what went wrong.
 - **Content filtering**: Prompts are subject to content moderation; harmful content won't generate
 
 In the exercise that follows, you'll apply these techniques to build a complete video generation application.
+
 ::: zone-end

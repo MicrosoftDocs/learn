@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.intro-iot-funtions-iot.introduction
+uid: learn.oxford.intro-iot-functions-iot.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
-  ms.date: 07/25/2024
-  author: leestott
-  ms.author: leestott
+  description: In this section, we help the learner to decide if the product meets their needs by explaining when to use the product and how it works.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
-  ms.custom: team=nextgen
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
-
+

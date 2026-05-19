@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=9170d64f-9c07-42e9-88b3-9e25795a0631]
 
@@ -28,4 +29,5 @@ Azure AI Search has many applications, including:
 - Creating *knowledge mining* solutions in which the indexing process is used to infer insights and extract granular data assets from documents to support data analytics.
 
 In this module, we'll focus on Azure AI Search in knowledge mining scenarios.
+
 ::: zone-end

@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=6a849dc5-eb6d-402f-b578-270ef1a17da8]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Many large language models (LLMs) can generate output in multiple languages, and can translate phrases or even documents. However, comprehensive multi-language translation solutions generally require specialized models; and Microsoft Foundry provides support for translation through Foundry Tools. Specifically:
 
 - **Azure Translator in Foundry Tools**: A comprehensive translation service for text, with a wide range of supported languages and the ability to create custom translation models.

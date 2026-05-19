@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=f3b9d81b-61f2-4967-8b21-a941d7d58158]
 
@@ -11,6 +12,7 @@ Azure AI Search is a powerful cloud-based service that enables you to extract, e
 We'll start by introducing the core concepts of Azure AI Search, including how to connect to data sources and create indexes. You'll discover how the indexing process works, and how AI skills can be used to enrich your data with insights such as language detection, key phrase extraction, and image analysis.
 
 After learning how to implement an index, you'll explore how to query and filter results using full-text search. Finally, you'll see how to use the knowledge store to persist enriched data for further analysis and integration with other systems.
+
 ::: zone-end
 
 > [!NOTE]

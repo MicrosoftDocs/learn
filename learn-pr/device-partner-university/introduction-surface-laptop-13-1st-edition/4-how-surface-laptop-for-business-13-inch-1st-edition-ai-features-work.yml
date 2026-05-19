@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-ai-features-work
+title: How Surface Laptop for Business, 13-inch (1st Edition) AI features work
+metadata:
+  title: How Surface Laptop For Business, 13-Inch (1st Edition) AI Features Work
+  description: This content is part of the "Introduction to Microsoft Surface Laptop for Business, 13-inch (1st Edition)" module.
+  ms.date: 05/19/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-how-surface-laptop-for-business-13-inch-1st-edition-ai-features-work.md)]

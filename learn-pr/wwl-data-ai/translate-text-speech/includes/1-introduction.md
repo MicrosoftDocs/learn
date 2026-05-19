@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=34b4282b-e629-425f-8dc6-5049dc2f5b6b]
@@ -5,6 +6,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 There are many commonly used languages throughout the world, and the ability to exchange information between speakers of different languages is often a critical requirement for global solutions.
 
 Translation between languages is a specialized skill, and can often be time-consuming and expensive. Automated translation (sometimes referred to as "machine translation") is often used to reduce the time and costs involved; but it requires complex software that understands the linguistic rules and idioms of both source and target languages.
