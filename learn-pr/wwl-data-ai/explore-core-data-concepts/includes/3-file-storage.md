@@ -96,9 +96,15 @@ Some common optimized file formats you might see include *Parquet* and *Avro*:
 
 - *Parquet* is a columnar data format and the de facto standard for modern data lakehouses. It's an Apache project. A Parquet file contains row groups. Data for each column is stored together in the same row group. Each row group contains one or more chunks of data. A Parquet file includes metadata that describes the set of rows found in each chunk. An application can use this metadata to quickly locate the correct chunk for a given set of rows, and retrieve the data in the specified columns for these rows. Parquet specializes in storing and processing nested data types efficiently and supports efficient compression and encoding schemes.
 
+> [!div class="mx-imgBorder"]
+> ![Diagram showing Parquet format.](../media/parquet.png)
+
 - *Avro* is a row-based format. It was created by Apache. Each file contains a header that describes the structure of the data in the file. This header is stored as JSON. The data is stored as binary information in one or more blocks of records. An application uses the information in the header to parse the binary data and extract the fields it contains. Avro is a good format for compressing data and minimizing storage and network bandwidth requirements.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram showing Parquet, Avro and Delta Lake.](../media/parquet-avro-delta.png)
+> ![Diagram showing Avro format.](../media/avro.png)
 
-**Delta Lake** is an open-source storage format that builds on Parquet by adding a transaction log, which enables ACID transactions, data versioning, and reliable updates on top of files stored in a data lake.
+- *Delta Lake* is an open-source storage format that builds on Parquet by adding a transaction log, which enables ACID transactions, data versioning, and reliable updates on top of files stored in a data lake.
+
+> [!div class="mx-imgBorder"]
+> ![Diagram showing Delta Lake format.](../media/delta-format.png)
