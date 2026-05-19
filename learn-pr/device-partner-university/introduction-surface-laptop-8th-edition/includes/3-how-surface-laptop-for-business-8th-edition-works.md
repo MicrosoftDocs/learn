@@ -19,9 +19,9 @@ After your account is synchronized, you'll have the option to set up biometric u
 
 To set up Windows Hello follow these steps:
 
-1. Open **Settings**
-2. Then select **Accounts**
-3. Choose **Sign-in options**
-4. Select **Facial recognition (Windows Hello)**
-5. Select **Set up**
-6. Follow on-screen instructions to register facial scan data
+1. Open **Settings**.
+2. Then select **Accounts**.
+3. Choose **Sign-in options**.
+4. Select **Facial recognition (Windows Hello)**.
+5. Select **Set up**.
+6. Follow on-screen instructions to register facial scan data.
