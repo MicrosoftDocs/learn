@@ -2,7 +2,7 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=c1551d98-e0a2-47be-bd41-f71170fe3ce2]
 
-> [!NOTE]
+> [!TIP]
 > See the **Text and images** tab for more details!
 
 ::: zone-end
@@ -104,4 +104,3 @@ Responsibilities of the **server**:
 Next, let's take a look at how clients connect to to Foundry models and how to use Foundry endpoints.
 
 ::: zone-end
-

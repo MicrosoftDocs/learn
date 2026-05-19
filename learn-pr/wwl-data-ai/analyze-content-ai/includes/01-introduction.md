@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=eaa72c12-112e-4efe-a1b5-6fca3e1ae45d]
 
@@ -13,6 +14,7 @@ Azure Content Understanding is a multimodal service that simplifies the creation
 ![Diagram of Azure Content Understanding extracting information from documents, audio files, videos, and images.](../media/content-understanding.png)
 
 In this module, you'll explore the capabilities of Azure Content Understanding, and learn how to use it to build custom analyzers.
+
 ::: zone-end
 
 > [!NOTE]

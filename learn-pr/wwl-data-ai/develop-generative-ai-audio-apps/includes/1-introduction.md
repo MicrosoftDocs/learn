@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=bd8beb58-1c0d-44a4-b924-eba15b8a7a4f]
@@ -5,6 +6,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Speech transcription and synthesis are useful capabilities in many scenarios, including:
 
 - Documenting spoken conversations in calls and meetings.

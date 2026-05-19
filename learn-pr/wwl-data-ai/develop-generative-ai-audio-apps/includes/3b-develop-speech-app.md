@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac3a71ed-0175-494b-a53b-e7e8f04bb55b]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Speech synthesis, or *text-to-speech*, is the reverse of speech-to-text. It involves submitting text to a model, which returns an audio stream of the vocalized text.
 
 Models that support text-to-speech operations include:
