@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.dpu.introduction-to-surface-laptop-13-1st-edition.introduction
-title: Introduction
+uid: learn.dpu.introduction-surface-laptop-13-1st-edition.summary
+title: Summary
 metadata:
-  title: Introduction
+  title: Summary
   description: This content is part of the "Introduction to Microsoft Surface Laptop for Business, 13-inch (1st Edition)" module.
   ms.date: 05/19/2026
   author: ozahran7
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-summary.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.dpu.introduction-to-surface-laptop-13-1st-edition
+uid: learn.dpu.introduction-surface-laptop-13-1st-edition
 title: Introduction to Microsoft Surface Laptop for Business, 13-inch (1st Edition)
 metadata:
   title: Introduction To Microsoft Surface Laptop For Business, 13-Inch (1st Edition)
@@ -33,12 +33,12 @@ roles:
 products:
   - surface
 units:
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.introduction
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.what-is-microsoft-surface-laptop-for-business-13-inch-1st-edition
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-works
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-ai-features-work
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.when-to-use-surface-laptop-for-business-13-inch-1st-edition
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.knowledge-check
-  - learn.dpu.introduction-to-surface-laptop-13-1st-edition.summary
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.introduction
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.what-is-microsoft-surface-laptop-for-business-13-inch-1st-edition
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-works
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-ai-features-work
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.when-to-use-surface-laptop-for-business-13-inch-1st-edition
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.knowledge-check
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.summary
 badge:
-  uid: learn.dpu.introduction-to-surface-laptop-13-1st-edition.badge
+  uid: learn.dpu.introduction-surface-laptop-13-1st-edition.badge
