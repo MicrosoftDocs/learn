@@ -12,7 +12,7 @@ OLTP solutions rely on a database system in which data storage is optimized for 
 To make the following properties concrete, imagine a bank transfer of $40 from Account A (starting balance $100) to Account B (starting balance $50): the system must debit Account A and credit Account B as a single, reliable operation.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram demonstration a transaction.](../media/transaction.png)
+> ![Diagram demonstrating a transaction.](../media/transaction.png)
 
 To accomplish this, OLTP systems enforce transactions that support so-called ACID semantics:
 
