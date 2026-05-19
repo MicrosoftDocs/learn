@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e0839bb1-e95e-436e-85dc-02e5a56227c8]
 
@@ -134,4 +135,5 @@ while status == "Running":
 
 print("Done!")
 ```
+
 ::: zone-end

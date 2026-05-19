@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=07ae3543-78e0-4c55-816b-519d1a50dd8b]
 
@@ -30,6 +31,7 @@ To use the built-in skills, your indexer must have access to a Foundry Tools res
 ## Custom skills
 
 You can further extend the enrichment capabilities of your index by creating *custom* skills. As the name suggests, custom skills perform custom logic on input data from your index document to return new field values that can be incorporated into the index. Often, custom skills are "wrappers" around services that are specifically designed to extract data from documents. For example, you could implement a custom skill as an Azure Function, and use it to pass data from your index document to an Azure Document Intelligence model, which can extract fields from a form.
+
 ::: zone-end
 
 > [!TIP]

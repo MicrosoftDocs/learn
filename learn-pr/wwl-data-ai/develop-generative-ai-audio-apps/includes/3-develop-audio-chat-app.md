@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=cec67ece-9b1a-4c97-bb60-3d580a0118f7]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Speech transcription, or *speech-to-text*, involves submitting audio content to a model, which responds with a text-based transcript of the speech in the audio source.
 
 Models that support speech-to-text operations include:

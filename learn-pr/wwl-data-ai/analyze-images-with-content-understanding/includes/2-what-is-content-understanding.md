@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=64e27857-bdfb-4658-b769-ab5f242711be]
 
@@ -69,4 +70,5 @@ Content Understanding includes built-in Responsible AI protections. The service 
 - Biometric data processing requires appropriate notice and consent from data subjects
 
 With Content Understanding, you can build solutions that extract meaningful insights from diverse content types while maintaining data quality and compliance.
+
 ::: zone-end

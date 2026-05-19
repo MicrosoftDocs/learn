@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=55d537f9-dbe9-4e5d-befe-2d8ae238f16f]
 
@@ -28,4 +29,5 @@ This prompt could result in the generation of graphical output such as the follo
 ![An illustration of a robot eating spaghetti.](../media/robot-eating-spaghetti.png)
 
 The images generated are original; they aren't retrieved from a curated image catalog. In other words, the model isn't a search system for *finding* appropriate images - it is an artificial intelligence (AI) model that *generates* new images based on the data on which it was trained.
+
 ::: zone-end

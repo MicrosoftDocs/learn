@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=8a3afd86-9991-4ae9-b10e-396976ec1a88]
@@ -5,6 +6,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Azure Speech in Foundry Tools provides APIs that you can use to build speech-enabled applications, including:
 
 - **Speech to text**: An API that enables *speech recognition* in which your application can accept spoken input.

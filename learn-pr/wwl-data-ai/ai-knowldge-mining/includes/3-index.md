@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=d8f1517e-b736-4a20-8157-c68877f9ce36]
 
@@ -82,4 +83,5 @@ The fields in the final document structure at the end of the pipeline are mapped
 
 - Fields extracted directly from the source data are all mapped to index fields. These mappings can be *implicit* (fields are automatically mapped to in fields with the same name in the index) or *explicit* (a mapping is defined to match a source field to an index field, often to rename the field to something more useful or to apply a function to the data value as it is mapped).
 - Output fields from the skills in the skillset are explicitly mapped from their hierarchical location in the output to the target field in the index.
+  
 ::: zone-end

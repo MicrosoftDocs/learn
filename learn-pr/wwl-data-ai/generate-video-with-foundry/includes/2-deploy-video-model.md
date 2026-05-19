@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=16c02499-f50f-49df-8d83-0b80e180f856]
 
@@ -47,4 +48,5 @@ Sora 2 offers several powerful capabilities for video generation:
 | **Variable duration** | Generate videos of 4, 8, or 12 seconds |
 
 Sora 2 enables you to create realistic and imaginative video content from text prompts, reference images, or by remixing existing videos. After deploying the model through the Foundry portal, you can use it to generate videos in various resolutions and durations. The model's versatility and ease of use make it a powerful tool for video creation, whether you're starting from scratch or enhancing existing media.
+
 ::: zone-end
