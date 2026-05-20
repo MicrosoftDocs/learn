@@ -18,7 +18,7 @@ The patterns you implemented support Contoso Capital's production multi-agent pl
 
 ## Learn more
 
-- [Azure AI Agent Service documentation](https://learn.microsoft.com/azure/ai-services/agents/)
+- [Microsoft Foundry Agent Service documentation](https://learn.microsoft.com/azure/foundry/agents/overview)
 - [Azure AI Agents Python SDK reference](https://learn.microsoft.com/python/api/overview/azure/ai-agents-readme)
 - [Azure Cosmos DB for session state](https://learn.microsoft.com/azure/cosmos-db/)
-- [Agent design patterns and best practices](https://learn.microsoft.com/azure/ai-services/agents/concepts/agents)
+- [Agent design patterns and best practices](https://learn.microsoft.com/azure/foundry/agents/concepts/agents)

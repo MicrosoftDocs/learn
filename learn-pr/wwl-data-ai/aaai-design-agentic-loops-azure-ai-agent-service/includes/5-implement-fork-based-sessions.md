@@ -183,7 +183,7 @@ def archive_completed_fork(thread_id, thread_metadata):
     archive_container.upsert_item(archive_doc)
     
     # Thread can now be deleted (messages are preserved in archive)
-    # Note: Azure AI Agent Service threads may have automatic lifecycle policies
+    # Note: Microsoft Foundry Agent Service threads may have automatic lifecycle policies
 
 def cleanup_old_checkpoints(days_threshold=30):
     """Delete checkpoints older than threshold"""

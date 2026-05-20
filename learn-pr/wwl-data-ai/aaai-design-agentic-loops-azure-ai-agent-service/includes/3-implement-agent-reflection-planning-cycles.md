@@ -188,7 +188,7 @@ Reflection transforms single-pass generation into multi-pass reasoning. The impl
 **2. Why should you limit reflection cycles rather than letting the agent reflect until it reaches perfect quality?**
 
 - A. The first reflection cycle yields the largest improvement (15-25%), and subsequent cycles have diminishing returns while multiplying token costs
-- B. The Azure AI Agent Service enforces a maximum of three reflection cycles per thread
+- B. Microsoft Foundry Agent Service enforces a maximum of three reflection cycles per thread
 - C. Multiple reflection cycles cause context window overflow because each critique doubles the message history
 
 ***Correct answer: A.*** Each additional reflection cycle uses more tokens but yields smaller improvements. A 3-4x token cost multiplier makes unbounded reflection impractical for production budgets.

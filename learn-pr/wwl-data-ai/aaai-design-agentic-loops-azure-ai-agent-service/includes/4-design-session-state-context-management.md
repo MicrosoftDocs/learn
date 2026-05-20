@@ -1,8 +1,8 @@
-Production agent systems require session state that survives process restarts, scales across distributed instances, and supports long-lived workflows spanning hours or days. Azure AI Agent Service threads provide in-service message history, but threads alone don't meet production persistence requirements. You need external state management.
+Production agent systems require session state that survives process restarts, scales across distributed instances, and supports long-lived workflows spanning hours or days. Microsoft Foundry Agent Service threads provide in-service message history, but threads alone don't meet production persistence requirements. You need external state management.
 
 ## Understand thread limitations and session requirements
 
-In Azure AI Agent Service, a **thread** is the session — it holds all message history. As long as the thread exists in the service, message history persists. But threads are ephemeral within the service lifetime. If your application process crashes, the thread ID is all you have. Without external state, you lose the ability to resume.
+In Microsoft Foundry Agent Service, a **thread** is the session — it holds all message history. As long as the thread exists in the service, message history persists. But threads are ephemeral within the service lifetime. If your application process crashes, the thread ID is all you have. Without external state, you lose the ability to resume.
 
 **Production session requirements** exceed what service threads provide:
 
@@ -17,11 +17,19 @@ The solution: persist thread state externally at strategic checkpoints. The thre
 
 ## Design state persistence tiers
 
+> [!NOTE]
+> Microsoft Foundry Agent Service includes a managed **Memory** feature (preview) that provides long-term memory across sessions without custom code. It extracts meaningful information from conversations, consolidates it into durable knowledge, and makes it available in future sessions. Before building a custom persistence tier, evaluate whether managed Memory meets your requirements. Use custom tiers when you need structured schemas, cross-product analytics, or permanent audit records. See [Memory in Microsoft Foundry Agent Service](https://learn.microsoft.com/azure/foundry/agents/concepts/what-is-memory).
+
 Three persistence tiers trade off complexity against durability and query capabilities:
 
 **In-memory / service thread only** suits short-lived interactions within a single process lifetime. The thread ID lives in application memory or a simple key-value cache. This approach works for stateless request-response agents where each interaction is independent. Risk: no recovery if the process crashes mid-conversation. Contoso Capital uses this for simple market quote lookups — if the process fails, the user simply retries.
 
-**Azure Cosmos DB persistence** provides durable, queryable state storage for long-lived workflows. Serialize thread messages to a Cosmos DB document. Key design decisions:
+**Azure Cosmos DB persistence** provides durable, queryable state storage for long-lived workflows. The service supports two approaches:
+
+- **BYO thread storage**: Configure Standard Agent Setup to write thread messages directly to your Azure Cosmos DB for NoSQL account. This requires no custom serialization code and preserves full thread fidelity automatically. Use this when raw thread history is sufficient.
+- **Manual serialization**: Serialize and shape thread messages to a custom document schema. Use this when you need custom fields, analytics projections, cross-system joins, or compliance-shaped records beyond what the raw thread format provides.
+
+The patterns below demonstrate manual serialization. Key design decisions:
 
 - **Document schema**: Store thread ID, creation timestamp, last updated timestamp, session metadata (user ID, workflow type), and serialized messages array
 - **When to persist**: After each run (frequent writes, higher cost) vs. on explicit checkpoints (less durable, lower cost)
