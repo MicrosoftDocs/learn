@@ -1,0 +1,5 @@
+Modern work depends on fast access to the right information. When users can’t quickly find the files or messages they need, they risk missing deadlines and slowing down critical tasks. Whether employees are searching locally on their device or across their organization, delays and fragmented results can interrupt workflow and reduce productivity.
+
+Improved Windows Search enhances how users find files, settings, and organizational content by delivering faster, more relevant, and context-aware results directly within the Windows experience. With AI-powered capabilities that understand intent and locate relevant, recent content across apps and services, users can spend less time searching and more time acting.
+
+In this module, you’ll learn how to use Improved Windows Search to quickly find files, settings, and content using natural language on Copilot+ PCs. You’ll also explore how to apply these capabilities in real-world scenarios and identify when to use them to reduce time spent searching.

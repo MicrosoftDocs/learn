@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.improved-windows-search.apply-improved-windows-search-scenarios
+title: Role-based scenarios
+metadata:
+  title: Role-based Scenarios
+  description: This content is part of the "Discover faster insights with Improved Windows Search" module.
+  ms.date: 05/19/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-apply-improved-windows-search-scenarios.md)]
