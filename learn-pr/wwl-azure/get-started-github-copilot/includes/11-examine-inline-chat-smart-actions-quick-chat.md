@@ -8,8 +8,7 @@ The following smart actions are available:
 
 - **Explain**: Generates a natural language description of the selected code. This is useful for understanding unfamiliar code or explaining it to others.
 - **Review**: Provides a code review of the selected code. Helps identify bugs, performance bottlenecks, and security vulnerabilities.
-- **Generate Docs**: Creates documentation for the selected code. Useful for documenting your codebase for a team or other contributors.
-- **Generate Tests**: Creates unit tests for the selected code. Helps ensure the correctness and reliability of code with complex logic.
+
 - **Fix**: Suggests a fix for the selected code. Useful when you encounter an error or issue and need guidance on how to resolve it.
 
 To access smart actions, right-click in the code editor. The context menu includes a section for GitHub Copilot smart actions. The available smart actions may vary based on the context of your code selection. For example, if you select code that contains an error, the **Fix** smart action should be included in the context menu.
@@ -31,7 +30,9 @@ Type your prompt and press Enter. Quick Chat supports the same `#`-mentions for 
 
 ## Inline Chat
 
-Starting with Visual Studio Code 1.99 (March 2025), the Inline Chat experience moved into the unified chat panel architecture. The previous Inline Chat interface included a floating overlay that appeared directly in the editor, showed diffs in place, and let you accept or reject changes without leaving the file. That overlay was deprecated because it couldn't handle multi-file edits and lacked conversation history. The Visual Studio Code user interface still provides access to Inline Chat, but the Inline Chat functionality is now integrated into the main Chat view.
+The inline chat feature enables you to generate or edit code directly in the editor or get help with shell commands within the integrated terminal. Inline chat allows you to stay in the flow of your work without having to switch to a separate Chat view.
+
+Use inline chat when you want to make quick, targeted edits within the visible code context. For multi-step tasks, multi-file changes, or broader codebase exploration, use the Chat view instead.
 
 ## Summary
 

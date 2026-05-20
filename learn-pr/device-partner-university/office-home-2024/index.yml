@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.dpu.office-home-2024
+title: Introduction to Microsoft Office Home 2024
+metadata:
+  title: Introduction To Microsoft Office Home 2024
+  description: In this module, you'll learn how Microsoft Office Home 2024 works as a one-time purchase offering core desktop apps for everyday productivity. You'll evaluate whether it’s the right fit for your needs by understanding its features, limitations, and how it compares to subscription-based options.
+  ms.date: 05/20/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: office
+summary: >
+  Learn how Microsoft Office Home 2024 works as a one-time purchase offering core desktop apps for everyday productivity. Evaluate whether it’s the right fit for your needs by understanding its features, limitations, and how it compares to subscription-based options.
+abstract: |
+  By the end of this module, you’ll be able to:
+  - Describe what Microsoft Office Home 2024 is and how it works
+  - Identify what is included and not included in the product
+  - Evaluate whether Office Home 2024 aligns with specific user needs and scenarios
+prerequisites: |
+  - None
+iconUrl: /training/achievements/office-home-2024.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - business-leader
+  - business-owner
+  - business-user
+  - student
+  - higher-ed-educator
+  - k-12-educator
+  - administrator
+  - parent-guardian
+  - school-leader
+products:
+  - office
+units:
+  - learn.dpu.office-home-2024.introduction
+  - learn.dpu.office-home-2024.choose-best-version-office-needs
+  - learn.dpu.office-home-2024.understand-office-home-2024
+  - learn.dpu.office-home-2024.whats-included-whats-not
+  - learn.dpu.office-home-2024.office-home-2024-experience
+  - learn.dpu.office-home-2024.decide-office-home-2024-right-for-you
+  - learn.dpu.office-home-2024.knowledge-check
+  - learn.dpu.office-home-2024.summary
+badge:
+  uid: learn.dpu.office-home-2024.badge
