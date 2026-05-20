@@ -3,18 +3,18 @@ uid: learn.oxford.intro-to-iot-edge.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Knowledge check
-  ms.date: 07/30/2024
-  author: leestott
-  ms.author: leestott
+  description: Test your knowledge of when to use Azure IoT Edge, its components, and its capabilities.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
   module_assessment: true
-durationInMinutes: 5 # dummy number at present
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Suppose, you're tasked with developing an IoT solution that requires near real-time response to local events, you would consider using IoT Edge because:"
+  - content: "Suppose you're tasked with developing an IoT solution that requires near real-time response to local events. IoT Edge is a good fit because:"
     choices:
     - content: "IoT Edge can run modules locally on IoT Edge devices."
       isCorrect: true
@@ -25,28 +25,26 @@ quiz:
     - content: "IoT Edge can communicate with the cloud."
       isCorrect: false
       explanation: "The ability to communicate with the cloud doesn't guarantee a rapid response time."
-  - content: "Suppose, you're tasked with monitoring the health of a diverse set of IoT devices in the field. Which component of IoT Edge would you use?"
+  - content: "Suppose you're tasked with monitoring the health of a diverse set of IoT devices in the field. Which component of IoT Edge would you use?"
     choices:
     - content: "IoT Edge modules"
       isCorrect: false
       explanation: "The module runs on an individual device. It doesn't have visibility of all devices."
     - content: "IoT Edge runtime"
       isCorrect: false
-      explanation: "The runtime runs on an individual device. It doesn't have visibility of all devices"
+      explanation: "The runtime runs on an individual device. It doesn't have visibility of all devices."
     - content: "IoT Edge cloud interface"
       isCorrect: true
       explanation: "The cloud interface enables you to monitor and manage IoT Edge devices remotely."
-  - content: "Suppose you wanted to run machine learning applications on IoT Edge devices. IoT Edge is suitable because:"
+  - content: "Suppose you want to deploy machine learning models that were trained in the cloud onto IoT Edge devices. IoT Edge is suitable because:"
     choices:
-    - content: "You can train the module on the cloud and deploy to the IoT Edge as a container"
+    - content: "You can train a model in the cloud, package it in an IoT Edge module, and deploy the module as a container image."
       isCorrect: true
-      explanation: "You can train the module on the cloud and deploy to the edge as a container"
-    - content: "IoT Edge allows you to run applications on the IoT Edge even when connectivity is intermittent."
+      explanation: "A model trained in the cloud is packaged in an IoT Edge module and deployed to the edge as a container image."
+    - content: "IoT Edge automatically trains machine learning models on the device."
       isCorrect: false
-      explanation: "Intermittent connectivity isn't directly relevant to running machine learning applications."
+      explanation: "IoT Edge doesn't train models on the device. Models are trained in the cloud and deployed to the edge."
     - content: "IoT Edge is always connected to the cloud."
       isCorrect: false
-      explanation: "IoT isn't always connected to the cloud."
-    
-    
+      explanation: "IoT Edge devices aren't always connected to the cloud."
 
