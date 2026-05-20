@@ -122,7 +122,7 @@ The key efficiency gain: data collection runs once (20 messages, 3 tool calls, 1
 
 Fork-based patterns also enable **conversation resumption** — allowing users to interrupt long workflows and resume later. The pattern is identical: serialize thread state when the user pauses, restore it when they return.
 
-A Contoso Capital analyst starts research at 2pm Friday, completes 60% of the workflow, then leaves for the weekend. The application persists the thread state to Cosmos DB. Monday morning, the analyst resumes by restoring the checkpoint into a new thread and continuing:
+A Contoso Capital analyst starts research at 2 PM on Friday, completes 60% of the workflow, then leaves for the weekend. The application persists the thread state to Cosmos DB. Monday morning, the analyst resumes by restoring the checkpoint into a new thread and continuing:
 
 ```python
 def pause_session(thread_id, user_id):
@@ -220,10 +220,108 @@ Contoso Capital uses forking for scenario analysis (shared data collection is ex
 
 Fork-based sessions transform linear workflows into branching exploration workflows. The implementation is straightforward checkpoint-and-restore. The value is eliminating redundant computation and enabling resumable workflows. Use it when exploration matters and shared context is expensive to rebuild.
 
-## Unit summary
+## Fork sessions using the Responses API (v2)
 
-- **Fork-based sessions** solve the alternative hypothesis exploration problem by checkpointing thread state and spawning independent branches that diverge from a common starting context
-- **Checkpoint-and-restore** serializes thread messages to Cosmos DB at strategic points, enabling both scenario branching (bull/bear case analysis) and conversation resumption after interruptions or failures
-- **Efficiency gains** come from avoiding redundant computation — expensive data collection runs once, and all forked branches reuse that context rather than starting from scratch
-- **Thread lifecycle management** is essential to prevent unbounded storage growth — implement time-based expiration, status-based cleanup, fork pruning after result extraction, and parent-child cascade deletion
-- **Fork selectively** — only use forking when shared setup is expensive and parallel exploration adds value; for independent tasks with no shared context, separate threads from the start are simpler
+The v1 fork pattern uses Cosmos DB serialization: serialize thread messages, create a new thread per branch, deserialize into each thread. In Agents v2, two simpler approaches eliminate the serialization step.
+
+### Fork via `previous_response_id`
+
+Because each response in v2 carries its own context chain, you fork by pointing multiple new responses at the same parent response ID. No serialization. No new thread creation. No Cosmos DB needed for the fork itself.
+
+```python
+# Shared context: run data collection and analysis once
+base_response = openai.responses.create(
+    input="Collect and analyze MSFT fundamental and technical data.",
+    conversation=conversation.id,
+    extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
+)
+
+# Fork 1: Bull-case scenario — chains from base_response
+bull_response = openai.responses.create(
+    input="Based on the data you collected, develop a bull-case investment thesis.",
+    previous_response_id=base_response.id,  # Fork point
+    extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
+)
+
+# Fork 2: Bear-case scenario — also chains from base_response, independently
+bear_response = openai.responses.create(
+    input="Based on the same data, develop a bear-case investment thesis with downside risks.",
+    previous_response_id=base_response.id,  # Same fork point — independent branch
+    extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
+)
+```
+
+Both branches share the same parent context but diverge from `base_response.id`. Each branch's subsequent responses chain from their own line — `bull_response.id` or `bear_response.id`. The branches never merge server-side.
+
+### Fork via conversation duplication
+
+When you need branches to accumulate many turns (and don't want a long `previous_response_id` chain), duplicate the conversation by copying its items into a new conversation.
+
+```python
+# Get all items from the shared conversation up to the fork point
+items = list(openai.conversations.items.list(conversation_id=base_conversation.id))
+
+# Create a new conversation for each branch
+bull_conversation = openai.conversations.create()
+
+# Seed the new conversation with the shared context
+openai.conversations.items.create(
+    conversation_id=bull_conversation.id,
+    items=[item.model_dump() for item in items],
+)
+
+# Branch 1 continues in its own conversation
+bull_response = openai.responses.create(
+    input="Develop a bull-case investment thesis.",
+    conversation=bull_conversation.id,
+    extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
+)
+```
+
+### Background mode for parallel branches
+
+Run multiple fork branches concurrently using background mode. Each branch launches immediately and the results are retrieved when all are complete.
+
+```python
+# Launch both branches in background mode — they run in parallel
+bull_job = openai.responses.create(
+    input="Develop a bull-case thesis.",
+    previous_response_id=base_response.id,
+    background=True,
+    extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
+)
+
+bear_job = openai.responses.create(
+    input="Develop a bear-case thesis.",
+    previous_response_id=base_response.id,
+    background=True,
+    extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
+)
+
+# Store job IDs — poll both until complete
+import time
+jobs = {"bull": bull_job.id, "bear": bear_job.id}
+results = {}
+
+while jobs:
+    for name, response_id in list(jobs.items()):
+        job = openai.responses.retrieve(response_id)
+        if job.status != "in_progress":
+            results[name] = job
+            del jobs[name]
+    if jobs:
+        time.sleep(2)
+```
+
+> [!NOTE]
+> The `previous_response_id` fork approach (first pattern) is simpler and doesn't require conversation management for short-to-medium depth branches. Use conversation duplication when branches will accumulate many turns over time. Background mode is the right complement for any parallel branch pattern — it lets both branches execute concurrently rather than sequentially.
+
+## Summary
+
+- **Fork-based sessions** solve the alternative hypothesis exploration problem by checkpointing thread state and spawning independent branches that diverge from a common starting context.
+- **Checkpoint-and-restore** serializes thread messages to Cosmos DB at strategic points, enabling both scenario branching (bull/bear case analysis) and conversation resumption after interruptions or failures.
+- **Efficiency gains** come from avoiding redundant computation — expensive data collection runs once, and all forked branches reuse that context rather than starting from scratch.
+- **Thread lifecycle management** is essential to prevent unbounded storage growth — implement time-based expiration, status-based cleanup, fork pruning after result extraction, and parent-child cascade deletion.
+- **Fork selectively** — only use forking when shared setup is expensive and parallel exploration adds value; for independent tasks with no shared context, separate threads from the start are simpler.
+- **Agents v2 eliminates fork serialization overhead** — fork by pointing multiple `responses.create()` calls at the same `previous_response_id`, with no thread creation or Cosmos DB serialization required.
+- **Background mode enables parallel branch execution in v2** — launch both branches with `background=True`, store the response IDs, and poll for completion concurrently.

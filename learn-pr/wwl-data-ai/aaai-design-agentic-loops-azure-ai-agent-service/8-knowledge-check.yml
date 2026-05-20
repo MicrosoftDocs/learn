@@ -8,7 +8,7 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
 quiz:
   questions:
@@ -45,3 +45,25 @@ quiz:
     - content: "Add both hypothesis instructions as separate user messages in the same thread and run the agent once."
       isCorrect: false
       explanation: "Incorrect. Running both hypotheses in the same thread produces a single interleaved response that conflates both. The agent cannot maintain distinct research paths in one continuous conversation — context from one hypothesis contaminates the other."
+  - content: "You call `responses.create()` in Agents v2 and the response contains one message item and two tool call items. What is the correct next step?"
+    choices:
+    - content: "Check `response.status` for `requires_action`, retrieve the tool calls, and call `submit_tool_outputs_and_poll()` to resume the run."
+      isCorrect: false
+      explanation: "Incorrect. The `requires_action` status and `submit_tool_outputs_and_poll()` are Agents v1 constructs. Agents v2 responses don't have a `requires_action` status — tool calls are returned as typed items in `response.output` and don't block a run."
+    - content: "Iterate `response.output` to find tool call items, execute the functions locally, and call `responses.create()` again passing the results as input items."
+      isCorrect: true
+      explanation: "Correct. In Agents v2, tool calls appear as items in `response.output`. You execute them locally, package the results as tool_result input items, and submit them in a new `responses.create()` call. There is no polling loop or status check."
+    - content: "Display the message item to the user — tool calls in v2 execute server-side automatically without any client action."
+      isCorrect: false
+      explanation: "Incorrect. Function tool calls in v2 are not executed server-side. The agent generates tool call output items indicating what functions it wants called, but your code must execute them and return the results."
+  - content: "Which two changes are most significant when migrating from Agents v1 to Agents v2?"
+    choices:
+    - content: "Replace single `AgentsClient` with a split client (`AIProjectClient` + OpenAI client), and replace the run-polling loop with a synchronous `responses.create()` call that returns output items directly."
+      isCorrect: true
+      explanation: "Correct. The split client architecture is the first code change, and eliminating the polling loop is the largest structural change. Every v1 agent has a polling loop with `AgentRunStatus` checks — in v2, `responses.create()` is synchronous, there is no status enum, and tool calls are output items rather than a blocking status."
+    - content: "Rename `threads.create()` to `conversations.create()` and rename `runs.create()` to `responses.create()` — all other code remains identical."
+      isCorrect: false
+      explanation: "Incorrect. The API surface changes are more significant than naming. The client architecture splits into two clients, agents move from GUID-based IDs to named versioned assets, the polling loop is eliminated, and tool handling changes from requires_action to output item iteration."
+    - content: "Update the import path from `azure.ai.agents` to `azure.ai.projects` — the rest of the API is backward compatible."
+      isCorrect: false
+      explanation: "Incorrect. `azure-ai-projects` 2.x is not backward compatible with v1. The client architecture, agent creation pattern, run execution model, and tool handling all change. A simple import rename won't produce working code."

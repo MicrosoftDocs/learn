@@ -26,7 +26,7 @@ Three persistence tiers trade off complexity against durability and query capabi
 
 **Azure Cosmos DB persistence** provides durable, queryable state storage for long-lived workflows. The service supports two approaches:
 
-- **BYO thread storage**: Configure Standard Agent Setup to write thread messages directly to your Azure Cosmos DB for NoSQL account. This requires no custom serialization code and preserves full thread fidelity automatically. Use this when raw thread history is sufficient.
+- **Bring Your Own (BYO) thread storage**: Configure Standard Agent Setup to write thread messages directly to your Azure Cosmos DB for NoSQL account. This requires no custom serialization code and preserves full thread fidelity automatically. Use this when raw thread history is sufficient.
 - **Manual serialization**: Serialize and shape thread messages to a custom document schema. Use this when you need custom fields, analytics projections, cross-system joins, or compliance-shaped records beyond what the raw thread format provides.
 
 The patterns below demonstrate manual serialization. Key design decisions:
@@ -203,10 +203,34 @@ Contoso Capital uses task-scoped threading. Each research request is independent
 
 Session state architecture determines agent memory characteristics. In-memory threads are stateless and transient. Cosmos DB persistence enables resumable workflows. Redis adds query performance. Context management strategies control costs and enable long-lived threads. Your choices shape what agents remember and for how long.
 
-## Unit summary
+## Choose context management modes in Agents v2
 
-- **Thread limitations** require external persistence — service threads don't survive app restarts, support cross-instance sharing, or enable historical audit trails without Cosmos DB or similar durable storage
-- **Three persistence tiers** trade complexity for durability — in-memory for stateless lookups, Cosmos DB for long-lived resumable workflows, and Redis as a low-latency caching layer for high-throughput systems
-- **Context window pressure** manifests as cost escalation, latency increase, and eventual context overflow — track token estimates proactively and trigger management strategies before hitting model limits
-- **Context management strategies** include sliding window retention (keep recent messages), selective summarization (compress low-value messages), and importance-weighted pruning (score and remove by priority)
-- **Session scoping** is an architectural decision — task-scoped threads keep context focused and prevent pollution, while conversation-scoped threads enable carry-over context across multiple related tasks
+The session state patterns in this unit — custom Cosmos DB persistence, Redis caching, message pruning — apply to Agents v1 threads. Agents v2 introduces its own context management model with three strategies that map to the tiers you've already learned.
+
+- **Conversation-based (server-managed history):** Create a conversation with `openai.conversations.create()` and pass `conversation.id` to each response call. The service stores all items automatically — the v2 equivalent of v1 thread persistence. See Unit 3 for code examples.
+- **`previous_response_id` chaining:** Chain responses by reference without a conversation object. You control context depth on each call — the v2 equivalent of sliding window retention. See Unit 3 for code examples.
+- **`store=False` (zero-data-retention):** The service doesn't persist the response. Manage your own message buffer and pass prior context explicitly in every request. Use for compliance scenarios where no data may be stored server-side.
+
+### When custom Cosmos DB is still needed in v2
+
+Agents v2 managed history reduces the need for custom persistence, but some production scenarios still require it:
+
+| Scenario | v2 managed history enough? | Custom Cosmos DB needed? |
+|---|---|---|
+| Multi-turn conversational agent | Yes — use conversation-based | No |
+| Cross-session memory (user preferences, past decisions) | No — conversations don't persist across explicit deletion | Yes — store key facts and inject as system context |
+| Audit trail with custom metadata | Partial — conversation items exist but aren't queryable | Yes — store conversation/response IDs with business metadata |
+| `store=False` compliance workflow | No — you manage everything | Yes — your own secure store |
+| Long-running research with >128K context | No — auto-truncation applies | Consider — store key facts externally and reinject |
+
+> [!NOTE]
+> The v2 service auto-truncates conversation input when it exceeds the model's context window. The conversation itself is not modified — only the input window is trimmed. For high-value facts that must never be dropped (established risk thresholds, user preferences, earlier commitments), store them in Cosmos DB and inject them explicitly as system context at the start of each session.
+
+## Summary
+
+- **Thread limitations** require external persistence — service threads don't survive app restarts, support cross-instance sharing, or enable historical audit trails without Cosmos DB or similar durable storage.
+- **Three persistence tiers** trade complexity for durability — in-memory for stateless lookups, Cosmos DB for long-lived resumable workflows, and Redis as a low-latency caching layer for high-throughput systems.
+- **Context window pressure** manifests as cost escalation, latency increase, and eventual context overflow — track token estimates proactively and trigger management strategies before hitting model limits.
+- **Context management strategies** include sliding window retention (keep recent messages), selective summarization (compress low-value messages), and importance-weighted pruning (score and remove by priority).
+- **Session scoping** is an architectural decision — task-scoped threads keep context focused and prevent pollution, while conversation-scoped threads enable carry-over context across multiple related tasks.
+- **Agents v2 server-managed history** reduces custom persistence needs for most scenarios — use Cosmos DB for cross-session memory, queryable audit trails, or `store=False` compliance workflows where the service stores nothing.
