@@ -1,0 +1,3 @@
+Microsoft Office Home 2024 is a one-time purchase version of Microsoft Office designed for everyday productivity. It provides access to core versions of desktop applications that help individuals and households create documents, work with data, and present ideas—for example, managing a home budget, completing school work, or organizing personal projects—without requiring a subscription.
+
+This module introduces Office Home 2024 from a practical perspective. Instead of focusing on how to use individual apps, it explains what the product is, how it works, and when it’s the right choice. You’ll also explore how it compares to subscription-based offerings so you can make an informed decision.
