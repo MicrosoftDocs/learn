@@ -12,7 +12,7 @@ Data in Azure Table storage is usually **denormalized**, with each row holding t
 > [!NOTE]
 > The prices shown in this diagram are fictitious and used for illustration purposes only.
 
-To help ensure fast access, Azure Table Storage splits a table into partitions. **Partitioning** is a mechanism for grouping related rows, based on a common property or partition key. Rows that share the same partition key is stored together. Partitioning not only helps to organize data, it can also improve scalability and performance in the following ways:
+To help ensure fast access, Azure Table Storage splits a table into partitions. **Partitioning** is a mechanism for grouping related rows, based on a common property or partition key. Rows that share the same partition key are stored together. Partitioning not only helps to organize data, it can also improve scalability and performance in the following ways:
 
 - Partitions are independent from each other, and can grow or shrink as rows are added to, or removed from, a partition. A table can contain any number of partitions.
 
