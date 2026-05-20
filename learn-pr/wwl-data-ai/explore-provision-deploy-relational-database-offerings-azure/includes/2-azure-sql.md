@@ -6,15 +6,15 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 
 ## Compare Azure SQL services
 
-| -- | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
-| - | - | - | - |
-| |![Screenshot of a SQL Server Azure VM logo.](../media/azure-sql-vm.png) | ![Screenshot of an Azure SQL Managed Instance logo.](../media/azure-sql-managed-instance.png) | ![Screenshot of an Azure SQL Database logo.](../media/azure-sql-database.png) |
-| Type of cloud service | IaaS | PaaS | PaaS |
-| SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change. | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available. |
-| Architecture | SQL Server instances are installed in a virtual machine. Each instance can support multiple databases. | Each managed instance can support multiple databases. Additionally, *instance pools* can be used to share resources efficiently across smaller instances. | You can provision a *single database* in a dedicated, managed (logical) server; or you can use an *elastic pool* to share resources across multiple databases and take advantage of on-demand scalability. |
-| Availability | 99.99% | 99.99% | 99.995% |
-| Management | You must manage all aspects of the server, including operating system and SQL Server updates, configuration, backups, and other maintenance tasks. | Fully automated updates, backups, and recovery. | Fully automated updates, backups, and recovery. |
-| Use cases | Use this option when you need to migrate or extend an on-premises SQL Server solution and retain full control over all aspects of server and database configuration. | Use this option for most cloud migration scenarios, particularly when you need minimal changes to existing applications. | Use this option for new cloud solutions, or to migrate applications that have minimal instance-level dependencies. |
+| --                       | SQL Server on Azure VMs                                                                                                                                              | Azure SQL Managed Instance                                                                                                                                                                  | Azure SQL Database                                                                                                                                                                                         |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                          | ![Screenshot of a SQL Server Azure VM logo.](../media/azure-sql-vm.png)                                                                                              | ![Screenshot of an Azure SQL Managed Instance logo.](../media/azure-sql-managed-instance.png)                                                                                               | ![Screenshot of an Azure SQL Database logo.](../media/azure-sql-database.png)                                                                                                                              |
+| Type of cloud service    | IaaS                                                                                                                                                                 | PaaS                                                                                                                                                                                        | PaaS                                                                                                                                                                                                       |
+| SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change.        | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available.                                                               |
+| Architecture             | SQL Server instances are installed in a virtual machine. Each instance can support multiple databases.                                                              | Each managed instance can support multiple databases. Additionally, *instance pools* can be used to share resources efficiently across smaller instances.                                  | You can provision a *single database* in a dedicated, managed (logical) server; or you can use an *elastic pool* to share resources across multiple databases and take advantage of on-demand scalability. |
+| Availability             | 99.99%                                                                                                                                                               | 99.99%                                                                                                                                                                                      | 99.995%                                                                                                                                                                                                    |
+| Management               | You must manage all aspects of the server, including operating system and SQL Server updates, configuration, backups, and other maintenance tasks.                  | Fully automated updates, backups, and recovery.                                                                                                                                            | Fully automated updates, backups, and recovery.                                                                                                                                                           |
+| Use cases                | Use this option when you need to migrate or extend an on-premises SQL Server solution and retain full control over all aspects of server and database configuration. | Use this option for most cloud migration scenarios, particularly when you need minimal changes to existing applications.                                                                   | Use this option for new cloud solutions, or to migrate applications that have minimal instance-level dependencies.                                                                                        |
 
 ## SQL Server on Azure Virtual Machines
 
@@ -31,9 +31,9 @@ You can use SQL Server in a virtual machine to develop and test traditional SQL 
 
 These capabilities enable you to:
 
-- Create rapid development and test scenarios when you don't want to buy on-premises non-production SQL Server hardware.
+- Create rapid development and test scenarios when you don't want to buy on-premises nonproduction SQL Server hardware.
 - Become lift-and-shift ready for existing applications that require fast migration to the cloud with minimal changes or no changes.
-- Scale up the platform on which SQL Server is running, by allocating more memory, CPU power, and disk space to the virtual machine. You can quickly resize an Azure virtual machine without the requirement that you reinstall the software that is running on it.
+- Scale up the platform on which SQL Server is running, by allocating more memory, CPU power, and disk space to the virtual machine. You can quickly resize an Azure virtual machine without the requirement that you reinstall the software that's running on it.
 
 ### Business benefits
 
@@ -61,7 +61,7 @@ Azure SQL Managed Instance enables a system administrator to spend less time on 
 
 Azure SQL Managed Instance has near 100% compatibility with SQL Server Enterprise Edition, running on-premises.
 
-Azure SQL Managed Instance supports SQL Server Database engine logins and logins integrated with Microsoft Entra ID. SQL Server Database engine logins include a username and a password. You must enter your credentials each time you connect to the server. Microsoft Entra logins use the credentials associated with your current computer sign-in, and you don't need to provide them each time you connect to the server.
+Azure SQL Managed Instance supports SQL Server Database engine logins and logins integrated with Microsoft Entra ID. SQL Server Database engine logins include a username and a password. You must enter your credentials each time you connect to the server. Microsoft Entra logins use the credentials associated with your current computer sign-in, and you don't need to provide them with each time you connect to the server.
 
 ## Azure SQL Database
 
@@ -80,12 +80,16 @@ This option enables you to quickly set up and run a single SQL Server database. 
 
 This option is similar to *Single Database*, except that by default multiple databases can share the same resources, such as memory, data storage space, and processing power through multiple-tenancy. The resources are referred to as a *pool*. You create the pool, and only your databases can use the pool. This model is useful if you have databases with resource requirements that vary over time, and can help you to reduce costs. For example, your payroll database might require plenty of CPU power at the end of each month as you handle payroll processing, but at other times the database might become much less active. You might have another database that is used for running reports. This database might become active for several days in the middle of the month as management reports are generated, but with a lighter load at other times. Elastic Pool enables you to use the resources available in the pool, and then release the resources once processing has completed.
 
+### Hyperscale
+
+The Hyperscale service tier supports very large databases—up to 100 TB—with rapid, on-demand scaling and fast backup and restore regardless of data size.
+
 ### Use cases
 
 Azure SQL Database gives you the best option for low cost with minimal administration. It isn't fully compatible with on-premises SQL Server installations. It's often used in new cloud projects where the application design can accommodate any required changes to your applications.
 
 > [!NOTE]
-> You can use the Data Migration Assistant to detect compatibility issues with your databases that can impact database functionality in Azure SQL Database.  For more information, see [Overview of Data Migration Assistant](/sql/dma/dma-overview).
+> You can use the Data Migration Assistant to detect compatibility issues with your databases that can impact database functionality in Azure SQL Database. For more information, see [Overview of Data Migration Assistant](/sql/dma/dma-overview).
 
 Azure SQL Database is often used for:
 
@@ -103,6 +107,10 @@ The service provides high availability guarantees, to ensure that your databases
 
 Advanced threat protection provides advanced security capabilities, such as vulnerability assessments, to help detect and remediate potential security problems with your databases. Threat protection also detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit your database. It continuously monitors your database for suspicious activities, and provides immediate security alerts on potential vulnerabilities, SQL injection attacks, and anomalous database access patterns. Threat detection alerts provide details of the suspicious activity, and recommend action on how to investigate and mitigate the threat.
 
-Auditing tracks database events and writes them to an audit log in your Azure storage account. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that might indicate business concerns or suspected security violations.
+Auditing tracks database events and writes them to an audit sign-in your Azure storage account. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that might indicate business concerns or suspected security violations.
 
 SQL Database helps secure your data by providing encryption that protects data that is stored in the database (*at rest*) and  while it's being transferred across the network (*in motion*).
+
+Azure SQL Database also offers a free offer for new databases, so you can start building without any upfront commitment.
+
+AI assistance in Azure SQL Database can suggest query optimizations and help troubleshoot performance issues using natural language.
