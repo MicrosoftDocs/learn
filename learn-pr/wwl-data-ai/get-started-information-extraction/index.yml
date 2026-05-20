@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use Azure Content Understanding in Foundry Tools to extract information from content.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 02/21/2026
+  ms.date: 05/15/2026
   ai-usage: ai-assisted
   ms.service: microsoft-foundry
   ms.topic: module-standard-task-based

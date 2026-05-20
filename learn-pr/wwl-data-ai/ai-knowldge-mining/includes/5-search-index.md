@@ -1,3 +1,14 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bc03f630-1e51-4305-9404-43eb6c96b51c]
+
+> [!TIP]
+> See the Text and images tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The index is the searchable result of the indexing process. It consists of a collection of JSON documents, with fields that contain the values extracted during indexing. Client applications can query the index to retrieve, filter, and sort information.
 
 ![Diagram of a client searching an Azure AI Search index.](../media/search-index.png)
@@ -97,6 +108,7 @@ For example, to sort the results so that the most recently modified documents ar
 search=*
 $orderby=last_modified desc
 ```
+::: zone-end
 
 > [!TIP]
 > For more information about using filters, see **[Filters in Azure AI Search](/azure/search/search-filters)** in the Azure AI Search documentation.

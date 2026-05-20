@@ -17,14 +17,14 @@ content: |
 quiz:
   questions:
 
-  - content: "If you want to start using Azure Quantum, but you don't have an Azure account, what should you do?"
+  - content: "If you want to start learning about quantum computing and Azure Quantum, but you don't have an Azure account, what should you do?"
     choices:
-    - content: "You can use the Microsoft Quantum website or install the Microsoft Quantum Development Kit (QDK) extension for Visual Studio Code (VS Code) without an Azure account. You can also create an Azure account from the Microsoft Quantum website."
+    - content: "You can use the Microsoft Quantum website to learn about quantum computing, and install the Microsoft Quantum Development Kit (QDK) without an Azure account. You can also create an Azure account from the Microsoft Quantum website."
       isCorrect: true
-      explanation: "You don't need an Azure account to start using Azure Quantum, but you should create an Azure account if you want to have access to all the Azure Quantum features."
-    - content: "You need to create an Azure account and have a valid subscription in order to start using Azure Quantum."
+      explanation: "You don't need an Azure account to start using Microsoft Quantum tools, but you should create an Azure account if you want to have access to all the Azure Quantum features."
+    - content: "You need to create an Azure account and have a valid subscription in order to start using Microsoft Quantum tools like the QDK."
       isCorrect: false
-      explanation: "Without an Azure account you can go to the Microsoft Quantum website and run your programs with Copilot, or install the QDK extension for VS Code. You don't need an Azure account to start using Azure Quantum, but you should create an Azure account if you want to have access to all the Azure Quantum features."
+      explanation: "Without an Azure account you can install and use the QDK, or you can go to the Microsoft Quantum website to learn about quantum computing. But you do need an Azure account if you want to have access to all the Azure Quantum features."
     - content: "If you don't have an account, you can still submit quantum jobs and view the job status on the Azure portal."
       isCorrect: false
       explanation: "To access the Azure portal and manage your jobs, you need to have an Azure account."
@@ -39,14 +39,14 @@ quiz:
       explanation: "The QDK is great for this user because they're already familiar with programming and software development."
     - content: 'A physics student who wants to learn the basic concepts of quantum computing.'
       isCorrect: false
-      explanation: "This user might benefit more from the Microsoft Quantum website because it provides tutorials with the Quantum Katas, and the user can ask Copilot to explain quantum concepts."
+      explanation: "This user might benefit more from the Microsoft Quantum website because it provides tutorials with the Quantum Katas, and the user can learn about quantum computing from blogs and other resources."
 
   - content: "What service should you use if you want to manage your Azure subscription, quantum workspaces, jobs, and more?"
     choices:
-    - content: "You can manage Azure Quantum from any of the development options: Microsoft Quantum website, Azure portal, and QDK in VS Code."
+    - content: "You can manage Azure Quantum from any of the quantum computing resources: the Microsoft Quantum website, the Azure portal, and the QDK."
       isCorrect: false
       explanation: "You can manage Azure Quantum only from the Azure portal."
-    - content: 'You can manage Azure Quantum from the Azure portal and the QDK in VS Code.'
+    - content: 'You can manage Azure Quantum from the Azure portal and the QDK.'
       isCorrect: false
       explanation: "You can manage Azure Quantum only from the Azure portal."
     - content: "You can manage Azure Quantum only from the Azure portal."

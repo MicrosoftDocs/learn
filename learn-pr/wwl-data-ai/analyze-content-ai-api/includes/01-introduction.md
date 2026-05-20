@@ -1,3 +1,11 @@
+﻿::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4da476b2-b362-423f-86c0-ff897b9ed2b6]
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Content Understanding is a multimodal service that simplifies the creation of AI-powered analyzers that can extract information from multiple content formats, including documents, images, audio files, and videos.
 
 > [!TIP]
@@ -8,3 +16,4 @@ You can develop client applications that use Azure Content Understanding analyze
 ![Diagram of Azure Content Understanding and a client application.](../media/content-understanding.png)
 
 In this module, you'll learn how to write code that uses the Python SDK and REST API to submit a content file to an analyzer and process the results.
+::: zone-end

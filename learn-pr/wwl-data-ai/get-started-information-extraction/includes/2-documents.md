@@ -1,6 +1,6 @@
 ::: zone pivot="video"
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=5bc63a09-15ea-478a-8a86-3547fa6d25fc]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=24a1b96b-f3b1-4cbb-adfc-b2d7264d7389]
 
 > [!NOTE]
 > See the **Text and images** tab for more details!
@@ -115,20 +115,19 @@ Azure Content Understanding offers prebuilt analyzers for common scenarios and s
 > [!NOTE]
 > Foundry portal has a *classic* user interface (UI) and a *new* user interface.
 
-After you create a *Microsoft Foundry resource*, you can use the ***classic* Foundry portal interface** to test out 
-Azure Content Understanding. The Foundry portal provides content examples and allows you to upload your own material for analysis. 
+After you create a *Microsoft Foundry resource*, you can use the ***new* Foundry portal interface** to test out Azure Content Understanding. The Foundry portal provides content examples and allows you to upload your own material for analysis. 
 
 You can use the visual interface to select a source document and extract default fields of information. For example, when you try out Azure Content Understanding on an image of a document, the service returns the document text and text layout information. 
 
-:::image type="content" source="../media/document-analysis-playground.png" alt-text="Screenshot of the classic Foundry portal with a document analyzed with Azure Content Understanding." lightbox="../media/document-analysis-playground.png":::
+:::image type="content" source="../media/document-analysis-playground.png" alt-text="Screenshot of the new Foundry portal with a document analyzed with Azure Content Understanding." lightbox="../media/document-analysis-playground.png":::
 
 Azure Content Understanding's analyzers identify text values in documents and map them to specific fields. For example, given an invoice, the service returns the fields (such as Vendor address) and the data in the fields (such as 123 456th Street). 
 
-:::image type="content" source="../media/invoice-playground.png" alt-text="Screenshot of the classic Foundry portal with an invoice analyzed with Azure Content Understanding." lightbox="../media/invoice-playground.png":::
+:::image type="content" source="../media/invoice-playground.png" alt-text="Screenshot of the new Foundry portal with an invoice analyzed with Azure Content Understanding." lightbox="../media/invoice-playground.png":::
 
 In Foundry portal, you can also view the JSON results of the processing. 
 
-:::image type="content" source="../media/invoice-json-result-playground.png" alt-text="Screenshot of the classic Foundry portal with the JSON result of an invoice analyzed with Azure Content Understanding." lightbox="../media/invoice-json-result-playground.png":::
+:::image type="content" source="../media/invoice-json-result-playground.png" alt-text="Screenshot of the new Foundry portal with the JSON result of an invoice analyzed with Azure Content Understanding." lightbox="../media/invoice-json-result-playground.png":::
 
 ## Building a client application with Azure Content Understanding 
 

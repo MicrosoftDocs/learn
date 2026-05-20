@@ -1,23 +1,17 @@
-Azure Quantum is available through three different interfaces: the Microsoft Quantum website, the Microsoft Quantum Development Kit (QDK) extension for Visual Studio Code (VS Code), and the Azure portal.
+Azure Quantum is available through three different interfaces: the Microsoft Quantum website, the Microsoft Quantum Development Kit (QDK), and the Azure portal.
 
 You can use all three options to explore quantum computing and quantum programming. But what are the differences between them? Which one is the best tool for your needs? This unit helps you answer these questions.
 
 ## What is the Microsoft Quantum website?
 
-The [Microsoft Quantum website](https://quantum.microsoft.com/) allows you to learn and explore quantum computing and quantum programming. You can discover the latest quantum breakthroughs, and create and run quantum programs with the help of Copilot.
+The [Microsoft Quantum website](https://quantum.microsoft.com/) allows you to learn and explore quantum computing and quantum programming. You can discover the latest quantum breakthroughs and learn about Microsoft Quantum tools and developments.
 
-- **Copilot in Microsoft Quantum** - AI meets the world of quantum. With a built-in code window and Q# compiler, Copilot in Microsoft Quantum can run your Q# code and also generate new code from your prompts, and engage in conversations about quantum computing.
 - **Quantum Katas** - Hands-on tutorials that teach quantum computing concepts and the Q# programming language from scratch.
 - **Code samples** - The Microsoft Quantum code library is a rich set of samples that use Q#, Python, and Qiskit code to demonstrate quantum scenarios.
 - **Videos** - Browse the video library for interviews with leading quantum computing researchers and innovators.
 - **Microsoft Quantum blogs** - Stay up to date with the latest quantum computing research and innovations.
 
-> [!TIP]
-> With the Microsoft Quantum website, you can submit quantum computing programs to the Quantinuum H-Series Emulator without an Azure subscription.
-
-If you're a quantum enthusiast and want to learn by doing, then the Microsoft Quantum website is for you.
-
-:::image type="content" source="../media/copilot.png" alt-text="Screenshot of Copilot in Microsoft Quantum showing a sample and the answer from Copilot to a question for generating new code.":::
+If you're a quantum enthusiast or just starting to learn, then the Microsoft Quantum website is for you.
 
 ### Is the Microsoft Quantum website the right tool for me?
 
@@ -25,26 +19,26 @@ Use the following table to help you decide whether you want to use the Microsoft
 
 | Use it if you want to: | You need: | You can't: |
 | --- | --- | --- |
-| <ul><li>Learn quantum programming using the tutorials in Quantum Katas</li><li>Read about quantum computing concepts</li><li>Run Q# programs online and simulate them in Quantinuum's H-Series Emulator</li><li>Ask Copilot to explain quantum computing concepts or prompt it to generate a Q# program</li><li>Open your quantum program in VS Code for the Web</li></ul> | <ul><li>No installation required</li><li>No Azure subscription required</li><ul> | <ul><li>Save your programs and results</li><li>Select a quantum computing provider</li><li>Run Python code</li><li>Manage your quantum jobs</li><li>Debug your programs</li></ul>|
+| <ul><li>Learn quantum programming using the tutorials in Quantum Katas</li><li>Read about quantum computing concepts</li></ul> | <ul><li>No installation required</li><li>No Azure subscription required</li><ul> | <ul><li>Save your programs and results</li><li>Select a quantum computing provider</li><li>Run quantum code</li><li>Manage your quantum jobs</li><li>Debug your programs</li></ul> |
 
-## What is the QDK extension?
+## What is the QDK?
 
-The QDK extension is a software development kit for quantum computing in VS Code, which is a free code editor from Microsoft.
+The QDK is a software development kit for quantum computing. You can use the QDK as an extension for Visual Studio Code (VS Code) or as a Python library in Jupyter Notebook.
 
 > [!NOTE]
-> The QDK extension is available both in VS Code and [VS Code for the web](https://vscode.dev/quantum).
+> The QDK extension is available both in VS Code and [VS Code for the web](https://vscode.dev/quantum). The QDK Python library is available on [PyPi](https://pypi.org/project/qdk/).
 
-With the QDK extension, you can create Q# programs, load pre-installed Q# samples, and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging in a local development environment. The QDK also supports OpenQASM and Python development in Jupyter notebooks.
+With the QDK extension, you can create Q# programs, load pre-installed Q# and OpenQASM samples, and take advantage of features such as improved error messaging, Q# syntax highlighting, and integrated debugging in a local development environment.
 
 The QDK provides other features, such as the Microsoft Quantum resource estimator. The resource estimator is a tool that allows you to estimate the resource requirements to run your quantum programs on real quantum hardware, such as the number of qubits, the number of operations, and the runtime.
 
-You don't need to have an Azure account to use the QDK in VS Code, but if you already have an Azure account set up, then you can connect directly to your Azure Quantum workspaces from VS Code. This allows you to run your Q# programs on the quantum computers and simulators of the providers that you selected for your workspace.
+You don't need to have an Azure account to use the QDK, but if you already have an Azure account set up, then you can connect directly to your Azure Quantum workspaces from VS Code. This allows you to run your Q# programs on the quantum computers and simulators of the providers that you selected for your workspace.
 
 :::image type="content" source="../media/quantum-development-kit-extension.png" alt-text="Screenshot of the QDK extension in VS Code.":::
 
-### Is the QDK in VS Code the right tool for me?
+### Is the QDK the right tool for me?
 
-Use this table as a quick reference to the features of the QDK in VS Code. Typically, you'll use different Azure Quantum options together, such as writing Q# code in VS Code with the QDK extension, while you manage your quantum workspace in the Azure portal.
+Use this table as a quick reference to the features of the QDK. Typically, you use different Azure Quantum options together, such as writing Q# programs in VS Code with the QDK extension, while you manage your quantum workspace in the Azure portal.
 
 | Use it if you want to: | You need: | You can't: |
 | --- | --- | --- |
