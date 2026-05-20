@@ -60,8 +60,8 @@ Supply chain attacks compromise trusted vendors, software, or services to gain a
 
 | MCSB Control | Name |
 |---------|------|
-| [DS-2](/security/benchmark/azure/mcsb-v2-devop-security#ds-2) | Secure the software supply chain |
-| [DS-6](/security/benchmark/azure/mcsb-v2-devop-security#ds-6) | Secure the workload lifecycle |
+| [DS-2](/security/benchmark/azure/mcsb-v2-devops-security#ds-2) | Secure the software supply chain |
+| [DS-6](/security/benchmark/azure/mcsb-v2-devops-security#ds-6) | Secure the workload lifecycle |
 | [PA-3](/security/benchmark/azure/mcsb-v2-privileged-access#pa-3) | Manage lifecycle of identities and entitlements |
 | [PA-6](/security/benchmark/azure/mcsb-v2-privileged-access#pa-6) | Use privileged access solution |
 | [PA-8](/security/benchmark/azure/mcsb-v2-privileged-access#pa-8) | Determine access process for cloud provider support |

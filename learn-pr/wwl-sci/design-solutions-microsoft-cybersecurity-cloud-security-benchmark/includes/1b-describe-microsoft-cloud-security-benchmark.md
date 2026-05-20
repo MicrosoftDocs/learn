@@ -13,12 +13,12 @@ The **Microsoft cloud security benchmark** provides prescriptive best practices 
 
 - **Cloud Adoption Framework**: The Microsoft Cloud Adoption Framework for Azure (CAF) delivers comprehensive, step-by-step guidance for cloud adoption success.
 - **Azure Well-Architected Framework**: The Azure Well-Architected Framework (WAF) is a design framework and set of best practices that helps architects and developers build high-quality workloads on Microsoft Azure.
-- **Microsoft Secure Future Initiative**: The Microsoft Secure First Initiative (SFI) is a Microsoft initiative launched to embed security into every stage of product design, development, and operations. The ongoing evolution of SFI informs security innovation, development, and best practices across Microsoft. It also provides us with ongoing opportunities to work with customers and the broader security industry to strengthen our collective defenses.
+- **Microsoft Secure Future Initiative**: The Microsoft Secure Future Initiative (SFI) is a Microsoft initiative launched to embed security into every stage of product design, development, and operations. The ongoing evolution of SFI informs security innovation, development, and best practices across Microsoft. It also provides us with ongoing opportunities to work with customers and the broader security industry to strengthen our collective defenses.
 - **Other industry and cloud service providers security best practice standards and framework**: Examples include the Amazon Web Services (AWS) Well-Architected Framework, Center for Internet Security (CIS) Controls, National Institute of Standards and Technology (NIST), and Payment Card Industry Data Security Standard (PCI-DSS).
 
 ## Common use cases
 
-As a cybsecurity architect, common use cases for the Microsoft cloud security benchmark include:
+As a cybersecurity architect, common use cases for the Microsoft cloud security benchmark include:
 
 - New to Azure (and other major cloud platforms, such as AWS) and looking for security best practices to ensure a secure deployment of cloud services and your own application workload.
 - Looking to improve security posture of existing cloud deployments to prioritize top risks and mitigations.

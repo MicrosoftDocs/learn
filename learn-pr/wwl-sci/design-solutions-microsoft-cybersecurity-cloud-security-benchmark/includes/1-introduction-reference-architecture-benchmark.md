@@ -1,18 +1,23 @@
-In this unit, we introduce the Microsoft Cybersecurity Reference Architecture (MCRA). But to understand what the MCRA is, it's important to first introduce the Microsoft Security Adoption Framework, as the MCRA is a component of the SAF.
+To understand the Microsoft Cybersecurity Reference Architecture (MCRA), you first need to understand where it fits within Microsoft's broader security guidance. The MCRA is a component of the Microsoft Security Adoption Framework (SAF).
 
 ## The Microsoft Security Adoption Framework
 
-The Microsoft Security Adoption Framework (SAF) is a comprehensive guide for end-to-end security modernization. It provides a structured approach—from executive strategy to architectural and technical planning—grounded in Zero Trust principles, to help organizations improve their security posture across a hybrid, multicloud environment. ***Think of SAF as the overarching "playbook" for security transformation, addressing not just technology but also strategy, governance, and processes***. 
+The [Microsoft Security Adoption Framework (SAF)](/security/adoption/adoption) provides a structured approach to end-to-end security modernization, covering strategy, governance, architecture, and operations—all grounded in Zero Trust principles. SAF is designed for the hybrid, multicloud environments that most organizations operate today.
 
-Within that framework, the Microsoft Cybersecurity Reference Architecture (MCRA) serves as a key component of SAF. ***MCRA is essentially the technical blueprint that visualizes how all Microsoft security capabilities and best practices fit together in an end-to-end architecture***. It shows how to implement SAF’s guidance at the technical level. In fact, SAF applies MCRA as the reference model for security architecture. MCRA illustrates the integrated security solutions (identity, devices, apps, infrastructure, etc.) working in concert under Zero Trust. By design, MCRA is part of SAF, helping security teams align their detailed technical architecture with the broader security strategy and Zero Trust approach advocated by SAF
+SAF includes several components that work together:
 
-In summary, SAF provides the “why and how” of security modernization (the strategic roadmap and operational guidance), while MCRA provides the "what" (the detailed architecture of security capabilities). Understanding their relationship: SAF sets the vision and process for modernizing security, and MCRA gives you the picture of the end-state architecture to aim for, ensuring that your security program’s execution aligns with Microsoft’s best-practice architecture for cybersecurity. This interplay ensures that as you plan and implement improvements via SAF, you're guided by the MCRA to cover all security domains in a coherent, integrated way. The result is a well-aligned security strategy (via SAF) and architecture (via MCRA) for modern enterprises.
+- **The CISO Workshop** — A collection of security learnings, principles, and recommendations for modernizing security, designed for executive leaders and senior security roles.
+- **The Microsoft Cybersecurity Reference Architecture (MCRA)** — The technical blueprint that visualizes how Microsoft security capabilities fit together in an end-to-end architecture.
+- **Business guidance for security modernization** — Planning and execution guides for focus areas such as rapidly modernizing security posture, securing remote work, protecting sensitive data, and meeting compliance requirements.
+- **Common security antipatterns** — Documentation of frequently observed mistakes, with guidance for overcoming them.
+
+SAF provides the strategy and process for modernizing security; the MCRA provides the target architecture. Together, they give you both the roadmap and the destination.
 
 ## MCRA
 
-The [Microsoft Cybersecurity Reference Architectures (MCRA)](/security/adoption/mcra) describe Microsoft's cybersecurity capabilities and how they integrate with existing security architectures. The MCRA provides:
+The [Microsoft Cybersecurity Reference Architectures (MCRA)](/security/adoption/mcra) are technical architectures that enable you to adopt end-to-end security using Zero Trust principles. MCRA describes end-to-end security for the "hybrid of everything" technology estate spanning legacy IT, multicloud, IoT, Operational Technology (OT), AI, and more. The MCRA provides:
 
-- **Technical diagrams** showing how Microsoft security capabilities integrate with Microsoft platforms (Microsoft 365 and Azure), non-Microsoft applications (ServiceNow, Salesforce), and non-Microsoft cloud platforms (AWS, GCP).
+- **Technical diagrams** showing how Microsoft security capabilities integrate with Microsoft platforms (Microsoft 365 and Azure), non-Microsoft applications, and non-Microsoft cloud platforms (AWS, GCP).
 - **Capability descriptions** with ScreenTips that provide brief explanations and links to documentation when viewing in presentation mode.
 - **Best practice guidance** for implementing security capabilities across your enterprise environment.
 

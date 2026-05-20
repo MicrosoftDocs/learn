@@ -73,9 +73,9 @@ Applications and Azure pipelines must be secured to prevent vulnerabilities. Key
 | [PV-2](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-2) | Audit and enforce secure configurations |
 | [AM-2](/security/benchmark/azure/mcsb-v2-asset-management#am-2) | Use only approved services |
 | [AM-5](/security/benchmark/azure/mcsb-v2-asset-management#am-5) | Use only approved applications in virtual machine |
-| [DS-2](/security/benchmark/azure/mcsb-v2-devop-security#ds-2) | Secure the software supply chain |
-| [DS-6](/security/benchmark/azure/mcsb-v2-devop-security#ds-6) | Secure the workload lifecycle |
-| [DS-7](/security/benchmark/azure/mcsb-v2-devop-security#ds-7) | Implement DevOps logging and monitoring |
+| [DS-2](/security/benchmark/azure/mcsb-v2-devops-security#ds-2) | Secure the software supply chain |
+| [DS-6](/security/benchmark/azure/mcsb-v2-devops-security#ds-6) | Secure the workload lifecycle |
+| [DS-7](/security/benchmark/azure/mcsb-v2-devops-security#ds-7) | Implement DevOps logging and monitoring |
 | [DP-3](/security/benchmark/azure/mcsb-v2-data-protection#dp-3) | Encrypt sensitive data in transit |
 | [DP-4](/security/benchmark/azure/mcsb-v2-data-protection#dp-4) | Enable data at rest encryption by default |
 
