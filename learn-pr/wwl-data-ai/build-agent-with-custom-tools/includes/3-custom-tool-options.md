@@ -2,7 +2,7 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=9071c798-0167-4a61-b64d-3cdb778d1de6]
 
-> [!NOTE]
+> [!TIP]
 > See the **Text and images** tab for more details!
 
 ::: zone-end
@@ -23,4 +23,3 @@ Foundry Agent Service provides several custom tool options, including OpenAPI sp
 This flexibility to integrate custom functionality in multiple ways enables a wide range of extensibility possibilities for your Foundry Agent Service agents.
 
 ::: zone-end
-

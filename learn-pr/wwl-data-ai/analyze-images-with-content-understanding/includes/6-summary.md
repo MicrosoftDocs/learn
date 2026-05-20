@@ -1,7 +1,10 @@
-﻿
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=fe6a5b0a-e365-4825-8080-682bb06db603]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
 
 ::: zone-end
 
@@ -22,4 +25,3 @@ Content Understanding transforms unstructured visual content into structured, ac
 
 > [!TIP]
 > For more information about Content Understanding, see **[What is Azure Content Understanding?](/azure/ai-services/content-understanding/overview)** in the Azure AI documentation.
-
