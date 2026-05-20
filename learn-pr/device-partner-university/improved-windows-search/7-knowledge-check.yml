@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.improved-windows-search.knowledge-check 
+
+title: Knowledge check 
+
+metadata: 
+
+  title: Knowledge Check 
+
+  description: This content is part of the "Improved Windows Search" module. 
+
+  ms.date: 07/01/2025 
+
+  author: stephanie-rosenzweig
+
+  ms.author: v-stephanier 
+
+  ms.topic: unit 
+
+durationInMinutes: 5 
+
+quiz: 
+
+  title: Check your knowledge 
+
+  questions: 
+
+  - content: "What is a key benefit of Improved Windows Search?" 
+
+    choices: 
+
+    - content: "Requires exact file names" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—exact matches are no longer required." 
+
+    - content: "Searches only local files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it supports broader search scenarios (and expanding further)." 
+
+    - content: "Uses AI to understand user intent" 
+
+      isCorrect: true 
+
+      explanation: "Correct—AI interprets intent and context." 
+
+    - content: "Limits results to saved folders" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—results aren’t limited in that way." 
+
+  - content: "Which search query best demonstrates Improved Windows Search?" 
+
+    choices: 
+
+    - content: "Q2_financial_review_v3_final.pptx" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—exact filenames aren't required." 
+
+    - content: "Presentation with Q2 numbers" 
+
+      isCorrect: true 
+
+      explanation: "Correct—this is a natural language query." 
+
+    - content: "*.pptx" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—this uses traditional syntax." 
+
+    - content: "file123" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—not descriptive." 
+
+  - content: "Where can users access Improved Windows Search?" 
+
+    choices: 
+
+    - content: "Only in File Explorer" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it’s not limited to one location." 
+
+    - content: "Only in Settings" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it’s not limited to Settings." 
+
+    - content: "File Explorer, taskbar’s Windows Search box, and Settings" 
+
+      isCorrect: true 
+
+      explanation: "Correct—it’s available across Windows." 
+
+    - content: "Only in Microsoft Edge" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it’s not browser-based." 
+
+  - content: "What does enabling Enhanced indexing do?" 
+
+    choices: 
+
+    - content: "Deletes unused files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—indexing doesn't remove files." 
+
+    - content: "Indexes the entire PC for better search results" 
+
+      isCorrect: true 
+
+      explanation: "Correct—it expands searchable content." 
+
+    - content: "Limits search to system files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it broadens, not restricts." 
+
+    - content: "Disables search suggestions" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—suggestions aren't disabled." 
+
+  - content: "How does Improved Windows Search help HR onboarding?" 
+
+    choices: 
+
+    - content: "Automates hiring decisions" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it doesn’t make decisions." 
+
+    - content: "Replaces HR systems" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it complements existing tools." 
+
+    - content: "Helps quickly locate onboarding materials and documents" 
+
+      isCorrect: true 
+
+      explanation: "Correct—it enables quick retrieval of onboarding content." 
+
+    - content: "Restricts access to employee files" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect—it isn’t a restriction tool."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.improved-windows-search.choose-when-to-use-improved-windows-search
+title: When to use Improved Windows Search
+metadata:
+  title: When To Use Improved Windows Search
+  description: This content is part of the "Discover faster insights with Improved Windows Search" module.
+  ms.date: 05/19/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-choose-when-to-use-improved-windows-search.md)]
