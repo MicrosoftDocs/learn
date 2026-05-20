@@ -3,7 +3,7 @@ Microsoft Azure is a cloud platform that powers the applications and IT infrastr
 Some of the most commonly used cloud services for data are described below.
 
 > [!NOTE]
-> This topic covers only some of the most commonly used data services for modern transactional and analytical solutions. Additional services are also available.
+> This article covers only some of the most commonly used data services for modern transactional and analytical solutions. Additional services are also available.
 
 ## Azure SQL
 
@@ -26,13 +26,13 @@ Azure SQL includes built-in AI assistance that helps database administrators and
 ![Azure Database for MySQL and PostgreSQL logos.](../media/azure-database.png) Azure includes managed services for popular open-source relational database systems, including:
 
 - **Azure Database for MySQL** - a simple-to-use open-source database management system that is commonly used in *Linux*, *Apache*, *MySQL*, and *PHP* (LAMP) stack apps.
-- **Azure Database for PostgreSQL** - a hybrid relational-object database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own non-relational properties.
+- **Azure Database for PostgreSQL** - a hybrid relational-object database. You can store data in relational tables, but a PostgreSQL database also enables you to store custom data types, with their own nonrelational properties.
 
 As with Azure SQL database systems, open-source relational databases are managed by database administrators to support transactional applications, and provide a data source for data engineers building pipelines for analytical solutions and data analysts creating reports.
 
 ## Azure Cosmos DB
 
-![Azure Cosmos DB logo.](../media/cosmos-db.png) Azure Cosmos DB is a global-scale non-relational (*NoSQL*) database system that supports multiple application programming interfaces (APIs), enabling you to store and manage data as JSON documents, key-value pairs, column-families, and graphs.
+![Azure Cosmos DB logo.](../media/cosmos-db.png) Azure Cosmos DB is a global-scale nonrelational (*NoSQL*) database system that supports multiple application programming interfaces (APIs), enabling you to store and manage data as JSON documents, key-value pairs, column-families, and graphs.
 
 In some organizations, Cosmos DB instances may be provisioned and managed by a database administrator; though often software developers manage NoSQL data storage as part of the overall application architecture. Data engineers often need to integrate Cosmos DB data sources into enterprise analytical solutions that support modeling and reporting by data analysts.
 
@@ -51,10 +51,10 @@ Azure Cosmos DB includes built-in AI assistance that helps developers explore an
 
 ![Azure Data Factory logo.](../media/azure-data-factory.png) Azure Data Factory is an Azure service that enables you to define and schedule data pipelines to transfer and transform data. You can integrate your pipelines with other Azure services, enabling you to ingest data from cloud data stores, process the data using cloud-based compute, and persist the results in another data store.
 
-Azure Data Factory is used by data engineers to build *extract*, *transform*, and *load* (ETL) solutions that populate analytical data stores with data from transactional systems across the organization. A version of Data Factory is also built into **Microsoft Fabric** as **Fabric Data Factory** — the recommended choice for integrated analytics pipelines when all your data work is within the Fabric platform.
+Azure Data Factory is used by data engineers to build *extract*, *transform*, and *load* (ETL) solutions that populate analytical data stores with data from transactional systems across the organization. A version of Data Factory is also built into **Microsoft Fabric** as **Fabric Data Factory—the recommended choice for integrated analytics pipelines when all your data work is within the Fabric platform.
 
 ## Microsoft Fabric
-![Microsoft Fabric logo.](../media/microsoft-fabric.png) Microsoft Fabric is Microsoft's unified software-as-a-service (SaaS) analytics platform. It brings data engineering, data warehousing, real-time analytics, data science, and Power BI together in a single browser-based workspace on top of one shared storage layer called **OneLake**. You don't manage servers or clusters — you create workspaces and items, and Microsoft runs the infrastructure.
+![Microsoft Fabric logo.](../media/microsoft-fabric.png) Microsoft Fabric is Microsoft's unified software-as-a-service (SaaS) analytics platform. It brings data engineering, data warehousing, real-time analytics, data science, and Power BI together in a single browser-based workspace on top of one shared storage layer called **OneLake**. You don't manage servers or clusters—you create workspaces and items, and Microsoft runs the infrastructure.
 
 Within Microsoft Fabric, data professionals work with integrated capabilities including:
 
@@ -67,17 +67,17 @@ Within Microsoft Fabric, data professionals work with integrated capabilities in
 - Databases (SQL database and Cosmos DB in Fabric)
 - Data governance and management
 
-Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights — all centrally stored in OneLake.
+Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights—all centrally stored in OneLake.
 
 Microsoft Fabric includes built-in AI assistance that helps data professionals build pipelines, write SQL, generate notebook code, and explore data using natural language.
 
 ## Microsoft Fabric IQ
 
-![Microsoft Fabric IQ logo.](../media/microsoft-fabric.png) Fabric IQ is a workload in Microsoft Fabric that unifies data across OneLake and contextualizes it according to the language of your business. It exposes that data to analytics, AI agents, and applications with consistent semantic meaning — so every tool and every team shares the same definitions for business concepts like *Customer*, *Order*, or *Product*.
+![Microsoft Fabric IQ logo.](../media/microsoft-fabric.png) Fabric IQ is a workload in Microsoft Fabric that unifies data across OneLake and contextualizes it according to the language of your business. It exposes that data to analytics, AI agents, and applications with consistent semantic meaning—so every tool and every team shares the same definitions for business concepts like *Customer*, *Order*, or *Product*.
 
 Fabric IQ includes several items that work together:
 
-- **Ontology** defines your enterprise vocabulary — entity types, relationships, properties, and business rules — and maps them to real data in OneLake without copying or moving it.
+- **Ontology** defines your enterprise vocabulary—entity types, relationships, properties, and business rules—and maps them to real data in OneLake without copying or moving it.
 - **Data agents** allow users to ask questions about business data in natural language, grounded in the shared ontology.
 - **Operations agents** monitor real-time data streams and trigger automated actions when business rules are met.
 - **Graph** provides a visual, connected representation of business concepts and their relationships, enabling dependency analysis and multi-hop reasoning.
@@ -90,13 +90,13 @@ Fabric IQ includes several items that work together:
 
 ![Power BI logo.](../media/power-bi.png)Power BI is Microsoft's business intelligence and data visualization platform. Data analysts use Power BI to connect to data sources, build interactive reports and dashboards, and share insights across their organization.
 
-Power BI is available as a standalone service and is also built into Microsoft Fabric, where it works alongside data engineering and warehouse capabilities in the same workspace. In Fabric, Power BI connects to data through **semantic models** — structured analytical layers that define measures, relationships, and business logic.
+Power BI is available as a standalone service and is also built into Microsoft Fabric, where it works alongside data engineering and warehouse capabilities in the same workspace. In Fabric, Power BI connects to data through **semantic models—structured analytical layers that define measures, relationships, and business logic.
 
 Power BI includes built-in AI assistance that helps data analysts summarize reports, suggest visualizations, generate DAX measures, and create written narratives from data using natural language.
 
 ## Azure Databricks
 
-![Azure Databricks logo.](../media/azure-databricks.png) Azure Databricks is a cloud analytics platform built on Apache Spark. It's optimized for large-scale data engineering, data science, and SQL analytics over open lakehouse formats — primarily **Delta Lake**. It runs as a managed service inside your Azure subscription and is a common choice for teams that need code-first Spark and notebook-based workflows.
+![Azure Databricks logo.](../media/azure-databricks.png) Azure Databricks is a cloud analytics platform built on Apache Spark. It's optimized for large-scale data engineering, data science, and SQL analytics over open lakehouse formats—primarily **Delta Lake**. It runs as a managed service inside your Azure subscription and is a common choice for teams that need code-first Spark and notebook-based workflows.
 
 Data engineers can use existing Databricks and Spark skills to create analytical data stores in Azure Databricks.
 
@@ -124,4 +124,4 @@ Data engineers can use Microsoft Purview to enforce data governance across the e
 
 ## Microsoft Foundry
 
-![Microsoft Foundry logo.](../media/microsoft-foundry.png) Microsoft Foundry is Microsoft's unified Azure platform-as-a-service (PaaS) for enterprise AI operations, model builders, and application development. It provides the tools, model access, and infrastructure that AI engineers — and developers more broadly — use to design, test, and deploy intelligent solutions, including chat-over-your-data applications, multi-agent workflows, and automated AI pipelines integrated with Azure data services.
+![Microsoft Foundry logo.](../media/microsoft-foundry.png) Microsoft Foundry is Microsoft's unified Azure platform-as-a-service (PaaS) for enterprise AI operations, model builders, and application development. It provides the tools, model access, and infrastructure that AI engineers—and developers more broadly—use to design, test, and deploy intelligent solutions, including chat-over-your-data applications, multi-agent workflows, and automated AI pipelines integrated with Azure data services.

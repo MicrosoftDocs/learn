@@ -14,19 +14,19 @@ The key job roles that deal with data in most organizations are:
 
 ## Database Administrator
 
-A database administrator is responsible for the design, implementation, maintenance, and operational aspects of on-premises and cloud-based database systems.  They're responsible for the overall availability and consistent performance and optimizations of databases. They work with stakeholders to implement policies, tools, and processes for backup and recovery plans to recover following a natural disaster or human-made error.
+A database administrator is responsible for the design, implementation, maintenance, and operational aspects of on-premises and cloud-based database systems. They're responsible for the overall availability and consistent performance and optimizations of databases. They work with stakeholders to implement policies, tools, and processes for backup and recovery plans to recover following a natural disaster or human-made error.
 
 The database administrator is also responsible for managing the security of the data in the database, granting privileges over the data, granting or denying access to users as appropriate.
 
-AI assistance is increasingly part of the database administrator's toolkit — helping troubleshoot performance issues and draft queries using natural language, without replacing the judgment and expertise the role requires.
+AI assistance is increasingly part of the database administrator's toolkit—helping troubleshoot performance issues and draft queries using natural language, without replacing the judgment and expertise the role requires.
 
 ## Data Engineer
 
-A data engineer collaborates with stakeholders to design and implement data-related workloads, including data ingestion pipelines, cleansing and transformation activities, and data stores for analytical workloads. They use a wide range of data platform technologies, including relational and non-relational databases, file stores, and data streams.
+A data engineer collaborates with stakeholders to design and implement data-related workloads, including data ingestion pipelines, cleansing and transformation activities, and data stores for analytical workloads. They use a wide range of data platform technologies, including relational and nonrelational databases, file stores, and data streams.
 
 They're also responsible for ensuring that the privacy of data is maintained within the cloud and spanning from on-premises to the cloud data stores. They own the management and monitoring of data pipelines to ensure that data loads perform as expected.
 
-AI assistance helps data engineers accelerate pipeline development — generating transformation code and suggesting configurations using natural language, without replacing the architectural decisions and data quality judgment the role requires.
+AI assistance helps data engineers accelerate pipeline development—generating transformation code and suggesting configurations using natural language, without replacing the architectural decisions and data quality judgment the role requires.
 
 ## Data Analyst
 
@@ -34,7 +34,7 @@ A data analyst enables businesses to maximize the value of their data assets. Th
 
 A data analyst processes raw data into relevant insights based on identified business requirements to deliver relevant insights.
 
-AI assistance helps data analysts work faster — summarizing reports, suggesting visualizations, and generating analytical expressions using natural language, without replacing the business understanding and storytelling the role requires.
+AI assistance helps data analysts work faster—summarizing reports, suggesting visualizations, and generating analytical expressions using natural language, without replacing the business understanding and storytelling the role requires.
 
 ## AI Engineer
 
@@ -42,7 +42,7 @@ An AI engineer builds and integrates AI-powered features into applications and d
 
 AI engineers collaborate closely with data engineers to access and prepare the underlying data, and with data analysts to surface AI-generated insights in reports and applications. **Microsoft Foundry** provides the tools and platform AI engineers use to build, test, and deploy these solutions.
 
-AI assistance is central to the AI engineer's daily work — generating code, explaining model behavior, and suggesting architectures using natural language, though the design decisions, evaluation, and responsible deployment of AI systems remain distinctly human responsibilities.
+AI assistance is central to the AI engineer's daily work—generating code, explaining model behavior, and suggesting architectures using natural language, though the design decisions, evaluation, and responsible deployment of AI systems remain distinctly human responsibilities.
 
 > [!NOTE]
 > The roles described here represent the key data-related roles found in most medium to large organizations. There are additional data-related roles not mentioned here, such as *data scientist* and *data architect*; and there are other technical professionals that work with data, including *application developers* and *software engineers*.
