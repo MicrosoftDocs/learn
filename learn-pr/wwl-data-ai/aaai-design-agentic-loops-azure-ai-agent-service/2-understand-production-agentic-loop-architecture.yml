@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-agentic-loops-azure-ai-agent-service.understand-production-agentic-loop-architecture
+title: Understand production agentic loop architecture
+metadata:
+  title: Understand Production Agentic Loop Architecture
+  description: "Understand production agentic loop architecture."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-understand-production-agentic-loop-architecture.md)]

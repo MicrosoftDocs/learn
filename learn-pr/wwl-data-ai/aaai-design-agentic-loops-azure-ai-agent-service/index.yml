@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.design-agentic-loops-azure-ai-agent-service
+metadata:
+  title: Design Stateful Agentic Loops with Azure AI Agent Service
+  description: "Design production-grade stateful agentic loops with Azure AI Agent Service. Implement stop_reason handling and context accumulation, configure agent reflection and planning cycles, architect session state persistence, and build fork-based session patterns for multi-turn workflow branching."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-foundry
+  ai-usage: ai-generated
+title: Design stateful agentic loops with Azure AI Agent Service
+summary: "Design stateful agentic loops for production AI systems. Implement run-status handling and context accumulation, configure agent reflection and planning cycles, architect session state persistence, and build fork-based session patterns for multi-turn workflow branching."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design agentic loop patterns that handle run-status signals and accumulate context across iterations
+  - Implement agent reflection and planning cycles for multi-step reasoning
+  - Architect session state management strategies for persistent multi-turn agent interactions
+  - Build fork-based session patterns to support conversation branching and resumption
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building and deploying AI agents with Azure AI Foundry Agent Service
+  - Familiarity with agent runs, threads, and message management in the Azure AI Agent Service SDK
+  - Proficiency in Python
+  - 4+ years of AI/ML development experience
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- foundry-agent-service
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.introduction
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.understand-production-agentic-loop-architecture
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.implement-agent-reflection-planning-cycles
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.design-session-state-context-management
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.implement-fork-based-sessions
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.knowledge-check
+- learn.wwl.design-agentic-loops-azure-ai-agent-service.summary
+badge:
+  uid: learn.wwl.design-agentic-loops-azure-ai-agent-service.badge
