@@ -4,6 +4,11 @@ Azure Cosmos DB is Microsoft's fully managed and serverless distributed database
 
 Azure Cosmos DB for NoSQL is Microsoft’s native non-relational service for working with the document data model. It manages data in JSON document format, and despite being a NoSQL data storage solution, uses SQL syntax to work with the data.
 
+> [!NOTE]
+> This API was previously called the **SQL API** and was renamed to the **NoSQL API** in 2023. If you see older documentation referencing the "SQL API," it refers to the same service.
+
+Fabric mirroring is available for **Cosmos DB for NoSQL**, so you can replicate your operational data directly into Microsoft Fabric for analytics without building a separate pipeline.
+
 A SQL query for an Azure Cosmos DB database containing customer data might look similar to this:
 
 ```sql
@@ -48,6 +53,10 @@ The results of this query consist of JSON documents, similar to this:
 ## Azure Cosmos DB for Table
 
 Azure Cosmos DB for Table is used to work with data in key-value tables, similar to Azure Table Storage. It offers greater scalability and performance than Azure Table Storage.
+
+> [!TIP]
+> Azure Table Storage is still available, but Azure Cosmos DB for Table is recommended for new workloads because it offers higher performance, global distribution, automatic secondary indexes, and instant autoscale. The two share the same programming model, so migrating existing applications requires minimal code changes.
+
 For example, you might define a table named Customers like this:
 
 | PartitionKey | RowKey | Name | Email |
