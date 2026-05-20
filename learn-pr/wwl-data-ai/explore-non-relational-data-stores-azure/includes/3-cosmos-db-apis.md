@@ -1,8 +1,8 @@
-Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both relational and non-relational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including MongoDB and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who work with the data store.
+Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both relational and nonrelational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including MongoDB and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who work with the data store.
 
 ## Azure Cosmos DB for NoSQL
 
-Azure Cosmos DB for NoSQL is Microsoft’s native non-relational service for working with the document data model. It manages data in JSON document format, and despite being a NoSQL data storage solution, uses SQL syntax to work with the data.
+Azure Cosmos DB for NoSQL is Microsoft’s native nonrelational service for working with the document data model. It manages data in JSON document format, and despite being a NoSQL data storage solution, uses SQL syntax to work with the data.
 
 > [!NOTE]
 > This API was previously called the **SQL API** and was renamed to the **NoSQL API** in 2023. If you see older documentation referencing the "SQL API," it refers to the same service.
@@ -95,7 +95,7 @@ Azure Cosmos DB for Apache Gremlin is used with data in a graph structure; in wh
 
  The example in the image shows two kinds of vertex (employee and department) and edges that connect them (employee "Ben" reports to employee "Sue", and both employees work in the "Hardware" department).
 
- Gremlin syntax includes functions to operate on vertices and edges, enabling you to insert, update, delete, and query data in the graph.  For example, you could use the following code to add a new employee named *Alice* that reports to the employee with ID **1** (*Sue*)
+ Gremlin syntax includes functions to operate on vertices and edges, enabling you to insert, update, delete, and query data in the graph. For example, you could use the following code to add a new employee named *Alice* that reports to the employee with ID **1** (*Sue*)
 
 ```apache
 g.addV('employee').property('id', '3').property('firstName', 'Alice')

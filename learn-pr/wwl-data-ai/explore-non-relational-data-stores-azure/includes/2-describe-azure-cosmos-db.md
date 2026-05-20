@@ -7,9 +7,9 @@ Azure Cosmos DB supports multiple application programming interfaces (APIs) that
 
 Cosmos DB uses indexes and partitioning to provide fast read and write performance and can scale to massive volumes of data. You can enable multi-region writes, adding the Azure regions of your choice to your Cosmos DB account so that globally distributed users can each work with data in their local replica.
 
-Cosmos DB offers **serverless** and **autoscale** throughput models, so you pay only for what you use or let the service scale capacity automatically based on demand. When you need precise control over data consistency across distributed replicas, Cosmos DB provides five **consistency levels** — from strong to eventual — letting you balance performance and accuracy for your scenario.
+Cosmos DB offers **serverless** and **autoscale** throughput models, so you pay only for what you use or let the service scale capacity automatically based on demand. When you need precise control over data consistency across distributed replicas, Cosmos DB provides five **consistency levels—from strong to eventual—letting you balance performance and accuracy for your scenario.
 
-The **NoSQL API** in Cosmos DB also supports **vector search**, which is what lets you build AI apps that ground responses in your own operational data — for example, a customer-support chatbot that searches your product documents for the most relevant answer before responding. When combined with **Azure AI Foundry**, Cosmos DB can power chat-over-your-data scenarios where your app queries both structured and unstructured data using natural language.
+The **NoSQL API** in Cosmos DB also supports **vector search**, which is what lets you build AI apps that ground responses in your own operational data—for example, a customer-support chatbot that searches your product documents for the most relevant answer before responding. When combined with **Azure AI Foundry**, Cosmos DB can power chat-over-your-data scenarios where your app queries both structured and unstructured data using natural language.
 
 You can also **mirror Cosmos DB data into Microsoft Fabric**, making it available for analytics, data engineering, and reporting without moving or duplicating data through a separate pipeline.
 
