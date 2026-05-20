@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="1040" viewBox="0 0 860 1040" role="img" aria-label="Vertical decision tree to determine whether Office Home 2024 is right for you.">
+
+
+  <!-- White background -->
+  <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"/>
+
   <defs>
     <style>
       .title { font: 700 24px "Segoe UI", Arial, sans-serif; fill: #1a1a1a; }
