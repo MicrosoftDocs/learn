@@ -5,7 +5,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/12/2026
+  ms.date: 05/20/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "Table name and column name"
       isCorrect: false
-      explanation: "That's incorrect.  Columns in an Azure Table storage table are anonymous and don't have names. The elements for an Azure Table storage Key are the partition key and row key."
+      explanation: "That's incorrect. Columns in an Azure Table storage table are anonymous and don't have names. The elements for an Azure Table storage Key are the partition key and row key."
     - content: "Partition key and row key"
       isCorrect: true
       explanation: "That's correct. The partition key identifies the partition in which a row is located, and the rows in each partition are stored in row key order."
