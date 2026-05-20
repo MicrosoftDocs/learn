@@ -9,15 +9,15 @@ Cosmos DB uses indexes and partitioning to provide fast read and write performan
 
 Cosmos DB offers **serverless** and **autoscale** throughput models, so you pay only for what you use or let the service scale capacity automatically based on demand. When you need precise control over data consistency across distributed replicas, Cosmos DB provides five **consistency levels—from strong to eventual—letting you balance performance and accuracy for your scenario.
 
-The **NoSQL API** in Cosmos DB also supports **vector search**, which is what lets you build AI apps that ground responses in your own operational data—for example, a customer-support chatbot that searches your product documents for the most relevant answer before responding. When combined with **Azure AI Foundry**, Cosmos DB can power chat-over-your-data scenarios where your app queries both structured and unstructured data using natural language.
+The **NoSQL API** in Cosmos DB also supports **vector search**, which is what lets you build AI apps that ground responses in your own operational data—for example, a customer-support chatbot that searches your product documents for the most relevant answer before responding. When combined with **Microsoft Foundry**, Cosmos DB can power chat-over-your-data scenarios where your app queries both structured and unstructured data using natural language.
 
 You can also **mirror Cosmos DB data into Microsoft Fabric**, making it available for analytics, data engineering, and reporting without moving or duplicating data through a separate pipeline.
 
 ## When to use Cosmos DB
 
-Cosmos DB is a highly scalable database management system. Cosmos DB automatically allocates space in a container for your partitions, and each partition can grow up to 10 GB in size. Indexes are created and maintained automatically. There's virtually no administrative overhead.
+Cosmos DB is a highly scalable database management system. Cosmos DB automatically allocates space in a container for your partitions, and each partition can grow up to 20 GB in size. Indexes are created and maintained automatically. There's virtually no administrative overhead.
 
-Cosmos DB is a foundational service in Azure. Cosmos DB has been used by many of Microsoft's products for mission critical applications at global scale, including Skype, Xbox, Microsoft 365, Azure, and many others. Cosmos DB is highly suitable for the following scenarios:
+Cosmos DB is a foundational service in Azure. Cosmos DB has been used by many of Microsoft's products for mission critical applications at global scale, including Xbox, Microsoft 365, Azure, and many others. Cosmos DB is highly suitable for the following scenarios:
 
 - *IoT and telematics*. These systems typically ingest large amounts of data in frequent bursts of activity. Cosmos DB can accept and store this information quickly. The data can then be used by analytics services, such as Azure Machine Learning, Microsoft Fabric, and Power BI. Additionally, you can process the data in real-time using Azure Functions that are triggered as data arrives in the database.
 
