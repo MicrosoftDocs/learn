@@ -2,15 +2,18 @@ Many on-premises systems comprising a network of in-house computers make use of 
 
 Azure Files is essentially a way to create cloud-based network shares, such as you typically find in on-premises organizations to make documents and other files available to multiple users. By hosting file shares in Azure, organizations can eliminate hardware costs and maintenance overhead, and benefit from high availability and scalable cloud storage for files.
 
-![An Azure storage account with an Azure Files share](../media/azure-files.png)
+![Diagram of an Azure storage account with an Azure Files share.](../media/azure-files.png)
 
 You create Azure File storage in a storage account. Azure Files enables you to share large amounts of data in a single storage account — up to 256 TiB for SSD-based accounts, and even more for HDD-based accounts. This data can be distributed across any number of file shares in the account. The maximum size of a single file is 4 TiB, but you can set quotas to limit the size of each share below this figure. Currently, Azure File Storage supports up to 2,000 concurrent handles per file or directory.
 
 After you've created a storage account, you can upload files to Azure File Storage using the Azure portal, or tools such as the **AzCopy** utility. You can also use the **Azure File Sync** service to synchronize locally cached copies of shared files with the data in Azure File Storage.
+
+![Diagram of the Azure File storage architecture.](../media/azure-files-architecture.png)
 
 Azure File Storage offers two media tiers. The **HDD** tier uses hard disk-based hardware in a datacenter, and the **SSD** tier uses solid-state disks. The **SSD** tier offers greater throughput, but is charged at a higher rate.
 
 Azure Files supports two common network file sharing protocols:
 
 - **Server Message Block (SMB)** file sharing is commonly used across multiple operating systems (Windows, Linux, macOS).
+
 - **Network File System (NFS)** shares are used by Linux (kernel 4.3 or later). NFS Azure file shares are not supported on Windows or macOS. To create an NFS share, you must use an SSD-tier storage account and create and configure a virtual network through which access to the share can be controlled.
