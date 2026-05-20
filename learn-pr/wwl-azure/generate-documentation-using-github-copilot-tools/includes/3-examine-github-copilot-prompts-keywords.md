@@ -38,43 +38,12 @@ You can prefix your prompt with a specific chat participant to help GitHub Copil
 
 Slash commands help GitHub Copilot Chat understand your intent when you ask a question. Are you learning about a code base (`/explain`), do you want help with fixing an issue (`/fix`), or are you creating test cases (`/tests`)? By letting GitHub Copilot Chat know what you're trying to do, it can tune its reply to your task and provide helpful commands, settings, and code snippets.
 
-Chat participants are often bundled with slash commands. The slash command is a concise way to explain your intent to the chat participant. The `/explain` slash command is often bundled with the `#codebase` chat participant. The combination of a chat participant and a slash command is a powerful way to clarify your intent.
-
-For example, consider the following sample prompt:
-
-```plaintext
-Create a new workspace that uses Node.js, the Express framework, the Pug template engine, and TypeScript.
-```
-
-GitHub Copilot may interpret this prompt as a request for new code project created using the specified technologies, but it's easier for GitHub Copilot to understand the following prompt that uses keywords:
-
-```plaintext
-/new Node.js Express Pug TypeScript
-```
-
-If you enter the second prompt, GitHub Copilot proposes the following directory structure. The file list can be used to preview the proposed files, and the **Create Workspace** button can be used to generate the files in a new folder.
-
-![Screenshot showing a "new workspace" prompt in the Chat view.](../media/new-slash-command-with-workspace-chat-participant.png)
-
 Examples of built-in slash commands:
 
-- `/help`: Get help about using GitHub Copilot.
-- `/doc`: Generate code documentation.
 - `/clear`: Start a new chat session.
 - `/explain`: Explain how the selected code works.
-- `/tests`: Generate unit tests for the selected code.
 - `/fix`: Propose a fix for the selected code.
-- `/new`: Scaffold code for a new workspace. Only the chat prompt is used as context.
-- `/newNotebook`: Create a new Jupyter Notebook. Only the chat prompt is used as context.
-
-Examples using chat participant and variables combined with slash commands:
-
-- `#codebase /explain`: Generate an explanation of the full workspace.
-- `#codebase /fix` (or `/fix`): Propose a fix for the problems in the selected code.
-- `#codebase /tests` (or `/tests`): Generate unit tests for the selected code.
-- `@vscode`: Ask questions about VS Code features, settings, and extension APIs. For example: `@vscode how to enable word wrapping?`
-- `#codebase /new` (or `/new`): Scaffold code for a new workspace.
-- `#codebase /newNotebook` (or `/newNotebook`): Create a new Jupyter Notebook.
+- `/tests`: Generate unit tests for the selected code.
 
 ### Chat variables
 
@@ -86,7 +55,6 @@ Chat participants, such as @vscode, can contribute chat variables that provide d
 
 Examples of built-in chat variables are:
 
-- `#editor`: the visible source code in the active editor.
 - `#selection`: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
 - `#<file or folder name>`: type #, followed by a file or folder name, to add it as chat context.
 - `#codebase`: add relevant workspace content as context to your prompt.
