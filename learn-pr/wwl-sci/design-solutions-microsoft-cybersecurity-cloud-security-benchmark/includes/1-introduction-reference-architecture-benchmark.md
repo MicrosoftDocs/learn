@@ -2,14 +2,14 @@ To understand the Microsoft Cybersecurity Reference Architecture (MCRA), you fir
 
 ## The Microsoft Security Adoption Framework
 
-The [Microsoft Security Adoption Framework (SAF)](/security/adoption/adoption) provides a structured approach to end-to-end security modernization, covering strategy, governance, architecture, and operations—all grounded in Zero Trust principles. SAF is designed for the hybrid, multicloud environments that most organizations operate today.
+The [Microsoft Security Adoption Framework (SAF)](/security/adoption/adoption) provides a structured approach to end-to-end security modernization, covering strategy, governance, architecture, and operations, all grounded in Zero Trust principles. SAF is designed for the hybrid, multicloud environments that most organizations operate today.
 
 SAF includes several components that work together:
 
-- **The CISO Workshop** — A collection of security learnings, principles, and recommendations for modernizing security, designed for executive leaders and senior security roles.
-- **The Microsoft Cybersecurity Reference Architecture (MCRA)** — The technical blueprint that visualizes how Microsoft security capabilities fit together in an end-to-end architecture.
-- **Business guidance for security modernization** — Planning and execution guides for focus areas such as rapidly modernizing security posture, securing remote work, protecting sensitive data, and meeting compliance requirements.
-- **Common security antipatterns** — Documentation of frequently observed mistakes, with guidance for overcoming them.
+- **The CISO Workshop**: A collection of security learnings, principles, and recommendations for modernizing security, designed for executive leaders and senior security roles.
+- **The Microsoft Cybersecurity Reference Architecture (MCRA)**: The technical blueprint that visualizes how Microsoft security capabilities fit together in an end-to-end architecture.
+- **Business guidance for security modernization**: Planning and execution guides for focus areas such as rapidly modernizing security posture, securing remote work, protecting sensitive data, and meeting compliance requirements.
+- **Common security antipatterns**: Documentation of frequently observed mistakes, with guidance for overcoming them.
 
 SAF provides the strategy and process for modernizing security; the MCRA provides the target architecture. Together, they give you both the roadmap and the destination.
 

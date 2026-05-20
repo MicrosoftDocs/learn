@@ -1,4 +1,4 @@
-Imagine you're the lead cybersecurity architect at a global financial services company. Your organization is expanding its cloud footprint, deploying AI-powered customer service tools, and integrating with third-party vendors. Leadership asks you to design a security architecture that protects against sophisticated external attacks, prevents insider data leaks, and secures the new AI systems—all while meeting regulatory compliance requirements.
+Imagine you're the lead cybersecurity architect at a global financial services company. Your organization is expanding its cloud footprint, deploying AI-powered customer service tools, and integrating with third-party vendors. Leadership asks you to design a security architecture that protects against sophisticated external attacks, prevents insider data leaks, and secures the new AI systems, all while meeting regulatory compliance requirements.
 
 Where do you start? How do you ensure your security design is comprehensive and aligned with industry best practices?
 
