@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.office-home-2024.office-home-2024-experience
+title: The Microsoft Office Home 2024 experience
+metadata:
+  title: The Microsoft Office Home 2024 Experience
+  description: This content is part of the "Introduction to Microsoft Office Home 2024" module.
+  ms.date: 05/20/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-office-home-2024-experience.md)]
