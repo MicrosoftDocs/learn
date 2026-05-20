@@ -80,3 +80,6 @@ Beyond views, stored procedures, and indexes, Azure SQL Database supports two sp
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing the concept of temporal tables.](../media/temporal-table.png)
+
+> [!NOTE]
+> The prices shown in this diagram are fictitious and used for illustration purposes only.
