@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-surface-pro-12th-edition.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Introduction to Microsoft Surface Pro for Business, 13-inch (12th Edition)" module.
+  ms.date: 05/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a key characteristic of Microsoft Surface Pro for Business, 13-inch (12th Edition)?"
+    choices:
+        - content: "It's a desktop-only device designed for fixed office environments."
+          isCorrect: false
+          explanation: ""
+        - content: "It's a laptop-tablet hybrid that combines portability with laptop-grade performance."
+          isCorrect: true
+          explanation: ""
+        - content: "It's a mobile device that only supports basic productivity tasks."
+          isCorrect: false
+          explanation: ""
+        - content: "It's designed exclusively for creative professionals working in studios."
+          isCorrect: false
+          explanation: ""
+  - content: "What role does the Neural Processing Unit (NPU) play in Surface Pro for Business, 13-inch (12th Edition)?"
+    choices:
+        - content: "It manages device charging and battery optimization."
+          isCorrect: false
+          explanation: ""
+        - content: "It enables Copilot+ PC AI features by delivering AI processing capabilities."
+          isCorrect: true
+          explanation: ""
+        - content: "It replaces the need for a central processor (CPU)."
+          isCorrect: false
+          explanation: ""
+        - content: "It's used only for improving display resolution and graphics quality."
+          isCorrect: false
+          explanation: ""
+  - content: "How does Recall (preview) help users be more productive?"
+    choices:
+        - content: "By automatically organizing files into folders without user input."
+          isCorrect: false
+          explanation: ""
+        - content: "By providing an explorable timeline to find previously viewed content using natural descriptions."
+          isCorrect: true
+          explanation: ""
+        - content: "By backing up all files to the cloud in real time."
+          isCorrect: false
+          explanation: ""
+        - content: "By replacing search functionality across the operating system."
+          isCorrect: false
+          explanation: ""
+  - content: "What is a benefit of Windows Studio Effects on Surface Pro for Business, 13-inch (12th Edition)?"
+    choices:
+        - content: "It requires additional external hardware to improve video quality."
+          isCorrect: false
+          explanation: ""
+        - content: "It enhances video calls by automatically adjusting lighting and reducing background noise."
+          isCorrect: true
+          explanation: ""
+        - content: "It's only available when using third-party video conferencing apps."
+          isCorrect: false
+          explanation: ""
+        - content: "It disables camera effects to improve system performance."
+          isCorrect: false
+          explanation: ""
+  - content: "How does Device Firmware Configuration Interface (DFCI) support device management?"
+    choices:
+        - content: "By automatically updating all applications on the device."
+          isCorrect: false
+          explanation: ""
+        - content: "By allowing IT admins to remotely disable hardware components like cameras or USB boot access."
+          isCorrect: true
+          explanation: ""
+        - content: "By encrypting all internet traffic on the device."
+          isCorrect: false
+          explanation: ""
+        - content: "By replacing the need for mobile device management (MDM) solutions."
+          isCorrect: false
+          explanation: ""
