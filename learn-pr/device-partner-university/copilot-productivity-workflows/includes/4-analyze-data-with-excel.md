@@ -14,9 +14,9 @@ Next, let's explore how to use this feature:
 2. From the **Home tab** on the ribbon, select **Copilot**.
 3. Ask Copilot a specific question about the insights you need. The more specific your prompt, the more useful the results will be. For example:
 
-**Less effective:** What does this data show?"
+    **Less effective:** What does this data show?"
 
-**More effective:** Analyze weekly sales by region, identify trends and outliers, and present the results in a PivotTable."
+    **More effective:** Analyze weekly sales by region, identify trends and outliers, and present the results in a PivotTable."
 
 4. Review the insights provided to find ones that help you the most.
 

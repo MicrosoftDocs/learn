@@ -27,7 +27,7 @@ For example, you might ask Copilot to:
 - Summarize the meeting and list key decisions.
 - Identify the next steps and assign ownership.
 
-**Result:**You quickly understand what was discussed and what needs to happen next—without reading the full conversation.
+**Result:** You quickly understand what was discussed and what needs to happen next—without reading the full conversation.
 
 **Step 2: Draft a follow-up message in Outlook**
 
@@ -44,7 +44,7 @@ For example, you might ask Copilot to:
 - Draft a follow-up email summarizing the meeting and action items.
 - Make the message concise and professional.
 
-**Result:**You create a clear, ready-to-send update in seconds, ensuring alignment across your team.
+**Result:** You create a clear, ready-to-send update in seconds, ensuring alignment across your team.
 
 **Step 3: Create a structured project brief in Word**
 
@@ -61,7 +61,7 @@ For example, you might ask Copilot to:
 - Create a one-page project brief based on the meeting summary.
 - Include sections for goals, decisions, risks, and next steps.
 
-**Result:**You generate a polished document that captures key details and can be shared with stakeholders.
+**Result:** You generate a polished document that captures key details and can be shared with stakeholders.
 
 **Step 4: Build a presentation in PowerPoint**
 
@@ -78,7 +78,7 @@ For example, you might ask Copilot to:
 - Create a short presentation based on the project brief.
 - Add slides for status, risks, and next steps.
 
-**Result:**You quickly produce a presentation that communicates your message clearly and professionally.
+**Result:** You quickly produce a presentation that communicates your message clearly and professionally.
 
 ## Key takeaways
 
