@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-agentic-loops-azure-ai-agent-service.implement-fork-based-sessions
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.implement-fork-based-sessions
 title: Implement fork-based sessions and conversation resumption
 metadata:
   title: Implement Fork-Based Sessions and Conversation Resumption
