@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-surface-pro-12th-edition
+title: Introduction to Microsoft Surface Pro for Business, 13-inch (12th Edition)
+metadata:
+  title: Introduction to Microsoft Surface Pro for Business, 13-inch (12th Edition)
+  description: 'In this module, you''ll learn about the features and benefits of Microsoft Surface Pro for Business, 13-inch (12th Edition), and how it can help you and your organization be more productive.'
+  ms.date: 05/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn about the features and benefits of Microsoft Surface Pro for Business, 13-inch (12th Edition), and how it can help you and your organization be more productive.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the key features and benefits of Microsoft Surface Pro for Business, 13-inch (12th Edition).
+  - Explain how Microsoft Surface Pro for Business, 13-inch (12th Edition) can help you and your organization be more productive.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-surface-pro-12th-edition-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-surface-pro-12th-edition.introduction
+  - learn.dpu.introduction-surface-pro-12th-edition.what-is-microsoft-surface-pro-for-business-13-inch-12th-edition
+  - learn.dpu.introduction-surface-pro-12th-edition.how-surface-pro-for-business-13-inch-12th-edition-works
+  - learn.dpu.introduction-surface-pro-12th-edition.how-surface-pro-for-business-13-inch-12th-edition-software-features-work
+  - learn.dpu.introduction-surface-pro-12th-edition.when-to-use-surface-pro-for-business-13-inch-12th-edition
+  - learn.dpu.introduction-surface-pro-12th-edition.knowledge-check
+  - learn.dpu.introduction-surface-pro-12th-edition.summary
+badge:
+  uid: learn.dpu.introduction-surface-pro-12th-edition.badge
