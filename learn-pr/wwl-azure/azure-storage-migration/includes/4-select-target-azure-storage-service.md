@@ -12,7 +12,7 @@ Learn more: [Compare Azure storage services](/azure/storage/common/storage-intro
 
 The following flowchart outlines when to pick which offering based on these requirements:
 
-:::image type="content" source="../media/file-service-images-with-ISV.png" alt-text="Flowchart showing how to select an Azure storage service based on access protocol requirements.":::
+:::image type="content" source="../media/file-service-images-with-isv.png" alt-text="Flowchart showing how to select an Azure storage service based on access protocol requirements.":::
 
 ## Azure Blob and ADLS Gen2
 
