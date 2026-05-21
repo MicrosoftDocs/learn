@@ -99,9 +99,9 @@ As threads grow, costs increase and you approach the model's context limit. A th
 
 **Context window pressure** manifests in three ways:
 
-1. **Cost escalation**: Token consumption grows linearly with message count
-2. **Latency increase**: Longer contexts take longer to process
-3. **Context overflow**: Threads eventually exceed model limits (typically 128K tokens)
+- **Cost escalation**: Token consumption grows linearly with message count
+- **Latency increase**: Longer contexts take longer to process
+- **Context overflow**: Threads eventually exceed model limits (typically 128K tokens)
 
 Track context size proactively:
 
