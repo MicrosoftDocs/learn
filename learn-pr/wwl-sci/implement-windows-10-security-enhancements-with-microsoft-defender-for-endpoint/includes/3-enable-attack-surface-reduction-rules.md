@@ -39,6 +39,7 @@ Attack Surface Reduction rules currently support the rules below:
 - Block Office communication applications from creating child processes
 - Block Adobe Reader from creating child processes
 - Block persistence through WMI event subscription
+- Block abuse of exploited vulnerable signed drivers
 
 ## Exclude files and folders from attack surface reduction rules
 
@@ -46,7 +47,7 @@ You can exclude files and folders from being evaluated by most attack surface re
 
 You exclude attack surface reduction rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators.
 
-You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.
+You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to. An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
 ## Audit mode for evaluation
 
@@ -54,7 +55,7 @@ Use audit mode to evaluate how attack surface reduction rules would impact your 
 
 ## Notifications when a rule is triggered
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft Defender portal.
+Whenever a rule is triggered, a notification is displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft Defender portal.
 
 ## Configure attack surface reduction rules
 
@@ -62,21 +63,21 @@ You can set these rules for devices running any of the following editions and ve
 
 - Windows 10 Pro, version 1709 or later
 - Windows 10 Enterprise, version 1709 or later
-- Windows Server, version 1803 (Semi-Annual Channel) or later
-- Windows Server 2019
+- Windows 11
 - Windows Server 2016
-- Windows Server 2012 R2
+- Windows Server 2019
 - Windows Server 2022
+- Windows Server 2025
 
 You can enable attack surface reduction rules by using any of these methods:
 
 - Microsoft Intune
 - Mobile Device Management (MDM)
-- Microsoft Endpoint Configuration Manager
+- Microsoft Configuration Manager
 - Group Policy
 - PowerShell
 
-Enterprise-level management such as Intune or Microsoft Endpoint Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Configuration Manager is recommended. Enterprise-level management overwrites any conflicting Group Policy or PowerShell settings on startup.
 
 ### Intune
 
@@ -153,7 +154,7 @@ To manage the attack surface reduction rules in Microsoft Endpoint Configuration
 To manage the attack surface reduction rules in Group Policy:
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software overwrites any conflicting Group Policy settings on startup.
 
 1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and select **Edit**.
 
@@ -176,7 +177,7 @@ To manage the attack surface reduction rules in Group Policy:
 To manage the attack surface reduction rules with PowerShell:
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
+> If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software overwrites any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
 
 1. Type *PowerShell* in the Start menu, right-click Windows PowerShell, and select Run as administrator.
 
@@ -202,7 +203,7 @@ To manage the attack surface reduction rules with PowerShell:
     ```
 
 1. You must specify the state individually for each rule, but you can combine rules and states in a comma-separated list.
-1. In the following example, the first two rules will be enabled, the third rule will be disabled, and the fourth rule will be enabled in audit mode:
+1. In the following example, the first two rules are enabled, the third rule is disabled, and the fourth rule will be enabled in audit mode:
 
     ```powershell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID 1>,<rule ID 2>,<rule ID 3>,<rule ID 4> -AttackSurfaceReductionRules_Actions Enabled, Enabled, Disabled, AuditMode
@@ -221,7 +222,7 @@ To manage the attack surface reduction rules with PowerShell:
 1. Continue to use Add-MpPreference -AttackSurfaceReductionOnlyExclusions to add more files and folders to the list.
 
 > [!IMPORTANT]
-> Use Add-MpPreference to append or add apps to the list. Using the Set-MpPreference cmdlet will overwrite the existing list.
+> Use Add-MpPreference to append or add apps to the list. Using the Set-MpPreference cmdlet overwrites the existing list.
 
 ### List of attack surface reduction events
 
