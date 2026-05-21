@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - General understanding of cloud platforms 
   - Understanding of your organization's migration plan and the types of workloads you need to migrate 
-iconUrl: /training/achievements/azure-storage-migration.svg
+iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
 - beginner
