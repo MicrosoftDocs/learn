@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-best-windows-11-edition.identify-windows-edition-options
+title: Compare Windows 11 Pro and Enterprise for organizational needs
+metadata:
+  title: Compare Windows 11 Pro and Enterprise for Organizational Needs
+  description: This content is part of the "Choose the best Windows 11 edition built for your organization’s needs" module.
+  ms.date: 05/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-identify-windows-edition-options.md)]

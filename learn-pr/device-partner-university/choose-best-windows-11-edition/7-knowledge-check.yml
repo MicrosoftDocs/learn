@@ -1,0 +1,89 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.choose-best-windows-11-edition.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Choose the best Windows 11 edition built for your organization’s needs" module.
+  ms.date: 05/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "An organization has 250 employees, a small IT team, and a growing number of Windows devices. Security is important, but the organization has no strict regulatory or compliance requirements. IT wants a manageable, business-ready option without added operational complexity.\n\nWhich Windows edition is the best fit?"
+    choices:
+    - content: "Windows 11 Enterprise"
+      isCorrect: false
+      explanation: "Windows 11 Enterprise is typically aligned to larger-scale or more complex organizational environments."
+    - content: "Windows 11 Pro"
+      isCorrect: true
+      explanation: "Correct. This scenario emphasizes straightforward IT requirements, baseline security expectations, and a smaller IT management environment. These conditions align best with Windows 11 Pro."
+    - content: "Either edition is equally appropriate in all cases"
+      isCorrect: false
+      explanation: "Windows edition selection depends on organizational requirements, management needs, and operational complexity."
+    - content: "The decision can’t be made without choosing a device model first"
+      isCorrect: false
+      explanation: "The scenario already provides enough organizational context to evaluate the appropriate Windows edition."
+
+  - content: "A global organization supports thousands of devices across multiple regions. IT must enforce standardized policies consistently, and the organization has formal governance controls that require centralized oversight and strong alignment to organizational security expectations.\n\nWhich Windows edition is the best fit?"
+    choices:
+    - content: "Windows 11 Pro"
+      isCorrect: false
+      explanation: "Windows 11 Pro is generally aligned to organizations with lighter management and governance requirements."
+    - content: "Windows 11 Enterprise"
+      isCorrect: true
+      explanation: "Correct. This scenario highlights organizational scale, centralized management, and governance requirements. These conditions align best with Windows 11 Enterprise."
+    - content: "Windows 11 Pro for all users, plus additional tools"
+      isCorrect: false
+      explanation: "The scenario specifically emphasizes enterprise-wide governance and centralized management needs."
+    - content: "Either edition works as long as users are trained"
+      isCorrect: false
+      explanation: "Training alone doesn’t address organizational governance, security, and management requirements."
+
+  - content: "A midsize business is expanding rapidly and expects device growth over the next year. Today, device management is lightweight, and the organization prioritizes flexibility and ease of administration. Leadership wants to avoid overinvesting in controls they don’t currently need.\n\nWhich option best supports this organization’s current situation?"
+    choices:
+    - content: "Windows 11 Enterprise, because it always provides the most coverage"
+      isCorrect: false
+      explanation: "More advanced enterprise capabilities may introduce unnecessary complexity for this environment."
+    - content: "Windows 11 Pro, because it balances capability with manageability"
+      isCorrect: true
+      explanation: "Correct. This scenario focuses on current operational needs, including lightweight management, flexibility, and avoiding unnecessary complexity. Those priorities align best with Windows 11 Pro."
+    - content: "Windows 11 Enterprise, because growth always requires enterprise governance"
+      isCorrect: false
+      explanation: "Growth alone doesn’t automatically require enterprise-wide governance or centralized control."
+    - content: "Windows 11 Pro, but only if the organization is regulated"
+      isCorrect: false
+      explanation: "Windows 11 Pro can align well with organizations that have straightforward operational and management needs, regardless of regulation."
+
+  - content: "An organization operates in a highly regulated industry and must demonstrate consistent enforcement of device security expectations. IT needs to apply and maintain standardized controls across all managed devices, with minimal variation between teams and locations.\n\nWhich decision criterion is the strongest driver of the correct edition choice in this scenario?"
+    choices:
+    - content: "Personal preference of the IT administrator"
+      isCorrect: false
+      explanation: "Edition selection should align to organizational requirements rather than individual preference."
+    - content: "Security and compliance requirements"
+      isCorrect: true
+      explanation: "Correct. This scenario is centered on regulatory obligations and consistent enforcement of organizational controls. That aligns most directly with security and compliance requirements as the primary decision criterion."
+    - content: "The number of device manufacturers used"
+      isCorrect: false
+      explanation: "The scenario focuses on governance and compliance rather than hardware vendor diversity."
+    - content: "Whether users work in-office or remote"
+      isCorrect: false
+      explanation: "Work location alone isn’t the primary driver in this highly regulated scenario."
+
+  - content: "A small organization has a lean IT team and wants a Windows edition that supports business needs without requiring centralized, enterprise-wide governance.\n\nWhich option best explains why the other edition is less optimal in this scenario?"
+    choices:
+    - content: "Windows 11 Pro is less optimal because it requires strict governance controls"
+      isCorrect: false
+      explanation: "Windows 11 Pro is commonly aligned to flexible and approachable management environments."
+    - content: "Windows 11 Enterprise is less optimal because its enterprise-level controls may exceed current needs"
+      isCorrect: true
+      explanation: "Correct. In simpler organizational environments, choosing an enterprise-focused edition can introduce management considerations and governance capabilities that may not be necessary for current operational requirements."
+    - content: "Windows 11 Enterprise is less optimal because it cannot support business users"
+      isCorrect: false
+      explanation: "Windows 11 Enterprise is specifically designed for organizational and enterprise environments."
+    - content: "Windows 11 Pro is less optimal because it is only for personal devices"
+      isCorrect: false
+      explanation: "Windows 11 Pro is designed for business and organizational use scenarios."
