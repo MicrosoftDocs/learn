@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.deploy-run-azure-storage-mover
+title: Deploy and run Azure Storage Mover
+metadata:
+  title: Deploy and Run Azure Storage Mover
+  description: Learn how to deploy an Azure Storage Mover agent, plan your deployment, run migrations, and understand service limitations.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-deploy-run-azure-storage-mover.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.assess-current-storage-environment
+title: Assess your current storage environment
+metadata:
+  title: Assess Your Current Storage Environment
+  description: Learn about how to assess current storage systems.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-assess-current-storage-environment.md)]
+

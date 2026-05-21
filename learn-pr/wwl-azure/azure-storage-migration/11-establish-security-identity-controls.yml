@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.establish-security-identity-controls
+title: Establish security and identity controls
+metadata:
+  title: Establish Security and Identity Controls
+  description: Learn how to properly secure your Azure environment and manage identities during and after migration.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 5
+content: |
+  [!include[](includes/11-establish-security-identity-controls.md)]
+

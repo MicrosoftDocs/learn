@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.plan-network-bandwidth-requirements
+title: Plan network and bandwidth requirements
+metadata:
+  title: Plan Network and Bandwidth Requirements
+  description: Learn about the considerations and best practices for network and bandwidth during your Azure migration.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-plan-network-bandwidth-requirements.md)]
+

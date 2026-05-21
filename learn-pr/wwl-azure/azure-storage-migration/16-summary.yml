@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you learned about accelerating your storage migration journey to Azure.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 1
+content: |
+  [!include[](includes/16-summary.md)]

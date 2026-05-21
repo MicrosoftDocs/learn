@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.optimize-post-migration-environment
+title: Optimize your post-migration environment
+metadata:
+  title: Optimize Your Post-Migration Environment
+  description: Learn about the considerations and best practices for post-migration activities in Azure.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+  [!include[](includes/14-optimize-post-migration-environment.md)]
+

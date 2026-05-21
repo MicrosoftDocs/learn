@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.understand-azure-storage-mover-architecture
+title: Understand Azure Storage Mover architecture
+metadata:
+  title: Understand Azure Storage Mover Architecture
+  description: Learn about Azure Storage Mover's supported scenarios, architecture components, and how it orchestrates large-scale migrations to Azure.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-understand-azure-storage-mover-architecture.md)]

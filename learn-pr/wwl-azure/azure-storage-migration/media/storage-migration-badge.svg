@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <title>Azure Storage Migration - Learning Module Badge</title>
+    <desc>Achievement badge for completing the Azure Storage Migration learning module</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="azureBlue">
+            <stop stop-color="#5EA0EF" offset="0%"/>
+            <stop stop-color="#0078D4" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="cyanAccent">
+            <stop stop-color="#32D4F5" offset="0%"/>
+            <stop stop-color="#198AB3" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="lightFill">
+            <stop stop-color="#F0FFFD" offset="0%"/>
+            <stop stop-color="#D2EBFF" offset="100%"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Shield body - dark navy outline matching official style -->
+    <path d="M283.38 118.47a16.44 16.44 0 00-10.75-6.69q-11.26-1.95-22.56-3.52V54.43A21.54 21.54 0 00235.49 34l-.16-.05h-.17l-74.74-22.61A32.63 32.63 0 00150 9.64a32.58 32.58 0 00-10.41 1.7L64.84 33.93h-.17l-.16.05a21.54 21.54 0 00-14.58 20.4v53.83q-11.3 1.58-22.56 3.52a16.44 16.44 0 00-10.75 6.69 13.48 13.48 0 00-2.25 10.25l11 57.39a14.64 14.64 0 0016.82 11.47c2.6-.45 5.2-.87 7.81-1.29.15 14.32 5.62 28.23 16.3 41.36 8.15 10 19.37 19.62 33.34 28.52a244.66 244.66 0 0047.18 23.07l3.28 1.12 3.27-1.15a250.23 250.23 0 0047.12-23.35c14-9 25.17-18.56 33.3-28.53 10.68-13.09 16.16-26.9 16.31-41 2.61.42 5.21.84 7.81 1.29a14.92 14.92 0 002.48.21 14.62 14.62 0 0014.34-11.69l10.95-57.37a13.49 13.49 0 00-2.3-10.25z" fill="#002050"/>
+
+    <!-- Lower shield area - Azure blue -->
+    <path d="M60 194.35v1.34c0 53.33 90 84.06 90 84.06s90-31.52 90-84.06v-.9a633.88 633.88 0 00-180-.44z" fill="#0078D4"/>
+
+    <!-- Upper white area for text -->
+    <path d="M240 106.93V54.8a11.52 11.52 0 00-7.78-10.91l-74.85-22.63a22.81 22.81 0 00-14.72 0L67.74 43.89A11.52 11.52 0 0060 54.8v52.13a720.59 720.59 0 01180 0z" fill="#fff"/>
+
+    <!-- "MICROSOFT" text - upper area -->
+    <text x="150" y="58" text-anchor="middle" fill="#17154c" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" letter-spacing="1.5">MICROSOFT</text>
+
+    <!-- "CERTIFIED" text -->
+    <text x="150" y="76" text-anchor="middle" fill="#17154c" font-family="Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" letter-spacing="1.5">CERTIFIED</text>
+
+    <!-- Middle banner bar - gray -->
+    <path d="M283.38 118.47a16.44 16.44 0 00-10.75-6.69Q256.35 109 240 106.93a720.59 720.59 0 00-180.08 0q-16.28 2.07-32.55 4.85a16.44 16.44 0 00-10.75 6.69 13.48 13.48 0 00-2.25 10.25l11 57.39a14.64 14.64 0 0016.82 11.47q10.39-1.79 20.82-3.23a634.26 634.26 0 01180.08.86q7.43 1.09 14.82 2.37a14.92 14.92 0 002.48.21 14.62 14.62 0 0014.34-11.69l10.95-57.37a13.49 13.49 0 00-2.3-10.26z" fill="#505050"/>
+
+    <!-- Middle banner - white -->
+    <path d="M271.66 117.42a716.06 716.06 0 00-243.31 0 10.69 10.69 0 00-7 4.31 7.8 7.8 0 00-1.35 5.91L31 185a8.86 8.86 0 0010.22 6.91 640.15 640.15 0 01217.66 0 8.89 8.89 0 0010.18-6.91L280 127.65a7.77 7.77 0 00-1.33-5.92 10.69 10.69 0 00-7.01-4.31z" fill="#fff"/>
+
+    <!-- Storage migration icon in the center banner area -->
+    <g transform="translate(150, 150)">
+        <!-- Left storage cylinder (source - on-prem) -->
+        <g transform="translate(-42, -12)">
+            <rect x="0" y="5" width="28" height="34" rx="2" fill="url(#lightFill)" stroke="#198AB3" stroke-width="1.5"/>
+            <ellipse cx="14" cy="6" rx="14" ry="6" fill="url(#cyanAccent)"/>
+            <ellipse cx="14" cy="38" rx="14" ry="6" fill="url(#cyanAccent)" opacity="0.5"/>
+            <line x1="2" y1="16" x2="26" y2="16" stroke="#198AB3" stroke-width="1" opacity="0.4"/>
+            <line x1="2" y1="26" x2="26" y2="26" stroke="#198AB3" stroke-width="1" opacity="0.4"/>
+        </g>
+
+        <!-- Right storage cylinder (target - Azure cloud) -->
+        <g transform="translate(14, -12)">
+            <rect x="0" y="5" width="28" height="34" rx="2" fill="url(#lightFill)" stroke="#0078D4" stroke-width="1.5"/>
+            <ellipse cx="14" cy="6" rx="14" ry="6" fill="url(#azureBlue)"/>
+            <ellipse cx="14" cy="38" rx="14" ry="6" fill="url(#azureBlue)" opacity="0.5"/>
+            <line x1="2" y1="16" x2="26" y2="16" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+            <line x1="2" y1="26" x2="26" y2="26" stroke="#0078D4" stroke-width="1" opacity="0.4"/>
+        </g>
+
+        <!-- Migration arrow - clean right-pointing arc -->
+        <path d="M-16,-18 C-10,-36 10,-36 16,-18" stroke="#0078D4" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <!-- Arrowhead pointing downward, rotated 15° right -->
+        <path d="M11,-21 L16,-14 L20,-21 Z" fill="#0078D4" transform="rotate(-20, 15.5, -18.5)"/>
+
+        <!-- Small cloud icon above destination -->
+        <g transform="translate(12, -42)">
+            <path d="M24,13 C24,9.4 21,6.5 17.3,6.5 C17.1,2.9 13.9,0 10,0 C7.1,0 4.5,1.7 3.5,4.2 C1.5,4.6 0,6.4 0,8.5 C0,11 2.1,13 4.7,13 Z" fill="url(#azureBlue)" opacity="0.85"/>
+        </g>
+    </g>
+
+    <!-- Star in the lower area -->
+    <path d="M150 204.95l5.14 15.8h16.62l-13.45 9.77 5.14 15.8-13.45-9.77-13.45 9.77 5.14-15.8-13.45-9.77h16.62z" fill="#fff"/>
+
+    <!-- "STORAGE MIGRATION" text on curved arc following banner bottom -->
+    <defs>
+        <path id="textArc" d="M60,178 Q150,165 240,178" fill="none"/>
+    </defs>
+    <text fill="#282828" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="0.8">
+        <textPath href="#textArc" startOffset="50%" text-anchor="middle">STORAGE MIGRATION</textPath>
+    </text>
+</svg>

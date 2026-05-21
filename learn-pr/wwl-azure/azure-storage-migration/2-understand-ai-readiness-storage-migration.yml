@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.understand-ai-readiness-storage-migration
+title: Understand AI readiness for storage migration
+metadata:
+  title: Understand AI Readiness for Storage Migration
+  description: Learn how to prepare for AI integration during your Azure migration.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-ai-readiness-storage-migration.md)]
+

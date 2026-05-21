@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.select-target-azure-storage-service
+title: Select your target Azure storage service
+metadata:
+  title: Select Your Target Azure Storage Service
+  description: Learn how to select the appropriate services for your migration and modernization efforts.
+  ms.date: 04/30/2026
+  author: hannoborns
+  ms.author: hannoborns
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-select-target-azure-storage-service.md)]
+
