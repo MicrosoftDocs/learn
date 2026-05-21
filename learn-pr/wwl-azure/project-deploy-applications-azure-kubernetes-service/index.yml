@@ -1,28 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service
 metadata:
-  title: Guided Project - Deploy applications to Azure Kubernetes Service
-  description: "Welcome to this interactive skills validation experience. Completing this module helps prepare you for the Deploy and manage containers with Azure Kubernetes Service assessment."
-  ms.date: 03/05/2025
-  author: Orin-Thomas 
+  title: Guided project - Deploy applications to Azure Kubernetes Service
+  description: "In this guided project, you provision Azure Container Registry and an Azure Kubernetes Service cluster, build Linux and Windows container images, and deploy them to AKS."
+  ms.date: 05/10/2026
+  author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module
-  ms.custom:
-  - N/A
   ms.service: azure-kubernetes-service
   ai-usage: human-only
-title: Guided Project - Deploy applications to Azure Kubernetes Service
-summary: Welcome to this interactive skills validation experience. Completing this module helps prepare you for the Deploy and manage containers with Azure Kubernetes Service assessment.
+title: Guided project - Deploy applications to Azure Kubernetes Service
+summary: In this guided project, you provision Azure Container Registry and an Azure Kubernetes Service cluster, build Linux and Windows container images, and deploy them to AKS.
 abstract: |
-  In this guided exercise, you practice creating and configuring an Azure Container Registry and an Azure Kubernetes Server cluster. The guided exercise combines both learning and hands-on practice. The skills validated include:
+  In this guided project, you practice creating and configuring an Azure Container Registry and an Azure Kubernetes Service cluster. In four hands-on exercises, you:
 
-  -   Provisioning Azure Container Registry (ACR) and Azure Kubernetes Service (AKS).
+  -   Provision Azure Container Registry (ACR) and Azure Kubernetes Service (AKS).
+  -   Build Linux and Windows container images and store them in Azure Container Registry.
+  -   Deploy container images to Azure Kubernetes Service.
 
-  -   Building a Linux and Windows container images and store them in Azure Container Registry.
-
-  -   Deploying container images to Azure Kubernetes Service.
-
-  By the end of this guided exercise, you gain hands-on experience in creating and configuring these services in Azure.
+  By the end of this guided project, you have hands-on experience creating and configuring these services in Azure.
 prerequisites: None
 iconUrl: /training/achievements/kubernetes-module.svg
 levels:
@@ -37,7 +33,7 @@ units:
 - learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---provision-azure-container-registry-and-azure-kubernetes
 - learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---build-linux-and-windows-container-images-to-store-in-
 - learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---deploy-container-images-to-azure-container-registr
-- learn.wwl.project-deploy-applications-azure-kubernetes-service. exercise---review-the-deployment-and-remove-resources
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---review-the-deployment-and-remove-resources
 - learn.wwl.project-deploy-applications-azure-kubernetes-service.knowledge-check
 - learn.wwl.project-deploy-applications-azure-kubernetes-service.summary
 badge:
