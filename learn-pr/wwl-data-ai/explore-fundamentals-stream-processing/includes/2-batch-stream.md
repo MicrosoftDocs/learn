@@ -9,7 +9,7 @@ In batch processing, newly arriving data elements are collected and stored, and 
 
 For example, suppose you want to analyze road traffic by counting the number of cars on a stretch of road. A batch processing approach to this would require that you collect the cars in a parking lot, and then count them in a single operation while they're at rest.
 
-![Diagram of cars being counted in a parking lot.](../media/batch-processing.png)
+[ ![Diagram of cars being counted in a parking lot.](../media/batch-processing.png) ](../media/batch-processing.png#lightbox)
 
 If the road is busy, with a large number of cars driving along at frequent intervals, this approach may be impractical; and note that you don't get any results until you have parked a batch of cars and counted them.
 

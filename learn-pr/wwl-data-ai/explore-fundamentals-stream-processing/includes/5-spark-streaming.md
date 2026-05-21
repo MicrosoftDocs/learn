@@ -16,7 +16,7 @@ Here's how it works in practice:
 3. You write a **query** on that dataframe—for example, to count events per minute or calculate a running average.
 4. The query results are written to an **output** (a sink), such as a file, a database, or a dashboard.
 
-![Diagram of streaming data flowing from a source into a dataframe, being queried, and written to a sink.](../media/spark-structured-streaming.png)
+[ ![Diagram of streaming data flowing from a source into a dataframe, being queried, and written to a sink.](../media/spark-structured-streaming.png) ](../media/spark-structured-streaming.png#lightbox)
 
 Spark Structured Streaming is a good choice when you're already using Spark for data processing and want to extend that work to include real-time data streams.
 
