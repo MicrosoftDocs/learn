@@ -119,14 +119,14 @@ In a Q&A style discussion, you can mark a comment as the accepted answer to the 
 
 The comment will be highlighted, making it easy for others to find the solution quickly. You can also unmark an answer if needed.
 
-### Converting a discussion to an issue
+### Reference a discussion in an issue
 
 If a discussion leads to work that needs to be tracked, you can convert the discussion into an issue.
 
 1. Navigate to the discussion you want to convert.
 2. Select the **`...`** (three dots) menu at the top-right of the discussion.
-3. Select **Convert to issue**.
-4. Confirm the conversion and select a repository to create the new issue in.
+3. Select **Reference in new issue**.
+4. Confirm the new issue title and body.
 
 This keeps track of actionable work that originates from community conversations.
 
