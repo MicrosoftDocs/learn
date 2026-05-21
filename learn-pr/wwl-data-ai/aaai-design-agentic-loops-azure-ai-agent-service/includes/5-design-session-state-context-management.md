@@ -18,7 +18,7 @@ The solution: persist thread state externally at strategic checkpoints. The thre
 ## Design state persistence tiers
 
 > [!NOTE]
-> Microsoft Foundry Agent Service includes a managed **Memory** feature (preview) that provides long-term memory across sessions without custom code. It extracts meaningful information from conversations, consolidates it into durable knowledge, and makes it available in future sessions. Before building a custom persistence tier, evaluate whether managed Memory meets your requirements. Use custom tiers when you need structured schemas, cross-product analytics, or permanent audit records. See [Memory in Microsoft Foundry Agent Service](https://learn.microsoft.com/azure/foundry/agents/concepts/what-is-memory).
+> Microsoft Foundry Agent Service includes a managed **Memory** feature (preview) that provides long-term memory across sessions without custom code. It extracts meaningful information from conversations, consolidates it into durable knowledge, and makes it available in future sessions. Before building a custom persistence tier, evaluate whether managed Memory meets your requirements. Use custom tiers when you need structured schemas, cross-product analytics, or permanent audit records.
 
 Three persistence tiers trade off complexity against durability and query capabilities:
 

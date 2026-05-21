@@ -1,7 +1,7 @@
 Production agents require robust event handling that responds to every run lifecycle event—not just success, but tool requests, failures, timeouts, and cancellations. Microsoft Foundry Agent Service exposes a rich run status taxonomy that tells you exactly why an agent stopped. Understanding and handling each status is the foundation of production-grade agentic loops.
 
 > [!IMPORTANT]
-> This module teaches the Assistants-style API (Agents v1), which uses threads, runs, and messages. Microsoft Foundry has also introduced a Responses API (Agents v2) with updated terminology (Conversations, Items, Responses) and a unified `azure-ai-projects` 2.x SDK. The Agents v1 API remains supported through March 31, 2027. If you're building a new greenfield workload, review the [migration guide](https://learn.microsoft.com/azure/foundry/agents/how-to/migrate) to evaluate which generation fits your needs.
+> This module teaches the Assistants-style API (Agents v1), which uses threads, runs, and messages. Microsoft Foundry has also introduced a Responses API (Agents v2) with updated terminology (Conversations, Items, Responses) and a unified `azure-ai-projects` 2.x SDK. The Agents v1 API remains supported through March 31, 2027.
 
 ## Review the basic run lifecycle
 

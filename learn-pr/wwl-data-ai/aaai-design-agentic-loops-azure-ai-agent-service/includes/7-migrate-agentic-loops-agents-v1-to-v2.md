@@ -1,7 +1,7 @@
 You've spent the preceding units learning v1 production patterns and v2 equivalents side by side. This unit brings it together as a structured migration guide. You'll update SDK packages, rewrite client initialization, migrate each API surface, and verify the result—with side-by-side code for every major change.
 
 > [!NOTE]
-> A [migration tool](https://aka.ms/agent/migrate/tool) is available to help automate this migration. It migrates code constructs such as agent definitions, thread creation, message creation, and run creation. It doesn't migrate state data (past runs, threads, or messages). Use the tool for initial code conversion, then apply the production patterns in this guide for the loop and tool handling changes. Examples in this unit use Python. For C#, JavaScript, and Java equivalents, see the [full migration guide](https://learn.microsoft.com/azure/foundry/agents/how-to/migrate).
+> A [migration tool](https://aka.ms/agent/migrate/tool) is available to help automate this migration. It migrates code constructs such as agent definitions, thread creation, message creation, and run creation. It doesn't migrate state data (past runs, threads, or messages). Use the tool for initial code conversion, then apply the production patterns in this guide for the loop and tool handling changes.
 
 ## Understand the migration scope and timeline
 
