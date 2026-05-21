@@ -155,10 +155,10 @@ Forked threads accumulate quickly. An analyst running 10 research requests with 
 
 **Thread lifecycle policies** govern when to archive or delete threads:
 
-1. **Time-based expiration**: Delete threads older than 30 days unless tagged as "archived"
-2. **Status-based cleanup**: Delete threads with status "abandoned" or "completed" after results are extracted
-3. **Fork pruning**: When a fork completes, extract the final result to permanent storage, then delete the thread
-4. **Parent-child cleanup**: When all child forks complete, delete the parent checkpoint
+- **Time-based expiration**: Delete threads older than 30 days unless tagged as "archived"
+- **Status-based cleanup**: Delete threads with status "abandoned" or "completed" after results are extracted
+- **Fork pruning**: When a fork completes, extract the final result to permanent storage, then delete the thread
+- **Parent-child cleanup**: When all child forks complete, delete the parent checkpoint
 
 Implement lifecycle management with thread metadata tags:
 
