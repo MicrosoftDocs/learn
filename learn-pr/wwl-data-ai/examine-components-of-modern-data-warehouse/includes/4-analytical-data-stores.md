@@ -12,7 +12,7 @@ A data warehouse is a great choice when you have transactional data that can be 
 
 A **data lake** is a file store, usually on a distributed file system for high performance data access. Cloud-native distributed processing engines like **Apache Spark** are used to process queries on the stored files and return data for reporting and analytics. These systems often apply a **schema-on-read** approach to define tabular schemas on semi-structured data files at the point where the data is read for analysis, without applying constraints when it's stored. 
 
-![Diagram explaining data lake schema on read](../media/data-lake.png)
+![Diagram explaining data lake schema on read.](../media/data-lake.png)
 
 Data lakes are great for supporting a mix of structured, semi-structured, and even unstructured data that you want to analyze without the need for schema enforcement when the data is written to the store.
 
