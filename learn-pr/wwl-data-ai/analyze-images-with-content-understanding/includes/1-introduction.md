@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+﻿
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=6e22cc8c-0a40-4d90-a46d-e3f59ca05dc7]
 
@@ -11,6 +12,7 @@ Images, documents, and other unstructured content often contain valuable informa
 With Content Understanding, you define a schema describing the data you want, and the service extracts it from your images and documents. The output is ready to use in automation workflows, analytics, and search applications.
 
 In this module, you'll learn how to analyze images with Content Understanding using both prebuilt and custom analyzers.
+
 ::: zone-end
 
 > [!NOTE]

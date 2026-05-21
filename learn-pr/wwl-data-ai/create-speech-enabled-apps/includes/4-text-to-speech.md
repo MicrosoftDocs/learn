@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=f31ca70d-666c-4300-aad2-97049d368ef8]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Similarly to its **Speech to text** APIs, Azure Speech in Foundry Tools offers a **Text to speech** API for speech synthesis:
 
 As with speech recognition, in practice most interactive speech-enabled applications are built using the Azure Speech SDK.

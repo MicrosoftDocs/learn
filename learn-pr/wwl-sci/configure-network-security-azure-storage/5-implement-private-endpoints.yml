@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-security-azure-storage.implement-private-endpoints
+metadata:
+  title: Implement private endpoints for storage accounts
+  description: Implement private endpoints to assign storage accounts a private IP address in a virtual network, configure DNS for private endpoint resolution, and evaluate when private endpoints are preferred over virtual network service endpoints.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Implement private endpoints for storage accounts
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-implement-private-endpoints.md)]

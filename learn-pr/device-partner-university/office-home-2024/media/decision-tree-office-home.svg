@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="1040" viewBox="0 0 860 1040" role="img" aria-label="Vertical decision tree to determine whether Office Home 2024 is right for you.">
+
+
+  <!-- White background -->
+  <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"/>
+
+  <defs>
+    <style>
+      .title { font: 700 24px "Segoe UI", Arial, sans-serif; fill: #1a1a1a; }
+      .qbox { fill: #f6f7f8; stroke: #1f1f1f; stroke-width: 2; rx: 14; }
+      .endM365 { fill: #fff4e5; stroke: #8a5a00; stroke-width: 2; rx: 12; }
+      .endHome { fill: #eaf6ee; stroke: #1f6f3a; stroke-width: 2; rx: 12; }
+      .text { font: 400 14px "Segoe UI", Arial, sans-serif; fill: #1a1a1a; }
+      .small { font: 400 12px "Segoe UI", Arial, sans-serif; fill: #333; }
+      .bold { font-weight: 700; }
+      .pillYes { fill: #1f6feb; }
+      .pillNo { fill: #6e7781; }
+      .pillText { font: 700 11px "Segoe UI", Arial, sans-serif; fill: #fff; letter-spacing: 0.4px; }
+      .line { stroke: #1f1f1f; stroke-width: 2.2; fill: none; }
+      .note { font: 400 12px "Segoe UI", Arial, sans-serif; fill: #333; }
+    </style>
+
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f1f1f"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="52" class="title">Is Office Home 2024 right for you?</text>
+
+  <!-- Questions column -->
+  <!-- Q1 -->
+  <rect x="250" y="110" width="420" height="110" class="qbox"/>
+  <text x="280" y="150" class="text"><tspan class="bold">Q1:</tspan> Prefer to pay once instead of subscribing?</text>
+
+  <!-- Q2 -->
+  <rect x="250" y="270" width="420" height="110" class="qbox"/>
+  <text x="280" y="310" class="text"><tspan class="bold">Q2:</tspan> Work mainly on one device?</text>
+
+  <!-- Q3 (NEW) -->
+  <rect x="250" y="430" width="420" height="130" class="qbox"/>
+  <text x="280" y="470" class="text"><tspan class="bold">Q3:</tspan> Are core desktop apps sufficient</text>
+  <text x="280" y="494" class="text">for your needs?</text>
+  <text x="280" y="520" class="small">(Word, Excel, PowerPoint, OneNote)</text>
+
+  <!-- Q4 (was Q3) -->
+  <rect x="250" y="600" width="420" height="130" class="qbox"/>
+  <text x="280" y="640" class="text"><tspan class="bold">Q4:</tspan> Can you work without relying on</text>
+  <text x="280" y="664" class="text">cloud services, AI features, or ongoing updates?</text>
+
+  <!-- Pills: NO on left, YES on right -->
+  <!-- Q1 pills -->
+  <rect x="230" y="198" width="64" height="24" rx="12" class="pillNo"/>
+  <text x="262" y="215" text-anchor="middle" class="pillText">NO</text>
+  <rect x="646" y="198" width="64" height="24" rx="12" class="pillYes"/>
+  <text x="678" y="215" text-anchor="middle" class="pillText">YES</text>
+
+  <!-- Q2 pills -->
+  <rect x="230" y="358" width="64" height="24" rx="12" class="pillNo"/>
+  <text x="262" y="375" text-anchor="middle" class="pillText">NO</text>
+  <rect x="646" y="358" width="64" height="24" rx="12" class="pillYes"/>
+  <text x="678" y="375" text-anchor="middle" class="pillText">YES</text>
+
+  <!-- Q3 pills -->
+  <rect x="230" y="538" width="64" height="24" rx="12" class="pillNo"/>
+  <text x="262" y="555" text-anchor="middle" class="pillText">NO</text>
+  <rect x="646" y="538" width="64" height="24" rx="12" class="pillYes"/>
+  <text x="678" y="555" text-anchor="middle" class="pillText">YES</text>
+
+  <!-- Q4 pills -->
+  <rect x="230" y="708" width="64" height="24" rx="12" class="pillNo"/>
+  <text x="262" y="725" text-anchor="middle" class="pillText">NO</text>
+  <rect x="646" y="708" width="64" height="24" rx="12" class="pillYes"/>
+  <text x="678" y="725" text-anchor="middle" class="pillText">YES</text>
+
+  <!-- YES path (down the right side) -->
+  <path class="line" marker-end="url(#arrow)" d="M678 222 L678 270"/>
+  <path class="line" marker-end="url(#arrow)" d="M678 382 L678 430"/>
+  <path class="line" marker-end="url(#arrow)" d="M678 562 L678 600"/>
+  <path class="line" marker-end="url(#arrow)" d="M678 732 L678 800"/>
+
+  <!-- NO path: branch left then merge into trunk then down to M365 -->
+  <!-- Shared trunk line -->
+  <path class="line" d="M120 210 L120 860"/>
+
+  <!-- Q1 NO branch to trunk -->
+  <path class="line" marker-end="url(#arrow)" d="M230 210 L120 210"/>
+  <!-- Q2 NO branch to trunk -->
+  <path class="line" marker-end="url(#arrow)" d="M230 370 L120 370"/>
+  <!-- Q3 NO branch to trunk -->
+  <path class="line" marker-end="url(#arrow)" d="M230 550 L120 550"/>
+  <!-- Q4 NO branch to trunk -->
+  <path class="line" marker-end="url(#arrow)" d="M230 720 L120 720"/>
+
+  <!-- Trunk into Microsoft 365 box -->
+  <path class="line" marker-end="url(#arrow)" d="M120 860 L160 860"/>
+
+  <!-- Outcomes -->
+  <!-- Microsoft 365 (bottom-left) -->
+  <rect x="60" y="800" width="330" height="210" class="endM365"/>
+  <text x="225" y="836" text-anchor="middle" class="text bold">Consider Microsoft 365</text>
+  <text x="225" y="864" text-anchor="middle" class="small">Subscription-based</text>
+  <text x="225" y="886" text-anchor="middle" class="small">Best if you need:</text>
+  <text x="225" y="908" text-anchor="middle" class="small">• Multiple devices</text>
+  <text x="225" y="930" text-anchor="middle" class="small">• Cloud collaboration</text>
+  <text x="225" y="952" text-anchor="middle" class="small">• AI features (Copilot)</text>
+  <text x="225" y="972" text-anchor="middle" class="small">• Ongoing feature updates</text>
+
+  <!-- Office Home 2024 (bottom-right) -->
+  <rect x="440" y="800" width="360" height="210" class="endHome"/>
+  <text x="620" y="836" text-anchor="middle" class="text bold">Choose Office Home 2024</text>
+  <text x="620" y="864" text-anchor="middle" class="small">One-time purchase</text>
+  <text x="620" y="886" text-anchor="middle" class="small">• Single device (PC or Mac)</text>
+  <text x="620" y="908" text-anchor="middle" class="small">• Core desktop apps</text>
+  <text x="620" y="930" text-anchor="middle" class="small">• Security &amp; stability updates only</text>
+  <text x="620" y="952" text-anchor="middle" class="small">• No new features after purchase</text>
+
+</svg>

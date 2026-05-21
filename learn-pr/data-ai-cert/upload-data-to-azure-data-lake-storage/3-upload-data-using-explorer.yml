@@ -4,12 +4,12 @@ title: Exercise - Use Azure Storage Explorer to upload data to Azure Storage
 metadata:
   title: Exercise - Use Azure Storage Explorer to upload data to Azure Storage
   description: "Use Azure Storage Explorer to upload data to Azure Storage"
-  ms.date: 03/25/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-upload-data-using-explorer.md)]
+  [!include[](includes/3-upload-data-using-explorer.md)]

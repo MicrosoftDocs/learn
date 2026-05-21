@@ -4,12 +4,12 @@ title: Exercise - Use compute transformations within Azure Data Factory
 metadata:
   title: Exercise - Use compute transformations within Azure Data Factory
   description: "Exercise - Use compute transformations within Azure Data Factory"
-  ms.date: 11/18/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-use-compute-transformations.md)]
+  [!include[](includes/7-use-compute-transformations.md)]

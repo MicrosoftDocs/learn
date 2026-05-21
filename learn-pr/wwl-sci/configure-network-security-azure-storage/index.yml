@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.configure-network-security-azure-storage
+metadata:
+  title: Configure Network Security for Azure Storage
+  description: "Configure network-layer access controls for Azure Storage accounts. Apply firewall rules, define virtual network and IP-based access, configure resource instance rules for Azure AI services, manage trusted service exceptions, and implement private endpoints to eliminate public endpoint exposure."
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: azure-storage
+  ai-usage: ai-assisted
+title: Configure network security for Azure Storage
+summary: Configure network-layer access controls for Azure Storage accounts. Apply firewall rules, define virtual network and IP-based access, configure resource instance rules for Azure AI services, manage trusted service exceptions, and implement private endpoints to eliminate public endpoint exposure.
+abstract: |
+  After completing this module, you'll be able to:
+    - Describe how Azure Storage firewall rules restrict access through the public endpoint
+    - Create virtual network rules and IP network rules for approved sources
+    - Configure resource instance rules for Azure AI and PaaS services
+    - Add trusted service exceptions for Azure platform services
+    - Implement private endpoints for fully private storage connectivity
+prerequisites: |
+  - Familiarity with Azure Virtual Networks, subnets, and service endpoints
+  - Understanding of Azure private endpoints and Private Link
+  - Familiarity with Azure AI Foundry or Azure Machine Learning at a conceptual level
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - azure
+  - azure-storage
+  - azure-virtual-network
+  - azure-private-link
+subjects:
+  - security
+  - cloud-security
+  - networking
+units:
+- learn.wwl.configure-network-security-azure-storage.introduction
+- learn.wwl.configure-network-security-azure-storage.describe-storage-network-security
+- learn.wwl.configure-network-security-azure-storage.configure-vnet-ip-rules
+- learn.wwl.configure-network-security-azure-storage.configure-resource-instance-rules
+- learn.wwl.configure-network-security-azure-storage.implement-private-endpoints
+- learn.wwl.configure-network-security-azure-storage.knowledge-check
+- learn.wwl.configure-network-security-azure-storage.summary
+badge:
+  uid: learn.wwl.configure-network-security-azure-storage.badge

@@ -1,10 +1,15 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=b4ad3f17-ac1f-4a89-9a7f-4891591d9fb2]
 
+> [!TIP]
+> See the **Text and images** tab for more details!
+
 ::: zone-end
 
 ::: zone pivot="text"
+
 The Azure Language MCP server connects AI agents to a range of Azure Language text analysis capabilities through the Model Context Protocol. In this module, you learned how to use this server to build an agent that can analyze text dynamically.
 
 In this module, you learned how to:

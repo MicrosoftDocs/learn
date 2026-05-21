@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-security-azure-storage.summary
+metadata:
+  title: Summary
+  description: Summary of configuring network security for Azure Storage. You cover the layered model of firewall rules, virtual network, and IP rules, resource instance rules. Also covered are trusted service exceptions, and private endpoints.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

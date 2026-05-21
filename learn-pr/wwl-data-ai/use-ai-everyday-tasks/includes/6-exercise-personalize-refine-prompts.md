@@ -1,5 +1,9 @@
 In this activity, learn how to create personalized prompts and refine them to get the best results. By the end of this exercise, you'll be more comfortable using AI to enhance your everyday tasks.
 
+
+> [!NOTE]
+> Your experience with Microsoft 365 Copilot may differ from what is presented in this exercise. See [What Copilot license do I have?](https://support.microsoft.com/en-us/topic/what-copilot-license-do-i-have-5058f273-5e28-4a9d-9de6-bf07478ae152?azure-portal=true) for reference.
+
 **Before you start**
 
 In this module, you use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you need to do a few things to get set-up.

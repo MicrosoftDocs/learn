@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ab9152e1-da43-4764-aebe-6a84ecfba5ac]
 
@@ -31,4 +32,5 @@ with open("image.png", "wb") as image_file:
 The result is a binary stream containing the requested image:
 
 ![An illustration of a robot eating a cheeseburger.](../media/robot-eating-cheeseburger.png)
+
 ::: zone-end

@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-activity-event-collection-sentinel
+metadata:
+  title: Implement Activity and Event Collection in Microsoft Sentinel
+  description: "Build a complete event collection and response architecture in Microsoft Sentinel. Set up and secure a Microsoft Sentinel workspace, deploy Content Hub solutions, connect Azure resource data, collect Linux and Windows security events with data collection rules, implement automated response workflows with Logic Apps playbooks, and manage data retention for compliance."
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: learning-path
+  ai-usage: ai-assisted
+title: Implement activity and event collection in Microsoft Sentinel
+summary: |
+  Build a complete event collection and response architecture in Microsoft Sentinel. In this learning path, you set up and secure a Microsoft Sentinel workspace, deploy Content Hub solutions, and connect Azure resource data. Then you collect Linux and Windows security events with data collection rules, and implement automated response workflows with Logic Apps playbooks. The final stage is to manage data retention and audit log access to meet compliance requirements.
+prerequisites: |
+  - Working knowledge of Azure resource deployment and Azure role-based access control (RBAC)
+  - Familiarity with Log Analytics workspaces and basic Kusto Query Language (KQL) queries
+  - Understanding of Windows Server administration and Windows event logs
+  - Familiarity with networking fundamentals including TCP/UDP and the syslog protocol
+  - Foundational understanding of security operations concepts including Security Information and Event Management (SIEM), incidents, and alerting
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - microsoft-sentinel
+  - defender-xdr
+  - azure-log-analytics
+  - azure-monitor
+subjects:
+  - security
+  - cloud-security
+modules:
+- learn.wwl.create-manage-azure-sentinel-workspaces
+- learn.wwl.manage-content-microsoft-sentinel
+- learn.wwl.connect-microsoft-services-to-azure-sentinel
+- learn.wwl.connect-syslog-data-sources-to-azure-sentinel
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel
+- learn.wwl.connect-windows-hosts-to-azure-sentinel
+- learn.wwl.implement-automation-rules-playbooks-sentinel
+- learn.wwl.manage-data-storage-audit-logs-sentinel
+trophy:
+  uid: learn.wwl.implement-activity-event-collection-sentinel.trophy

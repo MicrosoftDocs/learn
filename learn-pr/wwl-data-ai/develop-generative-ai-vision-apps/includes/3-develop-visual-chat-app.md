@@ -1,4 +1,5 @@
-﻿::: zone pivot="video"
+
+::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=db98b7e8-a274-4b55-a274-1573a905b917]
 
@@ -71,4 +72,5 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 
 ```
+
 ::: zone-end

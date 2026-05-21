@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-storage-audit-logs-sentinel.connect-purview-audit
+metadata:
+  title: Connect Microsoft Purview Audit to Microsoft Sentinel
+  description: Configure the Microsoft Purview Audit data connector in Microsoft Sentinel to ingest Microsoft 365 audit log data into the workspace for security investigation and compliance reporting.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Connect Microsoft Purview Audit to Microsoft Sentinel
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-connect-purview-audit.md)]

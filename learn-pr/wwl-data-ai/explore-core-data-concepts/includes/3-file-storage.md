@@ -2,10 +2,10 @@
 
 The ability to store data in files is a core element of any computing system. Files can be stored in local file systems on the hard disk of your personal computer, and on removable media such as USB drives; but in most organizations, important data files are stored centrally in some kind of shared file storage system. Increasingly, that central storage location is hosted in the cloud, enabling cost-effective, secure, and reliable storage for large volumes of data.
 
-The specific file format used to store data depends on a number of factors, including:
+The specific file format used to store data depends on many factors, including:
 
 - The type of data being stored (structured, semi-structured, or unstructured).
-- The applications and services that will need to read, write, and process the data.
+- The applications and services that need to read, write, and process the data.
 - The need for the data files to be readable by humans, or optimized for efficient storage and processing.
 
 Some common file formats are discussed below.
@@ -26,7 +26,7 @@ Samir,Nadoy,samir@northwind.com
 
 JSON is a ubiquitous format in which a hierarchical document schema is used to define data entities (objects) that have multiple attributes. Each attribute might be an object (or a collection of objects); making JSON a flexible format that's good for both structured and semi-structured data.
 
-The following example shows a JSON document containing a collection of customers. Each customer has three attributes (*firstName*, *lastName*, and *contact*), and the *contact* attribute contains a collection of objects that represent one or more contact methods (email or phone). Note that objects are enclosed in braces (**{..}**) and collections are enclosed in square brackets (**[..]**). Attributes are represented by *name* **:** *value* pairs and separated by commas (**,**).
+The following example shows a JSON document containing a collection of customers. Each customer has three attributes (*firstName*, *lastName*, and *contact*), and the *contact* attribute contains a collection of objects that represent one or more contact methods (email or phone). Objects are enclosed in braces (**{..}**) and collections are enclosed in square brackets (**[..]**). Attributes are represented by *name* **:** *value* pairs and separated by commas (**,**).
 
 ```json
 {
@@ -92,10 +92,19 @@ When working with data like this, data professionals often refer to the data fil
 
 While human-readable formats for structured and semi-structured data can be useful, they're typically not optimized for storage space or processing. Over time, some specialized file formats that enable compression, indexing, and efficient storage and processing have been developed. 
 
-Some common optimized file formats you might see include *Avro*, *ORC*, and *Parquet*:
+Some common optimized file formats you might see include *Parquet* and *Avro*:
+
+- *Parquet* is a columnar data format and the de facto standard for modern data lakehouses. It's an Apache project. A Parquet file contains row groups. Data for each column is stored together in the same row group. Each row group contains one or more chunks of data. A Parquet file includes metadata that describes the set of rows found in each chunk. An application can use this metadata to quickly locate the correct chunk for a given set of rows, and retrieve the data in the specified columns for these rows. Parquet specializes in storing and processing nested data types efficiently and supports efficient compression and encoding schemes.
+
+> [!div class="mx-imgBorder"]
+> ![Diagram showing Parquet format.](../media/parquet.png)
 
 - *Avro* is a row-based format. It was created by Apache. Each file contains a header that describes the structure of the data in the file. This header is stored as JSON. The data is stored as binary information in one or more blocks of records. An application uses the information in the header to parse the binary data and extract the fields it contains. Avro is a good format for compressing data and minimizing storage and network bandwidth requirements.
 
-- *ORC* (Optimized Row Columnar format) organizes data into columns rather than rows. It is an Apache project, originally developed as a Hadoop-native format for optimizing read and write operations in Apache Hive (Hive is a data warehouse system that supports fast data summarization and querying over large datasets). An ORC file contains *stripes* of data. Each stripe holds the data for a column or set of columns. A stripe contains an index into the rows in the stripe, the data for each row, and a footer that holds statistical information (count, sum, max, min, and so on) for each column.
+> [!div class="mx-imgBorder"]
+> ![Diagram showing Avro format.](../media/row-based-storage.png)
 
-- *Parquet* is another columnar data format. It is an Apache project. A Parquet file contains row groups. Data for each column is stored together in the same row group. Each row group contains one or more chunks of data. A Parquet file includes metadata that describes the set of rows found in each chunk. An application can use this metadata to quickly locate the correct chunk for a given set of rows, and retrieve the data in the specified columns for these rows. Parquet specializes in storing and processing nested data types efficiently. It supports very efficient compression and encoding schemes.
+- *Delta Lake* is an open-source storage format that builds on Parquet by adding a transaction log, which enables ACID transactions, data versioning, and reliable updates on top of files stored in a data lake.
+
+> [!div class="mx-imgBorder"]
+> ![Diagram showing Delta Lake format.](../media/delta-format.png)

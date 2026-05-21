@@ -55,7 +55,7 @@ Use the following process to generate project documentation using the Ask agent 
 
 1. Enter a prompt that asks for suggested project documentation, listing the required sections that you identified in the first step.
 
-    For example: "`#codebase /explain I need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License.`"
+    For example: "`/explain #codebase I need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License.`"
 
 1. Review the suggested project documentation, and refine the results using new prompts if necessary.
 

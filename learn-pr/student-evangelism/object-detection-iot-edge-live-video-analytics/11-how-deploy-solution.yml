@@ -3,10 +3,10 @@ uid: learn.oxford.object-detection-lva-edge-device.how-deploy-solution
 title: How to deploy your solution
 metadata:
   title: How to deploy your solution
-  description: In this section, we help learner how to deploy the edge solution.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+  description: Historical explanation of how the Vision on Edge deployment was completed and verified after IoT Edge modules were configured.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 4 
 content: |

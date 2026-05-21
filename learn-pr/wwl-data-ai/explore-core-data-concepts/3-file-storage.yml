@@ -4,12 +4,12 @@ title: Explore file storage
 metadata:
   title: Explore file storage
   description: "Explore file storage"
-  ms.date: 03/12/2026
+  ms.date: 05/19/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/3-file-storage.md)]

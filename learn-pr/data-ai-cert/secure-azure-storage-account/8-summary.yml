@@ -4,9 +4,9 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 09/02/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You are working on a project with a 3rd party vendor to build a website for a customer. The image assets that will be used on the website are stored in an Azure Storage account that is held in your subscription. You want to give read access to this data for a limited period of time. What security option would be the best option to use?"
+  - content: "You're working on a project with a third-party vendor to build a website for a customer. The image assets that are used on the website are stored in an Azure Storage account that is held in your subscription. You want to give read access to this data for a limited period of time. What security option would be the best option to use?"
     choices:
     - content: "CORS Support"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: "In Azure Storage accounts, shared keys are called storage account keys. Azure creates two of these keys (primary and secondary) for each storage account you create. The keys give access to everything in the account."
     - content: "Shared Access Signatures"
       isCorrect: true
-      explanation: "Correct.  A shared access signature is a string that contains a security token that can be attached to a URI. Use a shared access signature to delegate access to storage objects and specify constraints, such as the permissions and the time range of access."
+      explanation: "Correct. A shared access signature is a string that contains a security token that can be attached to a URI. Use a shared access signature to delegate access to storage objects and specify constraints, such as the permissions and the time range of access."
   - content: "When configuring network access to your Azure Storage Account, what is the default network rule?"
     choices:
     - content: "To allow all connections from all networks"
@@ -40,12 +40,12 @@ quiz:
       explanation: "Incorrect. The default network rule is to allow all connections from all networks."
   - content: "Which Azure service detects anomalies in account activities and notifies you of potential harmful attempts to access your account?"
     choices:
-    - content: "Azure Defender for Storage"
+    - content: "Microsoft Defender for Storage"
       isCorrect: true
       explanation: "Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
     - content: "Azure Storage Account Security Feature"
       isCorrect: false
-      explanation: "Incorrect. Azure Storage Account Security Feature does not exist. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
+      explanation: "Incorrect. Azure Storage Account Security Feature doesn't exist. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
     - content: "Encryption in transit"
       isCorrect: false
-      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
+      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."

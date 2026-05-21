@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-automation-rules-playbooks-sentinel.create-automation-rules
+metadata:
+  title: Create automation rules in Microsoft Sentinel
+  description: Create and configure Microsoft Sentinel automation rules to automatically triage, assign, tag, suppress, and close incidents based on defined conditions.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Create automation rules in Microsoft Sentinel
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-automation-rules.md)]
