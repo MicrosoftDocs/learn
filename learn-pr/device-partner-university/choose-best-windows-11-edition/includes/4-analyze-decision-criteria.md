@@ -23,7 +23,7 @@ When evaluating security requirements, consider:
 - The level of control required to reduce risk across devices
 - How security policies are enforced and maintained at scale
 
-Organizations with more stringent security and compliance needs often require deeper, more centralized controls than environments with lighter requirements.
+Organizations with more stringent security and compliance need often require deeper, more centralized controls than environments with lighter requirements.
 
 ## Device and identity management needs
 
@@ -53,7 +53,7 @@ As operational complexity increases, the ability to apply consistent controls an
 
 Some organizations operate in environments where governance, consistency, and policy enforcement are core requirements rather than optional considerations. These needs influence how much control IT requires over device behavior and configuration.
 
-Questions to ask include:
+Questions to ask to include:
 
 - Are standardized policies required across all devices?
 - How tightly must devices align with organizational governance models?

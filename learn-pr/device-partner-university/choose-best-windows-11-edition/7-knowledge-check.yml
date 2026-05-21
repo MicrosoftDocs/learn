@@ -9,8 +9,6 @@ metadata:
   ms.author: v-homerreyes
   ms.topic: unit
 durationInMinutes: 3
-content: |
-  [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
   - content: "An organization has 250 employees, a small IT team, and a growing number of Windows devices. Security is important, but the organization has no strict regulatory or compliance requirements. IT wants a manageable, business-ready option without added operational complexity.\n\nWhich Windows edition is the best fit?"
