@@ -1,5 +1,3 @@
-## Meet the platforms
-
 Before exploring how large-scale analytics solutions are built, let's introduce the two main analytics platforms on Azure you'll encounter throughout this module.
 
 **Microsoft Fabric** is Microsoft's unified software-as-a-service (SaaS) analytics platform. It brings data engineering, data warehousing, real-time analytics, data science, and Power BI together in a single browser-based workspace on top of one shared storage layer called **OneLake**. You don't manage servers or clusters—you create workspaces and items, and Microsoft runs the infrastructure.
