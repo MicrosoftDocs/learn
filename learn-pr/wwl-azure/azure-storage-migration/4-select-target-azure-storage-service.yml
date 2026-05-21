@@ -5,8 +5,8 @@ metadata:
   title: Select Your Target Azure Storage Service
   description: Learn how to select the appropriate services for your migration and modernization efforts.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 3

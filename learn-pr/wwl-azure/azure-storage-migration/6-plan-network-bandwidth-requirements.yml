@@ -5,8 +5,8 @@ metadata:
   title: Plan Network and Bandwidth Requirements
   description: Learn about the considerations and best practices for network and bandwidth during your Azure migration.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

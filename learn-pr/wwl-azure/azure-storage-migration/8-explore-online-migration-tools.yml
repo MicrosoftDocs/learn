@@ -5,8 +5,8 @@ metadata:
   title: Explore Online Migration Tools
   description: Learn about the online migration tools available for moving data to Azure, including Azure Storage Mover, Azure File Sync, and Azure Data Factory.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 3

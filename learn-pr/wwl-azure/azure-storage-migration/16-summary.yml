@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review what you learned about accelerating your storage migration journey to Azure.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 1

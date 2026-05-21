@@ -5,8 +5,8 @@ metadata:
   title: Understand Azure Storage Mover Architecture
   description: Learn about Azure Storage Mover's supported scenarios, architecture components, and how it orchestrates large-scale migrations to Azure.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 4

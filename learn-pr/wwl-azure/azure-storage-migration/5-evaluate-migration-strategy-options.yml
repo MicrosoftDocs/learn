@@ -5,8 +5,8 @@ metadata:
   title: Evaluate Migration Strategy Options
   description: Learn about different migration strategies and how to choose the right approach for your workloads.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5

@@ -5,8 +5,8 @@ metadata:
   title: Explore Offline and ISV Migration Tools
   description: Learn about offline migration tools such as Azure Data Box and Import/Export Service, along with ISV solutions for specialized migration scenarios.
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 3

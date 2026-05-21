@@ -5,8 +5,8 @@ metadata:
   description: Learn how to accelerate your migration and modernization journey to Azure.
   manager: jsuri
   ms.date: 04/30/2026
-  author: hannoborns
-  ms.author: hannoborns
+  author: hborns
+  ms.author: hborns
   ms.topic: module
   ms.service: azure-storage
   ai-usage: ai-assisted
