@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.copilot-productivity-workflows.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This content is part of the "Copilot for all the ways you work" module.
+  ms.date: 05/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does Work IQ do in Microsoft 365 Copilot?"
+    choices:
+        - content: "It provides a library of prebuilt email templates for Outlook."
+          isCorrect: false
+          explanation: "Incorrect. Work IQ isn't a template library. It's the intelligence layer that personalizes the Copilot experience by understanding user context and work patterns."
+        - content: "It personalizes the AI experience by understanding user context, work patterns, and organizational data."
+          isCorrect: true
+          explanation: "Correct. The module states that Work IQ personalizes your organization's AI experience by understanding user context, work patterns, and organizational data."
+        - content: "It manages file storage across OneDrive and SharePoint."
+          isCorrect: false
+          explanation: "Incorrect. File storage is handled by OneDrive and SharePoint themselves. Work IQ is the intelligence layer that enables personalized, context-aware AI responses."
+        - content: "It connects Microsoft 365 apps to third-party tools."
+          isCorrect: false
+          explanation: "Incorrect. Work IQ is described as an intelligence layer, not a connector for external tools. The module notes that Copilot eliminates the need for connectors that add complexity."
+  - content: "What does the module say about how you should phrase prompts when using Copilot in Excel?"
+    choices:
+        - content: "Prompts should be kept short so Copilot can interpret them freely."
+          isCorrect: false
+          explanation: "Incorrect. The module advises the opposite. It explicitly states that more specific prompts produce more useful results, and contrasts a vague prompt with a detailed one as an example."
+        - content: "Prompts should always be written as yes/no questions."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't recommend yes/no questions. It recommends specific, detailed prompts that indicate the desired output format."
+        - content: "The more specific your prompt, the more useful the results will be."
+          isCorrect: true
+          explanation: "Correct. The module explicitly states this and illustrates it by contrasting a vague prompt like \"What does this data show?\" with a detailed one specifying analysis type and output format."
+        - content: "Prompts must reference a named Excel formula to produce results."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't require users to reference formulas in their prompts. Copilot selects appropriate tools like PivotTables or charts based on the content of the prompt."
+  - content: "What is required for Copilot in Teams to answer questions about what was said after a meeting ends?"
+    choices:
+        - content: "The meeting must have been recorded as a video file."
+          isCorrect: false
+          explanation: "Incorrect. The module specifies a transcript, not a video recording, as the requirement for Copilot to reference spoken content after the meeting."
+        - content: "A meeting transcript must be available."
+          isCorrect: true
+          explanation: "Correct. The module states that to ask questions about what was said in the meeting after it ends, there must be a meeting transcript available."
+        - content: "All participants must have used the chat during the meeting."
+          isCorrect: false
+          explanation: "Incorrect. Chat participation isn't listed as a requirement. The transcript is what enables Copilot to reference spoken content from the meeting."
+        - content: "The meeting must have been scheduled in advance through Outlook."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't mention how the meeting was scheduled as a condition for Copilot access to post-meeting content."
+  - content: "According to the cross-app workflow scenario, what is the correct order for using Copilot to move from a team meeting to a stakeholder presentation?"
+    choices:
+        - content: "Outlook → Teams → PowerPoint → Word"
+          isCorrect: false
+          explanation: "Incorrect. The workflow begins in Teams to capture meeting context, not in Outlook. Word also comes before PowerPoint in the sequence described."
+        - content: "Teams → Outlook → Word → PowerPoint"
+          isCorrect: true
+          explanation: "Correct. The module outlines four steps in this exact order: catch up and identify next steps in Teams, draft a follow-up in Outlook, create a project brief in Word, then build a presentation in PowerPoint."
+        - content: "Word → Teams → Outlook → PowerPoint"
+          isCorrect: false
+          explanation: "Incorrect. This reverses the logical flow described in the module. The workflow starts in Teams to review the meeting discussion before moving to any other app."
+        - content: "Teams → Word → PowerPoint → Outlook"
+          isCorrect: false
+          explanation: "Incorrect. While Teams is the correct starting point, the module places Outlook second as the step for drafting a follow-up message before moving to Word and PowerPoint."
+  - content: "How does Microsoft 365 Copilot handle security and permissions?"
+    choices:
+        - content: "Copilot requires administrators to manually configure separate security settings for AI access."
+          isCorrect: false
+          explanation: "Incorrect. The module states the opposite. Copilot automatically inherits the security and permissions already built into Microsoft 365 without requiring separate configuration."
+        - content: "Copilot only enforces security when users are working in Word or Excel."
+          isCorrect: false
+          explanation: "Incorrect. The module describes security enforcement broadly across Microsoft 365 apps, not limited to specific applications."
+        - content: "Copilot stores a separate copy of organizational data to generate responses faster."
+          isCorrect: false
+          explanation: "Incorrect. The module doesn't describe any separate data storage. Copilot works within existing Microsoft 365 infrastructure and respects existing permissions."
+        - content: "Copilot inherits existing security and compliance settings and only returns information the user can already access."
+          isCorrect: true
+          explanation: "Correct. The module states that Copilot inherits the security, compliance, and permissions already built into Microsoft 365 and only returns information users can access."
