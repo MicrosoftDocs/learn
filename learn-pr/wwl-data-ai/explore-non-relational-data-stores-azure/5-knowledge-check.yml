@@ -6,7 +6,7 @@ metadata:
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/12/2026
+  ms.date: 05/20/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -52,3 +52,14 @@ quiz:
     - content: "Enable multi-region writes and add the regions where you have users."
       isCorrect: true
       explanation: "That's correct. You can enable multi-region writes in the regions where you want users to work with the data."
+  - content: "You need to store key-value data for a new application. Which service should you choose for new workloads?"
+    choices:
+    - content: "Azure Table Storage"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Cosmos DB for Table is recommended for new key-value workloads because it offers higher performance, global distribution, automatic secondary indexes, and instant autoscale."
+    - content: "Azure Cosmos DB for Table"
+      isCorrect: true
+      explanation: "That's correct. Azure Cosmos DB for Table is the recommended service for new key-value workloads. It shares the same programming model as Azure Table Storage but offers higher performance, global distribution, and automatic secondary indexes."
+    - content: "Azure Cosmos DB for NoSQL"
+      isCorrect: false
+      explanation: "That's incorrect. The NoSQL API is designed for JSON document storage, not key-value tables."

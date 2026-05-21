@@ -1,24 +1,23 @@
-Welcome to this interactive skills validation experience. Completing this module helps prepare you for the *Deploy and manage containers with Azure Kubernetes Service*assessment.
+Welcome to this guided project. In four hands-on exercises, you practice creating and configuring an Azure Container Registry and an Azure Kubernetes Service cluster, and you deploy Linux and Windows container workloads to it.
 
-In this guided exercise, you practice creating and configuring an Azure Container Registry and an Azure Kubernetes Server cluster. The guided exercise combines both learning and hands-on practice. The skills validated include:
+You'll:
 
- -  Provisioning Azure Container Registry (ACR) and Azure Kubernetes Service (AKS).
- -  Building a Linux and Windows container images and store them in Azure Container Registry.
- -  Deploying container images to Azure Kubernetes Service.
+ -  Provision Azure Container Registry (ACR) and Azure Kubernetes Service (AKS).
+ -  Build Linux and Windows container images and store them in Azure Container Registry.
+ -  Deploy container images to Azure Kubernetes Service.
 
-By the end of this guided exercise, you gain hands-on experience in creating and configuring these services in Azure.
+By the end of this guided project, you have hands-on experience creating and configuring these services in Azure.
 
 > [!NOTE]
 > In the guided exercise, you complete an end-to-end project by following step-by-step instructions.
 
-## Skilling areas<br>
+## What you do
 
-For each area listed, the subtasks you need to become familiar with have been identified.
+The guided project is structured into four exercises:
 
-| **Skilling area**                                | **Skilling tasks**                                                                                                                  |
-| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Deploy and use Azure Container Registry.         | Deploy an AKS cluster into an existing virtual network.<br>Create a node pool.                                                      |
-| Deploy an Azure Kubernetes Service cluster.      | Create an Azure Container Registry (ACR).<br>Build a container image for a Linux app and upload it to a designated repo in the ACR. |
-| Configure an Azure Kubernetes Service cluster.   | Apply cluster configuration by using Azure Policy.<br>Configure infrastructure encryption.<br>Create custom namespace.              |
-| Deploy applications to Azure Kubernetes Service. | Apply container and pod settings by using Azure Policy.<br>Deploy an app based on the container image to the pool to the namespace. |
-| Configure scaling in Azure Kubernetes Service.   | Implement horizontal pod autoscaling.<br>Implement cluster virtual nodes by using ACI.<br>Deploy pods to virtual nodes.             |
+| Exercise | Activities |
+| --- | --- |
+| 1. Provision ACR and AKS | Create an Azure Container Registry, an Azure virtual network, and an AKS cluster that includes a Windows node pool. |
+| 2. Build container images | Build a Linux container image and a Windows container image, and push both to Azure Container Registry by using `az acr build`. |
+| 3. Deploy to AKS | Create custom AKS namespaces, author Kubernetes manifests with `nodeSelector` targeting your Linux and Windows node pools, and deploy both workloads with `kubectl apply`. |
+| 4. Review and clean up | Verify the deployments and services, then deprovision all Azure resources. |

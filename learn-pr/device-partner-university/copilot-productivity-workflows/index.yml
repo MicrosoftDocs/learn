@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.dpu.copilot-productivity-workflows
+title: Copilot for all the ways you work
+metadata:
+  title: Copilot for all the ways you work
+  description: >
+    In this module, you'll learn how to use Microsoft 365 Copilot to boost your productivity across Microsoft 365 apps. You'll learn how to find action items with Word, analyze data with Excel, and communicate effectively with Outlook and Teams. By the end of this module, you'll have the skills and knowledge to use Copilot to complete tasks from start to finish across Microsoft 365 apps.
+  ms.date: 05/20/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: microsoft-365
+summary: >
+  In this module, you'll learn how to use Microsoft 365 Copilot to boost your productivity across Microsoft 365 apps. You'll learn how to find action items with Word, analyze data with Excel, and communicate effectively with Outlook and Teams. By the end of this module, you'll have the skills and knowledge to use Copilot to complete tasks from start to finish across Microsoft 365 apps.
+
+abstract: |
+  By the end of this module, you will: 
+  - Understand how Microsoft 365 Copilot can help you boost your productivity across Microsoft 365 apps.
+  - Learn how to find action items with Word, analyze data with Excel, and communicate effectively with Outlook and Teams using Copilot.
+  - Be able to use Copilot to complete tasks from start to finish across Microsoft 365 apps.
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/copilot-productivity-workflows-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - m365
+units:
+  - learn.dpu.copilot-productivity-workflows.introduction
+  - learn.dpu.copilot-productivity-workflows.ai-built-for-work
+  - learn.dpu.copilot-productivity-workflows.find-action-items-with-word
+  - learn.dpu.copilot-productivity-workflows.analyze-data-with-excel
+  - learn.dpu.copilot-productivity-workflows.communicate-effectively-with-outlook-and-teams
+  - learn.dpu.copilot-productivity-workflows.use-copilot-across-microsoft-365-apps-complete-task-start-finish
+  - learn.dpu.copilot-productivity-workflows.knowledge-check
+  - learn.dpu.copilot-productivity-workflows.summary
+badge:
+  uid: learn.dpu.copilot-productivity-workflows.badge
