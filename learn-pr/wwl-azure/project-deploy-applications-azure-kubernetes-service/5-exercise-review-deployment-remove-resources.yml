@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---review-the-deployment-and-remove-resources
-title: Exercise - review the deployment and remove resources
+title: Exercise - Review the deployment and remove resources
 metadata:
-  title: Exercise - review the deployment and remove resources
+  title: Exercise - Review the deployment and remove resources
   description: "Exercise - review the deployment and remove resources"
   ms.date: 05/10/2026
   author: Orin-Thomas

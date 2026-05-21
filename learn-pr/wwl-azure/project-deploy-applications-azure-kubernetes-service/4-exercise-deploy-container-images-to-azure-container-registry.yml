@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---deploy-container-images-to-azure-container-registr
-title: Exercise - deploy container images to Azure Container Registry
+title: Exercise - Deploy container images to Azure Container Registry
 metadata:
-  title: Exercise - deploy container images to Azure Container Registry
+  title: Exercise - Deploy container images to Azure Container Registry
   description: "Exercise - deploy container images to Azure Container Registry"
   ms.date: 05/10/2026
   author: Orin-Thomas

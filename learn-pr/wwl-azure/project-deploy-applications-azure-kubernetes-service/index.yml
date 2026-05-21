@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service
 metadata:
-  title: Guided project - deploy applications to Azure Kubernetes Service
+  title: Guided project - Deploy applications to Azure Kubernetes Service
   description: "In this guided project, you provision Azure Container Registry and an Azure Kubernetes Service cluster, build Linux and Windows container images, and deploy them to AKS."
   ms.date: 05/10/2026
   author: Orin-Thomas
@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: azure-kubernetes-service
   ai-usage: human-only
-title: Guided project - deploy applications to Azure Kubernetes Service
+title: Guided project - Deploy applications to Azure Kubernetes Service
 summary: In this guided project, you provision Azure Container Registry and an Azure Kubernetes Service cluster, build Linux and Windows container images, and deploy them to AKS.
 abstract: |
   In this guided project, you practice creating and configuring an Azure Container Registry and an Azure Kubernetes Service cluster. In four hands-on exercises, you:
