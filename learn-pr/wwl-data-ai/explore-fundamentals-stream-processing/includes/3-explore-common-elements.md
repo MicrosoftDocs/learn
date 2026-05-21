@@ -15,9 +15,9 @@ At its simplest, a high-level architecture for stream processing looks like this
 
 Microsoft supports multiple technologies that you can use to implement real-time analytics of streaming data, including:
 
-- **Azure Stream Analytics**: A platform-as-a-service (PaaS) solution you can use to define *streaming jobs* that ingest data from a streaming source, apply a perpetual query, and write the results to an output.
-- **Spark Structured Streaming**: An open-source library that enables you to develop complex streaming solutions on Apache Spark based services, including **Microsoft Fabric** and **Azure Databricks**.
-- **Microsoft Fabric**: A high-performance database and analytics platform that includes Data Engineering, Data Factory, Data Science, Real-Time Intelligence, Data Warehouse, and Databases.
+- **Microsoft Fabric Real-Time Intelligence**: A complete, integrated toolset for real-time data built into Microsoft Fabric. It includes **Eventstreams** (to ingest, route, and transform streaming data), **Eventhouse** (a KQL-based database optimized for time-series and event data queries), **Real-Time Dashboards** (for live data visualization), and **Activator** (to trigger automated actions when streaming data meets defined conditions). AI assistance in Fabric Real-Time Intelligence helps you generate KQL queries from natural-language questions.
+- **Spark Structured Streaming**: An open-source library that enables you to develop complex streaming solutions on Apache Spark–based services, including **Azure Databricks** and Microsoft Fabric.
+- **Azure Stream Analytics**: A platform-as-a-service (PaaS) solution you can use to define *streaming jobs* that ingest data from a streaming source, apply a perpetual query, and write the results to an output. It's a solid option for standalone or hybrid streaming scenarios outside of Fabric.
 
 ### *Sources* for stream processing
 
