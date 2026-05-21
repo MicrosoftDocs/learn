@@ -28,7 +28,7 @@ Within each virtual network, subnets create internal boundaries. Use [network se
 
 ### Azure Network Security Perimeter for PaaS isolation
 
-For PaaS services, [Azure Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) creates a logical boundary around multiple PaaS resources. Resources within the perimeter communicate freely with each other, while traffic from outside the perimeter is denied by default. This approach complements private endpoints by adding perimeter-level data exfiltration controls without requiring individual access rules for each service. Supported services include Azure Storage, Azure SQL Database, Azure Key Vault, Azure Event Hubs, and Azure Cosmos DB.
+For PaaS services, [Azure Network Security Perimeter](/azure/private-link/network-security-perimeter-concepts) creates a logical boundary around multiple PaaS resources. Resources within the perimeter communicate freely with each other, while traffic from outside the perimeter is denied by default. This approach complements private endpoints by adding perimeter-level data exfiltration controls without requiring individual access rules for each service. Generally available supported services include Azure Storage, Azure Key Vault, Azure Event Hubs, Azure Service Bus, Azure AI Search, Azure Monitor, and Microsoft Foundry. Additional services such as Azure SQL Database and Azure Cosmos DB are available in public preview.
 
 ## Design network topology patterns
 
