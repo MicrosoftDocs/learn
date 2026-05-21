@@ -6,10 +6,10 @@ Azure storage offers different access tiers, allowing you to store blob object d
 
 * **Hot** - An online tier optimized for storing data that is accessed frequently.
 * **Cool** - An online tier optimized for storing data that is infrequently accessed and stored for a minimum of 30 days.
-* **Cold tier** - An online tier optimized for storing data that is infrequently accessed and stored for a minimum of 90 days. The cold tier has lower storage costs and higher access costs compared to the cool tier.
+* **Cold** - An online tier optimized for storing data that is infrequently accessed and stored for a minimum of 90 days. The cold tier has lower storage costs and higher access costs compared to the cool tier.
 * **Archive** - An offline tier optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency requirements, on the order of hours.
 
-Data storage limits are set at the account level and not per access tier. You can choose to use all of your limit in one tier or across all three tiers.
+Data storage limits are set at the account level and not per access tier. You can choose to use all of your limit in one tier or across all four tiers.
 
 ## Manage the data lifecycle
 
