@@ -2,11 +2,11 @@
 uid: learn.azure.storagemigration
 metadata:
   title: Accelerate Your Storage Migration, Modernization, and Innovation Journey to Azure
-  description: Learn how to accelerate your migration and modernization journey to Azure.
+  description: Plan your storage migration to Azure by assessing your environment, selecting tools, and validating data integrity.
   manager: jsuri
   ms.date: 04/30/2026
   author: hborns
-  ms.author: hborns
+  ms.author: hannoborns
   ms.topic: module
   ms.service: azure-storage
   ai-usage: ai-assisted

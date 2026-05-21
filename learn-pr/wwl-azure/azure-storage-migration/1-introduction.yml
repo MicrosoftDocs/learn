@@ -6,7 +6,7 @@ metadata:
   description: Learn how to successfully migrate storage to Azure.
   ms.date: 04/30/2026
   author: hborns
-  ms.author: hborns
+  ms.author: hannoborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 2

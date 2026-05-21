@@ -6,7 +6,7 @@ metadata:
   description: Learn how to deploy an Azure Storage Mover agent, plan your deployment, run migrations, and understand service limitations.
   ms.date: 04/30/2026
   author: hborns
-  ms.author: hborns
+  ms.author: hannoborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 7

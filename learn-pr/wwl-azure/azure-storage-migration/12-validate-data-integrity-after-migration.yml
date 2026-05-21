@@ -6,7 +6,7 @@ metadata:
   description: Learn about the considerations and best practices for ensuring data validation and integrity during your Azure migration.
   ms.date: 04/30/2026
   author: hborns
-  ms.author: hborns
+  ms.author: hannoborns
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 5
