@@ -21,10 +21,10 @@ This walkthrough covers how to create an issue from a repository. Issues can als
 
    :::image type="content" source="../media/issues-tab.png" alt-text="Screenshot showing the top portion of the main page of a repository with the Issues section highlighted." border="false":::
 
-1. Select **New issue**.
-1. If your repository uses issue templates, next to the type of issue you'd like to open select **Get started**.
+1. Select **New issue**. This should open a blank issue field for you to fill.
+1. If your repository uses issue templates, you should get a list of issues types, select the one you'd like to use.
 
-   If the type of issue you'd like to open isn't included in the available options, select **Open a blank issue**. If not using templates, skip to Step 5.
+   If the type of issue you'd like to open isn't included in the available options, select **Blank issue**. If not using templates, skip to Step 5.
 
    If your repository uses issue forms, you'll see a structured form to fill out instead of a blank issue template. Issue forms allow maintainers to collect specific information in a standardized format.
 
