@@ -69,7 +69,7 @@ The `failed` status provides granular error information through `run.last_error.
 
 The thread's message history grows with every iteration. This growth is both strength and challenge. Agents remember prior context — the market data from three turns ago, the risk thresholds set at the start. But every message consumes tokens and costs money.
 
-**Context budget management** becomes critical in production loops. Track two metrics: message count and estimated token usage. A thread with 50 messages containing 10KB of market data will consume substantial context on every run:
+**Context budget management** becomes critical in long-running loops. Track two metrics: message count and estimated token usage. A thread with dozens of messages containing detailed market data consumes substantial context on every run:
 
 ```python
 messages = list(agents_client.messages.list(thread_id=thread.id))
@@ -81,11 +81,11 @@ if estimated_tokens > 50000:
     pass
 ```
 
-Once a thread approaches the model's context window limit (commonly 128K tokens), you face three options: prune old messages, summarize historical context into a compact system message, or start a new thread with a handoff summary. Contoso Capital's investment agents use selective retention — keep analyst questions and final recommendations, summarize intermediate market data fetches, and discard low-value acknowledgments.
+Once a thread approaches the model's context window limit (commonly 128K tokens), you face three options: prune old messages, summarize historical context into a compact system message, or start a new thread with a handoff summary. For the Contoso Capital investment research scenario, selective retention works well — keep analyst questions and final recommendations, summarize intermediate market data fetches, and discard low-value acknowledgments.
 
 ## Design loop termination strategies
 
-Production agentic loops need explicit termination conditions. Without them, a loop can run indefinitely, consuming budget without delivering value. Three primary strategies work in practice:
+Production agentic loops need explicit termination conditions. Without them, a loop can run indefinitely, consuming budget without delivering value. Three strategies work in practice:
 
 **Max iteration limits** cap the number of run-submit cycles. Set this based on task complexity — a simple classification might allow 3 iterations, while complex multi-step research allows 10-15. Always include a maximum to prevent runaway loops:
 
@@ -105,7 +105,7 @@ while iteration < MAX_ITERATIONS:
     iteration += 1
 ```
 
-**Cost-based stopping** tracks cumulative token usage or elapsed time. If an agent workflow has a $5 budget, stop when costs approach $4.80. This prevents budget overruns in production:
+**Cost-based stopping** tracks cumulative token usage or elapsed time. If an agent workflow has a $5 budget, stop when costs approach $4.80:
 
 ```python
 cumulative_cost = 0.0
@@ -143,8 +143,6 @@ with agents_client.runs.stream(thread_id=thread.id, agent_id=agent.id) as stream
 
 Polling is the right choice for backend workflows where latency matters less than code simplicity. Streaming is essential for user-facing applications where you display agent reasoning in real time. The event handling logic is identical — both patterns produce the same `AgentRun` object with the same status values.
 
-Production agentic loops are deterministic state machines. The run status tells you what happened. Your loop logic decides what happens next. Master this pattern, and you control the agent's behavior under every condition.
-
 ## How Agents v2 changes the execution model
 
 The patterns in this unit — run status handling, `requires_action` loops, context tracking — are Agents v1 constructs. Unit 3 covers the Foundry Responses API (Agents v2), which changes the execution model in two key ways.
@@ -160,5 +158,5 @@ Unit 3 covers these changes in detail with side-by-side code. The v1 patterns in
 - **Run status taxonomy** drives every loop decision — eight distinct statuses (`completed`, `requires_action`, `failed`, `expired`, and others) each require a specific engineering response, not generic error handling.
 - **Tool output submission** is the critical path for `requires_action` — the loop must execute local tool functions and return results via `submit_tool_outputs_and_poll()` to continue agent execution.
 - **Context accumulation** grows linearly with message history, requiring proactive token tracking and pruning strategies (summarization, sliding window, or thread restart) before hitting model context limits.
-- **Loop termination strategies** prevent runaway execution — combine max-iteration caps, cost-based budgets, and semantic completion detection to balance thoroughness with predictable resource consumption.
+- **Loop termination strategies** prevent runaway execution — combine max-iteration caps, cost-based budgets, and semantic completion detection to keep resource consumption predictable.
 - **Streaming vs. polling** is a deployment decision — polling simplifies backend workflows while streaming enables real-time UI feedback, but both produce identical run status outcomes.

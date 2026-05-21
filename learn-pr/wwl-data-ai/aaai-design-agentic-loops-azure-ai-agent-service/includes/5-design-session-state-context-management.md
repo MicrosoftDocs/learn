@@ -1,10 +1,10 @@
-Production agent systems require session state that survives process restarts, scales across distributed instances, and supports long-lived workflows spanning hours or days. Microsoft Foundry Agent Service threads provide in-service message history, but threads alone don't meet production persistence requirements. You need external state management.
+Production agent systems require session state that survives process restarts, scales across distributed instances, and supports long-lived workflows spanning hours or days. Microsoft Foundry Agent Service threads provide in-service message history, but threads alone don't meet these persistence requirements. You need external state management.
 
 ## Understand thread limitations and session requirements
 
 In Microsoft Foundry Agent Service, a **thread** is the session — it holds all message history. As long as the thread exists in the service, message history persists. But threads are ephemeral within the service lifetime. If your application process crashes, the thread ID is all you have. Without external state, you lose the ability to resume.
 
-**Production session requirements** exceed what service threads provide:
+**Session requirements** exceed what service threads provide:
 
 | Requirement | Service Thread Alone | With External Persistence |
 |-------------|---------------------|---------------------------|
@@ -22,7 +22,7 @@ The solution: persist thread state externally at strategic checkpoints. The thre
 
 Three persistence tiers trade off complexity against durability and query capabilities:
 
-**In-memory / service thread only** suits short-lived interactions within a single process lifetime. The thread ID lives in application memory or a simple key-value cache. This approach works for stateless request-response agents where each interaction is independent. Risk: no recovery if the process crashes mid-conversation. Contoso Capital uses this for simple market quote lookups — if the process fails, the user simply retries.
+**In-memory / service thread only** suits short-lived interactions within a single process lifetime. The thread ID lives in application memory or a simple key-value cache. This approach works for stateless request-response agents where each interaction is independent. Risk: no recovery if the process crashes mid-conversation. For simple market quote lookups in the Contoso Capital scenario, this tier is sufficient — if the process fails, the user simply retries.
 
 **Azure Cosmos DB persistence** provides durable, queryable state storage for long-lived workflows. The service supports two approaches:
 
@@ -199,9 +199,7 @@ Deciding when to create a new thread versus continuing an existing thread shapes
 
 **Conversation-scoped threading** creates one thread per user conversation, spanning multiple tasks. An analyst has a single long-lived thread for their entire workday, covering multiple research requests. The thread accumulates context — prior decisions, mentioned preferences, established constraints. This pattern benefits workflows where carry-over context adds value ("Use the same risk parameters as the last analysis").
 
-Contoso Capital uses task-scoped threading. Each research request is independent. The thread focuses on one stock, one time period, one set of criteria. When research completes, the final recommendation gets persisted with metadata (stock ticker, timestamp, analyst ID, decision), and the thread closes. This prevents context pollution — research on MSFT doesn't influence later research on AAPL.
-
-Session state architecture determines agent memory characteristics. In-memory threads are stateless and transient. Cosmos DB persistence enables resumable workflows. Redis adds query performance. Context management strategies control costs and enable long-lived threads. Your choices shape what agents remember and for how long.
+For the investment research platform, the team chose task-scoped threading. Each research request is independent — the thread focuses on one stock, one time period, one set of criteria. When research completes, the final recommendation gets persisted with metadata (stock ticker, timestamp, analyst ID, decision), and the thread closes. This prevents context pollution — research on MSFT doesn't influence later research on AAPL.
 
 ## Choose context management modes in Agents v2
 
@@ -213,7 +211,7 @@ The session state patterns in this unit — custom Cosmos DB persistence, Redis 
 
 ### When custom Cosmos DB is still needed in v2
 
-Agents v2 managed history reduces the need for custom persistence, but some production scenarios still require it:
+Agents v2 managed history reduces the need for custom persistence, but some scenarios still require it:
 
 | Scenario | v2 managed history enough? | Custom Cosmos DB needed? |
 |---|---|---|

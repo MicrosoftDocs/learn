@@ -1,4 +1,4 @@
-Production agent workflows often require exploring multiple reasoning paths from the same starting context. An analyst examining an investment opportunity might want to explore bull-case and bear-case scenarios simultaneously without re-running the entire data collection phase. **Fork-based sessions** enable this branching pattern through thread state management.
+Agent workflows often require exploring multiple reasoning paths from the same starting context. An analyst examining an investment opportunity might want to explore bull-case and bear-case scenarios simultaneously without re-running the entire data collection phase. **Fork-based sessions** enable this branching pattern through thread state management.
 
 ## Understand the fork pattern and its use cases
 
@@ -13,7 +13,7 @@ The pattern comes from version control systems — Git's branching model maps di
 | Design alternatives | Generate multiple architecture proposals | 2-4 (per design approach) |
 | A/B prompt testing | Test prompt variations on same input | 2-10 (per prompt variant) |
 
-Contoso Capital uses forking when analysts request scenario analysis. After collecting market data and performing baseline analysis (20 messages, 15K tokens), fork into bull-case and bear-case branches. Each branch runs the same reasoning agent with different parameters — bull case assumes 20% growth, bear case assumes 5% decline. Both branches start with identical context, diverging only in assumptions.
+In the Contoso Capital scenario, after collecting market data and performing baseline analysis, you fork into bull-case and bear-case branches. Each branch runs the same reasoning agent with different parameters — bull case assumes 20% growth, bear case assumes 5% decline. Both branches start with identical context, diverging only in assumptions.
 
 ## Implement fork-based sessions with checkpointing
 
@@ -116,7 +116,7 @@ bull_recommendation = bull_messages[0].text_messages[0].text.value
 bear_recommendation = bear_messages[0].text_messages[0].text.value
 ```
 
-The key efficiency gain: data collection runs once (20 messages, 3 tool calls, 15K tokens). Both scenario analyses reuse this context. Without forking, you'd run data collection twice, doubling costs and latency.
+Data collection runs once, and both scenario analyses reuse that context. Without forking, you'd run data collection twice, doubling costs and latency.
 
 ## Support conversation resumption
 
@@ -147,9 +147,7 @@ def resume_session(checkpoint_id):
     return resumed_thread
 ```
 
-Resumption works because threads are message histories. Replaying messages reconstructs the agent's context exactly. The agent doesn't know it's running in a new thread — it sees the same message sequence.
-
-This pattern handles not just intentional pauses but also failure recovery. If an agent run fails mid-workflow, checkpoint the state before the failure, diagnose the issue, then resume from the checkpoint with a corrected prompt or fixed tool configuration.
+Resumption works because threads are message histories — replaying messages reconstructs the agent's context. This pattern handles not just intentional pauses but also failure recovery. If an agent run fails mid-workflow, checkpoint the state before the failure, diagnose the issue, then resume from the checkpoint with a corrected prompt or fixed tool configuration.
 
 ## Manage forked thread lifecycles
 
@@ -200,7 +198,7 @@ def cleanup_old_checkpoints(days_threshold=30):
         checkpoint_container.delete_item(item=item["id"], partition_key=item["id"])
 ```
 
-Lifecycle management prevents runaway storage costs. A production system might create 1000 threads per day. At $0.50/GB Cosmos DB storage, retaining all threads forever becomes expensive. Aggressive cleanup (delete non-archived threads after 7 days) keeps storage costs predictable.
+Lifecycle management prevents runaway storage costs. A busy system can create hundreds or thousands of threads per day, and retaining all of them indefinitely adds up. A cleanup policy (for example, deleting non-archived threads after seven days) keeps storage costs predictable.
 
 ## Understand when not to fork
 
@@ -216,9 +214,7 @@ Forking adds operational complexity — multiple threads to track, lifecycle pol
 - Exploring alternatives simultaneously (scenario analysis, A/B testing)
 - Need to resume interrupted workflows (long-running research, diagnostic workflows)
 
-Contoso Capital uses forking for scenario analysis (shared data collection is expensive) but not for sequential stock screening (each stock is independent — no shared context worth preserving).
-
-Fork-based sessions transform linear workflows into branching exploration workflows. The implementation is straightforward checkpoint-and-restore. The value is eliminating redundant computation and enabling resumable workflows. Use it when exploration matters and shared context is expensive to rebuild.
+In the Contoso Capital scenario, forking makes sense for scenario analysis where shared data collection is expensive, but not for sequential stock screening where each stock is independent with no shared context worth preserving.
 
 ## Fork sessions using the Responses API (v2)
 

@@ -42,7 +42,7 @@ agents_client.messages.create(thread_id=thread.id, role="user", content=executio
 run = agents_client.runs.create_and_process(thread_id=thread.id, agent_id=analyst_agent.id)
 ```
 
-The key insight: planning and execution can use different agents. A specialized planner agent with strong decomposition capabilities generates the plan. A different analyst agent with deep tool access executes it. The thread preserves the plan context, so the executor sees what was intended.
+Planning and execution can use different agents. A specialized planner agent with strong decomposition capabilities generates the plan. A different analyst agent with deep tool access executes it. The thread preserves the plan context, so the executor sees what was intended.
 
 ## Implement act-then-reflect patterns
 
@@ -114,11 +114,11 @@ for cycle in range(MAX_REFLECTION_CYCLES):
     agents_client.messages.create(thread_id=thread.id, role="user", content=reflection_prompt)
 ```
 
-This approach balances quality with cost. A low threshold (6) terminates early but risks shipping mediocre outputs. A high threshold (9) drives quality up but compounds costs. Empirically, 7-8 works for most production scenarios — agents produce meaningfully better outputs without excessive iteration.
+This approach has clear trade-offs. A low threshold (6) terminates early but risks shipping mediocre outputs. A high threshold (9) drives quality up but compounds costs. In practice, a threshold of 7-8 works for most scenarios — agents produce meaningfully better outputs without excessive iteration.
 
 ## Balance reflection depth with reasoning budgets
 
-Reflection has real costs. Each cycle runs the model again, consuming tokens and adding latency. The relationship is non-linear — the first reflection cycle typically yields significant quality improvement (15-25% by human evaluation), the second adds incremental value (5-10%), and subsequent cycles plateau.
+Reflection has real costs. Each cycle runs the model again, consuming tokens and adding latency. The relationship is non-linear — the first reflection cycle typically yields the most significant quality improvement, the second adds incremental value, and subsequent cycles show diminishing returns.
 
 **Reasoning budget** constraints guide reflection depth:
 
@@ -160,12 +160,10 @@ run = agents_client.runs.create_and_process(
 )
 ```
 
-These traces serve two purposes: they document the agent's decision path for audit and compliance, and they provide training data for future model improvements. Contoso Capital's compliance team reviews reasoning traces for regulatory reporting. The structured format makes automated auditing feasible.
+These traces serve two purposes: they document the agent's decision path for audit and compliance, and they provide training data for future model improvements. In the Contoso Capital scenario, the compliance team reviews reasoning traces for regulatory reporting. The structured format makes automated auditing feasible.
 
 > [!NOTE]
-> **Pause and reflect:** Your team is building a clinical report generator that needs high accuracy but also serves hundreds of requests per hour. How would you decide which reflection pattern (plan-then-act, act-then-reflect, or iterative refinement) to use, and what confidence threshold would balance quality with your cost and latency constraints?
-
-Reflection transforms single-pass generation into multi-pass reasoning. The implementation is straightforward — add a critique message and run again. The impact on output quality is measurable. The cost is predictable. Use reflection when output quality justifies the added iteration.
+> **Pause and reflect:** Your team is building a clinical report generator that needs high accuracy but also serves hundreds of requests per hour. How would you decide which reflection pattern (plan-then-act, act-then-reflect, or iterative refinement) to use, and what confidence threshold would you set given your cost and latency constraints?
 
 ## Apply reflection patterns using the Responses API (v2)
 
@@ -254,6 +252,6 @@ The key differences from v1: `previous_response_id` replaces thread message inje
 - **Plan-then-act** separates decomposition from execution using structured JSON output, enabling different specialized agents for planning and execution within the same thread context.
 - **Act-then-reflect** injects critique prompts into thread history to drive iterative quality improvement — tailor the critique criteria to your domain (risk factors for finance, vulnerabilities for security).
 - **Quality thresholds** (confidence scoring, external validation, semantic convergence) prevent infinite reflection loops while ensuring output meets minimum standards before delivery.
-- **Reasoning budgets** should guide reflection depth — the first cycle yields 15-25% improvement but subsequent cycles plateau, creating a 3-4x token cost multiplier that must be factored into cost models.
+- **Reasoning budgets** should guide reflection depth — the first cycle yields the most significant improvement but subsequent cycles show diminishing returns, creating a token cost multiplier that must be factored into cost models.
 - **Structured reasoning traces** captured via `json_schema` response format serve dual purposes: audit trail for compliance and training data for future model improvements.
 - **Reflection in Agents v2** uses `previous_response_id` chaining in place of thread message injection — chain plan-then-act or act-then-reflect responses by reference, with no run polling required.
