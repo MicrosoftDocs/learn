@@ -1,6 +1,6 @@
 In the previous unit, you learned that Azure Cosmos DB is a highly scalable cloud database service for NoSQL data. In this unit, you'll explore what makes it different from traditional relational databases, how it organizes data internally, and when it's the right choice for your application.
 
-## What is Azure Cosmos DB
+## What is Azure Cosmos DB?
 
 **Azure Cosmos DB** is a fully managed NoSQL database service on Azure—a platform-as-a-service (PaaS) offering. Microsoft handles all of the underlying infrastructure: server provisioning, patching, updates, and backups. You focus on your application logic while Cosmos DB handles the operational overhead.
 
@@ -27,7 +27,7 @@ Cosmos DB automatically creates and maintains indexes on all item properties by 
 
 Cosmos DB is built for global distribution. Add Azure regions to your account at any time, and the service automatically replicates your data to each one. Users in different locations read from and write to the nearest regional replica, which keeps latency low no matter where they are.
 
-Multi-region write accounts come with a 99.999% availability SLA. At the 99th percentile, reads typically complete in around 4 milliseconds and writes in around 5 milliseconds.
+Multi-region write accounts provide high availability guarantees. At the 99th percentile, reads typically complete in around 4 milliseconds and writes in around 5 milliseconds.
 
 Because replicas exist in multiple regions, you need to decide how consistent those replicas must be with each other. Cosmos DB offers five **consistency levels** so you can tune that trade-off:
 
@@ -60,7 +60,7 @@ Three throughput modes are available:
 
 The **autoscale** option lets you set a maximum RU/s, and Cosmos DB adjusts capacity automatically within that range based on actual demand.
 
-![Diagram explaining throughput modes.](../media/cosmos-db-throughput-modes.png)
+![Diagram comparing provisioned and autoscale throughput modes in Azure Cosmos DB, showing how RU/s capacity is allocated in each mode.](../media/cosmos-db-throughput-modes.png)
 
 ## When to use Cosmos DB
 

@@ -4,7 +4,7 @@ In the previous unit, you explored what Azure Cosmos DB is and how it organizes 
 
 When you create a Cosmos DB account, you choose which API to use. That choice determines how your application interacts with the database: what data format it sends, what query language it uses, and which client libraries it works with. Internally, Cosmos DB stores data in its own format; the API acts as an abstraction layer on top.
 
-The main benefit is portability. If your team already has an application built on MongoDB or Apache Cassandra, you can point it at Cosmos DB with minimal code changes — and gain global distribution, managed throughput, and a 99.999% multi-region availability SLA in the process.
+The main benefit is portability. If your team already has an application built on MongoDB or Apache Cassandra, you can point it at Cosmos DB with minimal code changes — and gain global distribution, managed throughput, and the inherent SLA benefits in the process.
 
 The five supported APIs are: **NoSQL**, **MongoDB**, **Table**, **Apache Cassandra**, and **Apache Gremlin**. Each is designed for a different type of data or use case.
 
