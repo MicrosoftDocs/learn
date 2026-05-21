@@ -1,20 +1,20 @@
-Basic agents respond once and stop. Production agents tasked with complex reasoning — financial analysis, diagnostic support, code review — benefit from iterating on their own outputs. **Reflection cycles** implement this multi-pass reasoning pattern, where agents critique and refine their work before delivering final results.
+Basic agents respond once and stop. Production agents tasked with complex reasoning—financial analysis, diagnostic support, code review—benefit from iterating on their own outputs. **Reflection cycles** implement this multi-pass reasoning pattern, where agents critique and refine their work before delivering final results.
 
 ## Understand why reflection matters
 
-Reflection is not retry-on-error. Retry handles transient failures. Reflection implements intentional quality improvement through self-critique. Consider Contoso Capital's investment research workflow: an analyst agent generates a stock recommendation based on market data. Without reflection, that first-pass recommendation ships to clients. With reflection, the agent critiques its own reasoning ("Did I consider regulatory risks? Are my growth assumptions justified?"), identifies gaps, and produces a refined output.
+Reflection isn't retry-on-error. Retry handles transient failures. Reflection implements intentional quality improvement through self-critique. Consider Contoso Capital's investment research workflow: an analyst agent generates a stock recommendation based on market data. Without reflection, that first-pass recommendation ships to clients. With reflection, the agent critiques its own reasoning ("Did I consider regulatory risks? Are my growth assumptions justified?"), identifies gaps, and produces a refined output.
 
-The pattern mirrors human expertise. Senior analysts don't produce final reports in one draft — they write, review, revise. Reflection cycles bring that multi-pass discipline to agent workflows.
+The pattern mirrors human expertise. Senior analysts don't produce final reports in one draft—they write, review, revise. Reflection cycles bring that multi-pass discipline to agent workflows.
 
 | Pattern | When to Use | Typical Iterations |
 |---------|-------------|-------------------|
 | Plan-then-act | Task requires explicit decomposition | 1 planning + 1 execution |
 | Act-then-reflect | Quality improvement on complex outputs | 2-3 critique cycles |
-| Iterative refinement | Uncertain solution space, need exploration | 3-5 refinement passes |
+| Iterative refinement | Uncertain solution space, needs exploration | 3-5 refinement passes |
 
 ## Implement plan-then-act patterns
 
-Plan-then-act separates decomposition from execution. The agent first generates a structured plan, then executes each step. This pattern works when task complexity benefits from explicit planning — multi-step data pipelines, research workflows crossing multiple data sources, or orchestration scenarios requiring dependency management.
+Plan-then-act separates decomposition from execution. The agent first generates a structured plan, then executes each step. This pattern works when task complexity benefits from explicit planning—multi-step data pipelines, research workflows crossing multiple data sources, or orchestration scenarios requiring dependency management.
 
 Implement planning using structured output with `json_schema` response format. The agent produces a plan as JSON, your orchestration code validates it, then you execute each step:
 
@@ -76,7 +76,7 @@ messages = list(agents_client.messages.list(thread_id=thread.id))
 refined_response = messages[0].text_messages[0].text.value
 ```
 
-The critique prompt controls what aspects get reviewed. Tailor it to your domain — financial analysis checks for risk factors and assumption justification, code review checks for security vulnerabilities and performance concerns, diagnostic support checks for alternative diagnoses.
+The critique prompt controls what aspects get reviewed. Tailor it to your domain—financial analysis checks for risk factors and assumption justification, code review checks for security vulnerabilities and performance concerns, diagnostic support checks for alternative diagnoses.
 
 ## Implement iterative refinement with quality thresholds
 
@@ -114,11 +114,11 @@ for cycle in range(MAX_REFLECTION_CYCLES):
     agents_client.messages.create(thread_id=thread.id, role="user", content=reflection_prompt)
 ```
 
-This approach has clear trade-offs. A low threshold (6) terminates early but risks shipping mediocre outputs. A high threshold (9) drives quality up but compounds costs. In practice, a threshold of 7-8 works for most scenarios — agents produce meaningfully better outputs without excessive iteration.
+This approach has clear trade-offs. A low threshold (6) terminates early but risks shipping mediocre outputs. A high threshold (9) drives quality up but compounds costs. In practice, a threshold of 7-8 works for most scenarios—agents produce meaningfully better outputs without excessive iteration.
 
 ## Balance reflection depth with reasoning budgets
 
-Reflection has real costs. Each cycle runs the model again, consuming tokens and adding latency. The relationship is non-linear — the first reflection cycle typically yields the most significant quality improvement, the second adds incremental value, and subsequent cycles show diminishing returns.
+Reflection has real costs. Each cycle runs the model again, consuming tokens and adding latency. The relationship is non-linear—the first reflection cycle typically yields the most significant quality improvement, the second adds incremental value, and subsequent cycles show diminishing returns.
 
 **Reasoning budget** constraints guide reflection depth:
 
@@ -126,7 +126,7 @@ Reflection has real costs. Each cycle runs the model again, consuming tokens and
 - **Accuracy-critical workflows** (medical diagnostic support): 2-3 reflection cycles, validated by external checks
 - **Cost-constrained workflows** (high-volume batch processing): No reflection, optimize prompts for single-pass accuracy
 
-Track cumulative token usage across cycles. If a single-pass analysis consumes 5K tokens, and each reflection cycle adds 4K tokens (re-processing context + new generation), three reflection cycles consume 17K tokens total — a 3.4x multiplier. Factor this into your cost modeling.
+Track cumulative token usage across cycles. If a single-pass analysis consumes 5K tokens, and each reflection cycle adds 4K tokens (re-processing context + new generation), three reflection cycles consume 17K tokens total—a 3.4x multiplier. Factor this into your cost modeling.
 
 ## Capture structured reasoning traces
 
@@ -167,7 +167,7 @@ These traces serve two purposes: they document the agent's decision path for aud
 
 ## Apply reflection patterns using the Responses API (v2)
 
-The v1 reflection patterns above use thread message injection: add a critique message to the thread, start a new run, read the result. In Agents v2, the same patterns map to the `previous_response_id` chain — no thread messages to inject, no runs to poll.
+The v1 reflection patterns above use thread message injection: add a critique message to the thread, start a new run, read the result. In Agents v2, the same patterns map to the `previous_response_id` chain—no thread messages to inject, no runs to poll.
 
 ### Plan-then-act in v2
 
@@ -191,7 +191,7 @@ plan_response = openai.responses.create(
 
 plan = json.loads(plan_response.output[0].content[0].text)
 
-# Step 2: Execute the plan — chain via previous_response_id
+# Step 2: Execute the plan—chain via previous_response_id
 execute_response = openai.responses.create(
     input=f"Execute this investment analysis plan: {json.dumps(plan)}",
     previous_response_id=plan_response.id,
@@ -203,7 +203,7 @@ execute_response = openai.responses.create(
 
 ### Act-then-reflect in v2
 
-Act-then-reflect uses the same `previous_response_id` chain. The critique "message" becomes the input to the next response — no thread injection needed.
+Act-then-reflect uses the same `previous_response_id` chain. The critique "message" becomes the input to the next response—no thread injection needed.
 
 ```python
 def reflect_with_responses(agent_name, initial_input, critique_template, max_cycles=3):
@@ -228,7 +228,7 @@ def reflect_with_responses(agent_name, initial_input, critique_template, max_cyc
         if confidence >= 0.85:
             break
 
-        # Inject critique as input to next response — chain via previous_response_id
+        # Inject critique as input to next response—chain via previous_response_id
         critique_input = critique_template.format(
             output=output_text,
             cycle=cycle + 1,
@@ -245,13 +245,13 @@ def reflect_with_responses(agent_name, initial_input, critique_template, max_cyc
 The key differences from v1: `previous_response_id` replaces thread message injection; there's no `runs.create_and_process()` or status polling; and you extract output by iterating `response.output` items rather than reading `messages.list()`.
 
 > [!NOTE]
-> The `previous_response_id` chain works without a conversation object, making it ideal for stateless reflection flows. For long reflection chains where you need server-managed history, use `conversation.id` instead — see Unit 5 for context management strategy guidance.
+> The `previous_response_id` chain works without a conversation object, making it ideal for stateless reflection flows. For long reflection chains where you need server-managed history, use `conversation.id` instead—see Unit 5 for context management strategy guidance.
 
 ## Summary
 
 - **Plan-then-act** separates decomposition from execution using structured JSON output, enabling different specialized agents for planning and execution within the same thread context.
-- **Act-then-reflect** injects critique prompts into thread history to drive iterative quality improvement — tailor the critique criteria to your domain (risk factors for finance, vulnerabilities for security).
+- **Act-then-reflect** injects critique prompts into thread history to drive iterative quality improvement—tailor the critique criteria to your domain (risk factors for finance, vulnerabilities for security).
 - **Quality thresholds** (confidence scoring, external validation, semantic convergence) prevent infinite reflection loops while ensuring output meets minimum standards before delivery.
-- **Reasoning budgets** should guide reflection depth — the first cycle yields the most significant improvement but subsequent cycles show diminishing returns, creating a token cost multiplier that must be factored into cost models.
+- **Reasoning budgets** should guide reflection depth—the first cycle yields the most significant improvement but subsequent cycles show diminishing returns, creating a token cost multiplier that must be factored into cost models.
 - **Structured reasoning traces** captured via `json_schema` response format serve dual purposes: audit trail for compliance and training data for future model improvements.
-- **Reflection in Agents v2** uses `previous_response_id` chaining in place of thread message injection — chain plan-then-act or act-then-reflect responses by reference, with no run polling required.
+- **Reflection in Agents v2** uses `previous_response_id` chaining in place of thread message injection—chain plan-then-act or act-then-reflect responses by reference, with no run polling required.

@@ -4,7 +4,7 @@ Agent workflows often require exploring multiple reasoning paths from the same s
 
 Fork-based sessions solve the alternative hypothesis exploration problem. Without forking, exploring multiple paths requires either re-executing the entire workflow from the start (expensive, slow) or complex manual state duplication (error-prone). Forking provides a clean abstraction: checkpoint the session state, then spawn independent branches that diverge from that point.
 
-The pattern comes from version control systems — Git's branching model maps directly to agent sessions. Create a checkpoint (like a commit), fork multiple branches (like feature branches), explore independently, then optionally merge results.
+The pattern comes from version control systems—Git's branching model maps directly to agent sessions. Create a checkpoint (like a commit), fork multiple branches (like feature branches), explore independently, then optionally merge results.
 
 | Use Case | Why Fork | Typical Branches |
 |----------|----------|------------------|
@@ -13,7 +13,7 @@ The pattern comes from version control systems — Git's branching model maps di
 | Design alternatives | Generate multiple architecture proposals | 2-4 (per design approach) |
 | A/B prompt testing | Test prompt variations on same input | 2-10 (per prompt variant) |
 
-In the Contoso Capital scenario, after collecting market data and performing baseline analysis, you fork into bull-case and bear-case branches. Each branch runs the same reasoning agent with different parameters — bull case assumes 20% growth, bear case assumes 5% decline. Both branches start with identical context, diverging only in assumptions.
+In the Contoso Capital scenario, after collecting market data and performing baseline analysis, you fork into bull-case and bear-case branches. Each branch runs the same reasoning agent with different parameters—bull case assumes 20% growth, bear case assumes 5% decline. Both branches start with identical context, diverging only in assumptions.
 
 ## Implement fork-based sessions with checkpointing
 
@@ -120,7 +120,7 @@ Data collection runs once, and both scenario analyses reuse that context. Withou
 
 ## Support conversation resumption
 
-Fork-based patterns also enable **conversation resumption** — allowing users to interrupt long workflows and resume later. The pattern is identical: serialize thread state when the user pauses, restore it when they return.
+Fork-based patterns also enable **conversation resumption**—allowing users to interrupt long workflows and resume later. The pattern is identical: serialize thread state when the user pauses, restore it when they return.
 
 A Contoso Capital analyst starts research at 2 PM on Friday, completes 60% of the workflow, then leaves for the weekend. The application persists the thread state to Cosmos DB. Monday morning, the analyst resumes by restoring the checkpoint into a new thread and continuing:
 
@@ -147,7 +147,7 @@ def resume_session(checkpoint_id):
     return resumed_thread
 ```
 
-Resumption works because threads are message histories — replaying messages reconstructs the agent's context. This pattern handles not just intentional pauses but also failure recovery. If an agent run fails mid-workflow, checkpoint the state before the failure, diagnose the issue, then resume from the checkpoint with a corrected prompt or fixed tool configuration.
+Resumption works because threads are message histories—replaying messages reconstructs the agent's context. This pattern handles not just intentional pauses but also failure recovery. If an agent run fails mid-workflow, checkpoint the state before the failure, diagnose the issue, then resume from the checkpoint with a corrected prompt or fixed tool configuration.
 
 ## Manage forked thread lifecycles
 
@@ -202,7 +202,7 @@ Lifecycle management prevents runaway storage costs. A busy system can create hu
 
 ## Understand when not to fork
 
-Forking adds operational complexity — multiple threads to track, lifecycle policies to enforce, checkpoint storage costs. Only use fork-based patterns when the value justifies the complexity.
+Forking adds operational complexity—multiple threads to track, lifecycle policies to enforce, checkpoint storage costs. Only use fork-based patterns when the value justifies the complexity.
 
 **Don't fork when:**
 - Sequential exploration suffices (explore path A, if it fails, try path B)
@@ -232,22 +232,22 @@ base_response = openai.responses.create(
     extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
 )
 
-# Fork 1: Bull-case scenario — chains from base_response
+# Fork 1: Bull-case scenario—chains from base_response
 bull_response = openai.responses.create(
     input="Based on the data you collected, develop a bull-case investment thesis.",
     previous_response_id=base_response.id,  # Fork point
     extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
 )
 
-# Fork 2: Bear-case scenario — also chains from base_response, independently
+# Fork 2: Bear-case scenario—also chains from base_response, independently
 bear_response = openai.responses.create(
     input="Based on the same data, develop a bear-case investment thesis with downside risks.",
-    previous_response_id=base_response.id,  # Same fork point — independent branch
+    previous_response_id=base_response.id,  # Same fork point—independent branch
     extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
 )
 ```
 
-Both branches share the same parent context but diverge from `base_response.id`. Each branch's subsequent responses chain from their own line — `bull_response.id` or `bear_response.id`. The branches never merge server-side.
+Both branches share the same parent context but diverge from `base_response.id`. Each branch's subsequent responses chain from their own line—`bull_response.id` or `bear_response.id`. The branches never merge server-side.
 
 ### Fork via conversation duplication
 
@@ -279,7 +279,7 @@ bull_response = openai.responses.create(
 Run multiple fork branches concurrently using background mode. Each branch launches immediately and the results are retrieved when all are complete.
 
 ```python
-# Launch both branches in background mode — they run in parallel
+# Launch both branches in background mode—they run in parallel
 bull_job = openai.responses.create(
     input="Develop a bull-case thesis.",
     previous_response_id=base_response.id,
@@ -294,7 +294,7 @@ bear_job = openai.responses.create(
     extra_body={"agent_reference": {"name": "investment-analyst", "type": "agent_reference"}},
 )
 
-# Store job IDs — poll both until complete
+# Store job IDs—poll both until complete
 import time
 jobs = {"bull": bull_job.id, "bear": bear_job.id}
 results = {}
@@ -310,14 +310,14 @@ while jobs:
 ```
 
 > [!NOTE]
-> The `previous_response_id` fork approach (first pattern) is simpler and doesn't require conversation management for short-to-medium depth branches. Use conversation duplication when branches will accumulate many turns over time. Background mode is the right complement for any parallel branch pattern — it lets both branches execute concurrently rather than sequentially.
+> The `previous_response_id` fork approach (first pattern) is simpler and doesn't require conversation management for short-to-medium depth branches. Use conversation duplication when branches will accumulate many turns over time. Background mode is the right complement for any parallel branch pattern—it lets both branches execute concurrently rather than sequentially.
 
 ## Summary
 
 - **Fork-based sessions** solve the alternative hypothesis exploration problem by checkpointing thread state and spawning independent branches that diverge from a common starting context.
 - **Checkpoint-and-restore** serializes thread messages to Cosmos DB at strategic points, enabling both scenario branching (bull/bear case analysis) and conversation resumption after interruptions or failures.
-- **Efficiency gains** come from avoiding redundant computation — expensive data collection runs once, and all forked branches reuse that context rather than starting from scratch.
-- **Thread lifecycle management** is essential to prevent unbounded storage growth — implement time-based expiration, status-based cleanup, fork pruning after result extraction, and parent-child cascade deletion.
-- **Fork selectively** — only use forking when shared setup is expensive and parallel exploration adds value; for independent tasks with no shared context, separate threads from the start are simpler.
-- **Agents v2 eliminates fork serialization overhead** — fork by pointing multiple `responses.create()` calls at the same `previous_response_id`, with no thread creation or Cosmos DB serialization required.
-- **Background mode enables parallel branch execution in v2** — launch both branches with `background=True`, store the response IDs, and poll for completion concurrently.
+- **Efficiency gains** come from avoiding redundant computation—expensive data collection runs once, and all forked branches reuse that context rather than starting from scratch.
+- **Thread lifecycle management** is essential to prevent unbounded storage growth—implement time-based expiration, status-based cleanup, fork pruning after result extraction, and parent-child cascade deletion.
+- **Fork selectively**—only use forking when shared setup is expensive and parallel exploration adds value; for independent tasks with no shared context, separate threads from the start are simpler.
+- **Agents v2 eliminates fork serialization overhead**—fork by pointing multiple `responses.create()` calls at the same `previous_response_id`, with no thread creation or Cosmos DB serialization required.
+- **Background mode enables parallel branch execution in v2**—launch both branches with `background=True`, store the response IDs, and poll for completion concurrently.

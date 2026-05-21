@@ -1,11 +1,11 @@
-You've spent the preceding units learning v1 production patterns and v2 equivalents side by side. This unit brings it together as a structured migration guide. You'll update SDK packages, rewrite client initialization, migrate each API surface, and verify the result — with side-by-side code for every major change.
+You've spent the preceding units learning v1 production patterns and v2 equivalents side by side. This unit brings it together as a structured migration guide. You'll update SDK packages, rewrite client initialization, migrate each API surface, and verify the result—with side-by-side code for every major change.
 
 > [!NOTE]
 > A [migration tool](https://aka.ms/agent/migrate/tool) is available to help automate this migration. It migrates code constructs such as agent definitions, thread creation, message creation, and run creation. It doesn't migrate state data (past runs, threads, or messages). Use the tool for initial code conversion, then apply the production patterns in this guide for the loop and tool handling changes. Examples in this unit use Python. For C#, JavaScript, and Java equivalents, see the [full migration guide](https://learn.microsoft.com/azure/foundry/agents/how-to/migrate).
 
 ## Understand the migration scope and timeline
 
-Agents v1 (the `azure-ai-agents` SDK with `AgentsClient`) retires **March 31, 2027**. Plan your migration with enough lead time to test production workloads — the migration tool automates most code changes, but production verification takes time.
+Agents v1 (the `azure-ai-agents` SDK with `AgentsClient`) retires **March 31, 2027**. Plan your migration with enough lead time to test production workloads—the migration tool automates most code changes, but production verification takes time.
 
 High-level migration steps:
 
@@ -119,7 +119,7 @@ agents_client.messages.create(
 **After (Agents v2):**
 ```python
 conversation = openai.conversations.create()
-# Initial input is passed directly in responses.create() — see below
+# Initial input is passed directly in responses.create()—see below
 # Or add items to the conversation explicitly:
 openai.conversations.items.create(
     conversation_id=conversation.id,
@@ -135,7 +135,7 @@ openai.conversations.items.create(
 
 ### Run creation and polling → Response creation
 
-The v1 polling loop — the most complex code in any v1 agent — is replaced by a single synchronous call.
+The v1 polling loop—the most complex code in any v1 agent—is replaced by a single synchronous call.
 
 **Before (Agents v1):**
 ```python
@@ -169,7 +169,7 @@ response = openai.responses.create(
     },
 )
 
-# No polling loop — response is synchronous
+# No polling loop—response is synchronous
 for item in response.output:
     if item.type == "message":
         for part in item.content:
@@ -177,13 +177,13 @@ for item in response.output:
                 result = part.text
 ```
 
-The `AgentRunStatus` taxonomy (`queued`, `in_progress`, `completed`, `requires_action`, `failed`, `expired`, `cancelled`, `cancelling`) does not exist in v2. The response either succeeds or raises an exception — handle failures with standard Python `try/except`.
+The `AgentRunStatus` taxonomy (`queued`, `in_progress`, `completed`, `requires_action`, `failed`, `expired`, `cancelled`, `cancelling`) doesn't exist in v2. The response either succeeds or raises an exception—handle failures with standard Python `try/except`.
 
 ## Migrate tool handling
 
 ### `requires_action` loop → output item iteration
 
-The v1 tool submission pattern — polling for `requires_action`, calling `submit_tool_outputs_and_poll()` — is replaced by iterating output items.
+The v1 tool submission pattern—polling for `requires_action`, calling `submit_tool_outputs_and_poll()`—is replaced by iterating output items.
 
 **Before (Agents v1):**
 ```python
@@ -249,43 +249,43 @@ Several tools changed availability between v1 and v2. Review this table before m
 | Grounding with Bing Search | GA | GA |
 | MCP | Preview | **GA** |
 | OpenAPI | GA | GA |
-| **Azure Functions** | **GA** | **Removed** — use Function tool via MCP |
+| **Azure Functions** | **GA** | **Removed**—use Function tool via MCP |
 | **Web Search** | Not available | **GA** |
 | **Image Generation** | Not available | **Preview** |
 | **Agent to Agent (A2A)** | Not available | **Preview** |
-| Connected Agents | Preview | Removed — use Workflow and A2A tool |
+| Connected Agents | Preview | Removed—use Workflow and A2A tool |
 | Browser Automation | Preview | Preview |
 | Computer Use | Preview | Preview |
 
 > [!IMPORTANT]
-> If your v1 agents use **Azure Functions tool**, you must migrate to the **Function tool** (via MCP or OpenAPI) before upgrading to v2. There is no direct equivalent — plan this change as part of your migration scope.
+> If your v1 agents use **Azure Functions tool**, you must migrate to the **Function tool** (via MCP or OpenAPI) before upgrading to v2. There is no direct equivalent—plan this change as part of your migration scope.
 
 ## Verify the migration
 
 After updating your code, run through this verification checklist before promoting to production:
 
-1. **Package imports compile** — no `azure.ai.agents` imports remain in migrated files
-2. **Agent creation succeeds** — `create_version()` returns an object with `name` and `version` fields
-3. **Conversation creation succeeds** — `openai.conversations.create()` returns a conversation with an `id` starting with `conv_`
-4. **Single-turn response works** — `responses.create()` returns output items with at least one message item
-5. **Tool calls execute** — if your agent uses function tools, confirm tool call items appear in `response.output` and results are submitted correctly
-6. **Multi-turn context retained** — send two responses to the same conversation and confirm the agent references the first response in the second
-7. **Error handling works** — force an error (invalid input or model overload) and confirm your `try/except` catches it correctly
+1. **Package imports compile**—no `azure.ai.agents` imports remain in migrated files
+2. **Agent creation succeeds**—`create_version()` returns an object with `name` and `version` fields
+3. **Conversation creation succeeds**—`openai.conversations.create()` returns a conversation with an `id` starting with `conv_`
+4. **Single-turn response works**—`responses.create()` returns output items with at least one message item
+5. **Tool calls execute**—if your agent uses function tools, confirm tool call items appear in `response.output` and results are submitted correctly
+6. **Multi-turn context retained**—send two responses to the same conversation and confirm the agent references the first response in the second
+7. **Error handling works**—force an error (invalid input or model overload) and confirm your `try/except` catches it correctly
 
 ### Common migration mistakes
 
 | Mistake | Symptom | Fix |
 |---|---|---|
 | Using project client for responses | `AttributeError` on `project.responses` | Use `openai.responses.create()` |
-| Writing a `requires_action` polling loop | Loop never triggers | Remove the loop — v2 has no `requires_action` |
+| Writing a `requires_action` polling loop | Loop never triggers | Remove the loop—v2 has no `requires_action` |
 | Passing GUID `agent_id` where name is expected | `404 Not Found` | Pass `agent.name` string, not `agent.id` |
 | Not iterating `response.output` for tool calls | Tools appear to do nothing | Check for `tool_call` items in `response.output` |
 | Expecting `run.last_error` on failure | `AttributeError` | Catch exceptions with `try/except` |
 
 ## Summary
 
-- **SDK and client changes** are the first migration step — replace `azure-ai-agents` with `azure-ai-projects>=2.0.0`, and replace single `AgentsClient` with `AIProjectClient` (admin) + `project.get_openai_client()` (runtime).
-- **Agent creation** moves from GUID-based `create_agent()` to named, versioned `create_version()` — agents become durable Foundry assets, not per-request objects.
-- **The polling loop is eliminated** — replace `run.status` polling and `AgentRunStatus` checks with a single synchronous `responses.create()` call; handle failures with standard exception handling.
+- **SDK and client changes** are the first migration step—replace `azure-ai-agents` with `azure-ai-projects>=2.0.0`, and replace single `AgentsClient` with `AIProjectClient` (admin) + `project.get_openai_client()` (runtime).
+- **Agent creation** moves from GUID-based `create_agent()` to named, versioned `create_version()`—agents become durable Foundry assets, not per-request objects.
+- **The polling loop is eliminated**—replace `run.status` polling and `AgentRunStatus` checks with a single synchronous `responses.create()` call; handle failures with standard exception handling.
 - **Tool handling** moves from `requires_action` + `submit_tool_outputs_and_poll()` to iterating `response.output` for `function_call` items and passing `function_call_output` results as input to the next response.
-- **Tool availability changes require architectural decisions** — Azure Functions tool is removed in v2 (migrate to Function tool via MCP), while Web Search, Image Generation, and A2A are new additions exclusive to v2.
+- **Tool availability changes require architectural decisions**—Azure Functions tool is removed in v2 (migrate to Function tool via MCP), while Web Search, Image Generation, and A2A are new additions exclusive to v2.
