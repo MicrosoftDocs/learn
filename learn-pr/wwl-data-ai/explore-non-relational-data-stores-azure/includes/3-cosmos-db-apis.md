@@ -1,10 +1,25 @@
-Azure Cosmos DB is Microsoft's fully managed and serverless distributed database for applications of any size or scale, with support for both relational and non-relational workloads. Developers can build and migrate applications fast using their preferred open source database engines, including MongoDB and Apache Cassandra. When you provision a new Cosmos DB instance, you select the database engine that you want to use. The choice of engine depends on many factors including the type of data to be stored, the need to support existing applications, and the skills of the developers who work with the data store.
+In the previous unit, you explored what Azure Cosmos DB is and how it organizes data. One of its most practical characteristics is that it doesn't lock you into a single query language or data model. Instead, Cosmos DB exposes multiple wire-protocol-compatible APIs so developers use familiar tools, libraries, and syntax to work with their data — even when migrating an existing application.
 
-## Azure Cosmos DB for NoSQL
+## Why Cosmos DB supports multiple APIs
 
-Azure Cosmos DB for NoSQL is Microsoft’s native non-relational service for working with the document data model. It manages data in JSON document format, and despite being a NoSQL data storage solution, uses SQL syntax to work with the data.
+When you create a Cosmos DB account, you choose which API to use. That choice determines how your application interacts with the database: what data format it sends, what query language it uses, and which client libraries it works with. Internally, Cosmos DB stores data in its own format; the API acts as an abstraction layer on top.
 
-A SQL query for an Azure Cosmos DB database containing customer data might look similar to this:
+The main benefit is portability. If your team already has an application built on MongoDB or Apache Cassandra, you can point it at Cosmos DB with minimal code changes — and gain global distribution, managed throughput, and the inherent SLA benefits in the process.
+
+The five supported APIs are: **NoSQL**, **MongoDB**, **Table**, **Apache Cassandra**, and **Apache Gremlin**. Each is designed for a different type of data or use case.
+
+![Diagram showing Azure Cosmos DB at the center with five APIs branching outward: NoSQL, MongoDB, Table, Apache Cassandra, and Apache Gremlin.](../media/cosmos-db-apis.png)
+
+## Cosmos DB for NoSQL
+
+**Azure Cosmos DB for NoSQL** is the native Cosmos DB API. It stores data as JSON documents and lets you query with a SQL-like syntax.
+
+> [!NOTE]
+> This API was previously called the SQL API. It was renamed to the NoSQL API in 2023. If you see older documentation that refers to the "SQL API," it's the same service.
+
+The NoSQL API is recommended for new applications. It also supports **vector search**, which lets you store AI embeddings alongside your operational data. That capability is the foundation for retrieval-augmented generation (RAG) scenarios — for example, a chatbot that searches your product documents to ground its responses before replying.
+
+A query looks like this:
 
 ```sql
 SELECT *
@@ -12,7 +27,7 @@ FROM customers c
 WHERE c.id = "joe@litware.com"
 ```
 
-The result of this query consists of one or more JSON documents, as shown here:
+The result is a JSON document:
 
 ```json
 {
@@ -25,17 +40,20 @@ The result of this query consists of one or more JSON documents, as shown here:
 }
 ```
 
-## Azure Cosmos DB for MongoDB
+> [!TIP]
+> Cosmos DB for NoSQL supports Fabric mirroring, which replicates your operational data into Microsoft Fabric automatically — no pipeline required. This makes it easy to run analytics on live data without affecting your transactional workload.
 
-MongoDB is a popular open source database in which data is stored in Binary JSON (BSON) format. Azure Cosmos DB for MongoDB enables developers to use MongoDB client libraries and code to work with data in Azure Cosmos DB.
+## Cosmos DB for MongoDB
 
-MongoDB Query Language (MQL) uses a compact, object-oriented syntax in which developers use *objects* to call *methods*. For example, the following query uses the **find** method to query the **products** collection in the **db** object:
+**Azure Cosmos DB for MongoDB** is wire-protocol compatible with MongoDB, so your existing MongoDB applications and client libraries connect to Cosmos DB without significant code changes.
+
+Data is stored in BSON (Binary JSON) format, and queries use the MongoDB Query Language (MQL) — a compact, object-oriented syntax where you call methods on collection objects. To find a product by ID:
 
 ```javascript
 db.products.find({id: 123})
 ```
 
-The results of this query consist of JSON documents, similar to this:
+The result:
 
 ```json
 {
@@ -45,56 +63,66 @@ The results of this query consist of JSON documents, similar to this:
 }
 ```
 
-## Azure Cosmos DB for Table
+This API is a natural choice when your team already has MongoDB expertise or when you're migrating an existing MongoDB workload to a managed cloud service.
 
-Azure Cosmos DB for Table is used to work with data in key-value tables, similar to Azure Table Storage. It offers greater scalability and performance than Azure Table Storage.
-For example, you might define a table named Customers like this:
+## Cosmos DB for Table
 
-| PartitionKey | RowKey | Name | Email |
-| --- | --- | --- | --- |
-| 1 | 123 | Joe Jones | joe@litware.com |
-| 1 | 124 | Samir Nadoy | samir@northwind.com |
+**Azure Cosmos DB for Table** stores data as key-value pairs in tables, using the same programming model as Azure Table Storage. If you already have an Azure Table Storage application, it can connect to Cosmos DB for Table with minimal code changes.
 
-You can then use the Table API through one of the language-specific SDKs to make calls to your service endpoint to retrieve data from the table. For example, the following request returns the row containing the record for *Samir Nadoy* in the previous table:
+What you gain compared to Azure Table Storage includes greater scalability, global distribution, automatic secondary indexes, and instant autoscale. A table might look like this:
+
+| PartitionKey | RowKey | Name        | Email               |
+| ------------ | ------ | ----------- | ------------------- |
+| 1            | 123    | Joe Jones   | joe@litware.com     |
+| 1            | 124    | Samir Nadoy | samir@northwind.com |
+
+Each row is identified by a **PartitionKey** and **RowKey** combination. You retrieve a specific row through a REST-style endpoint:
 
 ```text
 https://endpoint/Customers(PartitionKey='1',RowKey='124')
 ```
 
-## Azure Cosmos DB for Apache Cassandra 
+> [!TIP]
+> Azure Table Storage is still available and supported, but Cosmos DB for Table is the recommended choice for new workloads that need key-value storage at scale.
 
-Azure Cosmos DB for Apache Cassandra is compatible with Apache Cassandra, which is a popular open source database that uses a column-family storage structure. Column families are tables, similar to those in a relational database, with the exception that it's not mandatory for every row to have the same columns.
+## Cosmos DB for Apache Cassandra
 
-For example, you might create an **Employees** table like this:
+**Azure Cosmos DB for Apache Cassandra** is compatible with Apache Cassandra, an open-source database that uses a column-family storage model. In column-family tables, rows don't have to contain the same columns — unlike a relational table where the schema is fixed for all rows.
 
-| ID | Name | Manager |
-| --- | --- | --- |
-| 1 | Sue Smith | |
-| 2 | Ben Chan | Sue Smith |
+For example, an **Employees** table might look like this:
 
-Cassandra supports a syntax based on SQL, so a client application could retrieve the record for *Ben Chan* like this:
+| ID  | Name      | Manager   |
+| --- | --------- | --------- |
+| 1   | Sue Smith |           |
+| 2   | Ben Chan  | Sue Smith |
+
+Cassandra uses CQL (Cassandra Query Language), which has a syntax similar to SQL. To retrieve a specific record:
 
 ```sql
 SELECT * FROM Employees WHERE ID = 2
 ```
 
-## Azure Cosmos DB for Apache Gremlin
+This API is a good fit for teams migrating an Apache Cassandra workload to a fully managed cloud database.
 
-Azure Cosmos DB for Apache Gremlin is used with data in a graph structure; in which entities are defined as vertices that form nodes in connected graph. Nodes are connected by edges that represent relationships, like this:
+## Cosmos DB for Apache Gremlin
 
- ![A graph showing employees and departments and the connections between them](../media/graph.png)
+**Azure Cosmos DB for Apache Gremlin** is designed for **graph data** — a model where entities are represented as **vertices** (nodes) and relationships as **edges**. Graph databases are useful when the connections between your data are as important as the data itself: think social networks, recommendation engines, fraud detection, and organizational hierarchies.
 
- The example in the image shows two kinds of vertex (employee and department) and edges that connect them (employee "Ben" reports to employee "Sue", and both employees work in the "Hardware" department).
+:::image type="content" source="../media/graph.png" alt-text="Graph diagram showing employee vertices connected by edges representing reporting relationships and department membership.":::
 
- Gremlin syntax includes functions to operate on vertices and edges, enabling you to insert, update, delete, and query data in the graph.  For example, you could use the following code to add a new employee named *Alice* that reports to the employee with ID **1** (*Sue*)
+In the example above, employee and department vertices are connected by edges that represent reporting relationships and department membership.
+
+Gremlin is the query language used to traverse and manipulate graph data. To add an employee vertex and connect it to an existing one:
 
 ```apache
 g.addV('employee').property('id', '3').property('firstName', 'Alice')
 g.V('3').addE('reports to').to(g.V('1'))
 ```
 
-The following query returns all of the *employee* vertices, in order of ID.
+To retrieve all employee vertices in order of ID:
 
 ```apache
- g.V().hasLabel('employee').order().by('id')
- ```
+g.V().hasLabel('employee').order().by('id')
+```
+
+With five APIs to choose from, you can match Cosmos DB's interface to your data model, your team's existing skills, and your application code. In the next unit, you'll get hands-on experience with Cosmos DB directly.
