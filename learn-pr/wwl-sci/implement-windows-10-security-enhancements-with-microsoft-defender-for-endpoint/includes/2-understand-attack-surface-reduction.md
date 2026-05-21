@@ -40,7 +40,7 @@ Hardware-based isolation
 :::column-end:::
 :::column:::
 
-Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Use container isolation for Microsoft Edge to help guard against malicious websites.
+Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Uses Virtualization-Based Security (VBS) to isolate sensitive system components such as credentials.
 
 :::column-end:::
 :::row-end:::
