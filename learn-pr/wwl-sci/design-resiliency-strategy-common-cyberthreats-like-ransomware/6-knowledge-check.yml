@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: Design a resiliency strategy for common cyberthreats."
-  ms.date: 09/26/2024
+  ms.date: 05/21/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -30,45 +30,45 @@ durationInMinutes: 5
 content: |
 quiz:
     questions:
-      - content: "What is the primary method for mitigating against ransomware attacks?"
+      - content: "Microsoft's ransomware protection guidance prioritizes Phase 1 (backup and recovery) before Phase 2 (limiting damage scope). What is the reason for this sequencing?"
         choices:
-        - content: "Frequently patching systems and applications"
+        - content: "Backup solutions are less expensive to implement than privileged access controls."
           isCorrect: false
-          explanation: "While keeping systems and applications patched can help prevent certain types of attacks, it isn't the primary method for mitigating ransomware attacks."
-        - content: "Monitoring network traffic for indicators of compromise"
+          explanation: "Cost is not the reason for the sequencing. Phase 1 is prioritized because it addresses the most immediate monetary incentive ransomware attackers rely on."
+        - content: "Restoring from backup eliminates the need to implement privileged access protection."
           isCorrect: false
-          explanation: "While monitoring network traffic can help identify possible attacks, it isn't the primary method for mitigating ransomware attacks."
-        - content: "Backing up data regularly and testing restore procedures"
+          explanation: "The three phases are complementary, not substitutes for each other. Completing Phase 1 does not remove the need for Phases 2 and 3."
+        - content: "Phase 1 removes the attackers' primary leverage by ensuring your organization can recover without paying a ransom."
           isCorrect: true
-          explanation: "Regular backups are essential for restoring any lost or encrypted data after a ransomware attack. Testing restore procedures ensure that the backups can actually perform the desired restore."
-        - content: "Enforcing complex password policies for all users"
+          explanation: "Phase 1 is designed to minimize the monetary incentive from attackers. If your organization can restore from immutable backups, the threat of encryption becomes far less effective as leverage for ransom payment."
+        - content: "Phase 1 is the only phase that applies to organizations without cloud infrastructure."
           isCorrect: false
-          explanation: "While enforcing complex password policies is important for security, it isn't the primary method for mitigating ransomware attacks."
-      - content: "What is a critical component of business resiliency planning?"
+          explanation: "All three phases apply regardless of whether infrastructure is on-premises or in the cloud. Phase 1 is prioritized for urgency, not infrastructure type."
+      - content: "A ransomware attacker has compromised a standard user account and is attempting to encrypt backup data stored in Azure Backup. Which feature specifically prevents the attacker from deleting or disabling backups using the compromised account's permissions?"
         choices:
-        - content: "Strict adherence to company policies and procedures"
+        - content: "Azure Policy compliance scanning"
           isCorrect: false
-          explanation: "Adhering to policies and procedures is important, but isn't a critical component of business resiliency planning."
-        - content: "Performing regular risk assessments"
+          explanation: "Azure Policy monitors and reports compliance but does not prevent real-time backup deletion or modification by a compromised account."
+        - content: "Multi-user authorization using Resource Guard"
           isCorrect: true
-          explanation: "Understanding potential risks is key to developing effective resiliency plans. Regular risk assessments help identify these risks and allow for appropriate mitigation strategies to be developed."
-        - content: "Establishing clear lines of communication and decision-making authority "
+          explanation: "Multi-user authorization requires approval from multiple administrators before critical operations such as disabling soft delete or modifying backup policies can be performed. A single compromised account cannot complete these operations alone."
+        - content: "Azure role-based access control (RBAC) at the subscription level"
           isCorrect: false
-          explanation: "While clear lines of communication are important during disruptions, they are not a critical component of business resiliency planning."
-        - content: "Frequently performing simulated disaster scenarios"
+          explanation: "RBAC controls who can perform operations but does not add a multi-person approval gate. A single account with sufficient RBAC permissions could still disable backups without MUA."
+        - content: "Geo-redundant backup storage"
           isCorrect: false
-          explanation: "Simulating disaster scenarios is important, but isn't a critical component of business resiliency planning."
-      - content: "How can update management automation help mitigate against security threats?"
+          explanation: "Geo-redundant storage protects against regional failures and data loss, but it does not prevent an authenticated user or attacker from deleting or disabling backup configurations."
+      - content: "An organization uses a mix of Azure VMs, on-premises Windows servers connected via Azure Arc, and VMware machines. Which Azure Update Manager capability enables consistent patch management across all of these resources from a single management plane?"
         choices:
-        - content: "Automating app development to be more secure by design"
+        - content: "Azure Policy guest configuration extension"
           isCorrect: false
-          explanation: "While automating app development can improve security posture, it has little to do with update management automation and mitigating security threats."
-        - content: "Ensuring all updates are automatically installed as soon as they become available"
+          explanation: "Guest configuration is used for auditing and enforcing OS settings compliance, not for deploying security patches across hybrid and multicloud machines."
+        - content: "Windows Server Update Services (WSUS) synchronization"
           isCorrect: false
-          explanation: "Automatically installing all updates may cause issues if compatibility or other problems arise, so it's not the best approach."
-        - content: "Facilitating quicker deployment of critical security patches across infrastructure"
+          explanation: "WSUS is a traditional on-premises update server. While Azure Update Manager can refer to a WSUS repository, WSUS itself does not extend management to Azure VMs, Arc-enabled servers, and VMware machines from a single pane."
+        - content: "Azure Arc integration with Azure Update Manager"
           isCorrect: true
-          explanation: "Update management automation helps quickly deploy critical security patches, reducing the time attackers have to exploit vulnerabilities."
-        - content: "Providing detailed log analysis for security events across systems"
+          explanation: "Azure Arc onboards non-Azure machines — including on-premises servers and VMware VMs — into Azure management. Azure Update Manager then provides unified assessment, scheduling, and deployment of security updates across all Arc-enabled and native Azure resources from a single dashboard."
+        - content: "Microsoft Defender for Cloud regulatory compliance dashboard"
           isCorrect: false
-          explanation: "While log analysis is important for detecting and investigating security incidents, it does not relate to update management automation and mitigation techniques."
+          explanation: "Defender for Cloud surfaces update compliance recommendations but is not the deployment mechanism for patches. Azure Update Manager handles the actual patching across hybrid and multicloud machines."
