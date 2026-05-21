@@ -49,7 +49,7 @@ units:
 - learn.azure.storagemigration.select-target-azure-storage-service
 - learn.azure.storagemigration.evaluate-migration-strategy-options
 - learn.azure.storagemigration.plan-network-bandwidth-requirements
-- learn.azure.storagemigration.explore-offline-isv-migration-tools
+- learn.azure.storagemigration.explore-offline-independent-software-vendor-migration-tools
 - learn.azure.storagemigration.explore-online-migration-tools
 - learn.azure.storagemigration.understand-azure-storage-mover-architecture
 - learn.azure.storagemigration.deploy-run-azure-storage-mover

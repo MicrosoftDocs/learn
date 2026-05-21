@@ -12,7 +12,7 @@ Learn more: [Compare Azure storage services](/azure/storage/common/storage-intro
 
 The following flowchart outlines when to pick which offering based on these requirements:
 
-:::image type="content" source="../media/file-service-images-with-isv.png" alt-text="Flowchart showing how to select an Azure storage service based on access protocol requirements.":::
+:::image type="content" source="../media/file-service-images-with-independent-software-vendor.png" alt-text="Flowchart showing how to select an Azure storage service based on access protocol requirements.":::
 
 ## Azure Blob and ADLS Gen2
 
@@ -34,7 +34,7 @@ If your access pattern requires SMB or NFS version 4 or 4.1, consider Azure File
 Learn more: [Azure Files overview](/azure/storage/files/storage-files-introduction)
 
 > [!IMPORTANT]
-> While the Azure Files Pay-Go model may seem cheaper at first glance, it can lead to higher costs. The cost depends on your access patterns, so evaluate it carefully. Learn more: [Azure Files billing models](/azure/storage/files/understanding-billing).
+> While the Azure Files pay-as-you-go model may seem cheaper at first glance, it can lead to higher costs. The cost depends on your access patterns, so evaluate it carefully. Learn more: [Azure Files billing models](/azure/storage/files/understanding-billing).
 
 ## Azure NetApp Files
 
