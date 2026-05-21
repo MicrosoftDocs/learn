@@ -3,18 +3,19 @@ uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defende
 metadata:
   title: Implement Windows security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows security enhancements with Microsoft Defender for Endpoint"
-  ms.date: 2/26/2025
+  ms.date: 05/21/2026
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
-  ms.service: azure
+  ms.service: defender-endpoint
+  ai-usage: ai-assisted
 title: Implement Windows security enhancements with Microsoft Defender for Endpoint
 summary: Microsoft Defender for Endpoint gives you various tools to eliminate risks by reducing the surface area for attacks without blocking user productivity. Learn about Attack Surface Reduction (ASR) with Microsoft Defender for Endpoint.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Explain Attack Surface Reduction in Windows
-  - Enable Attack Surface Reduction rules on Windows 10 devices
-  - Configure Attack Surface Reduction rules on Windows 10 devices
+  - Enable Attack Surface Reduction rules on Windows devices
+  - Configure Attack Surface Reduction rules on Windows devices
 prerequisites: |
   Intermediate understanding of Windows 10 and 11.
 iconUrl: /training/achievements/implement-windows-10-enhancements-microsoft-defender-endpoint.svg
@@ -38,4 +39,4 @@ units:
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.knowledge-check
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.summary-resources
 badge:
-  uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.badge
+  uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.badge
