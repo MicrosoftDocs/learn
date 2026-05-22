@@ -4,9 +4,9 @@ Once you've decided multi-agent earns its complexity for a given workload, the n
 
 When you scale from three agents to 12 specialized agents, flat patterns exhibit three failure modes:
 
-1. **Coordination overhead grows quadratically**—with N agents, you potentially manage N(N-1)/2 relationships. A group chat with 10 participants becomes chaotic when agents speak out of turn or contradict each other.
-2. **Failures cascade unpredictably**—if a compliance agent fails in a flat concurrent pattern, do you abort the entire workflow or proceed with incomplete analysis?
-3. **No clear ownership for sub-domains**—when the equities analysis agent and the derivatives analysis agent produce conflicting risk assessments, who arbitrates that conflict?
+- **Coordination overhead grows quadratically**—with N agents, you potentially manage N(N-1)/2 relationships. A group chat with 10 participants becomes chaotic when agents speak out of turn or contradict each other.
+- **Failures cascade unpredictably**—if a compliance agent fails in a flat concurrent pattern, do you abort the entire workflow or proceed with incomplete analysis?
+- **No clear ownership for sub-domains**—when the equities analysis agent and the derivatives analysis agent produce conflicting risk assessments, who arbitrates that conflict?
 
 The architectural shift you need is from flat peer relationships to hierarchical control structures. Unlike microservices that coordinate through message buses, multi-agent systems need explicit orchestration because agent outputs are often nondeterministic and require validation before downstream consumption.
 
