@@ -232,10 +232,10 @@ Avoid the following when creating prompts as best practices:
 
 ## References
 
-- [Prompt engineering concepts](/concepts/prompt-engineering)
+- [Prompt engineering concepts](/azure/foundry/openai/concepts/prompt-engineering)
 
-- [Generative AI prompt engineering labs](/training/collections/generative-ai-prompt-engineering-labs/)
+- [Generative AI prompt engineering labs](https://microsoft.github.io/GPS-Prompt-Engineering-Labs/prompt-engineering)
 
-- [Copilot Studio prompt tool](/microsoft-copilot-studio/prompt-tool)
+- [Copilot Studio prompt tool](/microsoft-copilot-studio/prompt-assistant)
 
-- [Effective prompts for generative AI](/training/modules/effective-prompts-generative-ai)
+- [Effective prompts for generative AI](/training/modules/create-prompts-for-generative-ai-training-tools)
