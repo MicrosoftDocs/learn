@@ -1,4 +1,4 @@
-﻿
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=2215749f-e6e0-41e7-9ed7-6edf3fb4e71c]
@@ -57,4 +57,3 @@ When the operation has completed successfully, the response contains a JSON payl
 
 > [!NOTE]
 > For more information about the Content Understanding API, see the **[reference documentation](/rest/api/contentunderstanding/operation-groups)**.
-
