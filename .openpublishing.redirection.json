@@ -46,6 +46,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/paths/windows-server-2025-accreditation-2025/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/windows-server-2025-accreditation-2026/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/device-partner-university/learning-zone/8-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training",
       "redirect_document_id": false
