@@ -2,7 +2,7 @@ Azure Blob Storage is a service that enables you to store massive amounts of uns
 
 ![Screenshot of an Azure blob storage container with two blobs.](../media/azure-blob-storage.png)
 
-In an Azure storage account, you store blobs in *containers*. A container provides a convenient way of grouping related blobs together. You control who can read and write blobs inside a container at the container level. Microsoft Entra ID authentication is the recommended sign-in method for Azure Blob Storage, letting you assign precise permissions through Azure role-based access control (RBAC).
+In an Azure storage account, you store blobs in *containers*. A container provides a convenient way of grouping related blobs together. You control who can read and write blobs inside a container at the container level. Microsoft Entra ID (Azure's identity and access management service) authentication is the recommended sign-in method for Azure Blob Storage, letting you assign precise permissions through Azure role-based access control (RBAC)—a system that controls who can perform specific actions on Azure resources.
 
 Within a container, you can organize blobs in a hierarchy of virtual folders, similar to files in a file system on disk. However, by default, these folders are simply a way of using a "/" character in a blob name to organize the blobs into namespaces. The folders are purely virtual, and you can't perform folder-level operations to control access or perform bulk operations.
 

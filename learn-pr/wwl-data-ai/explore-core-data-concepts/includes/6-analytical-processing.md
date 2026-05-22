@@ -10,7 +10,7 @@ The specific details for an analytical processing system can vary between soluti
 
 1. Operational data is extracted, transformed, and loaded (**ETL**) into a data lake for analysis—or extracted and loaded first with transformations applied afterward, a pattern called **ELT** that's common in modern lakehouses.
 
-2. Data is loaded into a schema of tables - typically in a Spark-based *data lakehouse* with tabular abstractions over files in the data lake, or a *data warehouse* with a fully relational SQL engine.
+2. Data is loaded into a schema of tables - typically in a *data lakehouse* with tabular abstractions over files in the data lake, or a *data warehouse* with a fully relational SQL engine.
 
 3. Data in the data warehouse may be aggregated and loaded into an online analytical processing (OLAP) model—today more commonly called a *semantic model* (and historically a *cube*). Aggregated numeric values (*measures*) from fact tables are calculated for intersections of *dimensions* from dimension tables. For example, sales revenue might be totaled by date, customer, and product. Power BI semantic models are the most common example you'll meet.
 
@@ -32,7 +32,9 @@ Different types of user might perform data analytical work at different stages o
 
 ## Modern analytics platforms
 
-Two "all-in-one" analytics platforms dominate on Azure. **Microsoft Fabric** brings together OneLake (a single shared data lake), Fabric Lakehouse, Fabric Warehouse, Fabric Data Factory, and Power BI in a unified SaaS workspace. **Azure Databricks** is a cloud analytics platform built for large-scale data engineering and data science, using **Delta Lake—Parquet plus a transaction log that enables versioning and ACID transactions—as its standard storage format. **Microsoft Purview** provides unified data security, governance, and compliance, helping you discover, classify, protect, and manage data across all your data sources.
+Azure provides several managed services that cover the full analytics pipeline — from ingesting raw data through to interactive reports. Two "all-in-one" platforms bring most of these capabilities together in a single workspace. **Microsoft Fabric** and **Azure Databricks** are those two platforms; a third service, **Microsoft Purview**, focuses on data governance across all your sources. You don't need to be familiar with any of these services yet — the following descriptions give you a high-level sense of what each one does.
+
+**Microsoft Fabric** is a unified software as a service (SaaS) analytics platform that brings storage, data engineering, data warehousing, and reporting capabilities together in a single workspace. **Azure Databricks** is a cloud analytics platform built for large-scale data engineering and data science, using **Delta Lake**—Parquet plus a transaction log that enables versioning and ACID transactions—as its standard storage format. **Microsoft Purview** provides unified data security, governance, and compliance, helping you discover, classify, protect, and manage data across all your data sources.
 
 > [!div class="mx-imgBorder"]
 > ![Diagram showing modern analytics platforms Microsoft Fabric, Azure Databricks and Microsoft Purview.](../media/fabric-databricks-purview.png)

@@ -38,7 +38,7 @@ AI assistance helps data analysts work faster—summarizing reports, suggesting 
 
 ## AI Engineer
 
-An AI engineer builds and integrates AI-powered features into applications and data workflows. They work with large language models (LLMs), machine learning pipelines, and data sources to enable intelligent scenarios such as chat-over-your-data, content generation, and automated classification.
+An AI engineer builds and integrates AI-powered features into applications and data workflows. They work with large language models (LLMs)—AI systems trained on vast amounts of text that can understand and generate human language—as well as machine learning pipelines, and data sources to enable intelligent scenarios such as chat-over-your-data, content generation, and automated classification.
 
 AI engineers collaborate closely with data engineers to access and prepare the underlying data, and with data analysts to surface AI-generated insights in reports and applications. **Microsoft Foundry** provides the tools and platform AI engineers use to build, test, and deploy these solutions.
 

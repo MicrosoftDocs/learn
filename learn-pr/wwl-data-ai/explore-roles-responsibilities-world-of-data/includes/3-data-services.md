@@ -3,7 +3,10 @@ Microsoft Azure is a cloud platform that powers the applications and IT infrastr
 Some of the most commonly used cloud services for data are described below.
 
 > [!NOTE]
-> This article covers only some of the most commonly used data services for modern transactional and analytical solutions. Additional services are also available.
+> This article covers only some of the most commonly used data services for modern transactional and analytical solutions. Additional services are also available. As a beginner, you don't need to memorize every service—the goal is to gain awareness of the types of tools available and the roles that use them.
+
+> [!TIP]
+> Throughout this unit you'll encounter the terms **PaaS** (platform-as-a-service) and **SaaS** (software-as-a-service). These are cloud delivery models: **PaaS** means Microsoft manages the underlying infrastructure (servers, patching, backups) so you focus on your data and applications. **SaaS** means the entire product is delivered as a ready-to-use service over the internet—no installation or infrastructure management required.
 
 ## Azure SQL
 
@@ -73,15 +76,7 @@ Microsoft Fabric includes built-in AI assistance that helps data professionals b
 
 ## Microsoft Fabric IQ
 
-![Microsoft Fabric IQ logo.](../media/microsoft-fabric.png) Fabric IQ is a workload in Microsoft Fabric that unifies data across OneLake and contextualizes it according to the language of your business. It exposes that data to analytics, AI agents, and applications with consistent semantic meaning—so every tool and every team shares the same definitions for business concepts like *Customer*, *Order*, or *Product*.
-
-Fabric IQ includes several items that work together:
-
-- **Ontology** defines your enterprise vocabulary—entity types, relationships, properties, and business rules—and maps them to real data in OneLake without copying or moving it.
-- **Data agents** allow users to ask questions about business data in natural language, grounded in the shared ontology.
-- **Operations agents** monitor real-time data streams and trigger automated actions when business rules are met.
-- **Graph** provides a visual, connected representation of business concepts and their relationships, enabling dependency analysis and multi-hop reasoning.
-- **Plan** supports collaborative planning, reporting, and analytics on a unified data foundation.
+![Microsoft Fabric IQ logo.](../media/microsoft-fabric.png) Fabric IQ is a workload in Microsoft Fabric that unifies data across OneLake and gives it consistent business meaning—so every tool and team shares the same definitions for concepts like *Customer*, *Order*, or *Product*. It enables business users and AI agents to ask questions about data in natural language, based on a shared understanding of your enterprise data.
 
 > [!NOTE]
 > Fabric IQ is currently in preview.

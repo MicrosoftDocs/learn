@@ -66,20 +66,3 @@ The index creates a tree-based structure that the database system's query optimi
 For a table containing few rows, using the index is probably not any more efficient than simply reading the entire table and finding the rows requested by the query (in which case the query optimizer will ignore the index). However, when a table has many rows, indexes can dramatically improve the performance of queries.
 
 You can create many indexes on a table. So, if you also wanted to find products based on price, creating another index on the **Price** column in the **Product** table might be useful. However, indexes aren't free. An index consumes storage space, and each time you insert, update, or delete data in a table, the indexes for that table must be maintained. This additional work can slow down insert, update, and delete operations. You must strike a balance between having indexes that speed up your queries versus the cost of performing other operations.
-
-## Specialized table types in Azure SQL
-
-Beyond views, stored procedures, and indexes, Azure SQL Database supports two specialized table types worth knowing at a fundamentals level.
-
-**Ledger tables** are tamper-evident tables that record all changes in a cryptographically verified ledger. They're useful when you need to demonstrate to auditors or regulators that historical data hasn't been modified.
-
-> [!div class="mx-imgBorder"]
-> ![Diagram showing the concept of ledger tables.](../media/ledger-table.png)
-
-**Temporal tables** are system-versioned tables that automatically track the full history of row changes over time. You can query a temporal table to see what the data looked like at any point in the past, which is valuable for auditing, analytics, and recovering from accidental changes.
-
-> [!div class="mx-imgBorder"]
-> ![Diagram showing the concept of temporal tables.](../media/temporal-table.png)
-
-> [!NOTE]
-> The prices shown in this diagram are fictitious and used for illustration purposes only.

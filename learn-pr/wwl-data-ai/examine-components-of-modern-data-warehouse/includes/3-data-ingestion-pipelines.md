@@ -25,7 +25,7 @@ A **shortcut** is a live reference to external storage—ADLS Gen2, Amazon S3, G
 
 ### Eventstream
 
-For real-time streaming ingestion, **Fabric Eventstream** connects to event sources such as Azure Event Hubs, Apache Kafka, Azure IoT Hub, and custom endpoints. It routes, filters, and transforms streaming events before landing them in a Fabric Lakehouse, KQL database, or Real-Time Intelligence destination—enabling near-real-time analytics on continuously arriving data.
+For real-time streaming ingestion, **Fabric Eventstream** connects to event sources such as Azure Event Hubs, Apache Kafka, Azure IoT Hub, and custom endpoints. It routes, filters, and transforms streaming events before landing them in a Fabric Lakehouse, KQL database (a time-series optimized store queried with Kusto Query Language), or Real-Time Intelligence destination—enabling near-real-time analytics on continuously arriving data.
 
 ### Fabric Notebooks
 
