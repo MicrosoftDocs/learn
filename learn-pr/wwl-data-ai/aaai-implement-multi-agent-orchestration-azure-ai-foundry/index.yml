@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry
+metadata:
+  title: Implement Advanced Multi-Agent Orchestration Patterns in Azure AI Foundry
+  description: "Implement advanced multi-agent orchestration patterns in Azure AI Foundry. Design hub-and-spoke coordination with central orchestrator agents, implement parallel agent spawning with synchronization, configure supervisor patterns for hierarchical task delegation, and evaluate orchestration framework trade-offs."
+  ms.date: 05/21/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: azure-ai-foundry
+  ai-usage: ai-generated
+title: Implement advanced multi-agent orchestration patterns in Azure AI Foundry
+summary: "Implement advanced multi-agent orchestration patterns in Azure AI Foundry. Design hub-and-spoke architectures, implement parallel agent spawning with synchronization and partial failure recovery, configure hierarchical supervisor patterns, and evaluate trade-offs across Semantic Kernel, LangGraph, AutoGen, and CrewAI."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Differentiate agentic AI from multi-agent AI and decide when multi-agent architectures earn their coordination cost
+  - Design hub-and-spoke multi-agent architectures with a central orchestrator agent
+  - Implement parallel agent spawning and synchronization patterns for concurrent execution
+  - Configure supervisor and coordinator patterns for hierarchical multi-level task delegation
+  - Evaluate orchestration framework trade-offs to select the right approach for a given scenario
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building multi-agent solutions with Azure AI Foundry Agent Service and Microsoft Agent Framework
+  - Familiarity with concurrent, sequential, group chat, and handoff orchestration patterns
+  - Proficiency in Python
+  - 4+ years of AI/ML development experience
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- foundry-agent-service
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.introduction
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.differentiate-agentic-multi-agent-architectures
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.understand-advanced-orchestration-architectures
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.implement-hub-spoke-orchestration
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.design-parallel-agent-spawning-synchronization
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.compare-orchestration-frameworks
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.knowledge-check
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.summary
+badge:
+  uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.badge

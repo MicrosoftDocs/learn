@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.implement-hub-spoke-orchestration
+title: Implement hub-and-spoke orchestration
+metadata:
+  title: Implement Hub-and-Spoke Orchestration
+  description: "Learn how to implement hub-and-spoke multi-agent orchestration in Azure AI Foundry, including registering spoke agents as hub tools, handling partial failures, and enabling concurrent spoke invocations."
+  ms.date: 05/21/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-implement-hub-spoke-orchestration.md)]

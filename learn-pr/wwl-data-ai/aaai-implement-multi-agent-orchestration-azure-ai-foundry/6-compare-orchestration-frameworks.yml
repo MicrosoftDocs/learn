@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.compare-orchestration-frameworks
+title: Compare orchestration frameworks
+metadata:
+  title: Compare Orchestration Frameworks
+  description: "Evaluate and compare Semantic Kernel, LangGraph, AutoGen, and CrewAI to select the right multi-agent orchestration framework for a given production scenario."
+  ms.date: 05/21/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-compare-orchestration-frameworks.md)]
