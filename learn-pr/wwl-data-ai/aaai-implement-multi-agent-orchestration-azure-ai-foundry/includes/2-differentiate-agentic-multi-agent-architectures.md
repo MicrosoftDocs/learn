@@ -28,7 +28,7 @@ The new ingredients that multi-agent introduces—and that single-agent agentic 
 | Pattern selection (hub-and-spoke, hierarchical, supervisor) | Unit 3 of this module |
 | Inter-agent message protocols and handoff payloads | Agent collaboration and handoffs |
 | Synchronization of parallel agent execution | Unit 5 of this module |
-| Per-agent identity, OBO chains, agent-to-agent authentication | Secure multi-agent systems with zero trust |
+| Per-agent identity, OBO chains, agent-to-agent authentication | Secure multi-agent systems with Zero Trust |
 | Distributed tracing across agents (correlated spans) | Distributed observability |
 | Coordinated multi-agent release with version compatibility | CI/CD for multi-agent systems |
 | Per-agent cost attribution and chargeback | Multi-agent performance and cost optimization |
