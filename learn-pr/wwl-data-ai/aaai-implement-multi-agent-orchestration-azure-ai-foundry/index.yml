@@ -7,8 +7,8 @@ metadata:
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-foundry
-  ai-usage: ai-generated
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
 title: Implement advanced multi-agent orchestration patterns in Microsoft Foundry
 summary: "Implement advanced multi-agent orchestration patterns in Microsoft Foundry. Design hub-and-spoke architectures, implement parallel agent spawning with synchronization and partial failure recovery, configure hierarchical supervisor patterns, and evaluate trade-offs across Semantic Kernel, LangGraph, AutoGen, and CrewAI."
 abstract: |
@@ -41,7 +41,7 @@ units:
 - learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.differentiate-agentic-multi-agent-architectures
 - learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.examine-advanced-orchestration-architectures
 - learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.implement-hub-spoke-orchestration
-- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.design-parallel-agent-spawning-synchronization
+- learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.design-parallel-agent-spawn-synchronization
 - learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.compare-orchestration-frameworks
 - learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.knowledge-check
 - learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.summary

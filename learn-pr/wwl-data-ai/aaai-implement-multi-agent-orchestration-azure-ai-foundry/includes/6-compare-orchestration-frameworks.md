@@ -34,7 +34,7 @@ result = await agent.run("Analyze current equity market conditions")
 
 Choose Agent Framework when you need strong Azure ecosystem integration combined with explicit, auditable workflow control. If Contoso Capital's orchestration needs to interact with Microsoft 365 (SharePoint, Teams), Azure services (Cosmos DB, Azure Functions), or enterprise authentication (Entra ID), Agent Framework provides native support through the Microsoft plugin ecosystem and managed identity credential flow.
 
-**Semantic Kernel** (`pip install semantic-kernel`) remains a fully supported, stable option for teams with existing SK investments. It integrates with Microsoft Foundry through `AzureAIAgent` in `semantic_kernel.agents`, maintains a rich plugin ecosystem covering Microsoft 365 and Azure services, and uses the familiar `Kernel`-centric programming model. For new projects, Microsoft recommends Agent Framework. For existing Semantic Kernel codebases, continue with SK and migrate on your own timeline using the published [migration guide from Semantic Kernel to Agent Framework](https://learn.microsoft.com/agent-framework/migration-guide/from-semantic-kernel/).
+**Semantic Kernel** (`pip install semantic-kernel`) remains a fully supported, stable option for teams with existing SK investments. It integrates with Microsoft Foundry through `AzureAIAgent` in `semantic_kernel.agents`, maintains a rich plugin ecosystem covering Microsoft 365 and Azure services, and uses the familiar `Kernel`-centric programming model. For new projects, Microsoft recommends Agent Framework. For existing Semantic Kernel codebases, continue with SK and migrate on your own timeline using the published migration guide from Semantic Kernel to Agent Framework.
 
 ## LangGraph
 
