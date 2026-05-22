@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.implement-agent-reflection-planning-cycles
+title: Implement agent reflection and planning cycles
+metadata:
+  title: Implement Agent Reflection and Planning Cycles
+  description: "Implement agent reflection and planning cycles."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-implement-agent-reflection-planning-cycles.md)]
