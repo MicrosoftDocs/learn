@@ -10,7 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-sql-database
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore fundamental relational data concepts
 summary: Relational database systems are a common way to store and manage transactional and analytical data in organizations of any size around the world.
 abstract: |
@@ -35,6 +35,7 @@ roles:
 - student
 products:
 - azure
+- azure-sql-database
 subjects:
 - data-analytics
 units:

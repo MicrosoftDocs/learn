@@ -16,7 +16,7 @@ Some popular dialects of SQL include:
 Users who plan to work specifically with a single database system should learn the intricacies of their preferred SQL dialect and platform.
 
 > [!NOTE]
-> Azure SQL Database includes AI assistance that helps you write and understand SQL queries using natural language.
+> Azure SQL Database includes AI features you can use to write and understand SQL queries using natural language.
 
 > [!NOTE]
 > The SQL code examples in this module are based on the Transact-SQL dialect, unless otherwise indicated. The syntax for other dialects is generally similar, but may vary in some details.

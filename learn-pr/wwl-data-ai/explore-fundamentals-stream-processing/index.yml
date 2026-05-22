@@ -35,6 +35,9 @@ roles:
 - data-engineer
 products:
 - azure
+- fabric
+- azure-databricks
+- azure-event-hubs
 subjects:
 - data-analytics
 units:
