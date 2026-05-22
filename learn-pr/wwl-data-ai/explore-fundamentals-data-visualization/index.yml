@@ -36,6 +36,7 @@ roles:
 products:
 - azure
 - power-bi
+- fabric
 subjects:
 - data-visualization
 units:
