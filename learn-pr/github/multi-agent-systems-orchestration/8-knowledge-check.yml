@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.github.multi-agent-systems-orchestration.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Test your understanding of multi-agent coordination, GitHub-native controls, workflow isolation, and deployment governance.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is the most effective coordination primitive for multi-agent work in GitHub?"
+    choices:
+    - content: "Private agent-to-agent messaging"
+      isCorrect: false
+      explanation: "Incorrect. Private coordination lacks durable visibility and reviewability for repository governance."
+    - content: "Pull requests and surrounding artifacts (checks, reviews, history)"
+      isCorrect: true
+      explanation: "Correct! Pull requests define the boundary of change and expose the evidence needed for review, validation, and auditing."
+    - content: "A shared spreadsheet"
+      isCorrect: false
+      explanation: "Incorrect. Spreadsheets don't provide enforceable repository workflows or integrated validation."
+    - content: "A single long-running workflow without branches"
+      isCorrect: false
+      explanation: "Incorrect. Without isolation boundaries like branches and pull requests, coordination becomes difficult and risky."
+  - content: "Which configuration helps prevent repeated overlapping workflow runs when a PR is updated frequently?"
+    choices:
+    - content: "Larger runners"
+      isCorrect: false
+      explanation: "Incorrect. Larger runners may improve performance, but they don't prevent overlapping executions."
+    - content: "Concurrency with cancel-in-progress"
+      isCorrect: true
+      explanation: "Correct! Concurrency reduces workflow noise and prevents overlapping runs from creating instability."
+    - content: "Removing required checks"
+      isCorrect: false
+      explanation: "Incorrect. Removing checks weakens governance and doesn't address overlapping runs."
+    - content: "Disabling PR triggers"
+      isCorrect: false
+      explanation: "Incorrect. Disabling triggers prevents automation rather than coordinating it safely."
+  - content: "What is the best GitHub-native mechanism to route review for sensitive paths touched by agent pull requests?"
+    choices:
+    - content: "Asking reviewers in chat"
+      isCorrect: false
+      explanation: "Incorrect. Chat requests are informal and not enforceable repository controls."
+    - content: "CODEOWNERS (with required reviews policy)"
+      isCorrect: true
+      explanation: "Correct! CODEOWNERS routes review based on file paths and ensures consistent and enforceable review ownership."
+    - content: "Adding more labels"
+      isCorrect: false
+      explanation: "Incorrect. Labels help organize work but don't enforce review routing."
+    - content: "Squashing commits"
+      isCorrect: false
+      explanation: "Incorrect. Squashing affects commit history but not review ownership."
+  - content: "Which is an example of a coordination failure rather than an individual agent failure?"
+    choices:
+    - content: "A single unit test fails once"
+      isCorrect: false
+      explanation: "Incorrect. A single test failure is typically an isolated execution issue."
+    - content: "Two agent pull requests repeatedly conflict because they change the same files"
+      isCorrect: true
+      explanation: "Correct! Persistent pull request conflicts indicate missing isolation or coordination rules between agents."
+    - content: "A reviewer requests changes"
+      isCorrect: false
+      explanation: "Incorrect. Requested changes are part of the normal review process."
+    - content: "A workflow run finishes successfully"
+      isCorrect: false
+      explanation: "Incorrect. A successful workflow run is not a failure condition."
+  - content: "What is a safe pattern for high-risk actions like production deployments?"
+    choices:
+    - content: "Auto-deploy after tests pass"
+      isCorrect: false
+      explanation: "Incorrect. High-risk actions should include explicit authorization steps beyond automated testing."
+    - content: "Use environments with required reviewers so jobs pause for approval"
+      isCorrect: true
+      explanation: "Correct! Environment approvals separate preparation from authorization, ensuring high-risk actions require explicit review."
+    - content: "Allow direct pushes to main"
+      isCorrect: false
+      explanation: "Incorrect. Direct pushes bypass governance and increase operational risk."
+    - content: "Disable workflow approvals"
+      isCorrect: false
+      explanation: "Incorrect. Disabling approvals removes an important safety control for sensitive operations."

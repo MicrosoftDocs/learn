@@ -2,7 +2,7 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=8a13bd57-9044-4cfa-a069-691e07d099ce]
 
-> [!NOTE]
+> [!TIP]
 > See the **Text and images** tab for more details!
 
 ::: zone-end
@@ -46,4 +46,3 @@ If the model tries to invoke a tool in your MCP server with approval required, y
 MCP integration is a key step toward creating richer, more context-aware AI agents. As the MCP ecosystem grows, you’ll have even more opportunities to bring specialized tools into your workflows and deliver smarter, more dynamic solutions.
 
 ::: zone-end
-

@@ -17,7 +17,7 @@ Cosmos DB uses a four-level resource hierarchy to organize your data:
 - **Container**: The primary unit of storage and scaling. You configure the partition key, throughput, indexing policy, and an optional time-to-live (TTL) at the container level.
 - **Items**: Individual data entities stored inside a container. Depending on which API you use, items may be called documents, rows, nodes, or edges.
 
-The **partition key** is a property you choose to distribute data across logical partitions. Each logical partition can hold up to 20 GB of data. A well-chosen partition key—one with high cardinality and an even distribution of values—is important for keeping throughput balanced as the database grows.
+The **partition key** is a property you choose to distribute data across logical partitions. Each logical partition can hold up to 20 GB of data. A well-chosen partition key—one with many distinct values and an even spread of data across those values—is important for keeping throughput balanced as the database grows.
 
 ![Diagram explaining how Azure Cosmos DB organizes data.](../media/cosmos-db-hierarchy.png)
 

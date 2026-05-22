@@ -31,6 +31,14 @@ roles:
 - student
 products:
 - azure
+- fabric
+- power-bi
+- azure-databricks
+- microsoft-foundry
+- azure-data-factory
+- azure-storage
+- azure-cosmos-db
+- azure-sql-database
 subjects:
 - data-analytics
 units:

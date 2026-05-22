@@ -1,10 +1,10 @@
-﻿
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=5bb0bced-e548-4557-b0db-c05bdbaedacb]
 
 > [!TIP]
-> See the Text and images tab for more details!
+> See the **Text and images** tab for more details!
 
 ::: zone-end
 

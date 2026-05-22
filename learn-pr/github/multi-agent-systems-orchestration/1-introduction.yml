@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.multi-agent-systems-orchestration.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the Multi-Agent Systems and Orchestration.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]
