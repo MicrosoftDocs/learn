@@ -3,7 +3,7 @@ uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "This unit introduces the advanced multi-agent orchestration patterns module and sets the context for moving beyond flat orchestration patterns to hierarchical, hub-and-spoke, and supervisor architectures."
+  description: "Introduction."
   ms.date: 05/21/2026
   author: chrishowd
   ms.author: cahowd

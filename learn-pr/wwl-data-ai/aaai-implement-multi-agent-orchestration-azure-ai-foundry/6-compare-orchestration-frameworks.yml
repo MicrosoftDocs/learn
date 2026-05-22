@@ -3,7 +3,7 @@ uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.compare-orch
 title: Compare orchestration frameworks
 metadata:
   title: Compare Orchestration Frameworks
-  description: "Evaluate and compare Semantic Kernel, LangGraph, AutoGen, and CrewAI to select the right multi-agent orchestration framework for a given production scenario."
+  description: "Compare orchestration frameworks."
   ms.date: 05/21/2026
   author: chrishowd
   ms.author: cahowd

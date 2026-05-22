@@ -3,7 +3,7 @@ uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.differentiat
 title: Differentiate agentic AI from multi-agent AI architectures
 metadata:
   title: Differentiate Agentic AI from Multi-Agent AI Architectures
-  description: "Distinguish agentic AI from multi-agent AI as architectural commitments. Use a subset model and a practical litmus test to decide when multi-agent earns its coordination cost and when a single-agent solution is the better choice."
+  description: "Differentiate agentic AI from multi-agent AI architectures."
   ms.date: 05/21/2026
   author: chrishowd
   ms.author: cahowd

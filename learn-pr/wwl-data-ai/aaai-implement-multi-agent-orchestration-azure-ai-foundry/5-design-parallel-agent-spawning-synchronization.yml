@@ -3,7 +3,7 @@ uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.design-paral
 title: Design parallel agent spawning and synchronization
 metadata:
   title: Design Parallel Agent Spawning and Synchronization
-  description: "Learn how to implement fan-out and fan-in patterns for concurrent agent execution in Microsoft Foundry, including synchronization barriers, timeout propagation, and partial failure policies."
+  description: "Design parallel agent spawning and synchronization."
   ms.date: 05/21/2026
   author: chrishowd
   ms.author: cahowd

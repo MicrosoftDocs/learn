@@ -3,7 +3,7 @@ uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.examine-adva
 title: Examine advanced orchestration architectures
 metadata:
   title: Examine Advanced Orchestration Architectures
-  description: "Learn how hub-and-spoke, hierarchical, and supervisor/coordinator patterns address the limitations of flat orchestration for complex multi-agent enterprise systems."
+  description: "Examine advanced orchestration architectures."
   ms.date: 05/21/2026
   author: chrishowd
   ms.author: cahowd
