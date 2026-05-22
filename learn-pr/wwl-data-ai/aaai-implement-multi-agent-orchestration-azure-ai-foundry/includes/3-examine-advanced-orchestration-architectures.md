@@ -1,6 +1,6 @@
 ## Why flat orchestration patterns don't scale
 
-Once you've decided multi-agent earns its complexity for a given workload, the next question is *how the agents coordinate*. Five foundational orchestration patterns form the baseline: concurrent orchestration (multiple agents run simultaneously), sequential orchestration (strict ordering with result passing), group chat (agents collaborate in shared conversation), handoff (one agent transfers control to another), and Magentic-One (general-purpose orchestrator with specialist sub-agents). These patterns share a common architectural characteristic—all agents operate at one hierarchical level with peer-to-peer relationships.
+Once you've decided multi-agent earns its complexity for a given workload, the next question is *how the agents coordinate*. Five foundational orchestration patterns form the baseline: concurrent orchestration (multiple agents run simultaneously), sequential orchestration (strict ordering with result passing), group chat (agents collaborate in shared conversation), handoff (one agent transfers control to another), and Magentic-One (general-purpose orchestrator with specialist subagents). These patterns share a common architectural characteristic—all agents operate at one hierarchical level with peer-to-peer relationships.
 
 When you scale from three agents to 12 specialized agents, flat patterns exhibit three failure modes:
 
@@ -20,11 +20,11 @@ You implement hub-and-spoke by registering each spoke agent as a callable functi
 
 ## Hierarchical orchestration
 
-Hierarchical orchestration extends hub-and-spoke with multiple orchestration layers. Suborchestrators manage clusters of specialist agents, and a top-level orchestrator coordinates suborchestrators. Contoso Capital uses this pattern for their market analysis workflow—a market analysis suborchestrators manages equities, fixed income, and derivatives specialists, while the top-level orchestrator coordinates market analysis, risk assessment, and compliance suborchestrators.
+Hierarchical orchestration extends hub-and-spoke with multiple orchestration layers. Suborchestrators manage clusters of specialist agents, and a top-level orchestrator coordinates suborchestrators. Contoso Capital uses this pattern for their market analysis workflow—a market analysis suborchestrator manages equities, fixed income, and derivatives specialists, while the top-level orchestrator coordinates market analysis, risk assessment, and compliance suborchestrators.
 
-The key architectural benefit is isolation of complexity. The top-level orchestrator operates at the business logic level—"perform market analysis, then check compliance"—without knowing that market analysis internally involves three specialist agents running in parallel. When you add a fourth specialist (cryptocurrency analysis), only the market analysis suborchestrators changes. The top-level orchestrator's logic remains unchanged.
+The key architectural benefit is isolation of complexity. The top-level orchestrator operates at the business logic level—"perform market analysis, then check compliance"—without knowing that market analysis internally involves three specialist agents running in parallel. When you add a fourth specialist (cryptocurrency analysis), only the market analysis suborchestrator changes. The top-level orchestrator's logic remains unchanged.
 
-This pattern requires careful interface design between layers. Each suborchestrators exposes a narrow contract to its parent—the market analysis suborchestrators returns a structured market report, not raw outputs from three agents. This encapsulation prevents the top-level orchestrator from becoming dependent on implementation details that change as you evolve the system.
+This pattern requires careful interface design between layers. Each suborchestrator exposes a narrow contract to its parent—the market analysis suborchestrator returns a structured market report, not raw outputs from three agents. This encapsulation prevents the top-level orchestrator from becoming dependent on implementation details that change as you evolve the system.
 
 ## Supervisor and coordinator patterns
 
