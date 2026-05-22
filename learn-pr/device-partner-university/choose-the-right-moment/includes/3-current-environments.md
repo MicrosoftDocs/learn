@@ -12,10 +12,14 @@ When evaluating Windows Server environments, it’s helpful to look beyond wheth
 - Integration across environments
 - Operational efficiency and scalability
 
-## Windows Server might still be “working,” but expectations have changed
+## Windows Server 2016 or Windows Server 2019 might still be “working,” but expectations have changed
 
-In many environments, Windows Server workloads continue to run reliably. However, modern expectations often extend beyond uptime alone. Today, organizations frequently expect infrastructure to support centralized visibility, integrated security controls, and scalable, repeatable operations with less manual effort.
+In many environments, workloads running on Windows Server 2016 or Windows Server 2019 continue to run reliably. However, modern expectations often extend beyond uptime alone. Today, organizations frequently expect infrastructure to support centralized visibility, integrated security controls, and scalable, repeatable operations with less manual effort.
 
-When these expectations exist but aren’t met, environments can remain stable while still introducing hidden risk or operational strain—for example, delays in responding to incidents, increased effort to prepare for audits, or uncertainty around recovery processes.
+When these expectations exist but aren’t met, aging environments can remain stable while still introducing hidden risk or operational strain—for example, delays in responding to incidents, increased effort to prepare for audits, or uncertainty around recovery processes.
 
 Understanding what Windows Server represents today helps frame modernization as an evaluation of alignment with current needs—rather than a reaction to change alone.
+
+:::image type="content"
+source="../media/server-modernization.svg"
+alt-text="A diagram of environment modernization from Windows Server 2016 or 2019 to Windows Server 2025 and the benefits." lightbox="../media/server-modernization.svg":::
