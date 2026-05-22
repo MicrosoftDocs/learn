@@ -28,15 +28,6 @@ Windows Server 2025 is suitable for environments that require:
   - Allows upgrades from older Windows Server versions (e.g., Server 2012 R2).
   - Maintains compatibility with both traditional applications and modern services.
 
-## When not to use Windows Server 2025
-
-Alternative solutions may be more appropriate if:
-
-- The environment requires only basic file sharing or simple networking capabilities.
-- The organization operates with minimal IT infrastructure, such as in small business settings.
-- A fully cloud-native solution is preferred.
-- A Linux-based operating system is required.
-
 ## Comparing Windows Server 2025 and Windows Server 2022
 
 Use this chart to determine which version of Windows Server is right for your organization.
