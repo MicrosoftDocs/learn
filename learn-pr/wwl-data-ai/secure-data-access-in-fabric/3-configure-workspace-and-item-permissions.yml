@@ -2,12 +2,12 @@
 uid: learn-wwl.secure-data-access-in-fabric.configure-workspace-and-item-permissions
 title: Configure workspace and item permissions
 metadata:
-  title: Configure workspace and item permissions
-  description: "Learn how to implement workspace roles and configure data item permissions in Microsoft Fabric."
-  ms.date: 05/06/2025
-  author: wwlpublish
+  title: Configure Workspace and Item Permissions
+  description: "Implement workspace roles and configure item permissions in Microsoft Fabric."
+  ms.date: 05/22/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/3-configure-workspace-and-item-permissions.md)]

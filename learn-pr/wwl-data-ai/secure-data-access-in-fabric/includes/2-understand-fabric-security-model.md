@@ -1,25 +1,30 @@
-Data access in organizations is often restricted by users' responsibilities, and roles and by an organization's Fabric deployment patterns, and data architecture. Fabric has a flexible, multi-layer security model that allows you to configure security to accommodate different data access requirements. Having the ability to control permissions at different layers means you can adhere to the principle of least privilege, restricting user permissions to only what's needed to perform job tasks.
+Data access in organizations is often restricted by users' responsibilities and roles, and by the organization's deployment patterns and data architecture. Fabric has a multi-layer security model that lets you control permissions at different layers, so you can follow the principle of least privilege — restricting each user's access to only what they need.
 
-Fabric has three security levels and they're evaluated sequentially to determine whether a user has data access. The order of evaluation for access is:  
-1. Microsoft Entra ID authentication: checks if the user can authenticate to the Azure identity and access management service, Microsoft Entra ID.
-2. Fabric access: checks if the user can access Fabric.
-3. Data security: checks if the user can perform the action they've requested on a table or file.  
+## Three levels of access evaluation
 
-The third level, data security, has several building blocks that can be configured individually or together to align with different access requirements. The primary access controls in Fabric are:
+Fabric evaluates access sequentially across three levels:
+
+1. **Microsoft Entra ID authentication** — checks whether the user can authenticate to Microsoft Entra ID.
+2. **Fabric access** — checks whether the user can access Fabric.
+3. **Data security** — checks whether the user can perform the requested action on a table or file.
+
+The third level, data security, has four primary access controls that can be configured individually or together:
 
 - Workspace roles
 - Item permissions
 - Compute or granular permissions
-- OneLake data access controls (preview)
+- OneLake security
 
-It's helpful to envision these building blocks in a hierarchy to understand how access controls can be applied individually or together.
+Each layer provides increasingly specific control — from broad workspace-level access down to individual tables and folders within a data item.
 
-![Screenshot of Fabric access control hierarchy.](../media/data-access-controls.png)
+## How the layers work together
 
-A *workspace* in Fabric enables you to distribute ownership and access policies using *workspace roles*. Within a workspace, you can create Fabric data *items* like lakehouses, data warehouses, and semantic models. *Item permissions* can be inherited from a workspace role or set individually by sharing an item. When workspace roles provide too much access, items can be shared using item permissions to ensure proper security.
+**Workspace roles** apply to all items in a workspace. When you assign someone a workspace role, they can access every item in that workspace at the level the role allows. Use workspace roles when a user needs broad access to collaborate across multiple items.
 
-Within each data item, *granular engine permissions* such as Read, ReadData, or ReadAll can be applied. 
+**Item permissions** apply to a single item, like a specific lakehouse or warehouse. Instead of giving workspace-wide access, you share an individual item and choose what the recipient can do with it. Use item permissions when a user only needs access to one or two items — not the whole workspace.
 
-Compute or granular permissions can be applied within a specific compute engine in Fabric, like the SQL Endpoint or semantic model.
+**Compute permissions** apply within a specific engine, like the SQL analytics endpoint or semantic model. They include permissions such as Read, ReadAll, or Write. Use compute permissions to control what a user can do through a particular query engine.
 
-Fabric data items store their data in OneLake. Access to data in the lakehouse can be restricted to specific files or folders using the role-based-access control (RBAC) feature called OneLake data access controls (preview).
+Across all three layers, when you grant someone access to an item, they can see *all* the data in it.
+
+**OneLake security** adds control *within* an item. Instead of giving access to all data, you create security roles that grant access to specific tables or folders. These restrictions apply consistently across all compute engines — Spark, SQL, and OneLake APIs. Use OneLake security when a user needs access to a Fabric item but should only see specific data within it.
