@@ -53,7 +53,7 @@ All communications are encrypted and signed using certificates to protect your d
 
 Consider Azure SQL Managed Instance if you want to *lift-and-shift* an on-premises SQL Server instance and all its databases to the cloud, without incurring the management overhead of running SQL Server on a virtual machine.
 
-Azure SQL Managed Instance provides a higher degree of compatibility with on-premises SQL Server than Azure SQL Database. If you have an existing SQL Server solution with advanced features that you want to move to the cloud with minimal changes, Managed Instance is the better choice. To check compatibility with an existing on-premises system, you can install [Data Migration Assistant (DMA)](https://www.microsoft.com/download/details.aspx?id=53595). This tool analyzes your databases on SQL Server and reports any issues that could block migration to a managed instance.
+Azure SQL Managed Instance provides a higher degree of compatibility with on-premises SQL Server than Azure SQL Database. If you have an existing SQL Server solution with advanced features that you want to move to the cloud with minimal changes, SQL Managed Instance is the better choice. To check compatibility with an existing on-premises system, you can install [Data Migration Assistant (DMA)](https://www.microsoft.com/download/details.aspx?id=53595). This tool analyzes your databases on SQL Server and reports any issues that could block migration to a managed instance.
 
 ### Business benefits
 
