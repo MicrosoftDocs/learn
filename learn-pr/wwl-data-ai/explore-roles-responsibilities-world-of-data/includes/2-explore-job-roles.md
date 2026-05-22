@@ -18,7 +18,7 @@ A database administrator is responsible for the design, implementation, maintena
 
 The database administrator is also responsible for managing the security of the data in the database, granting privileges over the data, granting or denying access to users as appropriate.
 
-AI assistance is increasingly part of the database administrator's toolkit—helping troubleshoot performance issues and draft queries using natural language, without replacing the judgment and expertise the role requires.
+AI tools are increasingly used by database administrators to troubleshoot performance issues and draft queries using natural language, alongside the judgment and expertise the role requires.
 
 ## Data Engineer
 
@@ -26,7 +26,7 @@ A data engineer collaborates with stakeholders to design and implement data-rela
 
 They're also responsible for ensuring that the privacy of data is maintained within the cloud and spanning from on-premises to the cloud data stores. They own the management and monitoring of data pipelines to ensure that data loads perform as expected.
 
-AI assistance helps data engineers accelerate pipeline development—generating transformation code and suggesting configurations using natural language, without replacing the architectural decisions and data quality judgment the role requires.
+AI tools can assist data engineers with pipeline development tasks such as generating transformation code and suggesting configurations using natural language, alongside the architectural decisions and data quality judgment the role requires.
 
 ## Data Analyst
 
@@ -34,7 +34,7 @@ A data analyst enables businesses to maximize the value of their data assets. Th
 
 A data analyst processes raw data into relevant insights based on identified business requirements to deliver relevant insights.
 
-AI assistance helps data analysts work faster—summarizing reports, suggesting visualizations, and generating analytical expressions using natural language, without replacing the business understanding and storytelling the role requires.
+AI tools can assist data analysts with tasks such as summarizing reports, suggesting visualizations, and generating analytical expressions using natural language, alongside the business understanding and communication skills the role requires.
 
 ## AI Engineer
 

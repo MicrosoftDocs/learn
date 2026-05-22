@@ -22,7 +22,7 @@ Data engineers may use Azure SQL database systems as sources for data pipelines 
 
 Data analysts may query Azure SQL databases directly to create reports, though in large organizations the data is generally combined with data from other sources in an analytical data store to support enterprise analytics.
 
-Azure SQL includes built-in AI assistance that helps database administrators and developers generate queries and troubleshoot performance using natural language.
+Azure SQL includes built-in AI features that database administrators and developers can use to generate queries and troubleshoot performance using natural language.
 
 ## Open-source databases in Azure
 
@@ -39,7 +39,7 @@ As with Azure SQL database systems, open-source relational databases are managed
 
 In some organizations, Cosmos DB instances may be provisioned and managed by a database administrator; though often software developers manage NoSQL data storage as part of the overall application architecture. Data engineers often need to integrate Cosmos DB data sources into enterprise analytical solutions that support modeling and reporting by data analysts.
 
-Azure Cosmos DB includes built-in AI assistance that helps developers explore and query data using natural language, accelerating development of AI-powered applications.
+Azure Cosmos DB includes built-in AI features that developers can use to explore and query data using natural language.
 
 ## Azure Storage
 
@@ -72,7 +72,7 @@ Within Microsoft Fabric, data professionals work with integrated capabilities in
 
 Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights—all centrally stored in OneLake.
 
-Microsoft Fabric includes built-in AI assistance that helps data professionals build pipelines, write SQL, generate notebook code, and explore data using natural language.
+Microsoft Fabric includes built-in AI features that data professionals can use to build pipelines, write SQL, generate notebook code, and explore data using natural language.
 
 ## Microsoft Fabric IQ
 
@@ -87,7 +87,7 @@ Microsoft Fabric includes built-in AI assistance that helps data professionals b
 
 Power BI is available as a standalone service and is also built into Microsoft Fabric, where it works alongside data engineering and warehouse capabilities in the same workspace. In Fabric, Power BI connects to data through **semantic models—structured analytical layers that define measures, relationships, and business logic.
 
-Power BI includes built-in AI assistance that helps data analysts summarize reports, suggest visualizations, generate DAX measures, and create written narratives from data using natural language.
+Power BI includes built-in AI features that data analysts can use to summarize reports, suggest visualizations, generate DAX measures, and create written narratives from data using natural language.
 
 ## Azure Databricks
 
@@ -97,7 +97,7 @@ Data engineers can use existing Databricks and Spark skills to create analytical
 
 Data analysts can use the native notebook support in Azure Databricks to query and visualize data in an easy-to-use web-based interface.
 
-Azure Databricks includes built-in AI assistance that helps data engineers and analysts write Spark code, generate SQL queries, and explain complex notebook logic using natural language.
+Azure Databricks includes built-in AI features that data engineers and analysts can use to write Spark code, generate SQL queries, and explain complex notebook logic using natural language.
 
 ## Azure Stream Analytics
 

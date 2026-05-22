@@ -4,7 +4,7 @@ Microsoft Fabric Real-Time Intelligence is a set of tools built into Microsoft F
 
 ## Real-time hub
 
-The Microsoft Fabric real-time hub acts as a centralized catalog for your organization. It simplifies access, addition, exploration, and data sharing. By broadening data sources, it enhances insights and visual clarity across domains. Crucially, this hub ensures data availability and accessibility, enabling swift decision-making and informed actions. Sharing streaming data from diverse sources unlocks comprehensive business intelligence across your organization.
+The Microsoft Fabric real-time hub acts as a centralized catalog for your organization. It simplifies access, addition, exploration, and data sharing. By cataloging data sources from across the organization, it provides a single place to discover and share streaming data. The hub makes data available and accessible for querying and analysis. You can share streaming data from multiple sources to support analytics across different teams and domains.
 
 ## Exploring data with real-time intelligence
 
