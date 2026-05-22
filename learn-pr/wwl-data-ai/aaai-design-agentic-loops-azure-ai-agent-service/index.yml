@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service
+metadata:
+  title: Design Stateful Agentic Loops with Microsoft Foundry Agent Service
+  description: "Design production-grade stateful agentic loops with Microsoft Foundry Agent Service. Implement run-status handling and context accumulation, configure agent reflection and planning cycles, architect session state persistence, build fork-based session patterns, and migrate existing Agents v1 workloads to the Agents v2 Responses API."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-generated
+title: Design stateful agentic loops with Microsoft Foundry Agent Service
+summary: "Design stateful agentic loops for production AI systems. Implement run-status handling and context accumulation, configure agent reflection and planning cycles, architect session state persistence, build fork-based session patterns, and migrate Agents v1 workloads to the Agents v2 Responses API."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design agentic loop patterns that handle run-status signals and accumulate context across iterations
+  - Implement agent reflection and planning cycles for multi-step reasoning
+  - Architect session state management strategies for persistent multi-turn agent interactions
+  - Build fork-based session patterns to support conversation branching and resumption
+  - Describe the Agents v2 runtime model including agents, conversations, responses, and items
+  - Migrate stateful agentic loop code from Agents v1 to Agents v2 using the azure-ai-projects 2.x SDK
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience building and deploying AI agents with Microsoft Foundry Agent Service
+  - Familiarity with agent runs, threads, and message management in the Microsoft Foundry Agent Service SDK
+  - Proficiency in Python
+  - 4+ years of AI/ML development experience
+  - No prior experience with Agents v2 or the Responses API is required — this module teaches those concepts from the ground up.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+products:
+- azure
+- microsoft-foundry
+- foundry-agent-service
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.introduction
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.examine-production-agentic-loop-architecture
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.examine-foundry-responses-api-v2-model
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.implement-agent-reflection-planning-cycles
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.design-session-state-context-management
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.implement-fork-based-sessions
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.migrate-agentic-loops-agents-v1-to-v2
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.knowledge-check
+- learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.summary
+badge:
+  uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.badge

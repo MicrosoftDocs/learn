@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-solutions-network-security.introduction
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction to module, Design Solutions for Network Security."
+  description: "Introduction."
   ms.date: 05/20/2026
-  author: ceperezb
-  ms.author: ceperezb
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: unit
 durationInMinutes: 2
 content: |

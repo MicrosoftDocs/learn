@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.examine-production-agentic-loop-architecture
+title: Examine production agentic loop architecture
+metadata:
+  title: Examine Production Agentic Loop Architecture
+  description: "Examine production agentic loop architecture."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-examine-production-agentic-loop-architecture.md)]
