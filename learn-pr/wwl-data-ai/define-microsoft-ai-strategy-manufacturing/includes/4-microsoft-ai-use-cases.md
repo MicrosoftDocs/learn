@@ -16,12 +16,12 @@ Developing your own AI model from scratch isn’t always the best approach, as i
 The catalog of Foundry Tools is large, but some are especially pertinent in manufacturing.
 
 * **Azure AI Search**: This platform enables you to retrieve information for your document intelligence applications. It enables you to scan your documentation to quickly find the information you need.
-* **Azure Vision and Custom Vision**: These two services deliver computer vision models, AI models that detect or classify objects of interest in images or video. This technology is key in manufacturing use cases such as anomaly detection.
+* **Azure Vision**: This service delivers computer vision models, AI models that detect or classify objects of interest in images or video. This technology is key in manufacturing use cases such as anomaly detection. For custom image classification and object detection models, you can use Azure Machine Learning AutoML.
 * **Document Intelligence**: The AI models contained in this service enable manufacturers to extract information from your documentation. This tool is most useful in scenarios involving handling printed or handwritten technical datasheets, forms, invoices, ID cards, and other complex layouts. It can play an important role in achieving better management of your suppliers.
 
-## Azure AI Foundry
+## Azure OpenAI in Microsoft Foundry
 
-Among the prebuilt models included in Microsoft Foundry, Azure OpenAI Service stands out as an especially powerful tool. Many of the latest AI use cases involve **copilot assistants and generative AI solutions**. Azure OpenAI Service is a Microsoft tool to develop these kinds of applications since it enables you to use LLMs such as GPT, Embeddings, DALL-E, and Whisper.
+Among the prebuilt models included in Microsoft Foundry, Azure OpenAI stands out as an especially powerful tool. Many of the latest AI use cases involve **copilot assistants and generative AI solutions**. Azure OpenAI enables you to develop these kinds of applications since it provides access to LLMs such as GPT, Embeddings, DALL-E, and Whisper.
 
 These solutions enable you to deliver insights and analytics in a more natural, fluent, conversational way. They can also automatically generate reports, documentation, mail, and so on. Besides, they’re often helpful to streamline the development of traditional AI models. So, you can implement this technology in almost all manufacturing use cases for faster, more efficient results.
 
