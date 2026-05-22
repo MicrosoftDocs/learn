@@ -4,4 +4,4 @@ Suppose you're a Fabric administrator at a healthcare company. Your organization
 
 In this module, you explore Fabric's security model, learn how workspace roles and item permissions control access to Fabric items, and see how T-SQL permissions and OneLake security roles provide granular control over the data within those items.
 
-By the end of this module, you'll be able to configure the right level of access for each user — from workspace roles to OneLake security roles, following the principle of least privilege.
+By the end of this module, you'll be able to configure the right level of access for each user, from workspace roles to OneLake security roles, following the principle of least privilege.
