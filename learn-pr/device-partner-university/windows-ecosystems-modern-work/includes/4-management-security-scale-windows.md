@@ -34,7 +34,7 @@ Understanding whether management capabilities are built into the platform or req
 > To learn more, see:
   >  - [Microsoft Intune overview](/intune/intune-service/fundamentals/what-is-intune)
   >  - [Windows Autopilot overview](/windows/deployment/windows-autopilot)
-  >  - [Microsoft Entra ID overview](/entra/overview)
+  >  - [Microsoft Entra ID overview](/entra/fundamentals/what-is-entra)
 
 ## Security and compliance architecture
 

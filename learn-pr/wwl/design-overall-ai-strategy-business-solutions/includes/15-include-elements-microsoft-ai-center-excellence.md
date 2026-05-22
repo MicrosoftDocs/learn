@@ -184,6 +184,6 @@ When a CoE is missing or inadequate within an organization, the following can oc
 
 - [Introduction to generative AI Center of Excellence](/training/modules/intro-ai-center-excellence/1-introduction-generative-ai-center-excellence)
 
-- [Cloud Adoption Framework — AI Center of Excellence (GitHub)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/scenarios/ai/center-of-excellence.md)
+- [Cloud Adoption Framework — AI Center of Excellence (GitHub)](https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai/center-of-excellence.md)
 
 - [Azure Cloud Adoption Framework](/azure/cloud-adoption-framework/)
