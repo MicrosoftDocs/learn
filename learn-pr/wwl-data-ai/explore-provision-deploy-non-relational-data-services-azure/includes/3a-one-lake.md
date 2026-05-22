@@ -10,7 +10,7 @@ OneLake is a single, unified, logical data lake designed for your entire organiz
 
 - **Distributed ownership and collaboration** Within a tenant, you can create workspaces, enabling different parts of your organization to manage their data items. This distributed ownership promotes collaboration while maintaining governance boundaries.
 
-- **Open and Compatible** Built on Azure Data Lake Storage (ADLS) Gen2, OneLake stores data in Delta Parquet format. It supports existing ADLS Gen2 APIs and SDKs, making it compatible with your current applications.
+- **Open and Compatible** Built on Azure Data Lake Storage (ADLS) Gen2, OneLake stores data in Delta Parquet format—an open, efficient file format widely used for analytics data. It supports existing ADLS Gen2 APIs and SDKs, making it compatible with your current applications.
 
 - **Easy to navigate** It's straightforward to navigate OneLake data from Windows using [OneLake file explorer](/fabric/onelake/onelake-file-explorer).
 

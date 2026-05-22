@@ -3,7 +3,10 @@ Microsoft Azure is a cloud platform that powers the applications and IT infrastr
 Some of the most commonly used cloud services for data are described below.
 
 > [!NOTE]
-> This article covers only some of the most commonly used data services for modern transactional and analytical solutions. Additional services are also available.
+> This article covers only some of the most commonly used data services for modern transactional and analytical solutions. Additional services are also available. As a beginner, you don't need to memorize every service—the goal is to gain awareness of the types of tools available and the roles that use them.
+
+> [!TIP]
+> Throughout this unit you'll encounter the terms **PaaS** (platform-as-a-service) and **SaaS** (software-as-a-service). These are cloud delivery models: **PaaS** means Microsoft manages the underlying infrastructure (servers, patching, backups) so you focus on your data and applications. **SaaS** means the entire product is delivered as a ready-to-use service over the internet—no installation or infrastructure management required.
 
 ## Azure SQL
 
@@ -19,7 +22,7 @@ Data engineers may use Azure SQL database systems as sources for data pipelines 
 
 Data analysts may query Azure SQL databases directly to create reports, though in large organizations the data is generally combined with data from other sources in an analytical data store to support enterprise analytics.
 
-Azure SQL includes built-in AI assistance that helps database administrators and developers generate queries and troubleshoot performance using natural language.
+Azure SQL includes built-in AI features that database administrators and developers can use to generate queries and troubleshoot performance using natural language.
 
 ## Open-source databases in Azure
 
@@ -36,7 +39,7 @@ As with Azure SQL database systems, open-source relational databases are managed
 
 In some organizations, Cosmos DB instances may be provisioned and managed by a database administrator; though often software developers manage NoSQL data storage as part of the overall application architecture. Data engineers often need to integrate Cosmos DB data sources into enterprise analytical solutions that support modeling and reporting by data analysts.
 
-Azure Cosmos DB includes built-in AI assistance that helps developers explore and query data using natural language, accelerating development of AI-powered applications.
+Azure Cosmos DB includes built-in AI features that developers can use to explore and query data using natural language.
 
 ## Azure Storage
 
@@ -69,19 +72,11 @@ Within Microsoft Fabric, data professionals work with integrated capabilities in
 
 Data engineers can use Microsoft Fabric to create a unified data analytics solution that combines data ingestion pipelines, data warehouses, real-time analytics, business intelligence, and AI-powered insights—all centrally stored in OneLake.
 
-Microsoft Fabric includes built-in AI assistance that helps data professionals build pipelines, write SQL, generate notebook code, and explore data using natural language.
+Microsoft Fabric includes built-in AI features that data professionals can use to build pipelines, write SQL, generate notebook code, and explore data using natural language.
 
 ## Microsoft Fabric IQ
 
-![Microsoft Fabric IQ logo.](../media/microsoft-fabric.png) Fabric IQ is a workload in Microsoft Fabric that unifies data across OneLake and contextualizes it according to the language of your business. It exposes that data to analytics, AI agents, and applications with consistent semantic meaning—so every tool and every team shares the same definitions for business concepts like *Customer*, *Order*, or *Product*.
-
-Fabric IQ includes several items that work together:
-
-- **Ontology** defines your enterprise vocabulary—entity types, relationships, properties, and business rules—and maps them to real data in OneLake without copying or moving it.
-- **Data agents** allow users to ask questions about business data in natural language, grounded in the shared ontology.
-- **Operations agents** monitor real-time data streams and trigger automated actions when business rules are met.
-- **Graph** provides a visual, connected representation of business concepts and their relationships, enabling dependency analysis and multi-hop reasoning.
-- **Plan** supports collaborative planning, reporting, and analytics on a unified data foundation.
+![Microsoft Fabric IQ logo.](../media/microsoft-fabric.png) Fabric IQ is a workload in Microsoft Fabric that unifies data across OneLake and gives it consistent business meaning—so every tool and team shares the same definitions for concepts like *Customer*, *Order*, or *Product*. It enables business users and AI agents to ask questions about data in natural language, based on a shared understanding of your enterprise data.
 
 > [!NOTE]
 > Fabric IQ is currently in preview.
@@ -92,7 +87,7 @@ Fabric IQ includes several items that work together:
 
 Power BI is available as a standalone service and is also built into Microsoft Fabric, where it works alongside data engineering and warehouse capabilities in the same workspace. In Fabric, Power BI connects to data through **semantic models—structured analytical layers that define measures, relationships, and business logic.
 
-Power BI includes built-in AI assistance that helps data analysts summarize reports, suggest visualizations, generate DAX measures, and create written narratives from data using natural language.
+Power BI includes built-in AI features that data analysts can use to summarize reports, suggest visualizations, generate DAX measures, and create written narratives from data using natural language.
 
 ## Azure Databricks
 
@@ -102,7 +97,7 @@ Data engineers can use existing Databricks and Spark skills to create analytical
 
 Data analysts can use the native notebook support in Azure Databricks to query and visualize data in an easy-to-use web-based interface.
 
-Azure Databricks includes built-in AI assistance that helps data engineers and analysts write Spark code, generate SQL queries, and explain complex notebook logic using natural language.
+Azure Databricks includes built-in AI features that data engineers and analysts can use to write Spark code, generate SQL queries, and explain complex notebook logic using natural language.
 
 ## Azure Stream Analytics
 

@@ -37,7 +37,7 @@ Fabric also includes built-in data pipelines (Fabric Data Factory) for data inge
 
 **[Azure Databricks](https://azure.microsoft.com/services/databricks?azure-portal=true)** is a cloud analytics platform built on Apache Spark, optimized for large-scale data engineering, data science, and SQL analytics. It uses **Delta Lake** as its native storage format, giving every table transaction support, schema enforcement, and versioning. For SQL-based reporting and business intelligence, Azure Databricks provides a **Databricks SQL Warehouse**—a dedicated SQL endpoint optimized for BI tools and concurrent query workloads. Databricks is a common choice when you need code-first Spark workflows, multicloud portability, or existing organizational expertise with the platform.
 
-Both Fabric and Azure Databricks include AI assistant experiences for writing SQL and generating notebook code.
+Both Fabric and Azure Databricks include AI assistant features for writing SQL and generating notebook code.
 
 > [!NOTE]
 > Each of these services can be thought of as an analytical data *store*, in the sense that they provide a schema and interface through which the data can be queried. In many cases, the data is actually stored in a data lake and the service processes the data and runs queries. Some solutions combine both services: an ELT ingestion process might copy data into the data lake, use a notebook running in Azure Databricks to process a large volume of data, and then load the results into tables in a Microsoft Fabric Warehouse.

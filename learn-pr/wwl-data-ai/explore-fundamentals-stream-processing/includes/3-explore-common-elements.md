@@ -18,7 +18,7 @@ At its simplest, a high-level architecture for stream processing looks like this
 
 Microsoft supports multiple technologies that you can use to implement real-time analytics of streaming data, including:
 
-- **Microsoft Fabric Real-Time Intelligence**: A complete, integrated toolset for real-time data built into Microsoft Fabric. It includes **Eventstreams** (to ingest, route, and transform streaming data), **Eventhouse** (a KQL-based database optimized for time-series and event data queries), **Real-Time Dashboards** (for live data visualization), and **Activator** (to trigger automated actions when streaming data meets defined conditions). AI assistance in Fabric Real-Time Intelligence helps you generate KQL queries from natural-language questions.
+- **Microsoft Fabric Real-Time Intelligence**: A complete, integrated toolset for real-time data built into Microsoft Fabric. It includes **Eventstreams** (to ingest, route, and transform streaming data), **Eventhouse** (a database optimized for time-series and event data, queried using KQL — Kusto Query Language, a query language designed for fast log and telemetry analysis), **Real-Time Dashboards** (for live data visualization), and **Activator** (to trigger automated actions when streaming data meets defined conditions). AI assistance in Fabric Real-Time Intelligence helps you generate KQL queries from natural-language questions.
 
 - **Spark Structured Streaming**: An open-source library that enables you to develop complex streaming solutions on Apache Spark–based services, including **Azure Databricks** and Microsoft Fabric.
 

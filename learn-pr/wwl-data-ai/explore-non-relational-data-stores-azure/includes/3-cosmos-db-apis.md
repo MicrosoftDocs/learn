@@ -17,7 +17,7 @@ The five supported APIs are: **NoSQL**, **MongoDB**, **Table**, **Apache Cassand
 > [!NOTE]
 > This API was previously called the SQL API. It was renamed to the NoSQL API in 2023. If you see older documentation that refers to the "SQL API," it's the same service.
 
-The NoSQL API is recommended for new applications. It also supports **vector search**, which lets you store AI embeddings alongside your operational data. That capability is the foundation for retrieval-augmented generation (RAG) scenarios — for example, a chatbot that searches your product documents to ground its responses before replying.
+The NoSQL API is recommended for new applications.
 
 A query looks like this:
 
@@ -45,9 +45,9 @@ The result is a JSON document:
 
 ## Cosmos DB for MongoDB
 
-**Azure Cosmos DB for MongoDB** is wire-protocol compatible with MongoDB, so your existing MongoDB applications and client libraries connect to Cosmos DB without significant code changes.
+**Azure Cosmos DB for MongoDB** is compatible with MongoDB drivers and client libraries, so your existing MongoDB applications can connect to Cosmos DB without significant code changes.
 
-Data is stored in BSON (Binary JSON) format, and queries use the MongoDB Query Language (MQL) — a compact, object-oriented syntax where you call methods on collection objects. To find a product by ID:
+Data is stored in BSON (Binary JSON — a binary encoding of JSON) format, and queries use the MongoDB Query Language (MQL) — a compact, object-oriented syntax where you call methods on collection objects. To find a product by ID:
 
 ```javascript
 db.products.find({id: 123})
