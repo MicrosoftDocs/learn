@@ -4,7 +4,7 @@ Hub-and-spoke orchestration treats spoke agents as executable tools on the hub a
 
 This design creates clear separation of concerns. The hub agent's system prompt describes the overall workflow and decision logic—"You coordinate investment research by delegating to specialized analysis agents. First invoke market analysis, then risk assessment, then compliance checking." Each spoke agent's prompt describes only its domain expertise—"You analyze equity market conditions and return a structured market report." The hub knows what order to invoke spokes; spokes know how to perform their specialized tasks.
 
-The key implementation insight is that spoke agents become function definitions on the hub. You don't manually implement these functions in Python—instead, each function's implementation is "invoke spoke agent X and return its output." Your orchestration loop handles the tool execution, invoking the actual spoke agent when the hub requests that tool.
+Spoke agents become function definitions on the hub — you don't manually implement these functions in Python. Each function's implementation is simply "invoke spoke agent X and return its output," and your orchestration loop handles the tool execution when the hub requests it.
 
 ## Registering spoke agents as tools
 
@@ -235,7 +235,7 @@ Circuit breakers prevent repeated invocation of failing spokes. Track consecutiv
 
 Graceful degradation means producing partial results rather than complete failure. If three of four market analysis sub-agents succeed, return the three successful analyses with a completeness indicator. The hub's prompt guides it to synthesize partial results with appropriate caveats—"Market analysis is based on equities, fixed income, and commodities data; derivatives analysis was unavailable."
 
-The key architectural insight is that failure handling belongs in the orchestration layer, not in individual spokes. Each spoke simply performs its task and reports success or failure. The orchestrator implements retry logic, fallback selection, and partial result synthesis.
+Failure handling belongs in the orchestration layer, not in individual spokes. Each spoke simply performs its task and reports success or failure — the orchestrator owns retry logic, fallback selection, and partial result synthesis because it has workflow-level context that individual spokes don't.
 
 ## Concurrent spoke invocation
 

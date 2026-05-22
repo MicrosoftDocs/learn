@@ -118,7 +118,7 @@ The quorum policy inspects the `results` from `asyncio.gather` and counts succes
 
 When multiple agents write to shared state concurrently, you need synchronization to prevent data corruption. Contoso Capital's agents contribute sections to a shared research document. If two agents write simultaneously, one agent's output can overwrite the other's, producing an incomplete document.
 
-The safest pattern for agent orchestration is queue-based merge after all agents complete. Each agent writes to isolated storage—agent A writes to `document_section_a`, agent B writes to `document_section_b`. After the synchronization barrier, a single merge task combines sections into the final document. This eliminates concurrent writes entirely.
+Queue-based merge eliminates concurrent writes entirely. Each agent writes to isolated storage—agent A writes to `document_section_a`, agent B writes to `document_section_b`. After the synchronization barrier, a single merge task combines sections into the final document.
 
 If you need real-time updates as agents complete, implement write serialization with locks. Python's `asyncio.Lock` provides mutual exclusion—only one coroutine holds the lock at a time. Agents acquire the lock before writing, ensuring sequential writes even when agents complete at different times.
 
@@ -180,18 +180,6 @@ async def run_agent_with_limit(agent_id: str, input: str):
 The semaphore ensures that at most two agents run concurrently, even if you spawn four tasks. The third and fourth tasks wait until one of the first two completes and releases the semaphore.
 
 The core orchestration patterns are implemented. What varies across teams is which framework makes them easiest to express—and the trade-offs between Azure ecosystem integration and control flow explicitness are the subject of the next unit.
-
-## Batching as a complementary scaling technique
-
-Spawning concurrent agents and synchronizing them with `asyncio.gather` reduces latency by parallelizing independent tasks. Batching reduces overhead by grouping multiple similar requests into a single API call. These are complementary scaling techniques: spawning addresses latency, batching addresses throughput and cost.
-
-Three batching patterns apply in multi-agent systems:
-
-- **Batched LLM calls**—when multiple agents share the same prompt template with different input values, batch inference sends all inputs in one API call rather than N individual calls. Azure OpenAI batch deployments support this pattern, reducing per-request overhead and enabling higher total throughput within rate limits.
-- **Batched embedding generation**—when an agent ingests multiple documents for knowledge retrieval, batch embedding generates vectors for all documents in a single call to the embedding endpoint. This is significantly more efficient than embedding one document at a time and is essential during indexing pipelines that process hundreds or thousands of documents.
-- **Batched tool calls**—when downstream tools support batch APIs (Azure Cosmos DB bulk operations, Azure AI Search batch indexing, Azure Blob Storage batch uploads), design tool implementations to accumulate requests and submit them as batches. Individual agents contribute to the batch; the tool layer submits the batch when a size or time threshold is met.
-
-Choose batching when throughput matters more than latency—batch processing is inherently higher latency (you wait to fill the batch) but achieves lower cost-per-unit and higher total throughput than individual calls. For Contoso Capital's nightly portfolio analysis that processes thousands of securities, batching embedding generation and LLM calls reduces both cost and API quota consumption compared to real-time individual processing.
 
 ## Key points
 

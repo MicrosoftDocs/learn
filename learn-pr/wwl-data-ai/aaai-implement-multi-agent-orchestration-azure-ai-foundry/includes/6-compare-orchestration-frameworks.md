@@ -32,7 +32,7 @@ agent = Agent(
 result = await agent.run("Analyze current equity market conditions")
 ```
 
-Production patterns favor Agent Framework when you need strong Azure ecosystem integration combined with explicit, auditable workflow control. If Contoso Capital's orchestration needs to interact with Microsoft 365 (SharePoint, Teams), Azure services (Cosmos DB, Azure Functions), or enterprise authentication (Entra ID), Agent Framework provides first-class support through the Microsoft plugin ecosystem and managed identity credential flow.
+Choose Agent Framework when you need strong Azure ecosystem integration combined with explicit, auditable workflow control. If Contoso Capital's orchestration needs to interact with Microsoft 365 (SharePoint, Teams), Azure services (Cosmos DB, Azure Functions), or enterprise authentication (Entra ID), Agent Framework provides native support through the Microsoft plugin ecosystem and managed identity credential flow.
 
 **Semantic Kernel** (`pip install semantic-kernel`) remains a fully supported, stable option for teams with existing SK investments. It integrates with Microsoft Foundry through `AzureAIAgent` in `semantic_kernel.agents`, maintains a rich plugin ecosystem covering Microsoft 365 and Azure services, and uses the familiar `Kernel`-centric programming model. For new projects, Microsoft recommends Agent Framework. For existing Semantic Kernel codebases, continue with SK and migrate on your own timeline using the published [migration guide from Semantic Kernel to Agent Framework](https://learn.microsoft.com/agent-framework/migration-guide/from-semantic-kernel/).
 
@@ -63,7 +63,7 @@ Supervisor patterns express naturally in LangGraph. A supervisor node evaluates 
 
 Microsoft Foundry integration for agent execution requires custom node implementations—LangGraph has no built-in support for invoking Foundry Agent Service directly. You implement nodes that call `AIProjectClient` from `azure-ai-projects` to invoke agents, managing thread creation, message posting, run polling, and state serialization yourself. This adds boilerplate compared to Agent Framework but gives you precise control over agent invocation. For observability, native Foundry integration is available via the `langchain-azure-ai` package, which provides `AzureAIOpenTelemetryTracer` for sending OpenTelemetry traces to Azure Monitor and Foundry Observability—useful for satisfying the regulatory audit trail requirements that often motivate LangGraph adoption.
 
-Production patterns favor LangGraph when control flow explicitness matters more than ecosystem integration. If Contoso Capital needs to demonstrate regulatory compliance by showing execution traces ("we ran compliance checks immediately after risk assessment, as required by regulation X"), LangGraph's explicit graph provides auditable evidence. For workflows with complex conditional branching (different paths for different market conditions), the graph model prevents the implicit branching in conversation-based orchestration from becoming unmaintainable.
+LangGraph earns its extra integration work when control flow explicitness matters more than ecosystem integration. If Contoso Capital needs to demonstrate regulatory compliance by showing execution traces ("we ran compliance checks immediately after risk assessment, as required by regulation X"), LangGraph's explicit graph provides auditable evidence. For workflows with complex conditional branching (different paths for different market conditions), the graph model prevents the implicit branching in conversation-based orchestration from becoming unmaintainable.
 
 ## AutoGen
 
@@ -88,7 +88,7 @@ This pattern excels at collaborative reasoning scenarios. Contoso Capital might 
 
 Microsoft Foundry integration is indirect. AutoGen agents can call Azure OpenAI endpoints (which Foundry deployments provide), but AutoGen doesn't use the Agent Service—agents exist only in your process runtime, not as durable Foundry resources. You lose managed identity benefits and conversation persistence that Foundry provides.
 
-Production patterns historically favored AutoGen when agent collaboration through group conversation produced better results than sequential delegation. Microsoft released a formal [AutoGen to Microsoft Agent Framework migration guide](https://learn.microsoft.com/agent-framework/migration-guide/from-autogen/), positioning Agent Framework as the strategic successor for new projects. AutoGen's `RoundRobinGroupChat`, `GroupChat`, and `GraphFlow` patterns all have direct equivalents in Agent Framework's Workflow model. For existing AutoGen workloads, AutoGen remains maintained and functional. For new projects that require collaborative agent reasoning or adversarial review patterns, prefer Agent Framework's Workflow orchestration, which provides the same group interaction capabilities with stronger type safety and native Azure Foundry integration.
+AutoGen excels at scenarios where agent collaboration through group conversation produces better results than sequential delegation. Microsoft released a formal [AutoGen to Microsoft Agent Framework migration guide](https://learn.microsoft.com/agent-framework/migration-guide/from-autogen/), positioning Agent Framework as the strategic successor for new projects. AutoGen's `RoundRobinGroupChat`, `GroupChat`, and `GraphFlow` patterns all have direct equivalents in Agent Framework's Workflow model. For existing AutoGen workloads, AutoGen remains maintained and functional. For new projects that require collaborative agent reasoning or adversarial review patterns, prefer Agent Framework's Workflow orchestration, which provides the same group interaction capabilities with stronger type safety and native Azure Foundry integration.
 
 ## CrewAI
 
@@ -116,7 +116,7 @@ CrewAI's abstraction hides orchestration complexity—you define high-level goal
 
 Azure integration is minimal—CrewAI can call Azure OpenAI endpoints but doesn't integrate with Agent Service or managed identity. For production Foundry deployments, you're effectively using only Azure OpenAI compute while managing agent orchestration entirely in your code.
 
-Production patterns favor CrewAI for rapid prototyping or scenarios where high-level task delegation suffices. If Contoso Capital needs to build a proof-of-concept multi-agent research system in one week, CrewAI's abstractions let you focus on agent roles rather than orchestration mechanics. For production systems requiring fine-grained control, observability, and Azure ecosystem integration, CrewAI's abstractions limit the control you need.
+CrewAI is the right choice for rapid prototyping or scenarios where high-level task delegation suffices. If Contoso Capital needs to build a proof-of-concept multi-agent research system in one week, CrewAI's abstractions let you focus on agent roles rather than orchestration mechanics. For production systems requiring fine-grained control, observability, and Azure ecosystem integration, CrewAI's abstractions limit the control you need.
 
 ## Framework comparison matrix
 
@@ -139,16 +139,6 @@ Framework selection is a tactical decision based on ecosystem fit, control flow 
 For Contoso Capital's Microsoft Foundry investment platform, Microsoft Agent Framework provides the best forward-looking production path: native Foundry integration eliminates authentication boilerplate, managed agent hosting provides durable agent identity, and Microsoft support contracts cover production issues. If regulatory requirements demand explicit control flow graphs for auditing, use LangGraph for those sub-workflows while keeping Foundry Agent Service as the underlying agent runtime. If the team has significant existing Semantic Kernel investments, continue with SK—it integrates fully with Foundry and has a migration path to Agent Framework when ready.
 
 Now that you understand framework trade-offs and selection criteria, you're ready to implement Contoso Capital's hierarchical research orchestration in a hands-on exercise.
-
-## Middleware as an architect-level design decision
-
-Across any framework you choose, multi-agent systems require a consistent middleware layer—cross-cutting concerns that sit between your business logic and the underlying Azure services. Middleware design is an architect-level decision that spans three responsibilities:
-
-- **Observability middleware**—OpenTelemetry instrumentation that injects trace context into every agent-to-agent call, creating the distributed traces that Azure Monitor renders into waterfall diagrams. You design this layer once and apply it across all agents regardless of framework.
-- **Authentication middleware**—managed identity credential flow that ensures every outbound call from an agent carries a valid token without your code managing credentials. You configure `DefaultAzureCredential` at the application boundary and let it propagate through the middleware layer.
-- **Resilience middleware**—circuit breakers, retry policies, and timeout enforcement that prevent failures in one agent from cascading through the system. These policies apply at the middleware layer so individual agent code doesn't need to implement them separately.
-
-The three layers compose: an agent call first passes through authentication middleware (attach credential), then observability middleware (inject trace context), then the business logic, and on return passes through resilience middleware (evaluate whether to retry or surface a circuit-break). Frame middleware design as a first-class architecture artifact alongside your choice of orchestration pattern and framework.
 
 ## Key points
 

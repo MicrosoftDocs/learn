@@ -63,14 +63,9 @@ These patterns appear across multi-agent systems literature under various names.
 | Hub-and-spoke | Central orchestrator delegates to specialized spoke agents registered as tools |
 | Sequential | Linear prompt-chaining: output of one agent becomes input to the next |
 | Parallel | Fan-out/fan-in with `asyncio.gather` and quorum policies |
-| Peer-to-peer | A2A protocol with capability discovery between autonomous agents |
-| Orchestrator-subagent | Meta-agent planner decomposing a task into subagent invocations |
 | Planner | Hub acting as explicit decomposition planner before spoke dispatch |
 | Maker-checker | Supervisor quality gate: maker agent produces, checker agent validates |
 | Critic loop | Reflection cycle: critic agent evaluates and returns feedback to the reasoning agent |
-| Karpathy loop | Plan → execute → replan loop with mid-execution course correction |
-| Brainstorming | Group-chat orchestration: agents contribute ideas to a shared conversation |
-| Debate | Group-chat with adversarial agent roles challenging each other's reasoning |
 
 The same pattern may appear under different vocabulary in different sources; the mechanism column provides the implementation anchor.
 
