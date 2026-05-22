@@ -20,6 +20,4 @@ When these expectations exist but aren’t met, aging environments can remain st
 
 Understanding what Windows Server represents today helps frame modernization as an evaluation of alignment with current needs—rather than a reaction to change alone.
 
-:::image type="content"
-source="../media/server-modernization.svg"
-alt-text="A diagram of environment modernization from Windows Server 2016 or 2019 to Windows Server 2025 and the benefits." lightbox="../media/server-modernization.svg":::
+:::image type="content" source="../media/server-modernization.svg" alt-text="A diagram of environment modernization from Windows Server 2016 or 2019 to Windows Server 2025 and the benefits." lightbox="../media/server-modernization.svg":::
