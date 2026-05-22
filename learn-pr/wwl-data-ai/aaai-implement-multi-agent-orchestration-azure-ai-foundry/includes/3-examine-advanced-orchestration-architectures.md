@@ -4,11 +4,11 @@ Once you've decided multi-agent earns its complexity for a given workload, the n
 
 When you scale from three agents to 12 specialized agents, flat patterns exhibit three failure modes:
 
-1. **Coordination overhead grows quadratically**—with N agents, you potentially manage N(N-1)/2 relationships. A group chat with ten participants becomes chaotic when agents speak out of turn or contradict each other.
+1. **Coordination overhead grows quadratically**—with N agents, you potentially manage N(N-1)/2 relationships. A group chat with 10 participants becomes chaotic when agents speak out of turn or contradict each other.
 2. **Failures cascade unpredictably**—if a compliance agent fails in a flat concurrent pattern, do you abort the entire workflow or proceed with incomplete analysis?
 3. **No clear ownership for sub-domains**—when the equities analysis agent and the derivatives analysis agent produce conflicting risk assessments, who arbitrates that conflict?
 
-The architectural shift you need is from flat peer relationships to hierarchical control structures. Unlike microservices that coordinate through message buses, multi-agent systems need explicit orchestration because agent outputs are often non-deterministic and require validation before downstream consumption.
+The architectural shift you need is from flat peer relationships to hierarchical control structures. Unlike microservices that coordinate through message buses, multi-agent systems need explicit orchestration because agent outputs are often nondeterministic and require validation before downstream consumption.
 
 ## Hub-and-spoke architecture
 
@@ -16,19 +16,19 @@ Hub-and-spoke architecture introduces a central orchestrator agent that delegate
 
 This pattern mirrors microservices architectures with an API gateway. The gateway (hub) routes requests to backend services (spokes) and aggregates responses. Unlike an API gateway that simply routes, your hub agent makes intelligent decisions—it can retry a failed spoke invocation with modified parameters, skip optional spokes when deadlines approach, or escalate to human oversight when spoke outputs conflict.
 
-You implement hub-and-spoke by registering each spoke agent as a callable function on the hub. When the hub's language model decides to invoke a spoke, it generates a function call. Your orchestrator code executes that function (which internally invokes the spoke agent), collects the result, and submits it back to the hub as a tool result. The hub then decides whether to invoke additional spokes or synthesize a final response.
+You implement hub-and-spoke by registering each spoke agent as a callable function on the hub. When the hub's language model decides to invoke a spoke, it generates a function call. Your orchestrator code executes that function (which internally invokes the spoke agent), collects the result, and submits it back to the hub as a tool result. The hub then decides whether to invoke more spokes or synthesize a final response.
 
 ## Hierarchical orchestration
 
-Hierarchical orchestration extends hub-and-spoke with multiple orchestration layers. Sub-orchestrators manage clusters of specialist agents, and a top-level orchestrator coordinates sub-orchestrators. Contoso Capital uses this pattern for their market analysis workflow—a market analysis sub-orchestrator manages equities, fixed income, and derivatives specialists, while the top-level orchestrator coordinates market analysis, risk assessment, and compliance sub-orchestrators.
+Hierarchical orchestration extends hub-and-spoke with multiple orchestration layers. Suborchestrators manage clusters of specialist agents, and a top-level orchestrator coordinates suborchestrators. Contoso Capital uses this pattern for their market analysis workflow—a market analysis suborchestrators manages equities, fixed income, and derivatives specialists, while the top-level orchestrator coordinates market analysis, risk assessment, and compliance suborchestrators.
 
-The key architectural benefit is isolation of complexity. The top-level orchestrator operates at the business logic level—"perform market analysis, then check compliance"—without knowing that market analysis internally involves three specialist agents running in parallel. When you add a fourth specialist (cryptocurrency analysis), only the market analysis sub-orchestrator changes. The top-level orchestrator's logic remains unchanged.
+The key architectural benefit is isolation of complexity. The top-level orchestrator operates at the business logic level—"perform market analysis, then check compliance"—without knowing that market analysis internally involves three specialist agents running in parallel. When you add a fourth specialist (cryptocurrency analysis), only the market analysis suborchestrators changes. The top-level orchestrator's logic remains unchanged.
 
-This pattern requires careful interface design between layers. Each sub-orchestrator exposes a narrow contract to its parent—the market analysis sub-orchestrator returns a structured market report, not raw outputs from three agents. This encapsulation prevents the top-level orchestrator from becoming dependent on implementation details that change as you evolve the system.
+This pattern requires careful interface design between layers. Each suborchestrators exposes a narrow contract to its parent—the market analysis suborchestrators returns a structured market report, not raw outputs from three agents. This encapsulation prevents the top-level orchestrator from becoming dependent on implementation details that change as you evolve the system.
 
 ## Supervisor and coordinator patterns
 
-Supervisor patterns shift from prescriptive orchestration to reactive monitoring. A supervisor agent watches agent outputs and decides whether to retry, escalate, or proceed. Unlike an orchestrator that dictates agent invocation order, the supervisor responds to agent results—if the risk assessment agent returns high uncertainty scores, the supervisor requests additional analysis before allowing downstream consumption.
+Supervisor patterns shift from prescriptive orchestration to reactive monitoring. A supervisor agent watches agent outputs and decides whether to retry, escalate, or proceed. Unlike an orchestrator that dictates agent invocation order, the supervisor responds to agent results—if the risk assessment agent returns high uncertainty scores, the supervisor requests more analysis before allowing downstream consumption.
 
 You implement supervisors as conditional routing logic. After each agent completes, the supervisor evaluates the output against quality criteria. The evaluation can be rules-based (check for required fields, validate numeric ranges) or LLM-based (ask a judge agent whether the output is sufficient). Based on evaluation, the supervisor routes to retry, to the next agent in the workflow, or to human escalation.
 
@@ -41,7 +41,7 @@ The decision between these patterns depends on three requirements dimensions: wo
 | Pattern | Best when | Risk |
 |---------|-----------|------|
 | Hub-and-spoke | Workflow is mostly deterministic with known spoke invocation sequences | Hub becomes a single point of failure; complex hub logic is hard to debug |
-| Hierarchical | Clear organizational boundaries between agent clusters; sub-workflows evolve independently | Communication overhead between layers adds latency; interface versioning complexity |
+| Hierarchical | Clear organizational boundaries between agent clusters; subworkflows evolve independently | Communication overhead between layers adds latency; interface versioning complexity |
 | Supervisor | Agent quality varies; outputs need validation before downstream use | Supervisor evaluation logic becomes complex; retry cycles can cause indefinite delays |
 
 Use hub-and-spoke when you need centralized control over a relatively static workflow—the investment research report follows the same steps each time, and you want one place to optimize that flow. Choose hierarchical when organizational boundaries make sense—the market analysis team and compliance team operate independently, and coupling them through a single orchestrator creates coordination bottlenecks. Adopt supervisor patterns when agent reliability is uncertain—agents call external APIs that sometimes return low-quality data, and you need quality gates before proceeding.
@@ -73,6 +73,6 @@ The same pattern may appear under different vocabulary in different sources; the
 
 - **Flat orchestration patterns don't scale** because coordination overhead grows quadratically, failures cascade unpredictably, and there's no clear ownership for cross-domain conflicts.
 - **Hub-and-spoke** introduces a central orchestrator that delegates to specialized spokes—the hub makes intelligent routing, retry, and synthesis decisions rather than just forwarding requests.
-- **Hierarchical orchestration** isolates complexity through sub-orchestrators that manage agent clusters, enabling independent evolution of sub-workflows without changing top-level logic.
+- **Hierarchical orchestration** isolates complexity through suborchestrators that manage agent clusters, enabling independent evolution of subworkflows without changing top-level logic.
 - **Supervisor patterns** shift from prescriptive to reactive—watching agent outputs and conditionally routing to retry, escalation, or the next step based on quality criteria.
 - **Architecture selection** depends on workflow predictability, failure tolerance, and domain boundaries—hub-and-spoke for static workflows, hierarchical for organizational boundaries, supervisor for uncertain quality.

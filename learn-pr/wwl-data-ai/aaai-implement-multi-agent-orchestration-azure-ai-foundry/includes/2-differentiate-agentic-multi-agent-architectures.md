@@ -38,7 +38,7 @@ Notice the asymmetry: a single-agent system needs none of these. The decision to
 
 ## The relationship: multi-agent is a subset of agentic
 
-Picture the relationship as two nested concentric circles. The outer circle is **agentic AI**—every system with autonomous reasoning and tool use. The inner circle is **multi-agent AI**—every agentic system that splits the work across two or more interacting agents. Outside both circles sit *non-agentic* AI systems: prompt-engineered chatbots that respond once and stop, embedding pipelines that classify on a fixed schema, deterministic LLM chains where the next step is hard-coded.
+Picture the relationship as two nested concentric circles. The outer circle is **agentic AI**—every system with autonomous reasoning and tool use. The inner circle is **multi-agent AI**—every agentic system that splits the work across two or more interacting agents. Outside both circles sit *nonagentic* AI systems: prompt-engineered chatbots that respond once and stop, embedding pipelines that classify on a fixed schema, deterministic LLM chains where the next step is hard-coded.
 
 A few example classifications using this framework:
 
@@ -48,9 +48,9 @@ A few example classifications using this framework:
 | A document pipeline: extract → summarize → classify, with hard-coded order | No | No | No autonomous decision about the next step |
 | A reflection loop: planner agent + critic agent that iterate until quality threshold | Yes | Yes | Two agents with distinct roles interacting |
 | Contoso Capital's production platform: 12 specialized agents coordinated by orchestrators | Yes | Yes | Many agents with role separation and explicit coordination |
-| A single agent that sub-prompts itself with different system messages mid-loop | Yes | Debatable | Often called "multi-persona prompting"—same agent, same context. Treat as single-agent agentic for architectural purposes. |
+| A single agent that subprompts itself with different system messages mid-loop | Yes | Debatable | Often called "multi-persona prompting"—same agent, same context. Treat as single-agent agentic for architectural purposes. |
 
-The bottom row describes the trap teams fall into most often in practice. Multiple personas inside one prompt are not multi-agent—there is one identity, one context, one set of tools. Calling it multi-agent inflates architectural cost without adding architectural benefit.
+The bottom row describes the trap teams fall into most often in practice. Multiple personas inside one prompt aren't multi-agent—there's one identity, one context, one set of tools. Calling it multi-agent inflates architectural cost without adding architectural benefit.
 
 ## The litmus test
 
@@ -68,8 +68,8 @@ Multi-agent is the right commitment when one or more of these conditions hold:
 
 - **Specialization quality**: a domain expert agent with a tightly scoped prompt and tool set outperforms a generalist agent on the specialized task by a margin large enough to justify the coordination cost. Contoso Capital sees this with regulatory compliance—a compliance specialist agent catches issues a generalist research agent misses.
 - **Parallel execution**: the work is decomposable into independent sub-tasks where wall-clock latency matters. Running market analysis, fundamental research, and risk assessment in parallel cuts a 30-second sequential workflow to 10 seconds.
-- **Separation of duties**: regulatory or organizational requirements demand that the agent making a recommendation cannot be the same agent reviewing it. Maker-checker patterns and critic loops fall here.
-- **Security boundaries**: different agents need different data scopes, different identities, or different network perimeters. A customer-facing agent should not have direct access to internal compliance systems; the boundary forces a multi-agent split.
+- **Separation of duties**: regulatory or organizational requirements demand that the agent making a recommendation can't be the same agent reviewing it. Maker-checker patterns and critic loops fall here.
+- **Security boundaries**: different agents need different data scopes, different identities, or different network perimeters. A customer-facing agent shouldn't have direct access to internal compliance systems; the boundary forces a multi-agent split.
 - **Independent evolution**: agent capabilities owned by different teams need to ship on different cadences. Splitting them into separate agents lets each team release without coordinating with every other team.
 
 When *none* of these conditions hold, a single strong agent with good tools and reflection cycles is usually the better choice.
