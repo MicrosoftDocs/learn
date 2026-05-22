@@ -2,6 +2,15 @@ Now that you understand the Fabric architecture and what you and your team might
 
 There are several roles that work together to administer Microsoft Fabric for your organization. If you're a Microsoft 365 admin, a Power Platform admin, or a Fabric capacity admin, you're involved in administering Fabric. The Fabric admin role was formerly known as Power BI admin.
 
+Fabric supports a delegation model so that admin responsibilities don't fall on one team. The four key levels are:
+
+- **Fabric admin** — manages tenant-wide settings and has full control over the platform
+- **Capacity admin** — manages workspaces and workloads within one capacity
+- **Domain admin** — oversees governance and settings for a logical grouping of workspaces
+- **Workspace admin** — manages access and settings for a single workspace
+
+Delegating admin rights to the right scope reduces bottlenecks and lets subject-matter experts govern data in their area without needing full tenant access.
+
 As a Fabric admin, you work primarily in the Fabric admin portal. You might also need to familiarize yourself with the following tools:
 
 - [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
@@ -39,7 +48,7 @@ It's important to familiarize yourself with a few tools to effectively implement
 
 Fabric's *admin portal* is a web-based portal where you can manage all aspects of the platform. You can centrally manage, review, and apply settings for the entire tenant or by capacity in the admin portal. You can also manage users, admins and groups, access audit logs, and monitor usage and performance.
 
-The admin portal enables you to turn settings on and off. There are many settings located in the admin portal. One noteworthy setting is the Fabric on/off switch, located in tenant settings that lets organizations that use Power BI opt into Fabric. Here, you can enable Fabric for your tenant or allow capacity admins to enable Fabric.
+The admin portal enables you to turn settings on and off. There are many settings located in the admin portal. One noteworthy setting is **Users can create Fabric items**, located in tenant settings. This setting controls whether users in your organization can create Fabric items. Turning it off doesn't affect users' ability to create Power BI items, and it can be managed at both the tenant and the capacity level.
 
 ![Screenshot of Tenant settings in admin portal.](../media/admin-delegation.png)
 
@@ -62,7 +71,7 @@ You can make these requests using any HTTP client library that supports OAuth 2.
 
 ### Admin monitoring workspace
 
-Fabric tenant admins have access to the *admin monitoring workspace*. You can choose to share access to the workspace or specific items within it with other users in your organization. The admin monitoring workspace includes the Feature Usage and Adoption dataset and report, which together provide insights on the usage and performance of your Fabric environment. You can use this information to identify trends and patterns, and troubleshoot issues.
+Fabric tenant admins have access to the *admin monitoring workspace*. You can choose to share access to the workspace or specific items within it with other users in your organization. The admin monitoring workspace includes the Feature Usage and Adoption semantic model and report, which together provide insights on the usage and performance of your Fabric environment. You can use this information to identify trends and patterns, and troubleshoot issues.
 
 ![Screenshot of a report in the Admin monitoring workspace.](../media/admin-monitoring-report.png)
 

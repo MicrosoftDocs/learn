@@ -27,4 +27,10 @@ If you aren't an admin, you need to request item certification from an admin. Yo
 *Data lineage* is the ability to track the flow of data through Fabric, also known as *impact analysis*. Data lineage allows you to see where data comes from, how it's transformed, and where it goes. The lineage view in workspaces helps you understand the data that is available in Fabric, and how it's being used.
 
 ## Report on sensitive data
-With the Microsoft Purview hub (preview) in Fabric, you can manage and govern your organization's Fabric data estate. It contains reports that provide insights about sensitive data, item endorsement, and domains, and also serves as a gateway to more advanced capabilities in the Microsoft Purview portal such as Data Catalog, Information Protection, Data Loss Prevention, and Audit.
+
+The governance insights previously available in the Microsoft Purview hub are now accessible through the **OneLake catalog**. The **Govern** tab in the OneLake catalog provides a centralized view of your Fabric data estate — including sensitive data, item endorsement status, and domain organization — directly within Fabric.
+
+For more advanced governance capabilities beyond what's built into Fabric, Microsoft Purview provides additional tools that integrate with Fabric, including Information Protection, Data Loss Prevention, Audit, and Insider Risk Management.
+
+> [!NOTE]
+> For more information, see [Use Microsoft Purview to govern Microsoft Fabric](/fabric/governance/microsoft-purview-fabric).

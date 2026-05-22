@@ -21,7 +21,7 @@ All data in Fabric is stored in OneLake, which is built on Azure Data Lake Stora
 
 **Workspace** is a collection of items that brings together different functionality in a single tenant. It acts as a container that uses capacity for the work that is executed, and provides controls for who can access the items in it. For example, in a sales workspace, users associated with the sales organization can create a data warehouse, run notebooks, create datasets, create reports, and more.
 
-**Items** are the building blocks of the Fabric platform. They're the objects that you create and manage in Fabric. There are different types of items, such as data warehouses, data pipelines, datasets, reports, and dashboards.
+**Items** are the building blocks of the Fabric platform. They're the objects that you create and manage in Fabric. There are different types of items, such as data warehouses, data pipelines, semantic models, reports, and dashboards.
 
 Understanding Fabric concepts is important for you as an admin, because it helps you understand how to manage the Fabric environment.
 
