@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.understand-advanced-orchestration-architectures
-title: Understand advanced orchestration architectures
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.examine-advanced-orchestration-architectures
+title: Examine advanced orchestration architectures
 metadata:
-  title: Understand Advanced Orchestration Architectures
+  title: Examine Advanced Orchestration Architectures
   description: "Learn how hub-and-spoke, hierarchical, and supervisor/coordinator patterns address the limitations of flat orchestration for complex multi-agent enterprise systems."
   ms.date: 05/21/2026
   author: chrishowd
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-understand-advanced-orchestration-architectures.md)]
+  [!include[](includes/3-examine-advanced-orchestration-architectures.md)]

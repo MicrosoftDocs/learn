@@ -10,7 +10,7 @@ The answer requires you to separate two terms that vendor marketing constantly c
 
 The architectural ingredients of an agentic system are the same whether you build it with one agent or many:
 
-- A reasoning loop with explicit termination logic (you covered this in the stateful agentic loops module)
+- A reasoning loop with explicit termination logic
 - Tool use with dynamic tool selection (the agent decides which tool fits the current step)
 - Context that accumulates across iterations (so the agent remembers what it has tried)
 - Adaptation in response to runtime evidence (failed tool calls, low-confidence intermediate results, new information from retrieval)
@@ -38,9 +38,9 @@ Notice the asymmetry: a single-agent system needs none of these. The decision to
 
 ## The relationship: multi-agent is a subset of agentic
 
-It helps to picture the relationship as two nested concentric circles. The outer circle is **agentic AI**—every system with autonomous reasoning and tool use. The inner circle is **multi-agent AI**—every agentic system that splits the work across two or more interacting agents. Outside both circles sit *non-agentic* AI systems: prompt-engineered chatbots that respond once and stop, embedding pipelines that classify on a fixed schema, deterministic LLM chains where the next step is hard-coded.
+Picture the relationship as two nested concentric circles. The outer circle is **agentic AI**—every system with autonomous reasoning and tool use. The inner circle is **multi-agent AI**—every agentic system that splits the work across two or more interacting agents. Outside both circles sit *non-agentic* AI systems: prompt-engineered chatbots that respond once and stop, embedding pipelines that classify on a fixed schema, deterministic LLM chains where the next step is hard-coded.
 
-A few worked classifications using this frame:
+A few example classifications using this framework:
 
 | System | Agentic? | Multi-agent? | Why |
 |---|---|---|---|
@@ -72,17 +72,17 @@ Multi-agent is the right commitment when one or more of these conditions hold:
 - **Security boundaries**: different agents need different data scopes, different identities, or different network perimeters. A customer-facing agent should not have direct access to internal compliance systems; the boundary forces a multi-agent split.
 - **Independent evolution**: agent capabilities owned by different teams need to ship on different cadences. Splitting them into separate agents lets each team release without coordinating with every other team.
 
-When *none* of these conditions hold, a single strong agent with good tools and reflection cycles is usually the better choice. The decomposition-granularity unit in LP3 will give you the empirical decision framework—for now, recognize that the choice exists.
+When *none* of these conditions hold, a single strong agent with good tools and reflection cycles is usually the better choice.
 
 ## Why this matters for the rest of the module
 
-The remaining units in this module assume you have committed to multi-agent. Unit 3 explains *why flat orchestration patterns from AI-103 break down* once you have many interacting agents. Units 4 and 5 implement two of the three patterns that solve those breakdowns—hub-and-spoke and parallel spawning. Unit 6 surveys the frameworks that make implementation tractable.
+The remaining units in this module assume you have committed to multi-agent. Unit 3 explains *why flat orchestration patterns break down* once you have many interacting agents. Units 4 and 5 implement two of the three patterns that solve those breakdowns—hub-and-spoke and parallel spawning. Unit 6 surveys the frameworks that make implementation tractable.
 
 Hold on to one thread as you work through them: every orchestration pattern, framework choice, and synchronization technique you encounter exists to manage the complexity that multi-agent introduces. If you ever find yourself implementing one of these patterns for a system that doesn't actually need multi-agent, the right answer isn't a better orchestration pattern—it's to consolidate to a single strong agent.
 
-Now that you can distinguish agentic from multi-agent and decide deliberately when each is the right choice, you're ready to examine why the flat orchestration patterns from AI-103 stop scaling at enterprise multi-agent scale.
+Now that you can distinguish agentic from multi-agent and decide deliberately when each is the right choice, you're ready to examine why flat orchestration patterns stop scaling at enterprise multi-agent scale.
 
-## Unit summary
+## Key points
 
 - **Agentic AI** is any system with an autonomous reasoning loop, dynamic tool use, accumulated context, and runtime adaptation—one agent or many.
 - **Multi-agent AI** is the strict subset where two or more agents with distinct roles, contexts, and identities coordinate, and the interaction itself does essential architectural work.

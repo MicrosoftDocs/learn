@@ -16,25 +16,25 @@ quiz:
     choices:
     - content: "Remove the failing spoke agent from the hub's tool registry and redeploy the hub agent."
       isCorrect: false
-      explanation: "Incorrect. Removing the spoke and redeploying the hub is disruptive and requires downtime. Production systems need runtime resilience — the hub should detect spoke failures and apply degradation logic without requiring redeployment."
+      explanation: "Incorrect. Removing the spoke and redeploying the hub is disruptive and requires downtime. Production systems need runtime resilience—the hub should detect spoke failures and apply degradation logic without requiring redeployment."
     - content: "Implement a circuit-breaker on the hub that stops delegating to the failing spoke after a threshold of consecutive failures, and return a graceful fallback response for that spoke's domain."
       isCorrect: true
-      explanation: "Correct. A circuit-breaker on the hub tracks consecutive failures for each spoke. After the threshold, the hub stops calling that spoke (preventing cascading timeouts) and returns a fallback response — allowing the workflow to continue with the available results from other spokes."
+      explanation: "Correct. A circuit-breaker on the hub tracks consecutive failures for each spoke. After the threshold, the hub stops calling that spoke (preventing cascading timeouts) and returns a fallback response—allowing the workflow to continue with the available results from other spokes."
     - content: "Catch the timeout exception in the hub and retry the spoke three times before proceeding with no result for that domain."
       isCorrect: false
-      explanation: "Incorrect. Retrying a consistently failing agent three times multiplies the latency impact. A circuit-breaker is more appropriate when failures are consistent — it stops retrying immediately after the threshold and only attempts again after a recovery window."
+      explanation: "Incorrect. Retrying a consistently failing agent three times multiplies the latency impact. A circuit-breaker is more appropriate when failures are consistent—it stops retrying immediately after the threshold and only attempts again after a recovery window."
   - content: "You're implementing parallel agent execution using `asyncio.gather` for four independent research agents. One agent is optional context enrichment, while three are required for the final report. Which approach correctly handles this requirement?"
     choices:
-    - content: "Use `asyncio.gather` with `return_exceptions=True`, then check results — treat any exception in the three required agents as a fatal failure, but allow the optional agent to fail gracefully."
+    - content: "Use `asyncio.gather` with `return_exceptions=True`, then check results—treat any exception in the three required agents as a fatal failure, but allow the optional agent to fail gracefully."
       isCorrect: true
       explanation: "Correct. `asyncio.gather(return_exceptions=True)` collects all results and exceptions without raising immediately. You then inspect the results list: if any of the three required agents has an exception, fail the workflow. If only the optional agent failed, proceed with its domain omitted from the report."
     - content: "Run the optional agent separately with a try/except, then use `asyncio.gather` for the three required agents."
       isCorrect: false
-      explanation: "Incorrect. This approach serializes the optional agent with the required ones, losing the parallelization benefit. All four agents should run concurrently — the differentiation between required and optional is in result processing, not in execution strategy."
+      explanation: "Incorrect. This approach serializes the optional agent with the required ones, losing the parallelization benefit. All four agents should run concurrently—the differentiation between required and optional is in result processing, not in execution strategy."
     - content: "Wrap all four agents in `asyncio.gather` with `return_exceptions=False` and catch the outer exception if any agent fails."
       isCorrect: false
-      explanation: "Incorrect. `return_exceptions=False` (the default) causes `asyncio.gather` to raise on the first exception, cancelling the other running tasks. This means a failure in the optional agent would cancel the three required agents — exactly the wrong behavior."
-  - content: "Your team needs to build a multi-agent code review system that must maintain strict, auditable control flow — different agents trigger based on specific code change types (security-sensitive files, test coverage issues, style violations). Which orchestration framework best fits this requirement?"
+      explanation: "Incorrect. `return_exceptions=False` (the default) causes `asyncio.gather` to raise on the first exception, canceling the other running tasks. This means a failure in the optional agent would cancel the three required agents—exactly the wrong behavior."
+  - content: "Your team needs to build a multi-agent code review system that must maintain strict, auditable control flow—different agents trigger based on specific code change types (security-sensitive files, test coverage issues, style violations). Which orchestration framework best fits this requirement?"
     choices:
     - content: "AutoGen, because its conversation-based model allows agents to discuss and critique code collaboratively."
       isCorrect: false
@@ -44,4 +44,4 @@ quiz:
       explanation: "Incorrect. CrewAI's role abstraction is good for prototyping, but its control flow is relatively opaque. For auditable, conditional routing where specific code change types trigger specific agents, you need explicit graph-based transitions."
     - content: "LangGraph, because its graph-based state machine allows you to define conditional edges that route to reviewer agents based on explicit code change analysis conditions."
       isCorrect: true
-      explanation: "Correct. LangGraph's graph model maps directly to this requirement: nodes represent reviewer agents, and conditional edges implement the routing logic based on analyzed change types. Each routing decision is explicit and traceable in the graph definition — providing the auditability the team requires."
+      explanation: "Correct. LangGraph's graph model maps directly to this requirement: nodes represent reviewer agents, and conditional edges implement the routing logic based on analyzed change types. Each routing decision is explicit and traceable in the graph definition—providing the auditability the team requires."

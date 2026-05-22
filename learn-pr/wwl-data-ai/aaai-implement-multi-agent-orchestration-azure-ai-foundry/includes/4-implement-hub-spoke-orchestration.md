@@ -1,6 +1,6 @@
 ## Hub-and-spoke anatomy
 
-Hub-and-spoke orchestration treats spoke agents as executable tools on the hub agent. When you create the hub agent in Azure AI Foundry Agent Service, you define function tool schemas that correspond to invoking each spoke agent. The hub's language model decides which spokes to invoke based on the user request, generates function calls, and your orchestration code executes those calls by running the spoke agents. The hub receives tool results, reasons about them, and decides whether to invoke additional spokes or synthesize a final response.
+Hub-and-spoke orchestration treats spoke agents as executable tools on the hub agent. When you create the hub agent in Foundry Agent Service, you define function tool schemas that correspond to invoking each spoke agent. The hub's language model decides which spokes to invoke based on the user request, generates function calls, and your orchestration code executes those calls by running the spoke agents. The hub receives tool results, reasons about them, and decides whether to invoke additional spokes or synthesize a final response.
 
 This design creates clear separation of concerns. The hub agent's system prompt describes the overall workflow and decision logic—"You coordinate investment research by delegating to specialized analysis agents. First invoke market analysis, then risk assessment, then compliance checking." Each spoke agent's prompt describes only its domain expertise—"You analyze equity market conditions and return a structured market report." The hub knows what order to invoke spokes; spokes know how to perform their specialized tasks.
 
@@ -8,7 +8,7 @@ The key implementation insight is that spoke agents become function definitions 
 
 ## Registering spoke agents as tools
 
-Azure AI Foundry Agent Service accepts tool definitions in OpenAI function calling format. Each spoke agent becomes one function definition. For Contoso Capital's investment platform, the market analysis spoke becomes a `invoke_market_analysis_agent` function.
+Foundry Agent Service accepts tool definitions in OpenAI function calling format. Each spoke agent becomes one function definition. For Contoso Capital's investment platform, the market analysis spoke becomes a `invoke_market_analysis_agent` function.
 
 ```python
 market_analysis_tool = {
@@ -42,7 +42,7 @@ When you create the hub agent, you pass all spoke tool definitions to the agent 
 
 ## Orchestrator implementation
 
-Your orchestrator implements the hub's execution loop: receive user input, run the hub agent until it requests tool execution, invoke spoke agents for any tool calls, submit results back to the hub, and repeat until the hub generates a final response. Azure AI Foundry Agent Service uses the Assistants API pattern—you create a thread, add a user message, create a run, and poll the run status until completion.
+Your orchestrator implements the hub's execution loop: receive user input, run the hub agent until it requests tool execution, invoke spoke agents for any tool calls, submit results back to the hub, and repeat until the hub generates a final response. Foundry Agent Service uses the Assistants API pattern—you create a thread, add a user message, create a run, and poll the run status until completion.
 
 ```python
 from azure.ai.projects import AIProjectClient
@@ -239,39 +239,21 @@ The key architectural insight is that failure handling belongs in the orchestrat
 
 ## Concurrent spoke invocation
 
-A naive hub-and-spoke implementation serializes all spoke invocations—invoke market analysis, wait for completion, invoke risk assessment, wait for completion. When spokes are independent, this serialization wastes time. Azure AI Foundry Agent Service supports concurrent tool execution—when the hub's LLM generates multiple tool calls in one response, invoke them in parallel.
+A basic hub-and-spoke implementation serializes all spoke invocations—invoke market analysis, wait for completion, invoke risk assessment, wait for completion. When spokes are independent, this serialization wastes time. Foundry Agent Service supports concurrent tool execution—when the hub's LLM generates multiple tool calls in one response, invoke them in parallel.
 
 The Assistants API returns all tool calls that the agent requests in a single response. You can invoke all corresponding spokes concurrently using `asyncio.gather`, collect results, and submit all tool outputs back to the hub in one call. This pattern cuts latency for independent spokes—if market analysis takes 10 seconds and risk assessment takes 8 seconds, concurrent execution completes in 10 seconds instead of 18.
 
 Be cautious with concurrent invocation when spokes have dependencies. If the hub generates tool calls for both market analysis and risk assessment in the same response, but risk assessment needs market analysis results, executing them concurrently produces incorrect results. The hub's prompt should guide it to invoke dependent spokes in separate rounds—"Always complete market analysis before invoking risk assessment." This ensures the hub sees market analysis tool results before deciding to invoke risk assessment.
 
 > [!TIP]
-> **Pause and reflect:** Imagine your hub agent generates tool calls for both a market analysis spoke and a risk assessment spoke in the same response, but risk assessment depends on market analysis results. How would you redesign the hub's system prompt and orchestration logic to prevent this dependency violation while still allowing independent spokes to run concurrently?
+> Imagine your hub agent generates tool calls for both a market analysis spoke and a risk assessment spoke in the same response, but risk assessment depends on market analysis results. How would you redesign the hub's system prompt and orchestration logic to prevent this dependency violation while still allowing independent spokes to run concurrently?
 
 Hub-and-spoke coordinates spokes sequentially, which works well when spoke outputs depend on each other. Contoso Capital's market analysis pipeline has independent agents that waste time running one after another. The next unit builds the parallel execution pattern, including the synchronization barriers and quorum policies that make concurrent agent workflows reliable.
 
-## Unit summary
+## Key points
 
 - **Spoke agents as tools** is the key architectural pattern—register each spoke as a function definition on the hub agent, letting the LLM decide which spokes to invoke based on the user request
 - **Orchestration loop** handles `requires_action` status by invoking spoke agents for each tool call, collecting results, and submitting them back to the hub for continued reasoning
 - **Partial failure recovery** uses three strategies—fallback responses (cached or substitute data), circuit breakers (stop invoking broken spokes after consecutive failures), and graceful degradation (partial results with completeness indicators)
 - **Concurrent spoke invocation** cuts latency by running independent spokes in parallel via `asyncio.gather`, but requires prompt engineering to prevent the hub from requesting dependent spokes in the same round
 - **Failure handling belongs in the orchestration layer**—individual spokes simply report success or failure, while the orchestrator implements retry logic, fallback selection, and partial result synthesis
-
-## Check your understanding
-
-**1. In hub-and-spoke orchestration, where should failure handling logic (retries, fallbacks, circuit breakers) be implemented?**
-
-- A. In each spoke agent, so it can handle its own failures independently
-- B. In the hub orchestrator, which decides how to respond based on the overall workflow state
-- C. In a separate failure-handling agent that monitors all spokes
-
-***Correct answer: B.*** Individual spokes report success or failure, but the orchestrator owns retry logic, fallback selection, and partial result synthesis because it has the workflow-level context to make informed recovery decisions.
-
-**2. Why does the hub register spoke agents as tool definitions rather than calling them directly through code?**
-
-- A. Tool registration is required by the Azure AI Agent Service API
-- B. Registering spokes as tools lets the LLM decide which spokes to invoke based on the user request, enabling intelligent routing without hardcoded logic
-- C. Tool definitions run faster than direct function calls
-
-***Correct answer: B.*** When spokes are registered as tools, the hub agent's LLM analyzes the user request and selects the appropriate spokes to call—the routing intelligence comes from the model, not from hardcoded if/else logic.

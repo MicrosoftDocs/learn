@@ -1,8 +1,12 @@
 ## Why flat orchestration patterns don't scale
 
-Once you've decided multi-agent earns its complexity for a given workload, the next question is *how the agents coordinate*. As you know from your earlier work with orchestration, AI-103 covered five foundational patterns: concurrent orchestration (multiple agents run simultaneously), sequential orchestration (strict ordering with result passing), group chat (agents collaborate in shared conversation), handoff (one agent transfers control to another), and Magentic-One (general-purpose orchestrator with specialist sub-agents). These patterns share a common architectural characteristic—all agents operate at one hierarchical level with peer-to-peer relationships.
+Once you've decided multi-agent earns its complexity for a given workload, the next question is *how the agents coordinate*. Five foundational orchestration patterns form the baseline: concurrent orchestration (multiple agents run simultaneously), sequential orchestration (strict ordering with result passing), group chat (agents collaborate in shared conversation), handoff (one agent transfers control to another), and Magentic-One (general-purpose orchestrator with specialist sub-agents). These patterns share a common architectural characteristic—all agents operate at one hierarchical level with peer-to-peer relationships.
 
-When you scale from three agents to 12 specialized agents, flat patterns exhibit three failure modes. First, coordination overhead grows quadratically—with N agents, you potentially manage N(N-1)/2 relationships. A group chat with ten participants becomes chaotic when agents speak out of turn or contradict each other. Second, failures cascade unpredictably—if a compliance agent fails in a flat concurrent pattern, do you abort the entire workflow or proceed with incomplete analysis? Third, there's no clear ownership for sub-domains—when the equities analysis agent and the derivatives analysis agent produce conflicting risk assessments, who arbitrates that conflict?
+When you scale from three agents to 12 specialized agents, flat patterns exhibit three failure modes:
+
+1. **Coordination overhead grows quadratically**—with N agents, you potentially manage N(N-1)/2 relationships. A group chat with ten participants becomes chaotic when agents speak out of turn or contradict each other.
+2. **Failures cascade unpredictably**—if a compliance agent fails in a flat concurrent pattern, do you abort the entire workflow or proceed with incomplete analysis?
+3. **No clear ownership for sub-domains**—when the equities analysis agent and the derivatives analysis agent produce conflicting risk assessments, who arbitrates that conflict?
 
 The architectural shift you need is from flat peer relationships to hierarchical control structures. Unlike microservices that coordinate through message buses, multi-agent systems need explicit orchestration because agent outputs are often non-deterministic and require validation before downstream consumption.
 
@@ -46,31 +50,31 @@ Use hub-and-spoke when you need centralized control over a relatively static wor
 
 The orchestration architectures you select are independent of the framework you use to implement them. You can build hub-and-spoke patterns with Microsoft Agent Framework, Semantic Kernel, LangGraph, AutoGen, or CrewAI. Each framework provides different abstractions that make certain patterns more natural—Semantic Kernel's plugin model fits hub-and-spoke well, while LangGraph's state graph model naturally expresses supervisor logic—but the architectural patterns themselves are framework-agnostic.
 
-In later units, you implement these patterns in Azure AI Foundry using the Microsoft Agent Framework, then compare how different frameworks optimize for different orchestration patterns. For now, focus on the architectural concepts themselves—once you understand why each pattern exists, choosing the right implementation framework becomes a tactical decision based on ecosystem integration and team skills.
+In later units, you implement these patterns in Microsoft Foundry using the Microsoft Agent Framework, then compare how different frameworks optimize for different orchestration patterns. For now, focus on the architectural concepts themselves—once you understand why each pattern exists, choosing the right implementation framework becomes a tactical decision based on ecosystem integration and team skills.
 
 With the three architectural patterns defined and their selection criteria mapped, Unit 4 puts hub-and-spoke into practice—registering spoke agents as tools on the hub and building the orchestration loop that drives coordination.
 
 ## Multi-agent pattern vocabulary reference
 
-The JTA and industry literature use specific names for patterns that appear across orchestration, memory, and evaluation contexts. The table below maps each named pattern to the curriculum mechanism and the primary unit where you learn it.
+These patterns appear across multi-agent systems literature under various names. The table maps each to its mechanism as used in this module.
 
-| Named pattern | Mechanism in this curriculum | Where taught |
-|---|---|---|
-| Hub-and-spoke | Central orchestrator delegates to specialized spoke agents registered as tools | Unit 4 (this module) |
-| Sequential | Linear prompt-chaining: output of one agent becomes input to the next | LP3 M7 Unit 2 |
-| Parallel | Fan-out/fan-in with `asyncio.gather` and quorum policies | Unit 5 (this module) |
-| Peer-to-peer | A2A protocol with capability discovery between autonomous agents | LP3 M6 Unit 2 |
-| Orchestrator-subagent | Meta-agent planner decomposing a task into subagent invocations | LP3 M7 Units 3-4 |
-| Planner | Hub acting as explicit decomposition planner before spoke dispatch | Unit 4 (this module) |
-| Maker-checker | Supervisor quality gate: maker agent produces, checker agent validates | Unit 3 (this module) |
-| Critic loop | Reflection cycle: critic agent evaluates and returns feedback to the reasoning agent | LP1 M1 Unit 3 |
-| Karpathy loop | Plan → execute → replan loop with mid-execution course correction | LP1 M1 Unit 3 |
-| Brainstorming | Group-chat orchestration: agents contribute ideas to a shared conversation | AI-103 prerequisite; Unit 5 (parallel spawning as a mechanism) |
-| Debate | Group-chat with adversarial agent roles challenging each other's reasoning | AI-103 prerequisite |
+| Named pattern | Mechanism |
+|---|---|
+| Hub-and-spoke | Central orchestrator delegates to specialized spoke agents registered as tools |
+| Sequential | Linear prompt-chaining: output of one agent becomes input to the next |
+| Parallel | Fan-out/fan-in with `asyncio.gather` and quorum policies |
+| Peer-to-peer | A2A protocol with capability discovery between autonomous agents |
+| Orchestrator-subagent | Meta-agent planner decomposing a task into subagent invocations |
+| Planner | Hub acting as explicit decomposition planner before spoke dispatch |
+| Maker-checker | Supervisor quality gate: maker agent produces, checker agent validates |
+| Critic loop | Reflection cycle: critic agent evaluates and returns feedback to the reasoning agent |
+| Karpathy loop | Plan → execute → replan loop with mid-execution course correction |
+| Brainstorming | Group-chat orchestration: agents contribute ideas to a shared conversation |
+| Debate | Group-chat with adversarial agent roles challenging each other's reasoning |
 
-When exam questions name a pattern, match it to its mechanism and teaching location using this table. The same pattern may appear under different vocabulary in different sources; the mechanism column provides the implementation anchor.
+The same pattern may appear under different vocabulary in different sources; the mechanism column provides the implementation anchor.
 
-## Unit summary
+## Key points
 
 - **Flat orchestration patterns don't scale** because coordination overhead grows quadratically, failures cascade unpredictably, and there's no clear ownership for cross-domain conflicts.
 - **Hub-and-spoke** introduces a central orchestrator that delegates to specialized spokes—the hub makes intelligent routing, retry, and synthesis decisions rather than just forwarding requests.

@@ -12,8 +12,9 @@ In Contoso Capital's production platform, you implemented hierarchical orchestra
 
 ## Learn more
 
-- [Microsoft Agent Framework documentation](https://learn.microsoft.com/azure/ai-services/agents/overview)
-- [Azure AI Foundry multi-agent patterns](https://learn.microsoft.com/azure/ai-foundry/concepts/multi-agent-patterns)
+- [Microsoft Agent Framework documentation](https://learn.microsoft.com/agent-framework/overview)
+- [Microsoft Foundry Agent Service overview](https://learn.microsoft.com/azure/foundry/agents/overview)
+- [Multi-agent orchestration patterns](https://learn.microsoft.com/agents/architecture/multi-agent-patterns)
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/)
 - [Semantic Kernel orchestration patterns](https://learn.microsoft.com/semantic-kernel/agents/)
 - [Parallel execution with asyncio](https://docs.python.org/3/library/asyncio-task.html)

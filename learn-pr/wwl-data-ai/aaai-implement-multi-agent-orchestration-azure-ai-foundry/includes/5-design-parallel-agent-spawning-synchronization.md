@@ -2,13 +2,13 @@
 
 Contoso Capital's risk assessment agent and market analysis agent operate independently—risk assessment evaluates portfolio exposure to volatility, while market analysis examines current pricing trends. Running these agents sequentially wastes time. If market analysis takes 12 seconds and risk assessment takes 10 seconds, sequential execution takes 22 seconds. Parallel execution completes in 12 seconds, the maximum of the two agent runtimes.
 
-For multi-agent workflows with independent tasks, parallel execution cuts latency proportionally to the number of concurrent agents. Four agents running in parallel complete in roughly the time of the slowest agent, rather than the sum of all agents. This matters in production scenarios where users wait for investment research reports—reducing report generation from 90 seconds to 25 seconds improves perceived responsiveness dramatically.
+For multi-agent workflows with independent tasks, parallel execution cuts latency proportionally to the number of concurrent agents. Four agents running in parallel complete in roughly the time of the slowest agent, rather than the sum of all agents. This matters in production scenarios where users wait for investment research reports—reducing report generation from 90 seconds to 25 seconds improves perceived responsiveness.
 
 The implementation pattern is fan-out and fan-in. Fan-out spawns multiple agent tasks simultaneously. Fan-in waits for all (or some threshold of) agents to complete before proceeding. Your orchestration code manages synchronization to ensure downstream agents only see complete results from their upstream dependencies.
 
 ## Fan-out pattern implementation
 
-Python's `asyncio` library provides native support for concurrent task execution. You spawn multiple agent runs concurrently using `asyncio.create_task` for each agent, then await their completion together. Azure AI Foundry Agent Service supports concurrent API calls—you can create multiple agent runs simultaneously without blocking.
+Python's `asyncio` library provides native support for concurrent task execution. You spawn multiple agent runs concurrently using `asyncio.create_task` for each agent, then await their completion together. Foundry Agent Service supports concurrent API calls—you can create multiple agent runs simultaneously without blocking.
 
 ```python
 import asyncio
@@ -165,7 +165,7 @@ The code example earlier shows minimum-quorum implementation—count successful 
 
 ## Parallel execution performance considerations
 
-Parallel execution improves latency but increases infrastructure load. Running four agents concurrently creates four simultaneous API calls to Azure AI Foundry. Each agent consumes token quota, and all consume it simultaneously. If your deployment has rate limits, concurrent execution can hit throttling errors where sequential execution would succeed.
+Parallel execution improves latency but increases infrastructure load. Running four agents concurrently creates four simultaneous API calls to Microsoft Foundry. Each agent consumes token quota, and all consume it simultaneously. If your deployment has rate limits, concurrent execution can hit throttling errors where sequential execution would succeed.
 
 Monitor deployment utilization and set concurrency limits based on quota. If your deployment handles 1,000 tokens per minute and each agent uses 500 tokens, you can safely run two concurrent agents but four would risk throttling. Implement a semaphore to limit concurrent agent tasks.
 
@@ -193,7 +193,7 @@ Three batching patterns apply in multi-agent systems:
 
 Choose batching when throughput matters more than latency—batch processing is inherently higher latency (you wait to fill the batch) but achieves lower cost-per-unit and higher total throughput than individual calls. For Contoso Capital's nightly portfolio analysis that processes thousands of securities, batching embedding generation and LLM calls reduces both cost and API quota consumption compared to real-time individual processing.
 
-## Unit summary
+## Key points
 
 - **Fan-out/fan-in** is the core parallel pattern—spawn concurrent agent tasks with `asyncio.create_task`, synchronize at a barrier with `asyncio.gather`, then process collected results.
 - **Quorum policies** define failure tolerance—fail-fast aborts on any failure, best-effort proceeds with available results, and minimum-quorum requires a configurable threshold of successful agents.
