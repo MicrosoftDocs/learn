@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-cosmos-db
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore fundamentals of Azure Cosmos DB
 summary: Azure Cosmos DB provides a highly scalable store for nonrelational data.
 abstract: |
@@ -34,6 +34,7 @@ roles:
 - student
 products:
 - azure
+- azure-cosmos-db
 subjects:
 - databases
 units:

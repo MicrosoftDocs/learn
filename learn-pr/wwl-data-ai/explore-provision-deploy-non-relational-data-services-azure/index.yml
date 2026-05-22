@@ -10,7 +10,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-storage
-  ai-usage: ai-generated
+  ai-usage: ai-assisted
 title: Explore Azure Storage for nonrelational data
 summary: Azure Storage is a core service in Microsoft Azure that is commonly used to store nonrelational data.
 abstract: |
@@ -37,6 +37,9 @@ roles:
 - data-engineer
 products:
 - azure
+- azure-table-storage
+- azure-blob-storage
+- azure-files
 subjects:
 - storage
 units:

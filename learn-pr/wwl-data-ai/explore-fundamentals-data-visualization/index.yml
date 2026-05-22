@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: powerbi
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore fundamentals of data visualization
 summary: Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action.
 abstract: |
@@ -36,6 +36,7 @@ roles:
 products:
 - azure
 - power-bi
+- fabric
 subjects:
 - data-visualization
 units:

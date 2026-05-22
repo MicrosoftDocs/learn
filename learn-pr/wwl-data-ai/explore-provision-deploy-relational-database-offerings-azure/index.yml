@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-sql-database
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore relational database services in Azure
 summary: Microsoft Azure provides multiple services for relational databases. You can choose the relational database management system that's best for your needs, and host relational data in the cloud.
 abstract: |
@@ -33,6 +33,7 @@ roles:
 - student
 products:
 - azure
+- azure-sql-database
 subjects:
 - databases
 units:
