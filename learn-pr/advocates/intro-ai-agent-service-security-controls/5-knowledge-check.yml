@@ -3,46 +3,79 @@ uid: learn.introduction-ai-agent-service-security-controls.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check your knowledge of the Azure AI Agent Service security controls.
-  ms.date: 03/21/2025
+  description: Check your knowledge of Foundry Agent Service security controls.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 3
-content: Choose the best response for each question. 
+content: Choose the best response for each question.
 quiz:
   questions:
-    - content: "You want to configure an AI Agent Service agent so that outbound data movement is restricted to approved locations. On what resource should you configure this restriction?"
+    - content: "A team member needs least-privilege access to build and test agents in an existing Foundry project. Which role should you assign?"
       choices:
-        - content: "Azure AI Hub."
+        - content: "Foundry User at the project scope, with Reader on the Foundry resource if resource discovery is required."
           isCorrect: true
-          explanation: "Correct. You configure network restrictions for Azure Agents at the Azure AI Hub level"
-        - content: "Virtual Network"
+          explanation: "Correct. Foundry User is the least-privileged Foundry role for building and developing in a project. Reader on the Foundry resource can be used for resource discovery."
+        - content: "Foundry Project Manager at the Foundry resource scope."
           isCorrect: false
-          explanation: "Incorrect. You configure network restrictions for Azure Agents at the Azure AI Hub level"
-        - content: "Private Endpoint."
+          explanation: "Incorrect. Foundry Project Manager can manage projects and publish agents, so it's more privileged than needed for ordinary project development."
+        - content: "Foundry Owner at the subscription scope."
           isCorrect: false
-          explanation: "Incorrect. You configure network restrictions for Azure Agents at the Azure AI Hub level"
-    - content: "You have disabled public network access to your Azure AI Hub. What steps can you take to configure and interact with the AI Agents deployed in one of the Hub's projects?"
+          explanation: "Incorrect. Foundry Owner grants broad management and development permissions and isn't the least-privileged role for a project team member."
+    - content: "Which baseline role assignment is required for a Foundry project's managed identity to access Foundry Agent Service features before adding tool-specific or Hosted-agent-specific permissions?"
       choices:
-        - content: "Create a network security group."
-          isCorrect: false
-          explanation: "Incorrect. Network security groups aren't used to mediate access to Azure AI Hub."
-        - content: "Deploy Azure Bastion."
-          isCorrect: false
-          explanation: "Incorrect. Azure bastion provides secure access to virtual machines. You would need to configure a private endpoint to allow access from the virtual machine to the Azure AI Hub and the projects and AI agents it hosts."
-        - content: "Create a private endpoint."
+        - content: "Assign Foundry User on the Foundry resource to the project's managed identity."
           isCorrect: true
-          explanation: "Correct. By creating a private endpoint, you can specify a virtual network and subnet through which you're able to access the Azure AI Hub, the projects it hosts, and AI Agents associated with those projects."
-    - content: "Which role based access control role is the Azure AI Hub's system assigned managed identity assigned to by default?"
+          explanation: "Correct. The project managed identity needs the Foundry User role on the Foundry resource so it can access Foundry features. Hosted agents also require Foundry Project Manager for the creator, Foundry User for the platform-created agent identity on the project, and Azure Container Registry pull permissions for the project managed identity."
+        - content: "Assign Azure AI Administrator to the project's managed identity."
+          isCorrect: false
+          explanation: "Incorrect. Current Foundry RBAC uses Foundry roles such as Foundry User, Foundry Project Manager, Foundry Account Owner, and Foundry Owner."
+        - content: "Assign Cognitive Services User to the project's managed identity."
+          isCorrect: false
+          explanation: "Incorrect. Cognitive Services roles are for accessing AI services directly and don't apply to Foundry project and hosted agent scenarios."
+    - content: "You want Foundry RBAC restrictions to apply when users and applications access a project. Which authentication approach should you use?"
       choices:
-        - content: "Azure AI Administrator."
+        - content: "Use Microsoft Entra ID authentication and avoid key-based authentication for callers that should be constrained by RBAC."
           isCorrect: true
-          explanation: "Correct. The Azure AI Hub's system assigned managed identity is assigned to the Azure AI Administrator role by default."
-        - content: "Reader."
+          explanation: "Correct. Foundry RBAC applies when callers authenticate with Microsoft Entra ID. Keys grant access without the same role restrictions."
+        - content: "Use account keys because keys inherit the caller's Foundry role assignments."
           isCorrect: false
-          explanation: "Incorrect. The Azure AI Hub's system assigned managed identity is assigned to the Azure AI Administrator role by default."
-        - content: "Azure AI Developer."
+          explanation: "Incorrect. Key-based authentication bypasses granular role restrictions, so Microsoft recommends Microsoft Entra ID for least-privilege access."
+        - content: "Use public network access because network access enforces Foundry RBAC."
           isCorrect: false
-          explanation: "Incorrect. The Azure AI Hub's system assigned managed identity is assigned to the Azure AI Administrator role by default."
+          explanation: "Incorrect. Network access controls where traffic can originate; RBAC and authentication determine what an identity can do."
+    - content: "Which configuration describes current Standard Setup with private networking for Foundry Agent Service?"
+      choices:
+        - content: "Disable public network access, use private endpoints and private DNS, inject the agent runtime into a subnet delegated to Microsoft.App/environments, and bring your own Azure Storage, Azure AI Search, and Azure Cosmos DB resources."
+          isCorrect: true
+          explanation: "Correct. Standard Setup with private networking uses public network access disabled, private endpoints and DNS, virtual network injection with a /27 or larger delegated subnet, and BYO resources for agent data. Private endpoints for BYO resources aren't auto-created, and Basic setup doesn't provide outbound private isolation for agents."
+        - content: "Enable public network access and rely only on network security groups for agent runtime isolation."
+          isCorrect: false
+          explanation: "Incorrect. Standard Setup with private networking requires public network access to be disabled and uses private endpoints, private DNS, virtual network injection, and BYO resources."
+        - content: "Create only a private endpoint for the Foundry resource; BYO storage, search, and database resources are optional for private networking."
+          isCorrect: false
+          explanation: "Incorrect. Standard Setup with private networking requires BYO Azure Storage, Azure AI Search, and Azure Cosmos DB resources, each secured with its own network and identity controls."
+    - content: "An agent uses files in Azure Blob Storage and indexes in Azure AI Search. How should you grant access to those data sources?"
+      choices:
+        - content: "Assign least-privilege Azure RBAC data roles to the identity used by the project or agent, such as Storage Blob Data Reader for Blob data and the required Azure AI Search roles."
+          isCorrect: true
+          explanation: "Correct. Data sources need their own permissions. Prefer Microsoft Entra ID and Azure RBAC over shared keys, and grant only the roles required for the tool or data source."
+        - content: "Grant the Foundry User role only; connected data sources automatically inherit all project permissions."
+          isCorrect: false
+          explanation: "Incorrect. Foundry project roles don't automatically grant access to external Azure Storage or Azure AI Search resources."
+        - content: "Store data-source keys in the agent instructions so the model can use them when needed."
+          isCorrect: false
+          explanation: "Incorrect. Don't expose secrets in instructions. Use managed identity and Microsoft Entra ID where possible."
+    - content: "Which control helps reduce prompt-injection risk from user prompts and untrusted documents or tool responses?"
+      choices:
+        - content: "Assign a Foundry guardrail to the agent and enable Prompt Shields for user prompt and document attacks at the relevant intervention points."
+          isCorrect: true
+          explanation: "Correct. Foundry guardrails can be assigned to agents, and Prompt Shields detect user prompt attacks and document attacks, including indirect prompt-injection attempts in retrieved content. Model guardrails alone don't scan tool calls or responses; tool scanning works only when configured for supported tools and supported agent risks."
+        - content: "Disable private endpoints after deployment so guardrails can inspect public traffic."
+          isCorrect: false
+          explanation: "Incorrect. Guardrails and Prompt Shields are safety controls for model and agent behavior; they don't require public network access."
+        - content: "Use keys instead of Microsoft Entra ID because keys prevent prompt injection."
+          isCorrect: false
+          explanation: "Incorrect. Keys don't mitigate prompt injection and can bypass RBAC restrictions. Use guardrails, Prompt Shields, scoped tools, and least-privilege identities."
