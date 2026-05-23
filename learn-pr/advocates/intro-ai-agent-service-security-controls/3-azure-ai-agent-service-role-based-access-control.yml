@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-ai-agent-service-security-controls.azure-ai-agent-service-role-based-access-control
-title: Azure AI Agent Service Role Based Access Control
+title: Foundry Agent Service role-based access control
 metadata:
-  title: Azure AI Agent Service Role Based Access Control
-  description: Learn to configure role-based access control for the Azure AI Agent Service.
-  ms.date: 03/21/2025
+  title: Foundry Agent Service role-based access control
+  description: Learn how to use Microsoft Entra ID and Azure RBAC to secure Foundry Agent Service projects.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
