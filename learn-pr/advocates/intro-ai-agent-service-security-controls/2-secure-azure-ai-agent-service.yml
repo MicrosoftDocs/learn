@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-ai-agent-service-security-controls.secure-azure-ai-agent-service
-title: Securing the Azure AI Agent Service
+title: Secure Microsoft Foundry Agent Service
 metadata:
-  title: Securing the Azure AI Agent Service
-  description: Understand the security controls that can be applied to the Azure AI Agent Service.
-  ms.date: 03/21/2025
+  title: Secure Microsoft Foundry Agent Service
+  description: Learn how to apply security controls to Microsoft Foundry Agent Service resources and projects.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
