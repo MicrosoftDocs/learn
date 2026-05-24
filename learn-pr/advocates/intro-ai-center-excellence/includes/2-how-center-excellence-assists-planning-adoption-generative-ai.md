@@ -13,7 +13,7 @@ When implemented correctly, an AI center of excellence ensures the right people 
 - Advising business and workload teams as they identify and frame use cases, then assessing fit, priority, and readiness.
 - Coordinating with platform teams that provide governed foundations while workload and business teams own domain data, integration, delivery, and business outcomes.
 - Supporting modern AI solutions where teams select and evaluate models, build copilots and agentic AI experiences, ground responses in enterprise data, plan for tool interoperability by connecting agents to approved Model Context Protocol (MCP) servers that expose tools and resources where supported, and operate solutions in Microsoft Foundry rather than developing foundation models from scratch.
-- Defining MCP governance expectations such as approved-server allowlists and allowed-tool lists, user or admin approvals, audit logging, and prompt or context data-sharing review before teams connect agents to third-party MCP servers.
+- Defining MCP governance expectations such as approved-server allow lists and allowed-tool lists, user or admin approvals, audit logging, and prompt or context data-sharing review before teams connect agents to third-party MCP servers.
 - Enabling controlled pilots or PoCs with defined success metrics, safety and security boundaries, and go/no-go criteria.
 - Measuring and communicating the impact of these initiatives.
 - Promoting and overseeing leaders' alignment and commitment.
