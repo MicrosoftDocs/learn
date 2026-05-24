@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-generative-ai-center-excellence.introduction-generative-ai-center-excellence
-title: Introduction to the AI Center of Excellence
+title: Introduction to the AI center of excellence
 metadata:
   title: Introduction to the AI Center of Excellence
-  description: Introduction to the AI Center of Excellence
-  ms.date: 04/05/2025
+  description: Define the purpose of an AI Center of Excellence and how it sets strategy, standards, governance guardrails, reusable patterns, intake workflows, and skilling for responsible AI adoption.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
