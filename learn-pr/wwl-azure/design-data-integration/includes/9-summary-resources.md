@@ -19,7 +19,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with self-paced training
 
-- [Explore Azure Databricks](/training/wwl-databricks/explore-azure-databricks/) for data analytics using Apache Spark.
+- [Explore Azure Databricks](/training/modules/explore-azure-databricks) for data analytics using Apache Spark.
 
 - Review [Introduction to Azure Data Lake Storage Gen2](/training/modules/introduction-to-azure-data-lake-storage/) a scalable, secure, cloud-based solution for data lake storage.
 
