@@ -2,10 +2,10 @@
 uid: learn-wwl.secure-data-access-in-fabric.exercise
 title: 'Exercise: Secure data access in Microsoft Fabric'
 metadata:
-  title: 'Exercise: Secure data access in Microsoft Fabric'
-  description: "Learn how to secure data access in Microsoft Fabric."
-  ms.date: 05/06/2025
-  author: wwlpublish
+  title: 'Exercise: Secure Data Access in Microsoft Fabric'
+  description: "Practice securing data access in Microsoft Fabric using workspace roles, item permissions, and OneLake security roles."
+  ms.date: 05/26/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: unit
 durationInMinutes: 45

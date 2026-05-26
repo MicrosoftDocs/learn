@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-ai-agent-service-security-controls.agent-service-network-access
-title: Agent Service and Network Access
+title: Agent Service and network access
 metadata:
-  title: Agent Service and Network Access
-  description: Learn to configure network access for the Azure AI Agent Service.
-  ms.date: 03/21/2025
+  title: Agent Service and network access
+  description: Learn to configure private network access for Foundry Agent Service.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

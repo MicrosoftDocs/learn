@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-ai-agent-service-security-controls.understand-azure-ai-agent-service
-title: Understand the Azure AI Agent Service
+title: Understand Microsoft Foundry Agent Service
 metadata:
-  title: Understand the Azure AI Agent Service
-  description: Learn about the Azure AI Agent Service.
-  ms.date: 03/21/2025
+  title: Understand Microsoft Foundry Agent Service
+  description: Learn what Microsoft Foundry Agent Service is and how to plan core security controls.
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

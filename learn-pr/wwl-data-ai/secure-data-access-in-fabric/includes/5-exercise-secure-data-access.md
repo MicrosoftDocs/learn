@@ -1,10 +1,10 @@
-Now it's your chance to secure data access in Microsoft Fabric.
-
-In this exercise, you learn how to secure data access in Fabric using the concepts explored in this module. 
+In this exercise, you practice securing data access in Microsoft Fabric using workspace roles, item permissions, and OneLake security roles.
 
 > [!NOTE]
-> - You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial?azure-portal=true) to enable your Fabric trial license.
->- To complete the exercises in this lab, you'll need two users: one user should be assigned the Workspace Admin role, and the other will be assigned permissions throughout this lab. To assign roles to workspaces see [**Give access to your workspace**](/fabric/get-started/give-access-workspaces).
+> You need access to a Fabric paid or trial capacity to complete this exercise. See [Fabric trial](https://aka.ms/fabrictrial) for information about the free trial.
+
+> [!IMPORTANT]
+> This exercise requires **two user accounts**: one assigned the Workspace Admin role, and a second account to be assigned permissions throughout the lab. Set up both accounts before you begin. To assign workspace roles, see [Give access to your workspace](/fabric/get-started/give-access-workspaces).
 
 Launch the exercise and follow the instructions.
 
