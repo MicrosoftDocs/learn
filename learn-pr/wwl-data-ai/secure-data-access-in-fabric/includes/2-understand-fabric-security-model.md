@@ -4,7 +4,7 @@ Data access in organizations is often restricted by users' responsibilities and 
 
 Fabric evaluates access sequentially across three levels:
 
-1. **Microsoft Entra ID authentication** — checks whether the user can authenticate to Microsoft Entra ID.
+1. **Microsoft Entra ID authentication** — checks whether the user can authenticate with Microsoft Entra ID.
 2. **Fabric access** — checks whether the user can access Fabric.
 3. **Data security** — checks whether the user can perform the requested action on a table or file.
 

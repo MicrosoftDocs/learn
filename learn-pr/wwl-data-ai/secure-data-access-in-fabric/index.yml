@@ -3,7 +3,7 @@ uid: learn-wwl.secure-data-access-in-fabric
 metadata:
   title: Secure Data Access in Microsoft Fabric
   description: Implement workspace roles, item permissions, and OneLake security roles to control data access in Microsoft Fabric.
-  ms.date: 05/22/2026
+  ms.date: 05/26/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: module
@@ -17,7 +17,7 @@ abstract: |
   - Configure workspace roles and item permissions.
   - Apply granular permissions using T-SQL and OneLake security roles.
 prerequisites: |
-  - Familiarity with the Microsoft Fabric interface and basic concepts like workspaces and lakehouses.
+  - Experience working in Microsoft Fabric, including working with workspaces and lakehouses.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

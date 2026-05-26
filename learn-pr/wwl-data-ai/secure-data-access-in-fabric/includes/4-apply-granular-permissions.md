@@ -18,7 +18,7 @@ You can also apply row-level security, column-level security, and dynamic data m
 
 OneLake security uses a role-based access control (RBAC) model. You create security roles that define who can access which tables or folders, what level of access they have (Read or ReadWrite), and optional constraints like row or column filters. OneLake enforces these roles consistently across all Fabric compute engines — Spark, SQL, and OneLake APIs.
 
-Use OneLake security roles to grant data access to users in the **Viewer** workspace role or with **Read** item permission. Only workspace **Admin** and **Member** roles can create or modify OneLake security roles.
+Users with **Admin**, **Member**, or **Contributor** workspace roles already have full read and write access to all OneLake data — OneLake security roles don't restrict that access. Use OneLake security roles to grant specific data access to users in the **Viewer** workspace role or with only **Read** item permission, who have no OneLake data access by default. Only workspace **Admin** and **Member** roles can create or modify OneLake security roles.
 
 Each OneLake security role has four components:
 
@@ -42,6 +42,6 @@ To create an OneLake security role:
 :::image type="content" source="../media/onelake-role-creation.png" alt-text="Screenshot of OneLake security role data selection screen showing tables and folders." lightbox="../media/onelake-role-creation.png":::
 
 > [!IMPORTANT]
-> Two default roles are automatically created in every new lakehouse: **DefaultReader** gives read access to all data, and **DefaultReadWriter** gives read/write access to all folders. When you add a user to a custom role, also remove them from **DefaultReader** — otherwise they retain full read access through the default role.
+> Every new lakehouse automatically includes a **DefaultReader** role. When you share a lakehouse with the **Read all Apache Spark and subscribe to events** permission, the recipient is added to DefaultReader and gets read access to all data. When you restrict a user to a custom role, also remove them from **DefaultReader** — otherwise they still have full read access through the default role.
 
 For more information, see [OneLake security access control model](/fabric/onelake/security/data-access-control-model?azure-portal=true).

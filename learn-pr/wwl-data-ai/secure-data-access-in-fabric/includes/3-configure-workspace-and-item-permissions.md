@@ -19,7 +19,7 @@ There are four workspace roles:
 > [!NOTE]
 > Viewers can see Fabric items listed in the workspace, but have no access to the underlying data stored in OneLake by default. Use OneLake security roles to grant Viewers access to specific tables or folders.
 
-For the data engineer, the **Contributor** role is the right fit. It lets them create new Fabric items in the workspace and read all data in the existing lakehouse, without giving them share or permission management capabilities. For the full list of permissions associated with each role, see [Roles in workspaces](/fabric/get-started/roles-workspaces?azure-portal=true).
+Returning to the scenario: the new data engineer who joined your team needs to create Fabric items and read all data in the existing lakehouse. The **Contributor** role is the right fit — it grants those capabilities without giving them share or permission management capabilities. For the full list of permissions associated with each role, see [Roles in workspaces](/fabric/get-started/roles-workspaces?azure-portal=true).
 
 ### Assign a workspace role
 
@@ -45,7 +45,7 @@ To share an item and configure its permissions, select the ellipsis (**...**) ne
 
 ### Lakehouse sharing permissions
 
-When you share a lakehouse, **Read** permission is always granted — it lets the recipient open the item and connect to the SQL analytics endpoint, but doesn't grant access to any data. You can also grant additional permissions:
+When you share a lakehouse, **Read** permission is always granted — it lets the recipient see the item's metadata and view any associated reports, but doesn't grant access to any underlying data in SQL or OneLake. You can also grant additional permissions:
 
 | Additional permission | What it allows |
 |---|---|
@@ -53,4 +53,4 @@ When you share a lakehouse, **Read** permission is always granted — it lets th
 | **Read all Apache Spark and subscribe to events** | Read lakehouse data through Apache Spark and OneLake APIs |
 | **Build reports on the default semantic model** | Create Power BI reports on the default semantic model |
 
-The **Read all Apache Spark and subscribe to events** permission adds the recipient to the lakehouse's DefaultReader role, which grants read access to all data in the lakehouse. If you need to limit access to specific tables or folders, OneLake security roles let you do that — you'll learn how in the next unit.
+Both additional data access permissions grant access to all data in the lakehouse by default. Granting **Read all Apache Spark and subscribe to events** also adds the recipient to the lakehouse's **DefaultReader** OneLake security role. In the next unit, you'll learn how to restrict that access further. Use T-SQL permissions to restrict SQL endpoint access, and OneLake security roles to restrict Spark and OneLake API access.

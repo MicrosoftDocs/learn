@@ -4,7 +4,7 @@ title: 'Exercise: Secure data access in Microsoft Fabric'
 metadata:
   title: 'Exercise: Secure Data Access in Microsoft Fabric'
   description: "Practice securing data access in Microsoft Fabric using workspace roles, item permissions, and OneLake security roles."
-  ms.date: 05/22/2026
+  ms.date: 05/26/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit

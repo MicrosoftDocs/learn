@@ -4,7 +4,7 @@ title: Apply granular permissions
 metadata:
   title: Apply Granular Permissions
   description: "Apply T-SQL granular permissions and create OneLake security roles to control data access in Microsoft Fabric."
-  ms.date: 05/22/2026
+  ms.date: 05/26/2026
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
