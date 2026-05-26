@@ -9,13 +9,13 @@ This scenario depicts a case where Microsoft Defender for Endpoint detects a mal
  
 The victim receives a malicious email on a personal email account not protected by Microsoft Defender for Office 365 (MDO) or a USB drive and opens the attachment.
 Once the attachment opens, the malware infects the computer. The user is unaware that an attack occurred. But
-Microsoft Defender for Endpoints (MDE) detects this attack, raises an alert to security operations, and provides details about the threat to the Security team.
+Microsoft Defender for Endpoint (MDE) detects this attack, raises an alert to security operations, and provides details about the threat to the Security team.
 Disable user access from device while infected - MDE communicates to Intune that the risk level on this endpoint has changed. An Intune Compliance Policy configured with an MDE risk level severity is triggered and marks the account as noncompliant with organizations policy. The Conditional Access created in Microsoft Entra ID blocks user access to apps.  
  
 ### Remediation
   
 MDE remediates threat – either via automated remediation, security analyst approval of automated remediation, or analyst manual investigation of threat.  
-MDE also remediates this threat across your enterprise and across our Microsoft MDE customers by adding information on this attack to Microsoft Threat Intelligence system 
+Microsoft Defender for Endpoint (MDE) also remediates this threat across your enterprise and across the broader MDE customer base by contributing information about this attack to the Microsoft Threat Intelligence system. 
   
 ### Share Intelligence and Restore Access  
   

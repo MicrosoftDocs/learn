@@ -3,20 +3,21 @@ uid: learn.introduction-ai-agent-service-security-controls
 metadata:
   ms.author: orthomas
   author: Orin-Thomas
-  ms.date: 03/21/2025
+  ms.date: 05/22/2026
   ms.update-cycle: 180-days
-  title: Introduction to AI Agent Service Security Controls
-  description: An overview of Azure AI Agent Service security controls.
+  title: Introduction to Microsoft Foundry Agent Service security controls
+  description: Learn about security controls for Microsoft Foundry Agent Service, including identity, RBAC, networking, data access, guardrails, and monitoring.
   ms.topic: module
   moduleType: standard
   ms.service: artificial-intelligence
   ms.collection: ce-advocates-ai-copilot
-title: Introduction to AI Agent Service Security Controls
-summary: An introductory overview of Azure AI Agent Service security controls.
+title: Introduction to Microsoft Foundry Agent Service security controls
+summary: Learn how to secure Microsoft Foundry Agent Service with current Foundry resource and project controls.
 abstract:  |
   After completing this module, you'll be able to:
-  -	To configure RBAC roles related to Azure AI hubs and projects and how those influence Azure AI agent service agents.
-  - To configure network access restrictions on inbound and outbound network traffic to the hubs that Azure AI agent service agents.
+  - Describe Microsoft Foundry Agent Service and the transition from Agents (classic), which retire on March 31, 2027.
+  - Identify security boundaries for Foundry resources and Foundry projects.
+  - Apply identity, RBAC, network, data-source, content-safety, and monitoring controls for agent workloads.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Fundamental security concepts
@@ -36,4 +37,4 @@ units:
 - learn.introduction-ai-agent-service-security-controls.knowledge-check
 - learn.introduction-ai-agent-service-security-controls.summary
 badge:
-  uid: learn.introduction-to-ai-agent-service-security-controls-badge
+  uid: learn.introduction-ai-agent-service-security-controls-badge

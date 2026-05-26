@@ -17,8 +17,8 @@ You can use the Chat view in Ask agent mode for a wide range of topics. For exam
 
 - Ask questions about coding and technology concepts ("`What is a linked list?`", "`top 10 popular web frameworks`")
 - Brainstorm ideas on how to best solve a coding problem ("`How to add auth to my project?`")
-- Explain a block of code ("`#codebase /explain`", "`What does this code do?`")
-- Propose code fixes ("`#codebase /fix`", "`This method gives a FileNotFoundException`")
+- Explain a block of code ("`/explain #codebase`", "`What does this code do?`")
+- Propose code fixes ("`/fix #codebase`", "`This method gives a FileNotFoundException`")
 - Ask about VS Code settings ("`@vscode how do I disable the minimap?`")
 
 ![Screenshot showing the Chat view asking about the Singleton pattern.](../media/explain-chat-view-slash-explain-singleton-pattern.png)
@@ -47,7 +47,7 @@ The Ask agent mode supports the following interface features:
 
 The inline chat feature allows you to start a chat session directly from the editor. The inline chat is useful when you want to ask questions about specific code (sections, lines, or variables) without leaving the editor. Responses are displayed in the inline chat window.
 
-To access the inline chat, you can select **Editor Inline Chat** from the GitHub Copilot menu, or use the **Ctrl+I** keyboard shortcut. Use the Escape key to close the inline chat window.
+To access the inline chat, you can select **Open Inline Chat** from the GitHub Copilot menu, or use the **Ctrl+I** keyboard shortcut. Use the Escape key to close the inline chat window.
 
 You can use the inline chat to inquire about general coding topics, but it's best suited for asking questions to the code in the active editor. For example:
 
@@ -79,7 +79,7 @@ To access the Explain smart action, you can right-click in the active code edito
 
 The Quick Chat feature allows you to ask a quick question and get back into what you're doing. The Quick Chat feature is useful when you want to ask a quick question without influencing the chat history that you're building in the Chat view. Responses are displayed in the Quick Chat window.
 
-To access the Quick Chat window, you can select **Quick Chat** from the GitHub Copilot menu, or use the **Ctrl+Shift+Alt+L** keyboard shortcut.
+To access the Quick Chat window, you can select **Open Quick Chat** from the GitHub Copilot menu, or use the **Ctrl+Shift+Alt+L** keyboard shortcut.
 
 The Quick Chat window supports the same context features provided by the Chat view in Ask agent mode, but it doesn't provide a way to manage the chat history. The Quick Chat window is designed for quick questions and answers, so it doesn't include all of the features provided by the Chat view.
 

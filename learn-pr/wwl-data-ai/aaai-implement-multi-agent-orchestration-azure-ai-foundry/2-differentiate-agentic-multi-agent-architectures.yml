@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.differentiate-agentic-multi-agent-architectures
+title: Differentiate agentic AI from multi-agent AI architectures
+metadata:
+  title: Differentiate Agentic AI from Multi-Agent AI Architectures
+  description: "Differentiate agentic AI from multi-agent AI architectures."
+  ms.date: 05/21/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-differentiate-agentic-multi-agent-architectures.md)]

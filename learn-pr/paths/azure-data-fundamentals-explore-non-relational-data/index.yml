@@ -25,6 +25,10 @@ roles:
 - student
 products:
 - azure
+- azure-cosmos-db
+- azure-table-storage
+- azure-blob-storage
+- azure-files
 subjects:
 - data-management
 modules:

@@ -3,14 +3,14 @@ uid: learn.dpu.choose-the-right-moment
 title: Choose the right moment to modernize Windows Server
 metadata:
   title: Choose The Right Moment To Modernize Windows Server
-  description: This module helps you evaluate Windows Server modernization by identifying security, operational, and business signals that indicate misalignment with evolving requirements. You’ll learn how to assess environments and determine when a modernization evaluation might be needed.
+  description: This module helps you evaluate when to modernize environments running Windows Server 2016 or Windows Server 2019. You’ll learn how to identify security, operational, and business signals that indicate it might be time to move to Windows Server 2025.
   ms.date: 05/05/2026
   author: Stephanie-Rosenzweig
   ms.author: v-stephanier
   ms.topic: module
   ms.service: windows-server
 summary: >
-  This module helps you evaluate Windows Server modernization by identifying key security, operational, and business signals that indicate misalignment with evolving requirements. It explains how to assess your environment and determine whether a modernization evaluation is needed.
+  This module helps you evaluate when to modernize environments running Windows Server 2016 or Windows Server 2019. It explains how to identify key security, operational, and business signals that indicate it might be time to move to Windows Server 2025.
 abstract: |
   By the end of this module, you’ll be able to:
   - Describe how Windows Server is positioned within modern on-premises and hybrid environments

@@ -25,6 +25,7 @@ roles:
 - student
 products:
 - azure
+- azure-sql-database
 subjects:
 - data-analytics
 modules:

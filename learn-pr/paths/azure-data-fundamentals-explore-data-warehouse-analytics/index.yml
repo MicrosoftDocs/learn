@@ -24,6 +24,12 @@ roles:
 - student
 products:
 - azure
+- fabric
+- power-bi
+- azure-databricks
+- azure-data-factory
+- azure-storage
+- azure-event-hubs
 subjects:
 - data-analytics
 modules:

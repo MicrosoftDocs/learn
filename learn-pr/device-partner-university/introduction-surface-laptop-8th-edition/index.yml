@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition
+title: Introduction to Microsoft Surface Laptop for Business (8th Edition)
+metadata:
+  title: Introduction to Microsoft Surface Laptop for Business (8th Edition)
+  description: >
+    In this module, you'll learn about the new features and capabilities of the Microsoft Surface Laptop for Business (8th Edition), how it works, and when to use it.
+  ms.date: 05/19/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn about the new features and capabilities of the Microsoft Surface Laptop for Business (8th Edition), how it works, and when to use it.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the new features and capabilities of the Microsoft Surface Laptop for Business (8th Edition).
+  - Explain how the Microsoft Surface Laptop for Business (8th Edition) works.
+  - Identify when to use the Microsoft Surface Laptop for Business (8th Edition).
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-surface-laptop-8th-edition-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.introduction
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.what-is-surface-laptop-for-business-8th-edition
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.how-surface-laptop-for-business-8th-edition-works
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.how-surface-laptop-for-business-8th-edition-ai-features-work
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.when-to-use-surface-laptop-for-business-8th-edition
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.knowledge-check
+  - learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.summary
+badge:
+  uid: learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.what-is-surface-laptop-for-business-8th-edition
+title: What is Surface Laptop for Business (8th Edition)?
+metadata:
+  title: What Is Surface Laptop For Business (8th Edition)?
+  description: This content is part of the "introduction-surface-laptop-8th-edition" module.
+  ms.date: 05/19/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-surface-laptop-for-business-8th-edition.md)]

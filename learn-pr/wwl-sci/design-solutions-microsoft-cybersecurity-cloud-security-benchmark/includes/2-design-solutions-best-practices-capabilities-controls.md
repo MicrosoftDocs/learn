@@ -1,4 +1,4 @@
-As a Security Architect, you should approach solution design by using Microsoft’s security frameworks in unison rather than in silos. In practice, this means applying Zero Trust principles as your strategic mindset, using the Microsoft Cybersecurity Reference Architecture (MCRA) as an end-to-end blueprint to cover all security domains, and implementing the Microsoft Cloud Security Benchmark (MCSB) controls to configure and validate each domain according to best practices. This integrated approach ensures that all key cybersecurity capabilities – identity, devices, networks, applications, data, monitoring, etc. – are accounted for in your design and aligned with proven recommendations.
+As a Security Architect, you should approach solution design by using Microsoft’s security frameworks in unison rather than in silos. In practice, this means applying Zero Trust principles as your strategic mindset, using the Microsoft Cybersecurity Reference Architecture (MCRA) as an end-to-end blueprint to cover all security domains, and implementing the Microsoft Cloud Security Benchmark (MCSB) controls to configure and validate each domain according to best practices. This integrated approach ensures that all key cybersecurity capabilities (identity, devices, networks, applications, data, and monitoring) are accounted for in your design and aligned with proven recommendations.
 
 With this unified strategy in mind, let's break down the key security capability areas and the best practices for each, showing how to apply Zero Trust principles, MCRA's architectural guidance, and MCSB controls in a practical way.
 
@@ -61,7 +61,7 @@ Network controls remain essential for defense-in-depth and breach containment. K
 
 ### Application security and DevOps
 
-Applications and Azure pipelines must be secured to prevent vulnerabilities. Key practices include:
+Applications and Azure Pipelines must be secured to prevent vulnerabilities. Key practices include:
 
 - **Secure configuration of cloud services**: Apply security benchmark baseline settings to all cloud services. Use managed identities with least privilege, secure vaults for secrets, and policy enforcement for compliance. *MCSB Controls: PV-2 (secure configurations), AM-2 (managed identities).*
 - **Integrate DevSecOps**: Embed static application security testing (SAST), dependency scanning, and secret scanning in CI/CD (Continuous Integration/Continuous Delivery) pipelines. Enforce code quality gates before deployment. *MCSB Controls: DS-6 (secure DevOps), DS-7 (code scanning).*
@@ -73,9 +73,9 @@ Applications and Azure pipelines must be secured to prevent vulnerabilities. Key
 | [PV-2](/security/benchmark/azure/mcsb-v2-posture-vulnerability-management#pv-2) | Audit and enforce secure configurations |
 | [AM-2](/security/benchmark/azure/mcsb-v2-asset-management#am-2) | Use only approved services |
 | [AM-5](/security/benchmark/azure/mcsb-v2-asset-management#am-5) | Use only approved applications in virtual machine |
-| [DS-2](/security/benchmark/azure/mcsb-v2-devop-security#ds-2) | Secure the software supply chain |
-| [DS-6](/security/benchmark/azure/mcsb-v2-devop-security#ds-6) | Secure the workload lifecycle |
-| [DS-7](/security/benchmark/azure/mcsb-v2-devop-security#ds-7) | Implement DevOps logging and monitoring |
+| [DS-2](/security/benchmark/azure/mcsb-v2-devops-security#ds-2) | Secure the software supply chain |
+| [DS-6](/security/benchmark/azure/mcsb-v2-devops-security#ds-6) | Secure the workload lifecycle |
+| [DS-7](/security/benchmark/azure/mcsb-v2-devops-security#ds-7) | Implement DevOps logging and monitoring |
 | [DP-3](/security/benchmark/azure/mcsb-v2-data-protection#dp-3) | Encrypt sensitive data in transit |
 | [DP-4](/security/benchmark/azure/mcsb-v2-data-protection#dp-4) | Enable data at rest encryption by default |
 
@@ -138,7 +138,7 @@ Maintain and improve security posture continuously. Key practices include:
 
 ## Bringing it all together
 
-As a Security Architect, your role is to design solutions that apply best practices across security domains into a cohesive defense strategy. These domains don't operate in isolation—they reinforce each other. Strong identity controls reduce the attack surface for endpoints. Network segmentation limits the blast radius if an endpoint is compromised. Data protection ensures that even if attackers breach your perimeter, sensitive information remains secure. Threat detection closes the loop by identifying gaps and driving continuous improvement.
+As a Security Architect, your role is to design solutions that apply best practices across security domains into a cohesive defense strategy. These domains don't operate in isolation; they reinforce each other. Strong identity controls reduce the attack surface for endpoints. Network segmentation limits the blast radius if an endpoint is compromised. Data protection ensures that even if attackers breach your perimeter, sensitive information remains secure. Threat detection closes the loop by identifying gaps and driving continuous improvement.
 
 The three frameworks work together to guide this integrated approach:
 

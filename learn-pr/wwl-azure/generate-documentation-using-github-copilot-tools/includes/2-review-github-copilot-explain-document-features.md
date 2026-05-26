@@ -22,9 +22,7 @@ The following GitHub Copilot features can be used to generate inline code docume
 
 - Agent mode: Use the Agent mode to autonomously generate inline code documentation for specified code projects, files, classes, or methods. Have the agent perform other tasks during or after the documentation process. Accept or reject the updates when the agent has completed the assigned tasks.
 
-- Inline chat - Use an inline chat session to work directly in the code editor. The inline chat is useful when you want to document specific code (classes, methods, or code blocks) without leaving the editor. You can provide specific instructions in the prompt or use the `/doc` slash command without specific information if you want. Updates are displayed in the code editor and can be accepted or rejected. You can also choose the option to rerun the prompt with or without updates.
-
-- Generate Docs smart action: Use the Generate Docs smart action to generate inline code documentation for a selected class, method, or code block. The Generate Docs smart action is useful when you don't have specific requirements that would require a prompt. Updates are displayed in the code editor and can be accepted or rejected. You can also rerun the smart action.
+- Inline chat - Use an inline chat session to work directly in the code editor. The inline chat is useful when you want to document specific code (classes, methods, or code blocks) without leaving the editor. You can provide specific instructions in the prompt Updates are displayed in the code editor and can be accepted or rejected.
 
 ## Generate project documentation using GitHub Copilot
 

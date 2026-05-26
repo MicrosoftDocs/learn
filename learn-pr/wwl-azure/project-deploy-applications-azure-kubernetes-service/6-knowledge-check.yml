@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/05/2025
-  author: Orin-Thomas 
+  ms.date: 05/10/2026
+  author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
-  ms.custom:
-  - N/A
-  module_assessment: true
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
@@ -23,10 +20,10 @@ quiz:
     choices:
     - content: "To create a new node pool in the AKS cluster"
       isCorrect: false
-      explanation: "Incorrect. The service is not related to creating a new node pool."
+      explanation: "Incorrect. The service isn't related to creating a new node pool."
     - content: "To provide access to the Bash prompt on port 80"
       isCorrect: false
-      explanation: "Incorrect. The service is not related to providing access to the Bash prompt."
+      explanation: "Incorrect. The service isn't related to providing access to the Bash prompt."
     - content: "To provide load balanced access to the pods in the deployment via a public IP address on port 80"
       isCorrect: true
       explanation: "Correct. The service is used to provide load balanced access to the pods in the deployment via a public IP address on port 80."
@@ -41,3 +38,36 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Enabling DevOps practices aims to automate and validate the creation and teardown of environments to deliver secure and stable application hosting platforms."
+  - content: "Why does each Kubernetes deployment manifest in the guided project include a `nodeSelector` field?"
+    choices:
+    - content: "To ensure Linux container pods run on Linux nodes and Windows container pods run on Windows nodes in the mixed-OS AKS cluster."
+      isCorrect: true
+      explanation: "Correct. In an AKS cluster that contains both Linux and Windows node pools, `nodeSelector` matches pod scheduling to the appropriate operating system using labels such as `kubernetes.io/os: linux` or `kubernetes.io/os: windows`."
+    - content: "To restrict the deployment to nodes that have sufficient CPU and memory."
+      isCorrect: false
+      explanation: "Incorrect. CPU and memory scheduling is handled by Kubernetes resource requests and limits, not by `nodeSelector`."
+    - content: "To enable horizontal pod autoscaling for the deployment."
+      isCorrect: false
+      explanation: "Incorrect. Horizontal pod autoscaling is configured by a separate HorizontalPodAutoscaler resource, not by `nodeSelector`."
+  - content: "What is the purpose of the `az acr build` command used to push container images to Azure Container Registry in this guided project?"
+    choices:
+    - content: "It builds the container image locally on the developer's workstation by using Docker, then uploads it to the registry."
+      isCorrect: false
+      explanation: "Incorrect. `az acr build` doesn't run the build on the local machine; it offloads the build to ACR Tasks in the cloud."
+    - content: "It builds the container image inside Azure Container Registry by using ACR Tasks, so the local machine doesn't need a Docker daemon."
+      isCorrect: true
+      explanation: "Correct. `az acr build` queues a build in ACR Tasks, which runs in Azure and pushes the resulting image directly into the registry. This is especially useful for building Windows images from a Linux or Cloud Shell host."
+    - content: "It downloads a prebuilt container image from Docker Hub and re-tags it for the registry."
+      isCorrect: false
+      explanation: "Incorrect. `az acr build` builds an image from a Dockerfile in your source context; it doesn't import images from Docker Hub. The `az acr import` command is what imports existing images."
+  - content: "In the guided project, two custom Kubernetes namespaces are created in the AKS cluster. What is the primary reason for using separate namespaces for the Linux and Windows workloads?"
+    choices:
+    - content: "AKS requires every container image stored in Azure Container Registry to have its own namespace."
+      isCorrect: false
+      explanation: "Incorrect. There's no requirement that maps ACR repositories to Kubernetes namespaces one-to-one."
+    - content: "Namespaces are required before an AKS cluster can be created."
+      isCorrect: false
+      explanation: "Incorrect. AKS clusters are created with default namespaces (such as `default`, `kube-system`, `kube-public`). Custom namespaces are an organizational choice made after the cluster exists."
+    - content: "Namespaces provide logical isolation for resources within a cluster, making it easier to manage, scope access to, and organize related workloads."
+      isCorrect: true
+      explanation: "Correct. Kubernetes namespaces partition resources within a single cluster. In this guided project, separate namespaces keep the Linux and Windows deployments and services organized and individually addressable."

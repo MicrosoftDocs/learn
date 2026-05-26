@@ -3,7 +3,7 @@ uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
   title: Explore Fundamentals Of Azure Cosmos DB
   description: "Explore the features and capabilities of Azure Cosmos DB, Identify supported APIs, and interact with a Cosmos DB database."
-  ms.date: 03/12/2026
+  ms.date: 05/20/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module-standard-task-based
@@ -11,9 +11,9 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-cosmos-db
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore fundamentals of Azure Cosmos DB
-summary: Azure Cosmos DB provides a highly scalable store for non-relational data.
+summary: Azure Cosmos DB provides a highly scalable store for nonrelational data.
 abstract: |
   In this module, learn how to:
 
@@ -34,6 +34,7 @@ roles:
 - student
 products:
 - azure
+- azure-cosmos-db
 subjects:
 - databases
 units:

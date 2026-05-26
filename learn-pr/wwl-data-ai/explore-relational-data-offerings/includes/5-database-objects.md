@@ -13,6 +13,8 @@ FROM Order AS o JOIN Customer AS c
 ON o.Customer = c.ID;
 ```
 
+![Diagram representing the concept of a view in a database.](../media/view.png)
+
 You can query the view and filter the data in much the same way as a table. The following query finds details of orders for customers who live in Seattle:
 
 ```SQL

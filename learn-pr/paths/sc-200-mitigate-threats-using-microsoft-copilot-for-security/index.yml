@@ -34,6 +34,6 @@ modules:
 - learn-wwl.security-copilot-getting-started
 - learn.security-copilot-describe-core-features
 - learn.security-copilot-embedded-experiences
-- learn.security-copilot-exercises
+- learn.wwl.security-copilot-interactive-guides
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-copilot-for-security.trophy

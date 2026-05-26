@@ -1,10 +1,12 @@
-In this module, you learned how to manage the security settings of AI agent service agents by configuring the security of AI foundry hubs and projects. You learned about the different RBAC roles that are associated with AI Foundry, how managed identity relates to AI agents, and how you configure network access and restrictions.
+In this module, you learned how to secure Foundry Agent Service by using current Microsoft Foundry controls. You reviewed Foundry resource and project boundaries, Foundry RBAC roles, project managed identities, Microsoft Entra ID authentication, least-privilege data-source permissions, Standard Setup with private networking, and guardrails such as Prompt Shields. You also reviewed that agent guardrails and tool call or tool response scanning are preview or limited features that require checking supported risks and intervention points.
 
-## Other Resources
+## Other resources
 
 To continue your learning journey, go to:
 
-- [Role-based access control in Microsoft Foundry portal](/azure/ai-foundry/concepts/rbac-ai-foundry) 
-- [Create a new network-secured agent with user-managed identity](/azure/ai-services/agents/how-to/virtual-networks)
-- [How to create a secure Microsoft Foundry hub and project with a managed virtual network](/azure/ai-foundry/how-to/create-secure-ai-hub)
-- [Access on-premises resources from your Microsoft Foundry's managed network](/azure/ai-foundry/how-to/access-on-premises-resources)
+- [What is Microsoft Foundry Agent Service?](/azure/foundry/agents/overview)
+- [Role-based access control for Microsoft Foundry](/azure/foundry/concepts/rbac-foundry)
+- [Set up private networking for Foundry Agent Service](/azure/foundry/agents/how-to/virtual-networks)
+- [Migrate to the new agents developer experience](/azure/foundry/agents/how-to/migrate)
+- [Guardrails and controls overview in Microsoft Foundry](/azure/foundry/guardrails/guardrails-overview)
+- [Prompt Shields in Microsoft Foundry](/azure/foundry/openai/concepts/content-filter-prompt-shields)

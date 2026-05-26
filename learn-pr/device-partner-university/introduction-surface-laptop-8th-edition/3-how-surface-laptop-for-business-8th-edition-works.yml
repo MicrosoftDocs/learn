@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.introduction-to-microsoft-surface-laptop-8th-edition.how-surface-laptop-for-business-8th-edition-works
+title: How Surface Laptop for Business (8th Edition) works
+metadata:
+  title: How Surface Laptop For Business (8th Edition) Works
+  description: This content is part of the "introduction-surface-laptop-8th-edition" module.
+  ms.date: 05/19/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-how-surface-laptop-for-business-8th-edition-works.md)]

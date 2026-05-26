@@ -1,24 +1,76 @@
-![Diagram of Azure Cosmos DB as a store for multiple NoSQL formats.](../media/azure-cosmos-db.png)
+In the previous unit, you learned that Azure Cosmos DB is a highly scalable cloud database service for NoSQL data. In this unit, you'll explore what makes it different from traditional relational databases, how it organizes data internally, and when it's the right choice for your application.
 
-Azure Cosmos DB supports multiple application programming interfaces (APIs) that enable developers to use the programming semantics of many common kinds of data store to work with data in a Cosmos DB database. The internal data structure is abstracted, enabling developers to use Cosmos DB to store and query data using APIs with which they're already familiar.
+## What is Azure Cosmos DB?
+
+**Azure Cosmos DB** is a fully managed NoSQL database service on Azure—a platform-as-a-service (PaaS) offering. Microsoft handles all of the underlying infrastructure: server provisioning, patching, updates, and backups. You focus on your application logic while Cosmos DB handles the operational overhead.
+
+Cosmos DB is **schema-agnostic**. Items stored in the same container don't need to share the same structure. One item might have five properties; another in the same container could have 15 entirely different ones. This flexibility makes Cosmos DB well suited to applications where data shapes change over time or vary between records.
+
+Microsoft uses Cosmos DB internally for some of its most demanding services, including Xbox Live, Microsoft 365, and core parts of Azure. Those services collectively handle billions of operations per day, which gives you a sense of the scale Cosmos DB is built for.
+
+## How Azure Cosmos DB organizes data
+
+Cosmos DB uses a four-level resource hierarchy to organize your data:
+
+- **Account**: The top-level Azure resource. A single account can contain unlimited databases.
+- **Database**: A logical namespace that groups related containers together.
+- **Container**: The primary unit of storage and scaling. You configure the partition key, throughput, indexing policy, and an optional time-to-live (TTL) at the container level.
+- **Items**: Individual data entities stored inside a container. Depending on which API you use, items may be called documents, rows, nodes, or edges.
+
+The **partition key** is a property you choose to distribute data across logical partitions. Each logical partition can hold up to 20 GB of data. A well-chosen partition key—one with many distinct values and an even spread of data across those values—is important for keeping throughput balanced as the database grows.
+
+![Diagram explaining how Azure Cosmos DB organizes data.](../media/cosmos-db-hierarchy.png)
+
+Cosmos DB automatically creates and maintains indexes on all item properties by default. You don't need to define a schema upfront or manage indexes manually; the service handles both.
+
+## Global distribution and performance
+
+Cosmos DB is built for global distribution. Add Azure regions to your account at any time, and the service automatically replicates your data to each one. Users in different locations read from and write to the nearest regional replica, which keeps latency low no matter where they are.
+
+Multi-region write accounts provide high availability guarantees. At the 99th percentile, reads typically complete in around 4 milliseconds and writes in around 5 milliseconds.
+
+Because replicas exist in multiple regions, you need to decide how consistent those replicas must be with each other. Cosmos DB offers five **consistency levels** so you can tune that trade-off:
+
+| Consistency level     | Description                                                                                   |
+| --------------------- | --------------------------------------------------------------------------------------------- |
+| **Strong**            | Every read reflects the most recent write.                                                    |
+| **Bounded staleness** | Reads lag behind writes by a configurable interval (time or version count).                   |
+| **Session**           | Consistency is guaranteed within a single client session. This is the most widely used level. |
+| **Consistent prefix** | Reads never see out-of-order writes but may see stale data.                                   |
+| **Eventual**          | Replicas converge over time; the weakest guarantee but the highest availability.              |
+
+For most transactional applications, Session consistency is the recommended starting point.
+
+![Diagram explaining global distribution and performance.](../media/cosmos-db-global-consistency.png)
+
+## Throughput modes and pricing
+
+Cosmos DB measures capacity in **Request Units per second (RU/s)**. One RU/s roughly equals the cost of reading a 1-KB item. Every operation—reads, writes, queries, and deletes—consumes some number of RU/s, giving you a single metric to reason about both performance and cost.
+
+Three throughput modes are available:
+
+| Throughput mode | Description                                                                                                    |
+| --------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Dedicated**   | Throughput is reserved exclusively for a single container.                                                     |
+| **Shared**      | Throughput is provisioned at the database level and shared across up to 25 containers.                         |
+| **Serverless**  | No throughput to provision upfront; you pay per request. Best for workloads with unpredictable or low traffic. |
 
 > [!NOTE]
-> An *API* is an *Application Programming Interface*. Database management systems (and other software frameworks) provide a set of APIs that developers can use to write programs that need to access data. The APIs vary for different database management systems.
+> Serverless accounts are limited to a single Azure region. If your application requires global distribution across multiple regions, use a provisioned throughput account instead.
 
-Cosmos DB uses indexes and partitioning to provide fast read and write performance and can scale to massive volumes of data. You can enable multi-region writes, adding the Azure regions of your choice to your Cosmos DB account so that globally distributed users can each work with data in their local replica.
+The **autoscale** option lets you set a maximum RU/s, and Cosmos DB adjusts capacity automatically within that range based on actual demand.
+
+![Diagram comparing provisioned and autoscale throughput modes in Azure Cosmos DB, showing how RU/s capacity is allocated in each mode.](../media/cosmos-db-throughput-modes.png)
 
 ## When to use Cosmos DB
 
-Cosmos DB is a highly scalable database management system. Cosmos DB automatically allocates space in a container for your partitions, and each partition can grow up to 10 GB in size. Indexes are created and maintained automatically. There's virtually no administrative overhead.
+Cosmos DB is a strong fit for applications that need flexible schema, global reach, and consistent low latency:
 
-Cosmos DB is a foundational service in Azure. Cosmos DB has been used by many of Microsoft's products for mission critical applications at global scale, including Skype, Xbox, Microsoft 365, Azure, and many others. Cosmos DB is highly suitable for the following scenarios:
+- **IoT and telemetry**: Fast ingestion of high-frequency device data, available for near-real-time processing.
+- **Gaming**: Player profiles, leaderboards, and in-game stats that require single-digit millisecond response times.
+- **Retail and e-commerce**: Product catalogs, shopping carts, and order pipelines at any scale.
+- **Web and mobile apps**: Personalized user experiences, social features, and third-party integrations.
 
-- *IoT and telematics*. These systems typically ingest large amounts of data in frequent bursts of activity. Cosmos DB can accept and store this information quickly. The data can then be used by analytics services, such as Azure Machine Learning, Microsoft Fabric, and Power BI. Additionally, you can process the data in real-time using Azure Functions that are triggered as data arrives in the database.
+Some workloads aren't a good fit. If your application depends on complex multi-table joins, Azure SQL Database is better suited. For large-scale historical analytics, consider Microsoft Fabric or Azure Synapse Analytics instead.
 
-- *Retail and marketing*. Microsoft uses Cosmos DB for its own e-commerce platforms that run as part of Windows Store and Xbox Live. It's also used in the retail industry for storing catalog data and for event sourcing in order processing pipelines.
-
-- *Gaming*. The database tier is a crucial component of gaming applications. Modern games perform graphical processing on mobile/console clients, but rely on the cloud to deliver customized and personalized content like in-game stats, social media integration, and high-score leaderboards. Games often require single-millisecond latencies for reads and write to provide an engaging in-game experience. A game database needs to be fast and be able to handle massive spikes in request rates during new game launches and feature updates.
-
-- *Web and mobile applications*. Azure Cosmos DB is commonly used within web and mobile applications, and is well suited for modeling social interactions, integrating with third-party services, and for building rich personalized experiences. The Cosmos DB SDKs can be used to build rich iOS and Android applications using the popular .NET MAUI framework.
-
-For additional information about uses for Cosmos DB, read [Common Azure Cosmos DB use cases](/azure/cosmos-db/use-cases).
+In the next unit, you'll look at the different APIs Cosmos DB supports and how each one lets you work with your data using familiar tools and query languages.
