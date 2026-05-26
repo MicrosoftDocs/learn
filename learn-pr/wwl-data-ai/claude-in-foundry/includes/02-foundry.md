@@ -11,9 +11,9 @@
 
 Microsoft Foundry uses a multi-level approach to organize and build AI solutions. Understanding this hierarchy is essential for setting up your development environment correctly.
 
-1. An **Azure Subscription** sets the billing construct and default access control for all resources.
-2. A **Microsoft Foundry Resource** provides the underlying Azure service container that provides the infrastructure, endpoints, and access to models.
-3. A **Foundry Project** is where you actually work with the built-in features, models, agents, and tools.
+1. An **Azure subscription** sets the billing construct and default access control for all resources.
+2. A **Microsoft Foundry resource** provides the underlying Azure service container that provides the infrastructure, endpoints, and access to models.
+3. A **Foundry project** is where you actually work with the built-in features, models, agents, and tools.
 
 ![Diagram of an Azure subscription containing A Foundry resource and a Foundry project.](../media/azure.png)
 
