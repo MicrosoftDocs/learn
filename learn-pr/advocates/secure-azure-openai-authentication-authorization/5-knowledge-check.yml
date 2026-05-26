@@ -2,52 +2,48 @@
 uid: learn.secure-azure-openai-authentication-authorization.knowledge-check
 title: Module assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Demonstrate your understanding of the module by answering these questions
-  ms.date: 10/16/2024
-  author: sarah-yo
-  ms.author: sayoung
+  ms.date: 05/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   module_assessment: true
 durationInMinutes: 4
-content: Choose the best response for each question. 
+content: Choose the best response for each question.
 quiz:
   questions:
-    - content: "Why are Microsoft Entra identities and Managed Identities better to use for authentication to Azure OpenAI?"
+    - content: "Why is Microsoft Entra ID keyless authentication preferred over API keys when an app connects to Azure OpenAI in Microsoft Foundry?"
       choices:
-        - content: "They provide a more secure method by avoiding the use of keys and secrets."
+        - content: "It avoids storing and transmitting shared API keys and lets you enforce least-privilege RBAC for each user, app, or managed identity."
           isCorrect: true
-          explanation: "This method enhances security by not explicitly handling sensitive credentials, making the authentication process more secure."
-        - content: "They allow developers to use keys and secrets for authentication."
+          explanation: "Microsoft Entra ID authentication uses identities and RBAC instead of shared keys, which improves security and provides more granular access control."
+        - content: "It makes every authenticated identity an administrator for the Foundry project."
           isCorrect: false
-          explanation: "Using keys and secrets for authentication isn't recommended from a security perspective, as handling sensitive credentials can lead to potential breaches."
-        - content: "They don't require any form of credential management."
+          explanation: "Microsoft Entra ID authentication doesn't grant access by itself. Each identity still needs an appropriate role assignment at the relevant scope."
+        - content: "It lets developers bypass Microsoft Entra ID and role assignments by using a hidden service key."
           isCorrect: false
-          explanation: "While they reduce the risk associated with handling credentials, some form of identity management is still required to ensure secure access."
-    - content: "What is an advantage of using user-assigned identities?"
+          explanation: "Keyless authentication uses Microsoft Entra ID tokens and RBAC. It doesn't rely on hidden shared keys."
+    - content: "What does a managed identity provide for an Azure-hosted workload that accesses Azure OpenAI?"
       choices:
-        - content: "They automatically expire after a short period, enhancing security."
-          isCorrect: false
-          explanation: "User-assigned identities don't automatically expire; they're managed and maintained independently."
-        - content: "They require less configuration and are easier to set up than system-assigned identities."
-          isCorrect: false
-          explanation: "User-assigned identities typically require more configuration compared to system-assigned identities, which are automatically managed by Azure."
-        - content: "They can be used across multiple resources and maintain their lifecycle independently."
+        - content: "A Microsoft Entra-managed identity for the Azure resource, so the workload can get tokens without storing app secrets."
           isCorrect: true
-          explanation: "User-assigned identities can be shared among multiple resources, providing flexibility and independent lifecycle management."
-    - content: "Which role provides access only to view the resource in the Azure portal, view the endpoint under \"Keys and Endpoint\", view resources and deployments in Azure OpenAI Studio, and use playground experiences, but doesn't allow creating or editing model deployments or managing keys?"
+          explanation: "Managed identities are Microsoft Entra workload identities for Azure resources. They let supported Azure-hosted workloads obtain tokens without developers managing application secrets."
+        - content: "A separate authentication system that replaces Microsoft Entra ID for Azure OpenAI."
+          isCorrect: false
+          explanation: "Managed identities are backed by Microsoft Entra ID. They aren't a separate authentication method from Microsoft Entra ID."
+        - content: "A user name and password that developers rotate manually for the Azure resource."
+          isCorrect: false
+          explanation: "Managed identities eliminate the need for developers to manage passwords, keys, or other application credentials for supported service-to-service authentication."
+    - content: "Which RBAC approach is appropriate for current Microsoft Foundry project access that uses Microsoft Entra authentication?"
       choices:
-        - content: "Cognitive Services OpenAI User"
+        - content: "Assign an appropriate Foundry role, such as Foundry User, at the Foundry resource or project scope to the user or managed identity, and make sure the person assigning it has Microsoft.Authorization/roleAssignments/write at that scope."
           isCorrect: true
-          explanation: "The Cognitive Services OpenAI User role has just the permissions necessary for viewing and using the existing resources without permissions for deployment or key management."
-        - content: "Cognitive Services OpenAI Contributor"
+          explanation: "Current Foundry project access uses Foundry roles, and creating role assignments requires a role such as Owner, User Access Administrator, Role Based Access Control Administrator, or an equivalent custom role with Microsoft.Authorization/roleAssignments/write."
+        - content: "Assign Reader to the app identity. Reader can call the Foundry data plane and assign any missing roles."
           isCorrect: false
-          explanation: "Cognitive Services OpenAI Contributor is incorrect because this role allows creating or editing model deployments, which go beyond just viewing and using resources."
-        - content: "Cognitive Services Contributor"
+          explanation: "Reader doesn't grant Foundry data-plane access and doesn't include permission to create role assignments."
+        - content: "Assign Cognitive Services OpenAI User for every current Foundry project because Cognitive Services roles are the current Foundry project roles."
           isCorrect: false
-          explanation: "Cognitive Services Contributor is incorrect because this role includes permissions for creating and managing Azure OpenAI resources, which exceeds the viewing and usage scope specified."
-    
-  
-
-  
+          explanation: "Cognitive Services OpenAI roles apply to classic Azure OpenAI resource scenarios. Current Microsoft Foundry projects use Foundry roles such as Foundry User, Foundry Project Manager, Foundry Account Owner, and Foundry Owner."
 
