@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should have:
   - Experience with the A2A protocol for agent discovery and connection from the Discover Azure AI Agents with A2A module or equivalent
-  - Familiarity with Azure Cosmos DB and Azure Cache for Redis
+  - Familiarity with Azure Cosmos DB and Azure Managed Redis
   - Experience building multi-agent solutions with Azure AI Foundry Agent Service
   - Proficiency in Python
 iconUrl: /training/achievements/generic-badge.svg

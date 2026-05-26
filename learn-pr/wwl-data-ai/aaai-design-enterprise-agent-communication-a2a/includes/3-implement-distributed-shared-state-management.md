@@ -1,4 +1,4 @@
-Multiple agents in Contoso Capital's platform must collaborate on the same research task. The market analysis agent writes sector trends for healthcare companies. The risk assessment agent adds stress-test results for those same companies. The regulatory compliance agent annotates which findings must appear in client disclosures. The final report agent reads all three contributions and synthesizes them. This collaborative pattern requires shared mutable state that persists across agent invocations and remains consistent when multiple agents update it concurrently.
+Azure Cosmos DB and Azure Managed Redis work together to manage shared state for multi-agent workflows. Cosmos DB provides durable, globally replicated storage for task state that must survive process restarts, while Managed Redis provides a low-latency cache and pub/sub channel for fast reads and real-time invalidation.
 
 | State Pattern | Use Case | Trade-offs |
 |---------------|----------|-----------|
@@ -244,21 +244,11 @@ This pattern trades increased message traffic for reduced cache staleness. For C
 The distributed state management patterns—durable storage in Cosmos DB, hot caching in Redis, optimistic concurrency with ETag checks, and pub/sub cache invalidation—enable safe collaboration across dozens of concurrent agents. However, Contoso Capital serves hundreds of clients with strict data isolation requirements. Shared state infrastructure must prevent one client's portfolio data from leaking into another client's context. You need context isolation strategies.
 
 > [!TIP]
-> **Pause and reflect:** Consider a scenario where two agents simultaneously update the same shared research state — the market analyst adds a "growth opportunity" finding while the risk assessor adds a "downgrade risk" finding. With optimistic locking (WATCH/MULTI/EXEC in Redis), one write will fail. How would you design the retry logic? Should the failed agent re-read the state (which now includes the other agent's finding) and adjust its own finding, or simply retry the original write?
+> **Pause and reflect:** Consider a scenario where two agents simultaneously update the same shared research state—the market analyst adds a "growth opportunity" finding while the risk assessor adds a "downgrade risk" finding. With optimistic concurrency control (ETag-based writes in Cosmos DB), one write fails with a 412 status code. How would you design the retry logic? Should the failed agent re-read the state (which now includes the other agent's finding) and adjust its own finding, or retry the original write?
 
-## Unit summary
+## Key takeaways
 
 - **Durable state in Cosmos DB** persists shared data across agent restarts, with partition keys scoped to research tasks or client portfolios.
 - **Hot caching in Redis** provides sub-millisecond reads for frequently accessed state, with TTL-based expiration to prevent stale data.
-- **Optimistic concurrency** with Redis WATCH/MULTI/EXEC or Cosmos DB ETags detects concurrent modifications and rejects conflicting writes rather than silently overwriting.
+- **Optimistic concurrency** with Cosmos DB ETags detects concurrent modifications and rejects conflicting writes rather than silently overwriting.
 - **Pub/sub cache invalidation** notifies agents when shared state changes, reducing polling overhead and ensuring sequential pipeline stages read current data.
-
-## Check your understanding
-
-**1. Two agents simultaneously update the same shared research state in Redis. With optimistic concurrency (WATCH/MULTI/EXEC), what happens?**
-
-- A. Both writes succeed because Redis handles concurrent writes automatically
-- B. The first write succeeds and the second write fails, requiring the second agent to re-read the state and retry
-- C. Redis locks the key until both agents complete their updates sequentially
-
-***Correct answer: B.*** With WATCH/MULTI/EXEC, Redis monitors the key for changes. If another client modifies the key between WATCH and EXEC, the transaction fails. The second agent must re-read the current state (which now includes the first agent's changes) and retry its update.

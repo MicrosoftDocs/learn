@@ -1,4 +1,4 @@
-Contoso Capital's agent platform serves hundreds of institutional clients, each with proprietary portfolio data, unique risk tolerances, and distinct regulatory requirements. Running dedicated agent instances for each client would provide perfect isolation but at prohibitive cost—hundreds of market analysis agents, risk agents, and compliance agents consuming compute resources even when idle. Running all clients through shared agent instances maximizes efficiency but creates serious data leakage risks if client contexts mix. Production multi-tenant agent systems must find the optimal point on the isolation-sharing spectrum.
+Azure Cosmos DB partition keys and Azure Managed Redis namespace prefixes provide storage-layer isolation for multi-tenant agent deployments. Azure AI Foundry Agent Service runs shared agent pools efficiently across hundreds of clients while these patterns ensure each client's data stays physically and logically separate.
 
 | Architecture | Isolation Strength | Resource Efficiency | Use Case |
 |--------------|-------------------|---------------------|----------|
@@ -141,7 +141,7 @@ The principle behind all leakage prevention measures: every data access must val
 
 Azure Cosmos DB's partition key feature provides physical data isolation boundaries that support multi-tenant architectures. When you create a container with partition key set to `tenantId`, Cosmos DB physically separates documents by that field—client A's data lives in different storage partitions than client B's data. Queries that specify the partition key can only access documents within that partition, preventing cross-tenant reads even if query logic is incorrect.
 
-For Contoso Capital's research task state, using `clientId` as the partition key ensures each client's tasks remain isolated. When the market analysis agent queries for client "acme-retirement"'s pending tasks, Cosmos DB only searches that client's partition. A malicious or buggy query cannot accidentally return tasks from other clients.
+For Contoso Capital's research task state, using `clientId` as the partition key ensures each client's tasks remain isolated. When the market analysis agent queries for client "acme-retirement"'s pending tasks, Cosmos DB only searches that client's partition. A malicious or buggy query can't accidentally return tasks from other clients.
 
 ```python
 # Tenant-isolated state access pattern
@@ -215,9 +215,9 @@ These audit logs provide evidence for regulatory compliance reviews. When financ
 
 With context isolation preventing data leakage, the final challenge emerges: agents sometimes produce contradictory conclusions about the same entity. When the market agent says "growth opportunity" and the risk agent says "avoid exposure," the system needs automated conflict detection and resolution rather than surfacing inconsistent recommendations to clients.
 
-## Unit summary
+## Key takeaways
 
-- **The isolation-sharing spectrum** ranges from full isolation (maximum security, highest cost) to full sharing (maximum efficiency, highest leakage risk) — most production systems use selective sharing with explicit access controls.
+- **The isolation-sharing spectrum** ranges from full isolation (maximum security, highest cost) to full sharing (maximum efficiency, highest leakage risk)—most production systems use selective sharing with explicit access controls.
 - **Context propagation architecture** ensures tenant identity flows through every agent-to-agent call, preventing context-free operations that could cross tenant boundaries.
 - **Partition-key-based isolation** in Cosmos DB and namespace-scoped keys in Redis physically prevent cross-tenant data access at the storage layer.
 - **Audit trails** for context access provide regulatory evidence that client data boundaries were never breached.

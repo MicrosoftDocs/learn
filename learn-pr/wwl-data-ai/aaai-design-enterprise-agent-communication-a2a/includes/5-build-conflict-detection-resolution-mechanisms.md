@@ -1,4 +1,4 @@
-Two specialized agents analyze Microsoft's Q2 2026 earnings report for Contoso Capital's clients. The market analysis agent identifies strong revenue growth and expanding margins, recommending increased position size—classify as "buy opportunity." The risk assessment agent models the same data against sector volatility and concentration limits, concluding current exposure already exceeds prudent thresholds—classify as "reduce exposure." Both agents complete successfully with high confidence scores. Both outputs are technically correct within their domains. Yet their recommendations directly contradict each other.
+Azure AI Foundry Agent Service runs the specialized agents whose outputs sometimes conflict when each agent optimizes for a different objective—returns, risk, or compliance. Azure AI Inference services power the consistency judge that detects semantic contradictions between agent outputs automatically, before conflicting recommendations reach clients.
 
 | Conflict Type | Root Cause | Detection Method | Resolution Strategy |
 |---------------|-----------|------------------|---------------------|
@@ -182,9 +182,8 @@ Are these outputs consistent?"""
 
 This detector combines fast rule-based checks for obvious conflicts with sophisticated LLM judging for subtle contradictions. When two agents produce recommendations on the same security, the system automatically validates their consistency before proceeding. Detecting the conflict is half the challenge—resolving it requires choosing or synthesizing a unified conclusion.
 
+## Key takeaways
 
-## Unit summary
-
-- **Agent conflict types** range from factual contradictions (mutually exclusive conclusions) to assessment differences (same data, different interpretations) to stale-data conflicts (agents working from different data snapshots).
-- **Semantic analysis** detects output inconsistencies by comparing agent outputs using embedding similarity and structured contradiction checking — catching conflicts that simple text comparison would miss.
-- **Confidence-weighted contradiction scores** quantify the severity of conflicts, enabling the system to prioritize which conflicts require resolution versus which represent acceptable analytical diversity.
+- **Agent conflict types** fall into three categories: resource contention conflicts (concurrent writes to shared state), output inconsistency conflicts (divergent domain logic), and deadline conflicts (incompatible timing dependencies)—each requiring a different detection and resolution approach.
+- **Semantic analysis** combines three escalating methods—rule-based validation, semantic similarity scoring, and LLM consistency judging—to detect conflicts ranging from obvious field-level mismatches to subtle strategic contradictions.
+- **LLM judge confidence scores** indicate how certain the system is that a conflict exists, enabling automatic resolution of high-confidence conflicts and escalation to human review for ambiguous cases.

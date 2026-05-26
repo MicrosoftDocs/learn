@@ -1,3 +1,5 @@
+Azure AI Foundry Agent Service coordinates conflict resolution by routing contradictory agent outputs through priority rules, consensus checks, or a synthesis agent depending on the conflict type. Azure Cosmos DB stores the complete audit trail for every conflict and resolution decision, providing the accountability record that regulated financial platforms require.
+
 ## Apply resolution strategies by conflict type
 
 Once a conflict is detected, the resolution strategy depends on the conflict's nature and severity. Four patterns handle the majority of agent conflicts in production systems.
@@ -14,7 +16,7 @@ Consensus resolution assumes individual agents can make errors but collective ju
 
 The synthesis agent generates outputs like: "Market analysis identifies growth opportunity warranting position increase. Risk assessment flags elevated concentration risk. Recommendation: increase position by 50% of originally proposed amount, maintaining concentration within acceptable bounds." This resolution preserves both agents' insights while producing actionable guidance.
 
-**Deadline conflict decoupling** addresses timing dependencies by restructuring the task plan. When Agent A requires Agent B's output but B cannot meet A's deadline, two patterns apply. First, proceed with approximation—Agent A uses historical data or cached results from B's previous analysis instead of waiting for current output. Second, decouple the dependency—modify the task so A's analysis doesn't require B's input, producing a less comprehensive but achievable result within constraints.
+**Deadline conflict decoupling** addresses timing dependencies by restructuring the task plan. When Agent A requires Agent B's output but B can't meet A's deadline, two patterns apply. First, proceed with approximation—Agent A uses historical data or cached results from B's previous analysis instead of waiting for current output. Second, decouple the dependency—modify the task so A's analysis doesn't require B's input, producing a less comprehensive but achievable result within constraints.
 
 ```python
 class ConflictResolver:
@@ -125,12 +127,12 @@ This audit data serves multiple purposes. Compliance teams use it to demonstrate
 
 When conflicts escalate to human review, the audit trail links the automated detection, attempted resolution strategies, and eventual human decision. If a compliance officer overrides the automated resolver's priority-based decision, that override gets logged with justification. Future similar conflicts can reference the precedent.
 
-The complete conflict lifecycle—detection, classification, resolution, and audit—transforms multi-agent coordination from a source of unreliable outputs into a robust production capability where specialized agents contribute their expertise and conflicts get resolved systematically rather than creating runtime failures.
+The complete conflict lifecycle—detection, classification, resolution, and audit—gives your multi-agent architecture the reliability it needs in production: contradictory outputs become a managed condition with a documented resolution trail.
 
-With enterprise-scale discovery, distributed state management, context isolation, and conflict resolution in place, you have the architectural patterns to operate agent ecosystems serving hundreds of clients across dozens of specialized agents. These patterns scale Contoso Capital's platform from prototype experimentation to production financial services infrastructure. Now you implement these patterns hands-on in the exercise.
+With enterprise-scale discovery, distributed state management, context isolation, and conflict resolution in place, you have the architectural patterns to operate agent ecosystems serving hundreds of clients across dozens of specialized agents. These patterns represent the design direction for Contoso Capital's platform. Because Foundry A2A features are currently in preview and not recommended for production workloads, verify current GA status and any feature constraints before deploying these patterns to production financial services infrastructure.
 
-## Unit summary
+## Key takeaways
 
-- **Resolution strategies vary by conflict type**: factual contradictions use authoritative source arbitration, assessment differences use weighted aggregation, and stale-data conflicts trigger data refresh.
+- **Resolution strategies vary by conflict type**: priority-based resolution selects the highest-authority agent's output, consensus-based resolution aggregates multiple agent judgments, and orchestrator synthesis generates a unified recommendation when neither approach is sufficient.
 - **Confidence-weighted resolution** selects the higher-confidence output when analytical perspectives conflict, with explicit justification logging for transparency.
-- **Audit trails** log every conflict detection, resolution strategy applied, winning/losing outputs, and justification — creating a complete accountability record for regulatory review and system improvement.
+- **Audit trails** log every conflict detection, resolution strategy applied, winning/losing outputs, and justification—creating a complete accountability record for regulatory review and system improvement.

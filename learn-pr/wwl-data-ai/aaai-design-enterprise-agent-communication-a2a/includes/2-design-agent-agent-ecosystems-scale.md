@@ -1,4 +1,4 @@
-Every A2A agent advertises its capabilities via an Agent Card served at `/.well-known/agent.json`. A client discovers an agent by fetching this JSON document, which declares what tasks the agent can perform, what parameters it accepts, and how to invoke it. This works for two or three agents with known endpoints, but when your ecosystem grows to dozens of specialized agents distributed across regions, hardcoding these endpoints becomes a maintenance nightmare and prevents dynamic scaling.
+Azure AI Foundry Agent Service hosts A2A agents as independently deployable services, each advertising its capabilities through an authenticated agent card at the `agentCard/v0.3` endpoint. Azure Cosmos DB provides the central discovery registry where agents register on startup and clients query at runtime—eliminating hardcoded endpoint dependencies and supporting ecosystems that scale to hundreds of agents across regions.
 
 | Challenge | Impact | Solution Pattern |
 |-----------|--------|------------------|
@@ -150,9 +150,9 @@ This lifecycle pattern enables zero-downtime deployments. New agent versions reg
 
 With a scalable discovery registry and capability-based routing in place, the next challenge emerges—multiple agents need to collaborate on shared research tasks by reading and writing common state. Traditional agent memory patterns break down when state must survive process restarts and remain consistent across concurrent agent updates. You need distributed shared state management.
 
-## Unit summary
+## Key takeaways
 
 - **Discovery registries** eliminate hardcoded agent endpoints by letting agents register their capabilities and be found dynamically at runtime.
-- **Capability-based routing** matches incoming tasks to agents by what they can do, not by their deployment address — enabling transparent scaling and failover.
+- **Capability-based routing** matches incoming tasks to agents by what they can do, not by their deployment address—enabling transparent scaling and failover.
 - **Load distribution** across equivalent agent instances uses round-robin, least-connections, or weighted routing to prevent hotspots.
 - **Dynamic registration and deregistration** support zero-downtime deployments where new agent versions register, receive traffic, and old versions drain gracefully.

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-enterprise-agent-communication-a2a.design-agent-to-agent-ecosystems-scale
+uid: learn.wwl.design-enterprise-agent-communication-a2a.design-agent-agent-ecosystems-scale
 title: Design A2A agent ecosystems at scale
 metadata:
   title: Design A2A Agent Ecosystems at Scale
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/2-design-agent-to-agent-ecosystems-scale.md)]
+  [!include[](includes/2-design-agent-agent-ecosystems-scale.md)]
