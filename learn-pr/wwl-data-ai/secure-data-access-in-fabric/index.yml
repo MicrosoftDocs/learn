@@ -2,22 +2,22 @@
 uid: learn-wwl.secure-data-access-in-fabric
 metadata:
   title: Secure Data Access in Microsoft Fabric
-  description: Learn the key concepts and strategies for securing data access in Microsoft Fabric.
-  ms.date: 05/06/2025
-  author: wwlpublish
+  description: Implement workspace roles, item permissions, and OneLake security roles to control data access in Microsoft Fabric.
+  ms.date: 05/26/2026
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.collection: 
   ms.service: fabric
 title: Secure data access in Microsoft Fabric
-summary: Microsoft Fabric uses a multi-layer security model with access controls at different levels. 
+summary: Implement workspace roles, item permissions, and OneLake security roles to control data access in Microsoft Fabric.
 abstract: |
-  In this module, you'll learn how to:
-  - Describe the permissions model in Microsoft Fabric.
-  - Configure workspace and item permissions.
-  - Apply granular permissions.
+  In this module, you'll:
+  - Describe the Fabric security model and its layers of access control.
+  - Configure workspace roles and item permissions.
+  - Apply granular permissions using T-SQL and OneLake security roles.
 prerequisites: |
-  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+  - Experience working in Microsoft Fabric, including working with workspaces and lakehouses.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
