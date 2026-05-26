@@ -41,7 +41,7 @@ Throughout this module, you learned about:
 - Writing your first request with the messages API
 - Multi-language support across Python, TypeScript, C#, and Java
 
-## Core Principles to Remember
+## Core principles to remember
 
 As you move forward building with Claude on Foundry, keep these principles in mind:
 

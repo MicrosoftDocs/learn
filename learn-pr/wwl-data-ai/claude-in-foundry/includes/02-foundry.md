@@ -47,7 +47,7 @@ Your Foundry project must be created in a supported region. Regional availabilit
 > [!NOTE]
 > If you're unsure about these prerequisites, have a conversation with whoever manages your Azure tenant before proceeding.
 
-## Microsoft Foundry: A Unified Platform
+## Microsoft Foundry: A unified platform
 
 Microsoft Foundry brings together all the components you need to build AI solutions:
 
@@ -61,7 +61,7 @@ These capabilities aren't isolated features—they work together as a unified pl
 
 Microsoft Foundry offers flexibility in how you develop AI applications:
 
-### The Foundry Portal
+### The Foundry portal
 
 A web-based interface where you can:
 
@@ -70,7 +70,7 @@ A web-based interface where you can:
 - Experiment with prompts and responses.
 - Prototype quickly without local setup.
 
-### Developer Tools
+### Developer tools
 
 Full development environments for production-grade work:
 

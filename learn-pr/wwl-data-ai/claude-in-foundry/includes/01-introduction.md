@@ -32,9 +32,9 @@ When you use Claude on Microsoft Foundry, you get the same Claude that Anthropic
 
 All of this runs inside your Azure tenant, giving you the benefits of:
 
-- **Azure Billing** - Unified invoicing and cost management
-- **Azure Identity** - Integrated authentication and authorization
-- **Azure Monitoring** - Comprehensive observability and diagnostics
+- Unified invoicing and cost management
+- Integrated authentication and authorization
+- Comprehensive observability and diagnostics
 
 Let's get started building with Claude on Microsoft Foundry!
 
