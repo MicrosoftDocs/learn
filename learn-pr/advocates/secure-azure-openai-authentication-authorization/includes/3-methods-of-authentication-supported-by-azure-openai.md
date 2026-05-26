@@ -18,10 +18,10 @@ Use the RBAC role set that matches the surface the caller uses. Some role names 
 
 Before an app, user, service principal, or managed identity can authenticate with Microsoft Entra ID, make sure that:
 
-1. The caller uses the endpoint for the surface being called and a token credential that can request Microsoft Entra tokens for the service.
-1. The caller has the required role assignment for the surface being called, such as a Foundry project role, **Cognitive Services User** for direct Foundry Models inference, or an applicable Azure OpenAI role for Azure OpenAI feature access on a classic resource or a resource upgraded to Foundry.
-1. An Azure-hosted workload that uses managed identity has a system-assigned or user-assigned managed identity enabled.
-1. The resource uses an endpoint that supports Microsoft Entra ID authentication. For Foundry and Azure AI services resources that use token-based Microsoft Entra authentication, configure and call the resource's custom subdomain or custom endpoint. Regional endpoints, such as `https://<region>.api.cognitive.microsoft.com`, don't support Microsoft Entra authentication.
+- The caller uses the endpoint for the surface being called and a token credential that can request Microsoft Entra tokens for the service.
+- The caller has the required role assignment for the surface being called, such as a Foundry project role, **Cognitive Services User** for direct Foundry Models inference, or an applicable Azure OpenAI role for Azure OpenAI feature access on a classic resource or a resource upgraded to Foundry.
+- An Azure-hosted workload that uses managed identity has a system-assigned or user-assigned managed identity enabled.
+- The resource uses an endpoint that supports Microsoft Entra ID authentication. For Foundry and Azure AI services resources that use token-based Microsoft Entra authentication, configure and call the resource's custom subdomain or custom endpoint. Regional endpoints, such as `https://<region>.api.cognitive.microsoft.com`, don't support Microsoft Entra authentication.
 
 For keyless inference in new implementations, use OpenAI v1 endpoints with a stable OpenAI SDK. Request a token for the `https://ai.azure.com/.default` scope and send it as `Authorization: Bearer <token>`. Use a v1 base URL such as `https://<resource>.openai.azure.com/openai/v1/` or `https://<resource>.services.ai.azure.com/openai/v1/`.
 
