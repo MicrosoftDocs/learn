@@ -24436,6 +24436,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path_from_root": "/learn-pr/paths/create-custom-copilots-ai-studio/index.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/design-data-integration/9-design-azure-stream-analytics-solution-for-data-analysis.md",
       "redirect_url": "/training/modules/design-data-integration/7-design-azure-stream-analytics-solution-for-data-analysis",
       "redirect_document_id": true
@@ -39869,6 +39874,306 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/2-understand-lifecycle.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/3-understand-flows.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/4-connections-runtimes.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/5-variants-monitor.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/6-exercise.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/7-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/8-summary.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/index.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/1-introduction.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/2-understand-lifecycle.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/3-understand-flows.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/4-connections-runtimes.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/5-variants-monitor.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/6-exercise.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-prompt-flow-ai-studio/includes/8-summary.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/2-ground-language-model.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/3-search-data.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/3b-openai-client.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/4-build-copilot.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/5-exercise.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/7-summary.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/index.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/1-introduction.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/2-ground-language-model.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/3-search-data.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/3b-openai-client.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/4-build-copilot.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/5-exercise.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/build-copilot-ai-studio/includes/7-summary.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/2-select-model.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/3-deploy-model.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/4-improve-model.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/5-exercise.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/7-summary.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/index.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/includes/1-introduction.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/includes/2-select-model.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/includes/3-deploy-model.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/includes/4-improve-model.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/includes/5-exercise.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-models-azure-ai-studio/includes/7-summary.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/1-introduction.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/2-understand-finetune.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/3-prepare-data.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/4-finetune-model.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/5-exercise.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/7-summary.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/index.yml",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/includes/1-introduction.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/includes/2-understand-finetune.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/includes/3-prepare-data.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/includes/4-finetune-model.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/includes/5-exercise.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/finetune-model-copilot-ai-studio/includes/7-summary.md",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/gather-metrics-blob-storage/5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
       "redirect_document_id": false
@@ -54870,7 +55175,7 @@
     },
     {
       "source_path": "learn-pr/paths/develop-ai-solutions-azure-openai/index.yml",
-      "redirect_url": "https://learn.microsoft.com/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
@@ -55300,7 +55605,7 @@
     },
     {
       "source_path": "learn-pr/paths/get-started-azure-ai/index.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
@@ -62885,47 +63190,47 @@
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/index.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/4-connections-runtimes.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/6-exercise.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/1-introduction.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/7-knowledge-check.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/8-summary.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/3-understand-flows.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/2-understand-lifecycle.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/get-started-prompt-flow/5-variants-monitor.md",
-      "redirect_url": "/training/paths/create-custom-copilots-ai-studio/",
+      "redirect_url": "/training/paths/develop-generative-ai-apps/",
       "redirect_document_id": false
     },
     {
