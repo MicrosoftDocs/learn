@@ -35934,6 +35934,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.work-with-form-recognizer.badge.yml",
+      "redirect_url": "/training/paths/insight-visual-data/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/intro-to-microsoft-data-classification-data-protection/3-what-sensitivity-labels.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/m365-compliance-information-governance/",
       "redirect_document_id": false
