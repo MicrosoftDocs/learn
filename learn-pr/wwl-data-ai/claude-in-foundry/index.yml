@@ -8,7 +8,7 @@ metadata:
   ms.author: gmalc
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ai-usage: ai-assisted
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
 title: Get started with Claude in Microsoft Foundry
 summary: Anthropic Claude models and Microsoft Foundry create a powerful combination for developing generative AI applications and agents.
 abstract: |
