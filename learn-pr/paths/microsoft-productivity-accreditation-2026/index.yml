@@ -9,7 +9,7 @@ metadata:
   ms.author: v-stephanier
   ms.topic: learning-path
 summary: >
-  Explore how Microsoft Office and Microsoft 365 Copilot can support everyday productivity. Learn how to choose the right Office solution and apply AI-powered workflows to streamline tasks and work more efficiently.
+  Explore how Microsoft Office and Microsoft 365 Copilot can support everyday productivity. Learn how to choose the right Office solution and apply AI-powered workflows to streamline tasks and work more efficiently. 
 prerequisites: None
 iconUrl: /training/achievements/microsoft-productivity-accreditation-2026.svg
 levels:
@@ -27,6 +27,7 @@ roles:
 products:
   - office
 modules:
+  - learn.dpu.copilot-office-applications
   - learn.dpu.office-home-2024
   - learn.dpu.office-home-business-2024
   - learn.dpu.copilot-productivity-workflows
