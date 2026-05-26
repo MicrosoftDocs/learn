@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-copilot-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  module_assessment: true
+  ai-usage: ai-generated
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A business user asks a question through the Databricks app in Microsoft Teams. What determines which data they see in the response?"
+    choices:
+    - content: "The permissions of the Genie Space administrator."
+      isCorrect: false
+      explanation: "Incorrect. The Genie Space administrator's permissions don't determine what a user sees. Each user's own Unity Catalog grants apply."
+    - content: "The user's own Unity Catalog grants in Azure Databricks."
+      isCorrect: true
+      explanation: "Correct. The Databricks app in Teams queries run under the authenticated user's identity. Unity Catalog applies that user's grants and restricts the response to data they're authorized to access."
+    - content: "The Teams administrator's role assignments."
+      isCorrect: false
+      explanation: "Incorrect. Teams administrative roles don't govern data access in Azure Databricks. Unity Catalog grants determine what data is returned."
+    - content: "The SQL warehouse configuration."
+      isCorrect: false
+      explanation: "Incorrect. The SQL warehouse handles query execution, but Unity Catalog grants determine which data the user can see in results."
+  - content: "After receiving a Genie answer in Microsoft Teams, a business user notices the result looks incorrect. Where should they submit feedback?"
+    choices:
+    - content: "By replying to the message in the Teams chat."
+      isCorrect: false
+      explanation: "Incorrect. Replying in Teams doesn't route feedback to the Genie Space administrators. The feedback controls are elsewhere."
+    - content: "By contacting the Teams administrator."
+      isCorrect: false
+      explanation: "Incorrect. The Teams administrator doesn't manage Genie Space answer quality. Feedback goes to the Genie Space administrators through a different path."
+    - content: "In the Databricks Genie Space UI, accessed by following the source link in the Teams response."
+      isCorrect: true
+      explanation: "Correct. The thumbs up/down, 'fix it,' and 'request review' feedback controls are in the Databricks Genie Space UI. From the Teams response, follow the source link to open the space in Azure Databricks and submit structured feedback."
+    - content: "In the Azure portal resource settings for the Databricks workspace."
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal doesn't surface Genie feedback controls. Feedback is submitted directly in the Genie Space UI."
+  - content: "A maker configures a Copilot Studio agent using maker-provided credentials instead of on-behalf-of (OBO) flow. What is the main governance risk?"
+    choices:
+    - content: "The agent can't connect to Azure Databricks at all."
+      isCorrect: false
+      explanation: "Incorrect. Maker-provided credentials does establish a connection to Databricks. The risk is about which data users can access, not whether the connection works."
+    - content: "All users receive data based on the maker's Unity Catalog grants, regardless of their own access rights."
+      isCorrect: true
+      explanation: "Correct. With maker-provided credentials, all queries run as the maker's identity. Users may see data they aren't individually authorized to access, which can violate data governance policies."
+    - content: "The agent requires a separate Copilot Studio license for each user."
+      isCorrect: false
+      explanation: "Incorrect. Licensing isn't the concern with maker-provided credentials. The governance risk is about data over-exposure."
+    - content: "The agent can only access Genie Spaces in the same workspace as the maker."
+      isCorrect: false
+      explanation: "Incorrect. The workspace scope is determined by the connection configuration, not by the credential type."
+  - content: "Your organization wants to build a Teams-based assistant that answers sales questions from a Genie Space and also summarizes relevant content from SharePoint documents. Which integration path supports this?"
+    choices:
+    - content: "The Databricks app for Microsoft Teams."
+      isCorrect: false
+      explanation: "Incorrect. The Databricks app is limited to Databricks data only. It can't access SharePoint documents or combine them with Genie answers."
+    - content: "A Copilot Studio agent with Azure Databricks Genie configured as an MCP tool."
+      isCorrect: true
+      explanation: "Correct. A Copilot Studio agent can combine a Genie Space MCP tool with SharePoint knowledge sources, allowing a single response to include both data from Databricks and content from SharePoint."
+    - content: "Azure Databricks Genie accessed directly from the Genie homepage."
+      isCorrect: false
+      explanation: "Incorrect. The Genie homepage provides access to Databricks data only. It doesn't integrate with SharePoint or other Microsoft 365 content."
+    - content: "A Power Automate flow connected to Databricks."
+      isCorrect: false
+      explanation: "Incorrect. Power Automate can execute queries against Databricks but doesn't provide the conversational agent experience described."
+  - content: "Which permission must a user have on the tables in a Genie Space to receive answers when querying through the Databricks app in Teams?"
+    choices:
+    - content: "CAN MANAGE on the Genie Space."
+      isCorrect: false
+      explanation: "Incorrect. CAN MANAGE is a Genie Space-level permission, not a data access grant. Users need table-level data permissions in Unity Catalog."
+    - content: "Owner role in the Azure Databricks workspace."
+      isCorrect: false
+      explanation: "Incorrect. Workspace owner role isn't the relevant permission. Data access is controlled by Unity Catalog grants on the specific tables the space uses."
+    - content: "SELECT on the underlying Unity Catalog tables the space queries."
+      isCorrect: true
+      explanation: "Correct. Users must have SELECT on the tables the Genie Space queries, along with CAN USE on the SQL warehouse and the consumer access entitlement. Without table-level SELECT, Genie won't return data from those tables."
+    - content: "CAN USE on the Genie Space only."
+      isCorrect: false
+      explanation: "Incorrect. CAN USE grants access to the Genie Space interface, but not to the underlying data. Separate Unity Catalog table grants are also required."

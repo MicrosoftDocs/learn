@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-copilot-studio.use-databricks-app-teams
+title: Use the Databricks app in Microsoft Teams to query data
+metadata:
+  title: Use the Databricks app in Microsoft Teams to query data
+  description: "Apply the Databricks app in Teams to query a Genie Space, write effective prompts, use multi-turn conversations, validate responses, and submit feedback from the correct location."
+  ms.date: 05/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-use-databricks-app-teams.md)]

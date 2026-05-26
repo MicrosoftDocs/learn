@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-copilot-studio.explain-unity-catalog-governance
+title: Explain how Unity Catalog governs Genie answers across surfaces
+metadata:
+  title: Explain how Unity Catalog governs Genie answers across surfaces
+  description: "Understand how Unity Catalog enforces data access rules when users query Genie Spaces from any surface, and where those rules can differ depending on how authentication is configured."
+  ms.date: 05/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explain-unity-catalog-governance.md)]

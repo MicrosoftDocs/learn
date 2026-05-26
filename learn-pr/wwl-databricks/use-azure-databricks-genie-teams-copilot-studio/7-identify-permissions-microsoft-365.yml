@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-copilot-studio.identify-permissions-microsoft-365
+title: Identify the permissions required to share a Genie Space with Microsoft 365 consumers
+metadata:
+  title: Identify the permissions required to share a Genie Space with Microsoft 365 consumers
+  description: "Identify the Genie Space and Unity Catalog permissions needed to expose a Genie Space to the Databricks app in Teams and to a Copilot Studio agent, including the governance implications of each authentication model."
+  ms.date: 05/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-identify-permissions-microsoft-365.md)]
