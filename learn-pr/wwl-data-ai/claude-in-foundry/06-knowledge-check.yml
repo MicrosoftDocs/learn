@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.claude-in-foundry.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your learning on Claude models in Microsoft Foundry."
+  ms.date: 05/25/2026
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+    - content: "You need to process thousands of simple classification tasks quickly and cost-effectively. Which Claude model should you start with?"
+      choices:
+        - content: "Claude Opus"
+          isCorrect: false
+          explanation: "Incorrect. Opus is designed for complex reasoning and sophisticated tasks, making it expensive for simple classification."
+        - content: "Claude Sonnet"
+          isCorrect: false
+          explanation: "Incorrect. While Sonnet is a good general-purpose model, Haiku is optimized for high-volume, simple tasks like classification."
+        - content: "Claude Haiku"
+          isCorrect: true
+          explanation: "Correct. Haiku is built for speed and volume, making it ideal for simple tasks like classification, extraction, and routing."
+    - content: "When making API calls to Claude on Microsoft Foundry, what does the 'model' parameter specify?"
+      choices:
+        - content: "The Claude model name (Opus, Sonnet, or Haiku)"
+          isCorrect: false
+          explanation: "Incorrect. On Foundry, the model parameter specifies your deployment name, not the model ID. The deployment name may or may not match the model name."
+        - content: "Your model deployment name in Foundry"
+          isCorrect: true
+          explanation: "Correct. On Foundry, the model parameter refers to your deployment name, which may or may not match the model ID."
+        - content: "Your Azure subscription ID"
+          isCorrect: false
+          explanation: "Incorrect. The subscription ID isn't part of the messages API call. The model parameter specifies your deployment name."
+    - content: "Which authentication method is recommended for production deployments of Claude on Microsoft Foundry?"
+      choices:
+        - content: "API keys stored in environment variables"
+          isCorrect: false
+          explanation: "Incorrect. While API keys are good for getting started, Microsoft Entra ID is recommended for production because of its keyless authentication and RBAC capabilities."
+        - content: "Microsoft Entra ID"
+          isCorrect: true
+          explanation: "Correct. Microsoft Entra ID provides keyless authentication with role-based access control and eliminates the risk of leaked credentials."
+        - content: "Hard-coded API keys in source code"
+          isCorrect: false
+          explanation: "Incorrect. You should never hard code credentials in source code. This creates a significant security risk."
