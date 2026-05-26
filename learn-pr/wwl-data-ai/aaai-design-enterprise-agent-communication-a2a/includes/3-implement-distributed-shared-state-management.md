@@ -214,7 +214,7 @@ Version numbers also enable causality tracking when one agent's output depends o
 
 ## Publish cache invalidation notifications
 
-When agents cache shared state locally or in Redis, updates by other agents can leave those caches stale. Each agent maintains fast local access to frequently-read state but risks making decisions based on outdated data if another agent modified the authoritative state in Cosmos DB.
+When agents cache shared state locally or in Redis, updates by other agents can leave those caches stale. Each agent maintains fast local access to frequently read state but risks making decisions based on outdated data if another agent modified the authoritative state in Cosmos DB.
 
 Redis pub/sub provides lightweight cache invalidation notifications across the agent ecosystem. When any agent successfully writes state to Cosmos DB, it publishes a cache invalidation message on a shared channel. All other agents subscribe to this channel and flush their cached copies of that task state when they receive invalidation notifications.
 

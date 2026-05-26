@@ -25,7 +25,7 @@ The registry document structure captures everything a routing client needs to se
 | `lastHeartbeat` | Timestamp of most recent health check | `2026-04-07T14:32:18Z` |
 | `version` | Agent implementation version | `2.3.1` |
 
-Agents register by POSTing their Agent Card data to the registry on startup. The registration operation includes a time-to-live (TTL) so orphaned entries automatically expire if an agent crashes without de-registering.
+Agents register by POSTing their Agent Card data to the registry on startup. The registration operation includes time-to-live (TTL) so orphaned entries automatically expire if an agent crashes without de-registering.
 
 ```python
 from azure.cosmos import CosmosClient
@@ -120,7 +120,7 @@ Three load distribution strategies work well in agent ecosystems:
 
 **Capability-weighted routing** prefers instances with specialized sub-capabilities even when multiple agents claim the same base capability. If the request mentions "semiconductor supply chain analysis," an instance with additional `supply-chain` capability gets higher weight than instances with only `sector-analysis`. This creates implicit specialization tiers within agent pools.
 
-The routing service stores instance performance metrics in Azure Managed Redis for low-latency reads during routing decisions. Each successful agent invocation updates the instance's response time metric. Each failed invocation increments an error counter that temporarily reduces that instance's routing weight.
+The routing service stores instance performance metrics in Azure Managed Redis for low-latency read operations during routing decisions. Each successful agent invocation updates the instance's response time metric. Each failed invocation increments an error counter that temporarily reduces that instance's routing weight.
 
 ## Design registry availability and failover
 

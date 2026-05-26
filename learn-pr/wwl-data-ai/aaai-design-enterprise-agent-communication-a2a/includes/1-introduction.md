@@ -10,7 +10,7 @@ In this module, you learn to design enterprise-grade A2A agent ecosystems that s
 
 - Designing discovery registries and capability-based routing for agent ecosystems at scale
 - Implementing distributed shared state management with optimistic concurrency control
-- Architecting context isolation strategies for multi-tenant agent deployments
+- Architecting context isolation strategies for multitenant agent deployments
 - Building conflict detection and resolution mechanisms for contradictory agent outputs
 
 These patterns transform prototype agent systems into scalable, enterprise-grade architectures built for hundreds of agents and thousands of concurrent client contexts. A2A integration with Azure AI Foundry Agent Service is currently in preview—validate feature availability and GA status before committing these patterns to production deployments. You start by examining how discovery registries eliminate hardcoded agent dependencies.

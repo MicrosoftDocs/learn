@@ -1,4 +1,4 @@
-Azure Cosmos DB partition keys and Azure Managed Redis namespace prefixes provide storage-layer isolation for multi-tenant agent deployments. Azure AI Foundry Agent Service runs shared agent pools efficiently across hundreds of clients while these patterns ensure each client's data stays physically and logically separate.
+Azure Cosmos DB partition keys and Azure Managed Redis namespace prefixes provide storage-layer isolation for multitenant agent deployments. Azure AI Foundry Agent Service runs shared agent pools efficiently across hundreds of clients while these patterns ensure each client's data stays physically and logically separate.
 
 | Architecture | Isolation Strength | Resource Efficiency | Use Case |
 |--------------|-------------------|---------------------|----------|
@@ -125,21 +125,21 @@ The `require_tenant_context` decorator ensures no agent operation executes witho
 
 ## Prevent cross-tenant context leakage
 
-The most serious security failure in multi-tenant agent systems occurs when data from one tenant appears in another tenant's results. Cross-tenant leakage happens through four primary vectors—each requiring specific mitigation.
+The most serious security failure in multitenant agent systems occurs when data from one tenant appears in another tenant's results. Cross-tenant leakage happens through four primary vectors—each requiring specific mitigation.
 
 **Agent response caching** stores completed agent outputs for reuse when identical requests arrive. If the market analysis agent analyzes Microsoft's Q2 earnings, caching that analysis avoids redundant work when another client requests Microsoft analysis. However, naive caching can serve client A's cached analysis to client B, leaking proprietary insights. Mitigation requires including tenant identifier in cache keys—`cache:market-analysis:MSFT:acme-retirement` differs from `cache:market-analysis:MSFT:other-client`, preventing cross-tenant cache hits.
 
-**Prompt context injection** builds LLM prompts by retrieving relevant background information from agent memory or state stores. If the market agent's prompt builder retrieves "recent portfolio trades" without tenant scoping, it might inject client A's trades into client B's prompt context. Mitigation requires validating that every document retrieved for prompt building matches the current tenant context before injection.
+**Prompt context injection** builds large language model (LLM) prompts by retrieving relevant background information from agent memory or state stores. If the market agent's prompt builder retrieves "recent portfolio trades" without tenant scoping, it might inject client A's trades into client B's prompt context. Mitigation requires validating that every document retrieved for prompt building matches the current tenant context before injection.
 
 **Shared state documents** enable agent collaboration but create leakage risk if not properly partitioned. If two market analysis agents from different tenants both write to state document `task:latest-tech-sector-analysis`, their findings mix. Mitigation requires embedding tenant identifier in all state document keys—`task:acme-retirement:tech-analysis` and `task:other-client:tech-analysis` remain isolated.
 
-**Error messages and logs** can inadvertently reveal information across tenant boundaries. An error message "Failed to analyze MSFT because client acme-retirement already has maximum concentration in technology sector" reveals client A's portfolio composition to any user who triggers that error. Mitigation requires sanitizing error messages to remove tenant-specific details before display and logging full context only to secure audit systems.
+**Error messages and logs** can inadvertently reveal information across tenant boundaries. An error message "Failed to analyze 'MSFT' because client acme-retirement already has maximum concentration in technology sector" reveals client A's portfolio composition to any user who triggers that error. Mitigation requires sanitizing error messages to remove tenant-specific details before display and logging full context only to secure audit systems.
 
 The principle behind all leakage prevention measures: every data access must validate tenant scope before execution. No query should retrieve documents from multiple tenants. No cache read should return content generated for a different tenant. No state update should write to another tenant's partition.
 
 ## Implement tenant isolation in shared storage
 
-Azure Cosmos DB's partition key feature provides physical data isolation boundaries that support multi-tenant architectures. When you create a container with partition key set to `tenantId`, Cosmos DB physically separates documents by that field—client A's data lives in different storage partitions than client B's data. Queries that specify the partition key can only access documents within that partition, preventing cross-tenant reads even if query logic is incorrect.
+Azure Cosmos DB's partition key feature provides physical data isolation boundaries that support multitenant architectures. When you create a container with partition key set to `tenantId`, Cosmos DB physically separates documents by that field—client A's data lives in different storage partitions than client B's data. Queries that specify the partition key can only access documents within that partition, preventing cross-tenant reads even if query logic is incorrect.
 
 For Contoso Capital's research task state, using `clientId` as the partition key ensures each client's tasks remain isolated. When the market analysis agent queries for client "acme-retirement"'s pending tasks, Cosmos DB only searches that client's partition. A malicious or buggy query can't accidentally return tasks from other clients.
 

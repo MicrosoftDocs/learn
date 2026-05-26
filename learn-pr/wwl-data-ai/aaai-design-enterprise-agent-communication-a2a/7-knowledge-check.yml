@@ -16,32 +16,32 @@ quiz:
     choices:
     - content: "Implement retry logic in each agent client that retries registry calls every 5 seconds for up to 2 minutes."
       isCorrect: false
-      explanation: "Incorrect. Retrying against an unavailable registry doesn't improve resilience — it just blocks agents for up to 2 minutes. During a network partition, retries won't succeed. The registry needs structural redundancy, not just retry logic."
-    - content: "Cache a point-in-time snapshot of the registry in each routing service with a TTL, and fall back to the snapshot when the live registry is unreachable."
+      explanation: "Incorrect. Retrying against an unavailable registry doesn't improve resilience—it just blocks agents for up to 2 minutes. During a network partition, retries won't succeed. The registry needs structural redundancy, not just retry logic."
+    - content: "Cache a point-in-time snapshot of the registry in each routing service with a Time-to-Live (TTL), and fall back to the snapshot when the live registry is unreachable."
       isCorrect: true
-      explanation: "Correct. A locally-cached registry snapshot allows routing to continue using slightly-stale (but still functional) routing information during registry outages. Combine this with multi-region registry replication for deeper resilience: the cache handles temporary interruptions, and the replicated registry handles regional failures."
+      explanation: "Correct. A locally cached registry snapshot allows routing to continue using slightly stale (but still functional) routing information during registry outages. Combine this with multi-region registry replication for deeper resilience: the cache handles temporary interruptions, and the replicated registry handles regional failures."
     - content: "Move all agent endpoint URLs to environment variables in each consuming agent so agents can discover each other without the registry."
       isCorrect: false
-      explanation: "Incorrect. Hardcoding endpoints in environment variables recreates the problem the registry was designed to solve — as your agent ecosystem grows, you lose dynamic discovery, capability-based routing, and centralized health tracking. Registry resilience should be solved at the infrastructure layer, not by abandoning dynamic discovery."
-  - content: "Two agents concurrently read version 5 of a shared research document and both submit updates — agent A adds equity analysis, agent B adds risk metrics. Both attempt to write as version 6 with their respective additions. What happens with optimistic concurrency control, and what should the system do?"
+      explanation: "Incorrect. Hardcoding endpoints in environment variables recreates the problem the registry was designed to solve—as your agent ecosystem grows, you lose dynamic discovery, capability-based routing, and centralized health tracking. Registry resilience should be solved at the infrastructure layer, not by abandoning dynamic discovery."
+  - content: "Two agents concurrently read version 5 of a shared research document and both submit updates—agent A adds equity analysis, agent B adds risk metrics. Both attempt to write as version 6 with their respective additions. What happens with optimistic concurrency control, and what should the system do?"
     choices:
     - content: "Both writes succeed, and the last write wins based on timestamp ordering."
       isCorrect: false
-      explanation: "Incorrect. With ETag-based optimistic concurrency (the correct approach), only ONE write can succeed as version 6 — the second write fails with a precondition error because its ETag (version 5) no longer matches the current document (now version 6). Last-write-wins would silently discard one agent's contribution."
+      explanation: "Incorrect. With ETag-based optimistic concurrency (the correct approach), only ONE write can succeed as version 6—the second write fails with a precondition error because its ETag (version 5) no longer matches the current document (now version 6). Last-write-wins would silently discard one agent's contribution."
     - content: "The second write fails with an ETag mismatch; the losing agent reads the updated document (now containing agent A's equity analysis), applies its own risk metrics on top, and retries as version 7."
       isCorrect: true
       explanation: "Correct. This is the standard optimistic concurrency retry pattern. The losing agent reads the latest version (version 6, which has agent A's equity analysis), merges its own risk metrics into that version, and retries the write as version 7. Both contributions are eventually included without data loss."
     - content: "The second write fails; the losing agent logs an error and aborts its update to prevent a conflict cascade."
       isCorrect: false
-      explanation: "Incorrect. Aborting on a concurrency conflict discards the losing agent's contribution entirely. Optimistic concurrency is designed for exactly this scenario — the expected behavior is to retry by reading the latest version and re-applying the update, not to give up."
+      explanation: "Incorrect. Aborting on a concurrency conflict discards the losing agent's contribution entirely. Optimistic concurrency is designed for exactly this scenario—the expected behavior is to retry by reading the latest version and re-applying the update, not to give up."
   - content: "Your market analysis agent returns a bullish outlook on a stock, while the risk agent returns a high-risk warning for the same stock citing similar data. A simple priority-based resolution gives the analysis agent's output precedence. What additional step should the system include for Contoso Capital's regulatory compliance requirements?"
     choices:
     - content: "Silently discard the risk agent's conflicting output since the higher-priority agent's result was selected."
       isCorrect: false
-      explanation: "Incorrect. Silently discarding a risk warning at a regulated financial firm is a serious compliance failure. Regulators require that all material risk assessments be documented — including ones that conflict with investment recommendations. Discarding the conflict violates audit requirements."
-    - content: "Log the full conflict record — both agent outputs, which agents produced them, which resolution pattern was applied, the final result, and a timestamp — before proceeding with the resolved output."
+      explanation: "Incorrect. Silently discarding a risk warning at a regulated financial firm is a serious compliance failure. Regulators require that all material risk assessments be documented—including ones that conflict with investment recommendations. Discarding the conflict violates audit requirements."
+    - content: "Log the full conflict record—both agent outputs, which agents produced them, which resolution pattern was applied, the final result, and a timestamp—before proceeding with the resolved output."
       isCorrect: true
       explanation: "Correct. Financial regulatory compliance (SEC, FINRA, MiFID II) requires complete audit trails for investment decisions. Every conflict, resolution, and final output must be immutably logged. This satisfies both the business need (take the analysis forward) and the regulatory need (document the risk disagreement and resolution)."
     - content: "Escalate all conflicts involving risk warnings to a human analyst before proceeding, regardless of the priority resolution outcome."
       isCorrect: false
-      explanation: "Incorrect. While human escalation is appropriate for high-stakes decisions, requiring human review for every risk conflict would overwhelm analysts and negate the efficiency gains from automation. Instead, escalation should be reserved for conflicts above a defined severity threshold — with full audit logging for all conflicts."
+      explanation: "Incorrect. While human escalation is appropriate for high-stakes decisions, requiring human review for every risk conflict would overwhelm analysts and negate the efficiency gains from automation. Instead, escalation should be reserved for conflicts above a defined severity threshold—with full audit logging for all conflicts."
