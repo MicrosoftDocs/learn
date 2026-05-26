@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-enterprise-agent-communication-a2a.design-context-isolation-share-strategies
+title: Design context isolation and sharing strategies
+metadata:
+  title: Design Context Isolation and Sharing Strategies
+  description: "Design context isolation and sharing strategies."
+  ms.date: 05/22/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-design-context-isolation-share-strategies.md)]
