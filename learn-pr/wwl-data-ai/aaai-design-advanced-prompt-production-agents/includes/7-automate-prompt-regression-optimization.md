@@ -123,8 +123,6 @@ Revert to v1.1.0 if:
 - Latency exceeds 5s for standard cases
 ```
 
-Decision logs create institutional memory. New team members understand why the system prompt is designed the way it is. Regulatory audits have documented evidence for optimization decisions. Future prompt engineers don't repeat experiments that already failed.
+Decision logs create institutional memory. New team members understand why the system prompt is designed in the way it is. Regulatory audits have documented evidence for optimization decisions. Future prompt engineers don't repeat experiments that already failed.
 
 These versioning and optimization workflows form the operational backbone that keeps agent quality measurable and improvable over time.
-
-

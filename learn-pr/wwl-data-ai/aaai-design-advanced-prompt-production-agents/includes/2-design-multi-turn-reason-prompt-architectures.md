@@ -1,6 +1,6 @@
 The Azure AI Inference SDK lets you build multi-turn reasoning chains where each completion call produces one verified reasoning layer, grounding every subsequent step in structured, validated output. You use this pattern in this unit to design production-grade reasoning architectures for clinical agents.
 
-When clinical agents analyze patient documents to generate care recommendations, a single reasoning step often produces incomplete or unverified conclusions. A patient uploads lab results showing elevated blood glucose. The agent needs to extract the numeric values, interpret them against clinical thresholds, cross-reference with the patient's medication history, assess risk factors, and synthesize a recommendation — each step building on verified facts from the previous layer. This requires structured multi-turn reasoning, not just asking the model to "think step by step" in one pass.
+When clinical agents analyze patient documents to generate care recommendations, a single reasoning step often produces incomplete or unverified conclusions. A patient uploads lab results showing elevated blood glucose. The agent needs to extract the numeric values, interpret them against clinical thresholds, cross-reference with the patient's medication history, assess risk factors, and synthesize a recommendation—each step building on verified facts from the previous layer. This requires structured multi-turn reasoning, not just asking the model to "think step by step" in one pass.
 
 | Reasoning Pattern | When to Use | Turns Required |
 |------------------|-------------|----------------|
@@ -13,25 +13,25 @@ When clinical agents analyze patient documents to generate care recommendations,
 
 Chain-of-thought (CoT) prompting asks the model to reason step by step before producing an answer. You've used this pattern in basic prompt design. What changes for production agents: instead of one CoT prompt that handles everything, you design a reasoning chain where each turn produces one verified reasoning layer.
 
-The first turn extracts factual data from the patient document — numeric lab values, medication names, reported symptoms. This turn produces structured facts only, no interpretation. The second turn takes those verified facts and interprets them against clinical guidelines — which values fall outside normal ranges, which symptoms correlate with known conditions. The third turn synthesizes the interpretations into actionable recommendations, considering contraindications and patient safety constraints.
+The first turn extracts factual data from the patient document—numeric lab values, medication names, reported symptoms. This turn produces structured facts only, no interpretation. The second turn takes those verified facts and interprets them against clinical guidelines—which values fall outside normal ranges, which symptoms correlate with known conditions. The third turn synthesizes the interpretations into actionable recommendations, considering contraindications and patient safety constraints.
 
-Each turn's reasoning is grounded in the previous turn's output, which has been verified and structured. This prevents the agent from reasoning over hallucinated facts or making interpretive leaps without clinical evidence. If the first turn fails to extract a critical lab value, the second turn identifies the missing data and requests clarification rather than inventing a value to complete its reasoning.
+Each turn's reasoning is grounded in the previous turn's output, which has been verified and structured. This prevents the agent from reasoning over erroneous facts or making interpretive leaps without clinical evidence. If the first turn fails to extract a critical lab value, the second turn identifies the missing data and requests clarification rather than inventing a value to complete its reasoning.
 
 For Northwind Health, nested CoT means the clinical agent doesn't jump from a patient's blood glucose reading directly to a medication adjustment. It first confirms the extraction ("glucose: 245 mg/dL"), then interprets against clinical criteria ("exceeds target range of 70-130 mg/dL for diabetic patients"), then checks medication interactions ("current metformin dose: 1000mg daily"), and only then recommends an action ("suggest endocrinologist consultation for dose adjustment").
 
 ## Implement scratchpad reasoning for verifiable traces
 
-Complex clinical reasoning benefits from a dedicated reasoning workspace separate from the final answer. Scratchpad reasoning patterns instruct the agent to use a structured section — before its conclusion — to work through its analysis. The scratchpad contains intermediate calculations, comparisons to clinical thresholds, identified risk factors, and ruled-out alternatives. The final answer section contains only the synthesized recommendation.
+Complex clinical reasoning benefits from a dedicated reasoning workspace separate from the final answer. Scratchpad reasoning patterns instruct the agent to use a structured section—before its conclusion—to work through its analysis. The scratchpad contains intermediate calculations, comparisons to clinical thresholds, identified risk factors, and ruled-out alternatives. The final answer section contains only the synthesized recommendation.
 
-Separating reasoning from conclusions serves two purposes. First, it forces the agent to show its work, which downstream validation systems can parse and verify. Second, it produces audit trails that regulatory compliance reviews require — you need to demonstrate how the agent reached each clinical decision.
+Separating reasoning from conclusions serves two purposes. First, it forces the agent to show its work, which downstream validation systems can parse and verify. Second, it produces audit trails that regulatory compliance reviews require—you need to demonstrate how the agent reached each clinical decision.
 
 You implement scratchpad patterns through explicit system prompt instructions that define the structure. Instruct the agent: "Before providing your final recommendation, use a `<reasoning>` section to document: 1) extracted clinical facts, 2) applicable guidelines, 3) risk assessment, 4) ruled-out alternatives. After completing your reasoning, provide your recommendation in a `<recommendation>` section. The recommendation must be directly supported by facts in your reasoning section."
 
-The XML-style tags create clear boundaries between reasoning and output. Parsing systems can extract each section independently — the reasoning trace goes to audit logs, the recommendation goes to the clinical dashboard. If the recommendation contradicts the reasoning trace (for example, recommending a medication the reasoning section identified as contraindicated), automated validation catches the inconsistency before the output reaches a clinician.
+The XML-style tags create clear boundaries between reasoning and output. Parsing systems can extract each section independently—the reasoning trace goes to audit logs, the recommendation goes to the clinical dashboard. If the recommendation contradicts the reasoning trace (for example, recommending a medication the reasoning section identified as contraindicated), automated validation catches the inconsistency before the output reaches a clinician.
 
 ## Control dynamic context injection timing
 
-In multi-turn clinical sessions, new information arrives mid-conversation. A patient's latest lab results come back. A clinical guideline updates. Another agent in the system identifies a medication interaction. This new context needs to be injected into the reasoning chain at the right point — not too early (before the context is relevant), not too late (after a conclusion has been drawn based on incomplete information).
+In multi-turn clinical sessions, new information arrives mid-conversation. A patient's latest lab results come back. A clinical guideline updates. Another agent in the system identifies a medication interaction. This new context needs to be injected into the reasoning chain at the right point—not too early (before the context is relevant), not too late (after a conclusion has been drawn based on incomplete information).
 
 Design injection rules based on the agent's current reasoning phase. If the agent has completed factual extraction and started clinical interpretation, new lab results must be injected before the interpretation concludes. If interpretation is complete and the agent has moved to recommendation synthesis, inject the new context with explicit framing: "New information has arrived. Reassess your interpretation in light of this data: [lab results]."
 
@@ -146,7 +146,7 @@ recommendation_json = final_response.choices[0].message.content
 
 ## Allocate reasoning budget based on task complexity
 
-More reasoning turns improve output quality for complex tasks but increase latency and cost. Simple tasks — classifying a symptom report, extracting medication names from a discharge summary — don't require multi-turn reasoning. Complex tasks — differential diagnosis with rare conditions, multi-drug interaction analysis — justify deeper reasoning chains.
+More reasoning turns improve output quality for complex tasks but increase latency and cost. Simple tasks—classifying a symptom report, extracting medication names from a discharge summary—don't require multi-turn reasoning. Complex tasks—differential diagnosis with rare conditions, multi-drug interaction analysis—justify deeper reasoning chains.
 
 Design complexity signals that trigger different reasoning budgets. Count the number of clinical guidelines that apply to the case. Count the number of medications the patient takes. Count the number of abnormal lab values. These signals predict reasoning complexity before the agent begins processing.
 
@@ -166,5 +166,3 @@ Allocate your reasoning budget before invoking the agent. If complexity signals 
 Monitor the cost-quality trade-off in production. Track token usage per reasoning turn and correlate with clinical accuracy scores from quality reviews. If two-turn reasoning achieves the same accuracy as three-turn for a particular case type, reduce the budget for that type. Reasoning budget allocation should be data-driven, not arbitrary.
 
 Multi-turn reasoning chains are only as reliable as the inputs they process. The next unit examines how to defend your reasoning pipeline against prompt injection attacks embedded in patient-provided documents.
-
-
