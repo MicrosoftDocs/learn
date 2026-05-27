@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure
+metadata:
+  title: Build Enterprise-Grade Tool Ecosystems with MCP and Azure AI Foundry
+  description: "Build enterprise-grade tool ecosystems for production multi-agent systems with the Model Context Protocol (MCP) and Azure AI Foundry. Develop custom MCP servers with authentication, implement dynamic tool selection and routing, build tool result validation with fallback pipelines, and govern tool ecosystems with dependency management."
+  ms.date: 05/27/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-assisted
+title: Build enterprise-grade tool ecosystems with MCP and Azure AI Foundry
+summary: "Build enterprise-grade tool ecosystems for production multi-agent systems with MCP and Azure AI Foundry. Develop custom MCP servers with authentication and production error handling, implement dynamic tool selection and routing logic, design tool result validation and fallback pipelines, and govern tool ecosystems with dependency management and versioning strategies."
+abstract: |
+  By the end of this module, you're able to:
+  - Design and build custom MCP servers with authentication, production error handling, and observability
+  - Implement dynamic tool selection and routing logic that matches agent needs to available tools at runtime
+  - Build tool result validation and fallback pipelines for production reliability
+  - Govern tool ecosystems with dependency management and versioning strategies
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience consuming MCP tools and custom function tools with Azure AI Foundry Agent Service
+  - Familiarity with Azure Managed Identity and OAuth 2.0 authentication patterns
+  - Experience building agents with the Azure AI Foundry Agent Service SDK
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+- developer
+products:
+- azure
+- microsoft-foundry
+- foundry-agent-service
+subjects:
+- artificial-intelligence
+- app-development
+units:
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.introduction
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.design-production-mcp-server-architecture
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.build-mcp-servers-error-handle-fallback
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.implement-tool-selection-route-logic
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.govern-tool-dependencies-version
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.knowledge-check
+- learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.summary
+badge:
+  uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.badge

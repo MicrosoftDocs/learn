@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.knowledge-check
+title: odule assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 05/27/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Northwind Health's drug interaction tool starts failing with transient network timeouts at a rate of 15% of requests. Which error handling approach is most appropriate?"
+    choices:
+    - content: "Immediately open the circuit breaker to stop all calls to the drug interaction tool until the issue is resolved."
+      isCorrect: false
+      explanation: "Incorrect. A 15% failure rate means 85% of requests are still succeeding. Immediately opening the circuit breaker would make the tool completely unavailable when it's still partially functional. Circuit breakers should trip based on a sustained threshold (such as 50% failure rate or N consecutive failures), not on the first sign of degradation."
+    - content: "Apply retry with exponential backoff and jitter for the transient failures, while monitoring with metrics to determine if the failure rate continues to rise and warrants opening the circuit breaker."
+      isCorrect: true
+      explanation: "Correct. Transient network timeouts are candidates for retry. Exponential backoff with jitter reduces thundering herd effects when multiple clinical agents retry simultaneously. While retrying, continue monitoring — if the failure rate continues rising past your circuit-breaker threshold, trip the circuit and return a graceful fallback response."
+    - content: "Log the errors and let the failures propagate to the clinical agent to handle in its own error processing logic."
+      isCorrect: false
+      explanation: "Incorrect. Propagating raw tool failures to the agent without retry or graceful degradation places too much burden on agent-level error handling. The MCP server layer is the correct place to implement tool reliability patterns — the agent should receive either a successful response or a structured graceful degradation message, not raw infrastructure errors."
+  - content: "A clinical agent depends on version 2.1 of the drug interaction MCP tool. Your team needs to release version 3.0 which removes a deprecated parameter. According to semantic versioning governance, what should happen before deployment?"
+    choices:
+    - content: "Deploy version 3.0 immediately — version 2.1 is still in the registry so agents that haven't updated can continue using it."
+      isCorrect: false
+      explanation: "Incorrect. Deploying a breaking change without compatibility validation can still cause failures if agents are configured to call the newest version by default, or if the routing layer automatically migrates to the latest version. The compatibility matrix must be checked before deployment."
+    - content: "Run the CI/CD compatibility check that queries the registry for agents currently calling version 2.1, notify those agent owners, set a sunset date of at least 30 days, and block production deployment of version 3.0 until all current consumers either migrate or acknowledge the deprecation."
+      isCorrect: true
+      explanation: "Correct. A major version change (2.x to 3.0) is a breaking change by semver convention. The governance process requires identifying all dependent agents, notifying owners, setting a migration deadline, and tracking migration completion before the old version is retired. The CI/CD compatibility check automates the identification step."
+    - content: "Announce the version 3.0 release in team documentation and allow agents to migrate at their own pace with no enforced deadline."
+      isCorrect: false
+      explanation: "Incorrect. Without an enforced sunset date and active migration tracking, deprecated tool versions accumulate indefinitely. At a healthcare organization, this creates technical debt and compliance risk — regulators need to know which tool versions are active and which agents are using them at any given time."
+  - content: "Your MCP tool registry is unavailable for 2 minutes during a maintenance window. Northwind Health's clinical agents need to continue operating. Which design best addresses this?"
+    choices:
+    - content: "Pre-populate each clinical agent with hardcoded tool endpoints as a fallback."
+      isCorrect: false
+      explanation: "Incorrect. Hardcoded endpoints solve the registry outage problem but reintroduce the static dependency problem the registry was designed to eliminate. When endpoints change, all agents with hardcoded values must be updated manually — this is operationally untenable at production scale."
+    - content: "Cache the last successful routing table from the registry in each routing service with a TTL of 5 minutes, and use the cached version when live registry queries fail."
+      isCorrect: true
+      explanation: "Correct. A 5-minute TTL cache in each routing service handles brief registry outages (like maintenance windows) without any impact on agents. The cache is stale by at most 5 minutes, which is acceptable since tool endpoint changes are infrequent. Critical routing decisions continue from the last known-good routing table."
+    - content: "Pause all clinical agent operations during registry maintenance windows to prevent routing to incorrect tool endpoints."
+      isCorrect: false
+      explanation: "Incorrect. Pausing clinical operations for routine maintenance windows is not acceptable in a healthcare setting. A 2-minute pause may mean patients don't receive timely clinical decision support. The right approach is transparent resilience — agents continue operating using cached routing data without needing to pause."
