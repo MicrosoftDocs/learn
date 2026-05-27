@@ -24,7 +24,7 @@ When you configure the Azure Databricks Genie MCP tool in Copilot Studio, you ch
 
 | Option | How it works | Governance implications |
 |---|---|---|
-| **End user credentials** (OBO flow) | The authenticated user's credentials are passed through to Databricks. Unity Catalog applies each user's individual grants. | Users must have a pre-existing Power Apps connection to Azure Databricks, or connection parameter sharing must be enabled in your Copilot Studio environment. |
+| **End user credentials** (OBO flow) | The authenticated user's credentials are passed through to Databricks. Unity Catalog applies each user's individual grants. | Users must have a preexisting Power Apps connection to Azure Databricks, or connection parameter sharing must be enabled in your Copilot Studio environment. |
 | **Maker-provided credentials** | All queries run as a single identity—the maker's. | All users receive data according to the maker's Unity Catalog grants. Users may see data beyond their own individual access rights. |
 
 **On-behalf-of flow is the recommended option** when per-user data governance matters. The requirement for a per-user Power Apps connection is a one-time setup cost, not a permanent operational limitation.
