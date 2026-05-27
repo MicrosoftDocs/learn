@@ -47,7 +47,4 @@ Alex's primary tool is the **Fabric admin portal**, a web-based interface where 
 
 The admin portal is Alex's daily workspace, but it's not the only tool she uses. She also relies on the **Microsoft 365 admin center** to manage Fabric licenses, **Microsoft Entra ID** to control user identity and access, and **PowerShell cmdlets** or **REST APIs** for automation and scripting tasks.
 
-> [!NOTE]
-> For detailed guidance on admin portal features and role assignments, see [What is Microsoft Fabric administration?](/fabric/admin/microsoft-fabric-admin).
-
-With a clear picture of the admin hierarchy, the delegation model, and the tools at her disposal, Alex is ready to start configuring the platform. In the next unit, you'll learn how to configure tenant settings and delegate admin rights.
+With a clear picture of the admin hierarchy, the delegation model, and the tools at her disposal, Alex is ready to start configuring the platform.

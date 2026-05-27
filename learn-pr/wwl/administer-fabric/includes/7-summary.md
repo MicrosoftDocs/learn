@@ -18,3 +18,5 @@ The core principle throughout: an effective Fabric admin delegates the right dec
 - [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app)
 - [Track user activities in Fabric](/fabric/admin/track-user-activities)
 - [OneLake catalog Govern tab](/fabric/governance/onelake-catalog-govern)
+- [Pause and resume a capacity](/fabric/enterprise/pause-resume)
+- [Tenant settings index](/fabric/admin/tenant-settings-index)

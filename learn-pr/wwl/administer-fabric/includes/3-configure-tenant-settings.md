@@ -17,17 +17,13 @@ With that distinction in mind, Alex configures export and sharing settings next.
 
 Alex also configures the **Certification** setting, which controls who can certify items as trusted. She enables certification tenant-wide but limits it to a "Data Stewards" security group. Only designated data stewards can mark semantic models and reports as certified, which helps users identify trustworthy content.
 
-> [!NOTE]
-> For a full list of tenant settings and their descriptions, see the [tenant settings index](/fabric/admin/tenant-settings-index).
-
 ## Set up domains
 
 **Domains** let you create governance boundaries that reflect your organization's structure. Alex uses domains to apply different policies to Finance and Risk without affecting Marketing or IT.
 
 A domain is a logical grouping of workspaces. Domain assignment doesn't change item visibility or security. Workspace roles and item permissions still control who can access what. Domains organize governance, not access. Department leads sometimes assume that moving a workspace into a Finance domain automatically restricts access to Finance users. It doesn't. Access control happens at the workspace and item level.
 
-> [!NOTE]
-> Assigning a workspace to a domain doesn't change who can see or use items in that workspace. Workspace roles and item permissions control access. Domains organize governance policies.
+Assigning a workspace to a domain doesn't change who can see or use items in that workspace. Workspace roles and item permissions still control access. Domains organize governance policies, not access.
 
 Alex creates a Finance domain and a Risk domain from the admin portal **Domains** tab. She assigns workspaces to domains in two ways: by workspace name (using pattern matching to catch workspaces with "Finance" in the name) or by workspace admin (assigning all workspaces whose admin is the Finance lead). She chooses the workspace admin approach because it scales. As new Finance workspaces are created, Fabric automatically assigns them to the Finance domain if the Finance lead is the workspace admin.
 
