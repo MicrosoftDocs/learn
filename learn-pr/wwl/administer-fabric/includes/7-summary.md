@@ -17,4 +17,4 @@ The core principle throughout: an effective Fabric admin delegates the right dec
 - [Use the monitoring hub to track Fabric activity](/fabric/admin/monitoring-hub)
 - [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app)
 - [Track user activities in Fabric](/fabric/admin/track-user-activities)
-- [Govern Fabric data (OneLake catalog Govern tab)](/fabric/governance/onelake-catalog-govern)
+- [OneLake catalog Govern tab](/fabric/governance/onelake-catalog-govern)

@@ -12,12 +12,12 @@ metadata:
 title: Administer a Microsoft Fabric environment
 summary: Learn how to configure and manage a Microsoft Fabric environment. Explore the admin hierarchy, configure tenant settings, delegate admin rights, manage user licenses, and monitor platform health.
 abstract: |
-  In this module, you'll:
+  In this module, you'll learn to:
   - Describe the Fabric admin hierarchy and identify the right admin role for each task.
   - Configure tenant settings, set up domains, and delegate admin rights.
   - Manage user licenses and control how users access and share Fabric content.
   - Monitor platform usage, manage capacity health, and apply governance controls.
-prerequisites: An understanding of the Microsoft Fabric platform, its core experiences, and basic workspace concepts.
+prerequisites: An understanding of the Microsoft Fabric platform, its core workloads, and basic workspace concepts.
 iconUrl: /training/achievements/administer-microsoft-fabric.svg
 levels:
 - intermediate

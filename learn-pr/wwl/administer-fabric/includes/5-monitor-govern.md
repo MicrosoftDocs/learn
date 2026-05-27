@@ -8,10 +8,7 @@ The monitoring hub shows the current run status of every Fabric job: running, su
 
 Alex filters the hub by status, item type, start time, the user who submitted the job, and location (workspace). The hub also includes a schedule failures view (currently in preview), where she can view and manage failure notifications for scheduled items in one place.
 
-The Finance team reports that their daily report refresh is failing. Alex opens the monitoring hub, filters by Status = Failed and Location = Finance workspace, and finds two failed Dataflow Gen2 refreshes. She sees the error details and contacts the Finance data lead with the specific information. The monitoring hub answers "what failed and when." It's a reactive, operational tool for spotting and diagnosing problems.
-
-> [!NOTE]
-> For more information, see the [monitoring hub](/fabric/admin/monitoring-hub) documentation.
+The Finance team reports that their daily report refresh is failing. Alex opens the monitoring hub, filters by Status = Failed and Location = Finance workspace, and finds two failed Dataflow Gen2 refreshes. She sees the error details and contacts the Finance data lead with the specific information. The monitoring hub answers "what failed and when." It's a reactive, operational tool for spotting and diagnosing problems. For more information, see [Use the monitoring hub](/fabric/admin/monitoring-hub).
 
 :::image type="content" source="../media/fabric-monitoring-hub.png" alt-text="Screenshot of the Fabric monitoring hub showing a list of jobs with Status, Item type, Start time, and Location columns.":::
 
@@ -25,9 +22,6 @@ A month after go-live, she uses the Feature Usage and Adoption report to see tha
 
 The admin monitoring workspace is a strategic tool for understanding adoption patterns, distinct from the monitoring hub, which shows individual job status for diagnosing failures.
 
-> [!NOTE]
-> Alex can share access to the admin monitoring workspace, or specific items in it, with other users. This lets capacity admins or department heads run their own usage reports without needing full Fabric admin rights.
-
 ## Manage capacity health
 
 Now that Alex can spot operational problems and track usage patterns, she turns to the health of her F64 capacity. Consumption in Fabric is measured in **capacity units (CUs)**. The **Microsoft Fabric Capacity Metrics app** lets Alex visualize CU consumption across her capacity.
@@ -36,13 +30,9 @@ Alex watches for CU consumption trending toward the F64 limit. When consumption 
 
 At quarter-end, Finance runs heavy financial closing reports that push the F64 toward its limit. She sees this pattern in the Capacity Metrics app and proactively scales the capacity up to F128 for the week, then scales it back down afterward.
 
-For non-production capacities, Alex can **pause** the capacity to save costs when it's not in use, which is useful for dev/test capacities overnight or over weekends. When paused, all content assigned to that capacity becomes unavailable.
+For non-production capacities, Alex can **pause** the capacity to save costs when it's not in use, which is useful for dev/test capacities overnight or over weekends. Pausing a capacity makes all content on that capacity unavailable, so Alex only pauses non-production capacities and communicates planned downtime to users first.
 
-> [!IMPORTANT]
-> Pausing a capacity makes all content on that capacity unavailable. Only pause non-production capacities and communicate planned downtime to users first.
-
-> [!NOTE]
-> Learn more about the [Capacity Metrics app](/fabric/enterprise/metrics-app) and how to [pause and resume a capacity](/fabric/enterprise/pause-resume).
+The following image shows the Capacity Metrics app Compute tab, where Alex monitors CU consumption over time and identifies which workspaces and item types use the most capacity. For more information, see [Microsoft Fabric Capacity Metrics app](/fabric/enterprise/metrics-app) and [Pause and resume a capacity](/fabric/enterprise/pause-resume).
 
 :::image type="content" source="../media/fabric-capacity-metrics-app.png" alt-text="Screenshot of the Microsoft Fabric Capacity Metrics app Compute tab, showing CU consumption over time as a bar chart with a usage spike, and a breakdown of CU consumption by workspace and item type.":::
 
@@ -52,24 +42,16 @@ With capacity health under control, Alex turns to compliance. **Audit logs** rec
 
 Audit logs capture who viewed or exported a report, who shared content externally, who modified workspace permissions, and who deleted a Fabric item. This gives Alex the evidence she needs to answer security and compliance questions.
 
-Risk compliance asks Alex to confirm that no one exported sensitive Risk domain data to Excel last month. She searches the audit logs in the admin portal, filtering by activity type (Export to Excel) and user. She confirms no exports occurred from the Risk domain workspaces and provides the compliance team with the log evidence.
-
-> [!NOTE]
-> You can access audit logs in the admin portal or through the Microsoft Purview audit log interface. For more advanced audit and compliance scenarios, you can integrate Fabric audit data with Microsoft Purview. Learn more about how to [track user activities in Fabric](/fabric/admin/track-user-activities).
+Risk compliance asks Alex to confirm that no one exported sensitive Risk domain data to Excel last month. She searches the audit logs in the admin portal, filtering by activity type (Export to Excel) and user. She confirms no exports occurred from the Risk domain workspaces and provides the compliance team with the log evidence. For more information, see [Track user activities in Fabric](/fabric/admin/track-user-activities).
 
 ## Apply governance controls
 
 With data assets growing across five departments, Alex needs to help users find trustworthy content. Two key tools support this: **endorsement** and the **OneLake catalog Govern tab**.
 
-Endorsement marks Fabric items as trusted. Workspace members with Contributor or Admin role can mark their own quality items as **Promoted**. These items appear with a Promoted badge in the Fabric portal. **Certified** items go further: they require a formal review by an authorized certifier and appear with a Certified badge. Alex controls who can certify items via the Certification tenant setting she configured in Unit 3.
+Endorsement marks Fabric items as trusted. Workspace members with Contributor or Admin role can mark their own quality items as **Promoted**. These items appear with a Promoted badge in the Fabric portal. **Certified** items go further: they require a formal review by an authorized certifier and appear with a Certified badge. Alex controls who can certify items via the **Certification** tenant setting in the admin portal.
 
 Finance's data lead certifies the five core Finance semantic models as authoritative data sources. Now, when Marketing needs Finance data for a campaign analysis, they filter the OneLake catalog by Finance domain and see which semantic models are certified. They know those are safe to use.
 
 As Fabric admin, Alex opens the **OneLake catalog Govern tab** to see a governance snapshot of the entire tenant. Key insights include sensitivity label coverage (what percentage of items have sensitivity labels applied), endorsement coverage (how many items are promoted or certified versus unendorsed), and recommended actions that show where to focus governance improvement efforts.
 
-The Govern tab shows Alex that Finance workspaces have only 30% sensitivity label coverage. She delegates this as an action item to the Finance domain admin, who works with the data team to label the remaining items.
-
-> [!NOTE]
-> Learn more about the [OneLake catalog Govern tab](/fabric/governance/onelake-catalog-govern).
-
-Alex has the full toolkit now, from configuring the platform before go-live to monitoring and governing it after. In the next unit, you test your knowledge with a few scenario-based questions.
+The Govern tab shows Alex that Finance workspaces have only 30% sensitivity label coverage. She delegates this as an action item to the Finance domain admin, who works with the data team to label the remaining items. For more information, see [OneLake catalog Govern tab](/fabric/governance/onelake-catalog-govern).

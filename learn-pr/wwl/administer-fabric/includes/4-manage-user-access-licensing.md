@@ -35,15 +35,9 @@ For Fabric Free licenses, Alex doesn't need to pre-assign them. When users first
 
 The interaction between per-user licenses and **workspace type** (the configuration mode of each workspace) determines what users can actually do. A user with a Pro license in a workspace assigned to an F capacity can create both Power BI items and Fabric items. A user with a Free license in that same workspace can create Fabric items but not Power BI items. The workspace type and the user license work together to grant or restrict capabilities.
 
-> [!TIP]
-> Use group-based licensing in Microsoft Entra ID rather than assigning licenses one user at a time. When people join or leave a group, Entra ID automatically updates their license. This reduces administrative overhead and ensures consistent access as team membership changes.
-
-> [!NOTE]
-> A mismatch between a user's per-user license and the workspace type can prevent users from working with certain item types even if they have what seems like the right license. If a user can't create an item they expect to create, check both the workspace type and their assigned license.
-
 ## Control how users share and distribute content
 
-With licenses assigned, Alex needs to decide how her users share content. This connects back to the tenant settings she configured in Unit 3, but the focus now is on practical sharing patterns that balance collaboration with governance.
+With licenses assigned, Alex needs to decide how her users share content. This connects back to the tenant settings she configured earlier, but the focus now is on practical sharing patterns that balance collaboration with governance.
 
 Two main patterns exist for distributing Fabric content. **Workspace apps** provide the recommended pattern for large audiences. When a workspace has an app, workspace admins publish the app to users who don't need workspace access. App consumers get read-only access to reports and dashboards without seeing the underlying workspace contents or work in progress. This pattern works best for finished, production-ready content.
 
@@ -51,6 +45,6 @@ Granting **workspace access** through workspace roles (Admin, Member, Contributo
 
 Alex applies the least-privilege principle: share the read-only app for consumers, and only grant workspace access to people who need to create or edit. The Marketing team has 120 consumers who use reports daily. They get the app. The 30 analysts who build reports get Contributor or Member roles in the workspace.
 
-The Marketing team also wants to share dashboards with external agency partners. Alex reminds the Marketing lead that the tenant settings she configured in Unit 3 under **Export and sharing settings** control external sharing. She can enable or disable external sharing and specify which security groups are allowed to share. For external sharing, recipients need the appropriate license, or you must embed the content in an app that handles authentication through Microsoft Entra B2B.
+The Marketing team also wants to share dashboards with external agency partners. Alex reminds the Marketing lead that the tenant settings under **Export and sharing settings** control external sharing. She can enable or disable external sharing and specify which security groups are allowed to share. For external sharing, recipients need the appropriate license, or you must embed the content in an app that handles authentication through Microsoft Entra B2B.
 
 Users are licensed and have the right level of access to workspaces and apps. Alex has balanced broad access for consumers with controlled access for creators. Now she needs to monitor the platform to make sure everything stays healthy after launch. In the next unit, you'll learn how to monitor platform usage and apply governance controls.
