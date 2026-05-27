@@ -1,4 +1,4 @@
-Northwind Health runs multiple instances of critical tools — a primary drug interaction service in East US and a backup instance in West US, three lab reference API replicas with different performance characteristics, and canary deployments for new tool versions serving 5% of traffic. Static tool lists point to a single endpoint, forcing all agents to call the same instance regardless of load, health, or latency. You implement dynamic routing that selects the best instance at runtime based on current health metrics, latency characteristics, and deployment strategy.
+When MCP servers run as multiple instances across Azure regions or deployment slots, Application Insights provides the performance telemetry that drives intelligent routing decisions. You implement dynamic tool registries that select the best-performing instance at runtime based on health status, latency metrics, and configurable traffic weights.
 
 | Routing Strategy | Decision Criteria | Use Case |
 |-----------------|-------------------|----------|
@@ -275,6 +275,6 @@ Now that you understand how to route tool invocations dynamically across instanc
 
 - **Tool registries** provide runtime indirection from tool names to instance endpoints, enabling zero-downtime instance replacement by maintaining health status, version, and rolling latency metrics per instance
 - **Latency-based routing** selects the instance with the best recent P95 latency after filtering out unhealthy instances, adapting to changing performance conditions without manual intervention
-- **Weighted routing** distributes traffic by configured percentages for canary deployments — start at 5% canary weight, monitor error rates and latency for 24 hours, then gradually increase to 100%
+- **Weighted routing** distributes traffic by configured percentages for canary deployments—start at 5% canary weight, monitor error rates and latency for 24 hours, then gradually increase to 100%
 - **Capability-based routing** extends latency selection by filtering instances by minimum version, ensuring requests requiring new features only reach instances that support them
-- **Automated weight adjustment** closes the optimization loop — background processes compare rolling metrics across instances and shift traffic toward better-performing instances continuously
+- **Automated weight adjustment** closes the optimization loop—background processes compare rolling metrics across instances and shift traffic toward better-performing instances continuously

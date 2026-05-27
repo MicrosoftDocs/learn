@@ -1,4 +1,4 @@
-Tool failures happen in production systems. The drug interaction API times out during a network partition. The lab reference service hits its rate limit during peak morning hours. The clinical guideline database goes offline for emergency maintenance. You implement retry patterns, circuit breakers, and graceful degradation responses that keep agents functional when dependencies fail, rather than cascading failures that take down entire clinical workflows.
+Azure-hosted MCP servers depend on external APIs that can fail, slow down, or become temporarily unavailable. Retry patterns, circuit breakers, and graceful degradation responses keep your MCP server functional when dependencies fail, preventing cascading failures that disrupt entire agent workflows.
 
 | Error Type | Retry Strategy | Example Scenario |
 |------------|----------------|------------------|
@@ -8,7 +8,7 @@ Tool failures happen in production systems. The drug interaction API times out d
 
 ## Distinguish error types for appropriate handling
 
-Not all errors warrant retry logic. Transient errors — network timeouts, HTTP 503 service unavailable, rate limit 429 responses — represent temporary conditions where retry with backoff succeeds. When Northwind Health's drug interaction API returns 503 during a brief deployment, retrying after 2 seconds reaches the newly deployed instance.
+Not all errors warrant retry logic. Transient errors—network timeouts, HTTP 503 service unavailable, rate limit 429 responses—represent temporary conditions where retry with backoff succeeds. When Northwind Health's drug interaction API returns 503 during a brief deployment, retrying after 2 seconds reaches the newly deployed instance.
 
 Permanent errors indicate problems that won't resolve through retry. A 400 bad request with "invalid medication code" means the requested drug identifier doesn't exist in the formulary. Retrying this request wastes compute and delays the error response to the agent. Return a structured error immediately with enough detail for the agent to formulate an appropriate response to the clinician.
 
@@ -18,7 +18,7 @@ Degraded service represents a third category where the tool remains functional b
 
 Exponential backoff spaces retry attempts with increasing delays, preventing retry storms that overwhelm recovering services. Start with a base delay of 1 second. After the first failure, wait 1 second before retry. After the second failure, wait 2 seconds. After the third failure, wait 4 seconds. This pattern gives downstream services time to recover between retry attempts.
 
-Add jitter to prevent thundering herd problems when multiple agents experience the same failure simultaneously. Without jitter, 50 agents calling the drug interaction tool receive the same 503 error at 10:00:00 AM, retry simultaneously at 10:00:01, overwhelm the recovering service, and cascade the failure. With jitter, each agent adds a random offset (0-1000ms) to the calculated delay, distributing retries across time.
+Add jitter to prevent thundering herd problems when multiple agents experience the same failure simultaneously. Without jitter, agents that receive the same 503 error retry simultaneously, overwhelming a recovering service and cascading the failure. With jitter, each agent adds a random offset (0–1000ms) to the calculated delay, distributing retries across time.
 
 ```python
 import asyncio
@@ -206,7 +206,7 @@ After the recovery timeout expires (30 seconds), transition to Half-Open state a
 
 When a tool remains unavailable after retries and the circuit opens, return structured fallback responses that agents can handle gracefully rather than generic errors. For Northwind Health's drug interaction tool, the fallback response includes `"status": "unavailable"`, `"reason": "service_circuit_open"`, and `"fallback": "consult_pharmacist"`. The agent incorporates this guidance into its response: "I'm unable to check for drug interactions automatically right now. Please consult with the pharmacy team before prescribing."
 
-Fallback responses preserve workflow continuity while maintaining safety. The agent doesn't pretend no interaction exists (unsafe), nor does it refuse to assist entirely (poor user experience). Instead, it escalates to manual review — appropriate when automated checks fail. The `retry_after_seconds` field lets the agent provide specific guidance: "The interaction checker will be available again in approximately 25 seconds."
+Fallback responses preserve workflow continuity while maintaining safety. The agent doesn't pretend no interaction exists (unsafe), nor does it refuse to assist entirely (poor user experience). Instead, it escalates to manual review—appropriate when automated checks fail. The `retry_after_seconds` field lets the agent provide specific guidance: "The interaction checker will be available again in approximately 25 seconds."
 
 Health check endpoints support proactive circuit management. Production MCP servers expose a `/health` endpoint that checks downstream dependencies before they fail. The health check connects to the drug interaction database, validates API keys, and tests downstream service availability with lightweight requests. Agent health monitoring polls this endpoint every 30 seconds to preemptively open circuit breakers before real tool invocations fail.
 
@@ -249,13 +249,13 @@ These health checks enable external monitoring systems to detect failures before
 > [!TIP]
 > **Pause and reflect:** Your MCP server's drug interaction tool has a circuit breaker that opens after 5 consecutive failures with a 30-second recovery timeout. During a 10-minute network partition, the circuit keeps cycling between Open and Half-Open states. How would you adjust the circuit breaker configuration and fallback strategy to provide the best clinician experience during extended outages?
 
-Now that you understand reliability patterns for individual tools — retry, circuit breakers, and graceful degradation — you're ready to implement dynamic routing that distributes load across multiple tool instances based on health and performance metrics.
+Now that you understand reliability patterns for individual tools—retry, circuit breakers, and graceful degradation—you're ready to implement dynamic routing that distributes load across multiple tool instances based on health and performance metrics.
 
 ## Unit summary
 
-- **Error classification** determines the response — transient errors (timeouts, 503s) warrant exponential backoff with jitter, permanent errors (400 bad request) return structured errors immediately, and degraded responses proceed with a logged warning
+- **Error classification** determines the response—transient errors (timeouts, 503s) warrant exponential backoff with jitter, permanent errors (400 bad request) return structured errors immediately, and degraded responses proceed with a logged warning
 - **Exponential backoff with jitter** prevents retry storms by spacing attempts with increasing delays and random offsets, distributing retry load across time when multiple agents fail simultaneously
-- **Circuit breakers** maintain three states (Closed, Open, Half-Open) to fail fast when services are down — open after N consecutive failures, test recovery after a timeout, and close after successful test requests
+- **Circuit breakers** maintain three states (Closed, Open, Half-Open) to fail fast when services are down—open after N consecutive failures, test recovery after a timeout, and close after successful test requests
 - **Graceful degradation fallbacks** preserve workflow continuity by returning structured guidance (like "consult pharmacist") rather than generic errors, enabling agents to escalate appropriately when automated checks fail
 - **Health check endpoints** enable proactive circuit management by detecting dependency failures before real tool invocations fail, allowing monitoring systems to trigger scaling responses preemptively
 

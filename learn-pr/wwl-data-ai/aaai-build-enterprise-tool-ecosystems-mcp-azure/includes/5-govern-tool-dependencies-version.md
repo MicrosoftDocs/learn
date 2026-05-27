@@ -1,4 +1,4 @@
-Tool updates happen continuously in production systems. Northwind Health adds a new parameter to the drug interaction tool, restructures the lab reference response format, and retires the legacy appointment scheduling tool in favor of a FHIR-compliant replacement. Without governance workflows, these changes break deployed agents unpredictably. You implement tool registries as the single source of truth for versions and dependencies, semantic versioning rules, compatibility validation in CI/CD pipelines, and deprecation workflows that give agent teams time to migrate.
+GitHub Actions validates tool compatibility during CI/CD pipelines, and Azure API Center provides a managed registry for governed tool discovery. Together, they support semantic versioning rules, compatibility checks, and deprecation workflows that prevent breaking changes from disrupting agents in production.
 
 | Lifecycle Stage | Registry State | Agent Impact |
 |----------------|----------------|--------------|
@@ -8,7 +8,7 @@ Tool updates happen continuously in production systems. Northwind Health adds a 
 
 ## Establish the tool registry as source of truth
 
-The tool registry serves as more than a routing database — it's the authoritative record of which tool versions exist, their compatibility requirements, their lifecycle status, and which agents depend on them. Before deploying a new tool version, validate that all registered agents can handle the changes. Before retiring a tool, identify which agents still invoke it and coordinate migration.
+The tool registry serves as more than a routing database—it's the authoritative record of which tool versions exist, their compatibility requirements, their lifecycle status, and which agents depend on them. Before deploying a new tool version, validate that all registered agents can handle the changes. Before retiring a tool, identify which agents still invoke it and coordinate migration.
 
 Expand registry entries to include lifecycle status (active, deprecated, retired), compatibility requirements expressed as minimum agent SDK version, deprecation announcement date and sunset date for retired tools, and dependency graph showing which agents invoke each tool. This metadata transforms the registry from a passive directory into an active governance system that prevents breaking changes from deploying.
 
@@ -90,6 +90,8 @@ class EnterpriseToolRegistry(ToolRegistry):
 
 When an agent invokes a tool, the MCP server extracts the agent's identity from the Azure AD token and records the dependency in the registry. Over time, the registry builds a complete dependency graph showing that 15 agents invoke drug_interaction v1.0, 3 agents invoke v1.1, and 0 agents invoke the retired v0.9. This visibility makes deprecation decisions data-driven rather than guesswork.
 
+> **Azure API Center as a managed tool registry:** The custom `EnterpriseToolRegistry` class you build here models the governance concepts that Azure API Center provides as a managed service. When you register MCP servers in Azure API Center, it stores version metadata, authentication configuration, and lifecycle status—and exposes registered servers as private tool catalogs directly discoverable in the Foundry portal. For production Foundry agent deployments, Azure API Center handles the discovery layer so agent teams can find and add governed tools without knowing endpoint URLs.
+
 ## Apply semantic versioning for tool changes
 
 Semantic versioning communicates the impact of changes through version numbers. A MAJOR version increment (1.0 → 2.0) signals breaking changes that require agent updates. A MINOR version increment (1.0 → 1.1) adds backward-compatible functionality that agents can optionally adopt. A PATCH version increment (1.0.0 → 1.0.1) fixes bugs without changing behavior.
@@ -154,7 +156,7 @@ jobs:
             --image ${{ env.REGISTRY }}/drug-tool:${{ steps.version.outputs.version }}
 ```
 
-The validation script implements semantic version comparison. It parses the deploying version (2.0.0) and each agent's supported version range (^1.0.0 meaning ≥1.0.0 <2.0.0), determines if the deploying version satisfies each range, and fails the deployment if any incompatibility exists. This prevents the deployment and triggers notification to the tool team: "Cannot deploy v2.0.0, would break 12 agents. Agents must update to support ^2.0.0 before deployment."
+The validation script implements semantic version comparison. It parses the deploying version (2.0.0) and each agent's supported version range (^1.0.0 meaning ≥1.0.0 <2.0.0), determines if the deploying version satisfies each range, and fails the deployment if any incompatibility exists. This prevents the deployment and triggers notification to the tool team: "Can't deploy v2.0.0, would break 12 agents. Agents must update to support ^2.0.0 before deployment."
 
 ## Design tool deprecation workflows
 
@@ -213,16 +215,16 @@ async def lookup_drug_interaction(drug_a: str, drug_b: str, _agent_id: str = Non
     return result
 ```
 
-Track deprecation dependencies through registry queries. Generate weekly reports showing each agent team the deprecated tool versions they still invoke, the sunset date, and migration guidance. For Northwind Health, the report shows: "clinical-agent-prod v3.2 invoked drug_interaction v1.0 (deprecated) 1,247 times this week. Sunset in 45 days. Migration guide: [link]". This visibility creates urgency and tracks progress.
+Track deprecation dependencies through registry queries. Generate weekly reports showing each agent team the deprecated tool versions they still invoke, the sunset date, and migration guidance. For Northwind Health, the report shows how many times each agent invoked a deprecated tool that week, how many days remain until sunset, and a link to the migration guide. These reports keep deprecation visible across teams and give engineering leads the data they need to prioritize migration work.
 
-After the sunset date, the tool stops performing work and returns structured error responses with migration guidance. This forcing function ensures agents update. The error response includes the retired status, sunset date that passed, link to migration documentation, and the recommended replacement version. Agents log these errors prominently, creating production incidents that escalate to engineering teams who complete the migration.
+After the sunset date, the tool stops performing work and returns structured error responses with migration guidance. The error response includes the retired status, the sunset date, a link to migration documentation, and the recommended replacement version. Agents log these errors prominently, creating production incidents that prompt engineering teams to complete the migration.
 
 These governance workflows transform tool evolution from an ad-hoc process into a managed lifecycle. Northwind Health's clinical tool ecosystem maintains stability while continuously improving because compatibility validation prevents breaking changes, deprecation workflows give teams time to adapt, and the registry provides visibility into the entire dependency graph.
 
 ## Unit summary
 
-- **Tool registry as source of truth** tracks lifecycle status, compatibility requirements, deprecation dates, and agent dependency graphs — enabling data-driven governance rather than guesswork
-- **Semantic versioning** communicates change impact — MAJOR for breaking changes (parameter removal, response restructuring), MINOR for backward-compatible additions, PATCH for bug fixes
+- **Tool registry as source of truth** tracks lifecycle status, compatibility requirements, deprecation dates, and agent dependency graphs—enabling data-driven governance rather than guesswork
+- **Semantic versioning** communicates change impact—MAJOR for breaking changes (parameter removal, response restructuring), MINOR for backward-compatible additions, PATCH for bug fixes
 - **CI/CD compatibility validation** prevents deploying tool versions that break production agents by checking the deploying version against all registered agent dependency ranges before deployment proceeds
-- **Phased deprecation workflows** give agent teams 90-day migration windows with progressive enforcement — warnings during invocation, weekly dependency reports, and hard errors after the sunset date
+- **Phased deprecation workflows** give agent teams 90-day migration windows with progressive enforcement—warnings during invocation, weekly dependency reports, and hard errors after the sunset date
 - **Dependency tracking** records which agents invoke which tool versions via Azure AD identity extraction, building a real-time dependency graph that makes deprecation impact assessment concrete
