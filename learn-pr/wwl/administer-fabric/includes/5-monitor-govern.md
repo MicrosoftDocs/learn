@@ -16,7 +16,7 @@ The Finance team reports that their daily report refresh is failing. Alex opens 
 
 Beyond operational failures, Alex needs to understand how the platform is being used across Contoso. The **admin monitoring workspace** is a dedicated workspace in Fabric that tenant admins can access by default. It contains the **Feature Usage and Adoption** report and its underlying semantic model.
 
-The report shows which Fabric features users are using across the organization — lakehouses, notebooks, pipelines, semantic models. Alex sees usage trends over time, identifies which users and departments are most active, and spots consumption patterns that reveal underused capacity or low adoption.
+The report shows which Fabric features users are using across the organization, including lakehouses, notebooks, pipelines, and semantic models. Alex sees usage trends over time, identifies which users and departments are most active, and spots consumption patterns that reveal underused capacity or low adoption.
 
 A month after go-live, she uses the Feature Usage and Adoption report to see that only IT and Finance are actively using Fabric. Marketing has low usage despite having licenses. She shares this insight with the Marketing lead to understand if there's a training gap or adoption barrier.
 

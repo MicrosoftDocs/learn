@@ -4,11 +4,11 @@ With the platform configured, Alex needs to prepare 200 users for go-live. Befor
 
 Two distinct types of licenses work together in Fabric to provide access and compute resources.
 
-Alex already has a **capacity license** — the F64 she purchased. This capacity is shared across the entire organization and provides the compute and storage that Fabric workloads run on. Users don't receive individual capacity licenses. The capacity exists at the tenant level, and workspaces are assigned to it.
+Alex already has a **capacity license**, the F64 she purchased. This capacity is shared across the entire organization and provides the compute and storage that Fabric workloads run on. Users don't receive individual capacity licenses. The capacity exists at the tenant level, and workspaces are assigned to it.
 
 **Per-user licenses** determine what each person can create and view. Three types exist, and understanding the differences saves significant costs:
 
-**Fabric free** is automatically assigned the first time a user signs into the Fabric portal, if Fabric is enabled in the tenant. With a Free license, users can create and share non-Power BI Fabric items — lakehouses, notebooks, warehouses, and data pipelines — in workspaces on an F capacity. They can't create Power BI items in shared workspaces. Only in their personal My workspace.
+**Fabric free** is automatically assigned the first time a user signs into the Fabric portal, if Fabric is enabled in the tenant. With a Free license, users can create and share non-Power BI Fabric items (lakehouses, notebooks, warehouses, and data pipelines) in workspaces on an F capacity. They can't create Power BI items in shared workspaces. Only in their personal My workspace.
 
 **Power BI Pro** is required for creating and sharing Power BI content like reports and dashboards. Every organization needs at least one Pro user if they use Power BI for reporting. On capacities smaller than F64, users also need Pro to view Power BI content shared with them.
 
