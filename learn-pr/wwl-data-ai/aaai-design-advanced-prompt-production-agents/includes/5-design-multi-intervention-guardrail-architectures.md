@@ -38,7 +38,7 @@ The output surface is where the agent's response leaves the reasoning pipeline t
 
 - **Azure AI Content Safety on output**—screen final agent responses for harmful content categories and safety violations.
 - **Groundedness evaluation**—verify that clinical recommendations are grounded in the retrieved documents, not generated from parametric knowledge. A recommendation that cites a guideline section must match the retrieved guideline content.
-- **Policy classifiers**—domain-specific classifiers that check outputs against regulatory policy rules (e.g., "no definitive diagnoses without clinician-review language").
+- **Policy classifiers**—domain-specific classifiers that check outputs against regulatory policy rules (for example, "no definitive diagnoses without clinician-review language").
 - **Output schema validation**—the structured output format requirements in the system prompt create a validation target. Outputs that don't conform to the schema are rejected and the agent is asked to regenerate.
 
 ## Coordination across surfaces
