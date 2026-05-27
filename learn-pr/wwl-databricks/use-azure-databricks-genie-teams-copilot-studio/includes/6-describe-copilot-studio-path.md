@@ -1,4 +1,4 @@
-The Copilot Studio path exists for scenarios the Databricks app in Teams doesn't cover. When you need to **combine Genie data with SharePoint content, email context, or custom conversation flows**—or when you want a branded, organization-specific agent experience—you build a **Copilot Studio agent** that uses a Genie Space as a tool.
+The Copilot Studio path exists for scenarios the Databricks app in Microsoft Teams doesn't cover. When you need to **combine Genie data with SharePoint content, email context, or custom conversation flows**—or when you want a branded, organization-specific agent experience—you build a **Copilot Studio agent** that uses a Genie Space as a tool.
 
 > [!IMPORTANT]
 > Connecting Genie Spaces to Copilot Studio via Model Context Protocol (MCP) is in **Public Preview** as of the time this content was written. Verify current availability before deploying to a production environment.
@@ -33,13 +33,13 @@ When you configure the Azure Databricks Genie MCP tool in Copilot Studio, you ch
 
 | Capability | Behavior |
 |---|---|
-| Data scope | Genie data combined with SharePoint, email context, approved topics, or other MCP tools—all in a single conversation. |
-| Custom flows | Topics, approved responses, fallback handling, and multi-tool routing—all configurable in Copilot Studio. |
-| Publishing | Microsoft Teams (as a custom agent) or Power Apps. |
-| Per-user data governance | Supported via OBO flow. Not supported when using maker-provided credentials. |
-| Data policies | Subject to Power Platform data loss prevention (DLP) policies. The Azure Databricks connector may be restricted in your tenant—coordinate with your Power Platform admin before building. |
-| Known limitation | Without a specific polling instruction in agent settings, the agent may return repeated "still processing" messages during queries that take longer to compute. |
-| Maker required | Yes. A Copilot Studio license and maker skills are required to build and maintain the agent. |
+| **Data scope** | Genie data combined with SharePoint, email context, approved topics, or other MCP tools—all in a single conversation. |
+| **Custom flows** | Topics, approved responses, fallback handling, and multi-tool routing—all configurable in Copilot Studio. |
+| **Publishing** | Microsoft Teams (as a custom agent) or Power Apps. |
+| **Per-user data governance** | Supported via OBO flow. Not supported when using maker-provided credentials. |
+| **Data policies** | Subject to Power Platform data loss prevention (DLP) policies. The Azure Databricks connector may be restricted in your tenant—coordinate with your Power Platform admin before building. |
+| **Known limitation** | Without a specific polling instruction in agent settings, the agent may return repeated "still processing" messages during queries that take longer to compute. |
+| **Maker required** | Yes. A Copilot Studio license and maker skills are required to build and maintain the agent. |
 
 ## Choosing between the two paths
 

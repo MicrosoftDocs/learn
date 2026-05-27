@@ -6,7 +6,7 @@ In this module, you explored how Azure Databricks Genie Spaces can be accessed f
 
 **Data engineers** share a Genie Space with Microsoft 365 consumers through two separate steps: granting CAN VIEW or CAN USE on the Genie Space itself, and granting the correct Unity Catalog data permissions (SELECT on tables, CAN USE on the SQL warehouse, and the consumer access entitlement). For the Databricks app, authentication flows automatically through Entra ID SSO. For a Copilot Studio agent using OBO flow, each user needs a Power Apps connection to Azure Databricks, or the Power Platform admin must enable connection parameter sharing.
 
-**Makers** build a Copilot Studio agent by adding a Genie Space as an **MCP tool**, configuring the Genie Space ID and credential type, enabling **generative AI orchestration**, and including a **polling instruction** to prevent repeated "still processing" responses. **OBO flow** is the recommended credential option because it respects per-user Unity Catalog grants. The finished agent is published to Teams as a custom agent.
+**Makers** build a Copilot Studio agent by adding a Genie Space as an **MCP tool**, configuring the Genie Space ID and credential type, enabling **generative AI orchestration**, and including a **polling instruction** to prevent repeated "still processing" responses. **OBO flow** is the recommended credential option because it respects per-user Unity Catalog grants. The finished agent is published to Microsoft Teams as a custom agent.
 
 ## Key tradeoffs
 

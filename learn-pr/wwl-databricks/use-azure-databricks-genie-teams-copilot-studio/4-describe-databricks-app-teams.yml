@@ -3,7 +3,7 @@ uid: learn.wwl.use-azure-databricks-genie-teams-copilot-studio.describe-databric
 title: Describe the Databricks app as an integration path for Genie in Teams
 metadata:
   title: Describe the Databricks app as an integration path for Genie in Teams
-  description: "Learn how the Databricks app for Microsoft Teams works, including installation, DM and channel surfaces, query scope options, and what the app can and cannot do."
+  description: "Learn how the Databricks app for Microsoft Teams works, including installation, direct message and channel surfaces, query scope options, and what the app can and can't do."
   ms.date: 05/26/2026
   author: weslbo
   ms.author: wedebols

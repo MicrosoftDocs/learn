@@ -10,7 +10,7 @@ metadata:
   ms.service: azure-databricks
   ai-usage: ai-generated
 title: Use Azure Databricks Genie in Microsoft Teams and Copilot Studio
-summary: Chat with Azure Databricks Genie Spaces in Microsoft Teams, or build a Copilot Studio agent grounded in one. Evaluate the tradeoffs between the two integration paths, apply effective prompting to get reliable answers, configure the permissions that govern data access, and build a Copilot Studio agent that surfaces a Genie Space in Teams.
+summary: Chat with Azure Databricks Genie Spaces in Microsoft Teams, or build a Copilot Studio agent grounded in one. Evaluate the tradeoffs between the two integration paths, apply effective prompting to get reliable answers, configure the permissions that govern data access, and build a Copilot Studio agent that surfaces a Genie Space in Microsoft Teams.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe what Azure Databricks Genie and Genie Spaces are and how they provide governed conversational data access.
@@ -20,11 +20,11 @@ abstract: |
   - Identify the Unity Catalog and Genie Space permissions required to share a space with Microsoft 365 consumers.
   - Build a Copilot Studio agent that uses a Genie Space as an MCP tool and publish it to Microsoft Teams.
 prerequisites: |
-  - Familiarity with Microsoft Teams (using apps, DMs, channels)
-  - Basic awareness of what a database or data warehouse is
-  - For units 7 and 8: Familiarity with Azure Databricks workspaces and Unity Catalog concepts
-  - For unit 8: Basic Copilot Studio familiarity
-iconUrl: /training/achievements/generic-badge.svg
+  - Familiarity with Microsoft Teams (using apps, messages, channels).
+  - Basic awareness of what a database or data warehouse is.
+  - Familiarity with Azure Databricks workspaces and Unity Catalog concepts.
+  - Basic Copilot Studio familiarity.
+iconUrl: /learn/achievements/azure-databricks.svg
 levels:
 - beginner
 - intermediate
@@ -34,9 +34,15 @@ roles:
 - maker
 products:
 - azure-databricks
+- copilot-studio
+- ms-copilot
+- m365
+- office-teams
 subjects:
 - artificial-intelligence
 - data-management
+- chatbots
+- data-engineering
 units:
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.introduction
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.describe-genie-genie-spaces
@@ -44,7 +50,6 @@ units:
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.describe-databricks-app-teams
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.use-databricks-app-teams
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.describe-copilot-studio-path
-- learn.wwl.use-azure-databricks-genie-teams-copilot-studio.identify-permissions-microsoft-365
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.build-copilot-studio-agent
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.knowledge-check
 - learn.wwl.use-azure-databricks-genie-teams-copilot-studio.summary
