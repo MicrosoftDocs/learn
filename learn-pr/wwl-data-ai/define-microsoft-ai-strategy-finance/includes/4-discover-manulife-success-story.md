@@ -18,7 +18,7 @@ Manulife is using a wide range of Azure products to boost performance in many pa
 
 More specifically, Manulife is using **Azure Machine Learning and Azure Document Intelligence to fight fraud**. These tools find patterns in the data that help identify fraudulent claims. This project has substantial potential, given that insurance companies may lose hundreds of millions a year because of fraud.
 
-Meanwhile, Azure scaled up how many documents customers could submit online, which has made more data available for Manulife document intelligence models. John Hancock, the Manulife division at the United States, is using **Azure Synapse Analytics** to run AI models on these bigger datasets. This initiative is succeeding in getting more insights, ensuring accuracy, speeding up workflows, and improving customer experiences.
+Meanwhile, Azure scaled up how many documents customers could submit online, which has made more data available for Manulife document intelligence models. John Hancock, the Manulife division at the United States, is using **Microsoft Fabric** to run AI models on these bigger datasets. This initiative is succeeding in getting more insights, ensuring accuracy, speeding up workflows, and improving customer experiences.
 
 ![Photograph showing a person working in a spreadsheet.](../media/4-report.jpg)
 
