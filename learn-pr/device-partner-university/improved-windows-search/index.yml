@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.improved-windows-search
+title: Discover faster insights with Improved Windows Search
+metadata:
+  title: Discover Faster Insights With Improved Windows Search
+  description: In this module, you learn how Improved Windows Search uses AI to interpret user intent and deliver more relevant results through natural language queries. You also explore how features like enhanced indexing and access across Windows help users quickly locate files and improve productivity.
+  ms.date: 05/19/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: module
+  ms.service: windows-11
+summary: >
+  Learn how Improved Windows Search uses AI to understand user intent and deliver more relevant results through natural language queries. Discover how features like enhanced indexing help users quickly find files and improve productivity across Windows.
+abstract: |
+  By the end of this module, you’ll be able to: 
+  - Use Improved Windows Search to find files, settings, and content using natural language.
+  - Apply search techniques to real-world scenarios across different roles.
+  - Identify when Improved Windows Search can reduce time spent searching.
+  - Explain how Improved Windows Search helps reduce search time, minimize missed information, and accelerate task completion. 
+prerequisites: |
+  - None
+iconUrl: /training/achievements/improved-windows-search.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.improved-windows-search.introduction
+  - learn.dpu.improved-windows-search.explain-improved-windows-search
+  - learn.dpu.improved-windows-search.use-improved-windows-search
+  - learn.dpu.improved-windows-search.benefits-of-improved-windows-search
+  - learn.dpu.improved-windows-search.apply-improved-windows-search-scenarios
+  - learn.dpu.improved-windows-search.choose-when-to-use-improved-windows-search
+  - learn.dpu.improved-windows-search.knowledge-check
+  - learn.dpu.improved-windows-search.summary
+badge:
+  uid: learn.dpu.improved-windows-search.badge

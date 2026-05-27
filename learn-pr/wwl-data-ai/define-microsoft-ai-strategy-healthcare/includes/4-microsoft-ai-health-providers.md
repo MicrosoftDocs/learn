@@ -29,16 +29,16 @@ Besides, they’re also helpful in making communications more efficient to give 
 There are many healthcare scenarios that benefit from improved interactions:
 
 * **Personalized treatment**: Microsoft Foundry and Dynamics 365 Copilot use AI to deliver hyper-personalization. This feature enables you to offer personalized treatment plans to your patients, based on AI-powered insights on what is going to work best specifically for them.
-* **Better virtual assistants**: Many available Microsoft tools use AI to help users in a conversational format. For example, Azure OpenAI Services, Microsoft Foundry, Dynamics 365 Copilot, Power Virtual Agents, or AI in Power Platform. For healthcare professionals, it means a helping hand to process and organize patient records, medical research, and operational data. For patients, it offers them a new chat service, in which they can ask deeper questions about health topics before consulting with physicians. This service would help patients get quicker responses and would liberate doctors by screening consultations.
+* **Better virtual assistants**: Many available Microsoft tools use AI to help users in a conversational format. For example, Azure OpenAI Services, Microsoft Foundry, Dynamics 365 Copilot, Microsoft Copilot Studio, or AI in Power Platform. For healthcare professionals, it means a helping hand to process and organize patient records, medical research, and operational data. For patients, it offers them a new chat service, in which they can ask deeper questions about health topics before consulting with physicians. This service would help patients get quicker responses and would liberate doctors by screening consultations.
 * **Onboarding and help desks for doctors**: These applications help doctors find the most pertinent training materials, protocols, and patient information. Microsoft Foundry, and Azure OpenAI Services in particular, can power these solutions.
 
 ## AI amplifies automation
 
 New generation AI, including generative AI, is taking document AI technologies to the next level. This progress allows for further, smarter automation.
 
-* **Process and organize medical data**: Azure Document Intelligence, Azure OpenAI Services, and Azure Cognitive Search can help you manage patient records, medical research, and operational data.
+* **Process and organize medical data**: Azure Document Intelligence, Azure OpenAI Services, and Azure AI Search can help you manage patient records, medical research, and operational data.
 * **Anticipate equipment needs and patient admission rates**: You can use Azure Machine Learning, Microsoft Power BI, and Azure OpenAI Services to do predictive analytics. That means you know beforehand when your MRI scanner or other devices are likely to start malfunctioning or when you’ll receive more patients.
-* **Generate full-circle medical reports**: With Azure OpenAI Services, Microsoft Power BI, and Azure Synapse Analytics, you can automatically create reports on patient outcomes, treatment efficiency, or operational metrics.
+* **Generate full-circle medical reports**: With Azure OpenAI Services, Microsoft Power BI, and Microsoft Fabric, you can automatically create reports on patient outcomes, treatment efficiency, or operational metrics.
 
 ## Intuitive discovery of critical information
 ![Photograph showing medical professional looking at computer screen.](../media/4-thinking.jpg)

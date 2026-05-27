@@ -7,13 +7,13 @@ A database is used to define a central system in which data can be stored and qu
 Relational databases are commonly used to store and query structured data. The data is stored in tables that represent entities, such as customers, products, or sales orders. Each instance of an entity is assigned a *primary key* that uniquely identifies it; and these keys are used to reference the entity instance in other tables. For example, a customer's primary key can be referenced in a sales order record to indicate which customer placed the order. This use of keys to reference data entities enables a relational database to be *normalized*; which in part means the elimination of duplicate data values so that, for example, the details of an individual customer are stored only once; not for each sales order the customer places. The tables are managed and queried using Structured Query Language (SQL), which is based on an ANSI standard, so it's similar across multiple database systems.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram showing a relational database schema.](../media/relational-database.png)
+> ![Diagram showing a relational database schema.](../media/relational-keys-sql.png)
 
-## Non-relational databases
+## Nonrelational databases
 
-Non-relational databases are data management systems that don’t apply a relational schema to the data. Non-relational databases are often referred to as NoSQL database, even though some support a variant of the SQL language.
+Nonrelational databases are data management systems that don’t apply a relational schema to the data. Nonrelational databases are often referred to as NoSQL database, even though some support a variant of the SQL language.
 
-There are four common types of Non-relational database commonly in use.
+There are four common types of nonrelational database commonly in use.
 
 - **Key-value databases** in which each record consists of a unique key and an associated value, which can be in any format.
 

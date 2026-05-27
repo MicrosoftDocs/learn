@@ -43,3 +43,14 @@ Maps are a great way to visually compare values for different geographic areas o
 ![Screenshot of a report in Power BI Desktop, with visualizations filtered based on a selected city.](../media//power-bi-report.png)
 
 In Power BI, the visual elements for related data in a report are automatically linked to one another and provide interactivity. For example, selecting an individual category in one visualization will automatically filter and highlight that category in other related visualizations in the report. In the image above, the city *Seattle* has been selected in the **Sales by City and Category** column chart, and the other visualizations are filtered to reflect values for Seattle only.
+
+## AI-driven visualizations in Power BI
+
+Power BI includes several AI-powered visualization features that help analysts explore and explain data more efficiently:
+
+- **Smart narratives**: automatically generate written summaries that describe what a visualization shows, updated dynamically as data changes.
+- **Q&A visual**: lets report users ask questions in plain English and receive instant chart answers based on the semantic model.
+- **Key influencers**: identifies which factors most strongly drive a selected metric, displaying results as an interactive visual.
+- **Decomposition tree**: enables interactive drill-down across multiple dimensions to identify what is contributing to a value.
+
+These features are how Power BI brings AI directly into the analyst's day-to-day workflow.

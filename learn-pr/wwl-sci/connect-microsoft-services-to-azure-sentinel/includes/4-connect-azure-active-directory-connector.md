@@ -1,4 +1,4 @@
-Gain insights into Microsoft Entra ID by connecting Audit and Sign in logs to Microsoft Sentinel to gather insights around Microsoft Entra scenarios. You can learn about app usage, conditional access policies, and legacy auth relate details using our Sign-in logs. You can get information on your Self-Service Password Reset (SSPR) usage, Microsoft Entra Management activities like user, group, role, and app management in the Audit logs table.
+Gain insights into Microsoft Entra ID by connecting Audit and Sign-in logs to Microsoft Sentinel to gather insights around Microsoft Entra scenarios. You can learn about app usage, conditional access policies, and legacy auth related details using our Sign-in logs. You can get information on your Self-Service Password Reset (SSPR) usage, Microsoft Entra Management activities like user, group, role, and app management in the Audit logs table.
 
 ## Install the solution
 
@@ -20,4 +20,20 @@ After the solution is installed, connect the data connector.
 
 1. Mark the checkboxes next to the logs you want to stream into Microsoft Sentinel, and select **Connect**.
 
-:::image type="content" source="../media/microsoft-entra-id.png" alt-text="Screen shot of the Microsoft Entra connector page.":::
+:::image type="content" source="../media/microsoft-entra-id.png" alt-text="Screenshot of the Microsoft Entra ID data connector page in Microsoft Sentinel, showing log type checkboxes for sign-in and audit logs.":::
+
+### Available log types
+
+When you configure the connector, you can independently select which log types to stream into Microsoft Sentinel. Each log type writes to a separate Log Analytics table:
+
+| Log type | Table |
+| :--- | :--- |
+| Interactive user sign-in logs | SigninLogs |
+| Non-interactive user sign-in logs | AADNonInteractiveUserSignInLogs |
+| Service principal sign-in logs | AADServicePrincipalSignInLogs |
+| Managed identity sign-in logs | AADManagedIdentitySignInLogs |
+| Provisioning logs | AADProvisioningLogs |
+| AD FS sign-in logs | ADFSSignInLogs |
+| Audit logs | AuditLogs |
+
+Enabling only the log types relevant to your use cases helps manage Log Analytics ingestion costs.

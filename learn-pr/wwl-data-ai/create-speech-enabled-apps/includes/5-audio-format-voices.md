@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=3c079cbe-74c9-479d-9d3a-0404213be4fe]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 When synthesizing speech, you can use a **SpeechConfig** object to customize the audio that is returned by Azure Speech in Foundry Tools.
 
 ## Audio format

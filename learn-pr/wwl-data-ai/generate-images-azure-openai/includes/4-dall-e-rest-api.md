@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ab9152e1-da43-4764-aebe-6a84ecfba5ac]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 You can use a language-specific SDK (for example, the OpenAI Python SDK or the Azure OpenAI .NET SDK) to develop client applications that use models to generate images.
 
 For example, the following Python code uses the OpenAI *Images* API to submit a request to a model to generate image of a robot eating a cheeseburger:
@@ -20,3 +32,5 @@ with open("image.png", "wb") as image_file:
 The result is a binary stream containing the requested image:
 
 ![An illustration of a robot eating a cheeseburger.](../media/robot-eating-cheeseburger.png)
+
+::: zone-end

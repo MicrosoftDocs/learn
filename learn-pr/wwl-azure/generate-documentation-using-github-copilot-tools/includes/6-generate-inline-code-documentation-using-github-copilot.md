@@ -6,7 +6,6 @@ Each of the following GitHub Copilot features can be used to create inline code 
 
 - Chat view: Use the Chat view in Ask, Agent, or Plan mode.
 - Inline chat: Use an inline chat session to document specific code (classes, methods, or code blocks) without leaving the editor.
-- Smart actions: Run the Generate Docs smart action to explain selected code without even having to write a prompt.
 
 ## Generate inline code documentation using the Chat view
 
@@ -25,7 +24,7 @@ The Ask mode can be used to evaluate your code and suggest inline code documenta
 1. Enter a prompt to generate inline code documentation. For example, you can enter the following prompt:
 
    ```plaintext
-   /doc Create inline code documentation for the ConsoleApp class.
+   Suggest inline code documentation for the ConsoleApp class.
    ```
 
 1. Review the suggested inline code documentation in the Chat view.
@@ -34,9 +33,9 @@ The Ask mode can be used to evaluate your code and suggest inline code documenta
 
 1. Once you're satisfied with the proposed documentation, you can apply the suggested documentation into the corresponding code file.
 
-    Hover the mouse pointer over the suggested documentation to see the **Apply**, **Insert**, and **Copy** buttons. The **Apply** button is used to apply the suggested documentation to the code file.
+    Hover the mouse pointer over the suggested documentation to see the **Apply in Editor**, **Insert at Cursor**, and **Copy** buttons. The **Apply in Editor** button is used to apply the suggested documentation to the code file.
 
-    You can use the **Insert** button to insert the suggestion into the editor at the current cursor position, or the **Copy** button to copy the suggestion to the clipboard.
+    You can use the **Insert at Cursor** button to insert the suggestion into the editor at the current cursor position, or the **Copy** button to copy the suggestion to the clipboard.
 
 1. After you apply the suggested documentation to your code file, you can navigate through the updates to accept, reject, or modify individual suggestions.
 
@@ -96,8 +95,6 @@ The Chat view in Agent mode can be used to generate inline code documentation fo
     Create inline code documentation for all C# class files in the specified context. Document the class, properties, and methods. Do not add documentation to JSON, markdown, or other file types. Do not document UnitTest project files in the Test folder. Ensure that the solution builds without errors after the documentation is added.
     ```
 
-    Agent mode doesn't support chat participants or the `/doc` slash command, so you need to provide a detailed prompt.
-
 1. The agent displays status messages in the Chat view as it completes the requested tasks.
 
     ![Screenshot showing the Chat view in Agent mode showing status messages.](../media/chat-view-agent-mode-inline-docs-may-2025-status.png)
@@ -118,7 +115,7 @@ The Chat view in Agent mode can be used to generate inline code documentation fo
 
 ## Generate inline code documentation using inline chat
 
-The inline chat feature can be used to generate inline code documentation for classes, methods, or complex code blocks. The prompt is used to specify context or to provide specific instructions. You can also use the `/doc` slash command without a text prompt if you want.
+The inline chat feature can be used to generate inline code documentation for classes, methods, or complex code blocks. The prompt is used to specify context or to provide specific instructions.
 
 Inline chat suggests inline code documentation directly in the code editor.
 
@@ -128,7 +125,7 @@ Inline chat suggests inline code documentation directly in the code editor.
 
 1. Start an inline chat session.
 
-    Use the **Ctrl+I** keyboard shortcut or select the **Editor Inline Chat** from the **Chat** menu.
+    Use the **Ctrl+I** keyboard shortcut or select the **Open Inline Chat** from the **Chat** menu.
 
 1. Enter a prompt to generate inline code documentation.
 
@@ -140,33 +137,8 @@ Inline chat suggests inline code documentation directly in the code editor.
 
 1. Review the suggested inline code documentation in the editor.
 
-    ![Screenshot showing an inline chat session suggesting documentation.](../media/inline-chat-inline-docs-may-2025.png)
-
-1. Use the **Accept** button accept the suggested update or **Close** to reject the update.
-
-    You can also use the **Rerun** button to rerun the prompt with or without updates.
-
-## Generate inline code documentation using the "Generate Docs" smart action
-
-The **Generate Docs** smart action can be used to generate inline code documentation for classes, methods, or complex code blocks. It's a quick way to generate documentation without needing to write a prompt. The **Generate Docs** smart action is available in the context menu when you right-click selected code in the editor.
-
-The **Generate Docs** smart action suggests inline code documentation directly in the code editor.
-
-1. Open the code file in the editor.
-
-1. Select the code that you want to document.
-
-1. Right-click the selected code, select **Generate Code**, and then select **Generate Docs**.
-
-1. Review the suggested inline code documentation in the editor.
-
-1. Use the **Accept** button accept the suggested update or **Close** to reject the update.
-
-    You can also use the **Rerun** button to rerun the prompt with or without updates.
-
-> [!NOTE]
-> If the **Generate Code > Generate Docs** smart action isn't available, use the inline chat feature or Chat view to generate documentation.
+1. Use the **Keep** button accept the suggested update or **Undo** to reject the update.
 
 ### Summary
 
-GitHub Copilot helps you generate inline code documentation quickly and accurately. The Chat view, inline chat, and smart action features provide various levels of interaction directly within the Visual Studio Code environment.
+GitHub Copilot helps you generate inline code documentation quickly and accurately. The Chat view and inline chat features provide various levels of interaction directly within the Visual Studio Code environment.

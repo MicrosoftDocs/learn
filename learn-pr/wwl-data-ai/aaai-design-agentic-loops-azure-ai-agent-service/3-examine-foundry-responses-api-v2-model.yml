@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.examine-foundry-responses-api-v2-model
+title: Examine the Foundry Responses API and Agents v2 model
+metadata:
+  title: Examine the Foundry Responses API and Agents v2 Model
+  description: "Examine the Agents v2 runtime model including agents, conversations, responses, and items. Understand the split client architecture, implement the v2 core agent loop, handle tool call output items, and choose between context management strategies."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-foundry-responses-api-v2-model.md)]

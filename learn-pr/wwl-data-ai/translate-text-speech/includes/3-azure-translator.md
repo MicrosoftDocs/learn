@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=8df36d34-890c-46ed-947d-772fa406e058]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Azure Translator in Foundry Tools provides an API for translating text between over 90 supported languages. With Azure Translator you can:
 
 - Translate or transliterate text using the default translation model or a large language model (LLM).

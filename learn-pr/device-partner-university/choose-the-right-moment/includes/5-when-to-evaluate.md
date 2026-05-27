@@ -3,6 +3,7 @@ Not every Windows Server environment requires immediate change. In many cases, e
 #### Security and compliance
 
 - Increasing security risk or compliance concerns
+- Approaching or reaching end of support for Windows Server 2016 or Windows Server 2019, which can introduce increased security risk, reduced compliance readiness, and limited access to updates or technical support over time
 
 #### Operations
 
@@ -23,6 +24,7 @@ The goal of evaluation isn't to prescribe outcomes, but to determine whether exi
 
 This conversation often becomes relevant when:
 
+- **Support lifecycle changes**—such as approaching or reaching end of support for Windows Server 2016 or Windows Server 2019—introduce new considerations around security updates, compliance requirements, and long-term viability
 - **Security or compliance** requirements increase, and existing environments lack built-in capabilities for advanced monitoring, threat detection, or centralized policy enforcement
 - **Operational overhead** increases, such as increased patching effort, manual failover processes, or limited automation and lifecycle management
 - **Business continuity and resilience** expectations rise, requiring improved disaster recovery, geographic redundancy, or faster recovery times

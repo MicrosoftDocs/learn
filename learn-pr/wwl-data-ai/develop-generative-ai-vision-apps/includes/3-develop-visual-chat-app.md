@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=db98b7e8-a274-4b55-a274-1573a905b917]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 To develop a client app that engages in vision-based chats with a multimodal model, you can use the same basic techniques used for text-based chats. You require a connection to the endpoint where the model is deployed, and you use that endpoint to submit prompts that consists of messages to the model and process the responses.
 
 The key difference is that prompts for a vision-based chat include multi-part user messages that contain both a *text* content item and an *image* content item.
@@ -60,3 +72,5 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 
 ```
+
+::: zone-end

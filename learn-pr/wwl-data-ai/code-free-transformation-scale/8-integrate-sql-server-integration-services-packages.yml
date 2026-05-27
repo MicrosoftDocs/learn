@@ -4,12 +4,12 @@ title: Exercise - Integrate SQL server integration services packages within Azur
 metadata:
   title: Exercise - Integrate SQL server integration services packages within Azure Data Factory
   description: "Exercise - Integrate SQL server integration services packages within Azure Data Factory"
-  ms.date: 11/18/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/8-integrate-sql-server-integration-services-packages.md)]
+  [!include[](includes/8-integrate-sql-server-integration-services-packages.md)]

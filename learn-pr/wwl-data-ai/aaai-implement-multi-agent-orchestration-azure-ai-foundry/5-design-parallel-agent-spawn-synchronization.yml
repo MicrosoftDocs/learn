@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.design-parallel-agent-spawn-synchronization
+title: Design parallel agent spawning and synchronization
+metadata:
+  title: Design Parallel Agent Spawning and Synchronization
+  description: "Design parallel agent spawning and synchronization."
+  ms.date: 05/21/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-design-parallel-agent-spawn-synchronization.md)]

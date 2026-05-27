@@ -6,8 +6,8 @@ The Microsoft Graph API offers a single endpoint, <https://graph.microsoft.com> 
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
-- Microsoft 365 core services: Bookings, Calendar, Delve, Excel, Microsoft Purview eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
-- Enterprise Mobility + Security services: *Advanced Threat Analytics*, *Advanced Threat Protection*, Microsoft Entra ID, Identity Manager, and Intune
+- Microsoft 365 core services: Bookings, Calendar, Excel, Microsoft Lists, Microsoft Purview eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
+- Enterprise Mobility + Security services: Microsoft Defender for Identity, Microsoft Entra ID, and Intune
 - Windows services: activities, devices, notifications, Universal Print
 - Dynamics 365 Business Central services
 

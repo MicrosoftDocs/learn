@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/12/2026
+  ms.date: 05/21/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: unit
@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "A measure"
       isCorrect: false
-      explanation: "That's incorrect. A measure is a numeric value that is aggregated in the model."
+      explanation: "That's incorrect. A measure is a numeric value that's aggregated in the model."
     - content: "A hierarchy"
       isCorrect: true
       explanation: "That's correct. A hierarchy defines multiple levels of attributes."

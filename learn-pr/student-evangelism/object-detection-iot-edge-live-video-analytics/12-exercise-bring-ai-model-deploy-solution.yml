@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.object-detection-lva-edge-device.exercise-bring-ai-model-deploy-solution
 title: Exercise - Bring your AI model to deploy a video analytics solution
+
 metadata:
   title: Exercise - Bring your AI model to deploy a video analytics solution
-  description: In this section, we help learner bring YOLO model and deploy the solution.
-  ms.date: 07/20/2024
-  author: leestott
-  ms.author: leestott
+
+  description: Historical exercise reviewing how a YOLO-based model was brought into the archived Vision on Edge workflow and deployed in the retired Live Video Analytics scenario.
+  ms.date: 05/10/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 15
 content: |
@@ -14,14 +16,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "If you are a customer and you want to use one platform that will allow you to deploy different machine learning models for different scenarios, Vision on Edge is a good solution template. Because:"
+  - content: "Historically, why was Vision on Edge presented as a template for deploying different models to an edge device?"
     choices:
-    - content: "You can easily deploy models on your existing cameras"
+    - content: "Because teams could easily deploy models on existing cameras"
       isCorrect: false
-      explanation: "It is correct, but this feature is not enough to deploy machine learning models"
-    - content: "Vision on Edge solution uses Live Video Analytics to build video applications"
+      explanation: "That capability was useful, but by itself it did not make the solution a general template for deploying machine learning models"
+    - content: "Because the Vision on Edge solution used Live Video Analytics to build video applications"
       isCorrect: false
-      explanation: "It is correct, but this feature is not enough to deploy machine learning models"
-    - content: "You can build and deploy your models to your edge device"
+      explanation: "That was part of the architecture, but by itself it did not make the solution a general template for deploying machine learning models"
+    - content: "Because teams could build and deploy their own models to an edge device"
       isCorrect: true
-      explanation: "You can bring other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"
+      explanation: "Historically, the solution could incorporate other modules, such as Cognitive Services containers, custom edge modules built by you with open source machine learning models, or custom models trained with your data"

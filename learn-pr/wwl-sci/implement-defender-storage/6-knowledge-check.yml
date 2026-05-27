@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-defender-storage.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of implementing Microsoft Defender for Storage. Topics include detection pillars, deployment methods, malware scanning cost controls, and alert routing configuration.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A Microsoft Defender for Storage alert fires indicating suspicious access from a Tor exit node to a blob container. Which Defender for Storage detection pillar generated this alert?"
+    choices:
+    - content: "Malware scanning"
+      isCorrect: false
+      explanation: "Incorrect. Malware scanning detects malicious content within uploaded files using Microsoft Defender Antivirus. It doesn't analyze the origin or behavioral pattern of access requests."
+    - content: "Activity monitoring"
+      isCorrect: true
+      explanation: "Correct. Activity monitoring continuously analyzes data and control plane logs to detect suspicious access patterns and behaviors. This includes access from Tor exit nodes, unusual geographic locations, and anomalous request frequencies."
+    - content: "Sensitive data threat detection"
+      isCorrect: false
+      explanation: "Incorrect. Sensitive data threat detection identifies and prioritizes alerts based on the sensitivity classification of the data at risk. It doesn't independently detect access origin patterns such as Tor exit nodes."
+    - content: "Hash reputation analysis"
+      isCorrect: false
+      explanation: "Incorrect. Hash reputation analysis is a subcomponent of malware scanning that compares file hash values against known malware signatures. It isn't involved in detecting suspicious access origins."
+  - content: "A security engineer needs to ensure Microsoft Defender for Storage is enabled for all storage accounts in a subscription, including accounts created in the future. What is the recommended deployment method?"
+    choices:
+    - content: "Enable Defender for Storage on each storage account individually through the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect. Enabling Defender for Storage on individual accounts doesn't automatically protect accounts created in the future. This approach doesn't scale and requires ongoing manual effort."
+    - content: "Enable Defender for Storage at the subscription level using a built-in Azure Policy assignment"
+      isCorrect: true
+      explanation: "Correct. Enabling Defender for Storage at the subscription level through Azure Policy is the recommended approach. It automatically protects all existing and newly created storage accounts within the subscription and supports consistent policy enforcement at scale."
+    - content: "Run a PowerShell script on a weekly schedule to detect and enable Defender on new storage accounts"
+      isCorrect: false
+      explanation: "Incorrect. A scheduled script isn't reliable for immediate protection of new accounts and introduces operational overhead. Policy-driven subscription-level enablement provides automatic, real-time coverage."
+    - content: "Enable Defender for Storage at the resource group level to cover all accounts in the group"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Storage is scoped at the subscription level or individual storage account level. Resource group-level enablement isn't supported."
+  - content: "An organization configures Microsoft Defender for Storage malware scanning with a monthly cap of 5,000 GB per storage account. A high-traffic account reaches this cap mid-month. What is the expected behavior?"
+    choices:
+    - content: "Malware scanning pauses for that account for the remainder of the month; new uploads proceed unscanned"
+      isCorrect: true
+      explanation: "Correct. When the monthly GB cap is reached, malware scanning stops for the remainder of the billing period for that storage account. Defender for Storage generates an alert to notify the security team that the cap is reached."
+    - content: "Malware scanning continues but only performs hash reputation analysis instead of full file scanning"
+      isCorrect: false
+      explanation: "Incorrect. Malware scanning doesn't fall back to a reduced scan mode when the cap is reached. It stops scanning entirely for the remainder of the month once the cap is hit."
+    - content: "Microsoft Defender for Storage is automatically disabled for the affected storage account"
+      isCorrect: false
+      explanation: "Incorrect. Reaching the malware scanning cap doesn't disable Defender for Storage. Activity monitoring and sensitive data threat detection continue to operate. Only the malware scanning feature pauses."
+    - content: "The monthly cap automatically doubles to prevent scanning disruption"
+      isCorrect: false
+      explanation: "Incorrect. The monthly cap doesn't automatically increase. The security engineer must manually update the cap configuration if higher scanning volume is required."

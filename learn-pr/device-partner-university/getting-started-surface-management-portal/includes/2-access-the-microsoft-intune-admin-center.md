@@ -8,7 +8,7 @@ To access Surface Management Portal through Intune:
 - Confirm that the correct tenant is selected.
 
 >[!TIP]
-> To check if a tenant already exists in Azure Active Directory, go to [aka.ms/wheres-my-tenant](/aka.ms/wheres-my-tenant).
+> To check if a tenant already exists in Azure Active Directory, go to [aka.ms/wheres-my-tenant](https://aka.ms/wheres-my-tenant).
 
 - Once inside the Intune Admin Center, navigate to **All services**.
 - Locate **Surface Management Portal**.

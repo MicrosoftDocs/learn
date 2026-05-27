@@ -1,4 +1,4 @@
-As a Security Architect, you must design solutions that protect against three distinct threat categories: insider threats, external attacks, and supply chain compromises. Each category requires different controls, but they share common elements rooted in Zero Trust principles—verify explicitly, use least privilege, and assume breach.
+As a Security Architect, you must design solutions that protect against three distinct threat categories: insider threats, external attacks, and supply chain compromises. Each category requires different controls, but they share common elements rooted in Zero Trust principles: verify explicitly, use least privilege, and assume breach.
 
 An attack chain describes the typical sequence of events during an attack that leads to organizational damage. While there's no single linear path for any attack type, understanding common patterns helps you design layered defenses. The Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB) provide best practices for each threat category.
 
@@ -6,7 +6,7 @@ The following best practices and MCSB controls are technology-agnostic security 
 
 ### Insider threat protection
 
-Insider threats originate from individuals with legitimate access—employees, contractors, or partners—who intentionally or accidentally cause harm. Key risks include data leaks, intellectual property theft, fraud, and compliance violations. Key practices include:
+Insider threats originate from individuals with legitimate access (employees, contractors, or partners) who intentionally or accidentally cause harm. Key risks include data leaks, intellectual property theft, fraud, and compliance violations. Key practices include:
 
 - **Implement least privilege access**: Restrict access to only what users need for their role. Use just-in-time access for sensitive operations and conduct regular access reviews. *MCSB Controls: PA-1 (limit privileged users), PA-7 (just enough administration), IM-2 (protect identity systems).*
 - **Monitor user behavior**: Deploy user entity behavioral analytics (UEBA) to detect anomalous activity patterns such as unusual data access, off-hours activity, or bulk downloads. *MCSB Controls: LT-1 (threat detection), LT-2 (identity threat detection).*
@@ -27,7 +27,7 @@ Insider threats originate from individuals with legitimate access—employees, c
 
 ### External attack protection
 
-External attacks originate from threat actors outside your organization—cybercriminals, nation-states, or hacktivists. Effective defense requires balanced investments across the full attack lifecycle: identify, protect, detect, respond, and recover. Key practices include:
+External attacks originate from threat actors outside your organization (cybercriminals, nation-states, or hacktivists). Effective defense requires balanced investments across the full attack lifecycle: identify, protect, detect, respond, and recover. Key practices include:
 
 - **Deploy layered defenses**: Combine preventive controls (firewalls, endpoint protection, access controls) with detective controls (SIEM, XDR) across all attack surfaces. *MCSB Controls: NS-1 (network segmentation), ES-1 (endpoint detection), LT-1 (threat detection).*
 - **Integrate XDR and SIEM**: Use extended detection and response (XDR) for high-fidelity alerts on covered assets, and SIEM for broad visibility and correlation across all data sources. Neither alone provides complete coverage. *MCSB Controls: LT-1 (threat detection), LT-5 (centralize logs), IR-3 (create incidents from alerts).*
@@ -60,8 +60,8 @@ Supply chain attacks compromise trusted vendors, software, or services to gain a
 
 | MCSB Control | Name |
 |---------|------|
-| [DS-2](/security/benchmark/azure/mcsb-v2-devop-security#ds-2) | Secure the software supply chain |
-| [DS-6](/security/benchmark/azure/mcsb-v2-devop-security#ds-6) | Secure the workload lifecycle |
+| [DS-2](/security/benchmark/azure/mcsb-v2-devops-security#ds-2) | Secure the software supply chain |
+| [DS-6](/security/benchmark/azure/mcsb-v2-devops-security#ds-6) | Secure the workload lifecycle |
 | [PA-3](/security/benchmark/azure/mcsb-v2-privileged-access#pa-3) | Manage lifecycle of identities and entitlements |
 | [PA-6](/security/benchmark/azure/mcsb-v2-privileged-access#pa-6) | Use privileged access solution |
 | [PA-8](/security/benchmark/azure/mcsb-v2-privileged-access#pa-8) | Determine access process for cloud provider support |
@@ -75,8 +75,8 @@ Supply chain attacks compromise trusted vendors, software, or services to gain a
 These three threat categories often intersect. An external attacker may compromise a supplier to gain initial access, then move laterally using compromised insider credentials. Effective security architecture addresses all three categories with overlapping controls that create defense in depth.
 
 The common threads across all attack types are:
-- **Assume breach** – Design controls that limit damage when preventive measures fail
-- **Continuous monitoring** – Detect anomalies across identity, network, endpoint, and data
-- **Rapid response** – Automate containment and maintain tested incident response plans
+- **Assume breach**: Design controls that limit damage when preventive measures fail
+- **Continuous monitoring**: Detect anomalies across identity, network, endpoint, and data
+- **Rapid response**: Automate containment and maintain tested incident response plans
 
 By applying these best practices and MCSB controls, you can design solutions that reduce risk from insider threats, external attacks, and supply chain compromises in an integrated, defensible architecture.

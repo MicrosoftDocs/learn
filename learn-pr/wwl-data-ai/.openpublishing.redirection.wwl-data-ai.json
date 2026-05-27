@@ -4777,6 +4777,86 @@
       "redirect_url": "/training/modules/transcribe-speech-input-text"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/index.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/1-introduction.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/2-describe.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/3-explain-use-cases.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/4-exercise-provision.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/5-share-schedule-data-share.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/6-exercise-share-dataset.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/7-receive-data.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/8-exercise-receive-data.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/9-track-monitor-data-share.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/10-exercise-track-monitor-data-share.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/11-secure.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/12-manage-exists-shares.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/13-knowledge-check.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-azure-data-share/14-summary.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/share-data-with-azure-data-share/index.yml",
+      "redirect_url": "/azure/data-share/overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/transcribe-speech-input-text/8-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/create-speech-enabled-apps/"
     },

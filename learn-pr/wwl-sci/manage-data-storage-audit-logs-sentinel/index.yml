@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.manage-data-storage-audit-logs-sentinel
+metadata:
+  title: Manage Data Storage and Query Audit Logs in Microsoft Sentinel
+  description: "Manage data storage in Microsoft Sentinel by creating custom log tables, configuring retention tiers and archive policies for compliance. Then, connect Microsoft Purview Audit as a data source, and query audit logs in the Microsoft Defender XDR portal for compliance investigations."
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: module
+  ms.service: microsoft-sentinel
+  ai-usage: ai-assisted
+title: Manage data storage and query audit logs in Microsoft Sentinel
+summary: Manage data storage in Microsoft Sentinel by creating custom log tables, configuring retention tiers and archive policies, and integrating Microsoft Purview Audit. Create tables for nonstandard data sources, apply Analytics and Archive retention tiers to meet compliance requirements, and query Purview Audit logs in the Microsoft Defender XDR portal.
+abstract: |
+  After completing this module, you'll be able to:
+    - Create custom log tables in a Microsoft Sentinel workspace to store nonstandard ingested data
+    - Configure data retention tiers and archive policies for Microsoft Sentinel tables
+    - Connect Microsoft Purview Audit as a data source in Microsoft Sentinel
+    - Query Purview Audit logs in the Microsoft Defender XDR portal
+prerequisites: |
+  - Experience setting up a Microsoft Sentinel workspace and connecting data sources
+  - Familiarity with Log Analytics workspaces and data collection rules (DCRs)
+  - Basic understanding of Microsoft Purview and Microsoft Purview concepts
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - security-engineer
+products:
+  - microsoft-sentinel
+  - defender-xdr
+  - azure-log-analytics
+  - azure-monitor
+  - microsoft-purview
+subjects:
+  - security
+  - cloud-security
+units:
+- learn.wwl.manage-data-storage-audit-logs-sentinel.introduction
+- learn.wwl.manage-data-storage-audit-logs-sentinel.create-custom-log-tables
+- learn.wwl.manage-data-storage-audit-logs-sentinel.implement-data-retention
+- learn.wwl.manage-data-storage-audit-logs-sentinel.connect-purview-audit
+- learn.wwl.manage-data-storage-audit-logs-sentinel.query-purview-audit
+- learn.wwl.manage-data-storage-audit-logs-sentinel.knowledge-check
+- learn.wwl.manage-data-storage-audit-logs-sentinel.summary
+badge:
+  uid: learn.wwl.manage-data-storage-audit-logs-sentinel.badge

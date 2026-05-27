@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-multi-agent-orchestration-azure-ai-foundry.examine-advanced-orchestration-architectures
+title: Examine advanced orchestration architectures
+metadata:
+  title: Examine Advanced Orchestration Architectures
+  description: "Examine advanced orchestration architectures."
+  ms.date: 05/21/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-advanced-orchestration-architectures.md)]

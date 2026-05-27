@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.dpu.introduction-surface-laptop-13-1st-edition
+title: Introduction to Microsoft Surface Laptop for Business, 13-inch (1st Edition)
+metadata:
+  title: Introduction To Microsoft Surface Laptop For Business, 13-Inch (1st Edition)
+  description: "In this module, you'll learn about the Microsoft Surface Laptop for Business, 13-inch (1st Edition), its features, how it works, and when to use it."
+  ms.date: 05/19/2026
+  author: ozahran7
+  ms.author: v-zahranomar
+  ms.topic: module
+  ms.service: surface
+summary: >
+  In this module, you'll learn about the Microsoft Surface Laptop for Business, 13-inch (1st Edition), its features, how it works, and when to use it.
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the features of the Microsoft Surface Laptop for Business, 13-inch (1st Edition).
+  - Explain how the Microsoft Surface Laptop for Business, 13-inch (1st Edition) works.
+  - Identify when to use the Microsoft Surface Laptop for Business, 13-inch (1st Edition).
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/introduction-to-surface-laptop-13-1st-edition-badge.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - surface
+units:
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.introduction
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.what-is-microsoft-surface-laptop-for-business-13-inch-1st-edition
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-works
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.how-surface-laptop-for-business-13-inch-1st-edition-ai-features-work
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.when-to-use-surface-laptop-for-business-13-inch-1st-edition
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.knowledge-check
+  - learn.dpu.introduction-surface-laptop-13-1st-edition.summary
+badge:
+  uid: learn.dpu.introduction-surface-laptop-13-1st-edition.badge

@@ -23,7 +23,7 @@ prerequisites: |
   - Basic understanding of AI concepts such as embeddings and language models.
   - Familiarity with Azure services (Azure OpenAI, Microsoft Foundry) is helpful but not required.
   - Understanding of REST APIs and JSON data formats.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/sql-server-2025-module.svg
 levels:
 - beginner
 roles:

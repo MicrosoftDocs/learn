@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-openai-authentication-authorization.methods-of-authentication-supported-by-azure-open-ai
-title: Methods of authentication supported by Azure OpenAI
+title: Authentication methods for Azure OpenAI in Microsoft Foundry
 metadata:
-  title: Methods of authentication supported by Azure OpenAI
-  description: Azure OpenAI authentication methods
-  ms.date: 10/16/2024
-  author: sarah-yo
-  ms.author: sayoung
+  title: Authentication Methods for Azure OpenAI in Microsoft Foundry
+  description: Compare key-based authentication with Microsoft Entra ID authentication for Azure OpenAI in Microsoft Foundry, including managed identity and local authentication considerations.
+  ms.date: 05/22/2026
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
 durationInMinutes: 8
 content: |

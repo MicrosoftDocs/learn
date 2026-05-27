@@ -1,3 +1,15 @@
+﻿
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1bbc1402-6e24-44f0-8e26-a3e248c7b8dd]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure Content Understanding is a generative AI service that you can use to extract insights and data from multiple kinds of content. With Content Understanding, you can quickly build applications that analyze complex data and generate outputs that can be used to automate and optimize processes.
 
 Content Understanding is available through Microsoft Foundry. To use it, you need to provision a Microsoft Foundry resource in your Azure subscription. You can develop and manage a Content Understanding solution:
@@ -34,3 +46,4 @@ Video accounts for a large volume of the data captured today, and you can use Co
 
 ![Screenshot of an video file being analyzed by Content Understanding.](../media/video-analysis.png)
 
+::: zone-end

@@ -8,7 +8,7 @@ Zero Trust is a security strategy, not a product. It eliminates the assumption t
 - **Use least privilege access**. Limit user access with just-in-time and just-enough-access (JIT/JEA), risk-based adaptive policies, and data protection.
 - **Assume breach**. Minimize the blast radius and segment access. Verify end-to-end encryption and use analytics to gain visibility, drive threat detection, and improve defenses.
 
-You apply these principles across seven technology pillars: **identities**, **endpoints**, **applications**, **data**, **infrastructure**, **network**, and **visibility, automation, and orchestration**. Each pillar acts as both a signal source and a resource to defend. The seventh pillar—visibility, automation, and orchestration—collects signals from the other six and provides integrated threat detection and automated response.
+You apply these principles across seven technology pillars: **identities**, **endpoints**, **applications**, **data**, **infrastructure**, **network**, and **visibility, automation, and orchestration**. Each pillar acts as both a signal source and a resource to defend. The seventh pillar (visibility, automation, and orchestration) collects signals from the other six and provides integrated threat detection and automated response.
 
 :::image type="content" source="../media/zero-trust-architecture.png" lightbox="../media/zero-trust-architecture.png" alt-text="Diagram of the Zero Trust architecture showing the relationship between the seven technology pillars: identities, endpoints, applications, data, infrastructure, network, and visibility, automation, and orchestration.":::
 
@@ -59,7 +59,7 @@ During the **Plan** and **Ready** phases, focus first on basic security hygiene.
 - Keep software and systems up to date
 - Protect sensitive data with classification and encryption
 
-These practices cut across multiple technology pillars simultaneously. For example, deploying risk-based Conditional Access policies in Microsoft Entra ID integrates signals from identities (user risk), endpoints (device compliance), and applications (sensitivity level) into a single access decision—advancing three pillars at once.
+These practices cut across multiple technology pillars simultaneously. For example, deploying risk-based Conditional Access policies in Microsoft Entra ID integrates signals from identities (user risk), endpoints (device compliance), and applications (sensitivity level) into a single access decision, advancing three pillars at once.
 
 ### Secure privileged access early
 

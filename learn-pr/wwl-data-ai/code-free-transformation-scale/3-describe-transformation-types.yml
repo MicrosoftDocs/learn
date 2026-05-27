@@ -4,12 +4,12 @@ title: Describe Azure Data Factory transformation types
 metadata:
   title: Describe Azure Data Factory transformation types
   description: "Describe Azure Data Factory transformation types"
-  ms.date: 11/18/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-describe-transformation-types.md)]
+  [!include[](includes/3-describe-transformation-types.md)]

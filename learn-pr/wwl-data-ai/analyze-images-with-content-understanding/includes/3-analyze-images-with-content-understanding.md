@@ -1,3 +1,15 @@
+﻿
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=56be56e2-5ebf-4776-a72e-d1443dde578b]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Content Understanding can analyze images to extract structured data, identify visual elements, and generate descriptions. You can use prebuilt analyzers for common scenarios or create custom analyzers tailored to your specific needs.
 
 ## Supported image formats
@@ -157,3 +169,5 @@ Use confidence scores to build automation workflows that route low-confidence ex
 - **Consistent orientation**: Upright images are processed more reliably than rotated ones
 
 Content Understanding's image analysis capabilities enable you to transform visual content into structured, actionable data for document processing, inventory management, quality inspection, and many other business scenarios.
+
+::: zone-end

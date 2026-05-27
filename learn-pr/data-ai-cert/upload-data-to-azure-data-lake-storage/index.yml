@@ -3,13 +3,13 @@ uid: learn.data-ai.upload-data-to-azure-data-lake-storage
 metadata:
   title: Upload data to Azure Data Lake Storage
   description: "Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer."
-  ms.date: 03/25/2022
-  author: wwlpublish
-  ms.author: jamesh
+  ms.date: 05/18/2026
+  author: weslbo
+  ms.author: wedebols
   ms.topic: module
   ms.service: azure-data-lake-storage
 title: Upload data to Azure Data Lake Storage
-summary: Learn various ways to upload data to Data Lake Storage Gen 2. Upload data through the Azure portal, Azure Storage Explorer, or .NET. Or copy the data in Azure Data Factory.
+summary: Learn how to create an Azure Data Lake Storage Gen2 account and upload data using Azure Storage Explorer.
 abstract: |
   In this module you will:
     - Create an Azure Data Lake Storage account.
@@ -32,4 +32,3 @@ units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.summary
 badge:
   uid: learn.data-ai.upload-data-to-azure-data-lake-storage.badge
-

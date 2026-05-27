@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-enterprise-agent-communication-a2a.resolve-conflicts-maintain-audit-trails
+title: Resolve conflicts and maintain audit trails
+metadata:
+  title: Resolve Conflicts and Maintain Audit Trails
+  description: "Resolve conflicts and maintain audit trails."
+  ms.date: 05/22/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-resolve-conflicts-maintain-audit-trails.md)]

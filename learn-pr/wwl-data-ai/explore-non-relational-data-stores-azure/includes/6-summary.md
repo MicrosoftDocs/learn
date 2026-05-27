@@ -1,4 +1,4 @@
-Azure Cosmos DB provides a global-scale database solution for non-relational data.
+Azure Cosmos DB provides a global-scale database solution for nonrelational data.
 
 In this module, you learned how to:
 
@@ -8,4 +8,4 @@ In this module, you learned how to:
 
 ## Next steps
 
-Now that you've learned about Azure Cosmos DB for non-relational data storage, consider learning more about data-related workloads on Azure by pursuing a Microsoft certification in [Azure Data Fundamentals](/certifications/azure-data-fundamentals/).
+Now that you've learned about Azure Cosmos DB for nonrelational data storage, consider learning more about data-related workloads on Azure by pursuing a Microsoft certification in [Azure Data Fundamentals](/credentials/certifications/azure-data-fundamentals/).

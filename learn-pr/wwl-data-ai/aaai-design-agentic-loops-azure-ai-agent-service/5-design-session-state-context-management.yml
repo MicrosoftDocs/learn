@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-agentic-loops-microsoft-foundry-agent-service.design-session-state-context-management
+title: Design session state and context management
+metadata:
+  title: Design Session State and Context Management
+  description: "Design session state and context management."
+  ms.date: 05/20/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-design-session-state-context-management.md)]

@@ -1,23 +1,24 @@
 ### YamlMime:Module
 uid: learn.secure-azure-openai-authentication-authorization
 metadata:
-  ms.author: sayoung
-  author: sarah-yo
-  ms.date: 10/16/2024
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 05/22/2026
   ms.update-cycle: 180-days
-  title: Secure Azure OpenAI authentication and authorization
-  description: Learn about the security considerations for different ways of authenticating to Azure OpenAI and how to assign role based access control permissions to managed identities
+  title: Secure Authentication and Authorization for Azure OpenAI in Microsoft Foundry
+  description: Learn how to secure Azure OpenAI in Microsoft Foundry by using Microsoft Entra ID authentication, managed identities, least-privilege Foundry RBAC roles, and local authentication controls.
   ms.topic: module
   moduleType: standard
   ms.collection: ce-advocates-ai-copilot
   ms.service: microsoft-foundry
-title: Secure Azure OpenAI authentication and authorization
-summary: Learn why you should use managed identity for Azure OpenAI authentication and how you can configure role based access controls to minimize necessary permissions
+title: Secure authentication and authorization for Azure OpenAI in Microsoft Foundry
+summary: Learn how to compare key-based authentication with Microsoft Entra ID authentication for Azure OpenAI in Microsoft Foundry, use managed identities as Microsoft Entra credentials, assign least-privilege Foundry RBAC roles, and disable local authentication after migration when appropriate.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe different methods of authenticating to Azure OpenAI
-  - Understand why managed identities are a more secure option
-  - Be able to choose an appropriate RBAC role for your Azure OpenAI managed identity
+  - Compare key-based authentication with Microsoft Entra ID authentication for Azure OpenAI in Microsoft Foundry.
+  - Describe how managed identities, service principals, and user credentials work with Microsoft Entra ID authentication.
+  - Choose least-privilege Foundry RBAC roles for users, apps, and managed identities.
+  - Explain when to disable local authentication after validating Microsoft Entra ID access.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Fundamental security concepts

@@ -40,10 +40,10 @@ In modern organizations, this identification must also account for AI and machin
 
 Microsoft Security Exposure Management provides asset criticality classification to support prioritization:
 
-- **Very High**: Core business assets whose compromise would cause major organizational damage.
-- **High**: Assets that threat actors could use to gain access to Very High criticality assets.
-- **Medium**: Assets with limited risk exposure or lesser importance to business continuity.
-- **Low**: Assets with minimal business impact or security exposure.
+- **Very High**: Assets essential to the survival and continuity of your business. Their compromise could result in catastrophic consequences.
+- **High**: Assets crucial to your organization's core operations. Their compromise could lead to significant disruptions.
+- **Medium**: Assets that have a moderate impact and might affect certain functions or processes.
+- **Low**: Assets with minimal impact on business operations and security if compromised.
 
 This classification helps security teams focus protective measures and incident response efforts where they matter most.
 

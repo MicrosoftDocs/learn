@@ -1,3 +1,15 @@
+﻿
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d02c8cfd-dc7e-40ab-9c9b-739f473c8c95]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Azure Document Intelligence Studio is an online tool for visually exploring, understanding, and integrating features from the Document Intelligence service. You can use the Studio to analyze form layouts, extract data from prebuilt models, and train custom models—all through a visual interface.
 
 You can access the Studio at [documentintelligence.ai.azure.com](https://documentintelligence.ai.azure.com).
@@ -56,6 +68,8 @@ Document Intelligence supports optional features that you can enable depending o
 
 > [!NOTE]
 > Some add-on capabilities are premium features that incur extra costs. Check the [pricing page](https://azure.microsoft.com/pricing/details/ai-document-intelligence/) for details.
+
+::: zone-end
 
 ## Learn more
 
