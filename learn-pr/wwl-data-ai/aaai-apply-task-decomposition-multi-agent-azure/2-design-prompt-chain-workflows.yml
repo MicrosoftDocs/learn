@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure.design-prompt-chain-workflows
+title: Design prompt chaining workflows
+metadata:
+  title: Design Prompt Chaining Workflows
+  description: "Design prompt chaining workflows."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-design-prompt-chain-workflows.md)]
