@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-enterprise-agent-communication-a2a.build-conflict-detection-resolution-mechanisms
+title: Build conflict detection and resolution mechanisms
+metadata:
+  title: Build Conflict Detection and Resolution Mechanisms
+  description: "Build conflict detection and resolution mechanisms."
+  ms.date: 05/22/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-build-conflict-detection-resolution-mechanisms.md)]
