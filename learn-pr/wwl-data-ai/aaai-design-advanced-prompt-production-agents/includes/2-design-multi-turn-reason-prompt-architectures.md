@@ -1,3 +1,5 @@
+The Azure AI Inference SDK lets you build multi-turn reasoning chains where each completion call produces one verified reasoning layer, grounding every subsequent step in structured, validated output. You use this pattern in this unit to design production-grade reasoning architectures for clinical agents.
+
 When clinical agents analyze patient documents to generate care recommendations, a single reasoning step often produces incomplete or unverified conclusions. A patient uploads lab results showing elevated blood glucose. The agent needs to extract the numeric values, interpret them against clinical thresholds, cross-reference with the patient's medication history, assess risk factors, and synthesize a recommendation — each step building on verified facts from the previous layer. This requires structured multi-turn reasoning, not just asking the model to "think step by step" in one pass.
 
 | Reasoning Pattern | When to Use | Turns Required |
@@ -56,6 +58,7 @@ import os
 chat_client = ChatCompletionsClient(
     endpoint=os.environ["AZURE_AI_SERVICES_ENDPOINT"],
     credential=DefaultAzureCredential(),
+    credential_scopes=["https://cognitiveservices.azure.com/.default"],
 )
 
 # Define reasoning trace schema
@@ -162,12 +165,6 @@ Allocate your reasoning budget before invoking the agent. If complexity signals 
 
 Monitor the cost-quality trade-off in production. Track token usage per reasoning turn and correlate with clinical accuracy scores from quality reviews. If two-turn reasoning achieves the same accuracy as three-turn for a particular case type, reduce the budget for that type. Reasoning budget allocation should be data-driven, not arbitrary.
 
-Now that you understand how to architect multi-turn reasoning chains that decompose complex clinical tasks into verifiable steps, you're ready to learn how to defend these prompts against injection attacks embedded in untrusted patient-provided content.
+Multi-turn reasoning chains are only as reliable as the inputs they process. The next unit examines how to defend your reasoning pipeline against prompt injection attacks embedded in patient-provided documents.
 
-## Unit summary
 
-- **Nested chain-of-thought** structures multi-step reasoning into extract → interpret → recommend stages, making each step auditable and verifiable.
-- **Scratchpad reasoning** separates the agent's internal deliberation from its final output, creating verifiable traces without exposing raw reasoning to users.
-- **Dynamic context injection** controls exactly what information enters each reasoning step, reducing hallucination risk by scoping the LLM's input.
-- **Structured output schemas** force the agent to produce typed, validated JSON responses rather than freeform text, enabling programmatic quality checks.
-- **Reasoning budgets** allocate token spend based on task complexity — simple queries get fewer reasoning turns than complex differential diagnoses.

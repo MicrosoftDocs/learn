@@ -1,3 +1,5 @@
+Production system prompts degrade — model updates, shifting requirements, and accumulated edits erode quality in ways that aren't obvious until something breaks. Microsoft Foundry evaluation runs give you the quantitative signal to detect and respond to those changes before they reach production.
+
 A system prompt that produces excellent results in January might degrade in April when the underlying model is updated. You discover that changing "analyze these lab results" to "interpret these clinical findings" improves accuracy by 12% — but without version control, you can't reproduce the old behavior if the change breaks edge cases. Production prompt engineering requires the same rigor as code engineering: version control, regression testing, A/B comparison, and evidence-based optimization decisions.
 
 | Versioning Practice | Purpose | Tool |
@@ -62,7 +64,7 @@ Your A/B test workflow:
 
 5. **Make evidence-based selection**: Select the prompt that optimizes your priority metric while maintaining acceptable performance on other metrics. Document the decision and the supporting data.
 
-Here's an A/B test implementation using Azure AI Evaluation SDK:
+The following code runs both prompt variants through an identical evaluation pipeline and compares their quality scores:
 
 ```python
 from azure.ai.evaluation import evaluate, GroundednessEvaluator, CoherenceEvaluator, RelevanceEvaluator
@@ -75,6 +77,7 @@ import pandas as pd
 chat_client = ChatCompletionsClient(
     endpoint=os.environ["AZURE_AI_SERVICES_ENDPOINT"],
     credential=DefaultAzureCredential(),
+    credential_scopes=["https://cognitiveservices.azure.com/.default"],
 )
 
 # Configure model for evaluators
@@ -150,24 +153,24 @@ Each variant runs through an identical evaluation pipeline measuring groundednes
 # Compare results
 print("\n=== A/B Test Results ===")
 print(f"\nVariant A (v1.1.0) - Baseline:")
-print(f"  Groundedness: {eval_results_v1['metrics']['groundedness']:.3f}")
-print(f"  Coherence:    {eval_results_v1['metrics']['coherence']:.3f}")
-print(f"  Relevance:    {eval_results_v1['metrics']['relevance']:.3f}")
+print(f"  Groundedness: {eval_results_v1['metrics']['groundedness.groundedness']:.3f}")
+print(f"  Coherence:    {eval_results_v1['metrics']['coherence.coherence']:.3f}")
+print(f"  Relevance:    {eval_results_v1['metrics']['relevance.relevance']:.3f}")
 
 print(f"\nVariant B (v1.2.0) - Candidate:")
-print(f"  Groundedness: {eval_results_v2['metrics']['groundedness']:.3f}")
-print(f"  Coherence:    {eval_results_v2['metrics']['coherence']:.3f}")
-print(f"  Relevance:    {eval_results_v2['metrics']['relevance']:.3f}")
+print(f"  Groundedness: {eval_results_v2['metrics']['groundedness.groundedness']:.3f}")
+print(f"  Coherence:    {eval_results_v2['metrics']['coherence.coherence']:.3f}")
+print(f"  Relevance:    {eval_results_v2['metrics']['relevance.relevance']:.3f}")
 
 # Calculate deltas
-groundedness_delta = eval_results_v2['metrics']['groundedness'] - eval_results_v1['metrics']['groundedness']
-coherence_delta = eval_results_v2['metrics']['coherence'] - eval_results_v1['metrics']['coherence']
-relevance_delta = eval_results_v2['metrics']['relevance'] - eval_results_v1['metrics']['relevance']
+groundedness_delta = eval_results_v2['metrics']['groundedness.groundedness'] - eval_results_v1['metrics']['groundedness.groundedness']
+coherence_delta = eval_results_v2['metrics']['coherence.coherence'] - eval_results_v1['metrics']['coherence.coherence']
+relevance_delta = eval_results_v2['metrics']['relevance.relevance'] - eval_results_v1['metrics']['relevance.relevance']
 
 print(f"\nDelta (B - A):")
-print(f"  Groundedness: {groundedness_delta:+.3f} ({groundedness_delta/eval_results_v1['metrics']['groundedness']*100:+.1f}%)")
-print(f"  Coherence:    {coherence_delta:+.3f} ({coherence_delta/eval_results_v1['metrics']['coherence']*100:+.1f}%)")
-print(f"  Relevance:    {relevance_delta:+.3f} ({relevance_delta/eval_results_v1['metrics']['relevance']*100:+.1f}%)")
+print(f"  Groundedness: {groundedness_delta:+.3f} ({groundedness_delta/eval_results_v1['metrics']['groundedness.groundedness']*100:+.1f}%)")
+print(f"  Coherence:    {coherence_delta:+.3f} ({coherence_delta/eval_results_v1['metrics']['coherence.coherence']*100:+.1f}%)")
+print(f"  Relevance:    {relevance_delta:+.3f} ({relevance_delta/eval_results_v1['metrics']['relevance.relevance']*100:+.1f}%)")
 
 # Decision logic
 if groundedness_delta > 0.05 and coherence_delta >= 0 and relevance_delta >= 0:
@@ -225,9 +228,4 @@ eval_results = evaluate(
 Each agentic evaluator returns a pass/fail result with a reasoning explanation. A `task_adherence` failure identifies which system prompt constraint was violated and why. An `intent_resolution` failure surfaces the gap between what the user asked and what the agent addressed. This diagnosis guides the specific prompt change needed rather than requiring trial-and-error reruns.
 
 
-## Unit summary
 
-- **Prompt versioning** stores prompts as code-controlled artifacts with semantic version numbers, enabling rollback and audit trails for every prompt change.
-- **A/B testing** compares prompt variants quantitatively by running both versions against the same evaluation set and measuring accuracy, safety, and latency metrics.
-- **Agentic evaluators** (`IntentResolutionEvaluator`, `TaskAdherenceEvaluator`, `ToolCallAccuracyEvaluator`) complement quality evaluators by measuring agent-specific failure modes: missed user intent, system prompt constraint violations, and incorrect tool selection.
-- **Statistical significance** in A/B tests requires sufficient sample sizes — small evaluation sets can produce misleading results due to LLM output variance.

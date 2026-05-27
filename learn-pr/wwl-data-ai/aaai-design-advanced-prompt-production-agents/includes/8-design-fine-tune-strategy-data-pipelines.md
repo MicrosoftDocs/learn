@@ -1,3 +1,5 @@
+Microsoft Foundry supports supervised fine-tuning, Direct Preference Optimization, and Reinforcement Fine-Tuning so you can specialize models for domain-specific tasks when prompt engineering alone is insufficient. In this unit, you design a fine-tuning strategy and build the data preparation pipeline that supports it.
+
 Northwind Health's clinical reasoning agent handles 200 different chronic disease management scenarios. Prompt engineering has covered 80% of scenarios well — clear chain-of-thought architecture, structural delimiters, system-prompt constraints, and guardrails. But 20% of scenarios involve highly specialized clinical terminology and reasoning patterns that general-purpose models handle inconsistently. The prompt has become a 4,000-token instruction set trying to teach the model clinical reasoning conventions that a fine-tuned model would internalize. Prompt length is increasing latency and cost for every request, including the 80% that didn't need the extra instructions.
 
 Fine-tuning offers a different answer: instead of teaching the model at inference time (via increasingly complex prompts), teach it during training (via fine-tuning data). But fine-tuning has real costs — data preparation, training runs, evaluation, deployment, and retraining cadence — that must be weighed against prompt engineering alternatives.
@@ -48,7 +50,7 @@ Once you've decided to fine-tune, design the strategy before preparing data:
 
 ## Data preparation pipelines
 
-The quality of fine-tuning data determines whether the fine-tuned model improves on the base model. Data preparation is not a one-time activity — it's a pipeline that runs continuously as you accumulate new training examples.
+The quality of fine-tuning data determines whether the fine-tuned model improves on the base model. Data preparation isn't a one-time activity — it's a pipeline that runs continuously as you accumulate new training examples.
 
 ### Data curation
 
@@ -98,11 +100,4 @@ Fine-tuning datasets must be versioned alongside model versions. When a producti
 
 Azure Machine Learning Data Assets provide versioned dataset storage with lineage tracking — the training run records which dataset version it consumed, creating a traceable chain from production incident → model version → training dataset → specific problematic examples.
 
-## Unit summary
 
-- **Fine-tune vs. prompt-optimize decision framework** evaluates task consistency, prompt length, latency, data availability, inference volume, and domain vocabulary — all criteria should favor fine-tuning before committing training resources.
-- **Fine-tuning strategy** begins with base model selection (smallest model that meets quality requirements after fine-tuning), followed by objective definition (format, vocabulary, reasoning patterns), data volume thresholds, and retraining frequency triggers.
-- **Data curation** assembles high-quality training examples from clinician corrections (highest value), positive production examples, and validated synthetic examples — with quality filters that remove ambiguous, PHI-containing, or duplicate examples.
-- **JSONL formatting for instruction fine-tuning** uses abbreviated system prompts in training examples (the model learns reasoning, not prompt memorization) with exact target schemas that production guardrails validate.
-- **Validation pipelines** use an 80/10/10 train/validation/test split; test sets are held out until training completes; evaluation includes format conformance, task accuracy, and safety guardrail pass rate.
-- **Dataset versioning** creates a traceable chain from production incidents to specific training examples, essential for root-cause analysis and regulatory evidence.

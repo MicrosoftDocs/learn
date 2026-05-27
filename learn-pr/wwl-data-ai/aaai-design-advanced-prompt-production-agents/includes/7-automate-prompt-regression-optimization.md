@@ -1,3 +1,5 @@
+Manual evaluation catches obvious regressions, but subtle quality degradation across edge cases only shows up at scale and across many commits. The Azure AI Evaluation SDK integrates directly into your CI/CD pipeline, turning your evaluation test suite into a quality gate on every prompt change.
+
 ## Automate regression testing in CI/CD pipelines
 
 Every prompt change carries regression risk. Your new injection defense instructions might inadvertently reduce clinical accuracy on normal cases. Your refined reasoning structure might improve complex cases but break simple cases. Automated regression testing catches these issues before production deployment.
@@ -16,7 +18,7 @@ Your regression testing pipeline checks:
 
 Northwind Health's CI pipeline caught a regression when a prompt engineer added stricter escalation triggers: the new prompt correctly escalated more high-risk cases (safety pass rate stayed at 100%), but clinical accuracy on routine diabetes follow-up queries dropped from 0.91 to 0.84 because the agent started over-escalating moderate blood glucose readings instead of providing direct guidance. The regression gate blocked the merge, and the team refined the escalation threshold to trigger only above critical values.
 
-Here's a CI/CD integration example for Azure DevOps:
+The following Azure Pipelines configuration triggers evaluation automatically on every change to prompt files:
 
 ```yaml
 # azure-pipelines.yml
@@ -123,10 +125,6 @@ Revert to v1.1.0 if:
 
 Decision logs create institutional memory. New team members understand why the system prompt is designed the way it is. Regulatory audits have documented evidence for optimization decisions. Future prompt engineers don't repeat experiments that already failed.
 
-Now that you understand prompt versioning and optimization workflows, you're ready to implement these techniques in a hands-on exercise.
+These versioning and optimization workflows form the operational backbone that keeps agent quality measurable and improvable over time.
 
-## Unit summary
 
-- **CI/CD regression testing** runs automated prompt evaluation on every commit, preventing prompt changes from degrading quality metrics below established baselines.
-- **Semantic diff** correlates prompt text changes with behavioral output changes, helping teams understand *why* a prompt modification affected agent behavior.
-- **Decision logs** capture the rationale behind every prompt optimization choice, creating an audit trail that explains why the current prompt version exists and what alternatives were considered.
