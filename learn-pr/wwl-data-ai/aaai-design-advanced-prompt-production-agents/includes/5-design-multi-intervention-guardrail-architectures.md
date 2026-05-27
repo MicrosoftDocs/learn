@@ -74,24 +74,24 @@ Guardrails require systematic testing before deployment — a guardrail with hig
 
 **Coverage matrix:** Create a matrix of [intervention surfaces] × [threat categories] × [adversarial input variations]. For each cell, you need at least one test case. A cell with no test case is an untested coverage gap.
 
-**Synthetic data for guardrail testing:** Generate adversarial inputs at scale using synthetic data techniques (cross-reference LP4 M2 Unit 4 for synthetic test dataset design). Adversarial input variations include: direct statement variants, paraphrase variants, multi-language variants, encoding variants (base64, hex-encoded injections), multi-turn variants (spreading the attack across conversation turns), and typographic obfuscation (l33t speak, homoglyph substitution).
+**Synthetic data for guardrail testing:** Generate adversarial inputs at scale by using synthetic dataset design techniques from broader adversarial testing practices. Adversarial input variations include direct statement variants, paraphrase variants, multi-language variants, encoding variants (base64, hex-encoded injections), multi-turn variants (spreading the attack across conversation turns), and typographic obfuscation (l33t speak, homoglyph substitution).
 
 **Test execution:**
 - **Fail-closed validation** — for each guardrail, define the expected behavior when triggered (reject, modify, escalate). Confirm guardrail fires on adversarial inputs and produces the expected behavior.
 - **False-positive measurement** — run the guardrail against a production-representative benign input set. Measure what percentage of legitimate requests are incorrectly blocked.
 - **Regression suite** — maintain a growing test suite that expands with every production incident. Each incident where a guardrail fired incorrectly or missed a violation becomes a test case.
 
-**CI/CD integration:** Integrate guardrail regression tests into your deployment pipeline (LP3 M7). Gate deployments on: guardrail false-positive rate < 2% on benign dataset, false-negative rate < defined threshold on adversarial dataset, and no new adversarial input categories with 0% detection rate.
+**CI/CD integration:** Integrate guardrail regression tests into your deployment pipeline. Gate deployments on: guardrail false-positive rate < 2% on benign dataset, false-negative rate < defined threshold on adversarial dataset, and no new adversarial input categories with 0% detection rate.
 
-**Microsoft Foundry AI Red Teaming Agent:** The AI Red Teaming Agent (covered in LP4 M2 Unit 3) automates adversarial testing across the OWASP LLM Top 10 threat categories. Use it to generate adversarial inputs for your coverage matrix automatically, supplementing manually authored test cases with at-scale attack coverage.
+**Microsoft Foundry AI Red Teaming Agent:** The AI Red Teaming Agent automates adversarial testing across Microsoft's responsible AI risk categories — Violence, HateUnfairness, Sexual, SelfHarm, ProtectedMaterial, CodeVulnerability, and UngroundedAttributes — using PyRIT-based attack strategies such as encoding obfuscation, multi-turn escalation, and jailbreak injection. Use it to generate adversarial inputs for your coverage matrix automatically, supplementing manually authored test cases with at-scale attack coverage. The key output metric is Attack Success Rate (ASR): the percentage of attacks that successfully elicited an undesirable response from the agent.
 
 ## Operational considerations
 
-**Observability hooks for guardrail invocations:** Instrument every guardrail trigger with an OpenTelemetry span (LP4 M1 pattern): surface, threat category, detection mechanism triggered, action taken, input hash (for forensics without storing PII). Aggregate by surface and threat category in your monitoring dashboard.
+**Observability hooks for guardrail invocations:** Instrument every guardrail trigger with an OpenTelemetry span using a consistent observability pattern: surface, threat category, detection mechanism triggered, action taken, input hash (for forensics without storing PII). Aggregate by surface and threat category in your monitoring dashboard.
 
-**Audit-trail requirements:** For regulated environments (HIPAA, EU AI Act high-risk), every guardrail invocation that blocked or modified an output must be logged in an immutable audit record (LP4 M4 schema). Auditors verify that guardrail coverage is operating continuously, not just at deployment time.
+**Audit-trail requirements:** For regulated environments (HIPAA and high-risk scenarios under the EU AI Act), every guardrail invocation that blocks or modifies an output must be logged in an immutable audit record that uses a standardized schema. Auditors verify that guardrail coverage operates continuously, not only at deployment time.
 
-**Cost considerations:** Each additional detection layer (classifier, LLM judge) adds latency and token cost. Profile your guardrail cascade against your optimization budget from LP3 M4: if the LLM judge adds 400ms and is invoked on 30% of outputs, it contributes 120ms to average latency and significant monthly token cost. Size your guardrail cascade to your actual threat distribution, not the worst-case threat model.
+**Cost considerations:** Each additional detection layer (classifier, LLM judge) adds latency and token cost. Profile your guardrail cascade against your latency and cost optimization budget. For example, if the LLM judge adds 400ms and runs on 30% of outputs, it contributes 120ms to average latency and adds significant monthly token cost. Size your guardrail cascade to your actual threat distribution, not the worst-case threat model.
 
 ## Unit summary
 

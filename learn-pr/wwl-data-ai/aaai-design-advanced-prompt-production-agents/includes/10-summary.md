@@ -6,7 +6,7 @@ Production AI agents operating in high-stakes domains require prompt engineering
 
 **System prompt frameworks** define stable agent behavior through structured constitutional documents. You organize prompts into five sections: identity and role, behavioral constraints, scope limitations, escalation triggers, and output format requirements. Each section serves a specific control purpose. You test persona stability under adversarial conditions to ensure agents maintain their defined behavior when challenged. Test-driven development produces system prompts validated against documented behavioral requirements with measurable pass rates on stability tests.
 
-**Prompt versioning and optimization pipelines** treat prompts as code requiring the same rigor as application development. You store prompts in Git repositories with semantic versioning and commit messages documenting behavioral intent. A/B testing compares prompt variants quantitatively using Azure AI Foundry evaluation runs. You make optimization decisions based on metrics, not intuition. Automated regression testing in CI/CD pipelines blocks prompt changes that degrade quality. Semantic diff analysis correlates prompt text changes with behavioral changes in evaluation results. Decision logs document each optimization decision with supporting evidence.
+**Prompt versioning and optimization pipelines** treat prompts as code requiring the same rigor as application development. You store prompts in Git repositories with semantic versioning and commit messages documenting behavioral intent. A/B testing compares prompt variants quantitatively using Microsoft Foundry evaluation runs. You make optimization decisions based on metrics, not intuition. Automated regression testing in CI/CD pipelines blocks prompt changes that degrade quality. Semantic diff analysis correlates prompt text changes with behavioral changes in evaluation results. Decision logs document each optimization decision with supporting evidence.
 
 **Key decisions you face** when implementing these patterns:
 
@@ -18,9 +18,11 @@ Production AI agents operating in high-stakes domains require prompt engineering
 
 These architectural patterns enable production AI systems that maintain consistent behavior under adversarial conditions, produce auditable reasoning traces, and improve over time through evidence-based optimization.
 
-## What comes next
+## Related topics to explore
 
-You've built the reasoning layer — how Northwind Health's clinical agent thinks through complex queries safely and reliably. But an agent that can only reason about text has limited clinical value. When a clinician asks "What are the interactions between my patient's current medications?", the agent needs to invoke a drug interaction checker, a dosing calculator, or a lab value interpreter — external tools that provide real-time clinical data. In the next module, you build the tool layer: production-grade MCP servers with managed identity authentication, circuit-breaker reliability, and semantic versioning governance. The prompting architectures you designed here will invoke these tools through function calling, making the tools an extension of the reasoning chains you just built.
+You've built the reasoning layer — how Northwind Health's clinical agent thinks through complex queries safely and reliably. But an agent that can only reason about text has limited clinical value.
+
+When a clinician asks "What are the interactions between my patient's current medications?", the agent might need to invoke a drug interaction checker, a dosing calculator, or a lab value interpreter. These external tools provide real-time clinical data. In broader production implementations, teams pair these prompting architectures with secure tool-integration patterns such as function calling, managed identity authentication, circuit-breaker reliability controls, and semantic versioning governance.
 
 ## Learn more
 

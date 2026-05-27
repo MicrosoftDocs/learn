@@ -2,15 +2,15 @@
 uid: learn.wwl.design-advanced-prompting-production-agents
 metadata:
   title: Design Advanced Prompting Strategies for Production AI Agents
-  description: "Design advanced prompting strategies for production AI agents in Azure AI Foundry. Implement multi-turn reasoning architectures with dynamic context injection, build layered prompt injection defenses, design system prompt frameworks with autonomy-level control, design multi-intervention guardrail architectures covering all four attack surfaces, implement prompt versioning and optimization workflows, and design fine-tuning strategies and data preparation pipelines."
+  description: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multi-turn reasoning architectures with dynamic context injection, build layered prompt injection defenses, design system prompt frameworks with autonomy-level control, design multi-intervention guardrail architectures covering all four attack surfaces, implement prompt versioning and optimization workflows, and design fine-tuning strategies and data preparation pipelines."
   ms.date: 05/26/2026
   author: chrishowd
   ms.author: cahowd
   ms.topic: module-standard-task-based
-  ms.service: azure-ai-foundry
+  ms.service: microsoft-foundry
   ai-usage: ai-generated
 title: Design advanced prompting strategies for production AI agents
-summary: "Design advanced prompting strategies for production AI agents in Azure AI Foundry. Implement multi-turn reasoning architectures with dynamic context injection, build layered prompt injection defenses for untrusted input environments, design system prompt frameworks for complex agent persona and constraint control, and implement prompt versioning and optimization workflows."
+summary: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multi-turn reasoning architectures with dynamic context injection, build layered prompt injection defenses for untrusted input environments, design system prompt frameworks for complex agent persona and constraint control, and implement prompt versioning and optimization workflows."
 abstract: |
   By the end of this module, you'll be able to:
   - Design multi-turn prompt architectures with dynamic context injection for complex agent reasoning tasks
@@ -21,9 +21,9 @@ abstract: |
   - Design fine-tuning strategies and data preparation pipelines for domain-specialized agent models
 prerequisites: |
   Before starting this module, you should have:
-  - Experience designing system prompts and agent instructions in Azure AI Foundry
+  - Experience designing system prompts and agent instructions in Microsoft Foundry
   - Familiarity with chain-of-thought prompting and few-shot learning patterns
-  - Experience building agents with Azure AI Foundry Agent Service
+  - Experience building agents with Microsoft Foundry Agent Service
   - Proficiency in Python
 iconUrl: /training/achievements/generic-badge.svg
 levels:

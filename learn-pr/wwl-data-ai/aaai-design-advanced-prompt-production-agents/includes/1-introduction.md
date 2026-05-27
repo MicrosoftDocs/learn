@@ -1,13 +1,13 @@
 Northwind Health's AI clinical assistant processes patient-provided documents and reasons through complex multi-step clinical guidelines. When patients upload medical records, lab results, or symptom journals, the system must extract clinical facts, interpret them against evidence-based guidelines, and generate actionable recommendations — all while resisting prompt injection attacks embedded in untrusted content and maintaining consistent, auditable behavior under adversarial conditions. Basic system prompts and few-shot examples aren't sufficient for this production environment.
 
-This learning path builds Northwind Health's Clinical Intelligence System (CIS) layer by layer across four modules. Each module adds an essential capability to the clinical agent:
+Production clinical agents combine several capability layers. This unit focuses on the reasoning layer and how to make it safe, reliable, and auditable:
 
-| Module | Capability Layer | What It Gives the Agent |
+| Capability area | Focus | What it gives the agent |
 |---|---|---|
-| **This module** | Reasoning | How the agent thinks through clinical queries safely and reliably |
-| Next module | Tools | What external capabilities the agent can invoke (drug checkers, dosing calculators) |
-| Third module | Knowledge | Where the agent finds clinical information (formularies, guidelines, lab references) |
-| Fourth module | Memory | What the agent remembers across patient encounters |
+| **Reasoning (focus of this module)** | Decision quality | How the agent thinks through clinical queries safely and reliably |
+| Tool use | External actions | What external capabilities the agent can invoke (drug checkers, dosing calculators) |
+| Knowledge grounding | Evidence retrieval | Where the agent finds clinical information (formularies, guidelines, lab references) |
+| Memory patterns | Context continuity | What the agent remembers across patient encounters |
 
 You start with the foundational layer — the agent's reasoning architecture. Without robust prompting, the tools, knowledge, and memory you add later can't be used effectively.
 

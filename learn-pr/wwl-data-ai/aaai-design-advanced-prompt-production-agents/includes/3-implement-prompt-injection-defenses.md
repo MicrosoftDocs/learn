@@ -65,12 +65,13 @@ Here's an input sanitization pattern with pre-processing checks:
 
 ```python
 from azure.ai.contentsafety import ContentSafetyClient
-from azure.core.credentials import AzureKeyCredential
+from azure.identity import DefaultAzureCredential
+import os
 
-# Initialize Content Safety client
+# Initialize Content Safety client using managed identity
 safety_client = ContentSafetyClient(
-    endpoint="<your-content-safety-endpoint>",
-    credential=AzureKeyCredential("<your-key>")
+    endpoint=os.environ["CONTENT_SAFETY_ENDPOINT"],
+    credential=DefaultAzureCredential()
 )
 
 def scan_for_injection_patterns(document_text):
@@ -96,26 +97,23 @@ def scan_for_injection_patterns(document_text):
                 "proceed_with_caution": True
             }
     
-    # Azure AI Content Safety check for sophisticated attacks
-    from azure.ai.contentsafety.models import AnalyzeTextOptions
-    
-    analysis_result = safety_client.analyze_text(
-        AnalyzeTextOptions(
-            text=document_text,
-            categories=["PromptInjection"],
-            output_type="FourSeverityLevels"
-        )
+    # Prompt Shields check for sophisticated injection attempts.
+    # The shieldPrompt API is a dedicated endpoint that returns a boolean
+    # attackDetected flag — not a severity score. Pass untrusted document
+    # content in the documents parameter; leave user_prompt empty when
+    # scanning a document independently of the live user message.
+    shield_result = safety_client.shield_prompt(
+        user_prompt="",
+        documents=[document_text]
     )
     
-    for category_result in analysis_result.categories_analysis:
-        if category_result.category == "PromptInjection":
-            if category_result.severity >= 2:  # Moderate or higher
-                return {
-                    "risk_level": "moderate" if category_result.severity == 2 else "high",
-                    "reason": "Content Safety API detected injection risk",
-                    "severity": category_result.severity,
-                    "proceed_with_caution": True
-                }
+    if (shield_result.documents_analysis
+            and shield_result.documents_analysis[0].attack_detected):
+        return {
+            "risk_level": "high",
+            "reason": "Prompt Shields detected document injection attack",
+            "proceed_with_caution": True
+        }
     
     return {"risk_level": "low", "proceed": True}
 

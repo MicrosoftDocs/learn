@@ -19,6 +19,14 @@ Northwind Health's scenario hits four criteria: highly consistent clinical reaso
 
 **When to stay with prompt engineering:** If you have fewer than 500 high-quality examples, the fine-tuning data cost exceeds the benefit. If your task changes frequently (regulatory updates, new product lines), retraining cadence makes prompt updates more cost-effective. If the failure mode is about reasoning depth rather than domain vocabulary, chain-of-thought prompting (Unit 2) addresses reasoning failures more directly than fine-tuning.
 
+**Choosing a fine-tuning method:** Microsoft Foundry supports three fine-tuning approaches. Select based on your objective and available data:
+
+- **Supervised fine-tuning (SFT)** — train on labeled input/output pairs to internalize format, vocabulary, and reasoning patterns. Best for task specialization with consistent input/output structure, such as Northwind Health's clinical reasoning scenario.
+- **Direct Preference Optimization (DPO)** (preview) — align the model with human-preferred responses using preference pairs (preferred versus rejected outputs), without requiring a separate reward model. Best for improving response quality, tone, and alignment when you have human reviewer feedback ranking outputs.
+- **Reinforcement Fine-Tuning (RFT)** (preview) — use reward signals from model graders to optimize complex reasoning behaviors across dynamic tasks where the solution space is large. Best for o-series models where the goal is iterative reasoning improvement, such as multi-step clinical decision workflows with verifiable correctness.
+
+The data pipeline described in the following sections applies to SFT. DPO requires preference-pair format (two competing responses per input with a preference label), and RFT requires grader configuration rather than static labeled examples.
+
 ## Fine-tuning strategy design
 
 Once you've decided to fine-tune, design the strategy before preparing data:
@@ -57,7 +65,7 @@ Curate training data from production sources systematically:
 
 ### Formatting for instruction fine-tuning
 
-Azure AI Foundry and OpenAI fine-tuning APIs accept data in JSONL format with the OpenAI chat completion message structure:
+Microsoft Foundry and OpenAI fine-tuning APIs accept data in JSONL format with the OpenAI chat completion message structure:
 
 ```json
 {"messages": [
@@ -86,7 +94,7 @@ Before training, allocate your curated dataset:
 
 ### Data versioning
 
-Fine-tuning datasets must be versioned alongside model versions. When a production incident traces to a training data problem, you need to identify exactly which dataset version trained the affected model. Use the same version-manifest pattern as agent versioning (LP4 M4 Unit 2): store dataset hash, training example count, source collection date range, curation filter configuration, and evaluator IDs for the clinicians who reviewed corrections.
+Fine-tuning datasets must be versioned alongside model versions. When a production incident traces to a training data problem, you need to identify exactly which dataset version trained the affected model. Use the same version-manifest pattern as your agent versioning practice. Store the dataset hash, training example count, source collection date range, curation filter configuration, and evaluator IDs for the clinicians who reviewed corrections.
 
 Azure Machine Learning Data Assets provide versioned dataset storage with lineage tracking — the training run records which dataset version it consumed, creating a traceable chain from production incident → model version → training dataset → specific problematic examples.
 

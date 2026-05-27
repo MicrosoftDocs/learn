@@ -3,7 +3,7 @@ A system prompt that produces excellent results in January might degrade in Apri
 | Versioning Practice | Purpose | Tool |
 |-------------------|---------|------|
 | Git-based prompt storage | Reproduce past behavior, diff changes, roll back regressions | Git repository with semantic versioning |
-| A/B variant testing | Compare prompt versions with quantitative metrics | Azure AI Foundry evaluation runs |
+| A/B variant testing | Compare prompt versions with quantitative metrics | Microsoft Foundry evaluation runs |
 | Automated regression testing | Detect quality degradation before production deployment | CI/CD integration with evaluation SDK |
 | Semantic diff analysis | Understand which prompt changes caused which behavioral changes | Prompt diff + test delta correlation |
 
@@ -56,7 +56,7 @@ Your A/B test workflow:
 
 2. **Create evaluation dataset**: Build a test set that covers typical cases, edge cases, and adversarial cases. Include ground truth labels where possible (known correct answers for clinical scenarios). Include safety test cases (injection attempts, authority assertions).
 
-3. **Run both prompts against the dataset**: Use Azure AI Foundry evaluation runs to test prompt variant A and prompt variant B on the same inputs. Collect quality scores for each metric.
+3. **Run both prompts against the dataset**: Use Microsoft Foundry evaluation runs to test prompt variant A and prompt variant B on the same inputs. Collect quality scores for each metric.
 
 4. **Compare distributions, not single numbers**: Don't just compare average scores. Look at the distribution of scores across the dataset. Does variant B improve average accuracy but produce more extreme failure cases? That's a quality-stability trade-off.
 
@@ -180,9 +180,54 @@ else:
 
 A/B testing removes guesswork from prompt optimization. You don't deploy changes because they "seem better" — you deploy changes because evaluation metrics confirm improvement.
 
+## Evaluate agent-specific behavior with agentic evaluators
+
+The quality evaluators used in A/B testing — groundedness, coherence, relevance — measure response content as if the agent were a static text generator. Production agents have additional failure modes these evaluators don't capture: failing to understand what the user actually needed, calling the wrong tool, or ignoring the constraints defined in their system prompt. The Azure AI Evaluation SDK includes a dedicated agentic evaluator category that targets these agent-specific behaviors.
+
+Three agentic evaluators are directly relevant to Northwind Health's clinical agent:
+
+**`IntentResolutionEvaluator`** measures whether the agent correctly identified and addressed what the user actually needed. A response can be coherent and grounded yet still answer the wrong question — particularly in multi-turn conversations where a patient's real concern surfaces gradually. Intent resolution catches cases where the agent produced a technically accurate response that missed the user's intent.
+
+**`TaskAdherenceEvaluator`** measures whether the agent followed the rules and constraints defined in its system prompt — the same constraints you built in Unit 4. An agent might produce a well-grounded response while silently violating a constraint such as "always require clinician review for medication changes", and no groundedness or coherence metric will flag it. Task adherence is the evaluation counterpart to the system prompt frameworks you design.
+
+**`ToolCallAccuracyEvaluator`** measures whether the agent selected and invoked the correct tools. For a clinical agent that calls drug interaction checkers, dosing calculators, and lab value interpreters, tool selection errors produce confidently wrong recommendations that output-quality evaluators won't detect — because the downstream reasoning looks sound even when it's built on the wrong tool result.
+
+Add agentic evaluators alongside quality evaluators in your evaluation runs to cover both dimensions:
+
+```python
+from azure.ai.evaluation import (
+    evaluate,
+    GroundednessEvaluator,
+    CoherenceEvaluator,
+    RelevanceEvaluator,
+    IntentResolutionEvaluator,
+    TaskAdherenceEvaluator,
+    ToolCallAccuracyEvaluator,
+)
+
+eval_results = evaluate(
+    evaluation_name="clinical-agent-v1.2.0-full",
+    data=eval_data,
+    evaluators={
+        # Quality evaluators — response content
+        "groundedness": GroundednessEvaluator(model_config=model_config),
+        "coherence": CoherenceEvaluator(model_config=model_config),
+        "relevance": RelevanceEvaluator(model_config=model_config),
+        # Agentic evaluators — agent-specific behavior
+        "intent_resolution": IntentResolutionEvaluator(model_config=model_config),
+        "task_adherence": TaskAdherenceEvaluator(model_config=model_config),
+        "tool_call_accuracy": ToolCallAccuracyEvaluator(model_config=model_config),
+    },
+    output_path="./eval_results_v2_full"
+)
+```
+
+Each agentic evaluator returns a pass/fail result with a reasoning explanation. A `task_adherence` failure identifies which system prompt constraint was violated and why. An `intent_resolution` failure surfaces the gap between what the user asked and what the agent addressed. This diagnosis guides the specific prompt change needed rather than requiring trial-and-error reruns.
+
 
 ## Unit summary
 
 - **Prompt versioning** stores prompts as code-controlled artifacts with semantic version numbers, enabling rollback and audit trails for every prompt change.
 - **A/B testing** compares prompt variants quantitatively by running both versions against the same evaluation set and measuring accuracy, safety, and latency metrics.
+- **Agentic evaluators** (`IntentResolutionEvaluator`, `TaskAdherenceEvaluator`, `ToolCallAccuracyEvaluator`) complement quality evaluators by measuring agent-specific failure modes: missed user intent, system prompt constraint violations, and incorrect tool selection.
 - **Statistical significance** in A/B tests requires sufficient sample sizes — small evaluation sets can produce misleading results due to LLM output variance.

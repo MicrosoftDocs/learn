@@ -244,7 +244,7 @@ Map Northwind Health's clinical agent: chronic care analysis with routine lab in
 
 The behavioral constraints section of your system prompt encodes the autonomy level: full-auto agents have minimal "will not execute without" rules; approval-required agents have explicit "WILL NOT proceed to execution until receiving approval token" rules. Escalation triggers section encodes the human-oversight gates that translate supervised and approval-required modes into runtime behavior.
 
-Cross-reference: LP3 M3 (human-in-the-loop approval workflows) covers the approval-gate implementation that the approval-required autonomy level requires. Unit 5 of this module (guardrail architectures, introduced next) covers how guardrails enforce the output boundaries that supervised and approval-required modes depend on.
+Cross-reference: Human-in-the-loop approval workflow design covers the approval-gate implementation used by the approval-required autonomy level. Unit 5 of this module (guardrail architectures, introduced next) covers how guardrails enforce the output boundaries that supervised and approval-required modes depend on.
 
 ## Unit summary
 
