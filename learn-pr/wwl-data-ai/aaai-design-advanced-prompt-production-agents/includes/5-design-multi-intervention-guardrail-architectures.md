@@ -16,7 +16,7 @@ Cross-reference: Unit 3's full input-surface teaching covers the specific API ca
 
 ### Tool-call surface
 
-The tool-call surface is where the agent's reasoning generates a tool invocation. Malicious inputs that survive input-surface defenses may cause the agent to construct harmful tool calls. Defend this surface with:
+The tool-call surface is where the agent's reasoning generates a tool invocation. Malicious inputs that survive input-surface defenses could cause the agent to construct harmful tool calls. Defend this surface with:
 
 - **Tool allow-lists**—only tools registered in the agent's manifest can be called; the orchestrator rejects any tool name not in the manifest.
 - **Parameter schema validation**—validate parameter values against expected types and ranges before the tool call executes. A drug-lookup tool call with a dose parameter of `"drop table medications"` is rejected at the orchestration layer, not passed to the tool.
@@ -25,11 +25,11 @@ The tool-call surface is where the agent's reasoning generates a tool invocation
 
 ### Tool-response surface
 
-The tool-response surface is where tool results re-enter the agent's reasoning context. Tool responses are attacker-controlled input when tools query external systems: a patient record in a database could contain embedded injection instructions, a web search result could include adversarial content, a partner API could return manipulated data. Defend this surface with:
+The tool-response surface is where tool results reenter the agent's reasoning context. Tool responses are attacker-controlled input when tools query external systems: a patient record in a database could contain embedded injection instructions, a web search result could include adversarial content, a partner API could return manipulated data. Defend this surface with:
 
 - **Response schema enforcement**—validate tool responses against expected JSON schemas before injecting them into the agent context. Unexpected fields or type mismatches are stripped or rejected.
 - **Response content scanning**—apply Azure AI Content Safety to string fields in tool responses, catching indirect injections embedded in external data.
-- **PII redaction on tool outputs**—before tool responses are injected into the context, redact personally identifiable information that the subsequent agent reasoning doesn't need. This prevents inadvertent leakage from tool results to outputs.
+- **PII redaction on tool outputs**—before tool responses are injected into the context, redact personal data that the subsequent agent reasoning doesn't need. This prevents inadvertent leakage from tool results to outputs.
 - **Value range validation**—numeric returns (dosage recommendations, lab values, prices) are validated against expected ranges. A drug interaction score of 999 from a partner API is blocked before it influences the agent's clinical reasoning.
 
 ### Output surface
@@ -45,8 +45,8 @@ The output surface is where the agent's response leaves the reasoning pipeline t
 
 A complete guardrail strategy defines how the four surfaces coordinate. Some threats require multiple surfaces to contain them:
 
-- **Cross-surface injection campaign**: An attacker submits a patient document (bypasses input-surface imperfectly), causing the agent to construct a tool call with a manipulated parameter (tool-call surface catches it). If tool-call validation also fails, tool-response scanning catches the manipulated backend query result. Output-surface groundedness verification catches a erroneous recommendation based on the injected content.
-- **Exfiltration via tool outputs**: If the input surface is compromised, an attacker may direct the agent to call a tool with patient data as a parameter (tool-call parameter content scanning catches data in unexpected parameters).
+- **Cross-surface injection campaign**: An attacker submits a patient document (bypasses input-surface imperfectly), causing the agent to construct a tool call with a manipulated parameter (tool-call surface catches it). If tool-call validation also fails, tool-response scanning catches the manipulated backend query result. Output-surface groundedness verification catches an erroneous recommendation based on the injected content.
+- **Exfiltration via tool outputs**: If the input surface is compromised, an attacker could direct the agent to call a tool with patient data as a parameter (tool-call parameter content scanning catches data in unexpected parameters).
 
 Document your cross-surface coverage matrix: for each threat in your threat model, identify which surface is the primary defense and which surfaces are secondary backstops. Gaps in this matrix are priority items for hardening.
 
@@ -68,7 +68,7 @@ When out-of-the-box Azure AI Content Safety policies don't cover a domain-specif
 
 **Worked example—regulated language guardrail:** Northwind Health must not produce definitive medication instructions that clinicians could act on without review. The policy: "All medication-related statements must include language indicating clinician review is required."
 
-Detection mechanism: a three-layer cascade. Layer 1: regex check for presence of required hedge phrases ("requires clinician review", "clinician approval", "consult your care team") in medication-related paragraphs. Fast, low false-negative risk for compliant outputs. Layer 2: if regex fails, a binary classifier (trained on 2,000 compliant vs. non-compliant examples) evaluates whether the output implies definitiveness. Layer 3: for classifier borderline scores (0.4-0.6), an LLM judge evaluates with the full policy context. Cascade cost: 95% of outputs handled by Layer 1 alone.
+Detection mechanism: a three-layer cascade. Layer 1: regex check for presence of required hedge phrases ("requires clinician review", "clinician approval", "consult your care team") in medication-related paragraphs. Fast, low false-negative risk for compliant outputs. Layer 2: if regex fails, a binary classifier (trained on 2,000 compliant vs. non-compliant examples) evaluates whether the output implies definitiveness. Layer 3: for classifier borderline scores (0.4-0.6), an LLM judge evaluates with the full policy context. Cascade cost: Ninety-five percent of outputs handled by Layer 1 alone.
 
 ## Guardrail testing and validation
 
@@ -89,7 +89,7 @@ Guardrails require systematic testing before deployment—a guardrail with high 
 
 ## Operational considerations
 
-**Observability hooks for guardrail invocations:** Instrument every guardrail trigger with an OpenTelemetry span using a consistent observability pattern: surface, threat category, detection mechanism triggered, action taken, input hash (for forensics without storing PII). Aggregate by surface and threat category in your monitoring dashboard.
+**Observability hooks for guardrail invocations:** Instrument every guardrail trigger with an OpenTelemetry span using a consistent observability pattern: surface, threat category, detection mechanism triggered, action taken, input hash (for forensics without storing personal data). Aggregate by surface and threat category in your monitoring dashboard.
 
 **Audit-trail requirements:** For regulated environments (HIPAA and high-risk scenarios under the EU AI Act), every guardrail invocation that blocks or modifies an output must be logged in an immutable audit record that uses a standardized schema. Auditors verify that guardrail coverage operates continuously, not only at deployment time.
 

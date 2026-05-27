@@ -36,7 +36,7 @@ prompts/
     └── clinical_accuracy_tests.json
 ```
 
-Use semantic versioning to signal change impact. Major version increments (1.x.x → 2.x.x) indicate breaking changes where agent behavior significantly differs—new reasoning structure, different output format, expanded scope. Minor version increments (1.1.x → 1.2.x) indicate backward-compatible improvements—refined instructions, better injection defenses, clearer escalation triggers. Patch version increments (1.1.1 → 1.1.2) indicate bug fixes or clarifications that don't change intended behavior.
+Use semantic versioning to communicate the scope and significance of each change. Major version increments (1.x.x → 2.x.x) indicate breaking changes where agent behavior significantly differs—new reasoning structure, different output format, expanded scope. Minor version increments (1.1.x → 1.2.x) indicate backward-compatible improvements—refined instructions, better injection defenses, clearer escalation triggers. Patch version increments (1.1.1 → 1.1.2) indicate bug fixes or clarifications that don't change intended behavior.
 
 Git commit messages document the behavioral intent of each change, not just text changes. Bad commit message: "Updated system prompt." Good commit message: "Add explicit persona stability instructions to resist authority assertion attacks. Addresses test failures in behavioral_stability_tests.json cases 015-018. Pass rate improves from 87% to 94%."
 
