@@ -34,7 +34,6 @@ roles:
 - maker
 products:
 - azure-databricks
-- copilot-studio
 - ms-copilot
 - m365
 - office-teams
