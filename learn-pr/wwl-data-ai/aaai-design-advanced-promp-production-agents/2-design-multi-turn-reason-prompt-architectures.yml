@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-advanced-prompting-production-agents.design-multi-turn-reason-prompt-architectures
+title: Design multi-turn reasoning prompt architectures
+metadata:
+  title: Design Multi-Turn Reasoning Prompt Architectures
+  description: "Design multi-turn reasoning prompt architectures."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-design-multi-turn-reason-prompt-architectures.md)]
