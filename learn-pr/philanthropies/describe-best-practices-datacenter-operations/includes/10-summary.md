@@ -54,7 +54,6 @@ The module also discussed key performance indicators (KPIs) used to track datace
 - [Dgtl Infra: Data Center Redundancy: N, N+1, 2N, and 2N+1 Explained](https://dgtlinfra.com/data-center-redundancy/)
 - [CoreSite: What is Data Center Redundancy? N, N+1, 2N, 2N+1](https://www.coresite.com/blog/data-center-redundancy-n-1-vs-2n-1)
 - [DTUC: Understanding the seven Tiers of Disaster Recovery](https://www.dtuc.com/blog/understanding-the-7-tiers-of-disaster-recovery)
-- [PureStorage: Without A Tiered Backup Architecture, Are You Truly Resilient?](https://blog.purestorage.com/perspectives/bounce-back-faster-with-tiered-backups-and-bunkers/)
 - [Enterprise Storage Forum: RPO and RTO: Understanding the Differences](https://www.enterprisestorageforum.com/management/rpo-and-rto-understanding-the-differences/)
 - [Rubrik: What's the Difference Between RTO and RPO?](https://www.rubrik.com/insights/rto-rpo-whats-the-difference)
 - [Datacenter Knowledge: Data Center 101: Data Center Backup and Recovery](https://www.datacenterknowledge.com/outages/data-center-101-data-center-backup-and-recovery)

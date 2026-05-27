@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-security-azure-storage.configure-resource-instance-rules
+metadata:
+  title: Configure resource instance rules and trusted services
+  description: Configure resource instance rules for Azure AI Foundry, Azure Machine Learning, and Azure Functions workloads that can't use virtual network rules, and manage trusted service exceptions for Azure platform services.
+  ms.date: 04/22/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Configure resource instance rules and trusted services
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-configure-resource-instance-rules.md)]

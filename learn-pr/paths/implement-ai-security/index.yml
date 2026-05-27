@@ -44,5 +44,6 @@ modules:
 - learn.wwl.defender-for-cloud-ai-protect-workloads
 - learn.wwl.implement-defender-cloud-ai-services
 - learn.wwl.manage-agents-microsoft-agent-365
+- learn.wwl.identify-ai-data-risks-purview
 trophy:
   uid: learn.wwl.implement-ai-security.trophy

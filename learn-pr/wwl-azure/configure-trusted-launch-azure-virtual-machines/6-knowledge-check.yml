@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-trusted-launch-azure-virtual-machines.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Trusted Launch components, VM security types, and enforcing Trusted Launch adoption using Azure Policy.
+  ms.date: 05/11/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-generated
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A security engineer notices that a Gen2 VM has Trusted Launch enabled as its security type, but Microsoft Defender for Cloud isn't generating boot integrity alerts even after a suspected boot kit infection. Which Trusted Launch component is most likely not configured correctly?"
+    choices:
+    - content: "Secure Boot"
+      isCorrect: false
+      explanation: "Secure Boot prevents unsigned code from executing during the boot process. It doesn't generate Defender for Cloud alerts. If Secure Boot is misconfigured, the VM might fail to boot, but Defender for Cloud wouldn't be involved."
+    - content: "vTPM (virtual Trusted Platform Module)"
+      isCorrect: false
+      explanation: "The vTPM measures the boot chain and stores cryptographic evidence, but it doesn't connect directly to Defender for Cloud. Boot integrity alerts require integrity monitoring, which uses the Guest Attestation extension to send vTPM measurements to Defender for Cloud."
+    - content: "Integrity monitoring"
+      isCorrect: true
+      explanation: "Integrity monitoring is the component that connects vTPM measurements to Microsoft Defender for Cloud. When enabled, the Guest Attestation extension sends boot measurements to Defender for Cloud, which generates alerts when integrity checks fail. Without integrity monitoring enabled, Defender for Cloud receives no boot data and issues no alerts."
+  - content: "An administrator needs to enable Trusted Launch on an existing Generation 1 virtual machine that runs a supported Windows Server workload. What is the correct approach?"
+    choices:
+    - content: "Toggle the security type to Trusted Launch in the VM's Configuration settings in the Azure portal."
+      isCorrect: false
+      explanation: "The security type toggle in Configuration settings applies only to Gen2 VMs. Generation 1 VMs don't support the Trusted Launch security type directly and can't be upgraded through this setting."
+    - content: "Migrate the VM to Generation 2 using the in-place upgrade process. The process converts the disk from Main Boot Record (MBR) to GUID Partition Table (GPT) and updates the firmware to UEFI."
+      isCorrect: true
+      explanation: "Trusted Launch requires Generation 2 architecture, UEFI firmware, and GPT disk layout. Azure supports an in-place upgrade path that converts the existing Gen1 VM—migrating the disk partition table from MBR to GPT and switching firmware to UEFI—without recreating the VM. Trusted Launch can then be enabled after the upgrade completes."
+    - content: "Create a new Gen2 VM alongside the original and migrate data manually, then delete the Gen1 VM."
+      isCorrect: false
+      explanation: "Azure provides an in-place upgrade path for Gen1 to Gen2 migration, so creating a new VM alongside the original isn't required. Manual data migration adds risk and downtime that the in-place upgrade process avoids."
+  - content: "A compliance team wants to ensure that all new Gen2 VMs deployed to a subscription are created with Trusted Launch enabled. They also want to identify existing Gen2 VMs that are eligible but not yet configured. Which combination of Azure Policy effects achieves both goals?"
+    choices:
+    - content: "Apply the Audit effect to both the eligibility policy and the configuration policy."
+      isCorrect: false
+      explanation: "Applying Audit to both policies identifies noncompliant resources but doesn't prevent new VMs from being created without Trusted Launch. The Audit effect reports compliance state only—it doesn't block deployments."
+    - content: "Apply the Deny effect to the eligibility policy and the Audit effect to the configuration policy."
+      isCorrect: false
+      explanation: "The eligibility policy identifies VMs capable of running Trusted Launch. Applying Deny to the eligibility policy would block deployment of eligible VMs entirely, which is the opposite of the intended goal. The Deny effect belongs on the configuration policy to enforce Trusted Launch on new deployments."
+    - content: "Apply the Audit effect to the eligibility policy and the Deny effect to the configuration policy."
+      isCorrect: true
+      explanation: "The eligibility policy with Audit effect identifies existing Gen2 VMs that are capable of Trusted Launch but not yet configured—these become remediation targets. The configuration policy with Deny effect blocks creation of new Gen2 VMs that don't have Trusted Launch enabled, preventing new noncompliant resources from entering the environment."

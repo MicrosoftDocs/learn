@@ -4,13 +4,16 @@ Security alerts are triggered when anomalies in activity occur. These security a
 
 Microsoft Defender for Storage is currently available for Blob storage, Azure Files, and Azure Data Lake Storage Gen2. Account types that support Microsoft Defender for Cloud include general-purpose v2, block blob, and Blob storage accounts. Microsoft Defender for Storage is available in all public clouds and US government clouds, but not in other sovereign or Azure Government cloud regions.
 
-You can turn on Microsoft Defender for Storage in the Azure portal through the configuration page of the Azure Storage account, or in the advanced security section of the Azure portal. Follow these steps.
+The recommended approach is to enable Microsoft Defender for Storage at the subscription level, which automatically protects all existing and new storage accounts in that subscription. Follow these steps.
 
-1. Launch the Azure portal.
+1. Launch the Azure portal and go to **Microsoft Defender for Cloud**.
 
-1. Navigate to your storage account. Under **Security + Networking**, select **Microsoft Defender for Cloud**.
+1. Select **Environment settings** and choose the subscription you want to protect.
 
-1. Select **Enable Microsoft Defender for Storage**.
+1. On the **Defender plans** pane, locate **Storage** in the list, set the toggle to **On**, and select **Save**.
+
+> [!NOTE]
+> The classic per-transaction Defender for Storage plan is no longer available for new subscriptions as of February 5, 2025. The current plan charges per storage account and includes malware scanning and sensitive data threat detection. Subscription-level enablement may take up to 24 hours to apply across all storage accounts.
 
 ## Explore security anomalies
 
@@ -25,8 +28,8 @@ When storage activity anomalies occur, you'll receive an email notification with
 - Remediation steps
 - Email also includes details about possible causes and recommended actions to investigate and mitigate the potential threat
 
-    ![Screenshot showing security anomalies in Microsoft Defender for Security.](../media/view-security-anomolies-in-azure-defender-for-security.png)
+    ![Screenshot that shows security anomalies in Microsoft Defender for Cloud.](../media/view-security-anomolies-in-azure-defender-for-security.png)
 
 You can review and manage your current security alerts from Microsoft Defender for Cloud's Security alerts tile. Selecting a specific alert provides details and actions for investigating the current threat and addressing future threats.
 
-![Screenshot showing security anomaly details in Microsoft Defender for Security.](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
+![Screenshot that shows security anomaly details in Microsoft Defender for Cloud.](../media/view-security-anomolies-details-in-azure-defender-for-security.png)

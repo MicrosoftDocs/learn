@@ -4,67 +4,81 @@ title: Knowledge check
 metadata:
   title: Knowledge Check
   description: This content is part of the "Resilient foundations with Windows 11 Pro" module.
-  ms.date: 01/26/2026
+  ms.date: 05/14/2026
   author: ozahran7
   ms.author: v-zahranomar
   ms.topic: unit
-durationInMinutes: 4
+durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How does Windows 11 Pro support operational efficiency for modern businesses according to the module?"
+  - content: "What is the primary function of the NPU (neural processing unit) in Copilot+ PCs?"
     choices:
-        - content: "By prioritizing consumer personalization features over business controls"
+        - content: "Managing the operating system and running multiple applications simultaneously"
           isCorrect: false
-          explanation: ""
-        - content: "By enabling efficient onboarding, enforcing security policies, and improving productivity through performance and reliability"
+          explanation: "Incorrect. Managing the operating system and running multiple applications is the role of the CPU (central processing unit), which excels at sequential processing and low-latency tasks."
+        - content: "Rendering high-resolution graphics and performing complex scientific simulations"
+          isCorrect: false
+          explanation: "Incorrect. Rendering graphics and performing complex simulations are tasks handled by the GPU (graphics processing unit), which specializes in parallel processing."
+        - content: "Handling high-speed AI inference tasks like natural language processing or image enhancement"
           isCorrect: true
-          explanation: ""
-        - content: "By eliminating the need for IT management tools"
+          explanation: "Correct. The NPU is a purpose-built processor designed for AI tasks—especially high-speed inference tasks like natural language processing or image enhancement—and is more energy-efficient than CPUs and GPUs for AI workloads."
+        - content: "Providing Trusted Platform Module (TPM) functionality and delivering firmware updates"
           isCorrect: false
-          explanation: ""
-        - content: "By limiting configuration options to reduce user choice"
-          isCorrect: false
-          explanation: ""
-  - content: "Which processor in Copilot+ PCs is purpose-built for high-speed AI inference tasks such as image recognition?"
+          explanation: "Incorrect. Providing TPM functionality and delivering firmware updates is the role of Microsoft Pluton, a secure crypto processor built into the CPU—not the NPU."
+  - content: "What is a key benefit of Hotpatch updates in Windows 11 Pro?"
     choices:
-        - content: "CPU"
+        - content: "They automatically distribute devices into Microsoft Entra groups on an ongoing basis"
           isCorrect: false
-          explanation: ""
-        - content: "GPU"
-          isCorrect: false
-          explanation: ""
-        - content: "NPU"
+          explanation: "Incorrect. Distributing devices into Microsoft Entra groups is a function of Windows Autopatch groups, not Hotpatch updates."
+        - content: "They install and take effect without requiring users to restart their devices"
           isCorrect: true
-          explanation: ""
-        - content: "TPM"
+          explanation: "Correct. Hotpatch updates install and take effect without requiring a restart, helping ensure faster compliance while keeping workflows uninterrupted."
+        - content: "They replace the need for existing update ring configurations"
           isCorrect: false
-          explanation: ""
-  - content: "What is a primary benefit of Hotpatch updates in Windows 11 Pro?"
+          explanation: "Incorrect. Hotpatch updates do not replace existing update ring configurations. No changes are required to existing update ring configurations—they are honored alongside Hotpatch policies."
+        - content: "They enable biometric authentication to eliminate the need for passwords"
+          isCorrect: false
+          explanation: "Incorrect. Biometric authentication is a feature of Windows Hello, not Hotpatch updates. Hotpatch is focused on streamlining the security update process."
+  - content: "Which three core principles anchor the Microsoft Secure Future Initiative (SFI)?"
     choices:
-        - content: "They completely replace standard cumulative updates"
-          isCorrect: false
-          explanation: ""
-        - content: "They install updates without requiring device restarts"
+        - content: "Secure by design, secure by default, and secure operations"
           isCorrect: true
-          explanation: ""
-        - content: "They require changes to existing update ring configurations"
+          explanation: "Correct. SFI is anchored by three core principles: secure by design (security comes first when designing products), secure by default (protections are enabled by default and are not optional), and secure operations (controls and monitoring are continuously improved)."
+        - content: "Zero Trust, passwordless authentication, and hardware isolation"
           isCorrect: false
-          explanation: ""
-        - content: "They are only available for unmanaged devices"
+          explanation: "Incorrect. While Zero Trust principles and passwordless authentication are mentioned as security features, they are not the three core principles of SFI."
+        - content: "Protecting identities, protecting tenants, and protecting engineering systems"
           isCorrect: false
-          explanation: ""
-  - content: "Which Secure Future Initiative principle ensures security protections are enabled automatically and are not optional?"
+          explanation: "Incorrect. These are among the goals and actions that define Microsoft's security approach under SFI, but they are not the three core principles that anchor the initiative."
+        - content: "Hardware-based security, identity controls, and post-quantum cryptography"
+          isCorrect: false
+          explanation: "Incorrect. These are specific security features and strategies discussed in the module, but they are not the three core principles of the Secure Future Initiative."
+  - content: "What is the update compliance target that Windows Autopatch aims to achieve?"
     choices:
-        - content: "Secure operations"
+        - content: "Update 100% of devices within 24 hours of a patch release"
           isCorrect: false
-          explanation: ""
-        - content: "Secure by design"
-          isCorrect: false
-          explanation: ""
-        - content: "Secure by default"
+          explanation: "Incorrect. The module does not state that Autopatch aims for 100% compliance within 24 hours. Its stated goal is focused on a target compliance date, not immediate full deployment."
+        - content: "Update 95% of devices by their target compliance date"
           isCorrect: true
-          explanation: ""
-        - content: "Secure recovery"
+          explanation: "Correct. Windows Autopatch, embedded natively in Microsoft Intune, aims to update 95% of devices by their target compliance date."
+        - content: "Update 80% of devices without requiring a restart"
           isCorrect: false
-          explanation: ""
+          explanation: "Incorrect. Updating without a restart is a characteristic of Hotpatch updates, not the compliance target of Windows Autopatch. The Autopatch compliance target is 95%, not 80%."
+        - content: "Update 50% of devices automatically and require manual approval for the rest"
+          isCorrect: false
+          explanation: "Incorrect. While Autopatch does allow IT decision makers to choose between automatic deployment or manual approval, the stated compliance target is to update 95% of devices by their target date—not 50%."
+  - content: "What is required before setting up biometric sign-in options with Windows Hello?"
+    choices:
+        - content: "Enabling Dark mode in the Personalization settings"
+          isCorrect: false
+          explanation: "Incorrect. Dark mode is a visual personalization feature and has no connection to setting up Windows Hello biometric sign-in options."
+        - content: "Verifying that the device is a Secured-core PC"
+          isCorrect: false
+          explanation: "Incorrect. While Secured-core PCs provide enhanced security, verifying Secured-core status is not listed as a prerequisite for setting up Windows Hello biometrics."
+        - content: "Installing the latest Hotpatch update"
+          isCorrect: false
+          explanation: "Incorrect. Hotpatch updates are related to security patching, not to configuring Windows Hello. There is no requirement in the module to install a Hotpatch update before enabling biometrics."
+        - content: "Setting up a PIN"
+          isCorrect: true
+          explanation: "Correct. A PIN is mandatory to enable any Windows Hello biometric (face or fingerprint). The PIN must be set up before biometric options can be configured."

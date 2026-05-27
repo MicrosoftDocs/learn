@@ -5,7 +5,7 @@ Modern authentication is a framework in which authentication and authorization s
 
 An *identity provider (IdP)* creates, maintains, and manages identity information, and offers authentication, authorization, and auditing services to applications and services. Instead of each application managing its own user accounts and security policies, applications delegate these responsibilities to the identity provider.
 
-When a user wants to sign in to an application, the application directs them to the identity provider. The identity provider verifies their credentials and—if verification succeeds—issues a *security token* that the user presents back to the application. The application trusts the identity provider and accepts the token as proof of successful authentication.
+When a client wants to sign in to an application, the application directs them to the identity provider. The identity provider verifies their credentials and—if verification succeeds—issues a *security token* that the user client presents back to the application. The application trusts the identity provider and accepts the token as proof of successful authentication.
 
 This video introduces modern authentication and how it works with a central identity provider:
 

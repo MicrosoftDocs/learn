@@ -9,7 +9,7 @@ You can classify data as *structured*, *semi-structured*, or *unstructured*.
 Structured data is data that adheres to a fixed *schema*, so all of the data has the same fields or properties. Most commonly, the schema for structured data entities is *tabular* - in other words, the data is represented in one or more tables that consist of rows to represent each instance of a data entity, and columns to represent attributes of the entity. For example, the following image shows tabular data representations for *Customer* and *Product* entities.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram showing how structured data is represented in tables.](../media/2-tabular-diagram.png)
+> ![Diagram showing how structured data is represented in tables.](../media/customer-product-tables.png)
 
 Structured data is often stored in a database in which multiple tables can reference one another by using key values in a *relational* model; which we'll explore in more depth later.
 
@@ -68,14 +68,16 @@ One common format for semi-structured data is *JavaScript Object Notation* (JSON
 ```
 
 > [!NOTE]
-> JSON is just one of many ways in which semi-structured data can be represented. The point here is not to provide a detailed examination of JSON syntax, but rather to illustrate the flexible nature of semi-structured data representations.
+> JSON is just one of many ways in which semi-structured data can be represented. The point here isn't to provide a detailed examination of JSON syntax, but rather to illustrate the flexible nature of semi-structured data representations.
 
 ## Unstructured data
 
 Not all data is structured or even semi-structured. For example, documents, images, audio and video data, and binary files might not have a specific structure. This kind of data is referred to as *unstructured* data.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram showing unstructured data in documents.](../media/2-unstructured-data.png)
+> ![Diagram showing unstructured data in documents.](../media/unstructured-and-vector-data.png)
+
+Organizations are also increasingly working with **vector data** (also called *embeddings*)—the data type that enables AI assistants to answer questions over your own documents and data.
 
 ## Data stores
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.multi-agent-systems-orchestration.execution-isolation-permissions-concurrency
+title: Isolate execution - branches, workflows, permissions, and concurrency
+metadata:
+  title: Isolate execution - branches, workflows, permissions, and concurrency
+  description: This content is a part of the Multi-Agent Systems and Orchestration.
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.date: 05/14/2026
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-execution-isolation-permissions-concurrency.md)]

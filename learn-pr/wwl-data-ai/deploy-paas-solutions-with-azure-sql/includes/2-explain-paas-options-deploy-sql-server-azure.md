@@ -26,7 +26,7 @@ In Azure, all services support physical hardware, and you have the flexibility t
 
 [DTU-based purchasing model](/azure/azure-sql/database/service-tiers-dtu?azure-portal=true) is calculated based on a formula combining compute, storage, and I/O resources. It's a good choice for customers who want simple, preconfigured resource options.
 
-The DTU purchasing model comes in several different service tiers, such as Basic, Standard, and Premium. Each tier has varying capabilities, providing a wide range of options when choosing this platform.
+The DTU purchasing model comes in three different service tiers: Basic, Standard, and Premium. Each tier has varying capabilities, providing a wide range of options when choosing this platform.
 
 In terms of performance, the Basic tier is used for less demanding workloads, while the Premium tier is used for intensive workload requirements.
 
@@ -74,7 +74,7 @@ Serverless isn't fully compatible with all the features in Azure SQL Database si
 - The sync database in SQL Data Sync (Data Sync is a service that replicates data between a group of databases)
 
 > [!NOTE]
-> Serverless is currently only supported in the General Purpose tier in the vCore purchasing model.
+> The serverless compute tier is available in both the General Purpose and Hyperscale service tiers of the vCore purchasing model. Auto-pause and auto-resume are currently only supported in the General Purpose tier.
 
 ## Backups
 

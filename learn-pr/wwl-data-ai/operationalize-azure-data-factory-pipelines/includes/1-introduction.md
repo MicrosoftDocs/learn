@@ -1,4 +1,8 @@
-When using Azure Data Factory to build your data integration solutions, it is important to have effective, scalable methods to monitor your pipeline runs and enable team collaboration. Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to also support the monitoring of your pipelines.
+When using Azure Data Factory (ADF) to build your data integration solutions, it's important to have effective, scalable methods to monitor your pipeline runs and enable team collaboration. Azure Data Factory integrates with Azure DevOps and GitHub to allow easy source control and effective continuous integration and delivery. Azure Data Factory also offers a variety of both visual and programmatic monitoring services to also support the monitoring of your pipelines.
+
+> [!NOTE]
+> [Data Factory in Microsoft Fabric](/fabric/data-factory/data-factory-overview) is the next generation of Azure Data Factory, with a simpler architecture, built-in AI, and new features. If you're new to data integration, consider starting with Fabric Data Factory. Existing ADF workloads can upgrade to Fabric to access new capabilities across data science, real-time analytics, and reporting.
+
 ## Learning objectives
 
 In this module, you will:
@@ -14,9 +18,9 @@ In this module, you will:
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
+Before taking this module, it's recommended that the student is able to:
 
-* Log into the Azure portal
+* Log in to the Azure portal
 * Explain and create resource groups
 * Describe Azure Data Factory and its core components
 * Ingest data into Azure Data Factory using the Copy Activity

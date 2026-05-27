@@ -1,10 +1,10 @@
-Identifying and understanding security issues is the first step toward resolving them. GitHub Copilot's Ask mode provides an interactive way to analyze code, identify vulnerabilities, and plan remediation strategies.
+Identifying and understanding security issues is the first step toward resolving them. GitHub Copilot's Ask agent provides an interactive way to analyze code, identify vulnerabilities, and plan remediation strategies.
 
-## What is Ask mode?
+## What is the Ask agent?
 
-GitHub Copilot's Ask mode is a conversational chat interface integrated into Visual Studio Code. You ask questions about your code, and GitHub Copilot responds using the context you provide. It functions like having a knowledgeable colleague who can read your code and provide security-focused guidance.
+The Ask agent is one of three built-in agents in GitHub Copilot Chat, integrated into Visual Studio Code. You ask questions about your code, and GitHub Copilot responds using the context you provide. The Ask agent functions like a knowledgeable colleague who can read your code and provide guidance. To activate the Ask agent in the Chat view, select **Ask** from the **Set Agent** dropdown.
 
-Ask mode is ideal for:
+The Ask agent is ideal for:
 
 - Understanding what specific code does.
 - Identifying potential security vulnerabilities.
@@ -12,15 +12,15 @@ Ask mode is ideal for:
 - Getting explanations of security concepts.
 - Planning remediation strategies before making changes.
 
-GitHub Copilot's Ask mode doesn't modify your code files. It provides analysis, explanations, and suggestions that you can use to make informed decisions about how to proceed.
+The Ask agent doesn't modify your code files. It provides analysis, explanations, and suggestions that you can use to make informed decisions about how to proceed.
 
-## Analyze security issues using Ask mode
+## Analyze security issues using the Ask agent
 
-You can use GitHub Copilot's Ask mode to systematically identify and understand security vulnerabilities in your codebase. GitHub Copilot helps you understand the nature of security issues, their potential effects, and appropriate remediation approaches.
+You can use the Ask agent to systematically identify and understand security vulnerabilities in your codebase. GitHub Copilot helps you understand the nature of security issues, their potential effects, and appropriate remediation approaches.
 
 ### Strategies for analyzing security issues
 
-Here are effective strategies for using Ask mode to analyze security issues:
+Here are effective strategies for using the Ask agent to analyze security issues:
 
 - **Understand the code**: Ask GitHub Copilot to explain what vulnerable code does and how it processes data.
 
@@ -36,7 +36,7 @@ Here are effective strategies for using Ask mode to analyze security issues:
 
 - **Plan systematically**: Develop a step-by-step remediation plan that addresses all aspects of the vulnerability.
 
-### Ask mode prompts for security analysis
+### Ask agent prompts for security analysis
 
 Effective prompts are specific, provide context, and focus on actionable insights.
 
@@ -93,10 +93,11 @@ GitHub Copilot's analysis quality depends on the context you provide. Follow the
 
 Providing comprehensive context helps GitHub Copilot deliver more accurate and relevant security analysis.
 
-- Use the **Add Context** button in the chat interface to include relevant files.
+- Type `#` in the chat input to reference specific files (for example, `#file:SearchProducts.cs`), folders, symbols, or your entire codebase (`#codebase`).
 - Select specific code sections before asking questions to focus the analysis.
 - Include related files that provide context (like configuration files, helper classes, or data models).
-- Reference multiple files when the issue spans across them.
+- Reference terminal output (`#terminalSelection`) to include compiler errors or test failures as context.
+- Attach screenshots of errors or security scan results — the Ask agent supports vision, so you can paste an image directly into the chat.
 
 ### Provide clear problem descriptions
 
@@ -107,9 +108,9 @@ Clear context helps GitHub Copilot understand your specific situation and provid
 - Specify your security concerns explicitly.
 - Note any relevant coding standards or guidelines that your team follows.
 
-## Ask mode workflow for security analysis
+## Ask agent workflow for security analysis
 
-Follow this systematic workflow to analyze security issues using Ask mode:
+Follow this systematic workflow to analyze security issues using the Ask agent:
 
 ### Step 1: Open and select the problematic code
 
@@ -166,6 +167,9 @@ Request a comprehensive implementation plan that includes testing requirements.
 Example prompt: "Based on our discussion, create a step-by-step plan for fixing this SQL injection vulnerability including testing requirements."
 
 GitHub Copilot can provide a structured plan covering preparation, implementation, testing (unit, security, and regression), deployment, and documentation phases.
+
+> [!TIP]
+> After completing your Ask agent analysis, consider using the **Plan agent** to formalize the implementation plan. The Plan agent creates a structured, step-by-step implementation plan from your analysis findings and can hand off directly to the Agent for implementation. Select **Plan** from the agents picker in the Chat view.
 
 ## Iterative analysis approach
 
@@ -229,9 +233,9 @@ GitHub Copilot's accuracy improves with better context. If responses seem off-ta
 - Specify constraints or requirements explicitly.
 - Rephrase your question with more detail.
 
-## Key benefits of Ask mode for security analysis
+## Key benefits of the Ask agent for security analysis
 
-Using Ask mode for security analysis provides several advantages:
+Using the Ask agent for security analysis provides several advantages:
 
 - **Rapid assessment**: Get immediate analysis without researching documentation.
 - **Comprehensive perspective**: GitHub Copilot considers patterns from millions of codebases.
@@ -241,4 +245,4 @@ Using Ask mode for security analysis provides several advantages:
 
 ## Summary
 
-GitHub Copilot's Ask mode is a powerful tool for analyzing security issues systematically. Ask targeted questions and provide appropriate context to get the best results. Follow an iterative workflow to thoroughly understand vulnerabilities and explore remediation options. Use Ask mode to develop comprehensive implementation plans before writing code. This approach helps you fix security issues confidently while learning security principles that improve your future code.
+The Ask agent is a powerful tool for analyzing security issues systematically. Ask targeted questions and provide appropriate context to get the best results. Follow an iterative workflow to thoroughly understand vulnerabilities and explore remediation options. Use the Ask agent to develop comprehensive implementation plans before writing code, then transition to the Plan agent to structure your approach or the Agent to implement fixes directly. This approach helps you fix security issues confidently while learning security principles that improve your future code.

@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=5ddf7548-c60d-4674-96eb-fc0f417d60f5]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 In this module, you learned how to:
 
 - Connect to Azure Speech in Foundry Tools in a Foundry resource

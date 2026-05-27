@@ -3,7 +3,7 @@ uid: learn.wwl.explore-fundamentals-of-data-visualization
 metadata:
   title: Explore Fundamentals of Data Visualization
   description: "Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action."
-  ms.date: 03/12/2026
+  ms.date: 05/21/2026
   author: weslbo
   ms.author: wedebols
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: powerbi
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore fundamentals of data visualization
 summary: Learn the fundamental principles of analytical data modeling and data visualization, using Microsoft Power BI as a platform to explore these principles in action.
 abstract: |
@@ -36,6 +36,7 @@ roles:
 products:
 - azure
 - power-bi
+- fabric
 subjects:
 - data-visualization
 units:

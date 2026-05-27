@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=7cc6a903-3991-4feb-b9d6-44e4455457a7]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Azure Language in Foundry Tools is designed to help you extract information from text. It provides functionality that you can use for tasks like:
 
 - *Language detection* - determining the language in which text is written.

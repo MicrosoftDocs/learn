@@ -18,7 +18,6 @@ You're a security architect at Contoso, a multinational financial services compa
 - Financial services regulations across multiple regions
 - Healthcare data protection requirements for a new insurance product line
 - AI governance requirements as the company deploys machine learning models
-- Privacy requirements for customer data across all services
 - Consistent policy enforcement across Azure, AWS, and on-premises environments
 
 You need to translate these diverse regulatory requirements into a cohesive security architecture that enables the business while maintaining compliance.
@@ -29,7 +28,6 @@ In this module, you learn how to:
 
 - Translate compliance requirements into security solutions using Zero Trust principles
 - Address compliance requirements with Microsoft Purview including AI governance templates
-- Design a solution to address privacy requirements with Microsoft Priva
 - Design Azure Policy solutions to address security and compliance requirements
 - Evaluate infrastructure compliance across multicloud environments using Microsoft Defender for Cloud
 

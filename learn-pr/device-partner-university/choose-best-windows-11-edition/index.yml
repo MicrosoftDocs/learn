@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.dpu.choose-best-windows-11-edition
+title: Choose the best Windows 11 edition built for your organization’s needs
+metadata:
+  title: Choose The Best Windows 11 Edition Built For Your Organization’s Needs
+  description: Learn how to evaluate Windows 11 Pro and Windows 11 Enterprise using organizational decision criteria such as security requirements, management complexity, operational scale, and governance needs.
+  ms.date: 05/20/2026
+  author: hhreyes21
+  ms.author: v-homerreyes
+  ms.topic: module-choose-best-product
+  ms.service: windows-11
+summary: >
+  Learn how to evaluate Windows 11 Pro and Windows 11 Enterprise using organizational decision criteria such as security requirements, management complexity, operational scale, and governance needs.
+abstract: |2+
+
+prerequisites: |
+  - None
+iconUrl: /training/achievements/choose-best-windows-11-edition.svg
+ratingEnabled: false
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-leader
+  - business-owner
+  - business-user
+  - technology-manager
+products:
+  - windows-11
+units:
+  - learn.dpu.choose-best-windows-11-edition.introduction
+  - learn.dpu.choose-best-windows-11-edition.understand-deployment-scenario
+  - learn.dpu.choose-best-windows-11-edition.identify-windows-edition-options
+  - learn.dpu.choose-best-windows-11-edition.analyze-decision-criteria
+  - learn.dpu.choose-best-windows-11-edition.choose-windows-11-pro
+  - learn.dpu.choose-best-windows-11-edition.choose-windows-11-enterprise
+  - learn.dpu.choose-best-windows-11-edition.knowledge-check
+  - learn.dpu.choose-best-windows-11-edition.summary
+badge:
+  uid: learn.dpu.choose-best-windows-11-edition.badge

@@ -1,3 +1,4 @@
+
 ::: zone pivot="video"
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=704f0d85-685a-4761-aac7-c1b4358aefed]
@@ -8,6 +9,7 @@
 ::: zone-end
 
 ::: zone pivot="text"
+
 Named Entity Recognition identifies entities that are mentioned in the text. Entities are grouped into categories and subcategories, for example:
 
 - Person

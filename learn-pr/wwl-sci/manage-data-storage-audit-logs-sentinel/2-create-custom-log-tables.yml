@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-storage-audit-logs-sentinel.create-custom-log-tables
+metadata:
+  title: Create custom log tables in Microsoft Sentinel
+  description: Create custom log tables in the Microsoft Sentinel workspace to store data from nonstandard sources, including table plan selection, schema definition, and DCR-based ingestion via the Logs Ingestion API.
+  ms.date: 04/16/2026
+  author: r-c-stewart
+  ms.author: roberts
+  ms.topic: unit
+  ai-usage: ai-assisted
+title: Create custom log tables in Microsoft Sentinel
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-create-custom-log-tables.md)]

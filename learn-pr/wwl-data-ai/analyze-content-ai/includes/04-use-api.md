@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2215749f-e6e0-41e7-9ed7-6edf3fb4e71c]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 The Content Understanding API provides a programmatic interface that you can use to create, manage, and consume analyzers.
 
 To use the API, your client application submits HTTP calls to the Content Understanding endpoint for your Microsoft Foundry resource, passing one of the authorization keys in the header. You can obtain the endpoint and keys in the Azure portal or in the Microsoft Foundry portal. You can also use the Microsoft Foundry API to connect to the project programmatically with you Entra ID.
@@ -41,6 +53,7 @@ GET {endpoint}/contentunderstanding/analyzerResults/1234abcd-1234-abcd-1234-abcd
 
 When the operation has completed successfully, the response contains a JSON payload representing the results of the analysis. The specific results depend on the content and schema.
 
+::: zone-end
+
 > [!NOTE]
 > For more information about the Content Understanding API, see the **[reference documentation](/rest/api/contentunderstanding/operation-groups)**.
-

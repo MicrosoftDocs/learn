@@ -1,0 +1,64 @@
+### YamlMime:Module
+uid: learn.azure.storagemigration
+metadata:
+  title: Accelerate Your Storage Migration, Modernization, and Innovation Journey to Azure
+  description: Plan your storage migration to Azure by assessing your environment, selecting tools, and validating data integrity.
+  manager: jsuri
+  ms.date: 04/30/2026
+  author: hborns
+  ms.author: hannoborns
+  ms.topic: module
+  ms.service: azure-storage
+  ai-usage: ai-assisted
+title: Accelerate your storage migration, modernization, and innovation journey to Azure
+summary: Moving to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand, and focus on more important tasks. There are many reasons for moving to Azure, and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success. 
+abstract: |
+  In this module, you'll:
+  - List the drivers and benefits of moving to Azure.
+  - Describe the phases of a cloud migration and modernization journey and common migration and modernization projects.
+  - List the Azure migration and modernization tools and programs that enable successful moves.
+prerequisites: |
+  - General understanding of cloud platforms 
+  - Understanding of your organization's migration plan and the types of workloads you need to migrate 
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- student
+- technology-manager 
+products:
+- azure
+- azure-storage
+subjects:
+- migration
+units:
+- learn.azure.storagemigration.introduction
+- learn.azure.storagemigration.understand-ai-readiness-storage-migration
+- learn.azure.storagemigration.assess-current-storage-environment
+- learn.azure.storagemigration.select-target-azure-storage-service
+- learn.azure.storagemigration.evaluate-migration-strategy-options
+- learn.azure.storagemigration.plan-network-bandwidth-requirements
+- learn.azure.storagemigration.explore-offline-independent-software-vendor-migration-tools
+- learn.azure.storagemigration.explore-online-migration-tools
+- learn.azure.storagemigration.understand-azure-storage-mover-architecture
+- learn.azure.storagemigration.deploy-run-azure-storage-mover
+- learn.azure.storagemigration.establish-security-identity-controls
+- learn.azure.storagemigration.validate-data-integrity-after-migration
+- learn.azure.storagemigration.execute-storage-cutover
+- learn.azure.storagemigration.optimize-post-migration-environment
+- learn.azure.storagemigration.knowledge-check
+- learn.azure.storagemigration.summary
+badge:
+  uid: learn.azure.storagemigration.badge
+

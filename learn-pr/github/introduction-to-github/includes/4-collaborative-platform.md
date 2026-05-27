@@ -21,10 +21,10 @@ This walkthrough covers how to create an issue from a repository. Issues can als
 
    :::image type="content" source="../media/issues-tab.png" alt-text="Screenshot showing the top portion of the main page of a repository with the Issues section highlighted." border="false":::
 
-1. Select **New issue**.
-1. If your repository uses issue templates, next to the type of issue you'd like to open select **Get started**.
+1. Select **New issue**. This should open a blank issue field for you to fill.
+1. If your repository uses issue templates, you should get a list of issues types, select the one you'd like to use.
 
-   If the type of issue you'd like to open isn't included in the available options, select **Open a blank issue**. If not using templates, skip to Step 5.
+   If the type of issue you'd like to open isn't included in the available options, select **Blank issue**. If not using templates, skip to Step 5.
 
    If your repository uses issue forms, you'll see a structured form to fill out instead of a blank issue template. Issue forms allow maintainers to collect specific information in a standardized format.
 
@@ -119,14 +119,14 @@ In a Q&A style discussion, you can mark a comment as the accepted answer to the 
 
 The comment will be highlighted, making it easy for others to find the solution quickly. You can also unmark an answer if needed.
 
-### Converting a discussion to an issue
+### Reference a discussion in an issue
 
 If a discussion leads to work that needs to be tracked, you can convert the discussion into an issue.
 
 1. Navigate to the discussion you want to convert.
 2. Select the **`...`** (three dots) menu at the top-right of the discussion.
-3. Select **Convert to issue**.
-4. Confirm the conversion and select a repository to create the new issue in.
+3. Select **Reference in new issue**.
+4. Confirm the new issue title and body.
 
 This keeps track of actionable work that originates from community conversations.
 

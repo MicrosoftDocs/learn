@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-sap-microsoft-cloud.sentinel-solution-sap-logserv
+title: Microsoft Sentinel Solution for SAP integration with SAP LogServ add-on
+metadata:
+  title: Microsoft Sentinel Solution for SAP integration with SAP LogServ add-on
+  description: "Microsoft Sentinel Solution for SAP integration with SAP LogServ add-on"
+  ms.date: 03/13/2026
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-sentinel-solution-sap-logserv.md)]

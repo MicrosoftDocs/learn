@@ -4,7 +4,7 @@ You also learned how to design solutions that protect against three distinct thr
 
 You explored AI security and its three core pillars: AI platform security, AI application security, and monitoring and response. The MCSB v2 AI controls (AI-1 through AI-7) provide a framework for addressing AI-specific risks like model theft, prompt injection, and adversarial attacks.
 
-Finally, you learned about the Zero Trust cloud adoption framework, which provides a methodical approach to implementing Zero Trust across your digital estate and can help accelerate adoption.
+Finally, you learned about the Zero Trust adoption framework, which provides a methodical approach to implementing Zero Trust across your digital estate and can help accelerate adoption.
 
 The main takeaways from this module are:
 
@@ -18,16 +18,29 @@ In this module, you learned how to:
 
 - Use the Microsoft Cybersecurity Reference Architecture (MCRA) to design more secure solutions.
 - Use Microsoft Cloud Security Benchmark (MCSB) to design more secure solutions.
+- Design solutions with best practices for cybersecurity capabilities and controls.
+- Design solutions that protect against insider threats, external attacks, and supply chain attacks.
+- Design AI security solutions aligned to the MCSB AI security controls.
+- Design solutions that align with the Zero Trust adoption framework.
 
-## Learn more with security documentation
+## Learn more
 
-- [Microsoft Security Adoption Framework - Security documentation](/security/adoption/)
-- [Microsoft Cybersecurity Reference Architectures - Security documentation](/security/adoption/mcra)
-- [Overview of the Microsoft Cloud Security Benchmark](/security/benchmark/azure/overview)
-- [MCSB v2 AI Security Controls](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security)
+The following resources provide additional information on the topics covered in this module.
+
+### Microsoft Security Adoption Framework and MCRA
+- [Microsoft Security Adoption Framework](/security/adoption/adoption)
+- [Microsoft Cybersecurity Reference Architectures](/security/adoption/mcra)
+
+### Microsoft cloud security benchmark
+- [Overview of Microsoft cloud security benchmark](/security/benchmark/azure/overview)
+- [Introduction to the Microsoft cloud security benchmark](/security/benchmark/azure/introduction)
+- [MCSB v2 AI Security controls](/security/benchmark/azure/mcsb-v2-artificial-intelligence-security)
+
+### AI security
 - [Security for AI](/security/security-for-ai/)
+
+### Zero Trust
 - [What is Zero Trust?](/security/zero-trust/zero-trust-overview)
 - [Zero Trust adoption framework overview](/security/zero-trust/adopt/zero-trust-adoption-overview)
 - [Rapidly modernize your security posture](/security/zero-trust/adopt/rapidly-modernize-security-posture)
 - [Zero Trust deployment for technology pillars](/security/zero-trust/deploy/overview)
-- [Securing identity with Zero Trust](/security/zero-trust/deploy/identity)

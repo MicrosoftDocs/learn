@@ -1,3 +1,15 @@
+﻿
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=23f8ec8f-2044-46d4-a1e4-98bf732e3e48]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 When prebuilt models don't cover your specific document types, you can train custom models to extract data from your own forms. Azure Document Intelligence supports supervised machine learning, where you label sample documents with the fields you want to extract, and the service trains a model to recognize those fields in new documents.
 
 ## Custom model types
@@ -100,6 +112,8 @@ A successful response contains an `analyzeResult` object with the extracted cont
 ## Composed models
 
 You can combine multiple custom models into a single **composed model**. When you submit a document to a composed model, Document Intelligence classifies it to determine the most appropriate component model, and then returns the extraction results from that model. This approach is useful when you handle multiple form types that each require their own extraction model.
+
+::: zone-end
 
 ## Learn more
 

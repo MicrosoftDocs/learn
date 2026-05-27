@@ -1,8 +1,8 @@
-Once you've installed the Content Hub solutions, you can connect Microsoft 365 and Azure-related services in the Data Connector page configuration section in just a few mouse clicks.  It's easy to overlook specific considerations for each connector.  This module demonstrates the connecting of four services. Each service sends data to different Data Types (tables).
+Once you installed the Content Hub solutions, you can connect Microsoft 365 and Azure-related services in the Data Connector page configuration section in just a few mouse clicks.  It's easy to overlook specific considerations for each connector. This module demonstrates the connecting of four services. Each service sends data to different Data Types (tables).
 
-First is the Microsoft 365 connector. The Configuration option allows for the sending of Exchange, SharePoint, and Teams data.  Based on your organization's specific needs, you can decide which data to ingest. The Data types show that all the data resides in the OfficeActivity table.
+First is the Microsoft 365 connector. The Configuration option allows for the sending of Exchange, SharePoint, and Teams data. Based on your organization's specific needs, you can decide which data to ingest. The Data types show that the data resides in the OfficeActivity table.
 
-The second is Microsoft Entra ID, which has two options for Sign-On logs and Audit logs.
+The second is Microsoft Entra ID, which supports multiple log types. You can independently select which log types to stream into Microsoft Sentinel, and each writes to a separate Log Analytics table. Available log types include interactive and non-interactive user sign-in logs, service principal sign-in logs, managed identity sign-in logs, provisioning logs, AD FS sign-in logs, and Audit logs.
 
 Third is Microsoft Entra ID Protection. This connector sends data to the SecurityAlert table. The SecurityAlert table holds the alert data only without the underlying data that caused the alert. A second option is to Create Incidents, which is Recommended! This process automatically creates an Incident based on and connected to the alert ingested to the SecurityAlert table from Microsoft Entra ID Protection. You can also activate the incident creation rule on the Analytics page.
 

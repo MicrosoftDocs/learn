@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" font-family="Segoe UI, sans-serif">
+  <rect width="720" height="560" fill="#F8F9FA" rx="12"/>
+
+  <!-- Title -->
+  <text x="360" y="36" font-size="20" font-weight="700" fill="#1B1B1B" text-anchor="middle">Stored Access Policy — SAS Lifecycle Control</text>
+
+  <!-- ═══ LEFT PANEL: Without Stored Access Policy ═══ -->
+  <rect x="20" y="52" width="320" height="320" fill="#FEF0EF" rx="12" stroke="#A4262C" stroke-width="2"/>
+  <!-- Header -->
+  <rect x="20" y="52" width="320" height="44" fill="#A4262C" rx="12"/>
+  <rect x="20" y="76" width="320" height="20" fill="#A4262C"/>
+  <text x="180" y="80" font-size="17" font-weight="700" fill="white" text-anchor="middle">Without Stored Access Policy</text>
+
+  <!-- SAS token box (params baked in) -->
+  <rect x="44" y="110" width="272" height="120" fill="white" rx="8" stroke="#A4262C" stroke-width="1.5"/>
+  <text x="180" y="130" font-size="16" font-weight="700" fill="#323130" text-anchor="middle">SAS Token</text>
+  <!-- Padlocked params inside token -->
+  <rect x="56" y="138" width="248" height="24" rx="5" fill="#FEF0EF"/>
+  <text x="180" y="154" font-size="15" fill="#A4262C" text-anchor="middle">⏱  Expiry: baked into token</text>
+  <rect x="56" y="166" width="248" height="24" rx="5" fill="#FEF0EF"/>
+  <text x="180" y="182" font-size="15" fill="#A4262C" text-anchor="middle">🔒  Permissions: baked in</text>
+  <rect x="56" y="194" width="248" height="30" rx="5" fill="#FEF0EF"/>
+  <text x="180" y="209" font-size="15" fill="#A4262C" text-anchor="middle">⚠  Cannot change after issue</text>
+  <text x="180" y="224" font-size="15" fill="#A4262C" text-anchor="middle">⚠  Cannot revoke after issue</text>
+
+  <!-- Arrow down to storage -->
+  <line x1="180" y1="232" x2="180" y2="264" stroke="#A4262C" stroke-width="2.5" marker-end="url(#ared)"/>
+
+  <!-- Storage cylinder -->
+  <rect x="148" y="266" width="64" height="42" fill="#C7EFF8"/>
+  <ellipse cx="180" cy="266" rx="32" ry="9" fill="#A0D8EF"/>
+  <ellipse cx="180" cy="308" rx="32" ry="9" fill="#7FC8E8"/>
+
+  <!-- Revoke problem box -->
+  <rect x="44" y="330" width="272" height="36" rx="8" fill="#A4262C"/>
+  <text x="180" y="345" font-size="16" font-weight="700" fill="white" text-anchor="middle">To Revoke: Rotate Account Key</text>
+  <text x="180" y="362" font-size="15" fill="white" text-anchor="middle">Breaks ALL other apps using that key</text>
+
+  <!-- ═══ RIGHT PANEL: With Stored Access Policy ═══ -->
+  <rect x="380" y="52" width="320" height="320" fill="#F3FBF2" rx="12" stroke="#107C10" stroke-width="2"/>
+  <!-- Header -->
+  <rect x="380" y="52" width="320" height="44" fill="#107C10" rx="12"/>
+  <rect x="380" y="76" width="320" height="20" fill="#107C10"/>
+  <text x="540" y="80" font-size="17" font-weight="700" fill="white" text-anchor="middle">With Stored Access Policy</text>
+
+  <!-- SAS token referencing policy -->
+  <rect x="404" y="110" width="130" height="76" fill="white" rx="8" stroke="#107C10" stroke-width="1.5"/>
+  <text x="469" y="130" font-size="16" font-weight="700" fill="#323130" text-anchor="middle">SAS Token</text>
+  <rect x="412" y="138" width="114" height="42" rx="5" fill="#F3FBF2"/>
+  <text x="469" y="155" font-size="15" fill="#107C10" text-anchor="middle">ref: vendor-</text>
+  <text x="469" y="173" font-size="15" fill="#107C10" text-anchor="middle">read-policy</text>
+
+  <!-- Arrow to policy -->
+  <line x1="536" y1="148" x2="562" y2="148" stroke="#107C10" stroke-width="2.5" marker-end="url(#ag)"/>
+
+  <!-- Policy box -->
+  <rect x="564" y="110" width="128" height="120" fill="white" rx="8" stroke="#107C10" stroke-width="2"/>
+  <text x="628" y="130" font-size="15" font-weight="700" fill="#107C10" text-anchor="middle">Policy</text>
+  <rect x="572" y="138" width="112" height="22" rx="4" fill="#F3FBF2"/>
+  <text x="628" y="153" font-size="15" fill="#323130" text-anchor="middle">ID: vendor-read</text>
+  <rect x="572" y="164" width="112" height="22" rx="4" fill="#F3FBF2"/>
+  <text x="628" y="179" font-size="15" fill="#323130" text-anchor="middle">⏱  Expiry: set here</text>
+  <rect x="572" y="190" width="112" height="22" rx="4" fill="#F3FBF2"/>
+  <text x="628" y="205" font-size="15" fill="#323130" text-anchor="middle">🔑  Permissions</text>
+  <text x="628" y="228" font-size="15" fill="#605E5C" text-anchor="middle">Modifiable any time</text>
+
+  <!-- Arrow from policy down to storage -->
+  <line x1="540" y1="186" x2="540" y2="264" stroke="#107C10" stroke-width="2.5" stroke-dasharray="5,3" marker-end="url(#ag)"/>
+
+  <!-- Storage cylinder -->
+  <rect x="508" y="266" width="64" height="42" fill="#C7EFF8"/>
+  <ellipse cx="540" cy="266" rx="32" ry="9" fill="#A0D8EF"/>
+  <ellipse cx="540" cy="308" rx="32" ry="9" fill="#7FC8E8"/>
+
+  <!-- Revoke success box -->
+  <rect x="404" y="330" width="272" height="36" rx="8" fill="#107C10"/>
+  <text x="540" y="345" font-size="16" font-weight="700" fill="white" text-anchor="middle">To Revoke: Delete the Policy</text>
+  <text x="540" y="362" font-size="15" fill="#C8EAC8" text-anchor="middle">Instant — targeted — no key rotation</text>
+
+  <!-- ═══ BOTTOM: SAS TYPE COMPATIBILITY ═══ -->
+  <rect x="20" y="390" width="680" height="150" fill="white" rx="12" stroke="#C7E0F4" stroke-width="2"/>
+  <text x="360" y="414" font-size="17" font-weight="700" fill="#323130" text-anchor="middle">Stored Access Policy — Compatibility</text>
+
+  <!-- 3 columns -->
+  <!-- Service SAS -->
+  <rect x="36" y="424" width="208" height="106" fill="#F3FBF2" rx="8" stroke="#107C10" stroke-width="2"/>
+  <text x="140" y="448" font-size="16" font-weight="700" fill="#107C10" text-anchor="middle">Service SAS</text>
+  <text x="140" y="470" font-size="22" fill="#107C10" text-anchor="middle">✓</text>
+  <text x="140" y="496" font-size="15" fill="#323130" text-anchor="middle">Supports stored access</text>
+  <text x="140" y="514" font-size="15" fill="#323130" text-anchor="middle">policies — revocable</text>
+
+  <!-- Account SAS -->
+  <rect x="256" y="424" width="208" height="106" fill="#FEF0EF" rx="8" stroke="#A4262C" stroke-width="2"/>
+  <text x="360" y="448" font-size="16" font-weight="700" fill="#A4262C" text-anchor="middle">Account SAS</text>
+  <text x="360" y="470" font-size="22" fill="#A4262C" text-anchor="middle">✗</text>
+  <text x="360" y="496" font-size="15" fill="#323130" text-anchor="middle">No stored access policy</text>
+  <text x="360" y="514" font-size="15" fill="#323130" text-anchor="middle">support — avoid</text>
+
+  <!-- User Delegation SAS -->
+  <rect x="476" y="424" width="208" height="106" fill="#EFF6FC" rx="8" stroke="#0078D4" stroke-width="2"/>
+  <text x="580" y="448" font-size="16" font-weight="700" fill="#0078D4" text-anchor="middle">User Delegation SAS</text>
+  <text x="580" y="470" font-size="22" fill="#0078D4" text-anchor="middle">★</text>
+  <text x="580" y="496" font-size="15" fill="#323130" text-anchor="middle">Signed with Entra ID —</text>
+  <text x="580" y="514" font-size="15" fill="#323130" text-anchor="middle">preferred · max 7 days</text>
+
+  <!-- Max 5 note -->
+  <text x="360" y="548" font-size="15" fill="#605E5C" text-anchor="middle">Maximum 5 stored access policies per container · queue · table · file share</text>
+
+  <defs>
+    <marker id="ared" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#A4262C"/>
+    </marker>
+    <marker id="ag" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#107C10"/>
+    </marker>
+  </defs>
+</svg>

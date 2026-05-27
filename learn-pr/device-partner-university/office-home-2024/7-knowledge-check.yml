@@ -1,0 +1,167 @@
+### YamlMime:ModuleUnit
+
+uid: learn.dpu.office-home-2024.knowledge-check 
+
+title: Knowledge check 
+
+metadata: 
+
+  title: Knowledge Check 
+
+  description: This content is part of the "Introduction to Microsoft Office Home 2024" module. 
+
+  ms.date: 05/20/2026 
+
+  author: stephanie-rosenzweig
+
+  ms.author: v-stephanier
+
+  ms.topic: unit 
+
+durationInMinutes: 5 
+
+quiz: 
+
+  title: Check your knowledge 
+
+  questions: 
+
+  - content: "What is the primary purchasing model for Microsoft Office Home 2024?" 
+
+    choices: 
+
+    - content: "Monthly subscription" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 doesn't use a subscription model." 
+
+    - content: "One-time purchase" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Office Home 2024 is purchased with a single upfront payment." 
+
+    - content: "Free trial" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. A trial might exist, but it isn't the primary purchasing model." 
+
+    - content: "Usage-based pricing" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 doesn't use usage-based pricing." 
+
+  - content: "How is Office Home 2024 updated over time?"  
+
+    choices: 
+
+    - content: "Continuous feature updates are included" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 doesn't receive new feature updates." 
+
+    - content: "No updates are provided" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 still receives security and stability updates." 
+
+    - content: "Security and stability updates are provided" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Office Home 2024 receives security and stability updates only." 
+
+    - content: "Automatic upgrades to future versions are included" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Upgrading to a newer version requires a new purchase." 
+
+  - content: "Which best describes how Office Home 2024 is typically used?" 
+
+    choices: 
+
+    - content: "Primarily through web apps and services" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 isn't primarily web-based." 
+
+    - content: "Installed desktop apps on a single device" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Office Home 2024 is installed locally on a single device." 
+
+    - content: "Distributed across unlimited devices" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. The license applies to a single device." 
+
+    - content: "Only through cloud-based platforms" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. The apps run locally rather than only in the cloud." 
+
+  - content: "When is Office Home 2024 most appropriate?" 
+
+    choices: 
+
+    - content: "When you need constant new features and collaboration tools" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 doesn't include ongoing feature updates or advanced collaboration tools." 
+
+    - content: "When you rely heavily on AI-assisted features" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. AI features such as Copilot aren't included." 
+
+    - content: "When you want stable desktop apps with a one-time cost" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Office Home 2024 is designed for users who prefer a one-time purchase and a consistent experience." 
+
+    - content: "When you need enterprise-scale management tools" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 is intended for personal and student use." 
+
+  - content: "What is a key difference between Office Home 2024 and Microsoft 365?" 
+
+    choices: 
+
+    - content: "Office Home 2024 requires a subscription" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Office Home 2024 is a one-time purchase." 
+
+    - content: "Microsoft 365 doesn't include desktop apps" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Microsoft 365 includes desktop apps." 
+
+    - content: "Office Home 2024 doesn't receive new features after purchase" 
+
+      isCorrect: true 
+
+      explanation: "Correct. Office Home 2024 has a fixed feature set and doesn't receive new feature updates." 
+
+    - content: "Microsoft 365 can only be used online" 
+
+      isCorrect: false 
+
+      explanation: "Incorrect. Microsoft 365 apps can be used both online and offline." 

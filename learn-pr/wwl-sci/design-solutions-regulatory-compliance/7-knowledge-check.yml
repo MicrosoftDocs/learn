@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check for module on the topic: design solutions for regulatory requirements. Contains AI generated content."
-  ms.date: 02/27/2026
+  ms.date: 05/15/2026
   author: ceperezb
   ms.author: ceperezb
   ms.topic: unit
@@ -41,20 +41,6 @@ quiz:
     - content: AI systems always require higher network bandwidth than traditional applications
       isCorrect: false
       explanation: Network bandwidth is an infrastructure consideration, not a compliance challenge unique to AI. The unique compliance challenges stem from AI characteristics like probabilistic outputs, training data dependencies, and system opacity.
-  - content: A security architect is designing privacy solutions using Microsoft Priva. Which Priva capability should be used to detect when personal data is stored in locations with overly broad access permissions?
-    choices:
-      - content: Privacy Risk Management with data overexposure policies
-        isCorrect: true
-        explanation: Privacy Risk Management data overexposure policies detect when personal data is accessible to more people than necessary. These policies identify content containing personal data that is publicly accessible or shared broadly, then enable remediation through owner notifications or privacy team review.
-      - content: Subject Rights Requests with automated data discovery
-        isCorrect: false
-        explanation: Subject Rights Requests automates the process of responding to individual data access, deletion, or portability requests. It doesn't detect data overexposure. Use Privacy Risk Management data overexposure policies for that purpose.
-      - content: Privacy Assessments with project evaluation workflows
-        isCorrect: false
-        explanation: Privacy Assessments provides structured workflows to evaluate privacy impact of new projects before implementation. It doesn't detect existing data overexposure. Use Privacy Risk Management data overexposure policies for that purpose.
-      - content: Consent Management with preference tracking
-        isCorrect: false
-        explanation: Consent Management tracks consent status and documents what individuals have consented to. It doesn't detect data overexposure. Use Privacy Risk Management data overexposure policies for that purpose.
   - content: What regulatory template in Microsoft Purview Compliance Manager helps organizations assess AI management system requirements?
     choices:
       - content: ISO/IEC 42001:2023 for AI management systems

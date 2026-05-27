@@ -2,7 +2,7 @@
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=0246328c-ac48-41ce-8f0e-f9762a14fc03]
 
-> [!NOTE]
+> [!TIP]
 > See the **Text and images** tab for more details!
 
 ::: zone-end
@@ -69,13 +69,13 @@ The agent can now call *recent_snowfall* dynamically when it determines that the
 
 ## Azure Functions
 
-Azure Functions provide serverless computing capabilities for real-time processing. This integration is ideal for event-driven workflows, enabling agents to respond to triggers such as HTTP requests or queue messages.
+Azure Functions provides serverless computing capabilities for real-time processing. This integration is ideal for event-driven workflows, enabling agents to respond to triggers such as HTTP requests or queue messages.
 
 ### Example: Using Azure Functions with a queue trigger
 
 First, develop and deploy your Azure Function. In this example, imagine we have a function in our Azure subscription to fetch the snowfall for a given location.
 
-When your Azure Function is in place, integrate add it to the agent definition as an Azure Function tool:
+When your Azure Function is in place, add it to the agent definition as an Azure Function tool:
 
   ```python
   tool = AzureFunctionTool(
@@ -124,7 +124,7 @@ OpenAPI defined tools allow agents to interact with external APIs using standard
 
 ### Example: Using an OpenAPI specification
 
-First, create a JSON file ( in this example, called *weather_openapi.json*) describing the API.
+First, create a JSON file (in this example, called *weather_openapi.json*) describing the API.
 
   ```json
   {
@@ -191,7 +191,7 @@ First, create a JSON file ( in this example, called *weather_openapi.json*) desc
   }
   ```
 
-Then, register the OpenAPI tool in the agent defintion:
+Then, register the OpenAPI tool in the agent definition:
 
   ```python
   from azure.ai.projects.models import OpenApiTool, OpenApiAnonymousAuthDetails
@@ -226,4 +226,3 @@ The agent can now use the OpenAPI tool to fetch weather data dynamically.
 By using one of the available custom tool options (or any combination of them), you can create powerful, flexible, and intelligent agents with Foundry Agent Service. These integrations enable seamless interaction with external systems, real-time processing, and scalable workflows, making it easier to build custom solutions tailored to your needs.
 
 ::: zone-end
-

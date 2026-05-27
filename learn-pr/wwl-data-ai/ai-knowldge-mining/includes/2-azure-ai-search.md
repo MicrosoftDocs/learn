@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9170d64f-9c07-42e9-88b3-9e25795a0631]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 Azure AI Search provides a cloud-based solution for indexing and querying a wide range of data sources, and creating comprehensive and high-scale search solutions. It provides the infrastructure and tools to create search solutions that extract data from structured, semi-structured, and non-structured documents and other data sources.
 
 With Azure AI Search, you can:
@@ -17,3 +29,5 @@ Azure AI Search has many applications, including:
 - Creating *knowledge mining* solutions in which the indexing process is used to infer insights and extract granular data assets from documents to support data analytics.
 
 In this module, we'll focus on Azure AI Search in knowledge mining scenarios.
+
+::: zone-end

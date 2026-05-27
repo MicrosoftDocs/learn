@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.dpu.microsoft-productivity-accreditation-2026
+title: Microsoft Productivity Accreditation 2026
+metadata:
+  title: Microsoft Productivity Accreditation 2026
+  description: "This learning path introduces Microsoft productivity solutions designed to support everyday work across personal and business scenarios. Learners explore how Microsoft Office Home 2024 and Office Home & Business 2024 provide core desktop applications through a one-time purchase model, including when each option is the right fit based on usage needs, features, and other considerations. The learning path also introduces Microsoft 365 Copilot workflows, demonstrating how AI can be used alongside familiar tools to streamline tasks such as summarizing content, analyzing data, and improving communication across apps. By completing this learning path, learners will be able to evaluate different productivity solutions, understand how they support common workflows, and apply AI-powered capabilities to work more effectively in everyday tasks."
+  ms.date: 05/21/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: learning-path
+summary: >
+  Explore how Microsoft Office and Microsoft 365 Copilot can support everyday productivity. Learn how to choose the right Office solution and apply AI-powered workflows to streamline tasks and work more efficiently. 
+prerequisites: None
+iconUrl: /training/achievements/microsoft-productivity-accreditation-2026.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - business-owner
+  - business-user
+  - higher-ed-educator
+  - k-12-educator
+  - parent-guardian
+  - school-leader
+  - student
+  - technology-manager
+products:
+  - office
+modules:
+  - learn.dpu.copilot-office-applications
+  - learn.dpu.office-home-2024
+  - learn.dpu.office-home-business-2024
+  - learn.dpu.copilot-productivity-workflows
+trophy:
+  uid: learn.dpu.microsoft-productivity-accreditation-2026.trophy

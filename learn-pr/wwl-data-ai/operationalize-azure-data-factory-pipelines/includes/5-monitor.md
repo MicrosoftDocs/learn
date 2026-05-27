@@ -1,72 +1,73 @@
 
 
-Once you've created and published a pipeline in Azure Data Factory, you can associate it with a trigger or manually kick off an on-demand run. You can monitor all of your pipeline runs natively in the Azure Data Factory user experience. To open the monitoring experience, select the **Monitor & Manage** tile in the data factory blade of the Azure portal. If you're already in the Azure Data Factory UX, click on the **Monitor** icon on the left sidebar.
+Once you've created and published a pipeline in Azure Data Factory, you can associate it with a trigger or manually kick off an on-demand run. You can monitor all of your pipeline runs natively in the Azure Data Factory user experience. To open the monitoring experience, select the **Monitor & Manage** tile in the data factory blade of the Azure portal. If you're already in the Azure Data Factory UX, select the **Monitor** icon on the left sidebar.
 
 ## Monitor pipeline runs
 
 The default monitoring view is list of triggered pipeline runs in the selected time period. You can change the time range and filter by status, pipeline name, or annotation. Hover over the specific pipeline run to get run-specific actions such as rerun and the consumption report.
 
-![List view for monitoring pipeline runs](../media/pipeline-runs.png)
+![Screenshot of the pipeline runs list view in the Azure Data Factory monitoring experience.](../media/pipeline-runs.png)
 
 The pipeline run grid contains the following columns:
 
-| **Column name** | **Description** |
-| --- | --- |
-| Pipeline Name | Name of the pipeline |
-| Run Start | Start date and time for the pipeline run (MM/DD/YYYY, HH:MM:SS AM/PM) |
-| Run End | End date and time for the pipeline run (MM/DD/YYYY, HH:MM:SS AM/PM) |
-| Duration | Run duration (HH:MM:SS) |
-| Triggered By | The name of the trigger that started the pipeline |
-| Status | **Failed**, **Succeeded**, **In Progress**, **Canceled**, or **Queued** |
-| Annotations | Filterable tags associated with a pipeline  |
-| Parameters | Parameters for the pipeline run (name/value pairs) |
-| Error | If the pipeline failed, the run error |
-| Run ID | ID of the pipeline run |
+| **Column name** | **Description**                                                          |
+| --------------- | ------------------------------------------------------------------------ |
+| Pipeline Name   | Name of the pipeline                                                     |
+| Run Start       | Start date and time for the pipeline run (MM/DD/YYYY, HH:MM:SS AM/PM)    |
+| Run End         | End date and time for the pipeline run (MM/DD/YYYY, HH:MM:SS AM/PM)      |
+| Duration        | Run duration (HH:MM:SS)                                                  |
+| Triggered By    | The name of the trigger that started the pipeline                        |
+| Status          | **Failed**, **Succeeded**, **In Progress**, **Canceled**, or **Queued**  |
+| Annotations     | Filterable tags associated with a pipeline                               |
+| Parameters      | Parameters for the pipeline run (name/value pairs)                       |
+| Error           | If the pipeline failed, the run error                                    |
+| Run ID          | ID of the pipeline run                                                   |
+| Run             | Whether this is the **Original** run, a **Rerun**, or **Rerun (Latest)** |
 
 You need to manually select the **Refresh** button to refresh the list of pipeline and activity runs. Autorefresh is currently not supported.
 
-![Refresh button](../media/refresh.png)
+![Refresh button in the pipeline monitoring view.](../media/refresh.png)
 
 To view the results of a debug run, select the **Debug** tab.
 
-![Select the View active debug runs icon](../media/view-debug-runs.png)
+![Screenshot of the Debug tab for viewing active debug runs in the monitoring experience.](../media/view-debug-runs.png)
 
 ## Monitor activity runs
 
-To get a detailed view of the individual activity runs of a specific pipeline run, click on the pipeline name.
+To get a detailed view of the individual activity runs of a specific pipeline run, select the pipeline name.
 
-![View activity runs](../media/view-activity-runs.png)
+![Activity runs list for a selected pipeline run.](../media/view-activity-runs.png)
 
 The list view shows activity runs that correspond to each pipeline run. Hover over the specific activity run to get run-specific information such as the JSON input, JSON output, and detailed activity-specific monitoring experiences. Activities such as data flow, copy, and Azure Databricks have a dedicated view that can be seen by clicking on the eyeglasses icon.
 
-![View the activity runs in the monitoring tool](../media/activity-runs.png)
+![Screenshot of the activity runs grid showing run details including status and duration.](../media/activity-runs.png)
 
-| **Column name** | **Description** |
-| --- | --- |
-| Activity Name | Name of the activity inside the pipeline |
-| Activity Type | Type of the activity, such as **Copy**, **ExecuteDataFlow**, or **AzureMLExecutePipeline** |
-| Actions | Icons that allow you to see JSON input information, JSON output information, or detailed activity-specific monitoring experiences | 
-| Run Start | Start date and time for the activity run (MM/DD/YYYY, HH:MM:SS AM/PM) |
-| Duration | Run duration (HH:MM:SS) |
-| Status | **Failed**, **Succeeded**, **In Progress**, or **Canceled** |
-| Integration Runtime | Which Integration Runtime the activity was run on |
-| User Properties | User-defined properties of the activity |
-| Error | If the activity failed, the run error |
-| Run ID | ID of the activity run |
+| **Column name**     | **Description**                                                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Activity Name       | Name of the activity inside the pipeline                                                                                          |
+| Activity Type       | Type of the activity, such as **Copy**, **ExecuteDataFlow**, or **AzureMLExecutePipeline**                                        |
+| Actions             | Icons that allow you to see JSON input information, JSON output information, or detailed activity-specific monitoring experiences |
+| Run Start           | Start date and time for the activity run (MM/DD/YYYY, HH:MM:SS AM/PM)                                                             |
+| Duration            | Run duration (HH:MM:SS)                                                                                                           |
+| Status              | **Failed**, **Succeeded**, **In Progress**, or **Canceled**                                                                       |
+| Integration Runtime | Which Integration Runtime the activity was run on                                                                                 |
+| User Properties     | User-defined properties of the activity                                                                                           |
+| Error               | If the activity failed, the run error                                                                                             |
+| Run ID              | ID of the activity run                                                                                                            |
 
 If an activity failed, you can see the detailed error message by clicking on the icon in the error column. 
 
-![Viewing activity run errors](../media/activity-run-error.png)
+![Screenshot of an activity run with the detailed error message displayed.](../media/activity-run-error.png)
 
 ## Gantt view
 
-A Gantt chart is a view that allows you to see the run history over a time range. By switching to a Gantt view, you will see all pipeline runs grouped by name displayed as bars relative to how long the run took. You can also group by annotations/tags that you've create on your pipeline. The Gantt view is also available at the activity run level.
+A Gantt chart is a view that allows you to see the run history over a time range. By switching to a Gantt view, you'll see all pipeline runs grouped by name displayed as bars relative to how long the run took. You can also group by annotations/tags that you've create on your pipeline. The Gantt view is also available at the activity run level.
 
-![Example of a Gantt chart](../media/select-gantt.png)
+![Screenshot of the Gantt chart view showing pipeline runs grouped by name as horizontal bars.](../media/select-gantt.png)
 
 The length of the bar informs the duration of the pipeline. You can also select the bar to see more details.
 
-![Gantt chart duration](../media/view-gantt-run.png)
+![Screenshot of a selected bar in the Gantt chart showing pipeline run duration details.](../media/view-gantt-run.png)
 
 ## Monitor data flow debug sessions
 
@@ -74,13 +75,13 @@ Mapping data flows allow you to build code-free data transformation logic that r
 
 You can monitor active data flow debug sessions across a factory in the **Monitor** experience.
 
-![View data flow debug sessions](../media/view-dataflow-debug-sessions.png)
+![Screenshot of the active data flow debug sessions view in the monitoring experience.](../media/view-dataflow-debug-sessions.png)
 
 ## Monitoring dashboards
 
 To view a high-level visual display of your pipeline, activity, and trigger runs, go to the **Dashboards** pane. Here you can see the number of successes and failures over a specified time period.
 
-![reading the monitor dashboard](../media/monitor-dashboard.png)
+![Screenshot of the monitor dashboard showing pipeline, activity, and trigger run statistics.](../media/monitor-dashboard.png)
 
 ## Monitor using Azure Monitor
 
@@ -105,12 +106,14 @@ Create or add diagnostic settings for your data factory.
 1. Select the data factory for which you want to set a diagnostic setting.
 
 1. If no settings exist on the selected data factory, you're prompted to create a setting. Select **Turn on diagnostics**.
-  > [!div class="mx-imgBorder"]  
-  > ![Create a diagnostic setting if no settings exist](../media/monitor-oms-image-1.png)
 
-   If there are existing settings on the data factory, you see a list of settings already configured on the data factory. Select **Add diagnostic setting**.
-  > [!div class="mx-imgBorder"]  
-  > ![Add a diagnostic setting if settings exist](../media/add-diagnostic-setting.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the prompt to enable diagnostics when no diagnostic settings exist.](../media/monitor-oms-image-1.png)
+
+    If there are existing settings on the data factory, you see a list of settings already configured on the data factory. Select **Add diagnostic setting**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the diagnostic settings list with the Add diagnostic setting option.](../media/add-diagnostic-setting.png)
 
 1. Give your setting a name, select **Send to Log Analytics**, and then select a workspace from **Log Analytics Workspace**.
 
@@ -120,6 +123,11 @@ Create or add diagnostic settings for your data factory.
       - _ADFActivityRun_
       - _ADFPipelineRun_
       - _ADFTriggerRun_
+      - _ADFActivityRun_
+      - _ADFPipelineRun_
+      - _ADFTriggerRun_
+      - _ADFSandboxActivityRun_ (debug/sandbox activity runs)
+      - _ADFSandboxPipelineRun_ (debug/sandbox pipeline runs)
       - _ADFSSISIntegrationRuntimeLogs_
       - _ADFSSISPackageEventMessageContext_
       - _ADFSSISPackageEventMessages_
@@ -129,13 +137,49 @@ Create or add diagnostic settings for your data factory.
 
       You can select various logs relevant to your workloads to send to Log Analytics tables. For example, if you don't use SQL Server Integration Services (SSIS) at all, you need not select any SSIS logs. If you want to log SSIS Integration Runtime (IR) start/stop/maintenance operations, you can select SSIS IR logs. If you invoke SSIS package executions via T-SQL on SQL Server Management Studio (SSMS), SQL Server Agent, or other designated tools, you can select SSIS package logs. If you invoke SSIS package executions via Execute SSIS Package activities in ADF pipelines, you can select all logs.
 
-    * If you select _AllMetrics_, various Azure Data Factory metrics will be made available for you to monitor or raise alerts on, including the metrics for Azure Data Factory activity, pipeline, and trigger runs, as well as for SSIS IR operations and SSIS package executions.
-  > [!div class="mx-imgBorder"]  
-  > ![Name your settings and select a log-analytics workspace](../media/monitor-oms-image-2.png)
+    * If you select _AllMetrics_, various Azure Data Factory metrics are made available for you to monitor or raise alerts on, including the metrics for Azure Data Factory activity, pipeline, and trigger runs, as well as for SSIS IR operations and SSIS package executions.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the diagnostic setting configuration with the Send to Log Analytics option selected.](../media/monitor-oms-image-2.png)
 
     > [!NOTE]
-    > Because an Azure log table can't have more than 500 columns, Select _Resource-Specific mode_.
+    > Because an Azure log table can't have more than 500 columns, select _Resource-Specific mode_.
 
 1. Select **Save**.
 
 After a few moments, the new setting appears in your list of settings for this data factory. Diagnostic logs are streamed to that workspace as soon as new event data is generated. Up to 15 minutes might elapse between when an event is emitted and when it appears in Log Analytics.
+
+## Sample Log Analytics queries
+
+Once diagnostic logs flow into Log Analytics, you can use Kusto Query Language (KQL) to analyze your pipeline data. Select **Logs** under **Monitoring** in the left navigation of your Data Factory page in the Azure portal to open the query editor. The following example queries are a useful starting point.
+
+**Pipeline availability** — shows the percentage of successful pipeline runs over time:
+
+```kusto
+ADFPipelineRun
+| where Status != 'InProgress' and Status != 'Queued'
+| where FailureType != 'UserError'
+| summarize availability = 100.00 - (100.00 * countif(Status != 'Succeeded') / count()) by bin(TimeGenerated, 1h), _ResourceId
+| order by TimeGenerated asc
+| render timechart
+```
+
+**Top 5 activity failures** — returns the five activities failing most often due to system errors in the last 24 hours:
+
+```kusto
+ADFActivityRun
+| where TimeGenerated >= ago(24h)
+| where Status != 'InProgress' and Status != 'Queued'
+| where FailureType != 'UserError'
+| summarize failureCount = countif(Status != 'Succeeded') by bin(TimeGenerated, 1h), ActivityName
+| top 5 by failureCount desc nulls last
+| order by TimeGenerated asc
+| render timechart
+```
+
+**Latest pipeline run status** — shows the most recent status for each pipeline run:
+
+```kusto
+ADFPipelineRun
+| summarize argmax(TimeGenerated, *) by RunId, Status, _ResourceId
+```

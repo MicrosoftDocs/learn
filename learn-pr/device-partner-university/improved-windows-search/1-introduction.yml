@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dpu.improved-windows-search.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is part of the "Discover faster insights with Improved Windows Search" module.
+  ms.date: 05/19/2026
+  author: Stephanie-Rosenzweig
+  ms.author: v-stephanier
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-generative-ai-center-excellence.oversight-generative-ai-deployment-operations-governance
-title: Oversight of AI deployment, operations, and governance.
+title: Oversight of AI deployment, operations, and governance
 metadata:
-  title: Oversight of AI deployment, operations, and governance.
+  title: Oversight of AI Deployment, Operations, and Governance
   description: Understanding the AI CoE's role in oversight of AI deployment, operations, and governance.
-  ms.date: 04/05/2025
+  ms.date: 05/22/2026
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit

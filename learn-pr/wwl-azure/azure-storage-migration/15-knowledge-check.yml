@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.storagemigration.knowledge-check
+title: Module assessment
+metadata:
+  title: Module Assessment
+  description: "Knowledge check"
+  ms.date: 05/08/2026
+  author: hborns
+  ms.author: hannoborns
+  ms.topic: unit
+  module_assessment: true
+  ai_generated_module_assessment: false
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: What should primarily drive target service selection for each bucket of data?
+    choices:
+    - content: The type of source storage system
+      isCorrect: false
+      explanation: The source system type affects migration tooling, not the target service choice.
+    - content: The requirements of the going-forward use case
+      isCorrect: true
+      explanation: Correct. Target service selection should be based on future access patterns, protocols, and performance needs.
+    - content: The total volume of data to migrate
+      isCorrect: false
+      explanation: Data volume affects migration planning and duration, but the target service depends on workload requirements.
+  - content: When might an offline migration with Azure Data Box be preferable even when network bandwidth is available?
+    choices:
+    - content: When the source system uses the NFS protocol
+      isCorrect: false
+      explanation: The source protocol does not determine whether online or offline migration is more suitable.
+    - content: When the data volume is less than 1 TB
+      isCorrect: false
+      explanation: Small datasets are typically faster and cheaper to transfer online.
+    - content: When contract terms or bandwidth costs make sustained online transfer impractical
+      isCorrect: true
+      explanation: Correct. Even if bandwidth is technically available, contract limitations or cost can make offline migration more attractive.
+  - content: Why should you establish a formal validation sign-off gate before proceeding to cutover?
+    choices:
+    - content: To generate a billing report for the migration project
+      isCorrect: false
+      explanation: Sign-off is about confirming data quality, not billing.
+    - content: To ensure all stakeholders confirm the migration meets their requirements before the irreversible cutover step
+      isCorrect: true
+      explanation: Correct. Sign-off provides a documented decision point and audit trail.
+    - content: To trigger automatic decommission of the source storage
+      isCorrect: false
+      explanation: Source decommission is a separate step that occurs after the retention period.
+  - content: What is the correct first step when executing a storage cutover?
+    choices:
+    - content: Switch DNS records to point to the target storage
+      isCorrect: false
+      explanation: DNS changes come after the final sync. Switching too early risks data inconsistency.
+    - content: Decommission the source storage system
+      isCorrect: false
+      explanation: The source must remain available during cutover as a rollback option.
+    - content: Stop or quiesce applications writing to the source storage, then run a final delta sync
+      isCorrect: true
+      explanation: Correct. Quiescing writes ensures no further changes occur before the final synchronization.

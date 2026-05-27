@@ -25,7 +25,7 @@ prerequisites: |
   * Fundamental knowledge of the T-SQL language
   * Basic knowledge of Azure concepts, including subscriptions, resource groups, Infrastructure-as-a-Service and Platform-as-a-Service
   * Understanding of hybrid cloud architectures and their benefits
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/sql-server-2025-module.svg
 levels:
 - beginner
 roles:

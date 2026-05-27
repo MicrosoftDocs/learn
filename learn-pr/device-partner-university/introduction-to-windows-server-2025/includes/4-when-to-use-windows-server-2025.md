@@ -25,17 +25,8 @@ Windows Server 2025 is suitable for environments that require:
   - Supports dynamic network configuration via software-defined networking (SDN).
 
 - **Support for legacy and modern workloads**
-  - Allows upgrades from older Windows Server versions (e.g., Server 2012 R2).
+  - Allows upgrades from older Windows Server versions (for example, Server 2012 R2).
   - Maintains compatibility with both traditional applications and modern services.
-
-## When not to use Windows Server 2025
-
-Alternative solutions may be more appropriate if:
-
-- The environment requires only basic file sharing or simple networking capabilities.
-- The organization operates with minimal IT infrastructure, such as in small business settings.
-- A fully cloud-native solution is preferred.
-- A Linux-based operating system is required.
 
 ## Comparing Windows Server 2025 and Windows Server 2022
 
@@ -52,6 +43,6 @@ Use this chart to determine which version of Windows Server is right for your or
 | **Storage performance**        | Offers up to 70% improvement in NVMe performance | Provides reliable NVMe support                   |
 | **Hyper-V capabilities**       | Supports up to 248 virtual processors and 240 TB RAM | Supports up to 64 virtual processors             |
 | **Management tools**          | Includes Windows Terminal and WinGet             | Includes Windows Admin Center and PowerShell     |
-| **Legacy compatibility**       | May require modern hardware (e.g., TPM 2.0, Secure Boot) | Better suited for older hardware and applications |
-| **Licensing simplicity**       | May require Azure Arc for access to advanced features | Uses conventional licensing model                |
+| **Legacy compatibility**       | Might require modern hardware (for example, TPM 2.0, Secure Boot) | Better suited for older hardware and applications |
+| **Licensing simplicity**       | Might require Azure Arc for access to advanced features | Uses conventional licensing model                |
 | **Use case fit**               | Optimized for hybrid/cloud environments, performance, and security | Suitable for stable, legacy, or cost-sensitive deployments |

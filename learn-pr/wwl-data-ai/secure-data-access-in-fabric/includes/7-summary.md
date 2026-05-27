@@ -1,11 +1,8 @@
-In this module, you learned how to use the access control features available across various Fabric engines to secure your data and provide your team with the necessary access within Fabric to perform their job duties. You explored Fabric’s multi-layer security model and how to use it to manage data access. 
+Securing data in Microsoft Fabric starts with choosing the right level of access for each user. In this module, you learned how Fabric's layered security model works — from broad workspace roles down to granular table and folder controls — and when to use each layer.
 
-The main takeaways from this module include understanding how to configure security for an entire workspace, and for individual Fabric data items, and how to apply granular permissions.
+Use **workspace roles** when users need access to all items in a workspace. Use **item permissions** when they need access to a specific item, like a single lakehouse. When users need granular access within an item, use **T-SQL permissions** to restrict SQL endpoint access, or **OneLake security roles** to restrict Spark and OneLake API access.
 
-For more reading, you can refer to the following URLs:
+To learn more, see:
 
-- [Microsoft Fabric security white paper](/fabric/security/white-paper-landing-page?azure-portal=true)
 - [Microsoft Fabric permission model](/fabric/security/permission-model?azure-portal=true)
-- [Build common data architectures with OneLake in Microsoft Fabric](https://blog.fabric.microsoft.com/en-us/blog/building-common-data-architectures-with-onelake-in-microsoft-fabric?azure-portal=true)
-- [How to secure data for common Fabric data architectures](/fabric/onelake/security/how-to-common-data-architectures?azure-portal=true)
-- [End-to-end security scenario](/fabric/security/security-scenario?azure-portal=true)
+- [Get started with OneLake security](/fabric/onelake/security/get-started-onelake-security?azure-portal=true)

@@ -6,23 +6,34 @@ Currently supported sources are the cloud detection engine of Defender for Endpo
 
 **Cloud detection engine**
 
-The Defender for Endpoint's cloud detection engine regularly scans collected data and tries to match the indicators you set. When there's a match, action will be taken according to the IoC settings you specified.
+The Defender for Endpoint's cloud detection engine regularly scans collected data and tries to match the indicators you set. When there's a match, action is taken according to the IoC settings you specified.
 
 **Endpoint prevention engine**
 
-The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Microsoft Defender AV will prevent file executions (block and remediate), and a corresponding alert will be raised. Otherwise, if the Action is set to "Allow", Microsoft Defender AV won't detect nor block the file from being run.
+The same list of indicators is honored by the prevention agent. Meaning, if Microsoft Defender Antivirus is the primary AV configured, the matched indicators are treated according to the settings. For example, if the action is "Block execution" or "Block and remediate," Microsoft Defender Antivirus prevents file executions and a corresponding alert will be raised. Otherwise, if the action is set to "Allow," Microsoft Defender Antivirus won't detect nor block the file from being run.
 
 **Automated investigation and remediation engine**
 
-The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
+The automated investigation and remediation behave the same. If an indicator is set to "Allow," Automated investigation and remediation ignore a "bad" verdict for it. If set to "Block and remediate," Automated investigation and remediation treat it as "bad".
 
-The current supported actions are:
+The current supported actions vary by indicator type:
 
+**File indicators:**
 - Allow
+- Audit (generates an alert without blocking)
+- Warn (presents a warning to the user with the option to bypass)
+- Block execution (prevents the file from running)
+- Block and remediate (blocks and removes the file)
 
-- Alert only
+**IP address, URL, and domain indicators:**
+- Allow
+- Audit
+- Warn
+- Block
 
-- Alert and block
+**Certificate indicators:**
+- Allow
+- Block
 
 You can create an indicator for:
 
@@ -46,7 +57,7 @@ To manage indicators:
 
 ## Create indicators for files
 
-You can prevent further propagation of attacks in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
+You can prevent further propagation of attacks in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation prevents it from being read, written, or executed on machines in your organization.
 
 There are two ways you can create indicators for files:
 
@@ -62,14 +73,14 @@ Before you create indicators for files, you should understand the following prer
 
 - The Antimalware client version must be 4.18.1901.x or later.
 
-- It's supported on machines with Windows 10, version 1703 or later, Windows server 2016 and 2019.
+- It's supported on machines running Windows 10 (version 1703 or later), Windows 11, Windows Server 2016, Windows Server 2019, or Windows Server 2022.
 
 - To start blocking files, you first need to turn the Block or allow feature on in Settings.
 
 - This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including .exe and .dll files. The coverage will be extended over time.
 
 > [!IMPORTANT]
-> The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
+> The allow or block function can't be done on files if the file's classification exists on the device's cache prior to the allow or block action.
 > Trusted signed files will be treated differently. Defender for Endpoint is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
 > Typically, file blocks are enforced within a couple of minutes but can take upwards of 30 minutes.
 
@@ -79,11 +90,11 @@ One of the options when taking response actions on a file is adding an indicator
 
 ## Create indicators for IPs and URLs/domains
 
-Defender for Endpoint can block what Microsoft deems as malicious IPs/URLs through Windows Defender SmartScreen for Microsoft browsers and through Network Protection for non-Microsoft browsers or calls made outside of a browser.
+Defender for Endpoint can block what Microsoft deems as malicious IPs/URLs through Microsoft Defender SmartScreen for Microsoft browsers and through Network Protection for non-Microsoft browsers or calls made outside of a browser.
 
 The threat intelligence data set for this has been managed by Microsoft.
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.  Classless Inter-Domain Routing (CIDR) notation for IP addresses isn't supported.
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others. Classless Inter-Domain Routing (CIDR) notation for IP addresses isn't supported.
 
 ### Prerequisites
 
@@ -95,7 +106,7 @@ You should understand the following prerequisites prior to creating indicators f
 
 - Supported on machines on Windows 10, version 1709 or later.
 
-- Ensure that *Custom network indicators* are enabled in Microsoft Defender Security Center > Settings > Advanced features. For more information, see Advanced features.
+- Ensure that *Custom network indicators* are enabled in the Microsoft Defender portal. Select **Settings > Endpoints > Advanced features** and turn on **Custom network indicators**.
 
 Only external IPs can be added to the indicator list. Indicators can't be created for internal IPs. For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge uses Network Protection to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS). For all other processes, web protection scenarios use Network Protection for inspection and enforcement:
 
@@ -135,7 +146,7 @@ You can create indicators for certificates. Some common use cases include:
 
 - Scenarios when you need to deploy blocking technologies, such as attack surface reduction rules and controlled folder access but need to allow behaviors from signed applications by adding the certificate in the allowlist.
 
-- Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Windows Defender AV will prevent file executions (block and remediate), and the Automated Investigation and Remediation will behave the same.
+- Blocking the use of a specific signed application across your organization. By creating an indicator to block the certificate of the application, Windows Defender AV prevents file executions (block and remediate), and the Automated Investigation and Remediation will behave the same.
 
 ### Prerequisites
 
@@ -151,7 +162,7 @@ You should understand the following requirements prior to creating indicators fo
 
 - This feature currently supports entering .CER or .PEM file extensions.
 
-A valid leaf certificate is a signing certificate with a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').  The children or parents of the allow/block certificate IOCs are not included in the allow/block IoC functionality; only leaf certificates are supported.  Microsoft signed certificates cannot be blocked.
+A valid leaf certificate is a signing certificate with a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').  The children or parents of the allow/block certificate IOCs aren't included in the allow/block IoC functionality; only leaf certificates are supported. Microsoft signed certificates can't be blocked.
 
 It can take up to 3 hours to create and remove a certificate IoC.
 
@@ -193,14 +204,14 @@ The following table shows the supported parameters.
 
 | Parameter| Type| Description|
 | :--- | :--- | :--- |
-| indicatorType| Enum| Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". Required|
+| indicatorType| Enum| Type of the indicator. Possible values are: "FileSha1," "FileSha256," "IpAddress," "DomainName" and "Url". Required|
 | indicatorValue| String| Identity of the Indicator entity. Required|
-| action| Enum| The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". Required|
+| action| Enum| The action that is taken if the indicator will be discovered in the organization. Possible values are: "Alert," "AlertAndBlock," and "Allowed". Required|
 | title| String| Indicator alert title. Required|
 | description| String| Description of the indicator. Required|
 | expirationTime| DateTimeOffset| The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. Optional|
-| severity| Enum| The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". Optional|
+| severity| Enum| The severity of the indicator. Possible values are: "Informational," "Low," "Medium" and "High". Optional|
 | recommendedActions| String| TI indicator alert recommended actions. Optional|
 | rbacGroupNames| String| Comma-separated list of RBAC group names the indicator would be applied to. Optional|
 | category| String| Category of the alert. Examples include: Execution and credential access. Optional|
-| MITRE techniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It is recommended to add a value in category when a MITRE technique.|
+| MITRE techniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It's recommended to add a value in category when a MITRE technique.|

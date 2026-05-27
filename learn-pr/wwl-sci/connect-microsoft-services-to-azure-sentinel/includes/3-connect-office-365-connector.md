@@ -1,4 +1,4 @@
-The Microsoft 365 connector provides insight into ongoing user activities. You'll collect data like file downloads, access requests sent, changes to group events, set-mailbox, and details of the user who performed the actions.​
+The Microsoft 365 connector provides insight into ongoing user activities. You collect data like file downloads, access requests sent, changes to group events, set-mailbox, and details of the user who performed the actions.​
 
 ## Install the solution
 
@@ -26,5 +26,5 @@ After the solution is installed, connect the data connector.
 
 1. Wait until validation is complete and the button changes to **Disconnect**.
 
-:::image type="content" source="../media/microsoft-365.png" alt-text="Screen shot of the Microsoft Defender XDR Connector page." lightbox="../media/microsoft-365.png":::
+:::image type="content" source="../media/microsoft-365.png" alt-text="Screenshot of the Microsoft 365 data connector page in Microsoft Sentinel, showing the Configuration section with Exchange, SharePoint, and Teams checkboxes." lightbox="../media/microsoft-365.png":::
 

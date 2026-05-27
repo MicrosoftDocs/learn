@@ -1,19 +1,22 @@
-SQL stands for *Structured Query Language*, and is used to communicate with a relational database. It's the standard language for relational database management systems. SQL statements are used to perform tasks such as update data in a database, or retrieve data from a database. Some common relational database management systems that use SQL include Microsoft SQL Server, MySQL, PostgreSQL, MariaDB, and Oracle. 
+SQL stands for *Structured Query Language*, and is used to communicate with a relational database. It's the standard language for relational database management systems. SQL statements are used to perform tasks such as update data in a database, or retrieve data from a database. Some common relational database management systems that use SQL include Microsoft SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL Server on Azure Virtual Machines, MySQL, PostgreSQL, and Oracle. 
 
 > [!NOTE]
-> SQL was originally standardized by the American National Standards Institute (ANSI) in 1986, and by the International Organization for Standardization (ISO) in 1987. Since then, the standard has been extended several times as relational database vendors have added new features to their systems. Additionally, most database vendors include their own proprietary extensions that are not part of the standard, which has resulted in a variety of dialects of SQL.
+> SQL was originally standardized by the American National Standards Institute (ANSI) in 1986, and by the International Organization for Standardization (ISO) in 1987. Since then, the standard has been extended several times as relational database vendors have added new features to their systems. Additionally, most database vendors include their own proprietary extensions that aren't part of the standard, which has resulted in a variety of dialects of SQL.
 
 You can use SQL statements such as **SELECT**, **INSERT**, **UPDATE**, **DELETE**, **CREATE**, and **DROP** to accomplish almost everything that you need to do with a database. Although these SQL statements are part of the SQL standard, many database management systems also have their own additional proprietary extensions to handle the specifics of that database management system. These extensions provide functionality not covered by the SQL standard, and include areas such as security management and programmability. For example, Microsoft SQL Server, and Azure database services that are based on the SQL Server database engine, use Transact-SQL. This implementation includes proprietary extensions for writing stored procedures and triggers (application code that can be stored in the database), and managing user accounts. PostgreSQL and MySQL also have their own versions of these features. 
 
 Some popular dialects of SQL include:
 
-- *Transact-SQL (T-SQL)*. This version of SQL is used by Microsoft SQL Server and Azure SQL services.
+- *Transact-SQL (T-SQL)*. This version of SQL is used by Microsoft SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines.
 
 - *pgSQL*. This is the dialect, with extensions implemented in PostgreSQL.
 
 - *PL/SQL*. This is the dialect used by Oracle. PL/SQL stands for Procedural Language/SQL.
 
 Users who plan to work specifically with a single database system should learn the intricacies of their preferred SQL dialect and platform.
+
+> [!NOTE]
+> Azure SQL Database includes AI features you can use to write and understand SQL queries using natural language.
 
 > [!NOTE]
 > The SQL code examples in this module are based on the Transact-SQL dialect, unless otherwise indicated. The syntax for other dialects is generally similar, but may vary in some details.
@@ -35,7 +38,7 @@ The most common DDL statements are:
 |Statement  | Description |
 |-|-|
 | `CREATE` | Create a new object in the database, such as a table or a view. |
-| `ALTER` |  Modify the structure of an object. For instance, altering a table to add a new column.  |
+| `ALTER` |  Modify the structure of an object. For instance, altering a table to add a new column. |
 | `DROP` | Remove an object from the database. |
 | `RENAME` | Rename an existing object. |
 
@@ -160,5 +163,6 @@ The **INSERT** statement takes a slightly different form. You specify a table an
 INSERT INTO Product(ID, Name, Price)
 VALUES (99, 'Drill', 4.99);
 ```
+
 > [!NOTE]
 > This topic describes some basic SQL statements and syntax in order to help you understand how SQL is used to work with objects in a database. If you want to learn more about querying data with SQL, review the [Get Started Querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal=true) learning path on Microsoft Learn.

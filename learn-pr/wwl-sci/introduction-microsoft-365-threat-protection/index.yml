@@ -2,19 +2,19 @@
 uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
   title: Introduction to Microsoft Defender XDR threat protection
-  description: "Introduction to Microsoft 365 threat protection"
-  ms.date: 04/28/2025
+  description: "Introduction to Microsoft Defender XDR threat protection"
+  ms.date: 05/22/2026
   author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: defender-xdr
+  ai-usage: ai-assisted
 title: Introduction to Microsoft Defender XDR threat protection
-summary: In this module, you'll learn how to use the Microsoft Defender XDR integrated threat protection suite.
+summary: In this module, you learn how to use the Microsoft Defender XDR integrated threat protection suite.
 abstract: |
-  In this module, you learned the role that Microsoft Defender XDR plays in a modern SOC.
-  You should now be able to:
-  - Understand Microsoft Defender XDR solutions by domain
-  - Understand the Microsoft Defender XDR role in a Modern SOC
+  By the end of this module, you're able to:
+  - Describe Microsoft Defender XDR solutions by domain
+  - Explain the Microsoft Defender XDR role in a Modern SOC
 prerequisites: |
   None
 iconUrl: /training/achievements/introduction-microsoft-365-threat-protection.svg

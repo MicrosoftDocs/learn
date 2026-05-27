@@ -1,3 +1,15 @@
+
+::: zone pivot="video"
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=626a69b0-9518-47e6-af31-3e0d69d899ef]
+
+> [!TIP]
+> See the **Text and images** tab for more details!
+
+::: zone-end
+
+::: zone pivot="text"
+
 In this module, you learned how to generate videos using Sora 2 in Microsoft Foundry.
 
 You explored how to:
@@ -10,6 +22,7 @@ You explored how to:
 
 With Sora 2, you can create realistic and imaginative video content from text prompts, transform images into videos, and make targeted adjustments to existing videos. The asynchronous API pattern—submit a job, poll for status, download the result—enables you to integrate video generation into your applications.
 
+::: zone-end
+
 > [!TIP]
 > For more information about video generation with Sora 2, see **[Video generation with Sora](/azure/ai-services/openai/concepts/video-generation)** in the Azure OpenAI documentation.
-
