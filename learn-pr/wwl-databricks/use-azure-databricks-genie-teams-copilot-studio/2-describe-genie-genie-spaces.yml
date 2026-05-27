@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-databricks-genie-teams-copilot-studio.describe-genie-genie-spaces
+title: Understand how Azure Databricks Genie and Genie Spaces work
+metadata:
+  title: Understand how Azure Databricks Genie and Genie Spaces work
+  description: "Understand what Azure Databricks Genie and Genie Spaces are, how they generate answers, and what makes a Genie Space different from the broader Genie interface."
+  ms.date: 05/26/2026
+  author: weslbo
+  ms.author: wedebols
+  ms.topic: unit
+  ai-usage: ai-generated
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-genie-genie-spaces.md)]
