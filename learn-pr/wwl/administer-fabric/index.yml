@@ -2,24 +2,22 @@
 uid: learn.wwl.administer-fabric
 metadata:
   title: Administer a Microsoft Fabric Environment
-  description: "Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to accommodate your organization's needs."
-  ms.date: 05/09/2025
-  author: wwlpublish
+  description: "Learn how to configure and manage a Microsoft Fabric environment, including tenant settings, domain setup, admin delegation, user licensing, and platform monitoring."
+  ms.date: 05/27/2026
+  author: theresai
   ms.author: theresai
   ms.topic: module
-  ms.custom:
-  - build-2023
   ms.service: fabric
-  ai-usage: ai-assisted
+  ai-usage: ai-generated
 title: Administer a Microsoft Fabric environment
-summary: Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to suit your organization's needs.
+summary: Learn how to configure and manage a Microsoft Fabric environment. Explore the admin hierarchy, configure tenant settings, delegate admin rights, manage user licenses, and monitor platform health.
 abstract: |
-  In this module, you learn how to:
-  -   Describe Fabric admin tasks
-  -   Navigate the admin center
-  -   Manage user access
-  -   Govern data in Fabric
-prerequisites: An understanding of the Microsoft Fabric platform and its capabilities and administrative tasks.
+  In this module, you'll:
+  - Describe the Fabric admin hierarchy and identify the right admin role for each task.
+  - Configure tenant settings, set up domains, and delegate admin rights.
+  - Manage user licenses and control how users access and share Fabric content.
+  - Monitor platform usage, manage capacity health, and apply governance controls.
+prerequisites: An understanding of the Microsoft Fabric platform, its core experiences, and basic workspace concepts.
 iconUrl: /training/achievements/administer-microsoft-fabric.svg
 levels:
 - intermediate
@@ -34,10 +32,10 @@ subjects:
 - data-engineering
 units:
 - learn.wwl.administer-fabric.introduction
-- learn.wwl.administer-fabric.fabric-architecture
-- learn.wwl.administer-fabric.admin-role-tools
-- learn.wwl.administer-fabric.manage-security
-- learn.wwl.administer-fabric.govern-fabric
+- learn.wwl.administer-fabric.fabric-admin-model
+- learn.wwl.administer-fabric.configure-tenant-settings
+- learn.wwl.administer-fabric.manage-user-access-licensing
+- learn.wwl.administer-fabric.monitor-govern
 - learn.wwl.administer-fabric.knowledge-check
 - learn.wwl.administer-fabric.summary
 badge:
