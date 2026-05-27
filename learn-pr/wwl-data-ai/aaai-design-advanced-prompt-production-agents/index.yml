@@ -2,7 +2,7 @@
 uid: learn.wwl.design-advanced-prompting-production-agents
 metadata:
   title: Design Advanced Prompting Strategies for Production AI Agents
-  description: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multi-turn reasoning architectures with dynamic context injection, build layered prompt injection defenses, design system prompt frameworks with autonomy-level control, design multi-intervention guardrail architectures covering all four attack surfaces, implement prompt versioning and optimization workflows, and design fine-tuning strategies and data preparation pipelines."
+  description: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multiturn reasoning architectures with dynamic context injection, build layered prompt injection defenses, design system prompt frameworks with autonomy-level control, design multi-intervention guardrail architectures covering all four attack surfaces, implement prompt versioning and optimization workflows, and design fine-tuning strategies and data preparation pipelines."
   ms.date: 05/26/2026
   author: chrishowd
   ms.author: cahowd
@@ -10,10 +10,10 @@ metadata:
   ms.service: microsoft-foundry
   ai-usage: ai-generated
 title: Design advanced prompting strategies for production AI agents
-summary: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multi-turn reasoning architectures with dynamic context injection, build layered prompt injection defenses for untrusted input environments, design system prompt frameworks for complex agent persona and constraint control, and implement prompt versioning and optimization workflows."
+summary: "Design advanced prompting strategies for production AI agents in Microsoft Foundry. Implement multiturn reasoning architectures with dynamic context injection, build layered prompt injection defenses for untrusted input environments, design system prompt frameworks for complex agent persona and constraint control, and implement prompt versioning and optimization workflows."
 abstract: |
   By the end of this module, you'll be able to:
-  - Design multi-turn prompt architectures with dynamic context injection for complex agent reasoning tasks
+  - Design multiturn prompt architectures with dynamic context injection for complex agent reasoning tasks
   - Implement layered prompt injection prevention strategies for agents processing untrusted content
   - Build system prompt frameworks that control agent persona, behavior boundaries, autonomy levels, and escalation behavior
   - Design multi-intervention guardrail architectures covering input, tool-call, tool-response, and output surfaces
@@ -39,7 +39,7 @@ subjects:
 - artificial-intelligence
 units:
 - learn.wwl.design-advanced-prompting-production-agents.introduction
-- learn.wwl.design-advanced-prompting-production-agents.design-multi-turn-reason-prompt-architectures
+- learn.wwl.design-advanced-prompting-production-agents.design-multiturn-reason-prompt-architectures
 - learn.wwl.design-advanced-prompting-production-agents.implement-prompt-injection-defenses
 - learn.wwl.design-advanced-prompting-production-agents.build-system-prompt-frameworks-agent-control
 - learn.wwl.design-advanced-prompting-production-agents.design-multi-intervention-guardrail-architectures

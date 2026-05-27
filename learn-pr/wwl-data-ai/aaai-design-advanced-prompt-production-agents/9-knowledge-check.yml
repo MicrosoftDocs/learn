@@ -34,7 +34,7 @@ quiz:
     - content: "Deploy to a five percent canary first to observe live safety metrics before full rollout."
       isCorrect: false
       explanation: "Incorrect. A known safety regression shouldn't be deployed even to a canary population in a clinical setting—five percent of live patient interactions with reduced safety controls isn't an acceptable test approach. Address the regression in evaluation before exposing any real users."
-  - content: "A new clinical guideline is published mid-session while a patient consultation is in progress. At which point in the multi-turn reasoning chain should the updated guideline be injected?"
+  - content: "A new clinical guideline is published mid-session while a patient consultation is in progress. At which point in the multiturn reasoning chain should the updated guideline be injected?"
     choices:
     - content: "Inject it immediately as a user message, regardless of which reasoning step is currently in progress."
       isCorrect: false

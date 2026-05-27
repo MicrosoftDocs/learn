@@ -84,7 +84,7 @@ Example: Your evaluation shows that variant B has 15% higher groundedness scores
 
 The diff analysis shows the causal relationship: the new citation instruction caused improved groundedness because the agent now provides explicit supporting evidence for interaction warnings. This attribution helps you understand which prompt engineering techniques work for which quality dimensions.
 
-Semantic diff analysis also identifies unintended consequences. Variant B has improved groundedness but slightly lower coherence on complex multi-drug cases. The diff shows the new citation instruction sometimes causes the agent to produce longer reasoning traces that include all possible interactions, even minor ones, which reduces the clarity of the core recommendation. This insight suggests a refinement: add a follow-up instruction to prioritize clinically significant interactions in the recommendation while documenting minor interactions in an appendix.
+Semantic diff analysis also identifies unintended consequences. Variant B has improved groundedness but slightly lower coherence on complex multidrug cases. The diff shows the new citation instruction sometimes causes the agent to produce longer reasoning traces that include all possible interactions, even minor ones, which reduces the clarity of the core recommendation. This insight suggests a refinement: add a follow-up instruction to prioritize clinically significant interactions in the recommendation while documenting minor interactions in an appendix.
 
 ## Maintain prompt optimization decision logs
 

@@ -25,7 +25,7 @@ Northwind Health's scenario hits four criteria: highly consistent clinical reaso
 
 - **Supervised fine-tuning (SFT)**—train on labeled input/output pairs to internalize format, vocabulary, and reasoning patterns. Best for task specialization with consistent input/output structure, such as Northwind Health's clinical reasoning scenario.
 - **Direct Preference Optimization (DPO)** (preview)—align the model with human-preferred responses using preference pairs (preferred versus rejected outputs), without requiring a separate reward model. Best for improving response quality, tone, and alignment when you have human reviewer feedback ranking outputs.
-- **Reinforcement Fine-Tuning (RFT)** (preview)—use reward signals from model graders to optimize complex reasoning behaviors across dynamic tasks where the solution space is large. Best for o-series models where the goal is iterative reasoning improvement, such as multi-step clinical decision workflows with verifiable correctness.
+- **Reinforcement Fine-Tuning (RFT)** (preview)—use reward signals from model graders to optimize complex reasoning behaviors across dynamic tasks where the solution space is large. Best for o-series models where the goal is iterative reasoning improvement, such as multistep clinical decision workflows with verifiable correctness.
 
 The data pipeline described in the following sections applies to SFT. DPO requires preference-pair format (two competing responses per input with a preference label), and RFT requires grader configuration rather than statically labeled examples.
 
@@ -38,7 +38,7 @@ Once you've decided to fine-tune, design the strategy before preparing data:
 **Fine-tuning objectives:** Define what the model should learn that it doesn't know from pre-training:
 - *Format internalization*—the model consistently produces a specific JSON schema without requiring lengthy output-format instructions in the system prompt.
 - *Domain vocabulary*—the model correctly uses clinical terminology, abbreviations, and reasoning conventions specific to your organization.
-- *Task-specific reasoning patterns*—the model applies a specific multi-step reasoning chain (extract → classify → assess → recommend) consistently without in-context chain-of-thought prompts.
+- *Task-specific reasoning patterns*—the model applies a specific multistep reasoning chain (extract → classify → assess → recommend) consistently without in-context chain-of-thought prompts.
 
 **Data volume thresholds:** Instruction fine-tuning typically requires 500-5,000 high-quality examples for format and style learning; 1,000-10,000+ for domain vocabulary; 5,000+ for reasoning-pattern internalization. Quality matters more than quantity—500 carefully reviewed examples outperform 5,000 noisy examples. Invest in data quality review before training.
 

@@ -1,6 +1,6 @@
-The Azure AI Inference SDK lets you build multi-turn reasoning chains where each completion call produces one verified reasoning layer, grounding every subsequent step in structured, validated output. You use this pattern in this unit to design production-grade reasoning architectures for clinical agents.
+The Azure AI Inference SDK lets you build multiturn reasoning chains where each completion call produces one verified reasoning layer, grounding every subsequent step in structured, validated output. You use this pattern in this unit to design production-grade reasoning architectures for clinical agents.
 
-When clinical agents analyze patient documents to generate care recommendations, a single reasoning step often produces incomplete or unverified conclusions. A patient uploads lab results showing elevated blood glucose. The agent needs to extract the numeric values, interpret them against clinical thresholds, cross-reference with the patient's medication history, assess risk factors, and synthesize a recommendation—each step building on verified facts from the previous layer. This requires structured multi-turn reasoning, not just asking the model to "think step by step" in one pass.
+When clinical agents analyze patient documents to generate care recommendations, a single reasoning step often produces incomplete or unverified conclusions. A patient uploads lab results showing elevated blood glucose. The agent needs to extract the numeric values, interpret them against clinical thresholds, cross-reference with the patient's medication history, assess risk factors, and synthesize a recommendation—each step building on verified facts from the previous layer. This requires structured multiturn reasoning, not just asking the model to "think step by step" in one pass.
 
 | Reasoning Pattern | When to Use | Turns Required |
 |------------------|-------------|----------------|
@@ -31,7 +31,7 @@ The XML-style tags create clear boundaries between reasoning and output. Parsing
 
 ## Control dynamic context injection timing
 
-In multi-turn clinical sessions, new information arrives mid-conversation. A patient's latest lab results come back. A clinical guideline updates. Another agent in the system identifies a medication interaction. This new context needs to be injected into the reasoning chain at the right point—not too early (before the context is relevant), not too late (after a conclusion has been drawn based on incomplete information).
+In multiturn clinical sessions, new information arrives mid-conversation. A patient's latest lab results come back. A clinical guideline updates. Another agent in the system identifies a medication interaction. This new context needs to be injected into the reasoning chain at the right point—not too early (before the context is relevant), not too late (after a conclusion has been drawn based on incomplete information).
 
 Design injection rules based on the agent's current reasoning phase. If the agent has completed factual extraction and started clinical interpretation, new lab results must be injected before the interpretation concludes. If interpretation is complete and the agent has moved to recommendation synthesis, inject the new context with explicit framing: "New information has arrived. Reassess your interpretation in light of this data: [lab results]."
 
@@ -47,7 +47,7 @@ Use the `response_format` parameter with a JSON schema that captures the reasoni
 
 The structured schema enforces reasoning completeness. If the agent attempts to provide a recommendation without completing the risk assessment field, the API returns a validation error. The agent must satisfy the schema constraints, which mirror your clinical safety requirements. Quality validation systems parse the JSON output and verify that each recommendation cites at least one extracted fact, each fact has a document source, and risk assessments cover all identified conditions.
 
-Here's a multi-turn reasoning pattern with structured output for Northwind Health's clinical agent:
+Here's a multiturn reasoning pattern with structured output for Northwind Health's clinical agent:
 
 ```python
 from azure.ai.inference import ChatCompletionsClient
@@ -146,7 +146,7 @@ recommendation_json = final_response.choices[0].message.content
 
 ## Allocate reasoning budget based on task complexity
 
-More reasoning turns improve output quality for complex tasks but increase latency and cost. Simple tasks—classifying a symptom report, extracting medication names from a discharge summary—don't require multi-turn reasoning. Complex tasks—differential diagnosis with rare conditions, multi-drug interaction analysis—justify deeper reasoning chains.
+More reasoning turns improve output quality for complex tasks but increase latency and cost. Simple tasks—classifying a symptom report, extracting medication names from a discharge summary—don't require multiturn reasoning. Complex tasks—differential diagnosis with rare conditions, multidrug interaction analysis—justify deeper reasoning chains.
 
 Design complexity signals that trigger different reasoning budgets. Count the number of clinical guidelines that apply to the case. Count the number of medications the patient takes. Count the number of abnormal lab values. These signals predict reasoning complexity before the agent begins processing.
 
@@ -157,7 +157,7 @@ Design complexity signals that trigger different reasoning budgets. Count the nu
 | Guidelines referenced | 6+ | 4 turns (comprehensive analysis) |
 | Medication interactions | 0 | 1 turn |
 | Medication interactions | 1-2 | 2 turns (verification) |
-| Medication interactions | 3+ | 3-4 turns (multi-way interaction check) |
+| Medication interactions | 3+ | 3-4 turns (multiway interaction check) |
 | Abnormal lab values | 1-2 | 2 turns (interpretation + context) |
 | Abnormal lab values | 3+ | 3-5 turns (pattern analysis + causality) |
 

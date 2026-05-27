@@ -10,7 +10,7 @@ The system prompt is your agent's constitution—it defines identity, behavioral
 | Escalation triggers | Defines when to refuse and escalate | Ensures safety valves activate appropriately |
 | Output format requirements | Defines structured response schema | Enables validation and audit trails |
 
-## Structure system prompts for multi-agent production systems
+## Structure system prompts for multiagent production systems
 
 Production system prompts aren't single paragraphs of instruction. They're structured documents with logical sections that serve different control purposes. Organize your system prompt into five core sections that map to agent control requirements.
 

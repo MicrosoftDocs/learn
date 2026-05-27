@@ -189,7 +189,7 @@ The quality evaluators used in A/B testing—groundedness, coherence, relevance�
 
 Three agentic evaluators are directly relevant to Northwind Health's clinical agent:
 
-**`IntentResolutionEvaluator`** measures whether the agent correctly identified and addressed what the user actually needed. A response can be coherent and grounded yet still answer the wrong question—particularly in multi-turn conversations where a patient's real concern surfaces gradually. Intent resolution catches cases where the agent produced a technically accurate response that missed the user's intent.
+**`IntentResolutionEvaluator`** measures whether the agent correctly identified and addressed what the user actually needed. A response can be coherent and grounded yet still answer the wrong question—particularly in multiturn conversations where a patient's real concern surfaces gradually. Intent resolution catches cases where the agent produced a technically accurate response that missed the user's intent.
 
 **`TaskAdherenceEvaluator`** measures whether the agent followed the rules and constraints defined in its system prompt—the same constraints you built in Unit 4. An agent might produce a well-grounded response while silently violating a constraint such as "always require clinician review for medication changes", and no groundedness or coherence metric will flag it. Task adherence is the evaluation counterpart to the system prompt frameworks you design.
 
