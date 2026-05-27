@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-task-decomposition-multi-agent-azure.optimize-decomposition-granularity
+title: Optimize decomposition granularity
+metadata:
+  title: Optimize Decomposition Granularity
+  description: "Optimize decomposition granularity."
+  ms.date: 05/26/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-optimize-decomposition-granularity.md)]
