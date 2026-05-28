@@ -1,3 +1,5 @@
+Not every clinical query needs to search every knowledge base. Azure AI Search supports separate indexes for different content types, and querying only the relevant ones reduces both computational cost and result noise. Intent-based routing automates this decision by classifying what the query is seeking before any search runs.
+
 Northwind Health maintains three specialized knowledge bases: a drug formulary with medication details and pricing, clinical practice guidelines from medical societies, and laboratory reference ranges with test interpretation guidance. When a clinician asks "What is the normal range for hemoglobin A1c in diabetic patients?" searching all three indexes wastes computational resources and risks surfacing less relevant content from the formulary or clinical guidelines. Intent-based routing directs each query to only the knowledge sources likely to contain the answer.
 
 | Query Example | Detected Intent | Routed To | Why Other Sources Skipped |
@@ -9,7 +11,7 @@ Northwind Health maintains three specialized knowledge bases: a drug formulary w
 
 ## Classify queries to determine knowledge source relevance
 
-Query classification identifies the clinical intent — what type of information the query is seeking — before executing retrieval. A lightweight classifier processes the query and outputs one or more categories that map to your knowledge sources. This classification step adds minimal latency (typically 50-200ms) while preventing wasted searches across irrelevant indexes.
+Query classification identifies the clinical intent—what type of information the query is seeking—before executing retrieval. A lightweight classifier processes the query and outputs one or more categories that map to your knowledge sources. This classification step adds minimal latency (typically 50-200ms) while preventing wasted searches across irrelevant indexes.
 
 You implement classification using either a small supervised model trained on labeled query examples or a fast LLM call with a structured prompt. The supervised approach offers lower cost and more consistent latency but requires training data and periodic retraining as query patterns evolve. The LLM approach adapts to new query types without retraining but costs more per query and has variable latency.
 
@@ -77,26 +79,30 @@ def route_query(query: str) -> dict:
 
 After classification determines which knowledge sources are relevant, you execute searches only against those selected indexes. This conditional execution reduces both cost (fewer search operations) and noise (fewer irrelevant results mixing with relevant ones). The query processing pipeline becomes a directed search rather than broadcasting to all sources.
 
-For each knowledge source classified as relevant, you execute your full hybrid search and re-ranking pipeline. These searches run in parallel to minimize latency — a query needing both formulary and guidelines takes roughly the same time as a query needing only one source because the searches execute concurrently. You aggregate results from all searched sources, preserving their individual relevance scores for downstream re-ranking.
+For each knowledge source classified as relevant, you execute your full hybrid search and re-ranking pipeline. These searches run in parallel to minimize latency—a query needing both formulary and guidelines takes roughly the same time as a query needing only one source because the searches execute concurrently. You aggregate results from all searched sources, preserving their individual relevance scores for downstream re-ranking.
 
-When only one source is needed, routing is straightforward. When multiple sources are needed, you must merge their results into a unified ranking. Results from different indexes have scores on different scales — a formulary document score of 0.85 might not be comparable to a guidelines document score of 0.78. You normalize scores within each source before merging, using min-max normalization or z-score standardization to make scores comparable across knowledge bases.
+When only one source is needed, the routing decision maps directly to a single search execution. When multiple sources are needed, you must merge their results into a unified ranking. Results from different indexes have scores on different scales—a formulary document score of 0.85 might not be comparable to a guidelines document score of 0.78. You normalize scores within each source before merging, using min-max normalization or z-score standardization to make scores comparable across knowledge bases.
 
 The merged result list requires final re-ranking because documents from different sources now compete for inclusion in the context provided to your agent. You apply the same LLM-as-reranker approach described in the previous unit, but now the comparison spans multiple knowledge sources rather than just ranking within one source.
 
 ```python
 from azure.search.documents import SearchClient
+from azure.search.documents.models import VectorizedQuery
 from azure.identity import DefaultAzureCredential
 import asyncio
+import os
 
 async def search_source(search_client: SearchClient, query: str, embedding: list[float]) -> list[dict]:
     """Execute hybrid search on a single knowledge source."""
     results = search_client.search(
         search_text=query,
-        vector_queries=[{
-            "vector": embedding,
-            "k_nearest_neighbors": 50,
-            "fields": "content_vector"
-        }],
+        vector_queries=[
+            VectorizedQuery(
+                vector=embedding,
+                k_nearest_neighbors=50,
+                fields="content_vector"
+            )
+        ],
         query_type="semantic",
         semantic_configuration_name="clinical-semantic-config",
         select=["document_id", "title", "content", "source"],
@@ -110,17 +116,17 @@ async def execute_routed_search(query: str, routing: dict) -> list[dict]:
     # Initialize search clients for each source
     search_clients = {
         "drug_formulary": SearchClient(
-            endpoint="https://<your-search-service>.search.windows.net",
+            endpoint=os.environ["AZURE_SEARCH_ENDPOINT"],
             index_name="drug-formulary-index",
             credential=DefaultAzureCredential()
         ),
         "clinical_guidelines": SearchClient(
-            endpoint="https://<your-search-service>.search.windows.net",
+            endpoint=os.environ["AZURE_SEARCH_ENDPOINT"],
             index_name="clinical-guidelines-index",
             credential=DefaultAzureCredential()
         ),
         "lab_references": SearchClient(
-            endpoint="https://<your-search-service>.search.windows.net",
+            endpoint=os.environ["AZURE_SEARCH_ENDPOINT"],
             index_name="lab-references-index",
             credential=DefaultAzureCredential()
         )
@@ -165,21 +171,21 @@ You implement confidence thresholds by having your classifier output not just bi
 
 With a threshold-based approach, you route to all sources with confidence above 0.7 (definitely relevant) plus any sources with confidence above 0.4 if the highest-confidence source is below 0.7 (uncertain classification triggers broader search). This fallback prevents misclassification from excluding a relevant knowledge source while still avoiding searches of clearly irrelevant sources.
 
-For queries where the classifier assigns all sources low confidence (<0.4 for all), you default to searching all sources. This complete fallback ensures that novel query types or terminology shifts don't cause retrieval failures. You log these low-confidence queries for later analysis — they indicate gaps in your classifier's training data or query patterns that need explicit handling.
+For queries where the classifier assigns all sources low confidence (<0.4 for all), you default to searching all sources. This complete fallback ensures that novel query types or terminology shifts don't cause retrieval failures. You log these low-confidence queries for later analysis—they indicate gaps in your classifier's training data or query patterns that need explicit handling.
 
 ## Measure routing accuracy and quality impact
 
 Routing quality has two dimensions: classification accuracy (does it select the right sources?) and retrieval quality (do routed searches return better results than broadcasting to all sources?). You measure both to understand whether routing improves your system.
 
-Classification accuracy requires labeled evaluation data where you know which sources contain relevant documents for each query. You measure recall (what percentage of relevant sources are selected?) and precision (what percentage of selected sources are actually relevant?). High recall ensures you don't miss relevant knowledge. High precision ensures you don't waste computational resources on irrelevant searches.
+Classification accuracy requires labeled evaluation data where you know which sources contain relevant documents for each query. You measure recall (what percentage of relevant sources are selected?) and precision (what percentage of selected sources are actually relevant?). Recall gaps mean missing relevant knowledge; precision gaps mean wasting compute on irrelevant searches.
 
-You collect routing telemetry for every query: the classifier's confidence scores for each source, which sources were searched, how many results each source returned, and what the final agent response quality was. Over time, this data reveals patterns like "guideline queries misclassified as formulary queries when they mention drug names" — insights that drive classifier improvements.
+You collect routing telemetry for every query: the classifier's confidence scores for each source, which sources were searched, how many results each source returned, and what the final agent response quality was. Over time, this data reveals patterns like "guideline queries misclassified as formulary queries when they mention drug names"—insights that drive classifier improvements.
 
-Routing quality appears in cost savings and latency improvements. If 60% of queries need only one knowledge source but you search all three, you perform 3x more searches than necessary. After implementing routing, you measure the average number of sources searched per query. A reduction from 3.0 to 1.4 represents 53% cost savings on search operations. Latency improvements come from parallel execution — searching one or two sources in parallel is faster than sequentially searching three.
+Routing quality appears in cost savings and latency improvements. If 60% of queries need only one knowledge source but you search all three, you perform 3x more searches than necessary. After implementing routing, you measure the average number of sources searched per query. A reduction from 3.0 to 1.4 represents 53% cost savings on search operations. Latency improvements come from parallel execution—searching one or two sources in parallel is faster than sequentially searching three.
 
 ## Handle dynamic source availability
 
-Production systems must handle scenarios where knowledge sources become temporarily unavailable — index rebuilding, service maintenance, or transient failures. Your routing logic needs fallback paths when a selected source can't be queried. The simplest approach routes to all remaining available sources when the primary selected source fails, ensuring queries get answers even when ideal sources are down.
+Production systems must handle scenarios where knowledge sources become temporarily unavailable—index rebuilding, service maintenance, or transient failures. Your routing logic needs fallback paths when a selected source can't be queried. A reliable fallback routes to all remaining available sources when the primary selected source fails, ensuring queries get answers even when ideal sources are down.
 
 You implement health checks that probe each knowledge source before executing searches. If a source fails the health check, you log the unavailability and skip it in routing decisions. The classifier output still indicates relevance, but execution skips unavailable sources. This separation of intent (classifier) and capability (source availability) keeps your classification logic stable while handling operational issues.
 
@@ -187,12 +193,12 @@ For planned maintenance windows, you configure routing to temporarily redirect q
 
 Source availability logging feeds into operational monitoring. A pattern of frequent unavailability for one source indicates infrastructure issues that need addressing. Temporary spikes in routing to all sources due to unavailability indicate your fallback logic is activating correctly. These metrics ensure routing remains robust in production environments.
 
-Now that you've designed dynamic routing to direct queries to appropriate knowledge sources efficiently, you're ready to optimize the content preparation stage — chunking strategies and embedding models that determine what information is available for retrieval.
+Routing controls where searches run. What you can retrieve still depends on what's in those indexes—which depends on the chunking and embedding decisions covered in the next unit.
 
-## Unit summary
+## Key takeaways
 
-- **Query classification** identifies clinical intent before retrieval, routing queries to only relevant knowledge sources — reducing cost by up to 53% when most queries need only one of three indexes
-- **Confidence-based fallback** uses probability thresholds to make conservative routing decisions — high confidence (>0.7) routes precisely, low confidence (<0.4 across all sources) triggers a full search as a safety net
+- **Query classification** identifies clinical intent before retrieval, routing queries to only relevant knowledge sources—reducing cost by up to 53% when most queries need only one of three indexes
+- **Confidence-based fallback** uses probability thresholds to make conservative routing decisions—high confidence (>0.7) routes precisely, low confidence (<0.4 across all sources) triggers a full search as a safety net
 - **Parallel conditional execution** searches multiple selected sources concurrently with score normalization and cross-source re-ranking to produce a unified result ranking
-- **Dynamic source availability** separates classification intent from execution capability — the classifier indicates relevance while health checks determine which sources can actually be queried
+- **Dynamic source availability** separates classification intent from execution capability—the classifier indicates relevance while health checks determine which sources can actually be queried
 - **Routing telemetry** captures confidence scores, sources searched, and result counts per query, enabling continuous classifier improvement and cost-savings measurement

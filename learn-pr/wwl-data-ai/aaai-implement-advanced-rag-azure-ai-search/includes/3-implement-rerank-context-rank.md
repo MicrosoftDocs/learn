@@ -1,4 +1,6 @@
-Hybrid search returns a ranked list of potentially relevant documents, but the initial ranking reflects a general-purpose scoring algorithm that doesn't understand your specific query context. When a clinician asks "What are the monitoring requirements for a patient starting warfarin therapy?" hybrid search might rank documents about warfarin pharmacology, general anticoagulation guidelines, and laboratory testing procedures — all potentially relevant, but not all equally useful. Re-ranking applies more sophisticated relevance scoring to select the documents that best answer the specific question.
+Getting the right documents into the initial result set is only part of the challenge—the harder part is putting the most useful ones first. Azure AI Search's semantic ranker re-scores those initial candidates using a language model, without requiring any changes to your index. Combined with cross-encoder models and LLM-based scoring, it forms the foundation of a multi-stage pipeline that progressively narrows results to the documents that genuinely answer the query.
+
+Hybrid search returns a ranked list of potentially relevant documents, but the initial ranking reflects a general-purpose scoring algorithm that doesn't understand your specific query context. When a clinician asks "What are the monitoring requirements for a patient starting warfarin therapy?" hybrid search might rank documents about warfarin pharmacology, general anticoagulation guidelines, and laboratory testing procedures—all potentially relevant, but not all equally useful. Re-ranking applies more sophisticated relevance scoring to select the documents that best answer the specific question.
 
 | Re-ranking Stage | Speed | Accuracy | Best For |
 |------------------|-------|----------|----------|
@@ -13,16 +15,20 @@ Azure AI Search's built-in semantic ranking uses a language model trained on lar
 
 You enable semantic ranking by setting `query_type="semantic"` and specifying a semantic configuration that defines which fields to consider for ranking. The semantic ranker analyzes document titles, content, and keywords to create a comprehensive relevance score. For clinical queries, this means semantic ranking recognizes that a document titled "Warfarin Monitoring Protocol" with content discussing "INR target ranges" and "bleeding risk assessment" is more relevant to a monitoring question than a general warfarin overview.
 
-Semantic ranking operates on the top-50 results from hybrid search by default. The ranker doesn't see documents ranked beyond position 50, so the quality of your initial hybrid search matters — semantic re-ranking refines good candidates but can't rescue relevant documents that hybrid search missed entirely. This two-stage architecture balances computational cost (semantic ranking is more expensive than hybrid search) with result quality.
+Semantic ranking operates on the top-50 results from hybrid search by default. The ranker doesn't see documents ranked beyond position 50, so the quality of your initial hybrid search matters—semantic re-ranking refines good candidates but can't rescue relevant documents that hybrid search missed entirely. This two-stage architecture balances computational cost (semantic ranking is more expensive than hybrid search) with result quality.
 
 The semantic ranking process also generates captions and answers. Captions are short excerpts from documents that highlight the most relevant passage for your query. Answers are direct responses extracted from a single document when the ranker determines it contains a definitive answer. For clinical decision support, answers provide quick access to specific guidance like dosage recommendations or contraindication warnings.
 
+Semantic ranker also supports **query rewrite** (preview), which expands the original query into multiple semantically similar alternatives before retrieval runs. A fine-tuned small language model hosted by Azure AI Search generates these synthetic queries; the service then merges them with the original query for both BM25 and vector retrieval. Query rewrite improves recall by finding relevant documents that use different terminology than the original query—useful when clinical guidelines use formal language ("anticoagulation therapy") while queries use informal phrasing ("blood thinners"). You enable it by adding `queryRewrites: "generative|count-5"` to the search request. Use it selectively for conceptual clinical queries; avoid it for searches on exact identifiers such as NDC codes or ICD-10 codes, because rewritten queries may not preserve those exact terms.
+
 ```python
 from azure.search.documents import SearchClient
+from azure.search.documents.models import VectorizedQuery
 from azure.identity import DefaultAzureCredential
+import os
 
 search_client = SearchClient(
-    endpoint="https://<your-search-service>.search.windows.net",
+    endpoint=os.environ["AZURE_SEARCH_ENDPOINT"],
     index_name="clinical-guidelines-index",
     credential=DefaultAzureCredential()
 )
@@ -32,11 +38,13 @@ query_embedding = get_query_embedding("warfarin monitoring requirements")
 
 results = search_client.search(
     search_text="warfarin monitoring requirements",
-    vector_queries=[{
-        "vector": query_embedding,
-        "k_nearest_neighbors": 50,
-        "fields": "content_vector"
-    }],
+    vector_queries=[
+        VectorizedQuery(
+            vector=query_embedding,
+            k_nearest_neighbors=50,
+            fields="content_vector"
+        )
+    ],
     query_type="semantic",
     semantic_configuration_name="clinical-semantic-config",
     select=["document_id", "title", "content"],
@@ -95,7 +103,7 @@ for i, result in enumerate(final_results, 1):
 
 Cross-encoder models score each query-document pair by processing them together through a neural network, unlike bi-encoder models (used for embeddings) that process queries and documents separately. This joint processing captures subtle relevance signals that bi-encoders miss, particularly for domain-specific terminology and complex clinical relationships.
 
-A clinical cross-encoder trained on medical literature understands that a query about "anticoagulation reversal" and a document discussing "prothrombin complex concentrate administration" have high relevance even though they share few common terms. The model learns from medical training data that these concepts have a clinical relationship — PCC reverses anticoagulation caused by warfarin.
+A clinical cross-encoder trained on medical literature understands that a query about "anticoagulation reversal" and a document discussing "prothrombin complex concentrate administration" have high relevance even though they share few common terms. The model learns from medical training data that these concepts have a clinical relationship—PCC reverses anticoagulation caused by warfarin.
 
 You deploy a cross-encoder model through Azure Machine Learning or use a pre-trained medical cross-encoder from the Hugging Face model hub. The model takes concatenated query-document pairs as input and outputs a relevance score. Unlike embedding models that generate vectors once during indexing, cross-encoders must process every query-document combination at query time, making them too expensive for large candidate sets but practical for refining a top-20 list to a top-5.
 
@@ -105,7 +113,7 @@ Cross-encoder re-ranking provides the most benefit when your content has special
 
 Large language models like GPT-4o can evaluate relevance by reading the query and each document, then providing a numerical rating or explanation of how well the document answers the question. This approach achieves the highest accuracy because the LLM applies reasoning about what the query is asking and what information would satisfy that need.
 
-For clinical applications, LLM re-ranking excels at handling complex queries that require integrating multiple pieces of information. A query like "What monitoring is needed for a diabetic patient starting ACE inhibitors?" requires understanding that diabetics need renal function monitoring, ACE inhibitors can affect potassium levels, and blood pressure monitoring is standard — an LLM can evaluate whether a candidate document addresses all these aspects.
+For clinical applications, LLM re-ranking excels at handling complex queries that require integrating multiple pieces of information. A query like "What monitoring is needed for a diabetic patient starting ACE inhibitors?" requires understanding that diabetics need renal function monitoring, ACE inhibitors can affect potassium levels, and blood pressure monitoring is standard—an LLM can evaluate whether a candidate document addresses all these aspects.
 
 The primary constraint is cost and latency. Each re-ranking request consumes input tokens for the prompt (including the full query and document content) and output tokens for the score. For a top-10 list being refined to top-3, you make 10 separate LLM calls. This makes LLM re-ranking practical only for the final selection stage after earlier stages have narrowed candidates to a small set.
 
@@ -119,36 +127,26 @@ Maximum Marginal Relevance (MMR) is one diversity algorithm that balances releva
 
 For clinical decision support, diversity ensures agents consider multiple treatment approaches or recognize when guidelines from different specialty societies offer different recommendations. A query about "atrial fibrillation management" benefits from retrieving documents about rate control, rhythm control, and anticoagulation decisions rather than three documents that all focus on anticoagulation alone.
 
-You implement diversity filtering by calculating embedding similarity between already-selected documents and remaining candidates. Documents with high similarity to already-selected content receive a penalty in their final score. The penalty weight controls the diversity-precision trade-off — higher penalties enforce more diversity but might exclude highly relevant secondary documents.
+You implement diversity filtering by calculating embedding similarity between already-selected documents and remaining candidates. Documents with high similarity to already-selected content receive a penalty in their final score. The penalty weight controls the diversity-precision trade-off—higher penalties enforce more diversity but might exclude highly relevant secondary documents.
 
 ## Measure re-ranking impact on retrieval quality
 
-Offline evaluation uses a labeled dataset where domain experts have marked which documents are relevant for specific queries. You measure ranking quality using normalized Discounted Cumulative Gain (nDCG), which scores ranking quality by position — relevant documents at position 1 contribute more to the score than relevant documents at position 10. Mean Reciprocal Rank (MRR) measures where the first relevant document appears in your ranking.
+Offline evaluation uses a labeled dataset where domain experts have marked which documents are relevant for specific queries. You measure ranking quality using normalized Discounted Cumulative Gain (nDCG), which scores ranking quality by position—relevant documents at position 1 contribute more to the score than relevant documents at position 10. Mean Reciprocal Rank (MRR) measures where the first relevant document appears in your ranking.
 
 You establish a baseline by measuring nDCG and MRR for your hybrid search results without re-ranking, then compare against the same metrics after each re-ranking stage. A meaningful improvement is at least 5 percentage points of nDCG, though clinical applications might require larger gains to justify the added complexity and cost.
 
-Online evaluation complements offline metrics by measuring how re-ranking affects downstream agent accuracy. When agents use better-ranked retrieval results, do they generate more accurate clinical recommendations? You track this by comparing agent responses against gold-standard answers or by having clinicians rate agent response quality. If re-ranking improves retrieval metrics but doesn't improve agent answer quality, the initially retrieved documents might lack the needed information entirely — a signal to improve your indexing or expand your knowledge sources.
+Online evaluation complements offline metrics by measuring how re-ranking affects downstream agent accuracy. When agents use better-ranked retrieval results, do they generate more accurate clinical recommendations? You track this by comparing agent responses against gold-standard answers or by having clinicians rate agent response quality. If re-ranking improves retrieval metrics but doesn't improve agent answer quality, the initially retrieved documents might lack the needed information entirely—a signal to improve your indexing or expand your knowledge sources.
 
-Northwind Health's clinical team measured that after adding cross-encoder re-ranking to the formulary index, the agent's drug interaction recommendations improved from 78% to 91% accuracy on a 50-query clinical test set. The improvement came specifically because the re-ranker correctly prioritized contraindications sections over general pharmacology overview documents — the information was always in the index, but the initial ranking buried it below less relevant results.
+Northwind Health's clinical team measured that after adding cross-encoder re-ranking to the formulary index, the agent's drug interaction recommendations improved from 78% to 91% accuracy on a 50-query clinical test set. The improvement came specifically because the re-ranker correctly prioritized contraindications sections over general pharmacology overview documents—the information was always in the index, but the initial ranking buried it below less relevant results.
 
 User satisfaction provides another signal for re-ranking quality. When clinicians interact with agent responses, implicit feedback like which citations they click, how long they spend reading responses, and whether they rephrase and retry queries all indicate whether the agent found useful information. Tracking these metrics before and after implementing re-ranking reveals whether the added complexity benefits users.
 
-Now that you've implemented multi-stage re-ranking to refine search results, you're ready to design dynamic routing that directs queries to the appropriate knowledge sources based on clinical intent, avoiding the inefficiency of searching all sources for every query.
+Re-ranking improves how results are ordered within a search. When your RAG pipeline spans multiple specialized indexes, the bigger efficiency question is which sources to search at all—that's where dynamic routing comes in.
 
-## Unit summary
+## Key takeaways
 
-- **Multi-stage re-ranking pipeline** progressively refines results — hybrid search retrieves top-50 candidates, semantic ranking refines to top-10, cross-encoder or LLM re-ranking selects the final top-3
-- **Semantic ranking** in Azure AI Search evaluates query-document relevance using language models and generates extractive captions and answers, operating on the top-50 from hybrid search
-- **Cross-encoder models** score query-document pairs jointly for domain-specific refinement — effective for specialized clinical terminology but too expensive for large candidate sets
+- **Multi-stage re-ranking pipeline** progressively refines results—hybrid search retrieves top-50 candidates, semantic ranking refines to top-10, cross-encoder or LLM re-ranking selects the final top-3
+- **Semantic ranking** in Azure AI Search evaluates query-document relevance using language models, generates extractive captions and answers, and optionally rewrites queries into semantically similar alternatives to improve recall—all operating on or before the top-50 from hybrid search
+- **Cross-encoder models** score query-document pairs jointly for domain-specific refinement—effective for specialized clinical terminology but too expensive for large candidate sets
 - **LLM-as-reranker** achieves the highest accuracy by reasoning about whether documents answer the specific question, but cost and latency limit it to final selection on small candidate sets
 - **Maximum Marginal Relevance (MMR)** balances precision with diversity by penalizing candidates similar to already-selected documents, ensuring agents receive multi-perspective context rather than redundant excerpts
-
-## Check your understanding
-
-**1. You have a two-stage retrieval pipeline: initial hybrid search returns 50 candidates, then a re-ranker selects the top 5. Why not just have the initial search return only 5 results?**
-
-- A. The initial search uses fast but less precise ranking (BM25 + vector + RRF), so casting a wider net and applying a more accurate re-ranker afterwards produces better final results
-- B. Returning more candidates from the initial search is always faster than returning fewer
-- C. Azure AI Search requires a minimum of 50 results per query
-
-***Correct answer: A.*** Initial retrieval (hybrid search with RRF) is fast but approximate. A re-ranker (semantic, cross-encoder, or LLM-based) applies more expensive but more accurate relevance scoring. The two-stage design balances speed (wide recall) with precision (accurate final selection).
