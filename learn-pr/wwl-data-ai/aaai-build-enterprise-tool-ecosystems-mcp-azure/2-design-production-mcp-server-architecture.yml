@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.design-production-mcp-server-architecture
+title: Design production MCP server architecture
+metadata:
+  title: Design Production MCP Server Architecture
+  description: "Design production MCP server architecture."
+  ms.date: 05/27/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-design-production-mcp-server-architecture.md)]

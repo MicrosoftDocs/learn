@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-enterprise-tool-ecosystems-mcp-azure.govern-tool-dependencies-version
+title: Govern tool dependencies and versioning
+metadata:
+  title: Govern Tool Dependencies and Versioning
+  description: "Govern tool dependencies and versioning."
+  ms.date: 05/27/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-govern-tool-dependencies-version.md)]
