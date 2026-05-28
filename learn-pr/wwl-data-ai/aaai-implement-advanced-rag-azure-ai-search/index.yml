@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.implement-advanced-rag-azure-ai-search
+metadata:
+  title: Implement Advanced RAG Pipelines with Azure AI Search and Microsoft Foundry
+  description: "Implement advanced retrieval-augmented generation (RAG) pipelines for production AI agents using Azure AI Search and Microsoft Foundry. Design hybrid search architectures, implement re-ranking strategies, configure dynamic knowledge source routing, and optimize chunking and embedding strategies."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.service: microsoft-foundry
+  ai-usage: ai-generated
+title: Implement advanced RAG pipelines with Azure AI Search and Microsoft Foundry
+summary: "Implement advanced RAG pipelines for production AI agents using Azure AI Search and Microsoft Foundry. Design hybrid search architectures combining BM25 keyword and semantic vector retrieval, implement re-ranking strategies for high-precision knowledge access, configure dynamic knowledge source routing across multiple indexes, and optimize chunking and embedding strategies."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Design hybrid search architectures combining keyword and semantic retrieval for high-precision knowledge access
+  - Implement re-ranking strategies to improve RAG retrieval quality and contextual relevance
+  - Configure dynamic knowledge source routing to direct queries intelligently across multiple knowledge bases
+  - Optimize chunking and embedding strategies for different content types and retrieval requirements
+prerequisites: |
+  Before starting this module, you should have:
+  - Familiarity with basic RAG using Foundry IQ or Azure AI Search
+  - Experience configuring data sources and retrieval in Microsoft Foundry
+  - Understanding of vector embeddings and semantic search concepts
+  - Proficiency in Python
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- ai-engineer
+- solution-architect
+- data-scientist
+products:
+- azure
+- microsoft-foundry
+- azure-cognitive-search
+subjects:
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.implement-advanced-rag-azure-ai-search.introduction
+- learn.wwl.implement-advanced-rag-azure-ai-search.design-hybrid-search-architectures
+- learn.wwl.implement-advanced-rag-azure-ai-search.implement-rerank-context-rank
+- learn.wwl.implement-advanced-rag-azure-ai-search.design-dynamic-knowledge-source-route
+- learn.wwl.implement-advanced-rag-azure-ai-search.optimize-chunk-embed-strategies
+- learn.wwl.implement-advanced-rag-azure-ai-search.knowledge-check
+- learn.wwl.implement-advanced-rag-azure-ai-search.summary
+badge:
+  uid: learn.wwl.implement-advanced-rag-azure-ai-search.badge

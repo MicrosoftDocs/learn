@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-rag-azure-ai-search.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Module assessment."
+  ms.date: 05/28/2026
+  author: chrishowd
+  ms.author: cahowd
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "A clinical RAG agent must retrieve drug information by exact NDC code while also matching synonyms like 'myocardial infarction' for 'heart attack.' Which Azure AI Search configuration is most appropriate?"
+    choices:
+    - content: "Pure vector search using text-embedding-3-large to capture all query semantics."
+      isCorrect: false
+      explanation: "Vector search captures semantic similarity but can miss exact identifiers like NDC codes. Clinical data requires both exact-match capability for codes and semantic matching for terminology."
+    - content: "Hybrid search combining BM25 keyword search and vector search with RRF fusion, weighted toward BM25 for formulary queries and toward vector for guideline queries."
+      isCorrect: true
+      explanation: "Hybrid search addresses both requirements: BM25 reliably matches exact codes and specific drug names, while vector search handles semantic equivalents. Per-query weight tuning (RRF weights) lets you emphasize the right approach based on query intent."
+    - content: "Keyword-only BM25 search to ensure exact clinical term matching throughout the pipeline."
+      isCorrect: false
+      explanation: "Keyword-only search fails to match semantic equivalents like 'heart attack' and 'myocardial infarction,' resulting in missed relevant results when clinical terminology varies."
+  - content: "After initial retrieval returns 50 candidate documents, your clinical RAG pipeline needs the highest possible precision for the final 3 documents injected into the agent context. Which re-ranking approach delivers this?"
+    choices:
+    - content: "Azure AI Search built-in semantic ranking applied to all 50 results using the configured semantic configuration."
+      isCorrect: false
+      explanation: "Semantic ranking improves over basic retrieval but uses a general language model. For maximum precision in domain-specific content, a task-specific LLM re-ranker reviewing the top 10-15 candidates produces better results."
+    - content: "Cross-encoder re-ranking to reduce 50 to 10 results, followed by an LLM-as-reranker prompt to select the final 3 from those 10."
+      isCorrect: true
+      explanation: "This two-stage cascade uses a fast, accurate cross-encoder for the bulk reduction and then applies an LLM's deeper contextual understanding for the critical final selection. Each stage is appropriate to its volume and required accuracy."
+    - content: "Re-running the vector search with a higher similarity threshold to filter the 50 results down to 3 candidates automatically."
+      isCorrect: false
+      explanation: "Adjusting similarity thresholds filters by embedding distance, which doesn't guarantee the remaining documents are most relevant to the specific query context. Re-ranking uses query-aware scoring rather than static distance filtering."
+  - content: "Your RAG pipeline uses fixed-size chunks of 512 tokens. Clinical guidelines sometimes split mid-criteria, causing the agent to miss key diagnostic conditions that span chunk boundaries. What chunking strategy resolves this?"
+    choices:
+    - content: "Increase fixed chunk size to 2048 tokens to ensure complete sections are always included in a single chunk."
+      isCorrect: false
+      explanation: "Larger fixed chunks reduce splitting issues but introduce more irrelevant content per chunk, hurting retrieval precision. They also exceed the optimal context density for most embedding models."
+    - content: "Hierarchical (parent-child) chunking: index small chunks for precise retrieval and return the parent section when a child chunk is matched."
+      isCorrect: true
+      explanation: "Hierarchical chunking solves both problems: small child chunks enable precise similarity matching at the criteria level, while returning the parent section ensures the agent receives complete diagnostic criteria without splitting mid-condition."
+    - content: "Semantic chunking using embedding similarity to detect topic boundaries, then splitting at those boundaries."
+      isCorrect: false
+      explanation: "Semantic chunking improves on fixed-size splits by respecting topic transitions, but it still may not preserve complete diagnostic criteria units. Hierarchical chunking specifically addresses the problem of missing context around matched chunks."
