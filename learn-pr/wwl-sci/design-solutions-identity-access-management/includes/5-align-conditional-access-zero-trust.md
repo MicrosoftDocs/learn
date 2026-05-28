@@ -148,7 +148,7 @@ When validating Zero Trust alignment of Conditional Access policies:
 
 - **Assess current state** — Use the gap analyzer workbook and What If tool to document all policies and identify coverage gaps against Zero Trust requirements.
 - **Establish emergency access** — Maintain at least two emergency access accounts excluded from Conditional Access policies but monitored through alerts on any sign-in activity.
-- **Respect the 195-policy limit** — Each tenant supports a maximum of 195 Conditional Access policies. Use policy consolidation recommendations from the optimization agent to stay within this limit.
+- **Respect the 240-policy limit** — Each tenant supports a maximum of 240 Conditional Access policies. Use policy consolidation recommendations from the optimization agent to stay within this limit.
 - **Prioritize by risk** — Address the highest-risk gaps first: MFA for all users, block legacy authentication, and risk-based policies.
 - **Apply naming standards** — Use a consistent naming convention that includes a sequence number, target applications, response, target users, and conditions for easier management.
 - **Iterate continuously** — Track policy coverage and effectiveness through the insights and reporting workbook and schedule regular reviews to adapt to new signals, applications, and identity types.
