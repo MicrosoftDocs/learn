@@ -45,4 +45,4 @@ quiz:
       explanation: "Hierarchical chunking solves both problems: small child chunks enable precise similarity matching at the criteria level, while returning the parent section ensures the agent receives complete diagnostic criteria without splitting mid-condition."
     - content: "Semantic chunking using embedding similarity to detect topic boundaries, then splitting at those boundaries."
       isCorrect: false
-      explanation: "Semantic chunking improves on fixed-size splits by respecting topic transitions, but it still may not preserve complete diagnostic criteria units. Hierarchical chunking specifically addresses the problem of missing context around matched chunks."
+      explanation: "Semantic chunking improves on fixed-size splits by respecting topic transitions, but it still might not preserve complete diagnostic criteria units. Hierarchical chunking specifically addresses the problem of missing context around matched chunks."
