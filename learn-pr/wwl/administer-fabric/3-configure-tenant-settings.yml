@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.configure-tenant-settings
+title: Configure tenant settings and delegate admin rights
+metadata:
+  title: Configure Tenant Settings and Delegate Admin Rights
+  description: "Learn how to configure tenant settings, create domains, delegate admin rights to domain admins, and assign workspaces to capacities in Microsoft Fabric."
+  ms.date: 05/27/2026
+  author: theresai
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-configure-tenant-settings.md)]
